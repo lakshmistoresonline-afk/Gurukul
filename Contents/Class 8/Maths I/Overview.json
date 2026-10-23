@@ -1,0 +1,394 @@
+{
+  "book_title": "Ganita Prakash Grade 8 Part 1",
+  "total_chapters": 7,
+  "deduplication_applied": true,
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "A Square and A Cube",
+      "core_summary": "Chapter 1 introduces special numbers—squares and cubes—through geometrical visual models and numerical explorations. A square number (or perfect square) is obtained by multiplying a natural number by itself (n^2), representing the area of a square with side length n. A cube number (or perfect cube) is obtained by multiplying a natural number by itself three times (n^3), representing the volume of a 3D cube with edge length n. The chapter explores visual patterns such as expressing square numbers as sums of consecutive odd numbers starting from 1, and perfect cubes as sums of consecutive odd numbers in sequential groupings. It covers methods to test whether a number is a perfect square or cube using prime factorisation (checking if prime factors group into pairs or triplets) and successive subtraction of odd numbers. Inverse operations are examined through square roots (√x) and cube roots (∛3√x), establishing that every positive perfect square has both a positive and negative integer square root, though principal arithmetic focuses on the positive root.",
+      "key_concepts": [
+        "Square Numbers and Perfect Squares: A number obtained by multiplying a natural number by itself (n * n = n^2).",
+        "Perfect Cubes: A number obtained by multiplying a natural number by itself three times (n * n * n = n^3).",
+        "Sum of Consecutive Odd Numbers for Squares: n^2 equals the sum of the first n consecutive odd numbers starting from 1 (1 + 3 + 5 + ... + (2n-1) = n^2).",
+        "Consecutive Odd Number Pattern for Cubes: Perfect cubes can be expressed as sums of consecutive odd numbers (1^3=1, 2^3=3+5=8, 3^3=7+9+11=27, 4^3=13+15+17+19=64).",
+        "Square Root as Inverse Operation: The square root of y is x if x^2 = y, denoted by √y. Every perfect square has two integral roots (one positive and one negative).",
+        "Cube Root as Inverse Operation: The cube root of z is x if x^3 = z, denoted by ∛3√z.",
+        "Prime Factorisation Test for Perfect Squares: A number is a perfect square if every prime factor occurs an even number of times (pairs).",
+        "Prime Factorisation Test for Perfect Cubes: A number is a perfect cube if every prime factor occurs in groups of three (triplets).",
+        "Successive Subtraction Method: Determining if a number is a perfect square by sequentially subtracting consecutive odd numbers (1, 3, 5, ...) until 0 is reached.",
+        "Ending Digits / Unit Digits of Perfect Squares: Perfect squares can only end in 0, 1, 4, 5, 6, or 9, and must have an even number of trailing zeros.",
+        "Parity of Squares and Cubes: The square and cube of an even number are always even; the square and cube of an odd number are always odd.",
+        "Number of Non-Square Numbers Between Squares: Between two consecutive square numbers p=n^2 and q=(n+1)^2, there are 2n (or q - p - 1) non-square natural numbers."
+      ],
+      "key_terms": [
+        {
+          "term": "Perfect Square",
+          "definition": "A natural number that can be expressed as the square of another natural number (n^2)."
+        },
+        {
+          "term": "Perfect Cube",
+          "definition": "A natural number that can be expressed as the cube of another natural number (n^3)."
+        },
+        {
+          "term": "Square Root",
+          "definition": "The number that, when multiplied by itself, yields the original number; inverse operation of squaring (√x)."
+        },
+        {
+          "term": "Cube Root",
+          "definition": "The number that, when multiplied by itself three times, yields the original number; inverse operation of cubing (∛3√x)."
+        },
+        {
+          "term": "Successive Subtraction",
+          "definition": "A technique of subtracting consecutive odd numbers starting from 1 to test for perfect squares and calculate square roots."
+        },
+        {
+          "term": "Prime Factorisation",
+          "definition": "Decomposing a number into its prime factors to check for pairs (squares) or triplets (cubes)."
+        },
+        {
+          "term": "Parity",
+          "definition": "The property of an integer being even or odd, which is preserved under squaring and cubing."
+        },
+        {
+          "term": "Radical Symbol",
+          "definition": "The symbol √ used to denote the principal positive square root of a number."
+        }
+      ],
+      "key_takeaways": [
+        "Every perfect square has two integral square roots (±x), though in basic arithmetic focus is placed on the principal positive root.",
+        "The sum of the first n odd natural numbers is always equal to n^2.",
+        "Perfect squares never end in 2, 3, 7, or 8 in the decimal system.",
+        "Prime factorisation easily reveals the smallest number by which a non-square or non-cube must be multiplied or divided to become a perfect square or cube.",
+        "The difference between consecutive perfect squares is equal to the sum of their roots: (n+1)^2 - n^2 = 2n + 1.",
+        "The number of trailing zeros in a perfect square is always even, while in a perfect cube it is always a multiple of 3."
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Power Play",
+      "core_summary": "Chapter 2 explores exponential notation and the laws of exponents to simplify the representation and calculation of extremely large and very small numbers. Exponential form n^a expresses a base n multiplied by itself a times, where a is the exponent or power. The chapter investigates exponential growth (multiplicative growth) versus additive growth through real-world contexts and thought experiments such as paper folding, microbial growth, and cosmic distances. It establishes fundamental exponent rules including products, quotients, powers of powers, powers of products/quotients, zero exponents (x^0 = 1 for x ≠ 0), and negative exponents (n^-a = 1 / n^a). Furthermore, scientific notation (standard form x * 10^y where 1 ≤ x < 10 and y is an integer) and orders of magnitude are introduced as practical mathematical tools for estimating, comparing, and managing extreme quantities in science and everyday life.",
+      "key_concepts": [
+        "Exponential Form: Writing repeated multiplication compactly as n^a, where n is the base and a is the exponent or index.",
+        "Product Law of Exponents: n^a * n^b = n^(a+b) when multiplying expressions with the same base.",
+        "Quotient Law of Exponents: n^a / n^b = n^(a-b) (for n ≠ 0) when dividing expressions with the same base.",
+        "Power of a Power Law: (n^a)^b = n^(a * b).",
+        "Power of a Product and Quotient: (n * m)^a = n^a * m^a and (n / m)^a = n^a / m^a (for m ≠ 0).",
+        "Zero Exponent Rule: x^0 = 1 for any non-zero base x, derived from x^a / x^a = x^(a-a) = x^0 = 1.",
+        "Negative Exponent Rule: n^-a = 1 / n^a, representing reciprocal powers.",
+        "Scientific Notation / Standard Form: Expressing numbers as x * 10^y, where 1 ≤ x < 10 and y is an integer.",
+        "Multiplicative vs. Additive Growth: Exponential growth increases by a constant factor per unit step, dwarfing linear additive growth over time.",
+        "Order of Magnitude: Approximating numbers to the nearest power of 10 for quick estimation and comparison."
+      ],
+      "key_terms": [
+        {
+          "term": "Base",
+          "definition": "The number that is repeatedly multiplied in an exponential expression."
+        },
+        {
+          "term": "Exponent / Index / Power",
+          "definition": "The number indicating how many times the base is multiplied by itself."
+        },
+        {
+          "term": "Exponential Growth",
+          "definition": "Growth that increases at a rate proportional to its current value, represented by constant multiplication."
+        },
+        {
+          "term": "Scientific Notation",
+          "definition": "A standard representation of real numbers written as x * 10^y with 1 ≤ x < 10 and y as an integer."
+        },
+        {
+          "term": "Negative Exponent",
+          "definition": "An exponent indicating the reciprocal of the base raised to the positive power (n^-a = 1 / n^a)."
+        },
+        {
+          "term": "Order of Magnitude",
+          "definition": "An exponential scale of magnitude where each class is a fixed ratio (typically 10) of the class preceding it."
+        },
+        {
+          "term": "Significant Digits / Coefficient",
+          "definition": "The leading numerical factor x in scientific notation (x * 10^y)."
+        }
+      ],
+      "key_takeaways": [
+        "Any non-zero number raised to the power of 0 equals 1 (x^0 = 1).",
+        "Negative exponents represent repeated division or fractional values rather than negative numbers.",
+        "Scientific notation removes ambiguity when reading, writing, and comparing vast astronomical distances or subatomic dimensions.",
+        "Exponential growth quickly overwhelms linear additive growth, as shown by repeated paper folding or doubling scenarios.",
+        "Working with powers of 10 allows quick order-of-magnitude estimations without tedious full arithmetic calculations."
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "A Story of Numbers",
+      "core_summary": "Chapter 3 traces the historical evolution of number representation across ancient human civilisations to the modern Hindu decimal place value system. It explores early counting methods using physical tallies (bones, pebbles, body parts), number names in indigenous cultures (such as Gumulgal counting in 2s), and written numeral systems in ancient Egypt (hieroglyphs with powers of 10 landmark numbers), Mesopotamia (cuneiform base-60 sexagesimal system), Central America (Mayan base-20 vigesimal system with seashell placeholder 0), and China (rod numerals). The chapter highlights how non-positional systems (like Roman numerals) required distinct symbols for higher landmark numbers and made arithmetic cumbersome. It details the emergence of the Hindu/Indian base-10 decimal place value system with ten digits (0–9), where position denotes powers of 10. Crucially, it emphasizes the dual role of zero: first as a positional placeholder and second as a full-fledged number with defined arithmetic operations (codified by Indian mathematicians like Aryabhata in 499 CE and Brahmagupta in 628 CE), which revolutionized global mathematics and science.",
+      "key_concepts": [
+        "Evolutionary Stages of Counting: Progressing from physical tallies and body counting to number names, written symbols (numerals), and positional systems.",
+        "Tally and Physical Counting Systems: Early tallying methods using notches on bones (Lebombo, Ishango) and grouping physical counters like pebbles.",
+        "Landmark Numbers and Number Bases: Key grouping threshold numbers, typically powers of a base n (n^0, n^1, n^2, ...), such as base-10 (Egyptian/Hindu), base-20 (Mayan), and base-60 (Mesopotamian).",
+        "Non-Positional vs. Positional Numeral Systems: Non-positional systems (Roman, Egyptian) use fixed symbols for landmark numbers regardless of placement; positional (place value) systems derive value from symbol placement.",
+        "Base-60 Mesopotamian Cuneiform System: Sexagesimal system using wedge symbols, which faced ambiguity before inventing a placeholder for empty positions.",
+        "Base-20 Mayan System: Vigesimal place value system that independently developed a seashell symbol for zero as a placeholder.",
+        "Hindu Decimal Place Value System: A base-10 system using ten digits (0–9) where the position of a digit represents a power of 10 (10^0, 10^1, 10^2, ...).",
+        "Dual Role of Zero: Zero serving as (1) a positional placeholder preventing ambiguous blanks, and (2) a number in its own right with defined arithmetic rules.",
+        "Indian Mathematical Contributions: Historical codification of arithmetic with zero by Aryabhata (499 CE) and Brahmagupta (628 CE in Brahmasphutasiddhanta), and large number names up to 10^140 (Kaccayana, Lalitavistara)."
+      ],
+      "key_terms": [
+        {
+          "term": "Numeral",
+          "definition": "A written symbol or combination of symbols used to represent a number."
+        },
+        {
+          "term": "Landmark Numbers",
+          "definition": "Strategic base values (1, 10, 100, ... or 1, 20, 400, ...) around which a numbering system aggregates quantities."
+        },
+        {
+          "term": "Place Value System",
+          "definition": "A numerical system where the position of a symbol determines its magnitude as a multiplier of a power of the base."
+        },
+        {
+          "term": "Base / Radix",
+          "definition": "The number of unique digits (including zero) that a positional numeral system uses to represent numbers."
+        },
+        {
+          "term": "Sexagesimal System",
+          "definition": "A base-60 positional numeral system historically used in ancient Mesopotamia."
+        },
+        {
+          "term": "Vigesimal System",
+          "definition": "A base-20 numeral system historically used by the Maya."
+        },
+        {
+          "term": "Placeholder Zero",
+          "definition": "A symbol used in positional notation to indicate an empty place value column (e.g., distinguishing 305 from 35)."
+        },
+        {
+          "term": "Brahmasphutasiddhanta",
+          "definition": "The 628 CE treatise by Indian mathematician Brahmagupta that formalised mathematical operations involving zero."
+        }
+      ],
+      "key_takeaways": [
+        "The positional place value system drastically simplifies arithmetic operations compared to additive non-positional systems like Roman numerals.",
+        "Treating zero as a complete mathematical number—rather than merely a blank space—was a fundamental breakthrough originating in India that transformed global science.",
+        "Ancient Indian texts documented named powers of ten up to 10^53 (Lalitavistara) and 10^140 (Kaccayana).",
+        "The modern global decimal numeral system (0–9) originated in India and spread worldwide via Arabic scholar transmissions."
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Quadrilaterals",
+      "core_summary": "Chapter 4 systematically examines four-sided closed planar figures known as quadrilaterals (derived from Latin quadri = four, latus = side). It proves the fundamental Angle Sum Property: the sum of the interior angles of any quadrilateral is always 360° (demonstrated geometrically by dividing the quadrilateral into two triangles, each sum 180°). The chapter introduces, classifies, and compares special families of quadrilaterals based on side lengths, angle measures, parallelism, and diagonal properties: Parallelogram, Rectangle, Rhombus, Square, Trapezium, and Kite. Geometric reasoning, constructions using ruler/compass/paper-folding, and proofs using triangle congruence (e.g., AAS, SSS, SAS) are integrated throughout.",
+      "key_concepts": [
+        "Definition of Quadrilateral: A closed 2D polygon with four straight sides, four vertices, four interior angles, and two diagonals.",
+        "Angle Sum Property of Quadrilaterals: Interior angle sum ∠A + ∠B + ∠C + ∠D = 360°.",
+        "Parallelogram Properties: Opposite sides parallel and equal (AB ∥ CD, AB=CD), opposite angles equal (∠A = ∠C), adjacent angles supplementary (∠A + ∠B = 180°), diagonals bisect each other.",
+        "Rectangle Properties: All four interior angles equal 90°; opposite sides equal and parallel; diagonals are equal (AC=BD) and bisect each other.",
+        "Rhombus Properties: All four sides equal (AB=BC=CD=DA); opposite sides parallel; opposite angles equal; diagonals bisect each other at right angles (90°) and bisect vertex angles.",
+        "Square Properties: All four sides equal, all four angles 90°; diagonals equal, bisect each other at 90°, and bisect vertex angles (45°).",
+        "Trapezium / Trapezoid Properties: At least one pair of opposite sides parallel (AB ∥ CD); consecutive adjacent angles along non-parallel sides add to 180°.",
+        "Kite Properties: Two pairs of equal adjacent sides; one pair of opposite angles equal; diagonals intersect at right angles (90°).",
+        "Diagonals as Structural Elements: Using diagonal properties (equal length, perpendicularity, bisection) to classify quadrilaterals and construct rigid frames."
+      ],
+      "key_terms": [
+        {
+          "term": "Quadrilateral",
+          "definition": "A four-sided polygon enclosed by line segments."
+        },
+        {
+          "term": "Parallelogram",
+          "definition": "A quadrilateral with both pairs of opposite sides parallel."
+        },
+        {
+          "term": "Rectangle",
+          "definition": "An equiangular quadrilateral (all angles 90°)."
+        },
+        {
+          "term": "Rhombus",
+          "definition": "An equilateral quadrilateral (all sides equal in length)."
+        },
+        {
+          "term": "Square",
+          "definition": "A regular quadrilateral that is both equiangular and equilateral."
+        },
+        {
+          "term": "Trapezium",
+          "definition": "A quadrilateral having at least one pair of parallel opposite sides."
+        },
+        {
+          "term": "Kite",
+          "definition": "A quadrilateral with two non-overlapping pairs of adjacent equal sides."
+        },
+        {
+          "term": "Diagonals",
+          "definition": "Line segments connecting opposite non-adjacent vertices of a polygon."
+        },
+        {
+          "term": "Isosceles Trapezium",
+          "definition": "A trapezium whose non-parallel sides are equal in length."
+        }
+      ],
+      "key_takeaways": [
+        "The sum of interior angles in any quadrilateral is 360°.",
+        "A square is simultaneously a rectangle, a rhombus, and a parallelogram.",
+        "If diagonals of a quadrilateral are equal and bisect each other at right angles, it must be a square.",
+        "If diagonals of a quadrilateral are equal and bisect each other (not necessarily at 90°), it is a rectangle.",
+        "If diagonals bisect each other at right angles (not necessarily equal in length), it is a rhombus."
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Number Play",
+      "core_summary": "Chapter 5 investigates fascinating properties of numbers, divisibility rules, and arithmetic patterns using algebraic generalization and visual proofs. It establishes algebraic representations for numbers (such as 10a + b for two-digit numbers, 100a + 10b + c for three-digit numbers, 2k for even numbers, 2k+1 for odd numbers, and mk + r for remainder forms). The chapter systematically proves divisibility shortcuts for 2, 5, and 10 (based on unit digits), 4 and 8 (based on last two or three digits), 3 and 9 (based on sum of digits / digital root), and 11 (based on alternating sum of digits). It explores parity rules under addition, subtraction, and sign changes (e.g., switching a sign in a ± b ± c ± d alters the sum by an even number, maintaining parity). Furthermore, general divisibility theorems are proved: if a | m and a | n, then a | (m+n) and a | (m-n); if a | b and b | c, then a | c; and if a number is divisible by two coprime numbers p and q, it is divisible by their product pq.",
+      "key_concepts": [
+        "Generalized Algebraic Representation of Numbers: Writing a two-digit number AB as 10A + B and a three-digit number ABC as 100A + 10B + C.",
+        "Algebraic Parity Proofs: Representing even numbers as 2k and odd numbers as 2k+1; proving sum/product parity rules (e.g., Even + Odd = Odd, Odd * Odd = Odd).",
+        "Sign Switching Parity Invariance: Switching any sign + to - in a ± b ± c ± d changes the net result by 2x, preserving the overall odd/even parity.",
+        "Divisibility Rules for Powers of 2 and 5: Divisibility by 10 (10 | 10A+B ⇔ B=0), 5 (B=0,5), 2 (B even), 4 (last two digits divisible by 4), and 8 (last three digits divisible by 8).",
+        "Divisibility Rules for 3 and 9: Proving that 100A + 10B + C = 99A + 9B + (A+B+C); a number is divisible by 3 or 9 if and only if the sum of its digits is divisible by 3 or 9.",
+        "Divisibility Rule for 11: Proving 100A + 10B + C = 11(9A + B) + (A - B + C); checking alternating sum of digits starting from units digit.",
+        "Linear Combination Divisibility Theorem: If a divides M and a divides N, then a divides (M + N) and (M - N).",
+        "Transitive and Factor Divisibility: If a is divisible by b, then a is divisible by all factors of b; if a | b and b | c, then a | c.",
+        "LCM Divisibility Rule: If a number is divisible by coprime numbers b and c, it is divisible by b * c (their LCM).",
+        "Remainder Representation Forms: Writing numbers leaving remainder r when divided by m as mk + r or m(k+1) - (m-r)."
+      ],
+      "key_terms": [
+        {
+          "term": "Generalized Form",
+          "definition": "Writing numbers in expanded algebraic place-value form (e.g., 100a + 10b + c)."
+        },
+        {
+          "term": "Parity",
+          "definition": "The attribute of an integer specifying whether it is even (2k) or odd (2k+1)."
+        },
+        {
+          "term": "Digital Root",
+          "definition": "The sum of digits of a number, iterated until a single digit remains, used in divisibility by 3 and 9."
+        },
+        {
+          "term": "Alternating Digit Sum",
+          "definition": "Evaluating digits with alternating signs (+d0 - d1 + d2 - d3 ...) to test for divisibility by 11."
+        },
+        {
+          "term": "Coprime Numbers",
+          "definition": "Integers whose greatest common divisor (GCD) is 1."
+        },
+        {
+          "term": "Linear Combination",
+          "definition": "An expression formed by multiplying terms by constants and adding/subtracting the results (aM + bN)."
+        }
+      ],
+      "key_takeaways": [
+        "Place-value algebra (10a+b) mathematically explains and proves all shortcut divisibility tests.",
+        "A number's divisibility by 3 or 9 depends entirely on the sum of its digits because 10^k - 1 is always a multiple of 9.",
+        "If a divides M and N, it divides any linear combination xM + yN.",
+        "Switching an addition sign to a subtraction sign in any multi-term expression always changes the value by an even integer."
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "We Distribute, Yet Things Multiply",
+      "core_summary": "Chapter 6 focuses on the fundamental Distributive Property of multiplication over addition/subtraction, a(b+c) = ab + ac, and its extension to algebraic expansions, factorisation, and fast mental multiplication. It introduces binomial and polynomial multiplication using visual area models (dissecting rectangles into sub-rectangles) and algebraic proofs. Standard algebraic identities are derived geometrically and algebraically: (a+b)^2 = a^2 + 2ab + b^2, (a-b)^2 = a^2 - 2ab + b^2, (a+b)(a-b) = a^2 - b^2, (x+a)(x+b) = x^2 + (a+b)x + ab, and (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3. The chapter highlights ancient Indian mathematical history, noting Brahmagupta's 628 CE codification of the distributive property as khanda-gunanam (multiplication by parts) and fast multiplication techniques as ishta-gunana (using chosen convenient numbers).",
+      "key_concepts": [
+        "Distributive Property of Multiplication: a(b+c) = ab + ac and (a+b)c = ac + bc.",
+        "Area Dissection Visual Models: Representing algebraic multiplication (a+b)(c+d) as the total area of a rectangle split into four region areas ac + ad + bc + bd.",
+        "Perfect Square Binomial Identities: (a+b)^2 = a^2 + 2ab + b^2 and (a-b)^2 = a^2 - 2ab + b^2.",
+        "Difference of Squares Identity: (a+b)(a-b) = a^2 - b^2.",
+        "Product of Binomials with Common Term: (x+a)(x+b) = x^2 + (a+b)x + ab.",
+        "Sum of Two Squares Identity: 2(a^2 + b^2) = (a+b)^2 + (a-b)^2.",
+        "Cube of a Binomial Expansion: (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3.",
+        "Ancient Indian Fast Multiplication (Khanda-gunanam & Ishta-gunana): Brahmagupta's methods for breaking multiplicands/multipliers into convenient components (e.g., 3874 * 101 = 3874 * (100+1)).",
+        "Error Analysis ('Mind the Mistake'): Spotting common algebraic errors such as forgetting middle terms ((a+b)^2 ≠ a^2 + b^2) or sign errors when expanding negative terms.",
+        "Algebraic Pattern Modeling: Formulating expressions for sequence steps (e.g., step k circle counts k^2 + 2k or k(k+1) + k)."
+      ],
+      "key_terms": [
+        {
+          "term": "Distributive Property",
+          "definition": "a(b+c) = ab + ac, expanding products into sums."
+        },
+        {
+          "term": "Khanda-gunanam",
+          "definition": "Historical Sanskrit term used by Brahmagupta (628 CE) meaning 'multiplication by parts'."
+        },
+        {
+          "term": "Ishta-gunana",
+          "definition": "Historical Sanskrit term for fast multiplication using convenient chosen numbers."
+        },
+        {
+          "term": "Binomial",
+          "definition": "An algebraic expression containing two terms (e.g., a+b)."
+        },
+        {
+          "term": "Identity",
+          "definition": "An equality that holds true for all possible values of its variables (e.g., (a+b)^2 = a^2 + 2ab + b^2)."
+        },
+        {
+          "term": "Like Terms",
+          "definition": "Terms containing identical variable powers that can be combined through addition or subtraction."
+        },
+        {
+          "term": "Area Model",
+          "definition": "A geometric representation using rectangle areas to visualize algebraic expansions."
+        }
+      ],
+      "key_takeaways": [
+        "An algebraic identity is an equation that is true for every substitution of its variables.",
+        "Binomial square expansions (a+b)^2 always produce a middle term 2ab; omitting it is a common algebraic error.",
+        "The distributive property allows complex numerical multiplications (like 9734 * 99) to be solved quickly in one line as 9734 * (100-1).",
+        "Brahmagupta codified khanda-gunanam in 628 CE, laying the groundwork for systematic algebraic expansions."
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Proportional Reasoning-1",
+      "core_summary": "Chapter 7 introduces proportional reasoning, scaling, ratios, and rates through intuitive visual contexts (digital image resizing, scaling graphics) and practical problems (recipes, bus capacity, crowd density, mixing drinks, dividing quantities). It establishes that two ratios a:b and c:d are proportional (a:b :: c:d) if one is a constant scaled multiple of the other (c = f * a and d = f * b for scale factor f). Geometric similarity in 2D shapes (rectangles) is defined by maintaining an equal width-to-height ratio. The chapter details methods for dividing a total quantity x in a given ratio m:n, calculating group size as x / (m+n), yielding parts m * (x / (m+n)) and n * (x / (m+n)). It also addresses unit rates, crowd density (population per unit area), price-to-measure comparisons, and historical problems from Bhaskaracharya's Lilavati (e.g., buying saffron in palas and niskas).",
+      "key_concepts": [
+        "Proportional Relationships: Two changing quantities are proportional if their ratio remains constant throughout scaling.",
+        "Ratio and Terms: Expressing comparison between two quantities a and b as a:b or a/b, where a and b are terms.",
+        "Simplest Form of a Ratio: Dividing terms of a ratio by their greatest common divisor (e.g., 60:40 = 3:2).",
+        "Scale Factor (f): The constant multiplier connecting proportional quantities (c = f * a, d = f * b).",
+        "Geometric Similarity: Two 2D figures (e.g., rectangles) are similar if the ratios of their corresponding side lengths are equal.",
+        "Proportion Notation (a:b :: c:d): Expressing equality of two ratios, where a * d = b * c (product of extremes equals product of means).",
+        "Division of a Quantity in a Ratio m:n: Splitting total amount x into m+n equal parts, where part 1 = m * (x / (m+n)) and part 2 = n * (x / (m+n)).",
+        "Unit Rate and Comparison: Calculating per-unit quantities (e.g., cost per kg, students per bus) to make comparisons.",
+        "Crowd Density: Measuring population relative to land area (Density = Population / Area).",
+        "Historical Applications (Lilavati): Solving classical proportion problems involving ancient units of weight (palas) and currency (niskas)."
+      ],
+      "key_terms": [
+        {
+          "term": "Ratio",
+          "definition": "A comparison of two quantities of the same kind by division (a:b)."
+        },
+        {
+          "term": "Proportion",
+          "definition": "An equation stating that two ratios are equal (a:b = c:d)."
+        },
+        {
+          "term": "Scale Factor",
+          "definition": "The ratio of any linear dimension in a scaled figure to the corresponding dimension in the original figure."
+        },
+        {
+          "term": "Terms of a Ratio",
+          "definition": "The individual numbers a and b comprising the ratio a:b."
+        },
+        {
+          "term": "Similar Figures",
+          "definition": "Geometric figures that have the same shape but different sizes, with proportional corresponding side lengths."
+        },
+        {
+          "term": "Crowd Density",
+          "definition": "The ratio of population to unit geographical area (people/km^2)."
+        },
+        {
+          "term": "Pala and Niska",
+          "definition": "Ancient Indian units of weight and currency, respectively, referenced in Bhaskaracharya's Lilavati (1150 CE)."
+        }
+      ],
+      "key_takeaways": [
+        "Resizing an image or figure without distortion requires scaling both width and height by the exact same scale factor f.",
+        "To divide quantity x in ratio m:n, divide x by m+n to find one part's value, then multiply by m and n.",
+        "In any proportion a:b = c:d, the product of the extremes (a * d) equals the product of the means (b * c).",
+        "Ratios allow fair comparisons between different measures, such as population density or unit pricing."
+      ]
+    }
+  ]
+}

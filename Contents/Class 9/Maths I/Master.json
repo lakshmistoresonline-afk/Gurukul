@@ -1,0 +1,1526 @@
+{
+  "subject_name": "Mathematics (Ganita Manjari - Part I)",
+  "grade_or_target_level": "Class 9 / Secondary Stage",
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Orienting Yourself: The Use of Coordinates",
+      "zero_omission_notes": {
+        "summary": "This chapter introduces two-dimensional Cartesian coordinate geometry as an indispensable system to describe spatial positions using numerical ordered pairs (x, y). It traces historical origins from the grid layouts of the Sindhu-Sarasvatī Civilisation and Baudhāyana's Śhulbasūtras (c. 800 BCE) to René Descartes' Cartesian plane. Key concepts include perpendicular axes intersecting at origin O(0,0), four quadrants, plotting points, determining perpendicular distances from axes, transformations (reflections across axes), distance calculations using the Baudhāyana-Pythagoras theorem, midpoint evaluation, and segment trisection.",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "1.1 Historical Context & Grid Systems",
+            "full_notes": "Ancient urban architectures, such as Harappa and Mohenjo-daro in the Sindhu-Sarasvatī Civilisation, utilized town planning on orthogonal grid patterns. Baudhāyana's Śhulbasūtras detailed geometric altar constructions (Vedis) using perpendicular reference lines called Prāchī (east-west axis) and Tiryak (north-south axis), anticipating modern coordinate positioning.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Historical Note",
+                "title": "Śhulbasūtras and Coordinate Geometry",
+                "content": "Baudhāyana used reference lines called Prāchī (east-west axis) and Tiryak (north-south axis) to construct sacrificial altars with exact spatial alignment."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "1.2 The Cartesian Plane and Quadrants",
+            "full_notes": "Two mutually perpendicular lines—the horizontal x-axis and vertical y-axis—intersect at origin O(0,0). They divide the plane into 4 quadrants: QI (+,+), QII (-,+), QIII (-,-), and QIV (+,-). Every point P is uniquely defined by an ordered pair (x,y), where x is the abscissa (perpendicular distance from y-axis) and y is the ordinate (perpendicular distance from x-axis).",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Concept Check",
+                "title": "Points on Axes",
+                "content": "Any point lying on the x-axis has ordinate y = 0, expressed as (x, 0). Any point on the y-axis has abscissa x = 0, expressed as (0, y)."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "1.3 Distance Formula & Midpoint Properties",
+            "full_notes": "The distance between P1(x1, y1) and P2(x2, y2) is derived from the Baudhāyana-Pythagoras theorem on the right triangle formed by horizontal |x2 - x1| and vertical |y2 - y1| lengths: d = sqrt((x2 - x1)^2 + (y2 - y1)^2). The midpoint M is M = ((x1+x2)/2, (y1+y2)/2).",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Formula Summary",
+                "title": "Distance from Origin",
+                "content": "The distance of any point P(x, y) from the origin O(0,0) is given by d = sqrt(x^2 + y^2)."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-1.1",
+          "aim_or_objective": "Verification of Right-Angled Triangle on Coordinate Grid",
+          "materials_or_prerequisites": [
+            "Graph paper",
+            "Ruler",
+            "Pencil",
+            "Calculator"
+          ],
+          "procedure_or_steps": [
+            "Plot points A(0,0), B(4,0), and C(0,3) on grid paper.",
+            "Calculate side length AB using distance formula: AB = 4.",
+            "Calculate side length AC using distance formula: AC = 3.",
+            "Calculate hypotenuse BC: BC = sqrt((4-0)^2 + (0-3)^2) = sqrt(16 + 9) = 5.",
+            "Verify AB^2 + AC^2 = 4^2 + 3^2 = 16 + 9 = 25 = BC^2."
+          ],
+          "observations_or_results": "The squared length of the longest side equals the sum of squares of the other two sides.",
+          "conclusion_or_principle": "Points A, B, and C form a right-angled triangle at A, confirming the converse of Baudhāyana-Pythagoras theorem."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 1.1: The Four Quadrants of the Cartesian Plane",
+            "labels_and_components": [
+              "x-axis",
+              "y-axis",
+              "Origin O(0,0)",
+              "Quadrant I",
+              "Quadrant II",
+              "Quadrant III",
+              "Quadrant IV"
+            ],
+            "drawing_or_reading_instructions": "Draw horizontal x-axis and vertical y-axis. Mark O(0,0). Label Quadrants I through IV in counter-clockwise order starting top-right.",
+            "structural_or_conceptual_explanation": "QI: x>0, y>0; QII: x<0, y>0; QIII: x<0, y<0; QIV: x>0, y<0."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Signs of Coordinates in Quadrants",
+            "headers": [
+              "Quadrant",
+              "Abscissa (x)",
+              "Ordinate (y)",
+              "Example Point"
+            ],
+            "rows": [
+              [
+                "Quadrant I",
+                "Positive (+)",
+                "Positive (+)",
+                "(3, 5)"
+              ],
+              [
+                "Quadrant II",
+                "Negative (-)",
+                "Positive (+)",
+                "(-2, 4)"
+              ],
+              [
+                "Quadrant III",
+                "Negative (-)",
+                "Negative (-)",
+                "(-4, -1)"
+              ],
+              [
+                "Quadrant IV",
+                "Positive (+)",
+                "Negative (-)",
+                "(5, -3)"
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Cartesian Plane",
+          "definition_or_meaning": "A 2D plane defined by two mutually perpendicular reference lines (axes) intersecting at origin O(0,0).",
+          "si_unit_or_notation": "xy-plane / R^2",
+          "example_or_application": "Plotting point P(3, -4) in Quadrant IV."
+        },
+        {
+          "term_or_concept": "Distance Formula",
+          "definition_or_meaning": "d = sqrt((x2 - x1)^2 + (y2 - y1)^2)",
+          "si_unit_or_notation": "Linear units",
+          "example_or_application": "Distance between (1,2) and (4,6) is 5 units."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 1.1 Q3",
+            "question": "Find the distance between the points A(-2, 5) and B(4, -3).",
+            "answer": "d = sqrt((4 - (-2))^2 + (-3 - 5)^2) = sqrt(6^2 + (-8)^2) = sqrt(36 + 64) = sqrt(100) = 10 units."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "The point (-4, 0) lies on which of the following?",
+            "options": [
+              "A) Quadrant II",
+              "B) Quadrant III",
+              "C) x-axis",
+              "D) y-axis"
+            ],
+            "answer": "C",
+            "explanation": "Any point with ordinate y = 0 lies directly on the x-axis."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "Find the midpoint of segment joining P(-3, 8) and Q(5, -2).",
+            "answer": "Midpoint M = ((x1+x2)/2, (y1+y2)/2) = ((-3+5)/2, (8+(-2))/2) = (1, 3)."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "Show that the points (0,0), (3,0), and (0,4) form a right-angled triangle.",
+            "answer": "Side lengths: a = sqrt((3-0)^2 + 0^2) = 3; b = sqrt(0^2 + (4-0)^2) = 4; c = sqrt((3-0)^2 + (0-4)^2) = 5. Since 3^2 + 4^2 = 9 + 16 = 25 = 5^2, it satisfies Pythagoras theorem."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "Prove algebraically using distance formula that the points A(1, 1), B(4, 5), and C(1, 5) form a right triangle, and find its area.",
+            "answer": "1. AB = sqrt((4-1)^2 + (5-1)^2) = sqrt(9 + 16) = sqrt(25) = 5.\n2. BC = sqrt((1-4)^2 + (5-5)^2) = sqrt(9 + 0) = 3.\n3. AC = sqrt((1-1)^2 + (5-1)^2) = sqrt(0 + 16) = 4.\n4. Check Pythagoras: AC^2 + BC^2 = 4^2 + 3^2 = 16 + 9 = 25 = AB^2. Hence right angled at C.\n5. Area = 1/2 * base * height = 1/2 * 3 * 4 = 6 sq units."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "A delivery drone operates on a 2D grid covering a city. Base station is at O(0,0). Drone delivers to house A(3, 4) and then house B(9, 12).",
+            "qa": [
+              {
+                "question": "What is the direct distance from base station to House A?",
+                "answer": "d = sqrt(3^2 + 4^2) = sqrt(25) = 5 km."
+              },
+              {
+                "question": "What is the distance between House A and House B?",
+                "answer": "d = sqrt((9-3)^2 + (12-4)^2) = sqrt(6^2 + 8^2) = sqrt(100) = 10 km."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Swapping abscissa and ordinate, writing (y, x) instead of (x, y).",
+            "correct_fact_or_method": "Always write horizontal x first, then vertical y in alphabetical order (x, y)."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Introduction to Linear Polynomials",
+      "zero_omission_notes": {
+        "summary": "This chapter introduces algebraic expressions, univariate polynomials, and specifically linear polynomials of degree 1. It explores terms, coefficients, degree, constant polynomials, linear growth, and linear decay through practical contexts like tile patterns, monthly billing, and physical measurements. The chapter details the graphical representation of linear relationships as straight lines of the form y = ax + b, explaining slope (a) and y-intercept (b), parallel line families, and linear functions.",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "2.1 Algebraic Expressions & Polynomial Anatomy",
+            "full_notes": "An algebraic expression combines constants and variables using addition, subtraction, multiplication, and division. A polynomial in variable x contains terms of form c * x^n where n is a non-negative integer. Degree is the highest power of variable.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Definition",
+                "title": "Linear Polynomial",
+                "content": "A polynomial of degree 1, represented as p(x) = ax + b, where a != 0 and a, b are real numbers."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "2.2 Linear Growth, Decay, and Tabular Patterns",
+            "full_notes": "Linear growth occurs when a quantity increases by a constant amount 'a' for every unit increase in x (e.g., taxi fares, cell phone plans). Linear decay occurs when a quantity decreases uniformly (e.g., draining water tank, battery discharge).",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Key Feature",
+                "title": "Constant First Difference",
+                "content": "In a linear relationship table with equal x-intervals, the difference between consecutive y-values is constant."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "2.3 Graphing Linear Functions: Slope and Intercept",
+            "full_notes": "The graph of y = ax + b is always a straight line. Slope 'a' measures steepness (rise over run). If a > 0, the line slants upward; if a < 0, it slants downward. The y-intercept 'b' is the point (0, b) where line crosses the vertical axis.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Property",
+                "title": "Parallel Lines",
+                "content": "Lines with identical slope 'a' but different y-intercepts 'b' are parallel and never intersect."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-2.1",
+          "aim_or_objective": "Plotting Linear Equations on Graph Paper",
+          "materials_or_prerequisites": [
+            "Graph paper",
+            "Ruler",
+            "Pencil"
+          ],
+          "procedure_or_steps": [
+            "Create input-output table for x = -1, 0, 1, 2, 3.",
+            "Calculate y-values for y = 2x - 3: y(-1) = -5, y(0) = -3, y(1) = -1, y(2) = 1, y(3) = 3.",
+            "Plot points on Cartesian plane.",
+            "Use ruler to draw a straight line passing through all points."
+          ],
+          "observations_or_results": "All points lie on a straight line crossing y-axis at -3.",
+          "conclusion_or_principle": "Linear polynomials p(x) = ax + b always graph as straight lines."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 2.1: Graph of y = ax + b showing Slope and Intercept",
+            "labels_and_components": [
+              "y-axis",
+              "x-axis",
+              "y-intercept (0,b)",
+              "Rise",
+              "Run",
+              "Line y = ax + b"
+            ],
+            "drawing_or_reading_instructions": "Draw coordinate axes. Plot a line cutting vertical axis at (0,b). Indicate right triangle showing rise and run.",
+            "structural_or_conceptual_explanation": "Slope = Rise / Run = a."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Linear Growth vs Linear Decay",
+            "headers": [
+              "Feature",
+              "Linear Growth",
+              "Linear Decay"
+            ],
+            "rows": [
+              [
+                "Sign of Slope 'a'",
+                "Positive (a > 0)",
+                "Negative (a < 0)"
+              ],
+              [
+                "Graph Trend",
+                "Slants upward",
+                "Slants downward"
+              ],
+              [
+                "Example",
+                "Monthly savings",
+                "Water draining"
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Linear Polynomial",
+          "definition_or_meaning": "A polynomial of degree 1 having general form p(x) = ax + b with a != 0.",
+          "si_unit_or_notation": "p(x) = ax + b",
+          "example_or_application": "p(x) = 3x - 7."
+        },
+        {
+          "term_or_concept": "Slope (a)",
+          "definition_or_meaning": "Rate of change of y with respect to x; a = delta_y / delta_x.",
+          "si_unit_or_notation": "Dimensionless ratio / rate",
+          "example_or_application": "Slope of y = 4x + 1 is 4."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 2.2 Q2",
+            "question": "Find the slope and y-intercept of the line 3x + 2y = 6.",
+            "answer": "Rearrange to y = (-3/2)x + 3. Slope = -3/2, y-intercept = 3."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "Which of the following represents a linear polynomial?",
+            "options": [
+              "A) 2x^2 + 3",
+              "B) 5/x + 1",
+              "C) 4x - 9",
+              "D) sqrt(x) + 2"
+            ],
+            "answer": "C",
+            "explanation": "A linear polynomial must have variable degree equal to 1 with non-negative integer exponent."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "Check if the line y = 3x + 4 passes through the point (2, 10).",
+            "answer": "LHS y = 10; RHS = 3(2) + 4 = 10. LHS = RHS, so (2,10) lies on the line."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "Why are two lines with equations y = 5x + 2 and y = 5x - 7 parallel?",
+            "answer": "Because both lines have identical slope a = 5 but different y-intercepts (2 and -7). Parallel lines never intersect."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "A taxi service charges a fixed flag-down fare of Rs. 50 plus Rs. 15 per kilometer traveled. Write equation and calculate fare for 12 km.",
+            "answer": "Equation: C(x) = 15x + 50. For x = 12 km, C(12) = 15(12) + 50 = 180 + 50 = Rs. 230."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "Two plants A and B are measured daily. Plant A height: H_A = 2d + 5 cm. Plant B height: H_B = 3d + 2 cm, where d is days.",
+            "qa": [
+              {
+                "question": "On which day will both plants have equal height?",
+                "answer": "Set 2d + 5 = 3d + 2 => d = 3 days. Height = 11 cm."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Confusing slope with y-intercept when equation is not in standard form ax + b.",
+            "correct_fact_or_method": "Always isolate y on LHS first to achieve y = ax + b form before reading slope 'a' and intercept 'b'."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "The World of Numbers",
+      "zero_omission_notes": {
+        "summary": "This chapter builds the real number system R from natural numbers N, whole numbers W, integers Z, rational numbers Q, to irrational numbers Q'. It covers the density property of rational numbers, decimal expansion signatures (terminating/non-terminating repeating vs non-terminating non-repeating), cyclic decimal patterns (1/7 = 0.142857...), mathematical proofs of irrationality (sqrt(2), sqrt(3)), square root spiral (Wheel of Theodorus), Indian mathematical achievements (Mādhava's infinite series for pi), and an introduction to imaginary numbers.",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "3.1 Hierarchy of Number Sets & Continuous Number Line",
+            "full_notes": "Numbers evolved from counting tallies to natural numbers N, zero insertion for whole numbers W, negative integers for debts Z, ratios of integers p/q (q != 0) for rational numbers Q, and non-repeating decimals for irrational numbers Q'. Real numbers R fill every point on continuous number line.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Historical Note",
+                "title": "Indian Mathematical Heritage",
+                "content": "Zero was conceptualized as a mathematical entity in Bhārat (Brāhmasphuṭasiddhānta by Brahmagupta, 628 CE), enabling place-value numeration."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "3.2 Decimal Expansion of Real Numbers",
+            "full_notes": "Rational numbers p/q yield decimal expansions that either terminate (denominator prime factors purely 2^m * 5^n) or recur in repeating blocks (non-terminating periodic). Irrational numbers have non-terminating, non-repeating decimal expansions.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Curiosity Box",
+                "title": "Cyclic Decimals of 1/7",
+                "content": "1/7 = 0.142857142857... The repeating block 142857 rotates cyclically for multiples 2/7, 3/7, 4/7, 5/7, 6/7!"
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "3.3 Proof of Irrationality & Square Root Spiral",
+            "full_notes": "Irrationality of sqrt(2) is proven by contradiction using prime factor parity. Geometric representation of sqrt(n) on number line is constructed sequentially using right-angled triangles in a Square Root Spiral.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Mathematical Note",
+                "title": "Mādhava's Series for Pi",
+                "content": "Mādhava of Saṅgamagrāma (14th century) derived infinite series pi/4 = 1 - 1/3 + 1/5 - 1/7 + ..., centuries before European calculus."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-3.1",
+          "aim_or_objective": "Constructing Square Root Spiral (Wheel of Theodorus)",
+          "materials_or_prerequisites": [
+            "Drawing sheet",
+            "Protractor",
+            "Ruler",
+            "Compass"
+          ],
+          "procedure_or_steps": [
+            "Draw isosceles right triangle O P0 P1 with legs O P0 = 1 unit and P0 P1 = 1 unit perpendicular.",
+            "Hypotenuse O P1 = sqrt(1^2 + 1^2) = sqrt(2).",
+            "At P1, erect perpendicular P1 P2 of unit length 1.",
+            "Connect O to P2. New hypotenuse O P2 = sqrt((sqrt(2))^2 + 1^2) = sqrt(3).",
+            "Repeat process to generate consecutive square roots."
+          ],
+          "observations_or_results": "A spiral pattern unfolds where hypotenuses measure sqrt(2), sqrt(3), sqrt(4)=2, sqrt(5)...",
+          "conclusion_or_principle": "Every square root of a non-perfect square can be represented geometrically as an exact physical length."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 3.1: Venn Diagram of Real Number System",
+            "labels_and_components": [
+              "Real Numbers R",
+              "Rational Numbers Q",
+              "Integers Z",
+              "Whole Numbers W",
+              "Natural Numbers N",
+              "Irrational Numbers Q'"
+            ],
+            "drawing_or_reading_instructions": "Draw outer box for Real Numbers R. Place Irrational Q' on left side. On right, draw nested circles: N inside W inside Z inside Q.",
+            "structural_or_conceptual_explanation": "N subset of W subset of Z subset of Q subset of R. Q union Q' = R."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Classification of Decimal Expansions",
+            "headers": [
+              "Type of Expansion",
+              "Nature of Decimal",
+              "Number Category",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Terminating",
+                "Finishes after finite digits",
+                "Rational (Q)",
+                "7/8 = 0.875"
+              ],
+              [
+                "Non-terminating Repeating",
+                "Infinite with recurring block",
+                "Rational (Q)",
+                "1/3 = 0.333..."
+              ],
+              [
+                "Non-terminating Non-repeating",
+                "Infinite without repeating block",
+                "Irrational (Q')",
+                "sqrt(2) = 1.414213..."
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Rational Number",
+          "definition_or_meaning": "Any number that can be expressed as p/q where p, q are integers and q != 0.",
+          "si_unit_or_notation": "Q = {p/q : p,q in Z, q != 0}",
+          "example_or_application": "-3/4, 0.35, 5."
+        },
+        {
+          "term_or_concept": "Irrational Number",
+          "definition_or_meaning": "A real number that cannot be written as a ratio of integers; non-terminating and non-repeating decimal.",
+          "si_unit_or_notation": "Q' = R \\ Q",
+          "example_or_application": "sqrt(2), pi, e."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 3.1 Q4",
+            "question": "Express 0.2353535... in p/q form.",
+            "answer": "Let x = 0.2353535... 10x = 2.353535... 1000x = 235.353535... Subtract: 990x = 233 => x = 233 / 990."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "Which of the following numbers is irrational?",
+            "options": [
+              "A) sqrt(81)",
+              "B) 0.141414...",
+              "C) 22/7",
+              "D) sqrt(7)"
+            ],
+            "answer": "D",
+            "explanation": "7 is not a perfect square, so sqrt(7) is non-terminating and non-repeating (irrational)."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "Insert two rational numbers between 1/3 and 1/2.",
+            "answer": "Convert to common denominator 24: 1/3 = 8/24, 1/2 = 12/24. Rationals are 9/24 (3/8) and 10/24 (5/12)."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "Prove that 3 + 2*sqrt(5) is irrational given that sqrt(5) is irrational.",
+            "answer": "Assume r = 3 + 2*sqrt(5) is rational. Then sqrt(5) = (r - 3)/2. Since r is rational, (r-3)/2 must be rational, contradicting irrationality of sqrt(5)."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "Prove by contradiction that sqrt(2) is an irrational number.",
+            "answer": "1. Assume sqrt(2) = p/q where p, q in Z, q != 0, and gcd(p,q) = 1.\n2. Squaring gives 2 = p^2 / q^2 => p^2 = 2q^2. Thus p^2 is even, so p is even (p = 2k).\n3. Substitute p = 2k: (2k)^2 = 2q^2 => 4k^2 = 2q^2 => q^2 = 2k^2. Thus q^2 is even, so q is even.\n4. This implies both p and q are even, contradicting gcd(p,q) = 1.\n5. Therefore, sqrt(2) must be irrational."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "A computer simulator calculates physical distances using floating point binary representations, converting fractional decimals.",
+            "qa": [
+              {
+                "question": "Why cannot 1/3 be stored with absolute exactness in a finite decimal float?",
+                "answer": "Because 1/3 has a non-terminating infinite repeating decimal expansion (0.333...) which gets truncated."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Assuming 22/7 is the exact value of pi.",
+            "correct_fact_or_method": "22/7 is a rational approximation (0.142857...). Pi is an irrational transcendental number (3.14159265...)."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Exploring Algebraic Identities",
+      "zero_omission_notes": {
+        "summary": "This chapter investigates algebraic identities as equations valid for all real variable values. It combines geometric proofs (area and volume decompositions) with algebraic derivations. Key topics include binomial squares (a+b)^2, (a-b)^2, difference of squares (a^2-b^2), trinomial square (a+b+c)^2, cubic expansions (a+b)^3, (a-b)^3, sum/difference of cubes, factorisation techniques (algebra tiles, splitting middle term, factor theorem), Śhrīdharāchārya's squaring method, and rational algebraic expression simplification.",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "4.1 Binomial & Trinomial Square Identities",
+            "full_notes": "Identities are verified geometrically by splitting a square of side (a+b) into two squares (a^2, b^2) and two rectangles (ab each), proving (a+b)^2 = a^2 + 2ab + b^2. Similarly, (a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Historical Insight",
+                "title": "Śhrīdharāchārya's Method",
+                "content": "Indian mathematician Śhrīdharāchārya utilized a^2 = (a+b)(a-b) + b^2 to compute mental squares rapidly (e.g., 97^2 = (100)(94) + 3^2 = 9409)."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "4.2 Cubic Identities & Volume Visualizations",
+            "full_notes": "A cube of edge (a+b) decomposes into 1 cube of a^3, 1 cube of b^3, 3 rectangular prisms of a^2 b, and 3 prisms of a b^2: (a+b)^3 = a^3 + b^3 + 3ab(a+b). Sum of cubes identity: a^3 + b^3 = (a+b)(a^2 - ab + b^2).",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Special Conditional Identity",
+                "title": "If a + b + c = 0",
+                "content": "If a + b + c = 0, then a^3 + b^3 + c^3 = 3abc."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "4.3 Factorisation Methods for Polynomials",
+            "full_notes": "Quadratic polynomials ax^2 + bx + c are factorised by splitting middle term b into p + q such that p * q = a * c. Higher degree polynomials are factorised using Factor Theorem combined with synthetic division.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Tip",
+                "title": "Factor Theorem",
+                "content": "(x - a) is a factor of polynomial p(x) if and only if p(a) = 0."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-4.1",
+          "aim_or_objective": "Geometric Proof of (a+b)^2 using Paper Cutting",
+          "materials_or_prerequisites": [
+            "Colored card sheets",
+            "Scissors",
+            "Ruler",
+            "Glue"
+          ],
+          "procedure_or_steps": [
+            "Cut square of side 'a' (red) and square of side 'b' (blue).",
+            "Cut two identical rectangles of dimensions 'a' by 'b' (yellow).",
+            "Assemble pieces into a single large square of side (a+b).",
+            "Calculate Total Area = Area(Red) + Area(Blue) + 2 * Area(Yellow) = a^2 + b^2 + 2ab."
+          ],
+          "observations_or_results": "The four pieces fit seamlessly to form square of side (a+b).",
+          "conclusion_or_principle": "Spatial area sum visually proves algebraic identity."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 4.1: Decomposition of Square (a+b)^2",
+            "labels_and_components": [
+              "Square a^2",
+              "Rectangle ab",
+              "Rectangle ab",
+              "Square b^2",
+              "Total Side (a+b)"
+            ],
+            "drawing_or_reading_instructions": "Draw outer square divided by vertical line at 'a' and horizontal line at 'a'. Label four internal regions.",
+            "structural_or_conceptual_explanation": "Region areas: Top-left a^2, Top-right ab, Bottom-left ab, Bottom-right b^2."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Summary of Standard Algebraic Identities",
+            "headers": [
+              "Identity Name",
+              "Expanded Form",
+              "Factorised Form"
+            ],
+            "rows": [
+              [
+                "Difference of Squares",
+                "a^2 - b^2",
+                "(a - b)(a + b)"
+              ],
+              [
+                "Perfect Square Trinomial",
+                "a^2 + 2ab + b^2",
+                "(a + b)^2"
+              ],
+              [
+                "Cubic Sum",
+                "a^3 + 3a^2 b + 3ab^2 + b^3",
+                "(a + b)^3"
+              ],
+              [
+                "Sum of Cubes",
+                "a^3 + b^3",
+                "(a + b)(a^2 - ab + b^2)"
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Binomial Square",
+          "definition_or_meaning": "(a + b)^2 = a^2 + 2ab + b^2",
+          "si_unit_or_notation": "Algebraic identity",
+          "example_or_application": "(2x + 3y)^2 = 4x^2 + 12xy + 9y^2."
+        },
+        {
+          "term_or_concept": "Difference of Squares",
+          "definition_or_meaning": "a^2 - b^2 = (a - b)(a + b)",
+          "si_unit_or_notation": "Algebraic identity",
+          "example_or_application": "105^2 - 95^2 = (105-95)(105+95) = 2000."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 4.2 Q5",
+            "question": "Factorise: 6x^2 + 17x + 5.",
+            "answer": "Splitting middle term: 6x^2 + 15x + 2x + 5 = 3x(2x + 5) + 1(2x + 5) = (3x + 1)(2x + 5)."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "If a + b + c = 0, what is the value of a^3 + b^3 + c^3?",
+            "options": [
+              "A) 0",
+              "B) abc",
+              "C) 3abc",
+              "D) a+b+c"
+            ],
+            "answer": "C",
+            "explanation": "Conditional identity states if a+b+c=0, a^3+b^3+c^3 = 3abc."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "If x + 1/x = 5, find x^2 + 1/x^2.",
+            "answer": "(x + 1/x)^2 = 25 => x^2 + 2 + 1/x^2 = 25 => x^2 + 1/x^2 = 23."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "Evaluate 998^3 using cubic identities.",
+            "answer": "(1000 - 2)^3 = 1000^3 - 3(1000)^2(2) + 3(1000)(2)^2 - 2^3 = 1,000,000,000 - 6,000,000 + 12,000 - 8 = 994,011,992."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "Factorise completely: x^3 - 6x^2 + 11x - 6.",
+            "answer": "1. Test x = 1: p(1) = 1 - 6 + 11 - 6 = 0. So (x - 1) is a factor.\n2. Divide p(x) by (x - 1): x^3 - 6x^2 + 11x - 6 = (x - 1)(x^2 - 5x + 6).\n3. Factorise x^2 - 5x + 6 = (x - 2)(x - 3).\n4. Complete factorisation: (x - 1)(x - 2)(x - 3)."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "An architect designs a cubical room of edge 'a' meter and extends all three dimensions by 'b' meters.",
+            "qa": [
+              {
+                "question": "What is the algebraic expression for the additional volume created?",
+                "answer": "Additional Volume = (a+b)^3 - a^3 = 3a^2 b + 3ab^2 + b^3 = b(3a^2 + 3ab + b^2)."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Writing (a + b)^2 = a^2 + b^2, omitting middle term 2ab.",
+            "correct_fact_or_method": "Always include middle term 2ab from rectangle areas in square expansion."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "I’m Up and Down, and Round and Round",
+      "zero_omission_notes": {
+        "summary": "This chapter provides a rigorous axiomatic study of circular geometry. Topics include locus definition of circle, radius, chord, diameter, arc, sector, segment, circumcircle construction around 3 non-collinear points (circumcentre), equal chord theorems, perpendicular bisector of chord passing through centre, inscribed angle theorem, angle subtended by arc at centre vs circumference, angle in a semicircle, concyclicity, and cyclic quadrilaterals.",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "5.1 Circle Fundamentals & Chords",
+            "full_notes": "A circle is the set of all points in a plane equidistant from a fixed centre point O. The perpendicular from centre O to a chord bisects the chord. Equal chords are equidistant from the centre.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Theorem",
+                "title": "Uniqueness of Circumcircle",
+                "content": "There is one and only one circle passing through three given non-collinear points."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "5.2 Arc Subtended Angles & Inscribed Angle Theorem",
+            "full_notes": "The angle subtended by an arc at the centre is double the angle subtended by it at any point on the remaining part of the circle: angle AOB = 2 * angle ACB.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Corollaries",
+                "title": "Angles in Segments",
+                "content": "1. Angles in the same segment of a circle are equal. 2. Angle subtended in a semicircle is a right angle (90 degrees)."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "5.3 Cyclic Quadrilaterals & Concyclicity",
+            "full_notes": "A quadrilateral is cyclic if all four vertices lie on a circle. The sum of either pair of opposite angles of a cyclic quadrilateral is 180 degrees (supplementary).",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Converse Theorem",
+                "title": "Concyclicity Condition",
+                "content": "If the sum of a pair of opposite angles of a quadrilateral is 180 degrees, the quadrilateral is cyclic."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-5.1",
+          "aim_or_objective": "Finding Centre of a Given Circle / Circular Arc",
+          "materials_or_prerequisites": [
+            "Paper",
+            "Circular coin/bangle",
+            "Compass",
+            "Straightedge"
+          ],
+          "procedure_or_steps": [
+            "Trace boundary of coin on paper to get circle.",
+            "Draw two non-parallel chords AB and CD on the circle.",
+            "Construct perpendicular bisector of chord AB using compass.",
+            "Construct perpendicular bisector of chord CD.",
+            "Mark point of intersection of perpendicular bisectors as centre O."
+          ],
+          "observations_or_results": "Perpendicular bisectors of any two chords meet at a single point.",
+          "conclusion_or_principle": "The perpendicular bisector of every chord passes through the centre."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 5.1: Inscribed Angle Theorem Representation",
+            "labels_and_components": [
+              "Centre O",
+              "Arc AB",
+              "Central Angle AOB",
+              "Inscribed Angle ACB",
+              "Circumference"
+            ],
+            "drawing_or_reading_instructions": "Draw circle with centre O. Mark arc AB at bottom. Connect A and B to O and to C on top circumference.",
+            "structural_or_conceptual_explanation": "angle AOB = 2 * angle ACB."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Circle Theorems and Geometric Implications",
+            "headers": [
+              "Theorem Statement",
+              "Geometric Condition",
+              "Resulting Equality"
+            ],
+            "rows": [
+              [
+                "Perpendicular from Centre to Chord",
+                "OM perpendicular to AB",
+                "AM = MB"
+              ],
+              [
+                "Equal Chords Distance",
+                "Chord AB = Chord CD",
+                "Distance OM = Distance ON"
+              ],
+              [
+                "Angle in Semicircle",
+                "AB is Diameter",
+                "angle ACB = 90 degrees"
+              ],
+              [
+                "Cyclic Quadrilateral Angles",
+                "ABCD concyclic",
+                "angle A + angle C = 180 degrees"
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Circumcentre",
+          "definition_or_meaning": "Point of intersection of perpendicular bisectors of sides of a triangle, serving as center of circumcircle.",
+          "si_unit_or_notation": "Point O",
+          "example_or_application": "Constructing circumcircle of triangle ABC."
+        },
+        {
+          "term_or_concept": "Cyclic Quadrilateral",
+          "definition_or_meaning": "A quadrilateral whose four vertices lie on the circumference of a single circle.",
+          "si_unit_or_notation": "ABCD concyclic",
+          "example_or_application": "In cyclic ABCD, angle A + angle C = 180 degrees."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 5.3 Q2",
+            "question": "In a cyclic quadrilateral ABCD, if angle A = 75 degrees and angle B = 100 degrees, find angles C and D.",
+            "answer": "angle A + angle C = 180 => angle C = 105 degrees. angle B + angle D = 180 => angle D = 80 degrees."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "What is the measure of an angle subtended in a semicircle?",
+            "options": [
+              "A) 45 degrees",
+              "B) 60 degrees",
+              "C) 90 degrees",
+              "D) 180 degrees"
+            ],
+            "answer": "C",
+            "explanation": "A semicircle arc subtends 180 degrees at centre, so inscribed angle is 180/2 = 90 degrees."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "A chord of length 16 cm is at a distance of 6 cm from centre of circle. Find radius.",
+            "answer": "Half chord = 8 cm. r^2 = 6^2 + 8^2 = 36 + 64 = 100 => r = 10 cm."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "An arc subtends 140 degrees at centre. Calculate angle subtended by it on major arc.",
+            "answer": "Inscribed angle = 1/2 * Central angle = 1/2 * 140 = 70 degrees."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "Prove that the sum of opposite angles of a cyclic quadrilateral is 180 degrees.",
+            "answer": "1. Let ABCD be cyclic quadrilateral with centre O.\n2. Join OA and OC.\n3. Reflex angle AOC = 2 * angle ADC (Inscribed Angle Theorem).\n4. Acute angle AOC = 2 * angle ABC.\n5. Reflex angle AOC + Acute angle AOC = 360 degrees.\n6. 2 * angle ADC + 2 * angle ABC = 360 => angle ADC + angle ABC = 180 degrees."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "Three satellite tracking stations A, B, C are located on a circular radar display boundary around central server O.",
+            "qa": [
+              {
+                "question": "If station angle ABC is measured as 50 degrees, what is angle AOC on server monitor?",
+                "answer": "Central angle AOC = 2 * angle ABC = 2 * 50 = 100 degrees."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Assuming any quadrilateral drawn inside a circle is cyclic.",
+            "correct_fact_or_method": "A quadrilateral is cyclic ONLY if all four vertices lie strictly on the circle boundary."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Measuring Space: Perimeter and Area",
+      "zero_omission_notes": {
+        "summary": "This chapter delivers comprehensive mensuration formulas and geometric area derivations. It covers area of parallelograms, triangles (1/2 * b * h), trapezia, rhombuses, and circles. Advanced topics include Heron's formula for arbitrary triangles, Brahmagupta's formula for cyclic quadrilaterals, Baudhāyana's geometric squaring of a rectangle, arc lengths, sector areas, segment areas, and historical approximations of pi (c/d ratio).",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "6.1 Area Derivations for Quadrilaterals & Triangles",
+            "full_notes": "Parallelogram area = base * height. Triangle area = 1/2 * base * height derived by halving parallelogram. Trapezium area = 1/2 * (sum of parallel sides) * distance between them.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Historical Note",
+                "title": "Brahmagupta's Formula",
+                "content": "Brahmagupta (598 CE) gave Area = sqrt((s-a)(s-b)(s-c)(s-d)) for cyclic quadrilateral with sides a,b,c,d and semi-perimeter s."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "6.2 Heron's Formula for Triangles",
+            "full_notes": "For a triangle with side lengths a, b, c and semi-perimeter s = (a+b+c)/2, Area = sqrt(s(s-a)(s-b)(s-c)). Useful when height is unknown.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Formula Application",
+                "title": "Equilateral Triangle",
+                "content": "For equilateral triangle of side 'a': Area = (sqrt(3)/4) * a^2."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "6.3 Circular Measurements: Sector & Segment",
+            "full_notes": "Circumference C = 2 * pi * r; Area = pi * r^2. Length of arc with central angle theta: L = (theta/360) * 2*pi*r. Sector area = (theta/360) * pi * r^2. Minor segment area = Sector area - Triangle area.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Definition",
+                "title": "Sector vs Segment",
+                "content": "Sector is region bounded by two radii and arc. Segment is region bounded by a chord and arc."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-6.1",
+          "aim_or_objective": "Deriving Circle Area Formula by Sector Rearrangement",
+          "materials_or_prerequisites": [
+            "Paper circle",
+            "Scissors",
+            "Glue",
+            "Ruler"
+          ],
+          "procedure_or_steps": [
+            "Divide circle into 16 equal sector wedges.",
+            "Cut out sectors and arrange them alternately pointing up and down.",
+            "Observe shape forming an approximate rectangle.",
+            "Base of rectangle = half circumference = pi * r; Height = radius r.",
+            "Area = Base * Height = (pi * r) * r = pi * r^2."
+          ],
+          "observations_or_results": "As sectors get narrower, shape approaches exact rectangle.",
+          "conclusion_or_principle": "Circle area equals pi * r^2."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 6.1: Sector and Segment of a Circle",
+            "labels_and_components": [
+              "Centre O",
+              "Radius r",
+              "Arc Length L",
+              "Sector Angle theta",
+              "Minor Segment",
+              "Chord AB"
+            ],
+            "drawing_or_reading_instructions": "Draw circle. Highlight pie wedge as Sector. Draw chord AB; shade region between arc and chord as Minor Segment.",
+            "structural_or_conceptual_explanation": "Segment Area = Sector Area - Triangle OAB Area."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Mensuration Formulas Summary",
+            "headers": [
+              "Shape",
+              "Perimeter / Boundary",
+              "Area Formula"
+            ],
+            "rows": [
+              [
+                "Triangle (General)",
+                "a + b + c",
+                "sqrt(s(s-a)(s-b)(s-c))"
+              ],
+              [
+                "Trapezium",
+                "Sum of 4 sides",
+                "1/2 * (a + b) * h"
+              ],
+              [
+                "Circle",
+                "2 * pi * r",
+                "pi * r^2"
+              ],
+              [
+                "Sector",
+                "2r + (theta/360)*2*pi*r",
+                "(theta/360) * pi * r^2"
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Semi-perimeter",
+          "definition_or_meaning": "Half the total perimeter of a polygon, denoted s = (a + b + c) / 2.",
+          "si_unit_or_notation": "s (linear units)",
+          "example_or_application": "For triangle with sides 5, 6, 7: s = 9 cm."
+        },
+        {
+          "term_or_concept": "Heron's Formula",
+          "definition_or_meaning": "Area = sqrt(s * (s - a) * (s - b) * (s - c))",
+          "si_unit_or_notation": "Square units",
+          "example_or_application": "Sides 3, 4, 5 => s = 6 => Area = 6 sq units."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 6.2 Q3",
+            "question": "Find the area of a triangular field with sides 13 m, 14 m, and 15 m.",
+            "answer": "s = (13 + 14 + 15)/2 = 21 m. Area = sqrt(21 * 8 * 7 * 6) = sqrt(7056) = 84 sq m."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "If the perimeter of a circle equals its area numerically, what is radius r?",
+            "options": [
+              "A) 1 unit",
+              "B) 2 units",
+              "C) pi units",
+              "D) 4 units"
+            ],
+            "answer": "B",
+            "explanation": "2 * pi * r = pi * r^2 => 2 = r."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "Find the area of an equilateral triangle of side 8 cm.",
+            "answer": "Area = (sqrt(3)/4) * 8^2 = 16*sqrt(3) sq cm."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "A clock minute hand is 14 cm long. Find area swept in 5 minutes.",
+            "answer": "theta = (360/60)*5 = 30 deg. Area = (30/360) * (22/7) * 14^2 = 154 / 3 = 51.33 sq cm."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its area.",
+            "answer": "1. Draw parallelogram inside trapezium with sides 10m and 13m. Remaining base = 25 - 10 = 15m.\n2. Triangular portion has sides 13m, 14m, 15m. Area = 84 sq m (by Heron's formula).\n3. Height h of triangle: 1/2 * 15 * h = 84 => h = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "A circular running track has outer radius 21 m and inner radius 14 m.",
+            "qa": [
+              {
+                "question": "Calculate the area of the running track path.",
+                "answer": "Area = pi*(R^2 - r^2) = (22/7)*(21^2 - 14^2) = (22/7)*(441 - 196) = 770 sq m."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Forgetting square root at the final step of Heron's formula.",
+            "correct_fact_or_method": "Always keep radical symbol sqrt(...) active until final prime factor pairing step."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
+      "zero_omission_notes": {
+        "summary": "This chapter introduces probability as a rigorous mathematical tool to quantify uncertainty on a scale from 0 (impossible) to 1 (certain). Key concepts include random experiments, sample spaces, outcomes, events, fair vs biased trials, experimental (empirical) probability P(E) = (favorable trials) / (total trials), theoretical probability P(E) = n(E) / n(S) for equally likely outcomes, complementary events P(E') = 1 - P(E), tree diagrams, and geometric probability.",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "7.1 Random Experiments & Probability Scale",
+            "full_notes": "A random experiment has known possible outcomes, but individual trial results cannot be predicted with certainty. Probability values range strictly in [0, 1]. Sum of probabilities of all elementary outcomes equals 1.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Rule",
+                "title": "Probability Bounds",
+                "content": "0 <= P(E) <= 1. P(Impossible Event) = 0, P(Sure Event) = 1."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "7.2 Experimental vs Theoretical Probability",
+            "full_notes": "Experimental probability relies on actual trial data: P_exp(E) = m / n. Theoretical probability assumes equally likely outcomes: P_th(E) = n(E) / n(S). By Law of Large Numbers, experimental probability approaches theoretical probability as trial count n -> infinity.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Historical Note",
+                "title": "Coin Tossing Experiments",
+                "content": "Karl Pearson tossed a coin 24,000 times, getting 12,012 heads—an experimental probability of 0.5005, extremely close to 0.5!"
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "7.3 Compound Events & Geometric Probability",
+            "full_notes": "Sample spaces for multi-stage experiments (e.g., tossing 2 coins, rolling 2 dice) are organized using tree diagrams or coordinate grids. Geometric probability evaluates likelihood as ratio of favorable regions (length, area) to total region.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Formula",
+                "title": "Complementary Event",
+                "content": "P(E) + P(not E) = 1 => P(not E) = 1 - P(E)."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-7.1",
+          "aim_or_objective": "Coin Tossing Simulation and Law of Large Numbers",
+          "materials_or_prerequisites": [
+            "Fair coin",
+            "Tally sheet"
+          ],
+          "procedure_or_steps": [
+            "Toss coin 10 times, record heads.",
+            "Continue tossing up to 100 times, calculating cumulative ratio P_exp(H) at 10, 20, 50, 100 tosses.",
+            "Plot graph of trial count vs experimental head frequency."
+          ],
+          "observations_or_results": "Flips exhibit large variation initially, but stabilize near 0.5 as trial count increases.",
+          "conclusion_or_principle": "Empirical relative frequency converges to theoretical probability for large sample sizes."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 7.1: Tree Diagram for Tossing Two Coins",
+            "labels_and_components": [
+              "Coin 1 (H/T)",
+              "Coin 2 (H/T)",
+              "Outcomes: HH, HT, TH, TT"
+            ],
+            "drawing_or_reading_instructions": "Draw root branching into H and T for Coin 1. From each branch, draw sub-branches H and T for Coin 2. List 4 final outcomes.",
+            "structural_or_conceptual_explanation": "Total outcomes n(S) = 4."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Sample Space Matrix for Rolling Two Dice",
+            "headers": [
+              "Die 1 \\ Die 2",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "rows": [
+              [
+                "1",
+                "(1,1)",
+                "(1,2)",
+                "(1,3)",
+                "(1,4)",
+                "(1,5)",
+                "(1,6)"
+              ],
+              [
+                "2",
+                "(2,1)",
+                "(2,2)",
+                "(2,3)",
+                "(2,4)",
+                "(2,5)",
+                "(2,6)"
+              ],
+              [
+                "3",
+                "(3,1)",
+                "(3,2)",
+                "(3,3)",
+                "(3,4)",
+                "(3,5)",
+                "(3,6)"
+              ],
+              [
+                "4",
+                "(4,1)",
+                "(4,2)",
+                "(4,3)",
+                "(4,4)",
+                "(4,5)",
+                "(4,6)"
+              ],
+              [
+                "5",
+                "(5,1)",
+                "(5,2)",
+                "(5,3)",
+                "(5,4)",
+                "(5,5)",
+                "(5,6)"
+              ],
+              [
+                "6",
+                "(6,1)",
+                "(6,2)",
+                "(6,3)",
+                "(6,4)",
+                "(6,5)",
+                "(6,6)"
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Sample Space",
+          "definition_or_meaning": "The set of all possible outcomes of a random experiment, denoted S.",
+          "si_unit_or_notation": "Set S",
+          "example_or_application": "Rolling a six-sided die gives S = {1, 2, 3, 4, 5, 6}."
+        },
+        {
+          "term_or_concept": "Theoretical Probability",
+          "definition_or_meaning": "P(E) = n(E) / n(S)",
+          "si_unit_or_notation": "Dimensionless ratio in [0, 1]",
+          "example_or_application": "P(even number on die) = 3/6 = 1/2."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 7.1 Q5",
+            "question": "A card is drawn from a well-shuffled deck of 52 cards. Find probability of drawing a face card.",
+            "answer": "Face cards = 12. P(Face card) = 12 / 52 = 3 / 13."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "Which of the following CANNOT be a probability value?",
+            "options": [
+              "A) 2/3",
+              "B) -1.5",
+              "C) 15%",
+              "D) 0.7"
+            ],
+            "answer": "B",
+            "explanation": "Probability can never be negative (0 <= P <= 1)."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "Two coins are tossed simultaneously. Find probability of getting at most one head.",
+            "answer": "S = {HH, HT, TH, TT}, n(S) = 4. At most 1 head = {HT, TH, TT}, n(E) = 3. P = 3/4."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "A dart is thrown at a square board of side 20 cm containing a circular target ring of radius 7 cm. Find geometric probability of hit.",
+            "answer": "Total Area = 400 sq cm. Target Area = (22/7)*7^2 = 154 sq cm. P(Hit) = 154/400 = 77/200 = 0.385."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "Two dice are rolled together. Find probability that: (a) Sum is 8. (b) Sum is a prime number. (c) Both dice show doublets.",
+            "answer": "Total outcomes n(S) = 36.\n(a) Sum = 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5 outcomes => P = 5/36.\n(b) Sum prime (2,3,5,7,11): count = 15 outcomes => P = 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6 outcomes => P = 6/36 = 1/6."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "A quality inspector tests 500 manufactured LED bulbs and finds 15 defective.",
+            "qa": [
+              {
+                "question": "What is the probability that a bulb selected at random is non-defective?",
+                "answer": "Non-defective count = 500 - 15 = 485. P(Non-defective) = 485 / 500 = 0.97."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Confusing 'at least' and 'at most' during outcome selection.",
+            "correct_fact_or_method": "'At least 1' means 1 or more. 'At most 1' means 1 or fewer (including 0)."
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 8,
+      "chapter_title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+      "zero_omission_notes": {
+        "summary": "This chapter investigates ordered number patterns, explicit vs recursive rules, triangular numbers, Virahānka-Fibonacci numbers, Arithmetic Progressions (AP), and Geometric Progressions (GP). Students learn term formulas t_n = a + (n-1)d for AP, common ratio r for GP, sum formulas, and applications to real-world growth models and self-similar fractals like the Sierpiński triangle.",
+        "detailed_sections": [
+          {
+            "section_number_and_title": "8.1 Sequences, Rules, and Special Sequences",
+            "full_notes": "A sequence is an ordered list of numbers following a specific rule. Explicit rules calculate term t_n directly from position n. Recursive rules build term t_n from preceding terms t_(n-1). Triangular numbers t_n = n(n+1)/2. Virahānka-Fibonacci sequence: V_1=1, V_2=1, V_n = V_(n-1) + V_(n-2).",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Historical Note",
+                "title": "Virahānka's Prosody Discovery",
+                "content": "Indian prosodist Virahānka (c. 600 CE) discovered the Fibonacci sequence while counting combinations of short (laghu) and long (guru) syllables."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "8.2 Arithmetic Progressions (AP)",
+            "full_notes": "An AP is a sequence where consecutive terms differ by a constant value 'd' (common difference). The nth term is t_n = a + (n-1)d, where 'a' is first term. Graphically, AP terms lie on a straight line.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Formula Summary",
+                "title": "Sum of First n Terms of AP",
+                "content": "S_n = (n/2) * [2a + (n-1)d] or S_n = (n/2) * [a + l], where l is last term."
+              }
+            ]
+          },
+          {
+            "section_number_and_title": "8.3 Geometric Progressions (GP) & Fractals",
+            "full_notes": "A GP is a sequence where each term after the first is obtained by multiplying the previous term by a non-zero constant ratio 'r'. The nth term is t_n = a * r^(n-1). Fractals like Sierpiński triangle illustrate geometric growth.",
+            "margin_notes_and_sidebars": [
+              {
+                "type": "Comparison",
+                "title": "Linear vs Exponential Growth",
+                "content": "AP models linear additive growth. GP models exponential multiplicative growth."
+              }
+            ]
+          }
+        ]
+      },
+      "practical_lab_activity_or_methodology_manual": [
+        {
+          "activity_or_method_id": "ACT-8.1",
+          "aim_or_objective": "Visualizing Triangular and Square Numbers with Counters",
+          "materials_or_prerequisites": [
+            "Counters / buttons / grid paper"
+          ],
+          "procedure_or_steps": [
+            "Arrange counters into triangular dots: T_1=1, T_2=3, T_3=6, T_4=10.",
+            "Take triangular array T_3 (6 counters) and T_4 (10 counters).",
+            "Invert T_3 and interlock it with T_4.",
+            "Observe that combined shape forms a square array of 4 x 4 = 16 counters."
+          ],
+          "observations_or_results": "Two consecutive triangular numbers always combine to form a perfect square number.",
+          "conclusion_or_principle": "Algebraic identity T_n + T_(n-1) = n^2 verified physically."
+        }
+      ],
+      "visuals_diagrams_and_tabular_data": {
+        "diagrams_figures_and_maps": [
+          {
+            "figure_id_and_title": "Fig 8.1: Geometric Pattern of Triangular Numbers",
+            "labels_and_components": [
+              "T1 = 1",
+              "T2 = 3",
+              "T3 = 6",
+              "T4 = 10"
+            ],
+            "drawing_or_reading_instructions": "Draw dot triangles with row counts 1, 2, 3, 4. Label total dot sums under each triangle.",
+            "structural_or_conceptual_explanation": "T_n = n(n+1)/2."
+          }
+        ],
+        "data_tables_and_comparisons": [
+          {
+            "table_title": "Comparison of AP vs GP Properties",
+            "headers": [
+              "Property",
+              "Arithmetic Progression (AP)",
+              "Geometric Progression (GP)"
+            ],
+            "rows": [
+              [
+                "Definition",
+                "Constant difference d = t_n - t_(n-1)",
+                "Constant ratio r = t_n / t_(n-1)"
+              ],
+              [
+                "nth Term Formula",
+                "t_n = a + (n - 1)d",
+                "t_n = a * r^(n - 1)"
+              ],
+              [
+                "Growth Rate",
+                "Linear (constant addition)",
+                "Exponential (constant multiplication)"
+              ],
+              [
+                "Example",
+                "4, 7, 10, 13...",
+                "4, 12, 36, 108..."
+              ]
+            ]
+          }
+        ]
+      },
+      "master_glossary_units_and_formulas": [
+        {
+          "term_or_concept": "Arithmetic Progression (AP)",
+          "definition_or_meaning": "A sequence in which the difference between any two consecutive terms is constant.",
+          "si_unit_or_notation": "t_n = a + (n-1)d",
+          "example_or_application": "5, 9, 13, 17... (a=5, d=4)."
+        },
+        {
+          "term_or_concept": "Geometric Progression (GP)",
+          "definition_or_meaning": "A sequence in which the ratio of any two consecutive terms is constant.",
+          "si_unit_or_notation": "t_n = a * r^(n-1)",
+          "example_or_application": "3, 6, 12, 24... (a=3, r=2)."
+        }
+      ],
+      "exam_question_bank": {
+        "textbook_exercises": [
+          {
+            "q_no": "Ex 8.2 Q4",
+            "question": "Which term of the AP 3, 8, 13, 18... is 78?",
+            "answer": "a = 3, d = 5. 78 = 3 + (n-1)*5 => 75 = 5*(n-1) => n-1 = 15 => n = 16th term."
+          }
+        ],
+        "objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "What is the common difference of the AP: -5, -1, 3, 7...",
+            "options": [
+              "A) -4",
+              "B) 4",
+              "C) 3",
+              "D) -5"
+            ],
+            "answer": "B",
+            "explanation": "d = t_2 - t_1 = -1 - (-5) = 4."
+          }
+        ],
+        "short_answer_questions": [
+          {
+            "marks": 2,
+            "question": "Find the sum of first 20 natural numbers.",
+            "answer": "S_20 = 20 * 21 / 2 = 10 * 21 = 210."
+          }
+        ],
+        "analytical_reasoning_questions": [
+          {
+            "marks": 3,
+            "question": "In a bacterial culture, population doubles every hour starting from 100. Find population after 8 hours.",
+            "answer": "GP with a = 100, r = 2. t_9 = 100 * 2^8 = 100 * 256 = 25,600 bacteria."
+          }
+        ],
+        "comprehensive_long_answers": [
+          {
+            "marks": 5,
+            "question": "The 3rd term of an AP is 7 and the 7th term is 19. Find 'a', 'd', and 15th term.",
+            "answer": "1. a + 2d = 7 (Eq 1)\n2. a + 6d = 19 (Eq 2)\n3. Subtract: 4d = 12 => d = 3.\n4. Substitute: a + 6 = 7 => a = 1.\n5. 15th term t_15 = 1 + 14(3) = 43."
+          }
+        ],
+        "competency_and_case_studies": [
+          {
+            "case_scenario": "A money saver deposits Rs. 1000 in month 1 and increases the monthly deposit by Rs. 200 each subsequent month.",
+            "qa": [
+              {
+                "question": "How much money does he deposit in month 12, and what is total accumulated deposit after 1 year?",
+                "answer": "t_12 = 1000 + 11(200) = Rs. 3200. Total S_12 = (12/2)*(1000 + 3200) = 6 * 4200 = Rs. 25,200."
+              }
+            ]
+          }
+        ],
+        "common_misconceptions_and_pitfalls": [
+          {
+            "common_error_or_misconception": "Confusing nth term t_n with sum of n terms S_n.",
+            "correct_fact_or_method": "t_n is the specific value at position n. S_n is the accumulated sum of all terms from 1 to n."
+          }
+        ]
+      }
+    }
+  ]
+}

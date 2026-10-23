@@ -1,0 +1,1221 @@
+{
+  "subject": "Ganita Manjari - Class 9 Mathematics (Part II)",
+  "grade_level": "Class 9",
+  "chapters": [
+    {
+      "chapter_number": 9,
+      "chapter_title": "Propositions and their Converses",
+      "unit_or_theme": "Mathematical Logic & Proofs",
+      "m1_zero_omission_notes": {
+        "chapter_executive_summary": "This chapter introduces formal mathematical logic, focusing on conditional statements (propositions of the form 'If X then Y') and their converses ('If Y then X'). It demonstrates that the logical validity of a proposition does not guarantee the truth of its converse and establishes counterexamples as a definitive tool for disproving false mathematical claims across number theory and plane geometry.",
+        "detailed_section_hierarchy": [
+          {
+            "section_number_title": "9.1 Propositions and Converses",
+            "full_explanation": "A proposition is a declarative statement that is definitively true or false. Given a conditional proposition 'If X then Y' (X implies Y), its converse is formed by swapping the premise and conclusion to get 'If Y then X'. A proposition and its converse may both be true, one true and one false, or both false.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Pedagogical Note",
+                "box_title": "Alternative Phrasings of Implications",
+                "full_content": "'If X then Y' can also be expressed as 'X implies Y' or 'Y when X'. For example, 'If a number is a perfect square, then it has an odd number of factors' is logically equivalent to 'A number has an odd number of factors when it is a perfect square'."
+              }
+            ]
+          },
+          {
+            "section_number_title": "9.2 The Role of Counterexamples",
+            "full_explanation": "A counterexample is a specific case that contradicts a proposition, conclusively disproving it. A single valid counterexample is sufficient to show that a universal claim is false.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Historical Note",
+                "box_title": "Euler Disproves Fermat's Prime Conjecture",
+                "full_content": "Pierre de Fermat conjectured that all numbers of the form 2^(2^n) + 1 are prime. Leonhard Euler proved this false by discovering the counterexample n=5: 2^(2^5) + 1 = 4,294,967,297 = 641 x 6,700,417, which is composite."
+              }
+            ]
+          }
+        ]
+      },
+      "m2_key_definitions_formulas_and_vocabulary": {
+        "glossary_and_key_terms": [
+          {
+            "term": "Proposition",
+            "definition": "A mathematical statement that is unambiguously either true or false.",
+            "contextual_example_or_usage": "'If a number is a multiple of 6, then it is a multiple of 3' is a true proposition.",
+            "associated_units_or_parts_of_speech": "Noun"
+          },
+          {
+            "term": "Converse",
+            "definition": "A statement formed by interchanging the hypothesis (premise X) and conclusion (consequence Y) of a conditional proposition.",
+            "contextual_example_or_usage": "The converse of 'If X then Y' is 'If Y then X'.",
+            "associated_units_or_parts_of_speech": "Noun"
+          },
+          {
+            "term": "Counterexample",
+            "definition": "A specific example or instance that refutes a proposition or general claim.",
+            "contextual_example_or_usage": "The number 9 is a multiple of 3 but not 6, serving as a counterexample to 'If a number is a multiple of 3, then it is a multiple of 6'.",
+            "associated_units_or_parts_of_speech": "Noun"
+          }
+        ],
+        "formulas_rules_and_laws": [
+          {
+            "name": "Equivalence Rule for Perfect Squares",
+            "statement_or_expression": "n is a perfect square <==> n has an odd number of factors",
+            "variable_definitions": "n: positive integer",
+            "model_application_example": "9 has factors 1, 3, 9 (3 factors, odd count), so 9 is a perfect square."
+          },
+          {
+            "name": "Baudhayana-Pythagoras Theorem and Converse",
+            "statement_or_expression": "In a triangle with sides a, b, c: Right-angled at C <==> a^2 + b^2 = c^2",
+            "variable_definitions": "a, b, c: side lengths of triangle",
+            "model_application_example": "A triangle with side lengths 3, 4, 5 satisfies 3^2 + 4^2 = 5^2 (9 + 16 = 25), so it is right-angled."
+          }
+        ]
+      },
+      "m3_practical_activities_lab_and_step_by_step_procedures": [
+        {
+          "activity_or_procedure_title": "Constructing Quadrilaterals from Diagonal Sticks",
+          "objective_or_aim": "Investigate whether equal diagonals imply a specific quadrilateral type Q versus quadrilateral type Q having equal diagonals.",
+          "materials_or_prerequisites": [
+            "Two thin straight sticks",
+            "Pin/Pivot connector",
+            "Paper and pencil"
+          ],
+          "step_by_step_procedure": [
+            "1. Take two thin sticks representing diagonals.",
+            "2. Join them at a central intersection point using a pin.",
+            "3. Join the four endpoints to form quadrilateral Q.",
+            "4. Test if changing the angle or intersection point preserves quadrilateral properties when stick lengths are equal."
+          ],
+          "expected_observations_or_working": "Having equal diagonal sticks is necessary for a rectangle, but not sufficient unless they bisect each other.",
+          "scientific_or_logical_conclusion": "Demonstrates the distinction between necessary conditions (P implies Q) and sufficient conditions (Q implies P)."
+        }
+      ],
+      "m4_diagrams_tables_and_visual_data": {
+        "diagrams_and_illustrations": [
+          {
+            "figure_title": "Fig 9.1: Triangle with Angle Bisectors and Incentre",
+            "labels_to_learn": [
+              "A, B, C (Vertices)",
+              "I (Incentre)",
+              "E, F (Intersection points on AC and AB)"
+            ],
+            "drawing_or_labeling_instructions": "Draw triangle ABC, bisect angles B and C to meet at I, extend segments to sides AC and AB at E and F.",
+            "key_structural_details": "If AB = AC, then IE = IF. The converse also holds."
+          }
+        ],
+        "tables_and_charts": [
+          {
+            "table_title": "Logical Truth Table for Proposition vs Converse",
+            "headers": [
+              "Proposition P (If X then Y)",
+              "Converse Q (If Y then X)",
+              "Logical Relationship"
+            ],
+            "rows": [
+              [
+                "True (Multiples of 6 are multiples of 3)",
+                "False (Multiples of 3 are not all multiples of 6)",
+                "Proposition True, Converse False"
+              ],
+              [
+                "True (Perfect square -> Odd factors)",
+                "True (Odd factors -> Perfect square)",
+                "Both True (Equivalence)"
+              ],
+              [
+                "False (Same area -> Congruent)",
+                "True (Congruent -> Same area)",
+                "Proposition False, Converse True"
+              ]
+            ]
+          }
+        ]
+      },
+      "m5_textbook_solutions_and_extracts": {
+        "end_of_chapter_textbook_solutions": [
+          {
+            "exercise_section": "Exercise 9.1",
+            "question_number": "Q2",
+            "question_text": "Frame the converse: 'If a quadrilateral is a square, then all its angles are equal.' Determine truth values.",
+            "complete_step_by_step_solution": "Proposition: True (all angles in a square are 90 degrees). Converse: 'If all angles of a quadrilateral are equal, then it is a square.' False. Counterexample: A rectangle with non-equal adjacent sides (e.g., 4 cm by 6 cm) has all four angles equal to 90 degrees, but it is not a square."
+          }
+        ],
+        "extract_or_passage_based_questions": [
+          {
+            "extract_id": 1,
+            "passage_or_source_text": "Fermat claimed that all numbers of the form 2^(2^n) + 1 are prime (n = 0, 1, 2, ...). But Euler disproved this by showing that 2^(2^5) + 1 is composite.",
+            "questions_and_answers": [
+              {
+                "question": "What role did Euler's calculation play in mathematical logic?",
+                "answer": "Euler's calculation provided a single counterexample (n=5) which conclusively disproved Fermat's general proposition."
+              }
+            ]
+          }
+        ]
+      },
+      "m6_tiered_exam_question_bank": {
+        "level_1_objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "Which of the following statement pairs represents a proposition and its true converse?",
+            "options": [
+              "A. If a number is a multiple of 6, it is a multiple of 3.",
+              "B. If two triangles are congruent, they have equal area.",
+              "C. If a number is a perfect square, it has an odd number of factors.",
+              "D. If a quadrilateral is a rhombus, its diagonals are perpendicular."
+            ],
+            "correct_answer": "C",
+            "brief_explanation": "Being a perfect square and having an odd number of factors mutually imply each other, making both the proposition and its converse true."
+          }
+        ],
+        "level_2_short_answer_questions_2_to_3_marks": [
+          {
+            "question": "Define a counterexample and provide a geometric counterexample for the statement: 'If two triangles have equal perimeter, then they are congruent.'",
+            "model_answer": "A counterexample is a specific case that contradicts a general statement, showing it to be false. Counterexample: Triangle A with sides (3, 4, 5) has perimeter 12 cm and is right-angled. Triangle B with sides (4, 4, 4) has perimeter 12 cm and is equilateral. They have equal perimeters but are not congruent.",
+            "key_marking_points": [
+              "Correct definition of counterexample (1 mark)",
+              "Specific non-congruent triangles with equal perimeter provided (1-2 marks)"
+            ]
+          }
+        ],
+        "level_3_long_answer_and_reasoning_5_marks": [
+          {
+            "question": "State the Baudh\u0101yana-Pythagoras theorem and its converse. Prove whether the converse is true or false and explain its significance in verifying right angles.",
+            "model_answer": "Theorem: If a triangle is right-angled with hypotenuse c and legs a and b, then a^2 + b^2 = c^2. Converse: If a triangle has side lengths a, b, c satisfying a^2 + b^2 = c^2, then the angle opposite to side c is a right angle (90 degrees). The converse is TRUE. It is used in practical construction (e.g., mason's 3-4-5 rope method) to lay out perfectly perpendicular corners."
+          }
+        ],
+        "level_4_competency_and_case_studies": [
+          {
+            "case_scenario": "A student claims that whenever a statement 'If P then Q' is proven in geometry, its converse 'If Q then P' automatically holds.",
+            "questions_and_answers": [
+              {
+                "question": "Evaluate the student's claim using the relationship between parallel lines and alternate interior angles.",
+                "answer": "The student is incorrect in assuming automatic validity, although in the specific case of alternate interior angles, both proposition and converse are true: 'If lines are parallel, alternate angles are equal' AND 'If alternate angles are equal, lines are parallel'."
+              }
+            ]
+          }
+        ]
+      },
+      "m7_common_pitfalls_and_misconceptions": [
+        {
+          "frequent_student_error": "Assuming that if a proposition is true, its converse must also be true.",
+          "root_cause": "Confusing logical implication (P -> Q) with logical equivalence (P <-> Q).",
+          "correct_approach": "Always test the converse independently with potential counterexamples before assuming its truth."
+        }
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "How Quantities Combine: Understanding Data",
+      "unit_or_theme": "Statistics & Data Visualization",
+      "m1_zero_omission_notes": {
+        "chapter_executive_summary": "This chapter extends simple arithmetic averages to weighted averages when combining groups of unequal size or items with varying importance. It also covers multi-category data visualizations, comparing cluster-column graphs, stacked bar charts, and 100% stacked bar charts.",
+        "detailed_section_hierarchy": [
+          {
+            "section_number_title": "10.1 Weighted Averages and Combining Data",
+            "full_explanation": "When combining data sets of unequal sizes or combining components with different weights, taking a simple average of the group averages yields incorrect results. The weighted mean is calculated as x_bar = sum(w_i * x_i) / sum(w_i).",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Real-World Context",
+                "box_title": "Mixtures and Concentration",
+                "full_content": "When mixing batches of brass or herbal kashayam solutions with concentrations x_i and volumes w_i, the overall concentration is a weighted average."
+              }
+            ]
+          },
+          {
+            "section_number_title": "10.2 Stacked and 100% Stacked Bar Charts",
+            "full_explanation": "Stacked bar charts display total values while keeping track of individual component sub-totals. 100% stacked bar charts normalize each bar to 100%, allowing direct comparison of relative proportions across categories, functioning like rectangular pie charts.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Comparison Note",
+                "box_title": "Stacked vs 100% Stacked Charts",
+                "full_content": "Stacked bar charts preserve absolute quantities and totals; 100% stacked bar charts highlight percentage distribution regardless of total group magnitude."
+              }
+            ]
+          }
+        ]
+      },
+      "m2_key_definitions_formulas_and_vocabulary": {
+        "glossary_and_key_terms": [
+          {
+            "term": "Weighted Average (Weighted Mean)",
+            "definition": "An average where each data point is multiplied by a weight reflecting its relative size, count, or importance.",
+            "contextual_example_or_usage": "Calculating annual academic scores when internals, projects, and final exams carry weights 3:2:5.",
+            "associated_units_or_parts_of_speech": "Noun"
+          },
+          {
+            "term": "100% Stacked Bar Chart",
+            "definition": "A bar visual where each full stacked bar represents 100%, and sub-segments reflect relative percentages.",
+            "contextual_example_or_usage": "Comparing family spending proportions across housing, food, and education.",
+            "associated_units_or_parts_of_speech": "Noun"
+          }
+        ],
+        "formulas_rules_and_laws": [
+          {
+            "name": "Weighted Mean Formula",
+            "statement_or_expression": "x_bar = (w1*x1 + w2*x2 + ... + wn*xn) / (w1 + w2 + ... + wn)",
+            "variable_definitions": "x_i: value or average of i-th group; w_i: weight or count of i-th group",
+            "model_application_example": "Group A (8 seniors, avg 150 cm) & Group B (3 juniors, avg 140 cm): Avg = (8*150 + 3*140)/(8+3) = 1620/11 = 147.27 cm."
+          }
+        ]
+      },
+      "m3_practical_activities_lab_and_step_by_step_procedures": [
+        {
+          "activity_or_procedure_title": "Analyzing Weekly Household Expenditure Data",
+          "objective_or_aim": "Construct stacked and 100% stacked bar charts from multi-category expenditure tables.",
+          "materials_or_prerequisites": [
+            "Graph paper / Spreadsheet tool",
+            "Expenditure table for Families A, B, C"
+          ],
+          "step_by_step_procedure": [
+            "1. Calculate total expenditure for each family by summing category expenses.",
+            "2. Plot stacked bars where total height equals total family expenditure.",
+            "3. Convert category expenses into percentages of total family expenditure.",
+            "4. Draw 100% stacked bars with identical overall length (100%), dividing segments by calculated percentages."
+          ],
+          "expected_observations_or_working": "Family A may have higher total spending, but Family C may spend a higher percentage on food.",
+          "scientific_or_logical_conclusion": "100% stacked bar charts isolate budget allocation proportions from absolute income differences."
+        }
+      ],
+      "m4_diagrams_tables_and_visual_data": {
+        "diagrams_and_illustrations": [
+          {
+            "figure_title": "Fig 10.4: 100% Stacked Bar Chart of Family Expenditures",
+            "labels_to_learn": [
+              "Families A, B, C (Y-axis)",
+              "Percentage 0% to 100% (X-axis)",
+              "Category Legend"
+            ],
+            "drawing_or_labeling_instructions": "Draw three horizontal bars of identical length divided into colored segments representing spending categories.",
+            "key_structural_details": "Visualizes relative proportions; total bar length is fixed at 100%."
+          }
+        ],
+        "tables_and_charts": [
+          {
+            "table_title": "Table 10.2: Average Weekly Family Expenditure (in Rupees)",
+            "headers": [
+              "Family",
+              "Housing",
+              "Food",
+              "Education",
+              "Transportation",
+              "Healthcare",
+              "Recreation"
+            ],
+            "rows": [
+              [
+                "Family A",
+                "1940",
+                "1700",
+                "1280",
+                "1200",
+                "1770",
+                "535"
+              ],
+              [
+                "Family B",
+                "1750",
+                "1546",
+                "1500",
+                "1280",
+                "1210",
+                "0"
+              ],
+              [
+                "Family C",
+                "950",
+                "1700",
+                "1540",
+                "1400",
+                "1300",
+                "150"
+              ]
+            ]
+          }
+        ]
+      },
+      "m5_textbook_solutions_and_extracts": {
+        "end_of_chapter_textbook_solutions": [
+          {
+            "exercise_section": "Example 6 Solution",
+            "question_number": "Ex 6",
+            "question_text": "Rehmat scored 60% in internals, 64% in project, 73% in final exam. Weights are ratio 3:2:5. Calculate annual score.",
+            "complete_step_by_step_solution": "Weighted Score = (3*60 + 2*64 + 5*73) / (3 + 2 + 5) = (180 + 128 + 365) / 10 = 673 / 10 = 67.3%."
+          }
+        ],
+        "extract_or_passage_based_questions": [
+          {
+            "extract_id": 1,
+            "passage_or_source_text": "Batch A (200 kg, 70% brass), Batch B (120 kg, 50% brass), Batch C (y kg, 45% brass) are mixed to form a 55% brass mixture.",
+            "questions_and_answers": [
+              {
+                "question": "Find the mass y of Batch C.",
+                "answer": "0.55*(320 + y) = 200*0.70 + 120*0.50 + 0.45y => 176 + 0.55y = 140 + 60 + 0.45y => 0.10y = 24 => y = 240 kg."
+              }
+            ]
+          }
+        ]
+      },
+      "m6_tiered_exam_question_bank": {
+        "level_1_objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "Which data visualization is best suited for comparing relative percentage distributions without being influenced by total group size?",
+            "options": [
+              "A. Cluster-column chart",
+              "B. Simple line graph",
+              "C. 100% stacked bar chart",
+              "D. Frequency polygon"
+            ],
+            "correct_answer": "C",
+            "brief_explanation": "100% stacked bar charts scale all bars to equal length (100%) to focus purely on internal proportions."
+          }
+        ],
+        "level_2_short_answer_questions_2_to_3_marks": [
+          {
+            "question": "Explain why taking a simple average of averages can lead to erroneous results when combining two student groups.",
+            "model_answer": "A simple average treats both groups as equal contributors regardless of student count. If Group 1 has 30 students (avg 80) and Group 2 has 10 students (avg 60), the simple average is 70, but the true weighted average is (30*80 + 10*60)/40 = 75. The larger group's performance has a greater pull on the true mean.",
+            "key_marking_points": [
+              "Mentions equal weight fallacy (1 mark)",
+              "Shows numerical example illustrating unequal group impact (1-2 marks)"
+            ]
+          }
+        ],
+        "level_3_long_answer_and_reasoning_5_marks": [
+          {
+            "question": "A school calculates final grade points using 30% assignments, 20% mid-terms, and 50% finals. Student A scored 85, 75, and 90. Student B scored 95, 90, and 70. Compute their weighted scores and determine who achieved the higher overall grade.",
+            "model_answer": "Student A: (0.30*85) + (0.20*75) + (0.50*90) = 25.5 + 15.0 + 45.0 = 85.5. Student B: (0.30*95) + (0.20*90) + (0.50*70) = 28.5 + 18.0 + 35.0 = 81.5. Student A achieves the higher overall score (85.5% vs 81.5%) because Student A performed better on the heavily weighted final exam (50%)."
+          }
+        ],
+        "level_4_competency_and_case_studies": [
+          {
+            "case_scenario": "A company tracks daily activity hours (sleeping, sitting, active) for 5 employees using smartwatch data over 5 weekdays.",
+            "questions_and_answers": [
+              {
+                "question": "Why can a 24-hour daily routine chart be interpreted as both a standard stacked bar chart and a 100% stacked bar chart?",
+                "answer": "Because the total sum for every person's daily activity is constant at 24 hours (100% of a day), making the absolute hour stacked bar visually and mathematically identical to a 100% proportion stacked bar."
+              }
+            ]
+          }
+        ]
+      },
+      "m7_common_pitfalls_and_misconceptions": [
+        {
+          "frequent_student_error": "Averaging percentage scores directly without multiplying by group sizes or test weights.",
+          "root_cause": "Assuming averages possess additive and commutative properties regardless of underlying sample size.",
+          "correct_approach": "Always multiply each average by its respective weight/sample size, sum the products, and divide by total weight."
+        }
+      ]
+    },
+    {
+      "chapter_number": 11,
+      "chapter_title": "The World of Algorithms",
+      "unit_or_theme": "Algorithmic Thinking & Computational Efficiency",
+      "m1_zero_omission_notes": {
+        "chapter_executive_summary": "This chapter introduces algorithmic reasoning and data structures (lists/sequences). It traces Greatest Common Divisor (GCD) algorithms from brute-force factor searching to Euclid's subtraction method (gcd(m,n)=gcd(n,m-n)) and \u0100ryabha\u1e6da's division-by-remainder algorithm (gcd(m,n)=gcd(n, m mod n)).",
+        "detailed_section_hierarchy": [
+          {
+            "section_number_title": "11.1 Concept of an Algorithm and Lists",
+            "full_explanation": "An algorithm is a step-by-step, unambiguous procedure for solving a problem. Sequential ordered lists are fundamental data structures used to store and compare intermediate search results.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Historical Note",
+                "box_title": "Etymology of Algorithm",
+                "full_content": "The word 'algorithm' derives from the name of 9th-century Persian mathematician Persian scholar Muhammad ibn Musa al-Khwarizmi, whose Latinized name Algoritmi popularized decimal positional arithmetic."
+              }
+            ]
+          },
+          {
+            "section_number_title": "11.2 Euclid's Subtraction vs Aryabhata's Remainder Algorithm",
+            "full_explanation": "Euclid's subtraction algorithm relies on gcd(m, n) = gcd(n, m - n). Aryabhata's division algorithm improves efficiency dramatically by using remainder reduction: gcd(m, n) = gcd(n, m mod n), reducing execution steps to scale with digit count rather than numerical magnitude.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Efficiency Note",
+                "box_title": "Computational Complexity",
+                "full_content": "Finding gcd(99, 2) by subtraction requires 49 steps, whereas division by remainder completes in just 2 steps."
+              }
+            ]
+          }
+        ]
+      },
+      "m2_key_definitions_formulas_and_vocabulary": {
+        "glossary_and_key_terms": [
+          {
+            "term": "Algorithm",
+            "definition": "A finite, ordered sequence of well-defined rules or instructions for solving a specific problem.",
+            "contextual_example_or_usage": "Aryabhata's long division algorithm for finding GCD.",
+            "associated_units_or_parts_of_speech": "Noun"
+          },
+          {
+            "term": "Modulo Operator (m mod n)",
+            "definition": "An operation that yields the integer remainder when m is divided by n.",
+            "contextual_example_or_usage": "17 mod 5 = 2, because 17 = 3 * 5 + 2.",
+            "associated_units_or_parts_of_speech": "Noun / Symbol"
+          }
+        ],
+        "formulas_rules_and_laws": [
+          {
+            "name": "Euclidean Subtraction Identity",
+            "statement_or_expression": "gcd(m, n) = gcd(n, m - n) for m >= n",
+            "variable_definitions": "m, n: positive integers",
+            "model_application_example": "gcd(35, 10) = gcd(10, 25) = gcd(10, 15) = gcd(10, 5) = gcd(5, 5) = gcd(5, 0) = 5."
+          },
+          {
+            "name": "Aryabhata Remainder GCD Identity",
+            "statement_or_expression": "gcd(m, n) = gcd(n, m mod n)",
+            "variable_definitions": "m, n: positive integers with m >= n",
+            "model_application_example": "gcd(35, 10) -> 35 mod 10 = 5 -> gcd(10, 5) -> 10 mod 5 = 0 -> gcd(5, 0) = 5."
+          }
+        ]
+      },
+      "m3_practical_activities_lab_and_step_by_step_procedures": [
+        {
+          "activity_or_procedure_title": "Executing Division-by-Remainder GCD Algorithm",
+          "objective_or_aim": "Compute gcd(375, 825) step-by-step using remainder reduction.",
+          "materials_or_prerequisites": [
+            "Paper and pencil"
+          ],
+          "step_by_step_procedure": [
+            "1. Identify m = 825, n = 375.",
+            "2. Compute 825 mod 375: 825 = 2 * 375 + 75 -> Remainder = 75.",
+            "3. Set new m = 375, n = 75.",
+            "4. Compute 375 mod 75: 375 = 5 * 75 + 0 -> Remainder = 0.",
+            "5. Since n = 0, report m = 75 as the GCD."
+          ],
+          "expected_observations_or_working": "Algorithm completes in 2 steps compared to listing dozens of divisors.",
+          "scientific_or_logical_conclusion": "Remainder reduction drastically minimizes computational steps."
+        }
+      ],
+      "m4_diagrams_tables_and_visual_data": {
+        "diagrams_and_illustrations": [
+          {
+            "figure_title": "Fig 11.1: Geometric Justification for Euclid's GCD Algorithm",
+            "labels_to_learn": [
+              "Segment m",
+              "Segment n",
+              "Segment (m - n)",
+              "Unit divisor tile d"
+            ],
+            "drawing_or_labeling_instructions": "Draw line segment m partitioned into units of d, show segment n overlaid, demonstrating that d divides the remaining length (m - n).",
+            "key_structural_details": "Visualizes that any common divisor of m and n must divide their difference (m - n)."
+          }
+        ],
+        "tables_and_charts": [
+          {
+            "table_title": "Step Comparison: Subtraction vs Remainder GCD for gcd(99, 2)",
+            "headers": [
+              "Method",
+              "Reduction Step Rule",
+              "Total Steps Required",
+              "Efficiency Category"
+            ],
+            "rows": [
+              [
+                "Euclidean Subtraction",
+                "gcd(m, n) -> gcd(n, m - n)",
+                "49 steps",
+                "Linear in value O(N)"
+              ],
+              [
+                "Aryabhata Remainder",
+                "gcd(m, n) -> gcd(n, m mod n)",
+                "2 steps",
+                "Logarithmic / Digit-proportional O(log N)"
+              ]
+            ]
+          }
+        ]
+      },
+      "m5_textbook_solutions_and_extracts": {
+        "end_of_chapter_textbook_solutions": [
+          {
+            "exercise_section": "Exercise Set 11.3",
+            "question_number": "Q2",
+            "question_text": "What happens when we search for common divisors starting from min(m, n) working backwards to 1?",
+            "complete_step_by_step_solution": "The first number k in the backwards iteration from min(m, n) down to 1 that divides both m and n is guaranteed to be the Greatest Common Divisor, allowing immediate termination without scanning further down to 1."
+          }
+        ],
+        "extract_or_passage_based_questions": [
+          {
+            "extract_id": 1,
+            "passage_or_source_text": "In Indian treatises like Aryabhata's Aryabhatiya (499 CE), we see the 'long division' method for finding GCD using Indian place value numerals.",
+            "questions_and_answers": [
+              {
+                "question": "Why was place-value notation essential for Aryabhata's division algorithm?",
+                "answer": "Place-value numerals enabled rapid long division and remainder extraction, replacing slow iterative subtraction."
+              }
+            ]
+          }
+        ]
+      },
+      "m6_tiered_exam_question_bank": {
+        "level_1_objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "What is the result of 33 mod 7?",
+            "options": [
+              "A. 4",
+              "B. 5",
+              "C. 2",
+              "D. 1"
+            ],
+            "correct_answer": "B",
+            "brief_explanation": "33 divided by 7 equals 4 with a remainder of 5 (33 = 4*7 + 5)."
+          }
+        ],
+        "level_2_short_answer_questions_2_to_3_marks": [
+          {
+            "question": "Prove that if d is a common divisor of m and n, then d is also a divisor of m - n.",
+            "model_answer": "Let m = k1 * d and n = k2 * d for integers k1, k2. Then m - n = (k1 * d) - (k2 * d) = (k1 - k2) * d. Since (k1 - k2) is an integer, d divides (m - n) cleanly.",
+            "key_marking_points": [
+              "Expressing m and n as multiples of d (1 mark)",
+              "Factoring d out of (m - n) (1 mark)",
+              "Concluding divisibility (1 mark)"
+            ]
+          }
+        ],
+        "level_3_long_answer_and_reasoning_5_marks": [
+          {
+            "question": "Trace Aryabhata's remainder GCD algorithm step-by-step to calculate gcd(540, 192). Compare the step count with subtraction.",
+            "model_answer": "Step 1: m = 540, n = 192. Compute 540 mod 192 -> 540 = 2*192 + 156 -> Remainder = 156. Step 2: m = 192, n = 156. Compute 192 mod 156 -> 192 = 1*156 + 36 -> Remainder = 36. Step 3: m = 156, n = 36. Compute 156 mod 36 -> 156 = 4*36 + 12 -> Remainder = 12. Step 4: m = 36, n = 12. Compute 36 mod 12 -> 36 = 3*12 + 0 -> Remainder = 0. Step 5: n = 0, answer is m = 12. Total: 4 remainder steps vs over 25 subtraction steps."
+          }
+        ],
+        "level_4_competency_and_case_studies": [
+          {
+            "case_scenario": "A software engineer needs to find the Least Common Multiple (LCM) of two large numbers m and n using an efficient algorithm.",
+            "questions_and_answers": [
+              {
+                "question": "Formulate an algorithm to compute LCM(m, n) using the GCD function.",
+                "answer": "Algorithm: 1. Calculate g = gcd(m, n) using Aryabhata's remainder algorithm. 2. Compute LCM as (m * n) / g."
+              }
+            ]
+          }
+        ]
+      },
+      "m7_common_pitfalls_and_misconceptions": [
+        {
+          "frequent_student_error": "Confusing quotient with remainder when calculating 'm mod n'.",
+          "root_cause": "Failing to distinguish integer division output from the remaining fractional part.",
+          "correct_approach": "Remember that 'm mod n' strictly extracts the leftover integer remainder after subtracting all full multiples of n."
+        }
+      ]
+    },
+    {
+      "chapter_number": 12,
+      "chapter_title": "Quadrilaterals",
+      "unit_or_theme": "Geometry & Tiling",
+      "m1_zero_omission_notes": {
+        "chapter_executive_summary": "This chapter explores plane quadrilaterals, proving theorems for parallelograms, rectangles, rhombuses, and squares. It presents the Midpoint Theorem for triangles, Centroid Theorem (2:1 median ratio), Varignon's Theorem (midpoints of any 4-gon form a parallelogram), and universal plane tiling with any quadrilateral.",
+        "detailed_section_hierarchy": [
+          {
+            "section_number_title": "12.1 Properties and Converses of Parallelograms",
+            "full_explanation": "A quadrilateral is a parallelogram if and only if opposite sides are equal, opposite angles are equal, or diagonals bisect each other.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Definition Box",
+                "box_title": "Convex Quadrilateral",
+                "full_content": "A quadrilateral is convex if all internal angles are < 180 degrees and its diagonals intersect inside the figure."
+              }
+            ]
+          },
+          {
+            "section_number_title": "12.2 Midpoint Theorem and Centroid",
+            "full_explanation": "The segment joining midpoints of two sides of a triangle is parallel to the third side and half its length. Medians meet at the centroid, dividing each median in a 2:1 ratio.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Theorem Box",
+                "box_title": "Varignon's Theorem",
+                "full_content": "The midpoints of the four sides of ANY quadrilateral (convex, non-convex, or self-intersecting) always form a parallelogram."
+              }
+            ]
+          }
+        ]
+      },
+      "m2_key_definitions_formulas_and_vocabulary": {
+        "glossary_and_key_terms": [
+          {
+            "term": "Midpoint Theorem",
+            "definition": "In any triangle, the line segment joining the midpoints of two sides is parallel to the third side and half as long.",
+            "contextual_example_or_usage": "If P and Q are midpoints of AB and AC in triangle ABC, PQ || BC and PQ = 1/2 BC.",
+            "associated_units_or_parts_of_speech": "Theorem"
+          },
+          {
+            "term": "Centroid",
+            "definition": "The point of concurrence of the three medians of a triangle, which divides each median in a 2:1 ratio.",
+            "contextual_example_or_usage": "The center of mass of a uniform triangular plate lies at its centroid.",
+            "associated_units_or_parts_of_speech": "Noun"
+          },
+          {
+            "term": "Varignon Parallelogram",
+            "definition": "The parallelogram formed by connecting the midpoints of adjacent sides of any quadrilateral.",
+            "contextual_example_or_usage": "Connecting midpoints of an arbitrary quadrilateral ABCD yields parallelogram PQRS.",
+            "associated_units_or_parts_of_speech": "Noun"
+          }
+        ],
+        "formulas_rules_and_laws": [
+          {
+            "name": "Midpoint Length Relation",
+            "statement_or_expression": "PQ = 1/2 * BC",
+            "variable_definitions": "PQ: midpoint segment; BC: third base side of triangle",
+            "model_application_example": "If BC = 14 cm, then midpoint segment PQ = 7 cm."
+          },
+          {
+            "name": "Centroid Section Ratio",
+            "statement_or_expression": "AG : GR = 2 : 1",
+            "variable_definitions": "A: vertex; G: centroid; R: midpoint of opposite side BC",
+            "model_application_example": "If median AR = 9 cm, AG = 6 cm and GR = 3 cm."
+          }
+        ]
+      },
+      "m3_practical_activities_lab_and_step_by_step_procedures": [
+        {
+          "activity_or_procedure_title": "Paper-Folding Midpoint Verification",
+          "objective_or_aim": "Verify the Midpoint Theorem using paper folding on a right triangle.",
+          "materials_or_prerequisites": [
+            "Triangular paper cutout ABC"
+          ],
+          "step_by_step_procedure": [
+            "1. Fold vertex A down so that point A touches vertex B.",
+            "2. Crease the paper sharply.",
+            "3. Unfold and observe the crease line across sides AB and AC."
+          ],
+          "expected_observations_or_working": "The crease line passes through the midpoint of AB and AC and is parallel to BC.",
+          "scientific_or_logical_conclusion": "Confirms experimentally that the fold crease reflects the midpoint theorem properties."
+        }
+      ],
+      "m4_diagrams_tables_and_visual_data": {
+        "diagrams_and_illustrations": [
+          {
+            "figure_title": "Fig 12.21: Varignon Parallelogram of Quadrilateral ABCD",
+            "labels_to_learn": [
+              "A, B, C, D (Vertices of 4-gon)",
+              "P, Q, R, S (Midpoints)",
+              "Diagonals AC, BD"
+            ],
+            "drawing_or_labeling_instructions": "Draw general quadrilateral ABCD, mark midpoints P on AB, Q on BC, R on CD, S on DA, connect PQRS.",
+            "key_structural_details": "PQ || AC and SR || AC implies PQ || SR; QR || BD and PS || BD implies QR || PS, making PQRS a parallelogram."
+          }
+        ],
+        "tables_and_charts": [
+          {
+            "table_title": "Special Quadrilaterals and Diagonal Properties",
+            "headers": [
+              "Quadrilateral Type",
+              "Diagonals Equal?",
+              "Diagonals Perpendicular?",
+              "Diagonals Bisect Each Other?"
+            ],
+            "rows": [
+              [
+                "Parallelogram",
+                "Not necessarily",
+                "Not necessarily",
+                "Yes"
+              ],
+              [
+                "Rectangle",
+                "Yes",
+                "Not necessarily",
+                "Yes"
+              ],
+              [
+                "Rhombus",
+                "Not necessarily",
+                "Yes",
+                "Yes"
+              ],
+              [
+                "Square",
+                "Yes",
+                "Yes",
+                "Yes"
+              ]
+            ]
+          }
+        ]
+      },
+      "m5_textbook_solutions_and_extracts": {
+        "end_of_chapter_textbook_solutions": [
+          {
+            "exercise_section": "End-of-Chapter Exercises",
+            "question_number": "Q4",
+            "question_text": "In parallelogram ABCD, points P and Q on diagonal BD satisfy DP = BQ. Show APCQ is a parallelogram.",
+            "complete_step_by_step_solution": "In triangle ADP and CBQ: AD = BC (opposite sides of parallelogram), angle ADP = angle CBQ (alternate angles), DP = BQ (given). By SAS, triangle ADP is congruent to triangle CBQ. Thus AP = CQ and angle APD = angle CQB, making AP parallel to CQ. Since a pair of opposite sides is equal and parallel, APCQ is a parallelogram."
+          }
+        ],
+        "extract_or_passage_based_questions": [
+          {
+            "extract_id": 1,
+            "passage_or_source_text": "The plane can be tiled with any given 4-gon... by rotating 180 degrees around side midpoints.",
+            "questions_and_answers": [
+              {
+                "question": "Why can any quadrilateral tile the plane without gaps?",
+                "answer": "Because the four interior angles of any quadrilateral sum to 360 degrees. Meeting four quadrilateral corners at every vertex fills the complete 360-degree angle."
+              }
+            ]
+          }
+        ]
+      },
+      "m6_tiered_exam_question_bank": {
+        "level_1_objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "If the midpoints of the sides of a quadrilateral are joined in order, the resulting figure is always a:",
+            "options": [
+              "A. Rectangle",
+              "B. Rhombus",
+              "C. Parallelogram",
+              "D. Trapezium"
+            ],
+            "correct_answer": "C",
+            "brief_explanation": "By Varignon's Theorem, joining midpoints of any quadrilateral always forms a parallelogram."
+          }
+        ],
+        "level_2_short_answer_questions_2_to_3_marks": [
+          {
+            "question": "In triangle ABC, D and E are midpoints of AB and AC. If DE = (x + 3) cm and BC = (3x - 2) cm, find x and the length of BC.",
+            "model_answer": "By Midpoint Theorem, DE = 1/2 * BC => 2*DE = BC => 2(x + 3) = 3x - 2 => 2x + 6 = 3x - 2 => x = 8. BC = 3(8) - 2 = 22 cm.",
+            "key_marking_points": [
+              "Applying DE = 1/2 BC (1 mark)",
+              "Solving linear equation x = 8 (1 mark)",
+              "Calculating BC = 22 cm (1 mark)"
+            ]
+          }
+        ],
+        "level_3_long_answer_and_reasoning_5_marks": [
+          {
+            "question": "State and prove the Midpoint Theorem for triangles.",
+            "model_answer": "Statement: Line segment joining midpoints of two sides of a triangle is parallel to the third side and half its length. Proof: In triangle ABC, let D, E be midpoints of AB, AC. Extend DE to F such that DE = EF. Join CF. Triangle ADE is congruent to triangle CFE (SAS). Thus AD = CF and angle ADE = angle CFE (making AD || CF). Since AD = DB, DB = CF and DB || CF. Thus DBCF is a parallelogram, so DF || BC and DF = BC. Since DE = 1/2 DF, DE || BC and DE = 1/2 BC."
+          }
+        ],
+        "level_4_competency_and_case_studies": [
+          {
+            "case_scenario": "An architectural artist wants to construct a ceramic floor tile pattern using non-symmetric four-sided polygon tiles.",
+            "questions_and_answers": [
+              {
+                "question": "Explain how tessellation theory guarantees that any arbitrary non-convex quadrilateral tile can cover a floor seamlessly.",
+                "answer": "At every grid vertex, four identical quadrilateral tiles meet, bringing together their four distinct internal angles (A + B + C + D = 360 degrees), covering 360 degrees completely with no gaps or overlaps."
+              }
+            ]
+          }
+        ]
+      },
+      "m7_common_pitfalls_and_misconceptions": [
+        {
+          "frequent_student_error": "Assuming the Varignon parallelogram of a rhombus is another rhombus.",
+          "root_cause": "Intuitively expecting shape properties to be preserved through midpoint transformations.",
+          "correct_approach": "Remember that joining midpoints of a rhombus produces a RECTANGLE (since diagonals of a rhombus are perpendicular)."
+        }
+      ]
+    },
+    {
+      "chapter_number": 13,
+      "chapter_title": "Two Variables, One Line",
+      "unit_or_theme": "Algebra & Coordinate Geometry",
+      "m1_zero_omission_notes": {
+        "chapter_executive_summary": "This chapter covers linear equations in two variables (ax + by + c = 0), graphical representation as straight lines, slope-intercept form (y = mx + d), and systems of linear equations solved algebraically (substitution/elimination) or graphically, classifying consistency based on coefficient ratios.",
+        "detailed_section_hierarchy": [
+          {
+            "section_number_title": "13.1 Linear Equations in Two Variables and Solutions",
+            "full_explanation": "A linear equation in two variables has the general form ax + by + c = 0 (where a, b are not both zero). An ordered pair (u, v) is a solution if a*u + b*v + c = 0. Every linear equation has infinitely many solutions forming a straight line on the Cartesian plane.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Key Concept",
+                "box_title": "Line Through Origin",
+                "full_content": "When c = 0, the equation ax + by = 0 always passes through the origin (0, 0)."
+              }
+            ]
+          },
+          {
+            "section_number_title": "13.2 Systems of Linear Equations and Coefficient Conditions",
+            "full_explanation": "A pair of linear equations a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0 can have: 1. Unique solution (intersecting lines: a1/a2 != b1/b2), 2. No solution (parallel lines: a1/a2 = b1/b2 != c1/c2), 3. Infinitely many solutions (coincident lines: a1/a2 = b1/b2 = c1/c2).",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Formula Box",
+                "box_title": "Slope Formula",
+                "full_content": "Slope m = (y2 - y1) / (x2 - x1), representing the rate of change or steepness."
+              }
+            ]
+          }
+        ]
+      },
+      "m2_key_definitions_formulas_and_vocabulary": {
+        "glossary_and_key_terms": [
+          {
+            "term": "Slope-Intercept Form",
+            "definition": "The equation of a straight line written as y = mx + d, where m is the slope and d is the y-intercept.",
+            "contextual_example_or_usage": "y = -1.5x + 6 has slope -1.5 and y-intercept 6.",
+            "associated_units_or_parts_of_speech": "Equation Form"
+          },
+          {
+            "term": "Consistent System",
+            "definition": "A pair of linear equations that has at least one solution (either unique or infinitely many).",
+            "contextual_example_or_usage": "Intersecting lines form a consistent system with a unique solution.",
+            "associated_units_or_parts_of_speech": "Noun"
+          }
+        ],
+        "formulas_rules_and_laws": [
+          {
+            "name": "Coefficient Ratio Classification Law",
+            "statement_or_expression": "1. Unique: a1/a2 != b1/b2; 2. Parallel: a1/a2 = b1/b2 != c1/c2; 3. Coincident: a1/a2 = b1/b2 = c1/c2",
+            "variable_definitions": "a_i, b_i, c_i: coefficients and constant terms of two linear equations",
+            "model_application_example": "x + 3y = 6 and 2x - 3y = 12 has a1/a2 = 1/2 != b1/b2 = -1, so it has a unique solution (6, 0)."
+          }
+        ]
+      },
+      "m3_practical_activities_lab_and_step_by_step_procedures": [
+        {
+          "activity_or_procedure_title": "Graphical Solution of Linear Pair",
+          "objective_or_aim": "Graph x + 3y = 6 and 2x - 3y = 12 to determine intersection coordinates.",
+          "materials_or_prerequisites": [
+            "Graph paper",
+            "Ruler",
+            "Pencil"
+          ],
+          "step_by_step_procedure": [
+            "1. For x + 3y = 6, find intercepts: (0, 2) and (6, 0).",
+            "2. For 2x - 3y = 12, find intercepts: (0, -4) and (6, 0).",
+            "3. Plot both lines on the Cartesian plane.",
+            "4. Identify the point of intersection."
+          ],
+          "expected_observations_or_working": "Both lines intersect at point (6, 0).",
+          "scientific_or_logical_conclusion": "The unique solution to the linear pair is x = 6, y = 0."
+        }
+      ],
+      "m4_diagrams_tables_and_visual_data": {
+        "diagrams_and_illustrations": [
+          {
+            "figure_title": "Fig 13.14: Graph of Intersecting Lines x + 3y = 6 and 2x - 3y = 12",
+            "labels_to_learn": [
+              "X-axis",
+              "Y-axis",
+              "Intersection Point B(6, 0)",
+              "Line x + 3y = 6",
+              "Line 2x - 3y = 12"
+            ],
+            "drawing_or_labeling_instructions": "Draw coordinate axes, plot points A(0, 2), B(6, 0), P(0, -4), Q(3, -2), connect lines showing intersection at (6, 0).",
+            "key_structural_details": "Visualizes unique graphical solution at intersection point."
+          }
+        ],
+        "tables_and_charts": [
+          {
+            "table_title": "System Classification Summary Table",
+            "headers": [
+              "Coefficient Comparison",
+              "Graphical Representation",
+              "Algebraic Interpretation",
+              "Consistency"
+            ],
+            "rows": [
+              [
+                "a1/a2 != b1/b2",
+                "Intersecting Lines",
+                "Unique Solution",
+                "Consistent"
+              ],
+              [
+                "a1/a2 = b1/b2 != c1/c2",
+                "Parallel Lines",
+                "No Solution",
+                "Inconsistent"
+              ],
+              [
+                "a1/a2 = b1/b2 = c1/c2",
+                "Coincident Lines",
+                "Infinitely Many Solutions",
+                "Dependent / Consistent"
+              ]
+            ]
+          }
+        ]
+      },
+      "m5_textbook_solutions_and_extracts": {
+        "end_of_chapter_textbook_solutions": [
+          {
+            "exercise_section": "Exercise 13.2",
+            "question_number": "Q3",
+            "question_text": "If (2, -1) is the solution of 2mx + 3y = 7 and 4x + ny = -10, find m and n.",
+            "complete_step_by_step_solution": "Substitute x = 2, y = -1 into Eq 1: 2m(2) + 3(-1) = 7 => 4m - 3 = 7 => 4m = 10 => m = 2.5. Substitute into Eq 2: 4(2) + n(-1) = -10 => 8 - n = -10 => n = 18."
+          }
+        ],
+        "extract_or_passage_based_questions": [
+          {
+            "extract_id": 1,
+            "passage_or_source_text": "Determine if x + 2y - 4 = 0 and 2x + 4y - 12 = 0 intersect, coincide or are parallel.",
+            "questions_and_answers": [
+              {
+                "question": "Use coefficient ratios to determine line relationship.",
+                "answer": "a1/a2 = 1/2, b1/b2 = 2/4 = 1/2, c1/c2 = -4/-12 = 1/3. Since a1/a2 = b1/b2 != c1/c2, lines are parallel with no solution."
+              }
+            ]
+          }
+        ]
+      },
+      "m6_tiered_exam_question_bank": {
+        "level_1_objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "The graph of 2x + 3y = 12 cuts the x-axis at which point?",
+            "options": [
+              "A. (0, 4)",
+              "B. (6, 0)",
+              "C. (0, 6)",
+              "D. (4, 0)"
+            ],
+            "correct_answer": "B",
+            "brief_explanation": "Setting y = 0 gives 2x + 3(0) = 12 => 2x = 12 => x = 6. So the point is (6, 0)."
+          }
+        ],
+        "level_2_short_answer_questions_2_to_3_marks": [
+          {
+            "question": "Find the value of k for which the system kx + 2y = 5 and 3x + y = 1 has a unique solution.",
+            "model_answer": "For a unique solution, a1/a2 != b1/b2. Here a1 = k, a2 = 3, b1 = 2, b2 = 1. k/3 != 2/1 => k != 6. The system has a unique solution for all real values of k except k = 6.",
+            "key_marking_points": [
+              "States condition a1/a2 != b1/b2 (1 mark)",
+              "Sets up ratio k/3 != 2/1 (1 mark)",
+              "Concludes k != 6 (1 mark)"
+            ]
+          }
+        ],
+        "level_3_long_answer_and_reasoning_5_marks": [
+          {
+            "question": "Solve algebraically using elimination: 2x + 3y = 9 and 3x + 4y = 13. Verify by finding slope and intercept.",
+            "model_answer": "Multiply Eq 1 by 3: 6x + 9y = 27. Multiply Eq 2 by 2: 6x + 8y = 26. Subtract: (6x + 9y) - (6x + 8y) = 27 - 26 => y = 1. Substitute y = 1 into Eq 1: 2x + 3(1) = 9 => 2x = 6 => x = 3. Solution: (3, 1). Slope of Eq 1 is -2/3; slope of Eq 2 is -3/4. Slopes differ, confirming unique intersection at (3, 1)."
+          }
+        ],
+        "level_4_competency_and_case_studies": [
+          {
+            "case_scenario": "A taxi service charges a fixed flag-down fee plus a rate per kilometer traveled.",
+            "questions_and_answers": [
+              {
+                "question": "If a 10 km trip costs Rs 105 and a 15 km trip costs Rs 155, set up linear equations to find the fixed charge and rate per km.",
+                "answer": "Let fixed charge = x, rate/km = y. Eq 1: x + 10y = 105. Eq 2: x + 15y = 155. Subtracting Eq 1 from Eq 2 gives 5y = 50 => y = Rs 10/km. x + 10(10) = 105 => x = Rs 5 fixed charge."
+              }
+            ]
+          }
+        ]
+      },
+      "m7_common_pitfalls_and_misconceptions": [
+        {
+          "frequent_student_error": "Forgetting to rearrange equations into standard form ax + by + c = 0 before comparing coefficient ratios.",
+          "root_cause": "Mixing up constant terms on opposite sides of the equals sign leads to incorrect sign in c1/c2.",
+          "correct_approach": "Always align both equations in ax + by + c = 0 or ax + by = c form before taking ratio fractions."
+        }
+      ]
+    },
+    {
+      "chapter_number": 14,
+      "chapter_title": "Math of Space: Surface Area and Volume",
+      "unit_or_theme": "3D Geometry & Spatial Mensuration",
+      "m1_zero_omission_notes": {
+        "chapter_executive_summary": "This chapter derives surface area and volume formulas for cuboids, cylinders, cones, pyramids, spheres, and hemispheres, applying them to real-world contexts, Fermi estimations, water displacement, and scaling ratios.",
+        "detailed_section_hierarchy": [
+          {
+            "section_number_title": "14.1 Cuboids, Cubes, and Cylinders",
+            "full_explanation": "Cuboid surface area = 2(lw + wh + lh), volume = l*w*h. For equal volume, a cube minimizes surface area compared to elongated cuboids. Cylinder CSA = 2*pi*r*h, TSA = 2*pi*r*(r + h), Volume = pi*r^2*h.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Engineering Insight",
+                "box_title": "Packaging & Surface Area",
+                "full_content": "Cubes use less covering material for the same storage volume, whereas elongated cuboids expose more surface area for heat exchange."
+              }
+            ]
+          },
+          {
+            "section_number_title": "14.2 Cones, Pyramids, and Spheres",
+            "full_explanation": "Cone CSA = pi*r*l (l = sqrt(r^2 + h^2)), Volume = 1/3*pi*r^2*h. Pyramid volume = 1/3 * Base Area * Height. Sphere SA = 4*pi*r^2, Volume = 4/3*pi*r^3. Hemisphere CSA = 2*pi*r^2, TSA = 3*pi*r^2, Volume = 2/3*pi*r^3.",
+            "margin_boxes_and_in_text_notes": [
+              {
+                "box_type": "Historical Note",
+                "box_title": "Archimedes Cylinder-Sphere Ratio",
+                "full_content": "The volume of a sphere is exactly 2/3 of the volume of the smallest enclosing cylinder."
+              }
+            ]
+          }
+        ]
+      },
+      "m2_key_definitions_formulas_and_vocabulary": {
+        "glossary_and_key_terms": [
+          {
+            "term": "Slant Height (l)",
+            "definition": "The distance from the apex of a right circular cone along its curved surface to any point on the base circumference.",
+            "contextual_example_or_usage": "Slant height l = sqrt(r^2 + h^2).",
+            "associated_units_or_parts_of_speech": "Noun / Length"
+          },
+          {
+            "term": "Pyramid",
+            "definition": "A 3D polyhedron formed by connecting a polygonal base to a single apex point in a different plane.",
+            "contextual_example_or_usage": "Egyptian pyramids have square bases, while tetrahedron pyramids have triangular bases.",
+            "associated_units_or_parts_of_speech": "Noun"
+          }
+        ],
+        "formulas_rules_and_laws": [
+          {
+            "name": "Sphere Mensuration Formulas",
+            "statement_or_expression": "Surface Area = 4*pi*r^2; Volume = 4/3*pi*r^3",
+            "variable_definitions": "r: radius of sphere",
+            "model_application_example": "Radius = 21 cm => SA = 4*(22/7)*21^2 = 5544 cm^2."
+          },
+          {
+            "name": "Cone Volume Relation to Cylinder",
+            "statement_or_expression": "V_cone = 1/3 * V_cylinder = 1/3 * pi * r^2 * h",
+            "variable_definitions": "r: base radius, h: perpendicular height",
+            "model_application_example": "A cone with radius 3 cm, height 7 cm has volume = 1/3 * (22/7) * 9 * 7 = 66 cm^3."
+          }
+        ]
+      },
+      "m3_practical_activities_lab_and_step_by_step_procedures": [
+        {
+          "activity_or_procedure_title": "Calculating Liquid Volume with Packed Metal Spheres",
+          "objective_or_aim": "Determine preservative liquid volume required when 16 metal spheres (r = 2 cm) are packed in a box (16 x 8 x 8 cm).",
+          "materials_or_prerequisites": [
+            "Calculator",
+            "Mensuration formulas"
+          ],
+          "step_by_step_procedure": [
+            "1. Compute box internal volume V_box = 16 * 8 * 8 = 1024 cm^3.",
+            "2. Compute volume of 1 sphere V_s = 4/3 * pi * 2^3 = 33.51 cm^3.",
+            "3. Total volume of 16 spheres V_total_spheres = 16 * 33.51 = 536.16 cm^3.",
+            "4. Liquid volume = V_box - V_total_spheres = 1024 - 536.16 = 487.84 cm^3 (~488 cm^3)."
+          ],
+          "expected_observations_or_working": "Liquid fills remaining space around packed spheres (~488 cm^3).",
+          "scientific_or_logical_conclusion": "Applies volume subtraction for composite spatial packing."
+        }
+      ],
+      "m4_diagrams_tables_and_visual_data": {
+        "diagrams_and_illustrations": [
+          {
+            "figure_title": "Fig 14.1C: Cuboid Dimensions and Unfolded Net",
+            "labels_to_learn": [
+              "Length (l)",
+              "Width (w)",
+              "Height (h)",
+              "6 Rectangular Faces"
+            ],
+            "drawing_or_labeling_instructions": "Draw 3D cuboid with l, w, h labeled; draw unfolded cross-shaped net showing 6 faces.",
+            "key_structural_details": "Total surface area equals sum of 6 face areas: 2lw + 2wh + 2lh."
+          }
+        ],
+        "tables_and_charts": [
+          {
+            "table_title": "Master Mensuration Formulas Table",
+            "headers": [
+              "3D Solid Shape",
+              "Curved / Lateral Surface Area",
+              "Total Surface Area",
+              "Volume"
+            ],
+            "rows": [
+              [
+                "Cuboid",
+                "2h(l + w)",
+                "2(lw + wh + lh)",
+                "l * w * h"
+              ],
+              [
+                "Cube",
+                "4a^2",
+                "6a^2",
+                "a^3"
+              ],
+              [
+                "Cylinder",
+                "2*pi*r*h",
+                "2*pi*r*(r + h)",
+                "pi*r^2*h"
+              ],
+              [
+                "Cone",
+                "pi*r*l",
+                "pi*r*(r + l)",
+                "1/3*pi*r^2*h"
+              ],
+              [
+                "Sphere",
+                "4*pi*r^2",
+                "4*pi*r^2",
+                "4/3*pi*r^3"
+              ],
+              [
+                "Hemisphere",
+                "2*pi*r^2",
+                "3*pi*r^2",
+                "2/3*pi*r^3"
+              ]
+            ]
+          }
+        ]
+      },
+      "m5_textbook_solutions_and_extracts": {
+        "end_of_chapter_textbook_solutions": [
+          {
+            "exercise_section": "Exercise 14.4",
+            "question_number": "Q6",
+            "question_text": "Show that increasing radius of a sphere by 10% increases its volume by approximately 33.1%.",
+            "complete_step_by_step_solution": "New radius r' = 1.10 * r. New volume V' = 4/3 * pi * (1.10 r)^3 = (1.10)^3 * (4/3 * pi * r^3) = 1.331 * V. Percentage increase = (1.331 - 1) * 100% = 33.1%."
+          }
+        ],
+        "extract_or_passage_based_questions": [
+          {
+            "extract_id": 1,
+            "passage_or_source_text": "Earth radius ~6370 km, Jupiter radius ~69900 km. Compute ratio of Jupiter's volume to Earth's volume.",
+            "questions_and_answers": [
+              {
+                "question": "Calculate Jupiter to Earth volume ratio.",
+                "answer": "V_ratio = (r_Jupiter / r_Earth)^3 = (69900 / 6370)^3 = (10.973)^3 ~ 1321. Jupiter's volume is approximately 1321 times Earth's volume."
+              }
+            ]
+          }
+        ]
+      },
+      "m6_tiered_exam_question_bank": {
+        "level_1_objective_questions_1_mark": [
+          {
+            "type": "MCQ",
+            "question": "What is the total surface area of a solid hemisphere of radius r?",
+            "options": [
+              "A. 2*pi*r^2",
+              "B. 3*pi*r^2",
+              "C. 4*pi*r^2",
+              "D. 2/3*pi*r^2"
+            ],
+            "correct_answer": "B",
+            "brief_explanation": "Total surface area includes curved surface (2*pi*r^2) plus flat circular base (pi*r^2) = 3*pi*r^2."
+          }
+        ],
+        "level_2_short_answer_questions_2_to_3_marks": [
+          {
+            "question": "A conical cup has depth 12 cm and radius 5 cm. If filled with water to half its depth (6 cm), what fraction of its capacity is filled?",
+            "model_answer": "Depth ratio is 1/2. Volume scales with depth cubed, so V_water / V_cup = (1/2)^3 = 1/8. The water fills 1/8th (12.5%) of the cup's total capacity.",
+            "key_marking_points": [
+              "Identifies height ratio 1/2 (1 mark)",
+              "Applies cubic scaling factor (1/2)^3 = 1/8 (2 marks)"
+            ]
+          }
+        ],
+        "level_3_long_answer_and_reasoning_5_marks": [
+          {
+            "question": "A hemispherical dome of a building has base circumference 35.2 m. Find the cost of painting its outer surface at Rs 10 per 100 cm^2.",
+            "model_answer": "1. Base circumference 2*pi*r = 35.2 m => 2 * (22/7) * r = 35.2 => r = 5.6 m = 560 cm. 2. Dome CSA = 2*pi*r^2 = 2 * (22/7) * 560^2 = 2 * (22/7) * 313600 = 1,971,200 cm^2. 3. Painting cost = 1,971,200 * (10 / 100) = Rs 197,120."
+          }
+        ],
+        "level_4_competency_and_case_studies": [
+          {
+            "case_scenario": "A Fermi estimation challenge asks to estimate the thickness of a uniform water layer if all 1.38 billion km^3 of Earth's water was spread across its surface (r = 6371 km).",
+            "questions_and_answers": [
+              {
+                "question": "Estimate the thickness of this global water layer in kilometers.",
+                "answer": "Surface area of Earth = 4*pi*r^2 = 4 * pi * 6371^2 ~ 5.10 * 10^8 km^2. Thickness t = Volume / Surface Area = 1.38 * 10^9 km^3 / 5.10 * 10^8 km^2 ~ 2.71 km."
+              }
+            ]
+          }
+        ]
+      },
+      "m7_common_pitfalls_and_misconceptions": [
+        {
+          "frequent_student_error": "Using perpendicular height h instead of slant height l when calculating cone curved surface area (pi*r*l).",
+          "root_cause": "Failing to distinguish vertical altitude from the sloped edge length.",
+          "correct_approach": "Always compute slant height l = sqrt(r^2 + h^2) before calculating cone surface area."
+        }
+      ]
+    }
+  ]
+}

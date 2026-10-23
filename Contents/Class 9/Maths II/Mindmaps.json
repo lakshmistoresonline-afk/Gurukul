@@ -1,0 +1,432 @@
+{
+  "subject": "Ganita Manjari - Class 9 Mathematics (Part II)",
+  "grade_level": "Class 9",
+  "curriculum_standard": "NCERT / CBSE",
+  "resource_type": "Comprehensive Mind Map Hierarchy",
+  "chapters": [
+    {
+      "chapter_number": 9,
+      "chapter_title": "Propositions and their Converses",
+      "mind_map": {
+        "root_topic": "Propositions and their Converses",
+        "branches": [
+          {
+            "theme": "Logical Foundations of Propositions",
+            "sub_branches": [
+              {
+                "concept": "Conditional Propositions (If P then Q)",
+                "details": [
+                  "A proposition is a declarative statement that is definitively true or false.",
+                  "Expressed as 'If X then Y', 'X implies Y', or 'Y when X'.",
+                  "Premise X is the hypothesis; conclusion Y is the consequence."
+                ],
+                "evidence_or_examples": [
+                  "If a number is a multiple of 6, then it is a multiple of 3.",
+                  "If a number is a perfect square, then it has an odd number of factors."
+                ],
+                "key_terms": [
+                  "Proposition",
+                  "Premise / Hypothesis",
+                  "Conclusion / Consequence",
+                  "Implication (P -> Q)"
+                ]
+              },
+              {
+                "concept": "Formulating Converse Statements",
+                "details": [
+                  "The converse of 'If X then Y' is formed by interchanging hypothesis and conclusion to get 'If Y then X'.",
+                  "A proposition and its converse are independent logical statements.",
+                  "Truth of a proposition does not guarantee truth of its converse."
+                ],
+                "evidence_or_examples": [
+                  "Proposition: 'If a quadrilateral is a square, its angles are right angles' (True). Converse: 'If all angles of a quadrilateral are right angles, it is a square' (False, rectangle counterexample)."
+                ],
+                "key_terms": [
+                  "Converse Statement (Q -> P)",
+                  "Logical Independence",
+                  "Bi-implication / Equivalence (P <-> Q)"
+                ]
+              }
+            ]
+          },
+          {
+            "theme": "Disproof and Testing via Counterexamples",
+            "sub_branches": [
+              {
+                "concept": "Role of Counterexamples in Proofs",
+                "details": [
+                  "A single valid counterexample refutes a universal mathematical claim.",
+                  "Used to prove that a proposition or converse is false.",
+                  "Does not establish general truth, only disproof."
+                ],
+                "evidence_or_examples": [
+                  "Euler disproving Fermat's prime conjecture F_n = 2^(2^n) + 1 at n=5 (F_5 = 4,294,967,297 = 641 x 6700417).",
+                  "Triangles with equal perimeters (3,4,5 and 4,4,4) are not congruent."
+                ],
+                "key_terms": [
+                  "Counterexample",
+                  "Refutation",
+                  "Fermat Numbers",
+                  "Euler's Disproof"
+                ]
+              },
+              {
+                "concept": "Equivalence and Geometric Theorems",
+                "details": [
+                  "When both proposition and converse are true, the conditions are logically equivalent (if and only if).",
+                  "Pythagoras Theorem and its converse form a bi-conditional equivalence.",
+                  "Midpoint properties and alternate angle properties exhibit true converses."
+                ],
+                "evidence_or_examples": [
+                  "Baudh\u0101yana-Pythagoras: Right-angled at C <==> a^2 + b^2 = c^2.",
+                  "Mason's 3-4-5 rope method using the converse to lay right angles."
+                ],
+                "key_terms": [
+                  "Equivalence (<==>)",
+                  "Necessary and Sufficient Conditions",
+                  "Baudh\u0101yana-Pythagoras Converse"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "How Quantities Combine: Understanding Data",
+      "mind_map": {
+        "root_topic": "How Quantities Combine: Understanding Data",
+        "branches": [
+          {
+            "theme": "Weighted Mean and Data Combination",
+            "sub_branches": [
+              {
+                "concept": "Fallacy of Unweighted Averages",
+                "details": [
+                  "Taking simple average of group means ignores group size differences.",
+                  "Larger groups exert a greater pull on the overall mean.",
+                  "Weighted mean accounts for counts or weights w_i."
+                ],
+                "evidence_or_examples": [
+                  "Combining Class Section A (30 students, avg 80%) and Section B (10 students, avg 60%) yields true mean 75%, not 70%."
+                ],
+                "key_terms": [
+                  "Simple Average",
+                  "Weighted Mean / Weighted Average",
+                  "Weights (w_i)",
+                  "Group Aggregation"
+                ]
+              },
+              {
+                "concept": "Weighted Mean Formula & Applications",
+                "details": [
+                  "Formula: x_bar = sum(w_i * x_i) / sum(w_i).",
+                  "Used in weighted test scores, gold purity, and solution mixing.",
+                  "Preserves total quantity conservation across combined subsets."
+                ],
+                "evidence_or_examples": [
+                  "Academic score calculation with internals (30%), project (20%), and final exam (50%).",
+                  "Mixing brass alloy batches with different copper concentrations."
+                ],
+                "key_terms": [
+                  "Formula: x_bar = sum(w_i * x_i) / sum(w_i)",
+                  "Percentage Concentrations",
+                  "Mass Conservation"
+                ]
+              }
+            ]
+          },
+          {
+            "theme": "Multi-Category Data Visualizations",
+            "sub_branches": [
+              {
+                "concept": "Stacked Bar Charts vs. 100% Stacked Bar Charts",
+                "details": [
+                  "Stacked bar charts preserve absolute totals alongside component segments.",
+                  "100% stacked bar charts scale all bars to 100% total height.",
+                  "100% stacked charts isolate percentage allocations from group magnitude."
+                ],
+                "evidence_or_examples": [
+                  "Comparing household spending across families with different total incomes.",
+                  "Analyzing daily activity routine breakdowns (24-hour total)."
+                ],
+                "key_terms": [
+                  "Stacked Bar Chart",
+                  "100% Stacked Bar Chart",
+                  "Relative Proportions",
+                  "Absolute Totals"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 11,
+      "chapter_title": "The World of Algorithms",
+      "mind_map": {
+        "root_topic": "The World of Algorithms",
+        "branches": [
+          {
+            "theme": "Algorithmic Logic and Data Structures",
+            "sub_branches": [
+              {
+                "concept": "Definition and Historical Etymology",
+                "details": [
+                  "An algorithm is a finite, ordered, step-by-step unambiguous problem-solving procedure.",
+                  "Named after 9th-century Persian scholar Muhammad ibn Musa al-Khwarizmi.",
+                  "Relies on sequential lists and data structures for state tracking."
+                ],
+                "evidence_or_examples": [
+                  "Long division algorithm for place-value decimal numerals.",
+                  "Iterative list search for common factors."
+                ],
+                "key_terms": [
+                  "Algorithm",
+                  "Al-Khwarizmi",
+                  "Ordered List Data Structure",
+                  "Modulo Operator (m mod n)"
+                ]
+              }
+            ]
+          },
+          {
+            "theme": "Greatest Common Divisor (GCD) Algorithms",
+            "sub_branches": [
+              {
+                "concept": "Euclidean Subtraction Method",
+                "details": [
+                  "Based on property gcd(m, n) = gcd(n, m - n) for m >= n.",
+                  "Repeats subtraction until both numbers become equal.",
+                  "Linear time complexity O(N); slow for large numbers."
+                ],
+                "evidence_or_examples": [
+                  "Finding gcd(99, 2) requires 49 subtraction steps."
+                ],
+                "key_terms": [
+                  "Euclidean Subtraction",
+                  "Common Divisor Difference Property",
+                  "Linear Step Count"
+                ]
+              },
+              {
+                "concept": "\u0100ryabha\u1e6da's Division-by-Remainder Method",
+                "details": [
+                  "Based on remainder property gcd(m, n) = gcd(n, m mod n).",
+                  "Replaces multiple subtractions with a single division remainder step.",
+                  "Logarithmic time complexity O(log N); scales with digit length."
+                ],
+                "evidence_or_examples": [
+                  "Finding gcd(99, 2) completes in 2 remainder steps (99 mod 2 = 1, 2 mod 1 = 0).",
+                  "Aryabhatiya (499 CE) long division GCD."
+                ],
+                "key_terms": [
+                  "\u0100ryabha\u1e6da Remainder Algorithm",
+                  "Remainder Reduction (m mod n)",
+                  "Logarithmic Complexity",
+                  "LCM Computation (m * n / gcd)"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 12,
+      "chapter_title": "Quadrilaterals",
+      "mind_map": {
+        "root_topic": "Quadrilaterals",
+        "branches": [
+          {
+            "theme": "Parallelogram Theorems and Classification",
+            "sub_branches": [
+              {
+                "concept": "Properties and Converses of Parallelograms",
+                "details": [
+                  "A quadrilateral is a parallelogram iff opposite sides are equal, opposite angles are equal, or diagonals bisect each other.",
+                  "Special parallelograms: Rectangles (equal diagonals), Rhombuses (perpendicular diagonals), Squares (both)."
+                ],
+                "evidence_or_examples": [
+                  "Proof that quadrilateral with DP = BQ on diagonal BD forms parallelogram APCQ."
+                ],
+                "key_terms": [
+                  "Parallelogram",
+                  "Diagonal Bisection",
+                  "Convex vs Non-Convex Quadrilateral"
+                ]
+              }
+            ]
+          },
+          {
+            "theme": "Midpoint Theorem, Centroid & Tiling",
+            "sub_branches": [
+              {
+                "concept": "Midpoint Theorem & Triangle Centroid",
+                "details": [
+                  "Midpoint Theorem: Segment joining midpoints of two triangle sides is parallel to 3rd side and half its length (DE || BC, DE = 1/2 BC).",
+                  "Centroid Theorem: Medians intersect at centroid G, dividing medians in 2:1 ratio."
+                ],
+                "evidence_or_examples": [
+                  "Paper folding verification of midpoint crease on right triangle.",
+                  "Varignon's Theorem: Midpoints of ANY quadrilateral form a parallelogram."
+                ],
+                "key_terms": [
+                  "Midpoint Theorem",
+                  "Centroid (G)",
+                  "2:1 Median Section Ratio",
+                  "Varignon Parallelogram"
+                ]
+              },
+              {
+                "concept": "Universal Quadrilateral Tiling (Tessellation)",
+                "details": [
+                  "Any arbitrary quadrilateral can tile a 2D plane seamlessly without gaps.",
+                  "Guaranteed because interior angles sum to 360 degrees.",
+                  "180-degree rotation around side midpoints creates parallel grid patterns."
+                ],
+                "evidence_or_examples": [
+                  "Architectural ceramic floor tessellations using irregular 4-gon tiles."
+                ],
+                "key_terms": [
+                  "Tessellation / Tiling",
+                  "360-Degree Vertex Angle Sum",
+                  "Midpoint Rotation"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 13,
+      "chapter_title": "Two Variables, One Line",
+      "mind_map": {
+        "root_topic": "Two Variables, One Line",
+        "branches": [
+          {
+            "theme": "Linear Equations and Graphical Representation",
+            "sub_branches": [
+              {
+                "concept": "Standard Form and Solution Sets",
+                "details": [
+                  "General linear form: ax + by + c = 0.",
+                  "Solution is an ordered pair (u, v) satisfying the equation.",
+                  "Every linear equation has infinitely many solutions forming a straight line graph."
+                ],
+                "evidence_or_examples": [
+                  "Fruit purchase equation 2x + 3y = 12 with intercepts (6, 0) and (0, 4)."
+                ],
+                "key_terms": [
+                  "Linear Equation ax + by + c = 0",
+                  "Ordered Pair Solution (x, y)",
+                  "Cartesian Line Representation",
+                  "X and Y Intercepts"
+                ]
+              },
+              {
+                "concept": "Slope-Intercept Form and Physical Meaning",
+                "details": [
+                  "Slope-intercept form: y = mx + d.",
+                  "Slope m = (y2 - y1) / (x2 - x1) measures rate of change / steepness (rise over run).",
+                  "Positive slope slants upward; negative slope slants downward."
+                ],
+                "evidence_or_examples": [
+                  "Cycling uphill vs downhill physical intuition for slope.",
+                  "Equation 3x + 4y - 12 = 0 converted to y = -0.75x + 3."
+                ],
+                "key_terms": [
+                  "Slope-Intercept Form (y = mx + d)",
+                  "Slope m (Rise / Run)",
+                  "Y-Intercept d",
+                  "Rate of Change"
+                ]
+              }
+            ]
+          },
+          {
+            "theme": "Systems of Linear Equations and Consistency",
+            "sub_branches": [
+              {
+                "concept": "Coefficient Ratio Classification Law",
+                "details": [
+                  "Unique solution (intersecting lines): a1/a2 != b1/b2.",
+                  "No solution (parallel lines): a1/a2 = b1/b2 != c1/c2.",
+                  "Infinitely many solutions (coincident lines): a1/a2 = b1/b2 = c1/c2."
+                ],
+                "evidence_or_examples": [
+                  "Algebraic elimination solving 2x + 3y = 9 and 3x + 4y = 13 -> (3, 1).",
+                  "Taxi fare modeling: fixed flag-down charge + rate/km."
+                ],
+                "key_terms": [
+                  "System of Linear Equations",
+                  "Intersecting / Parallel / Coincident Lines",
+                  "Consistent vs Inconsistent System",
+                  "Elimination / Substitution Methods"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 14,
+      "chapter_title": "Math of Space: Surface Area and Volume",
+      "mind_map": {
+        "root_topic": "Math of Space: Surface Area and Volume",
+        "branches": [
+          {
+            "theme": "Prisms, Cuboids, and Cylinders",
+            "sub_branches": [
+              {
+                "concept": "Cuboid, Cube, and Cylinder Mensuration",
+                "details": [
+                  "Cuboid: TSA = 2(lw + wh + lh), Volume = l * w * h.",
+                  "Cube: TSA = 6a^2, Volume = a^3. Cube minimizes surface area for fixed volume.",
+                  "Cylinder: CSA = 2*pi*r*h, TSA = 2*pi*r*(r + h), Volume = pi*r^2*h."
+                ],
+                "evidence_or_examples": [
+                  "Packaging optimization using cube vs elongated cuboid boxes."
+                ],
+                "key_terms": [
+                  "Cuboid / Cube",
+                  "Right Circular Cylinder",
+                  "Curved Surface Area (CSA)",
+                  "Total Surface Area (TSA)",
+                  "Volume / Storage Capacity"
+                ]
+              }
+            ]
+          },
+          {
+            "theme": "Cones, Pyramids, Spheres, and Scaling",
+            "sub_branches": [
+              {
+                "concept": "Cones, Pyramids, Spheres, and Archimedes Ratios",
+                "details": [
+                  "Cone: CSA = pi*r*l (l = sqrt(r^2 + h^2)), Volume = 1/3*pi*r^2*h.",
+                  "Sphere: SA = 4*pi*r^2, Volume = 4/3*pi*r^3.",
+                  "Archimedes Ratio: V_cone : V_sphere : V_cylinder = 1 : 2 : 3 for height h = 2r."
+                ],
+                "evidence_or_examples": [
+                  "Melting metallic sphere r = 10.5 cm into 126 cones (r=3.5, h=3).",
+                  "Fermi estimation of global ocean depth (~2.71 km) over Earth surface."
+                ],
+                "key_terms": [
+                  "Cone Slant Height l",
+                  "Sphere & Hemisphere",
+                  "Archimedes Volume Theorem",
+                  "Fermi Estimation & Cubic Scaling (k -> k^3)"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

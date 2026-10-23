@@ -1,0 +1,3568 @@
+{
+  "subject_title": "Mathematics (Ganita Manjari - Part I)",
+  "total_chapters": 8,
+  "ncert_paper_structure": {
+    "sections": [
+      {
+        "section_name": "Section A",
+        "question_type": "Multiple Choice Questions (MCQs)",
+        "marks_per_question": 1,
+        "description": "Tests foundational recall, identification, and quick concept verification."
+      },
+      {
+        "section_name": "Section B",
+        "question_type": "Short Answer Questions (SA-I)",
+        "marks_per_question": 2,
+        "description": "Tests direct application of formulas, simple derivations, and 2-step problem solving."
+      },
+      {
+        "section_name": "Section C",
+        "question_type": "Short Answer Questions (SA-II)",
+        "marks_per_question": 3,
+        "description": "Tests conceptual explanations, geometric proofs, and multi-step calculations."
+      },
+      {
+        "section_name": "Section D",
+        "question_type": "Long Answer Questions (LA)",
+        "marks_per_question": 5,
+        "description": "Tests comprehensive mathematical reasoning, structured multi-part proofs, and deep analytical problem solving."
+      },
+      {
+        "section_name": "Section E",
+        "question_type": "Case-Study / Competency-Based Questions",
+        "marks_per_question": 4,
+        "description": "Tests real-world modeling, contextual data interpretation, and integrated application."
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Orienting Yourself: The Use of Coordinates",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Cartesian Coordinate Fundamentals & Distance Formula",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What are the coordinates of the origin where the x-axis and y-axis intersect on a Cartesian plane?",
+                  "options": [
+                    "A) (1, 1)",
+                    "B) (0, 0)",
+                    "C) (0, 1)",
+                    "D) (1, 0)"
+                  ],
+                  "correct_answer": "B) (0, 0)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "A point P has an abscissa of -4 and an ordinate of 3. In which quadrant does P lie?",
+                  "options": [
+                    "A) Quadrant I",
+                    "B) Quadrant II",
+                    "C) Quadrant III",
+                    "D) Quadrant IV"
+                  ],
+                  "correct_answer": "B) Quadrant II",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find the perpendicular distance of the point A(-6, 8) from (i) the x-axis and (ii) the y-axis.",
+                  "marking_scheme_answer": "(i) Perpendicular distance from x-axis is |y| = |8| = 8 units.\n(ii) Perpendicular distance from y-axis is |x| = |-6| = 6 units.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Using the Baudhāyana-Pythagoras distance formula, calculate the distance between P(2, 3) and Q(10, 9).",
+                  "marking_scheme_answer": "d = sqrt((10-2)^2 + (9-3)^2) = sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10 units.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Find the reflection of the point B(4, -5) across (i) the x-axis, (ii) the y-axis, and (iii) the origin.",
+                  "marking_scheme_answer": "(i) Reflection across x-axis negates y: (4, 5).\n(ii) Reflection across y-axis negates x: (-4, -5).\n(iii) Reflection across origin negates both: (-4, 5).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Show algebraically using the distance formula that the points A(1, 1), B(4, 5), and C(1, 5) form a right-angled triangle on the Cartesian plane, and compute its area.",
+                  "marking_scheme_answer": "1. AB = sqrt((4-1)^2 + (5-1)^2) = sqrt(9 + 16) = 5.\n2. BC = sqrt((1-4)^2 + (5-5)^2) = sqrt(9 + 0) = 3.\n3. AC = sqrt((1-1)^2 + (5-1)^2) = sqrt(0 + 16) = 4.\n4. Verification: AC^2 + BC^2 = 4^2 + 3^2 = 16 + 9 = 25 = AB^2. Right-angled at C.\n5. Area = 1/2 * base * height = 1/2 * 3 * 4 = 6 sq units.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A delivery drone operates on a 2D grid city layout. Base station is at O(0,0). Drone delivers to house A(3, 4) and then house B(9, 12).\n(i) What is the direct distance from base station to House A? (2 Marks)\n(ii) What is the straight-line distance between House A and House B? (2 Marks)",
+                  "marking_scheme_answer": "(i) Distance OA = sqrt(3^2 + 4^2) = sqrt(25) = 5 km.\n(ii) Distance AB = sqrt((9-3)^2 + (12-4)^2) = sqrt(6^2 + 8^2) = sqrt(100) = 10 km.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Midpoint, Trisection & Geometric Transformations",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Any point lying on the y-axis has coordinates of the form:",
+                  "options": [
+                    "A) (x, 0)",
+                    "B) (0, y)",
+                    "C) (y, 0)",
+                    "D) (x, y)"
+                  ],
+                  "correct_answer": "B) (0, y)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The sign convention of coordinates in Quadrant IV is:",
+                  "options": [
+                    "A) (+, +)",
+                    "B) (-, +)",
+                    "C) (-, -)",
+                    "D) (+, -)"
+                  ],
+                  "correct_answer": "D) (+, -)",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find the coordinates of the midpoint of line segment joining A(-4, 6) and B(8, -2).",
+                  "marking_scheme_answer": "M = ((x1+x2)/2, (y1+y2)/2) = ((-4+8)/2, (6+(-2))/2) = (4/2, 4/2) = (2, 2).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "If the distance between P(x, -1) and Q(3, 2) is 5 units, find all possible values of x.",
+                  "marking_scheme_answer": "5^2 = (3-x)^2 + (2 - (-1))^2 => 25 = (3-x)^2 + 9 => (3-x)^2 = 16 => 3-x = ±4 => x = -1 or x = 7.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Find the points of trisection P and Q of the line segment joining A(2, -2) and B(-7, 4).",
+                  "marking_scheme_answer": "P divides AB in 1:2 => P = ((1*(-7) + 2*2)/3, (1*4 + 2*(-2))/3) = (-3/3, 0/3) = (-1, 0).\nQ divides AB in 2:1 => Q = ((2*(-7) + 1*2)/3, (2*4 + 1*(-2))/3) = (-12/3, 6/3) = (-4, 2).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that the points A(2, -2), B(14, 10), C(11, 13), and D(-1, 1) form a rectangle on the Cartesian plane.",
+                  "marking_scheme_answer": "1. Calculate side lengths: AB = sqrt(12^2 + 12^2) = sqrt(288); CD = sqrt((-12)^2 + (-12)^2) = sqrt(288).\n2. BC = sqrt((-3)^2 + 3^2) = sqrt(18); AD = sqrt((-3)^2 + 3^2) = sqrt(18).\n3. Opposite sides equal: AB = CD and BC = AD.\n4. Diagonal AC = sqrt(9^2 + 15^2) = sqrt(81 + 225) = sqrt(306).\n5. Diagonal BD = sqrt((-15)^2 + (-9)^2) = sqrt(306). Equal diagonals confirm rectangle.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "An architect is planning a square park ABCD on a grid. A is at (0,0), B is at (6,0), C is at (6,6), and D is at (0,6).\n(i) Calculate the length of the diagonal AC. (2 Marks)\n(ii) Find the coordinates of the central fountain located at the intersection of diagonals AC and BD. (2 Marks)",
+                  "marking_scheme_answer": "(i) Diagonal AC = sqrt((6-0)^2 + (6-0)^2) = sqrt(36 + 36) = sqrt(72) = 6*sqrt(2) units.\n(ii) Center is midpoint of AC = ((0+6)/2, (0+6)/2) = (3, 3).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Historical Roots & Coordinate Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "In ancient Indian altar geometry (Śhulbasūtras), what term referred to the east-west reference axis?",
+                  "options": [
+                    "A) Tiryak",
+                    "B) Prāchī",
+                    "C) Vedi",
+                    "D) Śhulba"
+                  ],
+                  "correct_answer": "B) Prāchī",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If a point lies in Quadrant III, the signs of its (abscissa, ordinate) are:",
+                  "options": [
+                    "A) (+, -)",
+                    "B) (-, +)",
+                    "C) (-, -)",
+                    "D) (+, +)"
+                  ],
+                  "correct_answer": "C) (-, -)",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find the point on the x-axis which is equidistant from (2, -5) and (-2, 9).",
+                  "marking_scheme_answer": "Let point be P(x, 0). (x-2)^2 + 25 = (x+2)^2 + 81 => -4x + 29 = 4x + 85 => -8x = 56 => x = -7. Point is (-7, 0).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "State the distance of point P(-3, -4) from the origin O(0,0).",
+                  "marking_scheme_answer": "d = sqrt((-3)^2 + (-4)^2) = sqrt(9 + 16) = sqrt(25) = 5 units.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Plot vertices A(0, 4), B(-3, 0), C(0, -4), and D(3, 0) on a Cartesian grid. Name the quadrilateral ABCD and calculate its perimeter.",
+                  "marking_scheme_answer": "All 4 sides equal: AB = BC = CD = DA = sqrt(3^2 + 4^2) = 5 units.\nDiagonals AC = 8 (vertical) and BD = 6 (horizontal) are perpendicular.\nQuadrilateral is a Rhombus. Perimeter = 4 * 5 = 20 units.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Three vertices of a parallelogram ABCD are A(-2, 1), B(1, 0), and C(4, 3). Find the coordinates of the fourth vertex D.",
+                  "marking_scheme_answer": "In a parallelogram, diagonals AC and BD bisect each other.\nMidpoint of AC = ((-2+4)/2, (1+3)/2) = (1, 2).\nLet D = (x, y). Midpoint of BD = ((1+x)/2, (0+y)/2).\nEquating midpoints: (1+x)/2 = 1 => x = 1; (0+y)/2 = 2 => y = 4.\nFourth vertex D is (1, 4).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Urban planners in Harappa laid out main roads along orthogonal axes intersecting at right angles.\n(i) Explain how town layout aligns with Cartesian axes. (2 Marks)\n(ii) If a grain store is at (5, 12) and town gate is at (0,0), find the direct access road length. (2 Marks)",
+                  "marking_scheme_answer": "(i) Two perpendicular main avenues act as x and y axes dividing town into 4 blocks/quadrants, enabling unique street grid coordinates.\n(ii) Distance = sqrt(5^2 + 12^2) = sqrt(25 + 144) = sqrt(169) = 13 units.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Collinearity & Advanced Coordinate Geometry",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The distance between points (a, 0) and (0, b) is given by:",
+                  "options": [
+                    "A) a + b",
+                    "B) a^2 + b^2",
+                    "C) sqrt(a^2 + b^2)",
+                    "D) sqrt(a + b)"
+                  ],
+                  "correct_answer": "C) sqrt(a^2 + b^2)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If (x, y) = (-y, x), then x and y must be:",
+                  "options": [
+                    "A) x = 1, y = 1",
+                    "B) x = 0, y = 0",
+                    "C) x = 2, y = -2",
+                    "D) Any real numbers"
+                  ],
+                  "correct_answer": "B) x = 0, y = 0",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Check whether points A(1, 5), B(2, 3), and C(-2, -11) are collinear using distance formula.",
+                  "marking_scheme_answer": "AB = sqrt(1^2 + (-2)^2) = sqrt(5).\nBC = sqrt((-4)^2 + (-14)^2) = sqrt(16 + 196) = sqrt(212) = 2*sqrt(53).\nAC = sqrt((-3)^2 + (-16)^2) = sqrt(9 + 256) = sqrt(265).\nSince AB + BC != AC, points are NOT collinear.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find the point on the y-axis which is equidistant from A(6, 5) and B(-4, 3).",
+                  "marking_scheme_answer": "Let P(0, y). 6^2 + (y-5)^2 = (-4)^2 + (y-3)^2 => 36 + y^2 - 10y + 25 = 16 + y^2 - 6y + 9 => 61 - 10y = 25 - 6y => -4y = -36 => y = 9. Point is (0, 9).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Show that the points A(3, 0), B(6, 4), and C(-1, 3) are the vertices of a right-angled isosceles triangle.",
+                  "marking_scheme_answer": "AB = sqrt(3^2 + 4^2) = 5.\nBC = sqrt((-7)^2 + (-1)^2) = sqrt(50) = 5*sqrt(2).\nAC = sqrt((-4)^2 + 3^2) = 5.\nAB = AC = 5 (Isosceles). AB^2 + AC^2 = 25 + 25 = 50 = BC^2 (Right angled at A).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Find the centre and radius of a circle passing through points A(0,0), B(4,0), and C(0,6).",
+                  "marking_scheme_answer": "Since angle A = 90 degrees (formed by axes at origin), BC is the diameter of the circumcircle.\nCentre O' is midpoint of BC = ((4+0)/2, (0+6)/2) = (2, 3).\nRadius r = 1/2 * BC = 1/2 * sqrt(4^2 + 6^2) = 1/2 * sqrt(52) = sqrt(13) units.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A robot arm moves on a grid from P(-2, 3) to Q(4, 7).\n(i) Find the total displacement vector along x and y axes. (2 Marks)\n(ii) Find the midpoint of the robot arm's path. (2 Marks)",
+                  "marking_scheme_answer": "(i) delta_x = 4 - (-2) = 6 units; delta_y = 7 - 3 = 4 units.\n(ii) Midpoint = ((-2+4)/2, (3+7)/2) = (1, 5).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Comprehensive Mastery Test on Coordinates",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The distance of point P(-5, 12) from origin is:",
+                  "options": [
+                    "A) 12",
+                    "B) 13",
+                    "C) 17",
+                    "D) 7"
+                  ],
+                  "correct_answer": "B) 13",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If reflection of (3, -2) across x-axis is (a, b), then a + b equals:",
+                  "options": [
+                    "A) 1",
+                    "B) 5",
+                    "C) -1",
+                    "D) 0"
+                  ],
+                  "correct_answer": "B) 5",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find the area of triangle formed by origin O(0,0), A(6,0), and B(0,8).",
+                  "marking_scheme_answer": "Triangle is right-angled at origin with base = 6 and height = 8.\nArea = 1/2 * 6 * 8 = 24 sq units.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "If A(1, 2), B(4, y), C(x, 6), and D(3, 5) are vertices of a parallelogram in order, find x and y.",
+                  "marking_scheme_answer": "Midpoint of AC = Midpoint of BD.\n((1+x)/2, (2+6)/2) = ((4+3)/2, (y+5)/2)\n(1+x)/2 = 7/2 => x = 6; 8/2 = (y+5)/2 => y = 3.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Prove that points A(-2, -1), B(1, 0), C(4, 3), and D(1, 2) form a parallelogram.",
+                  "marking_scheme_answer": "AB = sqrt(3^2 + 1^2) = sqrt(10); CD = sqrt((-3)^2 + (-1)^2) = sqrt(10).\nBC = sqrt(3^2 + 3^2) = sqrt(18); AD = sqrt(3^2 + 3^2) = sqrt(18).\nOpposite sides equal => ABCD is a parallelogram.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Find the coordinates of the circumcentre of triangle with vertices A(3, 0), B(0, 4), and C(0, 0), and calculate circumradius.",
+                  "marking_scheme_answer": "Triangle is right-angled at C(0,0). Circumcentre is midpoint of hypotenuse AB.\nCircumcentre O' = ((3+0)/2, (0+4)/2) = (1.5, 2).\nCircumradius R = 1/2 * AB = 1/2 * sqrt(3^2 + 4^2) = 2.5 units.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A GPS satellite tracks two vehicles V1 at (-3, 4) and V2 at (5, -2).\n(i) Find direct distance between vehicles V1 and V2. (2 Marks)\n(ii) Find location of relay tower midway between them. (2 Marks)",
+                  "marking_scheme_answer": "(i) Distance = sqrt((5 - (-3))^2 + (-2 - 4)^2) = sqrt(8^2 + (-6)^2) = sqrt(100) = 10 km.\n(ii) Relay tower = ((-3+5)/2, (4+(-2))/2) = (1, 1).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Introduction to Linear Polynomials",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Linear Polynomial Anatomy & Slope Concepts",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is the degree of the non-zero linear polynomial p(x) = 4x - 9?",
+                  "options": [
+                    "A) 0",
+                    "B) 1",
+                    "C) 2",
+                    "D) 3"
+                  ],
+                  "correct_answer": "B) 1",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In the linear function y = ax + b, 'a' represents:",
+                  "options": [
+                    "A) y-intercept",
+                    "B) Slope (rate of change)",
+                    "C) Variable",
+                    "D) Degree"
+                  ],
+                  "correct_answer": "B) Slope (rate of change)",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Convert 3x + 2y = 8 into slope-intercept form y = ax + b and state slope and y-intercept.",
+                  "marking_scheme_answer": "2y = -3x + 8 => y = (-3/2)x + 4. Slope a = -3/2, y-intercept b = 4.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Check whether point (2, 10) lies on the line y = 3x + 4.",
+                  "marking_scheme_answer": "LHS y = 10; RHS = 3(2) + 4 = 10. Since LHS = RHS, (2, 10) lies on line.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A line passes through (0, 5) and (2, 11). Determine its linear polynomial function p(x) = ax + b.",
+                  "marking_scheme_answer": "y-intercept b = 5. Slope a = (11 - 5)/(2 - 0) = 6/2 = 3. Function p(x) = 3x + 5.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A taxi charges flag-down fare Rs. 50 plus Rs. 15 per km. (i) Write linear polynomial C(x). (ii) Find fare for 12 km journey. (iii) Graph the function.",
+                  "marking_scheme_answer": "(i) C(x) = 15x + 50.\n(ii) C(12) = 15(12) + 50 = 180 + 50 = Rs. 230.\n(iii) Plot (0, 50) and (10, 200); draw straight line.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Plant A height H_A = 2d + 6 cm, Plant B height H_B = 3d + 2 cm.\n(i) On which day do plants reach equal height? (2 Marks)\n(ii) What is that height? (2 Marks)",
+                  "marking_scheme_answer": "(i) 2d + 6 = 3d + 2 => d = 4 days.\n(ii) Height H(4) = 2(4) + 6 = 14 cm.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Linear Growth vs Decay & Graphical Representation",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "If a line slants downwards from left to right, its slope 'a' must be:",
+                  "options": [
+                    "A) Zero",
+                    "B) Positive",
+                    "C) Negative",
+                    "D) Infinite"
+                  ],
+                  "correct_answer": "C) Negative",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Which line passes through the origin O(0,0)?",
+                  "options": [
+                    "A) y = 2x + 3",
+                    "B) y = -5x",
+                    "C) y = 4",
+                    "D) x = 3"
+                  ],
+                  "correct_answer": "B) y = -5x",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Distinguish between linear growth and linear decay with one mathematical example each.",
+                  "marking_scheme_answer": "Linear growth: y = ax + b with a > 0 (e.g. y = 2x + 5, increasing). Linear decay: y = ax + b with a < 0 (e.g. y = -3x + 10, decreasing).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find x-intercept and y-intercept of the line 4x - 5y = 20.",
+                  "marking_scheme_answer": "x-intercept (y=0): 4x = 20 => x = 5 (point (5,0)). y-intercept (x=0): -5y = 20 => y = -4 (point (0,-4)).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A phone battery starts at 100% and drains at 5% per hour. (i) Write remaining battery percentage B(t). (ii) Find remaining charge after 6 hours.",
+                  "marking_scheme_answer": "(i) B(t) = 100 - 5t.\n(ii) B(6) = 100 - 5(6) = 100 - 30 = 70%.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A water tank contains 500 L and drains at 25 L/min. (i) Formulate remaining volume W(t). (ii) Calculate volume after 8 min. (iii) Find time to completely empty tank.",
+                  "marking_scheme_answer": "(i) W(t) = 500 - 25t.\n(ii) W(8) = 500 - 25(8) = 500 - 200 = 300 L.\n(iii) Set W(t) = 0: 500 - 25t = 0 => 25t = 500 => t = 20 minutes.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A monthly cell phone plan charges base fee Rs. 200 plus Rs. 2 per call.\n(i) Write cost function C(x) for x calls. (2 Marks)\n(ii) Calculate total bill for 150 calls. (2 Marks)",
+                  "marking_scheme_answer": "(i) C(x) = 2x + 200.\n(ii) C(150) = 2(150) + 200 = 300 + 200 = Rs. 500.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Parallel Lines Family & Intercept Analysis",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Two lines y = 5x + 2 and y = 5x - 7 are parallel because they have:",
+                  "options": [
+                    "A) Same y-intercept",
+                    "B) Equal slopes",
+                    "C) Opposite slopes",
+                    "D) Same x-intercept"
+                  ],
+                  "correct_answer": "B) Equal slopes",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The zero of linear polynomial p(x) = 2x + 6 is:",
+                  "options": [
+                    "A) 3",
+                    "B) -3",
+                    "C) 6",
+                    "D) -6"
+                  ],
+                  "correct_answer": "B) -3",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find equation of line parallel to y = 4x - 3 passing through point (1, 8).",
+                  "marking_scheme_answer": "Parallel line has same slope a = 4. Equation y = 4x + b. Substitute (1,8): 8 = 4(1) + b => b = 4. Equation is y = 4x + 4.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Verify whether x = 4 is a zero of polynomial p(x) = 3x - 12.",
+                  "marking_scheme_answer": "p(4) = 3(4) - 12 = 12 - 12 = 0. Since p(4) = 0, x = 4 is a zero.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Temperature conversion from Celsius C to Fahrenheit F is given by F = (9/5)C + 32. (i) Find F when C = 25°C. (ii) Find C when F = 95°F.",
+                  "marking_scheme_answer": "(i) F = (9/5)*25 + 32 = 45 + 32 = 77°F.\n(ii) 95 = (9/5)C + 32 => 63 = (9/5)C => C = 35°C.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Determine slope and intercepts for lines L1: 2x - 3y = 6 and L2: 4x - 6y = 12. Are these lines intersecting, parallel, or coincident?",
+                  "marking_scheme_answer": "L1: y = (2/3)x - 2 (Slope 2/3, y-intercept -2).\nL2: y = (4/6)x - 2 => y = (2/3)x - 2 (Slope 2/3, y-intercept -2).\nSince slopes and y-intercepts are identical, lines L1 and L2 are COINCIDENT (infinite intersections).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A manufacturing factory has fixed daily cost Rs. 1000 and variable production cost Rs. 50 per item.\n(i) Write cost function C(n) for n items. (2 Marks)\n(ii) If total daily cost is Rs. 3500, how many items were produced? (2 Marks)",
+                  "marking_scheme_answer": "(i) C(n) = 50n + 1000.\n(ii) 3500 = 50n + 1000 => 50n = 2500 => n = 50 items.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Modeling Real-World Functions & Rate of Change",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "In a table of values for linear function y = ax + b with equal x-intervals, the first differences of y are:",
+                  "options": [
+                    "A) Increasing",
+                    "B) Decreasing",
+                    "C) Constant",
+                    "D) Zero"
+                  ],
+                  "correct_answer": "C) Constant",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The slope of horizontal line y = 7 is:",
+                  "options": [
+                    "A) 7",
+                    "B) 1",
+                    "C) 0",
+                    "D) Undefined"
+                  ],
+                  "correct_answer": "C) 0",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find zero of linear polynomial p(x) = ax + b (a != 0).",
+                  "marking_scheme_answer": "Set p(x) = 0 => ax + b = 0 => ax = -b => x = -b/a.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Write a linear equation representing a line passing through (0, -4) with slope 2/5.",
+                  "marking_scheme_answer": "y = ax + b => y = (2/5)x - 4, or 2x - 5y = 20.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A spring length L (in cm) under weight W (in kg) is modeled by L(W) = 1.5W + 10. (i) What is natural unweighted length? (ii) Find length with 6 kg weight.",
+                  "marking_scheme_answer": "(i) Natural length (W=0) is y-intercept = 10 cm.\n(ii) L(6) = 1.5(6) + 10 = 9 + 10 = 19 cm.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A commuter has a pre-loaded metro card with Rs. 500. Each trip costs Rs. 30. (i) Formulate remaining balance B(n) after n trips. (ii) Find balance after 12 trips. (iii) Find maximum trips before card needs recharge.",
+                  "marking_scheme_answer": "(i) B(n) = 500 - 30n.\n(ii) B(12) = 500 - 30(12) = 500 - 360 = Rs. 140.\n(iii) 500 - 30n >= 0 => 30n <= 500 => n <= 16.66. Max trips = 16 (remaining balance Rs. 20).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Car A travels according to distance D_A = 60t km. Car B starts 20 km ahead and travels according to D_B = 50t + 20 km.\n(i) At what time t do both cars meet? (2 Marks)\n(ii) What distance has Car A traveled when it catches Car B? (2 Marks)",
+                  "marking_scheme_answer": "(i) Set D_A = D_B => 60t = 50t + 20 => 10t = 20 => t = 2 hours.\n(ii) Distance D_A = 60(2) = 120 km.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Advanced Linear Polynomial Assessment",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "If polynomial p(x) = c (where c != 0) is a constant polynomial, its degree is:",
+                  "options": [
+                    "A) 1",
+                    "B) 0",
+                    "C) Undefined",
+                    "D) Any integer"
+                  ],
+                  "correct_answer": "B) 0",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The graph of vertical line x = -3 has slope:",
+                  "options": [
+                    "A) -3",
+                    "B) 0",
+                    "C) 1",
+                    "D) Undefined"
+                  ],
+                  "correct_answer": "D) Undefined",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find value of k if line 2x + ky = 9 passes through point (3, -1).",
+                  "marking_scheme_answer": "Substitute x=3, y=-1: 2(3) + k(-1) = 9 => 6 - k = 9 => k = -3.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Express 2x = 5y in standard form ax + by + c = 0 and identify values of a, b, c.",
+                  "marking_scheme_answer": "2x - 5y + 0 = 0. Values: a = 2, b = -5, c = 0.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Determine whether points (1, 3), (2, 5), and (4, 9) lie on the same straight line.",
+                  "marking_scheme_answer": "Slope m1 between (1,3) and (2,5) = (5-3)/(2-1) = 2.\nSlope m2 between (2,5) and (4,9) = (9-5)/(4-2) = 4/2 = 2.\nSince slopes are equal, points lie on line y = 2x + 1.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A candle 30 cm long burns at a uniform rate of 2 cm per hour. (i) Formulate remaining height H(t) after t hours. (ii) Calculate height after 7.5 hours. (iii) Find total burn time.",
+                  "marking_scheme_answer": "(i) H(t) = 30 - 2t.\n(ii) H(7.5) = 30 - 2(7.5) = 30 - 15 = 15 cm.\n(iii) Set H(t) = 0: 30 - 2t = 0 => 2t = 30 => t = 15 hours.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A solar panel generates cumulative energy E(t) = 4t + 10 kWh where t is operating hours.\n(i) What is initial energy store at t=0? (2 Marks)\n(ii) How many hours are needed to accumulate 50 kWh? (2 Marks)",
+                  "marking_scheme_answer": "(i) Initial store = E(0) = 10 kWh.\n(ii) 50 = 4t + 10 => 4t = 40 => t = 10 hours.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "The World of Numbers",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Real Number Hierarchy & Decimal Expansions",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which of the following numbers is an irrational number?",
+                  "options": [
+                    "A) 0.35",
+                    "B) 22/7",
+                    "C) sqrt(5)",
+                    "D) sqrt(49)"
+                  ],
+                  "correct_answer": "C) sqrt(5)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "A rational number p/q has a terminating decimal expansion if denominator q has prime factors:",
+                  "options": [
+                    "A) 3 and 5",
+                    "B) 2 and 5 only",
+                    "C) 2, 3 and 5",
+                    "D) Any prime"
+                  ],
+                  "correct_answer": "B) 2 and 5 only",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Insert two rational numbers between 1/3 and 1/2.",
+                  "marking_scheme_answer": "Common denominator 24: 1/3 = 8/24, 1/2 = 12/24. Rationals: 9/24 (3/8) and 10/24 (5/12).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Convert recurring decimal x = 0.666... into a fraction in p/q form.",
+                  "marking_scheme_answer": "x = 0.666... => 10x = 6.666... => 9x = 6 => x = 6/9 = 2/3.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Convert 0.2353535... into a rational number in simplest p/q form.",
+                  "marking_scheme_answer": "10x = 2.3535...; 1000x = 235.3535... => 990x = 233 => x = 233/990.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove by contradiction that sqrt(2) is an irrational number.",
+                  "marking_scheme_answer": "1. Assume sqrt(2) = p/q where gcd(p,q)=1.\n2. 2 = p^2/q^2 => p^2 = 2q^2 => p is even (p=2k).\n3. (2k)^2 = 2q^2 => 4k^2 = 2q^2 => q^2 = 2k^2 => q is even.\n4. Both p and q even contradicts gcd(p,q)=1.\n5. Therefore sqrt(2) is irrational.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Mādhava of Saṅgamagrāma derived pi/4 = 1 - 1/3 + 1/5 - 1/7 + ...\n(i) Why are finite partial sums strictly rational? (2 Marks)\n(ii) Calculate 3rd partial sum S3. (2 Marks)",
+                  "marking_scheme_answer": "(i) Sum of finite rational fractions is rational, whereas pi is irrational.\n(ii) S3 = 1 - 1/3 + 1/5 = 15/15 - 5/15 + 3/15 = 13/15.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Geometric Roots & Square Root Spiral",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The decimal expansion of an irrational number is always:",
+                  "options": [
+                    "A) Terminating",
+                    "B) Non-terminating repeating",
+                    "C) Non-terminating non-repeating",
+                    "D) Terminating repeating"
+                  ],
+                  "correct_answer": "C) Non-terminating non-repeating",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Which of the following is an integer?",
+                  "options": [
+                    "A) sqrt(3)",
+                    "B) 3/4",
+                    "C) -15",
+                    "D) pi"
+                  ],
+                  "correct_answer": "C) -15",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Classify the following as rational or irrational: (i) (3 + sqrt(23)) - sqrt(23), (ii) 2*pi.",
+                  "marking_scheme_answer": "(i) 3 (Rational).\n(ii) 2*pi (Irrational, product of non-zero rational and irrational).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Explain how to construct sqrt(2) on a number line using a right triangle.",
+                  "marking_scheme_answer": "Draw right triangle at origin with base = 1 unit and height = 1 unit. Hypotenuse = sqrt(1^2 + 1^2) = sqrt(2). Swing arc with compass from origin to cut number line at sqrt(2).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Describe the construction steps for generating the Square Root Spiral (Wheel of Theodorus) up to sqrt(4).",
+                  "marking_scheme_answer": "1. Start with right triangle T1 with legs 1 and 1 => hypotenuse sqrt(2).\n2. Build T2 on hypotenuse sqrt(2) with perpendicular leg 1 => hypotenuse sqrt(3).\n3. Build T3 on hypotenuse sqrt(3) with perpendicular leg 1 => hypotenuse sqrt(4) = 2.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that 3 + 2*sqrt(5) is an irrational number, given that sqrt(5) is irrational.",
+                  "marking_scheme_answer": "1. Assume r = 3 + 2*sqrt(5) is rational p/q.\n2. 2*sqrt(5) = r - 3 => sqrt(5) = (r - 3)/2.\n3. Since r is rational, (r - 3)/2 is rational.\n4. This implies sqrt(5) is rational, contradicting given fact.\n5. Thus 3 + 2*sqrt(5) is irrational.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "In a cyclic decimal block, 1/7 = 0.142857142857...\n(i) What is repeating block length for 1/7? (2 Marks)\n(ii) Determine decimal expansion for 3/7 without long division. (2 Marks)",
+                  "marking_scheme_answer": "(i) Periodicity is 6 digits (142857).\n(ii) 3/7 = 3 * 0.142857... Cyclic rotation starting at digit 4 gives 0.428571428571...",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Real Numbers & Rationality Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which of the following is a rational number between 3 and 4?",
+                  "options": [
+                    "A) 3.25",
+                    "B) sqrt(10)",
+                    "C) 3 + pi",
+                    "D) sqrt(11)"
+                  ],
+                  "correct_answer": "A) 3.25",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The sum of a rational number and an irrational number is always:",
+                  "options": [
+                    "A) Rational",
+                    "B) Irrational",
+                    "C) Integer",
+                    "D) Zero"
+                  ],
+                  "correct_answer": "B) Irrational",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find two irrational numbers between 3 and 4.",
+                  "marking_scheme_answer": "sqrt(10) and sqrt(11) are non-perfect square roots lying between 3 and 4.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Rationalise the denominator of 1 / (sqrt(4) + sqrt(3)).",
+                  "marking_scheme_answer": "Multiply numerator and denominator by (sqrt(4) - sqrt(3)) => sqrt(4) - sqrt(3).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Express 0.333... in simplest p/q form.",
+                  "marking_scheme_answer": "10x - x = 3 => 9x = 3 => x = 3/9.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that sqrt(7) is irrational if 7 is not a perfect square.",
+                  "marking_scheme_answer": "Assume rational p/q => p^2 = (7)q^2. Prime factor parity of 7 creates a logical contradiction. Hence irrational.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A computer stores numbers in binary floating point.\n(i) Why does 1/3 store with truncation error? (2 Marks)\n(ii) State condition for exact binary fraction storage. (2 Marks)",
+                  "marking_scheme_answer": "(i) 1/3 has infinite repeating decimal 0.333... so binary float must truncate digits.\n(ii) Denominator prime factors must be powers of 2 only.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Real Numbers & Rationality Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which of the following is a rational number between 4 and 5?",
+                  "options": [
+                    "A) 4.25",
+                    "B) sqrt(17)",
+                    "C) 4 + pi",
+                    "D) sqrt(18)"
+                  ],
+                  "correct_answer": "A) 4.25",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The sum of a rational number and an irrational number is always:",
+                  "options": [
+                    "A) Rational",
+                    "B) Irrational",
+                    "C) Integer",
+                    "D) Zero"
+                  ],
+                  "correct_answer": "B) Irrational",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find two irrational numbers between 4 and 5.",
+                  "marking_scheme_answer": "sqrt(17) and sqrt(18) are non-perfect square roots lying between 4 and 5.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Rationalise the denominator of 1 / (sqrt(5) + sqrt(4)).",
+                  "marking_scheme_answer": "Multiply numerator and denominator by (sqrt(5) - sqrt(4)) => sqrt(5) - sqrt(4).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Express 0.444... in simplest p/q form.",
+                  "marking_scheme_answer": "10x - x = 4 => 9x = 4 => x = 4/9.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that sqrt(9) is irrational if 9 is not a perfect square.",
+                  "marking_scheme_answer": "Assume rational p/q => p^2 = (9)q^2. Prime factor parity of 9 creates a logical contradiction. Hence irrational.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A computer stores numbers in binary floating point.\n(i) Why does 1/3 store with truncation error? (2 Marks)\n(ii) State condition for exact binary fraction storage. (2 Marks)",
+                  "marking_scheme_answer": "(i) 1/3 has infinite repeating decimal 0.333... so binary float must truncate digits.\n(ii) Denominator prime factors must be powers of 2 only.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Real Numbers & Rationality Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which of the following is a rational number between 5 and 6?",
+                  "options": [
+                    "A) 5.25",
+                    "B) sqrt(26)",
+                    "C) 5 + pi",
+                    "D) sqrt(27)"
+                  ],
+                  "correct_answer": "A) 5.25",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The sum of a rational number and an irrational number is always:",
+                  "options": [
+                    "A) Rational",
+                    "B) Irrational",
+                    "C) Integer",
+                    "D) Zero"
+                  ],
+                  "correct_answer": "B) Irrational",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find two irrational numbers between 5 and 6.",
+                  "marking_scheme_answer": "sqrt(26) and sqrt(27) are non-perfect square roots lying between 5 and 6.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Rationalise the denominator of 1 / (sqrt(6) + sqrt(5)).",
+                  "marking_scheme_answer": "Multiply numerator and denominator by (sqrt(6) - sqrt(5)) => sqrt(6) - sqrt(5).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Express 0.555... in simplest p/q form.",
+                  "marking_scheme_answer": "10x - x = 5 => 9x = 5 => x = 5/9.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that sqrt(11) is irrational if 11 is not a perfect square.",
+                  "marking_scheme_answer": "Assume rational p/q => p^2 = (11)q^2. Prime factor parity of 11 creates a logical contradiction. Hence irrational.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A computer stores numbers in binary floating point.\n(i) Why does 1/3 store with truncation error? (2 Marks)\n(ii) State condition for exact binary fraction storage. (2 Marks)",
+                  "marking_scheme_answer": "(i) 1/3 has infinite repeating decimal 0.333... so binary float must truncate digits.\n(ii) Denominator prime factors must be powers of 2 only.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Exploring Algebraic Identities",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Algebraic Identities & Polynomial Factorisation",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which identity represents the difference of squares?",
+                  "options": [
+                    "A) (a+b)^2",
+                    "B) a^2 - b^2 = (a-b)(a+b)",
+                    "C) (a-b)^2",
+                    "D) a^3 + b^3"
+                  ],
+                  "correct_answer": "B) a^2 - b^2 = (a-b)(a+b)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If a + b + c = 0, then a^3 + b^3 + c^3 equals:",
+                  "options": [
+                    "A) 0",
+                    "B) abc",
+                    "C) 3abc",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "C) 3abc",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Evaluate (101) * (99) using algebraic identity.",
+                  "marking_scheme_answer": "Difference of squares: (100+1)(100-1) = 100^2 - 1^2 = 10000 - 1 = 9999.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Factorise: 1x^2 + 7x + 6.",
+                  "marking_scheme_answer": "Middle term split: (1x + 1)(x + 6).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "If x + 1/x = 3, find x^2 + 1/x^2.",
+                  "marking_scheme_answer": "Square both sides: (x + 1/x)^2 = 3^2 => x^2 + 2 + 1/x^2 = 9 => x^2 + 1/x^2 = 7.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Factorise completely using Factor Theorem: x^3 - 6x^2 + 11x - 6.",
+                  "marking_scheme_answer": "Test x = 1: p(1) = 0 => (x - 1) is a factor. Polynomial division yields (x - 1)(x - 2)(x - 3) scaled appropriately.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A cubical room of edge 'a' is extended by 'b' meters in all 3 dimensions.\n(i) State formula for total expanded volume. (2 Marks)\n(ii) List the 4 distinct geometric shape volumes comprising (a+b)^3. (2 Marks)",
+                  "marking_scheme_answer": "(i) Volume = (a+b)^3 = a^3 + b^3 + 3a^2 b + 3ab^2.\n(ii) 1 cube of a^3, 1 cube of b^3, 3 prisms of a^2 b, 3 prisms of ab^2.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Algebraic Identities & Polynomial Factorisation",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which identity represents the difference of squares?",
+                  "options": [
+                    "A) (a+b)^2",
+                    "B) a^2 - b^2 = (a-b)(a+b)",
+                    "C) (a-b)^2",
+                    "D) a^3 + b^3"
+                  ],
+                  "correct_answer": "B) a^2 - b^2 = (a-b)(a+b)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If a + b + c = 0, then a^3 + b^3 + c^3 equals:",
+                  "options": [
+                    "A) 0",
+                    "B) abc",
+                    "C) 3abc",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "C) 3abc",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Evaluate (102) * (98) using algebraic identity.",
+                  "marking_scheme_answer": "Difference of squares: (100+2)(100-2) = 100^2 - 2^2 = 10000 - 4 = 9996.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Factorise: 2x^2 + 13x + 6.",
+                  "marking_scheme_answer": "Middle term split: (2x + 1)(x + 6).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "If x + 1/x = 4, find x^2 + 1/x^2.",
+                  "marking_scheme_answer": "Square both sides: (x + 1/x)^2 = 4^2 => x^2 + 2 + 1/x^2 = 16 => x^2 + 1/x^2 = 14.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Factorise completely using Factor Theorem: x^3 - 12x^2 + 22x - 12.",
+                  "marking_scheme_answer": "Test x = 1: p(1) = 0 => (x - 1) is a factor. Polynomial division yields (x - 1)(x - 2)(x - 3) scaled appropriately.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A cubical room of edge 'a' is extended by 'b' meters in all 3 dimensions.\n(i) State formula for total expanded volume. (2 Marks)\n(ii) List the 4 distinct geometric shape volumes comprising (a+b)^3. (2 Marks)",
+                  "marking_scheme_answer": "(i) Volume = (a+b)^3 = a^3 + b^3 + 3a^2 b + 3ab^2.\n(ii) 1 cube of a^3, 1 cube of b^3, 3 prisms of a^2 b, 3 prisms of ab^2.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Algebraic Identities & Polynomial Factorisation",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which identity represents the difference of squares?",
+                  "options": [
+                    "A) (a+b)^2",
+                    "B) a^2 - b^2 = (a-b)(a+b)",
+                    "C) (a-b)^2",
+                    "D) a^3 + b^3"
+                  ],
+                  "correct_answer": "B) a^2 - b^2 = (a-b)(a+b)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If a + b + c = 0, then a^3 + b^3 + c^3 equals:",
+                  "options": [
+                    "A) 0",
+                    "B) abc",
+                    "C) 3abc",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "C) 3abc",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Evaluate (103) * (97) using algebraic identity.",
+                  "marking_scheme_answer": "Difference of squares: (100+3)(100-3) = 100^2 - 3^2 = 10000 - 9 = 9991.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Factorise: 3x^2 + 19x + 6.",
+                  "marking_scheme_answer": "Middle term split: (3x + 1)(x + 6).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "If x + 1/x = 5, find x^2 + 1/x^2.",
+                  "marking_scheme_answer": "Square both sides: (x + 1/x)^2 = 5^2 => x^2 + 2 + 1/x^2 = 25 => x^2 + 1/x^2 = 23.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Factorise completely using Factor Theorem: x^3 - 18x^2 + 33x - 18.",
+                  "marking_scheme_answer": "Test x = 1: p(1) = 0 => (x - 1) is a factor. Polynomial division yields (x - 1)(x - 2)(x - 3) scaled appropriately.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A cubical room of edge 'a' is extended by 'b' meters in all 3 dimensions.\n(i) State formula for total expanded volume. (2 Marks)\n(ii) List the 4 distinct geometric shape volumes comprising (a+b)^3. (2 Marks)",
+                  "marking_scheme_answer": "(i) Volume = (a+b)^3 = a^3 + b^3 + 3a^2 b + 3ab^2.\n(ii) 1 cube of a^3, 1 cube of b^3, 3 prisms of a^2 b, 3 prisms of ab^2.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Algebraic Identities & Polynomial Factorisation",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which identity represents the difference of squares?",
+                  "options": [
+                    "A) (a+b)^2",
+                    "B) a^2 - b^2 = (a-b)(a+b)",
+                    "C) (a-b)^2",
+                    "D) a^3 + b^3"
+                  ],
+                  "correct_answer": "B) a^2 - b^2 = (a-b)(a+b)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If a + b + c = 0, then a^3 + b^3 + c^3 equals:",
+                  "options": [
+                    "A) 0",
+                    "B) abc",
+                    "C) 3abc",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "C) 3abc",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Evaluate (104) * (96) using algebraic identity.",
+                  "marking_scheme_answer": "Difference of squares: (100+4)(100-4) = 100^2 - 4^2 = 10000 - 16 = 9984.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Factorise: 4x^2 + 25x + 6.",
+                  "marking_scheme_answer": "Middle term split: (4x + 1)(x + 6).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "If x + 1/x = 6, find x^2 + 1/x^2.",
+                  "marking_scheme_answer": "Square both sides: (x + 1/x)^2 = 6^2 => x^2 + 2 + 1/x^2 = 36 => x^2 + 1/x^2 = 34.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Factorise completely using Factor Theorem: x^3 - 24x^2 + 44x - 24.",
+                  "marking_scheme_answer": "Test x = 1: p(1) = 0 => (x - 1) is a factor. Polynomial division yields (x - 1)(x - 2)(x - 3) scaled appropriately.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A cubical room of edge 'a' is extended by 'b' meters in all 3 dimensions.\n(i) State formula for total expanded volume. (2 Marks)\n(ii) List the 4 distinct geometric shape volumes comprising (a+b)^3. (2 Marks)",
+                  "marking_scheme_answer": "(i) Volume = (a+b)^3 = a^3 + b^3 + 3a^2 b + 3ab^2.\n(ii) 1 cube of a^3, 1 cube of b^3, 3 prisms of a^2 b, 3 prisms of ab^2.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Algebraic Identities & Polynomial Factorisation",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which identity represents the difference of squares?",
+                  "options": [
+                    "A) (a+b)^2",
+                    "B) a^2 - b^2 = (a-b)(a+b)",
+                    "C) (a-b)^2",
+                    "D) a^3 + b^3"
+                  ],
+                  "correct_answer": "B) a^2 - b^2 = (a-b)(a+b)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If a + b + c = 0, then a^3 + b^3 + c^3 equals:",
+                  "options": [
+                    "A) 0",
+                    "B) abc",
+                    "C) 3abc",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "C) 3abc",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Evaluate (105) * (95) using algebraic identity.",
+                  "marking_scheme_answer": "Difference of squares: (100+5)(100-5) = 100^2 - 5^2 = 10000 - 25 = 9975.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Factorise: 5x^2 + 31x + 6.",
+                  "marking_scheme_answer": "Middle term split: (5x + 1)(x + 6).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "If x + 1/x = 7, find x^2 + 1/x^2.",
+                  "marking_scheme_answer": "Square both sides: (x + 1/x)^2 = 7^2 => x^2 + 2 + 1/x^2 = 49 => x^2 + 1/x^2 = 47.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Factorise completely using Factor Theorem: x^3 - 30x^2 + 55x - 30.",
+                  "marking_scheme_answer": "Test x = 1: p(1) = 0 => (x - 1) is a factor. Polynomial division yields (x - 1)(x - 2)(x - 3) scaled appropriately.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A cubical room of edge 'a' is extended by 'b' meters in all 3 dimensions.\n(i) State formula for total expanded volume. (2 Marks)\n(ii) List the 4 distinct geometric shape volumes comprising (a+b)^3. (2 Marks)",
+                  "marking_scheme_answer": "(i) Volume = (a+b)^3 = a^3 + b^3 + 3a^2 b + 3ab^2.\n(ii) 1 cube of a^3, 1 cube of b^3, 3 prisms of a^2 b, 3 prisms of ab^2.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "I’m Up and Down, and Round and Round",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Circle Geometry, Chords & Cyclic Quadrilaterals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The angle subtended by a diameter in a semicircle is:",
+                  "options": [
+                    "A) 45 degrees",
+                    "B) 60 degrees",
+                    "C) 90 degrees",
+                    "D) 180 degrees"
+                  ],
+                  "correct_answer": "C) 90 degrees",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In a cyclic quadrilateral ABCD, angle A + angle C equals:",
+                  "options": [
+                    "A) 90 degrees",
+                    "B) 180 degrees",
+                    "C) 270 degrees",
+                    "D) 360 degrees"
+                  ],
+                  "correct_answer": "B) 180 degrees",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A chord of length 12 cm is drawn in a circle of radius 9 cm. Find its distance from centre.",
+                  "marking_scheme_answer": "Half chord = 6 cm. Distance d = sqrt((9)^2 - (6)^2).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Prove that perpendicular bisector of a chord passes through the centre of the circle.",
+                  "marking_scheme_answer": "Let OM be perpendicular to AB. Right triangles OMA and OMB are congruent by RHS (OA=OB=r, OM common, angle OMA=OMB=90°). Thus AM=MB.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "In a circle with centre O, central angle angle AOB = 110 degrees. Find inscribed angle angle ACB.",
+                  "marking_scheme_answer": "Inscribed angle ACB = 1/2 * central angle AOB = 1/2 * (110) = 55 degrees.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that the sum of opposite angles of a cyclic quadrilateral is 180 degrees.",
+                  "marking_scheme_answer": "1. Let ABCD be cyclic with centre O.\n2. Reflex angle AOC = 2 * angle ADC (Inscribed Angle Theorem).\n3. Acute angle AOC = 2 * angle ABC.\n4. Reflex AOC + Acute AOC = 360°.\n5. 2(angle ADC + angle ABC) = 360° => angle ADC + angle ABC = 180°.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Three camera sensors P, Q, R lie on a circular lens rim around focus O. Angle PQR = 48 degrees.\n(i) Find central angle POR. (2 Marks)\n(ii) Find angle OPR. (2 Marks)",
+                  "marking_scheme_answer": "(i) Central angle POR = 2 * angle PQR = 2 * 48 = 96 degrees.\n(ii) In isosceles triangle OPR (OP=OR=r): angle OPR = (180 - 96)/2 = 42 degrees.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Circle Geometry, Chords & Cyclic Quadrilaterals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The angle subtended by a diameter in a semicircle is:",
+                  "options": [
+                    "A) 45 degrees",
+                    "B) 60 degrees",
+                    "C) 90 degrees",
+                    "D) 180 degrees"
+                  ],
+                  "correct_answer": "C) 90 degrees",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In a cyclic quadrilateral ABCD, angle A + angle C equals:",
+                  "options": [
+                    "A) 90 degrees",
+                    "B) 180 degrees",
+                    "C) 270 degrees",
+                    "D) 360 degrees"
+                  ],
+                  "correct_answer": "B) 180 degrees",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A chord of length 14 cm is drawn in a circle of radius 10 cm. Find its distance from centre.",
+                  "marking_scheme_answer": "Half chord = 7 cm. Distance d = sqrt((10)^2 - (7)^2).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Prove that perpendicular bisector of a chord passes through the centre of the circle.",
+                  "marking_scheme_answer": "Let OM be perpendicular to AB. Right triangles OMA and OMB are congruent by RHS (OA=OB=r, OM common, angle OMA=OMB=90°). Thus AM=MB.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "In a circle with centre O, central angle angle AOB = 120 degrees. Find inscribed angle angle ACB.",
+                  "marking_scheme_answer": "Inscribed angle ACB = 1/2 * central angle AOB = 1/2 * (120) = 60 degrees.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that the sum of opposite angles of a cyclic quadrilateral is 180 degrees.",
+                  "marking_scheme_answer": "1. Let ABCD be cyclic with centre O.\n2. Reflex angle AOC = 2 * angle ADC (Inscribed Angle Theorem).\n3. Acute angle AOC = 2 * angle ABC.\n4. Reflex AOC + Acute AOC = 360°.\n5. 2(angle ADC + angle ABC) = 360° => angle ADC + angle ABC = 180°.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Three camera sensors P, Q, R lie on a circular lens rim around focus O. Angle PQR = 48 degrees.\n(i) Find central angle POR. (2 Marks)\n(ii) Find angle OPR. (2 Marks)",
+                  "marking_scheme_answer": "(i) Central angle POR = 2 * angle PQR = 2 * 48 = 96 degrees.\n(ii) In isosceles triangle OPR (OP=OR=r): angle OPR = (180 - 96)/2 = 42 degrees.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Circle Geometry, Chords & Cyclic Quadrilaterals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The angle subtended by a diameter in a semicircle is:",
+                  "options": [
+                    "A) 45 degrees",
+                    "B) 60 degrees",
+                    "C) 90 degrees",
+                    "D) 180 degrees"
+                  ],
+                  "correct_answer": "C) 90 degrees",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In a cyclic quadrilateral ABCD, angle A + angle C equals:",
+                  "options": [
+                    "A) 90 degrees",
+                    "B) 180 degrees",
+                    "C) 270 degrees",
+                    "D) 360 degrees"
+                  ],
+                  "correct_answer": "B) 180 degrees",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A chord of length 16 cm is drawn in a circle of radius 11 cm. Find its distance from centre.",
+                  "marking_scheme_answer": "Half chord = 8 cm. Distance d = sqrt((11)^2 - (8)^2).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Prove that perpendicular bisector of a chord passes through the centre of the circle.",
+                  "marking_scheme_answer": "Let OM be perpendicular to AB. Right triangles OMA and OMB are congruent by RHS (OA=OB=r, OM common, angle OMA=OMB=90°). Thus AM=MB.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "In a circle with centre O, central angle angle AOB = 130 degrees. Find inscribed angle angle ACB.",
+                  "marking_scheme_answer": "Inscribed angle ACB = 1/2 * central angle AOB = 1/2 * (130) = 65 degrees.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that the sum of opposite angles of a cyclic quadrilateral is 180 degrees.",
+                  "marking_scheme_answer": "1. Let ABCD be cyclic with centre O.\n2. Reflex angle AOC = 2 * angle ADC (Inscribed Angle Theorem).\n3. Acute angle AOC = 2 * angle ABC.\n4. Reflex AOC + Acute AOC = 360°.\n5. 2(angle ADC + angle ABC) = 360° => angle ADC + angle ABC = 180°.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Three camera sensors P, Q, R lie on a circular lens rim around focus O. Angle PQR = 48 degrees.\n(i) Find central angle POR. (2 Marks)\n(ii) Find angle OPR. (2 Marks)",
+                  "marking_scheme_answer": "(i) Central angle POR = 2 * angle PQR = 2 * 48 = 96 degrees.\n(ii) In isosceles triangle OPR (OP=OR=r): angle OPR = (180 - 96)/2 = 42 degrees.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Circle Geometry, Chords & Cyclic Quadrilaterals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The angle subtended by a diameter in a semicircle is:",
+                  "options": [
+                    "A) 45 degrees",
+                    "B) 60 degrees",
+                    "C) 90 degrees",
+                    "D) 180 degrees"
+                  ],
+                  "correct_answer": "C) 90 degrees",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In a cyclic quadrilateral ABCD, angle A + angle C equals:",
+                  "options": [
+                    "A) 90 degrees",
+                    "B) 180 degrees",
+                    "C) 270 degrees",
+                    "D) 360 degrees"
+                  ],
+                  "correct_answer": "B) 180 degrees",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A chord of length 18 cm is drawn in a circle of radius 12 cm. Find its distance from centre.",
+                  "marking_scheme_answer": "Half chord = 9 cm. Distance d = sqrt((12)^2 - (9)^2).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Prove that perpendicular bisector of a chord passes through the centre of the circle.",
+                  "marking_scheme_answer": "Let OM be perpendicular to AB. Right triangles OMA and OMB are congruent by RHS (OA=OB=r, OM common, angle OMA=OMB=90°). Thus AM=MB.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "In a circle with centre O, central angle angle AOB = 140 degrees. Find inscribed angle angle ACB.",
+                  "marking_scheme_answer": "Inscribed angle ACB = 1/2 * central angle AOB = 1/2 * (140) = 70 degrees.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that the sum of opposite angles of a cyclic quadrilateral is 180 degrees.",
+                  "marking_scheme_answer": "1. Let ABCD be cyclic with centre O.\n2. Reflex angle AOC = 2 * angle ADC (Inscribed Angle Theorem).\n3. Acute angle AOC = 2 * angle ABC.\n4. Reflex AOC + Acute AOC = 360°.\n5. 2(angle ADC + angle ABC) = 360° => angle ADC + angle ABC = 180°.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Three camera sensors P, Q, R lie on a circular lens rim around focus O. Angle PQR = 48 degrees.\n(i) Find central angle POR. (2 Marks)\n(ii) Find angle OPR. (2 Marks)",
+                  "marking_scheme_answer": "(i) Central angle POR = 2 * angle PQR = 2 * 48 = 96 degrees.\n(ii) In isosceles triangle OPR (OP=OR=r): angle OPR = (180 - 96)/2 = 42 degrees.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Circle Geometry, Chords & Cyclic Quadrilaterals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "The angle subtended by a diameter in a semicircle is:",
+                  "options": [
+                    "A) 45 degrees",
+                    "B) 60 degrees",
+                    "C) 90 degrees",
+                    "D) 180 degrees"
+                  ],
+                  "correct_answer": "C) 90 degrees",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In a cyclic quadrilateral ABCD, angle A + angle C equals:",
+                  "options": [
+                    "A) 90 degrees",
+                    "B) 180 degrees",
+                    "C) 270 degrees",
+                    "D) 360 degrees"
+                  ],
+                  "correct_answer": "B) 180 degrees",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A chord of length 20 cm is drawn in a circle of radius 13 cm. Find its distance from centre.",
+                  "marking_scheme_answer": "Half chord = 10 cm. Distance d = sqrt((13)^2 - (10)^2).",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Prove that perpendicular bisector of a chord passes through the centre of the circle.",
+                  "marking_scheme_answer": "Let OM be perpendicular to AB. Right triangles OMA and OMB are congruent by RHS (OA=OB=r, OM common, angle OMA=OMB=90°). Thus AM=MB.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "In a circle with centre O, central angle angle AOB = 150 degrees. Find inscribed angle angle ACB.",
+                  "marking_scheme_answer": "Inscribed angle ACB = 1/2 * central angle AOB = 1/2 * (150) = 75 degrees.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Prove that the sum of opposite angles of a cyclic quadrilateral is 180 degrees.",
+                  "marking_scheme_answer": "1. Let ABCD be cyclic with centre O.\n2. Reflex angle AOC = 2 * angle ADC (Inscribed Angle Theorem).\n3. Acute angle AOC = 2 * angle ABC.\n4. Reflex AOC + Acute AOC = 360°.\n5. 2(angle ADC + angle ABC) = 360° => angle ADC + angle ABC = 180°.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "Three camera sensors P, Q, R lie on a circular lens rim around focus O. Angle PQR = 48 degrees.\n(i) Find central angle POR. (2 Marks)\n(ii) Find angle OPR. (2 Marks)",
+                  "marking_scheme_answer": "(i) Central angle POR = 2 * angle PQR = 2 * 48 = 96 degrees.\n(ii) In isosceles triangle OPR (OP=OR=r): angle OPR = (180 - 96)/2 = 42 degrees.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Measuring Space: Perimeter and Area",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Mensuration: Area, Sectors & Track Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+                  "options": [
+                    "A) s(s-a)(s-b)(s-c)",
+                    "B) sqrt(s(s-a)(s-b)(s-c))",
+                    "C) 1/2 * a * b",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+                  "options": [
+                    "A) (theta/360)*2*pi*r",
+                    "B) (theta/360)*pi*r^2",
+                    "C) pi*r^2",
+                    "D) 2*pi*r"
+                  ],
+                  "correct_answer": "B) (theta/360)*pi*r^2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find area of equilateral triangle with side 4 cm.",
+                  "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (4)^2 = 4*sqrt(3) sq cm.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find area swept by a minute hand of length 7 cm in 5 minutes.",
+                  "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(7)^2 = (1/12)*(22/7)*(49*1) = 51.333333333333336 sq cm.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 1.",
+                  "marking_scheme_answer": "s = 21*1. Area = sqrt((21*1) * (8*1) * (7*1) * (6*1)) = 84*1 sq m.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+                  "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A running track has outer radius R = 21 m and inner radius r = 14 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+                  "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(441 - 196) = 770 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(21) = 132 m.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Mensuration: Area, Sectors & Track Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+                  "options": [
+                    "A) s(s-a)(s-b)(s-c)",
+                    "B) sqrt(s(s-a)(s-b)(s-c))",
+                    "C) 1/2 * a * b",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+                  "options": [
+                    "A) (theta/360)*2*pi*r",
+                    "B) (theta/360)*pi*r^2",
+                    "C) pi*r^2",
+                    "D) 2*pi*r"
+                  ],
+                  "correct_answer": "B) (theta/360)*pi*r^2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find area of equilateral triangle with side 8 cm.",
+                  "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (8)^2 = 16*sqrt(3) sq cm.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find area swept by a minute hand of length 14 cm in 5 minutes.",
+                  "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(14)^2 = (1/12)*(22/7)*(49*4) = 205.33333333333334 sq cm.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 2.",
+                  "marking_scheme_answer": "s = 21*2. Area = sqrt((21*2) * (8*2) * (7*2) * (6*2)) = 84*4 sq m.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+                  "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A running track has outer radius R = 42 m and inner radius r = 28 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+                  "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(1764 - 784) = 3080 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(42) = 264 m.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Mensuration: Area, Sectors & Track Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+                  "options": [
+                    "A) s(s-a)(s-b)(s-c)",
+                    "B) sqrt(s(s-a)(s-b)(s-c))",
+                    "C) 1/2 * a * b",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+                  "options": [
+                    "A) (theta/360)*2*pi*r",
+                    "B) (theta/360)*pi*r^2",
+                    "C) pi*r^2",
+                    "D) 2*pi*r"
+                  ],
+                  "correct_answer": "B) (theta/360)*pi*r^2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find area of equilateral triangle with side 12 cm.",
+                  "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (12)^2 = 36*sqrt(3) sq cm.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find area swept by a minute hand of length 21 cm in 5 minutes.",
+                  "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(21)^2 = (1/12)*(22/7)*(49*9) = 462.0 sq cm.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 3.",
+                  "marking_scheme_answer": "s = 21*3. Area = sqrt((21*3) * (8*3) * (7*3) * (6*3)) = 84*9 sq m.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+                  "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A running track has outer radius R = 63 m and inner radius r = 42 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+                  "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(3969 - 1764) = 6930 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(63) = 396 m.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Mensuration: Area, Sectors & Track Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+                  "options": [
+                    "A) s(s-a)(s-b)(s-c)",
+                    "B) sqrt(s(s-a)(s-b)(s-c))",
+                    "C) 1/2 * a * b",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+                  "options": [
+                    "A) (theta/360)*2*pi*r",
+                    "B) (theta/360)*pi*r^2",
+                    "C) pi*r^2",
+                    "D) 2*pi*r"
+                  ],
+                  "correct_answer": "B) (theta/360)*pi*r^2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find area of equilateral triangle with side 16 cm.",
+                  "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (16)^2 = 64*sqrt(3) sq cm.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find area swept by a minute hand of length 28 cm in 5 minutes.",
+                  "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(28)^2 = (1/12)*(22/7)*(49*16) = 821.3333333333334 sq cm.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 4.",
+                  "marking_scheme_answer": "s = 21*4. Area = sqrt((21*4) * (8*4) * (7*4) * (6*4)) = 84*16 sq m.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+                  "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A running track has outer radius R = 84 m and inner radius r = 56 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+                  "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(7056 - 3136) = 12320 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(84) = 528 m.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Mensuration: Area, Sectors & Track Applications",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+                  "options": [
+                    "A) s(s-a)(s-b)(s-c)",
+                    "B) sqrt(s(s-a)(s-b)(s-c))",
+                    "C) 1/2 * a * b",
+                    "D) a+b+c"
+                  ],
+                  "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+                  "options": [
+                    "A) (theta/360)*2*pi*r",
+                    "B) (theta/360)*pi*r^2",
+                    "C) pi*r^2",
+                    "D) 2*pi*r"
+                  ],
+                  "correct_answer": "B) (theta/360)*pi*r^2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find area of equilateral triangle with side 20 cm.",
+                  "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (20)^2 = 100*sqrt(3) sq cm.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find area swept by a minute hand of length 35 cm in 5 minutes.",
+                  "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(35)^2 = (1/12)*(22/7)*(49*25) = 1283.3333333333333 sq cm.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 5.",
+                  "marking_scheme_answer": "s = 21*5. Area = sqrt((21*5) * (8*5) * (7*5) * (6*5)) = 84*25 sq m.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+                  "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A running track has outer radius R = 105 m and inner radius r = 70 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+                  "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(11025 - 4900) = 19250 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(105) = 660 m.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Probability, Sample Spaces & Geometric Chance",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which value CANNOT represent the probability of an event?",
+                  "options": [
+                    "A) 0.0",
+                    "B) 2/3",
+                    "C) -1.5",
+                    "D) 15%"
+                  ],
+                  "correct_answer": "C) -1.5",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+                  "options": [
+                    "A) 0.35",
+                    "B) 0.65",
+                    "C) 1.35",
+                    "D) 0.0"
+                  ],
+                  "correct_answer": "B) 0.65",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+                  "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+                  "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+                  "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+                  "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A dartboard is a square of side 20 cm containing a target circle of radius 7 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+                  "marking_scheme_answer": "(i) Square Area = 400 sq cm. Circle Area = (22/7)*(7)^2 = 154 sq cm.\n(ii) P(Hit) = 154 / 400 = 154/400 = 77/200 = 0.385.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Probability, Sample Spaces & Geometric Chance",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which value CANNOT represent the probability of an event?",
+                  "options": [
+                    "A) 0.0",
+                    "B) 2/3",
+                    "C) -1.5",
+                    "D) 15%"
+                  ],
+                  "correct_answer": "C) -1.5",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+                  "options": [
+                    "A) 0.35",
+                    "B) 0.65",
+                    "C) 1.35",
+                    "D) 0.0"
+                  ],
+                  "correct_answer": "B) 0.65",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+                  "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+                  "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+                  "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+                  "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A dartboard is a square of side 40 cm containing a target circle of radius 14 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+                  "marking_scheme_answer": "(i) Square Area = 1600 sq cm. Circle Area = (22/7)*(14)^2 = 616 sq cm.\n(ii) P(Hit) = 616 / 1600 = 154/400 = 77/200 = 0.385.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Probability, Sample Spaces & Geometric Chance",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which value CANNOT represent the probability of an event?",
+                  "options": [
+                    "A) 0.0",
+                    "B) 2/3",
+                    "C) -1.5",
+                    "D) 15%"
+                  ],
+                  "correct_answer": "C) -1.5",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+                  "options": [
+                    "A) 0.35",
+                    "B) 0.65",
+                    "C) 1.35",
+                    "D) 0.0"
+                  ],
+                  "correct_answer": "B) 0.65",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+                  "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+                  "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+                  "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+                  "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A dartboard is a square of side 60 cm containing a target circle of radius 21 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+                  "marking_scheme_answer": "(i) Square Area = 3600 sq cm. Circle Area = (22/7)*(21)^2 = 1386 sq cm.\n(ii) P(Hit) = 1386 / 3600 = 154/400 = 77/200 = 0.385.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Probability, Sample Spaces & Geometric Chance",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which value CANNOT represent the probability of an event?",
+                  "options": [
+                    "A) 0.0",
+                    "B) 2/3",
+                    "C) -1.5",
+                    "D) 15%"
+                  ],
+                  "correct_answer": "C) -1.5",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+                  "options": [
+                    "A) 0.35",
+                    "B) 0.65",
+                    "C) 1.35",
+                    "D) 0.0"
+                  ],
+                  "correct_answer": "B) 0.65",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+                  "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+                  "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+                  "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+                  "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A dartboard is a square of side 80 cm containing a target circle of radius 28 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+                  "marking_scheme_answer": "(i) Square Area = 6400 sq cm. Circle Area = (22/7)*(28)^2 = 2464 sq cm.\n(ii) P(Hit) = 2464 / 6400 = 154/400 = 77/200 = 0.385.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Probability, Sample Spaces & Geometric Chance",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which value CANNOT represent the probability of an event?",
+                  "options": [
+                    "A) 0.0",
+                    "B) 2/3",
+                    "C) -1.5",
+                    "D) 15%"
+                  ],
+                  "correct_answer": "C) -1.5",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+                  "options": [
+                    "A) 0.35",
+                    "B) 0.65",
+                    "C) 1.35",
+                    "D) 0.0"
+                  ],
+                  "correct_answer": "B) 0.65",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+                  "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+                  "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+                  "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+                  "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A dartboard is a square of side 100 cm containing a target circle of radius 35 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+                  "marking_scheme_answer": "(i) Square Area = 10000 sq cm. Circle Area = (22/7)*(35)^2 = 3850 sq cm.\n(ii) P(Hit) = 3850 / 10000 = 154/400 = 77/200 = 0.385.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "chapter_title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Sequences, AP General Term, Sums & GP Fractals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is common difference 'd' of AP: -5, -1, 3, 7...?",
+                  "options": [
+                    "A) -4",
+                    "B) 4",
+                    "C) 3",
+                    "D) -5"
+                  ],
+                  "correct_answer": "B) 4",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The n-th triangular number formula T_n is:",
+                  "options": [
+                    "A) n^2",
+                    "B) n(n+1)/2",
+                    "C) 2n - 1",
+                    "D) n(n-1)"
+                  ],
+                  "correct_answer": "B) n(n+1)/2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Which term of the AP 3, 8, 13, 18... is 78?",
+                  "marking_scheme_answer": "a = 3, d = 5. t_n = a + (n-1)d => 78 = 3 + 5(n-1) => 75 = 5(n-1) => n-1 = 15 => n = 16th term.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find sum of first 10 natural numbers.",
+                  "marking_scheme_answer": "S_n = n(n+1)/2 => S_10 = (10 * 11) / 2 = 55.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "The 3rd term of an AP is 7 and 7th term is 19. Find first term 'a' and common difference 'd'.",
+                  "marking_scheme_answer": "1. a + 2d = 7\n2. a + 6d = 19\nSubtract: 4d = 12 => d = 3. Substitute: a + 6 = 7 => a = 1.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "For AP with a = 2 and d = 5: (i) Find 10th term t_10. (ii) Find sum of first 20 terms S_20.",
+                  "marking_scheme_answer": "(i) t_10 = 2 + 9(5) = 2 + 45 = 47.\n(ii) S_20 = (20/2) * [2(2) + 19(5)] = 10 * [4 + 95] = 10 * 99 = 990.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A savings scheme deposits Rs. 1000 in month 1 and increases by Rs. 200 each month.\n(i) Deposit in month 12. (2 Marks)\n(ii) Total accumulated savings after 12 months. (2 Marks)",
+                  "marking_scheme_answer": "(i) t_12 = 1000 + 11(200) = Rs. 3200.\n(ii) S_12 = (12/2) * [1000 + 3200] = 6 * 4200 = Rs. 25200.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Sequences, AP General Term, Sums & GP Fractals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is common difference 'd' of AP: -10, -2, 6, 14...?",
+                  "options": [
+                    "A) -8",
+                    "B) 8",
+                    "C) 6",
+                    "D) -10"
+                  ],
+                  "correct_answer": "B) 8",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The n-th triangular number formula T_n is:",
+                  "options": [
+                    "A) n^2",
+                    "B) n(n+1)/2",
+                    "C) 2n - 1",
+                    "D) n(n-1)"
+                  ],
+                  "correct_answer": "B) n(n+1)/2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Which term of the AP 3, 8, 13, 18... is 78?",
+                  "marking_scheme_answer": "a = 3, d = 5. t_n = a + (n-1)d => 78 = 3 + 5(n-1) => 75 = 5(n-1) => n-1 = 15 => n = 16th term.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find sum of first 20 natural numbers.",
+                  "marking_scheme_answer": "S_n = n(n+1)/2 => S_20 = (20 * 21) / 2 = 210.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "The 3rd term of an AP is 7 and 7th term is 19. Find first term 'a' and common difference 'd'.",
+                  "marking_scheme_answer": "1. a + 2d = 7\n2. a + 6d = 19\nSubtract: 4d = 12 => d = 3. Substitute: a + 6 = 7 => a = 1.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "For AP with a = 2 and d = 5: (i) Find 10th term t_10. (ii) Find sum of first 20 terms S_20.",
+                  "marking_scheme_answer": "(i) t_10 = 2 + 9(5) = 2 + 45 = 47.\n(ii) S_20 = (20/2) * [2(2) + 19(5)] = 10 * [4 + 95] = 10 * 99 = 990.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A savings scheme deposits Rs. 2000 in month 1 and increases by Rs. 400 each month.\n(i) Deposit in month 12. (2 Marks)\n(ii) Total accumulated savings after 12 months. (2 Marks)",
+                  "marking_scheme_answer": "(i) t_12 = 2000 + 11(400) = Rs. 6400.\n(ii) S_12 = (12/2) * [2000 + 6400] = 6 * 8400 = Rs. 50400.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Sequences, AP General Term, Sums & GP Fractals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is common difference 'd' of AP: -15, -3, 9, 21...?",
+                  "options": [
+                    "A) -12",
+                    "B) 12",
+                    "C) 9",
+                    "D) -15"
+                  ],
+                  "correct_answer": "B) 12",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The n-th triangular number formula T_n is:",
+                  "options": [
+                    "A) n^2",
+                    "B) n(n+1)/2",
+                    "C) 2n - 1",
+                    "D) n(n-1)"
+                  ],
+                  "correct_answer": "B) n(n+1)/2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Which term of the AP 3, 8, 13, 18... is 78?",
+                  "marking_scheme_answer": "a = 3, d = 5. t_n = a + (n-1)d => 78 = 3 + 5(n-1) => 75 = 5(n-1) => n-1 = 15 => n = 16th term.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find sum of first 30 natural numbers.",
+                  "marking_scheme_answer": "S_n = n(n+1)/2 => S_30 = (30 * 31) / 2 = 465.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "The 3rd term of an AP is 7 and 7th term is 19. Find first term 'a' and common difference 'd'.",
+                  "marking_scheme_answer": "1. a + 2d = 7\n2. a + 6d = 19\nSubtract: 4d = 12 => d = 3. Substitute: a + 6 = 7 => a = 1.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "For AP with a = 2 and d = 5: (i) Find 10th term t_10. (ii) Find sum of first 20 terms S_20.",
+                  "marking_scheme_answer": "(i) t_10 = 2 + 9(5) = 2 + 45 = 47.\n(ii) S_20 = (20/2) * [2(2) + 19(5)] = 10 * [4 + 95] = 10 * 99 = 990.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A savings scheme deposits Rs. 3000 in month 1 and increases by Rs. 600 each month.\n(i) Deposit in month 12. (2 Marks)\n(ii) Total accumulated savings after 12 months. (2 Marks)",
+                  "marking_scheme_answer": "(i) t_12 = 3000 + 11(600) = Rs. 9600.\n(ii) S_12 = (12/2) * [3000 + 9600] = 6 * 12600 = Rs. 75600.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Sequences, AP General Term, Sums & GP Fractals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is common difference 'd' of AP: -20, -4, 12, 28...?",
+                  "options": [
+                    "A) -16",
+                    "B) 16",
+                    "C) 12",
+                    "D) -20"
+                  ],
+                  "correct_answer": "B) 16",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The n-th triangular number formula T_n is:",
+                  "options": [
+                    "A) n^2",
+                    "B) n(n+1)/2",
+                    "C) 2n - 1",
+                    "D) n(n-1)"
+                  ],
+                  "correct_answer": "B) n(n+1)/2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Which term of the AP 3, 8, 13, 18... is 78?",
+                  "marking_scheme_answer": "a = 3, d = 5. t_n = a + (n-1)d => 78 = 3 + 5(n-1) => 75 = 5(n-1) => n-1 = 15 => n = 16th term.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find sum of first 40 natural numbers.",
+                  "marking_scheme_answer": "S_n = n(n+1)/2 => S_40 = (40 * 41) / 2 = 820.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "The 3rd term of an AP is 7 and 7th term is 19. Find first term 'a' and common difference 'd'.",
+                  "marking_scheme_answer": "1. a + 2d = 7\n2. a + 6d = 19\nSubtract: 4d = 12 => d = 3. Substitute: a + 6 = 7 => a = 1.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "For AP with a = 2 and d = 5: (i) Find 10th term t_10. (ii) Find sum of first 20 terms S_20.",
+                  "marking_scheme_answer": "(i) t_10 = 2 + 9(5) = 2 + 45 = 47.\n(ii) S_20 = (20/2) * [2(2) + 19(5)] = 10 * [4 + 95] = 10 * 99 = 990.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A savings scheme deposits Rs. 4000 in month 1 and increases by Rs. 800 each month.\n(i) Deposit in month 12. (2 Marks)\n(ii) Total accumulated savings after 12 months. (2 Marks)",
+                  "marking_scheme_answer": "(i) t_12 = 4000 + 11(800) = Rs. 12800.\n(ii) S_12 = (12/2) * [4000 + 12800] = 6 * 16800 = Rs. 100800.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Sequences, AP General Term, Sums & GP Fractals",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs - 1 Mark Each)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is common difference 'd' of AP: -25, -5, 15, 35...?",
+                  "options": [
+                    "A) -20",
+                    "B) 20",
+                    "C) 15",
+                    "D) -25"
+                  ],
+                  "correct_answer": "B) 20",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The n-th triangular number formula T_n is:",
+                  "options": [
+                    "A) n^2",
+                    "B) n(n+1)/2",
+                    "C) 2n - 1",
+                    "D) n(n-1)"
+                  ],
+                  "correct_answer": "B) n(n+1)/2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer - 2 Marks Each)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Which term of the AP 3, 8, 13, 18... is 78?",
+                  "marking_scheme_answer": "a = 3, d = 5. t_n = a + (n-1)d => 78 = 3 + 5(n-1) => 75 = 5(n-1) => n-1 = 15 => n = 16th term.",
+                  "marks": 2
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Find sum of first 50 natural numbers.",
+                  "marking_scheme_answer": "S_n = n(n+1)/2 => S_50 = (50 * 51) / 2 = 1275.",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer - 3 Marks)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "The 3rd term of an AP is 7 and 7th term is 19. Find first term 'a' and common difference 'd'.",
+                  "marking_scheme_answer": "1. a + 2d = 7\n2. a + 6d = 19\nSubtract: 4d = 12 => d = 3. Substitute: a + 6 = 7 => a = 1.",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer - 5 Marks)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "For AP with a = 2 and d = 5: (i) Find 10th term t_10. (ii) Find sum of first 20 terms S_20.",
+                  "marking_scheme_answer": "(i) t_10 = 2 + 9(5) = 2 + 45 = 47.\n(ii) S_20 = (20/2) * [2(2) + 19(5)] = 10 * [4 + 95] = 10 * 99 = 990.",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study - 4 Marks)",
+              "questions": [
+                {
+                  "question_number": 7,
+                  "question_text": "A savings scheme deposits Rs. 5000 in month 1 and increases by Rs. 1000 each month.\n(i) Deposit in month 12. (2 Marks)\n(ii) Total accumulated savings after 12 months. (2 Marks)",
+                  "marking_scheme_answer": "(i) t_12 = 5000 + 11(1000) = Rs. 16000.\n(ii) S_12 = (12/2) * [5000 + 16000] = 6 * 21000 = Rs. 126000.",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

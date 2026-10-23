@@ -1,0 +1,264 @@
+{
+  "subject": "Ganita Manjari - Class 9 Mathematics (Part II)",
+  "resource_type": "Flashcards",
+  "chapters": [
+    {
+      "chapter_number": 9,
+      "chapter_title": "Propositions and their Converses",
+      "flashcards": [
+        {
+          "card_id": 1,
+          "level": "Basic Recall",
+          "front_question": "What is the formal mathematical definition of a proposition?",
+          "back_answer": "A proposition is a declarative statement that is unambiguously either true or false, but cannot be both or ambiguous."
+        },
+        {
+          "card_id": 2,
+          "level": "Basic Recall",
+          "front_question": "How is the converse of a conditional proposition 'If P, then Q' constructed?",
+          "back_answer": "The converse is formed by interchanging the hypothesis (premise P) and conclusion (consequence Q) to obtain 'If Q, then P'."
+        },
+        {
+          "card_id": 3,
+          "level": "Conceptual Understanding",
+          "front_question": "Does the logical validity of a proposition 'If P, then Q' guarantee the truth of its converse 'If Q, then P'?",
+          "back_answer": "No. A proposition and its converse are logically distinct statements. A true proposition can have a false converse (e.g., 'If a number is a multiple of 6, it is a multiple of 3' is true, but its converse is false)."
+        },
+        {
+          "card_id": 4,
+          "level": "Conceptual Understanding",
+          "front_question": "What is a counterexample, and what role does it play in mathematical proofs?",
+          "back_answer": "A counterexample is a specific instance that contradicts a universal statement or proposition. Discovering a single valid counterexample is sufficient to conclusively disprove a proposition."
+        },
+        {
+          "card_id": 5,
+          "level": "Experimental/Observational Insights",
+          "front_question": "In a geometry activity using two equal-length pinned sticks as diagonals, what minimal condition guarantees the resulting quadrilateral is a rectangle?",
+          "back_answer": "The equal-length sticks must bisect each other at their intersection point. Equal diagonals alone are necessary for a rectangle, but bisection is required for sufficiency."
+        },
+        {
+          "card_id": 6,
+          "level": "Scientific Reasoning & Application",
+          "front_question": "How did Leonhard Euler disprove Pierre de Fermat's conjecture that all numbers of the form F_n = 2^(2^n) + 1 are prime?",
+          "back_answer": "Euler disproved the conjecture by presenting the counterexample n = 5: F_5 = 2^(2^5) + 1 = 4,294,967,297 = 641 x 6,700,417, demonstrating that F_5 is a composite number."
+        },
+        {
+          "card_id": 7,
+          "level": "Scientific Reasoning & Application",
+          "front_question": "State the Baudhāyana-Pythagoras theorem and its converse, and explain how the converse is applied in practical construction.",
+          "back_answer": "Theorem: In a right-angled triangle with hypotenuse c and legs a, b: a^2 + b^2 = c^2. Converse: If a triangle's sides satisfy a^2 + b^2 = c^2, then the angle opposite side c is 90°. Builders use 3-4-5 rope loops (converse) to construct exact perpendicular corners."
+        }
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "How Quantities Combine: Understanding Data",
+      "flashcards": [
+        {
+          "card_id": 1,
+          "level": "Basic Recall",
+          "front_question": "What is the formula for calculating the weighted mean x_bar of n groups with values x_i and corresponding weights w_i?",
+          "back_answer": "x_bar = (w1*x1 + w2*x2 + ... + wn*xn) / (w1 + w2 + ... + wn) = sum(w_i * x_i) / sum(w_i)."
+        },
+        {
+          "card_id": 2,
+          "level": "Basic Recall",
+          "front_question": "What is the key visual feature of a 100% stacked bar chart?",
+          "back_answer": "All stacked bars are scaled to an identical overall height representing 100%, with internal segments showing relative percentage proportions rather than absolute values."
+        },
+        {
+          "card_id": 3,
+          "level": "Conceptual Understanding",
+          "front_question": "Why does taking a simple unweighted average of group percentages yield mathematically incorrect results when combining groups of unequal sizes?",
+          "back_answer": "A simple average treats all groups as having equal weight regardless of size. Larger groups contribute more total individual items, so their values must be weighted proportionally to accurately reflect the overall population mean."
+        },
+        {
+          "card_id": 4,
+          "level": "Conceptual Understanding",
+          "front_question": "When should an analyst choose a standard stacked bar chart over a 100% stacked bar chart?",
+          "back_answer": "A standard stacked bar chart should be used when comparing absolute total magnitudes alongside component sub-totals. A 100% stacked bar chart is preferred when comparing relative percentage allocations independent of group size."
+        },
+        {
+          "card_id": 5,
+          "level": "Experimental/Observational Insights",
+          "front_question": "When mixing 200 kg of 70% brass alloy (Batch A) with 120 kg of 50% brass alloy (Batch B) and y kg of 45% brass alloy (Batch C) to achieve a 55% final mixture, what equation determines y?",
+          "back_answer": "The concentration weighted equation: 0.70(200) + 0.50(120) + 0.45(y) = 0.55(200 + 120 + y), which solves to 140 + 60 + 0.45y = 176 + 0.55y => 0.10y = 24 => y = 240 kg."
+        },
+        {
+          "card_id": 6,
+          "level": "Scientific Reasoning & Application",
+          "front_question": "A student scores 85% on internals (weight 30%), 75% on midterm (weight 20%), and 90% on final exam (weight 50%). Calculate their overall weighted score.",
+          "back_answer": "Weighted Score = (0.30 * 85) + (0.20 * 75) + (0.50 * 90) = 25.5 + 15.0 + 45.0 = 85.5%."
+        }
+      ]
+    },
+    {
+      "chapter_number": 11,
+      "chapter_title": "The World of Algorithms",
+      "flashcards": [
+        {
+          "card_id": 1,
+          "level": "Basic Recall",
+          "front_question": "Define an algorithm in computer science and mathematics.",
+          "back_answer": "An algorithm is a finite, ordered, and unambiguous step-by-step procedure or set of rules designed to solve a specific problem or perform a computation."
+        },
+        {
+          "card_id": 2,
+          "level": "Basic Recall",
+          "front_question": "What does the modulo operator (m mod n) compute?",
+          "back_answer": "The modulo operator computes the integer remainder left over when m is divided by n (e.g., 33 mod 7 = 5 because 33 = 4 * 7 + 5)."
+        },
+        {
+          "card_id": 3,
+          "level": "Conceptual Understanding",
+          "front_question": "What algebraic property guarantees that gcd(m, n) = gcd(n, m - n) for positive integers m >= n?",
+          "back_answer": "If d divides m and n (m = k1*d, n = k2*d), then m - n = (k1 - k2)*d. Thus any common divisor of m and n also divides their difference m - n."
+        },
+        {
+          "card_id": 4,
+          "level": "Conceptual Understanding",
+          "front_question": "Why is Āryabhaṭa's division-by-remainder GCD algorithm significantly faster than Euclid's subtraction GCD algorithm?",
+          "back_answer": "Euclid's subtraction performs repetitive step-by-step subtractions (linear step count O(N)), whereas Āryabhaṭa's remainder division skips multiple subtraction loops in a single step (logarithmic step count O(log N))."
+        },
+        {
+          "card_id": 5,
+          "level": "Experimental/Observational Insights",
+          "front_question": "How many steps does Euclidean subtraction require to find gcd(99, 2) compared to Āryabhaṭa's remainder method?",
+          "back_answer": "Euclidean subtraction requires 49 subtraction steps (99-2, 97-2, ..., 3-2). Āryabhaṭa's remainder method requires only 2 steps (99 mod 2 = 1, 2 mod 1 = 0)."
+        },
+        {
+          "card_id": 6,
+          "level": "Scientific Reasoning & Application",
+          "front_question": "How can the Greatest Common Divisor (GCD) algorithm be used to efficiently compute the Least Common Multiple (LCM) of two large numbers m and n?",
+          "back_answer": "Using the product identity m * n = gcd(m, n) * lcm(m, n), compute g = gcd(m, n) via remainder division, then calculate lcm(m, n) = (m / g) * n to avoid intermediate integer overflow."
+        }
+      ]
+    },
+    {
+      "chapter_number": 12,
+      "chapter_title": "Quadrilaterals",
+      "flashcards": [
+        {
+          "card_id": 1,
+          "level": "Basic Recall",
+          "front_question": "State the Midpoint Theorem for triangles.",
+          "back_answer": "The line segment joining the midpoints of any two sides of a triangle is parallel to the third side and equal to half its length (DE || BC and DE = 1/2 BC)."
+        },
+        {
+          "card_id": 2,
+          "level": "Basic Recall",
+          "front_question": "What is the Centroid of a triangle and in what ratio does it divide each median?",
+          "back_answer": "The centroid (G) is the point of intersection of the three medians of a triangle. It divides each median in a 2:1 ratio measured from the vertex to the opposite side midpoint."
+        },
+        {
+          "card_id": 3,
+          "level": "Conceptual Understanding",
+          "front_question": "State Varignon's Theorem regarding arbitrary quadrilaterals.",
+          "back_answer": "The figure formed by joining the midpoints of the adjacent sides of ANY quadrilateral (convex, non-convex, or self-intersecting) is always a parallelogram."
+        },
+        {
+          "card_id": 4,
+          "level": "Conceptual Understanding",
+          "front_question": "What special quadrilateral is formed by joining the midpoints of (a) a rectangle, and (b) a rhombus?",
+          "back_answer": "(a) Joining midpoints of a rectangle forms a RHOMBUS (because diagonals of a rectangle are equal). (b) Joining midpoints of a rhombus forms a RECTANGLE (because diagonals of a rhombus are perpendicular)."
+        },
+        {
+          "card_id": 5,
+          "level": "Experimental/Observational Insights",
+          "front_question": "In triangle ABC, D and E are midpoints of AB and AC. If DE = (x + 3) cm and BC = (3x - 2) cm, find x and BC.",
+          "back_answer": "By Midpoint Theorem, 2*DE = BC => 2(x + 3) = 3x - 2 => 2x + 6 = 3x - 2 => x = 8. Length of BC = 3(8) - 2 = 22 cm."
+        },
+        {
+          "card_id": 6,
+          "level": "Scientific Reasoning & Application",
+          "front_question": "Why can ANY arbitrary, non-symmetric quadrilateral tile (tessellate) a 2D plane without gaps or overlaps?",
+          "back_answer": "Because the sum of the 4 interior angles of any quadrilateral is always 360°. Placing four identical quadrilateral tiles with their distinct corners meeting at a central grid vertex fills the full 360° angle completely."
+        }
+      ]
+    },
+    {
+      "chapter_number": 13,
+      "chapter_title": "Two Variables, One Line",
+      "flashcards": [
+        {
+          "card_id": 1,
+          "level": "Basic Recall",
+          "front_question": "What is the standard general form and the slope-intercept form of a linear equation in two variables?",
+          "back_answer": "General form: ax + by + c = 0 (where a, b are not both zero). Slope-intercept form: y = mx + d (where m is slope and d is y-intercept)."
+        },
+        {
+          "card_id": 2,
+          "level": "Basic Recall",
+          "front_question": "How do you find the x-intercept and y-intercept of a line given by ax + by = c?",
+          "back_answer": "Set y = 0 to find x-intercept: (c/a, 0). Set x = 0 to find y-intercept: (0, c/b)."
+        },
+        {
+          "card_id": 3,
+          "level": "Conceptual Understanding",
+          "front_question": "State the coefficient ratio conditions for a system of two linear equations (a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0) to have: (1) Unique solution, (2) No solution, (3) Infinitely many solutions.",
+          "back_answer": "1. Unique solution (intersecting): a1/a2 != b1/b2.\n2. No solution (parallel): a1/a2 = b1/b2 != c1/c2.\n3. Infinitely many solutions (coincident): a1/a2 = b1/b2 = c1/c2."
+        },
+        {
+          "card_id": 4,
+          "level": "Conceptual Understanding",
+          "front_question": "What does a negative slope m indicate about the graphical behavior of a line on the Cartesian coordinate plane?",
+          "back_answer": "A negative slope indicates that the line slants downwards from left to right (as x increases, y decreases)."
+        },
+        {
+          "card_id": 5,
+          "level": "Experimental/Observational Insights",
+          "front_question": "For what value of k does the system kx + 2y = 5 and 3x + y = 1 have a unique solution?",
+          "back_answer": "For a unique solution, a1/a2 != b1/b2 => k/3 != 2/1 => k != 6. The system has a unique solution for all real numbers except k = 6."
+        },
+        {
+          "card_id": 6,
+          "level": "Scientific Reasoning & Application",
+          "front_question": "A taxi service charges a fixed fare x plus rate y per km. A 10 km trip costs Rs 105, and a 15 km trip costs Rs 155. Find fixed charge x, rate y, and cost for 25 km.",
+          "back_answer": "System: x + 10y = 105 and x + 15y = 155. Subtracting gives 5y = 50 => y = Rs 10/km. x + 100 = 105 => x = Rs 5 fixed charge. Cost for 25 km = 5 + 25(10) = Rs 255."
+        }
+      ]
+    },
+    {
+      "chapter_number": 14,
+      "chapter_title": "Math of Space: Surface Area and Volume",
+      "flashcards": [
+        {
+          "card_id": 1,
+          "level": "Basic Recall",
+          "front_question": "State the formulas for the Curved Surface Area (CSA), Total Surface Area (TSA), and Volume of a right circular cone.",
+          "back_answer": "CSA = pi * r * l (where slant height l = sqrt(r^2 + h^2)); TSA = pi * r * (r + l); Volume = (1/3) * pi * r^2 * h."
+        },
+        {
+          "card_id": 2,
+          "level": "Basic Recall",
+          "front_question": "State the formulas for the Surface Area and Volume of a solid sphere and a solid hemisphere.",
+          "back_answer": "Sphere: Surface Area = 4*pi*r^2, Volume = (4/3)*pi*r^3.\nHemisphere: CSA = 2*pi*r^2, TSA = 3*pi*r^2, Volume = (2/3)*pi*r^3."
+        },
+        {
+          "card_id": 3,
+          "level": "Conceptual Understanding",
+          "front_question": "What is Archimedes' classical theorem regarding the volume ratio of a cone, sphere, and cylinder sharing the same radius r and height h = 2r?",
+          "back_answer": "The volumes of a cone, sphere, and cylinder with base radius r and height h = 2r are in the exact integer ratio V_cone : V_sphere : V_cylinder = 1 : 2 : 3."
+        },
+        {
+          "card_id": 4,
+          "level": "Conceptual Understanding",
+          "front_question": "If the radius of a sphere is increased by 10%, by what percentage does its volume increase?",
+          "back_answer": "New volume V' = (1.10)^3 * V = 1.331 * V. The volume increases by 33.1%."
+        },
+        {
+          "card_id": 5,
+          "level": "Experimental/Observational Insights",
+          "front_question": "A solid metallic sphere of radius 10.5 cm is melted and recast into smaller cones of radius 3.5 cm and height 3 cm. How many cones are formed?",
+          "back_answer": "Volume of sphere = (4/3)*pi*(10.5)^3 = 4851 cm^3. Volume of 1 cone = (1/3)*pi*(3.5)^2 * 3 = 38.5 cm^3. Number of cones = 4851 / 38.5 = 126."
+        },
+        {
+          "card_id": 6,
+          "level": "Scientific Reasoning & Application",
+          "front_question": "If all 1.38 billion km^3 of Earth's water were spread uniformly over Earth's surface (radius R = 6,371 km), estimate the depth of the water layer.",
+          "back_answer": "Surface area A = 4 * pi * (6371)^2 ~ 5.10 * 10^8 km^2. Thickness t = Volume / Surface Area = (1.38 * 10^9 km^3) / (5.10 * 10^8 km^2) ~ 2.71 km (2,710 meters)."
+        }
+      ]
+    }
+  ]
+}

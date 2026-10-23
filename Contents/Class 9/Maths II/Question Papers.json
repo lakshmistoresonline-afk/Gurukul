@@ -1,0 +1,2501 @@
+{
+  "subject_title": "Ganita Manjari - Class 9 Mathematics (Part II)",
+  "total_chapters": 6,
+  "ncert_paper_structure": {
+    "sections": [
+      {
+        "section_name": "Section A",
+        "question_type": "Multiple Choice Questions (1 Mark)",
+        "marks_per_question": 1
+      },
+      {
+        "section_name": "Section B",
+        "question_type": "Short Answer Questions (2 Marks)",
+        "marks_per_question": 2
+      },
+      {
+        "section_name": "Section C",
+        "question_type": "Short Answer Questions (3 Marks)",
+        "marks_per_question": 3
+      },
+      {
+        "section_name": "Section D",
+        "question_type": "Long Answer Questions (5 Marks)",
+        "marks_per_question": 5
+      },
+      {
+        "section_name": "Section E",
+        "question_type": "Case-Study / Competency-Based Questions (4 Marks)",
+        "marks_per_question": 4
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "chapter_number": 9,
+      "chapter_title": "Propositions and their Converses",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Chapter 9 Practice Paper (Fundamentals of Logic)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which of the following is the converse of 'If a number is divisible by 6, then it is divisible by 3'?",
+                  "options": [
+                    "Option A: If a number is divisible by 3, then it is divisible by 6.",
+                    "Option B: If a number is not divisible by 6, then it is not divisible by 3.",
+                    "Option C: If a number is divisible by 6, then it is divisible by 2.",
+                    "Option D: If a number is not divisible by 3, then it is not divisible by 6."
+                  ],
+                  "correct_answer": "Option A: If a number is divisible by 3, then it is divisible by 6.",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "What is the truth value of the converse statement 'If a number is divisible by 3, then it is divisible by 6'?",
+                  "options": [
+                    "Option A: True",
+                    "Option B: False, because 9 is divisible by 3 but not by 6",
+                    "Option C: False, because all odd numbers are prime",
+                    "Option D: True for all even numbers"
+                  ],
+                  "correct_answer": "Option B: False, because 9 is divisible by 3 but not by 6",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Define a mathematical proposition and give one example of a true proposition and one example of a false proposition.",
+                  "marking_scheme_answer": "Definition: A proposition is a declarative statement that is unambiguously either true or false (1 mark). Examples: True - 'If a triangle is equilateral, then it is isosceles.' False - 'If two triangles have equal perimeters, then they are congruent.' (1 mark)",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "State the Baudhāyana-Pythagoras theorem and its converse. Explain why both are true.",
+                  "marking_scheme_answer": "Theorem: In a right triangle, a^2 + b^2 = c^2 (1 mark). Converse: If a^2 + b^2 = c^2 in a triangle, the angle opposite c is a right angle (1 mark). Explanation: The side-angle relationship is an exact equivalence (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "State the proposition regarding perfect squares and their factor counts. Prove both the proposition and its converse.",
+                  "marking_scheme_answer": "Proposition: If n is a perfect square, it has an odd number of factors (1 mark). Proof: Factors pair up (d, n/d), except d=sqrt(n) pairs with itself, yielding an odd count (1.5 marks). Converse: If n has an odd factor count, it is a square (1 mark). Proof: Odd count requires d*d=n, so n is a square (1.5 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Fermat conjectured 2^(2^n) + 1 is prime for all n. Euler disproved this for n = 5. Explain what a counterexample is and show why Euler's calculation disproves Fermat's claim.",
+                  "marking_scheme_answer": "A counterexample is a specific case contradicting a claim (1.5 marks). For n = 5, 2^(2^5)+1 = 4,294,967,297 = 641 x 6,700,417 (composite), refuting the universal claim (2.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Chapter 9 Practice Paper (Counterexamples & Geometry)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which single instance disproves a universal mathematical claim?",
+                  "options": [
+                    "Option A: Proof by induction",
+                    "Option B: Counterexample",
+                    "Option C: Corollary",
+                    "Option D: Axiom"
+                  ],
+                  "correct_answer": "Option B: Counterexample",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "What is the converse of 'If a quadrilateral is a rhombus, then its diagonals are perpendicular'?",
+                  "options": [
+                    "Option A: If diagonals of a quadrilateral are perpendicular, then it is a rhombus.",
+                    "Option B: If diagonals of a quadrilateral are equal, then it is a rhombus.",
+                    "Option C: If a quadrilateral is a square, its diagonals are perpendicular.",
+                    "Option D: If a quadrilateral is not a rhombus, its diagonals are not perpendicular."
+                  ],
+                  "correct_answer": "Option A: If diagonals of a quadrilateral are perpendicular, then it is a rhombus.",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Provide a counterexample to refute: 'If two triangles have equal area, then they are congruent.'",
+                  "marking_scheme_answer": "Triangle A with base 6, height 4 (Area=12). Triangle B with base 12, height 2 (Area=12). Areas are equal, but shapes/sides differ, so not congruent (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "For the statement 'If a quadrilateral is a rectangle, then its diagonals are equal': (a) Write the converse. (b) Is it true? Explain.",
+                  "marking_scheme_answer": "(a) Converse: If diagonals of a quadrilateral are equal, then it is a rectangle (1 mark). (b) False in general; equal diagonals form a rectangle only if they also bisect each other (e.g. isosceles trapezium has equal diagonals) (2 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Examine parallel lines and alternate interior angles: (a) Main proposition. (b) Converse. (c) Validity and geometric role.",
+                  "marking_scheme_answer": "(a) Proposition: Parallel lines ==> equal alternate interior angles (1.5 marks). (b) Converse: Equal alternate interior angles ==> parallel lines (1.5 marks). (c) Both are true and fundamental for polygon proofs (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Two equal sticks pinned at midpoints form quadrilateral diagonals. (a) Shape if perpendicular and bisected? (b) Shape if bisected but not perpendicular? (c) Necessary vs sufficient conditions.",
+                  "marking_scheme_answer": "(a) Square (1 mark). (b) Rectangle (1 mark). (c) Equal diagonals are necessary for a rectangle, but sufficient only when bisected (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Chapter 9 Practice Paper (Number Theory & Implication)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which phrasings are logically equivalent to 'If P, then Q'?",
+                  "options": [
+                    "Option A: P implies Q",
+                    "Option B: Q when P",
+                    "Option C: Both Option A and Option B",
+                    "Option D: P when Q"
+                  ],
+                  "correct_answer": "Option C: Both Option A and Option B",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "What is the converse of 'If a prime number is greater than 2, then it is odd'?",
+                  "options": [
+                    "Option A: If an odd number is greater than 2, then it is prime.",
+                    "Option B: If a prime number is odd, it is greater than 2.",
+                    "Option C: If a number is not prime, it is not odd.",
+                    "Option D: If an odd number is prime, it is 2."
+                  ],
+                  "correct_answer": "Option A: If an odd number is greater than 2, then it is prime.",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Refute 'If an odd number is greater than 2, then it is prime' using two distinct counterexamples.",
+                  "marking_scheme_answer": "Counterexample 1: 9 is odd (>2) but composite (3x3) (1 mark). Counterexample 2: 15 is odd (>2) but composite (3x5) (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "In triangle ABC, angle bisectors BE and CF meet at I. (a) State proposition for AB=AC and bisector segments IE, IF. (b) State converse and its truth value.",
+                  "marking_scheme_answer": "(a) Proposition: If AB=AC, then IE=IF (1.5 marks). (b) Converse: If IE=IF, then AB=AC. True (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Analyze: Prop: If x is a multiple of 4, then x is even. Conv: If x is even, x is a multiple of 4. Evaluate truth values and explain implication vs equivalence.",
+                  "marking_scheme_answer": "Prop is True (4k=2(2k)) (1.5 marks). Conv is False (x=6 is even but not multiple of 4) (1.5 marks). Implication is one-way (P->Q), equivalence is two-way (P<->Q) (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Student claims: 'If two triangles have equal angles, they are congruent.' (a) Write converse. (b) Evaluate original claim with counterexample. (c) Evaluate converse.",
+                  "marking_scheme_answer": "(a) Converse: If two triangles are congruent, they have equal angles (1 mark). (b) Original claim False: Equilateral triangles of sides 2cm and 5cm have equal angles (60°) but are not congruent (2 marks). (c) Converse is True (1 mark).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Chapter 9 Practice Paper (Advanced Equivalence & Theorems)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "When both P -> Q and Q -> P are true, we say P and Q are:",
+                  "options": [
+                    "Option A: Contradictory",
+                    "Option B: Logically Equivalent",
+                    "Option C: Mutually Exclusive",
+                    "Option D: Inverse"
+                  ],
+                  "correct_answer": "Option B: Logically Equivalent",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Which forms an equivalence pair with its converse?",
+                  "options": [
+                    "Option A: Triangle is isosceles <==> two angles equal",
+                    "Option B: Divisible by 10 ==> ends in 0",
+                    "Option C: Both Option A and Option B",
+                    "Option D: Neither Option A nor Option B"
+                  ],
+                  "correct_answer": "Option C: Both Option A and Option B",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Express 'Quadrilateral is a parallelogram iff opposite sides are equal' as two separate conditional statements.",
+                  "marking_scheme_answer": "1. If a quadrilateral is a parallelogram, then opposite sides are equal (1 mark). 2. If opposite sides of a quadrilateral are equal, then it is a parallelogram (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "For 'If x^2 = 25, then x = 5': (a) Truth value of proposition? (b) Write converse and state its truth value.",
+                  "marking_scheme_answer": "(a) False, x could be -5 (1.5 marks). (b) Converse: If x = 5, then x^2 = 25. True (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Analyze Steiner-Lehmus Theorem context: (a) Proposition. (b) Converse. (c) Why proving the converse is challenging.",
+                  "marking_scheme_answer": "(a) Direct: Isosceles triangle ==> equal angle bisector lengths (1 mark). (b) Converse: Equal angle bisector lengths ==> isosceles triangle (1.5 marks). (c) Proof difficulty: Direct proof uses SAS congruence; converse requires indirect proof because bisector length formula is non-linear (2.5 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A mason uses a 3-4-5 rope loop to check if two walls meet at 90°. (a) Is this direct or converse theorem? (b) Mathematical formulation. (c) Why converse is needed.",
+                  "marking_scheme_answer": "(a) Converse of Baudhāyana-Pythagoras theorem (1 mark). (b) If a^2 + b^2 = c^2, then angle opposite c is 90° (1.5 marks). (c) The mason measures side lengths to establish an unknown 90° angle, which requires the converse (1.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Chapter 9 Practice Paper (Comprehensive Logic Mastery)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which statement is false?",
+                  "options": [
+                    "Option A: A single counterexample disproves a universal claim.",
+                    "Option B: The converse of a true proposition is always true.",
+                    "Option C: If P implies Q and Q implies P, P and Q are equivalent.",
+                    "Option D: A proposition must be unambiguously true or false."
+                  ],
+                  "correct_answer": "Option B: The converse of a true proposition is always true.",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "What is the converse of 'If a quadrilateral is a square, its diagonals are perpendicular bisectors'?",
+                  "options": [
+                    "Option A: If diagonals of a quadrilateral are perpendicular bisectors, it is a square.",
+                    "Option B: If a quadrilateral is a rhombus, diagonals are perpendicular.",
+                    "Option C: If diagonals are equal, it is a square.",
+                    "Option D: If not a square, diagonals do not bisect."
+                  ],
+                  "correct_answer": "Option A: If diagonals of a quadrilateral are perpendicular bisectors, it is a square.",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Show that 'If diagonals of a quadrilateral are perpendicular bisectors, it is a square' is false using a counterexample.",
+                  "marking_scheme_answer": "Counterexample: A non-square rhombus has perpendicular bisecting diagonals, but its angles are not 90°, so it is not a square (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Give a geometric statement where both proposition and converse are TRUE. Justify both.",
+                  "marking_scheme_answer": "Statement: Equal chords subtend equal angles at the circle center (1 mark). Proposition justification: SSS congruence (1 mark). Converse justification: Equal central angles subtend equal chords (SAS congruence) (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Summarize 4 logical combinations for P->Q and Q->P: (1) Both True, (2) P->Q True, Q->P False, (3) P->Q False, Q->P True, (4) Both False. Give examples.",
+                  "marking_scheme_answer": "1. Both True: Isosceles <==> equal base angles (1.25 marks). 2. P->Q True, Q->P False: Multiple of 6 ==> Multiple of 3 (1.25 marks). 3. P->Q False, Q->P True: Equal area ==> Congruent (False) vs Congruent ==> Equal area (True) (1.25 marks). 4. Both False: x>2 ==> x^2>25 (False) and x^2>25 ==> x>2 (False for x=-6) (1.25 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Consider: 'If a polygon is a regular hexagon, all internal angles are 120°.' (a) Write converse. (b) Is original claim true? (c) Is converse true? Explain.",
+                  "marking_scheme_answer": "(a) Converse: If all internal angles of a polygon are 120°, then it is a regular hexagon (1 mark). (b) True (1 mark). (c) False, an equiangular hexagon can have unequal side lengths (e.g. 2,4,2,4,2,4 cm) (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "How Quantities Combine: Understanding Data",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Chapter 10 Practice Paper (Weighted Mean Fundamentals)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Section A has 30 students with avg 80%. Section B has 10 students with avg 60%. What is the overall weighted average?",
+                  "options": [
+                    "Option A: 70%",
+                    "Option B: 75%",
+                    "Option C: 72.5%",
+                    "Option D: 77.5%"
+                  ],
+                  "correct_answer": "Option B: 75%",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Why does a simple average of section averages fail when combining two student groups?",
+                  "options": [
+                    "Option A: Because averages cannot be added",
+                    "Option B: Because simple average assumes equal group sizes",
+                    "Option C: Because scores are percentages",
+                    "Option D: Because median is required"
+                  ],
+                  "correct_answer": "Option B: Because simple average assumes equal group sizes",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Define weighted average and state its mathematical formula.",
+                  "marking_scheme_answer": "1. Definition: An average where each data point is scaled by a weight reflecting its size or importance (1 mark). 2. Formula: x_bar = sum(w_i * x_i) / sum(w_i) (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Batch A: 200 kg with 70% copper. Batch B: 300 kg with 40% copper. Calculate copper concentration in the combined mixture.",
+                  "marking_scheme_answer": "1. Copper in A = 140 kg; Copper in B = 120 kg (1 mark). 2. Total copper = 260 kg; Total alloy = 500 kg (1 mark). 3. Concentration = (260/500)*100 = 52% (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A school calculates scores using Classwork (weight 3), Project (weight 2), Exam (weight 5). Student X: 85%, 90%, 70%. Student Y: 70%, 65%, 88%. Compute both weighted averages and compare.",
+                  "marking_scheme_answer": "1. Student X: (3*85 + 2*90 + 5*70)/10 = 78.5% (2 marks). 2. Student Y: (3*70 + 2*65 + 5*88)/10 = 78.0% (2 marks). 3. Comparison: Student X achieves higher overall score (78.5% > 78.0%) due to strong coursework marks (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Zone 1 (100k commuters): 60% Bus, 30% Metro, 10% Auto. Zone 2 (500k commuters): 20% Bus, 70% Metro, 10% Auto. (a) Compute unweighted average bus ridership. (b) Compute true weighted bus ridership. (c) Explain policy impact.",
+                  "marking_scheme_answer": "(a) Unweighted bus average = (60%+20%)/2 = 40% (1 mark). (b) Weighted bus riders = 60k + 100k = 160k out of 600k = 26.67% (2 marks). (c) Policy: Unweighted average overestimates bus demand, risking overbudgeting (1 mark).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Chapter 10 Practice Paper (Stacked vs 100% Stacked Bar Charts)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which chart scales every bar to 100% to display relative proportions?",
+                  "options": [
+                    "Option A: Cluster column chart",
+                    "Option B: Standard stacked bar chart",
+                    "Option C: 100% stacked bar chart",
+                    "Option D: Line graph"
+                  ],
+                  "correct_answer": "Option C: 100% stacked bar chart",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "When is a standard stacked bar chart preferred over a 100% stacked bar chart?",
+                  "options": [
+                    "Option A: When comparing percentage distributions",
+                    "Option B: When total absolute values matter",
+                    "Option C: When comparing two data points",
+                    "Option D: When data is non-numerical"
+                  ],
+                  "correct_answer": "Option B: When total absolute values matter",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Family A spends Rs 5,000 total (Rs 2,000 food). Family B spends Rs 10,000 total (Rs 3,000 food). Compare food spending in absolute terms vs percentage terms.",
+                  "marking_scheme_answer": "1. Absolute: Family B spends more on food (Rs 3,000 > Rs 2,000) (1 mark). 2. Percentage: Family A spends higher fraction on food (40% > 30%) (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Explain how 100% stacked bar charts function like rectangular pie charts across multiple categories.",
+                  "marking_scheme_answer": "1. Both represent full wholes as 100% (1 mark). 2. 100% stacked bars use linear length segments instead of circular angles (1 mark). 3. They allow side-by-side alignment across multiple groups, which pie charts cannot easily show (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A firm tracks 3 expenditure categories (Rent, Salaries, Supplies) for 3 branches. Branch 1: 30k, 50k, 20k. Branch 2: 60k, 100k, 40k. Branch 3: 50k, 25k, 25k. (a) Construct absolute total stacked bar values. (b) Convert to 100% proportions. (c) Analyze key branch differences.",
+                  "marking_scheme_answer": "(a) Totals: B1=100k, B2=200k, B3=100k (1.5 marks). (b) Percentages: B1=(30%,50%,20%), B2=(30%,50%,20%), B3=(50%,25%,25%) (2 marks). (c) Analysis: B1 and B2 have identical expenditure structures despite scale; B3 spends half its budget on rent (1.5 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Daily 24-hour activities (Sleep, Work, Leisure) are plotted on a stacked bar chart. (a) Why are absolute stacked bars and 100% stacked bars identical here? (b) What if total monitored time varied?",
+                  "marking_scheme_answer": "(a) Because total daily time is fixed at 24 hours for everyone (100% = 24h), so bar length is constant (2 marks). (b) If monitored hours varied, absolute stacked bar lengths would differ, requiring 100% normalization for proportional comparison (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Chapter 10 Practice Paper (Mixture Concentrations & Combined Data)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Batch 1 (100L, 20% acid) is mixed with Batch 2 (300L, 40% acid). What is the acid percentage of the mixture?",
+                  "options": [
+                    "Option A: 30%",
+                    "Option B: 35%",
+                    "Option C: 32%",
+                    "Option D: 38%"
+                  ],
+                  "correct_answer": "Option B: 35%",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Gold purity in Karats: 24K is 100% gold. What is the purity of 18K gold?",
+                  "options": [
+                    "Option A: 60%",
+                    "Option B: 75%",
+                    "Option C: 80%",
+                    "Option D: 85%"
+                  ],
+                  "correct_answer": "Option B: 75%",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Mix 10g of 18K gold with 30g of 22K gold. Express pure gold mass in each and find combined purity fraction.",
+                  "marking_scheme_answer": "1. Pure gold: 10*(18/24) = 7.5g; 30*(22/24) = 27.5g. Total gold = 35g out of 40g (1 mark). 2. Combined purity = 35/40 = 21/24 = 21 Karats (87.5%) (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Three test scores x1, x2, x3 have weights 1, 2, 3. If x1=50, x2=70, x3=80, find weighted mean and compare with simple mean.",
+                  "marking_scheme_answer": "1. Weighted mean = (1*50 + 2*70 + 3*80)/(1+2+3) = (50+140+240)/6 = 430/6 = 71.67% (1.5 marks). 2. Simple mean = (50+70+80)/3 = 200/3 = 66.67% (1 mark). 3. Weighted mean is higher because highest score has weight 3 (0.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A tea vendor mixes 3 varieties: Variety A (Rs 200/kg, 5kg), Variety B (Rs 300/kg, 3kg), Variety C (Rs 400/kg, 2kg). (a) Calculate cost per kg of mixture. (b) At what price should vendor sell per kg to make 20% profit?",
+                  "marking_scheme_answer": "(a) Cost = (5*200 + 3*300 + 2*400)/(5+3+2) = (1000 + 900 + 800)/10 = Rs 270/kg (3 marks). (b) Selling price with 20% profit = 270 * 1.20 = Rs 324/kg (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "An engine uses Fuel A (80 Octane, 40L) and Fuel B (95 Octane, 60L). (a) Find mixture Octane rating. (b) How much Fuel B must be added to reach 92 Octane overall?",
+                  "marking_scheme_answer": "(a) Current Octane = (40*80 + 60*95)/100 = (3200 + 5700)/100 = 89 Octane (2 marks). (b) Target: (3200 + 95x)/(40 + 60 + x) = 92 => 8900 + 95x = 9200 + 92x => 3x = 300 => x = 100L of Fuel B (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Chapter 10 Practice Paper (Weighted Evaluation & Scoring Systems)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "If weights w1, w2, w3 are all equal to 1, the weighted mean reduces to:",
+                  "options": [
+                    "Option A: Median",
+                    "Option B: Simple Arithmetic Mean",
+                    "Option C: Mode",
+                    "Option D: Range"
+                  ],
+                  "correct_answer": "Option B: Simple Arithmetic Mean",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In a 100% stacked bar chart, what does the total width or length of each bar represent?",
+                  "options": [
+                    "Option A: 100 units",
+                    "Option B: 100%",
+                    "Option C: Total sample count",
+                    "Option D: Maximum value"
+                  ],
+                  "correct_answer": "Option B: 100%",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A student scores 80 in Midterm (30%) and needs an overall score of 85. What minimum score must be obtained in Final Exam (70%)?",
+                  "marking_scheme_answer": "0.30*80 + 0.70*F = 85 => 24 + 0.70*F = 85 => 0.70*F = 61 => F = 87.14% (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Compare cluster-column chart vs stacked bar chart for showing multi-category data across 4 regions.",
+                  "marking_scheme_answer": "1. Cluster-column chart places category columns side-by-side; excellent for comparing individual category levels (1.5 marks). 2. Stacked bar chart stacks category segments into a single bar; excellent for showing region total and sub-component breakdown (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A factory has 3 shifts: Shift 1 (50 workers, avg wage Rs 500), Shift 2 (30 workers, avg wage Rs 600), Shift 3 (20 workers, avg wage Rs 700). (a) Compute overall daily average wage. (b) If Shift 1 wages increase by 10%, find new overall average wage.",
+                  "marking_scheme_answer": "(a) Total wage = 50*500 + 30*600 + 20*700 = 25000 + 18000 + 14000 = Rs 57,000. Total workers = 100. Avg = Rs 570 (3 marks). (b) Shift 1 new wage = 550. New total = 50*550 + 18000 + 14000 = 27500 + 32000 = 59500. New avg = Rs 595 (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A university admissions index combines High School GPA (weight 4, max 100), Entrance Exam (weight 4, max 100), Interview (weight 2, max 100). Candidate A: 90, 70, 95. Candidate B: 80, 85, 80. (a) Compute index scores. (b) Who gets admitted if cutoff is 83.5?",
+                  "marking_scheme_answer": "(a) Candidate A = (4*90 + 4*70 + 2*95)/10 = (360 + 280 + 190)/10 = 83.0 (1.5 marks). Candidate B = (4*80 + 4*85 + 2*80)/10 = (320 + 340 + 160)/10 = 82.0 (1.5 marks). (b) Neither candidate meets the 83.5 cutoff (1 mark).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Chapter 10 Practice Paper (Data Interpretation & Policy Applications)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "A solution contains 10% salt. If 2L of water is added to 8L of this solution, new salt percentage is:",
+                  "options": [
+                    "Option A: 8%",
+                    "Option B: 10%",
+                    "Option C: 7.5%",
+                    "Option D: 5%"
+                  ],
+                  "correct_answer": "Option A: 8%",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Which condition guarantees that simple mean equals weighted mean?",
+                  "options": [
+                    "Option A: All weights are equal",
+                    "Option B: All data values are equal",
+                    "Option C: Either Option A or Option B",
+                    "Option D: Neither Option A nor Option B"
+                  ],
+                  "correct_answer": "Option C: Either Option A or Option B",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Explain why percentages cannot be directly added when calculating overall group success rate.",
+                  "marking_scheme_answer": "Percentages represent ratios relative to base group sizes. Unless base group sizes are identical, adding percentages ignores base magnitude, distorting total counts (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "A store sells items in 3 departments with profit margins 10%, 20%, 30% and sales volume Rs 50k, Rs 30k, Rs 20k. Compute average profit margin.",
+                  "marking_scheme_answer": "Total profit = 0.10*50k + 0.20*30k + 0.30*20k = 5k + 6k + 6k = Rs 17k (1.5 marks). Total sales = Rs 100k. Avg profit margin = 17k / 100k = 17% (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Construct a master summary table comparing: Simple Mean, Weighted Mean, Stacked Bar Chart, and 100% Stacked Bar Chart across formula/definition, primary use case, and limitation.",
+                  "marking_scheme_answer": "1. Simple Mean: sum(x)/n; equal weights; fails for unequal groups (1.25 marks). 2. Weighted Mean: sum(w*x)/sum(w); accounts for relative size/importance; requires weight data (1.25 marks). 3. Stacked Bar Chart: visual totals with sub-segments; shows absolute amounts; hard to compare internal proportions across unequal bars (1.25 marks). 4. 100% Stacked Bar: normalized 100% bars; compares relative distributions; loses absolute magnitude context (1.25 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "An ecology survey measures tree species in 2 forests. Forest 1 (1,000 trees): 50% Oak, 30% Pine, 20% Birch. Forest 2 (9,000 trees): 10% Oak, 70% Pine, 20% Birch. (a) Draw proportional distribution comparison. (b) Compute total Oak tree count across both forests.",
+                  "marking_scheme_answer": "(a) Oak %: F1=50%, F2=10%. Birch %: F1=20%, F2=20% (1.5 marks). (b) Oak trees in F1 = 500; Oak trees in F2 = 900. Total Oak trees = 1,400 out of 10,000 total trees = 14% overall (2.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 11,
+      "chapter_title": "The World of Algorithms",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Chapter 11 Practice Paper (Algorithmic Thinking & Modulo Operations)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is the output of 45 mod 7?",
+                  "options": [
+                    "Option A: 6",
+                    "Option B: 3",
+                    "Option C: 4",
+                    "Option D: 5"
+                  ],
+                  "correct_answer": "Option B: 3",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Who is credited with popularizing systematic algorithmic arithmetic in Latinized translation?",
+                  "options": [
+                    "Option A: Euclid",
+                    "Option B: Muhammad ibn Musa al-Khwarizmi",
+                    "Option C: Aryabhata",
+                    "Option D: Brahmagupta"
+                  ],
+                  "correct_answer": "Option B: Muhammad ibn Musa al-Khwarizmi",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Define an algorithm and list two essential characteristics.",
+                  "marking_scheme_answer": "Definition: A finite, step-by-step sequence of unambiguous instructions for solving a problem (1 mark). Characteristics: Unambiguous steps, guaranteed termination (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Prove that if d divides both m and n, then d divides (m - n).",
+                  "marking_scheme_answer": "m = k1*d and n = k2*d for integers k1,k2 (1 mark). m - n = (k1 - k2)*d (1 mark). Since (k1 - k2) is an integer, d divides (m - n) (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Trace Aryabhata's Remainder GCD algorithm for gcd(1071, 462). Show dividend, divisor, quotient, and remainder at each step.",
+                  "marking_scheme_answer": "Step 1: 1071 = 2*462 + 147 (r=147) (1.5 marks). Step 2: 462 = 3*147 + 21 (r=21) (1.5 marks). Step 3: 147 = 7*21 + 0 (r=0) (1 mark). Conclusion: gcd(1071, 462) = 21 (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "To find LCM(A, B) for large 64-bit integers A and B: (a) State relation between GCD and LCM. (b) Explain why computing (A/gcd(A,B))*B prevents integer overflow.",
+                  "marking_scheme_answer": "(a) A * B = gcd(A, B) * LCM(A, B) (1.5 marks). (b) Multiplying A*B first can exceed 64-bit storage limits. Dividing A by gcd(A,B) first reduces magnitude before multiplying by B, preventing overflow (2.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Chapter 11 Practice Paper (Euclidean Subtraction GCD Algorithm)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which identity underlies Euclidean Subtraction GCD?",
+                  "options": [
+                    "Option A: gcd(m, n) = gcd(n, m - n)",
+                    "Option B: gcd(m, n) = gcd(m + n, n)",
+                    "Option C: gcd(m, n) = m * n",
+                    "Option D: gcd(m, n) = m / n"
+                  ],
+                  "correct_answer": "Option A: gcd(m, n) = gcd(n, m - n)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "How many steps does Euclidean Subtraction take for gcd(99, 2)?",
+                  "options": [
+                    "Option A: 2 steps",
+                    "Option B: 49 steps",
+                    "Option C: 99 steps",
+                    "Option D: 1 step"
+                  ],
+                  "correct_answer": "Option B: 49 steps",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Compute gcd(35, 10) using Euclidean Subtraction step-by-step.",
+                  "marking_scheme_answer": "gcd(35, 10) = gcd(25, 10) = gcd(15, 10) = gcd(10, 5) = gcd(5, 5) = 5 (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Explain why Aryabhata's division algorithm is computationally superior to Euclidean subtraction.",
+                  "marking_scheme_answer": "1. Subtraction reduces numbers linearly by subtracting n repeatedly (1 mark). 2. Division extracts the full remainder in one operation (1 mark). 3. Division step count scales with digit length O(log N) rather than value O(N) (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Find gcd(540, 192) using both: (a) Euclidean Subtraction (first 4 steps). (b) Aryabhata Remainder Algorithm (all steps). Compare step counts.",
+                  "marking_scheme_answer": "(a) Subtraction: gcd(540, 192) -> gcd(348, 192) -> gcd(156, 192) -> gcd(192, 156)... (2 marks). (b) Remainder: 540 mod 192 = 156; 192 mod 156 = 36; 156 mod 36 = 12; 36 mod 12 = 0. GCD = 12 (4 steps) (2 marks). (c) Subtraction takes ~25 steps, remainder takes 4 steps (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A list contains [12, 18, 24, 30]. (a) Describe an algorithm to find the GCD of all numbers in a list. (b) Compute GCD for this list.",
+                  "marking_scheme_answer": "(a) Algorithm: Initialize g = list[0]. For each x in list[1:], update g = gcd(g, x). Return g (2 marks). (b) g = gcd(12, 18) = 6. g = gcd(6, 24) = 6. g = gcd(6, 30) = 6. Final GCD = 6 (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Chapter 11 Practice Paper (Aryabhata Remainder GCD Algorithm)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is 100 mod 15?",
+                  "options": [
+                    "Option A: 5",
+                    "Option B: 10",
+                    "Option C: 0",
+                    "Option D: 15"
+                  ],
+                  "correct_answer": "Option A: 5",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If m mod n = 0, what is gcd(m, n)?",
+                  "options": [
+                    "Option A: 0",
+                    "Option B: m",
+                    "Option C: n",
+                    "Option D: 1"
+                  ],
+                  "correct_answer": "Option C: n",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Write a pseudocode algorithm to check if a positive integer N is prime.",
+                  "marking_scheme_answer": "If N <= 1 return False. For i from 2 to floor(sqrt(N)): if N mod i == 0 return False. Return True (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Compute gcd(825, 375) using division by remainder.",
+                  "marking_scheme_answer": "Step 1: 825 mod 375 = 75 (825 = 2*375 + 75) (1 mark). Step 2: 375 mod 75 = 0 (375 = 5*75 + 0) (1 mark). Conclusion: GCD = 75 (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Analyze sequential ordered lists as data structures: (a) Define linear search algorithm. (b) State worst-case step count for N elements. (c) Define binary search algorithm for sorted list and state its worst-case step count.",
+                  "marking_scheme_answer": "(a) Linear search checks elements sequentially from index 0 to N-1 (1.5 marks). (b) Worst-case: N steps (1 mark). (c) Binary search checks middle element, halving search space; worst-case: log2(N) steps (2.5 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Two alarm clocks ring every 15 minutes and 25 minutes. They ring together at 12:00 PM. (a) What mathematical concept determines next simultaneous ring? (b) Calculate next simultaneous ring time.",
+                  "marking_scheme_answer": "(a) Least Common Multiple (LCM) (1.5 marks). (b) gcd(15, 25) = 5. LCM = (15 * 25)/5 = 75 minutes. Next ring time = 1:15 PM (2.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Chapter 11 Practice Paper (Computational Efficiency & Step Count Comparison)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which operation extracts integer quotient q when m is divided by n?",
+                  "options": [
+                    "Option A: m mod n",
+                    "Option B: m // n (Integer Division)",
+                    "Option C: m * n",
+                    "Option D: m ^ n"
+                  ],
+                  "correct_answer": "Option B: m // n (Integer Division)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In the division algorithm m = q*n + r, what constraint must remainder r satisfy?",
+                  "options": [
+                    "Option A: 0 <= r < n",
+                    "Option B: 0 < r <= n",
+                    "Option C: r > n",
+                    "Option D: r = m"
+                  ],
+                  "correct_answer": "Option A: 0 <= r < n",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "If gcd(a, b) = 1, what are numbers a and b called? Give an example.",
+                  "marking_scheme_answer": "1. Co-prime (or relatively prime) numbers (1 mark). 2. Example: 8 and 15 (gcd(8, 15) = 1) (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Show that for any positive integer k, gcd(k, k+1) = 1.",
+                  "marking_scheme_answer": "Let d = gcd(k, k+1). Then d divides k and d divides (k+1) (1 mark). Thus d divides (k+1 - k) = 1 (1 mark). Since d is a positive integer dividing 1, d must equal 1 (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Trace Aryabhata's GCD algorithm for gcd(12345, 11111). Show all reduction steps.",
+                  "marking_scheme_answer": "1. 12345 mod 11111 = 1234 (1 mark). 2. 11111 mod 1234 = 15 (11111 = 9*1234 + 15) (1 mark). 3. 1234 mod 15 = 4 (1234 = 82*15 + 4) (1 mark). 4. 15 mod 4 = 3; 4 mod 3 = 1; 3 mod 1 = 0 (1 mark). Conclusion: GCD = 1 (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A tile layer wants to cover a rectangular floor (360 cm by 280 cm) with identical square tiles without cutting. (a) What tile size minimizes total tile count? (b) How many square tiles are needed?",
+                  "marking_scheme_answer": "(a) Tile side length = gcd(360, 280) = 40 cm (2 marks). (b) Tiles along length = 360/40 = 9; along width = 280/40 = 7. Total tiles = 9 x 7 = 63 tiles (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Chapter 11 Practice Paper (Data Structures & LCM Application)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "What is the GCD of any positive integer N and 0?",
+                  "options": [
+                    "Option A: 0",
+                    "Option B: N",
+                    "Option C: 1",
+                    "Option D: Undefined"
+                  ],
+                  "correct_answer": "Option B: N",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The worst-case time complexity of Aryabhata's remainder GCD algorithm is proportional to:",
+                  "options": [
+                    "Option A: Value of N",
+                    "Option B: Number of digits in N (log N)",
+                    "Option C: N^2",
+                    "Option D: 2^N"
+                  ],
+                  "correct_answer": "Option B: Number of digits in N (log N)",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Distinguish between a brute-force algorithm and an optimized algorithm using GCD calculation as an example.",
+                  "marking_scheme_answer": "Brute force checks all numbers from 1 to min(a,b) (slow) (1 mark). Optimized algorithm (Aryabhata remainder) skips irrelevant checks via remainder reductions (fast) (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "If a = 2^3 * 3^2 * 5 and b = 2^2 * 3^3 * 7, compute gcd(a, b) and lcm(a, b) using prime factor exponents.",
+                  "marking_scheme_answer": "1. gcd(a, b) = 2^min(3,2) * 3^min(2,3) = 2^2 * 3^2 = 4 * 9 = 36 (1.5 marks). 2. lcm(a, b) = 2^3 * 3^3 * 5^1 * 7^1 = 8 * 27 * 5 * 7 = 7560 (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Summarize the historical evolution of algorithms from dot counting to place-value decimal long division and modern computer code. Highlight Al-Khwarizmi's and Aryabhata's contributions.",
+                  "marking_scheme_answer": "1. Early methods relied on dot counting or tally marks (1 mark). 2. Indian place-value system enabled long division and efficient remainder operations (Aryabhata, 499 CE) (1.5 marks). 3. Al-Khwarizmi (9th century) formalized decimal positional rules in Latin translations, giving rise to 'algorithm' (1.5 marks). 4. Modern computer code implements these step-by-step logic rules digitally (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A developer writes an algorithm: `def gcd(a, b): return a if b == 0 else gcd(b, a % b)`. (a) Trace function calls for `gcd(48, 18)`. (b) What type of programming paradigm is this?",
+                  "marking_scheme_answer": "(a) Call 1: gcd(48, 18) -> 48%18 = 12. Call 2: gcd(18, 12) -> 18%12 = 6. Call 3: gcd(12, 6) -> 12%6 = 0. Call 4: gcd(6, 0) -> returns 6 (3 marks). (b) Recursive algorithm (1 mark).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 12,
+      "chapter_title": "Quadrilaterals",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Chapter 12 Practice Paper (Parallelogram Properties & Converses)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "If midpoints of any quadrilateral sides are joined in order, the inner figure is always a:",
+                  "options": [
+                    "Option A: Rectangle",
+                    "Option B: Rhombus",
+                    "Option C: Parallelogram",
+                    "Option D: Square"
+                  ],
+                  "correct_answer": "Option C: Parallelogram",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "In triangle ABC, D and E are midpoints of AB and AC. If BC = 14 cm, what is DE?",
+                  "options": [
+                    "Option A: 14 cm",
+                    "Option B: 7 cm",
+                    "Option C: 28 cm",
+                    "Option D: 10 cm"
+                  ],
+                  "correct_answer": "Option B: 7 cm",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "State the Midpoint Theorem for triangles.",
+                  "marking_scheme_answer": "The line segment joining the midpoints of two sides of a triangle is parallel to the third side and half as long (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "In triangle ABC, medians AR, BS, CT intersect at centroid G. If AR = 9 cm, calculate AG and GR.",
+                  "marking_scheme_answer": "1. Centroid divides medians in 2:1 ratio (AG : GR = 2 : 1) (1 mark). 2. AG = (2/3) * 9 = 6 cm (1 mark). 3. GR = (1/3) * 9 = 3 cm (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "State and prove the Midpoint Theorem for triangle ABC with midpoints D on AB and E on AC.",
+                  "marking_scheme_answer": "1. Statement (1 mark). 2. Construction: Extend DE to F such that DE = EF, join CF (1 mark). 3. Proof: Triangle ADE congruent to CFE (SAS) ==> AD=CF and AD||CF (1.5 marks). 4. DBCF is parallelogram ==> DF||BC and DF=BC ==> DE||BC and DE = 1/2 BC (1.5 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "An architect tiles a floor using arbitrary four-sided polygon tiles. (a) What is the sum of interior angles of a quadrilateral? (b) Explain why 4 tiles meeting at a vertex cover 360° seamlessly.",
+                  "marking_scheme_answer": "(a) Sum of interior angles = 360° (1 mark). (b) Placing 4 copies of the tile around a vertex brings together angles A, B, C, D. Since A+B+C+D = 360°, they fill the surrounding space completely with zero gaps (3 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Chapter 12 Practice Paper (Midpoint Theorem & Triangle Medians)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Which condition is NOT sufficient to prove a quadrilateral is a parallelogram?",
+                  "options": [
+                    "Option A: Opposite sides are equal",
+                    "Option B: Diagonals are equal",
+                    "Option C: Diagonals bisect each other",
+                    "Option D: One pair of opposite sides is equal and parallel"
+                  ],
+                  "correct_answer": "Option B: Diagonals are equal",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Joining midpoints of a rectangle yields a:",
+                  "options": [
+                    "Option A: Rectangle",
+                    "Option B: Rhombus",
+                    "Option C: Square",
+                    "Option D: Trapezium"
+                  ],
+                  "correct_answer": "Option B: Rhombus",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "In triangle ABC, DE connects midpoints of AB and AC. If DE = 2x + 1 and BC = 5x - 4, solve for x.",
+                  "marking_scheme_answer": "2*(2x + 1) = 5x - 4 ==> 4x + 2 = 5x - 4 ==> x = 6 (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Explain why joining midpoints of a rhombus forms a rectangle using diagonal properties.",
+                  "marking_scheme_answer": "1. Diagonals of a rhombus are perpendicular (AC perpendicular to BD) (1 mark). 2. Varignon sides are parallel to AC and BD (1 mark). 3. Adjacent sides of Varignon parallelogram inherit perpendicularity, forming a rectangle (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "In parallelogram ABCD, points P and Q on diagonal BD satisfy DP = BQ. Prove that APCQ is a parallelogram.",
+                  "marking_scheme_answer": "1. In triangles ADP and CBQ: AD = BC (opposite sides of parallelogram) (1 mark). 2. Angle ADP = Angle CBQ (alternate interior angles) (1 mark). 3. DP = BQ (given) ==> Triangle ADP congruent to CBQ (SAS) (1 mark). 4. Thus AP = CQ and Angle APD = Angle CQB ==> AP || CQ (1 mark). 5. One pair of opposite sides is equal and parallel, so APCQ is a parallelogram (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Varignon's Theorem states midpoints of ANY quadrilateral form a parallelogram. (a) If original diagonals AC = 10cm and BD = 12cm, find perimeter of Varignon parallelogram. (b) Does perimeter depend on quadrilateral angles?",
+                  "marking_scheme_answer": "(a) Varignon side lengths are 1/2 AC = 5cm and 1/2 BD = 6cm. Perimeter = 2*(5 + 6) = 22 cm (2.5 marks). (b) No, perimeter depends strictly on diagonal lengths AC and BD (1.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Chapter 12 Practice Paper (Varignon Parallelogram & Diagonal Properties)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "In a rhombus, diagonals:",
+                  "options": [
+                    "Option A: Are equal and perpendicular",
+                    "Option B: Bisect each other at right angles",
+                    "Option C: Are equal but do not bisect",
+                    "Option D: Are parallel"
+                  ],
+                  "correct_answer": "Option B: Bisect each other at right angles",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Point of intersection of 3 medians of a triangle is called:",
+                  "options": [
+                    "Option A: Incenter",
+                    "Option B: Circumcenter",
+                    "Option C: Centroid",
+                    "Option D: Orthocenter"
+                  ],
+                  "correct_answer": "Option C: Centroid",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "State the converse of the Midpoint Theorem.",
+                  "marking_scheme_answer": "The line drawn through the midpoint of one side of a triangle parallel to another side bisects the third side (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Show that the diagonals of a rectangle are equal in length.",
+                  "marking_scheme_answer": "1. Consider rectangle ABCD. Compare triangles ABC and BAD (1 mark). 2. AB = AB (common), Angle ABC = Angle BAD = 90°, BC = AD (opposite sides) (1 mark). 3. Triangle ABC congruent to BAD (SAS) ==> AC = BD (CPCT) (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Prove that the line segments joining the midpoints of opposite sides of any quadrilateral bisect each other.",
+                  "marking_scheme_answer": "1. Let ABCD be a quadrilateral with midpoints P, Q, R, S on AB, BC, CD, DA (1 mark). 2. Join PQRS to form Varignon parallelogram (2 marks). 3. The segments joining opposite side midpoints are diagonals PR and QS of parallelogram PQRS (1 mark). 4. Since diagonals of a parallelogram bisect each other, PR and QS bisect each other (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A triangular solar panel has base 3m and height 2m. A support bar joins midpoints of two sides. (a) Find length of support bar. (b) What fraction of total area lies above support bar?",
+                  "marking_scheme_answer": "(a) Support bar length = 1/2 * 3m = 1.5m (1.5 marks). (b) Top triangle has base 1/2 B and height 1/2 H, so Area_top = (1/2)^2 * Area_total = 1/4 (25%) of total area (2.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Chapter 12 Practice Paper (Centroid Section Ratio (2:1))",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Joining midpoints of a rhombus produces a:",
+                  "options": [
+                    "Option A: Square",
+                    "Option B: Rectangle",
+                    "Option C: Rhombus",
+                    "Option D: Parallelogram"
+                  ],
+                  "correct_answer": "Option B: Rectangle",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If diagonals of a parallelogram are equal and perpendicular, the figure is a:",
+                  "options": [
+                    "Option A: Rectangle",
+                    "Option B: Rhombus",
+                    "Option C: Square",
+                    "Option D: Trapezium"
+                  ],
+                  "correct_answer": "Option C: Square",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "In quadrilateral ABCD, angles are in ratio 1:2:3:4. Find all four angle measures.",
+                  "marking_scheme_answer": "x + 2x + 3x + 4x = 360 ==> 10x = 360 ==> x = 36°. Angles are 36°, 72°, 108°, 144° (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Prove that diagonals of a square are equal and bisect each other at right angles.",
+                  "marking_scheme_answer": "1. Equal: Proven as in rectangle (SAS) (1 mark). 2. Bisect: Proven as in parallelogram (ASA) (1 mark). 3. Right angles: Proven as in rhombus (SSS) (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "In triangle ABC, D, E, F are midpoints of BC, CA, AB. Prove that triangle ABC is divided into 4 congruent triangles by joining D, E, F.",
+                  "marking_scheme_answer": "1. By Midpoint Theorem, FE || BC and FE = 1/2 BC = BD = DC (1 mark). 2. DE || AB and DE = AF = FB (1 mark). 3. DF || AC and DF = AE = EC (1 mark). 4. Triangles AFE, FBD, EDC, DEF have identical side lengths (AF=FB=DE, AE=EC=DF, FE=BD=DC) (1 mark). 5. By SSS, all 4 inner triangles are congruent (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A civil engineer measures median lengths of a triangular park as 12m, 15m, 18m. (a) Distance from each vertex to centroid? (b) Distance from centroid to opposite side midpoints?",
+                  "marking_scheme_answer": "(a) Vertex to centroid (2/3 of median): 8m, 10m, 12m (2 marks). (b) Centroid to midpoint (1/3 of median): 4m, 5m, 6m (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Chapter 12 Practice Paper (Quadrilateral Plane Tiling & Tessellation)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "A quadrilateral with only ONE pair of parallel opposite sides is called a:",
+                  "options": [
+                    "Option A: Parallelogram",
+                    "Option B: Trapezium",
+                    "Option C: Rhombus",
+                    "Option D: Kite"
+                  ],
+                  "correct_answer": "Option B: Trapezium",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If diagonals of a quadrilateral bisect each other, it is guaranteed to be a:",
+                  "options": [
+                    "Option A: Rectangle",
+                    "Option B: Square",
+                    "Option C: Parallelogram",
+                    "Option D: Rhombus"
+                  ],
+                  "correct_answer": "Option C: Parallelogram",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "In a parallelogram ABCD, Angle A = 70°. Find measures of Angles B, C, D.",
+                  "marking_scheme_answer": "Angle C = Angle A = 70° (opposite angles). Angle B = 180° - 70° = 110° (adjacent angles). Angle D = 110° (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Construct a master summary table of 4 special quadrilaterals (Parallelogram, Rectangle, Rhombus, Square) listing diagonal properties for each.",
+                  "marking_scheme_answer": "1. Parallelogram: Bisect each other (0.75 mark). 2. Rectangle: Bisect each other + Equal (0.75 mark). 3. Rhombus: Bisect each other + Perpendicular (0.75 mark). 4. Square: Bisect each other + Equal + Perpendicular (0.75 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Prove that the quadrilateral formed by joining the midpoints of sides of an isosceles trapezium is a rhombus.",
+                  "marking_scheme_answer": "1. In isosceles trapezium ABCD, non-parallel sides AD = BC (1 mark). 2. Diagonals AC and BD are equal (AC = BD) (1.5 marks). 3. Varignon sides are equal to 1/2 AC and 1/2 BD (1 mark). 4. Since AC = BD, all four sides of Varignon quadrilateral are equal, forming a rhombus (1.5 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A designer creates a regular tessellation grid. (a) Why can squares tile a plane? (b) Why can regular hexagons tile a plane? (c) Can regular pentagons tile a plane? Explain.",
+                  "marking_scheme_answer": "(a) Square interior angle = 90°; 4 x 90° = 360° (1 mark). (b) Regular hexagon angle = 120°; 3 x 120° = 360° (1.5 marks). (c) No, regular pentagon angle = 108°; 360/108 = 3.33 (not an integer), so gaps remain (1.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 13,
+      "chapter_title": "Two Variables, One Line",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Chapter 13 Practice Paper (Linear Equations in 2 Variables & Intercepts)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "At which point does 3x + 2y = 12 cut the X-axis?",
+                  "options": [
+                    "Option A: (0, 6)",
+                    "Option B: (4, 0)",
+                    "Option C: (0, 4)",
+                    "Option D: (6, 0)"
+                  ],
+                  "correct_answer": "Option B: (4, 0)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If a1/a2 = b1/b2 != c1/c2, the lines are:",
+                  "options": [
+                    "Option A: Intersecting",
+                    "Option B: Coincident",
+                    "Option C: Parallel",
+                    "Option D: Perpendicular"
+                  ],
+                  "correct_answer": "Option C: Parallel",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Convert 3x + 4y - 12 = 0 into slope-intercept form (y = mx + d). State slope m and y-intercept d.",
+                  "marking_scheme_answer": "4y = -3x + 12 ==> y = (-3/4)x + 3. Slope m = -3/4, y-intercept d = 3 (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Find k for which kx + 3y = k-3 and 12x + ky = k has infinitely many solutions.",
+                  "marking_scheme_answer": "k/12 = 3/k = (k-3)/k ==> k^2 = 36 ==> k = 6 or -6 (1.5 marks). Checking 3/k = (k-3)/k gives k = 6. Value is k = 6 (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Solve algebraically: 2x + 3y = 9 and 3x + 4y = 13. Verify solution graphically by computing line slopes.",
+                  "marking_scheme_answer": "1. Multiply Eq1 by 3: 6x+9y=27. Multiply Eq2 by 2: 6x+8y=26 (1 mark). 2. Subtract: y = 1, x = 3. Solution (3, 1) (2 marks). 3. Slopes: m1 = -2/3, m2 = -3/4. Slopes differ, confirming unique intersection at (3, 1) (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Taxi fare: Rs 105 for 10 km, Rs 155 for 15 km. (a) Set up linear equations. (b) Find fixed charge and rate/km. (c) Predict cost for 25 km.",
+                  "marking_scheme_answer": "(a) x + 10y = 105 and x + 15y = 155 (1 mark). (b) Subtracting gives 5y = 50 ==> y = Rs 10/km, x = Rs 5 fixed charge (2 marks). (c) Cost = 5 + 25(10) = Rs 255 (1 mark).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Chapter 13 Practice Paper (Slope-Intercept Form & Graphical Slope Analysis)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Any linear equation ax + by + c = 0 has how many solutions?",
+                  "options": [
+                    "Option A: Exactly 1",
+                    "Option B: Exactly 2",
+                    "Option C: Infinitely many",
+                    "Option D: Zero"
+                  ],
+                  "correct_answer": "Option C: Infinitely many",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If c = 0 in ax + by + c = 0, the line always passes through:",
+                  "options": [
+                    "Option A: (1, 1)",
+                    "Option B: Origin (0, 0)",
+                    "Option C: (0, 1)",
+                    "Option D: (1, 0)"
+                  ],
+                  "correct_answer": "Option B: Origin (0, 0)",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Check whether (2, 3) and (1, 4) are solutions of 2x + y = 7.",
+                  "marking_scheme_answer": "For (2, 3): 2(2) + 3 = 7 (True, is solution) (1 mark). For (1, 4): 2(1) + 4 = 6 != 7 (False, not solution) (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Find value of k so that x = 2, y = 1 is a solution of 2x + 3y = k. Graph this line and find its Y-intercept.",
+                  "marking_scheme_answer": "1. 2(2) + 3(1) = k ==> k = 7 (1 mark). 2. Equation: 2x + 3y = 7 ==> y = (-2/3)x + 7/3 (1 mark). 3. Y-intercept is (0, 7/3) (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Summarize line relationship conditions for a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0: (a) Intersecting lines. (b) Parallel lines. (c) Coincident lines. Give an example equation pair for each.",
+                  "marking_scheme_answer": "(a) Intersecting: a1/a2 != b1/b2 (e.g. x+y=2, x-y=0) (1.5 marks). (b) Parallel: a1/a2 = b1/b2 != c1/c2 (e.g. x+y=2, x+y=4) (1.5 marks). (c) Coincident: a1/a2 = b1/b2 = c1/c2 (e.g. x+y=2, 2x+2y=4) (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A library charges a fixed fee for first 3 days plus daily charge after. Student A pays Rs 27 for 7 days. Student B pays Rs 21 for 5 days. (a) Formulate system of equations. (b) Find fixed fee and daily charge.",
+                  "marking_scheme_answer": "(a) Let fixed fee = x (for 3 days), daily rate = y. Student A: x + 4y = 27. Student B: x + 2y = 21 (2 marks). (b) Subtracting gives 2y = 6 ==> y = Rs 3/day, x = Rs 15 fixed fee (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Chapter 13 Practice Paper (Systems of Equations & Coefficient Ratios)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Slope m of line passing through (x1, y1) and (x2, y2) is:",
+                  "options": [
+                    "Option A: (y2 - y1) / (x2 - x1)",
+                    "Option B: (x2 - x1) / (y2 - y1)",
+                    "Option C: y2 - y1",
+                    "Option D: x2 + y2"
+                  ],
+                  "correct_answer": "Option A: (y2 - y1) / (x2 - x1)",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Graph of x = 5 is a line:",
+                  "options": [
+                    "Option A: Parallel to X-axis",
+                    "Option B: Parallel to Y-axis",
+                    "Option C: Passing through origin",
+                    "Option D: Along X-axis"
+                  ],
+                  "correct_answer": "Option B: Parallel to Y-axis",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find slope of line passing through (2, 5) and (6, 13).",
+                  "marking_scheme_answer": "m = (13 - 5) / (6 - 2) = 8 / 4 = 2 (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Express y in terms of x from 2x - 5y = 10. Find points where line cuts X-axis and Y-axis.",
+                  "marking_scheme_answer": "1. 5y = 2x - 10 ==> y = (2/5)x - 2 (1 mark). 2. X-intercept (y=0): 2x = 10 ==> x = 5, point (5, 0) (1 mark). 3. Y-intercept (x=0): point (0, -2) (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Solve graphically: x + y = 6 and x - y = 2. (a) Plot 3 coordinate points for each line. (b) State intersection point. (c) Calculate area of triangle formed by lines and Y-axis.",
+                  "marking_scheme_answer": "(a) Points for L1: (0,6), (3,3), (6,0). Points for L2: (0,-2), (2,0), (4,2) (2 marks). (b) Intersection point is (4, 2) (1 mark). (c) Triangle Y-axis base = 6 - (-2) = 8 units, height = 4 units. Area = 1/2 * 8 * 4 = 16 sq units (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A phone plan costs Rs 200 base fee plus Rs 1 per mobile data GB. (a) Write linear equation for total cost C for x GB. (b) Cost for 15 GB? (c) If bill was Rs 350, how many GB used?",
+                  "marking_scheme_answer": "(a) C = 1 * x + 200 = x + 200 (1 mark). (b) Cost for 15 GB = 15 + 200 = Rs 215 (1 mark). (c) 350 = x + 200 ==> x = 150 GB (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Chapter 13 Practice Paper (Algebraic Solutions (Substitution & Elimination))",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Graph of y = -3 is a line:",
+                  "options": [
+                    "Option A: Parallel to X-axis below origin",
+                    "Option B: Parallel to Y-axis",
+                    "Option C: Passing through origin",
+                    "Option D: Along Y-axis"
+                  ],
+                  "correct_answer": "Option A: Parallel to X-axis below origin",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If (3, a) lies on 2x - 3y = 12, value of a is:",
+                  "options": [
+                    "Option A: 2",
+                    "Option B: -2",
+                    "Option C: 6",
+                    "Option D: -6"
+                  ],
+                  "correct_answer": "Option B: -2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Find value of m if line y = mx + 3 passes through (2, 9).",
+                  "marking_scheme_answer": "9 = m(2) + 3 ==> 2m = 6 ==> m = 3 (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Determine if x + 2y - 4 = 0 and 2x + 4y - 12 = 0 intersect, coincide or are parallel using coefficient ratios.",
+                  "marking_scheme_answer": "a1/a2 = 1/2. b1/b2 = 2/4 = 1/2. c1/c2 = -4/-12 = 1/3 (1.5 marks). Since a1/a2 = b1/b2 != c1/c2, lines are parallel (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Solve system by substitution method: 3x - y = 3 and 9x - 3y = 9. Interpret result graphically and algebraically.",
+                  "marking_scheme_answer": "1. From Eq1, y = 3x - 3 (1 mark). 2. Substitute into Eq2: 9x - 3(3x - 3) = 9 ==> 9x - 9x + 9 = 9 ==> 9 = 9 (True identity) (2 marks). 3. Interpretation: System has infinitely many solutions; both equations represent coincident lines (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A shop sells pens (Rs x each) and notebooks (Rs y each). 3 pens + 2 notebooks = Rs 105. 2 pens + 4 notebooks = Rs 150. (a) Formulate system. (b) Find price of 1 pen and 1 notebook.",
+                  "marking_scheme_answer": "(a) 3x + 2y = 105 and 2x + 4y = 150 (1 mark). (b) Divide Eq2 by 2: x + 2y = 75 ==> x = 75 - 2y. Substitute into Eq1: 3(75 - 2y) + 2y = 105 ==> 225 - 4y = 105 ==> 4y = 120 ==> y = Rs 30 (notebook). x = 75 - 60 = Rs 15 (pen) (3 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Chapter 13 Practice Paper (Real-World Linear Modeling & Taxi Fares)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Equation of X-axis is:",
+                  "options": [
+                    "Option A: x = 0",
+                    "Option B: y = 0",
+                    "Option C: x + y = 0",
+                    "Option D: x = y"
+                  ],
+                  "correct_answer": "Option B: y = 0",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "System kx + 2y = 5 and 3x + y = 1 has UNIQUE solution if:",
+                  "options": [
+                    "Option A: k = 6",
+                    "Option B: k != 6",
+                    "Option C: k = 3",
+                    "Option D: k != 3"
+                  ],
+                  "correct_answer": "Option B: k != 6",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Draw rough graph sketch for x + y = 0 and state its slope.",
+                  "marking_scheme_answer": "y = -x. Line passes through origin (0,0) in quadrants 2 and 4. Slope m = -1 (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "If (2, -1) is solution of 2mx + 3y = 7 and 4x + ny = -10, calculate values of m and n.",
+                  "marking_scheme_answer": "1. 2m(2) + 3(-1) = 7 ==> 4m - 3 = 7 ==> 4m = 10 ==> m = 2.5 (1.5 marks). 2. 4(2) + n(-1) = -10 ==> 8 - n = -10 ==> n = 18 (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "Solve algebraically using cross-multiplication or elimination: 2x + 3y = 8 and 4x + 6y = 7. State whether system is consistent or inconsistent, and describe graph.",
+                  "marking_scheme_answer": "1. Multiply Eq1 by 2: 4x + 6y = 16 (1 mark). 2. Subtract Eq2: (4x + 6y) - (4x + 6y) = 16 - 7 ==> 0 = 9 (False contradiction) (2 marks). 3. System is INCONSISTENT; lines are parallel with zero solutions (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Temperature conversion: F = (9/5)C + 32. (a) If C = 30°C, find F. (b) If F = 95°F, find C. (c) Temperature where Fahrenheit and Celsius numerical values are equal?",
+                  "marking_scheme_answer": "(a) F = (9/5)*30 + 32 = 54 + 32 = 86°F (1 mark). (b) 95 = (9/5)C + 32 ==> 63 = (9/5)C ==> C = 35°C (1.5 marks). (c) Set x = (9/5)x + 32 ==> (-4/5)x = 32 ==> x = -40° (1.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 14,
+      "chapter_title": "Math of Space: Surface Area and Volume",
+      "question_papers": [
+        {
+          "paper_id": 1,
+          "paper_title": "Set 1 - Chapter 14 Practice Paper (Cuboid, Cube, and Cylinder Surface Area & Volume)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Total Surface Area (TSA) of a solid hemisphere of radius r is:",
+                  "options": [
+                    "Option A: 2*pi*r^2",
+                    "Option B: 3*pi*r^2",
+                    "Option C: 4*pi*r^2",
+                    "Option D: (2/3)*pi*r^3"
+                  ],
+                  "correct_answer": "Option B: 3*pi*r^2",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If radius of a sphere is doubled, its volume increases by factor of:",
+                  "options": [
+                    "Option A: 2",
+                    "Option B: 4",
+                    "Option C: 8",
+                    "Option D: 16"
+                  ],
+                  "correct_answer": "Option C: 8",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Cone has base radius 7cm and perpendicular height 24cm. Find slant height l and Curved Surface Area.",
+                  "marking_scheme_answer": "l = sqrt(7^2 + 24^2) = 25cm (1 mark). CSA = pi*r*l = (22/7)*7*25 = 550 cm^2 (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "A cylinder and cone have equal radius r and height h. State volume ratio V_cone : V_cylinder and Archimedes ratio V_cone : V_sphere : V_cylinder for height h=2r.",
+                  "marking_scheme_answer": "1. V_cone : V_cylinder = 1 : 3 (1.5 marks). 2. Archimedes ratio for h=2r is 1 : 2 : 3 (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A solid metallic sphere of radius 10.5cm is melted and recast into small solid cones of base radius 3.5cm and height 3cm. Calculate exact number of cones formed.",
+                  "marking_scheme_answer": "1. V_sphere = 4/3 * (22/7) * (10.5)^3 = 4851 cm^3 (2 marks). 2. V_cone = 1/3 * (22/7) * (3.5)^2 * 3 = 38.5 cm^3 (2 marks). 3. Number of cones = 4851 / 38.5 = 126 cones (1 mark).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Fermi estimation: Estimate uniform water layer thickness if all 1.38 billion km^3 Earth water spread over Earth surface (R = 6371km).",
+                  "marking_scheme_answer": "1. Earth surface area A = 4*pi*R^2 = 4 * 3.14159 * 6371^2 ~ 5.10 * 10^8 km^2 (2 marks). 2. Thickness t = Volume / Area = (1.38 * 10^9) / (5.10 * 10^8) = 2.71 km (approx 2,710 meters) (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 2,
+          "paper_title": "Set 2 - Chapter 14 Practice Paper (Cone and Pyramid Mensuration Formulas)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Volume of a cylinder of radius r and height h is:",
+                  "options": [
+                    "Option A: pi*r*h",
+                    "Option B: pi*r^2*h",
+                    "Option C: 2*pi*r*h",
+                    "Option D: (1/3)*pi*r^2*h"
+                  ],
+                  "correct_answer": "Option B: pi*r^2*h",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "For a fixed volume V, which cuboid shape minimizes surface area?",
+                  "options": [
+                    "Option A: Elongated box",
+                    "Option B: Flat box",
+                    "Option C: Cube",
+                    "Option D: Pyramid"
+                  ],
+                  "correct_answer": "Option C: Cube",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A cuboid has dimensions 10cm x 8cm x 6cm. Find Total Surface Area and Volume.",
+                  "marking_scheme_answer": "TSA = 2*(10*8 + 8*6 + 10*6) = 2*(80 + 48 + 60) = 376 cm^2 (1 mark). Volume = 10*8*6 = 480 cm^3 (1 mark).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "A cylindrical tank has radius 1.4m and height 5m. Calculate Curved Surface Area and capacity in liters (1 m^3 = 1000L).",
+                  "marking_scheme_answer": "1. CSA = 2*pi*r*h = 2*(22/7)*1.4*5 = 44 * 1.0 = 44 m^2 (1.5 marks). 2. Volume = pi*r^2*h = (22/7)*1.96*5 = 30.8 m^3 = 30,800 liters (1.5 marks).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A hemispherical dome has inner base radius 7m. (a) Find inner curved surface area. (b) Find inner volume capacity. (c) Cost of painting inner surface at Rs 20 per m^2.",
+                  "marking_scheme_answer": "(a) Inner CSA = 2*pi*r^2 = 2*(22/7)*49 = 308 m^2 (1.5 marks). (b) Volume = 2/3*pi*r^3 = (2/3)*(22/7)*343 = 718.67 m^3 (1.5 marks). (c) Painting cost = 308 * 20 = Rs 6,160 (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "16 metal spheres (r = 2cm) are packed in a box (16cm x 8cm x 8cm) and liquid preservative is poured to fill remaining space. (a) Box internal volume? (b) Volume of 16 spheres? (c) Volume of liquid required?",
+                  "marking_scheme_answer": "(a) V_box = 16*8*8 = 1024 cm^3 (1 mark). (b) V_spheres = 16 * (4/3)*(22/7)*8 = 536.16 cm^3 (1.5 marks). (c) V_liquid = 1024 - 536.16 = 487.84 cm^3 (~488 cm^3) (1.5 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 3,
+          "paper_title": "Set 3 - Chapter 14 Practice Paper (Sphere and Hemisphere Spatial Formulas)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Curved Surface Area (CSA) of a right circular cone is:",
+                  "options": [
+                    "Option A: pi*r*h",
+                    "Option B: pi*r*l",
+                    "Option C: 2*pi*r*l",
+                    "Option D: pi*r^2*l"
+                  ],
+                  "correct_answer": "Option B: pi*r*l",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "If radius of a sphere is increased by 10%, its volume increases by approx:",
+                  "options": [
+                    "Option A: 10%",
+                    "Option B: 21%",
+                    "Option C: 33.1%",
+                    "Option D: 100%"
+                  ],
+                  "correct_answer": "Option C: 33.1%",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "Show that increasing radius of a sphere by 10% increases volume by 33.1%.",
+                  "marking_scheme_answer": "V' = 4/3*pi*(1.10r)^3 = 1.331*V. Percentage increase = (1.331 - 1)*100 = 33.1% (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "A conical tent is 10m high and base radius is 24m. Calculate slant height and canvas cost at Rs 70 per m^2.",
+                  "marking_scheme_answer": "1. l = sqrt(10^2 + 24^2) = sqrt(676) = 26m (1 mark). 2. CSA = (22/7)*24*26 = 1961.14 m^2 (1 mark). 3. Cost = 1961.14 * 70 = Rs 137,280 (1 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A solid cylinder of height 15cm and diameter 12cm has a conical cavity of same height and base hollowed out. Find Total Surface Area and Volume of remaining solid.",
+                  "marking_scheme_answer": "1. r = 6cm, h = 15cm. Slant height l = sqrt(6^2 + 15^2) = sqrt(261) = 16.16cm (1 mark). 2. Remaining TSA = Cyl CSA + Cyl Base + Cone CSA = 2*pi*r*h + pi*r^2 + pi*r*l = pi*r*(2h + r + l) = (22/7)*6*(30 + 6 + 16.16) = 983.58 cm^2 (2 marks). 3. Remaining Volume = V_cyl - V_cone = (2/3)*pi*r^2*h = (2/3)*(22/7)*36*15 = 1131.43 cm^3 (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "Earth radius ~6370 km, Jupiter radius ~69900 km. (a) Surface area ratio (Jupiter : Earth)? (b) Volume ratio (Jupiter : Earth)?",
+                  "marking_scheme_answer": "(a) Area ratio = (r_J / r_E)^2 = (69900 / 6370)^2 = (10.973)^2 ~ 120.4 (2 marks). (b) Volume ratio = (10.973)^3 ~ 1,321 times Earth volume (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 4,
+          "paper_title": "Set 4 - Chapter 14 Practice Paper (Archimedes Cylinder-Sphere Volume Ratios & Subtraction)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Volume of a pyramid with base area B and height h is:",
+                  "options": [
+                    "Option A: B * h",
+                    "Option B: (1/2) * B * h",
+                    "Option C: (1/3) * B * h",
+                    "Option D: 2 * B * h"
+                  ],
+                  "correct_answer": "Option C: (1/3) * B * h",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Ratio of Total Surface Area of a solid hemisphere to its Curved Surface Area is:",
+                  "options": [
+                    "Option A: 2 : 1",
+                    "Option B: 3 : 2",
+                    "Option C: 4 : 3",
+                    "Option D: 1 : 1"
+                  ],
+                  "correct_answer": "Option B: 3 : 2",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A sphere has surface area 616 cm^2. Find its radius. [pi = 22/7].",
+                  "marking_scheme_answer": "4*(22/7)*r^2 = 616 ==> r^2 = (616 * 7) / 88 = 49 ==> r = 7 cm (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "A conical cup has depth 12cm and radius 5cm. If filled with water to depth 6cm, what fraction of its capacity is filled?",
+                  "marking_scheme_answer": "1. Height ratio is 6/12 = 1/2 (1 mark). 2. Volume scales with height cubed: V_water / V_cup = (1/2)^3 = 1/8 (1.5 marks). 3. It fills 1/8th (12.5%) of capacity (0.5 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A wooden toy is in the shape of a cone mounted on a hemisphere of same radius 3.5cm. Total height of toy is 15.5cm. Find Total Surface Area and Volume of toy.",
+                  "marking_scheme_answer": "1. Cone height h = 15.5 - 3.5 = 12cm. Slant height l = sqrt(3.5^2 + 12^2) = sqrt(12.25 + 144) = sqrt(156.25) = 12.5cm (1.5 marks). 2. Total TSA = Cone CSA + Hemisphere CSA = pi*r*l + 2*pi*r^2 = pi*r*(l + 2r) = (22/7)*3.5*(12.5 + 7) = 11 * 19.5 = 214.5 cm^2 (1.75 marks). 3. Total Volume = V_cone + V_hemisphere = 1/3*pi*r^2*h + 2/3*pi*r^3 = (1/3)*(22/7)*(12.25)*(12 + 7) = 243.83 cm^3 (1.75 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A rain gauge captures water into a cylinder of base diameter 14cm. Rainwater collected from a 10m x 10m roof reaches height h in cylinder. If rainfall is 1cm (0.01m): (a) Volume of rain on roof in m^3 and liters? (b) Water height in cylinder in cm?",
+                  "marking_scheme_answer": "(a) Roof water volume = 10 * 10 * 0.01 = 1 m^3 = 1,000 liters (2 marks). (b) Cylinder base area = pi*r^2 = (22/7)*(0.07)^2 = 0.0154 m^2. Height h = 1 / 0.0154 = 64.94 m (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "paper_id": 5,
+          "paper_title": "Set 5 - Chapter 14 Practice Paper (Fermi Estimation & Global Spatial Modeling)",
+          "total_marks": 25,
+          "time_allowed_minutes": 45,
+          "sections": [
+            {
+              "section_name": "Section A (MCQs)",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "If edge of a cube is doubled, its Total Surface Area increases by factor of:",
+                  "options": [
+                    "Option A: 2",
+                    "Option B: 4",
+                    "Option C: 6",
+                    "Option D: 8"
+                  ],
+                  "correct_answer": "Option B: 4",
+                  "marks": 1
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "The ratio of volume of a cylinder to a cone of same radius and height is:",
+                  "options": [
+                    "Option A: 1 : 3",
+                    "Option B: 3 : 1",
+                    "Option C: 1 : 1",
+                    "Option D: 2 : 3"
+                  ],
+                  "correct_answer": "Option B: 3 : 1",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "section_name": "Section B (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 3,
+                  "question_text": "A metallic sphere of radius 6cm is melted and drawn into a wire of radius 0.2cm. Find length of wire.",
+                  "marking_scheme_answer": "4/3 * pi * 6^3 = pi * (0.2)^2 * L ==> 4/3 * 216 = 0.04 * L ==> 288 = 0.04 * L ==> L = 7200 cm = 72 meters (2 marks).",
+                  "marks": 2
+                }
+              ]
+            },
+            {
+              "section_name": "Section C (Short Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 4,
+                  "question_text": "Construct a master formula comparison table for Cuboid, Cylinder, Cone, Sphere, Hemisphere listing CSA/LSA, TSA, and Volume.",
+                  "marking_scheme_answer": "1. Cuboid: 2h(l+w), 2(lw+wh+lh), lwh (0.6 mark). 2. Cylinder: 2pirh, 2pir(r+h), pir^2h (0.6 mark). 3. Cone: pirl, pir(r+l), 1/3pir^2h (0.6 mark). 4. Sphere: 4pir^2, 4pir^2, 4/3pir^3 (0.6 mark). 5. Hemisphere: 2pir^2, 3pir^2, 2/3pir^3 (0.6 mark).",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "section_name": "Section D (Long Answer Questions)",
+              "questions": [
+                {
+                  "question_number": 5,
+                  "question_text": "A hollow spherical shell has external radius 9cm and internal radius 8cm. Metal density is 7g/cm^3. (a) Calculate volume of metal shell. (b) Calculate mass of shell in kg.",
+                  "marking_scheme_answer": "(a) V_metal = 4/3 * pi * (R^3 - r^3) = (4/3) * (22/7) * (729 - 512) = (88/21) * 217 = 909.33 cm^3 (3 marks). (b) Mass = Volume * Density = 909.33 * 7 = 6365.33 g = 6.365 kg (2 marks).",
+                  "marks": 5
+                }
+              ]
+            },
+            {
+              "section_name": "Section E (Case Study / Competency Questions)",
+              "questions": [
+                {
+                  "question_number": 6,
+                  "question_text": "A circus tent is cylindrical up to 3m height and conical above it with same base radius 14m and total height 135m. (a) Find slant height of conical portion. (b) Calculate total canvas surface area needed.",
+                  "marking_scheme_answer": "(a) Cone height h = 135 - 3 = 132m. Slant height l = sqrt(14^2 + 132^2) = sqrt(196 + 17424) = sqrt(17620) = 132.74m (2 marks). (b) Total Area = Cyl CSA + Cone CSA = 2*pi*r*h_cyl + pi*r*l = (22/7)*14*(2*3 + 132.74) = 44 * 138.74 = 6104.56 m^2 (2 marks).",
+                  "marks": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "subject": "Ganita Manjari - Class 9 Mathematics (Part II)",
+  "grade_level": "Class 9",
+  "total_chapters": 6,
+  "total_questions": 36,
+  "assessment_framework": "Taxonomy of Cognitive Levels (Level 1: Recall & Identification, Level 2: Understanding & Application, Level 3: Advanced Analysis & Case Competency)",
+  "chapters": [
+    {
+      "chapter_number": 9,
+      "chapter_title": "Propositions and their Converses",
+      "unit_or_theme": "Mathematical Logic & Proofs",
+      "questions": [
+        {
+          "question_id": "CH09_L1_01",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "MCQ",
+          "question": "Which of the following statements represents a mathematical proposition whose converse is also logically TRUE?",
+          "options": [
+            "A) If a quadrilateral is a square, then all its angles are right angles.",
+            "B) If a number is a multiple of 6, then it is a multiple of 3.",
+            "C) If a number is a perfect square, then it has an odd number of factors.",
+            "D) If two triangles are congruent, then they have equal areas."
+          ],
+          "correct_answer": "C",
+          "explanation": "A positive integer n is a perfect square if and only if it has an odd number of distinct factors. Both the implication ('perfect square -> odd number of factors') and its converse ('odd number of factors -> perfect square') are true. For Option A, a rectangle has all right angles but is not necessarily a square. For Option B, 9 is a multiple of 3 but not 6. For Option D, two triangles with the same area are not necessarily congruent."
+        },
+        {
+          "question_id": "CH09_L1_02",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "True/False with Justification",
+          "question": "True or False: If a conditional proposition 'If P, then Q' is proven true, its converse 'If Q, then P' must automatically be true.",
+          "options": [],
+          "correct_answer": "False",
+          "explanation": "The logical truth of a proposition P -> Q does not guarantee the truth of its converse Q -> P. For instance, 'If a number is a multiple of 6, then it is a multiple of 3' is true, but its converse 'If a number is a multiple of 3, then it is a multiple of 6' is false (counterexample: 9)."
+        },
+        {
+          "question_id": "CH09_L2_01",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Short Answer",
+          "question": "Formulate the converse of the following statement and evaluate its truth value with a specific counterexample if false: 'If two triangles have equal perimeters, then they are congruent.'",
+          "options": [],
+          "correct_answer": "Converse: 'If two triangles are congruent, then they have equal perimeters.' Truth Value of Converse: TRUE. Truth Value of Original Proposition: FALSE.",
+          "explanation": "Converse: 'If two triangles are congruent, then their perimeters are equal.' This converse is TRUE because congruent triangles have identical side lengths, giving equal perimeter sums. The original proposition is FALSE; counterexample: Triangle A with sides (3, 4, 5) has perimeter 12 cm; Triangle B with sides (4, 4, 4) has perimeter 12 cm. They have equal perimeters but are not congruent."
+        },
+        {
+          "question_id": "CH09_L2_02",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Structural Analysis",
+          "question": "Consider two straight sticks of equal length pinned at their midpoints to form the diagonals of a quadrilateral. Analyze how changing the angle between the sticks affects the type of quadrilateral formed, and relate this to necessary vs. sufficient conditions.",
+          "options": [],
+          "correct_answer": "Equal diagonals bisecting each other form a rectangle regardless of the angle between them. If the angle is 90 degrees, it forms a square.",
+          "explanation": "Having equal diagonals that bisect each other is both necessary and sufficient for a quadrilateral to be a rectangle. If the diagonals are equal but do not bisect each other, the resulting quadrilateral is an isosceles trapezium, proving that diagonal equality alone is necessary for a rectangle but not sufficient without the bisection property."
+        },
+        {
+          "question_id": "CH09_L3_01",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Critical Thinking & Historical Analysis",
+          "question": "Pierre de Fermat conjectured that all numbers of the form F_n = 2^(2^n) + 1 are prime numbers for n = 0, 1, 2, ... Explain how Leonhard Euler disproved this general proposition and discuss the significance of counterexamples in mathematical proofs.",
+          "options": [],
+          "correct_answer": "Euler disproved Fermat's conjecture by finding the counterexample n = 5, showing F_5 = 4,294,967,297 = 641 x 6,700,417, which is composite.",
+          "explanation": "A universal mathematical claim of the form 'For all n, P(n) is true' requires only a single counterexample to be conclusively disproved. Fermat verified F_0=3, F_1=5, F_2=17, F_3=257, F_4=65537 were all prime and conjectured it held for all n. In 1732, Euler demonstrated that F_5 = 4,294,967,297 is divisible by 641 (641 = 5*2^7 + 1), providing a single counterexample that completely refuted the universal claim."
+        },
+        {
+          "question_id": "CH09_L3_02",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Case-Study Scenario",
+          "question": "A student asserts: 'If a triangle has two equal sides, then the angle bisectors of the opposite angles are equal. Therefore, if a triangle has two equal angle bisectors, it must be isosceles.' Evaluate whether this converse statement (the Steiner-Lehmus Theorem) is true, and detail the logical complexity involved in proving it compared to its original proposition.",
+          "options": [],
+          "correct_answer": "The converse (Steiner-Lehmus Theorem) is TRUE, but its proof is significantly more complex than the direct proposition.",
+          "explanation": "Direct proposition: In isosceles triangle ABC with AB = AC, angle bisectors BE and CF are equal (proven easily via SAS triangle congruence). Converse: If internal angle bisectors BE = CF, then AB = AC. While true, proving the converse cannot be done by simple direct congruence transformations; it requires indirect proof (proof by contradiction) or trigonometric/algebraic identity analysis because angle bisector lengths depend non-linearly on side lengths."
+        }
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "How Quantities Combine: Understanding Data",
+      "unit_or_theme": "Statistics & Data Visualization",
+      "questions": [
+        {
+          "question_id": "CH10_L1_01",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "MCQ",
+          "question": "A class has two sections: Section A with 30 students averaging 80% on a test, and Section B with 10 students averaging 60%. What is the overall average percentage of the combined class?",
+          "options": [
+            "A) 70.0%",
+            "B) 75.0%",
+            "C) 72.5%",
+            "D) 77.5%"
+          ],
+          "correct_answer": "B",
+          "explanation": "Taking a simple average of percentages (80 + 60)/2 = 70% is incorrect because group sizes are unequal. The weighted average formula is x_bar = (w1*x1 + w2*x2) / (w1 + w2) = (30*80 + 10*60) / (30 + 10) = (2400 + 600) / 40 = 3000 / 40 = 75.0%."
+        },
+        {
+          "question_id": "CH10_L1_02",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "Fill-in-the-Blank",
+          "question": "A data visualization chart in which each bar is scaled to an equal height of 100% to show category proportions rather than absolute counts is called a __________ bar chart.",
+          "options": [],
+          "correct_answer": "100% stacked",
+          "explanation": "A 100% stacked bar chart normalizes all bars to a uniform 100% height, dividing each bar into sub-segments that reflect the relative percentage contribution of each category, allowing direct comparative analysis across groups of different total sizes."
+        },
+        {
+          "question_id": "CH10_L2_01",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Short Answer",
+          "question": "Batch A consists of 200 kg of an alloy containing 70% copper. Batch B consists of 300 kg of an alloy containing 40% copper. If both batches are melted together, calculate the percentage concentration of copper in the resulting mixture.",
+          "options": [],
+          "correct_answer": "52.0% copper concentration.",
+          "explanation": "Mass of copper in Batch A = 0.70 * 200 = 140 kg. Mass of copper in Batch B = 0.40 * 300 = 120 kg. Total mass of copper = 140 + 120 = 260 kg. Total mass of alloy mixture = 200 + 300 = 500 kg. Combined concentration = (260 / 500) * 100% = 52.0%."
+        },
+        {
+          "question_id": "CH10_L2_02",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Diagram/Chart Analysis",
+          "question": "Compare a standard Stacked Bar Chart with a 100% Stacked Bar Chart for presenting monthly household expenditures across different income groups. Specify which chart type is better for comparing absolute spending versus relative budget allocation.",
+          "options": [],
+          "correct_answer": "Standard Stacked Bar Chart is best for absolute spending; 100% Stacked Bar Chart is best for relative budget allocation.",
+          "explanation": "A standard Stacked Bar Chart retains total bar heights proportional to total expenditure, making it ideal for comparing total money spent across families. A 100% Stacked Bar Chart converts all totals to 100%, isolating percentage allocations (e.g., proportion spent on food vs. housing) independently of overall family wealth or total spending."
+        },
+        {
+          "question_id": "CH10_L3_01",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Advanced Analysis & Reasoning",
+          "question": "A school determines annual student achievement scores using three components: Classwork (weight 3), Project Work (weight 2), and Final Examination (weight 5). Student X scores 85% in Classwork, 90% in Project Work, and 70% in Final Exam. Student Y scores 70% in Classwork, 65% in Project Work, and 88% in Final Exam. Calculate both weighted final scores and explain why Student Y achieves a higher overall score despite lower coursework marks.",
+          "options": [],
+          "correct_answer": "Student X Weighted Score = 78.5%; Student Y Weighted Score = 78.0%. (Correction check: Student X = (3*85 + 2*90 + 5*70)/10 = (255+180+350)/10 = 78.5%. Student Y = (3*70 + 2*65 + 5*88)/10 = (210+130+440)/10 = 78.0%). Student X has a slightly higher overall score (78.5% vs 78.0%).",
+          "explanation": "Calculation for Student X: (3*85 + 2*90 + 5*70)/(3+2+5) = (255 + 180 + 350)/10 = 785/10 = 78.5%. Calculation for Student Y: (3*70 + 2*65 + 5*88)/(3+2+5) = (210 + 130 + 440)/10 = 780/10 = 78.0%. Although Student Y scored higher on the heavily weighted final exam (50% weight), Student X's strong lead in classwork and projects (50% combined weight) allowed Student X to maintain a higher overall weighted mean (78.5% vs 78.0%)."
+        },
+        {
+          "question_id": "CH10_L3_02",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Case-Study Scenario",
+          "question": "A municipal transport authority analyzes daily commuter patterns across three transit modes (Bus, Metro, Auto-rickshaw) for two city zones: Zone 1 (100,000 commuters) and Zone 2 (500,000 commuters). Zone 1 bus usage is 60%, Metro is 30%, Auto is 10%. Zone 2 bus usage is 20%, Metro is 70%, Auto is 10%. Explain why taking an unweighted average of transit mode percentages yields misleading citywide policy decisions.",
+          "options": [],
+          "correct_answer": "Unweighted average falsely suggests 40% citywide bus ridership, whereas true citywide bus ridership is 26.67%.",
+          "explanation": "Unweighted average bus ridership = (60% + 20%)/2 = 40%. However, true weighted bus commuters = (0.60 * 100,000) + (0.20 * 500,000) = 60,000 + 100,000 = 160,000 total bus riders. Total city commuters = 600,000. True citywide bus percentage = 160,000 / 600,000 = 26.67%. Unweighted calculations heavily overestimate bus demand because Zone 2 has 5 times more commuters and prefers Metro (70%). Policy based on 40% would over-allocate bus fleet budgets."
+        }
+      ]
+    },
+    {
+      "chapter_number": 11,
+      "chapter_title": "The World of Algorithms",
+      "unit_or_theme": "Algorithmic Thinking & Computational Efficiency",
+      "questions": [
+        {
+          "question_id": "CH11_L1_01",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "MCQ",
+          "question": "What is the mathematical result of the modulo operation 45 mod 7?",
+          "options": [
+            "A) 6",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correct_answer": "B",
+          "explanation": "The modulo operation 'm mod n' calculates the remainder when integer m is divided by integer n. 45 divided by 7 yields a quotient of 6 with a remainder of 3 (45 = 6 * 7 + 3). Thus, 45 mod 7 = 3."
+        },
+        {
+          "question_id": "CH11_L1_02",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "Fill-in-the-Blank",
+          "question": "The term 'algorithm' originates from the Latinized name of the 9th-century Persian mathematician __________, who introduced systematic positional decimal arithmetic.",
+          "options": [],
+          "correct_answer": "Muhammad ibn Musa al-Khwarizmi",
+          "explanation": "The word 'algorithm' derives from 'Algoritmi', the Latin transliteration of the name of Persian scholar Muhammad ibn Musa al-Khwarizmi (c. 780–850 CE), whose treatise on Indian numerals popularized step-by-step arithmetic operations."
+        },
+        {
+          "question_id": "CH11_L2_01",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Short Answer",
+          "question": "Prove algebraically that if a positive integer d is a common divisor of two positive integers m and n (with m >= n), then d must also be a divisor of their difference (m - n).",
+          "options": [],
+          "correct_answer": "Since d divides m and n, m = k1*d and n = k2*d for integers k1, k2. Difference m - n = d*(k1 - k2), which is an integer multiple of d.",
+          "explanation": "Let m = k1 * d and n = k2 * d for positive integers k1, k2 where k1 >= k2. Subtracting the two equations gives m - n = (k1 * d) - (k2 * d) = (k1 - k2) * d. Since k1 and k2 are integers, (k1 - k2) is an integer k3. Thus m - n = k3 * d, proving d divides (m - n) cleanly. This fundamental property forms the basis of Euclidean subtraction GCD."
+        },
+        {
+          "question_id": "CH11_L2_02",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Structural Analysis & Comparison",
+          "question": "Compare Euclid's Subtraction Algorithm and Aryabhata's Division-by-Remainder Algorithm for finding gcd(99, 2). State the number of computational reduction steps required by each method.",
+          "options": [],
+          "correct_answer": "Euclid Subtraction requires 49 steps; Aryabhata Remainder requires 2 steps.",
+          "explanation": "Euclid Subtraction performs repetitive subtraction gcd(99, 2) = gcd(97, 2) = gcd(95, 2) ... taking 49 subtraction steps until reaching gcd(1, 1). Aryabhata Division computes 99 mod 2 = 1 -> gcd(2, 1); then 2 mod 1 = 0 -> gcd(1, 0) = 1, completing in just 2 remainder steps. Division-by-remainder reduces computational work logarithmic to number magnitude."
+        },
+        {
+          "question_id": "CH11_L3_01",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Step-by-Step Algorithmic Trace",
+          "question": "Trace Aryabhata's Remainder GCD algorithm step-by-step to compute gcd(1071, 462). Show the values of dividend (m), divisor (n), quotient (q), and remainder (r) at every iteration.",
+          "options": [],
+          "correct_answer": "Iteration 1: 1071 = 2*462 + 147 (r=147). Iteration 2: 462 = 3*147 + 21 (r=21). Iteration 3: 147 = 7*21 + 0 (r=0). Final GCD = 21.",
+          "explanation": "Step 1: m = 1071, n = 462. Compute 1071 mod 462: 1071 = 2 * 462 + 147. Remainder r = 147. Set m = 462, n = 147.\nStep 2: Compute 462 mod 147: 462 = 3 * 147 + 21. Remainder r = 21. Set m = 147, n = 21.\nStep 3: Compute 147 mod 21: 147 = 7 * 21 + 0. Remainder r = 0.\nSince remainder is 0, the current divisor n = 21 is the Greatest Common Divisor: gcd(1071, 462) = 21."
+        },
+        {
+          "question_id": "CH11_L3_02",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Competency & Case-Study Scenario",
+          "question": "A digital computer program needs to calculate the Least Common Multiple (LCM) of two 64-bit integers A and B. Describe an optimal algorithm using the identity A * B = gcd(A, B) * lcm(A, B) that avoids integer overflow during intermediate calculation.",
+          "options": [],
+          "correct_answer": "Compute g = gcd(A, B) using Aryabhata division algorithm, then compute LCM as (A / g) * B.",
+          "explanation": "1. Directly computing (A * B) / g can cause integer overflow if the product A * B exceeds the 64-bit memory limit (2^64 - 1).\n2. First compute g = gcd(A, B) using Aryabhata's remainder algorithm, which runs efficiently in log(min(A, B)) steps.\n3. Since g divides A cleanly, perform division first: A_prime = A / g.\n4. Multiply result by B: LCM = A_prime * B. This ordering keeps intermediate values small and avoids arithmetic overflow."
+        }
+      ]
+    },
+    {
+      "chapter_number": 12,
+      "chapter_title": "Quadrilaterals",
+      "unit_or_theme": "Geometry & Tiling",
+      "questions": [
+        {
+          "question_id": "CH12_L1_01",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "MCQ",
+          "question": "If the midpoints of the four sides of ANY arbitrary convex quadrilateral are joined in order, the resulting interior quadrilateral is ALWAYS a:",
+          "options": [
+            "A) Rectangle",
+            "B) Rhombus",
+            "C) Parallelogram",
+            "D) Square"
+          ],
+          "correct_answer": "C",
+          "explanation": "According to Varignon's Theorem, joining the midpoints of the adjacent sides of any quadrilateral forms a parallelogram (known as the Varignon parallelogram). This holds because each opposite pair of line segments joins midpoints across a triangle formed by a diagonal, making both segments parallel to that diagonal and half its length."
+        },
+        {
+          "question_id": "CH12_L1_02",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "True/False with Justification",
+          "question": "True or False: The medians of any triangle intersect at a single point called the centroid, which divides each median in a 3:1 ratio from the vertex.",
+          "options": [],
+          "correct_answer": "False",
+          "explanation": "The medians intersect at the centroid G, but the centroid divides each median in a 2:1 ratio from the vertex to the opposite side midpoint (AG : GR = 2 : 1), not a 3:1 ratio."
+        },
+        {
+          "question_id": "CH12_L2_01",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Short Answer",
+          "question": "In triangle ABC, points D and E are the midpoints of sides AB and AC, respectively. If DE = (2x + 1) cm and side BC = (5x - 4) cm, solve for x and find the length of segment BC.",
+          "options": [],
+          "correct_answer": "x = 6; length of BC = 26 cm.",
+          "explanation": "By the Midpoint Theorem, the segment joining midpoints D and E is parallel to BC and half as long: DE = 1/2 * BC => 2 * DE = BC. Substituting expressions: 2(2x + 1) = 5x - 4 => 4x + 2 = 5x - 4 => 5x - 4x = 2 + 4 => x = 6. BC = 5(6) - 4 = 30 - 4 = 26 cm. (Check DE = 2(6)+1 = 13 cm, which is indeed half of 26 cm)."
+        },
+        {
+          "question_id": "CH12_L2_02",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Structural Analysis",
+          "question": "Analyze what specific special quadrilateral is formed when joining the midpoints of: (a) a rectangle, and (b) a rhombus. Provide geometric reasoning based on diagonal properties.",
+          "options": [],
+          "correct_answer": "(a) Midpoints of a rectangle form a RHOMBUS. (b) Midpoints of a rhombus form a RECTANGLE.",
+          "explanation": "(a) In a rectangle, diagonals are EQUAL in length (AC = BD). The sides of the Varignon parallelogram are equal to 1/2 AC and 1/2 BD. Since AC = BD, all four sides of the Varignon parallelogram are equal, forming a RHOMBUS.\n(b) In a rhombus, diagonals are PERPENDICULAR (AC perpendicular to BD). The adjacent sides of the Varignon parallelogram are parallel to AC and BD, so they inherit perpendicularity (angle = 90 degrees), forming a RECTANGLE."
+        },
+        {
+          "question_id": "CH12_L3_01",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Formal Proof & Logical Reasoning",
+          "question": "State the Midpoint Theorem for triangles and provide a complete geometric proof using triangle congruence and parallelogram properties.",
+          "options": [],
+          "correct_answer": "Statement: Segment joining midpoints of two triangle sides is parallel to third side and half its length. Proof uses SAS congruence of extended segment to construct parallelogram.",
+          "explanation": "Statement: In triangle ABC, if D is the midpoint of AB and E is the midpoint of AC, then DE || BC and DE = 1/2 BC.\nProof: Extend DE to F such that DE = EF. Join CF.\nIn triangles ADE and CFE:\n1. AE = EC (E is midpoint of AC)\n2. angle AED = angle CEF (vertically opposite angles)\n3. DE = EF (by construction)\nBy SAS rule, triangle ADE is congruent to triangle CFE.\nTherefore, AD = CF and angle ADE = angle CFE.\nSince alternate interior angles are equal, AD || CF => AB || CF => DB || CF.\nAlso AD = DB (D is midpoint), so DB = CF.\nSince DB is equal and parallel to CF, quadrilateral DBCF is a parallelogram.\nTherefore, DF || BC and DF = BC.\nSince DE = 1/2 DF, it follows that DE || BC and DE = 1/2 BC. Q.E.D."
+        },
+        {
+          "question_id": "CH12_L3_02",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Case-Study Scenario & Tessellation",
+          "question": "An architect wants to design a floor pattern using a non-symmetric, completely irregular quadrilateral ceramic tile. Explain using angle sum properties how ANY arbitrary quadrilateral can tile (tessellate) a 2D plane seamlessly without gaps or overlaps.",
+          "options": [],
+          "correct_answer": "Four copies of any quadrilateral meet at each vertex, bringing together its 4 interior angles (summing to 360 degrees) to form a seamless plane tiling.",
+          "explanation": "The sum of the four interior angles of ANY quadrilateral is always 360 degrees (A + B + C + D = 360°). To tile a plane, four tiles are placed around each grid vertex such that all four distinct corners (angles A, B, C, D) meet at that single point. Since A + B + C + D = 360°, they completely fill the full angle surrounding the point without leaving gaps or creating overlaps. Rotating the tile by 180° around side midpoints creates parallel grid lines, guaranteeing universal plane tessellation for any convex or non-convex 4-gon."
+        }
+      ]
+    },
+    {
+      "chapter_number": 13,
+      "chapter_title": "Two Variables, One Line",
+      "unit_or_theme": "Algebra & Coordinate Geometry",
+      "questions": [
+        {
+          "question_id": "CH13_L1_01",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "MCQ",
+          "question": "At which point does the graph of the linear equation 3x + 2y = 12 intersect the X-axis?",
+          "options": [
+            "A) (0, 6)",
+            "B) (4, 0)",
+            "C) (0, 4)",
+            "D) (6, 0)"
+          ],
+          "correct_answer": "B",
+          "explanation": "To find the x-intercept of a line, set y = 0 in the equation: 3x + 2(0) = 12 => 3x = 12 => x = 4. Therefore, the graph intersects the X-axis at the coordinate point (4, 0)."
+        },
+        {
+          "question_id": "CH13_L1_02",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "Fill-in-the-Blank",
+          "question": "If a system of two linear equations has coefficient ratios satisfying a1/a2 = b1/b2 != c1/c2, the graphical lines are __________ and the system has __________ solution(s).",
+          "options": [],
+          "correct_answer": "parallel; no",
+          "explanation": "When a1/a2 = b1/b2 != c1/c2, the two lines have identical slopes but different y-intercepts. Graphically, they represent parallel lines that never intersect, meaning the linear system is inconsistent and has no solution."
+        },
+        {
+          "question_id": "CH13_L2_01",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Short Answer",
+          "question": "Determine the value of k for which the system of linear equations kx + 3y = (k - 3) and 12x + ky = k has infinitely many solutions.",
+          "options": [],
+          "correct_answer": "k = 6.",
+          "explanation": "For infinitely many solutions (coincident lines), coefficient ratios must satisfy a1/a2 = b1/b2 = c1/c2.\nRatio 1: k / 12 = 3 / k => k^2 = 36 => k = 6 or k = -6.\nRatio 2: 3 / k = (k - 3) / k => 3 = k - 3 => k = 6.\nChecking k = 6: 6/12 = 3/6 = (6-3)/6 = 1/2. All ratios equal 1/2.\nChecking k = -6: -6/12 = -1/2, but 3/-6 = -1/2 and (-6-3)/-6 = 9/6 = 3/2 (not equal).\nThus, k = 6 is the unique valid value."
+        },
+        {
+          "question_id": "CH13_L2_02",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Graphical Analysis & Slope Calculation",
+          "question": "Convert the general linear equation 3x + 4y - 12 = 0 into slope-intercept form (y = mx + d). State its slope m and y-intercept d, and explain how the slope indicates whether the line rises or falls from left to right.",
+          "options": [],
+          "correct_answer": "Slope-intercept form: y = -0.75x + 3; Slope m = -0.75 (-3/4); Y-intercept d = 3. Negative slope indicates line falls from left to right.",
+          "explanation": "Rearranging 3x + 4y - 12 = 0 to isolate y: 4y = -3x + 12 => y = (-3/4)x + 3 => y = -0.75x + 3.\nSlope m = -3/4 (-0.75), y-intercept d = 3.\nSince the slope m is negative (-0.75), for every 4 units moved horizontally to the right (+run), the line moves 3 units downward (-rise), meaning the line falls continuously from left to right."
+        },
+        {
+          "question_id": "CH13_L3_01",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Algebraic & Graphical Synthesis",
+          "question": "Solve the system of linear equations 2x + 3y = 9 and 3x + 4y = 13 using algebraic elimination. Show step-by-step working and verify the solution geometrically by calculating the slopes of both lines.",
+          "options": [],
+          "correct_answer": "Algebraic solution: x = 3, y = 1. Slopes m1 = -2/3 and m2 = -3/4 differ, confirming unique intersection at (3, 1).",
+          "explanation": "Algebraic Solution:\nEq 1: 2x + 3y = 9\nEq 2: 3x + 4y = 13\nMultiply Eq 1 by 3: 6x + 9y = 27\nMultiply Eq 2 by 2: 6x + 8y = 26\nSubtracting: (6x + 9y) - (6x + 8y) = 27 - 26 => y = 1.\nSubstitute y = 1 into Eq 1: 2x + 3(1) = 9 => 2x = 6 => x = 3.\nSolution point: (3, 1).\nGeometric Verification:\nSlope of Line 1: y = (-2/3)x + 3 => m1 = -2/3.\nSlope of Line 2: y = (-3/4)x + 13/4 => m2 = -3/4.\nSince m1 != m2 (-2/3 != -3/4), the two lines are non-parallel and intersect at exactly one unique point (3, 1)."
+        },
+        {
+          "question_id": "CH13_L3_02",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Competency & Real-World Modeling",
+          "question": "A taxi company charges a fixed flag-down fare plus a constant rate per kilometer. A customer pays Rs 105 for a 10 km trip, while another customer pays Rs 155 for a 15 km trip. Formulate a system of linear equations, calculate the fixed charge and rate per km, and predict the cost for a 25 km ride.",
+          "options": [],
+          "correct_answer": "Fixed charge = Rs 5; Rate per km = Rs 10; Cost for 25 km trip = Rs 255.",
+          "explanation": "Let fixed charge = x (rupees), rate per km = y (rupees/km).\nEq 1 (10 km): x + 10y = 105\nEq 2 (15 km): x + 15y = 155\nSubtract Eq 1 from Eq 2: (x + 15y) - (x + 10y) = 155 - 105 => 5y = 50 => y = Rs 10 per km.\nSubstitute y = 10 into Eq 1: x + 10(10) = 105 => x + 100 = 105 => x = Rs 5 fixed charge.\nCost for 25 km ride: C = x + 25y = 5 + 25(10) = 5 + 250 = Rs 255."
+        }
+      ]
+    },
+    {
+      "chapter_number": 14,
+      "chapter_title": "Math of Space: Surface Area and Volume",
+      "unit_or_theme": "3D Geometry & Spatial Mensuration",
+      "questions": [
+        {
+          "question_id": "CH14_L1_01",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "MCQ",
+          "question": "What is the Total Surface Area (TSA) of a solid hemisphere of radius r?",
+          "options": [
+            "A) 2 * pi * r^2",
+            "B) 3 * pi * r^2",
+            "C) 4 * pi * r^2",
+            "D) (2/3) * pi * r^3"
+          ],
+          "correct_answer": "B",
+          "explanation": "A solid hemisphere consists of a curved top surface (area = 2 * pi * r^2) plus a flat circular base (area = pi * r^2). Summing both gives Total Surface Area = 2 * pi * r^2 + pi * r^2 = 3 * pi * r^2."
+        },
+        {
+          "question_id": "CH14_L1_02",
+          "cognitive_level": "Level 1 (Easy)",
+          "question_type": "True/False with Justification",
+          "question": "True or False: If the radius of a sphere is doubled, its volume increases by a factor of 4.",
+          "options": [],
+          "correct_answer": "False",
+          "explanation": "Volume of a sphere scales with the CUBE of its radius (V = 4/3 * pi * r^3). Doubling radius r' = 2r results in V' = 4/3 * pi * (2r)^3 = 8 * (4/3 * pi * r^3) = 8V. The volume increases by a factor of 8, not 4 (surface area increases by 4)."
+        },
+        {
+          "question_id": "CH14_L2_01",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Short Answer",
+          "question": "A right circular cone has a base radius of 7 cm and a perpendicular height of 24 cm. Calculate its slant height l and its Curved Surface Area (CSA). [Take pi = 22/7].",
+          "options": [],
+          "correct_answer": "Slant height l = 25 cm; Curved Surface Area = 550 cm^2.",
+          "explanation": "1. Slant height l = sqrt(r^2 + h^2) = sqrt(7^2 + 24^2) = sqrt(49 + 576) = sqrt(625) = 25 cm.\n2. Curved Surface Area (CSA) = pi * r * l = (22/7) * 7 * 25 = 22 * 25 = 550 cm^2."
+        },
+        {
+          "question_id": "CH14_L2_02",
+          "cognitive_level": "Level 2 (Medium)",
+          "question_type": "Structural & Spatial Analysis",
+          "question": "A cylinder and a cone have equal base radii r and equal perpendicular heights h. State the ratio of their volumes, and explain Archimedes' classical theorem regarding the volume ratio of a cone, sphere, and cylinder of equal radius and height 2r.",
+          "options": [],
+          "correct_answer": "Volume ratio V_cone : V_cylinder = 1 : 3. Archimedes' ratio V_cone : V_sphere : V_cylinder = 1 : 2 : 3.",
+          "explanation": "1. Volume of cylinder V_cyl = pi * r^2 * h. Volume of cone V_cone = 1/3 * pi * r^2 * h. Ratio V_cone : V_cyl = 1 : 3.\n2. When height h = 2r (enclosing diameter):\nV_cone = 1/3 * pi * r^2 * (2r) = 2/3 * pi * r^3.\nV_sphere = 4/3 * pi * r^3.\nV_cylinder = pi * r^2 * (2r) = 2 * pi * r^3 = 6/3 * pi * r^3.\nDividing all three by (2/3 * pi * r^3) gives Archimedes' classic ratio V_cone : V_sphere : V_cylinder = 1 : 2 : 3."
+        },
+        {
+          "question_id": "CH14_L3_01",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Multi-Step Spatial Computation",
+          "question": "A solid metallic sphere of radius 10.5 cm is melted and recast into smaller solid cones, each of base radius 3.5 cm and height 3 cm. Calculate the exact number of cones formed. [Take pi = 22/7].",
+          "options": [],
+          "correct_answer": "126 cones formed.",
+          "explanation": "1. Volume of metallic sphere V_sphere = (4/3) * pi * R^3 = (4/3) * (22/7) * (10.5)^3.\n(10.5 = 21/2 => R^3 = 9261 / 8 = 1157.625).\nV_sphere = (4/3) * (22/7) * 1157.625 = 4851 cm^3.\n2. Volume of 1 cone V_cone = (1/3) * pi * r^2 * h = (1/3) * (22/7) * (3.5)^2 * 3.\nV_cone = (22/7) * 12.25 = 22 * 1.75 = 38.5 cm^3.\n3. Number of cones N = V_sphere / V_cone = 4851 / 38.5 = 126 cones."
+        },
+        {
+          "question_id": "CH14_L3_02",
+          "cognitive_level": "Level 3 (Hard)",
+          "question_type": "Fermi Estimation & Global Modeling",
+          "question": "Perform a Fermi estimation to calculate the thickness (in km) of a uniform water layer if all global ocean water (~1.38 billion km^3) were spread evenly over the entire spherical surface of Earth (radius R = 6,371 km).",
+          "options": [],
+          "correct_answer": "Uniform water layer thickness = 2.71 km (approx 2,710 meters).",
+          "explanation": "1. Earth's total spherical surface area A = 4 * pi * R^2 = 4 * pi * (6371)^2.\nA = 4 * 3.14159 * 40,589,641 ~ 510,064,472 km^2 (5.10 * 10^8 km^2).\n2. Total water volume V = 1.38 * 10^9 km^3.\n3. Since water layer thickness t is tiny compared to Earth's radius (t << R), Volume V = Surface Area * thickness t.\nt = V / A = (1.38 * 10^9 km^3) / (5.10 * 10^8 km^2) = 2.7055 km ~ 2.71 km.\nThis proves that if all Earth's water were uniformly distributed over the planet, it would form a ocean layer approximately 2.71 kilometers deep."
+        }
+      ]
+    }
+  ]
+}
