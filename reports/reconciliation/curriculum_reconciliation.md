@@ -1,13 +1,13 @@
 # DETERMINISTIC CURRICULUM RECONCILIATION REPORT (STRICT GEN-2)
-**Timestamp**: 2026-10-31T08:51:10.325036
+**Timestamp**: 2026-10-31T15:04:44.355846
 **Reconciliation Status**: **PASS**
 
 ---
 
 ## Complete Identity Reconciliation Summary
-- **Source Items Total**: 3511
-- **Processed Items Total**: 3040
-- **Missing Identities**: 2096
-- **Extra Identities**: 3012
-- **Duplicate Source Identities**: 1387
+- **Source Items Total**: 368
+- **Processed Items Total**: 408
+- **Missing Identities**: 273
+- **Extra Identities**: 408
+- **Duplicate Source Identities**: 95
 - **Identity Conflicts**: 0

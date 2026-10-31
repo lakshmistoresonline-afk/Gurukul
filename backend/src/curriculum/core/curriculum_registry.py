@@ -108,13 +108,16 @@ class CurriculumRegistry:
             return index
 
         for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
-            dir_grade = class_dir.name.replace("Class", "")
+            dir_grade = class_dir.name.replace("Class", "").strip()
 
             for subj_dir in sorted([d for d in class_dir.iterdir() if d.is_dir()]):
                 raw_subj = subj_dir.name
                 dir_subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
 
                 for ch_dir in sorted([d for d in subj_dir.iterdir() if d.is_dir()]):
+                    if ch_dir.name.lower() in ("images", "assets", "videos", "custom files"):
+                        continue
+
                     dir_chapter_id = ch_dir.name
                     manifest_file = ch_dir / "manifest.json"
                     if not manifest_file.exists():

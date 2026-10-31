@@ -1,0 +1,2378 @@
+{
+  "resource_type": "Mind Maps Database",
+  "subject": "NCERT Class 5 Mathematics",
+  "total_chapters": 15,
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Travelling, Now and Then",
+      "mind_map": {
+        "root_node": "Travelling, Now and Then (5-Digit Numbers, Indian Place Value & Travel Logistics)",
+        "main_branches": [
+          {
+            "branch_title": "1. Historical Transport & Large Number Context",
+            "sub_branches": [
+              {
+                "sub_title": "Transport Evolution & Scale",
+                "key_nodes": [
+                  "Historical Modes: Walking, animal-driven carts, hand-paddled log boats (limited distance range)",
+                  "Modern High-Speed Modes: Motor boats, diesel/electric trains, highway buses, aviation",
+                  "Numerical Scale Shift: Scaling daily travel range from single-digit km to 5-digit km magnitudes (up to 99,999 km)"
+                ],
+                "misconception_alert": "Believing larger physical vehicle size automatically implies higher speed or longer distance travel.",
+                "formula_or_rule": "Range Expansion Rule: Transport technological progress increases travel distance capability exponentially.",
+                "real_world_application": "Comparing historical trade routes with modern national highway networks."
+              },
+              {
+                "sub_title": "5-Digit Place Value Structure",
+                "key_nodes": [
+                  "Positional Columns (Right to Left): Ones (O), Tens (T), Hundreds (H), Thousands (Th), Ten Thousands (TTh)",
+                  "Baseline Magnitude: 10 Thousand = 10,000 (First 5-digit number, 4 zeroes)",
+                  "Maximum 5-Digit Value: 99,999 (9 Ten Thousands + 9 Thousands + 9 Hundreds + 9 Tens + 9 Ones)",
+                  "Ten Thousands Period: Grouping (TTh, Th) into thousands period separated by Indian system comma (e.g., 58,042)"
+                ],
+                "misconception_alert": "Confusing a digit's face value with its positional place value (e.g., in 74,520, face value is 7 but place value is 70,000).",
+                "formula_or_rule": "Place Value = Digit x Column Weight (e.g., 7 x 10,000 = 70,000).",
+                "real_world_application": "Reading 5-digit population statistics and highway milestone markings."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Number Operations, Ordering & Formations",
+            "sub_branches": [
+              {
+                "sub_title": "Expanded Form & Decompositions",
+                "key_nodes": [
+                  "Additive Decomposition: Expressing numbers as sum of place values (e.g., 67,543 = 60,000 + 7,000 + 500 + 40 + 3)",
+                  "Predecessor & Successor: Predecessor = Number - 1; Successor = Number + 1",
+                  "Transition Points: 9,999 + 1 = 10,000 (4-digit to 5-digit boundary)"
+                ],
+                "misconception_alert": "Omitting zero terms in expanded form notation (e.g., writing 50,402 as 50,000 + 400 + 2 instead of accounting for 0 Thousands).",
+                "formula_or_rule": "Expanded Form = Sum of (Digit x Place Value Weight) for all non-zero digits.",
+                "real_world_application": "Breaking down bank cheque amounts and financial receipts."
+              },
+              {
+                "sub_title": "Digit Permutations & Comparative Analysis",
+                "key_nodes": [
+                  "Column-by-Column Comparison: Compare digits from leftmost place (Ten Thousands) to rightmost (Ones)",
+                  "Greatest Number Formation: Arrange given digits in strict descending order (e.g., digits 3,0,8,5,2 -> 85,320)",
+                  "Smallest Number Formation: Arrange digits in ascending order, ensuring leading digit is non-zero (e.g., digits 3,0,8,5,2 -> 20,358)"
+                ],
+                "misconception_alert": "Placing zero as the leading digit when forming smallest n-digit numbers (e.g., 02,358 is a 4-digit value, not 5-digit).",
+                "formula_or_rule": "Comparative Rule: A number with a larger digit in the highest place value column is strictly greater.",
+                "real_world_application": "Sorting vehicle license plate numbers and highway registration codes."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Rounding Off, Estimation & Speed Calculations",
+            "sub_branches": [
+              {
+                "sub_title": "Rounding Off Benchmarks",
+                "key_nodes": [
+                  "Nearest Tens Rule: Inspect ones digit; if >= 5, round tens up, else round down",
+                  "Nearest Hundreds Rule: Inspect tens digit; if >= 5, round hundreds up",
+                  "Nearest Thousands Rule: Inspect hundreds digit; if >= 5, round thousands up",
+                  "Logistical Utility: Enables rapid mental estimation for fuel budgets and total travel times"
+                ],
+                "misconception_alert": "Rounding down when the decision digit is exactly 5 (5 requires rounding up to higher benchmark).",
+                "formula_or_rule": "Benchmark Rule: Decision digit >= 5 -> Target place incremented by 1; trailing digits set to 0.",
+                "real_world_application": "Estimating total road trip expenses, fuel volume required, and hotel stays."
+              },
+              {
+                "sub_title": "Odometer Deltas & Speed-Distance-Time Math",
+                "key_nodes": [
+                  "Odometer Tracking: Final Odometer Reading - Initial Odometer Reading = Net Distance Covered",
+                  "Speed Formula: Speed = Distance / Time (e.g., 200 km in 4 hours = 50 km/h)",
+                  "Distance Formula: Distance = Speed x Time (e.g., 60 km/h for 3.5 hours = 210 km)",
+                  "Time Formula: Time = Distance / Speed"
+                ],
+                "misconception_alert": "Adding initial and final odometer readings instead of subtracting them to find distance.",
+                "formula_or_rule": "Distance Delta = Reading_final - Reading_initial; Distance = Speed x Time.",
+                "real_world_application": "Monitoring commercial bus transit logs, train arrival schedules, and vehicle fuel efficiency."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 1,
+        "image_id": "ch01_travel_odometer",
+        "file_name": "ch01_travel_odometer.png",
+        "local_url": "/assets/images/ch01_travel_odometer.png",
+        "aspect_ratio": "16:9",
+        "title": "5-Digit Place Value & Vehicle Odometer Gauge",
+        "description": "Visual representation of 5-digit number place value columns (TTh, Th, H, T, O) and odometer distance delta calculation.",
+        "hotspots": [
+          {
+            "label": "Ten Thousands (TTh)",
+            "x_percent": 18.5,
+            "y_percent": 45.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Thousands (Th)",
+            "x_percent": 34.0,
+            "y_percent": 45.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Hundreds (H)",
+            "x_percent": 50.0,
+            "y_percent": 45.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Tens (T)",
+            "x_percent": 66.0,
+            "y_percent": 45.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Ones (O)",
+            "x_percent": 82.0,
+            "y_percent": 45.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Fractions",
+      "mind_map": {
+        "root_node": "Fractions (Equal Sharing, Fractional Parts & Equivalent Scaling)",
+        "main_branches": [
+          {
+            "branch_title": "1. Fractional Anatomy & Equal Partitioning",
+            "sub_branches": [
+              {
+                "sub_title": "Numerator & Denominator Mechanics",
+                "key_nodes": [
+                  "Equal Partitioning Requirement: Whole object or collection must be divided into identical equal parts",
+                  "Numerator (Top Number): Counts the number of equal parts selected, shaded, or considered",
+                  "Denominator (Bottom Number): Defines total number of equal parts into which whole is partitioned",
+                  "Unit Fractions: Fractions with numerator 1 (e.g., 1/2, 1/3, 1/4, 1/8)"
+                ],
+                "misconception_alert": "Assuming larger denominator implies a larger fraction value (e.g., thinking 1/8 is larger than 1/4 because 8 > 4).",
+                "formula_or_rule": "Unit Fraction Size Rule: As denominator increases, the size of each individual fractional piece decreases.",
+                "real_world_application": "Dividing rotis, parathas, pizzas, and land parcels into equal shares."
+              },
+              {
+                "sub_title": "The 'Same Whole' Principle",
+                "key_nodes": [
+                  "Contextual Reference Requirement: Fractional comparisons are only valid when derived from identical whole sizes",
+                  "Whole Variation Impact: 1/2 of a large watermelon > 1/2 of a small lemon",
+                  "Discrete Collections vs Continuous Wholes: Finding fraction of a discrete set (e.g., 1/4 of 24 apples = 6 apples)"
+                ],
+                "misconception_alert": "Comparing fractions derived from wholes of different sizes without adjusting for whole magnitude.",
+                "formula_or_rule": "Fraction of Collection = (Total Count / Denominator) x Numerator.",
+                "real_world_application": "Comparing recipe shares, agricultural crop harvests, and classroom student attendance ratios."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Classification of Fractions & Mixed Numbers",
+            "sub_branches": [
+              {
+                "sub_title": "Proper, Improper & Mixed Numbers",
+                "key_nodes": [
+                  "Proper Fraction: Numerator < Denominator (Value strictly less than 1 whole, e.g., 3/5, 7/10)",
+                  "Improper Fraction: Numerator >= Denominator (Value equal to or greater than 1 whole, e.g., 7/4, 5/5)",
+                  "Mixed Number: Combination of a whole number and a proper fraction (e.g., 3 1/2 = 3 wholes + 1/2)",
+                  "Conversion Rule: Mixed to Improper = (Whole x Denominator + Numerator) / Denominator"
+                ],
+                "misconception_alert": "Treating mixed numbers as separate un-multiplied integers rather than unified composite quantities.",
+                "formula_or_rule": "Improper Conversion: (Whole x Denominator + Numerator) / Denominator.",
+                "real_world_application": "Measuring baking ingredients (e.g., 2 1/4 cups flour) and fabric lengths."
+              },
+              {
+                "sub_title": "Fraction Kits & Visual Strips",
+                "key_nodes": [
+                  "Fraction Strip Alignment: Visual kit matching equal lengths (e.g., two 1/8 strips match one 1/4 strip)",
+                  "Grid Folding & Paper Tiling: Folding square sheets into halves, quarters, eighths, and sixteenths",
+                  "Number Line Mapping: Plotting fractions between whole numbers 0, 1, 2, 3..."
+                ],
+                "misconception_alert": "Misaligning starting edges on fraction strips when comparing lengths visually.",
+                "formula_or_rule": "Visual Equivalence: Strips covering equal physical lengths represent equivalent numerical values.",
+                "real_world_application": "Measuring tape sub-inch markings and architectural scale drafting."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Equivalent Fractions & Arithmetic Operations",
+            "sub_branches": [
+              {
+                "sub_title": "Equivalent Scaling & Simplification",
+                "key_nodes": [
+                  "Multiplicative Scaling: Multiply top and bottom by same non-zero integer (e.g., 2/3 = 4/6 = 6/9 = 8/12)",
+                  "Simplification / Simplest Form: Divide numerator and denominator by Highest Common Factor (HCF)",
+                  "Cross-Multiplication Test: a/b = c/d if and only if a x d = b x c"
+                ],
+                "misconception_alert": "Adding the same number to numerator and denominator thinking it creates an equivalent fraction (e.g., 1/2 != 2/3).",
+                "formula_or_rule": "Equivalence Scaling: (a x k) / (b x k) = a / b for any non-zero integer k.",
+                "real_world_application": "Adjusting recipe serving sizes and scaling currency shares."
+              },
+              {
+                "sub_title": "Like Fraction Arithmetic & Word Problems",
+                "key_nodes": [
+                  "Like Fraction Addition: (a/c) + (b/c) = (a + b)/c (keep common denominator)",
+                  "Like Fraction Subtraction: (a/c) - (b/c) = (a - b)/c",
+                  "Complementary Wholes: Remaining fraction = 1 - (Consumed Fraction)"
+                ],
+                "misconception_alert": "Adding denominators together during fraction addition (e.g., 2/5 + 1/5 = 3/10 instead of 3/5).",
+                "formula_or_rule": "Like Denominator Addition Rule: Add numerators only; preserve denominator.",
+                "real_world_application": "Calculating remaining cake portions, travel journey completion fractions, and daily work done."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 2,
+        "image_id": "ch02_fraction_strips",
+        "file_name": "ch02_fraction_strips.png",
+        "local_url": "/assets/images/ch02_fraction_strips.png",
+        "aspect_ratio": "16:9",
+        "title": "Fraction Strip Kit & Equal Partition Model",
+        "description": "Visual fraction kit demonstrating 1 Whole, 1/2, 1/4, 1/8 strips and equivalent fraction alignment.",
+        "hotspots": [
+          {
+            "label": "1 Whole Strip",
+            "x_percent": 10.0,
+            "y_percent": 20.0,
+            "w_percent": 80.0,
+            "h_percent": 12.0
+          },
+          {
+            "label": "Halves (1/2)",
+            "x_percent": 10.0,
+            "y_percent": 36.0,
+            "w_percent": 39.0,
+            "h_percent": 12.0
+          },
+          {
+            "label": "Fourths (1/4)",
+            "x_percent": 10.0,
+            "y_percent": 52.0,
+            "w_percent": 19.0,
+            "h_percent": 12.0
+          },
+          {
+            "label": "Eighths (1/8)",
+            "x_percent": 10.0,
+            "y_percent": 68.0,
+            "w_percent": 9.0,
+            "h_percent": 12.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Angles as Turns",
+      "mind_map": {
+        "root_node": "Angles as Turns (Rotational Motion, Degree Measurement & Geometry)",
+        "main_branches": [
+          {
+            "branch_title": "1. Concept of Angle & Classification by Degree",
+            "sub_branches": [
+              {
+                "sub_title": "Anatomy of an Angle & Arm Invariance",
+                "key_nodes": [
+                  "Angle Definition: Figure formed by two rays (arms) sharing a common endpoint (vertex)",
+                  "Rotational Measure: Angle represents degree of turn or opening between two arms, not arm lengths",
+                  "Arm Invariance Principle: Extending or shortening arm length does not alter angle magnitude"
+                ],
+                "misconception_alert": "Believing a drawn angle with longer arm lines is larger than an angle with shorter arm lines.",
+                "formula_or_rule": "Angle Measure = Amount of rotation required to turn one arm onto the other about vertex.",
+                "real_world_application": "Adjusting scissors opening, door hinges, and laptop screens."
+              },
+              {
+                "sub_title": "Angle Classifications (Acute, Right, Obtuse, Straight)",
+                "key_nodes": [
+                  "Right Angle: Exactly 90° (Quarter turn / 'L' shape corner)",
+                  "Acute Angle: Greater than 0° and strictly less than 90° (Sharp corner, e.g., 30°, 45°, 60°)",
+                  "Obtuse Angle: Strictly greater than 90° and less than 180° (Wide opening, e.g., 120°, 135°)",
+                  "Straight Angle: Exactly 180° (Half turn / straight line)"
+                ],
+                "misconception_alert": "Classifying a rotated right angle as acute or obtuse simply because its arms are not horizontal/vertical.",
+                "formula_or_rule": "Classification Criteria: Acute < 90°; Right = 90°; 90° < Obtuse < 180°; Straight = 180°.",
+                "real_world_application": "Architectural roof pitch, body postures in Yoga/gymnastics, and paper folding."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Turns as Fractional Circles & Clock Geometry",
+            "sub_branches": [
+              {
+                "sub_title": "Rotational Fractional Turns & Protractor",
+                "key_nodes": [
+                  "Full Rotation / Full Turn: 360° (Complete circular turn back to start)",
+                  "Half Turn (1/2 turn): 180° (Straight angle)",
+                  "Quarter Turn (1/4 turn): 90° (Right angle)",
+                  "Eighth Turn (1/8 turn): 45° (Half of right angle)",
+                  "Protractor Scale: Semi-circular tool calibrated from 0° to 180° for exact degree measurement"
+                ],
+                "misconception_alert": "Reading wrong inner/outer scale on protractor by aligning baseline incorrectly.",
+                "formula_or_rule": "Degree Turn = Fractional Turn x 360° (e.g., 1/4 x 360° = 90°).",
+                "real_world_application": "Wheel alignments, crane boom rotations, and robotic arm programming."
+              },
+              {
+                "sub_title": "Clock Face Radial Geometry",
+                "key_nodes": [
+                  "Clock Face Division: 360° full turn divided into 12 equal hour gaps",
+                  "Hourly Radial Spacing: Each hour mark on clock represents exactly 30° (360° / 12 = 30°)",
+                  "Clock Hands Angles: 1:00 = 30°; 2:00 = 60°; 3:00 = 90° (Right); 6:00 = 180° (Straight)",
+                  "Minute Hand Speed: Minute hand turns 360° in 60 minutes -> 6° per minute"
+                ],
+                "misconception_alert": "Thinking minute hand at 12 and hour hand at 6 forms a 90° angle instead of 180°.",
+                "formula_or_rule": "Clock Hand Angle = Difference in Hour Marks x 30°.",
+                "real_world_application": "Analog clock reading and nautical navigational clock tracking."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Compass Directions & Physical Movement",
+            "sub_branches": [
+              {
+                "sub_title": "Cardinal & Intermediate Directions",
+                "key_nodes": [
+                  "Four Main Cardinal Directions: North (N), East (E), South (S), West (W)",
+                  "Right-Angle Spacing: Adjacent cardinal directions are at 90° to each other (N-E, E-S, S-W, W-N)",
+                  "Intermediate Directions: North-East (NE), South-East (SE), South-West (SW), North-West (NW)",
+                  "45° Intermediate Spacing: Intermediate directions bisect 90° cardinal gaps into 45° angles"
+                ],
+                "misconception_alert": "Confusing clockwise (rightwards) rotation with anti-clockwise (leftwards) rotation direction.",
+                "formula_or_rule": "Direction Rotations: 90° turn = Next cardinal point; 180° turn = Opposite cardinal point.",
+                "real_world_application": "Aviation flight path headings, magnetic compass reading, and marching drills."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 3,
+        "image_id": "ch03_clock_angles",
+        "file_name": "ch03_clock_angles.png",
+        "local_url": "/assets/images/ch03_clock_angles.png",
+        "aspect_ratio": "16:9",
+        "title": "Clock Radial Angles & Rotational Geometry",
+        "description": "Clock face radial angles showing 30-degree hourly divisions, right angles (90°), acute, obtuse, and straight angles.",
+        "hotspots": [
+          {
+            "label": "12 o clock (0 / 360 deg)",
+            "x_percent": 50.0,
+            "y_percent": 15.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0
+          },
+          {
+            "label": "3 o clock Right Angle (90 deg)",
+            "x_percent": 80.0,
+            "y_percent": 50.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0
+          },
+          {
+            "label": "6 o clock Straight Angle (180 deg)",
+            "x_percent": 50.0,
+            "y_percent": 85.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0
+          },
+          {
+            "label": "9 o clock Three-Quarter Turn (270 deg)",
+            "x_percent": 20.0,
+            "y_percent": 50.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "We the Travellers — II",
+      "mind_map": {
+        "root_node": "We the Travellers — II (Large Number Arithmetic, Patterns & Palindromes)",
+        "main_branches": [
+          {
+            "branch_title": "1. Large Number Column Addition & Subtraction",
+            "sub_branches": [
+              {
+                "sub_title": "Column Alignment & Regrouping Mechanics",
+                "key_nodes": [
+                  "Column Alignment Rule: Align numbers strictly by place value columns (TTh, Th, H, T, O)",
+                  "Regrouping in Addition (Carrying): Sum >= 10 in any column carries 1 group to left column",
+                  "Regrouping in Subtraction (Borrowing): Borrowing 1 from adjacent left column adds 10 to current place value",
+                  "Cascading Borrowing Across Zeroes: Borrowing through consecutive zero place values (e.g., 50,000 - 1)"
+                ],
+                "misconception_alert": "Subtracting smaller digit from larger digit regardless of top/bottom position during borrowing.",
+                "formula_or_rule": "Column Arithmetic Rule: Always compute from rightmost Ones place to leftmost place.",
+                "real_world_application": "Calculating multi-leg travel route distances and transport budget balances."
+              },
+              {
+                "sub_title": "Inverse Operations & Self-Checking",
+                "key_nodes": [
+                  "Additive & Subtractive Inverse: Subtraction is inverse of addition (if A + B = C, then C - B = A)",
+                  "Verification Protocol: Difference + Subtrahend = Minuend",
+                  "Missing Digit Recovery: Solving column puzzles using inverse operational relationships"
+                ],
+                "misconception_alert": "Adding minuend and difference to check subtraction instead of adding subtrahend and difference.",
+                "formula_or_rule": "Inverse Verification: Minuend - Subtrahend = Difference <-> Difference + Subtrahend = Minuend.",
+                "real_world_application": "Auditing financial travel logs and verifying highway toll receipts."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Numerical Patterns & Palindromic Sequences",
+            "sub_branches": [
+              {
+                "sub_title": "Palindromic Numbers & Generation",
+                "key_nodes": [
+                  "Palindromic Number Definition: Number that reads identically forwards and backwards (e.g., 121, 4,554, 10,001)",
+                  "Reverse-and-Add Algorithm: Take a number -> Reverse digits -> Add to original -> Repeat until palindrome emerges",
+                  "1-Step Palindromes: e.g., 23 + 32 = 55",
+                  "Multi-Step Palindromes: e.g., 57 + 75 = 132 -> 132 + 231 = 363"
+                ],
+                "misconception_alert": "Assuming all numbers become palindromes in exactly one reverse-and-add step.",
+                "formula_or_rule": "Palindromic Rule: N = Reverse(N) defines palindromic numerical symmetry.",
+                "real_world_application": "Vehicle odometer special symmetry readings and cryptographic code puzzles."
+              },
+              {
+                "sub_title": "Consecutive Number Sum Patterns",
+                "key_nodes": [
+                  "Consecutive Natural Sums: Sum of 1+2+3+...+n = n(n+1)/2",
+                  "Pairing Strategy (Gauss Trick): Summing outer pairs (e.g., 1+10=11, 2+9=11 -> 5 pairs of 11 = 55)",
+                  "Sequential Series Increments: Observing constant differences in arithmetic sequences"
+                ],
+                "misconception_alert": "Missing middle terms when calculating sums of long consecutive number series.",
+                "formula_or_rule": "Gauss Series Sum Formula: Sum = (Number of Terms / 2) x (First Term + Last Term).",
+                "real_world_application": "Counting stacked freight boxes and calculating staircase steps."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Travel Logistics & Fuel Budgeting Math",
+            "sub_branches": [
+              {
+                "sub_title": "Trip Distance & Fuel Costing",
+                "key_nodes": [
+                  "Multi-City Route Sums: Summing leg distances across state highways",
+                  "Round-Trip Calculation: Round-Trip Distance = 2 x Single-Leg Distance",
+                  "Fuel Expense Computation: Total Cost = (Total Distance / Vehicle Mileage) x Fuel Price per Litre"
+                ],
+                "misconception_alert": "Calculating one-way mileage for round-trip travel budgets.",
+                "formula_or_rule": "Fuel Expense = (Net Distance / Km per Litre) x Price per Litre.",
+                "real_world_application": "Fleet management budgets, vacation trip planning, and commercial logistics."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 4,
+        "image_id": "ch04_column_regrouping",
+        "file_name": "ch04_column_regrouping.png",
+        "local_url": "/assets/images/ch04_column_regrouping.png",
+        "aspect_ratio": "16:9",
+        "title": "5-Digit Column Regrouping & Palindrome Cascade",
+        "description": "Column addition/subtraction with regrouping across zero and 4-step reverse-and-add palindrome generation.",
+        "hotspots": [
+          {
+            "label": "Ten Thousands Borrow Column",
+            "x_percent": 20.0,
+            "y_percent": 30.0,
+            "w_percent": 12.0,
+            "h_percent": 40.0
+          },
+          {
+            "label": "Thousands Column",
+            "x_percent": 34.0,
+            "y_percent": 30.0,
+            "w_percent": 12.0,
+            "h_percent": 40.0
+          },
+          {
+            "label": "Palindrome Reverse Step",
+            "x_percent": 70.0,
+            "y_percent": 45.0,
+            "w_percent": 20.0,
+            "h_percent": 25.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Far and Near",
+      "mind_map": {
+        "root_node": "Far and Near (Metric Length Units, Conversions & Double Number Lines)",
+        "main_branches": [
+          {
+            "branch_title": "1. Metric Length Hierarchy & Unit Relationships",
+            "sub_branches": [
+              {
+                "sub_title": "Units of Metric Length",
+                "key_nodes": [
+                  "Millimetre (mm): Micro unit for tiny object dimensions and thickness (e.g., coin thickness, eraser edge)",
+                  "Centimetre (cm): Unit for small handheld items (e.g., pencil length, notebook width; 1 cm = 10 mm)",
+                  "Metre (m): Base metric unit for human height, room dimensions, fabric cuts (1 m = 100 cm = 1,000 mm)",
+                  "Kilometre (km): Macro unit for geographical distances between towns and cities (1 km = 1,000 m)"
+                ],
+                "misconception_alert": "Confusing mm and cm markers on standard ruler scales (cm marks are numbered; mm marks are unnumbered sub-lines).",
+                "formula_or_rule": "Metric Equivalences: 1 cm = 10 mm; 1 m = 100 cm; 1 km = 1,000 m.",
+                "real_world_application": "Selecting appropriate tools (ruler vs tape measure) for tailoring or construction."
+              },
+              {
+                "sub_title": "Micro to Macro Orders of Magnitude",
+                "key_nodes": [
+                  "Relative Scaling: 1 km = 1,000 m = 100,000 cm = 1,000,000 mm",
+                  "Contextual Selection: Choosing mm for seeds, cm for shoes, m for sprinting tracks, km for flight paths",
+                  "Precision Trade-offs: Small units increase precision; large units simplify geographical tracking"
+                ],
+                "misconception_alert": "Using metres to measure road trip distances between cities (leads to unnecessarily large numbers).",
+                "formula_or_rule": "Unit Choice Rule: Select the unit whose magnitude matches the object being measured.",
+                "real_world_application": "Engineering design specifications and geographical atlas mapping."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Unit Conversions & Double Number Lines",
+            "sub_branches": [
+              {
+                "sub_title": "Unit Conversion Mechanics",
+                "key_nodes": [
+                  "Larger to Smaller Unit: Multiply by conversion scale factor (e.g., 3.5 km x 1,000 = 3,500 m)",
+                  "Smaller to Larger Unit: Divide by conversion factor (e.g., 450 cm / 100 = 4.5 m)",
+                  "Compound Conversion: Expressing fractional lengths (e.g., 2 m 45 cm = 245 cm)"
+                ],
+                "misconception_alert": "Multiplying instead of dividing when converting smaller metric units to larger metric units.",
+                "formula_or_rule": "Conversion Rule: Large -> Small (Multiply by factor); Small -> Large (Divide by factor).",
+                "real_world_application": "Converting architectural blueprints to actual building site measurements."
+              },
+              {
+                "sub_title": "Double Number Line Mapping",
+                "key_nodes": [
+                  "Double Number Line Structure: Two parallel aligned axes showing equivalent values in different units",
+                  "Proportional Visualization: Mapping fractional intervals (e.g., top axis in metres: 0, 0.5, 1; bottom axis in cm: 0, 50, 100)",
+                  "Interpolation of Intermediate Values: Finding non-standard unit matches visually"
+                ],
+                "misconception_alert": "Misaligning zero origins or maintaining unequal tick spacing on top and bottom number lines.",
+                "formula_or_rule": "Proportional Mapping: Aligned vertical ticks on double number lines represent equal physical lengths.",
+                "real_world_application": "Dual metric-imperial tape measures and athletic track marking."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Compound Operations & Map Scale Ratios",
+            "sub_branches": [
+              {
+                "sub_title": "Compound Length Arithmetic",
+                "key_nodes": [
+                  "Column Addition of Lengths: Adding m and cm separately; regrouping 100 cm as 1 m",
+                  "Column Subtraction of Lengths: Borrowing 1 m as 100 cm when cm minuend < cm subtrahend",
+                  "Multi-leg Total Calculation: Summing route segments to determine marathon lengths"
+                ],
+                "misconception_alert": "Borrowing 10 cm instead of 100 cm when regrouping metres to centimetres.",
+                "formula_or_rule": "Length Regrouping: 100 cm = 1 m; 1,000 m = 1 km.",
+                "real_world_application": "Tailoring fabric cuts and road construction survey logs."
+              },
+              {
+                "sub_title": "Map Scales & Real-World Distances",
+                "key_nodes": [
+                  "Map Scale Ratio: Proportional reduction scaling ground distances onto printable paper (e.g., 1 cm on map = 10 km on ground)",
+                  "Ground Distance Calculation: Ground Distance = Map Distance (cm) x Scale Factor (km/cm)",
+                  "Map Distance Calculation: Map Distance = Ground Distance / Scale Factor"
+                ],
+                "misconception_alert": "Treating map scale as direct 1:1 physical distance without multiplying by ground factor.",
+                "formula_or_rule": "Ground Distance = Measured Map Centimetres x Kilometres per Map Centimetre.",
+                "real_world_application": "Navigating highway road maps, hiking trails, and urban city planning blueprints."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 5,
+        "image_id": "ch05_metric_scale",
+        "file_name": "ch05_metric_scale.png",
+        "local_url": "/assets/images/ch05_metric_scale.png",
+        "aspect_ratio": "16:9",
+        "title": "Metric Length Hierarchy & Double Number Line",
+        "description": "Double number line showing proportional metric conversions between mm, cm, m, and km.",
+        "hotspots": [
+          {
+            "label": "Millimetres (mm)",
+            "x_percent": 15.0,
+            "y_percent": 30.0,
+            "w_percent": 15.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Centimetres (cm)",
+            "x_percent": 35.0,
+            "y_percent": 30.0,
+            "w_percent": 15.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Metres (m)",
+            "x_percent": 55.0,
+            "y_percent": 30.0,
+            "w_percent": 15.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Kilometres (km)",
+            "x_percent": 75.0,
+            "y_percent": 30.0,
+            "w_percent": 15.0,
+            "h_percent": 15.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "The Dairy Farm",
+      "mind_map": {
+        "root_node": "The Dairy Farm (Flexible Multiplication Strategies, Partial Products & Area Grids)",
+        "main_branches": [
+          {
+            "branch_title": "1. Mental Multiplication & Place Value Shortcuts",
+            "sub_branches": [
+              {
+                "sub_title": "Multiplying by Powers of 10",
+                "key_nodes": [
+                  "Zero Appending Rule: Multiply non-zero digits, then append total count of trailing zeroes",
+                  "Examples: 45 x 10 = 450 (append 1 zero); 32 x 100 = 3,200 (append 2 zeroes); 7 x 1,000 = 7,000",
+                  "Multiplication Identities: N x 0 = 0 (Zero property); N x 1 = N (Identity property)"
+                ],
+                "misconception_alert": "Appending zeroes when multiplying decimals without adjusting decimal point position.",
+                "formula_or_rule": "Zero Rule: Product = (A x B) with trailing zeroes appended equal to sum of zeroes in factors.",
+                "real_world_application": "Calculating bulk dairy yields, crate box totals, and wholesale product billing."
+              },
+              {
+                "sub_title": "Halving & Doubling Compensation",
+                "key_nodes": [
+                  "Compensation Principle: Halving one factor and doubling the other keeps total product unchanged",
+                  "Strategic Application: Convert difficult factors into easy multiples of 10 (e.g., 14 x 5 -> (14/2) x (5x2) = 7 x 10 = 70)",
+                  "Nearest Multiple Adjustment: Multiplying by 9 or 19 via (N x 10) - N or (N x 20) - N"
+                ],
+                "misconception_alert": "Halving both factors or doubling both factors instead of applying inverse compensation.",
+                "formula_or_rule": "Halving & Doubling Identity: A x B = (A / 2) x (B x 2).",
+                "real_world_application": "Rapid mental estimation of grocery prices and daily farm earnings."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Area Models & Partial Product Decomposition",
+            "sub_branches": [
+              {
+                "sub_title": "Grid Area Model & Distributive Law",
+                "key_nodes": [
+                  "Additive Decomposition: Decompose 2-digit factors into tens and ones (e.g., 23 x 12 = (20 + 3) x (10 + 2))",
+                  "Grid Area Mapping: 2x2 grid representing 4 sub-rectangular areas (20x10=200, 20x2=40, 3x10=30, 3x2=6)",
+                  "Summing Partial Products: Total Product = 200 + 40 + 30 + 6 = 276",
+                  "Distributive Law: a x (b + c) = (a x b) + (a x c)"
+                ],
+                "misconception_alert": "Forgetting to sum all four partial products in a 2x2 grid decomposition.",
+                "formula_or_rule": "Distributive Law: (A + B) x (C + D) = AC + AD + BC + BD.",
+                "real_world_application": "Calculating compost pit surface areas, floor tiling needs, and auditorium seating capacity."
+              },
+              {
+                "sub_title": "Multi-Digit Standard Algorithm Transition",
+                "key_nodes": [
+                  "Column Alignment of Partial Products: Writing tens and ones partial products vertically",
+                  "Carrying in Partial Multiplication: Managing place value overflow during column multiplication",
+                  "Efficiency Comparison: Grid model provides visual conceptual understanding; column algorithm speeds computation"
+                ],
+                "misconception_alert": "Misaligning place values when writing partial product rows in vertical multiplication.",
+                "formula_or_rule": "Standard Multiplication Algorithm: Product = Sum of Ones Partial Row + Tens Partial Row.",
+                "real_world_application": "Commercial farm accounting and calculating annual feed costs."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Dairy Operations & Yield Revenue Math",
+            "sub_branches": [
+              {
+                "sub_title": "Herd Milk Yield & Revenue Calculations",
+                "key_nodes": [
+                  "Daily Herd Production: Daily Volume = Number of Cows x Yield per Cow (litres)",
+                  "Monthly Yield: Daily Herd Production x Days in Month (e.g., 30 days)",
+                  "Gross Revenue: Total Revenue = Total Litres Sold x Price per Litre (₹)"
+                ],
+                "misconception_alert": "Calculating monthly revenue using 7 days instead of 30/31 days.",
+                "formula_or_rule": "Revenue = Herd Size x Daily Litres per Cow x Days x Rate per Litre.",
+                "real_world_application": "Managing dairy cooperative finances, cattle feed budgeting, and milk packet distribution."
+              },
+              {
+                "sub_title": "Composting & Waste Optimization Math",
+                "key_nodes": [
+                  "Organic Waste Conversion Ratios: Dung to organic fertilizer mass reduction",
+                  "Compost Pit Surface Area: Calculating pit dimensions using grid area formulas",
+                  "Environmental Cost Savings: Savings = Commercial Fertilizer Cost - Organic Compost Cost"
+                ],
+                "misconception_alert": "Assuming waste mass remains constant during organic decomposition.",
+                "formula_or_rule": "Net Cost Benefit = Fertilizer Purchase Saved - Pit Setup Cost.",
+                "real_world_application": "Sustainable farming eco-audits and waste-to-wealth cooperative projects."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 6,
+        "image_id": "ch06_partial_products",
+        "file_name": "ch06_partial_products.png",
+        "local_url": "/assets/images/ch06_partial_products.png",
+        "aspect_ratio": "16:9",
+        "title": "2x2 Partial Product Grid Area Model",
+        "description": "Distributive property 2x2 partial product grid decomposing multi-digit multiplication.",
+        "hotspots": [
+          {
+            "label": "Cell 1: Tens x Tens",
+            "x_percent": 30.0,
+            "y_percent": 35.0,
+            "w_percent": 25.0,
+            "h_percent": 20.0
+          },
+          {
+            "label": "Cell 2: Tens x Ones",
+            "x_percent": 60.0,
+            "y_percent": 35.0,
+            "w_percent": 25.0,
+            "h_percent": 20.0
+          },
+          {
+            "label": "Cell 3: Ones x Tens",
+            "x_percent": 30.0,
+            "y_percent": 60.0,
+            "w_percent": 25.0,
+            "h_percent": 20.0
+          },
+          {
+            "label": "Cell 4: Ones x Ones",
+            "x_percent": 60.0,
+            "y_percent": 60.0,
+            "w_percent": 25.0,
+            "h_percent": 20.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Shapes and Patterns",
+      "mind_map": {
+        "root_node": "Shapes and Patterns (Tessellations, Polygons, Tangrams & 3D Nets)",
+        "main_branches": [
+          {
+            "branch_title": "1. Tessellations (Tiling Patterns)",
+            "sub_branches": [
+              {
+                "sub_title": "Gapless Surface Coverage Rules",
+                "key_nodes": [
+                  "Tessellation Definition: Covering a 2D plane completely using repeating geometric tiles without gaps or overlaps",
+                  "Vertex Fitting Condition: Interior angles of meeting tile corners at any vertex must sum to exactly 360°",
+                  "Tessellating Shapes: Squares (90° x 4 = 360°), Rectangles, Regular Hexagons (120° x 3 = 360°), Equilateral Triangles (60° x 6 = 360°)"
+                ],
+                "misconception_alert": "Believing any regular polygon can tile a plane seamlessly without checking interior angle sums at vertices.",
+                "formula_or_rule": "Tessellation Vertex Rule: Sum of meeting corner angles = 360°.",
+                "real_world_application": "Bathroom floor tiling, honeycomb structures, and Rajasthani brick wall patterns."
+              },
+              {
+                "sub_title": "Non-Tessellating Figures & Irregular Tiling",
+                "key_nodes": [
+                  "Non-Tessellating Shapes: Circles, Regular Pentagons (108° cannot divide 360° evenly, leaving 24° gaps)",
+                  "Composite Tiling: Combining 2 or more shape types to fill 360° vertices (e.g., octagons + squares)",
+                  "Irregular Tiling: Hand-drawn irregular interlocking tiles (Escher-style motifs)"
+                ],
+                "misconception_alert": "Assuming regular pentagons tessellate because they are symmetrical polygons.",
+                "formula_or_rule": "Gap Identification: 360° - Sum(Corner Angles) > 0 indicates non-tessellating gaps.",
+                "real_world_application": "Pavement brick design and artistic parquet flooring."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Polygon Classification & Tangram Geometry",
+            "sub_branches": [
+              {
+                "sub_title": "2D Polygon Taxonomy",
+                "key_nodes": [
+                  "Polygon Definition: Closed 2D plane figure made entirely of straight line segments",
+                  "Triangles by Side Properties: Equilateral (3 equal sides, all 60°), Isosceles (2 equal sides), Scalene (3 different side lengths)",
+                  "Quadrilaterals (4 Sides): Square, Rectangle, Rhombus (4 equal sides), Parallelogram (opposite sides parallel/equal), Trapezium",
+                  "Higher Polygons: Pentagon (5 sides), Hexagon (6 sides), Octagon (8 sides)"
+                ],
+                "misconception_alert": "Classifying a rotated square as a 'diamond' or rhombus without verifying if angles are right angles.",
+                "formula_or_rule": "Polygon Side Hierarchy: N-sided closed figure has N vertices and N interior angles.",
+                "real_world_application": "Architectural truss design, sign board classification, and mosaic art."
+              },
+              {
+                "sub_title": "7-Piece Tangram Dissection",
+                "key_nodes": [
+                  "Tangram Composition: 5 Triangles (2 large, 1 medium, 2 small), 1 Square, 1 Parallelogram",
+                  "Area Preservation: Rearranging pieces forms diverse animal/human silhouettes with identical total surface area",
+                  "Spatial Reasoning: Combining 2 small triangles to form the square or medium triangle"
+                ],
+                "misconception_alert": "Overlapping tangram pieces when creating puzzle target shapes.",
+                "formula_or_rule": "Tangram Area Conservation: Sum of 7 individual piece areas = Area of outer bounding square.",
+                "real_world_application": "Creative spatial puzzle solving, logo design, and floor tile mosaics."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. 3D Nets & Polyhedron Geometry",
+            "sub_branches": [
+              {
+                "sub_title": "3D Nets & Unfolding Patterns",
+                "key_nodes": [
+                  "3D Net Definition: Flat 2D pattern of polygon faces that folds into a closed 3D solid figure",
+                  "Cube Net: 6 identical square faces connected along edges (11 distinct valid folding nets exist)",
+                  "Prism & Pyramid Nets: Triangular prisms, square-based pyramids unfolded flat"
+                ],
+                "misconception_alert": "Assuming any 6-square shape forms a cube net (overlapping faces occur if edges are misjoined).",
+                "formula_or_rule": "Net Validation: A net must fold cleanly along shared edges without overlapping faces.",
+                "real_world_application": "Cardboard packaging box manufacture and sheet metal fabrication."
+              },
+              {
+                "sub_title": "Polyhedron Metrics & Euler's Formula",
+                "key_nodes": [
+                  "Cube Metrics: 6 Faces (F), 8 Vertices (V), 12 Edges (E)",
+                  "Regular Dodecahedron: 12 pentagonal faces; Regular Icosahedron: 20 triangular faces",
+                  "Euler's Polyhedron Formula: F + V - E = 2 (Valid for all convex polyhedra)"
+                ],
+                "misconception_alert": "Counting edges twice when inspecting 3D solid models.",
+                "formula_or_rule": "Euler's Polyhedron Formula: Faces + Vertices - Edges = 2 (F + V - E = 2).",
+                "real_world_application": "Geodesic dome construction, 3D computer graphics modeling, and crystallography."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 7,
+        "image_id": "ch07_tessellations_nets",
+        "file_name": "ch07_tessellations_nets.png",
+        "local_url": "/assets/images/ch07_tessellations_nets.png",
+        "aspect_ratio": "16:9",
+        "title": "Surface Tessellations & Unfolded 3D Polyhedron Nets",
+        "description": "Seamless tiling tessellation vertex angle rules (360°) and unfolded 6-face cube net with Euler formula F+V-E=2.",
+        "hotspots": [
+          {
+            "label": "Tessellation 360 deg Vertex Fit",
+            "x_percent": 25.0,
+            "y_percent": 45.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0
+          },
+          {
+            "label": "3D Unfolded Cube Net",
+            "x_percent": 70.0,
+            "y_percent": 45.0,
+            "w_percent": 22.0,
+            "h_percent": 30.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 8,
+      "chapter_title": "Weight and Capacity",
+      "mind_map": {
+        "root_node": "Weight and Capacity (Mass, Volume Metrics, Pan Balances & Conversions)",
+        "main_branches": [
+          {
+            "branch_title": "1. Mass (Weight) Metric Scale Hierarchy",
+            "sub_branches": [
+              {
+                "sub_title": "Units of Mass & Micro Scale",
+                "key_nodes": [
+                  "Milligram (mg): Micro unit for medical tablet active ingredients and precious metals (1 g = 1,000 mg)",
+                  "Gram (g): Unit for light grocery items, butter, spices (1 kg = 1,000 g)",
+                  "Kilogram (kg): Standard metric unit for vegetables, body weight, luggage"
+                ],
+                "misconception_alert": "Confusing milligrams and grams when measuring chemical or medicinal doses.",
+                "formula_or_rule": "Micro Mass Scale: 1 g = 1,000 mg; 1 kg = 1,000 g.",
+                "real_world_application": "Weighing pharmaceutical pills and kitchen recipe ingredients."
+              },
+              {
+                "sub_title": "Commercial Bulk Weights (Quintals & Tonnes)",
+                "key_nodes": [
+                  "Quintal: Commercial bulk unit for agricultural grain sacks (1 Quintal = 100 kg)",
+                  "Tonne (Metric Ton): Macro commercial weight for truck loads (1 Tonne = 1,000 kg = 10 Quintals)",
+                  "Bulk Conversion: Expressing harvest output in Quintals and Tonnes"
+                ],
+                "misconception_alert": "Confusing Quintal (100 kg) with Tonne (1,000 kg).",
+                "formula_or_rule": "Bulk Mass Scale: 1 Quintal = 100 kg; 1 Tonne = 1,000 kg = 10 Quintals.",
+                "real_world_application": "Agricultural mandi sales, freight shipping, and factory cargo weight."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Capacity (Liquid Volume) Metric Scale",
+            "sub_branches": [
+              {
+                "sub_title": "Units of Capacity & Fractional Benchmarks",
+                "key_nodes": [
+                  "Millilitre (ml): Unit for small liquid volumes, medicine spoons, juice pouches (1 Litre = 1,000 ml)",
+                  "Litre (L): Standard metric unit for milk, water bottles, fuel tanks",
+                  "Fractional Benchmarks: 1/2 Litre = 500 ml; 1/4 Litre = 250 ml; 3/4 Litre = 750 ml",
+                  "Measuring Cylinders & Beakers: Calibrated glass containers for volumetric displacement"
+                ],
+                "misconception_alert": "Assuming liquid volume changes when poured into a container of different shape.",
+                "formula_or_rule": "Capacity Equivalence: 1 Litre = 1,000 ml.",
+                "real_world_application": "Dosing liquid medicine, milk packet distribution, and fuel pump dispensing."
+              },
+              {
+                "sub_title": "Double Number Lines for Mass & Capacity",
+                "key_nodes": [
+                  "Parallel Axis Alignment: Mapping kg to g or Litres to ml along parallel number lines",
+                  "Visual Interpolation: Reading fractional parts (e.g., 3/4 kg = 750 g; 1/4 L = 250 ml)",
+                  "Proportional Problem Solving: Scaling recipe ingredients visually"
+                ],
+                "misconception_alert": "Misaligning tick marks for fractional metric benchmarks on double number lines.",
+                "formula_or_rule": "Proportional Scale: Distance along line corresponds proportionally to metric value.",
+                "real_world_application": "Commercial baking recipes and beverage factory bottling."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Pan Balance Equilibrium & Practical Arithmetic",
+            "sub_branches": [
+              {
+                "sub_title": "Pan Balance Equilibrium",
+                "key_nodes": [
+                  "Equilibrium Condition: Left Pan Total Mass = Right Pan Total Mass",
+                  "Standard Weight Combinations: Balancing 1 kg using combinations of 500 g, 200 g, 100 g weights",
+                  "Solving Unknown Weights: Unknown Mass = Known Pan Mass - Subtracted Weight"
+                ],
+                "misconception_alert": "Neglecting container tare weight when measuring net product mass.",
+                "formula_or_rule": "Equilibrium Identity: Mass_left = Mass_right.",
+                "real_world_application": "Traditional vegetable market sales and scientific laboratory weighing."
+              },
+              {
+                "sub_title": "Compound Addition & Subtraction of Weights",
+                "key_nodes": [
+                  "Adding Compound Mass: Sum kg and g separately; regroup 1,000 g as 1 kg",
+                  "Subtracting Compound Mass: Borrow 1 kg as 1,000 g when g minuend < g subtrahend",
+                  "Bag Capacity Limits: Calculating total load carried by transport vehicles"
+                ],
+                "misconception_alert": "Borrowing 100 g instead of 1,000 g when regrouping kilograms to grams.",
+                "formula_or_rule": "Mass Regrouping: 1,000 g = 1 kg; 1,000 mg = 1 g.",
+                "real_world_application": "Managing airline baggage limits and post office parcel pricing."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 8,
+        "image_id": "ch08_pan_balance",
+        "file_name": "ch08_pan_balance.png",
+        "local_url": "/assets/images/ch08_pan_balance.png",
+        "aspect_ratio": "16:9",
+        "title": "Pan Balance Equilibrium & Mass/Capacity Scale",
+        "description": "Pan balance equilibrium with target mass, counterweights, and quintal/tonne conversion scale.",
+        "hotspots": [
+          {
+            "label": "Left Target Pan",
+            "x_percent": 25.0,
+            "y_percent": 50.0,
+            "w_percent": 18.0,
+            "h_percent": 20.0
+          },
+          {
+            "label": "Right Counterweight Pan",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 18.0,
+            "h_percent": 20.0
+          },
+          {
+            "label": "Fulcrum Pointer Equilibrium",
+            "x_percent": 50.0,
+            "y_percent": 35.0,
+            "w_percent": 10.0,
+            "h_percent": 15.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 9,
+      "chapter_title": "Coconut Farm",
+      "mind_map": {
+        "root_node": "Coconut Farm (Division Algorithms, Partial Quotients & Equal Grouping)",
+        "main_branches": [
+          {
+            "branch_title": "1. Division Terminology & Fundamental Identity",
+            "sub_branches": [
+              {
+                "sub_title": "Division Components & Terms",
+                "key_nodes": [
+                  "Dividend: Total quantity being split or partitioned",
+                  "Divisor: Group size or number of equal parts required",
+                  "Quotient: Count of equal groups formed",
+                  "Remainder: Leftover amount strictly smaller than divisor"
+                ],
+                "misconception_alert": "Confusing dividend and divisor positions in division expressions (e.g., A / B means A divided by B).",
+                "formula_or_rule": "Division Terminology: Dividend / Divisor = Quotient with Remainder.",
+                "real_world_application": "Packaging harvested coconuts into bags and dividing crop earnings among farm hands."
+              },
+              {
+                "sub_title": "Fundamental Division Identity & Verification",
+                "key_nodes": [
+                  "Division Identity Formula: Dividend = (Divisor x Quotient) + Remainder",
+                  "Remainder Constraint: Remainder must be strictly non-negative and smaller than divisor (0 <= R < Divisor)",
+                  "Self-Checking Protocol: Multiply quotient by divisor, add remainder, verify if result equals dividend"
+                ],
+                "misconception_alert": "Allowing a remainder that is equal to or greater than the divisor.",
+                "formula_or_rule": "Division Verification: Dividend = (Divisor x Quotient) + Remainder, with 0 <= Remainder < Divisor.",
+                "real_world_application": "Auditing factory inventory counts and financial cash distribution."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Division Algorithms & Zero Placement",
+            "sub_branches": [
+              {
+                "sub_title": "Partial Quotients Chunking Strategy",
+                "key_nodes": [
+                  "Chunking Method: Subtract easy multiples of divisor (e.g., 10x, 20x, 50x) from dividend iteratively",
+                  "Summing Partial Quotients: Add all intermediate quotient chunks to find final total quotient",
+                  "Efficiency Gain: Reduces cognitive load compared to traditional digit-by-digit long division"
+                ],
+                "misconception_alert": "Subtracting incorrect partial multiples that exceed the remaining dividend balance.",
+                "formula_or_rule": "Total Quotient = Sum of all partial quotient chunks.",
+                "real_world_application": "Calculating copra oil extraction ratios and bulk shipment logistics."
+              },
+              {
+                "sub_title": "Zero Placement in Quotients",
+                "key_nodes": [
+                  "Zero Quotient Rule: Record '0' in quotient when brought-down dividend digit is smaller than divisor (e.g., 612 / 6 = 102)",
+                  "Place Value Alignment: Maintaining correct column alignment for quotient digits",
+                  "Place-Value Shortcuts: Dividing numbers ending in zeroes by 10 or 100"
+                ],
+                "misconception_alert": "Omitting zero in the quotient when bringing down a digit that cannot be divided (e.g., writing 612 / 6 = 12 instead of 102).",
+                "formula_or_rule": "Zero Quotient Rule: If Divisor > Current Column Dividend, record 0 in Quotient before bringing down next digit.",
+                "real_world_application": "Calculating daily wage rates and per-unit production costs."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Farm Logistics & Revenue Distribution",
+            "sub_branches": [
+              {
+                "sub_title": "Copra Oil Yield & Sacks Packaging",
+                "key_nodes": [
+                  "Packaging Sacks: Total Sacks = Total Coconuts / Sacks Capacity",
+                  "Oil Extraction Ratio: e.g., 10 coconuts yield 1 Litre oil -> Oil Litres = Total Coconuts / 10",
+                  "Remaining Coconuts: Remainder represents unextracted or leftover individual coconuts"
+                ],
+                "misconception_alert": "Rounding down quotient when leftover remainder requires an additional packaging sack.",
+                "formula_or_rule": "Sacks Required = Quotient + (1 if Remainder > 0 else 0).",
+                "real_world_application": "Managing copra warehouse storage and oil processing mills."
+              },
+              {
+                "sub_title": "Equal Wage Sharing & Cooperative Payrolls",
+                "key_nodes": [
+                  "Equal Wage Sharing: Worker Share = Total Farm Revenue / Number of Workers",
+                  "Multi-Day Payrolls: Daily Rate = Weekly Total Earnings / 7 Days",
+                  "Cooperative Profit Division: Net Profit = Gross Revenue - Total Expenses; Share = Net Profit / Members"
+                ],
+                "misconception_alert": "Dividing revenue by work days instead of worker count when calculating individual daily pay.",
+                "formula_or_rule": "Equal Share = Total Pool Amount / Number of Recipients.",
+                "real_world_application": "Managing agricultural cooperatives, farm labor payrolls, and market distribution."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 9,
+        "image_id": "ch09_division_matrix",
+        "file_name": "ch09_division_matrix.png",
+        "local_url": "/assets/images/ch09_division_matrix.png",
+        "aspect_ratio": "16:9",
+        "title": "Partial Quotient Chunking & Division Identity Matrix",
+        "description": "Partial quotient division algorithm chunking multiples and verifying Dividend = Divisor x Quotient + Remainder.",
+        "hotspots": [
+          {
+            "label": "Dividend Box",
+            "x_percent": 35.0,
+            "y_percent": 30.0,
+            "w_percent": 15.0,
+            "h_percent": 12.0
+          },
+          {
+            "label": "Divisor Column",
+            "x_percent": 18.0,
+            "y_percent": 30.0,
+            "w_percent": 12.0,
+            "h_percent": 12.0
+          },
+          {
+            "label": "Partial Quotients Column",
+            "x_percent": 70.0,
+            "y_percent": 35.0,
+            "w_percent": 15.0,
+            "h_percent": 35.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "Symmetrical Designs",
+      "mind_map": {
+        "root_node": "Symmetrical Designs (Reflection Lines, Rotational Turns & Block Crafts)",
+        "main_branches": [
+          {
+            "branch_title": "1. Reflection (Line) Symmetry & Folding Axes",
+            "sub_branches": [
+              {
+                "sub_title": "Mirror Symmetry & Line Definition",
+                "key_nodes": [
+                  "Line of Symmetry Definition: Imaginary axis dividing shape into two identical mirror halves that overlap perfectly when folded",
+                  "Mirror Halves Property: Points on left side reflect to congruent equidistant points on right side",
+                  "Vertical vs Horizontal Axes: Testing symmetry along vertical, horizontal, and diagonal fold lines"
+                ],
+                "misconception_alert": "Assuming any line dividing a shape into two equal-area pieces is a line of symmetry.",
+                "formula_or_rule": "Reflection Rule: A shape has line symmetry if folding along axis produces congruent matching halves.",
+                "real_world_application": "Analyzing symmetry in butterfly wings, human faces, and architectural facades."
+              },
+              {
+                "sub_title": "Polygon Line Symmetry Counts",
+                "key_nodes": [
+                  "Square: 4 lines of symmetry (2 mid-sides, 2 diagonals)",
+                  "Rectangle (non-square): 2 lines of symmetry (2 mid-sides only; diagonals are NOT symmetry lines)",
+                  "Equilateral Triangle: 3 lines; Isosceles Triangle: 1 line; Scalene Triangle: 0 lines",
+                  "Regular Hexagon: 6 lines; Circle: Infinite symmetry lines through center"
+                ],
+                "misconception_alert": "Assuming the diagonal of a non-square rectangle is a line of symmetry (folding along diagonal does not overlap halves).",
+                "formula_or_rule": "Regular Polygon Symmetry: A regular N-gon has exactly N lines of symmetry.",
+                "real_world_application": "Architectural tile manufacturing and heraldic shield design."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Rotational Symmetry & Order of Rotation",
+            "sub_branches": [
+              {
+                "sub_title": "Quarter & Half Turn Rotational Symmetry",
+                "key_nodes": [
+                  "Rotational Symmetry Definition: Figure looks identical to original position after rotation less than 360°",
+                  "1/4 Turn (90°) Rotational Symmetry: Square, 4-blade firki pinwheel",
+                  "1/2 Turn (180°) Rotational Symmetry: Rectangle, letters H, I, N, O, S, X, Z",
+                  "Minimum Rotation Angle: Smallest degree turn that matches original appearance"
+                ],
+                "misconception_alert": "Believing letter N has reflection line symmetry (letter N has 180° rotational symmetry but zero reflection lines).",
+                "formula_or_rule": "Rotational Appearance Rule: Shape matches original appearance at multiples of minimum rotation angle.",
+                "real_world_application": "Designing ceiling fans, vehicle wheel rims, and company logos."
+              },
+              {
+                "sub_title": "Order of Rotational Symmetry",
+                "key_nodes": [
+                  "Order Definition: Number of times shape matches original appearance during a 360° full turn",
+                  "Order Examples: Square = Order 4 (90°); Equilateral Triangle = Order 3 (120°); Rectangle = Order 2 (180°)",
+                  "Alphabet Classification: Classifying English capital letters by reflection lines vs rotational order"
+                ],
+                "misconception_alert": "Stating Order = 0 for shapes without rotational symmetry (minimum order is 1 for 360° full turn).",
+                "formula_or_rule": "Order of Rotation = 360° / Minimum Rotation Angle.",
+                "real_world_application": "Analyzing hubcap designs and windmill blade efficiency."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Traditional Art & Block Printing Crafts",
+            "sub_branches": [
+              {
+                "sub_title": "Rajasthani Block Printing & Motifs",
+                "key_nodes": [
+                  "Rajasthani Block Printing: Carved wooden blocks dipped in dye and stamped in repeating grid patterns",
+                  "Translational & Rotational Motifs: Repeating design by sliding (translation) or turning block by 90°/180°",
+                  "Grid Grid Layouts: Stamping blocks in alternating symmetrical orientations"
+                ],
+                "misconception_alert": "Disrupting repeating pattern spacing when stamping hand block prints.",
+                "formula_or_rule": "Pattern Translation: Repeating motif at constant spatial intervals preserves overall visual symmetry.",
+                "real_world_application": "Textile fabric design, saree borders, and carpet weaving."
+              },
+              {
+                "sub_title": "Paper Cut-Out Crafts & Windmills",
+                "key_nodes": [
+                  "Paper Firki (Pinwheel): Folding square paper diagonally and cutting alternate corners to build 4-blade rotational firki",
+                  "Paper Snowflake Cut-Outs: Folding paper 3 or 4 times along symmetry lines and cutting shapes out of edges",
+                  "Rangoli Symmetry: Creating radial symmetrical patterns using dots and lines"
+                ],
+                "misconception_alert": "Cutting through closed folded center spine of paper cut-outs (destroys unified snowflake structure).",
+                "formula_or_rule": "Folded Symmetry: N folds produce 2^N or 2N symmetrical mirrored segments upon unfolding.",
+                "real_world_application": "Festive decorations, paper craft design, and traditional floor Rangoli art."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 10,
+        "image_id": "ch10_symmetry_firki",
+        "file_name": "ch10_symmetry_firki.png",
+        "local_url": "/assets/images/ch10_symmetry_firki.png",
+        "aspect_ratio": "16:9",
+        "title": "Reflection Lines & Rotational Firki Pinwheel",
+        "description": "Mirror reflection axes of symmetry and 4-blade firki pinwheel with 1/4 turn (90°) rotational order.",
+        "hotspots": [
+          {
+            "label": "Vertical Reflection Axis",
+            "x_percent": 25.0,
+            "y_percent": 50.0,
+            "w_percent": 5.0,
+            "h_percent": 40.0
+          },
+          {
+            "label": "Firki Pinwheel Rotation Center",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 12.0,
+            "h_percent": 12.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 11,
+      "chapter_title": "Grandmother’s Quilt",
+      "mind_map": {
+        "root_node": "Grandmother’s Quilt (Perimeter Boundary, Area Surface & Grid Optimization)",
+        "main_branches": [
+          {
+            "branch_title": "1. Perimeter (Boundary Length) Concepts & Formulas",
+            "sub_branches": [
+              {
+                "sub_title": "Perimeter Definition & Linear Metrics",
+                "key_nodes": [
+                  "Perimeter Definition: Continuous outer boundary distance surrounding a 2D closed figure",
+                  "Linear Measurement Units: Measured in centimetres (cm), metres (m), kilometres (km)",
+                  "Additive Boundary Principle: Summing all outer side lengths of any polygon"
+                ],
+                "misconception_alert": "Including internal grid lines when calculating the perimeter of a compound shape.",
+                "formula_or_rule": "Perimeter = Sum of all outer boundary side lengths.",
+                "real_world_application": "Stitching lace borders around quilts, fencing garden plots, and picture framing."
+              },
+              {
+                "sub_title": "Perimeter Formulas for Regular Shapes",
+                "key_nodes": [
+                  "Perimeter of Rectangle: P = 2 x (Length + Breadth) = 2(L + B)",
+                  "Perimeter of Square: P = 4 x Side length = 4S",
+                  "Perimeter of Regular Polygon: P = Number of sides (N) x Side length (S)"
+                ],
+                "misconception_alert": "Adding length and breadth once for rectangle perimeter instead of multiplying sum by 2.",
+                "formula_or_rule": "Perimeter Formulas: P_rectangle = 2(L + B); P_square = 4S.",
+                "real_world_application": "Calculating jogging track perimeter and baseboard molding lengths."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Area (Enclosed Surface Region) Concepts & Formulas",
+            "sub_branches": [
+              {
+                "sub_title": "Area Definition & Square Surface Metrics",
+                "key_nodes": [
+                  "Area Definition: Total 2D surface region enclosed inside a closed shape boundary",
+                  "Square Measurement Units: Measured in square centimetres (sq cm), square metres (sq m)",
+                  "Surface Coverage: Tiling surface with unit squares without gaps or overlaps"
+                ],
+                "misconception_alert": "Expressing area in linear units (cm) instead of square units (sq cm).",
+                "formula_or_rule": "Area Units: 1 sq cm = Area of square with 1 cm side length.",
+                "real_world_application": "Calculating room floor tiling, quilt patch fabrics, and farm field land areas."
+              },
+              {
+                "sub_title": "Area Formulas for Rectangles & Squares",
+                "key_nodes": [
+                  "Area of Rectangle: Area = Length x Breadth (A = L x B)",
+                  "Area of Square: Area = Side x Side (A = S²)",
+                  "Derived Side Formula: Side of Square = Sqrt(Area); Breadth of Rectangle = Area / Length"
+                ],
+                "misconception_alert": "Multiplying side by 4 to find square area instead of squaring the side.",
+                "formula_or_rule": "Area Formulas: A_rectangle = L x B; A_square = S².",
+                "real_world_application": "Buying carpet rolls, painting wall surfaces, and land parcel sales."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Grid Counting, Area-Perimeter Independence & Optimization",
+            "sub_branches": [
+              {
+                "sub_title": "Grid Square Tiling & Partial Square Rules",
+                "key_nodes": [
+                  "Grid Square Counting Rules: Full square = 1 unit; Half square = 0.5 unit; Greater-than-half square = 1 unit; Less-than-half square = 0 units",
+                  "Tracing Irregular Objects: Estimating area of hand palms and leaves on centimetre grid paper",
+                  "Tiling Efficiency: Counting total unit tiles needed to cover a quilt bed"
+                ],
+                "misconception_alert": "Counting less-than-half squares as full squares during grid area estimation.",
+                "formula_or_rule": "Grid Area Estimation = Full Squares + (0.5 x Half Squares) + Greater-Than-Half Squares.",
+                "real_world_application": "Estimating leaf surface areas in biology and footprint tracking."
+              },
+              {
+                "sub_title": "Area-Perimeter Independence & Square Optimization",
+                "key_nodes": [
+                  "Area-Perimeter Independence: Shapes with identical areas can have completely different perimeters (e.g., 1x12 rectangle P=26m vs 3x4 rectangle P=14m, both Area=12 sq m)",
+                  "Square Optimization Principle: Among all rectangles with a fixed perimeter, a SQUARE encloses maximum surface area",
+                  "Perimeter Minimization: Among all rectangles with a fixed area, a SQUARE has the minimum perimeter"
+                ],
+                "misconception_alert": "Assuming two shapes with equal perimeters must have equal areas.",
+                "formula_or_rule": "Optimization Principle: Square shape maximizes area for any given fixed perimeter length.",
+                "real_world_application": "Maximizing garden bed area with fixed fencing wire and optimizing quilt patchwork."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 11,
+        "image_id": "ch11_perimeter_area",
+        "file_name": "ch11_perimeter_area.png",
+        "local_url": "/assets/images/ch11_perimeter_area.png",
+        "aspect_ratio": "16:9",
+        "title": "1D Perimeter Boundary vs 2D Enclosed Surface Area",
+        "description": "Comparison of 1D outer boundary perimeter (16 cm) and 2D enclosed grid surface area (15 sq cm).",
+        "hotspots": [
+          {
+            "label": "1D Boundary Perimeter Line",
+            "x_percent": 30.0,
+            "y_percent": 15.0,
+            "w_percent": 40.0,
+            "h_percent": 8.0
+          },
+          {
+            "label": "2D Grid Surface Area Tiles",
+            "x_percent": 50.0,
+            "y_percent": 50.0,
+            "w_percent": 35.0,
+            "h_percent": 30.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 12,
+      "chapter_title": "Racing Seconds",
+      "mind_map": {
+        "root_node": "Racing Seconds (Sexagesimal Time Units, Clock Translations & Elapsed Duration)",
+        "main_branches": [
+          {
+            "branch_title": "1. Sexagesimal Base-60 Time System & Precision",
+            "sub_branches": [
+              {
+                "sub_title": "Base-60 Scale Factor & Unit Conversions",
+                "key_nodes": [
+                  "Base-60 Scale Factor: 1 Minute = 60 Seconds; 1 Hour = 60 Minutes = 3,600 Seconds",
+                  "Minutes to Seconds: Multiply minutes by 60 (e.g., 4 min x 60 = 240 sec)",
+                  "Seconds to Minutes: Divide seconds by 60 (e.g., 180 sec / 60 = 3 min)",
+                  "Mixed Unit Conversion: Expressing 2 min 15 sec = (2 x 60) + 15 = 135 seconds"
+                ],
+                "misconception_alert": "Using base-10 (100) conversions for time instead of base-60 (e.g., thinking 1 min = 100 sec).",
+                "formula_or_rule": "Base-60 Time Rule: Multiply by 60 to move down unit hierarchy; divide by 60 to move up.",
+                "real_world_application": "Timing 100m sprint races, cooking timers, and athletic sports training."
+              },
+              {
+                "sub_title": "Digital Stopwatch Precision & Fractional Benchmarks",
+                "key_nodes": [
+                  "Digital Stopwatch Precision: Tracking hundredths of a second in sprint finish lines",
+                  "Fractional Minute Benchmarks: 1/2 min = 30 sec; 1/4 min = 15 sec; 3/4 min = 45 sec",
+                  "Comparing Race Split Times: Lower stopwatch reading indicates faster performance"
+                ],
+                "misconception_alert": "Thinking a larger stopwatch decimal value represents a faster runner.",
+                "formula_or_rule": "Race Winner Rule: Smallest elapsed time = Fastest runner.",
+                "real_world_application": "Olympic athletic track timing, swimming competitions, and motor racing split times."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. 12-Hour AM/PM vs 24-Hour Railway Clock Translation",
+            "sub_branches": [
+              {
+                "sub_title": "12-Hour AM/PM Mechanics",
+                "key_nodes": [
+                  "12-Hour Clock Structure: 12-hour cycle repeated twice daily (AM and PM)",
+                  "AM (Ante Meridiem): Midnight (12:00 AM) to Noon (11:59 AM)",
+                  "PM (Post Meridiem): Noon (12:00 PM) to Midnight (11:59 PM)",
+                  "Ambiguity Risk: Missing AM/PM designation causes 12-hour scheduling errors"
+                ],
+                "misconception_alert": "Labeling 12:00 Noon as 12:00 AM or 12:00 Midnight as 12:00 PM.",
+                "formula_or_rule": "Meridiem Rule: 12:00 Noon = 12:00 PM; 12:00 Midnight = 12:00 AM.",
+                "real_world_application": "Setting alarm clocks and scheduling daily school appointments."
+              },
+              {
+                "sub_title": "24-Hour Railway Clock Translation",
+                "key_nodes": [
+                  "24-Hour Railway Clock: 4-digit notation eliminating AM/PM confusion (00:00 = Midnight, 12:00 = Noon, 14:30 = 2:30 PM)",
+                  "12-Hour PM to 24-Hour Conversion: Add 12 to hour digit (e.g., 7:45 PM + 12 = 19:45 hours)",
+                  "24-Hour to 12-Hour Conversion: Subtract 12 from hours >= 13:00 (e.g., 21:15 - 12 = 9:15 PM)",
+                  "Midnight & Noon Notation: 00:00 hours = Midnight; 12:00 hours = Noon"
+                ],
+                "misconception_alert": "Adding 12 to morning AM times when converting to 24-hour railway clock format.",
+                "formula_or_rule": "PM Conversion: 24-Hour Time = 12-Hour PM Hour + 12:00.",
+                "real_world_application": "Reading train timetables, flight departure boards, and television broadcast guides."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Elapsed Duration & Daily Time Management",
+            "sub_branches": [
+              {
+                "sub_title": "Elapsed Duration Calculations",
+                "key_nodes": [
+                  "Elapsed Duration Formula: Duration = End Time - Start Time",
+                  "Cross-Hour Regrouping: When subtracting minutes, borrow 1 hour as 60 minutes (not 100 minutes)",
+                  "Adding Time Durations: Sum minutes; if total >= 60, convert 60 min to 1 hour"
+                ],
+                "misconception_alert": "Borrowing 100 minutes during time subtraction instead of 60 minutes.",
+                "formula_or_rule": "Duration Identity: Duration = End_time - Start_time (regrouping 1 hr = 60 min).",
+                "real_world_application": "Calculating movie length, exam durations, and school daily timetables."
+              },
+              {
+                "sub_title": "Calendar Math & Leap Years",
+                "key_nodes": [
+                  "Standard Calendar Year: 365 days; 52 weeks + 1 day",
+                  "Leap Year Cycle: Every 4 years, February has 29 days (366 total days)",
+                  "Leap Year Rule: Year divisible by 4 is a leap year (except century years not divisible by 400)"
+                ],
+                "misconception_alert": "Assuming February always has 28 days every year.",
+                "formula_or_rule": "Leap Year Rule: Year % 4 == 0 -> 366 Days (February 29).",
+                "real_world_application": "Planning long-term project deadlines and calendar scheduling."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 12,
+        "image_id": "ch12_stopwatch_clocks",
+        "file_name": "ch12_stopwatch_clocks.png",
+        "local_url": "/assets/images/ch12_stopwatch_clocks.png",
+        "aspect_ratio": "16:9",
+        "title": "Base-60 Time System & Athletic Digital Stopwatch",
+        "description": "Digital stopwatch with split seconds and 12-hour AM/PM to 24-hour railway clock translation.",
+        "hotspots": [
+          {
+            "label": "Minutes Display",
+            "x_percent": 35.0,
+            "y_percent": 40.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Seconds Display",
+            "x_percent": 50.0,
+            "y_percent": 40.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "Split-Second Precision Display",
+            "x_percent": 65.0,
+            "y_percent": 40.0,
+            "w_percent": 12.0,
+            "h_percent": 15.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 13,
+      "chapter_title": "Animal Jumps",
+      "mind_map": {
+        "root_node": "Animal Jumps (Multiples, Factors, LCM & Prime Numbers)",
+        "main_branches": [
+          {
+            "branch_title": "1. Multiples, Common Multiples & LCM",
+            "sub_branches": [
+              {
+                "sub_title": "Multiples & Number Line Jumps",
+                "key_nodes": [
+                  "Multiple Definition: Product of a given whole number and any non-zero integer (e.g., Multiples of 3: 3, 6, 9, 12, 15...)",
+                  "Infinite Property: Every non-zero number has infinitely many multiples",
+                  "Rhythmic Jump Paths: Visualizing multiples as animal leaps along numbered stepping stones"
+                ],
+                "misconception_alert": "Thinking a number has a finite count of multiples (multiples continue endlessly).",
+                "formula_or_rule": "Multiple Sequence: M_n = k x n for k = 1, 2, 3, 4...",
+                "real_world_application": "Predicting leap frog landing spots and rhythmic music beats."
+              },
+              {
+                "sub_title": "Common Multiples & Least Common Multiple (LCM)",
+                "key_nodes": [
+                  "Common Multiples: Numbers that are shared multiples of two or more given numbers (e.g., Common multiples of 3 and 5: 15, 30, 45...)",
+                  "Least Common Multiple (LCM): First non-zero shared landing spot (e.g., LCM(3, 5) = 15)",
+                  "Co-Prime LCM Rule: If A and B share no common factors, LCM(A, B) = A x B"
+                ],
+                "misconception_alert": "Selecting a common multiple that is not the smallest as the LCM.",
+                "formula_or_rule": "LCM Rule: First landing spot where two rhythmic jump sequences coincide.",
+                "real_world_application": "Determining when two bus routes synchronize at a shared stop and traffic light signals."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Factors, Tile Grids & Prime vs Composite Classification",
+            "sub_branches": [
+              {
+                "sub_title": "Factors & Rectangular Tile Arrays",
+                "key_nodes": [
+                  "Factor Definition: Whole number that divides a target number completely with zero remainder",
+                  "Rectangular Tile Arrangements: Arranging N tiles into solid rectangles reveals all factor pairs (e.g., 12 tiles -> 1x12, 2x6, 3x4 -> Factors: 1, 2, 3, 4, 6, 12)",
+                  "Finite Factor Property: Every non-zero number has a finite count of factors; 1 and the number itself are always factors"
+                ],
+                "misconception_alert": "Confusing multiples with factors (multiples are equal to or larger than number; factors are equal to or smaller).",
+                "formula_or_rule": "Factor Test: A is a factor of B if B % A == 0.",
+                "real_world_application": "Arranging seats in equal rows, floor tile arrays, and cryptographic security."
+              },
+              {
+                "sub_title": "Prime vs Composite Number Taxonomy",
+                "key_nodes": [
+                  "Prime Number: Whole number > 1 with EXACTLY 2 distinct factors (1 and itself, e.g., 2, 3, 5, 7, 11, 13, 17, 19, 23, 29)",
+                  "Even Prime Exception: 2 is the ONLY even prime number",
+                  "Composite Number: Whole number > 1 with MORE than 2 factors (e.g., 4, 6, 8, 9, 10)",
+                  "Number 1 Special Status: Neither prime nor composite (has only 1 factor)"
+                ],
+                "misconception_alert": "Thinking all odd numbers are prime (e.g., 9, 15, 21, 25 are odd but composite).",
+                "formula_or_rule": "Prime Condition: Count(Factors) == 2.",
+                "real_world_application": "Cybersecurity encryption key generation and number theory puzzles."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Mental Divisibility Rules & Multiplier Boxes",
+            "sub_branches": [
+              {
+                "sub_title": "Divisibility Rules for 2, 3, 5, 10",
+                "key_nodes": [
+                  "Divisibility by 2: Last digit is even (0, 2, 4, 6, 8)",
+                  "Divisibility by 5: Last digit is 0 or 5",
+                  "Divisibility by 10: Last digit is 0",
+                  "Divisibility by 3: Sum of all digits is divisible by 3 (e.g., 123 -> 1+2+3=6, divisible by 3)"
+                ],
+                "misconception_alert": "Applying last-digit test to 3 instead of using sum of digits.",
+                "formula_or_rule": "Divisibility Rule by 3: If Sum(Digits) % 3 == 0, number is divisible by 3.",
+                "real_world_application": "Sorting items into equal packing crates without manual trial division."
+              },
+              {
+                "sub_title": "Multiplier Boxes & Grid Puzzles",
+                "key_nodes": [
+                  "Multiplier Box Structure: Row and column header product matrices",
+                  "Solving Missing Multipliers: Finding missing row/column headers using HCF of products",
+                  "Digit Sum Magic of 9: Sum of digits of any multiple of 9 is always a multiple of 9"
+                ],
+                "misconception_alert": "Misidentifying common factors when filling multiplier box corners.",
+                "formula_or_rule": "Grid Multiplication Cell: Cell(i, j) = Row_Header(i) x Column_Header(j).",
+                "real_world_application": "Solving Kakuro mathematical logic puzzles and multiplication table practice."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 13,
+        "image_id": "ch13_animal_jumps_lcm",
+        "file_name": "ch13_animal_jumps_lcm.png",
+        "local_url": "/assets/images/ch13_animal_jumps_lcm.png",
+        "aspect_ratio": "16:9",
+        "title": "Animal Jump Number Line & Factor Tile Arrays",
+        "description": "Mowgli (2-unit) and Robby (3-unit) jump paths on a number line locating shared LCM spot at 6.",
+        "hotspots": [
+          {
+            "label": "2-Unit Jump Arcs",
+            "x_percent": 20.0,
+            "y_percent": 35.0,
+            "w_percent": 60.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "3-Unit Jump Arcs",
+            "x_percent": 20.0,
+            "y_percent": 55.0,
+            "w_percent": 60.0,
+            "h_percent": 15.0
+          },
+          {
+            "label": "First Common LCM Spot (6)",
+            "x_percent": 48.0,
+            "y_percent": 45.0,
+            "w_percent": 8.0,
+            "h_percent": 20.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 14,
+      "chapter_title": "Maps and Locations",
+      "mind_map": {
+        "root_node": "Maps and Locations (Cardinal Directions, Grid Coordinates & Map Scale)",
+        "main_branches": [
+          {
+            "branch_title": "1. Cardinal Directions & Compass Navigation",
+            "sub_branches": [
+              {
+                "sub_title": "Orientation Standards & Sun Navigation",
+                "key_nodes": [
+                  "Four Main Cardinal Directions: North (N, top of map), South (S, bottom), East (E, right), West (W, left)",
+                  "Sun Orientation Rule: Sun rises in East, sets in West",
+                  "Opposite Cardinal Pairs: North <-> South; East <-> West"
+                ],
+                "misconception_alert": "Confusing left/right relative turn directions with fixed compass directions.",
+                "formula_or_rule": "Compass Rose Rule: Clockwise sequence is N -> E -> S -> W.",
+                "real_world_application": "Siberian crane migration path tracking, sea navigation, and hiking."
+              },
+              {
+                "sub_title": "Intermediate Directions & Compass Rose",
+                "key_nodes": [
+                  "Four Intermediate Directions: North-East (NE), South-East (SE), South-West (SW), North-West (NW)",
+                  "45° Angular Bisection: Intermediate directions bisect 90° cardinal right angles",
+                  "Magnetic Compass Needle: Magnetized needle always aligns along magnetic North-South axis"
+                ],
+                "misconception_alert": "Naming intermediate directions as 'East-North' instead of standard 'North-East'.",
+                "formula_or_rule": "Intermediate Direction Rule: Always lead with North or South (e.g., NE, SE, SW, NW).",
+                "real_world_application": "Aviation flight headings, weather wind direction reporting, and maritime navigation."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Cartesian Grid Coordinate System (x, y)",
+            "sub_branches": [
+              {
+                "sub_title": "Coordinate Plotting & Origin",
+                "key_nodes": [
+                  "Coordinate Pair Structure: (x, y) where x = Horizontal column index, y = Vertical row index",
+                  "Origin Point: (0, 0) intersection of horizontal baseline and vertical axis",
+                  "Plotting Protocol: Move x units right from origin, then y units up"
+                ],
+                "misconception_alert": "Reversing horizontal (x) and vertical (y) coordinates (plotting (x,y) as (y,x)).",
+                "formula_or_rule": "Coordinate Rule: Always read (Horizontal X, Vertical Y).",
+                "real_world_application": "City street grid navigation, seating chart locations, and GPS mapping."
+              },
+              {
+                "sub_title": "Taxicab Grid Distance & Route Tracing",
+                "key_nodes": [
+                  "Taxicab Grid Distance: Distance = |x2 - x1| + |y2 - y1| (blocks traveled along grid lines)",
+                  "Grid Enclosed Area: Length x Width calculated from coordinate bounds",
+                  "Shortest Grid Path: Multiple distinct grid paths can share equal taxicab distance"
+                ],
+                "misconception_alert": "Measuring diagonal Euclidean distance across grid blocks instead of taxicab block distance.",
+                "formula_or_rule": "Taxicab Distance Formula: D = |Delta X| + |Delta Y|.",
+                "real_world_application": "Urban delivery driver routing, robotics grid navigation, and chessboard movements."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Map Reading, Legends & Scale Translations",
+            "sub_branches": [
+              {
+                "sub_title": "Cartographic Symbols & Metro Maps",
+                "key_nodes": [
+                  "Map Legend / Key: Decoding colored lines, markers, icons (e.g., Delhi Metro line colors)",
+                  "Route Tracing: Identifying interchange stations and counting stop counts",
+                  "Physical Map Conventions: Blue = Water bodies, Green = Forests, Brown = Mountains"
+                ],
+                "misconception_alert": "Misinterpreting line color codes on transit maps as physical track colors.",
+                "formula_or_rule": "Map Legend Rule: Refer to Key legend to decode abstract line colors and markers.",
+                "real_world_application": "Navigating subway networks, tourist sightseeing, and environmental maps."
+              },
+              {
+                "sub_title": "Map Scale Reduction & Ground Distance",
+                "key_nodes": [
+                  "Scale Reduction Factor: Ratio scaling large ground distances onto printable paper (e.g., 1 cm = 5 km)",
+                  "Ground Distance Calculation: Ground Distance = Map Distance (cm) x Scale Factor (km/cm)",
+                  "Map Distance Calculation: Map Distance = Ground Distance / Scale Factor"
+                ],
+                "misconception_alert": "Measuring map distance with ruler without multiplying by scale factor.",
+                "formula_or_rule": "Map Scale Conversion: Ground Distance = Map Distance x Scale Factor.",
+                "real_world_application": "Reading transit route maps, architectural floor plans, and atlas maps."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 14,
+        "image_id": "ch14_cartesian_grid",
+        "file_name": "ch14_cartesian_grid.png",
+        "local_url": "/assets/images/ch14_cartesian_grid.png",
+        "aspect_ratio": "16:9",
+        "title": "Cartesian Grid Coordinates & Navigation Map",
+        "description": "Cartesian coordinate grid system with origin (0,0), X-axis, Y-axis, and plotted coordinate points (x, y).",
+        "hotspots": [
+          {
+            "label": "Origin Point (0,0)",
+            "x_percent": 20.0,
+            "y_percent": 80.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0
+          },
+          {
+            "label": "Horizontal X-Axis",
+            "x_percent": 50.0,
+            "y_percent": 82.0,
+            "w_percent": 50.0,
+            "h_percent": 5.0
+          },
+          {
+            "label": "Vertical Y-Axis",
+            "x_percent": 18.0,
+            "y_percent": 45.0,
+            "w_percent": 5.0,
+            "h_percent": 50.0
+          },
+          {
+            "label": "Plotted Location Point (4,3)",
+            "x_percent": 60.0,
+            "y_percent": 50.0,
+            "w_percent": 8.0,
+            "h_percent": 8.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 15,
+      "chapter_title": "Data Through Pictures",
+      "mind_map": {
+        "root_node": "Data Through Pictures (Data Handling, Tally Marks, Pictographs & Bar Graphs)",
+        "main_branches": [
+          {
+            "branch_title": "1. Data Collection & Tally Mark Frequency Tables",
+            "sub_branches": [
+              {
+                "sub_title": "Primary Data & 5-Line Tally Bundles",
+                "key_nodes": [
+                  "Primary Data Definition: Firsthand information gathered directly through observation, counting, or measurement",
+                  "Tally Mark Notation: Representing individual counts with vertical strokes (| = 1, || = 2, ||| = 3, |||| = 4)",
+                  "5-Line Bundle (卌): Drawing 5th stroke diagonally across 4 vertical lines to complete a 5-unit bundle",
+                  "Frequency Table: Summarizing tally counts into category rows with numerical totals"
+                ],
+                "misconception_alert": "Drawing 5 vertical lines before adding slash (a bundle 卌 contains 4 vertical + 1 diagonal = 5 total).",
+                "formula_or_rule": "Tally Bundle Rule: Every 5th count is drawn as a diagonal slash across previous 4 vertical strokes.",
+                "real_world_application": "Counting traffic vehicles, voting tally counts, and classroom attendance."
+              },
+              {
+                "sub_title": "Data Organization & Grouping",
+                "key_nodes": [
+                  "Categorical Grouping: Classifying raw data points into mutually exclusive categories",
+                  "Sorting & Ordering Data: Arranging category frequencies from highest to lowest",
+                  "Total Frequency Sum: Summing all individual category counts to verify grand total sample size"
+                ],
+                "misconception_alert": "Double counting data points or omitting categories during tally sorting.",
+                "formula_or_rule": "Total Frequency = Sum of all individual category frequencies.",
+                "real_world_application": "Survey data tabulations, retail store inventory counts, and sports statistics."
+              }
+            ]
+          },
+          {
+            "branch_title": "2. Pictographs & Scaled Keys",
+            "sub_branches": [
+              {
+                "sub_title": "Visual Pictorial Representation",
+                "key_nodes": [
+                  "Pictograph Definition: Chart using icons or pictures to represent quantitative data",
+                  "Scaled Key: Assigning a fixed numerical value to 1 picture symbol (e.g., 1 Tree Icon = 10 Real Trees)",
+                  "Symbol Selection: Choosing intuitive visual icons matching data context"
+                ],
+                "misconception_alert": "Counting total icons without multiplying by key value (e.g., reporting 4 icons instead of 4 x 10 = 40 trees).",
+                "formula_or_rule": "Pictograph Total = Number of Symbols x Value per Symbol.",
+                "real_world_application": "Visual infographics in newspapers, agricultural crop reports, and weather charts."
+              },
+              {
+                "sub_title": "Partial Symbols & Key Scaling",
+                "key_nodes": [
+                  "Partial Symbol Representation: Drawing half or quarter icons to represent fractional key values (e.g., Half Icon = 5 Trees)",
+                  "Key Selection Strategy: Choosing key value that divides all category counts cleanly (e.g., Key = 5 or 10)",
+                  "Pictograph Limitations: Difficulty in depicting non-standard odd numbers accurately"
+                ],
+                "misconception_alert": "Misinterpreting half-symbols as representing 1 unit regardless of key value.",
+                "formula_or_rule": "Partial Symbol Value = Fraction of Symbol x Key Value.",
+                "real_world_application": "Public health awareness posters and population demographic charts."
+              }
+            ]
+          },
+          {
+            "branch_title": "3. Bar Graphs & Graphical Frequency Analytics",
+            "sub_branches": [
+              {
+                "sub_title": "Bar Graph Construction & Axes",
+                "key_nodes": [
+                  "Bar Graph Structure: Horizontal X-axis (Data Categories), Vertical Y-axis (Frequency Scale)",
+                  "Proportional Bar Height: Height/length of each rectangular bar is directly proportional to category count",
+                  "Consistent Axis Scale: Uniform grid step intervals along Y-axis (e.g., 0, 5, 10, 15, 20...)"
+                ],
+                "misconception_alert": "Using unequal bar widths or inconsistent spacing between bars on X-axis.",
+                "formula_or_rule": "Bar Height Proportionality: Height = Category Frequency / Scale Unit Value.",
+                "real_world_application": "Tracking canteen food wastage, monthly rainfall charts, and sales analytics."
+              },
+              {
+                "sub_title": "Graphical Analysis & Mode Identification",
+                "key_nodes": [
+                  "Mode Identification: Tallest bar represents most frequent data category (highest mode)",
+                  "Comparative Analytics: Finding differences between categories (Tallest Bar - Shortest Bar)",
+                  "Trend Prediction: Drawing operational conclusions and action plans from visual graph profiles"
+                ],
+                "misconception_alert": "Misreading bar heights between scale grid lines on Y-axis.",
+                "formula_or_rule": "Category Difference = High_Bar_Value - Low_Bar_Value.",
+                "real_world_application": "Canteen food waste reduction campaigns, school attendance tracking, and sales reporting."
+              }
+            ]
+          }
+        ]
+      },
+      "image_asset": {
+        "chapter_number": 15,
+        "image_id": "ch15_tally_bargraph",
+        "file_name": "ch15_tally_bargraph.png",
+        "local_url": "/assets/images/ch15_tally_bargraph.png",
+        "aspect_ratio": "16:9",
+        "title": "5-Line Tally Bundles & Scaled Frequency Bar Graph",
+        "description": "Data collection using 5-line tally mark bundles (卌) and scaled frequency bar graph analytics.",
+        "hotspots": [
+          {
+            "label": "5-Line Tally Mark Bundle (卌)",
+            "x_percent": 25.0,
+            "y_percent": 45.0,
+            "w_percent": 18.0,
+            "h_percent": 20.0
+          },
+          {
+            "label": "Bar Chart Vertical Y-Axis",
+            "x_percent": 60.0,
+            "y_percent": 45.0,
+            "w_percent": 5.0,
+            "h_percent": 40.0
+          },
+          {
+            "label": "Bar Chart Columns",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 20.0,
+            "h_percent": 35.0
+          }
+        ]
+      }
+    }
+  ],
+  "visual_diagram_catalog": {
+    "ch01": {
+      "chapter_number": 1,
+      "image_id": "ch01_travel_odometer",
+      "file_name": "ch01_travel_odometer.png",
+      "local_url": "/assets/images/ch01_travel_odometer.png",
+      "aspect_ratio": "16:9",
+      "title": "5-Digit Place Value & Vehicle Odometer Gauge",
+      "description": "Visual representation of 5-digit number place value columns (TTh, Th, H, T, O) and odometer distance delta calculation.",
+      "hotspots": [
+        {
+          "label": "Ten Thousands (TTh)",
+          "x_percent": 18.5,
+          "y_percent": 45.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Thousands (Th)",
+          "x_percent": 34.0,
+          "y_percent": 45.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Hundreds (H)",
+          "x_percent": 50.0,
+          "y_percent": 45.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Tens (T)",
+          "x_percent": 66.0,
+          "y_percent": 45.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Ones (O)",
+          "x_percent": 82.0,
+          "y_percent": 45.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        }
+      ]
+    },
+    "ch02": {
+      "chapter_number": 2,
+      "image_id": "ch02_fraction_strips",
+      "file_name": "ch02_fraction_strips.png",
+      "local_url": "/assets/images/ch02_fraction_strips.png",
+      "aspect_ratio": "16:9",
+      "title": "Fraction Strip Kit & Equal Partition Model",
+      "description": "Visual fraction kit demonstrating 1 Whole, 1/2, 1/4, 1/8 strips and equivalent fraction alignment.",
+      "hotspots": [
+        {
+          "label": "1 Whole Strip",
+          "x_percent": 10.0,
+          "y_percent": 20.0,
+          "w_percent": 80.0,
+          "h_percent": 12.0
+        },
+        {
+          "label": "Halves (1/2)",
+          "x_percent": 10.0,
+          "y_percent": 36.0,
+          "w_percent": 39.0,
+          "h_percent": 12.0
+        },
+        {
+          "label": "Fourths (1/4)",
+          "x_percent": 10.0,
+          "y_percent": 52.0,
+          "w_percent": 19.0,
+          "h_percent": 12.0
+        },
+        {
+          "label": "Eighths (1/8)",
+          "x_percent": 10.0,
+          "y_percent": 68.0,
+          "w_percent": 9.0,
+          "h_percent": 12.0
+        }
+      ]
+    },
+    "ch03": {
+      "chapter_number": 3,
+      "image_id": "ch03_clock_angles",
+      "file_name": "ch03_clock_angles.png",
+      "local_url": "/assets/images/ch03_clock_angles.png",
+      "aspect_ratio": "16:9",
+      "title": "Clock Radial Angles & Rotational Geometry",
+      "description": "Clock face radial angles showing 30-degree hourly divisions, right angles (90°), acute, obtuse, and straight angles.",
+      "hotspots": [
+        {
+          "label": "12 o clock (0 / 360 deg)",
+          "x_percent": 50.0,
+          "y_percent": 15.0,
+          "w_percent": 10.0,
+          "h_percent": 10.0
+        },
+        {
+          "label": "3 o clock Right Angle (90 deg)",
+          "x_percent": 80.0,
+          "y_percent": 50.0,
+          "w_percent": 10.0,
+          "h_percent": 10.0
+        },
+        {
+          "label": "6 o clock Straight Angle (180 deg)",
+          "x_percent": 50.0,
+          "y_percent": 85.0,
+          "w_percent": 10.0,
+          "h_percent": 10.0
+        },
+        {
+          "label": "9 o clock Three-Quarter Turn (270 deg)",
+          "x_percent": 20.0,
+          "y_percent": 50.0,
+          "w_percent": 10.0,
+          "h_percent": 10.0
+        }
+      ]
+    },
+    "ch04": {
+      "chapter_number": 4,
+      "image_id": "ch04_column_regrouping",
+      "file_name": "ch04_column_regrouping.png",
+      "local_url": "/assets/images/ch04_column_regrouping.png",
+      "aspect_ratio": "16:9",
+      "title": "5-Digit Column Regrouping & Palindrome Cascade",
+      "description": "Column addition/subtraction with regrouping across zero and 4-step reverse-and-add palindrome generation.",
+      "hotspots": [
+        {
+          "label": "Ten Thousands Borrow Column",
+          "x_percent": 20.0,
+          "y_percent": 30.0,
+          "w_percent": 12.0,
+          "h_percent": 40.0
+        },
+        {
+          "label": "Thousands Column",
+          "x_percent": 34.0,
+          "y_percent": 30.0,
+          "w_percent": 12.0,
+          "h_percent": 40.0
+        },
+        {
+          "label": "Palindrome Reverse Step",
+          "x_percent": 70.0,
+          "y_percent": 45.0,
+          "w_percent": 20.0,
+          "h_percent": 25.0
+        }
+      ]
+    },
+    "ch05": {
+      "chapter_number": 5,
+      "image_id": "ch05_metric_scale",
+      "file_name": "ch05_metric_scale.png",
+      "local_url": "/assets/images/ch05_metric_scale.png",
+      "aspect_ratio": "16:9",
+      "title": "Metric Length Hierarchy & Double Number Line",
+      "description": "Double number line showing proportional metric conversions between mm, cm, m, and km.",
+      "hotspots": [
+        {
+          "label": "Millimetres (mm)",
+          "x_percent": 15.0,
+          "y_percent": 30.0,
+          "w_percent": 15.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Centimetres (cm)",
+          "x_percent": 35.0,
+          "y_percent": 30.0,
+          "w_percent": 15.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Metres (m)",
+          "x_percent": 55.0,
+          "y_percent": 30.0,
+          "w_percent": 15.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Kilometres (km)",
+          "x_percent": 75.0,
+          "y_percent": 30.0,
+          "w_percent": 15.0,
+          "h_percent": 15.0
+        }
+      ]
+    },
+    "ch06": {
+      "chapter_number": 6,
+      "image_id": "ch06_partial_products",
+      "file_name": "ch06_partial_products.png",
+      "local_url": "/assets/images/ch06_partial_products.png",
+      "aspect_ratio": "16:9",
+      "title": "2x2 Partial Product Grid Area Model",
+      "description": "Distributive property 2x2 partial product grid decomposing multi-digit multiplication.",
+      "hotspots": [
+        {
+          "label": "Cell 1: Tens x Tens",
+          "x_percent": 30.0,
+          "y_percent": 35.0,
+          "w_percent": 25.0,
+          "h_percent": 20.0
+        },
+        {
+          "label": "Cell 2: Tens x Ones",
+          "x_percent": 60.0,
+          "y_percent": 35.0,
+          "w_percent": 25.0,
+          "h_percent": 20.0
+        },
+        {
+          "label": "Cell 3: Ones x Tens",
+          "x_percent": 30.0,
+          "y_percent": 60.0,
+          "w_percent": 25.0,
+          "h_percent": 20.0
+        },
+        {
+          "label": "Cell 4: Ones x Ones",
+          "x_percent": 60.0,
+          "y_percent": 60.0,
+          "w_percent": 25.0,
+          "h_percent": 20.0
+        }
+      ]
+    },
+    "ch07": {
+      "chapter_number": 7,
+      "image_id": "ch07_tessellations_nets",
+      "file_name": "ch07_tessellations_nets.png",
+      "local_url": "/assets/images/ch07_tessellations_nets.png",
+      "aspect_ratio": "16:9",
+      "title": "Surface Tessellations & Unfolded 3D Polyhedron Nets",
+      "description": "Seamless tiling tessellation vertex angle rules (360°) and unfolded 6-face cube net with Euler formula F+V-E=2.",
+      "hotspots": [
+        {
+          "label": "Tessellation 360 deg Vertex Fit",
+          "x_percent": 25.0,
+          "y_percent": 45.0,
+          "w_percent": 20.0,
+          "h_percent": 20.0
+        },
+        {
+          "label": "3D Unfolded Cube Net",
+          "x_percent": 70.0,
+          "y_percent": 45.0,
+          "w_percent": 22.0,
+          "h_percent": 30.0
+        }
+      ]
+    },
+    "ch08": {
+      "chapter_number": 8,
+      "image_id": "ch08_pan_balance",
+      "file_name": "ch08_pan_balance.png",
+      "local_url": "/assets/images/ch08_pan_balance.png",
+      "aspect_ratio": "16:9",
+      "title": "Pan Balance Equilibrium & Mass/Capacity Scale",
+      "description": "Pan balance equilibrium with target mass, counterweights, and quintal/tonne conversion scale.",
+      "hotspots": [
+        {
+          "label": "Left Target Pan",
+          "x_percent": 25.0,
+          "y_percent": 50.0,
+          "w_percent": 18.0,
+          "h_percent": 20.0
+        },
+        {
+          "label": "Right Counterweight Pan",
+          "x_percent": 75.0,
+          "y_percent": 50.0,
+          "w_percent": 18.0,
+          "h_percent": 20.0
+        },
+        {
+          "label": "Fulcrum Pointer Equilibrium",
+          "x_percent": 50.0,
+          "y_percent": 35.0,
+          "w_percent": 10.0,
+          "h_percent": 15.0
+        }
+      ]
+    },
+    "ch09": {
+      "chapter_number": 9,
+      "image_id": "ch09_division_matrix",
+      "file_name": "ch09_division_matrix.png",
+      "local_url": "/assets/images/ch09_division_matrix.png",
+      "aspect_ratio": "16:9",
+      "title": "Partial Quotient Chunking & Division Identity Matrix",
+      "description": "Partial quotient division algorithm chunking multiples and verifying Dividend = Divisor x Quotient + Remainder.",
+      "hotspots": [
+        {
+          "label": "Dividend Box",
+          "x_percent": 35.0,
+          "y_percent": 30.0,
+          "w_percent": 15.0,
+          "h_percent": 12.0
+        },
+        {
+          "label": "Divisor Column",
+          "x_percent": 18.0,
+          "y_percent": 30.0,
+          "w_percent": 12.0,
+          "h_percent": 12.0
+        },
+        {
+          "label": "Partial Quotients Column",
+          "x_percent": 70.0,
+          "y_percent": 35.0,
+          "w_percent": 15.0,
+          "h_percent": 35.0
+        }
+      ]
+    },
+    "ch10": {
+      "chapter_number": 10,
+      "image_id": "ch10_symmetry_firki",
+      "file_name": "ch10_symmetry_firki.png",
+      "local_url": "/assets/images/ch10_symmetry_firki.png",
+      "aspect_ratio": "16:9",
+      "title": "Reflection Lines & Rotational Firki Pinwheel",
+      "description": "Mirror reflection axes of symmetry and 4-blade firki pinwheel with 1/4 turn (90°) rotational order.",
+      "hotspots": [
+        {
+          "label": "Vertical Reflection Axis",
+          "x_percent": 25.0,
+          "y_percent": 50.0,
+          "w_percent": 5.0,
+          "h_percent": 40.0
+        },
+        {
+          "label": "Firki Pinwheel Rotation Center",
+          "x_percent": 75.0,
+          "y_percent": 50.0,
+          "w_percent": 12.0,
+          "h_percent": 12.0
+        }
+      ]
+    },
+    "ch11": {
+      "chapter_number": 11,
+      "image_id": "ch11_perimeter_area",
+      "file_name": "ch11_perimeter_area.png",
+      "local_url": "/assets/images/ch11_perimeter_area.png",
+      "aspect_ratio": "16:9",
+      "title": "1D Perimeter Boundary vs 2D Enclosed Surface Area",
+      "description": "Comparison of 1D outer boundary perimeter (16 cm) and 2D enclosed grid surface area (15 sq cm).",
+      "hotspots": [
+        {
+          "label": "1D Boundary Perimeter Line",
+          "x_percent": 30.0,
+          "y_percent": 15.0,
+          "w_percent": 40.0,
+          "h_percent": 8.0
+        },
+        {
+          "label": "2D Grid Surface Area Tiles",
+          "x_percent": 50.0,
+          "y_percent": 50.0,
+          "w_percent": 35.0,
+          "h_percent": 30.0
+        }
+      ]
+    },
+    "ch12": {
+      "chapter_number": 12,
+      "image_id": "ch12_stopwatch_clocks",
+      "file_name": "ch12_stopwatch_clocks.png",
+      "local_url": "/assets/images/ch12_stopwatch_clocks.png",
+      "aspect_ratio": "16:9",
+      "title": "Base-60 Time System & Athletic Digital Stopwatch",
+      "description": "Digital stopwatch with split seconds and 12-hour AM/PM to 24-hour railway clock translation.",
+      "hotspots": [
+        {
+          "label": "Minutes Display",
+          "x_percent": 35.0,
+          "y_percent": 40.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Seconds Display",
+          "x_percent": 50.0,
+          "y_percent": 40.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "Split-Second Precision Display",
+          "x_percent": 65.0,
+          "y_percent": 40.0,
+          "w_percent": 12.0,
+          "h_percent": 15.0
+        }
+      ]
+    },
+    "ch13": {
+      "chapter_number": 13,
+      "image_id": "ch13_animal_jumps_lcm",
+      "file_name": "ch13_animal_jumps_lcm.png",
+      "local_url": "/assets/images/ch13_animal_jumps_lcm.png",
+      "aspect_ratio": "16:9",
+      "title": "Animal Jump Number Line & Factor Tile Arrays",
+      "description": "Mowgli (2-unit) and Robby (3-unit) jump paths on a number line locating shared LCM spot at 6.",
+      "hotspots": [
+        {
+          "label": "2-Unit Jump Arcs",
+          "x_percent": 20.0,
+          "y_percent": 35.0,
+          "w_percent": 60.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "3-Unit Jump Arcs",
+          "x_percent": 20.0,
+          "y_percent": 55.0,
+          "w_percent": 60.0,
+          "h_percent": 15.0
+        },
+        {
+          "label": "First Common LCM Spot (6)",
+          "x_percent": 48.0,
+          "y_percent": 45.0,
+          "w_percent": 8.0,
+          "h_percent": 20.0
+        }
+      ]
+    },
+    "ch14": {
+      "chapter_number": 14,
+      "image_id": "ch14_cartesian_grid",
+      "file_name": "ch14_cartesian_grid.png",
+      "local_url": "/assets/images/ch14_cartesian_grid.png",
+      "aspect_ratio": "16:9",
+      "title": "Cartesian Grid Coordinates & Navigation Map",
+      "description": "Cartesian coordinate grid system with origin (0,0), X-axis, Y-axis, and plotted coordinate points (x, y).",
+      "hotspots": [
+        {
+          "label": "Origin Point (0,0)",
+          "x_percent": 20.0,
+          "y_percent": 80.0,
+          "w_percent": 10.0,
+          "h_percent": 10.0
+        },
+        {
+          "label": "Horizontal X-Axis",
+          "x_percent": 50.0,
+          "y_percent": 82.0,
+          "w_percent": 50.0,
+          "h_percent": 5.0
+        },
+        {
+          "label": "Vertical Y-Axis",
+          "x_percent": 18.0,
+          "y_percent": 45.0,
+          "w_percent": 5.0,
+          "h_percent": 50.0
+        },
+        {
+          "label": "Plotted Location Point (4,3)",
+          "x_percent": 60.0,
+          "y_percent": 50.0,
+          "w_percent": 8.0,
+          "h_percent": 8.0
+        }
+      ]
+    },
+    "ch15": {
+      "chapter_number": 15,
+      "image_id": "ch15_tally_bargraph",
+      "file_name": "ch15_tally_bargraph.png",
+      "local_url": "/assets/images/ch15_tally_bargraph.png",
+      "aspect_ratio": "16:9",
+      "title": "5-Line Tally Bundles & Scaled Frequency Bar Graph",
+      "description": "Data collection using 5-line tally mark bundles (卌) and scaled frequency bar graph analytics.",
+      "hotspots": [
+        {
+          "label": "5-Line Tally Mark Bundle (卌)",
+          "x_percent": 25.0,
+          "y_percent": 45.0,
+          "w_percent": 18.0,
+          "h_percent": 20.0
+        },
+        {
+          "label": "Bar Chart Vertical Y-Axis",
+          "x_percent": 60.0,
+          "y_percent": 45.0,
+          "w_percent": 5.0,
+          "h_percent": 40.0
+        },
+        {
+          "label": "Bar Chart Columns",
+          "x_percent": 75.0,
+          "y_percent": 50.0,
+          "w_percent": 20.0,
+          "h_percent": 35.0
+        }
+      ]
+    }
+  }
+}

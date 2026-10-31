@@ -6,7 +6,7 @@ from datetime import datetime
 from typing import Dict, Any, List
 
 print("==========================================================================")
-print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR (V15 - MULTI-SUBFOLDER SUPPORT)")
+print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR (V16 - RECURSIVE SUBFOLDER FIX)")
 print("==========================================================================\n")
 
 REPO_ROOT = r"D:/GURUKUL"
@@ -113,10 +113,7 @@ def run_strict_1to1():
             target_subj_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", app_subj.replace(" ", ""))
             os.makedirs(target_subj_dir, exist_ok=True)
 
-            search_dirs = [subj_path]
-            custom_files_dir = os.path.join(subj_path, "Custom Files")
-            if os.path.isdir(custom_files_dir):
-                search_dirs.append(custom_files_dir)
+            search_dirs = [root for root, _, _ in os.walk(subj_path)]
 
             source_file_specs = [
                 ("overview", ["overview", "overview.json"]),
@@ -223,7 +220,7 @@ def run_strict_1to1():
 
                 total_chapters_processed += 1
 
-    print(f"\nSuccessfully executed V15 multi-subfolder fix across {total_chapters_processed} chapters.")
+    print(f"\nSuccessfully executed V16 recursive fix across {total_chapters_processed} chapters.")
 
 if __name__ == "__main__":
     run_strict_1to1()
