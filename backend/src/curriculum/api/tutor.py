@@ -1,5 +1,6 @@
 import os
 import json
+import asyncio
 import urllib.request
 import urllib.error
 from fastapi import APIRouter, HTTPException, Depends
@@ -24,11 +25,21 @@ class TutorChatRequest(BaseModel):
     question: str
     action: Optional[str] = None
 
+def _sync_query_ollama(url: str, payload: bytes) -> dict:
+    req_obj = urllib.request.Request(
+        f"{url}/api/generate",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+    with urllib.request.urlopen(req_obj, timeout=5) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
 @router.post("/chat")
 async def tutor_chat(req: TutorChatRequest):
     """
     Genuine backend-powered AI Tutor endpoint.
-    Grounds answers in processed NCERT content using local Ollama.
+    Grounds answers in processed NCERT content using local Ollama (non-blocking thread worker).
     If Ollama is offline, returns status="OFFLINE" and explicit offline message without fake text.
     """
     # 1. Resolve chapter content context
@@ -70,7 +81,7 @@ Student Question: {req.question}
 Provide an age-appropriate, encouraging, and accurate answer grounded strictly in NCERT Class 5 curriculum.
 """
 
-    # 2. Query Local Ollama Engine
+    # 2. Query Local Ollama Engine in a worker thread to prevent blocking event loop
     try:
         ollama_payload = json.dumps({
             "model": OLLAMA_MODEL,
@@ -78,22 +89,14 @@ Provide an age-appropriate, encouraging, and accurate answer grounded strictly i
             "stream": False
         }).encode("utf-8")
 
-        req_obj = urllib.request.Request(
-            f"{OLLAMA_URL}/api/generate",
-            data=ollama_payload,
-            headers={"Content-Type": "application/json"},
-            method="POST"
-        )
+        res_data = await asyncio.to_thread(_sync_query_ollama, OLLAMA_URL, ollama_payload)
+        ai_text = res_data.get("response", "").strip()
 
-        with urllib.request.urlopen(req_obj, timeout=5) as resp:
-            res_data = json.loads(resp.read().decode("utf-8"))
-            ai_text = res_data.get("response", "").strip()
-
-            return {
-                "status": "ONLINE",
-                "model": OLLAMA_MODEL,
-                "response": ai_text
-            }
+        return {
+            "status": "ONLINE",
+            "model": OLLAMA_MODEL,
+            "response": ai_text
+        }
 
     except (urllib.error.URLError, ConnectionRefusedError, Exception) as e:
         return {
