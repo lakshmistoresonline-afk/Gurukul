@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function renderSafeText(val: any): React.ReactNode {
   if (val === null || val === undefined) return '';
@@ -40,15 +40,41 @@ interface MasterProps {
 }
 
 export default function MasterComponent({ data }: MasterProps) {
-  const [activeSubTab, setActiveSubTab] = useState<'cheat_sheet' | 'objective' | 'comprehension' | 'literature'>('cheat_sheet');
+  const cheatSheet = data?.quick_revision_cheat_sheet || data?.cheat_sheet || [];
+  const objectiveQ = data?.objective_questions || {};
+  const comprehension = data?.comprehension_exercises || data?.comprehension || [];
+  const literature = data?.literature_questions || {};
+
+  const hasCheat = Array.isArray(cheatSheet) && cheatSheet.length > 0;
+  const hasObj = objectiveQ && Object.keys(objectiveQ).length > 0;
+  const hasComp = Array.isArray(comprehension) && comprehension.length > 0;
+  const hasLit = literature && Object.keys(literature).length > 0;
+
+  const availableSubTabs = [
+    hasCheat && 'cheat_sheet',
+    hasObj && 'objective',
+    hasComp && 'comprehension',
+    hasLit && 'literature'
+  ].filter(Boolean) as ('cheat_sheet' | 'objective' | 'comprehension' | 'literature')[];
+
+  const [activeSubTab, setActiveSubTab] = useState<'cheat_sheet' | 'objective' | 'comprehension' | 'literature'>(
+    availableSubTabs[0] || 'objective'
+  );
+
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
   const [selectedTfAnswers, setSelectedTfAnswers] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    if (availableSubTabs.length > 0 && !availableSubTabs.includes(activeSubTab)) {
+      setActiveSubTab(availableSubTabs[0]);
+    }
+  }, [data, hasCheat, hasObj, hasComp, hasLit]);
 
   const [shuffledMap] = useState<Record<string, string[]>>(() => {
     const map: Record<string, string[]> = {};
     if (!data) return map;
-    const objectiveQ = data.objective_questions || {};
-    Object.entries(objectiveQ).forEach(([qType, qArr]: [string, any]) => {
+    const objQ = data.objective_questions || {};
+    Object.entries(objQ).forEach(([qType, qArr]: [string, any]) => {
       if (Array.isArray(qArr)) {
         qArr.forEach((q: any, qIdx: number) => {
           if (Array.isArray(q.options)) {
@@ -63,16 +89,6 @@ export default function MasterComponent({ data }: MasterProps) {
   if (!data) {
     return <div className="p-8 text-center text-slate-500">No master practice content available.</div>;
   }
-
-  const cheatSheet = data.quick_revision_cheat_sheet || data.cheat_sheet || [];
-  const objectiveQ = data.objective_questions || {};
-  const comprehension = data.comprehension_exercises || data.comprehension || [];
-  const literature = data.literature_questions || {};
-
-  const hasCheat = Array.isArray(cheatSheet) && cheatSheet.length > 0;
-  const hasObj = objectiveQ && Object.keys(objectiveQ).length > 0;
-  const hasComp = Array.isArray(comprehension) && comprehension.length > 0;
-  const hasLit = literature && Object.keys(literature).length > 0;
 
   const toggleAnswer = (key: string) => {
     setShowAnswers(prev => ({ ...prev, [key]: !prev[key] }));
@@ -136,7 +152,7 @@ export default function MasterComponent({ data }: MasterProps) {
         </div>
       )}
 
-      {/* Tab 3: Objective Questions */}
+      {/* Tab 2: Objective Questions */}
       {activeSubTab === 'objective' && hasObj && (
         <div className="space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Objective Question Bank</h3>
@@ -152,7 +168,6 @@ export default function MasterComponent({ data }: MasterProps) {
                     const isVisible = showAnswers[qKey];
                     const answer = q.correct_answer || q.answer;
                     const isTrueFalse = qType === 'true_false' || 'is_true' in q;
-                    const isMatchFollowing = qType === 'match_following' || 'pairs' in q;
                     const userTf = selectedTfAnswers[qKey];
                     const optionsToRender = shuffledMap[mapKey] || q.options || [];
 
@@ -233,7 +248,7 @@ export default function MasterComponent({ data }: MasterProps) {
         </div>
       )}
 
-      {/* Tab 2: Comprehension */}
+      {/* Tab 3: Comprehension */}
       {activeSubTab === 'comprehension' && hasComp && (
         <div className="space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Comprehension & Extracts</h3>
