@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
@@ -8,6 +8,7 @@ import {
   CurriculumApiClient,
   CurriculumIdentity,
   CurriculumApiError,
+  buildCurriculumUrl,
   sendTutorChat
 } from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
@@ -20,9 +21,12 @@ import {
   Sparkles,
   Bot,
   ChevronRight,
+  ChevronLeft,
   Send,
   X,
-  Loader2
+  Loader2,
+  ArrowLeft,
+  ArrowRight
 } from 'lucide-react';
 
 interface Props {
@@ -57,6 +61,8 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [availableContentTypes, setAvailableContentTypes] = useState<string[]>([]);
   const [contentData, setContentData] = useState<any>(null);
   const [chapterTitle, setChapterTitle] = useState<string>('');
+  const [prevChapterUrl, setPrevChapterUrl] = useState<string | null>(null);
+  const [nextChapterUrl, setNextChapterUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [statusCode, setStatusCode] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -76,12 +82,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
   ]);
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setCurrentUser(user);
-    });
-    return () => unsubscribe();
-  }, []);
+  const stageBarRef = useRef<HTMLDivElement>(null);
 
   const grade = segments[0] || '5';
   const subject = segments[1] || '';
@@ -91,6 +92,13 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const chapterId = segments[5] || '';
 
   const canonicalIdentityKey = `${grade}:${subject.toLowerCase()}:${book.toLowerCase()}:${part.toLowerCase()}:${unit.toUpperCase()}:${chapterId.toLowerCase()}`;
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user);
+    });
+    return () => unsubscribe();
+  }, []);
 
   // Extract readable text for Audio Reader Toolbar
   const getReadableText = (data: any): string => {
@@ -114,7 +122,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     return '';
   };
 
-  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title
+  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title and Previous/Next Chapter Links
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6 || !grade || !chapterId) {
@@ -139,6 +147,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
         // Fetch authoritative hierarchy
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
         let foundChapter: any = null;
+        let unitChapters: any[] = [];
 
         for (const g of hierarchy) {
           if (String(g.grade) === String(grade)) {
@@ -148,7 +157,8 @@ export default function CatchAllChapterClient({ segments }: Props) {
                   if (b.book_id?.toLowerCase() === book.toLowerCase() && b.part?.toLowerCase() === part.toLowerCase()) {
                     for (const u of b.units || []) {
                       if (u.unit_id?.toUpperCase() === unit.toUpperCase()) {
-                        const ch = (u.chapters || []).find((c: any) => c.chapter_id?.toLowerCase() === chapterId.toLowerCase());
+                        unitChapters = u.chapters || [];
+                        const ch = unitChapters.find((c: any) => c.chapter_id?.toLowerCase() === chapterId.toLowerCase());
                         if (ch) {
                           foundChapter = ch;
                           break;
@@ -171,6 +181,26 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
         const realTitle = foundChapter.chapter_title || foundChapter.chapterTitle || chapterId;
         setChapterTitle(realTitle);
+
+        // Previous and Next Chapter Links
+        const chIdx = unitChapters.findIndex((c: any) => c.chapter_id?.toLowerCase() === chapterId.toLowerCase());
+        if (chIdx > 0) {
+          const prevCh = unitChapters[chIdx - 1];
+          setPrevChapterUrl(buildCurriculumUrl({
+            grade, subject, book, part, unit, chapter_id: prevCh.chapter_id
+          }));
+        } else {
+          setPrevChapterUrl(null);
+        }
+
+        if (chIdx >= 0 && chIdx < unitChapters.length - 1) {
+          const nextCh = unitChapters[chIdx + 1];
+          setNextChapterUrl(buildCurriculumUrl({
+            grade, subject, book, part, unit, chapter_id: nextCh.chapter_id
+          }));
+        } else {
+          setNextChapterUrl(null);
+        }
 
         // Record student activity with mandatory UID
         recordChapterActivity({
@@ -262,6 +292,22 @@ export default function CatchAllChapterClient({ segments }: Props) {
     localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
   };
 
+  // Stage Bar Smooth Scroll Functions
+  const scrollStageBar = (direction: 'left' | 'right') => {
+    if (stageBarRef.current) {
+      const amount = direction === 'left' ? -240 : 240;
+      stageBarRef.current.scrollBy({ left: amount, behavior: 'smooth' });
+    }
+  };
+
+  const handleStageSelect = (tab: string, stageNum: number) => {
+    setActiveTab(tab);
+    const btn = document.getElementById(`stage-btn-${stageNum}`);
+    if (btn) {
+      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+  };
+
   // Real Backend AI Tutor Call
   const handleAiAction = async (action: string) => {
     setTutorDrawerOpen(true);
@@ -318,7 +364,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
       {/* Sticky Compact Chapter Header */}
       <div className="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border border-slate-800 rounded-2xl p-5 shadow-2xl space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          {/* Breadcrumb */}
+          {/* Breadcrumb & Chapter Navigation */}
           <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400 font-mono">
             <Link href="/" className="hover:text-teal-400">Class {grade}</Link>
             <ChevronRight className="w-3 h-3 text-slate-600" />
@@ -329,8 +375,26 @@ export default function CatchAllChapterClient({ segments }: Props) {
             <span className="text-teal-400 font-bold">{chapterId}</span>
           </div>
 
-          {/* Bookmark & Practice Buttons */}
+          {/* Previous / Next Chapter & Bookmark Buttons */}
           <div className="flex items-center gap-2">
+            {prevChapterUrl && (
+              <Link
+                href={prevChapterUrl}
+                className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-teal-300 border border-slate-700 hover:bg-slate-700 transition-all flex items-center gap-1"
+              >
+                <ArrowLeft className="w-3.5 h-3.5" /> Prev Chapter
+              </Link>
+            )}
+
+            {nextChapterUrl && (
+              <Link
+                href={nextChapterUrl}
+                className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-teal-300 border border-slate-700 hover:bg-slate-700 transition-all flex items-center gap-1"
+              >
+                Next Chapter <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            )}
+
             <button
               onClick={toggleBookmark}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
@@ -383,28 +447,50 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         </div>
 
-        {/* Unified 7-Stage Learning Journey & Content Tab Bar */}
-        <div className="flex items-center gap-2 overflow-x-auto pt-2 border-t border-slate-800">
-          <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-1 shrink-0">
-            <Compass className="w-4 h-4 text-teal-400" /> Stage:
-          </span>
-          {JOURNEY_STAGES.map((s) => {
-            const isSelected = activeTab === s.tab;
-            return (
-              <button
-                key={s.stage}
-                onClick={() => setActiveTab(s.tab)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 border ${
-                  isSelected
-                    ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md'
-                    : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
-                }`}
-              >
-                <span>{s.icon}</span>
-                <span>Stage {s.stage}: {s.name} ({CONTENT_TYPE_LABELS[s.tab] || s.tab})</span>
-              </button>
-            );
-          })}
+        {/* Unified 7-Stage Learning Path Bar with Auto-Scroll & Scroll Arrows */}
+        <div className="relative flex items-center pt-2 border-t border-slate-800">
+          <button
+            onClick={() => scrollStageBar('left')}
+            title="Scroll Left"
+            className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 mr-2 shrink-0"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+
+          <div
+            ref={stageBarRef}
+            className="flex items-center gap-2 overflow-x-auto scroll-smooth no-scrollbar flex-1 py-1"
+          >
+            <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-1 shrink-0">
+              <Compass className="w-4 h-4 text-teal-400" /> Stage:
+            </span>
+            {JOURNEY_STAGES.map((s) => {
+              const isSelected = activeTab === s.tab;
+              return (
+                <button
+                  id={`stage-btn-${s.stage}`}
+                  key={s.stage}
+                  onClick={() => handleStageSelect(s.tab, s.stage)}
+                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 border ${
+                    isSelected
+                      ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md ring-2 ring-teal-500/30'
+                      : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
+                  }`}
+                >
+                  <span>{s.icon}</span>
+                  <span>Stage {s.stage}: {s.name} ({CONTENT_TYPE_LABELS[s.tab] || s.tab})</span>
+                </button>
+              );
+            })}
+          </div>
+
+          <button
+            onClick={() => scrollStageBar('right')}
+            title="Scroll Right"
+            className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 ml-2 shrink-0"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
         </div>
       </div>
 
