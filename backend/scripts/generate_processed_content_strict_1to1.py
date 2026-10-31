@@ -1,11 +1,12 @@
 import os
 import sys
 import json
+import shutil
 from datetime import datetime
 from typing import Dict, Any, List
 
 print("==========================================================================")
-print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR (V14 - FOUNDATIONAL FIX)")
+print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR (V15 - MULTI-SUBFOLDER SUPPORT)")
 print("==========================================================================\n")
 
 REPO_ROOT = r"D:/GURUKUL"
@@ -67,11 +68,15 @@ def run_strict_1to1():
         "English": "English",
         "Hindi": "Hindi",
         "Maths": "Maths",
-        "Maths I": "Maths I",
+        "Maths 1": "MathsI",
+        "Maths 2": "MathsII",
+        "Maths I": "MathsI",
         "Maths II": "MathsII",
         "Sanskrit": "Sanskrit",
         "Social": "Social",
-        "Social I": "Social I",
+        "Social 1": "SocialI",
+        "Social 2": "SocialII",
+        "Social I": "SocialI",
         "Social II": "SocialII",
         "Social_Science": "Social"
     }
@@ -108,31 +113,40 @@ def run_strict_1to1():
             target_subj_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", app_subj.replace(" ", ""))
             os.makedirs(target_subj_dir, exist_ok=True)
 
-            source_files = {
-                "overview": "Overview.json",
-                "notes": "Notes.json",
-                "master": "Master.json",
-                "mindmaps": "Mindmaps.json",
-                "flashcards": "Flashcards.json",
-                "quiz": "Quiz.json",
-                "question_papers": "Question Papers.json",
-                "foundational": "Foundational.json"
-            }
+            search_dirs = [subj_path]
+            custom_files_dir = os.path.join(subj_path, "Custom Files")
+            if os.path.isdir(custom_files_dir):
+                search_dirs.append(custom_files_dir)
+
+            source_file_specs = [
+                ("overview", ["overview", "overview.json"]),
+                ("notes", ["notes", "notes.json"]),
+                ("master", ["master", "subject_mastery"]),
+                ("mindmaps", ["mindmap", "mindmaps"]),
+                ("flashcards", ["flashcard", "flashcards"]),
+                ("quiz", ["quiz"]),
+                ("question_papers", ["question_paper", "questionpaper", "questionpapers"]),
+                ("foundational", ["foundational", "language_foundational"])
+            ]
 
             loaded_datasets = {}
-            for sec_key, filename in source_files.items():
-                f_abs = os.path.join(subj_path, filename)
-                if not os.path.exists(f_abs):
-                    for alt in os.listdir(subj_path):
-                        if alt.lower() == filename.lower():
-                            f_abs = os.path.join(subj_path, alt)
-                            break
-                if os.path.exists(f_abs):
-                    try:
-                        with open(f_abs, "r", encoding="utf-8") as jf:
-                            loaded_datasets[sec_key] = json.load(jf)
-                    except Exception as e:
-                        print(f"Error loading {f_abs}: {e}")
+            for sec_key, keywords in source_file_specs:
+                if sec_key in loaded_datasets:
+                    continue
+                for s_dir in search_dirs:
+                    if not os.path.isdir(s_dir):
+                        continue
+                    for fname in os.listdir(s_dir):
+                        if fname.endswith(".json"):
+                            clean_fname = fname.lower().replace("_", "").replace("-", "")
+                            if any(kw in clean_fname for kw in keywords):
+                                f_abs = os.path.join(s_dir, fname)
+                                try:
+                                    with open(f_abs, "r", encoding="utf-8") as jf:
+                                        loaded_datasets[sec_key] = json.load(jf)
+                                        break
+                                except Exception as e:
+                                    print(f"Error loading {f_abs}: {e}")
 
             chapter_numbers = set()
             for ds_val in loaded_datasets.values():
@@ -161,7 +175,7 @@ def run_strict_1to1():
 
                 ch_title = f"Chapter {ch_num}"
 
-                for sec_key, filename in source_files.items():
+                for sec_key, keywords in source_file_specs:
                     ds = loaded_datasets.get(sec_key)
                     sec_data = {}
                     if ds is not None:
@@ -209,7 +223,7 @@ def run_strict_1to1():
 
                 total_chapters_processed += 1
 
-    print(f"\nSuccessfully executed V14 Foundational fix across {total_chapters_processed} chapters.")
+    print(f"\nSuccessfully executed V15 multi-subfolder fix across {total_chapters_processed} chapters.")
 
 if __name__ == "__main__":
     run_strict_1to1()
