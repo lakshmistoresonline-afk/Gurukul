@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Target, HelpCircle, FileText, CheckCircle2, ArrowRight, Clock, Award, Sparkles, RefreshCw } from 'lucide-react';
+import { Target, HelpCircle, FileText, CheckCircle2, ArrowRight, Award, Sparkles, RefreshCw } from 'lucide-react';
 import { getCurriculumHierarchy, CurriculumApiClient, buildCurriculumUrl } from '../../lib/curriculumClient';
-import { recordQuizScore, getStudentProgress } from '../../lib/studentProgressStore';
+import { recordQuizScore } from '../../lib/studentProgressStore';
 
 export default function PracticeArenaPage() {
   const [hierarchy, setHierarchy] = useState<any[]>([]);
@@ -195,8 +195,11 @@ export default function PracticeArenaPage() {
 
                 let btnStyle = 'bg-slate-950 border-slate-800 text-slate-200 hover:border-amber-500/50';
                 if (showExplanation) {
-                  if (isCorrect) btnStyle = 'bg-emerald-950/80 border-emerald-500 text-emerald-200 font-bold';
-                  else if (isSelected) btnStyle = 'bg-rose-950/80 border-rose-500 text-rose-200';
+                  if (isCorrect) {
+                    btnStyle = 'bg-emerald-950/80 border-emerald-500 text-emerald-200 font-bold shadow-lg shadow-emerald-500/20';
+                  } else if (isSelected) {
+                    btnStyle = 'bg-rose-950/80 border-rose-500 text-rose-200 font-bold';
+                  }
                 }
 
                 return (

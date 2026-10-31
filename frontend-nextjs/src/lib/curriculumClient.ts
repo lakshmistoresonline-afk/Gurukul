@@ -95,6 +95,16 @@ export async function getCurriculumHierarchy() {
   return CurriculumApiClient.fetchHierarchy();
 }
 
+export async function fetchSubjectMedia(subject: string, grade = '5') {
+  try {
+    const res = await fetch(`${API_BASE}/api/v1/curriculum/media?grade=${grade}&subject=${subject}`);
+    if (!res.ok) return { media_directory: null, studio_video_links: null };
+    return await res.json();
+  } catch {
+    return { media_directory: null, studio_video_links: null };
+  }
+}
+
 export async function sendTutorChat(payload: {
   grade: string;
   subject: string;
@@ -113,10 +123,10 @@ export async function sendTutorChat(payload: {
       body: JSON.stringify(payload)
     });
     if (!res.ok) {
-      return { status: 'OFFLINE', response: '⚠️ AI Tutor is currently offline. Check backend connection.' };
+      return { status: 'OFFLINE', response: '⚠️ AI Tutor is currently offline. Ensure local Ollama engine is running on port 11434.' };
     }
     return await res.json();
   } catch {
-    return { status: 'OFFLINE', response: '⚠️ AI Tutor is currently offline. Ensure backend is running on port 8001.' };
+    return { status: 'OFFLINE', response: '⚠️ AI Tutor is currently offline. Ensure local Ollama engine is running on port 11434.' };
   }
 }

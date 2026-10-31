@@ -6,7 +6,6 @@ import {
   CurriculumApiClient,
   CurriculumIdentity,
   CurriculumApiError,
-  buildCurriculumUrl,
   sendTutorChat
 } from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
@@ -54,6 +53,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [activeTab, setActiveTab] = useState<string>('overview');
   const [availableContentTypes, setAvailableContentTypes] = useState<string[]>([]);
   const [contentData, setContentData] = useState<any>(null);
+  const [chapterTitle, setChapterTitle] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
   const [statusCode, setStatusCode] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -104,7 +104,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     return '';
   };
 
-  // 1. Initialize Chapter Identity & Record Activity
+  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6 || !grade || !chapterId) {
@@ -125,17 +125,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
         const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
         setIsNeedPractice(np.includes(canonicalIdentityKey));
-
-        // Record student activity
-        recordChapterActivity({
-          grade,
-          subject,
-          book,
-          part,
-          unit,
-          chapter_id: chapterId,
-          chapter_title: `Chapter ${chapterId}`
-        });
 
         // Fetch authoritative hierarchy
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
@@ -170,6 +159,20 @@ export default function CatchAllChapterClient({ segments }: Props) {
           return;
         }
 
+        const realTitle = foundChapter.chapter_title || foundChapter.chapterTitle || chapterId;
+        setChapterTitle(realTitle);
+
+        // Record student activity
+        recordChapterActivity({
+          grade,
+          subject,
+          book,
+          part,
+          unit,
+          chapter_id: chapterId,
+          chapter_title: realTitle
+        });
+
         const validContentTypes = foundChapter.content_types || [
           'overview', 'notes', 'master', 'foundational', 'flashcards', 'mindmaps', 'quiz', 'question_papers'
         ];
@@ -186,7 +189,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     initializeChapterIdentity();
   }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey]);
 
-  // 2. Fetch Content for Active Tab (Fixed useEffect dependency)
+  // 2. Fetch Content for Active Tab
   const loadContentForTab = useCallback(async () => {
     if (!activeTab || segments.length < 6) return;
 
@@ -302,8 +305,8 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-4 sm:p-6 space-y-6">
-      {/* Compact Chapter Header */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-3">
+      {/* Sticky Compact Chapter Header */}
+      <div className="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border border-slate-800 rounded-2xl p-5 shadow-2xl space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           {/* Breadcrumb */}
           <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400 font-mono">
@@ -346,7 +349,8 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
         <div className="flex flex-wrap items-center justify-between gap-4">
           <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-            Chapter {chapterId}: {subject.toUpperCase()}
+            {chapterTitle ? `${chapterTitle}` : `Chapter ${chapterId}`}
+            <span className="text-xs text-slate-400 font-mono ml-2 uppercase">({subject})</span>
           </h1>
 
           {/* AI Quick Actions */}
@@ -368,50 +372,31 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Visible 7-Stage Learning Path Bar */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-3 flex items-center gap-2 overflow-x-auto">
-        <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-2 shrink-0">
-          <Compass className="w-4 h-4 text-teal-400" /> 7-Stage Path:
-        </span>
-        {JOURNEY_STAGES.map((s) => {
-          const isSelected = activeTab === s.tab;
-          return (
-            <button
-              key={s.stage}
-              onClick={() => setActiveTab(s.tab)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 border ${
-                isSelected
-                  ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md'
-                  : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
-              }`}
-            >
-              <span>{s.icon}</span>
-              <span>Stage {s.stage}: {s.name}</span>
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Content Tabs Bar */}
-      {availableContentTypes.length > 0 && (
-        <div className="flex flex-wrap gap-2 bg-slate-900 p-2 rounded-xl border border-slate-800">
-          {availableContentTypes.map(ct => (
-            <button
-              key={ct}
-              onClick={() => setActiveTab(ct)}
-              className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all ${
-                activeTab === ct
-                  ? 'bg-teal-500 text-slate-950 shadow-md'
-                  : 'bg-slate-950 text-slate-400 hover:bg-slate-800 border border-slate-800'
-              }`}
-            >
-              {CONTENT_TYPE_LABELS[ct] || ct}
-            </button>
-          ))}
+        {/* Unified 7-Stage Learning Journey & Content Tab Bar */}
+        <div className="flex items-center gap-2 overflow-x-auto pt-2 border-t border-slate-800">
+          <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-1 shrink-0">
+            <Compass className="w-4 h-4 text-teal-400" /> Stage:
+          </span>
+          {JOURNEY_STAGES.map((s) => {
+            const isSelected = activeTab === s.tab;
+            return (
+              <button
+                key={s.stage}
+                onClick={() => setActiveTab(s.tab)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 border ${
+                  isSelected
+                    ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md'
+                    : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
+                }`}
+              >
+                <span>{s.icon}</span>
+                <span>Stage {s.stage}: {s.name} ({CONTENT_TYPE_LABELS[s.tab] || s.tab})</span>
+              </button>
+            );
+          })}
         </div>
-      )}
+      </div>
 
       {/* Workspace Three-Region Layout (Desktop) / Single Column (Mobile) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -455,7 +440,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
         {/* Contextual AI Tutor Panel */}
         {tutorDrawerOpen && (
-          <div className="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between h-[550px] shadow-2xl sticky top-6">
+          <div className="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between h-[550px] shadow-2xl sticky top-28">
             <div className="flex items-center justify-between pb-3 border-b border-slate-800">
               <div className="flex items-center gap-2">
                 <Bot className="w-5 h-5 text-teal-400" />

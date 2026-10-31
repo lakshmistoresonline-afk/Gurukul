@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { FlaskConical, Play, Image as ImageIcon, GitFork, ArrowRight, Search } from 'lucide-react';
-import { CurriculumApiClient, buildCurriculumUrl } from '../../lib/curriculumClient';
+import { FlaskConical, Play, Image as ImageIcon, ArrowRight } from 'lucide-react';
+import { fetchSubjectMedia, buildCurriculumUrl } from '../../lib/curriculumClient';
 
 export default function DiscoveryLabPage() {
   const [selectedSubject, setSelectedSubject] = useState<string>('english');
@@ -15,29 +15,9 @@ export default function DiscoveryLabPage() {
     async function loadAssets() {
       try {
         setLoading(true);
-        const [mediaRes, videoRes] = await Promise.all([
-          CurriculumApiClient.fetchContent({
-            grade: '5',
-            subject: selectedSubject,
-            book: selectedSubject,
-            part: 'main',
-            unit: 'U01',
-            chapter_id: `G5-${selectedSubject.slice(0, 3).toUpperCase()}-U01-C01`,
-            content_type: 'media_directory'
-          }).catch(() => null),
-          CurriculumApiClient.fetchContent({
-            grade: '5',
-            subject: selectedSubject,
-            book: selectedSubject,
-            part: 'main',
-            unit: 'U01',
-            chapter_id: `G5-${selectedSubject.slice(0, 3).toUpperCase()}-U01-C01`,
-            content_type: 'studio_video_links'
-          }).catch(() => null)
-        ]);
-
-        setMediaData(mediaRes?.data || null);
-        setVideoData(videoRes?.data || null);
+        const res = await fetchSubjectMedia(selectedSubject, '5');
+        setMediaData(res.media_directory || null);
+        setVideoData(res.studio_video_links || null);
       } catch (e) {
         console.error('Error loading discovery assets:', e);
       } finally {
@@ -102,7 +82,15 @@ export default function DiscoveryLabPage() {
                   <p className="text-[10px] text-slate-400">Hotspots: {d.hotspots?.length || 0} overlays</p>
                 </div>
                 <Link
-                  href={`/curriculum?grade=5&subject=${selectedSubject}&book=${selectedSubject}&part=main&unit=U01&chapter_id=G5-${selectedSubject.slice(0,3).toUpperCase()}-U01-C01`}
+                  href={buildCurriculumUrl({
+                    grade: '5',
+                    subject: selectedSubject,
+                    book: selectedSubject,
+                    part: 'main',
+                    unit: 'U01',
+                    chapter_id: `G5-${selectedSubject.slice(0,3).toUpperCase()}-U01-C01`,
+                    content_type: 'mindmaps'
+                  })}
                   className="text-teal-400 hover:underline font-semibold"
                 >
                   View Map

@@ -29,6 +29,64 @@ async def secure_protected_endpoint(user: AuthenticatedUser = Depends(get_curren
         "role": user.role
     }
 
+@router.get("/curriculum/media")
+async def get_subject_media_assets(
+    grade: str = Query("5", description="Grade"),
+    subject: str = Query(..., description="Subject name")
+):
+    canon_subj = SubjectRegistry.resolve_canonical_subject(subject)
+    subj_folder_map = {
+        "english": "English",
+        "hindi": "Hindi",
+        "mathematics": "Maths",
+        "maths": "Maths",
+        "science": "Science",
+        "social_science": "Social"
+    }
+    subj_dir_name = subj_folder_map.get(canon_subj, subject.title())
+    processed_root = GurukulConfig.get_processed_root()
+    subj_dir = processed_root / f"Class {grade}" / subj_dir_name
+    if not subj_dir.exists():
+        subj_dir = processed_root / f"Class{grade}" / subj_dir_name
+
+    media_data = {}
+    video_data = {}
+
+    media_file = subj_dir / "media_directory.json"
+    if not media_file.exists():
+        for ch in subj_dir.glob("G*"):
+            if (ch / "media_directory.json").exists():
+                media_file = ch / "media_directory.json"
+                break
+
+    if media_file.exists():
+        try:
+            with open(media_file, "r", encoding="utf-8") as f:
+                media_data = json.load(f)
+        except Exception as e:
+            print(f"Error reading media_file: {e}")
+
+    video_file = subj_dir / "studio_video_links.json"
+    if not video_file.exists():
+        for ch in subj_dir.glob("G*"):
+            if (ch / "studio_video_links.json").exists():
+                video_file = ch / "studio_video_links.json"
+                break
+
+    if video_file.exists():
+        try:
+            with open(video_file, "r", encoding="utf-8") as f:
+                video_data = json.load(f)
+        except Exception as e:
+            print(f"Error reading video_file: {e}")
+
+    return {
+        "grade": grade,
+        "subject": canon_subj,
+        "media_directory": media_data,
+        "studio_video_links": video_data
+    }
+
 @router.get("/curriculum/hierarchy")
 @router.get("/classes")
 async def get_curriculum_hierarchy():
