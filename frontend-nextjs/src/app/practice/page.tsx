@@ -2,11 +2,14 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Target, HelpCircle, FileText, CheckCircle2, ArrowRight, Award, Sparkles, RefreshCw } from 'lucide-react';
-import { getCurriculumHierarchy, CurriculumApiClient, buildCurriculumUrl } from '../../lib/curriculumClient';
+import { onAuthStateChanged, User } from 'firebase/auth';
+import { auth } from '../../lib/firebase';
+import { Target, HelpCircle, ArrowRight, Award, Sparkles, RefreshCw } from 'lucide-react';
+import { getCurriculumHierarchy, CurriculumApiClient } from '../../lib/curriculumClient';
 import { recordQuizScore } from '../../lib/studentProgressStore';
 
 export default function PracticeArenaPage() {
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [hierarchy, setHierarchy] = useState<any[]>([]);
   const [selectedSubject, setSelectedSubject] = useState<string>('english');
   const [selectedChapterId, setSelectedChapterId] = useState<string>('');
@@ -19,6 +22,13 @@ export default function PracticeArenaPage() {
   const [showExplanation, setShowExplanation] = useState(false);
   const [userScore, setUserScore] = useState(0);
   const [quizSubmitted, setQuizSubmitted] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user);
+    });
+    return () => unsubscribe();
+  }, []);
 
   useEffect(() => {
     async function loadData() {
@@ -101,7 +111,12 @@ export default function PracticeArenaPage() {
       setCurrentQuestionIdx(prev => prev + 1);
     } else {
       setQuizSubmitted(true);
-      recordQuizScore(selectedChapterId, userScore + (selectedOption === currentQ?.answer ? 1 : 0), questions.length);
+      recordQuizScore(
+        selectedChapterId,
+        userScore + (selectedOption === currentQ?.answer ? 1 : 0),
+        questions.length,
+        currentUser?.uid || 'guest'
+      );
     }
   };
 

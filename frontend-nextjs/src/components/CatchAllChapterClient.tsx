@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
+import { onAuthStateChanged, User } from 'firebase/auth';
+import { auth } from '@/lib/firebase';
 import {
   CurriculumApiClient,
   CurriculumIdentity,
@@ -50,6 +52,7 @@ const JOURNEY_STAGES = [
 ];
 
 export default function CatchAllChapterClient({ segments }: Props) {
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [activeTab, setActiveTab] = useState<string>('overview');
   const [availableContentTypes, setAvailableContentTypes] = useState<string[]>([]);
   const [contentData, setContentData] = useState<any>(null);
@@ -72,6 +75,13 @@ export default function CatchAllChapterClient({ segments }: Props) {
       text: "🤖 Hello! I am your Class 5 Contextual AI Tutor. Ask me anything about this chapter!"
     }
   ]);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user);
+    });
+    return () => unsubscribe();
+  }, []);
 
   const grade = segments[0] || '5';
   const subject = segments[1] || '';
@@ -162,7 +172,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
         const realTitle = foundChapter.chapter_title || foundChapter.chapterTitle || chapterId;
         setChapterTitle(realTitle);
 
-        // Record student activity
+        // Record student activity with mandatory UID
         recordChapterActivity({
           grade,
           subject,
@@ -171,7 +181,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           unit,
           chapter_id: chapterId,
           chapter_title: realTitle
-        });
+        }, currentUser?.uid || 'guest');
 
         const validContentTypes = foundChapter.content_types || [
           'overview', 'notes', 'master', 'foundational', 'flashcards', 'mindmaps', 'quiz', 'question_papers'
@@ -187,7 +197,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
 
     initializeChapterIdentity();
-  }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey]);
+  }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey, currentUser]);
 
   // 2. Fetch Content for Active Tab
   const loadContentForTab = useCallback(async () => {

@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Trophy, Award, Flame, Star, CheckCircle, Lock } from 'lucide-react';
-import { getStudentProgress, StudentProgressState } from '../../lib/studentProgressStore';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../../lib/firebase';
+import { Trophy, Award, Flame, Star, Lock } from 'lucide-react';
+import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../../lib/studentProgressStore';
 
 export default function AchievementsPage() {
   const [progress, setProgress] = useState<StudentProgressState>({
@@ -16,7 +18,15 @@ export default function AchievementsPage() {
   });
 
   useEffect(() => {
-    setProgress(getStudentProgress());
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const synced = await syncStudentProgressFromFirestore(user.uid);
+        setProgress(synced);
+      } else {
+        setProgress(getStudentProgress('guest'));
+      }
+    });
+    return () => unsubscribe();
   }, []);
 
   const completedCount = progress.completedChapters.length;

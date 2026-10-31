@@ -2,8 +2,10 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Bookmark, Target, ArrowRight, BookOpen } from 'lucide-react';
-import { getStudentProgress, StudentProgressState } from '../../lib/studentProgressStore';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../../lib/firebase';
+import { Bookmark, Target, ArrowRight } from 'lucide-react';
+import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../../lib/studentProgressStore';
 import { buildCurriculumUrl } from '../../lib/curriculumClient';
 
 export default function LibraryPage() {
@@ -18,7 +20,15 @@ export default function LibraryPage() {
   });
 
   useEffect(() => {
-    setProgress(getStudentProgress());
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const synced = await syncStudentProgressFromFirestore(user.uid);
+        setProgress(synced);
+      } else {
+        setProgress(getStudentProgress('guest'));
+      }
+    });
+    return () => unsubscribe();
   }, []);
 
   const parseIdentityKey = (key: string) => {

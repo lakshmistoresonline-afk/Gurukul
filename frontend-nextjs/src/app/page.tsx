@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { onAuthStateChanged, User } from 'firebase/auth';
+import { auth } from '../lib/firebase';
 import {
   BookOpen,
   Sparkles,
@@ -16,9 +18,10 @@ import {
   Target
 } from 'lucide-react';
 import { getCurriculumHierarchy, buildCurriculumUrl } from '../lib/curriculumClient';
-import { getStudentProgress, StudentProgressState } from '../lib/studentProgressStore';
+import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../lib/studentProgressStore';
 
 export default function StudentDashboard() {
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [hierarchy, setHierarchy] = useState<any[]>([]);
   const [progress, setProgress] = useState<StudentProgressState>({
     completedChapters: [],
@@ -31,6 +34,19 @@ export default function StudentDashboard() {
   });
 
   useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      setCurrentUser(user);
+      if (user) {
+        const synced = await syncStudentProgressFromFirestore(user.uid);
+        setProgress(synced);
+      } else {
+        setProgress(getStudentProgress('guest'));
+      }
+    });
+    return () => unsubscribe();
+  }, []);
+
+  useEffect(() => {
     async function loadData() {
       try {
         const data = await getCurriculumHierarchy();
@@ -38,7 +54,6 @@ export default function StudentDashboard() {
       } catch (e) {
         console.error('Failed to load curriculum hierarchy:', e);
       }
-      setProgress(getStudentProgress());
     }
     loadData();
   }, []);
@@ -115,6 +130,8 @@ export default function StudentDashboard() {
         chapter_id: 'G5-ENG-U01-C01'
       });
 
+  const studentName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Student';
+
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8">
       {/* Student Welcome & Continue Learning Banner */}
@@ -124,11 +141,11 @@ export default function StudentDashboard() {
             <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Authentic Class 5 Student Workspace
           </div>
           <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-            {resumeActivity ? `Continue: ${resumeActivity.chapter_title || resumeActivity.chapter_id}` : 'Start Your Class 5 Learning Journey'}
+            Welcome, {studentName}!
           </h1>
           <p className="text-slate-300 max-w-2xl text-sm sm:text-base leading-relaxed">
             {resumeActivity
-              ? `You were last studying ${resumeActivity.subject.toUpperCase()} (${resumeActivity.chapter_id}). Resume right where you left off!`
+              ? `Resume your study of ${resumeActivity.subject.toUpperCase()} (${resumeActivity.chapter_id}). Progress is isolated to your Firebase account.`
               : 'Begin your NCERT Class 5 curriculum across English, Hindi, Mathematics, and Science with interactive lessons, 3D flashcards, and hotspot diagrams.'}
           </p>
 

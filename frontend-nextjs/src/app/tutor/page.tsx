@@ -1,43 +1,117 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Bot, Send, Sparkles, BookOpen, Lightbulb } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2, AlertCircle, RefreshCw } from 'lucide-react';
+import { sendTutorChat, getCurriculumHierarchy } from '../../lib/curriculumClient';
 
 export default function AiTutorPage() {
+  const [hierarchy, setHierarchy] = useState<any[]>([]);
+  const [selectedSubject, setSelectedSubject] = useState<string>('english');
+  const [selectedChapterId, setSelectedChapterId] = useState<string>('G5-ENG-U01-C01');
   const [question, setQuestion] = useState('');
-  const [chatHistory, setChatHistory] = useState<Array<{ sender: 'user' | 'ai'; text: string }>>([
+  const [loading, setLoading] = useState(false);
+  const [chatHistory, setChatHistory] = useState<Array<{ sender: 'user' | 'ai'; text: string; status?: string }>>([
     {
       sender: 'ai',
-      text: "Hello! I am your GURUKUL AI Class 5 NCERT Tutor. Ask me any question about your English, Hindi, Mathematics, or Science chapters!"
+      text: "🤖 Welcome! I am your GURUKUL AI Contextual NCERT Tutor. Select a subject and chapter to ask grounded questions."
     }
   ]);
 
-  const handleSend = () => {
-    if (!question.trim()) return;
-    const userMsg = question.trim();
+  useEffect(() => {
+    async function loadHierarchyData() {
+      try {
+        const data = await getCurriculumHierarchy();
+        setHierarchy(data || []);
+      } catch (e) {
+        console.error('Failed to load hierarchy in tutor page:', e);
+      }
+    }
+    loadHierarchyData();
+  }, []);
+
+  const class5Data = hierarchy.find((item: any) => String(item.grade) === '5');
+  const subjectsList = class5Data?.subjects || [];
+  const currentSubjectObj = subjectsList.find((s: any) =>
+    s.canonical_subject?.toLowerCase() === selectedSubject.toLowerCase() ||
+    s.subject?.toLowerCase() === selectedSubject.toLowerCase()
+  );
+  const availableChapters = currentSubjectObj?.books?.[0]?.units?.[0]?.chapters || [];
+
+  const handleSend = async () => {
+    if (!question.trim() || loading) return;
+    const userQuestion = question.trim();
+    setQuestion('');
+    setLoading(true);
+
+    setChatHistory(prev => [...prev, { sender: 'user', text: userQuestion }]);
+
+    const response = await sendTutorChat({
+      grade: '5',
+      subject: selectedSubject,
+      book: currentSubjectObj?.books?.[0]?.book_id || selectedSubject,
+      part: currentSubjectObj?.books?.[0]?.part || 'main',
+      unit: 'U01',
+      chapter_id: selectedChapterId || `G5-${selectedSubject.slice(0,3).toUpperCase()}-U01-C01`,
+      content_type: 'overview',
+      question: userQuestion
+    });
+
     setChatHistory(prev => [
       ...prev,
-      { sender: 'user', text: userMsg },
-      { sender: 'ai', text: `🤖 Based on Class 5 NCERT curriculum: Here is a detailed breakdown for "${userMsg}". Practice concepts daily to master your lessons!` }
+      { sender: 'ai', text: response.response, status: response.status }
     ]);
-    setQuestion('');
+    setLoading(false);
   };
 
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-6">
-      <div className="flex items-center gap-3">
-        <div className="w-12 h-12 rounded-2xl bg-teal-500/20 text-teal-400 flex items-center justify-center">
-          <Bot className="w-7 h-7" />
+      {/* Header */}
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-2xl bg-teal-500/20 text-teal-400 flex items-center justify-center">
+            <Bot className="w-7 h-7" />
+          </div>
+          <div>
+            <h1 className="text-3xl font-extrabold text-white flex items-center gap-2">
+              Contextual AI Tutor
+            </h1>
+            <p className="text-xs text-slate-400">Grounded in official NCERT Class 5 textbooks &amp; Ollama backend engine</p>
+          </div>
         </div>
-        <div>
-          <h1 className="text-3xl font-extrabold text-white flex items-center gap-2">
-            Contextual AI Tutor
-          </h1>
-          <p className="text-xs text-slate-400">Grounded in official NCERT Class 5 textbooks &amp; learning objectives</p>
+
+        {/* Chapter Context Selector */}
+        <div className="flex items-center gap-2 bg-slate-900 p-3 rounded-2xl border border-slate-800 text-xs">
+          <select
+            value={selectedSubject}
+            onChange={(e) => {
+              setSelectedSubject(e.target.value);
+              setSelectedChapterId('');
+            }}
+            className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-white uppercase font-bold focus:outline-none"
+          >
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+          </select>
+
+          {availableChapters.length > 0 && (
+            <select
+              value={selectedChapterId}
+              onChange={(e) => setSelectedChapterId(e.target.value)}
+              className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-white font-mono focus:outline-none"
+            >
+              {availableChapters.map((ch: any) => (
+                <option key={ch.chapter_id} value={ch.chapter_id}>
+                  {ch.chapter_id}: {ch.chapter_title}
+                </option>
+              ))}
+            </select>
+          )}
         </div>
       </div>
 
-      {/* Quick Prompt Cards */}
+      {/* Prompt Presets */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <button
           onClick={() => setQuestion("Explain the Water Cycle in simple terms for Class 5 Science")}
@@ -70,7 +144,7 @@ export default function AiTutorPage() {
         </button>
       </div>
 
-      {/* Chat Area */}
+      {/* Chat Conversation Box */}
       <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 h-[480px] flex flex-col justify-between shadow-xl">
         <div className="flex-1 overflow-y-auto space-y-4 pr-2">
           {chatHistory.map((msg, idx) => (
@@ -82,6 +156,8 @@ export default function AiTutorPage() {
                 className={`max-w-xl p-4 rounded-2xl text-sm leading-relaxed ${
                   msg.sender === 'user'
                     ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-medium shadow-md'
+                    : msg.status === 'OFFLINE'
+                    ? 'bg-amber-950/80 border border-amber-800 text-amber-200'
                     : 'bg-slate-950 text-slate-200 border border-slate-800'
                 }`}
               >
@@ -89,6 +165,12 @@ export default function AiTutorPage() {
               </div>
             </div>
           ))}
+
+          {loading && (
+            <div className="flex items-center gap-2 text-xs text-teal-400 p-3 bg-slate-950/60 rounded-xl border border-slate-800 w-fit">
+              <Loader2 className="w-4 h-4 animate-spin" /> Querying local Ollama engine for {selectedChapterId}...
+            </div>
+          )}
         </div>
 
         {/* Input Bar */}
@@ -103,7 +185,8 @@ export default function AiTutorPage() {
           />
           <button
             onClick={handleSend}
-            className="px-5 py-3 rounded-xl bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-bold text-sm flex items-center gap-2 shadow-lg shadow-teal-500/20 hover:brightness-110 transition-all"
+            disabled={loading}
+            className="px-5 py-3 rounded-xl bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-bold text-sm flex items-center gap-2 shadow-lg shadow-teal-500/20 hover:brightness-110 transition-all disabled:opacity-50"
           >
             <Send className="w-4 h-4" /> Send
           </button>
