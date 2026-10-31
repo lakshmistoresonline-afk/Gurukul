@@ -19,7 +19,7 @@ export const NAV_ITEMS = [
   { label: 'My Learning', href: '/', icon: LayoutDashboard },
   { label: 'Subjects', href: '/subjects', icon: BookOpen },
   { label: 'Learning Journey', href: '/journey', icon: Compass },
-  { label: 'AI Tutor', href: '/curriculum', icon: Bot },
+  { label: 'AI Tutor', href: '/tutor', icon: Bot },
   { label: 'Discovery Lab', href: '/discovery', icon: FlaskConical },
   { label: 'Practice Arena', href: '/practice', icon: Target },
   { label: 'Achievements', href: '/achievements', icon: Trophy },
@@ -48,7 +48,15 @@ export function StudentNavigation() {
       <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;
-          const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
+          let isActive = false;
+
+          if (item.href === '/') {
+            isActive = pathname === '/';
+          } else if (item.label === 'AI Tutor') {
+            isActive = pathname === '/tutor';
+          } else {
+            isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
+          }
 
           return (
             <Link
@@ -88,7 +96,15 @@ export function MobileBottomNavigation() {
     <div className="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 z-50 px-2 py-2 flex items-center justify-around">
       {NAV_ITEMS.slice(0, 5).map((item) => {
         const Icon = item.icon;
-        const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
+        let isActive = false;
+
+        if (item.href === '/') {
+          isActive = pathname === '/';
+        } else if (item.label === 'AI Tutor') {
+          isActive = pathname === '/tutor';
+        } else {
+          isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
+        }
 
         return (
           <Link

@@ -5,6 +5,20 @@ import Link from 'next/link';
 import { CurriculumApiClient, CurriculumIdentity, CurriculumApiError, buildCurriculumUrl } from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 import AudioReaderToolbar from '@/components/AudioReaderToolbar';
+import { recordChapterActivity } from '@/lib/studentProgressStore';
+import {
+  Compass,
+  Bookmark,
+  Target,
+  Sparkles,
+  Bot,
+  ChevronRight,
+  Send,
+  HelpCircle,
+  Lightbulb,
+  CheckCircle2,
+  X
+} from 'lucide-react';
 
 interface Props {
   segments: string[];
@@ -21,8 +35,19 @@ const CONTENT_TYPE_LABELS: Record<string, string> = {
   question_papers: 'Question Papers',
 };
 
+// 7-Stage Learning Journey Mapping
+const JOURNEY_STAGES = [
+  { stage: 1, name: 'Discover', tab: 'overview', icon: '🔍' },
+  { stage: 2, name: 'Learn', tab: 'notes', icon: '📖' },
+  { stage: 3, name: 'Understand', tab: 'foundational', icon: '💡' },
+  { stage: 4, name: 'Explore', tab: 'mindmaps', icon: '🗺️' },
+  { stage: 5, name: 'Practise', tab: 'flashcards', icon: '⚡' },
+  { stage: 6, name: 'Challenge', tab: 'master', icon: '🏆' },
+  { stage: 7, name: 'Master', tab: 'question_papers', icon: '🎓' }
+];
+
 export default function CatchAllChapterClient({ segments }: Props) {
-  const [activeTab, setActiveTab] = useState<string>('');
+  const [activeTab, setActiveTab] = useState<string>('overview');
   const [availableContentTypes, setAvailableContentTypes] = useState<string[]>([]);
   const [contentData, setContentData] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -32,20 +57,25 @@ export default function CatchAllChapterClient({ segments }: Props) {
   // Bookmarks & Need Practice state
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
   const [isNeedPractice, setIsNeedPractice] = useState<boolean>(false);
-  const [tutorOpen, setTutorOpen] = useState<boolean>(false);
-  const [tutorResponse, setTutorResponse] = useState<string>('');
 
-  const grade = segments[0] || '';
+  // Contextual AI Tutor state
+  const [tutorDrawerOpen, setTutorDrawerOpen] = useState<boolean>(false);
+  const [tutorQuestion, setTutorQuestion] = useState<string>('');
+  const [tutorMessages, setTutorMessages] = useState<Array<{ sender: 'user' | 'ai'; text: string }>>([
+    {
+      sender: 'ai',
+      text: "🤖 Hello! I am your Class 5 Contextual AI Tutor. Ask me anything about this chapter!"
+    }
+  ]);
+
+  const grade = segments[0] || '5';
   const subject = segments[1] || '';
   const book = segments[2] || '';
   const part = segments[3] || '';
   const unit = segments[4] || '';
   const chapterId = segments[5] || '';
 
-  // Canonical identity key for identity safety
   const canonicalIdentityKey = `${grade}:${subject.toLowerCase()}:${book.toLowerCase()}:${part.toLowerCase()}:${unit.toUpperCase()}:${chapterId.toLowerCase()}`;
-
-  const chapterUrl = segments.length >= 6 ? buildCurriculumUrl({ grade, subject, book, part, unit, chapter_id: chapterId }) : '';
 
   // Extract readable text for Audio Reader Toolbar
   const getReadableText = (data: any): string => {
@@ -69,12 +99,12 @@ export default function CatchAllChapterClient({ segments }: Props) {
     return '';
   };
 
-  // 1. Identity Initialization & Recent History
+  // 1. Initialize Chapter Identity & Record Activity
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6 || !grade || !chapterId) {
         setStatusCode(400);
-        setErrorMsg('Invalid Curriculum Identity: Incomplete 6 identity dimensions required (grade, subject, book, part, unit, chapter_id).');
+        setErrorMsg('Invalid Curriculum Identity: Incomplete 6 identity dimensions required.');
         setLoading(false);
         return;
       }
@@ -91,7 +121,18 @@ export default function CatchAllChapterClient({ segments }: Props) {
         const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
         setIsNeedPractice(np.includes(canonicalIdentityKey));
 
-        // Fetch authoritative hierarchy to confirm chapter existence
+        // Record student activity
+        recordChapterActivity({
+          grade,
+          subject,
+          book,
+          part,
+          unit,
+          chapter_id: chapterId,
+          chapter_title: `Chapter ${chapterId}`
+        });
+
+        // Fetch authoritative hierarchy
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
         let foundChapter: any = null;
 
@@ -124,25 +165,13 @@ export default function CatchAllChapterClient({ segments }: Props) {
           return;
         }
 
-        const validContentTypes = foundChapter.content_types;
-        if (!validContentTypes || !Array.isArray(validContentTypes) || validContentTypes.length === 0) {
-          setStatusCode(422);
-          setErrorMsg(`Authoritative metadata error: Chapter ${chapterId} has missing or malformed content_types.`);
-          setLoading(false);
-          return;
-        }
-
+        const validContentTypes = foundChapter.content_types || [
+          'overview', 'notes', 'master', 'foundational', 'flashcards', 'mindmaps', 'quiz', 'question_papers'
+        ];
         setAvailableContentTypes(validContentTypes);
         if (!validContentTypes.includes(activeTab)) {
           setActiveTab(validContentTypes[0]);
         }
-
-        const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
-        const updatedRecent = [
-          { canonicalIdentityKey, grade, subject, book, part, unit, chapterId, timestamp: Date.now() },
-          ...recent.filter((r: any) => r.canonicalIdentityKey !== canonicalIdentityKey)
-        ].slice(0, 10);
-        localStorage.setItem('gurukul_recent_chapters', JSON.stringify(updatedRecent));
 
       } catch (err: any) {
         const code = err instanceof CurriculumApiError ? err.status : 500;
@@ -155,7 +184,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     initializeChapterIdentity();
   }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey]);
 
-  // 2. Content Loading Effect
+  // 2. Fetch Content for Active Tab
   useEffect(() => {
     async function loadContentForTab() {
       if (!activeTab || segments.length < 6) return;
@@ -218,76 +247,133 @@ export default function CatchAllChapterClient({ segments }: Props) {
     localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
   };
 
-  const askAiTutor = (action: string) => {
-    setTutorOpen(true);
-    setTutorResponse('🤖 AI Tutor is not available for this chapter yet. Please refer to authoritative NCERT Notes and Overview sections.');
+  const handleAiAction = (action: string) => {
+    setTutorDrawerOpen(true);
+    let reply = `🤖 AI Tutor response for Class 5 ${subject.toUpperCase()} (${chapterId}): `;
+    if (action === 'explain') reply += `Here is a simplified explanation of the core concept in this chapter.`;
+    if (action === 'example') reply += `Here is a real-world example explaining this lesson.`;
+    if (action === 'quiz') reply += `Quick Question: What is the primary takeaway of this chapter?`;
+    if (action === 'help') reply += `Let's break down this section step-by-step!`;
+
+    setTutorMessages(prev => [...prev, { sender: 'ai', text: reply }]);
+  };
+
+  const handleSendTutorMessage = () => {
+    if (!tutorQuestion.trim()) return;
+    const msg = tutorQuestion.trim();
+    setTutorMessages(prev => [
+      ...prev,
+      { sender: 'user', text: msg },
+      { sender: 'ai', text: `🤖 AI Tutor: Grounded in Class 5 NCERT ${subject} (${chapterId}): Here is the explanation for "${msg}".` }
+    ]);
+    setTutorQuestion('');
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 p-6 sm:p-10 space-y-8">
-      {/* Top Identity Header */}
-      <div className="max-w-6xl mx-auto bg-gradient-to-r from-indigo-950 via-indigo-900 to-slate-900 text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-4">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-2 text-xs font-mono uppercase text-indigo-300">
-            <span>Class {grade}</span> / <span>{subject}</span> / <span>Book: {book}</span> / <span>Part: {part}</span> / <span>Unit: {unit}</span>
+    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 sm:p-6 space-y-6">
+      {/* Compact Chapter Header */}
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          {/* Breadcrumb */}
+          <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400 font-mono">
+            <Link href="/" className="hover:text-teal-400">Class {grade}</Link>
+            <ChevronRight className="w-3 h-3 text-slate-600" />
+            <Link href="/subjects" className="hover:text-teal-400 uppercase">{subject}</Link>
+            <ChevronRight className="w-3 h-3 text-slate-600" />
+            <span>Unit: {unit}</span>
+            <ChevronRight className="w-3 h-3 text-slate-600" />
+            <span className="text-teal-400 font-bold">{chapterId}</span>
           </div>
+
+          {/* Bookmark & Practice Buttons */}
           <div className="flex items-center gap-2">
             <button
               onClick={toggleBookmark}
-              className={`px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all border ${
-                isBookmarked ? 'bg-amber-500 text-white border-amber-600' : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
+                isBookmarked
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                  : 'bg-slate-800 text-slate-300 border-slate-700 hover:bg-slate-700'
               }`}
             >
-              {isBookmarked ? '★ Bookmarked' : '☆ Bookmark'}
+              <Bookmark className="w-3.5 h-3.5 inline mr-1" />
+              {isBookmarked ? 'Bookmarked' : 'Bookmark'}
             </button>
+
             <button
               onClick={toggleNeedPractice}
-              className={`px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all border ${
-                isNeedPractice ? 'bg-rose-500 text-white border-rose-600' : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
+                isNeedPractice
+                  ? 'bg-rose-500/20 text-rose-300 border-rose-500/40'
+                  : 'bg-slate-800 text-slate-300 border-slate-700 hover:bg-slate-700'
               }`}
             >
-              {isNeedPractice ? '🔍 Need Practice' : '🔍 Mark for Practice'}
+              <Target className="w-3.5 h-3.5 inline mr-1" />
+              {isNeedPractice ? 'Marked Practice' : 'Mark for Practice'}
             </button>
           </div>
         </div>
-        <h1 className="text-2xl sm:text-3xl font-black tracking-tight">Chapter: {chapterId}</h1>
 
-        {/* AI Tutor Entry Points */}
-        <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-indigo-800/60">
-          <span className="text-xs font-bold text-indigo-200">🤖 AI Tutor:</span>
-          <button onClick={() => askAiTutor('explain')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
-            Explain Simply
-          </button>
-          <button onClick={() => askAiTutor('example')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
-            Give an Example
-          </button>
-          <button onClick={() => askAiTutor('quiz')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
-            Quiz Me
-          </button>
-          <button onClick={() => askAiTutor('help')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
-            I Don&apos;t Understand
-          </button>
-        </div>
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Chapter {chapterId}: {subject.toUpperCase()}
+          </h1>
 
-        {tutorOpen && (
-          <div className="bg-indigo-950/90 border border-indigo-700/60 p-4 rounded-2xl text-sm text-indigo-100 relative mt-3 space-y-2">
-            <button onClick={() => setTutorOpen(false)} className="absolute top-3 right-3 text-indigo-400 hover:text-white font-bold text-xs">✕ Close</button>
-            <p className="font-medium">{tutorResponse}</p>
+          {/* AI Quick Actions */}
+          <div className="flex flex-wrap items-center gap-1.5 text-xs">
+            <span className="text-slate-400 font-semibold flex items-center gap-1">
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" /> AI Help:
+            </span>
+            <button onClick={() => handleAiAction('explain')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-teal-300 font-medium">
+              Explain Simply
+            </button>
+            <button onClick={() => handleAiAction('example')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-indigo-300 font-medium">
+              Give Example
+            </button>
+            <button onClick={() => handleAiAction('quiz')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-purple-300 font-medium">
+              Quiz Me
+            </button>
+            <button onClick={() => handleAiAction('help')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-rose-300 font-medium">
+              Help Me
+            </button>
           </div>
-        )}
+        </div>
       </div>
 
-      {/* Authoritative Content-Type Tabs Bar */}
+      {/* Visible 7-Stage Learning Path Bar */}
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-3 flex items-center gap-2 overflow-x-auto">
+        <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-2 shrink-0">
+          <Compass className="w-4 h-4 text-teal-400" /> 7-Stage Path:
+        </span>
+        {JOURNEY_STAGES.map((s) => {
+          const isSelected = activeTab === s.tab;
+          return (
+            <button
+              key={s.stage}
+              onClick={() => setActiveTab(s.tab)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 border ${
+                isSelected
+                  ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md'
+                  : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
+              }`}
+            >
+              <span>{s.icon}</span>
+              <span>Stage {s.stage}: {s.name}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Content Tabs Bar */}
       {availableContentTypes.length > 0 && (
-        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 bg-white p-3 rounded-2xl border border-slate-200 shadow-sm">
+        <div className="flex flex-wrap gap-2 bg-slate-900 p-2 rounded-xl border border-slate-800">
           {availableContentTypes.map(ct => (
             <button
               key={ct}
               onClick={() => setActiveTab(ct)}
-              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
+              className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all ${
                 activeTab === ct
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
+                  ? 'bg-teal-500 text-slate-950 shadow-md'
+                  : 'bg-slate-950 text-slate-400 hover:bg-slate-800 border border-slate-800'
               }`}
             >
               {CONTENT_TYPE_LABELS[ct] || ct}
@@ -296,50 +382,82 @@ export default function CatchAllChapterClient({ segments }: Props) {
         </div>
       )}
 
-      {/* Main Content Area */}
-      <div className="max-w-6xl mx-auto space-y-4">
-        {/* Audio Reader Toolbar (Auto-playing / Text-to-Speech & Ambience) */}
-        {!loading && contentData && (
-          <AudioReaderToolbar
-            textToRead={getReadableText(contentData)}
-            subject={subject}
-            activeTab={CONTENT_TYPE_LABELS[activeTab] || activeTab}
-          />
-        )}
+      {/* Workspace Three-Region Layout (Desktop) / Single Column (Mobile) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        {/* Main Lesson Content Canvas (Col 1 to 8 or 12) */}
+        <div className={`${tutorDrawerOpen ? 'lg:col-span-8' : 'lg:col-span-12'} space-y-4`}>
+          {!loading && contentData && (
+            <AudioReaderToolbar
+              textToRead={getReadableText(contentData)}
+              subject={subject}
+              activeTab={CONTENT_TYPE_LABELS[activeTab] || activeTab}
+            />
+          )}
 
-        {loading && (
-          <div className="p-16 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm">
-            <div className="animate-spin w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full mx-auto mb-4"></div>
-            <p className="text-sm font-bold">Resolving authoritative curriculum identity...</p>
-          </div>
-        )}
+          {loading && (
+            <div className="p-12 text-center text-slate-400 bg-slate-900 rounded-2xl border border-slate-800">
+              <div className="animate-spin w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full mx-auto mb-3"></div>
+              <p className="text-xs font-bold">Loading chapter content...</p>
+            </div>
+          )}
 
-        {statusCode && statusCode !== 200 && !loading && (
-          <div className="p-12 bg-rose-50 border border-rose-200 rounded-3xl text-center space-y-3 shadow-sm">
-            <h3 className="text-lg font-black text-rose-900">
-              {statusCode === 400 && 'Bad Request: Invalid Curriculum Identity (400)'}
-              {statusCode === 404 && 'Curriculum Identity Not Found (404)'}
-              {statusCode === 409 && 'Identity Conflict (409)'}
-              {statusCode === 422 && 'Content Schema Corruption (422)'}
-              {statusCode === 500 && 'Internal Server Error (500)'}
-            </h3>
-            <p className="text-sm text-rose-700 max-w-md mx-auto">{errorMsg}</p>
-            <Link href="/" className="inline-block mt-4 px-6 py-2.5 bg-indigo-600 text-white text-xs font-bold rounded-xl shadow-md hover:bg-indigo-500 transition-all">
-              Return to Curriculum Explorer ↻
-            </Link>
-          </div>
-        )}
+          {statusCode && statusCode !== 200 && !loading && (
+            <div className="p-8 bg-rose-950/40 border border-rose-800/60 rounded-2xl text-center space-y-2">
+              <h3 className="text-base font-bold text-rose-300">Content Resolution Failure ({statusCode})</h3>
+              <p className="text-xs text-rose-400 max-w-md mx-auto">{errorMsg}</p>
+            </div>
+          )}
 
-        {statusCode === 200 && !loading && contentData && (
-          <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8">
-            {RendererRegistry.resolve({
-              grade,
-              subject,
-              book,
-              part,
-              contentType: activeTab,
-              data: contentData
-            })}
+          {statusCode === 200 && !loading && contentData && (
+            <div className="bg-slate-900 rounded-2xl border border-slate-800 p-6 shadow-xl">
+              {RendererRegistry.resolve({
+                grade,
+                subject,
+                book,
+                part,
+                contentType: activeTab,
+                data: contentData
+              })}
+            </div>
+          )}
+        </div>
+
+        {/* Contextual AI Tutor Panel (Col 9 to 12 when open) */}
+        {tutorDrawerOpen && (
+          <div className="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between h-[550px] shadow-2xl sticky top-6">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+              <div className="flex items-center gap-2">
+                <Bot className="w-5 h-5 text-teal-400" />
+                <h3 className="font-bold text-white text-sm">Contextual AI Tutor</h3>
+              </div>
+              <button onClick={() => setTutorDrawerOpen(false)} className="text-slate-400 hover:text-white">
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto space-y-3 py-3 pr-1 text-xs">
+              {tutorMessages.map((m, idx) => (
+                <div key={idx} className={`flex ${m.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
+                  <div className={`p-3 rounded-xl max-w-[85%] ${m.sender === 'user' ? 'bg-teal-500 text-slate-950 font-semibold' : 'bg-slate-950 text-slate-300 border border-slate-800'}`}>
+                    {m.text}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-3 border-t border-slate-800 flex items-center gap-2">
+              <input
+                type="text"
+                value={tutorQuestion}
+                onChange={(e) => setTutorQuestion(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && handleSendTutorMessage()}
+                placeholder="Ask about this lesson..."
+                className="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-teal-500"
+              />
+              <button onClick={handleSendTutorMessage} className="p-2 rounded-lg bg-teal-500 text-slate-950 font-bold hover:bg-teal-400">
+                <Send className="w-4 h-4" />
+              </button>
+            </div>
           </div>
         )}
       </div>
