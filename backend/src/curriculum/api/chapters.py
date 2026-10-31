@@ -35,56 +35,45 @@ async def get_subject_media_assets(
     subject: str = Query(..., description="Subject name")
 ):
     canon_subj = SubjectRegistry.resolve_canonical_subject(subject)
-    subj_folder_map = {
-        "english": "English",
-        "hindi": "Hindi",
-        "mathematics": "Maths",
-        "maths": "Maths",
-        "science": "Science",
-        "social_science": "Social"
-    }
-    subj_dir_name = subj_folder_map.get(canon_subj, subject.title())
-    processed_root = GurukulConfig.get_processed_root()
-    subj_dir = processed_root / f"Class {grade}" / subj_dir_name
-    if not subj_dir.exists():
-        subj_dir = processed_root / f"Class{grade}" / subj_dir_name
+    content_root = GurukulConfig.get_content_root()
+    manifest_file = content_root / f"Class {grade}" / "media-manifest.json"
 
-    media_data = {}
-    video_data = {}
+    diagrams = []
+    videos = []
 
-    media_file = subj_dir / "media_directory.json"
-    if not media_file.exists():
-        for ch in subj_dir.glob("G*"):
-            if (ch / "media_directory.json").exists():
-                media_file = ch / "media_directory.json"
-                break
-
-    if media_file.exists():
+    if manifest_file.exists():
         try:
-            with open(media_file, "r", encoding="utf-8") as f:
-                media_data = json.load(f)
+            with open(manifest_file, "r", encoding="utf-8") as f:
+                manifest_data = json.load(f)
+                for asset in manifest_data.get("assets", []):
+                    asset_subj = asset.get("subject", "").lower()
+                    if asset_subj in (canon_subj.lower(), subject.lower(), "maths" if canon_subj == "mathematics" else ""):
+                        if asset.get("media_type") == "image":
+                            diagrams.append({
+                                "asset_id": asset.get("asset_id"),
+                                "title": asset.get("filename"),
+                                "filename": asset.get("filename"),
+                                "relative_path": asset.get("relative_path"),
+                                "chapter_id": asset.get("chapter_id"),
+                                "chapter_number": asset.get("chapter_number")
+                            })
+                        elif asset.get("media_type") == "video":
+                            videos.append({
+                                "asset_id": asset.get("asset_id"),
+                                "title": asset.get("chapter_title"),
+                                "filename": asset.get("filename"),
+                                "relative_path": asset.get("relative_path"),
+                                "chapter_id": asset.get("chapter_id"),
+                                "chapter_number": asset.get("chapter_number")
+                            })
         except Exception as e:
-            print(f"Error reading media_file: {e}")
-
-    video_file = subj_dir / "studio_video_links.json"
-    if not video_file.exists():
-        for ch in subj_dir.glob("G*"):
-            if (ch / "studio_video_links.json").exists():
-                video_file = ch / "studio_video_links.json"
-                break
-
-    if video_file.exists():
-        try:
-            with open(video_file, "r", encoding="utf-8") as f:
-                video_data = json.load(f)
-        except Exception as e:
-            print(f"Error reading video_file: {e}")
+            print(f"Error reading media manifest: {e}")
 
     return {
         "grade": grade,
         "subject": canon_subj,
-        "media_directory": media_data,
-        "studio_video_links": video_data
+        "media_directory": {"diagrams": diagrams},
+        "studio_video_links": {"videos": videos}
     }
 
 @router.get("/curriculum/hierarchy")
