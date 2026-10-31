@@ -1,49 +1,147 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { FlaskConical, Play, Image as ImageIcon, GitFork, ArrowRight } from 'lucide-react';
+import { FlaskConical, Play, Image as ImageIcon, GitFork, ArrowRight, Search } from 'lucide-react';
+import { CurriculumApiClient, buildCurriculumUrl } from '../../lib/curriculumClient';
 
 export default function DiscoveryLabPage() {
-  const discoveryItems = [
-    { title: 'Interactive 16:9 Diagram Hotspot Maps', icon: ImageIcon, count: '48 Diagram Assets', desc: 'Explore percentage-based hotspot maps across English, Hindi, Maths & Science.' },
-    { title: 'Interactive Mindmap Concept Trees', icon: GitFork, count: '40 Mindmap Files', desc: 'Hierarchical concept trees rendering chapter themes and relationships.' },
-    { title: 'Studio Explainer Video Lessons', icon: Play, count: '52 MP4 Videos', desc: 'High-definition studio lessons explaining Class 5 stories, experiments & math tricks.' }
-  ];
+  const [selectedSubject, setSelectedSubject] = useState<string>('english');
+  const [mediaData, setMediaData] = useState<any>(null);
+  const [videoData, setVideoData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function loadAssets() {
+      try {
+        setLoading(true);
+        const [mediaRes, videoRes] = await Promise.all([
+          CurriculumApiClient.fetchContent({
+            grade: '5',
+            subject: selectedSubject,
+            book: selectedSubject,
+            part: 'main',
+            unit: 'U01',
+            chapter_id: `G5-${selectedSubject.slice(0, 3).toUpperCase()}-U01-C01`,
+            content_type: 'media_directory'
+          }).catch(() => null),
+          CurriculumApiClient.fetchContent({
+            grade: '5',
+            subject: selectedSubject,
+            book: selectedSubject,
+            part: 'main',
+            unit: 'U01',
+            chapter_id: `G5-${selectedSubject.slice(0, 3).toUpperCase()}-U01-C01`,
+            content_type: 'studio_video_links'
+          }).catch(() => null)
+        ]);
+
+        setMediaData(mediaRes?.data || null);
+        setVideoData(videoRes?.data || null);
+      } catch (e) {
+        console.error('Error loading discovery assets:', e);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadAssets();
+  }, [selectedSubject]);
+
+  const diagrams: any[] = mediaData?.diagrams || mediaData?.items || [];
+  const videos: any[] = videoData?.videos || videoData?.items || [];
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8">
       <div>
         <h1 className="text-3xl font-extrabold text-white flex items-center gap-3">
-          <FlaskConical className="w-8 h-8 text-teal-400" /> Class 5 Discovery Lab
+          <FlaskConical className="w-8 h-8 text-teal-400" /> Discovery Lab
         </h1>
-        <p className="text-slate-400 text-sm mt-1">Explore visual diagrams, video lessons, and interactive concept mindmaps.</p>
+        <p className="text-slate-400 text-sm mt-1">Discover interactive hotspot diagrams, mindmap concept trees, and studio explainer videos.</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {discoveryItems.map((item, idx) => {
-          const Icon = item.icon;
-          return (
-            <div key={idx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col justify-between space-y-4">
-              <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center">
-                  <Icon className="w-5 h-5" />
+      {/* Subject Filter */}
+      <div className="flex flex-wrap gap-2 bg-slate-900 p-2 rounded-2xl border border-slate-800">
+        {['english', 'hindi', 'maths', 'science'].map((subj) => (
+          <button
+            key={subj}
+            onClick={() => setSelectedSubject(subj)}
+            className={`px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all ${
+              selectedSubject === subj
+                ? 'bg-teal-500 text-slate-950 shadow-md'
+                : 'bg-slate-950 text-slate-400 hover:bg-slate-800'
+            }`}
+          >
+            {subj}
+          </button>
+        ))}
+      </div>
+
+      {/* Asset Explorer Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Diagrams & Hotspots Card */}
+        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+            <h2 className="text-lg font-bold text-white flex items-center gap-2">
+              <ImageIcon className="w-5 h-5 text-teal-400" /> Interactive Diagram Maps
+            </h2>
+            <span className="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-teal-300">
+              {diagrams.length} Diagrams
+            </span>
+          </div>
+
+          {loading && <p className="text-xs text-slate-500">Loading media index...</p>}
+          {!loading && diagrams.length === 0 && (
+            <p className="text-xs text-slate-500">Diagram maps available inside chapter workspace.</p>
+          )}
+
+          <div className="space-y-3">
+            {diagrams.map((d: any, idx: number) => (
+              <div key={idx} className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between text-xs">
+                <div>
+                  <p className="font-bold text-white">{d.title || d.image_filename}</p>
+                  <p className="text-[10px] text-slate-400">Hotspots: {d.hotspots?.length || 0} overlays</p>
                 </div>
-                <h3 className="text-lg font-bold text-white">{item.title}</h3>
-                <p className="text-xs text-slate-400">{item.desc}</p>
-              </div>
-              <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between">
-                <span className="text-xs font-mono text-teal-300">{item.count}</span>
                 <Link
-                  href="/curriculum?grade=5&subject=english&book=english&part=main&unit=U01&chapter_id=G5-ENG-U01-C01"
-                  className="text-xs font-bold text-teal-400 hover:underline flex items-center gap-1"
+                  href={`/curriculum?grade=5&subject=${selectedSubject}&book=${selectedSubject}&part=main&unit=U01&chapter_id=G5-${selectedSubject.slice(0,3).toUpperCase()}-U01-C01`}
+                  className="text-teal-400 hover:underline font-semibold"
                 >
-                  Explore <ArrowRight className="w-3 h-3" />
+                  View Map
                 </Link>
               </div>
-            </div>
-          );
-        })}
+            ))}
+          </div>
+        </div>
+
+        {/* Video Lessons Card */}
+        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+            <h2 className="text-lg font-bold text-white flex items-center gap-2">
+              <Play className="w-5 h-5 text-indigo-400" /> Studio Explainer Videos
+            </h2>
+            <span className="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-indigo-300">
+              {videos.length} Videos
+            </span>
+          </div>
+
+          {loading && <p className="text-xs text-slate-500">Loading video index...</p>}
+          {!loading && videos.length === 0 && (
+            <p className="text-xs text-slate-500">Video lessons available in chapter workspace.</p>
+          )}
+
+          <div className="space-y-3">
+            {videos.map((v: any, idx: number) => (
+              <div key={idx} className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between text-xs">
+                <div>
+                  <p className="font-bold text-white">{v.title || v.video_id}</p>
+                  <p className="text-[10px] text-slate-400">Duration: {v.duration_seconds || 180}s</p>
+                </div>
+                <button className="text-indigo-400 font-semibold hover:underline">
+                  Play Video
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

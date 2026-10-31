@@ -1,15 +1,15 @@
 # FAIL-CLOSED CRYPTOGRAPHIC IMMUTABILITY REPORT
-**Timestamp**: 2026-10-31T16:59:16.561446
+**Timestamp**: 2026-10-31T19:37:27.945113
 **Overall Result**: **PASS**
 
 ---
 
 ## Cryptographic Hashes
-- **Baseline Corpus Hash**: `0779b53e8f63aef767c9a5985781dcaaf3967d57d93f2b8d53f93b337cdaa505`
-- **Current Corpus Hash**: `0779b53e8f63aef767c9a5985781dcaaf3967d57d93f2b8d53f93b337cdaa505`
+- **Baseline Corpus Hash**: `240af24d160a2236bd91fd6e86da5bf2c3d26dc184e0ad4d06073983b70e3cc7`
+- **Current Corpus Hash**: `240af24d160a2236bd91fd6e86da5bf2c3d26dc184e0ad4d06073983b70e3cc7`
 
 ## Reconciliation
-- **Unchanged Files**: 40
+- **Unchanged Files**: 171
 - **Modified Files**: 0
 - **Added Files**: 0
 - **Removed Files**: 0

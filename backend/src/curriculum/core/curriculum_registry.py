@@ -107,8 +107,12 @@ class CurriculumRegistry:
             cls._INDEX = index
             return index
 
+        seen_grades = set()
         for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
             dir_grade = class_dir.name.replace("Class", "").strip()
+            if dir_grade in seen_grades:
+                continue
+            seen_grades.add(dir_grade)
 
             for subj_dir in sorted([d for d in class_dir.iterdir() if d.is_dir()]):
                 raw_subj = subj_dir.name

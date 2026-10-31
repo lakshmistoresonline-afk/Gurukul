@@ -110,7 +110,7 @@ def run_strict_1to1():
             elif app_subj == "Sanskrit":
                 subj_code = "SAN"
 
-            target_subj_dir = os.path.join(PROCESSED_ROOT, f"Class {grade}", app_subj.replace(" ", ""))
+            target_subj_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", app_subj.replace(" ", ""))
             os.makedirs(target_subj_dir, exist_ok=True)
 
             search_dirs = [root for root, _, _ in os.walk(subj_path)]
@@ -209,6 +209,7 @@ def run_strict_1to1():
                         json.dump(sec_data, out_f, ensure_ascii=False, indent=2)
 
                 manifest_data = {
+                    "grade": grade,
                     "class": grade,
                     "subject": app_subj,
                     "chapter_number": ch_num,

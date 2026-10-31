@@ -1,6 +1,6 @@
 /**
- * Authenticated Student Local Progress & Activity Persistence
- * Manages real student chapter progress, completed items, quiz scores, and last activity.
+ * Authenticated Student Progress & Activity Persistence
+ * Manages real student chapter progress, completed items, quiz scores, and last activity isolated by Firebase UID.
  */
 
 export interface StudentLastActivity {
@@ -31,7 +31,7 @@ export interface StudentProgressState {
   practiceMarked: string[];
 }
 
-const PROGRESS_STORAGE_KEY = 'gurukul_student_progress_v1';
+const BASE_PROGRESS_KEY = 'gurukul_student_progress_v2';
 
 const DEFAULT_PROGRESS: StudentProgressState = {
   completedChapters: [],
@@ -43,10 +43,14 @@ const DEFAULT_PROGRESS: StudentProgressState = {
   practiceMarked: []
 };
 
-export function getStudentProgress(): StudentProgressState {
+function getKey(uid?: string): string {
+  return uid ? `${BASE_PROGRESS_KEY}_${uid}` : BASE_PROGRESS_KEY;
+}
+
+export function getStudentProgress(uid?: string): StudentProgressState {
   if (typeof window === 'undefined') return DEFAULT_PROGRESS;
   try {
-    const raw = localStorage.getItem(PROGRESS_STORAGE_KEY);
+    const raw = localStorage.getItem(getKey(uid));
     if (!raw) return DEFAULT_PROGRESS;
     return JSON.parse(raw);
   } catch {
@@ -54,17 +58,17 @@ export function getStudentProgress(): StudentProgressState {
   }
 }
 
-export function saveStudentProgress(state: StudentProgressState): void {
+export function saveStudentProgress(state: StudentProgressState, uid?: string): void {
   if (typeof window === 'undefined') return;
   try {
-    localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(state));
+    localStorage.setItem(getKey(uid), JSON.stringify(state));
   } catch (e) {
     console.error('Failed to persist student progress:', e);
   }
 }
 
-export function recordChapterActivity(activity: Omit<StudentLastActivity, 'timestamp'>): void {
-  const current = getStudentProgress();
+export function recordChapterActivity(activity: Omit<StudentLastActivity, 'timestamp'>, uid?: string): void {
+  const current = getStudentProgress(uid);
   const updatedActivity: StudentLastActivity = {
     ...activity,
     timestamp: Date.now()
@@ -94,22 +98,22 @@ export function recordChapterActivity(activity: Omit<StudentLastActivity, 'times
     lastActivity: updatedActivity,
     streakDays: newStreak,
     lastActiveDate: today
-  });
+  }, uid);
 }
 
-export function markChapterCompleted(chapterId: String): void {
-  const current = getStudentProgress();
+export function markChapterCompleted(chapterId: string, uid?: string): void {
+  const current = getStudentProgress(uid);
   const idStr = String(chapterId);
   if (!current.completedChapters.includes(idStr)) {
     saveStudentProgress({
       ...current,
       completedChapters: [...current.completedChapters, idStr]
-    });
+    }, uid);
   }
 }
 
-export function recordQuizScore(chapterId: string, score: number, total: number): void {
-  const current = getStudentProgress();
+export function recordQuizScore(chapterId: string, score: number, total: number, uid?: string): void {
+  const current = getStudentProgress(uid);
   const newRecord: QuizScoreRecord = {
     chapter_id: chapterId,
     score,
@@ -119,5 +123,5 @@ export function recordQuizScore(chapterId: string, score: number, total: number)
   saveStudentProgress({
     ...current,
     quizScores: [...current.quizScores, newRecord]
-  });
+  }, uid);
 }
