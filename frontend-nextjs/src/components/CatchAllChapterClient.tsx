@@ -1,8 +1,14 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
-import { CurriculumApiClient, CurriculumIdentity, CurriculumApiError, buildCurriculumUrl } from '@/lib/curriculumClient';
+import {
+  CurriculumApiClient,
+  CurriculumIdentity,
+  CurriculumApiError,
+  buildCurriculumUrl,
+  sendTutorChat
+} from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 import AudioReaderToolbar from '@/components/AudioReaderToolbar';
 import { recordChapterActivity } from '@/lib/studentProgressStore';
@@ -14,10 +20,8 @@ import {
   Bot,
   ChevronRight,
   Send,
-  HelpCircle,
-  Lightbulb,
-  CheckCircle2,
-  X
+  X,
+  Loader2
 } from 'lucide-react';
 
 interface Props {
@@ -61,7 +65,8 @@ export default function CatchAllChapterClient({ segments }: Props) {
   // Contextual AI Tutor state
   const [tutorDrawerOpen, setTutorDrawerOpen] = useState<boolean>(false);
   const [tutorQuestion, setTutorQuestion] = useState<string>('');
-  const [tutorMessages, setTutorMessages] = useState<Array<{ sender: 'user' | 'ai'; text: string }>>([
+  const [tutorLoading, setTutorLoading] = useState<boolean>(false);
+  const [tutorMessages, setTutorMessages] = useState<Array<{ sender: 'user' | 'ai'; text: string; status?: string }>>([
     {
       sender: 'ai',
       text: "🤖 Hello! I am your Class 5 Contextual AI Tutor. Ask me anything about this chapter!"
@@ -169,9 +174,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           'overview', 'notes', 'master', 'foundational', 'flashcards', 'mindmaps', 'quiz', 'question_papers'
         ];
         setAvailableContentTypes(validContentTypes);
-        if (!validContentTypes.includes(activeTab)) {
-          setActiveTab(validContentTypes[0]);
-        }
 
       } catch (err: any) {
         const code = err instanceof CurriculumApiError ? err.status : 500;
@@ -184,42 +186,42 @@ export default function CatchAllChapterClient({ segments }: Props) {
     initializeChapterIdentity();
   }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey]);
 
-  // 2. Fetch Content for Active Tab
-  useEffect(() => {
-    async function loadContentForTab() {
-      if (!activeTab || segments.length < 6) return;
+  // 2. Fetch Content for Active Tab (Fixed useEffect dependency)
+  const loadContentForTab = useCallback(async () => {
+    if (!activeTab || segments.length < 6) return;
 
-      try {
-        setLoading(true);
-        setErrorMsg(null);
+    try {
+      setLoading(true);
+      setErrorMsg(null);
 
-        const identity: CurriculumIdentity = {
-          grade,
-          subject,
-          book,
-          part,
-          unit,
-          chapter_id: chapterId,
-          content_type: activeTab
-        };
+      const identity: CurriculumIdentity = {
+        grade,
+        subject,
+        book,
+        part,
+        unit,
+        chapter_id: chapterId,
+        content_type: activeTab
+      };
 
-        const res = await CurriculumApiClient.fetchContent(identity);
-        setContentData(res.data);
-        setStatusCode(200);
-      } catch (err: any) {
-        const code = err instanceof CurriculumApiError ? err.status : 500;
-        const msg = err.message || 'An unexpected content resolution failure occurred.';
+      const res = await CurriculumApiClient.fetchContent(identity);
+      setContentData(res.data);
+      setStatusCode(200);
+    } catch (err: any) {
+      const code = err instanceof CurriculumApiError ? err.status : 500;
+      const msg = err.message || 'An unexpected content resolution failure occurred.';
 
-        setStatusCode(code);
-        setErrorMsg(msg);
-        setContentData(null);
-      } finally {
-        setLoading(false);
-      }
+      setStatusCode(code);
+      setErrorMsg(msg);
+      setContentData(null);
+    } finally {
+      setLoading(false);
     }
-
-    loadContentForTab();
   }, [activeTab, grade, subject, book, part, unit, chapterId, segments.length]);
+
+  useEffect(() => {
+    loadContentForTab();
+  }, [loadContentForTab]);
 
   const toggleBookmark = () => {
     const bks = JSON.parse(localStorage.getItem('gurukul_canonical_bookmarks') || '[]');
@@ -247,26 +249,55 @@ export default function CatchAllChapterClient({ segments }: Props) {
     localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
   };
 
-  const handleAiAction = (action: string) => {
+  // Real Backend AI Tutor Call
+  const handleAiAction = async (action: string) => {
     setTutorDrawerOpen(true);
-    let reply = `🤖 AI Tutor response for Class 5 ${subject.toUpperCase()} (${chapterId}): `;
-    if (action === 'explain') reply += `Here is a simplified explanation of the core concept in this chapter.`;
-    if (action === 'example') reply += `Here is a real-world example explaining this lesson.`;
-    if (action === 'quiz') reply += `Quick Question: What is the primary takeaway of this chapter?`;
-    if (action === 'help') reply += `Let's break down this section step-by-step!`;
+    setTutorLoading(true);
 
-    setTutorMessages(prev => [...prev, { sender: 'ai', text: reply }]);
+    const actionText = action === 'explain' ? 'Explain this concept simply'
+      : action === 'example' ? 'Give me a real-world example'
+      : action === 'quiz' ? 'Quiz me on this chapter'
+      : 'Help me understand this lesson';
+
+    setTutorMessages(prev => [...prev, { sender: 'user', text: actionText }]);
+
+    const response = await sendTutorChat({
+      grade,
+      subject,
+      book,
+      part,
+      unit,
+      chapter_id: chapterId,
+      content_type: activeTab,
+      question: actionText,
+      action
+    });
+
+    setTutorMessages(prev => [...prev, { sender: 'ai', text: response.response, status: response.status }]);
+    setTutorLoading(false);
   };
 
-  const handleSendTutorMessage = () => {
-    if (!tutorQuestion.trim()) return;
+  const handleSendTutorMessage = async () => {
+    if (!tutorQuestion.trim() || tutorLoading) return;
     const msg = tutorQuestion.trim();
-    setTutorMessages(prev => [
-      ...prev,
-      { sender: 'user', text: msg },
-      { sender: 'ai', text: `🤖 AI Tutor: Grounded in Class 5 NCERT ${subject} (${chapterId}): Here is the explanation for "${msg}".` }
-    ]);
     setTutorQuestion('');
+    setTutorLoading(true);
+
+    setTutorMessages(prev => [...prev, { sender: 'user', text: msg }]);
+
+    const response = await sendTutorChat({
+      grade,
+      subject,
+      book,
+      part,
+      unit,
+      chapter_id: chapterId,
+      content_type: activeTab,
+      question: msg
+    });
+
+    setTutorMessages(prev => [...prev, { sender: 'ai', text: response.response, status: response.status }]);
+    setTutorLoading(false);
   };
 
   return (
@@ -384,7 +415,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
       {/* Workspace Three-Region Layout (Desktop) / Single Column (Mobile) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Main Lesson Content Canvas (Col 1 to 8 or 12) */}
+        {/* Main Lesson Content Canvas */}
         <div className={`${tutorDrawerOpen ? 'lg:col-span-8' : 'lg:col-span-12'} space-y-4`}>
           {!loading && contentData && (
             <AudioReaderToolbar
@@ -422,7 +453,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           )}
         </div>
 
-        {/* Contextual AI Tutor Panel (Col 9 to 12 when open) */}
+        {/* Contextual AI Tutor Panel */}
         {tutorDrawerOpen && (
           <div className="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between h-[550px] shadow-2xl sticky top-6">
             <div className="flex items-center justify-between pb-3 border-b border-slate-800">
@@ -438,11 +469,22 @@ export default function CatchAllChapterClient({ segments }: Props) {
             <div className="flex-1 overflow-y-auto space-y-3 py-3 pr-1 text-xs">
               {tutorMessages.map((m, idx) => (
                 <div key={idx} className={`flex ${m.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div className={`p-3 rounded-xl max-w-[85%] ${m.sender === 'user' ? 'bg-teal-500 text-slate-950 font-semibold' : 'bg-slate-950 text-slate-300 border border-slate-800'}`}>
+                  <div className={`p-3 rounded-xl max-w-[85%] ${
+                    m.sender === 'user'
+                      ? 'bg-teal-500 text-slate-950 font-semibold'
+                      : m.status === 'OFFLINE'
+                      ? 'bg-amber-950/60 border border-amber-800 text-amber-200'
+                      : 'bg-slate-950 text-slate-300 border border-slate-800'
+                  }`}>
                     {m.text}
                   </div>
                 </div>
               ))}
+              {tutorLoading && (
+                <div className="flex items-center gap-2 text-xs text-teal-400 p-2">
+                  <Loader2 className="w-4 h-4 animate-spin" /> Querying AI Tutor...
+                </div>
+              )}
             </div>
 
             <div className="pt-3 border-t border-slate-800 flex items-center gap-2">
@@ -454,7 +496,11 @@ export default function CatchAllChapterClient({ segments }: Props) {
                 placeholder="Ask about this lesson..."
                 className="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-teal-500"
               />
-              <button onClick={handleSendTutorMessage} className="p-2 rounded-lg bg-teal-500 text-slate-950 font-bold hover:bg-teal-400">
+              <button
+                onClick={handleSendTutorMessage}
+                disabled={tutorLoading}
+                className="p-2 rounded-lg bg-teal-500 text-slate-950 font-bold hover:bg-teal-400 disabled:opacity-50"
+              >
                 <Send className="w-4 h-4" />
               </button>
             </div>

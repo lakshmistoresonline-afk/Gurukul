@@ -13,15 +13,18 @@ if backend_dir not in sys.path:
 
 try:
     from src.curriculum.api import chapters as curriculum_chapters
+    from src.curriculum.api import tutor as tutor_api
     from src.curriculum.core.config import GurukulConfig
     from src.curriculum.security.websocket_security import SecureWebSocketManager
 except (ImportError, ValueError):
     try:
         from curriculum.api import chapters as curriculum_chapters
+        from curriculum.api import tutor as tutor_api
         from curriculum.core.config import GurukulConfig
         from curriculum.security.websocket_security import SecureWebSocketManager
     except (ImportError, ValueError):
         from .curriculum.api import chapters as curriculum_chapters
+        from .curriculum.api import tutor as tutor_api
         from .curriculum.core.config import GurukulConfig
         from .curriculum.security.websocket_security import SecureWebSocketManager
 
@@ -55,6 +58,7 @@ app.add_middleware(
 )
 
 app.include_router(curriculum_chapters.router)
+app.include_router(tutor_api.router)
 
 CONTENT_ROOT = str(GurukulConfig.get_content_root())
 

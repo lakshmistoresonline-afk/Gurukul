@@ -94,3 +94,29 @@ export class CurriculumApiClient {
 export async function getCurriculumHierarchy() {
   return CurriculumApiClient.fetchHierarchy();
 }
+
+export async function sendTutorChat(payload: {
+  grade: string;
+  subject: string;
+  book: string;
+  part: string;
+  unit: string;
+  chapter_id: string;
+  content_type?: string;
+  question: string;
+  action?: string;
+}): Promise<{ status: string; response: string; model?: string }> {
+  try {
+    const res = await fetch(`${API_BASE}/api/v1/tutor/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) {
+      return { status: 'OFFLINE', response: '⚠️ AI Tutor is currently offline. Check backend connection.' };
+    }
+    return await res.json();
+  } catch {
+    return { status: 'OFFLINE', response: '⚠️ AI Tutor is currently offline. Ensure backend is running on port 8001.' };
+  }
+}
