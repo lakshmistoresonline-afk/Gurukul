@@ -34,13 +34,15 @@ def populate_mapping():
 
     count = 0
     for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
-        grade = class_dir.name.replace("Class", "")
+        grade = class_dir.name.replace("Class", "").strip()
 
         for subj_dir in sorted([d for d in class_dir.iterdir() if d.is_dir()]):
             raw_subj = subj_dir.name
             canonical_subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
 
             content_subj_dir = CONTENTS_ROOT / f"Class {grade}" / raw_subj
+            if not content_subj_dir.exists():
+                content_subj_dir = CONTENTS_ROOT / f"Class{grade}" / raw_subj
             source_files_list = []
             source_hashes_map = {}
             if content_subj_dir.exists():
