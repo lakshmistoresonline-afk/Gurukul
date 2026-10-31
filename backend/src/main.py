@@ -59,3 +59,7 @@ app.include_router(curriculum_chapters.router)
 CONTENT_ROOT = str(GurukulConfig.get_content_root())
 
 secure_ws_mgr = SecureWebSocketManager()
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8001, reload=True)
