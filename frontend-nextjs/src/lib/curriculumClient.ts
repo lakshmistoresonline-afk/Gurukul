@@ -61,7 +61,7 @@ export class CurriculumApiClient {
       } catch (err) {
         if (attempt === retries) {
           console.warn('Failed to fetch authoritative curriculum hierarchy after retries:', err);
-          throw err;
+          return [];
         }
         await new Promise(resolve => setTimeout(resolve, delayMs));
       }
@@ -89,4 +89,8 @@ export class CurriculumApiClient {
     }
     return res.json();
   }
+}
+
+export async function getCurriculumHierarchy() {
+  return CurriculumApiClient.fetchHierarchy();
 }

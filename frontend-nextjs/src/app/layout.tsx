@@ -1,10 +1,11 @@
 import React from "react";
 import type { Metadata, Viewport } from "next";
 import "../styles/globals.css";
+import { AppShell } from "../components/AppShell";
 
 export const metadata: Metadata = {
-  title: "Gurukul AI",
-  description: "Next-Generation AI Learning Platform",
+  title: "Gurukul AI — K-12 NCERT Learning Platform",
+  description: "Next-Generation Class 5 NCERT AI Learning Companion",
 };
 
 export const viewport: Viewport = {
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased min-h-screen bg-slate-950 text-slate-100">
-        {children}
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );
