@@ -98,15 +98,6 @@ def search_cross_subject_curriculum(question: str, grade: str = "5") -> Optional
     if not meaningful:
         return None
 
-    # Priority domain determination
-    target_priority = None
-    if any(term in q_lower for term in ["photosynthesis", "plant", "water cycle", "evaporation", "condensation", "river", "digestion", "food", "energy", "ecosystem", "animal", "amphibian"]):
-        target_priority = "science"
-    elif any(term in q_lower for term in ["fraction", "numerator", "denominator", "addition", "subtraction", "geometry", "odometer", "perimeter", "area", "tally"]):
-        target_priority = "maths"
-    elif any(term in q_lower for term in ["spectacle", "gilli danda", "vocation", "bangles", "parrot", "scooter", "adverb", "preposition", "noun"]):
-        target_priority = "english"
-
     best_match = None
     max_score = 0
 
@@ -133,11 +124,18 @@ def search_cross_subject_curriculum(question: str, grade: str = "5") -> Optional
                         ch_title = str(ch.get("chapterTitle") or ch.get("chapter_title", ""))
                         summary = str(ch.get("core_summary", "") or ch.get("summary", ""))
 
-                        full_corpus = f"{ch_title} {summary} {json.dumps(ch)}".lower()
+                        full_corpus = f"{ch_title} {summary} {json.dumps(ch, ensure_ascii=False)}".lower()
 
-                        score = sum(1 for w in meaningful if w in full_corpus)
-                        if target_priority and (target_priority in subj_name or (target_priority == "maths" and "mathematics" in subj_name)):
-                            score += 10 # Strong domain priority bonus
+                        # Subject Domain Priority Boosting
+                        domain_boost = 0
+                        if "science" in subj_name and any(w in q_lower for w in ["photosynthesis", "plant", "water cycle", "evaporation", "condensation", "river", "digestion", "food", "energy", "ecosystem"]):
+                            domain_boost = 15
+                        elif ("math" in subj_name or "mat" in subj_name) and any(w in q_lower for w in ["fraction", "numerator", "denominator", "addition", "subtraction", "geometry", "odometer", "perimeter", "area"]):
+                            domain_boost = 15
+                        elif "english" in subj_name and any(w in q_lower for w in ["spectacle", "gilli danda", "vocation", "bangles", "parrot", "scooter", "adverb", "preposition"]):
+                            domain_boost = 15
+
+                        score = sum(1 for w in meaningful if w in full_corpus) + domain_boost
 
                         if score > max_score and score >= 1:
                             max_score = score
@@ -315,7 +313,7 @@ Provide a clear, step-by-step, encouraging answer.
     except Exception:
         pass
 
-    # 3. High-Fidelity Grounded RAG Rule Engine
+    # 3. Dynamic RAG Evidence Grounded Engine
     q_lower = req.question.lower().strip()
     detailed_answer = ""
 
@@ -335,78 +333,31 @@ Provide a clear, step-by-step, encouraging answer.
             f"Regarding your query ('{req.question}'): This concept is covered in NCERT Class {req.grade} {resolved_subj.upper()} ({ch_title_match})."
         )
 
-    elif "photosynthesis" in q_lower:
-        mode = "NCERT_CROSS_SUBJECT"
-        resolved_subj = "science"
+    elif mode == "GENERAL_KNOWLEDGE":
         detailed_answer = (
-            "🌿 **Understanding Photosynthesis (NCERT Class 5 Science)**\n"
-            "*(Source: Science — Our Wondrous World)*\n\n"
-            "Photosynthesis is the biological process by which green plants manufacture their own food using sunlight, water, and carbon dioxide:\n\n"
-            "1. **Sunlight Trapping**: Chlorophyll (the green pigment in leaves) absorbs solar thermal energy from sunlight.\n"
-            "2. **Water Infiltration**: Plant roots absorb water and minerals from soil and transport them up to the leaves.\n"
-            "3. **Carbon Dioxide Exchange**: Leaves take in carbon dioxide gas from surrounding atmospheric air through tiny pores called **stomata**.\n"
-            "4. **Food Production & Oxygen Release**: Sunlight converts water and carbon dioxide into glucose (plant food) and releases fresh **oxygen** back into the air!"
+            f"🌐 **General Educational Explanation**\n\n"
+            f"Regarding your query ('{req.question}'): This is a general educational topic. "
+            f"In 5th-grade general science and social studies, concepts are understood through real-world observations and logical step-by-step reasoning."
         )
 
-    elif mode == "GENERAL_KNOWLEDGE":
-        if "waterfall" in q_lower or "water fall" in q_lower:
+    else:
+        summary_text = ""
+        if isinstance(content_data, dict):
+            summary_text = content_data.get("core_summary") or content_data.get("summary") or content_data.get("overview") or content_data.get("description") or ""
+
+        if summary_text:
             detailed_answer = (
-                "🌊 **What is a Waterfall? (General Knowledge)**\n\n"
-                "A **waterfall** is a river or stream flowing over a steep vertical drop or cliff into a plunge pool below.\n\n"
-                "• **How it Forms**: Water flows over soft and hard rock layers. Over time, the rushing water erodes the softer rock underneath, creating a steep cliff ledge.\n"
-                "• **Famous Examples**: **Kunchikal Falls** (Karnataka, India) is one of India's tallest waterfalls, and **Angel Falls** (Venezuela) is the highest waterfall in the world!\n"
-                "• **Ecosystem Role**: Waterfalls aerate river water with oxygen, providing a healthy environment for aquatic life."
-            )
-        elif "volcano" in q_lower:
-            detailed_answer = (
-                "🌋 **What is a Volcano? (General Knowledge)**\n\n"
-                "A **volcano** is an opening in Earth's crust through which molten rock (magma), ash, and gases escape to the surface.\n\n"
-                "• **How it Works**: High pressure deep underground pushes magma upward through a central vent. When magma erupts onto the surface, it is called **lava**."
-            )
-        elif "flower" in q_lower:
-            detailed_answer = (
-                "🌸 **What is a Flower? (General Science)**\n\n"
-                "A **flower** is the colorful reproductive part of a plant responsible for producing seeds and fruits.\n\n"
-                "• **Petals**: Colorful outer leaves that attract pollinators like bees and butterflies.\n"
-                "• **Sepals**: Small green leaf-like structures at the base protecting the flower bud.\n"
-                "• **Stamen**: Male part producing pollen grains.\n"
-                "• **Pistil / Carpel**: Female part where seeds develop after pollination."
+                f"📖 **NCERT Class {req.grade} Chapter Explanation ({canon_subj.upper()} - {ch_id})**\n\n"
+                f"**Lesson Concept**: {summary_text}\n\n"
+                f"Regarding your query ('{req.question}'): This topic is covered in NCERT Class {req.grade} {canon_subj.upper()} ({ch_id})."
             )
         else:
             detailed_answer = (
                 f"🌐 **General Educational Explanation**\n\n"
-                f"Regarding your query ('{req.question}'): This is a general educational topic. "
-                f"In 5th-grade general science and social studies, concepts are understood through real-world observations and logical step-by-step reasoning."
+                f"Regarding your query ('{req.question}'): No verified NCERT chapter text was found for this specific query in {canon_subj.upper()} ({ch_id}). "
+                f"This topic can be understood using standard 5th-grade learning principles."
             )
-
-    else:
-        if "water cycle" in q_lower or "evaporation" in q_lower:
-            detailed_answer = (
-                "🌍 **The Water Cycle Explained (NCERT Class 5 Science)**\n\n"
-                "The Water Cycle is the continuous journey water takes as it moves from Earth's surface into the atmosphere and back down again in four key stages:\n\n"
-                "1. **Evaporation**: Heat from the sun warms water in oceans, lakes, and rivers, turning it into invisible water vapor that rises into the air.\n"
-                "2. **Condensation**: As water vapor rises high into the cool sky, it cools down and turns back into tiny liquid water droplets, forming clouds.\n"
-                "3. **Precipitation**: When clouds become heavy with water droplets, water falls back to Earth as rain, snow, or hail.\n"
-                "4. **Collection**: Rainwater flows back into rivers, lakes, and soil (groundwater aquifers), where the cycle begins all over again!"
-            )
-        else:
-            summary_text = ""
-            if isinstance(content_data, dict):
-                summary_text = content_data.get("summary") or content_data.get("overview") or content_data.get("description") or ""
-
-            if summary_text:
-                detailed_answer = (
-                    f"📖 **NCERT Class {req.grade} Chapter Explanation ({canon_subj.upper()} - {ch_id})**\n\n"
-                    f"**Lesson Concept**: {summary_text}\n\n"
-                    f"Regarding your query ('{req.question}'): This topic is covered in NCERT Class {req.grade} {canon_subj.upper()} ({ch_id})."
-                )
-            else:
-                detailed_answer = (
-                    f"🌐 **General Educational Explanation**\n\n"
-                    f"Regarding your query ('{req.question}'): No verified NCERT chapter text was found for this specific query in {canon_subj.upper()} ({ch_id}). "
-                    f"This topic can be understood using standard 5th-grade learning principles."
-                )
-                mode = "GENERAL_KNOWLEDGE"
+            mode = "GENERAL_KNOWLEDGE"
 
     return {
         "status": "NCERT_SOURCE",
