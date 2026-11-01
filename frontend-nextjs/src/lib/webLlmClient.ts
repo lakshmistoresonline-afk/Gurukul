@@ -3,6 +3,7 @@ import { TutorChatPayload } from './curriculumClient';
 
 export interface WebLlmResponse {
   status: string;
+  mode?: string;
   response: string;
   model?: string;
   error_detail?: string;

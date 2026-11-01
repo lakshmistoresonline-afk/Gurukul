@@ -1,9 +1,19 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2 } from 'lucide-react';
+import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2, Copy, Volume2, VolumeX, RotateCcw, ThumbsUp, ThumbsDown, Check } from 'lucide-react';
 import { getCurriculumHierarchy } from '../../lib/curriculumClient';
 import { sendHybridTutorChat } from '../../lib/webLlmClient';
+
+interface ChatMessage {
+  id: string;
+  sender: 'user' | 'ai';
+  text: string;
+  mode?: string;
+  model?: string;
+  status?: string;
+  rating?: 'up' | 'down' | null;
+}
 
 export default function AiTutorPage() {
   const [hierarchy, setHierarchy] = useState<any[]>([]);
@@ -11,10 +21,16 @@ export default function AiTutorPage() {
   const [selectedChapterId, setSelectedChapterId] = useState<string>('G5-ENG-U01-C01');
   const [question, setQuestion] = useState('');
   const [loading, setLoading] = useState(false);
-  const [chatHistory, setChatHistory] = useState<Array<{ sender: 'user' | 'ai'; text: string; status?: string }>>([
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [speakingId, setSpeakingId] = useState<string | null>(null);
+
+  const [chatHistory, setChatHistory] = useState<ChatMessage[]>([
     {
+      id: 'welcome-msg',
       sender: 'ai',
-      text: "🤖 Welcome! I am your GURUKUL AI Contextual NCERT Tutor. Select a subject and chapter to ask grounded questions."
+      text: "🤖 Welcome! I am your GURUKUL AI Contextual NCERT Tutor. Ask me any question about your lessons or general educational topics!",
+      mode: 'NCERT_CHAPTER',
+      model: 'NCERT Class 5 Grounded Engine'
     }
   ]);
 
@@ -55,7 +71,8 @@ export default function AiTutorPage() {
     setQuestion('');
     setLoading(true);
 
-    setChatHistory(prev => [...prev, { sender: 'user', text: queryText }]);
+    const userMsgId = `user-${Date.now()}`;
+    setChatHistory(prev => [...prev, { id: userMsgId, sender: 'user', text: queryText }]);
 
     try {
       const response = await sendHybridTutorChat({
@@ -69,25 +86,69 @@ export default function AiTutorPage() {
         question: queryText
       });
 
+      const aiMsgId = `ai-${Date.now()}`;
       setChatHistory(prev => [
         ...prev,
-        { sender: 'ai', text: response.response, status: response.status }
+        {
+          id: aiMsgId,
+          sender: 'ai',
+          text: response.response,
+          mode: response.mode || (response.response.includes('General Knowledge') ? 'GENERAL_KNOWLEDGE' : 'NCERT_CHAPTER'),
+          model: response.model || 'GURUKUL AI Engine',
+          status: response.status
+        }
       ]);
     } catch (err: any) {
+      const errorMsgId = `err-${Date.now()}`;
       setChatHistory(prev => [
         ...prev,
-        { sender: 'ai', text: `🤖 **NCERT Class 5 AI Tutor**: Regarding '${queryText}', please review Chapter ${activeChId} notes and flashcards for step-by-step guidance!`, status: 'ONLINE' }
+        {
+          id: errorMsgId,
+          sender: 'ai',
+          text: `🤖 **NCERT Class 5 AI Tutor**: Regarding '${queryText}', please review Chapter ${activeChId} notes and flashcards for step-by-step guidance!`,
+          mode: 'NCERT_CHAPTER',
+          model: 'GURUKUL AI Fallback Engine',
+          status: 'ONLINE'
+        }
       ]);
     } finally {
       setLoading(false);
     }
   };
 
-  const renderChatMessage = (text: string, sender: 'user' | 'ai') => {
-    if (!text) return null;
-    if (sender === 'user') return text;
+  const handleCopyText = (id: string, text: string) => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text);
+      setCopiedId(id);
+      setTimeout(() => setCopiedId(null), 2000);
+    }
+  };
 
-    const lines = text.split('\n');
+  const handleSpeechToggle = (id: string, text: string) => {
+    if (!('speechSynthesis' in window)) return;
+    if (speakingId === id) {
+      window.speechSynthesis.cancel();
+      setSpeakingId(null);
+    } else {
+      window.speechSynthesis.cancel();
+      const cleanText = text.replace(/[*#_`]/g, '');
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.onend = () => setSpeakingId(null);
+      utterance.onerror = () => setSpeakingId(null);
+      window.speechSynthesis.speak(utterance);
+      setSpeakingId(id);
+    }
+  };
+
+  const handleRating = (id: string, rating: 'up' | 'down') => {
+    setChatHistory(prev => prev.map(m => m.id === id ? { ...m, rating } : m));
+  };
+
+  const renderChatMessage = (msg: ChatMessage) => {
+    if (!msg.text) return null;
+    if (msg.sender === 'user') return msg.text;
+
+    const lines = msg.text.split('\n');
     const textLines: string[] = [];
     let imageUrl: string | null = null;
     let videoUrl: string | null = null;
@@ -104,10 +165,30 @@ export default function AiTutorPage() {
       }
     });
 
+    const isGeneral = msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge');
+
     return (
       <div className="space-y-3">
-        <div className="whitespace-pre-wrap">{textLines.join('\n').trim()}</div>
+        {/* Mode Badge Header */}
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-800/80">
+          <span className={`text-[10px] font-extrabold font-mono uppercase px-2.5 py-0.5 rounded-full border ${
+            isGeneral
+              ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+              : 'bg-teal-500/20 text-teal-300 border-teal-500/40'
+          }`}>
+            {isGeneral ? '🌐 General Knowledge' : '📖 NCERT Chapter Explanation'}
+          </span>
+          <span className="text-[10px] font-mono text-slate-400">
+            {msg.model || 'Gurukul AI Engine'}
+          </span>
+        </div>
 
+        {/* Text Body */}
+        <div className="whitespace-pre-wrap text-sm leading-relaxed text-slate-200">
+          {textLines.join('\n').trim()}
+        </div>
+
+        {/* Interactive Media Cards */}
         {imageUrl && (
           <div className="mt-3 p-3 bg-slate-900 border border-slate-800 rounded-2xl space-y-2">
             <div className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
@@ -129,12 +210,59 @@ export default function AiTutorPage() {
             </div>
           </div>
         )}
+
+        {/* Message Action Toolbar (Copy, Read Aloud, Regenerate, Rating) */}
+        <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-800/80 text-xs text-slate-400">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => handleCopyText(msg.id, msg.text)}
+              className="p-1.5 rounded-lg hover:bg-slate-800 hover:text-white transition-all flex items-center gap-1"
+              title="Copy Answer"
+            >
+              {copiedId === msg.id ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+              <span>{copiedId === msg.id ? 'Copied' : 'Copy'}</span>
+            </button>
+
+            <button
+              onClick={() => handleSpeechToggle(msg.id, msg.text)}
+              className="p-1.5 rounded-lg hover:bg-slate-800 hover:text-white transition-all flex items-center gap-1"
+              title="Read Aloud"
+            >
+              {speakingId === msg.id ? <VolumeX className="w-3.5 h-3.5 text-rose-400" /> : <Volume2 className="w-3.5 h-3.5" />}
+              <span>{speakingId === msg.id ? 'Stop' : 'Read'}</span>
+            </button>
+
+            <button
+              onClick={() => handleSendQuery(question || 'Explain this again simply', selectedSubject, selectedChapterId)}
+              className="p-1.5 rounded-lg hover:bg-slate-800 hover:text-white transition-all flex items-center gap-1"
+              title="Regenerate Answer"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Retry</span>
+            </button>
+          </div>
+
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => handleRating(msg.id, 'up')}
+              className={`p-1.5 rounded-lg transition-all ${msg.rating === 'up' ? 'text-teal-400 bg-teal-500/20' : 'hover:bg-slate-800 hover:text-white'}`}
+            >
+              <ThumbsUp className="w-3.5 h-3.5" />
+            </button>
+            <button
+              onClick={() => handleRating(msg.id, 'down')}
+              className={`p-1.5 rounded-lg transition-all ${msg.rating === 'down' ? 'text-rose-400 bg-rose-500/20' : 'hover:bg-slate-800 hover:text-white'}`}
+            >
+              <ThumbsDown className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
       </div>
     );
   };
 
   return (
-    <div className="p-6 max-w-5xl mx-auto space-y-6">
+    <div className="p-4 sm:p-6 max-w-5xl mx-auto space-y-6">
       {/* Header */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
@@ -150,7 +278,7 @@ export default function AiTutorPage() {
         </div>
 
         {/* Chapter Context Selector */}
-        <div className="flex items-center gap-2 bg-slate-900 p-3 rounded-2xl border border-slate-800 text-xs">
+        <div className="flex items-center gap-2 bg-slate-900 p-3 rounded-2xl border border-slate-800 text-xs w-full sm:w-auto">
           <select
             value={selectedSubject}
             onChange={(e) => {
@@ -171,7 +299,7 @@ export default function AiTutorPage() {
             <select
               value={selectedChapterId}
               onChange={(e) => setSelectedChapterId(e.target.value)}
-              className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-white font-mono focus:outline-none"
+              className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-white font-mono focus:outline-none truncate max-w-[220px]"
             >
               {availableChapters.map((ch: any) => (
                 <option key={ch.chapter_id} value={ch.chapter_id}>
@@ -217,21 +345,21 @@ export default function AiTutorPage() {
       </div>
 
       {/* Chat Conversation Box */}
-      <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 h-[480px] flex flex-col justify-between shadow-xl">
-        <div className="flex-1 overflow-y-auto space-y-4 pr-2">
-          {chatHistory.map((msg, idx) => (
+      <div className="bg-slate-900 border border-slate-800 rounded-3xl p-4 sm:p-6 h-[520px] flex flex-col justify-between shadow-xl">
+        <div className="flex-1 overflow-y-auto space-y-4 pr-1 sm:pr-2">
+          {chatHistory.map((msg) => (
             <div
-              key={idx}
+              key={msg.id}
               className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`max-w-xl p-4 rounded-2xl text-sm leading-relaxed ${
+                className={`w-full ${msg.sender === 'user' ? 'max-w-md' : 'max-w-[88%]'} p-4 rounded-2xl text-sm leading-relaxed ${
                   msg.sender === 'user'
                     ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-medium shadow-md'
                     : 'bg-slate-950 text-slate-200 border border-slate-800'
                 }`}
               >
-                {renderChatMessage(msg.text, msg.sender)}
+                {renderChatMessage(msg)}
               </div>
             </div>
           ))}
@@ -256,9 +384,9 @@ export default function AiTutorPage() {
           <button
             onClick={() => handleSendQuery()}
             disabled={loading}
-            className="px-5 py-3 rounded-xl bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-bold text-sm flex items-center gap-2 shadow-lg shadow-teal-500/20 hover:brightness-110 transition-all disabled:opacity-50"
+            className="px-5 py-3 rounded-xl bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-bold text-sm flex items-center gap-2 shadow-lg shadow-teal-500/20 hover:brightness-110 transition-all disabled:opacity-50 shrink-0"
           >
-            <Send className="w-4 h-4" /> Send
+            <Send className="w-4 h-4" /> <span className="hidden sm:inline">Send</span>
           </button>
         </div>
       </div>
