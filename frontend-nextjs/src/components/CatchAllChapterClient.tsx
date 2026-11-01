@@ -9,7 +9,8 @@ import {
   CurriculumIdentity,
   CurriculumApiError,
   buildCurriculumUrl,
-  sendTutorChat
+  sendTutorChat,
+  fetchSubjectMedia
 } from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 import AudioReaderToolbar from '@/components/AudioReaderToolbar';
@@ -26,7 +27,9 @@ import {
   X,
   Loader2,
   ArrowLeft,
-  ArrowRight
+  ArrowRight,
+  Play,
+  Image as ImageIcon
 } from 'lucide-react';
 
 interface Props {
@@ -63,6 +66,9 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [chapterTitle, setChapterTitle] = useState<string>('');
   const [prevChapterUrl, setPrevChapterUrl] = useState<string | null>(null);
   const [nextChapterUrl, setNextChapterUrl] = useState<string | null>(null);
+  const [chapterVideo, setChapterVideo] = useState<any>(null);
+  const [chapterDiagram, setChapterDiagram] = useState<any>(null);
+
   const [loading, setLoading] = useState<boolean>(true);
   const [statusCode, setStatusCode] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -122,7 +128,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     return '';
   };
 
-  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title and Previous/Next Chapter Links
+  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title, Media, and Previous/Next Chapter Links
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6 || !grade || !chapterId) {
@@ -200,6 +206,21 @@ export default function CatchAllChapterClient({ segments }: Props) {
           }));
         } else {
           setNextChapterUrl(null);
+        }
+
+        // Fetch Chapter Media (Videos & Images)
+        try {
+          const mediaRes = await fetchSubjectMedia(subject, grade);
+          const vids = mediaRes?.studio_video_links?.videos || [];
+          const diag = mediaRes?.media_directory?.diagrams || [];
+
+          const matchVid = vids.find((v: any) => v.chapter_id?.toLowerCase() === chapterId.toLowerCase() || String(v.chapter_number) === String(foundChapter.chapter_number));
+          const matchDiag = diag.find((d: any) => d.chapter_id?.toLowerCase() === chapterId.toLowerCase() || String(d.chapter_number) === String(foundChapter.chapter_number));
+
+          setChapterVideo(matchVid || (vids.length > 0 ? vids[0] : null));
+          setChapterDiagram(matchDiag || (diag.length > 0 ? diag[0] : null));
+        } catch (e) {
+          console.warn('Failed to load chapter media assets:', e);
         }
 
         // Record student activity with mandatory UID
@@ -447,7 +468,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         </div>
 
-        {/* Unified 7-Stage Learning Path Bar with Auto-Scroll & Scroll Arrows */}
+        {/* Unified 7-Stage Learning Journey Path Bar with Smooth Scroll & Arrows */}
         <div className="relative flex items-center pt-2 border-t border-slate-800">
           <button
             onClick={() => scrollStageBar('left')}
@@ -498,6 +519,45 @@ export default function CatchAllChapterClient({ segments }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Main Lesson Content Canvas */}
         <div className={`${tutorDrawerOpen ? 'lg:col-span-8' : 'lg:col-span-12'} space-y-4`}>
+          {/* Studio Video Lesson Player (Rendered in Stage 1: Discover / Overview & Stage 2: Learn / Notes) */}
+          {chapterVideo && (activeTab === 'overview' || activeTab === 'notes') && (
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
+                  <Play className="w-4 h-4 text-indigo-400" /> Studio Video Lesson: {chapterVideo.title || chapterTitle}
+                </span>
+                <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} Video</span>
+              </div>
+              <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-slate-800">
+                <video
+                  controls
+                  controlsList="nodownload"
+                  className="w-full h-full object-contain"
+                  src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterVideo.filename)}`}
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Interactive 16:9 Hotspot Diagram Image (Rendered in Stage 4: Explore / Mindmaps) */}
+          {chapterDiagram && (activeTab === 'mindmaps' || activeTab === 'overview') && (
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
+                  <ImageIcon className="w-4 h-4 text-teal-400" /> Interactive Hotspot Diagram: {chapterDiagram.filename}
+                </span>
+                <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} 16:9 Diagram</span>
+              </div>
+              <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center">
+                <img
+                  src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterDiagram.filename)}`}
+                  alt={chapterDiagram.title || chapterTitle}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+          )}
+
           {!loading && contentData && (
             <AudioReaderToolbar
               textToRead={getReadableText(contentData)}
