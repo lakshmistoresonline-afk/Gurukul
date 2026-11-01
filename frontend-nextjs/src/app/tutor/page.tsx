@@ -9,6 +9,13 @@ interface ChatMessage {
   id: string;
   sender: 'user' | 'ai';
   text: string;
+  question: string;
+  grade: string;
+  subject: string;
+  book: string;
+  part: string;
+  unit: string;
+  chapter_id: string;
   mode?: string;
   model?: string;
   status?: string;
@@ -29,6 +36,13 @@ export default function AiTutorPage() {
       id: 'welcome-msg',
       sender: 'ai',
       text: "🤖 Welcome! I am your GURUKUL AI Contextual NCERT Tutor. Ask me any question about your lessons or general educational topics!",
+      question: '',
+      grade: '5',
+      subject: 'english',
+      book: 'english',
+      part: 'main',
+      unit: 'U01',
+      chapter_id: 'G5-ENG-U01-C01',
       mode: 'NCERT_CHAPTER',
       model: 'NCERT Class 5 Grounded Engine'
     }
@@ -59,6 +73,9 @@ export default function AiTutorPage() {
     if (!queryText || loading) return;
 
     const activeSubj = targetSubject || selectedSubject;
+    const activeBook = currentSubjectObj?.books?.[0]?.book_id || activeSubj;
+    const activePart = currentSubjectObj?.books?.[0]?.part || 'main';
+    const activeUnit = 'U01';
     const activeChId = targetChapter || selectedChapterId || `G5-${activeSubj.slice(0,3).toUpperCase()}-U01-C01`;
 
     if (targetSubject && targetSubject !== selectedSubject) {
@@ -72,32 +89,51 @@ export default function AiTutorPage() {
     setLoading(true);
 
     const userMsgId = `user-${Date.now()}`;
-    setChatHistory(prev => [...prev, { id: userMsgId, sender: 'user', text: queryText }]);
+    const userMsg: ChatMessage = {
+      id: userMsgId,
+      sender: 'user',
+      text: queryText,
+      question: queryText,
+      grade: '5',
+      subject: activeSubj,
+      book: activeBook,
+      part: activePart,
+      unit: activeUnit,
+      chapter_id: activeChId
+    };
+
+    setChatHistory(prev => [...prev, userMsg]);
 
     try {
       const response = await sendHybridTutorChat({
         grade: '5',
         subject: activeSubj,
-        book: currentSubjectObj?.books?.[0]?.book_id || activeSubj,
-        part: currentSubjectObj?.books?.[0]?.part || 'main',
-        unit: 'U01',
+        book: activeBook,
+        part: activePart,
+        unit: activeUnit,
         chapter_id: activeChId,
         content_type: 'overview',
         question: queryText
       });
 
       const aiMsgId = `ai-${Date.now()}`;
-      setChatHistory(prev => [
-        ...prev,
-        {
-          id: aiMsgId,
-          sender: 'ai',
-          text: response.response,
-          mode: response.mode || (response.response.includes('General Knowledge') ? 'GENERAL_KNOWLEDGE' : 'NCERT_CHAPTER'),
-          model: response.model || 'GURUKUL AI Engine',
-          status: response.status
-        }
-      ]);
+      const aiMsg: ChatMessage = {
+        id: aiMsgId,
+        sender: 'ai',
+        text: response.response,
+        question: queryText,
+        grade: '5',
+        subject: activeSubj,
+        book: activeBook,
+        part: activePart,
+        unit: activeUnit,
+        chapter_id: activeChId,
+        mode: response.mode || (response.response.includes('General Knowledge') ? 'GENERAL_KNOWLEDGE' : 'NCERT_CHAPTER'),
+        model: response.model || 'GURUKUL AI Engine',
+        status: response.status
+      };
+
+      setChatHistory(prev => [...prev, aiMsg]);
     } catch (err: any) {
       const errorMsgId = `err-${Date.now()}`;
       setChatHistory(prev => [
@@ -106,6 +142,13 @@ export default function AiTutorPage() {
           id: errorMsgId,
           sender: 'ai',
           text: `🤖 **NCERT Class 5 AI Tutor**: Regarding '${queryText}', please review Chapter ${activeChId} notes and flashcards for step-by-step guidance!`,
+          question: queryText,
+          grade: '5',
+          subject: activeSubj,
+          book: activeBook,
+          part: activePart,
+          unit: activeUnit,
+          chapter_id: activeChId,
           mode: 'NCERT_CHAPTER',
           model: 'GURUKUL AI Fallback Engine',
           status: 'ONLINE'
@@ -114,6 +157,12 @@ export default function AiTutorPage() {
     } finally {
       setLoading(false);
     }
+  };
+
+  // Phase 4 Fix: Retry resubmits exact original question and context
+  const handleRetryMessage = (msg: ChatMessage) => {
+    if (!msg.question || loading) return;
+    handleSendQuery(msg.question, msg.subject, msg.chapter_id);
   };
 
   const handleCopyText = (id: string, text: string) => {
@@ -155,28 +204,32 @@ export default function AiTutorPage() {
 
     lines.forEach(line => {
       if (line.includes('api/v1/curriculum/media/stream') && (line.includes('.png') || line.includes('.jpg'))) {
-        const match = line.match(/`?(https?:\/\/[^\s`]+(?:\.png|\.jpg)[^\s`]*)`?/i) || line.match(/(https?:\/\/[^\s`]+)/i);
+        const match = line.match(/(https?:\/\/[^\s`]+(?:\.png|\.jpg)[^\s`]*|\/api\/v1\/curriculum\/media\/stream[^\s`]*)/i);
         if (match) imageUrl = match[1];
       } else if (line.includes('api/v1/curriculum/media/stream') && line.includes('.mp4')) {
-        const match = line.match(/`?(https?:\/\/[^\s`]+(?:\.mp4)[^\s`]*)`?/i) || line.match(/(https?:\/\/[^\s`]+)/i);
+        const match = line.match(/(https?:\/\/[^\s`]+(?:\.mp4)[^\s`]*|\/api\/v1\/curriculum\/media\/stream[^\s`]*)/i);
         if (match) videoUrl = match[1];
       } else if (!line.startsWith('---') && !line.includes('Interactive Hotspot Diagram') && !line.includes('Studio Video Lesson')) {
         textLines.push(line);
       }
     });
 
-    const isGeneral = msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge');
+    const modeLabel = msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge')
+      ? '🌐 General Knowledge'
+      : msg.mode === 'NCERT_CROSS_CHAPTER'
+      ? '📚 Cross-Chapter Explanation'
+      : '📖 NCERT Chapter Explanation';
 
     return (
       <div className="space-y-3">
-        {/* Mode Badge Header */}
+        {/* Authoritative Mode Badge Header */}
         <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-800/80">
           <span className={`text-[10px] font-extrabold font-mono uppercase px-2.5 py-0.5 rounded-full border ${
-            isGeneral
+            msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge')
               ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
               : 'bg-teal-500/20 text-teal-300 border-teal-500/40'
           }`}>
-            {isGeneral ? '🌐 General Knowledge' : '📖 NCERT Chapter Explanation'}
+            {modeLabel}
           </span>
           <span className="text-[10px] font-mono text-slate-400">
             {msg.model || 'Gurukul AI Engine'}
@@ -195,7 +248,7 @@ export default function AiTutorPage() {
               🖼️ Interactive 16:9 Concept Diagram
             </div>
             <div className="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center">
-              <img src={imageUrl} alt="Concept Diagram" className="w-full h-full object-contain" />
+              <img src={String(imageUrl).startsWith('http') ? String(imageUrl) : `http://127.0.0.1:8001${imageUrl}`} alt="Concept Diagram" className="w-full h-full object-contain" />
             </div>
           </div>
         )}
@@ -206,12 +259,12 @@ export default function AiTutorPage() {
               📺 Studio Video Lesson
             </div>
             <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-slate-800">
-              <video controls controlsList="nodownload" className="w-full h-full object-contain" src={videoUrl} />
+              <video controls controlsList="nodownload" className="w-full h-full object-contain" src={String(videoUrl).startsWith('http') ? String(videoUrl) : `http://127.0.0.1:8001${videoUrl}`} />
             </div>
           </div>
         )}
 
-        {/* Message Action Toolbar (Copy, Read Aloud, Regenerate, Rating) */}
+        {/* Message Action Toolbar (Copy, Read Aloud, Retry, Rating) */}
         <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-800/80 text-xs text-slate-400">
           <div className="flex items-center gap-2">
             <button
@@ -233,9 +286,9 @@ export default function AiTutorPage() {
             </button>
 
             <button
-              onClick={() => handleSendQuery(question || 'Explain this again simply', selectedSubject, selectedChapterId)}
+              onClick={() => handleRetryMessage(msg)}
               className="p-1.5 rounded-lg hover:bg-slate-800 hover:text-white transition-all flex items-center gap-1"
-              title="Regenerate Answer"
+              title="Retry Question"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Retry</span>
@@ -284,7 +337,12 @@ export default function AiTutorPage() {
             onChange={(e) => {
               const newSubj = e.target.value;
               setSelectedSubject(newSubj);
-              const defaultCh = `G5-${newSubj.slice(0, 3).toUpperCase()}-U01-C01`;
+              const targetObj = subjectsList.find((s: any) =>
+                s.canonical_subject?.toLowerCase() === newSubj.toLowerCase() ||
+                s.subject?.toLowerCase() === newSubj.toLowerCase()
+              );
+              const chs = targetObj?.books?.[0]?.units?.[0]?.chapters || [];
+              const defaultCh = chs.length > 0 ? chs[0].chapter_id : `G5-${newSubj.slice(0, 3).toUpperCase()}-U01-C01`;
               setSelectedChapterId(defaultCh);
             }}
             className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-white uppercase font-bold focus:outline-none"
