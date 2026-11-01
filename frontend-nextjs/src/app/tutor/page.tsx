@@ -38,24 +38,35 @@ export default function AiTutorPage() {
   );
   const availableChapters = currentSubjectObj?.books?.[0]?.units?.[0]?.chapters || [];
 
-  const handleSend = async () => {
-    if (!question.trim() || loading) return;
-    const userQuestion = question.trim();
+  const handleSendQuery = async (customQuestion?: string, targetSubject?: string, targetChapter?: string) => {
+    const queryText = (customQuestion || question).trim();
+    if (!queryText || loading) return;
+
+    const activeSubj = targetSubject || selectedSubject;
+    const activeChId = targetChapter || selectedChapterId || `G5-${activeSubj.slice(0,3).toUpperCase()}-U01-C01`;
+
+    if (targetSubject && targetSubject !== selectedSubject) {
+      setSelectedSubject(targetSubject);
+    }
+    if (targetChapter && targetChapter !== selectedChapterId) {
+      setSelectedChapterId(targetChapter);
+    }
+
     setQuestion('');
     setLoading(true);
 
-    setChatHistory(prev => [...prev, { sender: 'user', text: userQuestion }]);
+    setChatHistory(prev => [...prev, { sender: 'user', text: queryText }]);
 
     try {
       const response = await sendHybridTutorChat({
         grade: '5',
-        subject: selectedSubject,
-        book: currentSubjectObj?.books?.[0]?.book_id || selectedSubject,
+        subject: activeSubj,
+        book: currentSubjectObj?.books?.[0]?.book_id || activeSubj,
         part: currentSubjectObj?.books?.[0]?.part || 'main',
         unit: 'U01',
-        chapter_id: selectedChapterId || `G5-${selectedSubject.slice(0,3).toUpperCase()}-U01-C01`,
+        chapter_id: activeChId,
         content_type: 'overview',
-        question: userQuestion
+        question: queryText
       });
 
       setChatHistory(prev => [
@@ -65,7 +76,7 @@ export default function AiTutorPage() {
     } catch (err: any) {
       setChatHistory(prev => [
         ...prev,
-        { sender: 'ai', text: `🤖 **NCERT Class 5 AI Tutor**: Regarding '${userQuestion}', please review Chapter ${selectedChapterId} notes and flashcards for step-by-step guidance!`, status: 'ONLINE' }
+        { sender: 'ai', text: `🤖 **NCERT Class 5 AI Tutor**: Regarding '${queryText}', please review Chapter ${activeChId} notes and flashcards for step-by-step guidance!`, status: 'ONLINE' }
       ]);
     } finally {
       setLoading(false);
@@ -93,8 +104,10 @@ export default function AiTutorPage() {
           <select
             value={selectedSubject}
             onChange={(e) => {
-              setSelectedSubject(e.target.value);
-              setSelectedChapterId('');
+              const newSubj = e.target.value;
+              setSelectedSubject(newSubj);
+              const defaultCh = `G5-${newSubj.slice(0, 3).toUpperCase()}-U01-C01`;
+              setSelectedChapterId(defaultCh);
             }}
             className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-white uppercase font-bold focus:outline-none"
           >
@@ -123,7 +136,7 @@ export default function AiTutorPage() {
       {/* Prompt Presets */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <button
-          onClick={() => setQuestion("Explain the Water Cycle in simple terms for Class 5 Science")}
+          onClick={() => handleSendQuery("Explain the Water Cycle in simple terms for Class 5 Science", "science", "G5-SCI-U01-C01")}
           className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-left hover:border-teal-500/50 transition-all group"
         >
           <div className="flex items-center gap-2 text-xs font-semibold text-teal-400 mb-1">
@@ -133,7 +146,7 @@ export default function AiTutorPage() {
         </button>
 
         <button
-          onClick={() => setQuestion("How do I solve fraction strip addition in Class 5 Maths?")}
+          onClick={() => handleSendQuery("How do I solve fraction strip addition in Class 5 Maths?", "maths", "G5-MAT-U01-C01")}
           className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-left hover:border-teal-500/50 transition-all group"
         >
           <div className="flex items-center gap-2 text-xs font-semibold text-indigo-400 mb-1">
@@ -143,7 +156,7 @@ export default function AiTutorPage() {
         </button>
 
         <button
-          onClick={() => setQuestion("Give me an example of adjectives from Papa's Spectacles")}
+          onClick={() => handleSendQuery("Give me an example of adjectives from Papa's Spectacles", "english", "G5-ENG-U01-C01")}
           className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-left hover:border-teal-500/50 transition-all group"
         >
           <div className="flex items-center gap-2 text-xs font-semibold text-amber-400 mb-1">
@@ -162,7 +175,7 @@ export default function AiTutorPage() {
               className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`max-w-xl p-4 rounded-2xl text-sm leading-relaxed ${
+                className={`max-w-xl p-4 rounded-2xl text-sm leading-relaxed whitespace-pre-wrap ${
                   msg.sender === 'user'
                     ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-medium shadow-md'
                     : 'bg-slate-950 text-slate-200 border border-slate-800'
@@ -175,7 +188,7 @@ export default function AiTutorPage() {
 
           {loading && (
             <div className="flex items-center gap-2 text-xs text-teal-400 p-3 bg-slate-950/60 rounded-xl border border-slate-800 w-fit">
-              <Loader2 className="w-4 h-4 animate-spin" /> Querying GURUKUL AI Tutor for {selectedChapterId}...
+              <Loader2 className="w-4 h-4 animate-spin" /> Querying GURUKUL AI Tutor for {selectedSubject.toUpperCase()} ({selectedChapterId})...
             </div>
           )}
         </div>
@@ -186,12 +199,12 @@ export default function AiTutorPage() {
             type="text"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-            placeholder="Ask your Class 5 AI Tutor a question..."
+            onKeyDown={(e) => e.key === 'Enter' && handleSendQuery()}
+            placeholder={`Ask your Class 5 ${selectedSubject.toUpperCase()} AI Tutor a question...`}
             className="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-teal-500/60"
           />
           <button
-            onClick={handleSend}
+            onClick={() => handleSendQuery()}
             disabled={loading}
             className="px-5 py-3 rounded-xl bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-bold text-sm flex items-center gap-2 shadow-lg shadow-teal-500/20 hover:brightness-110 transition-all disabled:opacity-50"
           >
