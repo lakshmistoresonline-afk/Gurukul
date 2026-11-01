@@ -78,9 +78,9 @@ async def get_subject_media_assets(
     }
 
 @router.get("/curriculum/media/stream")
-async def stream_local_video(
+async def stream_local_media(
     subject: str = Query(..., description="Subject name"),
-    filename: str = Query(..., description="Video filename")
+    filename: str = Query(..., description="Media filename")
 ):
     canon_subj = SubjectRegistry.resolve_canonical_subject(subject)
     subj_folder_map = {
@@ -92,16 +92,30 @@ async def stream_local_video(
     }
     subj_dir_name = subj_folder_map.get(canon_subj, subject.title())
     content_root = GurukulConfig.get_content_root()
-    video_path = content_root / "Class 5" / subj_dir_name / "Videos" / filename
 
-    if not video_path.exists():
-        raise HTTPException(status_code=404, detail=f"Video file not found: {filename}")
+    # 1. Check Images folder (exact match + suffix/substring match)
+    images_dir = content_root / "Class 5" / subj_dir_name / "Images"
+    if images_dir.exists():
+        img_exact = images_dir / filename
+        if img_exact.exists():
+            return FileResponse(path=str(img_exact), media_type="image/png", filename=filename)
+        clean_name = filename.split("/")[-1]
+        for f in images_dir.glob("*.png"):
+            if clean_name in f.name or f.name.endswith(clean_name) or clean_name.endswith(f.name):
+                return FileResponse(path=str(f), media_type="image/png", filename=f.name)
 
-    return FileResponse(
-        path=str(video_path),
-        media_type="video/mp4",
-        filename=filename
-    )
+    # 2. Check Videos folder (exact match + suffix/substring match)
+    videos_dir = content_root / "Class 5" / subj_dir_name / "Videos"
+    if videos_dir.exists():
+        vid_exact = videos_dir / filename
+        if vid_exact.exists():
+            return FileResponse(path=str(vid_exact), media_type="video/mp4", filename=filename)
+        clean_name = filename.split("/")[-1]
+        for f in videos_dir.glob("*.mp4"):
+            if clean_name in f.name or f.name.endswith(clean_name) or clean_name.endswith(f.name):
+                return FileResponse(path=str(f), media_type="video/mp4", filename=f.name)
+
+    raise HTTPException(status_code=404, detail=f"Media asset file not found: {filename}")
 
 @router.get("/curriculum/hierarchy")
 @router.get("/classes")
