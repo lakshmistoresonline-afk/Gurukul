@@ -9,9 +9,9 @@ import {
   CurriculumIdentity,
   CurriculumApiError,
   buildCurriculumUrl,
-  sendTutorChat,
   fetchSubjectMedia
 } from '@/lib/curriculumClient';
+import { sendHybridTutorChat } from '@/lib/webLlmClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 import AudioReaderToolbar from '@/components/AudioReaderToolbar';
 import { recordChapterActivity } from '@/lib/studentProgressStore';
@@ -330,7 +330,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
   };
 
-  // Real Backend AI Tutor Call
+  // Real Backend / Local WebLLM AI Tutor Call
   const handleAiAction = async (action: string) => {
     setTutorDrawerOpen(true);
     setTutorLoading(true);
@@ -342,7 +342,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
     setTutorMessages(prev => [...prev, { sender: 'user', text: actionText }]);
 
-    const response = await sendTutorChat({
+    const response = await sendHybridTutorChat({
       grade,
       subject,
       book,
@@ -366,7 +366,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
     setTutorMessages(prev => [...prev, { sender: 'user', text: msg }]);
 
-    const response = await sendTutorChat({
+    const response = await sendHybridTutorChat({
       grade,
       subject,
       book,
