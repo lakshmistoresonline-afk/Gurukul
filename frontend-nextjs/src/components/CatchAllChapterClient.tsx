@@ -517,45 +517,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Main Lesson Content Canvas */}
         <div className={`${tutorDrawerOpen ? 'lg:col-span-8' : 'lg:col-span-12'} space-y-4`}>
-          {/* Studio Video Lesson Player (Rendered in Step 1: Watch & Discover / Overview) */}
-          {chapterVideo && (activeTab === 'overview' || activeTab === 'notes') && (
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
-                  <Play className="w-4 h-4 text-indigo-400" /> Studio Video Lesson: {chapterVideo.title || chapterTitle}
-                </span>
-                <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} Video</span>
-              </div>
-              <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-slate-800">
-                <video
-                  controls
-                  controlsList="nodownload"
-                  className="w-full h-full object-contain"
-                  src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterVideo.filename)}`}
-                />
-              </div>
-            </div>
-          )}
-
-          {/* Interactive 16:9 Hotspot Diagram Image (Rendered in Step 3: Visual Concept Map / Mindmaps) */}
-          {chapterDiagram && (activeTab === 'mindmaps' || activeTab === 'overview') && (
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
-                  <ImageIcon className="w-4 h-4 text-teal-400" /> Interactive Hotspot Diagram: {chapterDiagram.filename}
-                </span>
-                <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} 16:9 Diagram</span>
-              </div>
-              <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center">
-                <img
-                  src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterDiagram.filename)}`}
-                  alt={chapterDiagram.title || chapterTitle}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
-          )}
-
           {!loading && contentData && (
             <AudioReaderToolbar
               textToRead={getReadableText(contentData)}
@@ -578,6 +539,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </div>
           )}
 
+          {/* 1. Main Lesson Overview / Text Content */}
           {statusCode === 200 && !loading && contentData && (
             <div className="bg-slate-900 rounded-2xl border border-slate-800 p-6 shadow-xl">
               {RendererRegistry.resolve({
@@ -588,6 +550,50 @@ export default function CatchAllChapterClient({ segments }: Props) {
                 contentType: activeTab,
                 data: contentData
               })}
+            </div>
+          )}
+
+          {/* 2. Media Showcase Cards — ONLY in Step 1 (Overview) AND Positioned BELOW the Overview Section */}
+          {activeTab === 'overview' && !loading && (
+            <div className="space-y-4 pt-2 border-t border-slate-800">
+              {/* Studio Video Lesson Player Card */}
+              {chapterVideo && (
+                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
+                      <Play className="w-4 h-4 text-indigo-400" /> Studio Video Lesson: {chapterVideo.title || chapterTitle}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} Video</span>
+                  </div>
+                  <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-slate-800">
+                    <video
+                      controls
+                      controlsList="nodownload"
+                      className="w-full h-full object-contain"
+                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterVideo.filename)}`}
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* Interactive 16:9 Hotspot Diagram Card */}
+              {chapterDiagram && (
+                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
+                      <ImageIcon className="w-4 h-4 text-teal-400" /> Interactive Hotspot Diagram: {chapterDiagram.filename}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} 16:9 Diagram</span>
+                  </div>
+                  <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center">
+                    <img
+                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterDiagram.filename)}`}
+                      alt={chapterDiagram.title || chapterTitle}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
