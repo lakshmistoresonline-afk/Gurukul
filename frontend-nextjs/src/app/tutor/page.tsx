@@ -83,6 +83,56 @@ export default function AiTutorPage() {
     }
   };
 
+  const renderChatMessage = (text: string, sender: 'user' | 'ai') => {
+    if (!text) return null;
+    if (sender === 'user') return text;
+
+    const lines = text.split('\n');
+    const textLines: string[] = [];
+    let imageUrl: string | null = null;
+    let videoUrl: string | null = null;
+
+    lines.forEach(line => {
+      if (line.includes('api/v1/curriculum/media/stream') && (line.includes('.png') || line.includes('.jpg'))) {
+        const match = line.match(/`?(https?:\/\/[^\s`]+(?:\.png|\.jpg)[^\s`]*)`?/i) || line.match(/(https?:\/\/[^\s`]+)/i);
+        if (match) imageUrl = match[1];
+      } else if (line.includes('api/v1/curriculum/media/stream') && line.includes('.mp4')) {
+        const match = line.match(/`?(https?:\/\/[^\s`]+(?:\.mp4)[^\s`]*)`?/i) || line.match(/(https?:\/\/[^\s`]+)/i);
+        if (match) videoUrl = match[1];
+      } else if (!line.startsWith('---') && !line.includes('Interactive Hotspot Diagram') && !line.includes('Studio Video Lesson')) {
+        textLines.push(line);
+      }
+    });
+
+    return (
+      <div className="space-y-3">
+        <div className="whitespace-pre-wrap">{textLines.join('\n').trim()}</div>
+
+        {imageUrl && (
+          <div className="mt-3 p-3 bg-slate-900 border border-slate-800 rounded-2xl space-y-2">
+            <div className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
+              🖼️ Interactive 16:9 Concept Diagram
+            </div>
+            <div className="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center">
+              <img src={imageUrl} alt="Concept Diagram" className="w-full h-full object-contain" />
+            </div>
+          </div>
+        )}
+
+        {videoUrl && (
+          <div className="mt-3 p-3 bg-slate-900 border border-slate-800 rounded-2xl space-y-2">
+            <div className="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
+              📺 Studio Video Lesson
+            </div>
+            <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-slate-800">
+              <video controls controlsList="nodownload" className="w-full h-full object-contain" src={videoUrl} />
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-6">
       {/* Header */}
@@ -175,13 +225,13 @@ export default function AiTutorPage() {
               className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`max-w-xl p-4 rounded-2xl text-sm leading-relaxed whitespace-pre-wrap ${
+                className={`max-w-xl p-4 rounded-2xl text-sm leading-relaxed ${
                   msg.sender === 'user'
                     ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-medium shadow-md'
                     : 'bg-slate-950 text-slate-200 border border-slate-800'
                 }`}
               >
-                {msg.text}
+                {renderChatMessage(msg.text, msg.sender)}
               </div>
             </div>
           ))}

@@ -190,8 +190,14 @@ Provide a comprehensive, encouraging, step-by-step explanation answering the stu
             detailed_answer += f"**Lesson Explanation**: {summary_text}\n\n"
         detailed_answer += f"Regarding '{req.question}': In NCERT Class {req.grade} {req.subject.upper()}, this topic explores the fundamental principles of {req.subject}. It builds key analytical and problem-solving skills for 5th-grade learners."
 
-    # Append Media Links
-    if match_img or match_vid:
+    # Append Media Links ONLY if relevant to the question topic
+    attach_media = True
+    if "flower" in q_lower and match_img and "water" in match_img.lower():
+        attach_media = False
+    elif "fraction" in q_lower and match_img and "water" in match_img.lower():
+        attach_media = False
+
+    if (match_img or match_vid) and attach_media:
         detailed_answer += "\n\n---"
         if match_img:
             detailed_answer += f"\n🖼️ **Interactive Hotspot Diagram**: `http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject={canon_subj}&filename={match_img}`"
