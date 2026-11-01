@@ -1,6 +1,7 @@
 import os
 import json
 from fastapi import APIRouter, HTTPException, Query, Path, Depends, Security
+from fastapi.responses import FileResponse
 from typing import Dict, Any, List, Optional
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 from ..core.curriculum_registry import CurriculumRegistry, CurriculumResolutionError, ChapterNotFoundError as RegChapterNotFoundError, ContentNotFoundError as RegContentNotFoundError, ContentSchemaError as RegContentSchemaError, IdentityConflictError as RegIdentityConflictError, ManifestMissingError, ManifestMalformedError
@@ -75,6 +76,32 @@ async def get_subject_media_assets(
         "media_directory": {"diagrams": diagrams},
         "studio_video_links": {"videos": videos}
     }
+
+@router.get("/curriculum/media/stream")
+async def stream_local_video(
+    subject: str = Query(..., description="Subject name"),
+    filename: str = Query(..., description="Video filename")
+):
+    canon_subj = SubjectRegistry.resolve_canonical_subject(subject)
+    subj_folder_map = {
+        "english": "English",
+        "hindi": "Hindi",
+        "mathematics": "Maths",
+        "maths": "Maths",
+        "science": "Science"
+    }
+    subj_dir_name = subj_folder_map.get(canon_subj, subject.title())
+    content_root = GurukulConfig.get_content_root()
+    video_path = content_root / "Class 5" / subj_dir_name / "Videos" / filename
+
+    if not video_path.exists():
+        raise HTTPException(status_code=404, detail=f"Video file not found: {filename}")
+
+    return FileResponse(
+        path=str(video_path),
+        media_type="video/mp4",
+        filename=filename
+    )
 
 @router.get("/curriculum/hierarchy")
 @router.get("/classes")

@@ -1,17 +1,15 @@
 # FAIL-CLOSED CRYPTOGRAPHIC IMMUTABILITY REPORT
-**Timestamp**: 2026-10-31T21:45:13.785784
-**Overall Result**: **FAIL/BLOCKED**
+**Timestamp**: 2026-11-01T07:39:26.682913
+**Overall Result**: **PASS**
 
 ---
 
 ## Cryptographic Hashes
-- **Baseline Corpus Hash**: `None`
-- **Current Corpus Hash**: `None`
+- **Baseline Corpus Hash**: `5de0099c4e476f0082744ec3036cd7b3184be157df26fef4acd793eb7ac79f52`
+- **Current Corpus Hash**: `5de0099c4e476f0082744ec3036cd7b3184be157df26fef4acd793eb7ac79f52`
 
 ## Reconciliation
-- **Unchanged Files**: 0
+- **Unchanged Files**: 173
 - **Modified Files**: 0
 - **Added Files**: 0
 - **Removed Files**: 0
-
-**Error**: Malformed baseline JSON: Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
