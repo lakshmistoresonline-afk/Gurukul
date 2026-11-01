@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { auth } from '../lib/firebase';
 import {
-  BookOpen,
   Sparkles,
   Flame,
   Award,
@@ -20,7 +19,9 @@ import {
   Image as ImageIcon,
   Zap,
   HelpCircle,
-  RotateCw
+  RotateCw,
+  MapPin,
+  Flag
 } from 'lucide-react';
 import { getCurriculumHierarchy, buildCurriculumUrl } from '../lib/curriculumClient';
 import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../lib/studentProgressStore';
@@ -75,10 +76,8 @@ export default function StudentDashboard() {
     loadData();
   }, []);
 
-  // Filter Class 5 hierarchy node
   const class5Data = hierarchy.find((item: any) => String(item.grade) === '5');
 
-  // Compute dynamic subject data from API hierarchy with subject realm themes
   const rawSubjects = class5Data?.subjects || [
     { subject: 'English', canonical_subject: 'english', books: [{ book_id: 'english', part: 'main', units: [{ unit_id: 'U01', chapters: [{ chapter_id: 'G5-ENG-U01-C01', chapter_title: "Papa's Spectacles" }] }] }] },
     { subject: 'Hindi', canonical_subject: 'hindi', books: [{ book_id: 'hindi', part: 'main', units: [{ unit_id: 'U01', chapters: [{ chapter_id: 'G5-HIN-U01-C01', chapter_title: 'किरन कविता' }] }] }] },
@@ -86,46 +85,46 @@ export default function StudentDashboard() {
     { subject: 'Science', canonical_subject: 'science', books: [{ book_id: 'science', part: 'main', units: [{ unit_id: 'U01', chapters: [{ chapter_id: 'G5-SCI-U01-C01', chapter_title: 'Water Cycle' }] }] }] }
   ];
 
-  const realmThemes: Record<string, { realm: string; tagline: string; border: string; bg: string; badge: string; accent: string }> = {
+  const realmThemes: Record<string, { realm: string; tagline: string; icon: string; border: string; bg: string; badge: string }> = {
     english: {
-      realm: 'Santoor Island',
-      tagline: 'Stories, Poetry & Language Mastery',
+      realm: '🌴 Santoor Island',
+      tagline: 'Coastal Storybook & Language Mastery',
+      icon: '🌊',
       border: 'border-blue-500/40 hover:border-blue-400',
-      bg: 'from-blue-950/60 to-slate-900',
-      badge: 'bg-blue-500/20 text-blue-300 border-blue-500/40',
-      accent: 'text-blue-400'
+      bg: 'from-blue-950/80 via-slate-900 to-indigo-950',
+      badge: 'bg-blue-500/20 text-blue-300 border-blue-500/40'
     },
     hindi: {
-      realm: 'Veena Realm',
-      tagline: 'भाषा, साहित्य एवं व्याकरण ज्ञान',
+      realm: '🌺 Veena Realm',
+      tagline: 'भाषा, कविता, कहानी एवं व्याकरण',
+      icon: '🪕',
       border: 'border-amber-500/40 hover:border-amber-400',
-      bg: 'from-amber-950/60 to-slate-900',
-      badge: 'bg-amber-500/20 text-amber-300 border-amber-500/40',
-      accent: 'text-amber-400'
+      bg: 'from-amber-950/80 via-slate-900 to-orange-950',
+      badge: 'bg-amber-500/20 text-amber-300 border-amber-500/40'
     },
     maths: {
-      realm: 'Maths Mela Kingdom',
-      tagline: 'Numbers, Geometry & Puzzles',
+      realm: '📐 Maths Mela Kingdom',
+      tagline: 'Numbers, Shapes, Fractions & Puzzles',
+      icon: '🏰',
       border: 'border-purple-500/40 hover:border-purple-400',
-      bg: 'from-purple-950/60 to-slate-900',
-      badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
-      accent: 'text-purple-400'
+      bg: 'from-purple-950/80 via-slate-900 to-violet-950',
+      badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40'
     },
     mathematics: {
-      realm: 'Maths Mela Kingdom',
-      tagline: 'Numbers, Geometry & Puzzles',
+      realm: '📐 Maths Mela Kingdom',
+      tagline: 'Numbers, Shapes, Fractions & Puzzles',
+      icon: '🏰',
       border: 'border-purple-500/40 hover:border-purple-400',
-      bg: 'from-purple-950/60 to-slate-900',
-      badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
-      accent: 'text-purple-400'
+      bg: 'from-purple-950/80 via-slate-900 to-violet-950',
+      badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40'
     },
     science: {
-      realm: 'Wondrous World Lab',
-      tagline: 'Nature, Experiments & Anatomy',
+      realm: '🧪 Wondrous World Lab',
+      tagline: 'Ecosystems, Animals & Experiments',
+      icon: '🌳',
       border: 'border-emerald-500/40 hover:border-emerald-400',
-      bg: 'from-emerald-950/60 to-slate-900',
-      badge: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',
-      accent: 'text-emerald-400'
+      bg: 'from-emerald-950/80 via-slate-900 to-teal-950',
+      badge: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
     }
   };
 
@@ -200,10 +199,10 @@ export default function StudentDashboard() {
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-teal-900/60 via-indigo-950 to-slate-900 border border-teal-500/30 p-8 shadow-2xl">
         <div className="relative z-10 space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 text-xs font-semibold border border-teal-500/30">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Authentic Class 5 Student Workspace
+            <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Option 1: Interactive Learning World Map
           </div>
           <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-            Welcome, {studentName}!
+            Welcome to Gurukul World, {studentName}!
           </h1>
           <p className="text-slate-300 max-w-2xl text-sm sm:text-base leading-relaxed">
             {resumeActivity
@@ -222,7 +221,7 @@ export default function StudentDashboard() {
               href="/journey"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700 transition-all"
             >
-              <Compass className="w-4 h-4 text-teal-400" /> View 7-Stage Journey
+              <Compass className="w-4 h-4 text-teal-400" /> View 5-Step Journey
             </Link>
           </div>
         </div>
@@ -315,15 +314,13 @@ export default function StudentDashboard() {
         </div>
       </div>
 
-      {/* Dynamic Class 5 Subject Realms Grid */}
+      {/* Interactive World Map Section (Option 1) */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold text-white flex items-center gap-2">
-            <BookOpen className="w-5 h-5 text-teal-400" /> Class 5 Subject Realms
+            <MapPin className="w-5 h-5 text-teal-400" /> Class 5 Interactive Subject World Map
           </h2>
-          <Link href="/subjects" className="text-xs text-teal-400 hover:underline flex items-center gap-1">
-            Explore All Subjects <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
+          <span className="text-xs text-slate-400 font-mono">4 Subject Realms Connected</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -353,8 +350,8 @@ export default function StudentDashboard() {
                   </div>
 
                   <div>
-                    <h3 className="font-black text-white text-2xl group-hover:text-teal-300 transition-colors">
-                      {subj.name}
+                    <h3 className="font-black text-white text-2xl group-hover:text-teal-300 transition-colors flex items-center gap-2">
+                      <span>{subj.theme.icon}</span> <span>{subj.name}</span>
                     </h3>
                     <p className="text-xs text-slate-400 mt-0.5">{subj.theme.tagline}</p>
                   </div>
@@ -378,7 +375,7 @@ export default function StudentDashboard() {
 
                 <div className="space-y-3 pt-2 border-t border-slate-800/80">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-slate-300 font-semibold truncate max-w-[200px]">Next: {subj.firstChapterTitle}</span>
+                    <span className="text-slate-300 font-semibold truncate max-w-[200px]">Chapter 1: {subj.firstChapterTitle}</span>
                     <span className="text-slate-400 font-mono text-[11px]">{Math.round((subj.completedChapters / subj.totalChapters) * 100)}% Mastered</span>
                   </div>
 

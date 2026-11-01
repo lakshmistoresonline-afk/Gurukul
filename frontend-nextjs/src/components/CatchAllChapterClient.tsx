@@ -47,15 +47,13 @@ const CONTENT_TYPE_LABELS: Record<string, string> = {
   question_papers: 'Question Papers',
 };
 
-// 7-Stage Learning Journey Mapping
-const JOURNEY_STAGES = [
-  { stage: 1, name: 'Discover', tab: 'overview', icon: '🔍' },
-  { stage: 2, name: 'Learn', tab: 'notes', icon: '📖' },
-  { stage: 3, name: 'Understand', tab: 'foundational', icon: '💡' },
-  { stage: 4, name: 'Explore', tab: 'mindmaps', icon: '🗺️' },
-  { stage: 5, name: 'Practise', tab: 'flashcards', icon: '⚡' },
-  { stage: 6, name: 'Challenge', tab: 'master', icon: '🏆' },
-  { stage: 7, name: 'Master', tab: 'question_papers', icon: '🎓' }
+// Option 3: Streamlined 5-Step Learning Journey Mapping
+const JOURNEY_STEPS = [
+  { step: 1, name: 'Watch & Discover', tab: 'overview', icon: '🔍' },
+  { step: 2, name: 'Read & Understand', tab: 'notes', icon: '📖' },
+  { step: 3, name: 'Visual Concept Map', tab: 'mindmaps', icon: '🗺️' },
+  { step: 4, name: 'Smart Practice', tab: 'quiz', icon: '⚡' },
+  { step: 5, name: 'Challenge & Master', tab: 'question_papers', icon: '🏆' }
 ];
 
 export default function CatchAllChapterClient({ segments }: Props) {
@@ -321,9 +319,9 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
   };
 
-  const handleStageSelect = (tab: string, stageNum: number) => {
+  const handleStageSelect = (tab: string, stepNum: number) => {
     setActiveTab(tab);
-    const btn = document.getElementById(`stage-btn-${stageNum}`);
+    const btn = document.getElementById(`step-btn-${stepNum}`);
     if (btn) {
       btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
@@ -468,7 +466,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         </div>
 
-        {/* Unified 7-Stage Learning Journey Path Bar with Smooth Scroll & Arrows */}
+        {/* Option 3: Streamlined 5-Step Learning Journey Stepper with Auto-Scroll & Arrows */}
         <div className="relative flex items-center pt-2 border-t border-slate-800">
           <button
             onClick={() => scrollStageBar('left')}
@@ -483,23 +481,23 @@ export default function CatchAllChapterClient({ segments }: Props) {
             className="flex items-center gap-2 overflow-x-auto scroll-smooth no-scrollbar flex-1 py-1"
           >
             <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-1 shrink-0">
-              <Compass className="w-4 h-4 text-teal-400" /> Stage:
+              <Compass className="w-4 h-4 text-teal-400" /> 5-Step Path:
             </span>
-            {JOURNEY_STAGES.map((s) => {
+            {JOURNEY_STEPS.map((s) => {
               const isSelected = activeTab === s.tab;
               return (
                 <button
-                  id={`stage-btn-${s.stage}`}
-                  key={s.stage}
-                  onClick={() => handleStageSelect(s.tab, s.stage)}
-                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 border ${
+                  id={`step-btn-${s.step}`}
+                  key={s.step}
+                  onClick={() => handleStageSelect(s.tab, s.step)}
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0 border ${
                     isSelected
                       ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md ring-2 ring-teal-500/30'
                       : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
                   }`}
                 >
                   <span>{s.icon}</span>
-                  <span>Stage {s.stage}: {s.name} ({CONTENT_TYPE_LABELS[s.tab] || s.tab})</span>
+                  <span>Step {s.step}: {s.name} ({CONTENT_TYPE_LABELS[s.tab] || s.tab})</span>
                 </button>
               );
             })}
@@ -519,7 +517,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Main Lesson Content Canvas */}
         <div className={`${tutorDrawerOpen ? 'lg:col-span-8' : 'lg:col-span-12'} space-y-4`}>
-          {/* Studio Video Lesson Player (Rendered in Stage 1: Discover / Overview & Stage 2: Learn / Notes) */}
+          {/* Studio Video Lesson Player (Rendered in Step 1: Watch & Discover / Overview) */}
           {chapterVideo && (activeTab === 'overview' || activeTab === 'notes') && (
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
               <div className="flex items-center justify-between">
@@ -539,7 +537,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </div>
           )}
 
-          {/* Interactive 16:9 Hotspot Diagram Image (Rendered in Stage 4: Explore / Mindmaps) */}
+          {/* Interactive 16:9 Hotspot Diagram Image (Rendered in Step 3: Visual Concept Map / Mindmaps) */}
           {chapterDiagram && (activeTab === 'mindmaps' || activeTab === 'overview') && (
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
               <div className="flex items-center justify-between">
