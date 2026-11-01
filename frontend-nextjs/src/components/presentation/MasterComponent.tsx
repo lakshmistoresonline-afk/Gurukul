@@ -68,7 +68,7 @@ export default function MasterComponent({ data }: MasterProps) {
     if (availableSubTabs.length > 0 && !availableSubTabs.includes(activeSubTab)) {
       setActiveSubTab(availableSubTabs[0]);
     }
-  }, [data, hasCheat, hasObj, hasComp, hasLit]);
+  }, [data, availableSubTabs, activeSubTab]);
 
   const [shuffledMap] = useState<Record<string, string[]>>(() => {
     const map: Record<string, string[]> = {};

@@ -50,7 +50,9 @@ export default function PracticeArenaPage() {
     s.subject?.toLowerCase() === selectedSubject.toLowerCase()
   );
 
-  const availableChapters = currentSubjectObj?.books?.[0]?.units?.[0]?.chapters || [];
+  const availableChapters = React.useMemo(() => {
+    return currentSubjectObj?.books?.[0]?.units?.[0]?.chapters || [];
+  }, [currentSubjectObj]);
 
   // Fetch Quiz Data for Selected Chapter
   useEffect(() => {
@@ -99,21 +101,36 @@ export default function PracticeArenaPage() {
     setSelectedOption(opt);
     setShowExplanation(true);
 
-    if (currentQ && (opt === currentQ.answer || opt === currentQ.correctAnswer)) {
+    const isCorrect = currentQ && (
+      opt === currentQ.answer ||
+      opt === currentQ.correctAnswer ||
+      opt === currentQ.correct_answer ||
+      opt === currentQ.correct_option
+    );
+
+    if (isCorrect) {
       setUserScore(prev => prev + 1);
     }
   };
 
   const handleNextQuestion = () => {
+    const isLastCorrect = selectedOption && currentQ && (
+      selectedOption === currentQ.answer ||
+      selectedOption === currentQ.correctAnswer ||
+      selectedOption === currentQ.correct_answer ||
+      selectedOption === currentQ.correct_option
+    );
+
     setSelectedOption(null);
     setShowExplanation(false);
+
     if (currentQuestionIdx + 1 < questions.length) {
       setCurrentQuestionIdx(prev => prev + 1);
     } else {
       setQuizSubmitted(true);
       recordQuizScore(
         selectedChapterId,
-        userScore + (selectedOption === currentQ?.answer ? 1 : 0),
+        userScore + (isLastCorrect ? 1 : 0),
         questions.length,
         currentUser?.uid || 'guest'
       );
@@ -206,7 +223,10 @@ export default function PracticeArenaPage() {
             <div className="space-y-3">
               {(currentQ.options || []).map((opt: string, idx: number) => {
                 const isSelected = selectedOption === opt;
-                const isCorrect = opt === currentQ.answer || opt === currentQ.correctAnswer;
+                const isCorrect = opt === currentQ.answer ||
+                  opt === currentQ.correctAnswer ||
+                  opt === currentQ.correct_answer ||
+                  opt === currentQ.correct_option;
 
                 let btnStyle = 'bg-slate-950 border-slate-800 text-slate-200 hover:border-amber-500/50';
                 if (showExplanation) {
