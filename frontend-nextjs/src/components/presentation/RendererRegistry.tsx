@@ -57,12 +57,18 @@ class RendererRegistry {
 
   static resolve(params: RendererResolutionParams): React.ReactNode {
     const grade = (params.grade || '').trim().toLowerCase();
-    const subject = (params.subject || '').trim().toLowerCase();
-    const book = (params.book || '').trim().toLowerCase();
+    let subject = (params.subject || '').trim().toLowerCase();
+    let book = (params.book || '').trim().toLowerCase();
     const part = (params.part || '').trim().toLowerCase();
     const ct = (params.contentType || '').trim().toLowerCase();
 
-    // Exact key formation ONLY: grade:subject:book:part:contentType
+    // Subject Normalization Alias Mapping
+    if (subject === 'maths') subject = 'mathematics';
+    if (subject === 'social') subject = 'social_science';
+    if (book === 'maths') book = 'mathematics';
+    if (book === 'social') book = 'social_science';
+
+    // Exact key formation: grade:subject:book:part:contentType
     const exactKey = `${grade}:${subject}:${book}:${part}:${ct}`;
 
     const Component = this.get(exactKey);
