@@ -14,7 +14,13 @@ import {
 import { sendHybridTutorChat } from '@/lib/webLlmClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 import AudioReaderToolbar from '@/components/AudioReaderToolbar';
-import { recordChapterActivity } from '@/lib/studentProgressStore';
+import {
+  recordChapterActivity,
+  toggleBookmarkStore,
+  togglePracticeMarkedStore,
+  getStudentProgress,
+  syncStudentProgressFromFirestore
+} from '@/lib/studentProgressStore';
 import {
   Compass,
   Bookmark,
@@ -47,8 +53,8 @@ const CONTENT_TYPE_LABELS: Record<string, string> = {
   question_papers: 'Question Papers',
 };
 
-// 8 Explicit Content Tabs Mapping (Matching all 8 JSON content files)
-const CONTENT_TABS = [
+// 8 Explicit Content Tabs Mapping
+const ALL_CONTENT_TABS = [
   { tab: 'overview', name: 'Overview', icon: '🔍' },
   { tab: 'notes', name: 'Notes', icon: '📖' },
   { tab: 'foundational', name: 'Foundational', icon: '💡' },
@@ -62,7 +68,7 @@ const CONTENT_TABS = [
 export default function CatchAllChapterClient({ segments }: Props) {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [activeTab, setActiveTab] = useState<string>('overview');
-  const [availableContentTypes, setAvailableContentTypes] = useState<string[]>([]);
+  const [availableTabs, setAvailableTabs] = useState<Array<{ tab: string; name: string; icon: string }>>(ALL_CONTENT_TABS);
   const [contentData, setContentData] = useState<any>(null);
   const [chapterTitle, setChapterTitle] = useState<string>('');
   const [prevChapterUrl, setPrevChapterUrl] = useState<string | null>(null);
@@ -101,11 +107,15 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const canonicalIdentityKey = `${grade}:${subject.toLowerCase()}:${book.toLowerCase()}:${part.toLowerCase()}:${unit.toUpperCase()}:${chapterId.toLowerCase()}`;
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
+      const uid = user ? user.uid : 'guest';
+      const userProgress = user ? await syncStudentProgressFromFirestore(user.uid) : getStudentProgress('guest');
+      setIsBookmarked((userProgress.bookmarks || []).includes(canonicalIdentityKey));
+      setIsNeedPractice((userProgress.practiceMarked || []).includes(canonicalIdentityKey));
     });
     return () => unsubscribe();
-  }, []);
+  }, [canonicalIdentityKey]);
 
   // Extract readable text for Audio Reader Toolbar
   const getReadableText = (data: any): string => {
@@ -129,7 +139,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     return '';
   };
 
-  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title, Media, and Previous/Next Chapter Links
+  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title, Media, and Previous/Next Links
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6 || !grade || !chapterId) {
@@ -143,13 +153,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
         setLoading(true);
         setErrorMsg(null);
         setStatusCode(null);
-
-        // Check bookmarks & need practice
-        const bks = JSON.parse(localStorage.getItem('gurukul_canonical_bookmarks') || '[]');
-        setIsBookmarked(bks.includes(canonicalIdentityKey));
-
-        const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
-        setIsNeedPractice(np.includes(canonicalIdentityKey));
 
         // Fetch authoritative hierarchy
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
@@ -209,22 +212,38 @@ export default function CatchAllChapterClient({ segments }: Props) {
           setNextChapterUrl(null);
         }
 
-        // Fetch Chapter Media (Videos & Images)
+        // Derive Available Content Tabs dynamically (F-012 Fix)
+        if (Array.isArray(foundChapter.content_types) && foundChapter.content_types.length > 0) {
+          const matchedTabs = ALL_CONTENT_TABS.filter(t => foundChapter.content_types.includes(t.tab));
+          if (matchedTabs.length > 0) {
+            setAvailableTabs(matchedTabs);
+          }
+        }
+
+        // Exact Identity Media Matching ONLY (F-011 Fix - No fallback to videos[0] or diagrams[0])
         try {
           const mediaRes = await fetchSubjectMedia(subject, grade);
           const vids = mediaRes?.studio_video_links?.videos || [];
           const diag = mediaRes?.media_directory?.diagrams || [];
 
-          const matchVid = vids.find((v: any) => v.chapter_id?.toLowerCase() === chapterId.toLowerCase() || String(v.chapter_number) === String(foundChapter.chapter_number));
-          const matchDiag = diag.find((d: any) => d.chapter_id?.toLowerCase() === chapterId.toLowerCase() || String(d.chapter_number) === String(foundChapter.chapter_number));
+          const matchVid = vids.find((v: any) =>
+            v.chapter_id?.toLowerCase() === chapterId.toLowerCase() ||
+            String(v.chapter_number) === String(foundChapter.chapter_number)
+          );
+          const matchDiag = diag.find((d: any) =>
+            d.chapter_id?.toLowerCase() === chapterId.toLowerCase() ||
+            String(d.chapter_number) === String(foundChapter.chapter_number)
+          );
 
-          setChapterVideo(matchVid || (vids.length > 0 ? vids[0] : null));
-          setChapterDiagram(matchDiag || (diag.length > 0 ? diag[0] : null));
+          setChapterVideo(matchVid || null);
+          setChapterDiagram(matchDiag || null);
         } catch (e) {
           console.warn('Failed to load chapter media assets:', e);
+          setChapterVideo(null);
+          setChapterDiagram(null);
         }
 
-        // Record student activity with mandatory UID
+        // Record student activity with authenticated UID or guest
         recordChapterActivity({
           grade,
           subject,
@@ -234,11 +253,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           chapter_id: chapterId,
           chapter_title: realTitle
         }, currentUser?.uid || 'guest');
-
-        const validContentTypes = foundChapter.content_types || [
-          'overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'
-        ];
-        setAvailableContentTypes(validContentTypes);
 
       } catch (err: any) {
         const code = err instanceof CurriculumApiError ? err.status : 500;
@@ -288,30 +302,16 @@ export default function CatchAllChapterClient({ segments }: Props) {
     loadContentForTab();
   }, [loadContentForTab]);
 
-  const toggleBookmark = () => {
-    const bks = JSON.parse(localStorage.getItem('gurukul_canonical_bookmarks') || '[]');
-    let nextBks;
-    if (isBookmarked) {
-      nextBks = bks.filter((key: string) => key !== canonicalIdentityKey);
-      setIsBookmarked(false);
-    } else {
-      nextBks = [...bks, canonicalIdentityKey];
-      setIsBookmarked(true);
-    }
-    localStorage.setItem('gurukul_canonical_bookmarks', JSON.stringify(nextBks));
+  const handleToggleBookmark = async () => {
+    const uid = currentUser?.uid || 'guest';
+    const res = await toggleBookmarkStore(canonicalIdentityKey, uid);
+    setIsBookmarked(res.state.bookmarks.includes(canonicalIdentityKey));
   };
 
-  const toggleNeedPractice = () => {
-    const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
-    let nextNp;
-    if (isNeedPractice) {
-      nextNp = np.filter((key: string) => key !== canonicalIdentityKey);
-      setIsNeedPractice(false);
-    } else {
-      nextNp = [...np, canonicalIdentityKey];
-      setIsNeedPractice(true);
-    }
-    localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
+  const handleToggleNeedPractice = async () => {
+    const uid = currentUser?.uid || 'guest';
+    const res = await togglePracticeMarkedStore(canonicalIdentityKey, uid);
+    setIsNeedPractice(res.state.practiceMarked.includes(canonicalIdentityKey));
   };
 
   // Stage Bar Smooth Scroll Functions
@@ -330,7 +330,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
   };
 
-  // Real Backend / Local WebLLM AI Tutor Call
+  // Real Backend / Local WebLLM AI Tutor Call with Complete try/catch/finally (F-013 Fix)
   const handleAiAction = async (action: string) => {
     setTutorDrawerOpen(true);
     setTutorLoading(true);
@@ -342,20 +342,25 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
     setTutorMessages(prev => [...prev, { sender: 'user', text: actionText }]);
 
-    const response = await sendHybridTutorChat({
-      grade,
-      subject,
-      book,
-      part,
-      unit,
-      chapter_id: chapterId,
-      content_type: activeTab,
-      question: actionText,
-      action
-    });
+    try {
+      const response = await sendHybridTutorChat({
+        grade,
+        subject,
+        book,
+        part,
+        unit,
+        chapter_id: chapterId,
+        content_type: activeTab,
+        question: actionText,
+        action
+      });
 
-    setTutorMessages(prev => [...prev, { sender: 'ai', text: response.response, status: response.status }]);
-    setTutorLoading(false);
+      setTutorMessages(prev => [...prev, { sender: 'ai', text: response.response, status: response.status }]);
+    } catch (err: any) {
+      setTutorMessages(prev => [...prev, { sender: 'ai', text: `⚠️ Unable to connect to AI Tutor: ${err.message || 'Network timeout.'}`, status: 'OFFLINE' }]);
+    } finally {
+      setTutorLoading(false);
+    }
   };
 
   const handleSendTutorMessage = async () => {
@@ -366,19 +371,24 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
     setTutorMessages(prev => [...prev, { sender: 'user', text: msg }]);
 
-    const response = await sendHybridTutorChat({
-      grade,
-      subject,
-      book,
-      part,
-      unit,
-      chapter_id: chapterId,
-      content_type: activeTab,
-      question: msg
-    });
+    try {
+      const response = await sendHybridTutorChat({
+        grade,
+        subject,
+        book,
+        part,
+        unit,
+        chapter_id: chapterId,
+        content_type: activeTab,
+        question: msg
+      });
 
-    setTutorMessages(prev => [...prev, { sender: 'ai', text: response.response, status: response.status }]);
-    setTutorLoading(false);
+      setTutorMessages(prev => [...prev, { sender: 'ai', text: response.response, status: response.status }]);
+    } catch (err: any) {
+      setTutorMessages(prev => [...prev, { sender: 'ai', text: `⚠️ Unable to connect to AI Tutor: ${err.message || 'Network timeout.'}`, status: 'OFFLINE' }]);
+    } finally {
+      setTutorLoading(false);
+    }
   };
 
   return (
@@ -418,7 +428,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
             )}
 
             <button
-              onClick={toggleBookmark}
+              onClick={handleToggleBookmark}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
                 isBookmarked
                   ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
@@ -430,7 +440,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </button>
 
             <button
-              onClick={toggleNeedPractice}
+              onClick={handleToggleNeedPractice}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
                 isNeedPractice
                   ? 'bg-rose-500/20 text-rose-300 border-rose-500/40'
@@ -469,7 +479,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         </div>
 
-        {/* 8 Explicit Content Tabs Bar with Smooth Auto-Scroll & Arrows */}
+        {/* Derived Explicit Content Tabs Bar */}
         <div className="relative flex items-center pt-2 border-t border-slate-800">
           <button
             onClick={() => scrollStageBar('left')}
@@ -486,7 +496,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
             <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-1 shrink-0">
               <Compass className="w-4 h-4 text-teal-400" /> Module:
             </span>
-            {CONTENT_TABS.map((t, idx) => {
+            {availableTabs.map((t, idx) => {
               const isSelected = activeTab === t.tab;
               return (
                 <button
@@ -516,7 +526,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
         </div>
       </div>
 
-      {/* Workspace Three-Region Layout (Desktop) / Single Column (Mobile) */}
+      {/* Workspace Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Main Lesson Content Canvas */}
         <div className={`${tutorDrawerOpen ? 'lg:col-span-8' : 'lg:col-span-12'} space-y-4`}>
@@ -556,11 +566,11 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </div>
           )}
 
-          {/* 2. Media Showcase Cards — ONLY in Tab 1 (Overview) AND Positioned BELOW the Overview Section */}
+          {/* 2. Media Showcase Cards — Exact Chapter Identity Match ONLY */}
           {activeTab === 'overview' && !loading && (
             <div className="space-y-4 pt-2 border-t border-slate-800">
               {/* Studio Video Lesson Player Card */}
-              {chapterVideo && (
+              {chapterVideo ? (
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
@@ -577,10 +587,14 @@ export default function CatchAllChapterClient({ segments }: Props) {
                     />
                   </div>
                 </div>
+              ) : (
+                <div className="p-4 bg-slate-900/60 border border-slate-800 rounded-2xl text-center text-xs text-slate-500 font-mono">
+                  No verified studio video lesson available for this specific chapter.
+                </div>
               )}
 
               {/* Interactive 16:9 Hotspot Diagram Card */}
-              {chapterDiagram && (
+              {chapterDiagram ? (
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
@@ -595,6 +609,10 @@ export default function CatchAllChapterClient({ segments }: Props) {
                       className="w-full h-full object-contain"
                     />
                   </div>
+                </div>
+              ) : (
+                <div className="p-4 bg-slate-900/60 border border-slate-800 rounded-2xl text-center text-xs text-slate-500 font-mono">
+                  No verified 16:9 diagram map available for this specific chapter.
                 </div>
               )}
             </div>

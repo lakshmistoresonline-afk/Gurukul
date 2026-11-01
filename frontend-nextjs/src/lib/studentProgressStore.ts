@@ -1,8 +1,8 @@
 /**
  * Authenticated Student Progress & Firestore Persistence Engine
- * Manages real student chapter progress, completed items, quiz scores, and last activity
- * backed authoritatively by Firebase Firestore (doc: users/{uid}/progress/current)
- * with offline local cache fallback.
+ * Manages real student chapter progress, completed items, quiz scores, bookmarks, practice marked items,
+ * and daily mission event ledgers backed authoritatively by Firebase Firestore (doc: users/{uid}/progress/current)
+ * with explicit typed persistence statuses (saved, pending_sync, failed) and offline local cache.
  */
 
 import { doc, getDoc, setDoc } from 'firebase/firestore';
@@ -26,6 +26,14 @@ export interface QuizScoreRecord {
   timestamp: number;
 }
 
+export interface MissionEventRecord {
+  event_id: string;
+  type: 'video_view' | 'flashcard_review' | 'quiz_completion';
+  chapter_id: string;
+  timestamp: number;
+  xp_awarded: number;
+}
+
 export interface StudentProgressState {
   completedChapters: string[]; // List of completed chapter_ids
   lastActivity: StudentLastActivity | null;
@@ -34,9 +42,18 @@ export interface StudentProgressState {
   lastActiveDate: string | null;
   bookmarks: string[];
   practiceMarked: string[];
+  eventsLedger?: MissionEventRecord[];
 }
 
-const BASE_PROGRESS_KEY = 'gurukul_student_progress_v3';
+export type PersistenceStatus = 'saved' | 'pending_sync' | 'failed';
+
+export interface SaveResult {
+  status: PersistenceStatus;
+  state: StudentProgressState;
+  error?: string;
+}
+
+const BASE_PROGRESS_KEY = 'gurukul_student_progress_v4';
 
 const DEFAULT_PROGRESS: StudentProgressState = {
   completedChapters: [],
@@ -45,22 +62,28 @@ const DEFAULT_PROGRESS: StudentProgressState = {
   streakDays: 0,
   lastActiveDate: null,
   bookmarks: [],
-  practiceMarked: []
+  practiceMarked: [],
+  eventsLedger: []
 };
 
 function getLocalCacheKey(uid: string): string {
-  return `${BASE_PROGRESS_KEY}_${uid}`;
+  return `${BASE_PROGRESS_KEY}_${uid || 'guest'}`;
 }
 
 /**
- * Reads student progress from local cache synchronously or Firestore asynchronously.
+ * Reads student progress from local cache synchronously.
  */
 export function getStudentProgress(uid: string): StudentProgressState {
-  if (typeof window === 'undefined' || !uid) return DEFAULT_PROGRESS;
+  if (typeof window === 'undefined') return DEFAULT_PROGRESS;
+  const targetUid = uid || 'guest';
   try {
-    const raw = localStorage.getItem(getLocalCacheKey(uid));
+    const raw = localStorage.getItem(getLocalCacheKey(targetUid));
     if (!raw) return DEFAULT_PROGRESS;
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    return {
+      ...DEFAULT_PROGRESS,
+      ...parsed
+    };
   } catch {
     return DEFAULT_PROGRESS;
   }
@@ -70,16 +93,20 @@ export function getStudentProgress(uid: string): StudentProgressState {
  * Asynchronously fetches authoritative student progress from Firestore and syncs to local cache.
  */
 export async function syncStudentProgressFromFirestore(uid: string): Promise<StudentProgressState> {
-  if (!uid) return DEFAULT_PROGRESS;
+  if (!uid || uid === 'guest') return getStudentProgress('guest');
   try {
     const ref = doc(db, 'users', uid, 'progress', 'current');
     const snap = await getDoc(ref);
     if (snap.exists()) {
       const data = snap.data() as StudentProgressState;
+      const merged: StudentProgressState = {
+        ...DEFAULT_PROGRESS,
+        ...data
+      };
       if (typeof window !== 'undefined') {
-        localStorage.setItem(getLocalCacheKey(uid), JSON.stringify(data));
+        localStorage.setItem(getLocalCacheKey(uid), JSON.stringify(merged));
       }
-      return data;
+      return merged;
     }
   } catch (e) {
     console.warn('Firestore progress fetch failed, using local cache:', e);
@@ -89,17 +116,28 @@ export async function syncStudentProgressFromFirestore(uid: string): Promise<Stu
 
 /**
  * Persists student progress state to both local cache and Firestore.
+ * Returns typed PersistenceStatus ('saved' | 'pending_sync' | 'failed').
  */
-export async function saveStudentProgress(state: StudentProgressState, uid: string): Promise<void> {
-  if (!uid) return;
+export async function saveStudentProgress(state: StudentProgressState, uid: string): Promise<SaveResult> {
+  const targetUid = uid || 'guest';
 
   // 1. Local Cache Save
+  let localSaved = false;
   if (typeof window !== 'undefined') {
     try {
-      localStorage.setItem(getLocalCacheKey(uid), JSON.stringify(state));
+      localStorage.setItem(getLocalCacheKey(targetUid), JSON.stringify(state));
+      localSaved = true;
     } catch (e) {
       console.error('Failed to update local progress cache:', e);
     }
+  }
+
+  // If unauthenticated guest, local save is primary
+  if (!uid || uid === 'guest') {
+    return {
+      status: localSaved ? 'saved' : 'failed',
+      state
+    };
   }
 
   // 2. Authoritative Firestore Sync
@@ -109,13 +147,25 @@ export async function saveStudentProgress(state: StudentProgressState, uid: stri
       ...state,
       updatedAt: Date.now()
     }, { merge: true });
-  } catch (e) {
-    console.warn('Firestore progress write deferred (offline mode):', e);
+
+    return {
+      status: 'saved',
+      state
+    };
+  } catch (e: any) {
+    console.warn('Firestore progress write deferred (offline/pending mode):', e);
+    return {
+      status: localSaved ? 'pending_sync' : 'failed',
+      state,
+      error: e.message || 'Offline mode: Firestore write pending sync.'
+    };
   }
 }
 
-export function recordChapterActivity(activity: Omit<StudentLastActivity, 'timestamp'>, uid: string): void {
-  if (!uid) return;
+export async function recordChapterActivity(
+  activity: Omit<StudentLastActivity, 'timestamp'>,
+  uid: string
+): Promise<SaveResult> {
   const current = getStudentProgress(uid);
   const updatedActivity: StudentLastActivity = {
     ...activity,
@@ -148,11 +198,10 @@ export function recordChapterActivity(activity: Omit<StudentLastActivity, 'times
     lastActiveDate: today
   };
 
-  saveStudentProgress(newState, uid);
+  return await saveStudentProgress(newState, uid);
 }
 
-export function markChapterCompleted(chapterId: string, uid: string): void {
-  if (!uid) return;
+export async function markChapterCompleted(chapterId: string, uid: string): Promise<SaveResult> {
   const current = getStudentProgress(uid);
   const idStr = String(chapterId);
   if (!current.completedChapters.includes(idStr)) {
@@ -160,12 +209,17 @@ export function markChapterCompleted(chapterId: string, uid: string): void {
       ...current,
       completedChapters: [...current.completedChapters, idStr]
     };
-    saveStudentProgress(newState, uid);
+    return await saveStudentProgress(newState, uid);
   }
+  return { status: 'saved', state: current };
 }
 
-export function recordQuizScore(chapterId: string, score: number, total: number, uid: string): void {
-  if (!uid) return;
+export async function recordQuizScore(
+  chapterId: string,
+  score: number,
+  total: number,
+  uid: string
+): Promise<SaveResult> {
   const current = getStudentProgress(uid);
   const newRecord: QuizScoreRecord = {
     chapter_id: chapterId,
@@ -173,9 +227,49 @@ export function recordQuizScore(chapterId: string, score: number, total: number,
     total,
     timestamp: Date.now()
   };
+
+  // Record event in idempotent ledger
+  const eventId = `quiz_${chapterId}_${Date.now()}`;
+  const newEvent: MissionEventRecord = {
+    event_id: eventId,
+    type: 'quiz_completion',
+    chapter_id: chapterId,
+    timestamp: Date.now(),
+    xp_awarded: 50
+  };
+
   const newState: StudentProgressState = {
     ...current,
-    quizScores: [...current.quizScores, newRecord]
+    quizScores: [...current.quizScores, newRecord],
+    eventsLedger: [...(current.eventsLedger || []), newEvent]
   };
-  saveStudentProgress(newState, uid);
+  return await saveStudentProgress(newState, uid);
+}
+
+export async function toggleBookmarkStore(canonicalKey: string, uid: string): Promise<SaveResult> {
+  const current = getStudentProgress(uid);
+  const exists = (current.bookmarks || []).includes(canonicalKey);
+  const nextBookmarks = exists
+    ? current.bookmarks.filter(k => k !== canonicalKey)
+    : [...(current.bookmarks || []), canonicalKey];
+
+  const newState: StudentProgressState = {
+    ...current,
+    bookmarks: nextBookmarks
+  };
+  return await saveStudentProgress(newState, uid);
+}
+
+export async function togglePracticeMarkedStore(canonicalKey: string, uid: string): Promise<SaveResult> {
+  const current = getStudentProgress(uid);
+  const exists = (current.practiceMarked || []).includes(canonicalKey);
+  const nextPractice = exists
+    ? current.practiceMarked.filter(k => k !== canonicalKey)
+    : [...(current.practiceMarked || []), canonicalKey];
+
+  const newState: StudentProgressState = {
+    ...current,
+    practiceMarked: nextPractice
+  };
+  return await saveStudentProgress(newState, uid);
 }
