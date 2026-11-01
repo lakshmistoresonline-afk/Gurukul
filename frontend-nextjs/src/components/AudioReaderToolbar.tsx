@@ -5,12 +5,23 @@ interface AudioToolbarProps {
   subject?: string;
   activeTab?: string;
   onAmbienceChange?: (ambience: 'off' | 'rain' | 'forest') => void;
+  onFontSizeChange?: (size: 'normal' | 'large' | 'xlarge') => void;
+  onThemeChange?: (theme: 'dark' | 'sepia' | 'contrast') => void;
 }
 
-export default function AudioReaderToolbar({ textToRead, subject, activeTab, onAmbienceChange }: AudioToolbarProps) {
+export default function AudioReaderToolbar({
+  textToRead,
+  subject,
+  activeTab,
+  onAmbienceChange,
+  onFontSizeChange,
+  onThemeChange
+}: AudioToolbarProps) {
   const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
   const [rate, setRate] = useState<number>(1.0);
   const [ambient, setAmbient] = useState<'off' | 'rain' | 'forest'>('off');
+  const [fontSize, setFontSize] = useState<'normal' | 'large' | 'xlarge'>('normal');
+  const [themeMode, setThemeMode] = useState<'dark' | 'sepia' | 'contrast'>('dark');
   const [activeAudioSource, setActiveAudioSource] = useState<any>(null);
   const [activeAudioCtx, setActiveAudioCtx] = useState<any>(null);
 
@@ -85,8 +96,6 @@ export default function AudioReaderToolbar({ textToRead, subject, activeTab, onA
     }
   };
 
-  if (isHindi || !textToRead) return null;
-
   const handleToggleSpeech = () => {
     if (!('speechSynthesis' in window)) return;
 
@@ -116,6 +125,18 @@ export default function AudioReaderToolbar({ textToRead, subject, activeTab, onA
     }
   };
 
+  const handleFontChange = (sz: 'normal' | 'large' | 'xlarge') => {
+    setFontSize(sz);
+    if (onFontSizeChange) onFontSizeChange(sz);
+  };
+
+  const handleThemeModeChange = (th: 'dark' | 'sepia' | 'contrast') => {
+    setThemeMode(th);
+    if (onThemeChange) onThemeChange(th);
+  };
+
+  if (isHindi || !textToRead) return null;
+
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 p-4 bg-gradient-to-r from-indigo-50/90 via-teal-50/50 to-indigo-50/90 border border-indigo-200/80 rounded-2xl shadow-xs backdrop-blur-md">
       <div className="flex items-center gap-3">
@@ -143,6 +164,23 @@ export default function AudioReaderToolbar({ textToRead, subject, activeTab, onA
               {r}x
             </button>
           ))}
+        </div>
+
+        {/* Reading Comfort Font Size */}
+        <div className="flex items-center gap-1 bg-white px-2.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 shadow-xs">
+          <span>Font:</span>
+          <button
+            onClick={() => handleFontChange('normal')}
+            className={`px-2 py-0.5 rounded-lg text-[11px] font-extrabold ${fontSize === 'normal' ? 'bg-indigo-600 text-white' : 'hover:bg-slate-100 text-slate-600'}`}
+          >
+            Aa
+          </button>
+          <button
+            onClick={() => handleFontChange('large')}
+            className={`px-2 py-0.5 rounded-lg text-[11px] font-extrabold ${fontSize === 'large' ? 'bg-indigo-600 text-white' : 'hover:bg-slate-100 text-slate-600'}`}
+          >
+            Aa+
+          </button>
         </div>
 
         {/* Ambient Soundscapes */}
