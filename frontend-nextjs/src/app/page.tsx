@@ -21,7 +21,8 @@ import {
   HelpCircle,
   RotateCw,
   MapPin,
-  Flag
+  Star,
+  CheckSquare
 } from 'lucide-react';
 import { getCurriculumHierarchy, buildCurriculumUrl } from '../lib/curriculumClient';
 import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../lib/studentProgressStore';
@@ -76,6 +77,7 @@ export default function StudentDashboard() {
     loadData();
   }, []);
 
+  // Filter Class 5 hierarchy node
   const class5Data = hierarchy.find((item: any) => String(item.grade) === '5');
 
   const rawSubjects = class5Data?.subjects || [
@@ -171,6 +173,11 @@ export default function StudentDashboard() {
     ? Math.round(progress.quizScores.reduce((acc: number, q: any) => acc + (q.score / q.total) * 100, 0) / progress.quizScores.length)
     : 0;
 
+  // Gamified XP Level calculation
+  const totalXp = (progress.completedChapters.length * 100) + (progress.quizScores.length * 50) + (progress.streakDays * 20);
+  const currentLevel = Math.floor(totalXp / 300) + 1;
+  const xpInCurrentLevel = totalXp % 300;
+
   const resumeActivity = progress.lastActivity;
   const continueUrl = resumeActivity
     ? buildCurriculumUrl({
@@ -195,20 +202,42 @@ export default function StudentDashboard() {
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8">
-      {/* Student Welcome & Continue Learning Banner */}
+      {/* Student Welcome & Gamified Level Banner */}
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-teal-900/60 via-indigo-950 to-slate-900 border border-teal-500/30 p-8 shadow-2xl">
-        <div className="relative z-10 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 text-xs font-semibold border border-teal-500/30">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Option 1: Interactive Learning World Map
+        <div className="relative z-10 space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 text-xs font-semibold border border-teal-500/30">
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Class 5 Gamified Learning World
+            </div>
+
+            {/* Level & XP Badge */}
+            <div className="flex items-center gap-2 bg-slate-900/80 px-4 py-1.5 rounded-full border border-amber-500/40 text-xs font-bold text-amber-300">
+              <Star className="w-4 h-4 text-amber-400 fill-amber-400" /> Level {currentLevel} Scholar • {totalXp} Total XP
+            </div>
           </div>
+
           <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-            Welcome to Gurukul World, {studentName}!
+            Welcome, {studentName}!
           </h1>
           <p className="text-slate-300 max-w-2xl text-sm sm:text-base leading-relaxed">
             {resumeActivity
               ? `Resume your study of ${resumeActivity.subject.toUpperCase()} (${resumeActivity.chapter_id}). Progress is isolated to your Firebase account.`
               : 'Begin your NCERT Class 5 curriculum across English, Hindi, Mathematics, and Science with interactive lessons, 3D flashcards, and hotspot diagrams.'}
           </p>
+
+          {/* Level Progress Bar */}
+          <div className="max-w-md space-y-1.5 pt-1">
+            <div className="flex items-center justify-between text-xs text-slate-300 font-mono font-semibold">
+              <span>XP to Level {currentLevel + 1}</span>
+              <span>{xpInCurrentLevel} / 300 XP</span>
+            </div>
+            <div className="w-full bg-slate-950/80 rounded-full h-2.5 overflow-hidden border border-slate-800">
+              <div
+                className="bg-gradient-to-r from-amber-400 to-teal-400 h-full transition-all duration-500"
+                style={{ width: `${Math.min(100, (xpInCurrentLevel / 300) * 100)}%` }}
+              />
+            </div>
+          </div>
 
           <div className="pt-2 flex flex-wrap items-center gap-4">
             <Link
@@ -223,6 +252,50 @@ export default function StudentDashboard() {
             >
               <Compass className="w-4 h-4 text-teal-400" /> View 5-Step Journey
             </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Daily Quests Widget (3 Missions) */}
+      <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4 shadow-xl">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center">
+              <Target className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="font-bold text-white text-base">Today&apos;s 3 Daily Missions</h3>
+              <p className="text-xs text-slate-400">Earn +100 XP per completed mission every day</p>
+            </div>
+          </div>
+          <span className="text-xs font-mono font-bold text-teal-400">
+            {progress.completedChapters.length > 0 ? '2/3 Complete' : '1/3 Complete'}
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+          <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex items-center gap-3 text-xs">
+            <CheckSquare className="w-5 h-5 text-teal-400 shrink-0" />
+            <div>
+              <p className="font-bold text-white">Mission 1: Watch Video</p>
+              <p className="text-[10px] text-slate-400">+100 XP • Chapter 1 Studio Video</p>
+            </div>
+          </div>
+
+          <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex items-center gap-3 text-xs">
+            <CheckSquare className={`w-5 h-5 shrink-0 ${progress.completedChapters.length > 0 ? 'text-teal-400' : 'text-slate-600'}`} />
+            <div>
+              <p className="font-bold text-white">Mission 2: Review Flashcard</p>
+              <p className="text-[10px] text-slate-400">+100 XP • Flip 5 revision cards</p>
+            </div>
+          </div>
+
+          <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex items-center gap-3 text-xs">
+            <CheckSquare className={`w-5 h-5 shrink-0 ${progress.quizScores.length > 0 ? 'text-teal-400' : 'text-slate-600'}`} />
+            <div>
+              <p className="font-bold text-white">Mission 3: Chapter Quiz</p>
+              <p className="text-[10px] text-slate-400">+100 XP • Pass 1 MCQ Quiz</p>
+            </div>
           </div>
         </div>
       </div>
