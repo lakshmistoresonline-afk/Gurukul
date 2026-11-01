@@ -18,6 +18,8 @@ def test_scenario_1_photosynthesis_on_english():
     }, headers=auth_headers).json()
     assert res["mode"] in ["NCERT_CROSS_SUBJECT", "GENERAL_KNOWLEDGE"]
     assert "papa's spectacles" not in res["response"].lower()
+    if res["mode"] == "GENERAL_KNOWLEDGE":
+        assert res.get("evidence") is None
 
 def test_scenario_2_adjectives_on_english():
     res = client.post("/api/v1/tutor/chat", json={
@@ -72,3 +74,17 @@ def test_scenario_10_tell_me_a_joke():
         "grade": "5", "subject": "english", "book": "english", "part": "main", "unit": "U01", "chapter_id": "G5-ENG-U01-C01", "question": "Tell me a joke"
     }, headers=auth_headers).json()
     assert res["mode"] in ["GENERAL_KNOWLEDGE", "CLARIFICATION_REQUIRED"]
+
+# Phase 9 Negative Tests
+def test_negative_single_word_unmatched():
+    res = client.post("/api/v1/tutor/chat", json={
+        "grade": "5", "subject": "english", "book": "english", "part": "main", "unit": "U01", "chapter_id": "G5-ENG-U01-C01", "question": "quantum"
+    }, headers=auth_headers).json()
+    assert res["mode"] in ["CLARIFICATION_REQUIRED", "GENERAL_KNOWLEDGE"]
+    assert res.get("evidence") is None
+
+def test_negative_ambiguous_short_question():
+    res = client.post("/api/v1/tutor/chat", json={
+        "grade": "5", "subject": "science", "book": "science", "part": "main", "unit": "U01", "chapter_id": "G5-SCI-U01-C01", "question": "why"
+    }, headers=auth_headers).json()
+    assert res["mode"] == "CLARIFICATION_REQUIRED"

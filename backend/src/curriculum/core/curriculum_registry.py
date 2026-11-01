@@ -262,8 +262,19 @@ class CurriculumRegistry:
     def resolve_node(cls, identity: CurriculumIdentity) -> Dict[str, Any]:
         idx = cls.get_index()
         canonical_subject = SubjectRegistry.resolve_canonical_subject(identity.subject)
+        canonical_book = identity.book.lower()
 
-        key = f"{identity.grade}:{canonical_subject}:{identity.book}:{identity.part}:{identity.unit}:{identity.chapter_id}"
+        # Known book alias normalization
+        if canonical_book in ["maths", "math", "maths_mela"]:
+            canonical_book = "mathematics"
+        elif canonical_book == "santoor":
+            canonical_book = "english"
+        elif canonical_book == "veena":
+            canonical_book = "hindi"
+        elif canonical_book in ["wondrous_world", "our_wondrous_world"]:
+            canonical_book = "science"
+
+        key = f"{identity.grade}:{canonical_subject}:{canonical_book}:{identity.part}:{identity.unit}:{identity.chapter_id}"
 
         if key not in idx:
             raise ChapterNotFoundError(f"Exact identity node {identity.to_cache_key()} not found in authoritative manifest index.")
