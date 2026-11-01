@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Bot, Sparkles, X, Lightbulb, BookOpen, Send, Loader2 } from 'lucide-react';
+import { Bot, Sparkles, X, Lightbulb, BookOpen, Send, Loader2, Volume2, RotateCcw, AlertTriangle } from 'lucide-react';
 import { sendHybridTutorChat } from '@/lib/webLlmClient';
 
 interface SelectedTextTutorProps {
@@ -14,12 +14,12 @@ interface SelectedTextTutorProps {
 }
 
 export default function SelectedTextTutor({
-  grade = '5',
-  subject = 'english',
-  book = 'english',
-  part = 'main',
-  unit = 'U01',
-  chapter_id = 'G5-ENG-U01-C01'
+  grade,
+  subject,
+  book,
+  part,
+  unit,
+  chapter_id
 }: SelectedTextTutorProps) {
   const [selectedText, setSelectedText] = useState<string>('');
   const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
@@ -27,10 +27,17 @@ export default function SelectedTextTutor({
   const [loading, setLoading] = useState<boolean>(false);
   const [explanation, setExplanation] = useState<string>('');
   const [activeAction, setActiveAction] = useState<string>('explain');
+  const [errorState, setErrorState] = useState<string | null>(null);
+  const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
 
   const popupRef = useRef<HTMLDivElement>(null);
 
+  // Do not activate Ask AI popup if required context is missing
+  const hasValidContext = !!(grade && subject && chapter_id);
+
   useEffect(() => {
+    if (!hasValidContext) return;
+
     const handleSelectionChange = () => {
       const selection = window.getSelection();
       if (!selection || selection.isCollapsed) {
@@ -50,12 +57,13 @@ export default function SelectedTextTutor({
         return;
       }
 
-      // Ensure selection is not inside an input or textarea
+      // Ensure selection is inside educational content and NOT inside input, textarea, button, or nav
       const anchorNode = selection.anchorNode;
       if (anchorNode) {
         const parentElem = anchorNode.parentElement;
-        if (parentElem && (parentElem.tagName === 'INPUT' || parentElem.tagName === 'TEXTAREA' || parentElem.isContentEditable)) {
-          return;
+        if (parentElem) {
+          const closestExcluded = parentElem.closest('input, textarea, button, nav, form, [contenteditable="true"]');
+          if (closestExcluded) return;
         }
       }
 
@@ -65,7 +73,7 @@ export default function SelectedTextTutor({
       if (rect.width > 0 && rect.height > 0) {
         setSelectedText(text);
         setPopupPos({
-          x: rect.left + rect.width / 2,
+          x: Math.min(window.innerWidth - 60, Math.max(60, rect.left + rect.width / 2)),
           y: Math.max(10, rect.top - 45)
         });
       }
@@ -73,18 +81,21 @@ export default function SelectedTextTutor({
 
     document.addEventListener('mouseup', handleSelectionChange);
     document.addEventListener('keyup', handleSelectionChange);
+    document.addEventListener('touchend', handleSelectionChange);
     return () => {
       document.removeEventListener('mouseup', handleSelectionChange);
       document.removeEventListener('keyup', handleSelectionChange);
+      document.removeEventListener('touchend', handleSelectionChange);
     };
-  }, [drawerOpen]);
+  }, [drawerOpen, hasValidContext]);
 
   const handleAskAi = async (action = 'explain') => {
-    if (!selectedText) return;
+    if (!selectedText || !hasValidContext) return;
     setActiveAction(action);
     setDrawerOpen(true);
     setPopupPos(null);
     setLoading(true);
+    setErrorState(null);
 
     try {
       const actionPrompt = action === 'explain' ? `Explain this selected text simply for a Class ${grade} student:`
@@ -95,24 +106,45 @@ export default function SelectedTextTutor({
       const fullQuestion = `${actionPrompt} "${selectedText}"`;
 
       const response = await sendHybridTutorChat({
-        grade,
-        subject,
-        book,
-        part,
-        unit,
-        chapter_id,
+        grade: grade || '5',
+        subject: subject || 'english',
+        book: book || subject || 'english',
+        part: part || 'main',
+        unit: unit || 'U01',
+        chapter_id: chapter_id || 'G5-ENG-U01-C01',
         content_type: 'overview',
         question: fullQuestion,
         action
       });
 
-      setExplanation(response.response);
-    } catch (e) {
-      setExplanation(`🤖 **NCERT Class ${grade} AI Tutor**: Selected Text: "${selectedText}". Review the lesson notes and flashcards for step-by-step guidance!`);
+      if (response && response.response) {
+        setExplanation(response.response);
+      } else {
+        setErrorState('AI Tutor service did not return an explanation.');
+      }
+    } catch (e: any) {
+      setErrorState(e.message || 'AI Tutor network request timed out.');
     } finally {
       setLoading(false);
     }
   };
+
+  const handleSpeech = () => {
+    if (!('speechSynthesis' in window) || !explanation) return;
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+    } else {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(explanation.replace(/[*#_`]/g, ''));
+      utterance.onend = () => setIsSpeaking(false);
+      utterance.onerror = () => setIsSpeaking(false);
+      window.speechSynthesis.speak(utterance);
+      setIsSpeaking(true);
+    }
+  };
+
+  if (!hasValidContext) return null;
 
   return (
     <>
@@ -151,6 +183,7 @@ export default function SelectedTextTutor({
               onClick={() => {
                 setDrawerOpen(false);
                 setSelectedText('');
+                if ('speechSynthesis' in window) window.speechSynthesis.cancel();
               }}
               className="text-slate-400 hover:text-white"
             >
@@ -164,34 +197,56 @@ export default function SelectedTextTutor({
           </div>
 
           {/* Quick Action Chips */}
-          <div className="flex flex-wrap gap-1.5 text-[11px]">
-            <button
-              onClick={() => handleAskAi('explain')}
-              className={`px-2.5 py-1 rounded-lg font-bold border transition-all ${activeAction === 'explain' ? 'bg-teal-500 text-slate-950 border-teal-400' : 'bg-slate-950 text-slate-300 border-slate-800'}`}
-            >
-              💡 Explain Simply
-            </button>
-            <button
-              onClick={() => handleAskAi('example')}
-              className={`px-2.5 py-1 rounded-lg font-bold border transition-all ${activeAction === 'example' ? 'bg-indigo-500 text-white border-indigo-400' : 'bg-slate-950 text-slate-300 border-slate-800'}`}
-            >
-              🎨 Give Example
-            </button>
-            <button
-              onClick={() => handleAskAi('words')}
-              className={`px-2.5 py-1 rounded-lg font-bold border transition-all ${activeAction === 'words' ? 'bg-amber-500 text-slate-950 border-amber-400' : 'bg-slate-950 text-slate-300 border-slate-800'}`}
-            >
-              📚 Difficult Words
-            </button>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex flex-wrap gap-1.5 text-[11px]">
+              <button
+                onClick={() => handleAskAi('explain')}
+                className={`px-2.5 py-1 rounded-lg font-bold border transition-all ${activeAction === 'explain' ? 'bg-teal-500 text-slate-950 border-teal-400' : 'bg-slate-950 text-slate-300 border-slate-800'}`}
+              >
+                💡 Explain Simply
+              </button>
+              <button
+                onClick={() => handleAskAi('example')}
+                className={`px-2.5 py-1 rounded-lg font-bold border transition-all ${activeAction === 'example' ? 'bg-indigo-500 text-white border-indigo-400' : 'bg-slate-950 text-slate-300 border-slate-800'}`}
+              >
+                🎨 Give Example
+              </button>
+            </div>
+
+            {explanation && (
+              <button
+                onClick={handleSpeech}
+                className="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-teal-300 text-[11px] font-bold flex items-center gap-1"
+              >
+                <Volume2 className="w-3.5 h-3.5" /> {isSpeaking ? 'Stop' : 'Read'}
+              </button>
+            )}
           </div>
 
           {/* AI Response Output */}
           <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800 text-xs text-slate-200 leading-relaxed max-h-60 overflow-y-auto whitespace-pre-wrap">
-            {loading ? (
+            {loading && (
               <div className="flex items-center gap-2 text-teal-400 py-4 justify-center">
                 <Loader2 className="w-4 h-4 animate-spin" /> Analyzing selected text for Class {grade}...
               </div>
-            ) : (
+            )}
+
+            {errorState && !loading && (
+              <div className="space-y-2 text-rose-300">
+                <div className="flex items-center gap-1.5 font-bold text-rose-400">
+                  <AlertTriangle className="w-4 h-4" /> AI Explanation Error
+                </div>
+                <p>{errorState}</p>
+                <button
+                  onClick={() => handleAskAi(activeAction)}
+                  className="px-3 py-1 bg-slate-800 hover:bg-slate-700 rounded-lg text-white font-bold text-[11px] flex items-center gap-1 mt-2"
+                >
+                  <RotateCcw className="w-3 h-3" /> Retry Analysis
+                </button>
+              </div>
+            )}
+
+            {!loading && !errorState && explanation && (
               explanation
             )}
           </div>
