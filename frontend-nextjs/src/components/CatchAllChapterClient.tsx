@@ -39,21 +39,24 @@ interface Props {
 const CONTENT_TYPE_LABELS: Record<string, string> = {
   overview: 'Overview',
   notes: 'Notes',
-  master: 'Master',
   foundational: 'Foundational',
-  flashcards: 'Flashcards',
   mindmaps: 'Mindmaps',
+  flashcards: 'Flashcards',
   quiz: 'Quiz',
+  master: 'Master',
   question_papers: 'Question Papers',
 };
 
-// Option 3: Streamlined 5-Step Learning Journey Mapping
-const JOURNEY_STEPS = [
-  { step: 1, name: 'Watch & Discover', tab: 'overview', icon: '🔍' },
-  { step: 2, name: 'Read & Understand', tab: 'notes', icon: '📖' },
-  { step: 3, name: 'Visual Concept Map', tab: 'mindmaps', icon: '🗺️' },
-  { step: 4, name: 'Smart Practice', tab: 'quiz', icon: '⚡' },
-  { step: 5, name: 'Challenge & Master', tab: 'question_papers', icon: '🏆' }
+// 8 Explicit Content Tabs Mapping (Matching all 8 JSON content files)
+const CONTENT_TABS = [
+  { tab: 'overview', name: 'Overview', icon: '🔍' },
+  { tab: 'notes', name: 'Notes', icon: '📖' },
+  { tab: 'foundational', name: 'Foundational', icon: '💡' },
+  { tab: 'mindmaps', name: 'Mindmaps', icon: '🗺️' },
+  { tab: 'flashcards', name: 'Flashcards', icon: '⚡' },
+  { tab: 'quiz', name: 'Quiz', icon: '🎯' },
+  { tab: 'master', name: 'Master', icon: '🏆' },
+  { tab: 'question_papers', name: 'Question Papers', icon: '🎓' }
 ];
 
 export default function CatchAllChapterClient({ segments }: Props) {
@@ -233,7 +236,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
         }, currentUser?.uid || 'guest');
 
         const validContentTypes = foundChapter.content_types || [
-          'overview', 'notes', 'master', 'foundational', 'flashcards', 'mindmaps', 'quiz', 'question_papers'
+          'overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'
         ];
         setAvailableContentTypes(validContentTypes);
 
@@ -319,9 +322,9 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
   };
 
-  const handleStageSelect = (tab: string, stepNum: number) => {
+  const handleTabSelect = (tab: string, idx: number) => {
     setActiveTab(tab);
-    const btn = document.getElementById(`step-btn-${stepNum}`);
+    const btn = document.getElementById(`tab-btn-${idx}`);
     if (btn) {
       btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
@@ -466,7 +469,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         </div>
 
-        {/* Option 3: Streamlined 5-Step Learning Journey Stepper with Auto-Scroll & Arrows */}
+        {/* 8 Explicit Content Tabs Bar with Smooth Auto-Scroll & Arrows */}
         <div className="relative flex items-center pt-2 border-t border-slate-800">
           <button
             onClick={() => scrollStageBar('left')}
@@ -481,23 +484,23 @@ export default function CatchAllChapterClient({ segments }: Props) {
             className="flex items-center gap-2 overflow-x-auto scroll-smooth no-scrollbar flex-1 py-1"
           >
             <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-1 shrink-0">
-              <Compass className="w-4 h-4 text-teal-400" /> 5-Step Path:
+              <Compass className="w-4 h-4 text-teal-400" /> Module:
             </span>
-            {JOURNEY_STEPS.map((s) => {
-              const isSelected = activeTab === s.tab;
+            {CONTENT_TABS.map((t, idx) => {
+              const isSelected = activeTab === t.tab;
               return (
                 <button
-                  id={`step-btn-${s.step}`}
-                  key={s.step}
-                  onClick={() => handleStageSelect(s.tab, s.step)}
+                  id={`tab-btn-${idx}`}
+                  key={t.tab}
+                  onClick={() => handleTabSelect(t.tab, idx)}
                   className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0 border ${
                     isSelected
                       ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md ring-2 ring-teal-500/30'
                       : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
                   }`}
                 >
-                  <span>{s.icon}</span>
-                  <span>Step {s.step}: {s.name} ({CONTENT_TYPE_LABELS[s.tab] || s.tab})</span>
+                  <span>{t.icon}</span>
+                  <span>{t.name}</span>
                 </button>
               );
             })}
@@ -553,7 +556,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </div>
           )}
 
-          {/* 2. Media Showcase Cards — ONLY in Step 1 (Overview) AND Positioned BELOW the Overview Section */}
+          {/* 2. Media Showcase Cards — ONLY in Tab 1 (Overview) AND Positioned BELOW the Overview Section */}
           {activeTab === 'overview' && !loading && (
             <div className="space-y-4 pt-2 border-t border-slate-800">
               {/* Studio Video Lesson Player Card */}
