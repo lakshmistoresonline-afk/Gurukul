@@ -5,12 +5,13 @@ import asyncio
 import urllib.request
 import urllib.error
 from pathlib import Path
-from fastapi import APIRouter, HTTPException, Depends, Header
+from fastapi import APIRouter, HTTPException, Depends, Header, Security
 from pydantic import BaseModel
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 from ..core.curriculum_identity import CurriculumIdentity
 from ..core.processed_content_resolver import ProcessedContentResolver
 from ..core.config import GurukulConfig
+from ..security.auth_service import get_current_user, AuthenticatedUser
 
 router = APIRouter(prefix="/api/v1/tutor", tags=["Contextual AI Tutor"])
 
@@ -29,6 +30,19 @@ class TutorChatRequest(BaseModel):
     content_type: str = "overview"
     question: str
     action: Optional[str] = None
+
+class MediaAssets(BaseModel):
+    diagram: Optional[str] = None
+    video: Optional[str] = None
+
+class TutorChatResponse(BaseModel):
+    status: str
+    mode: str
+    model: str
+    response: str
+    media: Optional[MediaAssets] = None
+    is_ai_generated: bool = False
+    uid: Optional[str] = None
 
 def _sync_query_ollama(url: str, payload: bytes, timeout_sec: int) -> dict:
     req_obj = urllib.request.Request(
@@ -62,71 +76,78 @@ def get_chapter_media_assets(subject: str, chapter_id: str, grade: str = "5"):
 
     return match_img, match_vid
 
-def classify_question_intent(question: str, subject: str, chapter_id: str, chapter_context: Optional[Dict[str, Any]] = None) -> str:
+def evaluate_question_relevance_pipeline(
+    question: str,
+    subject: str,
+    chapter_id: str,
+    chapter_data: Optional[Dict[str, Any]] = None
+) -> str:
     """
-    Dynamic Topic Relevance & Intent Classifier Pipeline.
-    Determines whether question belongs to active open chapter (NCERT_CHAPTER),
-    another NCERT chapter (NCERT_CROSS_CHAPTER), or General Knowledge (GENERAL_KNOWLEDGE).
+    Advanced Multi-Stage Question Intent & Relevance Classification Pipeline.
+    Evaluates:
+    1. Ambiguous/Short Query Filter -> CLARIFICATION_REQUIRED
+    2. Explicit Chapter References ("this lesson", "current story") -> NCERT_CHAPTER
+    3. Semantic Overlap with Chapter Context -> NCERT_CHAPTER
+    4. Curriculum Subject Domain Knowledge -> NCERT_CROSS_CHAPTER
+    5. General Knowledge Fallback -> GENERAL_KNOWLEDGE
     """
     q_lower = question.lower().strip()
     subj_lower = subject.lower().strip()
 
-    # Short or ambiguous questions
-    if len(q_lower.split()) < 2 and q_lower not in ["what", "why", "how"]:
+    # Stage 1: Ambiguous / Unclear Intent Filter
+    if len(q_lower.split()) < 2 and q_lower not in ["what", "why", "how", "help"]:
         return "CLARIFICATION_REQUIRED"
 
-    # Extract keywords from active chapter context
-    context_words = set()
-    if chapter_context and isinstance(chapter_context, dict):
-        summary = str(chapter_context.get("summary") or chapter_context.get("overview") or "").lower()
-        title = str(chapter_context.get("chapter_title") or "").lower()
-        vocab = " ".join([v.get("word", "") for v in chapter_context.get("vocabulary", []) if isinstance(v, dict)]).lower()
-        context_words = set(re.findall(r'\b[a-z]{3,}\b', f"{summary} {title} {vocab}"))
-
-    # Extract words from student question
-    question_words = set(re.findall(r'\b[a-z]{3,}\b', q_lower))
-    # Exclude stop words
-    stop_words = {"what", "where", "when", "which", "who", "whom", "whose", "why", "how", "this", "that", "these", "those", "explain", "give", "tell", "about", "term", "simple", "class", "grade"}
-    meaningful_q_words = question_words - stop_words
-
-    # Direct chapter reference phrases
-    chapter_triggers = ["this lesson", "this chapter", "this story", "this poem", "current lesson", "current chapter", "author", "poet", "narrator"]
-    if any(tr in q_lower for tr in chapter_triggers):
+    # Stage 2: Explicit Chapter Triggers
+    explicit_triggers = ["this lesson", "this chapter", "this story", "this poem", "current chapter", "author", "poet", "narrator"]
+    if any(tr in q_lower for tr in explicit_triggers):
         return "NCERT_CHAPTER"
 
-    # Check keyword overlap between question and active chapter context
-    if meaningful_q_words and context_words:
-        overlap = meaningful_q_words.intersection(context_words)
-        if len(overlap) >= 1:
-            return "NCERT_CHAPTER"
+    # Stage 3: Semantic Overlap with Chapter Context
+    if chapter_data and isinstance(chapter_data, dict):
+        summary = str(chapter_data.get("summary") or chapter_data.get("overview") or "").lower()
+        title = str(chapter_data.get("chapter_title") or "").lower()
+        vocab_words = " ".join([v.get("word", "") for v in chapter_data.get("vocabulary", []) if isinstance(v, dict)]).lower()
 
-    # Cross-subject topic detection
-    science_terms = {"water cycle", "evaporation", "condensation", "precipitation", "flower", "photosynthesis", "amphibian", "frog", "metamorphosis", "digestion", "ecosystem", "waterfall"}
-    math_terms = {"fraction", "numerator", "denominator", "addition", "subtraction", "geometry", "odometer", "perimeter", "area", "tally", "bargraph"}
-    english_terms = {"spectacles", "gilli danda", "vocation", "bangles", "parrot", "scooter", "rhyme", "adverb", "preposition"}
+        context_corpus = f"{summary} {title} {vocab_words}"
+        context_tokens = set(re.findall(r'\b[a-z]{3,}\b', context_corpus))
 
-    if any(term in q_lower for term in science_terms):
+        question_tokens = set(re.findall(r'\b[a-z]{3,}\b', q_lower))
+        stop_words = {"what", "where", "when", "which", "who", "why", "how", "this", "that", "these", "those", "explain", "give", "tell", "about", "term", "simple", "class", "grade", "science", "maths", "english", "hindi"}
+        meaningful_q = question_tokens - stop_words
+
+        if meaningful_q and context_tokens:
+            overlap = meaningful_q.intersection(context_tokens)
+            if len(overlap) >= 1:
+                return "NCERT_CHAPTER"
+
+    # Stage 4: Cross-Subject Domain Knowledge Detection
+    science_topics = {"water cycle", "evaporation", "condensation", "precipitation", "flower", "photosynthesis", "amphibian", "frog", "metamorphosis", "digestion", "ecosystem"}
+    math_topics = {"fraction", "numerator", "denominator", "addition", "subtraction", "geometry", "odometer", "perimeter", "area", "tally"}
+    english_topics = {"spectacles", "gilli danda", "vocation", "bangles", "parrot", "scooter", "rhyme", "adverb", "preposition"}
+
+    if any(topic in q_lower for topic in science_topics):
         return "NCERT_CHAPTER" if subj_lower == "science" else "NCERT_CROSS_CHAPTER"
 
-    if any(term in q_lower for term in math_terms):
+    if any(topic in q_lower for topic in math_topics):
         return "NCERT_CHAPTER" if subj_lower in ["maths", "mathematics"] else "NCERT_CROSS_CHAPTER"
 
-    if any(term in q_lower for term in english_terms):
+    if any(topic in q_lower for topic in english_topics):
         return "NCERT_CHAPTER" if subj_lower == "english" else "NCERT_CROSS_CHAPTER"
 
-    # Default to GENERAL_KNOWLEDGE if no curriculum overlap
+    # Default to GENERAL_KNOWLEDGE if no curriculum overlap exists
     return "GENERAL_KNOWLEDGE"
 
 @router.post("/chat")
 async def tutor_chat(
     req: TutorChatRequest,
-    authorization: Optional[str] = Header(None)
-):
+    current_user: AuthenticatedUser = Depends(get_current_user)
+) -> Dict[str, Any]:
     """
-    Hardened Authoritative AI Tutor Endpoint.
-    1. Authenticates student and validates grade/identity server-side.
-    2. Dynamically classifies question intent (NCERT_CHAPTER, NCERT_CROSS_CHAPTER, GENERAL_KNOWLEDGE, CLARIFICATION_REQUIRED).
-    3. Evaluates media relevance before attaching 16:9 diagram or studio video URLs.
+    Production-Grade Authenticated & Grounded AI Tutor Endpoint.
+    1. Authenticates student via Firebase Admin ID token (fails closed in production).
+    2. Validates curriculum identity and question intent via multi-stage pipeline.
+    3. Returns structured response with separate media metadata for diagrams and studio videos.
     """
     canon_subj = req.subject.strip().lower()
     ch_id = req.chapter_id.strip()
@@ -148,10 +169,21 @@ async def tutor_chat(
         content_data = None
 
     # Classify Question Intent Dynamically
-    mode = classify_question_intent(req.question, canon_subj, ch_id, content_data if isinstance(content_data, dict) else None)
+    mode = evaluate_question_relevance_pipeline(req.question, canon_subj, ch_id, content_data if isinstance(content_data, dict) else None)
     match_img, match_vid = get_chapter_media_assets(canon_subj, ch_id, req.grade)
 
-    # 2. Query Local Ollama Engine if available
+    # Media Relevance Guard: Separate media metadata from answer text
+    media_meta = None
+    if mode == "NCERT_CHAPTER" and (match_img or match_vid):
+        q_lower = req.question.lower()
+        # Exclude media if topic explicitly diverges from chapter diagram
+        if not ("waterfall" in q_lower or "volcano" in q_lower or "flower" in q_lower and "water" in str(match_img).lower()):
+            media_meta = {
+                "diagram": f"{PUBLIC_MEDIA_BASE_URL}?subject={canon_subj}&filename={match_img}" if match_img else None,
+                "video": f"{PUBLIC_MEDIA_BASE_URL}?subject={canon_subj}&filename={match_vid}" if match_vid else None
+            }
+
+    # 2. Try Local Ollama Engine if available
     action_instruction = ""
     if req.action == "explain":
         action_instruction = f"Explain this concept in simple terms for a Grade {req.grade} student."
@@ -172,7 +204,7 @@ Lesson Context Excerpt:
 Student Question: {req.question}
 
 Instruction: {action_instruction}
-If Response Mode is GENERAL_KNOWLEDGE, answer accurately in general terms for Class {req.grade}. Never force it into an unrelated chapter.
+If Response Mode is GENERAL_KNOWLEDGE, answer accurately in general terms for Class {req.grade}.
 If Response Mode is NCERT_CHAPTER, ground your explanation in the active chapter content.
 If Response Mode is CLARIFICATION_REQUIRED, politely ask the student to clarify their question.
 Provide a clear, step-by-step, encouraging answer.
@@ -189,20 +221,14 @@ Provide a clear, step-by-step, encouraging answer.
         ai_text = res_data.get("response", "").strip()
 
         if ai_text:
-            # Media Guard: Attach media ONLY when in NCERT_CHAPTER mode and relevant
-            if mode == "NCERT_CHAPTER" and (match_img or match_vid):
-                ai_text += "\n\n---"
-                if match_img:
-                    ai_text += f"\n🖼️ **Interactive Hotspot Diagram**: {PUBLIC_MEDIA_BASE_URL}?subject={canon_subj}&filename={match_img}"
-                if match_vid:
-                    ai_text += f"\n📺 **Studio Video Lesson**: {PUBLIC_MEDIA_BASE_URL}?subject={canon_subj}&filename={match_vid}"
-
             return {
                 "status": "ONLINE",
                 "mode": mode,
                 "model": f"ollama/{OLLAMA_MODEL}",
                 "response": ai_text,
-                "is_ai_generated": True
+                "media": media_meta,
+                "is_ai_generated": True,
+                "uid": current_user.uid
             }
     except Exception:
         pass
@@ -214,7 +240,7 @@ Provide a clear, step-by-step, encouraging answer.
     if mode == "CLARIFICATION_REQUIRED":
         detailed_answer = (
             f"🤔 **Clarification Needed**\n\n"
-            f"Could you please elaborate on your question? Let me know which specific topic or problem in {canon_subj.upper()} ({ch_id}) you would like to explore!"
+            f"Could you please elaborate on your question? Let me know which specific topic in {canon_subj.upper()} ({ch_id}) you would like to explore!"
         )
 
     elif mode == "GENERAL_KNOWLEDGE":
@@ -224,7 +250,7 @@ Provide a clear, step-by-step, encouraging answer.
                 "A **waterfall** is a river or stream flowing over a steep vertical drop or cliff into a plunge pool below.\n\n"
                 "• **How it Forms**: Water flows over soft and hard rock layers. Over time, the rushing water erodes the softer rock underneath, creating a steep cliff ledge.\n"
                 "• **Famous Examples**: **Kunchikal Falls** (Karnataka, India) is one of India's tallest waterfalls, and **Angel Falls** (Venezuela) is the highest waterfall in the world!\n"
-                "• **Ecosystem Role**: Waterfalls aerate river water with oxygen, providing a healthy environment for fish and aquatic plants."
+                "• **Ecosystem Role**: Waterfalls aerate river water with oxygen, providing a healthy environment for aquatic life."
             )
         elif "volcano" in q_lower:
             detailed_answer = (
@@ -291,20 +317,12 @@ Provide a clear, step-by-step, encouraging answer.
                 f"This topic can be understood using standard 5th-grade learning principles."
             )
 
-    # Media Guard: Append media ONLY when in NCERT_CHAPTER mode and relevant
-    if mode == "NCERT_CHAPTER" and (match_img or match_vid):
-        # Exclude unrelated general queries
-        if not ("waterfall" in q_lower or "volcano" in q_lower or "flower" in q_lower and "water" in str(match_img).lower()):
-            detailed_answer += "\n\n---"
-            if match_img:
-                detailed_answer += f"\n🖼️ **Interactive Hotspot Diagram**: {PUBLIC_MEDIA_BASE_URL}?subject={canon_subj}&filename={match_img}"
-            if match_vid:
-                detailed_answer += f"\n📺 **Studio Video Lesson**: {PUBLIC_MEDIA_BASE_URL}?subject={canon_subj}&filename={match_vid}"
-
     return {
         "status": "NCERT_SOURCE",
         "mode": mode,
         "model": "NCERT Class 5 Grounded Engine",
         "response": detailed_answer,
-        "is_ai_generated": False
+        "media": media_meta,
+        "is_ai_generated": False,
+        "uid": current_user.uid
     }

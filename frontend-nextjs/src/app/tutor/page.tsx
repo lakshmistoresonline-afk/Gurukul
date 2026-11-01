@@ -19,6 +19,10 @@ interface ChatMessage {
   mode?: string;
   model?: string;
   status?: string;
+  media?: {
+    diagram?: string;
+    video?: string;
+  };
   rating?: 'up' | 'down' | null;
 }
 
@@ -130,7 +134,8 @@ export default function AiTutorPage() {
         chapter_id: activeChId,
         mode: response.mode || (response.response.includes('General Knowledge') ? 'GENERAL_KNOWLEDGE' : 'NCERT_CHAPTER'),
         model: response.model || 'GURUKUL AI Engine',
-        status: response.status
+        status: response.status,
+        media: response.media
       };
 
       setChatHistory(prev => [...prev, aiMsg]);
@@ -199,16 +204,16 @@ export default function AiTutorPage() {
 
     const lines = msg.text.split('\n');
     const textLines: string[] = [];
-    let imageUrl: string | null = null;
-    let videoUrl: string | null = null;
+    let imageUrl: string | null = msg.media?.diagram || null;
+    let videoUrl: string | null = msg.media?.video || null;
 
     lines.forEach(line => {
       if (line.includes('api/v1/curriculum/media/stream') && (line.includes('.png') || line.includes('.jpg'))) {
         const match = line.match(/(https?:\/\/[^\s`]+(?:\.png|\.jpg)[^\s`]*|\/api\/v1\/curriculum\/media\/stream[^\s`]*)/i);
-        if (match) imageUrl = match[1];
+        if (match && !imageUrl) imageUrl = match[1];
       } else if (line.includes('api/v1/curriculum/media/stream') && line.includes('.mp4')) {
         const match = line.match(/(https?:\/\/[^\s`]+(?:\.mp4)[^\s`]*|\/api\/v1\/curriculum\/media\/stream[^\s`]*)/i);
-        if (match) videoUrl = match[1];
+        if (match && !videoUrl) videoUrl = match[1];
       } else if (!line.startsWith('---') && !line.includes('Interactive Hotspot Diagram') && !line.includes('Studio Video Lesson')) {
         textLines.push(line);
       }
