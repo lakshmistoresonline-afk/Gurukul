@@ -105,7 +105,7 @@ export async function fetchSubjectMedia(subject: string, grade = '5') {
   }
 }
 
-export async function sendTutorChat(payload: {
+export interface TutorChatPayload {
   grade: string;
   subject: string;
   book: string;
@@ -115,7 +115,9 @@ export async function sendTutorChat(payload: {
   content_type?: string;
   question: string;
   action?: string;
-}): Promise<{ status: string; response: string; model?: string }> {
+}
+
+export async function sendTutorChat(payload: TutorChatPayload): Promise<{ status: string; response: string; model?: string }> {
   try {
     const res = await fetch(`${API_BASE}/api/v1/tutor/chat`, {
       method: 'POST',

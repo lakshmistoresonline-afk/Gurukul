@@ -197,6 +197,32 @@ export default function MasterComponent({ data }: MasterProps) {
                           </div>
                         )}
 
+                        {/* Match Following Columns */}
+                        {(q.column_a || q.pairs) && (
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-white border border-slate-200 rounded-2xl">
+                            <div>
+                              <h5 className="text-[11px] font-bold text-indigo-600 uppercase mb-2">Column A</h5>
+                              <ul className="space-y-1.5 text-xs text-slate-800 font-medium">
+                                {(q.column_a || (q.pairs || []).map((p: any) => p.a)).map((item: string, iIdx: number) => (
+                                  <li key={iIdx} className="p-2 bg-slate-50 border border-slate-100 rounded-xl">
+                                    {iIdx + 1}. {item}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div>
+                              <h5 className="text-[11px] font-bold text-indigo-600 uppercase mb-2">Column B</h5>
+                              <ul className="space-y-1.5 text-xs text-slate-800 font-medium">
+                                {(q.column_b || (q.pairs || []).map((p: any) => p.b)).map((item: string, iIdx: number) => (
+                                  <li key={iIdx} className="p-2 bg-slate-50 border border-slate-100 rounded-xl">
+                                    {String.fromCharCode(65 + iIdx)}. {item}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        )}
+
                         {/* True / False Options */}
                         {isTrueFalse && (
                           <div className="flex gap-3 pt-1">
@@ -223,7 +249,7 @@ export default function MasterComponent({ data }: MasterProps) {
                           </div>
                         )}
 
-                        {answer && !isTrueFalse && (
+                        {(answer || q.pairs) && !isTrueFalse && (
                           <div className="pt-2 border-t border-slate-200/60 mt-2">
                             <button
                               onClick={() => toggleAnswer(qKey)}
@@ -232,8 +258,16 @@ export default function MasterComponent({ data }: MasterProps) {
                               {isVisible ? 'Hide Answer ▴' : 'Show Answer ▾'}
                             </button>
                             {isVisible && (
-                              <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-medium">
-                                <strong>Correct Answer:</strong> {renderSafeText(answer)}
+                              <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-medium space-y-1">
+                                {answer && <div><strong>Correct Answer:</strong> {renderSafeText(answer)}</div>}
+                                {q.pairs && (
+                                  <div>
+                                    <strong>Matching Pairs:</strong>
+                                    {q.pairs.map((p: any, pIdx: number) => (
+                                      <div key={pIdx}>• {p.a} ➔ {p.b}</div>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
                             )}
                           </div>
