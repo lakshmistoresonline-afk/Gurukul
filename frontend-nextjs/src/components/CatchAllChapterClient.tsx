@@ -14,6 +14,7 @@ import {
 import { sendHybridTutorChat } from '@/lib/webLlmClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 import AudioReaderToolbar from '@/components/AudioReaderToolbar';
+import SelectedTextTutor from '@/components/SelectedTextTutor';
 import {
   recordChapterActivity,
   toggleBookmarkStore,
@@ -393,6 +394,15 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-4 sm:p-6 space-y-6">
+      {/* Selected-Text Ask AI Floating Popup */}
+      <SelectedTextTutor
+        grade={grade}
+        subject={subject}
+        book={book}
+        part={part}
+        unit={unit}
+        chapter_id={chapterId}
+      />
       {/* Sticky Compact Chapter Header */}
       <div className="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border border-slate-800 rounded-2xl p-5 shadow-2xl space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
