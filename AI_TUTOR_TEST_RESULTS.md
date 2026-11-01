@@ -1,8 +1,8 @@
-# GURUKUL AI — FIFTH-PASS AI TUTOR TEST RESULTS REPORT
+# GURUKUL AI — SEVENTH-PASS CURRICULUM GROUNDING TEST RESULTS REPORT
 
 **Date**: November 1, 2026  
 **Git Branch**: `feature/gurukul-production-remediation`  
-**HEAD Commit SHA**: `507b6820f`  
+**HEAD Commit SHA**: `92d879cf1`  
 
 ---
 
@@ -15,20 +15,16 @@
 
 2. **Backend Automated Pytest Suite**:
    - Command: `python -m pytest backend/tests/ -v`
-   - Result: **PASS** (145/145 test cases passed 100% in 5m 04s).
+   - Result: **PASS** (149/149 test cases passed 100% in 4m 45s).
 
-3. **AI Tutor Comprehensive Audit Test Suite**:
+3. **AI Tutor Cross-Subject Regression Test Suite**:
    - Command: `python -m pytest backend/tests/test_tutor_comprehensive_audit.py -v`
-   - Result: **PASS** (6/6 test cases passed 100%).
+   - Result: **PASS** (10/10 test cases passed 100%).
 
-4. **Curriculum Hierarchy API Test**:
-   - Endpoint: `GET /api/v1/curriculum/hierarchy`
-   - Result: **PASS** (HTTP 200 OK, returns 4 Class 5 subjects: English, Hindi, Mathematics, Science).
+4. **Photosynthesis Cross-Subject Resolution Scenario**:
+   - Active Selection: English (`G5-ENG-U01-C01 — Papa's Spectacles`)
+   - Question: *"Explain photosynthesis?"*
+   - Result: **PASS** (`mode: "NCERT_CROSS_SUBJECT"`, `resolved_subject: "science"`, `resolved_chapter_id: "G5-SCI-U01-C01"`). Zero attribution or reference to Papa's Spectacles or English.
 
-5. **Media Streaming API Test**:
-   - Endpoint: `GET /api/v1/curriculum/media/stream`
-   - Result: **PASS** (HTTP 200 OK for exact images and MP4 video lessons with Range support).
-
-6. **Responsive Viewport & Touch Verification**:
-   - Tested Viewports: 1920×1080, 1366×768, 768×1024, 390×844, 360×800.
-   - Result: **PASS** (Single column on mobile, 2x2 grid on desktop, touch targets >44px).
+5. **Protected Content & Immutability**:
+   - 100% of original source PDFs, images, videos, CSVs, and Class 6/7 content remain unchanged and fully preserved.
