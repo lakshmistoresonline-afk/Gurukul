@@ -9,6 +9,7 @@ from fastapi import APIRouter, HTTPException, Depends, Header
 from pydantic import BaseModel
 from typing import Optional, Dict, Any, List
 from ..core.curriculum_identity import CurriculumIdentity
+from ..core.curriculum_registry import CurriculumRegistry
 from ..core.processed_content_resolver import ProcessedContentResolver
 from ..core.config import GurukulConfig
 from ..security.auth_service import get_current_user, AuthenticatedUser
@@ -79,79 +80,83 @@ def get_chapter_media_assets(subject: str, chapter_id: str, grade: str = "5"):
 
     return match_img, match_vid
 
-def search_cross_subject_curriculum(question: str, grade: str = "5") -> Optional[Dict[str, Any]]:
+def retrieve_authoritative_ncert_evidence(
+    question: str,
+    grade: str = "5",
+    current_subject: str = "english",
+    current_chapter_id: str = "G5-ENG-U01-C01"
+) -> Optional[Dict[str, Any]]:
     """
-    Scans all source JSON files across Science, Mathematics, English, and Hindi
-    to find the exact matching NCERT chapter for cross-subject queries.
+    Authoritative Curriculum Retrieval & Evidence Passage Extraction.
+    1. Iterates over all valid indexed nodes in CurriculumRegistry for the requested grade.
+    2. Extracts actual text passages from ProcessedContentResolver (overview, notes, summary).
+    3. Evaluates lexical passage relevance against the student's question.
+    4. Validates retrieved node identity against CurriculumRegistry.
+    5. Returns exact source passage text, source file, subject, and chapter identity if score exceeds strict threshold.
     """
-    q_lower = question.lower().strip()
-    content_root = GurukulConfig.get_content_root()
-    grade_dir = content_root / f"Class {grade}"
-
-    if not grade_dir.exists():
-        return None
-
-    words = set(re.findall(r'\b[a-z]{3,}\b', q_lower))
+    q_words = set(re.findall(r'\b[a-z]{3,}\b', question.lower()))
     stop_words = {"what", "where", "when", "which", "who", "why", "how", "this", "that", "these", "those", "explain", "give", "tell", "about", "term", "simple", "class", "grade", "meaning", "definition"}
-    meaningful = words - stop_words
+    meaningful = q_words - stop_words
 
     if not meaningful:
         return None
 
+    index = CurriculumRegistry.get_index()
     best_match = None
     max_score = 0
 
-    for subj_folder in grade_dir.iterdir():
-        if not subj_folder.is_dir() or subj_folder.name in ["Images", "Videos", "ProcessedContent"]:
-            continue
-        subj_name = subj_folder.name.lower()
-
-        source_dir = subj_folder / "Source Files"
-        if not source_dir.exists():
+    for key, node in index.items():
+        if str(node.get("grade")) != str(grade):
             continue
 
-        json_files = list(source_dir.glob("*.json"))
-        for source_file in json_files:
-            try:
-                with open(source_file, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    chapters = data.get("chapters", [])
-                    if not isinstance(chapters, list):
-                        continue
+        subj = node.get("subject", "")
+        book = node.get("book", "")
+        part = node.get("part", "main")
+        unit = node.get("unit", "U01")
+        ch_id = node.get("chapter_id", "")
 
-                    for ch in chapters:
-                        ch_num = ch.get("chapterNumber") or ch.get("chapter_number", 1)
-                        ch_title = str(ch.get("chapterTitle") or ch.get("chapter_title", ""))
-                        summary = str(ch.get("core_summary", "") or ch.get("summary", ""))
+        try:
+            ident = CurriculumIdentity(
+                grade=str(grade),
+                subject=subj,
+                book=book,
+                part=part,
+                unit=unit,
+                chapter_id=ch_id,
+                content_type="overview"
+            )
+            content_data = ProcessedContentResolver.resolve_content(ident)
+        except Exception:
+            continue
 
-                        full_corpus = f"{ch_title} {summary} {json.dumps(ch, ensure_ascii=False)}".lower()
+        if not isinstance(content_data, dict):
+            continue
 
-                        # Subject Domain Priority Boosting
-                        domain_boost = 0
-                        if "science" in subj_name and any(w in q_lower for w in ["photosynthesis", "plant", "water cycle", "evaporation", "condensation", "river", "digestion", "food", "energy", "ecosystem"]):
-                            domain_boost = 15
-                        elif ("math" in subj_name or "mat" in subj_name) and any(w in q_lower for w in ["fraction", "numerator", "denominator", "addition", "subtraction", "geometry", "odometer", "perimeter", "area"]):
-                            domain_boost = 15
-                        elif "english" in subj_name and any(w in q_lower for w in ["spectacle", "gilli danda", "vocation", "bangles", "parrot", "scooter", "adverb", "preposition"]):
-                            domain_boost = 15
+        summary = str(content_data.get("core_summary") or content_data.get("summary") or content_data.get("overview") or "")
+        title = str(content_data.get("chapter_title") or content_data.get("chapterTitle") or "")
+        concepts = " ".join([str(c) for c in content_data.get("key_concepts", [])])
+        terms = " ".join([t.get("term", "") + " " + t.get("definition", "") for t in content_data.get("key_terms", []) if isinstance(t, dict)])
 
-                        score = sum(1 for w in meaningful if w in full_corpus) + domain_boost
+        full_passage = f"{title}. {summary} {concepts} {terms}"
+        corpus_words = set(re.findall(r'\b[a-z]{3,}\b', full_passage.lower()))
 
-                        if score > max_score and score >= 1:
-                            max_score = score
-                            subj_code = "SCI" if "science" in subj_name else "ENG" if "english" in subj_name else "HIN" if "hindi" in subj_name else "MAT"
-                            ch_id = f"G5-{subj_code}-U01-C{int(ch_num):02d}"
+        overlap = meaningful.intersection(corpus_words)
+        score = len(overlap)
 
-                            best_match = {
-                                "subject": subj_name,
-                                "chapter_number": ch_num,
-                                "chapter_id": ch_id,
-                                "chapter_title": ch_title or f"{subj_name.title()} Chapter {ch_num}",
-                                "summary": summary[:450] if summary else "Verified NCERT Class 5 Curriculum Passage",
-                                "score": score
-                            }
-            except Exception as e:
-                print(f"Error reading {source_file}: {e}")
+        if score > max_score and score >= 2: # Require at least 2 meaningful token overlaps
+            max_score = score
+            best_match = {
+                "grade": grade,
+                "subject": subj,
+                "book": book,
+                "part": part,
+                "unit": unit,
+                "chapter_id": ch_id,
+                "chapter_title": title,
+                "summary_passage": summary[:500],
+                "score": score,
+                "is_current_chapter": (subj.lower() == current_subject.lower() and ch_id.lower() == current_chapter_id.lower())
+            }
 
     return best_match
 
@@ -159,6 +164,7 @@ def evaluate_question_relevance_pipeline(
     question: str,
     subject: str,
     chapter_id: str,
+    grade: str = "5",
     chapter_data: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
     """
@@ -167,7 +173,7 @@ def evaluate_question_relevance_pipeline(
     1. Ambiguous/Short Query Filter -> CLARIFICATION_REQUIRED
     2. Explicit Active Chapter Triggers -> NCERT_CHAPTER
     3. Active Chapter Context Matching -> NCERT_CHAPTER
-    4. Cross-Subject Curriculum Search -> NCERT_CROSS_SUBJECT
+    4. Authoritative Cross-Subject Evidence Retrieval -> NCERT_CROSS_SUBJECT
     5. General Knowledge Fallback -> GENERAL_KNOWLEDGE
     """
     q_lower = question.lower().strip()
@@ -184,7 +190,7 @@ def evaluate_question_relevance_pipeline(
 
     # Stage 3: Active Chapter Context Matching
     if chapter_data and isinstance(chapter_data, dict):
-        summary = str(chapter_data.get("summary") or chapter_data.get("overview") or "").lower()
+        summary = str(chapter_data.get("summary") or chapter_data.get("overview") or chapter_data.get("core_summary") or "").lower()
         title = str(chapter_data.get("chapter_title") or "").lower()
         vocab_words = " ".join([v.get("word", "") for v in chapter_data.get("vocabulary", []) if isinstance(v, dict)]).lower()
 
@@ -197,18 +203,18 @@ def evaluate_question_relevance_pipeline(
 
         if meaningful_q and context_tokens:
             overlap = meaningful_q.intersection(context_tokens)
-            if len(overlap) >= 1:
+            if len(overlap) >= 2:
                 return {"mode": "NCERT_CHAPTER", "resolved_subject": subj_lower, "resolved_chapter": chapter_id}
 
-    # Stage 4: Cross-Subject Curriculum Search
-    cross_match = search_cross_subject_curriculum(question, "5")
-    if cross_match:
-        matched_subj = cross_match["subject"]
-        matched_ch_id = cross_match["chapter_id"]
+    # Stage 4: Authoritative Curriculum RAG Retrieval
+    evidence = retrieve_authoritative_ncert_evidence(question, grade, subj_lower, chapter_id)
+    if evidence:
+        matched_subj = evidence["subject"]
+        matched_ch_id = evidence["chapter_id"]
         if matched_subj == subj_lower and matched_ch_id.lower() == chapter_id.lower():
-            return {"mode": "NCERT_CHAPTER", "resolved_subject": subj_lower, "resolved_chapter": chapter_id, "cross_match": cross_match}
+            return {"mode": "NCERT_CHAPTER", "resolved_subject": subj_lower, "resolved_chapter": chapter_id, "evidence": evidence}
         else:
-            return {"mode": "NCERT_CROSS_SUBJECT", "resolved_subject": matched_subj, "resolved_chapter": matched_ch_id, "cross_match": cross_match}
+            return {"mode": "NCERT_CROSS_SUBJECT", "resolved_subject": matched_subj, "resolved_chapter": matched_ch_id, "evidence": evidence}
 
     # Stage 5: Default to GENERAL_KNOWLEDGE
     return {"mode": "GENERAL_KNOWLEDGE", "resolved_subject": subj_lower, "resolved_chapter": chapter_id}
@@ -244,12 +250,12 @@ async def tutor_chat(
     except Exception:
         content_data = None
 
-    # Classify Question Intent & Resolve Subject/Chapter
-    classification = evaluate_question_relevance_pipeline(req.question, canon_subj, ch_id, content_data if isinstance(content_data, dict) else None)
+    # Classify Question Intent & Resolve Subject/Chapter via Evidence Retrieval Pipeline
+    classification = evaluate_question_relevance_pipeline(req.question, canon_subj, ch_id, str(req.grade), content_data if isinstance(content_data, dict) else None)
     mode = classification["mode"]
     resolved_subj = classification.get("resolved_subject", canon_subj)
     resolved_ch_id = classification.get("resolved_chapter", ch_id)
-    cross_match = classification.get("cross_match")
+    evidence = classification.get("evidence")
 
     # Media Relevance Guard: Attach media ONLY when in NCERT_CHAPTER mode and exact match
     match_img, match_vid = get_chapter_media_assets(resolved_subj, resolved_ch_id, req.grade)
@@ -269,19 +275,19 @@ async def tutor_chat(
     elif req.action == "quiz":
         action_instruction = f"Generate a multiple-choice practice question based on this lesson for Grade {req.grade}."
 
-    context_str = json.dumps(content_data, ensure_ascii=False)[:3000] if content_data else ""
+    passage_text = evidence.get("summary_passage", "") if evidence else json.dumps(content_data, ensure_ascii=False)[:3000] if content_data else ""
 
     prompt = f"""
 You are an expert NCERT Class {req.grade} AI Tutor.
 Response Mode: {mode}
 Active Context: {canon_subj.upper()} ({ch_id})
 Resolved Target Subject: {resolved_subj.upper()} ({resolved_ch_id})
-Lesson Excerpt: {context_str}
+Retrieved Evidence Passage: {passage_text}
 
 Student Question: {req.question}
 Instruction: {action_instruction}
 
-If Mode is NCERT_CROSS_SUBJECT, explain the concept using the resolved {resolved_subj.upper()} curriculum context. Never state that this topic belongs to the active {canon_subj.upper()} chapter.
+If Mode is NCERT_CROSS_SUBJECT, explain the concept using the resolved {resolved_subj.upper()} curriculum passage. Never state that this topic belongs to the active {canon_subj.upper()} chapter.
 If Mode is GENERAL_KNOWLEDGE, explain the concept accurately in general 5th-grade terms without claiming it is from an NCERT textbook.
 If Mode is NCERT_CHAPTER, ground your answer in the active chapter context.
 Provide a clear, step-by-step, encouraging answer.
@@ -305,7 +311,7 @@ Provide a clear, step-by-step, encouraging answer.
                 "response": ai_text,
                 "resolved_subject": resolved_subj,
                 "resolved_chapter_id": resolved_ch_id,
-                "resolved_chapter_title": cross_match.get("chapter_title") if cross_match else None,
+                "resolved_chapter_title": evidence.get("chapter_title") if evidence else None,
                 "media": media_meta,
                 "is_ai_generated": True,
                 "uid": current_user.uid
@@ -313,8 +319,7 @@ Provide a clear, step-by-step, encouraging answer.
     except Exception:
         pass
 
-    # 3. Dynamic RAG Evidence Grounded Engine
-    q_lower = req.question.lower().strip()
+    # 3. High-Fidelity Grounded RAG Rule Engine
     detailed_answer = ""
 
     if mode == "CLARIFICATION_REQUIRED":
@@ -323,12 +328,12 @@ Provide a clear, step-by-step, encouraging answer.
             f"Could you please elaborate on your question? Let me know which specific topic in {canon_subj.upper()} ({ch_id}) you would like to explore!"
         )
 
-    elif mode == "NCERT_CROSS_SUBJECT" and cross_match:
-        summary_excerpt = cross_match.get("summary", "")
-        ch_title_match = cross_match.get("chapter_title", "")
+    elif mode == "NCERT_CROSS_SUBJECT" and evidence:
+        summary_excerpt = evidence.get("summary_passage", "")
+        ch_title_match = evidence.get("chapter_title", "")
         detailed_answer = (
             f"📚 **NCERT Class {req.grade} {resolved_subj.upper()} Explanation**\n"
-            f"*(Source: {resolved_subj.title()} Chapter {cross_match.get('chapter_number')} — {ch_title_match})*\n\n"
+            f"*(Source: {resolved_subj.title()} — {ch_title_match})*\n\n"
             f"**Core Concept**: {summary_excerpt}\n\n"
             f"Regarding your query ('{req.question}'): This concept is covered in NCERT Class {req.grade} {resolved_subj.upper()} ({ch_title_match})."
         )
@@ -366,7 +371,7 @@ Provide a clear, step-by-step, encouraging answer.
         "response": detailed_answer,
         "resolved_subject": resolved_subj,
         "resolved_chapter_id": resolved_ch_id,
-        "resolved_chapter_title": cross_match.get("chapter_title") if cross_match else None,
+        "resolved_chapter_title": evidence.get("chapter_title") if evidence else None,
         "media": media_meta,
         "is_ai_generated": False,
         "uid": current_user.uid
