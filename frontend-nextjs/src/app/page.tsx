@@ -69,7 +69,17 @@ export default function StudentDashboard() {
         setProgress(getStudentProgress('guest'));
       }
     });
-    return () => unsubscribe();
+
+    const handleGradeChanged = () => {
+      const prog = getStudentProgress('guest');
+      setProgress((prev) => ({ ...prev, selectedGrade: prog.selectedGrade || '5' }));
+    };
+
+    window.addEventListener('gradeChanged', handleGradeChanged);
+    return () => {
+      unsubscribe();
+      window.removeEventListener('gradeChanged', handleGradeChanged);
+    };
   }, []);
 
   useEffect(() => {
@@ -196,6 +206,7 @@ export default function StudentDashboard() {
     const updated = await saveSelectedGradePreference(newGrade, targetUid);
     setProgress(updated.state);
     setGradeModalOpen(false);
+    window.dispatchEvent(new Event('gradeChanged'));
   };
 
   // Real Student Profile & Goal Progress Calculation (Local Calendar Date)
