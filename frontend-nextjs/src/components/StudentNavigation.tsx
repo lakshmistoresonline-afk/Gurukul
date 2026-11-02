@@ -18,8 +18,10 @@ import {
   LogOut,
   User as UserIcon,
   Menu,
-  X
+  X,
+  GraduationCap
 } from 'lucide-react';
+import { getStudentProgress, saveSelectedGradePreference } from '../lib/studentProgressStore';
 
 export const NAV_ITEMS = [
   { label: 'My Learning', href: '/', icon: LayoutDashboard },
@@ -35,13 +37,22 @@ export const NAV_ITEMS = [
 export function StudentNavigation() {
   const pathname = usePathname();
   const [currentUser, setCurrentUser] = useState<User | null>(null);
+  const [selectedGrade, setSelectedGrade] = useState<string>('5');
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
+      const prog = getStudentProgress(user?.uid || 'guest');
+      setSelectedGrade(prog.selectedGrade || '5');
     });
     return () => unsubscribe();
   }, []);
+
+  const handleGradeSelect = async (g: string) => {
+    setSelectedGrade(g);
+    await saveSelectedGradePreference(g, currentUser?.uid || 'guest');
+    window.dispatchEvent(new Event('gradeChanged'));
+  };
 
   const handleSignOut = async () => {
     try {
@@ -54,20 +65,46 @@ export function StudentNavigation() {
   return (
     <aside className="w-64 bg-[#244B91] text-white flex flex-col h-screen sticky top-0 z-40 hidden md:flex shadow-2xl shrink-0">
       {/* Brand Header */}
-      <div className="p-6 border-b border-white/10 flex items-center gap-3">
-        <div className="w-10 h-10 rounded-2xl bg-white/15 backdrop-blur-md flex items-center justify-center text-white font-black text-xl shadow-inner border border-white/20">
-          <BookOpen className="w-6 h-6 text-white" />
+      <div className="p-5 border-b border-white/10 flex items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-2xl bg-white/15 backdrop-blur-md flex items-center justify-center text-white font-black text-lg border border-white/20">
+            <BookOpen className="w-5 h-5 text-white" />
+          </div>
+          <div>
+            <h1 className="font-black text-white tracking-wide text-base flex items-center gap-1.5">
+              Gurukul <span className="text-xs px-1.5 py-0.5 rounded-full bg-indigo-400/30 text-indigo-100 font-mono border border-indigo-300/30">AI</span>
+            </h1>
+            <p className="text-[10px] text-blue-200/80 font-medium">NCERT Digital Companion</p>
+          </div>
         </div>
-        <div>
-          <h1 className="font-black text-white tracking-wide text-lg flex items-center gap-1.5">
-            Gurukul <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-400/30 text-indigo-100 font-mono border border-indigo-300/30">AI</span>
-          </h1>
-          <p className="text-[11px] text-blue-200/80 font-medium">NCERT Digital Companion</p>
+      </div>
+
+      {/* Global Grade Selector Toggle */}
+      <div className="px-4 py-3 border-b border-white/10 bg-black/10 space-y-1.5">
+        <div className="flex items-center justify-between text-[11px] text-blue-200/90 font-bold uppercase tracking-wider">
+          <span className="flex items-center gap-1"><GraduationCap className="w-3.5 h-3.5 text-teal-300" /> Active Class:</span>
+          <span className="text-teal-300 font-mono">Class {selectedGrade}</span>
+        </div>
+
+        <div className="grid grid-cols-3 gap-1 bg-black/20 p-1 rounded-xl border border-white/10">
+          {['5', '6', '7'].map((g) => (
+            <button
+              key={g}
+              onClick={() => handleGradeSelect(g)}
+              className={`py-1 rounded-lg text-xs font-black transition-all ${
+                selectedGrade === g
+                  ? 'bg-teal-500 text-white shadow-sm'
+                  : 'text-blue-100/70 hover:text-white hover:bg-white/10'
+              }`}
+            >
+              Class {g}
+            </button>
+          ))}
         </div>
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex-1 p-4 space-y-1.5 overflow-y-auto">
+      <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;
           let isActive = false;
@@ -84,13 +121,13 @@ export function StudentNavigation() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all ${
+              className={`flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all ${
                 isActive
-                  ? 'bg-white/20 text-white shadow-lg border border-white/30 backdrop-blur-md'
+                  ? 'bg-white/20 text-white shadow-md border border-white/30 backdrop-blur-md'
                   : 'text-blue-100/80 hover:bg-white/10 hover:text-white'
               }`}
             >
-              <Icon className={`w-5 h-5 ${isActive ? 'text-teal-300' : 'text-blue-200/80'}`} />
+              <Icon className={`w-4 h-4 ${isActive ? 'text-teal-300' : 'text-blue-200/80'}`} />
               <span>{item.label}</span>
             </Link>
           );
@@ -98,10 +135,10 @@ export function StudentNavigation() {
       </nav>
 
       {/* Student Profile & Auth Status */}
-      <div className="p-4 border-t border-white/10 bg-black/10">
+      <div className="p-3 border-t border-white/10 bg-black/10">
         {currentUser ? (
-          <div className="p-3 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-between gap-2 backdrop-blur-md">
-            <div className="flex items-center gap-2.5 overflow-hidden">
+          <div className="p-2.5 rounded-xl bg-white/10 border border-white/15 flex items-center justify-between gap-2 backdrop-blur-md">
+            <div className="flex items-center gap-2 overflow-hidden">
               <div className="w-8 h-8 rounded-full bg-teal-400/20 text-teal-200 flex items-center justify-center shrink-0 border border-teal-300/30">
                 <UserIcon className="w-4 h-4" />
               </div>
@@ -121,7 +158,7 @@ export function StudentNavigation() {
         ) : (
           <div className="flex items-center justify-between text-xs text-blue-100/90 p-2 font-medium">
             <span className="flex items-center gap-1.5"><Sparkles className="w-3.5 h-3.5 text-amber-300" /> Guest Learner</span>
-            <span className="text-[10px] px-2 py-0.5 rounded-full bg-teal-400/20 text-teal-200 font-mono font-bold border border-teal-300/30">Active</span>
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-teal-400/20 text-teal-200 font-mono font-bold border border-teal-300/30">Class {selectedGrade}</span>
           </div>
         )}
       </div>
@@ -132,6 +169,18 @@ export function StudentNavigation() {
 export function MobileBottomNavigation() {
   const pathname = usePathname();
   const [moreOpen, setMoreOpen] = useState(false);
+  const [selectedGrade, setSelectedGrade] = useState<string>('5');
+
+  useEffect(() => {
+    const prog = getStudentProgress('guest');
+    setSelectedGrade(prog.selectedGrade || '5');
+  }, []);
+
+  const handleGradeSelect = async (g: string) => {
+    setSelectedGrade(g);
+    await saveSelectedGradePreference(g, 'guest');
+    window.dispatchEvent(new Event('gradeChanged'));
+  };
 
   return (
     <>
@@ -176,13 +225,33 @@ export function MobileBottomNavigation() {
         <div className="md:hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex flex-col justify-end">
           <div className="bg-[#244B91] border-t border-white/20 rounded-t-3xl p-6 space-y-4 max-h-[80vh] overflow-y-auto text-white shadow-2xl">
             <div className="flex items-center justify-between pb-3 border-b border-white/15">
-              <h3 className="font-bold text-white text-base">All Navigation Destinations</h3>
+              <h3 className="font-bold text-white text-base">Select Class &amp; Destination</h3>
               <button onClick={() => setMoreOpen(false)} className="text-blue-200 hover:text-white">
                 <X className="w-5 h-5" />
               </button>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            {/* Class Selector */}
+            <div className="space-y-1">
+              <label className="text-xs font-bold text-blue-200">Active Class:</label>
+              <div className="grid grid-cols-3 gap-2">
+                {['5', '6', '7'].map((g) => (
+                  <button
+                    key={g}
+                    onClick={() => handleGradeSelect(g)}
+                    className={`py-2 rounded-xl text-xs font-bold transition-all border ${
+                      selectedGrade === g
+                        ? 'bg-teal-500 text-white border-teal-300'
+                        : 'bg-white/10 text-blue-100 border-white/10'
+                    }`}
+                  >
+                    Class {g}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 pt-2">
               {NAV_ITEMS.map((item) => {
                 const Icon = item.icon;
                 return (

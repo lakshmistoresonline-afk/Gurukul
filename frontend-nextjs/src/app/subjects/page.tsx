@@ -2,14 +2,16 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { BookOpen, ArrowRight, CheckCircle, Sparkles, ChevronRight, Layers, Search, AlertCircle, Loader2 } from 'lucide-react';
+import { BookOpen, ArrowRight, CheckCircle, Sparkles, ChevronRight, Layers, Search, AlertCircle, Loader2, GraduationCap } from 'lucide-react';
 import { getCurriculumHierarchy, buildCurriculumUrl } from '../../lib/curriculumClient';
+import { getStudentProgress, saveSelectedGradePreference } from '../../lib/studentProgressStore';
 
 export default function SubjectsPage() {
   const [hierarchy, setHierarchy] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [hierarchyError, setHierarchyError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [selectedGrade, setSelectedGrade] = useState<string>('5');
 
   useEffect(() => {
     async function loadData() {
@@ -23,6 +25,9 @@ export default function SubjectsPage() {
           setHierarchy([]);
           setHierarchyError('Curriculum hierarchy data is currently unavailable.');
         }
+
+        const prog = getStudentProgress('guest');
+        setSelectedGrade(prog.selectedGrade || '5');
       } catch (e) {
         console.error('Failed to load hierarchy on subjects page:', e);
         setHierarchyError('Failed to connect to authoritative curriculum registry.');
@@ -30,41 +35,77 @@ export default function SubjectsPage() {
         setLoading(false);
       }
     }
+
     loadData();
+
+    const handleGradeChanged = () => {
+      const prog = getStudentProgress('guest');
+      setSelectedGrade(prog.selectedGrade || '5');
+    };
+
+    window.addEventListener('gradeChanged', handleGradeChanged);
+    return () => window.removeEventListener('gradeChanged', handleGradeChanged);
   }, []);
 
-  const class5Data = hierarchy.find((item: any) => String(item.grade) === '5');
-  const rawSubjects = class5Data?.subjects || [];
+  const handleGradeSelect = async (g: string) => {
+    setSelectedGrade(g);
+    await saveSelectedGradePreference(g, 'guest');
+  };
+
+  const selectedGradeData = hierarchy.find((item: any) => String(item.grade) === String(selectedGrade));
+  const rawSubjects = selectedGradeData?.subjects || [];
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
-      {/* Header & Search */}
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-bold border border-teal-300 mb-2">
-            <Sparkles className="w-3.5 h-3.5 text-amber-600" /> NCERT Class 5 Authoritative Curriculum
+      {/* Header & Class Switcher */}
+      <div className="space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-bold border border-teal-300 mb-2">
+              <Sparkles className="w-3.5 h-3.5 text-amber-600" /> NCERT Authoritative Curriculum
+            </div>
+            <h1 className="text-3xl font-black text-slate-900">Subject Explorer — Class {selectedGrade}</h1>
+            <p className="text-slate-600 text-sm mt-1 font-medium">Browse the authoritative curriculum hierarchy for Class {selectedGrade}. Select any chapter below to enter its workspace directly.</p>
           </div>
-          <h1 className="text-3xl font-black text-slate-900">Class 5 Subject Explorer</h1>
-          <p className="text-slate-600 text-sm mt-1 font-medium">Select any chapter below to enter its workspace directly or launch Chapter 1 of the subject.</p>
+
+          {/* Search / Filter Chapters */}
+          <div className="relative w-full sm:w-72">
+            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search chapters or topics..."
+              className="w-full pl-10 pr-4 py-2 rounded-2xl bg-white border border-slate-200 text-xs text-slate-900 placeholder-slate-400 font-medium focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-sm"
+            />
+          </div>
         </div>
 
-        {/* Search / Filter Chapters */}
-        <div className="relative w-full sm:w-72">
-          <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search chapters or topics..."
-            className="w-full pl-10 pr-4 py-2 rounded-2xl bg-white border border-slate-200 text-xs text-slate-900 placeholder-slate-400 font-medium focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-sm"
-          />
+        {/* Class Switcher Toggle Bar */}
+        <div className="flex items-center gap-3 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm w-fit">
+          <span className="text-xs font-bold text-slate-600 px-2 flex items-center gap-1">
+            <GraduationCap className="w-4 h-4 text-teal-600" /> Select Class:
+          </span>
+          {['5', '6', '7'].map((g) => (
+            <button
+              key={g}
+              onClick={() => handleGradeSelect(g)}
+              className={`px-4 py-1.5 rounded-xl text-xs font-black transition-all ${
+                selectedGrade === g
+                  ? 'bg-teal-600 text-white shadow-sm'
+                  : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+              }`}
+            >
+              Class {g}
+            </button>
+          ))}
         </div>
       </div>
 
       {loading && (
         <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex items-center justify-center gap-3">
           <Loader2 className="w-6 h-6 animate-spin text-teal-600" />
-          <span className="text-xs font-bold">Loading curriculum hierarchy...</span>
+          <span className="text-xs font-bold">Loading Class {selectedGrade} curriculum hierarchy...</span>
         </div>
       )}
 
@@ -78,7 +119,7 @@ export default function SubjectsPage() {
 
       {!loading && !hierarchyError && rawSubjects.length === 0 && (
         <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm">
-          <p className="text-xs font-bold">No subjects currently available in Class 5 hierarchy.</p>
+          <p className="text-xs font-bold">No subjects currently available for Class {selectedGrade} hierarchy.</p>
         </div>
       )}
 
@@ -101,7 +142,7 @@ export default function SubjectsPage() {
 
                 (unitObj.chapters || []).forEach((chObj: any) => {
                   const chItem = {
-                    grade: '5',
+                    grade: String(selectedGrade),
                     subject: canonSubj,
                     book: bookId,
                     part: partId,
@@ -137,7 +178,7 @@ export default function SubjectsPage() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <h2 className="text-2xl font-black text-slate-900 capitalize flex items-center gap-2">
-                      <BookOpen className="w-6 h-6 text-teal-600" /> Class 5 {displayName}
+                      <BookOpen className="w-6 h-6 text-teal-600" /> Class {selectedGrade} {displayName}
                     </h2>
                     <span className="text-xs px-3 py-1 rounded-full bg-slate-100 text-slate-800 font-mono font-bold border border-slate-200">
                       {allChapters.length} Chapters
