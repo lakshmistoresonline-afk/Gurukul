@@ -22,6 +22,7 @@ import {
   GraduationCap
 } from 'lucide-react';
 import { getStudentProgress, saveSelectedGradePreference } from '../lib/studentProgressStore';
+import { getCurriculumHierarchy } from '../lib/curriculumClient';
 
 export const NAV_ITEMS = [
   { label: 'My Learning', href: '/', icon: LayoutDashboard },
@@ -38,11 +39,28 @@ export function StudentNavigation() {
   const pathname = usePathname();
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
+  const [availableGrades, setAvailableGrades] = useState<string[]>(['5', '6', '7']);
+
+  useEffect(() => {
+    async function loadHierarchyGrades() {
+      try {
+        const hier = await getCurriculumHierarchy();
+        if (hier && hier.length > 0) {
+          const grades = hier.map((h: any) => String(h.grade)).sort();
+          if (grades.length > 0) setAvailableGrades(grades);
+        }
+      } catch (e) {
+        console.warn('Failed to load hierarchy grades for navigation:', e);
+      }
+    }
+    loadHierarchyGrades();
+  }, []);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
-      const prog = getStudentProgress(user?.uid || 'guest');
+      const targetUid = user ? user.uid : 'guest';
+      const prog = getStudentProgress(targetUid);
       setSelectedGrade(prog.selectedGrade || '5');
     });
     return () => unsubscribe();
@@ -50,8 +68,9 @@ export function StudentNavigation() {
 
   const handleGradeSelect = async (g: string) => {
     setSelectedGrade(g);
-    await saveSelectedGradePreference(g, currentUser?.uid || 'guest');
-    window.dispatchEvent(new Event('gradeChanged'));
+    const targetUid = currentUser ? currentUser.uid : 'guest';
+    await saveSelectedGradePreference(g, targetUid);
+    window.dispatchEvent(new CustomEvent('gradeChanged', { detail: { uid: targetUid, grade: g } }));
   };
 
   const handleSignOut = async () => {
@@ -87,11 +106,11 @@ export function StudentNavigation() {
         </div>
 
         <div className="grid grid-cols-3 gap-1 bg-black/20 p-1 rounded-xl border border-white/10">
-          {['5', '6', '7'].map((g) => (
+          {availableGrades.map((g) => (
             <button
               key={g}
               onClick={() => handleGradeSelect(g)}
-              className={`py-1 rounded-lg text-xs font-black transition-all ${
+              className={`py-1 rounded-lg text-xs font-black transition-all cursor-pointer ${
                 selectedGrade === g
                   ? 'bg-teal-500 text-white shadow-sm'
                   : 'text-blue-100/70 hover:text-white hover:bg-white/10'
@@ -121,6 +140,7 @@ export function StudentNavigation() {
             <Link
               key={item.href}
               href={item.href}
+              aria-current={isActive ? 'page' : undefined}
               className={`flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all ${
                 isActive
                   ? 'bg-white/20 text-white shadow-md border border-white/30 backdrop-blur-md'
@@ -143,14 +163,15 @@ export function StudentNavigation() {
                 <UserIcon className="w-4 h-4" />
               </div>
               <div className="overflow-hidden">
-                <p className="text-xs font-bold text-white truncate">{currentUser.displayName || currentUser.email?.split('@')[0] || 'Student'}</p>
+                <p className="text-xs font-bold text-white truncate">{currentUser.displayName || currentUser.email?.split('@')[0] || 'Learner'}</p>
                 <p className="text-[10px] text-blue-200/80 truncate">{currentUser.email}</p>
               </div>
             </div>
             <button
               onClick={handleSignOut}
               title="Sign Out"
-              className="p-1.5 rounded-lg text-blue-200 hover:text-rose-300 hover:bg-white/10 transition-all shrink-0"
+              aria-label="Sign Out"
+              className="p-1.5 rounded-lg text-blue-200 hover:text-rose-300 hover:bg-white/10 transition-all shrink-0 cursor-pointer"
             >
               <LogOut className="w-4 h-4" />
             </button>
@@ -168,18 +189,35 @@ export function StudentNavigation() {
 
 export function MobileBottomNavigation() {
   const pathname = usePathname();
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [moreOpen, setMoreOpen] = useState(false);
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
+  const [availableGrades, setAvailableGrades] = useState<string[]>(['5', '6', '7']);
 
   useEffect(() => {
-    const prog = getStudentProgress('guest');
-    setSelectedGrade(prog.selectedGrade || '5');
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      setCurrentUser(user);
+      const targetUid = user ? user.uid : 'guest';
+      const prog = getStudentProgress(targetUid);
+      setSelectedGrade(prog.selectedGrade || '5');
+    });
+    return () => unsubscribe();
   }, []);
 
   const handleGradeSelect = async (g: string) => {
     setSelectedGrade(g);
-    await saveSelectedGradePreference(g, 'guest');
-    window.dispatchEvent(new Event('gradeChanged'));
+    const targetUid = currentUser ? currentUser.uid : 'guest';
+    await saveSelectedGradePreference(g, targetUid);
+    window.dispatchEvent(new CustomEvent('gradeChanged', { detail: { uid: targetUid, grade: g } }));
+  };
+
+  const handleSignOut = async () => {
+    try {
+      await signOut(auth);
+      setMoreOpen(false);
+    } catch (e) {
+      console.error('Failed to sign out:', e);
+    }
   };
 
   return (
@@ -201,6 +239,7 @@ export function MobileBottomNavigation() {
             <Link
               key={item.href}
               href={item.href}
+              aria-current={isActive ? 'page' : undefined}
               className={`flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-[10px] font-bold ${
                 isActive ? 'text-teal-300 bg-white/15' : 'text-blue-100/80'
               }`}
@@ -213,7 +252,8 @@ export function MobileBottomNavigation() {
 
         <button
           onClick={() => setMoreOpen(!moreOpen)}
-          className="flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-[10px] font-bold text-blue-100/80 hover:text-white"
+          aria-label="More Navigation Options"
+          className="flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-[10px] font-bold text-blue-100/80 hover:text-white cursor-pointer"
         >
           <Menu className="w-5 h-5" />
           <span>More</span>
@@ -225,21 +265,24 @@ export function MobileBottomNavigation() {
         <div className="md:hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex flex-col justify-end">
           <div className="bg-[#244B91] border-t border-white/20 rounded-t-3xl p-6 space-y-4 max-h-[80vh] overflow-y-auto text-white shadow-2xl">
             <div className="flex items-center justify-between pb-3 border-b border-white/15">
-              <h3 className="font-bold text-white text-base">Select Class &amp; Destination</h3>
-              <button onClick={() => setMoreOpen(false)} className="text-blue-200 hover:text-white">
+              <div className="flex items-center gap-2">
+                <UserIcon className="w-4 h-4 text-teal-300" />
+                <span className="text-xs font-bold">{currentUser ? (currentUser.displayName || currentUser.email) : 'Guest Mode'}</span>
+              </div>
+              <button onClick={() => setMoreOpen(false)} aria-label="Close menu" className="text-blue-200 hover:text-white cursor-pointer">
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             {/* Class Selector */}
             <div className="space-y-1">
-              <label className="text-xs font-bold text-blue-200">Active Class:</label>
+              <label className="text-xs font-bold text-blue-200">Select Class:</label>
               <div className="grid grid-cols-3 gap-2">
-                {['5', '6', '7'].map((g) => (
+                {availableGrades.map((g) => (
                   <button
                     key={g}
                     onClick={() => handleGradeSelect(g)}
-                    className={`py-2 rounded-xl text-xs font-bold transition-all border ${
+                    className={`py-2 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
                       selectedGrade === g
                         ? 'bg-teal-500 text-white border-teal-300'
                         : 'bg-white/10 text-blue-100 border-white/10'
@@ -267,6 +310,15 @@ export function MobileBottomNavigation() {
                 );
               })}
             </div>
+
+            {currentUser && (
+              <button
+                onClick={handleSignOut}
+                className="w-full mt-2 p-3 rounded-2xl bg-rose-500/20 border border-rose-400/30 text-rose-200 text-xs font-bold flex items-center justify-center gap-2"
+              >
+                <LogOut className="w-4 h-4" /> Sign Out
+              </button>
+            )}
           </div>
         </div>
       )}
