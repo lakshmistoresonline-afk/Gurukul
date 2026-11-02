@@ -7,26 +7,17 @@ import { auth } from '../lib/firebase';
 import {
   BookOpen,
   Sparkles,
-  Flame,
-  Award,
   ArrowRight,
-  PlayCircle,
-  BrainCircuit,
   Compass,
-  CheckCircle2,
-  Clock,
   Target,
-  Video,
-  Image as ImageIcon,
   Zap,
-  HelpCircle,
   RotateCw,
-  MapPin,
-  Star,
-  CheckSquare,
-  AlertCircle
+  HelpCircle,
+  AlertCircle,
+  Loader2,
+  Bookmark
 } from 'lucide-react';
-import { getCurriculumHierarchy, buildCurriculumUrl } from '../lib/curriculumClient';
+import { getCurriculumHierarchy, buildCurriculumUrl, CurriculumApiClient } from '../lib/curriculumClient';
 import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../lib/studentProgressStore';
 
 export default function StudentDashboard() {
@@ -46,17 +37,11 @@ export default function StudentDashboard() {
     eventsLedger: []
   });
 
-  // Daily Quick Flashcard State
-  const [flashcardFlipped, setFlashcardFlipped] = useState(false);
-  const [flashcardIdx, setFlashcardIdx] = useState(0);
-
-  const sampleFlashcards = [
-    { word: 'Spectacles', meaning: 'Eyeglasses used to assist and correct vision.', subject: 'English' },
-    { word: 'Amphibian', meaning: 'Cold-blooded animal living both on land and in water.', subject: 'Science' },
-    { word: 'Metamorphosis', meaning: 'Biological process of tadpoles transforming into adult frogs.', subject: 'Science' },
-    { word: 'Dribble', meaning: 'Maneuvering a hockey ball with short, controlled stick taps.', subject: 'English' },
-    { word: 'Tanka', meaning: 'Traditional underground rainwater harvesting cistern in Rajasthan.', subject: 'English' }
-  ];
+  // Dynamic Real Flashcards State
+  const [realFlashcards, setRealFlashcards] = useState<any[]>([]);
+  const [loadingFlashcards, setLoadingFlashcards] = useState<boolean>(false);
+  const [flashcardFlipped, setFlashcardFlipped] = useState<boolean>(false);
+  const [flashcardIdx, setFlashcardIdx] = useState<number>(0);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
@@ -93,411 +78,306 @@ export default function StudentDashboard() {
     loadData();
   }, []);
 
-  // Filter Class 5 hierarchy node
-  const class5Data = hierarchy.find((item: any) => String(item.grade) === '5');
-  const rawSubjects = class5Data?.subjects || [];
+  // Filter grade data from hierarchy
+  const currentGrade = currentUser ? '5' : '5';
+  const gradeData = hierarchy.find((item: any) => String(item.grade) === currentGrade);
+  const rawSubjects = gradeData?.subjects || [];
 
-  const realmThemes: Record<string, { realm: string; tagline: string; icon: string; border: string; bg: string; badge: string }> = {
-    english: {
-      realm: '🌴 Santoor Island',
-      tagline: 'Coastal Storybook & Language Mastery',
-      icon: '🌊',
-      border: 'border-blue-500/40 hover:border-blue-400',
-      bg: 'from-blue-950/80 via-slate-900 to-indigo-950',
-      badge: 'bg-blue-500/20 text-blue-300 border-blue-500/40'
-    },
-    hindi: {
-      realm: '🌺 Veena Realm',
-      tagline: 'भाषा, कविता, कहानी एवं व्याकरण',
-      icon: '🪕',
-      border: 'border-amber-500/40 hover:border-amber-400',
-      bg: 'from-amber-950/80 via-slate-900 to-orange-950',
-      badge: 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-    },
-    maths: {
-      realm: '📐 Maths Mela Kingdom',
-      tagline: 'Numbers, Shapes, Fractions & Puzzles',
-      icon: '🏰',
-      border: 'border-purple-500/40 hover:border-purple-400',
-      bg: 'from-purple-950/80 via-slate-900 to-violet-950',
-      badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40'
-    },
-    mathematics: {
-      realm: '📐 Maths Mela Kingdom',
-      tagline: 'Numbers, Shapes, Fractions & Puzzles',
-      icon: '🏰',
-      border: 'border-purple-500/40 hover:border-purple-400',
-      bg: 'from-purple-950/80 via-slate-900 to-violet-950',
-      badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40'
-    },
-    science: {
-      realm: '🧪 Wondrous World Lab',
-      tagline: 'Ecosystems, Animals & Experiments',
-      icon: '🌳',
-      border: 'border-emerald-500/40 hover:border-emerald-400',
-      bg: 'from-emerald-950/80 via-slate-900 to-teal-950',
-      badge: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
+  // Validate lastActivity against hierarchy
+  const lastAct = progress.lastActivity;
+  let isValidLastActivity = false;
+  let continueUrl = '/subjects';
+  let continueSubjectTitle = '';
+  let continueChapterTitle = '';
+
+  if (lastAct && lastAct.subject && lastAct.chapter_id && rawSubjects.length > 0) {
+    const subjMatch = rawSubjects.find((s: any) =>
+      s.subject?.toLowerCase() === lastAct.subject.toLowerCase() ||
+      s.canonical_subject?.toLowerCase() === lastAct.subject.toLowerCase()
+    );
+    if (subjMatch) {
+      let foundCh: any = null;
+      (subjMatch.books || []).forEach((b: any) => {
+        (b.units || []).forEach((u: any) => {
+          const ch = (u.chapters || []).find((c: any) => c.chapter_id === lastAct.chapter_id);
+          if (ch) foundCh = ch;
+        });
+      });
+
+      if (foundCh) {
+        isValidLastActivity = true;
+        continueSubjectTitle = subjMatch.subject || lastAct.subject;
+        continueChapterTitle = foundCh.chapter_title || foundCh.chapter_id;
+        continueUrl = buildCurriculumUrl({
+          grade: String(lastAct.grade || currentGrade),
+          subject: lastAct.subject,
+          book: lastAct.book || 'main',
+          part: lastAct.part || 'main',
+          unit: lastAct.unit || 'U01',
+          chapter_id: lastAct.chapter_id
+        });
+      }
     }
-  };
+  }
 
-  const processedSubjects = rawSubjects.map((s: any) => {
-    const canonicalName = s.canonical_subject || s.subject.toLowerCase();
-    const books = s.books || [];
-    let chapterCount = 0;
-    let firstChapterId = '';
-    let firstChapterTitle = '';
+  // Load Real Flashcards dynamically for active chapter
+  useEffect(() => {
+    async function loadRealFlashcards() {
+      if (!isValidLastActivity || !lastAct) {
+        setRealFlashcards([]);
+        return;
+      }
+      try {
+        setLoadingFlashcards(true);
+        const res = await CurriculumApiClient.fetchContent({
+          grade: String(lastAct.grade || currentGrade),
+          subject: lastAct.subject,
+          book: lastAct.book || 'main',
+          part: lastAct.part || 'main',
+          unit: lastAct.unit || 'U01',
+          chapter_id: lastAct.chapter_id,
+          content_type: 'flashcards'
+        });
+        const cards = Array.isArray(res.data) ? res.data : res.data?.flashcards || [];
+        setRealFlashcards(cards);
+        setFlashcardIdx(0);
+        setFlashcardFlipped(false);
+      } catch (e) {
+        setRealFlashcards([]);
+      } finally {
+        setLoadingFlashcards(false);
+      }
+    }
+    loadRealFlashcards();
+  }, [isValidLastActivity, lastAct, currentGrade]);
 
-    books.forEach((b: any) => {
-      (b.units || []).forEach((u: any) => {
-        const chs = u.chapters || [];
-        chapterCount += chs.length;
-        if (chs.length > 0 && !firstChapterId) {
-          firstChapterId = chs[0].chapter_id;
-          firstChapterTitle = chs[0].chapter_title || chs[0].chapter_id;
-        }
-      });
-    });
+  // Real Student Profile & Goal Progress Calculation (Local Calendar Date)
+  const studentName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Learner';
+  const todayLocalDateStr = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD local timezone
+  const todayEventsCount = (progress.eventsLedger || []).filter((e: any) => {
+    if (!e.timestamp) return false;
+    const eventLocalDateStr = new Date(e.timestamp).toLocaleDateString('en-CA');
+    return eventLocalDateStr === todayLocalDateStr;
+  }).length;
 
-    const completedInSubj = progress.completedChapters.filter((id: string) =>
-      id.toLowerCase().includes(canonicalName.slice(0, 3))
-    ).length;
-
-    const theme = realmThemes[canonicalName] || realmThemes.english;
-
-    return {
-      name: s.subject,
-      canonical: canonicalName,
-      totalChapters: chapterCount,
-      completedChapters: completedInSubj,
-      firstChapterId: firstChapterId || `G5-${canonicalName.slice(0, 3).toUpperCase()}-U01-C01`,
-      firstChapterTitle: firstChapterTitle || `${s.subject} Chapter 1`,
-      bookId: books[0]?.book_id || canonicalName,
-      part: books[0]?.part || 'main',
-      theme
-    };
-  });
-
-  const totalClass5Chapters = processedSubjects.reduce((acc: number, s: any) => acc + s.totalChapters, 0);
-
-  const quizAccuracy = progress.quizScores.length > 0
-    ? Math.round(progress.quizScores.reduce((acc: number, q: any) => acc + (q.score / q.total) * 100, 0) / progress.quizScores.length)
-    : 0;
-
-  // Event-backed Gamified XP Calculation (F-005 Fix)
-  const ledgerXp = (progress.eventsLedger || []).reduce((acc, ev) => acc + (ev.xp_awarded || 0), 0);
-  const totalXp = (progress.completedChapters.length * 100) + (progress.quizScores.length * 50) + (progress.streakDays * 20) + ledgerXp;
-  const currentLevel = Math.floor(totalXp / 300) + 1;
-  const xpInCurrentLevel = totalXp % 300;
-
-  // Verified Resume Route (F-004 Fix)
-  const resumeActivity = progress.lastActivity;
-  const continueUrl = resumeActivity && resumeActivity.chapter_id
-    ? buildCurriculumUrl({
-        grade: String(resumeActivity.grade || '5'),
-        subject: resumeActivity.subject,
-        book: resumeActivity.book,
-        part: resumeActivity.part,
-        unit: resumeActivity.unit,
-        chapter_id: resumeActivity.chapter_id
-      })
-    : buildCurriculumUrl({
-        grade: '5',
-        subject: 'english',
-        book: 'english',
-        part: 'main',
-        unit: 'U01',
-        chapter_id: 'G5-ENG-U01-C01'
-      });
-
-  const studentName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Student';
-  const currentCard = sampleFlashcards[flashcardIdx];
+  const currentCard = realFlashcards.length > 0 ? realFlashcards[flashcardIdx] : null;
 
   return (
-    <div className="p-6 max-w-7xl mx-auto space-y-8">
-      {/* Student Welcome & Gamified Level Banner */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-teal-900/60 via-indigo-950 to-slate-900 border border-teal-500/30 p-8 shadow-2xl">
-        <div className="relative z-10 space-y-4">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 text-xs font-semibold border border-teal-500/30">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Class 5 Gamified Learning World
-            </div>
+    <div className="p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
+      {/* Student Welcome Banner */}
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-sky-100 via-teal-50 to-indigo-50 border border-sky-200/80 p-8 shadow-sm">
+        <div className="relative z-10 space-y-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white text-teal-800 text-xs font-bold border border-teal-200 shadow-sm">
+            <Compass className="w-3.5 h-3.5 text-teal-600" /> Class {currentGrade}
+          </div>
 
-            {/* Level & XP Badge */}
-            <div className="flex items-center gap-2 bg-slate-900/80 px-4 py-1.5 rounded-full border border-amber-500/40 text-xs font-bold text-amber-300">
-              <Star className="w-4 h-4 text-amber-400 fill-amber-400" /> Level {currentLevel} Scholar • {totalXp} Total XP
+          <h1 className="text-3xl font-black text-slate-900 tracking-tight sm:text-4xl">
+            Good Morning, {studentName} !
+          </h1>
+          <p className="text-slate-600 max-w-2xl text-sm sm:text-base font-semibold">
+            Ready for a new learning adventure?
+          </p>
+        </div>
+      </div>
+
+      {/* Loading / Error States for Hierarchy */}
+      {loadingHierarchy && (
+        <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex items-center justify-center gap-3">
+          <Loader2 className="w-6 h-6 animate-spin text-teal-600" />
+          <span className="text-sm font-bold">Loading authoritative curriculum hierarchy...</span>
+        </div>
+      )}
+
+      {hierarchyError && !loadingHierarchy && (
+        <div className="p-6 rounded-3xl bg-amber-50 border border-amber-200 text-amber-900 text-sm font-semibold flex items-center gap-3 shadow-sm">
+          <AlertCircle className="w-5 h-5 text-amber-600 shrink-0" />
+          <span>{hierarchyError}</span>
+        </div>
+      )}
+
+      {/* Two Column Grid: Today's Learning Goal & Continue Learning */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Today's Learning Goal Card */}
+        <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold border border-amber-200">
+              <Target className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="font-extrabold text-slate-900 text-base">Today&apos;s Learning Goal</h3>
+              <p className="text-xs text-slate-500 font-medium">Complete 2 learning activities daily</p>
             </div>
           </div>
 
-          <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-            Welcome, {studentName}!
-          </h1>
-          <p className="text-slate-300 max-w-2xl text-sm sm:text-base leading-relaxed">
-            {resumeActivity
-              ? `Resume your study of ${resumeActivity.subject.toUpperCase()} (${resumeActivity.chapter_id}). Progress is isolated to your account.`
-              : 'Begin your NCERT Class 5 curriculum across English, Hindi, Mathematics, and Science with interactive lessons, 3D flashcards, and hotspot diagrams.'}
-          </p>
-
-          {/* Level Progress Bar */}
-          <div className="max-w-md space-y-1.5 pt-1">
-            <div className="flex items-center justify-between text-xs text-slate-300 font-mono font-semibold">
-              <span>XP to Level {currentLevel + 1}</span>
-              <span>{xpInCurrentLevel} / 300 XP</span>
+          <div className="space-y-2 pt-2">
+            <div className="flex items-center justify-between text-xs text-slate-700 font-mono font-bold">
+              <span>Daily Activities Completed</span>
+              <span>{Math.min(2, todayEventsCount)} / 2</span>
             </div>
-            <div className="w-full bg-slate-950/80 rounded-full h-2.5 overflow-hidden border border-slate-800">
+            <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden border border-slate-200">
               <div
-                className="bg-gradient-to-r from-amber-400 to-teal-400 h-full transition-all duration-500"
-                style={{ width: `${Math.min(100, (xpInCurrentLevel / 300) * 100)}%` }}
+                className="bg-emerald-500 h-full transition-all duration-500"
+                style={{ width: `${Math.min(100, (todayEventsCount / 2) * 100)}%` }}
               />
             </div>
           </div>
+        </div>
 
-          <div className="pt-2 flex flex-wrap items-center gap-4">
+        {/* Continue Learning Card */}
+        <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-4">
+          <div className="space-y-2">
+            <h3 className="font-extrabold text-slate-900 text-base">Continue Learning</h3>
+            {isValidLastActivity ? (
+              <div>
+                <p className="text-xs font-bold text-teal-600 uppercase tracking-wide">
+                  {continueSubjectTitle}
+                </p>
+                <p className="text-sm font-black text-slate-900 leading-snug">
+                  {continueChapterTitle}
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-wide">Curriculum Selection</p>
+                <p className="text-sm font-bold text-slate-700">Select a subject below to begin</p>
+              </div>
+            )}
+
             <Link
               href={continueUrl}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-bold text-sm shadow-lg shadow-teal-500/25 hover:brightness-110 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs shadow-md transition-all mt-2"
             >
-              <PlayCircle className="w-4 h-4" /> {resumeActivity ? 'Resume Chapter' : 'Start First Lesson'}
-            </Link>
-            <Link
-              href="/journey"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700 transition-all"
-            >
-              <Compass className="w-4 h-4 text-teal-400" /> View 5-Step Journey
+              {isValidLastActivity ? 'Continue Chapter' : 'Explore Subjects'} <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
+
+          <div className="w-20 h-20 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-3xl shrink-0 shadow-inner">
+            📖
+          </div>
         </div>
       </div>
 
-      {/* Daily Quests Widget (Event-Backed) */}
-      <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4 shadow-xl">
+      {/* Dynamic Canonical Flashcard Revision Widget */}
+      <div className="p-6 rounded-3xl bg-white border border-slate-200 space-y-4 shadow-sm">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center">
-              <Target className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="font-bold text-white text-base">Today&apos;s Daily Missions</h3>
-              <p className="text-xs text-slate-400">Tracked via verified learning event logs</p>
-            </div>
-          </div>
-          <span className="text-xs font-mono font-bold text-teal-400">
-            {progress.completedChapters.length > 0 ? 'Verified Activity Logged' : 'Active Trackers'}
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
-          <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex items-center gap-3 text-xs">
-            <CheckSquare className="w-5 h-5 text-teal-400 shrink-0" />
-            <div>
-              <p className="font-bold text-white">Mission 1: Watch Lesson Video</p>
-              <p className="text-[10px] text-slate-400">Tracked on video playback threshold</p>
-            </div>
-          </div>
-
-          <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex items-center gap-3 text-xs">
-            <CheckSquare className={`w-5 h-5 shrink-0 ${progress.completedChapters.length > 0 ? 'text-teal-400' : 'text-slate-600'}`} />
-            <div>
-              <p className="font-bold text-white">Mission 2: Review Flashcards</p>
-              <p className="text-[10px] text-slate-400">Tracked on flashcard deck review</p>
-            </div>
-          </div>
-
-          <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex items-center gap-3 text-xs">
-            <CheckSquare className={`w-5 h-5 shrink-0 ${progress.quizScores.length > 0 ? 'text-teal-400' : 'text-slate-600'}`} />
-            <div>
-              <p className="font-bold text-white">Mission 3: Submit Quiz</p>
-              <p className="text-[10px] text-slate-400">Tracked on assessment submission</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Metrics Bar */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
-            <Flame className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="text-2xl font-black text-white">{progress.streakDays} Days</div>
-            <div className="text-xs text-slate-400 font-medium">Learning Streak</div>
-          </div>
-        </div>
-
-        <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center">
-            <CheckCircle2 className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="text-2xl font-black text-white">{progress.completedChapters.length} / {totalClass5Chapters || 47}</div>
-            <div className="text-xs text-slate-400 font-medium">Chapters Mastered</div>
-          </div>
-        </div>
-
-        <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
-            <BrainCircuit className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="text-2xl font-black text-white">{quizAccuracy > 0 ? `${quizAccuracy}%` : 'N/A'}</div>
-            <div className="text-xs text-slate-400 font-medium">Quiz Accuracy</div>
-          </div>
-        </div>
-
-        <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center">
-            <Award className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="text-2xl font-black text-white">{progress.completedChapters.length > 0 ? 'Unlocked' : '0 Badges'}</div>
-            <div className="text-xs text-slate-400 font-medium">Achievements</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Interactive 10-Second Daily Revision Widget */}
-      <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4 shadow-xl">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center border border-amber-200">
               <Zap className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-base">10-Second Quick Flashcard Revision</h3>
-              <p className="text-xs text-slate-400">Click card to reveal definition • Flip daily to sharpen memory</p>
+              <h3 className="font-extrabold text-slate-900 text-base">10-Second Daily Flashcard Revision</h3>
+              <p className="text-xs text-slate-500">Press Space or Enter to flip • Loaded from active NCERT chapter</p>
             </div>
           </div>
-          <button
-            onClick={() => {
-              setFlashcardFlipped(false);
-              setFlashcardIdx((prev) => (prev + 1) % sampleFlashcards.length);
-            }}
-            className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold text-slate-300 flex items-center gap-1.5"
-          >
-            <RotateCw className="w-3.5 h-3.5" /> Next Word
-          </button>
-        </div>
-
-        <div
-          onClick={() => setFlashcardFlipped(!flashcardFlipped)}
-          className="p-8 rounded-2xl bg-slate-950 border border-slate-800 text-center cursor-pointer hover:border-amber-500/40 transition-all select-none min-h-[120px] flex flex-col items-center justify-center space-y-2 shadow-inner"
-        >
-          <span className="text-[10px] uppercase font-mono px-2.5 py-0.5 rounded bg-slate-900 text-amber-300">
-            {currentCard.subject} Vocabulary
-          </span>
-          {!flashcardFlipped ? (
-            <div className="space-y-1">
-              <h4 className="text-2xl font-black text-white">{currentCard.word}</h4>
-              <p className="text-xs text-amber-400/80 font-medium">💡 Click to reveal definition</p>
-            </div>
-          ) : (
-            <div className="space-y-1 animate-in fade-in duration-200">
-              <p className="text-sm font-semibold text-teal-200 leading-relaxed max-w-lg mx-auto">{currentCard.meaning}</p>
-              <p className="text-[10px] text-slate-500 font-mono">Click to return to word</p>
-            </div>
+          {realFlashcards.length > 1 && (
+            <button
+              onClick={() => {
+                setFlashcardFlipped(false);
+                setFlashcardIdx((prev) => (prev + 1) % realFlashcards.length);
+              }}
+              className="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-xs font-bold text-slate-800 border border-slate-200 flex items-center gap-1.5 transition-all focus:outline-none focus:ring-2 focus:ring-amber-500"
+            >
+              <RotateCw className="w-3.5 h-3.5" /> Next Word
+            </button>
           )}
         </div>
+
+        {loadingFlashcards && (
+          <div className="p-8 text-center text-slate-500 bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center gap-2">
+            <Loader2 className="w-4 h-4 animate-spin text-amber-600" />
+            <span className="text-xs font-bold">Loading chapter flashcards from curriculum...</span>
+          </div>
+        )}
+
+        {!loadingFlashcards && !currentCard && (
+          <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+            <HelpCircle className="w-8 h-8 text-slate-400 mx-auto" />
+            <p className="text-xs font-bold text-slate-600">No active chapter flashcards loaded.</p>
+            <p className="text-[11px] text-slate-400">Open a chapter from the Subject Explorer to load interactive flashcards.</p>
+          </div>
+        )}
+
+        {!loadingFlashcards && currentCard && (
+          <div
+            tabIndex={0}
+            role="button"
+            aria-label="Flashcard word. Press Space or Enter to flip."
+            onKeyDown={(e) => {
+              if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                setFlashcardFlipped(!flashcardFlipped);
+              }
+            }}
+            onClick={() => setFlashcardFlipped(!flashcardFlipped)}
+            className="p-8 rounded-2xl bg-slate-50 border border-slate-200 text-center cursor-pointer hover:border-amber-400 transition-all select-none min-h-[130px] flex flex-col items-center justify-center space-y-2 shadow-inner focus:outline-none focus:ring-2 focus:ring-amber-500"
+          >
+            <span className="text-[10px] uppercase font-mono px-2.5 py-0.5 rounded bg-amber-100 text-amber-900 font-extrabold border border-amber-300">
+              {lastAct?.subject || 'NCERT'} Flashcard
+            </span>
+            {!flashcardFlipped ? (
+              <div className="space-y-1">
+                <h4 className="text-2xl font-black text-slate-900">{currentCard.front || currentCard.word || currentCard.term}</h4>
+                <p className="text-xs text-amber-700 font-bold">💡 Press Space or click to reveal definition</p>
+              </div>
+            ) : (
+              <div className="space-y-1 animate-in fade-in duration-200">
+                <p className="text-sm font-bold text-slate-900 leading-relaxed max-w-lg mx-auto">{currentCard.back || currentCard.definition || currentCard.meaning}</p>
+                <p className="text-[10px] text-slate-500 font-mono">Press Space to flip back</p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
-      {/* Interactive World Map Section */}
+      {/* My Subjects Section */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold text-white flex items-center gap-2">
-            <MapPin className="w-5 h-5 text-teal-400" /> Class 5 Interactive Subject World Map
+          <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-teal-600" /> My Subjects
           </h2>
-          <span className="text-xs text-slate-400 font-mono">4 Subject Realms Connected</span>
+          <Link href="/subjects" className="text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors flex items-center gap-1">
+            View All <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
         </div>
 
-        {/* Loading / Error States for Hierarchy (F-001 Fix) */}
-        {loadingHierarchy && (
-          <div className="p-12 text-center text-slate-400 bg-slate-900 rounded-2xl border border-slate-800">
-            <div className="animate-spin w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full mx-auto mb-3"></div>
-            <p className="text-xs font-bold">Loading curriculum subjects from registry...</p>
-          </div>
-        )}
+        {rawSubjects.length > 0 ? (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {rawSubjects.map((s: any) => {
+              const canonSubj = s.canonical_subject || s.subject.toLowerCase();
+              const firstBook = s.books?.[0] || {};
+              const firstUnit = firstBook.units?.[0] || {};
+              const firstCh = firstUnit.chapters?.[0] || {};
 
-        {hierarchyError && !loadingHierarchy && (
-          <div className="p-8 bg-rose-950/40 border border-rose-800/60 rounded-2xl text-center space-y-2">
-            <AlertCircle className="w-8 h-8 text-rose-400 mx-auto" />
-            <h3 className="text-base font-bold text-rose-300">Curriculum Connection Issue</h3>
-            <p className="text-xs text-rose-400 max-w-md mx-auto">{hierarchyError}</p>
-          </div>
-        )}
-
-        {!loadingHierarchy && processedSubjects.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {processedSubjects.map((subj: any) => {
               const openUrl = buildCurriculumUrl({
-                grade: '5',
-                subject: subj.canonical,
-                book: subj.bookId,
-                part: subj.part,
-                unit: 'U01',
-                chapter_id: subj.firstChapterId
+                grade: String(currentGrade),
+                subject: canonSubj,
+                book: firstBook.book_id || canonSubj,
+                part: firstBook.part || 'main',
+                unit: firstUnit.unit || 'U01',
+                chapter_id: firstCh.chapter_id || `G5-${canonSubj.slice(0, 3).toUpperCase()}-U01-C01`
               });
 
               return (
-                <div
-                  key={subj.canonical}
-                  className={`group relative rounded-3xl bg-gradient-to-br ${subj.theme.bg} border ${subj.theme.border} p-6 flex flex-col justify-between space-y-6 shadow-2xl transition-all hover:scale-[1.01]`}
+                <Link
+                  key={canonSubj}
+                  href={openUrl}
+                  className="p-5 rounded-3xl border bg-white border-slate-200 hover:border-teal-400 space-y-3 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group"
                 >
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className={`text-[10px] font-extrabold uppercase font-mono px-3 py-1 rounded-full border ${subj.theme.badge}`}>
-                        {subj.theme.realm}
-                      </span>
-                      <span className="text-xs font-mono text-slate-400 flex items-center gap-1">
-                        <Clock className="w-3.5 h-3.5" /> {subj.totalChapters} Chapters
-                      </span>
-                    </div>
-
-                    <div>
-                      <h3 className="font-black text-white text-2xl group-hover:text-teal-300 transition-colors flex items-center gap-2">
-                        <span>{subj.theme.icon}</span> <span>{subj.name}</span>
-                      </h3>
-                      <p className="text-xs text-slate-400 mt-0.5">{subj.theme.tagline}</p>
-                    </div>
-
-                    {/* Asset Availability Badges */}
-                    <div className="flex flex-wrap gap-1.5 pt-1 text-[10px] font-bold">
-                      <span className="px-2.5 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-indigo-300 flex items-center gap-1">
-                        <Video className="w-3 h-3 text-indigo-400" /> Studio Videos
-                      </span>
-                      <span className="px-2.5 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-teal-300 flex items-center gap-1">
-                        <ImageIcon className="w-3 h-3 text-teal-400" /> 16:9 Diagrams
-                      </span>
-                      <span className="px-2.5 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-amber-300 flex items-center gap-1">
-                        <Zap className="w-3 h-3 text-amber-400" /> 3D Flashcards
-                      </span>
-                      <span className="px-2.5 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-purple-300 flex items-center gap-1">
-                        <HelpCircle className="w-3 h-3 text-purple-400" /> MCQ Quizzes
-                      </span>
-                    </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl">📖</span>
+                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-slate-900 transition-colors" />
                   </div>
-
-                  <div className="space-y-3 pt-2 border-t border-slate-800/80">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="text-slate-300 font-semibold truncate max-w-[200px]">Chapter 1: {subj.firstChapterTitle}</span>
-                      <span className="text-slate-400 font-mono text-[11px]">{subj.totalChapters > 0 ? Math.round((subj.completedChapters / subj.totalChapters) * 100) : 0}% Mastered</span>
-                    </div>
-
-                    <div className="w-full bg-slate-950/80 rounded-full h-2 overflow-hidden border border-slate-800">
-                      <div
-                        className="bg-gradient-to-r from-teal-400 to-indigo-500 h-full transition-all duration-500"
-                        style={{ width: `${subj.totalChapters > 0 ? Math.min(100, (subj.completedChapters / subj.totalChapters) * 100) : 0}%` }}
-                      />
-                    </div>
-
-                    <Link
-                      href={openUrl}
-                      className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-slate-950 hover:bg-slate-900 border border-slate-800 text-white font-extrabold text-xs transition-all group-hover:border-teal-500/50"
-                    >
-                      Enter {subj.name} Realm <ArrowRight className="w-3.5 h-3.5 text-teal-400" />
-                    </Link>
+                  <div>
+                    <h3 className="font-black text-base text-slate-900 capitalize">{s.subject || canonSubj}</h3>
+                    <p className="text-xs text-slate-500 font-semibold">{firstBook.book_title || canonSubj}</p>
                   </div>
-                </div>
+                </Link>
               );
             })}
+          </div>
+        ) : (
+          <div className="p-8 text-center text-slate-500 bg-white rounded-3xl border border-slate-200">
+            <p className="text-xs font-bold">No subjects currently loaded from hierarchy.</p>
           </div>
         )}
       </div>
