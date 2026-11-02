@@ -1,43 +1,35 @@
 import os
+import sys
 import json
 import hashlib
+from pathlib import Path
 
-dl_dir = r"C:\Users\srina\Downloads\Class 5\Science"
-ct_dir = r"D:\GURUKUL\Contents\Class 5\Science"
+backend_dir = Path(__file__).resolve().parent.parent
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
+from src.curriculum.core.config import GurukulConfig
+
+ct_dir = GurukulConfig.get_content_root() / "Class 5" / "Science"
 
 print("==========================================================================")
-print("DEEP FORENSIC COMPARISON OF SCIENCE JSON FILES")
+print("DEEP FORENSIC AUDIT OF AUTHORITATIVE SCIENCE SOURCE FILES IN CONTENTS")
 print("==========================================================================\n")
+print(f"Verified Source Directory: {ct_dir}\n")
 
-for fname in ["Flashcards.json", "Quiz.json", "Master.json", "Notes.json", "Mindmaps.json"]:
-    dl_path = os.path.join(dl_dir, fname)
-    ct_path = os.path.join(ct_dir, fname)
-
-    dl_exists = os.path.exists(dl_path)
-    ct_exists = os.path.exists(ct_path)
+for fname in ["Master.json", "Notes.json", "Flashcards.json", "Mindmaps.json", "Quiz.json"]:
+    ct_path = ct_dir / fname
+    ct_exists = ct_path.exists()
 
     print(f"--- File: {fname} ---")
-    print(f"  Downloads Path Exists: {dl_exists}")
-    print(f"  Contents Path Exists:  {ct_exists}")
-
-    if dl_exists:
-        dl_bytes = open(dl_path, "rb").read()
-        dl_sha = hashlib.sha256(dl_bytes).hexdigest()
-        dl_size = len(dl_bytes)
-        dl_json = json.loads(dl_bytes.decode("utf-8"))
-        print(f"  Downloads Size: {dl_size:,} bytes | SHA256: {dl_sha[:16]}...")
-        print(f"  Downloads Top Keys: {list(dl_json.keys()) if isinstance(dl_json, dict) else 'Array'}")
+    print(f"  Contents Path Exists: {ct_exists}")
 
     if ct_exists:
-        ct_bytes = open(ct_path, "rb").read()
+        ct_bytes = ct_path.read_bytes()
         ct_sha = hashlib.sha256(ct_bytes).hexdigest()
         ct_size = len(ct_bytes)
         ct_json = json.loads(ct_bytes.decode("utf-8"))
         print(f"  Contents Size:  {ct_size:,} bytes | SHA256: {ct_sha[:16]}...")
         print(f"  Contents Top Keys:  {list(ct_json.keys()) if isinstance(ct_json, dict) else 'Array'}")
-
-    if dl_exists and ct_exists:
-        match = (dl_sha == ct_sha)
-        print(f"  >>> HASH MATCH: {match}")
 
     print()

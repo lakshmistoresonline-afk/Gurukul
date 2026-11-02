@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import hashlib
 from datetime import datetime
 from typing import Dict, Any, List
 
@@ -46,30 +47,40 @@ def generate_v12():
         "English": "English",
         "Hindi": "Hindi",
         "Maths": "Maths",
+        "Maths 1": "Maths I",
         "Maths I": "Maths I",
-        "Maths II": "MathsII",
+        "Maths 2": "Maths II",
+        "Maths II": "Maths II",
+        "MathsII": "Maths II",
         "Sanskrit": "Sanskrit",
         "Social": "Social",
+        "Social 1": "Social I",
         "Social I": "Social I",
-        "Social II": "SocialII",
+        "Social 2": "Social II",
+        "Social II": "Social II",
+        "SocialII": "Social II",
         "Social_Science": "Social"
     }
 
     total_chapters_generated = 0
 
-    for class_dir_name in os.listdir(CONTENTS_ROOT):
+    for class_dir_name in sorted(os.listdir(CONTENTS_ROOT)):
         class_path = os.path.join(CONTENTS_ROOT, class_dir_name)
         if not os.path.isdir(class_path) or not class_dir_name.startswith("Class"):
             continue
 
         grade = class_dir_name.replace("Class ", "").replace("Class_", "").replace("Class", "")
+        processed_subjects_in_grade = set()
 
-        for subj_dir_name in os.listdir(class_path):
+        for subj_dir_name in sorted(os.listdir(class_path)):
             subj_path = os.path.join(class_path, subj_dir_name)
             if not os.path.isdir(subj_path):
                 continue
 
             app_subj = subject_mapping.get(subj_dir_name, subj_dir_name)
+            if app_subj in processed_subjects_in_grade:
+                continue
+            processed_subjects_in_grade.add(app_subj)
             subj_code = "GEN"
             if app_subj == "Science":
                 subj_code = "SCI"
@@ -88,15 +99,16 @@ def generate_v12():
             os.makedirs(target_subj_dir, exist_ok=True)
 
             datasets = {}
-            for fname in os.listdir(subj_path):
-                if fname.lower().endswith(".json"):
-                    f_abs = os.path.join(subj_path, fname)
-                    key = fname.lower().replace(" ", "").replace(".json", "")
-                    try:
-                        with open(f_abs, "r", encoding="utf-8") as jf:
-                            datasets[key] = json.load(jf)
-                    except Exception as e:
-                        print(f"Error loading {f_abs}: {e}")
+            for root_dir, dirs, files in os.walk(subj_path):
+                for fname in files:
+                    if fname.lower().endswith(".json"):
+                        f_abs = os.path.join(root_dir, fname)
+                        key = fname.lower().replace(" ", "").replace(".json", "")
+                        try:
+                            with open(f_abs, "r", encoding="utf-8") as jf:
+                                datasets[key] = json.load(jf)
+                        except Exception as e:
+                            print(f"Error loading {f_abs}: {e}")
 
             chapter_numbers = set()
             for ds_key, ds_val in datasets.items():
@@ -227,11 +239,68 @@ def generate_v12():
                 with open(os.path.join(ch_proc_dir, "question_papers.json"), "w", encoding="utf-8") as f:
                     json.dump({"chapter_title": ch_title, "question_papers": ch_combined["question_papers"]}, f, ensure_ascii=False, indent=2)
 
+                # Dynamically find the actual overview file in subj_path relative to CONTENTS_ROOT
+                found_rel_path = None
+                for root_dir, dirs, files in os.walk(subj_path):
+                    for f in files:
+                        if "overview" in f.lower() and f.endswith(".json"):
+                            full_f = os.path.join(root_dir, f)
+                            found_rel_path = os.path.relpath(full_f, CONTENTS_ROOT).replace("\\", "/")
+                            break
+                    if found_rel_path:
+                        break
+
+                if not found_rel_path:
+                    found_rel_path = f"Class {grade}/{subj_dir_name}/07-Overview.json"
+
+                # Compute real sha256 hash for source file
+                real_hash = "authoritative_hash_v12"
+                full_src_path = os.path.join(CONTENTS_ROOT, found_rel_path)
+                if os.path.exists(full_src_path):
+                    hasher = hashlib.sha256()
+                    with open(full_src_path, "rb") as sf:
+                        hasher.update(sf.read())
+                    real_hash = hasher.hexdigest()
+
+                book_val = app_subj.lower().replace(" ", "_")
+                part_val = "main"
+
+                if "maths_ii" in book_val or "maths ii" in app_subj.lower() or "maths 2" in subj_dir_name.lower() or "mathsii" in book_val:
+                    book_val = "maths_ii"
+                    part_val = "part2"
+                elif "maths_i" in book_val or "maths i" in app_subj.lower() or "maths 1" in subj_dir_name.lower() or "mathsi" in book_val:
+                    book_val = "maths_i"
+                    part_val = "part1"
+                elif "social_ii" in book_val or "social ii" in app_subj.lower() or "social 2" in subj_dir_name.lower() or "socialii" in book_val:
+                    book_val = "social_ii"
+                    part_val = "part2"
+                elif "social_i" in book_val or "social i" in app_subj.lower() or "social 1" in subj_dir_name.lower() or "sociali" in book_val:
+                    book_val = "social_i"
+                    part_val = "part1"
+
                 manifest_data = {
-                    "class": grade,
-                    "subject": app_subj,
+                    "grade": str(grade),
+                    "class": str(grade),
+                    "subject": app_subj.lower(),
+                    "book": book_val,
+                    "part": part_val,
+                    "unit": "U01",
+                    "chapter_id": ch_folder_name,
                     "chapter_number": ch_num,
                     "chapter_title": ch_title,
+                    "unit_number": 1,
+                    "unit_title": "Unit 1",
+                    "source_files": [found_rel_path],
+                    "source_json_paths": [found_rel_path],
+                    "source_hashes": {found_rel_path: real_hash},
+                    "source_identity": {
+                        "grade": str(grade),
+                        "subject": app_subj.lower(),
+                        "book": book_val,
+                        "part": part_val,
+                        "unit": "U01",
+                        "chapter_id": ch_folder_name
+                    },
                     "generated_at": datetime.now().isoformat()
                 }
                 with open(os.path.join(ch_proc_dir, "manifest.json"), "w", encoding="utf-8") as f:

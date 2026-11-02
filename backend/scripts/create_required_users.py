@@ -5,7 +5,7 @@ print("=========================================================================
 print("GURUKUL AI — CREATE REQUIRED USERS (AUTH & FIRESTORE)")
 print("==========================================================================\n")
 
-CRED_PATH = r"C:\Users\srina\Downloads\com-ncert-projectgurukul-e5e60-firebase-adminsdk-fbsvc-2c974942bd.json"
+CRED_PATH = os.getenv("FIREBASE_CREDENTIALS_PATH", "firebase-credentials.json")
 
 REQUIRED_USERS = [
     {

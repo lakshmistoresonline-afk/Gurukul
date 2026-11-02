@@ -1,15 +1,17 @@
 import os
+import sys
+import json
 import hashlib
+from pathlib import Path
 
-dl_path = r"C:\Users\srina\Downloads\Class 5\Hindi\Flashcards.json"
-ct_path = r"D:\GURUKUL\Contents\Class 5\Hindi\Flashcards.json"
+backend_dir = Path(__file__).resolve().parent.parent
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
 
-dl_bytes = open(dl_path, "rb").read()
-ct_bytes = open(ct_path, "rb").read()
+from src.curriculum.core.config import GurukulConfig
 
-dl_sha = hashlib.sha256(dl_bytes).hexdigest()
-ct_sha = hashlib.sha256(ct_bytes).hexdigest()
-
-print(f"Downloads Flashcards.json: {len(dl_bytes):,} bytes | SHA256: {dl_sha}")
-print(f"Contents Flashcards.json:  {len(ct_bytes):,} bytes | SHA256: {ct_sha}")
-print(f"Hash Match: {dl_sha == ct_sha}")
+ct_path = GurukulConfig.get_content_root() / "Class 5" / "Hindi" / "Flashcards.json"
+if ct_path.exists():
+    ct_bytes = ct_path.read_bytes()
+    ct_sha = hashlib.sha256(ct_bytes).hexdigest()
+    print(f"Contents Hindi Flashcards.json: {len(ct_bytes):,} bytes | SHA256: {ct_sha}")

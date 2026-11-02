@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { auth } from '../lib/firebase';
@@ -14,10 +14,20 @@ import {
   RotateCw,
   HelpCircle,
   AlertCircle,
-  Loader2
+  Loader2,
+  ChevronLeft,
+  ChevronRight,
+  X,
+  Check
 } from 'lucide-react';
 import { getCurriculumHierarchy, buildCurriculumUrl, CurriculumApiClient } from '../lib/curriculumClient';
-import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../lib/studentProgressStore';
+import {
+  getStudentProgress,
+  StudentProgressState,
+  syncStudentProgressFromFirestore,
+  saveSelectedGradePreference,
+  recordFlashcardReviewEvent
+} from '../lib/studentProgressStore';
 
 export default function StudentDashboard() {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -33,14 +43,21 @@ export default function StudentDashboard() {
     lastActiveDate: null,
     bookmarks: [],
     practiceMarked: [],
-    eventsLedger: []
+    eventsLedger: [],
+    selectedGrade: '5'
   });
+
+  // Grade Selector Modal State
+  const [gradeModalOpen, setGradeModalOpen] = useState(false);
 
   // Dynamic Real Flashcards State
   const [realFlashcards, setRealFlashcards] = useState<any[]>([]);
   const [loadingFlashcards, setLoadingFlashcards] = useState<boolean>(false);
+  const [flashcardError, setFlashcardError] = useState<string | null>(null);
   const [flashcardFlipped, setFlashcardFlipped] = useState<boolean>(false);
   const [flashcardIdx, setFlashcardIdx] = useState<number>(0);
+
+  const reqIdRef = useRef<number>(0);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
@@ -77,19 +94,20 @@ export default function StudentDashboard() {
     loadData();
   }, []);
 
-  // Filter grade data from hierarchy
-  const currentGrade = '5';
-  const gradeData = hierarchy.find((item: any) => String(item.grade) === currentGrade);
+  // Selected Grade Source of Truth
+  const selectedGrade = progress.selectedGrade || '5';
+  const isGradeInHierarchy = hierarchy.some((item: any) => String(item.grade) === String(selectedGrade));
+  const gradeData = hierarchy.find((item: any) => String(item.grade) === String(selectedGrade));
   const rawSubjects = gradeData?.subjects || [];
 
   // Validate lastActivity against hierarchy
   const lastAct = progress.lastActivity;
   let isValidLastActivity = false;
   let continueUrl = '/subjects';
-  let continueSubjectTitle = 'Science';
-  let continueChapterTitle = 'Water Cycle';
+  let continueSubjectTitle = '';
+  let continueChapterTitle = '';
 
-  if (lastAct && lastAct.subject && lastAct.chapter_id && rawSubjects.length > 0) {
+  if (lastAct && lastAct.grade && lastAct.subject && lastAct.chapter_id && rawSubjects.length > 0) {
     const subjMatch = rawSubjects.find((s: any) =>
       s.subject?.toLowerCase() === lastAct.subject.toLowerCase() ||
       s.canonical_subject?.toLowerCase() === lastAct.subject.toLowerCase()
@@ -108,7 +126,7 @@ export default function StudentDashboard() {
         continueSubjectTitle = subjMatch.subject || lastAct.subject;
         continueChapterTitle = foundCh.chapter_title || foundCh.chapter_id;
         continueUrl = buildCurriculumUrl({
-          grade: String(lastAct.grade || currentGrade),
+          grade: String(lastAct.grade),
           subject: lastAct.subject,
           book: lastAct.book || 'main',
           part: lastAct.part || 'main',
@@ -119,17 +137,21 @@ export default function StudentDashboard() {
     }
   }
 
-  // Load Real Flashcards dynamically for active chapter
+  // Load Real Flashcards dynamically for validated active chapter
   useEffect(() => {
     async function loadRealFlashcards() {
       if (!isValidLastActivity || !lastAct) {
         setRealFlashcards([]);
+        setFlashcardError(null);
         return;
       }
+
+      const currentToken = ++reqIdRef.current;
       try {
         setLoadingFlashcards(true);
+        setFlashcardError(null);
         const res = await CurriculumApiClient.fetchContent({
-          grade: String(lastAct.grade || currentGrade),
+          grade: String(lastAct.grade),
           subject: lastAct.subject,
           book: lastAct.book || 'main',
           part: lastAct.part || 'main',
@@ -137,59 +159,136 @@ export default function StudentDashboard() {
           chapter_id: lastAct.chapter_id,
           content_type: 'flashcards'
         });
-        const cards = Array.isArray(res.data) ? res.data : res.data?.flashcards || [];
-        setRealFlashcards(cards);
+
+        // Stale response protection
+        if (currentToken !== reqIdRef.current) return;
+
+        let cards: any[] = [];
+        if (Array.isArray(res.data)) {
+          cards = res.data;
+        } else if (res.data && Array.isArray(res.data.flashcards)) {
+          cards = res.data.flashcards;
+        } else if (res.data && (res.data.front || res.data.back)) {
+          cards = [res.data];
+        }
+
+        // Validate front and back fields
+        const validCards = cards.filter(c => c && (c.front || c.word || c.term) && (c.back || c.definition || c.meaning));
+        setRealFlashcards(validCards);
         setFlashcardIdx(0);
         setFlashcardFlipped(false);
-      } catch (e) {
-        setRealFlashcards([]);
+      } catch (e: any) {
+        if (currentToken === reqIdRef.current) {
+          setRealFlashcards([]);
+          setFlashcardError(e.message || 'Failed to load chapter flashcards.');
+        }
       } finally {
-        setLoadingFlashcards(false);
+        if (currentToken === reqIdRef.current) {
+          setLoadingFlashcards(false);
+        }
       }
     }
     loadRealFlashcards();
-  }, [isValidLastActivity, lastAct, currentGrade]);
+  }, [isValidLastActivity, lastAct]);
+
+  const handleGradeChange = async (newGrade: string) => {
+    const targetUid = currentUser?.uid || 'guest';
+    const updated = await saveSelectedGradePreference(newGrade, targetUid);
+    setProgress(updated.state);
+    setGradeModalOpen(false);
+  };
 
   // Real Student Profile & Goal Progress Calculation (Local Calendar Date)
-  const studentName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'LEARNER';
+  const studentName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Learner';
   const todayLocalDateStr = new Date().toLocaleDateString('en-CA');
-  const todayEventsCount = (progress.eventsLedger || []).filter((e: any) => {
-    if (!e.timestamp) return false;
-    const eventLocalDateStr = new Date(e.timestamp).toLocaleDateString('en-CA');
-    return eventLocalDateStr === todayLocalDateStr;
-  }).length;
 
+  // Filter & deduplicate genuine events for today
+  const validEventIds = new Set<string>();
+  const todayValidEvents = (progress.eventsLedger || []).filter((e: any) => {
+    if (!e || !e.timestamp || isNaN(new Date(e.timestamp).getTime())) return false;
+    const eventDate = new Date(e.timestamp).toLocaleDateString('en-CA');
+    if (eventDate !== todayLocalDateStr) return false;
+
+    // Deduplicate by event_id
+    const key = e.event_id || `${e.type}_${e.chapter_id}_${e.timestamp}`;
+    if (validEventIds.has(key)) return false;
+    validEventIds.add(key);
+
+    return ['quiz_completion', 'chapter_completion', 'flashcard_review'].includes(e.type);
+  });
+
+  const todayEventsCount = todayValidEvents.length;
   const currentCard = realFlashcards.length > 0 ? realFlashcards[flashcardIdx] : null;
 
   return (
-    <div className="p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
-      {/* Page Header (Matching Audit Reference Screenshot 1) */}
+    <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
+      {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-black text-slate-900 tracking-tight">My Learning Dashboard</h1>
-        <p className="text-slate-600 text-sm mt-1 font-medium">A focused home for the learner — real progress, real content, clear next steps.</p>
+        <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">My Learning Dashboard</h1>
+        <p className="text-slate-600 text-xs sm:text-sm mt-1 font-medium">A focused home for the learner — real progress, real content, clear next steps.</p>
       </div>
 
-      {/* Student Welcome Banner (Matching Audit Reference Screenshot 1) */}
-      <div className="relative overflow-hidden rounded-3xl bg-[#EAF3FF] border border-blue-200/80 p-8 shadow-2xs">
+      {/* Student Welcome Banner with Class Selector */}
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-sky-100 via-teal-50 to-indigo-50 border border-sky-200/80 p-6 sm:p-8 shadow-2xs">
         <div className="relative z-10 space-y-3">
-          <div className="text-[11px] font-black uppercase tracking-wider text-teal-800 font-mono">
-            GOOD MORNING, {studentName}
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="text-[11px] font-black uppercase tracking-wider text-teal-800 font-mono">
+              GOOD MORNING, {studentName}
+            </div>
+
+            <button
+              onClick={() => setGradeModalOpen(true)}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-teal-800 text-xs font-extrabold border border-teal-200 shadow-2xs hover:bg-teal-50 transition-all cursor-pointer"
+            >
+              <Compass className="w-3.5 h-3.5 text-teal-600" /> Class {selectedGrade} • Change class
+            </button>
           </div>
 
-          <h2 className="text-3xl font-black text-slate-900 tracking-tight sm:text-4xl">
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
             Your next learning adventure starts here.
           </h2>
           <p className="text-slate-600 text-xs font-semibold">
-            Selected class: Class 5 • <Link href="/subjects" className="text-teal-700 hover:underline">Change class</Link>
+            Selected class: Class {selectedGrade} • {isGradeInHierarchy ? 'Authoritative Curriculum Active' : 'Loading Registry'}
           </p>
         </div>
       </div>
 
-      {/* Loading / Error States */}
+      {/* Class Selector Modal */}
+      {gradeModalOpen && (
+        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl p-6 max-w-md w-full border border-slate-200 shadow-2xl space-y-4 animate-in fade-in zoom-in-95">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <h3 className="font-extrabold text-slate-900 text-base">Select Grade / Class</h3>
+              <button onClick={() => setGradeModalOpen(false)} className="text-slate-400 hover:text-slate-700">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="space-y-2">
+              {['5', '6', '7'].map((g) => (
+                <button
+                  key={g}
+                  onClick={() => handleGradeChange(g)}
+                  className={`w-full p-4 rounded-2xl border text-left font-bold text-sm transition-all flex items-center justify-between ${
+                    String(selectedGrade) === g
+                      ? 'bg-teal-50 border-teal-300 text-teal-900'
+                      : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span>NCERT Class {g}</span>
+                  {String(selectedGrade) === g && <Check className="w-4 h-4 text-teal-600" />}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Loading / Error States for Hierarchy */}
       {loadingHierarchy && (
         <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex items-center justify-center gap-3">
           <Loader2 className="w-6 h-6 animate-spin text-teal-600" />
-          <span className="text-sm font-bold">Loading curriculum data...</span>
+          <span className="text-sm font-bold">Loading authoritative curriculum hierarchy...</span>
         </div>
       )}
 
@@ -200,7 +299,7 @@ export default function StudentDashboard() {
         </div>
       )}
 
-      {/* Two Column Grid: Today's Learning Goal & Continue Learning (Screenshot 1) */}
+      {/* Two Column Grid: Today's Learning Goal & Continue Learning */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Today's Learning Goal Card */}
         <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
@@ -221,42 +320,73 @@ export default function StudentDashboard() {
         <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-4">
           <div className="space-y-2">
             <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono">CONTINUE LEARNING</h3>
-            <p className="text-xl font-black text-slate-900 leading-snug">
-              {continueSubjectTitle} • {continueChapterTitle}
-            </p>
-            <p className="text-xs text-slate-500 font-medium">Resume at the last validated chapter</p>
+            {isValidLastActivity ? (
+              <div>
+                <p className="text-xs font-bold text-teal-600 uppercase tracking-wide">
+                  {continueSubjectTitle}
+                </p>
+                <p className="text-sm font-black text-slate-900 leading-snug">
+                  {continueChapterTitle}
+                </p>
+                <p className="text-xs text-slate-500 font-medium">Resume at the last validated chapter</p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-wide">Curriculum Selection</p>
+                <p className="text-sm font-bold text-slate-700">No active chapter session saved yet.</p>
+              </div>
+            )}
 
             <Link
               href={continueUrl}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-sm transition-all mt-1"
             >
-              Continue chapter <ArrowRight className="w-3.5 h-3.5" />
+              {isValidLastActivity ? 'Continue chapter' : 'Browse Subjects'} <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
           <div className="w-20 h-20 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-3xl shrink-0 shadow-inner">
-            💧
+            📖
           </div>
         </div>
       </div>
 
-      {/* Quick Revision Flashcard Widget (Screenshot 1) */}
+      {/* Quick Revision Flashcard Widget */}
       <div className="p-6 rounded-3xl bg-white border border-slate-200 space-y-4 shadow-sm">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
             <h3 className="text-lg font-black text-slate-900">QUICK REVISION</h3>
-            <p className="text-xs text-slate-500 font-medium">Flashcards loaded from the active chapter</p>
+            <p className="text-xs text-slate-500 font-medium">
+              {isValidLastActivity ? `Flashcards loaded from ${continueSubjectTitle} • ${lastAct?.chapter_id}` : 'Flashcards loaded from the active chapter'}
+            </p>
           </div>
-          {realFlashcards.length > 1 && (
-            <button
-              onClick={() => {
-                setFlashcardFlipped(false);
-                setFlashcardIdx((prev) => (prev + 1) % realFlashcards.length);
-              }}
-              className="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-xs font-bold text-slate-800 border border-slate-200 flex items-center gap-1.5 transition-all focus:outline-none focus:ring-2 focus:ring-teal-500"
-            >
-              <RotateCw className="w-3.5 h-3.5" /> Next Flashcard
-            </button>
+
+          {realFlashcards.length > 0 && (
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-mono font-bold text-slate-500">
+                Card {flashcardIdx + 1} of {realFlashcards.length}
+              </span>
+              <button
+                onClick={() => {
+                  setFlashcardFlipped(false);
+                  setFlashcardIdx((prev) => (prev - 1 + realFlashcards.length) % realFlashcards.length);
+                }}
+                className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200"
+                title="Previous Flashcard"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => {
+                  setFlashcardFlipped(false);
+                  setFlashcardIdx((prev) => (prev + 1) % realFlashcards.length);
+                }}
+                className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200"
+                title="Next Flashcard"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           )}
         </div>
 
@@ -267,14 +397,21 @@ export default function StudentDashboard() {
           </div>
         )}
 
-        {!loadingFlashcards && !currentCard && (
+        {flashcardError && !loadingFlashcards && (
+          <div className="p-6 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs font-semibold flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
+            <span>{flashcardError}</span>
+          </div>
+        )}
+
+        {!loadingFlashcards && !flashcardError && !currentCard && (
           <div className="p-12 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
             <HelpCircle className="w-8 h-8 text-slate-400 mx-auto" />
             <p className="text-xs font-bold text-slate-600">If no chapter or flashcards exist, show an honest empty state — never sample content.</p>
           </div>
         )}
 
-        {!loadingFlashcards && currentCard && (
+        {!loadingFlashcards && !flashcardError && currentCard && (
           <div
             tabIndex={0}
             role="button"
@@ -283,19 +420,34 @@ export default function StudentDashboard() {
               if (e.key === ' ' || e.key === 'Enter') {
                 e.preventDefault();
                 setFlashcardFlipped(!flashcardFlipped);
+              } else if (e.key === 'ArrowRight' && realFlashcards.length > 1) {
+                setFlashcardFlipped(false);
+                setFlashcardIdx((prev) => (prev + 1) % realFlashcards.length);
+              } else if (e.key === 'ArrowLeft' && realFlashcards.length > 1) {
+                setFlashcardFlipped(false);
+                setFlashcardIdx((prev) => (prev - 1 + realFlashcards.length) % realFlashcards.length);
               }
             }}
-            onClick={() => setFlashcardFlipped(!flashcardFlipped)}
+            onClick={() => {
+              setFlashcardFlipped(!flashcardFlipped);
+              if (lastAct && currentUser) {
+                recordFlashcardReviewEvent(lastAct.chapter_id, currentUser.uid);
+              }
+            }}
             className="p-10 rounded-2xl bg-[#F8FAFC] border border-blue-200/80 text-center cursor-pointer hover:border-teal-400 transition-all select-none min-h-[140px] flex flex-col items-center justify-center space-y-2 shadow-2xs focus:outline-none focus:ring-2 focus:ring-teal-500"
           >
             {!flashcardFlipped ? (
               <div className="space-y-1">
-                <h4 className="text-3xl font-black text-slate-900 tracking-wide uppercase">{currentCard.front || currentCard.word || currentCard.term}</h4>
+                <h4 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-wide uppercase">
+                  {currentCard.front || currentCard.word || currentCard.term}
+                </h4>
                 <p className="text-xs text-slate-500 font-semibold">Tap or press Space to reveal the explanation</p>
               </div>
             ) : (
               <div className="space-y-1 animate-in fade-in duration-200">
-                <p className="text-sm font-bold text-slate-900 leading-relaxed max-w-xl mx-auto">{currentCard.back || currentCard.definition || currentCard.meaning}</p>
+                <p className="text-sm font-bold text-slate-900 leading-relaxed max-w-xl mx-auto">
+                  {currentCard.back || currentCard.definition || currentCard.meaning}
+                </p>
                 <p className="text-[10px] text-slate-500 font-mono">Press Space to flip back</p>
               </div>
             )}

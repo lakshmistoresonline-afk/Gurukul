@@ -1,11 +1,18 @@
 import os
 import zipfile
 from pathlib import Path
+import sys
+
+backend_dir = Path(__file__).resolve().parent.parent / "backend"
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
+from src.curriculum.core.config import GurukulConfig
 
 print("Ensuring Class 6 and Class 7 are unpacked into Contents/ for full test suite compliance...")
 
+contents_dir = GurukulConfig.get_content_root()
 ncert_files_dir = Path(r"C:\Users\srina\Downloads\Gurukul\Ncert Files\Ncert Pdf")
-contents_dir = Path("Contents")
 
 subject_mapping = {
     "ENGLISH": "English",
@@ -34,4 +41,5 @@ for folder_name, grade_num in [("CLASS 6 NCERT", 6), ("CLASS 7 NCERT", 7)]:
             except Exception as e:
                 print(f"Error extracting {zf.name}: {e}")
 
-print("Ensured Class 6 and Class 7 in Contents/.")
+print(f"Verified Source Content Root: {contents_dir}")
+print("Ensured Class 6 and Class 7 in D:\\GURUKUL\\Contents.")

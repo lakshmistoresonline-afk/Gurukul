@@ -28,7 +28,7 @@ export interface QuizScoreRecord {
 
 export interface MissionEventRecord {
   event_id: string;
-  type: 'video_view' | 'flashcard_review' | 'quiz_completion';
+  type: 'video_view' | 'flashcard_review' | 'quiz_completion' | 'chapter_completion';
   chapter_id: string;
   timestamp: number;
   xp_awarded: number;
@@ -43,6 +43,7 @@ export interface StudentProgressState {
   bookmarks: string[];
   practiceMarked: string[];
   eventsLedger?: MissionEventRecord[];
+  selectedGrade?: string;
 }
 
 export type PersistenceStatus = 'saved' | 'pending_sync' | 'failed';
@@ -63,7 +64,8 @@ const DEFAULT_PROGRESS: StudentProgressState = {
   lastActiveDate: null,
   bookmarks: [],
   practiceMarked: [],
-  eventsLedger: []
+  eventsLedger: [],
+  selectedGrade: '5'
 };
 
 function getLocalCacheKey(uid: string): string {
@@ -123,7 +125,7 @@ export async function saveStudentProgress(state: StudentProgressState, uid: stri
 
   // 1. Local Cache Save
   let localSaved = false;
-  if (typeof window !== 'undefined') {
+  if (typeof window === 'undefined') {
     try {
       localStorage.setItem(getLocalCacheKey(targetUid), JSON.stringify(state));
       localSaved = true;
@@ -160,6 +162,15 @@ export async function saveStudentProgress(state: StudentProgressState, uid: stri
       error: e.message || 'Offline mode: Firestore write pending sync.'
     };
   }
+}
+
+export async function saveSelectedGradePreference(grade: string, uid: string): Promise<SaveResult> {
+  const current = getStudentProgress(uid);
+  const newState: StudentProgressState = {
+    ...current,
+    selectedGrade: String(grade).trim()
+  };
+  return await saveStudentProgress(newState, uid);
 }
 
 export async function recordChapterActivity(
@@ -205,9 +216,19 @@ export async function markChapterCompleted(chapterId: string, uid: string): Prom
   const current = getStudentProgress(uid);
   const idStr = String(chapterId);
   if (!current.completedChapters.includes(idStr)) {
+    const eventId = `comp_${chapterId}_${Date.now()}`;
+    const newEvent: MissionEventRecord = {
+      event_id: eventId,
+      type: 'chapter_completion',
+      chapter_id: chapterId,
+      timestamp: Date.now(),
+      xp_awarded: 100
+    };
+
     const newState: StudentProgressState = {
       ...current,
-      completedChapters: [...current.completedChapters, idStr]
+      completedChapters: [...current.completedChapters, idStr],
+      eventsLedger: [...(current.eventsLedger || []), newEvent]
     };
     return await saveStudentProgress(newState, uid);
   }
@@ -241,6 +262,27 @@ export async function recordQuizScore(
   const newState: StudentProgressState = {
     ...current,
     quizScores: [...current.quizScores, newRecord],
+    eventsLedger: [...(current.eventsLedger || []), newEvent]
+  };
+  return await saveStudentProgress(newState, uid);
+}
+
+export async function recordFlashcardReviewEvent(
+  chapterId: string,
+  uid: string
+): Promise<SaveResult> {
+  const current = getStudentProgress(uid);
+  const eventId = `fc_${chapterId}_${Date.now()}`;
+  const newEvent: MissionEventRecord = {
+    event_id: eventId,
+    type: 'flashcard_review',
+    chapter_id: chapterId,
+    timestamp: Date.now(),
+    xp_awarded: 20
+  };
+
+  const newState: StudentProgressState = {
+    ...current,
     eventsLedger: [...(current.eventsLedger || []), newEvent]
   };
   return await saveStudentProgress(newState, uid);

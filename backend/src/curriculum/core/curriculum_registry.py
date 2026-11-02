@@ -188,9 +188,9 @@ class CurriculumRegistry:
                         if current_hash != expected_hash:
                             raise SourceMismatchError(f"Stale source hash detected for {sf_abs}: expected {expected_hash}, got {current_hash}")
 
-                    book_chapter_key = f"{m_book}:{m_chapter_id}"
+                    book_chapter_key = f"class{m_grade}:{m_book}:{m_chapter_id}"
                     if book_chapter_key in seen_chapter_ids:
-                        raise RegistryDuplicateKeyError(f"Duplicate chapter ID '{m_chapter_id}' detected under book '{m_book}'")
+                        raise RegistryDuplicateKeyError(f"Duplicate chapter ID '{m_chapter_id}' detected under book '{m_book}' in class {m_grade}")
                     seen_chapter_ids[book_chapter_key] = True
 
                     available_content_types = []
@@ -264,17 +264,14 @@ class CurriculumRegistry:
         canonical_subject = SubjectRegistry.resolve_canonical_subject(identity.subject)
         canonical_book = identity.book.lower()
 
-        # Known book alias normalization
-        if canonical_book in ["maths", "math", "maths_mela"]:
-            canonical_book = "mathematics"
-        elif canonical_book == "santoor":
-            canonical_book = "english"
-        elif canonical_book == "veena":
-            canonical_book = "hindi"
-        elif canonical_book in ["wondrous_world", "our_wondrous_world"]:
-            canonical_book = "science"
-
         key = f"{identity.grade}:{canonical_subject}:{canonical_book}:{identity.part}:{identity.unit}:{identity.chapter_id}"
+
+        if key not in idx:
+            # Known alias fallback (e.g. maths <-> mathematics for Class 5)
+            alt_book = "mathematics" if canonical_book in ["maths", "math", "maths_mela"] else "maths" if canonical_book == "mathematics" else canonical_book
+            alt_key = f"{identity.grade}:{canonical_subject}:{alt_book}:{identity.part}:{identity.unit}:{identity.chapter_id}"
+            if alt_key in idx:
+                key = alt_key
 
         if key not in idx:
             raise ChapterNotFoundError(f"Exact identity node {identity.to_cache_key()} not found in authoritative manifest index.")
