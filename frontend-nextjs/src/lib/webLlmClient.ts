@@ -87,7 +87,7 @@ export async function sendHybridTutorChat(payload: TutorChatPayload): Promise<We
     });
     if (res.ok) {
       const data = await res.json();
-      if (data && data.status === 'ONLINE') {
+      if (data && (data.status === 'ONLINE' || data.status === 'NCERT_SOURCE')) {
         return data;
       }
     }
@@ -99,7 +99,10 @@ export async function sendHybridTutorChat(payload: TutorChatPayload): Promise<We
   let mode = 'GENERAL_KNOWLEDGE';
   let mediaObj: { diagram?: string; video?: string } | undefined = undefined;
 
-  if (qLower.includes('water cycle')) {
+  if (qLower.includes('photosynthesis')) {
+    mode = 'GENERAL_KNOWLEDGE';
+    answer = `🌿 **Understanding Photosynthesis (General Science)**\n\nPhotosynthesis is the biological process by which green plants manufacture their own food using sunlight, water, and carbon dioxide:\n\n1. **Sunlight Trapping**: Chlorophyll (the green pigment in leaves) absorbs solar thermal energy from sunlight.\n2. **Water Infiltration**: Plant roots absorb water and minerals from soil and transport them up to the leaves.\n3. **Carbon Dioxide Exchange**: Leaves take in carbon dioxide gas from surrounding atmospheric air through tiny pores called **stomata**.\n4. **Food Production & Oxygen Release**: Sunlight converts water and carbon dioxide into glucose (plant food) and releases fresh **oxygen** back into the air!`;
+  } else if (qLower.includes('water cycle') || qLower.includes('evaporation')) {
     mode = 'NCERT_CHAPTER';
     answer = `🌍 **The Water Cycle Explained (NCERT Class 5 Science)**\n\nThe Water Cycle is the continuous journey water takes as it moves from Earth's surface into the atmosphere and back down again in four key stages:\n\n1. **Evaporation**: Heat from the sun warms water in oceans, lakes, and rivers, turning it into invisible water vapor that rises into the air.\n2. **Condensation**: As water vapor rises high into the cool sky, it cools down and turns back into tiny liquid water droplets, forming clouds.\n3. **Precipitation**: When clouds become heavy with water droplets, water falls back to Earth as rain, snow, or hail.\n4. **Collection**: Rainwater flows back into rivers, lakes, and soil (groundwater aquifers), where the cycle begins all over again!`;
     if (payload.subject.toLowerCase() === 'science') {
@@ -110,7 +113,7 @@ export async function sendHybridTutorChat(payload: TutorChatPayload): Promise<We
     }
   } else if (qLower.includes('flower')) {
     mode = 'GENERAL_KNOWLEDGE';
-    answer = `🌸 **What is a Flower? (NCERT Class 5 Science)**\n\nA flower is the colorful reproductive part of a plant responsible for producing seeds and fruits. Key parts include:\n\n• **Petals**: Brightly colored outer leaves that attract pollinators like bees and butterflies.\n• **Sepals**: Small green leaf-like structures at the base that protect the flower bud before it opens.\n• **Stamen**: The male part that produces pollen grains.\n• **Pistil / Carpel**: The female part where seeds develop after pollination.`;
+    answer = `🌸 **What is a Flower? (General Science)**\n\nA flower is the colorful reproductive part of a plant responsible for producing seeds and fruits. Key parts include:\n\n• **Petals**: Brightly colored outer leaves that attract pollinators like bees and butterflies.\n• **Sepals**: Small green leaf-like structures at the base that protect the flower bud before it opens.\n• **Stamen**: The male part that produces pollen grains.\n• **Pistil / Carpel**: The female part where seeds develop after pollination.`;
   } else if (qLower.includes('fraction') || qLower.includes('addition')) {
     mode = 'NCERT_CHAPTER';
     answer = `📐 **Understanding Fraction Addition (NCERT Class 5 Mathematics)**\n\nTo add fractions with the same denominator (bottom number):\n1. **Keep the Denominator**: The bottom number stays the same because the total parts in the whole haven't changed.\n2. **Add the Numerators**: Add the top numbers together.\n• *Example*: 1/4 + 2/4 = (1 + 2) / 4 = 3/4. Using fraction strips helps visualize adding parts of a whole!`;
@@ -125,7 +128,7 @@ export async function sendHybridTutorChat(payload: TutorChatPayload): Promise<We
     }
   } else {
     mode = 'GENERAL_KNOWLEDGE';
-    answer = `🤖 **GURUKUL AI Tutor (${payload.subject.toUpperCase()} - ${payload.chapter_id})**:\n\nRegarding your query ('${payload.question}'): In NCERT Class ${payload.grade} ${payload.subject.toUpperCase()}, this concept explores fundamental step-by-step principles, real-world examples, and problem-solving techniques designed for Grade 5 learners.`;
+    answer = `🌐 **General Educational Explanation**\n\nRegarding your query ('${payload.question}'): This is a general educational topic. In 5th-grade general science and social studies, concepts are understood through real-world observations, clear definitions, and step-by-step reasoning.`;
   }
 
   return {

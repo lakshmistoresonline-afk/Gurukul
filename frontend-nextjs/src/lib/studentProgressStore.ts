@@ -125,7 +125,7 @@ export async function saveStudentProgress(state: StudentProgressState, uid: stri
 
   // 1. Local Cache Save
   let localSaved = false;
-  if (typeof window === 'undefined') {
+  if (typeof window !== 'undefined') {
     try {
       localStorage.setItem(getLocalCacheKey(targetUid), JSON.stringify(state));
       localSaved = true;
