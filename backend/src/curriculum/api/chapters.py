@@ -80,40 +80,41 @@ async def get_subject_media_assets(
 @router.get("/curriculum/media/stream")
 async def stream_local_media(
     subject: str = Query(..., description="Subject name"),
-    filename: str = Query(..., description="Media filename")
+    filename: str = Query(..., description="Media filename"),
+    grade: Optional[str] = Query("5", description="Class/Grade number")
 ):
     canon_subj = SubjectRegistry.resolve_canonical_subject(subject)
-    subj_folder_map = {
-        "english": "English",
-        "hindi": "Hindi",
-        "mathematics": "Maths",
-        "maths": "Maths",
-        "science": "Science"
-    }
-    subj_dir_name = subj_folder_map.get(canon_subj, subject.title())
     content_root = GurukulConfig.get_content_root()
 
-    # 1. Check Images folder (exact match + suffix/substring match)
-    images_dir = content_root / "Class 5" / subj_dir_name / "Images"
-    if images_dir.exists():
-        img_exact = images_dir / filename
-        if img_exact.exists():
-            return FileResponse(path=str(img_exact), media_type="image/png", filename=filename)
-        clean_name = filename.split("/")[-1]
-        for f in images_dir.glob("*.png"):
-            if clean_name in f.name or f.name.endswith(clean_name) or clean_name.endswith(f.name):
-                return FileResponse(path=str(f), media_type="image/png", filename=f.name)
+    clean_name = filename.split("/")[-1].split("\\")[-1]
+    is_video = clean_name.lower().endswith(".mp4")
+    media_type_header = "video/mp4" if is_video else "image/png" if clean_name.lower().endswith(".png") else "image/jpeg"
 
-    # 2. Check Videos folder (exact match + suffix/substring match)
-    videos_dir = content_root / "Class 5" / subj_dir_name / "Videos"
-    if videos_dir.exists():
-        vid_exact = videos_dir / filename
-        if vid_exact.exists():
-            return FileResponse(path=str(vid_exact), media_type="video/mp4", filename=filename)
-        clean_name = filename.split("/")[-1]
-        for f in videos_dir.glob("*.mp4"):
-            if clean_name in f.name or f.name.endswith(clean_name) or clean_name.endswith(f.name):
-                return FileResponse(path=str(f), media_type="video/mp4", filename=f.name)
+    search_grades = [str(grade), "5", "6", "7"] if grade else ["5", "6", "7"]
+
+    # 1. Exact filename match
+    for g in search_grades:
+        g_dir = content_root / f"Class {g}"
+        if not g_dir.exists():
+            continue
+
+        for root_dir, dirs, files in os.walk(g_dir):
+            for f in files:
+                if f == clean_name or f.lower() == clean_name.lower():
+                    full_p = Path(root_dir) / f
+                    return FileResponse(path=str(full_p), media_type=media_type_header, filename=f)
+
+    # 2. Substring / clean name match
+    for g in search_grades:
+        g_dir = content_root / f"Class {g}"
+        if not g_dir.exists():
+            continue
+
+        for root_dir, dirs, files in os.walk(g_dir):
+            for f in files:
+                if clean_name.lower() in f.lower() or f.lower() in clean_name.lower():
+                    full_p = Path(root_dir) / f
+                    return FileResponse(path=str(full_p), media_type=media_type_header, filename=f)
 
     raise HTTPException(status_code=404, detail=f"Media asset file not found: {filename}")
 

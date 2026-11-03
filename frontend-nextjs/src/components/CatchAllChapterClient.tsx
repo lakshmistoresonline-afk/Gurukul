@@ -586,14 +586,14 @@ export default function CatchAllChapterClient({ segments }: Props) {
                     <span className="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
                       <Play className="w-4 h-4 text-indigo-400" /> Studio Video Lesson: {chapterVideo.title || chapterTitle}
                     </span>
-                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} Video</span>
+                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class {grade} {subject} Video</span>
                   </div>
                   <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-slate-800">
                     <video
                       controls
                       controlsList="nodownload"
                       className="w-full h-full object-contain"
-                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterVideo.filename)}`}
+                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?grade=${grade}&subject=${subject}&filename=${encodeURIComponent(chapterVideo.filename)}`}
                     />
                   </div>
                 </div>
@@ -610,11 +610,11 @@ export default function CatchAllChapterClient({ segments }: Props) {
                     <span className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
                       <ImageIcon className="w-4 h-4 text-teal-400" /> Interactive Hotspot Diagram: {chapterDiagram.filename}
                     </span>
-                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class 5 {subject} 16:9 Diagram</span>
+                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class {grade} {subject} 16:9 Diagram</span>
                   </div>
                   <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center">
                     <img
-                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${subject}&filename=${encodeURIComponent(chapterDiagram.filename)}`}
+                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?grade=${grade}&subject=${subject}&filename=${encodeURIComponent(chapterDiagram.filename)}`}
                       alt={chapterDiagram.title || chapterTitle}
                       className="w-full h-full object-contain"
                     />

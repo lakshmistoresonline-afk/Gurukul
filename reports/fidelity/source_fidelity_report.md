@@ -1,13 +1,13 @@
 # FORENSIC SOURCE-FIDELITY VERIFICATION REPORT (STRICT GEN-2)
-**Timestamp**: 2026-11-02T18:20:15.775109
+**Timestamp**: 2026-11-03T07:20:38.018812
 **Fidelity Status**: **PASS**
 **Source Coverage**: 100.0%
 
 ---
 
 ## Explicit Classifications Breakdown
-- **Exact Matches**: 2001
-- **Normalized Matches**: 197286
+- **Exact Matches**: 2254
+- **Normalized Matches**: 200047
 - **Transformed Matches**: 0
 - **Missing**: 0
 - **Changed**: 0
