@@ -35,6 +35,7 @@ class TutorChatRequest(BaseModel):
     content_type: str = "overview"
     question: str
     action: Optional[str] = None
+    engineMode: Optional[str] = "NCERT"
 
 class MediaAssets(BaseModel):
     diagram: Optional[str] = None
@@ -230,7 +231,7 @@ def evaluate_question_relevance_pipeline(
         return {"mode": "CLARIFICATION_REQUIRED", "resolved_subject": subj_lower, "resolved_chapter": chapter_id}
 
     # Stage 2: Explicit Active Chapter Triggers
-    explicit_triggers = ["this lesson", "this chapter", "this story", "this poem", "current chapter", "author", "poet", "narrator"]
+    explicit_triggers = ["this lesson", "this chapter", "this story", "this poem", "current chapter", "author", "poet", "narrator", "main idea", "key concept", "summary", "overview", "moral", "theme", "explain", "give me an example"]
     if any(tr in q_lower for tr in explicit_triggers):
         return {"mode": "NCERT_CHAPTER", "resolved_subject": subj_lower, "resolved_chapter": chapter_id}
 
@@ -311,6 +312,26 @@ async def tutor_chat(
             "diagram": f"{PUBLIC_MEDIA_BASE_URL}?subject={resolved_subj}&filename={match_img}" if match_img else None,
             "video": f"{PUBLIC_MEDIA_BASE_URL}?subject={resolved_subj}&filename={match_vid}" if match_vid else None
         }
+
+    # 1b. Universal Math Expression Evaluator
+    q_math_clean = req.question.strip().lower().replace("x", "*").replace("÷", "/").replace("^", "**")
+    if re.match(r'^[0-9\+\-\*\/\%\(\)\.\s]+$', q_math_clean) and any(op in q_math_clean for op in ['+', '-', '*', '/']):
+        try:
+            res_val = eval(q_math_clean, {"__builtins__": None}, {})
+            if isinstance(res_val, (int, float)):
+                res_display = int(res_val) if isinstance(res_val, float) and res_val.is_integer() else round(res_val, 4)
+                return {
+                    "status": "ONLINE",
+                    "mode": "MATH_EVALUATOR",
+                    "model": "Gurukul Precision Math Engine",
+                    "response": f"📐 **Step-by-Step Math Solution (Order of Operations)**\n\n**Problem**: `{req.question.strip()}`\n\n1. **Apply Order of Operations (PEMDAS / BODMAS)**: Parentheses ➔ Exponents ➔ Multiplication & Division (Left to Right) ➔ Addition & Subtraction (Left to Right).\n2. **Evaluation**: `{q_math_clean.replace('**', '^')}` = **{res_display}**\n\n✅ **Final Answer**: **{res_display}**",
+                    "resolved_subject": canon_subj,
+                    "resolved_chapter_id": ch_id,
+                    "is_ai_generated": True,
+                    "uid": current_user.uid
+                }
+        except Exception:
+            pass
 
     # 2. Try Local Ollama Engine first if available
     action_instruction = ""

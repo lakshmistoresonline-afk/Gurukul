@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2, Copy, Volume2, VolumeX, RotateCcw, ThumbsUp, ThumbsDown, Check, HelpCircle, Compass, Globe } from 'lucide-react';
+import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2, Copy, Volume2, VolumeX, RotateCcw, ThumbsUp, ThumbsDown, Check, Globe, GraduationCap, Calculator } from 'lucide-react';
 import { getCurriculumHierarchy } from '../../lib/curriculumClient';
 import { sendHybridTutorChat } from '../../lib/webLlmClient';
 import { getStudentProgress } from '../../lib/studentProgressStore';
@@ -32,6 +32,8 @@ export default function AiTutorPage() {
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
   const [selectedSubject, setSelectedSubject] = useState<string>('english');
   const [selectedChapterId, setSelectedChapterId] = useState<string>('G5-ENG-U01-C01');
+  const [engineMode, setEngineMode] = useState<'NCERT' | 'WORLD'>('NCERT');
+
   const [question, setQuestion] = useState('');
   const [loading, setLoading] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -41,7 +43,7 @@ export default function AiTutorPage() {
     {
       id: 'welcome-msg',
       sender: 'ai',
-      text: "🤖 Welcome! I am your GURUKUL AI Contextual NCERT Tutor. Ask me any question about your active chapter or explore other subjects!",
+      text: "🤖 Welcome! I am your GURUKUL AI Tutor. Switch between NCERT Contextual Tutor mode and Universal World AI Engine to ask any question in the world!",
       question: '',
       grade: '5',
       subject: 'english',
@@ -140,7 +142,8 @@ export default function AiTutorPage() {
         unit: activeUnit,
         chapter_id: activeChId,
         content_type: 'overview',
-        question: queryText
+        question: queryText,
+        engineMode: engineMode
       });
 
       const aiMsgId = `ai-${Date.now()}`;
@@ -155,7 +158,7 @@ export default function AiTutorPage() {
         part: activePart,
         unit: activeUnit,
         chapter_id: activeChId,
-        mode: response.mode || (response.response.includes('General Knowledge') ? 'GENERAL_KNOWLEDGE' : 'NCERT_CHAPTER'),
+        mode: response.mode || (engineMode === 'WORLD' ? 'WORLD_KNOWLEDGE' : 'NCERT_CHAPTER'),
         model: response.model || 'GURUKUL AI Engine',
         status: response.status,
         media: response.media
@@ -169,7 +172,7 @@ export default function AiTutorPage() {
         {
           id: errorMsgId,
           sender: 'ai',
-          text: `🤖 **NCERT Class ${selectedGrade} AI Tutor**: I couldn't generate an answer right now. Please try again or rephrase your question.`,
+          text: `🤖 **GURUKUL AI Engine**: I couldn't generate an answer right now. Please check your internet connection or try again.`,
           question: queryText,
           grade: selectedGrade,
           subject: activeSubj,
@@ -241,7 +244,11 @@ export default function AiTutorPage() {
       }
     });
 
-    const modeLabel = msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge') || msg.text.includes('General Educational Explanation')
+    const modeLabel = msg.mode === 'MATH_EVALUATOR'
+      ? '📐 Step-by-Step Math Solution'
+      : msg.mode === 'WORLD_KNOWLEDGE' || msg.text.includes('Universal World')
+      ? '🌍 Universal World AI Response'
+      : msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge') || msg.text.includes('General Educational Explanation')
       ? '🌐 General Knowledge'
       : msg.mode === 'NCERT_CROSS_SUBJECT'
       ? '📚 Cross-Subject Explanation'
@@ -252,7 +259,11 @@ export default function AiTutorPage() {
         {/* Authoritative Mode Badge Header */}
         <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-200">
           <span className={`text-[10px] font-black font-mono uppercase px-2.5 py-0.5 rounded-full border ${
-            msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge') || msg.text.includes('General Educational Explanation')
+            msg.mode === 'MATH_EVALUATOR'
+              ? 'bg-purple-100 text-purple-900 border-purple-300'
+              : msg.mode === 'WORLD_KNOWLEDGE' || msg.text.includes('Universal World')
+              ? 'bg-sky-100 text-sky-900 border-sky-300'
+              : msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge')
               ? 'bg-amber-100 text-amber-900 border-amber-300'
               : 'bg-teal-100 text-teal-900 border-teal-300'
           }`}>
@@ -291,7 +302,7 @@ export default function AiTutorPage() {
           </div>
         )}
 
-        {/* Message Action Toolbar (Copy, Read Aloud, Retry, Rating) */}
+        {/* Message Action Toolbar */}
         <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-200 text-xs text-slate-600">
           <div className="flex items-center gap-2">
             <button
@@ -343,7 +354,7 @@ export default function AiTutorPage() {
 
   return (
     <div className="p-4 sm:p-6 max-w-5xl mx-auto space-y-6 bg-[#F5F6F8] min-h-screen">
-      {/* Header */}
+      {/* Header & Mode Switcher */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-2xl bg-teal-100 text-teal-800 flex items-center justify-center border border-teal-300 shadow-sm">
@@ -353,12 +364,43 @@ export default function AiTutorPage() {
             <h1 className="text-3xl font-black text-slate-900 flex items-center gap-2">
               Contextual AI Tutor
             </h1>
-            <p className="text-xs text-slate-600 font-semibold">Grounded in official NCERT Class {selectedGrade} textbooks</p>
+            <p className="text-xs text-slate-600 font-semibold">
+              {engineMode === 'NCERT' ? `Grounded in NCERT Class ${selectedGrade} Textbooks` : 'Universal World AI Engine — Ask anything in the world!'}
+            </p>
           </div>
         </div>
 
-        {/* Chapter Context Selector */}
+        {/* Mode Switcher Toggle Bar */}
+        <div className="flex items-center gap-1 bg-white p-1.5 rounded-2xl border border-slate-200 shadow-sm">
+          <button
+            onClick={() => setEngineMode('NCERT')}
+            className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer ${
+              engineMode === 'NCERT'
+                ? 'bg-teal-600 text-white shadow-sm'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            <GraduationCap className="w-4 h-4" /> NCERT Tutor
+          </button>
+          <button
+            onClick={() => setEngineMode('WORLD')}
+            className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer ${
+              engineMode === 'WORLD'
+                ? 'bg-sky-600 text-white shadow-sm'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            <Globe className="w-4 h-4" /> Universal World AI
+          </button>
+        </div>
+      </div>
+
+      {/* Context Selector (When in NCERT Mode) */}
+      {engineMode === 'NCERT' && (
         <div className="flex items-center gap-2 bg-white p-3 rounded-2xl border border-slate-200 text-xs w-full sm:w-auto shadow-sm">
+          <span className="text-xs font-bold text-slate-600 flex items-center gap-1">
+            <BookOpen className="w-3.5 h-3.5 text-teal-600" /> NCERT Context:
+          </span>
           <select
             value={selectedSubject}
             onChange={(e) => {
@@ -407,46 +449,80 @@ export default function AiTutorPage() {
             </select>
           )}
         </div>
-      </div>
+      )}
 
-      {/* Subject-Aware Presets (Section 5 Requirement: Current Chapter vs Explore Other Subjects) */}
+      {/* Preset Question Cards */}
       <div className="space-y-3">
         <div className="flex items-center justify-between text-xs font-extrabold text-slate-700">
-          <span className="flex items-center gap-1.5"><Sparkles className="w-4 h-4 text-teal-600" /> Questions about {selectedSubject.toUpperCase()} ({activeChapterTitle}):</span>
-          <span className="text-slate-500 font-mono">Class {selectedGrade} NCERT</span>
+          <span className="flex items-center gap-1.5"><Sparkles className="w-4 h-4 text-teal-600" /> {engineMode === 'NCERT' ? `Suggested Questions (${selectedSubject.toUpperCase()} - ${activeChapterTitle}):` : 'Universal World AI Suggested Questions:'}</span>
+          <span className="text-slate-500 font-mono">{engineMode === 'NCERT' ? `Class ${selectedGrade} NCERT` : 'Global Knowledge'}</span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <button
-            onClick={() => handleSendQuery(`Explain the main idea and key concepts of ${activeChapterTitle}`, selectedSubject, selectedChapterId)}
-            className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-teal-400 transition-all shadow-sm group cursor-pointer"
-          >
-            <div className="flex items-center gap-2 text-xs font-black text-teal-700 mb-1">
-              <BookOpen className="w-3.5 h-3.5" /> Main Idea
-            </div>
-            <p className="text-xs text-slate-800 font-semibold line-clamp-2">Explain the main idea of {activeChapterTitle}</p>
-          </button>
+        {engineMode === 'NCERT' ? (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <button
+              onClick={() => handleSendQuery(`Explain the main idea and key concepts of ${activeChapterTitle}`, selectedSubject, selectedChapterId)}
+              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-teal-400 transition-all shadow-sm group cursor-pointer"
+            >
+              <div className="flex items-center gap-2 text-xs font-black text-teal-700 mb-1">
+                <BookOpen className="w-3.5 h-3.5" /> Main Idea
+              </div>
+              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Explain the main idea of {activeChapterTitle}</p>
+            </button>
 
-          <button
-            onClick={() => handleSendQuery(`Give me a real-world example explaining concepts from ${activeChapterTitle}`, selectedSubject, selectedChapterId)}
-            className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-teal-400 transition-all shadow-sm group cursor-pointer"
-          >
-            <div className="flex items-center gap-2 text-xs font-black text-amber-700 mb-1">
-              <Lightbulb className="w-3.5 h-3.5" /> Real-World Example
-            </div>
-            <p className="text-xs text-slate-800 font-semibold line-clamp-2">Give me an example from this chapter</p>
-          </button>
+            <button
+              onClick={() => handleSendQuery(`Give me a real-world example explaining concepts from ${activeChapterTitle}`, selectedSubject, selectedChapterId)}
+              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-teal-400 transition-all shadow-sm group cursor-pointer"
+            >
+              <div className="flex items-center gap-2 text-xs font-black text-amber-700 mb-1">
+                <Lightbulb className="w-3.5 h-3.5" /> Real-World Example
+              </div>
+              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Give me an example from this chapter</p>
+            </button>
 
-          <button
-            onClick={() => handleSendQuery("What is photosynthesis?", "science", "G5-SCI-U01-C01")}
-            className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-indigo-400 transition-all shadow-sm group cursor-pointer"
-          >
-            <div className="flex items-center gap-2 text-xs font-black text-indigo-700 mb-1">
-              <Globe className="w-3.5 h-3.5" /> Cross-Subject Science
-            </div>
-            <p className="text-xs text-slate-800 font-semibold line-clamp-2">Ask a Science question (e.g. What is photosynthesis?)</p>
-          </button>
-        </div>
+            <button
+              onClick={() => handleSendQuery("What is photosynthesis?", "science", "G5-SCI-U01-C01")}
+              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-indigo-400 transition-all shadow-sm group cursor-pointer"
+            >
+              <div className="flex items-center gap-2 text-xs font-black text-indigo-700 mb-1">
+                <Globe className="w-3.5 h-3.5" /> Cross-Subject Science
+              </div>
+              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Ask a Science question (e.g. What is photosynthesis?)</p>
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <button
+              onClick={() => handleSendQuery("10 - -17")}
+              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-purple-400 transition-all shadow-sm group cursor-pointer"
+            >
+              <div className="flex items-center gap-2 text-xs font-black text-purple-700 mb-1">
+                <Calculator className="w-3.5 h-3.5" /> Math Expression
+              </div>
+              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Solve 10 - -17 step-by-step</p>
+            </button>
+
+            <button
+              onClick={() => handleSendQuery("How fast is the speed of light in space?")}
+              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-sky-400 transition-all shadow-sm group cursor-pointer"
+            >
+              <div className="flex items-center gap-2 text-xs font-black text-sky-700 mb-1">
+                <Globe className="w-3.5 h-3.5" /> Space Science
+              </div>
+              <p className="text-xs text-slate-800 font-semibold line-clamp-2">How fast is the speed of light in space?</p>
+            </button>
+
+            <button
+              onClick={() => handleSendQuery("What is Python programming language and why is it popular?")}
+              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-emerald-400 transition-all shadow-sm group cursor-pointer"
+            >
+              <div className="flex items-center gap-2 text-xs font-black text-emerald-700 mb-1">
+                <Sparkles className="w-3.5 h-3.5" /> Technology &amp; Coding
+              </div>
+              <p className="text-xs text-slate-800 font-semibold line-clamp-2">What is Python programming language?</p>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Chat Conversation Box */}
@@ -471,7 +547,7 @@ export default function AiTutorPage() {
 
           {loading && (
             <div className="flex items-center gap-2 text-xs font-bold text-teal-700 p-3 bg-teal-50 rounded-2xl border border-teal-200 w-fit">
-              <Loader2 className="w-4 h-4 animate-spin" /> Querying GURUKUL AI Tutor for {selectedSubject.toUpperCase()} ({selectedChapterId})...
+              <Loader2 className="w-4 h-4 animate-spin" /> {engineMode === 'WORLD' ? 'Querying Universal World AI Engine (Ollama Cloud gemma4:31b)...' : `Querying NCERT AI Tutor for ${selectedSubject.toUpperCase()} (${selectedChapterId})...`}
             </div>
           )}
         </div>
@@ -483,7 +559,7 @@ export default function AiTutorPage() {
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSendQuery()}
-            placeholder={`Ask your Class ${selectedGrade} ${selectedSubject.toUpperCase()} AI Tutor a question...`}
+            placeholder={engineMode === 'WORLD' ? 'Ask the Universal World AI Engine any question in the world...' : `Ask your Class ${selectedGrade} ${selectedSubject.toUpperCase()} AI Tutor a question...`}
             className="flex-1 bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3 text-sm text-slate-900 font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
           />
           <button
