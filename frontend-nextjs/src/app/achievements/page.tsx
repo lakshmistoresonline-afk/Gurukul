@@ -3,10 +3,13 @@
 import React, { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../lib/firebase';
-import { Trophy, Award, Flame, Star, Lock, BookOpen, Target, CheckCircle2, ShieldCheck } from 'lucide-react';
-import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore } from '../../lib/studentProgressStore';
+import { Trophy, Award, Flame, Star, Lock, BookOpen, Target, ShieldCheck, GraduationCap } from 'lucide-react';
+import { getStudentProgress, StudentProgressState, syncStudentProgressFromFirestore, saveSelectedGradePreference } from '../../lib/studentProgressStore';
+import { getCurriculumHierarchy } from '../../lib/curriculumClient';
 
 export default function AchievementsPage() {
+  const [selectedGrade, setSelectedGrade] = useState<string>('5');
+  const [hierarchy, setHierarchy] = useState<any[]>([]);
   const [progress, setProgress] = useState<StudentProgressState>({
     completedChapters: [],
     lastActivity: null,
@@ -19,16 +22,50 @@ export default function AchievementsPage() {
   });
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        const synced = await syncStudentProgressFromFirestore(user.uid);
-        setProgress(synced);
-      } else {
-        setProgress(getStudentProgress('guest'));
+    async function loadHierarchyData() {
+      try {
+        const hier = await getCurriculumHierarchy();
+        setHierarchy(hier || []);
+      } catch (e) {
+        console.error('Failed to load hierarchy for achievements:', e);
       }
+    }
+    loadHierarchyData();
+
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      const targetUid = user ? user.uid : 'guest';
+      const prog = user ? await syncStudentProgressFromFirestore(user.uid) : getStudentProgress('guest');
+      setProgress(prog);
+      setSelectedGrade(prog.selectedGrade || '5');
     });
-    return () => unsubscribe();
+
+    const handleGradeChanged = () => {
+      const prog = getStudentProgress('guest');
+      setSelectedGrade(prog.selectedGrade || '5');
+    };
+
+    window.addEventListener('gradeChanged', handleGradeChanged);
+    return () => {
+      unsubscribe();
+      window.removeEventListener('gradeChanged', handleGradeChanged);
+    };
   }, []);
+
+  const handleGradeSelect = async (g: string) => {
+    setSelectedGrade(g);
+    await saveSelectedGradePreference(g, 'guest');
+  };
+
+  const selectedGradeData = hierarchy.find((item: any) => String(item.grade) === String(selectedGrade));
+  let totalGradeChapters = 0;
+  (selectedGradeData?.subjects || []).forEach((s: any) => {
+    (s.books || []).forEach((b: any) => {
+      (b.units || []).forEach((u: any) => {
+        totalGradeChapters += (u.chapters || []).length;
+      });
+    });
+  });
+  if (totalGradeChapters === 0) totalGradeChapters = selectedGrade === '5' ? 47 : selectedGrade === '6' ? 64 : 305;
 
   const completedCount = progress.completedChapters.length;
   const streak = progress.streakDays;
@@ -38,7 +75,7 @@ export default function AchievementsPage() {
   const achievementList = [
     {
       title: 'First Chapter Completed',
-      desc: 'Complete your first NCERT Class 5 lesson chapter.',
+      desc: `Complete your first NCERT Class ${selectedGrade} lesson chapter.`,
       unlocked: completedCount >= 1,
       icon: BookOpen,
       color: 'text-teal-600 bg-teal-50 border-teal-200'
@@ -70,14 +107,37 @@ export default function AchievementsPage() {
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
-      <div>
-        <h1 className="text-3xl font-extrabold text-slate-900 flex items-center gap-3">
-          <Trophy className="w-8 h-8 text-amber-500" /> Achievements
-        </h1>
-        <p className="text-slate-600 text-sm mt-1">Track your progress, earn badges and celebrate your learning.</p>
+      {/* Header & Class Switcher */}
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-extrabold text-slate-900 flex items-center gap-3">
+            <Trophy className="w-8 h-8 text-amber-500" /> Achievements — Class {selectedGrade}
+          </h1>
+          <p className="text-slate-600 text-sm mt-1 font-medium">Track your verified progress, earn badges, and celebrate your Class {selectedGrade} milestones.</p>
+        </div>
+
+        {/* Class Switcher Toggle */}
+        <div className="flex items-center gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+          <span className="text-xs font-bold text-slate-600 px-2 flex items-center gap-1">
+            <GraduationCap className="w-4 h-4 text-teal-600" /> Select Class:
+          </span>
+          {['5', '6', '7'].map((g) => (
+            <button
+              key={g}
+              onClick={() => handleGradeSelect(g)}
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                selectedGrade === g
+                  ? 'bg-teal-600 text-white shadow-sm'
+                  : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+              }`}
+            >
+              Class {g}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Summary Level & Metrics Row (Light-Theme Reference Design - Screenshot 08) */}
+      {/* Summary Level & Metrics Row */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* Level Card */}
         <div className="p-5 rounded-3xl bg-white border border-slate-200 space-y-3 shadow-sm">
@@ -91,12 +151,12 @@ export default function AchievementsPage() {
             </div>
           </div>
           <div className="space-y-1">
-            <div className="flex justify-between text-[11px] font-mono text-slate-600">
-              <span>{completedCount} Chapters Mastered</span>
+            <div className="flex justify-between text-[11px] font-mono text-slate-600 font-bold">
+              <span>{completedCount} / {totalGradeChapters} Chapters</span>
               <span>{streak} Day Streak</span>
             </div>
             <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200">
-              <div className="bg-gradient-to-r from-teal-500 to-indigo-600 h-full" style={{ width: `${Math.min(100, (completedCount / 47) * 100)}%` }} />
+              <div className="bg-gradient-to-r from-teal-500 to-indigo-600 h-full" style={{ width: `${Math.min(100, (completedCount / totalGradeChapters) * 100)}%` }} />
             </div>
           </div>
         </div>
@@ -135,10 +195,10 @@ export default function AchievementsPage() {
         </div>
       </div>
 
-      {/* Badges Grid (Light-Theme Reference Design - Screenshot 08) */}
+      {/* Badges Grid */}
       <div className="space-y-4">
         <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-          <Award className="w-5 h-5 text-teal-600" /> My Badges
+          <Award className="w-5 h-5 text-teal-600" /> Class {selectedGrade} Badges
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -157,7 +217,7 @@ export default function AchievementsPage() {
                   {a.unlocked ? <Icon className="w-8 h-8" /> : <Lock className="w-8 h-8" />}
                 </div>
                 <h3 className="font-bold text-slate-900 text-base">{a.title}</h3>
-                <p className="text-xs text-slate-600">{a.desc}</p>
+                <p className="text-xs text-slate-600 font-medium">{a.desc}</p>
                 <span className={`text-[10px] px-3 py-1 rounded-full font-mono font-bold ${a.unlocked ? 'bg-teal-100 text-teal-800 border border-teal-300' : 'bg-slate-200 text-slate-600'}`}>
                   {a.unlocked ? 'Unlocked 🎉' : 'Locked 🔒'}
                 </span>

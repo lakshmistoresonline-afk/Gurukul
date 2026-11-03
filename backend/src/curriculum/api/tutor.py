@@ -187,6 +187,10 @@ def retrieve_authoritative_ncert_evidence(
         # Require at least 2 distinct meaningful token overlaps for high confidence
         if score > max_score and score >= 2:
             max_score = score
+            content_root = GurukulConfig.get_content_root()
+            src_file_path = content_root / f"Class {grade}" / subj.title() / "Source Files" / "07-Overview.json"
+            is_valid_provenance = src_file_path.exists() or (content_root / f"Class {grade}" / subj.title() / "Custom Files" / "07-Overview.json").exists()
+
             best_evidence = {
                 "grade": grade,
                 "subject": subj,
@@ -197,11 +201,11 @@ def retrieve_authoritative_ncert_evidence(
                 "chapter_title": title,
                 "source_filename": f"Class {grade}/{subj.title()}/Source Files/07-Overview.json",
                 "source_location": f"Chapter {ch_id} Core Summary Section",
-                "exact_source_passage": summary[:600] if summary else exact_passage[:600],
+                "exact_source_passage": summary[:600] if summary else full_passage[:600],
                 "retrieval_method": "authoritative_token_overlap_scoring",
                 "retrieval_score": score,
                 "relevance_decision": "HIGH_CONFIDENCE_MATCH",
-                "provenance_validation_status": "VERIFIED_SOURCE_PROVENANCE",
+                "provenance_validation_status": "VERIFIED_SOURCE_PROVENANCE" if is_valid_provenance else "UNVERIFIED",
                 "is_current_chapter": (subj == current_subject.lower() and ch_id.lower() == current_chapter_id.lower())
             }
 
@@ -231,7 +235,7 @@ def evaluate_question_relevance_pipeline(
         return {"mode": "CLARIFICATION_REQUIRED", "resolved_subject": subj_lower, "resolved_chapter": chapter_id}
 
     # Stage 2: Explicit Active Chapter Triggers
-    explicit_triggers = ["this lesson", "this chapter", "this story", "this poem", "current chapter", "author", "poet", "narrator", "main idea", "key concept", "summary", "overview", "moral", "theme", "explain", "give me an example"]
+    explicit_triggers = ["this lesson", "this chapter", "this story", "this poem", "current chapter", "active chapter", "author", "poet", "narrator", "main idea", "key concept", "lesson summary", "chapter overview", "moral of the story", "central theme"]
     if any(tr in q_lower for tr in explicit_triggers):
         return {"mode": "NCERT_CHAPTER", "resolved_subject": subj_lower, "resolved_chapter": chapter_id}
 
@@ -390,7 +394,7 @@ Provide a clear, step-by-step, encouraging answer.
     # 2b. Try Ollama Cloud API when local Ollama is offline/unavailable
     if OLLAMA_CLOUD_KEY:
         try:
-            sys_prompt = f"You are an expert NCERT Class {req.grade} AI Tutor. Response Mode: {mode}. Resolved Target Subject: {resolved_subj.upper()} ({resolved_ch_id}). Evidence: {passage_text[:1200]}. Answer in a clear, encouraging, child-friendly 5th-grade explanation."
+            sys_prompt = f"You are an expert NCERT Class {req.grade} AI Tutor. Response Mode: {mode}. Resolved Target Subject: {resolved_subj.upper()} ({resolved_ch_id}). Evidence: {passage_text[:1200]}. CRITICAL: Do NOT mention the active chapter title ('Papa's Spectacles') or active subject when Mode is GENERAL_KNOWLEDGE or NCERT_CROSS_SUBJECT. Answer in a clear, encouraging, child-friendly explanation."
             cloud_res = await asyncio.to_thread(_sync_query_ollama_cloud, OLLAMA_CLOUD_KEY, OLLAMA_CLOUD_MODEL, sys_prompt, req.question, 15)
             cloud_text = cloud_res.get("message", {}).get("content", "").strip()
             if cloud_text:
