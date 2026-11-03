@@ -21,6 +21,10 @@ OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma:2b")
 OLLAMA_TIMEOUT = int(os.getenv("OLLAMA_TIMEOUT", "10"))
 PUBLIC_MEDIA_BASE_URL = os.getenv("PUBLIC_MEDIA_BASE_URL", "/api/v1/curriculum/media/stream")
 
+OLLAMA_CLOUD_KEY = os.getenv("OLLAMA_API_KEY", "802c7f9425034b1eb58956545b8a74b1.ubyNZxMXhcyz-y8BcRXilLos")
+OLLAMA_CLOUD_URL = "https://ollama.com/api/chat"
+OLLAMA_CLOUD_MODEL = os.getenv("OLLAMA_CLOUD_MODEL", "gemma4:31b")
+
 class TutorChatRequest(BaseModel):
     grade: str = "5"
     subject: str
@@ -70,6 +74,28 @@ def _sync_query_ollama(url: str, payload: bytes, timeout_sec: int) -> dict:
         f"{url}/api/generate",
         data=payload,
         headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+    with urllib.request.urlopen(req_obj, timeout=timeout_sec) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+def _sync_query_ollama_cloud(key: str, model: str, system_prompt: str, user_prompt: str, timeout_sec: int = 15) -> dict:
+    payload = json.dumps({
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        "stream": False
+    }).encode("utf-8")
+
+    req_obj = urllib.request.Request(
+        OLLAMA_CLOUD_URL,
+        data=payload,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {key}"
+        },
         method="POST"
     )
     with urllib.request.urlopen(req_obj, timeout=timeout_sec) as resp:
@@ -339,6 +365,29 @@ Provide a clear, step-by-step, encouraging answer.
             }
     except Exception:
         pass
+
+    # 2b. Try Ollama Cloud API when local Ollama is offline/unavailable
+    if OLLAMA_CLOUD_KEY:
+        try:
+            sys_prompt = f"You are an expert NCERT Class {req.grade} AI Tutor. Response Mode: {mode}. Resolved Target Subject: {resolved_subj.upper()} ({resolved_ch_id}). Evidence: {passage_text[:1200]}. Answer in a clear, encouraging, child-friendly 5th-grade explanation."
+            cloud_res = await asyncio.to_thread(_sync_query_ollama_cloud, OLLAMA_CLOUD_KEY, OLLAMA_CLOUD_MODEL, sys_prompt, req.question, 15)
+            cloud_text = cloud_res.get("message", {}).get("content", "").strip()
+            if cloud_text:
+                return {
+                    "status": "ONLINE",
+                    "mode": mode,
+                    "model": f"ollama-cloud/{OLLAMA_CLOUD_MODEL}",
+                    "response": cloud_text,
+                    "resolved_subject": resolved_subj,
+                    "resolved_chapter_id": resolved_ch_id,
+                    "resolved_chapter_title": evidence.get("chapter_title") if evidence else None,
+                    "evidence": evidence,
+                    "media": media_meta,
+                    "is_ai_generated": True,
+                    "uid": current_user.uid
+                }
+        except Exception as e:
+            print(f"Ollama Cloud fallback query failed: {e}")
 
     # 3. Dynamic RAG Evidence Grounded Engine
     detailed_answer = ""
