@@ -1,6 +1,7 @@
 import os
 import json
-from fastapi import APIRouter, HTTPException, Query, Path, Depends, Security
+from pathlib import Path as FilePath
+from fastapi import APIRouter, HTTPException, Query, Depends, Security
 from fastapi.responses import FileResponse
 from typing import Dict, Any, List, Optional
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
@@ -101,7 +102,7 @@ async def stream_local_media(
         for root_dir, dirs, files in os.walk(g_dir):
             for f in files:
                 if f == clean_name or f.lower() == clean_name.lower():
-                    full_p = Path(root_dir) / f
+                    full_p = FilePath(root_dir) / f
                     return FileResponse(path=str(full_p), media_type=media_type_header, filename=f)
 
     # 2. Substring / clean name match
@@ -113,7 +114,7 @@ async def stream_local_media(
         for root_dir, dirs, files in os.walk(g_dir):
             for f in files:
                 if clean_name.lower() in f.lower() or f.lower() in clean_name.lower():
-                    full_p = Path(root_dir) / f
+                    full_p = FilePath(root_dir) / f
                     return FileResponse(path=str(full_p), media_type=media_type_header, filename=f)
 
     raise HTTPException(status_code=404, detail=f"Media asset file not found: {filename}")
