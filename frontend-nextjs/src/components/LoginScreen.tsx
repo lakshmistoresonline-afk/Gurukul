@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../lib/firebase';
 
 interface LoginScreenProps {
@@ -23,11 +23,21 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
     const trimmedEmail = email.trim().toLowerCase();
 
     try {
-      // Pure, real Firebase Authentication
+      // 1. Try Firebase Sign In
       await signInWithEmailAndPassword(auth, trimmedEmail, password);
       onLoginSuccess();
-      window.location.reload();
     } catch (err: any) {
+      // 2. If account doesn't exist in Firebase yet, auto-register
+      if (err.code === 'auth/invalid-credential' || err.code === 'auth/user-not-found' || err.code === 'auth/invalid-email') {
+        try {
+          await createUserWithEmailAndPassword(auth, trimmedEmail, password);
+          onLoginSuccess();
+          return;
+        } catch (createErr: any) {
+          setError(`Firebase Auth Error (${err.code}): ${err.message || 'Authentication failed.'}`);
+          return;
+        }
+      }
       const code = err.code || 'unknown';
       const msg = err.message || 'Failed to sign in with Firebase.';
       setError(`Firebase Auth Error (${code}): ${msg}`);

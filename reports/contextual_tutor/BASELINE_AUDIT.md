@@ -35,4 +35,4 @@ This baseline audit evaluates the architecture, evidence retrieval pipeline, cur
 
 - **Next.js Static & Dynamic Build**: 13/13 routes compiled 100% cleanly (`npm run build`).
 - **Backend Test Automation Suite**: 151/151 tests passing (`python -m pytest backend/tests/ -v`).
-- **Ollama Cloud API Integration**: Tested and operational with model `gemma4:31b` (API Key: `802c7f9425034b1eb58956545b8a74b1.ubyNZxMXhcyz-y8BcRXilLos`).
+- **Ollama Cloud API Integration**: Tested and operational with model `gemma4:31b` (API Key: `[REDACTED_SECRET_KEY]`).

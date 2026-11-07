@@ -10,15 +10,26 @@ import {
   ArrowRight,
   Compass,
   Target,
-  Zap,
-  RotateCw,
+  Flame,
+  Trophy,
+  Bot,
+  FlaskConical,
   HelpCircle,
   AlertCircle,
   Loader2,
   ChevronLeft,
   ChevronRight,
   X,
-  Check
+  Check,
+  GraduationCap,
+  Calculator,
+  Feather,
+  Globe,
+  Layers,
+  Star,
+  Zap,
+  CheckCircle2,
+  Award
 } from 'lucide-react';
 import { getCurriculumHierarchy, buildCurriculumUrl, CurriculumApiClient } from '../lib/curriculumClient';
 import {
@@ -26,8 +37,83 @@ import {
   StudentProgressState,
   syncStudentProgressFromFirestore,
   saveSelectedGradePreference,
-  recordFlashcardReviewEvent
+  recordFlashcardReviewEvent,
+  getAuthoritativeClassForUser
 } from '../lib/studentProgressStore';
+
+interface SubjectTheme {
+  icon: any;
+  emoji: string;
+  bgGradient: string;
+  borderColor: string;
+  badgeBg: string;
+  badgeText: string;
+  btnBg: string;
+  btnHoverBg: string;
+}
+
+const SUBJECT_THEMES: Record<string, SubjectTheme> = {
+  english: {
+    icon: BookOpen,
+    emoji: '📘',
+    bgGradient: 'from-indigo-50/90 via-purple-50/40 to-white',
+    borderColor: 'border-indigo-200/90 hover:border-indigo-400',
+    badgeBg: 'bg-indigo-100',
+    badgeText: 'text-indigo-800',
+    btnBg: 'bg-indigo-600',
+    btnHoverBg: 'hover:bg-indigo-500'
+  },
+  hindi: {
+    icon: Feather,
+    emoji: '📜',
+    bgGradient: 'from-amber-50/90 via-orange-50/40 to-white',
+    borderColor: 'border-amber-200/90 hover:border-amber-400',
+    badgeBg: 'bg-amber-100',
+    badgeText: 'text-amber-800',
+    btnBg: 'bg-amber-600',
+    btnHoverBg: 'hover:bg-amber-500'
+  },
+  mathematics: {
+    icon: Calculator,
+    emoji: '📐',
+    bgGradient: 'from-emerald-50/90 via-teal-50/40 to-white',
+    borderColor: 'border-emerald-200/90 hover:border-emerald-400',
+    badgeBg: 'bg-emerald-100',
+    badgeText: 'text-emerald-800',
+    btnBg: 'bg-emerald-600',
+    btnHoverBg: 'hover:bg-emerald-500'
+  },
+  maths: {
+    icon: Calculator,
+    emoji: '📐',
+    bgGradient: 'from-emerald-50/90 via-teal-50/40 to-white',
+    borderColor: 'border-emerald-200/90 hover:border-emerald-400',
+    badgeBg: 'bg-emerald-100',
+    badgeText: 'text-emerald-800',
+    btnBg: 'bg-emerald-600',
+    btnHoverBg: 'hover:bg-emerald-500'
+  },
+  science: {
+    icon: FlaskConical,
+    emoji: '🧪',
+    bgGradient: 'from-cyan-50/90 via-sky-50/40 to-white',
+    borderColor: 'border-cyan-200/90 hover:border-cyan-400',
+    badgeBg: 'bg-cyan-100',
+    badgeText: 'text-cyan-800',
+    btnBg: 'bg-cyan-600',
+    btnHoverBg: 'hover:bg-cyan-500'
+  },
+  socialscience: {
+    icon: Globe,
+    emoji: '🌍',
+    bgGradient: 'from-rose-50/90 via-pink-50/40 to-white',
+    borderColor: 'border-rose-200/90 hover:border-rose-400',
+    badgeBg: 'bg-rose-100',
+    badgeText: 'text-rose-800',
+    btnBg: 'bg-rose-600',
+    btnHoverBg: 'hover:bg-rose-500'
+  }
+};
 
 export default function StudentDashboard() {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -62,17 +148,21 @@ export default function StudentDashboard() {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
-      if (user) {
-        const synced = await syncStudentProgressFromFirestore(user.uid);
-        setProgress(synced);
-      } else {
-        setProgress(getStudentProgress('guest'));
-      }
+      const targetUid = user ? user.uid : 'guest';
+      const synced = await syncStudentProgressFromFirestore(targetUid);
+      const authGrade = synced.selectedGrade || getAuthoritativeClassForUser(user, targetUid);
+      setProgress({
+        ...synced,
+        selectedGrade: authGrade
+      });
     });
 
     const handleGradeChanged = () => {
-      const prog = getStudentProgress('guest');
-      setProgress((prev) => ({ ...prev, selectedGrade: prog.selectedGrade || '5' }));
+      const authUser = auth.currentUser;
+      const targetUid = authUser ? authUser.uid : 'guest';
+      const prog = getStudentProgress(targetUid);
+      const authGrade = prog.selectedGrade || getAuthoritativeClassForUser(authUser, targetUid);
+      setProgress((prev) => ({ ...prev, selectedGrade: authGrade }));
     };
 
     window.addEventListener('gradeChanged', handleGradeChanged);
@@ -170,7 +260,6 @@ export default function StudentDashboard() {
           content_type: 'flashcards'
         });
 
-        // Stale response protection
         if (currentToken !== reqIdRef.current) return;
 
         let cards: any[] = [];
@@ -182,7 +271,6 @@ export default function StudentDashboard() {
           cards = [res.data];
         }
 
-        // Validate front and back fields
         const validCards = cards.filter(c => c && (c.front || c.word || c.term) && (c.back || c.definition || c.meaning));
         setRealFlashcards(validCards);
         setFlashcardIdx(0);
@@ -209,18 +297,15 @@ export default function StudentDashboard() {
     window.dispatchEvent(new Event('gradeChanged'));
   };
 
-  // Real Student Profile & Goal Progress Calculation (Local Calendar Date)
   const studentName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Learner';
   const todayLocalDateStr = new Date().toLocaleDateString('en-CA');
 
-  // Filter & deduplicate genuine events for today
   const validEventIds = new Set<string>();
   const todayValidEvents = (progress.eventsLedger || []).filter((e: any) => {
     if (!e || !e.timestamp || isNaN(new Date(e.timestamp).getTime())) return false;
     const eventDate = new Date(e.timestamp).toLocaleDateString('en-CA');
     if (eventDate !== todayLocalDateStr) return false;
 
-    // Deduplicate by event_id
     const key = e.event_id || `${e.type}_${e.chapter_id}_${e.timestamp}`;
     if (validEventIds.has(key)) return false;
     validEventIds.add(key);
@@ -231,45 +316,103 @@ export default function StudentDashboard() {
   const todayEventsCount = todayValidEvents.length;
   const currentCard = realFlashcards.length > 0 ? realFlashcards[flashcardIdx] : null;
 
+  // Gamification Metrics
+  const xpPoints = (progress.completedChapters.length * 100) + (progress.quizScores.length * 50) + (todayEventsCount * 20);
+  const currentLevel = Math.floor(xpPoints / 250) + 1;
+  const levelProgressXp = xpPoints % 250;
+
   return (
     <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
-      {/* Page Header */}
-      <div>
-        <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">My Learning Dashboard</h1>
-        <p className="text-slate-600 text-xs sm:text-sm mt-1 font-medium">A focused home for the learner — real progress, real content, clear next steps.</p>
-      </div>
+      {/* Student Gamified Hero Banner */}
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-teal-700 via-emerald-700 to-indigo-800 text-white p-6 sm:p-8 shadow-xl">
+        <div className="absolute right-0 top-0 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
 
-      {/* Student Welcome Banner with Class Selector */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-sky-100 via-teal-50 to-indigo-50 border border-sky-200/80 p-6 sm:p-8 shadow-2xs">
-        <div className="relative z-10 space-y-3">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <div className="text-[11px] font-black uppercase tracking-wider text-teal-800 font-mono">
-              GOOD MORNING, {studentName}
+        <div className="relative z-10 space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-xs font-black uppercase tracking-wider text-teal-100">
+              <Sparkles className="w-4 h-4 text-amber-300 animate-bounce" />
+              <span>WELCOME BACK, {studentName.toUpperCase()}!</span>
             </div>
 
-            <button
-              onClick={() => setGradeModalOpen(true)}
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-teal-800 text-xs font-extrabold border border-teal-200 shadow-2xs hover:bg-teal-50 transition-all cursor-pointer"
-            >
-              <Compass className="w-3.5 h-3.5 text-teal-600" /> Class {selectedGrade} • Change class
-            </button>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/25 border border-amber-300/40 text-amber-200 text-xs font-black">
+                <Flame className="w-4 h-4 text-amber-400 animate-pulse" />
+                <span>{progress.streakDays || 1} Day Streak</span>
+              </div>
+
+              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-400/25 border border-teal-300/40 text-teal-100 text-xs font-black">
+                <Star className="w-4 h-4 text-amber-300 fill-amber-300" />
+                <span>Level {currentLevel} • {xpPoints} XP</span>
+              </div>
+
+              {currentUser?.email?.includes('admin') ? (
+                <button
+                  onClick={() => setGradeModalOpen(true)}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white text-teal-900 text-xs font-black shadow-md hover:bg-teal-50 transition-all cursor-pointer"
+                >
+                  <Compass className="w-3.5 h-3.5 text-teal-600" /> Class {selectedGrade} • Switch
+                </button>
+              ) : (
+                <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-black border border-white/30">
+                  <GraduationCap className="w-4 h-4 text-teal-300" />
+                  <span>Class {selectedGrade} Student</span>
+                </div>
+              )}
+            </div>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-            Your next learning adventure starts here.
-          </h2>
-          <p className="text-slate-600 text-xs font-semibold">
-            Selected class: Class {selectedGrade} • {isGradeInHierarchy ? 'Authoritative Curriculum Active' : 'Loading Registry'}
-          </p>
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-black tracking-tight leading-tight">
+              Ready for your next Class {selectedGrade} learning adventure?
+            </h2>
+            <p className="text-teal-100/90 text-xs sm:text-sm font-semibold mt-1 max-w-2xl">
+              Explore your interactive NCERT subjects, complete daily missions, or get instant help from your AI Tutor!
+            </p>
+          </div>
+
+          {/* Quick Access Action Shortcuts */}
+          <div className="flex flex-wrap gap-2 pt-2">
+            <Link
+              href="/subjects"
+              className="px-4 py-2 bg-white text-teal-900 hover:bg-teal-50 font-black text-xs rounded-xl shadow-md transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <BookOpen className="w-4 h-4 text-teal-700" />
+              <span>Explore Subjects</span>
+            </Link>
+
+            <Link
+              href="/tutor"
+              className="px-4 py-2 bg-teal-500/30 hover:bg-teal-500/50 text-white font-black text-xs rounded-xl border border-white/25 backdrop-blur-md transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <Bot className="w-4 h-4 text-teal-200" />
+              <span>Ask AI Tutor</span>
+            </Link>
+
+            <Link
+              href="/practice"
+              className="px-4 py-2 bg-teal-500/30 hover:bg-teal-500/50 text-white font-black text-xs rounded-xl border border-white/25 backdrop-blur-md transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <Target className="w-4 h-4 text-amber-300" />
+              <span>Practice Arena</span>
+            </Link>
+
+            <Link
+              href="/journey"
+              className="px-4 py-2 bg-teal-500/30 hover:bg-teal-500/50 text-white font-black text-xs rounded-xl border border-white/25 backdrop-blur-md transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <Compass className="w-4 h-4 text-amber-300" />
+              <span>Learning Roadmap</span>
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* Class Selector Modal */}
+      {/* Class Selector Modal for Admin */}
       {gradeModalOpen && (
         <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl p-6 max-w-md w-full border border-slate-200 shadow-2xl space-y-4 animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-              <h3 className="font-extrabold text-slate-900 text-base">Select Grade / Class</h3>
+              <h3 className="font-extrabold text-slate-900 text-base">Select Admin Grade</h3>
               <button onClick={() => setGradeModalOpen(false)} className="text-slate-400 hover:text-slate-700">
                 <X className="w-5 h-5" />
               </button>
@@ -299,7 +442,7 @@ export default function StudentDashboard() {
       {loadingHierarchy && (
         <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex items-center justify-center gap-3">
           <Loader2 className="w-6 h-6 animate-spin text-teal-600" />
-          <span className="text-sm font-bold">Loading authoritative curriculum hierarchy...</span>
+          <span className="text-sm font-bold">Loading Class {selectedGrade} curriculum modules...</span>
         </div>
       )}
 
@@ -310,63 +453,178 @@ export default function StudentDashboard() {
         </div>
       )}
 
-      {/* Two Column Grid: Today's Learning Goal & Continue Learning */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Today's Learning Goal Card */}
-        <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
-          <div className="space-y-1">
-            <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono">TODAY&apos;S LEARNING GOAL</h3>
-            <p className="text-2xl font-black text-slate-900">{Math.min(2, todayEventsCount)} of 2 activities completed</p>
+      {/* Class Subject Workspaces Quick Access Grid */}
+      {!loadingHierarchy && rawSubjects.length > 0 && (
+        <div className="space-y-3">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xs font-mono font-black uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+              <Layers className="w-4 h-4 text-teal-600" /> CLASS {selectedGrade} SUBJECT WORKSPACES
+            </h3>
+
+            <Link href="/subjects" className="text-xs font-black text-teal-700 hover:underline flex items-center gap-1">
+              <span>View All Subjects</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
 
-          <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden border border-slate-200">
-            <div
-              className="bg-teal-600 h-full transition-all duration-500"
-              style={{ width: `${Math.min(100, (todayEventsCount / 2) * 100)}%` }}
-            />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {rawSubjects.map((subjObj: any) => {
+              const canonSubj = (subjObj.canonical_subject || subjObj.subject || '').toLowerCase().replace(/\s+/g, '');
+              const displayName = subjObj.subject || canonSubj;
+              const theme = SUBJECT_THEMES[canonSubj] || SUBJECT_THEMES['english'];
+
+              return (
+                <Link
+                  key={canonSubj}
+                  href="/subjects"
+                  className={`p-4 rounded-3xl border ${theme.borderColor} bg-gradient-to-br ${theme.bgGradient} flex items-center gap-3 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all group cursor-pointer`}
+                >
+                  <div className={`w-11 h-11 rounded-2xl ${theme.badgeBg} flex items-center justify-center text-2xl shadow-2xs shrink-0`}>
+                    <span>{theme.emoji}</span>
+                  </div>
+                  <div className="overflow-hidden">
+                    <p className="text-xs font-black text-slate-900 capitalize truncate">{displayName}</p>
+                    <p className={`text-[10px] font-extrabold ${theme.badgeText} truncate`}>
+                      {(subjObj.books || []).reduce((acc: number, b: any) => acc + (b.units || []).reduce((uAcc: number, u: any) => uAcc + (u.chapters || []).length, 0), 0)} Chapters
+                    </p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Three Column Grid: Gamified Today's Quests, Level Progress & Resume Learning */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Today's Mission Quests Card */}
+        <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono flex items-center gap-1.5">
+                <Target className="w-4 h-4 text-teal-600" /> DAILY QUESTS
+              </h3>
+              <span className="text-[10px] font-mono font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200">
+                +100 XP
+              </span>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className={`w-4 h-4 ${todayEventsCount > 0 ? 'text-emerald-600' : 'text-slate-300'}`} />
+                  <span>Complete 1 Chapter Lesson</span>
+                </div>
+                <span className="text-[10px] font-mono font-extrabold text-amber-600">+50 XP</span>
+              </div>
+
+              <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className={`w-4 h-4 ${todayEventsCount > 1 ? 'text-emerald-600' : 'text-slate-300'}`} />
+                  <span>Practice Arena Quiz</span>
+                </div>
+                <span className="text-[10px] font-mono font-extrabold text-amber-600">+30 XP</span>
+              </div>
+
+              <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className={`w-4 h-4 ${todayEventsCount > 2 ? 'text-emerald-600' : 'text-slate-300'}`} />
+                  <span>Ask AI Tutor 1 Question</span>
+                </div>
+                <span className="text-[10px] font-mono font-extrabold text-amber-600">+20 XP</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-1.5 pt-2">
+            <div className="flex justify-between text-xs font-mono font-bold text-slate-500">
+              <span>Goal Progress</span>
+              <span>{Math.min(100, Math.round((todayEventsCount / 2) * 100))}%</span>
+            </div>
+            <div className="w-full bg-slate-100 rounded-full h-3.5 overflow-hidden border border-slate-200">
+              <div
+                className="bg-gradient-to-r from-teal-500 to-emerald-600 h-full transition-all duration-500"
+                style={{ width: `${Math.min(100, (todayEventsCount / 2) * 100)}%` }}
+              />
+            </div>
           </div>
         </div>
 
-        {/* Continue Learning Card */}
-        <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-4">
+        {/* Scholar Level & XP Progress Card */}
+        <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm space-y-4 flex flex-col justify-between">
           <div className="space-y-2">
-            <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono">CONTINUE LEARNING</h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono flex items-center gap-1.5">
+                <Award className="w-4 h-4 text-teal-600" /> SCHOLAR LEVEL
+              </h3>
+              <span className="text-[10px] font-mono font-black text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-200">
+                Level {currentLevel}
+              </span>
+            </div>
+
+            <div className="text-center py-2">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-white flex items-center justify-center text-3xl mx-auto shadow-md">
+                🏆
+              </div>
+              <h4 className="text-lg font-black text-slate-900 mt-2">Class {selectedGrade} Scholar</h4>
+              <p className="text-xs text-slate-500 font-semibold">{levelProgressXp} / 250 XP to Level {currentLevel + 1}</p>
+            </div>
+          </div>
+
+          <div className="space-y-1.5">
+            <div className="flex justify-between text-xs font-mono font-bold text-slate-500">
+              <span>Next Level Progress</span>
+              <span>{Math.round((levelProgressXp / 250) * 100)}%</span>
+            </div>
+            <div className="w-full bg-slate-100 rounded-full h-3.5 overflow-hidden border border-slate-200">
+              <div
+                className="bg-gradient-to-r from-amber-400 to-amber-500 h-full transition-all duration-500"
+                style={{ width: `${Math.round((levelProgressXp / 250) * 100)}%` }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Continue Learning Resume Card */}
+        <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-4">
+          <div className="space-y-2">
+            <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono flex items-center gap-1.5">
+              <Compass className="w-4 h-4 text-teal-600" /> CONTINUE LEARNING
+            </h3>
+
             {isValidLastActivity ? (
-              <div>
-                <p className="text-xs font-bold text-teal-600 uppercase tracking-wide">
+              <div className="p-3.5 rounded-2xl bg-teal-50/60 border border-teal-200/80 space-y-1">
+                <p className="text-[11px] font-black text-teal-700 uppercase tracking-wider font-mono">
                   {continueSubjectTitle}
                 </p>
                 <p className="text-sm font-black text-slate-900 leading-snug">
                   {continueChapterTitle}
                 </p>
-                <p className="text-xs text-slate-500 font-medium">Resume at the last validated chapter</p>
+                <p className="text-[10px] text-slate-500 font-semibold">Resume at the last validated chapter workspace</p>
               </div>
             ) : (
-              <div>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-wide">Curriculum Selection</p>
-                <p className="text-sm font-bold text-slate-700">No active chapter session saved yet.</p>
+              <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+                <p className="text-[11px] font-extrabold text-slate-500 uppercase tracking-wider">Curriculum Workspace</p>
+                <p className="text-xs font-black text-slate-800">Select any subject above to enter a chapter!</p>
               </div>
             )}
-
-            <Link
-              href={continueUrl}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-sm transition-all mt-1"
-            >
-              {isValidLastActivity ? 'Continue chapter' : 'Browse Subjects'} <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
           </div>
 
-          <div className="w-20 h-20 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-3xl shrink-0 shadow-inner">
-            📖
-          </div>
+          <Link
+            href={continueUrl}
+            className="w-full py-3 rounded-2xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <span>{isValidLastActivity ? 'Continue Chapter' : 'Browse Subjects'}</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
 
       {/* Quick Revision Flashcard Widget */}
-      <div className="p-6 rounded-3xl bg-white border border-slate-200 space-y-4 shadow-sm">
+      <div className="p-6 rounded-3xl bg-white border border-slate-200/90 space-y-4 shadow-sm">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
-            <h3 className="text-lg font-black text-slate-900">QUICK REVISION</h3>
+            <h3 className="text-xl font-black text-slate-900 tracking-tight">QUICK REVISION FLASHCARDS</h3>
             <p className="text-xs text-slate-500 font-medium">
               {isValidLastActivity ? `Flashcards loaded from ${continueSubjectTitle} • ${lastAct?.chapter_id}` : 'Flashcards loaded from the active chapter'}
             </p>
@@ -382,7 +640,7 @@ export default function StudentDashboard() {
                   setFlashcardFlipped(false);
                   setFlashcardIdx((prev) => (prev - 1 + realFlashcards.length) % realFlashcards.length);
                 }}
-                className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200"
+                className="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 cursor-pointer transition-all"
                 title="Previous Flashcard"
               >
                 <ChevronLeft className="w-4 h-4" />
@@ -392,7 +650,7 @@ export default function StudentDashboard() {
                   setFlashcardFlipped(false);
                   setFlashcardIdx((prev) => (prev + 1) % realFlashcards.length);
                 }}
-                className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200"
+                className="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 cursor-pointer transition-all"
                 title="Next Flashcard"
               >
                 <ChevronRight className="w-4 h-4" />
@@ -418,7 +676,7 @@ export default function StudentDashboard() {
         {!loadingFlashcards && !flashcardError && !currentCard && (
           <div className="p-12 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
             <HelpCircle className="w-8 h-8 text-slate-400 mx-auto" />
-            <p className="text-xs font-bold text-slate-600">If no chapter or flashcards exist, show an honest empty state — never sample content.</p>
+            <p className="text-xs font-bold text-slate-600">Select any subject chapter above to load interactive quick revision flashcards!</p>
           </div>
         )}
 
@@ -445,7 +703,7 @@ export default function StudentDashboard() {
                 recordFlashcardReviewEvent(lastAct.chapter_id, currentUser.uid);
               }
             }}
-            className="p-10 rounded-2xl bg-[#F8FAFC] border border-blue-200/80 text-center cursor-pointer hover:border-teal-400 transition-all select-none min-h-[140px] flex flex-col items-center justify-center space-y-2 shadow-2xs focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="p-10 rounded-2xl bg-gradient-to-br from-slate-50 via-teal-50/20 to-indigo-50/30 border border-teal-200/80 text-center cursor-pointer hover:border-teal-400 transition-all select-none min-h-[150px] flex flex-col items-center justify-center space-y-2 shadow-2xs focus:outline-none focus:ring-2 focus:ring-teal-500"
           >
             {!flashcardFlipped ? (
               <div className="space-y-1">
@@ -456,10 +714,10 @@ export default function StudentDashboard() {
               </div>
             ) : (
               <div className="space-y-1 animate-in fade-in duration-200">
-                <p className="text-sm font-bold text-slate-900 leading-relaxed max-w-xl mx-auto">
+                <p className="text-sm sm:text-base font-bold text-slate-900 leading-relaxed max-w-xl mx-auto">
                   {currentCard.back || currentCard.definition || currentCard.meaning}
                 </p>
-                <p className="text-[10px] text-slate-500 font-mono">Press Space to flip back</p>
+                <p className="text-[10px] text-slate-500 font-mono font-bold">Press Space to flip back</p>
               </div>
             )}
           </div>

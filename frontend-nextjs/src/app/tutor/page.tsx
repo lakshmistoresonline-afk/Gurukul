@@ -1,10 +1,13 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../../lib/firebase';
 import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2, Copy, Volume2, VolumeX, RotateCcw, ThumbsUp, ThumbsDown, Check, Globe, GraduationCap, Calculator } from 'lucide-react';
 import { getCurriculumHierarchy } from '../../lib/curriculumClient';
 import { sendHybridTutorChat } from '../../lib/webLlmClient';
-import { getStudentProgress } from '../../lib/studentProgressStore';
+import { getStudentProgress, syncStudentProgressFromFirestore, getAuthoritativeClassForUser } from '../../lib/studentProgressStore';
 
 interface ChatMessage {
   id: string;
@@ -39,20 +42,38 @@ export default function AiTutorPage() {
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [speakingId, setSpeakingId] = useState<string | null>(null);
 
-  const [chatHistory, setChatHistory] = useState<ChatMessage[]>([
+  // Separate, Isolated Chat Histories for NCERT Tutor and Universal World AI Modes
+  const [ncertChatHistory, setNcertChatHistory] = useState<ChatMessage[]>([
     {
-      id: 'welcome-msg',
+      id: 'welcome-ncert',
       sender: 'ai',
-      text: "🤖 Welcome! I am your GURUKUL AI Tutor. Switch between NCERT Contextual Tutor mode and Universal World AI Engine to ask any question in the world!",
+      text: "🤖 Welcome! I am your NCERT Contextual AI Tutor. Ask me any question about your NCERT textbook chapters, formulas, or cross-subject topics!",
       question: '',
-      grade: '5',
+      grade: '6',
       subject: 'english',
       book: 'english',
       part: 'main',
       unit: 'U01',
-      chapter_id: 'G5-ENG-U01-C01',
+      chapter_id: 'G6-ENG-U01-C01',
       mode: 'NCERT_CHAPTER',
       model: 'NCERT Grounded AI Engine'
+    }
+  ]);
+
+  const [worldChatHistory, setWorldChatHistory] = useState<ChatMessage[]>([
+    {
+      id: 'welcome-world',
+      sender: 'ai',
+      text: "🤖 Welcome to Universal World AI Engine! Ask any question in the world — Space Science, Python & Coding, World History, or Step-by-Step Math!",
+      question: '',
+      grade: '6',
+      subject: 'general',
+      book: 'world',
+      part: 'main',
+      unit: 'U01',
+      chapter_id: 'WORLD-AI',
+      mode: 'WORLD_KNOWLEDGE',
+      model: 'Universal World AI Engine'
     }
   ]);
 
@@ -61,21 +82,34 @@ export default function AiTutorPage() {
       try {
         const data = await getCurriculumHierarchy();
         setHierarchy(data || []);
-        const prog = getStudentProgress('guest');
-        setSelectedGrade(prog.selectedGrade || '5');
       } catch (e) {
         console.error('Failed to load hierarchy in tutor page:', e);
       }
     }
     loadData();
 
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      const targetUid = user ? user.uid : 'guest';
+      const synced = await syncStudentProgressFromFirestore(targetUid);
+      const authGrade = synced.selectedGrade || getAuthoritativeClassForUser(user, targetUid);
+      setSelectedGrade(authGrade);
+      setSelectedChapterId(`G${authGrade}-ENG-U01-C01`);
+    });
+
     const handleGradeChanged = () => {
-      const prog = getStudentProgress('guest');
-      setSelectedGrade(prog.selectedGrade || '5');
+      const authUser = auth.currentUser;
+      const targetUid = authUser ? authUser.uid : 'guest';
+      const prog = getStudentProgress(targetUid);
+      const authGrade = prog.selectedGrade || getAuthoritativeClassForUser(authUser, targetUid);
+      setSelectedGrade(authGrade);
+      setSelectedChapterId(`G${authGrade}-ENG-U01-C01`);
     };
 
     window.addEventListener('gradeChanged', handleGradeChanged);
-    return () => window.removeEventListener('gradeChanged', handleGradeChanged);
+    return () => {
+      unsubscribe();
+      window.removeEventListener('gradeChanged', handleGradeChanged);
+    };
   }, []);
 
   const gradeData = hierarchy.find((item: any) => String(item.grade) === String(selectedGrade));
@@ -94,18 +128,86 @@ export default function AiTutorPage() {
     });
   });
 
-  const activeChapterObj = availableChapters.find((c: any) => c.chapter_id === selectedChapterId) || availableChapters[0];
-  const activeChapterTitle = activeChapterObj?.chapter_title || selectedChapterId;
+  const activeSubj = selectedSubject.toLowerCase();
+  let activeBook = '';
+  let activePart = '';
+  let activeUnit = '';
+  let activeChId = selectedChapterId;
+  let activeChapterTitle = selectedChapterId;
+
+  if (currentSubjectObj && Array.isArray(currentSubjectObj.books)) {
+    for (const b of currentSubjectObj.books) {
+      const bookId = b.book_id || b.book;
+      const bookPart = b.part || 'main';
+      for (const u of (b.units || [])) {
+        const unitId = u.unit_id || u.unit || 'U01';
+        const foundCh = (u.chapters || []).find((c: any) => c.chapter_id === selectedChapterId);
+        if (foundCh) {
+          activeBook = bookId;
+          activePart = bookPart;
+          activeUnit = unitId;
+          activeChapterTitle = foundCh.chapter_title || foundCh.chapter_id;
+          break;
+        }
+      }
+      if (activeBook) break;
+    }
+
+    if (!activeBook && currentSubjectObj.books.length > 0) {
+      const firstB = currentSubjectObj.books[0];
+      activeBook = firstB.book_id || firstB.book || activeSubj;
+      activePart = firstB.part || 'main';
+      if (firstB.units && firstB.units.length > 0) {
+        const firstU = firstB.units[0];
+        activeUnit = firstU.unit_id || firstU.unit || 'U01';
+        if (firstU.chapters && firstU.chapters.length > 0) {
+          if (!activeChId) activeChId = firstU.chapters[0].chapter_id;
+          if (activeChapterTitle === selectedChapterId) activeChapterTitle = firstU.chapters[0].chapter_title || firstU.chapters[0].chapter_id;
+        }
+      }
+    }
+  }
+
+  const activeChatHistory = engineMode === 'NCERT' ? ncertChatHistory : worldChatHistory;
 
   const handleSendQuery = async (customQuestion?: string, targetSubject?: string, targetChapter?: string) => {
     const queryText = (customQuestion || question).trim();
     if (!queryText || loading) return;
 
-    const activeSubj = targetSubject || selectedSubject;
-    const activeBook = currentSubjectObj?.books?.[0]?.book_id || activeSubj;
-    const activePart = currentSubjectObj?.books?.[0]?.part || 'main';
-    const activeUnit = 'U01';
-    const activeChId = targetChapter || selectedChapterId || `G${selectedGrade}-${activeSubj.slice(0,3).toUpperCase()}-U01-C01`;
+    const reqSubj = (targetSubject || selectedSubject).toLowerCase();
+    let reqChId = targetChapter || selectedChapterId || activeChId;
+
+    let reqBook = activeBook;
+    let reqPart = activePart;
+    let reqUnit = activeUnit;
+
+    const targetSubjObj = subjectsList.find((s: any) =>
+      s.canonical_subject?.toLowerCase() === reqSubj ||
+      s.subject?.toLowerCase() === reqSubj
+    );
+
+    if (targetSubjObj && Array.isArray(targetSubjObj.books)) {
+      for (const b of targetSubjObj.books) {
+        const bookId = b.book_id || b.book;
+        const bookPart = b.part || 'main';
+        for (const u of (b.units || [])) {
+          const unitId = u.unit_id || u.unit || 'U01';
+          const foundCh = (u.chapters || []).find((c: any) => c.chapter_id === reqChId);
+          if (foundCh) {
+            reqBook = bookId;
+            reqPart = bookPart;
+            reqUnit = unitId;
+            break;
+          }
+        }
+        if (reqBook && reqBook !== activeBook) break;
+      }
+    }
+
+    if (!reqBook) reqBook = reqSubj;
+    if (!reqPart) reqPart = 'main';
+    if (!reqUnit) reqUnit = 'U01';
+    if (!reqChId) reqChId = `G${selectedGrade}-${reqSubj.substring(0, 3).toUpperCase()}-U01-C01`;
 
     if (targetSubject && targetSubject !== selectedSubject) {
       setSelectedSubject(targetSubject);
@@ -124,23 +226,27 @@ export default function AiTutorPage() {
       text: queryText,
       question: queryText,
       grade: selectedGrade,
-      subject: activeSubj,
-      book: activeBook,
-      part: activePart,
-      unit: activeUnit,
-      chapter_id: activeChId
+      subject: reqSubj,
+      book: reqBook,
+      part: reqPart,
+      unit: reqUnit,
+      chapter_id: reqChId
     };
 
-    setChatHistory(prev => [...prev, userMsg]);
+    if (engineMode === 'NCERT') {
+      setNcertChatHistory(prev => [...prev, userMsg]);
+    } else {
+      setWorldChatHistory(prev => [...prev, userMsg]);
+    }
 
     try {
       const response = await sendHybridTutorChat({
         grade: selectedGrade,
-        subject: activeSubj,
-        book: activeBook,
-        part: activePart,
-        unit: activeUnit,
-        chapter_id: activeChId,
+        subject: reqSubj,
+        book: reqBook,
+        part: reqPart,
+        unit: reqUnit,
+        chapter_id: reqChId,
         content_type: 'overview',
         question: queryText,
         engineMode: engineMode
@@ -164,27 +270,34 @@ export default function AiTutorPage() {
         media: response.media
       };
 
-      setChatHistory(prev => [...prev, aiMsg]);
+      if (engineMode === 'NCERT') {
+        setNcertChatHistory(prev => [...prev, aiMsg]);
+      } else {
+        setWorldChatHistory(prev => [...prev, aiMsg]);
+      }
     } catch (err: any) {
       const errorMsgId = `err-${Date.now()}`;
-      setChatHistory(prev => [
-        ...prev,
-        {
-          id: errorMsgId,
-          sender: 'ai',
-          text: `🤖 **GURUKUL AI Engine**: I couldn't generate an answer right now. Please check your internet connection or try again.`,
-          question: queryText,
-          grade: selectedGrade,
-          subject: activeSubj,
-          book: activeBook,
-          part: activePart,
-          unit: activeUnit,
-          chapter_id: activeChId,
-          mode: 'GENERAL_KNOWLEDGE',
-          model: 'GURUKUL AI Fallback Engine',
-          status: 'OFFLINE'
-        }
-      ]);
+      const errMessage: ChatMessage = {
+        id: errorMsgId,
+        sender: 'ai',
+        text: `🤖 **GURUKUL AI Engine**: I couldn't generate an answer right now. Please check your internet connection or try again.`,
+        question: queryText,
+        grade: selectedGrade,
+        subject: activeSubj,
+        book: activeBook,
+        part: activePart,
+        unit: activeUnit,
+        chapter_id: activeChId,
+        mode: 'GENERAL_KNOWLEDGE',
+        model: 'GURUKUL AI Fallback Engine',
+        status: 'OFFLINE'
+      };
+
+      if (engineMode === 'NCERT') {
+        setNcertChatHistory(prev => [...prev, errMessage]);
+      } else {
+        setWorldChatHistory(prev => [...prev, errMessage]);
+      }
     } finally {
       setLoading(false);
     }
@@ -220,7 +333,11 @@ export default function AiTutorPage() {
   };
 
   const handleRating = (id: string, rating: 'up' | 'down') => {
-    setChatHistory(prev => prev.map(m => m.id === id ? { ...m, rating } : m));
+    if (engineMode === 'NCERT') {
+      setNcertChatHistory(prev => prev.map(m => m.id === id ? { ...m, rating } : m));
+    } else {
+      setWorldChatHistory(prev => prev.map(m => m.id === id ? { ...m, rating } : m));
+    }
   };
 
   const renderChatMessage = (msg: ChatMessage) => {
@@ -285,8 +402,8 @@ export default function AiTutorPage() {
             <div className="text-xs font-bold text-teal-700 flex items-center gap-1.5">
               🖼️ Interactive 16:9 Concept Diagram
             </div>
-            <div className="aspect-video w-full rounded-xl overflow-hidden bg-white border border-slate-200 flex items-center justify-center">
-              <img src={String(imageUrl).startsWith('http') ? String(imageUrl) : `http://127.0.0.1:8001${imageUrl}`} alt="Concept Diagram" className="w-full h-full object-contain" />
+            <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-white border border-slate-200 flex items-center justify-center">
+              <Image src={String(imageUrl).startsWith('http') ? String(imageUrl) : `http://127.0.0.1:8001${imageUrl}`} alt="Concept Diagram" fill className="object-contain" unoptimized />
             </div>
           </div>
         )}
@@ -528,7 +645,7 @@ export default function AiTutorPage() {
       {/* Chat Conversation Box */}
       <div className="bg-white border border-slate-200 rounded-3xl p-4 sm:p-6 h-[520px] flex flex-col justify-between shadow-sm">
         <div className="flex-1 overflow-y-auto space-y-4 pr-1 sm:pr-2">
-          {chatHistory.map((msg) => (
+          {activeChatHistory.map((msg) => (
             <div
               key={msg.id}
               className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}

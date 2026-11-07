@@ -10,7 +10,7 @@ from ..core.subject_registry import SubjectRegistry
 from ..core.processed_content_resolver import ProcessedContentResolver, ChapterNotFoundError as ResolverChapterNotFoundError, ContentIntegrityError
 from ..core.content_validator import ContentNotFoundError, ContentSchemaError, IdentityConflictError, ChapterNotFoundError
 from ..core.config import GurukulConfig
-from ..security.auth_service import get_current_user, AuthenticatedUser
+from ..security.auth_service import get_current_user, AuthenticatedUser, validate_student_class_access
 
 router = APIRouter(prefix="/api/v1", tags=["Hardened Authoritative Curriculum Pipeline"])
 
@@ -84,38 +84,31 @@ async def stream_local_media(
     filename: str = Query(..., description="Media filename"),
     grade: Optional[str] = Query("5", description="Class/Grade number")
 ):
-    canon_subj = SubjectRegistry.resolve_canonical_subject(subject)
+    effective_grade = str(grade or "5").strip().replace("class_", "")
     content_root = GurukulConfig.get_content_root()
 
-    clean_name = filename.split("/")[-1].split("\\")[-1]
+    # Prevent path traversal attacks and path injection
+    clean_name = os.path.basename(filename).strip()
+    if ".." in clean_name or "/" in clean_name or "\\" in clean_name:
+        raise HTTPException(status_code=400, detail="Invalid or unsafe filename.")
+
     is_video = clean_name.lower().endswith(".mp4")
     media_type_header = "video/mp4" if is_video else "image/png" if clean_name.lower().endswith(".png") else "image/jpeg"
 
-    search_grades = [str(grade), "5", "6", "7"] if grade else ["5", "6", "7"]
+    # Restrict media search strictly to Class {effective_grade} directory
+    g_dir = (content_root / f"Class {effective_grade}").resolve()
+    if not g_dir.exists():
+        raise HTTPException(status_code=404, detail=f"Media directory for Class {effective_grade} not found.")
 
-    # 1. Exact filename match
-    for g in search_grades:
-        g_dir = content_root / f"Class {g}"
-        if not g_dir.exists():
-            continue
-
-        for root_dir, dirs, files in os.walk(g_dir):
-            for f in files:
-                if f == clean_name or f.lower() == clean_name.lower():
-                    full_p = FilePath(root_dir) / f
-                    return FileResponse(path=str(full_p), media_type=media_type_header, filename=f)
-
-    # 2. Substring / clean name match
-    for g in search_grades:
-        g_dir = content_root / f"Class {g}"
-        if not g_dir.exists():
-            continue
-
-        for root_dir, dirs, files in os.walk(g_dir):
-            for f in files:
-                if clean_name.lower() in f.lower() or f.lower() in clean_name.lower():
-                    full_p = FilePath(root_dir) / f
-                    return FileResponse(path=str(full_p), media_type=media_type_header, filename=f)
+    # Exact filename match within class directory ONLY
+    for root_dir, dirs, files in os.walk(g_dir):
+        for f in files:
+            if f == clean_name or f.lower() == clean_name.lower():
+                full_p = (FilePath(root_dir) / f).resolve()
+                # Verify resolved path is strictly inside permitted class directory using case-insensitive path containment
+                if not str(full_p).lower().startswith(str(g_dir).lower()):
+                    raise HTTPException(status_code=403, detail="Access Denied: Path traversal detected.")
+                return FileResponse(path=str(full_p), media_type=media_type_header, filename=f)
 
     raise HTTPException(status_code=404, detail=f"Media asset file not found: {filename}")
 

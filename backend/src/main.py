@@ -11,6 +11,20 @@ backend_dir = os.path.dirname(os.path.abspath(__file__))
 if backend_dir not in sys.path:
     sys.path.insert(0, backend_dir)
 
+# Automatic .env environment loader
+for env_candidate in [os.path.join(os.path.dirname(backend_dir), ".env"), os.path.join(backend_dir, ".env")]:
+    if os.path.exists(env_candidate):
+        try:
+            with open(env_candidate, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#") and "=" in line:
+                        k, v = line.split("=", 1)
+                        if k.strip() not in os.environ:
+                            os.environ[k.strip()] = v.strip().strip("'\"")
+        except Exception:
+            pass
+
 try:
     from src.curriculum.api import chapters as curriculum_chapters
     from src.curriculum.api import tutor as tutor_api

@@ -11,6 +11,7 @@ interface SelectedTextTutorProps {
   part?: string;
   unit?: string;
   chapter_id?: string;
+  content_type?: string;
 }
 
 export default function SelectedTextTutor({

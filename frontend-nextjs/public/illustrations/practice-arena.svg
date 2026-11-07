@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <rect width="800" height="500" rx="32" fill="#F7F8FA"/>
+
+  <!-- Target Rings -->
+  <circle cx="400" cy="220" r="160" fill="#0F766E" fill-opacity="0.08"/>
+  <circle cx="400" cy="220" r="120" fill="#4F46E5" fill-opacity="0.12"/>
+  <circle cx="400" cy="220" r="80" fill="#F59E0B" fill-opacity="0.2"/>
+  <circle cx="400" cy="220" r="40" fill="#0F766E"/>
+
+  <!-- Trophy Overlay -->
+  <g transform="translate(400, 220) scale(1.2)">
+    <path d="M-20 -30 L20 -30 L15 10 C10 25 -10 25 -15 10 Z" fill="#F59E0B"/>
+    <rect x="-6" y="25" width="12" height="15" fill="#D97706"/>
+    <rect x="-20" y="40" width="40" height="10" rx="4" fill="#1E293B"/>
+  </g>
+
+  <!-- Question & Answer Badges -->
+  <g transform="translate(140, 360)">
+    <rect width="240" height="50" rx="16" fill="#10B981"/>
+    <text x="120" y="32" font-family="sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">✓ Correct Answer</text>
+  </g>
+  <g transform="translate(420, 360)">
+    <rect width="240" height="50" rx="16" fill="#0F766E"/>
+    <text x="120" y="32" font-family="sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">🎯 Score: 10 / 10</text>
+  </g>
+</svg>

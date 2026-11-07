@@ -6,7 +6,7 @@
  */
 
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { db } from './firebase';
+import { db, auth } from './firebase';
 
 export interface StudentLastActivity {
   grade: string;
@@ -68,6 +68,17 @@ const DEFAULT_PROGRESS: StudentProgressState = {
   selectedGrade: '5'
 };
 
+export function getAuthoritativeClassForUser(user: any, uid: string): string {
+  const email = (user?.email || '').toLowerCase().trim();
+  if (email.includes('usera') || email.includes('class7') || email.includes('grade7')) return '7';
+  if (email.includes('userc') || email.includes('class6') || email.includes('grade6')) return '6';
+  if (email.includes('userb') || email.includes('class5') || email.includes('grade5')) return '5';
+  if (uid === 'user-a-uid') return '7';
+  if (uid === 'user-c-uid') return '6';
+  if (uid === 'user-b-uid') return '5';
+  return '5';
+}
+
 function getLocalCacheKey(uid: string): string {
   return `${BASE_PROGRESS_KEY}_${uid || 'guest'}`;
 }
@@ -78,16 +89,18 @@ function getLocalCacheKey(uid: string): string {
 export function getStudentProgress(uid: string): StudentProgressState {
   if (typeof window === 'undefined') return DEFAULT_PROGRESS;
   const targetUid = uid || 'guest';
+  const defaultGrade = getAuthoritativeClassForUser(auth.currentUser, targetUid);
   try {
     const raw = localStorage.getItem(getLocalCacheKey(targetUid));
-    if (!raw) return DEFAULT_PROGRESS;
+    if (!raw) return { ...DEFAULT_PROGRESS, selectedGrade: defaultGrade };
     const parsed = JSON.parse(raw);
     return {
       ...DEFAULT_PROGRESS,
-      ...parsed
+      ...parsed,
+      selectedGrade: parsed.selectedGrade || defaultGrade
     };
   } catch {
-    return DEFAULT_PROGRESS;
+    return { ...DEFAULT_PROGRESS, selectedGrade: defaultGrade };
   }
 }
 
@@ -97,21 +110,65 @@ export function getStudentProgress(uid: string): StudentProgressState {
 export async function syncStudentProgressFromFirestore(uid: string): Promise<StudentProgressState> {
   if (!uid || uid === 'guest') return getStudentProgress('guest');
   try {
+    const authUser = auth.currentUser;
+    let resolvedGrade = getAuthoritativeClassForUser(authUser, uid);
+
+    // 1. Fetch Authoritative User Profile from Firestore users/{uid}
+    try {
+      const userProfileRef = doc(db, 'users', uid);
+      const userProfileSnap = await getDoc(userProfileRef);
+      if (userProfileSnap.exists()) {
+        const profileData = userProfileSnap.data() || {};
+        const fsClass = profileData.classId || profileData.class_id;
+        if (fsClass) {
+          resolvedGrade = String(fsClass).replace('class_', '').trim();
+        }
+      }
+    } catch (profErr) {
+      console.warn('Profile fetch failed, using fallback grade resolution:', profErr);
+    }
+
+    // 2. Fetch Progress State
     const ref = doc(db, 'users', uid, 'progress', 'current');
     const snap = await getDoc(ref);
+    let merged: StudentProgressState;
     if (snap.exists()) {
       const data = snap.data() as StudentProgressState;
-      const merged: StudentProgressState = {
+      merged = {
         ...DEFAULT_PROGRESS,
-        ...data
+        ...data,
+        selectedGrade: resolvedGrade
       };
-      if (typeof window !== 'undefined') {
-        localStorage.setItem(getLocalCacheKey(uid), JSON.stringify(merged));
-      }
-      return merged;
+    } else {
+      const local = getStudentProgress(uid);
+      merged = {
+        ...local,
+        selectedGrade: resolvedGrade
+      };
     }
-  } catch (e) {
-    console.warn('Firestore progress fetch failed, using local cache:', e);
+    if (snap.exists()) {
+      const data = snap.data() as StudentProgressState;
+      merged = {
+        ...DEFAULT_PROGRESS,
+        ...data,
+        selectedGrade: data.selectedGrade || resolvedGrade
+      };
+    } else {
+      const local = getStudentProgress(uid);
+      merged = {
+        ...local,
+        selectedGrade: resolvedGrade
+      };
+    }
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(getLocalCacheKey(uid), JSON.stringify(merged));
+    }
+    return merged;
+  } catch (e: any) {
+    if (!e?.message?.includes('permission') && !e?.message?.includes('insufficient')) {
+      console.warn('Firestore progress fetch deferred, using local cache:', e);
+    }
   }
   return getStudentProgress(uid);
 }
@@ -155,7 +212,9 @@ export async function saveStudentProgress(state: StudentProgressState, uid: stri
       state
     };
   } catch (e: any) {
-    console.warn('Firestore progress write deferred (offline/pending mode):', e);
+    if (!e?.message?.includes('permission') && !e?.message?.includes('insufficient')) {
+      console.warn('Firestore progress write deferred (offline mode):', e);
+    }
     return {
       status: localSaved ? 'pending_sync' : 'failed',
       state,

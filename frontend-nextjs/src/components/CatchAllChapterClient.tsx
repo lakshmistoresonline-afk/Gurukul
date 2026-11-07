@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, useCallback, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import {
@@ -20,7 +21,8 @@ import {
   toggleBookmarkStore,
   togglePracticeMarkedStore,
   getStudentProgress,
-  syncStudentProgressFromFirestore
+  syncStudentProgressFromFirestore,
+  getAuthoritativeClassForUser
 } from '@/lib/studentProgressStore';
 import {
   Compass,
@@ -36,7 +38,9 @@ import {
   ArrowLeft,
   ArrowRight,
   Play,
-  Image as ImageIcon
+  Image as ImageIcon,
+  Check,
+  GraduationCap
 } from 'lucide-react';
 
 interface Props {
@@ -76,6 +80,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [nextChapterUrl, setNextChapterUrl] = useState<string | null>(null);
   const [chapterVideo, setChapterVideo] = useState<any>(null);
   const [chapterDiagram, setChapterDiagram] = useState<any>(null);
+  const [imageError, setImageError] = useState<boolean>(false);
 
   const [loading, setLoading] = useState<boolean>(true);
   const [statusCode, setStatusCode] = useState<number | null>(null);
@@ -92,7 +97,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [tutorMessages, setTutorMessages] = useState<Array<{ sender: 'user' | 'ai'; text: string; status?: string }>>([
     {
       sender: 'ai',
-      text: "🤖 Hello! I am your Class 5 Contextual AI Tutor. Ask me anything about this chapter!"
+      text: "🤖 Hello! I am your Contextual AI Tutor. Ask me anything about this chapter!"
     }
   ]);
 
@@ -140,7 +145,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     return '';
   };
 
-  // 1. Initialize Chapter Identity & Retrieve Actual Chapter Title, Media, and Previous/Next Links
+  // Initialize Chapter Identity
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6 || !grade || !chapterId) {
@@ -213,7 +218,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           setNextChapterUrl(null);
         }
 
-        // Derive Available Content Tabs dynamically (F-012 Fix)
         if (Array.isArray(foundChapter.content_types) && foundChapter.content_types.length > 0) {
           const matchedTabs = ALL_CONTENT_TABS.filter(t => foundChapter.content_types.includes(t.tab));
           if (matchedTabs.length > 0) {
@@ -221,7 +225,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           }
         }
 
-        // Exact Identity Media Matching ONLY (F-011 Fix - No fallback to videos[0] or diagrams[0])
         try {
           const mediaRes = await fetchSubjectMedia(subject, grade);
           const vids = mediaRes?.studio_video_links?.videos || [];
@@ -244,7 +247,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           setChapterDiagram(null);
         }
 
-        // Record student activity with authenticated UID or guest
         recordChapterActivity({
           grade,
           subject,
@@ -266,7 +268,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     initializeChapterIdentity();
   }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey, currentUser]);
 
-  // 2. Fetch Content for Active Tab
+  // Fetch Content for Active Tab
   const loadContentForTab = useCallback(async () => {
     if (!activeTab || segments.length < 6) return;
 
@@ -315,7 +317,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
     setIsNeedPractice(res.state.practiceMarked.includes(canonicalIdentityKey));
   };
 
-  // Stage Bar Smooth Scroll Functions
   const scrollStageBar = (direction: 'left' | 'right') => {
     if (stageBarRef.current) {
       const amount = direction === 'left' ? -240 : 240;
@@ -331,7 +332,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
   };
 
-  // Real Backend / Local WebLLM AI Tutor Call with Complete try/catch/finally (F-013 Fix)
   const handleAiAction = async (action: string) => {
     setTutorDrawerOpen(true);
     setTutorLoading(true);
@@ -393,7 +393,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 sm:p-6 space-y-6">
+    <div className="min-h-screen bg-[#F5F6F8] text-slate-900 p-4 sm:p-6 space-y-6">
       {/* Selected-Text Ask AI Floating Popup */}
       <SelectedTextTutor
         grade={grade}
@@ -402,27 +402,27 @@ export default function CatchAllChapterClient({ segments }: Props) {
         part={part}
         unit={unit}
         chapter_id={chapterId}
+        content_type={activeTab}
       />
-      {/* Sticky Compact Chapter Header */}
-      <div className="sticky top-0 z-30 bg-slate-900/95 backdrop-blur-md border border-slate-800 rounded-2xl p-5 shadow-2xl space-y-3">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          {/* Breadcrumb & Chapter Navigation */}
-          <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400 font-mono">
-            <Link href="/" className="hover:text-teal-400">Class {grade}</Link>
-            <ChevronRight className="w-3 h-3 text-slate-600" />
-            <Link href="/subjects" className="hover:text-teal-400 uppercase">{subject}</Link>
-            <ChevronRight className="w-3 h-3 text-slate-600" />
-            <span>Unit: {unit}</span>
-            <ChevronRight className="w-3 h-3 text-slate-600" />
-            <span className="text-teal-400 font-bold">{chapterId}</span>
+
+      {/* Chapter Workspace Header Card */}
+      <div className="bg-white border border-slate-200/90 rounded-3xl p-6 shadow-sm space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold text-slate-500">
+          <div className="flex items-center gap-2">
+            <Link href="/subjects" className="text-teal-700 hover:underline flex items-center gap-1 font-bold">
+              <ArrowLeft className="w-3.5 h-3.5" /> All Subjects
+            </Link>
+            <span>/</span>
+            <span className="text-slate-800 font-bold uppercase font-mono">Class {grade} {subject}</span>
+            <span>/</span>
+            <span className="text-slate-800 font-bold font-mono">{chapterId}</span>
           </div>
 
-          {/* Previous / Next Chapter & Bookmark Buttons */}
           <div className="flex items-center gap-2">
             {prevChapterUrl && (
               <Link
                 href={prevChapterUrl}
-                className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-teal-300 border border-slate-700 hover:bg-slate-700 transition-all flex items-center gap-1"
+                className="px-3 py-1.5 rounded-xl text-xs font-black bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200 transition-all flex items-center gap-1"
               >
                 <ArrowLeft className="w-3.5 h-3.5" /> Prev Chapter
               </Link>
@@ -431,7 +431,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
             {nextChapterUrl && (
               <Link
                 href={nextChapterUrl}
-                className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-teal-300 border border-slate-700 hover:bg-slate-700 transition-all flex items-center gap-1"
+                className="px-3 py-1.5 rounded-xl text-xs font-black bg-teal-600 text-white hover:bg-teal-500 transition-all flex items-center gap-1 shadow-2xs"
               >
                 Next Chapter <ArrowRight className="w-3.5 h-3.5" />
               </Link>
@@ -439,10 +439,10 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
             <button
               onClick={handleToggleBookmark}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer ${
                 isBookmarked
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                  : 'bg-slate-800 text-slate-300 border-slate-700 hover:bg-slate-700'
+                  ? 'bg-amber-100 text-amber-900 border-amber-300'
+                  : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
               }`}
             >
               <Bookmark className="w-3.5 h-3.5 inline mr-1" />
@@ -451,10 +451,10 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
             <button
               onClick={handleToggleNeedPractice}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer ${
                 isNeedPractice
-                  ? 'bg-rose-500/20 text-rose-300 border-rose-500/40'
-                  : 'bg-slate-800 text-slate-300 border-slate-700 hover:bg-slate-700'
+                  ? 'bg-rose-100 text-rose-900 border-rose-300'
+                  : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
               }`}
             >
               <Target className="w-3.5 h-3.5 inline mr-1" />
@@ -464,37 +464,34 @@ export default function CatchAllChapterClient({ segments }: Props) {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
             {chapterTitle ? `${chapterTitle}` : `Chapter ${chapterId}`}
-            <span className="text-xs text-slate-400 font-mono ml-2 uppercase">({subject})</span>
+            <span className="text-xs text-teal-700 font-mono ml-2 uppercase font-extrabold">({subject})</span>
           </h1>
 
           {/* AI Quick Actions */}
           <div className="flex flex-wrap items-center gap-1.5 text-xs">
-            <span className="text-slate-400 font-semibold flex items-center gap-1">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" /> AI Help:
+            <span className="text-slate-500 font-black flex items-center gap-1">
+              <Sparkles className="w-3.5 h-3.5 text-amber-500" /> AI Help:
             </span>
-            <button onClick={() => handleAiAction('explain')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-teal-300 font-medium">
+            <button onClick={() => handleAiAction('explain')} className="px-3 py-1.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-900 font-extrabold border border-teal-200 transition-all cursor-pointer">
               Explain Simply
             </button>
-            <button onClick={() => handleAiAction('example')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-indigo-300 font-medium">
+            <button onClick={() => handleAiAction('example')} className="px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-900 font-extrabold border border-indigo-200 transition-all cursor-pointer">
               Give Example
             </button>
-            <button onClick={() => handleAiAction('quiz')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-purple-300 font-medium">
+            <button onClick={() => handleAiAction('quiz')} className="px-3 py-1.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-900 font-extrabold border border-purple-200 transition-all cursor-pointer">
               Quiz Me
-            </button>
-            <button onClick={() => handleAiAction('help')} className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-rose-300 font-medium">
-              Help Me
             </button>
           </div>
         </div>
 
-        {/* Derived Explicit Content Tabs Bar */}
-        <div className="relative flex items-center pt-2 border-t border-slate-800">
+        {/* Content Tabs Bar */}
+        <div className="relative flex items-center pt-2 border-t border-slate-100">
           <button
             onClick={() => scrollStageBar('left')}
             title="Scroll Left"
-            className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 mr-2 shrink-0"
+            className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 mr-2 shrink-0 cursor-pointer"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
@@ -503,8 +500,8 @@ export default function CatchAllChapterClient({ segments }: Props) {
             ref={stageBarRef}
             className="flex items-center gap-2 overflow-x-auto scroll-smooth no-scrollbar flex-1 py-1"
           >
-            <span className="text-xs font-bold text-slate-400 flex items-center gap-1 px-1 shrink-0">
-              <Compass className="w-4 h-4 text-teal-400" /> Module:
+            <span className="text-xs font-black text-slate-500 flex items-center gap-1 px-1 shrink-0 uppercase font-mono">
+              <Compass className="w-4 h-4 text-teal-600" /> Module:
             </span>
             {availableTabs.map((t, idx) => {
               const isSelected = activeTab === t.tab;
@@ -513,10 +510,10 @@ export default function CatchAllChapterClient({ segments }: Props) {
                   id={`tab-btn-${idx}`}
                   key={t.tab}
                   onClick={() => handleTabSelect(t.tab, idx)}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0 border ${
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-black transition-all shrink-0 border cursor-pointer ${
                     isSelected
-                      ? 'bg-gradient-to-r from-teal-500 to-indigo-600 text-white border-teal-400 shadow-md ring-2 ring-teal-500/30'
-                      : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-slate-200 hover:bg-slate-800'
+                      ? 'bg-teal-600 text-white border-teal-600 shadow-md'
+                      : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
                   }`}
                 >
                   <span>{t.icon}</span>
@@ -529,16 +526,16 @@ export default function CatchAllChapterClient({ segments }: Props) {
           <button
             onClick={() => scrollStageBar('right')}
             title="Scroll Right"
-            className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 ml-2 shrink-0"
+            className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 ml-2 shrink-0 cursor-pointer"
           >
             <ChevronRight className="w-4 h-4" />
           </button>
         </div>
       </div>
 
-      {/* Workspace Layout */}
+      {/* Workspace Layout Canvas */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Main Lesson Content Canvas */}
+        {/* Main Lesson Content */}
         <div className={`${tutorDrawerOpen ? 'lg:col-span-8' : 'lg:col-span-12'} space-y-4`}>
           {!loading && contentData && (
             <AudioReaderToolbar
@@ -549,22 +546,20 @@ export default function CatchAllChapterClient({ segments }: Props) {
           )}
 
           {loading && (
-            <div className="p-12 text-center text-slate-400 bg-slate-900 rounded-2xl border border-slate-800">
-              <div className="animate-spin w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full mx-auto mb-3"></div>
-              <p className="text-xs font-bold">Loading chapter content...</p>
+            <div className="p-16 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center justify-center space-y-2">
+              <Loader2 className="w-8 h-8 animate-spin text-teal-600" />
+              <p className="text-xs font-black text-slate-700">Loading chapter workspace...</p>
             </div>
           )}
 
           {statusCode && statusCode !== 200 && !loading && (
-            <div className="p-8 bg-rose-950/40 border border-rose-800/60 rounded-2xl text-center space-y-2">
-              <h3 className="text-base font-bold text-rose-300">Content Resolution Failure ({statusCode})</h3>
-              <p className="text-xs text-rose-400 max-w-md mx-auto">{errorMsg}</p>
+            <div className="p-8 bg-amber-50 border border-amber-200 rounded-3xl text-center space-y-2">
+              <p className="text-sm font-black text-amber-900">{errorMsg || 'Unable to load chapter content.'}</p>
             </div>
           )}
 
-          {/* 1. Main Lesson Overview / Text Content */}
-          {statusCode === 200 && !loading && contentData && (
-            <div className="bg-slate-900 rounded-2xl border border-slate-800 p-6 shadow-xl">
+          {!loading && statusCode === 200 && contentData && (
+            <div className="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm text-slate-900 leading-relaxed font-medium space-y-6">
               {RendererRegistry.resolve({
                 grade,
                 subject,
@@ -576,107 +571,94 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </div>
           )}
 
-          {/* 2. Media Showcase Cards — Exact Chapter Identity Match ONLY */}
-          {activeTab === 'overview' && !loading && (
-            <div className="space-y-4 pt-2 border-t border-slate-800">
-              {/* Studio Video Lesson Player Card */}
-              {chapterVideo ? (
-                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
-                      <Play className="w-4 h-4 text-indigo-400" /> Studio Video Lesson: {chapterVideo.title || chapterTitle}
-                    </span>
-                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class {grade} {subject} Video</span>
+          {/* Chapter Media Attachments (Images & Videos) */}
+          {(chapterDiagram || chapterVideo) && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+              {chapterDiagram && (
+                <div className="p-4 bg-white border border-slate-200/90 rounded-3xl space-y-3 shadow-sm">
+                  <div className="text-xs font-black text-teal-800 flex items-center justify-between">
+                    <span className="flex items-center gap-1.5"><ImageIcon className="w-4 h-4 text-teal-600" /> Concept Diagram Overlay</span>
+                    <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2 py-0.5 rounded-md border border-teal-200 font-bold">Class {grade} {subject.toUpperCase()}</span>
                   </div>
-                  <div className="aspect-video w-full rounded-xl overflow-hidden bg-black border border-slate-800">
+                  <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 flex flex-col items-center justify-center p-4">
+                    {!imageError ? (
+                      <Image
+                        src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${encodeURIComponent(subject)}&filename=${encodeURIComponent(chapterDiagram.filename)}&grade=${grade}`}
+                        alt={chapterDiagram.filename || 'Diagram'}
+                        fill
+                        className="object-contain"
+                        unoptimized
+                        onError={() => setImageError(true)}
+                      />
+                    ) : (
+                      <div className="text-center space-y-2 p-4">
+                        <div className="w-12 h-12 rounded-2xl bg-teal-100 text-teal-800 flex items-center justify-center text-2xl mx-auto shadow-2xs">
+                          🗺️
+                        </div>
+                        <p className="text-xs font-black text-slate-800">{chapterDiagram.filename || chapterTitle}</p>
+                        <p className="text-[10px] text-slate-500 font-bold">Interactive Map Grid Overlay for Class {grade} {subject.toUpperCase()}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {chapterVideo && (
+                <div className="p-4 bg-white border border-slate-200 rounded-3xl space-y-3 shadow-sm">
+                  <div className="text-xs font-black text-indigo-800 flex items-center gap-1.5">
+                    <Play className="w-4 h-4 text-indigo-600 fill-indigo-600" /> Studio Explainer Video
+                  </div>
+                  <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-slate-200">
                     <video
                       controls
                       controlsList="nodownload"
                       className="w-full h-full object-contain"
-                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?grade=${grade}&subject=${subject}&filename=${encodeURIComponent(chapterVideo.filename)}`}
+                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${encodeURIComponent(subject)}&filename=${encodeURIComponent(chapterVideo.filename)}&grade=${grade}`}
                     />
                   </div>
-                </div>
-              ) : (
-                <div className="p-4 bg-slate-900/60 border border-slate-800 rounded-2xl text-center text-xs text-slate-500 font-mono">
-                  No verified studio video lesson available for this specific chapter.
-                </div>
-              )}
-
-              {/* Interactive 16:9 Hotspot Diagram Card */}
-              {chapterDiagram ? (
-                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-teal-400 flex items-center gap-1.5">
-                      <ImageIcon className="w-4 h-4 text-teal-400" /> Interactive Hotspot Diagram: {chapterDiagram.filename}
-                    </span>
-                    <span className="text-[10px] font-mono text-slate-400 uppercase">Class {grade} {subject} 16:9 Diagram</span>
-                  </div>
-                  <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center">
-                    <img
-                      src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?grade=${grade}&subject=${subject}&filename=${encodeURIComponent(chapterDiagram.filename)}`}
-                      alt={chapterDiagram.title || chapterTitle}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-              ) : (
-                <div className="p-4 bg-slate-900/60 border border-slate-800 rounded-2xl text-center text-xs text-slate-500 font-mono">
-                  No verified 16:9 diagram map available for this specific chapter.
                 </div>
               )}
             </div>
           )}
         </div>
 
-        {/* Contextual AI Tutor Panel */}
+        {/* AI Tutor Drawer Side Panel */}
         {tutorDrawerOpen && (
-          <div className="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between h-[550px] shadow-2xl sticky top-28">
-            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+          <div className="lg:col-span-4 bg-white border border-slate-200 rounded-3xl p-5 space-y-4 shadow-xl flex flex-col justify-between h-[650px] sticky top-20">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2">
-                <Bot className="w-5 h-5 text-teal-400" />
-                <h3 className="font-bold text-white text-sm">Contextual AI Tutor</h3>
+                <Bot className="w-5 h-5 text-teal-600" />
+                <h3 className="font-black text-slate-900 text-sm">Class {grade} AI Tutor</h3>
               </div>
-              <button onClick={() => setTutorDrawerOpen(false)} className="text-slate-400 hover:text-white">
-                <X className="w-4 h-4" />
+              <button onClick={() => setTutorDrawerOpen(false)} className="text-slate-400 hover:text-slate-700">
+                <X className="w-5 h-5" />
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto space-y-3 py-3 pr-1 text-xs">
-              {tutorMessages.map((m, idx) => (
-                <div key={idx} className={`flex ${m.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div className={`p-3 rounded-xl max-w-[85%] ${
-                    m.sender === 'user'
-                      ? 'bg-teal-500 text-slate-950 font-semibold'
-                      : m.status === 'OFFLINE'
-                      ? 'bg-amber-950/60 border border-amber-800 text-amber-200'
-                      : 'bg-slate-950 text-slate-300 border border-slate-800'
-                  }`}>
-                    {m.text}
-                  </div>
+            <div className="flex-1 overflow-y-auto space-y-3 pr-1 text-xs">
+              {tutorMessages.map((m, i) => (
+                <div key={i} className={`p-3 rounded-2xl font-medium ${m.sender === 'user' ? 'bg-teal-600 text-white ml-6 font-bold' : 'bg-slate-100 text-slate-900 mr-2 border border-slate-200'}`}>
+                  {m.text}
                 </div>
               ))}
               {tutorLoading && (
-                <div className="flex items-center gap-2 text-xs text-teal-400 p-2">
-                  <Loader2 className="w-4 h-4 animate-spin" /> Querying AI Tutor...
+                <div className="p-3 bg-slate-100 rounded-2xl text-xs text-slate-500 flex items-center gap-2">
+                  <Loader2 className="w-4 h-4 animate-spin text-teal-600" />
+                  <span>AI Tutor is thinking...</span>
                 </div>
               )}
             </div>
 
-            <div className="pt-3 border-t border-slate-800 flex items-center gap-2">
+            <div className="flex items-center gap-2 pt-2 border-t border-slate-100">
               <input
                 type="text"
                 value={tutorQuestion}
                 onChange={(e) => setTutorQuestion(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSendTutorMessage()}
-                placeholder="Ask about this lesson..."
-                className="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-teal-500"
+                placeholder="Ask about this chapter..."
+                className="flex-1 px-4 py-2.5 rounded-2xl bg-slate-100 border border-slate-200 text-xs font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500"
               />
-              <button
-                onClick={handleSendTutorMessage}
-                disabled={tutorLoading}
-                className="p-2 rounded-lg bg-teal-500 text-slate-950 font-bold hover:bg-teal-400 disabled:opacity-50"
-              >
+              <button onClick={handleSendTutorMessage} className="p-2.5 bg-teal-600 hover:bg-teal-500 text-white rounded-2xl shadow-sm">
                 <Send className="w-4 h-4" />
               </button>
             </div>
