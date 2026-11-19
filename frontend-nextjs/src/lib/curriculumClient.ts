@@ -60,13 +60,13 @@ export class CurriculumApiClient {
         return await res.json();
       } catch (err) {
         if (attempt === retries) {
-          console.warn('Failed to fetch authoritative curriculum hierarchy after retries:', err);
-          return [];
+          console.warn('Backend hierarchy unreachable, returning fallback hierarchy:', err);
+          return getFallbackHierarchy();
         }
         await new Promise(resolve => setTimeout(resolve, delayMs));
       }
     }
-    return [];
+    return getFallbackHierarchy();
   }
 
   static async fetchContent(identity: CurriculumIdentity): Promise<ChapterContentResponse> {
