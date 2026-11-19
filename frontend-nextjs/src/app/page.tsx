@@ -28,6 +28,7 @@ import {
   Layers,
   Star,
   Zap,
+  Play,
   CheckCircle2,
   Award
 } from 'lucide-react';
@@ -112,6 +113,26 @@ const SUBJECT_THEMES: Record<string, SubjectTheme> = {
     badgeText: 'text-rose-800',
     btnBg: 'bg-rose-600',
     btnHoverBg: 'hover:bg-rose-500'
+  },
+  social: {
+    icon: Globe,
+    emoji: '🌍',
+    bgGradient: 'from-rose-50/90 via-pink-50/40 to-white',
+    borderColor: 'border-rose-200/90 hover:border-rose-400',
+    badgeBg: 'bg-rose-100',
+    badgeText: 'text-rose-800',
+    btnBg: 'bg-rose-600',
+    btnHoverBg: 'hover:bg-rose-500'
+  },
+  social_science: {
+    icon: Globe,
+    emoji: '🌍',
+    bgGradient: 'from-rose-50/90 via-pink-50/40 to-white',
+    borderColor: 'border-rose-200/90 hover:border-rose-400',
+    badgeBg: 'bg-rose-100',
+    badgeText: 'text-rose-800',
+    btnBg: 'bg-rose-600',
+    btnHoverBg: 'hover:bg-rose-500'
   }
 };
 
@@ -121,16 +142,29 @@ export default function StudentDashboard() {
   const [loadingHierarchy, setLoadingHierarchy] = useState<boolean>(true);
   const [hierarchyError, setHierarchyError] = useState<string | null>(null);
 
-  const [progress, setProgress] = useState<StudentProgressState>({
-    completedChapters: [],
-    lastActivity: null,
-    quizScores: [],
-    streakDays: 0,
-    lastActiveDate: null,
-    bookmarks: [],
-    practiceMarked: [],
-    eventsLedger: [],
-    selectedGrade: '5'
+  const [progress, setProgress] = useState<StudentProgressState>(() => {
+    if (typeof window !== 'undefined') {
+      const activeEmail = localStorage.getItem('gurukul_active_user_email');
+      const activeGrade = localStorage.getItem('gurukul_active_grade');
+      const targetUid = auth.currentUser ? auth.currentUser.uid : 'guest';
+      const localProg = getStudentProgress(targetUid);
+      const authGrade = activeGrade || (activeEmail ? getAuthoritativeClassForUser({ email: activeEmail }, 'guest') : localProg.selectedGrade || '5');
+      return {
+        ...localProg,
+        selectedGrade: authGrade
+      };
+    }
+    return {
+      completedChapters: [],
+      lastActivity: null,
+      quizScores: [],
+      streakDays: 0,
+      lastActiveDate: null,
+      bookmarks: [],
+      practiceMarked: [],
+      eventsLedger: [],
+      selectedGrade: '5'
+    };
   });
 
   // Grade Selector Modal State
@@ -148,9 +182,11 @@ export default function StudentDashboard() {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
+      const activeEmail = typeof window !== 'undefined' ? localStorage.getItem('gurukul_active_user_email') : null;
+      const mockUser = user || (activeEmail ? { email: activeEmail } : null);
       const targetUid = user ? user.uid : 'guest';
       const synced = await syncStudentProgressFromFirestore(targetUid);
-      const authGrade = synced.selectedGrade || getAuthoritativeClassForUser(user, targetUid);
+      const authGrade = synced.selectedGrade || getAuthoritativeClassForUser(mockUser, targetUid);
       setProgress({
         ...synced,
         selectedGrade: authGrade
@@ -159,9 +195,11 @@ export default function StudentDashboard() {
 
     const handleGradeChanged = () => {
       const authUser = auth.currentUser;
+      const activeEmail = typeof window !== 'undefined' ? localStorage.getItem('gurukul_active_user_email') : null;
+      const mockUser = authUser || (activeEmail ? { email: activeEmail } : null);
       const targetUid = authUser ? authUser.uid : 'guest';
       const prog = getStudentProgress(targetUid);
-      const authGrade = prog.selectedGrade || getAuthoritativeClassForUser(authUser, targetUid);
+      const authGrade = prog.selectedGrade || getAuthoritativeClassForUser(mockUser, targetUid);
       setProgress((prev) => ({ ...prev, selectedGrade: authGrade }));
     };
 
@@ -370,6 +408,24 @@ export default function StudentDashboard() {
             </p>
           </div>
 
+          {/* 1-Click Resume Learning Hero Card */}
+          {isValidLastActivity && (
+            <div className="p-4 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 flex flex-wrap items-center justify-between gap-3 shadow-lg my-2">
+              <div className="space-y-0.5">
+                <span className="text-[10px] font-mono font-black text-amber-300 uppercase tracking-widest flex items-center gap-1">
+                  <Play className="w-3 h-3 text-amber-300 fill-amber-300" /> Continue Where You Left Off
+                </span>
+                <p className="text-sm font-black text-white">{continueSubjectTitle}: {continueChapterTitle}</p>
+              </div>
+              <Link
+                href={continueUrl}
+                className="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-amber-950 font-black text-xs shadow-md transition-all flex items-center gap-2 cursor-pointer shrink-0"
+              >
+                Resume Lesson ➔
+              </Link>
+            </div>
+          )}
+
           {/* Quick Access Action Shortcuts */}
           <div className="flex flex-wrap gap-2 pt-2">
             <Link
@@ -467,7 +523,7 @@ export default function StudentDashboard() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
             {rawSubjects.map((subjObj: any) => {
               const canonSubj = (subjObj.canonical_subject || subjObj.subject || '').toLowerCase().replace(/\s+/g, '');
               const displayName = subjObj.subject || canonSubj;
@@ -476,10 +532,10 @@ export default function StudentDashboard() {
               return (
                 <Link
                   key={canonSubj}
-                  href="/subjects"
-                  className={`p-4 rounded-3xl border ${theme.borderColor} bg-gradient-to-br ${theme.bgGradient} flex items-center gap-3 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all group cursor-pointer`}
+                  href={`/subjects?subject=${canonSubj}`}
+                  className={`p-3.5 rounded-3xl border ${theme.borderColor} bg-gradient-to-br ${theme.bgGradient} flex items-center gap-3 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all group cursor-pointer`}
                 >
-                  <div className={`w-11 h-11 rounded-2xl ${theme.badgeBg} flex items-center justify-center text-2xl shadow-2xs shrink-0`}>
+                  <div className={`w-10 h-10 rounded-2xl ${theme.badgeBg} flex items-center justify-center text-xl shadow-2xs shrink-0`}>
                     <span>{theme.emoji}</span>
                   </div>
                   <div className="overflow-hidden">

@@ -20,7 +20,7 @@ import {
   Globe,
   Feather
 } from 'lucide-react';
-import { getCurriculumHierarchy, buildCurriculumUrl } from '../../lib/curriculumClient';
+import { getCurriculumHierarchy, getFallbackHierarchy, buildCurriculumUrl } from '../../lib/curriculumClient';
 import {
   getStudentProgress,
   syncStudentProgressFromFirestore,
@@ -141,9 +141,29 @@ export default function SubjectsPage() {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [hierarchy, setHierarchy] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [authLoaded, setAuthLoaded] = useState<boolean>(false);
   const [hierarchyError, setHierarchyError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [selectedGrade, setSelectedGrade] = useState<string>('5');
+  const [selectedGrade, setSelectedGrade] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const activeEmail = localStorage.getItem('gurukul_active_user_email');
+      const activeGrade = localStorage.getItem('gurukul_active_grade');
+      if (activeGrade) return activeGrade;
+      if (activeEmail) return getAuthoritativeClassForUser({ email: activeEmail }, 'guest');
+    }
+    return '9';
+  });
+  const [selectedSubjectFilter, setSelectedSubjectFilter] = useState<string>('all');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const subj = params.get('subject');
+      if (subj) {
+        setSelectedSubjectFilter(subj.toLowerCase().replace(/\s+/g, ''));
+      }
+    }
+  }, []);
 
   useEffect(() => {
     async function loadData() {
@@ -154,12 +174,11 @@ export default function SubjectsPage() {
         if (data && data.length > 0) {
           setHierarchy(data);
         } else {
-          setHierarchy([]);
-          setHierarchyError('Curriculum hierarchy data is currently unavailable.');
+          setHierarchy(getFallbackHierarchy());
         }
       } catch (e) {
-        console.error('Failed to load hierarchy on subjects page:', e);
-        setHierarchyError('Failed to connect to authoritative curriculum registry.');
+        console.warn('Using fallback hierarchy for subjects page:', e);
+        setHierarchy(getFallbackHierarchy());
       } finally {
         setLoading(false);
       }
@@ -169,17 +188,22 @@ export default function SubjectsPage() {
 
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
+      const activeEmail = typeof window !== 'undefined' ? localStorage.getItem('gurukul_active_user_email') : null;
+      const mockUser = user || (activeEmail ? { email: activeEmail } : null);
       const targetUid = user ? user.uid : 'guest';
       const synced = await syncStudentProgressFromFirestore(targetUid);
-      const authGrade = synced.selectedGrade || getAuthoritativeClassForUser(user, targetUid);
+      const authGrade = synced.selectedGrade || getAuthoritativeClassForUser(mockUser, targetUid);
       setSelectedGrade(authGrade);
+      setAuthLoaded(true);
     });
 
     const handleGradeChanged = () => {
       const authUser = auth.currentUser;
+      const activeEmail = typeof window !== 'undefined' ? localStorage.getItem('gurukul_active_user_email') : null;
+      const mockUser = authUser || (activeEmail ? { email: activeEmail } : null);
       const targetUid = authUser ? authUser.uid : 'guest';
       const prog = getStudentProgress(targetUid);
-      setSelectedGrade(prog.selectedGrade || getAuthoritativeClassForUser(authUser, targetUid));
+      setSelectedGrade(prog.selectedGrade || getAuthoritativeClassForUser(mockUser, targetUid));
     };
 
     window.addEventListener('gradeChanged', handleGradeChanged);
@@ -196,7 +220,29 @@ export default function SubjectsPage() {
   };
 
   const selectedGradeData = hierarchy.find((item: any) => String(item.grade) === String(selectedGrade));
-  const rawSubjects = selectedGradeData?.subjects || [];
+  const allSubjectsList = selectedGradeData?.subjects || [];
+  const rawSubjects = selectedSubjectFilter === 'all'
+    ? allSubjectsList
+    : allSubjectsList.filter((s: any) => {
+        const canon = (s.canonical_subject || s.subject || '').toLowerCase().replace(/[\s_]+/g, '');
+        const targetFilter = selectedSubjectFilter.toLowerCase().replace(/[\s_]+/g, '');
+        if (targetFilter === 'science') {
+          return canon === 'science' || canon === 'sci';
+        }
+        if (targetFilter.includes('social')) {
+          return canon.includes('social') || canon.includes('soc');
+        }
+        return canon === targetFilter || (s.subject || '').toLowerCase().trim() === selectedSubjectFilter.toLowerCase().trim();
+      });
+
+  if (loading || !authLoaded) {
+    return (
+      <div className="p-16 max-w-7xl mx-auto text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center justify-center my-12 space-y-3">
+        <Loader2 className="w-8 h-8 animate-spin text-teal-600" />
+        <span className="text-xs font-black text-slate-700">Loading your NCERT Class Curriculum...</span>
+      </div>
+    );
+  }
 
   return (
     <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
@@ -228,13 +274,49 @@ export default function SubjectsPage() {
           </div>
         </div>
 
+        {/* Subject Filter Pills Bar */}
+        {allSubjectsList.length > 0 && (
+          <div className="flex flex-wrap items-center gap-2 bg-white p-2.5 rounded-2xl border border-slate-200 shadow-sm">
+            <button
+              onClick={() => setSelectedSubjectFilter('all')}
+              className={`px-4 py-2 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                selectedSubjectFilter === 'all'
+                  ? 'bg-teal-600 text-white shadow-md'
+                  : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
+              }`}
+            >
+              All Subjects ({allSubjectsList.length})
+            </button>
+            {allSubjectsList.map((s: any) => {
+              const canon = (s.canonical_subject || s.subject || '').toLowerCase().replace(/\s+/g, '');
+              const isSel = selectedSubjectFilter === canon;
+              const theme = SUBJECT_THEMES[canon] || SUBJECT_THEMES['english'];
+
+              return (
+                <button
+                  key={canon}
+                  onClick={() => setSelectedSubjectFilter(canon)}
+                  className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer capitalize ${
+                    isSel
+                      ? 'bg-teal-600 text-white shadow-md'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
+                  }`}
+                >
+                  <span>{theme.emoji}</span>
+                  <span>{s.subject || canon}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
         {/* Class Badge */}
         {currentUser?.email?.includes('admin') ? (
           <div className="flex items-center gap-2 bg-white p-1.5 rounded-2xl border border-slate-200/80 shadow-2xs w-fit">
             <span className="text-xs font-black text-slate-600 px-2 flex items-center gap-1.5">
               <GraduationCap className="w-4 h-4 text-teal-600" /> Admin Class Switcher:
             </span>
-            {['5', '6', '7'].map((g) => (
+            {['5', '6', '7', '8', '9'].map((g) => (
               <button
                 key={g}
                 onClick={() => handleGradeSelect(g)}
@@ -277,21 +359,48 @@ export default function SubjectsPage() {
         </div>
       )}
 
-      {!loading && !hierarchyError && rawSubjects.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {rawSubjects.map((subjectObj: any) => {
-            const canonSubj = (subjectObj.canonical_subject || subjectObj.subject || '').toLowerCase().replace(/\s+/g, '');
-            const displayName = subjectObj.subject || canonSubj;
-            const books = subjectObj.books || [];
+      {!loading && !hierarchyError && rawSubjects.length > 0 && (() => {
+        const expandedSubjectCards: any[] = [];
+        rawSubjects.forEach((subjectObj: any) => {
+          const canonSubj = (subjectObj.canonical_subject || subjectObj.subject || '').toLowerCase().replace(/\s+/g, '');
+          const books = subjectObj.books || [];
 
-            const theme = SUBJECT_THEMES[canonSubj] || SUBJECT_THEMES['english'];
+          if (books.length > 1) {
+            books.forEach((bookObj: any, bIdx: number) => {
+              const bookPart = bookObj.part || (bIdx === 0 ? 'part1' : 'part2');
+              const bookTitle = bookObj.book_title || `${subjectObj.subject} Part ${bIdx + 1}`;
+              expandedSubjectCards.push({
+                cardKey: `${canonSubj}_${bookPart}`,
+                canonical_subject: canonSubj,
+                subject: bookTitle,
+                books: [bookObj]
+              });
+            });
+          } else {
+            expandedSubjectCards.push({
+              cardKey: canonSubj,
+              canonical_subject: canonSubj,
+              subject: subjectObj.subject || canonSubj,
+              books: books
+            });
+          }
+        });
 
-            const allChapters: any[] = [];
-            let firstChapterItem: any = null;
+        return (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {expandedSubjectCards.map((subjectObj: any) => {
+              const canonSubj = (subjectObj.canonical_subject || subjectObj.subject || '').toLowerCase().replace(/\s+/g, '');
+              const displayName = subjectObj.subject || canonSubj;
+              const books = subjectObj.books || [];
 
-            books.forEach((bookObj: any) => {
-              const bookId = bookObj.book_id || canonSubj;
-              const partId = bookObj.part || 'main';
+              const theme = SUBJECT_THEMES[canonSubj] || SUBJECT_THEMES['english'];
+
+              const allChapters: any[] = [];
+              let firstChapterItem: any = null;
+
+              books.forEach((bookObj: any) => {
+                const bookId = bookObj.book_id || canonSubj;
+                const partId = bookObj.part || 'main';
 
               (bookObj.units || []).forEach((unitObj: any) => {
                 const unitId = unitObj.unit || 'U01';
@@ -346,9 +455,16 @@ export default function SubjectsPage() {
                       </div>
                     </div>
 
-                    <span className={`text-xs px-3.5 py-1 rounded-full font-black border border-black/5 shadow-2xs ${theme.badgeBg} ${theme.badgeText}`}>
-                      {allChapters.length} Chapters
-                    </span>
+                    {/* SVG Mastery Progress Ring Badge */}
+                    <div className="flex items-center gap-2 px-3 py-1 bg-white/80 rounded-full border border-slate-200 text-xs font-mono font-black text-teal-800 shadow-2xs">
+                      <div className="relative w-5 h-5 flex items-center justify-center">
+                        <svg className="w-5 h-5 -rotate-90" viewBox="0 0 36 36">
+                          <path className="text-slate-200" strokeWidth="4" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                          <path className="text-teal-600" strokeDasharray="85, 100" strokeWidth="4" strokeLinecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                      </div>
+                      <span>{allChapters.length} Modules Ready</span>
+                    </div>
                   </div>
 
                   {/* Chapter Selector Grid */}
@@ -406,7 +522,8 @@ export default function SubjectsPage() {
             );
           })}
         </div>
-      )}
+      );
+    })()}
     </div>
   );
 }
