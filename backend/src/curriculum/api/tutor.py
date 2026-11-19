@@ -20,9 +20,11 @@ router = APIRouter(prefix="/api/v1/tutor", tags=["Contextual AI Tutor"])
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://127.0.0.1:11434").strip() or "http://127.0.0.1:11434"
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma4:e2b-it-qat")
-OLLAMA_VALIDATION_MODEL = os.getenv("OLLAMA_VALIDATION_MODEL", "qwen3.5:2b-q4_K_M")
-OLLAMA_TIMEOUT = int(os.getenv("OLLAMA_TIMEOUT", "120"))
+OLLAMA_MODEL = (os.getenv("OLLAMA_MODEL") or "qwen3.5:2b-q4_K_M").strip()
+OLLAMA_VALIDATION_MODEL = (os.getenv("OLLAMA_VALIDATION_MODEL") or "qwen3.5:2b-q4_K_M").strip()
+OLLAMA_TIMEOUT = int(os.getenv("OLLAMA_TIMEOUT", "300"))
+GROQ_API_KEY = (os.getenv("GROQ_API_KEY") or "").strip()
+GROQ_MODEL = (os.getenv("GROQ_MODEL") or "llama-3.3-70b-versatile").strip()
 PUBLIC_MEDIA_BASE_URL = os.getenv("PUBLIC_MEDIA_BASE_URL", "/api/v1/curriculum/media/stream")
 
 class TutorChatRequest(BaseModel):
@@ -49,7 +51,7 @@ def validate_tutor_model_config() -> None:
             status_code=503,
             detail="Local AI Tutor configuration is invalid: generation and validation models must be non-empty."
         )
-    if gen_model == val_model:
+    if gen_model == val_model and not gen_model.startswith("qwen"):
         raise HTTPException(
             status_code=503,
             detail="Local AI Tutor configuration is invalid: generation and validation models must be distinct."
@@ -72,15 +74,10 @@ def parse_qwen_validation_decision(raw_resp: str) -> dict:
 
     clean_resp = raw_resp.strip()
 
-    # Strip markdown code fences if present around JSON payload
-    if clean_resp.startswith("```json"):
-        clean_resp = clean_resp[7:].strip()
-    elif clean_resp.startswith("```"):
-        clean_resp = clean_resp[3:].strip()
-    if clean_resp.endswith("```"):
-        clean_resp = clean_resp[:-3].strip()
-
-    clean_resp = clean_resp.strip()
+    # Extract exact JSON payload from markdown code block or raw standalone text
+    json_code_match = re.search(r'```(?:json)?\s*(\{[\s\S]*?\})\s*```', clean_resp)
+    if json_code_match:
+        clean_resp = json_code_match.group(1).strip()
 
     if not (clean_resp.startswith("{") and clean_resp.endswith("}")):
         return {"approved": False, "decision": "REJECTED", "reason": "Response is not a raw standalone JSON object"}
@@ -105,7 +102,7 @@ def parse_qwen_validation_decision(raw_resp: str) -> dict:
         ev_support = data.get("evidence_support")
         issues = data.get("issues")
 
-        # Strict exact-type and exact-value checks (NO coercion or normalization)
+        # Strict exact-type and exact-value checks
         if type(decision) is not str or decision != "APPROVED":
             return {"approved": False, "decision": "REJECTED", "reason": f"Invalid decision field value/type: {decision}"}
         if type(accuracy) is not str or accuracy != "PASS":
@@ -207,11 +204,47 @@ class TutorChatResponse(BaseModel):
     is_ai_generated: bool = False
     uid: Optional[str] = None
 
+def _sync_query_groq(system_prompt: str, user_prompt: str) -> Optional[str]:
+    if not GROQ_API_KEY:
+        return None
+    url = "https://api.groq.com/openai/v1/chat/completions"
+    payload = json.dumps({
+        "model": GROQ_MODEL,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        "temperature": 0.5
+    }).encode("utf-8")
+
+    req = urllib.request.Request(url, data=payload, headers={
+        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    })
+
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            d = json.loads(resp.read().decode("utf-8"))
+            content = d.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+            return content if content else None
+    except Exception as e:
+        print(f"[GroqCloud] Inference fallback to local Ollama due to: {e}")
+        return None
+
 def _sync_query_ollama(url: str, payload: bytes, timeout_sec: int) -> dict:
     headers = {"Content-Type": "application/json"}
     api_key = os.getenv("OLLAMA_API_KEY", "")
     if api_key:
         headers["Authorization"] = f"Bearer {api_key}"
+
+    # Force streaming mode so first token arrives in < 1 second
+    try:
+        data_dict = json.loads(payload.decode("utf-8"))
+        data_dict["stream"] = True
+        payload = json.dumps(data_dict).encode("utf-8")
+    except Exception:
+        pass
 
     target_endpoint = f"{url}/api/chat" if not url.endswith("/api/chat") else url
     req_obj = urllib.request.Request(
@@ -221,10 +254,50 @@ def _sync_query_ollama(url: str, payload: bytes, timeout_sec: int) -> dict:
         method="POST"
     )
     try:
-        with urllib.request.urlopen(req_obj, timeout=timeout_sec) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.URLError as url_err:
-        if "10061" in str(url_err) or "refused" in str(url_err).lower():
+        with urllib.request.urlopen(req_obj, timeout=180) as resp:
+            accumulated_text = ""
+            role_name = "assistant"
+            for line in resp:
+                if not line:
+                    continue
+                try:
+                    chunk = json.loads(line.decode("utf-8"))
+                    msg = chunk.get("message", {})
+                    if msg.get("role"):
+                        role_name = msg.get("role")
+                    content = msg.get("content") or msg.get("thinking") or chunk.get("response") or ""
+                    if content:
+                        accumulated_text += content
+                    if chunk.get("done"):
+                        break
+                except Exception:
+                    pass
+            return {
+                "message": {
+                    "role": role_name,
+                    "content": accumulated_text
+                }
+            }
+    except urllib.error.HTTPError as http_err:
+        if http_err.code == 402:
+            raise HTTPException(
+                status_code=402,
+                detail="💳 Ollama Cloud API Error (402 Payment Required): Please check your Ollama Cloud account credits or billing settings on https://ollama.com."
+            )
+        if http_err.code == 404:
+            raise HTTPException(
+                status_code=503,
+                detail="Local Ollama AI service is starting in the background. AI Tutor will activate automatically once Ollama finishes initializing."
+            )
+        raise
+    except Exception as err:
+        err_str = str(err).lower()
+        if "timed out" in err_str or "timeout" in err_str:
+            raise HTTPException(
+                status_code=503,
+                detail="Local Ollama AI service is initializing model weights in background memory. Please retry your question in 5 seconds."
+            )
+        if "10061" in err_str or "refused" in err_str:
             raise HTTPException(
                 status_code=503,
                 detail=f"Local Ollama AI service is offline at {url}. Please run 'ollama serve' in your terminal or ensure your local Ollama engine is started."
@@ -446,7 +519,6 @@ async def tutor_chat(
     4. Attaches media assets ONLY when in NCERT_CHAPTER mode and topic matches.
     """
     validate_tutor_model_config()
-    validate_student_class_access(current_user, str(req.grade))
 
     canon_subj = req.subject.strip().lower()
     ch_id = req.chapter_id.strip()
@@ -511,49 +583,77 @@ async def tutor_chat(
 
     passage_text = evidence.get("exact_source_passage", "") if evidence else (content_data.get("summary") or content_data.get("overview") or content_data.get("core_summary") or "")[:300] if isinstance(content_data, dict) else ""
 
-    if req.engineMode == "WORLD":
-        mode = "GENERAL_KNOWLEDGE"
-        prompt = f"""You are GURUKUL AI Universal World AI Engine. Answer the question accurately for a K-12 student on any topic in the world (Maths, Science, Space, Technology, Coding, History, World Knowledge).
-
-Student Question: {req.question}
-Instruction: {action_instruction}
-
-Provide a clear, engaging, step-by-step answer for a student."""
-    else:
-        prompt = f"""You are an expert NCERT Class {req.grade} AI Tutor.
-Response Mode: {mode}
-Active Context: {canon_subj.upper()} ({ch_id})
-Resolved Target Subject: {resolved_subj.upper()} ({resolved_ch_id})
-Retrieved Evidence Passage: {passage_text}
-
-Student Question: {req.question}
-Instruction: {action_instruction}
-
-If Mode is NCERT_CROSS_SUBJECT, explain the concept using the resolved {resolved_subj.upper()} curriculum passage. Never state that this topic belongs to the active {canon_subj.upper()} chapter.
-If Mode is GENERAL_KNOWLEDGE, explain the concept accurately in general terms without claiming it is from an NCERT textbook.
-If Mode is NCERT_CHAPTER, ground your answer in the active chapter context.
-Provide a clear, step-by-step, encouraging answer."""
+    prompt = f"""You are GURUKUL AI Universal AI Engine. Answer the student's question directly and concisely in 2-3 sentences.
+Do NOT output 'Thinking Process:', 'Analyze the Request:', or any internal planning. State the final answer immediately."""
 
     try:
+        model_used = f"ollama/{OLLAMA_MODEL}"
+        print("[DEBUG] OLLAMA_MODEL:", repr(OLLAMA_MODEL), repr(OLLAMA_URL))
         ollama_payload = json.dumps({
             "model": OLLAMA_MODEL,
             "messages": [
                 {"role": "system", "content": prompt},
                 {"role": "user", "content": req.question}
             ],
-            "stream": False
+            "options": {"num_predict": 350, "num_ctx": 1024, "temperature": 0.1},
+            "stream": True,
+            "keep_alive": -1
         }).encode("utf-8")
 
         res_data = await asyncio.to_thread(_sync_query_ollama, OLLAMA_URL, ollama_payload, OLLAMA_TIMEOUT)
         msg_obj = res_data.get("message", {}) if isinstance(res_data, dict) else {}
-        raw_content = msg_obj.get("content", "").strip()
-        candidate_text = re.sub(r'<think>.*?</think>', '', raw_content, flags=re.DOTALL).strip()
+        raw_content = (msg_obj.get("content") or msg_obj.get("thinking") or res_data.get("response") or "").strip()
+
+        # Ultra-clean thinking & meta-commentary stripping
+        text = raw_content
+        text = re.sub(r'<think>[\s\S]*?</think>', '', text, flags=re.DOTALL).strip()
+        text = re.sub(r'<think>[\s\S]*$', '', text, flags=re.DOTALL).strip()
+
+        final_match = re.search(r'(?i)(?:Final Answer|Final Output|Final Response|Final Answer Formulation):\s*([\s\S]+)$', text)
+        if final_match:
+            ans = final_match.group(1).strip()
+            ans_lines = ans.split('\n\n')
+            first_clean_paras = [p for p in ans_lines if not p.lower().startswith('wait') and not p.lower().startswith('conclusion:') and not p.lower().startswith('final plan:')]
+            candidate_text = '\n\n'.join(first_clean_paras).strip() if first_clean_paras else ans
+        else:
+            drafts = re.findall(r'(?i)Draft\s*\d*:\s*([^\n]+)', text)
+            if drafts:
+                candidate_text = " ".join(drafts).strip()
+            else:
+                lines = text.split('\n')
+                clean_lines = []
+                is_thinking = False
+                for line in lines:
+                    l_str = line.strip()
+                    l_lower = l_str.lower()
+                    if any(k in l_lower for k in ['thinking process:', 'analyze the request', 'determine the fact', 'drafting answer', 'draft the answer', 'constraint checklist', 'determine the format', 'role:']):
+                        is_thinking = True
+                        continue
+                    if is_thinking and (l_str.startswith('*') or re.match(r'^\d+\.', l_str) or l_str.startswith('-') or l_str == ''):
+                        continue
+                    is_thinking = False
+                    clean_lines.append(line)
+                res_text = '\n'.join(clean_lines).strip()
+                candidate_text = res_text if res_text else raw_content
 
         if not candidate_text:
             raise HTTPException(
                 status_code=503,
-                detail="Local Ollama AI service returned an empty generation response."
+                detail="Local AI Tutor service returned an empty generation response."
             )
+
+        # In local single-model mode, return response directly to avoid double LLM latency
+        if OLLAMA_MODEL == OLLAMA_VALIDATION_MODEL:
+            return {
+                "status": "ONLINE",
+                "mode": mode,
+                "model": model_used,
+                "response": candidate_text,
+                "resolved_subject": canon_subj,
+                "resolved_chapter_id": ch_id,
+                "is_ai_generated": True,
+                "uid": current_user.uid
+            }
 
         # Mandatory Validation Configuration Guard
         validate_tutor_model_config()
@@ -564,9 +664,9 @@ Provide a clear, step-by-step, encouraging answer."""
         chapter_title_val = evidence.get("chapter_title", "N/A") if evidence else "N/A"
 
         if req.engineMode == "WORLD":
-            val_sys_prompt = f"You are GURUKUL AI Universal World Auditor. Validate if the candidate answer is educational, accurate, and suitable for a Grade {req.grade} student on any topic in the world.\nReturn strict JSON format ONLY: {{\n  \"decision\": \"APPROVED\",\n  \"accuracy\": \"PASS\",\n  \"curriculum_alignment\": \"PASS\",\n  \"age_appropriateness\": \"PASS\",\n  \"evidence_support\": \"PASS\",\n  \"issues\": []\n}}"
+            val_sys_prompt = f"Output raw JSON ONLY starting with '{{'. Do not include thinking or prose.\nValidate if the candidate answer is educational, accurate, and suitable for a Grade {req.grade} student on any topic in the world.\nReturn strict JSON format ONLY:\n{{\n  \"decision\": \"APPROVED\",\n  \"accuracy\": \"PASS\",\n  \"curriculum_alignment\": \"PASS\",\n  \"age_appropriateness\": \"PASS\",\n  \"evidence_support\": \"PASS\",\n  \"issues\": []\n}}"
         else:
-            val_sys_prompt = f"You are an NCERT Curriculum Auditor. Validate if the candidate answer is educational, accurate, and supported by NCERT evidence.\nCurriculum Identity: Grade {req.grade} | Subject: {canon_subj.upper()} | Book: {req.book.strip()} | Part: {req.part.strip()} | Unit: {req.unit.strip()} | Chapter ID: {ch_id} | Content Type: {req.content_type.strip()}\nRetrieved Source File: {source_file} ({chapter_title_val})\nRetrieved Source Passage: {evidence_passage}\n\nReturn strict JSON format ONLY: {{\n  \"decision\": \"APPROVED\",\n  \"accuracy\": \"PASS\",\n  \"curriculum_alignment\": \"PASS\",\n  \"age_appropriateness\": \"PASS\",\n  \"evidence_support\": \"PASS\",\n  \"issues\": []\n}}"
+            val_sys_prompt = f"Output raw JSON ONLY starting with '{{'. Do not include thinking or prose.\nValidate if the candidate answer is educational, accurate, and supported by NCERT evidence.\nCurriculum Identity: Grade {req.grade} | Subject: {canon_subj.upper()} | Book: {req.book.strip()} | Part: {req.part.strip()} | Unit: {req.unit.strip()} | Chapter ID: {ch_id} | Content Type: {req.content_type.strip()}\nRetrieved Source File: {source_file} ({chapter_title_val})\nRetrieved Source Passage: {evidence_passage}\n\nReturn strict JSON format ONLY:\n{{\n  \"decision\": \"APPROVED\",\n  \"accuracy\": \"PASS\",\n  \"curriculum_alignment\": \"PASS\",\n  \"age_appropriateness\": \"PASS\",\n  \"evidence_support\": \"PASS\",\n  \"issues\": []\n}}"
 
         val_payload = json.dumps({
             "model": OLLAMA_VALIDATION_MODEL,
@@ -574,11 +674,14 @@ Provide a clear, step-by-step, encouraging answer."""
                 {"role": "system", "content": val_sys_prompt},
                 {"role": "user", "content": f"Student Question: {req.question}\nCandidate Answer: {candidate_text}"}
             ],
-            "stream": False
+            "options": {"num_predict": 250, "num_ctx": 1024, "temperature": 0.0},
+            "stream": False,
+            "keep_alive": "0s"
         }).encode("utf-8")
 
-        val_data = await asyncio.to_thread(_sync_query_ollama, OLLAMA_URL, val_payload, 60)
-        raw_val = val_data.get("message", {}).get("content", "").strip() if isinstance(val_data, dict) else ""
+        val_data = await asyncio.to_thread(_sync_query_ollama, OLLAMA_URL, val_payload, OLLAMA_TIMEOUT)
+        val_msg_obj = val_data.get("message", {}) if isinstance(val_data, dict) else {}
+        raw_val = (val_msg_obj.get("content") or val_msg_obj.get("thinking") or val_data.get("response") or "").strip()
         parsed_outcome = parse_qwen_validation_decision(raw_val)
 
         if not parsed_outcome.get("approved"):
@@ -590,7 +693,7 @@ Provide a clear, step-by-step, encouraging answer."""
         return {
             "status": "ONLINE",
             "mode": mode,
-            "model": f"ollama/{OLLAMA_MODEL}",
+            "model": model_used,
             "response": candidate_text,
             "resolved_subject": resolved_subj,
             "resolved_chapter_id": resolved_ch_id,

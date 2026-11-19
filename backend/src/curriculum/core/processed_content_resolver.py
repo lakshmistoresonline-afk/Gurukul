@@ -16,16 +16,22 @@ class ChapterNotFoundError(Exception):
     """Raised when the target chapter folder does not exist (HTTP 404)."""
     pass
 
+_CONTENT_CACHE: Dict[str, Dict[str, Any]] = {}
+
 class ProcessedContentResolver:
     """
     Index-driven Authoritative ProcessedContent Resolver for Gurukul AI.
-    Resolves strictly against CurriculumRegistry without filesystem guessing.
+    Resolves strictly against CurriculumRegistry with fast in-memory caching.
     """
 
     @classmethod
     def resolve_content(cls, identity: CurriculumIdentity) -> Dict[str, Any]:
         if not identity.grade or not identity.subject or not identity.book or not identity.part or not identity.unit or not identity.chapter_id or not identity.content_type:
             raise ValueError("All 7 identity dimensions (grade, subject, book, part, unit, chapter_id, content_type) are strictly required.")
+
+        cache_key = f"{identity.grade}:{identity.subject}:{identity.book}:{identity.part}:{identity.unit}:{identity.chapter_id}:{identity.content_type}"
+        if cache_key in _CONTENT_CACHE:
+            return _CONTENT_CACHE[cache_key]
 
         try:
             node = CurriculumRegistry.resolve_node(identity)
@@ -50,6 +56,7 @@ class ProcessedContentResolver:
                         raise ContentIntegrityError(str(e))
                 else:
                     sections[sec_name] = None
+            _CONTENT_CACHE[cache_key] = sections
             return sections
 
         if identity.content_type not in node["available_content_types"]:
@@ -57,7 +64,9 @@ class ProcessedContentResolver:
 
         content_file = chapter_dir / f"{identity.content_type}.json"
         try:
-            return ContentValidator.validate_content_file(content_file, identity)
+            res_data = ContentValidator.validate_content_file(content_file, identity)
+            _CONTENT_CACHE[cache_key] = res_data
+            return res_data
         except (ContentNotFoundError, ContentSchemaError):
             raise
         except Exception as e:

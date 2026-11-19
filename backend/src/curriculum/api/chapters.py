@@ -320,6 +320,12 @@ async def get_chapter_direct_source_v2(
     """
     try:
         canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
+        node_key = f"{grade}:{canonical_subj}:{book}:{part}:{unit}:{chapterId}"
+        index = CurriculumRegistry.get_index()
+        node = index.get(node_key)
+        avail_types = node.get("available_content_types", []) if node else []
+        chosen_type = "overview" if "overview" in avail_types else (avail_types[0] if avail_types else "overview")
+
         identity = CurriculumIdentity(
             grade=str(grade),
             subject=canonical_subj,
@@ -327,7 +333,7 @@ async def get_chapter_direct_source_v2(
             part=part,
             unit=unit,
             chapter_id=chapterId,
-            content_type="overview"
+            content_type=chosen_type
         )
     except Exception as ve:
         raise HTTPException(

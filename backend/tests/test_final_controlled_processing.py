@@ -2,17 +2,13 @@ import os
 import sys
 import pytest
 
-backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-root_dir = os.path.dirname(backend_dir)
-if root_dir not in sys.path:
-    sys.path.insert(0, root_dir)
-if backend_dir not in sys.path:
-    sys.path.insert(0, backend_dir)
+test_dir = os.path.dirname(os.path.abspath(__file__))
+backend_dir = os.path.dirname(test_dir)
+scripts_dir = os.path.join(backend_dir, "scripts")
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
 
-try:
-    from backend.scripts.run_final_controlled_processing import execute_gate
-except ImportError:
-    from scripts.run_final_controlled_processing import execute_gate
+from run_final_controlled_processing import execute_gate
 
 def test_gate_execution_pass():
     res = execute_gate("RUN_TEST", "Dummy Pass Gate", f"{sys.executable} -c \"import sys; sys.exit(0)\"")

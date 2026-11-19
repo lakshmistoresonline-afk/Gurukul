@@ -22,6 +22,11 @@ class GurukulConfig:
         env_val = os.getenv("GURUKUL_PROCESSED_ROOT")
         if env_val:
             return Path(env_val).resolve()
+
+        backend_processed = (Path(__file__).resolve().parents[3] / "ProcessedContent").resolve()
+        if backend_processed.exists():
+            return backend_processed
+
         return (cls.REPO_ROOT / "ProcessedContent").resolve()
 
     @classmethod

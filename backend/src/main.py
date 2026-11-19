@@ -74,6 +74,93 @@ app.add_middleware(
 app.include_router(curriculum_chapters.router)
 app.include_router(tutor_api.router)
 
+def ensure_ollama_auto_started():
+    import urllib.request
+    import subprocess
+    import time
+    ollama_url = (os.getenv("OLLAMA_URL") or "http://127.0.0.1:11434").strip()
+    ollama_model = (os.getenv("OLLAMA_MODEL") or "qwen3.5:2b-q4_K_M").strip()
+
+    is_online = False
+    try:
+        req = urllib.request.Request(f"{ollama_url}/api/tags")
+        with urllib.request.urlopen(req, timeout=3) as resp:
+            if resp.status == 200:
+                is_online = True
+    except Exception:
+        is_online = False
+
+    if not is_online:
+        print(f"[OllamaAutoStart] Local Ollama offline on {ollama_url}. Auto-launching 'ollama serve' in background...")
+        try:
+            subprocess.Popen(
+                ["ollama", "serve"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                creationflags=subprocess.CREATE_NO_WINDOW if sys.platform == "win32" else 0
+            )
+            print("[OllamaAutoStart] Auto-started background 'ollama serve' process successfully.")
+        except Exception as err:
+            print(f"[OllamaAutoStart] Failed to auto-launch ollama serve: {err}")
+
+        # Poll up to 10 seconds for Ollama service readiness
+        for _ in range(10):
+            time.sleep(1)
+            try:
+                req = urllib.request.Request(f"{ollama_url}/api/tags")
+                with urllib.request.urlopen(req, timeout=2) as resp:
+                    if resp.status == 200:
+                        print(f"[OllamaAutoStart] Ollama service confirmed online at {ollama_url}!")
+                        is_online = True
+                        break
+            except Exception:
+                pass
+
+    # Pre-warm and lock model in memory
+    try:
+        warm_payload = json.dumps({
+            "model": ollama_model,
+            "prompt": "hello",
+            "stream": False,
+            "keep_alive": -1
+        }).encode("utf-8")
+        req_warm = urllib.request.Request(f"{ollama_url}/api/generate", data=warm_payload, headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req_warm, timeout=30) as resp:
+            if resp.status == 200:
+                print(f"[OllamaAutoStart] Model '{ollama_model}' pre-warmed and locked in memory!")
+    except Exception as e:
+        print(f"[OllamaAutoStart] Model pre-warming notice: {e}")
+
+@app.get("/api/v1/tutor/health")
+def tutor_health_check():
+    import urllib.request
+    ollama_url = (os.getenv("OLLAMA_URL") or "http://127.0.0.1:11434").strip()
+    ollama_model = (os.getenv("OLLAMA_MODEL") or "qwen3.5:2b-q4_K_M").strip()
+    try:
+        req = urllib.request.Request(f"{ollama_url}/api/tags")
+        with urllib.request.urlopen(req, timeout=2) as resp:
+            if resp.status == 200:
+                return {
+                    "status": "ONLINE",
+                    "ollama_running": True,
+                    "model": ollama_model,
+                    "message": "Local Ollama AI engine is online and active."
+                }
+    except Exception:
+        pass
+
+    asyncio.create_task(asyncio.to_thread(ensure_ollama_auto_started))
+    return {
+        "status": "OFFLINE",
+        "ollama_running": False,
+        "model": ollama_model,
+        "message": "Local Ollama AI background service is currently starting. AI Tutor will activate automatically once Ollama finishes initializing."
+    }
+
+@app.on_event("startup")
+async def startup_event():
+    asyncio.create_task(asyncio.to_thread(ensure_ollama_auto_started))
+
 CONTENT_ROOT = str(GurukulConfig.get_content_root())
 
 secure_ws_mgr = SecureWebSocketManager()

@@ -23,6 +23,8 @@ class SubjectRegistry:
         "sociali": "social_science",
         "social ii": "social_science",
         "socialii": "social_science",
+        "social iii": "social_science",
+        "socialiii": "social_science",
         "sanskrit": "sanskrit"
     }
 
