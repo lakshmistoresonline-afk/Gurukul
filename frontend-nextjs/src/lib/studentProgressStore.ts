@@ -70,12 +70,15 @@ const DEFAULT_PROGRESS: StudentProgressState = {
 
 export function getAuthoritativeClassForUser(user: any, uid: string): string {
   const email = (user?.email || '').toLowerCase().trim();
-  if (email.includes('usera') || email.includes('class7') || email.includes('grade7')) return '7';
-  if (email.includes('userc') || email.includes('class6') || email.includes('grade6')) return '6';
-  if (email.includes('userb') || email.includes('class5') || email.includes('grade5')) return '5';
-  if (uid === 'user-a-uid') return '7';
-  if (uid === 'user-c-uid') return '6';
-  if (uid === 'user-b-uid') return '5';
+  const idStr = (uid || '').toLowerCase().trim();
+
+  if (email.includes('student10') || email.includes('class10') || email.includes('grade10') || idStr.includes('student-10')) return '10';
+  if (email.includes('student9') || email.includes('class9') || email.includes('grade9') || email.includes('usere') || idStr.includes('student-9')) return '9';
+  if (email.includes('student8') || email.includes('class8') || email.includes('grade8') || email.includes('userd') || idStr.includes('student-8')) return '8';
+  if (email.includes('student7') || email.includes('class7') || email.includes('grade7') || email.includes('usera') || idStr.includes('student-7')) return '7';
+  if (email.includes('student6') || email.includes('class6') || email.includes('grade6') || email.includes('userc') || idStr.includes('student-6')) return '6';
+  if (email.includes('student5') || email.includes('class5') || email.includes('grade5') || email.includes('userb') || idStr.includes('student-5')) return '5';
+
   return '5';
 }
 
@@ -89,7 +92,10 @@ function getLocalCacheKey(uid: string): string {
 export function getStudentProgress(uid: string): StudentProgressState {
   if (typeof window === 'undefined') return DEFAULT_PROGRESS;
   const targetUid = uid || 'guest';
-  const defaultGrade = getAuthoritativeClassForUser(auth.currentUser, targetUid);
+  const activeEmail = localStorage.getItem('gurukul_active_user_email');
+  const activeGrade = localStorage.getItem('gurukul_active_grade');
+  const mockUser = auth.currentUser || (activeEmail ? { email: activeEmail } : null);
+  const defaultGrade = activeGrade || getAuthoritativeClassForUser(mockUser, targetUid);
   try {
     const raw = localStorage.getItem(getLocalCacheKey(targetUid));
     if (!raw) return { ...DEFAULT_PROGRESS, selectedGrade: defaultGrade };
@@ -97,7 +103,7 @@ export function getStudentProgress(uid: string): StudentProgressState {
     return {
       ...DEFAULT_PROGRESS,
       ...parsed,
-      selectedGrade: parsed.selectedGrade || defaultGrade
+      selectedGrade: activeGrade || parsed.selectedGrade || defaultGrade
     };
   } catch {
     return { ...DEFAULT_PROGRESS, selectedGrade: defaultGrade };
@@ -108,10 +114,22 @@ export function getStudentProgress(uid: string): StudentProgressState {
  * Asynchronously fetches authoritative student progress from Firestore and syncs to local cache.
  */
 export async function syncStudentProgressFromFirestore(uid: string): Promise<StudentProgressState> {
-  if (!uid || uid === 'guest') return getStudentProgress('guest');
+  const activeEmail = typeof window !== 'undefined' ? localStorage.getItem('gurukul_active_user_email') : null;
+  const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('gurukul_active_grade') : null;
+  const mockUser = auth.currentUser || (activeEmail ? { email: activeEmail } : null);
+
+  if (!uid || uid === 'guest') {
+    const guestProg = getStudentProgress('guest');
+    const authGrade = activeGrade || getAuthoritativeClassForUser(mockUser, 'guest');
+    return {
+      ...guestProg,
+      selectedGrade: authGrade
+    };
+  }
+
   try {
-    const authUser = auth.currentUser;
-    let resolvedGrade = getAuthoritativeClassForUser(authUser, uid);
+    const authUser = auth.currentUser || mockUser;
+    let resolvedGrade = activeGrade || getAuthoritativeClassForUser(authUser, uid);
 
     // 1. Fetch Authoritative User Profile from Firestore users/{uid}
     try {
@@ -137,40 +155,25 @@ export async function syncStudentProgressFromFirestore(uid: string): Promise<Stu
       merged = {
         ...DEFAULT_PROGRESS,
         ...data,
-        selectedGrade: resolvedGrade
+        selectedGrade: activeGrade || data.selectedGrade || resolvedGrade
       };
     } else {
-      const local = getStudentProgress(uid);
       merged = {
-        ...local,
-        selectedGrade: resolvedGrade
-      };
-    }
-    if (snap.exists()) {
-      const data = snap.data() as StudentProgressState;
-      merged = {
-        ...DEFAULT_PROGRESS,
-        ...data,
-        selectedGrade: data.selectedGrade || resolvedGrade
-      };
-    } else {
-      const local = getStudentProgress(uid);
-      merged = {
-        ...local,
-        selectedGrade: resolvedGrade
+        ...getStudentProgress(uid),
+        selectedGrade: activeGrade || resolvedGrade
       };
     }
 
-    if (typeof window !== 'undefined') {
+    // Sync back to local storage for instant offline access
+    try {
       localStorage.setItem(getLocalCacheKey(uid), JSON.stringify(merged));
-    }
+    } catch {}
+
     return merged;
-  } catch (e: any) {
-    if (!e?.message?.includes('permission') && !e?.message?.includes('insufficient')) {
-      console.warn('Firestore progress fetch deferred, using local cache:', e);
-    }
+  } catch (e) {
+    console.warn('Firestore progress fetch deferred (offline mode):', e);
+    return getStudentProgress(uid);
   }
-  return getStudentProgress(uid);
 }
 
 /**
