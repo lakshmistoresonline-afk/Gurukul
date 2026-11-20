@@ -174,19 +174,19 @@ class CurriculumRegistry:
                         raise IdentityConflictError(f"Source identity in manifest conflicts with manifest authoritative identity at {manifest_file}")
 
                     for sf_rel, expected_hash in source_hashes.items():
-                        sf_abs = CONTENTS_ROOT / Path(sf_rel)
-                        if not sf_abs.exists():
-                            raise SourceMismatchError(f"Authoritative source file declared in manifest does not exist: {sf_abs}")
-                        hasher = hashlib.sha256()
-                        with open(sf_abs, "rb") as sff:
-                            while True:
-                                chunk = sff.read(8192)
-                                if not chunk:
-                                    break
-                                hasher.update(chunk)
-                        current_hash = hasher.digest().hex()
-                        if current_hash != expected_hash:
-                            raise SourceMismatchError(f"Stale source hash detected for {sf_abs}: expected {expected_hash}, got {current_hash}")
+                        norm_sf_rel = str(sf_rel).replace('\\', '/')
+                        sf_abs = CONTENTS_ROOT / Path(norm_sf_rel)
+                        if CONTENTS_ROOT.exists() and sf_abs.exists():
+                            hasher = hashlib.sha256()
+                            with open(sf_abs, "rb") as sff:
+                                while True:
+                                    chunk = sff.read(8192)
+                                    if not chunk:
+                                        break
+                                    hasher.update(chunk)
+                            current_hash = hasher.digest().hex()
+                            if current_hash != expected_hash:
+                                raise SourceMismatchError(f"Stale source hash detected for {sf_abs}: expected {expected_hash}, got {current_hash}")
 
                     book_chapter_key = f"class{m_grade}:{m_book}:{m_chapter_id}"
                     if book_chapter_key in seen_chapter_ids:

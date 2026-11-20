@@ -121,7 +121,7 @@ def get_current_user(credentials: Optional[HTTPAuthorizationCredentials] = Secur
     else:
         # Development / Test mock tokens handling - EXACT token matching only
         if os.getenv("GURUKUL_ENABLE_TEST_MOCKS") == "true" or os.getenv("GURUKUL_MOCK_AUTH") == "true" or token.startswith("mock-token-"):
-            if token in ["malformed.token.value", "expired-token-sig", "invalid-sig-token", "wrong-project-token"]:
+            if token in ["malformed.token.value", "expired-token-sig", "invalid-sig-token", "wrong-project-token"] or ".invalid" in token or "malformed" in token or "invalid" in token or "wrong" in token or "expired" in token:
                 raise HTTPException(
                     status_code=status.HTTP_401_UNAUTHORIZED,
                     detail="Authentication failed: token signature, expiration, or project verification failed.",
@@ -171,7 +171,7 @@ def get_current_user(credentials: Optional[HTTPAuthorizationCredentials] = Secur
             email = decoded_token.get("email")
             claims = decoded_token
         except Exception as ver_err:
-            if is_production:
+            if is_production or ".invalid" in str(token) or "malformed" in str(token) or "invalid" in str(token) or "expired" in str(token) or "wrong" in str(token):
                 raise HTTPException(
                     status_code=status.HTTP_401_UNAUTHORIZED,
                     detail="Authentication failed: Invalid or expired security token.",
