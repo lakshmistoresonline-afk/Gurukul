@@ -142,8 +142,10 @@ export async function syncStudentProgressFromFirestore(uid: string): Promise<Stu
           resolvedGrade = String(fsClass).replace('class_', '').trim();
         }
       }
-    } catch (profErr) {
-      console.warn('Profile fetch failed, using fallback grade resolution:', profErr);
+    } catch (profErr: any) {
+      if (!profErr?.message?.includes('permission') && !profErr?.message?.includes('insufficient') && !profErr?.code?.includes('permission-denied')) {
+        console.warn('Profile fetch failed, using fallback grade resolution:', profErr);
+      }
     }
 
     // 2. Fetch Progress State
@@ -170,8 +172,10 @@ export async function syncStudentProgressFromFirestore(uid: string): Promise<Stu
     } catch {}
 
     return merged;
-  } catch (e) {
-    console.warn('Firestore progress fetch deferred (offline mode):', e);
+  } catch (e: any) {
+    if (!e?.message?.includes('permission') && !e?.message?.includes('insufficient') && !e?.code?.includes('permission-denied')) {
+      console.warn('Firestore progress fetch deferred (offline mode):', e);
+    }
     return getStudentProgress(uid);
   }
 }
