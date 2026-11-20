@@ -32,7 +32,7 @@ import {
   CheckCircle2,
   Award
 } from 'lucide-react';
-import { getCurriculumHierarchy, buildCurriculumUrl, CurriculumApiClient } from '../lib/curriculumClient';
+import { getCurriculumHierarchy, getFallbackHierarchy, buildCurriculumUrl, CurriculumApiClient } from '../lib/curriculumClient';
 import {
   getStudentProgress,
   StudentProgressState,
@@ -138,8 +138,19 @@ const SUBJECT_THEMES: Record<string, SubjectTheme> = {
 
 export default function StudentDashboard() {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
-  const [hierarchy, setHierarchy] = useState<any[]>([]);
-  const [loadingHierarchy, setLoadingHierarchy] = useState<boolean>(true);
+  const [hierarchy, setHierarchy] = useState<any[]>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const cached = sessionStorage.getItem('gurukul_cached_hierarchy');
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch {}
+    }
+    return getFallbackHierarchy();
+  });
+  const [loadingHierarchy, setLoadingHierarchy] = useState<boolean>(false);
   const [hierarchyError, setHierarchyError] = useState<string | null>(null);
 
   const [progress, setProgress] = useState<StudentProgressState>(() => {

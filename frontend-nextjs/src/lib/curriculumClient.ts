@@ -49,24 +49,59 @@ export function buildCurriculumUrl(identity: {
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'development' ? 'http://127.0.0.1:8001' : 'http://127.0.0.1:8001');
 
+let cachedHierarchyInMemory: any[] | null = null;
+
 export class CurriculumApiClient {
-  static async fetchHierarchy(retries = 8, delayMs = 1000): Promise<any[]> {
-    for (let attempt = 1; attempt <= retries; attempt++) {
+  static async fetchHierarchy(retries = 2, delayMs = 300): Promise<any[]> {
+    if (cachedHierarchyInMemory && cachedHierarchyInMemory.length > 0) {
+      return cachedHierarchyInMemory;
+    }
+
+    if (typeof window !== 'undefined') {
       try {
-        const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`);
+        const cached = sessionStorage.getItem('gurukul_cached_hierarchy');
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            cachedHierarchyInMemory = parsed;
+            return parsed;
+          }
+        }
+      } catch {}
+    }
+
+    const isCloudHost = typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
+    const effectiveRetries = (isCloudHost && API_BASE.includes('127.0.0.1')) ? 1 : retries;
+
+    for (let attempt = 1; attempt <= effectiveRetries; attempt++) {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2000);
+        const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`, { signal: controller.signal });
+        clearTimeout(timeoutId);
         if (!res.ok) {
           throw new CurriculumApiError(res.status, `Authoritative hierarchy fetch failed with HTTP ${res.status}`);
         }
-        return await res.json();
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) {
+          cachedHierarchyInMemory = data;
+          if (typeof window !== 'undefined') {
+            try { sessionStorage.setItem('gurukul_cached_hierarchy', JSON.stringify(data)); } catch {}
+          }
+          return data;
+        }
       } catch (err) {
-        if (attempt === retries) {
-          console.warn('Backend hierarchy unreachable, returning fallback hierarchy:', err);
-          return getFallbackHierarchy();
+        if (attempt === effectiveRetries) {
+          const fallback = getFallbackHierarchy();
+          cachedHierarchyInMemory = fallback;
+          return fallback;
         }
         await new Promise(resolve => setTimeout(resolve, delayMs));
       }
     }
-    return getFallbackHierarchy();
+    const fallback = getFallbackHierarchy();
+    cachedHierarchyInMemory = fallback;
+    return fallback;
   }
 
   static async fetchContent(identity: CurriculumIdentity): Promise<ChapterContentResponse> {

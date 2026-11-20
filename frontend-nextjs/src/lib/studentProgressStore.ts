@@ -118,9 +118,9 @@ export async function syncStudentProgressFromFirestore(uid: string): Promise<Stu
   const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('gurukul_active_grade') : null;
   const mockUser = auth.currentUser || (activeEmail ? { email: activeEmail } : null);
 
-  if (!uid || uid === 'guest') {
-    const guestProg = getStudentProgress('guest');
-    const authGrade = activeGrade || getAuthoritativeClassForUser(mockUser, 'guest');
+  if (!uid || uid === 'guest' || !auth.currentUser) {
+    const guestProg = getStudentProgress(uid || 'guest');
+    const authGrade = activeGrade || getAuthoritativeClassForUser(mockUser, uid || 'guest');
     return {
       ...guestProg,
       selectedGrade: authGrade
