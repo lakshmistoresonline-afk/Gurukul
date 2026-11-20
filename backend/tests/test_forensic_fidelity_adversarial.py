@@ -8,6 +8,7 @@ if backend_dir not in sys.path:
     sys.path.insert(0, backend_dir)
 
 from src.curriculum.verification.forensic_fidelity_verifier import ForensicFidelityVerifier
+from src.curriculum.core.config import GurukulConfig
 
 def test_adversarial_block_extraction_ignores_metadata():
     sample = {
@@ -36,6 +37,8 @@ def test_adversarial_parse_source_file_metadata():
     assert ct == "master"
 
 def test_forensic_verifier_corpus_execution():
+    if not GurukulConfig.get_content_root().exists():
+        pytest.skip("Raw Contents root not present on CI runner")
     report = ForensicFidelityVerifier.verify_corpus_fidelity()
     assert report["source_files_audited"] > 0
     assert "provenance_ledger" in report

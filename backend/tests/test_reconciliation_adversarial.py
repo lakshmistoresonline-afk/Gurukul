@@ -8,8 +8,11 @@ if backend_dir not in sys.path:
     sys.path.insert(0, str(backend_dir))
 
 from src.curriculum.verification.reconciliation_engine import ReconciliationEngine
+from src.curriculum.core.config import GurukulConfig
 
 def test_reconciliation_independent_inventories():
+    if not GurukulConfig.get_content_root().exists():
+        pytest.skip("Raw Contents root not present on CI runner")
     source_inv = ReconciliationEngine.build_source_inventory()
     processed_inv = ReconciliationEngine.build_processed_inventory()
 

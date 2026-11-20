@@ -29,6 +29,9 @@ def test_subject_registry_normalization():
     assert SubjectRegistry.get_display_name("social_science") == "Social Science"
 
 def test_content_immutability():
-    hashes = ContentImmutabilityAuditor.compute_directory_hashes(os.path.join(backend_dir, "..", "Contents"))
+    contents_dir = os.path.join(backend_dir, "..", "Contents")
+    if not os.path.exists(contents_dir):
+        pytest.skip("Raw Contents root not present on CI runner")
+    hashes = ContentImmutabilityAuditor.compute_directory_hashes(contents_dir)
     assert len(hashes) > 0
     assert ContentImmutabilityAuditor.verify_immutability(hashes) is True
