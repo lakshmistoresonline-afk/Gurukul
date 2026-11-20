@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../lib/firebase';
-import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2, Copy, Volume2, VolumeX, RotateCcw, ThumbsUp, ThumbsDown, Check, Globe, GraduationCap, Calculator } from 'lucide-react';
+import { Bot, Send, Sparkles, BookOpen, Lightbulb, Loader2, Copy, Volume2, VolumeX, RotateCcw, ThumbsUp, ThumbsDown, Check, Globe, GraduationCap, Calculator, Mic, MicOff, ShieldCheck } from 'lucide-react';
 import { getCurriculumHierarchy } from '../../lib/curriculumClient';
 import { sendHybridTutorChat } from '../../lib/webLlmClient';
 import { getStudentProgress, syncStudentProgressFromFirestore, getAuthoritativeClassForUser } from '../../lib/studentProgressStore';
@@ -39,15 +39,48 @@ export default function AiTutorPage() {
 
   const [question, setQuestion] = useState('');
   const [loading, setLoading] = useState(false);
+  const [isListening, setIsListening] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [speakingId, setSpeakingId] = useState<string | null>(null);
+
+  const handleVoiceInput = () => {
+    if (isListening) {
+      setIsListening(false);
+      return;
+    }
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert('Speech Recognition API is not supported in this browser. Please use Chrome, Edge, or Safari.');
+      return;
+    }
+    try {
+      const recognition = new SpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = 'en-US';
+
+      recognition.onstart = () => setIsListening(true);
+      recognition.onresult = (event: any) => {
+        const transcript = event.results[0][0].transcript;
+        if (transcript) setQuestion(transcript);
+        setIsListening(false);
+      };
+      recognition.onerror = () => setIsListening(false);
+      recognition.onend = () => setIsListening(false);
+
+      recognition.start();
+    } catch (e) {
+      console.error('Voice recognition error:', e);
+      setIsListening(false);
+    }
+  };
 
   // Separate, Isolated Chat Histories for NCERT Tutor and Universal World AI Modes
   const [ncertChatHistory, setNcertChatHistory] = useState<ChatMessage[]>([
     {
       id: 'welcome-ncert',
       sender: 'ai',
-      text: "🤖 Welcome! I am your NCERT Contextual AI Tutor. Ask me any question about your NCERT textbook chapters, formulas, or cross-subject topics!",
+      text: "🤖 Welcome to Gurukul AI Universal Tutor! Ask any question in the world — Science, Math, Python & Coding, World History, or Textbook Lessons!",
       question: '',
       grade: '6',
       subject: 'english',
@@ -55,8 +88,8 @@ export default function AiTutorPage() {
       part: 'main',
       unit: 'U01',
       chapter_id: 'G6-ENG-U01-C01',
-      mode: 'NCERT_CHAPTER',
-      model: 'NCERT Grounded AI Engine'
+      mode: 'WORLD_KNOWLEDGE',
+      model: 'Gurukul AI Engine'
     }
   ]);
 
@@ -171,7 +204,8 @@ export default function AiTutorPage() {
   const activeChatHistory = engineMode === 'NCERT' ? ncertChatHistory : worldChatHistory;
 
   const handleSendQuery = async (customQuestion?: string, targetSubject?: string, targetChapter?: string) => {
-    const queryText = (customQuestion || question).trim();
+    const rawQuery = (customQuestion || question).trim();
+    const queryText = rawQuery.replace(/^RETRY_/, '');
     if (!queryText || loading) return;
 
     const reqSubj = (targetSubject || selectedSubject).toLowerCase();
@@ -276,11 +310,43 @@ export default function AiTutorPage() {
         setWorldChatHistory(prev => [...prev, aiMsg]);
       }
     } catch (err: any) {
+      const isOllamaDown = (err?.message || '').includes('404') || (err?.message || '').includes('starting') || (err?.message || '').includes('unavailable');
+
+      if (isOllamaDown && !rawQuery.startsWith('RETRY_')) {
+        const tempMsgId = `temp-${Date.now()}`;
+        const tempMsg: ChatMessage = {
+          id: tempMsgId,
+          sender: 'ai',
+          text: `🤖 **GURUKUL AI Engine Notice**: Local Ollama AI service is initializing in the background. Auto-retrying your question in 3 seconds...`,
+          question: queryText,
+          grade: selectedGrade,
+          subject: activeSubj,
+          book: activeBook,
+          part: activePart,
+          unit: activeUnit,
+          chapter_id: activeChId,
+          mode: 'GENERAL_KNOWLEDGE',
+          model: 'GURUKUL AI Engine',
+          status: 'OFFLINE'
+        };
+
+        if (engineMode === 'NCERT') setNcertChatHistory(prev => [...prev, tempMsg]);
+        else setWorldChatHistory(prev => [...prev, tempMsg]);
+
+        setTimeout(() => {
+          handleSendQuery(`RETRY_${queryText}`, targetSubject, targetChapter);
+        }, 3500);
+        setLoading(false);
+        return;
+      }
+
       const errorMsgId = `err-${Date.now()}`;
       const errMessage: ChatMessage = {
         id: errorMsgId,
         sender: 'ai',
-        text: `🤖 **GURUKUL AI Engine**: I couldn't generate an answer right now. Please check your internet connection or try again.`,
+        text: isOllamaDown
+          ? `🤖 **GURUKUL AI Engine Notice**: Local Ollama AI service is currently starting in the background. Please wait a few seconds while Ollama initializes, or launch 'ollama serve' on your machine.`
+          : `🤖 **GURUKUL AI Engine**: ${err.message || "Local AI Tutor service is unavailable."}`,
         question: queryText,
         grade: selectedGrade,
         subject: activeSubj,
@@ -363,13 +429,7 @@ export default function AiTutorPage() {
 
     const modeLabel = msg.mode === 'MATH_EVALUATOR'
       ? '📐 Step-by-Step Math Solution'
-      : msg.mode === 'WORLD_KNOWLEDGE' || msg.text.includes('Universal World')
-      ? '🌍 Universal World AI Response'
-      : msg.mode === 'GENERAL_KNOWLEDGE' || msg.text.includes('General Knowledge') || msg.text.includes('General Educational Explanation')
-      ? '🌐 General Knowledge'
-      : msg.mode === 'NCERT_CROSS_SUBJECT'
-      ? '📚 Cross-Subject Explanation'
-      : '📖 NCERT Chapter Explanation';
+      : '🤖 GURUKUL AI RESPONSE';
 
     return (
       <div className="space-y-3">
@@ -470,7 +530,7 @@ export default function AiTutorPage() {
   };
 
   return (
-    <div className="p-4 sm:p-6 max-w-5xl mx-auto space-y-6 bg-[#F5F6F8] min-h-screen">
+    <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6 bg-[#F5F6F8] min-h-screen">
       {/* Header & Mode Switcher */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
@@ -479,179 +539,27 @@ export default function AiTutorPage() {
           </div>
           <div>
             <h1 className="text-3xl font-black text-slate-900 flex items-center gap-2">
-              Contextual AI Tutor
+              Gurukul AI Universal Tutor
             </h1>
             <p className="text-xs text-slate-600 font-semibold">
-              {engineMode === 'NCERT' ? `Grounded in NCERT Class ${selectedGrade} Textbooks` : 'Universal World AI Engine — Ask anything in the world!'}
+              Ask any question across NCERT Class {selectedGrade} textbooks, step-by-step math, science, coding, or world knowledge!
             </p>
           </div>
         </div>
-
-        {/* Mode Switcher Toggle Bar */}
-        <div className="flex items-center gap-1 bg-white p-1.5 rounded-2xl border border-slate-200 shadow-sm">
-          <button
-            onClick={() => setEngineMode('NCERT')}
-            className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer ${
-              engineMode === 'NCERT'
-                ? 'bg-teal-600 text-white shadow-sm'
-                : 'text-slate-600 hover:bg-slate-100'
-            }`}
-          >
-            <GraduationCap className="w-4 h-4" /> NCERT Tutor
-          </button>
-          <button
-            onClick={() => setEngineMode('WORLD')}
-            className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer ${
-              engineMode === 'WORLD'
-                ? 'bg-sky-600 text-white shadow-sm'
-                : 'text-slate-600 hover:bg-slate-100'
-            }`}
-          >
-            <Globe className="w-4 h-4" /> Universal World AI
-          </button>
-        </div>
       </div>
 
-      {/* Context Selector (When in NCERT Mode) */}
-      {engineMode === 'NCERT' && (
-        <div className="flex items-center gap-2 bg-white p-3 rounded-2xl border border-slate-200 text-xs w-full sm:w-auto shadow-sm">
-          <span className="text-xs font-bold text-slate-600 flex items-center gap-1">
-            <BookOpen className="w-3.5 h-3.5 text-teal-600" /> NCERT Context:
-          </span>
-          <select
-            value={selectedSubject}
-            onChange={(e) => {
-              const newSubj = e.target.value;
-              setSelectedSubject(newSubj);
-              const targetObj = subjectsList.find((s: any) =>
-                s.canonical_subject?.toLowerCase() === newSubj.toLowerCase() ||
-                s.subject?.toLowerCase() === newSubj.toLowerCase()
-              );
 
-              const chs: any[] = [];
-              (targetObj?.books || []).forEach((b: any) => {
-                (b.units || []).forEach((u: any) => {
-                  (u.chapters || []).forEach((ch: any) => {
-                    chs.push(ch);
-                  });
-                });
-              });
 
-              const defaultCh = chs.length > 0 ? chs[0].chapter_id : `G${selectedGrade}-${newSubj.slice(0, 3).toUpperCase()}-U01-C01`;
-              setSelectedChapterId(defaultCh);
-            }}
-            className="bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-slate-900 uppercase font-black focus:outline-none cursor-pointer"
-          >
-            {(subjectsList.length > 0 ? subjectsList : [{ canonical_subject: 'english', subject: 'English' }, { canonical_subject: 'hindi', subject: 'Hindi' }, { canonical_subject: 'maths', subject: 'Mathematics' }, { canonical_subject: 'science', subject: 'Science' }]).map((s: any) => {
-              const canonKey = s.canonical_subject || s.subject?.toLowerCase() || 'english';
-              return (
-                <option key={canonKey} value={canonKey}>
-                  {s.subject || canonKey.toUpperCase()}
-                </option>
-              );
-            })}
-          </select>
-
-          {availableChapters.length > 0 && (
-            <select
-              value={selectedChapterId}
-              onChange={(e) => setSelectedChapterId(e.target.value)}
-              className="bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-slate-900 font-mono font-bold focus:outline-none truncate max-w-[220px] cursor-pointer"
-            >
-              {availableChapters.map((ch: any) => (
-                <option key={ch.chapter_id} value={ch.chapter_id}>
-                  {ch.chapter_id}: {ch.chapter_title}
-                </option>
-              ))}
-            </select>
-          )}
-        </div>
-      )}
-
-      {/* Preset Question Cards */}
-      <div className="space-y-3">
-        <div className="flex items-center justify-between text-xs font-extrabold text-slate-700">
-          <span className="flex items-center gap-1.5"><Sparkles className="w-4 h-4 text-teal-600" /> {engineMode === 'NCERT' ? `Suggested Questions (${selectedSubject.toUpperCase()} - ${activeChapterTitle}):` : 'Universal World AI Suggested Questions:'}</span>
-          <span className="text-slate-500 font-mono">{engineMode === 'NCERT' ? `Class ${selectedGrade} NCERT` : 'Global Knowledge'}</span>
-        </div>
-
-        {engineMode === 'NCERT' ? (
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <button
-              onClick={() => handleSendQuery(`Explain the main idea and key concepts of ${activeChapterTitle}`, selectedSubject, selectedChapterId)}
-              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-teal-400 transition-all shadow-sm group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 text-xs font-black text-teal-700 mb-1">
-                <BookOpen className="w-3.5 h-3.5" /> Main Idea
-              </div>
-              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Explain the main idea of {activeChapterTitle}</p>
-            </button>
-
-            <button
-              onClick={() => handleSendQuery(`Give me a real-world example explaining concepts from ${activeChapterTitle}`, selectedSubject, selectedChapterId)}
-              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-teal-400 transition-all shadow-sm group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 text-xs font-black text-amber-700 mb-1">
-                <Lightbulb className="w-3.5 h-3.5" /> Real-World Example
-              </div>
-              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Give me an example from this chapter</p>
-            </button>
-
-            <button
-              onClick={() => handleSendQuery("What is photosynthesis?", "science", "G5-SCI-U01-C01")}
-              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-indigo-400 transition-all shadow-sm group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 text-xs font-black text-indigo-700 mb-1">
-                <Globe className="w-3.5 h-3.5" /> Cross-Subject Science
-              </div>
-              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Ask a Science question (e.g. What is photosynthesis?)</p>
-            </button>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <button
-              onClick={() => handleSendQuery("10 - -17")}
-              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-purple-400 transition-all shadow-sm group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 text-xs font-black text-purple-700 mb-1">
-                <Calculator className="w-3.5 h-3.5" /> Math Expression
-              </div>
-              <p className="text-xs text-slate-800 font-semibold line-clamp-2">Solve 10 - -17 step-by-step</p>
-            </button>
-
-            <button
-              onClick={() => handleSendQuery("How fast is the speed of light in space?")}
-              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-sky-400 transition-all shadow-sm group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 text-xs font-black text-sky-700 mb-1">
-                <Globe className="w-3.5 h-3.5" /> Space Science
-              </div>
-              <p className="text-xs text-slate-800 font-semibold line-clamp-2">How fast is the speed of light in space?</p>
-            </button>
-
-            <button
-              onClick={() => handleSendQuery("What is Python programming language and why is it popular?")}
-              className="p-3.5 rounded-2xl bg-white border border-slate-200 text-left hover:border-emerald-400 transition-all shadow-sm group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 text-xs font-black text-emerald-700 mb-1">
-                <Sparkles className="w-3.5 h-3.5" /> Technology &amp; Coding
-              </div>
-              <p className="text-xs text-slate-800 font-semibold line-clamp-2">What is Python programming language?</p>
-            </button>
-          </div>
-        )}
-      </div>
-
-      {/* Chat Conversation Box */}
-      <div className="bg-white border border-slate-200 rounded-3xl p-4 sm:p-6 h-[520px] flex flex-col justify-between shadow-sm">
-        <div className="flex-1 overflow-y-auto space-y-4 pr-1 sm:pr-2">
+      {/* Chat Conversation Box - Full Page Natural Scroll & Expanded Screen Width */}
+      <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 min-h-[500px] flex flex-col justify-between shadow-sm space-y-6">
+        <div className="space-y-4">
           {activeChatHistory.map((msg) => (
             <div
               key={msg.id}
               className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`w-full ${msg.sender === 'user' ? 'max-w-md' : 'max-w-[90%]'} p-4 rounded-2xl text-sm leading-relaxed ${
+                className={`w-full ${msg.sender === 'user' ? 'max-w-lg' : 'w-full'} p-5 rounded-2xl text-sm leading-relaxed ${
                   msg.sender === 'user'
                     ? 'bg-teal-700 text-white font-bold shadow-sm'
                     : 'bg-slate-50 text-slate-900 border border-slate-200'
@@ -663,20 +571,33 @@ export default function AiTutorPage() {
           ))}
 
           {loading && (
-            <div className="flex items-center gap-2 text-xs font-bold text-teal-700 p-3 bg-teal-50 rounded-2xl border border-teal-200 w-fit">
-              <Loader2 className="w-4 h-4 animate-spin" /> {engineMode === 'WORLD' ? 'Querying Universal World AI Engine (Ollama Cloud gemma4:31b)...' : `Querying NCERT AI Tutor for ${selectedSubject.toUpperCase()} (${selectedChapterId})...`}
+            <div className="flex items-center gap-2 text-xs font-bold text-teal-800 p-3 bg-teal-50 rounded-2xl border border-teal-200 w-fit">
+              <Loader2 className="w-4 h-4 animate-spin text-teal-600" />
+              <span>Gurukul AI Engine is thinking...</span>
             </div>
           )}
         </div>
 
         {/* Input Bar */}
-        <div className="pt-4 border-t border-slate-100 flex items-center gap-2">
+        <div className="pt-4 border-t border-slate-100 flex items-center gap-2 sticky bottom-4 bg-white/95 backdrop-blur-md p-2 rounded-2xl shadow-sm border border-slate-200/80 z-10">
+          <button
+            onClick={handleVoiceInput}
+            type="button"
+            className={`p-3 rounded-2xl border transition-all cursor-pointer ${
+              isListening
+                ? 'bg-rose-500 text-white border-rose-600 animate-pulse'
+                : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200'
+            }`}
+            title={isListening ? 'Listening... Speak your question' : 'Voice Input (Click & Speak)'}
+          >
+            {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
+          </button>
           <input
             type="text"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSendQuery()}
-            placeholder={engineMode === 'WORLD' ? 'Ask the Universal World AI Engine any question in the world...' : `Ask your Class ${selectedGrade} ${selectedSubject.toUpperCase()} AI Tutor a question...`}
+            placeholder={isListening ? 'Listening to your voice...' : engineMode === 'WORLD' ? 'Ask the Universal World AI Engine any question in the world...' : `Ask your Class ${selectedGrade} ${selectedSubject.toUpperCase()} AI Tutor a question...`}
             className="flex-1 bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3 text-sm text-slate-900 font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
           />
           <button

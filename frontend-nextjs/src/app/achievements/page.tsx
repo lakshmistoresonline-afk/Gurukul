@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { auth } from '../../lib/firebase';
-import { Trophy, Award, Flame, Star, Lock, BookOpen, Target, ShieldCheck, GraduationCap, Sparkles } from 'lucide-react';
+import { Trophy, Award, Flame, Star, Lock, BookOpen, Target, ShieldCheck, GraduationCap, Sparkles, Printer } from 'lucide-react';
 import {
   getStudentProgress,
   StudentProgressState,
@@ -135,32 +135,41 @@ export default function AchievementsPage() {
             </p>
           </div>
 
-          {/* Class Switcher Badge */}
-          {currentUser?.email?.includes('admin') ? (
-            <div className="flex items-center gap-2 bg-white p-1.5 rounded-2xl border border-slate-200 shadow-2xs">
-              <span className="text-xs font-black text-slate-600 px-2 flex items-center gap-1.5">
-                <GraduationCap className="w-4 h-4 text-teal-600" /> Admin Class:
-              </span>
-              {['5', '6', '7'].map((g) => (
-                <button
-                  key={g}
-                  onClick={() => handleGradeSelect(g)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
-                    selectedGrade === g
-                      ? 'bg-teal-600 text-white shadow-md'
-                      : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
-                  }`}
-                >
-                  Class {g}
-                </button>
-              ))}
-            </div>
-          ) : (
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-teal-200 text-teal-900 text-xs font-extrabold shadow-2xs">
-              <GraduationCap className="w-4 h-4 text-teal-600" />
-              <span>Assigned Class: <strong className="font-mono text-teal-700">Class {selectedGrade}</strong></span>
-            </div>
-          )}
+          {/* Action Buttons & Class Switcher Badge */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => window.print()}
+              className="px-4 py-2 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-black text-xs shadow-md transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <Printer className="w-4 h-4" /> Export Parent Report PDF
+            </button>
+
+            {currentUser?.email?.includes('admin') ? (
+              <div className="flex items-center gap-2 bg-white p-1.5 rounded-2xl border border-slate-200 shadow-2xs">
+                <span className="text-xs font-black text-slate-600 px-2 flex items-center gap-1.5">
+                  <GraduationCap className="w-4 h-4 text-teal-600" /> Admin Class:
+                </span>
+                {['5', '6', '7', '8', '9'].map((g) => (
+                  <button
+                    key={g}
+                    onClick={() => handleGradeSelect(g)}
+                    className={`px-3.5 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                      selectedGrade === g
+                        ? 'bg-teal-600 text-white shadow-md'
+                        : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+                    }`}
+                  >
+                    Class {g}
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-teal-200 text-teal-900 text-xs font-extrabold shadow-2xs">
+                <GraduationCap className="w-4 h-4 text-teal-600" />
+                <span>Assigned Class: <strong className="font-mono text-teal-700">Class {selectedGrade}</strong></span>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
@@ -222,11 +231,19 @@ export default function AchievementsPage() {
         </div>
       </div>
 
-      {/* Badges Grid */}
-      <div className="space-y-4">
-        <h2 className="text-xl font-black text-slate-900 flex items-center gap-2">
-          <Award className="w-5 h-5 text-teal-600" /> Class {selectedGrade} Badges
-        </h2>
+      {/* 3D Glassmorphic Trophy Showcase Shelf */}
+      <div className="p-8 rounded-3xl bg-gradient-to-b from-indigo-950 via-slate-900 to-indigo-900 border border-indigo-700/50 shadow-2xl space-y-6">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-white">
+          <div>
+            <div className="text-xs font-mono font-black text-amber-300 uppercase tracking-widest flex items-center gap-1.5 mb-1">
+              <Trophy className="w-4 h-4 text-amber-400" /> Academic Hall of Fame
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">Class {selectedGrade} 3D Trophy Showcase Shelf</h2>
+          </div>
+          <div className="px-4 py-2 rounded-2xl bg-white/10 border border-white/20 text-xs font-mono font-black text-amber-300 backdrop-blur-md">
+            Unlocked: {unlockedCount} / {achievementList.length} Badges
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {achievementList.map((a, idx) => {
@@ -234,19 +251,27 @@ export default function AchievementsPage() {
             return (
               <div
                 key={idx}
-                className={`p-6 rounded-3xl border flex flex-col items-center text-center space-y-3 transition-all shadow-sm ${
+                className={`p-6 rounded-3xl border flex flex-col items-center text-center space-y-3 transition-all ${
                   a.unlocked
-                    ? 'bg-white border-teal-300 ring-1 ring-teal-500/20 shadow-md'
-                    : 'bg-slate-50 border-slate-200 opacity-60'
+                    ? 'bg-white/15 backdrop-blur-xl border-amber-400/50 shadow-xl ring-2 ring-amber-400/30 text-white'
+                    : 'bg-white/5 backdrop-blur-md border-white/10 opacity-50 text-indigo-200'
                 }`}
               >
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center border shadow-2xs ${a.unlocked ? a.color : 'bg-slate-200 text-slate-400 border-slate-300'}`}>
+                <div className={`w-16 h-16 rounded-3xl flex items-center justify-center border shadow-lg ${a.unlocked ? 'bg-amber-400/20 text-amber-300 border-amber-300/50 animate-bounce' : 'bg-white/10 text-slate-400 border-white/10'}`}>
                   {a.unlocked ? <Icon className="w-8 h-8" /> : <Lock className="w-8 h-8" />}
                 </div>
-                <h3 className="font-black text-slate-900 text-base">{a.title}</h3>
-                <p className="text-xs text-slate-600 font-semibold">{a.desc}</p>
-                <span className={`text-[10px] px-3.5 py-1 rounded-full font-mono font-black ${a.unlocked ? 'bg-teal-100 text-teal-900 border border-teal-300' : 'bg-slate-200 text-slate-600'}`}>
-                  {a.unlocked ? 'Unlocked 🎉' : 'Locked 🔒'}
+
+                <div className="space-y-1">
+                  <h3 className="text-base font-black tracking-tight">{a.title}</h3>
+                  <p className="text-xs text-indigo-200/90 font-medium leading-relaxed">{a.desc}</p>
+                </div>
+
+                <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider border ${
+                  a.unlocked
+                    ? 'bg-amber-400/20 text-amber-300 border-amber-400/40'
+                    : 'bg-white/10 text-slate-400 border-white/10'
+                }`}>
+                  {a.unlocked ? 'Unlocked 🏆' : 'Locked 🔒'}
                 </span>
               </div>
             );

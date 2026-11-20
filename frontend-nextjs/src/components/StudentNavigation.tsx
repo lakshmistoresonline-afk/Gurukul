@@ -40,7 +40,7 @@ export function StudentNavigation() {
   const pathname = usePathname();
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
-  const [availableGrades, setAvailableGrades] = useState<string[]>(['5', '6', '7']);
+  const [availableGrades, setAvailableGrades] = useState<string[]>(['5', '6', '7', '8', '9']);
   const [showLoginModal, setShowLoginModal] = useState<boolean>(false);
 
   useEffect(() => {
@@ -75,23 +75,15 @@ export function StudentNavigation() {
     window.dispatchEvent(new CustomEvent('gradeChanged', { detail: { uid: targetUid, grade: g } }));
   };
 
-  const handleSignOut = async () => {
-    try {
-      await signOut(auth);
-    } catch (e) {
-      console.error('Failed to sign out:', e);
-    }
-  };
-
   return (
-    <aside className="w-64 bg-gradient-to-b from-[#1E293B] via-[#0F172A] to-[#1E1B4B] text-white flex flex-col h-screen sticky top-0 z-40 hidden md:flex shadow-2xl shrink-0 border-r border-white/10 rounded-r-3xl my-0">
+    <aside className="group w-16 hover:w-64 bg-gradient-to-b from-[#1E293B] via-[#0F172A] to-[#1E1B4B] text-white flex flex-col h-screen sticky top-0 z-40 hidden md:flex shadow-2xl shrink-0 border-r border-white/10 rounded-r-3xl my-0 transition-all duration-300 ease-in-out overflow-hidden">
       {/* Brand Header */}
-      <div className="p-6 border-b border-white/10 flex items-center justify-between gap-3">
+      <div className="p-3 group-hover:p-6 border-b border-white/10 flex items-center justify-between gap-3 shrink-0">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-teal-500/20 border border-white/20">
+          <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-teal-500/20 border border-white/20 shrink-0">
             <BookOpen className="w-5 h-5 text-white" />
           </div>
-          <div>
+          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap overflow-hidden">
             <h1 className="font-black text-white tracking-wide text-lg flex items-center gap-1.5">
               Gurukul <span className="text-[10px] px-2 py-0.5 rounded-full bg-teal-400/25 text-teal-200 font-mono border border-teal-300/30">AI</span>
             </h1>
@@ -101,14 +93,14 @@ export function StudentNavigation() {
       </div>
 
       {/* Authoritative Student Assigned Class Badge */}
-      <div className="px-5 py-3.5 border-b border-white/10 bg-black/20 space-y-1.5">
-        <div className="flex items-center justify-between text-[11px] text-slate-300 font-black uppercase tracking-wider">
-          <span className="flex items-center gap-1.5"><GraduationCap className="w-4 h-4 text-teal-400" /> AUTHORITATIVE CLASS:</span>
-          <span className="text-teal-300 font-mono font-black text-xs px-2.5 py-0.5 bg-teal-500/20 rounded-md border border-teal-400/30">CLASS {selectedGrade}</span>
+      <div className="px-3 group-hover:px-5 py-3 border-b border-white/10 bg-black/20 space-y-1.5 shrink-0 overflow-hidden">
+        <div className="flex items-center justify-between text-[11px] text-slate-300 font-black uppercase tracking-wider whitespace-nowrap">
+          <span className="flex items-center gap-1.5"><GraduationCap className="w-4 h-4 text-teal-400 shrink-0" /> <span className="hidden group-hover:inline">AUTHORITATIVE CLASS:</span></span>
+          <span className="text-teal-300 font-mono font-black text-xs px-2 py-0.5 bg-teal-500/20 rounded-md border border-teal-400/30">C{selectedGrade}</span>
         </div>
 
         {currentUser?.email?.includes('admin') ? (
-          <div className="grid grid-cols-3 gap-1 bg-black/30 p-1 rounded-xl border border-white/10 mt-1">
+          <div className="hidden group-hover:grid grid-cols-3 gap-1 bg-black/30 p-1 rounded-xl border border-white/10 mt-1">
             {availableGrades.map((g) => (
               <button
                 key={g}
@@ -124,12 +116,12 @@ export function StudentNavigation() {
             ))}
           </div>
         ) : (
-          <p className="text-[10px] text-slate-400 font-medium">Assigned by Firestore Student Profile</p>
+          <p className="hidden group-hover:block text-[10px] text-slate-400 font-medium">Assigned by Firestore Student Profile</p>
         )}
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex-1 p-4 space-y-1.5 overflow-y-auto">
+      <nav className="flex-1 p-2 group-hover:p-4 space-y-1.5 overflow-y-auto no-scrollbar">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;
           let isActive = false;
@@ -147,14 +139,14 @@ export function StudentNavigation() {
               key={item.href}
               href={item.href}
               aria-current={isActive ? 'page' : undefined}
-              className={`flex items-center gap-3.5 px-4 py-3 rounded-2xl text-xs font-extrabold transition-all cursor-pointer ${
+              className={`flex items-center gap-3.5 px-3.5 group-hover:px-4 py-3 rounded-2xl text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                 isActive
                   ? 'bg-gradient-to-r from-teal-500 to-emerald-600 text-white shadow-lg shadow-teal-500/25 border border-teal-300/40'
                   : 'text-slate-300 hover:bg-white/10 hover:text-white'
               }`}
             >
-              <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-slate-400'}`} />
-              <span>{item.label}</span>
+              <Icon className={`w-5 h-5 shrink-0 ${isActive ? 'text-white' : 'text-slate-400'}`} />
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">{item.label}</span>
             </Link>
           );
         })}
@@ -162,25 +154,19 @@ export function StudentNavigation() {
 
       {/* Student Profile & Auth Status */}
       <div className="p-4 border-t border-white/10 bg-black/20 rounded-br-3xl">
-        {currentUser ? (
-          <div className="p-3 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-between gap-2 backdrop-blur-md">
-            <div className="flex items-center gap-2.5 overflow-hidden">
-              <div className="w-9 h-9 rounded-xl bg-teal-400/20 text-teal-200 flex items-center justify-center shrink-0 border border-teal-300/30 font-black">
-                <UserIcon className="w-4 h-4" />
-              </div>
-              <div className="overflow-hidden">
-                <p className="text-xs font-black text-white truncate capitalize">{currentUser.displayName || currentUser.email?.split('@')[0] || 'Learner'}</p>
-                <p className="text-[10px] text-slate-300 truncate font-mono">{currentUser.email}</p>
-              </div>
+        {(currentUser || (typeof window !== 'undefined' && localStorage.getItem('gurukul_dev_logged_in') === 'true')) ? (
+          <div className="p-3 rounded-2xl bg-white/10 border border-white/15 flex items-center gap-2.5 backdrop-blur-md">
+            <div className="w-9 h-9 rounded-xl bg-teal-400/20 text-teal-200 flex items-center justify-center shrink-0 border border-teal-300/30 font-black">
+              <UserIcon className="w-4 h-4" />
             </div>
-            <button
-              onClick={handleSignOut}
-              title="Sign Out"
-              aria-label="Sign Out"
-              className="p-2 rounded-xl text-slate-300 hover:text-rose-300 hover:bg-white/10 transition-all shrink-0 cursor-pointer"
-            >
-              <LogOut className="w-4 h-4" />
-            </button>
+            <div className="overflow-hidden">
+              <p className="text-xs font-black text-white truncate capitalize">
+                {currentUser?.displayName || (typeof window !== 'undefined' && localStorage.getItem('gurukul_active_user_email') ? localStorage.getItem('gurukul_active_user_email')?.split('@')[0] : 'Learner')}
+              </p>
+              <p className="text-[10px] text-slate-300 truncate font-mono">
+                {currentUser?.email || (typeof window !== 'undefined' && localStorage.getItem('gurukul_active_user_email')) || 'Logged In'}
+              </p>
+            </div>
           </div>
         ) : (
           <div className="space-y-2">
@@ -241,12 +227,18 @@ export function MobileBottomNavigation() {
     window.dispatchEvent(new CustomEvent('gradeChanged', { detail: { uid: targetUid, grade: g } }));
   };
 
-  const handleSignOut = async () => {
+  const handleLogOut = async () => {
     try {
+      if (typeof window !== 'undefined') {
+        localStorage.removeItem('gurukul_dev_logged_in');
+        localStorage.removeItem('gurukul_active_user_email');
+        localStorage.removeItem('gurukul_active_grade');
+        window.dispatchEvent(new Event('dev_login_event'));
+      }
       await signOut(auth);
       setMoreOpen(false);
     } catch (e) {
-      console.error('Failed to sign out:', e);
+      console.error('Failed to log out:', e);
     }
   };
 
@@ -343,10 +335,10 @@ export function MobileBottomNavigation() {
 
             {currentUser && (
               <button
-                onClick={handleSignOut}
-                className="w-full mt-2 p-3 rounded-2xl bg-rose-500/20 border border-rose-400/30 text-rose-200 text-xs font-bold flex items-center justify-center gap-2"
+                onClick={handleLogOut}
+                className="w-full mt-2 p-3 rounded-2xl bg-rose-500/20 border border-rose-400/30 text-rose-200 text-xs font-bold flex items-center justify-center gap-2 cursor-pointer"
               >
-                <LogOut className="w-4 h-4" /> Sign Out
+                <LogOut className="w-4 h-4" /> Log Out
               </button>
             )}
           </div>

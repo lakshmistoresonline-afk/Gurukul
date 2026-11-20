@@ -35,6 +35,8 @@ function shuffleOptions(options: string[]) {
   return arr;
 }
 
+import Class7UniversalMasterComponent from './Class7/Class7UniversalMasterComponent';
+
 interface MasterProps {
   data: any;
 }
@@ -87,7 +89,11 @@ export default function MasterComponent({ data }: MasterProps) {
   });
 
   if (!data) {
-    return <div className="p-8 text-center text-slate-500">No master practice content available.</div>;
+    return <div className="p-8 text-center text-slate-500">No master content available.</div>;
+  }
+
+  if (data?.zero_omission_notes || data?.m1_zero_omission_notes) {
+    return <Class7UniversalMasterComponent data={data} />;
   }
 
   const toggleAnswer = (key: string) => {

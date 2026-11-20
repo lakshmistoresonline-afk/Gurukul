@@ -3,6 +3,8 @@ import HindiNotesComponent from './HindiNotesComponent';
 import MathsNotesComponent from './MathsNotesComponent';
 import { renderSafeText, SafeStructuredCard } from './safeRender';
 
+import Class7UniversalNotesComponent from './Class7/Class7UniversalNotesComponent';
+
 interface NotesProps {
   data: any;
   subject?: string;
@@ -13,6 +15,10 @@ export default function NotesComponent({ data, subject }: NotesProps) {
 
   if (!data) {
     return <div className="p-8 text-center text-slate-500">No notes available.</div>;
+  }
+
+  if (data.m1_zero_omission_notes) {
+    return <Class7UniversalNotesComponent data={data} />;
   }
 
   if (data.core_theme_and_moral || data.detailed_summary_and_explanation || data.exhaustive_vocabulary) {

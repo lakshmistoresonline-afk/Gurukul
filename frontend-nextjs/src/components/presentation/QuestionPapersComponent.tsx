@@ -70,10 +70,11 @@ export default function QuestionPapersComponent({ data }: QuestionPapersProps) {
     return <div className="p-8 text-center text-slate-500">No question papers are available for this chapter yet.</div>;
   }
 
-  const papers = data.question_papers || data.papers || [data];
+  const rawPapers = data.question_papers || data.papers || (Array.isArray(data.chapters) ? data.chapters[0]?.question_papers : null) || (Array.isArray(data) ? data : [data]);
+  const papers = Array.isArray(rawPapers) ? rawPapers : [rawPapers];
   const activePaperIdx = 0;
   const currentPaper = papers[activePaperIdx] || {};
-  const sections = currentPaper.sections || currentPaper.question_banks || [currentPaper];
+  const sections = currentPaper.sections || currentPaper.question_banks || (Array.isArray(data.sections) ? data.sections : [currentPaper]);
 
   // Collect all questions across all sections and assign categories
   const allQuestions: Array<{ q: any; sIdx: number; qIdx: number; sectionName: string; category: string }> = [];

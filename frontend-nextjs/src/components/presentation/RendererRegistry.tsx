@@ -77,13 +77,13 @@ class RendererRegistry {
     if (!Component) {
       if (ct === 'overview') Component = OverviewComponent;
       else if (ct === 'notes') {
-        if (subject === 'hindi') Component = HindiNotesComponent;
+        if (params.data?.m1_zero_omission_notes || ['7', '8', '9'].includes(grade)) Component = Class7UniversalNotesComponent;
+        else if (subject === 'hindi') Component = HindiNotesComponent;
         else if (subject === 'mathematics') Component = MathsNotesComponent;
-        else if (grade === '7') Component = Class7UniversalNotesComponent;
         else Component = NotesComponent;
       }
       else if (ct === 'master') {
-        if (grade === '7') Component = Class7UniversalMasterComponent;
+        if (params.data?.m1_zero_omission_notes || params.data?.zero_omission_notes || ['7', '8', '9'].includes(grade)) Component = Class7UniversalMasterComponent;
         else if (grade === '6' && subject === 'mathematics') Component = Class6MathsMasterComponent;
         else Component = MasterComponent;
       }

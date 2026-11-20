@@ -28,6 +28,8 @@ export default function LearningJourneyPage() {
     eventsLedger: []
   });
 
+  const [authLoaded, setAuthLoaded] = useState<boolean>(false);
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
@@ -36,6 +38,7 @@ export default function LearningJourneyPage() {
       const authGrade = synced.selectedGrade || getAuthoritativeClassForUser(user, targetUid);
       setProgress(synced);
       setSelectedGrade(authGrade);
+      setAuthLoaded(true);
     });
 
     const handleGradeChanged = () => {
@@ -72,6 +75,15 @@ export default function LearningJourneyPage() {
     { stage: 7, emoji: '🎓', name: 'Master', contentType: 'question_papers', module: 'Exam Question Papers', desc: 'Test exam readiness with model question papers and step-by-step keys.', color: 'text-rose-800 bg-rose-100 border-rose-300' }
   ];
 
+  if (!authLoaded) {
+    return (
+      <div className="p-16 max-w-5xl mx-auto text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center justify-center my-12 space-y-3">
+        <div className="w-8 h-8 border-4 border-teal-600 border-t-transparent rounded-full animate-spin" />
+        <span className="text-xs font-black text-slate-700">Loading your Class Learning Journey...</span>
+      </div>
+    );
+  }
+
   return (
     <div className="p-4 sm:p-6 max-w-5xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
       {/* Header Banner */}
@@ -95,7 +107,7 @@ export default function LearningJourneyPage() {
               <span className="text-xs font-black text-slate-600 px-2 flex items-center gap-1.5">
                 <GraduationCap className="w-4 h-4 text-teal-600" /> Admin Class:
               </span>
-              {['5', '6', '7'].map((g) => (
+              {['5', '6', '7', '8', '9'].map((g) => (
                 <button
                   key={g}
                   onClick={() => handleGradeSelect(g)}

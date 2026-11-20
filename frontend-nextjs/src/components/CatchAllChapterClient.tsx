@@ -40,7 +40,17 @@ import {
   Play,
   Image as ImageIcon,
   Check,
-  GraduationCap
+  GraduationCap,
+  Printer,
+  FileText,
+  ZoomIn,
+  ZoomOut,
+  Search,
+  Columns,
+  Zap,
+  Maximize2,
+  Minimize2,
+  Trophy
 } from 'lucide-react';
 
 interface Props {
@@ -90,6 +100,55 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
   const [isNeedPractice, setIsNeedPractice] = useState<boolean>(false);
 
+  // Dyslexia & Font Sizing Accessibility State
+  const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg' | 'xl'>('base');
+  const [isDyslexicFont, setIsDyslexicFont] = useState<boolean>(false);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
+  const [showDiagramLightbox, setShowDiagramLightbox] = useState<boolean>(false);
+  const [diagramZoom, setDiagramZoom] = useState<number>(1);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [isSplitView, setIsSplitView] = useState<boolean>(false);
+  const [viewMode, setViewMode] = useState<'single_stream' | 'tabs'>('single_stream');
+  const [isZenFocusMode, setIsZenFocusMode] = useState<boolean>(false);
+  const [splitSideContentType, setSplitSideContentType] = useState<string>('mindmaps');
+  const [splitSideData, setSplitSideData] = useState<any>(null);
+  const [loadingSplitSide, setLoadingSplitSide] = useState<boolean>(false);
+  const [allStreamData, setAllStreamData] = useState<Record<string, any>>({});
+  const [loadingStream, setLoadingStream] = useState<boolean>(false);
+  const [activeStreamSection, setActiveStreamSection] = useState<string>('overview');
+  const [completedStreamSections, setCompletedStreamSections] = useState<string[]>([]);
+
+  const handleUnlockNextSection = (currentCt: string) => {
+    const streamOrder = ['overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'];
+    const availableStreamOrder = streamOrder.filter(ct => !!allStreamData[ct]);
+    const currIdx = availableStreamOrder.indexOf(currentCt);
+
+    if (!completedStreamSections.includes(currentCt)) {
+      setCompletedStreamSections(prev => [...prev, currentCt]);
+    }
+
+    if (currIdx >= 0 && currIdx < availableStreamOrder.length - 1) {
+      const nextCt = availableStreamOrder[currIdx + 1];
+      setActiveStreamSection(nextCt);
+      setTimeout(() => {
+        const el = document.getElementById(`sec-${nextCt}`);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) {
+        const currentProgress = (window.scrollY / totalHeight) * 100;
+        setScrollProgress(Math.min(100, Math.max(0, currentProgress)));
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Contextual AI Tutor state
   const [tutorDrawerOpen, setTutorDrawerOpen] = useState<boolean>(false);
   const [tutorQuestion, setTutorQuestion] = useState<string>('');
@@ -122,6 +181,67 @@ export default function CatchAllChapterClient({ segments }: Props) {
     });
     return () => unsubscribe();
   }, [canonicalIdentityKey]);
+
+  useEffect(() => {
+    if (isSplitView) {
+      async function loadSplitSide() {
+        try {
+          setLoadingSplitSide(true);
+          const identity = {
+            grade,
+            subject,
+            book,
+            part,
+            unit,
+            chapter_id: chapterId,
+            content_type: splitSideContentType
+          };
+          const res = await CurriculumApiClient.fetchContent(identity);
+          setSplitSideData(res.data);
+        } catch (e) {
+          console.warn('Failed to load split side content:', e);
+          setSplitSideData(null);
+        } finally {
+          setLoadingSplitSide(false);
+        }
+      }
+      loadSplitSide();
+    }
+  }, [isSplitView, splitSideContentType, grade, subject, book, part, unit, chapterId]);
+
+  useEffect(() => {
+    if (viewMode === 'single_stream' && grade && subject && chapterId) {
+      async function loadAllStreamSections() {
+        try {
+          setLoadingStream(true);
+          const tabTypes = ['overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'];
+          const results = await Promise.all(
+            tabTypes.map(ct =>
+              CurriculumApiClient.fetchContent({
+                grade,
+                subject,
+                book,
+                part,
+                unit,
+                chapter_id: chapterId,
+                content_type: ct
+              }).then(res => ({ ct, data: res.data })).catch(() => ({ ct, data: null }))
+            )
+          );
+          const dataMap: Record<string, any> = {};
+          results.forEach(r => {
+            if (r.data) dataMap[r.ct] = r.data;
+          });
+          setAllStreamData(dataMap);
+        } catch (e) {
+          console.warn('Failed to load all stream sections:', e);
+        } finally {
+          setLoadingStream(false);
+        }
+      }
+      loadAllStreamSections();
+    }
+  }, [viewMode, grade, subject, book, part, unit, chapterId]);
 
   // Extract readable text for Audio Reader Toolbar
   const getReadableText = (data: any): string => {
@@ -218,12 +338,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           setNextChapterUrl(null);
         }
 
-        if (Array.isArray(foundChapter.content_types) && foundChapter.content_types.length > 0) {
-          const matchedTabs = ALL_CONTENT_TABS.filter(t => foundChapter.content_types.includes(t.tab));
-          if (matchedTabs.length > 0) {
-            setAvailableTabs(matchedTabs);
-          }
-        }
+        setAvailableTabs(ALL_CONTENT_TABS);
 
         try {
           const mediaRes = await fetchSubjectMedia(subject, grade);
@@ -326,6 +441,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
   const handleTabSelect = (tab: string, idx: number) => {
     setActiveTab(tab);
+    setViewMode('tabs');
     const btn = document.getElementById(`tab-btn-${idx}`);
     if (btn) {
       btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
@@ -392,8 +508,83 @@ export default function CatchAllChapterClient({ segments }: Props) {
     }
   };
 
+  const handleNavigateNextChapter = () => {
+    if (nextChapterUrl) {
+      window.location.href = nextChapterUrl;
+      return;
+    }
+    const match = chapterId.match(/^(G\d+-[A-Z]+-U\d+-C)(\d+)$/i);
+    if (match) {
+      const prefix = match[1];
+      const nextNum = parseInt(match[2], 10) + 1;
+      const nextChId = `${prefix}${String(nextNum).padStart(2, '0')}`;
+      const url = buildCurriculumUrl({
+        grade, subject, book, part, unit, chapter_id: nextChId
+      });
+      window.location.href = url;
+    }
+  };
+
+  const handleNavigatePrevChapter = () => {
+    if (prevChapterUrl) {
+      window.location.href = prevChapterUrl;
+      return;
+    }
+    const match = chapterId.match(/^(G\d+-[A-Z]+-U\d+-C)(\d+)$/i);
+    if (match) {
+      const prefix = match[1];
+      const prevNum = parseInt(match[2], 10) - 1;
+      if (prevNum >= 1) {
+        const prevChId = `${prefix}${String(prevNum).padStart(2, '0')}`;
+        const url = buildCurriculumUrl({
+          grade, subject, book, part, unit, chapter_id: prevChId
+        });
+        window.location.href = url;
+      }
+    }
+  };
+
+  const studentAuthGrade = currentUser
+    ? getAuthoritativeClassForUser(currentUser, currentUser.uid)
+    : grade;
+
+  const isAdmin = currentUser?.email?.includes('admin');
+  const isClassAccessDenied = !isAdmin && currentUser && studentAuthGrade !== grade;
+
+  if (isClassAccessDenied) {
+    return (
+      <div className="p-8 max-w-xl mx-auto my-12 bg-white border border-rose-200 rounded-3xl text-center space-y-4 shadow-xl">
+        <div className="w-16 h-16 rounded-3xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-2xl mx-auto shadow-sm">
+          🛡️
+        </div>
+        <div className="space-y-1">
+          <h2 className="text-2xl font-black text-slate-900">Class Access Restricted</h2>
+          <p className="text-xs text-slate-600 font-semibold">
+            Your account is assigned to <strong className="text-teal-700 font-mono text-sm">Class {studentAuthGrade}</strong>. You are not authorized to view Class {grade} curriculum.
+          </p>
+        </div>
+        <div className="pt-2">
+          <Link
+            href="/subjects"
+            className="px-6 py-3 rounded-2xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs inline-block shadow-md transition-all cursor-pointer"
+          >
+            Return to My Class {studentAuthGrade} Subjects
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-[#F5F6F8] text-slate-900 p-4 sm:p-6 space-y-6">
+    <div className={`min-h-screen bg-[#F5F6F8] text-slate-900 ${isZenFocusMode ? 'fixed inset-0 z-40 p-6 overflow-y-auto bg-[#F5F6F8]' : 'p-4 sm:p-6 space-y-6'}`}>
+      {/* Top Scroll Reading Progress Bar */}
+      <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-slate-200">
+        <div
+          className="h-full bg-gradient-to-r from-teal-500 via-indigo-500 to-amber-500 transition-all duration-150"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
+
       {/* Selected-Text Ask AI Floating Popup */}
       <SelectedTextTutor
         grade={grade}
@@ -409,6 +600,66 @@ export default function CatchAllChapterClient({ segments }: Props) {
       <div className="bg-white border border-slate-200/90 rounded-3xl p-6 shadow-sm space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold text-slate-500">
           <div className="flex items-center gap-2">
+            {/* Zen Focus Mode Button */}
+            <button
+              onClick={() => setIsZenFocusMode(!isZenFocusMode)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer flex items-center gap-1 ${
+                isZenFocusMode
+                  ? 'bg-purple-600 text-white border-purple-700 shadow-md'
+                  : 'bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100'
+              }`}
+              title="Toggle Fullscreen Zen Focus Reading Mode"
+            >
+              {isZenFocusMode ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
+              {isZenFocusMode ? 'Exit Zen Mode' : 'Zen Focus Mode'}
+            </button>
+
+            {/* Presentation Mode Toggle */}
+            <div className="flex bg-slate-100 p-0.5 rounded-xl border border-slate-200">
+              <button
+                onClick={() => setViewMode('single_stream')}
+                className={`px-2.5 py-1 rounded-lg text-[11px] font-black transition-all cursor-pointer ${
+                  viewMode === 'single_stream' ? 'bg-teal-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+                title="Single-Stream Continuous Reading Canvas"
+              >
+                📜 Stream Canvas
+              </button>
+              <button
+                onClick={() => setViewMode('tabs')}
+                className={`px-2.5 py-1 rounded-lg text-[11px] font-black transition-all cursor-pointer ${
+                  viewMode === 'tabs' ? 'bg-teal-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+                title="Tabbed Module View"
+              >
+                📑 Tabs
+              </button>
+            </div>
+
+            {/* In-Page Text Search Input */}
+            <div className="relative w-36 sm:w-48">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search chapter..."
+                className="w-full pl-8 pr-3 py-1 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              />
+            </div>
+
+            {/* Split View Toggle */}
+            <button
+              onClick={() => setIsSplitView(!isSplitView)}
+              className={`px-3 py-1 rounded-xl text-xs font-black border transition-all cursor-pointer flex items-center gap-1 ${
+                isSplitView
+                  ? 'bg-indigo-600 text-white border-indigo-700'
+                  : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
+              }`}
+              title="Toggle Side-by-Side Dual Content View"
+            >
+              <Columns className="w-3.5 h-3.5" /> {isSplitView ? 'Split ON' : 'Split View'}
+            </button>
             <Link href="/subjects" className="text-teal-700 hover:underline flex items-center gap-1 font-bold">
               <ArrowLeft className="w-3.5 h-3.5" /> All Subjects
             </Link>
@@ -419,23 +670,54 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
 
           <div className="flex items-center gap-2">
-            {prevChapterUrl && (
-              <Link
-                href={prevChapterUrl}
-                className="px-3 py-1.5 rounded-xl text-xs font-black bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200 transition-all flex items-center gap-1"
-              >
-                <ArrowLeft className="w-3.5 h-3.5" /> Prev Chapter
-              </Link>
-            )}
+            {/* Printable PDF Worksheet Button */}
+            <button
+              onClick={() => window.print()}
+              className="px-3 py-1.5 rounded-xl text-xs font-black bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition-all flex items-center gap-1 cursor-pointer"
+              title="Print / Export Printable PDF Worksheet"
+            >
+              <Printer className="w-3.5 h-3.5" /> Printable PDF
+            </button>
 
-            {nextChapterUrl && (
-              <Link
-                href={nextChapterUrl}
-                className="px-3 py-1.5 rounded-xl text-xs font-black bg-teal-600 text-white hover:bg-teal-500 transition-all flex items-center gap-1 shadow-2xs"
+            {/* Font Accessibility Toolbar */}
+            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-bold">
+              <button
+                onClick={() => setFontSize(prev => prev === 'xl' ? 'lg' : prev === 'lg' ? 'base' : 'sm')}
+                className="px-2 py-0.5 hover:bg-white rounded text-slate-700 font-extrabold cursor-pointer"
+                title="Decrease Font Size"
               >
-                Next Chapter <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
-            )}
+                A-
+              </button>
+              <button
+                onClick={() => setFontSize(prev => prev === 'sm' ? 'base' : prev === 'base' ? 'lg' : 'xl')}
+                className="px-2 py-0.5 hover:bg-white rounded text-slate-700 font-extrabold cursor-pointer"
+                title="Increase Font Size"
+              >
+                A+
+              </button>
+              <button
+                onClick={() => setIsDyslexicFont(!isDyslexicFont)}
+                className={`px-2 py-0.5 rounded text-[10px] font-black transition-all cursor-pointer ${
+                  isDyslexicFont ? 'bg-teal-600 text-white' : 'hover:bg-white text-slate-700'
+                }`}
+                title="Toggle Dyslexia-Friendly Font"
+              >
+                {isDyslexicFont ? 'Dyslexic ON' : 'Dyslexia'}
+              </button>
+            </div>
+            <button
+              onClick={handleNavigatePrevChapter}
+              className="px-3 py-1.5 rounded-xl text-xs font-black bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200 transition-all flex items-center gap-1 cursor-pointer"
+            >
+              <ArrowLeft className="w-3.5 h-3.5" /> Prev Chapter
+            </button>
+
+            <button
+              onClick={handleNavigateNextChapter}
+              className="px-3.5 py-1.5 rounded-xl text-xs font-black bg-teal-600 hover:bg-teal-500 text-white transition-all flex items-center gap-1 shadow-md cursor-pointer"
+            >
+              Next Chapter <ArrowRight className="w-3.5 h-3.5" />
+            </button>
 
             <button
               onClick={handleToggleBookmark}
@@ -488,50 +770,50 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
         {/* Content Tabs Bar */}
         <div className="relative flex items-center pt-2 border-t border-slate-100">
-          <button
-            onClick={() => scrollStageBar('left')}
-            title="Scroll Left"
-            className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 mr-2 shrink-0 cursor-pointer"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
+            <button
+              onClick={() => scrollStageBar('left')}
+              title="Scroll Left"
+              className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 mr-2 shrink-0 cursor-pointer"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
 
-          <div
-            ref={stageBarRef}
-            className="flex items-center gap-2 overflow-x-auto scroll-smooth no-scrollbar flex-1 py-1"
-          >
-            <span className="text-xs font-black text-slate-500 flex items-center gap-1 px-1 shrink-0 uppercase font-mono">
-              <Compass className="w-4 h-4 text-teal-600" /> Module:
-            </span>
-            {availableTabs.map((t, idx) => {
-              const isSelected = activeTab === t.tab;
-              return (
-                <button
-                  id={`tab-btn-${idx}`}
-                  key={t.tab}
-                  onClick={() => handleTabSelect(t.tab, idx)}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-black transition-all shrink-0 border cursor-pointer ${
-                    isSelected
-                      ? 'bg-teal-600 text-white border-teal-600 shadow-md'
-                      : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
-                  }`}
-                >
-                  <span>{t.icon}</span>
-                  <span>{t.name}</span>
-                </button>
-              );
-            })}
+            <div
+              ref={stageBarRef}
+              className="flex items-center gap-2 overflow-x-auto scroll-smooth no-scrollbar flex-1 py-1"
+            >
+              <span className="text-xs font-black text-slate-500 flex items-center gap-1 px-1 shrink-0 uppercase font-mono">
+                <Compass className="w-4 h-4 text-teal-600" /> Module:
+              </span>
+              {availableTabs.map((t, idx) => {
+                const isSelected = activeTab === t.tab;
+                return (
+                  <button
+                    id={`tab-btn-${idx}`}
+                    key={t.tab}
+                    onClick={() => handleTabSelect(t.tab, idx)}
+                    className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-black transition-all shrink-0 border cursor-pointer ${
+                      isSelected
+                        ? 'bg-teal-600 text-white border-teal-600 shadow-md'
+                        : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
+                    }`}
+                  >
+                    <span>{t.icon}</span>
+                    <span>{t.name}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <button
+              onClick={() => scrollStageBar('right')}
+              title="Scroll Right"
+              className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 ml-2 shrink-0 cursor-pointer"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
-
-          <button
-            onClick={() => scrollStageBar('right')}
-            title="Scroll Right"
-            className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 ml-2 shrink-0 cursor-pointer"
-          >
-            <ChevronRight className="w-4 h-4" />
-          </button>
         </div>
-      </div>
 
       {/* Workspace Layout Canvas */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -542,6 +824,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
               textToRead={getReadableText(contentData)}
               subject={subject}
               activeTab={CONTENT_TYPE_LABELS[activeTab] || activeTab}
+              onFontSizeChange={(sz) => setFontSize(sz === 'large' ? 'lg' : sz === 'xlarge' ? 'xl' : 'base')}
             />
           )}
 
@@ -558,27 +841,200 @@ export default function CatchAllChapterClient({ segments }: Props) {
             </div>
           )}
 
-          {!loading && statusCode === 200 && contentData && (
-            <div className="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm text-slate-900 leading-relaxed font-medium space-y-6">
-              {RendererRegistry.resolve({
-                grade,
-                subject,
-                book,
-                part,
-                contentType: activeTab,
-                data: contentData
-              })}
+          {!loading && statusCode === 200 && (
+            <div className={`grid grid-cols-1 ${isSplitView ? 'md:grid-cols-2' : 'grid-cols-1'} gap-6`}>
+              <div className="space-y-6">
+                {viewMode === 'single_stream' ? (
+                  <div className="space-y-8">
+                    {loadingStream && (
+                      <div className="p-8 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex items-center justify-center gap-2">
+                        <Loader2 className="w-5 h-5 animate-spin text-teal-600" />
+                        <span className="text-xs font-black text-slate-700">Loading complete continuous learning stream...</span>
+                      </div>
+                    )}
+
+                    {!loadingStream && Object.keys(allStreamData).length > 0 && (() => {
+                      const streamOrder = ['overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'];
+                      const availableStreamOrder = streamOrder.filter(ct => !!allStreamData[ct]);
+
+                      return availableStreamOrder.map((ct, idx) => {
+                        const secData = allStreamData[ct];
+                        if (!secData) return null;
+                        const label = CONTENT_TYPE_LABELS[ct] || ct;
+                        const isExpanded = activeStreamSection === ct;
+                        const isCompleted = completedStreamSections.includes(ct);
+                        const nextCt = availableStreamOrder[idx + 1];
+                        const nextLabel = nextCt ? (CONTENT_TYPE_LABELS[nextCt] || nextCt) : null;
+
+                        return (
+                          <div key={ct} id={`sec-${ct}`} className="space-y-3 transition-all duration-300">
+                            {/* Section Header Accordion Banner */}
+                            <button
+                              onClick={() => setActiveStreamSection(activeStreamSection === ct ? '' : ct)}
+                              className={`w-full px-5 py-3.5 rounded-2xl flex items-center justify-between text-xs font-black shadow-sm transition-all cursor-pointer ${
+                                isExpanded
+                                  ? 'bg-gradient-to-r from-teal-900 via-indigo-900 to-slate-900 text-white border border-teal-500/30'
+                                  : isCompleted
+                                  ? 'bg-emerald-50 text-emerald-950 border border-emerald-200 hover:bg-emerald-100'
+                                  : 'bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200'
+                              }`}
+                            >
+                              <div className="flex items-center gap-3">
+                                <span className={`w-7 h-7 rounded-xl flex items-center justify-center font-mono font-bold text-xs ${
+                                  isExpanded ? 'bg-teal-500 text-white' : isCompleted ? 'bg-emerald-600 text-white' : 'bg-slate-200 text-slate-700'
+                                }`}>
+                                  {isCompleted ? '✓' : idx + 1}
+                                </span>
+                                <span className="uppercase tracking-widest font-mono text-sm">{label} Section</span>
+                              </div>
+
+                              <div className="flex items-center gap-2">
+                                <span className={`text-[10px] px-2.5 py-0.5 rounded-full font-mono font-bold ${
+                                  isExpanded ? 'bg-teal-400/20 text-teal-200 border border-teal-300/30' : isCompleted ? 'bg-emerald-200/80 text-emerald-900' : 'bg-slate-200 text-slate-700'
+                                }`}>
+                                  {isExpanded ? '🟢 Active Section' : isCompleted ? '✓ Completed' : '🔒 Tap to Open'}
+                                </span>
+                                <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? 'rotate-90 text-teal-300' : 'text-slate-400'}`} />
+                              </div>
+                            </button>
+
+                            {/* Section Content - Displayed ONLY when isExpanded is true */}
+                            {isExpanded && (
+                              <div className="space-y-4 animate-in fade-in duration-200">
+                                <div
+                                  style={{ fontSize: fontSize === 'sm' ? '13px' : fontSize === 'lg' ? '18px' : fontSize === 'xl' ? '22px' : '15px' }}
+                                  className={`bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm text-slate-900 leading-relaxed font-medium space-y-6 ${isDyslexicFont ? 'dyslexic-font-active' : ''}`}
+                                >
+                                  {RendererRegistry.resolve({
+                                    grade,
+                                    subject,
+                                    book,
+                                    part,
+                                    contentType: ct,
+                                    data: secData
+                                  })}
+                                </div>
+
+                                {/* Complete & Unlock Next Section Button Bar */}
+                                <div className="p-4 bg-gradient-to-r from-teal-50 to-indigo-50 border border-teal-200/80 rounded-2xl flex flex-wrap items-center justify-between gap-3 shadow-2xs">
+                                  <div className="text-xs font-extrabold text-slate-800 flex items-center gap-2">
+                                    <Check className="w-4 h-4 text-emerald-600" />
+                                    <span>Finished studying <strong>{label}</strong>?</span>
+                                  </div>
+
+                                  {nextCt ? (
+                                    <button
+                                      onClick={() => handleUnlockNextSection(ct)}
+                                      className="px-5 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-md transition-all flex items-center gap-2 cursor-pointer"
+                                    >
+                                      <span>Complete &amp; Open {nextLabel} ➔</span>
+                                      <ArrowRight className="w-4 h-4" />
+                                    </button>
+                                  ) : (
+                                    <div className="px-4 py-2 rounded-xl bg-emerald-600 text-white font-black text-xs shadow-sm flex items-center gap-1.5">
+                                      <Trophy className="w-4 h-4" /> 100% Chapter Roadmap Completed!
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      });
+                    })()}
+                  </div>
+                ) : (
+                  contentData && (
+                    <div
+                      style={{ fontSize: fontSize === 'sm' ? '13px' : fontSize === 'lg' ? '18px' : fontSize === 'xl' ? '22px' : '15px' }}
+                      className={`bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm text-slate-900 leading-relaxed font-medium space-y-6 ${isDyslexicFont ? 'dyslexic-font-active' : ''}`}
+                    >
+                      {RendererRegistry.resolve({
+                        grade,
+                        subject,
+                        book,
+                        part,
+                        contentType: activeTab,
+                        data: contentData
+                      })}
+                    </div>
+                  )
+                )}
+              </div>
+
+              {isSplitView && (
+                <div className="bg-white border border-indigo-200 rounded-3xl p-6 shadow-sm space-y-4">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-indigo-100 pb-3">
+                    <span className="text-xs font-black text-indigo-900 uppercase font-mono tracking-wider flex items-center gap-1.5">
+                      <Zap className="w-4 h-4 text-amber-500 fill-amber-500" /> Dynamic Reference View
+                    </span>
+                    <div className="flex items-center gap-1 bg-indigo-50 p-1 rounded-xl border border-indigo-200">
+                      {[
+                        { id: 'mindmaps', label: '🧠 Mindmap' },
+                        { id: 'flashcards', label: '⚡ Flashcards' },
+                        { id: 'foundational', label: '🎯 Foundational' },
+                        { id: 'master', label: '🏆 Master' }
+                      ].map((t) => (
+                        <button
+                          key={t.id}
+                          onClick={() => setSplitSideContentType(t.id)}
+                          className={`px-2.5 py-1 rounded-lg text-[10px] font-black transition-all cursor-pointer ${
+                            splitSideContentType === t.id
+                              ? 'bg-indigo-600 text-white shadow-2xs'
+                              : 'text-indigo-700 hover:bg-indigo-100'
+                          }`}
+                        >
+                          {t.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="text-xs font-medium text-slate-700 space-y-3 leading-relaxed min-h-[300px]">
+                    {loadingSplitSide && (
+                      <div className="p-12 text-center text-slate-500 flex flex-col items-center justify-center space-y-2">
+                        <Loader2 className="w-6 h-6 animate-spin text-indigo-600" />
+                        <span className="text-xs font-bold text-slate-600">Loading {splitSideContentType}...</span>
+                      </div>
+                    )}
+
+                    {!loadingSplitSide && splitSideData && (
+                      <div>
+                        {RendererRegistry.resolve({
+                          grade,
+                          subject,
+                          book,
+                          part,
+                          contentType: splitSideContentType,
+                          data: splitSideData
+                        })}
+                      </div>
+                    )}
+
+                    {!loadingSplitSide && !splitSideData && (
+                      <div className="p-8 text-center text-slate-500 font-semibold bg-slate-50 rounded-2xl border border-slate-200">
+                        Reference content currently unavailable for {splitSideContentType}.
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
-          {/* Chapter Media Attachments (Images & Videos) */}
-          {(chapterDiagram || chapterVideo) && (
+          {/* Chapter Media Attachments (Images & Videos) - Showcase ONLY in Overview Section */}
+          {activeTab === 'overview' && (chapterDiagram || chapterVideo) && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
               {chapterDiagram && (
                 <div className="p-4 bg-white border border-slate-200/90 rounded-3xl space-y-3 shadow-sm">
                   <div className="text-xs font-black text-teal-800 flex items-center justify-between">
                     <span className="flex items-center gap-1.5"><ImageIcon className="w-4 h-4 text-teal-600" /> Concept Diagram Overlay</span>
-                    <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2 py-0.5 rounded-md border border-teal-200 font-bold">Class {grade} {subject.toUpperCase()}</span>
+                    <button
+                      onClick={() => setShowDiagramLightbox(true)}
+                      className="text-[10px] font-mono text-teal-700 bg-teal-50 hover:bg-teal-100 px-2 py-0.5 rounded-md border border-teal-200 font-bold flex items-center gap-1 cursor-pointer transition-all"
+                    >
+                      <ZoomIn className="w-3 h-3" /> Zoom Inspector
+                    </button>
                   </div>
                   <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 flex flex-col items-center justify-center p-4">
                     {!imageError ? (
@@ -665,6 +1121,54 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         )}
       </div>
+
+      {/* Concept Diagram Zoom Lightbox Inspector Modal */}
+      {showDiagramLightbox && chapterDiagram && (
+        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 max-w-4xl w-full space-y-4 shadow-2xl relative">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-white">
+              <span className="text-xs font-black font-mono uppercase tracking-wider flex items-center gap-2">
+                <ImageIcon className="w-4 h-4 text-teal-400" /> Diagram Inspector: {chapterDiagram.filename}
+              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setDiagramZoom(prev => Math.max(0.5, prev - 0.25))}
+                  className="p-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all cursor-pointer"
+                  title="Zoom Out"
+                >
+                  <ZoomOut className="w-4 h-4" />
+                </button>
+                <span className="text-xs font-mono font-bold text-teal-400">{Math.round(diagramZoom * 100)}%</span>
+                <button
+                  onClick={() => setDiagramZoom(prev => Math.min(3, prev + 0.25))}
+                  className="p-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all cursor-pointer"
+                  title="Zoom In"
+                >
+                  <ZoomIn className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => { setShowDiagramLightbox(false); setDiagramZoom(1); }}
+                  className="p-1.5 rounded-xl bg-slate-800 hover:bg-rose-950 hover:text-rose-400 text-slate-400 transition-all cursor-pointer ml-2"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+
+            <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black border border-slate-800 flex items-center justify-center p-4">
+              <div style={{ transform: `scale(${diagramZoom})`, transition: 'transform 0.15s ease-out' }} className="w-full h-full relative">
+                <Image
+                  src={`http://127.0.0.1:8001/api/v1/curriculum/media/stream?subject=${encodeURIComponent(subject)}&filename=${encodeURIComponent(chapterDiagram.filename)}&grade=${grade}`}
+                  alt={chapterDiagram.filename || 'Diagram Inspector'}
+                  fill
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

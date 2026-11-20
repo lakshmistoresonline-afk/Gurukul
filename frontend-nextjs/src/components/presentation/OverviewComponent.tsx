@@ -27,7 +27,7 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
   }
 
   const summary = data.summary || data.overview || data.core_summary || data.description || '';
-  const theme = data.centralTheme || data.theme_and_moral || data.central_theme || '';
+  const theme = data.centralTheme || data.theme_and_moral || data.central_theme || (summary ? summary.slice(0, 120) + '...' : chapterTitle) || 'Chapter Core Concept';
   const objectives = data.learningObjectives || data.pedagogical_objectives || data.key_concepts || [];
   const takeaways = data.importantTakeaways || data.key_takeaways || [];
   const terms = data.keyTerminology || data.vocabulary || data.key_terms || [];
@@ -92,6 +92,31 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
               <p className="text-slate-800 text-base font-semibold leading-relaxed">
                 {renderSafeText(theme)}
               </p>
+            </div>
+          )}
+
+          {data.image_asset && (
+            <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
+              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">Interactive Concept Timeline &amp; Hotspots</h3>
+                <span className="text-[10px] font-mono text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full font-bold">{data.image_asset.type || '16:9 Diagram'}</span>
+              </div>
+              <p className="text-xs font-bold text-slate-700">{data.image_asset.title}</p>
+
+              {Array.isArray(data.image_asset.hotspots) && (
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  {data.image_asset.hotspots.map((hs: any, idx: number) => {
+                    const hsTitle = hs.title || hs.label || hs.name || `Hotspot #${idx + 1}`;
+                    const hsDesc = hs.description || hs.tooltip || hs.info || '';
+                    return (
+                      <div key={idx} className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-1.5 shadow-2xs">
+                        <div className="text-xs font-extrabold text-teal-700">{hsTitle}</div>
+                        {hsDesc && <p className="text-[11px] text-slate-600 leading-relaxed">{hsDesc}</p>}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           )}
 

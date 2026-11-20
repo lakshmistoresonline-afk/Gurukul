@@ -196,7 +196,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 auth.signOut().catch(() => {});
               }}
               className="px-3.5 py-1.5 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer"
-              title="Sign Out of Gurukul AI"
+              title="Log Out of Gurukul AI"
             >
               <LogOut className="w-4 h-4 text-rose-600" />
               <span className="hidden sm:inline">Log Out</span>
