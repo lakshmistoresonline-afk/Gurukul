@@ -1,0 +1,112 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Large Numbers Around Us",
+  "flashcards": [
+    {
+      "card_id": 1,
+      "level": "Basic Recall",
+      "front_question": "What are the values of 1 Lakh and 1 Crore in power-of-ten notation in the Indian System of Numeration?",
+      "phonetic_guide": "[Phonetic Guide: Chapter 1 Key Mathematical Concept]",
+      "back_answer": "1 Lakh = 1,00,000 = 10^5. 1 Crore = 1,00,00,000 = 10^7.",
+      "graphic_description": "Vector visual illustrating What are the values of 1 Lakh and 1 Cror...",
+      "mnemonic": "Remember key formula / rule in Ch 1",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
+    },
+    {
+      "card_id": 2,
+      "level": "Conceptual Understanding",
+      "front_question": "How do 1 Million and 1 Billion in the International System relate to Lakhs and Crores in the Indian System?",
+      "phonetic_guide": "[Phonetic Guide: Chapter 1 Key Mathematical Concept]",
+      "back_answer": "1 Million = 1,000,000 = 10 Lakhs (10^6). 1 Billion = 1,000,000,000 = 100 Crores (10^9). 1 Crore = 10 Millions.",
+      "graphic_description": "Vector visual illustrating How do 1 Million and 1 Billion in the In...",
+      "mnemonic": "Remember key formula / rule in Ch 1",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
+    },
+    {
+      "card_id": 3,
+      "level": "Experimental / Observational Insights",
+      "front_question": "What shortcut algorithm allows mental multiplication of any number N by 5 and by 25?",
+      "phonetic_guide": "[Phonetic Guide: Chapter 1 Key Mathematical Concept]",
+      "back_answer": "To multiply N by 5: N * 5 = (N / 2) * 10 (halve N and append 0). To multiply N by 25: N * 25 = (N / 4) * 100 (divide N by 4 and append 00).",
+      "graphic_description": "Vector visual illustrating What shortcut algorithm allows mental mu...",
+      "mnemonic": "Remember key formula / rule in Ch 1",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
+    },
+    {
+      "card_id": 4,
+      "level": "Scientific Reasoning & Application",
+      "front_question": "If natural numbers 1, 2, 3, ... are written sequentially (123456789101112...), how do you calculate the exact digit at position 100?",
+      "phonetic_guide": "[Phonetic Guide: Chapter 1 Key Mathematical Concept]",
+      "back_answer": "Single-digit numbers (1-9) consume 9 digits. Remaining needed = 100 - 9 = 91 digits. Two-digit numbers take 2 digits each: 91 / 2 = 45 numbers with remainder 1. The 45th two-digit number after 9 is 9 + 45 = 54. The next number is 55, and its first digit is 5. Therefore, the 100th digit is 5.",
+      "graphic_description": "Vector visual illustrating If natural numbers 1, 2, 3, ... are writ...",
+      "mnemonic": "Remember key formula / rule in Ch 1",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch1_place_value_shortcuts",
+    "chapter_number": 1,
+    "chapter_title": "Large Numbers Around Us",
+    "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+    "file_name": "ch1_place_value_shortcuts.png",
+    "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_1_1",
+        "title": "Indian Place Value System",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+      },
+      {
+        "hotspot_id": "hs_1_2",
+        "title": "International Place Value System",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+      },
+      {
+        "hotspot_id": "hs_1_3",
+        "title": "Factor Shortcuts (x5 and x25)",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+      },
+      {
+        "hotspot_id": "hs_1_4",
+        "title": "Sequential Digit Position Analytics",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "We the Travellers — II",
+  "mind_map": {
+    "root_node": "We the Travellers — II (Large Number Arithmetic, Patterns & Palindromes)",
+    "main_branches": [
+      {
+        "branch_title": "1. Large Number Column Addition & Subtraction",
+        "sub_branches": [
+          {
+            "sub_title": "Column Alignment & Regrouping Mechanics",
+            "key_nodes": [
+              "Column Alignment Rule: Align numbers strictly by place value columns (TTh, Th, H, T, O)",
+              "Regrouping in Addition (Carrying): Sum >= 10 in any column carries 1 group to left column",
+              "Regrouping in Subtraction (Borrowing): Borrowing 1 from adjacent left column adds 10 to current place value",
+              "Cascading Borrowing Across Zeroes: Borrowing through consecutive zero place values (e.g., 50,000 - 1)"
+            ],
+            "misconception_alert": "Subtracting smaller digit from larger digit regardless of top/bottom position during borrowing.",
+            "formula_or_rule": "Column Arithmetic Rule: Always compute from rightmost Ones place to leftmost place.",
+            "real_world_application": "Calculating multi-leg travel route distances and transport budget balances."
+          },
+          {
+            "sub_title": "Inverse Operations & Self-Checking",
+            "key_nodes": [
+              "Additive & Subtractive Inverse: Subtraction is inverse of addition (if A + B = C, then C - B = A)",
+              "Verification Protocol: Difference + Subtrahend = Minuend",
+              "Missing Digit Recovery: Solving column puzzles using inverse operational relationships"
+            ],
+            "misconception_alert": "Adding minuend and difference to check subtraction instead of adding subtrahend and difference.",
+            "formula_or_rule": "Inverse Verification: Minuend - Subtrahend = Difference <-> Difference + Subtrahend = Minuend.",
+            "real_world_application": "Auditing financial travel logs and verifying highway toll receipts."
+          }
+        ]
+      },
+      {
+        "branch_title": "2. Numerical Patterns & Palindromic Sequences",
+        "sub_branches": [
+          {
+            "sub_title": "Palindromic Numbers & Generation",
+            "key_nodes": [
+              "Palindromic Number Definition: Number that reads identically forwards and backwards (e.g., 121, 4,554, 10,001)",
+              "Reverse-and-Add Algorithm: Take a number -> Reverse digits -> Add to original -> Repeat until palindrome emerges",
+              "1-Step Palindromes: e.g., 23 + 32 = 55",
+              "Multi-Step Palindromes: e.g., 57 + 75 = 132 -> 132 + 231 = 363"
+            ],
+            "misconception_alert": "Assuming all numbers become palindromes in exactly one reverse-and-add step.",
+            "formula_or_rule": "Palindromic Rule: N = Reverse(N) defines palindromic numerical symmetry.",
+            "real_world_application": "Vehicle odometer special symmetry readings and cryptographic code puzzles."
+          },
+          {
+            "sub_title": "Consecutive Number Sum Patterns",
+            "key_nodes": [
+              "Consecutive Natural Sums: Sum of 1+2+3+...+n = n(n+1)/2",
+              "Pairing Strategy (Gauss Trick): Summing outer pairs (e.g., 1+10=11, 2+9=11 -> 5 pairs of 11 = 55)",
+              "Sequential Series Increments: Observing constant differences in arithmetic sequences"
+            ],
+            "misconception_alert": "Missing middle terms when calculating sums of long consecutive number series.",
+            "formula_or_rule": "Gauss Series Sum Formula: Sum = (Number of Terms / 2) x (First Term + Last Term).",
+            "real_world_application": "Counting stacked freight boxes and calculating staircase steps."
+          }
+        ]
+      },
+      {
+        "branch_title": "3. Travel Logistics & Fuel Budgeting Math",
+        "sub_branches": [
+          {
+            "sub_title": "Trip Distance & Fuel Costing",
+            "key_nodes": [
+              "Multi-City Route Sums: Summing leg distances across state highways",
+              "Round-Trip Calculation: Round-Trip Distance = 2 x Single-Leg Distance",
+              "Fuel Expense Computation: Total Cost = (Total Distance / Vehicle Mileage) x Fuel Price per Litre"
+            ],
+            "misconception_alert": "Calculating one-way mileage for round-trip travel budgets.",
+            "formula_or_rule": "Fuel Expense = (Net Distance / Km per Litre) x Price per Litre.",
+            "real_world_application": "Fleet management budgets, vacation trip planning, and commercial logistics."
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "chapter_number": 4,
+    "image_id": "ch04_column_regrouping",
+    "file_name": "ch04_column_regrouping.png",
+    "local_url": "/assets/images/ch04_column_regrouping.png",
+    "aspect_ratio": "16:9",
+    "title": "5-Digit Column Regrouping & Palindrome Cascade",
+    "description": "Column addition/subtraction with regrouping across zero and 4-step reverse-and-add palindrome generation.",
+    "hotspots": [
+      {
+        "label": "Ten Thousands Borrow Column",
+        "x_percent": 20.0,
+        "y_percent": 30.0,
+        "w_percent": 12.0,
+        "h_percent": 40.0
+      },
+      {
+        "label": "Thousands Column",
+        "x_percent": 34.0,
+        "y_percent": 30.0,
+        "w_percent": 12.0,
+        "h_percent": 40.0
+      },
+      {
+        "label": "Palindrome Reverse Step",
+        "x_percent": 70.0,
+        "y_percent": 45.0,
+        "w_percent": 20.0,
+        "h_percent": 25.0
+      }
+    ]
+  }
+}

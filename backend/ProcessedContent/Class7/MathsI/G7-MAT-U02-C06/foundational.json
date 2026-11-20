@@ -1,0 +1,113 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Number Play",
+  "gamified_drills": {
+    "combo_multipliers": [
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "drills_list": [
+      "Calculate 3x3 magic constant",
+      "Verify center cell 5",
+      "Check parity of 3 odds + 2 evens",
+      "Prove loose leaf odd sum 4k-1"
+    ]
+  },
+  "scrambled_tile_sets": [
+    {
+      "tiles": [
+        "Center Cell",
+        "5",
+        "=",
+        "3x3 Magic Square"
+      ],
+      "correct_sequence": [
+        "3x3 Magic Square",
+        "Center Cell",
+        "=",
+        "5"
+      ],
+      "hint": "Center cell equals total sum 45 divided by 9"
+    }
+  ],
+  "sorting_matrices": [
+    {
+      "bins": [
+        "Always EVEN",
+        "Always ODD"
+      ],
+      "items": [
+        "Odd + Odd",
+        "Even + Odd",
+        "Loose Leaf Page Sum (4k-1)",
+        "Sum of 50 Odd Numbers"
+      ],
+      "correct_mapping": {
+        "Odd + Odd": "Always EVEN",
+        "Sum of 50 Odd Numbers": "Always EVEN",
+        "Even + Odd": "Always ODD",
+        "Loose Leaf Page Sum (4k-1)": "Always ODD"
+      }
+    }
+  ],
+  "editing_checkers": [
+    {
+      "buggy_expression": "Center cell of 3x3 magic square can be any digit",
+      "error_type": "Magic Square Constraint Violation",
+      "corrected_expression": "Center cell must strictly equal 5 for digits 1-9",
+      "explanation": "The center cell belongs to 4 lines, forcing 45 + 3x = 60 => x = 5."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch6_number_play_magic_square",
+    "chapter_number": 6,
+    "chapter_title": "Number Play",
+    "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
+    "file_name": "ch6_number_play_magic_square.png",
+    "local_url": "/assets/images/ch6_number_play_magic_square.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_6_1",
+        "title": "Height Line Logic",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
+      },
+      {
+        "hotspot_id": "hs_6_2",
+        "title": "Integer Parity Algebra",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
+      },
+      {
+        "hotspot_id": "hs_6_3",
+        "title": "3x3 Magic Square Proof",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
+      },
+      {
+        "hotspot_id": "hs_6_4",
+        "title": "Cryptarithms & Elimination",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
+      }
+    ]
+  }
+}

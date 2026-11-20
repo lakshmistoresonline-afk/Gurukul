@@ -1,0 +1,189 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Expressions using Letter-Numbers",
+  "detailed_sections": [
+    {
+      "section": "4.1 Concept of Letter-Numbers and Formulas",
+      "full_notes": "A letter-number (variable) represents an unspecified number or quantity that can change. Expressions formed with letter-numbers generalize relations. Examples: Shabnam's age = Aftab's age + 3 (s = a + 3). Perimeter of regular shapes: Equilateral Triangle = 3s, Square = 4s, Regular Pentagon = 5s.",
+      "margin_notes": [
+        {
+          "type": "Did You Know?",
+          "title": "General Formulas",
+          "content": "Formulas allow concise, universal description of geometric and arithmetic rules."
+        }
+      ]
+    },
+    {
+      "section": "4.2 Simplifying Expressions and Like Terms",
+      "full_notes": "Terms containing the exact same letter-numbers are like terms (e.g., 5y and 2y; -5g and -20g). Like terms can be combined by adding or subtracting their coefficients: 5y + 5y + x + x = 10y + 2x. Unlike terms cannot be combined.",
+      "margin_notes": [
+        {
+          "type": "Try These",
+          "title": "Simplification",
+          "content": "Simplify p + p + p + q = 3p + q."
+        }
+      ]
+    },
+    {
+      "section": "4.3 Pattern Rules and Applications",
+      "full_notes": "Algebraic rules describe growing patterns:\n1. Matchstick squares: 1 square = 4 sticks, 2 squares = 7 sticks, w squares = 3w + 1 sticks.\n2. Folded rope cuts: Cutting a rope folded r times yields r + 1 (or 2^r + 1) pieces.\n3. Endless 4-column grid: Number in row r, column c = 4(r - 1) + c.",
+      "margin_notes": [
+        {
+          "type": "Pattern Rule",
+          "title": "Grid Formula",
+          "content": "In a 4-column grid, row r column c value is given by 4r - 4 + c."
+        }
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "title": "Endless 4-Column Grid Table",
+      "headers": [
+        "Row (r)",
+        "Col 1 [4r-3]",
+        "Col 2 [4r-2]",
+        "Col 3 [4r-1]",
+        "Col 4 [4r]"
+      ],
+      "rows": [
+        [
+          "Row 1",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "Row 2",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        [
+          "Row 3",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        [
+          "Row 4",
+          "13",
+          "14",
+          "15",
+          "16"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "speaker": "Binu",
+      "role": "Student",
+      "speech_text": "How many matchsticks are needed for 10 connected squares?"
+    },
+    {
+      "speaker": "Arun",
+      "role": "Student",
+      "speech_text": "Use the formula 3w + 1! For w = 10, it is 3(10) + 1 = 31 matchsticks."
+    },
+    {
+      "speaker": "Teacher",
+      "role": "Mentor",
+      "speech_text": "Letter-numbers turn spatial patterns into universal algebraic formulas."
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch4",
+      "title": "Matchstick Square Builder",
+      "concept": "Deriving linear pattern formula 3w + 1",
+      "interactive_controls": [
+        "Add Square Slider",
+        "Count Matchsticks Toggle"
+      ],
+      "procedure_steps": [
+        "Set w = 1 => 4 sticks",
+        "Set w = 2 => 7 sticks",
+        "Set w = 3 => 10 sticks"
+      ],
+      "expected_outcome": "Verifies 3w + 1 rule holds for all positive integers w."
+    }
+  ],
+  "formula_rule_engines": [
+    {
+      "engine_id": "eng_ch4",
+      "rule_name": "Endless Matrix Coordinate Engine",
+      "formula": "N = 4(r - 1) + c = 4r - 4 + c",
+      "input_variables": [
+        "r",
+        "c"
+      ],
+      "computed_expression": "Computes cell number N for given row r and column c",
+      "example_demonstration": "Input r=36, c=3 => N = 4(35) + 3 = 143"
+    },
+    {
+      "engine_id": "eng_ch4_k_column_grid",
+      "rule_name": "General k-Column Matrix Coordinate Engine",
+      "formula": "N = k*(r - 1) + c  =>  r = ((N-1)//k) + 1, c = ((N-1)%k) + 1",
+      "input_variables": [
+        "N",
+        "k"
+      ],
+      "computed_expression": "Quotient and remainder modulo k uniquely locate row r and column c",
+      "example_demonstration": "For k=5, N=43: (43-1)//5 + 1 = Row 9; (43-1)%5 + 1 = Column 3"
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch4_variables_matchstick_grid",
+    "chapter_number": 4,
+    "chapter_title": "Expressions using Letter-Numbers",
+    "title": "Variables, Matchstick Patterns & Matrix Coordinates Diagram",
+    "file_name": "ch4_variables_matchstick_grid.png",
+    "local_url": "/assets/images/ch4_variables_matchstick_grid.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Polygon perimeters, matchstick square pattern rule 3w+1, 4-column matrix coordinate formula, and like terms.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_4_1",
+        "title": "Polygon Perimeters",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Equilateral Triangle = 3s, Square = 4s, Regular Pentagon = 5s, Regular Hexagon = 6s."
+      },
+      {
+        "hotspot_id": "hs_4_2",
+        "title": "Matchstick Square Rule",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Building w connected squares requires 3w + 1 matchsticks (1st square takes 4, each added takes 3)."
+      },
+      {
+        "hotspot_id": "hs_4_3",
+        "title": "Endless 4-Column Grid Formula",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Number N in row r, col c: N = 4(r - 1) + c = 4r - 4 + c. 143 lies in Row 36, Column 3."
+      },
+      {
+        "hotspot_id": "hs_4_4",
+        "title": "Combining Like Terms",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Like terms share identical variables: 5y + 2y = 7y. Unlike terms (3x + 4y) cannot be merged."
+      }
+    ]
+  }
+}

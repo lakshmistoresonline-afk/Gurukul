@@ -1,0 +1,94 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
+  "image_asset": {
+    "local_url": "/assets/images/ch7_probability_tree.png",
+    "title": "Tree diagram for 2-coin tosses and geometric probability target board."
+  },
+  "flashcards": [
+    {
+      "card_id": 1,
+      "level": "Basic Recall",
+      "front_question": "What is the theoretical probability formula for an event E in a fair trial?",
+      "phonetic_guide": "[Phonetic Guide: What is the theoretical p...]",
+      "back_answer": "P(E) = n(E) / n(S), where n(E) is the number of outcomes favorable to event E, and n(S) is the total sample space size.",
+      "mnemonic_key": "Visualize key terms and geometric representation.",
+      "graphic_description": "Visual icon for Basic Recall in Chapter 7",
+      "sm2_metadata": {
+        "repetitions": 0,
+        "interval_days": 1,
+        "ease_factor": 2.5
+      }
+    },
+    {
+      "card_id": 2,
+      "level": "Basic Recall",
+      "front_question": "What are the numerical probability bounds for impossible and sure events?",
+      "phonetic_guide": "[Phonetic Guide: What are the numerical pr...]",
+      "back_answer": "P(Impossible Event) = 0; P(Sure Event) = 1; for any event E: 0 <= P(E) <= 1.",
+      "mnemonic_key": "Visualize key terms and geometric representation.",
+      "graphic_description": "Visual icon for Basic Recall in Chapter 7",
+      "sm2_metadata": {
+        "repetitions": 0,
+        "interval_days": 1,
+        "ease_factor": 2.5
+      }
+    },
+    {
+      "card_id": 3,
+      "level": "Conceptual Understanding",
+      "front_question": "What relationship connects the probability of an event E and its complementary event 'not E'?",
+      "phonetic_guide": "[Phonetic Guide: What relationship connect...]",
+      "back_answer": "P(E) + P(not E) = 1, so P(not E) = 1 - P(E).",
+      "mnemonic_key": "Visualize key terms and geometric representation.",
+      "graphic_description": "Visual icon for Conceptual Understanding in Chapter 7",
+      "sm2_metadata": {
+        "repetitions": 0,
+        "interval_days": 1,
+        "ease_factor": 2.5
+      }
+    },
+    {
+      "card_id": 4,
+      "level": "Experimental/Observational Insights",
+      "front_question": "What is the Law of Large Numbers in probability?",
+      "phonetic_guide": "[Phonetic Guide: What is the Law of Large ...]",
+      "back_answer": "As the number of experimental trial repetitions increases towards infinity, empirical relative frequency converges directly to theoretical probability.",
+      "mnemonic_key": "Visualize key terms and geometric representation.",
+      "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 7",
+      "sm2_metadata": {
+        "repetitions": 0,
+        "interval_days": 1,
+        "ease_factor": 2.5
+      }
+    },
+    {
+      "card_id": 5,
+      "level": "Scientific Reasoning/Application",
+      "front_question": "How is geometric probability calculated for a random landing point?",
+      "phonetic_guide": "[Phonetic Guide: How is geometric probabil...]",
+      "back_answer": "Geometric Probability = (Favorable Target Area / Total Enclosing Region Area).",
+      "mnemonic_key": "Visualize key terms and geometric representation.",
+      "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 7",
+      "sm2_metadata": {
+        "repetitions": 0,
+        "interval_days": 1,
+        "ease_factor": 2.5
+      }
+    },
+    {
+      "card_id": 6,
+      "level": "Scientific Reasoning/Application",
+      "front_question": "When rolling two unbiased dice, what is the total sample space size, and how many outcomes yield a sum of 8?",
+      "phonetic_guide": "[Phonetic Guide: When rolling two unbiased...]",
+      "back_answer": "Total sample space n(S) = 6 x 6 = 36. Outcomes with sum 8 are {(2,6), (3,5), (4,4), (5,3), (6,2)}, totaling 5 outcomes (P = 5/36).",
+      "mnemonic_key": "Visualize key terms and geometric representation.",
+      "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 7",
+      "sm2_metadata": {
+        "repetitions": 0,
+        "interval_days": 1,
+        "ease_factor": 2.5
+      }
+    }
+  ]
+}

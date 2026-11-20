@@ -1,0 +1,54 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Number Play",
+  "flashcards": [
+    {
+      "card_id": 1,
+      "level": "Formula/Definition",
+      "front_question": "What is a Palindromic Number and how is it defined?",
+      "back_answer": "DEFINITION: A number that reads identically forwards and backwards (e.g., 121, 5775, 8448).\nPROPERTY: Reversing its digits yields the exact same numerical value.\nMEMORY TRIGGER: 'Forward = Backward = Palindrome!'\nCONTEXTUAL EXAMPLE: Vehicle registration number 4884 or odometer reading 12321.\nVISUAL GRAPHIC: Number 5775 with reciprocal mirror arrows showing equal digit pairs."
+    },
+    {
+      "card_id": 2,
+      "level": "Method-Rule",
+      "front_question": "What is the step-by-step Reverse-and-Add Palindrome Algorithm?",
+      "back_answer": "ALGORITHM STEPS:\n1. Choose any positive integer (e.g., 48).\n2. Reverse its digits (48 -> 84).\n3. Add original and reversed numbers (48 + 84 = 132).\n4. If sum is palindromic, STOP. Otherwise, repeat steps 2-3 on the sum (132 + 231 = 363 -> Palindrome!).\nMEMORY TRIGGER: 'Reverse, Add, Check, Repeat!'\nCONTEXTUAL EXAMPLE: 48 becomes palindrome 363 in 2 steps; 57 becomes 363 in 2 steps.\nVISUAL GRAPHIC: Flowchart: Start 48 -> Reverse 84 -> Sum 132 -> Reverse 231 -> Sum 363 (Stop)."
+    },
+    {
+      "card_id": 3,
+      "level": "Method-Rule",
+      "front_question": "What is the transformation rule for generating terms in the Collatz Sequence?",
+      "back_answer": "COLLATZ RULE: Start with any positive integer n.\n- If n is EVEN: Divide by 2 -> n / 2\n- If n is ODD: Multiply by 3 and add 1 -> 3n + 1\nCONJECTURE: Repeating this rule always eventually terminates at 1.\nMEMORY TRIGGER: 'Even -> Half; Odd -> Triple plus One!'\nCONTEXTUAL EXAMPLE: Starting at 5: 5 -> 16 -> 8 -> 4 -> 2 -> 1 (5 steps).\nVISUAL GRAPHIC: Directed graph showing number trajectory bouncing up on odd numbers and dropping on evens."
+    },
+    {
+      "card_id": 4,
+      "level": "Direct Calculation",
+      "front_question": "How many times does the digit '7' appear in all integers from 1 to 100?",
+      "back_answer": "CALCULATION: 20 times!\n- Units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 (10 times)\n- Tens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 (10 times)\nTOTAL: 10 + 10 = 20 (Note: '77' contributes 2 occurrences).\nMEMORY TRIGGER: '10 in units + 10 in tens = 20 times!'\nCONTEXTUAL EXAMPLE: Counting physical lead numbers needed to print page numbers 1 to 100.\nVISUAL GRAPHIC: 100-grid highlighting the 19 numbers containing digit 7, with 77 highlighted double."
+    },
+    {
+      "card_id": 5,
+      "level": "Formula/Definition",
+      "front_question": "What is the formula for the total count of N-digit numbers in place value arithmetic?",
+      "back_answer": "FORMULA: Count of N-digit numbers = 9 x 10^(N-1).\nEXPLANATION:\n- 1-digit numbers (1-9): 9 x 10^0 = 9\n- 2-digit numbers (10-99): 9 x 10^1 = 90\n- 3-digit numbers (100-999): 9 x 10^2 = 900\nMEMORY TRIGGER: '9 followed by (N-1) zeroes!'\nCONTEXTUAL EXAMPLE: Total possible 3-digit combination lock codes from 100 to 999 = 900.\nVISUAL GRAPHIC: Number line blocks showing 9 single-digit, 90 two-digit, and 900 three-digit numbers."
+    },
+    {
+      "card_id": 6,
+      "level": "Application",
+      "front_question": "What is the winning strategy for Player 1 in the Nim Game of 21?",
+      "back_answer": "STRATEGY: Claim control numbers that leave multiples of 4 remaining.\nCONTROL NUMBERS: 1, 5, 9, 13, 17, and 21.\nRULE: Player 1 starts by saying 1. Whenever Player 2 adds x (1, 2, or 3), Player 1 adds (4 - x) to reach the next control number.\nMEMORY TRIGGER: 'Control numbers step by 4: 1, 5, 9, 13, 17, 21!'\nCONTEXTUAL EXAMPLE: Mathematical game theory strategy guaranteeing victory.\nVISUAL GRAPHIC: Stepping stone ladder showing highlighted safe control rungs at 1, 5, 9, 13, 17, 21."
+    },
+    {
+      "card_id": 7,
+      "level": "Direct Calculation",
+      "front_question": "Trace the Collatz sequence starting at n = 6.",
+      "back_answer": "TRAJECTORY: 6 (even) -> 3 -> 10 (odd: 3x3+1) -> 5 -> 16 -> 8 -> 4 -> 2 -> 1.\nSTEPS: Takes 8 steps to reach 1.\nMEMORY TRIGGER: '6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1'.\nCONTEXTUAL EXAMPLE: Testing Collatz conjecture step lengths for even starting values.\nVISUAL GRAPHIC: Number sequence chain showing 6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1."
+    },
+    {
+      "card_id": 8,
+      "level": "Method-Rule",
+      "front_question": "What is Kaprekar's Routine for 2-digit numbers?",
+      "back_answer": "ROUTINE STEPS:\n1. Pick a 2-digit number with distinct digits (e.g. 37).\n2. Arrange digits descending (73) and ascending (37).\n3. Subtract smaller from larger: 73 - 37 = 36.\n4. Repeat on result (63 - 36 = 27; 72 - 27 = 45; 54 - 45 = 09; 90 - 09 = 81; 81 - 18 = 63...).\nRESULT: Always enters a digital difference loop containing the magic number 9.\nMEMORY TRIGGER: 'Descending minus Ascending leads to 9!'\nCONTEXTUAL EXAMPLE: Discovery by Indian mathematician D.R. Kaprekar.\nVISUAL GRAPHIC: Cyclic number wheel showing 2-digit differences looping through 9."
+    }
+  ]
+}

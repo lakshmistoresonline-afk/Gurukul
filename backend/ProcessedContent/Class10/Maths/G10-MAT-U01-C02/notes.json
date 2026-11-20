@@ -1,0 +1,229 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Polynomials",
+  "unit_or_theme": "Algebra",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "Focuses on the geometric representation of polynomials, the relationship between zeroes and coefficients of quadratic and cubic polynomials, and the division algorithm for polynomials.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "2.1 Geometrical Meaning of the Zeroes of a Polynomial",
+        "full_explanation": "The zeroes of a polynomial p(x) correspond to the x-coordinates of the points where the graph of y = p(x) intersects the x-axis.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Key Insight",
+            "box_title": "Parabola Direction",
+            "full_content": "For y = ax^2 + bx + c, the parabola opens upwards if a > 0 and downwards if a < 0."
+          }
+        ]
+      },
+      {
+        "section_number_title": "2.2 Relationship between Zeroes and Coefficients",
+        "full_explanation": "For quadratic polynomial ax^2 + bx + c with zeroes α and β: Sum of zeroes α + β = -b/a, Product of zeroes α*β = c/a.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Formula",
+            "box_title": "Quadratic Zeroes",
+            "full_content": "α + β = -b/a, αβ = c/a"
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Zero of a Polynomial",
+        "definition": "A real number k such that p(k) = 0.",
+        "contextual_example_or_usage": "For p(x) = x - 2, zero is 2.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Degree of Polynomial",
+        "definition": "The highest power of the variable x in p(x).",
+        "contextual_example_or_usage": "Degree of 3x^3 + 2x^2 - 1 is 3.",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Quadratic Polynomial Formation",
+        "statement_or_expression": "k[x^2 - (α + β)x + αβ]",
+        "variable_definitions": "α, β = zeroes, k = non-zero constant",
+        "model_application_example": "If α+β=4 and αβ=1, polynomial is x^2 - 4x + 1."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Finding Zeroes of ax^2 + bx + c by Splitting the Middle Term",
+      "objective_or_aim": "Find zeroes of x^2 + 7x + 10.",
+      "materials_or_prerequisites": [
+        "Algebraic factoring"
+      ],
+      "step_by_step_procedure": [
+        "Find two numbers with sum 7 and product 10: 2 and 5.",
+        "x^2 + 2x + 5x + 10 = 0",
+        "x(x+2) + 5(x+2) = 0",
+        "(x+2)(x+5) = 0",
+        "Zeroes are -2 and -5."
+      ],
+      "expected_observations_or_working": "Verify sum: -2 + (-5) = -7 = -b/a; product: (-2)*(-5) = 10 = c/a.",
+      "scientific_or_logical_conclusion": "Zeroes match coefficient relationships."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Parabola Intersections with x-axis",
+        "labels_to_learn": [
+          "Two intersections",
+          "One touching point",
+          "No intersection"
+        ],
+        "drawing_or_labeling_instructions": "Draw three parabolas demonstrating 2, 1, and 0 real zeroes.",
+        "key_structural_details": "Number of x-axis intersections equals number of real zeroes."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Polynomial Types by Degree",
+        "headers": [
+          "Type",
+          "Degree",
+          "General Form",
+          "Max Zeroes"
+        ],
+        "rows": [
+          [
+            "Linear",
+            "1",
+            "ax + b",
+            "1"
+          ],
+          [
+            "Quadratic",
+            "2",
+            "ax^2 + bx + c",
+            "2"
+          ],
+          [
+            "Cubic",
+            "3",
+            "ax^3 + bx^2 + cx + d",
+            "3"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 2.2",
+        "question_number": "Q1(i)",
+        "question_text": "Find zeroes of x^2 - 2x - 8 and verify relationship with coefficients.",
+        "complete_step_by_step_solution": "x^2 - 4x + 2x - 8 = (x-4)(x+2) => zeroes 4, -2. Sum = 2 = -(-2)/1; Product = -8 = -8/1. Verified."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "A polynomial of degree n can have at most n real zeroes...",
+        "questions_and_answers": [
+          {
+            "question": "Can a quadratic polynomial have 3 zeroes?",
+            "answer": "No, a polynomial of degree 2 can have at most 2 zeroes."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Number of zeroes of y = p(x) intersecting x-axis at 3 points is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "correct_answer": "3",
+        "brief_explanation": "Each x-axis intersection corresponds to one real zero."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Find quadratic polynomial whose sum and product of zeroes are -3 and 2.",
+        "model_answer": "p(x) = x^2 - (sum)x + product = x^2 - (-3)x + 2 = x^2 + 3x + 2.",
+        "key_marking_points": [
+          "Formula usage",
+          "Substitution",
+          "Final expression"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "If α and β are zeroes of 2x^2 - 4x + 5, find value of α^2 + β^2.",
+        "model_answer": "α + β = -(-4)/2 = 2; αβ = 5/2. α^2 + β^2 = (α+β)^2 - 2αβ = (2)^2 - 2(5/2) = 4 - 5 = -1."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A highway overpass is shaped like a parabola represented by p(x) = -x^2 + 2x + 8.",
+        "questions_and_answers": [
+          {
+            "question": "Find zeroes of the overpass shape.",
+            "answer": "-x^2 + 2x + 8 = 0 => x^2 - 2x - 8 = 0 => (x-4)(x+2)=0 => zeroes at x = 4 and x = -2."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Forgetting the minus sign in sum of zeroes: α+β = b/a instead of -b/a.",
+      "root_cause": "Sign confusion in formula.",
+      "correct_approach": "Always remember α+β = -coefficient of x / coefficient of x^2."
+    }
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 2: Polynomials. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 2 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 2",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Measuring Space: Perimeter and Area",
+  "zero_omission_notes": {
+    "summary": "This chapter delivers comprehensive mensuration formulas and geometric area derivations. It covers area of parallelograms, triangles (1/2 * b * h), trapezia, rhombuses, and circles. Advanced topics include Heron's formula for arbitrary triangles, Brahmagupta's formula for cyclic quadrilaterals, Baudhāyana's geometric squaring of a rectangle, arc lengths, sector areas, segment areas, and historical approximations of pi (c/d ratio).",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "6.1 Area Derivations for Quadrilaterals & Triangles",
+        "full_notes": "Parallelogram area = base * height. Triangle area = 1/2 * base * height derived by halving parallelogram. Trapezium area = 1/2 * (sum of parallel sides) * distance between them.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Historical Note",
+            "title": "Brahmagupta's Formula",
+            "content": "Brahmagupta (598 CE) gave Area = sqrt((s-a)(s-b)(s-c)(s-d)) for cyclic quadrilateral with sides a,b,c,d and semi-perimeter s."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "6.2 Heron's Formula for Triangles",
+        "full_notes": "For a triangle with side lengths a, b, c and semi-perimeter s = (a+b+c)/2, Area = sqrt(s(s-a)(s-b)(s-c)). Useful when height is unknown.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Formula Application",
+            "title": "Equilateral Triangle",
+            "content": "For equilateral triangle of side 'a': Area = (sqrt(3)/4) * a^2."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "6.3 Circular Measurements: Sector & Segment",
+        "full_notes": "Circumference C = 2 * pi * r; Area = pi * r^2. Length of arc with central angle theta: L = (theta/360) * 2*pi*r. Sector area = (theta/360) * pi * r^2. Minor segment area = Sector area - Triangle area.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Definition",
+            "title": "Sector vs Segment",
+            "content": "Sector is region bounded by two radii and arc. Segment is region bounded by a chord and arc."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-6.1",
+      "aim_or_objective": "Deriving Circle Area Formula by Sector Rearrangement",
+      "materials_or_prerequisites": [
+        "Paper circle",
+        "Scissors",
+        "Glue",
+        "Ruler"
+      ],
+      "procedure_or_steps": [
+        "Divide circle into 16 equal sector wedges.",
+        "Cut out sectors and arrange them alternately pointing up and down.",
+        "Observe shape forming an approximate rectangle.",
+        "Base of rectangle = half circumference = pi * r; Height = radius r.",
+        "Area = Base * Height = (pi * r) * r = pi * r^2."
+      ],
+      "observations_or_results": "As sectors get narrower, shape approaches exact rectangle.",
+      "conclusion_or_principle": "Circle area equals pi * r^2."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 6.1: Sector and Segment of a Circle",
+        "labels_and_components": [
+          "Centre O",
+          "Radius r",
+          "Arc Length L",
+          "Sector Angle theta",
+          "Minor Segment",
+          "Chord AB"
+        ],
+        "drawing_or_reading_instructions": "Draw circle. Highlight pie wedge as Sector. Draw chord AB; shade region between arc and chord as Minor Segment.",
+        "structural_or_conceptual_explanation": "Segment Area = Sector Area - Triangle OAB Area."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Mensuration Formulas Summary",
+        "headers": [
+          "Shape",
+          "Perimeter / Boundary",
+          "Area Formula"
+        ],
+        "rows": [
+          [
+            "Triangle (General)",
+            "a + b + c",
+            "sqrt(s(s-a)(s-b)(s-c))"
+          ],
+          [
+            "Trapezium",
+            "Sum of 4 sides",
+            "1/2 * (a + b) * h"
+          ],
+          [
+            "Circle",
+            "2 * pi * r",
+            "pi * r^2"
+          ],
+          [
+            "Sector",
+            "2r + (theta/360)*2*pi*r",
+            "(theta/360) * pi * r^2"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Semi-perimeter",
+      "definition_or_meaning": "Half the total perimeter of a polygon, denoted s = (a + b + c) / 2.",
+      "si_unit_or_notation": "s (linear units)",
+      "example_or_application": "For triangle with sides 5, 6, 7: s = 9 cm."
+    },
+    {
+      "term_or_concept": "Heron's Formula",
+      "definition_or_meaning": "Area = sqrt(s * (s - a) * (s - b) * (s - c))",
+      "si_unit_or_notation": "Square units",
+      "example_or_application": "Sides 3, 4, 5 => s = 6 => Area = 6 sq units."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 6.2 Q3",
+        "question": "Find the area of a triangular field with sides 13 m, 14 m, and 15 m.",
+        "answer": "s = (13 + 14 + 15)/2 = 21 m. Area = sqrt(21 * 8 * 7 * 6) = sqrt(7056) = 84 sq m."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "If the perimeter of a circle equals its area numerically, what is radius r?",
+        "options": [
+          "A) 1 unit",
+          "B) 2 units",
+          "C) pi units",
+          "D) 4 units"
+        ],
+        "answer": "B",
+        "explanation": "2 * pi * r = pi * r^2 => 2 = r."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Find the area of an equilateral triangle of side 8 cm.",
+        "answer": "Area = (sqrt(3)/4) * 8^2 = 16*sqrt(3) sq cm."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "A clock minute hand is 14 cm long. Find area swept in 5 minutes.",
+        "answer": "theta = (360/60)*5 = 30 deg. Area = (30/360) * (22/7) * 14^2 = 154 / 3 = 51.33 sq cm."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its area.",
+        "answer": "1. Draw parallelogram inside trapezium with sides 10m and 13m. Remaining base = 25 - 10 = 15m.\n2. Triangular portion has sides 13m, 14m, 15m. Area = 84 sq m (by Heron's formula).\n3. Height h of triangle: 1/2 * 15 * h = 84 => h = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "A circular running track has outer radius 21 m and inner radius 14 m.",
+        "qa": [
+          {
+            "question": "Calculate the area of the running track path.",
+            "answer": "Area = pi*(R^2 - r^2) = (22/7)*(21^2 - 14^2) = (22/7)*(441 - 196) = 770 sq m."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Forgetting square root at the final step of Heron's formula.",
+        "correct_fact_or_method": "Always keep radical symbol sqrt(...) active until final prime factor pairing step."
+      }
+    ]
+  }
+}

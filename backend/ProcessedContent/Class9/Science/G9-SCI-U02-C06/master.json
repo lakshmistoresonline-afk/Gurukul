@@ -1,0 +1,167 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Forces and Laws of Motion",
+  "zero_omission_notes": {
+    "summary": "This chapter explores dynamics: how forces alter physical motion. It details balanced vs unbalanced forces, inertia and momentum, Newton's First Law (Law of Inertia), Newton's Second Law (F = ma, dp/dt), Newton's Third Law (Action-Reaction action pairs), and Impulse.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "6.1 Balanced/Unbalanced Forces and Inertia",
+        "full_notes": "Force is a vector push or pull measured in Newtons (N). Balanced forces act on a body with equal magnitude and opposite direction, producing zero net force and no change in velocity. Unbalanced forces produce a net non-zero force resulting in acceleration. Inertia is the intrinsic resistance of an object to changes in its state of rest or uniform motion, directly proportional to its mass.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Galileo Insight",
+            "title": "Galileo's Inclined Plane Experiment",
+            "content": "Galileo deduced that an object moving on a frictionless horizontal plane would continue moving indefinitely at constant velocity without needing a net force."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "6.2 Newton's Three Laws of Motion and Momentum",
+        "full_notes": "First Law: An object remains in rest or uniform motion unless acted upon by an external unbalanced force. Linear Momentum (p = mv) is the quantity of motion. Second Law: The rate of change of momentum is directly proportional to net applied force: F = dp/dt = m(v - u)/t = ma. Third Law: To every action force, there is an equal and opposite reaction force acting on two different bodies simultaneously.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Real-world Physics",
+            "title": "Catching a Cricket Ball",
+            "content": "A fielder pulls hands backward while catching a fast ball to increase time interval t, reducing rate of change of momentum and thereby decreasing impact force on hands."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "Activity 6.1",
+      "aim_or_objective": "To demonstrate inertia of rest using a coin and glass card trick.",
+      "materials_or_prerequisites": [
+        "Glass tumbler",
+        "Stiff playing card",
+        "Five-rupee coin"
+      ],
+      "procedure_or_steps": [
+        "Place a stiff playing card over the open mouth of a glass tumbler.",
+        "Place a heavy five-rupee coin centered on top of the card.",
+        "Flick the card sharply and horizontally with a finger."
+      ],
+      "observations_or_results": "The card shoots off horizontally, while the coin drops vertically into the glass tumbler.",
+      "conclusion_or_principle": "The coin retains its state of rest due to inertia when the card moves rapidly."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 6.1: Newton's Third Law Action-Reaction Springs",
+        "labels_and_components": [
+          "Spring Balance A",
+          "Spring Balance B",
+          "Fixed Wall",
+          "Force FAB",
+          "Force FBA"
+        ],
+        "drawing_or_reading_instructions": "Show two spring balances hooked together; Balance A attached to wall, pulling Balance B reveals identical force readings on both dials.",
+        "structural_or_conceptual_explanation": "Proves that forces always exist in equal and opposite simultaneous action-reaction pairs on interacting objects."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Summary of Newton's Laws of Motion",
+        "headers": [
+          "Law",
+          "Core Principle",
+          "Key Mathematical Formula"
+        ],
+        "rows": [
+          [
+            "First Law",
+            "Inertia; resistance to motion state change",
+            "F_net = 0 => v = constant"
+          ],
+          [
+            "Second Law",
+            "Force proportional to momentum rate of change",
+            "F = m*a"
+          ],
+          [
+            "Third Law",
+            "Action and reaction are equal and opposite",
+            "F_AB = -F_BA"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Linear Momentum",
+      "definition_or_meaning": "The product of an object's mass and its velocity.",
+      "si_unit_or_notation": "p = m*v [kg*m/s]",
+      "example_or_application": "A 1000 kg car moving at 20 m/s has p = 20,000 kg·m/s."
+    },
+    {
+      "term_or_concept": "Newton (N)",
+      "definition_or_meaning": "The SI derived unit of force required to accelerate a 1 kg mass at 1 m/s².",
+      "si_unit_or_notation": "1 N = 1 kg*m/s^2",
+      "example_or_application": "Weight of ~100g apple under gravity is approx 1 N."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Q1",
+        "question": "A constant force acts on a 5 kg mass for 2 s, increasing its velocity from 3 m/s to 7 m/s. Find force magnitude. If applied for 5 s, find final velocity.",
+        "answer": "1) F = m(v - u)/t = 5*(7 - 3)/2 = 5*4/2 = 10 N.\n2) Final velocity v = u + (F/m)*t = 3 + (10/5)*5 = 3 + 10 = 13 m/s."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which physical property is a direct quantitative measure of an object's inertia?",
+        "options": [
+          "A) Velocity",
+          "B) Mass",
+          "C) Volume",
+          "D) Shape"
+        ],
+        "answer": "B) Mass",
+        "explanation": "Mass is the quantitative measure of inertia; heavier objects require greater force to change motion state."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Why do passengers jerk forward when a fast-moving bus slams on its brakes?",
+        "answer": "The bus lower floor and passenger feet stop suddenly due to braking force. However, the upper body continues moving forward at the original bus speed due to inertia of motion."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Explain why action and reaction forces do not cancel each other out even though they are equal and opposite.",
+        "answer": "Action and reaction forces act simultaneously on TWO DIFFERENT objects (e.g., foot pushes ground backward; ground pushes foot forward). Equal and opposite forces cancel only when acting on the SAME single object."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "State Newton's Second Law of Motion. Derive F = ma from mathematical principles.",
+        "answer": "Statement: The rate of change of momentum of a body is directly proportional to the applied unbalanced force and takes place in the direction of the force.\nDerivation:\nInitial momentum p1 = m*u\nFinal momentum p2 = m*v\nChange in momentum delta(p) = p2 - p1 = m(v - u)\nRate of change of momentum = m(v - u) / t\nBy Second Law: F is proportional to m(v - u)/t\nSince (v - u)/t = acceleration a, F is proportional to m*a\nF = k*m*a. In SI units, constant k = 1 (when 1 N accelerates 1 kg at 1 m/s²), yielding F = m*a."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "A gardener pushes a lawn mower across grass. To make it accelerate, they push harder.",
+        "qa": [
+          {
+            "question": "Relate this scenario to Newton's Second Law.",
+            "answer": "The pushing force must exceed frictional resistance to yield a net unbalanced force. Acceleration is directly proportional to net force for a constant mower mass (a = F_net / m)."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Believing an object requires a continuous net force to keep moving at constant velocity.",
+        "correct_fact_or_method": "By Newton's First Law, zero net force is required to maintain constant velocity; force is only required to CHANGE velocity."
+      }
+    ]
+  }
+}

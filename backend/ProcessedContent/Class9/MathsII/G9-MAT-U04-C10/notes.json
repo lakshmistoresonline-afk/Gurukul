@@ -1,0 +1,194 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "How Quantities Combine: Understanding Data",
+  "unit_or_theme": "Statistics & Data Visualization",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "This chapter extends simple averages to weighted arithmetic means when combining groups of unequal size or items with different weights. It also covers multi-category data visualizations including cluster-column graphs, stacked bar charts, and 100% stacked bar charts.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "10.1 Weighted Means and Group Aggregation",
+        "full_explanation": "When combining data sets of unequal size, simple unweighted averages produce incorrect results. The weighted arithmetic mean is x_bar = sum(w_i * x_i) / sum(w_i), weighting each value by group count or importance.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Real-World Context",
+            "box_title": "Mixtures and Alloys",
+            "full_content": "Combining alloy batches with different copper concentrations requires weighting percentages by batch mass."
+          }
+        ]
+      },
+      {
+        "section_number_title": "10.2 Stacked and 100% Stacked Bar Charts",
+        "full_explanation": "Stacked bar charts display total values alongside category component totals. 100% stacked bar charts scale all bars to 100%, allowing direct visual comparison of relative percentage distributions regardless of group size.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Chart Selection Note",
+            "box_title": "Absolute vs Relative Proportions",
+            "full_content": "Use standard stacked bars for total amounts; use 100% stacked bars for percentage budget allocations."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Weighted Mean",
+        "definition": "An average calculated by multiplying each value by a weight reflecting its size or importance.",
+        "contextual_example_or_usage": "Calculating weighted GPA or overall exam score with varying weights.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "100% Stacked Bar Chart",
+        "definition": "A bar chart where each bar is normalized to 100% height to show category percentages.",
+        "contextual_example_or_usage": "Comparing household expenditure proportions across different income brackets.",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Weighted Arithmetic Mean Formula",
+        "statement_or_expression": "x_bar = (w1*x1 + w2*x2 + ... + wn*xn) / (w1 + w2 + ... + wn)",
+        "variable_definitions": "x_i: value/average of group i; w_i: weight/count of group i",
+        "model_application_example": "Group A (30 students, avg 80) & Group B (10 students, avg 60): x_bar = (30*80 + 10*60)/40 = 75%."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Constructing 100% Stacked Bar Charts",
+      "objective_or_aim": "Convert family expenditure raw rupee data into percentage allocation stacked bars.",
+      "materials_or_prerequisites": [
+        "Graph paper / Spreadsheet",
+        "Family expense table"
+      ],
+      "step_by_step_procedure": [
+        "Sum expense categories for each family to find total expenditure.",
+        "Divide each category expense by total family expenditure and multiply by 100.",
+        "Draw equal length bars (100%) and divide segments according to calculated percentages."
+      ],
+      "expected_observations_or_working": "Displays relative budget priorities independently of total income levels.",
+      "scientific_or_logical_conclusion": "100% stacked bar charts isolate percentage allocations from group size differences."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Fig 10.4: 100% Stacked Bar Chart of Family Expenses",
+        "labels_to_learn": [
+          "100% Axis",
+          "Family A, B, C",
+          "Housing, Food, Education, Health"
+        ],
+        "drawing_or_labeling_instructions": "Draw three equal length vertical/horizontal bars divided into colored segments summing to 100%.",
+        "key_structural_details": "Normalizes all bars to uniform length."
+      }
+    ],
+    "data_tables_and_charts": [
+      {
+        "table_title": "Table 10.2: Family Expenditure Data (in Rupees)",
+        "headers": [
+          "Family",
+          "Housing",
+          "Food",
+          "Education",
+          "Healthcare"
+        ],
+        "rows": [
+          [
+            "Family A",
+            "1940",
+            "1700",
+            "1280",
+            "1770"
+          ],
+          [
+            "Family B",
+            "1750",
+            "1546",
+            "1500",
+            "1210"
+          ],
+          [
+            "Family C",
+            "950",
+            "1700",
+            "1540",
+            "1300"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Example 6",
+        "question_number": "Ex 6",
+        "question_text": "Student scores: Internals 60% (weight 3), Project 64% (weight 2), Final Exam 73% (weight 5). Find overall score.",
+        "complete_step_by_step_solution": "Weighted Score = (3*60 + 2*64 + 5*73)/(3 + 2 + 5) = (180 + 128 + 365)/10 = 673/10 = 67.3%."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "Batch A (200 kg, 70% brass) and Batch B (120 kg, 50% brass) are mixed with Batch C (y kg, 45% brass) to get 55% brass.",
+        "questions_and_answers": [
+          {
+            "question": "Find the mass y of Batch C.",
+            "answer": "0.70(200) + 0.50(120) + 0.45(y) = 0.55(320 + y) => 140 + 60 + 0.45y = 176 + 0.55y => 0.10y = 24 => y = 240 kg."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which chart is best for comparing category percentage proportions across groups of different total sizes?",
+        "options": [
+          "A) Cluster-column chart",
+          "B) Simple line chart",
+          "C) 100% stacked bar chart",
+          "D) Pie chart"
+        ],
+        "correct_answer": "C",
+        "brief_explanation": "100% stacked bar charts normalize all totals to 100%, isolating relative category proportions."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Explain why taking an unweighted average of two student group test averages produces errors when group sizes differ.",
+        "model_answer": "Unweighted average assumes equal student counts. Larger groups contribute more total scores, so their mean must carry proportionally higher weight.",
+        "key_marking_points": [
+          "Identifies equal weight fallacy (1 mark)",
+          "Explains pull of larger group sample size (1 mark)"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "Weighted grading uses 30% assignments, 20% midterms, 50% finals. Student A scores (85, 75, 90). Student B scores (95, 90, 70). Calculate both weighted scores and explain who scored higher.",
+        "model_answer": "Student A: (0.3*85 + 0.2*75 + 0.5*90) = 25.5 + 15 + 45 = 85.5%. Student B: (0.3*95 + 0.2*90 + 0.5*70) = 28.5 + 18 + 35 = 81.5%. Student A achieved higher score (85.5% vs 81.5%) due to stronger performance on the heavily weighted final exam (50%)."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A company tracks daily activity hours (sleeping, sitting, active) for employees over 24 hours.",
+        "questions_and_answers": [
+          {
+            "question": "Why is a 24-hour activity stacked bar chart visually identical to a 100% stacked bar chart?",
+            "answer": "Because the total sum for every individual is constant at 24 hours (100% of a day)."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Directly averaging percentage scores without multiplying by group sizes or weights.",
+      "root_cause": "Assuming averages possess additive properties regardless of sample size.",
+      "correct_approach": "Multiply each group average by its weight, sum the products, and divide by total weight."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "chapter_number": 14,
+  "chapter_title": "Maps and Locations",
+  "mind_map": {
+    "root_node": "Maps and Locations (Cardinal Directions, Grid Coordinates & Map Scale)",
+    "main_branches": [
+      {
+        "branch_title": "1. Cardinal Directions & Compass Navigation",
+        "sub_branches": [
+          {
+            "sub_title": "Orientation Standards & Sun Navigation",
+            "key_nodes": [
+              "Four Main Cardinal Directions: North (N, top of map), South (S, bottom), East (E, right), West (W, left)",
+              "Sun Orientation Rule: Sun rises in East, sets in West",
+              "Opposite Cardinal Pairs: North <-> South; East <-> West"
+            ],
+            "misconception_alert": "Confusing left/right relative turn directions with fixed compass directions.",
+            "formula_or_rule": "Compass Rose Rule: Clockwise sequence is N -> E -> S -> W.",
+            "real_world_application": "Siberian crane migration path tracking, sea navigation, and hiking."
+          },
+          {
+            "sub_title": "Intermediate Directions & Compass Rose",
+            "key_nodes": [
+              "Four Intermediate Directions: North-East (NE), South-East (SE), South-West (SW), North-West (NW)",
+              "45° Angular Bisection: Intermediate directions bisect 90° cardinal right angles",
+              "Magnetic Compass Needle: Magnetized needle always aligns along magnetic North-South axis"
+            ],
+            "misconception_alert": "Naming intermediate directions as 'East-North' instead of standard 'North-East'.",
+            "formula_or_rule": "Intermediate Direction Rule: Always lead with North or South (e.g., NE, SE, SW, NW).",
+            "real_world_application": "Aviation flight headings, weather wind direction reporting, and maritime navigation."
+          }
+        ]
+      },
+      {
+        "branch_title": "2. Cartesian Grid Coordinate System (x, y)",
+        "sub_branches": [
+          {
+            "sub_title": "Coordinate Plotting & Origin",
+            "key_nodes": [
+              "Coordinate Pair Structure: (x, y) where x = Horizontal column index, y = Vertical row index",
+              "Origin Point: (0, 0) intersection of horizontal baseline and vertical axis",
+              "Plotting Protocol: Move x units right from origin, then y units up"
+            ],
+            "misconception_alert": "Reversing horizontal (x) and vertical (y) coordinates (plotting (x,y) as (y,x)).",
+            "formula_or_rule": "Coordinate Rule: Always read (Horizontal X, Vertical Y).",
+            "real_world_application": "City street grid navigation, seating chart locations, and GPS mapping."
+          },
+          {
+            "sub_title": "Taxicab Grid Distance & Route Tracing",
+            "key_nodes": [
+              "Taxicab Grid Distance: Distance = |x2 - x1| + |y2 - y1| (blocks traveled along grid lines)",
+              "Grid Enclosed Area: Length x Width calculated from coordinate bounds",
+              "Shortest Grid Path: Multiple distinct grid paths can share equal taxicab distance"
+            ],
+            "misconception_alert": "Measuring diagonal Euclidean distance across grid blocks instead of taxicab block distance.",
+            "formula_or_rule": "Taxicab Distance Formula: D = |Delta X| + |Delta Y|.",
+            "real_world_application": "Urban delivery driver routing, robotics grid navigation, and chessboard movements."
+          }
+        ]
+      },
+      {
+        "branch_title": "3. Map Reading, Legends & Scale Translations",
+        "sub_branches": [
+          {
+            "sub_title": "Cartographic Symbols & Metro Maps",
+            "key_nodes": [
+              "Map Legend / Key: Decoding colored lines, markers, icons (e.g., Delhi Metro line colors)",
+              "Route Tracing: Identifying interchange stations and counting stop counts",
+              "Physical Map Conventions: Blue = Water bodies, Green = Forests, Brown = Mountains"
+            ],
+            "misconception_alert": "Misinterpreting line color codes on transit maps as physical track colors.",
+            "formula_or_rule": "Map Legend Rule: Refer to Key legend to decode abstract line colors and markers.",
+            "real_world_application": "Navigating subway networks, tourist sightseeing, and environmental maps."
+          },
+          {
+            "sub_title": "Map Scale Reduction & Ground Distance",
+            "key_nodes": [
+              "Scale Reduction Factor: Ratio scaling large ground distances onto printable paper (e.g., 1 cm = 5 km)",
+              "Ground Distance Calculation: Ground Distance = Map Distance (cm) x Scale Factor (km/cm)",
+              "Map Distance Calculation: Map Distance = Ground Distance / Scale Factor"
+            ],
+            "misconception_alert": "Measuring map distance with ruler without multiplying by scale factor.",
+            "formula_or_rule": "Map Scale Conversion: Ground Distance = Map Distance x Scale Factor.",
+            "real_world_application": "Reading transit route maps, architectural floor plans, and atlas maps."
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "chapter_number": 14,
+    "image_id": "ch14_cartesian_grid",
+    "file_name": "ch14_cartesian_grid.png",
+    "local_url": "/assets/images/ch14_cartesian_grid.png",
+    "aspect_ratio": "16:9",
+    "title": "Cartesian Grid Coordinates & Navigation Map",
+    "description": "Cartesian coordinate grid system with origin (0,0), X-axis, Y-axis, and plotted coordinate points (x, y).",
+    "hotspots": [
+      {
+        "label": "Origin Point (0,0)",
+        "x_percent": 20.0,
+        "y_percent": 80.0,
+        "w_percent": 10.0,
+        "h_percent": 10.0
+      },
+      {
+        "label": "Horizontal X-Axis",
+        "x_percent": 50.0,
+        "y_percent": 82.0,
+        "w_percent": 50.0,
+        "h_percent": 5.0
+      },
+      {
+        "label": "Vertical Y-Axis",
+        "x_percent": 18.0,
+        "y_percent": 45.0,
+        "w_percent": 5.0,
+        "h_percent": 50.0
+      },
+      {
+        "label": "Plotted Location Point (4,3)",
+        "x_percent": 60.0,
+        "y_percent": 50.0,
+        "w_percent": 8.0,
+        "h_percent": 8.0
+      }
+    ]
+  }
+}

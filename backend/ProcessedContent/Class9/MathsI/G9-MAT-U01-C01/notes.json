@@ -1,0 +1,143 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Orienting Yourself: The Use of Coordinates",
+  "image_asset": {
+    "title": "2D Cartesian Coordinate Plane showing axes, origin O(0,0), four quadrants, and plotted points P(3,4) & Q(-3,-4).",
+    "local_url": "/assets/images/ch1_cartesian_coordinates.png",
+    "hotspots": [
+      {
+        "id": "hs_origin",
+        "label": "Origin O(0,0)",
+        "x_percent": 50.0,
+        "y_percent": 50.0,
+        "w_percent": 6.0,
+        "h_percent": 6.0,
+        "tooltip": "Point of perpendicular intersection of x and y axes."
+      },
+      {
+        "id": "hs_q1",
+        "label": "Quadrant I (+,+)",
+        "x_percent": 75.0,
+        "y_percent": 25.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0,
+        "tooltip": "Region where both abscissa x > 0 and ordinate y > 0."
+      },
+      {
+        "id": "hs_q3",
+        "label": "Quadrant III (-,-)",
+        "x_percent": 25.0,
+        "y_percent": 75.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0,
+        "tooltip": "Region where both abscissa x < 0 and ordinate y < 0."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "section_number_and_title": "1.1 Historical Origins & Orthogonal Grids",
+      "content": "Urban layouts in the Sindhu-Sarasvatī Civilisation (Harappa and Mohenjo-daro) featured planned grid systems with streets intersecting at right angles. Baudhāyana's Śhulbasūtras (c. 800 BCE) defined perpendicular reference lines—Prāchī (east-west axis) and Tiryak (north-south axis)—to construct Vedic altars (Vedis). René Descartes later formalized two-dimensional coordinate geometry.",
+      "key_takeaways": [
+        "Prāchī and Tiryak were ancient Indian orthogonal reference lines.",
+        "Orthogonal grids allow unambiguous spatial positioning."
+      ]
+    },
+    {
+      "section_number_and_title": "1.2 Two-Dimensional Cartesian Coordinate System",
+      "content": "A 2D Cartesian plane is defined by two perpendicular axes: the horizontal x-axis and vertical y-axis intersecting at Origin O(0,0). Every point P is defined by an ordered pair (x, y), where x is the abscissa (distance from y-axis) and y is the ordinate (distance from x-axis). The axes divide the plane into 4 quadrants: QI (+,+), QII (-,+), QIII (-,-), and QIV (+,-).",
+      "key_takeaways": [
+        "Points on x-axis have y = 0, expressed as (x, 0).",
+        "Points on y-axis have x = 0, expressed as (0, y)."
+      ]
+    },
+    {
+      "section_number_and_title": "1.3 Distance Formula, Midpoint & Spatial Transformations",
+      "content": "The distance between P1(x1, y1) and P2(x2, y2) is derived using the Baudhāyana-Pythagoras theorem: d = sqrt((x2 - x1)^2 + (y2 - y1)^2). The distance from origin O(0,0) is d = sqrt(x^2 + y^2). Midpoint M is M = ((x1+x2)/2, (y1+y2)/2). Reflecting (x, y) across x-axis gives (x, -y); across y-axis gives (-x, y).",
+      "key_takeaways": [
+        "Distance d is always non-negative.",
+        "Section and trisection formulas divide line segments in given ratios."
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "table_title": "Key Conceptual Comparison - Ch 1",
+      "headers": [
+        "Concept A",
+        "Concept B",
+        "Distinguishing Feature"
+      ],
+      "rows": [
+        [
+          "Type 1",
+          "Type 2",
+          "Core Mathematical Distinction"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "d_ch1_01",
+      "title": "Mastering the Core Insight",
+      "exchanges": [
+        {
+          "speaker": "Aarav (Student)",
+          "avatar_role": "Student Explorer",
+          "speech_text": "How do we systematically approach the key concepts of Orienting Yourself: The Use of Coordinates?"
+        },
+        {
+          "speaker": "Dr. Sharma (Master Educator)",
+          "avatar_role": "Mathematics Mentor",
+          "speech_text": "By grounding ourselves in the fundamental definitions, visual models, and step-by-step rigorous proofs outlined in the chapter!"
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch1",
+      "experiment_title": "STEM Visual Verification - Ch 1",
+      "apparatus": [
+        "Graph Paper",
+        "Ruler",
+        "Compass",
+        "Scientific Calculator"
+      ],
+      "procedure": [
+        "Construct baseline geometric / coordinate figures according to chapter guidelines.",
+        "Measure side lengths, angles, or coordinate distances accurately.",
+        "Verify corresponding algebraic formulas against physical measurements."
+      ],
+      "observations": "Empirical measurements exactly match theoretical algebraic calculations.",
+      "interactive_controls": {
+        "slider_parameter": "Variable Input x",
+        "min_value": 1,
+        "max_value": 100,
+        "step": 1
+      }
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calc_id": "calc_ch1",
+      "formula_name": "Core Formula Evaluator Ch 1",
+      "expression": "Result = f(Inputs)",
+      "variables": [
+        {
+          "name": "x1",
+          "description": "First Input Variable"
+        },
+        {
+          "name": "x2",
+          "description": "Second Input Variable"
+        }
+      ],
+      "interactive_sample_inputs": {
+        "x1": 3,
+        "x2": 4
+      }
+    }
+  ]
+}

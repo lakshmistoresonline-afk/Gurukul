@@ -1,0 +1,76 @@
+{
+  "chapter_number": 15,
+  "chapter_title": "Data Through Pictures",
+  "source_file": "eemm115.pdf",
+  "theme": "Data Handling & Visual Analytics",
+  "conceptual_foundation": {
+    "introduction": "This chapter introduces primary data collection, tally mark bundling, scaled pictographs, and frequency bar charts using relatable scenarios—such as tracking school canteen food wastage, recording student finger lengths, and survey preferences. Students transition from raw counts to organized visual representations, extracting statistical modes, comparing category frequencies, and identifying trend patterns.",
+    "core_concepts": [
+      {
+        "concept": "Primary Data Gathering & Frequency Tables",
+        "explanation": "Primary data is collected firsthand through direct counting or measurement and organized into structured frequency tables listing categories alongside total counts.\n\n[Instructional Dialogue Simulation]\nTeacher: 'How do we organize daily canteen food wastage data collected over a week?'\nSheela: 'Create a Frequency Table listing Days of the Week in Column 1 and Wastage in Kg in Column 2!'",
+        "example": "Frequency Table: [Mon: 4 kg | Tue: 2 kg | Wed: 5 kg | Thu: 3 kg | Fri: 6 kg]."
+      },
+      {
+        "concept": "Tally Mark 5-Line Bundling Mechanics",
+        "explanation": "Tally marks record items line-by-line. Every 5th item is drawn as a diagonal slash across 4 vertical lines (卌 = 5), enabling rapid skip-counting by 5s.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Represent count 13 in tally marks.'\nRaman: 'Two complete 5-bundles (卌 卌 = 10) plus 3 vertical lines (|||) = 13!'",
+        "example": "13 in Tallies = 卌 卌 ||| (5 + 5 + 3)."
+      },
+      {
+        "concept": "Scaled Pictographs & Fractional Symbol Keys",
+        "explanation": "Pictographs represent quantities using icons. A scaled key assigns a specific numerical value to each symbol (e.g., 1 tree icon = 10 trees; half icon = 5 trees).\n\n[Instructional Dialogue Simulation]\nTeacher: 'In a pictograph where 1 smile icon = 5 students, how do you draw 17 students?'\nAnish: '3 full icons (15) plus a partial icon representing 2 students!'",
+        "example": "Key: 1 icon = 10 units -> 3.5 icons = 35 units."
+      },
+      {
+        "concept": "Bar Graph Anatomy & Axis Scaling",
+        "explanation": "Bar graphs display category counts using rectangular bars. Horizontal X-axis represents discrete categories; Vertical Y-axis represents frequency values along a uniform numerical scale.\n\n[Instructional Dialogue Simulation]\nTeacher: 'If maximum data value is 50, what Y-axis scale step should we pick?'\nSheela: 'A scale step of 5 or 10 units per grid line fits cleanly on paper!'",
+        "example": "Y-Axis Scale: 0, 10, 20, 30, 40, 50."
+      },
+      {
+        "concept": "Data Analytics & Mode Identification",
+        "explanation": "Analyzing visual charts to find the Mode (most frequent category), total sums, category differences, and actionable insights (e.g., reducing canteen waste on peak days).\n\n[Instructional Dialogue Simulation]\nTeacher: 'In food wastage data [Mon: 4kg, Tue: 2kg, Wed: 5kg, Thu: 2kg, Fri: 6kg], which day had peak waste?'\nRaman: 'Friday with 6 kg! Lowest waste was Tuesday and Thursday with 2 kg!'",
+        "example": "Peak Waste = Friday (6 kg); Minimum = Tuesday & Thursday (2 kg)."
+      }
+    ]
+  },
+  "key_formulas_and_rules": [
+    "Tally Bundle Rule: 4 vertical lines + 1 diagonal slash = 5 items (卌)",
+    "Pictograph Quantity = Number of Icons x Key Value",
+    "Bar Height Proportionality: Bar Height = Category Frequency / Unit Scale Factor",
+    "Mode Definition: The category with the highest frequency bar/count",
+    "Total Count = Sum of all individual category frequencies"
+  ],
+  "real_world_applications": "Tracking school canteen food wastage, analyzing monthly attendance trends, reporting library book checkouts, and interpreting weather rainfall graphs.",
+  "image_asset": {
+    "chapter_number": 15,
+    "image_id": "ch15_tally_bargraph",
+    "file_name": "ch15_tally_bargraph.png",
+    "local_url": "/assets/images/ch15_tally_bargraph.png",
+    "aspect_ratio": "16:9",
+    "title": "5-Line Tally Bundles & Scaled Frequency Bar Graph",
+    "description": "Data collection using 5-line tally mark bundles (卌) and scaled frequency bar graph analytics.",
+    "hotspots": [
+      {
+        "label": "5-Line Tally Mark Bundle (卌)",
+        "x_percent": 25.0,
+        "y_percent": 45.0,
+        "w_percent": 18.0,
+        "h_percent": 20.0
+      },
+      {
+        "label": "Bar Chart Vertical Y-Axis",
+        "x_percent": 60.0,
+        "y_percent": 45.0,
+        "w_percent": 5.0,
+        "h_percent": 40.0
+      },
+      {
+        "label": "Bar Chart Columns",
+        "x_percent": 75.0,
+        "y_percent": 50.0,
+        "w_percent": 20.0,
+        "h_percent": 35.0
+      }
+    ]
+  }
+}

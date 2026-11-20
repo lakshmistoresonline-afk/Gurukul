@@ -1,0 +1,90 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Symmetry",
+  "section_1_complete_textbook_notes": {
+    "chapter_overview": "This chapter investigates line (reflectional) symmetry and rotational symmetry. It details lines of symmetry, mirror halves, center of rotation, order of rotational symmetry n, smallest angle of symmetry (360°/n), and symmetry properties of regular polygons.",
+    "detailed_sections": [
+      {
+        "section_number_title": "9.1 Line Symmetry and Reflection",
+        "full_textbook_explanation": "A shape has line symmetry if a line divides it into two mirror halves that coincide under folding. A regular n-gon has exactly n lines of reflection symmetry.",
+        "mathematical_definitions": [
+          {
+            "term": "Line of Symmetry",
+            "formal_definition": "An axis dividing a figure into two mirror-image halves that coincide upon reflection.",
+            "example": "A square has 4 lines of symmetry."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Regular Polygon Symmetry Rule",
+            "statement_or_expression": "Number of Lines of Symmetry = n",
+            "variable_definitions": "n = number of equal sides of regular polygon",
+            "direct_example": "Equilateral triangle (n=3) has 3 lines of symmetry."
+          }
+        ]
+      },
+      {
+        "section_number_title": "9.2 Rotational Symmetry",
+        "full_textbook_explanation": "A figure possesses rotational symmetry if it matches its original appearance after rotation by an angle < 360° around its center. Order n = number of matching positions in 360°. Smallest Angle = 360° / n.",
+        "mathematical_definitions": [
+          {
+            "term": "Rotational Symmetry",
+            "formal_definition": "Property where a shape maps onto itself when turned around a center point by an angle less than 360°.",
+            "example": "A 4-blade windmill matching every 90° turn."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Smallest Rotational Angle Formula",
+            "statement_or_expression": "Smallest Angle = 360° / Order n",
+            "variable_definitions": "Order n = matching positions in 360°",
+            "direct_example": "Square (Order 4): Angle = 360° / 4 = 90°."
+          }
+        ]
+      }
+    ],
+    "asymmetric_rotation_mastery": {
+      "concept": "Rotational Symmetry without Reflection & Point Groups",
+      "explanation": "Shapes like 3-blade windmills or swastikas have rotational order n > 1 but zero lines of reflection. Regular n-gons possess dihedral symmetry group D_n with n reflection lines and order n rotation."
+    }
+  },
+  "section_2_step_by_step_algorithms": [
+    {
+      "method_name": "Determining Rotational Order and Smallest Angle",
+      "step_by_step_instructions": [
+        "Step 1: Fix center point of rotation.",
+        "Step 2: Rotate shape 360° and count matching orientations (Order n).",
+        "Step 3: Calculate Smallest Angle = 360° / n."
+      ],
+      "model_textbook_example": {
+        "problem": "Find smallest rotational angle for Ashoka Chakra (24 spokes).",
+        "working_steps": [
+          "Order n = 24.",
+          "Smallest Angle = 360° / 24 = 15°."
+        ],
+        "final_answer": "15°"
+      }
+    }
+  ],
+  "section_3_in_text_boxes_and_try_these": [
+    {
+      "box_type": "Figure it Out",
+      "location_or_title": "Page 195",
+      "question_text": "Can a shape have rotational symmetry with smallest angle 17°?",
+      "complete_solution": "No, because 360° / 17° = 21.176..., which is not an integer."
+    }
+  ],
+  "section_4_complete_textbook_exercise_solutions": [
+    {
+      "exercise_number": "Ex 9.2",
+      "question_number": "Q3",
+      "question_text": "How many lines of symmetry does a square have?",
+      "solution_steps": [
+        "Midsegment fold lines = 2.",
+        "Diagonal fold lines = 2.",
+        "Total = 4 lines of symmetry."
+      ],
+      "final_answer_with_units": "4 lines of symmetry"
+    }
+  ]
+}

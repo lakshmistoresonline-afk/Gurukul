@@ -1,0 +1,81 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Geometric Twins",
+  "scrambled_tile_sets": {
+    "activity_title": "Unscramble Geometric Twins Procedure Steps",
+    "scrambled_tile_sets": [
+      "Step 3: Solve equation",
+      "Step 1: Identify given quantities",
+      "Step 2: Frame algebraic model"
+    ],
+    "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+  },
+  "multi_bin_sorting_matrices": {
+    "activity_title": "Concept Classification Matrix",
+    "bins": [
+      "Valid Rules",
+      "Common Misconceptions"
+    ],
+    "draggable_items": [
+      {
+        "item": "Correct Mathematical Property",
+        "target_bin": "Valid Rules"
+      },
+      {
+        "item": "Common Calculation Pitfall",
+        "target_bin": "Common Misconceptions"
+      }
+    ]
+  },
+  "common_pitfalls_editing_checkers": [
+    {
+      "common_error_or_misconception": "Assuming SSA (Side-Side-Angle) guarantees congruence in non-right triangles.",
+      "correct_fact_or_method": "Remember that the angle must be strictly INCLUDED between the two sides for SAS. SSA only guarantees congruence in right triangles (RHS)."
+    },
+    {
+      "common_error_or_misconception": "Writing congruence statements without respecting vertex order (e.g. writing ΔABC ≅ ΔZYX when A matches X).",
+      "correct_fact_or_method": "Always align corresponding vertices in the exact order: if A↔X, B↔Y, C↔Z, write ΔABC ≅ ΔXYZ."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "img_ch1",
+    "chapter_number": 1,
+    "title": "Triangle Congruence Criteria Diagram",
+    "url": "/assets/images/ch1_triangle_congruence.png",
+    "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
+    "hotspots": [
+      {
+        "x_percent": 10,
+        "y_percent": 10,
+        "w_percent": 40,
+        "h_percent": 40,
+        "label": "SSS Criterion",
+        "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
+      },
+      {
+        "x_percent": 55,
+        "y_percent": 10,
+        "w_percent": 40,
+        "h_percent": 40,
+        "label": "SAS Criterion",
+        "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
+      },
+      {
+        "x_percent": 10,
+        "y_percent": 55,
+        "w_percent": 40,
+        "h_percent": 40,
+        "label": "ASA Criterion",
+        "popover_text": "Angle-Side-Angle: Two angles and included side align."
+      },
+      {
+        "x_percent": 55,
+        "y_percent": 55,
+        "w_percent": 40,
+        "h_percent": 40,
+        "label": "RHS Criterion",
+        "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
+      }
+    ]
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Arithmetic Progressions",
+  "unit_or_theme": "Algebra",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "Introduces sequences where each term is obtained by adding a fixed common difference 'd' to the preceding term, deriving formulas for the nth term an = a + (n-1)d and sum of n terms Sn = n/2 [2a + (n-1)d].",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "5.1 Definition & General Term of an AP",
+        "full_explanation": "An AP is a list of numbers in which each term is obtained by adding a constant d to the preceding term. General form: a, a+d, a+2d, ... nth term: an = a + (n-1)d.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Formula",
+            "box_title": "nth Term of AP",
+            "full_content": "an = a + (n - 1)d, where a is first term and d is common difference."
+          }
+        ]
+      },
+      {
+        "section_number_title": "5.2 Sum of First n Terms of an AP",
+        "full_explanation": "Sn = n/2 [2a + (n-1)d] or Sn = n/2 [a + l], where l is the last term.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Historical Note",
+            "box_title": "Gauss Trick",
+            "full_content": "Carl Friedrich Gauss summed 1 to 100 instantly as a boy by pairing terms (1+100, 2+99...)."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Common Difference (d)",
+        "definition": "The fixed difference between consecutive terms of an AP: d = a_(k+1) - a_k.",
+        "contextual_example_or_usage": "For 2, 7, 12..., d = 5.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Finite AP",
+        "definition": "An AP containing a finite number of terms, possessing a clear last term.",
+        "contextual_example_or_usage": "2, 4, 6, 8, 10",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Sum of First n Terms",
+        "statement_or_expression": "Sn = (n / 2) * [2a + (n - 1)d] = (n / 2) * [a + l]",
+        "variable_definitions": "a = first term, d = common difference, n = number of terms, l = last term",
+        "model_application_example": "Sum of first 100 positive integers = 100 * 101 / 2 = 5050."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Determining if a Sequence forms an AP",
+      "objective_or_aim": "Check if 2, 4, 8, 16... is an AP.",
+      "materials_or_prerequisites": [
+        "Difference computation"
+      ],
+      "step_by_step_procedure": [
+        "a2 - a1 = 4 - 2 = 2",
+        "a3 - a2 = 8 - 4 = 4",
+        "Compare differences: 2 != 4",
+        "Since d is not constant, sequence is NOT an AP."
+      ],
+      "expected_observations_or_working": "Differences between successive terms vary.",
+      "scientific_or_logical_conclusion": "Requires constant d to be an AP."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Staircase Model of AP",
+        "labels_to_learn": [
+          "Step height (a)",
+          "Step increment (d)"
+        ],
+        "drawing_or_labeling_instructions": "Draw steps increasing uniformly in height.",
+        "key_structural_details": "Visualizing equal step additions reflecting constant difference d."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "AP Formulas Quick Reference",
+        "headers": [
+          "Target Variable",
+          "Formula",
+          "Required Inputs"
+        ],
+        "rows": [
+          [
+            "nth term (an)",
+            "a + (n-1)d",
+            "a, n, d"
+          ],
+          [
+            "Sum of n terms (Sn)",
+            "n/2 [2a + (n-1)d]",
+            "a, n, d"
+          ],
+          [
+            "Sum using last term",
+            "n/2 [a + l]",
+            "a, n, l"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 5.2",
+        "question_number": "Q4",
+        "question_text": "Which term of the AP 3, 8, 13, 18... is 78?",
+        "complete_step_by_step_solution": "a = 3, d = 5. an = 78 => 3 + (n-1)5 = 78 => 5(n-1) = 75 => n-1 = 15 => n = 16. 16th term."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "The sum of the first n positive integers is given by Sn = n(n+1)/2...",
+        "questions_and_answers": [
+          {
+            "question": "Find sum of first 10 natural numbers.",
+            "answer": "10(11)/2 = 55."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "11th term of AP -3, -1/2, 2... is:",
+        "options": [
+          "28",
+          "22",
+          "-38",
+          "-46.5"
+        ],
+        "correct_answer": "22",
+        "brief_explanation": "a = -3, d = -1/2 - (-3) = 5/2. a11 = -3 + 10(5/2) = -3 + 25 = 22."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Find sum of first 22 terms of AP 8, 3, -2...",
+        "model_answer": "a = 8, d = -5, n = 22. S22 = 22/2 [2(8) + (22-1)(-5)] = 11 [16 - 105] = 11 [-89] = -979.",
+        "key_marking_points": [
+          "Formula identification",
+          "Value substitution",
+          "Final product calculation"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "If sum of first 7 terms of AP is 49 and that of 17 terms is 289, find sum of first n terms.",
+        "model_answer": "S7 = 7/2 [2a+6d] = 49 => a+3d = 7. S17 = 17/2 [2a+16d] = 289 => a+8d = 17. Subtracting gives 5d = 10 => d = 2, a = 1. Sn = n/2 [2(1) + (n-1)2] = n/2 [2n] = n^2."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A manufacturer of TV sets produced 600 sets in 3rd year and 700 sets in 7th year, assuming uniform annual increase.",
+        "questions_and_answers": [
+          {
+            "question": "Find production in 1st year.",
+            "answer": "a3 = a+2d = 600, a7 = a+6d = 700 => 4d = 100 => d = 25. First year a = 550."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Confusing an (nth term value) with n (term position number).",
+      "root_cause": "Semantic confusion between position and value.",
+      "correct_approach": "n must always be a positive integer representing position; an is the actual numerical value at that position."
+    }
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 5: Arithmetic Progressions. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 5 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 5",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ]
+}

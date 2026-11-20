@@ -1,0 +1,88 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Some Applications of Trigonometry",
+  "mind_map": {
+    "root_topic": "Some Applications of Trigonometry",
+    "branches": [
+      {
+        "theme": "Heights and Distances Framework",
+        "sub_branches": [
+          {
+            "concept": "Line of Sight & Angular Angles",
+            "details": [
+              "Line of Sight: Straight line drawn from observer's eye to target point.",
+              "Angle of Elevation: Angle between line of sight and horizontal baseline when looking UP.",
+              "Angle of Depression: Angle between line of sight and horizontal baseline when looking DOWN.",
+              "Angle of depression equals angle of elevation from observer object due to alternate interior angles."
+            ],
+            "evidence_or_examples": [
+              "Pole 6 m high casts shadow 2√3 m => tan θ = 6/(2√3) = √3 => θ = 60°.",
+              "Circus artist climbing 20 m rope tied to pole top at 30° => sin 30° = AB/20 => pole height = 10 m."
+            ],
+            "key_terms": [
+              "Line of Sight",
+              "Angle of Elevation",
+              "Angle of Depression",
+              "Horizontal Baseline"
+            ]
+          },
+          {
+            "concept": "Multi-Triangle Problems",
+            "details": [
+              "Set up coupled right-angled triangles to compute unknown heights or distance between objects."
+            ],
+            "evidence_or_examples": [
+              "Lighthouse height 75 m, ship depression angles 30° and 45°: ship distances 75 m and 75√3 m => ship distance = 75(√3 - 1) m ≈ 54.9 m.",
+              "Statue 1.6 m on pedestal, top angles 60° and 45° => pedestal height h = 0.8(√3 + 1) m."
+            ],
+            "key_terms": [
+              "Coupled Triangles",
+              "Indirect Measurement"
+            ]
+          }
+        ]
+      }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_9_root",
+      "label": "Some Applications of Trigonometry",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_9_b1",
+          "label": "Heights and Distances Framework",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Heights and Distances Framework",
+          "children": [
+            {
+              "id": "node_9_c2",
+              "label": "Line of Sight & Angular Angles",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Line of Sight & Angular Angles",
+              "details": [
+                "Line of Sight: Straight line drawn from observer's eye to target point.",
+                "Angle of Elevation: Angle between line of sight and horizontal baseline when looking UP.",
+                "Angle of Depression: Angle between line of sight and horizontal baseline when looking DOWN.",
+                "Angle of depression equals angle of elevation from observer object due to alternate interior angles."
+              ]
+            },
+            {
+              "id": "node_9_c3",
+              "label": "Multi-Triangle Problems",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Multi-Triangle Problems",
+              "details": [
+                "Set up coupled right-angled triangles to compute unknown heights or distance between objects."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Some Applications of Trigonometry]\n  Root --> B_2[Heights and Distances Framework]\n  B_2 --> C_3[Line of Sight & Angular Angles]\n  B_3 --> C_4[Multi-Triangle Problems]"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "The World of Algorithms",
+  "quiz_questions": [
+    {
+      "question_id": 1,
+      "level": "Level 1 (Easy)",
+      "question_type": "Multiple Choice",
+      "question": "What is the output of the modulo operation 38 mod 7?",
+      "options": [
+        "A) 5",
+        "B) 3",
+        "C) 7",
+        "D) 0"
+      ],
+      "correct_answer": "B",
+      "explanation": "38 divided by 7 equals quotient 5 with remainder 3 (38 = 5 * 7 + 3). The modulo operator returns remainder 3."
+    },
+    {
+      "question_id": 2,
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "The term 'algorithm' originates from the Latin transliteration of the name of 9th-century mathematician _______.",
+      "options": [],
+      "correct_answer": "Muhammad ibn Musa al-Khwarizmi",
+      "explanation": "Al-Khwarizmi's treatise on Indian decimal numerals led to the Latin term 'algorismus', which evolved into 'algorithm'."
+    },
+    {
+      "question_id": 3,
+      "level": "Level 1 (Easy)",
+      "question_type": "True/False with Justification",
+      "question": "True or False: Euclidean subtraction gcd(m, n) = gcd(n, m - n) has a logarithmic time complexity O(log N).",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "Euclidean subtraction performs linear step-by-step subtractions with O(N) complexity (e.g. gcd(99, 2) takes 49 steps). Āryabhaṭa's remainder division method gcd(m, n) = gcd(n, m mod n) achieves logarithmic O(log N) complexity."
+    },
+    {
+      "question_id": 4,
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer",
+      "question": "Trace Āryabhaṭa's remainder division algorithm step-by-step to compute gcd(540, 192).",
+      "options": [],
+      "correct_answer": "Step 1: 540 mod 192 = 156. Step 2: 192 mod 156 = 36. Step 3: 156 mod 36 = 12. Step 4: 36 mod 12 = 0. Since remainder is 0, GCD is 12.",
+      "explanation": "Āryabhaṭa's division algorithm iteratively replaces (m, n) with (n, m mod n) until remainder becomes 0."
+    },
+    {
+      "question_id": 5,
+      "level": "Level 2 (Medium)",
+      "question_type": "Diagram Analysis",
+      "question": "Refer to the geometric tile diagram for GCD. Explain geometrically why any square tile of side d that seamlessly tiles rectangle sides m and n must also cleanly tile a rectangle of sides n and (m - n).",
+      "options": [],
+      "correct_answer": "Since tile d divides side m into k1 segments (m = k1*d) and side n into k2 segments (n = k2*d), the difference segment (m - n) = (k1 - k2)*d is an exact integer multiple of d. Thus tile d cleanly tiles length (m - n).",
+      "explanation": "Tile d measures common units; subtracting n from m leaves a length composed of integer multiples of tile size d."
+    },
+    {
+      "question_id": 6,
+      "level": "Level 3 (Hard)",
+      "question_type": "Synthesis",
+      "question": "Explain how Āryabhaṭa's GCD algorithm can be used to compute the Least Common Multiple (LCM) of two large numbers m and n without causing 64-bit integer overflow.",
+      "options": [],
+      "correct_answer": "Computing m * n directly can exceed maximum integer bounds. Since gcd(m, n) * lcm(m, n) = m * n, we first compute g = gcd(m, n) using Āryabhaṭa's division algorithm. We then evaluate LCM safely as lcm(m, n) = (m // g) * n, dividing first to keep intermediate numbers small.",
+      "explanation": "Dividing m by g prior to multiplying by n avoids large product overflow while guaranteeing exact integer LCM."
+    },
+    {
+      "question_id": 7,
+      "level": "Level 3 (Hard)",
+      "question_type": "Case Study",
+      "question": "According to Lamé's Theorem, what sequence of input pairs produces the absolute worst-case computational performance for the Euclidean GCD division algorithm? Prove using (89, 55).",
+      "options": [],
+      "correct_answer": "Consecutive Fibonacci numbers (F_{k+1}, F_k) produce the worst-case performance. For (89, 55): 89 mod 55 = 34; 55 mod 34 = 21; 34 mod 21 = 13; 21 mod 13 = 8; 13 mod 8 = 5; 8 mod 5 = 3; 5 mod 3 = 2; 3 mod 2 = 1; 2 mod 1 = 0. Every quotient is 1, requiring maximum steps relative to digit length.",
+      "explanation": "Consecutive Fibonacci numbers minimize remainder reduction per step because quotients are always 1, forcing maximum step count."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "I’m Up and Down, and Round and Round",
+  "image_asset": {
+    "title": "Circle diagram demonstrating Inscribed Angle Theorem and Cyclic Quadrilateral supplementary angles.",
+    "local_url": "/assets/images/ch5_circle_theorems.png",
+    "hotspots": [
+      {
+        "id": "hs_central_angle",
+        "label": "Central Angle AOB",
+        "x_percent": 50.0,
+        "y_percent": 55.0,
+        "w_percent": 12.0,
+        "h_percent": 12.0,
+        "tooltip": "Angle subtended by arc AB at centre O (double the inscribed angle)."
+      },
+      {
+        "id": "hs_inscribed_angle",
+        "label": "Inscribed Angle ACB",
+        "x_percent": 50.0,
+        "y_percent": 20.0,
+        "w_percent": 12.0,
+        "h_percent": 12.0,
+        "tooltip": "Angle subtended by arc AB on the major circumference."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "section_number_and_title": "5.1 Circle Geometry & Chord Properties",
+      "content": "A circle is the locus of points equidistant from fixed centre O. A perpendicular dropped from centre O to chord AB bisects the chord (AM = MB). Equal chords are equidistant from centre. Exactly one circumcircle passes through 3 non-collinear points; its centre is the circumcentre.",
+      "key_takeaways": [
+        "Perpendicular from centre bisects chord.",
+        "Circumcentre is intersection of side perpendicular bisectors."
+      ]
+    },
+    {
+      "section_number_and_title": "5.2 Inscribed Angle Theorem & Semicircle Properties",
+      "content": "Inscribed Angle Theorem: Central angle angle AOB = 2 * angle ACB (inscribed angle on circumference). Angles subtended in the same segment of a circle are equal. Angle subtended in a semicircle is a right angle (90 degrees).",
+      "key_takeaways": [
+        "Central angle is double the inscribed angle.",
+        "Angle in semicircle = 90 deg."
+      ]
+    },
+    {
+      "section_number_and_title": "5.3 Cyclic Quadrilaterals & Concyclicity",
+      "content": "A quadrilateral is cyclic if all 4 vertices touch a circle. Opposite angles of a cyclic quadrilateral are supplementary: angle A + angle C = 180 degrees. Converse: if opposite angles sum to 180 degrees, the quadrilateral is cyclic.",
+      "key_takeaways": [
+        "Cyclic quad: angle A + angle C = 180 deg.",
+        "Concyclicity holds when opposite angles are supplementary."
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "table_title": "Key Conceptual Comparison - Ch 5",
+      "headers": [
+        "Concept A",
+        "Concept B",
+        "Distinguishing Feature"
+      ],
+      "rows": [
+        [
+          "Type 1",
+          "Type 2",
+          "Core Mathematical Distinction"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "d_ch5_01",
+      "title": "Mastering the Core Insight",
+      "exchanges": [
+        {
+          "speaker": "Aarav (Student)",
+          "avatar_role": "Student Explorer",
+          "speech_text": "How do we systematically approach the key concepts of I’m Up and Down, and Round and Round?"
+        },
+        {
+          "speaker": "Dr. Sharma (Master Educator)",
+          "avatar_role": "Mathematics Mentor",
+          "speech_text": "By grounding ourselves in the fundamental definitions, visual models, and step-by-step rigorous proofs outlined in the chapter!"
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch5",
+      "experiment_title": "STEM Visual Verification - Ch 5",
+      "apparatus": [
+        "Graph Paper",
+        "Ruler",
+        "Compass",
+        "Scientific Calculator"
+      ],
+      "procedure": [
+        "Construct baseline geometric / coordinate figures according to chapter guidelines.",
+        "Measure side lengths, angles, or coordinate distances accurately.",
+        "Verify corresponding algebraic formulas against physical measurements."
+      ],
+      "observations": "Empirical measurements exactly match theoretical algebraic calculations.",
+      "interactive_controls": {
+        "slider_parameter": "Variable Input x",
+        "min_value": 1,
+        "max_value": 100,
+        "step": 1
+      }
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calc_id": "calc_ch5",
+      "formula_name": "Core Formula Evaluator Ch 5",
+      "expression": "Result = f(Inputs)",
+      "variables": [
+        {
+          "name": "x1",
+          "description": "First Input Variable"
+        },
+        {
+          "name": "x2",
+          "description": "Second Input Variable"
+        }
+      ],
+      "interactive_sample_inputs": {
+        "x1": 3,
+        "x2": 4
+      }
+    }
+  ]
+}

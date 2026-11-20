@@ -1,0 +1,178 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Large Numbers Around Us",
+  "detailed_sections": [
+    {
+      "section": "1.1 Representing Large Numbers",
+      "full_notes": "Large numbers are used to express large quantities such as populations, distances in astronomy, and financial budgets. In the Indian numbering system, values are grouped as Thousands (1,000), Lakhs (1,00,000 = 10^5), and Crores (1,00,00,000 = 10^7). In the International system, grouping is done in thousands, Millions (1,000,000 = 10^6), and Billions (1,000,000,000 = 10^9). Conversion relation: 1 Million = 10 Lakhs, 1 Crore = 10 Millions.",
+      "margin_notes": [
+        {
+          "type": "Did You Know?",
+          "title": "Population Comparisons",
+          "content": "To compare populations of cities like Patna and Mumbai, we express them in lakhs/crores and find the scaling factor by division."
+        }
+      ]
+    },
+    {
+      "section": "1.2 Patterns in Products & Multiplication Shortcuts",
+      "full_notes": "Shortcut techniques accelerate multiplication: To multiply a number by 5, divide the number by 2 and multiply by 10 (e.g., 116 * 5 = (116 / 2) * 10 = 58 * 10 = 580). To multiply by 25, divide the number by 4 and multiply by 100 (e.g., 824 * 25 = (824 / 4) * 100 = 206 * 100 = 20,600).",
+      "margin_notes": [
+        {
+          "type": "Try These",
+          "title": "Shortcut Practice",
+          "content": "Evaluate 464 * 5 and 312 * 25 using division shortcuts."
+        }
+      ]
+    },
+    {
+      "section": "1.3 Digit Sequences and Positions",
+      "full_notes": "When integers are written sequentially (1, 2, 3, 4, ..., 9, 10, 11, ...), single-digit numbers occupy 9 positions. Two-digit numbers (10-99, 90 numbers) occupy 180 positions. Three-digit numbers (100-999, 900 numbers) occupy 2700 positions. Determining the n-th written digit requires calculating cumulative digit counts.",
+      "margin_notes": [
+        {
+          "type": "Think About It",
+          "title": "1000th Digit Position",
+          "content": "The first 9 digits come from 1-9. Digits 10 to 189 come from 10-99. The remaining digits come from 3-digit numbers starting at 100."
+        }
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "title": "System Conversion Table",
+      "headers": [
+        "Indian System",
+        "Value in Digits",
+        "International Equivalent"
+      ],
+      "rows": [
+        [
+          "1 Lakh",
+          "1,00,000",
+          "100 Thousand"
+        ],
+        [
+          "10 Lakhs",
+          "10,00,000",
+          "1 Million"
+        ],
+        [
+          "1 Crore",
+          "1,00,00,000",
+          "10 Million"
+        ],
+        [
+          "10 Crores",
+          "10,00,00,000",
+          "100 Million"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "speaker": "Aftab",
+      "role": "Student",
+      "speech_text": "How can Patna's population of 25 Lakhs be compared to Mumbai's 2 Crores?"
+    },
+    {
+      "speaker": "Shabnam",
+      "role": "Peer",
+      "speech_text": "Convert 2 Crores to 200 Lakhs! Then 200 / 25 = 8 times larger."
+    },
+    {
+      "speaker": "Teacher",
+      "role": "Mentor",
+      "speech_text": "Correct! Standardizing place value units makes magnitude comparison effortless."
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch1",
+      "title": "Place Value Special Calculator",
+      "concept": "Decomposing numbers using restricted operational buttons (+10, +100, +10000)",
+      "interactive_controls": [
+        "+10000 Button",
+        "+100 Button"
+      ],
+      "procedure_steps": [
+        "Form 50,300 starting from 0",
+        "Press +10000 five times",
+        "Press +100 three times"
+      ],
+      "expected_outcome": "50,300 formed in minimal 8 button clicks."
+    }
+  ],
+  "formula_rule_engines": [
+    {
+      "engine_id": "eng_ch1",
+      "rule_name": "Multiplication Shortcuts Engine",
+      "formula": "N * 5 = (N/2)*10; N * 25 = (N/4)*100",
+      "input_variables": [
+        "N"
+      ],
+      "computed_expression": "Halve or quarter input N and append trailing zeros",
+      "example_demonstration": "Input N=824 => 824/4 = 206 => 20,600"
+    },
+    {
+      "engine_id": "eng_ch1_odd",
+      "rule_name": "Odd Number Multiplication Shortcut Engine",
+      "formula": "N * 5 = ((N-1)/2)*10 + 5; N * 25 = ((N-R)/4)*100 + R*25",
+      "input_variables": [
+        "N",
+        "R (remainder N % 4)"
+      ],
+      "computed_expression": "Halve or quarter even part and add remainder scaled value",
+      "example_demonstration": "117 * 5 = (116/2)*10 + 5 = 585; 313 * 25 = (312/4)*100 + 1*25 = 7825"
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch1_place_value_shortcuts",
+    "chapter_number": 1,
+    "chapter_title": "Large Numbers Around Us",
+    "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+    "file_name": "ch1_place_value_shortcuts.png",
+    "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_1_1",
+        "title": "Indian Place Value System",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+      },
+      {
+        "hotspot_id": "hs_1_2",
+        "title": "International Place Value System",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+      },
+      {
+        "hotspot_id": "hs_1_3",
+        "title": "Factor Shortcuts (x5 and x25)",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+      },
+      {
+        "hotspot_id": "hs_1_4",
+        "title": "Sequential Digit Position Analytics",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+      }
+    ]
+  }
+}
