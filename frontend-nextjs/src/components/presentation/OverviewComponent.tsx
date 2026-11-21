@@ -87,39 +87,63 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
           </div>
 
           {/* Chapter Video Lesson Player Card */}
-          {(data.video_url || data.video_link || data.video || data.video_path) && (
-            <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
-              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase flex items-center gap-2">
-                  <span>🎥 NCERT Video Lesson</span>
-                </h3>
-                <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full font-bold border border-teal-200">
-                  HD Interactive Lesson
-                </span>
+          {(data.video_url || data.video_link || data.video || data.video_path) && (() => {
+            const videoUrl = String(data.video_url || data.video_link || data.video || data.video_path);
+            const isNotebookLm = videoUrl.includes('notebooklm.link.google') || videoUrl.includes('notebook.google.com');
+            const isYoutube = videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be');
+
+            return (
+              <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                  <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase flex items-center gap-2">
+                    <span>🎥 NCERT {isNotebookLm ? 'NotebookLM Studio Lesson' : 'Video Lesson'}</span>
+                  </h3>
+                  <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full font-bold border border-teal-200">
+                    {isNotebookLm ? '✨ NotebookLM Gemini Studio' : 'HD Interactive Lesson'}
+                  </span>
+                </div>
+                <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                  {isNotebookLm ? (
+                    <div className="w-full h-full p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4">
+                      <div className="w-16 h-16 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-3xl shadow-lg border border-teal-400/30">
+                        ✨
+                      </div>
+                      <div className="space-y-1 max-w-md">
+                        <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NotebookLM Gemini Video Lesson'}</h4>
+                        <p className="text-xs text-teal-200/80 font-medium">Interactive Google NotebookLM Audio &amp; Video Studio Lesson</p>
+                      </div>
+                      <a
+                        href={videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
+                      >
+                        <span>Launch NotebookLM Studio Lesson ↗</span>
+                      </a>
+                    </div>
+                  ) : isYoutube ? (
+                    <iframe
+                      src={videoUrl.replace('watch?v=', 'embed/')}
+                      title="NCERT Video Lesson"
+                      className="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <video
+                      controls
+                      preload="metadata"
+                      className="w-full h-full object-contain"
+                      poster="/illustrations/chapter-learning.svg"
+                    >
+                      <source src={videoUrl} type="video/mp4" />
+                      Your browser does not support HTML5 video playback.
+                    </video>
+                  )}
+                </div>
               </div>
-              <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                {String(data.video_url || data.video_link || data.video || data.video_path).includes('youtube.com') || String(data.video_url || data.video_link || data.video || data.video_path).includes('youtu.be') ? (
-                  <iframe
-                    src={String(data.video_url || data.video_link || data.video || data.video_path).replace('watch?v=', 'embed/')}
-                    title="NCERT Video Lesson"
-                    className="w-full h-full border-0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                ) : (
-                  <video
-                    controls
-                    preload="metadata"
-                    className="w-full h-full object-contain"
-                    poster="/illustrations/chapter-learning.svg"
-                  >
-                    <source src={data.video_url || data.video_link || data.video || data.video_path} type="video/mp4" />
-                    Your browser does not support HTML5 video playback.
-                  </video>
-                )}
-              </div>
-            </div>
-          )}
+            );
+          })()}
 
           {theme && (
             <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-3">
