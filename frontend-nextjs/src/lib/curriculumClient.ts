@@ -74,6 +74,8 @@ export function resolveProcessedContentStaticUrl(identity: CurriculumIdentity): 
   return `/ProcessedContent/Class${g}/${subjFolder}/${chId}/${ct}.json`;
 }
 
+const contentCacheMap = new Map<string, ChapterContentResponse>();
+
 export class CurriculumApiClient {
   static async fetchHierarchy(retries = 2, delayMs = 300): Promise<any[]> {
     if (cachedHierarchyInMemory && cachedHierarchyInMemory.length > 0) {
@@ -128,6 +130,35 @@ export class CurriculumApiClient {
   }
 
   static async fetchContent(identity: CurriculumIdentity): Promise<ChapterContentResponse> {
+    const cacheKey = `${identity.grade}:${identity.subject}:${identity.book}:${identity.part}:${identity.unit}:${identity.chapter_id}:${identity.content_type}`;
+    if (contentCacheMap.has(cacheKey)) {
+      return contentCacheMap.get(cacheKey)!;
+    }
+
+    const isCloudHost = typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
+
+    // 1. On Cloud Hosts (Vercel), try Static ProcessedContent Asset FIRST for 0ms load speed
+    if (isCloudHost && typeof window !== 'undefined') {
+      try {
+        const staticUrl = resolveProcessedContentStaticUrl(identity);
+        const staticRes = await fetch(staticUrl);
+        if (staticRes.ok) {
+          const staticData = await staticRes.json();
+          if (staticData) {
+            const response: ChapterContentResponse = {
+              identity,
+              contentType: identity.content_type || 'overview',
+              status: 'PASS',
+              data: staticData
+            };
+            contentCacheMap.set(cacheKey, response);
+            return response;
+          }
+        }
+      } catch {}
+    }
+
+    // 2. Try Authoritative Backend API (Local / Custom Configured API)
     const params = new URLSearchParams({
       grade: String(identity.grade || ''),
       subject: String(identity.subject || ''),
@@ -138,19 +169,21 @@ export class CurriculumApiClient {
       content_type: String(identity.content_type || '')
     });
 
-    // 1. Try Authoritative Backend API
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 2000);
+      const timeoutId = setTimeout(() => controller.abort(), 1500);
       const res = await fetch(`${API_BASE}/api/v1/curriculum/resolve?${params.toString()}`, { signal: controller.signal });
       clearTimeout(timeoutId);
       if (res.ok) {
         const data = await res.json();
-        if (data && data.data) return data;
+        if (data && data.data) {
+          contentCacheMap.set(cacheKey, data);
+          return data;
+        }
       }
     } catch {}
 
-    // 2. Try Static Authoritative ProcessedContent Asset
+    // 3. Try Static Asset as secondary fallback if local API failed
     if (typeof window !== 'undefined') {
       try {
         const staticUrl = resolveProcessedContentStaticUrl(identity);
@@ -158,19 +191,23 @@ export class CurriculumApiClient {
         if (staticRes.ok) {
           const staticData = await staticRes.json();
           if (staticData) {
-            return {
+            const response: ChapterContentResponse = {
               identity,
               contentType: identity.content_type || 'overview',
               status: 'PASS',
               data: staticData
             };
+            contentCacheMap.set(cacheKey, response);
+            return response;
           }
         }
       } catch {}
     }
 
-    // 3. Fallback Client Generator
-    return getFallbackContentForIdentity(identity);
+    // 4. Fallback Client Generator
+    const fallbackRes = getFallbackContentForIdentity(identity);
+    contentCacheMap.set(cacheKey, fallbackRes);
+    return fallbackRes;
   }
 }
 
