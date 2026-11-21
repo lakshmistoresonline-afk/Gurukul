@@ -1,19 +1,21 @@
 import React from 'react';
-import OverviewComponent from './OverviewComponent';
-import NotesComponent from './NotesComponent';
-import MasterComponent from './MasterComponent';
-import FoundationalComponent from './FoundationalComponent';
-import FlashcardsComponent from './FlashcardsComponent';
-import MindmapComponent from './MindmapComponent';
-import QuizComponent from './QuizComponent';
-import QuestionPapersComponent from './QuestionPapersComponent';
+import dynamic from 'next/dynamic';
 
-import HindiNotesComponent from './HindiNotesComponent';
-import MathsNotesComponent from './MathsNotesComponent';
-import Class6MathsMasterComponent from './Class6/Class6MathsMasterComponent';
-import Class6MathsMindmapComponent from './Class6/Class6MathsMindmapComponent';
-import Class7UniversalNotesComponent from './Class7/Class7UniversalNotesComponent';
-import Class7UniversalMasterComponent from './Class7/Class7UniversalMasterComponent';
+const OverviewComponent = dynamic(() => import('./OverviewComponent'), { ssr: false });
+const NotesComponent = dynamic(() => import('./NotesComponent'), { ssr: false });
+const MasterComponent = dynamic(() => import('./MasterComponent'), { ssr: false });
+const FoundationalComponent = dynamic(() => import('./FoundationalComponent'), { ssr: false });
+const FlashcardsComponent = dynamic(() => import('./FlashcardsComponent'), { ssr: false });
+const MindmapComponent = dynamic(() => import('./MindmapComponent'), { ssr: false });
+const QuizComponent = dynamic(() => import('./QuizComponent'), { ssr: false });
+const QuestionPapersComponent = dynamic(() => import('./QuestionPapersComponent'), { ssr: false });
+
+const HindiNotesComponent = dynamic(() => import('./HindiNotesComponent'), { ssr: false });
+const MathsNotesComponent = dynamic(() => import('./MathsNotesComponent'), { ssr: false });
+const Class6MathsMasterComponent = dynamic(() => import('./Class6/Class6MathsMasterComponent'), { ssr: false });
+const Class6MathsMindmapComponent = dynamic(() => import('./Class6/Class6MathsMindmapComponent'), { ssr: false });
+const Class7UniversalNotesComponent = dynamic(() => import('./Class7/Class7UniversalNotesComponent'), { ssr: false });
+const Class7UniversalMasterComponent = dynamic(() => import('./Class7/Class7UniversalMasterComponent'), { ssr: false });
 
 export interface RendererResolutionParams {
   grade: string;

@@ -42,7 +42,7 @@ interface Class7MasterProps {
   data: any;
 }
 
-export default function Class7UniversalMasterComponent({ data }: Class7MasterProps) {
+export default React.memo(function Class7UniversalMasterComponent({ data }: Class7MasterProps) {
   const notes = data?.zero_omission_notes || data?.m1_zero_omission_notes || [];
   const rawLab = data?.practical_lab_activity_or_methodology_manual || data?.m3_practical_activities_and_procedures || [];
   const rawVisuals = data?.visuals_diagrams_and_tabular_data || data?.m4_diagrams_and_tables || [];
@@ -249,4 +249,4 @@ export default function Class7UniversalMasterComponent({ data }: Class7MasterPro
       )}
     </div>
   );
-}
+});

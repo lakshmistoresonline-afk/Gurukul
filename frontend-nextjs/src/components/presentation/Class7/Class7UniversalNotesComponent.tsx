@@ -44,7 +44,7 @@ interface Class7NotesProps {
   data: any;
 }
 
-export default function Class7UniversalNotesComponent({ data }: Class7NotesProps) {
+export default React.memo(function Class7UniversalNotesComponent({ data }: Class7NotesProps) {
   const m1 = data?.m1_zero_omission_notes || {};
   const rawM2 = data?.m2_key_definitions_formulas_and_vocabulary || data?.m2_key_terms_formulas_and_rules || [];
   const rawM3 = data?.m3_practical_activities_lab_and_step_by_step_procedures || data?.m3_practical_activities_and_procedures || [];
@@ -393,4 +393,4 @@ export default function Class7UniversalNotesComponent({ data }: Class7NotesProps
       )}
     </div>
   );
-}
+});

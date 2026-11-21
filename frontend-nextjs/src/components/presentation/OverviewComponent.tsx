@@ -9,7 +9,7 @@ interface OverviewProps {
   subject?: string;
 }
 
-export default function OverviewComponent({ data, chapterTitle, unitTitle, subject }: OverviewProps) {
+export default React.memo(function OverviewComponent({ data, chapterTitle, unitTitle, subject }: OverviewProps) {
   const [activeSubTab, setActiveSubTab] = useState<string>('summary');
   const [reflectionAnswer, setReflectionAnswer] = useState<string | null>(null);
   const [showStudioModal, setShowStudioModal] = useState<boolean>(false);
@@ -267,4 +267,4 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
       )}
     </div>
   );
-}
+});
