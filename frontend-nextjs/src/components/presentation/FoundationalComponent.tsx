@@ -153,7 +153,7 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
                 <div key={idx} className="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-3 hover:border-indigo-300 transition-all">
                   <div className="flex items-center justify-between border-b border-slate-100 pb-2">
                     <span className="text-[11px] font-black uppercase tracking-wider px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg">{cat.replace(/_/g, ' ')}</span>
-                    {sourceCtx && <span className="text-[10px] font-mono text-slate-400 font-bold">{sourceCtx}</span>}
+                    {sourceCtx && !String(sourceCtx).includes('.pdf') && !String(sourceCtx).includes('.json') && <span className="text-[10px] font-mono text-slate-400 font-bold">{sourceCtx}</span>}
                   </div>
                   <h5 className="text-base font-black text-slate-900">{renderSafeText(title)}</h5>
 

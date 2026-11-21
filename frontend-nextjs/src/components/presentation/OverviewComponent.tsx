@@ -115,16 +115,14 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
                       <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NotebookLM Gemini Video Lesson'}</h4>
                       <p className="text-xs text-teal-200/80 font-medium">Protected Interactive Google NotebookLM Studio Lesson</p>
                     </div>
-                    <button
-                      onClick={() => {
-                        if (unmaskedUrl) {
-                          window.open(unmaskedUrl, '_blank', 'noopener,noreferrer');
-                        }
-                      }}
+                    <a
+                      href={`/studio/${maskedToken}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
                     >
                       <span>Launch Studio Video Lesson 🔒 ↗</span>
-                    </button>
+                    </a>
                   </div>
                 ) : isYoutube ? (
                   <iframe
