@@ -1,0 +1,180 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Electricity: Circuits and their Components",
+  "zero_omission_notes": {
+    "summary": "Electric circuits require a continuous closed path for current to flow from a source of electrical energy (cell/battery) through conductors to electrical devices (bulbs, LEDs). An electric cell has a positive (+ cap) and negative (- disc) terminal. Connecting cells positive-to-negative in series creates a battery. Circuit diagrams use universally standardized symbols. Incandescent bulbs rely on a glowing heated filament, while Light Emitting Diodes (LEDs) emit light efficiently when current flows in one specific direction (longer lead = positive, shorter lead = negative).",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "3.1 & 3.2 Torchlight, Electric Cell, and Battery",
+        "full_notes": "A torch comprises a bulb, reflector, switch, and electric cells enclosed in a body. Electric cells convert chemical energy into electrical energy. Connecting the positive terminal of one cell to the negative terminal of another forms a battery. Reversing terminal orientation breaks current flow.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Did You Know?",
+            "title": "International Circuit Standardization",
+            "content": "Global engineering bodies (IEC, ANSI, IEEE) standardized circuit schematic symbols so technical blueprints can be universally read across all countries."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "3.3 Circuit Diagrams and LED Properties",
+        "full_notes": "A circuit diagram represents components using symbols: long thin line = positive cell terminal; short thick line = negative terminal. An LED has two unequal leads; current flows only when the longer lead connects to the positive supply and shorter lead to negative supply.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Caution",
+            "title": "LED Polarity Warning",
+            "content": "Connecting an LED in reverse polarity blocks current flow entirely, preventing light emission and potentially damaging sensitive components."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "Activity 3.8",
+      "aim_or_objective": "To construct a simple functional switch using safety pins and drawing pins.",
+      "materials_or_prerequisites": [
+        "Two metal drawing pins",
+        "One metal safety pin",
+        "Connecting copper wires",
+        "Cardboard base",
+        "Electric cell",
+        "Torch bulb"
+      ],
+      "procedure_or_steps": [
+        "Insert one drawing pin through the ring end of a safety pin and press into cardboard.",
+        "Fix the second drawing pin on cardboard such that the free end of the safety pin can touch it.",
+        "Connect wires from the drawing pins to complete a circuit with a cell and bulb.",
+        "Rotate the safety pin to touch (ON) or leave a gap (OFF)."
+      ],
+      "observations_or_results": "When safety pin touches second drawing pin, circuit completes and bulb glows. When rotated away, gap breaks circuit and bulb turns off.",
+      "conclusion_or_principle": "A switch regulates current flow by closing or opening the electrical circuit gap."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig. 3.5 / Circuit Symbols Set",
+        "labels_and_components": [
+          "Cell (Long/Short line)",
+          "Battery",
+          "Bulb",
+          "LED (Triangle with arrows)",
+          "Switch ON/OFF",
+          "Wire"
+        ],
+        "drawing_or_reading_instructions": "Draw standard schematic symbols matching each electrical component.",
+        "structural_or_conceptual_explanation": "Provides standardized visual representation for designing and analyzing electric circuits."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Table 3.1 / Electrical Component Symbols and Functions",
+        "headers": [
+          "Component Name",
+          "Symbol Feature",
+          "Circuit Role"
+        ],
+        "rows": [
+          [
+            "Electric Cell",
+            "Parallel long thin (+) and short thick (-) lines",
+            "Provides voltage/chemical energy"
+          ],
+          [
+            "Battery",
+            "Multiple cell symbols joined in series",
+            "Provides higher combined voltage"
+          ],
+          [
+            "Bulb",
+            "Circle enclosing coiled filament loop",
+            "Converts electrical energy to light and heat"
+          ],
+          [
+            "LED",
+            "Triangle against bar with outward rays",
+            "Emits light efficiently with unidirectional current"
+          ],
+          [
+            "Switch",
+            "Hinged line touching or raised off contact pin",
+            "Opens or closes circuit path"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Electric Current Direction",
+      "definition_or_meaning": "Conventional current flows from the positive (+) terminal of the power source to the negative (-) terminal.",
+      "si_unit_or_notation": "Ampere (A)",
+      "example_or_application": "Flow of charge in closed cell-bulb circuit."
+    },
+    {
+      "term_or_concept": "LED (Light Emitting Diode)",
+      "definition_or_meaning": "A semiconductor light source that permits electric current flow in only one forward direction.",
+      "si_unit_or_notation": "Polarity: Anode (+), Cathode (-)",
+      "example_or_application": "Energy-efficient indicator lamps and displays."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Q7",
+        "question": "A student builds a simple circuit with a cell, switch, and bulb, but the bulb fails to glow when the switch is closed. List five potential faults.",
+        "answer": "1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "True/False",
+        "question": "Current flows through an LED regardless of which lead connects to the positive cell terminal.",
+        "options": [
+          "A) True",
+          "B) False"
+        ],
+        "answer": "B",
+        "explanation": "LEDs are unidirectional semiconductor devices that conduct current only in forward bias (longer lead to positive)."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Contrast incandescent bulbs and LEDs regarding energy efficiency and heat generation.",
+        "answer": "Incandescent bulbs generate light by heating a filament to high temperatures, wasting significant energy as heat. LEDs convert electrical energy directly into light with minimal heat waste."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Why must electric cells in a multi-cell torch be connected positive-terminal-to-negative-terminal?",
+        "answer": "Series connection (+ to -) combines the individual voltage potentials of the cells, driving sufficient electromotive force through the filament to produce bright light. Connecting like terminals (+ to +) cancels potential."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "Explain how an LED works, detail lead identification rules, and draw schematic circuit diagrams for functional (forward-biased) and non-functional (reverse-biased) LED circuits.",
+        "answer": "An LED is a polar semiconductor light source. Lead identification: Longer lead = Positive (+) Anode; Shorter lead = Negative (-) Cathode. Forward-Biased Circuit: Longer lead connected to cell positive terminal, shorter lead to switch and cell negative terminal; LED glows bright. Reverse-Biased Circuit: Longer lead connected to cell negative terminal; current is blocked and LED remains dark."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "An electrician uses rubber gloves and plastic-handled pliers while repairing household electrical switches.",
+        "qa": [
+          {
+            "question": "Why are rubber and plastic used on electrical repair tools?",
+            "answer": "Rubber and plastic are electrical insulators (poor conductors) that prevent electric current from flowing through the tools into the human body, preventing electric shocks."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Believing electric current is consumed or destroyed inside the bulb filament.",
+        "correct_fact_or_method": "Electric current is not consumed; electrical energy is converted into thermal and radiant light energy while charge continues flowing back to the negative terminal."
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "The Cherry Tree",
+  "drag_and_drop_unscramblers": [
+    {
+      "drill_id": "scramble_ch10",
+      "scrambled_tokens": [
+        "Tenali",
+        "outwitted",
+        "Rama",
+        "scholar",
+        "the",
+        "proud"
+      ],
+      "target_sentence": "Tenali Rama outwitted the proud scholar.",
+      "grammar_rule_hint": "Subject + Verb + Object word order."
+    }
+  ],
+  "multi_bin_sorting_matrices": [
+    {
+      "matrix_id": "sort_ch10",
+      "bins": [
+        "Nouns",
+        "Verbs",
+        "Adjectives"
+      ],
+      "draggable_items": [
+        {
+          "item": "courtier",
+          "correct_bin": "Nouns"
+        },
+        {
+          "item": "scrutinise",
+          "correct_bin": "Verbs"
+        },
+        {
+          "item": "arrogant",
+          "correct_bin": "Adjectives"
+        }
+      ]
+    }
+  ],
+  "editing_checkers": [
+    {
+      "checker_id": "edit_ch10",
+      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
+      "identified_errors": [
+        "cleverer -> clever / most clever"
+      ],
+      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
+      "rule_applied": "Superlative degree comparison requires 'the most'."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "img_ch10_cherry",
+    "title": "Growth Resilience Lifecycle of Rakesh's Cherry Tree",
+    "local_url": "/assets/images/ch10_cherry_tree_lifecycle.png",
+    "aspect_ratio": "16:9",
+    "description": "Chronological stages of survival and growth from seed to blossoming tree in Mussoorie",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_10_1",
+        "label": "Planted Seed",
+        "x_percent": 12.0,
+        "y_percent": 50.0,
+        "w_percent": 14.0,
+        "h_percent": 14.0,
+        "annotation": "Rakesh pressing seed into soft garden soil"
+      },
+      {
+        "hotspot_id": "hs_10_2",
+        "label": "Goat Damage",
+        "x_percent": 31.0,
+        "y_percent": 50.0,
+        "w_percent": 14.0,
+        "h_percent": 14.0,
+        "annotation": "Browsed by stray goat in early spring"
+      },
+      {
+        "hotspot_id": "hs_10_3",
+        "label": "Scythe Cut",
+        "x_percent": 50.0,
+        "y_percent": 50.0,
+        "w_percent": 14.0,
+        "h_percent": 14.0,
+        "annotation": "Cut in two by grass-cutter's blade"
+      },
+      {
+        "hotspot_id": "hs_10_4",
+        "label": "Himalayan Frost",
+        "x_percent": 69.0,
+        "y_percent": 50.0,
+        "w_percent": 14.0,
+        "h_percent": 14.0,
+        "annotation": "Winter frost dormancy in Mussoorie"
+      },
+      {
+        "hotspot_id": "hs_10_5",
+        "label": "Pink Blossoms",
+        "x_percent": 88.0,
+        "y_percent": 50.0,
+        "w_percent": 14.0,
+        "h_percent": 14.0,
+        "annotation": "Blossoming tree bringing awe to Rakesh"
+      }
+    ]
+  }
+}

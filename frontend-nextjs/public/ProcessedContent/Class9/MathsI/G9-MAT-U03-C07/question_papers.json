@@ -1,0 +1,565 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
+  "image_asset": {
+    "local_url": "/assets/images/ch7_probability_tree.png",
+    "title": "Tree diagram for 2-coin tosses and geometric probability target board."
+  },
+  "question_papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Probability, Sample Spaces & Geometric Chance",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 7 Set 1.",
+        "diagram_url": "/assets/images/ch7_probability_tree.png",
+        "hotspots": [
+          {
+            "id": "hs_tree_branches",
+            "label": "Coin Tree Branches",
+            "x_percent": 30.0,
+            "y_percent": 45.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
+          },
+          {
+            "id": "hs_target_circle",
+            "label": "Geometric Target Ring",
+            "x_percent": 75.0,
+            "y_percent": 45.0,
+            "w_percent": 18.0,
+            "h_percent": 18.0,
+            "tooltip": "Ratio of target circle area to enclosing square board area."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which value CANNOT represent the probability of an event?",
+              "options": [
+                "A) 0.0",
+                "B) 2/3",
+                "C) -1.5",
+                "D) 15%"
+              ],
+              "correct_answer": "C) -1.5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "options": [
+                "A) 0.35",
+                "B) 0.65",
+                "C) 1.35",
+                "D) 0.0"
+              ],
+              "correct_answer": "B) 0.65",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A dartboard is a square of side 20 cm containing a target circle of radius 7 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+              "marking_scheme_answer": "(i) Square Area = 400 sq cm. Circle Area = (22/7)*(7)^2 = 154 sq cm.\n(ii) P(Hit) = 154 / 400 = 154/400 = 77/200 = 0.385.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Probability, Sample Spaces & Geometric Chance",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 7 Set 2.",
+        "diagram_url": "/assets/images/ch7_probability_tree.png",
+        "hotspots": [
+          {
+            "id": "hs_tree_branches",
+            "label": "Coin Tree Branches",
+            "x_percent": 30.0,
+            "y_percent": 45.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
+          },
+          {
+            "id": "hs_target_circle",
+            "label": "Geometric Target Ring",
+            "x_percent": 75.0,
+            "y_percent": 45.0,
+            "w_percent": 18.0,
+            "h_percent": 18.0,
+            "tooltip": "Ratio of target circle area to enclosing square board area."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which value CANNOT represent the probability of an event?",
+              "options": [
+                "A) 0.0",
+                "B) 2/3",
+                "C) -1.5",
+                "D) 15%"
+              ],
+              "correct_answer": "C) -1.5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "options": [
+                "A) 0.35",
+                "B) 0.65",
+                "C) 1.35",
+                "D) 0.0"
+              ],
+              "correct_answer": "B) 0.65",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A dartboard is a square of side 40 cm containing a target circle of radius 14 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+              "marking_scheme_answer": "(i) Square Area = 1600 sq cm. Circle Area = (22/7)*(14)^2 = 616 sq cm.\n(ii) P(Hit) = 616 / 1600 = 154/400 = 77/200 = 0.385.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Probability, Sample Spaces & Geometric Chance",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 7 Set 3.",
+        "diagram_url": "/assets/images/ch7_probability_tree.png",
+        "hotspots": [
+          {
+            "id": "hs_tree_branches",
+            "label": "Coin Tree Branches",
+            "x_percent": 30.0,
+            "y_percent": 45.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
+          },
+          {
+            "id": "hs_target_circle",
+            "label": "Geometric Target Ring",
+            "x_percent": 75.0,
+            "y_percent": 45.0,
+            "w_percent": 18.0,
+            "h_percent": 18.0,
+            "tooltip": "Ratio of target circle area to enclosing square board area."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which value CANNOT represent the probability of an event?",
+              "options": [
+                "A) 0.0",
+                "B) 2/3",
+                "C) -1.5",
+                "D) 15%"
+              ],
+              "correct_answer": "C) -1.5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "options": [
+                "A) 0.35",
+                "B) 0.65",
+                "C) 1.35",
+                "D) 0.0"
+              ],
+              "correct_answer": "B) 0.65",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A dartboard is a square of side 60 cm containing a target circle of radius 21 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+              "marking_scheme_answer": "(i) Square Area = 3600 sq cm. Circle Area = (22/7)*(21)^2 = 1386 sq cm.\n(ii) P(Hit) = 1386 / 3600 = 154/400 = 77/200 = 0.385.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Probability, Sample Spaces & Geometric Chance",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 7 Set 4.",
+        "diagram_url": "/assets/images/ch7_probability_tree.png",
+        "hotspots": [
+          {
+            "id": "hs_tree_branches",
+            "label": "Coin Tree Branches",
+            "x_percent": 30.0,
+            "y_percent": 45.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
+          },
+          {
+            "id": "hs_target_circle",
+            "label": "Geometric Target Ring",
+            "x_percent": 75.0,
+            "y_percent": 45.0,
+            "w_percent": 18.0,
+            "h_percent": 18.0,
+            "tooltip": "Ratio of target circle area to enclosing square board area."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which value CANNOT represent the probability of an event?",
+              "options": [
+                "A) 0.0",
+                "B) 2/3",
+                "C) -1.5",
+                "D) 15%"
+              ],
+              "correct_answer": "C) -1.5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "options": [
+                "A) 0.35",
+                "B) 0.65",
+                "C) 1.35",
+                "D) 0.0"
+              ],
+              "correct_answer": "B) 0.65",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A dartboard is a square of side 80 cm containing a target circle of radius 28 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+              "marking_scheme_answer": "(i) Square Area = 6400 sq cm. Circle Area = (22/7)*(28)^2 = 2464 sq cm.\n(ii) P(Hit) = 2464 / 6400 = 154/400 = 77/200 = 0.385.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Probability, Sample Spaces & Geometric Chance",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 7 Set 5.",
+        "diagram_url": "/assets/images/ch7_probability_tree.png",
+        "hotspots": [
+          {
+            "id": "hs_tree_branches",
+            "label": "Coin Tree Branches",
+            "x_percent": 30.0,
+            "y_percent": 45.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
+          },
+          {
+            "id": "hs_target_circle",
+            "label": "Geometric Target Ring",
+            "x_percent": 75.0,
+            "y_percent": 45.0,
+            "w_percent": 18.0,
+            "h_percent": 18.0,
+            "tooltip": "Ratio of target circle area to enclosing square board area."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which value CANNOT represent the probability of an event?",
+              "options": [
+                "A) 0.0",
+                "B) 2/3",
+                "C) -1.5",
+                "D) 15%"
+              ],
+              "correct_answer": "C) -1.5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "options": [
+                "A) 0.35",
+                "B) 0.65",
+                "C) 1.35",
+                "D) 0.0"
+              ],
+              "correct_answer": "B) 0.65",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
+              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
+              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
+              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
+              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A dartboard is a square of side 100 cm containing a target circle of radius 35 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
+              "marking_scheme_answer": "(i) Square Area = 10000 sq cm. Circle Area = (22/7)*(35)^2 = 3850 sq cm.\n(ii) P(Hit) = 3850 / 10000 = 154/400 = 77/200 = 0.385.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

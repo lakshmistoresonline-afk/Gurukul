@@ -1,0 +1,180 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Introduction to Linear Polynomials",
+  "zero_omission_notes": {
+    "summary": "This chapter introduces algebraic expressions, univariate polynomials, and specifically linear polynomials of degree 1. It explores terms, coefficients, degree, constant polynomials, linear growth, and linear decay through practical contexts like tile patterns, monthly billing, and physical measurements. The chapter details the graphical representation of linear relationships as straight lines of the form y = ax + b, explaining slope (a) and y-intercept (b), parallel line families, and linear functions.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "2.1 Algebraic Expressions & Polynomial Anatomy",
+        "full_notes": "An algebraic expression combines constants and variables using addition, subtraction, multiplication, and division. A polynomial in variable x contains terms of form c * x^n where n is a non-negative integer. Degree is the highest power of variable.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Definition",
+            "title": "Linear Polynomial",
+            "content": "A polynomial of degree 1, represented as p(x) = ax + b, where a != 0 and a, b are real numbers."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "2.2 Linear Growth, Decay, and Tabular Patterns",
+        "full_notes": "Linear growth occurs when a quantity increases by a constant amount 'a' for every unit increase in x (e.g., taxi fares, cell phone plans). Linear decay occurs when a quantity decreases uniformly (e.g., draining water tank, battery discharge).",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Key Feature",
+            "title": "Constant First Difference",
+            "content": "In a linear relationship table with equal x-intervals, the difference between consecutive y-values is constant."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "2.3 Graphing Linear Functions: Slope and Intercept",
+        "full_notes": "The graph of y = ax + b is always a straight line. Slope 'a' measures steepness (rise over run). If a > 0, the line slants upward; if a < 0, it slants downward. The y-intercept 'b' is the point (0, b) where line crosses the vertical axis.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Property",
+            "title": "Parallel Lines",
+            "content": "Lines with identical slope 'a' but different y-intercepts 'b' are parallel and never intersect."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-2.1",
+      "aim_or_objective": "Plotting Linear Equations on Graph Paper",
+      "materials_or_prerequisites": [
+        "Graph paper",
+        "Ruler",
+        "Pencil"
+      ],
+      "procedure_or_steps": [
+        "Create input-output table for x = -1, 0, 1, 2, 3.",
+        "Calculate y-values for y = 2x - 3: y(-1) = -5, y(0) = -3, y(1) = -1, y(2) = 1, y(3) = 3.",
+        "Plot points on Cartesian plane.",
+        "Use ruler to draw a straight line passing through all points."
+      ],
+      "observations_or_results": "All points lie on a straight line crossing y-axis at -3.",
+      "conclusion_or_principle": "Linear polynomials p(x) = ax + b always graph as straight lines."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 2.1: Graph of y = ax + b showing Slope and Intercept",
+        "labels_and_components": [
+          "y-axis",
+          "x-axis",
+          "y-intercept (0,b)",
+          "Rise",
+          "Run",
+          "Line y = ax + b"
+        ],
+        "drawing_or_reading_instructions": "Draw coordinate axes. Plot a line cutting vertical axis at (0,b). Indicate right triangle showing rise and run.",
+        "structural_or_conceptual_explanation": "Slope = Rise / Run = a."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Linear Growth vs Linear Decay",
+        "headers": [
+          "Feature",
+          "Linear Growth",
+          "Linear Decay"
+        ],
+        "rows": [
+          [
+            "Sign of Slope 'a'",
+            "Positive (a > 0)",
+            "Negative (a < 0)"
+          ],
+          [
+            "Graph Trend",
+            "Slants upward",
+            "Slants downward"
+          ],
+          [
+            "Example",
+            "Monthly savings",
+            "Water draining"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Linear Polynomial",
+      "definition_or_meaning": "A polynomial of degree 1 having general form p(x) = ax + b with a != 0.",
+      "si_unit_or_notation": "p(x) = ax + b",
+      "example_or_application": "p(x) = 3x - 7."
+    },
+    {
+      "term_or_concept": "Slope (a)",
+      "definition_or_meaning": "Rate of change of y with respect to x; a = delta_y / delta_x.",
+      "si_unit_or_notation": "Dimensionless ratio / rate",
+      "example_or_application": "Slope of y = 4x + 1 is 4."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 2.2 Q2",
+        "question": "Find the slope and y-intercept of the line 3x + 2y = 6.",
+        "answer": "Rearrange to y = (-3/2)x + 3. Slope = -3/2, y-intercept = 3."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which of the following represents a linear polynomial?",
+        "options": [
+          "A) 2x^2 + 3",
+          "B) 5/x + 1",
+          "C) 4x - 9",
+          "D) sqrt(x) + 2"
+        ],
+        "answer": "C",
+        "explanation": "A linear polynomial must have variable degree equal to 1 with non-negative integer exponent."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Check if the line y = 3x + 4 passes through the point (2, 10).",
+        "answer": "LHS y = 10; RHS = 3(2) + 4 = 10. LHS = RHS, so (2,10) lies on the line."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Why are two lines with equations y = 5x + 2 and y = 5x - 7 parallel?",
+        "answer": "Because both lines have identical slope a = 5 but different y-intercepts (2 and -7). Parallel lines never intersect."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "A taxi service charges a fixed flag-down fare of Rs. 50 plus Rs. 15 per kilometer traveled. Write equation and calculate fare for 12 km.",
+        "answer": "Equation: C(x) = 15x + 50. For x = 12 km, C(12) = 15(12) + 50 = 180 + 50 = Rs. 230."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "Two plants A and B are measured daily. Plant A height: H_A = 2d + 5 cm. Plant B height: H_B = 3d + 2 cm, where d is days.",
+        "qa": [
+          {
+            "question": "On which day will both plants have equal height?",
+            "answer": "Set 2d + 5 = 3d + 2 => d = 3 days. Height = 11 cm."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Confusing slope with y-intercept when equation is not in standard form ax + b.",
+        "correct_fact_or_method": "Always isolate y on LHS first to achieve y = ax + b form before reading slope 'a' and intercept 'b'."
+      }
+    ]
+  }
+}

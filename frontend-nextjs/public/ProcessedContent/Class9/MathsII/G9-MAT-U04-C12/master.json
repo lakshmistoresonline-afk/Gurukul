@@ -1,0 +1,167 @@
+{
+  "chapter_number": 12,
+  "chapter_title": "Quadrilaterals",
+  "zero_omission_notes": {
+    "summary": "This chapter covers planar quadrilaterals, proving parallelogram theorems and converses. It establishes the Midpoint Theorem for triangles, Centroid Theorem (2:1 median ratio), Varignon's Theorem (midpoints of any 4-gon form a parallelogram), and universal plane tiling.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "12.1 Parallelograms and Converses",
+        "full_notes": "A quadrilateral is a parallelogram iff opposite sides are equal, opposite angles are equal, or diagonals bisect each other.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Definition Box",
+            "title": "Convex Quadrilateral",
+            "content": "Internal angles < 180 degrees and diagonals intersect inside the figure."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "12.2 Midpoint Theorem & Centroid",
+        "full_notes": "Line segment joining midpoints of two triangle sides is parallel to 3rd side and half its length. Medians intersect at centroid G in a 2:1 ratio.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Theorem Box",
+            "title": "Varignon's Theorem",
+            "content": "Midpoints of adjacent sides of ANY quadrilateral form a parallelogram."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT_12_01",
+      "aim_or_objective": "Verify that paper fold crease at midpoints is parallel to base and half as long.",
+      "materials_or_prerequisites": [
+        "Paper triangle cutout ABC"
+      ],
+      "procedure_or_steps": [
+        "Fold vertex A down to touch vertex B.",
+        "Crease sharply across sides AB and AC.",
+        "Unfold and measure crease line length and angle relative to base BC."
+      ],
+      "observations_or_results": "Crease line connects midpoints, measures half BC length, and is parallel to BC.",
+      "conclusion_or_principle": "Confirms the Midpoint Theorem experimentally."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 12.21: Varignon Parallelogram of Quadrilateral ABCD",
+        "labels_and_components": [
+          "Vertices A, B, C, D",
+          "Midpoints P, Q, R, S",
+          "Diagonals AC, BD"
+        ],
+        "drawing_or_reading_instructions": "Draw general quadrilateral ABCD, mark midpoints P, Q, R, S and connect to form PQRS.",
+        "structural_or_conceptual_explanation": "PQ || AC and SR || AC implies PQ || SR, forming parallelogram."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Diagonal Properties of Quadrilaterals",
+        "headers": [
+          "Type",
+          "Diagonals Equal?",
+          "Diagonals Perpendicular?",
+          "Diagonals Bisect?"
+        ],
+        "rows": [
+          [
+            "Parallelogram",
+            "Not necessarily",
+            "Not necessarily",
+            "Yes"
+          ],
+          [
+            "Rectangle",
+            "Yes",
+            "Not necessarily",
+            "Yes"
+          ],
+          [
+            "Rhombus",
+            "Not necessarily",
+            "Yes",
+            "Yes"
+          ],
+          [
+            "Square",
+            "Yes",
+            "Yes",
+            "Yes"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Centroid Section Ratio",
+      "definition_or_meaning": "AG : GR = 2 : 1 where G is centroid and R is midpoint of BC",
+      "si_unit_or_notation": "AG : GR = 2 : 1",
+      "example_or_application": "If median AR = 9 cm, AG = 6 cm and GR = 3 cm."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 12.1 Q4",
+        "question": "In parallelogram ABCD, DP = BQ on diagonal BD. Show APCQ is a parallelogram.",
+        "answer": "Triangle ADP congruent to CBQ (SAS). Thus AP = CQ and AP || CQ. Opposite sides equal and parallel implies APCQ is a parallelogram."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Midpoints of sides of ANY quadrilateral connected in order form a:",
+        "options": [
+          "A) Rectangle",
+          "B) Rhombus",
+          "C) Parallelogram",
+          "D) Trapezium"
+        ],
+        "answer": "C",
+        "explanation": "By Varignon's theorem, connecting midpoints always forms a parallelogram."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "In triangle ABC, DE = (x + 3) cm joins midpoints AB and AC. If BC = (3x - 2) cm, find x and BC.",
+        "answer": "DE = 1/2 BC => 2(x + 3) = 3x - 2 => 2x + 6 = 3x - 2 => x = 8. BC = 3(8) - 2 = 22 cm."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Prove that joining the midpoints of a rhombus forms a rectangle.",
+        "answer": "In a rhombus, diagonals AC and BD are perpendicular. The Varignon parallelogram sides are parallel to AC and BD, so adjacent sides meet at 90 degrees, forming a rectangle."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "State and prove the Midpoint Theorem for triangles.",
+        "answer": "Statement: Line joining midpoints of two sides is parallel to 3rd side and half its length. Proof: Extend DE to F such that DE = EF. Triangle ADE congruent to CFE (SAS). AD = CF and AD || CF => DB = CF and DB || CF. DBCF is parallelogram, so DF || BC and DE = 1/2 BC."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "An architect tiles a ceramic floor using irregular 4-gon tiles.",
+        "qa": [
+          {
+            "question": "Why do the tiles fit together without gaps?",
+            "answer": "Four tiles meet at each vertex, bringing together angles summing to 360 degrees."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Assuming the Varignon parallelogram of a rhombus is another rhombus.",
+        "correct_fact_or_method": "Remember midpoint figure of rhombus is a RECTANGLE because rhombus diagonals are perpendicular."
+      }
+    ]
+  }
+}

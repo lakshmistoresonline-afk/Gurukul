@@ -1,0 +1,88 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Circles",
+  "mind_map": {
+    "root_topic": "Circles",
+    "branches": [
+      {
+        "theme": "Tangents to a Circle and Properties",
+        "sub_branches": [
+          {
+            "concept": "Radius-Tangent Perpendicularity",
+            "details": [
+              "A tangent to a circle touches the curve at exactly one point (point of contact).",
+              "Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through the point of contact (OP ⊥ XY)."
+            ],
+            "evidence_or_examples": [
+              "From Q, tangent length = 24 cm, distance from center = 25 cm => radius r = √(25^2 - 24^2) = 7 cm.",
+              "Tangents drawn at the ends of a diameter are parallel because interior angles on same side sum to 180°."
+            ],
+            "key_terms": [
+              "Tangent",
+              "Point of Contact",
+              "Theorem 10.1",
+              "Perpendicularity"
+            ]
+          },
+          {
+            "concept": "Tangents from an External Point",
+            "details": [
+              "Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal (PQ = PR).",
+              "Tangents subtend equal angles at center and are equally inclined to line joining point to center."
+            ],
+            "evidence_or_examples": [
+              "Parallelogram circumscribing a circle is a rhombus (AB + CD = AD + BC => AB = AD).",
+              "Concentric circles: chord of larger touching smaller is bisected at point of contact."
+            ],
+            "key_terms": [
+              "Theorem 10.2",
+              "External Point",
+              "Equal Tangent Lengths",
+              "Circumscribed Figures"
+            ]
+          }
+        ]
+      }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_10_root",
+      "label": "Circles",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_10_b1",
+          "label": "Tangents to a Circle and Properties",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Tangents to a Circle and Properties",
+          "children": [
+            {
+              "id": "node_10_c2",
+              "label": "Radius-Tangent Perpendicularity",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Radius-Tangent Perpendicularity",
+              "details": [
+                "A tangent to a circle touches the curve at exactly one point (point of contact).",
+                "Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through the point of contact (OP ⊥ XY)."
+              ]
+            },
+            {
+              "id": "node_10_c3",
+              "label": "Tangents from an External Point",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Tangents from an External Point",
+              "details": [
+                "Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal (PQ = PR).",
+                "Tangents subtend equal angles at center and are equally inclined to line joining point to center."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Circles]\n  Root --> B_2[Tangents to a Circle and Properties]\n  B_2 --> C_3[Radius-Tangent Perpendicularity]\n  B_3 --> C_4[Tangents from an External Point]"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "A Peek Beyond the Point",
+  "detailed_sections": [
+    {
+      "section": "3.1 Concept of Tenths and Hundredths",
+      "full_notes": "When 1 unit is divided into 10 equal parts, each part is one-tenth (1/10 or 0.1). When one-tenth is divided into 10 equal parts, each part is one-hundredth (1/100 or 0.01). Place values to the right of the decimal point are Tenths, Hundredths, Thousandths.",
+      "margin_notes": [
+        {
+          "type": "Did You Know?",
+          "title": "Decimal Point",
+          "content": "The dot '.' separates whole units on the left from fractional place values on the right."
+        }
+      ]
+    },
+    {
+      "section": "3.2 Decimal Place Value Chart & Conversions",
+      "full_notes": "A number like 3.47 equals 3 ones + 4 tenths + 7 hundredths = 3 + 4/10 + 7/100. Money conversion: 1 Rupee = 100 Paise, so 1 Paise = ₹0.01. Length conversion: 1 cm = 10 mm, so 1 mm = 0.1 cm; 1 m = 1000 mm, 1 km = 1,000,000 mm.",
+      "margin_notes": [
+        {
+          "type": "Try These",
+          "title": "Money in Decimals",
+          "content": "50 p = ₹0.50, 99 p = ₹0.99, 250 p = ₹2.50."
+        }
+      ]
+    },
+    {
+      "section": "3.3 Operations on Decimals",
+      "full_notes": "Adding and subtracting decimals requires aligning decimal points vertically so identical place values (ones, tenths, hundredths) are operated together. Equivalent decimals (0.2 = 0.20 = 0.200) allow filling trailing zeros for alignment.",
+      "margin_notes": [
+        {
+          "type": "Key Principle",
+          "title": "Alignment",
+          "content": "Always align the decimal points before adding or subtracting."
+        }
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "title": "Decimal Place Value Table",
+      "headers": [
+        "Decimal",
+        "Tens (10)",
+        "Ones (1)",
+        "Tenths (1/10)",
+        "Hundredths (1/100)",
+        "Thousandths (1/1000)"
+      ],
+      "rows": [
+        [
+          "0.2",
+          "0",
+          "0",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0.20",
+          "0",
+          "0",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "15.27",
+          "1",
+          "5",
+          "2",
+          "7",
+          "0"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "speaker": "Rahul",
+      "role": "Student",
+      "speech_text": "Why is 0.2 larger than 0.09 when 9 is bigger than 2?"
+    },
+    {
+      "speaker": "Priya",
+      "role": "Student",
+      "speech_text": "Because 0.2 is 2 tenths (20 hundredths), while 0.09 is only 9 hundredths!"
+    },
+    {
+      "speaker": "Teacher",
+      "role": "Mentor",
+      "speech_text": "Exactly. Compare place values from left to right starting at tenths."
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch3",
+      "title": "Millimeter Scale Magnifier",
+      "concept": "Visualizing sub-unit tenths and hundredths",
+      "interactive_controls": [
+        "Zoom Slider",
+        "Object Measurement Bar"
+      ],
+      "procedure_steps": [
+        "Align eraser start to 0",
+        "Observe whole centimeters",
+        "Count 4 millimeter ticks"
+      ],
+      "expected_outcome": "Eraser length recorded as 2.4 cm (2 cm 4 mm)."
+    }
+  ],
+  "formula_rule_engines": [
+    {
+      "engine_id": "eng_ch3",
+      "rule_name": "Decimal Equivalent & Conversion Engine",
+      "formula": "1 mm = 0.1 cm; 1 Paise = ₹0.01",
+      "input_variables": [
+        "mm",
+        "Paise"
+      ],
+      "computed_expression": "Divide mm by 10; divide Paise by 100",
+      "example_demonstration": "Input 45 Paise => ₹0.45; Input 15 mm => 1.5 cm"
+    },
+    {
+      "engine_id": "eng_ch3_decimal_precision",
+      "rule_name": "Decimal Precision & Terminating Criterion Engine",
+      "formula": "a/b terminates iff prime factors of b are in {2, 5}",
+      "input_variables": [
+        "a",
+        "b"
+      ],
+      "computed_expression": "Base 10 factors 2 and 5 dictate finite decimal places; other primes yield repeating decimals",
+      "example_demonstration": "3/8 = 3/(2^3) = 0.375 (terminates); 1/3 = 0.333... (repeating)"
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch3_decimals_measurement_grid",
+    "chapter_number": 3,
+    "chapter_title": "A Peek Beyond the Point",
+    "title": "Decimals Sub-Unit Measurement & Equivalent Grid Diagram",
+    "file_name": "ch3_decimals_measurement_grid.png",
+    "local_url": "/assets/images/ch3_decimals_measurement_grid.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Ruler millimeter subdivisions, expanded decimal place value grid, unit conversions, and column alignment.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_3_1",
+        "title": "Millimeter Subdivisions",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "1 cm = 10 mm => 1 mm = 0.1 cm. Sub-unit subdivisions allow measuring exact fractional lengths."
+      },
+      {
+        "hotspot_id": "hs_3_2",
+        "title": "Expanded Decimal Grid",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Place values right of decimal: Tenths (0.1), Hundredths (0.01), Thousandths (0.001)."
+      },
+      {
+        "hotspot_id": "hs_3_3",
+        "title": "Currency & Unit Conversions",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "1 Rupee = 100 Paise => 1 Paise = ₹0.01 (45 p = ₹0.45). 1 km = 1,000,000 mm."
+      },
+      {
+        "hotspot_id": "hs_3_4",
+        "title": "Equivalent Decimals & Alignment",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Trailing zeros do not alter value: 0.2 = 0.20 = 0.200. Always align decimal points vertically."
+      }
+    ]
+  }
+}

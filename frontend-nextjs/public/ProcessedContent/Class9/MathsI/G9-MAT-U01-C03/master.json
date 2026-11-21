@@ -1,0 +1,186 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "The World of Numbers",
+  "zero_omission_notes": {
+    "summary": "This chapter builds the real number system R from natural numbers N, whole numbers W, integers Z, rational numbers Q, to irrational numbers Q'. It covers the density property of rational numbers, decimal expansion signatures (terminating/non-terminating repeating vs non-terminating non-repeating), cyclic decimal patterns (1/7 = 0.142857...), mathematical proofs of irrationality (sqrt(2), sqrt(3)), square root spiral (Wheel of Theodorus), Indian mathematical achievements (Mādhava's infinite series for pi), and an introduction to imaginary numbers.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "3.1 Hierarchy of Number Sets & Continuous Number Line",
+        "full_notes": "Numbers evolved from counting tallies to natural numbers N, zero insertion for whole numbers W, negative integers for debts Z, ratios of integers p/q (q != 0) for rational numbers Q, and non-repeating decimals for irrational numbers Q'. Real numbers R fill every point on continuous number line.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Historical Note",
+            "title": "Indian Mathematical Heritage",
+            "content": "Zero was conceptualized as a mathematical entity in Bhārat (Brāhmasphuṭasiddhānta by Brahmagupta, 628 CE), enabling place-value numeration."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "3.2 Decimal Expansion of Real Numbers",
+        "full_notes": "Rational numbers p/q yield decimal expansions that either terminate (denominator prime factors purely 2^m * 5^n) or recur in repeating blocks (non-terminating periodic). Irrational numbers have non-terminating, non-repeating decimal expansions.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Curiosity Box",
+            "title": "Cyclic Decimals of 1/7",
+            "content": "1/7 = 0.142857142857... The repeating block 142857 rotates cyclically for multiples 2/7, 3/7, 4/7, 5/7, 6/7!"
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "3.3 Proof of Irrationality & Square Root Spiral",
+        "full_notes": "Irrationality of sqrt(2) is proven by contradiction using prime factor parity. Geometric representation of sqrt(n) on number line is constructed sequentially using right-angled triangles in a Square Root Spiral.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Mathematical Note",
+            "title": "Mādhava's Series for Pi",
+            "content": "Mādhava of Saṅgamagrāma (14th century) derived infinite series pi/4 = 1 - 1/3 + 1/5 - 1/7 + ..., centuries before European calculus."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-3.1",
+      "aim_or_objective": "Constructing Square Root Spiral (Wheel of Theodorus)",
+      "materials_or_prerequisites": [
+        "Drawing sheet",
+        "Protractor",
+        "Ruler",
+        "Compass"
+      ],
+      "procedure_or_steps": [
+        "Draw isosceles right triangle O P0 P1 with legs O P0 = 1 unit and P0 P1 = 1 unit perpendicular.",
+        "Hypotenuse O P1 = sqrt(1^2 + 1^2) = sqrt(2).",
+        "At P1, erect perpendicular P1 P2 of unit length 1.",
+        "Connect O to P2. New hypotenuse O P2 = sqrt((sqrt(2))^2 + 1^2) = sqrt(3).",
+        "Repeat process to generate consecutive square roots."
+      ],
+      "observations_or_results": "A spiral pattern unfolds where hypotenuses measure sqrt(2), sqrt(3), sqrt(4)=2, sqrt(5)...",
+      "conclusion_or_principle": "Every square root of a non-perfect square can be represented geometrically as an exact physical length."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 3.1: Venn Diagram of Real Number System",
+        "labels_and_components": [
+          "Real Numbers R",
+          "Rational Numbers Q",
+          "Integers Z",
+          "Whole Numbers W",
+          "Natural Numbers N",
+          "Irrational Numbers Q'"
+        ],
+        "drawing_or_reading_instructions": "Draw outer box for Real Numbers R. Place Irrational Q' on left side. On right, draw nested circles: N inside W inside Z inside Q.",
+        "structural_or_conceptual_explanation": "N subset of W subset of Z subset of Q subset of R. Q union Q' = R."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Classification of Decimal Expansions",
+        "headers": [
+          "Type of Expansion",
+          "Nature of Decimal",
+          "Number Category",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Terminating",
+            "Finishes after finite digits",
+            "Rational (Q)",
+            "7/8 = 0.875"
+          ],
+          [
+            "Non-terminating Repeating",
+            "Infinite with recurring block",
+            "Rational (Q)",
+            "1/3 = 0.333..."
+          ],
+          [
+            "Non-terminating Non-repeating",
+            "Infinite without repeating block",
+            "Irrational (Q')",
+            "sqrt(2) = 1.414213..."
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Rational Number",
+      "definition_or_meaning": "Any number that can be expressed as p/q where p, q are integers and q != 0.",
+      "si_unit_or_notation": "Q = {p/q : p,q in Z, q != 0}",
+      "example_or_application": "-3/4, 0.35, 5."
+    },
+    {
+      "term_or_concept": "Irrational Number",
+      "definition_or_meaning": "A real number that cannot be written as a ratio of integers; non-terminating and non-repeating decimal.",
+      "si_unit_or_notation": "Q' = R \\ Q",
+      "example_or_application": "sqrt(2), pi, e."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 3.1 Q4",
+        "question": "Express 0.2353535... in p/q form.",
+        "answer": "Let x = 0.2353535... 10x = 2.353535... 1000x = 235.353535... Subtract: 990x = 233 => x = 233 / 990."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which of the following numbers is irrational?",
+        "options": [
+          "A) sqrt(81)",
+          "B) 0.141414...",
+          "C) 22/7",
+          "D) sqrt(7)"
+        ],
+        "answer": "D",
+        "explanation": "7 is not a perfect square, so sqrt(7) is non-terminating and non-repeating (irrational)."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Insert two rational numbers between 1/3 and 1/2.",
+        "answer": "Convert to common denominator 24: 1/3 = 8/24, 1/2 = 12/24. Rationals are 9/24 (3/8) and 10/24 (5/12)."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Prove that 3 + 2*sqrt(5) is irrational given that sqrt(5) is irrational.",
+        "answer": "Assume r = 3 + 2*sqrt(5) is rational. Then sqrt(5) = (r - 3)/2. Since r is rational, (r-3)/2 must be rational, contradicting irrationality of sqrt(5)."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "Prove by contradiction that sqrt(2) is an irrational number.",
+        "answer": "1. Assume sqrt(2) = p/q where p, q in Z, q != 0, and gcd(p,q) = 1.\n2. Squaring gives 2 = p^2 / q^2 => p^2 = 2q^2. Thus p^2 is even, so p is even (p = 2k).\n3. Substitute p = 2k: (2k)^2 = 2q^2 => 4k^2 = 2q^2 => q^2 = 2k^2. Thus q^2 is even, so q is even.\n4. This implies both p and q are even, contradicting gcd(p,q) = 1.\n5. Therefore, sqrt(2) must be irrational."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "A computer simulator calculates physical distances using floating point binary representations, converting fractional decimals.",
+        "qa": [
+          {
+            "question": "Why cannot 1/3 be stored with absolute exactness in a finite decimal float?",
+            "answer": "Because 1/3 has a non-terminating infinite repeating decimal expansion (0.333...) which gets truncated."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Assuming 22/7 is the exact value of pi.",
+        "correct_fact_or_method": "22/7 is a rational approximation (0.142857...). Pi is an irrational transcendental number (3.14159265...)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "How Quantities Combine: Understanding Data",
+  "flashcards": [
+    {
+      "card_id": 1,
+      "level": "Basic Recall",
+      "front_question": "What is the formula for calculating the weighted mean x_bar of n groups with values x_i and corresponding weights w_i?",
+      "back_answer": "x_bar = (w1*x1 + w2*x2 + ... + wn*xn) / (w1 + w2 + ... + wn) = sum(w_i * x_i) / sum(w_i)."
+    },
+    {
+      "card_id": 2,
+      "level": "Basic Recall",
+      "front_question": "What is the key visual feature of a 100% stacked bar chart?",
+      "back_answer": "All stacked bars are scaled to an identical overall height representing 100%, with internal segments showing relative percentage proportions rather than absolute values."
+    },
+    {
+      "card_id": 3,
+      "level": "Conceptual Understanding",
+      "front_question": "Why does taking a simple unweighted average of group percentages yield mathematically incorrect results when combining groups of unequal sizes?",
+      "back_answer": "A simple average treats all groups as having equal weight regardless of size. Larger groups contribute more total individual items, so their values must be weighted proportionally to accurately reflect the overall population mean."
+    },
+    {
+      "card_id": 4,
+      "level": "Conceptual Understanding",
+      "front_question": "When should an analyst choose a standard stacked bar chart over a 100% stacked bar chart?",
+      "back_answer": "A standard stacked bar chart should be used when comparing absolute total magnitudes alongside component sub-totals. A 100% stacked bar chart is preferred when comparing relative percentage allocations independent of group size."
+    },
+    {
+      "card_id": 5,
+      "level": "Experimental/Observational Insights",
+      "front_question": "When mixing 200 kg of 70% brass alloy (Batch A) with 120 kg of 50% brass alloy (Batch B) and y kg of 45% brass alloy (Batch C) to achieve a 55% final mixture, what equation determines y?",
+      "back_answer": "The concentration weighted equation: 0.70(200) + 0.50(120) + 0.45(y) = 0.55(200 + 120 + y), which simplifies to 140 + 60 + 0.45y = 176 + 0.55y => 0.10y = 24 => y = 240 kg."
+    },
+    {
+      "card_id": 6,
+      "level": "Scientific Reasoning & Application",
+      "front_question": "A student scores 85% on assignments (weight 30%), 75% on midterm (weight 20%), and 90% on final exam (weight 50%). Calculate their overall weighted score.",
+      "back_answer": "Weighted Score = (0.30 * 85) + (0.20 * 75) + (0.50 * 90) = 25.5 + 15.0 + 45.0 = 85.5%."
+    },
+    {
+      "card_id": 7,
+      "level": "Scientific Reasoning & Application",
+      "front_question": "Explain Simpson's Paradox and how unequal group weighting causes overall aggregated trends to reverse.",
+      "back_answer": "Simpson's Paradox occurs when a statistical trend present in several distinct subgroups disappears or reverses when the groups are aggregated together. It is caused by severe disparities in subgroup sample sizes (weights) skewing the combined weighted average."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Parallel and Intersecting Lines",
+  "detailed_sections": [
+    {
+      "section": "5.1 Intersecting Lines and Angle Relationships",
+      "full_notes": "Two distinct lines on a plane intersect at at most one point. When two lines intersect, four angles are formed. Key properties:\n1. Vertically Opposite Angles are equal: angle a = angle c and angle b = angle d.\n2. Linear Pairs: Adjacent angles on a straight line add up to 180 degrees (supplementary): angle a + angle b = 180, angle b + angle c = 180.",
+      "margin_notes": [
+        {
+          "type": "Did You Know?",
+          "title": "Uniqueness of Intersection",
+          "content": "Two non-coincident straight lines can never intersect at more than one point."
+        }
+      ]
+    },
+    {
+      "section": "5.2 Parallel and Perpendicular Lines",
+      "full_notes": "Parallel lines lie in the same plane and never intersect, no matter how far extended in either direction. The perpendicular distance between parallel lines is constant throughout. Perpendicular lines intersect at right angles (90 degrees).",
+      "margin_notes": [
+        {
+          "type": "Try These",
+          "title": "Grid Identification",
+          "content": "Identify parallel line pairs drawn on dot grid paper."
+        }
+      ]
+    },
+    {
+      "section": "5.3 Paper Folding Explorations",
+      "full_notes": "Folding a square paper in half creates a crease parallel to top/bottom edges. Subsequent parallel folds double the number of parallel line segments created. Folding perpendicular to horizontal creases forms a grid of right angles.",
+      "margin_notes": [
+        {
+          "type": "Activity Note",
+          "title": "Crease Patterns",
+          "content": "Horizontal folds produce parallel creases; vertical folds produce perpendicular creases."
+        }
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "title": "Angle Relationships Summary Table",
+      "headers": [
+        "Type of Pair",
+        "Angle Names",
+        "Mathematical Relationship"
+      ],
+      "rows": [
+        [
+          "Vertically Opposite",
+          "angle a and angle c",
+          "angle a = angle c"
+        ],
+        [
+          "Vertically Opposite",
+          "angle b and angle d",
+          "angle b = angle d"
+        ],
+        [
+          "Linear Pair",
+          "angle a and angle b",
+          "angle a + angle b = 180°"
+        ],
+        [
+          "Linear Pair",
+          "angle b and angle c",
+          "angle b + angle c = 180°"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "speaker": "Architect",
+      "role": "Professional",
+      "speech_text": "If two support beams intersect at 35 degrees, what are the other three angles?"
+    },
+    {
+      "speaker": "Engineer",
+      "role": "Peer",
+      "speech_text": "Linear pair gives 180 - 35 = 145 degrees. Vertically opposite angles give 35 and 145 degrees!"
+    },
+    {
+      "speaker": "Teacher",
+      "role": "Mentor",
+      "speech_text": "Geometric deduction guarantees exact angle measures without physical protractors."
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch5",
+      "title": "Interactive Paper Folding Crease Studio",
+      "concept": "Generating parallel and perpendicular lines via creases",
+      "interactive_controls": [
+        "Horizontal Fold Button",
+        "Vertical Fold Button"
+      ],
+      "procedure_steps": [
+        "Fold sheet in half horizontally",
+        "Fold horizontally again",
+        "Unfold and fold vertically across horizontal creases"
+      ],
+      "expected_outcome": "Horizontal creases remain parallel; vertical crease forms 90 degree right angles."
+    }
+  ],
+  "formula_rule_engines": [
+    {
+      "engine_id": "eng_ch5",
+      "rule_name": "Intersecting Line Angle Solver Engine",
+      "formula": "Linear Pair = 180 - angle; Vertically Opposite = angle",
+      "input_variables": [
+        "angle_a"
+      ],
+      "computed_expression": "Computes remaining 3 angles around intersection",
+      "example_demonstration": "Input angle_a = 35° => angle_b = 145°, angle_c = 35°, angle_d = 145°"
+    },
+    {
+      "engine_id": "eng_ch5_transversal",
+      "rule_name": "Transversal Line Angle Theorem Engine",
+      "formula": "Corresponding Angles Equal; Alternate Interior Angles Equal; Interior Consecutive Angles Sum to 180°",
+      "input_variables": [
+        "angle_1",
+        "is_parallel"
+      ],
+      "computed_expression": "Parallel lines intersected by transversal preserve orientation angle equality",
+      "example_demonstration": "If l || m and transversal cuts at 60°, corresponding angle = 60°, consecutive interior = 120°"
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch5_geometry_intersecting_parallel",
+    "chapter_number": 5,
+    "chapter_title": "Parallel and Intersecting Lines",
+    "title": "Intersecting Lines, Parallel Lines & Crease Geometry Diagram",
+    "file_name": "ch5_geometry_intersecting_parallel.png",
+    "local_url": "/assets/images/ch5_geometry_intersecting_parallel.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Vertically opposite angles, linear pairs, parallel line constant distance, perpendicular lines, and crease geometry.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_5_1",
+        "title": "Intersecting Lines & Angles",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Vertically opposite angles are equal (∠a = ∠c). Linear pairs sum to 180° (∠a + ∠b = 180°)."
+      },
+      {
+        "hotspot_id": "hs_5_2",
+        "title": "Parallel Lines (l || m)",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Coplanar lines that never meet. Maintain constant perpendicular distance throughout."
+      },
+      {
+        "hotspot_id": "hs_5_3",
+        "title": "Perpendicular Lines (l ⊥ m)",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Lines that intersect at right angles (90°), forming 4 orthogonal quadrants."
+      },
+      {
+        "hotspot_id": "hs_5_4",
+        "title": "Paper Folding Creases",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Successive horizontal folds yield parallel line creases; orthogonal fold creates perpendicular crease."
+      }
+    ]
+  }
+}

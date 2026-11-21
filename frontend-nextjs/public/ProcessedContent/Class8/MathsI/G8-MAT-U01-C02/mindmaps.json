@@ -1,0 +1,84 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Power Play",
+  "d3_config": {
+    "node_color": "#38bdf8",
+    "expanded_radius": 12,
+    "collapsed_radius": 8
+  },
+  "tree_data": {
+    "id": "mm_node_ch2_root",
+    "name": "Power Play",
+    "node_color": "#0ea5e9",
+    "icon": "folder_root",
+    "tooltip_popover": {
+      "title": "Power Play",
+      "content": "Master topic for Chapter 2",
+      "example": "Central node of learning map"
+    },
+    "children": [
+      {
+        "id": "mm_node_ch2_b0",
+        "name": "2.1 Multiplicative Growth and Exponents",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "2.1 Multiplicative Growth and Exponents",
+          "content": "Theme section under Power Play",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch2_b0_sb0",
+            "name": "Repeated Doubling and Exponential Notation",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Repeated Doubling and Exponential Notation",
+              "content": "Multiplicative growth multiplies quantities repeatedly by a constant factor. In exponential expression a^n, 'a' represents the base and 'n' represents the exponent/power.",
+              "example": "Magical Pond Lotus Problem: Lotuses double daily and cover pond on Day 30 -> Pond was half covered on Day 29."
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "mm_node_ch2_b1",
+        "name": "2.2 Laws of Exponents and Negative Powers",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "2.2 Laws of Exponents and Negative Powers",
+          "content": "Theme section under Power Play",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch2_b1_sb0",
+            "name": "Fundamental Laws of Exponents",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Fundamental Laws of Exponents",
+              "content": "Product Law: x^a * x^b = x^(a + b) Quotient Law: x^a / x^b = x^(a - b) Power of a Power Law: (x^a)^b = x^(a * b) Zero Exponent Law: x^0 = 1 for any non-zero x (derived from x^a / x^a = x^(a-a) = 1). Negative Exponent Law: x^(-n) = 1 / (x^n)",
+              "example": "Simplification: (5^7 / 5^4) * 5^-2 = 5^3 * 5^-2 = 5^(3-2) = 5."
+            },
+            "children": []
+          },
+          {
+            "id": "mm_node_ch2_b1_sb1",
+            "name": "Scientific Notation and Practical Applications",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Scientific Notation and Practical Applications",
+              "content": "Powers of 10 enable compact representation of vast and tiny quantities. Scientific notation represents numbers as m * 10^n where 1 <= m < 10.",
+              "example": "Bacteria growth doubling every 20 mins: 100 bacteria after 2 hours (6 doubling periods) = 100 * 2^6 = 6400."
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

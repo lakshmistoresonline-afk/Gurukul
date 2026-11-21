@@ -1,0 +1,157 @@
+{
+  "chapter_number": 13,
+  "chapter_title": "Statistics",
+  "zero_omission_notes": {
+    "summary": "Covers measures of central tendency for grouped data: Mean (Direct, Assumed Mean, Step-Deviation methods), Mode, Median, and empirical relation 3 Median = Mode + 2 Mean.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "13.1 Mean of Grouped Data",
+        "full_explanation": "Direct: x̄ = Σfi xi / Σfi. Assumed Mean: x̄ = a + (Σfi di / Σfi). Step-Deviation: x̄ = a + [Σfi ui / Σfi] * h where ui = (xi - a)/h.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Formula Box",
+            "title": "Step-Deviation Mean",
+            "content": "x̄ = a + h * (Σfi ui / Σfi)"
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "13.2 Mode and Median of Grouped Data",
+        "full_explanation": "Mode = l + [(f1 - f0)/(2f1 - f0 - f2)] * h. Median = l + [(n/2 - cf)/f] * h. Empirical formula: 3 Median = Mode + 2 Mean.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Empirical Rule",
+            "title": "3 Median Rule",
+            "content": "3 Median = Mode + 2 Mean"
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-1301",
+      "aim_or_objective": "Calculate Mode of grouped frequency distribution.",
+      "materials_or_prerequisites": [
+        "Mode formula"
+      ],
+      "procedure_or_steps": [
+        "Identify modal class with maximum frequency f1",
+        "Extract lower limit l, f0 (preceding), f2 (succeeding), and class width h",
+        "Substitute into Mode = l + [(f1-f0)/(2f1-f0-f2)]*h"
+      ],
+      "observations_or_results": "Yields exact modal value.",
+      "conclusion_or_principle": "Modal value lies strictly inside modal class interval."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 13.1 Grouped Frequency Histogram",
+        "labels_and_components": [
+          "Class Intervals",
+          "Frequencies",
+          "Modal Peak"
+        ],
+        "drawing_or_reading_instructions": "Draw histogram bars proportional to class frequencies.",
+        "structural_or_conceptual_explanation": "Histogram peak identifies modal class."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Statistics Master Formulas",
+        "headers": [
+          "Measure",
+          "Formula"
+        ],
+        "rows": [
+          [
+            "Mean (Step-Dev)",
+            "a + h * (Σfi ui / Σfi)"
+          ],
+          [
+            "Mode",
+            "l + [(f1-f0)/(2f1-f0-f2)] * h"
+          ],
+          [
+            "Median",
+            "l + [(n/2 - cf)/f] * h"
+          ],
+          [
+            "Empirical Relation",
+            "3 Median = Mode + 2 Mean"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Class Mark (xi)",
+      "definition_or_meaning": "Midpoint of class interval.",
+      "si_unit_or_notation": "xi = (Upper Limit + Lower Limit) / 2",
+      "example_or_application": "For 10-20, xi = 15"
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 13.1 Q1",
+        "question": "Find mean plants per house: 0-2 (1), 2-4 (2), 4-6 (1), 6-8 (5), 8-10 (6), 10-12 (2), 12-14 (3).",
+        "answer": "Σfi = 20. Σfi xi = 162. Mean = 162 / 20 = 8.1 plants."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "If Mode = 12 and Mean = 15, Median is:",
+        "options": [
+          "A) 14",
+          "B) 13",
+          "C) 15",
+          "D) 16"
+        ],
+        "answer": "A",
+        "explanation": "3 Median = 12 + 2(15) = 42 => Median = 14."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Find class mark of 15-35 and class size.",
+        "answer": "Class mark = (15+35)/2 = 25. Class size = 35 - 15 = 20."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "If mean of 5 observations x, x+2, x+4, x+6, x+8 is 11, find mean of first 3 observations.",
+        "answer": "Sum = 5x + 20 = 55 => 5x = 35 => x = 7. First 3 observations: 7, 9, 11. Mean = (7+9+11)/3 = 9."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "The median of data is 525. Find values of x and y if total frequency is 100.",
+        "answer": "Median class 500-600. l=500, h=100, f=20, cf=36+x. Median = 500 + [(50 - (36+x))/20]*100 => 525 = 500 + (14-x)*5 => 25 = 70 - 5x => x = 9. Sum frequencies = 100 => x + y = 24 => y = 15."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "Height survey of 51 girls: <140 (4), <145 (11), <150 (29), <155 (40), <160 (46), <165 (51).",
+        "qa": [
+          {
+            "question": "Find median height.",
+            "answer": "Median class 145-150. Median = 145 + [(25.5 - 11)/18]*5 = 145 + 4.03 = 149.03 cm."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Using cf of median class instead of preceding class in median formula.",
+        "correct_fact_or_method": "cf in median formula ALWAYS comes from the class preceding the median class."
+      }
+    ]
+  }
+}

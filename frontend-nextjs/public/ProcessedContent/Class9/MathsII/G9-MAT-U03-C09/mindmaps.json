@@ -1,0 +1,105 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Propositions and their Converses",
+  "mind_map": {
+    "root_topic": "Propositions and their Converses",
+    "branches": [
+      {
+        "theme": "Logical Foundations of Propositions & Implication",
+        "sub_branches": [
+          {
+            "concept": "Conditional Propositions (If P then Q)",
+            "details": [
+              "A proposition is a declarative statement that is definitively either true or false.",
+              "Expressed as 'If P then Q', 'P implies Q', 'Q when P', or 'P is sufficient for Q'.",
+              "Premise P is the hypothesis; consequence Q is the conclusion.",
+              "The truth value of an implication depends on the formal logical relationship between P and Q."
+            ],
+            "evidence_or_examples": [
+              "If a number is a multiple of 6, then it is a multiple of 3 (True).",
+              "If a number is a perfect square, then it has an odd number of factors (True)."
+            ],
+            "key_terms": [
+              "Proposition",
+              "Premise / Hypothesis",
+              "Conclusion / Consequence",
+              "Implication (P -> Q)"
+            ]
+          },
+          {
+            "concept": "Formulating and Evaluating Converse Statements",
+            "details": [
+              "The converse of 'If P then Q' is formed by swapping hypothesis and conclusion to obtain 'If Q then P'.",
+              "A proposition and its converse are logically independent statements.",
+              "The truth of an implication does not guarantee the truth of its converse."
+            ],
+            "evidence_or_examples": [
+              "Proposition: 'If a quadrilateral is a square, then all its angles are equal' (True). Converse: 'If all angles of a quadrilateral are equal, then it is a square' (False; counterexample: rectangle with unequal adjacent sides)."
+            ],
+            "key_terms": [
+              "Converse Statement (Q -> P)",
+              "Logical Independence",
+              "Bi-implication / Equivalence (P <-> Q)"
+            ]
+          },
+          {
+            "concept": "Contrapositive Equivalence",
+            "details": [
+              "The contrapositive of 'If P then Q' is 'If not Q then not P'.",
+              "A proposition and its contrapositive are logically equivalent (they always share identical truth values).",
+              "Proving the contrapositive is a valid method of proving the original proposition."
+            ],
+            "evidence_or_examples": [
+              "To prove 'If n^2 is even, then n is even', prove contrapositive 'If n is odd, then n^2 is odd': (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1 (odd)."
+            ],
+            "key_terms": [
+              "Contrapositive (~Q -> ~P)",
+              "Logical Equivalence",
+              "Indirect Proof"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "Disproof via Counterexamples & Geometric Equivalences",
+        "sub_branches": [
+          {
+            "concept": "Role of Counterexamples in Proofs",
+            "details": [
+              "A universal statement ('For all x, P(x)') claims something holds for every element in a set.",
+              "A single valid counterexample refutes a universal mathematical claim.",
+              "Counterexamples provide disproof, but multiple examples cannot establish general proof."
+            ],
+            "evidence_or_examples": [
+              "Euler disproving Fermat's prime conjecture F_n = 2^(2^n) + 1 at n=5: F_5 = 4,294,967,297 = 641 x 6,700,417 (composite).",
+              "Triangles with equal perimeters (3,4,5 and 4,4,4) are not congruent."
+            ],
+            "key_terms": [
+              "Counterexample",
+              "Refutation",
+              "Universal Quantifier (For All)",
+              "Existential Quantifier (Exists)"
+            ]
+          },
+          {
+            "concept": "Baudhāyana-Pythagoras Equivalence & Angle Bisectors",
+            "details": [
+              "When both proposition and converse are true, the conditions are logically equivalent (if and only if).",
+              "Pythagoras Theorem and its converse form a bi-conditional equivalence: right-angled at C <==> a^2 + b^2 = c^2.",
+              "Steiner-Lehmus Theorem: Equal angle bisectors implies isosceles triangle (converse of isosceles angle bisector property)."
+            ],
+            "evidence_or_examples": [
+              "Masons using 3-4-5 knotted rope loops to lay exact 90-degree corners relying on the converse of Pythagoras theorem."
+            ],
+            "key_terms": [
+              "Equivalence (<==>)",
+              "Necessary and Sufficient Conditions",
+              "Baudhāyana-Pythagoras Converse",
+              "Steiner-Lehmus Theorem"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

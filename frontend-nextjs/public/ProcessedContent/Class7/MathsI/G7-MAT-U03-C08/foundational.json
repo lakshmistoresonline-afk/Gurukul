@@ -1,0 +1,114 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Working with Fractions",
+  "gamified_drills": {
+    "combo_multipliers": [
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "drills_list": [
+      "Multiply (2/3) * (4/5)",
+      "Divide (3/4) / (1/2)",
+      "Calculate lace bags 8 / (1/4)",
+      "Evaluate telescoping series for n=10"
+    ]
+  },
+  "scrambled_tile_sets": [
+    {
+      "tiles": [
+        "(a/b) * (c/d)",
+        "=",
+        "(ac)/(bd)",
+        "Brahmagupta Rule"
+      ],
+      "correct_sequence": [
+        "Brahmagupta Rule",
+        ":",
+        "(a/b) * (c/d)",
+        "=",
+        "(ac)/(bd)"
+      ],
+      "hint": "Multiply numerators together and denominators together"
+    }
+  ],
+  "sorting_matrices": [
+    {
+      "bins": [
+        "Product Rule",
+        "Division Rule"
+      ],
+      "items": [
+        "(a/b)*(c/d) = (ac)/(bd)",
+        "(a/b)/(c/d) = (a/b)*(d/c)",
+        "Brahmagupta Formula",
+        "Reciprocal Multiplication"
+      ],
+      "correct_mapping": {
+        "(a/b)*(c/d) = (ac)/(bd)": "Product Rule",
+        "Brahmagupta Formula": "Product Rule",
+        "(a/b)/(c/d) = (a/b)*(d/c)": "Division Rule",
+        "Reciprocal Multiplication": "Division Rule"
+      }
+    }
+  ],
+  "editing_checkers": [
+    {
+      "buggy_expression": "(3/4) / (1/2) = (3/4) * (1/2) = 3/8",
+      "error_type": "Divisor Inversion Omission",
+      "corrected_expression": "(3/4) / (1/2) = (3/4) * (2/1) = 6/4 = 3/2",
+      "explanation": "When dividing fractions, multiply by the reciprocal of the DIVISOR (invert 1/2 to 2/1)."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch8_fractions_area_telescoping",
+    "chapter_number": 8,
+    "chapter_title": "Working with Fractions",
+    "title": "Brahmagupta Area Model & Telescoping Series Diagram",
+    "file_name": "ch8_fractions_area_telescoping.png",
+    "local_url": "/assets/images/ch8_fractions_area_telescoping.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Brahmagupta's fraction multiplication rule, 1x1 area grid model, reciprocal division, and telescoping series cancellation.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_8_1",
+        "title": "Brahmagupta's Rule (628 CE)",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "(a/b) * (c/d) = (a*c)/(b*d). Multiply numerators together and denominators together. Area model overlap."
+      },
+      {
+        "hotspot_id": "hs_8_2",
+        "title": "Reciprocal Division & Scaling",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "(a/b) / (c/d) = (a/b) * (d/c). Dividing by proper fraction (<1) ENLARGES the quotient value."
+      },
+      {
+        "hotspot_id": "hs_8_3",
+        "title": "Real-World Fraction Scaling",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Lace bags: 8 m / (1/4 m) = 32 bags. Tank fill time: 1 / (7/10) = 10/7 hours = 1 3/7 hrs."
+      },
+      {
+        "hotspot_id": "hs_8_4",
+        "title": "Telescoping Series Cancellation",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "(1 - 1/2)(1 - 1/3)...(1 - 1/n) = (1/2)*(2/3)*...*((n-1)/n) = 1/n via cross-cancellation."
+      }
+    ]
+  }
+}

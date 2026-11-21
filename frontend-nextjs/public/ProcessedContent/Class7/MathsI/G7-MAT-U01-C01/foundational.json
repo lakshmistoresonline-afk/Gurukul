@@ -1,0 +1,115 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Large Numbers Around Us",
+  "gamified_drills": {
+    "combo_multipliers": [
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "drills_list": [
+      "Multiply 116 by 5",
+      "Multiply 824 by 25",
+      "Convert 2 Crores to Lakhs",
+      "Find 100th digit position"
+    ]
+  },
+  "scrambled_tile_sets": [
+    {
+      "tiles": [
+        "10^5",
+        "Lakh",
+        "1,00,000",
+        "=",
+        "100 Thousand"
+      ],
+      "correct_sequence": [
+        "1 Lakh",
+        "=",
+        "1,00,000",
+        "=",
+        "10^5"
+      ],
+      "hint": "Match Indian Lakh to digits and exponential notation"
+    }
+  ],
+  "sorting_matrices": [
+    {
+      "bins": [
+        "Indian System",
+        "International System"
+      ],
+      "items": [
+        "1 Lakh",
+        "1 Million",
+        "1 Crore",
+        "1 Billion"
+      ],
+      "correct_mapping": {
+        "1 Lakh": "Indian System",
+        "1 Crore": "Indian System",
+        "1 Million": "International System",
+        "1 Billion": "International System"
+      }
+    }
+  ],
+  "editing_checkers": [
+    {
+      "buggy_expression": "116 * 5 = 116 / 5 = 23.2",
+      "error_type": "Incorrect Shortcut Application",
+      "corrected_expression": "116 * 5 = (116 / 2) * 10 = 580",
+      "explanation": "To multiply by 5, divide by 2 and multiply by 10, do not divide by 5."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch1_place_value_shortcuts",
+    "chapter_number": 1,
+    "chapter_title": "Large Numbers Around Us",
+    "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+    "file_name": "ch1_place_value_shortcuts.png",
+    "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_1_1",
+        "title": "Indian Place Value System",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+      },
+      {
+        "hotspot_id": "hs_1_2",
+        "title": "International Place Value System",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+      },
+      {
+        "hotspot_id": "hs_1_3",
+        "title": "Factor Shortcuts (x5 and x25)",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+      },
+      {
+        "hotspot_id": "hs_1_4",
+        "title": "Sequential Digit Position Analytics",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+      }
+    ]
+  }
+}

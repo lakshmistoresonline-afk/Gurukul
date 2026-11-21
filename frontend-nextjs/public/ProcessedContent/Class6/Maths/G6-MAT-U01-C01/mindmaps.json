@@ -1,0 +1,169 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Patterns in Mathematics",
+  "mind_map": {
+    "root_topic": "Chapter 1: Patterns in Mathematics",
+    "branches": [
+      {
+        "theme": "1.1 Patterns All Around Us & What is Mathematics?",
+        "sub_branches": [
+          {
+            "concept_or_rule": "Nature & Daily Life Patterns",
+            "step_by_step_procedure": [
+              "Observe regularities in daily events (calendar cycles, financial transactions, architectural tilings, leaf arrangements).",
+              "Identify repeating units or structural rules governing the arrangement."
+            ],
+            "formulas_and_identities": [
+              "Pattern Rule: Sequence term T_n = f(n)"
+            ],
+            "example_problem": "Identify rule in daily calendar days: Sunday, Monday... Repeats every 7 days (Mod 7 cycle)."
+          },
+          {
+            "concept_or_rule": "Mathematics as the Search for Patterns",
+            "step_by_step_procedure": [
+              "Combine artistic creativity with scientific rigor to explore structural connections.",
+              "Formulate hypotheses about why patterns occur.",
+              "Prove generalizations logically to establish universal mathematical laws."
+            ],
+            "formulas_and_identities": [
+              "Pattern Discovery -> Generalization -> Mathematical Proof"
+            ],
+            "example_problem": "Why do consecutive odd sums form square numbers? Proved visually via L-shaped gnomons."
+          }
+        ]
+      },
+      {
+        "theme": "1.2 Natural Number Sequences & Term Rules",
+        "sub_branches": [
+          {
+            "concept_or_rule": "Fundamental Sequences (Counting, Even, Odd)",
+            "step_by_step_procedure": [
+              "Counting numbers: Start at 1, add 1 sequentially (1, 2, 3, 4...).",
+              "Even numbers: Start at 2, add 2 sequentially (2, 4, 6, 8...).",
+              "Odd numbers: Start at 1, add 2 sequentially (1, 3, 5, 7...)."
+            ],
+            "formulas_and_identities": [
+              "Counting Numbers: T_n = n",
+              "Even Numbers: T_n = 2n",
+              "Odd Numbers: T_n = 2n - 1"
+            ],
+            "example_problem": "Find the 15th odd number: T_15 = 2(15) - 1 = 29."
+          },
+          {
+            "concept_or_rule": "Exponential & Recurrence Sequences (Powers & Virahānka)",
+            "step_by_step_procedure": [
+              "Powers of 2: Start at 1, multiply by 2 successively (1, 2, 4, 8, 16...).",
+              "Powers of 3: Start at 1, multiply by 3 successively (1, 3, 9, 27, 81...).",
+              "Virahānka (Fibonacci) sequence: Set V_1 = 1, V_2 = 2; add preceding two terms (1, 2, 3, 5, 8, 13, 21...)."
+            ],
+            "formulas_and_identities": [
+              "Powers of 2: P_n = 2^(n-1)",
+              "Powers of 3: P_n = 3^(n-1)",
+              "Virahānka Recurrence: V_n = V_{n-1} + V_{n-2} (V_1 = 1, V_2 = 2)"
+            ],
+            "example_problem": "Find 7th Virahānka number: 1, 2, 3, 5, 8, 13, 21. Answer: 21."
+          }
+        ]
+      },
+      {
+        "theme": "1.3 Visualising Number Sequences through Geometric Arrays",
+        "sub_branches": [
+          {
+            "concept_or_rule": "2D Dot Arrays (Triangular, Square, Hexagonal)",
+            "step_by_step_procedure": [
+              "Triangular numbers: Arrange dots in equilateral triangles (1, 3, 6, 10, 15...).",
+              "Square numbers: Arrange dots in square grids (1, 4, 9, 16, 25...).",
+              "Hexagonal numbers: Arrange dots in concentric regular hexagonal rings (1, 7, 19, 37...)."
+            ],
+            "formulas_and_identities": [
+              "Triangular Number Formula: T_n = n(n + 1) / 2",
+              "Square Number Formula: S_n = n^2",
+              "Hexagonal Ring Formula: H_n = 1 + 3n(n - 1)"
+            ],
+            "example_problem": "Calculate the 5th triangular number T_5: 5(6)/2 = 15."
+          },
+          {
+            "concept_or_rule": "3D Spatial Arrays (Cube Numbers)",
+            "step_by_step_procedure": [
+              "Stack 2D square dot layers into 3D cubic prisms.",
+              "An n x n x n cube array contains n^3 dots."
+            ],
+            "formulas_and_identities": [
+              "Cube Number Formula: C_n = n^3"
+            ],
+            "example_problem": "Find 4th cube number C_4: 4^3 = 64."
+          }
+        ]
+      },
+      {
+        "theme": "1.4 Mathematical Identities & Inter-sequence Relationships",
+        "sub_branches": [
+          {
+            "concept_or_rule": "L-Shaped Gnomon Decompositions & Sum of Odd Numbers",
+            "step_by_step_procedure": [
+              "Start with a single dot (1x1 square).",
+              "Enlarge to a 2x2 square by adding an L-shaped gnomon layer of 3 dots.",
+              "Enlarge to a 3x3 square by adding a gnomon of 5 dots.",
+              "Conclude that summing the first n odd numbers equals n^2."
+            ],
+            "formulas_and_identities": [
+              "1 + 3 + 5 + ... + (2n - 1) = n^2"
+            ],
+            "example_problem": "Sum of first 12 odd numbers: 12^2 = 144."
+          },
+          {
+            "concept_or_rule": "Symmetrical Up-and-Down Counting Sequences",
+            "step_by_step_procedure": [
+              "Identify the central peak integer n in series 1 + 2 + ... + n + ... + 2 + 1.",
+              "Note that combining two triangles T_{n-1} and T_n with peak n forms n^2."
+            ],
+            "formulas_and_identities": [
+              "1 + 2 + ... + n + ... + 2 + 1 = n^2"
+            ],
+            "example_problem": "Evaluate 1 + 2 + 3 + 4 + 5 + 6 + 7 + 6 + 5 + 4 + 3 + 2 + 1. Peak n = 7 => 7^2 = 49."
+          },
+          {
+            "concept_or_rule": "Triangular to Square Number Connection",
+            "step_by_step_procedure": [
+              "Take two adjacent triangular dot arrays T_{n-1} and T_n.",
+              "Align them along their diagonal boundary.",
+              "Observe that they form a complete n x n square dot grid."
+            ],
+            "formulas_and_identities": [
+              "T_n + T_{n-1} = n^2"
+            ],
+            "example_problem": "Add T_3 (6) and T_4 (10): 6 + 10 = 16 = 4^2."
+          }
+        ]
+      },
+      {
+        "theme": "1.5 Geometric Shape Patterns & Network Connections",
+        "sub_branches": [
+          {
+            "concept_or_rule": "Polygon Diagonals & Complete Graph Handshakes",
+            "step_by_step_procedure": [
+              "Connect n points where every pair is joined by a segment (Complete Graph).",
+              "Count total connections: equals the (n-1)-th triangular number T_{n-1}."
+            ],
+            "formulas_and_identities": [
+              "Handshake / Connection Formula = n(n - 1) / 2 = T_{n-1}"
+            ],
+            "example_problem": "6 people meet and everyone shakes hands once: T_5 = 5(6)/2 = 15 handshakes."
+          },
+          {
+            "concept_or_rule": "Fractal Iterations (Koch Snowflake)",
+            "step_by_step_procedure": [
+              "Start with an equilateral triangle (Iteration 0).",
+              "Replace middle third of each side with an outward equilateral triangular point.",
+              "Repeat process infinitely to generate expanding perimeter with finite area."
+            ],
+            "formulas_and_identities": [
+              "Number of sides at iteration k: N_k = 3 x 4^k"
+            ],
+            "example_problem": "Find side count at 2nd iteration: 3 x 4^2 = 48 sides."
+          }
+        ]
+      }
+    ]
+  }
+}

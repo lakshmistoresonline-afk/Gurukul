@@ -51,6 +51,29 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'd
 
 let cachedHierarchyInMemory: any[] | null = null;
 
+export function resolveProcessedContentStaticUrl(identity: CurriculumIdentity): string {
+  const g = String(identity.grade || '5').trim();
+  const subj = String(identity.subject || '').toLowerCase().trim();
+  const book = String(identity.book || '').toLowerCase().trim();
+  const chId = String(identity.chapter_id || '').trim();
+  const ct = String(identity.content_type || 'overview').toLowerCase().trim();
+
+  let subjFolder = 'English';
+  if (subj.includes('hin')) {
+    subjFolder = 'Hindi';
+  } else if (subj.includes('mat') || subj.includes('math')) {
+    subjFolder = (book.includes('ii') || book.includes('part2') || book.includes('part_2')) ? 'MathsII' : 'MathsI';
+  } else if (subj.includes('sci')) {
+    subjFolder = 'Science';
+  } else if (subj.includes('soc') || subj.includes('social')) {
+    if (book.includes('ii') || book.includes('part2') || book.includes('civics')) subjFolder = 'SocialII';
+    else if (book.includes('iii') || book.includes('part3') || book.includes('history')) subjFolder = 'SocialIII';
+    else subjFolder = 'SocialI';
+  }
+
+  return `/ProcessedContent/Class${g}/${subjFolder}/${chId}/${ct}.json`;
+}
+
 export class CurriculumApiClient {
   static async fetchHierarchy(retries = 2, delayMs = 300): Promise<any[]> {
     if (cachedHierarchyInMemory && cachedHierarchyInMemory.length > 0) {
@@ -115,18 +138,39 @@ export class CurriculumApiClient {
       content_type: String(identity.content_type || '')
     });
 
+    // 1. Try Authoritative Backend API
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 3000);
+      const timeoutId = setTimeout(() => controller.abort(), 2000);
       const res = await fetch(`${API_BASE}/api/v1/curriculum/resolve?${params.toString()}`, { signal: controller.signal });
       clearTimeout(timeoutId);
-      if (!res.ok) {
-        return getFallbackContentForIdentity(identity);
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.data) return data;
       }
-      return await res.json();
-    } catch {
-      return getFallbackContentForIdentity(identity);
+    } catch {}
+
+    // 2. Try Static Authoritative ProcessedContent Asset
+    if (typeof window !== 'undefined') {
+      try {
+        const staticUrl = resolveProcessedContentStaticUrl(identity);
+        const staticRes = await fetch(staticUrl);
+        if (staticRes.ok) {
+          const staticData = await staticRes.json();
+          if (staticData) {
+            return {
+              identity,
+              contentType: identity.content_type || 'overview',
+              status: 'PASS',
+              data: staticData
+            };
+          }
+        }
+      } catch {}
     }
+
+    // 3. Fallback Client Generator
+    return getFallbackContentForIdentity(identity);
   }
 }
 

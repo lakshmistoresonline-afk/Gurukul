@@ -1,0 +1,134 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Measuring Space: Perimeter and Area",
+  "image_asset": {
+    "title": "Mensuration overview displaying circular sector, segment, and concentric stadium running track.",
+    "local_url": "/assets/images/ch6_sector_segment_track.png",
+    "hotspots": [
+      {
+        "id": "hs_sector",
+        "label": "Circular Sector",
+        "x_percent": 25.0,
+        "y_percent": 40.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0,
+        "tooltip": "Region bounded by two radii and central arc theta."
+      },
+      {
+        "id": "hs_track",
+        "label": "Running Track Ring",
+        "x_percent": 75.0,
+        "y_percent": 50.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0,
+        "tooltip": "Area between outer radius R and inner radius r: pi*(R^2 - r^2)."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "section_number_and_title": "6.1 Polygon & Quadrilateral Area Derivations",
+      "content": "Parallelogram Area = base * height; Triangle Area = 1/2 * base * height; Trapezium Area = 1/2 * (sum of parallel sides) * height. Brahmagupta's formula for cyclic quadrilateral area = sqrt((s-a)(s-b)(s-c)(s-d)) where s = (a+b+c+d)/2.",
+      "key_takeaways": [
+        "Trapezium Area = 1/2 * (a + b) * h.",
+        "Brahmagupta formula generalizes Heron's formula to cyclic quadrilaterals."
+      ]
+    },
+    {
+      "section_number_and_title": "6.2 Heron's Formula for Arbitrary Triangles",
+      "content": "For a triangle with side lengths a, b, c and semi-perimeter s = (a+b+c)/2, Area = sqrt(s(s-a)(s-b)(s-c)). For an equilateral triangle of side 'a', Area = (sqrt(3)/4) * a^2.",
+      "key_takeaways": [
+        "Heron's formula computes area without needing explicit height.",
+        "Equilateral Area = (sqrt(3)/4) * a^2."
+      ]
+    },
+    {
+      "section_number_and_title": "6.3 Circular Regions: Sectors, Segments & Track Geometry",
+      "content": "Circumference C = 2*pi*r; Circle Area = pi*r^2. Arc Length L = (theta/360) * 2*pi*r; Sector Area = (theta/360) * pi*r^2. Minor Segment Area = Sector Area - Triangle Area. Running track path area between outer R and inner r = pi*(R^2 - r^2).",
+      "key_takeaways": [
+        "Sector Area = (theta/360) * pi * r^2.",
+        "Segment Area = Sector Area - Triangle Area."
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "table_title": "Key Conceptual Comparison - Ch 6",
+      "headers": [
+        "Concept A",
+        "Concept B",
+        "Distinguishing Feature"
+      ],
+      "rows": [
+        [
+          "Type 1",
+          "Type 2",
+          "Core Mathematical Distinction"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "d_ch6_01",
+      "title": "Mastering the Core Insight",
+      "exchanges": [
+        {
+          "speaker": "Aarav (Student)",
+          "avatar_role": "Student Explorer",
+          "speech_text": "How do we systematically approach the key concepts of Measuring Space: Perimeter and Area?"
+        },
+        {
+          "speaker": "Dr. Sharma (Master Educator)",
+          "avatar_role": "Mathematics Mentor",
+          "speech_text": "By grounding ourselves in the fundamental definitions, visual models, and step-by-step rigorous proofs outlined in the chapter!"
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch6",
+      "experiment_title": "STEM Visual Verification - Ch 6",
+      "apparatus": [
+        "Graph Paper",
+        "Ruler",
+        "Compass",
+        "Scientific Calculator"
+      ],
+      "procedure": [
+        "Construct baseline geometric / coordinate figures according to chapter guidelines.",
+        "Measure side lengths, angles, or coordinate distances accurately.",
+        "Verify corresponding algebraic formulas against physical measurements."
+      ],
+      "observations": "Empirical measurements exactly match theoretical algebraic calculations.",
+      "interactive_controls": {
+        "slider_parameter": "Variable Input x",
+        "min_value": 1,
+        "max_value": 100,
+        "step": 1
+      }
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calc_id": "calc_ch6",
+      "formula_name": "Core Formula Evaluator Ch 6",
+      "expression": "Result = f(Inputs)",
+      "variables": [
+        {
+          "name": "x1",
+          "description": "First Input Variable"
+        },
+        {
+          "name": "x2",
+          "description": "Second Input Variable"
+        }
+      ],
+      "interactive_sample_inputs": {
+        "x1": 3,
+        "x2": 4
+      }
+    }
+  ]
+}

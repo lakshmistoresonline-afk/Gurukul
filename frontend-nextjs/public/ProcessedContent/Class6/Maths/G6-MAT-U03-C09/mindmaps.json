@@ -1,0 +1,92 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Symmetry",
+  "mind_map": {
+    "root_topic": "Chapter 9: Symmetry",
+    "branches": [
+      {
+        "theme": "9.1 Reflectional (Line) Symmetry",
+        "sub_branches": [
+          {
+            "concept_or_rule": "Axis of Symmetry & Mirror Half Overlap",
+            "step_by_step_procedure": [
+              "A figure has line symmetry if an axis divides it into two mirror-image halves.",
+              "Folding along line of symmetry causes both halves to coincide perfectly."
+            ],
+            "formulas_and_identities": [
+              "Reflection Condition: Point (x, y) maps to (-x, y) across y-axis"
+            ],
+            "example_problem": "An isosceles triangle has 1 line of symmetry (vertical altitude)."
+          },
+          {
+            "concept_or_rule": "Line Symmetry in Regular Polygons",
+            "step_by_step_procedure": [
+              "A regular polygon with n sides has equal sides and angles.",
+              "It possesses exactly n lines of reflection symmetry."
+            ],
+            "formulas_and_identities": [
+              "Lines of Symmetry (Regular n-gon) = n"
+            ],
+            "example_problem": "Equilateral triangle (n=3) has 3 lines; Square (n=4) has 4 lines; Regular pentagon (n=5) has 5 lines."
+          }
+        ]
+      },
+      {
+        "theme": "9.2 Rotational Symmetry & Order",
+        "sub_branches": [
+          {
+            "concept_or_rule": "Center of Rotation & Symmetry Order",
+            "step_by_step_procedure": [
+              "A shape has rotational symmetry if it matches its original orientation after rotation < 360° around center point O.",
+              "Order n equals total matching orientations during a full 360° turn."
+            ],
+            "formulas_and_identities": [
+              "Order n = Total matching positions in 360°"
+            ],
+            "example_problem": "A 4-blade windmill matches original position 4 times in 360° (Order 4)."
+          },
+          {
+            "concept_or_rule": "Smallest Angle of Rotational Symmetry",
+            "step_by_step_procedure": [
+              "Calculate smallest rotation angle = 360° / Order n.",
+              "360° MUST be an exact integer multiple of smallest rotation angle."
+            ],
+            "formulas_and_identities": [
+              "Smallest Rotational Angle = 360° / n"
+            ],
+            "example_problem": "Square (Order 4): Smallest angle = 360° / 4 = 90°. Equilateral triangle (Order 3): 360° / 3 = 120°."
+          }
+        ]
+      },
+      {
+        "theme": "9.3 Combined Symmetry in Cultural & Natural Objects",
+        "sub_branches": [
+          {
+            "concept_or_rule": "Ashoka Chakra Geometry & Symmetry",
+            "step_by_step_procedure": [
+              "24 equally spaced spokes divide 360° into 24 sectors.",
+              "Possesses 24 lines of reflection symmetry and rotational symmetry of Order 24.",
+              "Smallest angle of rotational symmetry = 360° / 24 = 15°."
+            ],
+            "formulas_and_identities": [
+              "Ashoka Chakra Angle = 360° / 24 = 15°"
+            ],
+            "example_problem": "Rotate Ashoka Chakra by 15° -> Looks identical to original."
+          },
+          {
+            "concept_or_rule": "Rectangle Diagonal Non-Symmetry Fallacy",
+            "step_by_step_procedure": [
+              "Examine non-square rectangle diagonals.",
+              "Diagonals divide rectangle into congruent triangles, BUT folding along diagonal causes vertices to overhang.",
+              "Conclude rectangle has only 2 lines of symmetry (midsegments), NOT 4."
+            ],
+            "formulas_and_identities": [
+              "Non-square Rectangle Lines of Symmetry = 2"
+            ],
+            "example_problem": "Fold rectangular sheet along diagonal: Opposite corners overhang."
+          }
+        ]
+      }
+    ]
+  }
+}

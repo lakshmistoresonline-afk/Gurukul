@@ -1,0 +1,361 @@
+{
+  "chapter_number": 14,
+  "chapter_title": "Math of Space: Surface Area and Volume",
+  "papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Chapter 14 Practice Paper (Cone & Sphere Mensuration)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the Total Surface Area (TSA) of a solid hemisphere of radius r?",
+              "options": [
+                "A) 2*pi*r^2",
+                "B) 3*pi*r^2",
+                "C) 4*pi*r^2",
+                "D) (2/3)*pi*r^3"
+              ],
+              "correct_answer": "B) 3*pi*r^2",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Archimedes proved that cone, sphere, cylinder with base radius r and height h = 2r have volumes in ratio:",
+              "options": [
+                "A) 1:2:3",
+                "B) 1:3:4",
+                "C) 2:3:4",
+                "D) 1:1:1"
+              ],
+              "correct_answer": "A) 1:2:3",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find Curved Surface Area (CSA) and volume of cone with base radius r = 7 cm and height h = 24 cm.",
+              "marking_scheme_answer": "Slant height l = sqrt(7^2 + 24^2) = sqrt(49 + 576) = 25 cm. CSA = pi*r*l = (22/7)*7*25 = 550 cm^2. Volume = (1/3)*pi*r^2*h = (1/3)*(22/7)*49*24 = 1232 cm^3.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Calculate surface area of sphere with radius 21 cm.",
+              "marking_scheme_answer": "Surface Area = 4*pi*r^2 = 4*(22/7)*21*21 = 4*22*3*21 = 5544 cm^2.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Solid Recasting: A solid metallic sphere of radius 10.5 cm is melted and recast into smaller cones of radius 3.5 cm and height 3 cm. Calculate the number of small cones formed.",
+              "marking_scheme_answer": "Volume sphere = (4/3)*pi*R^3 = (4/3)*(22/7)*(10.5)^3 = 4851 cm^3. Volume 1 cone = (1/3)*pi*r^2*h = (1/3)*(22/7)*(3.5)^2 * 3 = 38.5 cm^3. Number of cones N = Volume sphere / Volume cone = 4851 / 38.5 = 126 cones.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Cylinder-Cone Combination Tent. A circus tent is cylindrical up to height 3 m and conical above it. Base radius is 14 m, total height is 13.5 m. (a) Calculate slant height of conical top. (b) Find total canvas area required.",
+              "marking_scheme_answer": "(a) Height of cone h_cone = 13.5 - 3 = 10.5 m. Slant height l = sqrt(14^2 + 10.5^2) = sqrt(196 + 110.25) = sqrt(306.25) = 17.5 m. (b) Canvas Area = CSA cylinder + CSA cone = 2*pi*r*h_cyl + pi*r*l = 2*(22/7)*14*3 + (22/7)*14*17.5 = 264 + 770 = 1034 m^2.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Chapter 14 Practice Paper (Square-Cube Scaling & Frustums)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "If radius of a sphere is increased by 10%, its volume increases by:",
+              "options": [
+                "A) 10%",
+                "B) 21%",
+                "C) 33.1%",
+                "D) 44%"
+              ],
+              "correct_answer": "C) 33.1%",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Formula for volume of frustum of a cone with radii R, r and height h is:",
+              "options": [
+                "A) 1/3*pi*h*(R^2 + r^2)",
+                "B) 1/3*pi*h*(R^2 + r^2 + R*r)",
+                "C) pi*h*(R + r)",
+                "D) 4/3*pi*h*R*r"
+              ],
+              "correct_answer": "B) 1/3*pi*h*(R^2 + r^2 + R*r)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Explain why increasing linear dimensions by 10% (scale 1.10) increases surface area by 21% and volume by 33.1%.",
+              "marking_scheme_answer": "By Square-Cube Law: Area scales with k^2 = (1.10)^2 = 1.21 (21% increase). Volume scales with k^3 = (1.10)^3 = 1.331 (33.1% increase).",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Calculate volume of frustum of a cone with radii R = 6 cm, r = 3 cm, height h = 4 cm.",
+              "marking_scheme_answer": "V = (1/3)*pi*h*(R^2 + r^2 + R*r) = (1/3)*(22/7)*4*(36 + 9 + 18) = (1/3)*(22/7)*4*63 = (22/7)*4*21 = 264 cm^3.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A hemispherical bowl of internal radius 9 cm is full of liquid. The liquid is emptied into cylindrical bottles of diameter 3 cm and height 4 cm. How many bottles are filled?",
+              "marking_scheme_answer": "Volume hemisphere = (2/3)*pi*R^3 = (2/3)*pi*9^3 = 486*pi cm^3. Bottle radius r = 1.5 cm. Volume 1 bottle = pi*r^2*h = pi*(1.5)^2 * 4 = 9*pi cm^3. Number of bottles = 486*pi / 9*pi = 54 bottles.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Fermi Estimation of Ocean Depth. Earth's total water volume is 1.38 billion km^3 (1.38 * 10^9 km^3). Earth radius R = 6371 km. (a) Compute Earth's surface area. (b) Estimate uniform depth of global water layer in kilometers.",
+              "marking_scheme_answer": "(a) Surface Area A = 4*pi*R^2 = 4*(22/7)*(6371)^2 = 5.10 * 10^8 km^2. (b) Depth t = Volume / Surface Area = (1.38 * 10^9 km^3) / (5.10 * 10^8 km^2) = 2.705 km ~ 2.71 km (2710 meters).",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Chapter 14 Practice Paper (Fluid Flow & Pipe Rates)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Volume of water discharged per second through a pipe of radius r with flow velocity v is:",
+              "options": [
+                "A) pi*r*v",
+                "B) pi*r^2*v",
+                "C) 2*pi*r*v",
+                "D) pi*r^2/v"
+              ],
+              "correct_answer": "B) pi*r^2*v",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "1 cubic meter (1 m^3) is equal to how many liters?",
+              "options": [
+                "A) 100 L",
+                "B) 1000 L",
+                "C) 10000 L",
+                "D) 10 L"
+              ],
+              "correct_answer": "B) 1000 L",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Water flows at 3 m/s through a pipe of radius 2 cm. Calculate volume discharged in 1 minute in liters.",
+              "marking_scheme_answer": "Radius r = 0.02 m. Velocity v = 3 m/s. Time t = 60 s. Volume = pi * r^2 * v * t = (22/7) * (0.02)^2 * 3 * 60 = (22/7) * 0.0004 * 180 = 0.2262 m^3 = 226.2 liters.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "A rectangular tank 10 m x 8 m x 6 m is filled with water. Find mass of water in metric tons (1 m^3 water = 1 ton).",
+              "marking_scheme_answer": "Volume = 10 * 8 * 6 = 480 m^3. Mass = 480 metric tons.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Water in a canal 6 m wide and 1.5 m deep flows with speed 10 km/h. How much area will it irrigate in 30 minutes if 8 cm of standing water is required?",
+              "marking_scheme_answer": "Canal cross section = 6 * 1.5 = 9 m^2. Flow speed = 10,000 m/h. Distance in 30 min (0.5 h) = 5,000 m. Volume discharged = 9 * 5000 = 45,000 m^3. Required water height = 0.08 m. Irrigated Area = Volume / Height = 45,000 / 0.08 = 562,500 m^2 = 56.25 hectares.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Tank Filling Time. A cylindrical tank of diameter 10 m and depth 2 m is filled by a pipe of internal diameter 20 cm at flow speed 3 km/h. Find time taken to fill the tank completely.",
+              "marking_scheme_answer": "Tank volume = pi * R^2 * H = pi * (5)^2 * 2 = 50*pi m^3. Pipe radius r = 0.1 m. Flow velocity v = 3000 m/h. Pipe discharge per hour = pi * r^2 * v = pi * (0.1)^2 * 3000 = 30*pi m^3/h. Time to fill = Tank Volume / Discharge Rate = 50*pi / 30*pi = 5/3 hours = 1 hour 40 minutes.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Chapter 14 Practice Paper (Packaging Optimization & Nets)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Among all cuboids of fixed volume V, which shape minimizes total surface area?",
+              "options": [
+                "A) Elongated box",
+                "B) Cube",
+                "C) Flat plate",
+                "D) Cylinder"
+              ],
+              "correct_answer": "B) Cube",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "An unfolded 2D flat layout of a 3D solid is called its:",
+              "options": [
+                "A) Cross section",
+                "B) Net",
+                "C) Projection",
+                "D) Contour"
+              ],
+              "correct_answer": "B) Net",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Prove why a cube of side a = 10 cm has smaller surface area than a cuboid 20 cm x 10 cm x 5 cm sharing same 1000 cm^3 volume.",
+              "marking_scheme_answer": "Cube SA = 6*(10^2) = 600 cm^2. Cuboid SA = 2(20*10 + 10*5 + 20*5) = 2(200 + 50 + 100) = 700 cm^2. Cube SA (600) < Cuboid SA (700).",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Draw 2D unfolded cross net description for a right circular cone.",
+              "marking_scheme_answer": "A cone net consists of a sector of a circle (radius l, arc length 2*pi*r) attached to a full circle of radius r.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A solid wooden toy is in the form of a hemisphere surmounted by a cone. Radii of cone and hemisphere are 3.5 cm. Total height of toy is 15.5 cm. Calculate total volume and surface area of the toy.",
+              "marking_scheme_answer": "Cone height h = 15.5 - 3.5 = 12 cm. Slant height l = sqrt(3.5^2 + 12^2) = sqrt(12.25 + 144) = 12.5 cm. Total Volume = V_cone + V_hemi = (1/3)*pi*r^2*h + (2/3)*pi*r^3 = (1/3)*pi*(3.5)^2 * (12 + 2*3.5) = (1/3)*(22/7)*12.25 * 19 = 243.83 cm^3. Total Surface Area = CSA_cone + CSA_hemi = pi*r*l + 2*pi*r^2 = (22/7)*3.5*12.5 + 2*(22/7)*12.25 = 137.5 + 77 = 214.5 cm^2.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Dome Painting Budget. A building dome is hemispherical with base circumference 35.2 m. (a) Calculate outer radius r. (b) Calculate painting cost at Rs 10 per 100 cm^2.",
+              "marking_scheme_answer": "(a) Base circumference 2*pi*r = 35.2 m => r = (35.2 * 7) / 44 = 5.6 m = 560 cm. (b) Outer CSA = 2*pi*r^2 = 2*(22/7)*560*560 = 1,971,200 cm^2. Cost = 1,971,200 * (10 / 100) = Rs 197,120.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Chapter 14 Practice Paper (Exhaustive Unit Test)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A solid metallic sphere of radius R is melted to form a wire of radius r and length L. Preserved quantity is:",
+              "options": [
+                "A) Surface area",
+                "B) Volume",
+                "C) Radius",
+                "D) Diameter"
+              ],
+              "correct_answer": "B) Volume",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Ratio of volumes of sphere and circumscribed cylinder (diameter = height = 2R) is:",
+              "options": [
+                "A) 1:2",
+                "B) 2:3",
+                "C) 3:4",
+                "D) 1:3"
+              ],
+              "correct_answer": "B) 2:3",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "A sphere of radius 3 cm is melted and drawn into a wire of diameter 0.4 cm. Find length of wire L.",
+              "marking_scheme_answer": "Volume sphere = (4/3)*pi*(3^3) = 36*pi cm^3. Wire radius r = 0.2 cm. Wire volume = pi*(0.2^2)*L = 0.04*pi*L. Equating: 0.04*pi*L = 36*pi => L = 36 / 0.04 = 900 cm = 9 meters.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Compare volume of sphere V1 and circumscribed cylinder V2.",
+              "marking_scheme_answer": "V1 = (4/3)*pi*R^3. V2 = pi*R^2*(2R) = 2*pi*R^3. Ratio V1/V2 = (4/3)/2 = 2/3.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A open cylindrical bucket 32 cm high with base radius 18 cm is filled with sand. The bucket is emptied on ground and a conical heap of sand is formed of height 24 cm. Find radius and slant height of conical heap.",
+              "marking_scheme_answer": "Volume bucket = pi*(18^2)*32 = 10368*pi cm^3. Volume heap = (1/3)*pi*(r^2)*24 = 8*pi*r^2. Equating: 8*pi*r^2 = 10368*pi => r^2 = 1296 => r = 36 cm. Slant height l = sqrt(36^2 + 24^2) = sqrt(1296 + 576) = sqrt(1872) = 43.27 cm.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Planetary Volume Comparison. Earth radius R_earth ~ 6370 km. Jupiter radius R_jup ~ 69900 km. (a) Compute radius ratio k = R_jup / R_earth. (b) Apply Square-Cube Law to find how many Earths can fit inside Jupiter.",
+              "marking_scheme_answer": "(a) Radius ratio k = 69900 / 6370 = 10.973 ~ 11. (b) Volume scales with k^3 = (10.973)^3 = 1321. Approximately 1,321 Earths can fit inside Jupiter.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

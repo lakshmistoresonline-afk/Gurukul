@@ -1,0 +1,121 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Working with Fractions",
+  "mermaid_syntax": "graph TD\n  Root[\"Working with Fractions\"]\n  Root --> B1[\"Fraction Operations and Historical Rules\"]\n  B1 --> B1_S1[\"Brahmagupta's Multiplication Formula (628 CE)\"]\n  B1 --> B1_S2[\"Division via Reciprocals\"]\n  Root --> B2[\"Telescoping Product Series\"]\n  B2 --> B2_S1[\"Telescoping Cancellation Pattern\"]",
+  "d3_react_flow_tree": {
+    "id": "node_root_ch8",
+    "label": "Working with Fractions",
+    "node_color": "#38BDF8",
+    "icon": "book_open",
+    "type": "root",
+    "children": [
+      {
+        "id": "node_b_8_1",
+        "label": "Fraction Operations and Historical Rules",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_8_1_1",
+            "label": "Brahmagupta's Multiplication Formula (628 CE)",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Brahmagupta's Multiplication Formula (628 CE)",
+              "description": "To multiply fractions, multiply numerators together and denominators together: (a / b) * (c / d) = (a * c) / (b * d).",
+              "key_formula": "Brahmagupta's Rule",
+              "example": "(2/3) * (4/5) = 8/15; Area model with 3/4 x 2/3 overlapping grid = 6/12 = 1/2."
+            }
+          },
+          {
+            "id": "node_sub_8_1_2",
+            "label": "Division via Reciprocals",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Division via Reciprocals",
+              "description": "Dividing by a fraction is equivalent to multiplying by its reciprocal: (a / b) / (c / d) = (a / b) * (d / c).",
+              "key_formula": "Reciprocal (Multiplicative Inverse)",
+              "example": "Maria decorating bags: 8 m / (1/4 m per bag) = 8 * 4 = 32 bags."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_8_2",
+        "label": "Telescoping Product Series",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_8_2_1",
+            "label": "Telescoping Cancellation Pattern",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Telescoping Cancellation Pattern",
+              "description": "In products of the form (1 - 1/2)(1 - 1/3)(1 - 1/4)...(1 - 1/n), adjacent numerators and denominators cancel out completely.",
+              "key_formula": "Telescoping Series",
+              "example": "(1/2) * (2/3) * (3/4) * ... * (9/10) = 1/10."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "asset_id": "ch8_fractions_area_telescoping",
+    "chapter_number": 8,
+    "chapter_title": "Working with Fractions",
+    "title": "Brahmagupta Area Model & Telescoping Series Diagram",
+    "file_name": "ch8_fractions_area_telescoping.png",
+    "local_url": "/assets/images/ch8_fractions_area_telescoping.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Brahmagupta's fraction multiplication rule, 1x1 area grid model, reciprocal division, and telescoping series cancellation.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_8_1",
+        "title": "Brahmagupta's Rule (628 CE)",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "(a/b) * (c/d) = (a*c)/(b*d). Multiply numerators together and denominators together. Area model overlap."
+      },
+      {
+        "hotspot_id": "hs_8_2",
+        "title": "Reciprocal Division & Scaling",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "(a/b) / (c/d) = (a/b) * (d/c). Dividing by proper fraction (<1) ENLARGES the quotient value."
+      },
+      {
+        "hotspot_id": "hs_8_3",
+        "title": "Real-World Fraction Scaling",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Lace bags: 8 m / (1/4 m) = 32 bags. Tank fill time: 1 / (7/10) = 10/7 hours = 1 3/7 hrs."
+      },
+      {
+        "hotspot_id": "hs_8_4",
+        "title": "Telescoping Series Cancellation",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "(1 - 1/2)(1 - 1/3)...(1 - 1/n) = (1/2)*(2/3)*...*((n-1)/n) = 1/n via cross-cancellation."
+      }
+    ]
+  }
+}

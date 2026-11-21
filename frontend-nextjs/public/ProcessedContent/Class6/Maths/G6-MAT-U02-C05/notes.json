@@ -1,0 +1,99 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Prime Time",
+  "section_1_complete_textbook_notes": {
+    "chapter_overview": "This chapter introduces number theory: factors, multiples, prime numbers, composite numbers, co-prime pairs, the Sieve of Eratosthenes, divisibility rules (for 2, 3, 4, 5, 8, 9, 10), unique prime factorisation, Highest Common Factor (HCF), and Lowest Common Multiple (LCM), including the key property HCF(a, b) x LCM(a, b) = a x b.",
+    "detailed_sections": [
+      {
+        "section_number_title": "5.1 Factors, Multiples, and Prime/Composite Definitions",
+        "full_textbook_explanation": "A Factor divides a number completely with zero remainder. A Multiple is obtained by multiplying a number by counting numbers. Prime Numbers have exactly 2 factors (1 and itself). Composite Numbers have more than 2 factors. 1 has only 1 factor and is neither prime nor composite. Co-prime Numbers share no common factors other than 1 (HCF = 1).",
+        "mathematical_definitions": [
+          {
+            "term": "Prime Number",
+            "formal_definition": "A natural number greater than 1 that has exactly two distinct positive factors: 1 and itself.",
+            "example": "2, 3, 5, 7, 11, 13..."
+          },
+          {
+            "term": "Co-prime Numbers",
+            "formal_definition": "Two positive integers sharing no common factor other than 1.",
+            "example": "8 and 9 are co-prime."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "HCF and LCM Relation Formula",
+            "statement_or_expression": "HCF(a, b) x LCM(a, b) = a x b",
+            "variable_definitions": "a, b = positive integers",
+            "direct_example": "For a=12, b=18: HCF=6, LCM=36 -> 6 x 36 = 216 = 12 x 18."
+          }
+        ]
+      },
+      {
+        "section_number_title": "5.2 Divisibility Rules and Prime Factorisation",
+        "full_textbook_explanation": "Divisibility tests allow rapid factor checking:\n- By 2: Last digit even (0, 2, 4, 6, 8)\n- By 3: Sum of digits divisible by 3\n- By 4: Last 2 digits form a number divisible by 4\n- By 5: Last digit 0 or 5\n- By 8: Last 3 digits form a number divisible by 8\n- By 9: Sum of digits divisible by 9\n- By 10: Last digit 0.",
+        "mathematical_definitions": [
+          {
+            "term": "Prime Factorisation",
+            "formal_definition": "Expressing a composite number uniquely as the product of prime numbers.",
+            "example": "12 = 2^2 x 3."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Divisibility Rule for 3 and 9",
+            "statement_or_expression": "Sum of Digits = k x 3 (for div by 3); Sum of Digits = k x 9 (for div by 9)",
+            "variable_definitions": "k = non-zero integer",
+            "direct_example": "For 573: Sum = 5+7+3 = 15 (divisible by 3)."
+          }
+        ]
+      }
+    ],
+    "fundamental_theorem_mastery": {
+      "concept": "Fundamental Theorem of Arithmetic & 3-Number HCF/LCM",
+      "explanation": "Every composite integer > 1 can be uniquely factorized into primes. The product relation HCF(a,b)*LCM(a,b) = a*b holds strictly for two numbers and does not generalize directly to three numbers."
+    }
+  },
+  "section_2_step_by_step_algorithms": [
+    {
+      "method_name": "Prime Factorisation by Successive Division",
+      "step_by_step_instructions": [
+        "Step 1: Divide the integer by its smallest prime factor.",
+        "Step 2: Divide the resulting quotient by its smallest prime factor.",
+        "Step 3: Repeat division until quotient becomes 1.",
+        "Step 4: Express integer as product of all prime divisors."
+      ],
+      "model_textbook_example": {
+        "problem": "Find prime factorisation of 198.",
+        "working_steps": [
+          "198 / 2 = 99",
+          "99 / 3 = 33",
+          "33 / 3 = 11",
+          "11 / 11 = 1"
+        ],
+        "final_answer": "198 = 2 x 3^2 x 11"
+      }
+    }
+  ],
+  "section_3_in_text_boxes_and_try_these": [
+    {
+      "box_type": "Idli-Vada Game Box",
+      "location_or_title": "Page 108",
+      "question_text": "In the Idli-Vada game (Idli on multiples of 3, Vada on multiples of 5), at what number is 'Idli-Vada' called for the 10th time?",
+      "complete_solution": "'Idli-Vada' is called on common multiples of 3 and 5, which are multiples of LCM(3, 5) = 15. The 10th occurrence = 10 x 15 = 150."
+    }
+  ],
+  "section_4_complete_textbook_exercise_solutions": [
+    {
+      "exercise_number": "Ex 5.1",
+      "question_number": "Q1",
+      "question_text": "Find the largest 4-digit palindromic number divisible by 4.",
+      "solution_steps": [
+        "A 4-digit palindrome has form ABBA.",
+        "Divisibility by 4 requires last two digits BA to be divisible by 4.",
+        "For largest, try A = 8 (even last digit). 8BB8.",
+        "Try B = 8: 88 / 4 = 22 (Yes!). Number = 8888."
+      ],
+      "final_answer_with_units": "8888"
+    }
+  ]
+}
