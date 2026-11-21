@@ -609,7 +609,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   }
 
   return (
-    <div className={`min-h-screen bg-[#F5F6F8] text-slate-900 ${isZenFocusMode ? 'fixed inset-0 z-40 p-6 overflow-y-auto bg-[#F5F6F8]' : 'p-4 sm:p-6 space-y-6'}`}>
+    <div className={`min-h-screen w-full max-w-full overflow-x-hidden bg-[#F5F6F8] text-slate-900 ${isZenFocusMode ? 'fixed inset-0 z-40 p-3 sm:p-6 overflow-y-auto bg-[#F5F6F8]' : 'p-2 sm:p-6 space-y-3 sm:space-y-6'}`}>
       {/* Top Scroll Reading Progress Bar */}
       <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-slate-200">
         <div

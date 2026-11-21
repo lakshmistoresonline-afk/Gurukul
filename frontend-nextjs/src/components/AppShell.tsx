@@ -135,12 +135,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const studentName = currentUser?.displayName || currentUser?.email?.split('@')[0] || (activeEmail ? (activeEmail.includes('admin') ? 'System Admin' : `Student ${getAuthoritativeClassForUser({ email: activeEmail }, 'guest')}`) : 'Student 10');
 
   return (
-    <div className="min-h-screen bg-[#F5F6F8] text-slate-900 flex flex-col md:flex-row antialiased selection:bg-teal-500 selection:text-white">
+    <div className="min-h-screen max-w-full overflow-x-hidden bg-[#F5F6F8] text-slate-900 flex flex-col md:flex-row antialiased selection:bg-teal-500 selection:text-white">
       {/* Curved Sidebar Navigation */}
       <StudentNavigation />
 
       {/* Main Container with Top App Header Bar */}
-      <main className="flex-1 flex flex-col min-w-0 pb-16 md:pb-0">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden flex flex-col min-w-0 pb-16 md:pb-0">
         {/* Sticky Top Header Bar (100% Focused on Learning Area) */}
         <header className="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200/80 px-3 sm:px-8 py-1.5 sm:py-2.5 flex items-center justify-between gap-2 shadow-2xs">
           <div className="flex items-center gap-2">

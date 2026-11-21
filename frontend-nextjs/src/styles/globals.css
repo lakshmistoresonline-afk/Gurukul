@@ -14,7 +14,9 @@
   --sidebar-blue: #244B86;
 }
 
-body {
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
   color: var(--text-main);
   background: var(--background);
   font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -27,5 +29,14 @@ body {
   }
   .card {
     @apply bg-white rounded-3xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition-shadow;
+  }
+}
+
+@layer utilities {
+  .dyslexic-font-active,
+  .dyslexic-font-active * {
+    font-family: OpenDyslexic, Comic Sans MS, cursive, sans-serif !important;
+    letter-spacing: 0.05em !important;
+    line-height: 1.8 !important;
   }
 }

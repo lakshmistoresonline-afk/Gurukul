@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -19,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="antialiased min-h-screen bg-[#F5F6F8] text-slate-900">
+    <html lang="en" className="overflow-x-hidden max-w-full">
+      <body className="antialiased min-h-screen max-w-full overflow-x-hidden bg-[#F5F6F8] text-slate-900">
         <AppShell>{children}</AppShell>
       </body>
     </html>
