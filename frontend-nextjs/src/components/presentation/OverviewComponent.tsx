@@ -116,10 +116,14 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
                       <p className="text-xs text-teal-200/80 font-medium">Protected Interactive Google NotebookLM Studio Lesson</p>
                     </div>
                     <button
-                      onClick={() => setShowStudioModal(true)}
+                      onClick={() => {
+                        if (unmaskedUrl) {
+                          window.open(unmaskedUrl, '_blank', 'noopener,noreferrer');
+                        }
+                      }}
                       className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
                     >
-                      <span>Launch Studio Video Lesson 🔒</span>
+                      <span>Launch Studio Video Lesson 🔒 ↗</span>
                     </button>
                   </div>
                 ) : isYoutube ? (
@@ -143,35 +147,6 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
                     Your browser does not support HTML5 video playback.
                   </video>
                 )}
-              </div>
-            </div>
-          )}
-
-          {/* In-App Sandboxed Studio Modal */}
-          {showStudioModal && (
-            <div className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4" onContextMenu={(e) => e.preventDefault()}>
-              <div className="bg-slate-900 border border-teal-500/30 rounded-3xl w-full max-w-5xl h-[85vh] flex flex-col overflow-hidden shadow-2xl animate-in fade-in zoom-in-95">
-                <div className="p-4 bg-slate-950 border-b border-white/10 flex items-center justify-between text-white">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-black text-teal-300 font-mono uppercase">🔒 Protected Studio Session</span>
-                    <span className="text-xs font-bold text-slate-300">• {data.video_title || chapterTitle}</span>
-                  </div>
-                  <button
-                    onClick={() => setShowStudioModal(false)}
-                    className="px-3 py-1 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold cursor-pointer"
-                  >
-                    Close Studio ✕
-                  </button>
-                </div>
-                <div className="flex-1 w-full h-full bg-black relative">
-                  <iframe
-                    src={unmaskedUrl}
-                    title="NotebookLM Studio Lesson"
-                    className="w-full h-full border-0"
-                    sandbox="allow-scripts allow-same-origin allow-popups"
-                    allow="autoplay; encrypted-media"
-                  />
-                </div>
               </div>
             </div>
           )}

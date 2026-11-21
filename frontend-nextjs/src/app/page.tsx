@@ -371,7 +371,7 @@ export default function StudentDashboard() {
   const levelProgressXp = xpPoints % 250;
 
   return (
-    <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-8 bg-[#F5F6F8] min-h-screen">
+    <div className="w-full max-w-full px-4 sm:px-8 py-6 space-y-8 bg-[#F5F6F8] min-h-screen">
       {/* Student Gamified Hero Banner */}
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-teal-700 via-emerald-700 to-indigo-800 text-white p-6 sm:p-8 shadow-xl">
         <div className="absolute right-0 top-0 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
