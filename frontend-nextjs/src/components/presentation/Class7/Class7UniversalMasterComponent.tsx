@@ -21,22 +21,42 @@ function renderSafeText(val: any): React.ReactNode {
   return String(val);
 }
 
+function safeArray(val: any): any[] {
+  if (!val) return [];
+  if (Array.isArray(val)) return val;
+  if (typeof val === 'object') {
+    const arr: any[] = [];
+    for (const v of Object.values(val)) {
+      if (Array.isArray(v)) {
+        arr.push(...v);
+      } else if (v && typeof v === 'object') {
+        arr.push(v);
+      }
+    }
+    return arr.length > 0 ? arr : [val];
+  }
+  return [val];
+}
+
 interface Class7MasterProps {
   data: any;
 }
 
 export default function Class7UniversalMasterComponent({ data }: Class7MasterProps) {
-  const notes = data?.zero_omission_notes || [];
-  const lab = data?.practical_lab_activity_or_methodology_manual || [];
-  const visuals = data?.visuals_diagrams_and_tabular_data || [];
-  const glossary = data?.master_glossary_units_and_formulas || {};
-  const qBank = data?.exam_question_bank || {};
+  const notes = data?.zero_omission_notes || data?.m1_zero_omission_notes || [];
+  const rawLab = data?.practical_lab_activity_or_methodology_manual || data?.m3_practical_activities_and_procedures || [];
+  const rawVisuals = data?.visuals_diagrams_and_tabular_data || data?.m4_diagrams_and_tables || [];
+  const glossary = data?.master_glossary_units_and_formulas || data?.m2_key_terms_formulas_and_rules || {};
+  const qBank = data?.exam_question_bank || data?.m6_tiered_exam_question_bank || {};
 
-  const hasNotes = Array.isArray(notes) && notes.length > 0;
-  const hasLab = Array.isArray(lab) && lab.length > 0;
-  const hasVisuals = Array.isArray(visuals) && visuals.length > 0;
-  const hasGlossary = glossary && Object.keys(glossary).length > 0;
-  const hasQBank = qBank && Object.keys(qBank).length > 0;
+  const lab = safeArray(rawLab);
+  const visuals = safeArray(rawVisuals);
+
+  const hasNotes = notes && (Array.isArray(notes) ? notes.length > 0 : Object.keys(notes).length > 0);
+  const hasLab = lab.length > 0;
+  const hasVisuals = visuals.length > 0;
+  const hasGlossary = glossary && (Array.isArray(glossary) ? glossary.length > 0 : Object.keys(glossary).length > 0);
+  const hasQBank = qBank && (Array.isArray(qBank) ? qBank.length > 0 : Object.keys(qBank).length > 0);
 
   const [activeSubTab, setActiveSubTab] = useState<string>(() => {
     if (hasNotes) return 'notes';
@@ -106,13 +126,25 @@ export default function Class7UniversalMasterComponent({ data }: Class7MasterPro
       {activeSubTab === 'notes' && hasNotes && (
         <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Zero-Omission Master Notes</h3>
-          <div className="space-y-3">
-            {notes.map((item: any, idx: number) => (
-              <div key={idx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-1">
-                <div className="text-sm font-extrabold text-indigo-600">{item.topic || item.heading || `Note #${idx + 1}`}</div>
-                <div className="text-xs text-slate-700 leading-relaxed">{renderSafeText(item.content || item.explanation || item)}</div>
+          <div className="space-y-4">
+            {Array.isArray(notes) ? (
+              notes.map((item: any, idx: number) => (
+                <div key={idx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-1">
+                  <div className="text-sm font-extrabold text-indigo-600">{item.topic || item.heading || item.section_number_and_title || `Note #${idx + 1}`}</div>
+                  <div className="text-xs text-slate-700 leading-relaxed">{renderSafeText(item.content || item.explanation || item.full_notes || item)}</div>
+                </div>
+              ))
+            ) : (
+              <div className="space-y-4">
+                {notes.summary && (
+                  <div className="p-4 bg-indigo-50/50 border border-indigo-100 rounded-2xl space-y-1">
+                    <div className="text-xs font-black text-indigo-900 uppercase font-mono">Executive Summary</div>
+                    <div className="text-xs text-slate-700 leading-relaxed font-medium">{renderSafeText(notes.summary)}</div>
+                  </div>
+                )}
+                {renderSafeText(notes.detailed_sections || notes)}
               </div>
-            ))}
+            )}
           </div>
         </div>
       )}
@@ -201,6 +233,18 @@ export default function Class7UniversalMasterComponent({ data }: Class7MasterPro
               </div>
             )
           ))}
+        </div>
+      )}
+
+      {/* Universal Fallback when sub-tab content keys are absent */}
+      {!hasNotes && !hasLab && !hasVisuals && !hasGlossary && !hasQBank && (
+        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
+          <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">
+            {data?.title || data?.chapter_title || data?.chapterTitle || 'Master Reference Guide'}
+          </h3>
+          <div className="p-4 bg-slate-50 border border-slate-100 rounded-2xl text-xs text-slate-700 leading-relaxed font-medium">
+            {renderSafeText(data?.content || data?.master || data?.notes || data?.summary || data)}
+          </div>
         </div>
       )}
     </div>

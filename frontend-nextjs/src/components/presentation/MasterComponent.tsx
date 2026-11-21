@@ -373,6 +373,18 @@ export default function MasterComponent({ data }: MasterProps) {
           </div>
         </div>
       )}
+
+      {/* Universal Fallback when no sub-tab keys match */}
+      {availableSubTabs.length === 0 && (
+        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
+          <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">
+            {data?.title || data?.chapter_title || data?.chapterTitle || 'Master Reference Guide'}
+          </h3>
+          <div className="p-4 bg-slate-50 border border-slate-100 rounded-2xl text-xs text-slate-700 leading-relaxed font-medium">
+            {renderSafeText(data?.content || data?.master || data?.notes || data?.summary || data)}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
