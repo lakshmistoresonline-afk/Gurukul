@@ -13,6 +13,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
   const [activeSubTab, setActiveSubTab] = useState<string>('summary');
   const [reflectionAnswer, setReflectionAnswer] = useState<string | null>(null);
   const [showStudioModal, setShowStudioModal] = useState<boolean>(false);
+  const [videoLoadError, setVideoLoadError] = useState<boolean>(false);
 
   if (!data) {
     return (
@@ -99,21 +100,21 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
             <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 select-none" onContextMenu={(e) => e.preventDefault()}>
               <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                 <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase flex items-center gap-2">
-                  <span>🔒 NCERT {isNotebookLm ? 'Protected NotebookLM Studio Lesson' : 'Protected Video Lesson'}</span>
+                  <span>🔒 NCERT {isNotebookLm || videoLoadError ? 'Protected NotebookLM Studio Lesson' : 'Protected Video Lesson'}</span>
                 </h3>
                 <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full font-bold border border-teal-200">
-                  {isNotebookLm ? '✨ Encrypted Studio Stream' : 'Protected HD Lesson'}
+                  {isNotebookLm || videoLoadError ? '✨ Encrypted Studio Stream' : 'Protected HD Lesson'}
                 </span>
               </div>
               <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                {isNotebookLm ? (
-                  <div className="w-full h-full p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4">
+                {isNotebookLm || videoLoadError ? (
+                  <div className="w-full h-full p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in duration-200">
                     <div className="w-16 h-16 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-3xl shadow-lg border border-teal-400/30">
                       ✨
                     </div>
                     <div className="space-y-1 max-w-md">
-                      <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NotebookLM Gemini Video Lesson'}</h4>
-                      <p className="text-xs text-teal-200/80 font-medium">Protected Interactive Google NotebookLM Studio Lesson</p>
+                      <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NCERT Interactive Video Studio'}</h4>
+                      <p className="text-xs text-teal-200/80 font-medium">Interactive Video &amp; Audio Studio Lesson for Class {data.grade || '5'} {subject || 'NCERT'}</p>
                     </div>
                     <a
                       href={`/studio/${maskedToken}`}
@@ -121,7 +122,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                       rel="noopener noreferrer"
                       className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
                     >
-                      <span>Launch Studio Video Lesson 🔒 ↗</span>
+                      <span>Launch Interactive Studio Video 🔒 ↗</span>
                     </a>
                   </div>
                 ) : isYoutube ? (
@@ -137,6 +138,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                     controls
                     controlsList="nodownload"
                     onContextMenu={(e) => e.preventDefault()}
+                    onError={() => setVideoLoadError(true)}
                     preload="metadata"
                     className="w-full h-full object-contain"
                     poster="/illustrations/chapter-learning.svg"
