@@ -384,16 +384,6 @@ export default function StudentDashboard() {
             </div>
 
             <div className="flex flex-wrap items-center gap-2">
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/25 border border-amber-300/40 text-amber-200 text-xs font-black">
-                <Flame className="w-4 h-4 text-amber-400 animate-pulse" />
-                <span>{progress.streakDays || 1} Day Streak</span>
-              </div>
-
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-400/25 border border-teal-300/40 text-teal-100 text-xs font-black">
-                <Star className="w-4 h-4 text-amber-300 fill-amber-300" />
-                <span>Level {currentLevel} • {xpPoints} XP</span>
-              </div>
-
               {currentUser?.email?.includes('admin') ? (
                 <button
                   onClick={() => setGradeModalOpen(true)}
@@ -562,130 +552,66 @@ export default function StudentDashboard() {
         </div>
       )}
 
-      {/* Three Column Grid: Gamified Today's Quests, Level Progress & Resume Learning */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Today's Mission Quests Card */}
-        <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm space-y-4 flex flex-col justify-between">
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono flex items-center gap-1.5">
-                <Target className="w-4 h-4 text-teal-600" /> DAILY QUESTS
-              </h3>
-              <span className="text-[10px] font-mono font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200">
-                +100 XP
-              </span>
-            </div>
-
-            <div className="space-y-2">
-              <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className={`w-4 h-4 ${todayEventsCount > 0 ? 'text-emerald-600' : 'text-slate-300'}`} />
-                  <span>Complete 1 Chapter Lesson</span>
-                </div>
-                <span className="text-[10px] font-mono font-extrabold text-amber-600">+50 XP</span>
-              </div>
-
-              <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className={`w-4 h-4 ${todayEventsCount > 1 ? 'text-emerald-600' : 'text-slate-300'}`} />
-                  <span>Practice Arena Quiz</span>
-                </div>
-                <span className="text-[10px] font-mono font-extrabold text-amber-600">+30 XP</span>
-              </div>
-
-              <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className={`w-4 h-4 ${todayEventsCount > 2 ? 'text-emerald-600' : 'text-slate-300'}`} />
-                  <span>Ask AI Tutor 1 Question</span>
-                </div>
-                <span className="text-[10px] font-mono font-extrabold text-amber-600">+20 XP</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-1.5 pt-2">
-            <div className="flex justify-between text-xs font-mono font-bold text-slate-500">
-              <span>Goal Progress</span>
-              <span>{Math.min(100, Math.round((todayEventsCount / 2) * 100))}%</span>
-            </div>
-            <div className="w-full bg-slate-100 rounded-full h-3.5 overflow-hidden border border-slate-200">
-              <div
-                className="bg-gradient-to-r from-teal-500 to-emerald-600 h-full transition-all duration-500"
-                style={{ width: `${Math.min(100, (todayEventsCount / 2) * 100)}%` }}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Scholar Level & XP Progress Card */}
-        <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm space-y-4 flex flex-col justify-between">
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
-              <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono flex items-center gap-1.5">
-                <Award className="w-4 h-4 text-teal-600" /> SCHOLAR LEVEL
-              </h3>
-              <span className="text-[10px] font-mono font-black text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-200">
-                Level {currentLevel}
-              </span>
-            </div>
-
-            <div className="text-center py-2">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-white flex items-center justify-center text-3xl mx-auto shadow-md">
-                🏆
-              </div>
-              <h4 className="text-lg font-black text-slate-900 mt-2">Class {selectedGrade} Scholar</h4>
-              <p className="text-xs text-slate-500 font-semibold">{levelProgressXp} / 250 XP to Level {currentLevel + 1}</p>
-            </div>
-          </div>
-
-          <div className="space-y-1.5">
-            <div className="flex justify-between text-xs font-mono font-bold text-slate-500">
-              <span>Next Level Progress</span>
-              <span>{Math.round((levelProgressXp / 250) * 100)}%</span>
-            </div>
-            <div className="w-full bg-slate-100 rounded-full h-3.5 overflow-hidden border border-slate-200">
-              <div
-                className="bg-gradient-to-r from-amber-400 to-amber-500 h-full transition-all duration-500"
-                style={{ width: `${Math.round((levelProgressXp / 250) * 100)}%` }}
-              />
-            </div>
-          </div>
-        </div>
-
+      {/* Active Learning Focus Section (100% Focused on Curriculum & Lesson Continuation) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Continue Learning Resume Card */}
-        <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-4">
-          <div className="space-y-2">
+        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-4">
+          <div className="space-y-3">
             <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono flex items-center gap-1.5">
-              <Compass className="w-4 h-4 text-teal-600" /> CONTINUE LEARNING
+              <Compass className="w-4 h-4 text-teal-600" /> CONTINUE LEARNING WORKSPACE
             </h3>
 
             {isValidLastActivity ? (
-              <div className="p-3.5 rounded-2xl bg-teal-50/60 border border-teal-200/80 space-y-1">
-                <p className="text-[11px] font-black text-teal-700 uppercase tracking-wider font-mono">
+              <div className="p-4 rounded-2xl bg-teal-50/70 border border-teal-200/90 space-y-1.5">
+                <p className="text-xs font-black text-teal-800 uppercase tracking-wider font-mono">
                   {continueSubjectTitle}
                 </p>
-                <p className="text-sm font-black text-slate-900 leading-snug">
+                <p className="text-base font-black text-slate-900 leading-snug">
                   {continueChapterTitle}
                 </p>
-                <p className="text-[10px] text-slate-500 font-semibold">Resume at the last validated chapter workspace</p>
+                <p className="text-xs text-slate-600 font-medium">Resume studying your active chapter lesson</p>
               </div>
             ) : (
-              <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
-                <p className="text-[11px] font-extrabold text-slate-500 uppercase tracking-wider">Curriculum Workspace</p>
-                <p className="text-xs font-black text-slate-800">Select any subject above to enter a chapter!</p>
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+                <p className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Active Curriculum Workspace</p>
+                <p className="text-sm font-black text-slate-800">Select any Class {selectedGrade} subject above to enter a lesson!</p>
               </div>
             )}
           </div>
 
           <Link
             href={continueUrl}
-            className="w-full py-3 rounded-2xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+            className="w-full py-3.5 rounded-2xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
-            <span>{isValidLastActivity ? 'Continue Chapter' : 'Browse Subjects'}</span>
+            <span>{isValidLastActivity ? 'Continue Lesson ➔' : 'Browse Subjects ➔'}</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
+
+        {/* AI Tutor Companion Shortcut Card */}
+        <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-white shadow-md flex flex-col justify-between space-y-4">
+          <div className="space-y-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-bold uppercase tracking-wider">
+              <Bot className="w-3.5 h-3.5 text-teal-300" />
+              <span>AI Academic Tutor</span>
+            </div>
+            <h3 className="text-xl font-black tracking-tight text-white">Have questions about Class {selectedGrade} topics?</h3>
+            <p className="text-xs text-indigo-100/80 font-medium leading-relaxed">
+              Ask your AI Tutor step-by-step questions on Science, Mathematics, English Grammar, Social Science, or Coding!
+            </p>
+          </div>
+
+          <Link
+            href="/tutor"
+            className="w-full py-3.5 rounded-2xl bg-teal-400 hover:bg-teal-300 text-slate-950 font-black text-xs shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <Bot className="w-4 h-4 text-slate-950" />
+            <span>Ask AI Tutor a Question ➔</span>
+          </Link>
+        </div>
       </div>
+
+      {/* Quick Revision Flashcard Widget */}
 
       {/* Quick Revision Flashcard Widget */}
       <div className="p-6 rounded-3xl bg-white border border-slate-200/90 space-y-4 shadow-sm">
