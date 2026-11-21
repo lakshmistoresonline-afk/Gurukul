@@ -110,6 +110,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [isSplitView, setIsSplitView] = useState<boolean>(false);
   const [viewMode, setViewMode] = useState<'single_stream' | 'tabs'>('single_stream');
   const [isZenFocusMode, setIsZenFocusMode] = useState<boolean>(false);
+  const [showToolsDrawer, setShowToolsDrawer] = useState<boolean>(false);
   const [splitSideContentType, setSplitSideContentType] = useState<string>('mindmaps');
   const [splitSideData, setSplitSideData] = useState<any>(null);
   const [loadingSplitSide, setLoadingSplitSide] = useState<boolean>(false);
@@ -628,29 +629,30 @@ export default function CatchAllChapterClient({ segments }: Props) {
         content_type={activeTab}
       />
 
-      {/* Chapter Workspace Header Card */}
-      <div className="bg-white border border-slate-200/90 rounded-3xl p-6 shadow-sm space-y-4">
-        <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold text-slate-500">
-          <div className="flex items-center gap-2">
-            {/* Zen Focus Mode Button */}
-            <button
-              onClick={() => setIsZenFocusMode(!isZenFocusMode)}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer flex items-center gap-1 ${
-                isZenFocusMode
-                  ? 'bg-purple-600 text-white border-purple-700 shadow-md'
-                  : 'bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100'
-              }`}
-              title="Toggle Fullscreen Zen Focus Reading Mode"
-            >
-              {isZenFocusMode ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
-              {isZenFocusMode ? 'Exit Zen Mode' : 'Zen Focus Mode'}
-            </button>
+      {/* Chapter Workspace Header Card (Decluttered & Streamlined for Maximum Reading Space) */}
+      <div className="bg-white border border-slate-200/90 rounded-3xl p-4 sm:p-6 shadow-sm space-y-3">
+        {/* Top Title & Primary Actions Row */}
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
+          <div className="space-y-0.5">
+            <div className="flex items-center gap-2 text-[11px] font-bold text-slate-500 font-mono">
+              <Link href="/subjects" className="text-teal-700 hover:underline flex items-center gap-1">
+                <ArrowLeft className="w-3 h-3" /> All Subjects
+              </Link>
+              <span>/</span>
+              <span className="uppercase font-bold text-slate-800">Class {grade} {subject}</span>
+            </div>
+            <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              {chapterTitle ? `${chapterTitle}` : `Chapter ${chapterId}`}
+              <span className="text-xs text-teal-700 font-mono ml-2 uppercase font-extrabold">({subject})</span>
+            </h1>
+          </div>
 
-            {/* Presentation Mode Toggle */}
-            <div className="flex bg-slate-100 p-0.5 rounded-xl border border-slate-200">
+          <div className="flex flex-wrap items-center gap-2">
+            {/* View Mode Toggle */}
+            <div className="flex bg-slate-100 p-0.5 rounded-xl border border-slate-200 text-xs">
               <button
                 onClick={() => setViewMode('single_stream')}
-                className={`px-2.5 py-1 rounded-lg text-[11px] font-black transition-all cursor-pointer ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-black transition-all cursor-pointer ${
                   viewMode === 'single_stream' ? 'bg-teal-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
                 }`}
                 title="Single-Stream Continuous Reading Canvas"
@@ -659,7 +661,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
               </button>
               <button
                 onClick={() => setViewMode('tabs')}
-                className={`px-2.5 py-1 rounded-lg text-[11px] font-black transition-all cursor-pointer ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-black transition-all cursor-pointer ${
                   viewMode === 'tabs' ? 'bg-teal-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
                 }`}
                 title="Tabbed Module View"
@@ -668,133 +670,144 @@ export default function CatchAllChapterClient({ segments }: Props) {
               </button>
             </div>
 
-            {/* In-Page Text Search Input */}
-            <div className="relative w-36 sm:w-48">
-              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search chapter..."
-                className="w-full pl-8 pr-3 py-1 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              />
-            </div>
-
-            {/* Split View Toggle */}
-            <button
-              onClick={() => setIsSplitView(!isSplitView)}
-              className={`px-3 py-1 rounded-xl text-xs font-black border transition-all cursor-pointer flex items-center gap-1 ${
-                isSplitView
-                  ? 'bg-indigo-600 text-white border-indigo-700'
-                  : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
-              }`}
-              title="Toggle Side-by-Side Dual Content View"
-            >
-              <Columns className="w-3.5 h-3.5" /> {isSplitView ? 'Split ON' : 'Split View'}
-            </button>
-            <Link href="/subjects" className="text-teal-700 hover:underline flex items-center gap-1 font-bold">
-              <ArrowLeft className="w-3.5 h-3.5" /> All Subjects
-            </Link>
-            <span>/</span>
-            <span className="text-slate-800 font-bold uppercase font-mono">Class {grade} {subject}</span>
-            <span>/</span>
-            <span className="text-slate-800 font-bold font-mono">{chapterId}</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            {/* Printable PDF Worksheet Button */}
-            <button
-              onClick={() => window.print()}
-              className="px-3 py-1.5 rounded-xl text-xs font-black bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition-all flex items-center gap-1 cursor-pointer"
-              title="Print / Export Printable PDF Worksheet"
-            >
-              <Printer className="w-3.5 h-3.5" /> Printable PDF
-            </button>
-
-            {/* Font Accessibility Toolbar */}
-            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-bold">
-              <button
-                onClick={() => setFontSize(prev => prev === 'xl' ? 'lg' : prev === 'lg' ? 'base' : 'sm')}
-                className="px-2 py-0.5 hover:bg-white rounded text-slate-700 font-extrabold cursor-pointer"
-                title="Decrease Font Size"
-              >
-                A-
-              </button>
-              <button
-                onClick={() => setFontSize(prev => prev === 'sm' ? 'base' : prev === 'base' ? 'lg' : 'xl')}
-                className="px-2 py-0.5 hover:bg-white rounded text-slate-700 font-extrabold cursor-pointer"
-                title="Increase Font Size"
-              >
-                A+
-              </button>
-              <button
-                onClick={() => setIsDyslexicFont(!isDyslexicFont)}
-                className={`px-2 py-0.5 rounded text-[10px] font-black transition-all cursor-pointer ${
-                  isDyslexicFont ? 'bg-teal-600 text-white' : 'hover:bg-white text-slate-700'
-                }`}
-                title="Toggle Dyslexia-Friendly Font"
-              >
-                {isDyslexicFont ? 'Dyslexic ON' : 'Dyslexia'}
-              </button>
-            </div>
+            {/* Prev & Next Chapter Navigation */}
             <button
               onClick={handleNavigatePrevChapter}
               className="px-3 py-1.5 rounded-xl text-xs font-black bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200 transition-all flex items-center gap-1 cursor-pointer"
             >
-              <ArrowLeft className="w-3.5 h-3.5" /> Prev Chapter
+              <ArrowLeft className="w-3.5 h-3.5" /> Prev
             </button>
 
             <button
               onClick={handleNavigateNextChapter}
               className="px-3.5 py-1.5 rounded-xl text-xs font-black bg-teal-600 hover:bg-teal-500 text-white transition-all flex items-center gap-1 shadow-md cursor-pointer"
             >
-              Next Chapter <ArrowRight className="w-3.5 h-3.5" />
+              Next <ArrowRight className="w-3.5 h-3.5" />
             </button>
 
+            {/* Collapsible Tools & Comfort Drawer Toggle */}
             <button
-              onClick={handleToggleBookmark}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer ${
-                isBookmarked
-                  ? 'bg-amber-100 text-amber-900 border-amber-300'
-                  : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
+              onClick={() => setShowToolsDrawer(!showToolsDrawer)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer flex items-center gap-1 ${
+                showToolsDrawer ? 'bg-indigo-600 text-white border-indigo-700' : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
               }`}
+              title="Toggle Tools & Comfort Options"
             >
-              <Bookmark className="w-3.5 h-3.5 inline mr-1" />
-              {isBookmarked ? 'Bookmarked' : 'Bookmark'}
-            </button>
-
-            <button
-              onClick={handleToggleNeedPractice}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer ${
-                isNeedPractice
-                  ? 'bg-rose-100 text-rose-900 border-rose-300'
-                  : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
-              }`}
-            >
-              <Target className="w-3.5 h-3.5 inline mr-1" />
-              {isNeedPractice ? 'Marked Practice' : 'Mark for Practice'}
+              ⚙️ Tools {showToolsDrawer ? '▲' : '▼'}
             </button>
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-            {chapterTitle ? `${chapterTitle}` : `Chapter ${chapterId}`}
-            <span className="text-xs text-teal-700 font-mono ml-2 uppercase font-extrabold">({subject})</span>
-          </h1>
+        {/* Collapsible Tools Drawer (Keeps Main Screen Clean & Space-Maximized) */}
+        {showToolsDrawer && (
+          <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-3 animate-in fade-in duration-150">
+            <div className="flex flex-wrap items-center justify-between gap-3 text-xs">
+              {/* In-Page Text Search */}
+              <div className="relative w-full sm:w-64">
+                <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search in chapter..."
+                  className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                />
+              </div>
 
-          {/* AI Quick Actions */}
-          <div className="flex flex-wrap items-center gap-1.5 text-xs">
+              {/* Split View Toggle */}
+              <button
+                onClick={() => setIsSplitView(!isSplitView)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer flex items-center gap-1 ${
+                  isSplitView ? 'bg-indigo-600 text-white border-indigo-700' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-100'
+                }`}
+              >
+                <Columns className="w-3.5 h-3.5" /> {isSplitView ? 'Split View ON' : 'Split View'}
+              </button>
+
+              {/* Zen Focus Mode */}
+              <button
+                onClick={() => setIsZenFocusMode(!isZenFocusMode)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer flex items-center gap-1 ${
+                  isZenFocusMode ? 'bg-purple-600 text-white border-purple-700' : 'bg-white text-indigo-700 border-slate-200 hover:bg-slate-100'
+                }`}
+              >
+                {isZenFocusMode ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
+                {isZenFocusMode ? 'Exit Zen Mode' : 'Zen Focus Mode'}
+              </button>
+
+              {/* Printable PDF */}
+              <button
+                onClick={() => window.print()}
+                className="px-3 py-1.5 rounded-xl text-xs font-black bg-white text-indigo-700 border border-slate-200 hover:bg-slate-100 transition-all flex items-center gap-1 cursor-pointer"
+              >
+                <Printer className="w-3.5 h-3.5" /> Printable PDF
+              </button>
+
+              {/* Font Sizing Toolbar */}
+              <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-slate-200 font-bold">
+                <button
+                  onClick={() => setFontSize(prev => prev === 'xl' ? 'lg' : prev === 'lg' ? 'base' : 'sm')}
+                  className="px-2 py-0.5 hover:bg-slate-100 rounded text-slate-700 font-extrabold cursor-pointer"
+                  title="Smaller Font"
+                >
+                  A-
+                </button>
+                <button
+                  onClick={() => setFontSize(prev => prev === 'sm' ? 'base' : prev === 'base' ? 'lg' : 'xl')}
+                  className="px-2 py-0.5 hover:bg-slate-100 rounded text-slate-700 font-extrabold cursor-pointer"
+                  title="Larger Font"
+                >
+                  A+
+                </button>
+                <button
+                  onClick={() => setIsDyslexicFont(!isDyslexicFont)}
+                  className={`px-2 py-0.5 rounded text-[10px] font-black transition-all cursor-pointer ${
+                    isDyslexicFont ? 'bg-teal-600 text-white' : 'hover:bg-slate-100 text-slate-700'
+                  }`}
+                >
+                  {isDyslexicFont ? 'Dyslexic ON' : 'Dyslexia'}
+                </button>
+              </div>
+
+              {/* Bookmark & Practice Buttons */}
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleToggleBookmark}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer ${
+                    isBookmarked ? 'bg-amber-100 text-amber-900 border-amber-300' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-100'
+                  }`}
+                >
+                  <Bookmark className="w-3.5 h-3.5 inline mr-1" />
+                  {isBookmarked ? 'Bookmarked' : 'Bookmark'}
+                </button>
+
+                <button
+                  onClick={handleToggleNeedPractice}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-all cursor-pointer ${
+                    isNeedPractice ? 'bg-rose-100 text-rose-900 border-rose-300' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-100'
+                  }`}
+                >
+                  <Target className="w-3.5 h-3.5 inline mr-1" />
+                  {isNeedPractice ? 'Marked Practice' : 'Mark for Practice'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* AI Quick Help Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-100 text-xs">
+          <div className="flex flex-wrap items-center gap-1.5">
             <span className="text-slate-500 font-black flex items-center gap-1">
               <Sparkles className="w-3.5 h-3.5 text-amber-500" /> AI Help:
             </span>
-            <button onClick={() => handleAiAction('explain')} className="px-3 py-1.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-900 font-extrabold border border-teal-200 transition-all cursor-pointer">
+            <button onClick={() => handleAiAction('explain')} className="px-3 py-1 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-900 font-extrabold border border-teal-200 transition-all cursor-pointer">
               Explain Simply
             </button>
-            <button onClick={() => handleAiAction('example')} className="px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-900 font-extrabold border border-indigo-200 transition-all cursor-pointer">
+            <button onClick={() => handleAiAction('example')} className="px-3 py-1 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-900 font-extrabold border border-indigo-200 transition-all cursor-pointer">
               Give Example
             </button>
-            <button onClick={() => handleAiAction('quiz')} className="px-3 py-1.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-900 font-extrabold border border-purple-200 transition-all cursor-pointer">
+            <button onClick={() => handleAiAction('quiz')} className="px-3 py-1 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-900 font-extrabold border border-purple-200 transition-all cursor-pointer">
               Quiz Me
             </button>
           </div>

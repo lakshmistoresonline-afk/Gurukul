@@ -141,12 +141,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
       {/* Main Container with Top App Header Bar */}
       <main className="flex-1 flex flex-col min-w-0 pb-16 md:pb-0">
-        {/* Sticky Top Header Bar */}
-        <header className="sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-slate-200/80 px-4 sm:px-8 py-3 flex items-center justify-between gap-4 shadow-2xs">
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-teal-100/80 text-teal-900 text-xs font-black border border-teal-300/80 shadow-2xs font-mono">
-              <GraduationCap className="w-4 h-4 text-teal-600" />
-              <span>NCERT Class {selectedGrade}</span>
+        {/* Sticky Top Header Bar (Ultra-Compact for Maximum Learning Area) */}
+        <header className="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200/80 px-3 sm:px-8 py-1.5 sm:py-2.5 flex items-center justify-between gap-2 shadow-2xs">
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100/80 text-teal-900 text-xs font-black border border-teal-300/80 shadow-2xs font-mono">
+              <GraduationCap className="w-3.5 h-3.5 text-teal-600" />
+              <span>Class {selectedGrade}</span>
             </span>
 
             <span className="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100/80 border border-amber-300/80 text-amber-900 text-xs font-black font-mono">
@@ -164,22 +164,21 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </button>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <button
               onClick={() => setShowAnalyticsModal(true)}
-              className="px-3.5 py-1.5 rounded-2xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer"
+              className="hidden sm:flex px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-black transition-all items-center gap-1.5 cursor-pointer"
               title="Parent & Teacher Progress Analytics"
             >
-              <BarChart3 className="w-4 h-4 text-indigo-600" />
-              <span className="hidden sm:inline">Analytics</span>
+              <BarChart3 className="w-3.5 h-3.5 text-indigo-600" />
+              <span>Analytics</span>
             </button>
 
-            <div className="flex items-center gap-2.5 bg-slate-100/80 p-1.5 pl-3 rounded-2xl border border-slate-200/80">
-              <div className="w-7 h-7 rounded-xl bg-teal-600 text-white flex items-center justify-center font-black text-xs shadow-2xs">
+            <div className="flex items-center gap-2 bg-slate-100/80 p-1 pl-2.5 rounded-xl border border-slate-200/80">
+              <div className="w-6 h-6 rounded-lg bg-teal-600 text-white flex items-center justify-center font-black text-xs shadow-2xs">
                 {studentName.charAt(0).toUpperCase()}
               </div>
               <span className="text-xs font-black text-slate-800 hidden sm:inline capitalize">{studentName}</span>
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
             </div>
 
             {/* Prominent Log Out Button */}
@@ -195,10 +194,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 setCurrentUser(null);
                 auth.signOut().catch(() => {});
               }}
-              className="px-3.5 py-1.5 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-black transition-all flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-black transition-all flex items-center gap-1 cursor-pointer"
               title="Log Out of Gurukul AI"
             >
-              <LogOut className="w-4 h-4 text-rose-600" />
+              <LogOut className="w-3.5 h-3.5 text-rose-600" />
               <span className="hidden sm:inline">Log Out</span>
             </button>
           </div>
