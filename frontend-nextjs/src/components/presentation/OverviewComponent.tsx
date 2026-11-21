@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { renderSafeText } from './safeRender';
+import { maskVideoUrl, unmaskVideoUrl, isNotebookLmVideo, isYoutubeVideo } from '../../lib/videoSecurity';
 
 interface OverviewProps {
   data: any;
@@ -11,6 +12,7 @@ interface OverviewProps {
 export default function OverviewComponent({ data, chapterTitle, unitTitle, subject }: OverviewProps) {
   const [activeSubTab, setActiveSubTab] = useState<string>('summary');
   const [reflectionAnswer, setReflectionAnswer] = useState<string | null>(null);
+  const [showStudioModal, setShowStudioModal] = useState<boolean>(false);
 
   if (!data) {
     return (
@@ -31,6 +33,12 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
   const objectives = data.learningObjectives || data.pedagogical_objectives || data.key_concepts || [];
   const takeaways = data.importantTakeaways || data.key_takeaways || [];
   const terms = data.keyTerminology || data.vocabulary || data.key_terms || [];
+
+  const rawVideo = data.video_url || data.video_link || data.video || data.video_path || '';
+  const maskedToken = maskVideoUrl(rawVideo);
+  const unmaskedUrl = unmaskVideoUrl(maskedToken);
+  const isNotebookLm = isNotebookLmVideo(maskedToken);
+  const isYoutube = isYoutubeVideo(maskedToken);
 
   return (
     <div className="space-y-6">
@@ -86,64 +94,87 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
             )}
           </div>
 
-          {/* Chapter Video Lesson Player Card */}
-          {(data.video_url || data.video_link || data.video || data.video_path) && (() => {
-            const videoUrl = String(data.video_url || data.video_link || data.video || data.video_path);
-            const isNotebookLm = videoUrl.includes('notebooklm.link.google') || videoUrl.includes('notebook.google.com');
-            const isYoutube = videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be');
-
-            return (
-              <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                  <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase flex items-center gap-2">
-                    <span>🎥 NCERT {isNotebookLm ? 'NotebookLM Studio Lesson' : 'Video Lesson'}</span>
-                  </h3>
-                  <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full font-bold border border-teal-200">
-                    {isNotebookLm ? '✨ NotebookLM Gemini Studio' : 'HD Interactive Lesson'}
-                  </span>
-                </div>
-                <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                  {isNotebookLm ? (
-                    <div className="w-full h-full p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4">
-                      <div className="w-16 h-16 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-3xl shadow-lg border border-teal-400/30">
-                        ✨
-                      </div>
-                      <div className="space-y-1 max-w-md">
-                        <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NotebookLM Gemini Video Lesson'}</h4>
-                        <p className="text-xs text-teal-200/80 font-medium">Interactive Google NotebookLM Audio &amp; Video Studio Lesson</p>
-                      </div>
-                      <a
-                        href={videoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
-                      >
-                        <span>Launch NotebookLM Studio Lesson ↗</span>
-                      </a>
+          {/* Chapter Video Lesson Player Card (Masked & Anti-Misuse Protected) */}
+          {maskedToken && (
+            <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 select-none" onContextMenu={(e) => e.preventDefault()}>
+              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase flex items-center gap-2">
+                  <span>🔒 NCERT {isNotebookLm ? 'Protected NotebookLM Studio Lesson' : 'Protected Video Lesson'}</span>
+                </h3>
+                <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full font-bold border border-teal-200">
+                  {isNotebookLm ? '✨ Encrypted Studio Stream' : 'Protected HD Lesson'}
+                </span>
+              </div>
+              <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                {isNotebookLm ? (
+                  <div className="w-full h-full p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4">
+                    <div className="w-16 h-16 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-3xl shadow-lg border border-teal-400/30">
+                      ✨
                     </div>
-                  ) : isYoutube ? (
-                    <iframe
-                      src={videoUrl.replace('watch?v=', 'embed/')}
-                      title="NCERT Video Lesson"
-                      className="w-full h-full border-0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  ) : (
-                    <video
-                      controls
-                      preload="metadata"
-                      className="w-full h-full object-contain"
-                      poster="/illustrations/chapter-learning.svg"
+                    <div className="space-y-1 max-w-md">
+                      <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NotebookLM Gemini Video Lesson'}</h4>
+                      <p className="text-xs text-teal-200/80 font-medium">Protected Interactive Google NotebookLM Studio Lesson</p>
+                    </div>
+                    <button
+                      onClick={() => setShowStudioModal(true)}
+                      className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
                     >
-                      <source src={videoUrl} type="video/mp4" />
-                      Your browser does not support HTML5 video playback.
-                    </video>
-                  )}
+                      <span>Launch Studio Video Lesson 🔒</span>
+                    </button>
+                  </div>
+                ) : isYoutube ? (
+                  <iframe
+                    src={unmaskedUrl.replace('watch?v=', 'embed/')}
+                    title="NCERT Video Lesson"
+                    className="w-full h-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : (
+                  <video
+                    controls
+                    controlsList="nodownload"
+                    onContextMenu={(e) => e.preventDefault()}
+                    preload="metadata"
+                    className="w-full h-full object-contain"
+                    poster="/illustrations/chapter-learning.svg"
+                  >
+                    <source src={unmaskedUrl} type="video/mp4" />
+                    Your browser does not support HTML5 video playback.
+                  </video>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* In-App Sandboxed Studio Modal */}
+          {showStudioModal && (
+            <div className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4" onContextMenu={(e) => e.preventDefault()}>
+              <div className="bg-slate-900 border border-teal-500/30 rounded-3xl w-full max-w-5xl h-[85vh] flex flex-col overflow-hidden shadow-2xl animate-in fade-in zoom-in-95">
+                <div className="p-4 bg-slate-950 border-b border-white/10 flex items-center justify-between text-white">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-black text-teal-300 font-mono uppercase">🔒 Protected Studio Session</span>
+                    <span className="text-xs font-bold text-slate-300">• {data.video_title || chapterTitle}</span>
+                  </div>
+                  <button
+                    onClick={() => setShowStudioModal(false)}
+                    className="px-3 py-1 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold cursor-pointer"
+                  >
+                    Close Studio ✕
+                  </button>
+                </div>
+                <div className="flex-1 w-full h-full bg-black relative">
+                  <iframe
+                    src={unmaskedUrl}
+                    title="NotebookLM Studio Lesson"
+                    className="w-full h-full border-0"
+                    sandbox="allow-scripts allow-same-origin allow-popups"
+                    allow="autoplay; encrypted-media"
+                  />
                 </div>
               </div>
-            );
-          })()}
+            </div>
+          )}
 
           {theme && (
             <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-3">
