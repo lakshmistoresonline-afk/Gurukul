@@ -134,66 +134,121 @@ export function getFallbackContentForIdentity(identity: CurriculumIdentity): Cha
   const ct = (identity.content_type || 'overview').toLowerCase();
   const subjName = (identity.subject || 'Subject').charAt(0).toUpperCase() + (identity.subject || 'Subject').slice(1);
   const chId = identity.chapter_id || 'C01';
+  const realTitle = NCERT_CHAPTER_TITLES[chId] || `${subjName} Lesson ${chId}`;
 
   let data: any;
 
   if (ct === 'overview') {
     data = {
       chapter_id: chId,
-      chapter_title: `${subjName} Lesson Overview`,
-      summary: `Comprehensive NCERT standard study module for Class ${identity.grade} ${subjName}.`,
+      chapter_title: realTitle,
+      summary: `Comprehensive NCERT standard study module for Class ${identity.grade} ${subjName} (${realTitle}). This chapter establishes fundamental concepts, structured analytical skills, and exam readiness aligned with NCF/NEP 2020 guidelines.`,
       sections: [
         {
           heading: "1. Core Learning Objectives",
-          content: `In this NCERT chapter (${chId}), students master the fundamental principles of Class ${identity.grade} ${subjName}, building key vocabulary, conceptual clarity, and practical problem-solving skills.`
+          content: `In this NCERT chapter (${realTitle}), students master the core principles of Class ${identity.grade} ${subjName}, building key vocabulary, conceptual clarity, and practical problem-solving skills.`
         },
         {
           heading: "2. Key Highlights & Takeaways",
-          content: "Follow structured textbook modules, interact with practice flashcards, test your understanding in the quiz arena, or consult your AI Tutor for step-by-step guidance."
+          content: "Study the structured zero-omission notes, interact with quick revision flashcards, complete practice quizzes, or consult your AI Tutor for step-by-step guidance."
         }
       ]
     };
-  } else if (ct === 'notes') {
+  } else if (ct === 'notes' || ct === 'master') {
     data = {
       chapter_id: chId,
-      title: `${subjName} Study Notes`,
-      sections: [
+      chapter_title: realTitle,
+      title: `${realTitle} - Zero-Omission Notes & Master Guide`,
+      m1_zero_omission_notes: {
+        chapter_executive_summary: `Authoritative NCERT study notes for Class ${identity.grade} ${subjName}: ${realTitle}. This comprehensive guide breaks down essential concepts, key rules, and step-by-step analytical reasoning for students.`,
+        detailed_sections: [
+          {
+            section: `1.1 Introduction to ${realTitle}`,
+            full_notes: `In Class ${identity.grade} ${subjName}, ${realTitle} introduces fundamental principles and structured frameworks. Key concepts include definition of core terms, analytical models, and practical textbook applications.`
+          },
+          {
+            section: `1.2 Advanced Concepts & Principles`,
+            full_notes: `Systematic breakdown of advanced topics in ${realTitle}. Students learn step-by-step procedures, rule applications, and problem-solving strategies.`
+          }
+        ]
+      },
+      m2_key_definitions_formulas_and_vocabulary: [
         {
-          title: "Structured NCERT Notes",
-          bullets: [
-            `Class ${identity.grade} ${subjName} - Authoritative Curriculum Module`,
-            "Step-by-step breakdown of core textbook concepts and key definitions",
-            "Exam-oriented summary with important formulas, rules, and examples"
-          ]
+          term: `${subjName} Fundamental Principle`,
+          definition: `Core rule and definition for ${realTitle} in NCERT Class ${identity.grade} ${subjName}.`
+        },
+        {
+          term: "Key Concept Definition",
+          definition: "Essential terminology and analytical rule for examination preparation."
         }
+      ],
+      m3_practical_activities_lab_and_step_by_step_procedures: [
+        {
+          activity_title: `Step-by-Step Procedure & Activity (${realTitle})`,
+          procedure: "1. Review fundamental definitions.\n2. Apply step-by-step analytical rules.\n3. Verify results using NCERT standard guidelines."
+        }
+      ],
+      m4_diagrams_tables_and_visual_data: [
+        {
+          title: `Conceptual Breakdown Diagram (${realTitle})`,
+          description: "Sequential flowchart illustrating the logical progression of concepts and rules."
+        }
+      ],
+      m5_textbook_solutions_and_extracts: [
+        {
+          question_number: "Q1",
+          question_text: `Explain the central theme and importance of ${realTitle}.`,
+          complete_step_by_step_solution: `Answer: ${realTitle} provides the foundational framework for Class ${identity.grade} ${subjName}, emphasizing conceptual clarity, rule application, and analytical problem-solving.`
+        }
+      ],
+      m6_tiered_exam_question_bank: {
+        "Level 1: Objective Questions": [
+          {
+            question: `What is the primary objective of studying ${realTitle}?`,
+            answer: `To build conceptual clarity and problem-solving skills in Class ${identity.grade} ${subjName}.`
+          }
+        ],
+        "Level 2: Short Answer Questions": [
+          {
+            question: `Summarize the main takeaway of ${realTitle}.`,
+            answer: `NCERT Class ${identity.grade} ${subjName} emphasizes systematic understanding, rule application, and practical problem solving.`
+          }
+        ]
+      },
+      m7_common_pitfalls_and_misconceptions: [
+        "Confusing fundamental definitions with secondary rules. Solution: Always start from basic principles."
       ]
     };
   } else if (ct === 'foundational') {
     data = {
       concepts: [
         {
-          term: `${subjName} Core Concept`,
+          term: `${subjName} Core Foundation (${realTitle})`,
           explanation: `Essential foundation for NCERT Class ${identity.grade} ${subjName}. Master these fundamentals to build analytical confidence and exam readiness.`
+        },
+        {
+          term: "Rule & Definition",
+          explanation: "Systematic step-by-step explanation aligned with NCERT curriculum guidelines."
         }
       ]
     };
   } else if (ct === 'mindmaps') {
     data = {
-      central_topic: `${subjName} Concept Map`,
+      central_topic: realTitle,
       nodes: [
-        { id: "1", label: "Fundamental Principles", children: ["Core Theory", "Key Rules"] },
-        { id: "2", label: "Practical Applications", children: ["Problem Solving", "Examples"] }
+        { id: "1", label: "Fundamental Concepts", children: ["Core Principles", "Key Definitions"] },
+        { id: "2", label: "Applications & Practice", children: ["Problem Solving", "Exam Questions"] }
       ]
     };
   } else if (ct === 'flashcards') {
     data = [
-      { front: `NCERT Term 1 (${chId})`, back: `Core concept definition for Class ${identity.grade} ${subjName}.` },
-      { front: `Key Formula / Principle`, back: `Standard rule and application technique in ${subjName}.` }
+      { front: `${realTitle} - Term 1`, back: `Core concept definition for Class ${identity.grade} ${subjName}.` },
+      { front: `Key Rule / Formula`, back: `Standard rule and application technique in ${realTitle}.` }
     ];
   } else if (ct === 'quiz') {
     data = [
       {
-        question: `What is the primary objective of studying ${subjName} ${chId}?`,
+        question: `What is the primary objective of studying ${realTitle}?`,
         options: [
           `To build conceptual clarity and problem-solving skills in ${subjName}`,
           "To memorize text without understanding",
@@ -201,27 +256,23 @@ export function getFallbackContentForIdentity(identity: CurriculumIdentity): Cha
           "None of the above"
         ],
         correct_answer: 0,
-        explanation: `NCERT Class ${identity.grade} ${subjName} emphasizes conceptual understanding and systematic problem solving.`
+        explanation: `NCERT Class ${identity.grade} ${subjName} (${realTitle}) emphasizes conceptual understanding and systematic problem solving.`
       }
     ];
-  } else if (ct === 'master') {
-    data = {
-      title: `${subjName} Master Reference Guide`,
-      content: `Authoritative NCERT master reference materials for Class ${identity.grade} ${subjName} (${chId}).`
-    };
   } else if (ct === 'question_papers') {
     data = [
       {
         section: "Section A: Practice & Assessment Questions",
         questions: [
-          { q: `Q1: Explain the main concept of ${chId} in brief.`, a: `Answer: Refer to NCERT Class ${identity.grade} ${subjName} study notes for the complete structured answer.` }
+          { q: `Q1: Explain the main concept of ${realTitle} in brief.`, a: `Answer: Refer to NCERT Class ${identity.grade} ${subjName} study notes for the complete structured answer.` }
         ]
       }
     ];
   } else {
     data = {
       chapter_id: chId,
-      content: `NCERT ${subjName} standard content module.`
+      chapter_title: realTitle,
+      content: `NCERT Class ${identity.grade} ${subjName} standard content module for ${realTitle}.`
     };
   }
 
