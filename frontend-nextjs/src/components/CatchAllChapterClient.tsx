@@ -108,35 +108,11 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [diagramZoom, setDiagramZoom] = useState<number>(1);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isSplitView, setIsSplitView] = useState<boolean>(false);
-  const [viewMode, setViewMode] = useState<'single_stream' | 'tabs'>('single_stream');
   const [isZenFocusMode, setIsZenFocusMode] = useState<boolean>(false);
   const [showToolsDrawer, setShowToolsDrawer] = useState<boolean>(false);
   const [splitSideContentType, setSplitSideContentType] = useState<string>('mindmaps');
   const [splitSideData, setSplitSideData] = useState<any>(null);
   const [loadingSplitSide, setLoadingSplitSide] = useState<boolean>(false);
-  const [allStreamData, setAllStreamData] = useState<Record<string, any>>({});
-  const [loadingStream, setLoadingStream] = useState<boolean>(false);
-  const [activeStreamSection, setActiveStreamSection] = useState<string>('overview');
-  const [completedStreamSections, setCompletedStreamSections] = useState<string[]>([]);
-
-  const handleUnlockNextSection = (currentCt: string) => {
-    const streamOrder = ['overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'];
-    const availableStreamOrder = streamOrder.filter(ct => !!allStreamData[ct]);
-    const currIdx = availableStreamOrder.indexOf(currentCt);
-
-    if (!completedStreamSections.includes(currentCt)) {
-      setCompletedStreamSections(prev => [...prev, currentCt]);
-    }
-
-    if (currIdx >= 0 && currIdx < availableStreamOrder.length - 1) {
-      const nextCt = availableStreamOrder[currIdx + 1];
-      setActiveStreamSection(nextCt);
-      setTimeout(() => {
-        const el = document.getElementById(`sec-${nextCt}`);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100);
-    }
-  };
 
   useEffect(() => {
     let ticking = false;
@@ -216,40 +192,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
       loadSplitSide();
     }
   }, [isSplitView, splitSideContentType, grade, subject, book, part, unit, chapterId]);
-
-  useEffect(() => {
-    if (viewMode === 'single_stream' && grade && subject && chapterId) {
-      async function loadAllStreamSections() {
-        try {
-          setLoadingStream(true);
-          const tabTypes = ['overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'];
-          const results = await Promise.all(
-            tabTypes.map(ct =>
-              CurriculumApiClient.fetchContent({
-                grade,
-                subject,
-                book,
-                part,
-                unit,
-                chapter_id: chapterId,
-                content_type: ct
-              }).then(res => ({ ct, data: res.data })).catch(() => ({ ct, data: null }))
-            )
-          );
-          const dataMap: Record<string, any> = {};
-          results.forEach(r => {
-            if (r.data) dataMap[r.ct] = r.data;
-          });
-          setAllStreamData(dataMap);
-        } catch (e) {
-          console.warn('Failed to load all stream sections:', e);
-        } finally {
-          setLoadingStream(false);
-        }
-      }
-      loadAllStreamSections();
-    }
-  }, [viewMode, grade, subject, book, part, unit, chapterId]);
 
   // Extract readable text for Audio Reader Toolbar
   const getReadableText = (data: any): string => {
@@ -481,7 +423,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
   const handleTabSelect = (tab: string, idx: number) => {
     setActiveTab(tab);
-    setViewMode('tabs');
     const btn = document.getElementById(`tab-btn-${idx}`);
     if (btn) {
       btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
@@ -655,28 +596,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            {/* View Mode Toggle */}
-            <div className="flex bg-slate-100 p-0.5 rounded-xl border border-slate-200 text-xs">
-              <button
-                onClick={() => setViewMode('single_stream')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-black transition-all cursor-pointer ${
-                  viewMode === 'single_stream' ? 'bg-teal-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
-                }`}
-                title="Single-Stream Continuous Reading Canvas"
-              >
-                📜 Stream Canvas
-              </button>
-              <button
-                onClick={() => setViewMode('tabs')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-black transition-all cursor-pointer ${
-                  viewMode === 'tabs' ? 'bg-teal-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
-                }`}
-                title="Tabbed Module View"
-              >
-                📑 Tabs
-              </button>
-            </div>
-
             {/* Prev & Next Chapter Navigation */}
             <button
               onClick={handleNavigatePrevChapter}
@@ -896,121 +815,20 @@ export default function CatchAllChapterClient({ segments }: Props) {
           {!loading && statusCode === 200 && (
             <div className={`grid grid-cols-1 ${isSplitView ? 'md:grid-cols-2' : 'grid-cols-1'} gap-6`}>
               <div className="space-y-6">
-                {viewMode === 'single_stream' ? (
-                  <div className="space-y-8">
-                    {loadingStream && (
-                      <div className="p-8 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm flex items-center justify-center gap-2">
-                        <Loader2 className="w-5 h-5 animate-spin text-teal-600" />
-                        <span className="text-xs font-black text-slate-700">Loading complete continuous learning stream...</span>
-                      </div>
-                    )}
-
-                    {!loadingStream && Object.keys(allStreamData).length > 0 && (() => {
-                      const streamOrder = ['overview', 'notes', 'foundational', 'mindmaps', 'flashcards', 'quiz', 'master', 'question_papers'];
-                      const availableStreamOrder = streamOrder.filter(ct => !!allStreamData[ct]);
-
-                      return availableStreamOrder.map((ct, idx) => {
-                        const secData = allStreamData[ct];
-                        if (!secData) return null;
-                        const label = CONTENT_TYPE_LABELS[ct] || ct;
-                        const isExpanded = activeStreamSection === ct;
-                        const isCompleted = completedStreamSections.includes(ct);
-                        const nextCt = availableStreamOrder[idx + 1];
-                        const nextLabel = nextCt ? (CONTENT_TYPE_LABELS[nextCt] || nextCt) : null;
-
-                        return (
-                          <div key={ct} id={`sec-${ct}`} className="space-y-3 transition-all duration-300">
-                            {/* Section Header Accordion Banner */}
-                            <button
-                              onClick={() => setActiveStreamSection(activeStreamSection === ct ? '' : ct)}
-                              className={`w-full px-5 py-3.5 rounded-2xl flex items-center justify-between text-xs font-black shadow-sm transition-all cursor-pointer ${
-                                isExpanded
-                                  ? 'bg-gradient-to-r from-teal-900 via-indigo-900 to-slate-900 text-white border border-teal-500/30'
-                                  : isCompleted
-                                  ? 'bg-emerald-50 text-emerald-950 border border-emerald-200 hover:bg-emerald-100'
-                                  : 'bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200'
-                              }`}
-                            >
-                              <div className="flex items-center gap-3">
-                                <span className={`w-7 h-7 rounded-xl flex items-center justify-center font-mono font-bold text-xs ${
-                                  isExpanded ? 'bg-teal-500 text-white' : isCompleted ? 'bg-emerald-600 text-white' : 'bg-slate-200 text-slate-700'
-                                }`}>
-                                  {isCompleted ? '✓' : idx + 1}
-                                </span>
-                                <span className="uppercase tracking-widest font-mono text-sm">{label} Section</span>
-                              </div>
-
-                              <div className="flex items-center gap-2">
-                                <span className={`text-[10px] px-2.5 py-0.5 rounded-full font-mono font-bold ${
-                                  isExpanded ? 'bg-teal-400/20 text-teal-200 border border-teal-300/30' : isCompleted ? 'bg-emerald-200/80 text-emerald-900' : 'bg-slate-200 text-slate-700'
-                                }`}>
-                                  {isExpanded ? '🟢 Active Section' : isCompleted ? '✓ Completed' : '🔒 Tap to Open'}
-                                </span>
-                                <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? 'rotate-90 text-teal-300' : 'text-slate-400'}`} />
-                              </div>
-                            </button>
-
-                            {/* Section Content - Displayed ONLY when isExpanded is true */}
-                            {isExpanded && (
-                              <div className="space-y-4 animate-in fade-in duration-200">
-                                <div
-                                  style={{ fontSize: fontSize === 'sm' ? '13px' : fontSize === 'lg' ? '18px' : fontSize === 'xl' ? '22px' : '15px' }}
-                                  className={`bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm text-slate-900 leading-relaxed font-medium space-y-6 ${isDyslexicFont ? 'dyslexic-font-active' : ''}`}
-                                >
-                                  {RendererRegistry.resolve({
-                                    grade,
-                                    subject,
-                                    book,
-                                    part,
-                                    contentType: ct,
-                                    data: secData
-                                  })}
-                                </div>
-
-                                {/* Complete & Unlock Next Section Button Bar */}
-                                <div className="p-4 bg-gradient-to-r from-teal-50 to-indigo-50 border border-teal-200/80 rounded-2xl flex flex-wrap items-center justify-between gap-3 shadow-2xs">
-                                  <div className="text-xs font-extrabold text-slate-800 flex items-center gap-2">
-                                    <Check className="w-4 h-4 text-emerald-600" />
-                                    <span>Finished studying <strong>{label}</strong>?</span>
-                                  </div>
-
-                                  {nextCt ? (
-                                    <button
-                                      onClick={() => handleUnlockNextSection(ct)}
-                                      className="px-5 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-md transition-all flex items-center gap-2 cursor-pointer"
-                                    >
-                                      <span>Complete &amp; Open {nextLabel} ➔</span>
-                                      <ArrowRight className="w-4 h-4" />
-                                    </button>
-                                  ) : (
-                                    <div className="px-4 py-2 rounded-xl bg-emerald-600 text-white font-black text-xs shadow-sm flex items-center gap-1.5">
-                                      <Trophy className="w-4 h-4" /> 100% Chapter Roadmap Completed!
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        );
-                      });
-                    })()}
+                {contentData && (
+                  <div
+                    style={{ fontSize: fontSize === 'sm' ? '13px' : fontSize === 'lg' ? '18px' : fontSize === 'xl' ? '22px' : '15px' }}
+                    className={`bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm text-slate-900 leading-relaxed font-medium space-y-6 ${isDyslexicFont ? 'dyslexic-font-active' : ''}`}
+                  >
+                    {RendererRegistry.resolve({
+                      grade,
+                      subject,
+                      book,
+                      part,
+                      contentType: activeTab,
+                      data: contentData
+                    })}
                   </div>
-                ) : (
-                  contentData && (
-                    <div
-                      style={{ fontSize: fontSize === 'sm' ? '13px' : fontSize === 'lg' ? '18px' : fontSize === 'xl' ? '22px' : '15px' }}
-                      className={`bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm text-slate-900 leading-relaxed font-medium space-y-6 ${isDyslexicFont ? 'dyslexic-font-active' : ''}`}
-                    >
-                      {RendererRegistry.resolve({
-                        grade,
-                        subject,
-                        book,
-                        part,
-                        contentType: activeTab,
-                        data: contentData
-                      })}
-                    </div>
-                  )
                 )}
               </div>
 
