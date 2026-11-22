@@ -28,7 +28,6 @@ import LoginScreen from './LoginScreen';
 export const NAV_ITEMS = [
   { label: 'My Learning', href: '/', icon: LayoutDashboard },
   { label: 'Subjects', href: '/subjects', icon: BookOpen },
-  { label: 'Learning Journey', href: '/journey', icon: Compass },
   { label: 'AI Tutor', href: '/tutor', icon: Bot },
   { label: 'Practice Arena', href: '/practice', icon: Target },
 ];

@@ -452,14 +452,6 @@ export default function StudentDashboard() {
               <Target className="w-4 h-4 text-amber-300" />
               <span>Practice Arena</span>
             </Link>
-
-            <Link
-              href="/journey"
-              className="px-4 py-2 bg-teal-500/30 hover:bg-teal-500/50 text-white font-black text-xs rounded-xl border border-white/25 backdrop-blur-md transition-all flex items-center gap-1.5 cursor-pointer"
-            >
-              <Compass className="w-4 h-4 text-amber-300" />
-              <span>Learning Roadmap</span>
-            </Link>
           </div>
         </div>
       </div>
