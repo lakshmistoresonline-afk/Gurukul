@@ -30,10 +30,7 @@ export const NAV_ITEMS = [
   { label: 'Subjects', href: '/subjects', icon: BookOpen },
   { label: 'Learning Journey', href: '/journey', icon: Compass },
   { label: 'AI Tutor', href: '/tutor', icon: Bot },
-  { label: 'Discovery Lab', href: '/discovery', icon: FlaskConical },
   { label: 'Practice Arena', href: '/practice', icon: Target },
-  { label: 'Achievements', href: '/achievements', icon: Trophy },
-  { label: 'My Library', href: '/library', icon: Bookmark },
 ];
 
 export function StudentNavigation() {
