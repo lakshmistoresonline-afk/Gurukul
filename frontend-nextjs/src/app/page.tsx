@@ -400,13 +400,23 @@ export default function StudentDashboard() {
             </div>
           </div>
 
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-black tracking-tight leading-tight">
-              Ready for your next Class {selectedGrade} learning adventure?
-            </h2>
-            <p className="text-teal-100/90 text-xs sm:text-sm font-semibold mt-1 max-w-2xl">
-              Explore your interactive NCERT subjects, complete daily missions, or get instant help from your AI Tutor!
-            </p>
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="space-y-1 max-w-2xl">
+              <h2 className="text-3xl sm:text-4xl font-black tracking-tight leading-tight">
+                Ready for your next Class {selectedGrade} learning adventure?
+              </h2>
+              <p className="text-teal-100/90 text-xs sm:text-sm font-semibold mt-1">
+                Explore your interactive NCERT subjects, master textbook chapters, or get instant help from your AI Tutor!
+              </p>
+            </div>
+            <div className="hidden lg:block w-36 h-28 shrink-0 opacity-90">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/illustrations/learning_welcome.svg"
+                alt="Learning Welcome Illustration"
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
 
           {/* 1-Click Resume Learning Hero Card */}
