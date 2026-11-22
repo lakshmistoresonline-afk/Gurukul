@@ -13,6 +13,7 @@ export default function StudioMaskedVideoPage() {
   const [unmaskedUrl, setUnmaskedUrl] = useState<string>('');
   const [isNotebookLm, setIsNotebookLm] = useState<boolean>(false);
   const [isYoutube, setIsYoutube] = useState<boolean>(false);
+  const [hasVideoError, setHasVideoError] = useState<boolean>(false);
 
   useEffect(() => {
     if (vtoken) {
@@ -22,6 +23,10 @@ export default function StudioMaskedVideoPage() {
       setIsYoutube(isYoutubeVideo(vtoken));
     }
   }, [vtoken]);
+
+  const isCloudHost = typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
+  const isLocalVideoPath = unmaskedUrl.startsWith('/videos/') || unmaskedUrl.startsWith('videos/');
+  const shouldShowStudioFallback = isNotebookLm || hasVideoError || (isCloudHost && isLocalVideoPath);
 
   return (
     <div className="min-h-screen bg-slate-950 text-white flex flex-col font-sans select-none" onContextMenu={(e) => e.preventDefault()}>
@@ -59,7 +64,7 @@ export default function StudioMaskedVideoPage() {
           </div>
 
           <div className="relative aspect-video w-full bg-black flex flex-col items-center justify-center">
-            {isNotebookLm ? (
+            {shouldShowStudioFallback ? (
               <div className="w-full h-full p-8 sm:p-12 bg-gradient-to-br from-slate-950 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-6">
                 <div className="w-20 h-20 rounded-3xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-4xl shadow-xl border border-teal-400/30">
                   ✨
@@ -74,12 +79,12 @@ export default function StudioMaskedVideoPage() {
                 </div>
 
                 <a
-                  href={unmaskedUrl}
+                  href={unmaskedUrl.startsWith('http') ? unmaskedUrl : 'https://notebooklm.link.google/iVfGXm6LhVI6'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-sm shadow-2xl transition-all flex items-center gap-2 cursor-pointer border border-white/20 transform hover:-translate-y-0.5"
                 >
-                  <span>Open Interactive Studio Lesson 🔒</span>
+                  <span>Open Interactive Studio Lesson 🔒 ↗</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
@@ -96,6 +101,7 @@ export default function StudioMaskedVideoPage() {
                 controls
                 controlsList="nodownload"
                 onContextMenu={(e) => e.preventDefault()}
+                onError={() => setHasVideoError(true)}
                 preload="metadata"
                 className="w-full h-full object-contain"
                 poster="/illustrations/chapter-learning.svg"
