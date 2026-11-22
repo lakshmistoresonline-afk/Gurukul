@@ -137,9 +137,29 @@ export default function PracticeArenaPage() {
     }
   }, [selectedGrade, selectedChapterId, selectedSubject, availableChapters, currentSubjectObj]);
 
-  const questions: any[] = Array.isArray(quizData)
-    ? quizData
-    : quizData?.questions || quizData?.quiz || [];
+  const questions: any[] = React.useMemo(() => {
+    if (!quizData) return [];
+    if (Array.isArray(quizData)) return quizData;
+    if (Array.isArray(quizData.data)) return quizData.data;
+    if (Array.isArray(quizData.questions)) return quizData.questions;
+    if (Array.isArray(quizData.quiz)) return quizData.quiz;
+
+    // Check nested m6_tiered_exam_question_bank structures
+    const qBank = quizData.m6_tiered_exam_question_bank || quizData.exam_question_bank || quizData;
+    const extracted: any[] = [];
+    if (typeof qBank === 'object') {
+      for (const [_, v] of Object.entries(qBank)) {
+        if (Array.isArray(v)) {
+          v.forEach((q: any) => {
+            if (q && (q.question || q.q || q.prompt)) {
+              extracted.push(q);
+            }
+          });
+        }
+      }
+    }
+    return extracted;
+  }, [quizData]);
 
   const currentQ = questions[currentQuestionIdx];
 
