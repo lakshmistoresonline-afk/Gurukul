@@ -534,8 +534,9 @@ export default function AiTutorPage() {
       {/* Header & Mode Switcher */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-2xl bg-teal-100 text-teal-800 flex items-center justify-center border border-teal-300 shadow-sm">
-            <Bot className="w-7 h-7" />
+          <div className="w-12 h-12 rounded-2xl bg-teal-100 text-teal-800 flex items-center justify-center border border-teal-300 shadow-sm overflow-hidden p-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/illustrations/ai_tutor.svg" alt="AI Tutor Illustration" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="text-3xl font-black text-slate-900 flex items-center gap-2">

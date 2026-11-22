@@ -203,7 +203,11 @@ export default function PracticeArenaPage() {
               <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-pulse" /> Interactive NCERT Practice Arena
             </div>
             <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight flex items-center gap-3">
-              <Target className="w-8 h-8 text-teal-600" /> Practice Arena — Class {selectedGrade}
+              <div className="w-10 h-10 rounded-2xl bg-teal-100 p-1.5 border border-teal-300 shadow-2xs overflow-hidden shrink-0">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/illustrations/practice_assessment.svg" alt="Practice Assessment Illustration" className="w-full h-full object-contain" />
+              </div>
+              <span>Practice Arena — Class {selectedGrade}</span>
             </h1>
             <p className="text-slate-600 text-xs sm:text-sm mt-1 font-semibold">
               Interactive chapter quizzes for Class {selectedGrade}. Test your knowledge, earn XP, and track your score!
