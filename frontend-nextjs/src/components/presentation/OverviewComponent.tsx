@@ -41,6 +41,13 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
   const isNotebookLm = isNotebookLmVideo(maskedToken);
   const isYoutube = isYoutubeVideo(maskedToken);
 
+  const subjLower = (subject || '').toLowerCase();
+  const subjectIllustration = subjLower.includes('sci')
+    ? '/illustrations/science_plant_growth.svg'
+    : subjLower.includes('mat')
+    ? '/illustrations/maths_fraction_learning.svg'
+    : '/illustrations/chapter_overview.svg';
+
   return (
     <div className="space-y-6">
       {/* Sub-Section Selector Tabs Bar */}
@@ -79,78 +86,62 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
         </div>
       </div>
 
-      {/* Tab 1: Summary & Theme (Contains the Chapter Hero Gradient Card) */}
+      {/* Tab 1: Summary & Theme (Contains the Chapter Hero Gradient Card with Learning-First Illustration) */}
       {activeSubTab === 'summary' && (
         <div className="space-y-6 animate-in fade-in duration-200">
-          <div className="p-8 sm:p-10 bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-3xl text-white shadow-xl space-y-4 relative overflow-hidden">
+          <div className="p-8 sm:p-10 bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-3xl text-white shadow-xl space-y-4 relative overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-bold uppercase tracking-wider">
-              <span>{unitTitle || 'Curriculum Unit'}</span>
+            <div className="space-y-3 max-w-3xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-bold uppercase tracking-wider">
+                <span>{unitTitle || 'Curriculum Unit'}</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-black tracking-tight">{chapterTitle || 'Chapter Overview'}</h2>
+              {summary && (
+                <blockquote className="border-l-4 border-teal-400 pl-4 py-1 text-indigo-100 text-base sm:text-lg leading-relaxed opacity-90 font-medium">
+                  {renderSafeText(summary)}
+                </blockquote>
+              )}
             </div>
-            <h2 className="text-3xl sm:text-4xl font-black tracking-tight">{chapterTitle || 'Chapter Overview'}</h2>
-            {summary && (
-              <blockquote className="border-l-4 border-teal-400 pl-4 py-1 text-indigo-100 text-base sm:text-lg leading-relaxed max-w-3xl opacity-90 font-medium">
-                {renderSafeText(summary)}
-              </blockquote>
-            )}
+            <div className="hidden lg:block w-44 h-36 shrink-0 opacity-90">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={subjectIllustration}
+                alt="Subject Learning Illustration"
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
 
-          {/* Chapter Video Lesson Player Card (Masked & Anti-Misuse Protected) */}
+          {/* Chapter Video Lesson Banner (Compact Small Icon Row) */}
           {maskedToken && (
-            <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 select-none" onContextMenu={(e) => e.preventDefault()}>
-              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase flex items-center gap-2">
-                  <span>🔒 NCERT {isNotebookLm || videoLoadError ? 'Protected NotebookLM Studio Lesson' : 'Protected Video Lesson'}</span>
-                </h3>
-                <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full font-bold border border-teal-200">
-                  {isNotebookLm || videoLoadError ? '✨ Encrypted Studio Stream' : 'Protected HD Lesson'}
-                </span>
-              </div>
-              <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                {isNotebookLm || videoLoadError ? (
-                  <div className="w-full h-full p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in duration-200">
-                    <div className="w-16 h-16 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-3xl shadow-lg border border-teal-400/30">
-                      ✨
-                    </div>
-                    <div className="space-y-1 max-w-md">
-                      <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NCERT Interactive Video Studio'}</h4>
-                      <p className="text-xs text-teal-200/80 font-medium">Interactive Video &amp; Audio Studio Lesson for Class {data.grade || '5'} {subject || 'NCERT'}</p>
-                    </div>
-                    <button
-                      onClick={() => {
-                        const target = isNotebookLm ? unmaskedUrl : (unmaskedUrl.startsWith('http') ? unmaskedUrl : 'https://notebooklm.link.google/iVfGXm6LhVI6');
-                        if (typeof window !== 'undefined') {
-                          window.open(target, '_blank', 'noopener,noreferrer');
-                        }
-                      }}
-                      className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
-                    >
-                      <span>Watch Video Lesson 🔒 ↗</span>
-                    </button>
+            <div className="p-4 sm:p-5 bg-gradient-to-r from-slate-900 via-indigo-950 to-teal-950 rounded-2xl border border-teal-500/30 text-white shadow-md flex flex-wrap items-center justify-between gap-4 select-none" onContextMenu={(e) => e.preventDefault()}>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-xl shrink-0 border border-teal-400/30">
+                  🎥
+                </div>
+                <div className="space-y-0.5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] font-black uppercase font-mono tracking-wider text-teal-300 bg-teal-900/60 px-2 py-0.5 rounded border border-teal-500/30">
+                      NCERT Video Lesson
+                    </span>
                   </div>
-                ) : isYoutube ? (
-                  <iframe
-                    src={unmaskedUrl.replace('watch?v=', 'embed/')}
-                    title="NCERT Video Lesson"
-                    className="w-full h-full border-0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                ) : (
-                  <video
-                    controls
-                    controlsList="nodownload"
-                    onContextMenu={(e) => e.preventDefault()}
-                    onError={() => setVideoLoadError(true)}
-                    preload="metadata"
-                    className="w-full h-full object-contain"
-                    poster="/illustrations/chapter-learning.svg"
-                  >
-                    <source src={unmaskedUrl} type="video/mp4" />
-                    Your browser does not support HTML5 video playback.
-                  </video>
-                )}
+                  <h4 className="text-sm sm:text-base font-black text-white leading-snug">
+                    {data.video_title || chapterTitle || 'Interactive Video Lesson'}
+                  </h4>
+                </div>
               </div>
+
+              <button
+                onClick={() => {
+                  const target = (unmaskedUrl && unmaskedUrl.startsWith('http')) ? unmaskedUrl : 'https://notebooklm.link.google/iVfGXm6LhVI6';
+                  if (typeof window !== 'undefined') {
+                    window.open(target, '_blank', 'noopener,noreferrer');
+                  }
+                }}
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-400 to-emerald-400 hover:from-teal-300 hover:to-emerald-300 text-slate-950 font-black text-xs shadow-lg transition-all flex items-center gap-1.5 cursor-pointer shrink-0 border border-white/20"
+              >
+                <span>Watch Video Lesson 🔒 ↗</span>
+              </button>
             </div>
           )}
 
@@ -248,10 +239,16 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
         </div>
       )}
 
-      {/* Tab 4: Vocabulary */}
+      {/* Tab 4: Vocabulary (Showcases vocabulary_cards.svg) */}
       {activeSubTab === 'vocabulary' && Array.isArray(terms) && terms.length > 0 && (
         <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 animate-in fade-in duration-200">
-          <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">Key Vocabulary & Terms</h3>
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">Key Vocabulary &amp; Terms</h3>
+            <div className="w-10 h-10 shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/illustrations/vocabulary_cards.svg" alt="Vocabulary Illustration" className="w-full h-full object-contain" />
+            </div>
+          </div>
           <div className="flex flex-wrap gap-2">
             {terms.map((term: any, idx: number) => {
               const termName = typeof term === 'string' ? term : term.term || term.word || '';
