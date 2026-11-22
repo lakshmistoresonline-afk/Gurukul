@@ -116,14 +116,17 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                       <h4 className="text-lg font-black text-white">{data.video_title || chapterTitle || 'NCERT Interactive Video Studio'}</h4>
                       <p className="text-xs text-teal-200/80 font-medium">Interactive Video &amp; Audio Studio Lesson for Class {data.grade || '5'} {subject || 'NCERT'}</p>
                     </div>
-                    <a
-                      href={`/studio/${maskedToken}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                      onClick={() => {
+                        const target = isNotebookLm ? unmaskedUrl : (unmaskedUrl.startsWith('http') ? unmaskedUrl : 'https://notebooklm.link.google/iVfGXm6LhVI6');
+                        if (typeof window !== 'undefined') {
+                          window.open(target, '_blank', 'noopener,noreferrer');
+                        }
+                      }}
                       className="px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-300 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
                     >
-                      <span>Launch Interactive Studio Video 🔒 ↗</span>
-                    </a>
+                      <span>Watch Video Lesson 🔒 ↗</span>
+                    </button>
                   </div>
                 ) : isYoutube ? (
                   <iframe
