@@ -136,10 +136,32 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
               </div>
 
               <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner max-h-[460px]">
-                {unmaskedUrl.startsWith('http') ? (
+                {isNotebookLm || unmaskedUrl.includes('notebooklm') || unmaskedUrl.includes('google') ? (
+                  <div className="w-full h-full p-8 sm:p-10 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in duration-200">
+                    <div className="w-16 h-16 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-3xl shadow-lg border border-teal-400/30 animate-pulse">
+                      🎥
+                    </div>
+                    <div className="space-y-1.5 max-w-lg">
+                      <h4 className="text-lg sm:text-xl font-black text-white tracking-tight">
+                        {data.video_title || chapterTitle || 'NCERT Interactive Video Studio'}
+                      </h4>
+                      <p className="text-xs text-teal-200/90 font-medium leading-relaxed">
+                        Protected Google NotebookLM Studio Video &amp; Audio Lesson for Class {data.grade || '5'} {subject || 'NCERT'}
+                      </p>
+                    </div>
+                    <a
+                      href={unmaskedUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-300 hover:from-teal-300 hover:to-emerald-200 text-slate-950 font-black text-xs sm:text-sm shadow-2xl hover:scale-105 transition-all flex items-center gap-2 cursor-pointer border border-white/30"
+                    >
+                      <span>▶ Play Studio Video Lesson (Opens Google Studio) 🔒 ↗</span>
+                    </a>
+                  </div>
+                ) : isYoutube ? (
                   <iframe
-                    src={unmaskedUrl}
-                    title={data.video_title || chapterTitle || 'NCERT Studio Video Lesson'}
+                    src={unmaskedUrl.replace('watch?v=', 'embed/')}
+                    title="NCERT Video Lesson"
                     className="w-full h-full border-0 rounded-2xl"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -179,7 +201,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
               </div>
               <p className="text-xs font-bold text-slate-900">{data.image_asset.title}</p>
 
-              {/* Render Chapter Diagram Image Directly with Fallbacks */}
+              {/* Render Chapter Diagram Image Directly with Robust Fallbacks */}
               {(data.image_asset.asset_url || data.image_asset.url || data.image_asset.filename) && (
                 <div className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -191,6 +213,8 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                       const img = e.target as HTMLImageElement;
                       if (data.image_asset.filename && !img.src.includes(data.image_asset.filename)) {
                         img.src = `/assets/images/${data.image_asset.filename}`;
+                      } else if (!img.src.includes('02-')) {
+                        img.src = `/assets/images/02-${data.image_asset.filename}`;
                       }
                     }}
                   />
