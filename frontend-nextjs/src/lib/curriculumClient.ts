@@ -743,13 +743,14 @@ function resolveChapterTitle(grade: string, subjectCode: string, chapterNum: num
   const targetSuffix = `-C${chNumStr}`;
   const prefix = `G${grade}-${subjectCode}-`;
 
+  // 1. Strict Grade & Subject Prefix Match FIRST
   for (const [k, v] of Object.entries(NCERT_CHAPTER_TITLES)) {
-    if ((k.startsWith(prefix) || k.includes(`-${subjectCode}-`)) && (k.endsWith(targetSuffix) || k.endsWith(`-C${chapterNum}`) || k.endsWith(`-${chapterNum}`))) {
+    if (k.startsWith(prefix) && (k.endsWith(targetSuffix) || k.endsWith(`-C${chapterNum}`))) {
       return v;
     }
   }
 
-  // Master Title Fallbacks for Class 5
+  // 2. Master Title Fallbacks for Class 5
   if (String(grade) === '5') {
     if (subjectCode === 'ENG') {
       const engTitles = [
@@ -795,6 +796,18 @@ function resolveChapterTitle(grade: string, subjectCode: string, chapterNum: num
         "Earth — Our Shared Home", "Science in Daily Life"
       ];
       if (sciTitles[chapterNum - 1]) return sciTitles[chapterNum - 1];
+    }
+  }
+
+  // 3. Master Title Fallbacks for Class 6
+  if (String(grade) === '6') {
+    if (subjectCode === 'ENG') {
+      const eng6Titles = [
+        "A Bottle of Dew", "The Friendship", "The Magic Powder", "The Way the Kite Flies",
+        "A Lesson for All", "The Clever Jackal", "The Old Sage's Wisdom", "The Worth of a Skill",
+        "The Great Indian Bustard", "The Starry Sky", "Yoga—a Way of Life"
+      ];
+      if (eng6Titles[chapterNum - 1]) return eng6Titles[chapterNum - 1];
     }
   }
 
