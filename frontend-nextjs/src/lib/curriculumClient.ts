@@ -742,6 +742,20 @@ const NCERT_CHAPTER_TITLES: Record<string, string> = {
   "G9-SOC-U03-C09": "Demand, Supply, and Market Equilibrium"
 };
 
+function resolveChapterTitle(grade: string, subjectCode: string, chapterNum: number): string {
+  const chNumStr = String(chapterNum).padStart(2, '0');
+  const targetSuffix = `-C${chNumStr}`;
+  const prefix = `G${grade}-${subjectCode}-`;
+
+  for (const [k, v] of Object.entries(NCERT_CHAPTER_TITLES)) {
+    if (k.startsWith(prefix) && (k.endsWith(targetSuffix) || k.endsWith(`-C${chapterNum}`))) {
+      return v;
+    }
+  }
+
+  return `${subjectCode} Chapter ${chapterNum}`;
+}
+
 export function getFallbackHierarchy(): any[] {
   const grades = ['5', '6', '7', '8', '9', '10'];
   return grades.map((g) => {
@@ -759,7 +773,7 @@ export function getFallbackHierarchy(): any[] {
             chapters: Array.from({ length: isClass5 ? 11 : 10 }, (_, i) => ({
               chapter_number: i + 1,
               chapter_id: `G${g}-ENG-U01-C${String(i + 1).padStart(2, '0')}`,
-              chapter_title: NCERT_CHAPTER_TITLES[`G${g}-ENG-U01-C${String(i + 1).padStart(2, '0')}`] || `English Chapter ${i + 1}`
+              chapter_title: resolveChapterTitle(g, 'ENG', i + 1)
             }))
           }]
         }]
@@ -775,7 +789,7 @@ export function getFallbackHierarchy(): any[] {
             chapters: Array.from({ length: isClass5 ? 12 : 10 }, (_, i) => ({
               chapter_number: i + 1,
               chapter_id: `G${g}-HIN-U01-C${String(i + 1).padStart(2, '0')}`,
-              chapter_title: NCERT_CHAPTER_TITLES[`G${g}-HIN-U01-C${String(i + 1).padStart(2, '0')}`] || `Hindi Chapter ${i + 1}`
+              chapter_title: resolveChapterTitle(g, 'HIN', i + 1)
             }))
           }]
         }]
@@ -793,7 +807,7 @@ export function getFallbackHierarchy(): any[] {
               chapters: Array.from({ length: 18 }, (_, i) => ({
                 chapter_number: i + 1,
                 chapter_id: `G5-MAT-U01-C${String(i + 1).padStart(2, '0')}`,
-                chapter_title: NCERT_CHAPTER_TITLES[`G5-MAT-U01-C${String(i + 1).padStart(2, '0')}`] || `Maths Chapter ${i + 1}`
+                chapter_title: resolveChapterTitle('5', 'MAT', i + 1)
               }))
             }]
           }
@@ -807,7 +821,7 @@ export function getFallbackHierarchy(): any[] {
               chapters: Array.from({ length: 7 }, (_, i) => ({
                 chapter_number: i + 1,
                 chapter_id: `G${g}-MAT-U01-C${String(i + 1).padStart(2, '0')}`,
-                chapter_title: NCERT_CHAPTER_TITLES[`G${g}-MAT-U01-C${String(i + 1).padStart(2, '0')}`] || `Maths Part 1 Chapter ${i + 1}`
+                chapter_title: resolveChapterTitle(g, 'MAT', i + 1)
               }))
             }]
           },
@@ -820,7 +834,7 @@ export function getFallbackHierarchy(): any[] {
               chapters: Array.from({ length: 7 }, (_, i) => ({
                 chapter_number: i + 8,
                 chapter_id: `G${g}-MAT-U01-C${String(i + 8).padStart(2, '0')}`,
-                chapter_title: NCERT_CHAPTER_TITLES[`G${g}-MAT-U01-C${String(i + 8).padStart(2, '0')}`] || `Maths Part 2 Chapter ${i + 8}`
+                chapter_title: resolveChapterTitle(g, 'MAT', i + 8)
               }))
             }]
           }
@@ -837,7 +851,7 @@ export function getFallbackHierarchy(): any[] {
             chapters: Array.from({ length: isClass5 ? 11 : 12 }, (_, i) => ({
               chapter_number: i + 1,
               chapter_id: `G${g}-SCI-U01-C${String(i + 1).padStart(2, '0')}`,
-              chapter_title: NCERT_CHAPTER_TITLES[`G${g}-SCI-U01-C${String(i + 1).padStart(2, '0')}`] || `Science Chapter ${i + 1}`
+              chapter_title: resolveChapterTitle(g, 'SCI', i + 1)
             }))
           }]
         }]
