@@ -415,7 +415,12 @@ export default function CatchAllChapterClient({ segments }: Props) {
   };
 
   const scrollStageBar = (direction: 'left' | 'right') => {
-    if (stageBarRef.current) {
+    const currIdx = availableTabs.findIndex(t => t.tab === activeTab);
+    if (direction === 'left' && currIdx > 0) {
+      handleTabSelect(availableTabs[currIdx - 1].tab, currIdx - 1);
+    } else if (direction === 'right' && currIdx < availableTabs.length - 1) {
+      handleTabSelect(availableTabs[currIdx + 1].tab, currIdx + 1);
+    } else if (stageBarRef.current) {
       const amount = direction === 'left' ? -240 : 240;
       stageBarRef.current.scrollBy({ left: amount, behavior: 'smooth' });
     }

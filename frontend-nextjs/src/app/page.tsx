@@ -554,64 +554,6 @@ export default function StudentDashboard() {
         </div>
       )}
 
-      {/* Active Learning Focus Section (100% Focused on Curriculum & Lesson Continuation) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Continue Learning Resume Card */}
-        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-4">
-          <div className="space-y-3">
-            <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider font-mono flex items-center gap-1.5">
-              <Compass className="w-4 h-4 text-teal-600" /> CONTINUE LEARNING WORKSPACE
-            </h3>
-
-            {isValidLastActivity ? (
-              <div className="p-4 rounded-2xl bg-teal-50/70 border border-teal-200/90 space-y-1.5">
-                <p className="text-xs font-black text-teal-800 uppercase tracking-wider font-mono">
-                  {continueSubjectTitle}
-                </p>
-                <p className="text-base font-black text-slate-900 leading-snug">
-                  {continueChapterTitle}
-                </p>
-                <p className="text-xs text-slate-600 font-medium">Resume studying your active chapter lesson</p>
-              </div>
-            ) : (
-              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
-                <p className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Active Curriculum Workspace</p>
-                <p className="text-sm font-black text-slate-800">Select any Class {selectedGrade} subject above to enter a lesson!</p>
-              </div>
-            )}
-          </div>
-
-          <Link
-            href={continueUrl}
-            className="w-full py-3.5 rounded-2xl bg-teal-700 hover:bg-teal-600 text-white font-black text-xs shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
-          >
-            <span>{isValidLastActivity ? 'Continue Lesson ➔' : 'Browse Subjects ➔'}</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-
-        {/* AI Tutor Companion Shortcut Card */}
-        <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-white shadow-md flex flex-col justify-between space-y-4">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-bold uppercase tracking-wider">
-              <Bot className="w-3.5 h-3.5 text-teal-300" />
-              <span>AI Academic Tutor</span>
-            </div>
-            <h3 className="text-xl font-black tracking-tight text-white">Have questions about Class {selectedGrade} topics?</h3>
-            <p className="text-xs text-indigo-100/80 font-medium leading-relaxed">
-              Ask your AI Tutor step-by-step questions on Science, Mathematics, English Grammar, Social Science, or Coding!
-            </p>
-          </div>
-
-          <Link
-            href="/tutor"
-            className="w-full py-3.5 rounded-2xl bg-teal-400 hover:bg-teal-300 text-slate-950 font-black text-xs shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
-          >
-            <Bot className="w-4 h-4 text-slate-950" />
-            <span>Ask AI Tutor a Question ➔</span>
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }
