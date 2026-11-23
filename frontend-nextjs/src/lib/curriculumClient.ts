@@ -748,8 +748,57 @@ function resolveChapterTitle(grade: string, subjectCode: string, chapterNum: num
   const prefix = `G${grade}-${subjectCode}-`;
 
   for (const [k, v] of Object.entries(NCERT_CHAPTER_TITLES)) {
-    if (k.startsWith(prefix) && (k.endsWith(targetSuffix) || k.endsWith(`-C${chapterNum}`))) {
+    if ((k.startsWith(prefix) || k.includes(`-${subjectCode}-`)) && (k.endsWith(targetSuffix) || k.endsWith(`-C${chapterNum}`) || k.endsWith(`-${chapterNum}`))) {
       return v;
+    }
+  }
+
+  // Master Title Fallbacks for Class 5
+  if (String(grade) === '5') {
+    if (subjectCode === 'ENG') {
+      const engTitles = [
+        "Papa's Spectacles", "Gone with the Scooter", "The Rainbow", "The Wise Parrot",
+        "My Frog's World", "What a Tank!", "Gilli Danda", "The Decision of the Panchayat",
+        "Vocation", "Glass Bangles", "Santoor Grade 5 Bridge & Review"
+      ];
+      if (engTitles[chapterNum - 1]) return engTitles[chapterNum - 1];
+    }
+    if (subjectCode === 'HIN') {
+      const hinTitles = [
+        "गंगा की कहानी / गगनयान (पर्यावरण निबंध व विज्ञान कथा)",
+        "न्याय की कुर्सी (कहानी / लोककथा)",
+        "चाँद का कुर्ता (बाल कविता)",
+        "सद्केन (सांस्कृतिक आलेख / लोक-उत्सव)",
+        "सुंदरिया (कहानी - जैनेंद्र कुमार)",
+        "चतुर चित्रकार (हास्य कविता - रामनरेश त्रिपाठी)",
+        "मेरा बचपन (संस्मरण - मुंशी प्रेमचंद)",
+        "स्वच्छता और स्वास्थ्य (निबंध)",
+        "कंप्यूटर और एआई (विज्ञान कथा)",
+        "वीर शिवाजी (ऐतिहासिक कहानी)",
+        "समय का महत्व (प्रेरणादायक निबंध)",
+        "सपनों की उड़ान (कविता)"
+      ];
+      if (hinTitles[chapterNum - 1]) return hinTitles[chapterNum - 1];
+    }
+    if (subjectCode === 'MAT') {
+      const matTitles = [
+        "Travelling, Now and Then", "Fractions", "Angles as Turns",
+        "Shapes and Spatial Understanding", "Numbers and Operations", "Multiplication and Division",
+        "Shapes and Patterns", "Weight and Capacity", "Coconut Farm",
+        "Symmetrical Designs", "Grandmother's Quilt", "Racing Seconds",
+        "Animal Jumps", "Maps and Locations", "Data Through Pictures",
+        "Ratio and Scale", "Mathematical Sequences", "Logic and Problem Solving"
+      ];
+      if (matTitles[chapterNum - 1]) return matTitles[chapterNum - 1];
+    }
+    if (subjectCode === 'SCI') {
+      const sciTitles = [
+        "Earth — Our Shared Home", "Journey of a River", "The Mystery of Food",
+        "Our School — A Happy Place", "Our Vibrant Country", "Some Unique Places",
+        "Energy — How Things Work", "Clothes — How Things Are Made", "Rhythms of Nature",
+        "Earth — Our Shared Home", "Science in Daily Life"
+      ];
+      if (sciTitles[chapterNum - 1]) return sciTitles[chapterNum - 1];
     }
   }
 
