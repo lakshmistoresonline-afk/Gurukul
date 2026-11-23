@@ -1,172 +1,139 @@
 {
   "chapter_number": 6,
-  "chapter_title": "Constructions and Tilings",
-  "sections": [
+  "chapter_title": "The State, the Government, and You",
+  "detailed_sections": [
     {
-      "section_title": "6.1 Perpendicular Bisector and Angle Constructions",
-      "notes_body": "1. Perpendicular Bisector: To bisect segment XY, center at X and Y with radius > 0.5 XY, draw intersecting arcs above and below XY at A and B. Line AB is perpendicular bisector.\n2. Proof: ΔAXB ≅ ΔAYB by SSS, ensuring perpendicularity and equal bisected segments.\n3. Angle Bisector: Draw arc meeting angle arms at P, Q. From P, Q draw equal arcs meeting at C. Ray OC bisects angle.\n4. Copying an Angle: Construct Δ on original angle with compass radius, copy same Δ onto new ray using SSS.",
-      "margin_callouts": [
+      "section_number_and_title": "6.1 Distinguishing the State from the Government",
+      "full_notes": "The 'State' is permanent and abstract, comprising four essential elements: Defined Territory, Permanent Population, Government, and Sovereignty (supreme legal authority). The 'Government' is the tangible, changing body of elected representatives who administer state policies.",
+      "margin_notes_and_sidebars": [
         {
-          "type": "Property",
-          "title": "Equidistance Property",
-          "content": "Any point on the perpendicular bisector of XY is equidistant from endpoints X and Y."
+          "type": "Did You Know?",
+          "title": "Socrates on Civic Duty",
+          "content": "'The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.' — Socrates."
         }
       ]
     },
     {
-      "section_title": "6.2 Regular Hexagon and 60° Angle Construction",
-      "notes_body": "1. 60° Angle: Draw arc from vertex A on ray AX meeting at B. With same radius, draw arc from B intersecting first arc at C. ∠CAX = 60° (forms equilateral ΔABC).\n2. Regular Hexagon: A regular hexagon consists of 6 congruent equilateral triangles meeting at a central point (6 × 60° = 360°). Can be constructed by stepping off radius 'r' 6 times along a circle's circumference.",
-      "margin_callouts": [
+      "section_number_and_title": "6.2 India as a Democratic Republic and Three Organs",
+      "full_notes": "India is a Democracy (citizens elect representatives through universal adult suffrage) and a Republic (the Head of State—the President—is elected, not hereditary). Functions through three organs: Legislature (makes laws), Executive (enforces laws), and Judiciary (adjudicates disputes and interprets the Constitution).",
+      "margin_notes_and_sidebars": [
         {
-          "type": "Geometric Fact",
-          "title": "Hexagon Angles",
-          "content": "Interior angle of regular hexagon = 120°. Central angle per equilateral Δ = 60°."
+          "type": "Try These",
+          "title": "School Governance Analogy",
+          "content": "Compare School Trustees (State), Student Council (Government), School Code (Laws), and Disciplinary Committee (Judiciary)."
         }
       ]
     },
     {
-      "section_title": "6.3 Tiling and Tangrams",
-      "notes_body": "Tiling (tessellation) is covering a 2D plane with geometric shapes without gaps or overlaps. Tangrams are ancient Chinese 7-piece puzzles formed by dividing a square into 5 triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram. These pieces tile to create shapes like arrows, animals, or geometric patterns.",
-      "margin_callouts": [
+      "section_number_and_title": "6.3 Separation of Powers, Checks & Balances, and Civic Rights",
+      "full_notes": "The Constitution enforces Separation of Powers alongside Checks and Balances to prevent authoritarian concentration of power. The Judiciary exercises Judicial Review to strike down unconstitutional legislation. Citizens exercise democracy beyond voting through petitions, peaceful assembly, and the Right to Information (RTI).",
+      "margin_notes_and_sidebars": [
         {
-          "type": "Definition",
-          "title": "Tessellation",
-          "content": "Covering a plane region with repeating tile units leaving zero gaps and zero overlaps."
+          "type": "Did You Know?",
+          "title": "Constitutional Supremacy",
+          "content": "In India, the Constitution is supreme—not the Parliament. All laws must conform to Fundamental Rights."
         }
-      ]
-    }
-  ],
-  "comparison_tables": [
-    {
-      "table_title": "Constructible Angles Summary",
-      "headers": [
-        "Angle",
-        "Primary Construction Method",
-        "Secondary Bisection Step"
-      ],
-      "rows": [
-        [
-          "60°",
-          "Equilateral Triangle Arc",
-          "None"
-        ],
-        [
-          "120°",
-          "180° - 60° or 2 × 60° steps",
-          "None"
-        ],
-        [
-          "90°",
-          "Perpendicular Bisector / 60°+120° bisector",
-          "Bisect 60°-120° arc"
-        ],
-        [
-          "30°",
-          "Construct 60°",
-          "Bisect 60°"
-        ],
-        [
-          "15°",
-          "Construct 30°",
-          "Bisect 30°"
-        ]
       ]
     }
   ],
   "scripted_dialogues": [
     {
       "speaker": "Teacher",
-      "speech_text": "Welcome to Chapter 6: Constructions and Tilings. What is the central mathematical goal here?"
+      "speech_text": "Welcome class! Today we are exploring The State, the Government, and You."
     },
     {
       "speaker": "Student",
-      "speech_text": "We are learning how to formalize quantitative rules using systematic models and exact verification!"
+      "speech_text": "How does this concept connect to modern India, ma'am?"
     },
     {
       "speaker": "Teacher",
-      "speech_text": "Precisely! Let's examine how the underlying principles apply to practical scenarios."
+      "speech_text": "It forms the very backbone of our modern economic, social, and political systems!"
     }
   ],
   "stem_lab_drawers": [
     {
-      "activity_or_method_id": "ACT-6.1",
-      "aim_or_objective": "Construct a regular hexagon using ruler and compass.",
+      "activity_or_method_id": "ACT-601",
+      "aim_or_objective": "To conduct a Mock Youth Parliament demonstrating how a bill becomes a law while respecting constitutional limits.",
       "materials_or_prerequisites": [
-        "Unmarked ruler",
-        "Compass",
-        "Pencil",
-        "Paper"
+        "Draft Bill text on Student Cyber Safety",
+        "Role badges (Speaker, PM, Ministers, Opposition MPs)"
       ],
       "procedure_or_steps": [
-        "1. Draw a circle of radius r = 4 cm with center O.",
-        "2. Mark a point A anywhere on the circumference.",
-        "3. With same radius 4 cm, set compass at A and draw an arc to intersect circle at B.",
-        "4. Move compass to B, mark C; continue stepping off points D, E, F around circle.",
-        "5. Join AB, BC, CD, DE, EF, FA."
+        "Minister introduces Bill in the house.",
+        "Opposition MPs debate clauses and propose amendments.",
+        "Speaker conducts voting by division or voice vote."
       ],
-      "observations_or_results": "ABCDEF forms a regular hexagon with all side lengths 4 cm and interior angles 120°.",
-      "conclusion_or_principle": "Proven Principle: Construction of Regular Hexagon of Side 4 cm holds true."
+      "observations_or_results": "Demonstrates that lawmaking requires debate, majority consent, and strict adherence to constitutional rights.",
+      "conclusion_or_principle": "Democratic legislation requires parliamentary debate and constitutional conformity."
     }
   ],
-  "formula_calculators": {
-    "calculator_name": "Interactive Constructions and Tilings Calculator",
-    "formula": "Systematic Algorithm",
-    "inputs": [
-      "Value A",
-      "Value B"
-    ],
-    "step_by_step_logic": "Performs exact NCERT verification algorithm on user inputs."
-  },
+  "formula_calculators": [
+    {
+      "calculator_name": "Interest / Yield Formula Tool",
+      "formula": "A = P * (1 + r/n)^(n*t)",
+      "variables": [
+        "P: Principal",
+        "r: Interest Rate",
+        "t: Time in years"
+      ]
+    }
+  ],
   "image_asset": {
     "asset_id": "img_ch6",
     "chapter_number": 6,
-    "title": "Regular Hexagon Construction",
-    "url": "/assets/images/ch6_regular_hexagon_construction.png",
-    "caption": "Construction of regular hexagon using straightedge and compass showing 6 central 60° equilateral triangles.",
+    "chapter_title": "The State, the Government, and You",
+    "file_name": "ch6_state_organs.png",
+    "url": "/assets/images/ch6_state_organs.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 900
+    },
+    "title": "Organs of Government & Constitutional Supremacy",
     "hotspots": [
       {
-        "x_percent": 25,
+        "hotspot_id": "hs_ch6_judiciary",
+        "title": "Judiciary & Judicial Review",
+        "x_percent": 61,
         "y_percent": 25,
-        "w_percent": 50,
-        "h_percent": 50,
-        "label": "Central Equilateral Triangles",
-        "popover_text": "6 equilateral triangles meet at center O with 60° angles."
+        "w_percent": 18,
+        "h_percent": 30,
+        "info": "Interprets laws and protects Fundamental Rights."
       }
     ]
   },
   "m1_zero_omission_notes": {
-    "summary": "This chapter teaches classical practical geometry using strictly an unmarked ruler and compass. Key constructions include: perpendicular bisector of a line segment, 90° angle at a point on a line, angle bisector, copying an angle (SSS application), parallel lines via equal corresponding angles, 60°/120° angles via equilateral triangle construction, 30°/15° angles via angle bisection, pointed arches, and regular hexagons (decomposed into 6 equilateral triangles around 360° center point). The second part explores Tiling (tessellations) and Tangram 7-piece puzzles.",
+    "summary": "This civics chapter clarifies the constitutional distinction between the 'State' (a permanent, sovereign political entity) and the 'Government' (the temporary executive agency operating it). It details the four elements of statehood, the three branches of government, the mechanics of a Democratic Republic, the separation of powers, constitutional safeguards, and active citizen engagement.",
     "detailed_sections": [
       {
-        "section": "6.1 Perpendicular Bisector and Angle Constructions",
-        "full_notes": "1. Perpendicular Bisector: To bisect segment XY, center at X and Y with radius > 0.5 XY, draw intersecting arcs above and below XY at A and B. Line AB is perpendicular bisector.\n2. Proof: ΔAXB ≅ ΔAYB by SSS, ensuring perpendicularity and equal bisected segments.\n3. Angle Bisector: Draw arc meeting angle arms at P, Q. From P, Q draw equal arcs meeting at C. Ray OC bisects angle.\n4. Copying an Angle: Construct Δ on original angle with compass radius, copy same Δ onto new ray using SSS.",
+        "section": "6.1 Distinguishing the State from the Government",
+        "full_notes": "The 'State' is an abstract, permanent political association comprising four essential elements: (1) Fixed Territory, (2) Permanent Population, (3) Functioning Government, and (4) Sovereignty (supreme independent authority). In contrast, the 'Government' is a tangible, changing body of elected representatives and officials who administer laws and public policies on behalf of the State.",
         "margin_notes": [
           {
-            "type": "Property",
-            "title": "Equidistance Property",
-            "content": "Any point on the perpendicular bisector of XY is equidistant from endpoints X and Y."
+            "type": "Did You Know?",
+            "title": "Socrates on Governance",
+            "content": "'The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.' — Socrates (Plato's Republic)."
           }
         ]
       },
       {
-        "section": "6.2 Regular Hexagon and 60° Angle Construction",
-        "full_notes": "1. 60° Angle: Draw arc from vertex A on ray AX meeting at B. With same radius, draw arc from B intersecting first arc at C. ∠CAX = 60° (forms equilateral ΔABC).\n2. Regular Hexagon: A regular hexagon consists of 6 congruent equilateral triangles meeting at a central point (6 × 60° = 360°). Can be constructed by stepping off radius 'r' 6 times along a circle's circumference.",
+        "section": "6.2 India as a Democratic Republic and Three Organs of Government",
+        "full_notes": "India is a 'Democracy' (power held by people through free universal suffrage elections) and a 'Republic' (the Head of State—the President—is elected by the people rather than holding hereditary monarchical office). Governance functions through three distinct organs: (1) Legislature (makes laws—Parliament/State Assemblies), (2) Executive (implements laws—Prime Minister, Cabinet, Bureaucracy), and (3) Judiciary (interprets laws and enforces justice—Supreme Court, High Courts).",
         "margin_notes": [
           {
-            "type": "Geometric Fact",
-            "title": "Hexagon Angles",
-            "content": "Interior angle of regular hexagon = 120°. Central angle per equilateral Δ = 60°."
+            "type": "Try These",
+            "title": "School Governance Analogy",
+            "content": "Compare the School Management (State), Student Council (Government), School Rules (Laws), and Principal/Disciplinary Board (Judiciary)."
           }
         ]
       },
       {
-        "section": "6.3 Tiling and Tangrams",
-        "full_notes": "Tiling (tessellation) is covering a 2D plane with geometric shapes without gaps or overlaps. Tangrams are ancient Chinese 7-piece puzzles formed by dividing a square into 5 triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram. These pieces tile to create shapes like arrows, animals, or geometric patterns.",
+        "section": "6.3 Separation of Powers, Checks and Balances, and Civic Rights",
+        "full_notes": "To prevent tyranny or concentration of power, the Constitution enforces a Separation of Powers alongside Checks and Balances. Neither the Parliament nor the Executive holds absolute power; all institutions are subordinate to the Constitution. The Judiciary safeguards Fundamental Rights against arbitrary laws. Citizen participation extends beyond voting to civic questioning, peaceful assembly, petitions, and Right to Information (RTI).",
         "margin_notes": [
           {
-            "type": "Definition",
-            "title": "Tessellation",
-            "content": "Covering a plane region with repeating tile units leaving zero gaps and zero overlaps."
+            "type": "Did You Know?",
+            "title": "Constitutional Supremacy",
+            "content": "In India, the Constitution is supreme—not the Parliament. The Supreme Court can strike down any law passed by Parliament if it violates the Constitution's basic structure or fundamental rights."
           }
         ]
       }
@@ -174,64 +141,167 @@
   },
   "m2_key_terms_formulas_and_rules": [
     {
-      "term_or_rule": "Bisection",
-      "definition_or_expression": "Dividing a geometric quantity (segment, angle) into two identical equal parts.",
-      "example_or_unit": "Perpendicular bisector divides segment into two equal halves at 90°."
+      "term_or_rule": "State",
+      "definition_or_expression": "A permanent sovereign political organization possessing defined territory, permanent population, government, and absolute external/internal independence.",
+      "example_or_unit": "The Republic of India."
     },
     {
-      "term_or_rule": "Regular Hexagon Interior Angle",
-      "definition_or_expression": "Each interior angle = 120°; composed of 6 equilateral triangles.",
-      "example_or_unit": "6 × 60° central angles = 360°."
+      "term_or_rule": "Government",
+      "definition_or_expression": "The temporary administrative machinery of a state responsible for formulating, enforcing, and adjudicating public laws.",
+      "example_or_unit": "Union Government, State Governments, Local Panchayats."
     },
     {
-      "term_or_rule": "Tangram",
-      "definition_or_expression": "7-piece dissection puzzle originating in China consisting of 5 triangles, 1 square, 1 parallelogram.",
-      "example_or_unit": "Forming an arrow or animal silhouette using all 7 pieces."
+      "term_or_rule": "Sovereignty",
+      "definition_or_expression": "The supreme, independent legal power of a State to govern itself without foreign interference.",
+      "example_or_unit": "India's authority to frame its own foreign and domestic laws."
+    },
+    {
+      "term_or_rule": "Democratic Republic",
+      "definition_or_expression": "A state where political authority derives from citizens through elections (Democracy) and the Head of State is an elected citizen, not a monarch (Republic).",
+      "example_or_unit": "India (Elected President as Head of State)."
+    },
+    {
+      "term_or_rule": "Separation of Powers",
+      "definition_or_expression": "The division of governmental responsibilities among distinct branches (Legislature, Executive, Judiciary) to prevent concentration of power.",
+      "example_or_unit": "Indian Constitutional framework (Articles 50, 121, etc.)."
     }
   ],
   "m3_practical_activities_and_procedures": [
     {
-      "activity_title": "Construction of Regular Hexagon of Side 4 cm",
-      "aim": "Construct a regular hexagon using ruler and compass.",
+      "activity_title": "Classroom Model Youth Parliament and Bill Passage",
+      "aim": "To simulate how the Legislature introduces, debates, and passes laws while respecting Constitutional limits.",
       "materials": [
-        "Unmarked ruler",
-        "Compass",
-        "Pencil",
-        "Paper"
+        "Draft School Safety Bill text",
+        "Role badges (Speaker, Prime Minister, Opposition Leader, MPs)"
       ],
       "procedure": [
-        "1. Draw a circle of radius r = 4 cm with center O.",
-        "2. Mark a point A anywhere on the circumference.",
-        "3. With same radius 4 cm, set compass at A and draw an arc to intersect circle at B.",
-        "4. Move compass to B, mark C; continue stepping off points D, E, F around circle.",
-        "5. Join AB, BC, CD, DE, EF, FA."
+        "The Minister introduces the Bill in the house.",
+        "Opposition MPs debate clauses, raising concerns about student rights.",
+        "Amendments are proposed, voted upon, and the Speaker conducts a final vote."
       ],
-      "observation_and_conclusion": "ABCDEF forms a regular hexagon with all side lengths 4 cm and interior angles 120°."
+      "observation_and_conclusion": "Demonstrates that lawmaking requires deliberation, majority support, and adherence to foundational rights."
     }
   ],
+  "m4_diagrams_and_tables": {
+    "diagrams": [
+      {
+        "figure_title": "Fig. 6.4 Four Essential Elements of a Sovereign State",
+        "labels": [
+          "Defined Territory",
+          "Permanent Population",
+          "Functioning Government",
+          "Sovereignty"
+        ],
+        "instructions": "Diagram showing the four interconnected pillars forming a sovereign State.",
+        "structural_details": "Illustrates that removing any single element (e.g., losing sovereignty or territory) destroys statehood status."
+      }
+    ],
+    "tables": [
+      {
+        "title": "Three Organs of the Indian Government and Their Functions",
+        "headers": [
+          "Organ",
+          "Primary Composition",
+          "Main Function",
+          "Key Check / Power"
+        ],
+        "rows": [
+          [
+            "Legislature",
+            "Parliament (Lok Sabha, Rajya Sabha, President)",
+            "Enacts laws, controls budget, debates policy",
+            "Can pass No-Confidence motion against Executive"
+          ],
+          [
+            "Executive",
+            "President, Prime Minister, Union Cabinet, Civil Services",
+            "Implements laws, maintains order, executes administration",
+            "Accountable to Parliament for daily governance"
+          ],
+          [
+            "Judiciary",
+            "Supreme Court, High Courts, District Courts",
+            "Interprets Constitution, resolves disputes, protects rights",
+            "Can declare unconstitutional laws void (Judicial Review)"
+          ]
+        ]
+      }
+    ]
+  },
   "m5_textbook_solutions_and_extracts": {
     "end_exercises": [
       {
         "q_no": "Q1",
-        "question": "Is it necessary to have the same radius for arcs above and below segment XY when constructing perpendicular bisector?",
-        "answer": "No. The radius for the top arcs can be different from the radius for the bottom arcs, as long as top arcs use equal radii from X and Y, and bottom arcs use equal radii from X and Y (> 0.5 XY). Any two points equidistant from X and Y define the perpendicular bisector line."
+        "question": "What is the key difference between a State and a Government?",
+        "answer": "The State is a permanent, overarching political entity defined by territory, population, sovereignty, and government. The Government is the temporary agency/group of elected representatives that manages the State's administrative affairs and changes through periodic elections."
       },
       {
         "q_no": "Q2",
-        "question": "How do you construct a 30° angle using ruler and compass?",
-        "answer": "1. Construct a 60° angle ∠CAX using equilateral triangle method.\n2. Construct the angle bisector of ∠CAX.\n3. The resulting half-angle is 30°."
+        "question": "What makes India both a Democracy and a Republic?",
+        "answer": "India is a Democracy because governance is conducted by elected representatives chosen by adult citizens through free and fair elections. It is a Republic because its Head of State (the President) is elected by the people for a fixed term rather than holding a hereditary position."
       }
     ],
     "extract_based": [
       {
-        "extract_text": "Covering a region using a set of shapes, without gaps or overlaps, is called tiling.",
+        "extract_text": "'The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.' — Socrates",
         "qa": [
           {
-            "question": "What two strict conditions must be satisfied for a valid tiling?",
-            "answer": "1. Zero gaps between shapes. 2. Zero overlapping of shapes."
+            "question": "Why is this quote relevant to citizens in a democratic republic?",
+            "answer": "It highlights the moral duty of citizens to actively participate in political life and elections, warning that apathy leads to poor leadership and loss of rights."
           }
         ]
       }
     ]
-  }
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which of the following is NOT an essential element of a State?",
+        "answer": "Political Party (Essential elements are Territory, Population, Government, Sovereignty)."
+      },
+      {
+        "type": "True / False",
+        "question": "The Parliament of India can pass any law even if it violates fundamental rights.",
+        "answer": "False (The Supreme Court can strike down unconstitutional laws)."
+      }
+    ],
+    "level_2_short_answer_2_3_marks": [
+      {
+        "question": "Why is 'Sovereignty' considered the most vital characteristic of a State?",
+        "answer": "Sovereignty means supreme legal independence. Without sovereignty, a region lacks the ultimate legal authority to make its own laws or conduct foreign policy without external dictation (as seen during colonial rule)."
+      }
+    ],
+    "level_3_long_answer_5_marks": [
+      {
+        "question": "Explain the principle of 'Checks and Balances' among the Legislature, Executive, and Judiciary in India.",
+        "answer": "In India's democracy, no branch enjoys unchecked power: (1) The Executive is drawn from and held accountable to the Legislature through parliamentary questions and confidence motions. (2) The Legislature makes laws, but the Judiciary can review and declare those laws unconstitutional if they violate basic constitutional rights. (3) The Judiciary operates independently, but judges are appointed by the Executive and can be impeached by Parliament for proven misbehavior. This triangular system ensures power remains balanced."
+      }
+    ],
+    "level_4_competency_case_study": [
+      {
+        "scenario": "Suppose a state government passes a municipal rule banning residents from voicing public grievances on civic issues on local public park grounds.",
+        "qa": [
+          {
+            "question": "Which branch of government can citizens approach to challenge this rule?",
+            "answer": "The Judiciary (High Court or Supreme Court)."
+          },
+          {
+            "question": "On what grounds can the Court declare the municipal rule invalid?",
+            "answer": "On the grounds that it violates the fundamental constitutional right to freedom of speech and peaceful assembly."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls": [
+    {
+      "common_error": "Using 'State' and 'Government' interchangeably.",
+      "correct_approach": "State is permanent and sovereign (e.g., India); Government is the temporary elected administration managing state affairs."
+    },
+    {
+      "common_error": "Thinking the United Kingdom is a Republic because it is a democracy.",
+      "correct_approach": "UK is a constitutional monarchy (hereditary King/Queen); India is a Republic (elected President)."
+    }
+  ]
 }

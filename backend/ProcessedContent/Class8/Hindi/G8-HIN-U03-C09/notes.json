@@ -1,43 +1,201 @@
 {
   "chapter_number": 9,
-  "chapter_title": "आदमी का अनुपात (Aadmi ka Anupat)",
-  "author": "गिरिजाकुमार माथुर",
-  "unit_or_theme": "विश्व-बंधुत्व और आत्म-चिंतन",
+  "chapter_title": "The Amazing World of Solutes, Solvents, and Solutions",
+  "unit_or_theme": "Solutions, Solubility, and Density",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "गिरिजाकुमार माथुर की यह विचारप्रधान कविता विशाल ब्रह्मांड की तुलना में इंसान के छोटे आकार और उसकी संकीर्ण सोच (अहंकार, नफ़रत, भेदभाव) को सामने लाती है। कवि आह्वान करते हैं कि मनुष्य अपनी सोच को व्यापक बनाए।",
+    "chapter_executive_summary": "Chapter 9 covers homogeneous mixtures (solutions), solute, solvent, concentration, saturation, solubility factors (temperature, agitation), gas solubility in water, mass, volume, and density (d = m/V), explaining flotation and sinking.",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "9.1 विशाल ब्रह्मांड और लघु मानव",
-        "full_explanation": "तारों और आकाशगंगाओं के सामने इंसान अतिसूक्ष्म है, फिर भी वह घमंड में डूबकर आपस में दीवारें खींचता है।",
-        "margin_boxes_and_in_text_notes": []
+        "section_number_title": "9.1 Components and Concentration of Solutions",
+        "full_explanation": "A solution consists of solute (dissolved substance) and solvent (dissolving liquid). Saturation occurs when no additional solute dissolves at a given temperature.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Think like a scientist",
+            "box_title": "Gas Solubility and Aquatic Life",
+            "full_content": "Dissolved oxygen in water enables aquatic respiration. Gas solubility decreases as water temperature rises."
+          }
+        ]
+      },
+      {
+        "section_number_title": "9.2 Density, Volume, and Floating Behavior",
+        "full_explanation": "Density is mass per unit volume (d = m/V). Objects float if their density is less than the liquid density and sink if greater.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Practical Measurement",
+            "box_title": "Measuring Irregular Volume",
+            "full_content": "Measuring volume displacement using a graduated cylinder determines volume for irregular solids."
+          }
+        ]
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "अनुपात",
-        "definition": "तुलनात्मक माप या संबंध (Ratio/Proportion)",
-        "contextual_example_or_usage": "ब्रह्मांड के अनुपात में मनुष्य का अस्तित्व एक बिंदु जैसा है।",
-        "associated_units_or_parts_of_speech": "संज्ञा (Noun)"
+        "term": "Solubility",
+        "definition": "The maximum mass of solute that dissolves in 100 g of solvent at a specific temperature.",
+        "contextual_example_or_usage": "Sugar solubility increasing rapidly in hot tea.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Density",
+        "definition": "The mass per unit volume of a material substance.",
+        "contextual_example_or_usage": "Iron sinking in water because iron density exceeds water density.",
+        "associated_units_or_parts_of_speech": "Noun (SI Unit: kg/m^3 or g/cm^3)"
       }
     ],
-    "formulas_rules_and_laws": []
+    "formulas_rules_and_laws": [
+      {
+        "name": "Density Formula",
+        "statement_or_expression": "Density (d) = Mass (m) / Volume (V)",
+        "variable_definitions": "d = Density (g/cm^3), m = Mass (g), V = Volume (cm^3).",
+        "model_application_example": "A block of mass 100 g and volume 20 cm^3 has density d = 100/20 = 5 g/cm^3."
+      },
+      {
+        "name": "Archimedes Buoyancy Principle & Density",
+        "statement_or_expression": "F_b = rho_fluid * V_displaced * g | d = m / V",
+        "variable_definitions": "F_b = Buoyant Force (N), d = Density (g/cm^3), m = Mass (g), V = Volume (cm^3)",
+        "model_application_example": "An iron ball (d = 7.8 g/cm^3) sinks in water (d = 1.0 g/cm^3) but floats in mercury (d = 13.6 g/cm^3)."
+      }
+    ]
   },
-  "m3_practical_activities_lab_and_step_by_step_procedures": [],
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Activity 9.3: Investigating Saturation Limit of Salt",
+      "objective_or_aim": "To prepare a saturated salt solution and observe the effect of heating.",
+      "materials_or_prerequisites": [
+        "Beaker",
+        "100 mL water",
+        "Common salt",
+        "Spoon",
+        "Heat source"
+      ],
+      "step_by_step_procedure": [
+        "Add salt spoon by spoon into 100 mL water, stirring continuously until salt stops dissolving.",
+        "Note un-dissolved salt settling at beaker bottom (saturated state).",
+        "Gently heat the saturated beaker and stir again."
+      ],
+      "expected_observations_or_working": "Undissolved salt dissolves upon heating.",
+      "scientific_or_logical_conclusion": "Solubility of solid solutes increases with elevated temperature."
+    }
+  ],
   "m4_diagrams_tables_and_visual_data": {
-    "diagrams_and_illustrations": [],
-    "tables_and_charts": []
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Displacement Cylinder Volume Measurement",
+        "labels_to_learn": [
+          "Graduated Cylinder",
+          "Initial Water Level (V1)",
+          "Submerged Object",
+          "Final Water Level (V2)"
+        ],
+        "drawing_or_labeling_instructions": "Draw vertical measuring cylinder showing liquid level rising from V1 to V2 when stone is submerged.",
+        "key_structural_details": "Displaced volume Delta V = V2 - V1 equals object volume."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Density and Flotation Comparison",
+        "headers": [
+          "Object Material",
+          "Density (g/cm^3)",
+          "Behavior in Water (d_water = 1.0 g/cm^3)"
+        ],
+        "rows": [
+          [
+            "Wood",
+            "0.6",
+            "Floats (d < d_water)"
+          ],
+          [
+            "Plastic Block",
+            "0.9",
+            "Floats submerged"
+          ],
+          [
+            "Aluminum",
+            "2.7",
+            "Sinks (d > d_water)"
+          ],
+          [
+            "Iron Nail",
+            "7.8",
+            "Sinks (d > d_water)"
+          ]
+        ]
+      }
+    ]
   },
   "m5_textbook_solutions_and_extracts": {
-    "end_of_chapter_textbook_solutions": [],
-    "extract_or_passage_based_questions": []
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Keep the Curiosity Alive",
+        "question_number": "Q5",
+        "question_text": "An object of mass 150 g occupies a volume of 30 cm^3. Will it float or sink in water? (d_water = 1 g/cm^3)",
+        "complete_step_by_step_solution": "Density = Mass / Volume = 150 g / 30 cm^3 = 5 g/cm^3. Since 5 g/cm^3 > 1 g/cm^3, the object will sink."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "Warm water holds less dissolved oxygen than cold water, affecting fish survival in hot summers.",
+        "questions_and_answers": [
+          {
+            "question": "How does water temperature impact gas solubility?",
+            "answer": "Unlike solids, gas solubility decreases as liquid temperature rises."
+          }
+        ]
+      }
+    ]
   },
   "m6_tiered_exam_question_bank": {
-    "level_1_objective_questions_1_mark": [],
-    "level_2_short_answer_questions_2_to_3_marks": [],
-    "level_3_long_answer_and_reasoning_5_marks": [],
-    "level_4_competency_and_case_studies": []
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "In a sugar-water solution, what role does sugar play?",
+        "options": [
+          "Solvent",
+          "Solute",
+          "Suspension",
+          "Emulsion"
+        ],
+        "correct_answer": "Solute",
+        "brief_explanation": "Sugar is the dissolved component (solute); water is dissolving medium (solvent)."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Why does a heavy wooden log float on water while a tiny iron pin sinks?",
+        "model_answer": "Flotation depends on density, not mass. Wood density is lower than water density, enabling flotation. Iron density is higher than water density, causing it to sink.",
+        "key_marking_points": [
+          "Density vs total mass distinction",
+          "Relative density comparison with water"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "Explain three methods to increase the rate of dissolving a solid solute in liquid.",
+        "model_answer": "1. Stirring/Agitation: Increases particle collisions. 2. Heating: Raises solvent kinetic energy. 3. Pulverizing Solute: Powdering increases surface area exposed to solvent molecules."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A student measures stone mass as 78 g. Lowering stone into cylinder containing 50 mL water raises level to 60 mL.",
+        "questions_and_answers": [
+          {
+            "question": "Calculate stone volume and density.",
+            "answer": "Volume = 60 - 50 = 10 cm^3; Density = 78 g / 10 cm^3 = 7.8 g/cm^3."
+          }
+        ]
+      }
+    ]
   },
-  "m7_common_pitfalls_and_misconceptions": []
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Equating heavy objects with sinking and light objects with floating.",
+      "root_cause": "Conflating mass with density.",
+      "correct_approach": "Reinforce that flotation depends exclusively on relative density (mass per unit volume), not overall weight."
+    }
+  ]
 }

@@ -1,155 +1,332 @@
 {
   "chapter_number": 1,
-  "chapter_title": "The Ever-Evolving World of Science",
-  "zero_omission_notes": {
-    "summary": "This foundational introductory chapter establishes science as a dynamic, continuous process of inquiry, observation, questioning, experimentation, and discovery. Rather than presenting science as a static list of facts, the chapter emphasizes that scientific understanding evolves as new evidence emerges. It integrates physical, chemical, biological, and earth science concepts, highlighting that scientific phenomena across nature are deeply interconnected.",
+  "chapter_title": "The Story of Indian Farming",
+  "detailed_sections": [
+    {
+      "section_number_and_title": "1.1 Characteristics of Indian Agriculture",
+      "full_notes": "Agriculture encompasses soil preparation, crop cultivation, livestock rearing, horticulture, forestry, pisciculture, and sericulture. Indian agriculture relies heavily on monsoonal rainfall. Farming operations have evolved from bullock-drawn wooden ploughs and manual seed sowing to tractors, mechanical transplanters, combine harvesters, and threshers.",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Did You Know?",
+          "title": "Krishi Parashara Ancient Wisdom",
+          "content": "An ancient Sanskrit agricultural treatise stating that a farmer who cares for cattle, visits fields daily, understands seasonal weather, selects quality seeds, and works industriously is rewarded with abundant harvests."
+        }
+      ]
+    },
+    {
+      "section_number_and_title": "1.2 Soil Types, Climate, and Cropping Seasons",
+      "full_notes": "India contains diverse soil profiles: Alluvial (fertile river plains), Black/Regur (volcanic basalt origin, cotton-friendly), Red & Yellow (crystalline rock plateau), Laterite (heavily leached tropical soil), Arid/Desert (sandy, low organic matter), and Mountain soils. Cropping seasons include Kharif (monsoon crops like rice, maize, cotton), Rabi (winter crops like wheat, mustard, gram), and Zaid (summer fruits and vegetables like watermelon and cucumber).",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Try These",
+          "title": "Soil Water Retention Experiment",
+          "content": "Compare sandy and clayey soils by measuring water absorption, drainage rate, and moisture retention using funnels and filter papers."
+        }
+      ]
+    },
+    {
+      "section_number_and_title": "1.3 Irrigation, Technology, and Sustainable Practices",
+      "full_notes": "Irrigation evolved from traditional wells, stepwells, and Persian wheels to deep tube wells, canal networks, drip systems, and sprinklers. Over-extraction of groundwater causes water tables to plummet. Sustainable solutions emphasize organic composting, crop rotation, intercropping, rainwater harvesting, and bio-pesticides.",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Did You Know?",
+          "title": "Women in Agriculture",
+          "content": "Over 70% of rural working women in India are engaged in agricultural activities including sowing, transplanting, weeding, harvesting, and dairy management."
+        }
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we are exploring The Story of Indian Farming."
+    },
+    {
+      "speaker": "Student",
+      "speech_text": "How does this concept connect to modern India, ma'am?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "It forms the very backbone of our modern economic, social, and political systems!"
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "activity_or_method_id": "ACT-101",
+      "aim_or_objective": "To measure and compare the water-holding capacity and drainage rates of Sandy, Clayey, and Alluvial soils.",
+      "materials_or_prerequisites": [
+        "Three glass funnels",
+        "Filter paper sheets",
+        "Three measuring cylinders",
+        "50g dry samples of Sandy, Clayey, and Alluvial soils",
+        "Water"
+      ],
+      "procedure_or_steps": [
+        "Fit filter papers inside each funnel and place funnels on measuring cylinders.",
+        "Add 50g of dry soil sample into each respective funnel.",
+        "Pour 50ml of water slowly and evenly over each soil sample.",
+        "Record the volume of drained water collected in each cylinder after 10 minutes."
+      ],
+      "observations_or_results": "Sandy soil drains water rapidly with low retention (~40ml collected). Clayey soil retains most water with very slow drainage (~10ml collected). Alluvial soil exhibits balanced drainage (~22ml collected).",
+      "conclusion_or_principle": "Alluvial soil provides optimal balance between drainage and moisture retention required for crop root development."
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calculator_name": "Interest / Yield Formula Tool",
+      "formula": "A = P * (1 + r/n)^(n*t)",
+      "variables": [
+        "P: Principal",
+        "r: Interest Rate",
+        "t: Time in years"
+      ]
+    }
+  ],
+  "image_asset": {
+    "asset_id": "img_ch1",
+    "chapter_number": 1,
+    "chapter_title": "The Story of Indian Farming",
+    "file_name": "ch1_farming_soils.png",
+    "url": "/assets/images/ch1_farming_soils.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 900
+    },
+    "title": "Soil Profiles & Cropping Seasons in India",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_ch1_alluvial",
+        "title": "Alluvial Soil Zone",
+        "x_percent": 5,
+        "y_percent": 50,
+        "w_percent": 42,
+        "h_percent": 35,
+        "info": "Gangetic plains & river deltas; highly fertile for rice and wheat."
+      },
+      {
+        "hotspot_id": "hs_ch1_black",
+        "title": "Black Soil (Regur) Zone",
+        "x_percent": 53,
+        "y_percent": 50,
+        "w_percent": 42,
+        "h_percent": 35,
+        "info": "Volcanic basalt origin in Deccan Trap; high moisture retention ideal for cotton."
+      }
+    ]
+  },
+  "m1_zero_omission_notes": {
+    "summary": "Agriculture is the backbone of India's economy and cultural identity. The chapter explores the evolution of farming from Harappan traditional practices to modern mechanised techniques. It highlights the intricate interrelationship between soil types, climate, water resources, and cropping seasons, alongside the vital role played by women farmers and sustainable agricultural methods.",
     "detailed_sections": [
       {
-        "section_number_and_title": "1.1 Happy Exploring!",
-        "full_notes": "Science begins with curiosity about everyday surroundings—such as why fruits taste sour, why turmeric turns red with soap, why ice melts, or how plants grow. Scientific investigation follows a structured cycle: observing natural phenomena, formulating hypotheses, conducting hands-on activities, making careful measurements, and drawing evidence-based conclusions. Scientific discoveries often spark new questions, driving an ever-evolving body of knowledge.",
-        "margin_notes_and_sidebars": [
+        "section": "1.1 Characteristics of Indian Agriculture",
+        "full_notes": "Farming is one of humanity's oldest occupations. In India, agriculture encompasses soil preparation, crop cultivation, livestock rearing, horticulture, forestry, pisciculture (fish rearing), and sericulture (silk production). Farming techniques range from traditional bullock-drawn ploughs to modern tractors, seed transplanters, and combine threshers.",
+        "margin_notes": [
           {
             "type": "Did You Know?",
-            "title": "Interconnectedness of Science",
-            "content": "Physics, chemistry, biology, and earth science are deeply interlinked. For example, the physical process of heat flow directly drives atmospheric water cycles in earth science and transpiration in biological systems."
+            "title": "Krishi Parashara Quote",
+            "content": "An ancient text stating that a farmer who cares for cattle, inspects fields daily, understands seasons, selects good seeds, and works industriously is rewarded with bountiful harvests."
+          }
+        ]
+      },
+      {
+        "section": "1.2 Soil Types, Climate, and Cropping Seasons",
+        "full_notes": "India possesses diverse soil profiles: Alluvial (gangetic plains, highly fertile), Black (Deccan trap, ideal for cotton), Red & Yellow (peninsular plateau), Laterite (leached soils in heavy rainfall areas like Western Ghats), Desert/Arid (Rajasthan, suitable for millets), and Mountain soils. Cropping seasons include Kharif (monsoon crops like rice, maize, cotton sown in June-July), Rabi (winter crops like wheat, mustard, gram sown in Oct-Nov), and Zaid (summer crops like watermelon, cucumber).",
+        "margin_notes": [
+          {
+            "type": "Try These",
+            "title": "Soil Moisture Observation",
+            "content": "Compare sandy soil and clay soil by pouring equal amounts of water to observe drainage and water retention capacities."
+          }
+        ]
+      },
+      {
+        "section": "1.3 Irrigation, Technological Change, and Sustainable Farming",
+        "full_notes": "Irrigation methods evolved from traditional wells, tanks, and Persian wheels to modern tube wells, canal networks, drip irrigation, and sprinkler systems. Over-extraction of groundwater poses severe ecological risks. Sustainable farming emphasizes organic manure, crop rotation, intercropping, rainwater harvesting, and soil conservation.",
+        "margin_notes": [
+          {
+            "type": "Did You Know?",
+            "title": "Women in Agriculture",
+            "content": "Over 70% of rural women in India are engaged in agricultural activities, participating in sowing, transplanting, weeding, harvesting, and livestock care."
           }
         ]
       }
     ]
   },
-  "practical_lab_activity_or_methodology_manual": [
+  "m2_key_terms_formulas_and_rules": [
     {
-      "activity_or_method_id": "Activity 1.1",
-      "aim_or_objective": "To foster scientific questioning and inquiry by investigating everyday natural phenomena.",
-      "materials_or_prerequisites": [
-        "Notebook",
-        "Pen",
-        "Household observations (ice melting, turmeric stain)"
-      ],
-      "procedure_or_steps": [
-        "Observe an everyday natural event in your home or school environment.",
-        "Formulate three specific 'Why' or 'How' questions regarding the observed event.",
-        "Propose a simple, safe experimental test to investigate one of your questions."
-      ],
-      "observations_or_results": "Systematic observation and questioning reveal underlying cause-and-effect relationships in daily phenomena.",
-      "conclusion_or_principle": "Scientific knowledge develops through structured questioning, hypothesis testing, and continuous evidence evaluation."
+      "term_or_rule": "Agriculture",
+      "definition_or_expression": "The science and art of cultivating soil, growing crops, raising livestock, forestry, and horticulture.",
+      "example_or_unit": "Crop cultivation and animal husbandry across Indian states."
+    },
+    {
+      "term_or_rule": "Kharif Season",
+      "definition_or_expression": "Cropping season coinciding with the South-West monsoon (June to October).",
+      "example_or_unit": "Rice, Maize, Jowar, Bajra, Cotton, Groundnut."
+    },
+    {
+      "term_or_rule": "Rabi Season",
+      "definition_or_expression": "Winter cropping season sown in October-November and harvested in March-April.",
+      "example_or_unit": "Wheat, Barley, Gram, Mustard, Peas."
+    },
+    {
+      "term_or_rule": "Zaid Season",
+      "definition_or_expression": "Short summer cropping season between Rabi and Kharif (March to June).",
+      "example_or_unit": "Watermelon, Muskmelon, Cucumber, Vegetables."
+    },
+    {
+      "term_or_rule": "Drip Irrigation",
+      "definition_or_expression": "Water-saving technique where water is supplied directly to plant roots drop by drop.",
+      "example_or_unit": "Used extensively in arid regions for horticulture and sugarcane."
     }
   ],
-  "visuals_diagrams_and_tabular_data": {
-    "diagrams_figures_and_maps": [
+  "m3_practical_activities_and_procedures": [
+    {
+      "activity_title": "Soil Drainage & Water Retention Test",
+      "aim": "To determine the water holding capacity of different soil types (Sandy, Clayey, Alluvial).",
+      "materials": [
+        "Three funnels",
+        "Filter paper",
+        "Measuring cylinders",
+        "Samples of Sandy, Clayey, and Alluvial soils",
+        "Water"
+      ],
+      "procedure": [
+        "Place filter paper inside each funnel and mount them on measuring cylinders.",
+        "Add 50g of dried soil sample to each funnel.",
+        "Pour 50ml of water slowly over each soil sample simultaneously.",
+        "Measure the volume of water collected in the cylinder after 10 minutes."
+      ],
+      "observation_and_conclusion": "Sandy soil allows water to pass through rapidly (low retention), clayey soil retains most water with minimal drainage, while alluvial soil exhibits balanced retention and drainage optimal for plant growth."
+    }
+  ],
+  "m4_diagrams_and_tables": {
+    "diagrams": [
       {
-        "figure_id_and_title": "Fig. 1.1 / The Scientific Inquiry Cycle",
-        "labels_and_components": [
-          "Observation",
-          "Questioning",
-          "Hypothesis",
-          "Experimentation",
-          "Conclusion"
+        "figure_title": "Fig. 1.1 Agricultural Operations and Mechanisation",
+        "labels": [
+          "Oxen Ploughing",
+          "Tractor Ploughing",
+          "Manual Seedling Transplantation",
+          "Transplanter Machine",
+          "Threshing Machine",
+          "Dal Lake Floating Market Transport"
         ],
-        "drawing_or_reading_instructions": "Draw a circular flowchart connecting all five stages with bidirectional arrows.",
-        "structural_or_conceptual_explanation": "Illustrates how conclusions lead to fresh observations and questions, making science an endless cycle of discovery."
+        "instructions": "Compare traditional animal-driven methods with mechanized farm operations.",
+        "structural_details": "Illustrates the transition from manual labor and draft animals to diesel tractors, motorized transplanters, and mechanical threshers."
       }
     ],
-    "data_tables_and_comparisons": [
+    "tables": [
       {
-        "table_title": "Table 1.1 / Interconnected Scientific Domains",
+        "title": "Major Indian Soil Types and Associated Crops",
         "headers": [
-          "Domain",
-          "Core Focus Area",
-          "Everyday Example"
+          "Soil Type",
+          "Formation / Characteristics",
+          "Key Regions",
+          "Major Crops Grown"
         ],
         "rows": [
           [
-            "Physical Sciences",
-            "Energy, Heat, Motion, Light",
-            "Melting of ice and heat flow"
+            "Alluvial Soil",
+            "Deposited by river systems; rich in potash and humus",
+            "Indo-Gangetic Plains, Coastal Deltas",
+            "Rice, Wheat, Sugarcane, Jute, Pulses"
           ],
           [
-            "Chemical Sciences",
-            "Substances, Reactions, Indicators",
-            "Turmeric stain color change with soap"
+            "Black Soil (Regur)",
+            "Volcanic basalt origin; high clay content and moisture retention",
+            "Deccan Trap (Maharashtra, Gujarat, MP)",
+            "Cotton, Sugarcane, Jowar, Sunflower"
           ],
           [
-            "Biological Sciences",
-            "Living Organisms, Growth, Nutrition",
-            "Plant photosynthesis and animal digestion"
+            "Red & Yellow Soil",
+            "Developed on crystalline igneous rocks; red due to iron diffusion",
+            "Deccan Plateau edges, Odisha, Chhattisgarh",
+            "Millets, Groundnut, Pulses, Tobacco"
           ],
           [
-            "Earth & Space Sciences",
-            "Planet Earth, Weather, Celestial Cycles",
-            "Water cycle and day-night rotation"
+            "Laterite Soil",
+            "Formed by intense leaching due to heavy tropical rainfall",
+            "Western Ghats, Meghalaya, Eastern Ghats",
+            "Tea, Coffee, Cashew nut, Rubber"
           ]
         ]
       }
     ]
   },
-  "master_glossary_units_and_formulas": [
-    {
-      "term_or_concept": "Scientific Inquiry",
-      "definition_or_meaning": "A systematic approach to understanding the natural world through observation, hypothesis formulation, experimentation, and evidence analysis.",
-      "si_unit_or_notation": "N/A (Process)",
-      "example_or_application": "Testing why ice melts faster on metal than on plastic."
-    }
-  ],
-  "exam_question_bank": {
-    "textbook_exercises": [
+  "m5_textbook_solutions_and_extracts": {
+    "end_exercises": [
       {
         "q_no": "Q1",
-        "question": "Why is science described as an 'ever-evolving' field rather than a fixed collection of knowledge?",
-        "answer": "Science is ever-evolving because every discovery leads to new questions and deeper investigations. As improved tools and techniques emerge, scientists refine or expand existing theories based on new empirical evidence."
+        "question": "What are the main characteristics of Indian agriculture?",
+        "answer": "Indian agriculture is characterized by monsoon dependency, diversity of cropping patterns (Kharif, Rabi, Zaid), a mix of traditional methods and modern technology, significant participation of women workers, and a predominance of small and marginal landholdings."
+      },
+      {
+        "q_no": "Q2",
+        "question": "How can traditional practices and contemporary ones complement each other?",
+        "answer": "Traditional practices like crop rotation, organic composting, and intercropping maintain soil health and biodiversity, while contemporary technologies like drip irrigation, soil testing, and solar pumps enhance resource efficiency and productivity without environmental degradation."
       }
     ],
-    "objective_questions_1_mark": [
+    "extract_based": [
       {
-        "type": "MCQ",
-        "question": "Which of the following best describes the core nature of science?",
-        "options": [
-          "A) A fixed set of memorized facts",
-          "B) A continuous process of inquiry and discovery",
-          "C) Unchangeable ancient rules",
-          "D) Pure theoretical speculation"
-        ],
-        "answer": "B",
-        "explanation": "Science is an active process of inquiry, observation, and empirical discovery."
-      }
-    ],
-    "short_answer_questions": [
-      {
-        "marks": 2,
-        "question": "How do physical and biological sciences interact in the process of plant transpiration?",
-        "answer": "Transpiration involves biological plant stomata losing water vapor, driven by physical thermal energy and evaporation principles."
-      }
-    ],
-    "analytical_reasoning_questions": [
-      {
-        "marks": 3,
-        "question": "Explain why a scientific hypothesis must be testable through experimentation.",
-        "answer": "A hypothesis must be testable so that empirical evidence can either support or refute it. Without testability through reproducible experiments, an assertion cannot be scientifically validated or incorporated into scientific knowledge."
-      }
-    ],
-    "comprehensive_long_answers": [
-      {
-        "marks": 5,
-        "question": "Detail the five stages of the scientific inquiry cycle and explain how they apply to investigating ice melting rates on different materials.",
-        "answer": "1. Observation: Ice melts at different speeds on metal versus plastic. 2. Questioning: Why does metal melt ice faster? 3. Hypothesis: Metal conducts heat faster to the ice than plastic. 4. Experimentation: Place identical ice cubes on metal and plastic blocks at room temperature and record melting times. 5. Conclusion: Data confirms metal is a superior thermal conductor, transferring heat rapidly to melt the ice."
-      }
-    ],
-    "competency_and_case_studies": [
-      {
-        "case_scenario": "A student notices that turmeric stains on clothes turn bright red when washed with soap, but return to yellow when rinsed with lemon juice.",
+        "extract_text": "'A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds... never perishes.' — Krishi Parashara",
         "qa": [
           {
-            "question": "What scientific principle accounts for this color transformation?",
-            "answer": "Turmeric acts as a natural acid-base indicator. It turns red in basic environments (soap) and returns to yellow in acidic environments (lemon juice)."
+            "question": "Which ancient text is this quote taken from and what is its main message?",
+            "answer": "The quote is from Krishi Parashara. It emphasizes that agricultural success requires diligent management, seasonal awareness, seed selection, and proper livestock care."
           }
         ]
       }
-    ],
-    "common_misconceptions_and_pitfalls": [
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_1_mark": [
       {
-        "common_error_or_misconception": "Thinking scientific theories are permanent and can never change.",
-        "correct_fact_or_method": "Scientific theories are continuously tested and modified or expanded whenever new reliable evidence is discovered."
+        "type": "MCQ",
+        "question": "Which of the following is a Rabi crop?",
+        "answer": "Wheat (Sown in winter October-November and harvested in spring)."
+      },
+      {
+        "type": "Fill in the Blanks",
+        "question": "The soil formed by intense leaching in heavy rainfall areas is _____ soil.",
+        "answer": "Laterite soil."
+      }
+    ],
+    "level_2_short_answer_2_3_marks": [
+      {
+        "question": "Differentiate between Kharif and Rabi cropping seasons with two examples each.",
+        "answer": "1. Kharif crops are monsoon crops sown in June-July and harvested in September-October (e.g., Rice, Maize).\n2. Rabi crops are winter crops sown in October-November and harvested in March-April (e.g., Wheat, Mustard)."
+      }
+    ],
+    "level_3_long_answer_5_marks": [
+      {
+        "question": "Explain the major challenges faced by Indian farmers today and suggest sustainable solutions.",
+        "answer": "Challenges include monsoon erraticity, depleted groundwater levels, soil degradation from chemical overuse, high input costs, and climate change impacts. Sustainable solutions involve adopting drip/sprinkler irrigation, practicing organic and natural farming, rainwater harvesting, soil health monitoring, and crop diversification towards climate-resilient crops like millets."
+      }
+    ],
+    "level_4_competency_case_study": [
+      {
+        "scenario": "Ramesh is a small farmer in Rajasthan experiencing water scarcity and declining crop yields due to traditional flood irrigation and synthetic chemical fertilizers.",
+        "qa": [
+          {
+            "question": "What modern irrigation technique should Ramesh adopt to conserve water?",
+            "answer": "Drip irrigation or sprinkler systems to minimize evaporation and runoff."
+          },
+          {
+            "question": "How can he restore soil fertility sustainably?",
+            "answer": "By transitioning to organic farming using farmyard manure, vermicomposting, bio-pesticides, and legume crop rotation."
+          }
+        ]
       }
     ]
-  }
+  },
+  "m7_common_pitfalls": [
+    {
+      "common_error": "Confusing sowing and harvesting months for Kharif and Rabi crops.",
+      "correct_approach": "Associate Kharif with Monsoon (June sowing) and Rabi with Winter (October sowing)."
+    },
+    {
+      "common_error": "Assuming Laterite soil is formed by river deposits.",
+      "correct_approach": "Laterite soil is formed by intense weathering and leaching under high tropical rainfall; Alluvial soil is formed by river silt deposition."
+    }
+  ]
 }

@@ -1,265 +1,69 @@
 {
   "chapter_number": 7,
-  "chapter_title": "मेरा बचपन (संस्मरण)",
-  "genre": "संस्मरण (Reminiscence)",
-  "author": "मुंशी प्रेमचंद",
-  "core_theme_and_moral": {
-    "central_theme": "यह उपन्यास सम्राट मुंशी प्रेमचंद द्वारा लिखित एक अत्यंत रोचक संस्मरण है। इसमें वे अपने बचपन की स्मृतियों और ग्रामीण खेलों को याद करते हैं। प्रेमचंद जी 'गुल्ली-डंडा' को सब खेलों का राजा मानते थे, क्योंकि क्रिकेट या अन्य विदेशी खेलों की तरह इसके लिए किसी महँगे बल्ला, गेंद या मैदान की आवश्यकता नहीं होती। यह बिना किसी खर्च का, सहज और समानता से भरा देशी खेल है जिसे पेड़ की एक टहनी काटकर कहीं भी खेला जा सकता है।",
-    "moral_lesson": "देशी खेलों और प्राकृतिक संसाधनों में ही सच्चा, सहज और निष्कपट आनंद मिलता है। सादगी भरा जीवन और भेदभाव-रहित खेल ही बचपन की सबसे सुंदर धरोहर हैं।",
-    "pedagogical_objectives": [
-      "मुंशी प्रेमचंद के बाल-जीवन और 'संस्मरण' साहित्य विधा की विशेषताओं को समझना।",
-      "देशी भारतीय खेलों (गुल्ली-डंडा) और विदेशी महँगे खेलों के अंतर को स्पष्ट करना।",
-      "जातिवाचक व व्यक्तिवाचक संज्ञाओं तथा स्वावलंबन के विचार को समझना।"
-    ]
-  },
-  "detailed_summary_and_explanation": {
-    "overview": "प्रेमचंद जी बचपन में दोस्तों के साथ आम के बगीचों में गुल्ली-डंडा खेलते थे। वे गुल्ली-डंडे को सब खेलों का राजा मानते थे क्योंकि यह एकदम निःशुल्क और समानता से भरा खेल है। इसमें न कोई महँगा सामान चाहिए न विशेष मैदान।",
-    "stanza_wise_explanation": [
+  "chapter_title": "Shapes and Patterns",
+  "source_file": "eemm107.pdf",
+  "theme": "Tessellations, Polygons & 3D Nets",
+  "conceptual_foundation": {
+    "introduction": "This chapter investigates two-dimensional tiling and three-dimensional spatial geometry. Students study plane tessellations—the seamless tiling of surfaces without gaps or overlaps—and discover why certain regular shapes tile while others leave empty spaces. The chapter covers polygon classification by sides and angles, 7-piece tangram dissections, unfolding 3D solids into 2D flat nets, and testing Euler's Polyhedron Formula across solid shapes.",
+    "core_concepts": [
       {
-        "stanza_number": 1,
-        "lines": "अनुभाग 1: गुल्ली-डंडे का आनंद और क्रिकेट से तुलना।",
-        "meaning_and_analysis": "प्रेमचंद जी कहते हैं कि गुल्ली-डंडा सब खेलों का राजा है। इसमें न लॉन की ज़रूरत है, न नेट की, न महँगे बल्ले की। बस पेड़ से एक टहनी काटो, गुल्ली-डंडा बनाओ और खेलना शुरू कर दो।",
-        "poetic_beauty_and_rhyme": "सरल, आत्मीय व व्यंग्यात्मक गद्य शैली।"
+        "concept": "Plane Tessellations (Tiling Rules)",
+        "explanation": "A tessellation is a pattern of repeating shapes that completely covers a 2D plane without gaps or overlaps. For regular polygons to tessellate, their interior angles meeting at any vertex must sum to exactly 360°.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Why do square tiles fit together perfectly on floors, but regular pentagon tiles leave gaps?'\nSheela: 'Square corners are 90°. Four squares at a corner: 90° x 4 = 360°—a full fit! Pentagons have 108° corners; 108° x 3 = 324° (gap) and 108° x 4 = 432° (overlap)!'\nTeacher: 'Brilliant geometric proof!'",
+        "example": "Tessellating Shapes: Squares (90°x4=360°), Regular Hexagons (120°x3=360°), Equilateral Triangles (60°x6=360°)."
+      },
+      {
+        "concept": "Polygon Classification Framework",
+        "explanation": "Polygons are closed 2D figures formed by straight line segments. Classified by side counts: Triangles (3), Quadrilaterals (4), Pentagons (5), Hexagons (6), Octagons (8). Triangles classified as Equilateral (3 equal sides), Isosceles (2 equal sides), or Scalene (0 equal sides).\n\n[Instructional Dialogue Simulation]\nTeacher: 'Classify a triangle with side lengths 5 cm, 5 cm, and 8 cm.'\nRaman: 'It has 2 equal sides, so it's an Isosceles triangle!'",
+        "example": "Triangles:\n• Equilateral: All 3 sides equal (angles 60°).\n• Isosceles: 2 equal sides.\n• Scalene: All 3 sides different."
+      },
+      {
+        "concept": "7-Piece Tangram Dissection",
+        "explanation": "A traditional 7-piece geometric puzzle comprising 5 triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram that can be rearranged into endless shapes.\n\n[Instructional Dialogue Simulation]\nTeacher: 'How many triangles are in a standard 7-piece tangram?'\nAnish: '5 triangles! Plus 1 square and 1 parallelogram = 7 pieces total.'",
+        "example": "Tangram Composition: 5 Triangles + 1 Square + 1 Parallelogram = 7 Pieces."
+      },
+      {
+        "concept": "3D Nets & Unfolding Solid Shapes",
+        "explanation": "A net is a 2D flat arrangement of polygons that can be folded along its edges to form a 3D solid polyhedron. A cube net consists of 6 square faces.\n\n[Instructional Dialogue Simulation]\nTeacher: 'How many square faces make the net of a cube?'\nSheela: '6 square faces! When folded, they form a cube with 6 faces, 8 vertices, and 12 edges.'",
+        "example": "Cube Net: 6 identical square faces fold into a 3D cube."
+      },
+      {
+        "concept": "Polyhedron Properties & Euler's Formula",
+        "explanation": "For any convex polyhedron, the relationship between Faces (F), Vertices (V), and Edges (E) satisfies Euler's Formula: F + V - E = 2.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Test Euler's Formula for a cube (F=6, V=8, E=12).'\nRaman: '6 + 8 - 12 = 14 - 12 = 2! It holds true!'\nTeacher: 'What about a triangular pyramid (F=4, V=4, E=6)?'\nSheela: '4 + 4 - 6 = 8 - 6 = 2! Holds true again!'",
+        "example": "Euler's Formula Check:\n• Cube: F=6, V=8, E=12 -> 6+8-12 = 2.\n• Triangular Pyramid: F=4, V=4, E=6 -> 4+4-6 = 2."
       }
     ]
   },
-  "character_and_element_sketches": [
-    {
-      "element": "बालक प्रेमचंद (धनपत राय)",
-      "traits": "सरल, देशी खेलों का प्रेमी, भेदभाव-रहित, प्रकृति-प्रेमी।",
-      "significance": "भारतीय ग्रामीण बाल्यावस्था का सजीव प्रतीक।"
-    },
-    {
-      "element": "बाल-सखा (गाँव के साथी)",
-      "traits": "निष्कपट, उत्साही, निःशुल्क खेलों के आनंद में मग्न।",
-      "significance": "सामूहिक बाल-जीवन और समानता का प्रतीक।"
-    }
+  "key_formulas_and_rules": [
+    "Tessellation Vertex Fit Rule: Interior angles meeting at a vertex must sum to 360°",
+    "Euler's Polyhedron Formula: F + V - E = 2",
+    "Polygon Definition: Closed 2D plane figure made of straight line segments",
+    "Cube Net Composition: 6 square faces",
+    "Regular Hexagon Interior Angle = 120°",
+    "Euler's Polyhedron Formula: F + V - E = 2 (where F = Faces, V = Vertices, E = Edges). Cube Nets: Exactly 11 valid 2D nets fold into a closed 3D cube."
   ],
-  "exhaustive_vocabulary": {
-    "word_meanings": [
-      {
-        "word": "संस्मरण",
-        "meaning": "अतीत की यादों का आलेख",
-        "english_equivalent": "Memoir / Reminiscence",
-        "sentence": "प्रेमचंद जी ने अपने बचपन का संस्मरण लिखा।"
-      },
-      {
-        "word": "निःशुल्क",
-        "meaning": "बिना किसी खर्च का / मुफ्त",
-        "english_equivalent": "Free of cost",
-        "sentence": "गुल्ली-डंडा एक निःशुल्क खेल है।"
-      },
-      {
-        "word": "सहचर",
-        "meaning": "साथ खेलने या रहने वाला मित्र",
-        "english_equivalent": "Companion / Friend",
-        "sentence": "बचपन के सहचर हमेशा याद आते हैं।"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "सहचर",
-        "paryayvachi": [
-          "सखा",
-          "मित्र",
-          "साथी",
-          "दोस्त"
-        ]
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "निःशुल्क",
-        "vilom": "सशुल्क / महँगा"
-      },
-      {
-        "word": "देशी",
-        "vilom": "विदेशी"
-      }
-    ],
-    "spelling_corrections": [
-      {
-        "word": "प्रेमचन्द",
-        "correct": "प्रेमचंद"
-      },
-      {
-        "word": "निशुल्क",
-        "correct": "निःशुल्क"
-      }
-    ]
-  },
-  "comprehensive_grammar": {
-    "nouns": {
-      "vyaktivachak": [
-        "प्रेमचंद",
-        "धनपत राय"
-      ],
-      "jativachak": [
-        "खेल",
-        "बगीचा",
-        "मित्र",
-        "टहनी"
-      ],
-      "bhavvachak": [
-        "बचपन",
-        "आनंद",
-        "समानता"
-      ]
-    },
-    "pronouns": [
-      "मैं",
-      "हम",
-      "अपना",
-      "जिसका"
-    ],
-    "adjectives": [
-      "निःशुल्क",
-      "देशी",
-      "महँगा",
-      "सुंदर"
-    ],
-    "verbs_and_tenses": [
-      "खेलते थे (अपूर्ण भूत)",
-      "काटकर (पूर्वकालिक)",
-      "बनाया (भूत)"
-    ],
-    "case_markers": [
-      "का (संबंध)",
-      "में (अधिकरण)",
-      "से (करण)"
-    ],
-    "gender_and_number": [
-      {
-        "word": "मित्र",
-        "gender": "पुल्लिंग",
-        "plural": "मित्रों"
-      },
-      {
-        "word": "टहनी",
-        "gender": "स्त्रीलिंग",
-        "plural": "टहनियाँ"
-      }
-    ],
-    "idioms_and_phrases": [
-      {
-        "phrase": "यादों में खो जाना",
-        "meaning": "अतीत की स्मृतियों में मग्न होना",
-        "sentence": "पुराने मित्रों को देखकर दादाजी यादों में खो गए।"
-      },
-      {
-        "phrase": "आकाश-पाताल का अंतर होना",
-        "meaning": "अत्यधिक बड़ा अंतर होना",
-        "sentence": "देशी और विदेशी खेलों के खर्च में आकाश-पाताल का अंतर है।"
-      }
-    ]
-  },
-  "comprehension_and_extracts": [
-    {
-      "extract": "गुल्ली-डंडा सब खेलों का राजा है। न इसके लिए लॉन चाहिए, न नेट, न बल्ला। एक टहनी काटी और गुल्ली-डंडा बनाकर खेलना शुरू कर दिया।",
-      "questions_and_answers": [
-        {
-          "question": "लेखक गुल्ली-डंडे को सब खेलों का राजा क्यों मानते हैं?",
-          "answer": "क्योंकि यह बिना किसी महँगे सामान या मैदान के सहजता से खेला जाने वाला निःशुल्क और समानता से भरा खेल है।"
-        }
-      ]
-    }
-  ],
-  "question_bank": {
-    "mcqs": [
-      {
-        "question": "'मेरा बचपन' पाठ किस महान साहित्यकार का संस्मरण है?",
-        "options": [
-          "(क) जयशंकर प्रसाद",
-          "(ख) मुंशी प्रेमचंद",
-          "(ग) महादेवी वर्मा",
-          "(घ) कबीर"
-        ],
-        "answer": "(ख) मुंशी प्रेमचंद",
-        "explanation": "यह प्रसिद्ध संस्मरण कथा सम्राट मुंशी प्रेमचंद जी द्वारा लिखित है।"
-      }
-    ],
-    "short_answer_questions": [
-      {
-        "question": "लेखक के अनुसार क्रिकेट और गुल्ली-डंडे में क्या मुख्य अंतर है?",
-        "answer": "क्रिकेट एक महँगा विदेशी खेल है जिसके लिए बल्ले, गेंद, विकेट और मैदान की आवश्यकता होती है, जबकि गुल्ली-डंडा एक निःशुल्क देशी खेल है।"
-      }
-    ],
-    "long_answer_questions": [
-      {
-        "question": "मुंशी प्रेमचंद का यह संस्मरण बाल-जीवन के बारे में क्या संदेश देता है?",
-        "answer": "यह संस्मरण सिखाता है कि प्राकृतिक संसाधनों और देशी खेलों में ही सच्चा, सहज और भेदभाव-रहित आनंद मिलता है। सादगी भरा जीवन ही सबसे सुखद होता है।"
-      }
-    ],
-    "creative_writing": [
-      {
-        "topic": "मेरा प्रिय खेल और उसके खेलने के नियम",
-        "guidelines": "100 शब्दों में रचनात्मक लेख लिखिए।"
-      }
-    ]
-  },
-  "activities_and_projects": [
-    {
-      "activity_name": "बहु-पात्रीय शिक्षण नाट्य-संवाद एवं भूमिका-निर्वाह (Interactive Role-Play Scenario)",
-      "description": "पात्र: 1. बालक प्रेमचंद (धनपत), 2. उसका मित्र (गया)।\n\nधनपत: 'अरे गया! चलो आज आम के बगीचे में गुल्ली-डंडा खेलते हैं!'\n\nगया: 'पर धनपत! मेरे पास तो पैसे नहीं हैं, गुल्ली-डंडा कहाँ से खरीदेंगे?'\n\nधनपत (हँसकर): 'अरे बुद्धू! गुल्ली-डंडा खरीदने के लिए पैसे किसने माँगे? उस नीम के पेड़ की सूखी डाल से एक टहनी काटो, चाकू से दोनों कोने पतले करो और बन गई गुल्ली!'\n\nगया (उत्साह से): 'हाँ यार! न गेंद खोने का डर, न बल्ला टूटने का खर्चा! यह क्रिकेट-व्रिकेट से हज़ार गुना अच्छा खेल है!'\n\nधनपत: 'बिल्कुल! इसमें सब बराबर हैं, न कोई अमीर न कोई गरीब! आओ, पहली दाँव मेरी!'"
-    }
-  ],
+  "real_world_applications": "Architectural floor tiling designs, packaging box net folding, textile tangram patterns, geodesic dome design, and 3D modeling.",
   "image_asset": {
-    "asset_id": "IMG-CH07-001",
-    "title": "मेरा बचपन (संस्मरण - मुंशी प्रेमचंद)",
-    "filename": "ch07_merabachpan.png",
-    "local_url": "/assets/images/ch07_merabachpan.png",
+    "chapter_number": 7,
+    "image_id": "ch07_tessellations_nets",
+    "file_name": "ch07_tessellations_nets.png",
+    "local_url": "/assets/images/ch07_tessellations_nets.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 1600,
-      "height": 900
-    },
-    "alt_text": "16:9 प्रेमचंद का बचपन व देशी खेल आरेख",
-    "caption": "गुल्ली-डंडा खेल, रामलीला मंचन व ग्रामीण बाल-स्मृतियाँ",
+    "title": "Surface Tessellations & Unfolded 3D Polyhedron Nets",
+    "description": "Seamless tiling tessellation vertex angle rules (360°) and unfolded 6-face cube net with Euler formula F+V-E=2.",
     "hotspots": [
       {
-        "hotspot_id": "HS-01",
-        "label": "बाल प्रेमचंद (धनपत राय)",
-        "x_percent": 8.0,
-        "y_percent": 12.0,
+        "label": "Tessellation 360 deg Vertex Fit",
+        "x_percent": 25.0,
+        "y_percent": 45.0,
         "w_percent": 20.0,
-        "h_percent": 25.0,
-        "description": "सादे ग्रामीण वातावरण में पला-बढ़ा बाल साहित्यकार"
+        "h_percent": 20.0
       },
       {
-        "hotspot_id": "HS-02",
-        "label": "गुल्ली-डंडा खेल",
-        "x_percent": 30.0,
-        "y_percent": 15.0,
+        "label": "3D Unfolded Cube Net",
+        "x_percent": 70.0,
+        "y_percent": 45.0,
         "w_percent": 22.0,
-        "h_percent": 25.0,
-        "description": "बिना किसी व्यय का सब खेलों का राजा - देशी खेल"
-      },
-      {
-        "hotspot_id": "HS-03",
-        "label": "आम के बगीचे व चराई",
-        "x_percent": 55.0,
-        "y_percent": 12.0,
-        "w_percent": 20.0,
-        "h_percent": 25.0,
-        "description": "कच्चे आम तोड़ना, मटर की फलियाँ खाना व बेफिक्री"
-      },
-      {
-        "hotspot_id": "HS-04",
-        "label": "गाँव की रामलीला",
-        "x_percent": 15.0,
-        "y_percent": 50.0,
-        "w_percent": 25.0,
-        "h_percent": 30.0,
-        "description": "सांस्कृतिक उत्सवों में उत्साहपूर्वक भाग लेना"
-      },
-      {
-        "hotspot_id": "HS-05",
-        "label": "सामाजिक समानता का संदेश",
-        "x_percent": 52.5,
-        "y_percent": 50.0,
-        "w_percent": 25.0,
-        "h_percent": 30.0,
-        "description": "अमीरी-गरीबी के भेद से परे बाल-सुलभ भ्रातृभाव"
+        "h_percent": 30.0
       }
     ]
   }

@@ -1,56 +1,62 @@
 {
   "chapter_number": 6,
-  "chapter_title": "Constructions and Tilings",
-  "image_asset": {
-    "asset_id": "img_ch6",
-    "chapter_number": 6,
-    "title": "Regular Hexagon Construction",
-    "url": "/assets/images/ch6_regular_hexagon_construction.png",
-    "caption": "Construction of regular hexagon using straightedge and compass showing 6 central 60° equilateral triangles.",
-    "hotspots": [
-      {
-        "x_percent": 25,
-        "y_percent": 25,
-        "w_percent": 50,
-        "h_percent": 50,
-        "label": "Central Equilateral Triangles",
-        "popover_text": "6 equilateral triangles meet at center O with 60° angles."
-      }
-    ]
-  },
-  "mock_exam": null,
+  "chapter_title": "The State, the Government, and You",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - Chapter 6 Practice Paper (Perpendicular Bisector & Equidistance)",
-      "total_marks": 25,
+      "paper_title": "Set 1 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "What compass radius setting is required when constructing the perpendicular bisector of segment XY?",
+              "question_text": "Which of the following is NOT an essential element of a State?",
               "options": [
-                "A) Exactly equal to XY",
-                "B) Strictly greater than half of XY (>0.5 XY)",
-                "C) Less than half of XY",
-                "D) Any radius"
+                "A) Defined Territory",
+                "B) Permanent Population",
+                "C) Political Party",
+                "D) Sovereignty"
               ],
-              "correct_answer": "B) Strictly greater than half of XY (>0.5 XY)",
+              "correct_answer": "C) Political Party",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "Any point located on the perpendicular bisector of segment AB is:",
+              "question_text": "India is classified as a 'Republic' because:",
               "options": [
-                "A) Equidistant from endpoints A and B",
-                "B) Closer to A than B",
-                "C) At right angles to midpoint only",
-                "D) 10 cm from AB"
+                "A) It has a written constitution",
+                "B) Its Head of State (President) is an elected citizen",
+                "C) It has a Parliament",
+                "D) It has High Courts"
               ],
-              "correct_answer": "A) Equidistant from endpoints A and B",
+              "correct_answer": "B) Its Head of State (President) is an elected citizen",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "The power of the Judiciary to invalidate unconstitutional laws passed by Parliament is:",
+              "options": [
+                "A) Legislative veto",
+                "B) Judicial Review",
+                "C) Executive order",
+                "D) Ordinance"
+              ],
+              "correct_answer": "B) Judicial Review",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Which organ of government is responsible for making and amending laws?",
+              "options": [
+                "A) Executive",
+                "B) Legislature",
+                "C) Judiciary",
+                "D) Bureaucracy"
+              ],
+              "correct_answer": "B) Legislature",
               "marks": 1
             }
           ]
@@ -60,14 +66,14 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Which two classical instruments are exclusively permitted in geometric constructions?",
-              "marking_scheme_answer": "An unmarked straightedge (ruler) and a pair of compasses.",
-              "marks": 2
+              "question_text": "Distinguish between the State and the Government.",
+              "marking_scheme_answer": "State: Abstract, permanent political entity (comprising territory, population, government, sovereignty). Government: Temporary agency of elected officials managing state administration.",
+              "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "Is it necessary to use the same compass radius for arcs above and below segment XY when constructing its perpendicular bisector? Explain.",
-              "marking_scheme_answer": "No. Radius for top arcs can differ from bottom arcs, provided top arcs from X and Y are equal to each other (>0.5 XY) and bottom arcs from X and Y are equal to each other.",
+              "question_text": "List the three organs of government and their primary functions.",
+              "marking_scheme_answer": "1. Legislature: Frames and enacts laws. 2. Executive: Enforces and implements laws. 3. Judiciary: Interprets laws and enforces justice.",
               "marks": 3
             }
           ]
@@ -77,20 +83,20 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Draw segment XY = 8 cm. Describe step-by-step how to construct its perpendicular bisector line AB using ruler and compass. Prove why AX = AY.",
-              "marking_scheme_answer": "Steps: 1) Draw XY = 8 cm. 2) Set compass radius > 4 cm. Draw arcs above and below XY from X and Y meeting at A and B. 3) Join AB meeting XY at M. Proof: In ΔAMX and ΔAMY, MX = MY, ∠AMX = ∠AMY = 90°, AM = AM. By SAS, ΔAMX ≅ ΔAMY, so AX = AY by CPCT.",
+              "question_text": "Explain the principle of 'Separation of Powers' and how 'Checks and Balances' prevent concentration of authority in India.",
+              "marking_scheme_answer": "Separation of Powers divides governmental functions among Legislature, Executive, and Judiciary. Checks and Balances ensure no branch is supreme: Executive is accountable to Parliament; Judiciary can strike down unconstitutional laws via Judicial Review; Parliament can impeach judges for proven misconduct.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section D (Case-Study Question)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "An artist constructs a symmetrical human eye outline. The upper and lower eyelid arcs meet at corners P and Q (PQ = 6 cm). (a) What line contains the center points for both arcs? (b) Prove that any center point C on this line satisfies CP = CQ.",
-              "marking_scheme_answer": "(a) The center points lie on the perpendicular bisector of segment PQ. (b) By SAS triangle congruence (ΔCMP ≅ ΔCMQ where M is midpoint of PQ), CP = CQ.",
-              "marks": 5
+              "question_text": "Case Scenario: A state passes a law banning peaceful civic assembly on public grounds.\n(a) Which organ can citizens approach to challenge this law?\n(b) On what constitutional grounds can the court strike it down?",
+              "marking_scheme_answer": "(a) The Judiciary (High Court or Supreme Court).\n(b) Violates Fundamental Rights (Article 19 - Freedom of Speech and Peaceful Assembly).",
+              "marks": 4
             }
           ]
         }
@@ -98,35 +104,59 @@
     },
     {
       "paper_id": 2,
-      "paper_title": "Set 2 - Chapter 6 Practice Paper (Angle Bisector & Copying Angles)",
-      "total_marks": 25,
+      "paper_title": "Set 2 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Which triangle congruence criterion is applied when copying an angle using ruler and compass?",
+              "question_text": "Sovereignty as an element of a State means:",
               "options": [
-                "A) SSS Criterion",
-                "B) SAS Criterion",
-                "C) ASA Criterion",
-                "D) RHS Criterion"
+                "A) Subordination to foreign rule",
+                "B) Supreme, independent legal authority",
+                "C) Absence of laws",
+                "D) Rule by military"
               ],
-              "correct_answer": "A) SSS Criterion",
+              "correct_answer": "B) Supreme, independent legal authority",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "An angle bisector divides an angle of 74° into two angles measuring:",
+              "question_text": "In India, the supreme law of the land is the:",
               "options": [
-                "A) 30° each",
-                "B) 37° each",
-                "C) 40° each",
-                "D) 148° each"
+                "A) Prime Minister's Decree",
+                "B) Constitution of India",
+                "C) Supreme Court Order",
+                "D) Parliamentary Act"
               ],
-              "correct_answer": "B) 37° each",
+              "correct_answer": "B) Constitution of India",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Universal Adult Franchise grants the right to vote to all citizens above the age of:",
+              "options": [
+                "A) 16 years",
+                "B) 18 years",
+                "C) 21 years",
+                "D) 25 years"
+              ],
+              "correct_answer": "B) 18 years",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Which organ of government implements public policy and executes laws?",
+              "options": [
+                "A) Legislature",
+                "B) Executive",
+                "C) Judiciary",
+                "D) Press"
+              ],
+              "correct_answer": "B) Executive",
               "marks": 1
             }
           ]
@@ -136,15 +166,15 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Describe step-by-step how to bisect a given angle ∠AOB.",
-              "marking_scheme_answer": "1) Draw an arc from vertex O intersecting arms OA and OB at P and Q. 2) From P and Q, draw equal arcs intersecting at C. 3) Ray OC is the angle bisector.",
+              "question_text": "Why is Sovereignty considered the defining element that separates a sovereign State from a colony?",
+              "marking_scheme_answer": "A colony has territory and population but lacks sovereignty because its laws and foreign policy are dictated by an external ruling power.",
               "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "If ray OC bisects ∠AOB and ∠AOC = 28°, find the measure of ∠AOB.",
-              "marking_scheme_answer": "∠AOB = 2 × ∠AOC = 2 × 28° = 56°.",
-              "marks": 2
+              "question_text": "What is a Democratic Republic?",
+              "marking_scheme_answer": "Democratic: Power is exercised by citizens through free, periodic elections. Republic: Head of State is an elected citizen, not a hereditary monarch.",
+              "marks": 3
             }
           ]
         },
@@ -153,20 +183,20 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Describe step-by-step how to construct a line parallel to line 'l' passing through an external point P using alternate interior angles.",
-              "marking_scheme_answer": "1) Pick point A on line 'l' and draw transversal AP. 2) ∠PAL is formed. 3) At vertex P, copy ∠PAL on alternate side of transversal AP using SSS angle copy method to form ∠APM = ∠PAL. 4) Extend ray PM to form line 'm' parallel to 'l'.",
+              "question_text": "Discuss the four essential elements required to form a State, illustrating each with Indian examples.",
+              "marking_scheme_answer": "1. Defined Territory: Geographically demarcated borders.\n2. Permanent Population: 1.4 billion citizens.\n3. Functioning Government: Union and State constitutional governments.\n4. Sovereignty: Total legal independence in domestic and foreign policy.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section D (Case-Study Question)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "A carpenter wants to cut two wood panels at identical angles ∠ABC = 52°. He copies ∠ABC onto a second panel ray XY forming ∠XYZ. (a) What criterion guarantees ∠XYZ = ∠ABC? (b) If he bisects ∠XYZ with ray YW, find ∠XYW.",
-              "marking_scheme_answer": "(a) SSS criterion (by copying equal arc lengths and chord distances). (b) ∠XYW = 52° / 2 = 26°.",
-              "marks": 5
+              "question_text": "Case Scenario: A student model parliament debates a draft School Safety Bill.\n(a) What steps occur during the first and second reading of a bill?\n(b) What role does the Opposition play in a democracy?",
+              "marking_scheme_answer": "(a) First reading introduces the bill; second reading involves clause-by-clause debate and amendments.\n(b) The Opposition questions government policies, highlights flaws, and ensures accountability.",
+              "marks": 4
             }
           ]
         }
@@ -174,35 +204,59 @@
     },
     {
       "paper_id": 3,
-      "paper_title": "Set 3 - Chapter 6 Practice Paper (Angle Derivations: 60°, 30°, 90°, 45°)",
-      "total_marks": 25,
+      "paper_title": "Set 3 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Drawing an arc on a line and intersecting it with the same compass radius from the intersection point constructs an angle of:",
+              "question_text": "Which quote regarding civic participation is attributed to Socrates in Plato's Republic?",
               "options": [
-                "A) 45°",
-                "B) 60°",
-                "C) 90°",
-                "D) 120°"
+                "A) Knowledge is virtue",
+                "B) The punishment for refusing to rule is being ruled by someone worse",
+                "C) An unexamined life is not worth living",
+                "D) Man is a political animal"
               ],
-              "correct_answer": "B) 60°",
+              "correct_answer": "B) The punishment for refusing to rule is being ruled by someone worse",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "How is a 45° angle systematically derived using constructions?",
+              "question_text": "The civil services and administration form part of the:",
               "options": [
-                "A) Bisecting a 60° angle",
-                "B) Bisecting a 90° angle",
-                "C) Trisecting 180°",
-                "D) Adding 30° to 30°"
+                "A) Political Executive",
+                "B) Permanent Executive (Bureaucracy)",
+                "C) Judiciary",
+                "D) Legislature"
               ],
-              "correct_answer": "B) Bisecting a 90° angle",
+              "correct_answer": "B) Permanent Executive (Bureaucracy)",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which Act allows citizens to demand official records and information from government bodies?",
+              "options": [
+                "A) Right to Education Act",
+                "B) Right to Information (RTI) Act",
+                "C) Consumer Protection Act",
+                "D) Civil Rights Act"
+              ],
+              "correct_answer": "B) Right to Information (RTI) Act",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "In a constitutional democracy, minority rights are protected against:",
+              "options": [
+                "A) The Judiciary",
+                "B) Tyranny or overreach by the majority",
+                "C) Foreign aid",
+                "D) Taxation"
+              ],
+              "correct_answer": "B) Tyranny or overreach by the majority",
               "marks": 1
             }
           ]
@@ -212,14 +266,14 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Explain why the first arc intersection step constructs an angle of exactly 60°.",
-              "marking_scheme_answer": "Keeping the compass radius unchanged creates an equilateral triangle with 3 equal side lengths, and every interior angle of an equilateral triangle measures 60°.",
-              "marks": 2
+              "question_text": "Differentiate between the Political Executive and the Permanent Executive.",
+              "marking_scheme_answer": "Political Executive: Elected ministers (PM, Cabinet) holding office for a temporary term. Permanent Executive: Civil servants (IAS, IPS) appointed permanently based on merit.",
+              "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "Outline the construction steps to obtain a 30° angle and a 15° angle.",
-              "marking_scheme_answer": "1) Construct a 60° angle using equilateral arc. 2) Bisect 60° angle to get 30°. 3) Bisect 30° angle to get 15°.",
+              "question_text": "How does the Right to Information (RTI) empower ordinary citizens?",
+              "marking_scheme_answer": "RTI mandates government transparency, allowing citizens to inspect public works, audit expenditure, and expose administrative corruption.",
               "marks": 3
             }
           ]
@@ -229,20 +283,20 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Describe step-by-step how to construct a 90° perpendicular angle at a given point P on line 'l' using compass and ruler.",
-              "marking_scheme_answer": "1) With center P, draw a semicircle intersecting line 'l' at A and B. 2) From A and B, draw arcs with radius > AP intersecting at C above P. 3) Draw line PC. Line PC is perpendicular to line 'l' at P (∠CPA = 90°).",
+              "question_text": "Examine the role of the Judiciary as the guardian of the Constitution and protector of Fundamental Rights.",
+              "marking_scheme_answer": "The Judiciary operates independently of Executive/Legislature. It protects citizens against state overreach by issuing writs, exercising Judicial Review, striking down unconstitutional laws, and ensuring rule of law.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section D (Case-Study Question)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "A solar panel installation requires mounting brackets at angles of 60°, 30°, and 45°. (a) Which basic angle is constructed first for 30°? (b) How is 45° obtained? (c) Find angle between 30° and 45° brackets.",
-              "marking_scheme_answer": "(a) 60° angle is constructed first. (b) 45° is obtained by constructing 90° and bisecting it. (c) Difference = 45° - 30° = 15°.",
-              "marks": 5
+              "question_text": "Case Scenario: A citizen files an RTI application regarding bridge construction delays.\n(a) Which government body must respond to this RTI request?\n(b) Why is public disclosure of project budgets important?",
+              "marking_scheme_answer": "(a) The concerned Public Works Department (PWD) Public Information Officer.\n(b) Prevents embezzlement, ensures quality materials are used, and enforces accountability.",
+              "marks": 4
             }
           ]
         }
@@ -250,35 +304,59 @@
     },
     {
       "paper_id": 4,
-      "paper_title": "Set 4 - Chapter 6 Practice Paper (Regular Hexagon & Architectural Patterns)",
-      "total_marks": 25,
+      "paper_title": "Set 4 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "How many equilateral triangles form a regular hexagon from its center point?",
+              "question_text": "Which body holds the power to impeach the President or judges of the Supreme Court for misconduct?",
               "options": [
-                "A) 4",
-                "B) 5",
-                "C) 6",
-                "D) 8"
+                "A) Cabinet",
+                "B) Parliament",
+                "C) Election Commission",
+                "D) Union Public Service Commission"
               ],
-              "correct_answer": "C) 6",
+              "correct_answer": "B) Parliament",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "What is the measure of each interior angle of a regular hexagon?",
+              "question_text": "The Head of State in the United Kingdom is a hereditary monarch, making the UK a:",
               "options": [
-                "A) 60°",
-                "B) 90°",
-                "C) 120°",
-                "D) 108°"
+                "A) Republic",
+                "B) Constitutional Monarchy",
+                "C) Dictatorship",
+                "D) Anarchy"
               ],
-              "correct_answer": "C) 120°",
+              "correct_answer": "B) Constitutional Monarchy",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "The Lok Sabha and Rajya Sabha together constitute the Indian:",
+              "options": [
+                "A) Supreme Court",
+                "B) Parliament (Legislature)",
+                "C) Cabinet",
+                "D) NITI Aayog"
+              ],
+              "correct_answer": "B) Parliament (Legislature)",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Active citizenship in a democracy requires:",
+              "options": [
+                "A) Voting in elections and questioning public policy",
+                "B) Blind obedience to government orders",
+                "C) Refusing to pay taxes",
+                "D) Avoiding community affairs"
+              ],
+              "correct_answer": "A) Voting in elections and questioning public policy",
               "marks": 1
             }
           ]
@@ -288,15 +366,15 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Explain why stepping off the radius 6 times around a circle's circumference forms a regular hexagon.",
-              "marking_scheme_answer": "Stepping off radius 'r' creates 6 adjacent chord segments of length 'r'. Each central triangle has 3 sides equal to 'r' (equilateral), subtending 6 × 60° = 360° at center.",
+              "question_text": "Explain why Constitutional Supremacy is vital in a federal democratic state.",
+              "marking_scheme_answer": "Prevents any single organ or level of government from exercising absolute power; sets binding legal limits and guarantees fundamental rights.",
               "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "What is a pointed arch in architecture and how is it constructed geometrically?",
-              "marking_scheme_answer": "A pointed arch consists of two circular arcs meeting at a central point at the top, constructed from center points on the base support line.",
-              "marks": 2
+              "question_text": "How does a No-Confidence Motion hold the Executive accountable to Parliament?",
+              "marking_scheme_answer": "If Lok Sabha passes a No-Confidence Motion against the Council of Ministers, the Prime Minister and Cabinet must resign immediately.",
+              "marks": 3
             }
           ]
         },
@@ -305,20 +383,20 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Describe step-by-step how to construct a regular hexagon ABCDEF of side length 4 cm using ruler and compass.",
-              "marking_scheme_answer": "1) Draw circle of radius r = 4 cm with center O. 2) Mark point A on circumference. 3) With compass set at 4 cm, draw arc from A to mark B on circle. 4) Move to B and mark C; continue stepping off points D, E, F. 5) Join AB, BC, CD, DE, EF, FA.",
+              "question_text": "Contrast a Democratic Republic (like India) with a Constitutional Monarchy (like the UK) and an Authoritarian State.",
+              "marking_scheme_answer": "1. Democratic Republic: Power from citizens, elected Head of State, rule of law.\n2. Constitutional Monarchy: Democratic governance with a ceremonial hereditary monarch.\n3. Authoritarian State: Concentration of unchecked power in an unelected dictator/party, suppressing rights.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section D (Case-Study Question)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "An Islamic tile pattern uses a 6-pointed star rosette constructed inside a regular hexagon. (a) Find central angle of each of the 6 constituent equilateral triangles. (b) Find interior angle of hexagon. (c) Total sum of interior angles.",
-              "marking_scheme_answer": "(a) Central angle = 360° / 6 = 60°. (b) Interior angle = 2 × 60° = 120°. (c) Total sum = 6 × 120° = 720°.",
-              "marks": 5
+              "question_text": "Case Scenario: A municipality orders demolitions without prior legal notice.\n(a) Which fundamental right is violated?\n(b) What legal remedy can citizens seek from the High Court?",
+              "marking_scheme_answer": "(a) Right to Equality and Due Process of Law (Article 14 and 21).\n(b) File a writ petition (like Habeas Corpus / Mandamus) seeking an immediate stay order.",
+              "marks": 4
             }
           ]
         }
@@ -326,35 +404,59 @@
     },
     {
       "paper_id": 5,
-      "paper_title": "Set 5 - Chapter 6 Practice Paper (Tilings & Tangram Puzzles)",
-      "total_marks": 25,
+      "paper_title": "Set 5 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "What two strict requirements define a valid plane tiling (tessellation)?",
+              "question_text": "The maximum term duration of the Lok Sabha before general elections are held is:",
               "options": [
-                "A) Zero gaps and zero overlaps",
-                "B) Equal side lengths only",
-                "C) 90° angles only",
-                "D) Curved boundaries"
+                "A) 4 years",
+                "B) 5 years",
+                "C) 6 years",
+                "D) 10 years"
               ],
-              "correct_answer": "A) Zero gaps and zero overlaps",
+              "correct_answer": "B) 5 years",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "How many total pieces comprise a traditional Chinese Tangram puzzle?",
+              "question_text": "Which organ of government interprets the meaning of constitutional provisions during legal disputes?",
               "options": [
-                "A) 5",
-                "B) 6",
-                "C) 7",
-                "D) 8"
+                "A) Legislature",
+                "B) Executive",
+                "C) Judiciary",
+                "D) Press"
               ],
-              "correct_answer": "C) 7",
+              "correct_answer": "C) Judiciary",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "An ordinance issued by the President during parliamentary recess is an executive action with the force of:",
+              "options": [
+                "A) A temporary law",
+                "B) A permanent constitutional amendment",
+                "C) A non-binding suggestion",
+                "D) A court verdict"
+              ],
+              "correct_answer": "A) A temporary law",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Democracy originates from the Greek words 'Demos' and 'Kratos', which mean:",
+              "options": [
+                "A) King and Kingdom",
+                "B) People and Power/Rule",
+                "C) Army and State",
+                "D) Wealth and Market"
+              ],
+              "correct_answer": "B) People and Power/Rule",
               "marks": 1
             }
           ]
@@ -364,90 +466,14 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "List the individual shapes and quantities of the 7 Tangram pieces.",
-              "marking_scheme_answer": "5 isosceles right triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram.",
+              "question_text": "Explain the concept of 'Rule of Law' in a democratic republic.",
+              "marking_scheme_answer": "Rule of Law means all citizens, including prime ministers and officials, are equal before the law and subject to the same legal courts.",
               "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "Can regular pentagons tile a 2D plane completely without gaps? Explain.",
-              "marking_scheme_answer": "No. Interior angle of regular pentagon is 108°. Since 360° is not divisible by 108° (3 × 108° = 324°), gaps remain at vertices.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Explain which regular polygons can tile a plane by themselves (monohedral tessellation) and prove why using vertex angle sum.",
-              "marking_scheme_answer": "Regular polygons tile if interior angle divides 360° completely: 1) Equilateral Triangle (60°): 6 × 60° = 360°. 2) Square (90°): 4 × 90° = 360°. 3) Regular Hexagon (120°): 3 × 120° = 360°. Only triangles, squares, and hexagons form monohedral regular tilings.",
-              "marks": 5
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study Question)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A floor designer uses a square layout divided into a 7-piece Tangram set. (a) If area of square is 64 sq cm, find area of 7 pieces combined. (b) What fraction of area is formed by 2 large triangles? (c) Name all 4-sided shapes in Tangram.",
-              "marking_scheme_answer": "(a) Total area = 64 sq cm (tessellation preserves total area). (b) Two large triangles form 1/2 of total area = 32 sq cm. (c) The square and the parallelogram (two 4-sided shapes).",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 1,
-      "paper_title": "Set 1 - Chapter 6 Practice Paper (Perpendicular Bisector & Equidistance)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "What compass radius setting is required when constructing the perpendicular bisector of segment XY?",
-              "options": [
-                "A) Exactly equal to XY",
-                "B) Strictly greater than half of XY (>0.5 XY)",
-                "C) Less than half of XY",
-                "D) Any radius"
-              ],
-              "correct_answer": "B) Strictly greater than half of XY (>0.5 XY)",
-              "marks": 1
-            },
-            {
-              "question_number": 2,
-              "question_text": "Any point located on the perpendicular bisector of segment AB is:",
-              "options": [
-                "A) Equidistant from endpoints A and B",
-                "B) Closer to A than B",
-                "C) At right angles to midpoint only",
-                "D) 10 cm from AB"
-              ],
-              "correct_answer": "A) Equidistant from endpoints A and B",
-              "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Which two classical instruments are exclusively permitted in geometric constructions?",
-              "marking_scheme_answer": "An unmarked straightedge (ruler) and a pair of compasses.",
-              "marks": 2
-            },
-            {
-              "question_number": 2,
-              "question_text": "Is it necessary to use the same compass radius for arcs above and below segment XY when constructing its perpendicular bisector? Explain.",
-              "marking_scheme_answer": "No. Radius for top arcs can differ from bottom arcs, provided top arcs from X and Y are equal to each other (>0.5 XY) and bottom arcs from X and Y are equal to each other.",
+              "question_text": "What duties accompany rights for a responsible citizen in India?",
+              "marking_scheme_answer": "Abiding by the Constitution, protecting public property, preserving environmental heritage, voting responsibly, and fostering national unity.",
               "marks": 3
             }
           ]
@@ -457,328 +483,200 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Draw segment XY = 8 cm. Describe step-by-step how to construct its perpendicular bisector line AB using ruler and compass. Prove why AX = AY.",
-              "marking_scheme_answer": "Steps: 1) Draw XY = 8 cm. 2) Set compass radius > 4 cm. Draw arcs above and below XY from X and Y meeting at A and B. 3) Join AB meeting XY at M. Proof: In ΔAMX and ΔAMY, MX = MY, ∠AMX = ∠AMY = 90°, AM = AM. By SAS, ΔAMX ≅ ΔAMY, so AX = AY by CPCT.",
+              "question_text": "Detail the law-making process in the Indian Parliament from introduction to Presidential assent.",
+              "marking_scheme_answer": "1. Introduction (First Reading).\n2. Committee Scrutiny & Clause Debate (Second Reading).\n3. Voting in First House (Third Reading).\n4. Passage through Second House.\n5. Presidential Assent transforms the Bill into an official Act.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section D (Case-Study Question)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "An artist constructs a symmetrical human eye outline. The upper and lower eyelid arcs meet at corners P and Q (PQ = 6 cm). (a) What line contains the center points for both arcs? (b) Prove that any center point C on this line satisfies CP = CQ.",
-              "marking_scheme_answer": "(a) The center points lie on the perpendicular bisector of segment PQ. (b) By SAS triangle congruence (ΔCMP ≅ ΔCMQ where M is midpoint of PQ), CP = CQ.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "Set 2 - Chapter 6 Practice Paper (Angle Bisector & Copying Angles)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Which triangle congruence criterion is applied when copying an angle using ruler and compass?",
-              "options": [
-                "A) SSS Criterion",
-                "B) SAS Criterion",
-                "C) ASA Criterion",
-                "D) RHS Criterion"
-              ],
-              "correct_answer": "A) SSS Criterion",
-              "marks": 1
-            },
-            {
-              "question_number": 2,
-              "question_text": "An angle bisector divides an angle of 74° into two angles measuring:",
-              "options": [
-                "A) 30° each",
-                "B) 37° each",
-                "C) 40° each",
-                "D) 148° each"
-              ],
-              "correct_answer": "B) 37° each",
-              "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Describe step-by-step how to bisect a given angle ∠AOB.",
-              "marking_scheme_answer": "1) Draw an arc from vertex O intersecting arms OA and OB at P and Q. 2) From P and Q, draw equal arcs intersecting at C. 3) Ray OC is the angle bisector.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "If ray OC bisects ∠AOB and ∠AOC = 28°, find the measure of ∠AOB.",
-              "marking_scheme_answer": "∠AOB = 2 × ∠AOC = 2 × 28° = 56°.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Describe step-by-step how to construct a line parallel to line 'l' passing through an external point P using alternate interior angles.",
-              "marking_scheme_answer": "1) Pick point A on line 'l' and draw transversal AP. 2) ∠PAL is formed. 3) At vertex P, copy ∠PAL on alternate side of transversal AP using SSS angle copy method to form ∠APM = ∠PAL. 4) Extend ray PM to form line 'm' parallel to 'l'.",
-              "marks": 5
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study Question)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A carpenter wants to cut two wood panels at identical angles ∠ABC = 52°. He copies ∠ABC onto a second panel ray XY forming ∠XYZ. (a) What criterion guarantees ∠XYZ = ∠ABC? (b) If he bisects ∠XYZ with ray YW, find ∠XYW.",
-              "marking_scheme_answer": "(a) SSS criterion (by copying equal arc lengths and chord distances). (b) ∠XYW = 52° / 2 = 26°.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 3,
-      "paper_title": "Set 3 - Chapter 6 Practice Paper (Angle Derivations: 60°, 30°, 90°, 45°)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Drawing an arc on a line and intersecting it with the same compass radius from the intersection point constructs an angle of:",
-              "options": [
-                "A) 45°",
-                "B) 60°",
-                "C) 90°",
-                "D) 120°"
-              ],
-              "correct_answer": "B) 60°",
-              "marks": 1
-            },
-            {
-              "question_number": 2,
-              "question_text": "How is a 45° angle systematically derived using constructions?",
-              "options": [
-                "A) Bisecting a 60° angle",
-                "B) Bisecting a 90° angle",
-                "C) Trisecting 180°",
-                "D) Adding 30° to 30°"
-              ],
-              "correct_answer": "B) Bisecting a 90° angle",
-              "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Explain why the first arc intersection step constructs an angle of exactly 60°.",
-              "marking_scheme_answer": "Keeping the compass radius unchanged creates an equilateral triangle with 3 equal side lengths, and every interior angle of an equilateral triangle measures 60°.",
-              "marks": 2
-            },
-            {
-              "question_number": 2,
-              "question_text": "Outline the construction steps to obtain a 30° angle and a 15° angle.",
-              "marking_scheme_answer": "1) Construct a 60° angle using equilateral arc. 2) Bisect 60° angle to get 30°. 3) Bisect 30° angle to get 15°.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Describe step-by-step how to construct a 90° perpendicular angle at a given point P on line 'l' using compass and ruler.",
-              "marking_scheme_answer": "1) With center P, draw a semicircle intersecting line 'l' at A and B. 2) From A and B, draw arcs with radius > AP intersecting at C above P. 3) Draw line PC. Line PC is perpendicular to line 'l' at P (∠CPA = 90°).",
-              "marks": 5
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study Question)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A solar panel installation requires mounting brackets at angles of 60°, 30°, and 45°. (a) Which basic angle is constructed first for 30°? (b) How is 45° obtained? (c) Find angle between 30° and 45° brackets.",
-              "marking_scheme_answer": "(a) 60° angle is constructed first. (b) 45° is obtained by constructing 90° and bisecting it. (c) Difference = 45° - 30° = 15°.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 4,
-      "paper_title": "Set 4 - Chapter 6 Practice Paper (Regular Hexagon & Architectural Patterns)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "How many equilateral triangles form a regular hexagon from its center point?",
-              "options": [
-                "A) 4",
-                "B) 5",
-                "C) 6",
-                "D) 8"
-              ],
-              "correct_answer": "C) 6",
-              "marks": 1
-            },
-            {
-              "question_number": 2,
-              "question_text": "What is the measure of each interior angle of a regular hexagon?",
-              "options": [
-                "A) 60°",
-                "B) 90°",
-                "C) 120°",
-                "D) 108°"
-              ],
-              "correct_answer": "C) 120°",
-              "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Explain why stepping off the radius 6 times around a circle's circumference forms a regular hexagon.",
-              "marking_scheme_answer": "Stepping off radius 'r' creates 6 adjacent chord segments of length 'r'. Each central triangle has 3 sides equal to 'r' (equilateral), subtending 6 × 60° = 360° at center.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "What is a pointed arch in architecture and how is it constructed geometrically?",
-              "marking_scheme_answer": "A pointed arch consists of two circular arcs meeting at a central point at the top, constructed from center points on the base support line.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Describe step-by-step how to construct a regular hexagon ABCDEF of side length 4 cm using ruler and compass.",
-              "marking_scheme_answer": "1) Draw circle of radius r = 4 cm with center O. 2) Mark point A on circumference. 3) With compass set at 4 cm, draw arc from A to mark B on circle. 4) Move to B and mark C; continue stepping off points D, E, F. 5) Join AB, BC, CD, DE, EF, FA.",
-              "marks": 5
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study Question)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "An Islamic tile pattern uses a 6-pointed star rosette constructed inside a regular hexagon. (a) Find central angle of each of the 6 constituent equilateral triangles. (b) Find interior angle of hexagon. (c) Total sum of interior angles.",
-              "marking_scheme_answer": "(a) Central angle = 360° / 6 = 60°. (b) Interior angle = 2 × 60° = 120°. (c) Total sum = 6 × 120° = 720°.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 5,
-      "paper_title": "Set 5 - Chapter 6 Practice Paper (Tilings & Tangram Puzzles)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "What two strict requirements define a valid plane tiling (tessellation)?",
-              "options": [
-                "A) Zero gaps and zero overlaps",
-                "B) Equal side lengths only",
-                "C) 90° angles only",
-                "D) Curved boundaries"
-              ],
-              "correct_answer": "A) Zero gaps and zero overlaps",
-              "marks": 1
-            },
-            {
-              "question_number": 2,
-              "question_text": "How many total pieces comprise a traditional Chinese Tangram puzzle?",
-              "options": [
-                "A) 5",
-                "B) 6",
-                "C) 7",
-                "D) 8"
-              ],
-              "correct_answer": "C) 7",
-              "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "List the individual shapes and quantities of the 7 Tangram pieces.",
-              "marking_scheme_answer": "5 isosceles right triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Can regular pentagons tile a 2D plane completely without gaps? Explain.",
-              "marking_scheme_answer": "No. Interior angle of regular pentagon is 108°. Since 360° is not divisible by 108° (3 × 108° = 324°), gaps remain at vertices.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Explain which regular polygons can tile a plane by themselves (monohedral tessellation) and prove why using vertex angle sum.",
-              "marking_scheme_answer": "Regular polygons tile if interior angle divides 360° completely: 1) Equilateral Triangle (60°): 6 × 60° = 360°. 2) Square (90°): 4 × 90° = 360°. 3) Regular Hexagon (120°): 3 × 120° = 360°. Only triangles, squares, and hexagons form monohedral regular tilings.",
-              "marks": 5
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study Question)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A floor designer uses a square layout divided into a 7-piece Tangram set. (a) If area of square is 64 sq cm, find area of 7 pieces combined. (b) What fraction of area is formed by 2 large triangles? (c) Name all 4-sided shapes in Tangram.",
-              "marking_scheme_answer": "(a) Total area = 64 sq cm (tessellation preserves total area). (b) Two large triangles form 1/2 of total area = 32 sq cm. (c) The square and the parallelogram (two 4-sided shapes).",
-              "marks": 5
+              "question_text": "Case Scenario: A citizen attends a gram sabha meeting in a village panchayat.\n(a) What form of direct democracy occurs at the Gram Sabha level?\n(b) Why is local self-government vital for democracy?",
+              "marking_scheme_answer": "(a) Direct participatory democracy where all adult village residents discuss local budgets and development works.\n(b) Decentralizes power and enables citizens to solve community issues directly.",
+              "marks": 4
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "30m_model_assessment": {
+    "paper_title": "Chapter 6 Model Assessment - The State, the Government, and You",
+    "max_marks": 30,
+    "duration_minutes": 60,
+    "sections": {
+      "section_a": {
+        "title": "Section A: Objective MCQs & Assertion-Reason (6 Marks)",
+        "instructions": "Answer all questions. Each question carries 1 mark.",
+        "questions": [
+          {
+            "question_no": 1,
+            "type": "MCQ",
+            "blooms_level": "Remembering",
+            "question_text": "Which of the following is NOT one of the four essential elements of a State?",
+            "options": [
+              "A) Defined Territory",
+              "B) Permanent Population",
+              "C) Political Party",
+              "D) Sovereignty"
+            ],
+            "correct_option": "C) Political Party",
+            "marking_scheme": "1 Mark for correct option C."
+          },
+          {
+            "question_no": 2,
+            "type": "MCQ",
+            "blooms_level": "Remembering",
+            "question_text": "Why is India defined as a 'Republic' in the Preamble to its Constitution?",
+            "options": [
+              "A) Its Head of State (President) is an elected citizen holding office for a fixed term.",
+              "B) It has a bicameral Parliament.",
+              "C) It conducts elections every five years.",
+              "D) Its Prime Minister is the head of government."
+            ],
+            "correct_option": "A) Its Head of State (President) is an elected citizen holding office for a fixed term.",
+            "marking_scheme": "1 Mark for correct option A."
+          },
+          {
+            "question_no": 3,
+            "type": "MCQ",
+            "blooms_level": "Understanding",
+            "question_text": "Which organ of government is primarily responsible for enacting and amending public laws?",
+            "options": [
+              "A) Executive",
+              "B) Legislature",
+              "C) Judiciary",
+              "D) Civil Services"
+            ],
+            "correct_option": "B) Legislature",
+            "marking_scheme": "1 Mark for correct option B."
+          },
+          {
+            "question_no": 4,
+            "type": "MCQ",
+            "blooms_level": "Understanding",
+            "question_text": "What constitutional mechanism empowers the Supreme Court to strike down unconstitutional laws?",
+            "options": [
+              "A) Universal Franchise",
+              "B) Judicial Review",
+              "C) Executive Order",
+              "D) Ordinance"
+            ],
+            "correct_option": "B) Judicial Review",
+            "marking_scheme": "1 Mark for correct option B."
+          },
+          {
+            "question_no": 5,
+            "type": "Assertion-Reason",
+            "blooms_level": "Analyzing",
+            "question_text": "Assertion (A): The State is a permanent political organization, whereas the Government changes periodically.\nReason (R): The Government is the elected agency that executes state power for a fixed tenure, while the State represents the enduring sovereign nation.",
+            "options": [
+              "A) Both A and R are true, and R is the correct explanation of A.",
+              "B) Both A and R are true, but R is NOT the correct explanation of A.",
+              "C) A is true but R is false.",
+              "D) A is false but R is true."
+            ],
+            "correct_option": "A) Both A and R are true, and R is the correct explanation of A.",
+            "marking_scheme": "1 Mark for distinguishing the permanent State from the temporary Government."
+          },
+          {
+            "question_no": 6,
+            "type": "Assertion-Reason",
+            "blooms_level": "Analyzing",
+            "question_text": "Assertion (A): Separation of powers among Legislature, Executive, and Judiciary prevents tyranny.\nReason (R): Checks and balances ensure no single organ accumulates unchecked supreme power.",
+            "options": [
+              "A) Both A and R are true, and R is the correct explanation of A.",
+              "B) Both A and R are true, but R is NOT the correct explanation of A.",
+              "C) A is true but R is false.",
+              "D) A is false but R is true."
+            ],
+            "correct_option": "A) Both A and R are true, and R is the correct explanation of A.",
+            "marking_scheme": "1 Mark for linking separation of powers with the prevention of authoritarian rule."
+          }
+        ]
+      },
+      "section_b": {
+        "title": "Section B: Short Answer Questions (10 Marks)",
+        "instructions": "Answer all 5 questions. Each question carries 2 marks.",
+        "questions": [
+          {
+            "question_no": 7,
+            "blooms_level": "Remembering",
+            "question_text": "List the four essential elements required to form a State.",
+            "solution_and_marking_scheme": "1. Defined Territory\n2. Permanent Population\n3. Functioning Government\n4. Sovereignty (2 Marks for all 4 named accurately)."
+          },
+          {
+            "question_no": 8,
+            "blooms_level": "Understanding",
+            "question_text": "Distinguish between a State and a Government.",
+            "solution_and_marking_scheme": "State: Permanent, abstract political entity comprising territory, population, government, and sovereignty (1 Mark).\nGovernment: Temporary administrative body of elected/appointed officials managing state affairs for a fixed tenure (1 Mark)."
+          },
+          {
+            "question_no": 9,
+            "blooms_level": "Understanding",
+            "question_text": "Explain why Sovereignty is the defining legal element of a State.",
+            "solution_and_marking_scheme": "Sovereignty gives a state supreme, independent legal authority to make internal laws and conduct foreign policy without external dictation or colonial control (2 Marks)."
+          },
+          {
+            "question_no": 10,
+            "blooms_level": "Remembering",
+            "question_text": "State the primary functions of the three organs of government.",
+            "solution_and_marking_scheme": "1. Legislature: Enacts and frames laws.\n2. Executive: Enforces and implements laws.\n3. Judiciary: Interprets laws and administers justice (2 Marks)."
+          },
+          {
+            "question_no": 11,
+            "blooms_level": "Application",
+            "question_text": "How do citizens participate actively in a democracy beyond casting votes during elections?",
+            "solution_and_marking_scheme": "By questioning public policies, filing Right to Information (RTI) applications, participating in peaceful civic assemblies, and holding elected representatives accountable (2 Marks)."
+          }
+        ]
+      },
+      "section_c": {
+        "title": "Section C: Long Answer & Analytical Questions (8 Marks)",
+        "instructions": "Answer both questions. Each question carries 4 marks.",
+        "questions": [
+          {
+            "question_no": 12,
+            "blooms_level": "Analyzing",
+            "question_text": "Analyze the system of Separation of Powers and Checks & Balances among the Legislature, Executive, and Judiciary in India.",
+            "solution_and_marking_scheme": "Separation of Powers Concept (1 Mark):\n- Power is divided among three independent organs so no single organ holds absolute control.\nChecks & Balances Mechanisms (3 Marks):\n1. Executive - Legislature Check: The Prime Minister and Cabinet are drawn from Parliament and must maintain the confidence of the Lok Sabha.\n2. Judiciary - Legislature Check: The Supreme Court can exercise Judicial Review to strike down unconstitutional parliamentary laws.\n3. Executive - Judiciary Check: Judges are appointed by the Executive, but can only be removed through a stringent impeachment process by Parliament."
+          },
+          {
+            "question_no": 13,
+            "blooms_level": "Application",
+            "question_text": "Explain why India is designated as both a 'Democratic' and a 'Republic' state. Contrast a Republic with a Hereditary Monarchy.",
+            "solution_and_marking_scheme": "Democratic Feature (1 Mark):\n- Supreme power resides in the people, who exercise sovereignty through universal adult franchise and competitive elections.\nRepublic Feature (1 Mark):\n- The Head of State (President of India) is an elected citizen holding office for a fixed 5-year term.\nContrast with Monarchy (2 Marks):\n- In a Hereditary Monarchy (e.g., UK), the Head of State inherits the position by royal bloodline rather than election.\n- In a Republic, any eligible citizen, regardless of birth, can potentially be elected Head of State."
+          }
+        ]
+      },
+      "section_d": {
+        "title": "Section D: Competency / Source-Based Case Study (6 Marks)",
+        "instructions": "Read the passage carefully and answer the sub-questions that follow.",
+        "case_scenario": "Passage: In a municipal town, the state assembly passed a regional law banning citizens from assembling in public parks to voice grievances regarding water shortages. A civic group filed a petition before the High Court arguing that the law violated their fundamental right to peaceful assembly guaranteed under Article 19. The High Court issued a stay order, examined the assembly statute, and struck down the municipal restriction as unconstitutional, ordering the police to allow peaceful civic meetings.",
+        "sub_questions": [
+          {
+            "sub_q_no": "14.1",
+            "blooms_level": "Understanding",
+            "question_text": "Which organ of government enacted the contested law, and which organ struck it down? (2 Marks)",
+            "solution_and_marking_scheme": "Enacted by: The Legislature (State Assembly) (1 Mark).\nStruck down by: The Judiciary (High Court) (1 Mark)."
+          },
+          {
+            "sub_q_no": "14.2",
+            "blooms_level": "Application",
+            "question_text": "What constitutional power did the High Court exercise to invalidate the assembly law? (2 Marks)",
+            "solution_and_marking_scheme": "Judicial Review—the constitutional power of High Courts and the Supreme Court to declare any legislative act void if it violates Fundamental Rights or constitutional principles (2 Marks)."
+          },
+          {
+            "sub_q_no": "14.3",
+            "blooms_level": "Analyzing",
+            "question_text": "How does this scenario illustrate the protection of citizen rights against legislative overreach? (2 Marks)",
+            "solution_and_marking_scheme": "It proves that in a constitutional democracy, temporary elected majorities in the Legislature cannot override Fundamental Rights. An independent Judiciary acts as the guardian of the Constitution to protect citizens (2 Marks)."
+          }
+        ]
+      }
+    }
+  }
 }

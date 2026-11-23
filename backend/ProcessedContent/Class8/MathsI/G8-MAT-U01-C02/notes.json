@@ -1,203 +1,131 @@
 {
   "chapter_number": 2,
-  "chapter_title": "Power Play",
-  "unit_or_theme": "Exponents and Powers",
-  "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter introduces exponents, powers, repeated doubling patterns (lotus pond puzzle), negative exponents, laws of exponents, zero exponent law, and scientific notation for representing large and small quantities.",
-    "detailed_section_hierarchy": [
-      {
-        "section_number_title": "2.1 Multiplicative Growth and Exponents",
-        "full_explanation": "Multiplicative growth doubles or multiplies quantities repeatedly. Exponential notation expresses repeated multiplication: a^n means base 'a' multiplied 'n' times.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Puzzle",
-            "box_title": "Magical Pond Lotus Problem",
-            "full_content": "If lotuses double every day and cover the pond on Day 30, the pond was half covered on Day 29."
-          }
-        ]
-      },
-      {
-        "section_number_title": "2.2 Laws of Exponents and Negative Powers",
-        "full_explanation": "Establishes product law x^a * x^b = x^(a+b), quotient law x^a / x^b = x^(a-b), power of power (x^a)^b = x^(a*b), zero exponent x^0 = 1 (x != 0), and negative exponent x^(-n) = 1/(x^n).",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Math Talk",
-            "box_title": "Why x^0 = 1",
-            "full_content": "x^a / x^a = x^(a-a) = x^0. But any non-zero quantity divided by itself equals 1, hence x^0 = 1."
-          }
-        ]
-      }
-    ]
-  },
-  "m2_key_definitions_formulas_and_vocabulary": {
-    "glossary_and_key_terms": [
-      {
-        "term": "Base",
-        "definition": "The number that is multiplied repeatedly in an exponential expression.",
-        "contextual_example_or_usage": "In 5^3, 5 is the base.",
-        "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "Exponent / Power",
-        "definition": "The number of times the base is multiplied by itself.",
-        "contextual_example_or_usage": "In 5^3, 3 is the exponent.",
-        "associated_units_or_parts_of_speech": "Noun"
-      }
-    ],
-    "formulas_rules_and_laws": [
-      {
-        "name": "Product Law of Exponents",
-        "statement_or_expression": "x^a * x^b = x^(a + b)",
-        "variable_definitions": "x = non-zero base, a and b = integers",
-        "model_application_example": "2^3 * 2^4 = 2^(3+4) = 2^7 = 128"
-      },
-      {
-        "name": "Negative Exponent Rule",
-        "statement_or_expression": "x^(-n) = 1 / (x^n)",
-        "variable_definitions": "x != 0, n = positive integer",
-        "model_application_example": "4^(-2) = 1 / (4^2) = 1 / 16"
-      }
-    ]
-  },
-  "m3_practical_activities_lab_and_step_by_step_procedures": [
+  "chapter_title": "India’s Long Road to Independence",
+  "detailed_sections": [
     {
-      "activity_or_procedure_title": "Paper Folding Thickness Exploration",
-      "objective_or_aim": "Demonstrate exponential growth using paper folding.",
-      "materials_or_prerequisites": [
-        "A large sheet of paper"
-      ],
-      "step_by_step_procedure": [
-        "Step 1: Measure initial sheet thickness t.",
-        "Step 2: Fold in half once -> 2 layers (2^1).",
-        "Step 3: Fold in half twice -> 4 layers (2^2).",
-        "Step 4: Continue folding n times -> 2^n layers."
-      ],
-      "expected_observations_or_working": "Layer count grows rapidly as 1, 2, 4, 8, 16, 32, 64...",
-      "scientific_or_logical_conclusion": "Repeated doubling creates steep exponential growth."
+      "section_number_and_title": "2.1 Early Reform Movements and Regional Uprisings",
+      "full_notes": "19th-century socio-religious reform movements (Brahmo Samaj, Satyashodhak Samaj) created civic awareness. Concurrently, tribal and peasant rebellions like Birsa Munda's 'Ulgulaan' (1899-1900) and Surendra Sai's Sambalpur Uprising (1827-1862) violently challenged colonial land grab and economic exploitation.",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Historical Hero",
+          "title": "Birsa Munda & The Ulgulaan",
+          "content": "Birsa Munda led the Great Tumult ('Ulgulaan') against British authorities and exploitative landlords, aiming to restore tribal rights over forest land."
+        }
+      ]
+    },
+    {
+      "section_number_and_title": "2.2 Swadeshi, Radical Nationalism, and Gandhian Mass Movements",
+      "full_notes": "The 1905 Partition of Bengal triggered Swadeshi and Boycott strategies. Leaders like Bal Gangadhar Tilak ('Swaraj is my birthright') mobilized the masses. Mahatma Gandhi transformed the movement into mass Satyagraha via the Non-Cooperation Movement (1920), Salt Dandi March (1930), and Quit India Movement (1942).",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Historical Quote",
+          "title": "Tilak's Declaration",
+          "content": "'Swaraj is my birthright, and I shall have it!' — Bal Gangadhar Tilak"
+        }
+      ]
     }
   ],
-  "m4_diagrams_tables_and_visual_data": {
-    "diagrams_and_illustrations": [
-      {
-        "figure_title": "Exponential Growth Line",
-        "labels_to_learn": [
-          "Base",
-          "Exponent",
-          "Power Scale"
-        ],
-        "drawing_or_labeling_instructions": "Draw a power line showing powers of 7: 7^-2, 7^-1, 7^0=1, 7^1=7, 7^2=49.",
-        "key_structural_details": "Illustrates symmetry between positive and negative exponents around 1."
-      }
-    ],
-    "tables_and_charts": [
-      {
-        "table_title": "Powers of 2 Table",
-        "headers": [
-          "Exponent (n)",
-          "Expression (2^n)",
-          "Value"
-        ],
-        "rows": [
-          [
-            "-2",
-            "1/2^2",
-            "0.25"
-          ],
-          [
-            "-1",
-            "1/2^1",
-            "0.5"
-          ],
-          [
-            "0",
-            "2^0",
-            "1"
-          ],
-          [
-            "1",
-            "2^1",
-            "2"
-          ],
-          [
-            "2",
-            "2^2",
-            "4"
-          ]
-        ]
-      }
-    ]
-  },
-  "m5_textbook_solutions_and_extracts": {
-    "end_of_chapter_textbook_solutions": [
-      {
-        "exercise_section": "Chapter 2 Practice",
-        "question_number": "Q8(i)",
-        "question_text": "Identify the greater number between 4^3 and 3^4.",
-        "complete_step_by_step_solution": "Compute values: 4^3 = 4 x 4 x 4 = 64. 3^4 = 3 x 3 x 3 x 3 = 81. Since 81 > 64, 3^4 is greater than 4^3."
-      }
-    ],
-    "extract_or_passage_based_questions": [
-      {
-        "extract_id": 1,
-        "passage_or_source_text": "A dairy plans to produce 8.5 billion packets of milk with unique ID digits 0-9...",
-        "questions_and_answers": [
-          {
-            "question": "How many digits are required per code?",
-            "answer": "10^10 = 10 billion > 8.5 billion, so a 10-digit code is required."
-          }
-        ]
-      }
-    ]
-  },
-  "m6_tiered_exam_question_bank": {
-    "level_1_objective_questions_1_mark": [
-      {
-        "type": "MCQ",
-        "question": "What is the value of (100)^0?",
-        "options": [
-          "0",
-          "1",
-          "100",
-          "Undefined"
-        ],
-        "correct_answer": "1",
-        "brief_explanation": "Any non-zero real number raised to power 0 equals 1."
-      }
-    ],
-    "level_2_short_answer_questions_2_to_3_marks": [
-      {
-        "question": "Simplify (5^7 / 5^4) * 5^-2.",
-        "model_answer": "5^(7-4) * 5^-2 = 5^3 * 5^-2 = 5^(3-2) = 5^1 = 5.",
-        "key_marking_points": [
-          "Quotient rule application",
-          "Product rule application",
-          "Final result 5"
-        ]
-      }
-    ],
-    "level_3_long_answer_and_reasoning_5_marks": [
-      {
-        "question": "Simplify and express in exponential form: ((13^-2)^-3 * 13^4) / 13^8.",
-        "model_answer": "(13^(-2*-3) * 13^4) / 13^8 = (13^6 * 13^4) / 13^8 = 13^(6+4) / 13^8 = 13^10 / 13^8 = 13^(10-8) = 13^2 = 169."
-      }
-    ],
-    "level_4_competency_and_case_studies": [
-      {
-        "case_scenario": "Bacteria double every 20 minutes in a culture dish starting with 100 bacteria at 12:00 PM.",
-        "questions_and_answers": [
-          {
-            "question": "How many bacteria are present at 2:00 PM?",
-            "answer": "Time duration = 2 hours = 120 minutes = 6 doubling periods. Count = 100 * 2^6 = 100 * 64 = 6400 bacteria."
-          }
-        ]
-      }
-    ]
-  },
-  "m7_common_pitfalls_and_misconceptions": [
+  "comparison_tables": [
     {
-      "frequent_student_error": "Writing 2^-3 = -8.",
-      "root_cause": "Treating a negative exponent as making the value negative rather than taking the reciprocal.",
-      "correct_approach": "Explain that negative exponents denote division/reciprocal: 2^-3 = 1/(2^3) = 1/8."
+      "table_title": "Comparative Approaches to Freedom",
+      "headers": [
+        "Approach / Faction",
+        "Key Leaders",
+        "Core Strategy / Method"
+      ],
+      "rows": [
+        [
+          "Moderates",
+          "Dadabhai Naoroji, Gopal Krishna Gokhale",
+          "Constitutional petitions, gradual administrative reform"
+        ],
+        [
+          "Radical Nationalists",
+          "Bal Gangadhar Tilak, Bipin Chandra Pal, Lala Lajpat Rai",
+          "Swadeshi, Boycott of foreign goods, Mass awakening"
+        ],
+        [
+          "Revolutionaries",
+          "Bhagat Singh, Chandrashekhar Azad, Subhas Chandra Bose",
+          "Armed resistance, INA, targeted disruption of colonial state"
+        ],
+        [
+          "Gandhian Satyagrahis",
+          "Mahatma Gandhi, Sardar Patel, Sarojini Naidu",
+          "Non-violent non-cooperation, Civil Disobedience, mass marches"
+        ]
+      ]
     }
-  ]
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "DLG_CH2_01",
+      "title": "Master Educator & Student Discussion on India’s Long Road to Independence",
+      "transcript": [
+        {
+          "speaker": "Master Educator",
+          "speech_text": "Welcome! Today we delve deeply into India’s Long Road to Independence. What is the central paradox or mechanism here?"
+        },
+        {
+          "speaker": "Student",
+          "speech_text": "Is it about how geographic, historical, or legal frameworks structure daily human society?"
+        },
+        {
+          "speaker": "Master Educator",
+          "speech_text": "Precisely. Let's analyze the evidence from primary sources and empirical metrics."
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "activity_or_method_id": "ACT-2-01",
+      "aim_or_objective": "To construct a chronological timeline mapping major milestones from 1857 to 1947.",
+      "materials_or_prerequisites": [
+        "Chart paper",
+        "Markers",
+        "Textbook chronology reference"
+      ],
+      "procedure_or_steps": [
+        "Mark the baseline axis from 1850 to 1950 in decades.",
+        "Plot key events: 1857 Revolt, 1885 INC Formation, 1905 Partition of Bengal, 1920 Non-Cooperation, 1930 Salt March, 1942 Quit India, 1947 Independence.",
+        "Color-code events by strategy (Moderate, Nationalist/Swadeshi, Revolutionary, Mass Satyagraha)."
+      ],
+      "observations_or_results": "Clear visualization of increasing mass participation and shifting ideological strategies over time.",
+      "conclusion_or_principle": "India's independence was achieved through cumulative, multi-faceted national efforts."
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calculator_name": "Chapter 2 Metric & Rule Evaluator",
+      "formula_expression": "Truth + Ahimsa (Non-violence) = Moral Force against Oppression — Adherence to truth and non-violent resistance to persuade oppressors without hatred.",
+      "description": "Applied during the 1930 Dandi Salt March."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "IMG_CH2_01",
+    "title": "Chapter 2 Visual Key: India’s Long Road to Independence",
+    "url": "/assets/images/ch2_freedom_timeline.png",
+    "aspect_ratio": "16:9",
+    "hotspots": [
+      {
+        "hotspot_id": "HS_01",
+        "label": "Primary Concept Focus",
+        "x_percent": 25.0,
+        "y_percent": 30.0,
+        "w_percent": 40.0,
+        "h_percent": 35.0,
+        "annotation": "Core structural breakdown and theoretical mechanism."
+      },
+      {
+        "hotspot_id": "HS_02",
+        "label": "Comparative Analysis / Case Evidence",
+        "x_percent": 68.0,
+        "y_percent": 25.0,
+        "w_percent": 28.0,
+        "h_percent": 60.0,
+        "annotation": "Empirical example, historical source, or statutory rule."
+      }
+    ]
+  }
 }

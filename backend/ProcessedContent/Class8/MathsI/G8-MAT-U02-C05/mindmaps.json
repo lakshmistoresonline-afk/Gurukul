@@ -1,83 +1,131 @@
 {
   "chapter_number": 5,
-  "chapter_title": "Number Play",
-  "d3_config": {
-    "node_color": "#38bdf8",
-    "expanded_radius": 12,
-    "collapsed_radius": 8
-  },
-  "tree_data": {
-    "id": "mm_node_ch5_root",
-    "name": "Number Play",
-    "node_color": "#0ea5e9",
-    "icon": "folder_root",
-    "tooltip_popover": {
-      "title": "Number Play",
-      "content": "Master topic for Chapter 5",
-      "example": "Central node of learning map"
-    },
-    "children": [
+  "chapter_title": "Citizenship: Rights and Duties",
+  "mind_map": {
+    "root_topic": "Citizenship: Rights and Duties",
+    "branches": [
       {
-        "id": "mm_node_ch5_b0",
-        "name": "5.1 Parity and Sums of Numbers",
-        "node_color": "#38bdf8",
-        "icon": "branch_theme",
-        "tooltip_popover": {
-          "title": "5.1 Parity and Sums of Numbers",
-          "content": "Theme section under Number Play",
-          "example": "Main section overview"
-        },
-        "children": [
+        "theme": "5.1 Fundamental Rights and Constitutional Enforcement",
+        "sub_branches": [
           {
-            "id": "mm_node_ch5_b0_sb0",
-            "name": "Parity Algebra and Operations",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
+            "concept": "Part III Fundamental Rights Guarantees",
+            "details": [
+              "Constitutional rights protecting individual dignity: Right to Equality (Art 14-18), Right to Freedom (Art 19-22), Right against Exploitation (Art 23-24), Freedom of Religion (Art 25-28), Cultural Rights (Art 29-30)."
+            ],
+            "evidence_or_examples": [
+              "Abolition of Untouchability under Article 17; Protection against child labor under Article 24."
+            ],
+            "key_terms": [
+              "Fundamental Rights",
+              "Right to Equality",
+              "Part III"
+            ],
+            "node_color": "#10b981",
             "tooltip_popover": {
-              "title": "Parity Algebra and Operations",
-              "content": "Parity defines whether an integer is even (2k) or odd (2k + 1). Addition Rules: Even + Even = Even, Odd + Odd = Even, Even + Odd = Odd. Multiplication Rules: Even * Even = Even, Odd * Odd = Odd, Even * Odd = Even.",
-              "example": "Proof of sum of two odds: (2m + 1) + (2n + 1) = 2(m + n + 1), which is even."
-            },
-            "children": []
-          }
-        ]
-      },
-      {
-        "id": "mm_node_ch5_b1",
-        "name": "5.2 Generalised Form and Divisibility Proofs",
-        "node_color": "#38bdf8",
-        "icon": "branch_theme",
-        "tooltip_popover": {
-          "title": "5.2 Generalised Form and Divisibility Proofs",
-          "content": "Theme section under Number Play",
-          "example": "Main section overview"
-        },
-        "children": [
-          {
-            "id": "mm_node_ch5_b1_sb0",
-            "name": "Expanded Place Value Algebraic Notation",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
-            "tooltip_popover": {
-              "title": "Expanded Place Value Algebraic Notation",
-              "content": "A 2-digit number 'ab' is expressed as 10a + b. A 3-digit number 'abc' is expressed as 100a + 10b + c. Reversing digits: (10a + b) - (10b + a) = 9(a - b), proving differences are always multiples of 9. 3-digit reversal difference: (100a + 10b + c) - (100c + 10b + a) = 99(a - c), always divisible by 99.",
-              "example": "Reversing Digits Puzzle ACT-5.1: Proving algebraic divisibility by 9."
-            },
-            "children": []
+              "title": "Part III Fundamental Rights Guarantees",
+              "content_preview": "Constitutional rights protecting individual dignity: Right to Equality (Art 14-18), Right to Freedom (Art 19-22), Right against Exploitation (Art 23-24), Freedom of Religion (Art 25-28), Cultural Rights (Art 29-30).",
+              "key_term_tag": "Fundamental Rights"
+            }
           },
           {
-            "id": "mm_node_ch5_b1_sb1",
-            "name": "Proofs for Standard Divisibility Rules",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
+            "concept": "Right to Constitutional Remedies (Article 32)",
+            "details": [
+              "Provides legal mechanism empowering citizens to move the Supreme Court directly for writ enforcement whenever rights are infringed."
+            ],
+            "evidence_or_examples": [
+              "Dr. B.R. Ambedkar designated Article 32 as the 'Heart and Soul' of the Indian Constitution."
+            ],
+            "key_terms": [
+              "Article 32",
+              "Writs",
+              "Constitutional Remedies"
+            ],
+            "node_color": "#10b981",
             "tooltip_popover": {
-              "title": "Proofs for Standard Divisibility Rules",
-              "content": "Divisibility by 2: 10a + b = 2(5a) + b -> depends solely on unit digit b being even. Divisibility by 4: 100a + (10b + c) = 4(25a) + (10b + c) -> depends on last two digits (10b + c). Divisibility by 3/9: 100a + 10b + c = 99a + 9b + (a + b + c) -> depends on digit sum (a + b + c). Divisibility by 11: Alternating sum difference of odd-place and even-place digits is 0 or multiple of 11.",
-              "example": "214365 digit sum = 21 (not divisible by 9, so number is not divisible by 9)."
-            },
-            "children": []
+              "title": "Right to Constitutional Remedies (Article 32)",
+              "content_preview": "Provides legal mechanism empowering citizens to move the Supreme Court directly for writ enforcement whenever rights are infringed.",
+              "key_term_tag": "Article 32"
+            }
           }
-        ]
+        ],
+        "icon": "fas fa-sitemap",
+        "node_color": "#f59e0b"
+      },
+      {
+        "theme": "5.2 Fundamental Duties, Equity, and Social Reformers",
+        "sub_branches": [
+          {
+            "concept": "Part IVA Fundamental Duties & Active Citizenship",
+            "details": [
+              "Article 51A outlines 11 civic duties including safeguarding public property, protecting natural environment, and promoting national harmony.",
+              "Rights and duties are complementary; individual rights impose a collective social duty on others."
+            ],
+            "evidence_or_examples": [
+              "Community cleanliness drives and public park maintenance as expressions of Article 51A."
+            ],
+            "key_terms": [
+              "Article 51A",
+              "Fundamental Duties",
+              "Active Citizenship"
+            ],
+            "node_color": "#10b981",
+            "tooltip_popover": {
+              "title": "Part IVA Fundamental Duties & Active Citizenship",
+              "content_preview": "Article 51A outlines 11 civic duties including safeguarding public property, protecting natural environment, and promoting national harmony.",
+              "key_term_tag": "Article 51A"
+            }
+          },
+          {
+            "concept": "Equality vs. Equity & Social Reform Legacy",
+            "details": [
+              "Equality gives everyone identical resources; Equity provides tailored support according to specific needs to ensure fair outcomes.",
+              "Pioneering social reformers fought deep-seated societal prejudices to advance gender equity and education."
+            ],
+            "evidence_or_examples": [
+              "Savitribai and Jyotirao Phule establishing the first indigenous girls' school in Pune (1848) despite social boycott."
+            ],
+            "key_terms": [
+              "Equality",
+              "Equity",
+              "Social Reform",
+              "Savitribai Phule"
+            ],
+            "node_color": "#10b981",
+            "tooltip_popover": {
+              "title": "Equality vs. Equity & Social Reform Legacy",
+              "content_preview": "Equality gives everyone identical resources; Equity provides tailored support according to specific needs to ensure fair outcomes.",
+              "key_term_tag": "Equality"
+            }
+          }
+        ],
+        "icon": "fas fa-sitemap",
+        "node_color": "#f59e0b"
+      }
+    ]
+  },
+  "image_asset": {
+    "asset_id": "IMG_CH5_01",
+    "title": "Chapter 5 Visual Key: Citizenship: Rights and Duties",
+    "url": "/assets/images/ch5_citizenship_rights_duties.png",
+    "aspect_ratio": "16:9",
+    "hotspots": [
+      {
+        "hotspot_id": "HS_01",
+        "label": "Primary Concept Focus",
+        "x_percent": 25.0,
+        "y_percent": 30.0,
+        "w_percent": 40.0,
+        "h_percent": 35.0,
+        "annotation": "Core structural breakdown and theoretical mechanism."
+      },
+      {
+        "hotspot_id": "HS_02",
+        "label": "Comparative Analysis / Case Evidence",
+        "x_percent": 68.0,
+        "y_percent": 25.0,
+        "w_percent": 28.0,
+        "h_percent": 60.0,
+        "annotation": "Empirical example, historical source, or statutory rule."
       }
     ]
   }

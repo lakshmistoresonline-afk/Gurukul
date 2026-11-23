@@ -1,114 +1,155 @@
 {
   "chapter_number": 9,
-  "chapter_title": "Propositions and their Converses",
-  "unit_or_theme": "Mathematical Logic & Formal Reasoning",
+  "chapter_title": "Demand, Supply, and Market Equilibrium",
+  "unit_or_theme": "Price Determination & Markets",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter introduces formal mathematical logic, focusing on declarative statements (propositions), conditional implications ('If P then Q'), converses ('If Q then P'), contrapositives ('If not Q then not P'), and disproof via counterexamples.",
+    "chapter_executive_summary": "Explains core market mechanisms: Law of Demand (inverse price-quantity relation), Law of Supply (direct price-quantity relation), market equilibrium where demand equals supply, and government price regulations (price ceilings and price floors).",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "9.1 Propositions and Converses",
-        "full_explanation": "A proposition is a declarative statement that is definitively either true or false. A conditional proposition 'If P then Q' links premise P with consequence Q. Its converse 'If Q then P' swaps premise and conclusion. A proposition and its converse are logically independent; one being true does not imply the other is true.",
+        "section_number_title": "9.1 Law of Demand",
+        "full_explanation": "Other things remaining constant (ceteris paribus), as price increases, quantity demanded decreases; as price decreases, quantity demanded increases. Demand curves slope downward from left to right due to income and substitution effects.",
         "margin_boxes_and_in_text_notes": [
           {
-            "box_type": "Pedagogical Note",
-            "box_title": "Phrasings of Implication",
-            "full_content": "'If P then Q' is equivalent to 'P implies Q', 'Q when P', or 'P is sufficient for Q'."
+            "box_type": "Economic Assumption",
+            "box_title": "Ceteris Paribus",
+            "full_content": "Latin phrase meaning 'all other factors remaining equal' (consumer income, tastes, related good prices remain constant)."
           }
         ]
       },
       {
-        "section_number_title": "9.2 Counterexamples and Proofs",
-        "full_explanation": "A counterexample is a specific case that contradicts a universal proposition ('For all x, P(x)'), conclusively disproving it. Disproving a claim requires only one valid counterexample.",
+        "section_number_title": "9.2 Law of Supply",
+        "full_explanation": "Other things remaining constant, as price increases, quantity supplied by producers increases; as price decreases, quantity supplied decreases. Supply curves slope upward from left to right driven by profit motivation.",
         "margin_boxes_and_in_text_notes": [
           {
-            "box_type": "Historical Note",
-            "box_title": "Euler Disproves Fermat",
-            "full_content": "Euler disproved Fermat's conjecture that 2^(2^n)+1 is always prime by discovering n=5 yields composite number 4,294,967,297 = 641 x 6,700,417."
+            "box_type": "Producer Behavior",
+            "box_title": "Profit Incentive",
+            "full_content": "Higher market prices increase profit margins, incentivizing suppliers to expand production output."
           }
         ]
+      },
+      {
+        "section_number_title": "9.3 Market Equilibrium and Price Controls",
+        "full_explanation": "Market Equilibrium occurs where Quantity Demanded = Quantity Supplied at Equilibrium Price (Pe). If Price > Pe: Excess Supply (Surplus) forces price down. If Price < Pe: Excess Demand (Shortage) pushes price up. Price Ceiling (max price below Pe) creates shortages; Price Floor (min price above Pe, e.g. MSP) creates surpluses.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Market Intervention",
+            "box_title": "Price Ceiling vs Price Floor",
+            "full_content": "Price Ceiling: Maximum legal price charged (protects consumers, e.g. essential drugs). Price Floor: Minimum legal price (protects producers, e.g. Minimum Support Price for farmers)."
+          }
+        ]
+      },
+      {
+        "section_number_title": "9.4 Price Elasticity of Demand & Dual Curve Shift Dynamics",
+        "full_explanation": "Price Elasticity of Demand (Ed = % Delta Qd / % Delta P) quantifies consumer responsiveness to price changes. When supply decreases (shift left) while demand increases (shift right), market equilibrium price unambiguously rises, while equilibrium quantity depends on the relative shift magnitudes."
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "Proposition",
-        "definition": "A declarative statement that is unambiguously either true or false.",
-        "contextual_example_or_usage": "'Every square is a rectangle' is a true proposition.",
+        "term": "Market Equilibrium",
+        "definition": "A state where market demand equals market supply, establishing a stable clearing price with no excess shortage or surplus.",
+        "contextual_example_or_usage": "At Rs. 40/kg, the quantity of apples buyers want equals the quantity sellers supply.",
         "associated_units_or_parts_of_speech": "Noun"
       },
       {
-        "term": "Converse",
-        "definition": "A conditional statement formed by swapping the hypothesis and conclusion of an implication.",
-        "contextual_example_or_usage": "The converse of 'If P then Q' is 'If Q then P'.",
-        "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "Counterexample",
-        "definition": "A specific instance that refutes a universal statement.",
-        "contextual_example_or_usage": "The rectangle (not square) is a counterexample to 'If all angles are 90 deg, it is a square'.",
+        "term": "Price Ceiling",
+        "definition": "A legally imposed maximum price that sellers can charge for a good or service, set below equilibrium price.",
+        "contextual_example_or_usage": "Government sets a price ceiling on essential medicines to keep them affordable.",
         "associated_units_or_parts_of_speech": "Noun"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "Baudhāyana-Pythagoras Equivalence Law",
-        "statement_or_expression": "Triangle is right-angled at C <==> a^2 + b^2 = c^2",
-        "variable_definitions": "a, b: leg lengths; c: hypotenuse length",
-        "model_application_example": "Sides 3, 4, 5 satisfy 3^2 + 4^2 = 5^2, so angle opposite side 5 is 90 degrees."
+        "name": "Market Equilibrium Condition",
+        "statement_or_expression": "Q_d(P) = Q_s(P)",
+        "variable_definitions": "Q_d: Quantity Demanded; Q_s: Quantity Supplied; P: Market Price.",
+        "model_application_example": "If Q_d = 100 - 2P and Q_s = 20 + 2P, set 100 - 2P = 20 + 2P -> 4P = 80 -> P = 20."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Investigating Diagonal Stick Quadrilaterals",
-      "objective_or_aim": "Determine necessary vs sufficient conditions for equal diagonals forming a rectangle.",
+      "activity_or_procedure_title": "Plotting Demand and Supply Curves to Find Market Equilibrium",
+      "objective_or_aim": "Graphically determine equilibrium price and quantity from market schedule data.",
       "materials_or_prerequisites": [
-        "Two equal thin sticks",
-        "Pivot pin",
-        "Paper and pencil"
+        "Graph Paper",
+        "Ruler",
+        "Market Price-Quantity Data Table"
       ],
       "step_by_step_procedure": [
-        "Join two equal sticks at midpoints with a pin.",
-        "Join endpoints to form quadrilateral Q.",
-        "Test whether changing intersection angle preserves rectangle properties."
+        "Plot Price (Rs) on vertical Y-axis and Quantity (Units) on horizontal X-axis.",
+        "Plot downward-sloping Demand Curve (D) from schedule points.",
+        "Plot upward-sloping Supply Curve (S) on same graph.",
+        "Identify intersection point (E) where D and S cross.",
+        "Read corresponding Equilibrium Price (Pe) and Quantity (Qe)."
       ],
-      "expected_observations_or_working": "Equal diagonals bisecting each other always form a rectangle regardless of angle.",
-      "scientific_or_logical_conclusion": "Equal diagonals are necessary for a rectangle; bisection is required for sufficiency."
+      "expected_observations_or_working": "The intersection point explicitly pinpoints the exact price where buyers and sellers agree.",
+      "scientific_or_logical_conclusion": "Market prices automatically adjust toward equilibrium via competitive buyer-seller interaction."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Fig 9.1: Truth Value Flowchart of Implications",
+        "figure_title": "Market Equilibrium, Shortage, and Surplus",
         "labels_to_learn": [
-          "Premise P",
-          "Consequence Q",
-          "Converse (Q -> P)",
-          "Counterexample Node"
+          "Demand Curve (D)",
+          "Supply Curve (S)",
+          "Equilibrium Point (E)",
+          "Equilibrium Price (Pe)",
+          "Equilibrium Quantity (Qe)",
+          "Excess Supply Area",
+          "Excess Demand Area"
         ],
-        "drawing_or_labeling_instructions": "Draw conditional arrow from P to Q, show converse arrow Q to P, show counterexample branch.",
-        "key_structural_details": "Visualizes logical independence of converse statement."
+        "drawing_or_labeling_instructions": "Draw intersecting D and S curves. Mark horizontal price lines above Pe (Surplus) and below Pe (Shortage).",
+        "key_structural_details": "Price above Pe causes Qs > Qd (Surplus); Price below Pe causes Qd > Qs (Shortage)."
       }
     ],
     "tables_and_charts": [
       {
-        "table_title": "Logical Truth Comparison Table",
+        "table_title": "Market Demand and Supply Schedule for Wheat",
         "headers": [
-          "Proposition (P -> Q)",
-          "Converse (Q -> P)",
-          "Truth Relationship"
+          "Price per Kg (Rs.)",
+          "Quantity Demanded (Kg)",
+          "Quantity Supplied (Kg)",
+          "Market Condition",
+          "Pressure on Price"
         ],
         "rows": [
           [
-            "Multiples of 6 are multiples of 3 (True)",
-            "Multiples of 3 are multiples of 6 (False)",
-            "Prop True, Converse False"
+            "50",
+            "100",
+            "500",
+            "Excess Supply (Surplus = 400)",
+            "Downward"
           ],
           [
-            "Perfect square -> Odd factors (True)",
-            "Odd factors -> Perfect square (True)",
-            "Both True (Equivalence)"
+            "40",
+            "200",
+            "400",
+            "Excess Supply (Surplus = 200)",
+            "Downward"
+          ],
+          [
+            "30",
+            "300",
+            "300",
+            "Equilibrium (Qd = Qs)",
+            "Stable"
+          ],
+          [
+            "20",
+            "400",
+            "200",
+            "Excess Demand (Shortage = 200)",
+            "Upward"
+          ],
+          [
+            "10",
+            "500",
+            "100",
+            "Excess Demand (Shortage = 400)",
+            "Upward"
           ]
         ]
       }
@@ -117,20 +158,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "Exercise 9.1",
+        "exercise_section": "Questions and Activities",
         "question_number": "Q2",
-        "question_text": "Frame the converse of: 'If a quadrilateral is a square, then all its angles are equal.' Is the converse true?",
-        "complete_step_by_step_solution": "Converse: 'If all angles of a quadrilateral are equal, then it is a square.' Truth value: False. Counterexample: A rectangle with unequal adjacent sides (e.g. 4 cm by 6 cm) has four equal 90-degree angles but is not a square."
+        "question_text": "Explain what happens when government sets a price ceiling on milk below equilibrium price.",
+        "complete_step_by_step_solution": "Setting a price ceiling below equilibrium price lowers milk price for consumers. However, at this lower price, quantity demanded increases while dairy suppliers reduce quantity supplied. This creates a persistent market shortage (Excess Demand), leading to long queues, rationing, or black markets."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Pierre de Fermat conjectured that 2^(2^n)+1 is prime for all n. Euler disproved this by showing n=5 yields 4,294,967,297 = 641 x 6,700,417.",
+        "passage_or_source_text": "Price floor is an imposed limit on how low a price can be charged. It must be set above market equilibrium price to be effective.",
         "questions_and_answers": [
           {
-            "question": "What logical role did Euler's calculation play?",
-            "answer": "It provided a single counterexample that conclusively refuted Fermat's universal conjecture."
+            "question": "Give a real-world example of an effective price floor in India.",
+            "answer": "Minimum Support Price (MSP) for agricultural crops set by the Indian government to protect farmers against price crashes."
           }
         ]
       }
@@ -140,40 +181,41 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Which statement pair represents a proposition and a true converse?",
+        "question": "According to the Law of Demand, what happens when the price of a normal good falls, assuming ceteris paribus?",
         "options": [
-          "A) Multiples of 6 -> Multiples of 3",
-          "B) Perfect square -> Odd number of factors",
-          "C) Congruent triangles -> Equal area",
-          "D) Rhombus -> Perpendicular diagonals"
+          "A) Quantity demanded decreases",
+          "B) Quantity demanded increases",
+          "C) Supply increases",
+          "D) Demand curve shifts left"
         ],
-        "correct_answer": "B",
-        "brief_explanation": "Being a perfect square and having an odd number of factors mutually imply each other."
+        "correct_answer": "B) Quantity demanded increases",
+        "brief_explanation": "The Law of Demand states an inverse relationship between price and quantity demanded."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "Define a counterexample and provide a geometric counterexample for: 'If two triangles have equal perimeters, they are congruent.'",
-        "model_answer": "A counterexample is a specific case disproving a universal claim. Counterexample: Triangle A (3,4,5) and Triangle B (4,4,4) both have perimeter 12 cm, but one is right-angled and the other equilateral, so they are not congruent.",
+        "question": "Differentiate between a Price Ceiling and a Price Floor.",
+        "model_answer": "1) Price Ceiling: Legal maximum price set BELOW equilibrium price to protect consumers (causes shortage). 2) Price Floor: Legal minimum price set ABOVE equilibrium price to protect producers/farmers (causes surplus).",
         "key_marking_points": [
-          "Correct definition of counterexample (1 mark)",
-          "Valid non-congruent triangles with equal perimeters (1 mark)"
+          "Max vs Min price distinction",
+          "Placement relative to equilibrium price",
+          "Shortage vs Surplus outcome"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "State the Baudhāyana-Pythagoras theorem and its converse. Prove whether the converse is true and explain its practical application.",
-        "model_answer": "Theorem: Right-angled triangle with hypotenuse c satisfies a^2 + b^2 = c^2. Converse: If a^2 + b^2 = c^2, the angle opposite side c is 90 degrees. The converse is TRUE. Masons use 3-4-5 rope loops to construct perfect 90-degree corners."
+        "question": "Using a demand and supply diagram, explain how market forces automatically restore equilibrium when price is set above equilibrium price.",
+        "model_answer": "1) When price (P1) is above equilibrium price (Pe), Quantity Supplied (Qs) exceeds Quantity Demanded (Qd), creating Excess Supply (Surplus). 2) Sellers find unsold inventories accumulating in warehouses. 3) To clear unsold stock, competing sellers lower their prices. 4) As price falls toward Pe, quantity demanded expands along the demand curve while quantity supplied contracts along the supply curve. 5) Price reductions continue until Qs = Qd at equilibrium price Pe, eliminating the surplus."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "A student claims that if a geometry theorem 'If P then Q' is true, its converse 'If Q then P' is automatically true.",
+        "case_scenario": "A sudden severe drought destroys 40% of the onion crop nationwide before the winter harvest season.",
         "questions_and_answers": [
           {
-            "question": "Evaluate this claim using parallel lines and interior angles.",
-            "answer": "The student's claim is false in general, though for parallel lines both hold: lines parallel <==> alternate interior angles equal."
+            "question": "Analyze the impact on the onion market supply curve, equilibrium price, and quantity.",
+            "answer": "The crop destruction causes the onion Supply Curve to shift leftward. At the original price, excess demand occurs, driving the new equilibrium price significantly upward while reducing equilibrium quantity."
           }
         ]
       }
@@ -181,9 +223,9 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Assuming the converse of a true proposition is automatically true.",
-      "root_cause": "Confusing implication (P -> Q) with bi-directional equivalence (P <-> Q).",
-      "correct_approach": "Test the converse independently with potential counterexamples before assuming its truth."
+      "frequent_student_error": "Confusing a 'change in quantity demanded' with a 'change in demand'.",
+      "root_cause": "Imprecise use of economic terms.",
+      "correct_approach": "'Change in quantity demanded' is a movement along the same demand curve caused solely by a price change; 'Change in demand' is a shift of the entire curve caused by non-price factors (income, tastes)."
     }
   ]
 }

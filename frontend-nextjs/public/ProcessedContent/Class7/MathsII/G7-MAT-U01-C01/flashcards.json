@@ -1,159 +1,156 @@
-{
-  "chapter_number": 1,
-  "chapter_title": "Geometric Twins",
-  "image_asset": {
-    "asset_id": "img_ch1",
-    "chapter_number": 1,
-    "title": "Triangle Congruence Criteria Diagram",
-    "url": "/assets/images/ch1_triangle_congruence.png",
-    "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
-    "hotspots": [
-      {
-        "x_percent": 10,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SSS Criterion",
-        "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
-      },
-      {
-        "x_percent": 55,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SAS Criterion",
-        "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
-      },
-      {
-        "x_percent": 10,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "ASA Criterion",
-        "popover_text": "Angle-Side-Angle: Two angles and included side align."
-      },
-      {
-        "x_percent": 55,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "RHS Criterion",
-        "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
-      }
+[
+  {
+    "card_id": 1,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: What is agriculture ...]",
+    "front_question": "What is agriculture and what wide range of activities does it encompass in India?",
+    "back_answer": "Agriculture is the science, art, and practice of cultivating soil, growing crops, and raising livestock. In India, it encompasses crop production, livestock rearing, horticulture (fruits and vegetables), forestry, pisciculture (fish farming), and sericulture (silk production).",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
     ]
   },
-  "cards": [
-    {
-      "card_id": 1,
-      "level": "Basic Recall",
-      "phonetic_guide": "[Phonetic Guide: What is the mathemat...]",
-      "front_question": "What is the mathematical definition of geometric congruence between two plane figures?",
-      "back_answer": "Two plane figures are congruent if they have the exact same shape and the exact same size, so that one can be superimposed onto the other to fit perfectly without gaps or overlaps.",
-      "graphic_description": "Visual diagram representing key concept for card 1",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    },
-    {
-      "card_id": 2,
-      "level": "Conceptual Understanding",
-      "phonetic_guide": "[Phonetic Guide: Why does the order o...]",
-      "front_question": "Why does the order of vertices matter when writing a triangle congruence statement like ΔABC ≅ ΔXYZ?",
-      "back_answer": "The vertex order strictly specifies correspondence between matching vertices (A↔X, B↔Y, C↔Z), matching sides (AB=XY, BC=YZ, AC=XZ), and matching angles (∠A=∠X, ∠B=∠Y, ∠C=∠Z).",
-      "graphic_description": "Visual diagram representing key concept for card 2",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    },
-    {
-      "card_id": 3,
-      "level": "Conceptual Understanding",
-      "phonetic_guide": "[Phonetic Guide: State the SSS (Side-...]",
-      "front_question": "State the SSS (Side-Side-Side) congruence criterion for triangles.",
-      "back_answer": "If three sides of one triangle are respectively equal to three sides of another triangle, then the two triangles are congruent.",
-      "graphic_description": "Visual diagram representing key concept for card 3",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    },
-    {
-      "card_id": 4,
-      "level": "Conceptual Understanding",
-      "phonetic_guide": "[Phonetic Guide: What is the key requ...]",
-      "front_question": "What is the key requirement regarding the angle position in the SAS congruence criterion?",
-      "back_answer": "The angle must be the INCLUDED angle—strictly located between the two known equal sides. Side-Side-Angle (SSA) does not guarantee congruence.",
-      "graphic_description": "Visual diagram representing key concept for card 4",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    },
-    {
-      "card_id": 5,
-      "level": "Conceptual Understanding",
-      "phonetic_guide": "[Phonetic Guide: State the RHS (Right...]",
-      "front_question": "State the RHS (Right-Hypotenuse-Side) congruence criterion.",
-      "back_answer": "If in two right-angled triangles, the hypotenuse and one leg of one triangle are equal to the hypotenuse and one leg of the other triangle, the two triangles are congruent.",
-      "graphic_description": "Visual diagram representing key concept for card 5",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    },
-    {
-      "card_id": 6,
-      "level": "Scientific Reasoning & Application",
-      "phonetic_guide": "[Phonetic Guide: Why does the AAA (An...]",
-      "front_question": "Why does the AAA (Angle-Angle-Angle) condition fail to establish congruence between two triangles?",
-      "back_answer": "AAA guarantees that two triangles have the same shape (similarity), but it does not guarantee that they have the same size (e.g., an equilateral triangle with 1 cm sides and another with 10 cm sides both have 60° angles but are not congruent).",
-      "graphic_description": "Visual diagram representing key concept for card 6",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    },
-    {
-      "card_id": 7,
-      "level": "Experimental / Observational Insights",
-      "phonetic_guide": "[Phonetic Guide: In a paper cut-out s...]",
-      "front_question": "In a paper cut-out superimposition test, what rigid motions are permitted to align two figures?",
-      "back_answer": "Translation (sliding), Rotation (turning), and Reflection (flipping) are permitted because rigid motions preserve distance and angle measures without altering size or shape.",
-      "graphic_description": "Visual diagram representing key concept for card 7",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    },
-    {
-      "card_id": 8,
-      "level": "Scientific Reasoning & Application",
-      "phonetic_guide": "[Phonetic Guide: In ΔABC, if side AB ...]",
-      "front_question": "In ΔABC, if side AB = AC and ∠A = 50°, calculate the measure of ∠B and ∠C.",
-      "back_answer": "Since AB = AC, angles opposite to equal sides are equal (∠B = ∠C). Angle sum = 180° ⇒ 50° + 2(∠B) = 180° ⇒ 2(∠B) = 130° ⇒ ∠B = 65° and ∠C = 65°.",
-      "graphic_description": "Visual diagram representing key concept for card 8",
-      "mnemonic": "Key Rule Memory Anchor",
-      "sm2_ratings": {
-        "easy": "Repeat in 4 days",
-        "medium": "Repeat in 2 days",
-        "hard": "Repeat today"
-      }
-    }
-  ]
-}
+  {
+    "card_id": 2,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: Define the Kharif cr...]",
+    "front_question": "Define the Kharif cropping season, including its sowing months and key crops.",
+    "back_answer": "The Kharif season coincides with the South-West monsoon. Sowing takes place in June-July and harvesting occurs in September-October. Key crops include paddy (rice), maize, jowar, bajra, cotton, and groundnut.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 3,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: Define the Rabi crop...]",
+    "front_question": "Define the Rabi cropping season, including its sowing months and key crops.",
+    "back_answer": "The Rabi season is the winter cropping season. Crops are sown in October-November and harvested in March-April. Key crops include wheat, barley, gram, mustard, and peas.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 4,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: What is the Zaid sea...]",
+    "front_question": "What is the Zaid season and what crops are typically grown during this period?",
+    "back_answer": "The Zaid season is a short summer cropping period between Rabi and Kharif (March to June). Crops grown include watermelon, muskmelon, cucumber, fodder crops, and seasonal vegetables.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 5,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: What is Alluvial soi...]",
+    "front_question": "What is Alluvial soil and where is it predominantly found in India?",
+    "back_answer": "Alluvial soil is highly fertile soil deposited by river systems, rich in potash and humus. It is predominantly found in the Indo-Gangetic Plains and coastal deltas of eastern India.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 6,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: What are the charact...]",
+    "front_question": "What are the characteristics and key crop associated with Black soil (Regur)?",
+    "back_answer": "Black soil (Regur) is derived from basaltic lava rocks, has high clay content, and exhibits remarkable moisture-retention capacity. It is ideal for growing cotton, sugarcane, jowar, and sunflower.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 7,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: How is Laterite soil...]",
+    "front_question": "How is Laterite soil formed and what major cash crops are cultivated on it?",
+    "back_answer": "Laterite soil is formed by intense leaching due to heavy tropical rainfall in monsoon regions (e.g., Western Ghats, Meghalaya). It is widely used for growing tea, coffee, cashew nuts, and rubber.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 8,
+    "level": "Conceptual Understanding",
+    "phonetic_guide": "[Phonetic Guide: How do traditional a...]",
+    "front_question": "How do traditional and modern agricultural techniques complement each other in sustainable farming?",
+    "back_answer": "Traditional methods like crop rotation, organic composting, and intercropping maintain long-term soil health and biodiversity. Modern technologies like drip irrigation, soil testing, and solar pumps increase resource efficiency and crop yield without ecological degradation.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 9,
+    "level": "Conceptual Understanding",
+    "phonetic_guide": "[Phonetic Guide: What is the signific...]",
+    "front_question": "What is the significance of the quote from the ancient text Krishi Parashara regarding farm management?",
+    "back_answer": "Krishi Parashara emphasizes that agricultural prosperity requires diligent care of livestock, daily field inspections, seasonal awareness, proper seed selection, and hard work, demonstrating that sound agricultural management has ancient roots in India.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 10,
+    "level": "Experimental / Observational Insights",
+    "phonetic_guide": "[Phonetic Guide: In a soil drainage e...]",
+    "front_question": "In a soil drainage experiment comparing Sandy, Clayey, and Alluvial soils, what are the observed water retention results?",
+    "back_answer": "Sandy soil allows water to pass through rapidly with low retention; Clayey soil retains almost all water with minimal drainage; Alluvial soil exhibits balanced water retention and drainage optimal for plant root absorption.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 11,
+    "level": "Scientific Reasoning & Application",
+    "phonetic_guide": "[Phonetic Guide: A farmer in an arid ...]",
+    "front_question": "A farmer in an arid region of Rajasthan faces water scarcity and declining yields. What modern irrigation and soil management strategies should be recommended?",
+    "back_answer": "The farmer should adopt drip or sprinkler irrigation to drastically reduce evaporation/runoff water loss, and transition to organic farming using farmyard manure and legume rotation to improve organic matter and soil moisture retention.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  }
+]

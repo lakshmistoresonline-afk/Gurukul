@@ -1,86 +1,110 @@
 {
   "chapter_number": 10,
-  "chapter_title": "How Quantities Combine: Understanding Data",
+  "chapter_title": "Sound: Waves, Propagation, and Acoustics",
   "mind_map": {
-    "root_topic": "How Quantities Combine: Understanding Data",
+    "root_topic": "Sound: Waves, Propagation, and Acoustics",
     "branches": [
       {
-        "theme": "Weighted Mean and Data Aggregation",
+        "theme": "Nature and Propagation of Sound Waves",
         "sub_branches": [
           {
-            "concept": "Fallacy of Unweighted Averages in Unequal Groups",
+            "concept": "Mechanical Wave Nature and Propagation Medium",
             "details": [
-              "Taking a simple unweighted average of group means ignores group size differences.",
-              "Larger groups exert a greater pull on the true overall population mean.",
-              "Weighted arithmetic mean accounts for subgroup counts or weights w_i."
+              "Sound is mechanical energy produced by vibrating objects.",
+              "Requires a material medium (solid, liquid, gas) for propagation; CANNOT travel through a vacuum.",
+              "Propagates as longitudinal waves consisting of alternating high-density Compressions (C) and low-density Rarefactions (R) along the direction of wave travel."
             ],
             "evidence_or_examples": [
-              "Combining Section A (30 students, avg 80%) and Section B (10 students, avg 60%) yields true weighted mean 75%, not 70%."
+              "Bell jar experiment: As air is pumped out of a sealed bell jar, ringing sound fades to silence despite striker vibrating.",
+              "Speed of sound: Solids (Steel ~5960 m/s) > Liquids (Water ~1480 m/s) > Gases (Air ~344 m/s at 20°C)."
             ],
             "key_terms": [
-              "Simple Average",
-              "Weighted Mean",
-              "Weights (w_i)",
-              "Subgroup Aggregation"
-            ]
+              "Longitudinal Wave",
+              "Compressions",
+              "Rarefactions",
+              "Mechanical Wave",
+              "Medium Requirement"
+            ],
+            "tooltip_popover": "Mechanical Wave Nature and Propagation Medium: Detailed breakdown and evidence."
           },
           {
-            "concept": "Weighted Mean Formula and Physical/Financial Applications",
+            "concept": "Sound Wave Characteristics and Perception",
             "details": [
-              "Formula: x_bar = sum(w_i * x_i) / sum(w_i).",
-              "Used in weighted test grading, gold alloy purity, solution concentration, and mixture blending.",
-              "Preserves total quantity and mass conservation across combined subsets."
+              "Wavelength (λ): Distance between two consecutive compressions or rarefactions (SI Unit: meter, m).",
+              "Frequency (ν): Number of complete wave oscillations per second (SI Unit: Hertz, Hz). Determines Pitch.",
+              "Time Period (T): Time taken for one complete wave cycle: T = 1 / ν.",
+              "Amplitude (A): Maximum displacement of medium particles from mean position. Determines Loudness (Loudness ∝ Amplitude²).",
+              "Wave Speed Equation: v = ν · λ."
             ],
             "evidence_or_examples": [
-              "Academic grade calculation with assignments (30%), midterm (20%), and final exam (50%).",
-              "Mixing brass alloy Batch A (200 kg at 70%), Batch B (120 kg at 50%), and Batch C (240 kg at 45%) to get 55% concentration."
+              "A sound wave of frequency 2 kHz (2000 Hz) and wavelength 35 cm (0.35 m) travels at speed v = 2000 × 0.35 = 700 m/s."
             ],
             "key_terms": [
-              "Formula: x_bar = sum(w_i * x_i) / sum(w_i)",
-              "Percentage Concentration",
-              "Mass Conservation"
-            ]
-          },
-          {
-            "concept": "Rate Combinations & Weighted Harmonic Mean",
-            "details": [
-              "Combining speeds v_i over equal distances d_i requires weighted harmonic mean, not arithmetic mean.",
-              "Formula for average speed: v_avg = sum(d_i) / sum(d_i / v_i) = Total Distance / Total Time.",
-              "Simpson's Paradox occurs when aggregated group weights cause overall statistical trends to reverse."
+              "Wavelength",
+              "Frequency",
+              "Hertz",
+              "Amplitude",
+              "Pitch",
+              "Loudness",
+              "Wave Equation"
             ],
-            "evidence_or_examples": [
-              "Traveling 100 km at 40 km/h and returning 100 km at 60 km/h yields average speed 48 km/h, not 50 km/h."
-            ],
-            "key_terms": [
-              "Weighted Harmonic Mean",
-              "Rate/Speed Combinations",
-              "Simpson's Paradox"
-            ]
+            "tooltip_popover": "Sound Wave Characteristics and Perception: Detailed breakdown and evidence."
           }
-        ]
+        ],
+        "node_color": "#10b981",
+        "icon": "concept_branch"
       },
       {
-        "theme": "Multi-Category Data Visualizations",
+        "theme": "Reflection of Sound, Acoustics, and Ultrasound Applications",
         "sub_branches": [
           {
-            "concept": "Cluster-Column, Stacked Bar & 100% Stacked Bar Charts",
+            "concept": "Reflection, Echoes, and Reverberation",
             "details": [
-              "Cluster-column charts place category bars side-by-side per group.",
-              "Stacked bar charts stack category components vertically to preserve absolute group totals.",
-              "100% stacked bar charts scale all group bars to 100% height to isolate relative percentage distributions."
+              "Sound obeys Laws of Reflection: Angle of incidence = Angle of reflection; incident wave, reflected wave, and normal lie in same plane.",
+              "Echo: Distinct reflected sound heard when reflecting surface distance is at least 17.2 m (given sound speed = 344 m/s and human persistence of hearing = 0.1 s).",
+              "Reverberation: Persistence of sound due to repeated multiple reflections in a hall; reduced using sound-absorbing materials (compressed fiberboard, heavy drapes)."
             ],
             "evidence_or_examples": [
-              "Comparing household spending (housing, food, education, healthcare) across families with different total incomes."
+              "Activity 10.1: Verifying sound reflection using two cardboard tubes and a clock against a hard wall."
             ],
             "key_terms": [
-              "Cluster-Column Chart",
-              "Stacked Bar Chart",
-              "100% Stacked Bar Chart",
-              "Relative Proportions vs Absolute Totals"
-            ]
+              "Reflection of Sound",
+              "Echo",
+              "Reverberation",
+              "Persistence of Hearing",
+              "Acoustic Design"
+            ],
+            "tooltip_popover": "Reflection, Echoes, and Reverberation: Detailed breakdown and evidence."
+          },
+          {
+            "concept": "Hearing Range and Ultrasound Applications",
+            "details": [
+              "Human Audible Range: 20 Hz to 20,000 Hz (20 kHz).",
+              "Infrasound (< 20 Hz): Emitted by rhinos, whales, elephants, and seismic earthquake waves.",
+              "Ultrasound (> 20 kHz): High-frequency waves used in medical imaging (Ultrasonography, Echocardiography), non-destructive industrial flaw detection in metal blocks, and SONAR depth sounding."
+            ],
+            "evidence_or_examples": [
+              "SONAR (Sound Navigation and Ranging): Calculating ocean seabed depth using round-trip echo duration 2d = v · t."
+            ],
+            "key_terms": [
+              "Audible Range",
+              "Infrasound",
+              "Ultrasound",
+              "SONAR",
+              "Echocardiography",
+              "NDT Flaw Detection"
+            ],
+            "tooltip_popover": "Hearing Range and Ultrasound Applications: Detailed breakdown and evidence."
           }
-        ]
+        ],
+        "node_color": "#10b981",
+        "icon": "concept_branch"
       }
     ]
+  },
+  "image_asset": {
+    "asset_id": "IMG-CH10-01",
+    "title": "Sound Wave Mechanics, Reflection & SONAR",
+    "url": "/assets/images/ch10_sound_waves.png"
   }
 }

@@ -1,111 +1,87 @@
 {
   "chapter_number": 13,
-  "chapter_title": "Statistics",
+  "chapter_title": "Our Environment",
   "mind_map": {
-    "root_topic": "Statistics",
+    "root_topic": "Chapter 13: Our Environment",
     "branches": [
       {
-        "theme": "Mean of Grouped Data",
+        "theme": "Practical Lab Activities and Experimental Methodology",
         "sub_branches": [
           {
-            "concept": "Calculation Methods for Mean",
+            "concept": "Activity",
             "details": [
-              "Class mark xi = (Upper Limit + Lower Limit) / 2.",
-              "1) Direct Method: x̄ = Σfi xi / Σfi",
-              "2) Assumed Mean Method: x̄ = a + (Σfi di / Σfi) where di = xi - a",
-              "3) Step-Deviation Method: x̄ = a + h * (Σfi ui / Σfi) where ui = (xi - a)/h"
+              "Objective: ",
+              "Materials: Fruit peels, paper, Plastic bags, glass bottles, Potted soil / garden pit",
+              "Procedure: ",
+              "Observations: ",
+              "Conclusion: "
             ],
             "evidence_or_examples": [
-              "Plants frequency distribution: Σfi = 20, Σfi xi = 162 => Mean x̄ = 8.1 plants."
+              "",
+              ""
             ],
             "key_terms": [
-              "Class Mark (xi)",
-              "Assumed Mean (a)",
-              "Step-Deviation (ui)",
-              "Class Width (h)"
+              "Activity",
+              "Experimental Procedure",
+              "Laboratory Observation"
             ]
           }
         ]
       },
       {
-        "theme": "Mode, Median, and Empirical Relation",
+        "theme": "Master Glossary, Definitions, Formulas, and Laws",
         "sub_branches": [
           {
-            "concept": "Mode and Median Formulas",
+            "concept": "Biological Magnification",
             "details": [
-              "Modal class: Class interval with maximum frequency f1.",
-              "Mode = l + [(f1 - f0) / (2f1 - f0 - f2)] * h",
-              "Median class: Class interval where cumulative frequency exceeds n/2.",
-              "Median = l + [(n/2 - cf) / f] * h",
-              "Empirical Relation: 3 Median = Mode + 2 Mean"
+              "Definition: The phenomenon where non-biodegradable chemicals (like DDT) accumulate in progressively higher concentrations at successive trophic levels of a food chain.",
+              "Context / Notation: Noun",
+              "Application / Example: Top carnivores (humans/birds) exhibit maximum toxin concentration."
             ],
             "evidence_or_examples": [
-              "If Mode = 12 and Mean = 15 => 3 Median = 12 + 30 = 42 => Median = 14.",
-              "Median of data with total frequency 100 and median 525 yields missing frequencies x=9, y=15."
+              "Top carnivores (humans/birds) exhibit maximum toxin concentration."
             ],
             "key_terms": [
-              "Modal Class",
-              "Median Class",
-              "Cumulative Frequency (cf)",
-              "Empirical Relation"
+              "Biological Magnification",
+              "Noun"
+            ]
+          },
+          {
+            "concept": "10 Percent Energy Law",
+            "details": [
+              "Statement / Formula: Only 10% of the energy available at a trophic level is transferred to the next higher trophic level; 90% is lost as heat/metabolism.",
+              "Variable Definitions / Units: Producers (10,000 J) -> Herbivores (1000 J) -> Primary Carnivores (100 J) -> Top Carnivores (10 J).",
+              "Model Application: Limits food chain length to 3-4 steps."
+            ],
+            "evidence_or_examples": [
+              "Limits food chain length to 3-4 steps."
+            ],
+            "key_terms": [
+              "10 Percent Energy Law",
+              "Producers (10,000 J) -> Herbivores (1000 J) -> Primary Carnivores (100 J) -> Top Carnivores (10 J)."
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "Common Misconceptions and Exam Pitfalls",
+        "sub_branches": [
+          {
+            "concept": "Misconception / Pitfall: ...",
+            "details": [
+              "Common Misconception: ",
+              "Correct Principle: "
+            ],
+            "evidence_or_examples": [
+              ""
+            ],
+            "key_terms": [
+              "Exam Pitfall",
+              "Concept Correction"
             ]
           }
         ]
       }
-    ],
-    "d3_react_flow_tree": {
-      "id": "node_13_root",
-      "label": "Statistics",
-      "node_color": "#0284c7",
-      "icon": "book-open",
-      "children": [
-        {
-          "id": "node_13_b1",
-          "label": "Mean of Grouped Data",
-          "node_color": "#38bdf8",
-          "icon": "layers",
-          "hover_popover": "Main Theme: Mean of Grouped Data",
-          "children": [
-            {
-              "id": "node_13_c2",
-              "label": "Calculation Methods for Mean",
-              "node_color": "#818cf8",
-              "icon": "cpu",
-              "hover_popover": "Concept: Calculation Methods for Mean",
-              "details": [
-                "Class mark xi = (Upper Limit + Lower Limit) / 2.",
-                "1) Direct Method: x̄ = Σfi xi / Σfi",
-                "2) Assumed Mean Method: x̄ = a + (Σfi di / Σfi) where di = xi - a",
-                "3) Step-Deviation Method: x̄ = a + h * (Σfi ui / Σfi) where ui = (xi - a)/h"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "node_13_b3",
-          "label": "Mode, Median, and Empirical Relation",
-          "node_color": "#38bdf8",
-          "icon": "layers",
-          "hover_popover": "Main Theme: Mode, Median, and Empirical Relation",
-          "children": [
-            {
-              "id": "node_13_c4",
-              "label": "Mode and Median Formulas",
-              "node_color": "#818cf8",
-              "icon": "cpu",
-              "hover_popover": "Concept: Mode and Median Formulas",
-              "details": [
-                "Modal class: Class interval with maximum frequency f1.",
-                "Mode = l + [(f1 - f0) / (2f1 - f0 - f2)] * h",
-                "Median class: Class interval where cumulative frequency exceeds n/2.",
-                "Median = l + [(n/2 - cf) / f] * h",
-                "Empirical Relation: 3 Median = Mode + 2 Mean"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "mermaid_syntax": "graph TD\n  Root[Statistics]\n  Root --> B_2[Mean of Grouped Data]\n  B_2 --> C_3[Calculation Methods for Mean]\n  Root --> B_4[Mode, Median, and Empirical Relation]\n  B_4 --> C_5[Mode and Median Formulas]"
+    ]
   }
 }

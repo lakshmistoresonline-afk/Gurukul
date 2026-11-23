@@ -1,200 +1,152 @@
 {
   "chapter_number": 1,
-  "chapter_title": "Geometric Twins",
-  "sections": [
+  "chapter_title": "The Story of Indian Farming",
+  "detailed_sections": [
     {
-      "section_title": "1.1 Concept of Congruence and Superimposition",
-      "notes_body": "Two geometric figures are congruent if they possess both the same shape and the same size. Testing for congruence involves superimposition—placing one figure over another. During superimposition, figures can be moved, rotated, or flipped (reflected). If two figures fit perfectly without gaps or overhangs, they are congruent, denoted by the symbol '≅'.",
-      "margin_callouts": [
+      "section_number_and_title": "1.1 Characteristics of Indian Agriculture",
+      "full_notes": "Agriculture encompasses soil preparation, crop cultivation, livestock rearing, horticulture, forestry, pisciculture, and sericulture. Indian agriculture relies heavily on monsoonal rainfall. Farming operations have evolved from bullock-drawn wooden ploughs and manual seed sowing to tractors, mechanical transplanters, combine harvesters, and threshers.",
+      "margin_notes_and_sidebars": [
         {
           "type": "Did You Know?",
-          "title": "Rigid Motions",
-          "content": "Translations, rotations, and reflections are called rigid motions because they preserve distance and angle measures, leaving the size and shape unchanged."
+          "title": "Krishi Parashara Ancient Wisdom",
+          "content": "An ancient Sanskrit agricultural treatise stating that a farmer who cares for cattle, visits fields daily, understands seasonal weather, selects quality seeds, and works industriously is rewarded with abundant harvests."
         }
       ]
     },
     {
-      "section_title": "1.2 Vertex Correspondence and Congruence Notation",
-      "notes_body": "When expressing congruence between two triangles, vertex order matters strictly. Writing ΔABC ≅ ΔXYZ implies that vertex A corresponds to X, B to Y, and C to Z. Corresponding sides (AB = XY, BC = YZ, AC = XZ) and corresponding angles (∠A = ∠X, ∠B = ∠Y, ∠C = ∠Z) are inherently equal.",
-      "margin_callouts": [
+      "section_number_and_title": "1.2 Soil Types, Climate, and Cropping Seasons",
+      "full_notes": "India contains diverse soil profiles: Alluvial (fertile river plains), Black/Regur (volcanic basalt origin, cotton-friendly), Red & Yellow (crystalline rock plateau), Laterite (heavily leached tropical soil), Arid/Desert (sandy, low organic matter), and Mountain soils. Cropping seasons include Kharif (monsoon crops like rice, maize, cotton), Rabi (winter crops like wheat, mustard, gram), and Zaid (summer fruits and vegetables like watermelon and cucumber).",
+      "margin_notes_and_sidebars": [
         {
           "type": "Try These",
-          "title": "Expressing Congruence Correctly",
-          "content": "If ΔHEN ≅ ΔBIG, list all other valid statements of congruence: ΔHNE ≅ ΔBGI, ΔEHN ≅ ΔIBG, ΔENH ≅ ΔIGB, ΔNHE ≅ ΔGBI, ΔNEH ≅ ΔGIB."
+          "title": "Soil Water Retention Experiment",
+          "content": "Compare sandy and clayey soils by measuring water absorption, drainage rate, and moisture retention using funnels and filter papers."
         }
       ]
     },
     {
-      "section_title": "1.3 Minimal Conditions for Triangle Congruence",
-      "notes_body": "To prove two triangles congruent, it is not necessary to measure all three sides and all three angles. Minimal sufficient conditions are:\n1. SSS (Side-Side-Side): Three sides of one triangle are equal to three sides of another.\n2. SAS (Side-Angle-Side): Two sides and the included angle of one triangle are equal to two sides and the included angle of another.\n3. ASA (Angle-Side-Angle) & AAS (Angle-Angle-Side): Two angles and one side (included or non-included) are equal.\n4. RHS (Right-Hypotenuse-Side): In right-angled triangles, the hypotenuse and one leg of one triangle are equal to the hypotenuse and one leg of another.\nNote: SSA (Side-Side-Angle) does NOT guarantee congruence in general.",
-      "margin_callouts": [
+      "section_number_and_title": "1.3 Irrigation, Technology, and Sustainable Practices",
+      "full_notes": "Irrigation evolved from traditional wells, stepwells, and Persian wheels to deep tube wells, canal networks, drip systems, and sprinklers. Over-extraction of groundwater causes water tables to plummet. Sustainable solutions emphasize organic composting, crop rotation, intercropping, rainwater harvesting, and bio-pesticides.",
+      "margin_notes_and_sidebars": [
         {
-          "type": "Caution",
-          "title": "Non-Congruence Conditions",
-          "content": "AAA (Angle-Angle-Angle) guarantees same shape (similarity) but NOT same size. SSA (Side-Side-Angle) can result in two non-congruent triangles."
+          "type": "Did You Know?",
+          "title": "Women in Agriculture",
+          "content": "Over 70% of rural working women in India are engaged in agricultural activities including sowing, transplanting, weeding, harvesting, and dairy management."
         }
-      ]
-    }
-  ],
-  "comparison_tables": [
-    {
-      "table_title": "Triangle Congruence Criteria Summary",
-      "headers": [
-        "Criterion",
-        "Required Equal Parts",
-        "Guarantees Congruence?"
-      ],
-      "rows": [
-        [
-          "SSS",
-          "3 Sides",
-          "Yes"
-        ],
-        [
-          "SAS",
-          "2 Sides + Included Angle",
-          "Yes"
-        ],
-        [
-          "ASA / AAS",
-          "2 Angles + 1 Side",
-          "Yes"
-        ],
-        [
-          "RHS",
-          "Right Angle + Hypotenuse + 1 Leg",
-          "Yes"
-        ],
-        [
-          "SSA",
-          "2 Sides + Non-included Angle",
-          "No (General case)"
-        ],
-        [
-          "AAA",
-          "3 Angles",
-          "No (Guarantees similarity only)"
-        ]
       ]
     }
   ],
   "scripted_dialogues": [
     {
       "speaker": "Teacher",
-      "speech_text": "Welcome to Chapter 1: Geometric Twins. What is the central mathematical goal here?"
+      "speech_text": "Welcome class! Today we are exploring The Story of Indian Farming."
     },
     {
       "speaker": "Student",
-      "speech_text": "We are learning how to formalize quantitative rules using systematic models and exact verification!"
+      "speech_text": "How does this concept connect to modern India, ma'am?"
     },
     {
       "speaker": "Teacher",
-      "speech_text": "Precisely! Let's examine how the underlying principles apply to practical scenarios."
+      "speech_text": "It forms the very backbone of our modern economic, social, and political systems!"
     }
   ],
   "stem_lab_drawers": [
     {
-      "activity_or_method_id": "ACT-1.1",
-      "aim_or_objective": "Verify whether two plane figures are congruent.",
+      "activity_or_method_id": "ACT-101",
+      "aim_or_objective": "To measure and compare the water-holding capacity and drainage rates of Sandy, Clayey, and Alluvial soils.",
       "materials_or_prerequisites": [
-        "Tracing paper",
-        "Scissors",
-        "Ruler",
-        "Protractor"
+        "Three glass funnels",
+        "Filter paper sheets",
+        "Three measuring cylinders",
+        "50g dry samples of Sandy, Clayey, and Alluvial soils",
+        "Water"
       ],
       "procedure_or_steps": [
-        "1. Trace the given figure onto tracing paper.",
-        "2. Cut out the traced figure.",
-        "3. Place the cutout over the target figure.",
-        "4. Rotate or flip the cutout if necessary to test complete coverage."
+        "Fit filter papers inside each funnel and place funnels on measuring cylinders.",
+        "Add 50g of dry soil sample into each respective funnel.",
+        "Pour 50ml of water slowly and evenly over each soil sample.",
+        "Record the volume of drained water collected in each cylinder after 10 minutes."
       ],
-      "observations_or_results": "If the cutout overlaps the target figure exactly along all boundaries, the two figures are congruent.",
-      "conclusion_or_principle": "Proven Principle: Paper Cut-out Superimposition Test holds true."
+      "observations_or_results": "Sandy soil drains water rapidly with low retention (~40ml collected). Clayey soil retains most water with very slow drainage (~10ml collected). Alluvial soil exhibits balanced drainage (~22ml collected).",
+      "conclusion_or_principle": "Alluvial soil provides optimal balance between drainage and moisture retention required for crop root development."
     }
   ],
-  "formula_calculators": {
-    "calculator_name": "Interactive Geometric Twins Calculator",
-    "formula": "Systematic Algorithm",
-    "inputs": [
-      "Value A",
-      "Value B"
-    ],
-    "step_by_step_logic": "Performs exact NCERT verification algorithm on user inputs."
-  },
+  "formula_calculators": [
+    {
+      "calculator_name": "Interest / Yield Formula Tool",
+      "formula": "A = P * (1 + r/n)^(n*t)",
+      "variables": [
+        "P: Principal",
+        "r: Interest Rate",
+        "t: Time in years"
+      ]
+    }
+  ],
   "image_asset": {
     "asset_id": "img_ch1",
     "chapter_number": 1,
-    "title": "Triangle Congruence Criteria Diagram",
-    "url": "/assets/images/ch1_triangle_congruence.png",
-    "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
+    "chapter_title": "The Story of Indian Farming",
+    "file_name": "ch1_farming_soils.png",
+    "url": "/assets/images/ch1_farming_soils.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 900
+    },
+    "title": "Soil Profiles & Cropping Seasons in India",
     "hotspots": [
       {
-        "x_percent": 10,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SSS Criterion",
-        "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
+        "hotspot_id": "hs_ch1_alluvial",
+        "title": "Alluvial Soil Zone",
+        "x_percent": 5,
+        "y_percent": 50,
+        "w_percent": 42,
+        "h_percent": 35,
+        "info": "Gangetic plains & river deltas; highly fertile for rice and wheat."
       },
       {
-        "x_percent": 55,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SAS Criterion",
-        "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
-      },
-      {
-        "x_percent": 10,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "ASA Criterion",
-        "popover_text": "Angle-Side-Angle: Two angles and included side align."
-      },
-      {
-        "x_percent": 55,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "RHS Criterion",
-        "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
+        "hotspot_id": "hs_ch1_black",
+        "title": "Black Soil (Regur) Zone",
+        "x_percent": 53,
+        "y_percent": 50,
+        "w_percent": 42,
+        "h_percent": 35,
+        "info": "Volcanic basalt origin in Deccan Trap; high moisture retention ideal for cotton."
       }
     ]
   },
   "m1_zero_omission_notes": {
-    "summary": "This chapter introduces the concept of geometric congruence in plane figures, focusing specifically on triangles. Figures are defined as congruent if they have identical shape and size, meaning one can be superimposed onto another through translation, rotation, or reflection to fit exactly. The chapter systematically builds criteria for triangle congruence: SSS (Side-Side-Side), SAS (Side-Angle-Side), ASA (Angle-Side-Angle) / AAS (Angle-Angle-Side), and RHS (Right-Hypotenuse-Side) for right-angled triangles. It emphasizes vertex correspondence (order of vertices in congruence notation like ΔABC ≅ ΔXYZ) and explores properties such as equal angles opposite to equal sides in isosceles triangles and 60° angles in equilateral triangles.",
+    "summary": "Agriculture is the backbone of India's economy and cultural identity. The chapter explores the evolution of farming from Harappan traditional practices to modern mechanised techniques. It highlights the intricate interrelationship between soil types, climate, water resources, and cropping seasons, alongside the vital role played by women farmers and sustainable agricultural methods.",
     "detailed_sections": [
       {
-        "section": "1.1 Concept of Congruence and Superimposition",
-        "full_notes": "Two geometric figures are congruent if they possess both the same shape and the same size. Testing for congruence involves superimposition—placing one figure over another. During superimposition, figures can be moved, rotated, or flipped (reflected). If two figures fit perfectly without gaps or overhangs, they are congruent, denoted by the symbol '≅'.",
+        "section": "1.1 Characteristics of Indian Agriculture",
+        "full_notes": "Farming is one of humanity's oldest occupations. In India, agriculture encompasses soil preparation, crop cultivation, livestock rearing, horticulture, forestry, pisciculture (fish rearing), and sericulture (silk production). Farming techniques range from traditional bullock-drawn ploughs to modern tractors, seed transplanters, and combine threshers.",
         "margin_notes": [
           {
             "type": "Did You Know?",
-            "title": "Rigid Motions",
-            "content": "Translations, rotations, and reflections are called rigid motions because they preserve distance and angle measures, leaving the size and shape unchanged."
+            "title": "Krishi Parashara Quote",
+            "content": "An ancient text stating that a farmer who cares for cattle, inspects fields daily, understands seasons, selects good seeds, and works industriously is rewarded with bountiful harvests."
           }
         ]
       },
       {
-        "section": "1.2 Vertex Correspondence and Congruence Notation",
-        "full_notes": "When expressing congruence between two triangles, vertex order matters strictly. Writing ΔABC ≅ ΔXYZ implies that vertex A corresponds to X, B to Y, and C to Z. Corresponding sides (AB = XY, BC = YZ, AC = XZ) and corresponding angles (∠A = ∠X, ∠B = ∠Y, ∠C = ∠Z) are inherently equal.",
+        "section": "1.2 Soil Types, Climate, and Cropping Seasons",
+        "full_notes": "India possesses diverse soil profiles: Alluvial (gangetic plains, highly fertile), Black (Deccan trap, ideal for cotton), Red & Yellow (peninsular plateau), Laterite (leached soils in heavy rainfall areas like Western Ghats), Desert/Arid (Rajasthan, suitable for millets), and Mountain soils. Cropping seasons include Kharif (monsoon crops like rice, maize, cotton sown in June-July), Rabi (winter crops like wheat, mustard, gram sown in Oct-Nov), and Zaid (summer crops like watermelon, cucumber).",
         "margin_notes": [
           {
             "type": "Try These",
-            "title": "Expressing Congruence Correctly",
-            "content": "If ΔHEN ≅ ΔBIG, list all other valid statements of congruence: ΔHNE ≅ ΔBGI, ΔEHN ≅ ΔIBG, ΔENH ≅ ΔIGB, ΔNHE ≅ ΔGBI, ΔNEH ≅ ΔGIB."
+            "title": "Soil Moisture Observation",
+            "content": "Compare sandy soil and clay soil by pouring equal amounts of water to observe drainage and water retention capacities."
           }
         ]
       },
       {
-        "section": "1.3 Minimal Conditions for Triangle Congruence",
-        "full_notes": "To prove two triangles congruent, it is not necessary to measure all three sides and all three angles. Minimal sufficient conditions are:\n1. SSS (Side-Side-Side): Three sides of one triangle are equal to three sides of another.\n2. SAS (Side-Angle-Side): Two sides and the included angle of one triangle are equal to two sides and the included angle of another.\n3. ASA (Angle-Side-Angle) & AAS (Angle-Angle-Side): Two angles and one side (included or non-included) are equal.\n4. RHS (Right-Hypotenuse-Side): In right-angled triangles, the hypotenuse and one leg of one triangle are equal to the hypotenuse and one leg of another.\nNote: SSA (Side-Side-Angle) does NOT guarantee congruence in general.",
+        "section": "1.3 Irrigation, Technological Change, and Sustainable Farming",
+        "full_notes": "Irrigation methods evolved from traditional wells, tanks, and Persian wheels to modern tube wells, canal networks, drip irrigation, and sprinkler systems. Over-extraction of groundwater poses severe ecological risks. Sustainable farming emphasizes organic manure, crop rotation, intercropping, rainwater harvesting, and soil conservation.",
         "margin_notes": [
           {
-            "type": "Caution",
-            "title": "Non-Congruence Conditions",
-            "content": "AAA (Angle-Angle-Angle) guarantees same shape (similarity) but NOT same size. SSA (Side-Side-Angle) can result in two non-congruent triangles."
+            "type": "Did You Know?",
+            "title": "Women in Agriculture",
+            "content": "Over 70% of rural women in India are engaged in agricultural activities, participating in sowing, transplanting, weeding, harvesting, and livestock care."
           }
         ]
       }
@@ -202,78 +154,179 @@
   },
   "m2_key_terms_formulas_and_rules": [
     {
-      "term_or_rule": "Congruence (≅)",
-      "definition_or_expression": "Relation between two figures having the exact same shape and exact same size.",
-      "example_or_unit": "Two identical 5-rupee coins placed on top of each other."
+      "term_or_rule": "Agriculture",
+      "definition_or_expression": "The science and art of cultivating soil, growing crops, raising livestock, forestry, and horticulture.",
+      "example_or_unit": "Crop cultivation and animal husbandry across Indian states."
     },
     {
-      "term_or_rule": "SSS Criterion",
-      "definition_or_expression": "If three sides of one triangle equal three sides of another, Δ1 ≅ Δ2.",
-      "example_or_unit": "Triangles with side lengths 3 cm, 4 cm, 5 cm."
+      "term_or_rule": "Kharif Season",
+      "definition_or_expression": "Cropping season coinciding with the South-West monsoon (June to October).",
+      "example_or_unit": "Rice, Maize, Jowar, Bajra, Cotton, Groundnut."
     },
     {
-      "term_or_rule": "SAS Criterion",
-      "definition_or_expression": "If two sides and the included angle equal two sides and the included angle, Δ1 ≅ Δ2.",
-      "example_or_unit": "Sides 5 cm, 7 cm with included angle 47°."
+      "term_or_rule": "Rabi Season",
+      "definition_or_expression": "Winter cropping season sown in October-November and harvested in March-April.",
+      "example_or_unit": "Wheat, Barley, Gram, Mustard, Peas."
     },
     {
-      "term_or_rule": "ASA / AAS Criterion",
-      "definition_or_expression": "If two angles and one side equal two angles and the corresponding side, Δ1 ≅ Δ2.",
-      "example_or_unit": "Angles 50°, 60° with a side of 6 cm."
+      "term_or_rule": "Zaid Season",
+      "definition_or_expression": "Short summer cropping season between Rabi and Kharif (March to June).",
+      "example_or_unit": "Watermelon, Muskmelon, Cucumber, Vegetables."
     },
     {
-      "term_or_rule": "RHS Criterion",
-      "definition_or_expression": "In right triangles, if Hypotenuse and one Leg are equal, Δ1 ≅ Δ2.",
-      "example_or_unit": "Right triangles with hypotenuse 5 cm and leg 4 cm."
-    },
-    {
-      "term_or_rule": "Isosceles Triangle Angle Rule",
-      "definition_or_expression": "In a triangle, angles opposite to equal sides are equal.",
-      "example_or_unit": "If AB = AC in ΔABC, then ∠B = ∠C."
+      "term_or_rule": "Drip Irrigation",
+      "definition_or_expression": "Water-saving technique where water is supplied directly to plant roots drop by drop.",
+      "example_or_unit": "Used extensively in arid regions for horticulture and sugarcane."
     }
   ],
   "m3_practical_activities_and_procedures": [
     {
-      "activity_title": "Paper Cut-out Superimposition Test",
-      "aim": "Verify whether two plane figures are congruent.",
+      "activity_title": "Soil Drainage & Water Retention Test",
+      "aim": "To determine the water holding capacity of different soil types (Sandy, Clayey, Alluvial).",
       "materials": [
-        "Tracing paper",
-        "Scissors",
-        "Ruler",
-        "Protractor"
+        "Three funnels",
+        "Filter paper",
+        "Measuring cylinders",
+        "Samples of Sandy, Clayey, and Alluvial soils",
+        "Water"
       ],
       "procedure": [
-        "1. Trace the given figure onto tracing paper.",
-        "2. Cut out the traced figure.",
-        "3. Place the cutout over the target figure.",
-        "4. Rotate or flip the cutout if necessary to test complete coverage."
+        "Place filter paper inside each funnel and mount them on measuring cylinders.",
+        "Add 50g of dried soil sample to each funnel.",
+        "Pour 50ml of water slowly over each soil sample simultaneously.",
+        "Measure the volume of water collected in the cylinder after 10 minutes."
       ],
-      "observation_and_conclusion": "If the cutout overlaps the target figure exactly along all boundaries, the two figures are congruent."
+      "observation_and_conclusion": "Sandy soil allows water to pass through rapidly (low retention), clayey soil retains most water with minimal drainage, while alluvial soil exhibits balanced retention and drainage optimal for plant growth."
     }
   ],
+  "m4_diagrams_and_tables": {
+    "diagrams": [
+      {
+        "figure_title": "Fig. 1.1 Agricultural Operations and Mechanisation",
+        "labels": [
+          "Oxen Ploughing",
+          "Tractor Ploughing",
+          "Manual Seedling Transplantation",
+          "Transplanter Machine",
+          "Threshing Machine",
+          "Dal Lake Floating Market Transport"
+        ],
+        "instructions": "Compare traditional animal-driven methods with mechanized farm operations.",
+        "structural_details": "Illustrates the transition from manual labor and draft animals to diesel tractors, motorized transplanters, and mechanical threshers."
+      }
+    ],
+    "tables": [
+      {
+        "title": "Major Indian Soil Types and Associated Crops",
+        "headers": [
+          "Soil Type",
+          "Formation / Characteristics",
+          "Key Regions",
+          "Major Crops Grown"
+        ],
+        "rows": [
+          [
+            "Alluvial Soil",
+            "Deposited by river systems; rich in potash and humus",
+            "Indo-Gangetic Plains, Coastal Deltas",
+            "Rice, Wheat, Sugarcane, Jute, Pulses"
+          ],
+          [
+            "Black Soil (Regur)",
+            "Volcanic basalt origin; high clay content and moisture retention",
+            "Deccan Trap (Maharashtra, Gujarat, MP)",
+            "Cotton, Sugarcane, Jowar, Sunflower"
+          ],
+          [
+            "Red & Yellow Soil",
+            "Developed on crystalline igneous rocks; red due to iron diffusion",
+            "Deccan Plateau edges, Odisha, Chhattisgarh",
+            "Millets, Groundnut, Pulses, Tobacco"
+          ],
+          [
+            "Laterite Soil",
+            "Formed by intense leaching due to heavy tropical rainfall",
+            "Western Ghats, Meghalaya, Eastern Ghats",
+            "Tea, Coffee, Cashew nut, Rubber"
+          ]
+        ]
+      }
+    ]
+  },
   "m5_textbook_solutions_and_extracts": {
     "end_exercises": [
       {
         "q_no": "Q1",
-        "question": "Suppose ΔHEN is congruent to ΔBIG. List all the other correct ways of expressing this congruence.",
-        "answer": "The corresponding vertices are H↔B, E↔I, N↔G. The 6 valid permutations maintaining correspondence are: ΔHEN ≅ ΔBIG, ΔHNE ≅ ΔBGI, ΔEHN ≅ ΔIBG, ΔENH ≅ ΔIGB, ΔNHE ≅ ΔGBI, ΔNEH ≅ ΔGIB."
+        "question": "What are the main characteristics of Indian agriculture?",
+        "answer": "Indian agriculture is characterized by monsoon dependency, diversity of cropping patterns (Kharif, Rabi, Zaid), a mix of traditional methods and modern technology, significant participation of women workers, and a predominance of small and marginal landholdings."
       },
       {
         "q_no": "Q2",
-        "question": "In a figure with AB = AD and CB = CD, identify congruent triangles and check if AC bisects ∠BAD and ∠BCD.",
-        "answer": "In ΔABC and ΔADC: AB = AD (Given), CB = CD (Given), AC = AC (Common side). By SSS criterion, ΔABC ≅ ΔADC. Since corresponding angles are equal (CPCT), ∠BAC = ∠DAC and ∠BCA = ∠DCA. Therefore, AC bisects both ∠BAD and ∠BCD."
+        "question": "How can traditional practices and contemporary ones complement each other?",
+        "answer": "Traditional practices like crop rotation, organic composting, and intercropping maintain soil health and biodiversity, while contemporary technologies like drip irrigation, soil testing, and solar pumps enhance resource efficiency and productivity without environmental degradation."
       }
     ],
     "extract_based": [
       {
-        "extract_text": "When two triangles have the same sidelengths, we say that the SSS condition is satisfied. The SSS condition guarantees congruence.",
+        "extract_text": "'A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds... never perishes.' — Krishi Parashara",
         "qa": [
           {
-            "question": "What does SSS stand for and what does it ensure?",
-            "answer": "SSS stands for Side-Side-Side condition. It ensures that two triangles with identical side lengths are completely congruent."
+            "question": "Which ancient text is this quote taken from and what is its main message?",
+            "answer": "The quote is from Krishi Parashara. It emphasizes that agricultural success requires diligent management, seasonal awareness, seed selection, and proper livestock care."
           }
         ]
       }
     ]
-  }
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which of the following is a Rabi crop?",
+        "answer": "Wheat (Sown in winter October-November and harvested in spring)."
+      },
+      {
+        "type": "Fill in the Blanks",
+        "question": "The soil formed by intense leaching in heavy rainfall areas is _____ soil.",
+        "answer": "Laterite soil."
+      }
+    ],
+    "level_2_short_answer_2_3_marks": [
+      {
+        "question": "Differentiate between Kharif and Rabi cropping seasons with two examples each.",
+        "answer": "1. Kharif crops are monsoon crops sown in June-July and harvested in September-October (e.g., Rice, Maize).\n2. Rabi crops are winter crops sown in October-November and harvested in March-April (e.g., Wheat, Mustard)."
+      }
+    ],
+    "level_3_long_answer_5_marks": [
+      {
+        "question": "Explain the major challenges faced by Indian farmers today and suggest sustainable solutions.",
+        "answer": "Challenges include monsoon erraticity, depleted groundwater levels, soil degradation from chemical overuse, high input costs, and climate change impacts. Sustainable solutions involve adopting drip/sprinkler irrigation, practicing organic and natural farming, rainwater harvesting, soil health monitoring, and crop diversification towards climate-resilient crops like millets."
+      }
+    ],
+    "level_4_competency_case_study": [
+      {
+        "scenario": "Ramesh is a small farmer in Rajasthan experiencing water scarcity and declining crop yields due to traditional flood irrigation and synthetic chemical fertilizers.",
+        "qa": [
+          {
+            "question": "What modern irrigation technique should Ramesh adopt to conserve water?",
+            "answer": "Drip irrigation or sprinkler systems to minimize evaporation and runoff."
+          },
+          {
+            "question": "How can he restore soil fertility sustainably?",
+            "answer": "By transitioning to organic farming using farmyard manure, vermicomposting, bio-pesticides, and legume crop rotation."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls": [
+    {
+      "common_error": "Confusing sowing and harvesting months for Kharif and Rabi crops.",
+      "correct_approach": "Associate Kharif with Monsoon (June sowing) and Rabi with Winter (October sowing)."
+    },
+    {
+      "common_error": "Assuming Laterite soil is formed by river deposits.",
+      "correct_approach": "Laterite soil is formed by intense weathering and leaching under high tropical rainfall; Alluvial soil is formed by river silt deposition."
+    }
+  ]
 }

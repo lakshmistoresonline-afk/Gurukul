@@ -1,357 +1,133 @@
 {
   "chapter_number": 7,
-  "chapter_title": "Gilli Danda",
-  "summary_and_theme": {
-    "summary": "This rhythmic poem celebrates the traditional Indian street game of Gilli Danda. Played outdoors in open spaces, the game requires two wooden pieces: a longer stick called 'danda' and a smaller tapered wooden peg called 'gilli'. The poet describes children gathering excitedly in the playground, flipping and striking the gilli into the air with the danda. The poem highlights outdoor physical activity, camaraderie, sportsmanship, and the joy of traditional indigenous sports.",
-    "core_theme": "Traditional Indian sports, outdoor physical fitness, teamwork, and joy of simple play.",
-    "character_sketches": [
-      {
-        "name": "The Young Players",
-        "profile": "Enthusiastic neighborhood children who gather in open grounds to play traditional sports, displaying energy, skill, and friendly sportsmanship."
-      }
-    ]
-  },
-  "vocabulary": [
-    {
-      "word": "Gilli",
-      "meaning": "A small cylindrical piece of wood tapered at both ends used in Gilli Danda.",
-      "phonics": "/ˈɡɪl.i/",
-      "silent_letters": "None",
-      "sentence": "He flicked the small wooden gilli off the ground with a quick strike."
-    },
-    {
-      "word": "Danda",
-      "meaning": "A long wooden stick used as a bat in the traditional game.",
-      "phonics": "/ˈdʌn.dɑː/",
-      "silent_letters": "None",
-      "sentence": "He swung the wooden danda and sent the gilli flying far across the field."
-    },
-    {
-      "word": "Traditional",
-      "meaning": "Existing in or as part of long-established customs or beliefs.",
-      "phonics": "/trəˈdɪʃ.ən.əl/",
-      "silent_letters": "None",
-      "sentence": "Gilli Danda is a traditional Indian outdoor game enjoyed across rural areas."
-    },
-    {
-      "word": "Abstract Noun",
-      "meaning": "A noun denoting an idea, quality, or state rather than a physical object.",
-      "phonics": "/ˈæb.strækt naʊn/",
-      "silent_letters": "b in abstract (pronounced clearly)",
-      "sentence": "'Happiness' and 'friendship' are examples of abstract nouns."
-    },
-    {
-      "word": "Tapered",
-      "meaning": "Becoming gradually narrower toward one end.",
-      "phonics": "/ˈteɪ.pərd/",
-      "silent_letters": "None",
-      "sentence": "The gilli has tapered ends that allow it to flip into the air when struck."
-    }
+  "chapter_title": "Shapes and Patterns",
+  "core_concepts": [
+    "Tessellations (tiling) without gaps or overlaps",
+    "Polygons: regular vs irregular, triangles, quadrilaterals (rhombus, kite, parallelogram)",
+    "3D solid nets: Cube, Regular Dodecahedron (12 pentagons), Regular Icosahedron (20 triangles)",
+    "Euler's Polyhedron Formula relation: Faces + Vertices - Edges = 2"
   ],
-  "objective_questions": {
-    "mcqs": [
+  "key_competencies": [
+    "Identifying tessellating shapes based on vertex angle properties",
+    "Folding 2D flat nets into 3D solid polyhedra",
+    "Analyzing side and angle attributes of 2D polygons"
+  ],
+  "common_misconceptions": [
+    "Thinking all regular polygons tessellate (e.g., regular pentagons do not tessellate alone)",
+    "Confusing 2D perimeter with 3D edge counts"
+  ],
+  "question_bank": {
+    "section_a_knowledge": [
       {
-        "id": "mcq_7_1",
-        "question": "Which two pieces of equipment are used to play Gilli Danda?",
+        "id": "Ch7_Q1",
+        "type": "MCQ",
+        "question": "Which of the following regular shapes CANNOT tile/tessellate a plane surface alone?",
         "options": [
-          "A ball and a bat",
-          "A long stick (danda) and a small tapered peg (gilli)",
-          "A shuttlecock and racket",
-          "A net and leather ball"
+          "Equilateral Triangle",
+          "Square",
+          "Regular Pentagon",
+          "Regular Hexagon"
         ],
-        "correct_answer": "A long stick (danda) and a small tapered peg (gilli)",
-        "explanation": "Gilli Danda is played using a long wooden danda and a small wooden gilli."
+        "correct_answer": "Regular Pentagon",
+        "explanation": "Interior angle of regular pentagon is 108°, which does not divide 360° evenly, leaving gaps."
       },
       {
-        "id": "mcq_7_2",
-        "question": "Which of the following is an example of an ABSTRACT noun?",
-        "options": [
-          "Stick",
-          "Playground",
-          "Joy",
-          "Gilli"
-        ],
-        "correct_answer": "Joy",
-        "explanation": "'Joy' is an emotion/feeling, making it an abstract noun."
-      },
-      {
-        "id": "mcq_7_3",
-        "question": "What is the correct prefix added to 'comfortable' to mean 'not comfortable'?",
-        "options": [
-          "dis-",
-          "un-",
-          "re-",
-          "im-"
-        ],
-        "correct_answer": "un-",
-        "explanation": "un- + comfortable = uncomfortable."
-      },
-      {
-        "id": "mcq_7_4",
-        "question": "How do players flick the gilli into the air?",
-        "options": [
-          "By throwing it with hands",
-          "By striking its tapered end with the danda",
-          "By kicking it with feet",
-          "By blowing on it"
-        ],
-        "correct_answer": "By striking its tapered end with the danda",
-        "explanation": "Striking the tapered tip flips the gilli into the air to be hit."
-      },
-      {
-        "id": "mcq_7_5",
-        "question": "Which possessive pronoun correctly replaces 'belonging to them'?",
-        "options": [
-          "Mine",
-          "Theirs",
-          "Hers",
-          "Ours"
-        ],
-        "correct_answer": "Theirs",
-        "explanation": "'Theirs' is the possessive pronoun for 'belonging to them'."
+        "id": "Ch7_Q2",
+        "type": "Fill in the Blanks",
+        "question": "A regular dodecahedron has 12 faces, and each face is a regular _____.",
+        "correct_answer": "pentagon",
+        "explanation": "A dodecahedron consists of 12 regular pentagonal faces."
       }
     ],
-    "fill_in_blanks": [
+    "section_b_understanding": [
       {
-        "id": "fib_7_1",
-        "question": "Gilli Danda is a traditional ________ street game.",
-        "correct_answer": "Indian",
-        "explanation": "Gilli Danda is a popular traditional Indian outdoor sport."
-      },
-      {
-        "id": "fib_7_2",
-        "question": "The small wooden piece tapered at both ends is called a ________.",
-        "correct_answer": "gilli",
-        "explanation": "Gilli is the small tapered wooden peg."
-      },
-      {
-        "id": "fib_7_3",
-        "question": "'Friendship' and 'Happiness' are examples of ________ nouns.",
-        "correct_answer": "abstract",
-        "explanation": "Abstract nouns refer to feelings, states, or concepts."
-      },
-      {
-        "id": "fib_7_4",
-        "question": "Adding the prefix 're-' to 'write' creates the word ________.",
-        "correct_answer": "rewrite",
-        "explanation": "re- + write = rewrite."
-      },
-      {
-        "id": "fib_7_5",
-        "question": "The children gathered in the open ________ to play.",
-        "correct_answer": "playground",
-        "explanation": "Playground is where sports are played."
+        "id": "Ch7_Q3",
+        "type": "Short Answer / Spatial",
+        "question": "A 3D solid cube has 6 faces and 8 vertices. How many edges does it have?",
+        "correct_answer": "12 edges",
+        "explanation": "Using Euler's formula F + V - E = 2: 6 + 8 - E = 2 => E = 12 edges."
       }
     ],
-    "true_false": [
+    "section_c_compute": [
       {
-        "id": "tf_7_1",
-        "statement": "Gilli Danda requires expensive imported sports gear to play.",
-        "is_true": false,
-        "justification": "It is played using simple hand-carved wooden sticks available locally."
-      },
-      {
-        "id": "tf_7_2",
-        "statement": "An abstract noun can be touched and weighed physically.",
-        "is_true": false,
-        "justification": "Abstract nouns represent emotions, qualities, or ideas that cannot be physically touched."
-      },
-      {
-        "id": "tf_7_3",
-        "statement": "'Uncomfortable' uses the prefix 'un-' to mean 'not'.",
-        "is_true": true,
-        "justification": "The prefix un- means not or opposite of."
-      },
-      {
-        "id": "tf_7_4",
-        "statement": "Gilli Danda encourages team spirit and coordination.",
-        "is_true": true,
-        "justification": "Outdoor group games foster teamwork and sportsmanship."
-      },
-      {
-        "id": "tf_7_5",
-        "statement": "'His' and 'Theirs' are possessive pronouns.",
-        "is_true": true,
-        "justification": "They show ownership without repeating nouns."
+        "id": "Ch7_Q4",
+        "type": "Procedural Calculation",
+        "question": "A net consists of 20 congruent equilateral triangles. Identify the 3D solid formed and count its faces and vertices.",
+        "steps": [
+          "Identify solid with 20 triangular faces = Regular Icosahedron",
+          "Faces F = 20",
+          "Vertices V = 12 (and Edges E = 30)"
+        ],
+        "final_answer": "Regular Icosahedron; 20 Faces, 12 Vertices"
       }
     ],
-    "match_following": [
+    "section_d_case_study": [
       {
-        "id": "mf_7_1",
-        "column_a": [
-          "Gilli",
-          "Danda",
-          "Happiness",
-          "Prefix 'un-'"
-        ],
-        "column_b": [
-          "Abstract Noun",
-          "Means 'not' or opposite",
-          "Small tapered wooden peg",
-          "Long wooden striking stick"
-        ],
-        "pairs": [
+        "id": "Ch7_Q5",
+        "type": "Competency Case Study",
+        "context_scenario": "An architect is designing tiled flooring for a courtyard measuring 6 m by 4 m using hexagonal and square tile combinations.",
+        "sub_questions": [
           {
-            "a": "Gilli",
-            "b": "Small tapered wooden peg"
+            "sub_id": "5a",
+            "question": "What is the key geometric condition required for tile shapes to fit around a single vertex without overlapping?",
+            "answer": "The sum of interior angles meeting at the vertex must equal exactly 360 degrees."
           },
           {
-            "a": "Danda",
-            "b": "Long wooden striking stick"
-          },
-          {
-            "a": "Happiness",
-            "b": "Abstract Noun"
-          },
-          {
-            "a": "Prefix 'un-'",
-            "b": "Means 'not' or opposite"
+            "sub_id": "5b",
+            "question": "Calculate the total floor area to be tiled in square meters.",
+            "answer": "24 square meters (6 m x 4 m)"
           }
         ]
       }
     ]
   },
-  "reading_extracts": [
-    {
-      "id": "ext_7_1",
-      "extract": "In the playground, we gather around, With a stick and a small gilli to throw,\nGilli Danda, our game is so sound! We play with joy, watch it go!\nOne, two, three, swing and hit, With our friends, we never quit!\nWith every swing, we feel so free, Oh, what fun it is, you see!",
-      "questions": [
-        {
-          "q": "What equipment do children gather with in the playground?",
-          "a": "A stick (danda) and a small gilli.",
-          "explanation": "Line 2 mentions 'a stick and a small gilli'."
-        },
-        {
-          "q": "Identify an abstract noun in the stanza.",
-          "a": "The word 'joy' (or 'fun') is an abstract noun.",
-          "explanation": "Joy describes an emotional state."
-        },
-        {
-          "q": "What attitude do the children display towards play?",
-          "a": "They display enthusiasm, persistence ('never quit'), and pure joy.",
-          "explanation": "Highlighted in lines 4, 6, and 8."
-        }
-      ]
-    }
-  ],
-  "writing_prompts": [
-    {
-      "id": "wp_7_1",
-      "format": "Explanatory Guide",
-      "topic": "Write step-by-step rules explaining how to play Gilli Danda to someone who has never heard of it.",
-      "hints": [
-        "Equipment needed",
-        "Setting up a small pit",
-        "Flicking the gilli",
-        "Striking and scoring"
-      ],
-      "model_answer": "HOW TO PLAY GILLI DANDA:\n1. Equipment: You need a danda (long stick) and a gilli (small tapered peg).\n2. Setup: Dig a small shallow groove in an open dirt ground and place the gilli across it.\n3. Flicking: Insert the danda under the gilli and flick it upward into the air.\n4. Striking: As the gilli flips in mid-air, strike it hard with the danda to send it far away.\n5. Winning: Fielding players attempt to catch it. If missed, the distance struck measures the score!"
-    }
-  ],
-  "grammar_exercises": [
-    {
-      "type": "Abstract Nouns and Prefixes",
-      "instruction": "Identify abstract nouns or apply prefixes (un-, re-) as instructed:",
-      "items": [
-        {
-          "q": "Underline the abstract noun: 'The children played with great **joy**.'",
-          "a": "joy",
-          "explanation": "Joy is an abstract noun representing feeling."
-        },
-        {
-          "q": "Add prefix 'un-' to 'kind': ________.",
-          "a": "unkind",
-          "explanation": "un + kind = unkind."
-        },
-        {
-          "q": "Add prefix 're-' to 'play': ________.",
-          "a": "replay",
-          "explanation": "re + play = replay."
-        },
-        {
-          "q": "Convert 'This ball belongs to her' using possessive pronoun: 'This ball is ________.'",
-          "a": "hers",
-          "explanation": "Hers is the possessive pronoun."
-        }
-      ]
-    }
-  ],
-  "literature_questions": {
-    "short_answer": [
-      {
-        "id": "sa_7_1",
-        "marks": 2,
-        "question": "Why are traditional indigenous games like Gilli Danda beneficial for children?",
-        "answer": "Traditional games like Gilli Danda encourage physical outdoor exercise, hand-eye coordination, social teamwork, and active outdoor fun without needing expensive equipment."
-      },
-      {
-        "id": "sa_7_2",
-        "marks": 2,
-        "question": "What is an abstract noun? Provide two examples from the chapter.",
-        "answer": "An abstract noun names an intangible feeling, quality, concept, or state that cannot be perceived with physical senses. Examples include 'joy' and 'friendship'."
-      }
-    ],
-    "long_answer": [
-      {
-        "id": "la_7_1",
-        "marks": 5,
-        "question": "Describe the atmosphere of playing Gilli Danda as depicted in the poem, and explain how it fosters community camaraderie.",
-        "answer": "The poem depicts an invigorating, vibrant atmosphere where neighborhood children assemble in open playgrounds with simple handcrafted gear. As players count 'one, two, three', swing the danda, and hit the gilli soaring, excitement fills the air. The shared cheers, energetic running, and mutual encouragement build strong bonds of friendship and sportsmanship. By playing outdoors together, children learn cooperation, perseverance ('we never quit'), and appreciate indigenous sports heritage.",
-        "rubric": [
-          "2 Marks: Description of the game's atmosphere and gameplay sequence",
-          "2 Marks: Explanation of community camaraderie and social benefits",
-          "1 Mark: Vocabulary, grammatical accuracy, and flow"
-        ]
-      }
-    ]
+  "self_evaluation_criteria": {
+    "listening_comprehension": "Listens attentively to spoken word problems and peer mathematical explanations in Chapter 7 (Shapes and Patterns).",
+    "speaking_presentation": "Explains solution steps, terminology, and visual models clearly for Chapter 7 concepts.",
+    "reading_comprehension": "Interprets text problems, tables, diagrams, and rules accurately in Chapter 7.",
+    "writing_problem_solving": "Executes multi-step calculations, documents clean work, and includes correct units for Chapter 7 problems."
   },
+  "portfolio_log_template": {
+    "project_title": "Seamless Floor Tessellations & 3D Polyhedron Construction",
+    "activity_summary": "Designed gapless tiling patterns using regular polygons, cut 7-piece tangram shapes, folded 3D cube nets, and verified Euler's Polyhedron Formula.",
+    "self_rating_stars": 5,
+    "reflective_takeaway": "Shapes tessellate seamlessly only when their vertex angles meet to form exactly 360 degrees with no gaps or overlaps!",
+    "artifact_showcase_type": "Student Project Worksheet / Photo / Diagram Grid"
+  },
+  "chapter_badge_milestone": {
+    "badge_id": "BADGE_07",
+    "badge_name": "Tessellation Master",
+    "earning_status": "Mastered / Badge Unlocked",
+    "milestone_criteria": "Design gapless floor tile tessellations, fold 3D solid nets, and verify Euler's formula (F + V - E = 2) in Chapter 7."
+  },
+  "learning_outcome_checklist": [
+    "Master core concepts: Tessellations (tiling) without gaps or overlaps, Polygons: regular vs irregular, triangles, quadrilaterals (rhombus, kite, parallelogram)",
+    "Demonstrate key competencies: Identifying tessellating shapes based on vertex angle properties, Folding 2D flat nets into 3D solid polyhedra",
+    "Identify and avoid common misconceptions: Thinking all regular polygons tessellate (e.g., regular pentagons do not tessellate alone), Confusing 2D perimeter with 3D edge counts",
+    "Complete all Section A-D Question Bank assessments for Chapter 7."
+  ],
   "image_asset": {
-    "asset_id": "IMG_CH07",
-    "filename": "ch07_gilli_danda_play_mechanics.png",
-    "asset_url": "/assets/images/ch07_gilli_danda_play_mechanics.png",
-    "title": "Indigenous Game Mechanics Diagram (Gilli Danda)",
+    "chapter_number": 7,
+    "image_id": "ch07_tessellations_nets",
+    "file_name": "ch07_tessellations_nets.png",
+    "local_url": "/assets/images/ch07_tessellations_nets.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 2400,
-      "height": 1350
-    },
-    "alt_text": "Technical diagram showing hand-carved gilli peg, danda striking stick, pit pivot, and field geometry.",
+    "title": "Surface Tessellations & Unfolded 3D Polyhedron Nets",
+    "description": "Seamless tiling tessellation vertex angle rules (360°) and unfolded 6-face cube net with Euler formula F+V-E=2.",
     "hotspots": [
       {
-        "id": "hs_07_gilli",
-        "label": "Tapered Gilli",
-        "x_percent": 30.0,
-        "y_percent": 70.0,
-        "w_percent": 10.0,
-        "h_percent": 12.0,
-        "tooltip": "Small oval wooden peg tapered at both pointed ends"
+        "label": "Tessellation 360 deg Vertex Fit",
+        "x_percent": 25.0,
+        "y_percent": 45.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0
       },
       {
-        "id": "hs_07_danda",
-        "label": "Striking Danda",
-        "x_percent": 50.0,
-        "y_percent": 55.0,
-        "w_percent": 15.0,
-        "h_percent": 15.0,
-        "tooltip": "Longer cylindrical wooden bat used for flicking & hitting"
-      },
-      {
-        "id": "hs_07_pit",
-        "label": "Ground Pit (Gutti)",
-        "x_percent": 20.0,
-        "y_percent": 85.0,
-        "w_percent": 12.0,
-        "h_percent": 10.0,
-        "tooltip": "Shallow earth excavation where gilli is positioned"
-      },
-      {
-        "id": "hs_07_field",
-        "label": "Outfield Catchers",
-        "x_percent": 80.0,
-        "y_percent": 40.0,
-        "w_percent": 15.0,
-        "h_percent": 20.0,
-        "tooltip": "Fielders positioned to catch mid-air gilli or measure distance"
+        "label": "3D Unfolded Cube Net",
+        "x_percent": 70.0,
+        "y_percent": 45.0,
+        "w_percent": 22.0,
+        "h_percent": 30.0
       }
     ]
   }

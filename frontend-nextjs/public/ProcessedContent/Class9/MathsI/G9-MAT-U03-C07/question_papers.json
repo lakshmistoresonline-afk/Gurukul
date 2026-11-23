@@ -1,565 +1,568 @@
 {
   "chapter_number": 7,
-  "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
-  "image_asset": {
-    "local_url": "/assets/images/ch7_probability_tree.png",
-    "title": "Tree diagram for 2-coin tosses and geometric probability target board."
-  },
+  "chapter_title": "Elections and Representation",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - Probability, Sample Spaces & Geometric Chance",
+      "paper_title": "Set 1 - Chapter 7 Practice Paper",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 7 Set 1.",
-        "diagram_url": "/assets/images/ch7_probability_tree.png",
-        "hotspots": [
-          {
-            "id": "hs_tree_branches",
-            "label": "Coin Tree Branches",
-            "x_percent": 30.0,
-            "y_percent": 45.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
-          },
-          {
-            "id": "hs_target_circle",
-            "label": "Geometric Target Ring",
-            "x_percent": 75.0,
-            "y_percent": 45.0,
-            "w_percent": 18.0,
-            "h_percent": 18.0,
-            "tooltip": "Ratio of target circle area to enclosing square board area."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Which value CANNOT represent the probability of an event?",
+              "question_text": "Which core concept is central to the discussion in Section 1 of Elections and Representation?",
               "options": [
-                "A) 0.0",
-                "B) 2/3",
-                "C) -1.5",
-                "D) 15%"
+                "A) First-Past-The-Post (FPTP)",
+                "B) Universal Adult Suffrage",
+                "C) Irrelevant Factor",
+                "D) Random Option"
               ],
-              "correct_answer": "C) -1.5",
+              "correct_answer": "A) First-Past-The-Post (FPTP)",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "question_text": "What is the minimum voting age for Indian citizens as per Article 326?",
               "options": [
-                "A) 0.35",
-                "B) 0.65",
-                "C) 1.35",
-                "D) 0.0"
+                "A) 16 years",
+                "B) 18 years",
+                "C) 21 years",
+                "D) 25 years"
               ],
-              "correct_answer": "B) 0.65",
+              "correct_answer": "B) 18 years",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "According to Chapter 7, which factor plays a vital role in shaping societal or natural structures?",
+              "options": [
+                "A) Scientific evidence and systematic processes",
+                "B) Unverified assumptions",
+                "C) Arbitrary choices",
+                "D) Static non-changing forces"
+              ],
+              "correct_answer": "A) Scientific evidence and systematic processes",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
-            {
-              "question_number": 3,
-              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
-              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
-              "marks": 2
-            },
             {
               "question_number": 4,
-              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
-              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
+              "question_text": "Explain the role of VVPAT in electronic voting.",
+              "marking_scheme_answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent verification printer attached to EVMs. When a voter casts a vote, VVPAT generates a paper slip displaying candidate name, serial number, and symbol for 7 seconds, allowing physical audit trail verification during disputes. Key points: Verification mechanism for EVM, Displays candidate name/symbol for 7 seconds, Enables physical audit trail during dispute",
+              "marks": 3
+            },
             {
               "question_number": 5,
-              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
-              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "question_text": "What steps does the Election Commission take to ensure free and fair elections?",
+              "marking_scheme_answer": "1) Enforces Model Code of Conduct to prevent misuse of government machinery. 2) Appoints independent election observers. 3) Mandates VVPAT-EVM auditing. 4) Sets candidate expenditure limits. 5) Deploys central security forces at polling booths to prevent booth-capturing.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 6,
-              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
-              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "question_text": "Critically analyze the advantages and limitations of the First-Past-The-Post (FPTP) system in India.",
+              "marking_scheme_answer": "Advantages: 1) Simple for ordinary voters to understand. 2) Gives voters a clear choice of individual local candidate. 3) Promotes stable parliamentary majorities. Limitations: 1) A party can win a majority of seats with less than 50% total vote share. 2) Smaller localized parties or minorities may be underrepresented unless concentrated in specific pockets. 3) Votes cast for losing candidates produce 'wasted votes'.",
+              "marks": 5
+            },
+            {
+              "question_number": 7,
+              "question_text": "Source Passage (Article 324 empowers ECI with superintendence and control ov...): Why is constitutional independence essential for the Election Commission?",
+              "marking_scheme_answer": "Independence ensures ECI can act impartially without executive government pressure or political interference.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A dartboard is a square of side 20 cm containing a target circle of radius 7 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
-              "marking_scheme_answer": "(i) Square Area = 400 sq cm. Circle Area = (22/7)*(7)^2 = 154 sq cm.\n(ii) P(Hit) = 154 / 400 = 154/400 = 77/200 = 0.385.",
-              "marks": 4
+              "question_number": 8,
+              "question_text": "Read the scenario and answer the question:\n'During an election campaign, a sitting minister uses official government vehicles to attend political party rallies and announces a new government housing scheme after election dates are notified.'\n\nQuestion: Identify the election violation and state the action ECI can take.",
+              "marking_scheme_answer": "Violation of Model Code of Conduct (MCC) prohibiting misuse of official state resources and policy announcements post-notification. ECI can issue show-cause notices, halt the scheme, or ban the candidate from campaigning.",
+              "marks": 6
             }
           ]
         }
-      ]
+      ],
+      "timer_minutes": 45,
+      "split_screen_case_viewport": {
+        "case_study_title": "Chapter 7 Source Reading & Applied Scenario",
+        "source_text_excerpt": "Excerpt from Class 9 Social Science textbook chapter 'Elections and Representation'. Analyze data and evidence carefully."
+      },
+      "teacher_rubric_overlay": {
+        "accuracy_score": 5,
+        "conceptual_depth": 5,
+        "evidence_citation": 5
+      }
     },
     {
       "paper_id": 2,
-      "paper_title": "Set 2 - Probability, Sample Spaces & Geometric Chance",
+      "paper_title": "Set 2 - Chapter 7 Practice Paper",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 7 Set 2.",
-        "diagram_url": "/assets/images/ch7_probability_tree.png",
-        "hotspots": [
-          {
-            "id": "hs_tree_branches",
-            "label": "Coin Tree Branches",
-            "x_percent": 30.0,
-            "y_percent": 45.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
-          },
-          {
-            "id": "hs_target_circle",
-            "label": "Geometric Target Ring",
-            "x_percent": 75.0,
-            "y_percent": 45.0,
-            "w_percent": 18.0,
-            "h_percent": 18.0,
-            "tooltip": "Ratio of target circle area to enclosing square board area."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Which value CANNOT represent the probability of an event?",
+              "question_text": "In the study of Elections and Representation, what does the term 'Universal Adult Suffrage' refer to?",
               "options": [
-                "A) 0.0",
-                "B) 2/3",
-                "C) -1.5",
-                "D) 15%"
+                "A) The right of all adult citizens to vote in elections regardless of wealth, income, gender, social status, or ethnicity.",
+                "B) An unrelated atmospheric layer",
+                "C) An ancient coin system",
+                "D) A modern tax policy"
               ],
-              "correct_answer": "C) -1.5",
+              "correct_answer": "A) The right of all adult citizens to vote in elections regardless of wealth, income, gender, social status, or ethnicity.",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "question_text": "Which statement accurately describes key mechanisms detailed in Chapter 7?",
               "options": [
-                "A) 0.35",
-                "B) 0.65",
-                "C) 1.35",
-                "D) 0.0"
+                "A) Mechanisms operate deterministically based on physical/social laws",
+                "B) Processes occur without cause",
+                "C) Systems are entirely static",
+                "D) Historical events have no modern influence"
               ],
-              "correct_answer": "B) 0.65",
+              "correct_answer": "A) Mechanisms operate deterministically based on physical/social laws",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "What is a key analytical distinction highlighted in Chapter 7?",
+              "options": [
+                "A) Distinguishing underlying causes from immediate effects",
+                "B) Ignoring empirical data",
+                "C) Relying solely on single perspectives",
+                "D) Eliminating historical background"
+              ],
+              "correct_answer": "A) Distinguishing underlying causes from immediate effects",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
-            {
-              "question_number": 3,
-              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
-              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
-              "marks": 2
-            },
             {
               "question_number": 4,
-              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
-              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
+              "question_text": "Explain the role of VVPAT in electronic voting.",
+              "marking_scheme_answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent verification printer attached to EVMs. When a voter casts a vote, VVPAT generates a paper slip displaying candidate name, serial number, and symbol for 7 seconds, allowing physical audit trail verification during disputes. Key points: Verification mechanism for EVM, Displays candidate name/symbol for 7 seconds, Enables physical audit trail during dispute",
+              "marks": 3
+            },
             {
               "question_number": 5,
-              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
-              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "question_text": "What steps does the Election Commission take to ensure free and fair elections?",
+              "marking_scheme_answer": "1) Enforces Model Code of Conduct to prevent misuse of government machinery. 2) Appoints independent election observers. 3) Mandates VVPAT-EVM auditing. 4) Sets candidate expenditure limits. 5) Deploys central security forces at polling booths to prevent booth-capturing.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 6,
-              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
-              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "question_text": "Critically analyze the advantages and limitations of the First-Past-The-Post (FPTP) system in India.",
+              "marking_scheme_answer": "Advantages: 1) Simple for ordinary voters to understand. 2) Gives voters a clear choice of individual local candidate. 3) Promotes stable parliamentary majorities. Limitations: 1) A party can win a majority of seats with less than 50% total vote share. 2) Smaller localized parties or minorities may be underrepresented unless concentrated in specific pockets. 3) Votes cast for losing candidates produce 'wasted votes'.",
+              "marks": 5
+            },
+            {
+              "question_number": 7,
+              "question_text": "Source Passage (Article 324 empowers ECI with superintendence and control ov...): Why is constitutional independence essential for the Election Commission?",
+              "marking_scheme_answer": "Independence ensures ECI can act impartially without executive government pressure or political interference.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A dartboard is a square of side 40 cm containing a target circle of radius 14 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
-              "marking_scheme_answer": "(i) Square Area = 1600 sq cm. Circle Area = (22/7)*(14)^2 = 616 sq cm.\n(ii) P(Hit) = 616 / 1600 = 154/400 = 77/200 = 0.385.",
-              "marks": 4
+              "question_number": 8,
+              "question_text": "Read the scenario and answer the question:\n'During an election campaign, a sitting minister uses official government vehicles to attend political party rallies and announces a new government housing scheme after election dates are notified.'\n\nQuestion: Identify the election violation and state the action ECI can take.",
+              "marking_scheme_answer": "Violation of Model Code of Conduct (MCC) prohibiting misuse of official state resources and policy announcements post-notification. ECI can issue show-cause notices, halt the scheme, or ban the candidate from campaigning.",
+              "marks": 6
             }
           ]
         }
-      ]
+      ],
+      "timer_minutes": 45,
+      "split_screen_case_viewport": {
+        "case_study_title": "Chapter 7 Source Reading & Applied Scenario",
+        "source_text_excerpt": "Excerpt from Class 9 Social Science textbook chapter 'Elections and Representation'. Analyze data and evidence carefully."
+      },
+      "teacher_rubric_overlay": {
+        "accuracy_score": 5,
+        "conceptual_depth": 5,
+        "evidence_citation": 5
+      }
     },
     {
       "paper_id": 3,
-      "paper_title": "Set 3 - Probability, Sample Spaces & Geometric Chance",
+      "paper_title": "Set 3 - Chapter 7 Practice Paper",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 7 Set 3.",
-        "diagram_url": "/assets/images/ch7_probability_tree.png",
-        "hotspots": [
-          {
-            "id": "hs_tree_branches",
-            "label": "Coin Tree Branches",
-            "x_percent": 30.0,
-            "y_percent": 45.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
-          },
-          {
-            "id": "hs_target_circle",
-            "label": "Geometric Target Ring",
-            "x_percent": 75.0,
-            "y_percent": 45.0,
-            "w_percent": 18.0,
-            "h_percent": 18.0,
-            "tooltip": "Ratio of target circle area to enclosing square board area."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Which value CANNOT represent the probability of an event?",
+              "question_text": "Which institution or phenomenon is analyzed in Chapter 7 (Elections and Representation)?",
               "options": [
-                "A) 0.0",
-                "B) 2/3",
-                "C) -1.5",
-                "D) 15%"
+                "A) 7.1 Electoral Framework and Universal Adult Suffrage",
+                "B) Industrial chemistry",
+                "C) Stellar fusion",
+                "D) Quantum mechanics"
               ],
-              "correct_answer": "C) -1.5",
+              "correct_answer": "A) 7.1 Electoral Framework and Universal Adult Suffrage",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "question_text": "In Chapter 7, how are empirical findings validated?",
               "options": [
-                "A) 0.35",
-                "B) 0.65",
-                "C) 1.35",
-                "D) 0.0"
+                "A) Through cross-verification of evidence and comparative analysis",
+                "B) Through single unverified claims",
+                "C) By ignoring historical records",
+                "D) Via arbitrary decree"
               ],
-              "correct_answer": "B) 0.65",
+              "correct_answer": "A) Through cross-verification of evidence and comparative analysis",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which key term in Chapter 7 corresponds to 'FPTP Plurality Determination Rule'?",
+              "options": [
+                "A) Winning Candidate = Max(Votes_1, Votes_2, ..., Votes_n)",
+                "B) Incorrect definition",
+                "C) Irrelevant concept",
+                "D) Secondary variable"
+              ],
+              "correct_answer": "A) Winning Candidate = Max(Votes_1, Votes_2, ..., Votes_n)",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
-            {
-              "question_number": 3,
-              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
-              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
-              "marks": 2
-            },
             {
               "question_number": 4,
-              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
-              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
+              "question_text": "Explain the role of VVPAT in electronic voting.",
+              "marking_scheme_answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent verification printer attached to EVMs. When a voter casts a vote, VVPAT generates a paper slip displaying candidate name, serial number, and symbol for 7 seconds, allowing physical audit trail verification during disputes. Key points: Verification mechanism for EVM, Displays candidate name/symbol for 7 seconds, Enables physical audit trail during dispute",
+              "marks": 3
+            },
             {
               "question_number": 5,
-              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
-              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "question_text": "What steps does the Election Commission take to ensure free and fair elections?",
+              "marking_scheme_answer": "1) Enforces Model Code of Conduct to prevent misuse of government machinery. 2) Appoints independent election observers. 3) Mandates VVPAT-EVM auditing. 4) Sets candidate expenditure limits. 5) Deploys central security forces at polling booths to prevent booth-capturing.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 6,
-              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
-              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "question_text": "Critically analyze the advantages and limitations of the First-Past-The-Post (FPTP) system in India.",
+              "marking_scheme_answer": "Advantages: 1) Simple for ordinary voters to understand. 2) Gives voters a clear choice of individual local candidate. 3) Promotes stable parliamentary majorities. Limitations: 1) A party can win a majority of seats with less than 50% total vote share. 2) Smaller localized parties or minorities may be underrepresented unless concentrated in specific pockets. 3) Votes cast for losing candidates produce 'wasted votes'.",
+              "marks": 5
+            },
+            {
+              "question_number": 7,
+              "question_text": "Source Passage (Article 324 empowers ECI with superintendence and control ov...): Why is constitutional independence essential for the Election Commission?",
+              "marking_scheme_answer": "Independence ensures ECI can act impartially without executive government pressure or political interference.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A dartboard is a square of side 60 cm containing a target circle of radius 21 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
-              "marking_scheme_answer": "(i) Square Area = 3600 sq cm. Circle Area = (22/7)*(21)^2 = 1386 sq cm.\n(ii) P(Hit) = 1386 / 3600 = 154/400 = 77/200 = 0.385.",
-              "marks": 4
+              "question_number": 8,
+              "question_text": "Read the scenario and answer the question:\n'During an election campaign, a sitting minister uses official government vehicles to attend political party rallies and announces a new government housing scheme after election dates are notified.'\n\nQuestion: Identify the election violation and state the action ECI can take.",
+              "marking_scheme_answer": "Violation of Model Code of Conduct (MCC) prohibiting misuse of official state resources and policy announcements post-notification. ECI can issue show-cause notices, halt the scheme, or ban the candidate from campaigning.",
+              "marks": 6
             }
           ]
         }
-      ]
+      ],
+      "timer_minutes": 45,
+      "split_screen_case_viewport": {
+        "case_study_title": "Chapter 7 Source Reading & Applied Scenario",
+        "source_text_excerpt": "Excerpt from Class 9 Social Science textbook chapter 'Elections and Representation'. Analyze data and evidence carefully."
+      },
+      "teacher_rubric_overlay": {
+        "accuracy_score": 5,
+        "conceptual_depth": 5,
+        "evidence_citation": 5
+      }
     },
     {
       "paper_id": 4,
-      "paper_title": "Set 4 - Probability, Sample Spaces & Geometric Chance",
+      "paper_title": "Set 4 - Chapter 7 Practice Paper",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 7 Set 4.",
-        "diagram_url": "/assets/images/ch7_probability_tree.png",
-        "hotspots": [
-          {
-            "id": "hs_tree_branches",
-            "label": "Coin Tree Branches",
-            "x_percent": 30.0,
-            "y_percent": 45.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
-          },
-          {
-            "id": "hs_target_circle",
-            "label": "Geometric Target Ring",
-            "x_percent": 75.0,
-            "y_percent": 45.0,
-            "w_percent": 18.0,
-            "h_percent": 18.0,
-            "tooltip": "Ratio of target circle area to enclosing square board area."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Which value CANNOT represent the probability of an event?",
+              "question_text": "Which of the following best summarizes a primary conclusion of Chapter 7?",
               "options": [
-                "A) 0.0",
-                "B) 2/3",
-                "C) -1.5",
-                "D) 15%"
+                "A) Societal and natural systems evolve dynamically over time",
+                "B) Systems remain completely rigid and unchanged",
+                "C) Physical environment has zero influence on human life",
+                "D) Human actions have no economic or political impact"
               ],
-              "correct_answer": "C) -1.5",
+              "correct_answer": "A) Societal and natural systems evolve dynamically over time",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "question_text": "What role does empirical research play in understanding Elections and Representation?",
               "options": [
-                "A) 0.35",
-                "B) 0.65",
-                "C) 1.35",
-                "D) 0.0"
+                "A) Provides evidence-based grounding for theoretical models",
+                "B) Replaces logical reasoning",
+                "C) Is restricted to natural sciences",
+                "D) Distorts historical facts"
               ],
-              "correct_answer": "B) 0.65",
+              "correct_answer": "A) Provides evidence-based grounding for theoretical models",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Which practical application is derived from Chapter 7?",
+              "options": [
+                "A) Informed civic participation and policy design",
+                "B) Memorization without understanding",
+                "C) Isolation from global events",
+                "D) Rejection of scientific methodology"
+              ],
+              "correct_answer": "A) Informed civic participation and policy design",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
-            {
-              "question_number": 3,
-              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
-              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
-              "marks": 2
-            },
             {
               "question_number": 4,
-              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
-              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
+              "question_text": "Explain the role of VVPAT in electronic voting.",
+              "marking_scheme_answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent verification printer attached to EVMs. When a voter casts a vote, VVPAT generates a paper slip displaying candidate name, serial number, and symbol for 7 seconds, allowing physical audit trail verification during disputes. Key points: Verification mechanism for EVM, Displays candidate name/symbol for 7 seconds, Enables physical audit trail during dispute",
+              "marks": 3
+            },
             {
               "question_number": 5,
-              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
-              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "question_text": "What steps does the Election Commission take to ensure free and fair elections?",
+              "marking_scheme_answer": "1) Enforces Model Code of Conduct to prevent misuse of government machinery. 2) Appoints independent election observers. 3) Mandates VVPAT-EVM auditing. 4) Sets candidate expenditure limits. 5) Deploys central security forces at polling booths to prevent booth-capturing.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 6,
-              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
-              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "question_text": "Critically analyze the advantages and limitations of the First-Past-The-Post (FPTP) system in India.",
+              "marking_scheme_answer": "Advantages: 1) Simple for ordinary voters to understand. 2) Gives voters a clear choice of individual local candidate. 3) Promotes stable parliamentary majorities. Limitations: 1) A party can win a majority of seats with less than 50% total vote share. 2) Smaller localized parties or minorities may be underrepresented unless concentrated in specific pockets. 3) Votes cast for losing candidates produce 'wasted votes'.",
+              "marks": 5
+            },
+            {
+              "question_number": 7,
+              "question_text": "Source Passage (Article 324 empowers ECI with superintendence and control ov...): Why is constitutional independence essential for the Election Commission?",
+              "marking_scheme_answer": "Independence ensures ECI can act impartially without executive government pressure or political interference.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A dartboard is a square of side 80 cm containing a target circle of radius 28 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
-              "marking_scheme_answer": "(i) Square Area = 6400 sq cm. Circle Area = (22/7)*(28)^2 = 2464 sq cm.\n(ii) P(Hit) = 2464 / 6400 = 154/400 = 77/200 = 0.385.",
-              "marks": 4
+              "question_number": 8,
+              "question_text": "Read the scenario and answer the question:\n'During an election campaign, a sitting minister uses official government vehicles to attend political party rallies and announces a new government housing scheme after election dates are notified.'\n\nQuestion: Identify the election violation and state the action ECI can take.",
+              "marking_scheme_answer": "Violation of Model Code of Conduct (MCC) prohibiting misuse of official state resources and policy announcements post-notification. ECI can issue show-cause notices, halt the scheme, or ban the candidate from campaigning.",
+              "marks": 6
             }
           ]
         }
-      ]
+      ],
+      "timer_minutes": 45,
+      "split_screen_case_viewport": {
+        "case_study_title": "Chapter 7 Source Reading & Applied Scenario",
+        "source_text_excerpt": "Excerpt from Class 9 Social Science textbook chapter 'Elections and Representation'. Analyze data and evidence carefully."
+      },
+      "teacher_rubric_overlay": {
+        "accuracy_score": 5,
+        "conceptual_depth": 5,
+        "evidence_citation": 5
+      }
     },
     {
       "paper_id": 5,
-      "paper_title": "Set 5 - Probability, Sample Spaces & Geometric Chance",
+      "paper_title": "Set 5 - Chapter 7 Practice Paper",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 7 Set 5.",
-        "diagram_url": "/assets/images/ch7_probability_tree.png",
-        "hotspots": [
-          {
-            "id": "hs_tree_branches",
-            "label": "Coin Tree Branches",
-            "x_percent": 30.0,
-            "y_percent": 45.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Branching paths representing sample space outcomes {HH, HT, TH, TT}."
-          },
-          {
-            "id": "hs_target_circle",
-            "label": "Geometric Target Ring",
-            "x_percent": 75.0,
-            "y_percent": 45.0,
-            "w_percent": 18.0,
-            "h_percent": 18.0,
-            "tooltip": "Ratio of target circle area to enclosing square board area."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Which value CANNOT represent the probability of an event?",
+              "question_text": "In Chapter 7, what is the significance of studying Elections and Representation?",
               "options": [
-                "A) 0.0",
-                "B) 2/3",
-                "C) -1.5",
-                "D) 15%"
+                "A) It equips learners with analytical tools for critical understanding",
+                "B) It provides fictional stories",
+                "C) It focuses exclusively on isolated dates",
+                "D) It discourages questioning"
               ],
-              "correct_answer": "C) -1.5",
+              "correct_answer": "A) It equips learners with analytical tools for critical understanding",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If P(E) = 0.35, then probability of complementary event P(not E) is:",
+              "question_text": "Which major principle is demonstrated throughout Chapter 7?",
               "options": [
-                "A) 0.35",
-                "B) 0.65",
-                "C) 1.35",
-                "D) 0.0"
+                "A) Interconnectedness of cause, structure, and human impact",
+                "B) Complete independence of all social phenomena",
+                "C) Randomness of historical events",
+                "D) Static nature of economic markets"
               ],
-              "correct_answer": "B) 0.65",
+              "correct_answer": "A) Interconnectedness of cause, structure, and human impact",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "How does Chapter 7 contribute to broader social science learning?",
+              "options": [
+                "A) By integrating theoretical principles with real-world applications",
+                "B) By presenting unverified assertions",
+                "C) By avoiding practical case studies",
+                "D) By focusing on single isolated facts"
+              ],
+              "correct_answer": "A) By integrating theoretical principles with real-world applications",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
-            {
-              "question_number": 3,
-              "question_text": "A card is drawn from a standard deck of 52 cards. Find probability of drawing (i) a face card, (ii) a red Ace.",
-              "marking_scheme_answer": "(i) P(Face card) = 12/52 = 3/13.\n(ii) P(Red Ace) = 2/52 = 1/26.",
-              "marks": 2
-            },
             {
               "question_number": 4,
-              "question_text": "Two fair coins are tossed simultaneously. Find probability of getting at most 1 head.",
-              "marking_scheme_answer": "Sample space S = {HH, HT, TH, TT}, n(S) = 4.\nAt most 1 head = {HT, TH, TT}, n(E) = 3.\nP(E) = 3/4.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
+              "question_text": "Explain the role of VVPAT in electronic voting.",
+              "marking_scheme_answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent verification printer attached to EVMs. When a voter casts a vote, VVPAT generates a paper slip displaying candidate name, serial number, and symbol for 7 seconds, allowing physical audit trail verification during disputes. Key points: Verification mechanism for EVM, Displays candidate name/symbol for 7 seconds, Enables physical audit trail during dispute",
+              "marks": 3
+            },
             {
               "question_number": 5,
-              "question_text": "A bag contains 5 red, 8 white, and 7 black balls. A ball is drawn at random. Find P(Red), P(White), and P(Not Black).",
-              "marking_scheme_answer": "Total balls = 5 + 8 + 7 = 20.\n1. P(Red) = 5/20 = 1/4.\n2. P(White) = 8/20 = 2/5.\n3. P(Not Black) = (5+8)/20 = 13/20.",
+              "question_text": "What steps does the Election Commission take to ensure free and fair elections?",
+              "marking_scheme_answer": "1) Enforces Model Code of Conduct to prevent misuse of government machinery. 2) Appoints independent election observers. 3) Mandates VVPAT-EVM auditing. 4) Sets candidate expenditure limits. 5) Deploys central security forces at polling booths to prevent booth-capturing.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 6,
-              "question_text": "Two unbiased dice are rolled together. Find probability that: (a) Sum is 8, (b) Sum is a prime number, (c) Doublets appear.",
-              "marking_scheme_answer": "Total n(S) = 36.\n(a) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36.\n(b) Prime sums (2,3,5,7,11) => 15 outcomes => 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6/36 = 1/6.",
+              "question_text": "Critically analyze the advantages and limitations of the First-Past-The-Post (FPTP) system in India.",
+              "marking_scheme_answer": "Advantages: 1) Simple for ordinary voters to understand. 2) Gives voters a clear choice of individual local candidate. 3) Promotes stable parliamentary majorities. Limitations: 1) A party can win a majority of seats with less than 50% total vote share. 2) Smaller localized parties or minorities may be underrepresented unless concentrated in specific pockets. 3) Votes cast for losing candidates produce 'wasted votes'.",
+              "marks": 5
+            },
+            {
+              "question_number": 7,
+              "question_text": "Source Passage (Article 324 empowers ECI with superintendence and control ov...): Why is constitutional independence essential for the Election Commission?",
+              "marking_scheme_answer": "Independence ensures ECI can act impartially without executive government pressure or political interference.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A dartboard is a square of side 100 cm containing a target circle of radius 35 cm.\n(i) Calculate square area and circle target area. (2 Marks)\n(ii) Calculate geometric probability of hitting target circle. (2 Marks)",
-              "marking_scheme_answer": "(i) Square Area = 10000 sq cm. Circle Area = (22/7)*(35)^2 = 3850 sq cm.\n(ii) P(Hit) = 3850 / 10000 = 154/400 = 77/200 = 0.385.",
-              "marks": 4
+              "question_number": 8,
+              "question_text": "Read the scenario and answer the question:\n'During an election campaign, a sitting minister uses official government vehicles to attend political party rallies and announces a new government housing scheme after election dates are notified.'\n\nQuestion: Identify the election violation and state the action ECI can take.",
+              "marking_scheme_answer": "Violation of Model Code of Conduct (MCC) prohibiting misuse of official state resources and policy announcements post-notification. ECI can issue show-cause notices, halt the scheme, or ban the candidate from campaigning.",
+              "marks": 6
             }
           ]
         }
-      ]
+      ],
+      "timer_minutes": 45,
+      "split_screen_case_viewport": {
+        "case_study_title": "Chapter 7 Source Reading & Applied Scenario",
+        "source_text_excerpt": "Excerpt from Class 9 Social Science textbook chapter 'Elections and Representation'. Analyze data and evidence carefully."
+      },
+      "teacher_rubric_overlay": {
+        "accuracy_score": 5,
+        "conceptual_depth": 5,
+        "evidence_citation": 5
+      }
     }
-  ]
+  ],
+  "image_asset": {
+    "asset_id": "img_ch7",
+    "chapter_number": 7,
+    "filename": "ch7_electoral_process_fptp.png",
+    "local_url": "/assets/images/ch7_electoral_process_fptp.png",
+    "title": "Indian Electoral Machinery & EVM-VVPAT System",
+    "description": "Sequential flowchart of election stages from ECI notification to EVM voting and FPTP results",
+    "dimensions": {
+      "width": 1600,
+      "height": 900,
+      "aspect_ratio": "16:9"
+    },
+    "hotspots": [
+      {
+        "hotspot_id": "hs_ch7_notif",
+        "x_percent": 5,
+        "y_percent": 45,
+        "w_percent": 16,
+        "h_percent": 30,
+        "label": "Notification & MCC",
+        "description": "ECI issues election schedule; Model Code of Conduct takes instant effect"
+      },
+      {
+        "hotspot_id": "hs_ch7_evm",
+        "x_percent": 59,
+        "y_percent": 45,
+        "w_percent": 16,
+        "h_percent": 30,
+        "label": "EVM & VVPAT Voting",
+        "description": "Voter presses EVM button; 7-second paper VVPAT slip confirms choice"
+      },
+      {
+        "hotspot_id": "hs_ch7_fptp",
+        "x_percent": 77,
+        "y_percent": 45,
+        "w_percent": 16,
+        "h_percent": 30,
+        "label": "FPTP Plurality Determination",
+        "description": "Candidate with highest vote count in single-member constituency wins"
+      }
+    ]
+  }
 }

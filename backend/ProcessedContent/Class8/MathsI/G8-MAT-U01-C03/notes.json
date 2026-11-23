@@ -1,199 +1,131 @@
 {
   "chapter_number": 3,
-  "chapter_title": "A Story of Numbers",
-  "unit_or_theme": "History and Evolution of Mathematics",
-  "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter traces the historical development of counting systems, landmark numbers, base systems (Egyptian base-10, Mesopotamian base-60, Mayan base-20), and the revolution of the Hindu-Arabic place-value decimal system with zero.",
-    "detailed_section_hierarchy": [
-      {
-        "section_number_title": "3.1 Counting and Landmark Numbers",
-        "full_explanation": "Early humans counted using tally marks, pebbles, and body parts. Grouping evolved into landmark numbers like Roman I, V, X, L, C, D, M.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Historical Note",
-            "box_title": "Egyptian Hieroglyphic Numerals",
-            "full_content": "Egyptians used powers of 10 as landmark numbers (single stroke = 1, heel bone = 10, coiled rope = 100, lotus = 1000)."
-          }
-        ]
-      },
-      {
-        "section_number_title": "3.2 Base-n and Place Value Systems",
-        "full_explanation": "A base-n system uses powers of n (n^0, n^1, n^2...) as landmark numbers. Place value systems use positional notation so a digit's value depends on its place.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Concept Box",
-            "box_title": "The Role of Zero",
-            "full_content": "The Hindu decimal system introduced '0' both as a positional digit and as a distinct number, enabling compact representation."
-          }
-        ]
-      }
-    ]
-  },
-  "m2_key_definitions_formulas_and_vocabulary": {
-    "glossary_and_key_terms": [
-      {
-        "term": "Numeral",
-        "definition": "A symbol or group of symbols used to represent a number.",
-        "contextual_example_or_usage": "0, 1, 5, 36 are numerals in the decimal system.",
-        "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "Place Value System",
-        "definition": "A number system in which the position of a digit determines its value.",
-        "contextual_example_or_usage": "In 375, '3' represents 300 because of its hundreds place.",
-        "associated_units_or_parts_of_speech": "Noun"
-      }
-    ],
-    "formulas_rules_and_laws": [
-      {
-        "name": "Base-n General Expansion",
-        "statement_or_expression": "Value = d_k * n^k + ... + d_1 * n^1 + d_0 * n^0",
-        "variable_definitions": "n = base, d_i = digits in position i",
-        "model_application_example": "In Base 10, 375 = 3*10^2 + 7*10^1 + 5*10^0"
-      }
-    ]
-  },
-  "m3_practical_activities_lab_and_step_by_step_procedures": [
+  "chapter_title": "A Journey Through Indian Architecture",
+  "detailed_sections": [
     {
-      "activity_or_procedure_title": "Constructing a Base-5 Number System",
-      "objective_or_aim": "Represent numbers using Base 5 landmark numbers (1, 5, 25, 125).",
-      "materials_or_prerequisites": [
-        "Counters / Pebbles"
-      ],
-      "step_by_step_procedure": [
-        "Step 1: Collect 1s until reaching 5.",
-        "Step 2: Group 5 ones into one 5-counter.",
-        "Step 3: Group 5 five-counters into one 25-counter.",
-        "Step 4: Express numbers as combinations of 25s, 5s, and 1s."
-      ],
-      "expected_observations_or_working": "Adding in Base-5 requires carrying over every 5 units.",
-      "scientific_or_logical_conclusion": "Base-n systems allow uniform regrouping rules."
+      "section_number_and_title": "3.1 Ancient Foundations: Rock-Cut Caves and Stupas",
+      "full_notes": "Early Indian architecture carved entire monolithic temples out of living rock (Ajanta, Ellora Kailash Temple). Stupas like Sanchi served as sacred Buddhist relic mounds enclosed by ornate gateways (Toranas).",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Architectural Terms",
+          "title": "Garbhagṛiha",
+          "content": "The innermost sacred sanctum housing the main deity in a temple, symbolizing the cosmic center."
+        }
+      ]
+    },
+    {
+      "section_number_and_title": "3.2 Hydraulic Architecture and Synthesis",
+      "full_notes": "Indian builders excels at water conservation structures like stepwells (Baolis / Rani ki Vav) and Vijayanagara aqueducts. Later medieval monuments combined Islamic arches and domes with Hindu stone-carving traditions, giving rise to Indo-Saracenic colonial styles.",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Heritage Spotlight",
+          "title": "Rani ki Vav",
+          "content": "An exquisite 11th-century subterranean stepwell in Patan, Gujarat, built as an inverted underground temple dedicated to water preservation."
+        }
+      ]
     }
   ],
-  "m4_diagrams_tables_and_visual_data": {
-    "diagrams_and_illustrations": [
-      {
-        "figure_title": "Ancient Civilization World Map",
-        "labels_to_learn": [
-          "Egyptian",
-          "Mesopotamian",
-          "Mayan",
-          "Chinese",
-          "Indus Valley / India"
-        ],
-        "drawing_or_labeling_instructions": "Map showing ancient civilization centers and their number bases.",
-        "key_structural_details": "Highlights global diversity in early mathematical development."
-      }
-    ],
-    "tables_and_charts": [
-      {
-        "table_title": "Historical Number Systems Comparison",
-        "headers": [
-          "Civilization",
-          "Base",
-          "Place Value (Y/N)",
-          "Symbol for Zero"
-        ],
-        "rows": [
-          [
-            "Egyptian",
-            "10",
-            "No",
-            "No"
-          ],
-          [
-            "Mesopotamian",
-            "60",
-            "Yes",
-            "Late / Partial"
-          ],
-          [
-            "Mayan",
-            "20",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "Hindu (Indian)",
-            "10",
-            "Yes",
-            "Yes"
-          ]
-        ]
-      }
-    ]
-  },
-  "m5_textbook_solutions_and_extracts": {
-    "end_of_chapter_textbook_solutions": [
-      {
-        "exercise_section": "3.3 Figure it Out",
-        "question_number": "Q3",
-        "question_text": "Identify features of the Hindu system that make it efficient compared to Roman numerals.",
-        "complete_step_by_step_solution": "1. Positional place value reduces symbol count. 2. Uses base 10 powers uniformly. 3. Digit 0 serves as place holder. 4. Simplifies multi-digit arithmetic operations."
-      }
-    ],
-    "extract_or_passage_based_questions": [
-      {
-        "extract_id": 1,
-        "passage_or_source_text": "Ancient Mesopotamia used a base-60 sexagesimal system with place value...",
-        "questions_and_answers": [
-          {
-            "question": "Where does base 60 persist in modern life?",
-            "answer": "In measuring time (60 seconds per minute, 60 minutes per hour) and angles (360 degrees in a circle)."
-          }
-        ]
-      }
-    ]
-  },
-  "m6_tiered_exam_question_bank": {
-    "level_1_objective_questions_1_mark": [
-      {
-        "type": "MCQ",
-        "question": "What is the base of the sexagesimal number system?",
-        "options": [
-          "10",
-          "12",
-          "20",
-          "60"
-        ],
-        "correct_answer": "60",
-        "brief_explanation": "Sexagesimal system developed in ancient Mesopotamia uses base 60."
-      }
-    ],
-    "level_2_short_answer_questions_2_to_3_marks": [
-      {
-        "question": "Explain why Roman numerals are inefficient for large calculations.",
-        "model_answer": "Roman numerals lack a place value system and a zero digit. Every power of 10 requires new symbols (I, X, C, M), making long multiplication and division extremely cumbersome.",
-        "key_marking_points": [
-          "Lack of place value",
-          "Absence of zero symbol",
-          "Difficulty in algorithmic computation"
-        ]
-      }
-    ],
-    "level_3_long_answer_and_reasoning_5_marks": [
-      {
-        "question": "Describe the 5 major evolutionary stages of number representation in human history.",
-        "model_answer": "1. One-to-one tally counting using physical objects/marks. 2. Grouping using landmark numbers (e.g. V, X). 3. Choosing uniform powers of a number as base (e.g. powers of 10). 4. Using positional place value to denote landmark numbers. 5. Invention of 0 as a positional digit and standalone number."
-      }
-    ],
-    "level_4_competency_and_case_studies": [
-      {
-        "case_scenario": "A student converts the Base-10 number 23 into a Base-5 system.",
-        "questions_and_answers": [
-          {
-            "question": "What is 23 in Base 5?",
-            "answer": "23 = 4 * 5^1 + 3 * 5^0 = (43)_5."
-          }
-        ]
-      }
-    ]
-  },
-  "m7_common_pitfalls_and_misconceptions": [
+  "comparison_tables": [
     {
-      "frequent_student_error": "Confusing digit value with place value.",
-      "root_cause": "Not distinguishing between intrinsic value of a digit and its positional weight.",
-      "correct_approach": "Use expanded notation (e.g. 700 = 7 x 10^2) to show position weight."
+      "table_title": "Evolution of Major Indian Architectural Styles",
+      "headers": [
+        "Era / Style",
+        "Key Features",
+        "Representative Examples"
+      ],
+      "rows": [
+        [
+          "Rock-Cut Caves",
+          "Carved top-down directly from basalt cliffs",
+          "Ajanta, Ellora Caves"
+        ],
+        [
+          "Nagara Style",
+          "Curvilinear spires, elevated plinths",
+          "Sun Temple Konark, Khajuraho"
+        ],
+        [
+          "Dravida Style",
+          "Pyramidal Vimana, tall gateway towers (Gopurams)",
+          "Brihadishvara Temple Thanjavur"
+        ],
+        [
+          "Indo-Islamic",
+          "True arches, domes, minarets, lattice jali work",
+          "Sidi Saiyyed Mosque, Taj Mahal"
+        ]
+      ]
     }
-  ]
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "DLG_CH3_01",
+      "title": "Master Educator & Student Discussion on A Journey Through Indian Architecture",
+      "transcript": [
+        {
+          "speaker": "Master Educator",
+          "speech_text": "Welcome! Today we delve deeply into A Journey Through Indian Architecture. What is the central paradox or mechanism here?"
+        },
+        {
+          "speaker": "Student",
+          "speech_text": "Is it about how geographic, historical, or legal frameworks structure daily human society?"
+        },
+        {
+          "speaker": "Master Educator",
+          "speech_text": "Precisely. Let's analyze the evidence from primary sources and empirical metrics."
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "activity_or_method_id": "ACT-3-01",
+      "aim_or_objective": "To visually distinguish between Nagara (North Indian) and Dravida (South Indian) temple spires.",
+      "materials_or_prerequisites": [
+        "Drawing paper",
+        "Pencils",
+        "Reference images of Brihadishvara and Khajuraho temples"
+      ],
+      "procedure_or_steps": [
+        "Draw a Nagara style temple showing curvilinear beehive spire (Shikhara) topped with an Amalaka.",
+        "Draw a Dravida style temple showing stepped pyramidal tower (Vimāna) with a crowned Stupika.",
+        "Label Garbhagṛiha, Mandapa, and Gopuram."
+      ],
+      "observations_or_results": "Nagara features curved vertical lines; Dravida features tiered horizontal storeys.",
+      "conclusion_or_principle": "Regional geography and available stone influenced distinct regional structural styles."
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calculator_name": "Chapter 3 Metric & Rule Evaluator",
+      "formula_expression": "Grid Layout = Sacred Geometric Symmetry mapping Cosmic Man (Puruṣha) — Concentric geometric square grid guiding temple proportions from sanctum to outer walls.",
+      "description": "Classical Dravida and Nagara temple floor plans."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "IMG_CH3_01",
+    "title": "Chapter 3 Visual Key: A Journey Through Indian Architecture",
+    "url": "/assets/images/ch3_temple_architecture.png",
+    "aspect_ratio": "16:9",
+    "hotspots": [
+      {
+        "hotspot_id": "HS_01",
+        "label": "Primary Concept Focus",
+        "x_percent": 25.0,
+        "y_percent": 30.0,
+        "w_percent": 40.0,
+        "h_percent": 35.0,
+        "annotation": "Core structural breakdown and theoretical mechanism."
+      },
+      {
+        "hotspot_id": "HS_02",
+        "label": "Comparative Analysis / Case Evidence",
+        "x_percent": 68.0,
+        "y_percent": 25.0,
+        "w_percent": 28.0,
+        "h_percent": 60.0,
+        "annotation": "Empirical example, historical source, or statutory rule."
+      }
+    ]
+  }
 }

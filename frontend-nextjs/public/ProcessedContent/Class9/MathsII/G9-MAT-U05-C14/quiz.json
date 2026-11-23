@@ -1,57 +1,74 @@
-[
-  {
-    "question": "Increasing sphere radius by 10% increases volume by what percent?",
-    "options": [
-      "New volume V' = (1.10)^3 * V = 1.331 V. Percentage increase = (1.331 - 1)*100 = 33.1%.",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "New volume V' = (1.10)^3 * V = 1.331 V. Percentage increase = (1.331 - 1)*100 = 33.1%."
-  },
-  {
-    "question": "Total surface area of solid hemisphere of radius r is:",
-    "options": [
-      "Correct concept application",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "B"
-  },
-  {
-    "question": "Water fills a conical cup of depth 12 cm to half depth (6 cm). What fraction of capacity is filled?",
-    "options": [
-      "Depth ratio is 1/2. Volume ratio = (1/2)^3 = 1/8. Water fills 1/8th of capacity.",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "Depth ratio is 1/2. Volume ratio = (1/2)^3 = 1/8. Water fills 1/8th of capacity."
-  },
-  {
-    "question": "Explain the Archimedean volume ratio across a cone, sphere, and cylinder sharing radius r and height h = 2r.",
-    "options": [
-      "V_cone = 2/3 pi r^3, V_sphere = 4/3 pi r^3, V_cylinder = 2 pi r^3 = 6/3 pi r^3. Dividing by 2/3 pi r^3 yields the ratio ",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "V_cone = 2/3 pi r^3, V_sphere = 4/3 pi r^3, V_cylinder = 2 pi r^3 = 6/3 pi r^3. Dividing by 2/3 pi r^3 yields the ratio V_cone : V_sphere : V_cylinder = 1 : 2 : 3."
-  },
-  {
-    "question": "Dome base circumference is 35.2 m. Find cost of painting outer surface at Rs 10 per 100 cm^2.",
-    "options": [
-      "2*pi*r = 35.2 m => r = 5.6 m = 560 cm. CSA = 2*pi*r^2 = 2*(22/7)*560^2 = 1,971,200 cm^2. Cost = 1,971,200 * (10/100) = R",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "2*pi*r = 35.2 m => r = 5.6 m = 560 cm. CSA = 2*pi*r^2 = 2*(22/7)*560^2 = 1,971,200 cm^2. Cost = 1,971,200 * (10/100) = Rs 197,120."
-  }
-]
+{
+  "chapter_number": 14,
+  "chapter_title": "Math of Space: Surface Area and Volume",
+  "quiz_questions": [
+    {
+      "question_id": 1,
+      "level": "Level 1 (Easy)",
+      "question_type": "Multiple Choice",
+      "question": "What is the Total Surface Area (TSA) of a solid hemisphere of radius r?",
+      "options": [
+        "A) 2 * pi * r^2",
+        "B) 3 * pi * r^2",
+        "C) 4 * pi * r^2",
+        "D) (2/3) * pi * r^3"
+      ],
+      "correct_answer": "B",
+      "explanation": "TSA of solid hemisphere = Curved surface area (2*pi*r^2) + Flat circular base (pi*r^2) = 3*pi*r^2."
+    },
+    {
+      "question_id": 2,
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "Archimedes proved that a cone, sphere, and cylinder sharing the same radius r and height h = 2r have volumes in the ratio 1 : _____ : 3.",
+      "options": [],
+      "correct_answer": "2",
+      "explanation": "Volumes: V_cone = 2/3 pi r^3, V_sphere = 4/3 pi r^3, V_cylinder = 6/3 pi r^3. The ratio is 1 : 2 : 3."
+    },
+    {
+      "question_id": 3,
+      "level": "Level 1 (Easy)",
+      "question_type": "True/False with Justification",
+      "question": "True or False: According to the Square-Cube Law, if a sphere's radius is increased by 10%, its volume increases by 21%.",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "Surface area increases by 21% ((1.10)^2 = 1.21). Volume increases by 33.1% because volume scales with length cubed ((1.10)^3 = 1.331)."
+    },
+    {
+      "question_id": 4,
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer",
+      "question": "A solid metallic sphere of radius 10.5 cm is melted and recast into small solid cones of radius 3.5 cm and height 3 cm. Calculate the exact number of cones formed.",
+      "options": [],
+      "correct_answer": "126 cones. Volume sphere = (4/3)*pi*(10.5)^3 = 4851 cm^3. Volume 1 cone = (1/3)*pi*(3.5)^2 * 3 = 38.5 cm^3. Number of cones N = 4851 / 38.5 = 126.",
+      "explanation": "Solid recasting preserves total volume: N = V_sphere / V_cone = 126."
+    },
+    {
+      "question_id": 5,
+      "level": "Level 2 (Medium)",
+      "question_type": "Diagram Analysis",
+      "question": "Water flows at a speed of 3 m/s (300 cm/s) through a cylindrical pipe of internal radius 2 cm. Calculate the volume of water discharged per minute in liters.",
+      "options": [],
+      "correct_answer": "226.19 liters per minute. Discharge Volume V = A * v * t = pi * (2)^2 * 300 * 60 = 72,000 * pi cm^3 = 226,194.67 cm^3 = 226.19 liters.",
+      "explanation": "Fluid flow volume formula V = pi * r^2 * v * t. Dividing cm^3 by 1000 converts to liters."
+    },
+    {
+      "question_id": 6,
+      "level": "Level 3 (Hard)",
+      "question_type": "Give Reasons",
+      "question": "State the volume formula for a frustum of a right circular cone of height h with top radius r and bottom radius R. Derive the frustum volume if R = 6 cm, r = 3 cm, and h = 4 cm.",
+      "options": [],
+      "correct_answer": "Frustum Volume V = (1/3) * pi * h * (R^2 + r^2 + R * r). Substituting: V = (1/3) * pi * 4 * (36 + 9 + 18) = (4/3) * pi * 63 = 84 * pi cm^3 = 263.89 cm^3.",
+      "explanation": "Applying frustum volume formula V = (1/3) * pi * h * (R^2 + r^2 + R*r) yields 84*pi cm^3."
+    },
+    {
+      "question_id": 7,
+      "level": "Level 3 (Hard)",
+      "question_type": "Case Study",
+      "question": "Fermi Estimation Problem: Earth's total water volume is approximately 1.38 billion km^3 (1.38 * 10^9 km^3). If all Earth's water were spread uniformly over Earth's surface (radius R = 6,371 km), calculate the estimated thickness of the global water layer in kilometers.",
+      "options": [],
+      "correct_answer": "Thickness t ~ 2.71 km. Surface Area A = 4 * pi * R^2 = 4 * pi * (6371)^2 ~ 5.10 * 10^8 km^2. Layer thickness t = Volume / Surface Area = (1.38 * 10^9 km^3) / (5.10 * 10^8 km^2) = 2.705 km ~ 2.71 km (2,710 meters).",
+      "explanation": "Dividing total water volume by global sphere surface area yields a uniform depth of ~2.71 km."
+    }
+  ]
+}

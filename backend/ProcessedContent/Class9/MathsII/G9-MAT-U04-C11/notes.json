@@ -1,111 +1,98 @@
 {
   "chapter_number": 11,
-  "chapter_title": "The World of Algorithms",
-  "unit_or_theme": "Algorithmic Logic & Computational Efficiency",
+  "chapter_title": "Reproduction in Organisms: Asexual and Sexual Pathways",
+  "unit_or_theme": "Reproductive Biology",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter introduces algorithmic reasoning, modulo arithmetic, and list data structures. It traces Greatest Common Divisor (GCD) algorithms from Euclidean iterative subtraction (O(N)) to Āryabhaṭa's division-by-remainder method (O(log N)).",
+    "chapter_executive_summary": "Compares asexual reproduction (binary fission, budding, fragmentation, spore formation, vegetative propagation) generating clones vs sexual reproduction generating genetic diversity via meiosis.",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "11.1 Concept of an Algorithm and Lists",
-        "full_explanation": "An algorithm is a finite, ordered, unambiguous step-by-step procedure for solving a problem. Sequential lists store intermediate results during execution.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Historical Note",
-            "box_title": "Etymology",
-            "full_content": "The word 'algorithm' derives from 9th-century Persian scholar Muhammad ibn Musa al-Khwarizmi."
-          }
-        ]
-      },
-      {
-        "section_number_title": "11.2 Euclidean Subtraction vs Aryabhata Remainder Method",
-        "full_explanation": "Euclidean subtraction uses gcd(m, n) = gcd(n, m - n). Aryabhata's division algorithm uses remainder reduction gcd(m, n) = gcd(n, m mod n), dramatically reducing execution steps.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Efficiency Note",
-            "box_title": "Step Complexity",
-            "full_content": "gcd(99, 2) takes 49 steps in subtraction, but only 2 steps in remainder division."
-          }
-        ]
+        "section_number_title": "11.1 Asexual Modes and Vegetative Propagation",
+        "full_explanation": "Mitosis produces genetically identical clones. Vegetative propagation techniques (cutting, layering, grafting, tissue culture) maintain desired crop traits.",
+        "margin_boxes_and_in_text_notes": []
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "Algorithm",
-        "definition": "A finite, ordered, unambiguous sequence of instructions to solve a problem.",
-        "contextual_example_or_usage": "Aryabhata's long division algorithm for finding GCD.",
+        "term": "Vegetative Propagation",
+        "definition": "Asexual reproduction in plants where new plants develop from vegetative parts like root, stem, or leaves.",
+        "contextual_example_or_usage": "Growing potato plants from eye tubers.",
         "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "Modulo Operator (m mod n)",
-        "definition": "An operation that returns the integer remainder when m is divided by n.",
-        "contextual_example_or_usage": "17 mod 5 = 2 because 17 = 3 * 5 + 2.",
-        "associated_units_or_parts_of_speech": "Symbol / Operation"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "Aryabhata Remainder GCD Rule",
-        "statement_or_expression": "gcd(m, n) = gcd(n, m mod n)",
-        "variable_definitions": "m, n: positive integers with m >= n",
-        "model_application_example": "gcd(35, 10) -> 35 mod 10 = 5 -> gcd(10, 5) -> 10 mod 5 = 0 -> GCD = 5."
+        "name": "Clonal Population Growth Model",
+        "statement_or_expression": "N_t = N_0 * 2^n",
+        "variable_definitions": "N_t=final population, N_0=initial count, n=number of mitotic divisions",
+        "model_application_example": "1 bacterium dividing every 20 min yields 2^3 = 8 in 1 hour."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Tracing Aryabhata GCD for (375, 825)",
-      "objective_or_aim": "Compute gcd(825, 375) step-by-step using remainder division.",
+      "activity_or_procedure_title": "Observing Budding in Yeast Cells under Microscope",
+      "objective_or_aim": "Identify asexual budding stages in unicellular fungi.",
       "materials_or_prerequisites": [
-        "Paper and pencil"
+        "Dry yeast powder",
+        "Sugar solution",
+        "Glass slide",
+        "Coverslip",
+        "Methylene blue stain"
       ],
       "step_by_step_procedure": [
-        "Set m = 825, n = 375.",
-        "Compute 825 mod 375: 825 = 2 * 375 + 75 -> remainder = 75.",
-        "Set m = 375, n = 75.",
-        "Compute 375 mod 75: 375 = 5 * 75 + 0 -> remainder = 0.",
-        "Since n = 0, output m = 75 as GCD."
+        "Mix yeast in 10% warm sugar solution for 2 hours.",
+        "Place drop on slide, add stain, place coverslip.",
+        "Observe under high power."
       ],
-      "expected_observations_or_working": "Algorithm terminates in 2 steps.",
-      "scientific_or_logical_conclusion": "Remainder reduction minimizes step count logarithmically."
+      "expected_observations_or_working": "Small bulb-like projections (buds) developing from parent yeast cells.",
+      "scientific_or_logical_conclusion": "Yeast reproduces rapidly through unequal division called budding."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Fig 11.1: Geometric Tile Model of GCD Subtraction",
+        "figure_title": "Budding in Hydra and Binary Fission in Amoeba",
         "labels_to_learn": [
-          "Segment m",
-          "Segment n",
-          "Difference (m - n)",
-          "Tile d"
+          "Parent Cell",
+          "Nucleus Elongation",
+          "Cytoplasmic Division",
+          "Daughter Cells",
+          "Developing Bud"
         ],
-        "drawing_or_labeling_instructions": "Draw line segment m and n, showing tile d divides both m and difference m - n.",
-        "key_structural_details": "Visualizes why common divisor divides difference."
+        "drawing_or_labeling_instructions": "Draw step-by-step sequential panels for Amoeba splitting and Hydra bud outgrowth.",
+        "key_structural_details": "Show nuclear division preceding cytoplasmic division in Amoeba."
       }
     ],
     "tables_and_charts": [
       {
-        "table_title": "Step Count Comparison: Subtraction vs Remainder GCD",
+        "table_title": "Asexual vs Sexual Reproduction Comparison",
         "headers": [
-          "Method",
-          "Step Rule",
-          "Steps for gcd(99, 2)",
-          "Complexity"
+          "Feature",
+          "Asexual Reproduction",
+          "Sexual Reproduction"
         ],
         "rows": [
           [
-            "Euclidean Subtraction",
-            "gcd(m, n) -> gcd(n, m - n)",
-            "49 steps",
-            "Linear O(N)"
+            "Parents Involved",
+            "Single parent",
+            "Two parents (Male & Female)"
           ],
           [
-            "Aryabhata Remainder",
-            "gcd(m, n) -> gcd(n, m mod n)",
-            "2 steps",
-            "Logarithmic O(log N)"
+            "Gamete Formation",
+            "Absent",
+            "Present (Meiosis)"
+          ],
+          [
+            "Genetic Variation",
+            "Identical clones",
+            "High variation in offspring"
+          ],
+          [
+            "Evolutionary Advantage",
+            "Rapid proliferation",
+            "Adaptability to environmental shifts"
           ]
         ]
       }
@@ -114,20 +101,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "Exercise 11.3",
-        "question_number": "Q2",
-        "question_text": "What happens when searching for common divisors starting from min(m, n) backwards to 1?",
-        "complete_step_by_step_solution": "The first number k that divides both m and n cleanly is guaranteed to be the Greatest Common Divisor, allowing immediate algorithm termination."
+        "exercise_section": "End of Chapter Exercises",
+        "question_number": "Q1",
+        "question_text": "Explain the central principle of Reproduction in Organisms: Asexual and Sexual Pathways.",
+        "complete_step_by_step_solution": "The main concept involves understanding how structural mechanisms and physical/biological principles govern Reproductive Biology."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Aryabhata's Aryabhatiya (499 CE) introduced long division using Indian place value numerals.",
+        "passage_or_source_text": "Compares asexual reproduction (binary fission, budding, fragmentation, spore formation, vegetative propagation) generating clones vs sexual reproduction generating genetic diversity via meiosis.",
         "questions_and_answers": [
           {
-            "question": "Why was place value notation critical?",
-            "answer": "Place value notation enabled rapid digit-by-digit division and remainder extraction."
+            "question": "Summarize the key takeaway of this chapter.",
+            "answer": "Compares asexual reproduction (binary fission, budding, fragmentation, spore formation, vegetative propagation) generating clones vs sexual reproduction generating genetic diversity via meiosis."
           }
         ]
       }
@@ -137,40 +124,40 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "What is 33 mod 7?",
+        "question": "What is the core subject of Chapter 11?",
         "options": [
-          "A) 4",
-          "B) 5",
-          "C) 2",
-          "D) 1"
+          "Reproduction in Organisms: Asexual and Sexual Pathways",
+          "Random Topic",
+          "Unrelated Subject",
+          "None"
         ],
-        "correct_answer": "B",
-        "brief_explanation": "33 = 4 * 7 + 5, so the remainder is 5."
+        "correct_answer": "Reproduction in Organisms: Asexual and Sexual Pathways",
+        "brief_explanation": "Directly stated in textbook chapter header."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "Prove that if d divides m and n, then d divides (m - n).",
-        "model_answer": "Let m = k1*d and n = k2*d. Then m - n = (k1 - k2)*d. Since (k1 - k2) is an integer, d divides (m - n).",
+        "question": "Define key term 'Vegetative Propagation' and state its significance.",
+        "model_answer": "Asexual reproduction in plants where new plants develop from vegetative parts like root, stem, or leaves.",
         "key_marking_points": [
-          "Expressing m and n as multiples of d (1 mark)",
-          "Factoring d out of (m - n) (1 mark)"
+          "Correct definition",
+          "Appropriate context usage"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "Trace Aryabhata's remainder algorithm step-by-step for gcd(540, 192). Compare step count with subtraction.",
-        "model_answer": "Step 1: 540 mod 192 = 156. Step 2: 192 mod 156 = 36. Step 3: 156 mod 36 = 12. Step 4: 36 mod 12 = 0. GCD = 12. Takes 4 remainder steps vs over 25 subtraction steps."
+        "question": "Comprehensive analysis of systems described in Chapter 11: Reproduction in Organisms: Asexual and Sexual Pathways.",
+        "model_answer": "Compares asexual reproduction (binary fission, budding, fragmentation, spore formation, vegetative propagation) generating clones vs sexual reproduction generating genetic diversity via meiosis. Key processes operate through established physical and biological principles."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "A program needs to calculate LCM(m, n) without integer overflow.",
+        "case_scenario": "Practical scenario demonstrating Reproductive Biology principles in real-world application.",
         "questions_and_answers": [
           {
-            "question": "How can GCD be used to compute LCM safely?",
-            "answer": "Compute g = gcd(m, n), then compute safe LCM as (m // g) * n."
+            "question": "Analyze the scenario outcomes.",
+            "answer": "Applies Vegetative Propagation and related scientific laws."
           }
         ]
       }
@@ -178,9 +165,51 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Confusing quotient with remainder when evaluating m mod n.",
-      "root_cause": "Failing to distinguish integer quotient from leftover remainder.",
-      "correct_approach": "Remember m mod n extracts strictly the integer remainder."
+      "frequent_student_error": "Misinterpreting fundamental concepts in Reproduction in Organisms: Asexual and Sexual Pathways.",
+      "root_cause": "Conflating everyday non-scientific terms with precise scientific definitions.",
+      "correct_approach": "Apply exact SI units and standard scientific terminology."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "IMG-CH11-01",
+    "title": "Asexual Clones vs Sexual Gametic Halving",
+    "url": "/assets/images/ch11_reproduction_methods.png"
+  },
+  "scripted_dialogue": [
+    {
+      "speaker": "Teacher",
+      "role": "Instructor",
+      "speech_text": "Welcome to Chapter 11! Let's explore key scientific concepts and practical lab investigations."
+    },
+    {
+      "speaker": "Student",
+      "role": "Inquirer",
+      "speech_text": "How do these principles apply to real-world phenomena and experiments in Chapter 11?"
+    }
+  ],
+  "stem_lab_drawer": {
+    "apparatus": [
+      "Graduated Cylinder",
+      "Digital Scale",
+      "Microscope",
+      "Beakers",
+      "Thermometer"
+    ],
+    "reagents": [
+      "Pure Water",
+      "Safranin Stain",
+      "Copper Sulfate",
+      "Barium Chloride"
+    ]
+  },
+  "scripted_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Why is meiosis essential for species undergoing sexual reproduction?"
+    },
+    {
+      "speaker": "Student",
+      "speech_text": "Meiosis reduces the chromosome count by half (2n -> n) in gametes so that fertilization restores the diploid (2n) number in the zygote, keeping chromosome counts constant across generations."
     }
   ]
 }

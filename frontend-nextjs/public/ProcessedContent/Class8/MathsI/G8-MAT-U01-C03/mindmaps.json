@@ -1,83 +1,135 @@
 {
   "chapter_number": 3,
-  "chapter_title": "A Story of Numbers",
-  "d3_config": {
-    "node_color": "#38bdf8",
-    "expanded_radius": 12,
-    "collapsed_radius": 8
-  },
-  "tree_data": {
-    "id": "mm_node_ch3_root",
-    "name": "A Story of Numbers",
-    "node_color": "#0ea5e9",
-    "icon": "folder_root",
-    "tooltip_popover": {
-      "title": "A Story of Numbers",
-      "content": "Master topic for Chapter 3",
-      "example": "Central node of learning map"
-    },
-    "children": [
+  "chapter_title": "A Journey Through Indian Architecture",
+  "mind_map": {
+    "root_topic": "A Journey Through Indian Architecture",
+    "branches": [
       {
-        "id": "mm_node_ch3_b0",
-        "name": "3.1 Counting and Landmark Numbers",
-        "node_color": "#38bdf8",
-        "icon": "branch_theme",
-        "tooltip_popover": {
-          "title": "3.1 Counting and Landmark Numbers",
-          "content": "Theme section under A Story of Numbers",
-          "example": "Main section overview"
-        },
-        "children": [
+        "theme": "3.1 Ancient Rock-Cut Caves, Stupas, and Sacred Temple Symbolism",
+        "sub_branches": [
           {
-            "id": "mm_node_ch3_b0_sb0",
-            "name": "Evolution of Counting and Landmark Symbols",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
+            "concept": "Monolithic Rock-Cut Architecture & Stupas",
+            "details": [
+              "Temples and monasteries carved top-down directly out of natural rock basalt cliffs.",
+              "Buddhist stupas served as sacred relic mounds surrounded by carved ceremonial gateways (Toranas)."
+            ],
+            "evidence_or_examples": [
+              "Kailash Temple at Ellora (Cave 16); Ajanta Cave paintings; Sanchi and Bharhut Stupas."
+            ],
+            "key_terms": [
+              "Rock-Cut Architecture",
+              "Stupa",
+              "Torana",
+              "Monolithic Sculpture"
+            ],
+            "node_color": "#10b981",
             "tooltip_popover": {
-              "title": "Evolution of Counting and Landmark Symbols",
-              "content": "Primitive counting relied on one-to-one matching with fingers, pebbles, and body parts. Civilizations developed landmark numbers to group large quantities without drawing repetitive tallies.",
-              "example": "Roman Numeral System: Landmark symbols I (1), V (5), X (10), L (50), C (100), D (500), M (1000)."
-            },
-            "children": []
-          }
-        ]
-      },
-      {
-        "id": "mm_node_ch3_b1",
-        "name": "3.2 Base-n and Place Value Systems",
-        "node_color": "#38bdf8",
-        "icon": "branch_theme",
-        "tooltip_popover": {
-          "title": "3.2 Base-n and Place Value Systems",
-          "content": "Theme section under A Story of Numbers",
-          "example": "Main section overview"
-        },
-        "children": [
-          {
-            "id": "mm_node_ch3_b1_sb0",
-            "name": "Comparison of Ancient Base Systems",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
-            "tooltip_popover": {
-              "title": "Comparison of Ancient Base Systems",
-              "content": "Base-n systems select powers of n (n^0, n^1, n^2...) as uniform landmark values. Mesopotamian System: Base 60 (sexagesimal system), preserved today in 60-second minutes and 360-degree circles. Mayan System: Base 20 (vigesimal system). Hindu-Arabic System: Base 10 (decimal system) using positional place value.",
-              "example": "Base-5 Construction Activity ACT-3.1: Grouping 5 ones into a 5-counter, 5 five-counters into a 25-counter. 23 in Base 10 = (43)_5."
-            },
-            "children": []
+              "title": "Monolithic Rock-Cut Architecture & Stupas",
+              "content_preview": "Temples and monasteries carved top-down directly out of natural rock basalt cliffs.",
+              "key_term_tag": "Rock-Cut Architecture"
+            }
           },
           {
-            "id": "mm_node_ch3_b1_sb1",
-            "name": "The Hindu Decimal Place Value Revolution and Zero",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
+            "concept": "Classical Temple Typologies & Sacred Cosmic Symbolism",
+            "details": [
+              "Temple layouts follow sacred geometric symmetry (Vastu Purusha Mandala) representing the cosmic human (Puruṣha).",
+              "North Indian Nagara style features curvilinear beehive spires (Shikhara); South Indian Dravida style features stepped pyramidal towers (Vimāna) and monumental gateway towers (Gopurams)."
+            ],
+            "evidence_or_examples": [
+              "Brihadishvara Temple in Thanjavur (Dravida); Sun Temple Konark & Khajuraho (Nagara); Bishnupur Terracotta temples."
+            ],
+            "key_terms": [
+              "Garbhagṛiha",
+              "Shikhara",
+              "Vimāna",
+              "Gopuram",
+              "Vastu Purusha Mandala"
+            ],
+            "node_color": "#10b981",
             "tooltip_popover": {
-              "title": "The Hindu Decimal Place Value Revolution and Zero",
-              "content": "The Hindu system introduced positional place value where a digit's position determines its magnitude. The symbol '0' served a dual purpose: a placeholder for empty positions and a standalone number. Eliminated the need for infinite new landmark symbols and streamlined arithmetic algorithms.",
-              "example": "Efficiency comparison: In 375, '3' represents 3*10^2, whereas Roman numerals required cumbersome additive/subtractive notation (CCCLXXV)."
-            },
-            "children": []
+              "title": "Classical Temple Typologies & Sacred Cosmic Symbolism",
+              "content_preview": "Temple layouts follow sacred geometric symmetry (Vastu Purusha Mandala) representing the cosmic human (Puruṣha).",
+              "key_term_tag": "Garbhagṛiha"
+            }
           }
-        ]
+        ],
+        "icon": "fas fa-sitemap",
+        "node_color": "#f59e0b"
+      },
+      {
+        "theme": "3.2 Hydraulic Engineering, Forts, and Architectural Synthesis",
+        "sub_branches": [
+          {
+            "concept": "Subterranean Hydraulic Architecture",
+            "details": [
+              "Intricate stepwells (Vavs/Baolis) engineered to collect rainwater, prevent evaporation, and provide subterranean community spaces."
+            ],
+            "evidence_or_examples": [
+              "Rani ki Vav in Patan, Gujarat (11th-century inverted underground stepwell temple); Vijayanagara masonry aqueducts."
+            ],
+            "key_terms": [
+              "Stepwell (Baoli/Vav)",
+              "Hydraulic Engineering",
+              "Rani ki Vav"
+            ],
+            "node_color": "#10b981",
+            "tooltip_popover": {
+              "title": "Subterranean Hydraulic Architecture",
+              "content_preview": "Intricate stepwells (Vavs/Baolis) engineered to collect rainwater, prevent evaporation, and provide subterranean community spaces.",
+              "key_term_tag": "Stepwell (Baoli/Vav)"
+            }
+          },
+          {
+            "concept": "Indo-Islamic and Indo-Saracenic Synthesis",
+            "details": [
+              "Medieval monuments combined Islamic true arches, domes, and minarets with indigenous stone carving and jali lattice work.",
+              "19th-century colonial Indo-Saracenic revival blended traditional Indian motifs with European Gothic structural frameworks."
+            ],
+            "evidence_or_examples": [
+              "Sidi Saiyyed Mosque (stone tree of life jali); Taj Mahal; Chhatrapati Shivaji Maharaj Terminus (Victoria Terminus)."
+            ],
+            "key_terms": [
+              "Indo-Islamic",
+              "Indo-Saracenic",
+              "Jali Lattice",
+              "True Arch & Dome"
+            ],
+            "node_color": "#10b981",
+            "tooltip_popover": {
+              "title": "Indo-Islamic and Indo-Saracenic Synthesis",
+              "content_preview": "Medieval monuments combined Islamic true arches, domes, and minarets with indigenous stone carving and jali lattice work.",
+              "key_term_tag": "Indo-Islamic"
+            }
+          }
+        ],
+        "icon": "fas fa-sitemap",
+        "node_color": "#f59e0b"
+      }
+    ]
+  },
+  "image_asset": {
+    "asset_id": "IMG_CH3_01",
+    "title": "Chapter 3 Visual Key: A Journey Through Indian Architecture",
+    "url": "/assets/images/ch3_temple_architecture.png",
+    "aspect_ratio": "16:9",
+    "hotspots": [
+      {
+        "hotspot_id": "HS_01",
+        "label": "Primary Concept Focus",
+        "x_percent": 25.0,
+        "y_percent": 30.0,
+        "w_percent": 40.0,
+        "h_percent": 35.0,
+        "annotation": "Core structural breakdown and theoretical mechanism."
+      },
+      {
+        "hotspot_id": "HS_02",
+        "label": "Comparative Analysis / Case Evidence",
+        "x_percent": 68.0,
+        "y_percent": 25.0,
+        "w_percent": 28.0,
+        "h_percent": 60.0,
+        "annotation": "Empirical example, historical source, or statutory rule."
       }
     ]
   }

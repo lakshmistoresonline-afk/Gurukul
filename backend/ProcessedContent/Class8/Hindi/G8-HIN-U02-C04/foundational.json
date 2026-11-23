@@ -1,91 +1,90 @@
 {
   "chapter_number": 4,
-  "chapter_title": "हरिद्वार (Haridwar)",
-  "scrambled_tile_sets": [
-    {
-      "id": "tile_ch4_1",
-      "scrambled_tiles": [
-        "प्रेम",
-        "स्वदेश",
-        "ही",
-        "सच्चा",
-        "जीवन",
-        "है।"
-      ],
-      "correct_sequence": [
-        "स्वदेश",
-        "प्रेम",
-        "ही",
-        "सच्चा",
-        "जीवन",
-        "है।"
-      ],
-      "hint": "वाक्य को अर्थपूर्ण क्रम में सजाएं।"
-    }
-  ],
-  "multi_bin_sorting_matrices": [
-    {
-      "matrix_title": "तत्सम बनाम तद्भव शब्द वर्गीकरण",
-      "bin_names": [
-        "तत्सम शब्द",
-        "तद्भव शब्द"
-      ],
-      "items": [
-        {
-          "text": "हृदय",
-          "correct_bin": "तत्सम शब्द"
-        },
-        {
-          "text": "हिया/दिल",
-          "correct_bin": "तद्भव शब्द"
-        },
-        {
-          "text": "सत्य",
-          "correct_bin": "तत्सम शब्द"
-        },
-        {
-          "text": "सच",
-          "correct_bin": "तद्भव शब्द"
-        }
-      ]
-    }
-  ],
-  "editing_checkers": [
-    {
-      "original_flawed_text": "हमे अपने स्वदेस का सम्मान करना चाहीए।",
-      "errors_count": 3,
-      "corrected_text": "हमें अपने स्वदेश का सम्मान करना चाहिए।",
-      "error_explanations": "1. 'हमे' -> 'हमें' (अनुस्वार त्रुटि). 2. 'स्वदेस' -> 'स्वदेश' (स/श त्रुटि). 3. 'चाहीए' -> 'चाहिए' (मात्रा त्रुटि)."
-    }
-  ],
+  "chapter_title": "The Colonial Era in India",
+  "skill_drills": {
+    "scrambled_tile_sets": [
+      {
+        "id": "tile_1",
+        "target_term": "DEINDUSTRIALIZATION",
+        "scrambled_letters": [
+          "S",
+          "T",
+          "E",
+          "W",
+          "A",
+          "R",
+          "D",
+          "S",
+          "H",
+          "I",
+          "P"
+        ],
+        "hint": "Responsible protection and management of resources/institutions."
+      }
+    ],
+    "multi_bin_sorting_matrices": [
+      {
+        "matrix_title": "Classification Drill - Chapter 4",
+        "bins": [
+          "Category A",
+          "Category B"
+        ],
+        "items": [
+          {
+            "item_name": "Sample Element 1",
+            "correct_bin": "Category A"
+          },
+          {
+            "item_name": "Sample Element 2",
+            "correct_bin": "Category B"
+          }
+        ]
+      }
+    ],
+    "editing_checkers": [
+      {
+        "passage_text": "In Chapter 4, key decisions are made by institutions.",
+        "embedded_errors": [
+          {
+            "error_word": "institutions",
+            "correct_word": "constitutional bodies",
+            "explanation": "Precision in terminology."
+          }
+        ]
+      }
+    ]
+  },
   "image_asset": {
-    "title": "Interactive Visual Diagram: हरिद्वार (Haridwar)",
-    "url": "/assets/images/ch4_haridwar.png",
-    "dimensions": "2400x1350 (16:9)",
+    "image_url": "/assets/images/ch4_colonial_annexation_timeline.png",
+    "title": "Gamified Skill Reference - Chapter 4",
+    "aspect_ratio": "16:9",
     "hotspots": [
       {
-        "x_percent": 8,
-        "y_percent": 50,
-        "w_percent": 38,
-        "h_percent": 30,
-        "label": "Theme Breakdown",
-        "details": "हरिद्वार (Haridwar) - Core Concept Breakdown"
+        "id": "hs_4_1",
+        "label": "Diplomatic Annexations (Subsidiary Alliance & Doctrine of Lapse)",
+        "x_percent": 10.0,
+        "y_percent": 20.0,
+        "w_percent": 38.0,
+        "h_percent": 35.0,
+        "popover_description": "Lord Wellesley's Subsidiary Alliance and Lord Dalhousie's Doctrine of Lapse annexed heirless and vulnerable princely states."
       },
       {
-        "x_percent": 54,
-        "y_percent": 50,
-        "w_percent": 38,
-        "h_percent": 30,
-        "label": "Textual Evidence",
-        "details": "हरिद्वार (Haridwar) - Key Quotes & Citations"
+        "id": "hs_4_2",
+        "label": "Deindustrialization & Drain of Wealth",
+        "x_percent": 52.0,
+        "y_percent": 20.0,
+        "w_percent": 38.0,
+        "h_percent": 35.0,
+        "popover_description": "Unfair tariffs ruined Indian handloom weavers while Manchester cloth flooded markets; wealth was remitted to Britain."
       },
       {
-        "x_percent": 31,
-        "y_percent": 15,
-        "w_percent": 38,
-        "h_percent": 28,
-        "label": "Synthesis & Outcome",
-        "details": "हरिद्वार (Haridwar) - Applied Life Values"
+        "id": "hs_4_3",
+        "label": "1857 Great Rebellion & 1858 Crown Transfer",
+        "x_percent": 20.0,
+        "y_percent": 62.0,
+        "w_percent": 60.0,
+        "h_percent": 28.0,
+        "popover_description": "Popular uprising of sepoys, peasants, and dispossessed princes leading to the Government of India Act 1858."
       }
     ]
   }

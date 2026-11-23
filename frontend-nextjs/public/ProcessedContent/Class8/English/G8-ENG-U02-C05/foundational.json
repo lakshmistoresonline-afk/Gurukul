@@ -1,71 +1,90 @@
 {
   "chapter_number": 5,
-  "chapter_title": "Somebody's Mother",
-  "drag_and_drop_unscramblers": [
-    {
-      "drill_id": "scramble_ch5",
-      "scrambled_tokens": [
-        "Tenali",
-        "outwitted",
-        "Rama",
-        "scholar",
-        "the",
-        "proud"
-      ],
-      "target_sentence": "Tenali Rama outwitted the proud scholar.",
-      "grammar_rule_hint": "Subject + Verb + Object word order."
-    }
-  ],
-  "multi_bin_sorting_matrices": [
-    {
-      "matrix_id": "sort_ch5",
-      "bins": [
-        "Nouns",
-        "Verbs",
-        "Adjectives"
-      ],
-      "draggable_items": [
-        {
-          "item": "courtier",
-          "correct_bin": "Nouns"
-        },
-        {
-          "item": "scrutinise",
-          "correct_bin": "Verbs"
-        },
-        {
-          "item": "arrogant",
-          "correct_bin": "Adjectives"
-        }
-      ]
-    }
-  ],
-  "editing_checkers": [
-    {
-      "checker_id": "edit_ch5",
-      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
-      "identified_errors": [
-        "cleverer -> clever / most clever"
-      ],
-      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
-      "rule_applied": "Superlative degree comparison requires 'the most'."
-    }
-  ],
+  "chapter_title": "Universal Franchise and India’s Electoral System",
+  "skill_drills": {
+    "scrambled_tile_sets": [
+      {
+        "id": "tile_1",
+        "target_term": "FRANCHISE",
+        "scrambled_letters": [
+          "S",
+          "T",
+          "E",
+          "W",
+          "A",
+          "R",
+          "D",
+          "S",
+          "H",
+          "I",
+          "P"
+        ],
+        "hint": "Responsible protection and management of resources/institutions."
+      }
+    ],
+    "multi_bin_sorting_matrices": [
+      {
+        "matrix_title": "Classification Drill - Chapter 5",
+        "bins": [
+          "Category A",
+          "Category B"
+        ],
+        "items": [
+          {
+            "item_name": "Sample Element 1",
+            "correct_bin": "Category A"
+          },
+          {
+            "item_name": "Sample Element 2",
+            "correct_bin": "Category B"
+          }
+        ]
+      }
+    ],
+    "editing_checkers": [
+      {
+        "passage_text": "In Chapter 5, key decisions are made by institutions.",
+        "embedded_errors": [
+          {
+            "error_word": "institutions",
+            "correct_word": "constitutional bodies",
+            "explanation": "Precision in terminology."
+          }
+        ]
+      }
+    ]
+  },
   "image_asset": {
-    "asset_id": "img_ch5_overview",
-    "title": "Chapter 5 Visual Conceptual Diagram: Somebody's Mother",
-    "local_url": "/assets/images/ch1_tenali_court_map.png",
+    "image_url": "/assets/images/ch5_election_commission_pyramid.png",
+    "title": "Gamified Skill Reference - Chapter 5",
     "aspect_ratio": "16:9",
-    "description": "Conceptual diagram illustrating Foundational skill drill",
     "hotspots": [
       {
-        "hotspot_id": "hs_ch5_1",
-        "label": "Core Focus: Somebody's Mother",
-        "x_percent": 50.0,
-        "y_percent": 50.0,
-        "w_percent": 30.0,
-        "h_percent": 20.0,
-        "annotation": "Key learning concept for Chapter 5"
+        "id": "hs_5_1",
+        "label": "Election Commission Administrative Hierarchy",
+        "x_percent": 15.0,
+        "y_percent": 18.0,
+        "w_percent": 32.0,
+        "h_percent": 36.0,
+        "popover_description": "4-tier pyramid: Chief Election Commissioner (CEC) -> Chief Electoral Officer (CEO) -> District Election Officer (DEO) -> Returning Officer (RO)."
+      },
+      {
+        "id": "hs_5_2",
+        "label": "EVM & VVPAT Voter Verification",
+        "x_percent": 52.0,
+        "y_percent": 18.0,
+        "w_percent": 35.0,
+        "h_percent": 36.0,
+        "popover_description": "Electronic Voting Machines store votes digitally; VVPAT prints a paper slip for 7 seconds to let voters verify cast votes."
+      },
+      {
+        "id": "hs_5_3",
+        "label": "First-Past-The-Post (FPTP) Plurality Rule",
+        "x_percent": 20.0,
+        "y_percent": 62.0,
+        "w_percent": 60.0,
+        "h_percent": 26.0,
+        "popover_description": "The candidate with the highest number of valid votes in a single-member constituency wins the seat without needing an absolute majority."
       }
     ]
   }

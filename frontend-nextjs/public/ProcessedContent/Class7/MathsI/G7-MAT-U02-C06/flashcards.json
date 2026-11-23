@@ -1,112 +1,114 @@
-{
-  "chapter_number": 6,
-  "chapter_title": "Number Play",
-  "flashcards": [
-    {
-      "card_id": 1,
-      "level": "Basic Recall",
-      "front_question": "Define parity of integers and give algebraic representations for even and odd numbers.",
-      "phonetic_guide": "[Phonetic Guide: Chapter 6 Key Mathematical Concept]",
-      "back_answer": "Parity is the property of an integer being even or odd. Any even number is 2n; any odd number is 2n - 1 (or 2n + 1) for an integer n.",
-      "graphic_description": "Vector visual illustrating Define parity of integers and give algeb...",
-      "mnemonic": "Remember key formula / rule in Ch 6",
-      "sm2_grading_buttons": {
-        "easy": "Review in 4 days (Grading: 5)",
-        "medium": "Review in 1 day (Grading: 3)",
-        "hard": "Review in 10 minutes (Grading: 1)"
-      }
-    },
-    {
-      "card_id": 2,
-      "level": "Conceptual Understanding",
-      "front_question": "State the parity rules for addition and multiplication of even and odd numbers.",
-      "phonetic_guide": "[Phonetic Guide: Chapter 6 Key Mathematical Concept]",
-      "back_answer": "Addition: Even + Even = Even; Odd + Odd = Even; Even + Odd = Odd. Multiplication: Even * Anything = Even; Odd * Odd = Odd.",
-      "graphic_description": "Vector visual illustrating State the parity rules for addition and ...",
-      "mnemonic": "Remember key formula / rule in Ch 6",
-      "sm2_grading_buttons": {
-        "easy": "Review in 4 days (Grading: 5)",
-        "medium": "Review in 1 day (Grading: 3)",
-        "hard": "Review in 10 minutes (Grading: 1)"
-      }
-    },
-    {
-      "card_id": 3,
-      "level": "Experimental / Observational Insights",
-      "front_question": "Why is the sum of page numbers on any single loose sheet torn from a book always odd?",
-      "phonetic_guide": "[Phonetic Guide: Chapter 6 Key Mathematical Concept]",
-      "back_answer": "A two-sided leaf has front page 2k-1 (odd) and back page 2k (even). Their sum = (2k-1) + 2k = 4k - 1, which is always an odd integer.",
-      "graphic_description": "Vector visual illustrating Why is the sum of page numbers on any si...",
-      "mnemonic": "Remember key formula / rule in Ch 6",
-      "sm2_grading_buttons": {
-        "easy": "Review in 4 days (Grading: 5)",
-        "medium": "Review in 1 day (Grading: 3)",
-        "hard": "Review in 10 minutes (Grading: 1)"
-      }
-    },
-    {
-      "card_id": 4,
-      "level": "Scientific Reasoning & Application",
-      "front_question": "Prove why the center cell of a 3x3 magic square filled with numbers 1 to 9 must equal 5.",
-      "phonetic_guide": "[Phonetic Guide: Chapter 6 Key Mathematical Concept]",
-      "back_answer": "Sum of 1 to 9 = 45; row sum = 45 / 3 = 15. The center cell x belongs to 4 lines (row 2, col 2, two diagonals). Summing all 4 lines gives 4 * 15 = 60. In this sum, every cell is counted once, except x which is counted 4 times: 45 + 3x = 60 => 3x = 15 => x = 5.",
-      "graphic_description": "Vector visual illustrating Prove why the center cell of a 3x3 magic...",
-      "mnemonic": "Remember key formula / rule in Ch 6",
-      "sm2_grading_buttons": {
-        "easy": "Review in 4 days (Grading: 5)",
-        "medium": "Review in 1 day (Grading: 3)",
-        "hard": "Review in 10 minutes (Grading: 1)"
-      }
-    }
-  ],
-  "image_asset": {
-    "asset_id": "ch6_number_play_magic_square",
-    "chapter_number": 6,
-    "chapter_title": "Number Play",
-    "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
-    "file_name": "ch6_number_play_magic_square.png",
-    "local_url": "/assets/images/ch6_number_play_magic_square.png",
-    "aspect_ratio": "16:9",
-    "width_px": 1600,
-    "height_px": 900,
-    "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
-    "hotspots": [
-      {
-        "hotspot_id": "hs_6_1",
-        "title": "Height Line Logic",
-        "x_percent": 3.125,
-        "y_percent": 53.33,
-        "w_percent": 45.0,
-        "h_percent": 32.22,
-        "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
-      },
-      {
-        "hotspot_id": "hs_6_2",
-        "title": "Integer Parity Algebra",
-        "x_percent": 51.875,
-        "y_percent": 53.33,
-        "w_percent": 45.0,
-        "h_percent": 32.22,
-        "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
-      },
-      {
-        "hotspot_id": "hs_6_3",
-        "title": "3x3 Magic Square Proof",
-        "x_percent": 3.125,
-        "y_percent": 11.11,
-        "w_percent": 45.0,
-        "h_percent": 37.78,
-        "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
-      },
-      {
-        "hotspot_id": "hs_6_4",
-        "title": "Cryptarithms & Elimination",
-        "x_percent": 51.875,
-        "y_percent": 11.11,
-        "w_percent": 45.0,
-        "h_percent": 37.78,
-        "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
-      }
+[
+  {
+    "card_id": 1,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: What are the four es...]",
+    "front_question": "What are the four essential elements required to form a State?",
+    "back_answer": "The four essential elements of a State are: (1) Defined Territory, (2) Permanent Population, (3) Functioning Government, and (4) Sovereignty.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 2,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: Distinguish between ...]",
+    "front_question": "Distinguish between the State and the Government.",
+    "back_answer": "The State is an abstract, permanent political entity comprising territory, population, government, and sovereignty. The Government is the temporary political agency of elected/appointed officials that administers state affairs and changes periodically through elections.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 3,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: What defines a Democ...]",
+    "front_question": "What defines a Democratic Republic?",
+    "back_answer": "A State is 'Democratic' because power resides in citizens who elect representatives through universal suffrage. It is a 'Republic' because the Head of State (President) is an elected citizen rather than a hereditary monarch.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 4,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: Name the three organ...]",
+    "front_question": "Name the three organs of government and their primary functions.",
+    "back_answer": "1. Legislature: Enacts and frames laws (Parliament / State Assemblies).\n2. Executive: Implements and enforces laws (Prime Minister, Cabinet, Civil Services).\n3. Judiciary: Interprets laws and administers justice (Supreme Court, High Courts).",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 5,
+    "level": "Basic Recall",
+    "phonetic_guide": "[Phonetic Guide: What is Sovereignty ...]",
+    "front_question": "What is Sovereignty and why is it essential for statehood?",
+    "back_answer": "Sovereignty is the supreme, independent legal authority of a state to make internal laws and conduct external policy without foreign control or dictation.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 6,
+    "level": "Conceptual Understanding",
+    "phonetic_guide": "[Phonetic Guide: How does the princip...]",
+    "front_question": "How does the principle of Separation of Powers prevent authoritarian rule?",
+    "back_answer": "By dividing governmental powers among three independent organs (Legislature, Executive, Judiciary), no single branch can accumulate absolute power. Each branch exercises checks and balances over the others.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 7,
+    "level": "Experimental / Observational Insights",
+    "phonetic_guide": "[Phonetic Guide: In a classroom Model...]",
+    "front_question": "In a classroom Model Youth Parliament, what steps must a Bill follow to become a Law?",
+    "back_answer": "Introduction by a Minister -> Detailed clause-by-clause debate and opposition questioning -> Proposal and voting on amendments -> Final voting by majority -> Presidential/Head assent.",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
+    ]
+  },
+  {
+    "card_id": 8,
+    "level": "Scientific Reasoning & Application",
+    "phonetic_guide": "[Phonetic Guide: If a government pass...]",
+    "front_question": "If a government passes a law restricting peaceful assembly on public grounds, which organ can citizens approach and on what constitutional basis?",
+    "back_answer": "Citizens can approach the Judiciary (High Court or Supreme Court), which can exercise Judicial Review to strike down the law as unconstitutional for violating Fundamental Rights (Article 19).",
+    "graphic_description": "Visual diagram illustration related to the concept.",
+    "mnemonic": "Remember the key term association for quick recall.",
+    "sm2_grading_buttons": [
+      "Easy (4 Days)",
+      "Medium (2 Days)",
+      "Hard (1 Day)"
     ]
   }
-}
+]

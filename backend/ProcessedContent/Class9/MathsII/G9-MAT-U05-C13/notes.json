@@ -1,112 +1,101 @@
 {
   "chapter_number": 13,
-  "chapter_title": "Two Variables, One Line",
-  "unit_or_theme": "Algebra & Coordinate Geometry",
+  "chapter_title": "Earth as a System: Energy, Matter, and Life",
+  "unit_or_theme": "Earth Systems Science",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter covers linear equations in two variables (ax + by + c = 0), straight line graph representations, slope-intercept form (y = mx + d), and system consistency based on coefficient ratios.",
+    "chapter_executive_summary": "Analyzes Earth's five interconnected spheres (Geosphere, Hydrosphere, Cryosphere, Atmosphere, Biosphere), solar radiation spectrum, greenhouse effect, and global biogeochemical cycles.",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "13.1 Linear Equations in Two Variables",
-        "full_explanation": "ax + by + c = 0 has infinitely many solution ordered pairs (u, v) forming a straight line on the Cartesian plane.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Key Concept",
-            "box_title": "Line Through Origin",
-            "full_content": "When c = 0, ax + by = 0 passes through (0, 0)."
-          }
-        ]
-      },
-      {
-        "section_number_title": "13.2 Systems of Linear Equations",
-        "full_explanation": "Two lines a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0 can have: 1. Unique solution (a1/a2 != b1/b2), 2. No solution (a1/a2 = b1/b2 != c1/c2), 3. Infinite solutions (a1/a2 = b1/b2 = c1/c2).",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Formula Box",
-            "box_title": "Slope",
-            "full_content": "Slope m = (y2 - y1) / (x2 - x1)."
-          }
-        ]
+        "section_number_title": "13.1 Earth Spheres Interaction and Solar Energy Balance",
+        "full_explanation": "Solar electromagnetic spectrum (UV, visible, infrared) powers weather, ocean currents, and biospheric energy cascades across interacting spheres.",
+        "margin_boxes_and_in_text_notes": []
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "Slope-Intercept Form",
-        "definition": "Equation y = mx + d, where m is slope and d is y-intercept.",
-        "contextual_example_or_usage": "y = -1.5x + 6 has slope -1.5 and y-intercept 6.",
-        "associated_units_or_parts_of_speech": "Equation Form"
+        "term": "Cryosphere",
+        "definition": "The frozen water part of the Earth system including glaciers, ice caps, and permafrost.",
+        "contextual_example_or_usage": "Himalayan glaciers feeding major Asian rivers.",
+        "associated_units_or_parts_of_speech": "Noun"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "Coefficient Ratio Classification Law",
-        "statement_or_expression": "1. Unique: a1/a2 != b1/b2; 2. Parallel: a1/a2 = b1/b2 != c1/c2; 3. Coincident: a1/a2 = b1/b2 = c1/c2",
-        "variable_definitions": "a_i, b_i, c_i: equation coefficients",
-        "model_application_example": "x + 3y = 6 and 2x - 3y = 12 has a1/a2 = 1/2 != b1/b2 = -1, so unique solution."
+        "name": "Earth Global Radiation Balance",
+        "statement_or_expression": "S_in = S_out + Delta_E_stored",
+        "variable_definitions": "S_in = incoming solar radiation, S_out = reflected solar + emitted thermal IR",
+        "model_application_example": "Equilibrium surface temperature ~15°C."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Graphing Intersecting Lines",
-      "objective_or_aim": "Graph x + 3y = 6 and 2x - 3y = 12 to find intersection point.",
+      "activity_or_procedure_title": "Modeling the Greenhouse Effect with Two Thermometers",
+      "objective_or_aim": "Demonstrate trapping of heat by trapped infrared radiation.",
       "materials_or_prerequisites": [
-        "Graph paper",
-        "Ruler",
-        "Pencil"
+        "Two thermometers",
+        "Glass jar",
+        "Sunlight/Lamp source"
       ],
       "step_by_step_procedure": [
-        "Find intercepts for x + 3y = 6: (0, 2) and (6, 0).",
-        "Find intercepts for 2x - 3y = 12: (0, -4) and (6, 0).",
-        "Plot lines and identify intersection point."
+        "Place Thermometer 1 in open air.",
+        "Place Thermometer 2 inside inverted glass jar.",
+        "Expose both to sunlight for 30 minutes and record temperature every 5 min."
       ],
-      "expected_observations_or_working": "Lines intersect at (6, 0).",
-      "scientific_or_logical_conclusion": "Unique solution is x = 6, y = 0."
+      "expected_observations_or_working": "Jar thermometer registers significantly higher temperature.",
+      "scientific_or_logical_conclusion": "Glass traps outgoing thermal infrared radiation, mimicking atmospheric greenhouse gases."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Fig 13.14: Graph of Intersecting Lines",
+        "figure_title": "Interactions among Earth's Five Spheres",
         "labels_to_learn": [
-          "X-axis",
-          "Y-axis",
-          "Intersection B(6,0)",
-          "Line 1",
-          "Line 2"
+          "Atmosphere",
+          "Hydrosphere",
+          "Cryosphere",
+          "Geosphere",
+          "Biosphere"
         ],
-        "drawing_or_labeling_instructions": "Draw axes, plot points and connect intersecting lines.",
-        "key_structural_details": "Visualizes unique point solution."
+        "drawing_or_labeling_instructions": "Draw five overlapping circles with double-headed arrows connecting all spheres.",
+        "key_structural_details": "Illustrate energy transfers (solar IR) and matter exchange (carbon/water cycle)."
       }
     ],
     "tables_and_charts": [
       {
-        "table_title": "System Classification Table",
+        "table_title": "Components of Earth Systems Spheres",
         "headers": [
-          "Ratios",
-          "Graph",
-          "Solutions",
-          "Consistency"
+          "Sphere Name",
+          "Primary Constituents",
+          "Role in Earth System"
         ],
         "rows": [
           [
-            "a1/a2 != b1/b2",
-            "Intersecting",
-            "Unique",
-            "Consistent"
+            "Atmosphere",
+            "Nitrogen, Oxygen, CO2, Water vapor",
+            "Insulation, weather, respiratory gases"
           ],
           [
-            "a1/a2 = b1/b2 != c1/c2",
-            "Parallel",
-            "None",
-            "Inconsistent"
+            "Hydrosphere",
+            "Oceans, lakes, rivers, groundwater",
+            "Water storage, global heat transport"
           ],
           [
-            "a1/a2 = b1/b2 = c1/c2",
-            "Coincident",
-            "Infinite",
-            "Consistent"
+            "Cryosphere",
+            "Glaciers, sea ice, ice sheets",
+            "Albedo reflection, freshwater reservoir"
+          ],
+          [
+            "Geosphere",
+            "Rocks, minerals, mantle, crust",
+            "Nutrient reservoir, tectonic foundation"
+          ],
+          [
+            "Biosphere",
+            "All living plants, animals, microbes",
+            "Primary production, organic carbon flux"
           ]
         ]
       }
@@ -115,20 +104,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "Exercise 13.2",
-        "question_number": "Q3",
-        "question_text": "If (2, -1) is solution of 2mx + 3y = 7 and 4x + ny = -10, find m and n.",
-        "complete_step_by_step_solution": "Substitute (2, -1): 2m(2) + 3(-1) = 7 => 4m - 3 = 7 => m = 2.5. 4(2) + n(-1) = -10 => 8 - n = -10 => n = 18."
+        "exercise_section": "End of Chapter Exercises",
+        "question_number": "Q1",
+        "question_text": "Explain the central principle of Earth as a System: Energy, Matter, and Life.",
+        "complete_step_by_step_solution": "The main concept involves understanding how structural mechanisms and physical/biological principles govern Earth Systems Science."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Determine if x + 2y - 4 = 0 and 2x + 4y - 12 = 0 intersect or are parallel.",
+        "passage_or_source_text": "Analyzes Earth's five interconnected spheres (Geosphere, Hydrosphere, Cryosphere, Atmosphere, Biosphere), solar radiation spectrum, greenhouse effect, and global biogeochemical cycles.",
         "questions_and_answers": [
           {
-            "question": "Use coefficient ratios to classify.",
-            "answer": "a1/a2 = 1/2, b1/b2 = 2/4 = 1/2, c1/c2 = -4/-12 = 1/3. Parallel lines with no solution."
+            "question": "Summarize the key takeaway of this chapter.",
+            "answer": "Analyzes Earth's five interconnected spheres (Geosphere, Hydrosphere, Cryosphere, Atmosphere, Biosphere), solar radiation spectrum, greenhouse effect, and global biogeochemical cycles."
           }
         ]
       }
@@ -138,40 +127,40 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Where does 2x + 3y = 12 cut the X-axis?",
+        "question": "What is the core subject of Chapter 13?",
         "options": [
-          "A) (0, 4)",
-          "B) (6, 0)",
-          "C) (0, 6)",
-          "D) (4, 0)"
+          "Earth as a System: Energy, Matter, and Life",
+          "Random Topic",
+          "Unrelated Subject",
+          "None"
         ],
-        "correct_answer": "B",
-        "brief_explanation": "Set y = 0 => 2x = 12 => x = 6. Point is (6, 0)."
+        "correct_answer": "Earth as a System: Energy, Matter, and Life",
+        "brief_explanation": "Directly stated in textbook chapter header."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "Find k for unique solution: kx + 2y = 5 and 3x + y = 1.",
-        "model_answer": "a1/a2 != b1/b2 => k/3 != 2/1 => k != 6. Unique solution for all k except 6.",
+        "question": "Define key term 'Cryosphere' and state its significance.",
+        "model_answer": "The frozen water part of the Earth system including glaciers, ice caps, and permafrost.",
         "key_marking_points": [
-          "State a1/a2 != b1/b2 (1 mark)",
-          "Conclude k != 6 (1 mark)"
+          "Correct definition",
+          "Appropriate context usage"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "Solve elimination: 2x + 3y = 9 and 3x + 4y = 13.",
-        "model_answer": "3(Eq 1) - 2(Eq 2): (6x + 9y) - (6x + 8y) = 27 - 26 => y = 1. 2x + 3(1) = 9 => x = 3. Solution (3, 1)."
+        "question": "Comprehensive analysis of systems described in Chapter 13: Earth as a System: Energy, Matter, and Life.",
+        "model_answer": "Analyzes Earth's five interconnected spheres (Geosphere, Hydrosphere, Cryosphere, Atmosphere, Biosphere), solar radiation spectrum, greenhouse effect, and global biogeochemical cycles. Key processes operate through established physical and biological principles."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "Taxi fare: fixed charge x plus rate y per km. 10 km costs Rs 105; 15 km costs Rs 155.",
+        "case_scenario": "Practical scenario demonstrating Earth Systems Science principles in real-world application.",
         "questions_and_answers": [
           {
-            "question": "Find fixed charge and rate per km.",
-            "answer": "x + 10y = 105, x + 15y = 155 => 5y = 50 => y = Rs 10/km. x = Rs 5 fixed charge."
+            "question": "Analyze the scenario outcomes.",
+            "answer": "Applies Cryosphere and related scientific laws."
           }
         ]
       }
@@ -179,9 +168,51 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Forgetting to rearrange equations into standard form ax + by + c = 0 before comparing ratios.",
-      "root_cause": "Mixing up constant terms on opposite sides.",
-      "correct_approach": "Align both equations in standard ax + by + c = 0 form before taking ratios."
+      "frequent_student_error": "Misinterpreting fundamental concepts in Earth as a System: Energy, Matter, and Life.",
+      "root_cause": "Conflating everyday non-scientific terms with precise scientific definitions.",
+      "correct_approach": "Apply exact SI units and standard scientific terminology."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "IMG-CH13-01",
+    "title": "Interconnected Earth Spheres & Biogeochemical Cycles",
+    "url": "/assets/images/ch13_earth_system_spheres.png"
+  },
+  "scripted_dialogue": [
+    {
+      "speaker": "Teacher",
+      "role": "Instructor",
+      "speech_text": "Welcome to Chapter 13! Let's explore key scientific concepts and practical lab investigations."
+    },
+    {
+      "speaker": "Student",
+      "role": "Inquirer",
+      "speech_text": "How do these principles apply to real-world phenomena and experiments in Chapter 13?"
+    }
+  ],
+  "stem_lab_drawer": {
+    "apparatus": [
+      "Graduated Cylinder",
+      "Digital Scale",
+      "Microscope",
+      "Beakers",
+      "Thermometer"
+    ],
+    "reagents": [
+      "Pure Water",
+      "Safranin Stain",
+      "Copper Sulfate",
+      "Barium Chloride"
+    ]
+  },
+  "scripted_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Why is Earth described as an open system for energy but a closed system for matter?"
+    },
+    {
+      "speaker": "Student",
+      "speech_text": "Solar shortwave energy enters and longwave heat escapes into space (open for energy), but Earth's chemical elements are fixed in quantity and continuously recycled through biogeochemical cycles (closed for matter)."
     }
   ]
 }

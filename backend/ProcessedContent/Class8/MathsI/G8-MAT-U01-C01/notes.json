@@ -1,205 +1,149 @@
 {
   "chapter_number": 1,
-  "chapter_title": "A Square and A Cube",
-  "unit_or_theme": "Number Systems and Patterns",
-  "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter explores perfect squares, square roots, cubic numbers, and cube roots through puzzle-based stories and visual geometric models. Students discover patterns like ending digits, sums of consecutive odd numbers, factor locker puzzles, prime factorization, and prime triplet methods for roots.",
-    "detailed_section_hierarchy": [
-      {
-        "section_number_title": "1.1 Perfect Squares and Square Roots",
-        "full_explanation": "A perfect square is formed by multiplying a natural number by itself (n * n = n^2). The area of a square of side x is x^2 sq units. Perfect squares always have an odd number of total factors. Ending digits of perfect squares can only be 0, 1, 4, 5, 6, or 9. The sum of the first n consecutive odd numbers equals n^2.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Pattern Discovery",
-            "box_title": "Queen Ratnamanjuri's Will",
-            "full_content": "Lockers remain open if and only if their locker numbers are perfect squares, because perfect squares possess an odd count of total factors."
-          }
-        ]
-      },
-      {
-        "section_number_title": "1.2 Cubic Numbers and Cube Roots",
-        "full_explanation": "A cubic number or perfect cube is formed by multiplying a natural number by itself three times (n * n * n = n^3). A unit cube of side 1 cm forms larger cubes of side 2 cm (8 cubes), 3 cm (27 cubes), etc. Cube roots are solved by prime factorisation into groups of 3 identical prime factors.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Try This",
-            "box_title": "Sum of Consecutive Odd Numbers for Cubes",
-            "full_content": "1 = 1^3, 3 + 5 = 8 = 2^3, 7 + 9 + 11 = 27 = 3^3, 13 + 15 + 17 + 19 = 64 = 4^3."
-          }
-        ]
-      }
-    ]
-  },
-  "m2_key_definitions_formulas_and_vocabulary": {
-    "glossary_and_key_terms": [
-      {
-        "term": "Perfect Square",
-        "definition": "A natural number that can be expressed as the product of an integer with itself.",
-        "contextual_example_or_usage": "16 is a perfect square because 4 x 4 = 16.",
-        "associated_units_or_parts_of_speech": "Noun / Area Units"
-      },
-      {
-        "term": "Perfect Cube",
-        "definition": "A number obtained by multiplying a natural number by itself three times.",
-        "contextual_example_or_usage": "27 is a perfect cube because 3 x 3 x 3 = 27.",
-        "associated_units_or_parts_of_speech": "Noun / Volume Units"
-      }
-    ],
-    "formulas_rules_and_laws": [
-      {
-        "name": "Sum of First n Odd Numbers",
-        "statement_or_expression": "1 + 3 + 5 + ... + (2n - 1) = n^2",
-        "variable_definitions": "n = number of consecutive odd numbers starting from 1",
-        "model_application_example": "1 + 3 + 5 + 7 + 9 = 5^2 = 25"
-      },
-      {
-        "name": "Non-Square Numbers Between Squares",
-        "statement_or_expression": "Between n^2 and (n+1)^2, there are 2n non-square numbers.",
-        "variable_definitions": "n = smaller natural number",
-        "model_application_example": "Between 16^2 and 17^2, there are 2(16) = 32 numbers."
-      }
-    ]
-  },
-  "m3_practical_activities_lab_and_step_by_step_procedures": [
+  "chapter_title": "World Geography: Some Glimpses",
+  "detailed_sections": [
     {
-      "activity_or_procedure_title": "Finding Cube Roots via Prime Factorisation",
-      "objective_or_aim": "Determine the cube root of 27000.",
-      "materials_or_prerequisites": [
-        "Paper",
-        "Pencil",
-        "Knowledge of prime factorisation"
-      ],
-      "step_by_step_procedure": [
-        "Step 1: Express 27000 as prime factors: 2 x 2 x 2 x 3 x 3 x 3 x 5 x 5 x 5.",
-        "Step 2: Group identical factors into triplets: (2 x 2 x 2), (3 x 3 x 3), (5 x 5 x 5).",
-        "Step 3: Pick one number from each triplet: 2 x 3 x 5.",
-        "Step 4: Multiply them to get the cube root: 2 x 3 x 5 = 30."
-      ],
-      "expected_observations_or_working": "27000 resolves cleanly into 3 triplets of primes.",
-      "scientific_or_logical_conclusion": "The cube root of 27000 is 30."
+      "section_number_and_title": "1.1 The Complexity of Mapping the Earth",
+      "full_notes": "Earth is an oblate spheroid. Flattening a 3D sphere onto a 2D plane creates mathematical distortions in shape, distance, direction, or area. Cartographers use map projections such as Mercator (preserves shapes/navigation angles but inflates polar areas) and Robinson (a balanced compromise projection).",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Vocabulary / Definition Box",
+          "title": "Oblate Spheroid",
+          "content": "A nearly spherical shape that bulges at the equator and is slightly flattened at the poles due to planetary rotation."
+        },
+        {
+          "type": "Don't Miss Out",
+          "title": "Greenland vs. India Area Comparison",
+          "content": "On a Mercator projection map, Greenland appears significantly larger than India, whereas in reality India (3.28 million sq km) is much larger than Greenland (2.16 million sq km)."
+        }
+      ]
+    },
+    {
+      "section_number_and_title": "1.2 Oceans, Water Channels, and Global Connectivity",
+      "full_notes": "Oceans cover over 70% of Earth's surface and regulate climate via warm and cold ocean currents. Narrow water channels like Straits (e.g. Strait of Malacca) and Canals (e.g. Suez Canal, opened 1869) serve as vital maritime transit corridors linking global trade.",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Don't Miss Out",
+          "title": "The Suez Canal Impact",
+          "content": "Opened in 1869, the Suez Canal connects the Mediterranean Sea to the Red Sea, cutting maritime travel distance between India and Europe by over 7,000 km."
+        }
+      ]
+    },
+    {
+      "section_number_and_title": "1.3 Terrestrial Landforms, Grasslands, and Climate",
+      "full_notes": "The Earth features diverse landforms including high mountains, plateaus (Colorado Plateau), vast plains (European Plain), deserts (Sahara, Gobi), and grasslands. The Eurasian Steppes span 8,000 km and function as vital underground carbon sinks storing massive atmospheric carbon.",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Environmental Focus",
+          "title": "Eurasian Steppes as Carbon Sinks",
+          "content": "Extensive grassland root systems trap carbon deep beneath the soil, making them essential natural buffers against atmospheric global warming."
+        }
+      ]
     }
   ],
-  "m4_diagrams_tables_and_visual_data": {
-    "diagrams_and_illustrations": [
-      {
-        "figure_title": "Unit Cubes Assembly",
-        "labels_to_learn": [
-          "Side Length",
-          "Unit Cube",
-          "Volume"
-        ],
-        "drawing_or_labeling_instructions": "Draw a 3x3x3 block composed of 27 individual unit cubes.",
-        "key_structural_details": "Visualizes how 3D cubic dimensions scale with edge length n^3."
-      }
-    ],
-    "tables_and_charts": [
-      {
-        "table_title": "First 5 Perfect Squares and Cubes",
-        "headers": [
-          "n",
-          "Square (n^2)",
-          "Cube (n^3)"
-        ],
-        "rows": [
-          [
-            "1",
-            "1",
-            "1"
-          ],
-          [
-            "2",
-            "4",
-            "8"
-          ],
-          [
-            "3",
-            "9",
-            "27"
-          ],
-          [
-            "4",
-            "16",
-            "64"
-          ],
-          [
-            "5",
-            "25",
-            "125"
-          ]
-        ]
-      }
-    ]
-  },
-  "m5_textbook_solutions_and_extracts": {
-    "end_of_chapter_textbook_solutions": [
-      {
-        "exercise_section": "Figure it Out 1.2",
-        "question_number": "Q2",
-        "question_text": "What number will you multiply by 1323 to make it a cube number?",
-        "complete_step_by_step_solution": "Prime factorise 1323 = 3 x 3 x 3 x 7 x 7. The factor 3 is in a triplet, but 7 appears only twice. To form a triplet of 7s, we multiply by 7. Thus, 1323 x 7 = 9261 = 21^3."
-      }
-    ],
-    "extract_or_passage_based_questions": [
-      {
-        "extract_id": 1,
-        "passage_or_source_text": "Queen Ratnamanjuri left a puzzle regarding 100 lockers...",
-        "questions_and_answers": [
-          {
-            "question": "Which lockers remain open at the end?",
-            "answer": "Only lockers whose numbers are perfect squares (1, 4, 9, 16, 25, 36, 49, 64, 81, 100) because they have an odd number of factors."
-          }
-        ]
-      }
-    ]
-  },
-  "m6_tiered_exam_question_bank": {
-    "level_1_objective_questions_1_mark": [
-      {
-        "type": "MCQ",
-        "question": "Which of the following cannot be the unit digit of a perfect square?",
-        "options": [
-          "1",
-          "5",
-          "7",
-          "9"
-        ],
-        "correct_answer": "7",
-        "brief_explanation": "Perfect squares can only end in 0, 1, 4, 5, 6, or 9."
-      }
-    ],
-    "level_2_short_answer_questions_2_to_3_marks": [
-      {
-        "question": "How many non-square natural numbers lie between 99^2 and 100^2?",
-        "model_answer": "The number of non-square numbers between n^2 and (n+1)^2 is 2n. Here n = 99, so 2 x 99 = 198 numbers.",
-        "key_marking_points": [
-          "State formula 2n",
-          "Substitute n = 99",
-          "Correct answer 198"
-        ]
-      }
-    ],
-    "level_3_long_answer_and_reasoning_5_marks": [
-      {
-        "question": "Find the smallest number by which 256 must be divided so that the quotient is a perfect cube.",
-        "model_answer": "256 = 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 = (2 x 2 x 2) x (2 x 2 x 2) x 2 x 2. The prime factor 2 occurs 8 times. Grouping into triplets leaves two 2s extra (2 x 2 = 4). Dividing 256 by 4 gives 64, which is 4^3 (a perfect cube)."
-      }
-    ],
-    "level_4_competency_and_case_studies": [
-      {
-        "case_scenario": "A gardener wants to arrange 1000 plants in a square grid such that the number of rows equals the number of columns.",
-        "questions_and_answers": [
-          {
-            "question": "How many minimum additional plants are needed?",
-            "answer": "31^2 = 961 and 32^2 = 1024. Next square is 1024, so 1024 - 1000 = 24 additional plants are needed."
-          }
-        ]
-      }
-    ]
-  },
-  "m7_common_pitfalls_and_misconceptions": [
+  "comparison_tables": [
     {
-      "frequent_student_error": "Assuming 3^2 = 6 instead of 9.",
-      "root_cause": "Confusing exponentiation (multiplication of base by itself) with multiplying base by exponent.",
-      "correct_approach": "Emphasize that a^b means multiplying 'a' repeatedly 'b' times."
+      "table_title": "Standard Colour Conventions on Physical Maps",
+      "headers": [
+        "Map Colour",
+        "Geographical Feature Represented"
+      ],
+      "rows": [
+        [
+          "Blue",
+          "Water bodies (Oceans, Seas, Lakes, Rivers)"
+        ],
+        [
+          "Green",
+          "Plains and Lowlands"
+        ],
+        [
+          "Yellow / Brown",
+          "Plateaus"
+        ],
+        [
+          "Dark Brown",
+          "High Mountains and Alpine Ranges"
+        ],
+        [
+          "Light Yellow",
+          "Arid and Semi-Arid Deserts"
+        ],
+        [
+          "White",
+          "Ice Sheets, Glaciers, and Polar Regions"
+        ]
+      ]
     }
-  ]
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "DLG_CH1_01",
+      "title": "Master Educator & Student Discussion on World Geography: Some Glimpses",
+      "transcript": [
+        {
+          "speaker": "Master Educator",
+          "speech_text": "Welcome! Today we delve deeply into World Geography: Some Glimpses. What is the central paradox or mechanism here?"
+        },
+        {
+          "speaker": "Student",
+          "speech_text": "Is it about how geographic, historical, or legal frameworks structure daily human society?"
+        },
+        {
+          "speaker": "Master Educator",
+          "speech_text": "Precisely. Let's analyze the evidence from primary sources and empirical metrics."
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "activity_or_method_id": "ACT-1-01",
+      "aim_or_objective": "To physically demonstrate why laying a 3D spherical surface flat causes tears and distortions on a 2D map.",
+      "materials_or_prerequisites": [
+        "One fresh orange or small spherical ball",
+        "Peeler or marker"
+      ],
+      "procedure_or_steps": [
+        "Draw simple continental shapes on the uncut orange skin using a permanent marker.",
+        "Peel the skin carefully in one continuous piece or large sections.",
+        "Attempt to press the curved orange peel completely flat onto a desktop without tearing or stretching it."
+      ],
+      "observations_or_results": "The peel splits, tears at the edges, or buckles in the center when forced onto a flat surface.",
+      "conclusion_or_principle": "Curved 3D surfaces cannot be transformed into flat 2D maps without distortion of area, shape, or continuity."
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calculator_name": "Chapter 1 Metric & Rule Evaluator",
+      "formula_expression": "Distortion = Surface Area (Flat) - Surface Area (Spherical) — Flat map projections cannot preserve both angular conformality and true surface area simultaneously.",
+      "description": "Mercator projection preserves angle but distorts area proportionally to 1/cos(latitude)."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "IMG_CH1_01",
+    "title": "Chapter 1 Visual Key: World Geography: Some Glimpses",
+    "url": "/assets/images/ch1_map_projections.png",
+    "aspect_ratio": "16:9",
+    "hotspots": [
+      {
+        "hotspot_id": "HS_01",
+        "label": "Primary Concept Focus",
+        "x_percent": 25.0,
+        "y_percent": 30.0,
+        "w_percent": 40.0,
+        "h_percent": 35.0,
+        "annotation": "Core structural breakdown and theoretical mechanism."
+      },
+      {
+        "hotspot_id": "HS_02",
+        "label": "Comparative Analysis / Case Evidence",
+        "x_percent": 68.0,
+        "y_percent": 25.0,
+        "w_percent": 28.0,
+        "h_percent": 60.0,
+        "annotation": "Empirical example, historical source, or statutory rule."
+      }
+    ]
+  }
 }

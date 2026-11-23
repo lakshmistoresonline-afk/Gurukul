@@ -1,56 +1,62 @@
 {
   "chapter_number": 6,
-  "chapter_title": "Number Play",
+  "chapter_title": "The State, the Government, and You",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - Number Play (Parity & Line Puzzles)",
-      "total_marks": 20,
+      "paper_title": "Set 1 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
-      "teacher_rubric_overlay": {
-        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
-        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
-        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
-        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "What is the parity of the sum of three odd numbers?",
+              "question_text": "Which of the following is NOT an essential element of a State?",
               "options": [
-                "A) Even",
-                "B) Odd",
-                "C) Zero",
-                "D) Variable"
+                "A) Defined Territory",
+                "B) Permanent Population",
+                "C) Political Party",
+                "D) Sovereignty"
               ],
-              "correct_answer": "B) Odd",
+              "correct_answer": "C) Political Party",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "In a 3x3 magic square with numbers 1 to 9, what is the center cell value?",
+              "question_text": "India is classified as a 'Republic' because:",
               "options": [
-                "A) 1",
-                "B) 3",
-                "C) 5",
-                "D) 9"
+                "A) It has a written constitution",
+                "B) Its Head of State (President) is an elected citizen",
+                "C) It has a Parliament",
+                "D) It has High Courts"
               ],
-              "correct_answer": "C) 5",
+              "correct_answer": "B) Its Head of State (President) is an elected citizen",
               "marks": 1
             },
             {
               "question_number": 3,
-              "question_text": "What does a callout number '0' mean for a child standing in a line?",
+              "question_text": "The power of the Judiciary to invalidate unconstitutional laws passed by Parliament is:",
               "options": [
-                "A) Shortest child",
-                "B) Tallest child in line",
-                "C) No child in front is taller",
-                "D) Last child"
+                "A) Legislative veto",
+                "B) Judicial Review",
+                "C) Executive order",
+                "D) Ordinance"
               ],
-              "correct_answer": "C) No child in front is taller",
+              "correct_answer": "B) Judicial Review",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Which organ of government is responsible for making and amending laws?",
+              "options": [
+                "A) Executive",
+                "B) Legislature",
+                "C) Judiciary",
+                "D) Bureaucracy"
+              ],
+              "correct_answer": "B) Legislature",
               "marks": 1
             }
           ]
@@ -60,142 +66,97 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Determine the parity of (Even * Odd) + Odd.",
-              "marking_scheme_answer": "Even * Odd = Even. Even + Odd = Odd.",
-              "marks": 2
+              "question_text": "Distinguish between the State and the Government.",
+              "marking_scheme_answer": "State: Abstract, permanent political entity (comprising territory, population, government, sovereignty). Government: Temporary agency of elected officials managing state administration.",
+              "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "Why is the sum of page numbers on any single loose leaf from a book always odd?",
-              "marking_scheme_answer": "Pages are 2k-1 and 2k. Sum = (2k-1) + 2k = 4k - 1, which is always odd.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Seven children call out standing height counts: (0, 0, 1, 0, 3, 0, 3). Which child is guaranteed to be the tallest?",
-              "marking_scheme_answer": "The child at position 1 who calls out '0' with nobody ahead is the tallest overall.",
+              "question_text": "List the three organs of government and their primary functions.",
+              "marking_scheme_answer": "1. Legislature: Frames and enacts laws. 2. Executive: Enforces and implements laws. 3. Judiciary: Interprets laws and enforces justice.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section C (Long Answer / Case-Study)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Prove why the center cell 'x' of a 3x3 magic square filled with numbers 1 to 9 must equal 5.",
-              "marking_scheme_answer": "Sum of 1..9 = 45. Row sum = 15. Center cell x belongs to 4 lines (row 2, col 2, two diagonals). Adding these 4 lines gives 4*15 = 60. Every cell is counted once, except x which is counted 4 times: 45 + 3x = 60 => 3x = 15 => x = 5.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Liswini has 50 loose sheets (100 pages printed on both sides). Can the sum of page numbers of all loose sheets be 6000? Explain using parity and sum formulas.",
-              "marking_scheme_answer": "Each loose sheet sum = 4k-1 (odd). Sum of 50 odd numbers is always EVEN. Total sum of first 100 pages = 100*101/2 = 5050. Any 50 sheets from a 100-page book sum to 5050. In a larger book, 50 sheets can sum to 6000 because parity of 50 odd sheets is even and 6000 is even.",
+              "question_text": "Explain the principle of 'Separation of Powers' and how 'Checks and Balances' prevent concentration of authority in India.",
+              "marking_scheme_answer": "Separation of Powers divides governmental functions among Legislature, Executive, and Judiciary. Checks and Balances ensure no branch is supreme: Executive is accountable to Parliament; Judiciary can strike down unconstitutional laws via Judicial Review; Parliament can impeach judges for proven misconduct.",
               "marks": 5
             }
           ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Scenario: A state passes a law banning peaceful civic assembly on public grounds.\n(a) Which organ can citizens approach to challenge this law?\n(b) On what constitutional grounds can the court strike it down?",
+              "marking_scheme_answer": "(a) The Judiciary (High Court or Supreme Court).\n(b) Violates Fundamental Rights (Article 19 - Freedom of Speech and Peaceful Assembly).",
+              "marks": 4
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "asset_id": "ch6_number_play_magic_square",
-        "chapter_number": 6,
-        "chapter_title": "Number Play",
-        "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
-        "file_name": "ch6_number_play_magic_square.png",
-        "local_url": "/assets/images/ch6_number_play_magic_square.png",
-        "aspect_ratio": "16:9",
-        "width_px": 1600,
-        "height_px": 900,
-        "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
-        "hotspots": [
-          {
-            "hotspot_id": "hs_6_1",
-            "title": "Height Line Logic",
-            "x_percent": 3.125,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
-          },
-          {
-            "hotspot_id": "hs_6_2",
-            "title": "Integer Parity Algebra",
-            "x_percent": 51.875,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
-          },
-          {
-            "hotspot_id": "hs_6_3",
-            "title": "3x3 Magic Square Proof",
-            "x_percent": 3.125,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
-          },
-          {
-            "hotspot_id": "hs_6_4",
-            "title": "Cryptarithms & Elimination",
-            "x_percent": 51.875,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
-          }
-        ]
-      }
+      ]
     },
     {
       "paper_id": 2,
-      "paper_title": "Set 2 - Number Play (Parity Proofs & Magic Constant)",
-      "total_marks": 20,
+      "paper_title": "Set 2 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
-      "teacher_rubric_overlay": {
-        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
-        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
-        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
-        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "What is the magic constant 'S' for a 3x3 magic square using numbers 1 to 9?",
+              "question_text": "Sovereignty as an element of a State means:",
               "options": [
-                "A) 12",
-                "B) 15",
-                "C) 18",
-                "D) 45"
+                "A) Subordination to foreign rule",
+                "B) Supreme, independent legal authority",
+                "C) Absence of laws",
+                "D) Rule by military"
               ],
-              "correct_answer": "B) 15",
+              "correct_answer": "B) Supreme, independent legal authority",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "Odd * Odd = ?",
+              "question_text": "In India, the supreme law of the land is the:",
               "options": [
-                "A) Even",
-                "B) Odd",
-                "C) Zero",
-                "D) Negative"
+                "A) Prime Minister's Decree",
+                "B) Constitution of India",
+                "C) Supreme Court Order",
+                "D) Parliamentary Act"
               ],
-              "correct_answer": "B) Odd",
+              "correct_answer": "B) Constitution of India",
               "marks": 1
             },
             {
               "question_number": 3,
-              "question_text": "In a group of 8 people, what is the maximum callout number possible?",
+              "question_text": "Universal Adult Franchise grants the right to vote to all citizens above the age of:",
               "options": [
-                "A) 8",
-                "B) 7",
-                "C) 6",
-                "D) 1"
+                "A) 16 years",
+                "B) 18 years",
+                "C) 21 years",
+                "D) 25 years"
               ],
-              "correct_answer": "B) 7",
+              "correct_answer": "B) 18 years",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Which organ of government implements public policy and executes laws?",
+              "options": [
+                "A) Legislature",
+                "B) Executive",
+                "C) Judiciary",
+                "D) Press"
+              ],
+              "correct_answer": "B) Executive",
               "marks": 1
             }
           ]
@@ -205,142 +166,97 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "State the parity of the product of 5 odd numbers and 2 even numbers.",
-              "marking_scheme_answer": "Product of 5 odds is Odd. Multiplying by even numbers yields EVEN.",
-              "marks": 2
+              "question_text": "Why is Sovereignty considered the defining element that separates a sovereign State from a colony?",
+              "marking_scheme_answer": "A colony has territory and population but lacks sovereignty because its laws and foreign policy are dictated by an external ruling power.",
+              "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "How many distinct 3x3 magic squares exist using numbers 1 to 9 (including rotations and reflections)?",
-              "marking_scheme_answer": "There are exactly 8 distinct magic squares.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Fill the top row of a 3x3 magic square if the center is 5 and bottom row is [4, 9, 2].",
-              "marking_scheme_answer": "Row 1 = [8, 1, 6] because columns must sum to 15 (8+3+4=15, 1+5+9=15, 6+7+2=15).",
+              "question_text": "What is a Democratic Republic?",
+              "marking_scheme_answer": "Democratic: Power is exercised by citizens through free, periodic elections. Republic: Head of State is an elected citizen, not a hereditary monarch.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section C (Long Answer / Case-Study)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Algebraically prove that: (1) Odd + Odd = Even, (2) Odd * Odd = Odd, using expressions 2m + 1 and 2n + 1.",
-              "marking_scheme_answer": "1. (2m+1) + (2n+1) = 2m + 2n + 2 = 2(m + n + 1) -> Multiple of 2 => EVEN. 2. (2m+1)(2n+1) = 4mn + 2m + 2n + 1 = 2(2mn + m + n) + 1 -> Form 2k + 1 => ODD.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "A 2x3 grid is filled with even 'e' and odd 'o' numbers. Row 1 sum must be Even, Row 2 sum Odd, Col 1 Odd, Col 2 Even, Col 3 Odd. Construct a valid e/o grid solution.",
-              "marking_scheme_answer": "Row 1: [e, e, e] (sum = e). Row 2: [o, e, o] (sum = e+o+o = e? wait, o+e+o = e. To get sum=o: [o, e, e] => sum=o). Check cols: Col 1 [e, o] = o; Col 2 [e, e] = e; Col 3 [e, e] = e (needs o). Adjust Row 1 to [e, e, o] (sum=o). Final Grid: Row 1 = [e, e, o] (sum=o?), wait: e+e+o = o. Adjust to satisfy all 5 constraints simultaneously: Row 1 = [e, e, e] (sum=e), Row 2 = [o, e, o] (sum=e). Col 1 [e,o]=o, Col 2 [e,e]=e, Col 3 [e,o]=o. Row 2 sum o+e+o = e? No, o+o = e. Let Row 2 = [o, e, e] (sum=o). Col 3 [e, e] = e. Make Col 3 [o, o] = e. Solution: Row 1 = [e, e, o] (sum=o), change Row 1 constraint or grid entries so all match.",
+              "question_text": "Discuss the four essential elements required to form a State, illustrating each with Indian examples.",
+              "marking_scheme_answer": "1. Defined Territory: Geographically demarcated borders.\n2. Permanent Population: 1.4 billion citizens.\n3. Functioning Government: Union and State constitutional governments.\n4. Sovereignty: Total legal independence in domestic and foreign policy.",
               "marks": 5
             }
           ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Scenario: A student model parliament debates a draft School Safety Bill.\n(a) What steps occur during the first and second reading of a bill?\n(b) What role does the Opposition play in a democracy?",
+              "marking_scheme_answer": "(a) First reading introduces the bill; second reading involves clause-by-clause debate and amendments.\n(b) The Opposition questions government policies, highlights flaws, and ensures accountability.",
+              "marks": 4
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "asset_id": "ch6_number_play_magic_square",
-        "chapter_number": 6,
-        "chapter_title": "Number Play",
-        "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
-        "file_name": "ch6_number_play_magic_square.png",
-        "local_url": "/assets/images/ch6_number_play_magic_square.png",
-        "aspect_ratio": "16:9",
-        "width_px": 1600,
-        "height_px": 900,
-        "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
-        "hotspots": [
-          {
-            "hotspot_id": "hs_6_1",
-            "title": "Height Line Logic",
-            "x_percent": 3.125,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
-          },
-          {
-            "hotspot_id": "hs_6_2",
-            "title": "Integer Parity Algebra",
-            "x_percent": 51.875,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
-          },
-          {
-            "hotspot_id": "hs_6_3",
-            "title": "3x3 Magic Square Proof",
-            "x_percent": 3.125,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
-          },
-          {
-            "hotspot_id": "hs_6_4",
-            "title": "Cryptarithms & Elimination",
-            "x_percent": 51.875,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
-          }
-        ]
-      }
+      ]
     },
     {
       "paper_id": 3,
-      "paper_title": "Set 3 - Number Play (Cryptarithms & Magic Grids)",
-      "total_marks": 20,
+      "paper_title": "Set 3 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
-      "teacher_rubric_overlay": {
-        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
-        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
-        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
-        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Even + Even + Odd = ?",
+              "question_text": "Which quote regarding civic participation is attributed to Socrates in Plato's Republic?",
               "options": [
-                "A) Even",
-                "B) Odd",
-                "C) Zero",
-                "D) None"
+                "A) Knowledge is virtue",
+                "B) The punishment for refusing to rule is being ruled by someone worse",
+                "C) An unexamined life is not worth living",
+                "D) Man is a political animal"
               ],
-              "correct_answer": "B) Odd",
+              "correct_answer": "B) The punishment for refusing to rule is being ruled by someone worse",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "In cryptarithm A + A = BA, what is digit B?",
+              "question_text": "The civil services and administration form part of the:",
               "options": [
-                "A) 0",
-                "B) 1",
-                "C) 2",
-                "D) 5"
+                "A) Political Executive",
+                "B) Permanent Executive (Bureaucracy)",
+                "C) Judiciary",
+                "D) Legislature"
               ],
-              "correct_answer": "B) 1",
+              "correct_answer": "B) Permanent Executive (Bureaucracy)",
               "marks": 1
             },
             {
               "question_number": 3,
-              "question_text": "First person in a line always calls out:",
+              "question_text": "Which Act allows citizens to demand official records and information from government bodies?",
               "options": [
-                "A) 0",
-                "B) 1",
-                "C) 2",
-                "D) 7"
+                "A) Right to Education Act",
+                "B) Right to Information (RTI) Act",
+                "C) Consumer Protection Act",
+                "D) Civil Rights Act"
               ],
-              "correct_answer": "A) 0",
+              "correct_answer": "B) Right to Information (RTI) Act",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "In a constitutional democracy, minority rights are protected against:",
+              "options": [
+                "A) The Judiciary",
+                "B) Tyranny or overreach by the majority",
+                "C) Foreign aid",
+                "D) Taxation"
+              ],
+              "correct_answer": "B) Tyranny or overreach by the majority",
               "marks": 1
             }
           ]
@@ -350,142 +266,97 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Solve cryptarithm: AB + AB = CAD when A = 5, B = 6.",
-              "marking_scheme_answer": "56 + 56 = 112. C = 1, A = 1? wait: digits must match letter assignments.",
-              "marks": 2
+              "question_text": "Differentiate between the Political Executive and the Permanent Executive.",
+              "marking_scheme_answer": "Political Executive: Elected ministers (PM, Cabinet) holding office for a temporary term. Permanent Executive: Civil servants (IAS, IPS) appointed permanently based on merit.",
+              "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "Can 10 odd numbers sum to 100? Explain.",
-              "marking_scheme_answer": "Yes. Sum of an even count (10) of odd numbers is always EVEN, and 100 is even.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Can 9 odd numbers sum to 100? Explain.",
-              "marking_scheme_answer": "No. Sum of an odd count (9) of odd numbers is always ODD. 100 is even, so impossible.",
+              "question_text": "How does the Right to Information (RTI) empower ordinary citizens?",
+              "marking_scheme_answer": "RTI mandates government transparency, allowing citizens to inspect public works, audit expenditure, and expose administrative corruption.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section C (Long Answer / Case-Study)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "In a cryptarithm SEND + MORE = MONEY, determine the single digit values for M and S with logical deduction steps.",
-              "marking_scheme_answer": "Since adding two 4-digit numbers yields a 5-digit number, carry digit M = 1. S + 1 + carry >= 10 => S = 8 or 9. S = 9.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Construct a 3x3 magic square where numbers used are 2, 4, 6, 8, 10, 12, 14, 16, 18. Calculate total sum, row sum, and center cell.",
-              "marking_scheme_answer": "Total sum = 90. Row sum S = 90/3 = 30. Center cell = 30/3 = 10. Magic square elements are 2x standard square [16, 2, 12 / 6, 10, 14 / 8, 18, 4].",
+              "question_text": "Examine the role of the Judiciary as the guardian of the Constitution and protector of Fundamental Rights.",
+              "marking_scheme_answer": "The Judiciary operates independently of Executive/Legislature. It protects citizens against state overreach by issuing writs, exercising Judicial Review, striking down unconstitutional laws, and ensuring rule of law.",
               "marks": 5
             }
           ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Scenario: A citizen files an RTI application regarding bridge construction delays.\n(a) Which government body must respond to this RTI request?\n(b) Why is public disclosure of project budgets important?",
+              "marking_scheme_answer": "(a) The concerned Public Works Department (PWD) Public Information Officer.\n(b) Prevents embezzlement, ensures quality materials are used, and enforces accountability.",
+              "marks": 4
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "asset_id": "ch6_number_play_magic_square",
-        "chapter_number": 6,
-        "chapter_title": "Number Play",
-        "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
-        "file_name": "ch6_number_play_magic_square.png",
-        "local_url": "/assets/images/ch6_number_play_magic_square.png",
-        "aspect_ratio": "16:9",
-        "width_px": 1600,
-        "height_px": 900,
-        "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
-        "hotspots": [
-          {
-            "hotspot_id": "hs_6_1",
-            "title": "Height Line Logic",
-            "x_percent": 3.125,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
-          },
-          {
-            "hotspot_id": "hs_6_2",
-            "title": "Integer Parity Algebra",
-            "x_percent": 51.875,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
-          },
-          {
-            "hotspot_id": "hs_6_3",
-            "title": "3x3 Magic Square Proof",
-            "x_percent": 3.125,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
-          },
-          {
-            "hotspot_id": "hs_6_4",
-            "title": "Cryptarithms & Elimination",
-            "x_percent": 51.875,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
-          }
-        ]
-      }
+      ]
     },
     {
       "paper_id": 4,
-      "paper_title": "Set 4 - Number Play (Sequence Logic & Virahanka Series)",
-      "total_marks": 20,
+      "paper_title": "Set 4 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
-      "teacher_rubric_overlay": {
-        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
-        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
-        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
-        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Next term in Virahanka-Fibonacci series 1, 2, 3, 5, 8, 13, __ is:",
+              "question_text": "Which body holds the power to impeach the President or judges of the Supreme Court for misconduct?",
               "options": [
-                "A) 18",
-                "B) 21",
-                "C) 20",
-                "D) 15"
+                "A) Cabinet",
+                "B) Parliament",
+                "C) Election Commission",
+                "D) Union Public Service Commission"
               ],
-              "correct_answer": "B) 21",
+              "correct_answer": "B) Parliament",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If n is an integer, 2n + 1 is always:",
+              "question_text": "The Head of State in the United Kingdom is a hereditary monarch, making the UK a:",
               "options": [
-                "A) Even",
-                "B) Odd",
-                "C) Prime",
-                "D) Zero"
+                "A) Republic",
+                "B) Constitutional Monarchy",
+                "C) Dictatorship",
+                "D) Anarchy"
               ],
-              "correct_answer": "B) Odd",
+              "correct_answer": "B) Constitutional Monarchy",
               "marks": 1
             },
             {
               "question_number": 3,
-              "question_text": "Sum of 4 odd numbers is always:",
+              "question_text": "The Lok Sabha and Rajya Sabha together constitute the Indian:",
               "options": [
-                "A) Odd",
-                "B) Even",
-                "C) Zero",
-                "D) Negative"
+                "A) Supreme Court",
+                "B) Parliament (Legislature)",
+                "C) Cabinet",
+                "D) NITI Aayog"
               ],
-              "correct_answer": "B) Even",
+              "correct_answer": "B) Parliament (Legislature)",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Active citizenship in a democracy requires:",
+              "options": [
+                "A) Voting in elections and questioning public policy",
+                "B) Blind obedience to government orders",
+                "C) Refusing to pay taxes",
+                "D) Avoiding community affairs"
+              ],
+              "correct_answer": "A) Voting in elections and questioning public policy",
               "marks": 1
             }
           ]
@@ -495,142 +366,97 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Find the 8th term of the Virahanka-Fibonacci sequence starting 1, 2, 3, 5...",
-              "marking_scheme_answer": "Terms: 1, 2, 3, 5, 8, 13, 21, 34. 8th term = 34.",
-              "marks": 2
+              "question_text": "Explain why Constitutional Supremacy is vital in a federal democratic state.",
+              "marking_scheme_answer": "Prevents any single organ or level of government from exercising absolute power; sets binding legal limits and guarantees fundamental rights.",
+              "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "Prove why 2n + 2 is always an even number.",
-              "marking_scheme_answer": "2n + 2 = 2(n + 1). Since it has factor 2, it is divisible by 2 and even.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Five children call out (0, 1, 0, 2, 0). Determine who is tallest and who is shortest.",
-              "marking_scheme_answer": "Tallest is child at position 1 (callout 0). Shortest is child at position 4 who has 2 taller ahead.",
+              "question_text": "How does a No-Confidence Motion hold the Executive accountable to Parliament?",
+              "marking_scheme_answer": "If Lok Sabha passes a No-Confidence Motion against the Council of Ministers, the Prime Minister and Cabinet must resign immediately.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section C (Long Answer / Case-Study)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Explain the Virahanka-Fibonacci poetic meter rule (short beat S = 1, long beat L = 2) and calculate the number of rhythm combinations for total beat count 6.",
-              "marking_scheme_answer": "Virahanka rule: V(n) = V(n-1) + V(n-2). For beats 1 to 6: V(1)=1, V(2)=2, V(3)=3, V(4)=5, V(5)=8, V(6)=13 combinations.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "A student claims they added 15 odd numbers and got 250. Is this claim mathematically valid? Give full logical proof.",
-              "marking_scheme_answer": "Sum of 15 (odd count) odd numbers MUST be an ODD number. 250 is an EVEN number. An odd count of odd numbers can never sum to an even number. The claim is invalid.",
+              "question_text": "Contrast a Democratic Republic (like India) with a Constitutional Monarchy (like the UK) and an Authoritarian State.",
+              "marking_scheme_answer": "1. Democratic Republic: Power from citizens, elected Head of State, rule of law.\n2. Constitutional Monarchy: Democratic governance with a ceremonial hereditary monarch.\n3. Authoritarian State: Concentration of unchecked power in an unelected dictator/party, suppressing rights.",
               "marks": 5
             }
           ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Scenario: A municipality orders demolitions without prior legal notice.\n(a) Which fundamental right is violated?\n(b) What legal remedy can citizens seek from the High Court?",
+              "marking_scheme_answer": "(a) Right to Equality and Due Process of Law (Article 14 and 21).\n(b) File a writ petition (like Habeas Corpus / Mandamus) seeking an immediate stay order.",
+              "marks": 4
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "asset_id": "ch6_number_play_magic_square",
-        "chapter_number": 6,
-        "chapter_title": "Number Play",
-        "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
-        "file_name": "ch6_number_play_magic_square.png",
-        "local_url": "/assets/images/ch6_number_play_magic_square.png",
-        "aspect_ratio": "16:9",
-        "width_px": 1600,
-        "height_px": 900,
-        "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
-        "hotspots": [
-          {
-            "hotspot_id": "hs_6_1",
-            "title": "Height Line Logic",
-            "x_percent": 3.125,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
-          },
-          {
-            "hotspot_id": "hs_6_2",
-            "title": "Integer Parity Algebra",
-            "x_percent": 51.875,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
-          },
-          {
-            "hotspot_id": "hs_6_3",
-            "title": "3x3 Magic Square Proof",
-            "x_percent": 3.125,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
-          },
-          {
-            "hotspot_id": "hs_6_4",
-            "title": "Cryptarithms & Elimination",
-            "x_percent": 51.875,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
-          }
-        ]
-      }
+      ]
     },
     {
       "paper_id": 5,
-      "paper_title": "Set 5 - Number Play (Comprehensive Computational Logic)",
-      "total_marks": 20,
+      "paper_title": "Set 5 - The State, the Government, and You Practice Paper",
+      "total_marks": 19,
       "time_allowed_minutes": 45,
-      "teacher_rubric_overlay": {
-        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
-        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
-        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
-        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs)",
+          "section_name": "Section A (Multiple Choice Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Parity of (Odd)^3 is:",
+              "question_text": "The maximum term duration of the Lok Sabha before general elections are held is:",
               "options": [
-                "A) Even",
-                "B) Odd",
-                "C) Zero",
-                "D) Prime"
+                "A) 4 years",
+                "B) 5 years",
+                "C) 6 years",
+                "D) 10 years"
               ],
-              "correct_answer": "B) Odd",
+              "correct_answer": "B) 5 years",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "Center cell of magic square with row sum 27 is:",
+              "question_text": "Which organ of government interprets the meaning of constitutional provisions during legal disputes?",
               "options": [
-                "A) 7",
-                "B) 9",
-                "C) 11",
-                "D) 5"
+                "A) Legislature",
+                "B) Executive",
+                "C) Judiciary",
+                "D) Press"
               ],
-              "correct_answer": "B) 9",
+              "correct_answer": "C) Judiciary",
               "marks": 1
             },
             {
               "question_number": 3,
-              "question_text": "If even E and odd O, then E * O + E =",
+              "question_text": "An ordinance issued by the President during parliamentary recess is an executive action with the force of:",
               "options": [
-                "A) Odd",
-                "B) Even",
-                "C) Zero",
-                "D) Prime"
+                "A) A temporary law",
+                "B) A permanent constitutional amendment",
+                "C) A non-binding suggestion",
+                "D) A court verdict"
               ],
-              "correct_answer": "B) Even",
+              "correct_answer": "A) A temporary law",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "question_text": "Democracy originates from the Greek words 'Demos' and 'Kratos', which mean:",
+              "options": [
+                "A) King and Kingdom",
+                "B) People and Power/Rule",
+                "C) Army and State",
+                "D) Wealth and Market"
+              ],
+              "correct_answer": "B) People and Power/Rule",
               "marks": 1
             }
           ]
@@ -640,92 +466,217 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "If a magic square has magic sum S = 27, find center cell.",
-              "marking_scheme_answer": "Center cell = S / 3 = 27 / 3 = 9.",
-              "marks": 2
+              "question_text": "Explain the concept of 'Rule of Law' in a democratic republic.",
+              "marking_scheme_answer": "Rule of Law means all citizens, including prime ministers and officials, are equal before the law and subject to the same legal courts.",
+              "marks": 3
             },
             {
               "question_number": 2,
-              "question_text": "State parity of 2^10 + 3^10.",
-              "marking_scheme_answer": "2^10 is Even. 3^10 is Odd. Even + Odd = ODD.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Cryptarithm: A4 + 2B = 60. Find digits A and B.",
-              "marking_scheme_answer": "4 + B = 10 => B = 6. A + 2 + 1 = 6 => A = 3. A = 3, B = 6.",
+              "question_text": "What duties accompany rights for a responsible citizen in India?",
+              "marking_scheme_answer": "Abiding by the Constitution, protecting public property, preserving environmental heritage, voting responsibly, and fostering national unity.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section C (Long Answer / Case-Study)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Construct a 3x3 magic square with center 7 and magic sum 21 using numbers 3, 4, 5, 6, 7, 8, 9, 10, 11.",
-              "marking_scheme_answer": "Standard pattern shifted by +2: Row 1 = [10, 3, 8], Row 2 = [5, 7, 9], Row 3 = [6, 11, 4]. Row sums = 21, Center = 7.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "An officer checks logbook entries of 100 pages. 25 loose leaves were removed. Prove whether the sum of page numbers of all removed leaves can equal 2500.",
-              "marking_scheme_answer": "Each loose leaf page sum is odd (4k-1). 25 loose leaves = 25 odd numbers. Sum of 25 (odd count) odd numbers MUST be ODD. 2500 is EVEN. Therefore, the sum of 25 loose leaves can NEVER equal 2500.",
+              "question_text": "Detail the law-making process in the Indian Parliament from introduction to Presidential assent.",
+              "marking_scheme_answer": "1. Introduction (First Reading).\n2. Committee Scrutiny & Clause Debate (Second Reading).\n3. Voting in First House (Third Reading).\n4. Passage through Second House.\n5. Presidential Assent transforms the Bill into an official Act.",
               "marks": 5
             }
           ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Source-Based Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Scenario: A citizen attends a gram sabha meeting in a village panchayat.\n(a) What form of direct democracy occurs at the Gram Sabha level?\n(b) Why is local self-government vital for democracy?",
+              "marking_scheme_answer": "(a) Direct participatory democracy where all adult village residents discuss local budgets and development works.\n(b) Decentralizes power and enables citizens to solve community issues directly.",
+              "marks": 4
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "asset_id": "ch6_number_play_magic_square",
-        "chapter_number": 6,
-        "chapter_title": "Number Play",
-        "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
-        "file_name": "ch6_number_play_magic_square.png",
-        "local_url": "/assets/images/ch6_number_play_magic_square.png",
-        "aspect_ratio": "16:9",
-        "width_px": 1600,
-        "height_px": 900,
-        "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
-        "hotspots": [
+      ]
+    }
+  ],
+  "30m_model_assessment": {
+    "paper_title": "Chapter 6 Model Assessment - The State, the Government, and You",
+    "max_marks": 30,
+    "duration_minutes": 60,
+    "sections": {
+      "section_a": {
+        "title": "Section A: Objective MCQs & Assertion-Reason (6 Marks)",
+        "instructions": "Answer all questions. Each question carries 1 mark.",
+        "questions": [
           {
-            "hotspot_id": "hs_6_1",
-            "title": "Height Line Logic",
-            "x_percent": 3.125,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
+            "question_no": 1,
+            "type": "MCQ",
+            "blooms_level": "Remembering",
+            "question_text": "Which of the following is NOT one of the four essential elements of a State?",
+            "options": [
+              "A) Defined Territory",
+              "B) Permanent Population",
+              "C) Political Party",
+              "D) Sovereignty"
+            ],
+            "correct_option": "C) Political Party",
+            "marking_scheme": "1 Mark for correct option C."
           },
           {
-            "hotspot_id": "hs_6_2",
-            "title": "Integer Parity Algebra",
-            "x_percent": 51.875,
-            "y_percent": 53.33,
-            "w_percent": 45.0,
-            "h_percent": 32.22,
-            "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
+            "question_no": 2,
+            "type": "MCQ",
+            "blooms_level": "Remembering",
+            "question_text": "Why is India defined as a 'Republic' in the Preamble to its Constitution?",
+            "options": [
+              "A) Its Head of State (President) is an elected citizen holding office for a fixed term.",
+              "B) It has a bicameral Parliament.",
+              "C) It conducts elections every five years.",
+              "D) Its Prime Minister is the head of government."
+            ],
+            "correct_option": "A) Its Head of State (President) is an elected citizen holding office for a fixed term.",
+            "marking_scheme": "1 Mark for correct option A."
           },
           {
-            "hotspot_id": "hs_6_3",
-            "title": "3x3 Magic Square Proof",
-            "x_percent": 3.125,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
+            "question_no": 3,
+            "type": "MCQ",
+            "blooms_level": "Understanding",
+            "question_text": "Which organ of government is primarily responsible for enacting and amending public laws?",
+            "options": [
+              "A) Executive",
+              "B) Legislature",
+              "C) Judiciary",
+              "D) Civil Services"
+            ],
+            "correct_option": "B) Legislature",
+            "marking_scheme": "1 Mark for correct option B."
           },
           {
-            "hotspot_id": "hs_6_4",
-            "title": "Cryptarithms & Elimination",
-            "x_percent": 51.875,
-            "y_percent": 11.11,
-            "w_percent": 45.0,
-            "h_percent": 37.78,
-            "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
+            "question_no": 4,
+            "type": "MCQ",
+            "blooms_level": "Understanding",
+            "question_text": "What constitutional mechanism empowers the Supreme Court to strike down unconstitutional laws?",
+            "options": [
+              "A) Universal Franchise",
+              "B) Judicial Review",
+              "C) Executive Order",
+              "D) Ordinance"
+            ],
+            "correct_option": "B) Judicial Review",
+            "marking_scheme": "1 Mark for correct option B."
+          },
+          {
+            "question_no": 5,
+            "type": "Assertion-Reason",
+            "blooms_level": "Analyzing",
+            "question_text": "Assertion (A): The State is a permanent political organization, whereas the Government changes periodically.\nReason (R): The Government is the elected agency that executes state power for a fixed tenure, while the State represents the enduring sovereign nation.",
+            "options": [
+              "A) Both A and R are true, and R is the correct explanation of A.",
+              "B) Both A and R are true, but R is NOT the correct explanation of A.",
+              "C) A is true but R is false.",
+              "D) A is false but R is true."
+            ],
+            "correct_option": "A) Both A and R are true, and R is the correct explanation of A.",
+            "marking_scheme": "1 Mark for distinguishing the permanent State from the temporary Government."
+          },
+          {
+            "question_no": 6,
+            "type": "Assertion-Reason",
+            "blooms_level": "Analyzing",
+            "question_text": "Assertion (A): Separation of powers among Legislature, Executive, and Judiciary prevents tyranny.\nReason (R): Checks and balances ensure no single organ accumulates unchecked supreme power.",
+            "options": [
+              "A) Both A and R are true, and R is the correct explanation of A.",
+              "B) Both A and R are true, but R is NOT the correct explanation of A.",
+              "C) A is true but R is false.",
+              "D) A is false but R is true."
+            ],
+            "correct_option": "A) Both A and R are true, and R is the correct explanation of A.",
+            "marking_scheme": "1 Mark for linking separation of powers with the prevention of authoritarian rule."
+          }
+        ]
+      },
+      "section_b": {
+        "title": "Section B: Short Answer Questions (10 Marks)",
+        "instructions": "Answer all 5 questions. Each question carries 2 marks.",
+        "questions": [
+          {
+            "question_no": 7,
+            "blooms_level": "Remembering",
+            "question_text": "List the four essential elements required to form a State.",
+            "solution_and_marking_scheme": "1. Defined Territory\n2. Permanent Population\n3. Functioning Government\n4. Sovereignty (2 Marks for all 4 named accurately)."
+          },
+          {
+            "question_no": 8,
+            "blooms_level": "Understanding",
+            "question_text": "Distinguish between a State and a Government.",
+            "solution_and_marking_scheme": "State: Permanent, abstract political entity comprising territory, population, government, and sovereignty (1 Mark).\nGovernment: Temporary administrative body of elected/appointed officials managing state affairs for a fixed tenure (1 Mark)."
+          },
+          {
+            "question_no": 9,
+            "blooms_level": "Understanding",
+            "question_text": "Explain why Sovereignty is the defining legal element of a State.",
+            "solution_and_marking_scheme": "Sovereignty gives a state supreme, independent legal authority to make internal laws and conduct foreign policy without external dictation or colonial control (2 Marks)."
+          },
+          {
+            "question_no": 10,
+            "blooms_level": "Remembering",
+            "question_text": "State the primary functions of the three organs of government.",
+            "solution_and_marking_scheme": "1. Legislature: Enacts and frames laws.\n2. Executive: Enforces and implements laws.\n3. Judiciary: Interprets laws and administers justice (2 Marks)."
+          },
+          {
+            "question_no": 11,
+            "blooms_level": "Application",
+            "question_text": "How do citizens participate actively in a democracy beyond casting votes during elections?",
+            "solution_and_marking_scheme": "By questioning public policies, filing Right to Information (RTI) applications, participating in peaceful civic assemblies, and holding elected representatives accountable (2 Marks)."
+          }
+        ]
+      },
+      "section_c": {
+        "title": "Section C: Long Answer & Analytical Questions (8 Marks)",
+        "instructions": "Answer both questions. Each question carries 4 marks.",
+        "questions": [
+          {
+            "question_no": 12,
+            "blooms_level": "Analyzing",
+            "question_text": "Analyze the system of Separation of Powers and Checks & Balances among the Legislature, Executive, and Judiciary in India.",
+            "solution_and_marking_scheme": "Separation of Powers Concept (1 Mark):\n- Power is divided among three independent organs so no single organ holds absolute control.\nChecks & Balances Mechanisms (3 Marks):\n1. Executive - Legislature Check: The Prime Minister and Cabinet are drawn from Parliament and must maintain the confidence of the Lok Sabha.\n2. Judiciary - Legislature Check: The Supreme Court can exercise Judicial Review to strike down unconstitutional parliamentary laws.\n3. Executive - Judiciary Check: Judges are appointed by the Executive, but can only be removed through a stringent impeachment process by Parliament."
+          },
+          {
+            "question_no": 13,
+            "blooms_level": "Application",
+            "question_text": "Explain why India is designated as both a 'Democratic' and a 'Republic' state. Contrast a Republic with a Hereditary Monarchy.",
+            "solution_and_marking_scheme": "Democratic Feature (1 Mark):\n- Supreme power resides in the people, who exercise sovereignty through universal adult franchise and competitive elections.\nRepublic Feature (1 Mark):\n- The Head of State (President of India) is an elected citizen holding office for a fixed 5-year term.\nContrast with Monarchy (2 Marks):\n- In a Hereditary Monarchy (e.g., UK), the Head of State inherits the position by royal bloodline rather than election.\n- In a Republic, any eligible citizen, regardless of birth, can potentially be elected Head of State."
+          }
+        ]
+      },
+      "section_d": {
+        "title": "Section D: Competency / Source-Based Case Study (6 Marks)",
+        "instructions": "Read the passage carefully and answer the sub-questions that follow.",
+        "case_scenario": "Passage: In a municipal town, the state assembly passed a regional law banning citizens from assembling in public parks to voice grievances regarding water shortages. A civic group filed a petition before the High Court arguing that the law violated their fundamental right to peaceful assembly guaranteed under Article 19. The High Court issued a stay order, examined the assembly statute, and struck down the municipal restriction as unconstitutional, ordering the police to allow peaceful civic meetings.",
+        "sub_questions": [
+          {
+            "sub_q_no": "14.1",
+            "blooms_level": "Understanding",
+            "question_text": "Which organ of government enacted the contested law, and which organ struck it down? (2 Marks)",
+            "solution_and_marking_scheme": "Enacted by: The Legislature (State Assembly) (1 Mark).\nStruck down by: The Judiciary (High Court) (1 Mark)."
+          },
+          {
+            "sub_q_no": "14.2",
+            "blooms_level": "Application",
+            "question_text": "What constitutional power did the High Court exercise to invalidate the assembly law? (2 Marks)",
+            "solution_and_marking_scheme": "Judicial Review—the constitutional power of High Courts and the Supreme Court to declare any legislative act void if it violates Fundamental Rights or constitutional principles (2 Marks)."
+          },
+          {
+            "sub_q_no": "14.3",
+            "blooms_level": "Analyzing",
+            "question_text": "How does this scenario illustrate the protection of citizen rights against legislative overreach? (2 Marks)",
+            "solution_and_marking_scheme": "It proves that in a constitutional democracy, temporary elected majorities in the Legislature cannot override Fundamental Rights. An independent Judiciary acts as the guardian of the Constitution to protect citizens (2 Marks)."
           }
         ]
       }
     }
-  ]
+  }
 }

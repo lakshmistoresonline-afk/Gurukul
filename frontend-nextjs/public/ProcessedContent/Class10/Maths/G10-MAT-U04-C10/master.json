@@ -1,28 +1,17 @@
 {
   "chapter_number": 10,
-  "chapter_title": "Circles",
+  "chapter_title": "The Human Eye and the Colourful World",
   "zero_omission_notes": {
-    "summary": "Explores tangents to a circle, proving radius is perpendicular to tangent at point of contact (Theorem 10.1), and lengths of tangents drawn from an external point are equal (Theorem 10.2).",
+    "summary": "Details human eye anatomy, power of accommodation, vision defects (myopia, hypermetropia, presbyopia) and lens corrections, prismatic dispersion, rainbow formation, atmospheric refraction (twinkling stars, early sunrise), and Tyndall light scattering.",
     "detailed_sections": [
       {
-        "section_number_and_title": "10.1 Tangent & Radius Perpendicularity",
-        "full_explanation": "Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+        "section_number_and_title": "10.1 Human Eye Optics & Defects",
+        "full_notes": "Ciliary muscles alter crystalline lens curvature to adjust focal length (accommodation; near point 25 cm). Myopia (near-sightedness, image before retina) corrected by concave lens; Hypermetropia (far-sightedness, image behind retina) corrected by convex lens.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Theorem 10.1",
-            "title": "Radius-Tangent Perpendicularity",
-            "content": "OP ⊥ XY at point of contact P."
-          }
-        ]
-      },
-      {
-        "section_number_and_title": "10.2 Tangents from an External Point",
-        "full_explanation": "Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal (PQ = PR).",
-        "margin_notes_and_sidebars": [
-          {
-            "type": "Theorem 10.2",
-            "title": "Equal Tangents",
-            "content": "Tangents PQ and PR from external point P are equal."
+            "type": "Defect Note",
+            "title": "Presbyopia",
+            "content": "Old age diminishment of accommodation due to weakening ciliary muscles; corrected using bifocal lenses."
           }
         ]
       }
@@ -30,55 +19,62 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-1001",
-      "aim_or_objective": "Prove lengths of tangents from external point are equal.",
+      "activity_or_method_id": "Activity 10.2: Recombination of Spectrum",
+      "aim_or_objective": "To show white light spectrum recombines into white light using inverted prism.",
       "materials_or_prerequisites": [
-        "RHS Congruence"
+        "Two identical glass prisms P1 and P2",
+        "Light beam source",
+        "Screen"
       ],
       "procedure_or_steps": [
-        "Join OP, OQ, OR",
-        "In ΔOQP and ΔORP: ∠OQP = ∠ORP = 90°",
-        "OP = OP (common hypotenuse)",
-        "OQ = OR (radii)",
-        "ΔOQP ≅ ΔORP (RHS) => PQ = PR (CPCT)"
+        "Pass white light beam through prism P1 to obtain spectrum.",
+        "Place identical prism P2 in inverted position relative to P1.",
+        "Observe emergent beam on screen."
       ],
-      "observations_or_results": "Tangents PQ and PR are equal.",
-      "conclusion_or_principle": "Tangents drawn from external point are equal."
+      "observations_or_results": "Re-emerging light beam on screen is pure white light.",
+      "conclusion_or_principle": "Prism does not create colors; it merely separates components of white light."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 10.1 External Tangents",
+        "figure_id_and_title": "Fig 10.2 Correction of Myopic Eye",
         "labels_and_components": [
-          "Center O",
-          "External point P",
-          "Tangents PQ, PR",
-          "Radii OQ, OR"
+          "Myopic eye (focus before retina)",
+          "Concave lens",
+          "Corrected parallel rays focused on Retina"
         ],
-        "drawing_or_reading_instructions": "Draw circle with center O and rays PQ, PR touching circle.",
-        "structural_or_conceptual_explanation": "Geometrical layout of circle tangents."
+        "drawing_or_reading_instructions": "Draw eyeball with elongated axis; place concave lens in front to diverge incoming rays so final focus lands on retina.",
+        "structural_or_conceptual_explanation": "Concave lens provides necessary divergence to push focus back onto retina."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Line-Circle Positions",
+        "table_title": "Vision Defects Comparison",
         "headers": [
-          "Line Type",
-          "Points of Contact"
+          "Defect",
+          "Cause",
+          "Far/Near Point Shift",
+          "Corrective Lens"
         ],
         "rows": [
           [
-            "Non-intersecting line",
-            "0"
+            "Myopia",
+            "Excessive curvature of lens or elongated eyeball",
+            "Far point closer than infinity",
+            "Concave Lens"
           ],
           [
-            "Secant",
-            "2"
+            "Hypermetropia",
+            "Focal length too long or shortened eyeball",
+            "Near point farther than 25 cm",
+            "Convex Lens"
           ],
           [
-            "Tangent",
-            "1"
+            "Presbyopia",
+            "Weakening ciliary muscles & loss of lens flexibility",
+            "Near point recedes with age",
+            "Bifocal Lens"
           ]
         ]
       }
@@ -86,70 +82,76 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Equal Tangent Lengths",
-      "definition_or_meaning": "Tangents from external point to circle are equal.",
-      "si_unit_or_notation": "PQ = PR",
-      "example_or_application": "If PQ = 10 cm, then PR = 10 cm."
+      "term_or_concept": "Dispersion of Light",
+      "definition_or_meaning": "The splitting of white light into its component seven colors (VIBGYOR) when passing through a glass prism due to wavelength-dependent refraction.",
+      "si_unit_or_notation": "Noun",
+      "example_or_application": "Red bends least, violet bends most."
+    },
+    {
+      "term_or_concept": "Rayleigh Scattering Law",
+      "definition_or_meaning": "Scattering Intensity is inversely proportional to wavelength raised to fourth power (1 / lambda^4).",
+      "si_unit_or_notation": "Shorter blue wavelengths scatter much more strongly than longer red wavelengths.",
+      "example_or_application": "Explains blue sky and reddish sunrise/sunset."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Ex 10.2 Q1",
-        "question": "From point Q, length of tangent to circle is 24 cm and distance from center is 25 cm. Find radius.",
-        "answer": "r = √(25^2 - 24^2) = √(625 - 576) = √49 = 7 cm."
+        "q_no": "Q1",
+        "question": "The human eye forms the image of an object at its?",
+        "answer": "The light-sensitive screen at the back of eye is retina. Option (d) Retina is correct."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "If TP and TQ are tangents to circle with center O so that ∠POQ = 110°, then ∠PTQ is:",
+        "question": "The change in focal length of an eye lens is caused by the action of the?",
         "options": [
-          "A) 60°",
-          "B) 70°",
-          "C) 80°",
-          "D) 90°"
+          "Pupil",
+          "Retina",
+          "Ciliary muscles",
+          "Iris"
         ],
-        "answer": "B",
-        "explanation": "Quadrilateral OPTQ has right angles at P and Q => ∠PTQ = 180° - 110° = 70°."
+        "answer": "Ciliary muscles",
+        "explanation": "Ciliary muscles relax/contract to adjust eye lens thickness and focal length."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Prove that in two concentric circles, chord of larger circle touching smaller circle is bisected at point of contact.",
-        "answer": "OP ⊥ AB (radius ⊥ tangent). Perpendicular from center to chord bisects chord => AP = PB."
+        "question": "Why do stars twinkle while planets do not twinkle?",
+        "answer": "Stars are point-sized distant sources; starlight refracts continuously through fluctuating atmospheric air density, causing apparent position and brightness to flicker. Planets are close extended sources, so point light variations average out to zero."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Prove that the tangents drawn at the ends of a diameter of a circle are parallel.",
-        "answer": "Radius ⊥ Tangent => ∠1 = 90° and ∠2 = 90°. Since alternate interior angles are equal (∠1 = ∠2 = 90°), the tangent lines must be parallel."
+        "question": "Why is sunrise seen 2 minutes before actual horizon crossing?",
+        "answer": "Light rays from below horizon refract through progressively denser air layers, bending downward so the sun appears apparent above horizon."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Prove that the parallelogram circumscribing a circle is a rhombus.",
-        "answer": "AB + CD = AD + BC (equal tangent sums). In parallelogram, AB = CD and AD = BC => 2AB = 2AD => AB = AD. Parallelogram with adjacent sides equal is a rhombus."
+        "question": "Explain rainbow formation in atmosphere with labeled ray diagram.",
+        "answer": "A rainbow is a natural spectrum caused by dispersion of sunlight by spherical raindrops. 1. Refraction & Dispersion: Sunlight entering raindrop refracts and splits into colors. 2. Total Internal Reflection: Light reflects internally at back drop surface. 3. Refraction: Light refracts again exiting drop, reaching observer's eye as colorful arc (red top, violet bottom)."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "Triangle ABC circumscribes circle of radius 4 cm; segments BD and DC are 8 cm and 6 cm.",
+        "case_scenario": "Astronauts in space observe the sky as dark black rather than blue.",
         "qa": [
           {
-            "question": "Find sides AB and AC.",
-            "answer": "Using equal tangents and area equality: AB = 15 cm, AC = 13 cm."
+            "question": "Why does space appear black to astronauts?",
+            "answer": "There is no atmosphere in outer space to scatter sunlight, so no light reaches the eye from sky directions."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Thinking a secant and tangent are identical.",
-        "correct_fact_or_method": "Secant cuts circle at 2 points; tangent touches circle at exactly 1 point."
+        "common_error_or_misconception": "Confusing cause of myopia (eye lens too curved) with hypermetropia (eye lens too flat).",
+        "correct_fact_or_method": "Remember Myopia = High converging power (needs diverging concave lens); Hypermetropia = Low converging power (needs converging convex lens)."
       }
     ]
   }

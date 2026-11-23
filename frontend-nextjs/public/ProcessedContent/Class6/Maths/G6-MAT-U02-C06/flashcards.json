@@ -1,48 +1,137 @@
-{
-  "chapter_number": 6,
-  "chapter_title": "Perimeter and Area",
-  "flashcards": [
-    {
-      "card_id": 1,
-      "level": "Formula/Definition",
-      "front_question": "How are Perimeter and Area defined and distinguished by their dimensions and units?",
-      "back_answer": "DEFINITIONS:\n- Perimeter: Total continuous 1D distance around the outer boundary of a closed flat shape. Units: linear cm, m.\n- Area: Total 2D surface region enclosed within the boundary of a closed shape. Units: square units (sq cm, sq m, cm^2, m^2).\nMEMORY TRIGGER: 'Perimeter = Boundary Fence (1D); Area = Grass Carpet (2D)!'\nCONTEXTUAL EXAMPLE: Fencing a field measures Perimeter; turfing the field measures Area.\nVISUAL GRAPHIC: Rectangle with highlighted outer blue border (Perimeter) and shaded green interior (Area)."
-    },
-    {
-      "card_id": 2,
-      "level": "Formula/Definition",
-      "front_question": "What are the exact perimeter formulas for a Rectangle, Square, and Regular n-gon?",
-      "back_answer": "FORMULAS:\n- Rectangle: P = 2 x (length + width) = 2(l + w)\n- Square: P = 4 x side = 4s\n- Regular n-gon: P = n x side = ns\n- Equilateral Triangle (n=3): P = 3s\n- Regular Hexagon (n=6): P = 6s\nMEMORY TRIGGER: 'Rectangle = 2(l+w); Square = 4s; Regular = n x s!'\nCONTEXTUAL EXAMPLE: Perimeter of a regular hexagon of side 7 cm = 6 x 7 = 42 cm.\nVISUAL GRAPHIC: Shapes labeled with side lengths and perimeter formulas."
-    },
-    {
-      "card_id": 3,
-      "level": "Formula/Definition",
-      "front_question": "What are the exact area formulas for a Rectangle and Square, and unit conversion rules?",
-      "back_answer": "FORMULAS:\n- Rectangle Area: A = length x width = l x w\n- Square Area: A = side x side = s^2\nUNIT CONVERSIONS:\n- 1 sq m = 1 m x 1 m = 100 cm x 100 cm = 10,000 sq cm\n- 1 hectare = 10,000 sq m\nMEMORY TRIGGER: 'Area = l x w or s^2; 1 sq m = 10,000 sq cm!'\nCONTEXTUAL EXAMPLE: Area of plot 25 m x 12 m = 300 sq m.\nVISUAL GRAPHIC: 1m x 1m grid divided into 100cm x 100cm = 10,000 unit square centimeters."
-    },
-    {
-      "card_id": 4,
-      "level": "Method-Rule",
-      "front_question": "What happens to total Area and Perimeter when a plane figure is cut and rearranged?",
-      "back_answer": "CONSERVATION RULE:\n- Area remains CONSERVED (completely unchanged) because total surface material is preserved.\n- Perimeter CAN CHANGE depending on the new boundary arrangement.\nMEMORY TRIGGER: 'Cutting & Rearranging: Area stays Same, Perimeter changes!'\nCONTEXTUAL EXAMPLE: Cutting a 12cm x 8cm rectangular wire loop into a square changes perimeter to 40 cm while area changes from 96 sq cm to 100 sq cm.\nVISUAL GRAPHIC: Rectangle sliced along diagonal rearranged into parallelogram showing equal shaded area."
-    },
-    {
-      "card_id": 5,
-      "level": "Application",
-      "front_question": "A wire rectangle of length 12 cm and width 8 cm is reshaped into a square. Which shape encloses more area?",
-      "back_answer": "CALCULATION:\n- Wire length = Perimeter = 2(12 + 8) = 40 cm.\n- Side of square = 40 / 4 = 10 cm.\n- Area of rectangle = 12 x 8 = 96 sq cm.\n- Area of square = 10 x 10 = 100 sq cm.\nRESULT: The square encloses 4 sq cm MORE area than the rectangle.\nPRINCIPLE: Among all rectangles with fixed perimeter, a Square encloses MAXIMUM area!\nMEMORY TRIGGER: 'Square maximizes area for fixed perimeter!'\nCONTEXTUAL EXAMPLE: Optimizing garden fence layout for maximum planting space.\nVISUAL GRAPHIC: 12x8 rectangle (96 sq cm) alongside 10x10 square (100 sq cm)."
-    },
-    {
-      "card_id": 6,
-      "level": "Direct Calculation",
-      "front_question": "Find the cost of tiling a courtyard 10 m long and 8 m wide with square tiles of side 50 cm (0.5 m) at Rs 20 per tile.",
-      "back_answer": "CALCULATION:\n- Courtyard Area = 10 x 8 = 80 sq m.\n- Tile Area = 0.5 x 0.5 = 0.25 sq m.\n- Number of tiles = Courtyard Area / Tile Area = 80 / 0.25 = 320 tiles.\n- Total Cost = 320 tiles x Rs 20 = Rs 6,400.\nMEMORY TRIGGER: 'Tiles = Total Area / Single Tile Area!'\nCONTEXTUAL EXAMPLE: Flooring cost estimation in civil engineering.\nVISUAL GRAPHIC: Tiled floor layout showing unit grid divisions."
-    },
-    {
-      "card_id": 7,
-      "level": "Method-Rule",
-      "front_question": "How do you calculate the area of an irregular or L-shaped composite polygon?",
-      "back_answer": "DECOMPOSITION PROCEDURE:\n1. Divide the composite shape into non-overlapping simple sub-rectangles using horizontal or vertical split lines.\n2. Determine missing lengths and widths for each sub-rectangle.\n3. Calculate area of each sub-rectangle (A = l x w).\n4. Sum sub-rectangle areas to find Total Area.\nMEMORY TRIGGER: 'Split into Rectangles, Multiply, and Sum!'\nCONTEXTUAL EXAMPLE: Floor plan area calculation for L-shaped living room.\nVISUAL GRAPHIC: L-shaped region sliced into Rectangles R1 and R2 with dimensions labeled."
-    }
-  ]
-}
+[
+  {
+    "card_id": 1,
+    "level": "Basic Recall",
+    "front_question": "Define 'Matter' and state its two universal properties.",
+    "back_answer": "Matter is anything that occupies physical space and possesses mass.\nUniversal Properties: Mass and Volume.\n\n• Phonetic / Usage: Matter (/ˈmæt.ər/) — noun.\n• Memory Trigger / Icon: ⚛️📦 [Box with Mass Scale & Volume Lines]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 2,
+    "level": "Conceptual",
+    "front_question": "Classify materials based on light transmission into three categories with examples.",
+    "back_answer": "1. Transparent: Light passes completely; clear view (Clear glass, clean water, air).\n2. Translucent: Light passes partially; blurred view (Butter paper, frosted glass, oily paper).\n3. Opaque: Light cannot pass; no view (Wood, cardboard, metals, stone).\n\n• Memory Trigger / Icon: 🔍 [Clear Glass] | 🌫️ [Butter Paper] | 🧱 [Brick Wall]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 3,
+    "level": "Experimental",
+    "front_question": "How can you experimentally test if a solid powder is soluble or insoluble in water?",
+    "back_answer": "Add a teaspoon of powder into a tumbler of water, stir vigorously for 1 minute, and let stand. If it disappears completely forming a clear liquid, it is soluble (e.g., salt, sugar). If particles settle or float without dissolving, it is insoluble (e.g., sand, chalk, sawdust).\n\n• Memory Trigger / Icon: 🧪 [Dissolved Salt vs Settled Sand]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 4,
+    "level": "Basic Recall",
+    "front_question": "What is meant by 'Lustre' in material classification?",
+    "back_answer": "Lustre refers to the shiny or glossy appearance of a freshly cut, scraped, or polished material surface, characteristic of metals like gold, copper, and aluminum.\n\n• Phonetic / Usage: Lustre (/ˈlʌs.tər/) — noun.\n• Memory Trigger / Icon: ✨ [Shining Polished Metal Sheet]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 5,
+    "level": "Application",
+    "front_question": "Why are cooking pots made of metals like aluminum or stainless steel, while handles are made of wood or plastic?",
+    "back_answer": "Metals are good conductors of heat (durable and hard), transferring stove heat quickly to cook food. Wood and plastic are poor heat conductors (thermal insulators), keeping handles cool to touch.\n\n• Concept Pair: Metal Body (Heat Conductor) ↔ Plastic Handle (Thermal Insulator).\n• Memory Trigger / Icon: 🍳 [Pan with Plastic Handle]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 6,
+    "level": "Vocabulary / Definition",
+    "front_question": "Distinguish between an 'Object' and a 'Material'.",
+    "back_answer": "An Object is a distinct item created for a specific function (e.g., chair, bottle). A Material is the physical substance used to construct objects (e.g., wood, glass, plastic, steel).\n\n• Key Rule: One material can make many objects; one object can be made of multiple materials.\n• Memory Trigger / Icon: 🪑🥛 [Wooden Chair & Glass Tumbler]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 7,
+    "level": "Scientific Reasoning",
+    "front_question": "Why is air classified as matter even though it is invisible to human eyes?",
+    "back_answer": "Air consists of gas molecules (N₂, O₂, CO₂) that occupy space (volume) and have mass, as proven when weighing an inflated balloon versus a deflated balloon.\n\n• Memory Trigger / Icon: 🎈⚖️ [Weighing Inflated Balloon on Scale]\n• Proof: Air adds measurable mass and inflates balloon volume.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 8,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Hardness' and 'Softness' in material science.",
+    "back_answer": "• Hard Materials: Cannot be easily compressed, scratched, or deformed (e.g., Iron, Diamond, Granite).\n• Soft Materials: Can be compressed, scratched, or folded easily (e.g., Sponge, Cotton, Wax, Rubber).\n\n• Memory Trigger / Icon: 🪨 [Granite Rock] vs 🧽 [Yellow Sponge]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 9,
+    "level": "Basic Recall",
+    "front_question": "What ancient Indian text describes smelting crucibles crafted from clay and iron?",
+    "back_answer": "'Rasaratnasamuchchaya' — an ancient Sanskrit text detailing metallurgy, apparatus, and material science ('Upadanam bhavettasya mrittika lohameva cha').\n\n• Historical Source: Indian Knowledge Systems (IKS) Metallurgy.\n• Memory Trigger / Icon: 📜🏺 [Ancient Smelting Clay Crucible]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 10,
+    "level": "Experimental",
+    "front_question": "How do miscible liquids differ from immiscible liquids in water?",
+    "back_answer": "• Miscible Liquids: Mix completely with water forming a single uniform layer (e.g., Vinegar, Lemon juice, Milk).\n• Immiscible Liquids: Do not mix with water, forming a separate distinct upper layer (e.g., Mustard oil, Kerosene, Coconut oil).\n\n• Memory Trigger / Icon: 🍋 [Lemon juice mixing] vs 🛢️ [Oil floating on Water]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 11,
+    "level": "Application",
+    "front_question": "Why are shopkeeper display jars made of transparent glass or plastic?",
+    "back_answer": "Transparent glass allows sunlight and light to pass through clearly, enabling customers to see candies and biscuits inside without opening the jar lids.\n\n• Memory Trigger / Icon: 🫙 [Transparent Candy Jar on Shelf]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 12,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Density' and describe the float-or-sink test in water.",
+    "back_answer": "Density is mass per unit volume.\n• Floating Objects: Less dense than water (e.g., Dry leaf, wood block, cork, oil).\n• Sinking Objects: More dense than water (e.g., Iron nail, stone, copper coin).\n\n• Memory Trigger / Icon: 🏊 [Wood Floating vs Stone Sinking in Bucket]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 13,
+    "level": "Scientific Reasoning",
+    "front_question": "Why do metals lose their shiny lustre after being exposed to moist air for a long time?",
+    "back_answer": "Metals react chemically with oxygen, moisture, and carbon dioxide in ambient air, forming a thin dull dull layer of metal oxide or carbonate on their surface (tarnishing/corrosion).\n\n• Memory Trigger / Icon: 🗡️ [Tarnished Copper / Rusty Iron]\n• Remedy: Scraping or polishing with sandpaper restores lustre.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 14,
+    "level": "Basic Recall",
+    "front_question": "List four key physical properties used to group materials in a science laboratory.",
+    "back_answer": "1. Appearance & Lustre (Shiny vs Dull)\n2. Hardness (Hard vs Soft)\n3. Solubility & Miscibility (Soluble vs Insoluble)\n4. Transparency (Transparent, Translucent, Opaque).\n\n• Memory Trigger / Icon: 📊 [Material Classification Flowchart]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 15,
+    "level": "Experimental",
+    "front_question": "How can a piece of plain paper be converted into a translucent sheet?",
+    "back_answer": "Rub a few drops of vegetable oil or butter onto plain paper. The oiled patch scatters light partially, allowing light to pass through as a translucent window.\n\n• Memory Trigger / Icon: 🧈📄 [Oily Translucent Paper Window]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  }
+]

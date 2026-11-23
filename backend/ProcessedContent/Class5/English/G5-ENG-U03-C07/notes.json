@@ -1,146 +1,70 @@
 {
-  "chapterNumber": 7,
-  "chapterTitle": "Gilli Danda",
-  "unitNumber": 4,
-  "unitTitle": "Ups and Downs",
-  "chapterType": "Poem / Traditional Games",
-  "overview": "A vibrant lesson depicting children playing the traditional Indian outdoor game of Gilli Danda. The chapter explores how simple hand-carved wooden equipment—a short tapered peg (gilli) and a striking stick (danda)—provides immense physical agility, camaraderie, and joy without expensive commercial toys. Through the game, learners explore sportsmanship, fair play rules, and language mechanics like abstract nouns.",
-  "centralTheme": "Traditional Indian games, indigenous play equipment, outdoor sportsmanship, physical agility, and camaraderie.",
-  "detailedBreakdown": [
-    {
-      "sectionTitle": "Part 1: Crafting Equipment & Gameplay Rules",
-      "lines": "A small wooden peg tapered at both ends is the gilli; a sturdy striking stick is the danda...",
-      "analysis": "Details the physical design and handcrafting of traditional gaming equipment from wood."
-    },
-    {
-      "sectionTitle": "Part 2: The Spirit of Sportsmanship",
-      "lines": "Flicking the gilli from the ground groove and striking it mid-air requires focus and skill...",
-      "analysis": "Highlights hand-eye coordination, physical agility, and resolving field disputes through mutual respect."
-    }
-  ],
-  "culturalContext": {
-    "gilliDanda": "An ancient indigenous Indian game played across rural and urban fields, considered a precursor to modern cricket.",
-    "diyEquipment": "Demonstrates resourcefulness as children carve equipment from fallen tree branches."
-  },
-  "keyVocabulary": [
-    {
-      "term": "Gilli",
-      "definition": "A small wooden peg tapered at both ends used in the traditional game of Gilli Danda.",
-      "synonym": "Tapered wooden peg",
-      "antonym": "Ball"
-    },
-    {
-      "term": "Danda",
-      "definition": "A sturdy wooden stick used to strike the gilli.",
-      "synonym": "Striking bat / Stick",
-      "antonym": "Wicket"
-    },
-    {
-      "term": "Sportsmanship",
-      "definition": "Fair, generous, and polite behavior shown by players in a sport or game.",
-      "synonym": "Fair play / Respect",
-      "antonym": "Dishonesty / Cheating"
-    }
-  ],
-  "grammarFocus": {
-    "conceptTitle": "Abstract Nouns & Possessive Pronouns",
-    "rules": "Abstract nouns represent intangible qualities, feelings, or concepts (joy, sportsmanship, courage). Possessive pronouns express ownership (mine, yours, his, hers, ours, theirs).",
-    "examples": [
-      "The match brought immense joy and sportsmanship (Abstract Nouns).",
-      "This wooden danda is mine; that gilli is yours (Possessive Pronouns)."
+  "chapter_number": 7,
+  "chapter_title": "Shapes and Patterns",
+  "source_file": "eemm107.pdf",
+  "theme": "Tessellations, Polygons & 3D Nets",
+  "conceptual_foundation": {
+    "introduction": "This chapter investigates two-dimensional tiling and three-dimensional spatial geometry. Students study plane tessellations—the seamless tiling of surfaces without gaps or overlaps—and discover why certain regular shapes tile while others leave empty spaces. The chapter covers polygon classification by sides and angles, 7-piece tangram dissections, unfolding 3D solids into 2D flat nets, and testing Euler's Polyhedron Formula across solid shapes.",
+    "core_concepts": [
+      {
+        "concept": "Plane Tessellations (Tiling Rules)",
+        "explanation": "A tessellation is a pattern of repeating shapes that completely covers a 2D plane without gaps or overlaps. For regular polygons to tessellate, their interior angles meeting at any vertex must sum to exactly 360°.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Why do square tiles fit together perfectly on floors, but regular pentagon tiles leave gaps?'\nSheela: 'Square corners are 90°. Four squares at a corner: 90° x 4 = 360°—a full fit! Pentagons have 108° corners; 108° x 3 = 324° (gap) and 108° x 4 = 432° (overlap)!'\nTeacher: 'Brilliant geometric proof!'",
+        "example": "Tessellating Shapes: Squares (90°x4=360°), Regular Hexagons (120°x3=360°), Equilateral Triangles (60°x6=360°)."
+      },
+      {
+        "concept": "Polygon Classification Framework",
+        "explanation": "Polygons are closed 2D figures formed by straight line segments. Classified by side counts: Triangles (3), Quadrilaterals (4), Pentagons (5), Hexagons (6), Octagons (8). Triangles classified as Equilateral (3 equal sides), Isosceles (2 equal sides), or Scalene (0 equal sides).\n\n[Instructional Dialogue Simulation]\nTeacher: 'Classify a triangle with side lengths 5 cm, 5 cm, and 8 cm.'\nRaman: 'It has 2 equal sides, so it's an Isosceles triangle!'",
+        "example": "Triangles:\n• Equilateral: All 3 sides equal (angles 60°).\n• Isosceles: 2 equal sides.\n• Scalene: All 3 sides different."
+      },
+      {
+        "concept": "7-Piece Tangram Dissection",
+        "explanation": "A traditional 7-piece geometric puzzle comprising 5 triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram that can be rearranged into endless shapes.\n\n[Instructional Dialogue Simulation]\nTeacher: 'How many triangles are in a standard 7-piece tangram?'\nAnish: '5 triangles! Plus 1 square and 1 parallelogram = 7 pieces total.'",
+        "example": "Tangram Composition: 5 Triangles + 1 Square + 1 Parallelogram = 7 Pieces."
+      },
+      {
+        "concept": "3D Nets & Unfolding Solid Shapes",
+        "explanation": "A net is a 2D flat arrangement of polygons that can be folded along its edges to form a 3D solid polyhedron. A cube net consists of 6 square faces.\n\n[Instructional Dialogue Simulation]\nTeacher: 'How many square faces make the net of a cube?'\nSheela: '6 square faces! When folded, they form a cube with 6 faces, 8 vertices, and 12 edges.'",
+        "example": "Cube Net: 6 identical square faces fold into a 3D cube."
+      },
+      {
+        "concept": "Polyhedron Properties & Euler's Formula",
+        "explanation": "For any convex polyhedron, the relationship between Faces (F), Vertices (V), and Edges (E) satisfies Euler's Formula: F + V - E = 2.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Test Euler's Formula for a cube (F=6, V=8, E=12).'\nRaman: '6 + 8 - 12 = 14 - 12 = 2! It holds true!'\nTeacher: 'What about a triangular pyramid (F=4, V=4, E=6)?'\nSheela: '4 + 4 - 6 = 8 - 6 = 2! Holds true again!'",
+        "example": "Euler's Formula Check:\n• Cube: F=6, V=8, E=12 -> 6+8-12 = 2.\n• Triangular Pyramid: F=4, V=4, E=6 -> 4+4-6 = 2."
+      }
     ]
   },
-  "importantTakeaways": [
-    "Indigenous games promote physical fitness, creative resourcefulness, and social camaraderie.",
-    "Fair play and honesty are far more valuable in sports than winning at all costs."
+  "key_formulas_and_rules": [
+    "Tessellation Vertex Fit Rule: Interior angles meeting at a vertex must sum to 360°",
+    "Euler's Polyhedron Formula: F + V - E = 2",
+    "Polygon Definition: Closed 2D plane figure made of straight line segments",
+    "Cube Net Composition: 6 square faces",
+    "Regular Hexagon Interior Angle = 120°",
+    "Euler's Polyhedron Formula: F + V - E = 2 (where F = Faces, V = Vertices, E = Edges). Cube Nets: Exactly 11 valid 2D nets fold into a closed 3D cube."
   ],
+  "real_world_applications": "Architectural floor tiling designs, packaging box net folding, textile tangram patterns, geodesic dome design, and 3D modeling.",
   "image_asset": {
-    "asset_id": "IMG_CH07",
-    "filename": "ch07_gilli_danda_play_mechanics.png",
-    "asset_url": "/assets/images/ch07_gilli_danda_play_mechanics.png",
-    "title": "Indigenous Game Mechanics Diagram (Gilli Danda)",
+    "chapter_number": 7,
+    "image_id": "ch07_tessellations_nets",
+    "file_name": "ch07_tessellations_nets.png",
+    "local_url": "/assets/images/ch07_tessellations_nets.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 2400,
-      "height": 1350
-    },
-    "alt_text": "Technical diagram showing hand-carved gilli peg, danda striking stick, pit pivot, and field geometry.",
+    "title": "Surface Tessellations & Unfolded 3D Polyhedron Nets",
+    "description": "Seamless tiling tessellation vertex angle rules (360°) and unfolded 6-face cube net with Euler formula F+V-E=2.",
     "hotspots": [
       {
-        "id": "hs_07_gilli",
-        "label": "Tapered Gilli",
-        "x_percent": 30.0,
-        "y_percent": 70.0,
-        "w_percent": 10.0,
-        "h_percent": 12.0,
-        "tooltip": "Small oval wooden peg tapered at both pointed ends"
+        "label": "Tessellation 360 deg Vertex Fit",
+        "x_percent": 25.0,
+        "y_percent": 45.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0
       },
       {
-        "id": "hs_07_danda",
-        "label": "Striking Danda",
-        "x_percent": 50.0,
-        "y_percent": 55.0,
-        "w_percent": 15.0,
-        "h_percent": 15.0,
-        "tooltip": "Longer cylindrical wooden bat used for flicking & hitting"
-      },
-      {
-        "id": "hs_07_pit",
-        "label": "Ground Pit (Gutti)",
-        "x_percent": 20.0,
-        "y_percent": 85.0,
-        "w_percent": 12.0,
-        "h_percent": 10.0,
-        "tooltip": "Shallow earth excavation where gilli is positioned"
-      },
-      {
-        "id": "hs_07_field",
-        "label": "Outfield Catchers",
-        "x_percent": 80.0,
-        "y_percent": 40.0,
-        "w_percent": 15.0,
-        "h_percent": 20.0,
-        "tooltip": "Fielders positioned to catch mid-air gilli or measure distance"
+        "label": "3D Unfolded Cube Net",
+        "x_percent": 70.0,
+        "y_percent": 45.0,
+        "w_percent": 22.0,
+        "h_percent": 30.0
       }
     ]
-  },
-  "supplemental_mastery_content": {
-    "concrete_vs_abstract_nouns_matrix": [
-      {
-        "concrete_noun": "Danda (Stick)",
-        "abstract_noun": "Sportsmanship"
-      },
-      {
-        "concrete_noun": "Gilli (Peg)",
-        "abstract_noun": "Courage"
-      },
-      {
-        "concrete_noun": "Playground",
-        "abstract_noun": "Joy"
-      },
-      {
-        "concrete_noun": "Player",
-        "abstract_noun": "Fairness"
-      }
-    ],
-    "possessive_pronouns_vs_adjectives": {
-      "possessive_adjectives": [
-        "my",
-        "your",
-        "his",
-        "her",
-        "our",
-        "their"
-      ],
-      "possessive_pronouns": [
-        "mine",
-        "yours",
-        "his",
-        "hers",
-        "ours",
-        "theirs"
-      ],
-      "rule": "Adjectives precede a noun ('my gilli'); pronouns replace a noun entirely ('The danda is mine')."
-    }
   }
 }

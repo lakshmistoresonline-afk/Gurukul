@@ -1,17 +1,17 @@
 {
   "chapter_number": 11,
-  "chapter_title": "Areas Related to Circles",
+  "chapter_title": "Electricity",
   "zero_omission_notes": {
-    "summary": "Derives perimeters and areas of circular sub-regions: sector area (θ/360 * πr^2), arc length (θ/360 * 2πr), and segment area (Sector area - Triangle area).",
+    "summary": "Defines electric current (I=Q/t), potential difference (V=W/Q), Ohm's law (V=IR), factors affecting resistance (length, area, resistivity rho), series (Rs=sum R) and parallel (1/Rp=sum 1/R) combinations, Joule's heating (H=I^2Rt), electric power (P=VI), and commercial unit kWh.",
     "detailed_sections": [
       {
-        "section_number_and_title": "11.1 Area of Sector and Segment",
-        "full_explanation": "Sector: bounded by 2 radii and arc. Area = (θ/360) * πr^2. Arc length = (θ/360) * 2πr. Segment: bounded by chord and arc. Area = Sector area - Triangle area.",
+        "section_number_and_title": "11.1 Electric Current & Potential",
+        "full_notes": "Current is rate of flow of electric charge (I = Q/t, unit Ampere A). Potential difference V between two points is work done in moving unit charge (V = W/Q, unit Volt V).",
         "margin_notes_and_sidebars": [
           {
-            "type": "Formula Box",
-            "title": "Sector Area",
-            "content": "Area = (θ / 360) * πr^2"
+            "type": "Instrument Note",
+            "title": "Ammeter vs Voltmeter",
+            "content": "Ammeter measures current and is connected in series (low resistance). Voltmeter measures potential difference and is connected in parallel (high resistance)."
           }
         ]
       }
@@ -19,53 +19,66 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-1101",
-      "aim_or_objective": "Find area swept by 14 cm minute hand in 5 minutes.",
+      "activity_or_method_id": "Activity 11.1: Verification of Ohm's Law",
+      "aim_or_objective": "To plot V-I graph and determine resistance of a nichrome wire.",
       "materials_or_prerequisites": [
-        "Sector formula"
+        "Nichrome wire",
+        "Ammeter",
+        "Voltmeter",
+        "4 dry cells",
+        "Plug key"
       ],
       "procedure_or_steps": [
-        "Angle in 60 min = 360°",
-        "Angle in 5 min θ = (360/60) * 5 = 30°",
-        "Area = (30/360) * (22/7) * 14^2 = (1/12) * (22/7) * 196 = 154/3 cm^2"
+        "Connect circuit with 1 cell; record V and I.",
+        "Repeat by increasing cell count to 2, 3, and 4 cells.",
+        "Plot V vs I graph."
       ],
-      "observations_or_results": "Area swept = 154/3 cm^2 ≈ 51.33 cm^2.",
-      "conclusion_or_principle": "Clock hand sweeps sector proportional to time angle."
+      "observations_or_results": "V-I graph is a straight line passing through origin; ratio V/I remains constant.",
+      "conclusion_or_principle": "Current I is directly proportional to potential difference V (Ohm's Law)."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 11.1 Sector and Segment",
+        "figure_id_and_title": "Fig 11.6 Resistors in Series vs Parallel",
         "labels_and_components": [
-          "Minor Sector",
-          "Major Sector",
-          "Minor Segment",
-          "Chord"
+          "Series circuit (single pathway)",
+          "Parallel circuit (multiple branches)",
+          "Equivalent Rs = R1+R2+R3",
+          "Equivalent 1/Rp = 1/R1+1/R2+1/R3"
         ],
-        "drawing_or_reading_instructions": "Draw circle showing radii-bound sector and chord-bound segment.",
-        "structural_or_conceptual_explanation": "Visual distinction between sector and segment."
+        "drawing_or_reading_instructions": "Draw 3 resistors connected end-to-end for series, and connected across common nodes for parallel.",
+        "structural_or_conceptual_explanation": "In series, current is same across all resistors; in parallel, voltage is same across all branches."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Circle Sub-region Formulas",
+        "table_title": "Resistivity of Materials at 20 deg C",
         "headers": [
-          "Sub-region",
-          "Formula"
+          "Category",
+          "Material",
+          "Resistivity (ohm-m)"
         ],
         "rows": [
           [
-            "Arc Length",
-            "(θ/360) * 2πr"
+            "Conductor",
+            "Silver",
+            "1.60 x 10^-8"
           ],
           [
-            "Sector Area",
-            "(θ/360) * πr^2"
+            "Conductor",
+            "Copper",
+            "1.62 x 10^-8"
           ],
           [
-            "Segment Area",
-            "Sector Area - (1/2)r^2 sin θ"
+            "Alloy",
+            "Nichrome",
+            "100 x 10^-6"
+          ],
+          [
+            "Insulator",
+            "Glass",
+            "10^10 to 10^14"
           ]
         ]
       }
@@ -73,70 +86,76 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Sector Area Formula",
-      "definition_or_meaning": "Area of region bounded by two radii and central angle θ.",
-      "si_unit_or_notation": "A = (θ / 360) * πr^2",
-      "example_or_application": "θ = 60°, r = 6 cm -> A = 6π cm^2"
+      "term_or_concept": "Resistivity (rho)",
+      "definition_or_meaning": "The intrinsic electrical resistance of a conductor of unit length and unit cross-sectional area; SI unit Ohm-meter (ohm-m).",
+      "si_unit_or_notation": "Ohm-meter (ohm-m)",
+      "example_or_application": "Metals have low resistivity (10^-8 ohm-m); insulators have high (10^12 ohm-m)."
+    },
+    {
+      "term_or_concept": "Ohm's Law & Joule's Law",
+      "definition_or_meaning": "V = I x R  ;  H = I^2 x R x t",
+      "si_unit_or_notation": "V = potential difference, I = current, R = resistance, H = heat energy, t = time.",
+      "example_or_application": "Calculates circuit parameters and thermal dissipation in heaters/fuses."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Ex 11.1 Q1",
-        "question": "Find area of sector of circle with radius 6 cm if angle is 60°.",
-        "answer": "Area = (60/360) * (22/7) * 36 = 132/7 cm^2."
+        "q_no": "Q1",
+        "question": "A piece of wire of resistance R is cut into 5 equal parts. These parts are then connected in parallel. Ratio R / R' is?",
+        "answer": "Each part has resistance r = R/5. In parallel, 1/R' = 5 x (1 / (R/5)) = 25/R => R' = R/25. Ratio R / R' = 25. Option (d) 25 is correct."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Area of sector of angle p (in degrees) of circle with radius R is:",
+        "question": "What is the unit of electric power?",
         "options": [
-          "A) (p/180)*2πR",
-          "B) (p/180)*πR^2",
-          "C) (p/360)*2πR",
-          "D) (p/720)*2πR^2"
+          "Volt",
+          "Joule",
+          "Watt",
+          "Ohm"
         ],
-        "answer": "D",
-        "explanation": "(p/720)*2πR^2 reduces to (p/360)*πR^2."
+        "answer": "Watt",
+        "explanation": "1 Watt = 1 Joule / second = 1 Volt x 1 Ampere."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Find area of quadrant of circle with circumference 22 cm.",
-        "answer": "2πr = 22 => r = 7/2 cm. Quadrant area = (1/4)*(22/7)*(49/4) = 77/8 cm^2."
+        "question": "Why are copper and aluminium wires usually employed for electricity transmission?",
+        "answer": "Copper and aluminium have extremely low electrical resistivities (~10^-8 ohm-m), ensuring minimal heating losses (I^2Rt) during long distance current transmission."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Find area of shaded region bounded by square of side 14 cm and 4 congruent corner quadrants.",
-        "answer": "Area of square = 14^2 = 196 cm^2. 4 quadrants area = 1 full circle area = π r^2 = (22/7)*7^2 = 154 cm^2. Shaded area = 196 - 154 = 42 cm^2."
+        "question": "Convert 1 kWh into Joules.",
+        "answer": "1 kWh = 1 kW x 1 h = 1000 W x 3600 s = 3.6 x 10^6 Joules."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "A chord of radius 15 cm subtends 60° at center. Find areas of minor and major segments (π=3.14, √3=1.73).",
-        "answer": "Sector area = (60/360)*3.14*225 = 117.75 cm^2. Equilateral Δ area = (1.73/4)*225 = 97.3125 cm^2. Minor segment = 117.75 - 97.3125 = 20.4375 cm^2. Major segment = 3.14*225 - 20.4375 = 686.0625 cm^2."
+        "question": "Derive equivalent resistance formula for three resistors R1, R2, R3 connected in parallel and list two advantages of parallel domestic wiring.",
+        "answer": "Derivation: In parallel, total current I = I1 + I2 + I3. By Ohm's law, I = V/Rp, I1=V/R1, I2=V/R2, I3=V/R3. Substituting: V/Rp = V/R1 + V/R2 + V/R3 => 1/Rp = 1/R1 + 1/R2 + 1/R3. Advantages: 1. Each appliance gets full mains voltage (220V). 2. Independent switches; failure of one appliance does not break other circuits."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "Silver brooch diameter 35 mm made with 5 wire diameters dividing into 10 equal sectors.",
+        "case_scenario": "An electric heater rated 2kW, 220V is operated 5 hours daily for 30 days.",
         "qa": [
           {
-            "question": "Find total length of silver wire required.",
-            "answer": "Circumference + 5*Diameter = (22/7)*35 + 5(35) = 110 + 175 = 285 mm."
+            "question": "Calculate total energy consumption in kWh and bill cost at Rs 6 per unit.",
+            "answer": "Energy E = Power x Time = 2 kW x (5 h x 30) = 300 kWh (units). Cost = 300 x Rs 6 = Rs 1800."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Using circumference formula 2πr when computing sector area.",
-        "correct_fact_or_method": "Arc length uses 2πr; Sector area uses πr^2."
+        "common_error_or_misconception": "Adding parallel resistances directly like series.",
+        "correct_fact_or_method": "Always compute reciprocals 1/R1 + 1/R2 and invert the final sum to get Rp."
       }
     ]
   }

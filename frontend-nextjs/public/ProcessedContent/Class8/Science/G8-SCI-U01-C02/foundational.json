@@ -1,102 +1,90 @@
 {
   "chapter_number": 2,
-  "chapter_title": "The Invisible Living World: Beyond Our Naked Eye",
-  "skill_drills": [
-    {
-      "drill_type": "drag_and_drop_unscrambler",
-      "title": "Scientific Method Sequence Unscrambler - Ch 2",
-      "scrambled_tile_sets": [
-        {
-          "id": "t3",
-          "text": "Formulate Testable Hypothesis"
-        },
-        {
-          "id": "t1",
-          "text": "Observe Natural Phenomenon"
-        },
-        {
-          "id": "t5",
-          "text": "Draw Evidence-Based Conclusion"
-        },
-        {
-          "id": "t2",
-          "text": "Ask Investigative Question"
-        },
-        {
-          "id": "t4",
-          "text": "Conduct Controlled Experiment"
-        }
-      ],
-      "correct_sequence_ids": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5"
-      ]
-    },
-    {
-      "drill_type": "multi_bin_sorting_matrix",
-      "title": "Concept Categorization Matrix - Ch 2",
-      "bins": [
-        "Category A",
-        "Category B",
-        "Category C"
-      ],
-      "items": [
-        {
-          "text": "Component 1 of The Invisible Living World: Beyond Our Naked Eye",
-          "bin": "Category A"
-        },
-        {
-          "text": "Component 2 of The Invisible Living World: Beyond Our Naked Eye",
-          "bin": "Category B"
-        },
-        {
-          "text": "Component 3 of The Invisible Living World: Beyond Our Naked Eye",
-          "bin": "Category C"
-        }
-      ]
-    },
-    {
-      "drill_type": "editing_checker",
-      "title": "Misconception Corrector - Ch 2",
-      "erroneous_statement": "Common student misconception regarding The Invisible Living World: Beyond Our Naked Eye.",
-      "corrected_statement": "Scientifically verified fact correcting the misconception in The Invisible Living World: Beyond Our Naked Eye."
-    }
-  ],
-  "image_asset": {
-    "asset_id": "ch2_media_01",
-    "chapter_number": 2,
-    "chapter_title": "The Invisible Living World: Beyond Our Naked Eye",
-    "title": "Microscope Optics & Microorganism Classification",
-    "url": "/assets/images/ch2_microscopic_world.png",
-    "format": "PNG",
-    "aspect_ratio": "16:9",
-    "tags": [
-      "Microscope",
-      "Bacteria",
-      "Viruses",
-      "Leeuwenhoek"
+  "chapter_title": "Reshaping India’s Political Map",
+  "skill_drills": {
+    "scrambled_tile_sets": [
+      {
+        "id": "tile_1",
+        "target_term": "ZABT",
+        "scrambled_letters": [
+          "S",
+          "T",
+          "E",
+          "W",
+          "A",
+          "R",
+          "D",
+          "S",
+          "H",
+          "I",
+          "P"
+        ],
+        "hint": "Responsible protection and management of resources/institutions."
+      }
     ],
+    "multi_bin_sorting_matrices": [
+      {
+        "matrix_title": "Classification Drill - Chapter 2",
+        "bins": [
+          "Category A",
+          "Category B"
+        ],
+        "items": [
+          {
+            "item_name": "Sample Element 1",
+            "correct_bin": "Category A"
+          },
+          {
+            "item_name": "Sample Element 2",
+            "correct_bin": "Category B"
+          }
+        ]
+      }
+    ],
+    "editing_checkers": [
+      {
+        "passage_text": "In Chapter 2, key decisions are made by institutions.",
+        "embedded_errors": [
+          {
+            "error_word": "institutions",
+            "correct_word": "constitutional bodies",
+            "explanation": "Precision in terminology."
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "image_url": "/assets/images/ch2_trade_revenue_map.png",
+    "title": "Gamified Skill Reference - Chapter 2",
+    "aspect_ratio": "16:9",
     "hotspots": [
       {
-        "hotspot_id": "hs_ch2_01",
-        "title": "Component A: Microscope Setup",
-        "x_percent": 8.0,
-        "y_percent": 15.0,
+        "id": "hs_2_1",
+        "label": "Medieval Port Cities & Shreni Guilds",
+        "x_percent": 10.0,
+        "y_percent": 20.0,
         "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Detailed visual representation of Microscope and Bacteria."
+        "h_percent": 35.0,
+        "popover_description": "Ports like Surat, Calicut, and Hooghly functioned as global commercial hubs powered by trade guilds (shrenis) and banking houses."
       },
       {
-        "hotspot_id": "hs_ch2_02",
-        "title": "Component B: Viruses Mechanics",
-        "x_percent": 54.0,
-        "y_percent": 15.0,
+        "id": "hs_2_2",
+        "label": "Hundi Credit System",
+        "x_percent": 52.0,
+        "y_percent": 20.0,
         "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Experimental phenomenon illustrating Viruses and Leeuwenhoek."
+        "h_percent": 35.0,
+        "popover_description": "Traditional bills of exchange allowing merchants to transfer capital across provinces safely without carrying specie."
+      },
+      {
+        "id": "hs_2_3",
+        "label": "Todar Mal's Zabt Revenue Survey",
+        "x_percent": 20.0,
+        "y_percent": 62.0,
+        "w_percent": 60.0,
+        "h_percent": 28.0,
+        "popover_description": "Scientific land survey measuring bighas, categorizing soil fertility, and collecting 10-year yield averages for 1/3 tax in cash."
       }
     ]
   }

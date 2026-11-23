@@ -1,85 +1,114 @@
 {
   "chapter_number": 12,
-  "chapter_title": "Quadrilaterals",
+  "chapter_title": "Biodiversity and Classification of Living Organisms",
   "mind_map": {
-    "root_topic": "Quadrilaterals",
+    "root_topic": "Biodiversity and Classification of Living Organisms",
     "branches": [
       {
-        "theme": "Parallelogram Theorems & Classifications",
+        "theme": "Taxonomy, Binomial Nomenclature, and Five Kingdoms",
         "sub_branches": [
           {
-            "concept": "Properties and Converses of Parallelograms",
+            "concept": "Systematics and Binomial Nomenclature",
             "details": [
-              "A quadrilateral is a parallelogram iff opposite sides are equal, opposite angles are equal, or diagonals bisect each other.",
-              "Special parallelograms: Rectangles (equal diagonals), Rhombuses (perpendicular diagonals), Squares (both)."
+              "Biodiversity: Immense variety of life forms maintaining ecosystem stability.",
+              "Taxonomy / Systematics: Hierarchical classification system: Domain -> Kingdom -> Phylum/Division -> Class -> Order -> Family -> Genus -> Species.",
+              "Binomial Nomenclature (Carl Linnaeus): Two-part scientific naming system: Genus name (capitalized) + species name (lowercase), written in italics or underlined."
             ],
             "evidence_or_examples": [
-              "Proof that quadrilateral with DP = BQ on diagonal BD forms parallelogram APCQ."
+              "Scientific names: Homo sapiens (Human), Panthera tigris (Tiger), Mangifera indica (Mango)."
             ],
             "key_terms": [
-              "Parallelogram",
-              "Diagonal Bisection",
-              "Convex vs Non-Convex Quadrilateral"
-            ]
+              "Taxonomy",
+              "Binomial Nomenclature",
+              "Carl Linnaeus",
+              "Genus",
+              "Species",
+              "Endemic Species"
+            ],
+            "tooltip_popover": "Systematics and Binomial Nomenclature: Detailed breakdown and evidence."
+          },
+          {
+            "concept": "Whittaker's Five Kingdom System",
+            "details": [
+              "Proposed by R.H. Whittaker (1969) based on cell structure, body organization, and mode of nutrition.",
+              "1. Monera: Unicellular prokaryotes (Bacteria, Cyanobacteria, Anabaena).",
+              "2. Protista: Unicellular eukaryotes (Amoeba, Paramecium, Euglena).",
+              "3. Fungi: Multicellular non-motile heterotrophs with chitin cell walls; saprophytic nutrition (Rhizopus, Yeast, Agaricus mushroom).",
+              "4. Plantae: Multicellular autotrophic photosynthesizers with cellulose cell walls.",
+              "5. Animalia: Multicellular heterotrophic ingestive organisms lacking cell walls."
+            ],
+            "evidence_or_examples": [
+              "Classifying a unicellular organism with a distinct nucleus as Protista rather than Monera."
+            ],
+            "key_terms": [
+              "Five Kingdoms",
+              "Monera",
+              "Protista",
+              "Fungi",
+              "Plantae",
+              "Animalia",
+              "Whittaker"
+            ],
+            "tooltip_popover": "Whittaker's Five Kingdom System: Detailed breakdown and evidence."
           }
-        ]
+        ],
+        "node_color": "#10b981",
+        "icon": "concept_branch"
       },
       {
-        "theme": "Midpoint Theorem, Centroid & Varignon Invariants",
+        "theme": "Plant and Animal Kingdom Hierarchy",
         "sub_branches": [
           {
-            "concept": "Midpoint Theorem & Triangle Centroid",
+            "concept": "Plantae Classification Hierarchy",
             "details": [
-              "Midpoint Theorem: Segment joining midpoints of two triangle sides is parallel to 3rd side and half its length (DE || BC, DE = 1/2 BC).",
-              "Centroid Theorem: Medians intersect at centroid G, dividing medians in a 2:1 ratio (AG : GR = 2 : 1)."
+              "Thallophyta (Algae): Undifferentiated body (thallus), non-vascular (Spirogyra, Ulothrix).",
+              "Bryophyta: 'Amphibians of plant kingdom'; differentiated leaf/stem-like structures, non-vascular, require water for fertilization (Funaria moss, Marchantia).",
+              "Pteridophyta: First vascular plants (possess xylem/phloem), seedless spore reproduction (Ferns, Marsilea).",
+              "Gymnosperms: Vascular plants bearing naked seeds on cone scales (Pinus, Cycas).",
+              "Angiosperms: Vascular plants bearing enclosed seeds inside flowers/fruits; subdivided into Monocots (single cotyledon, parallel venation) and Dicots (two cotyledons, reticulate venation)."
             ],
             "evidence_or_examples": [
-              "Paper folding verification of midpoint crease on right triangle.",
-              "Triangle ABC with median AR = 9 cm yields AG = 6 cm and GR = 3 cm."
+              "Activity 12.1: Classifying plant specimens using a dichotomous key based on vascular tissue and seed enclosure."
             ],
             "key_terms": [
-              "Midpoint Theorem",
-              "Centroid (G)",
-              "2:1 Median Section Ratio"
-            ]
+              "Thallophyta",
+              "Bryophyta",
+              "Pteridophyta",
+              "Gymnosperms",
+              "Angiosperms",
+              "Monocot",
+              "Dicot"
+            ],
+            "tooltip_popover": "Plantae Classification Hierarchy: Detailed breakdown and evidence."
           },
           {
-            "concept": "Varignon's Theorem & Shape Invariants",
+            "concept": "Animalia Phyla and Vertebrate Classes",
             "details": [
-              "Varignon's Theorem: Midpoints of adjacent sides of ANY quadrilateral form a parallelogram.",
-              "Shape Invariants:",
-              "1. Rectangle midpoints -> Rhombus (equal diagonals).",
-              "2. Rhombus midpoints -> Rectangle (perpendicular diagonals).",
-              "3. Isosceles Trapezium midpoints -> Rhombus.",
-              "4. Kite midpoints -> Rectangle."
+              "Invertebrate Phyla: Porifera (sponges), Coelenterata (Hydra, jellyfish), Platyhelminthes (flatworms), Nematoda (roundworms), Annelida (segmented earthworms), Arthropoda (chitinous exoskeleton, jointed legs; largest phylum), Mollusca (soft-bodied, shells), Echinodermata (spiny-skinned, water vascular system).",
+              "Chordata / Vertebrata: Possess notochord/vertebral column. Classes: Pisces (fish, gills, 2-chambered heart), Amphibia (dual habitat, 3-chambered heart), Reptilia (cold-blooded, scales, 3-chambered heart except 4 in crocodiles), Aves (birds, feathers, warm-blooded, 4-chambered heart), Mammalia (mammary glands, hair/fur, viviparous, 4-chambered heart)."
             ],
             "evidence_or_examples": [
-              "Connecting midpoints of arbitrary irregular 4-gon ABCD always yields parallelogram PQRS."
+              "Arthropoda representing over 80% of all described animal species."
             ],
             "key_terms": [
-              "Varignon Parallelogram",
-              "Shape Invariant Mapping",
-              "Ptolemy's Theorem (AC*BD = AB*CD + AD*BC)"
-            ]
-          },
-          {
-            "concept": "Universal Plane Tessellation (Tiling)",
-            "details": [
-              "Any arbitrary quadrilateral (convex or non-convex) can tile a 2D plane seamlessly without gaps.",
-              "Guaranteed because interior angles of a quadrilateral sum to 360 degrees.",
-              "180-degree rotation around side midpoints forms parallel tessellation grids."
+              "Arthropoda",
+              "Chordata",
+              "Notochord",
+              "Vertebrata",
+              "Mammalia",
+              "Viviparous"
             ],
-            "evidence_or_examples": [
-              "Architectural ceramic floor tessellations using irregular 4-gon tiles."
-            ],
-            "key_terms": [
-              "Tessellation / Tiling",
-              "360-Degree Vertex Angle Sum",
-              "Midpoint Rotation"
-            ]
+            "tooltip_popover": "Animalia Phyla and Vertebrate Classes: Detailed breakdown and evidence."
           }
-        ]
+        ],
+        "node_color": "#10b981",
+        "icon": "concept_branch"
       }
     ]
+  },
+  "image_asset": {
+    "asset_id": "IMG-CH12-01",
+    "title": "Five Kingdoms & Taxonomic Hierarchy",
+    "url": "/assets/images/ch12_biodiversity_taxonomy.png"
   }
 }

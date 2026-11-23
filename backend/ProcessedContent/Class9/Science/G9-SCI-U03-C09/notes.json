@@ -1,94 +1,155 @@
 {
   "chapter_number": 9,
-  "chapter_title": "Physical and Chemical Changes & Law of Conservation of Mass",
-  "unit_or_theme": "Chemical Reactions",
+  "chapter_title": "Demand, Supply, and Market Equilibrium",
+  "unit_or_theme": "Price Determination & Markets",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "Distinguishes physical vs chemical changes, verifies Lavoisier's Law of Conservation of Mass in closed systems through precipitation and gas evolution reactions.",
+    "chapter_executive_summary": "Explains core market mechanisms: Law of Demand (inverse price-quantity relation), Law of Supply (direct price-quantity relation), market equilibrium where demand equals supply, and government price regulations (price ceilings and price floors).",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "9.1 Mass Conservation in Chemical Transformations",
-        "full_explanation": "Total mass of reactants equals total mass of products in any chemical reaction inside a closed system.",
-        "margin_boxes_and_in_text_notes": []
+        "section_number_title": "9.1 Law of Demand",
+        "full_explanation": "Other things remaining constant (ceteris paribus), as price increases, quantity demanded decreases; as price decreases, quantity demanded increases. Demand curves slope downward from left to right due to income and substitution effects.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Economic Assumption",
+            "box_title": "Ceteris Paribus",
+            "full_content": "Latin phrase meaning 'all other factors remaining equal' (consumer income, tastes, related good prices remain constant)."
+          }
+        ]
+      },
+      {
+        "section_number_title": "9.2 Law of Supply",
+        "full_explanation": "Other things remaining constant, as price increases, quantity supplied by producers increases; as price decreases, quantity supplied decreases. Supply curves slope upward from left to right driven by profit motivation.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Producer Behavior",
+            "box_title": "Profit Incentive",
+            "full_content": "Higher market prices increase profit margins, incentivizing suppliers to expand production output."
+          }
+        ]
+      },
+      {
+        "section_number_title": "9.3 Market Equilibrium and Price Controls",
+        "full_explanation": "Market Equilibrium occurs where Quantity Demanded = Quantity Supplied at Equilibrium Price (Pe). If Price > Pe: Excess Supply (Surplus) forces price down. If Price < Pe: Excess Demand (Shortage) pushes price up. Price Ceiling (max price below Pe) creates shortages; Price Floor (min price above Pe, e.g. MSP) creates surpluses.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Market Intervention",
+            "box_title": "Price Ceiling vs Price Floor",
+            "full_content": "Price Ceiling: Maximum legal price charged (protects consumers, e.g. essential drugs). Price Floor: Minimum legal price (protects producers, e.g. Minimum Support Price for farmers)."
+          }
+        ]
+      },
+      {
+        "section_number_title": "9.4 Price Elasticity of Demand & Dual Curve Shift Dynamics",
+        "full_explanation": "Price Elasticity of Demand (Ed = % Delta Qd / % Delta P) quantifies consumer responsiveness to price changes. When supply decreases (shift left) while demand increases (shift right), market equilibrium price unambiguously rises, while equilibrium quantity depends on the relative shift magnitudes."
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "Law of Conservation of Mass",
-        "definition": "Mass can neither be created nor destroyed in a chemical reaction.",
-        "contextual_example_or_usage": "Reactant mass = Product mass.",
+        "term": "Market Equilibrium",
+        "definition": "A state where market demand equals market supply, establishing a stable clearing price with no excess shortage or surplus.",
+        "contextual_example_or_usage": "At Rs. 40/kg, the quantity of apples buyers want equals the quantity sellers supply.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Price Ceiling",
+        "definition": "A legally imposed maximum price that sellers can charge for a good or service, set below equilibrium price.",
+        "contextual_example_or_usage": "Government sets a price ceiling on essential medicines to keep them affordable.",
         "associated_units_or_parts_of_speech": "Noun"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "Mass Balance Equation",
-        "statement_or_expression": "Sum(m_reactants) = Sum(m_products)",
-        "variable_definitions": "m = mass in grams",
-        "model_application_example": "5.3g Na2CO3 + 6.0g CH3COOH = 2.2g CO2 + 0.9g H2O + 8.2g CH3COONa."
+        "name": "Market Equilibrium Condition",
+        "statement_or_expression": "Q_d(P) = Q_s(P)",
+        "variable_definitions": "Q_d: Quantity Demanded; Q_s: Quantity Supplied; P: Market Price.",
+        "model_application_example": "If Q_d = 100 - 2P and Q_s = 20 + 2P, set 100 - 2P = 20 + 2P -> 4P = 80 -> P = 20."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Verifying Law of Conservation of Mass using Barium Chloride & Sodium Sulfate",
-      "objective_or_aim": "Demonstrate total mass constancy during precipitation.",
+      "activity_or_procedure_title": "Plotting Demand and Supply Curves to Find Market Equilibrium",
+      "objective_or_aim": "Graphically determine equilibrium price and quantity from market schedule data.",
       "materials_or_prerequisites": [
-        "BaCl2 solution",
-        "Na2SO4 solution",
-        "Conical flask",
-        "Ignition tube",
-        "Weighing scale"
+        "Graph Paper",
+        "Ruler",
+        "Market Price-Quantity Data Table"
       ],
       "step_by_step_procedure": [
-        "Hang ignition tube with BaCl2 inside flask containing Na2SO4.",
-        "Seal cork tightly and weigh initial mass M1.",
-        "Tilt flask to mix solutions forming white BaSO4 precipitate.",
-        "Weigh final mass M2."
+        "Plot Price (Rs) on vertical Y-axis and Quantity (Units) on horizontal X-axis.",
+        "Plot downward-sloping Demand Curve (D) from schedule points.",
+        "Plot upward-sloping Supply Curve (S) on same graph.",
+        "Identify intersection point (E) where D and S cross.",
+        "Read corresponding Equilibrium Price (Pe) and Quantity (Qe)."
       ],
-      "expected_observations_or_working": "White precipitate forms; scale reading M2 equals M1 perfectly.",
-      "scientific_or_logical_conclusion": "Chemical reactions undergo structural rearrangement without mass loss or creation."
+      "expected_observations_or_working": "The intersection point explicitly pinpoints the exact price where buyers and sellers agree.",
+      "scientific_or_logical_conclusion": "Market prices automatically adjust toward equilibrium via competitive buyer-seller interaction."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Experimental Apparatus for Mass Conservation Verification",
+        "figure_title": "Market Equilibrium, Shortage, and Surplus",
         "labels_to_learn": [
-          "Conical Flask",
-          "Thread",
-          "Ignition Tube with Solution X",
-          "Solution Y in Flask",
-          "Rubber Cork"
+          "Demand Curve (D)",
+          "Supply Curve (S)",
+          "Equilibrium Point (E)",
+          "Equilibrium Price (Pe)",
+          "Equilibrium Quantity (Qe)",
+          "Excess Supply Area",
+          "Excess Demand Area"
         ],
-        "drawing_or_labeling_instructions": "Draw sealed conical flask resting on digital weighing balance.",
-        "key_structural_details": "Emphasize gas-tight rubber stopper preventing mass escape."
+        "drawing_or_labeling_instructions": "Draw intersecting D and S curves. Mark horizontal price lines above Pe (Surplus) and below Pe (Shortage).",
+        "key_structural_details": "Price above Pe causes Qs > Qd (Surplus); Price below Pe causes Qd > Qs (Shortage)."
       }
     ],
     "tables_and_charts": [
       {
-        "table_title": "Physical vs Chemical Changes",
+        "table_title": "Market Demand and Supply Schedule for Wheat",
         "headers": [
-          "Property",
-          "Physical Change",
-          "Chemical Change"
+          "Price per Kg (Rs.)",
+          "Quantity Demanded (Kg)",
+          "Quantity Supplied (Kg)",
+          "Market Condition",
+          "Pressure on Price"
         ],
         "rows": [
           [
-            "Reversibility",
-            "Generally reversible",
-            "Irreversible generally"
+            "50",
+            "100",
+            "500",
+            "Excess Supply (Surplus = 400)",
+            "Downward"
           ],
           [
-            "New Substance",
-            "No new chemical identity formed",
-            "One or more new substances formed"
+            "40",
+            "200",
+            "400",
+            "Excess Supply (Surplus = 200)",
+            "Downward"
           ],
           [
-            "Energy Change",
-            "Small heat exchange",
-            "Significant enthalpy release or absorption"
+            "30",
+            "300",
+            "300",
+            "Equilibrium (Qd = Qs)",
+            "Stable"
+          ],
+          [
+            "20",
+            "400",
+            "200",
+            "Excess Demand (Shortage = 200)",
+            "Upward"
+          ],
+          [
+            "10",
+            "500",
+            "100",
+            "Excess Demand (Shortage = 400)",
+            "Upward"
           ]
         ]
       }
@@ -97,20 +158,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "End of Chapter Exercises",
-        "question_number": "Q1",
-        "question_text": "Explain the central principle of Physical and Chemical Changes & Law of Conservation of Mass.",
-        "complete_step_by_step_solution": "The main concept involves understanding how structural mechanisms and physical/biological principles govern Chemical Reactions."
+        "exercise_section": "Questions and Activities",
+        "question_number": "Q2",
+        "question_text": "Explain what happens when government sets a price ceiling on milk below equilibrium price.",
+        "complete_step_by_step_solution": "Setting a price ceiling below equilibrium price lowers milk price for consumers. However, at this lower price, quantity demanded increases while dairy suppliers reduce quantity supplied. This creates a persistent market shortage (Excess Demand), leading to long queues, rationing, or black markets."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Distinguishes physical vs chemical changes, verifies Lavoisier's Law of Conservation of Mass in closed systems through precipitation and gas evolution reactions.",
+        "passage_or_source_text": "Price floor is an imposed limit on how low a price can be charged. It must be set above market equilibrium price to be effective.",
         "questions_and_answers": [
           {
-            "question": "Summarize the key takeaway of this chapter.",
-            "answer": "Distinguishes physical vs chemical changes, verifies Lavoisier's Law of Conservation of Mass in closed systems through precipitation and gas evolution reactions."
+            "question": "Give a real-world example of an effective price floor in India.",
+            "answer": "Minimum Support Price (MSP) for agricultural crops set by the Indian government to protect farmers against price crashes."
           }
         ]
       }
@@ -120,40 +181,41 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "What is the core subject of Chapter 9?",
+        "question": "According to the Law of Demand, what happens when the price of a normal good falls, assuming ceteris paribus?",
         "options": [
-          "Physical and Chemical Changes & Law of Conservation of Mass",
-          "Random Topic",
-          "Unrelated Subject",
-          "None"
+          "A) Quantity demanded decreases",
+          "B) Quantity demanded increases",
+          "C) Supply increases",
+          "D) Demand curve shifts left"
         ],
-        "correct_answer": "Physical and Chemical Changes & Law of Conservation of Mass",
-        "brief_explanation": "Directly stated in textbook chapter header."
+        "correct_answer": "B) Quantity demanded increases",
+        "brief_explanation": "The Law of Demand states an inverse relationship between price and quantity demanded."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "Define key term 'Law of Conservation of Mass' and state its significance.",
-        "model_answer": "Mass can neither be created nor destroyed in a chemical reaction.",
+        "question": "Differentiate between a Price Ceiling and a Price Floor.",
+        "model_answer": "1) Price Ceiling: Legal maximum price set BELOW equilibrium price to protect consumers (causes shortage). 2) Price Floor: Legal minimum price set ABOVE equilibrium price to protect producers/farmers (causes surplus).",
         "key_marking_points": [
-          "Correct definition",
-          "Appropriate context usage"
+          "Max vs Min price distinction",
+          "Placement relative to equilibrium price",
+          "Shortage vs Surplus outcome"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "Comprehensive analysis of systems described in Chapter 9: Physical and Chemical Changes & Law of Conservation of Mass.",
-        "model_answer": "Distinguishes physical vs chemical changes, verifies Lavoisier's Law of Conservation of Mass in closed systems through precipitation and gas evolution reactions. Key processes operate through established physical and biological principles."
+        "question": "Using a demand and supply diagram, explain how market forces automatically restore equilibrium when price is set above equilibrium price.",
+        "model_answer": "1) When price (P1) is above equilibrium price (Pe), Quantity Supplied (Qs) exceeds Quantity Demanded (Qd), creating Excess Supply (Surplus). 2) Sellers find unsold inventories accumulating in warehouses. 3) To clear unsold stock, competing sellers lower their prices. 4) As price falls toward Pe, quantity demanded expands along the demand curve while quantity supplied contracts along the supply curve. 5) Price reductions continue until Qs = Qd at equilibrium price Pe, eliminating the surplus."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "Practical scenario demonstrating Chemical Reactions principles in real-world application.",
+        "case_scenario": "A sudden severe drought destroys 40% of the onion crop nationwide before the winter harvest season.",
         "questions_and_answers": [
           {
-            "question": "Analyze the scenario outcomes.",
-            "answer": "Applies Law of Conservation of Mass and related scientific laws."
+            "question": "Analyze the impact on the onion market supply curve, equilibrium price, and quantity.",
+            "answer": "The crop destruction causes the onion Supply Curve to shift leftward. At the original price, excess demand occurs, driving the new equilibrium price significantly upward while reducing equilibrium quantity."
           }
         ]
       }
@@ -161,62 +223,9 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Misinterpreting fundamental concepts in Physical and Chemical Changes & Law of Conservation of Mass.",
-      "root_cause": "Conflating everyday non-scientific terms with precise scientific definitions.",
-      "correct_approach": "Apply exact SI units and standard scientific terminology."
+      "frequent_student_error": "Confusing a 'change in quantity demanded' with a 'change in demand'.",
+      "root_cause": "Imprecise use of economic terms.",
+      "correct_approach": "'Change in quantity demanded' is a movement along the same demand curve caused solely by a price change; 'Change in demand' is a shift of the entire curve caused by non-price factors (income, tastes)."
     }
-  ],
-  "image_asset": {
-    "asset_id": "IMG-CH09-01",
-    "title": "Mass Conservation & Chemical Reaction Types",
-    "url": "/assets/images/ch9_chemical_reactions.png"
-  },
-  "scripted_dialogue": [
-    {
-      "speaker": "Teacher",
-      "role": "Instructor",
-      "speech_text": "Welcome to Chapter 9! Let's explore key scientific concepts and practical lab investigations."
-    },
-    {
-      "speaker": "Student",
-      "role": "Inquirer",
-      "speech_text": "How do these principles apply to real-world phenomena and experiments in Chapter 9?"
-    }
-  ],
-  "stem_lab_drawer": {
-    "apparatus": [
-      "Graduated Cylinder",
-      "Digital Scale",
-      "Microscope",
-      "Beakers",
-      "Thermometer"
-    ],
-    "reagents": [
-      "Pure Water",
-      "Safranin Stain",
-      "Copper Sulfate",
-      "Barium Chloride"
-    ]
-  },
-  "scripted_dialogues": [
-    {
-      "speaker": "Teacher",
-      "speech_text": "When 5.3 g of sodium carbonate reacts with 6.0 g of ethanoic acid in a closed flask, what is the expected total mass of products?"
-    },
-    {
-      "speaker": "Student",
-      "speech_text": "Exactly 11.3 g! According to Lavoisier's Law of Conservation of Mass, the total mass of products must equal the total mass of reactants."
-    }
-  ],
-  "formula_calculator": {
-    "calculator_name": "Mass Conservation Balancer",
-    "formula": "Mass of Reactants = Mass of Products",
-    "variables": [
-      "Reactant 1 Mass",
-      "Reactant 2 Mass",
-      "Product 1 Mass",
-      "Product 2 Mass"
-    ],
-    "example": "5.3 g Na2CO3 + 6.0 g CH3COOH = 2.2 g CO2 + 0.9 g H2O + 8.2 g CH3COONa = 11.3 g."
-  }
+  ]
 }

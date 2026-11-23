@@ -1,162 +1,129 @@
 {
-  "unit_number": 3,
   "chapter_number": 5,
-  "chapter_title": "My Frog's World",
-  "mindmap": {
-    "root_node": "My Frog's World (Poetry / Amphibian Biology)",
-    "central_theme": "Amphibian life cycles, dual aquatic-terrestrial adaptations, ecosystem preservation, and wildlife conservation",
-    "sub_nodes": [
+  "chapter_title": "Far and Near",
+  "mind_map": {
+    "root_node": "Far and Near (Metric Length Units, Conversions & Double Number Lines)",
+    "main_branches": [
       {
-        "node_id": "M5_THEME",
-        "title": "Main Themes, Core Morals & Pedagogical Value",
-        "child_nodes": [
+        "branch_title": "1. Metric Length Hierarchy & Unit Relationships",
+        "sub_branches": [
           {
-            "title": "Central Theme & Biological Dual Life",
-            "details": "Explores the dual existence of amphibians thriving on both land and water through specialized structural adaptations."
+            "sub_title": "Units of Metric Length",
+            "key_nodes": [
+              "Millimetre (mm): Micro unit for tiny object dimensions and thickness (e.g., coin thickness, eraser edge)",
+              "Centimetre (cm): Unit for small handheld items (e.g., pencil length, notebook width; 1 cm = 10 mm)",
+              "Metre (m): Base metric unit for human height, room dimensions, fabric cuts (1 m = 100 cm = 1,000 mm)",
+              "Kilometre (km): Macro unit for geographical distances between towns and cities (1 km = 1,000 m)"
+            ],
+            "misconception_alert": "Confusing mm and cm markers on standard ruler scales (cm marks are numbered; mm marks are unnumbered sub-lines).",
+            "formula_or_rule": "Metric Equivalences: 1 cm = 10 mm; 1 m = 100 cm; 1 km = 1,000 m.",
+            "real_world_application": "Selecting appropriate tools (ruler vs tape measure) for tailoring or construction."
           },
           {
-            "title": "Ecosystem Interconnectedness",
-            "details": "Emphasizes the vital role frogs play in food chains by controlling insect populations and serving as environmental health indicators."
-          },
-          {
-            "title": "Conservation & Aquatic Wildlife",
-            "details": "Connects amphibian habitats with India's aquatic wildlife, including the Ganges River Dolphin as National Aquatic Animal."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Amphibian World",
-            "details": "Mermaid Syntax:\ngraph TD\n  A[Frog's World] --> B[Dual Habitat: Land & Water]\n  A --> C[Biological Adaptations]\n  A --> D[Metamorphosis Life Cycle]\n  B --> B1[Moist Skin & Lungs/Gills]\n  C --> C1[Webbed Feet & Sticky Tongue]\n  D --> D1[Egg -> Tadpole -> Adult Frog]"
+            "sub_title": "Micro to Macro Orders of Magnitude",
+            "key_nodes": [
+              "Relative Scaling: 1 km = 1,000 m = 100,000 cm = 1,000,000 mm",
+              "Contextual Selection: Choosing mm for seeds, cm for shoes, m for sprinting tracks, km for flight paths",
+              "Precision Trade-offs: Small units increase precision; large units simplify geographical tracking"
+            ],
+            "misconception_alert": "Using metres to measure road trip distances between cities (leads to unnecessarily large numbers).",
+            "formula_or_rule": "Unit Choice Rule: Select the unit whose magnitude matches the object being measured.",
+            "real_world_application": "Engineering design specifications and geographical atlas mapping."
           }
         ]
       },
       {
-        "node_id": "M5_PLOT",
-        "title": "Biological Progression, Metamorphosis & Visual Arc",
-        "child_nodes": [
+        "branch_title": "2. Unit Conversions & Double Number Lines",
+        "sub_branches": [
           {
-            "title": "Stage 1: Aquatic Spawn & Egg",
-            "details": "Female frog lays jelly-like egg clusters (spawn) in quiet pond waters."
+            "sub_title": "Unit Conversion Mechanics",
+            "key_nodes": [
+              "Larger to Smaller Unit: Multiply by conversion scale factor (e.g., 3.5 km x 1,000 = 3,500 m)",
+              "Smaller to Larger Unit: Divide by conversion factor (e.g., 450 cm / 100 = 4.5 m)",
+              "Compound Conversion: Expressing fractional lengths (e.g., 2 m 45 cm = 245 cm)"
+            ],
+            "misconception_alert": "Multiplying instead of dividing when converting smaller metric units to larger metric units.",
+            "formula_or_rule": "Conversion Rule: Large -> Small (Multiply by factor); Small -> Large (Divide by factor).",
+            "real_world_application": "Converting architectural blueprints to actual building site measurements."
           },
           {
-            "title": "Stage 2: Gilled Limbless Tadpole",
-            "details": "Hatched tadpole possesses a swimming tail and external gills for aquatic respiration."
-          },
-          {
-            "title": "Stage 3: Metamorphosis & Leg Development",
-            "details": "Tadpole sprouts hind/fore legs, reabsorbs its tail, and develops functional air-breathing lungs."
-          },
-          {
-            "title": "Stage 4: Adult Amphibian Life",
-            "details": "Adult frog uses webbed hind feet for swimming and long sticky tongue for snatching flying insects."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Metamorphosis Flowchart",
-            "details": "Mermaid Syntax:\ngraph LR\n  M1[Frog Spawn Egg] --> M2[Aquatic Tadpole with Tail] --> M3[Sprouting Hind/Fore Legs] --> M4[Tail Reabsorption & Lungs] --> M5[Adult Dual Amphibian]"
+            "sub_title": "Double Number Line Mapping",
+            "key_nodes": [
+              "Double Number Line Structure: Two parallel aligned axes showing equivalent values in different units",
+              "Proportional Visualization: Mapping fractional intervals (e.g., top axis in metres: 0, 0.5, 1; bottom axis in cm: 0, 50, 100)",
+              "Interpolation of Intermediate Values: Finding non-standard unit matches visually"
+            ],
+            "misconception_alert": "Misaligning zero origins or maintaining unequal tick spacing on top and bottom number lines.",
+            "formula_or_rule": "Proportional Mapping: Aligned vertical ticks on double number lines represent equal physical lengths.",
+            "real_world_application": "Dual metric-imperial tape measures and athletic track marking."
           }
         ]
       },
       {
-        "node_id": "M5_CHARACTERS / ENTITIES",
-        "title": "Key Scientific Entities & Biological Concepts",
-        "child_nodes": [
+        "branch_title": "3. Compound Operations & Map Scale Ratios",
+        "sub_branches": [
           {
-            "title": "The Amphibian Frog",
-            "details": "Cold-blooded vertebrate capable of aquatic gill respiration in larva stage and terrestrial lung/skin respiration in adult stage."
+            "sub_title": "Compound Length Arithmetic",
+            "key_nodes": [
+              "Column Addition of Lengths: Adding m and cm separately; regrouping 100 cm as 1 m",
+              "Column Subtraction of Lengths: Borrowing 1 m as 100 cm when cm minuend < cm subtrahend",
+              "Multi-leg Total Calculation: Summing route segments to determine marathon lengths"
+            ],
+            "misconception_alert": "Borrowing 10 cm instead of 100 cm when regrouping metres to centimetres.",
+            "formula_or_rule": "Length Regrouping: 100 cm = 1 m; 1,000 m = 1 km.",
+            "real_world_application": "Tailoring fabric cuts and road construction survey logs."
           },
           {
-            "title": "Ganges River Dolphin",
-            "details": "India's National Aquatic Animal; blind mammal navigating muddy river waters using ultrasonic echolocation clicks."
-          },
-          {
-            "title": "Specialized Anatomical Adaptations",
-            "details": "Webbed feet for paddle swimming; moist permeable skin; long muscle-bound sticky tongue."
-          }
-        ]
-      },
-      {
-        "node_id": "M5_VOCAB_PHONICS",
-        "title": "Vocabulary, Pronunciation & Phonics Clusters",
-        "child_nodes": [
-          {
-            "title": "Core Vocabulary Glossary",
-            "details": "Amphibian (dual-life animal), Metamorphosis (transformation), Webbed (membrane between toes), Terrestrial (land-dwelling), Echolocation (sonar navigation)."
-          },
-          {
-            "title": "Phonics & Sound Mechanics",
-            "details": "Digraph 'ph' producing voiceless labiodental /f/ sound in 'amphibian'; silent 'b' in 'thumb'."
-          },
-          {
-            "title": "Synonyms & Antonyms",
-            "details": "Metamorphosis = Transformation; Terrestrial × Aquatic; Damp × Dry."
-          }
-        ]
-      },
-      {
-        "node_id": "M5_GRAMMAR",
-        "title": "Grammar, Mechanics & Sentence Structures",
-        "child_nodes": [
-          {
-            "title": "Present Continuous Tense",
-            "details": "Ongoing biological actions: 'The tadpole is swimming', 'The frog is leaping', 'Dolphins are navigating'."
-          },
-          {
-            "title": "Cause and Effect Structures",
-            "details": "Linking anatomical structures to functions ('Because frogs have webbed feet, they swim fast')."
-          },
-          {
-            "title": "Descriptive Action Adjectives",
-            "details": "Slimy, sticky, webbed, aquatic, terrestrial, ultrasonic, cold-blooded."
+            "sub_title": "Map Scales & Real-World Distances",
+            "key_nodes": [
+              "Map Scale Ratio: Proportional reduction scaling ground distances onto printable paper (e.g., 1 cm on map = 10 km on ground)",
+              "Ground Distance Calculation: Ground Distance = Map Distance (cm) x Scale Factor (km/cm)",
+              "Map Distance Calculation: Map Distance = Ground Distance / Scale Factor"
+            ],
+            "misconception_alert": "Treating map scale as direct 1:1 physical distance without multiplying by ground factor.",
+            "formula_or_rule": "Ground Distance = Measured Map Centimetres x Kilometres per Map Centimetre.",
+            "real_world_application": "Navigating highway road maps, hiking trails, and urban city planning blueprints."
           }
         ]
       }
     ]
   },
   "image_asset": {
-    "asset_id": "IMG_CH05",
-    "filename": "ch05_frog_metamorphosis_lifecycle.png",
-    "asset_url": "/assets/images/ch05_frog_metamorphosis_lifecycle.png",
-    "title": "Amphibian Life Cycle & Adaptation Anatomy (My Frog's World)",
+    "chapter_number": 5,
+    "image_id": "ch05_metric_scale",
+    "file_name": "ch05_metric_scale.png",
+    "local_url": "/assets/images/ch05_metric_scale.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 2400,
-      "height": 1350
-    },
-    "alt_text": "Biological diagram detailing frogspawn, tadpole metamorphosis, webbed feet, and sticky tongue.",
+    "title": "Metric Length Hierarchy & Double Number Line",
+    "description": "Double number line showing proportional metric conversions between mm, cm, m, and km.",
     "hotspots": [
       {
-        "id": "hs_05_eggs",
-        "label": "Frogspawn",
+        "label": "Millimetres (mm)",
         "x_percent": 15.0,
-        "y_percent": 75.0,
-        "w_percent": 12.0,
-        "h_percent": 12.0,
-        "tooltip": "Jelly-covered eggs laid in quiet pond water"
-      },
-      {
-        "id": "hs_05_tadpole",
-        "label": "Swimming Tadpole",
-        "x_percent": 38.0,
-        "y_percent": 65.0,
-        "w_percent": 14.0,
-        "h_percent": 12.0,
-        "tooltip": "Gill-breathing aquatic larvae stage with swimming tail"
-      },
-      {
-        "id": "hs_05_webbed",
-        "label": "Webbed Feet",
-        "x_percent": 68.0,
-        "y_percent": 50.0,
-        "w_percent": 12.0,
-        "h_percent": 15.0,
-        "tooltip": "Skin membranes between toes enabling swift paddling"
-      },
-      {
-        "id": "hs_05_tongue",
-        "label": "Sticky Tongue",
-        "x_percent": 88.0,
         "y_percent": 30.0,
-        "w_percent": 10.0,
-        "h_percent": 12.0,
-        "tooltip": "Long elastic tongue used for catching insects on land"
+        "w_percent": 15.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Centimetres (cm)",
+        "x_percent": 35.0,
+        "y_percent": 30.0,
+        "w_percent": 15.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Metres (m)",
+        "x_percent": 55.0,
+        "y_percent": 30.0,
+        "w_percent": 15.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Kilometres (km)",
+        "x_percent": 75.0,
+        "y_percent": 30.0,
+        "w_percent": 15.0,
+        "h_percent": 15.0
       }
     ]
   }

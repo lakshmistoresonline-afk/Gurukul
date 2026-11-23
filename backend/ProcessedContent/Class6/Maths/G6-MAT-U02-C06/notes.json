@@ -1,92 +1,30 @@
-{
-  "chapter_number": 6,
-  "chapter_title": "Perimeter and Area",
-  "section_1_complete_textbook_notes": {
-    "chapter_overview": "This chapter covers two-dimensional spatial measurement: Perimeter (1D boundary distance) and Area (2D enclosed surface region) for rectangles, squares, regular polygons, and composite shapes. It explores area conservation under cutting/re-arrangement and perimeter variations under fixed area constraints.",
-    "detailed_sections": [
-      {
-        "section_number_title": "6.1 Perimeter of Polygons",
-        "full_textbook_explanation": "Perimeter is the total continuous boundary distance around a closed plane shape.\nFormulas:\n- Rectangle Perimeter: P = 2(l + w)\n- Square Perimeter: P = 4s\n- Regular n-gon Perimeter: P = n x s.",
-        "mathematical_definitions": [
-          {
-            "term": "Perimeter",
-            "formal_definition": "The total continuous distance around the outer boundary of a closed 2D plane figure.",
-            "example": "Triangle perimeter with sides 3cm, 4cm, 5cm is 12 cm."
-          }
-        ],
-        "formulas_and_properties": [
-          {
-            "name": "Perimeter of Rectangle",
-            "statement_or_expression": "P = 2 x (l + w)",
-            "variable_definitions": "l = length, w = width, P = perimeter (linear units)",
-            "direct_example": "For l = 8 m, w = 5 m: P = 2(8 + 5) = 26 m."
-          }
-        ]
-      },
-      {
-        "section_number_title": "6.2 Area and Conservation Principle",
-        "full_textbook_explanation": "Area measures the two-dimensional surface enclosed within a closed boundary, expressed in square units (sq cm, sq m). Formulas: Rectangle Area = l x w; Square Area = s^2. Area Conservation Principle: Cutting and rearranging a shape keeps total area unchanged, but alters boundary perimeter.",
-        "mathematical_definitions": [
-          {
-            "term": "Area",
-            "formal_definition": "The magnitude of two-dimensional surface region enclosed within a closed plane figure.",
-            "example": "Area of a 6m x 4m room is 24 sq m."
-          }
-        ],
-        "formulas_and_properties": [
-          {
-            "name": "Area of Rectangle",
-            "statement_or_expression": "A = l x w",
-            "variable_definitions": "l = length, w = width, A = area (square units)",
-            "direct_example": "A = 10 cm x 6 cm = 60 sq cm."
-          }
-        ]
-      }
-    ],
-    "grid_area_mastery": {
-      "concept": "Grid Approximation for Irregular Shapes & Perimeter Extremes",
-      "explanation": "Area of irregular closed curves is estimated on standard grid paper by counting full squares as 1, >= 1/2 squares as 1, and < 1/2 squares as 0. For a fixed area, a square minimizes perimeter."
-    }
+[
+  {
+    "q": "What two universal properties define matter?",
+    "a": "Mass and Volume."
   },
-  "section_2_step_by_step_algorithms": [
-    {
-      "method_name": "Finding Area of Composite Rectangular Shapes",
-      "step_by_step_instructions": [
-        "Step 1: Divide the composite figure into non-overlapping sub-rectangles.",
-        "Step 2: Determine length and width of each sub-rectangle.",
-        "Step 3: Calculate area of each sub-rectangle using A = l x w.",
-        "Step 4: Sum all sub-rectangle areas to find total composite area."
-      ],
-      "model_textbook_example": {
-        "problem": "Find width of a rectangle with length 25 m and area 300 sq m.",
-        "working_steps": [
-          "Area = length x width.",
-          "300 = 25 x width.",
-          "width = 300 / 25 = 12 m."
-        ],
-        "final_answer": "12 meters"
-      }
-    }
-  ],
-  "section_3_in_text_boxes_and_try_these": [
-    {
-      "box_type": "Figure it Out",
-      "location_or_title": "Page 130",
-      "question_text": "If perimeter of a rectangle is 14 cm and breadth is 2 cm, find its length.",
-      "complete_solution": "P = 2(l + b) => 14 = 2(l + 2) => l + 2 = 7 => l = 5 cm."
-    }
-  ],
-  "section_4_complete_textbook_exercise_solutions": [
-    {
-      "exercise_number": "Ex 6.1",
-      "question_number": "Q4",
-      "question_text": "Find cost of tiling a plot 500 m long and 200 m wide at Rs 8 per 100 sq m.",
-      "solution_steps": [
-        "Area = 500 m x 200 m = 100,000 sq m.",
-        "Rate = Rs 8 per 100 sq m.",
-        "Cost = (100,000 / 100) x 8 = 1000 x 8 = Rs 8000."
-      ],
-      "final_answer_with_units": "Rs 8000"
-    }
-  ]
-}
+  {
+    "q": "Categorize butter paper by light transmission.",
+    "a": "Translucent."
+  },
+  {
+    "q": "Define 'Matter' and state its two universal properties.",
+    "a": "Matter is anything that occupies space and has mass. Its universal properties are Mass and Volume."
+  },
+  {
+    "q": "Classify materials based on light transmission into three categories.",
+    "a": "1. Transparent: Light passes completely; clear view (Clear glass, clean water).\n2. Translucent: Light passes partially; blurred view (Butter paper, frosted glass).\n3. Opaque: Light cannot pass; no view (Wood, cardboard, metal)."
+  },
+  {
+    "q": "How can you experimentally test if a solid powder is soluble or insoluble in water?",
+    "a": "Add a teaspoon of the powder into a glass tumbler of water, stir vigorously for 1 minute, and let stand. If it disappears completely, it is soluble; if particles settle or float without dissolving, it is insoluble."
+  },
+  {
+    "q": "What is meant by 'Lustre' in material classification?",
+    "a": "Lustre refers to the shiny or glossy appearance of a freshly cut or polished surface, characteristic of metals like gold, copper, and aluminum."
+  },
+  {
+    "q": "Why are cooking pots made of metals like aluminum or copper, while their handles are made of wood or plastic?",
+    "a": "Metals are good conductors of heat and durable (hard/opaque), whereas wood and plastic are poor heat conductors (insulators), protecting hands from burns."
+  }
+]

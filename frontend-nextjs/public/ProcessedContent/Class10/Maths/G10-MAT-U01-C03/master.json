@@ -1,28 +1,39 @@
 {
   "chapter_number": 3,
-  "chapter_title": "Pair of Linear Equations in Two Variables",
+  "chapter_title": "The Making of a Global World",
   "zero_omission_notes": {
-    "summary": "Covers systems of two linear equations in two variables, graphical representation (intersecting, parallel, coincident lines), algebraic solutions (substitution, elimination), and consistency conditions based on coefficient ratios.",
+    "summary": "Global integration has deep historical roots. Pre-modern Silk Routes connected Asia, Europe, and Africa in trade (silk, spices, silver) and cultural exchange (religions, food like spaghetti/potatoes). Biological conquest via smallpox decimated Native Americans. In the 19th century, global trade was shaped by three economic flows (goods, labor, capital). British repeal of Corn Laws created global food markets, while refrigerated ships revolutionized meat trade. Late 19th-century imperialism saw Europe carve up Africa (1885 Berlin Conference) and Rinderpest (cattle plague) destroy African pastoral economies. Indentured labor supplied plantation workers under harsh terms. WWI transformed global finance, making US a creditor nation. Mass production (Henry Ford's assembly line) fueled the 1920s boom, but agricultural overproduction and the 1929 Wall Street Crash caused the Great Depression. Post-WWII stability was rebuilt via the 1944 Bretton Woods institutions (IMF and World Bank). Developing nations formed G-77 for a New International Economic Order (NIEO) before production relocated to low-wage Asian economies in the 1970s.",
     "detailed_sections": [
       {
-        "section_number_and_title": "3.1 Pair of Linear Equations & Consistency",
-        "full_explanation": "a1 x + b1 y + c1 = 0 and a2 x + b2 y + c2 = 0. Intersecting (a1/a2 != b1/b2 -> unique solution), Coincident (a1/a2 = b1/b2 = c1/c2 -> infinite solutions), Parallel (a1/a2 = b1/b2 != c1/c2 -> no solution).",
+        "section_number_and_title": "3.1 The Pre-Modern World",
+        "full_notes": "Pre-modern global interlinks existed through Silk Routes carrying Chinese silk, ceramics, Indian textiles, and West Asian silver. Food items migrated: noodles from China became spaghetti; potatoes, maize, tomatoes, and chillies traveled from post-Columbus Americas. European conquest of the Americas succeeded through biological warfare—smallpox germs to which indigenous populations lacked immunity.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Summary Box",
-            "title": "Ratio Conditions",
-            "content": "Unique: a1/a2 != b1/b2; Infinite: a1/a2 = b1/b2 = c1/c2; No solution: a1/a2 = b1/b2 != c1/c2"
+            "type": "New Words",
+            "title": "Dissenter",
+            "content": "One who refuses to accept established beliefs or practices."
           }
         ]
       },
       {
-        "section_number_and_title": "3.2 Algebraic Solution Methods",
-        "full_explanation": "Substitution: isolate one variable and substitute. Elimination: equalize coefficients of one variable by multiplication and add/subtract.",
+        "section_number_and_title": "3.2 The Nineteenth Century (1815–1914)",
+        "full_notes": "Economists categorize three international flows: trade, labor, and capital. British repeal of Corn Laws enabled cheap food imports, causing agricultural land abandonment and emigration to America/Australia. Refrigerated ships (1870s) lowered meat prices in Europe. 1885 Berlin Conference partitioned Africa among European empires. Rinderpest (1880s cattle plague) killed 90% of African cattle, pushing pastoralists into wage labor.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Tip",
-            "title": "Elimination Choice",
-            "full_content": "Choose variable with simpler coefficients to minimize arithmetic errors."
+            "type": "New Words",
+            "title": "Indentured Labour",
+            "content": "Bonded worker under contract to work for a specific employer for a set period."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "3.3 The Inter-War Economy & Great Depression",
+        "full_notes": "WWI turned Britain into a debtor to the US. Henry Ford's Detroit assembly line mass-produced Model T cars ($5/day wage offset conveyor belt speed). Agricultural overproduction and the Oct 1929 Wall Street Crash caused the Great Depression: 4,000+ US banks collapsed, global trade halved, and Indian agricultural exports dropped 50%, forcing rural gold sales.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Source Note",
+            "title": "Bretton Woods (1944)",
+            "content": "Established IMF and World Bank to maintain fixed exchange rates pegged to US Dollar."
           }
         ]
       }
@@ -30,61 +41,51 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-301",
-      "aim_or_objective": "Solve system 9x - 4y = 2000 and 7x - 3y = 2000 via Elimination.",
+      "activity_or_method_id": "ACT-3.1",
+      "aim_or_objective": "Diagrammatic mapping of 19th-century global economic flows (Goods, Labour, Capital).",
       "materials_or_prerequisites": [
-        "Elimination method"
+        "World trade map",
+        "Flowchart templates"
       ],
       "procedure_or_steps": [
-        "Multiply Eq 1 by 3: 27x - 12y = 6000",
-        "Multiply Eq 2 by 4: 28x - 12y = 8000",
-        "Subtract: x = 2000",
-        "Substitute x = 2000: 9(2000) - 4y = 2000 => y = 4000"
+        "Step 1: Map British raw material imports (Indian cotton, wheat) and manufactured goods exports.",
+        "Step 2: Trace indentured labor migration routes from India/China to Caribbean, Fiji, and Mauritius.",
+        "Step 3: Illustrate Multilateral Settlement System balancing British trade deficits."
       ],
-      "observations_or_results": "x = 2000, y = 4000.",
-      "conclusion_or_principle": "Unique point of intersection (2000, 4000)."
+      "observations_or_results": "Clear visualization of 19th-century colonial economic interdependencies.",
+      "conclusion_or_principle": "Global trade structures relied on colonial resource extraction and fixed trade flows."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 3.1 Linear System Lines",
+        "figure_id_and_title": "Fig 3.1 / Carving of Africa (Berlin Conference, 1885)",
         "labels_and_components": [
-          "Intersecting Lines",
-          "Parallel Lines",
-          "Coincident Lines"
+          "Straight line colonial borders across African continent",
+          "European imperial nations"
         ],
-        "drawing_or_reading_instructions": "Plot both linear equations on Cartesian coordinate plane.",
-        "structural_or_conceptual_explanation": "Geometrical proof of consistent vs inconsistent systems."
+        "drawing_or_reading_instructions": "Observe how borders were drawn using straight rulers regardless of ethnic geography.",
+        "structural_or_conceptual_explanation": "Visual proof of imperialist partition of African territories."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "System Consistency Matrix",
+        "table_title": "Bretton Woods Institutions vs G-77 Demands",
         "headers": [
-          "Ratios Comparison",
-          "Graphical Form",
-          "Algebraic Solutions",
-          "System Nature"
+          "Parameter",
+          "Bretton Woods (IMF/World Bank)",
+          "G-77 (NIEO)"
         ],
         "rows": [
           [
-            "a1/a2 != b1/b2",
-            "Intersecting lines",
-            "Exactly 1 solution",
-            "Consistent"
+            "Dominance",
+            "Western Industrial Nations (US Veto)",
+            "Developing Non-Aligned Countries"
           ],
           [
-            "a1/a2 = b1/b2 = c1/c2",
-            "Coincident lines",
-            "Infinitely many",
-            "Dependent Consistent"
-          ],
-          [
-            "a1/a2 = b1/b2 != c1/c2",
-            "Parallel lines",
-            "No solution",
-            "Inconsistent"
+            "Objective",
+            "Financial stability & post-war reconstruction",
+            "Sovereign control over resources & fair trade terms"
           ]
         ]
       }
@@ -92,70 +93,76 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Consistency Condition",
-      "definition_or_meaning": "Ratio tests to check system solvability.",
-      "si_unit_or_notation": "a1/a2 vs b1/b2 vs c1/c2",
-      "example_or_application": "2x+3y=9 and 4x+6y=18 -> 2/4 = 3/6 = 9/18 -> Infinite"
+      "term_or_concept": "Corn Laws",
+      "definition_or_meaning": "British tariffs restricting grain imports, repealed in 1846.",
+      "si_unit_or_notation": "N/A (Legislation)",
+      "example_or_application": "Repeal allowed cheap grain imports into Britain."
+    },
+    {
+      "term_or_concept": "Rinderpest",
+      "definition_or_meaning": "Devastating viral cattle disease introduced to Africa in late 1880s.",
+      "si_unit_or_notation": "N/A (Biological Pathogen)",
+      "example_or_application": "Killed 90% of African cattle."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Ex 3.2 Q2(i)",
-        "question": "Check if 5x - 4y + 8 = 0 and 7x + 6y - 9 = 0 intersect, are parallel, or coincident.",
-        "answer": "a1/a2 = 5/7, b1/b2 = -4/6 = -2/3. Since 5/7 != -2/3, lines intersect at a unique point."
+        "q_no": "Q3(a)",
+        "question": "Explain the effects of the abolition of Corn Laws.",
+        "answer": "1. Cheap foreign grain flooded Britain, making domestic farming uncompetitive.\n2. Farm workers lost employment and migrated to cities or overseas.\n3. Lower food prices increased industrial growth and global agricultural expansion."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "If 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, k equals:",
+        "question": "Which conference created the IMF and World Bank in July 1944?",
         "options": [
-          "A) 15/4",
-          "B) 9/5",
-          "C) 15/2",
-          "D) 4/15"
+          "A) Berlin Conference",
+          "B) Bretton Woods Conference",
+          "C) Versailles Conference",
+          "D) Vienna Conference"
         ],
-        "answer": "A",
-        "explanation": "3/2 = 2k/5 => 4k = 15 => k = 15/4."
+        "answer": "B",
+        "explanation": "Bretton Woods Conference in New Hampshire established the post-war international monetary framework."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Solve x + y = 14 and x - y = 4 by substitution.",
-        "answer": "x = 14 - y. (14-y) - y = 4 => 14 - 2y = 4 => 2y = 10 => y = 5, x = 9."
+        "question": "What was the Multilateral Settlement System?",
+        "answer": "A system where a country's trade deficit with one nation is settled using its trade surplus with another. Britain used its trade surplus in India to balance deficits with Western nations."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Sum of digits of a two-digit number is 9. Nine times this number is twice the number obtained by reversing digits. Find the number.",
-        "answer": "Number = 10x + y. x + y = 9. 9(10x + y) = 2(10y + x) => 90x + 9y = 20y + 2x => 88x = 11y => y = 8x. x + 8x = 9 => x = 1, y = 8. Number is 18."
+        "question": "Explain how Rinderpest aided European conquest of Africa.",
+        "answer": "Rinderpest wiped out 90% of African cattle, destroying the pastoral economy. Deprived of livestock livelihoods, Africans were forced into the wage labor market, allowing European colonizers to subjugate the continent easily."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Solve graphically: 2x + y = 6 and 2x - y = 2. Find vertices of triangle formed by these lines and x-axis.",
-        "answer": "2x + y = 6 passes through (0,6), (3,0). 2x - y = 2 passes through (0,-2), (1,0). Intersection point is (2,2). Triangle vertices on x-axis are (1,0), (3,0), and (2,2)."
+        "question": "Discuss the causes and global impacts of the Great Depression of 1929.",
+        "answer": "Causes:\n1. Post-WWI agricultural overproduction led to falling crop prices, prompting farmers to increase production and crashing markets.\n2. Wall Street stock market crash (Oct 1929) caused US banks to recall foreign loans.\nImpacts:\n1. Over 4,000 US banks collapsed and global trade halved.\n2. Unemployment rose to 25% in the US.\n3. In India, agricultural prices dropped 50%, pushing peasants into debt and forced gold sales."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "Test scoring: 3 marks for right answer, 1 deducted for wrong. Score = 40.",
+        "case_scenario": "Indian indentured laborers recruited for Caribbean plantations created hybrid cultural forms like Hosay carnival and Chutney music.",
         "qa": [
           {
-            "question": "Form linear equation if x = right and y = wrong answers.",
-            "answer": "3x - y = 40."
+            "question": "Why did indentured workers develop hybrid cultural expressions?",
+            "answer": "Isolated in harsh plantation environments, workers combined native Indian traditions with local cultures to express solidarity and survival."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Comparing ratios without arranging constants on the same side of equal sign.",
-        "correct_fact_or_method": "Always rewrite equations as ax + by + c = 0 before extracting c1 and c2."
+        "common_error_or_misconception": "Believing 19th-century indentured labor was voluntary migration.",
+        "correct_fact_or_method": "Recruitment agents lied about working conditions and destinations, leading historians to term it a 'new system of slavery'."
       }
     ]
   }

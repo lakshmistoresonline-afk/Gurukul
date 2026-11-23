@@ -1,42 +1,137 @@
-{
-  "chapter_number": 9,
-  "chapter_title": "Symmetry",
-  "flashcards": [
-    {
-      "card_id": 1,
-      "level": "Formula/Definition",
-      "front_question": "What is Line Symmetry (Reflectional Symmetry) and the Fold Test?",
-      "back_answer": "DEFINITION: A figure has line symmetry if a line (axis of symmetry) divides it into two mirror halves.\nFOLD TEST: Folding the figure along the line of symmetry causes the two halves to coincide and overlap perfectly.\nMEMORY TRIGGER: 'Fold Test = Perfect Mirror Overlap!'\nCONTEXTUAL EXAMPLE: Butterfly wings, human face, or capital letter 'A'.\nVISUAL GRAPHIC: Butterfly image with vertical axis line showing symmetric left and right halves."
-    },
-    {
-      "card_id": 2,
-      "level": "Formula/Definition",
-      "front_question": "How many lines of symmetry does a Regular Polygon with n sides possess?",
-      "back_answer": "RULE: A Regular Polygon with n equal sides and n equal angles possesses EXACTLY n lines of symmetry.\nEXAMPLES:\n- Equilateral Triangle (n=3): 3 lines\n- Square (n=4): 4 lines\n- Regular Pentagon (n=5): 5 lines\n- Regular Hexagon (n=6): 6 lines\n- Regular Octagon (n=8): 8 lines\nMEMORY TRIGGER: 'Regular n-gon = n Lines of Symmetry!'\nCONTEXTUAL EXAMPLE: Architectural symmetry in regular octagonal gazebos.\nVISUAL GRAPHIC: Regular pentagon with 5 dashed symmetry lines connecting vertices to opposite midpoint sides."
-    },
-    {
-      "card_id": 3,
-      "level": "Formula/Definition",
-      "front_question": "What is Rotational Symmetry, Center of Rotation, Order n, and Smallest Rotational Angle?",
-      "back_answer": "DEFINITIONS:\n- Rotational Symmetry: Shape matches its original appearance after rotation by an angle < 360°.\n- Center of Rotation: The fixed pivot point around which shape rotates.\n- Order n: Number of times shape looks identical during 1 full 360° turn.\n- Smallest Angle Formula: Angle = 360° / Order n.\nMEMORY TRIGGER: 'Order n -> Smallest Angle = 360 / n!'\nCONTEXTUAL EXAMPLE: Ceiling fan with 4 blades has Order 4, angle = 360/4 = 90°.\nVISUAL GRAPHIC: Pinwheel rotating around center point showing matching positions at 90°, 180°, 270°, 360°."
-    },
-    {
-      "card_id": 4,
-      "level": "Application",
-      "front_question": "Why is a non-square rectangle's diagonal NOT a line of symmetry?",
-      "back_answer": "PROOF & EXPLANATION:\nAlthough a diagonal divides a rectangle into two congruent triangles, folding along the diagonal causes opposite corner vertices to overhang and project outward rather than overlap perfectly.\nRECTANGLE LINES: A non-square rectangle has ONLY 2 lines of symmetry (its two midsegment axes).\nMEMORY TRIGGER: 'Diagonal fold overhangs! Rectangle has only 2 midsegment symmetry lines!'\nCONTEXTUAL EXAMPLE: Paper folding test on standard A4 sheet.\nVISUAL GRAPHIC: Folded rectangular sheet along diagonal showing overhanging non-overlapping corner flaps."
-    },
-    {
-      "card_id": 5,
-      "level": "Direct Calculation",
-      "front_question": "What are the symmetry properties (lines of symmetry, order, smallest angle) of the Ashoka Chakra (24 spokes)?",
-      "back_answer": "PROPERTIES:\n- Lines of Reflection Symmetry: 24 lines\n- Order of Rotational Symmetry: Order 24\n- Smallest Rotational Angle: 360° / 24 = 15°.\nEXPLANATION: Every 15° turn maps the 24 spokes onto identical wheel positions.\nMEMORY TRIGGER: 'Ashoka Chakra = 24 Spokes, 24 Lines, 15 degree turn!'\nCONTEXTUAL EXAMPLE: National flag emblem rotational design.\nVISUAL GRAPHIC: 24-spoked wheel with 15° arc callout between adjacent spokes."
-    },
-    {
-      "card_id": 6,
-      "level": "Method-Rule",
-      "front_question": "How do you test if a given degree angle (e.g., 17° or 72°) can be the smallest angle of rotational symmetry?",
-      "back_answer": "TEST RULE: Divide 360° by the given angle θ.\n- If 360° / θ is an INTEGER -> VALID (Order n = 360/θ).\n- If 360° / θ is NOT an integer -> IMPOSSIBLE.\nEXAMPLES:\n- 72°: 360 / 72 = 5 (INTEGER -> Valid, e.g. Regular Pentagon).\n- 17°: 360 / 17 = 21.176... (NOT integer -> IMPOSSIBLE).\nMEMORY TRIGGER: '360 must be evenly divisible by the angle!'\nCONTEXTUAL EXAMPLE: Quality checking industrial gear teeth symmetry.\nVISUAL GRAPHIC: Division check box comparing 360/72=5 (Valid) vs 360/17=21.176 (Invalid)."
-    }
-  ]
-}
+[
+  {
+    "card_id": 1,
+    "level": "Basic Recall",
+    "front_question": "Define 'Winnowing' and state the physical property difference it exploits.",
+    "back_answer": "Winnowing is the method of separating lighter husk particles from heavier grain seeds using blowing wind currents, exploiting differences in particle weight/density.\n\n• Property Difference: Density / Mass in Wind Current.\n• Memory Trigger / Icon: 🌾💨 [Farmer dropping Grain from height in Wind]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 2,
+    "level": "Conceptual",
+    "front_question": "Differentiate between Sedimentation, Decantation, and Filtration.",
+    "back_answer": "• Sedimentation: Heavy insoluble solid particles settle to bottom of liquid mixture.\n• Decantation: Gently pouring off upper clear liquid layer without disturbing sediment.\n• Filtration: Passing liquid through porous filter paper/cloth; liquid passes as 'filtrate', solid remains as 'residue'.\n\n• Memory Trigger / Icon: 🧪 [Settling] → 🥛 [Decanting] → 🫗 [Filtering]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 3,
+    "level": "Experimental",
+    "front_question": "How is clear drinking water isolated from muddy water using filter paper cone in a glass funnel?",
+    "back_answer": "Fold filter paper into a quarter cone, insert into funnel. Pour muddy water slowly along glass rod. Clear water passes through pores as 'filtrate' while mud particles remain on paper as 'residue'.\n\n• Concept Pair: Filtrate (Liquid passed through) ↔ Residue (Solid trapped on filter).\n• Memory Trigger / Icon: 🔻🧪 [Filter Paper Cone Funnel Setup]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 4,
+    "level": "Basic Recall",
+    "front_question": "How is crude common salt harvested from sea water in shallow coastal pans?",
+    "back_answer": "Sea water is trapped in shallow coastal beds (salt pans) exposed to sunlight. Solar radiation evaporates liquid water over days, leaving solid crude salt crystals behind.\n\n• Method: Solar Evaporation.\n• Memory Trigger / Icon: ☀️🏖️ [Coastal Salt Evaporation Pans]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 5,
+    "level": "Application",
+    "front_question": "Design a step-by-step scheme to separate a dry mixture of Iron filings, Sand, and Common Salt.",
+    "back_answer": "1. Pass bar magnet over mixture → Extract magnetic Iron filings.\n2. Add water to remaining Sand + Salt → Salt dissolves, Sand stays insoluble.\n3. Filter solution → Sand recovered as filter residue.\n4. Heat filtrate solution → Evaporate water to yield pure Salt crystals.\n\n• Memory Trigger / Icon: 🧲 → 🧪 → 🔻 → 🔥 [4-Step Separation Flowchart]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 6,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Handpicking' and state when it is appropriately applied.",
+    "back_answer": "Separating unwanted impurities by hand when impurities differ significantly in size, shape, or color and are present in small quantities (e.g., picking stones from rice).\n\n• Phonetic / Usage: Handpicking (/ˈhændˌpɪk.ɪŋ/) — noun.\n• Memory Trigger / Icon: 🖐️🍚 [Hand picking Black Stones from White Rice]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 7,
+    "level": "Basic Recall",
+    "front_question": "What is 'Threshing' in agricultural grain processing?",
+    "back_answer": "The mechanical or manual process of beating harvested crop stalks against a hard surface (or using bullocks/machines) to free grain seeds from chaff/stalks.\n\n• Memory Trigger / Icon: 🌾🧱 [Farmer beating Wheat Stalks against Stone]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 8,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Sieving' and state the physical property it depends upon.",
+    "back_answer": "Passing a dry mixture through a perforated mesh screen (sieve) to separate particles based on size differences. Fine particles fall through mesh; larger particles remain above.\n\n• Property Difference: Particle Size.\n• Memory Trigger / Icon: 🥮 [Flour Sieve separating Fine Flour from Bran]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 9,
+    "level": "Experimental",
+    "front_question": "How is butter separated from curd/milk in traditional Indian households?",
+    "back_answer": "By Churning (Centrifugation) using a wooden churner (*mathani*). Agitating milk breaks fat globules; lighter butter floats to top and is skimmed off, leaving liquid buttermilk (*chaas*).\n\n• Cultural Source: Traditional Indian Kitchen Mathani.\n• Memory Trigger / Icon: 🥛🌀 [Wooden Mathani Churning Curd Pot]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 10,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Saturated Solution'.",
+    "back_answer": "A chemical solution in which no more solute can dissolve at a specific given temperature.\n\n• Test: Adding extra solute salt causes un-dissolved crystals to settle at bottom.\n• Effect of Heat: Heating a saturated solution increases solubility, allowing more solute to dissolve.\n• Memory Trigger / Icon: 🧂🥛 [Salt settling in Saturated Glass]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 11,
+    "level": "Scientific Reasoning",
+    "front_question": "Why is winnowing ineffective for separating fine flour from wheat bran?",
+    "back_answer": "Because fine flour and wheat bran have tiny mass differences and flour particles blow away indiscriminately in wind; sieving by size difference is required instead.\n\n• Concept: Selecting correct separation method based on physical properties.\n• Memory Trigger / Icon: ❌💨 [Flour blowing away in Wind]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 12,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Condensation' as used in distillation purification.",
+    "back_answer": "The cooling of vaporized solvent back into pure liquid form in a separate vessel.\n\n• Application: Obtaining distilled water or capturing pure water from steam.\n• Memory Trigger / Icon: 🫖🌧️ [Steam touching Cold Lid dropping Pure Water]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 13,
+    "level": "Application",
+    "front_question": "How do municipal water treatment plants purify river water for city supply?",
+    "back_answer": "1. Coarse screening (removal of large debris)\n2. Sedimentation with Alum (loading mud particles)\n3. Sand filtration (trapping fine solids)\n4. Chlorination (disinfecting microbes).\n\n• Memory Trigger / Icon: 🚰🏢 [4-Stage Municipal Water Treatment Plant]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 14,
+    "level": "Basic Recall",
+    "front_question": "What is the role of 'Alum' (Phitkari) in loading suspended clay particles in muddy water?",
+    "back_answer": "Dissolving alum releases heavy aluminum ions that bind to light floating clay particles, making them heavier so they settle down rapidly during sedimentation.\n\n• Process: Loading / Flocculation.\n• Memory Trigger / Icon: 🧪💎 [Alum Crystal swirled in Muddy Water Glass]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 15,
+    "level": "Scientific Reasoning",
+    "front_question": "Why does tea leaves filtering require a strainer mesh while sugar separation requires evaporation?",
+    "back_answer": "Tea leaves are insoluble solid particles larger than strainer mesh holes (physical barrier), whereas sugar is dissolved uniformly at molecular level in water.\n\n• Property Pair: Insoluble Suspended Solid ↔ Dissolved Solute.\n• Memory Trigger / Icon: ☕ [Tea Strainer vs Boiling Sugar Pan]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  }
+]

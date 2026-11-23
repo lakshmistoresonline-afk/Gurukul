@@ -1,119 +1,103 @@
 {
   "chapter_number": 10,
-  "chapter_title": "How Quantities Combine: Understanding Data",
-  "unit_or_theme": "Statistics & Data Visualization",
+  "chapter_title": "Sound: Waves, Propagation & Acoustics",
+  "unit_or_theme": "Acoustics & Waves",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter extends simple averages to weighted arithmetic means when combining groups of unequal size or items with different weights. It also covers multi-category data visualizations including cluster-column graphs, stacked bar charts, and 100% stacked bar charts.",
+    "chapter_executive_summary": "Covers sound creation by vibrations, longitudinal wave propagation (compressions/rarefactions), velocity v = v*lambda, human hearing range (20 Hz - 20 kHz), and echoes.",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "10.1 Weighted Means and Group Aggregation",
-        "full_explanation": "When combining data sets of unequal size, simple unweighted averages produce incorrect results. The weighted arithmetic mean is x_bar = sum(w_i * x_i) / sum(w_i), weighting each value by group count or importance.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Real-World Context",
-            "box_title": "Mixtures and Alloys",
-            "full_content": "Combining alloy batches with different copper concentrations requires weighting percentages by batch mass."
-          }
-        ]
-      },
-      {
-        "section_number_title": "10.2 Stacked and 100% Stacked Bar Charts",
-        "full_explanation": "Stacked bar charts display total values alongside category component totals. 100% stacked bar charts scale all bars to 100%, allowing direct visual comparison of relative percentage distributions regardless of group size.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Chart Selection Note",
-            "box_title": "Absolute vs Relative Proportions",
-            "full_content": "Use standard stacked bars for total amounts; use 100% stacked bars for percentage budget allocations."
-          }
-        ]
+        "section_number_title": "10.1 Characteristics of Sound Waves and Echoes",
+        "full_explanation": "Sound requires a medium (solid, liquid, gas). Speed of sound v = frequency * wavelength. Reflection obeys laws of reflection; echoes require minimum 17.2m distance.",
+        "margin_boxes_and_in_text_notes": []
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "Weighted Mean",
-        "definition": "An average calculated by multiplying each value by a weight reflecting its size or importance.",
-        "contextual_example_or_usage": "Calculating weighted GPA or overall exam score with varying weights.",
-        "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "100% Stacked Bar Chart",
-        "definition": "A bar chart where each bar is normalized to 100% height to show category percentages.",
-        "contextual_example_or_usage": "Comparing household expenditure proportions across different income brackets.",
+        "term": "Compression",
+        "definition": "Region in a longitudinal wave where medium particles are crowded together under high density and pressure.",
+        "contextual_example_or_usage": "Peak region in pressure graph.",
         "associated_units_or_parts_of_speech": "Noun"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "Weighted Arithmetic Mean Formula",
-        "statement_or_expression": "x_bar = (w1*x1 + w2*x2 + ... + wn*xn) / (w1 + w2 + ... + wn)",
-        "variable_definitions": "x_i: value/average of group i; w_i: weight/count of group i",
-        "model_application_example": "Group A (30 students, avg 80) & Group B (10 students, avg 60): x_bar = (30*80 + 10*60)/40 = 75%."
+        "name": "Wave Equation",
+        "statement_or_expression": "v = f * lambda",
+        "variable_definitions": "v=wave speed (m/s), f=frequency (Hz), lambda=wavelength (m)",
+        "model_application_example": "f = 256 Hz, lambda = 1.3 m -> v = 332.8 m/s."
+      },
+      {
+        "name": "Echo Distance Formula",
+        "statement_or_expression": "d = (v * t) / 2",
+        "variable_definitions": "d=distance to reflector (m), v=speed of sound, t=echo time (s)",
+        "model_application_example": "Echo heard after 0.2 s at 344 m/s -> d = (344*0.2)/2 = 34.4 m."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Constructing 100% Stacked Bar Charts",
-      "objective_or_aim": "Convert family expenditure raw rupee data into percentage allocation stacked bars.",
+      "activity_or_procedure_title": "Verifying Laws of Reflection of Sound Waves",
+      "objective_or_aim": "Demonstrate equal incident and reflected sound angles.",
       "materials_or_prerequisites": [
-        "Graph paper / Spreadsheet",
-        "Family expense table"
+        "Two hollow cardboard pipes",
+        "Clock/stopwatch",
+        "Wooden board screen",
+        "Protractor"
       ],
       "step_by_step_procedure": [
-        "Sum expense categories for each family to find total expenditure.",
-        "Divide each category expense by total family expenditure and multiply by 100.",
-        "Draw equal length bars (100%) and divide segments according to calculated percentages."
+        "Position pipes at angle to wooden board.",
+        "Place ticking clock at end of Pipe 1.",
+        "Adjust angle of Pipe 2 until ticking sound is maximum.",
+        "Measure incident angle i and reflected angle r."
       ],
-      "expected_observations_or_working": "Displays relative budget priorities independently of total income levels.",
-      "scientific_or_logical_conclusion": "100% stacked bar charts isolate percentage allocations from group size differences."
+      "expected_observations_or_working": "Maximum loudness occurs when angle of incidence equals angle of reflection.",
+      "scientific_or_logical_conclusion": "Sound waves reflect obeying equal-angle reflection law."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Fig 10.4: 100% Stacked Bar Chart of Family Expenses",
+        "figure_title": "Longitudinal Wave Density and Pressure Representation",
         "labels_to_learn": [
-          "100% Axis",
-          "Family A, B, C",
-          "Housing, Food, Education, Health"
+          "Compressions (C)",
+          "Rarefactions (R)",
+          "Wavelength lambda",
+          "Amplitude A"
         ],
-        "drawing_or_labeling_instructions": "Draw three equal length vertical/horizontal bars divided into colored segments summing to 100%.",
-        "key_structural_details": "Normalizes all bars to uniform length."
+        "drawing_or_labeling_instructions": "Draw spring/slinky showing compressed coils and stretched coils aligned with sine wave curve.",
+        "key_structural_details": "Compression aligns with crest; Rarefaction aligns with trough."
       }
     ],
-    "data_tables_and_charts": [
+    "tables_and_charts": [
       {
-        "table_title": "Table 10.2: Family Expenditure Data (in Rupees)",
+        "table_title": "Speed of Sound in Different Media at 25°C",
         "headers": [
-          "Family",
-          "Housing",
-          "Food",
-          "Education",
-          "Healthcare"
+          "Medium State",
+          "Substance",
+          "Speed of Sound (m/s)"
         ],
         "rows": [
           [
-            "Family A",
-            "1940",
-            "1700",
-            "1280",
-            "1770"
+            "Solid",
+            "Aluminum",
+            "6420"
           ],
           [
-            "Family B",
-            "1750",
-            "1546",
-            "1500",
-            "1210"
+            "Solid",
+            "Iron/Steel",
+            "5950"
           ],
           [
-            "Family C",
-            "950",
-            "1700",
-            "1540",
-            "1300"
+            "Liquid",
+            "Water (Sea)",
+            "1531"
+          ],
+          [
+            "Gas",
+            "Air",
+            "346"
           ]
         ]
       }
@@ -122,20 +106,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "Example 6",
-        "question_number": "Ex 6",
-        "question_text": "Student scores: Internals 60% (weight 3), Project 64% (weight 2), Final Exam 73% (weight 5). Find overall score.",
-        "complete_step_by_step_solution": "Weighted Score = (3*60 + 2*64 + 5*73)/(3 + 2 + 5) = (180 + 128 + 365)/10 = 673/10 = 67.3%."
+        "exercise_section": "End of Chapter Exercises",
+        "question_number": "Q1",
+        "question_text": "Explain the central principle of Sound: Waves, Propagation & Acoustics.",
+        "complete_step_by_step_solution": "The main concept involves understanding how structural mechanisms and physical/biological principles govern Acoustics & Waves."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Batch A (200 kg, 70% brass) and Batch B (120 kg, 50% brass) are mixed with Batch C (y kg, 45% brass) to get 55% brass.",
+        "passage_or_source_text": "Covers sound creation by vibrations, longitudinal wave propagation (compressions/rarefactions), velocity v = v*lambda, human hearing range (20 Hz - 20 kHz), and echoes.",
         "questions_and_answers": [
           {
-            "question": "Find the mass y of Batch C.",
-            "answer": "0.70(200) + 0.50(120) + 0.45(y) = 0.55(320 + y) => 140 + 60 + 0.45y = 176 + 0.55y => 0.10y = 24 => y = 240 kg."
+            "question": "Summarize the key takeaway of this chapter.",
+            "answer": "Covers sound creation by vibrations, longitudinal wave propagation (compressions/rarefactions), velocity v = v*lambda, human hearing range (20 Hz - 20 kHz), and echoes."
           }
         ]
       }
@@ -145,40 +129,40 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Which chart is best for comparing category percentage proportions across groups of different total sizes?",
+        "question": "What is the core subject of Chapter 10?",
         "options": [
-          "A) Cluster-column chart",
-          "B) Simple line chart",
-          "C) 100% stacked bar chart",
-          "D) Pie chart"
+          "Sound: Waves, Propagation & Acoustics",
+          "Random Topic",
+          "Unrelated Subject",
+          "None"
         ],
-        "correct_answer": "C",
-        "brief_explanation": "100% stacked bar charts normalize all totals to 100%, isolating relative category proportions."
+        "correct_answer": "Sound: Waves, Propagation & Acoustics",
+        "brief_explanation": "Directly stated in textbook chapter header."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "Explain why taking an unweighted average of two student group test averages produces errors when group sizes differ.",
-        "model_answer": "Unweighted average assumes equal student counts. Larger groups contribute more total scores, so their mean must carry proportionally higher weight.",
+        "question": "Define key term 'Compression' and state its significance.",
+        "model_answer": "Region in a longitudinal wave where medium particles are crowded together under high density and pressure.",
         "key_marking_points": [
-          "Identifies equal weight fallacy (1 mark)",
-          "Explains pull of larger group sample size (1 mark)"
+          "Correct definition",
+          "Appropriate context usage"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "Weighted grading uses 30% assignments, 20% midterms, 50% finals. Student A scores (85, 75, 90). Student B scores (95, 90, 70). Calculate both weighted scores and explain who scored higher.",
-        "model_answer": "Student A: (0.3*85 + 0.2*75 + 0.5*90) = 25.5 + 15 + 45 = 85.5%. Student B: (0.3*95 + 0.2*90 + 0.5*70) = 28.5 + 18 + 35 = 81.5%. Student A achieved higher score (85.5% vs 81.5%) due to stronger performance on the heavily weighted final exam (50%)."
+        "question": "Comprehensive analysis of systems described in Chapter 10: Sound: Waves, Propagation & Acoustics.",
+        "model_answer": "Covers sound creation by vibrations, longitudinal wave propagation (compressions/rarefactions), velocity v = v*lambda, human hearing range (20 Hz - 20 kHz), and echoes. Key processes operate through established physical and biological principles."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "A company tracks daily activity hours (sleeping, sitting, active) for employees over 24 hours.",
+        "case_scenario": "Practical scenario demonstrating Acoustics & Waves principles in real-world application.",
         "questions_and_answers": [
           {
-            "question": "Why is a 24-hour activity stacked bar chart visually identical to a 100% stacked bar chart?",
-            "answer": "Because the total sum for every individual is constant at 24 hours (100% of a day)."
+            "question": "Analyze the scenario outcomes.",
+            "answer": "Applies Compression and related scientific laws."
           }
         ]
       }
@@ -186,9 +170,62 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Directly averaging percentage scores without multiplying by group sizes or weights.",
-      "root_cause": "Assuming averages possess additive properties regardless of sample size.",
-      "correct_approach": "Multiply each group average by its weight, sum the products, and divide by total weight."
+      "frequent_student_error": "Misinterpreting fundamental concepts in Sound: Waves, Propagation & Acoustics.",
+      "root_cause": "Conflating everyday non-scientific terms with precise scientific definitions.",
+      "correct_approach": "Apply exact SI units and standard scientific terminology."
     }
-  ]
+  ],
+  "image_asset": {
+    "asset_id": "IMG-CH10-01",
+    "title": "Sound Wave Mechanics, Reflection & SONAR",
+    "url": "/assets/images/ch10_sound_waves.png"
+  },
+  "scripted_dialogue": [
+    {
+      "speaker": "Teacher",
+      "role": "Instructor",
+      "speech_text": "Welcome to Chapter 10! Let's explore key scientific concepts and practical lab investigations."
+    },
+    {
+      "speaker": "Student",
+      "role": "Inquirer",
+      "speech_text": "How do these principles apply to real-world phenomena and experiments in Chapter 10?"
+    }
+  ],
+  "stem_lab_drawer": {
+    "apparatus": [
+      "Graduated Cylinder",
+      "Digital Scale",
+      "Microscope",
+      "Beakers",
+      "Thermometer"
+    ],
+    "reagents": [
+      "Pure Water",
+      "Safranin Stain",
+      "Copper Sulfate",
+      "Barium Chloride"
+    ]
+  },
+  "scripted_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Why can sound travel through solids faster than through gases?"
+    },
+    {
+      "speaker": "Student",
+      "speech_text": "Solids have much higher elasticity and denser particle packing, allowing mechanical compression waves to transfer kinetic energy rapidly between adjacent molecules!"
+    }
+  ],
+  "formula_calculator": {
+    "calculator_name": "Sound Wave Speed & Echo Distance Calculator",
+    "formula": "v = f * lambda; d = (v * t) / 2",
+    "variables": [
+      "f (frequency Hz)",
+      "lambda (wavelength m)",
+      "v (speed m/s)",
+      "t (round-trip time s)"
+    ],
+    "example": "f=2000 Hz, lambda=0.35 m => v = 700 m/s. SONAR return t=3.2 s, v=1530 m/s => depth = (1530 * 3.2)/2 = 2448 m."
+  }
 }

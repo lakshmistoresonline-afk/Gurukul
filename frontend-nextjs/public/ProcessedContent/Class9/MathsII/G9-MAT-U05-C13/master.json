@@ -1,28 +1,28 @@
 {
   "chapter_number": 13,
-  "chapter_title": "Two Variables, One Line",
+  "chapter_title": "Earth as a System: Energy, Matter, and Life",
   "zero_omission_notes": {
-    "summary": "This chapter covers linear equations in two variables (ax + by + c = 0), straight line graph representations, slope-intercept form (y = mx + d), and system consistency based on coefficient ratios.",
+    "summary": "This planetary science chapter analyzes Earth as an integrated closed system for matter and open system for energy. It details the five interacting spheres (Geosphere, Hydrosphere, Cryosphere, Atmosphere, Biosphere), solar electromagnetic radiation balance (UV, visible, IR light), biogeochemical cycles (Water, Carbon, Nitrogen, Oxygen), human anthropogenic impacts, and sustainable climate stewardship.",
     "detailed_sections": [
       {
-        "section_number_and_title": "13.1 Linear Equations in Two Variables",
-        "full_notes": "ax + by + c = 0 has infinitely many solution ordered pairs (u, v) forming a straight line on the Cartesian plane.",
+        "section_number_and_title": "13.1 The Five Earth Spheres and Energy Flow",
+        "full_notes": "Earth operates as five deeply interconnected subsystems: 1) Geosphere (crust, mantle, core rocks and minerals), 2) Hydrosphere (liquid oceans, lakes, rivers, groundwater), 3) Cryosphere (frozen ice sheets, glaciers, sea ice, permafrost), 4) Atmosphere (gaseous envelope of 78% N2, 21% O2, Ar, CO2), and 5) Biosphere (all living organisms). The Sun drives the global engine via electromagnetic radiation: Shortwave UV/visible light enters; longwave Infrared (heat) is re-emitted and trapped by greenhouse gases.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Key Concept",
-            "title": "Line Through Origin",
-            "content": "When c = 0, ax + by = 0 passes through (0, 0)."
+            "type": "Energy Budget",
+            "title": "Earth's Albedo Effect",
+            "content": "Albedo is the fraction of solar radiation reflected back into space. High-albedo cryospheric ice reflects ~80-90% of solar energy; low-albedo ocean water absorbs ~90%."
           }
         ]
       },
       {
-        "section_number_and_title": "13.2 Systems of Linear Equations",
-        "full_notes": "Two lines a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0 can have: 1. Unique solution (a1/a2 != b1/b2), 2. No solution (a1/a2 = b1/b2 != c1/c2), 3. Infinite solutions (a1/a2 = b1/b2 = c1/c2).",
+        "section_number_and_title": "13.2 Biogeochemical Cycles and Anthropogenic Impacts",
+        "full_notes": "Matter cycles continuously through biotic and abiotic reservoirs via biogeochemical cycles. Carbon Cycle: Photosynthesis fixes atmospheric CO2 into biomass; respiration, decomposition, and fossil fuel combustion release CO2 back. Nitrogen Cycle: Nitrogen-fixing bacteria (Rhizobium, Azotobacter) convert atmospheric N2 into nitrates (NO3-); nitrifying and denitrifying bacteria complete the cycle. Anthropogenic deforestation and fossil fuel burning disrupt these closed loops, driving global climate change.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Formula Box",
-            "title": "Slope",
-            "content": "Slope m = (y2 - y1) / (x2 - x1)."
+            "type": "Environmental Alert",
+            "title": "Ozone Shield Dynamics",
+            "content": "Stratospheric ozone (O3) absorbs harmful UV-B/UV-C solar rays. Chlorofluorocarbons (CFCs) release chlorine radicals that catalyze stratospheric ozone depletion."
           }
         ]
       }
@@ -30,64 +30,75 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT_13_01",
-      "aim_or_objective": "Graph x + 3y = 6 and 2x - 3y = 12 to find intersection point.",
+      "activity_or_method_id": "Activity 13.1",
+      "aim_or_objective": "To model the greenhouse thermal trapping effect using glass containers.",
       "materials_or_prerequisites": [
-        "Graph paper",
-        "Ruler",
-        "Pencil"
+        "Two identical glass jars",
+        "Two thermometers",
+        "Soil",
+        "Plastic wrap / glass cover plate",
+        "Sunlight / heat lamp"
       ],
       "procedure_or_steps": [
-        "Find intercepts for x + 3y = 6: (0, 2) and (6, 0).",
-        "Find intercepts for 2x - 3y = 12: (0, -4) and (6, 0).",
-        "Plot lines and identify intersection point."
+        "Fill the bottom of both glass jars with a 2 cm layer of dry soil.",
+        "Insert a thermometer into each jar.",
+        "Seal Jar A tightly with plastic wrap/glass plate; leave Jar B open to air.",
+        "Place both jars side by side in direct bright sunlight for 1 hour.",
+        "Record temperature readings every 10 minutes."
       ],
-      "observations_or_results": "Lines intersect at (6, 0).",
-      "conclusion_or_principle": "Unique solution is x = 6, y = 0."
+      "observations_or_results": "Jar A (sealed) exhibits significantly higher internal temperature than open Jar B.",
+      "conclusion_or_principle": "Trapping re-radiated thermal infrared radiation causes elevated equilibrium temperatures (Greenhouse Effect)."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 13.14: Graph of Intersecting Lines",
+        "figure_id_and_title": "Fig 13.1: Global Carbon Cycle Reservoir Dynamics",
         "labels_and_components": [
-          "X-axis",
-          "Y-axis",
-          "Intersection B(6,0)",
-          "Line 1",
-          "Line 2"
+          "Atmospheric CO2 Pool",
+          "Photosynthesis (Terrestrial Plants)",
+          "Respiration (Plants/Animals)",
+          "Oceanic Carbon Sink",
+          "Decomposition",
+          "Fossil Fuel Extraction & Combustion"
         ],
-        "drawing_or_reading_instructions": "Draw axes, plot points and connect intersecting lines.",
-        "structural_or_conceptual_explanation": "Visualizes unique point solution."
+        "drawing_or_reading_instructions": "Draw cyclic arrows connecting atmospheric pool with biosphere, ocean hydrosphere, and lithosphere fossil reserves.",
+        "structural_or_conceptual_explanation": "Illustrates how human industrial emissions bypass natural biological sequestration feedback loops."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "System Classification Table",
+        "table_title": "Earth System Spheres Summary",
         "headers": [
-          "Ratios",
-          "Graph",
-          "Solutions",
-          "Consistency"
+          "Sphere Name",
+          "Primary Material Composition",
+          "Key Planetary Role"
         ],
         "rows": [
           [
-            "a1/a2 != b1/b2",
-            "Intersecting",
-            "Unique",
-            "Consistent"
+            "Geosphere",
+            "Rocks, soil, tectonic plates, core iron",
+            "Provides mineral nutrients, soil anchor, magnetic field"
           ],
           [
-            "a1/a2 = b1/b2 != c1/c2",
-            "Parallel",
-            "None",
-            "Inconsistent"
+            "Hydrosphere",
+            "Liquid freshwater, oceans, groundwater",
+            "Thermal regulation, fluid transport medium"
           ],
           [
-            "a1/a2 = b1/b2 = c1/c2",
-            "Coincident",
-            "Infinite",
-            "Consistent"
+            "Cryosphere",
+            "Glaciers, polar ice caps, permafrost",
+            "Global albedo reflection, sea level stabilization"
+          ],
+          [
+            "Atmosphere",
+            "Nitrogen, Oxygen, Argon, CO2, water vapor",
+            "UV shield, thermal insulation, respiratory gases"
+          ],
+          [
+            "Biosphere",
+            "Flora, fauna, microbes, ecological networks",
+            "Biogeochemical cycling, solar energy capture"
           ]
         ]
       }
@@ -95,70 +106,76 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Coefficient Ratio Classification Law",
-      "definition_or_meaning": "1. Unique: a1/a2 != b1/b2; 2. Parallel: a1/a2 = b1/b2 != c1/c2; 3. Coincident: a1/a2 = b1/b2 = c1/c2",
-      "si_unit_or_notation": "a1/a2 vs b1/b2 vs c1/c2",
-      "example_or_application": "x + 3y = 6 and 2x - 3y = 12 has a1/a2 = 1/2 != b1/b2 = -1, so unique solution."
+      "term_or_concept": "Greenhouse Effect",
+      "definition_or_meaning": "The natural process where atmospheric greenhouse gases (CO2, CH4, H2O vapor) absorb outgoing longwave infrared radiation, warming Earth's surface.",
+      "si_unit_or_notation": "Radiative Forcing [W/m^2]",
+      "example_or_application": "Maintaining Earth's mean temperature at ~15 deg C instead of -18 deg C."
+    },
+    {
+      "term_or_concept": "Nitrogen Fixation",
+      "definition_or_meaning": "The biological or industrial process converting inert atmospheric N2 gas into bioavailable forms like ammonia and nitrates.",
+      "si_unit_or_notation": "N2 -> NH3 / NO3-",
+      "example_or_application": "Rhizobium symbiosis in legume root nodules."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Ex 13.2 Q3",
-        "question": "If (2, -1) is solution of 2mx + 3y = 7 and 4x + ny = -10, find m and n.",
-        "answer": "Substitute (2, -1): 2m(2) + 3(-1) = 7 => 4m - 3 = 7 => m = 2.5. 4(2) + n(-1) = -10 => 8 - n = -10 => n = 18."
+        "q_no": "Q1",
+        "question": "How do biotic and abiotic components interact in the nitrogen cycle?",
+        "answer": "Abiotic atmospheric N2 is fixed biotically by Rhizobium/cyanobacteria into soil nitrates. Plants absorb nitrates to build plant proteins. Animals eat plants. Decomposers convert nitrogenous waste back to ammonia, and denitrifying bacteria return N2 to the atmosphere."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Where does 2x + 3y = 12 cut the X-axis?",
+        "question": "Which sphere reflects the largest percentage of incoming solar radiation due to high albedo?",
         "options": [
-          "A) (0, 4)",
-          "B) (6, 0)",
-          "C) (0, 6)",
-          "D) (4, 0)"
+          "A) Hydrosphere",
+          "B) Cryosphere",
+          "C) Biosphere",
+          "D) Geosphere"
         ],
-        "answer": "B",
-        "explanation": "Set y = 0 => 2x = 12 => x = 6. Point is (6, 0)."
+        "answer": "B) Cryosphere",
+        "explanation": "White snow and ice in the cryosphere have the highest albedo (~80-90% reflection)."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Find k for unique solution: kx + 2y = 5 and 3x + y = 1.",
-        "answer": "a1/a2 != b1/b2 => k/3 != 2/1 => k != 6. Unique solution for all k except 6."
+        "question": "Explain how global warming accelerates melting of polar ice caps through positive feedback loops.",
+        "answer": "Warming temperatures melt high-albedo polar ice into low-albedo ocean water. Darker ocean water absorbs more solar heat rather than reflecting it, causing further ocean warming and accelerating additional ice melt."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Calculate the perpendicular distance from the origin (0, 0) to line 3x + 4y - 10 = 0.",
-        "answer": "Distance d = |3(0) + 4(0) - 10| / sqrt(3^2 + 4^2) = |-10| / 5 = 2.0 units."
+        "question": "Differentiate between Earth as a closed system for matter and an open system for energy.",
+        "answer": "Earth is an open system for energy because solar energy freely enters from space and thermal infrared heat escapes back into space. Earth is a closed system for matter because the total quantity of chemical elements on the planet remains fixed and must be continuously recycled through biogeochemical loops."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Solve elimination: 2x + 3y = 9 and 3x + 4y = 13.",
-        "answer": "3(Eq 1) - 2(Eq 2): (6x + 9y) - (6x + 8y) = 27 - 26 => y = 1. 2x + 3(1) = 9 => x = 3. Solution (3, 1)."
+        "question": "Describe the steps of the Carbon Cycle and detail two major ways human industrial activity disrupts carbon equilibrium.",
+        "answer": "Carbon Cycle Steps:\n1) Atmospheric CO2 is fixed by plants into organic glucose via photosynthesis.\n2) Organic carbon moves through food chains via consumption.\n3) Plants, animals, and decomposers release CO2 back to atmosphere via cellular respiration.\n4) Dead organic matter buried over millions of years forms fossil fuel reserves (coal, oil, gas).\nHuman Disruptions:\n1) Massive Combustion of Fossil Fuels: Releases gigatons of ancient sequestered carbon into the atmosphere faster than natural sinks can absorb.\n2) Deforestation: Destroys major terrestrial carbon sinks (forests) while burning/decaying cleared timber adds more CO2."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "Taxi fare: fixed charge x plus rate y per km. 10 km costs Rs 105; 15 km costs Rs 155.",
+        "case_scenario": "Excessive synthetic nitrogen fertilizers applied to agricultural fields wash into nearby lakes during heavy rain.",
         "qa": [
           {
-            "question": "Find fixed charge and rate per km.",
-            "answer": "x + 10y = 105, x + 15y = 155 => 5y = 50 => y = Rs 10/km. x = Rs 5 fixed charge."
+            "question": "Identify the environmental phenomenon triggered in the lake and describe its consequence.",
+            "answer": "Eutrophication. Nutrient runoff causes explosive algal blooms. When algae die, decomposer bacteria consume dissolved oxygen, causing hypoxic 'dead zones' and mass fish kills."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Forgetting to rearrange equations into standard form ax + by + c = 0 before comparing ratios.",
-        "correct_fact_or_method": "Align both equations in standard ax + by + c = 0 form before taking ratios."
+        "common_error_or_misconception": "Confusing the Ozone Hole with Global Warming/Greenhouse Effect.",
+        "correct_fact_or_method": "Ozone depletion is caused by CFCs and lets harmful UV rays in; Global Warming is caused by elevated greenhouse gases trapping outgoing infrared heat."
       }
     ]
   }

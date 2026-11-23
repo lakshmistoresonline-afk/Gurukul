@@ -1,58 +1,39 @@
 {
   "chapter_number": 6,
-  "chapter_title": "Constructions and Tilings",
-  "mastery_score_percent": 100,
-  "status": "Mastered",
-  "image_asset": {
-    "asset_id": "img_ch6",
-    "chapter_number": 6,
-    "title": "Regular Hexagon Construction",
-    "url": "/assets/images/ch6_regular_hexagon_construction.png",
-    "caption": "Construction of regular hexagon using straightedge and compass showing 6 central 60° equilateral triangles.",
-    "hotspots": [
-      {
-        "x_percent": 25,
-        "y_percent": 25,
-        "w_percent": 50,
-        "h_percent": 50,
-        "label": "Central Equilateral Triangles",
-        "popover_text": "6 equilateral triangles meet at center O with 60° angles."
-      }
-    ]
-  },
+  "chapter_title": "The State, the Government, and You",
   "zero_omission_notes": {
-    "summary": "This chapter teaches classical practical geometry using strictly an unmarked ruler and compass. Key constructions include: perpendicular bisector of a line segment, 90° angle at a point on a line, angle bisector, copying an angle (SSS application), parallel lines via equal corresponding angles, 60°/120° angles via equilateral triangle construction, 30°/15° angles via angle bisection, pointed arches, and regular hexagons (decomposed into 6 equilateral triangles around 360° center point). The second part explores Tiling (tessellations) and Tangram 7-piece puzzles.",
+    "summary": "This civics chapter distinguishes between the 'State' (a permanent sovereign political organization) and the 'Government' (its temporary administrative agency). It details the four elements of statehood (Territory, Population, Government, Sovereignty), the mechanics of a Democratic Republic, the three organs of government (Legislature, Executive, Judiciary), separation of powers, and civic rights under the Constitution.",
     "detailed_sections": [
       {
-        "section_number_and_title": "6.1 Perpendicular Bisector and Angle Constructions",
-        "full_notes": "1. Perpendicular Bisector: To bisect segment XY, center at X and Y with radius > 0.5 XY, draw intersecting arcs above and below XY at A and B. Line AB is perpendicular bisector.\n2. Proof: ΔAXB ≅ ΔAYB by SSS, ensuring perpendicularity and equal bisected segments.\n3. Angle Bisector: Draw arc meeting angle arms at P, Q. From P, Q draw equal arcs meeting at C. Ray OC bisects angle.\n4. Copying an Angle: Construct Δ on original angle with compass radius, copy same Δ onto new ray using SSS.",
+        "section_number_and_title": "6.1 Distinguishing the State from the Government",
+        "full_notes": "The 'State' is permanent and abstract, comprising four essential elements: Defined Territory, Permanent Population, Government, and Sovereignty (supreme legal authority). The 'Government' is the tangible, changing body of elected representatives who administer state policies.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Property",
-            "title": "Equidistance Property",
-            "content": "Any point on the perpendicular bisector of XY is equidistant from endpoints X and Y."
+            "type": "Did You Know?",
+            "title": "Socrates on Civic Duty",
+            "content": "'The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.' — Socrates."
           }
         ]
       },
       {
-        "section_number_and_title": "6.2 Regular Hexagon and 60° Angle Construction",
-        "full_notes": "1. 60° Angle: Draw arc from vertex A on ray AX meeting at B. With same radius, draw arc from B intersecting first arc at C. ∠CAX = 60° (forms equilateral ΔABC).\n2. Regular Hexagon: A regular hexagon consists of 6 congruent equilateral triangles meeting at a central point (6 × 60° = 360°). Can be constructed by stepping off radius 'r' 6 times along a circle's circumference.",
+        "section_number_and_title": "6.2 India as a Democratic Republic and Three Organs",
+        "full_notes": "India is a Democracy (citizens elect representatives through universal adult suffrage) and a Republic (the Head of State—the President—is elected, not hereditary). Functions through three organs: Legislature (makes laws), Executive (enforces laws), and Judiciary (adjudicates disputes and interprets the Constitution).",
         "margin_notes_and_sidebars": [
           {
-            "type": "Geometric Fact",
-            "title": "Hexagon Angles",
-            "content": "Interior angle of regular hexagon = 120°. Central angle per equilateral Δ = 60°."
+            "type": "Try These",
+            "title": "School Governance Analogy",
+            "content": "Compare School Trustees (State), Student Council (Government), School Code (Laws), and Disciplinary Committee (Judiciary)."
           }
         ]
       },
       {
-        "section_number_and_title": "6.3 Tiling and Tangrams",
-        "full_notes": "Tiling (tessellation) is covering a 2D plane with geometric shapes without gaps or overlaps. Tangrams are ancient Chinese 7-piece puzzles formed by dividing a square into 5 triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram. These pieces tile to create shapes like arrows, animals, or geometric patterns.",
+        "section_number_and_title": "6.3 Separation of Powers, Checks & Balances, and Civic Rights",
+        "full_notes": "The Constitution enforces Separation of Powers alongside Checks and Balances to prevent authoritarian concentration of power. The Judiciary exercises Judicial Review to strike down unconstitutional legislation. Citizens exercise democracy beyond voting through petitions, peaceful assembly, and the Right to Information (RTI).",
         "margin_notes_and_sidebars": [
           {
-            "type": "Definition",
-            "title": "Tessellation",
-            "content": "Covering a plane region with repeating tile units leaving zero gaps and zero overlaps."
+            "type": "Did You Know?",
+            "title": "Constitutional Supremacy",
+            "content": "In India, the Constitution is supreme—not the Parliament. All laws must conform to Fundamental Rights."
           }
         ]
       }
@@ -60,72 +41,62 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-6.1",
-      "aim_or_objective": "Construct a regular hexagon using ruler and compass.",
+      "activity_or_method_id": "ACT-601",
+      "aim_or_objective": "To conduct a Mock Youth Parliament demonstrating how a bill becomes a law while respecting constitutional limits.",
       "materials_or_prerequisites": [
-        "Unmarked ruler",
-        "Compass",
-        "Pencil",
-        "Paper"
+        "Draft Bill text on Student Cyber Safety",
+        "Role badges (Speaker, PM, Ministers, Opposition MPs)"
       ],
       "procedure_or_steps": [
-        "1. Draw a circle of radius r = 4 cm with center O.",
-        "2. Mark a point A anywhere on the circumference.",
-        "3. With same radius 4 cm, set compass at A and draw an arc to intersect circle at B.",
-        "4. Move compass to B, mark C; continue stepping off points D, E, F around circle.",
-        "5. Join AB, BC, CD, DE, EF, FA."
+        "Minister introduces Bill in the house.",
+        "Opposition MPs debate clauses and propose amendments.",
+        "Speaker conducts voting by division or voice vote."
       ],
-      "observations_or_results": "ABCDEF forms a regular hexagon with all side lengths 4 cm and interior angles 120°.",
-      "conclusion_or_principle": "Proven Principle: Construction of Regular Hexagon of Side 4 cm holds true."
+      "observations_or_results": "Demonstrates that lawmaking requires debate, majority consent, and strict adherence to constitutional rights.",
+      "conclusion_or_principle": "Democratic legislation requires parliamentary debate and constitutional conformity."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 6.1 - Perpendicular Bisector Construction",
+        "figure_id_and_title": "Fig 6.1 Four Essential Elements of a State",
         "labels_and_components": [
-          "Segment XY",
-          "Top Arc Intersection A",
-          "Bottom Arc Intersection B",
-          "Midpoint M"
+          "Defined Territory",
+          "Permanent Population",
+          "Government",
+          "Sovereignty"
         ],
-        "drawing_or_reading_instructions": "Draw segment XY. Draw top/bottom intersecting arcs from X and Y. Join AB crossing XY at M.",
-        "structural_or_conceptual_explanation": "AB is perpendicular to XY and XM = MY."
+        "drawing_or_reading_instructions": "Identify the four interconnected pillars forming a sovereign state.",
+        "structural_or_conceptual_explanation": "Shows that removing any single element (e.g. losing sovereignty) destroys statehood."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Constructible Angles Summary",
+        "table_title": "Three Organs of Government in India",
         "headers": [
-          "Angle",
-          "Primary Construction Method",
-          "Secondary Bisection Step"
+          "Organ",
+          "Composition",
+          "Primary Function",
+          "Check on Other Organs"
         ],
         "rows": [
           [
-            "60°",
-            "Equilateral Triangle Arc",
-            "None"
+            "Legislature",
+            "Parliament (Lok Sabha, Rajya Sabha, President)",
+            "Enacts laws, approves budget",
+            "Can pass No-Confidence motion against Executive"
           ],
           [
-            "120°",
-            "180° - 60° or 2 × 60° steps",
-            "None"
+            "Executive",
+            "President, PM, Union Cabinet, Civil Services",
+            "Enforces laws, executes public policy",
+            "Accountable to Parliament daily"
           ],
           [
-            "90°",
-            "Perpendicular Bisector / 60°+120° bisector",
-            "Bisect 60°-120° arc"
-          ],
-          [
-            "30°",
-            "Construct 60°",
-            "Bisect 60°"
-          ],
-          [
-            "15°",
-            "Construct 30°",
-            "Bisect 30°"
+            "Judiciary",
+            "Supreme Court, High Courts, District Courts",
+            "Interprets laws, protects rights",
+            "Can strike down unconstitutional laws (Judicial Review)"
           ]
         ]
       }
@@ -133,100 +104,80 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Bisection",
-      "definition_or_meaning": "Dividing a geometric quantity (segment, angle) into two identical equal parts.",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "Perpendicular bisector divides segment into two equal halves at 90°."
+      "term_or_concept": "Sovereignty",
+      "definition_or_meaning": "Supreme, independent legal authority of a State to govern itself without external interference.",
+      "si_unit_or_notation": "N/A",
+      "example_or_application": "India's authority to frame its own domestic and foreign policies."
     },
     {
-      "term_or_concept": "Regular Hexagon Interior Angle",
-      "definition_or_meaning": "Each interior angle = 120°; composed of 6 equilateral triangles.",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "6 × 60° central angles = 360°."
-    },
-    {
-      "term_or_concept": "Tangram",
-      "definition_or_meaning": "7-piece dissection puzzle originating in China consisting of 5 triangles, 1 square, 1 parallelogram.",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "Forming an arrow or animal silhouette using all 7 pieces."
+      "term_or_concept": "Democratic Republic",
+      "definition_or_meaning": "A state governed by elected representatives (Democracy) where the Head of State is elected rather than a hereditary monarch (Republic).",
+      "si_unit_or_notation": "N/A",
+      "example_or_application": "India (Elected President as Head of State)."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
         "q_no": "Q1",
-        "question": "Is it necessary to have the same radius for arcs above and below segment XY when constructing perpendicular bisector?",
-        "answer": "No. The radius for the top arcs can be different from the radius for the bottom arcs, as long as top arcs use equal radii from X and Y, and bottom arcs use equal radii from X and Y (> 0.5 XY). Any two points equidistant from X and Y define the perpendicular bisector line."
-      },
-      {
-        "q_no": "Q2",
-        "question": "How do you construct a 30° angle using ruler and compass?",
-        "answer": "1. Construct a 60° angle ∠CAX using equilateral triangle method.\n2. Construct the angle bisector of ∠CAX.\n3. The resulting half-angle is 30°."
-      },
-      {
-        "q_no": "Extract-Q",
-        "question": "Based on extract 'Covering a region using a set of shapes, without gaps or overlaps, is called tiling.': What two strict conditions must be satisfied for a valid tiling?",
-        "answer": "1. Zero gaps between shapes. 2. Zero overlapping of shapes."
+        "question": "Differentiate between the State and the Government.",
+        "answer": "The State is a permanent, sovereign political association comprising territory, population, government, and sovereignty. The Government is the temporary agency of elected officials that administers state affairs and changes through periodic elections."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "How many equilateral triangles make up a regular hexagon from its central point? (a) 4 (b) 5 (c) 6 (d) 8",
+        "question": "Which organ of government is responsible for interpreting the Constitution?",
         "options": [
-          "(a) Option A",
-          "(b) Option B",
-          "(c) Option C",
-          "(d) Option D"
+          "A) Executive",
+          "B) Legislature",
+          "C) Judiciary",
+          "D) Bureaucracy"
         ],
-        "answer": "(c) 6. Reason: 6 equilateral triangles each with 60° central angle total 360°.",
-        "explanation": "Step-by-step verification: (c) 6. Reason: 6 equilateral triangles each with 60° central angle total 360°."
+        "answer": "C) Judiciary",
+        "explanation": "The Judiciary interprets laws and protects constitutional fundamental rights."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Can you construct a 45° angle using only ruler and compass? Explain steps.",
-        "answer": "Yes. 1. Construct a 90° angle using perpendicular line construction. 2. Construct the angle bisector of the 90° angle. Half of 90° is 45°."
+        "question": "Why is India called a 'Republic'?",
+        "answer": "India is called a Republic because its Head of State (the President) is elected by the people for a fixed term, rather than holding a hereditary position like a monarch."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Analytical Application: Can you construct a 45° angle using only ruler and compass? Explain steps.",
-        "answer": "Yes. 1. Construct a 90° angle using perpendicular line construction. 2. Construct the angle bisector of the 90° angle. Half of 90° is 45°."
+        "question": "Why is 'Judicial Review' essential in a constitutional democracy?",
+        "answer": "Judicial Review allows the Supreme Court to strike down laws passed by Parliament if they violate fundamental rights or basic constitutional structures, preventing legislative tyranny."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Describe step-by-step how to construct a line parallel to a given line 'l' passing through an external point P.",
-        "answer": "1. Mark point A on line 'l'. Draw line segment AP.\n2. At point A, ∠PAL is formed with line 'l'.\n3. Copy angle ∠PAL at point P on line AP on alternate side using compass SSS angle copy method to construct alternate interior angle ∠APM = ∠PAL.\n4. Draw line 'm' through P along the copied ray. Line 'm' is parallel to 'l' by equal alternate interior angles."
+        "question": "Explain the principle of Separation of Powers and how Checks and Balances operate among the Legislature, Executive, and Judiciary.",
+        "answer": "Separation of Powers divides governance into three branches to prevent concentration of power:\n1. Legislature makes laws, but the Judiciary can strike down unconstitutional legislation.\n2. Executive enforces laws, but is held accountable to Parliament through questions and confidence votes.\n3. Judiciary operates independently, but judges are appointed by the Executive and can be impeached by Parliament for proven misconduct."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "An Islamic architectural design requires creating a pointed arch (Fig 6.11) and a 6-pointed star rosette on a mosque wall.",
+        "case_scenario": "A state legislature passes a law banning citizens from filing public grievances on social media platforms.",
         "qa": [
           {
-            "question": "What geometric construction forms the basis of a pointed arch?",
-            "answer": "Intersecting circular arcs drawn from the midpoints/endpoints of two base support segments."
+            "question": "Which organ of government can citizens approach to challenge this law?",
+            "answer": "The Judiciary (High Court or Supreme Court)."
           },
           {
-            "question": "How is a 6-pointed star constructed geometrically?",
-            "answer": "By constructing a regular hexagon and extending equilateral triangles outward on all 6 sides, or overlapping two inverted congruent equilateral triangles."
+            "question": "On what legal basis can the court declare the law null and void?",
+            "answer": "On the grounds that it violates the Fundamental Right to Freedom of Speech and Expression."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Changing the compass radius between drawing the first and second intersecting arcs when constructing 60° angle.",
-        "correct_fact_or_method": "The compass radius MUST remain strictly unchanged between step 1 (base arc) and step 2 (intersecting arc) to form an equilateral triangle."
-      },
-      {
-        "common_error_or_misconception": "Setting compass radius less than half the length of line segment when attempting perpendicular bisector.",
-        "correct_fact_or_method": "Always set compass radius strictly GREATER than half the line segment length (> 0.5 XY), otherwise the arcs will not intersect."
+        "common_error_or_misconception": "Confusing the State with the Government.",
+        "correct_fact_or_method": "The State is permanent and sovereign; the Government is temporary and changes via elections."
       }
     ]
   }

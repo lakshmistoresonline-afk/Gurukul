@@ -1,98 +1,90 @@
 {
   "chapter_number": 3,
-  "chapter_title": "Wisdom Paves the Way",
-  "drag_and_drop_unscramblers": [
-    {
-      "drill_id": "scramble_ch3",
-      "scrambled_tokens": [
-        "Tenali",
-        "outwitted",
-        "Rama",
-        "scholar",
-        "the",
-        "proud"
-      ],
-      "target_sentence": "Tenali Rama outwitted the proud scholar.",
-      "grammar_rule_hint": "Subject + Verb + Object word order."
-    }
-  ],
-  "multi_bin_sorting_matrices": [
-    {
-      "matrix_id": "sort_ch3",
-      "bins": [
-        "Nouns",
-        "Verbs",
-        "Adjectives"
-      ],
-      "draggable_items": [
-        {
-          "item": "courtier",
-          "correct_bin": "Nouns"
-        },
-        {
-          "item": "scrutinise",
-          "correct_bin": "Verbs"
-        },
-        {
-          "item": "arrogant",
-          "correct_bin": "Adjectives"
-        }
-      ]
-    }
-  ],
-  "editing_checkers": [
-    {
-      "checker_id": "edit_ch3",
-      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
-      "identified_errors": [
-        "cleverer -> clever / most clever"
-      ],
-      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
-      "rule_applied": "Superlative degree comparison requires 'the most'."
-    }
-  ],
+  "chapter_title": "The Rise of the Marathas",
+  "skill_drills": {
+    "scrambled_tile_sets": [
+      {
+        "id": "tile_1",
+        "target_term": "SWARAJYA",
+        "scrambled_letters": [
+          "S",
+          "T",
+          "E",
+          "W",
+          "A",
+          "R",
+          "D",
+          "S",
+          "H",
+          "I",
+          "P"
+        ],
+        "hint": "Responsible protection and management of resources/institutions."
+      }
+    ],
+    "multi_bin_sorting_matrices": [
+      {
+        "matrix_title": "Classification Drill - Chapter 3",
+        "bins": [
+          "Category A",
+          "Category B"
+        ],
+        "items": [
+          {
+            "item_name": "Sample Element 1",
+            "correct_bin": "Category A"
+          },
+          {
+            "item_name": "Sample Element 2",
+            "correct_bin": "Category B"
+          }
+        ]
+      }
+    ],
+    "editing_checkers": [
+      {
+        "passage_text": "In Chapter 3, key decisions are made by institutions.",
+        "embedded_errors": [
+          {
+            "error_word": "institutions",
+            "correct_word": "constitutional bodies",
+            "explanation": "Precision in terminology."
+          }
+        ]
+      }
+    ]
+  },
   "image_asset": {
-    "asset_id": "img_ch3_trail",
-    "title": "The Roadside Trail Clues Map",
-    "local_url": "/assets/images/ch3_camel_trail_evidence.png",
+    "image_url": "/assets/images/ch3_maratha_fort_architecture.png",
+    "title": "Gamified Skill Reference - Chapter 3",
     "aspect_ratio": "16:9",
-    "description": "Forensic trail evidence analysis by the four observant brothers on the road to Ujjain",
     "hotspots": [
       {
-        "hotspot_id": "hs_3_1",
-        "label": "Lame Leg Drag",
-        "x_percent": 15.0,
-        "y_percent": 50.0,
-        "w_percent": 20.0,
-        "h_percent": 30.0,
-        "annotation": "Deducted by Shiv Datt from faint ground marks"
+        "id": "hs_3_1",
+        "label": "Hill Fort Architecture (Pratapgad)",
+        "x_percent": 12.0,
+        "y_percent": 18.0,
+        "w_percent": 36.0,
+        "h_percent": 36.0,
+        "popover_description": "Integrated into basalt cliffs with double curtain walls, bastions, hidden gates (Maha Darwaja), and rainwater tanks."
       },
       {
-        "hotspot_id": "hs_3_2",
-        "label": "Blind Eye Leaves",
-        "x_percent": 38.0,
-        "y_percent": 50.0,
-        "w_percent": 20.0,
-        "h_percent": 30.0,
-        "annotation": "Deducted by Ram Datt from right-side leaves eaten"
+        "id": "hs_3_2",
+        "label": "Sea Fort Architecture (Sindhudurg)",
+        "x_percent": 52.0,
+        "y_percent": 18.0,
+        "w_percent": 36.0,
+        "h_percent": 36.0,
+        "popover_description": "Island sea fort guarding West Coast trade routes and serving as naval base under Maratha commanders like Kanhoji Angre."
       },
       {
-        "hotspot_id": "hs_3_3",
-        "label": "Missing Tooth Gaps",
-        "x_percent": 62.0,
-        "y_percent": 50.0,
-        "w_percent": 20.0,
-        "h_percent": 30.0,
-        "annotation": "Deducted by Dev Datt from un-bitten leaf gaps"
-      },
-      {
-        "hotspot_id": "hs_3_4",
-        "label": "Wheat & Honey Ants/Bees",
-        "x_percent": 85.0,
-        "y_percent": 50.0,
-        "w_percent": 20.0,
-        "h_percent": 30.0,
-        "annotation": "Deducted by Har Datt from insect gatherings"
+        "id": "hs_3_3",
+        "label": "Ganimi Kava Guerrilla Tactics & Taxation",
+        "x_percent": 20.0,
+        "y_percent": 62.0,
+        "w_percent": 60.0,
+        "h_percent": 26.0,
+        "popover_description": "Light cavalry surprise attacks combined with Chauth (25%) and Sardeshmukhi (10%) revenue protection levies."
       }
     ]
   }

@@ -1,74 +1,39 @@
 {
   "chapter_number": 2,
-  "chapter_title": "Operations with Integers",
-  "mastery_score_percent": 100,
-  "status": "Mastered",
-  "image_asset": {
-    "asset_id": "img_ch2",
-    "chapter_number": 2,
-    "title": "Integer Token Bag & Zero Pair Model",
-    "url": "/assets/images/ch2_integer_token_model.png",
-    "caption": "Token bag representation of positive (+1) green tokens, negative (-1) red tokens, and zero pairs.",
-    "hotspots": [
-      {
-        "x_percent": 8,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Positive Bag",
-        "popover_text": "Bag A contains +4 green tokens (+1 each)."
-      },
-      {
-        "x_percent": 38,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Zero Pairs",
-        "popover_text": "Green (+1) and Red (-1) tokens combine to form net 0 value."
-      },
-      {
-        "x_percent": 68,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Negative Multiplication",
-        "popover_text": "(-4) × (-2) = +8: Removing 8 red tokens leaves +8 positive green tokens."
-      }
-    ]
-  },
+  "chapter_title": "India and Her Neighbours",
   "zero_omission_notes": {
-    "summary": "This chapter builds conceptual clarity for integer arithmetic (multiplication and division) using physical token models and number line representations. Positive integers are modeled as green tokens (+1) and negative integers as red tokens (-1), where one positive and one negative form a 'zero pair'. Multiplication by a positive multiplier means placing tokens into an empty bag; multiplication by a negative multiplier means removing tokens from the bag. Rules for signs in multiplication and division are systematically derived: (+)*(+) = +, (+)*(-) = -, (-)*(+) = -, and (-)*(-) = +. The chapter also reinforces the distributive property a*(b + c) = a*b + a*c and integer division concepts.",
+    "summary": "This chapter defines 'neighbourhood' through both terrestrial land frontiers and Indian Ocean maritime connections. It details India's borders with seven land neighbours (Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh, Myanmar) and six maritime neighbours (Sri Lanka, Maldives, Indonesia, Myanmar, Thailand, Oman). It highlights shared cultural heritage, economic links, and regional cooperation under SAGAR.",
     "detailed_sections": [
       {
-        "section_number_and_title": "2.1 Token Model and Additive Inverses",
-        "full_notes": "Integers represent both magnitude and direction. A green token (+1) and a red token (-1) cancel each other out to equal zero (Zero Pair). The additive inverse of an integer 'a' is '-a' such that a + (-a) = 0. Subtracting a number is mathematically equivalent to adding its additive inverse: a - b = a + (-b).",
-        "margin_notes_and_sidebars": [
-          {
-            "type": "Note to Teacher",
-            "title": "Accessibility",
-            "content": "Tokens of different physical shapes or textures can be used for visually challenged students."
-          }
-        ]
-      },
-      {
-        "section_number_and_title": "2.2 Multiplication of Integers using Token Model",
-        "full_notes": "1. Positive Multiplier m × (+n): Add 'n' positive tokens 'm' times. Result is positive.\n2. Positive Multiplier m × (-n): Add 'n' negative tokens 'm' times. Result is negative (-mn).\n3. Negative Multiplier (-m) × (+n): Remove 'n' positive tokens 'm' times. Since bag starts empty, insert 'mn' zero pairs first, then remove 'mn' positives. Remaining tokens are 'mn' negatives (-mn).\n4. Negative Multiplier (-m) × (-n): Remove 'n' negative tokens 'm' times. Insert 'mn' zero pairs, remove 'mn' negatives. Remaining tokens are 'mn' positives (+mn). Therefore, Negative × Negative = Positive.",
-        "margin_notes_and_sidebars": [
-          {
-            "type": "Key Rule",
-            "title": "Sign Rules for Product",
-            "content": "Like signs produce a positive product; unlike signs produce a negative product."
-          }
-        ]
-      },
-      {
-        "section_number_and_title": "2.3 Division of Integers and Algebraic Properties",
-        "full_notes": "Division is the inverse of multiplication. If a × b = c, then c ÷ b = a and c ÷ a = b.\nSign rules for division:\n1. Positive ÷ Positive = Positive\n2. Positive ÷ Negative = Negative [a ÷ (-b) = -(a ÷ b)]\n3. Negative ÷ Positive = Negative [(-a) ÷ b = -(a ÷ b)]\n4. Negative ÷ Negative = Positive [(-a) ÷ (-b) = a ÷ b]",
+        "section_number_and_title": "2.1 Land Frontiers and Immediate Border Nations",
+        "full_notes": "India shares a 15,100 km land border with 7 nations across diverse geographies. Border management ranges from open passport-free borders (Nepal, Bhutan under bilateral treaties) to regulated and monitored boundaries (Pakistan, Bangladesh, China).",
         "margin_notes_and_sidebars": [
           {
             "type": "Did You Know?",
-            "title": "Distributive Property",
-            "content": "For any integers a, b, c: a × (b + c) = (a × b) + (a × c)."
+            "title": "India-Nepal Treaty of 1950",
+            "content": "Allows citizens of both countries to cross borders freely without visas, work, and own property in either country."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "2.2 Maritime Neighbours and SAGAR Policy",
+        "full_notes": "India's 7,516 km coastline interfaces with maritime neighbours: Sri Lanka (across Palk Strait), Maldives, Indonesia, Thailand, Myanmar, and Oman. India promotes maritime security and economic cooperation through SAGAR (Security and Growth for All in the Region).",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Try These",
+            "title": "Palk Strait Map Location",
+            "content": "Locate Palk Strait and Gulf of Mannar dividing India and Sri Lanka on a physical map."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "2.3 Shared Heritage and Humanitarian Assistance",
+        "full_notes": "Civilisational ties stem from shared epics, languages, trade, and Buddhism. India acts as a first responder during regional disasters (earthquakes, cyclones, financial crises) by delivering medical supplies, food aid, and naval assistance.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Did You Know?",
+            "title": "Spread of Buddhism",
+            "content": "Emperor Ashoka sent Mahendra and Sanghamitra to Sri Lanka, establishing Buddhist heritage links that endure today."
           }
         ]
       }
@@ -76,64 +41,70 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-2.1",
-      "aim_or_objective": "Demonstrate (-4) × (-2) = +8 visually using tokens.",
+      "activity_or_method_id": "ACT-201",
+      "aim_or_objective": "To map India's land and maritime borders and identify key geographic transit channels.",
       "materials_or_prerequisites": [
-        "Bag",
-        "Green tokens (+1)",
-        "Red tokens (-1)"
+        "Blank political map of South Asia",
+        "Color markers",
+        "Atlas"
       ],
       "procedure_or_steps": [
-        "1. Start with an empty bag (value = 0).",
-        "2. To remove 2 negative (red) tokens 4 times, first place 8 zero pairs (8 green + 8 red tokens) into the bag so removing tokens is possible.",
-        "3. Remove 8 red tokens (4 times 2 negatives).",
-        "4. Count the tokens remaining in the bag."
+        "Label India and all 7 land border nations.",
+        "Shade maritime neighbours across the Indian Ocean.",
+        "Draw arrows indicating the Palk Strait, 10 Degree Channel, and Malacca Strait."
       ],
-      "observations_or_results": "Exactly 8 green (+1) tokens remain. Thus, (-4) × (-2) = +8.",
-      "conclusion_or_principle": "Proven Principle: Bag and Token Integer Simulation holds true."
+      "observations_or_results": "India occupies a central geographic position in South Asia and the Indian Ocean, linking landlocked Himalayan states with oceanic trade corridors.",
+      "conclusion_or_principle": "Geographic positioning makes India the natural economic and maritime security pivot of the South Asian region."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 2.1 - Token Model Zero Pair",
+        "figure_id_and_title": "Fig 2.1 Regional Map of South Asia",
         "labels_and_components": [
-          "Green Token (+1)",
-          "Red Token (-1)",
-          "Neutral Pair (0)"
+          "Arabian Sea",
+          "Bay of Bengal",
+          "Indian Ocean",
+          "Palk Strait",
+          "Himalayan Ridge"
         ],
-        "drawing_or_reading_instructions": "Draw one green circle marked '+' and one red circle marked '-' together.",
-        "structural_or_conceptual_explanation": "Illustrates cancellation of equal magnitude positive and negative quantities."
+        "drawing_or_reading_instructions": "Trace India's peninsular landmass extending into the Indian Ocean.",
+        "structural_or_conceptual_explanation": "Shows proximity between coastal Indian ports and Indian Ocean maritime states."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Integer Multiplication and Division Sign Matrix",
+        "table_title": "Profile of India's Immediate Bordering Nations",
         "headers": [
-          "Operands (A, B)",
-          "Multiplication (A × B)",
-          "Division (A ÷ B)"
+          "Country",
+          "Neighbour Category",
+          "Border Length / Water Channel",
+          "Key Relationship / Treaty"
         ],
         "rows": [
           [
-            "+ and +",
-            "+ (Positive)",
-            "+ (Positive)"
+            "Bangladesh",
+            "Land",
+            "~4,096 km (Longest)",
+            "Shared Sundarbans delta, Ganga water agreement"
           ],
           [
-            "+ and -",
-            "- (Negative)",
-            "- (Negative)"
+            "Nepal",
+            "Land",
+            "~1,751 km",
+            "Open border, 1950 Peace & Friendship Treaty"
           ],
           [
-            "- and +",
-            "- (Negative)",
-            "- (Negative)"
+            "Pakistan",
+            "Land",
+            "~3,323 km",
+            "Indus Waters Treaty, regulated border"
           ],
           [
-            "- and -",
-            "+ (Positive)",
-            "+ (Positive)"
+            "Sri Lanka",
+            "Maritime",
+            "Palk Strait / Gulf of Mannar",
+            "Shared Buddhist heritage, maritime trade"
           ]
         ]
       }
@@ -141,117 +112,76 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Zero Pair",
-      "definition_or_meaning": "Combination of (+1) and (-1) tokens whose net value is 0.",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "(+1) + (-1) = 0"
+      "term_or_concept": "Maritime Neighbour",
+      "definition_or_meaning": "Nations separated by seas or oceans that share maritime zones or trade corridors.",
+      "si_unit_or_notation": "N/A",
+      "example_or_application": "Sri Lanka, Maldives, Indonesia, Oman."
     },
     {
-      "term_or_concept": "Additive Inverse",
-      "definition_or_meaning": "The number that yields 0 when added to a given integer 'a', denoted '-a'.",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "Additive inverse of -18 is +18."
-    },
-    {
-      "term_or_concept": "Integer Multiplication Rule 1",
-      "definition_or_meaning": "(+a) × (+b) = +(a × b) and (-a) × (-b) = +(a × b)",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "(-4) × (-2) = +8"
-    },
-    {
-      "term_or_concept": "Integer Multiplication Rule 2",
-      "definition_or_meaning": "(+a) × (-b) = -(a × b) and (-a) × (+b) = -(a × b)",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "(-4) × 2 = -8"
-    },
-    {
-      "term_or_concept": "Integer Division Rule",
-      "definition_or_meaning": "(-a) ÷ (-b) = +(a ÷ b); (-a) ÷ b = -(a ÷ b); a ÷ (-b) = -(a ÷ b)",
-      "si_unit_or_notation": "Mathematical Property / Formula",
-      "example_or_application": "(-46) ÷ (-23) = 2; 36 ÷ (-18) = -2"
+      "term_or_concept": "SAGAR Policy",
+      "definition_or_meaning": "Security and Growth for All in the Region — India's vision for maritime safety and blue economy cooperation.",
+      "si_unit_or_notation": "N/A",
+      "example_or_application": "Indian Ocean naval patrols and humanitarian assistance."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
         "q_no": "Q1",
-        "question": "Find the values of: (a) 14 × (-15) (b) -16 × (-5) (c) 36 ÷ (-18) (d) (-46) ÷ (-23)",
-        "answer": "(a) 14 × (-15) = -210.\n(b) (-16) × (-5) = +80.\n(c) 36 ÷ (-18) = -2.\n(d) (-46) ÷ (-23) = +2."
-      },
-      {
-        "q_no": "Q2",
-        "question": "A freezing process requires that the room temperature be lowered from 32°C at the rate of 5°C every hour. What will be the room temperature 10 hours after the process begins?",
-        "answer": "Initial temperature = 32°C. Rate of change = -5°C per hour. Time = 10 hours. Temperature change = 10 × (-5°C) = -50°C. Final temperature = 32°C + (-50°C) = -18°C."
-      },
-      {
-        "q_no": "Q3",
-        "question": "A cement company earns profit ₹8 per white bag and loss ₹5 per grey bag. (a) Sells 3000 white, 5000 grey. Net profit/loss? (b) If 6400 grey bags sold, how many white bags needed for zero profit/loss?",
-        "answer": "(a) Profit = 3000 × (+8) = ₹24,000. Loss = 5000 × (-5) = -₹25,000. Net = 24000 - 25000 = -₹1,000 (Loss of ₹1,000).\n(b) Total loss on 6400 grey bags = 6400 × 5 = ₹32,000. To offset, number of white bags = 32000 / 8 = 4,000 white bags."
-      },
-      {
-        "q_no": "Extract-Q",
-        "question": "Based on extract 'When the multiplier is positive, we place tokens into the bag. When the multiplier is negative, we remove tokens from the bag.': What does a negative multiplier represent in the token model?",
-        "answer": "A negative multiplier represents the operation of removing tokens from the bag."
+        "question": "What is a maritime neighbour? Give two examples relative to India.",
+        "answer": "A maritime neighbour is a nation separated by an oceanic body rather than a land boundary. Examples for India include Sri Lanka (across Palk Strait) and Maldives (in the Indian Ocean)."
       }
     ],
     "objective_questions_1_mark": [
       {
-        "type": "Fill Blanks",
-        "question": "(-3) × _____ = 27",
+        "type": "MCQ",
+        "question": "Which country shares the longest single land border with India?",
         "options": [
-          "A) Standard Option 1",
-          "B) Standard Option 2",
-          "C) Standard Option 3",
-          "D) Standard Option 4"
+          "A) China",
+          "B) Pakistan",
+          "C) Bangladesh",
+          "D) Nepal"
         ],
-        "answer": "-9 (since (-3) × (-9) = +27).",
-        "explanation": "Step-by-step verification: -9 (since (-3) × (-9) = +27)."
+        "answer": "C) Bangladesh",
+        "explanation": "India shares approximately 4,096 km of border with Bangladesh."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "In a test (+5) marks are given for every correct answer and (-2) marks for every incorrect answer. Anil scored -10 marks with 5 correct answers. How many incorrect answers did he give?",
-        "answer": "Marks from 5 correct answers = 5 × 5 = +25. Total score = -10. Marks from incorrect answers = Total - Correct = -10 - 25 = -35. Number of incorrect answers = (-35) ÷ (-2) = 17.5... Wait, if score is integer: Marks for incorrect = -35. If -2 per incorrect, 17 questions = -34, plus 1 unattempted/different penalty. (Exact calculation: -35 / -2 = 17 incorrect answers giving -34 and 1 mark deduction)."
+        "question": "What is the open border arrangement between India and Nepal?",
+        "answer": "Under the 1950 Treaty, citizens of India and Nepal can cross borders freely without passports or visas, reside, work, and own business in either country."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Analytical Application: In a test (+5) marks are given for every correct answer and (-2) marks for every incorrect answer. Anil scored -10 marks with 5 correct answers. How many incorrect answers did he give?",
-        "answer": "Marks from 5 correct answers = 5 × 5 = +25. Total score = -10. Marks from incorrect answers = Total - Correct = -10 - 25 = -35. Number of incorrect answers = (-35) ÷ (-2) = 17.5... Wait, if score is integer: Marks for incorrect = -35. If -2 per incorrect, 17 questions = -34, plus 1 unattempted/different penalty. (Exact calculation: -35 / -2 = 17 incorrect answers giving -34 and 1 mark deduction)."
+        "question": "Why is regional cooperation essential among South Asian nations during natural disasters?",
+        "answer": "Cyclones, earthquakes, and floods transcend political borders. Shared early warning systems, joint naval rescue teams, and disaster relief prevent catastrophic loss of life across interconnected coastal and mountain regions."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Find 3 consecutive integers whose product is (a) -6, (b) 120.",
-        "answer": "(a) Test integers around 0: (-3) × (-2) × (-1) = -6, OR (-1) × 1 × 6 (not consecutive). The three consecutive integers are -3, -2, -1 [since (-3)*(-2)*(-1) = -6] or -1, 0, 1 (product 0). So -3, -2, -1.\n(b) 4 × 5 × 6 = 120. Three consecutive integers are 4, 5, 6."
+        "question": "Explain how shared civilisational heritage and trade routes connect India with her land and maritime neighbours.",
+        "answer": "Historically, ancient trade routes (Silk Route, Spice Route) connected India with Central Asia, China, and Southeast Asia. Spreading faiths like Buddhism created enduring spiritual links with Sri Lanka, Nepal, Bhutan, Myanmar, and Thailand. Epics like Ramayana and Mahabharata exist in local adaptations across Southeast Asia. Modern trade agreements and humanitarian aid build upon these centuries of cultural trust."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "A submarine at sea level (0 m) descends at a speed of 4 meters per minute. Simultaneously, a elevator in a mine shaft descends from +20 m above ground at 5 m/min.",
+        "case_scenario": "During a major tsunami in the Indian Ocean, a small island neighbour experiences severe fresh water contamination and loss of communication towers.",
         "qa": [
           {
-            "question": "Write the position of the submarine after 15 minutes as an integer.",
-            "answer": "Position = 15 × (-4 m) = -60 m."
-          },
-          {
-            "question": "Find the position of the elevator after 15 minutes.",
-            "answer": "Elevator descent = 15 × (-5 m) = -75 m. Initial = +20 m. Final position = +20 + (-75) = -55 m."
+            "question": "How does India's SAGAR policy guide its response?",
+            "answer": "Under SAGAR, India deploys naval ships equipped with water desalination plants, medical teams, and emergency communication units as an immediate first responder."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Adding negative numbers and turning the result positive (e.g., thinking -7 - 18 = +25).",
-        "correct_fact_or_method": "Distinguish between addition/subtraction and multiplication. Adding two negatives yields a negative: (-7) + (-18) = -25."
-      },
-      {
-        "common_error_or_misconception": "Confusing division by negative numbers with subtraction.",
-        "correct_fact_or_method": "Treat division as finding the factor: (-36) ÷ (-9) = +4 because (+4) × (-9) = -36."
+        "common_error_or_misconception": "Assuming India shares its longest border with China.",
+        "correct_fact_or_method": "India shares its longest land border with Bangladesh (~4,096 km)."
       }
     ]
   }

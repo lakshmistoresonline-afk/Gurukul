@@ -1,87 +1,106 @@
 {
   "chapter_number": 11,
-  "chapter_title": "The World of Algorithms",
+  "chapter_title": "Reproduction in Organisms",
   "mind_map": {
-    "root_topic": "The World of Algorithms",
+    "root_topic": "Reproduction in Organisms",
     "branches": [
       {
-        "theme": "Algorithmic Logic and Data Structures",
+        "theme": "Asexual Reproduction and Vegetative Propagation",
         "sub_branches": [
           {
-            "concept": "Definition and Historical Origins of Algorithms",
+            "concept": "Asexual Reproduction Mechanisms",
             "details": [
-              "An algorithm is a finite, ordered, step-by-step, unambiguous problem-solving procedure.",
-              "Named after 9th-century Persian mathematician Muhammad ibn Musa al-Khwarizmi.",
-              "Relies on sequential lists and state data structures to track intermediate variables."
+              "Involves a single parent organism without gamete fusion.",
+              "Offspring are genetically identical clones of the parent produced via mitosis.",
+              "Modes: Binary Fission (Amoeba, Paramecium), Multiple Fission (Plasmodium malaria parasite), Budding (Yeast, Hydra), Fragmentation (Spirogyra), Spore Formation (Rhizopus bread mold spores inside sporangia)."
             ],
             "evidence_or_examples": [
-              "Place-value long division algorithm for multi-digit decimal numerals."
+              "Activity 11.1: Observing yeast budding under compound microscope showing daughter buds detaching from parent cell."
             ],
             "key_terms": [
-              "Algorithm",
-              "Al-Khwarizmi",
-              "Ordered List Data Structure",
-              "Modulo Operator (m mod n)"
-            ]
+              "Asexual Reproduction",
+              "Clone",
+              "Binary Fission",
+              "Budding",
+              "Spore Formation",
+              "Sporangium"
+            ],
+            "tooltip_popover": "Asexual Reproduction Mechanisms: Detailed breakdown and evidence."
+          },
+          {
+            "concept": "Vegetative Propagation in Plants",
+            "details": [
+              "Reproduction using vegetative plant organs (roots, stems, leaves).",
+              "Natural Methods: Adventitious leaf buds in Bryophyllum notches; stem tubers in Potato; runners/rhizomes.",
+              "Artificial Methods: Stem Cuttings (Rose), Grafting (Mango/Apple), Layering (Jasmine), Tissue Culture Micropropagation (producing pathogen-free clones in nutrient agar medium)."
+            ],
+            "evidence_or_examples": [
+              "Bryophyllum leaf notches producing plantlets when fallen on moist soil.",
+              "Commercial cultivation of seedless fruit varieties (grapes, bananas, navel oranges)."
+            ],
+            "key_terms": [
+              "Vegetative Propagation",
+              "Bryophyllum",
+              "Grafting",
+              "Tissue Culture",
+              "Micropropagation"
+            ],
+            "tooltip_popover": "Vegetative Propagation in Plants: Detailed breakdown and evidence."
           }
-        ]
+        ],
+        "node_color": "#10b981",
+        "icon": "concept_branch"
       },
       {
-        "theme": "Greatest Common Divisor (GCD) & Computational Complexity",
+        "theme": "Sexual Reproduction, Meiosis, and Genetic Variation",
         "sub_branches": [
           {
-            "concept": "Euclidean Subtraction Method",
+            "concept": "Sexual Reproduction and Meiotic Halving",
             "details": [
-              "Based on property gcd(m, n) = gcd(n, m - n) for m >= n.",
-              "Repeats subtraction loops until both numbers become equal.",
-              "Has linear time complexity O(N); inefficient for large numbers."
+              "Involves two parents producing specialized haploid gametes (sperm/egg, pollen/ovule).",
+              "Meiosis: Specialized reduction cell division reducing chromosome count by half (2n -> n) in gametes.",
+              "Fertilization: Fusion of male (n) and female (n) haploid gametes restoring diploid zygote number (2n)."
             ],
             "evidence_or_examples": [
-              "Computing gcd(99, 2) requires 49 iterative subtraction steps."
+              "Zygote undergoing repeated mitotic divisions during embryogenesis to form a multicellular embryo."
             ],
             "key_terms": [
-              "Euclidean Subtraction",
-              "Common Divisor Difference Property",
-              "Linear Complexity O(N)"
-            ]
+              "Sexual Reproduction",
+              "Meiosis",
+              "Haploid",
+              "Diploid",
+              "Zygote",
+              "Fertilization"
+            ],
+            "tooltip_popover": "Sexual Reproduction and Meiotic Halving: Detailed breakdown and evidence."
           },
           {
-            "concept": "Āryabhaṭa's Remainder Division Algorithm",
+            "concept": "Evolutionary Significance of Genetic Variation",
             "details": [
-              "Based on remainder reduction property gcd(m, n) = gcd(n, m mod n).",
-              "Replaces multiple subtraction iterations with a single division remainder step.",
-              "Has logarithmic time complexity O(log N); scales efficiently with digit length.",
-              "Recorded in Aryabhatiya (499 CE)."
+              "Sexual reproduction combines paternal and maternal genetic material.",
+              "Meiotic crossing-over generates genetic variations across generations.",
+              "Variations provide raw evolutionary material enabling population survival during environmental shifts."
             ],
             "evidence_or_examples": [
-              "Computing gcd(99, 2) completes in 2 remainder steps: 99 mod 2 = 1, 2 mod 1 = 0.",
-              "gcd(540, 192) -> 540 mod 192 = 156 -> 192 mod 156 = 36 -> 156 mod 36 = 12 -> 36 mod 12 = 0 (GCD = 12)."
+              "Bacterial or plant populations with genetic variations surviving sudden temperature spikes or antibiotic treatments."
             ],
             "key_terms": [
-              "Āryabhaṭa Remainder Algorithm",
-              "Remainder Reduction (m mod n)",
-              "Logarithmic Complexity O(log N)",
-              "Safe LCM: (m // gcd) * n"
-            ]
-          },
-          {
-            "concept": "Lamé's Theorem & Bezout's Identity",
-            "details": [
-              "Lamé's Theorem proves consecutive Fibonacci numbers (F_{k+1}, F_k) represent the worst-case inputs for Euclidean/Āryabhaṭa GCD algorithms.",
-              "Bezout's Identity states gcd(a, b) can be expressed as linear combination x*a + y*b."
+              "Genetic Variation",
+              "Natural Selection",
+              "Evolutionary Adaptation",
+              "Recombination"
             ],
-            "evidence_or_examples": [
-              "gcd(89, 55) requires maximum division steps relative to digit count.",
-              "Bezout identity for a=240, b=46: gcd=2 => 2 = (-9)*240 + (47)*46."
-            ],
-            "key_terms": [
-              "Lamé's Theorem",
-              "Fibonacci Worst Case",
-              "Bezout's Identity (xa + yb = gcd)"
-            ]
+            "tooltip_popover": "Evolutionary Significance of Genetic Variation: Detailed breakdown and evidence."
           }
-        ]
+        ],
+        "node_color": "#10b981",
+        "icon": "concept_branch"
       }
     ]
+  },
+  "image_asset": {
+    "asset_id": "IMG-CH11-01",
+    "title": "Asexual Clones vs Sexual Gametic Halving",
+    "url": "/assets/images/ch11_reproduction_methods.png"
   }
 }

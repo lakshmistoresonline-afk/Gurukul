@@ -1,162 +1,115 @@
 {
-  "unit_number": 4,
   "chapter_number": 7,
-  "chapter_title": "Gilli Danda",
-  "mindmap": {
-    "root_node": "Gilli Danda (Poetry / Indigenous Sports)",
-    "central_theme": "Traditional Indian street games, handmade play equipment, physical agility, sportsmanship, and cultural heritage",
-    "sub_nodes": [
+  "chapter_title": "Shapes and Patterns",
+  "mind_map": {
+    "root_node": "Shapes and Patterns (Tessellations, Polygons, Tangrams & 3D Nets)",
+    "main_branches": [
       {
-        "node_id": "M7_THEME",
-        "title": "Main Themes, Core Morals & Pedagogical Value",
-        "child_nodes": [
+        "branch_title": "1. Tessellations (Tiling Patterns)",
+        "sub_branches": [
           {
-            "title": "Central Theme & Indigenous Sports",
-            "details": "Celebrates Gilli Danda as a traditional Indian sport requiring skill, focus, and physical agility without expensive equipment."
+            "sub_title": "Gapless Surface Coverage Rules",
+            "key_nodes": [
+              "Tessellation Definition: Covering a 2D plane completely using repeating geometric tiles without gaps or overlaps",
+              "Vertex Fitting Condition: Interior angles of meeting tile corners at any vertex must sum to exactly 360°",
+              "Tessellating Shapes: Squares (90° x 4 = 360°), Rectangles, Regular Hexagons (120° x 3 = 360°), Equilateral Triangles (60° x 6 = 360°)"
+            ],
+            "misconception_alert": "Believing any regular polygon can tile a plane seamlessly without checking interior angle sums at vertices.",
+            "formula_or_rule": "Tessellation Vertex Rule: Sum of meeting corner angles = 360°.",
+            "real_world_application": "Bathroom floor tiling, honeycomb structures, and Rajasthani brick wall patterns."
           },
           {
-            "title": "Resourcefulness & DIY Culture",
-            "details": "Shows how rural children hand-carve equipment from tree branches, promoting creative self-reliance."
-          },
-          {
-            "title": "Camaraderie & Fair Play",
-            "details": "Reinforces team spirit, honest scorekeeping, and mutual respect among village playmates."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Traditional Sports",
-            "details": "Mermaid Syntax:\ngraph TD\n  A[Gilli Danda] --> B[Indigenous Game Mechanics]\n  A --> C[Handmade Wood Equipment]\n  A --> D[Fair Play & Sportsmanship]\n  B --> B1[Groove Flicking & Aerial Striking]\n  C --> C1[Tapered Gilli & Sturdy Danda]\n  D --> D1[Honest Scoring & Group Joy]"
+            "sub_title": "Non-Tessellating Figures & Irregular Tiling",
+            "key_nodes": [
+              "Non-Tessellating Shapes: Circles, Regular Pentagons (108° cannot divide 360° evenly, leaving 24° gaps)",
+              "Composite Tiling: Combining 2 or more shape types to fill 360° vertices (e.g., octagons + squares)",
+              "Irregular Tiling: Hand-drawn irregular interlocking tiles (Escher-style motifs)"
+            ],
+            "misconception_alert": "Assuming regular pentagons tessellate because they are symmetrical polygons.",
+            "formula_or_rule": "Gap Identification: 360° - Sum(Corner Angles) > 0 indicates non-tessellating gaps.",
+            "real_world_application": "Pavement brick design and artistic parquet flooring."
           }
         ]
       },
       {
-        "node_id": "M7_PLOT",
-        "title": "Game Mechanics, Sequence & Visual Arc",
-        "child_nodes": [
+        "branch_title": "2. Polygon Classification & Tangram Geometry",
+        "sub_branches": [
           {
-            "title": "Equipment Preparation (Phase 1)",
-            "details": "Children carve the small tapered wooden peg (gilli) and longer striking stick (danda) from dry wood."
+            "sub_title": "2D Polygon Taxonomy",
+            "key_nodes": [
+              "Polygon Definition: Closed 2D plane figure made entirely of straight line segments",
+              "Triangles by Side Properties: Equilateral (3 equal sides, all 60°), Isosceles (2 equal sides), Scalene (3 different side lengths)",
+              "Quadrilaterals (4 Sides): Square, Rectangle, Rhombus (4 equal sides), Parallelogram (opposite sides parallel/equal), Trapezium",
+              "Higher Polygons: Pentagon (5 sides), Hexagon (6 sides), Octagon (8 sides)"
+            ],
+            "misconception_alert": "Classifying a rotated square as a 'diamond' or rhombus without verifying if angles are right angles.",
+            "formula_or_rule": "Polygon Side Hierarchy: N-sided closed figure has N vertices and N interior angles.",
+            "real_world_application": "Architectural truss design, sign board classification, and mosaic art."
           },
           {
-            "title": "The Pit Flick (Phase 2)",
-            "details": "The striker places the gilli across a small ground groove (ditti) and uses the danda to flick it into the air."
-          },
-          {
-            "title": "The Aerial Strike (Phase 3)",
-            "details": "While the gilli is airborne, the striker whacks it forcefully into the open playing field."
-          },
-          {
-            "title": "Catching & Distance Measurement (Phase 4)",
-            "details": "Fielders try to catch the airborne gilli; if missed, distance is measured in danda lengths for points."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Gameplay Arc",
-            "details": "Mermaid Syntax:\ngraph LR\n  G1[Carving Gilli/Danda] --> G2[Setting Gilli on Groove] --> G3[Flicking into Air] --> G4[Whacking Aerial Strike] --> G5[Fielder Catch or Distance Score]"
+            "sub_title": "7-Piece Tangram Dissection",
+            "key_nodes": [
+              "Tangram Composition: 5 Triangles (2 large, 1 medium, 2 small), 1 Square, 1 Parallelogram",
+              "Area Preservation: Rearranging pieces forms diverse animal/human silhouettes with identical total surface area",
+              "Spatial Reasoning: Combining 2 small triangles to form the square or medium triangle"
+            ],
+            "misconception_alert": "Overlapping tangram pieces when creating puzzle target shapes.",
+            "formula_or_rule": "Tangram Area Conservation: Sum of 7 individual piece areas = Area of outer bounding square.",
+            "real_world_application": "Creative spatial puzzle solving, logo design, and floor tile mosaics."
           }
         ]
       },
       {
-        "node_id": "M7_CHARACTERS",
-        "title": "Key Player Profiles & Equipment Roles",
-        "child_nodes": [
+        "branch_title": "3. 3D Nets & Polyhedron Geometry",
+        "sub_branches": [
           {
-            "title": "The Striker",
-            "details": "Agile player demonstrating sharp hand-eye coordination, timing, and power during flicking and striking."
+            "sub_title": "3D Nets & Unfolding Patterns",
+            "key_nodes": [
+              "3D Net Definition: Flat 2D pattern of polygon faces that folds into a closed 3D solid figure",
+              "Cube Net: 6 identical square faces connected along edges (11 distinct valid folding nets exist)",
+              "Prism & Pyramid Nets: Triangular prisms, square-based pyramids unfolded flat"
+            ],
+            "misconception_alert": "Assuming any 6-square shape forms a cube net (overlapping faces occur if edges are misjoined).",
+            "formula_or_rule": "Net Validation: A net must fold cleanly along shared edges without overlapping faces.",
+            "real_world_application": "Cardboard packaging box manufacture and sheet metal fabrication."
           },
           {
-            "title": "The Fielders",
-            "details": "Alert teammates spread across the open ground waiting to catch high-flying wooden gillis."
-          },
-          {
-            "title": "Equipment: Gilli & Danda",
-            "details": "Gilli: Small 3-inch wooden peg tapered at both ends; Danda: Sturdy 2-foot wooden striking bat."
-          }
-        ]
-      },
-      {
-        "node_id": "M7_VOCAB_PHONICS",
-        "title": "Vocabulary, Pronunciation & Phonics Clusters",
-        "child_nodes": [
-          {
-            "title": "Core Vocabulary Glossary",
-            "details": "Gilli (tapered peg), Danda (striking stick), Tapered (narrowed at ends), Whack (hard hit), Sportsmanship (fair play)."
-          },
-          {
-            "title": "Phonics & Silent Letters",
-            "details": "Silent 'h' in 'whack' (/wæk/); silent 't' in 'listen'; onomatopoeic impact words: 'whack', 'thud'."
-          },
-          {
-            "title": "Synonyms & Antonyms",
-            "details": "Tapered = Pointed; Whack = Strike; Courage = Bravery; Fair × Unfair."
-          }
-        ]
-      },
-      {
-        "node_id": "M7_GRAMMAR",
-        "title": "Grammar, Mechanics & Sentence Structures",
-        "child_nodes": [
-          {
-            "title": "Abstract Nouns",
-            "details": "Nouns denoting intangible concepts: sportsmanship, courage, friendship, joy, patience, truth."
-          },
-          {
-            "title": "Possessive Pronouns",
-            "details": "Replacing possessive nouns: mine, yours, his, hers, ours, theirs ('This danda is mine')."
-          },
-          {
-            "title": "Prepositions of Trajectory",
-            "details": "Movement prepositions: 'out of the groove', 'into the air', 'across the field', 'towards the boundary'."
+            "sub_title": "Polyhedron Metrics & Euler's Formula",
+            "key_nodes": [
+              "Cube Metrics: 6 Faces (F), 8 Vertices (V), 12 Edges (E)",
+              "Regular Dodecahedron: 12 pentagonal faces; Regular Icosahedron: 20 triangular faces",
+              "Euler's Polyhedron Formula: F + V - E = 2 (Valid for all convex polyhedra)"
+            ],
+            "misconception_alert": "Counting edges twice when inspecting 3D solid models.",
+            "formula_or_rule": "Euler's Polyhedron Formula: Faces + Vertices - Edges = 2 (F + V - E = 2).",
+            "real_world_application": "Geodesic dome construction, 3D computer graphics modeling, and crystallography."
           }
         ]
       }
     ]
   },
   "image_asset": {
-    "asset_id": "IMG_CH07",
-    "filename": "ch07_gilli_danda_play_mechanics.png",
-    "asset_url": "/assets/images/ch07_gilli_danda_play_mechanics.png",
-    "title": "Indigenous Game Mechanics Diagram (Gilli Danda)",
+    "chapter_number": 7,
+    "image_id": "ch07_tessellations_nets",
+    "file_name": "ch07_tessellations_nets.png",
+    "local_url": "/assets/images/ch07_tessellations_nets.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 2400,
-      "height": 1350
-    },
-    "alt_text": "Technical diagram showing hand-carved gilli peg, danda striking stick, pit pivot, and field geometry.",
+    "title": "Surface Tessellations & Unfolded 3D Polyhedron Nets",
+    "description": "Seamless tiling tessellation vertex angle rules (360°) and unfolded 6-face cube net with Euler formula F+V-E=2.",
     "hotspots": [
       {
-        "id": "hs_07_gilli",
-        "label": "Tapered Gilli",
-        "x_percent": 30.0,
-        "y_percent": 70.0,
-        "w_percent": 10.0,
-        "h_percent": 12.0,
-        "tooltip": "Small oval wooden peg tapered at both pointed ends"
+        "label": "Tessellation 360 deg Vertex Fit",
+        "x_percent": 25.0,
+        "y_percent": 45.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0
       },
       {
-        "id": "hs_07_danda",
-        "label": "Striking Danda",
-        "x_percent": 50.0,
-        "y_percent": 55.0,
-        "w_percent": 15.0,
-        "h_percent": 15.0,
-        "tooltip": "Longer cylindrical wooden bat used for flicking & hitting"
-      },
-      {
-        "id": "hs_07_pit",
-        "label": "Ground Pit (Gutti)",
-        "x_percent": 20.0,
-        "y_percent": 85.0,
-        "w_percent": 12.0,
-        "h_percent": 10.0,
-        "tooltip": "Shallow earth excavation where gilli is positioned"
-      },
-      {
-        "id": "hs_07_field",
-        "label": "Outfield Catchers",
-        "x_percent": 80.0,
-        "y_percent": 40.0,
-        "w_percent": 15.0,
-        "h_percent": 20.0,
-        "tooltip": "Fielders positioned to catch mid-air gilli or measure distance"
+        "label": "3D Unfolded Cube Net",
+        "x_percent": 70.0,
+        "y_percent": 45.0,
+        "w_percent": 22.0,
+        "h_percent": 30.0
       }
     ]
   }

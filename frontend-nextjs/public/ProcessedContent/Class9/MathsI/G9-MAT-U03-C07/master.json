@@ -1,39 +1,39 @@
 {
   "chapter_number": 7,
-  "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
+  "chapter_title": "Elections and Representation",
   "zero_omission_notes": {
-    "summary": "This chapter introduces probability as a rigorous mathematical tool to quantify uncertainty on a scale from 0 (impossible) to 1 (certain). Key concepts include random experiments, sample spaces, outcomes, events, fair vs biased trials, experimental (empirical) probability P(E) = (favorable trials) / (total trials), theoretical probability P(E) = n(E) / n(S) for equally likely outcomes, complementary events P(E') = 1 - P(E), tree diagrams, and geometric probability.",
+    "summary": "Elections are the core mechanism of representative democracy. Details India's electoral machinery, the autonomous Election Commission of India (ECI), First-Past-The-Post (FPTP) voting system, electoral roll preparation, Model Code of Conduct, and technological innovations like EVMs and VVPATs.",
     "detailed_sections": [
       {
-        "section_number_and_title": "7.1 Random Experiments & Probability Scale",
-        "full_notes": "A random experiment has known possible outcomes, but individual trial results cannot be predicted with certainty. Probability values range strictly in [0, 1]. Sum of probabilities of all elementary outcomes equals 1.",
+        "section_number_and_title": "7.1 Electoral Framework and Universal Adult Suffrage",
+        "full_notes": "Article 326 guarantees Universal Adult Suffrage: every Indian citizen aged 18+ has the right to vote without discrimination. Representation of the People Acts (1950, 1951) govern constituency delimitation, candidate qualifications, and election conduct.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Rule",
-            "title": "Probability Bounds",
-            "content": "0 <= P(E) <= 1. P(Impossible Event) = 0, P(Sure Event) = 1."
+            "type": "Constitutional Provision",
+            "title": "Article 324",
+            "content": "Vests superintendence, direction, and control of all elections to Parliament and State Legislatures in the Election Commission of India."
           }
         ]
       },
       {
-        "section_number_and_title": "7.2 Experimental vs Theoretical Probability",
-        "full_notes": "Experimental probability relies on actual trial data: P_exp(E) = m / n. Theoretical probability assumes equally likely outcomes: P_th(E) = n(E) / n(S). By Law of Large Numbers, experimental probability approaches theoretical probability as trial count n -> infinity.",
+        "section_number_and_title": "7.2 The Election Commission of India (ECI)",
+        "full_notes": "An autonomous constitutional body ensuring free and fair elections. Key duties: delimitation of constituencies, voter registration, political party recognition, enforcing Model Code of Conduct, and appointing observers.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Historical Note",
-            "title": "Coin Tossing Experiments",
-            "content": "Karl Pearson tossed a coin 24,000 times, getting 12,012 heads—an experimental probability of 0.5005, extremely close to 0.5!"
+            "type": "Electoral Ethics",
+            "title": "Model Code of Conduct (MCC)",
+            "content": "A set of guidelines issued by the ECI for political parties and candidates regarding speeches, campaigning, manifestos, and government announcements once elections are declared."
           }
         ]
       },
       {
-        "section_number_and_title": "7.3 Compound Events & Geometric Probability",
-        "full_notes": "Sample spaces for multi-stage experiments (e.g., tossing 2 coins, rolling 2 dice) are organized using tree diagrams or coordinate grids. Geometric probability evaluates likelihood as ratio of favorable regions (length, area) to total region.",
+        "section_number_and_title": "7.3 Electoral System and Voting Technology",
+        "full_notes": "India utilizes First-Past-The-Post (FPTP) for Lok Sabha and Vidhan Sabha elections: the candidate securing the highest vote count in a constituency wins. Voting technology has evolved from paper ballots to Electronic Voting Machines (EVMs) paired with Voter Verifiable Paper Audit Trail (VVPAT).",
         "margin_notes_and_sidebars": [
           {
-            "type": "Formula",
-            "title": "Complementary Event",
-            "content": "P(E) + P(not E) = 1 => P(not E) = 1 - P(E)."
+            "type": "Tech Innovation",
+            "title": "VVPAT System",
+            "content": "Prints a slip showing candidate name and symbol for 7 seconds behind a glass window, allowing voters to verify their vote electronically cast."
           }
         ]
       }
@@ -41,100 +41,68 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-7.1",
-      "aim_or_objective": "Coin Tossing Simulation and Law of Large Numbers",
+      "activity_or_method_id": "Act_7.1",
+      "aim_or_objective": "Mock School Election & EVM Demonstration - Simulate complete electoral workflow from voter verification to counting.",
       "materials_or_prerequisites": [
-        "Fair coin",
-        "Tally sheet"
+        "Voter List",
+        "Mock Ballot Box / Digital EVM app",
+        "Indelible Ink"
       ],
       "procedure_or_steps": [
-        "Toss coin 10 times, record heads.",
-        "Continue tossing up to 100 times, calculating cumulative ratio P_exp(H) at 10, 20, 50, 100 tosses.",
-        "Plot graph of trial count vs experimental head frequency."
+        "Polling Officer 1 verifies voter identity against Electoral Roll.",
+        "Polling Officer 2 applies indelible ink to left index finger and issues ballot.",
+        "Voter casts secret vote behind voting screen.",
+        "Returning Officer oversees counting and declares result."
       ],
-      "observations_or_results": "Flips exhibit large variation initially, but stabilize near 0.5 as trial count increases.",
-      "conclusion_or_principle": "Empirical relative frequency converges to theoretical probability for large sample sizes."
+      "observations_or_results": "Students experience voter secrecy, identity check protocols, and transparent counting.",
+      "conclusion_or_principle": "Rigorous standardized procedural steps protect electoral integrity against fraud."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 7.1: Tree Diagram for Tossing Two Coins",
+        "figure_id_and_title": "Fig 7.1: Electoral Process Flowchart in India",
         "labels_and_components": [
-          "Coin 1 (H/T)",
-          "Coin 2 (H/T)",
-          "Outcomes: HH, HT, TH, TT"
+          "Delimitation",
+          "Voter List Publication",
+          "Notification of Election",
+          "Nomination & Scrutiny",
+          "Campaigning (MCC active)",
+          "Polling Day",
+          "Counting & Results"
         ],
-        "drawing_or_reading_instructions": "Draw root branching into H and T for Coin 1. From each branch, draw sub-branches H and T for Coin 2. List 4 final outcomes.",
-        "structural_or_conceptual_explanation": "Total outcomes n(S) = 4."
+        "drawing_or_reading_instructions": "Draw a sequential linear flowchart depicting stages from ECI announcement to result declaration.",
+        "structural_or_conceptual_explanation": "Campaigning must cease 48 hours prior to the close of poll."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Sample Space Matrix for Rolling Two Dice",
+        "table_title": "Comparison of FPTP and Proportional Representation (PR)",
         "headers": [
-          "Die 1 \\ Die 2",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
+          "Feature",
+          "First-Past-The-Post (FPTP)",
+          "Proportional Representation (PR)"
         ],
         "rows": [
           [
-            "1",
-            "(1,1)",
-            "(1,2)",
-            "(1,3)",
-            "(1,4)",
-            "(1,5)",
-            "(1,6)"
+            "Constituency Type",
+            "Single-member small constituencies",
+            "Large multi-member or national constituency"
           ],
           [
-            "2",
-            "(2,1)",
-            "(2,2)",
-            "(2,3)",
-            "(2,4)",
-            "(2,5)",
-            "(2,6)"
+            "Voting Method",
+            "Voter votes for a specific candidate",
+            "Voter votes for a political party list"
           ],
           [
-            "3",
-            "(3,1)",
-            "(3,2)",
-            "(3,3)",
-            "(3,4)",
-            "(3,5)",
-            "(3,6)"
+            "Seat Allocation",
+            "Candidate with plurality wins seat",
+            "Party wins seats proportional to vote percentage"
           ],
           [
-            "4",
-            "(4,1)",
-            "(4,2)",
-            "(4,3)",
-            "(4,4)",
-            "(4,5)",
-            "(4,6)"
-          ],
-          [
-            "5",
-            "(5,1)",
-            "(5,2)",
-            "(5,3)",
-            "(5,4)",
-            "(5,5)",
-            "(5,6)"
-          ],
-          [
-            "6",
-            "(6,1)",
-            "(6,2)",
-            "(6,3)",
-            "(6,4)",
-            "(6,5)",
-            "(6,6)"
+            "Usage in India",
+            "Lok Sabha & Vidhan Sabha elections",
+            "Rajya Sabha & President elections"
           ]
         ]
       }
@@ -142,76 +110,82 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Sample Space",
-      "definition_or_meaning": "The set of all possible outcomes of a random experiment, denoted S.",
-      "si_unit_or_notation": "Set S",
-      "example_or_application": "Rolling a six-sided die gives S = {1, 2, 3, 4, 5, 6}."
+      "term_or_concept": "First-Past-The-Post (FPTP)",
+      "definition_or_meaning": "An electoral system where the candidate who receives more votes than any other single candidate wins the seat, regardless of whether they achieve an absolute majority.",
+      "si_unit_or_notation": "Noun",
+      "example_or_application": "Under FPTP, a candidate winning 35% of votes beats candidates with 30% and 25%."
     },
     {
-      "term_or_concept": "Theoretical Probability",
-      "definition_or_meaning": "P(E) = n(E) / n(S)",
-      "si_unit_or_notation": "Dimensionless ratio in [0, 1]",
-      "example_or_application": "P(even number on die) = 3/6 = 1/2."
+      "term_or_concept": "Universal Adult Suffrage",
+      "definition_or_meaning": "The right of all adult citizens to vote in elections regardless of wealth, income, gender, social status, or ethnicity.",
+      "si_unit_or_notation": "Noun",
+      "example_or_application": "India adopted Universal Adult Suffrage immediately upon constitutional enforcement in 1950."
+    },
+    {
+      "term_or_concept": "FPTP Plurality Determination Rule",
+      "definition_or_meaning": "Winning Candidate = Max(Votes_1, Votes_2, ..., Votes_n)",
+      "si_unit_or_notation": "Requires plurality (highest relative vote total), not absolute majority (>50%).",
+      "example_or_application": "If Candidate A gets 40,000 votes, B gets 35,000, and C gets 25,000, Candidate A wins."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Ex 7.1 Q5",
-        "question": "A card is drawn from a well-shuffled deck of 52 cards. Find probability of drawing a face card.",
-        "answer": "Face cards = 12. P(Face card) = 12 / 52 = 3 / 13."
+        "q_no": "Q2",
+        "question": "What steps does the Election Commission take to ensure free and fair elections?",
+        "answer": "1) Enforces Model Code of Conduct to prevent misuse of government machinery. 2) Appoints independent election observers. 3) Mandates VVPAT-EVM auditing. 4) Sets candidate expenditure limits. 5) Deploys central security forces at polling booths to prevent booth-capturing."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Which of the following CANNOT be a probability value?",
+        "question": "What is the minimum voting age for Indian citizens as per Article 326?",
         "options": [
-          "A) 2/3",
-          "B) -1.5",
-          "C) 15%",
-          "D) 0.7"
+          "A) 16 years",
+          "B) 18 years",
+          "C) 21 years",
+          "D) 25 years"
         ],
-        "answer": "B",
-        "explanation": "Probability can never be negative (0 <= P <= 1)."
+        "answer": "B) 18 years",
+        "explanation": "The 61st Constitutional Amendment Act (1988) lowered the voting age from 21 to 18 years."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Two coins are tossed simultaneously. Find probability of getting at most one head.",
-        "answer": "S = {HH, HT, TH, TT}, n(S) = 4. At most 1 head = {HT, TH, TT}, n(E) = 3. P = 3/4."
+        "question": "Explain the role of VVPAT in electronic voting.",
+        "answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent verification printer attached to EVMs. When a voter casts a vote, VVPAT generates a paper slip displaying candidate name, serial number, and symbol for 7 seconds, allowing physical audit trail verification during disputes. Key points: Verification mechanism for EVM, Displays candidate name/symbol for 7 seconds, Enables physical audit trail during dispute"
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "A dart is thrown at a square board of side 20 cm containing a circular target ring of radius 7 cm. Find geometric probability of hit.",
-        "answer": "Total Area = 400 sq cm. Target Area = (22/7)*7^2 = 154 sq cm. P(Hit) = 154/400 = 77/200 = 0.385."
+        "question": "Source Passage (Article 324 empowers ECI with superintendence and control ov...): Why is constitutional independence essential for the Election Commission?",
+        "answer": "Independence ensures ECI can act impartially without executive government pressure or political interference."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Two dice are rolled together. Find probability that: (a) Sum is 8. (b) Sum is a prime number. (c) Both dice show doublets.",
-        "answer": "Total outcomes n(S) = 36.\n(a) Sum = 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5 outcomes => P = 5/36.\n(b) Sum prime (2,3,5,7,11): count = 15 outcomes => P = 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6 outcomes => P = 6/36 = 1/6."
+        "question": "Critically analyze the advantages and limitations of the First-Past-The-Post (FPTP) system in India.",
+        "answer": "Advantages: 1) Simple for ordinary voters to understand. 2) Gives voters a clear choice of individual local candidate. 3) Promotes stable parliamentary majorities. Limitations: 1) A party can win a majority of seats with less than 50% total vote share. 2) Smaller localized parties or minorities may be underrepresented unless concentrated in specific pockets. 3) Votes cast for losing candidates produce 'wasted votes'."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "A quality inspector tests 500 manufactured LED bulbs and finds 15 defective.",
+        "case_scenario": "During an election campaign, a sitting minister uses official government vehicles to attend political party rallies and announces a new government housing scheme after election dates are notified.",
         "qa": [
           {
-            "question": "What is the probability that a bulb selected at random is non-defective?",
-            "answer": "Non-defective count = 500 - 15 = 485. P(Non-defective) = 485 / 500 = 0.97."
+            "question": "Identify the election violation and state the action ECI can take.",
+            "answer": "Violation of Model Code of Conduct (MCC) prohibiting misuse of official state resources and policy announcements post-notification. ECI can issue show-cause notices, halt the scheme, or ban the candidate from campaigning."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Confusing 'at least' and 'at most' during outcome selection.",
-        "correct_fact_or_method": "'At least 1' means 1 or more. 'At most 1' means 1 or fewer (including 0)."
+        "common_error_or_misconception": "Assuming a candidate must get more than 50% of total votes to win an election under FPTP.",
+        "correct_fact_or_method": "Under FPTP, a candidate only needs to secure more votes than any other individual opponent (plurality), even if that is only 30% of total votes cast."
       }
     ]
   }

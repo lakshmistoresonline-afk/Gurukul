@@ -1,120 +1,107 @@
 {
   "chapter_number": 12,
-  "chapter_title": "Quadrilaterals",
-  "unit_or_theme": "Plane Geometry & Tessellation",
+  "chapter_title": "Diversity in Living Organisms and Biological Classification",
+  "unit_or_theme": "Taxonomy & Biodiversity",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter covers planar quadrilaterals, proving parallelogram theorems and converses. It establishes the Midpoint Theorem for triangles, Centroid Theorem (2:1 median ratio), Varignon's Theorem (midpoints of any 4-gon form a parallelogram), and universal plane tiling.",
+    "chapter_executive_summary": "Explores biodiversity hotspots in India, endemic species, taxonomy hierarchy (Kingdom to Species), and the Five Kingdom System (Monera, Protista, Fungi, Plantae, Animalia).",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "12.1 Parallelograms and Converses",
-        "full_explanation": "A quadrilateral is a parallelogram iff opposite sides are equal, opposite angles are equal, or diagonals bisect each other.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Definition Box",
-            "box_title": "Convex Quadrilateral",
-            "full_content": "Internal angles < 180 degrees and diagonals intersect inside the figure."
-          }
-        ]
-      },
-      {
-        "section_number_title": "12.2 Midpoint Theorem & Centroid",
-        "full_explanation": "Line segment joining midpoints of two triangle sides is parallel to 3rd side and half its length. Medians intersect at centroid G in a 2:1 ratio.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Theorem Box",
-            "box_title": "Varignon's Theorem",
-            "full_content": "Midpoints of adjacent sides of ANY quadrilateral form a parallelogram."
-          }
-        ]
+        "section_number_title": "12.1 Five Kingdom Classification Hierarchy",
+        "full_explanation": "Whittaker classified life based on cell structure (prokaryotic/eukaryotic), body organization, and nutrition mode into 5 kingdoms.",
+        "margin_boxes_and_in_text_notes": []
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "Midpoint Theorem",
-        "definition": "Segment joining midpoints of two triangle sides is parallel to the third side and half its length.",
-        "contextual_example_or_usage": "DE || BC and DE = 1/2 BC.",
-        "associated_units_or_parts_of_speech": "Theorem"
-      },
-      {
-        "term": "Centroid (G)",
-        "definition": "Intersection of three triangle medians, dividing each median in a 2:1 ratio.",
-        "contextual_example_or_usage": "AG : GR = 2 : 1.",
+        "term": "Endemic Species",
+        "definition": "Species restricted exclusively to a specific geographical region and found nowhere else naturally.",
+        "contextual_example_or_usage": "Lion-tailed macaque in Western Ghats.",
         "associated_units_or_parts_of_speech": "Noun"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "Centroid Section Ratio",
-        "statement_or_expression": "AG : GR = 2 : 1",
-        "variable_definitions": "A: vertex; G: centroid; R: midpoint of opposite side BC",
-        "model_application_example": "If median AR = 9 cm, AG = 6 cm and GR = 3 cm."
+        "name": "Biodiversity Index (Simpson's D)",
+        "statement_or_expression": "D = 1 - (Sum(n*(n-1)) / (N*(N-1)))",
+        "variable_definitions": "n=individuals of species, N=total individuals",
+        "model_application_example": "Quantifying species richness in Western Ghats."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Paper Folding Verification of Midpoint Theorem",
-      "objective_or_aim": "Verify that paper fold crease at midpoints is parallel to base and half as long.",
+      "activity_or_procedure_title": "Field Study of Local Plant Diversity and Taxonomic Key Usage",
+      "objective_or_aim": "Classify plant specimens into Monocots and Dicots.",
       "materials_or_prerequisites": [
-        "Paper triangle cutout ABC"
+        "Hand lens",
+        "Plant leaves/flowers",
+        "Dichotomous key"
       ],
       "step_by_step_procedure": [
-        "Fold vertex A down to touch vertex B.",
-        "Crease sharply across sides AB and AC.",
-        "Unfold and measure crease line length and angle relative to base BC."
+        "Examine leaf venation (parallel vs reticulate).",
+        "Count flower petals (trimerous vs tetramerous/pentamerous).",
+        "Classify sample as Monocotyledon or Dicotyledon."
       ],
-      "expected_observations_or_working": "Crease line connects midpoints, measures half BC length, and is parallel to BC.",
-      "scientific_or_logical_conclusion": "Confirms the Midpoint Theorem experimentally."
+      "expected_observations_or_working": "Parallel venation corresponds to trimerous floral parts.",
+      "scientific_or_logical_conclusion": "Morphological traits provide reliable diagnostic keys for classification."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Fig 12.21: Varignon Parallelogram of Quadrilateral ABCD",
+        "figure_title": "Whittaker Five Kingdom Classification Tree",
         "labels_to_learn": [
-          "Vertices A, B, C, D",
-          "Midpoints P, Q, R, S",
-          "Diagonals AC, BD"
+          "Monera (Prokaryote)",
+          "Protista (Unicellular Eukaryote)",
+          "Fungi (Heterotrophic Wall)",
+          "Plantae (Autotrophic)",
+          "Animalia (Heterotrophic No Wall)"
         ],
-        "drawing_or_labeling_instructions": "Draw general quadrilateral ABCD, mark midpoints P, Q, R, S and connect to form PQRS.",
-        "key_structural_details": "PQ || AC and SR || AC implies PQ || SR, forming parallelogram."
+        "drawing_or_labeling_instructions": "Draw phylogenetic tree branching from base Monera upward.",
+        "key_structural_details": "Highlight cellularity and nutritional differentiation."
       }
     ],
     "tables_and_charts": [
       {
-        "table_title": "Diagonal Properties of Quadrilaterals",
+        "table_title": "Key Features of the Five Kingdoms",
         "headers": [
-          "Type",
-          "Diagonals Equal?",
-          "Diagonals Perpendicular?",
-          "Diagonals Bisect?"
+          "Kingdom",
+          "Cell Type",
+          "Cell Wall",
+          "Nutrition Mode"
         ],
         "rows": [
           [
-            "Parallelogram",
-            "Not necessarily",
-            "Not necessarily",
-            "Yes"
+            "Monera",
+            "Prokaryotic",
+            "Non-cellulosic",
+            "Autotrophic / Heterotrophic"
           ],
           [
-            "Rectangle",
-            "Yes",
-            "Not necessarily",
-            "Yes"
+            "Protista",
+            "Eukaryotic",
+            "Present in some",
+            "Autotrophic / Heterotrophic"
           ],
           [
-            "Rhombus",
-            "Not necessarily",
-            "Yes",
-            "Yes"
+            "Fungi",
+            "Eukaryotic",
+            "Chitin wall",
+            "Saprophytic / Heterotrophic"
           ],
           [
-            "Square",
-            "Yes",
-            "Yes",
-            "Yes"
+            "Plantae",
+            "Eukaryotic",
+            "Cellulose wall",
+            "Autotrophic (Photosynthesis)"
+          ],
+          [
+            "Animalia",
+            "Eukaryotic",
+            "Absent",
+            "Heterotrophic (Holozoic)"
           ]
         ]
       }
@@ -123,20 +110,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "Exercise 12.1",
-        "question_number": "Q4",
-        "question_text": "In parallelogram ABCD, DP = BQ on diagonal BD. Show APCQ is a parallelogram.",
-        "complete_step_by_step_solution": "Triangle ADP congruent to CBQ (SAS). Thus AP = CQ and AP || CQ. Opposite sides equal and parallel implies APCQ is a parallelogram."
+        "exercise_section": "End of Chapter Exercises",
+        "question_number": "Q1",
+        "question_text": "Explain the central principle of Diversity in Living Organisms and Biological Classification.",
+        "complete_step_by_step_solution": "The main concept involves understanding how structural mechanisms and physical/biological principles govern Taxonomy & Biodiversity."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Any 4-gon can tile the plane by 180-degree rotations around side midpoints.",
+        "passage_or_source_text": "Explores biodiversity hotspots in India, endemic species, taxonomy hierarchy (Kingdom to Species), and the Five Kingdom System (Monera, Protista, Fungi, Plantae, Animalia).",
         "questions_and_answers": [
           {
-            "question": "Why can any quadrilateral tile the plane?",
-            "answer": "Because the four interior angles sum to 360 degrees, filling the full vertex angle."
+            "question": "Summarize the key takeaway of this chapter.",
+            "answer": "Explores biodiversity hotspots in India, endemic species, taxonomy hierarchy (Kingdom to Species), and the Five Kingdom System (Monera, Protista, Fungi, Plantae, Animalia)."
           }
         ]
       }
@@ -146,40 +133,40 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Midpoints of sides of ANY quadrilateral connected in order form a:",
+        "question": "What is the core subject of Chapter 12?",
         "options": [
-          "A) Rectangle",
-          "B) Rhombus",
-          "C) Parallelogram",
-          "D) Trapezium"
+          "Diversity in Living Organisms and Biological Classification",
+          "Random Topic",
+          "Unrelated Subject",
+          "None"
         ],
-        "correct_answer": "C",
-        "brief_explanation": "By Varignon's theorem, connecting midpoints always forms a parallelogram."
+        "correct_answer": "Diversity in Living Organisms and Biological Classification",
+        "brief_explanation": "Directly stated in textbook chapter header."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "In triangle ABC, DE = (x + 3) cm joins midpoints AB and AC. If BC = (3x - 2) cm, find x and BC.",
-        "model_answer": "DE = 1/2 BC => 2(x + 3) = 3x - 2 => 2x + 6 = 3x - 2 => x = 8. BC = 3(8) - 2 = 22 cm.",
+        "question": "Define key term 'Endemic Species' and state its significance.",
+        "model_answer": "Species restricted exclusively to a specific geographical region and found nowhere else naturally.",
         "key_marking_points": [
-          "Applies DE = 1/2 BC (1 mark)",
-          "Solves x = 8 and BC = 22 cm (1 mark)"
+          "Correct definition",
+          "Appropriate context usage"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "State and prove the Midpoint Theorem for triangles.",
-        "model_answer": "Statement: Line joining midpoints of two sides is parallel to 3rd side and half its length. Proof: Extend DE to F such that DE = EF. Triangle ADE congruent to CFE (SAS). AD = CF and AD || CF => DB = CF and DB || CF. DBCF is parallelogram, so DF || BC and DE = 1/2 BC."
+        "question": "Comprehensive analysis of systems described in Chapter 12: Diversity in Living Organisms and Biological Classification.",
+        "model_answer": "Explores biodiversity hotspots in India, endemic species, taxonomy hierarchy (Kingdom to Species), and the Five Kingdom System (Monera, Protista, Fungi, Plantae, Animalia). Key processes operate through established physical and biological principles."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "An architect tiles a ceramic floor using irregular 4-gon tiles.",
+        "case_scenario": "Practical scenario demonstrating Taxonomy & Biodiversity principles in real-world application.",
         "questions_and_answers": [
           {
-            "question": "Why do the tiles fit together without gaps?",
-            "answer": "Four tiles meet at each vertex, bringing together angles summing to 360 degrees."
+            "question": "Analyze the scenario outcomes.",
+            "answer": "Applies Endemic Species and related scientific laws."
           }
         ]
       }
@@ -187,9 +174,51 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Assuming the Varignon parallelogram of a rhombus is another rhombus.",
-      "root_cause": "Intuitive assumption that shape properties carry over to midpoint figures.",
-      "correct_approach": "Remember midpoint figure of rhombus is a RECTANGLE because rhombus diagonals are perpendicular."
+      "frequent_student_error": "Misinterpreting fundamental concepts in Diversity in Living Organisms and Biological Classification.",
+      "root_cause": "Conflating everyday non-scientific terms with precise scientific definitions.",
+      "correct_approach": "Apply exact SI units and standard scientific terminology."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "IMG-CH12-01",
+    "title": "Five Kingdoms & Taxonomic Hierarchy",
+    "url": "/assets/images/ch12_biodiversity_taxonomy.png"
+  },
+  "scripted_dialogue": [
+    {
+      "speaker": "Teacher",
+      "role": "Instructor",
+      "speech_text": "Welcome to Chapter 12! Let's explore key scientific concepts and practical lab investigations."
+    },
+    {
+      "speaker": "Student",
+      "role": "Inquirer",
+      "speech_text": "How do these principles apply to real-world phenomena and experiments in Chapter 12?"
+    }
+  ],
+  "stem_lab_drawer": {
+    "apparatus": [
+      "Graduated Cylinder",
+      "Digital Scale",
+      "Microscope",
+      "Beakers",
+      "Thermometer"
+    ],
+    "reagents": [
+      "Pure Water",
+      "Safranin Stain",
+      "Copper Sulfate",
+      "Barium Chloride"
+    ]
+  },
+  "scripted_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Why are bryophytes referred to as the amphibians of the plant kingdom?"
+    },
+    {
+      "speaker": "Student",
+      "speech_text": "Bryophytes live on damp land but require an external film of water for their flagellated male gametes (antherozoids) to swim to egg cells for fertilization."
     }
   ]
 }

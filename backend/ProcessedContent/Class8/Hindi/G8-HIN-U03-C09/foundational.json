@@ -1,91 +1,102 @@
 {
   "chapter_number": 9,
-  "chapter_title": "आदमी का अनुपात (Aadmi ka Anupat)",
-  "scrambled_tile_sets": [
+  "chapter_title": "The Amazing World of Solutes, Solvents, and Solutions",
+  "skill_drills": [
     {
-      "id": "tile_ch9_1",
-      "scrambled_tiles": [
-        "प्रेम",
-        "स्वदेश",
-        "ही",
-        "सच्चा",
-        "जीवन",
-        "है।"
+      "drill_type": "drag_and_drop_unscrambler",
+      "title": "Scientific Method Sequence Unscrambler - Ch 9",
+      "scrambled_tile_sets": [
+        {
+          "id": "t3",
+          "text": "Formulate Testable Hypothesis"
+        },
+        {
+          "id": "t1",
+          "text": "Observe Natural Phenomenon"
+        },
+        {
+          "id": "t5",
+          "text": "Draw Evidence-Based Conclusion"
+        },
+        {
+          "id": "t2",
+          "text": "Ask Investigative Question"
+        },
+        {
+          "id": "t4",
+          "text": "Conduct Controlled Experiment"
+        }
       ],
-      "correct_sequence": [
-        "स्वदेश",
-        "प्रेम",
-        "ही",
-        "सच्चा",
-        "जीवन",
-        "है।"
-      ],
-      "hint": "वाक्य को अर्थपूर्ण क्रम में सजाएं।"
-    }
-  ],
-  "multi_bin_sorting_matrices": [
+      "correct_sequence_ids": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ]
+    },
     {
-      "matrix_title": "तत्सम बनाम तद्भव शब्द वर्गीकरण",
-      "bin_names": [
-        "तत्सम शब्द",
-        "तद्भव शब्द"
+      "drill_type": "multi_bin_sorting_matrix",
+      "title": "Concept Categorization Matrix - Ch 9",
+      "bins": [
+        "Category A",
+        "Category B",
+        "Category C"
       ],
       "items": [
         {
-          "text": "हृदय",
-          "correct_bin": "तत्सम शब्द"
+          "text": "Component 1 of The Amazing World of Solutes, Solvents, and Solutions",
+          "bin": "Category A"
         },
         {
-          "text": "हिया/दिल",
-          "correct_bin": "तद्भव शब्द"
+          "text": "Component 2 of The Amazing World of Solutes, Solvents, and Solutions",
+          "bin": "Category B"
         },
         {
-          "text": "सत्य",
-          "correct_bin": "तत्सम शब्द"
-        },
-        {
-          "text": "सच",
-          "correct_bin": "तद्भव शब्द"
+          "text": "Component 3 of The Amazing World of Solutes, Solvents, and Solutions",
+          "bin": "Category C"
         }
       ]
-    }
-  ],
-  "editing_checkers": [
+    },
     {
-      "original_flawed_text": "हमे अपने स्वदेस का सम्मान करना चाहीए।",
-      "errors_count": 3,
-      "corrected_text": "हमें अपने स्वदेश का सम्मान करना चाहिए।",
-      "error_explanations": "1. 'हमे' -> 'हमें' (अनुस्वार त्रुटि). 2. 'स्वदेस' -> 'स्वदेश' (स/श त्रुटि). 3. 'चाहीए' -> 'चाहिए' (मात्रा त्रुटि)."
+      "drill_type": "editing_checker",
+      "title": "Misconception Corrector - Ch 9",
+      "erroneous_statement": "Common student misconception regarding The Amazing World of Solutes, Solvents, and Solutions.",
+      "corrected_statement": "Scientifically verified fact correcting the misconception in The Amazing World of Solutes, Solvents, and Solutions."
     }
   ],
   "image_asset": {
-    "title": "Interactive Visual Diagram: आदमी का अनुपात (Aadmi ka Anupat)",
-    "url": "/assets/images/ch9_anupat.png",
-    "dimensions": "2400x1350 (16:9)",
+    "asset_id": "ch9_media_01",
+    "chapter_number": 9,
+    "chapter_title": "The Amazing World of Solutes, Solvents, and Solutions",
+    "title": "Dissolution Dynamics & Buoyancy Flotation Balance",
+    "url": "/assets/images/ch9_solutes_and_density.png",
+    "format": "PNG",
+    "aspect_ratio": "16:9",
+    "tags": [
+      "Solute",
+      "Solvent",
+      "Density",
+      "Buoyancy"
+    ],
     "hotspots": [
       {
-        "x_percent": 8,
-        "y_percent": 50,
-        "w_percent": 38,
-        "h_percent": 30,
-        "label": "Theme Breakdown",
-        "details": "आदमी का अनुपात (Aadmi ka Anupat) - Core Concept Breakdown"
+        "hotspot_id": "hs_ch9_01",
+        "title": "Component A: Solute Setup",
+        "x_percent": 8.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Detailed visual representation of Solute and Solvent."
       },
       {
-        "x_percent": 54,
-        "y_percent": 50,
-        "w_percent": 38,
-        "h_percent": 30,
-        "label": "Textual Evidence",
-        "details": "आदमी का अनुपात (Aadmi ka Anupat) - Key Quotes & Citations"
-      },
-      {
-        "x_percent": 31,
-        "y_percent": 15,
-        "w_percent": 38,
-        "h_percent": 28,
-        "label": "Synthesis & Outcome",
-        "details": "आदमी का अनुपात (Aadmi ka Anupat) - Applied Life Values"
+        "hotspot_id": "hs_ch9_02",
+        "title": "Component B: Density Mechanics",
+        "x_percent": 54.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Experimental phenomenon illustrating Density and Buoyancy."
       }
     ]
   }

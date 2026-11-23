@@ -1,162 +1,129 @@
 {
-  "unit_number": 3,
   "chapter_number": 6,
-  "chapter_title": "What a Tank!",
-  "mindmap": {
-    "root_node": "What a Tank! (Narrative / Water Conservation)",
-    "central_theme": "Water scarcity, regional water storage architecture, community resource management, and environmental conservation",
-    "sub_nodes": [
+  "chapter_title": "The Dairy Farm",
+  "mind_map": {
+    "root_node": "The Dairy Farm (Flexible Multiplication Strategies, Partial Products & Area Grids)",
+    "main_branches": [
       {
-        "node_id": "M6_THEME",
-        "title": "Main Themes, Core Morals & Pedagogical Value",
-        "child_nodes": [
+        "branch_title": "1. Mental Multiplication & Place Value Shortcuts",
+        "sub_branches": [
           {
-            "title": "Central Theme & Resource Scarcity",
-            "details": "Highlights the critical value of water through Suma's summer tap drought experience, driving environmental mindfulness."
+            "sub_title": "Multiplying by Powers of 10",
+            "key_nodes": [
+              "Zero Appending Rule: Multiply non-zero digits, then append total count of trailing zeroes",
+              "Examples: 45 x 10 = 450 (append 1 zero); 32 x 100 = 3,200 (append 2 zeroes); 7 x 1,000 = 7,000",
+              "Multiplication Identities: N x 0 = 0 (Zero property); N x 1 = N (Identity property)"
+            ],
+            "misconception_alert": "Appending zeroes when multiplying decimals without adjusting decimal point position.",
+            "formula_or_rule": "Zero Rule: Product = (A x B) with trailing zeroes appended equal to sum of zeroes in factors.",
+            "real_world_application": "Calculating bulk dairy yields, crate box totals, and wholesale product billing."
           },
           {
-            "title": "Cultural Storage Architecture",
-            "details": "Explores artistic rooftop tanks in Punjab (tractors, aeroplanes, footballs) and traditional Rajasthani underground *Tankas*."
-          },
-          {
-            "title": "Community Action & Rainwater Harvesting",
-            "details": "Encourages students to implement simple water-saving habits and understand regional conservation technologies."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Water Management",
-            "details": "Mermaid Syntax:\ngraph TD\n  A[What a Tank!] --> B[Tap Shortage Crisis]\n  A --> C[Regional Storage Solutions]\n  A --> D[Conservation Action]\n  C --> C1[Punjab: Sculptural Rooftop Tanks]\n  C --> C2[Rajasthan: Underground Tankas]\n  D --> D1[Rainwater Harvesting & Daily Care]"
+            "sub_title": "Halving & Doubling Compensation",
+            "key_nodes": [
+              "Compensation Principle: Halving one factor and doubling the other keeps total product unchanged",
+              "Strategic Application: Convert difficult factors into easy multiples of 10 (e.g., 14 x 5 -> (14/2) x (5x2) = 7 x 10 = 70)",
+              "Nearest Multiple Adjustment: Multiplying by 9 or 19 via (N x 10) - N or (N x 20) - N"
+            ],
+            "misconception_alert": "Halving both factors or doubling both factors instead of applying inverse compensation.",
+            "formula_or_rule": "Halving & Doubling Identity: A x B = (A / 2) x (B x 2).",
+            "real_world_application": "Rapid mental estimation of grocery prices and daily farm earnings."
           }
         ]
       },
       {
-        "node_id": "M6_PLOT",
-        "title": "Story Sequence, Plot Turns & Visual Arc",
-        "child_nodes": [
+        "branch_title": "2. Area Models & Partial Product Decomposition",
+        "sub_branches": [
           {
-            "title": "Summer Tap Drought (Beginning)",
-            "details": "Suma wakes up on a sweltering summer morning to find dry taps, realizing the immediate panic of water shortage."
+            "sub_title": "Grid Area Model & Distributive Law",
+            "key_nodes": [
+              "Additive Decomposition: Decompose 2-digit factors into tens and ones (e.g., 23 x 12 = (20 + 3) x (10 + 2))",
+              "Grid Area Mapping: 2x2 grid representing 4 sub-rectangular areas (20x10=200, 20x2=40, 3x10=30, 3x2=6)",
+              "Summing Partial Products: Total Product = 200 + 40 + 30 + 6 = 276",
+              "Distributive Law: a x (b + c) = (a x b) + (a x c)"
+            ],
+            "misconception_alert": "Forgetting to sum all four partial products in a 2x2 grid decomposition.",
+            "formula_or_rule": "Distributive Law: (A + B) x (C + D) = AC + AD + BC + BD.",
+            "real_world_application": "Calculating compost pit surface areas, floor tiling needs, and auditorium seating capacity."
           },
           {
-            "title": "Exploring Rooftop Sculptural Tanks (Mid-point)",
-            "details": "Suma learns about Punjabi households building overhead tanks shaped like tractors, aeroplanes, and sports gear."
-          },
-          {
-            "title": "Discovering Rajasthani Underground Tankas (Climax)",
-            "details": "Explores how dry desert regions in Rajasthan build sealed, pristine underground *Tankas* to harvest monsoon rain."
-          },
-          {
-            "title": "Household Water Pledge (Resolution)",
-            "details": "Suma and her family commit to fixing leaky taps, reusing wash water, and harvesting rainwater."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Story & Learning Arc",
-            "details": "Mermaid Syntax:\ngraph LR\n  W1[Dry Tap Crisis] --> W2[Punjab Rooftop Tanks] --> W3[Rajasthan Underground Tankas] --> W4[Rainwater Harvesting Plan] --> W5[Water Conservation Pledge]"
+            "sub_title": "Multi-Digit Standard Algorithm Transition",
+            "key_nodes": [
+              "Column Alignment of Partial Products: Writing tens and ones partial products vertically",
+              "Carrying in Partial Multiplication: Managing place value overflow during column multiplication",
+              "Efficiency Comparison: Grid model provides visual conceptual understanding; column algorithm speeds computation"
+            ],
+            "misconception_alert": "Misaligning place values when writing partial product rows in vertical multiplication.",
+            "formula_or_rule": "Standard Multiplication Algorithm: Product = Sum of Ones Partial Row + Tens Partial Row.",
+            "real_world_application": "Commercial farm accounting and calculating annual feed costs."
           }
         ]
       },
       {
-        "node_id": "M6_CHARACTERS / ENTITIES",
-        "title": "Key Community Entities & Architectural Systems",
-        "child_nodes": [
+        "branch_title": "3. Dairy Operations & Yield Revenue Math",
+        "sub_branches": [
           {
-            "title": "Suma",
-            "details": "Environmentally conscious young girl who turns personal drought frustration into proactive conservation learning."
+            "sub_title": "Herd Milk Yield & Revenue Calculations",
+            "key_nodes": [
+              "Daily Herd Production: Daily Volume = Number of Cows x Yield per Cow (litres)",
+              "Monthly Yield: Daily Herd Production x Days in Month (e.g., 30 days)",
+              "Gross Revenue: Total Revenue = Total Litres Sold x Price per Litre (₹)"
+            ],
+            "misconception_alert": "Calculating monthly revenue using 7 days instead of 30/31 days.",
+            "formula_or_rule": "Revenue = Herd Size x Daily Litres per Cow x Days x Rate per Litre.",
+            "real_world_application": "Managing dairy cooperative finances, cattle feed budgeting, and milk packet distribution."
           },
           {
-            "title": "Punjabi Tank Sculptors",
-            "details": "Creative artisans crafting rooftop cement reservoirs reflecting family identity, hobbies, and pride."
-          },
-          {
-            "title": "Rajasthani Desert Communities",
-            "details": "Masters of rainwater harvesting who maintain sterile underground *Tankas* for drinking during drought months."
-          }
-        ]
-      },
-      {
-        "node_id": "M6_VOCAB_PHONICS",
-        "title": "Vocabulary, Pronunciation & Phonics Clusters",
-        "child_nodes": [
-          {
-            "title": "Core Vocabulary Glossary",
-            "details": "Conservation (preservation), Tanka (underground tank), Reservoir (water store), Scarcity (shortage), Harvest (collect)."
-          },
-          {
-            "title": "Phonics & Silent Letters",
-            "details": "Silent 'l' in 'shouldn't' (/ˈʃʊd.ənt/); silent 'h' in 'what' (/wɒt/); silent 'g' in 'design'."
-          },
-          {
-            "title": "Synonyms & Antonyms",
-            "details": "Scarcity = Dearth; Conservation = Preservation; Abundance × Scarcity; Pristine × Polluted."
-          }
-        ]
-      },
-      {
-        "node_id": "M6_GRAMMAR",
-        "title": "Grammar, Mechanics & Sentence Structures",
-        "child_nodes": [
-          {
-            "title": "Modal Auxiliaries of Obligation",
-            "details": "Expressing necessity and rules: must, should, ought to ('We must save every drop of water')."
-          },
-          {
-            "title": "Negative Contractions",
-            "details": "Contractions: shouldn't (should not), can't (cannot), won't (will not), haven't (have not)."
-          },
-          {
-            "title": "Imperative Slogans & Action Prompts",
-            "details": "Slogan writing rules: 'Turn off running taps!', 'Harvest every monsoon drop!', 'Fix leaky pipes!'."
+            "sub_title": "Composting & Waste Optimization Math",
+            "key_nodes": [
+              "Organic Waste Conversion Ratios: Dung to organic fertilizer mass reduction",
+              "Compost Pit Surface Area: Calculating pit dimensions using grid area formulas",
+              "Environmental Cost Savings: Savings = Commercial Fertilizer Cost - Organic Compost Cost"
+            ],
+            "misconception_alert": "Assuming waste mass remains constant during organic decomposition.",
+            "formula_or_rule": "Net Cost Benefit = Fertilizer Purchase Saved - Pit Setup Cost.",
+            "real_world_application": "Sustainable farming eco-audits and waste-to-wealth cooperative projects."
           }
         ]
       }
     ]
   },
   "image_asset": {
-    "asset_id": "IMG_CH06",
-    "filename": "ch06_rooftop_tanka_harvesting.png",
-    "asset_url": "/assets/images/ch06_rooftop_tanka_harvesting.png",
-    "title": "Rooftop Rainwater & Underground Tanka Blueprint (What a Tank!)",
+    "chapter_number": 6,
+    "image_id": "ch06_partial_products",
+    "file_name": "ch06_partial_products.png",
+    "local_url": "/assets/images/ch06_partial_products.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 2400,
-      "height": 1350
-    },
-    "alt_text": "Architectural schematic showing rooftop catchment pipes, sand filters, and underground storage vaults.",
+    "title": "2x2 Partial Product Grid Area Model",
+    "description": "Distributive property 2x2 partial product grid decomposing multi-digit multiplication.",
     "hotspots": [
       {
-        "id": "hs_06_roof",
-        "label": "Sloped Roof Catchment",
-        "x_percent": 25.0,
-        "y_percent": 20.0,
-        "w_percent": 20.0,
-        "h_percent": 15.0,
-        "tooltip": "Clean roof surface collecting summer monsoon rainwater"
+        "label": "Cell 1: Tens x Tens",
+        "x_percent": 30.0,
+        "y_percent": 35.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
       },
       {
-        "id": "hs_06_filter",
-        "label": "Gravel-Sand Filter",
-        "x_percent": 50.0,
-        "y_percent": 45.0,
-        "w_percent": 12.0,
-        "h_percent": 15.0,
-        "tooltip": "Natural filtration layer trapping silt and debris"
+        "label": "Cell 2: Tens x Ones",
+        "x_percent": 60.0,
+        "y_percent": 35.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
       },
       {
-        "id": "hs_06_tanka",
-        "label": "Underground Tanka",
-        "x_percent": 75.0,
-        "y_percent": 75.0,
-        "w_percent": 18.0,
-        "h_percent": 18.0,
-        "tooltip": "Covered lime-lined cistern preserving water cool and fresh"
+        "label": "Cell 3: Ones x Tens",
+        "x_percent": 30.0,
+        "y_percent": 60.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
       },
       {
-        "id": "hs_06_sculpture",
-        "label": "Sculptural Rooftop Tanks",
-        "x_percent": 85.0,
-        "y_percent": 25.0,
-        "w_percent": 12.0,
-        "h_percent": 15.0,
-        "tooltip": "Punjabi rooftop water tanks shaped like tractors & airplanes"
+        "label": "Cell 4: Ones x Ones",
+        "x_percent": 60.0,
+        "y_percent": 60.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
       }
     ]
   }

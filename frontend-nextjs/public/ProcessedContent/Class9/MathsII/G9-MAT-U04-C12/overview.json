@@ -1,60 +1,63 @@
 {
   "chapter_number": 12,
-  "chapter_title": "Quadrilaterals",
-  "core_summary": "Investigates the geometry of plane quadrilaterals, establishing classification rules, parallelogram theorems, and midpoint relationships. Covers convex vs. non-convex shapes, proves properties regarding opposite sides, angles, and diagonal bisection, and details the Midpoint Theorem for triangles. Features Varignon's Theorem—proving that connecting midpoints of any quadrilateral forms a parallelogram—and demonstrates universal 2D plane tessellation with arbitrary quadrilaterals.",
+  "chapter_title": "Patterns in Life: Diversity and Classification",
+  "core_summary": "Examines Earth's vast biological diversity and the scientific necessity of systematic taxonomy. Discusses classification criteria based on cellular organization (prokaryotic vs. eukaryotic), organism complexity (unicellular vs. multicellular), body symmetry, mode of nutrition, and evolutionary relationships (phylogenetics). Details the hierarchical taxonomic structure (Kingdom, Phylum/Division, Class, Order, Family, Genus, Species) and Linnaeus's binomial nomenclature system. Highlights practical applications in agriculture, medicine, conservation, and ecosystem sustainability.",
   "key_concepts": [
-    "Planar Classification of 4-Gons (distinguishing convex, non-convex, and self-intersecting quadrilaterals)",
-    "Parallelogram Theorem Equivalence (opposite sides equal <-> opposite angles equal <-> diagonals bisect each other)",
-    "Special Parallelograms (rectangles with equal diagonals, rhombuses with perpendicular diagonals, squares with both)",
-    "Midpoint Theorem for Triangles (segment joining side midpoints is parallel to third side and half its length)",
-    "Centroid Section Ratio (medians concur at centroid G, dividing each median in a 2:1 ratio)",
-    "Varignon's Theorem (midpoints of ANY quadrilateral form a parallelogram)",
-    "Varignon Shape Invariants (rectangle midpoints form a rhombus; rhombus midpoints form a rectangle)",
-    "Universal Plane Tessellation (any arbitrary quadrilateral tiles a 2D plane without gaps due to 360-degree corner sums)",
-    "Midpoint Rotation Tiling (rotating a quadrilateral 180 degrees around side midpoints creates seamless grid patterns)"
+    "Biodiversity & Systematic Taxonomy Need",
+    "Taxonomic Hierarchy & Criteria for Grouping",
+    "Binomial Nomenclature Standard",
+    "Phylogenetic Ancestry & Evolutionary Mapping"
   ],
   "key_terms": [
     {
-      "term": "Quadrilateral",
-      "definition": "A four-sided polygon lying in a single plane."
+      "term": "Biodiversity",
+      "definition": "The total variety and variability of living organisms existing across genetic, species, and ecosystem levels."
     },
     {
-      "term": "Convex Quadrilateral",
-      "definition": "A quadrilateral where all interior angles are less than 180 degrees and diagonals intersect inside."
+      "term": "Classification",
+      "definition": "The scientific arrangement of organisms into hierarchical categories based on structural, functional, and evolutionary traits."
     },
     {
-      "term": "Parallelogram",
-      "definition": "A quadrilateral with both pairs of opposite sides parallel."
+      "term": "Taxonomy",
+      "definition": "The science dealing with the identification, nomenclature, and classification of living organisms."
     },
     {
-      "term": "Midpoint Theorem",
-      "definition": "Theorem stating that the segment connecting midpoints of two triangle sides is parallel to the third side and half its length."
+      "term": "Binomial Nomenclature",
+      "definition": "The standardized formal system of naming species using two Latinized names: the genus and the specific epithet."
     },
     {
-      "term": "Centroid (G)",
-      "definition": "The intersection point of a triangle's three medians, dividing each in a 2:1 ratio."
-    },
-    {
-      "term": "Varignon Parallelogram",
-      "definition": "The parallelogram formed by connecting adjacent side midpoints of any quadrilateral."
-    },
-    {
-      "term": "Tessellation",
-      "definition": "A tiling pattern covering a 2D plane using geometric shapes with no gaps or overlaps."
-    },
-    {
-      "term": "Rhombus",
-      "definition": "A parallelogram with four equal side lengths and perpendicular diagonals."
-    },
-    {
-      "term": "Rectangle",
-      "definition": "A parallelogram with four right angles and equal diagonal lengths."
+      "term": "Phylogeny",
+      "definition": "The evolutionary lineage and ancestral relationship history connecting various species over geological time."
     }
   ],
   "key_takeaways": [
-    "Midpoint segment of a triangle DE = 1/2 BC and DE || BC.",
-    "The centroid divides every triangle median in a 2:1 ratio from vertex to opposite side.",
-    "Connecting the midpoints of ANY quadrilateral always yields a parallelogram (Varignon's Theorem).",
-    "Every single quadrilateral can tile a flat surface seamlessly because its four internal angles sum to exactly 360 degrees."
-  ]
+    "Classification organizes biological diversity into structured frameworks reflecting evolutionary relationships.",
+    "Binomial nomenclature provides a universally recognized standard name for every documented species.",
+    "Taxonomic systems assist in biodiversity conservation, crop breeding strategies, and disease carrier identification."
+  ],
+  "image_asset": {
+    "asset_id": "IMG-CH12-01",
+    "title": "Five Kingdoms & Taxonomic Hierarchy",
+    "url": "/assets/images/ch12_biodiversity_taxonomy.png",
+    "hotspots": [
+      {
+        "hotspot_id": "HS-12-01",
+        "label": "Five Kingdoms",
+        "x_percent": 25,
+        "y_percent": 50,
+        "w_percent": 25,
+        "h_percent": 30,
+        "description": "Monera, Protista, Fungi, Plantae, Animalia."
+      },
+      {
+        "hotspot_id": "HS-12-02",
+        "label": "Binomial Nomenclature",
+        "x_percent": 75,
+        "y_percent": 50,
+        "w_percent": 25,
+        "h_percent": 30,
+        "description": "Two-part scientific naming: Genus species."
+      }
+    ]
+  }
 }

@@ -1,54 +1,137 @@
-{
-  "chapter_number": 3,
-  "chapter_title": "Number Play",
-  "flashcards": [
-    {
-      "card_id": 1,
-      "level": "Formula/Definition",
-      "front_question": "What is a Palindromic Number and how is it defined?",
-      "back_answer": "DEFINITION: A number that reads identically forwards and backwards (e.g., 121, 5775, 8448).\nPROPERTY: Reversing its digits yields the exact same numerical value.\nMEMORY TRIGGER: 'Forward = Backward = Palindrome!'\nCONTEXTUAL EXAMPLE: Vehicle registration number 4884 or odometer reading 12321.\nVISUAL GRAPHIC: Number 5775 with reciprocal mirror arrows showing equal digit pairs."
-    },
-    {
-      "card_id": 2,
-      "level": "Method-Rule",
-      "front_question": "What is the step-by-step Reverse-and-Add Palindrome Algorithm?",
-      "back_answer": "ALGORITHM STEPS:\n1. Choose any positive integer (e.g., 48).\n2. Reverse its digits (48 -> 84).\n3. Add original and reversed numbers (48 + 84 = 132).\n4. If sum is palindromic, STOP. Otherwise, repeat steps 2-3 on the sum (132 + 231 = 363 -> Palindrome!).\nMEMORY TRIGGER: 'Reverse, Add, Check, Repeat!'\nCONTEXTUAL EXAMPLE: 48 becomes palindrome 363 in 2 steps; 57 becomes 363 in 2 steps.\nVISUAL GRAPHIC: Flowchart: Start 48 -> Reverse 84 -> Sum 132 -> Reverse 231 -> Sum 363 (Stop)."
-    },
-    {
-      "card_id": 3,
-      "level": "Method-Rule",
-      "front_question": "What is the transformation rule for generating terms in the Collatz Sequence?",
-      "back_answer": "COLLATZ RULE: Start with any positive integer n.\n- If n is EVEN: Divide by 2 -> n / 2\n- If n is ODD: Multiply by 3 and add 1 -> 3n + 1\nCONJECTURE: Repeating this rule always eventually terminates at 1.\nMEMORY TRIGGER: 'Even -> Half; Odd -> Triple plus One!'\nCONTEXTUAL EXAMPLE: Starting at 5: 5 -> 16 -> 8 -> 4 -> 2 -> 1 (5 steps).\nVISUAL GRAPHIC: Directed graph showing number trajectory bouncing up on odd numbers and dropping on evens."
-    },
-    {
-      "card_id": 4,
-      "level": "Direct Calculation",
-      "front_question": "How many times does the digit '7' appear in all integers from 1 to 100?",
-      "back_answer": "CALCULATION: 20 times!\n- Units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 (10 times)\n- Tens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 (10 times)\nTOTAL: 10 + 10 = 20 (Note: '77' contributes 2 occurrences).\nMEMORY TRIGGER: '10 in units + 10 in tens = 20 times!'\nCONTEXTUAL EXAMPLE: Counting physical lead numbers needed to print page numbers 1 to 100.\nVISUAL GRAPHIC: 100-grid highlighting the 19 numbers containing digit 7, with 77 highlighted double."
-    },
-    {
-      "card_id": 5,
-      "level": "Formula/Definition",
-      "front_question": "What is the formula for the total count of N-digit numbers in place value arithmetic?",
-      "back_answer": "FORMULA: Count of N-digit numbers = 9 x 10^(N-1).\nEXPLANATION:\n- 1-digit numbers (1-9): 9 x 10^0 = 9\n- 2-digit numbers (10-99): 9 x 10^1 = 90\n- 3-digit numbers (100-999): 9 x 10^2 = 900\nMEMORY TRIGGER: '9 followed by (N-1) zeroes!'\nCONTEXTUAL EXAMPLE: Total possible 3-digit combination lock codes from 100 to 999 = 900.\nVISUAL GRAPHIC: Number line blocks showing 9 single-digit, 90 two-digit, and 900 three-digit numbers."
-    },
-    {
-      "card_id": 6,
-      "level": "Application",
-      "front_question": "What is the winning strategy for Player 1 in the Nim Game of 21?",
-      "back_answer": "STRATEGY: Claim control numbers that leave multiples of 4 remaining.\nCONTROL NUMBERS: 1, 5, 9, 13, 17, and 21.\nRULE: Player 1 starts by saying 1. Whenever Player 2 adds x (1, 2, or 3), Player 1 adds (4 - x) to reach the next control number.\nMEMORY TRIGGER: 'Control numbers step by 4: 1, 5, 9, 13, 17, 21!'\nCONTEXTUAL EXAMPLE: Mathematical game theory strategy guaranteeing victory.\nVISUAL GRAPHIC: Stepping stone ladder showing highlighted safe control rungs at 1, 5, 9, 13, 17, 21."
-    },
-    {
-      "card_id": 7,
-      "level": "Direct Calculation",
-      "front_question": "Trace the Collatz sequence starting at n = 6.",
-      "back_answer": "TRAJECTORY: 6 (even) -> 3 -> 10 (odd: 3x3+1) -> 5 -> 16 -> 8 -> 4 -> 2 -> 1.\nSTEPS: Takes 8 steps to reach 1.\nMEMORY TRIGGER: '6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1'.\nCONTEXTUAL EXAMPLE: Testing Collatz conjecture step lengths for even starting values.\nVISUAL GRAPHIC: Number sequence chain showing 6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1."
-    },
-    {
-      "card_id": 8,
-      "level": "Method-Rule",
-      "front_question": "What is Kaprekar's Routine for 2-digit numbers?",
-      "back_answer": "ROUTINE STEPS:\n1. Pick a 2-digit number with distinct digits (e.g. 37).\n2. Arrange digits descending (73) and ascending (37).\n3. Subtract smaller from larger: 73 - 37 = 36.\n4. Repeat on result (63 - 36 = 27; 72 - 27 = 45; 54 - 45 = 09; 90 - 09 = 81; 81 - 18 = 63...).\nRESULT: Always enters a digital difference loop containing the magic number 9.\nMEMORY TRIGGER: 'Descending minus Ascending leads to 9!'\nCONTEXTUAL EXAMPLE: Discovery by Indian mathematician D.R. Kaprekar.\nVISUAL GRAPHIC: Cyclic number wheel showing 2-digit differences looping through 9."
-    }
-  ]
-}
+[
+  {
+    "card_id": 1,
+    "level": "Basic Recall",
+    "front_question": "What are the major nutrient classes required by the human body?",
+    "back_answer": "1. Carbohydrates (Quick energy)\n2. Fats (Stored energy & insulation)\n3. Proteins (Growth & body building)\n4. Vitamins (Protection against disease)\n5. Minerals (Bone/blood health)\n6. Dietary Fiber/Roughage (Gut health)\n7. Water (Metabolic transport).\n\n• Memory Trigger / Icon: 🥗 [Balanced Plate with 7 Sections]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 2,
+    "level": "Conceptual",
+    "front_question": "Explain the ancient Indian dietary maxim 'Hitabhuk, Ritabhuk, Mitabhuk'.",
+    "back_answer": "• Hitabhuk: Eat wholesome, beneficial food.\n• Ritabhuk: Eat seasonal, locally grown food.\n• Mitabhuk: Eat in measured moderation.\n\n• Cultural Source: Ayurveda & Traditional Indian Health Wisdom.\n• Memory Trigger / Icon: 📜 [Sanskrit Health Scroll]\n• Example: Eating fresh melons in summer and warm millets in winter.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 3,
+    "level": "Experimental",
+    "front_question": "What nutritional differences are revealed when comparing potato wafers with roasted chana?",
+    "back_answer": "Potato wafers (junk food) contain excess saturated fats, high sodium, and empty calories with zero fiber. Roasted chana (wholesome food) provides rich proteins, complex carbs, dietary fiber, iron, and minerals.\n\n• Concept Pair: Junk Food (Empty calories) ↔ Wholesome Food (Nutrient-dense).\n• Memory Trigger / Icon: 🍟 [Chip Bag crossed out] vs 🧆 [Bowl of Roasted Chana]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 4,
+    "level": "Basic Recall",
+    "front_question": "Name four native Indian millets highlighted as climate-resilient superfoods.",
+    "back_answer": "1. Jowar (Sorghum)\n2. Bajra (Pearl Millet)\n3. Ragi (Finger Millet)\n4. Sanwa (Barnyard Millet).\n\n• Special Feature: High calcium, iron, protein, and dietary fiber; drought-resistant.\n• Memory Trigger / Icon: 🌾 [Golden Millet Grains]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 5,
+    "level": "Application",
+    "front_question": "Why is dietary fiber (roughage) essential in our daily diet even though it yields no direct calories?",
+    "back_answer": "Roughage adds bulk to digested food, promotes smooth peristaltic intestinal motility, prevents constipation, and feeds healthy gut bacteria.\n\n• Sources: Whole grains, pulses, green leafy vegetables, apples, carrots.\n• Memory Trigger / Icon: 🥦 [High-Fiber Leafy Greens]\n• Example: Eating unpeeled apples and whole wheat rotis.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 6,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Nutrients' and 'Balanced Diet'.",
+    "back_answer": "• Nutrients: Chemical components in food required by the body for energy, growth, repair, and protection.\n• Balanced Diet: A meal containing all essential nutrients in correct proportions along with roughage and water.\n\n• Memory Trigger / Icon: ⚖️ [Balanced Meal Scale]\n• Example: A plate with millet roti, dal, spinach curry, curd, and salad.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 7,
+    "level": "Scientific Reasoning",
+    "front_question": "Why do growing children require a higher proportion of proteins in their diet compared to inactive adults?",
+    "back_answer": "Proteins provide amino acid building blocks necessary for rapid cellular division, muscle tissue formation, bone elongation, and organ development in growing bodies.\n\n• Memory Trigger / Icon: 🏋️‍♂️ [Growing Child & Milk/Pulses]\n• Sources: Milk, paneer, eggs, sprouts, soybeans, pulses.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 8,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Junk Food' and explain why its frequent consumption is harmful.",
+    "back_answer": "Ultra-processed food items high in sugar, unhealthy fats, and sodium but lacking essential proteins, vitamins, and fiber.\n\n• Harm: Leads to obesity, early tooth decay, fatigue, and digestive disorders.\n• Memory Trigger / Icon: 🥤🍔 [Soda & Burger with Warning Sign]\n• Example: Carbonated soft drinks, instant noodles, packaged chips.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 9,
+    "level": "Application",
+    "front_question": "How does sprouting seeds enhance their nutritional value?",
+    "back_answer": "Sprouting increases the bioavailability of Vitamin C, B-complex vitamins, and digestible proteins while breaking down anti-nutrients.\n\n• Procedure: Soak dry chana/moong in water overnight, drain, wrap in moist cloth for 24 hrs.\n• Memory Trigger / Icon: 🌱 [Sprouted Moong Seed]\n• Example: Eating sprouted moong salad with lemon juice for breakfast.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 10,
+    "level": "Basic Recall",
+    "front_question": "What is the function of Vitamin C in the body and name two rich natural sources.",
+    "back_answer": "Function: Helps fight infections, maintains healthy gums, skin, and blood vessels, and aids iron absorption.\n\n• Rich Sources: Amla (Indian Gooseberry), Lemon, Oranges, Guava.\n• Memory Trigger / Icon: 🍋 [Citrus Lemon & Green Amla]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 11,
+    "level": "Experimental",
+    "front_question": "How can food packaging nutrition labels be analyzed to make healthy choices?",
+    "back_answer": "Check 'Serving Size', compare 'Saturated Fat', 'Added Sodium/Sugar', and verify high 'Dietary Fiber' and 'Protein' per 100g.\n\n• Memory Trigger / Icon: 🏷️ [Nutrition Facts Label Inspection]\n• Rule: Avoid items where sugar or hydrogenated oil is listed as top ingredients.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 12,
+    "level": "Conceptual",
+    "front_question": "Why is water considered an indispensable component of a balanced diet?",
+    "back_answer": "Water dissolves nutrients for cellular absorption, transports blood and metabolic waste, produces digestive juices, and regulates body temperature through sweat.\n\n• Daily Requirement: 2 to 3 Liters for school children.\n• Memory Trigger / Icon: 💧 [Glass of Pure Water]\n• Example: Staying hydrated during sports to prevent heat cramps.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 13,
+    "level": "Vocabulary / Definition",
+    "front_question": "Define 'Deficiency Disease' with an example.",
+    "back_answer": "A health disorder caused by the prolonged lack of a specific essential nutrient (vitamin or mineral) in the daily diet.\n\n• Example: Scurvy (bleeding gums) from Vitamin C deficiency; Anemia from Iron deficiency.\n• Memory Trigger / Icon: 🩺 [Medical Stethoscope & Vitamin Pill]",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 14,
+    "level": "Scientific Reasoning",
+    "front_question": "Why are millets environmentally superior crops compared to water-intensive rice and wheat?",
+    "back_answer": "Millets require minimal irrigation (drought-tolerant), grow in poor infertile soils without heavy synthetic fertilizers, and withstand climate change heat.\n\n• Memory Trigger / Icon: ☀️🌾 [Sunlight over Drought-Resilient Crop]\n• Ecological Value: Conserves groundwater aquifers.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  },
+  {
+    "card_id": 15,
+    "level": "Basic Recall",
+    "front_question": "What is the Mid Day Meal Programme and how does it support child health in schools?",
+    "back_answer": "A flagship government initiative providing free balanced hot cooked lunches to school children, ensuring adequate daily proteins, calories, and micronutrients.\n\n• Memory Trigger / Icon: 🍱 [School Lunch Thali]\n• Goal: Combating malnutrition and boosting school attendance.",
+    "phonetic_guide": "[Phonetic Guide: Standard Academic Pronunciation]",
+    "graphic_description": "3D visual illustration showing scientific apparatus/phenomenon.",
+    "mnemonic_trigger": "Memory Key: Connect observation to principle."
+  }
+]

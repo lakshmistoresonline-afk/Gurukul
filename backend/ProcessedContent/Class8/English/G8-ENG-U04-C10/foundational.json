@@ -1,107 +1,102 @@
 {
   "chapter_number": 10,
-  "chapter_title": "The Cherry Tree",
-  "drag_and_drop_unscramblers": [
+  "chapter_title": "Light: Mirrors and Lenses",
+  "skill_drills": [
     {
-      "drill_id": "scramble_ch10",
-      "scrambled_tokens": [
-        "Tenali",
-        "outwitted",
-        "Rama",
-        "scholar",
-        "the",
-        "proud"
+      "drill_type": "drag_and_drop_unscrambler",
+      "title": "Scientific Method Sequence Unscrambler - Ch 10",
+      "scrambled_tile_sets": [
+        {
+          "id": "t3",
+          "text": "Formulate Testable Hypothesis"
+        },
+        {
+          "id": "t1",
+          "text": "Observe Natural Phenomenon"
+        },
+        {
+          "id": "t5",
+          "text": "Draw Evidence-Based Conclusion"
+        },
+        {
+          "id": "t2",
+          "text": "Ask Investigative Question"
+        },
+        {
+          "id": "t4",
+          "text": "Conduct Controlled Experiment"
+        }
       ],
-      "target_sentence": "Tenali Rama outwitted the proud scholar.",
-      "grammar_rule_hint": "Subject + Verb + Object word order."
-    }
-  ],
-  "multi_bin_sorting_matrices": [
+      "correct_sequence_ids": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ]
+    },
     {
-      "matrix_id": "sort_ch10",
+      "drill_type": "multi_bin_sorting_matrix",
+      "title": "Concept Categorization Matrix - Ch 10",
       "bins": [
-        "Nouns",
-        "Verbs",
-        "Adjectives"
+        "Category A",
+        "Category B",
+        "Category C"
       ],
-      "draggable_items": [
+      "items": [
         {
-          "item": "courtier",
-          "correct_bin": "Nouns"
+          "text": "Component 1 of Light: Mirrors and Lenses",
+          "bin": "Category A"
         },
         {
-          "item": "scrutinise",
-          "correct_bin": "Verbs"
+          "text": "Component 2 of Light: Mirrors and Lenses",
+          "bin": "Category B"
         },
         {
-          "item": "arrogant",
-          "correct_bin": "Adjectives"
+          "text": "Component 3 of Light: Mirrors and Lenses",
+          "bin": "Category C"
         }
       ]
-    }
-  ],
-  "editing_checkers": [
+    },
     {
-      "checker_id": "edit_ch10",
-      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
-      "identified_errors": [
-        "cleverer -> clever / most clever"
-      ],
-      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
-      "rule_applied": "Superlative degree comparison requires 'the most'."
+      "drill_type": "editing_checker",
+      "title": "Misconception Corrector - Ch 10",
+      "erroneous_statement": "Common student misconception regarding Light: Mirrors and Lenses.",
+      "corrected_statement": "Scientifically verified fact correcting the misconception in Light: Mirrors and Lenses."
     }
   ],
   "image_asset": {
-    "asset_id": "img_ch10_cherry",
-    "title": "Growth Resilience Lifecycle of Rakesh's Cherry Tree",
-    "local_url": "/assets/images/ch10_cherry_tree_lifecycle.png",
+    "asset_id": "ch10_media_01",
+    "chapter_number": 10,
+    "chapter_title": "Light: Mirrors and Lenses",
+    "title": "Laws of Reflection & Convex Lens Light Refraction",
+    "url": "/assets/images/ch10_light_mirrors_lenses.png",
+    "format": "PNG",
     "aspect_ratio": "16:9",
-    "description": "Chronological stages of survival and growth from seed to blossoming tree in Mussoorie",
+    "tags": [
+      "Light",
+      "Reflection",
+      "Mirrors",
+      "Lenses"
+    ],
     "hotspots": [
       {
-        "hotspot_id": "hs_10_1",
-        "label": "Planted Seed",
-        "x_percent": 12.0,
-        "y_percent": 50.0,
-        "w_percent": 14.0,
-        "h_percent": 14.0,
-        "annotation": "Rakesh pressing seed into soft garden soil"
+        "hotspot_id": "hs_ch10_01",
+        "title": "Component A: Light Setup",
+        "x_percent": 8.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Detailed visual representation of Light and Reflection."
       },
       {
-        "hotspot_id": "hs_10_2",
-        "label": "Goat Damage",
-        "x_percent": 31.0,
-        "y_percent": 50.0,
-        "w_percent": 14.0,
-        "h_percent": 14.0,
-        "annotation": "Browsed by stray goat in early spring"
-      },
-      {
-        "hotspot_id": "hs_10_3",
-        "label": "Scythe Cut",
-        "x_percent": 50.0,
-        "y_percent": 50.0,
-        "w_percent": 14.0,
-        "h_percent": 14.0,
-        "annotation": "Cut in two by grass-cutter's blade"
-      },
-      {
-        "hotspot_id": "hs_10_4",
-        "label": "Himalayan Frost",
-        "x_percent": 69.0,
-        "y_percent": 50.0,
-        "w_percent": 14.0,
-        "h_percent": 14.0,
-        "annotation": "Winter frost dormancy in Mussoorie"
-      },
-      {
-        "hotspot_id": "hs_10_5",
-        "label": "Pink Blossoms",
-        "x_percent": 88.0,
-        "y_percent": 50.0,
-        "w_percent": 14.0,
-        "h_percent": 14.0,
-        "annotation": "Blossoming tree bringing awe to Rakesh"
+        "hotspot_id": "hs_ch10_02",
+        "title": "Component B: Mirrors Mechanics",
+        "x_percent": 54.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Experimental phenomenon illustrating Mirrors and Lenses."
       }
     ]
   }

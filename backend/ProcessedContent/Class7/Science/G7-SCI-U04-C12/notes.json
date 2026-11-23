@@ -1,162 +1,203 @@
 {
   "chapter_number": 12,
-  "chapter_title": "Earth, Moon, and the Sun",
-  "zero_omission_notes": {
-    "summary": "The Earth, Moon, and Sun form an interconnected celestial system governing day/night cycles, seasons, lunar phases, and eclipses. Earth rotates on its 23.5-degree tilted axis every 24 hours (causing day and night) and revolves around the Sun in an elliptical orbit every 365.25 days (causing seasons). The Moon orbits Earth every 29.5 days, displaying changing lunar phases from New Moon (Amavasya) to Full Moon (Purnima). Eclipses occur during exact linear alignments: Solar Eclipse on New Moon (Moon between Sun and Earth); Lunar Eclipse on Full Moon (Earth between Sun and Moon). Indian observatories like IIA and ARIES contribute astronomical data.",
+  "chapter_title": "Understanding Markets",
+  "m1_zero_omission_notes": {
+    "summary": "This chapter provides a detailed study of markets, price determination, supply chains, and consumer protection. A market is defined as any arrangement where buyers and sellers transact goods/services at an agreed price (e.g., physical markets like weekly haats, neighborhood shops, malls, mandis vs. online e-commerce aggregators). Prices are determined by the interaction of Demand (buyer willingness/ability to purchase) and Supply (seller availability of goods). The chapter traces the chain of markets using the Surat Textile hub case study (Producers -> Wholesalers in Mandis/Warehouses -> Distributors -> Retailers -> End Consumers). It examines government interventions (setting Maximum Retail Price - MRP on life-saving drugs, Minimum Support Price - MSP for farmers, minimum wages, public goods), and teaches consumers how to verify product quality using certification labels (ISI, AGMARK, FSSAI, BEE Star ratings).",
     "detailed_sections": [
       {
-        "section_number_and_title": "12.1 Celestial Motions and Eclipses",
-        "full_notes": "Anti-clockwise Earth rotation causes Sun to appear rising in East and setting in West. Earth's axial tilt (23.5 deg) combined with revolution creates summer and winter solstices. Eclipses occur when umbra/penumbra shadow cones fall on celestial bodies.",
-        "margin_notes_and_sidebars": [
+        "section": "12.1 Definition, Price Determination & Market Types",
+        "full_notes": "A market brings buyers and sellers together. Price is the mutually agreed amount. Price mechanics: High price -> low demand/surplus; Low price -> high demand/shortage; Equilibrium price satisfies both. Market types: Physical (haats, shops, malls), Online (e-commerce apps/aggregators), Domestic (within country), International (imports/exports), Wholesale, and Retail.",
+        "margin_notes": [
           {
-            "type": "Observatory Note",
-            "title": "Indian Astronomical Observatories",
-            "content": "Indian Institute of Astrophysics (IIA Bengaluru) and Aryabhatta Research Institute of Observational Sciences (ARIES Nainital) track solar, lunar, and deep-space celestial events."
+            "type": "Epigraph Quote",
+            "title": "Adam Smith (18th Century Economist)",
+            "content": "Prosperity emanates from the market that develops when people need goods and services they can't create themselves."
+          }
+        ]
+      },
+      {
+        "section": "12.2 Supply Chain: Surat Textile Hub Case Study",
+        "full_notes": "Surat is Asia's oldest textile hub and diamond polishing center (1.5M artisans). Physical supply chain: Raw Cotton Farmers -> Mills/Producers -> Wholesalers & Cold Storage/Warehouses -> Distributors -> Retailers -> Consumers. Online supply chain: Manufacturers -> E-commerce Aggregator Warehouses -> Doorstep Delivery.",
+        "margin_notes": [
+          {
+            "type": "Margin Definition",
+            "title": "Aggregator & Wholesaler",
+            "content": "Aggregator combines offers from multiple sellers on an app. Wholesalers buy bulk quantities from manufacturers."
+          }
+        ]
+      },
+      {
+        "section": "12.3 Government Role & Quality Certification Standards",
+        "full_notes": "Government intervenes to prevent exploitation: 1. Ceiling Prices (MRP on essential medicines). 2. Floor Prices (MSP for agricultural crops). 3. Environmental Regulations (banning single-use plastics). 4. Provision of Public Goods (parks, roads). Quality assessment: Checking packaging details (Net weight, MRP, Expiry/Mfg date, FSSAI lic, BEE Star ratings, ISI mark).",
+        "margin_notes": [
+          {
+            "type": "Historical Precedent",
+            "title": "Kautilya's Manasrava Rule",
+            "content": "Arthashastra required ghee sellers to add 1/50th extra quantity (manasrava) to compensate for ghee sticking to measuring cans."
           }
         ]
       }
+    ],
+    "mastery_edge_cases": [
+      "Market equilibrium price shifts under sudden supply shock gluts vs demand spikes."
     ]
   },
-  "practical_lab_activity_or_methodology_manual": [
+  "m2_key_terms_formulas_and_rules": [
     {
-      "activity_or_method_id": "Activity 12.2",
-      "aim_or_objective": "To model solar and lunar eclipse shadow geometries using a torch and spheres.",
-      "materials_or_prerequisites": [
-        "Torch (Sun)",
-        "Large globe/ball (Earth)",
-        "Small tennis ball (Moon)",
-        "Darkened room"
-      ],
-      "procedure_or_steps": [
-        "Align torch light, small ball, and large globe in a straight line in a dark room.",
-        "Observe shadow of small ball falling on large globe (Solar Eclipse simulation).",
-        "Re-position large globe between torch and small ball to observe globe shadow covering small ball (Lunar Eclipse simulation)."
-      ],
-      "observations_or_results": "In position 1, small ball blocks light, casting a shadow on globe. In position 2, large globe blocks light, submerging small ball in darkness.",
-      "conclusion_or_principle": "Eclipses are natural shadow formations resulting from linear alignment of Sun, Earth, and Moon."
+      "term_or_rule": "Demand and Supply Rule",
+      "definition_or_expression": "Price is determined at the equilibrium point where the quantity demanded by buyers matches the quantity supplied by sellers.",
+      "example_or_unit": "Guava price settling at ₹40/kg"
+    },
+    {
+      "term_or_rule": "Minimum Support Price (MSP) & MRP",
+      "definition_or_expression": "MSP = Minimum guaranteed price set by govt to protect farmers. MRP = Maximum Retail Price legally chargeable to consumers.",
+      "example_or_unit": "Govt MSP for wheat; MRP printed on food packets"
+    },
+    {
+      "term_or_rule": "Quality Certification Marks",
+      "definition_or_expression": "Standardization logos issued by government agencies verifying safety, quality, and energy efficiency.",
+      "example_or_unit": "FSSAI (Food), ISI (Industrial), AGMARK (Agricultural), BEE Star (Energy)"
     }
   ],
-  "visuals_diagrams_and_tabular_data": {
-    "diagrams_figures_and_maps": [
+  "m3_practical_activities_and_procedures": [
+    {
+      "activity_title": "Food Package Label Audit",
+      "aim": "To inspect commercial food packaging for mandatory consumer safety and quality information.",
+      "materials": [
+        "1 kg packet of Gram Flour (Besan) or packaged snack"
+      ],
+      "procedure": [
+        "Locate and verify mandatory fields: Net Quantity, Mfg Date, Best Before/Expiry Date, MRP.",
+        "Check for FSSAI License Number, Allergen Declaration, Ingredients list, Nutrition Facts panel.",
+        "Inspect for presence of government certification logos."
+      ],
+      "observation_and_conclusion": "Mandatory packaging labels protect consumers from adulteration, short-weighting, and expired goods."
+    }
+  ],
+  "m4_diagrams_and_tables": {
+    "diagrams": [
       {
-        "figure_id_and_title": "Fig. 12.4 / Solar and Lunar Eclipse Alignments",
-        "labels_and_components": [
-          "Sun",
-          "Moon in Middle (Solar Eclipse)",
-          "Earth in Middle (Lunar Eclipse)",
-          "Umbra Shadow Cone",
-          "Penumbra Shadow Cone"
+        "figure_title": "Fig 12.11 Movement of Physical Goods in Markets",
+        "labels": [
+          "Producers/Manufacturers",
+          "Wholesalers & Warehouses",
+          "Distributors",
+          "Retailers",
+          "Final Consumers"
         ],
-        "drawing_or_reading_instructions": "Draw linear celestial alignments showing light rays forming dark umbra shadow cones.",
-        "structural_or_conceptual_explanation": "Illustrates relative orbital positions required for eclipse shadow formation."
+        "instructions": "Trace the step-by-step flow of finished products through intermediate market participants.",
+        "structural_details": "Flowchart showing physical good transfer alongside monetary return flow."
       }
     ],
-    "data_tables_and_comparisons": [
+    "tables": [
       {
-        "table_title": "Table 12.1 / Solar vs Lunar Eclipse Comparison",
+        "title": "Types of Markets and Their Characteristics",
         "headers": [
-          "Feature",
-          "Solar Eclipse",
-          "Lunar Eclipse"
+          "Market Type",
+          "Core Characteristic",
+          "Example"
         ],
         "rows": [
           [
-            "Intermediate Body",
-            "Moon passes between Sun and Earth",
-            "Earth passes between Sun and Moon"
+            "Physical Market",
+            "Requires physical presence of buyers and sellers",
+            "Weekly Haats, Malls, Grocery Stores"
           ],
           [
-            "Lunar Phase Requirement",
-            "Occurs only on New Moon day (Amavasya)",
-            "Occurs only on Full Moon day (Purnima)"
+            "Online Market",
+            "Virtual transaction via apps/websites",
+            "E-commerce aggregators (doorstep delivery)"
           ],
           [
-            "Casting Shadow",
-            "Moon casts shadow onto Earth surface",
-            "Earth casts shadow onto Moon surface"
+            "Wholesale Market",
+            "Deals in bulk quantities for resale",
+            "Grains Mandis, Khari Baoli Spice Market"
           ],
           [
-            "Viewing Zone",
-            "Narrow path of totality on Earth surface",
-            "Entire night-side hemisphere of Earth"
+            "Retail Market",
+            "Sells smaller quantities directly for final consumption",
+            "Neighborhood Kirana store"
+          ],
+          [
+            "International Market",
+            "Goods/services flow across national borders",
+            "Exporting Surat diamonds to Europe"
           ]
         ]
       }
     ]
   },
-  "master_glossary_units_and_formulas": [
-    {
-      "term_or_concept": "Solar Eclipse Alignment",
-      "definition_or_meaning": "Sun --- Moon --- Earth (Moon obstructs solar light).",
-      "si_unit_or_notation": "New Moon Alignment",
-      "example_or_application": "Daytime solar obstruction."
-    },
-    {
-      "term_or_concept": "Lunar Eclipse Alignment",
-      "definition_or_meaning": "Sun --- Earth --- Moon (Earth obstructs light reaching Moon).",
-      "si_unit_or_notation": "Full Moon Alignment",
-      "example_or_application": "Nighttime lunar darkening."
-    }
-  ],
-  "exam_question_bank": {
-    "textbook_exercises": [
+  "m5_textbook_solutions_and_extracts": {
+    "end_exercises": [
       {
-        "q_no": "Q1",
-        "question": "Why do solar and lunar eclipses NOT occur every single New Moon and Full Moon day?",
-        "answer": "The Moon's orbital plane around Earth is tilted at an angle of ~5 degrees relative to Earth's orbital plane around the Sun. Most New and Full Moons pass slightly above or below the Sun-Earth line, avoiding eclipse alignment."
+        "q_no": "Q4",
+        "question": "Match: 1. Physical Market, 2. Online Market, 3. Wholesale Market, 4. International Market.",
+        "answer": "1 - Requires physical presence of buyers & sellers. 2 - Virtual meeting transacting anytime. 3 - Deals in bulk quantities. 4 - Flows outside national boundaries."
+      },
+      {
+        "q_no": "Q6",
+        "question": "A lady bargains at a vegetable cart for beans at ₹25/kg (seller refuses). Later she buys the same beans at a Super Bazaar for ₹40/kg in a plastic bag. Why?",
+        "answer": "Buying decisions involve non-price factors: 1. Convenience, clean air-conditioned environment, and one-stop shopping. 2. Perception of higher quality, grading, and hygienic packaging in super bazaars. 3. Fixed price policies in supermarkets eliminating bargaining hassle."
       }
     ],
-    "objective_questions_1_mark": [
+    "extract_based": [
       {
-        "type": "MCQ",
-        "question": "A Solar Eclipse occurs only on a:",
-        "options": [
-          "A) Full Moon day",
-          "B) New Moon day",
-          "C) First Quarter phase",
-          "D) Crescent phase"
-        ],
-        "answer": "B",
-        "explanation": "On a New Moon day, the Moon is positioned between the Sun and Earth, making solar eclipse alignment possible."
-      }
-    ],
-    "short_answer_questions": [
-      {
-        "marks": 2,
-        "question": "Why do we always see the same side/face of the Moon from Earth?",
-        "answer": "The Moon's rotation period on its own axis exactly equals its orbital revolution period around Earth (~27.3 days), a phenomenon known as tidal locking or synchronous rotation."
-      }
-    ],
-    "analytical_reasoning_questions": [
-      {
-        "marks": 3,
-        "question": "Explain how Earth's anti-clockwise rotation on its axis creates the apparent east-to-west movement of the Sun and stars.",
-        "answer": "Just as a passenger on a clockwise merry-go-round sees surrounding trees spinning anti-clockwise, an observer on Earth rotating from West to East sees celestial bodies (Sun, stars) moving in the opposite direction from East to West."
-      }
-    ],
-    "comprehensive_long_answers": [
-      {
-        "marks": 5,
-        "question": "Explain how Earth's 23.5-degree axial tilt and revolution around the Sun cause summer and winter seasons in Northern and Southern hemispheres.",
-        "answer": "1. Earth's axis is tilted at 23.5 degrees relative to its orbital plane. 2. When the Northern Hemisphere tilts toward the Sun (June Solstice), it receives direct solar rays for longer hours, causing Summer in the North and Winter in the South. 3. Six months later (December Solstice), Northern Hemisphere tilts away from Sun receiving indirect slanted rays, causing Winter in the North and Summer in the South."
-      }
-    ],
-    "competency_and_case_studies": [
-      {
-        "case_scenario": "An astronomer in Delhi observes a Total Solar Eclipse lasting 3 minutes, while an astronomer in Chennai sees only a Partial Solar Eclipse at the same time.",
+        "extract_text": "Ima Keithal (Mother's Market) in Imphal, Manipur is a unique market where about 3000 women own and run all shops...",
         "qa": [
           {
-            "question": "Why did Delhi experience totality while Chennai experienced only a partial eclipse?",
-            "answer": "Delhi was located within the narrow central umbral shadow cone cast by the Moon, blocking 100% of the Sun. Chennai was located in the broader penumbral shadow zone, where only part of the Sun was obstructed."
+            "question": "What is unique about Ima Keithal?",
+            "answer": "It is exclusively owned and operated by over 3,000 women, serving as an economic hub and cultural melting pot."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which government logo indicates energy efficiency in electrical appliances?",
+        "answer": "BEE Star Rating. Reason: Issued by Bureau of Energy Efficiency."
+      }
+    ],
+    "level_2_short_answer_2_3_marks": [
+      {
+        "question": "Why does the government set a Minimum Support Price (MSP) for agricultural crops?",
+        "answer": "During harvest bumper seasons, excessive crop supply can cause market prices to crash drastically. The government sets MSP to guarantee a minimum floor price, purchasing crops directly from farmers to protect them from financial loss."
+      }
+    ],
+    "level_3_long_answer_5_marks": [
+      {
+        "question": "Explain the role of intermediaries (wholesalers, distributors, retailers) in the supply chain of physical markets.",
+        "answer": "1. Manufacturers produce goods in massive bulk but cannot sell single pieces to millions of individuals. 2. Wholesalers buy bulk stocks from factories, storing them in godowns/cold storages and absorbing storage risks. 3. Distributors transport goods across difficult geographies to regional markets. 4. Retailers purchase smaller stocks from wholesalers and stock Kirana shops near residential areas, offering final consumers convenient access, credit, and variety."
+      }
+    ],
+    "level_4_competency_case_study": [
+      {
+        "scenario": "During tomato harvest season in Andhra Pradesh, farmers produce massive surpluses. Prices drop to ₹1/kg, leading farmers to dump tomatoes on highways because transport costs exceed sales revenue.",
+        "qa": [
+          {
+            "question": "Why did the price crash to ₹1/kg?",
+            "answer": "Extreme excess supply relative to local market demand."
+          },
+          {
+            "question": "What measures can prevent such wastage?",
+            "answer": "Establishing food processing units (tomato puree/ketchup factories), expanding cold storage warehouses, and government procurement/inter-state transport distribution."
           }
         ]
       }
     ],
-    "common_misconceptions_and_pitfalls": [
-      {
-        "common_error_or_misconception": "Believing seasons are caused by Earth moving closer to or farther from the Sun.",
-        "correct_fact_or_method": "Seasons are caused by Earth's 23.5-degree axial tilt during revolution, changing angle and duration of sunlight, NOT by distance variation from the Sun."
-      }
+    "mastery_practice_problem": [
+      "Evaluate government price floor (MSP) and ceiling (MRP) interventions during seasonal crop market volatility."
     ]
-  }
+  },
+  "m7_common_pitfalls": [
+    {
+      "common_error": "Assuming price is solely decided by the seller.",
+      "correct_approach": "Prices in free markets are decided mutually by the intersection of buyer demand and seller supply."
+    }
+  ],
+  "real_world_mastery_application": [
+    "Surat international textile and diamond processing value chain from raw yarn to global retail outlets."
+  ]
 }

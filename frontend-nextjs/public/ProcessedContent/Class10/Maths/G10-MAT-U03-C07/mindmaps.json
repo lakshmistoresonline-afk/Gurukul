@@ -1,105 +1,71 @@
 {
   "chapter_number": 7,
-  "chapter_title": "Coordinate Geometry",
+  "chapter_title": "Lifelines of National Economy",
   "mind_map": {
-    "root_topic": "Coordinate Geometry",
+    "root_topic": "Lifelines of National Economy",
     "branches": [
       {
-        "theme": "Distance Formula",
+        "theme": "Transport Infrastructure Networks",
         "sub_branches": [
           {
-            "concept": "Planar Distance Calculation",
+            "concept": "Roadways and Highway Networks",
             "details": [
-              "Distance between P(x1, y1) and Q(x2, y2): d = √[(x2 - x1)^2 + (y2 - y1)^2].",
-              "Distance from origin (0,0) to P(x, y): d = √(x^2 + y^2)."
+              "India has one of the largest road networks globally (approx 5.6 million km).",
+              "Road Network Classification: Golden Quadrilateral Super Highways (Delhi-Kolkata-Chennai-Mumbai), National Highways (NHAI), State Highways (PWD), District Roads, Border Roads (BRO).",
+              "Advantages: Lower construction capital, flexible terrain handling, door-to-door delivery, feeder network to rail and ports."
             ],
             "evidence_or_examples": [
-              "Distance between (2,3) and (4,1): d = √[(4-2)^2 + (1-3)^2] = √8 = 2√2 units.",
-              "Equidistant point on x-axis (x,0) from (2,-5) and (-2,9) => x = -7, point (-7,0)."
+              "North-South Corridor (Srinagar to Kanyakumari) and East-West Corridor (Silchar to Porbandar)."
             ],
             "key_terms": [
-              "Distance Formula",
-              "Cartesian Coordinates",
-              "Origin Distance"
+              "Golden Quadrilateral",
+              "NHAI",
+              "BRO (Border Roads Organisation)",
+              "Feeder Network"
+            ]
+          },
+          {
+            "concept": "Railways, Pipelines, and Waterways",
+            "details": [
+              "Railways: Primary mode for heavy long-distance freight and passenger transit; network affected by terrain (dense in Northern Plains, sparse in Himalayas).",
+              "Pipelines: Modern transport for crude oil, petroleum, and natural gas; zero transit delays/losses (e.g., HVJ pipeline).",
+              "Inland Waterways: National Waterways (NW-1 Ganga between Allahabad and Haldia, NW-2 Brahmaputra between Sadiya and Dhubri).",
+              "Major Seaports: 12 Major and 200 notified non-major ports. Western Coast (Kandla/Deendayal, Mumbai, Marmagao, Mangaluru, Kochi); Eastern Coast (Tuticorin, Chennai, Visakhapatnam, Paradip, Haldia, Kolkata)."
+            ],
+            "evidence_or_examples": [
+              "Deendayal/Kandla tidal port developed post-1947 to relieve Mumbai port; Marmagao handling 50% iron ore exports."
+            ],
+            "key_terms": [
+              "NW-1 / NW-2",
+              "Deendayal Port",
+              "Trans-shipment",
+              "Pipelines"
             ]
           }
         ]
       },
       {
-        "theme": "Section Formula and Midpoint",
+        "theme": "Communication, Trade, and International Tourism",
         "sub_branches": [
           {
-            "concept": "Internal Division and Ratio Finding",
+            "concept": "Mass Media, Digital Networks & Trade Balance",
             "details": [
-              "Point P(x,y) dividing line joining A(x1,y1) and B(x2,y2) internally in ratio m1:m2:",
-              "x = (m1 x2 + m2 x1) / (m1 + m2), y = (m1 y2 + m2 y1) / (m1 + m2).",
-              "Midpoint formula (ratio 1:1): [(x1 + x2)/2, (y1 + y2)/2].",
-              "Trisection points divide a segment in ratios 1:2 and 2:1."
+              "Personal & Mass Communication: Indian Postal Network (First Class mail: cards/envelopes; Second Class mail: book packets/newspapers), Telecom & Digital India, Doordarshan, Akashvani.",
+              "International Trade & Balance of Trade: Export vs Import monetary value. Favorable trade balance when exports > imports; Unfavorable when imports > exports.",
+              "Tourism as Invisible Trade: Earmarks massive foreign exchange, supports 15 million direct jobs, promotes national integration and cultural heritage."
             ],
             "evidence_or_examples": [
-              "Ratio k:1 in which x-axis divides segment joining (1,-5) and (-4,5) => y-coord = 0 => k = 1 (1:1 ratio).",
-              "Trisection of (4,-1) and (-2,-3) yields points (2, -5/3) and (0, -7/3)."
+              "Foreign tourist arrivals spending foreign exchange directly on Indian hospitality, handicrafts, and heritage."
             ],
             "key_terms": [
-              "Section Formula",
-              "Midpoint Formula",
-              "Trisection Points",
-              "Ratio k:1"
+              "Balance of Trade",
+              "Invisible Trade",
+              "Mass Communication",
+              "Digital India"
             ]
           }
         ]
       }
-    ],
-    "d3_react_flow_tree": {
-      "id": "node_7_root",
-      "label": "Coordinate Geometry",
-      "node_color": "#0284c7",
-      "icon": "book-open",
-      "children": [
-        {
-          "id": "node_7_b1",
-          "label": "Distance Formula",
-          "node_color": "#38bdf8",
-          "icon": "layers",
-          "hover_popover": "Main Theme: Distance Formula",
-          "children": [
-            {
-              "id": "node_7_c2",
-              "label": "Planar Distance Calculation",
-              "node_color": "#818cf8",
-              "icon": "cpu",
-              "hover_popover": "Concept: Planar Distance Calculation",
-              "details": [
-                "Distance between P(x1, y1) and Q(x2, y2): d = √[(x2 - x1)^2 + (y2 - y1)^2].",
-                "Distance from origin (0,0) to P(x, y): d = √(x^2 + y^2)."
-              ]
-            }
-          ]
-        },
-        {
-          "id": "node_7_b3",
-          "label": "Section Formula and Midpoint",
-          "node_color": "#38bdf8",
-          "icon": "layers",
-          "hover_popover": "Main Theme: Section Formula and Midpoint",
-          "children": [
-            {
-              "id": "node_7_c4",
-              "label": "Internal Division and Ratio Finding",
-              "node_color": "#818cf8",
-              "icon": "cpu",
-              "hover_popover": "Concept: Internal Division and Ratio Finding",
-              "details": [
-                "Point P(x,y) dividing line joining A(x1,y1) and B(x2,y2) internally in ratio m1:m2:",
-                "x = (m1 x2 + m2 x1) / (m1 + m2), y = (m1 y2 + m2 y1) / (m1 + m2).",
-                "Midpoint formula (ratio 1:1): [(x1 + x2)/2, (y1 + y2)/2].",
-                "Trisection points divide a segment in ratios 1:2 and 2:1."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "mermaid_syntax": "graph TD\n  Root[Coordinate Geometry]\n  Root --> B_2[Distance Formula]\n  B_2 --> C_3[Planar Distance Calculation]\n  Root --> B_4[Section Formula and Midpoint]\n  B_4 --> C_5[Internal Division and Ratio Finding]"
+    ]
   }
 }

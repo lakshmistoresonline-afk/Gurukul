@@ -1,125 +1,77 @@
 {
   "chapter_number": 1,
-  "chapter_title": "Orienting Yourself: The Use of Coordinates",
-  "image_asset": {
-    "local_url": "/assets/images/ch1_cartesian_coordinates.png",
-    "title": "2D Cartesian Coordinate Plane showing axes, origin O(0,0), four quadrants, and plotted points P(3,4) & Q(-3,-4)."
-  },
+  "chapter_title": "Oceans: Physical Features, Movements, and Ocean Wealth",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - Cartesian Coordinate Fundamentals & Distance Formula",
+      "paper_title": "Set 1 - Submarine Relief & Ocean Topography",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 1 Set 1.",
-        "diagram_url": "/assets/images/ch1_cartesian_coordinates.png",
-        "hotspots": [
-          {
-            "id": "hs_origin",
-            "label": "Origin O(0,0)",
-            "x_percent": 50.0,
-            "y_percent": 50.0,
-            "w_percent": 6.0,
-            "h_percent": 6.0,
-            "tooltip": "Point of perpendicular intersection of x and y axes."
-          },
-          {
-            "id": "hs_q1",
-            "label": "Quadrant I (+,+)",
-            "x_percent": 75.0,
-            "y_percent": 25.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x > 0 and ordinate y > 0."
-          },
-          {
-            "id": "hs_q3",
-            "label": "Quadrant III (-,-)",
-            "x_percent": 25.0,
-            "y_percent": 75.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x < 0 and ordinate y < 0."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "What are the coordinates of the origin where the x-axis and y-axis intersect on a Cartesian plane?",
+              "question_text": "Which feature of the ocean floor is a shallow, gently sloping region extending seaward from the continental landmass?",
               "options": [
-                "A) (1, 1)",
-                "B) (0, 0)",
-                "C) (0, 1)",
-                "D) (1, 0)"
+                "A) Abyssal Plain",
+                "B) Continental Shelf",
+                "C) Oceanic Trench",
+                "D) Mid-Oceanic Ridge"
               ],
-              "correct_answer": "B) (0, 0)",
+              "correct_answer": "B) Continental Shelf",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "A point P has an abscissa of -4 and an ordinate of 3. In which quadrant does P lie?",
+              "question_text": "What is the average depth range of the abyssal plain on the ocean floor?",
               "options": [
-                "A) Quadrant I",
-                "B) Quadrant II",
-                "C) Quadrant III",
-                "D) Quadrant IV"
+                "A) 0 to 200 meters",
+                "B) 200 to 1,000 meters",
+                "C) 3,000 to 6,000 meters",
+                "D) 10,000 to 12,000 meters"
               ],
-              "correct_answer": "B) Quadrant II",
+              "correct_answer": "C) 3,000 to 6,000 meters",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
             {
               "question_number": 3,
-              "question_text": "Find the perpendicular distance of the point A(-6, 8) from (i) the x-axis and (ii) the y-axis.",
-              "marking_scheme_answer": "(i) Perpendicular distance from x-axis is |y| = |8| = 8 units.\n(ii) Perpendicular distance from y-axis is |x| = |-6| = 6 units.",
-              "marks": 2
+              "question_text": "Explain why continental shelves are considered major economic zones for coastal nations.",
+              "marking_scheme_answer": "Continental shelves are shallow (<200m depth), allowing sunlight to penetrate to the seabed. This promotes abundant phytoplankton growth, making them rich commercial fishing grounds. Additionally, they contain massive reserves of petroleum, natural gas, and heavy mineral sands.",
+              "marks": 3
             },
             {
               "question_number": 4,
-              "question_text": "Using the Baudhāyana-Pythagoras distance formula, calculate the distance between P(2, 3) and Q(10, 9).",
-              "marking_scheme_answer": "d = sqrt((10-2)^2 + (9-3)^2) = sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10 units.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 5,
-              "question_text": "Find the reflection of the point B(4, -5) across (i) the x-axis, (ii) the y-axis, and (iii) the origin.",
-              "marking_scheme_answer": "(i) Reflection across x-axis negates y: (4, 5).\n(ii) Reflection across y-axis negates x: (-4, -5).\n(iii) Reflection across origin negates both: (-4, 5).",
+              "question_text": "Distinguish between an oceanic trench and a mid-oceanic ridge.",
+              "marking_scheme_answer": "1. Oceanic Trench: Deep, steep-sided V-shaped depression formed at convergent plate boundaries where one tectonic plate subducts under another (e.g., Mariana Trench). 2. Mid-Oceanic Ridge: Continuous underwater mountain chain formed at divergent plate boundaries where upwelling magma creates new oceanic crust.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
-              "question_number": 6,
-              "question_text": "Show algebraically using the distance formula that the points A(1, 1), B(4, 5), and C(1, 5) form a right-angled triangle on the Cartesian plane, and compute its area.",
-              "marking_scheme_answer": "1. AB = sqrt((4-1)^2 + (5-1)^2) = sqrt(9 + 16) = 5.\n2. BC = sqrt((1-4)^2 + (5-5)^2) = sqrt(9 + 0) = 3.\n3. AC = sqrt((1-1)^2 + (5-1)^2) = sqrt(0 + 16) = 4.\n4. Verification: AC^2 + BC^2 = 4^2 + 3^2 = 16 + 9 = 25 = AB^2. Right-angled at C.\n5. Area = 1/2 * base * height = 1/2 * 3 * 4 = 6 sq units.",
+              "question_number": 5,
+              "question_text": "Describe the four major relief zones of the ocean floor and discuss their structural characteristics.",
+              "marking_scheme_answer": "The four major ocean floor relief zones are:\n1. Continental Shelf: Gently sloping seaward margin of continents (gradient <1°), depth up to 200m; rich in fisheries and minerals.\n2. Continental Slope: Steep slope (2°-5°) connecting shelf to deep sea floor, reaching depths of 2000-3000m; cut by deep submarine canyons.\n3. Abyssal Plain: Vast, flat plains lying at 3000-6000m depth covering over 50% of the ocean floor; covered with fine pelagic sediments.\n4. Oceanic Trenches: Deepest narrow depressions formed at convergent plate margins (e.g., Challenger Deep at 10,994m).",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A delivery drone operates on a 2D grid city layout. Base station is at O(0,0). Drone delivers to house A(3, 4) and then house B(9, 12).\n(i) What is the direct distance from base station to House A? (2 Marks)\n(ii) What is the straight-line distance between House A and House B? (2 Marks)",
-              "marking_scheme_answer": "(i) Distance OA = sqrt(3^2 + 4^2) = sqrt(25) = 5 km.\n(ii) Distance AB = sqrt((9-3)^2 + (12-4)^2) = sqrt(6^2 + 8^2) = sqrt(100) = 10 km.",
+              "question_number": 6,
+              "question_text": "Case Study: Marine geologists surveying the western coast of India discovered rich offshore oil fields at Bombay High located on the continental shelf, alongside deep-sea polymetallic nodule deposits in abyssal zones.\n(a) Why are oil fields concentrated on continental shelves rather than abyssal plains?\n(b) What type of plate tectonic activity creates deep-sea trenches?",
+              "marking_scheme_answer": "(a) Continental shelves accumulate thick layers of organic marine sediments and plant matter over millions of years under shallow water conditions conducive to petroleum formation.\n(b) Oceanic trenches are created by convergent plate tectonic boundaries where an oceanic plate subducts beneath a continental or another oceanic plate.",
               "marks": 4
             }
           ]
@@ -128,118 +80,74 @@
     },
     {
       "paper_id": 2,
-      "paper_title": "Set 2 - Midpoint, Trisection & Geometric Transformations",
+      "paper_title": "Set 2 - Ocean Water Dynamics: Waves and Tides",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 1 Set 2.",
-        "diagram_url": "/assets/images/ch1_cartesian_coordinates.png",
-        "hotspots": [
-          {
-            "id": "hs_origin",
-            "label": "Origin O(0,0)",
-            "x_percent": 50.0,
-            "y_percent": 50.0,
-            "w_percent": 6.0,
-            "h_percent": 6.0,
-            "tooltip": "Point of perpendicular intersection of x and y axes."
-          },
-          {
-            "id": "hs_q1",
-            "label": "Quadrant I (+,+)",
-            "x_percent": 75.0,
-            "y_percent": 25.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x > 0 and ordinate y > 0."
-          },
-          {
-            "id": "hs_q3",
-            "label": "Quadrant III (-,-)",
-            "x_percent": 25.0,
-            "y_percent": 75.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x < 0 and ordinate y < 0."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Any point lying on the y-axis has coordinates of the form:",
+              "question_text": "During which celestial alignment do Spring Tides occur?",
               "options": [
-                "A) (x, 0)",
-                "B) (0, y)",
-                "C) (y, 0)",
-                "D) (x, y)"
+                "A) Earth, Sun, and Moon forming a right angle",
+                "B) Sun, Earth, and Moon aligned in a straight line",
+                "C) Moon at apogee only",
+                "D) During equinoxes only"
               ],
-              "correct_answer": "B) (0, y)",
+              "correct_answer": "B) Sun, Earth, and Moon aligned in a straight line",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "The sign convention of coordinates in Quadrant IV is:",
+              "question_text": "What is the primary physical force driving wind-generated ocean waves?",
               "options": [
-                "A) (+, +)",
-                "B) (-, +)",
-                "C) (-, -)",
-                "D) (+, -)"
+                "A) Gravitational attraction of the Moon",
+                "B) Surface wind shear friction",
+                "C) Salinity differences",
+                "D) Earth's magnetic field"
               ],
-              "correct_answer": "D) (+, -)",
+              "correct_answer": "B) Surface wind shear friction",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
             {
               "question_number": 3,
-              "question_text": "Find the coordinates of the midpoint of line segment joining A(-4, 6) and B(8, -2).",
-              "marking_scheme_answer": "M = ((x1+x2)/2, (y1+y2)/2) = ((-4+8)/2, (6+(-2))/2) = (4/2, 4/2) = (2, 2).",
-              "marks": 2
+              "question_text": "Explain the difference between Spring Tides and Neap Tides with reference to astronomical positions.",
+              "marking_scheme_answer": "1. Spring Tides: Occur during New Moon and Full Moon when the Sun, Earth, and Moon align in a straight line (Syzygy). The combined gravitational pull produces maximum tidal range (highest high tides, lowest low tides).\n2. Neap Tides: Occur during first and third quarter moons when the Sun and Moon act at right angles relative to Earth (Quadrature). Gravitational pulls partially offset each other, producing minimum tidal range.",
+              "marks": 3
             },
             {
               "question_number": 4,
-              "question_text": "If the distance between P(x, -1) and Q(3, 2) is 5 units, find all possible values of x.",
-              "marking_scheme_answer": "5^2 = (3-x)^2 + (2 - (-1))^2 => 25 = (3-x)^2 + 9 => (3-x)^2 = 16 => 3-x = ±4 => x = -1 or x = 7.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 5,
-              "question_text": "Find the points of trisection P and Q of the line segment joining A(2, -2) and B(-7, 4).",
-              "marking_scheme_answer": "P divides AB in 1:2 => P = ((1*(-7) + 2*2)/3, (1*4 + 2*(-2))/3) = (-3/3, 0/3) = (-1, 0).\nQ divides AB in 2:1 => Q = ((2*(-7) + 1*2)/3, (2*4 + 1*(-2))/3) = (-12/3, 6/3) = (-4, 2).",
+              "question_text": "Explain why tidal cycles occur approximately every 12 hours and 25 minutes rather than exactly every 12 hours.",
+              "marking_scheme_answer": "Earth completes one rotation in 24 hours, but while Earth rotates, the Moon also revolves in its orbit in the same direction. Consequently, a given point on Earth takes an extra 50 minutes to realign under the Moon each day, making the interval between successive high tides approximately 12 hours and 25 minutes.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
-              "question_number": 6,
-              "question_text": "Prove that the points A(2, -2), B(14, 10), C(11, 13), and D(-1, 1) form a rectangle on the Cartesian plane.",
-              "marking_scheme_answer": "1. Calculate side lengths: AB = sqrt(12^2 + 12^2) = sqrt(288); CD = sqrt((-12)^2 + (-12)^2) = sqrt(288).\n2. BC = sqrt((-3)^2 + 3^2) = sqrt(18); AD = sqrt((-3)^2 + 3^2) = sqrt(18).\n3. Opposite sides equal: AB = CD and BC = AD.\n4. Diagonal AC = sqrt(9^2 + 15^2) = sqrt(81 + 225) = sqrt(306).\n5. Diagonal BD = sqrt((-15)^2 + (-9)^2) = sqrt(306). Equal diagonals confirm rectangle.",
+              "question_number": 5,
+              "question_text": "Describe wave motion in deep ocean water versus shallow coastal water, and analyze how tidal movements assist port navigation.",
+              "marking_scheme_answer": "1. Wave Motion: In deep water, water particles move in closed circular orbits without net forward water translation; wave energy moves horizontally. As waves enter shallow coastal water, sea-floor friction slows the base, causing wave crests to steepen and break onto the shore.\n2. Tidal Assistance to Navigation: High tides raise the water depth in shallow estuarine channels and river mouths (e.g., Hooghly River leading to Kolkata Port), enabling heavy ocean vessels to dock safely that would otherwise ground on river bars.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "An architect is planning a square park ABCD on a grid. A is at (0,0), B is at (6,0), C is at (6,6), and D is at (0,6).\n(i) Calculate the length of the diagonal AC. (2 Marks)\n(ii) Find the coordinates of the central fountain located at the intersection of diagonals AC and BD. (2 Marks)",
-              "marking_scheme_answer": "(i) Diagonal AC = sqrt((6-0)^2 + (6-0)^2) = sqrt(36 + 36) = sqrt(72) = 6*sqrt(2) units.\n(ii) Center is midpoint of AC = ((0+6)/2, (0+6)/2) = (3, 3).",
+              "question_number": 6,
+              "question_text": "Case Study: Port authorities at Kolkata monitor lunar phases continuously to schedule the entry of deep-draft cargo ships into the harbor during high spring tides.\n(a) Why do port authorities prefer spring tides over neap tides for docking heavy cargo ships?\n(b) What astronomical position of Sun, Earth, and Moon creates neap tides?",
+              "marking_scheme_answer": "(a) Spring tides generate maximum high water levels, providing extra draft depth in shallow river channels required for heavy ships to enter without touching riverbed silt.\n(b) Neap tides occur when the Sun and Moon are positioned at right angles (90 degrees) relative to Earth during quarter moon phases.",
               "marks": 4
             }
           ]
@@ -248,118 +156,74 @@
     },
     {
       "paper_id": 3,
-      "paper_title": "Set 3 - Historical Roots & Coordinate Applications",
+      "paper_title": "Set 3 - Ocean Currents & Circulation Systems",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 1 Set 3.",
-        "diagram_url": "/assets/images/ch1_cartesian_coordinates.png",
-        "hotspots": [
-          {
-            "id": "hs_origin",
-            "label": "Origin O(0,0)",
-            "x_percent": 50.0,
-            "y_percent": 50.0,
-            "w_percent": 6.0,
-            "h_percent": 6.0,
-            "tooltip": "Point of perpendicular intersection of x and y axes."
-          },
-          {
-            "id": "hs_q1",
-            "label": "Quadrant I (+,+)",
-            "x_percent": 75.0,
-            "y_percent": 25.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x > 0 and ordinate y > 0."
-          },
-          {
-            "id": "hs_q3",
-            "label": "Quadrant III (-,-)",
-            "x_percent": 25.0,
-            "y_percent": 75.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x < 0 and ordinate y < 0."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "In ancient Indian altar geometry (Śhulbasūtras), what term referred to the east-west reference axis?",
+              "question_text": "Due to the Coriolis effect, ocean currents in the Northern Hemisphere are deflected in which direction?",
               "options": [
-                "A) Tiryak",
-                "B) Prāchī",
-                "C) Vedi",
-                "D) Śhulba"
+                "A) To the left (counter-clockwise)",
+                "B) To the right (clockwise)",
+                "C) Directly toward the Equator",
+                "D) Vertically downward"
               ],
-              "correct_answer": "B) Prāchī",
+              "correct_answer": "B) To the right (clockwise)",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If a point lies in Quadrant III, the signs of its (abscissa, ordinate) are:",
+              "question_text": "What physical driver governs deep thermohaline ocean circulation?",
               "options": [
-                "A) (+, -)",
-                "B) (-, +)",
-                "C) (-, -)",
-                "D) (+, +)"
+                "A) Surface wind shear",
+                "B) Water density differences caused by temperature and salinity",
+                "C) Lunar tidal pull",
+                "D) Coastal tsunami waves"
               ],
-              "correct_answer": "C) (-, -)",
+              "correct_answer": "B) Water density differences caused by temperature and salinity",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
             {
               "question_number": 3,
-              "question_text": "Find the point on the x-axis which is equidistant from (2, -5) and (-2, 9).",
-              "marking_scheme_answer": "Let point be P(x, 0). (x-2)^2 + 25 = (x+2)^2 + 81 => -4x + 29 = 4x + 85 => -8x = 56 => x = -7. Point is (-7, 0).",
-              "marks": 2
+              "question_text": "Explain how warm ocean currents influence climate conditions along high-latitude coastlines.",
+              "marking_scheme_answer": "Warm ocean currents originate near the equator and transport warm thermal energy poleward. As they pass high-latitude coastlines (e.g., North Atlantic Drift along Western Europe), they release heat into the atmosphere, warming coastal air temperatures and keeping ice-free harbors open year-round.",
+              "marks": 3
             },
             {
               "question_number": 4,
-              "question_text": "State the distance of point P(-3, -4) from the origin O(0,0).",
-              "marking_scheme_answer": "d = sqrt((-3)^2 + (-4)^2) = sqrt(9 + 16) = sqrt(25) = 5 units.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 5,
-              "question_text": "Plot vertices A(0, 4), B(-3, 0), C(0, -4), and D(3, 0) on a Cartesian grid. Name the quadrilateral ABCD and calculate its perimeter.",
-              "marking_scheme_answer": "All 4 sides equal: AB = BC = CD = DA = sqrt(3^2 + 4^2) = 5 units.\nDiagonals AC = 8 (vertical) and BD = 6 (horizontal) are perpendicular.\nQuadrilateral is a Rhombus. Perimeter = 4 * 5 = 20 units.",
+              "question_text": "Why are desert regions frequently found along western continental coastlines adjacent to cold ocean currents?",
+              "marking_scheme_answer": "Cold ocean currents (e.g., Peruvian Current, Benguela Current) cool the overlying air, increasing atmospheric stability and inhibiting vertical cloud convection. This creates dry, arid atmospheric conditions along adjacent landmasses, forming coastal deserts like the Atacama and Namib deserts.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
-              "question_number": 6,
-              "question_text": "Three vertices of a parallelogram ABCD are A(-2, 1), B(1, 0), and C(4, 3). Find the coordinates of the fourth vertex D.",
-              "marking_scheme_answer": "In a parallelogram, diagonals AC and BD bisect each other.\nMidpoint of AC = ((-2+4)/2, (1+3)/2) = (1, 2).\nLet D = (x, y). Midpoint of BD = ((1+x)/2, (0+y)/2).\nEquating midpoints: (1+x)/2 = 1 => x = 1; (0+y)/2 = 2 => y = 4.\nFourth vertex D is (1, 4).",
+              "question_number": 5,
+              "question_text": "Analyze the primary and secondary forces driving global ocean surface currents and discuss their impact on world fishing grounds.",
+              "marking_scheme_answer": "1. Primary Forces: Planetary wind belts (Trade winds, Westerlies) push surface water; Coriolis force deflects currents (right in Northern Hemisphere, left in Southern); solar heating causes thermal expansion near equator.\n2. Secondary Forces: Coastal topography and underwater ridges modify current paths.\n3. Impact on Fishing Grounds: Where warm and cold ocean currents meet (e.g., Gulf Stream and Labrador Current near Newfoundland, or Kuroshio and Oyashio near Japan), rapid water mixing creates optimal temperature and oxygen conditions for plankton explosion, supporting the world's richest commercial fishing zones.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "Urban planners in Harappa laid out main roads along orthogonal axes intersecting at right angles.\n(i) Explain how town layout aligns with Cartesian axes. (2 Marks)\n(ii) If a grain store is at (5, 12) and town gate is at (0,0), find the direct access road length. (2 Marks)",
-              "marking_scheme_answer": "(i) Two perpendicular main avenues act as x and y axes dividing town into 4 blocks/quadrants, enabling unique street grid coordinates.\n(ii) Distance = sqrt(5^2 + 12^2) = sqrt(25 + 144) = sqrt(169) = 13 units.",
+              "question_number": 6,
+              "question_text": "Case Study: Fishermen off the coast of Japan harvest massive fish catches near the convergence zone of the warm Kuroshio current and cold Oyashio current.\n(a) Why does the meeting of warm and cold currents produce exceptionally rich fishing grounds?\n(b) What navigational hazard frequently occurs where warm and cold currents meet?",
+              "marking_scheme_answer": "(a) Convergence zones cause nutrient upwelling and water temperature mixing that fosters abundant plankton blooms, attracting large schools of commercial fish.\n(b) The mixing of warm moist air over warm currents with cold air over cold currents causes dense maritime fog, creating navigational hazards for ships.",
               "marks": 4
             }
           ]
@@ -368,118 +232,74 @@
     },
     {
       "paper_id": 4,
-      "paper_title": "Set 4 - Collinearity & Advanced Coordinate Geometry",
+      "paper_title": "Set 4 - Coastal Hazards & Disaster Management",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 1 Set 4.",
-        "diagram_url": "/assets/images/ch1_cartesian_coordinates.png",
-        "hotspots": [
-          {
-            "id": "hs_origin",
-            "label": "Origin O(0,0)",
-            "x_percent": 50.0,
-            "y_percent": 50.0,
-            "w_percent": 6.0,
-            "h_percent": 6.0,
-            "tooltip": "Point of perpendicular intersection of x and y axes."
-          },
-          {
-            "id": "hs_q1",
-            "label": "Quadrant I (+,+)",
-            "x_percent": 75.0,
-            "y_percent": 25.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x > 0 and ordinate y > 0."
-          },
-          {
-            "id": "hs_q3",
-            "label": "Quadrant III (-,-)",
-            "x_percent": 25.0,
-            "y_percent": 75.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x < 0 and ordinate y < 0."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "The distance between points (a, 0) and (0, b) is given by:",
+              "question_text": "What is the primary cause of a tsunami wave in the ocean?",
               "options": [
-                "A) a + b",
-                "B) a^2 + b^2",
-                "C) sqrt(a^2 + b^2)",
-                "D) sqrt(a + b)"
+                "A) Strong hurricane winds",
+                "B) Gravitational pull of the Moon",
+                "C) Undersea earthquake or volcanic displacement",
+                "D) Thermal expansion of sea surface"
               ],
-              "correct_answer": "C) sqrt(a^2 + b^2)",
+              "correct_answer": "C) Undersea earthquake or volcanic displacement",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If (x, y) = (-y, x), then x and y must be:",
+              "question_text": "Which coastal ecosystem acts as a natural bio-shield absorbing wave energy during tsunamis and storm surges?",
               "options": [
-                "A) x = 1, y = 1",
-                "B) x = 0, y = 0",
-                "C) x = 2, y = -2",
-                "D) Any real numbers"
+                "A) Pine forests",
+                "B) Mangrove forests",
+                "C) Desert scrub",
+                "D) Seagrass beds"
               ],
-              "correct_answer": "B) x = 0, y = 0",
+              "correct_answer": "B) Mangrove forests",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
             {
               "question_number": 3,
-              "question_text": "Check whether points A(1, 5), B(2, 3), and C(-2, -11) are collinear using distance formula.",
-              "marking_scheme_answer": "AB = sqrt(1^2 + (-2)^2) = sqrt(5).\nBC = sqrt((-4)^2 + (-14)^2) = sqrt(16 + 196) = sqrt(212) = 2*sqrt(53).\nAC = sqrt((-3)^2 + (-16)^2) = sqrt(9 + 256) = sqrt(265).\nSince AB + BC != AC, points are NOT collinear.",
-              "marks": 2
+              "question_text": "Explain how a tsunami wave changes as it approaches shallow coastal waters from the deep ocean.",
+              "marking_scheme_answer": "In deep water, a tsunami has a small wave height (<1 meter) and extremely long wavelength traveling at high speeds (>700 km/h). As it enters shallow coastal water, sea-floor friction slows the wave base down. The wave energy compresses, causing the wavelength to shrink and the wave height to rise rapidly into a massive wall of water.",
+              "marks": 3
             },
             {
               "question_number": 4,
-              "question_text": "Find the point on the y-axis which is equidistant from A(6, 5) and B(-4, 3).",
-              "marking_scheme_answer": "Let P(0, y). 6^2 + (y-5)^2 = (-4)^2 + (y-3)^2 => 36 + y^2 - 10y + 25 = 16 + y^2 - 6y + 9 => 61 - 10y = 25 - 6y => -4y = -36 => y = 9. Point is (0, 9).",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 5,
-              "question_text": "Show that the points A(3, 0), B(6, 4), and C(-1, 3) are the vertices of a right-angled isosceles triangle.",
-              "marking_scheme_answer": "AB = sqrt(3^2 + 4^2) = 5.\nBC = sqrt((-7)^2 + (-1)^2) = sqrt(50) = 5*sqrt(2).\nAC = sqrt((-4)^2 + 3^2) = 5.\nAB = AC = 5 (Isosceles). AB^2 + AC^2 = 25 + 25 = 50 = BC^2 (Right angled at A).",
+              "question_text": "State two technological early-warning measures deployed by India to protect coastal areas from sea disasters.",
+              "marking_scheme_answer": "1. INCOIS Tsunami Early Warning System: Deep-ocean pressure sensors (BART/Tsunami buoys) that detect undersea seismic activity and sea-level anomalies in real time.\n2. Cyclone Tracking Radar & Satellite Network: Doppler weather radars along the east coast providing early storm surge advisories.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
-              "question_number": 6,
-              "question_text": "Find the centre and radius of a circle passing through points A(0,0), B(4,0), and C(0,6).",
-              "marking_scheme_answer": "Since angle A = 90 degrees (formed by axes at origin), BC is the diameter of the circumcircle.\nCentre O' is midpoint of BC = ((4+0)/2, (0+6)/2) = (2, 3).\nRadius r = 1/2 * BC = 1/2 * sqrt(4^2 + 6^2) = 1/2 * sqrt(52) = sqrt(13) units.",
+              "question_number": 5,
+              "question_text": "Examine the ecological mechanisms through which mangrove greenbelts protect coastal communities from natural disasters and soil erosion.",
+              "marking_scheme_answer": "1. Wave Energy Dissipation: Mangroves possess dense, interconnected stilt root systems (prop roots and pneumatophores) that create physical drag, scattering kinetic energy of tsunamis and storm surges.\n2. Shoreline Stabilization: Root networks trap fine coastal sediments, binding mud and preventing coastal erosion during severe cyclonic storms.\n3. Wind Break: Dense mangrove tree canopies act as physical barriers against violent coastal storm winds.\n4. Ecological Habitat: They provide breeding grounds for marine life while shielding human settlements behind coastal shelterbelts.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A robot arm moves on a grid from P(-2, 3) to Q(4, 7).\n(i) Find the total displacement vector along x and y axes. (2 Marks)\n(ii) Find the midpoint of the robot arm's path. (2 Marks)",
-              "marking_scheme_answer": "(i) delta_x = 4 - (-2) = 6 units; delta_y = 7 - 3 = 4 units.\n(ii) Midpoint = ((-2+4)/2, (3+7)/2) = (1, 5).",
+              "question_number": 6,
+              "question_text": "Case Study: In December 2004, the Indian Ocean Tsunami devastated coastal villages in Tamil Nadu. Communities situated behind intact Sundarbans and Pichavaram mangrove forests suffered drastically lower casualties than beachfront areas clear of vegetation.\n(a) Why did mangrove-protected villages experience lower loss of life?\n(b) What structural measure can governments enforce along coastlines to reduce disaster risk?",
+              "marking_scheme_answer": "(a) Mangrove root networks absorbed and frictionally dissipated the tsunami wave energy, dramatically reducing water velocity and flood height reaching inland houses.\n(b) Governments can enforce Coastal Regulation Zone (CRZ) rules prohibiting construction right on the shoreline, build elevated seawalls, and plant shelterbelt vegetation.",
               "marks": 4
             }
           ]
@@ -488,123 +308,109 @@
     },
     {
       "paper_id": 5,
-      "paper_title": "Set 5 - Comprehensive Mastery Test on Coordinates",
+      "paper_title": "Set 5 - The Blue Economy & Deep Ocean Exploration",
       "total_marks": 25,
       "time_allowed_minutes": 45,
-      "case_study_viewport": {
-        "scenario_text": "Practical Application Case Study for Chapter 1 Set 5.",
-        "diagram_url": "/assets/images/ch1_cartesian_coordinates.png",
-        "hotspots": [
-          {
-            "id": "hs_origin",
-            "label": "Origin O(0,0)",
-            "x_percent": 50.0,
-            "y_percent": 50.0,
-            "w_percent": 6.0,
-            "h_percent": 6.0,
-            "tooltip": "Point of perpendicular intersection of x and y axes."
-          },
-          {
-            "id": "hs_q1",
-            "label": "Quadrant I (+,+)",
-            "x_percent": 75.0,
-            "y_percent": 25.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x > 0 and ordinate y > 0."
-          },
-          {
-            "id": "hs_q3",
-            "label": "Quadrant III (-,-)",
-            "x_percent": 25.0,
-            "y_percent": 75.0,
-            "w_percent": 20.0,
-            "h_percent": 20.0,
-            "tooltip": "Region where both abscissa x < 0 and ordinate y < 0."
-          }
-        ]
-      },
       "sections": [
         {
-          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "section_name": "Section A (MCQs)",
           "questions": [
             {
               "question_number": 1,
-              "question_text": "The distance of point P(-5, 12) from origin is:",
+              "question_text": "What is the primary objective of the Blue Economy framework?",
               "options": [
-                "A) 12",
-                "B) 13",
-                "C) 17",
-                "D) 7"
+                "A) Maximizing unregulated deep-sea fishing",
+                "B) Sustainable utilization of ocean resources for economic growth while preserving ecosystem health",
+                "C) Privatizing international ocean waters",
+                "D) Draining coastal wetlands for urban housing"
               ],
-              "correct_answer": "B) 13",
+              "correct_answer": "B) Sustainable utilization of ocean resources for economic growth while preserving ecosystem health",
               "marks": 1
             },
             {
               "question_number": 2,
-              "question_text": "If reflection of (3, -2) across x-axis is (a, b), then a + b equals:",
+              "question_text": "Which indigenous human submersible craft is being developed under India's Deep Ocean Mission?",
               "options": [
-                "A) 1",
-                "B) 5",
-                "C) -1",
-                "D) 0"
+                "A) INS Arihant",
+                "B) MATSYA 6000",
+                "C) Vikrant 2000",
+                "D) Samudrayaan 100"
               ],
-              "correct_answer": "B) 5",
+              "correct_answer": "B) MATSYA 6000",
               "marks": 1
             }
           ]
         },
         {
-          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "section_name": "Section B (Short Answer Questions)",
           "questions": [
             {
               "question_number": 3,
-              "question_text": "Find the area of triangle formed by origin O(0,0), A(6,0), and B(0,8).",
-              "marking_scheme_answer": "Triangle is right-angled at origin with base = 6 and height = 8.\nArea = 1/2 * 6 * 8 = 24 sq units.",
-              "marks": 2
+              "question_text": "What are polymetallic nodules, and where are they located on the ocean floor?",
+              "marking_scheme_answer": "Polymetallic nodules are potato-shaped rock accretions lying on deep-sea abyssal plains (3000-6000m depth). They contain valuable strategic metals including manganese, nickel, copper, and cobalt, which are essential for green energy batteries and industrial manufacturing.",
+              "marks": 3
             },
             {
               "question_number": 4,
-              "question_text": "If A(1, 2), B(4, y), C(x, 6), and D(3, 5) are vertices of a parallelogram in order, find x and y.",
-              "marking_scheme_answer": "Midpoint of AC = Midpoint of BD.\n((1+x)/2, (2+6)/2) = ((4+3)/2, (y+5)/2)\n(1+x)/2 = 7/2 => x = 6; 8/2 = (y+5)/2 => y = 3.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 5,
-              "question_text": "Prove that points A(-2, -1), B(1, 0), C(4, 3), and D(1, 2) form a parallelogram.",
-              "marking_scheme_answer": "AB = sqrt(3^2 + 1^2) = sqrt(10); CD = sqrt((-3)^2 + (-1)^2) = sqrt(10).\nBC = sqrt(3^2 + 3^2) = sqrt(18); AD = sqrt(3^2 + 3^2) = sqrt(18).\nOpposite sides equal => ABCD is a parallelogram.",
+              "question_text": "State three key focus pillars of India's Deep Ocean Mission launched by the Ministry of Earth Sciences.",
+              "marking_scheme_answer": "1. Deep-sea mining technology development and crewed submersible craft (MATSYA 6000).\n2. Deep-ocean bio-prospecting and marine flora/fauna conservation.\n3. Ocean climate change advisory services and offshore wave/ocean thermal energy conversion.",
               "marks": 3
             }
           ]
         },
         {
-          "section_name": "Section D (Long Answer - 5 Marks)",
+          "section_name": "Section C (Long Answer Questions)",
           "questions": [
             {
-              "question_number": 6,
-              "question_text": "Find the coordinates of the circumcentre of triangle with vertices A(3, 0), B(0, 4), and C(0, 0), and calculate circumradius.",
-              "marking_scheme_answer": "Triangle is right-angled at C(0,0). Circumcentre is midpoint of hypotenuse AB.\nCircumcentre O' = ((3+0)/2, (0+4)/2) = (1.5, 2).\nCircumradius R = 1/2 * AB = 1/2 * sqrt(3^2 + 4^2) = 2.5 units.",
+              "question_number": 5,
+              "question_text": "Discuss the strategic importance of the Blue Economy for India's national development and outline measures needed for sustainable ocean management.",
+              "marking_scheme_answer": "1. Strategic Importance: India has a 7,516 km coastline, 1,382 islands, and an Exclusive Economic Zone (EEZ) covering over 2 million sq km. The Blue Economy drives marine wild fisheries, mariculture, offshore wind/wave renewable energy, maritime trade (Sagarmala project), and seabed mineral extraction.\n2. Sustainable Measures: Preventing marine plastic pollution, enforcing regulated fishing seasons to prevent overfishing, preserving coastal coral reefs and mangroves, and setting environmental safeguards for seabed deep-sea mining.",
               "marks": 5
             }
           ]
         },
         {
-          "section_name": "Section E (Case Study - 4 Marks)",
+          "section_name": "Section D (Case-Based Questions)",
           "questions": [
             {
-              "question_number": 7,
-              "question_text": "A GPS satellite tracks two vehicles V1 at (-3, 4) and V2 at (5, -2).\n(i) Find direct distance between vehicles V1 and V2. (2 Marks)\n(ii) Find location of relay tower midway between them. (2 Marks)",
-              "marking_scheme_answer": "(i) Distance = sqrt((5 - (-3))^2 + (-2 - 4)^2) = sqrt(8^2 + (-6)^2) = sqrt(100) = 10 km.\n(ii) Relay tower = ((-3+5)/2, (4+(-2))/2) = (1, 1).",
+              "question_number": 6,
+              "question_text": "Case Study: India received rights from the International Seabed Authority (ISA) to explore 75,000 square kilometers in the Central Indian Ocean Basin for polymetallic nodules.\n(a) Why are polymetallic nodules strategically important for clean energy technology?\n(b) What ecological precaution must be taken during deep-sea seabed mining?",
+              "marking_scheme_answer": "(a) They contain high concentrations of nickel and cobalt, crucial raw materials for manufacturing electric vehicle (EV) batteries and renewable energy storage.\n(b) Deep-sea mining must minimize sediment plume disturbance and prevent destruction of fragile, slow-growing abyssal benthic organisms and ecosystems.",
               "marks": 4
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "image_asset": {
+    "asset_id": "img_ch1_01",
+    "chapter_number": 1,
+    "chapter_title": "Oceans: Physical Features, Movements, and Ocean Wealth",
+    "file_name": "ch1_ocean_relief.png",
+    "local_url": "/assets/images/ch1_ocean_relief.png",
+    "aspect_ratio": "16:9",
+    "title": "Submarine Relief Profile & Ocean Floor Features",
+    "description": "Comprehensive visual cross-section of continental shelf, continental slope, abyssal plain, and Mariana Trench (Challenger Deep).",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_ch1_shelf",
+        "label": "Continental Shelf Zone",
+        "x_percent": 2.0,
+        "y_percent": 68.0,
+        "w_percent": 16.0,
+        "h_percent": 10.0,
+        "annotation": "Gently sloping shelf (<200m depth) supporting offshore petroleum reserves (Bombay High) and major fisheries."
+      },
+      {
+        "hotspot_id": "hs_ch1_trench",
+        "label": "Mariana Trench (Challenger Deep)",
+        "x_percent": 71.0,
+        "y_percent": 2.0,
+        "w_percent": 12.0,
+        "h_percent": 25.0,
+        "annotation": "Deepest oceanic trench (10,994m) formed at a convergent plate subduction zone."
+      }
+    ]
+  }
 }

@@ -1,123 +1,65 @@
 {
   "chapter_number": 5,
-  "chapter_title": "Prime Time",
-  "core_summary": "This chapter provides a comprehensive foundation in number theory: factors, multiples, prime numbers, composite numbers, co-prime pairs, the Sieve of Eratosthenes, divisibility rules (2, 3, 4, 5, 8, 9, 10), unique prime factorisation, Highest Common Factor (HCF), and Lowest Common Multiple (LCM). Students learn that factors divide a number completely without remainder, bounded by 1 <= f <= n. The number 1 is identified as unique (neither prime nor composite). Students use Eratosthenes' grid sieve to isolate primes up to 100, master divisibility shortcuts, perform prime factorisation trees and repeated division, and apply the fundamental relationship HCF(a, b) x LCM(a, b) = a x b to solve real-world problems like traffic light synchronization and treasure hunt races.",
+  "chapter_title": "India, That Is Bharat",
+  "core_summary": "This chapter explores the rich, multi-layered historical evolution of the names used to describe the Indian subcontinent across millennia. It examines how geographical boundaries, river systems, indigenous epics, and international trade contacts shaped the country's identity. The chapter traces indigenous terminology back to the Rigveda, which referred to the northwestern land of seven rivers as 'Sapta Sindhava'. Puranic and Buddhist texts adopted 'Jambudvīpa' (the continent of the Jambu/Jamun tree) as a cosmological term for the subcontinent. The name 'Bhāratavarṣha' or 'Bhārata' emerged from ancient texts and epics like the Mahābhārata, named after the noble Bharata tribe and legendary King Bharata, symbolizing a unified cultural and spiritual landscape stretching from the Himalayas in the north to the southern oceans. Externally, old Persian inscriptions from the Achaemenid Empire rendered the river name 'Sindhu' as 'Hidu', which passed into ancient Greek as 'Indoi', giving rise to the Latin 'India'. Chinese travelers like Xuanzang recorded names such as 'Tianzhu' and 'Yintu', while medieval Persian and Arabic records used 'Hindustān'. Finally, the chapter highlights Article 1 of the Constitution of India—'India, that is Bharat, shall be a Union of States'—demonstrating how modern constitutional democracy bridges ancient civilisational heritage with modern national identity.",
   "key_concepts": [
-    "Factors and Multiples: A factor divides an integer completely with zero remainder. A multiple is the product of an integer and any counting number. Properties: 1 is a factor of every number; every number is a factor and multiple of itself; factors are finite and bounded (1 <= f <= n).",
-    "Prime vs. Composite Numbers: A Prime Number has exactly two distinct positive factors (1 and itself). A Composite Number has more than two factors. The number 1 has only one factor and is uniquely classified as neither prime nor composite. 2 is the smallest prime and the only even prime.",
-    "Sieve of Eratosthenes: A historical systematic algorithm for finding all prime numbers up to a limit N by crossing out multiples of each prime starting from 2, leaving uncrossed prime numbers.",
-    "Co-prime Numbers: Two positive integers a and b are co-prime if they share no common factors other than 1 (HCF(a, b) = 1). Any two consecutive integers are always co-prime.",
-    "Divisibility Rules: Shortcuts to test divisibility without full division: By 2 (last digit even), By 3 (digit sum div by 3), By 4 (last 2 digits div by 4), By 5 (ends in 0 or 5), By 8 (last 3 digits div by 8), By 9 (digit sum div by 9), By 10 (ends in 0).",
-    "Prime Factorisation: Expressing a composite number uniquely as a product of prime numbers (Fundamental Theorem of Arithmetic intuition). Methods include factor trees and repeated division by smallest prime divisors.",
-    "Highest Common Factor (HCF): The largest positive integer that divides two or more integers completely. Found by multiplying the lowest powers of common prime factors.",
-    "Lowest Common Multiple (LCM): The smallest positive integer that is a multiple of two or more integers. Found by multiplying the highest powers of all involved prime factors.",
-    "Fundamental Product Identity: For any two positive integers a and b, HCF(a, b) x LCM(a, b) = a x b.",
-    "Common Multiples and Periodic Events: LCM solves simultaneous periodic event problems (e.g., traffic lights changing together, alarm bells ringing simultaneously, runners meeting at a start line).",
-    "Common Factors and Equal Grouping: HCF solves maximum equal capacity or grouping problems (e.g., dividing items into equal packaging without leftovers).",
-    "Twin Primes and Prime Patterns: Pairs of prime numbers with a difference of 2 (e.g., (3, 5), (5, 7), (11, 13), (17, 19)) exhibit structural spacing in number theory."
+    "Phonetic Transmission of River Names: Tracing how the Sanskrit 'Sindhu' transformed phonetically into Old Persian 'Hidu', Greek 'Indoi', Latin 'India', and Arabic 'Hind'.",
+    "Eco-Geographic Nomenclature of Sapta Sindhava: Understanding 'Sapta Sindhava' as the land of seven rivers in the Rigveda, reflecting early geographical awareness of the Indus basin.",
+    "Cosmological Geography of Jambudvīpa: The Puranic and Buddhist worldview depicting the Indian subcontinent as the continent of the sacred Jamun (Rose-Apple) tree.",
+    "Cultural-Genealogical Foundations of Bhāratavarṣha: How ancient epics established 'Bhārata' as a shared cultural landscape united by natural frontiers rather than political boundaries.",
+    "Trans-Continental Documentation by Foreign Travelers: Analyzing Chinese terms like 'Yintu' recorded by pilgrim-scholars such as Xuanzang during his 7th-century travels.",
+    "Constitutional Synthesis in Article 1: The deliberate constitutional drafting that united the ancient indigenous name (Bharat) with the international name (India).",
+    "Natural Frontier Geography as Civilisational Boundary: How physical barriers—the Himalayan mountain arc and ocean waters—fostered a distinct regional cultural unity.",
+    "Multi-Lingual Epigraphic Verification: Examining royal inscriptions (such as Darius I's Naqsh-e-Rustam) to verify ancient international designations for India."
   ],
   "key_terms": [
     {
-      "term": "Factor",
-      "definition": "An integer that divides another integer completely leaving a remainder of zero."
+      "term": "Sapta Sindhava",
+      "definition": "The ancient Vedic geographical term meaning 'Land of Seven Rivers', referring to the Indus River basin and its tributaries."
     },
     {
-      "term": "Multiple",
-      "definition": "The product of a given integer and any non-zero counting number."
+      "term": "Jambudvīpa",
+      "definition": "An ancient cosmological and geographical name for the Indian subcontinent used in Puranic, Buddhist, and Jain literature, meaning 'Island/Continent of the Jambu Tree'."
     },
     {
-      "term": "Prime Number",
-      "definition": "A natural number greater than 1 having exactly two distinct positive factors: 1 and itself."
+      "term": "Bhāratavarṣha",
+      "definition": "The ancient Sanskrit name for India derived from King Bharata and the Bharata tribe, denoting the land lying north of the ocean and south of the snowy mountains."
     },
     {
-      "term": "Composite Number",
-      "definition": "A natural number greater than 1 having more than two distinct positive factors."
+      "term": "Sindhu",
+      "definition": "The Sanskrit name for the Indus River, serving as the linguistic root for the names Hidu, Hind, Hindustan, Indoi, and India."
     },
     {
-      "term": "Co-prime Numbers",
-      "definition": "Two integers sharing no common factors other than 1 (HCF = 1)."
+      "term": "Hindustān",
+      "definition": "A historical term derived from Old Persian 'Hidu', used extensively in medieval texts to refer to the northern and central Indian subcontinent."
     },
     {
-      "term": "Prime Factorisation",
-      "definition": "The unique representation of a composite number as a product of prime factors."
+      "term": "Yintu / Tianzhu",
+      "definition": "The historical Chinese names used by scholars like Xuanzang to refer to India in ancient historical chronicles."
     },
     {
-      "term": "Highest Common Factor (HCF)",
-      "definition": "The largest positive integer that divides two or more given integers without remainder."
+      "term": "Article 1 of the Constitution",
+      "definition": "The foundational constitutional clause declaring 'India, that is Bharat, shall be a Union of States', establishing the nation's legal names."
     },
     {
-      "term": "Lowest Common Multiple (LCM)",
-      "definition": "The smallest positive integer that is a multiple of two or more given integers."
+      "term": "Achaemenid Inscriptions",
+      "definition": "Ancient Persian royal stone inscriptions (e.g., of King Darius) that contain the earliest foreign mentions of 'Hi(n)du'."
     },
     {
-      "term": "Sieve of Eratosthenes",
-      "definition": "An ancient algorithm for isolating prime numbers by systematically eliminating multiples."
+      "term": "Puranic Cosmology",
+      "definition": "The traditional system of geography and universe mapping found in ancient Indian Puranic texts."
     },
     {
-      "term": "Divisibility Test",
-      "definition": "An arithmetic rule used to determine whether one number divides another without performing long division."
-    },
-    {
-      "term": "Twin Primes",
-      "definition": "A pair of prime numbers that differ by exactly 2."
-    },
-    {
-      "term": "Factor Tree",
-      "definition": "A diagrammatic representation breaking a composite number down into its prime factors."
+      "term": "Civilisational Unity",
+      "definition": "The underlying cultural, spiritual, and social commonality shared across the Indian subcontinent despite regional diversity."
     }
   ],
   "key_takeaways": [
-    "Every factor of a number n is bounded between 1 and n (1 <= f <= n).",
-    "1 is uniquely neither prime nor composite; 2 is the smallest prime and only even prime.",
-    "Two numbers are co-prime if their HCF equals 1 (e.g., any two consecutive integers).",
-    "Divisibility rules by 3 and 9 test digit sums; rules by 4 and 8 test last 2 and 3 digits.",
-    "Prime factorisation expresses any composite number uniquely as a product of primes.",
-    "HCF is computed using the lowest powers of common prime factors; LCM uses the highest powers of all prime factors.",
-    "For any two numbers a and b: HCF(a, b) x LCM(a, b) = a x b.",
-    "HCF solves maximum equal capacity division problems.",
-    "LCM solves simultaneous periodic event timing problems.",
-    "The Sieve of Eratosthenes systematically isolates prime numbers up to any limit N."
+    "The names 'India' and 'Bharat' reflect thousands of years of continuous civilisational history, geographical exploration, and cultural identity.",
+    "External names for India evolved phonetically from the River Sindhu across Persian, Greek, Latin, Arabic, and Chinese historical records.",
+    "Ancient literature defined Bharat as a unified cultural landscape bounded by the Himalayas in the north and the seas in the south.",
+    "Article 1 of the Constitution harmoniously blends India's deep ancient heritage ('Bharat') with its modern global identity ('India')."
   ],
-  "image_asset": {
-    "title": "Sieve of Eratosthenes Prime Number Grid",
-    "url": "/assets/images/ch5_sieve_eratosthenes.png",
-    "alt_text": "Number grid from 1 to 100 with highlighted prime numbers",
-    "hotspots": [
-      {
-        "id": "hs5_number1",
-        "label": "Special Case: Number 1",
-        "description": "1 has only 1 factor. It is neither prime nor composite.",
-        "x_percent": 5.0,
-        "y_percent": 10.0,
-        "w_percent": 8.0,
-        "h_percent": 8.0
-      },
-      {
-        "id": "hs5_first_prime",
-        "label": "Smallest Prime: Number 2",
-        "description": "2 is the only even prime number. All higher multiples of 2 are composite.",
-        "x_percent": 15.0,
-        "y_percent": 10.0,
-        "w_percent": 8.0,
-        "h_percent": 8.0
-      },
-      {
-        "id": "hs5_primes_count",
-        "label": "Primes 1 to 100",
-        "description": "There are exactly 25 prime numbers between 1 and 100.",
-        "x_percent": 30.0,
-        "y_percent": 40.0,
-        "w_percent": 40.0,
-        "h_percent": 30.0
-      }
-    ]
-  },
-  "storyboard": {
-    "scene_1": "Introduction to Prime Time through real-world observation.",
-    "scene_2": "Interactive exploration of mathematical patterns and definitions.",
-    "scene_3": "Hands-on problem solving and pattern verification.",
-    "scene_4": "Synthesis of key takeaways and real-world applications."
-  },
   "video_url": "/videos/Class6/Maths/05-The Other Side of Zero.mp4",
   "video_type": "mp4"
 }

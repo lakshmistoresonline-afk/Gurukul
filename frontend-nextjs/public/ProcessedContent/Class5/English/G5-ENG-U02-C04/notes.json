@@ -1,134 +1,75 @@
 {
-  "chapterNumber": 4,
-  "chapterTitle": "The Wise Parrot",
-  "unitNumber": 2,
-  "unitTitle": "My Colourful World",
-  "chapterType": "Story / Folk Tale",
-  "overview": "A celebrated traditional folk tale about a wealthy merchant who keeps a beautiful talking parrot inside a golden cage. When preparing to travel to the bird's native forest homeland, the merchant asks if the parrot desires a gift. The parrot asks only that greetings be conveyed to its wild companions. In the forest, when the merchant delivers the message, a wild parrot suddenly drops from a tree, feigning death. Upon returning home, the merchant sorrowfully relates this incident. Understanding the coded strategy, the caged parrot immediately plays dead. When the grieving merchant sets the 'dead' bird on the window sill, the clever parrot instantly takes flight to freedom.",
-  "centralTheme": "The priceless value of freedom over golden captivity, solidarity among wild creatures, strategic intelligence, and outsmarting bondage through wisdom.",
-  "detailedBreakdown": [
-    {
-      "sectionTitle": "Part 1: The Golden Cage & The Request",
-      "lines": "A rich merchant kept a talking parrot in a golden cage... The parrot asked only for greetings to be carried to its wild friends in the forest.",
-      "analysis": "Establishes the contrast between luxury and liberty. Despite gold bars and abundant food, the parrot longs for freedom."
-    },
-    {
-      "sectionTitle": "Part 2: The Forest Message & Feigned Death",
-      "lines": "The merchant met wild parrots and delivered the message... One wild parrot stiffened and fell from a branch like a stone.",
-      "analysis": "The wild parrot executes a brilliant non-verbal communication strategy, demonstrating how to escape captivity by feigning death."
-    },
-    {
-      "sectionTitle": "Part 3: The Merchant's Tale & Coded Action",
-      "lines": "The merchant returned and sorrowfully described the wild bird's fall... Hearing this, the caged parrot collapsed motionless.",
-      "analysis": "The caged bird instantly decodes the message, demonstrating high intelligence and acting upon the wild bird's advice."
-    },
-    {
-      "sectionTitle": "Part 4: The Escape to Absolute Freedom",
-      "lines": "The merchant grievingly placed the bird on the window sill... Instantly, the parrot spread its wings and flew up into the sky!",
-      "analysis": "The climax delivers triumph as intelligence overcomes physical force, restoring the parrot to its natural habitat."
-    }
-  ],
-  "characterAnalysis": [
-    {
-      "character": "The Caged Parrot",
-      "traits": "Clever, patient, values freedom above golden luxury, capable of decoding symbolic advice."
-    },
-    {
-      "character": "The Merchant",
-      "traits": "Wealthy, well-intentioned, affectionate owner, but fails to realize the cruelty of keeping wild birds caged."
-    },
-    {
-      "character": "The Wild Parrot",
-      "traits": "Wise, supportive companion who communicates a secret plan of liberation without words."
-    }
-  ],
-  "keyVocabulary": [
-    {
-      "term": "Feigned",
-      "definition": "Pretended to be affected by an injury, state, or feeling.",
-      "synonym": "Faked / Simulated",
-      "antonym": "Genuine / Authentic"
-    },
-    {
-      "term": "Merchant",
-      "definition": "A person involved in wholesale trade or supplying goods.",
-      "synonym": "Trader / Dealer",
-      "antonym": "Customer / Buyer"
-    },
-    {
-      "term": "Sorrowfully",
-      "definition": "Feeling or showing grief, regret, or sadness.",
-      "synonym": "Mournfully / Sadly",
-      "antonym": "Joyfully / Cheerfully"
-    },
-    {
-      "term": "Motionless",
-      "definition": "Not moving at all; completely still.",
-      "synonym": "Still / Immobilized",
-      "antonym": "Active / Moving"
-    }
-  ],
-  "grammarFocus": {
-    "conceptTitle": "Adverbs of Manner & Silent Letters",
-    "rules": "Adverbs of manner describe HOW an action is performed, usually ending in '-ly'. Silent letters are written letters not pronounced in speech.",
-    "examples": [
-      "The merchant sorrowfully carried the bird (Manner)",
-      "The parrot silently watched from the sill (Manner)",
-      "Silent 'g' in feigned (/feɪnd/)",
-      "Silent 'h' in honest (/ˈɒn.ɪst/)"
+  "chapter_number": 4,
+  "chapter_title": "We the Travellers — II",
+  "source_file": "eemm104.pdf",
+  "theme": "Large Number Column Arithmetic & Palindromes",
+  "conceptual_foundation": {
+    "introduction": "This chapter builds numerical fluency in performing addition and subtraction of 5-digit numbers in real-world travel contexts—such as multi-city road trip planning, vehicle fuel expenditure tracking, and highway toll logistics. It reinforces place value alignment, column regrouping (carrying), and borrowing across zeroes. Furthermore, it introduces intriguing numerical patterns including consecutive number sums, inverse arithmetic verification, and reverse-and-add palindromic number algorithms.",
+    "core_concepts": [
+      {
+        "concept": "5-Digit Column Addition with Regrouping",
+        "explanation": "Adding 5-digit numbers by aligning corresponding place value columns (O, T, H, Th, TTh). When the sum of a column exceeds 9, regroup (carry) 1 unit to the next higher place value column to the left.\n\n[Instructional Dialogue Simulation]\nTeacher: 'A bus covers 24,150 km in Month 1 and 35,870 km in Month 2. How do we find total distance?'\nRaman: 'Align columns! Ones: 0+0=0. Tens: 5+7=12 (write 2, carry 1). Hundreds: 1+8+1=10 (write 0, carry 1). Thousands: 4+5+1=10 (write 0, carry 1). Ten Thousands: 2+3+1=6.'\nTeacher: 'Total distance = 60,020 km!'",
+        "example": "Add 24,150 + 35,870 = 60,020 km."
+      },
+      {
+        "concept": "5-Digit Subtraction & Borrowing Across Zeroes",
+        "explanation": "Subtracting 5-digit numbers column by column. When a minuend digit is smaller than the subtrahend digit, borrow 1 unit from the adjacent left place value column. Borrowing across zeroes requires cascading renames across multiple places.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Subtract 18,250 from 50,000.'\nSheela: 'Since 50,000 has zeroes in ones, tens, hundreds, thousands, we borrow from 5 Ten Thousands! 5 becomes 4, creating 9 Thousands, 9 Hundreds, 9 Tens, and 10 Ones!'\nTeacher: 'Correct! 50,000 - 18,250 = 31,750.'",
+        "example": "Calculate 50,000 - 18,250 = 31,750."
+      },
+      {
+        "concept": "Inverse Relationship of Addition and Subtraction",
+        "explanation": "Addition and subtraction are inverse operations. Minuend - Subtrahend = Difference <-> Difference + Subtrahend = Minuend. Used for checking arithmetic correctness.\n\n[Instructional Dialogue Simulation]\nTeacher: 'How can you check if 45,600 - 18,200 = 27,400 is correct?'\nAnish: 'Add the difference back to the subtrahend: 27,400 + 18,200!'\nTeacher: '27,400 + 18,200 = 45,600! Result verified!'",
+        "example": "Verification:\n• 45,600 - 18,200 = 27,400.\n• Check: 27,400 + 18,200 = 45,600."
+      },
+      {
+        "concept": "Palindromic Numbers & Reverse-and-Add Algorithm",
+        "explanation": "Palindromic numbers read identical forwards and backwards (e.g., 121, 4554). Any start number can often be converted into a palindrome by repeatedly reversing its digits and adding the result to the original.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Take number 28. Reverse its digits.'\nRaman: '82!'\nTeacher: 'Now add them: 28 + 82 = 110. Is 110 a palindrome?'\nSheela: 'No, 110 reversed is 011. Repeat! Reverse 110 -> 011 (11). Add: 110 + 011 = 121!'\nTeacher: '121 reads same both ways—a palindrome!'",
+        "example": "Reverse-and-Add 28:\n• Step 1: 28 + 82 = 110.\n• Step 2: 110 + 011 = 121 (Palindrome achieved)."
+      },
+      {
+        "concept": "Consecutive Natural Number Sum Patterns",
+        "explanation": "Sum of first n natural numbers can be rapidly calculated using the formula n(n+1)/2 or by pairing terms from ends (e.g., 1+10=11, 2+9=11, etc.).\n\n[Instructional Dialogue Simulation]\nTeacher: 'Find sum of 1 + 2 + 3 + ... + 10.'\nAnish: 'Pairing: (1+10)=11, (2+9)=11, (3+8)=11, (4+7)=11, (5+6)=11. 5 pairs of 11 = 55!'\nTeacher: 'Brilliant trick!'",
+        "example": "Sum of 1 to 10 = 55."
+      }
     ]
   },
-  "importantTakeaways": [
-    "Freedom is a natural right that cannot be replaced by gold cages or luxury.",
-    "Wisdom, solidarity, and strategic thinking can overcome physical captivity."
+  "key_formulas_and_rules": [
+    "Sum = Addend1 + Addend2",
+    "Difference = Minuend - Subtrahend",
+    "Inverse Verification Rule: Difference + Subtrahend = Minuend",
+    "Palindromic Property: Number = Reversed Number",
+    "Sum of First n Natural Numbers = n(n + 1) / 2"
   ],
+  "real_world_applications": "Calculating total multi-state road trip distances, tracking fuel consumption budgets, checking bank transaction balances using inverse operations, and analyzing route mileage logs.",
   "image_asset": {
-    "asset_id": "IMG_CH04",
-    "filename": "ch04_wise_parrot_escape_flowchart.png",
-    "asset_url": "/assets/images/ch04_wise_parrot_escape_flowchart.png",
-    "title": "Avian Coded Escape Strategy Flowchart (The Wise Parrot)",
+    "chapter_number": 4,
+    "image_id": "ch04_column_regrouping",
+    "file_name": "ch04_column_regrouping.png",
+    "local_url": "/assets/images/ch04_column_regrouping.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 2400,
-      "height": 1350
-    },
-    "alt_text": "Sequential flowchart mapping the caged parrot's strategic message, pretend collapse, and escape.",
+    "title": "5-Digit Column Regrouping & Palindrome Cascade",
+    "description": "Column addition/subtraction with regrouping across zero and 4-step reverse-and-add palindrome generation.",
     "hotspots": [
       {
-        "id": "hs_04_cage",
-        "label": "Golden Cage",
+        "label": "Ten Thousands Borrow Column",
         "x_percent": 20.0,
-        "y_percent": 60.0,
-        "w_percent": 15.0,
-        "h_percent": 20.0,
-        "tooltip": "Captured parrot longing for freedom in merchant's mansion"
-      },
-      {
-        "id": "hs_04_forest",
-        "label": "Wild Message",
-        "x_percent": 50.0,
-        "y_percent": 25.0,
-        "w_percent": 15.0,
-        "h_percent": 15.0,
-        "tooltip": "Wild flock transmits coded non-violent strategy via collapse"
-      },
-      {
-        "id": "hs_04_feign",
-        "label": "Playing Dead",
-        "x_percent": 70.0,
-        "y_percent": 55.0,
-        "w_percent": 12.0,
-        "h_percent": 12.0,
-        "tooltip": "Parrot feigns death on cage floor upon merchant's return"
-      },
-      {
-        "id": "hs_04_flight",
-        "label": "Flight to Freedom",
-        "x_percent": 90.0,
         "y_percent": 30.0,
-        "w_percent": 10.0,
-        "h_percent": 15.0,
-        "tooltip": "Parrot flies out open window to rejoin forest flock"
+        "w_percent": 12.0,
+        "h_percent": 40.0
+      },
+      {
+        "label": "Thousands Column",
+        "x_percent": 34.0,
+        "y_percent": 30.0,
+        "w_percent": 12.0,
+        "h_percent": 40.0
+      },
+      {
+        "label": "Palindrome Reverse Step",
+        "x_percent": 70.0,
+        "y_percent": 45.0,
+        "w_percent": 20.0,
+        "h_percent": 25.0
       }
     ]
   }

@@ -1,174 +1,138 @@
 {
-  "unit_number": 1,
   "chapter_number": 1,
-  "chapter_title": "Papa's Spectacles",
-  "mindmap": {
-    "root_node": "Papa's Spectacles (Poem / Narrative)",
-    "central_theme": "Family relationships, observational mindfulness vs. panic, intergenerational empathy, and lighthearted domestic humor",
-    "sub_nodes": [
+  "chapter_title": "Travelling, Now and Then",
+  "mind_map": {
+    "root_node": "Travelling, Now and Then (5-Digit Numbers, Indian Place Value & Travel Logistics)",
+    "main_branches": [
       {
-        "node_id": "M1_THEME",
-        "title": "Main Themes, Core Morals & Pedagogical Value",
-        "child_nodes": [
+        "branch_title": "1. Historical Transport & Large Number Context",
+        "sub_branches": [
           {
-            "title": "Central Theme & Domestic Context",
-            "details": "Depicts an amusing, relatable household situation where an adult misplaces reading glasses, triggering a frantic search across rooms, furniture, and pockets."
+            "sub_title": "Transport Evolution & Scale",
+            "key_nodes": [
+              "Historical Modes: Walking, animal-driven carts, hand-paddled log boats (limited distance range)",
+              "Modern High-Speed Modes: Motor boats, diesel/electric trains, highway buses, aviation",
+              "Numerical Scale Shift: Scaling daily travel range from single-digit km to 5-digit km magnitudes (up to 99,999 km)"
+            ],
+            "misconception_alert": "Believing larger physical vehicle size automatically implies higher speed or longer distance travel.",
+            "formula_or_rule": "Range Expansion Rule: Transport technological progress increases travel distance capability exponentially.",
+            "real_world_application": "Comparing historical trade routes with modern national highway networks."
           },
           {
-            "title": "Observational Mindfulness vs. Panic",
-            "details": "Panicking causes selective attention deficit where obvious objects right in front of us are overlooked; calm observation leads to quick, simple solutions."
-          },
-          {
-            "title": "Intergenerational Empathy & Family Warmth",
-            "details": "Highlights the affectionate bond between elders and children, showing how youngsters can gently assist parents in everyday tasks."
-          },
-          {
-            "title": "Pedagogy & NEP 2020/NCF Alignment",
-            "details": "Promotes socio-emotional learning, household cooperation, and observational awareness aligned with primary language development objectives."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Theme Breakdown",
-            "details": "Mermaid Syntax:\ngraph TD\n  A[Papa's Spectacles Theme] --> B[Domestic Humor]\n  A --> C[Observational Mindfulness]\n  A --> D[Intergenerational Bond]\n  B --> B1[Absent-Mindedness]\n  C --> C1[Calm Attention vs. Frantic Panic]\n  D --> D1[Child's Gentle Assistance]"
+            "sub_title": "5-Digit Place Value Structure",
+            "key_nodes": [
+              "Positional Columns (Right to Left): Ones (O), Tens (T), Hundreds (H), Thousands (Th), Ten Thousands (TTh)",
+              "Baseline Magnitude: 10 Thousand = 10,000 (First 5-digit number, 4 zeroes)",
+              "Maximum 5-Digit Value: 99,999 (9 Ten Thousands + 9 Thousands + 9 Hundreds + 9 Tens + 9 Ones)",
+              "Ten Thousands Period: Grouping (TTh, Th) into thousands period separated by Indian system comma (e.g., 58,042)"
+            ],
+            "misconception_alert": "Confusing a digit's face value with its positional place value (e.g., in 74,520, face value is 7 but place value is 70,000).",
+            "formula_or_rule": "Place Value = Digit x Column Weight (e.g., 7 x 10,000 = 70,000).",
+            "real_world_application": "Reading 5-digit population statistics and highway milestone markings."
           }
         ]
       },
       {
-        "node_id": "M1_PLOT",
-        "title": "Story Sequence, Plot Turns & Visual Arc",
-        "child_nodes": [
+        "branch_title": "2. Number Operations, Ordering & Formations",
+        "sub_branches": [
           {
-            "title": "Inciting Incident (Beginning)",
-            "details": "Papa loses his reading spectacles—his only pair—making him unable to read the morning newspaper, watch TV, or cut vegetables."
+            "sub_title": "Expanded Form & Decompositions",
+            "key_nodes": [
+              "Additive Decomposition: Expressing numbers as sum of place values (e.g., 67,543 = 60,000 + 7,000 + 500 + 40 + 3)",
+              "Predecessor & Successor: Predecessor = Number - 1; Successor = Number + 1",
+              "Transition Points: 9,999 + 1 = 10,000 (4-digit to 5-digit boundary)"
+            ],
+            "misconception_alert": "Omitting zero terms in expanded form notation (e.g., writing 50,402 as 50,000 + 400 + 2 instead of accounting for 0 Thousands).",
+            "formula_or_rule": "Expanded Form = Sum of (Digit x Place Value Weight) for all non-zero digits.",
+            "real_world_application": "Breaking down bank cheque amounts and financial receipts."
           },
           {
-            "title": "Frantic Multi-Room Search (Mid-point)",
-            "details": "Papa checks inside coat pockets, glances underneath chairs, searches near window sills, and turns the house upside down."
-          },
-          {
-            "title": "The Observant Climax",
-            "details": "The young child approaches Papa, calms him down ('Stop, Papa!'), and points out that the spectacles are perched right on top of his forehead."
-          },
-          {
-            "title": "Humorous Resolution",
-            "details": "Papa touches his forehead, realizes his absent-mindedness, and the family shares a warm, hearty laugh together."
-          },
-          {
-            "title": "Mermaid Node Hierarchy: Plot Trajectory",
-            "details": "Mermaid Syntax:\ngraph LR\n  P1[Lost Glasses] --> P2[Frantic Search: Pockets/Chair/Window] --> P3[Child Steps In] --> P4[Glasses Found on Forehead] --> P5[Family Laughter & Relief]"
+            "sub_title": "Digit Permutations & Comparative Analysis",
+            "key_nodes": [
+              "Column-by-Column Comparison: Compare digits from leftmost place (Ten Thousands) to rightmost (Ones)",
+              "Greatest Number Formation: Arrange given digits in strict descending order (e.g., digits 3,0,8,5,2 -> 85,320)",
+              "Smallest Number Formation: Arrange digits in ascending order, ensuring leading digit is non-zero (e.g., digits 3,0,8,5,2 -> 20,358)"
+            ],
+            "misconception_alert": "Placing zero as the leading digit when forming smallest n-digit numbers (e.g., 02,358 is a 4-digit value, not 5-digit).",
+            "formula_or_rule": "Comparative Rule: A number with a larger digit in the highest place value column is strictly greater.",
+            "real_world_application": "Sorting vehicle license plate numbers and highway registration codes."
           }
         ]
       },
       {
-        "node_id": "M1_CHARACTERS",
-        "title": "Key Characters & Behavioural Profiles",
-        "child_nodes": [
+        "branch_title": "3. Rounding Off, Estimation & Speed Calculations",
+        "sub_branches": [
           {
-            "title": "Papa (Father)",
-            "details": "Hardworking, reliant on reading glasses; prone to mild absent-mindedness when busy or stressed; appreciative of his child's help."
+            "sub_title": "Rounding Off Benchmarks",
+            "key_nodes": [
+              "Nearest Tens Rule: Inspect ones digit; if >= 5, round tens up, else round down",
+              "Nearest Hundreds Rule: Inspect tens digit; if >= 5, round hundreds up",
+              "Nearest Thousands Rule: Inspect hundreds digit; if >= 5, round thousands up",
+              "Logistical Utility: Enables rapid mental estimation for fuel budgets and total travel times"
+            ],
+            "misconception_alert": "Rounding down when the decision digit is exactly 5 (5 requires rounding up to higher benchmark).",
+            "formula_or_rule": "Benchmark Rule: Decision digit >= 5 -> Target place incremented by 1; trailing digits set to 0.",
+            "real_world_application": "Estimating total road trip expenses, fuel volume required, and hotel stays."
           },
           {
-            "title": "The Young Narrator (Child)",
-            "details": "Sharp-eyed, calm under pressure, respectful, empathetic, and quick to notice visual details that adults miss."
-          },
-          {
-            "title": "Supporting Household Members",
-            "details": "Family members who assist in searching pockets and furniture, creating a supportive, collaborative home atmosphere."
-          }
-        ]
-      },
-      {
-        "node_id": "M1_VOCAB_PHONICS",
-        "title": "Vocabulary, Pronunciation & Phonics Clusters",
-        "child_nodes": [
-          {
-            "title": "Core Vocabulary Glossary",
-            "details": "Spectacles (eyeglasses), Glanced (took a quick look), Frantic (hurried/anxious), Misplaced (lost temporarily), Perched (balanced lightly)."
-          },
-          {
-            "title": "Phonics & Syllable Stress",
-            "details": "Trisyllabic word 'spec-ta-cles' (/ˈspɛk.tə.kəl z/); soft ending in 'glanced' producing a crisp /t/ sound."
-          },
-          {
-            "title": "Silent Letters & Spelling Mechanics",
-            "details": "Silent 'k' in 'know' (/neʊ/); silent 'w' in 'write' (/raɪt/); double letters in 'pockets' and 'vegetables'."
-          },
-          {
-            "title": "Synonyms & Antonyms",
-            "details": "Spectacles = Glasses; Frantic × Calm; Glanced × Stared; Misplaced × Found."
-          }
-        ]
-      },
-      {
-        "node_id": "M1_GRAMMAR",
-        "title": "Grammar, Mechanics & Sentence Structures",
-        "child_nodes": [
-          {
-            "title": "Prepositions of Location & Position",
-            "details": "Spatial rules: 'inside his pockets', 'under his chair', 'near the window', 'on his head'."
-          },
-          {
-            "title": "Negative Contractions",
-            "details": "Shortened verb forms: can't (cannot), where's (where is), he's (he is), isn't (is not)."
-          },
-          {
-            "title": "Nouns & Plural Mechanics",
-            "details": "Concrete nouns (spectacles, chair, window, pockets) and paired items ('a pair of spectacles/shoes/socks')."
-          },
-          {
-            "title": "Sentence Types & Punctuation",
-            "details": "Interrogative sentences ('Where can it be?'), Exclamatory phrases ('Stop, Papa!'), and Direct Quotations."
+            "sub_title": "Odometer Deltas & Speed-Distance-Time Math",
+            "key_nodes": [
+              "Odometer Tracking: Final Odometer Reading - Initial Odometer Reading = Net Distance Covered",
+              "Speed Formula: Speed = Distance / Time (e.g., 200 km in 4 hours = 50 km/h)",
+              "Distance Formula: Distance = Speed x Time (e.g., 60 km/h for 3.5 hours = 210 km)",
+              "Time Formula: Time = Distance / Speed"
+            ],
+            "misconception_alert": "Adding initial and final odometer readings instead of subtracting them to find distance.",
+            "formula_or_rule": "Distance Delta = Reading_final - Reading_initial; Distance = Speed x Time.",
+            "real_world_application": "Monitoring commercial bus transit logs, train arrival schedules, and vehicle fuel efficiency."
           }
         ]
       }
     ]
   },
   "image_asset": {
-    "asset_id": "IMG_CH01",
-    "filename": "ch01_papas_spectacles_search_map.png",
-    "asset_url": "/assets/images/ch01_papas_spectacles_search_map.png",
-    "title": "Household Search Map (Papa's Spectacles)",
+    "chapter_number": 1,
+    "image_id": "ch01_travel_odometer",
+    "file_name": "ch01_travel_odometer.png",
+    "local_url": "/assets/images/ch01_travel_odometer.png",
     "aspect_ratio": "16:9",
-    "dimensions": {
-      "width": 2400,
-      "height": 1350
-    },
-    "alt_text": "Vector floor plan diagram detailing search locations for misplaced reading glasses.",
+    "title": "5-Digit Place Value & Vehicle Odometer Gauge",
+    "description": "Visual representation of 5-digit number place value columns (TTh, Th, H, T, O) and odometer distance delta calculation.",
     "hotspots": [
       {
-        "id": "hs_01_pockets",
-        "label": "Coat Pockets",
-        "x_percent": 32.0,
-        "y_percent": 55.0,
+        "label": "Ten Thousands (TTh)",
+        "x_percent": 18.5,
+        "y_percent": 45.0,
         "w_percent": 12.0,
-        "h_percent": 15.0,
-        "tooltip": "Checked inside coat pockets"
+        "h_percent": 15.0
       },
       {
-        "id": "hs_01_chair",
-        "label": "Under Chair",
-        "x_percent": 68.0,
-        "y_percent": 72.0,
-        "w_percent": 15.0,
-        "h_percent": 18.0,
-        "tooltip": "Glanced under wooden reading chair"
+        "label": "Thousands (Th)",
+        "x_percent": 34.0,
+        "y_percent": 45.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
       },
       {
-        "id": "hs_01_window",
-        "label": "Near Window",
-        "x_percent": 85.0,
-        "y_percent": 40.0,
-        "w_percent": 10.0,
-        "h_percent": 14.0,
-        "tooltip": "Searched near the sunlit window"
-      },
-      {
-        "id": "hs_01_forehead",
-        "label": "Forehead Ledge",
+        "label": "Hundreds (H)",
         "x_percent": 50.0,
-        "y_percent": 18.0,
-        "w_percent": 14.0,
-        "h_percent": 10.0,
-        "tooltip": "Spectacles resting right on Papa's head!"
+        "y_percent": 45.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Tens (T)",
+        "x_percent": 66.0,
+        "y_percent": 45.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Ones (O)",
+        "x_percent": 82.0,
+        "y_percent": 45.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
       }
     ]
   }

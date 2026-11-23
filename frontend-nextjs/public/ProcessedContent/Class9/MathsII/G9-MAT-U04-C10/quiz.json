@@ -1,57 +1,204 @@
-[
-  {
-    "question": "Student scores: Internals 60% (weight 3), Project 64% (weight 2), Final Exam 73% (weight 5). Find overall score.",
-    "options": [
-      "Weighted Score = (3*60 + 2*64 + 5*73)/(3 + 2 + 5) = (180 + 128 + 365)/10 = 673/10 = 67.3%.",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "Weighted Score = (3*60 + 2*64 + 5*73)/(3 + 2 + 5) = (180 + 128 + 365)/10 = 673/10 = 67.3%."
-  },
-  {
-    "question": "Which chart is best for comparing category percentage proportions across groups of different total sizes?",
-    "options": [
-      "Correct concept application",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "C"
-  },
-  {
-    "question": "Explain why taking an unweighted average of two student group test averages produces errors when group sizes differ.",
-    "options": [
-      "Unweighted average assumes equal student counts. Larger groups contribute more total scores, so their mean must carry pr",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "Unweighted average assumes equal student counts. Larger groups contribute more total scores, so their mean must carry proportionally higher weight."
-  },
-  {
-    "question": "Explain Simpson's Paradox and how it affects data interpretation.",
-    "options": [
-      "Simpson's Paradox occurs when an overall aggregated trend reverses or disappears when data is split into subgroups, caus",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "Simpson's Paradox occurs when an overall aggregated trend reverses or disappears when data is split into subgroups, caused by unequal sample weights in the subgroups."
-  },
-  {
-    "question": "Weighted grading uses 30% assignments, 20% midterms, 50% finals. Student A scores (85, 75, 90). Student B scores (95, 90, 70). Calculate both weighted scores and explain who scored higher.",
-    "options": [
-      "Student A: (0.3*85 + 0.2*75 + 0.5*90) = 25.5 + 15 + 45 = 85.5%. Student B: (0.3*95 + 0.2*90 + 0.5*70) = 28.5 + 18 + 35 =",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
-    ],
-    "correct_answer": 0,
-    "explanation": "Student A: (0.3*85 + 0.2*75 + 0.5*90) = 25.5 + 15 + 45 = 85.5%. Student B: (0.3*95 + 0.2*90 + 0.5*70) = 28.5 + 18 + 35 = 81.5%. Student A achieved higher score (85.5% vs 81.5%) due to stronger performance on the heavily weighted final exam (50%)."
-  }
-]
+{
+  "chapter_number": 10,
+  "chapter_title": "Sound: Waves, Propagation, and Acoustics",
+  "level_1_easy_foundational": [
+    {
+      "question_id": "CH10-L1-01",
+      "question_type": "MCQ",
+      "question": "What is the pitch of a sound wave determined by?",
+      "options": [
+        "A) Amplitude",
+        "B) Frequency",
+        "C) Speed",
+        "D) Wavelength only"
+      ],
+      "correct_answer": "B) Frequency",
+      "explanation": "Pitch depends directly on wave frequency (higher frequency produces a higher pitch).",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 10.",
+      "solution_key_3_part": {
+        "key_concept": "Pitch depends directly on wave frequency (higher frequency produces a higher pitch)",
+        "step_by_step_derivation": "Pitch depends directly on wave frequency (higher frequency produces a higher pitch).",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch10_sound_waves.png",
+        "target_region": {
+          "hotspot_id": "HS-10-01",
+          "label": "Compressions & Rarefactions",
+          "x_percent": 25,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Longitudinal mechanical pressure waves."
+        }
+      }
+    },
+    {
+      "question_id": "CH10-L1-02",
+      "question_type": "Fill-in-the-Blanks",
+      "question": "Ultrasonic waves have frequencies above the human hearing threshold of ______ Hz.",
+      "options": [],
+      "correct_answer": "20000",
+      "explanation": "Human hearing ranges from 20 Hz to 20,000 Hz (20 kHz); frequencies above 20 kHz are ultrasonic.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 10.",
+      "solution_key_3_part": {
+        "key_concept": "Human hearing ranges from 20 Hz to 20,000 Hz (20 kHz); frequencies above 20 kHz are ultrasonic",
+        "step_by_step_derivation": "Human hearing ranges from 20 Hz to 20,000 Hz (20 kHz); frequencies above 20 kHz are ultrasonic.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch10_sound_waves.png",
+        "target_region": {
+          "hotspot_id": "HS-10-01",
+          "label": "Compressions & Rarefactions",
+          "x_percent": 25,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Longitudinal mechanical pressure waves."
+        }
+      }
+    },
+    {
+      "question_id": "CH10-L1-03",
+      "question_type": "True/False with Justification",
+      "question": "True or False: Sound waves can travel through the vacuum of outer space.",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "Sound is a mechanical wave that requires a material medium (solid, liquid, gas) to propagate.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 10.",
+      "solution_key_3_part": {
+        "key_concept": "Sound is a mechanical wave that requires a material medium (solid, liquid, gas) to propagate",
+        "step_by_step_derivation": "Sound is a mechanical wave that requires a material medium (solid, liquid, gas) to propagate.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch10_sound_waves.png",
+        "target_region": {
+          "hotspot_id": "HS-10-01",
+          "label": "Compressions & Rarefactions",
+          "x_percent": 25,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Longitudinal mechanical pressure waves."
+        }
+      }
+    }
+  ],
+  "level_2_medium_conceptual": [
+    {
+      "question_id": "CH10-L2-01",
+      "question_type": "Short Answer",
+      "question": "A sound wave has a frequency of 2 kHz and a wavelength of 35 cm. Calculate its speed and the time required to travel 1.5 km.",
+      "options": [],
+      "correct_answer": "Frequency = 2000 Hz, wavelength = 0.35 m. Speed v = f × λ = 2000 × 0.35 = 700 m/s. Time t = d / v = 1500 / 700 = 2.14 seconds.",
+      "explanation": "Applying wave speed v = f·λ gives 700 m/s; dividing distance by speed gives 2.14 seconds.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 10.",
+      "solution_key_3_part": {
+        "key_concept": "Applying wave speed v = f·λ gives 700 m/s; dividing distance by speed gives 2",
+        "step_by_step_derivation": "Applying wave speed v = f·λ gives 700 m/s; dividing distance by speed gives 2.14 seconds.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch10_sound_waves.png",
+        "target_region": {
+          "hotspot_id": "HS-10-01",
+          "label": "Compressions & Rarefactions",
+          "x_percent": 25,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Longitudinal mechanical pressure waves."
+        }
+      }
+    },
+    {
+      "question_id": "CH10-L2-02",
+      "question_type": "Structural Analysis",
+      "question": "Calculate the minimum distance required between a person and a reflecting cliff to hear a distinct echo in air (speed of sound = 344 m/s).",
+      "options": [],
+      "correct_answer": "Persistence of human hearing = 0.1 s. Total round-trip distance = 2d = v × t = 344 × 0.1 = 34.4 m. Minimum cliff distance d = 34.4 / 2 = 17.2 meters.",
+      "explanation": "The reflected echo must arrive at least 0.1 s after the original sound, requiring a minimum distance of 17.2 m.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 10.",
+      "solution_key_3_part": {
+        "key_concept": "The reflected echo must arrive at least 0",
+        "step_by_step_derivation": "The reflected echo must arrive at least 0.1 s after the original sound, requiring a minimum distance of 17.2 m.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch10_sound_waves.png",
+        "target_region": {
+          "hotspot_id": "HS-10-01",
+          "label": "Compressions & Rarefactions",
+          "x_percent": 25,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Longitudinal mechanical pressure waves."
+        }
+      }
+    }
+  ],
+  "level_3_hard_advanced": [
+    {
+      "question_id": "CH10-L3-01",
+      "question_type": "Case-Study Scenarios",
+      "question": "A SONAR signal emitted from a research vessel returns from the ocean seabed after 3.2 seconds. If the speed of sound in seawater is 1530 m/s, calculate the ocean depth.",
+      "options": [],
+      "correct_answer": "Round-trip distance 2d = v × t = 1530 × 3.2 = 4896 m. Seabed depth d = 4896 / 2 = 2448 meters (2.448 km).",
+      "explanation": "SONAR uses pulse reflection duration to calculate ocean depth.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 10.",
+      "solution_key_3_part": {
+        "key_concept": "SONAR uses pulse reflection duration to calculate ocean depth",
+        "step_by_step_derivation": "SONAR uses pulse reflection duration to calculate ocean depth.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch10_sound_waves.png",
+        "target_region": {
+          "hotspot_id": "HS-10-01",
+          "label": "Compressions & Rarefactions",
+          "x_percent": 25,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Longitudinal mechanical pressure waves."
+        }
+      }
+    },
+    {
+      "question_id": "CH10-L3-02",
+      "question_type": "Give Reasons / Critical Thinking",
+      "question": "Explain three important industrial and medical applications of ultrasonic sound waves.",
+      "options": [],
+      "correct_answer": "1) Medical Echocardiography & USG: Imaging heart action and internal fetal development. 2) Industrial NDT Flaw Detection: Detecting hidden cracks in metal blocks/bridges. 3) Ultrasonic Cleaning: Removing fine grease/dust from intricate spiral components.",
+      "explanation": "High-frequency ultrasonic waves penetrate media and reflect off boundaries, enabling non-destructive testing and medical imaging.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 10.",
+      "solution_key_3_part": {
+        "key_concept": "High-frequency ultrasonic waves penetrate media and reflect off boundaries, enabling non-destructive testing and medical imaging",
+        "step_by_step_derivation": "High-frequency ultrasonic waves penetrate media and reflect off boundaries, enabling non-destructive testing and medical imaging.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch10_sound_waves.png",
+        "target_region": {
+          "hotspot_id": "HS-10-01",
+          "label": "Compressions & Rarefactions",
+          "x_percent": 25,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Longitudinal mechanical pressure waves."
+        }
+      }
+    }
+  ]
+}

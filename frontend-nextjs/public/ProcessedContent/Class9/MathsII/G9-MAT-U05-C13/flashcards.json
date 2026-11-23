@@ -1,48 +1,114 @@
-{
-  "chapter_number": 13,
-  "chapter_title": "Two Variables, One Line",
-  "flashcards": [
-    {
-      "card_id": 1,
-      "level": "Basic Recall",
-      "front_question": "What is the standard general form and the slope-intercept form of a linear equation in two variables?",
-      "back_answer": "General form: ax + by + c = 0 (where a, b are not both zero). Slope-intercept form: y = mx + d (where m is slope and d is y-intercept)."
-    },
-    {
-      "card_id": 2,
-      "level": "Basic Recall",
-      "front_question": "How do you find the x-intercept and y-intercept of a line given by ax + by = c?",
-      "back_answer": "Set y = 0 to find x-intercept: (c/a, 0). Set x = 0 to find y-intercept: (0, c/b)."
-    },
-    {
-      "card_id": 3,
-      "level": "Conceptual Understanding",
-      "front_question": "State the coefficient ratio conditions for a system of two linear equations (a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0) to have: (1) Unique solution, (2) No solution, (3) Infinitely many solutions.",
-      "back_answer": "1. Unique solution (intersecting lines): a1/a2 != b1/b2.\n2. No solution (parallel lines): a1/a2 = b1/b2 != c1/c2.\n3. Infinitely many solutions (coincident lines): a1/a2 = b1/b2 = c1/c2."
-    },
-    {
-      "card_id": 4,
-      "level": "Conceptual Understanding",
-      "front_question": "What does a negative slope m indicate about the graphical behavior of a line, and what is the slope condition for perpendicular lines?",
-      "back_answer": "A negative slope indicates that the line slants downwards from left to right. Two non-vertical lines are perpendicular if and only if the product of their slopes is -1 (m1 * m2 = -1)."
-    },
-    {
-      "card_id": 5,
-      "level": "Experimental/Observational Insights",
-      "front_question": "For what value of k does the system kx + 2y = 5 and 3x + y = 1 have a unique solution?",
-      "back_answer": "For a unique solution, a1/a2 != b1/b2 => k/3 != 2/1 => k != 6. The system has a unique solution for all real numbers except k = 6."
-    },
-    {
-      "card_id": 6,
-      "level": "Scientific Reasoning & Application",
-      "front_question": "A taxi service charges a fixed fare x plus rate y per km. A 10 km trip costs Rs 105, and a 15 km trip costs Rs 155. Find fixed charge x, rate y, and cost for 25 km.",
-      "back_answer": "System: x + 10y = 105 and x + 15y = 155. Subtracting gives 5y = 50 => y = Rs 10/km. x + 100 = 105 => x = Rs 5 fixed charge. Cost for 25 km = 5 + 25(10) = Rs 255."
-    },
-    {
-      "card_id": 7,
-      "level": "Scientific Reasoning & Application",
-      "front_question": "State the perpendicular distance formula from a point (x0, y0) to a line ax + by + c = 0.",
-      "back_answer": "The perpendicular distance d is given by d = |a*x0 + b*y0 + c| / sqrt(a^2 + b^2). For example, distance from origin (0,0) to 3x + 4y - 10 = 0 is |-10| / 5 = 2.0 units."
-    }
-  ]
-}
+[
+  {
+    "card_id": 1,
+    "level": "Basic Recall",
+    "front_question": "What is the core focus of Chapter 13: 'Earth as a System: Energy, Matter, and Life'?",
+    "back_answer": "This planetary science chapter analyzes Earth as an integrated closed system for matter and open system for energy. It details the five interacting spheres (Geosphere, Hydrosphere, Cryosphere, Atmosphere, Biosphere), solar electromagnetic radiation balance (UV, visible, IR light), biogeochemical cycles (Water, Carbon, Nitrogen, Oxygen), human anthropogenic impacts, and sustainable climate stewardship.",
+    "phonetic_guide": "[Phonetic Guide: Concept #1]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
+  {
+    "card_id": 2,
+    "level": "Basic Recall",
+    "front_question": "Define the scientific term or concept 'Greenhouse Effect' in the context of Class 9 Science.",
+    "back_answer": "The natural process where atmospheric greenhouse gases (CO2, CH4, H2O vapor) absorb outgoing longwave infrared radiation, warming Earth's surface. (Notation/Unit: Radiative Forcing [W/m^2]; Example: Maintaining Earth's mean temperature at ~15 deg C instead of -18 deg C.)",
+    "phonetic_guide": "[Phonetic Guide: Concept #2]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
+  {
+    "card_id": 3,
+    "level": "Basic Recall",
+    "front_question": "Define the scientific term or concept 'Nitrogen Fixation' in the context of Class 9 Science.",
+    "back_answer": "The biological or industrial process converting inert atmospheric N2 gas into bioavailable forms like ammonia and nitrates. (Notation/Unit: N2 -> NH3 / NO3-; Example: Rhizobium symbiosis in legume root nodules.)",
+    "phonetic_guide": "[Phonetic Guide: Concept #3]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
+  {
+    "card_id": 4,
+    "level": "Conceptual Understanding",
+    "front_question": "Explain the key concepts detailed in Section '13.1 The Five Earth Spheres and Energy Flow'.",
+    "back_answer": "Earth operates as five deeply interconnected subsystems: 1) Geosphere (crust, mantle, core rocks and minerals), 2) Hydrosphere (liquid oceans, lakes, rivers, groundwater), 3) Cryosphere (frozen ice sheets, glaciers, sea ice, permafrost), 4) Atmosphere (gaseous envelope of 78% N2, 21% O2, Ar, CO2), and 5) Biosphere (all living organisms). The Sun drives the global engine via electromagnetic radiation: Shortwave UV/visible light enters; longwave Infrared (heat) is re-emitted and trapped by greenhouse gases.",
+    "phonetic_guide": "[Phonetic Guide: Concept #4]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
+  {
+    "card_id": 5,
+    "level": "Conceptual Understanding",
+    "front_question": "Explain the key concepts detailed in Section '13.2 Biogeochemical Cycles and Anthropogenic Impacts'.",
+    "back_answer": "Matter cycles continuously through biotic and abiotic reservoirs via biogeochemical cycles. Carbon Cycle: Photosynthesis fixes atmospheric CO2 into biomass; respiration, decomposition, and fossil fuel combustion release CO2 back. Nitrogen Cycle: Nitrogen-fixing bacteria (Rhizobium, Azotobacter) convert atmospheric N2 into nitrates (NO3-); nitrifying and denitrifying bacteria complete the cycle. Anthropogenic deforestation and fossil fuel burning disrupt these closed loops, driving global climate change.",
+    "phonetic_guide": "[Phonetic Guide: Concept #5]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
+  {
+    "card_id": 6,
+    "level": "Experimental",
+    "front_question": "Describe the aim, procedure, observation, and principle for Activity 13.1: 'To model the greenhouse thermal trapping effect using glass containers.'.",
+    "back_answer": "Materials: Two identical glass jars, Two thermometers, Soil, Plastic wrap / glass cover plate, Sunlight / heat lamp\nProcedure: Fill the bottom of both glass jars with a 2 cm layer of dry soil. Insert a thermometer into each jar. Seal Jar A tightly with plastic wrap/glass plate; leave Jar B open to air. Place both jars side by side in direct bright sunlight for 1 hour. Record temperature readings every 10 minutes.\nObservation: Jar A (sealed) exhibits significantly higher internal temperature than open Jar B.\nConclusion: Trapping re-radiated thermal infrared radiation causes elevated equilibrium temperatures (Greenhouse Effect).",
+    "phonetic_guide": "[Phonetic Guide: Concept #6]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
+  {
+    "card_id": 7,
+    "level": "Scientific Reasoning & Application",
+    "front_question": "Differentiate between Earth as a closed system for matter and an open system for energy.",
+    "back_answer": "Earth is an open system for energy because solar energy freely enters from space and thermal infrared heat escapes back into space. Earth is a closed system for matter because the total quantity of chemical elements on the planet remains fixed and must be continuously recycled through biogeochemical loops.",
+    "phonetic_guide": "[Phonetic Guide: Concept #7]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
+  {
+    "card_id": 8,
+    "level": "Scientific Reasoning & Application",
+    "front_question": "Scenario: Excessive synthetic nitrogen fertilizers applied to agricultural fields wash into nearby lakes during heavy rain.\nQuestion: Identify the environmental phenomenon triggered in the lake and describe its consequence.",
+    "back_answer": "Eutrophication. Nutrient runoff causes explosive algal blooms. When algae die, decomposer bacteria consume dissolved oxygen, causing hypoxic 'dead zones' and mass fish kills.",
+    "phonetic_guide": "[Phonetic Guide: Concept #8]",
+    "graphic_description": "3D visual diagram illustration corresponding to key concept.",
+    "mnemonic": "Memory aid key phrase for retention.",
+    "sm2_buttons": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  }
+]

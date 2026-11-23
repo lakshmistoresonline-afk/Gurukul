@@ -1,17 +1,17 @@
 {
   "chapter_number": 9,
-  "chapter_title": "Some Applications of Trigonometry",
+  "chapter_title": "Light – Reflection and Refraction",
   "zero_omission_notes": {
-    "summary": "Applies trigonometric ratios to measure real-world heights and distances using line of sight, angle of elevation, and angle of depression.",
+    "summary": "Covers laws of reflection/refraction, image formation by spherical mirrors (concave/convex) and lenses, New Cartesian sign convention, mirror formula (1/v + 1/u = 1/f), lens formula (1/v - 1/u = 1/f), magnification, and optical power in dioptres.",
     "detailed_sections": [
       {
-        "section_number_and_title": "9.1 Line of Sight & Angles of Elevation / Depression",
-        "full_explanation": "Line of sight connects observer's eye to target. Angle of elevation is angle above horizontal line; angle of depression is angle below horizontal line.",
+        "section_number_and_title": "9.1 Spherical Mirrors",
+        "full_notes": "Concave mirrors converge light (used in torches, solar furnaces, dentist mirrors). Convex mirrors diverge light, providing wide field rear view in vehicles.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Key Property",
-            "title": "Alternate Angles",
-            "content": "Angle of depression from top equals angle of elevation from ground."
+            "type": "Sign Convention Note",
+            "title": "Cartesian Rules",
+            "content": "Object distance u is always negative. Focal length f is negative for concave mirror/lens and positive for convex mirror/lens."
           }
         ]
       }
@@ -19,57 +19,73 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-901",
-      "aim_or_objective": "Determine height of tower using Clinometer.",
+      "activity_or_method_id": "Activity 9.10: Refraction through Glass Slab",
+      "aim_or_objective": "To observe lateral displacement of light passing through rectangular glass slab.",
       "materials_or_prerequisites": [
-        "Clinometer, tape measure"
+        "Glass slab",
+        "Drawing board",
+        "Pins",
+        "Protractor",
+        "Ruler"
       ],
       "procedure_or_steps": [
-        "Measure distance d from tower base",
-        "Read angle of elevation θ",
-        "Calculate h = d * tan θ"
+        "Fix paper on board and place glass slab.",
+        "Insert 2 pins along incident ray at angle i.",
+        "View from opposite side and fix 2 pins matching image line.",
+        "Draw incident, refracted, and emergent rays."
       ],
-      "observations_or_results": "Height obtained without physical climbing.",
-      "conclusion_or_principle": "Indirect height measurement via trigonometry."
+      "observations_or_results": "Emergent ray is parallel to incident ray but laterally shifted; Angle of incidence (i) = Angle of emergence (e).",
+      "conclusion_or_principle": "Light bends towards normal when entering denser glass and away when re-entering air."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 9.1 Elevation and Depression Schema",
+        "figure_id_and_title": "Ray Diagram Concave Mirror Object Between F and P",
         "labels_and_components": [
-          "Observer Eye",
-          "Horizontal Baseline",
-          "Angle of Elevation",
-          "Angle of Depression"
+          "Principal axis",
+          "Focus F",
+          "Center of curvature C",
+          "Pole P",
+          "Virtual enlarged image A'B'"
         ],
-        "drawing_or_reading_instructions": "Draw observer looking up at top and down at base relative to horizontal line.",
-        "structural_or_conceptual_explanation": "Standard layout for height and distance problems."
+        "drawing_or_reading_instructions": "Draw ray parallel to axis reflecting through F and ray through C reflecting back; extend dotted behind mirror.",
+        "structural_or_conceptual_explanation": "Image formed is virtual, erect, magnified behind the mirror."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Common Height Calculations",
+        "table_title": "Concave Mirror Image Formation",
         "headers": [
-          "Angle θ",
-          "tan θ Value",
-          "Height Multiplier"
+          "Object Position",
+          "Image Position",
+          "Image Size",
+          "Nature"
         ],
         "rows": [
           [
-            "30°",
-            "1/√3",
-            "h = d / √3"
+            "At Infinity",
+            "At Focus F",
+            "Highly diminished",
+            "Real & Inverted"
           ],
           [
-            "45°",
-            "1",
-            "h = d"
+            "Beyond C",
+            "Between F and C",
+            "Diminished",
+            "Real & Inverted"
           ],
           [
-            "60°",
-            "√3",
-            "h = d * √3"
+            "At C",
+            "At C",
+            "Same size",
+            "Real & Inverted"
+          ],
+          [
+            "Between F and P",
+            "Behind Mirror",
+            "Enlarged",
+            "Virtual & Erect"
           ]
         ]
       }
@@ -77,70 +93,76 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Height-Distance Formula",
-      "definition_or_meaning": "Relates object height h and distance d via tangent ratio.",
-      "si_unit_or_notation": "tan θ = Opposite / Adjacent",
-      "example_or_application": "If d = 10m, θ = 45° -> h = 10m"
+      "term_or_concept": "Power of a Lens",
+      "definition_or_meaning": "The degree of convergence or divergence of light rays achieved by a lens, defined as reciprocal of focal length in meters: P = 1/f(m).",
+      "si_unit_or_notation": "Dioptre (D)",
+      "example_or_application": "SI unit is Dioptre (D). Convex lens has +P; Concave has -P."
+    },
+    {
+      "term_or_concept": "Lens Formula and Magnification",
+      "definition_or_meaning": "1/v - 1/u = 1/f ; m = h'/h = v/u",
+      "si_unit_or_notation": "u = object distance, v = image distance, f = focal length, m = magnification.",
+      "example_or_application": "Calculates image position and size for convex/concave lenses."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Ex 9.1 Q1",
-        "question": "Circus artist climbs 20 m rope tied from top of pole to ground at 30°. Find height of pole.",
-        "answer": "sin 30° = AB / 20 => 1/2 = AB / 20 => AB = 10 m."
+        "q_no": "Q1",
+        "question": "Which material cannot be used to make a lens?",
+        "answer": "Clay is opaque and does not transmit light for refraction. Option (d) Clay is correct."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "A pole 6 m high casts shadow 2√3 m long. Sun's elevation is:",
+        "question": "Focal length of a spherical mirror of radius of curvature 20 cm is?",
         "options": [
-          "A) 60°",
-          "B) 45°",
-          "C) 30°",
-          "D) 90°"
+          "10 cm",
+          "20 cm",
+          "40 cm",
+          "5 cm"
         ],
-        "answer": "A",
-        "explanation": "tan θ = 6 / (2√3) = √3 => θ = 60°."
+        "answer": "10 cm",
+        "explanation": "Focal length f = R / 2 = 20 / 2 = 10 cm."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Ladder against wall makes 60° with ground. Foot is 2.5 m from wall. Find ladder length.",
-        "answer": "cos 60° = 2.5 / L => 1/2 = 2.5 / L => L = 5 m."
+        "question": "Why do we prefer a convex mirror as a rear-view mirror in vehicles?",
+        "answer": "Convex mirrors always form erect, virtual, and diminished images, providing a much wider field of view compared to a plane mirror, enabling drivers to view large traffic areas behind."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Angle of elevation of top of tower from two points at distances a and b from base are complementary. Prove height is √(ab).",
-        "answer": "tan θ = h/a and tan(90-θ) = cot θ = h/b. tan θ * cot θ = (h/a)*(h/b) = 1 => h^2/(ab) = 1 => h = √(ab)."
+        "question": "Light enters from air into glass plate having refractive index 1.50. What is speed of light in glass?",
+        "answer": "v = c / n = (3 x 10^8 m/s) / 1.50 = 2 x 10^8 m/s."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "As observed from top of 75 m lighthouse, angles of depression of two ships are 30° and 45°. Find distance between ships.",
-        "answer": "Ship 1 at 45°: tan 45° = 75/x => x = 75 m. Ship 2 at 30°: tan 30° = 75/y => y = 75√3 m. Distance = y - x = 75(√3 - 1) m ≈ 54.9 m."
+        "question": "An object 5 cm high is placed 25 cm away from a converging lens of focal length 10 cm. Find position, size, and nature of image with ray diagram.",
+        "answer": "Given: u = -25 cm, f = +10 cm, h = +5 cm. 1/v - 1/u = 1/f => 1/v = 1/10 - 1/25 = (5-2)/50 = 3/50 => v = +16.67 cm. Magnification m = v/u = 16.67 / (-25) = -0.667. Height h' = m x h = -0.667 x 5 = -3.33 cm. Image is real, inverted, diminished, formed 16.67 cm behind lens."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "Statue 1.6 m tall on top of pedestal. Angles of elevation of top of statue and top of pedestal are 60° and 45°.",
+        "case_scenario": "A doctor prescribes a corrective lens of power P = +2.0 D for a patient.",
         "qa": [
           {
-            "question": "Find pedestal height.",
-            "answer": "tan 45° = h/d => d = h. tan 60° = (h+1.6)/h => √3 h = h + 1.6 => h(√3 - 1) = 1.6 => h = 0.8(√3 + 1) m."
+            "question": "Find focal length and identify whether lens is converging or diverging.",
+            "answer": "f = 1 / P = 1 / +2.0 = +0.5 m = +50 cm. Positive power indicates a Convex (converging) lens."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Measuring angle of depression from vertical axis instead of horizontal baseline.",
-        "correct_fact_or_method": "Always measure angle of depression downward from the horizontal baseline."
+        "common_error_or_misconception": "Using positive u for object distance in lens/mirror formulas.",
+        "correct_fact_or_method": "Always set object distance u as negative (-u) since light travels left to right."
       }
     ]
   }

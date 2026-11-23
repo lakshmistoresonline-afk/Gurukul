@@ -1,181 +1,149 @@
 {
   "chapter_number": 2,
-  "chapter_title": "Operations with Integers",
-  "sections": [
+  "chapter_title": "India and Her Neighbours",
+  "detailed_sections": [
     {
-      "section_title": "2.1 Token Model and Additive Inverses",
-      "notes_body": "Integers represent both magnitude and direction. A green token (+1) and a red token (-1) cancel each other out to equal zero (Zero Pair). The additive inverse of an integer 'a' is '-a' such that a + (-a) = 0. Subtracting a number is mathematically equivalent to adding its additive inverse: a - b = a + (-b).",
-      "margin_callouts": [
-        {
-          "type": "Note to Teacher",
-          "title": "Accessibility",
-          "content": "Tokens of different physical shapes or textures can be used for visually challenged students."
-        }
-      ]
-    },
-    {
-      "section_title": "2.2 Multiplication of Integers using Token Model",
-      "notes_body": "1. Positive Multiplier m × (+n): Add 'n' positive tokens 'm' times. Result is positive.\n2. Positive Multiplier m × (-n): Add 'n' negative tokens 'm' times. Result is negative (-mn).\n3. Negative Multiplier (-m) × (+n): Remove 'n' positive tokens 'm' times. Since bag starts empty, insert 'mn' zero pairs first, then remove 'mn' positives. Remaining tokens are 'mn' negatives (-mn).\n4. Negative Multiplier (-m) × (-n): Remove 'n' negative tokens 'm' times. Insert 'mn' zero pairs, remove 'mn' negatives. Remaining tokens are 'mn' positives (+mn). Therefore, Negative × Negative = Positive.",
-      "margin_callouts": [
-        {
-          "type": "Key Rule",
-          "title": "Sign Rules for Product",
-          "content": "Like signs produce a positive product; unlike signs produce a negative product."
-        }
-      ]
-    },
-    {
-      "section_title": "2.3 Division of Integers and Algebraic Properties",
-      "notes_body": "Division is the inverse of multiplication. If a × b = c, then c ÷ b = a and c ÷ a = b.\nSign rules for division:\n1. Positive ÷ Positive = Positive\n2. Positive ÷ Negative = Negative [a ÷ (-b) = -(a ÷ b)]\n3. Negative ÷ Positive = Negative [(-a) ÷ b = -(a ÷ b)]\n4. Negative ÷ Negative = Positive [(-a) ÷ (-b) = a ÷ b]",
-      "margin_callouts": [
+      "section_number_and_title": "2.1 Land Frontiers and Immediate Border Nations",
+      "full_notes": "India shares a 15,100 km land border with 7 nations across diverse geographies. Border management ranges from open passport-free borders (Nepal, Bhutan under bilateral treaties) to regulated and monitored boundaries (Pakistan, Bangladesh, China).",
+      "margin_notes_and_sidebars": [
         {
           "type": "Did You Know?",
-          "title": "Distributive Property",
-          "content": "For any integers a, b, c: a × (b + c) = (a × b) + (a × c)."
+          "title": "India-Nepal Treaty of 1950",
+          "content": "Allows citizens of both countries to cross borders freely without visas, work, and own property in either country."
         }
       ]
-    }
-  ],
-  "comparison_tables": [
+    },
     {
-      "table_title": "Integer Multiplication and Division Sign Matrix",
-      "headers": [
-        "Operands (A, B)",
-        "Multiplication (A × B)",
-        "Division (A ÷ B)"
-      ],
-      "rows": [
-        [
-          "+ and +",
-          "+ (Positive)",
-          "+ (Positive)"
-        ],
-        [
-          "+ and -",
-          "- (Negative)",
-          "- (Negative)"
-        ],
-        [
-          "- and +",
-          "- (Negative)",
-          "- (Negative)"
-        ],
-        [
-          "- and -",
-          "+ (Positive)",
-          "+ (Positive)"
-        ]
+      "section_number_and_title": "2.2 Maritime Neighbours and SAGAR Policy",
+      "full_notes": "India's 7,516 km coastline interfaces with maritime neighbours: Sri Lanka (across Palk Strait), Maldives, Indonesia, Thailand, Myanmar, and Oman. India promotes maritime security and economic cooperation through SAGAR (Security and Growth for All in the Region).",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Try These",
+          "title": "Palk Strait Map Location",
+          "content": "Locate Palk Strait and Gulf of Mannar dividing India and Sri Lanka on a physical map."
+        }
+      ]
+    },
+    {
+      "section_number_and_title": "2.3 Shared Heritage and Humanitarian Assistance",
+      "full_notes": "Civilisational ties stem from shared epics, languages, trade, and Buddhism. India acts as a first responder during regional disasters (earthquakes, cyclones, financial crises) by delivering medical supplies, food aid, and naval assistance.",
+      "margin_notes_and_sidebars": [
+        {
+          "type": "Did You Know?",
+          "title": "Spread of Buddhism",
+          "content": "Emperor Ashoka sent Mahendra and Sanghamitra to Sri Lanka, establishing Buddhist heritage links that endure today."
+        }
       ]
     }
   ],
   "scripted_dialogues": [
     {
       "speaker": "Teacher",
-      "speech_text": "Welcome to Chapter 2: Operations with Integers. What is the central mathematical goal here?"
+      "speech_text": "Welcome class! Today we are exploring India and Her Neighbours."
     },
     {
       "speaker": "Student",
-      "speech_text": "We are learning how to formalize quantitative rules using systematic models and exact verification!"
+      "speech_text": "How does this concept connect to modern India, ma'am?"
     },
     {
       "speaker": "Teacher",
-      "speech_text": "Precisely! Let's examine how the underlying principles apply to practical scenarios."
+      "speech_text": "It forms the very backbone of our modern economic, social, and political systems!"
     }
   ],
   "stem_lab_drawers": [
     {
-      "activity_or_method_id": "ACT-2.1",
-      "aim_or_objective": "Demonstrate (-4) × (-2) = +8 visually using tokens.",
+      "activity_or_method_id": "ACT-201",
+      "aim_or_objective": "To map India's land and maritime borders and identify key geographic transit channels.",
       "materials_or_prerequisites": [
-        "Bag",
-        "Green tokens (+1)",
-        "Red tokens (-1)"
+        "Blank political map of South Asia",
+        "Color markers",
+        "Atlas"
       ],
       "procedure_or_steps": [
-        "1. Start with an empty bag (value = 0).",
-        "2. To remove 2 negative (red) tokens 4 times, first place 8 zero pairs (8 green + 8 red tokens) into the bag so removing tokens is possible.",
-        "3. Remove 8 red tokens (4 times 2 negatives).",
-        "4. Count the tokens remaining in the bag."
+        "Label India and all 7 land border nations.",
+        "Shade maritime neighbours across the Indian Ocean.",
+        "Draw arrows indicating the Palk Strait, 10 Degree Channel, and Malacca Strait."
       ],
-      "observations_or_results": "Exactly 8 green (+1) tokens remain. Thus, (-4) × (-2) = +8.",
-      "conclusion_or_principle": "Proven Principle: Bag and Token Integer Simulation holds true."
+      "observations_or_results": "India occupies a central geographic position in South Asia and the Indian Ocean, linking landlocked Himalayan states with oceanic trade corridors.",
+      "conclusion_or_principle": "Geographic positioning makes India the natural economic and maritime security pivot of the South Asian region."
     }
   ],
-  "formula_calculators": {
-    "calculator_name": "Interactive Operations with Integers Calculator",
-    "formula": "Systematic Algorithm",
-    "inputs": [
-      "Value A",
-      "Value B"
-    ],
-    "step_by_step_logic": "Performs exact NCERT verification algorithm on user inputs."
-  },
+  "formula_calculators": [
+    {
+      "calculator_name": "Interest / Yield Formula Tool",
+      "formula": "A = P * (1 + r/n)^(n*t)",
+      "variables": [
+        "P: Principal",
+        "r: Interest Rate",
+        "t: Time in years"
+      ]
+    }
+  ],
   "image_asset": {
     "asset_id": "img_ch2",
     "chapter_number": 2,
-    "title": "Integer Token Bag & Zero Pair Model",
-    "url": "/assets/images/ch2_integer_token_model.png",
-    "caption": "Token bag representation of positive (+1) green tokens, negative (-1) red tokens, and zero pairs.",
+    "chapter_title": "India and Her Neighbours",
+    "file_name": "ch2_neighbours_map.png",
+    "url": "/assets/images/ch2_neighbours_map.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 900
+    },
+    "title": "Land Frontiers & Maritime Policy (SAGAR)",
     "hotspots": [
       {
+        "hotspot_id": "hs_ch2_bangladesh",
+        "title": "Bangladesh Border",
         "x_percent": 8,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Positive Bag",
-        "popover_text": "Bag A contains +4 green tokens (+1 each)."
+        "y_percent": 54,
+        "w_percent": 24,
+        "h_percent": 12,
+        "info": "Longest land border (~4,096 km)."
       },
       {
-        "x_percent": 38,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Zero Pairs",
-        "popover_text": "Green (+1) and Red (-1) tokens combine to form net 0 value."
-      },
-      {
-        "x_percent": 68,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Negative Multiplication",
-        "popover_text": "(-4) × (-2) = +8: Removing 8 red tokens leaves +8 positive green tokens."
+        "hotspot_id": "hs_ch2_sagar",
+        "title": "Maritime SAGAR Vision",
+        "x_percent": 28,
+        "y_percent": 12,
+        "w_percent": 24,
+        "h_percent": 12,
+        "info": "Security and Growth for All in the Region."
       }
     ]
   },
   "m1_zero_omission_notes": {
-    "summary": "This chapter builds conceptual clarity for integer arithmetic (multiplication and division) using physical token models and number line representations. Positive integers are modeled as green tokens (+1) and negative integers as red tokens (-1), where one positive and one negative form a 'zero pair'. Multiplication by a positive multiplier means placing tokens into an empty bag; multiplication by a negative multiplier means removing tokens from the bag. Rules for signs in multiplication and division are systematically derived: (+)*(+) = +, (+)*(-) = -, (-)*(+) = -, and (-)*(-) = +. The chapter also reinforces the distributive property a*(b + c) = a*b + a*c and integer division concepts.",
+    "summary": "This chapter redefines 'neighbourhood' beyond immediate physical borders to include maritime connections and shared civilisational linkages across South Asia and the Indian Ocean Region. It examines India's land boundaries, maritime frontiers, shared cultural heritages, trade networks, and regional initiatives for peace and cooperation.",
     "detailed_sections": [
       {
-        "section": "2.1 Token Model and Additive Inverses",
-        "full_notes": "Integers represent both magnitude and direction. A green token (+1) and a red token (-1) cancel each other out to equal zero (Zero Pair). The additive inverse of an integer 'a' is '-a' such that a + (-a) = 0. Subtracting a number is mathematically equivalent to adding its additive inverse: a - b = a + (-b).",
-        "margin_notes": [
-          {
-            "type": "Note to Teacher",
-            "title": "Accessibility",
-            "content": "Tokens of different physical shapes or textures can be used for visually challenged students."
-          }
-        ]
-      },
-      {
-        "section": "2.2 Multiplication of Integers using Token Model",
-        "full_notes": "1. Positive Multiplier m × (+n): Add 'n' positive tokens 'm' times. Result is positive.\n2. Positive Multiplier m × (-n): Add 'n' negative tokens 'm' times. Result is negative (-mn).\n3. Negative Multiplier (-m) × (+n): Remove 'n' positive tokens 'm' times. Since bag starts empty, insert 'mn' zero pairs first, then remove 'mn' positives. Remaining tokens are 'mn' negatives (-mn).\n4. Negative Multiplier (-m) × (-n): Remove 'n' negative tokens 'm' times. Insert 'mn' zero pairs, remove 'mn' negatives. Remaining tokens are 'mn' positives (+mn). Therefore, Negative × Negative = Positive.",
-        "margin_notes": [
-          {
-            "type": "Key Rule",
-            "title": "Sign Rules for Product",
-            "content": "Like signs produce a positive product; unlike signs produce a negative product."
-          }
-        ]
-      },
-      {
-        "section": "2.3 Division of Integers and Algebraic Properties",
-        "full_notes": "Division is the inverse of multiplication. If a × b = c, then c ÷ b = a and c ÷ a = b.\nSign rules for division:\n1. Positive ÷ Positive = Positive\n2. Positive ÷ Negative = Negative [a ÷ (-b) = -(a ÷ b)]\n3. Negative ÷ Positive = Negative [(-a) ÷ b = -(a ÷ b)]\n4. Negative ÷ Negative = Positive [(-a) ÷ (-b) = a ÷ b]",
+        "section": "2.1 Land Frontiers and Immediate Border Nations",
+        "full_notes": "India shares a 15,100 km land border passing through diverse terrains (mountains, deserts, forests, rivers) with 7 nations: Pakistan and Afghanistan to the North-West; China (Tibet Region), Nepal, and Bhutan to the North; Bangladesh and Myanmar to the East. Border dynamics vary from open borders (Nepal, Bhutan) to highly regulated lines of control.",
         "margin_notes": [
           {
             "type": "Did You Know?",
-            "title": "Distributive Property",
-            "content": "For any integers a, b, c: a × (b + c) = (a × b) + (a × c)."
+            "title": "India-Nepal Open Border",
+            "content": "Under the 1950 Treaty of Peace and Friendship, citizens of India and Nepal can cross the border without visas, work, and hold property in either nation."
+          }
+        ]
+      },
+      {
+        "section": "2.2 Maritime Neighbours and Indian Ocean Synergy",
+        "full_notes": "India's 7,516 km coastline connects it to maritime neighbours: Sri Lanka (separated by Palk Strait/Gulf of Mannar), Maldives (south-west in Indian Ocean), Indonesia, Myanmar, Thailand, and Oman. India promotes regional maritime security through SAGAR (Security and Growth for All in the Region).",
+        "margin_notes": [
+          {
+            "type": "Try These",
+            "title": "Map Navigation Challenge",
+            "content": "Identify the water bodies separating India from Sri Lanka and Maldives on a physical map of South Asia."
+          }
+        ]
+      },
+      {
+        "section": "2.3 Shared Heritage, Trade, and Humanitarian Assistance",
+        "full_notes": "Deep historical linkages exist through Buddhism, Hinduism, Islam, shared languages, epics, music, and cuisine. India plays a key role as a first responder during humanitarian crises (e.g., natural disasters, economic distress) by providing food, medical supplies, infrastructure loans, and disaster response forces.",
+        "margin_notes": [
+          {
+            "type": "Did You Know?",
+            "title": "Cultural Diffusion",
+            "content": "Buddhism spread from Bihar to Sri Lanka, Nepal, Bhutan, Myanmar, Thailand, Tibet, China, and Japan, establishing enduring spiritual corridors."
           }
         ]
       }
@@ -183,77 +151,172 @@
   },
   "m2_key_terms_formulas_and_rules": [
     {
-      "term_or_rule": "Zero Pair",
-      "definition_or_expression": "Combination of (+1) and (-1) tokens whose net value is 0.",
-      "example_or_unit": "(+1) + (-1) = 0"
+      "term_or_rule": "Land Boundary",
+      "definition_or_expression": "The demarcated physical line dividing sovereign terrestrial territories of adjacent countries.",
+      "example_or_unit": "India's 15,100 km total land frontier."
     },
     {
-      "term_or_rule": "Additive Inverse",
-      "definition_or_expression": "The number that yields 0 when added to a given integer 'a', denoted '-a'.",
-      "example_or_unit": "Additive inverse of -18 is +18."
+      "term_or_rule": "Maritime Neighbour",
+      "definition_or_expression": "Nations separated by seas or oceans that share maritime zones, oceanic trade routes, or coastal proximity.",
+      "example_or_unit": "Sri Lanka, Maldives, Indonesia, Oman."
     },
     {
-      "term_or_rule": "Integer Multiplication Rule 1",
-      "definition_or_expression": "(+a) × (+b) = +(a × b) and (-a) × (-b) = +(a × b)",
-      "example_or_unit": "(-4) × (-2) = +8"
+      "term_or_rule": "SAGAR Policy",
+      "definition_or_expression": "Acronym for 'Security and Growth for All in the Region', India's vision for maritime cooperation in the Indian Ocean.",
+      "example_or_unit": "Joint naval patrols, disaster relief, and anti-piracy initiatives."
     },
     {
-      "term_or_rule": "Integer Multiplication Rule 2",
-      "definition_or_expression": "(+a) × (-b) = -(a × b) and (-a) × (+b) = -(a × b)",
-      "example_or_unit": "(-4) × 2 = -8"
-    },
-    {
-      "term_or_rule": "Integer Division Rule",
-      "definition_or_expression": "(-a) ÷ (-b) = +(a ÷ b); (-a) ÷ b = -(a ÷ b); a ÷ (-b) = -(a ÷ b)",
-      "example_or_unit": "(-46) ÷ (-23) = 2; 36 ÷ (-18) = -2"
+      "term_or_rule": "Open Border Policy",
+      "definition_or_expression": "An agreement permitting passport-free movement of citizens between bordering countries.",
+      "example_or_unit": "India-Nepal border at Sonauli / Birgunj."
     }
   ],
   "m3_practical_activities_and_procedures": [
     {
-      "activity_title": "Bag and Token Integer Simulation",
-      "aim": "Demonstrate (-4) × (-2) = +8 visually using tokens.",
+      "activity_title": "Mapping Regional Links and Cultural Flows",
+      "aim": "To map India's land and maritime neighbours and trace cultural/trade corridors.",
       "materials": [
-        "Bag",
-        "Green tokens (+1)",
-        "Red tokens (-1)"
+        "Blank political map of South Asia",
+        "Color pencils/markers",
+        "Atlas"
       ],
       "procedure": [
-        "1. Start with an empty bag (value = 0).",
-        "2. To remove 2 negative (red) tokens 4 times, first place 8 zero pairs (8 green + 8 red tokens) into the bag so removing tokens is possible.",
-        "3. Remove 8 red tokens (4 times 2 negatives).",
-        "4. Count the tokens remaining in the bag."
+        "Label India and all 7 land neighbours along with 6 maritime neighbours.",
+        "Use red arrows to mark Buddhist transmission routes from Bodh Gaya to Sri Lanka, Tibet, and Southeast Asia.",
+        "Use blue lines to represent oceanic trade corridors linking coastal Indian ports with Oman, Maldives, and Malacca Strait."
       ],
-      "observation_and_conclusion": "Exactly 8 green (+1) tokens remain. Thus, (-4) × (-2) = +8."
+      "observation_and_conclusion": "India forms the geographical and cultural pivot of South Asia and the Indian Ocean, connected through interconnected land and sea routes."
     }
   ],
+  "m4_diagrams_and_tables": {
+    "diagrams": [
+      {
+        "figure_title": "Fig. 2.1 India and Her Regional Map Location",
+        "labels": [
+          "Arabian Sea",
+          "Bay of Bengal",
+          "Indian Ocean",
+          "Palk Strait",
+          "Himalayan Border Zone"
+        ],
+        "instructions": "Locate peninsular India relative to South Asian landmass and Indian Ocean water channels.",
+        "structural_details": "Shows land boundaries to the North/North-West/East and maritime proximity to southern island/coastal states."
+      }
+    ],
+    "tables": [
+      {
+        "title": "India's Immediate Neighbours and Border Profile",
+        "headers": [
+          "Country",
+          "Neighbour Type",
+          "Geographical Location",
+          "Key Shared Links / Features"
+        ],
+        "rows": [
+          [
+            "Pakistan",
+            "Land",
+            "North-West",
+            "Indus River basin, shared cultural heritage, regulated border"
+          ],
+          [
+            "Nepal",
+            "Land",
+            "North",
+            "Himalayan border, open border policy, shared Hindu/Buddhist pilgrimages"
+          ],
+          [
+            "Bangladesh",
+            "Land",
+            "East",
+            "Longest single land border (~4,096 km), Sundarbans delta, river sharing"
+          ],
+          [
+            "Sri Lanka",
+            "Maritime",
+            "South (Indian Ocean)",
+            "Separated by Palk Strait, shared Buddhist heritage, maritime trade"
+          ],
+          [
+            "Maldives",
+            "Maritime",
+            "South-West",
+            "Archipelagic state, Indian Ocean security partner, trade"
+          ]
+        ]
+      }
+    ]
+  },
   "m5_textbook_solutions_and_extracts": {
     "end_exercises": [
       {
         "q_no": "Q1",
-        "question": "Find the values of: (a) 14 × (-15) (b) -16 × (-5) (c) 36 ÷ (-18) (d) (-46) ÷ (-23)",
-        "answer": "(a) 14 × (-15) = -210.\n(b) (-16) × (-5) = +80.\n(c) 36 ÷ (-18) = -2.\n(d) (-46) ÷ (-23) = +2."
+        "question": "Explain who a maritime neighbour is with two examples with respect to India.",
+        "answer": "A maritime neighbour is a nation separated by an arm of sea or ocean rather than sharing a continuous land mass. Examples for India include Sri Lanka (across the Palk Strait) and the Maldives (in the Indian Ocean)."
       },
       {
         "q_no": "Q2",
-        "question": "A freezing process requires that the room temperature be lowered from 32°C at the rate of 5°C every hour. What will be the room temperature 10 hours after the process begins?",
-        "answer": "Initial temperature = 32°C. Rate of change = -5°C per hour. Time = 10 hours. Temperature change = 10 × (-5°C) = -50°C. Final temperature = 32°C + (-50°C) = -18°C."
-      },
-      {
-        "q_no": "Q3",
-        "question": "A cement company earns profit ₹8 per white bag and loss ₹5 per grey bag. (a) Sells 3000 white, 5000 grey. Net profit/loss? (b) If 6400 grey bags sold, how many white bags needed for zero profit/loss?",
-        "answer": "(a) Profit = 3000 × (+8) = ₹24,000. Loss = 5000 × (-5) = -₹25,000. Net = 24000 - 25000 = -₹1,000 (Loss of ₹1,000).\n(b) Total loss on 6400 grey bags = 6400 × 5 = ₹32,000. To offset, number of white bags = 32000 / 8 = 4,000 white bags."
+        "question": "How has Buddhism created links with India's neighbours? Give examples.",
+        "answer": "Buddhism originated in India and spread across South and East Asia. Monks and scholars traveled along trade routes, carrying scriptures and traditions. For instance, Emperor Ashoka sent his children Mahendra and Sanghamitra to Sri Lanka to propagate Buddhism, establishing enduring civilisational ties."
       }
     ],
     "extract_based": [
       {
-        "extract_text": "When the multiplier is positive, we place tokens into the bag. When the multiplier is negative, we remove tokens from the bag.",
+        "extract_text": "'Our destinies are inextricably tied together. What affects one nation affects the rest of us.' — Nelson Mandela",
         "qa": [
           {
-            "question": "What does a negative multiplier represent in the token model?",
-            "answer": "A negative multiplier represents the operation of removing tokens from the bag."
+            "question": "How does this quote reflect the necessity of regional cooperation among neighbours?",
+            "answer": "It underscores that environmental challenges, economic stability, and security risks transcend national borders, making mutual trust, shared solutions, and regional cooperation essential."
           }
         ]
       }
     ]
-  }
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which water body separates India from Sri Lanka?",
+        "answer": "Palk Strait."
+      },
+      {
+        "type": "True / False",
+        "question": "India shares an open border policy with both Nepal and Bhutan.",
+        "answer": "True."
+      }
+    ],
+    "level_2_short_answer_2_3_marks": [
+      {
+        "question": "What is meant by the 'SAGAR' initiative in India's foreign policy?",
+        "answer": "'SAGAR' stands for Security and Growth for All in the Region. It aims to deepen economic and security cooperation with Indian Ocean maritime neighbours while ensuring sustainable blue economy growth."
+      }
+    ],
+    "level_3_long_answer_5_marks": [
+      {
+        "question": "Discuss how geography and history shape India's relationships with her land and maritime neighbours.",
+        "answer": "Geographically, India's central positioning in South Asia and long coastline naturally connect it with both landlocked Himalayan states and Indian Ocean sea routes. Historically, centuries of shared language, religious pilgrimages (Buddhism, Hinduism, Islam), trade corridors (Silk Route, Spice Routes), and post-independence development partnerships foster deep interconnections, despite occasional political friction."
+      }
+    ],
+    "level_4_competency_case_study": [
+      {
+        "scenario": "A major cyclone impacts coastal regions of a small island neighbour in the Indian Ocean, destroying infrastructure and disrupting fresh water supplies.",
+        "qa": [
+          {
+            "question": "How should India respond under its regional neighborhood policy?",
+            "answer": "Deploy immediate Operation Maitri / SAGAR naval relief vessels with medical teams, water purification plants, emergency rations, and shelter materials."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls": [
+    {
+      "common_error": "Believing neighbours are strictly defined as nations sharing a land border.",
+      "correct_approach": "Include maritime neighbours like Sri Lanka and Maldives that share oceanic zones and maritime security interests."
+    },
+    {
+      "common_error": "Stating Bangladesh shares the shortest border with India.",
+      "correct_approach": "Bangladesh shares the longest border with India (~4,096 km); Afghanistan shares the shortest (~106 km)."
+    }
+  ]
 }
