@@ -1,74 +1,108 @@
 {
   "chapter_number": 4,
   "chapter_title": "Data Handling and Presentation",
-  "core_summary": "This chapter introduces students to the scientific methods, dating systems, and evidentiary sources used by historians and archaeologists to reconstruct the human past. It explains history as a continuous, evidence-based inquiry into how human societies lived, adapted, and evolved over time. The chapter details the modern chronological dating framework, transitioning from older terms (BC/AD) to the globally accepted Common Era (CE) and Before Common Era (BCE) systems. It emphasizes mathematical calendar calculations across the BCE/CE boundary, noting that there is no 'Year 0' in historical chronologies. Students explore how environmental changes, such as the transition from the Pleistocene Ice Age to the warmer Holocene epoch (~12,000 years ago), created conditions for early agriculture and settled human communities. Historical sources are divided into two primary categories: Archaeological Sources (fossils, pottery, metal tools, monuments, coins, seals, and structural ruins) uncovered through excavation and stratigraphy, and Literary Sources (manuscripts on palm leaves or birch bark, religious epics, royal court chronicles, and travelogues by foreign visitors like Xuanzang). Finally, the chapter illustrates how multidisciplinary sciences—including archaeology, paleontology, geology, epigraphy, numismatics, radiocarbon dating (C-14), and genetic research—work together to reconstruct history objectively.",
+  "core_summary": "This chapter teaches the complete statistical lifecycle: data collection, organization, representation, interpretation, and inference. Students progress from unorganized raw data observations to structured tally mark frequency tables, visually engaging pictographs with declared unit scale keys, and mathematically accurate bar graphs with uniform column widths, equal gap spacing, and non-truncated zero baselines. Practical classroom surveys—such as favorite sports, transport modes, flower counts, and traffic statistics—illustrate how data transforms into actionable insight. The chapter emphasizes critical evaluation of graphs, identifying visual distortions caused by improper scaling or truncated axes, establishing foundational statistical literacy.",
   "key_concepts": [
-    "Mathematical Chronology & Non-Zero Calendar Math: Understanding the mathematical mechanics of calculating time spans across the BCE/CE divide without an intervening Year Zero.",
-    "Paleoclimatic Epoch Transitions & Agriculture: The environmental shift from the cold Pleistocene Ice Age to the warmer Holocene epoch, which enabled seed domestication and agricultural settlement.",
-    "Archaeological Stratigraphy & Relative Soil Dating: The scientific principle where deeper undisturbed soil layers represent older time periods, allowing archaeologists to establish relative artifact chronologies.",
-    "Epigraphy & Numismatics as Primary Historical Evidence: The analysis of ancient rock/pillar inscriptions (epigraphy) and coins (numismatics) to verify royal dynasties, trade routes, and language evolution.",
-    "Interdisciplinary Historical Triangulation: How modern historians synthesize physical artifacts, genetic DNA, paleobotanical pollens, and textual records to cross-examine historical claims.",
-    "Manuscript Preservation & Material Vulnerability: The challenges of preserving fragile organic writing media (birch-bark, palm-leaf) against humidity, insects, and decay.",
-    "Fossils vs Artifact Distinctions: Differentiating biological remains of extinct species (fossils studied by paleontologists) from human-made tools and cultural objects (artifacts studied by archaeologists).",
-    "Historical Bias & Multi-Source Verification: The practice of comparing indigenous texts with foreign travelogues (e.g., Xuanzang) to build balanced, objective historical narratives."
+    "The Data Lifecycle: Statistics involves collecting raw observations, organizing them into structured frequency tables, representing them visually through charts, analyzing patterns, and drawing valid inferences.",
+    "Raw Data vs. Organized Data: Raw data consists of unsorted initial facts or measurements. Organizing data into categories and tally counts converts chaotic lists into meaningful distributions.",
+    "Tally Mark Grouping and Frequency Counting: Tally marks record individual occurrences as vertical strokes ('|'). Every fifth count is marked by a diagonal slash across four vertical strokes ('||||/'), enabling rapid skip-counting in 5s.",
+    "Frequency Definition: Frequency is the total integer count of how many times a specific observation or category occurs in a dataset.",
+    "Pictograph Construction and Scale Keys: A pictograph represents categorical data using picture symbols. A declared key specifies the exact numerical quantity represented by 1 full symbol (or half symbol), calculating total quantity = symbol count x key scale.",
+    "Bar Graph Structural Rules: A bar graph uses parallel rectangular bars of uniform width whose heights (or lengths) are proportional to category frequencies. Three essential rules: (1) Uniform bar width, (2) Equal spacing gaps between adjacent bars, and (3) Vertical scale starting at 0.",
+    "Scale Selection for Bar Graphs: Choosing an appropriate vertical scale unit (e.g., 1 cm = 5 units, 10 units, or 100 units) ensures bar heights fit cleanly on graph paper while accurately reflecting frequency proportions: Bar Height = Frequency / Scale Unit.",
+    "Axis Labeling and Baseline Integrity: The horizontal axis (X-axis) lists categories, while the vertical axis (Y-axis) displays frequency. The vertical axis must start at 0 to maintain true visual height ratios.",
+    "Identifying Misleading Graphs: Truncating the vertical axis (starting above 0) or using non-uniform bar widths visually distorts bar height ratios, misleading viewers about relative category differences.",
+    "Data Interpretation and Comparative Analysis: Analyzing bar graph heights or pictograph symbol counts allows quick identification of the most popular category (mode), least popular category, total survey size, and category ratios.",
+    "Categorical vs. Numerical Data: Data can represent non-numerical categories (colors, sports, transport modes) or discrete numerical values (marks, shoe sizes, family members).",
+    "Real-World Applications in Decision Making: Statistical presentation powers real-world decision making in urban planning, school resource allocation, business inventory, and public health."
   ],
   "key_terms": [
     {
-      "term": "Before Common Era (BCE)",
-      "definition": "The modern, non-religious dating designation for the era before Year 1, counting backward chronologically toward the past."
+      "term": "Data",
+      "definition": "A systematic collection of facts, numbers, measurements, or observations gathered to answer specific questions."
     },
     {
-      "term": "Common Era (CE)",
-      "definition": "The modern dating designation for the era beginning with Year 1 and continuing into the present day."
+      "term": "Raw Data",
+      "definition": "Unorganized, initial facts or observations collected directly from a survey or experiment."
     },
     {
-      "term": "Archaeological Stratigraphy",
-      "definition": "The scientific study of rock and soil layers (strata) to determine the relative chronological order of buried artifacts and human settlements."
+      "term": "Tally Marks",
+      "definition": "A system of counting using vertical strokes grouped in bundles of five with a diagonal slash ('||||/')."
     },
     {
-      "term": "Epigraphy",
-      "definition": "The scientific study, decipherment, and interpretation of ancient inscriptions carved on stone, metal plates, pillars, or cave walls."
+      "term": "Frequency",
+      "definition": "The total number of times a specific observation or value occurs in a dataset."
     },
     {
-      "term": "Numismatics",
-      "definition": "The scientific study and collection of coins, medals, seals, and paper money to understand historical trade, rulers, and economy."
+      "term": "Frequency Table",
+      "definition": "A tabular summary displaying categories, tally marks, and corresponding total frequency counts."
     },
     {
-      "term": "Radiocarbon Dating (C-14)",
-      "definition": "A scientific method that measures the decay of Carbon-14 isotopes in organic materials to calculate their exact age up to ~50,000 years."
+      "term": "Pictograph",
+      "definition": "A visual data representation using picture symbols with a declared key scale representing fixed quantities."
     },
     {
-      "term": "Holocene Epoch",
-      "definition": "The current geological warm epoch that began approximately 11,700 years ago following the end of the last Ice Age."
+      "term": "Bar Graph",
+      "definition": "A visual display using parallel rectangular bars of uniform width and proportional heights to display categorical frequency data."
     },
     {
-      "term": "Manuscript",
-      "definition": "A handwritten document or text created on natural materials like palm leaves, birch bark (Bhurjapatra), or parchment before printing."
+      "term": "Scale",
+      "definition": "The fixed ratio or key defining the numerical quantity represented by 1 cm unit length or 1 picture symbol."
     },
     {
-      "term": "Artifact",
-      "definition": "An object made, modified, or used by human beings in the past, such as pottery, tools, beads, or weapons, recovered through archaeology."
+      "term": "Axis",
+      "definition": "One of two perpendicular baseline reference lines on a graph (horizontal X-axis and vertical Y-axis)."
     },
     {
-      "term": "Paleontology",
-      "definition": "The branch of science concerned with fossilized biological remains of ancient plants, animals, and early hominids."
+      "term": "Key",
+      "definition": "An explanatory note on a pictograph or map defining the numerical value of each symbol."
     },
     {
-      "term": "Xuanzang",
-      "definition": "A famous 7th-century CE Chinese Buddhist monk and traveler who visited India, leaving detailed travelogues about its society and learning centers."
+      "term": "Interpretation",
+      "definition": "The process of analyzing graphical or tabular data to draw meaningful conclusions, comparisons, and inferences."
     },
     {
-      "term": "Stratigraphic Layer",
-      "definition": "A distinct horizontal bed of sediment or soil representing a specific historical time period during archaeological excavation."
+      "term": "Mode",
+      "definition": "The category or observation value that occurs with the highest frequency in a dataset."
     }
   ],
   "key_takeaways": [
-    "History is a scientific, evidence-based study of the past that relies on physical artifacts, written records, and interdisciplinary analysis.",
-    "The BCE/CE dating system allows historians globally to sequence events chronologically without a Year 0.",
-    "Archaeologists and historians cross-verify physical sources (coins, pottery, ruins) with written texts to reconstruct an accurate picture of past societies.",
-    "Climate shifts, like the end of the last Ice Age, profoundly impacted human history by enabling agriculture and settled civilisations."
+    "Tally marks group observations in bundles of 5 ('||||/') for quick skip-counting.",
+    "Frequency represents the total integer count of occurrences in a category.",
+    "Pictographs rely on a declared key scale specifying the quantity represented per picture icon.",
+    "Bar graphs must maintain uniform bar widths, equal spacing gaps, and a vertical scale starting at 0.",
+    "Bar height equals Category Frequency divided by the Scale Unit per cm.",
+    "Truncating the vertical axis distorts visual proportions and creates misleading graphs.",
+    "Bar graphs allow immediate visual comparison of modal (highest) and minimum categories.",
+    "Total survey size equals the sum of all individual category frequencies.",
+    "Data handling transforms raw observations into organized formats for decision making.",
+    "Critical evaluation of charts protects against misleading visual statistics in real-world media."
   ],
+  "image_asset": {
+    "title": "Chapter 4 Visual Overview - Data Handling and Presentation",
+    "url": "/assets/images/ch4_overview.png",
+    "alt_text": "Overview diagram for Data Handling and Presentation",
+    "hotspots": [
+      {
+        "id": "hs_ch4_main",
+        "label": "Core Concept: Data Handling and Presentation",
+        "description": "This chapter teaches the complete statistical lifecycle: data collection, organization, representation, interpretation, and inference. Students progre...",
+        "x_percent": 10.0,
+        "y_percent": 20.0,
+        "w_percent": 80.0,
+        "h_percent": 60.0
+      }
+    ]
+  },
+  "storyboard": {
+    "scene_1": "Introduction to Data Handling and Presentation through real-world observation.",
+    "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+    "scene_3": "Hands-on problem solving and pattern verification.",
+    "scene_4": "Synthesis of key takeaways and real-world applications."
+  },
+  "grade": "6",
+  "subject": "Maths",
+  "chapter_id": "G6-MAT-U02-C04",
   "video_url": "/videos/Class6/Maths/04-The Math Playground.mp4",
-  "video_type": "mp4",
-  "title": "Data Handling and Presentation - Chapter Overview"
+  "video_type": "mp4"
 }

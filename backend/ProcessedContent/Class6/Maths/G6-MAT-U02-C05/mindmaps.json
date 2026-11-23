@@ -1,244 +1,139 @@
 {
   "chapter_number": 5,
-  "chapter_title": "Measurement of Length and Motion",
+  "chapter_title": "Prime Time",
   "mind_map": {
-    "root_topic": "Measurement of Length and Motion",
+    "root_topic": "Chapter 5: Prime Time",
     "branches": [
       {
-        "theme": "5.1 Standard Units & The Metric System",
+        "theme": "5.1 Factors, Multiples & Factor Bounds",
         "sub_branches": [
           {
-            "concept": "Need for Standardized Units",
-            "details": [
-              "Ancient Non-Standard Units: Handspan (balisht), Cubit (forearm), Angula (finger width), Pace/Stride.",
-              "Non-standard body units vary from person to person, creating measurement confusion and commercial disputes.",
-              "International System of Units (SI Units): Universal global standard unit of length is the Meter (m).",
-              "Metric Conversions: 1 kilometer (km) = 1,000 meters (m); 1 meter (m) = 100 centimeters (cm); 1 centimeter (cm) = 10 millimeters (mm)."
+            "concept_or_rule": "Factors & Factor Bounds Property",
+            "step_by_step_procedure": [
+              "A factor divides an integer completely with zero remainder.",
+              "1 is a factor of every integer.",
+              "Every factor of N is less than or equal to N (1 <= Factor <= N)."
             ],
-            "experiments_or_examples": [
-              "Measuring desk length using different students' handspans yielding varying counts vs standard ruler",
-              "Converting 2.5 meters into centimeters (250 cm) and millimeters (2,500 mm)"
+            "formulas_and_identities": [
+              "1 <= Factor <= N; N / Factor = Integer"
             ],
-            "key_terms": [
-              "Measurement",
-              "Non-Standard Units",
-              "Handspan",
-              "Cubit",
-              "SI Units",
-              "Meter",
-              "Centimeter",
-              "Millimeter",
-              "Kilometer"
+            "example_problem": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24."
+          },
+          {
+            "concept_or_rule": "Multiples & Infinite Multiple Sequences",
+            "step_by_step_procedure": [
+              "A multiple is formed by multiplying an integer by counting numbers.",
+              "Multiples of N are infinite and greater than or equal to N."
             ],
-            "tooltip_popover": {
-              "title": "Need for Standardized Units",
-              "definition": "Ancient Non-Standard Units: Handspan (balisht), Cubit (forearm), Angula (finger width), Pace/Stride.",
-              "key_terms": [
-                "Measurement",
-                "Non-Standard Units",
-                "Handspan",
-                "Cubit",
-                "SI Units",
-                "Meter",
-                "Centimeter",
-                "Millimeter",
-                "Kilometer"
-              ],
-              "example": "Measuring desk length using different students' handspans yielding varying counts vs standard ruler"
-            }
+            "formulas_and_identities": [
+              "Multiple_k = k x N (k = 1, 2, 3...)"
+            ],
+            "example_problem": "First 4 multiples of 7: 7, 14, 21, 28."
           }
         ]
       },
       {
-        "theme": "5.2 Accurate Length Measurement Techniques & Parallax Error",
+        "theme": "5.2 Classification of Integers & Co-prime Pairs",
         "sub_branches": [
           {
-            "concept": "Rules to Avoid Measurement Errors",
-            "details": [
-              "Rule 1: Scale Alignment - Place scale touching the object parallel along its length.",
-              "Rule 2: Damaged Zero Mark - If zero mark is worn out, start from a clear full mark (e.g., 1.0 cm) and subtract it from final reading.",
-              "Rule 3: Parallax Error Avoidance - Eye must be positioned vertically directly above the scale reading mark; viewing from inclined angles causes parallax error.",
-              "Reading at an inclined angle introduces line-of-sight parallax errors."
+            "concept_or_rule": "Prime vs Composite & Sieve of Eratosthenes",
+            "step_by_step_procedure": [
+              "Prime Number: Has exactly 2 factors (1 and itself). 2 is smallest & only even prime.",
+              "Composite Number: Has more than 2 factors.",
+              "1 has only 1 factor -> neither prime nor composite.",
+              "Sieve of Eratosthenes: Cross out multiples of 2, 3, 5, 7... to isolate primes."
             ],
-            "experiments_or_examples": [
-              "Measuring pencil length with eye placed vertically vs viewing from left or right side",
-              "Measuring notebook length starting at 2.0 cm mark and subtracting 2.0 cm from final 18.5 cm reading (16.5 cm)"
+            "formulas_and_identities": [
+              "Prime Condition: Total Factors = 2"
             ],
-            "key_terms": [
-              "Scale Alignment",
-              "Worn-out Scale Mark",
-              "Parallax Error",
-              "Line of Sight"
+            "example_problem": "Primes under 20: 2, 3, 5, 7, 11, 13, 17, 19."
+          },
+          {
+            "concept_or_rule": "Co-prime Numbers & Relative Primality",
+            "step_by_step_procedure": [
+              "Two integers a and b are co-prime if they share no common factors other than 1.",
+              "HCF(a, b) = 1."
             ],
-            "tooltip_popover": {
-              "title": "Rules to Avoid Measurement Errors",
-              "definition": "Rule 1: Scale Alignment - Place scale touching the object parallel along its length.",
-              "key_terms": [
-                "Scale Alignment",
-                "Worn-out Scale Mark",
-                "Parallax Error",
-                "Line of Sight"
-              ],
-              "example": "Measuring pencil length with eye placed vertically vs viewing from left or right side"
-            }
+            "formulas_and_identities": [
+              "Co-prime Condition: HCF(a, b) = 1"
+            ],
+            "example_problem": "Are 8 and 9 co-prime? Factors(8)={1,2,4,8}, Factors(9)={1,3,9}. HCF=1 => Co-prime!"
           }
         ]
       },
       {
-        "theme": "5.3 Curved Line Measurement Methods",
+        "theme": "5.3 Divisibility Rules & Shortcuts",
         "sub_branches": [
           {
-            "concept": "Measuring Curved Lengths using Thread",
-            "details": [
-              "A rigid straight scale cannot measure curved lines directly.",
-              "Thread Method: Trace a flexible thread along the curved contour, tie knots at start and end points, pull thread straight along a standard meter ruler to read length.",
-              "Ensures high precision when measuring irregular biological boundaries or winding map paths.",
-              "Precaution: Ensure thread is not stretched tightly during contour tracing to avoid overestimation."
+            "concept_or_rule": "Rules for 2, 5, 10, and 4, 8",
+            "step_by_step_procedure": [
+              "By 2: Last digit is even (0, 2, 4, 6, 8).",
+              "By 5: Last digit is 0 or 5.",
+              "By 10: Last digit is 0.",
+              "By 4: Last 2 digits form a number divisible by 4.",
+              "By 8: Last 3 digits form a number divisible by 8."
             ],
-            "experiments_or_examples": [
-              "Measuring the perimeter of a curved tree leaf using a cotton thread and standard scale",
-              "Measuring the length of a curved river line on a paper map"
+            "formulas_and_identities": [
+              "Divisibility 4: (10d_1 + d_0) mod 4 = 0"
             ],
-            "key_terms": [
-              "Curved Line Measurement",
-              "Thread Method",
-              "Flexible Contour",
-              "Perimeter Measurement"
+            "example_problem": "Test 572 for 4 and 8: 72 mod 4 = 0 (Yes); 572 mod 8 = 4 (No)."
+          },
+          {
+            "concept_or_rule": "Rules for 3, 9, and 6",
+            "step_by_step_procedure": [
+              "By 3: Sum of all digits is divisible by 3.",
+              "By 9: Sum of all digits is divisible by 9.",
+              "By 6: Number is divisible by BOTH 2 and 3."
             ],
-            "tooltip_popover": {
-              "title": "Measuring Curved Lengths using Thread",
-              "definition": "A rigid straight scale cannot measure curved lines directly.",
-              "key_terms": [
-                "Curved Line Measurement",
-                "Thread Method",
-                "Flexible Contour",
-                "Perimeter Measurement"
-              ],
-              "example": "Measuring the perimeter of a curved tree leaf using a cotton thread and standard scale"
-            }
+            "formulas_and_identities": [
+              "Divisibility 3/9: Sum(Digits) mod 3/9 = 0"
+            ],
+            "example_problem": "Test 432 for 9: 4+3+2 = 9 mod 9 = 0 (Divisible by 9)."
           }
         ]
       },
       {
-        "theme": "5.4 Rest, Motion, & Reference Frameworks",
+        "theme": "5.4 Prime Factorisation, HCF, LCM & Fundamental Relationship",
         "sub_branches": [
           {
-            "concept": "Relative Rest and Motion",
-            "details": [
-              "Rest: An object is at rest if its position does not change with time relative to its fixed surroundings.",
-              "Motion: An object is in motion if its position changes continuously with time relative to a reference point.",
-              "Motion is relative: Passengers inside a moving bus are at rest relative to each other, but in motion relative to roadside trees.",
-              "A reference frame determines whether an object's position coordinate changes over time."
+            "concept_or_rule": "Unique Prime Factorisation & Factor Trees",
+            "step_by_step_procedure": [
+              "Decompose composite number into product of prime factors by repeated division.",
+              "Express prime factors using exponential notation."
             ],
-            "experiments_or_examples": [
-              "Classroom blackboard at rest vs flying bird or moving car",
-              "Observing stationary trees while riding inside a moving train"
+            "formulas_and_identities": [
+              "N = p_1^(e_1) x p_2^(e_2) x ... x p_k^(e_k)"
             ],
-            "key_terms": [
-              "Rest",
-              "Motion",
-              "Reference Point",
-              "Relative Motion"
-            ],
-            "tooltip_popover": {
-              "title": "Relative Rest and Motion",
-              "definition": "Rest: An object is at rest if its position does not change with time relative to its fixed surroundings.",
-              "key_terms": [
-                "Rest",
-                "Motion",
-                "Reference Point",
-                "Relative Motion"
-              ],
-              "example": "Classroom blackboard at rest vs flying bird or moving car"
-            }
-          }
-        ]
-      },
-      {
-        "theme": "5.5 Categories of Motion & Simultaneous Movements",
-        "sub_branches": [
+            "example_problem": "Prime factorise 198: 198 / 2 = 99; 99 / 3 = 33; 33 / 3 = 11 => 2 x 3^2 x 11."
+          },
           {
-            "concept": "Rectilinear, Circular, Periodic & Combination Motion",
-            "details": [
-              "Rectilinear Motion: Motion along a straight line path (march past of soldiers, stone falling vertically).",
-              "Circular Motion: Motion along a circular trajectory keeping fixed distance from center (ceiling fan blades, clock hands, giant wheel).",
-              "Periodic Motion: Motion repeating itself at regular fixed time intervals (swinging pendulum, child on swing, vibrating guitar string).",
-              "Multiple / Simultaneous Motion: Object undergoing two or more motion types at the same time (rolling wheel = circular + rectilinear)."
+            "concept_or_rule": "HCF and LCM Calculation",
+            "step_by_step_procedure": [
+              "HCF: Product of SMALLEST powers of common prime factors.",
+              "LCM: Product of GREATEST powers of all prime factors."
             ],
-            "experiments_or_examples": [
-              "A rolling bowling ball executing circular rotation about axle while translating in rectilinear motion down the lane",
-              "Earth revolving around Sun (circular/elliptical) while rotating on axis (circular) continuously"
+            "formulas_and_identities": [
+              "HCF = Product(min prime powers)",
+              "LCM = Product(max prime powers)"
             ],
-            "key_terms": [
-              "Rectilinear Motion",
-              "Circular Motion",
-              "Periodic Motion",
-              "Simultaneous Motion",
-              "Rotational Motion"
+            "example_problem": "Find HCF & LCM of 24 (2^3 x 3) and 36 (2^2 x 3^2): HCF = 2^2 x 3 = 12; LCM = 2^3 x 3^2 = 72."
+          },
+          {
+            "concept_or_rule": "Fundamental Relationship Formula",
+            "step_by_step_procedure": [
+              "Multiply HCF and LCM of two numbers a and b.",
+              "Verify that product equals a x b."
             ],
-            "tooltip_popover": {
-              "title": "Rectilinear, Circular, Periodic & Combination Motion",
-              "definition": "Rectilinear Motion: Motion along a straight line path (march past of soldiers, stone falling vertically).",
-              "key_terms": [
-                "Rectilinear Motion",
-                "Circular Motion",
-                "Periodic Motion",
-                "Simultaneous Motion",
-                "Rotational Motion"
-              ],
-              "example": "A rolling bowling ball executing circular rotation about axle while translating in rectilinear motion down the lane"
-            }
+            "formulas_and_identities": [
+              "HCF(a, b) x LCM(a, b) = a x b"
+            ],
+            "example_problem": "HCF(24,36)=12, LCM(24,36)=72. Check: 12 x 72 = 864 = 24 x 36."
           }
         ]
       }
     ]
   },
-  "image_asset": {
-    "asset_id": "ch5_diagram",
-    "title": "Chapter 5: Length Measurement & Motion",
-    "url": "/assets/images/ch5_length_motion_types.png",
-    "dimensions": "1920x1080 (16:9)",
-    "hotspots": [
-      {
-        "x_percent": 6.0,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 1",
-        "popover_text": "Interactive Hotspot 1 covering key mechanism in Chapter 5."
-      },
-      {
-        "x_percent": 24.5,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 2",
-        "popover_text": "Interactive Hotspot 2 covering key mechanism in Chapter 5."
-      },
-      {
-        "x_percent": 43.0,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 3",
-        "popover_text": "Interactive Hotspot 3 covering key mechanism in Chapter 5."
-      },
-      {
-        "x_percent": 61.5,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 4",
-        "popover_text": "Interactive Hotspot 4 covering key mechanism in Chapter 5."
-      },
-      {
-        "x_percent": 80.0,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 5",
-        "popover_text": "Interactive Hotspot 5 covering key mechanism in Chapter 5."
-      }
-    ]
-  }
+  "grade": "6",
+  "subject": "Maths",
+  "chapter_id": "G6-MAT-U02-C05"
 }

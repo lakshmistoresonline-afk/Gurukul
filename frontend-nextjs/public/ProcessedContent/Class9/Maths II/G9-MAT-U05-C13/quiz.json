@@ -1,0 +1,77 @@
+{
+  "chapter_number": 13,
+  "chapter_title": "Two Variables, One Line",
+  "quiz_questions": [
+    {
+      "question_id": 1,
+      "level": "Level 1 (Easy)",
+      "question_type": "Multiple Choice",
+      "question": "Where does the linear equation graph 2x + 3y = 12 intersect the X-axis?",
+      "options": [
+        "A) (0, 4)",
+        "B) (6, 0)",
+        "C) (0, 6)",
+        "D) (4, 0)"
+      ],
+      "correct_answer": "B",
+      "explanation": "To find the X-intercept, set y = 0: 2x + 3(0) = 12 => 2x = 12 => x = 6. The intersection point is (6, 0)."
+    },
+    {
+      "question_id": 2,
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "Two non-vertical lines are perpendicular if and only if the product of their slopes m1 and m2 equals _____.",
+      "options": [],
+      "correct_answer": "-1",
+      "explanation": "Perpendicular lines satisfy m1 * m2 = -1 (or m2 = -1/m1)."
+    },
+    {
+      "question_id": 3,
+      "level": "Level 1 (Easy)",
+      "question_type": "True/False with Justification",
+      "question": "True or False: A vertical line x = k has a slope of m = 0.",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "A vertical line x = k has an UNDEFINED slope because x2 - x1 = 0, causing division by zero in m = (y2 - y1)/(x2 - x1). Horizontal lines y = k have slope m = 0."
+    },
+    {
+      "question_id": 4,
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer",
+      "question": "Determine the value of k for which the system of linear equations kx + 2y = 5 and 3x + y = 1 has a UNIQUE solution.",
+      "options": [],
+      "correct_answer": "k != 6. For a unique solution, coefficient ratios must satisfy a1/a2 != b1/b2 => k/3 != 2/1 => k != 6.",
+      "explanation": "The lines intersect at a single unique point for all real numbers k except k = 6 (which makes lines parallel)."
+    },
+    {
+      "question_id": 5,
+      "level": "Level 2 (Medium)",
+      "question_type": "Diagram Analysis",
+      "question": "Refer to the Cartesian linear systems graph. Classify the system a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0 when ratio condition a1/a2 = b1/b2 != c1/c2 holds.",
+      "options": [],
+      "correct_answer": "Inconsistent system with NO solution. Geometrically, the graph consists of two distinct parallel lines that never intersect.",
+      "explanation": "Equal slope ratios (a1/a2 = b1/b2) with unequal intercept ratios (!= c1/c2) define non-intersecting parallel lines."
+    },
+    {
+      "question_id": 6,
+      "level": "Level 3 (Hard)",
+      "question_type": "Short Answer",
+      "question": "Calculate the exact perpendicular distance d from the origin (0, 0) to the straight line 3x + 4y - 10 = 0 using the point-to-line distance formula.",
+      "options": [],
+      "correct_answer": "d = 2.0 units. Formula: d = |a*x0 + b*y0 + c| / sqrt(a^2 + b^2). Substituting (0,0): d = |3(0) + 4(0) - 10| / sqrt(3^2 + 4^2) = |-10| / sqrt(25) = 10 / 5 = 2.0 units.",
+      "explanation": "Applying d = |ax0 + by0 + c| / sqrt(a^2 + b^2) yields 2.0."
+    },
+    {
+      "question_id": 7,
+      "level": "Level 3 (Hard)",
+      "question_type": "Case Study",
+      "question": "A city taxi charges a fixed base fare x plus a rate y per kilometer traveled. A passenger pays Rs 105 for a 10 km trip and Rs 155 for a 15 km trip. Formulate the system of equations, find x and y, and calculate the cost for a 25 km trip.",
+      "options": [],
+      "correct_answer": "System: x + 10y = 105 and x + 15y = 155. Subtracting equations: 5y = 50 => y = Rs 10/km. Substitute y=10 into Eq 1: x + 100 = 105 => x = Rs 5 fixed charge. Cost for 25 km = 5 + 25(10) = Rs 255.",
+      "explanation": "Elimination yields fixed charge x = Rs 5 and rate y = Rs 10/km. Total fare for 25 km is 5 + 250 = Rs 255."
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U05-C13"
+}

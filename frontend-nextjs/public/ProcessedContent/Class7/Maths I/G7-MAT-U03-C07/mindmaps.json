@@ -1,0 +1,111 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "A Tale of Three Intersecting Lines",
+  "mermaid_syntax": "graph TD\n  Root[\"A Tale of Three Intersecting Lines\"]\n  Root --> B1[\"Triangle Existence Geometry\"]\n  B1 --> B1_S1[\"Triangle Inequality Theorem\"]\n  Root --> B2[\"Triangle Classification by Side Lengths\"]\n  B2 --> B2_S1[\"Equilateral, Isosceles, and Scalene Types\"]",
+  "d3_react_flow_tree": {
+    "id": "node_root_ch7",
+    "label": "A Tale of Three Intersecting Lines",
+    "node_color": "#38BDF8",
+    "icon": "book_open",
+    "type": "root",
+    "children": [
+      {
+        "id": "node_b_7_1",
+        "label": "Triangle Existence Geometry",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_7_1_1",
+            "label": "Triangle Inequality Theorem",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Triangle Inequality Theorem",
+              "description": "Three pairwise intersecting lines form a triangle.",
+              "key_formula": "Triangle Inequality Theorem",
+              "example": "Sides 5, 10, 12: 5 + 10 = 15 > 12 (Triangle Exists)."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_7_2",
+        "label": "Triangle Classification by Side Lengths",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_7_2_1",
+            "label": "Equilateral, Isosceles, and Scalene Types",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Equilateral, Isosceles, and Scalene Types",
+              "description": "Equilateral: All 3 sides equal (a = b = c). Always constructible for any s > 0 because s + s = 2s > s.",
+              "key_formula": "Equilateral Triangle",
+              "example": "Equilateral triangle with sides 50 cm, 50 cm, 50 cm; Scalene triangle with sides 24 cm, 26 cm, 28 cm."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "asset_id": "ch7_triangle_inequality_detour",
+    "chapter_number": 7,
+    "chapter_title": "A Tale of Three Intersecting Lines",
+    "title": "Direct Path vs Detour & Triangle Inequality Diagram",
+    "file_name": "ch7_triangle_inequality_detour.png",
+    "local_url": "/assets/images/ch7_triangle_inequality_detour.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Direct path vs detour geometry, triangle inequality theorem, side classification, and compass arc feasibility.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_7_1",
+        "title": "Direct Path vs Detour",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Direct straight path c is strictly shorter than detour path a + b (c < a + b => a + b > c)."
+      },
+      {
+        "hotspot_id": "hs_7_2",
+        "title": "Triangle Inequality Theorem",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Sum of any 2 sides > 3rd side (a+b>c, b+c>a, c+a>b). Test: Smallest two sum > longest side."
+      },
+      {
+        "hotspot_id": "hs_7_3",
+        "title": "Side-Based Classification",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Equilateral (a=b=c, always valid for s>0), Isosceles (a=b!=c), Scalene (a!=b!=c)."
+      },
+      {
+        "hotspot_id": "hs_7_4",
+        "title": "Compass Arc Construction",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Compass arcs of radii a and b intersect to locate 3rd vertex iff a + b > c. Arcs fail if a + b <= c."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U03-C07"
+}

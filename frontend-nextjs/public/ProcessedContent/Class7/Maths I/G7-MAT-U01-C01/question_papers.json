@@ -1,0 +1,734 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Large Numbers Around Us",
+  "question_papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Large Numbers Around Us (Basic & System Conversions)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "How many Lakhs are equivalent to 1 Million in the International System?",
+              "options": [
+                "A) 1 Lakh",
+                "B) 10 Lakhs",
+                "C) 100 Lakhs",
+                "D) 1000 Lakhs"
+              ],
+              "correct_answer": "B) 10 Lakhs",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "How is 1 Crore expressed in exponential power-of-ten notation?",
+              "options": [
+                "A) 10^5",
+                "B) 10^6",
+                "C) 10^7",
+                "D) 10^8"
+              ],
+              "correct_answer": "C) 10^7",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "If a city population is 25 Lakhs and another is 2 Crores, what is the scaling ratio of the larger to the smaller?",
+              "options": [
+                "A) 4",
+                "B) 8",
+                "C) 10",
+                "D) 16"
+              ],
+              "correct_answer": "B) 8",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Use the halving-and-scaling shortcut method to calculate 464 * 5. Show step-by-step working.",
+              "marking_scheme_answer": "Step 1: Divide 464 by 2 => 464 / 2 = 232. Step 2: Multiply by 10 => 232 * 10 = 2320.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Convert 1 Billion into Crores and write down its digit expansion.",
+              "marking_scheme_answer": "1 Billion = 1,000,000,000 = 100 Crores (100,00,00,000).",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "A special calculator has only '+10,000' and '+100' keys. Find the minimum button presses needed to display 70,400 starting from 0.",
+              "marking_scheme_answer": "Press '+10,000' key 7 times (70,000) and '+100' key 4 times (400). Total presses = 7 + 4 = 11.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "If natural numbers 1, 2, 3, 4, ... are written sequentially without spaces, calculate the exact digit located at position 100.",
+              "marking_scheme_answer": "1-digit numbers (1-9) take 9 digits. Digits remaining = 100 - 9 = 91. 2-digit numbers take 2 digits each: 91 / 2 = 45 numbers with remainder 1. 45th two-digit number after 9 is 9 + 45 = 54. Next number is 55; its 1st digit is 5. Therefore, 100th digit is 5.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "State route A carries 1.5 Lakh commuters daily, while Route B carries 50,000 commuters daily. Compute the combined total passenger count for 30 days in Millions.",
+              "marking_scheme_answer": "Daily sum = 150,000 + 50,000 = 200,000 = 0.2 Million. Monthly total = 0.2 * 30 = 6 Million commuters (or 60 Lakhs).",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch1_place_value_shortcuts",
+        "chapter_number": 1,
+        "chapter_title": "Large Numbers Around Us",
+        "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+        "file_name": "ch1_place_value_shortcuts.png",
+        "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_1_1",
+            "title": "Indian Place Value System",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+          },
+          {
+            "hotspot_id": "hs_1_2",
+            "title": "International Place Value System",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+          },
+          {
+            "hotspot_id": "hs_1_3",
+            "title": "Factor Shortcuts (x5 and x25)",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+          },
+          {
+            "hotspot_id": "hs_1_4",
+            "title": "Sequential Digit Position Analytics",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Large Numbers Around Us (Computation Shortcuts & Estimation)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which shortcut formula correctly represents multiplication of N by 25?",
+              "options": [
+                "A) (N / 2) * 10",
+                "B) (N / 4) * 100",
+                "C) (N / 5) * 100",
+                "D) (N / 8) * 1000"
+              ],
+              "correct_answer": "B) (N / 4) * 100",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "How many total digits are used when writing numbers from 1 to 99 continuously?",
+              "options": [
+                "A) 99",
+                "B) 180",
+                "C) 189",
+                "D) 200"
+              ],
+              "correct_answer": "C) 189",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "1 Hundred Thousand is equivalent to how many Lakhs in the Indian system?",
+              "options": [
+                "A) 0.1 Lakh",
+                "B) 1 Lakh",
+                "C) 10 Lakhs",
+                "D) 100 Lakhs"
+              ],
+              "correct_answer": "B) 1 Lakh",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate 824 * 25 using the quartering shortcut method.",
+              "marking_scheme_answer": "824 / 4 = 206. 206 * 100 = 20,600.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Compare the numbers 1,25,00,000 and 12,500,000. Identify which system each comma placement follows.",
+              "marking_scheme_answer": "1,25,00,000 follows the Indian system (1 Crore 25 Lakhs). 12,500,000 follows the International system (12 Million 500 Thousand). Both numbers represent the exact same numeric quantity.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Calculate 312 * 25 + 116 * 5 mentally using factor decomposition.",
+              "marking_scheme_answer": "312 * 25 = (312/4)*100 = 7800. 116 * 5 = (116/2)*10 = 580. Sum = 7800 + 580 = 8380.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A grain warehouse receives 400 sacks of wheat weighing 25 kg each and 800 sacks of rice weighing 5 kg each. Calculate total weight in kilograms using shortcuts and express total weight in Tonnes (1 Tonne = 1000 kg).",
+              "marking_scheme_answer": "Wheat weight = 400 * 25 = (400/4)*100 = 10,000 kg. Rice weight = 800 * 5 = (800/2)*10 = 4,000 kg. Total weight = 14,000 kg = 14 Tonnes.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the digit position of the number 100 when writing numbers 1, 2, 3, ... sequentially. What is the total digit count up to the last digit of 100?",
+              "marking_scheme_answer": "1-digit numbers (1-9) = 9 digits. 2-digit numbers (10-99) = 90 * 2 = 180 digits. Cumulative up to 99 = 189 digits. Number 100 adds 3 digits (positions 190, 191, 192). The last digit '0' of 100 is at position 192.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch1_place_value_shortcuts",
+        "chapter_number": 1,
+        "chapter_title": "Large Numbers Around Us",
+        "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+        "file_name": "ch1_place_value_shortcuts.png",
+        "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_1_1",
+            "title": "Indian Place Value System",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+          },
+          {
+            "hotspot_id": "hs_1_2",
+            "title": "International Place Value System",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+          },
+          {
+            "hotspot_id": "hs_1_3",
+            "title": "Factor Shortcuts (x5 and x25)",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+          },
+          {
+            "hotspot_id": "hs_1_4",
+            "title": "Sequential Digit Position Analytics",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Large Numbers Around Us (Place Value & Digit Sequences)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "100 Crores is equal to how many Billions?",
+              "options": [
+                "A) 0.1 Billion",
+                "B) 1 Billion",
+                "C) 10 Billions",
+                "D) 100 Billions"
+              ],
+              "correct_answer": "B) 1 Billion",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate 128 * 5 using the halving method.",
+              "options": [
+                "A) 640",
+                "B) 620",
+                "C) 580",
+                "D) 680"
+              ],
+              "correct_answer": "A) 640",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "In a 3-period Indian number 4,50,20,000, what is the place value of digit 5?",
+              "options": [
+                "A) 5 Thousands",
+                "B) 50 Thousands",
+                "C) 50 Lakhs",
+                "D) 5 Crores"
+              ],
+              "correct_answer": "C) 50 Lakhs",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Find the value of 648 * 25 using mental arithmetic.",
+              "marking_scheme_answer": "648 / 4 = 162. 162 * 100 = 16,200.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "How many 3-digit numbers exist, and how many total digits do they consume when written in sequence?",
+              "marking_scheme_answer": "3-digit numbers range from 100 to 999. Total count = 999 - 100 + 1 = 900 numbers. Total digits consumed = 900 * 3 = 2700 digits.",
+              "marks": 3
+            },
+            {
+              "question_number": 3,
+              "question_text": "Express 5 Million in the Indian place value system using words and standard comma notation.",
+              "marking_scheme_answer": "5 Million = 5,000,000 = 50 Lakhs (50,00,000).",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In a sequential digit string 123456789101112..., determine which two-digit number contains the 50th digit.",
+              "marking_scheme_answer": "First 9 digits are 1-9. Digits needed from 2-digit numbers = 50 - 9 = 41. 41 / 2 = 20 with remainder 1. 20 complete 2-digit numbers after 9 reach 9 + 20 = 29. The next number is 30, and its first digit '3' is the 50th digit. Thus, the 50th digit belongs to number 30.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "A state electricity board bills 4.5 Lakh domestic connections at ₹500 each and 50,000 commercial connections at ₹2,000 each per month. Compute total revenue in Crores.",
+              "marking_scheme_answer": "Domestic revenue = 450,000 * 500 = ₹22,50,00,000 (22.5 Crores). Commercial revenue = 50,000 * 2000 = ₹10,00,00,000 (10 Crores). Total monthly revenue = 22.5 + 10 = ₹32.5 Crores.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch1_place_value_shortcuts",
+        "chapter_number": 1,
+        "chapter_title": "Large Numbers Around Us",
+        "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+        "file_name": "ch1_place_value_shortcuts.png",
+        "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_1_1",
+            "title": "Indian Place Value System",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+          },
+          {
+            "hotspot_id": "hs_1_2",
+            "title": "International Place Value System",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+          },
+          {
+            "hotspot_id": "hs_1_3",
+            "title": "Factor Shortcuts (x5 and x25)",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+          },
+          {
+            "hotspot_id": "hs_1_4",
+            "title": "Sequential Digit Position Analytics",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Large Numbers Around Us (Real-World Applied Problems)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "If a calculator displays 10,00,00,000, what is this number in International words?",
+              "options": [
+                "A) 10 Million",
+                "B) 100 Million",
+                "C) 1 Billion",
+                "D) 10 Billion"
+              ],
+              "correct_answer": "B) 100 Million",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is 364 * 25?",
+              "options": [
+                "A) 9,100",
+                "B) 8,100",
+                "C) 9,010",
+                "D) 9,200"
+              ],
+              "correct_answer": "A) 9,100",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "How many digits are needed to write all single-digit and two-digit natural numbers combined?",
+              "options": [
+                "A) 100",
+                "B) 180",
+                "C) 189",
+                "D) 200"
+              ],
+              "correct_answer": "C) 189",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Calculate 724 * 5 using halving.",
+              "marking_scheme_answer": "724 / 2 = 362. 362 * 10 = 3620.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Write 3.5 Crores as a single integer with Indian comma grouping.",
+              "marking_scheme_answer": "3.5 Crores = 3,50,00,000.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "A railway company serves 2.5 Million passengers in January and 3.5 Million in February. Express total passengers in Lakhs.",
+              "marking_scheme_answer": "Total = 2.5 + 3.5 = 6 Million. Since 1 Million = 10 Lakhs, 6 Million = 60 Lakhs passengers.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A charity drive collects ₹25 from each of 1,200 students and ₹5 from each of 4,800 adults. Use mental shortcut strategies to find the total money collected.",
+              "marking_scheme_answer": "Student collection = 1200 * 25 = (1200/4)*100 = 300 * 100 = ₹30,000. Adult collection = 4800 * 5 = (4800/2)*10 = 2400 * 10 = ₹24,000. Total collection = 30,000 + 24,000 = ₹54,000.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Write an explanatory note on the structural difference in comma placement between the Indian System (Lakhs, Crores) and the International System (Millions, Billions). Provide 100,000,000 as a comparative example.",
+              "marking_scheme_answer": "Indian System groups digits as 3 (ones, tens, hundreds), then in pairs of 2 (thousands, lakhs, crores): 10,00,00,000 (10 Crores). International System groups digits in uniform triplets of 3 (thousands, millions, billions): 100,000,000 (100 Million). Both denote 10^8.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch1_place_value_shortcuts",
+        "chapter_number": 1,
+        "chapter_title": "Large Numbers Around Us",
+        "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+        "file_name": "ch1_place_value_shortcuts.png",
+        "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_1_1",
+            "title": "Indian Place Value System",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+          },
+          {
+            "hotspot_id": "hs_1_2",
+            "title": "International Place Value System",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+          },
+          {
+            "hotspot_id": "hs_1_3",
+            "title": "Factor Shortcuts (x5 and x25)",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+          },
+          {
+            "hotspot_id": "hs_1_4",
+            "title": "Sequential Digit Position Analytics",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Large Numbers Around Us (Advanced Sequence & Synthesis)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which position index corresponds to the digit '1' in the number 10 when writing 1234567891011...",
+              "options": [
+                "A) 9th",
+                "B) 10th",
+                "C) 11th",
+                "D) 12th"
+              ],
+              "correct_answer": "B) 10th",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "100 Lakhs equals how many Crores?",
+              "options": [
+                "A) 1 Crore",
+                "B) 10 Crores",
+                "C) 0.1 Crore",
+                "D) 100 Crores"
+              ],
+              "correct_answer": "A) 1 Crore",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "What is 528 * 25?",
+              "options": [
+                "A) 13,200",
+                "B) 12,800",
+                "C) 13,500",
+                "D) 14,000"
+              ],
+              "correct_answer": "A) 13,200",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate 916 * 5 using division by 2.",
+              "marking_scheme_answer": "916 / 2 = 458. 458 * 10 = 4580.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Determine the total number of digits written if all numbers from 1 to 50 are written sequentially.",
+              "marking_scheme_answer": "1-digit numbers (1-9) = 9. 2-digit numbers (10-50) = 41 numbers * 2 = 82 digits. Total = 9 + 82 = 91 digits.",
+              "marks": 3
+            },
+            {
+              "question_number": 3,
+              "question_text": "Express 10 Billion in terms of Lakhs.",
+              "marking_scheme_answer": "1 Billion = 10,000 Lakhs (10^9 = 10^4 * 10^5). Therefore, 10 Billion = 100,000 Lakhs (10 Lakh Lakhs or 10^6 Lakhs).",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "If a string of digits is formed as 123456789101112... up to 200 digits, calculate which specific 3-digit or 2-digit number contains the 200th digit.",
+              "marking_scheme_answer": "First 9 digits from 1-9. 2-digit numbers (10-99) consume 180 digits (total 189 digits). Digits remaining for 200th = 200 - 189 = 11 digits. 3-digit numbers take 3 digits each: 11 / 3 = 3 with remainder 2. The 3-digit numbers are 100, 101, 102 (3 numbers = 9 digits). Next number is 103, whose 2nd digit '0' is at position 200. Thus, the 200th digit is '0' inside number 103.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "A solar farm project generates 2.4 Million kWh of power per month. Another wind farm generates 16 Lakh kWh per month. Calculate combined annual energy production in Lakhs of kWh.",
+              "marking_scheme_answer": "Solar monthly = 2.4 Million = 24 Lakhs. Wind monthly = 16 Lakhs. Combined monthly = 24 + 16 = 40 Lakhs. Combined annual (12 months) = 40 * 12 = 480 Lakhs kWh (or 4.8 Crores kWh).",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch1_place_value_shortcuts",
+        "chapter_number": 1,
+        "chapter_title": "Large Numbers Around Us",
+        "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+        "file_name": "ch1_place_value_shortcuts.png",
+        "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_1_1",
+            "title": "Indian Place Value System",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+          },
+          {
+            "hotspot_id": "hs_1_2",
+            "title": "International Place Value System",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+          },
+          {
+            "hotspot_id": "hs_1_3",
+            "title": "Factor Shortcuts (x5 and x25)",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+          },
+          {
+            "hotspot_id": "hs_1_4",
+            "title": "Sequential Digit Position Analytics",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+          }
+        ]
+      }
+    }
+  ],
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C01"
+}

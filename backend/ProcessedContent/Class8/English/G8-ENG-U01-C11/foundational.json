@@ -1,103 +1,75 @@
 {
   "chapter_number": 11,
-  "chapter_title": "Keeping Time with the Skies",
-  "skill_drills": [
+  "chapter_title": "Harvest Hymn",
+  "drag_and_drop_unscramblers": [
     {
-      "drill_type": "drag_and_drop_unscrambler",
-      "title": "Scientific Method Sequence Unscrambler - Ch 11",
-      "scrambled_tile_sets": [
-        {
-          "id": "t3",
-          "text": "Formulate Testable Hypothesis"
-        },
-        {
-          "id": "t1",
-          "text": "Observe Natural Phenomenon"
-        },
-        {
-          "id": "t5",
-          "text": "Draw Evidence-Based Conclusion"
-        },
-        {
-          "id": "t2",
-          "text": "Ask Investigative Question"
-        },
-        {
-          "id": "t4",
-          "text": "Conduct Controlled Experiment"
-        }
+      "drill_id": "scramble_ch11",
+      "scrambled_tokens": [
+        "Tenali",
+        "outwitted",
+        "Rama",
+        "scholar",
+        "the",
+        "proud"
       ],
-      "correct_sequence_ids": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5"
-      ]
-    },
+      "target_sentence": "Tenali Rama outwitted the proud scholar.",
+      "grammar_rule_hint": "Subject + Verb + Object word order."
+    }
+  ],
+  "multi_bin_sorting_matrices": [
     {
-      "drill_type": "multi_bin_sorting_matrix",
-      "title": "Concept Categorization Matrix - Ch 11",
+      "matrix_id": "sort_ch11",
       "bins": [
-        "Category A",
-        "Category B",
-        "Category C"
+        "Nouns",
+        "Verbs",
+        "Adjectives"
       ],
-      "items": [
+      "draggable_items": [
         {
-          "text": "Component 1 of Keeping Time with the Skies",
-          "bin": "Category A"
+          "item": "courtier",
+          "correct_bin": "Nouns"
         },
         {
-          "text": "Component 2 of Keeping Time with the Skies",
-          "bin": "Category B"
+          "item": "scrutinise",
+          "correct_bin": "Verbs"
         },
         {
-          "text": "Component 3 of Keeping Time with the Skies",
-          "bin": "Category C"
+          "item": "arrogant",
+          "correct_bin": "Adjectives"
         }
       ]
-    },
+    }
+  ],
+  "editing_checkers": [
     {
-      "drill_type": "editing_checker",
-      "title": "Misconception Corrector - Ch 11",
-      "erroneous_statement": "Common student misconception regarding Keeping Time with the Skies.",
-      "corrected_statement": "Scientifically verified fact correcting the misconception in Keeping Time with the Skies."
+      "checker_id": "edit_ch11",
+      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
+      "identified_errors": [
+        "cleverer -> clever / most clever"
+      ],
+      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
+      "rule_applied": "Superlative degree comparison requires 'the most'."
     }
   ],
   "image_asset": {
-    "asset_id": "ch11_media_01",
-    "chapter_number": 11,
-    "chapter_title": "Keeping Time with the Skies",
-    "title": "Moon Phase Orbital Geometry & Gnomon Shadow Path",
-    "url": "/assets/images/ch11_astronomy_skies.png",
-    "format": "PNG",
+    "asset_id": "img_ch11_overview",
+    "title": "Chapter 11 Visual Conceptual Diagram: Harvest Hymn",
+    "local_url": "/assets/images/ch1_tenali_court_map.png",
     "aspect_ratio": "16:9",
-    "tags": [
-      "Moon Phases",
-      "Orbit",
-      "Gnomon",
-      "Sundial"
-    ],
+    "description": "Conceptual diagram illustrating Foundational skill drill",
     "hotspots": [
       {
-        "hotspot_id": "hs_ch11_01",
-        "title": "Component A: Moon Phases Setup",
-        "x_percent": 8.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Detailed visual representation of Moon Phases and Orbit."
-      },
-      {
-        "hotspot_id": "hs_ch11_02",
-        "title": "Component B: Gnomon Mechanics",
-        "x_percent": 54.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Experimental phenomenon illustrating Gnomon and Sundial."
+        "hotspot_id": "hs_ch11_1",
+        "label": "Core Focus: Harvest Hymn",
+        "x_percent": 50.0,
+        "y_percent": 50.0,
+        "w_percent": 30.0,
+        "h_percent": 20.0,
+        "annotation": "Key learning concept for Chapter 11"
       }
     ]
-  }
+  },
+  "grade": "8",
+  "subject": "English",
+  "chapter_id": "G8-ENG-U04-C11"
 }

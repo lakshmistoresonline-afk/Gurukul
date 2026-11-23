@@ -1,91 +1,106 @@
 {
   "chapter_number": 7,
-  "chapter_title": "Factors of Production",
-  "skill_drills": {
-    "scrambled_tile_sets": [
-      {
-        "id": "tile_1",
-        "target_term": "ENTREPRENEURSHIP",
-        "scrambled_letters": [
-          "S",
-          "T",
-          "E",
-          "W",
-          "A",
-          "R",
-          "D",
-          "S",
-          "H",
-          "I",
-          "P"
-        ],
-        "hint": "Responsible protection and management of resources/institutions."
-      }
+  "chapter_title": "Particulate Nature of Matter",
+  "skill_drills": [
+    {
+      "drill_type": "drag_and_drop_unscrambler",
+      "title": "Scientific Method Sequence Unscrambler - Ch 7",
+      "scrambled_tile_sets": [
+        {
+          "id": "t3",
+          "text": "Formulate Testable Hypothesis"
+        },
+        {
+          "id": "t1",
+          "text": "Observe Natural Phenomenon"
+        },
+        {
+          "id": "t5",
+          "text": "Draw Evidence-Based Conclusion"
+        },
+        {
+          "id": "t2",
+          "text": "Ask Investigative Question"
+        },
+        {
+          "id": "t4",
+          "text": "Conduct Controlled Experiment"
+        }
+      ],
+      "correct_sequence_ids": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ]
+    },
+    {
+      "drill_type": "multi_bin_sorting_matrix",
+      "title": "Concept Categorization Matrix - Ch 7",
+      "bins": [
+        "Category A",
+        "Category B",
+        "Category C"
+      ],
+      "items": [
+        {
+          "text": "Component 1 of Particulate Nature of Matter",
+          "bin": "Category A"
+        },
+        {
+          "text": "Component 2 of Particulate Nature of Matter",
+          "bin": "Category B"
+        },
+        {
+          "text": "Component 3 of Particulate Nature of Matter",
+          "bin": "Category C"
+        }
+      ]
+    },
+    {
+      "drill_type": "editing_checker",
+      "title": "Misconception Corrector - Ch 7",
+      "erroneous_statement": "Common student misconception regarding Particulate Nature of Matter.",
+      "corrected_statement": "Scientifically verified fact correcting the misconception in Particulate Nature of Matter."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch7_media_01",
+    "chapter_number": 7,
+    "chapter_title": "Particulate Nature of Matter",
+    "title": "Interparticle Spacing in Solid, Liquid, and Gas States",
+    "url": "/assets/images/ch7_particulate_matter.png",
+    "format": "PNG",
+    "aspect_ratio": "16:9",
+    "tags": [
+      "Matter",
+      "Particles",
+      "States",
+      "Kinetic Energy"
     ],
-    "multi_bin_sorting_matrices": [
+    "hotspots": [
       {
-        "matrix_title": "Classification Drill - Chapter 7",
-        "bins": [
-          "Category A",
-          "Category B"
-        ],
-        "items": [
-          {
-            "item_name": "Sample Element 1",
-            "correct_bin": "Category A"
-          },
-          {
-            "item_name": "Sample Element 2",
-            "correct_bin": "Category B"
-          }
-        ]
-      }
-    ],
-    "editing_checkers": [
+        "hotspot_id": "hs_ch7_01",
+        "title": "Component A: Matter Setup",
+        "x_percent": 8.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Detailed visual representation of Matter and Particles."
+      },
       {
-        "passage_text": "In Chapter 7, key decisions are made by institutions.",
-        "embedded_errors": [
-          {
-            "error_word": "institutions",
-            "correct_word": "constitutional bodies",
-            "explanation": "Precision in terminology."
-          }
-        ]
+        "hotspot_id": "hs_ch7_02",
+        "title": "Component B: States Mechanics",
+        "x_percent": 54.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Experimental phenomenon illustrating States and Kinetic Energy."
       }
     ]
   },
-  "image_asset": {
-    "image_url": "/assets/images/ch7_factors_production_wheel.png",
-    "title": "Gamified Skill Reference - Chapter 7",
-    "aspect_ratio": "16:9",
-    "hotspots": [
-      {
-        "id": "hs_7_1",
-        "label": "Primary Inputs: Land & Labour",
-        "x_percent": 12.0,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 35.0,
-        "popover_description": "Land includes all natural resources (soil, water, minerals); Labour includes human physical and mental effort."
-      },
-      {
-        "id": "hs_7_2",
-        "label": "Physical Capital: Fixed vs Working Capital",
-        "x_percent": 52.0,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 35.0,
-        "popover_description": "Fixed capital lasts over years (machinery, factory buildings); Working capital is consumed in a single cycle (raw materials, cash)."
-      },
-      {
-        "id": "hs_7_3",
-        "label": "Entrepreneurship & Human Capital (Kaizen)",
-        "x_percent": 20.0,
-        "y_percent": 62.0,
-        "w_percent": 60.0,
-        "h_percent": 26.0,
-        "popover_description": "Entrepreneurs organize factors and bear risk; Human capital is developed through health, education (SWAYAM), and Kaizen continuous improvement."
-      }
-    ]
-  }
+  "grade": "8",
+  "subject": "Science",
+  "chapter_id": "G8-SCI-U03-C07"
 }

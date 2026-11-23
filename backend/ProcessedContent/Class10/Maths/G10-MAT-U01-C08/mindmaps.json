@@ -1,87 +1,110 @@
 {
   "chapter_number": 8,
-  "chapter_title": "Heredity",
+  "chapter_title": "Introduction to Trigonometry",
   "mind_map": {
-    "root_topic": "Chapter 8: Heredity",
+    "root_topic": "Introduction to Trigonometry",
     "branches": [
       {
-        "theme": "Practical Lab Activities and Experimental Methodology",
+        "theme": "Trigonometric Ratios and Specific Angles",
         "sub_branches": [
           {
-            "concept": "Activity",
+            "concept": "Primary & Reciprocal Ratios",
             "details": [
-              "Objective: ",
-              "Materials: Classroom student data sheet",
-              "Procedure: ",
-              "Observations: ",
-              "Conclusion: "
+              "In right ΔABC (∠B = 90°): sin A = Opp/Hyp, cos A = Adj/Hyp, tan A = Opp/Adj.",
+              "Reciprocals: cosec A = 1/sin A, sec A = 1/cos A, cot A = 1/tan A.",
+              "Specific angle values (0°, 30°, 45°, 60°, 90°): sin 30° = 1/2, cos 30° = √3/2, tan 45° = 1."
             ],
             "evidence_or_examples": [
-              "",
-              ""
+              "Evaluate 2 tan^2 45° + cos^2 30° - sin^2 60° = 2(1)^2 + 3/4 - 3/4 = 2.",
+              "If sin(A-B) = 1/2 and cos(A+B) = 1/2 => A-B = 30°, A+B = 60° => A = 45°, B = 15°."
             ],
             "key_terms": [
-              "Activity",
-              "Experimental Procedure",
-              "Laboratory Observation"
+              "Sine",
+              "Cosine",
+              "Tangent",
+              "Cosecant",
+              "Secant",
+              "Cotangent"
             ]
           }
         ]
       },
       {
-        "theme": "Master Glossary, Definitions, Formulas, and Laws",
+        "theme": "Trigonometric Identities",
         "sub_branches": [
           {
-            "concept": "Allele",
+            "concept": "Pythagorean Identities",
             "details": [
-              "Definition: One of two or more alternative forms of a gene occupying the same locus on homologous chromosomes.",
-              "Context / Notation: Noun",
-              "Application / Example: T (tall allele) and t (dwarf allele)."
+              "1) sin^2 A + cos^2 A = 1",
+              "2) 1 + tan^2 A = sec^2 A (0° <= A < 90°)",
+              "3) 1 + cot^2 A = cosec^2 A (0° < A <= 90°)"
             ],
             "evidence_or_examples": [
-              "T (tall allele) and t (dwarf allele)."
+              "Prove (cosec θ - cot θ)^2 = (1 - cos θ) / (1 + cos θ).",
+              "Prove sin A (1 + tan A) + cos A (1 + cot A) = sec A + cosec A."
             ],
             "key_terms": [
-              "Allele",
-              "Noun"
-            ]
-          },
-          {
-            "concept": "Mendelian Dihybrid Ratio",
-            "details": [
-              "Statement / Formula: F2 Phenotypic Ratio = 9 : 3 : 3 : 1",
-              "Variable Definitions / Units: 9 Round Yellow : 3 Round Green : 3 Wrinkled Yellow : 1 Wrinkled Green.",
-              "Model Application: Demonstrates Law of Independent Assortment."
-            ],
-            "evidence_or_examples": [
-              "Demonstrates Law of Independent Assortment."
-            ],
-            "key_terms": [
-              "Mendelian Dihybrid Ratio",
-              "9 Round Yellow : 3 Round Green : 3 Wrinkled Yellow : 1 Wrinkled Green."
-            ]
-          }
-        ]
-      },
-      {
-        "theme": "Common Misconceptions and Exam Pitfalls",
-        "sub_branches": [
-          {
-            "concept": "Misconception / Pitfall: ...",
-            "details": [
-              "Common Misconception: ",
-              "Correct Principle: "
-            ],
-            "evidence_or_examples": [
-              ""
-            ],
-            "key_terms": [
-              "Exam Pitfall",
-              "Concept Correction"
+              "Pythagorean Identity",
+              "Algebraic Proofs",
+              "Identity Verification"
             ]
           }
         ]
       }
-    ]
-  }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_8_root",
+      "label": "Introduction to Trigonometry",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_8_b1",
+          "label": "Trigonometric Ratios and Specific Angles",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Trigonometric Ratios and Specific Angles",
+          "children": [
+            {
+              "id": "node_8_c2",
+              "label": "Primary & Reciprocal Ratios",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Primary & Reciprocal Ratios",
+              "details": [
+                "In right ΔABC (∠B = 90°): sin A = Opp/Hyp, cos A = Adj/Hyp, tan A = Opp/Adj.",
+                "Reciprocals: cosec A = 1/sin A, sec A = 1/cos A, cot A = 1/tan A.",
+                "Specific angle values (0°, 30°, 45°, 60°, 90°): sin 30° = 1/2, cos 30° = √3/2, tan 45° = 1."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node_8_b3",
+          "label": "Trigonometric Identities",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Trigonometric Identities",
+          "children": [
+            {
+              "id": "node_8_c4",
+              "label": "Pythagorean Identities",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Pythagorean Identities",
+              "details": [
+                "1) sin^2 A + cos^2 A = 1",
+                "2) 1 + tan^2 A = sec^2 A (0° <= A < 90°)",
+                "3) 1 + cot^2 A = cosec^2 A (0° < A <= 90°)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Introduction to Trigonometry]\n  Root --> B_2[Trigonometric Ratios and Specific Angles]\n  B_2 --> C_3[Primary & Reciprocal Ratios]\n  Root --> B_4[Trigonometric Identities]\n  B_4 --> C_5[Pythagorean Identities]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U03-C08"
 }

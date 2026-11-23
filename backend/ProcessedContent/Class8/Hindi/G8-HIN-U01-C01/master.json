@@ -1,205 +1,170 @@
 {
   "chapter_number": 1,
-  "chapter_title": "A Square and A Cube",
-  "unit_or_theme": "Number Systems and Patterns",
-  "m1_zero_omission_notes": {
-    "chapter_executive_summary": "This chapter explores perfect squares, square roots, cubic numbers, and cube roots through puzzle-based stories and visual geometric models. Students discover patterns like ending digits, sums of consecutive odd numbers, factor locker puzzles, prime factorization, and prime triplet methods for roots.",
-    "detailed_section_hierarchy": [
+  "chapter_title": "स्वदेश (Swadesh)",
+  "zero_omission_notes": {
+    "summary": "गयाप्रसाद शुक्ल 'सनेही' द्वारा रचित यह देशभक्तिपूर्ण कविता नागरिकों के मन में मातृभूमि के प्रति अगाध प्रेम, त्याग और राष्ट्र सेवा की भावना जगाती है। कवि के अनुसार, जिस हृदय में स्वदेश के लिए प्रेम नहीं है, वह जीवित नहीं बल्कि पत्थर के समान निष्प्राण है।",
+    "detailed_sections": [
       {
-        "section_number_title": "1.1 Perfect Squares and Square Roots",
-        "full_explanation": "A perfect square is formed by multiplying a natural number by itself (n * n = n^2). The area of a square of side x is x^2 sq units. Perfect squares always have an odd number of total factors. Ending digits of perfect squares can only be 0, 1, 4, 5, 6, or 9. The sum of the first n consecutive odd numbers equals n^2.",
-        "margin_boxes_and_in_text_notes": [
+        "section_number_and_title": "1.1 स्वदेश प्रेम की महत्ता",
+        "full_notes": "कवि स्पष्ट करते हैं कि स्वदेश का अन्न-जल पाकर मनुष्य का शरीर पोषित और बड़ा होता है। अतः राष्ट्र के प्रति निष्ठा और समर्पण प्रत्येक नागरिक का प्रथम कर्तव्य है।",
+        "margin_notes_and_sidebars": [
           {
-            "box_type": "Pattern Discovery",
-            "box_title": "Queen Ratnamanjuri's Will",
-            "full_content": "Lockers remain open if and only if their locker numbers are perfect squares, because perfect squares possess an odd count of total factors."
+            "type": "मुख्य संदेश",
+            "title": "सच्चा जीवन",
+            "content": "जो समाज और देश के कल्याण के लिए तत्पर नहीं होता, उसका जीवन व्यर्थ है।"
           }
         ]
       },
       {
-        "section_number_title": "1.2 Cubic Numbers and Cube Roots",
-        "full_explanation": "A cubic number or perfect cube is formed by multiplying a natural number by itself three times (n * n * n = n^3). A unit cube of side 1 cm forms larger cubes of side 2 cm (8 cubes), 3 cm (27 cubes), etc. Cube roots are solved by prime factorisation into groups of 3 identical prime factors.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Try This",
-            "box_title": "Sum of Consecutive Odd Numbers for Cubes",
-            "full_content": "1 = 1^3, 3 + 5 = 8 = 2^3, 7 + 9 + 11 = 27 = 3^3, 13 + 15 + 17 + 19 = 64 = 4^3."
-          }
-        ]
+        "section_number_and_title": "1.2 जाति-उद्धार और साहस",
+        "full_notes": "बिना साहस और जाति के उत्थान के राष्ट्र का कल्याण संभव नहीं है। जो विपत्तियों से डरकर प्रयास छोड़ देता है, वह कभी लक्ष्य तक नहीं पहुँचता।",
+        "margin_notes_and_sidebars": []
       }
     ]
   },
-  "m2_key_definitions_formulas_and_vocabulary": {
-    "glossary_and_key_terms": [
-      {
-        "term": "Perfect Square",
-        "definition": "A natural number that can be expressed as the product of an integer with itself.",
-        "contextual_example_or_usage": "16 is a perfect square because 4 x 4 = 16.",
-        "associated_units_or_parts_of_speech": "Noun / Area Units"
-      },
-      {
-        "term": "Perfect Cube",
-        "definition": "A number obtained by multiplying a natural number by itself three times.",
-        "contextual_example_or_usage": "27 is a perfect cube because 3 x 3 x 3 = 27.",
-        "associated_units_or_parts_of_speech": "Noun / Volume Units"
-      }
-    ],
-    "formulas_rules_and_laws": [
-      {
-        "name": "Sum of First n Odd Numbers",
-        "statement_or_expression": "1 + 3 + 5 + ... + (2n - 1) = n^2",
-        "variable_definitions": "n = number of consecutive odd numbers starting from 1",
-        "model_application_example": "1 + 3 + 5 + 7 + 9 = 5^2 = 25"
-      },
-      {
-        "name": "Non-Square Numbers Between Squares",
-        "statement_or_expression": "Between n^2 and (n+1)^2, there are 2n non-square numbers.",
-        "variable_definitions": "n = smaller natural number",
-        "model_application_example": "Between 16^2 and 17^2, there are 2(16) = 32 numbers."
-      }
-    ]
-  },
-  "m3_practical_activities_lab_and_step_by_step_procedures": [
+  "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_procedure_title": "Finding Cube Roots via Prime Factorisation",
-      "objective_or_aim": "Determine the cube root of 27000.",
+      "activity_or_method_id": "Act 1.1",
+      "aim_or_objective": "'स्वदेश' शब्द से जुड़े विभिन्न सह-संबंधी शब्दों का संजाल तैयार करना।",
       "materials_or_prerequisites": [
-        "Paper",
-        "Pencil",
-        "Knowledge of prime factorisation"
+        "कागज़",
+        "पेन",
+        "पाठ्यपुस्तक"
       ],
-      "step_by_step_procedure": [
-        "Step 1: Express 27000 as prime factors: 2 x 2 x 2 x 3 x 3 x 3 x 5 x 5 x 5.",
-        "Step 2: Group identical factors into triplets: (2 x 2 x 2), (3 x 3 x 3), (5 x 5 x 5).",
-        "Step 3: Pick one number from each triplet: 2 x 3 x 5.",
-        "Step 4: Multiply them to get the cube root: 2 x 3 x 5 = 30."
+      "procedure_or_steps": [
+        "छात्र समूह में एकत्र हों।",
+        "'स्वदेश' शब्द को केंद्र में लिखें।",
+        "स्वदेश से संबंधित शब्द जैसे - मातृभूमि, झंडा, नागरिक, संस्कृति, स्वतंत्रता आदि जोड़ें।"
       ],
-      "expected_observations_or_working": "27000 resolves cleanly into 3 triplets of primes.",
-      "scientific_or_logical_conclusion": "The cube root of 27000 is 30."
+      "observations_or_results": "छात्रों की शब्दावली में वृद्धि होगी और देशप्रेम के विविध आयामों की समझ बनेगी।",
+      "conclusion_or_principle": "भाषा में सह-संबंधी शब्दकोश का विकास विषयगत गहराई प्रदान करता है।"
     }
   ],
-  "m4_diagrams_tables_and_visual_data": {
-    "diagrams_and_illustrations": [
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
       {
-        "figure_title": "Unit Cubes Assembly",
-        "labels_to_learn": [
-          "Side Length",
-          "Unit Cube",
-          "Volume"
+        "figure_id_and_title": "Fig 1.1: मातृभूमि एवं राष्ट्रीय प्रतीक ध्वज चित्रण",
+        "labels_and_components": [
+          "तिरंगा ध्वज",
+          "पर्वतमालाएं",
+          "नदियां",
+          "नागरिक"
         ],
-        "drawing_or_labeling_instructions": "Draw a 3x3x3 block composed of 27 individual unit cubes.",
-        "key_structural_details": "Visualizes how 3D cubic dimensions scale with edge length n^3."
+        "drawing_or_reading_instructions": "पहाड़ों के ऊपर तिरंगा लहराते हुए युवाओं का चित्र बनाएं।",
+        "structural_or_conceptual_explanation": "राष्ट्रीय ध्वज के तीन रंग (केसरिया, सफेद, हरा) और चक्र।"
       }
     ],
-    "tables_and_charts": [
+    "data_tables_and_comparisons": [
       {
-        "table_title": "First 5 Perfect Squares and Cubes",
+        "table_title": "पर्यायवाची शब्द तालिका",
         "headers": [
-          "n",
-          "Square (n^2)",
-          "Cube (n^3)"
+          "मूल शब्द",
+          "पर्यायवाची 1",
+          "पर्यायवाची 2"
         ],
         "rows": [
           [
-            "1",
-            "1",
-            "1"
+            "देश",
+            "राष्ट्र",
+            "वतन"
           ],
           [
-            "2",
-            "4",
-            "8"
+            "हृदय",
+            "दिल",
+            "उर"
           ],
           [
-            "3",
-            "9",
-            "27"
-          ],
-          [
-            "4",
-            "16",
-            "64"
-          ],
-          [
-            "5",
-            "25",
-            "125"
+            "जल",
+            "पानी",
+            "नीर"
           ]
         ]
       }
     ]
   },
-  "m5_textbook_solutions_and_extracts": {
-    "end_of_chapter_textbook_solutions": [
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "स्वदेश",
+      "definition_or_meaning": "अपना देश या मातृभूमि",
+      "si_unit_or_notation": "संज्ञा (Noun)",
+      "example_or_application": "हमें अपने स्वदेश की रक्षा के लिए सदैव तत्पर रहना चाहिए।"
+    },
+    {
+      "term_or_concept": "उद्धार",
+      "definition_or_meaning": "कल्याण या संकट से मुक्ति",
+      "si_unit_or_notation": "संज्ञा (Noun)",
+      "example_or_application": "जाति-उद्धार के बिना राष्ट्र की प्रगति अधूरी है।"
+    },
+    {
+      "term_or_concept": "रस-धारा",
+      "definition_or_meaning": "प्रेम एवं मानवीय संवेदनाओं की धारा",
+      "si_unit_or_notation": "संज्ञा (Noun)",
+      "example_or_application": "जिसके मन में देशप्रेम की रस-धारा नहीं बहती, वह भावनाशून्य है।"
+    },
+    {
+      "term_or_concept": "",
+      "definition_or_meaning": "",
+      "si_unit_or_notation": "नियम / व्याकरण",
+      "example_or_application": ""
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
       {
-        "exercise_section": "Figure it Out 1.2",
-        "question_number": "Q2",
-        "question_text": "What number will you multiply by 1323 to make it a cube number?",
-        "complete_step_by_step_solution": "Prime factorise 1323 = 3 x 3 x 3 x 7 x 7. The factor 3 is in a triplet, but 7 appears only twice. To form a triplet of 7s, we multiply by 7. Thus, 1323 x 7 = 9261 = 21^3."
+        "q_no": "Q1",
+        "question": "कवि ने किसे पत्थर के समान माना है?",
+        "answer": ""
       }
     ],
-    "extract_or_passage_based_questions": [
-      {
-        "extract_id": 1,
-        "passage_or_source_text": "Queen Ratnamanjuri left a puzzle regarding 100 lockers...",
-        "questions_and_answers": [
-          {
-            "question": "Which lockers remain open at the end?",
-            "answer": "Only lockers whose numbers are perfect squares (1, 4, 9, 16, 25, 36, 49, 64, 81, 100) because they have an odd number of factors."
-          }
-        ]
-      }
-    ]
-  },
-  "m6_tiered_exam_question_bank": {
-    "level_1_objective_questions_1_mark": [
+    "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Which of the following cannot be the unit digit of a perfect square?",
+        "question": "",
         "options": [
-          "1",
-          "5",
-          "7",
-          "9"
+          "माधवराव सप्रे",
+          "गयाप्रसाद शुक्ल 'सनेही'",
+          "महादेवी वर्मा",
+          "कबीर"
         ],
-        "correct_answer": "7",
-        "brief_explanation": "Perfect squares can only end in 0, 1, 4, 5, 6, or 9."
+        "answer": "गयाप्रसाद शुक्ल 'सनेही'",
+        "explanation": ""
       }
     ],
-    "level_2_short_answer_questions_2_to_3_marks": [
+    "short_answer_questions": [
       {
-        "question": "How many non-square natural numbers lie between 99^2 and 100^2?",
-        "model_answer": "The number of non-square numbers between n^2 and (n+1)^2 is 2n. Here n = 99, so 2 x 99 = 198 numbers.",
-        "key_marking_points": [
-          "State formula 2n",
-          "Substitute n = 99",
-          "Correct answer 198"
-        ]
+        "marks": 2,
+        "question": "",
+        "answer": ""
       }
     ],
-    "level_3_long_answer_and_reasoning_5_marks": [
+    "analytical_reasoning_questions": [
       {
-        "question": "Find the smallest number by which 256 must be divided so that the quotient is a perfect cube.",
-        "model_answer": "256 = 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 = (2 x 2 x 2) x (2 x 2 x 2) x 2 x 2. The prime factor 2 occurs 8 times. Grouping into triplets leaves two 2s extra (2 x 2 = 4). Dividing 256 by 4 gives 64, which is 4^3 (a perfect cube)."
+        "marks": 3,
+        "question": "",
+        "answer": ""
       }
     ],
-    "level_4_competency_and_case_studies": [
+    "comprehensive_long_answers": [
       {
-        "case_scenario": "A gardener wants to arrange 1000 plants in a square grid such that the number of rows equals the number of columns.",
-        "questions_and_answers": [
-          {
-            "question": "How many minimum additional plants are needed?",
-            "answer": "31^2 = 961 and 32^2 = 1024. Next square is 1024, so 1024 - 1000 = 24 additional plants are needed."
-          }
-        ]
+        "marks": 3,
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "",
+        "qa": []
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "",
+        "correct_fact_or_method": ""
       }
     ]
   },
-  "m7_common_pitfalls_and_misconceptions": [
-    {
-      "frequent_student_error": "Assuming 3^2 = 6 instead of 9.",
-      "root_cause": "Confusing exponentiation (multiplication of base by itself) with multiplying base by exponent.",
-      "correct_approach": "Emphasize that a^b means multiplying 'a' repeatedly 'b' times."
-    }
-  ]
+  "grade": "8",
+  "subject": "Hindi",
+  "chapter_id": "G8-HIN-U01-C01"
 }

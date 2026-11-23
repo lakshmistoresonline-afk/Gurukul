@@ -1,17 +1,28 @@
 {
   "chapter_number": 13,
-  "chapter_title": "Our Environment",
+  "chapter_title": "Statistics",
   "zero_omission_notes": {
-    "summary": "Analyzes ecosystem structure (biotic/abiotic), food chains, food webs, Lindeman's 10% energy flow law across trophic levels, biological magnification of pesticides, CFC-induced stratospheric ozone depletion, and solid waste management.",
+    "summary": "Covers measures of central tendency for grouped data: Mean (Direct, Assumed Mean, Step-Deviation methods), Mode, Median, and empirical relation 3 Median = Mode + 2 Mean.",
     "detailed_sections": [
       {
-        "section_number_and_title": "13.1 Ecosystem & Food Chains",
-        "full_notes": "An ecosystem comprises biotic organisms (producers, consumers, decomposers) interacting with abiotic environment (temperature, soil, water). Energy flows unidirectionally through trophic levels.",
+        "section_number_and_title": "13.1 Mean of Grouped Data",
+        "full_explanation": "Direct: x̄ = Σfi xi / Σfi. Assumed Mean: x̄ = a + (Σfi di / Σfi). Step-Deviation: x̄ = a + [Σfi ui / Σfi] * h where ui = (xi - a)/h.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Environmental Note",
-            "title": "Ozone Shield",
-            "content": "Ozone (O3) in stratosphere shields Earth from harmful UV radiation. Depleted by Chlorofluorocarbons (CFCs)."
+            "type": "Formula Box",
+            "title": "Step-Deviation Mean",
+            "content": "x̄ = a + h * (Σfi ui / Σfi)"
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "13.2 Mode and Median of Grouped Data",
+        "full_explanation": "Mode = l + [(f1 - f0)/(2f1 - f0 - f2)] * h. Median = l + [(n/2 - cf)/f] * h. Empirical formula: 3 Median = Mode + 2 Mean.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Empirical Rule",
+            "title": "3 Median Rule",
+            "content": "3 Median = Mode + 2 Mean"
           }
         ]
       }
@@ -19,57 +30,56 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "Activity 13.5: Waste Biodegradability Study",
-      "aim_or_objective": "To observe decomposition rates of biodegradable vs non-biodegradable waste.",
+      "activity_or_method_id": "ACT-1301",
+      "aim_or_objective": "Calculate Mode of grouped frequency distribution.",
       "materials_or_prerequisites": [
-        "Fruit peels, paper",
-        "Plastic bags, glass bottles",
-        "Potted soil / garden pit"
+        "Mode formula"
       ],
       "procedure_or_steps": [
-        "Bury organic peels/paper in Pit A and plastic/glass in Pit B.",
-        "Moisten soil and leave covered for 3 weeks.",
-        "Uncover and inspect structural changes."
+        "Identify modal class with maximum frequency f1",
+        "Extract lower limit l, f0 (preceding), f2 (succeeding), and class width h",
+        "Substitute into Mode = l + [(f1-f0)/(2f1-f0-f2)]*h"
       ],
-      "observations_or_results": "Organic peels in Pit A decomposed completely into dark soil; plastics in Pit B remain totally unchanged.",
-      "conclusion_or_principle": "Decomposers possess enzymes to break down natural organic matter but lack enzymes for synthetic polymers."
+      "observations_or_results": "Yields exact modal value.",
+      "conclusion_or_principle": "Modal value lies strictly inside modal class interval."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 13.4 Trophic Levels Energy Pyramid",
+        "figure_id_and_title": "Fig 13.1 Grouped Frequency Histogram",
         "labels_and_components": [
-          "Producers (First Trophic Level)",
-          "Primary Consumers / Herbivores (Second)",
-          "Secondary Consumers (Third)",
-          "Tertiary Consumers (Fourth)"
+          "Class Intervals",
+          "Frequencies",
+          "Modal Peak"
         ],
-        "drawing_or_reading_instructions": "Draw upright pyramid with 4 broad horizontal steps shrinking upward.",
-        "structural_or_conceptual_explanation": "Pyramid shrinks upward because available energy decreases by 90% at each step."
+        "drawing_or_reading_instructions": "Draw histogram bars proportional to class frequencies.",
+        "structural_or_conceptual_explanation": "Histogram peak identifies modal class."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Waste Classification Table",
+        "table_title": "Statistics Master Formulas",
         "headers": [
-          "Type",
-          "Examples",
-          "Decomposition Mechanism",
-          "Environmental Impact"
+          "Measure",
+          "Formula"
         ],
         "rows": [
           [
-            "Biodegradable",
-            "Vegetable peels, paper, cow dung, cotton",
-            "Broken down by bacterial/fungal enzymes",
-            "Eco-friendly compost"
+            "Mean (Step-Dev)",
+            "a + h * (Σfi ui / Σfi)"
           ],
           [
-            "Non-Biodegradable",
-            "Plastics, DDT, glass, heavy metals",
-            "Persist indefinitely without enzymatic breakdown",
-            "Pollution & Biomagnification"
+            "Mode",
+            "l + [(f1-f0)/(2f1-f0-f2)] * h"
+          ],
+          [
+            "Median",
+            "l + [(n/2 - cf)/f] * h"
+          ],
+          [
+            "Empirical Relation",
+            "3 Median = Mode + 2 Mean"
           ]
         ]
       }
@@ -77,77 +87,74 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Biological Magnification",
-      "definition_or_meaning": "The phenomenon where non-biodegradable chemicals (like DDT) accumulate in progressively higher concentrations at successive trophic levels of a food chain.",
-      "si_unit_or_notation": "Noun",
-      "example_or_application": "Top carnivores (humans/birds) exhibit maximum toxin concentration."
-    },
-    {
-      "term_or_concept": "10 Percent Energy Law",
-      "definition_or_meaning": "Only 10% of the energy available at a trophic level is transferred to the next higher trophic level; 90% is lost as heat/metabolism.",
-      "si_unit_or_notation": "Producers (10,000 J) -> Herbivores (1000 J) -> Primary Carnivores (100 J) -> Top Carnivores (10 J).",
-      "example_or_application": "Limits food chain length to 3-4 steps."
+      "term_or_concept": "Class Mark (xi)",
+      "definition_or_meaning": "Midpoint of class interval.",
+      "si_unit_or_notation": "xi = (Upper Limit + Lower Limit) / 2",
+      "example_or_application": "For 10-20, xi = 15"
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Q1",
-        "question": "Which of the following groups contain only biodegradable items?",
-        "answer": "(a) Grass, flowers, leather and (d) Cake, wood, grass. Both contain exclusively biodegradable materials."
+        "q_no": "Ex 13.1 Q1",
+        "question": "Find mean plants per house: 0-2 (1), 2-4 (2), 4-6 (1), 6-8 (5), 8-10 (6), 10-12 (2), 12-14 (3).",
+        "answer": "Σfi = 20. Σfi xi = 162. Mean = 162 / 20 = 8.1 plants."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "In a food chain, maximum energy is available at which level?",
+        "question": "If Mode = 12 and Mean = 15, Median is:",
         "options": [
-          "Producers",
-          "Primary Consumers",
-          "Secondary Consumers",
-          "Decomposers"
+          "A) 14",
+          "B) 13",
+          "C) 15",
+          "D) 16"
         ],
-        "answer": "Producers",
-        "explanation": "Producers capture solar energy directly; energy diminishes by 90% at each subsequent level."
+        "answer": "A",
+        "explanation": "3 Median = 12 + 2(15) = 42 => Median = 14."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "What are decomposers and what is their role in an ecosystem?",
-        "answer": "Decomposers are microorganisms (bacteria and fungi) that break down complex organic remains of dead plants and animals into simple inorganic nutrients. Role: 1. Clean environment by recycling nutrients back to soil. 2. Prevent natural waste accumulation."
+        "question": "Find class mark of 15-35 and class size.",
+        "answer": "Class mark = (15+35)/2 = 25. Class size = 35 - 15 = 20."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "What international agreement froze CFC production to protect ozone layer?",
-        "answer": "UNEP (United Nations Environment Programme) agreement in 1987 to freeze CFC production at 1986 levels."
+        "question": "If mean of 5 observations x, x+2, x+4, x+6, x+8 is 11, find mean of first 3 observations.",
+        "answer": "Sum = 5x + 20 = 55 => 5x = 35 => x = 7. First 3 observations: 7, 9, 11. Mean = (7+9+11)/3 = 9."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Explain Biological Magnification with an example and explain why food chains generally have only 3 to 4 steps.",
-        "answer": "Biological Magnification: Non-biodegradable chemicals like DDT sprayed on crops enter food chain (Plankton -> Small Fish -> Large Fish -> Birds/Humans). Since these chemicals cannot be metabolized or excreted, their concentration increases at each successive trophic level, reaching maximum in top carnivores. Food chain step limit: According to 10% energy law, only 10% energy is transferred to next level. After 3-4 steps, remaining energy is too miniscule to support higher trophic populations."
+        "question": "The median of data is 525. Find values of x and y if total frequency is 100.",
+        "answer": "Median class 500-600. l=500, h=100, f=20, cf=36+x. Median = 500 + [(50 - (36+x))/20]*100 => 525 = 500 + (14-x)*5 => 25 = 70 - 5x => x = 9. Sum frequencies = 100 => x + y = 24 => y = 15."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "A city municipality introduces mandatory 2-bin waste segregation (Green for wet, Blue for dry).",
+        "case_scenario": "Height survey of 51 girls: <140 (4), <145 (11), <150 (29), <155 (40), <160 (46), <165 (51).",
         "qa": [
           {
-            "question": "Why is waste segregation prior to disposal scientifically critical?",
-            "answer": "Segregating wet biodegradable waste allows composting/biogas generation, while dry non-biodegradable waste (plastics/glass) can be recycled, reducing landfill burden."
+            "question": "Find median height.",
+            "answer": "Median class 145-150. Median = 145 + [(25.5 - 11)/18]*5 = 145 + 4.03 = 149.03 cm."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Believing energy flow in an ecosystem is cyclical.",
-        "correct_fact_or_method": "Emphasize that energy flow is strictly unidirectional (Sun -> Producers -> Consumers) and lost as unrecoverable heat."
+        "common_error_or_misconception": "Using cf of median class instead of preceding class in median formula.",
+        "correct_fact_or_method": "cf in median formula ALWAYS comes from the class preceding the median class."
       }
     ]
-  }
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U05-C13"
 }

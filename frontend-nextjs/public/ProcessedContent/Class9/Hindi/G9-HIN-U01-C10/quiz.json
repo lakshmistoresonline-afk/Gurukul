@@ -1,204 +1,70 @@
-{
-  "chapter_number": 10,
-  "chapter_title": "Sound: Waves, Propagation, and Acoustics",
-  "level_1_easy_foundational": [
-    {
-      "question_id": "CH10-L1-01",
-      "question_type": "MCQ",
-      "question": "What is the pitch of a sound wave determined by?",
-      "options": [
-        "A) Amplitude",
-        "B) Frequency",
-        "C) Speed",
-        "D) Wavelength only"
-      ],
-      "correct_answer": "B) Frequency",
-      "explanation": "Pitch depends directly on wave frequency (higher frequency produces a higher pitch).",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 10.",
-      "solution_key_3_part": {
-        "key_concept": "Pitch depends directly on wave frequency (higher frequency produces a higher pitch)",
-        "step_by_step_derivation": "Pitch depends directly on wave frequency (higher frequency produces a higher pitch).",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch10_sound_waves.png",
-        "target_region": {
-          "hotspot_id": "HS-10-01",
-          "label": "Compressions & Rarefactions",
-          "x_percent": 25,
-          "y_percent": 50,
-          "w_percent": 25,
-          "h_percent": 30,
-          "description": "Longitudinal mechanical pressure waves."
-        }
-      }
-    },
-    {
-      "question_id": "CH10-L1-02",
-      "question_type": "Fill-in-the-Blanks",
-      "question": "Ultrasonic waves have frequencies above the human hearing threshold of ______ Hz.",
-      "options": [],
-      "correct_answer": "20000",
-      "explanation": "Human hearing ranges from 20 Hz to 20,000 Hz (20 kHz); frequencies above 20 kHz are ultrasonic.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 10.",
-      "solution_key_3_part": {
-        "key_concept": "Human hearing ranges from 20 Hz to 20,000 Hz (20 kHz); frequencies above 20 kHz are ultrasonic",
-        "step_by_step_derivation": "Human hearing ranges from 20 Hz to 20,000 Hz (20 kHz); frequencies above 20 kHz are ultrasonic.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch10_sound_waves.png",
-        "target_region": {
-          "hotspot_id": "HS-10-01",
-          "label": "Compressions & Rarefactions",
-          "x_percent": 25,
-          "y_percent": 50,
-          "w_percent": 25,
-          "h_percent": 30,
-          "description": "Longitudinal mechanical pressure waves."
-        }
-      }
-    },
-    {
-      "question_id": "CH10-L1-03",
-      "question_type": "True/False with Justification",
-      "question": "True or False: Sound waves can travel through the vacuum of outer space.",
-      "options": [],
-      "correct_answer": "False",
-      "explanation": "Sound is a mechanical wave that requires a material medium (solid, liquid, gas) to propagate.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 10.",
-      "solution_key_3_part": {
-        "key_concept": "Sound is a mechanical wave that requires a material medium (solid, liquid, gas) to propagate",
-        "step_by_step_derivation": "Sound is a mechanical wave that requires a material medium (solid, liquid, gas) to propagate.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch10_sound_waves.png",
-        "target_region": {
-          "hotspot_id": "HS-10-01",
-          "label": "Compressions & Rarefactions",
-          "x_percent": 25,
-          "y_percent": 50,
-          "w_percent": 25,
-          "h_percent": 30,
-          "description": "Longitudinal mechanical pressure waves."
-        }
-      }
-    }
-  ],
-  "level_2_medium_conceptual": [
-    {
-      "question_id": "CH10-L2-01",
-      "question_type": "Short Answer",
-      "question": "A sound wave has a frequency of 2 kHz and a wavelength of 35 cm. Calculate its speed and the time required to travel 1.5 km.",
-      "options": [],
-      "correct_answer": "Frequency = 2000 Hz, wavelength = 0.35 m. Speed v = f × λ = 2000 × 0.35 = 700 m/s. Time t = d / v = 1500 / 700 = 2.14 seconds.",
-      "explanation": "Applying wave speed v = f·λ gives 700 m/s; dividing distance by speed gives 2.14 seconds.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 10.",
-      "solution_key_3_part": {
-        "key_concept": "Applying wave speed v = f·λ gives 700 m/s; dividing distance by speed gives 2",
-        "step_by_step_derivation": "Applying wave speed v = f·λ gives 700 m/s; dividing distance by speed gives 2.14 seconds.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch10_sound_waves.png",
-        "target_region": {
-          "hotspot_id": "HS-10-01",
-          "label": "Compressions & Rarefactions",
-          "x_percent": 25,
-          "y_percent": 50,
-          "w_percent": 25,
-          "h_percent": 30,
-          "description": "Longitudinal mechanical pressure waves."
-        }
-      }
-    },
-    {
-      "question_id": "CH10-L2-02",
-      "question_type": "Structural Analysis",
-      "question": "Calculate the minimum distance required between a person and a reflecting cliff to hear a distinct echo in air (speed of sound = 344 m/s).",
-      "options": [],
-      "correct_answer": "Persistence of human hearing = 0.1 s. Total round-trip distance = 2d = v × t = 344 × 0.1 = 34.4 m. Minimum cliff distance d = 34.4 / 2 = 17.2 meters.",
-      "explanation": "The reflected echo must arrive at least 0.1 s after the original sound, requiring a minimum distance of 17.2 m.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 10.",
-      "solution_key_3_part": {
-        "key_concept": "The reflected echo must arrive at least 0",
-        "step_by_step_derivation": "The reflected echo must arrive at least 0.1 s after the original sound, requiring a minimum distance of 17.2 m.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch10_sound_waves.png",
-        "target_region": {
-          "hotspot_id": "HS-10-01",
-          "label": "Compressions & Rarefactions",
-          "x_percent": 25,
-          "y_percent": 50,
-          "w_percent": 25,
-          "h_percent": 30,
-          "description": "Longitudinal mechanical pressure waves."
-        }
-      }
-    }
-  ],
-  "level_3_hard_advanced": [
-    {
-      "question_id": "CH10-L3-01",
-      "question_type": "Case-Study Scenarios",
-      "question": "A SONAR signal emitted from a research vessel returns from the ocean seabed after 3.2 seconds. If the speed of sound in seawater is 1530 m/s, calculate the ocean depth.",
-      "options": [],
-      "correct_answer": "Round-trip distance 2d = v × t = 1530 × 3.2 = 4896 m. Seabed depth d = 4896 / 2 = 2448 meters (2.448 km).",
-      "explanation": "SONAR uses pulse reflection duration to calculate ocean depth.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 10.",
-      "solution_key_3_part": {
-        "key_concept": "SONAR uses pulse reflection duration to calculate ocean depth",
-        "step_by_step_derivation": "SONAR uses pulse reflection duration to calculate ocean depth.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch10_sound_waves.png",
-        "target_region": {
-          "hotspot_id": "HS-10-01",
-          "label": "Compressions & Rarefactions",
-          "x_percent": 25,
-          "y_percent": 50,
-          "w_percent": 25,
-          "h_percent": 30,
-          "description": "Longitudinal mechanical pressure waves."
-        }
-      }
-    },
-    {
-      "question_id": "CH10-L3-02",
-      "question_type": "Give Reasons / Critical Thinking",
-      "question": "Explain three important industrial and medical applications of ultrasonic sound waves.",
-      "options": [],
-      "correct_answer": "1) Medical Echocardiography & USG: Imaging heart action and internal fetal development. 2) Industrial NDT Flaw Detection: Detecting hidden cracks in metal blocks/bridges. 3) Ultrasonic Cleaning: Removing fine grease/dust from intricate spiral components.",
-      "explanation": "High-frequency ultrasonic waves penetrate media and reflect off boundaries, enabling non-destructive testing and medical imaging.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 10.",
-      "solution_key_3_part": {
-        "key_concept": "High-frequency ultrasonic waves penetrate media and reflect off boundaries, enabling non-destructive testing and medical imaging",
-        "step_by_step_derivation": "High-frequency ultrasonic waves penetrate media and reflect off boundaries, enabling non-destructive testing and medical imaging.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch10_sound_waves.png",
-        "target_region": {
-          "hotspot_id": "HS-10-01",
-          "label": "Compressions & Rarefactions",
-          "x_percent": 25,
-          "y_percent": 50,
-          "w_percent": 25,
-          "h_percent": 30,
-          "description": "Longitudinal mechanical pressure waves."
-        }
-      }
-    }
-  ]
-}
+[
+  {
+    "question_id": "CH10-L1-01",
+    "level": "Level 1 (Easy)",
+    "question_type": "MCQ",
+    "question_text": "'भारत, जय, विजयकरे!' कविता के रचयिता कौन हैं?",
+    "options": [
+      "A) माखनलाल चतुर्वेदी",
+      "B) सूर्यकांत त्रिपाठी 'निराला'",
+      "C) सुभद्रा कुमारी चौहान",
+      "D) जयशंकर प्रसाद"
+    ],
+    "correct_answer": "B) सूर्यकांत त्रिपाठी 'निराला'",
+    "explanation": "यह निराला जी की ओजपूर्ण राष्ट्रीय कविता है।"
+  },
+  {
+    "question_id": "CH10-L1-02",
+    "level": "Level 1 (Easy)",
+    "question_type": "Fill-in-the-Blank",
+    "question_text": "पाठ के अनुसार 'मुकुट' शब्द का सटीक अर्थ __________ है।",
+    "options": [],
+    "correct_answer": "राजा या देवता के सिर पर पहनने वाला ताज; यहाँ हिमालय का प्रतीक।",
+    "explanation": "प्रयुक्त वाक्य / संदर्भ: हिमालय भारत माता का शुभ्र मुकुट प्रतीत होता है।"
+  },
+  {
+    "question_id": "CH10-L2-03",
+    "level": "Level 2 (Medium)",
+    "question_type": "Short Answer",
+    "question_text": "कवि भारत को 'विजयकरे' होने का आशीर्वाद क्यों दे रहे हैं?",
+    "options": [],
+    "correct_answer": "कवि चाहते हैं कि भारत अज्ञान, पराधीनता और सभी बाधाओं पर विजय प्राप्त कर दुनिया में सत्य, शांति और ज्ञान का आलोक फैलाए।",
+    "explanation": "मार्किंग अंक: 2 अंक। पाठगत संदर्भ एवं मुख्य तर्कों पर आधारित उत्तर।"
+  },
+  {
+    "question_id": "CH10-L2-04",
+    "level": "Level 2 (Medium)",
+    "question_type": "Textbook Exercise Analysis",
+    "question_text": "[प्रश्न 1] कवि भारत माता की आरती किस प्रकार उतार रहे हैं?",
+    "options": [],
+    "correct_answer": "कवि प्रकृति के महान घटकों द्वारा भारत माता की आरती उतार रहे हैं—सूर्य और चंद्रमा आरती के दीपक हैं, और विशाल समुद्र अपनी तरंगों से उनके चरण पखार रहा है।",
+    "explanation": "पाठ्यपुस्तक के अभ्यास प्रश्नों पर आधारित विस्तृत एवं सटीक उत्तर।"
+  },
+  {
+    "question_id": "CH10-L3-05",
+    "level": "Level 3 (Hard)",
+    "question_type": "Analytical Reasoning",
+    "question_text": "'सस्य-श्यामल' शब्द का क्या अर्थ है? (संदर्भ: भारत, जय, विजयकरे! कनक-शस्य-श्यामल तल, अमल-कमल दलदल।...)",
+    "options": [],
+    "correct_answer": "खेतों में लहलहाती हरी-भरी फसलों से सुशोभित धरती।",
+    "explanation": "अंक: 3। तार्किक विश्लेषण एवं वैचारिक गहराई पर आधारित।"
+  },
+  {
+    "question_id": "CH10-L3-06",
+    "level": "Level 3 (Hard)",
+    "question_type": "Long Answer / Synthesis",
+    "question_text": "'भारत, जय, विजयकरे!' कविता में व्यक्त निराला जी के राष्ट्रप्रेम और प्रकृति चित्रण की समीक्षा कीजिए।",
+    "options": [],
+    "correct_answer": "निराला जी ने मानवीकरण अलंकार का सुंदर प्रयोग करते हुए प्रकृति को भारत माता का आभूषण बनाया है। इसमें ओज गुण और तत्सम प्रधान भाषा का अद्भुत सामंजस्य है जो पाठक के मन में देशभक्ति का ज्वार उत्पन्न करता है।",
+    "explanation": "अंक: 5। विस्तृत बहु-पैराग्राफ विश्लेषणात्मक उत्तर।"
+  },
+  {
+    "question_id": "CH10-L3-07",
+    "level": "Level 3 (Hard)",
+    "question_type": "Competency & Case Study",
+    "question_text": "केस/परिदृश्य: पर्यावरण संरक्षण और राष्ट्र-प्रेम आपस में गहरे जुड़े हुए हैं।\nप्रश्न: कवि द्वारा वर्णित सस्य-श्यामला भूमि को आज हम कैसे सुरक्षित रख सकते हैं?",
+    "options": [],
+    "correct_answer": "प्रदूषण रोककर, वनों का संरक्षण कर और अपनी प्राकृतिक नदियों को स्वच्छ रखकर।",
+    "explanation": "योग्यता-आधारित व्यावहारिक एवं व्यावहारिक समझ पर आधारित समाधान।"
+  }
+]

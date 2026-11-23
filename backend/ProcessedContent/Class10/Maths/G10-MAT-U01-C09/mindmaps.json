@@ -1,87 +1,91 @@
 {
   "chapter_number": 9,
-  "chapter_title": "Light – Reflection and Refraction",
+  "chapter_title": "Some Applications of Trigonometry",
   "mind_map": {
-    "root_topic": "Chapter 9: Light – Reflection and Refraction",
+    "root_topic": "Some Applications of Trigonometry",
     "branches": [
       {
-        "theme": "Practical Lab Activities and Experimental Methodology",
+        "theme": "Heights and Distances Framework",
         "sub_branches": [
           {
-            "concept": "Activity",
+            "concept": "Line of Sight & Angular Angles",
             "details": [
-              "Objective: ",
-              "Materials: Glass slab, Drawing board, Pins, Protractor, Ruler",
-              "Procedure: ",
-              "Observations: ",
-              "Conclusion: "
+              "Line of Sight: Straight line drawn from observer's eye to target point.",
+              "Angle of Elevation: Angle between line of sight and horizontal baseline when looking UP.",
+              "Angle of Depression: Angle between line of sight and horizontal baseline when looking DOWN.",
+              "Angle of depression equals angle of elevation from observer object due to alternate interior angles."
             ],
             "evidence_or_examples": [
-              "",
-              ""
+              "Pole 6 m high casts shadow 2√3 m => tan θ = 6/(2√3) = √3 => θ = 60°.",
+              "Circus artist climbing 20 m rope tied to pole top at 30° => sin 30° = AB/20 => pole height = 10 m."
             ],
             "key_terms": [
-              "Activity",
-              "Experimental Procedure",
-              "Laboratory Observation"
-            ]
-          }
-        ]
-      },
-      {
-        "theme": "Master Glossary, Definitions, Formulas, and Laws",
-        "sub_branches": [
-          {
-            "concept": "Power of a Lens",
-            "details": [
-              "Definition: The degree of convergence or divergence of light rays achieved by a lens, defined as reciprocal of focal length in meters: P = 1/f(m).",
-              "Context / Notation: Dioptre (D)",
-              "Application / Example: SI unit is Dioptre (D). Convex lens has +P; Concave has -P."
-            ],
-            "evidence_or_examples": [
-              "SI unit is Dioptre (D). Convex lens has +P; Concave has -P."
-            ],
-            "key_terms": [
-              "Power of a Lens",
-              "Dioptre (D)"
+              "Line of Sight",
+              "Angle of Elevation",
+              "Angle of Depression",
+              "Horizontal Baseline"
             ]
           },
           {
-            "concept": "Lens Formula and Magnification",
+            "concept": "Multi-Triangle Problems",
             "details": [
-              "Statement / Formula: 1/v - 1/u = 1/f ; m = h'/h = v/u",
-              "Variable Definitions / Units: u = object distance, v = image distance, f = focal length, m = magnification.",
-              "Model Application: Calculates image position and size for convex/concave lenses."
+              "Set up coupled right-angled triangles to compute unknown heights or distance between objects."
             ],
             "evidence_or_examples": [
-              "Calculates image position and size for convex/concave lenses."
+              "Lighthouse height 75 m, ship depression angles 30° and 45°: ship distances 75 m and 75√3 m => ship distance = 75(√3 - 1) m ≈ 54.9 m.",
+              "Statue 1.6 m on pedestal, top angles 60° and 45° => pedestal height h = 0.8(√3 + 1) m."
             ],
             "key_terms": [
-              "Lens Formula and Magnification",
-              "u = object distance, v = image distance, f = focal length, m = magnification."
-            ]
-          }
-        ]
-      },
-      {
-        "theme": "Common Misconceptions and Exam Pitfalls",
-        "sub_branches": [
-          {
-            "concept": "Misconception / Pitfall: ...",
-            "details": [
-              "Common Misconception: ",
-              "Correct Principle: "
-            ],
-            "evidence_or_examples": [
-              ""
-            ],
-            "key_terms": [
-              "Exam Pitfall",
-              "Concept Correction"
+              "Coupled Triangles",
+              "Indirect Measurement"
             ]
           }
         ]
       }
-    ]
-  }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_9_root",
+      "label": "Some Applications of Trigonometry",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_9_b1",
+          "label": "Heights and Distances Framework",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Heights and Distances Framework",
+          "children": [
+            {
+              "id": "node_9_c2",
+              "label": "Line of Sight & Angular Angles",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Line of Sight & Angular Angles",
+              "details": [
+                "Line of Sight: Straight line drawn from observer's eye to target point.",
+                "Angle of Elevation: Angle between line of sight and horizontal baseline when looking UP.",
+                "Angle of Depression: Angle between line of sight and horizontal baseline when looking DOWN.",
+                "Angle of depression equals angle of elevation from observer object due to alternate interior angles."
+              ]
+            },
+            {
+              "id": "node_9_c3",
+              "label": "Multi-Triangle Problems",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Multi-Triangle Problems",
+              "details": [
+                "Set up coupled right-angled triangles to compute unknown heights or distance between objects."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Some Applications of Trigonometry]\n  Root --> B_2[Heights and Distances Framework]\n  B_2 --> C_3[Line of Sight & Angular Angles]\n  B_3 --> C_4[Multi-Triangle Problems]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U03-C09"
 }

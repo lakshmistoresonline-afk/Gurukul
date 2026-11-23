@@ -1,39 +1,28 @@
 {
   "chapter_number": 9,
-  "chapter_title": "Demand, Supply, and Market Equilibrium",
+  "chapter_title": "Chemical Reactions and Conservation of Mass",
   "zero_omission_notes": {
-    "summary": "Explains core market mechanisms: Law of Demand (inverse price-quantity relation), Law of Supply (direct price-quantity relation), market equilibrium where demand equals supply, and government price regulations (price ceilings and price floors).",
+    "summary": "This chapter covers chemical transformations, chemical equations, mass conservation, Lavoisier's experiments, Proust's Law of Definite Proportions, stoichiometric balancing, and types of chemical reactions (combination, decomposition, displacement, double displacement, redox).",
     "detailed_sections": [
       {
-        "section_number_and_title": "9.1 Law of Demand",
-        "full_notes": "Other things remaining constant (ceteris paribus), as price increases, quantity demanded decreases; as price decreases, quantity demanded increases. Demand curves slope downward from left to right due to income and substitution effects.",
+        "section_number_and_title": "9.1 Law of Conservation of Mass and Definite Proportions",
+        "full_notes": "Antoine Lavoisier formulated the Law of Conservation of Mass: Matter can neither be created nor destroyed in a chemical reaction; total mass of reactants equals total mass of products. Joseph Proust formulated the Law of Definite Proportions: A pure chemical compound always contains its component elements combined in fixed mass ratios regardless of source or preparation method (e.g., pure water H2O is always 1:8 Hydrogen to Oxygen mass ratio).",
         "margin_notes_and_sidebars": [
           {
-            "type": "Economic Assumption",
-            "title": "Ceteris Paribus",
-            "content": "Latin phrase meaning 'all other factors remaining equal' (consumer income, tastes, related good prices remain constant)."
+            "type": "Historical Experiment",
+            "title": "Lavoisier's Closed System Reaction",
+            "content": "Lavoisier heated mercury in a sealed glass retort with air, proving that mass lost by air equaled mass gained by red mercuric oxide precipitate."
           }
         ]
       },
       {
-        "section_number_and_title": "9.2 Law of Supply",
-        "full_notes": "Other things remaining constant, as price increases, quantity supplied by producers increases; as price decreases, quantity supplied decreases. Supply curves slope upward from left to right driven by profit motivation.",
+        "section_number_and_title": "9.2 Chemical Equations and Reaction Types",
+        "full_notes": "Chemical equations represent chemical changes using chemical symbols and formulas. Balancing equations obeys mass conservation by equating atom counts per element on reactant and product sides. Reaction types: Combination (A + B -> AB), Decomposition (AB -> A + B via thermal, electrolytic, or photo energy), Single Displacement (A + BC -> AC + B based on reactivity series), Double Displacement (AB + CD -> AD + CB including precipitation), and Redox (simultaneous reduction and oxidation).",
         "margin_notes_and_sidebars": [
           {
-            "type": "Producer Behavior",
-            "title": "Profit Incentive",
-            "content": "Higher market prices increase profit margins, incentivizing suppliers to expand production output."
-          }
-        ]
-      },
-      {
-        "section_number_and_title": "9.3 Market Equilibrium and Price Controls",
-        "full_notes": "Market Equilibrium occurs where Quantity Demanded = Quantity Supplied at Equilibrium Price (Pe). If Price > Pe: Excess Supply (Surplus) forces price down. If Price < Pe: Excess Demand (Shortage) pushes price up. Price Ceiling (max price below Pe) creates shortages; Price Floor (min price above Pe, e.g. MSP) creates surpluses.",
-        "margin_notes_and_sidebars": [
-          {
-            "type": "Market Intervention",
-            "title": "Price Ceiling vs Price Floor",
-            "content": "Price Ceiling: Maximum legal price charged (protects consumers, e.g. essential drugs). Price Floor: Minimum legal price (protects producers, e.g. Minimum Support Price for farmers)."
+            "type": "Reaction Indicator",
+            "title": "Signs of Chemical Reactions",
+            "content": "1) Change in state, 2) Change in color, 3) Evolution of gas, 4) Temperature change, 5) Formation of precipitate."
           }
         ]
       }
@@ -41,86 +30,72 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "Act_9.1",
-      "aim_or_objective": "Plotting Demand and Supply Curves to Find Market Equilibrium - Graphically determine equilibrium price and quantity from market schedule data.",
+      "activity_or_method_id": "Activity 9.1",
+      "aim_or_objective": "To verify the Law of Conservation of Mass in a chemical reaction.",
       "materials_or_prerequisites": [
-        "Graph Paper",
-        "Ruler",
-        "Market Price-Quantity Data Table"
+        "Conical flask",
+        "Small ignition tube",
+        "Thread",
+        "Rubber cork",
+        "Digital weighing balance",
+        "Barium chloride solution",
+        "Sodium sulfate solution"
       ],
       "procedure_or_steps": [
-        "Plot Price (Rs) on vertical Y-axis and Quantity (Units) on horizontal X-axis.",
-        "Plot downward-sloping Demand Curve (D) from schedule points.",
-        "Plot upward-sloping Supply Curve (S) on same graph.",
-        "Identify intersection point (E) where D and S cross.",
-        "Read corresponding Equilibrium Price (Pe) and Quantity (Qe)."
+        "Prepare 5% Barium chloride (BaCl2) solution in conical flask and 5% Sodium sulfate (Na2SO4) solution in small ignition tube.",
+        "Suspend ignition tube inside conical flask with thread without mixing solutions and seal tightly with cork.",
+        "Weigh entire sealed flask apparatus accurately on digital balance (Mass M1).",
+        "Tilt and swirl flask so solutions mix and react completely.",
+        "Re-weigh sealed flask apparatus (Mass M2)."
       ],
-      "observations_or_results": "The intersection point explicitly pinpoints the exact price where buyers and sellers agree.",
-      "conclusion_or_principle": "Market prices automatically adjust toward equilibrium via competitive buyer-seller interaction."
+      "observations_or_results": "White precipitate of Barium sulfate (BaSO4) forms instantly. Digital balance shows M1 = M2.",
+      "conclusion_or_principle": "Total mass remains unchanged during chemical transformation, proving Law of Conservation of Mass."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 9.1: Market Equilibrium, Shortage, and Surplus",
+        "figure_id_and_title": "Fig 9.1: Mass Conservation Verification Apparatus",
         "labels_and_components": [
-          "Demand Curve (D)",
-          "Supply Curve (S)",
-          "Equilibrium Point (E)",
-          "Equilibrium Price (Pe)",
-          "Equilibrium Quantity (Qe)",
-          "Excess Supply Area",
-          "Excess Demand Area"
+          "Conical Flask",
+          "Ignition Tube containing Na2SO4",
+          "BaCl2 Solution",
+          "Sealing Cork",
+          "Thread",
+          "Digital Balance Screen"
         ],
-        "drawing_or_reading_instructions": "Draw intersecting D and S curves. Mark horizontal price lines above Pe (Surplus) and below Pe (Shortage).",
-        "structural_or_conceptual_explanation": "Price above Pe causes Qs > Qd (Surplus); Price below Pe causes Qd > Qs (Shortage)."
+        "drawing_or_reading_instructions": "Draw closed flask hanging internal test tube on electronic balance before and after mixing.",
+        "structural_or_conceptual_explanation": "Ensures no gaseous products escape so system mass remains strictly constant."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Market Demand and Supply Schedule for Wheat",
+        "table_title": "Types of Chemical Reactions",
         "headers": [
-          "Price per Kg (Rs.)",
-          "Quantity Demanded (Kg)",
-          "Quantity Supplied (Kg)",
-          "Market Condition",
-          "Pressure on Price"
+          "Reaction Type",
+          "General Equation",
+          "Representative Real Example"
         ],
         "rows": [
           [
-            "50",
-            "100",
-            "500",
-            "Excess Supply (Surplus = 400)",
-            "Downward"
+            "Combination",
+            "A + B -> AB",
+            "CaO + H2O -> Ca(OH)2 + Heat (Slaking of lime)"
           ],
           [
-            "40",
-            "200",
-            "400",
-            "Excess Supply (Surplus = 200)",
-            "Downward"
+            "Decomposition",
+            "AB -> A + B",
+            "2 Pb(NO3)2 --Heat--> 2 PbO + 4 NO2 + O2"
           ],
           [
-            "30",
-            "300",
-            "300",
-            "Equilibrium (Qd = Qs)",
-            "Stable"
+            "Displacement",
+            "A + BC -> AC + B",
+            "Fe + CuSO4 -> FeSO4 + Cu"
           ],
           [
-            "20",
-            "400",
-            "200",
-            "Excess Demand (Shortage = 200)",
-            "Upward"
-          ],
-          [
-            "10",
-            "500",
-            "100",
-            "Excess Demand (Shortage = 400)",
-            "Upward"
+            "Double Displacement",
+            "AB + CD -> AD + CB",
+            "Na2SO4 + BaCl2 -> BaSO4(s) v + 2 NaCl"
           ]
         ]
       }
@@ -128,83 +103,80 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Market Equilibrium",
-      "definition_or_meaning": "A state where market demand equals market supply, establishing a stable clearing price with no excess shortage or surplus.",
-      "si_unit_or_notation": "Noun",
-      "example_or_application": "At Rs. 40/kg, the quantity of apples buyers want equals the quantity sellers supply."
+      "term_or_concept": "Law of Conservation of Mass",
+      "definition_or_meaning": "In any chemical reaction, total mass of products equals total mass of reactants; matter cannot be created or destroyed.",
+      "si_unit_or_notation": "Sum(m_reactants) = Sum(m_products)",
+      "example_or_application": "12g Carbon + 32g Oxygen -> 44g Carbon Dioxide."
     },
     {
-      "term_or_concept": "Price Ceiling",
-      "definition_or_meaning": "A legally imposed maximum price that sellers can charge for a good or service, set below equilibrium price.",
-      "si_unit_or_notation": "Noun",
-      "example_or_application": "Government sets a price ceiling on essential medicines to keep them affordable."
-    },
-    {
-      "term_or_concept": "Market Equilibrium Condition",
-      "definition_or_meaning": "Q_d(P) = Q_s(P)",
-      "si_unit_or_notation": "Q_d: Quantity Demanded; Q_s: Quantity Supplied; P: Market Price.",
-      "example_or_application": "If Q_d = 100 - 2P and Q_s = 20 + 2P, set 100 - 2P = 20 + 2P -> 4P = 80 -> P = 20."
+      "term_or_concept": "Precipitation Reaction",
+      "definition_or_meaning": "A chemical reaction in which two soluble salts in aqueous solution combine to form an insoluble solid precipitate.",
+      "si_unit_or_notation": "(s) down arrow",
+      "example_or_application": "Formation of white BaSO4 solid."
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Q2",
-        "question": "Explain what happens when government sets a price ceiling on milk below equilibrium price.",
-        "answer": "Setting a price ceiling below equilibrium price lowers milk price for consumers. However, at this lower price, quantity demanded increases while dairy suppliers reduce quantity supplied. This creates a persistent market shortage (Excess Demand), leading to long queues, rationing, or black markets."
+        "q_no": "Q1",
+        "question": "When 5.3 g of sodium carbonate reacts with 6.0 g of ethanoic acid, the products are 2.2 g of carbon dioxide, 0.9 g of water and a sodium ethanoate residue. Show that these observations agree with conservation of mass.",
+        "answer": "Mass of reactants = 5.3 g + 6.0 g = 11.3 g. Mass of products = 2.2 g (CO2) + 0.9 g (H2O) + 8.2 g (Sodium ethanoate) = 11.3 g. Since Reactant Mass = Product Mass (11.3 g = 11.3 g), conservation of mass is verified."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "According to the Law of Demand, what happens when the price of a normal good falls, assuming ceteris paribus?",
+        "question": "What is observed when an iron nail is immersed in blue copper sulfate solution for 2 hours?",
         "options": [
-          "A) Quantity demanded decreases",
-          "B) Quantity demanded increases",
-          "C) Supply increases",
-          "D) Demand curve shifts left"
+          "A) Solution stays blue",
+          "B) Solution turns light green and reddish-brown copper deposits on nail",
+          "C) No reaction occurs",
+          "D) White precipitate forms"
         ],
-        "answer": "B) Quantity demanded increases",
-        "explanation": "The Law of Demand states an inverse relationship between price and quantity demanded."
+        "answer": "B) Solution turns light green and reddish-brown copper deposits on nail",
+        "explanation": "More reactive Iron displaces Copper: Fe + CuSO4 (blue) -> FeSO4 (light green) + Cu (red-brown)."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Differentiate between a Price Ceiling and a Price Floor.",
-        "answer": "1) Price Ceiling: Legal maximum price set BELOW equilibrium price to protect consumers (causes shortage). 2) Price Floor: Legal minimum price set ABOVE equilibrium price to protect producers/farmers (causes surplus). Key points: Max vs Min price distinction, Placement relative to equilibrium price, Shortage vs Surplus outcome"
+        "question": "Balance the chemical equation: Fe + H2O -> Fe3O4 + H2.",
+        "answer": "Balanced Equation: 3 Fe + 4 H2O -> Fe3O4 + 4 H2. Atom check: 3 Fe, 8 H, 4 O on both sides."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Source Passage (Price floor is an imposed limit on how low a price can be ch...): Give a real-world example of an effective price floor in India.",
-        "answer": "Minimum Support Price (MSP) for agricultural crops set by the Indian government to protect farmers against price crashes."
+        "question": "Why must a chemical equation be balanced?",
+        "answer": "According to the Law of Conservation of Mass, atoms are neither created nor destroyed during chemical transformations. Therefore, the total number of atoms of each element on the reactant side must strictly equal the number on the product side."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Using a demand and supply diagram, explain how market forces automatically restore equilibrium when price is set above equilibrium price.",
-        "answer": "1) When price (P1) is above equilibrium price (Pe), Quantity Supplied (Qs) exceeds Quantity Demanded (Qd), creating Excess Supply (Surplus). 2) Sellers find unsold inventories accumulating in warehouses. 3) To clear unsold stock, competing sellers lower their prices. 4) As price falls toward Pe, quantity demanded expands along the demand curve while quantity supplied contracts along the supply curve. 5) Price reductions continue until Qs = Qd at equilibrium price Pe, eliminating the surplus."
+        "question": "Define thermal decomposition, electrolytic decomposition, and photo decomposition. Give one balanced chemical equation for each.",
+        "answer": "1) Thermal Decomposition: Decomposition carried out by heating.\nExample: CaCO3 --Heat--> CaO + CO2.\n2) Electrolytic Decomposition: Decomposition carried out by passing electric current.\nExample: 2 H2O --Electricity--> 2 H2 + O2.\n3) Photo Decomposition: Decomposition triggered by light energy.\nExample: 2 AgCl --Sunlight--> 2 Ag + Cl2."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "A sudden severe drought destroys 40% of the onion crop nationwide before the winter harvest season.",
+        "case_scenario": "Silver chloride turns gray when left in a watch glass on a sunny windowsill.",
         "qa": [
           {
-            "question": "Analyze the impact on the onion market supply curve, equilibrium price, and quantity.",
-            "answer": "The crop destruction causes the onion Supply Curve to shift leftward. At the original price, excess demand occurs, driving the new equilibrium price significantly upward while reducing equilibrium quantity."
+            "question": "Name the reaction type and write the chemical equation.",
+            "answer": "Photochemical decomposition reaction: 2 AgCl(s) --Sunlight--> 2 Ag(s) + Cl2(g). White AgCl decomposes into gray silver metal."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Confusing a 'change in quantity demanded' with a 'change in demand'.",
-        "correct_fact_or_method": "'Change in quantity demanded' is a movement along the same demand curve caused solely by a price change; 'Change in demand' is a shift of the entire curve caused by non-price factors (income, tastes)."
+        "common_error_or_misconception": "Changing chemical subscripts in formulas when balancing equations (e.g., writing H2O2 instead of 2 H2O).",
+        "correct_fact_or_method": "NEVER alter compound subscripts; balance equations ONLY by adjusting stoichiometric coefficients in front of formulas."
       }
     ]
-  }
+  },
+  "grade": "9",
+  "subject": "Science",
+  "chapter_id": "G9-SCI-U03-C09"
 }

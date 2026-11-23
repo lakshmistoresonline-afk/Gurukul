@@ -1,30 +1,99 @@
-[
-  {
-    "q": "What rule governs interaction between magnetic poles?",
-    "a": "Like poles repel; opposite poles attract (N-S attracts, N-N repels)."
+{
+  "chapter_number": 4,
+  "chapter_title": "Data Handling and Presentation",
+  "section_1_complete_textbook_notes": {
+    "chapter_overview": "This chapter teaches statistics: data collection, organization using tally mark frequency tables, visual representation using pictographs and bar graphs, and critical data interpretation. Students learn rules for uniform bar widths, equal gap spacing, zero baseline alignment, and choosing appropriate unit scale keys.",
+    "detailed_sections": [
+      {
+        "section_number_title": "4.1 Raw Data, Tally Marks, and Frequency",
+        "full_textbook_explanation": "Raw data consists of initial unorganized observations. Tally mark tables organize data efficiently. Tallies are marked as vertical strokes '|' and grouped in bundles of 5 with a diagonal slash ('||||/'). Frequency is the total integer observation count for a category.",
+        "mathematical_definitions": [
+          {
+            "term": "Raw Data",
+            "formal_definition": "An unorganized collection of initial quantitative or categorical observations.",
+            "example": "List of test marks: 7, 8, 5, 8, 9, 7."
+          },
+          {
+            "term": "Frequency",
+            "formal_definition": "The total number of times a specific data value occurs in a data set.",
+            "example": "If 12 students choose Cricket, Cricket's frequency is 12."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Tally Bundle Value",
+            "statement_or_expression": "||||/ = 5 units",
+            "variable_definitions": "Standard tally count group",
+            "direct_example": "Two full bundles + 3 tallies = 5 + 5 + 3 = 13."
+          }
+        ]
+      },
+      {
+        "section_number_title": "4.2 Pictographs and Bar Graphs",
+        "full_textbook_explanation": "A Pictograph uses picture symbols with a declared key scale (e.g., 1 icon = 10 items). A Bar Graph uses rectangular bars of uniform width whose heights are proportional to category frequencies. Key Rules: 1. Uniform bar width. 2. Equal gap spacing between bars. 3. Vertical scale must start at 0.",
+        "mathematical_definitions": [
+          {
+            "term": "Bar Graph",
+            "formal_definition": "A visual representation using parallel rectangular bars of uniform width whose lengths represent frequencies.",
+            "example": "Vertical bar chart showing monthly rainfall."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Bar Height Formula",
+            "statement_or_expression": "Bar Height (cm) = Category Frequency / Scale Value per cm",
+            "variable_definitions": "Frequency = category count; Scale Value = quantity per cm",
+            "direct_example": "Frequency = 3200, Scale = 400/cm -> Height = 3200/400 = 8 cm."
+          }
+        ]
+      }
+    ],
+    "axis_truncation_mastery": {
+      "concept": "Axis Truncation & Comparative Double Bar Graphs",
+      "explanation": "Truncating the vertical axis (non-zero baseline) distorts bar height ratios visually. Double bar graphs allow direct comparison between two related data sets across categories."
+    }
   },
-  {
-    "q": "In which direction does a freely suspended bar magnet settle?",
-    "a": "North-South direction."
-  },
-  {
-    "q": "Differentiate between magnetic and non-magnetic materials with examples.",
-    "a": "Magnetic materials are attracted by magnets (e.g., Iron, Steel, Nickel, Cobalt). Non-magnetic materials are not attracted (e.g., Wood, Plastic, Glass, Rubber, Copper)."
-  },
-  {
-    "q": "Where is the magnetic force strongest in a bar magnet?",
-    "a": "At the two ends known as the magnetic poles (North Pole and South Pole)."
-  },
-  {
-    "q": "How can an unmagnetized iron sewing needle be magnetized using the single-touch method?",
-    "a": "Stroke the needle repeatedly (30–40 times) in one direction along its length using one fixed pole of a bar magnet, lifting the magnet clear between strokes."
-  },
-  {
-    "q": "Why is magnetic repulsion considered the only sure test for confirming whether an object is a magnet?",
-    "a": "Because a magnet can attract both opposite magnetic poles and unmagnetized magnetic materials (like soft iron), but repulsion occurs exclusively between like poles of two magnets."
-  },
-  {
-    "q": "What physical actions cause a magnet to lose its magnetic properties?",
-    "a": "Heating to high temperatures, hammering, or dropping from heights onto hard surfaces."
-  }
-]
+  "section_2_step_by_step_algorithms": [
+    {
+      "method_name": "Constructing a Mathematically Accurate Bar Graph",
+      "step_by_step_instructions": [
+        "Step 1: Draw perpendicular axes: horizontal X-axis for categories, vertical Y-axis for frequencies.",
+        "Step 2: Start vertical scale at 0 and choose a uniform scale unit (e.g. 1 cm = Rs 200).",
+        "Step 3: Mark category positions on the X-axis with equal gap spacing.",
+        "Step 4: Draw rectangular bars of uniform width matching calculated heights."
+      ],
+      "model_textbook_example": {
+        "problem": "Calculate bar height for Food expense Rs 3600 on a scale of 1 cm = Rs 400.",
+        "working_steps": [
+          "Frequency = Rs 3600.",
+          "Scale = Rs 400 per cm.",
+          "Height = 3600 / 400 = 9 cm."
+        ],
+        "final_answer": "9 cm"
+      }
+    }
+  ],
+  "section_3_in_text_boxes_and_try_these": [
+    {
+      "box_type": "Figure it Out",
+      "location_or_title": "Page 77",
+      "question_text": "If 1 bicycle icon represents 5 bicycles, how many icons represent 35 bicycles?",
+      "complete_solution": "Number of icons = Total bicycles / Scale key = 35 / 5 = 7 icons."
+    }
+  ],
+  "section_4_complete_textbook_exercise_solutions": [
+    {
+      "exercise_number": "Ex 4.1",
+      "question_number": "Q2",
+      "question_text": "Favorite sports survey: Hockey = 8, Cricket = 6, Football = 5. Which sport is most popular?",
+      "solution_steps": [
+        "Compare frequencies: 8 > 6 > 5.",
+        "Highest frequency 8 corresponds to Hockey."
+      ],
+      "final_answer_with_units": "Hockey"
+    }
+  ],
+  "grade": "6",
+  "subject": "Maths",
+  "chapter_id": "G6-MAT-U02-C04"
+}

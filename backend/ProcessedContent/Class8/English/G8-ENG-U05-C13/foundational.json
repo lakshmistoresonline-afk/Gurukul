@@ -1,103 +1,93 @@
 {
   "chapter_number": 13,
-  "chapter_title": "Our Home: Earth, a Unique Life Sustaining Planet",
-  "skill_drills": [
+  "chapter_title": "Feathered Friend",
+  "drag_and_drop_unscramblers": [
     {
-      "drill_type": "drag_and_drop_unscrambler",
-      "title": "Scientific Method Sequence Unscrambler - Ch 13",
-      "scrambled_tile_sets": [
-        {
-          "id": "t3",
-          "text": "Formulate Testable Hypothesis"
-        },
-        {
-          "id": "t1",
-          "text": "Observe Natural Phenomenon"
-        },
-        {
-          "id": "t5",
-          "text": "Draw Evidence-Based Conclusion"
-        },
-        {
-          "id": "t2",
-          "text": "Ask Investigative Question"
-        },
-        {
-          "id": "t4",
-          "text": "Conduct Controlled Experiment"
-        }
+      "drill_id": "scramble_ch13",
+      "scrambled_tokens": [
+        "Tenali",
+        "outwitted",
+        "Rama",
+        "scholar",
+        "the",
+        "proud"
       ],
-      "correct_sequence_ids": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5"
-      ]
-    },
+      "target_sentence": "Tenali Rama outwitted the proud scholar.",
+      "grammar_rule_hint": "Subject + Verb + Object word order."
+    }
+  ],
+  "multi_bin_sorting_matrices": [
     {
-      "drill_type": "multi_bin_sorting_matrix",
-      "title": "Concept Categorization Matrix - Ch 13",
+      "matrix_id": "sort_ch13",
       "bins": [
-        "Category A",
-        "Category B",
-        "Category C"
+        "Nouns",
+        "Verbs",
+        "Adjectives"
       ],
-      "items": [
+      "draggable_items": [
         {
-          "text": "Component 1 of Our Home: Earth, a Unique Life Sustaining Planet",
-          "bin": "Category A"
+          "item": "courtier",
+          "correct_bin": "Nouns"
         },
         {
-          "text": "Component 2 of Our Home: Earth, a Unique Life Sustaining Planet",
-          "bin": "Category B"
+          "item": "scrutinise",
+          "correct_bin": "Verbs"
         },
         {
-          "text": "Component 3 of Our Home: Earth, a Unique Life Sustaining Planet",
-          "bin": "Category C"
+          "item": "arrogant",
+          "correct_bin": "Adjectives"
         }
       ]
-    },
+    }
+  ],
+  "editing_checkers": [
     {
-      "drill_type": "editing_checker",
-      "title": "Misconception Corrector - Ch 13",
-      "erroneous_statement": "Common student misconception regarding Our Home: Earth, a Unique Life Sustaining Planet.",
-      "corrected_statement": "Scientifically verified fact correcting the misconception in Our Home: Earth, a Unique Life Sustaining Planet."
+      "checker_id": "edit_ch13",
+      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
+      "identified_errors": [
+        "cleverer -> clever / most clever"
+      ],
+      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
+      "rule_applied": "Superlative degree comparison requires 'the most'."
     }
   ],
   "image_asset": {
-    "asset_id": "ch13_media_01",
-    "chapter_number": 13,
-    "chapter_title": "Our Home: Earth, a Unique Life Sustaining Planet",
-    "title": "Goldilocks Habitable Zone & Ozone Layer Shield",
-    "url": "/assets/images/ch13_life_sustaining_earth.png",
-    "format": "PNG",
+    "asset_id": "img_ch13_space",
+    "title": "Orbital Space Station Life Support & Canary Sentinel",
+    "local_url": "/assets/images/ch13_space_station_lifesupport.png",
     "aspect_ratio": "16:9",
-    "tags": [
-      "Habitable Zone",
-      "Ozone Layer",
-      "Earth",
-      "Atmosphere"
-    ],
+    "description": "Mechanical life-support system loop and biological canary warning system",
     "hotspots": [
       {
-        "hotspot_id": "hs_ch13_01",
-        "title": "Component A: Habitable Zone Setup",
-        "x_percent": 8.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Detailed visual representation of Habitable Zone and Ozone Layer."
+        "hotspot_id": "hs_13_1",
+        "label": "Main Air Purifier",
+        "x_percent": 21.0,
+        "y_percent": 50.0,
+        "w_percent": 22.0,
+        "h_percent": 40.0,
+        "annotation": "Primary oxygen circulation intake"
       },
       {
-        "hotspot_id": "hs_ch13_02",
-        "title": "Component B: Earth Mechanics",
-        "x_percent": 54.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Experimental phenomenon illustrating Earth and Atmosphere."
+        "hotspot_id": "hs_13_2",
+        "label": "Frozen Intake Valve",
+        "x_percent": 50.0,
+        "y_percent": 50.0,
+        "w_percent": 22.0,
+        "h_percent": 10.0,
+        "annotation": "Single point failure unnoticed by alarm"
+      },
+      {
+        "hotspot_id": "hs_13_3",
+        "label": "Claribel Canary",
+        "x_percent": 79.0,
+        "y_percent": 50.0,
+        "w_percent": 22.0,
+        "h_percent": 40.0,
+        "annotation": "High metabolic sensitivity providing early warning"
       }
     ]
-  }
+  },
+  "grade": "8",
+  "subject": "English",
+  "chapter_id": "G8-ENG-U05-C13"
 }

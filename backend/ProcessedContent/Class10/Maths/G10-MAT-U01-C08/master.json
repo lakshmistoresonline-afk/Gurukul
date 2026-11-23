@@ -1,17 +1,28 @@
 {
   "chapter_number": 8,
-  "chapter_title": "Heredity",
+  "chapter_title": "Introduction to Trigonometry",
   "zero_omission_notes": {
-    "summary": "Explains inheritance principles based on Mendel's monohybrid and dihybrid pea plant experiments. Details dominant vs recessive traits, gene expression mechanisms, and XX/XY chromosomal sex determination in humans.",
+    "summary": "Covers trigonometric ratios (sin, cos, tan, cosec, sec, cot) for acute angles in right triangles, standard angle values (0°, 30°, 45°, 60°, 90°), and core Pythagorean identities.",
     "detailed_sections": [
       {
-        "section_number_and_title": "8.1 Inheritance of Traits",
-        "full_notes": "Mendel crossed pure tall (TT) and dwarf (tt) pea plants. F1 generation yielded all tall (Tt) plants. F2 self-pollination yielded 3 tall : 1 dwarf phenotypic ratio and 1 TT : 2 Tt : 1 tt genotypic ratio.",
+        "section_number_and_title": "8.1 Trigonometric Ratios",
+        "full_explanation": "For acute angle θ: sin θ = Opp/Hyp, cos θ = Adj/Hyp, tan θ = Opp/Adj. Reciprocals: cosec θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Genetics Note",
-            "title": "Why Pea Plants?",
-            "content": "Pisum sativum was chosen due to distinct contrasting traits, short life cycle, self-pollination, and fertile offspring."
+            "type": "Mnemonic",
+            "title": "SOH CAH TOA",
+            "content": "Sin=Opp/Hyp, Cos=Adj/Hyp, Tan=Opp/Adj"
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "8.2 Trigonometric Identities",
+        "full_explanation": "1) sin^2 θ + cos^2 θ = 1; 2) 1 + tan^2 θ = sec^2 θ; 3) 1 + cot^2 θ = cosec^2 θ.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Identity Box",
+            "title": "Pythagorean Identity",
+            "content": "sin^2 θ + cos^2 θ = 1"
           }
         ]
       }
@@ -19,54 +30,69 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "Activity 8.1: Observing Ear Lobe Inheritance",
-      "aim_or_objective": "To study trait variations in human populations.",
+      "activity_or_method_id": "ACT-801",
+      "aim_or_objective": "Prove (cosec θ - cot θ)^2 = (1 - cos θ) / (1 + cos θ).",
       "materials_or_prerequisites": [
-        "Classroom student data sheet"
+        "Trigonometric identity rules"
       ],
       "procedure_or_steps": [
-        "Examine ear lobes of all classmates.",
-        "Classify into free ear lobes vs attached ear lobes.",
-        "Calculate percentage of each."
+        "LHS = (1/sin θ - cos θ/sin θ)^2 = (1 - cos θ)^2 / sin^2 θ",
+        "Substitute sin^2 θ = 1 - cos^2 θ = (1 - cos θ)(1 + cos θ)",
+        "Cancel common factor (1 - cos θ)",
+        "LHS = (1 - cos θ) / (1 + cos θ) = RHS"
       ],
-      "observations_or_results": "Majority of students possess free ear lobes (dominant trait); fewer possess attached ear lobes (recessive).",
-      "conclusion_or_principle": "Human physical traits follow Mendelian inheritance patterns."
+      "observations_or_results": "LHS equals RHS.",
+      "conclusion_or_principle": "Converting to sin and cos proves algebraic trigonometric identity."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 8.6 Sex Determination in Humans",
+        "figure_id_and_title": "Fig 8.1 Right Triangle Ratios",
         "labels_and_components": [
-          "Mother (XX)",
-          "Father (XY)",
-          "Egg (X)",
-          "Sperm (X or Y)",
-          "Female Child (XX)",
-          "Male Child (XY)"
+          "Hypotenuse",
+          "Opposite Side",
+          "Adjacent Side"
         ],
-        "drawing_or_reading_instructions": "Draw Punnett square cross between XX mother and XY father showing 50% XX and 50% XY outcome.",
-        "structural_or_conceptual_explanation": "Father determines the sex of the child based on whether X or Y sperm fertilizes the egg."
+        "drawing_or_reading_instructions": "Identify opposite and adjacent sides relative to angle A.",
+        "structural_or_conceptual_explanation": "Base definition for trigonometric ratios."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Mendel Monohybrid Cross Punnett Square",
+        "table_title": "Standard Trigonometric Values",
         "headers": [
-          "Gametes",
-          "T",
-          "t"
+          "Ratio / Angle",
+          "0°",
+          "30°",
+          "45°",
+          "60°",
+          "90°"
         ],
         "rows": [
           [
-            "T",
-            "TT (Tall)",
-            "Tt (Tall)"
+            "sin θ",
+            "0",
+            "1/2",
+            "1/√2",
+            "√3/2",
+            "1"
           ],
           [
-            "t",
-            "Tt (Tall)",
-            "tt (Dwarf)"
+            "cos θ",
+            "1",
+            "√3/2",
+            "1/√2",
+            "1/2",
+            "0"
+          ],
+          [
+            "tan θ",
+            "0",
+            "1/√3",
+            "1",
+            "√3",
+            "Undefined"
           ]
         ]
       }
@@ -74,77 +100,74 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Allele",
-      "definition_or_meaning": "One of two or more alternative forms of a gene occupying the same locus on homologous chromosomes.",
-      "si_unit_or_notation": "Noun",
-      "example_or_application": "T (tall allele) and t (dwarf allele)."
-    },
-    {
-      "term_or_concept": "Mendelian Dihybrid Ratio",
-      "definition_or_meaning": "F2 Phenotypic Ratio = 9 : 3 : 3 : 1",
-      "si_unit_or_notation": "9 Round Yellow : 3 Round Green : 3 Wrinkled Yellow : 1 Wrinkled Green.",
-      "example_or_application": "Demonstrates Law of Independent Assortment."
+      "term_or_concept": "Pythagorean Trigonometric Identities",
+      "definition_or_meaning": "Fundamental equations relating square of trigonometric ratios.",
+      "si_unit_or_notation": "sin^2 θ + cos^2 θ = 1, 1 + tan^2 θ = sec^2 θ, 1 + cot^2 θ = cosec^2 θ",
+      "example_or_application": "If sin θ = 3/5, cos θ = √(1 - 9/25) = 4/5"
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Q1",
-        "question": "A Mendelian experiment consisted of breeding tall pea plants bearing violet flowers with short pea plants bearing white flowers. Progeny were all tall with violet flowers. Genotype of tall parent is?",
-        "answer": "All progeny tall and violet indicates pure homozygous dominant for both traits (TTWW). Option (c) TTWW is correct."
+        "q_no": "Ex 8.1 Q1",
+        "question": "In ΔABC, right-angled at B, AB=24 cm, BC=7 cm. Find sin A, cos A.",
+        "answer": "AC = √(24^2 + 7^2) = √625 = 25. sin A = 7/25, cos A = 24/25."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "What is the phenotypic ratio of a Mendelian monohybrid cross in F2 generation?",
+        "question": "Value of (sin 30° + cos 30°) - (sin 60° + cos 60°) is:",
         "options": [
-          "1:2:1",
-          "3:1",
-          "9:3:3:1",
-          "2:1"
+          "A) 0",
+          "B) 1",
+          "C) 2",
+          "D) -1"
         ],
-        "answer": "3:1",
-        "explanation": "3 dominant phenotype (Tall) to 1 recessive phenotype (Dwarf)."
+        "answer": "A",
+        "explanation": "(1/2 + √3/2) - (√3/2 + 1/2) = 0."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "How do genes control traits in living organisms?",
-        "answer": "Cellular DNA contains information for synthesizing specific proteins. Enzymes (proteins) catalyze chemical reactions producing hormones/pigments that express physical traits (e.g. growth hormone enzyme efficiency controls plant height)."
+        "question": "Evaluate 2 tan^2 45° + cos^2 30° - sin^2 60°.",
+        "answer": "2(1)^2 + (√3/2)^2 - (√3/2)^2 = 2 + 3/4 - 3/4 = 2."
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "What is the probability of a human couple having a male child?",
-        "answer": "50% (1:1 ratio), because father contributes 50% X sperms and 50% Y sperms."
+        "question": "If sin (A - B) = 1/2 and cos (A + B) = 1/2, find A and B.",
+        "answer": "A - B = 30°, A + B = 60°. Adding: 2A = 90° => A = 45°. B = 15°."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Explain inheritance of two contrasting pairs of traits (Dihybrid cross) with Punnett square and state law inferred.",
-        "answer": "Cross pure Round Yellow (RRYY) with Wrinkled Green (rryy). F1 yields RrYy (Round Yellow). F2 selfing yields 9 Round Yellow : 3 Round Green : 3 Wrinkled Yellow : 1 Wrinkled Green. Inferred Law of Independent Assortment: Alleles of different genes segregate independently during gamete formation."
+        "question": "Prove that sin A (1 + tan A) + cos A (1 + cot A) = sec A + cosec A.",
+        "answer": "LHS = sin A + sin^2 A/cos A + cos A + cos^2 A/sin A = (sin A cos A + sin^2 A)/cos A + (sin A cos A + cos^2 A)/sin A = (sin A + cos A)[sin^2 A + cos^2 A]/(sin A cos A) = (sin A + cos A)/(sin A cos A) = 1/cos A + 1/sin A = sec A + cosec A."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "In a family, relatives blame the mother for giving birth to three consecutive female children.",
+        "case_scenario": "In right triangle setup, tan θ = 4/3.",
         "qa": [
           {
-            "question": "Is the mother scientifically responsible for the sex of children? Justify.",
-            "answer": "No. Mother produces only X-containing eggs. Sex is determined by whether the father's sperm carries an X chromosome (producing female XX) or Y chromosome (producing male XY)."
+            "question": "Find sin θ and cos θ.",
+            "answer": "Opp = 4, Adj = 3 => Hyp = 5. sin θ = 4/5, cos θ = 3/5."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Confusing genotypic ratio (1:2:1) with phenotypic ratio (3:1) in monohybrid cross.",
-        "correct_fact_or_method": "Always label Phenotypic (3 Tall: 1 Dwarf) vs Genotypic (1 TT : 2 Tt : 1 tt) explicitly."
+        "common_error_or_misconception": "Treating sin(A + B) as sin A + sin B.",
+        "correct_fact_or_method": "Trigonometric functions do NOT distribute algebraically over addition."
       }
     ]
-  }
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U03-C08"
 }

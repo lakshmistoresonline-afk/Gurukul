@@ -1,91 +1,95 @@
 {
   "chapter_number": 7,
-  "chapter_title": "Factors of Production",
-  "skill_drills": {
-    "scrambled_tile_sets": [
+  "chapter_title": "मत बाँधो (Mat Bandho)",
+  "scrambled_tile_sets": [
+    {
+      "id": "tile_ch7_1",
+      "scrambled_tiles": [
+        "प्रेम",
+        "स्वदेश",
+        "ही",
+        "सच्चा",
+        "जीवन",
+        "है।"
+      ],
+      "correct_sequence": [
+        "स्वदेश",
+        "प्रेम",
+        "ही",
+        "सच्चा",
+        "जीवन",
+        "है।"
+      ],
+      "hint": "वाक्य को अर्थपूर्ण क्रम में सजाएं।"
+    }
+  ],
+  "multi_bin_sorting_matrices": [
+    {
+      "matrix_title": "तत्सम बनाम तद्भव शब्द वर्गीकरण",
+      "bin_names": [
+        "तत्सम शब्द",
+        "तद्भव शब्द"
+      ],
+      "items": [
+        {
+          "text": "हृदय",
+          "correct_bin": "तत्सम शब्द"
+        },
+        {
+          "text": "हिया/दिल",
+          "correct_bin": "तद्भव शब्द"
+        },
+        {
+          "text": "सत्य",
+          "correct_bin": "तत्सम शब्द"
+        },
+        {
+          "text": "सच",
+          "correct_bin": "तद्भव शब्द"
+        }
+      ]
+    }
+  ],
+  "editing_checkers": [
+    {
+      "original_flawed_text": "हमे अपने स्वदेस का सम्मान करना चाहीए।",
+      "errors_count": 3,
+      "corrected_text": "हमें अपने स्वदेश का सम्मान करना चाहिए।",
+      "error_explanations": "1. 'हमे' -> 'हमें' (अनुस्वार त्रुटि). 2. 'स्वदेस' -> 'स्वदेश' (स/श त्रुटि). 3. 'चाहीए' -> 'चाहिए' (मात्रा त्रुटि)."
+    }
+  ],
+  "image_asset": {
+    "title": "Interactive Visual Diagram: मत बाँधो (Mat Bandho)",
+    "url": "/assets/images/ch7_mat_bandho.png",
+    "dimensions": "2400x1350 (16:9)",
+    "hotspots": [
       {
-        "id": "tile_1",
-        "target_term": "ENTREPRENEURSHIP",
-        "scrambled_letters": [
-          "S",
-          "T",
-          "E",
-          "W",
-          "A",
-          "R",
-          "D",
-          "S",
-          "H",
-          "I",
-          "P"
-        ],
-        "hint": "Responsible protection and management of resources/institutions."
-      }
-    ],
-    "multi_bin_sorting_matrices": [
+        "x_percent": 8,
+        "y_percent": 50,
+        "w_percent": 38,
+        "h_percent": 30,
+        "label": "Theme Breakdown",
+        "details": "मत बाँधो (Mat Bandho) - Core Concept Breakdown"
+      },
       {
-        "matrix_title": "Classification Drill - Chapter 7",
-        "bins": [
-          "Category A",
-          "Category B"
-        ],
-        "items": [
-          {
-            "item_name": "Sample Element 1",
-            "correct_bin": "Category A"
-          },
-          {
-            "item_name": "Sample Element 2",
-            "correct_bin": "Category B"
-          }
-        ]
-      }
-    ],
-    "editing_checkers": [
+        "x_percent": 54,
+        "y_percent": 50,
+        "w_percent": 38,
+        "h_percent": 30,
+        "label": "Textual Evidence",
+        "details": "मत बाँधो (Mat Bandho) - Key Quotes & Citations"
+      },
       {
-        "passage_text": "In Chapter 7, key decisions are made by institutions.",
-        "embedded_errors": [
-          {
-            "error_word": "institutions",
-            "correct_word": "constitutional bodies",
-            "explanation": "Precision in terminology."
-          }
-        ]
+        "x_percent": 31,
+        "y_percent": 15,
+        "w_percent": 38,
+        "h_percent": 28,
+        "label": "Synthesis & Outcome",
+        "details": "मत बाँधो (Mat Bandho) - Applied Life Values"
       }
     ]
   },
-  "image_asset": {
-    "image_url": "/assets/images/ch7_factors_production_wheel.png",
-    "title": "Gamified Skill Reference - Chapter 7",
-    "aspect_ratio": "16:9",
-    "hotspots": [
-      {
-        "id": "hs_7_1",
-        "label": "Primary Inputs: Land & Labour",
-        "x_percent": 12.0,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 35.0,
-        "popover_description": "Land includes all natural resources (soil, water, minerals); Labour includes human physical and mental effort."
-      },
-      {
-        "id": "hs_7_2",
-        "label": "Physical Capital: Fixed vs Working Capital",
-        "x_percent": 52.0,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 35.0,
-        "popover_description": "Fixed capital lasts over years (machinery, factory buildings); Working capital is consumed in a single cycle (raw materials, cash)."
-      },
-      {
-        "id": "hs_7_3",
-        "label": "Entrepreneurship & Human Capital (Kaizen)",
-        "x_percent": 20.0,
-        "y_percent": 62.0,
-        "w_percent": 60.0,
-        "h_percent": 26.0,
-        "popover_description": "Entrepreneurs organize factors and bear risk; Human capital is developed through health, education (SWAYAM), and Kaizen continuous improvement."
-      }
-    ]
-  }
+  "grade": "8",
+  "subject": "Hindi",
+  "chapter_id": "G8-HIN-U03-C07"
 }

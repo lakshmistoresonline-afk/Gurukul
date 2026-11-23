@@ -1,0 +1,568 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "The World of Numbers",
+  "image_asset": {
+    "local_url": "/assets/images/ch3_wheel_of_theodorus.png",
+    "title": "Wheel of Theodorus (Square Root Spiral) depicting exact geometric lengths sqrt(2), sqrt(3), sqrt(4)..."
+  },
+  "question_papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Real Number Hierarchy & Decimal Expansions",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 3 Set 1.",
+        "diagram_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "hotspots": [
+          {
+            "id": "hs_sqrt2",
+            "label": "Hypotenuse sqrt(2)",
+            "x_percent": 45.0,
+            "y_percent": 45.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "First irrational hypotenuse derived from unit right triangle legs 1 and 1."
+          },
+          {
+            "id": "hs_sqrt3",
+            "label": "Hypotenuse sqrt(3)",
+            "x_percent": 55.0,
+            "y_percent": 35.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "Second hypotenuse constructed by erecting unit perpendicular on sqrt(2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which of the following numbers is an irrational number?",
+              "options": [
+                "A) 0.35",
+                "B) 22/7",
+                "C) sqrt(5)",
+                "D) sqrt(49)"
+              ],
+              "correct_answer": "C) sqrt(5)",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "A rational number p/q has a terminating decimal expansion if denominator q has prime factors:",
+              "options": [
+                "A) 3 and 5",
+                "B) 2 and 5 only",
+                "C) 2, 3 and 5",
+                "D) Any prime"
+              ],
+              "correct_answer": "B) 2 and 5 only",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Insert two rational numbers between 1/3 and 1/2.",
+              "marking_scheme_answer": "Common denominator 24: 1/3 = 8/24, 1/2 = 12/24. Rationals: 9/24 (3/8) and 10/24 (5/12).",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Convert recurring decimal x = 0.666... into a fraction in p/q form.",
+              "marking_scheme_answer": "x = 0.666... => 10x = 6.666... => 9x = 6 => x = 6/9 = 2/3.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Convert 0.2353535... into a rational number in simplest p/q form.",
+              "marking_scheme_answer": "10x = 2.3535...; 1000x = 235.3535... => 990x = 233 => x = 233/990.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Prove by contradiction that sqrt(2) is an irrational number.",
+              "marking_scheme_answer": "1. Assume sqrt(2) = p/q where gcd(p,q)=1.\n2. 2 = p^2/q^2 => p^2 = 2q^2 => p is even (p=2k).\n3. (2k)^2 = 2q^2 => 4k^2 = 2q^2 => q^2 = 2k^2 => q is even.\n4. Both p and q even contradicts gcd(p,q)=1.\n5. Therefore sqrt(2) is irrational.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "Mādhava of Saṅgamagrāma derived pi/4 = 1 - 1/3 + 1/5 - 1/7 + ...\n(i) Why are finite partial sums strictly rational? (2 Marks)\n(ii) Calculate 3rd partial sum S3. (2 Marks)",
+              "marking_scheme_answer": "(i) Sum of finite rational fractions is rational, whereas pi is irrational.\n(ii) S3 = 1 - 1/3 + 1/5 = 15/15 - 5/15 + 3/15 = 13/15.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Geometric Roots & Square Root Spiral",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 3 Set 2.",
+        "diagram_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "hotspots": [
+          {
+            "id": "hs_sqrt2",
+            "label": "Hypotenuse sqrt(2)",
+            "x_percent": 45.0,
+            "y_percent": 45.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "First irrational hypotenuse derived from unit right triangle legs 1 and 1."
+          },
+          {
+            "id": "hs_sqrt3",
+            "label": "Hypotenuse sqrt(3)",
+            "x_percent": 55.0,
+            "y_percent": 35.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "Second hypotenuse constructed by erecting unit perpendicular on sqrt(2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The decimal expansion of an irrational number is always:",
+              "options": [
+                "A) Terminating",
+                "B) Non-terminating repeating",
+                "C) Non-terminating non-repeating",
+                "D) Terminating repeating"
+              ],
+              "correct_answer": "C) Non-terminating non-repeating",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which of the following is an integer?",
+              "options": [
+                "A) sqrt(3)",
+                "B) 3/4",
+                "C) -15",
+                "D) pi"
+              ],
+              "correct_answer": "C) -15",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Classify the following as rational or irrational: (i) (3 + sqrt(23)) - sqrt(23), (ii) 2*pi.",
+              "marking_scheme_answer": "(i) 3 (Rational).\n(ii) 2*pi (Irrational, product of non-zero rational and irrational).",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Explain how to construct sqrt(2) on a number line using a right triangle.",
+              "marking_scheme_answer": "Draw right triangle at origin with base = 1 unit and height = 1 unit. Hypotenuse = sqrt(1^2 + 1^2) = sqrt(2). Swing arc with compass from origin to cut number line at sqrt(2).",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Describe the construction steps for generating the Square Root Spiral (Wheel of Theodorus) up to sqrt(4).",
+              "marking_scheme_answer": "1. Start with right triangle T1 with legs 1 and 1 => hypotenuse sqrt(2).\n2. Build T2 on hypotenuse sqrt(2) with perpendicular leg 1 => hypotenuse sqrt(3).\n3. Build T3 on hypotenuse sqrt(3) with perpendicular leg 1 => hypotenuse sqrt(4) = 2.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Prove that 3 + 2*sqrt(5) is an irrational number, given that sqrt(5) is irrational.",
+              "marking_scheme_answer": "1. Assume r = 3 + 2*sqrt(5) is rational p/q.\n2. 2*sqrt(5) = r - 3 => sqrt(5) = (r - 3)/2.\n3. Since r is rational, (r - 3)/2 is rational.\n4. This implies sqrt(5) is rational, contradicting given fact.\n5. Thus 3 + 2*sqrt(5) is irrational.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "In a cyclic decimal block, 1/7 = 0.142857142857...\n(i) What is repeating block length for 1/7? (2 Marks)\n(ii) Determine decimal expansion for 3/7 without long division. (2 Marks)",
+              "marking_scheme_answer": "(i) Periodicity is 6 digits (142857).\n(ii) 3/7 = 3 * 0.142857... Cyclic rotation starting at digit 4 gives 0.428571428571...",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Real Numbers & Rationality Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 3 Set 3.",
+        "diagram_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "hotspots": [
+          {
+            "id": "hs_sqrt2",
+            "label": "Hypotenuse sqrt(2)",
+            "x_percent": 45.0,
+            "y_percent": 45.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "First irrational hypotenuse derived from unit right triangle legs 1 and 1."
+          },
+          {
+            "id": "hs_sqrt3",
+            "label": "Hypotenuse sqrt(3)",
+            "x_percent": 55.0,
+            "y_percent": 35.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "Second hypotenuse constructed by erecting unit perpendicular on sqrt(2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which of the following is a rational number between 3 and 4?",
+              "options": [
+                "A) 3.25",
+                "B) sqrt(10)",
+                "C) 3 + pi",
+                "D) sqrt(11)"
+              ],
+              "correct_answer": "A) 3.25",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "The sum of a rational number and an irrational number is always:",
+              "options": [
+                "A) Rational",
+                "B) Irrational",
+                "C) Integer",
+                "D) Zero"
+              ],
+              "correct_answer": "B) Irrational",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find two irrational numbers between 3 and 4.",
+              "marking_scheme_answer": "sqrt(10) and sqrt(11) are non-perfect square roots lying between 3 and 4.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Rationalise the denominator of 1 / (sqrt(4) + sqrt(3)).",
+              "marking_scheme_answer": "Multiply numerator and denominator by (sqrt(4) - sqrt(3)) => sqrt(4) - sqrt(3).",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Express 0.333... in simplest p/q form.",
+              "marking_scheme_answer": "10x - x = 3 => 9x = 3 => x = 3/9.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Prove that sqrt(7) is irrational if 7 is not a perfect square.",
+              "marking_scheme_answer": "Assume rational p/q => p^2 = (7)q^2. Prime factor parity of 7 creates a logical contradiction. Hence irrational.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A computer stores numbers in binary floating point.\n(i) Why does 1/3 store with truncation error? (2 Marks)\n(ii) State condition for exact binary fraction storage. (2 Marks)",
+              "marking_scheme_answer": "(i) 1/3 has infinite repeating decimal 0.333... so binary float must truncate digits.\n(ii) Denominator prime factors must be powers of 2 only.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Real Numbers & Rationality Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 3 Set 4.",
+        "diagram_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "hotspots": [
+          {
+            "id": "hs_sqrt2",
+            "label": "Hypotenuse sqrt(2)",
+            "x_percent": 45.0,
+            "y_percent": 45.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "First irrational hypotenuse derived from unit right triangle legs 1 and 1."
+          },
+          {
+            "id": "hs_sqrt3",
+            "label": "Hypotenuse sqrt(3)",
+            "x_percent": 55.0,
+            "y_percent": 35.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "Second hypotenuse constructed by erecting unit perpendicular on sqrt(2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which of the following is a rational number between 4 and 5?",
+              "options": [
+                "A) 4.25",
+                "B) sqrt(17)",
+                "C) 4 + pi",
+                "D) sqrt(18)"
+              ],
+              "correct_answer": "A) 4.25",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "The sum of a rational number and an irrational number is always:",
+              "options": [
+                "A) Rational",
+                "B) Irrational",
+                "C) Integer",
+                "D) Zero"
+              ],
+              "correct_answer": "B) Irrational",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find two irrational numbers between 4 and 5.",
+              "marking_scheme_answer": "sqrt(17) and sqrt(18) are non-perfect square roots lying between 4 and 5.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Rationalise the denominator of 1 / (sqrt(5) + sqrt(4)).",
+              "marking_scheme_answer": "Multiply numerator and denominator by (sqrt(5) - sqrt(4)) => sqrt(5) - sqrt(4).",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Express 0.444... in simplest p/q form.",
+              "marking_scheme_answer": "10x - x = 4 => 9x = 4 => x = 4/9.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Prove that sqrt(9) is irrational if 9 is not a perfect square.",
+              "marking_scheme_answer": "Assume rational p/q => p^2 = (9)q^2. Prime factor parity of 9 creates a logical contradiction. Hence irrational.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A computer stores numbers in binary floating point.\n(i) Why does 1/3 store with truncation error? (2 Marks)\n(ii) State condition for exact binary fraction storage. (2 Marks)",
+              "marking_scheme_answer": "(i) 1/3 has infinite repeating decimal 0.333... so binary float must truncate digits.\n(ii) Denominator prime factors must be powers of 2 only.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Real Numbers & Rationality Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 3 Set 5.",
+        "diagram_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "hotspots": [
+          {
+            "id": "hs_sqrt2",
+            "label": "Hypotenuse sqrt(2)",
+            "x_percent": 45.0,
+            "y_percent": 45.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "First irrational hypotenuse derived from unit right triangle legs 1 and 1."
+          },
+          {
+            "id": "hs_sqrt3",
+            "label": "Hypotenuse sqrt(3)",
+            "x_percent": 55.0,
+            "y_percent": 35.0,
+            "w_percent": 10.0,
+            "h_percent": 10.0,
+            "tooltip": "Second hypotenuse constructed by erecting unit perpendicular on sqrt(2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which of the following is a rational number between 5 and 6?",
+              "options": [
+                "A) 5.25",
+                "B) sqrt(26)",
+                "C) 5 + pi",
+                "D) sqrt(27)"
+              ],
+              "correct_answer": "A) 5.25",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "The sum of a rational number and an irrational number is always:",
+              "options": [
+                "A) Rational",
+                "B) Irrational",
+                "C) Integer",
+                "D) Zero"
+              ],
+              "correct_answer": "B) Irrational",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find two irrational numbers between 5 and 6.",
+              "marking_scheme_answer": "sqrt(26) and sqrt(27) are non-perfect square roots lying between 5 and 6.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Rationalise the denominator of 1 / (sqrt(6) + sqrt(5)).",
+              "marking_scheme_answer": "Multiply numerator and denominator by (sqrt(6) - sqrt(5)) => sqrt(6) - sqrt(5).",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Express 0.555... in simplest p/q form.",
+              "marking_scheme_answer": "10x - x = 5 => 9x = 5 => x = 5/9.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "Prove that sqrt(11) is irrational if 11 is not a perfect square.",
+              "marking_scheme_answer": "Assume rational p/q => p^2 = (11)q^2. Prime factor parity of 11 creates a logical contradiction. Hence irrational.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A computer stores numbers in binary floating point.\n(i) Why does 1/3 store with truncation error? (2 Marks)\n(ii) State condition for exact binary fraction storage. (2 Marks)",
+              "marking_scheme_answer": "(i) 1/3 has infinite repeating decimal 0.333... so binary float must truncate digits.\n(ii) Denominator prime factors must be powers of 2 only.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C03"
+}

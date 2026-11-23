@@ -1,0 +1,190 @@
+{
+  "chapter_number": 13,
+  "chapter_title": "Two Variables, One Line",
+  "unit_or_theme": "Algebra & Coordinate Geometry",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "This chapter covers linear equations in two variables (ax + by + c = 0), straight line graph representations, slope-intercept form (y = mx + d), and system consistency based on coefficient ratios.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "13.1 Linear Equations in Two Variables",
+        "full_explanation": "ax + by + c = 0 has infinitely many solution ordered pairs (u, v) forming a straight line on the Cartesian plane.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Key Concept",
+            "box_title": "Line Through Origin",
+            "full_content": "When c = 0, ax + by = 0 passes through (0, 0)."
+          }
+        ]
+      },
+      {
+        "section_number_title": "13.2 Systems of Linear Equations",
+        "full_explanation": "Two lines a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0 can have: 1. Unique solution (a1/a2 != b1/b2), 2. No solution (a1/a2 = b1/b2 != c1/c2), 3. Infinite solutions (a1/a2 = b1/b2 = c1/c2).",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Formula Box",
+            "box_title": "Slope",
+            "full_content": "Slope m = (y2 - y1) / (x2 - x1)."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Slope-Intercept Form",
+        "definition": "Equation y = mx + d, where m is slope and d is y-intercept.",
+        "contextual_example_or_usage": "y = -1.5x + 6 has slope -1.5 and y-intercept 6.",
+        "associated_units_or_parts_of_speech": "Equation Form"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Coefficient Ratio Classification Law",
+        "statement_or_expression": "1. Unique: a1/a2 != b1/b2; 2. Parallel: a1/a2 = b1/b2 != c1/c2; 3. Coincident: a1/a2 = b1/b2 = c1/c2",
+        "variable_definitions": "a_i, b_i, c_i: equation coefficients",
+        "model_application_example": "x + 3y = 6 and 2x - 3y = 12 has a1/a2 = 1/2 != b1/b2 = -1, so unique solution."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Graphing Intersecting Lines",
+      "objective_or_aim": "Graph x + 3y = 6 and 2x - 3y = 12 to find intersection point.",
+      "materials_or_prerequisites": [
+        "Graph paper",
+        "Ruler",
+        "Pencil"
+      ],
+      "step_by_step_procedure": [
+        "Find intercepts for x + 3y = 6: (0, 2) and (6, 0).",
+        "Find intercepts for 2x - 3y = 12: (0, -4) and (6, 0).",
+        "Plot lines and identify intersection point."
+      ],
+      "expected_observations_or_working": "Lines intersect at (6, 0).",
+      "scientific_or_logical_conclusion": "Unique solution is x = 6, y = 0."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Fig 13.14: Graph of Intersecting Lines",
+        "labels_to_learn": [
+          "X-axis",
+          "Y-axis",
+          "Intersection B(6,0)",
+          "Line 1",
+          "Line 2"
+        ],
+        "drawing_or_labeling_instructions": "Draw axes, plot points and connect intersecting lines.",
+        "key_structural_details": "Visualizes unique point solution."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "System Classification Table",
+        "headers": [
+          "Ratios",
+          "Graph",
+          "Solutions",
+          "Consistency"
+        ],
+        "rows": [
+          [
+            "a1/a2 != b1/b2",
+            "Intersecting",
+            "Unique",
+            "Consistent"
+          ],
+          [
+            "a1/a2 = b1/b2 != c1/c2",
+            "Parallel",
+            "None",
+            "Inconsistent"
+          ],
+          [
+            "a1/a2 = b1/b2 = c1/c2",
+            "Coincident",
+            "Infinite",
+            "Consistent"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 13.2",
+        "question_number": "Q3",
+        "question_text": "If (2, -1) is solution of 2mx + 3y = 7 and 4x + ny = -10, find m and n.",
+        "complete_step_by_step_solution": "Substitute (2, -1): 2m(2) + 3(-1) = 7 => 4m - 3 = 7 => m = 2.5. 4(2) + n(-1) = -10 => 8 - n = -10 => n = 18."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "Determine if x + 2y - 4 = 0 and 2x + 4y - 12 = 0 intersect or are parallel.",
+        "questions_and_answers": [
+          {
+            "question": "Use coefficient ratios to classify.",
+            "answer": "a1/a2 = 1/2, b1/b2 = 2/4 = 1/2, c1/c2 = -4/-12 = 1/3. Parallel lines with no solution."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Where does 2x + 3y = 12 cut the X-axis?",
+        "options": [
+          "A) (0, 4)",
+          "B) (6, 0)",
+          "C) (0, 6)",
+          "D) (4, 0)"
+        ],
+        "correct_answer": "B",
+        "brief_explanation": "Set y = 0 => 2x = 12 => x = 6. Point is (6, 0)."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Find k for unique solution: kx + 2y = 5 and 3x + y = 1.",
+        "model_answer": "a1/a2 != b1/b2 => k/3 != 2/1 => k != 6. Unique solution for all k except 6.",
+        "key_marking_points": [
+          "State a1/a2 != b1/b2 (1 mark)",
+          "Conclude k != 6 (1 mark)"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "Solve elimination: 2x + 3y = 9 and 3x + 4y = 13.",
+        "model_answer": "3(Eq 1) - 2(Eq 2): (6x + 9y) - (6x + 8y) = 27 - 26 => y = 1. 2x + 3(1) = 9 => x = 3. Solution (3, 1)."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "Taxi fare: fixed charge x plus rate y per km. 10 km costs Rs 105; 15 km costs Rs 155.",
+        "questions_and_answers": [
+          {
+            "question": "Find fixed charge and rate per km.",
+            "answer": "x + 10y = 105, x + 15y = 155 => 5y = 50 => y = Rs 10/km. x = Rs 5 fixed charge."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Forgetting to rearrange equations into standard form ax + by + c = 0 before comparing ratios.",
+      "root_cause": "Mixing up constant terms on opposite sides.",
+      "correct_approach": "Align both equations in standard ax + by + c = 0 form before taking ratios."
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U05-C13"
+}

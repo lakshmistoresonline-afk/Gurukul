@@ -1,91 +1,75 @@
 {
   "chapter_number": 7,
-  "chapter_title": "Factors of Production",
-  "skill_drills": {
-    "scrambled_tile_sets": [
+  "chapter_title": "The Case of the Fifth Word",
+  "drag_and_drop_unscramblers": [
+    {
+      "drill_id": "scramble_ch7",
+      "scrambled_tokens": [
+        "Tenali",
+        "outwitted",
+        "Rama",
+        "scholar",
+        "the",
+        "proud"
+      ],
+      "target_sentence": "Tenali Rama outwitted the proud scholar.",
+      "grammar_rule_hint": "Subject + Verb + Object word order."
+    }
+  ],
+  "multi_bin_sorting_matrices": [
+    {
+      "matrix_id": "sort_ch7",
+      "bins": [
+        "Nouns",
+        "Verbs",
+        "Adjectives"
+      ],
+      "draggable_items": [
+        {
+          "item": "courtier",
+          "correct_bin": "Nouns"
+        },
+        {
+          "item": "scrutinise",
+          "correct_bin": "Verbs"
+        },
+        {
+          "item": "arrogant",
+          "correct_bin": "Adjectives"
+        }
+      ]
+    }
+  ],
+  "editing_checkers": [
+    {
+      "checker_id": "edit_ch7",
+      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
+      "identified_errors": [
+        "cleverer -> clever / most clever"
+      ],
+      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
+      "rule_applied": "Superlative degree comparison requires 'the most'."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "img_ch7_overview",
+    "title": "Chapter 7 Visual Conceptual Diagram: The Case of the Fifth Word",
+    "local_url": "/assets/images/ch1_tenali_court_map.png",
+    "aspect_ratio": "16:9",
+    "description": "Conceptual diagram illustrating Foundational skill drill",
+    "hotspots": [
       {
-        "id": "tile_1",
-        "target_term": "ENTREPRENEURSHIP",
-        "scrambled_letters": [
-          "S",
-          "T",
-          "E",
-          "W",
-          "A",
-          "R",
-          "D",
-          "S",
-          "H",
-          "I",
-          "P"
-        ],
-        "hint": "Responsible protection and management of resources/institutions."
-      }
-    ],
-    "multi_bin_sorting_matrices": [
-      {
-        "matrix_title": "Classification Drill - Chapter 7",
-        "bins": [
-          "Category A",
-          "Category B"
-        ],
-        "items": [
-          {
-            "item_name": "Sample Element 1",
-            "correct_bin": "Category A"
-          },
-          {
-            "item_name": "Sample Element 2",
-            "correct_bin": "Category B"
-          }
-        ]
-      }
-    ],
-    "editing_checkers": [
-      {
-        "passage_text": "In Chapter 7, key decisions are made by institutions.",
-        "embedded_errors": [
-          {
-            "error_word": "institutions",
-            "correct_word": "constitutional bodies",
-            "explanation": "Precision in terminology."
-          }
-        ]
+        "hotspot_id": "hs_ch7_1",
+        "label": "Core Focus: The Case of the Fifth Word",
+        "x_percent": 50.0,
+        "y_percent": 50.0,
+        "w_percent": 30.0,
+        "h_percent": 20.0,
+        "annotation": "Key learning concept for Chapter 7"
       }
     ]
   },
-  "image_asset": {
-    "image_url": "/assets/images/ch7_factors_production_wheel.png",
-    "title": "Gamified Skill Reference - Chapter 7",
-    "aspect_ratio": "16:9",
-    "hotspots": [
-      {
-        "id": "hs_7_1",
-        "label": "Primary Inputs: Land & Labour",
-        "x_percent": 12.0,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 35.0,
-        "popover_description": "Land includes all natural resources (soil, water, minerals); Labour includes human physical and mental effort."
-      },
-      {
-        "id": "hs_7_2",
-        "label": "Physical Capital: Fixed vs Working Capital",
-        "x_percent": 52.0,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 35.0,
-        "popover_description": "Fixed capital lasts over years (machinery, factory buildings); Working capital is consumed in a single cycle (raw materials, cash)."
-      },
-      {
-        "id": "hs_7_3",
-        "label": "Entrepreneurship & Human Capital (Kaizen)",
-        "x_percent": 20.0,
-        "y_percent": 62.0,
-        "w_percent": 60.0,
-        "h_percent": 26.0,
-        "popover_description": "Entrepreneurs organize factors and bear risk; Human capital is developed through health, education (SWAYAM), and Kaizen continuous improvement."
-      }
-    ]
-  }
+  "grade": "8",
+  "subject": "English",
+  "chapter_id": "G8-ENG-U03-C07"
 }

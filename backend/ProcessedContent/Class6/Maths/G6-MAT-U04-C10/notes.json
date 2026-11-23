@@ -1,30 +1,79 @@
-[
-  {
-    "q": "What Indian plant demonstrates rapid response to physical touch?",
-    "a": "Chhui-mui (Touch-me-not / Mimosa pudica)."
+{
+  "chapter_number": 10,
+  "chapter_title": "The Other Side of Zero",
+  "section_1_complete_textbook_notes": {
+    "chapter_overview": "This chapter introduces negative numbers and integers (... -3, -2, -1, 0, +1, +2, +3 ...), number line extensions, basement lift floor models, token cancellation models (+1 green, -1 red zero pairs), additive inverses, and Brahmagupta's ancient laws of integer arithmetic.",
+    "detailed_sections": [
+      {
+        "section_number_title": "10.1 Concept of Negative Integers and Number Line",
+        "full_textbook_explanation": "Integers extend natural numbers below zero to represent debt, sub-zero temperatures, and basement floors. Values decrease moving left on the number line (-10 < -2 < 0 < 5). Additive Inverse of a is -a, satisfying a + (-a) = 0. Brahmagupta's Rule: Subtracting a negative integer is equivalent to adding its positive opposite: a - (-b) = a + b.",
+        "mathematical_definitions": [
+          {
+            "term": "Integers",
+            "formal_definition": "The set of whole numbers and their negative opposites (... -3, -2, -1, 0, 1, 2, 3 ...).",
+            "example": "-5, 0, +8."
+          },
+          {
+            "term": "Additive Inverse",
+            "formal_definition": "The number that when added to a given integer yields zero.",
+            "example": "Additive inverse of +5 is -5."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Brahmagupta's Subtraction Rule",
+            "statement_or_expression": "a - (-b) = a + b",
+            "variable_definitions": "a, b = integers",
+            "direct_example": "8 - (-5) = 8 + 5 = 13."
+          }
+        ]
+      }
+    ],
+    "absolute_value_mastery": {
+      "concept": "Absolute Value Magnitude & Directed Number Line Distance",
+      "explanation": "The absolute value |a| represents distance from 0 on the number line. The distance between two integers a and b is given by |a - b|."
+    }
   },
-  {
-    "q": "Name three essential biological processes shared by all living creatures.",
-    "a": "Respiration, excretion, and reproduction."
-  },
-  {
-    "q": "List six essential biological traits shared by all living organisms.",
-    "a": "1. Nutrition requirement\n2. Respiration\n3. Internal growth\n4. Response to stimuli\n5. Excretion of metabolic waste\n6. Reproduction."
-  },
-  {
-    "q": "Why is a motor car classified as non-living despite moving and consuming fuel?",
-    "a": "Because a car consumes fuel externally and moves, but lacks internal cellular organization, metabolic respiration, growth, waste excretion, and biological reproduction."
-  },
-  {
-    "q": "Describe the response to stimuli observed in the Chhui-mui (Touch-me-not / Mimosa pudica) plant.",
-    "a": "When a Chhui-mui leaf is touched, its leaflets rapidly fold inward and the leaf stalk droops downward in response to physical contact."
-  },
-  {
-    "q": "What three environmental conditions break dormancy in dry seeds to initiate germination?",
-    "a": "Water (moisture), Air (oxygen for respiration), and Suitable Temperature (warmth)."
-  },
-  {
-    "q": "Explain latent life in stored bean seeds.",
-    "a": "Dry bean seeds in storage remain dormant with minimal metabolic rate (latent life); they resume active growth, respiration, and cellular division once moisture and warmth are provided."
-  }
-]
+  "section_2_step_by_step_algorithms": [
+    {
+      "method_name": "Evaluating Integer Expressions via Token Cancellation",
+      "step_by_step_instructions": [
+        "Step 1: Represent positive integers with green (+1) tokens and negatives with red (-1) tokens.",
+        "Step 2: Pair green and red tokens to form zero pairs (+1 + -1 = 0) and remove them.",
+        "Step 3: Count remaining uncancelled tokens; sign matches their token color."
+      ],
+      "model_textbook_example": {
+        "problem": "Evaluate (-8) - (-13).",
+        "working_steps": [
+          "(-8) - (-13) = -8 + 13.",
+          "8 red tokens pair with 8 green tokens (cancel out).",
+          "5 green tokens remain."
+        ],
+        "final_answer": "+5"
+      }
+    }
+  ],
+  "section_3_in_text_boxes_and_try_these": [
+    {
+      "box_type": "Figure it Out",
+      "location_or_title": "Page 265",
+      "question_text": "Write all integers strictly between -4 and 4 in increasing order.",
+      "complete_solution": "-3, -2, -1, 0, 1, 2, 3."
+    }
+  ],
+  "section_4_complete_textbook_exercise_solutions": [
+    {
+      "exercise_number": "Ex 10.4",
+      "question_number": "Q4",
+      "question_text": "Solve: (a) 8 + (-13), (b) (-8) - (-13).",
+      "solution_steps": [
+        "(a) 8 + (-13) = -5.",
+        "(b) (-8) - (-13) = -8 + 13 = +5."
+      ],
+      "final_answer_with_units": "(a) -5, (b) +5"
+    }
+  ],
+  "grade": "6",
+  "subject": "Maths",
+  "chapter_id": "G6-MAT-U04-C10"
+}

@@ -1,245 +1,126 @@
 {
   "chapter_number": 3,
-  "chapter_title": "Mindful Eating: A Path to a Healthy Body",
+  "chapter_title": "Number Play",
   "mind_map": {
-    "root_topic": "Mindful Eating: A Path to a Healthy Body",
+    "root_topic": "Chapter 3: Number Play",
     "branches": [
       {
-        "theme": "3.1 Culinary Heritage & Traditional Health Maxims",
+        "theme": "3.1 Place Value Structure & Digit Frequency Analysis",
         "sub_branches": [
           {
-            "concept": "Traditional Wisdom & Mindful Eating Principles",
-            "details": [
-              "Food sustains life in all living beings ('Annena jatani jivanti').",
-              "Traditional Indian dietary philosophy emphasizes 'Hitabhuk, Ritabhuk, Mitabhuk'.",
-              "Hitabhuk: Eating wholesome, nutrient-dense, clean food.",
-              "Ritabhuk: Eating seasonal, locally grown foods adapted to environmental conditions.",
-              "Mitabhuk: Eating in measured, controlled moderation to avoid overeating and digestive strain.",
-              "Traditional regional meals feature diverse grain, pulse, vegetable, and spice combinations."
+            "concept_or_rule": "Multi-digit Place Value & N-Digit Count",
+            "step_by_step_procedure": [
+              "Place value determines digit value by position (units, tens, hundreds...).",
+              "Calculate total count of N-digit numbers using 9 x 10^(N-1)."
             ],
-            "experiments_or_examples": [
-              "School Traditional Food Festival displaying regional dishes with Dr. Poshita, Medu, and Mishti",
-              "Comparing seasonal summer fruits (mango, watermelon) with winter greens (sarson, spinach)"
+            "formulas_and_identities": [
+              "Count of N-digit Numbers = 9 x 10^(N-1)"
             ],
-            "key_terms": [
-              "Hitabhuk",
-              "Ritabhuk",
-              "Mitabhuk",
-              "Mindful Eating",
-              "Culinary Diversity"
-            ],
-            "tooltip_popover": {
-              "title": "Traditional Wisdom & Mindful Eating Principles",
-              "definition": "Food sustains life in all living beings ('Annena jatani jivanti').",
-              "key_terms": [
-                "Hitabhuk",
-                "Ritabhuk",
-                "Mitabhuk",
-                "Mindful Eating",
-                "Culinary Diversity"
-              ],
-              "example": "School Traditional Food Festival displaying regional dishes with Dr. Poshita, Medu, and Mishti"
-            }
-          }
-        ]
-      },
-      {
-        "theme": "3.2 Major Nutrient Classes & Body Functions",
-        "sub_branches": [
-          {
-            "concept": "Energy-Giving & Body-Building Nutrients",
-            "details": [
-              "Carbohydrates: Primary quick-release energy source for daily physical activities and brain function (rice, wheat, maize, potato, sweet potato).",
-              "Fats: High-density energy storage providing twice the energy per gram of carbohydrates; insulation and organ protection (ghee, butter, vegetable oils, nuts, seeds).",
-              "Proteins: Essential body-building blocks required for growth, cellular repair, muscle development, and immune function (pulses, grams, milk, paneer, eggs, fish, roasted chana).",
-              "Complex carbohydrates like starch release energy steadily, avoiding sudden blood sugar spikes."
-            ],
-            "experiments_or_examples": [
-              "Analyzing energy levels after consuming balanced complex carbohydrates vs sugary snacks",
-              "Testing oil spot formation on filter paper to detect fat content in nuts"
-            ],
-            "key_terms": [
-              "Nutrients",
-              "Carbohydrates",
-              "Fats",
-              "Proteins",
-              "Energy-Giving Food",
-              "Body-Building Food"
-            ],
-            "tooltip_popover": {
-              "title": "Energy-Giving & Body-Building Nutrients",
-              "definition": "Carbohydrates: Primary quick-release energy source for daily physical activities and brain function (rice, wheat, maize, potato, sweet potato).",
-              "key_terms": [
-                "Nutrients",
-                "Carbohydrates",
-                "Fats",
-                "Proteins",
-                "Energy-Giving Food",
-                "Body-Building Food"
-              ],
-              "example": "Analyzing energy levels after consuming balanced complex carbohydrates vs sugary snacks"
-            }
+            "example_problem": "Find total 3-digit numbers (100 to 999): 9 x 10^2 = 900 numbers."
           },
           {
-            "concept": "Protective Nutrients, Dietary Fiber & Water",
-            "details": [
-              "Vitamins & Minerals: Protective nutrients required in small quantities to defend against deficiency diseases and regulate metabolism (fresh fruits, leafy greens, milk).",
-              "Dietary Fiber (Roughage): Indigestible plant cellulose that adds essential bulk to digested food, preventing constipation and supporting gut motility.",
-              "Water: Universal biological solvent required for nutrient absorption, waste transportation, and thermal regulation via sweating.",
-              "Micronutrients act as enzymatic co-factors regulating metabolic pathways throughout the body."
+            "concept_or_rule": "Digit Frequency Counting",
+            "step_by_step_procedure": [
+              "Count occurrences of a specific digit separately in units place, tens place, and hundreds place.",
+              "Sum occurrences across all positional columns."
             ],
-            "experiments_or_examples": [
-              "Examining dietary fiber content on nutritional labels of whole grains vs refined flour",
-              "Tracking daily water intake and observing hydration effects on physical stamina"
+            "formulas_and_identities": [
+              "Digit Occurrences = Sum of Positional Column Counts"
             ],
-            "key_terms": [
-              "Vitamins",
-              "Minerals",
-              "Protective Food",
-              "Dietary Fiber / Roughage",
-              "Hydration"
-            ],
-            "tooltip_popover": {
-              "title": "Protective Nutrients, Dietary Fiber & Water",
-              "definition": "Vitamins & Minerals: Protective nutrients required in small quantities to defend against deficiency diseases and regulate metabolism (fresh fruits, leafy greens, milk).",
-              "key_terms": [
-                "Vitamins",
-                "Minerals",
-                "Protective Food",
-                "Dietary Fiber / Roughage",
-                "Hydration"
-              ],
-              "example": "Examining dietary fiber content on nutritional labels of whole grains vs refined flour"
-            }
+            "example_problem": "Count digit '7' from 1 to 100: Units place (10 times) + Tens place (10 times) = 20 occurrences."
           }
         ]
       },
       {
-        "theme": "3.3 Millets: Native Superfoods & Ecological Resilience",
+        "theme": "3.2 Palindromic Numbers & Reverse-and-Add Algorithm",
         "sub_branches": [
           {
-            "concept": "Nutritional and Environmental Value of Millets",
-            "details": [
-              "Millets are small-seeded native cereal crops grown traditionally across India for millennia.",
-              "Highly climate-resilient: require minimal water, thrive in poor soil, and resist climate extremes.",
-              "Nutritional Superfoods: rich in proteins, dietary fiber, iron, calcium, complex carbs, and micro-nutrients.",
-              "Major Indian Millets: Jowar (Sorghum), Bajra (Pearl Millet), Ragi (Finger Millet), Sanwa (Barnyard Millet), Kodo, Foxtail."
+            "concept_or_rule": "Structure of Palindromic Numbers",
+            "step_by_step_procedure": [
+              "A palindromic number reads identically forwards and backwards.",
+              "Symmetrical digit positions are equal (e.g., 121, 5775, 8448)."
             ],
-            "experiments_or_examples": [
-              "Preparing and tasting Ragi porridge, Bajra rotis, and Jowar khichdi",
-              "Comparing water footprint required for growing rice vs growing Bajra"
+            "formulas_and_identities": [
+              "Palindrome Condition: Digit_i = Digit_{N-i+1}"
             ],
-            "key_terms": [
-              "Millets",
-              "Superfoods",
-              "Jowar",
-              "Bajra",
-              "Ragi",
-              "Sanwa",
-              "Climate Resilience"
+            "example_problem": "Is 5775 a palindrome? Yes, 5775 reversed is 5775."
+          },
+          {
+            "concept_or_rule": "Reverse-and-Add Palindrome Algorithm",
+            "step_by_step_procedure": [
+              "Step 1: Take any positive integer.",
+              "Step 2: Reverse its digits.",
+              "Step 3: Add original and reversed numbers.",
+              "Step 4: If sum is palindromic, stop; else repeat steps 2-3 on new sum."
             ],
-            "tooltip_popover": {
-              "title": "Nutritional and Environmental Value of Millets",
-              "definition": "Millets are small-seeded native cereal crops grown traditionally across India for millennia.",
-              "key_terms": [
-                "Millets",
-                "Superfoods",
-                "Jowar",
-                "Bajra",
-                "Ragi",
-                "Sanwa",
-                "Climate Resilience"
-              ],
-              "example": "Preparing and tasting Ragi porridge, Bajra rotis, and Jowar khichdi"
-            }
+            "formulas_and_identities": [
+              "Algorithm: S_{k+1} = S_k + Reverse(S_k)"
+            ],
+            "example_problem": "Start at 48: 48 + 84 = 132; 132 + 231 = 363 (Palindrome in 2 steps)."
           }
         ]
       },
       {
-        "theme": "3.4 Wholesome Traditional Diets vs Ultra-Processed Junk Food",
+        "theme": "3.3 The Collatz Conjecture & Recursive Sequences",
         "sub_branches": [
           {
-            "concept": "Nutritional Quality Comparison & Packaging Analysis",
-            "details": [
-              "Wholesome Traditional Snacks (Roasted Chana, Sprouts, Peanuts): Provide high protein, rich fiber, complex carbs, and vital minerals.",
-              "Ultra-Processed Junk Food (Potato Wafers, Soda, Packaged Biscuits): Contain empty calories, excessive sodium, unhealthy saturated/trans fats, artificial flavorings, and zero fiber.",
-              "Reading food packaging labels helps consumers identify hidden sodium, sugars, and unhealthy additives.",
-              "Checking ingredient order reveals whether artificial preservatives or sugars dominate the product."
+            "concept_or_rule": "Even/Odd Collatz Transformation Rules",
+            "step_by_step_procedure": [
+              "Start with any positive integer n.",
+              "If n is even -> next term is n / 2.",
+              "If n is odd -> next term is 3n + 1.",
+              "Repeat until sequence reaches 1."
             ],
-            "experiments_or_examples": [
-              "Comparative activity analyzing packaging labels of potato chips vs roasted chana packet",
-              "Observing sprouted moong/chana seeds as fresh protein-packed living snacks"
+            "formulas_and_identities": [
+              "Collatz Function: f(n) = n/2 (even) or 3n+1 (odd)"
             ],
-            "key_terms": [
-              "Wholesome Food",
-              "Ultra-Processed Food",
-              "Empty Calories",
-              "Nutritional Labeling",
-              "Sprouting"
+            "example_problem": "Trace n = 6: 6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1 (8 steps)."
+          },
+          {
+            "concept_or_rule": "Power of 2 Trajectory Shortcut",
+            "step_by_step_procedure": [
+              "If a Collatz term reaches a power of 2 (2^k), it proceeds strictly by successive halving.",
+              "It reaches 1 in exactly k halving steps."
             ],
-            "tooltip_popover": {
-              "title": "Nutritional Quality Comparison & Packaging Analysis",
-              "definition": "Wholesome Traditional Snacks (Roasted Chana, Sprouts, Peanuts): Provide high protein, rich fiber, complex carbs, and vital minerals.",
-              "key_terms": [
-                "Wholesome Food",
-                "Ultra-Processed Food",
-                "Empty Calories",
-                "Nutritional Labeling",
-                "Sprouting"
-              ],
-              "example": "Comparative activity analyzing packaging labels of potato chips vs roasted chana packet"
-            }
+            "formulas_and_identities": [
+              "Steps from 2^k to 1 = k steps"
+            ],
+            "example_problem": "Collatz sequence from 16 (2^4): 16 -> 8 -> 4 -> 2 -> 1 (4 steps)."
+          }
+        ]
+      },
+      {
+        "theme": "3.4 Game Theory & Recreational Number Puzzles",
+        "sub_branches": [
+          {
+            "concept_or_rule": "Strategic Control in the Game of 21",
+            "step_by_step_procedure": [
+              "Two players add 1, 2, or 3 per turn to reach 21.",
+              "Work backward from 21 in steps of 4 (1+3=4).",
+              "Player 1 claims control numbers 1, 5, 9, 13, 17, 21 to guarantee victory."
+            ],
+            "formulas_and_identities": [
+              "Control Numbers: 21 - 4k (1, 5, 9, 13, 17, 21)"
+            ],
+            "example_problem": "Player 1 starts with 1. If Player 2 adds 2, Player 1 adds 2 to reach 5."
+          },
+          {
+            "concept_or_rule": "Kaprekar's Routine for 2-Digit Numbers",
+            "step_by_step_procedure": [
+              "Pick any 2-digit number with distinct digits.",
+              "Arrange digits descending and ascending, then subtract.",
+              "Repeat subtraction process on result to reach magic difference 9."
+            ],
+            "formulas_and_identities": [
+              "Kaprekar 2-Digit Transformation: 10a + b -> 9(a - b)"
+            ],
+            "example_problem": "Start with 37: 73 - 37 = 36; 63 - 36 = 27; 72 - 27 = 45; 54 - 45 = 09 (9)."
           }
         ]
       }
     ]
   },
-  "image_asset": {
-    "asset_id": "ch3_diagram",
-    "title": "Chapter 3: Essential Nutrients & Millets",
-    "url": "/assets/images/ch3_nutritional_balance.png",
-    "dimensions": "1920x1080 (16:9)",
-    "hotspots": [
-      {
-        "x_percent": 6.0,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 1",
-        "popover_text": "Interactive Hotspot 1 covering key mechanism in Chapter 3."
-      },
-      {
-        "x_percent": 24.5,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 2",
-        "popover_text": "Interactive Hotspot 2 covering key mechanism in Chapter 3."
-      },
-      {
-        "x_percent": 43.0,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 3",
-        "popover_text": "Interactive Hotspot 3 covering key mechanism in Chapter 3."
-      },
-      {
-        "x_percent": 61.5,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 4",
-        "popover_text": "Interactive Hotspot 4 covering key mechanism in Chapter 3."
-      },
-      {
-        "x_percent": 80.0,
-        "y_percent": 48.0,
-        "w_percent": 15.5,
-        "h_percent": 30.0,
-        "label": "Phase 5",
-        "popover_text": "Interactive Hotspot 5 covering key mechanism in Chapter 3."
-      }
-    ]
-  }
+  "grade": "6",
+  "subject": "Maths",
+  "chapter_id": "G6-MAT-U01-C03"
 }

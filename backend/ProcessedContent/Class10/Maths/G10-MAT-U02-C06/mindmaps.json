@@ -1,76 +1,110 @@
 {
   "chapter_number": 6,
-  "chapter_title": "Manufacturing Industries",
+  "chapter_title": "Triangles",
   "mind_map": {
-    "root_topic": "Manufacturing Industries",
+    "root_topic": "Triangles",
     "branches": [
       {
-        "theme": "Economic Role and Industrial Location",
+        "theme": "Basic Proportionality Theorem (Thales Theorem)",
         "sub_branches": [
           {
-            "concept": "Manufacturing Role & Agglomeration Economies",
+            "concept": "BPT Statement and Converse",
             "details": [
-              "Backbone of development: Modernizes agriculture, reduces heavy dependence on agricultural income, reduces poverty and unemployment.",
-              "Agglomeration Economies: Cost advantages gained when industries cluster near urban centers to utilize banking, transport, power, and market networks."
+              "BPT (Theorem 6.1): If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.",
+              "In ΔABC, if DE || BC, then AD/DB = AE/EC.",
+              "Converse (Theorem 6.2): If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side."
             ],
             "evidence_or_examples": [
-              "Cotton textile cluster around Mumbai and Ahmedabad urban centers."
+              "In ΔABC with DE || BC, AD = 1.5 cm, DB = 3 cm, AE = 1 cm => EC = 2 cm.",
+              "Trapezium ABCD with AB || DC: diagonals intersect at O => AO/BO = CO/DO."
             ],
             "key_terms": [
-              "Manufacturing",
-              "Agglomeration Economies",
-              "Secondary Sector"
+              "Thales Theorem",
+              "BPT",
+              "Proportional Segments"
             ]
           }
         ]
       },
       {
-        "theme": "Agro-Based and Mineral-Based Sectors",
+        "theme": "Criteria for Similarity of Triangles",
         "sub_branches": [
           {
-            "concept": "Major Industrial Classifications",
+            "concept": "Similarity Rules (AAA, SSS, SAS)",
             "details": [
-              "Textile Industry: Self-reliant and complete in value chain (fiber to garment); Cotton (Mumbai 1854), Jute (Hugli basin cluster in WB).",
-              "Sugar Industry: Seasonal nature; shifting from UP to Maharashtra due to higher sucrose content and successful cooperatives.",
-              "Iron & Steel Industry: Basic/Heavy industry; raw material ratio Iron ore : Coking coal : Limestone = 4 : 2 : 1. Concentrated in Chhota Nagpur Plateau.",
-              "Aluminum Smelting: Second major metallurgical industry; requires massive continuous electricity and cheap bauxite.",
-              "Chemicals & Fertilizers: Organic and inorganic chemicals; Nitrogenous (Urea), Phosphatic, and NPK fertilizers.",
-              "Information Technology & Electronics: Software Technology Parks of India (STPI); Bengaluru as Silicon Valley of India."
+              "Two triangles are similar if corresponding angles are equal and corresponding sides are proportional.",
+              "AAA (or AA): If two angles of one triangle are equal to two angles of another.",
+              "SSS: If three sides of one triangle are proportional to three sides of another.",
+              "SAS: If one angle equals one angle and the including sides are proportional."
             ],
             "evidence_or_examples": [
-              "STPI hubs generating 30% employment for women; Chhota Nagpur plateau holding majority steel plants."
+              "Girl 90 cm tall walking from 3.6 m lamp-post at 1.2 m/s: shadow x after 4 s => x/(x+4.8) = 0.9/3.6 = 1/4 => x = 1.6 m."
             ],
             "key_terms": [
-              "Agro-Based",
-              "Mineral-Based",
-              "Coking Coal Ratio",
-              "STPI"
-            ]
-          }
-        ]
-      },
-      {
-        "theme": "Industrial Pollution and Environment Management",
-        "sub_branches": [
-          {
-            "concept": "Pollution Types & Effluent Control Measures",
-            "details": [
-              "Four Pollution Types: Air (toxic gases, smoke stacks), Water (industrial effluents), Thermal (hot water discharge into rivers), Noise (generators, machinery).",
-              "Effluent Treatment Stages: Primary (mechanical screening/sedimentation), Secondary (biological aeration), Tertiary (chemical recycling to zero discharge).",
-              "NTPC EMS ISO 14001: Model corporate strategy for ash utilization, ecological monitoring, and green belts around thermal power plants."
-            ],
-            "evidence_or_examples": [
-              "NTPC power plants achieving high fly ash utilization and establishing environmental monitoring cells."
-            ],
-            "key_terms": [
-              "Effluent Treatment",
-              "Zero Liquid Discharge",
-              "NTPC ISO 14001",
-              "Fly Ash"
+              "AAA Criterion",
+              "AA Criterion",
+              "SSS Criterion",
+              "SAS Criterion",
+              "Scale Factor"
             ]
           }
         ]
       }
-    ]
-  }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_6_root",
+      "label": "Triangles",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_6_b1",
+          "label": "Basic Proportionality Theorem (Thales Theorem)",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Basic Proportionality Theorem (Thales Theorem)",
+          "children": [
+            {
+              "id": "node_6_c2",
+              "label": "BPT Statement and Converse",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: BPT Statement and Converse",
+              "details": [
+                "BPT (Theorem 6.1): If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.",
+                "In ΔABC, if DE || BC, then AD/DB = AE/EC.",
+                "Converse (Theorem 6.2): If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node_6_b3",
+          "label": "Criteria for Similarity of Triangles",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Criteria for Similarity of Triangles",
+          "children": [
+            {
+              "id": "node_6_c4",
+              "label": "Similarity Rules (AAA, SSS, SAS)",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Similarity Rules (AAA, SSS, SAS)",
+              "details": [
+                "Two triangles are similar if corresponding angles are equal and corresponding sides are proportional.",
+                "AAA (or AA): If two angles of one triangle are equal to two angles of another.",
+                "SSS: If three sides of one triangle are proportional to three sides of another.",
+                "SAS: If one angle equals one angle and the including sides are proportional."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Triangles]\n  Root --> B_2[Basic Proportionality Theorem (Thales Theorem)]\n  B_2 --> C_3[BPT Statement and Converse]\n  Root --> B_4[Criteria for Similarity of Triangles]\n  B_4 --> C_5[Similarity Rules (AAA, SSS, SAS)]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U02-C06"
 }

@@ -1,103 +1,75 @@
 {
   "chapter_number": 12,
-  "chapter_title": "How Nature Works in Harmony",
-  "skill_drills": [
+  "chapter_title": "Waiting for the Rain",
+  "drag_and_drop_unscramblers": [
     {
-      "drill_type": "drag_and_drop_unscrambler",
-      "title": "Scientific Method Sequence Unscrambler - Ch 12",
-      "scrambled_tile_sets": [
-        {
-          "id": "t3",
-          "text": "Formulate Testable Hypothesis"
-        },
-        {
-          "id": "t1",
-          "text": "Observe Natural Phenomenon"
-        },
-        {
-          "id": "t5",
-          "text": "Draw Evidence-Based Conclusion"
-        },
-        {
-          "id": "t2",
-          "text": "Ask Investigative Question"
-        },
-        {
-          "id": "t4",
-          "text": "Conduct Controlled Experiment"
-        }
+      "drill_id": "scramble_ch12",
+      "scrambled_tokens": [
+        "Tenali",
+        "outwitted",
+        "Rama",
+        "scholar",
+        "the",
+        "proud"
       ],
-      "correct_sequence_ids": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5"
-      ]
-    },
+      "target_sentence": "Tenali Rama outwitted the proud scholar.",
+      "grammar_rule_hint": "Subject + Verb + Object word order."
+    }
+  ],
+  "multi_bin_sorting_matrices": [
     {
-      "drill_type": "multi_bin_sorting_matrix",
-      "title": "Concept Categorization Matrix - Ch 12",
+      "matrix_id": "sort_ch12",
       "bins": [
-        "Category A",
-        "Category B",
-        "Category C"
+        "Nouns",
+        "Verbs",
+        "Adjectives"
       ],
-      "items": [
+      "draggable_items": [
         {
-          "text": "Component 1 of How Nature Works in Harmony",
-          "bin": "Category A"
+          "item": "courtier",
+          "correct_bin": "Nouns"
         },
         {
-          "text": "Component 2 of How Nature Works in Harmony",
-          "bin": "Category B"
+          "item": "scrutinise",
+          "correct_bin": "Verbs"
         },
         {
-          "text": "Component 3 of How Nature Works in Harmony",
-          "bin": "Category C"
+          "item": "arrogant",
+          "correct_bin": "Adjectives"
         }
       ]
-    },
+    }
+  ],
+  "editing_checkers": [
     {
-      "drill_type": "editing_checker",
-      "title": "Misconception Corrector - Ch 12",
-      "erroneous_statement": "Common student misconception regarding How Nature Works in Harmony.",
-      "corrected_statement": "Scientifically verified fact correcting the misconception in How Nature Works in Harmony."
+      "checker_id": "edit_ch12",
+      "passage_with_errors": "Tenali Rama was a most cleverer courtier in Vijayanagara.",
+      "identified_errors": [
+        "cleverer -> clever / most clever"
+      ],
+      "corrected_passage": "Tenali Rama was the most clever courtier in Vijayanagara.",
+      "rule_applied": "Superlative degree comparison requires 'the most'."
     }
   ],
   "image_asset": {
-    "asset_id": "ch12_media_01",
-    "chapter_number": 12,
-    "chapter_title": "How Nature Works in Harmony",
-    "title": "Trophic Level Food Web & Abiotic-Biotic Cycling",
-    "url": "/assets/images/ch12_ecosystem_harmony.png",
-    "format": "PNG",
+    "asset_id": "img_ch12_overview",
+    "title": "Chapter 12 Visual Conceptual Diagram: Waiting for the Rain",
+    "local_url": "/assets/images/ch1_tenali_court_map.png",
     "aspect_ratio": "16:9",
-    "tags": [
-      "Ecosystem",
-      "Biotic",
-      "Abiotic",
-      "Food Web"
-    ],
+    "description": "Conceptual diagram illustrating Foundational skill drill",
     "hotspots": [
       {
-        "hotspot_id": "hs_ch12_01",
-        "title": "Component A: Ecosystem Setup",
-        "x_percent": 8.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Detailed visual representation of Ecosystem and Biotic."
-      },
-      {
-        "hotspot_id": "hs_ch12_02",
-        "title": "Component B: Abiotic Mechanics",
-        "x_percent": 54.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Experimental phenomenon illustrating Abiotic and Food Web."
+        "hotspot_id": "hs_ch12_1",
+        "label": "Core Focus: Waiting for the Rain",
+        "x_percent": 50.0,
+        "y_percent": 50.0,
+        "w_percent": 30.0,
+        "h_percent": 20.0,
+        "annotation": "Key learning concept for Chapter 12"
       }
     ]
-  }
+  },
+  "grade": "8",
+  "subject": "English",
+  "chapter_id": "G8-ENG-U04-C12"
 }

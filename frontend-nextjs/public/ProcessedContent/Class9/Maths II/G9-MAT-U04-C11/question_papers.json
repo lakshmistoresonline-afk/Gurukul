@@ -1,0 +1,364 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "The World of Algorithms",
+  "papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Chapter 11 Practice Paper (Algorithmic Logic & Modulo)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the result of the modulo operation 33 mod 7?",
+              "options": [
+                "A) 4",
+                "B) 5",
+                "C) 2",
+                "D) 1"
+              ],
+              "correct_answer": "B) 5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "An algorithm must be finite, ordered, and:",
+              "options": [
+                "A) Ambiguous",
+                "B) Infinite",
+                "C) Unambiguous",
+                "D) Random"
+              ],
+              "correct_answer": "C) Unambiguous",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Define an algorithm and state the historical origin of the word.",
+              "marking_scheme_answer": "An algorithm is a finite, ordered, unambiguous step-by-step procedure for solving a problem. The word derives from 9th-century Persian mathematician Muhammad ibn Musa al-Khwarizmi.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Evaluate 145 mod 12 and 250 mod 15.",
+              "marking_scheme_answer": "145 = 12*12 + 1 => 145 mod 12 = 1. 250 = 16*15 + 10 => 250 mod 15 = 10.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Compare Euclidean subtraction GCD algorithm with Āryabhaṭa's remainder division GCD algorithm. Explain why Āryabhaṭa's method is computationally faster using gcd(99, 2).",
+              "marking_scheme_answer": "1. Subtraction uses gcd(m, n) = gcd(n, m - n); step complexity O(N). For gcd(99, 2), it takes 49 subtraction steps. 2. Āryabhaṭa uses remainder reduction gcd(m, n) = gcd(n, m mod n); step complexity O(log N). For gcd(99, 2), step 1: 99 mod 2 = 1; step 2: 2 mod 1 = 0 -> GCD = 1 (takes 2 steps).",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Safe LCM Computation. (a) State the relationship between m, n, gcd(m, n), and lcm(m, n). (b) Explain why computing lcm(m, n) = (m // gcd(m, n)) * n avoids integer overflow in computer programming.",
+              "marking_scheme_answer": "(a) m * n = gcd(m, n) * lcm(m, n). (b) Multiplying large integers m * n first can exceed standard 32-bit or 64-bit memory bounds (overflow). Dividing m by gcd(m, n) first reduces the integer size before multiplication, preventing numerical overflow while guaranteeing an exact integer result.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Chapter 11 Practice Paper (GCD & Euclidean Subtraction)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Euclidean subtraction relies on which mathematical property?",
+              "options": [
+                "A) gcd(m, n) = m + n",
+                "B) gcd(m, n) = gcd(n, m - n)",
+                "C) gcd(m, n) = m * n",
+                "D) gcd(m, n) = m / n"
+              ],
+              "correct_answer": "B) gcd(m, n) = gcd(n, m - n)",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If d divides m and n, then d must also divide:",
+              "options": [
+                "A) m + n only",
+                "B) m - n only",
+                "C) Both m + n and m - n",
+                "D) Neither"
+              ],
+              "correct_answer": "C) Both m + n and m - n",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Prove algebraic property: If d divides m and n, then d divides (m - n).",
+              "marking_scheme_answer": "Let m = k1*d and n = k2*d for integers k1, k2. Then m - n = k1*d - k2*d = (k1 - k2)*d. Since (k1 - k2) is an integer, d divides (m - n).",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Trace Euclidean subtraction for gcd(35, 10).",
+              "marking_scheme_answer": "35 - 10 = 25 -> gcd(25, 10). 25 - 10 = 15 -> gcd(15, 10). 15 - 10 = 5 -> gcd(10, 5). 10 - 5 = 5 -> gcd(5, 5). Equal => GCD = 5. Total 4 subtraction steps.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Trace Āryabhaṭa's division algorithm for gcd(825, 375). Compare the number of steps with Euclidean subtraction.",
+              "marking_scheme_answer": "Step 1: 825 mod 375 = 75 (825 = 2*375 + 75). Step 2: 375 mod 75 = 0 (375 = 5*75 + 0). Remainder 0 => GCD = 75. Takes 2 remainder steps vs 8 subtraction steps in Euclidean method.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Tile Floor Laying Algorithm. A mason wants to tile a room of dimensions 540 cm by 192 cm using the largest possible square tiles without cutting any tile. (a) What tile size should be chosen? (b) How many square tiles will be required?",
+              "marking_scheme_answer": "(a) Tile size = gcd(540, 192). 540 mod 192 = 156 -> 192 mod 156 = 36 -> 156 mod 36 = 12 -> 36 mod 12 = 0. Tile size = 12 cm x 12 cm. (b) Tiles along length = 540 / 12 = 45. Tiles along width = 192 / 12 = 16. Total tiles = 45 x 16 = 720 tiles.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Chapter 11 Practice Paper (Lamé's Theorem & Fibonacci Inputs)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which pair of consecutive numbers represents the worst-case input for Euclidean GCD algorithm step count?",
+              "options": [
+                "A) Powers of 2",
+                "B) Prime numbers",
+                "C) Consecutive Fibonacci numbers",
+                "D) Multiples of 10"
+              ],
+              "correct_answer": "C) Consecutive Fibonacci numbers",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In remainder division gcd(m, n) = gcd(n, r), the remainder r satisfies:",
+              "options": [
+                "A) r >= n",
+                "B) 0 <= r < n",
+                "C) r = n",
+                "D) r > m"
+              ],
+              "correct_answer": "B) 0 <= r < n",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Explain Lamé's Theorem regarding the worst-case step complexity of the Euclidean GCD algorithm.",
+              "marking_scheme_answer": "Lamé's Theorem proves that the number of division steps in Euclidean GCD algorithm is at most 5 times the number of decimal digits of the smaller input. The worst-case occurs when inputs are consecutive Fibonacci numbers because every quotient is 1.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Compute gcd(89, 55) using Āryabhaṭa's division algorithm and count the division steps.",
+              "marking_scheme_answer": "89 mod 55 = 34 (1) -> 55 mod 34 = 21 (2) -> 34 mod 21 = 13 (3) -> 21 mod 13 = 8 (4) -> 13 mod 8 = 5 (5) -> 8 mod 5 = 3 (6) -> 5 mod 3 = 2 (7) -> 3 mod 2 = 1 (8) -> 2 mod 1 = 0 (9). GCD = 1. Takes 9 steps.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "State Bezout's Identity. Find integers x and y satisfying Bezout's identity for a = 240 and b = 46 such that gcd(240, 46) = 240x + 46y.",
+              "marking_scheme_answer": "Bezout Identity: For any non-zero integers a, b, gcd(a, b) can be expressed as linear combination xa + yb. Extended Euclid on (240, 46): 240 = 5*46 + 10 => 10 = 240 - 5*46. 46 = 4*10 + 6 => 6 = 46 - 4*10. 10 = 1*6 + 4 => 4 = 10 - 6. 6 = 1*4 + 2 => 2 = 6 - 4. Substituting back yields 2 = (-9)*240 + (47)*46. Thus x = -9, y = 47.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Cryptographic Key Generation. Public-key RSA encryption requires finding modular inverse e * d mod phi = 1. If phi = 120 and e = 7: (a) Verify gcd(120, 7) = 1. (b) Find integer d such that 7d mod 120 = 1.",
+              "marking_scheme_answer": "(a) 120 mod 7 = 1 => 7 mod 1 = 0 -> gcd(120, 7) = 1. Coprime verified. (b) 120 = 17*7 + 1 => 1 = 120 - 17*7 => -17*7 = 1 mod 120. d = -17 mod 120 = 103. Verification: 7 * 103 = 721 = 6*120 + 1.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Chapter 11 Practice Paper (Sequential Lists & Data Structures)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In algorithm execution, intermediate results are typically organized using a sequence called a:",
+              "options": [
+                "A) Graph",
+                "B) List",
+                "C) Matrix",
+                "D) Tree"
+              ],
+              "correct_answer": "B) List",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the time complexity class of Āryabhaṭa's remainder division algorithm?",
+              "options": [
+                "A) O(1)",
+                "B) O(N)",
+                "C) O(log N)",
+                "D) O(N^2)"
+              ],
+              "correct_answer": "C) O(log N)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Describe the role of sequential lists in executing iterative algorithms.",
+              "marking_scheme_answer": "Sequential lists store step-by-step state variables, intermediate values, and remainders during algorithm execution, allowing the program to reference prior state results.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Write pseudocode steps for finding the maximum number in a list of N numbers.",
+              "marking_scheme_answer": "1. Set max_val = list[0]. 2. For each element item in list[1..N-1]: if item > max_val, set max_val = item. 3. Return max_val.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Design an algorithm to find all common factors of two positive integers m and n. Trace your algorithm for m = 36 and n = 48.",
+              "marking_scheme_answer": "1. Compute g = gcd(m, n). 2. Find all factors of g from 1 to g. Trace for (36, 48): g = gcd(36, 48) = 12. Factors of 12: 1, 2, 3, 4, 6, 12. List of common factors = [1, 2, 3, 4, 6, 12].",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Traffic Light Synchronizer. Two traffic signals change color every 45 seconds and 60 seconds respectively. If they change simultaneously at 8:00 AM: (a) When will they next change together? (b) Explain how GCD/LCM algorithms solve this scheduling problem.",
+              "marking_scheme_answer": "(a) Next simultaneous change occurs at LCM(45, 60). gcd(45, 60) = 15. LCM = (45 * 60) / 15 = 180 seconds = 3 minutes. Next simultaneous change at 8:03 AM. (b) LCM determines the smallest common cycle length where independent periodic events realign.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Chapter 11 Practice Paper (Exhaustive Unit Test)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "If m mod n = 0, then gcd(m, n) equals:",
+              "options": [
+                "A) m",
+                "B) n",
+                "C) 0",
+                "D) 1"
+              ],
+              "correct_answer": "B) n",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In Āryabhaṭa's text Aryabhatiya (499 CE), remainder division algorithm is described for solving:",
+              "options": [
+                "A) Linear equations",
+                "B) Kuttaka (Pulverizer / GCD)",
+                "C) Quadratic roots",
+                "D) Circle areas"
+              ],
+              "correct_answer": "B) Kuttaka (Pulverizer / GCD)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Calculate gcd(1071, 462) using remainder division.",
+              "marking_scheme_answer": "1071 mod 462 = 147 (1071 = 2*462 + 147) -> 462 mod 147 = 21 (462 = 3*147 + 21) -> 147 mod 21 = 0 (147 = 7*21 + 0). GCD = 21.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Using gcd(1071, 462) = 21, find lcm(1071, 462).",
+              "marking_scheme_answer": "LCM = (1071 * 462) / 21 = 1071 * 22 = 23,562.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Prove by mathematical induction that for any integer k >= 1, gcd(k*m, k*n) = k * gcd(m, n).",
+              "marking_scheme_answer": "Let d = gcd(m, n). Then m = d*a, n = d*b with gcd(a, b) = 1. Then k*m = (k*d)*a and k*n = (k*d)*b. Since gcd(a, b) = 1, the greatest common divisor of (k*d)*a and (k*d)*b is k*d. Thus gcd(k*m, k*n) = k * gcd(m, n).",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: High-Frequency Trading Log Analysis. A system logs server A events every 1024 microseconds and server B events every 1536 microseconds. (a) Compute gcd(1536, 1024). (b) Find the sync interval (LCM) in milliseconds.",
+              "marking_scheme_answer": "(a) 1536 mod 1024 = 512 -> 1024 mod 512 = 0. GCD = 512 microseconds. (b) LCM = (1536 * 1024) / 512 = 3072 microseconds = 3.072 milliseconds.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U04-C11"
+}

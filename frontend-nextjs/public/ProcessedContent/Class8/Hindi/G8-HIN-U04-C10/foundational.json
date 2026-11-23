@@ -1,103 +1,95 @@
 {
   "chapter_number": 10,
-  "chapter_title": "Light: Mirrors and Lenses",
-  "skill_drills": [
+  "chapter_title": "तरुण के स्वप्न (Tarun ke Swapna)",
+  "scrambled_tile_sets": [
     {
-      "drill_type": "drag_and_drop_unscrambler",
-      "title": "Scientific Method Sequence Unscrambler - Ch 10",
-      "scrambled_tile_sets": [
-        {
-          "id": "t3",
-          "text": "Formulate Testable Hypothesis"
-        },
-        {
-          "id": "t1",
-          "text": "Observe Natural Phenomenon"
-        },
-        {
-          "id": "t5",
-          "text": "Draw Evidence-Based Conclusion"
-        },
-        {
-          "id": "t2",
-          "text": "Ask Investigative Question"
-        },
-        {
-          "id": "t4",
-          "text": "Conduct Controlled Experiment"
-        }
+      "id": "tile_ch10_1",
+      "scrambled_tiles": [
+        "प्रेम",
+        "स्वदेश",
+        "ही",
+        "सच्चा",
+        "जीवन",
+        "है।"
       ],
-      "correct_sequence_ids": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5"
-      ]
-    },
+      "correct_sequence": [
+        "स्वदेश",
+        "प्रेम",
+        "ही",
+        "सच्चा",
+        "जीवन",
+        "है।"
+      ],
+      "hint": "वाक्य को अर्थपूर्ण क्रम में सजाएं।"
+    }
+  ],
+  "multi_bin_sorting_matrices": [
     {
-      "drill_type": "multi_bin_sorting_matrix",
-      "title": "Concept Categorization Matrix - Ch 10",
-      "bins": [
-        "Category A",
-        "Category B",
-        "Category C"
+      "matrix_title": "तत्सम बनाम तद्भव शब्द वर्गीकरण",
+      "bin_names": [
+        "तत्सम शब्द",
+        "तद्भव शब्द"
       ],
       "items": [
         {
-          "text": "Component 1 of Light: Mirrors and Lenses",
-          "bin": "Category A"
+          "text": "हृदय",
+          "correct_bin": "तत्सम शब्द"
         },
         {
-          "text": "Component 2 of Light: Mirrors and Lenses",
-          "bin": "Category B"
+          "text": "हिया/दिल",
+          "correct_bin": "तद्भव शब्द"
         },
         {
-          "text": "Component 3 of Light: Mirrors and Lenses",
-          "bin": "Category C"
+          "text": "सत्य",
+          "correct_bin": "तत्सम शब्द"
+        },
+        {
+          "text": "सच",
+          "correct_bin": "तद्भव शब्द"
         }
       ]
-    },
+    }
+  ],
+  "editing_checkers": [
     {
-      "drill_type": "editing_checker",
-      "title": "Misconception Corrector - Ch 10",
-      "erroneous_statement": "Common student misconception regarding Light: Mirrors and Lenses.",
-      "corrected_statement": "Scientifically verified fact correcting the misconception in Light: Mirrors and Lenses."
+      "original_flawed_text": "हमे अपने स्वदेस का सम्मान करना चाहीए।",
+      "errors_count": 3,
+      "corrected_text": "हमें अपने स्वदेश का सम्मान करना चाहिए।",
+      "error_explanations": "1. 'हमे' -> 'हमें' (अनुस्वार त्रुटि). 2. 'स्वदेस' -> 'स्वदेश' (स/श त्रुटि). 3. 'चाहीए' -> 'चाहिए' (मात्रा त्रुटि)."
     }
   ],
   "image_asset": {
-    "asset_id": "ch10_media_01",
-    "chapter_number": 10,
-    "chapter_title": "Light: Mirrors and Lenses",
-    "title": "Laws of Reflection & Convex Lens Light Refraction",
-    "url": "/assets/images/ch10_light_mirrors_lenses.png",
-    "format": "PNG",
-    "aspect_ratio": "16:9",
-    "tags": [
-      "Light",
-      "Reflection",
-      "Mirrors",
-      "Lenses"
-    ],
+    "title": "Interactive Visual Diagram: तरुण के स्वप्न (Tarun ke Swapna)",
+    "url": "/assets/images/ch10_tarun.png",
+    "dimensions": "2400x1350 (16:9)",
     "hotspots": [
       {
-        "hotspot_id": "hs_ch10_01",
-        "title": "Component A: Light Setup",
-        "x_percent": 8.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Detailed visual representation of Light and Reflection."
+        "x_percent": 8,
+        "y_percent": 50,
+        "w_percent": 38,
+        "h_percent": 30,
+        "label": "Theme Breakdown",
+        "details": "तरुण के स्वप्न (Tarun ke Swapna) - Core Concept Breakdown"
       },
       {
-        "hotspot_id": "hs_ch10_02",
-        "title": "Component B: Mirrors Mechanics",
-        "x_percent": 54.0,
-        "y_percent": 15.0,
-        "w_percent": 38.0,
-        "h_percent": 58.0,
-        "description": "Experimental phenomenon illustrating Mirrors and Lenses."
+        "x_percent": 54,
+        "y_percent": 50,
+        "w_percent": 38,
+        "h_percent": 30,
+        "label": "Textual Evidence",
+        "details": "तरुण के स्वप्न (Tarun ke Swapna) - Key Quotes & Citations"
+      },
+      {
+        "x_percent": 31,
+        "y_percent": 15,
+        "w_percent": 38,
+        "h_percent": 28,
+        "label": "Synthesis & Outcome",
+        "details": "तरुण के स्वप्न (Tarun ke Swapna) - Applied Life Values"
       }
     ]
-  }
+  },
+  "grade": "8",
+  "subject": "Hindi",
+  "chapter_id": "G8-HIN-U04-C10"
 }

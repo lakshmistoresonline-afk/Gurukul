@@ -1,30 +1,117 @@
-[
-  {
-    "q": "Which body structure assists fish in swimming through water?",
-    "a": "Fins."
+{
+  "chapter_number": 2,
+  "chapter_title": "Lines and Angles",
+  "section_1_complete_textbook_notes": {
+    "chapter_overview": "This chapter introduces fundamental spatial geometry, progressing from zero-dimensional points to one-dimensional line segments, rays, and lines, and two-dimensional angle turns measured quantitatively in degrees (°). It establishes rotation as the core physical concept defining angle size (1 full turn = 360°, 1/2 turn = 180°, 1/4 turn = 90°). Angles are rigorously classified into acute, right, obtuse, straight, and reflex angles. Practical compass rose bearings, clock hand movements, paper-folding bisectors, and protractor measuring techniques are detailed alongside geometric proofs.",
+    "detailed_sections": [
+      {
+        "section_number_title": "2.1 Points, Line Segments, Rays, and Lines",
+        "full_textbook_explanation": "Geometry begins with fundamental primitive entities:\n- Point: A precise location in space with zero dimensions (no length, width, or depth), denoted by a capital letter (e.g., Point A).\n- Line Segment: The shortest straight path connecting two distinct endpoints A and B, denoted segment AB. It has a definite measurable length.\n- Ray: A straight line portion that originates at a fixed initial vertex endpoint and extends endlessly in one direction, denoted ray AB.\n- Line: A continuous 1D straight path extending infinitely in two opposite directions, denoted line AB or line l.\n\n[Instructional Simulation: Geometry in Navigation]\nNavigator: 'To map a ship's position, we mark a Point. A light beam from a lighthouse represents a Ray starting at the lighthouse and continuing across the ocean indefinitely!'",
+        "mathematical_definitions": [
+          {
+            "term": "Line Segment",
+            "formal_definition": "The straight portion of a line bounded by two distinct endpoints, possessing a measurable length.",
+            "example": "Segment AB measuring 6.5 cm."
+          },
+          {
+            "term": "Ray",
+            "formal_definition": "A straight path beginning at a fixed initial point and extending endlessly in one direction.",
+            "example": "Sunbeams originating at the Sun."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Uniqueness of Line through Two Points",
+            "statement_or_expression": "Exactly one unique straight line passes through any two distinct points A and B.",
+            "variable_definitions": "A, B = distinct points in a plane",
+            "direct_example": "Points P and Q define exactly line PQ."
+          }
+        ]
+      },
+      {
+        "section_number_title": "2.2 Angles, Rotation Turns, and Degree Measurement",
+        "full_textbook_explanation": "An angle is formed when two rays meet at a common initial vertex point. Angle size measures the amount of angular rotation required to turn one arm onto the other arm, independent of arm length.\n- Full Rotation Turn = 360 degrees (360°).\n- Half Rotation Turn = 180 degrees (180°) = Straight Angle.\n- Quarter Rotation Turn = 90 degrees (90°) = Right Angle.\n- Formula: Angle (°) = Fraction of Full Turn x 360°.",
+        "mathematical_definitions": [
+          {
+            "term": "Angle",
+            "formal_definition": "The geometric figure formed by two rays (arms) sharing a common endpoint (vertex).",
+            "example": "Angle AOB with vertex O and arms OA and OB."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Fractional Turn to Degree Formula",
+            "statement_or_expression": "Degree Angle = Fraction of Full Rotation x 360°",
+            "variable_definitions": "Fraction = turn proportion",
+            "direct_example": "5/12 of a turn = (5/12) x 360° = 150°."
+          }
+        ]
+      },
+      {
+        "section_number_title": "2.3 Classifying Angles & Protractor Reading",
+        "full_textbook_explanation": "Angles are classified by degree bounds:\n1. Acute Angle: 0° < theta < 90°\n2. Right Angle: theta = 90°\n3. Obtuse Angle: 90° < theta < 180°\n4. Straight Angle: theta = 180°\n5. Reflex Angle: 180° < theta < 360°\n\nProtractor Operational Rule: Align protractor baseline center with the angle vertex and one arm with 0°. Read the degree mark where the second arm crosses the scale starting at 0°.",
+        "mathematical_definitions": [
+          {
+            "term": "Obtuse Angle",
+            "formal_definition": "An angle whose degree measure is strictly greater than 90° and strictly less than 180°.",
+            "example": "120°."
+          }
+        ],
+        "formulas_and_properties": [
+          {
+            "name": "Angle Classification Bounds",
+            "statement_or_expression": "0° < Acute < 90° = Right < Obtuse < 180° = Straight < Reflex < 360°",
+            "variable_definitions": "Degree angle theta",
+            "direct_example": "215° is a Reflex Angle because 180° < 215° < 360°."
+          }
+        ]
+      }
+    ],
+    "angle_relations_mastery": {
+      "concept": "Complementary, Supplementary & Vertically Opposite Angles",
+      "explanation": "Complementary angles sum to 90 degrees. Supplementary angles sum to 180 degrees. Vertically opposite angles formed by two intersecting lines are equal."
+    }
   },
-  {
-    "q": "Give an example of an anatomical adaptation in aquatic birds.",
-    "a": "Webbed feet in ducks for paddling in water."
-  },
-  {
-    "q": "Define 'Herbs' and give two examples.",
-    "a": "Herbs are short plants with soft, green, non-woody stems. Examples: Wheat, Mustard, Mint."
-  },
-  {
-    "q": "How do shrubs differ from trees in their stem structure and height?",
-    "a": "Shrubs are medium-height plants with hard woody stems branching near the base. Trees are tall with a thick, hard main trunk (bole) branching high above the ground."
-  },
-  {
-    "q": "What is the key difference between climbers and creepers?",
-    "a": "Climbers have weak stems that take external support to climb upwards (e.g., Pea, Money plant), whereas creepers spread horizontally along the ground (e.g., Pumpkin, Watermelon)."
-  },
-  {
-    "q": "What structural feature of a duck's foot was observed during nature walks, and what is its functional role?",
-    "a": "Ducks have webbed feet where skin connects the toes, acting like paddles to propel them through water."
-  },
-  {
-    "q": "How are mountain trees like Deodar adapted to withstand heavy snow and winds?",
-    "a": "Deodar trees have a conical shape and needle-like leaves that allow heavy snow and rainwater to slide off easily without breaking branches or accumulating."
-  }
-]
+  "section_2_step_by_step_algorithms": [
+    {
+      "method_name": "Measuring Angles with a Protractor",
+      "step_by_step_instructions": [
+        "Step 1: Place the protractor center point directly over the angle vertex O.",
+        "Step 2: Align one arm OA precisely along the protractor 0° baseline.",
+        "Step 3: Follow the scale starting at 0° on arm OA and read the degree mark where arm OB intersects the protractor rim."
+      ],
+      "model_textbook_example": {
+        "problem": "Determine the angle measure when arm OA lies on 0° inner scale and arm OB crosses at 135°.",
+        "working_steps": [
+          "Center aligned at vertex O.",
+          "Arm OA aligned at 0° inner scale.",
+          "Arm OB intersects 135° mark."
+        ],
+        "final_answer": "135° (Obtuse Angle)"
+      }
+    }
+  ],
+  "section_3_in_text_boxes_and_try_these": [
+    {
+      "box_type": "Try These / Clock Hand Scenarios",
+      "location_or_title": "Page 22, Section 2.3",
+      "question_text": "What is the angle measure between the hour and minute hands of a clock at 5 o'clock?",
+      "complete_solution": "A clock face has 12 equal hour divisions covering 360°. Angle per hour division = 360° / 12 = 30°. At 5 o'clock, the hands are separated by 5 hour divisions. Angle = 5 x 30° = 150° (Obtuse Angle)."
+    }
+  ],
+  "section_4_complete_textbook_exercise_solutions": [
+    {
+      "exercise_number": "Ex 2.8",
+      "question_number": "Q4",
+      "question_text": "How many right angles are formed when a straight line crease on paper is folded directly onto itself?",
+      "solution_steps": [
+        "Step 1: Folding a line crease onto itself creates a perpendicular crease.",
+        "Step 2: Perpendicular lines intersect at a 90° right angle, forming 4 right angles around the intersection."
+      ],
+      "final_answer_with_units": "4 right angles"
+    }
+  ],
+  "grade": "6",
+  "subject": "Maths",
+  "chapter_id": "G6-MAT-U01-C02"
+}

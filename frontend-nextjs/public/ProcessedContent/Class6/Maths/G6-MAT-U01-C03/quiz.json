@@ -3,166 +3,100 @@
     "question_id": 1,
     "level": "Easy (Level 1)",
     "question_type": "MCQ",
-    "question_text": "Which class of nutrients is primarily required by the body for growth, tissue repair, and muscle development?",
+    "question_text": "Which of the following is a palindromic number?",
     "options": [
-      "A) Carbohydrates",
-      "B) Fats",
-      "C) Proteins",
-      "D) Dietary Fiber"
+      "A. 1234",
+      "B. 8448",
+      "C. 8484",
+      "D. 9100"
     ],
-    "correct_answer": "C) Proteins",
-    "detailed_explanation": "Proteins are body-building nutrients necessary for creating new cellular tissue, repairing damage, and supporting muscle growth."
+    "correct_answer": "B. 8448",
+    "step_by_step_solution": "A palindromic number reads identically forward and backward. 8448 reversed is 8448."
   },
   {
     "question_id": 2,
     "level": "Easy (Level 1)",
     "question_type": "Fill in the Blanks",
-    "question_text": "The ancient Indian health maxim advocating 'wholesome, seasonal, and moderate eating' is 'Hitabhuk, Ritabhuk, _______'.",
+    "question_text": "How many times does the digit '7' appear in all integers from 1 to 100?",
     "options": [],
-    "correct_answer": "Mitabhuk",
-    "detailed_explanation": "Mitabhuk translates to eating in measured moderation to maintain digestive health and vitality."
+    "correct_answer": "20",
+    "step_by_step_solution": "Occurrences in units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 (10 times). Occurrences in tens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 (10 times). Total occurrences = 10 + 10 = 20."
   },
   {
     "question_id": 3,
-    "level": "Easy (Level 1)",
-    "question_type": "True-False",
-    "question_text": "True or False: Native Indian millets like Ragi, Jowar, and Bajra are nutrient-poor crops that consume large amounts of water.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "detailed_explanation": "Millets are drought-resistant, climate-resilient superfoods packed with proteins, fiber, iron, calcium, and essential minerals."
+    "level": "Medium (Level 2)",
+    "question_type": "Operational",
+    "question_text": "Trace the Collatz sequence starting from n = 7 until it reaches 1.",
+    "options": [],
+    "correct_answer": "7 -> 22 -> 11 -> 34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1 (16 steps)",
+    "step_by_step_solution": "Rule: if n is even, n/2; if n is odd, 3n+1.\n7(odd)->22; 22(even)->11; 11(odd)->34; 34(even)->17; 17(odd)->52; 52(even)->26; 26(even)->13; 13(odd)->40; 40(even)->20; 20(even)->10; 10(even)->5; 5(odd)->16; 16->8->4->2->1."
   },
   {
     "question_id": 4,
     "level": "Medium (Level 2)",
-    "question_type": "MCQ",
-    "question_text": "Why is dietary fiber (roughage) considered an essential component of a balanced meal even though it yields no energy?",
-    "options": [
-      "A) It dissolves in blood to transport oxygen",
-      "B) It adds bulk to digested food and aids smooth bowel movements",
-      "C) It replaces carbohydrates in muscle cells",
-      "D) It converts into vitamins inside the liver"
-    ],
-    "correct_answer": "B) It adds bulk to digested food and aids smooth bowel movements",
-    "detailed_explanation": "Roughage consists of indigestible plant fiber that moves through the intestinal tract, preventing constipation and supporting gut health."
+    "question_type": "Word Problem",
+    "question_text": "Apply the Reverse-and-Add algorithm to starting number 48 to find the resulting palindromic number.",
+    "options": [],
+    "correct_answer": "363",
+    "step_by_step_solution": "Step 1: Original = 48. Reverse = 84. Sum = 48 + 84 = 132 (not a palindrome).\nStep 2: Reverse 132 = 231. Sum = 132 + 231 = 363 (Palindrome!)."
   },
   {
     "question_id": 5,
     "level": "Hard (Level 3)",
-    "question_type": "Reasoning",
-    "question_text": "Give reasons why substituting roasted chana for ultra-processed potato chips is beneficial for long-term health.",
+    "question_type": "Case-Study",
+    "question_text": "In the game of 21, two players add 1, 2, or 3 per turn to reach 21. What is the winning strategy for Player 1?",
     "options": [],
-    "correct_answer": "Roasted chana provides rich proteins, complex carbs, and fiber, whereas potato chips contain empty calories, high sodium, and unhealthy fats.",
-    "detailed_explanation": "Potato chips are energy-dense but nutrient-poor (junk food), leading to high sodium intake and fat accumulation, while roasted chana supports sustained energy and gut health."
+    "correct_answer": "Claim control numbers 1, 5, 9, 13, 17, and 21",
+    "step_by_step_solution": "Working backward from 21 in steps of 4 (since 1+3=4): Control points are 21, 17, 13, 9, 5, 1. Player 1 starts by saying 1, then whenever Player 2 adds x, Player 1 adds (4 - x) to reach the next control number."
   },
   {
     "question_id": 6,
-    "level": "Hard (Level 3)",
-    "question_type": "Case-Study",
-    "question_text": "Case Scenario: A student regularly skips breakfast, eats fried street food for lunch, and suffers from chronic fatigue, bleeding gums, and constipation.\nQuestion: Identify the likely nutrient deficiencies and recommend a wholesome traditional meal plan.",
-    "options": [],
-    "correct_answer": "Deficiencies: Vitamin C (bleeding gums), Iron/Proteins (fatigue), Fiber (constipation). Meal plan: Millet rotis, sprouted pulses (chana/moong), leafy vegetables, and fresh citrus fruits.",
-    "detailed_explanation": "Bleeding gums point to Vitamin C deficiency, fatigue to anemia/protein lack, and constipation to low dietary fiber. Sprouted grains, millets, and fresh greens restore balance."
+    "level": "Easy (Level 1)",
+    "question_type": "MCQ",
+    "question_text": "How many 3-digit numbers exist in total (from 100 to 999)?",
+    "options": [
+      "A. 899",
+      "B. 900",
+      "C. 999",
+      "D. 1000"
+    ],
+    "correct_answer": "B. 900",
+    "step_by_step_solution": "Count of N-digit numbers is given by 9 x 10^(N-1). For N = 3: 9 x 10^2 = 900."
   },
   {
     "question_id": 7,
     "level": "Easy (Level 1)",
-    "question_type": "MCQ",
-    "question_text": "Which major nutrient class serves as the body's primary quick source of energy?",
-    "options": [
-      "A) Proteins",
-      "B) Carbohydrates",
-      "C) Dietary Fiber",
-      "D) Calcium"
-    ],
-    "correct_answer": "B) Carbohydrates",
-    "detailed_explanation": "Hint: Found in rice, wheat, and potatoes. Explanation: Carbohydrates (starches and sugars) are broken down rapidly during cellular respiration to release usable energy for body activities."
+    "question_type": "Fill in the Blanks",
+    "question_text": "In numbering all pages of a 200-page book, the total number of digits printed is ____.",
+    "options": [],
+    "correct_answer": "492",
+    "step_by_step_solution": "Single-digit pages (1-9) = 9 pages x 1 = 9 digits. Two-digit pages (10-99) = 90 pages x 2 = 180 digits. Three-digit pages (100-200) = 101 pages x 3 = 303 digits. Total = 9 + 180 + 303 = 492 digits."
   },
   {
     "question_id": 8,
-    "level": "Easy (Level 1)",
-    "question_type": "Fill in the Blanks",
-    "question_text": "Indigestible plant fiber that adds bulk to stool and prevents constipation is called dietary fiber or _______.",
+    "level": "Medium (Level 2)",
+    "question_type": "Short Practice Drill",
+    "question_text": "Match starting integers to their Reverse-and-Add palindrome results: (1) 27, (2) 48, (3) 57.",
     "options": [],
-    "correct_answer": "roughage",
-    "detailed_explanation": "Hint: Common term for cellulose fiber in greens and whole grains. Explanation: Roughage maintains smooth bowel movements and supports healthy intestinal motility."
+    "correct_answer": "(1) 99, (2) 363, (3) 363",
+    "step_by_step_solution": "(1) 27 + 72 = 99 (1 step). (2) 48 + 84 = 132; 132 + 231 = 363 (2 steps). (3) 57 + 75 = 132; 132 + 231 = 363 (2 steps)."
   },
   {
     "question_id": 9,
-    "level": "Easy (Level 1)",
-    "question_type": "True-False",
-    "question_text": "True or False: Ultra-processed junk foods provide rich amounts of vitamins, minerals, and dietary fiber.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "detailed_explanation": "Hint: Think of potato chips vs roasted chana. Explanation: Ultra-processed junk foods are energy-dense but nutrient-poor, offering empty calories, excess sodium, and unhealthy fats with zero fiber."
+    "level": "HOTS (Level 3)",
+    "question_type": "Word Problem",
+    "question_text": "Kaprekar's 2-Digit Routine: Starting with 37, arrange digits descending (73) and ascending (37) and subtract: 73 - 37 = 36. Show that repeating this process leads to a digital difference loop involving 9.",
+    "options": [],
+    "correct_answer": "36 -> 27 -> 45 -> 09 -> 81 -> 63 -> 27... (Loops through multiples of 9)",
+    "step_by_step_solution": "Step 1: 73 - 37 = 36. Step 2: 63 - 36 = 27. Step 3: 72 - 27 = 45. Step 4: 54 - 45 = 09. Step 5: 90 - 09 = 81. Step 6: 81 - 18 = 63. Step 7: 63 - 36 = 27 (Loop repeats!)."
   },
   {
     "question_id": 10,
-    "level": "Medium (Level 2)",
-    "question_type": "Matching Pairs",
-    "question_text": "Match the Nutrient (Column I) with its Primary Biological Function (Column II):\n1. Proteins -> (P) Concentrated energy storage & thermal insulation\n2. Fats -> (Q) Cellular growth, tissue repair & muscle building\n3. Vitamins -> (R) Immune protection against deficiency diseases\n4. Minerals -> (S) Bone strength, hemoglobin & metabolic regulation",
-    "options": [
-      "A) 1-Q, 2-P, 3-R, 4-S",
-      "B) 1-P, 2-Q, 3-S, 4-R",
-      "C) 1-R, 2-S, 3-P, 4-Q",
-      "D) 1-S, 2-R, 3-Q, 4-P"
-    ],
-    "correct_answer": "A) 1-Q, 2-P, 3-R, 4-S",
-    "detailed_explanation": "Hint: Match nutrient to main health role. Explanation: Proteins = muscle/tissue growth (Q); Fats = high energy storage (P); Vitamins = immunity (R); Minerals = bone/blood health (S)."
-  },
-  {
-    "question_id": 11,
-    "level": "Medium (Level 2)",
-    "question_type": "Short Practice Drill",
-    "question_text": "Name four drought-resilient Indian millets and state two health benefits of including them in daily meals.",
-    "options": [],
-    "correct_answer": "Millets: Jowar, Bajra, Ragi, Sanwa. Benefits: 1. Rich in dietary fiber for gut health. 2. High in calcium, iron, and micro-nutrients.",
-    "detailed_explanation": "Hint: Native Indian superfoods. Explanation: Millets are climate-resilient grains packed with complex carbs, fiber, iron, and calcium, far superior to refined flours."
-  },
-  {
-    "question_id": 12,
-    "level": "Medium (Level 2)",
-    "question_type": "MCQ",
-    "question_text": "Which traditional Indian dietary maxim means 'eat in measured moderation'?",
-    "options": [
-      "A) Hitabhuk",
-      "B) Ritabhuk",
-      "C) Mitabhuk",
-      "D) Annena"
-    ],
-    "correct_answer": "C) Mitabhuk",
-    "detailed_explanation": "Hint: Hitabhuk = wholesome, Ritabhuk = seasonal. Explanation: Mitabhuk advises eating controlled, moderate portion sizes to prevent digestive overload."
-  },
-  {
-    "question_id": 13,
-    "level": "Hard (Level 3)",
-    "question_type": "Reasoning",
-    "question_text": "Give scientific reasons why sprouted pulses (like moong or chana) are nutritionally superior to dry unsprouted seeds.",
-    "options": [],
-    "correct_answer": "Germination activates enzymes that break down complex starches, increase bioavailable Vitamin C, B-complex, and iron, and improve protein digestibility.",
-    "detailed_explanation": "Hint: Metabolic activation during seed germination. Explanation: Sprouting transforms stored seed reserves into readily absorbable vitamins and minerals, boosting nutritional value."
-  },
-  {
-    "question_id": 14,
     "level": "HOTS (Level 3)",
-    "question_type": "HOTS Scenario",
-    "question_text": "Scenario: An athlete consumes only refined sugar candies before a marathon for 'instant energy'. Halfway through, she experiences extreme muscle exhaustion.\\nQuestion: Analyze why refined sugar caused an energy crash and recommend a superior complex carbohydrate alternative.",
-    "options": [],
-    "correct_answer": "Refined sugar causes a rapid blood glucose spike followed by insulin surge and sudden hypoglycemia (crash). Complex carbs like millet rotis or oats digest slowly, releasing steady glucose.",
-    "detailed_explanation": "Hint: Simple vs complex carbohydrate metabolism. Explanation: Simple sugars spike glucose rapidly without sustained stamina. Complex starches bound with fiber provide prolonged energy release."
-  },
-  {
-    "question_id": 15,
-    "level": "Hard (Level 3)",
     "question_type": "Case-Study",
-    "question_text": "Case Scenario: A child suffering from bleeding gums and weak bones is examined by a doctor. The child's diet consists mainly of white bread and soda.\\nQuestion: Identify the missing vitamins/minerals and prescribe a balanced food remedy.",
+    "question_text": "Nim Game of 15 Matches: A pile has 15 matchsticks. Two players take 1, 2, or 3 sticks per turn. The player taking the last stick wins. (a) How many sticks should Player 1 take on turn 1 to force a win? (b) What is Player 1's counter-strategy for subsequent turns?",
     "options": [],
-    "correct_answer": "Deficiencies: Vitamin C (scurvy/bleeding gums) and Calcium/Vitamin D (weak bones). Remedy: Citrus fruits (amla, lemons), leafy greens, milk, paneer, and sunlight exposure.",
-    "detailed_explanation": "Hint: Connect symptoms to specific deficiency diseases. Explanation: Bleeding gums indicate Vitamin C deficiency; weak bones point to calcium/D lack. Citrus fruits and dairy restore balance."
+    "correct_answer": "(a) Player 1 takes 3 sticks first, (b) Counter Player 2's y sticks with (4 - y) sticks",
+    "step_by_step_solution": "(a) Control points are multiples of 4 (since 1+3=4). 15 mod 4 = 3. Player 1 takes 3 sticks, leaving 12 sticks. (b) Whenever Player 2 takes y sticks, Player 1 takes (4 - y) sticks to maintain multiples of 4 (12 -> 8 -> 4 -> 0)."
   }
 ]

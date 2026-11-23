@@ -1,91 +1,106 @@
 {
   "chapter_number": 5,
-  "chapter_title": "Universal Franchise and India’s Electoral System",
-  "skill_drills": {
-    "scrambled_tile_sets": [
-      {
-        "id": "tile_1",
-        "target_term": "FRANCHISE",
-        "scrambled_letters": [
-          "S",
-          "T",
-          "E",
-          "W",
-          "A",
-          "R",
-          "D",
-          "S",
-          "H",
-          "I",
-          "P"
-        ],
-        "hint": "Responsible protection and management of resources/institutions."
-      }
+  "chapter_title": "Exploring Forces",
+  "skill_drills": [
+    {
+      "drill_type": "drag_and_drop_unscrambler",
+      "title": "Scientific Method Sequence Unscrambler - Ch 5",
+      "scrambled_tile_sets": [
+        {
+          "id": "t3",
+          "text": "Formulate Testable Hypothesis"
+        },
+        {
+          "id": "t1",
+          "text": "Observe Natural Phenomenon"
+        },
+        {
+          "id": "t5",
+          "text": "Draw Evidence-Based Conclusion"
+        },
+        {
+          "id": "t2",
+          "text": "Ask Investigative Question"
+        },
+        {
+          "id": "t4",
+          "text": "Conduct Controlled Experiment"
+        }
+      ],
+      "correct_sequence_ids": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ]
+    },
+    {
+      "drill_type": "multi_bin_sorting_matrix",
+      "title": "Concept Categorization Matrix - Ch 5",
+      "bins": [
+        "Category A",
+        "Category B",
+        "Category C"
+      ],
+      "items": [
+        {
+          "text": "Component 1 of Exploring Forces",
+          "bin": "Category A"
+        },
+        {
+          "text": "Component 2 of Exploring Forces",
+          "bin": "Category B"
+        },
+        {
+          "text": "Component 3 of Exploring Forces",
+          "bin": "Category C"
+        }
+      ]
+    },
+    {
+      "drill_type": "editing_checker",
+      "title": "Misconception Corrector - Ch 5",
+      "erroneous_statement": "Common student misconception regarding Exploring Forces.",
+      "corrected_statement": "Scientifically verified fact correcting the misconception in Exploring Forces."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch5_media_01",
+    "chapter_number": 5,
+    "chapter_title": "Exploring Forces",
+    "title": "Contact/Non-Contact Forces & Electrostatic Induction",
+    "url": "/assets/images/ch5_exploring_forces.png",
+    "format": "PNG",
+    "aspect_ratio": "16:9",
+    "tags": [
+      "Forces",
+      "Friction",
+      "Electrostatic",
+      "Newtons"
     ],
-    "multi_bin_sorting_matrices": [
+    "hotspots": [
       {
-        "matrix_title": "Classification Drill - Chapter 5",
-        "bins": [
-          "Category A",
-          "Category B"
-        ],
-        "items": [
-          {
-            "item_name": "Sample Element 1",
-            "correct_bin": "Category A"
-          },
-          {
-            "item_name": "Sample Element 2",
-            "correct_bin": "Category B"
-          }
-        ]
-      }
-    ],
-    "editing_checkers": [
+        "hotspot_id": "hs_ch5_01",
+        "title": "Component A: Forces Setup",
+        "x_percent": 8.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Detailed visual representation of Forces and Friction."
+      },
       {
-        "passage_text": "In Chapter 5, key decisions are made by institutions.",
-        "embedded_errors": [
-          {
-            "error_word": "institutions",
-            "correct_word": "constitutional bodies",
-            "explanation": "Precision in terminology."
-          }
-        ]
+        "hotspot_id": "hs_ch5_02",
+        "title": "Component B: Electrostatic Mechanics",
+        "x_percent": 54.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Experimental phenomenon illustrating Electrostatic and Newtons."
       }
     ]
   },
-  "image_asset": {
-    "image_url": "/assets/images/ch5_election_commission_pyramid.png",
-    "title": "Gamified Skill Reference - Chapter 5",
-    "aspect_ratio": "16:9",
-    "hotspots": [
-      {
-        "id": "hs_5_1",
-        "label": "Election Commission Administrative Hierarchy",
-        "x_percent": 15.0,
-        "y_percent": 18.0,
-        "w_percent": 32.0,
-        "h_percent": 36.0,
-        "popover_description": "4-tier pyramid: Chief Election Commissioner (CEC) -> Chief Electoral Officer (CEO) -> District Election Officer (DEO) -> Returning Officer (RO)."
-      },
-      {
-        "id": "hs_5_2",
-        "label": "EVM & VVPAT Voter Verification",
-        "x_percent": 52.0,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 36.0,
-        "popover_description": "Electronic Voting Machines store votes digitally; VVPAT prints a paper slip for 7 seconds to let voters verify cast votes."
-      },
-      {
-        "id": "hs_5_3",
-        "label": "First-Past-The-Post (FPTP) Plurality Rule",
-        "x_percent": 20.0,
-        "y_percent": 62.0,
-        "w_percent": 60.0,
-        "h_percent": 26.0,
-        "popover_description": "The candidate with the highest number of valid votes in a single-member constituency wins the seat without needing an absolute majority."
-      }
-    ]
-  }
+  "grade": "8",
+  "subject": "Science",
+  "chapter_id": "G8-SCI-U02-C05"
 }

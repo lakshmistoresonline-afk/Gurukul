@@ -1,61 +1,28 @@
 {
   "chapter_number": 1,
-  "chapter_title": "The Rise of Nationalism in Europe",
+  "chapter_title": "Real Numbers",
   "zero_omission_notes": {
-    "summary": "During the nineteenth century, nationalism emerged as a powerful force in Europe, converting multi-ethnic autocratic empires into modern nation-states. The process began with the 1789 French Revolution, which established popular sovereignty and citizen-centric governance. Although Napoleon modernized administrative systems via the Civil Code of 1804, his conquests met local resistance. Following Napoleon's 1815 defeat, the Congress of Vienna restored conservative monarchies. However, liberal-nationalist revolutions erupted in 1830 and 1848, fostering national identity through Romanticism, economic unions like the Zollverein, and visual allegories (Marianne, Germania). This culminated in the unifications of Germany and Italy, and eventually explosive imperial rivalries in the Balkans preceding World War I.",
+    "summary": "Chapter 1 covers the Fundamental Theorem of Arithmetic, prime factorization, HCF and LCM calculations and their algebraic relation, and formal proofs of irrationality for square roots of prime numbers using proof by contradiction.",
     "detailed_sections": [
       {
-        "section_number_and_title": "1.1 The French Revolution and the Idea of the Nation",
-        "full_notes": "The French Revolution of 1789 provided the first clear expression of nationalism. It transferred sovereignty from absolute monarchical rule to French citizens. Revolutions introduced la patrie (fatherland) and le citoyen (citizen) to emphasize an equal constitutional community. Key measures included replacing the royal standard with a new French tricolour flag, forming an elected National Assembly, establishing centralized administration, adopting standardized weights and measures, and discouraging regional dialects in favor of French.",
+        "section_number_and_title": "1.1 Fundamental Theorem of Arithmetic",
+        "full_notes": "Every composite number can be expressed uniquely as a product of primes, up to the order of factors. For any two positive integers a and b, HCF(a,b) * LCM(a,b) = a * b.",
         "margin_notes_and_sidebars": [
           {
-            "type": "New Words",
-            "title": "Absolutist & Utopian",
-            "content": "Absolutist: A system of rule with no restraints on power. Utopian: A ideal vision of society unlikely to exist in reality."
+            "type": "Theorem 1.1",
+            "title": "Fundamental Theorem of Arithmetic",
+            "content": "Every composite number can be factorised as a product of primes uniquely."
           }
         ]
       },
       {
-        "section_number_and_title": "1.2 The Making of Nationalism in Europe",
-        "full_notes": "Mid-18th-century Europe possessed no nation-states; regions were cantons and duchies ruled by dynastic monarchies like the multi-ethnic Habsburg Empire. Society was dominated by a landed aristocracy, while the rising middle class championed liberal nationalism—demanding individual freedom, legal equality, representative government, inviolability of property, and market freedom. In 1834, the Prussian-led Zollverein customs union abolished tariff barriers and reduced currencies from 30+ to 2, integrating regional economies into a national market.",
+        "section_number_and_title": "1.2 Revisiting Irrational Numbers",
+        "full_notes": "Proof by contradiction: Assume √p is rational (p/q in lowest terms). Show p divides both p and q, contradicting coprime assumption.",
         "margin_notes_and_sidebars": [
           {
-            "type": "Source Note",
-            "title": "Zollverein (1834)",
-            "content": "Initiated by Prussia to abolish internal tariffs and unify economic territory across German states."
-          }
-        ]
-      },
-      {
-        "section_number_and_title": "1.3 The Age of Revolutions: 1830-1848",
-        "full_notes": "Liberal-nationalist revolts erupted across Europe between 1830 and 1848. The July 1830 French uprising replaced Charles X with constitutional monarch Louis-Philippe and sparked Belgian independence from the Netherlands. The Greek War of Independence (1821–1832) rallied European Romantics and concluded with the Treaty of Constantinople. Romanticism emphasized emotion, folk culture (das volk), and vernacular language (e.g. Polish resistance to Russification) to nurture national consciousness.",
-        "margin_notes_and_sidebars": [
-          {
-            "type": "In-text Box",
-            "title": "Grimm Brothers",
-            "content": "Collected folk tales to preserve native German heritage and linguistic identity."
-          }
-        ]
-      },
-      {
-        "section_number_and_title": "1.4 The Unification of Germany and Italy",
-        "full_notes": "German unification was spearheaded by Prussia under Chief Minister Otto von Bismarck using 'Blood and Iron' across three wars against Denmark, Austria, and France (1864–1871), proclaiming Kaiser William I as German Emperor at Versailles. Italian unification was engineered by Cavour's diplomacy, Garibaldi's Red Shirts conquering Two Sicilies in 1860, and King Victor Emmanuel II unifying Sardinia-Piedmont with central and southern Italian states by 1870.",
-        "margin_notes_and_sidebars": [
-          {
-            "type": "New Words",
-            "title": "Ethnic",
-            "content": "Relates to shared racial, tribal, or cultural background that a community identifies with."
-          }
-        ]
-      },
-      {
-        "section_number_and_title": "1.5 Visualising the Nation & Imperialism",
-        "full_notes": "19th-century artists visualised nations as female allegories: Marianne in France (wearing red cap, tricolour, cockade) and Germania in Germany (wearing an oak leaf crown of heroism). By late 19th century, nationalism transformed into aggressive imperialism, particularly in the Balkan region under weakening Ottoman rule, triggering big-power rivalries that ignited WWI.",
-        "margin_notes_and_sidebars": [
-          {
-            "type": "Visual Note",
-            "title": "Allegorical Symbols",
-            "content": "Broken chains = freedom; Breastplate with eagle = strength; Crown of oak leaves = heroism; Sword = readiness to fight."
+            "type": "Theorem 1.2",
+            "title": "Prime Divisibility",
+            "content": "Let p be a prime number. If p divides a^2, then p divides a, where a is a positive integer."
           }
         ]
       }
@@ -63,63 +30,48 @@
   },
   "practical_lab_activity_or_methodology_manual": [
     {
-      "activity_or_method_id": "ACT-1.1",
-      "aim_or_objective": "Map analysis tracing European territorial realignments from 1815 (Congress of Vienna) to 1871 (Unification of Germany & Italy).",
+      "activity_or_method_id": "ACT-101",
+      "aim_or_objective": "Determine HCF and LCM of 96 and 404 via Prime Factorization.",
       "materials_or_prerequisites": [
-        "Outline maps of Europe (1815 & 1871)",
-        "Colored pencils/markers"
+        "Prime factor trees"
       ],
       "procedure_or_steps": [
-        "Step 1: Mark the boundaries of the 39 states of the German Confederation created in 1815.",
-        "Step 2: Trace Prussian territorial gains following wars with Denmark (1864), Austria (1866), and France (1870-71).",
-        "Step 3: Highlight Sardinia-Piedmont and mark the route of Garibaldi's Expedition of the Thousand in 1860.",
-        "Step 4: Color the multi-ethnic Balkan region and list the major Slavic nationalist groups."
+        "Write 96 = 2^5 * 3",
+        "Write 404 = 2^2 * 101",
+        "HCF = 2^2 = 4",
+        "LCM = (96 * 404) / 4 = 9696"
       ],
-      "observations_or_results": "Fragmented duchies and empires consolidated into centralized sovereign nation-states.",
-      "conclusion_or_principle": "Demonstrates the historical transformation from dynastic empire control to modern territorial nation-states."
+      "observations_or_results": "HCF is product of lowest common powers; LCM is product of highest powers.",
+      "conclusion_or_principle": "HCF(a,b) * LCM(a,b) = a * b is verified."
     }
   ],
   "visuals_diagrams_and_tabular_data": {
     "diagrams_figures_and_maps": [
       {
-        "figure_id_and_title": "Fig 1.1 / The Dream of Worldwide Democratic and Social Republics (Frédéric Sorrieu, 1848)",
+        "figure_id_and_title": "Fig 1.1 Prime Factor Tree",
         "labels_and_components": [
-          "Statue of Liberty with Torch of Enlightenment and Charter of Rights",
-          "Shattered symbols of absolutist monarchies on foreground",
-          "Long procession of European and American nations carrying national flags"
+          "Composite Root",
+          "Prime Branches"
         ],
-        "drawing_or_reading_instructions": "Observe the procession led by US and Switzerland, followed by France, Germany, Austria, and Russia under heavenly blessing.",
-        "structural_or_conceptual_explanation": "Utopian visual representation of democratic nation-states replacing autocratic dynastic rule."
+        "drawing_or_reading_instructions": "Decompose number iteratively into prime factors.",
+        "structural_or_conceptual_explanation": "Visual proof of prime factorization uniqueness."
       }
     ],
     "data_tables_and_comparisons": [
       {
-        "table_title": "Comparison of German and Italian Unification Processes",
+        "table_title": "HCF vs LCM Selection Criteria",
         "headers": [
-          "Parameter",
-          "German Unification",
-          "Italian Unification"
+          "Measure",
+          "Factor Power Selection"
         ],
         "rows": [
           [
-            "Architect / Leader",
-            "Otto von Bismarck",
-            "Count Cavour & Giuseppe Garibaldi"
+            "HCF",
+            "Smallest power of each common prime factor"
           ],
           [
-            "Dominant State",
-            "Prussia",
-            "Sardinia-Piedmont"
-          ],
-          [
-            "Methodology",
-            "'Blood and Iron' (3 military wars)",
-            "Tactical diplomacy with France & Red Shirts militia movement"
-          ],
-          [
-            "Completion Year",
-            "1871 (Versailles Proclamation)",
-            "1870 (Annexation of Rome)"
+            "LCM",
+            "Greatest power of each prime factor involved"
           ]
         ]
       }
@@ -127,77 +79,74 @@
   },
   "master_glossary_units_and_formulas": [
     {
-      "term_or_concept": "Absolutism",
-      "definition_or_meaning": "A system of governance characterized by unrestricted monarchical power.",
-      "si_unit_or_notation": "N/A (Political Concept)",
-      "example_or_application": "Bourbon monarchy in pre-1789 France."
-    },
-    {
-      "term_or_concept": "Zollverein",
-      "definition_or_meaning": "German customs union formed in 1834 to abolish internal tariffs.",
-      "si_unit_or_notation": "N/A (Economic Union)",
-      "example_or_application": "Reduced 30+ regional currencies to two across 39 German states."
+      "term_or_concept": "HCF and LCM Identity",
+      "definition_or_meaning": "Product of HCF and LCM equals product of two positive integers.",
+      "si_unit_or_notation": "HCF(a,b) * LCM(a,b) = a * b",
+      "example_or_application": "HCF(6,20)=2, LCM(6,20)=60 -> 2*60 = 120 = 6*20"
     }
   ],
   "exam_question_bank": {
     "textbook_exercises": [
       {
-        "q_no": "Q1(a)",
-        "question": "Write a note on Giuseppe Mazzini.",
-        "answer": "Giuseppe Mazzini was an Italian revolutionary born in Genoa in 1807. Member of the Carbonari, he was exiled in 1831 and subsequently founded Young Italy in Marseilles and Young Europe in Berne. He believed God intended nations to be natural units of humanity, advocating for a unified Italian republic."
+        "q_no": "Ex 1.1 Q1",
+        "question": "Express 140 as product of prime factors.",
+        "answer": "140 = 2^2 * 5 * 7."
       }
     ],
     "objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Which treaty recognized Greece as an independent nation in 1832?",
+        "question": "If HCF(306, 657) = 9, LCM is:",
         "options": [
-          "A) Treaty of Vienna",
-          "B) Treaty of Constantinople",
-          "C) Treaty of Frankfurt",
-          "D) Treaty of Versailles"
+          "A) 22338",
+          "B) 22339",
+          "C) 22330",
+          "D) 22340"
         ],
-        "answer": "B",
-        "explanation": "The 1832 Treaty of Constantinople formally acknowledged Greek independence from the Ottoman Empire."
+        "answer": "A",
+        "explanation": "LCM = (306 * 657) / 9 = 22338."
       }
     ],
     "short_answer_questions": [
       {
         "marks": 2,
-        "question": "Explain the significance of the Zollverein formed in 1834.",
-        "answer": "1. It abolished internal tariff barriers across member German states.\n2. Reduced thirty regional currencies down to two, facilitating economic integration and national sentiment."
+        "question": "Prove that 3 + 2√5 is irrational.",
+        "answer": "Assume 3 + 2√5 = a/b (rational). Then √5 = (a - 3b)/(2b). Left side is irrational while right side is rational, contradiction!"
       }
     ],
     "analytical_reasoning_questions": [
       {
         "marks": 3,
-        "question": "Analyze Metternich's statement: 'When France sneezes, the rest of Europe catches cold.'",
-        "answer": "Metternich highlighted France's role as the revolutionary catalyst in Europe. For instance, the July 1830 revolution in Paris immediately triggered the Belgian uprising against the Netherlands and aroused revolutionary impulses across Poland, Italy, and Germany."
+        "question": "Check whether 6^n can end with digit 0 for any natural number n.",
+        "answer": "If 6^n ends in 0, 5 must be in its prime factorization. But 6^n = (2*3)^n = 2^n * 3^n. By uniqueness of FTA, 5 is not a factor. Hence 6^n never ends in 0."
       }
     ],
     "comprehensive_long_answers": [
       {
         "marks": 5,
-        "question": "Describe the process of German unification under Prussian leadership.",
-        "answer": "1. After the failure of the 1848 Frankfurt Parliament, Prussia took leadership of German unification.\n2. Chief Minister Otto von Bismarck executed the policy of 'Blood and Iron' relying on the Prussian army and state bureaucracy.\n3. Prussia fought three wars over seven years against Denmark (1864), Austria (1866), and France (1870-71), emerging victorious in all.\n4. Unification was completed on January 18, 1871, when Kaiser William I of Prussia was proclaimed German Emperor at Versailles.\n5. The new German Empire prioritized modernizing currency, banking, and judicial systems."
+        "question": "Prove that √2 is irrational using proof by contradiction.",
+        "answer": "Let √2 = a/b where a,b are coprime integers. 2 = a^2/b^2 => a^2 = 2b^2. Thus 2 divides a^2 => 2 divides a. Let a = 2c. Then 4c^2 = 2b^2 => b^2 = 2c^2 => 2 divides b. Thus 2 divides both a and b, contradicting that a and b are coprime. Hence √2 is irrational."
       }
     ],
     "competency_and_case_studies": [
       {
-        "case_scenario": "In late 19th-century Europe, the Balkans became an explosive zone of geopolitical tension as Ottoman power declined and Slavic groups demanded self-determination.",
+        "case_scenario": "A seminar has 60 participants in Hindi, 84 in English, and 108 in Mathematics. Rooms must seat equal participants of same subject.",
         "qa": [
           {
-            "question": "Why did Balkan nationalism lead to major European conflict?",
-            "answer": "Balkan states fought each other for territory while European powers (Russia, Germany, Austria-Hungary, Britain) competed for commercial and naval dominance, creating rivalries that ignited WWI."
+            "question": "Find minimum number of rooms needed.",
+            "answer": "Max per room = HCF(60, 84, 108) = 12. Rooms needed = (60/12) + (84/12) + (108/12) = 5 + 7 + 9 = 21 rooms."
           }
         ]
       }
     ],
     "common_misconceptions_and_pitfalls": [
       {
-        "common_error_or_misconception": "Confusing the 1815 Congress of Vienna with the 1871 Proclamation of the German Empire.",
-        "correct_fact_or_method": "1815 was conservative restoration led by Austria (Metternich); 1871 was German national unification led by Prussia (Bismarck)."
+        "common_error_or_misconception": "Applying HCF * LCM = a * b * c for three numbers.",
+        "correct_fact_or_method": "The product relation HCF(a,b)*LCM(a,b) = a*b holds ONLY for two numbers."
       }
     ]
-  }
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C01"
 }

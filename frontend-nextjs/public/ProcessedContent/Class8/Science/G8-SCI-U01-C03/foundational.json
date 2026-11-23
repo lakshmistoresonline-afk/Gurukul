@@ -1,91 +1,106 @@
 {
   "chapter_number": 3,
-  "chapter_title": "The Rise of the Marathas",
-  "skill_drills": {
-    "scrambled_tile_sets": [
-      {
-        "id": "tile_1",
-        "target_term": "SWARAJYA",
-        "scrambled_letters": [
-          "S",
-          "T",
-          "E",
-          "W",
-          "A",
-          "R",
-          "D",
-          "S",
-          "H",
-          "I",
-          "P"
-        ],
-        "hint": "Responsible protection and management of resources/institutions."
-      }
+  "chapter_title": "Health: The Ultimate Treasure",
+  "skill_drills": [
+    {
+      "drill_type": "drag_and_drop_unscrambler",
+      "title": "Scientific Method Sequence Unscrambler - Ch 3",
+      "scrambled_tile_sets": [
+        {
+          "id": "t3",
+          "text": "Formulate Testable Hypothesis"
+        },
+        {
+          "id": "t1",
+          "text": "Observe Natural Phenomenon"
+        },
+        {
+          "id": "t5",
+          "text": "Draw Evidence-Based Conclusion"
+        },
+        {
+          "id": "t2",
+          "text": "Ask Investigative Question"
+        },
+        {
+          "id": "t4",
+          "text": "Conduct Controlled Experiment"
+        }
+      ],
+      "correct_sequence_ids": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ]
+    },
+    {
+      "drill_type": "multi_bin_sorting_matrix",
+      "title": "Concept Categorization Matrix - Ch 3",
+      "bins": [
+        "Category A",
+        "Category B",
+        "Category C"
+      ],
+      "items": [
+        {
+          "text": "Component 1 of Health: The Ultimate Treasure",
+          "bin": "Category A"
+        },
+        {
+          "text": "Component 2 of Health: The Ultimate Treasure",
+          "bin": "Category B"
+        },
+        {
+          "text": "Component 3 of Health: The Ultimate Treasure",
+          "bin": "Category C"
+        }
+      ]
+    },
+    {
+      "drill_type": "editing_checker",
+      "title": "Misconception Corrector - Ch 3",
+      "erroneous_statement": "Common student misconception regarding Health: The Ultimate Treasure.",
+      "corrected_statement": "Scientifically verified fact correcting the misconception in Health: The Ultimate Treasure."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch3_media_01",
+    "chapter_number": 3,
+    "chapter_title": "Health: The Ultimate Treasure",
+    "title": "Pathogen Transmission Routes & Vaccine Immunization",
+    "url": "/assets/images/ch3_health_and_disease.png",
+    "format": "PNG",
+    "aspect_ratio": "16:9",
+    "tags": [
+      "Health",
+      "Communicable",
+      "Vaccine",
+      "Anopheles"
     ],
-    "multi_bin_sorting_matrices": [
+    "hotspots": [
       {
-        "matrix_title": "Classification Drill - Chapter 3",
-        "bins": [
-          "Category A",
-          "Category B"
-        ],
-        "items": [
-          {
-            "item_name": "Sample Element 1",
-            "correct_bin": "Category A"
-          },
-          {
-            "item_name": "Sample Element 2",
-            "correct_bin": "Category B"
-          }
-        ]
-      }
-    ],
-    "editing_checkers": [
+        "hotspot_id": "hs_ch3_01",
+        "title": "Component A: Health Setup",
+        "x_percent": 8.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Detailed visual representation of Health and Communicable."
+      },
       {
-        "passage_text": "In Chapter 3, key decisions are made by institutions.",
-        "embedded_errors": [
-          {
-            "error_word": "institutions",
-            "correct_word": "constitutional bodies",
-            "explanation": "Precision in terminology."
-          }
-        ]
+        "hotspot_id": "hs_ch3_02",
+        "title": "Component B: Vaccine Mechanics",
+        "x_percent": 54.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Experimental phenomenon illustrating Vaccine and Anopheles."
       }
     ]
   },
-  "image_asset": {
-    "image_url": "/assets/images/ch3_maratha_fort_architecture.png",
-    "title": "Gamified Skill Reference - Chapter 3",
-    "aspect_ratio": "16:9",
-    "hotspots": [
-      {
-        "id": "hs_3_1",
-        "label": "Hill Fort Architecture (Pratapgad)",
-        "x_percent": 12.0,
-        "y_percent": 18.0,
-        "w_percent": 36.0,
-        "h_percent": 36.0,
-        "popover_description": "Integrated into basalt cliffs with double curtain walls, bastions, hidden gates (Maha Darwaja), and rainwater tanks."
-      },
-      {
-        "id": "hs_3_2",
-        "label": "Sea Fort Architecture (Sindhudurg)",
-        "x_percent": 52.0,
-        "y_percent": 18.0,
-        "w_percent": 36.0,
-        "h_percent": 36.0,
-        "popover_description": "Island sea fort guarding West Coast trade routes and serving as naval base under Maratha commanders like Kanhoji Angre."
-      },
-      {
-        "id": "hs_3_3",
-        "label": "Ganimi Kava Guerrilla Tactics & Taxation",
-        "x_percent": 20.0,
-        "y_percent": 62.0,
-        "w_percent": 60.0,
-        "h_percent": 26.0,
-        "popover_description": "Light cavalry surprise attacks combined with Chauth (25%) and Sardeshmukhi (10%) revenue protection levies."
-      }
-    ]
-  }
+  "grade": "8",
+  "subject": "Science",
+  "chapter_id": "G8-SCI-U01-C03"
 }

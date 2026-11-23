@@ -1,137 +1,90 @@
 {
   "chapter_number": 7,
-  "chapter_title": "Elections and Representation",
-  "unit_or_theme": "Electoral Politics & Democratic Institutions",
+  "chapter_title": "Work, Energy, and Mechanical Systems",
+  "unit_or_theme": "Energy & Mechanics",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "Elections are the core mechanism of representative democracy. Details India's electoral machinery, the autonomous Election Commission of India (ECI), First-Past-The-Post (FPTP) voting system, electoral roll preparation, Model Code of Conduct, and technological innovations like EVMs and VVPATs.",
+    "chapter_executive_summary": "Defines work W = F*s*cos(theta), kinetic energy KE = 1/2 mv^2, potential energy PE = mgh, work-energy theorem, power P = W/t, and conservation of energy.",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "7.1 Electoral Framework and Universal Adult Suffrage",
-        "full_explanation": "Article 326 guarantees Universal Adult Suffrage: every Indian citizen aged 18+ has the right to vote without discrimination. Representation of the People Acts (1950, 1951) govern constituency delimitation, candidate qualifications, and election conduct.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Constitutional Provision",
-            "box_title": "Article 324",
-            "full_content": "Vests superintendence, direction, and control of all elections to Parliament and State Legislatures in the Election Commission of India."
-          }
-        ]
-      },
-      {
-        "section_number_title": "7.2 The Election Commission of India (ECI)",
-        "full_explanation": "An autonomous constitutional body ensuring free and fair elections. Key duties: delimitation of constituencies, voter registration, political party recognition, enforcing Model Code of Conduct, and appointing observers.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Electoral Ethics",
-            "box_title": "Model Code of Conduct (MCC)",
-            "full_content": "A set of guidelines issued by the ECI for political parties and candidates regarding speeches, campaigning, manifestos, and government announcements once elections are declared."
-          }
-        ]
-      },
-      {
-        "section_number_title": "7.3 Electoral System and Voting Technology",
-        "full_explanation": "India utilizes First-Past-The-Post (FPTP) for Lok Sabha and Vidhan Sabha elections: the candidate securing the highest vote count in a constituency wins. Voting technology has evolved from paper ballots to Electronic Voting Machines (EVMs) paired with Voter Verifiable Paper Audit Trail (VVPAT).",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Tech Innovation",
-            "box_title": "VVPAT System",
-            "full_content": "Prints a slip showing candidate name and symbol for 7 seconds behind a glass window, allowing voters to verify their vote electronically cast."
-          }
-        ]
-      },
-      {
-        "section_number_title": "7.4 Anti-Defection Mechanics & Electoral Auditing",
-        "full_explanation": "The 10th Schedule (52nd Amendment) disqualifies legislators who voluntarily give up party membership or vote against party whips. To guarantee EVM integrity, the Election Commission mandatorily conducts manual VVPAT paper slip counts across 5 randomly selected polling stations per assembly constituency."
+        "section_number_title": "7.1 Work-Energy Theorem and Mechanical Energy",
+        "full_explanation": "Work measures energy transfer. Mechanical energy is conservative under gravity: KE + PE = Constant.",
+        "margin_boxes_and_in_text_notes": []
       }
     ]
   },
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "First-Past-The-Post (FPTP)",
-        "definition": "An electoral system where the candidate who receives more votes than any other single candidate wins the seat, regardless of whether they achieve an absolute majority.",
-        "contextual_example_or_usage": "Under FPTP, a candidate winning 35% of votes beats candidates with 30% and 25%.",
-        "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "Universal Adult Suffrage",
-        "definition": "The right of all adult citizens to vote in elections regardless of wealth, income, gender, social status, or ethnicity.",
-        "contextual_example_or_usage": "India adopted Universal Adult Suffrage immediately upon constitutional enforcement in 1950.",
-        "associated_units_or_parts_of_speech": "Noun"
+        "term": "Joule",
+        "definition": "SI unit of work and energy, defined as work done by 1 Newton moving an object by 1 meter.",
+        "contextual_example_or_usage": "1 J = 1 N * 1 m.",
+        "associated_units_or_parts_of_speech": "Noun (J)"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "FPTP Plurality Determination Rule",
-        "statement_or_expression": "Winning Candidate = Max(Votes_1, Votes_2, ..., Votes_n)",
-        "variable_definitions": "Requires plurality (highest relative vote total), not absolute majority (>50%).",
-        "model_application_example": "If Candidate A gets 40,000 votes, B gets 35,000, and C gets 25,000, Candidate A wins."
+        "name": "Work Done by Constant Force",
+        "statement_or_expression": "W = F * s",
+        "variable_definitions": "W=Work (J), F=Force in direction of motion (N), s=displacement (m)",
+        "model_application_example": "Pushing 10 N object by 5 m = 50 J."
+      },
+      {
+        "name": "Kinetic Energy",
+        "statement_or_expression": "E_k = 0.5 * m * v^2",
+        "variable_definitions": "E_k=Kinetic energy (J), m=mass (kg), v=velocity (m/s)",
+        "model_application_example": "2 kg ball at 3 m/s has E_k = 0.5*2*9 = 9 J."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Mock School Election & EVM Demonstration",
-      "objective_or_aim": "Simulate complete electoral workflow from voter verification to counting.",
+      "activity_or_procedure_title": "Investigating Energy Transformation with a Simple Pendulum",
+      "objective_or_aim": "Demonstrate interconversion of PE and KE.",
       "materials_or_prerequisites": [
-        "Voter List",
-        "Mock Ballot Box / Digital EVM app",
-        "Indelible Ink"
+        "Stand",
+        "Thread",
+        "Metallic Bob"
       ],
       "step_by_step_procedure": [
-        "Polling Officer 1 verifies voter identity against Electoral Roll.",
-        "Polling Officer 2 applies indelible ink to left index finger and issues ballot.",
-        "Voter casts secret vote behind voting screen.",
-        "Returning Officer oversees counting and declares result."
+        "Displace bob to extreme position A (PE maximum).",
+        "Release bob to swing to mean position B.",
+        "Observe swing to opposite extreme position C."
       ],
-      "expected_observations_or_working": "Students experience voter secrecy, identity check protocols, and transparent counting.",
-      "scientific_or_logical_conclusion": "Rigorous standardized procedural steps protect electoral integrity against fraud."
+      "expected_observations_or_working": "Bob moves fastest at mean position B (KE max, PE min).",
+      "scientific_or_logical_conclusion": "Total mechanical energy E = KE + PE is conserved."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Electoral Process Flowchart in India",
+        "figure_title": "Conservation of Energy in Freely Falling Body",
         "labels_to_learn": [
-          "Delimitation",
-          "Voter List Publication",
-          "Notification of Election",
-          "Nomination & Scrutiny",
-          "Campaigning (MCC active)",
-          "Polling Day",
-          "Counting & Results"
+          "Position A (Height h, KE=0, PE=mgh)",
+          "Position B (Height h-x, KE=mgx, PE=mg(h-x))",
+          "Position C (Ground, KE=mgh, PE=0)"
         ],
-        "drawing_or_labeling_instructions": "Draw a sequential linear flowchart depicting stages from ECI announcement to result declaration.",
-        "key_structural_details": "Campaigning must cease 48 hours prior to the close of poll."
+        "drawing_or_labeling_instructions": "Draw vertical drop line with positions A, B, C.",
+        "key_structural_details": "Show total energy E = mgh at every point."
       }
     ],
     "tables_and_charts": [
       {
-        "table_title": "Comparison of FPTP and Proportional Representation (PR)",
+        "table_title": "Commercial vs SI Units of Energy",
         "headers": [
-          "Feature",
-          "First-Past-The-Post (FPTP)",
-          "Proportional Representation (PR)"
+          "Unit Name",
+          "Symbol",
+          "Relation to Joules"
         ],
         "rows": [
           [
-            "Constituency Type",
-            "Single-member small constituencies",
-            "Large multi-member or national constituency"
+            "Joule",
+            "J",
+            "1 J = 1 W*s"
           ],
           [
-            "Voting Method",
-            "Voter votes for a specific candidate",
-            "Voter votes for a political party list"
-          ],
-          [
-            "Seat Allocation",
-            "Candidate with plurality wins seat",
-            "Party wins seats proportional to vote percentage"
-          ],
-          [
-            "Usage in India",
-            "Lok Sabha & Vidhan Sabha elections",
-            "Rajya Sabha & President elections"
+            "Kilowatt-Hour",
+            "kWh",
+            "1 kWh = 3.6 x 10^6 J"
           ]
         ]
       }
@@ -140,20 +93,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "Questions and Activities",
-        "question_number": "Q2",
-        "question_text": "What steps does the Election Commission take to ensure free and fair elections?",
-        "complete_step_by_step_solution": "1) Enforces Model Code of Conduct to prevent misuse of government machinery. 2) Appoints independent election observers. 3) Mandates VVPAT-EVM auditing. 4) Sets candidate expenditure limits. 5) Deploys central security forces at polling booths to prevent booth-capturing."
+        "exercise_section": "End of Chapter Exercises",
+        "question_number": "Q1",
+        "question_text": "Explain the central principle of Work, Energy, and Mechanical Systems.",
+        "complete_step_by_step_solution": "The main concept involves understanding how structural mechanisms and physical/biological principles govern Energy & Mechanics."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Article 324 empowers ECI with superintendence and control over elections... maintaining voter rolls and recognizing political parties.",
+        "passage_or_source_text": "Defines work W = F*s*cos(theta), kinetic energy KE = 1/2 mv^2, potential energy PE = mgh, work-energy theorem, power P = W/t, and conservation of energy.",
         "questions_and_answers": [
           {
-            "question": "Why is constitutional independence essential for the Election Commission?",
-            "answer": "Independence ensures ECI can act impartially without executive government pressure or political interference."
+            "question": "Summarize the key takeaway of this chapter.",
+            "answer": "Defines work W = F*s*cos(theta), kinetic energy KE = 1/2 mv^2, potential energy PE = mgh, work-energy theorem, power P = W/t, and conservation of energy."
           }
         ]
       }
@@ -163,41 +116,40 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "What is the minimum voting age for Indian citizens as per Article 326?",
+        "question": "What is the core subject of Chapter 7?",
         "options": [
-          "A) 16 years",
-          "B) 18 years",
-          "C) 21 years",
-          "D) 25 years"
+          "Work, Energy, and Mechanical Systems",
+          "Random Topic",
+          "Unrelated Subject",
+          "None"
         ],
-        "correct_answer": "B) 18 years",
-        "brief_explanation": "The 61st Constitutional Amendment Act (1988) lowered the voting age from 21 to 18 years."
+        "correct_answer": "Work, Energy, and Mechanical Systems",
+        "brief_explanation": "Directly stated in textbook chapter header."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "Explain the role of VVPAT in electronic voting.",
-        "model_answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent verification printer attached to EVMs. When a voter casts a vote, VVPAT generates a paper slip displaying candidate name, serial number, and symbol for 7 seconds, allowing physical audit trail verification during disputes.",
+        "question": "Define key term 'Joule' and state its significance.",
+        "model_answer": "SI unit of work and energy, defined as work done by 1 Newton moving an object by 1 meter.",
         "key_marking_points": [
-          "Verification mechanism for EVM",
-          "Displays candidate name/symbol for 7 seconds",
-          "Enables physical audit trail during dispute"
+          "Correct definition",
+          "Appropriate context usage"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "Critically analyze the advantages and limitations of the First-Past-The-Post (FPTP) system in India.",
-        "model_answer": "Advantages: 1) Simple for ordinary voters to understand. 2) Gives voters a clear choice of individual local candidate. 3) Promotes stable parliamentary majorities. Limitations: 1) A party can win a majority of seats with less than 50% total vote share. 2) Smaller localized parties or minorities may be underrepresented unless concentrated in specific pockets. 3) Votes cast for losing candidates produce 'wasted votes'."
+        "question": "Comprehensive analysis of systems described in Chapter 7: Work, Energy, and Mechanical Systems.",
+        "model_answer": "Defines work W = F*s*cos(theta), kinetic energy KE = 1/2 mv^2, potential energy PE = mgh, work-energy theorem, power P = W/t, and conservation of energy. Key processes operate through established physical and biological principles."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "During an election campaign, a sitting minister uses official government vehicles to attend political party rallies and announces a new government housing scheme after election dates are notified.",
+        "case_scenario": "Practical scenario demonstrating Energy & Mechanics principles in real-world application.",
         "questions_and_answers": [
           {
-            "question": "Identify the election violation and state the action ECI can take.",
-            "answer": "Violation of Model Code of Conduct (MCC) prohibiting misuse of official state resources and policy announcements post-notification. ECI can issue show-cause notices, halt the scheme, or ban the candidate from campaigning."
+            "question": "Analyze the scenario outcomes.",
+            "answer": "Applies Joule and related scientific laws."
           }
         ]
       }
@@ -205,9 +157,67 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Assuming a candidate must get more than 50% of total votes to win an election under FPTP.",
-      "root_cause": "Confusing plurality with absolute majority.",
-      "correct_approach": "Under FPTP, a candidate only needs to secure more votes than any other individual opponent (plurality), even if that is only 30% of total votes cast."
+      "frequent_student_error": "Misinterpreting fundamental concepts in Work, Energy, and Mechanical Systems.",
+      "root_cause": "Conflating everyday non-scientific terms with precise scientific definitions.",
+      "correct_approach": "Apply exact SI units and standard scientific terminology."
     }
-  ]
+  ],
+  "image_asset": {
+    "asset_id": "IMG-CH07-01",
+    "title": "Work, Energy Transformation & Free Fall Conservation",
+    "url": "/assets/images/ch7_work_energy.png"
+  },
+  "scripted_dialogue": [
+    {
+      "speaker": "Teacher",
+      "role": "Instructor",
+      "speech_text": "Welcome to Chapter 7! Let's explore key scientific concepts and practical lab investigations."
+    },
+    {
+      "speaker": "Student",
+      "role": "Inquirer",
+      "speech_text": "How do these principles apply to real-world phenomena and experiments in Chapter 7?"
+    }
+  ],
+  "stem_lab_drawer": {
+    "apparatus": [
+      "Graduated Cylinder",
+      "Digital Scale",
+      "Microscope",
+      "Beakers",
+      "Thermometer"
+    ],
+    "reagents": [
+      "Pure Water",
+      "Safranin Stain",
+      "Copper Sulfate",
+      "Barium Chloride"
+    ]
+  },
+  "scripted_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "How much work is done by a porter carrying a 20 kg suitcase on his head while walking along a horizontal platform?"
+    },
+    {
+      "speaker": "Student",
+      "speech_text": "Zero work against gravity! The vertical force of gravity is perpendicular (90 degrees) to the horizontal displacement, so W = F * s * cos(90°) = 0."
+    }
+  ],
+  "formula_calculator": {
+    "calculator_name": "Work, Energy, and Power Calculator",
+    "formula": "W = F*s*cos(theta); Ek = 0.5*m*v^2; Ep = m*g*h; P = W/t",
+    "variables": [
+      "F (Force N)",
+      "s (displacement m)",
+      "m (mass kg)",
+      "v (velocity m/s)",
+      "h (height m)",
+      "t (time s)"
+    ],
+    "example": "m=50 kg, h=10 m, g=9.8 m/s^2, t=5 s => W = 50*9.8*10 = 4900 J; P = 4900/5 = 980 W."
+  },
+  "grade": "9",
+  "subject": "Science",
+  "chapter_id": "G9-SCI-U03-C07"
 }

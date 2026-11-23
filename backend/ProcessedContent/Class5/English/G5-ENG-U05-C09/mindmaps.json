@@ -1,123 +1,112 @@
 {
-  "chapter_number": 9,
-  "chapter_title": "Coconut Farm",
-  "mind_map": {
-    "root_node": "Coconut Farm (Division Algorithms, Partial Quotients & Equal Grouping)",
-    "main_branches": [
-      {
-        "branch_title": "1. Division Terminology & Fundamental Identity",
-        "sub_branches": [
-          {
-            "sub_title": "Division Components & Terms",
-            "key_nodes": [
-              "Dividend: Total quantity being split or partitioned",
-              "Divisor: Group size or number of equal parts required",
-              "Quotient: Count of equal groups formed",
-              "Remainder: Leftover amount strictly smaller than divisor"
-            ],
-            "misconception_alert": "Confusing dividend and divisor positions in division expressions (e.g., A / B means A divided by B).",
-            "formula_or_rule": "Division Terminology: Dividend / Divisor = Quotient with Remainder.",
-            "real_world_application": "Packaging harvested coconuts into bags and dividing crop earnings among farm hands."
-          },
-          {
-            "sub_title": "Fundamental Division Identity & Verification",
-            "key_nodes": [
-              "Division Identity Formula: Dividend = (Divisor x Quotient) + Remainder",
-              "Remainder Constraint: Remainder must be strictly non-negative and smaller than divisor (0 <= R < Divisor)",
-              "Self-Checking Protocol: Multiply quotient by divisor, add remainder, verify if result equals dividend"
-            ],
-            "misconception_alert": "Allowing a remainder that is equal to or greater than the divisor.",
-            "formula_or_rule": "Division Verification: Dividend = (Divisor x Quotient) + Remainder, with 0 <= Remainder < Divisor.",
-            "real_world_application": "Auditing factory inventory counts and financial cash distribution."
-          }
-        ]
-      },
-      {
-        "branch_title": "2. Division Algorithms & Zero Placement",
-        "sub_branches": [
-          {
-            "sub_title": "Partial Quotients Chunking Strategy",
-            "key_nodes": [
-              "Chunking Method: Subtract easy multiples of divisor (e.g., 10x, 20x, 50x) from dividend iteratively",
-              "Summing Partial Quotients: Add all intermediate quotient chunks to find final total quotient",
-              "Efficiency Gain: Reduces cognitive load compared to traditional digit-by-digit long division"
-            ],
-            "misconception_alert": "Subtracting incorrect partial multiples that exceed the remaining dividend balance.",
-            "formula_or_rule": "Total Quotient = Sum of all partial quotient chunks.",
-            "real_world_application": "Calculating copra oil extraction ratios and bulk shipment logistics."
-          },
-          {
-            "sub_title": "Zero Placement in Quotients",
-            "key_nodes": [
-              "Zero Quotient Rule: Record '0' in quotient when brought-down dividend digit is smaller than divisor (e.g., 612 / 6 = 102)",
-              "Place Value Alignment: Maintaining correct column alignment for quotient digits",
-              "Place-Value Shortcuts: Dividing numbers ending in zeroes by 10 or 100"
-            ],
-            "misconception_alert": "Omitting zero in the quotient when bringing down a digit that cannot be divided (e.g., writing 612 / 6 = 12 instead of 102).",
-            "formula_or_rule": "Zero Quotient Rule: If Divisor > Current Column Dividend, record 0 in Quotient before bringing down next digit.",
-            "real_world_application": "Calculating daily wage rates and per-unit production costs."
-          }
-        ]
-      },
-      {
-        "branch_title": "3. Farm Logistics & Revenue Distribution",
-        "sub_branches": [
-          {
-            "sub_title": "Copra Oil Yield & Sacks Packaging",
-            "key_nodes": [
-              "Packaging Sacks: Total Sacks = Total Coconuts / Sacks Capacity",
-              "Oil Extraction Ratio: e.g., 10 coconuts yield 1 Litre oil -> Oil Litres = Total Coconuts / 10",
-              "Remaining Coconuts: Remainder represents unextracted or leftover individual coconuts"
-            ],
-            "misconception_alert": "Rounding down quotient when leftover remainder requires an additional packaging sack.",
-            "formula_or_rule": "Sacks Required = Quotient + (1 if Remainder > 0 else 0).",
-            "real_world_application": "Managing copra warehouse storage and oil processing mills."
-          },
-          {
-            "sub_title": "Equal Wage Sharing & Cooperative Payrolls",
-            "key_nodes": [
-              "Equal Wage Sharing: Worker Share = Total Farm Revenue / Number of Workers",
-              "Multi-Day Payrolls: Daily Rate = Weekly Total Earnings / 7 Days",
-              "Cooperative Profit Division: Net Profit = Gross Revenue - Total Expenses; Share = Net Profit / Members"
-            ],
-            "misconception_alert": "Dividing revenue by work days instead of worker count when calculating individual daily pay.",
-            "formula_or_rule": "Equal Share = Total Pool Amount / Number of Recipients.",
-            "real_world_application": "Managing agricultural cooperatives, farm labor payrolls, and market distribution."
-          }
-        ]
-      }
-    ]
-  },
-  "image_asset": {
-    "chapter_number": 9,
-    "image_id": "ch09_division_matrix",
-    "file_name": "ch09_division_matrix.png",
-    "local_url": "/assets/images/ch09_division_matrix.png",
-    "aspect_ratio": "16:9",
-    "title": "Partial Quotient Chunking & Division Identity Matrix",
-    "description": "Partial quotient division algorithm chunking multiples and verifying Dividend = Divisor x Quotient + Remainder.",
-    "hotspots": [
-      {
-        "label": "Dividend Box",
-        "x_percent": 35.0,
-        "y_percent": 30.0,
-        "w_percent": 15.0,
-        "h_percent": 12.0
-      },
-      {
-        "label": "Divisor Column",
-        "x_percent": 18.0,
-        "y_percent": 30.0,
-        "w_percent": 12.0,
-        "h_percent": 12.0
-      },
-      {
-        "label": "Partial Quotients Column",
-        "x_percent": 70.0,
-        "y_percent": 35.0,
-        "w_percent": 15.0,
-        "h_percent": 35.0
-      }
-    ]
-  }
+  "root_node": "Vocation (Poetry / Dignity of Labor)",
+  "central_theme": "Childhood innocence, romanticizing adult work, longing for unrestricted freedom, and dignity of labor",
+  "sub_nodes": [
+    {
+      "node_id": "M9_THEME",
+      "title": "Main Themes, Core Morals & Pedagogical Value",
+      "child_nodes": [
+        {
+          "title": "Central Theme & Childhood Longing",
+          "details": "Rabindranath Tagore explores a schoolboy's innocent desire for unrestricted freedom while observing daily street workers."
+        },
+        {
+          "title": "Dignity of All Labor",
+          "details": "Teaches that every honest profession—hawker, gardener, watchman—carries dignity and deserves equal respect."
+        },
+        {
+          "title": "Perspective Contrast (Child vs. Adult)",
+          "details": "Children perceive adult work as freedom from routines, unaware of the hard labor and responsibilities involved."
+        },
+        {
+          "title": "Mermaid Node Hierarchy: Vocation Themes",
+          "details": "Mermaid Syntax:\ngraph TD\n  A[Tagore's Vocation] --> B[Child's Longing for Freedom]\n  A --> C[Dignity of All Occupations]\n  A --> D[Poetic Imagery & Similes]\n  B --> B1[No Fixed Clock, Route, or Scolding]\n  C --> C1[Respecting Hawkers, Gardeners, Watchmen]\n  D --> D1[Street-lamp as One-eyed Giant]"
+        }
+      ]
+    },
+    {
+      "node_id": "M9_PLOT",
+      "title": "Chronological Structure, Progression & Visual Arc",
+      "child_nodes": [
+        {
+          "title": "Morning (10 AM): The Bangle Hawker",
+          "details": "On his way to school, the child sees the hawker crying 'Crystal bangles!'; wishes to roam with no set road or hurry."
+        },
+        {
+          "title": "Afternoon (4 PM): The Gardener with Spade",
+          "details": "Returning from school, he sees the gardener digging soil, getting dirty without reprimand; wishes to dig freely in gardens."
+        },
+        {
+          "title": "Night (Bedtime): The Night Watchman",
+          "details": "Looking from his bedroom window, he sees the watchman swinging a lantern down dark alleys; wishes to walk all night chasing shadows."
+        },
+        {
+          "title": "Mermaid Node Hierarchy: Chronological Arc",
+          "details": "Mermaid Syntax:\ngraph LR\n  T1[10 AM: School Walk - Hawker] --> T2[4 PM: Return Home - Gardener] --> T3[Night Bedtime: Watchman with Lantern] --> T4[Child's Subjunctive Wishes for Freedom]"
+        }
+      ]
+    },
+    {
+      "node_id": "M9_CHARACTERS / ENTITIES",
+      "title": "Key Poetic Entities & Occupational Roles",
+      "child_nodes": [
+        {
+          "title": "The Schoolchild (Narrator)",
+          "details": "Imaginative, constrained by school routines and bedtime rules, longing for romanticized occupational liberty."
+        },
+        {
+          "title": "The Bangle Hawker",
+          "details": "Street trader selling crystal bangles, symbolizing unscheduled travel and road freedom."
+        },
+        {
+          "title": "The Gardener",
+          "details": "Manual worker digging earth with a spade, symbolizing unconstrained physical interaction with nature."
+        },
+        {
+          "title": "The Night Watchman",
+          "details": "Solitary municipal worker swinging a glowing lantern, symbolizing nocturnal freedom and protection."
+        }
+      ]
+    },
+    {
+      "node_id": "M9_VOCAB_PHONICS",
+      "title": "Vocabulary, Pronunciation & Phonics Clusters",
+      "child_nodes": [
+        {
+          "title": "Core Vocabulary Glossary",
+          "details": "Vocation (profession/calling), Hawker (peddler), Spade (digging tool), Lantern (lamp), Reprimand (scold)."
+        },
+        {
+          "title": "Phonics & Silent Letters",
+          "details": "Trisyllabic word 'vo-ca-tion' ending in /ʃən/; silent 'gh' in 'night' (/naɪt/); silent 'w' in 'shadow'."
+        },
+        {
+          "title": "Synonyms & Antonyms",
+          "details": "Vocation = Profession; Reprimand = Scold; Lonely × Crowded; Dark × Bright."
+        }
+      ]
+    },
+    {
+      "node_id": "M9_GRAMMAR",
+      "title": "Grammar, Mechanics & Sentence Structures",
+      "child_nodes": [
+        {
+          "title": "Figurative Language (Similes)",
+          "details": "Using 'like'/'as': 'The street-lamp stands like a giant with one red eye in its head'."
+        },
+        {
+          "title": "Subjunctive Wishes ('I wish I were')",
+          "details": "Expressing imaginative desires: 'I wish I were a hawker', 'I wish I were a gardener', 'I wish I were a watchman'."
+        },
+        {
+          "title": "Prepositions of Spatial Movement",
+          "details": "Directional travel: 'through the lane', 'past the gate', 'down the dark alley'."
+        }
+      ]
+    }
+  ],
+  "grade": "5",
+  "subject": "English",
+  "chapter_id": "G5-ENG-U05-C09",
+  "chapter_title": "Vocation"
 }

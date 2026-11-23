@@ -1,40 +1,29 @@
 {
   "chapter_number": 3,
-  "chapter_title": "The Making of a Global World",
-  "unit_or_theme": "Livelihoods, Economies and Societies",
+  "chapter_title": "Pair of Linear Equations in Two Variables",
+  "unit_or_theme": "Algebra",
   "m1_zero_omission_notes": {
-    "chapter_executive_summary": "Global economic integration is a long historical process driven by trade, migration, and capital flows. From ancient Silk Routes connecting Asia with Europe and Africa to pre-modern biological exchanges (smallpox wiping out Native Americans), international links expanded rapidly in the 19th century. Repeal of British Corn Laws created a global food market, while indentured labour migration supplied plantation workers. World War I shattered global trade, leading to the Great Depression of 1929, post-war Bretton Woods institutions (IMF and World Bank), and the eventual shift toward modern globalization and production relocation to low-wage Asian economies.",
+    "chapter_executive_summary": "Covers systems of linear equations in two variables, graphical solution methods, algebraic methods (substitution and elimination), and conditions for consistency/inconsistency based on coefficient ratios.",
     "detailed_section_hierarchy": [
       {
-        "section_number_title": "3.1 The Pre-Modern World",
-        "full_explanation": "Silk Routes spanned land and sea routes connecting Asia, Europe, and Northern Africa, facilitating trade in Chinese silk, pottery, Indian textiles, and spices in exchange for precious metals. Food items like potatoes, soya, groundnuts, maize, tomatoes, and chillies traveled from the Americas to Asia/Europe after Columbus's discovery. Western conquest of the Americas was aided not by firepower but by biological warfare—germs like smallpox to which indigenous populations had no immunity.",
+        "section_number_title": "3.1 Pair of Linear Equations & Graphical Method",
+        "full_explanation": "General form: a1 x + b1 y + c1 = 0 and a2 x + b2 y + c2 = 0. Graphical representation shows intersecting (unique), parallel (no solution), or coincident (infinitely many solutions) lines.",
         "margin_boxes_and_in_text_notes": [
           {
-            "box_type": "New Words",
-            "box_title": "Dissenter",
-            "full_content": "One who refuses to accept established beliefs and practices."
+            "box_type": "Ratio Test",
+            "box_title": "Consistency Conditions",
+            "full_content": "Intersecting: a1/a2 != b1/b2; Coincident: a1/a2 = b1/b2 = c1/c2; Parallel: a1/a2 = b1/b2 != c1/c2"
           }
         ]
       },
       {
-        "section_number_title": "3.2 The Nineteenth Century (1815–1914)",
-        "full_explanation": "Economists identify three main international economic flows: Trade in goods, Labour migration, and Capital movement. In Britain, population growth led to the Corn Laws (tariffs on imported grain). Their repeal allowed cheap food imports, causing agricultural land abandonment in Britain and driving vast migrations to America and Australia to clear lands for farming. Refrigerated ships revolutionized meat trade after the 1870s, lowering meat prices in Europe. Colonial expansion saw the 1885 Berlin Conference carve up Africa among European powers, exacerbated by Rinderpest (cattle plague) which killed 90% of African cattle.",
+        "section_number_title": "3.2 Algebraic Solution Methods",
+        "full_explanation": "Substitution Method: Express one variable in terms of another and substitute. Elimination Method: Multiply equations to make coefficients of one variable equal, then add/subtract.",
         "margin_boxes_and_in_text_notes": [
           {
-            "box_type": "New Words",
-            "box_title": "Indentured Labour",
-            "full_content": "A bonded labourer under contract to work for a specific employer for a specific period to pay off passage to a new country."
-          }
-        ]
-      },
-      {
-        "section_number_title": "3.3 The Inter-War Economy & Great Depression",
-        "full_explanation": "WWI (1914-18) was the first industrial war, using tanks, aircraft, and machine guns. It turned Britain from a global creditor into a debtor to the US. In the US, Henry Ford's assembly line mass production boosted automobile output, but agricultural overproduction led to falling prices. The Wall Street Crash (Oct 1929) triggered the Great Depression, causing bank failures, unemployment, and trade collapse worldwide. In India, agricultural export values halved, double-indebted peasants sold gold, which Keynes noted aided global economic recovery.",
-        "margin_boxes_and_in_text_notes": [
-          {
-            "box_type": "Source Note",
-            "box_title": "Bretton Woods Conference (1944)",
-            "full_content": "Held in New Hampshire, USA, establishing the International Monetary Fund (IMF) and International Bank for Reconstruction and Development (World Bank) to maintain fixed exchange rates."
+            "box_type": "Tip",
+            "box_title": "Elimination Choice",
+            "full_content": "Eliminate the variable with simpler coefficients to reduce computation errors."
           }
         ]
       }
@@ -43,98 +32,84 @@
   "m2_key_definitions_formulas_and_vocabulary": {
     "glossary_and_key_terms": [
       {
-        "term": "Corn Laws",
-        "definition": "British laws restricting foreign grain imports to protect domestic agricultural prices.",
-        "contextual_example_or_usage": "Abolition of Corn Laws allowed free import of food into Britain.",
-        "associated_units_or_parts_of_speech": "Proper Noun"
+        "term": "Consistent System",
+        "definition": "A system of equations having at least one solution.",
+        "contextual_example_or_usage": "Intersecting or coincident lines.",
+        "associated_units_or_parts_of_speech": "Adjective"
       },
       {
-        "term": "Rinderpest",
-        "definition": "A devastating viral cattle disease introduced to Africa in the late 1880s.",
-        "contextual_example_or_usage": "Rinderpest wiped out 90% of cattle, forcing Africans into colonial labor markets.",
-        "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "Assembly Line",
-        "definition": "A manufacturing system where parts are added sequentially as work moves along a conveyor belt.",
-        "contextual_example_or_usage": "Henry Ford used assembly lines to manufacture Model T cars cheaply.",
-        "associated_units_or_parts_of_speech": "Noun"
-      },
-      {
-        "term": "Bretton Woods System",
-        "definition": "Post-WWII monetary framework based on fixed exchange rates pegged to the US dollar.",
-        "contextual_example_or_usage": "Bretton Woods created the IMF and World Bank in 1944.",
-        "associated_units_or_parts_of_speech": "Proper Noun"
-      },
-      {
-        "term": "G-77",
-        "definition": "A coalition of developing nations demanding a New International Economic Order (NIEO).",
-        "contextual_example_or_usage": "G-77 challenged Western dominance over global trade resources.",
-        "associated_units_or_parts_of_speech": "Proper Noun"
+        "term": "Inconsistent System",
+        "definition": "A system of equations having no solution.",
+        "contextual_example_or_usage": "Parallel lines.",
+        "associated_units_or_parts_of_speech": "Adjective"
       }
     ],
     "formulas_rules_and_laws": [
       {
-        "name": "Fixed Exchange Rate System",
-        "statement_or_expression": "Currencies are pegged directly to the US Dollar, which was fixed to gold at $35 per ounce.",
-        "variable_definitions": "Maintained by central banks under Bretton Woods until 1970s collapse.",
-        "model_application_example": "Ensured currency stability for post-war international trade expansion."
+        "name": "Coefficient Ratio Conditions",
+        "statement_or_expression": "a1/a2 != b1/b2 (Unique), a1/a2 = b1/b2 = c1/c2 (Infinitely many), a1/a2 = b1/b2 != c1/c2 (No solution)",
+        "variable_definitions": "a1,b1,c1,a2,b2,c2 = real coefficients",
+        "model_application_example": "2x+3y=9 and 4x+6y=18: 2/4 = 3/6 = 9/18 => Infinitely many solutions."
       }
     ]
   },
   "m3_practical_activities_lab_and_step_by_step_procedures": [
     {
-      "activity_or_procedure_title": "Flowcharting the 19th-Century International Economic Flows",
-      "objective_or_aim": "Visualize interconnected economic links between agricultural colonies and industrial Europe.",
+      "activity_or_procedure_title": "Solving Systems via Elimination Method",
+      "objective_or_aim": "Solve 9x - 4y = 2000 and 7x - 3y = 2000.",
       "materials_or_prerequisites": [
-        "Chart paper",
-        "Flowchart markers"
+        "Linear algebra"
       ],
       "step_by_step_procedure": [
-        "Step 1: Draw three primary flow paths: Goods (Wheat/Cotton), Labour (Indentured workers), Capital (Investments).",
-        "Step 2: Connect British repeal of Corn Laws to rising agricultural expansion in US, Argentina, and Australia.",
-        "Step 3: Map Indian indentured worker migration paths to Trinidad, Guyana, Fiji, and Mauritius.",
-        "Step 4: Trace British trade surplus with India used to settle deficits with other nations (Multilateral Settlement)."
+        "Multiply Eq 1 by 3: 27x - 12y = 6000",
+        "Multiply Eq 2 by 4: 28x - 12y = 8000",
+        "Subtract: (28x - 27x) = 8000 - 6000 => x = 2000",
+        "Substitute x: 9(2000) - 4y = 2000 => y = 4000"
       ],
-      "expected_observations_or_working": "Clear visual representation of how Britain balanced global trade via colonial resources.",
-      "scientific_or_logical_conclusion": "Demonstrates the multi-layered dependencies defining 19th-century global economic architecture."
+      "expected_observations_or_working": "Equalized y-coefficients allow straight subtraction.",
+      "scientific_or_logical_conclusion": "Unique solution (x=2000, y=4000)."
     }
   ],
   "m4_diagrams_tables_and_visual_data": {
     "diagrams_and_illustrations": [
       {
-        "figure_title": "Carving of Africa (Berlin Conference, 1885)",
+        "figure_title": "Three Cases of Line Relationships",
         "labels_to_learn": [
-          "Colonial boundary lines drawn straight across African continent",
-          "European imperial powers (Britain, France, Germany, Belgium)"
+          "Point of intersection",
+          "Parallel lines",
+          "Overlapping lines"
         ],
-        "drawing_or_labeling_instructions": "Draw map showing artificial straight line borders dividing native African ethnic regions.",
-        "key_structural_details": "Illustrates imperialist territorial division without regard to local geography or populations."
+        "drawing_or_labeling_instructions": "Plot pairs of lines representing single point, parallel, and identical lines on Cartesian plane.",
+        "key_structural_details": "Visual manifestation of consistent vs inconsistent linear systems."
       }
     ],
     "tables_and_charts": [
       {
-        "table_title": "Key Features of the Bretton Woods System vs G-77 Demands",
+        "table_title": "Summary of Linear System Behavior",
         "headers": [
-          "Aspect",
-          "Bretton Woods Twins (IMF/World Bank)",
-          "G-77 NIEO Demands"
+          "Compare Ratios",
+          "Graphical Interpretation",
+          "Algebraic Interpretation",
+          "Consistency"
         ],
         "rows": [
           [
-            "Control",
-            "Dominated by US and Western industrial powers",
-            "Controlled by developing non-aligned nations"
+            "a1/a2 != b1/b2",
+            "Intersecting lines",
+            "Exactly one solution",
+            "Consistent"
           ],
           [
-            "Objective",
-            "Industrial world monetary stability",
-            "Real control over natural resources & fair raw material prices"
+            "a1/a2 = b1/b2 = c1/c2",
+            "Coincident lines",
+            "Infinitely many solutions",
+            "Dependent Consistent"
           ],
           [
-            "Exchange Mechanism",
-            "Fixed exchange rates pegged to US Dollar",
-            "Equitable trading terms and technological access"
+            "a1/a2 = b1/b2 != c1/c2",
+            "Parallel lines",
+            "No solution",
+            "Inconsistent"
           ]
         ]
       }
@@ -143,20 +118,20 @@
   "m5_textbook_solutions_and_extracts": {
     "end_of_chapter_textbook_solutions": [
       {
-        "exercise_section": "Write in Brief",
-        "question_number": "Q3(a)",
-        "question_text": "Explain the effects of the British government's decision to abolish the Corn Laws.",
-        "complete_step_by_step_solution": "Abolishing the Corn Laws allowed cheap food grains to be imported into Britain. 1. British agriculture was unable to compete with cheap imports, leading to vast uncultivated lands and thousands of farm workers losing employment. 2. Displaced workers migrated to cities or emigrated overseas. 3. Lower food prices in Britain raised living standards and industrial demand, expanding global cultivation and trade in Russia, America, and Australia."
+        "exercise_section": "Exercise 3.2",
+        "question_number": "Q2(i)",
+        "question_text": "Check if 5x - 4y + 8 = 0 and 7x + 6y - 9 = 0 intersect at a point, are parallel, or coincident.",
+        "complete_step_by_step_solution": "a1/a2 = 5/7, b1/b2 = -4/6 = -2/3. Since 5/7 != -2/3, the lines intersect at a point."
       }
     ],
     "extract_or_passage_based_questions": [
       {
         "extract_id": 1,
-        "passage_or_source_text": "Rinderpest arrived in Africa in the late 1880s via infected cattle imported from British Asia to feed Italian soldiers invading Eritrea. Moving west like forest fire, it killed 90 percent of cattle.",
+        "passage_or_source_text": "Two straight lines in a plane can either intersect, be parallel, or coincide...",
         "questions_and_answers": [
           {
-            "question": "How did Rinderpest affect African livelihoods and European colonization?",
-            "answer": "Loss of cattle destroyed the traditional pastoral economy, forcing surviving Africans into the labor market and enabling European powers to subjugate the continent."
+            "question": "What happens if lines are parallel?",
+            "answer": "There is no point of intersection, hence no solution."
           }
         ]
       }
@@ -166,40 +141,41 @@
     "level_1_objective_questions_1_mark": [
       {
         "type": "MCQ",
-        "question": "Which conference established the IMF and World Bank in July 1944?",
+        "question": "If pair of equations 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, k equals:",
         "options": [
-          "A. Berlin Conference",
-          "B. Bretton Woods Conference",
-          "C. Vienna Conference",
-          "D. Versailles Conference"
+          "15/4",
+          "9/5",
+          "15/2",
+          "4/15"
         ],
-        "correct_answer": "B. Bretton Woods Conference",
-        "brief_explanation": "Held in New Hampshire, USA, creating the post-war international monetary system."
+        "correct_answer": "15/4",
+        "brief_explanation": "For parallel lines: 3/2 = 2k/5 => 4k = 15 => k = 15/4."
       }
     ],
     "level_2_short_answer_questions_2_to_3_marks": [
       {
-        "question": "What is meant by the 'Multilateral Settlement System'?",
-        "model_answer": "A system where one country's trade deficit with a second country is settled using its trade surplus with a third country. In the 19th century, Britain used its trade surplus in India to pay off its deficits with other nations.",
+        "question": "Solve x + y = 14 and x - y = 4 by substitution.",
+        "model_answer": "x = 14 - y. Substitute into 2nd: (14 - y) - y = 4 => 14 - 2y = 4 => 2y = 10 => y = 5. Then x = 9.",
         "key_marking_points": [
-          "Settles deficit with nation A using surplus from nation B",
-          "Example: British surplus in India balancing European/US deficits"
+          "Expressing variable",
+          "Substitution",
+          "Solving for both x and y"
         ]
       }
     ],
     "level_3_long_answer_and_reasoning_5_marks": [
       {
-        "question": "Analyze the causes and global impacts of the Great Depression of 1929.",
-        "model_answer": "Causes: 1. Agricultural overproduction post-WWI led to falling prices; farmers expanded output to maintain income, aggravating price collapse. 2. US financial crisis led to withdrawal of foreign loans and stock market crash in Oct 1929. Global Impacts: 1. US double tariff hike ruined global trade. 2. Thousands of banks collapsed in the US and Europe. 3. International unemployment soared. 4. In India, agricultural exports dropped 50%, forcing rural peasants into severe debt and gold sales."
+        "question": "Sum of a two-digit number and number obtained by reversing digits is 66. If digits differ by 2, find the number.",
+        "model_answer": "Let number be 10x + y. Reverse: 10y + x. (10x+y)+(10y+x) = 66 => 11(x+y)=66 => x+y=6. Digits differ by 2: x-y=2 or y-x=2. Case 1: x=4, y=2 => 42. Case 2: x=2, y=4 => 24. Numbers are 42 or 24."
       }
     ],
     "level_4_competency_and_case_studies": [
       {
-        "case_scenario": "In the 19th century, hundreds of thousands of Indian workers migrated to Trinidad, Fiji, and Guyana under indentured contracts promising return passage after 5 years, facing harsh conditions described as a 'new system of slavery'.",
+        "case_scenario": "A test has 40 questions. 3 marks awarded for correct answer, 1 mark deducted for wrong answer. Total scored = 40 marks.",
         "questions_and_answers": [
           {
-            "question": "How did indentured labourers preserve their cultural identity in Caribbean plantations?",
-            "answer": "They developed hybrid cultural forms such as Trinidad's Hosay carnival, Chutney music, and Rastafarian religion fusing Indian and local traditions."
+            "question": "Form linear equations if x = correct and y = wrong answers.",
+            "answer": "3x - y = 40 and x + y = 40."
           }
         ]
       }
@@ -207,9 +183,49 @@
   },
   "m7_common_pitfalls_and_misconceptions": [
     {
-      "frequent_student_error": "Believing indentured labour was voluntary migration similar to modern contract jobs.",
-      "root_cause": "Misunderstanding recruitment mechanisms.",
-      "correct_approach": "Recognize that agents often deceived workers about destinations and working conditions, leading historians to describe it as a 'new system of slavery'."
+      "frequent_student_error": "Forgetting to rearrange equations into standard form ax + by + c = 0 before taking ratio comparison.",
+      "root_cause": "Misidentifying signs of constants when brought across '=' sign.",
+      "correct_approach": "Write both equations with constants on the same side before evaluating a1/a2, b1/b2, c1/c2."
     }
-  ]
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 3: Pair of Linear Equations in Two Variables. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 3 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 3",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ],
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C03"
 }

@@ -1,91 +1,106 @@
 {
   "chapter_number": 1,
-  "chapter_title": "Natural Resources and Their Use",
-  "skill_drills": {
-    "scrambled_tile_sets": [
-      {
-        "id": "tile_1",
-        "target_term": "STEWARDSHIP",
-        "scrambled_letters": [
-          "S",
-          "T",
-          "E",
-          "W",
-          "A",
-          "R",
-          "D",
-          "S",
-          "H",
-          "I",
-          "P"
-        ],
-        "hint": "Responsible protection and management of resources/institutions."
-      }
+  "chapter_title": "Exploring the Investigative World of Science",
+  "skill_drills": [
+    {
+      "drill_type": "drag_and_drop_unscrambler",
+      "title": "Scientific Method Sequence Unscrambler - Ch 1",
+      "scrambled_tile_sets": [
+        {
+          "id": "t3",
+          "text": "Formulate Testable Hypothesis"
+        },
+        {
+          "id": "t1",
+          "text": "Observe Natural Phenomenon"
+        },
+        {
+          "id": "t5",
+          "text": "Draw Evidence-Based Conclusion"
+        },
+        {
+          "id": "t2",
+          "text": "Ask Investigative Question"
+        },
+        {
+          "id": "t4",
+          "text": "Conduct Controlled Experiment"
+        }
+      ],
+      "correct_sequence_ids": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ]
+    },
+    {
+      "drill_type": "multi_bin_sorting_matrix",
+      "title": "Concept Categorization Matrix - Ch 1",
+      "bins": [
+        "Category A",
+        "Category B",
+        "Category C"
+      ],
+      "items": [
+        {
+          "text": "Component 1 of Exploring the Investigative World of Science",
+          "bin": "Category A"
+        },
+        {
+          "text": "Component 2 of Exploring the Investigative World of Science",
+          "bin": "Category B"
+        },
+        {
+          "text": "Component 3 of Exploring the Investigative World of Science",
+          "bin": "Category C"
+        }
+      ]
+    },
+    {
+      "drill_type": "editing_checker",
+      "title": "Misconception Corrector - Ch 1",
+      "erroneous_statement": "Common student misconception regarding Exploring the Investigative World of Science.",
+      "corrected_statement": "Scientifically verified fact correcting the misconception in Exploring the Investigative World of Science."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch1_media_01",
+    "chapter_number": 1,
+    "chapter_title": "Exploring the Investigative World of Science",
+    "title": "Root & Kite Model & Puri Puffing Steam Expansion",
+    "url": "/assets/images/ch1_investigative_science.png",
+    "format": "PNG",
+    "aspect_ratio": "16:9",
+    "tags": [
+      "Inquiry",
+      "Hypothesis",
+      "Fair Test",
+      "Steam Expansion"
     ],
-    "multi_bin_sorting_matrices": [
+    "hotspots": [
       {
-        "matrix_title": "Classification Drill - Chapter 1",
-        "bins": [
-          "Category A",
-          "Category B"
-        ],
-        "items": [
-          {
-            "item_name": "Sample Element 1",
-            "correct_bin": "Category A"
-          },
-          {
-            "item_name": "Sample Element 2",
-            "correct_bin": "Category B"
-          }
-        ]
-      }
-    ],
-    "editing_checkers": [
+        "hotspot_id": "hs_ch1_01",
+        "title": "Component A: Inquiry Setup",
+        "x_percent": 8.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Detailed visual representation of Inquiry and Hypothesis."
+      },
       {
-        "passage_text": "In Chapter 1, key decisions are made by institutions.",
-        "embedded_errors": [
-          {
-            "error_word": "institutions",
-            "correct_word": "constitutional bodies",
-            "explanation": "Precision in terminology."
-          }
-        ]
+        "hotspot_id": "hs_ch1_02",
+        "title": "Component B: Fair Test Mechanics",
+        "x_percent": 54.0,
+        "y_percent": 15.0,
+        "w_percent": 38.0,
+        "h_percent": 58.0,
+        "description": "Experimental phenomenon illustrating Fair Test and Steam Expansion."
       }
     ]
   },
-  "image_asset": {
-    "image_url": "/assets/images/ch1_resource_classification.png",
-    "title": "Gamified Skill Reference - Chapter 1",
-    "aspect_ratio": "16:9",
-    "hotspots": [
-      {
-        "id": "hs_1_1",
-        "label": "Resource Origin (Biotic vs Abiotic)",
-        "x_percent": 12.5,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 32.0,
-        "popover_description": "Biotic resources derive from organic matter (forests, flora, fauna); Abiotic resources derive from non-living matter (land, water, minerals)."
-      },
-      {
-        "id": "hs_1_2",
-        "label": "Exhaustibility (Renewable vs Non-Renewable)",
-        "x_percent": 52.5,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 32.0,
-        "popover_description": "Renewable resources (solar, wind, water) regenerate naturally; Non-renewable resources (coal, petroleum) take millions of years to form."
-      },
-      {
-        "id": "hs_1_3",
-        "label": "Groundwater Stewardship & Salinity",
-        "x_percent": 25.0,
-        "y_percent": 62.0,
-        "w_percent": 50.0,
-        "h_percent": 28.0,
-        "popover_description": "Excessive tube-well pumping causes seawater intrusion into freshwater aquifers, highlighting the need for rainwater harvesting."
-      }
-    ]
-  }
+  "grade": "8",
+  "subject": "Science",
+  "chapter_id": "G8-SCI-U01-C01"
 }
