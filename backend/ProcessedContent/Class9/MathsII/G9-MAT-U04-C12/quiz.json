@@ -1,74 +1,57 @@
-{
-  "chapter_number": 12,
-  "chapter_title": "Quadrilaterals",
-  "quiz_questions": [
-    {
-      "question_id": 1,
-      "level": "Level 1 (Easy)",
-      "question_type": "Multiple Choice",
-      "question": "What geometric shape is formed by connecting the side midpoints of ANY arbitrary quadrilateral in order?",
-      "options": [
-        "A) Rectangle",
-        "B) Rhombus",
-        "C) Parallelogram",
-        "D) Square"
-      ],
-      "correct_answer": "C",
-      "explanation": "By Varignon's Theorem, joining the midpoints of adjacent sides of any quadrilateral always forms a parallelogram."
-    },
-    {
-      "question_id": 2,
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blank",
-      "question": "The centroid G of a triangle divides each median in a ratio of _____ measured from the vertex to the opposite side midpoint.",
-      "options": [],
-      "correct_answer": "2:1",
-      "explanation": "The medians of a triangle intersect at the centroid G, which divides each median segment into AG : GR = 2 : 1."
-    },
-    {
-      "question_id": 3,
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question": "True or False: Joining the midpoints of adjacent sides of a rhombus forms another rhombus.",
-      "options": [],
-      "correct_answer": "False",
-      "explanation": "Joining the midpoints of a rhombus forms a RECTANGLE. Because the diagonals of a rhombus are perpendicular, adjacent sides of the Varignon midpoint parallelogram meet at right angles, creating a rectangle."
-    },
-    {
-      "question_id": 4,
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question": "In triangle ABC, points D and E are the midpoints of sides AB and AC respectively. If DE = (x + 3) cm and BC = (3x - 2) cm, find the value of x and the length of side BC.",
-      "options": [],
-      "correct_answer": "x = 8, BC = 22 cm. By the Midpoint Theorem, DE = 1/2 BC => 2(x + 3) = 3x - 2 => 2x + 6 = 3x - 2 => x = 8. Length BC = 3(8) - 2 = 22 cm.",
-      "explanation": "The Midpoint Theorem establishes DE = 1/2 BC and DE || BC."
-    },
-    {
-      "question_id": 5,
-      "level": "Level 2 (Medium)",
-      "question_type": "Diagram Analysis",
-      "question": "Refer to the Varignon quadrilateral diagram. If outer quadrilateral ABCD has equal diagonals (AC = BD), prove what specific shape Varignon parallelogram PQRS must be.",
-      "options": [],
-      "correct_answer": "PQRS is a RHOMBUS. By Midpoint Theorem, side lengths PQ = SR = 1/2 AC and PS = QR = 1/2 BD. Since AC = BD, PQ = QR = RS = SP. A parallelogram with four equal sides is a rhombus.",
-      "explanation": "Equal outer diagonals translate to four equal side lengths in the inner Varignon midpoint parallelogram."
-    },
-    {
-      "question_id": 6,
-      "level": "Level 3 (Hard)",
-      "question_type": "Give Reasons",
-      "question": "Explain why ANY arbitrary non-convex or irregular quadrilateral tile can tessellate (tile) a 2D flat plane without gaps or overlaps.",
-      "options": [],
-      "correct_answer": "The interior angles of any quadrilateral sum to 360 degrees. Rotating four identical quadrilateral tiles around side midpoints allows their four distinct interior angles (A, B, C, D) to meet at a single shared vertex. Since A + B + C + D = 360 degrees, they fill the full circular vertex angle perfectly without gaps.",
-      "explanation": "A complete 360-degree angle sum at every tile corner vertex guarantees seamless 2D plane tessellation."
-    },
-    {
-      "question_id": 7,
-      "level": "Level 3 (Hard)",
-      "question_type": "Case Study",
-      "question": "State Ptolemy's Theorem for cyclic quadrilaterals. In cyclic quadrilateral ABCD, AB = 3 cm, BC = 4 cm, CD = 5 cm, and AD = 6 cm. Compute the exact product of diagonal lengths AC * BD.",
-      "options": [],
-      "correct_answer": "Ptolemy's Theorem: In a cyclic quadrilateral, AC * BD = AB * CD + AD * BC. Substituting values: AC * BD = (3 * 5) + (6 * 4) = 15 + 24 = 39 cm^2.",
-      "explanation": "Applying Ptolemy's diagonal product theorem yields 39."
-    }
-  ]
-}
+[
+  {
+    "question": "In parallelogram ABCD, DP = BQ on diagonal BD. Show APCQ is a parallelogram.",
+    "options": [
+      "Triangle ADP congruent to CBQ (SAS). Thus AP = CQ and AP || CQ. Opposite sides equal and parallel implies APCQ is a para",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Triangle ADP congruent to CBQ (SAS). Thus AP = CQ and AP || CQ. Opposite sides equal and parallel implies APCQ is a parallelogram."
+  },
+  {
+    "question": "Midpoints of sides of ANY quadrilateral connected in order form a:",
+    "options": [
+      "Correct concept application",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "C"
+  },
+  {
+    "question": "In triangle ABC, DE = (x + 3) cm joins midpoints AB and AC. If BC = (3x - 2) cm, find x and BC.",
+    "options": [
+      "DE = 1/2 BC => 2(x + 3) = 3x - 2 => 2x + 6 = 3x - 2 => x = 8. BC = 3(8) - 2 = 22 cm.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "DE = 1/2 BC => 2(x + 3) = 3x - 2 => 2x + 6 = 3x - 2 => x = 8. BC = 3(8) - 2 = 22 cm."
+  },
+  {
+    "question": "Prove that joining the midpoints of a rhombus forms a rectangle.",
+    "options": [
+      "In a rhombus, diagonals AC and BD are perpendicular. The Varignon parallelogram sides are parallel to AC and BD, so adja",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "In a rhombus, diagonals AC and BD are perpendicular. The Varignon parallelogram sides are parallel to AC and BD, so adjacent sides meet at 90 degrees, forming a rectangle."
+  },
+  {
+    "question": "State and prove the Midpoint Theorem for triangles.",
+    "options": [
+      "Statement: Line joining midpoints of two sides is parallel to 3rd side and half its length. Proof: Extend DE to F such t",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Statement: Line joining midpoints of two sides is parallel to 3rd side and half its length. Proof: Extend DE to F such that DE = EF. Triangle ADE congruent to CFE (SAS). AD = CF and AD || CF => DB = CF and DB || CF. DBCF is parallelogram, so DF || BC and DE = 1/2 BC."
+  }
+]

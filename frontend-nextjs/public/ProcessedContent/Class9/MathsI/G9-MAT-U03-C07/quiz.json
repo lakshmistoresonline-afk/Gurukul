@@ -1,158 +1,57 @@
-{
-  "chapter_number": 7,
-  "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
-  "questions": [
-    {
-      "question_id": "C7_L1_01",
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question": "Which of the following numerical values CANNOT represent the probability of an event?",
-      "options": [
-        "A) 0.0",
-        "B) 2/3",
-        "C) -1.5",
-        "D) 15%"
-      ],
-      "correct_answer": "C) -1.5",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "By definition, the probability P(E) of any event must lie strictly between 0 and 1 inclusive (0 <= P(E) <= 1). A negative value like -1.5 is mathematically impossible.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 7",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch7_probability_tree.png",
-        "target_hotspot_id": "hs_tree_branches"
-      }
-    },
-    {
-      "question_id": "C7_L1_02",
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blank",
-      "question": "If the probability of an event E occurring is P(E) = 0.35, then the probability of its complementary event 'not E' is ________.",
-      "options": [],
-      "correct_answer": "0.65",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "The sum of probabilities of an event and its complement equals 1: P(E) + P(not E) = 1 => P(not E) = 1 - 0.35 = 0.65.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 7",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch7_probability_tree.png",
-        "target_hotspot_id": "hs_tree_branches"
-      }
-    },
-    {
-      "question_id": "C7_L1_03",
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question": "True or False: According to the Law of Large Numbers, experimental probability approaches theoretical probability as the number of trials increases.",
-      "options": [],
-      "correct_answer": "True",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "True. As demonstrated by famous coin-tossing experiments (e.g., Karl Pearson's 24,000 tosses), increasing the trial size minimizes empirical variance and converges relative frequency directly to theoretical probability.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 7",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch7_probability_tree.png",
-        "target_hotspot_id": "hs_tree_branches"
-      }
-    },
-    {
-      "question_id": "C7_L2_01",
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question": "A single card is drawn at random from a well-shuffled standard deck of 52 playing cards. Find the probability of drawing (a) a face card (King, Queen, or Jack) and (b) a red Ace.",
-      "options": [],
-      "correct_answer": "(a) 3/13, (b) 1/26",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "(a) Total cards n(S) = 52. Face cards = 4 Kings + 4 Queens + 4 Jacks = 12 cards. P(Face card) = 12 / 52 = 3 / 13.\n(b) Red Aces = Ace of Hearts + Ace of Diamonds = 2 cards. P(Red Ace) = 2 / 52 = 1 / 26.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 7",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch7_probability_tree.png",
-        "target_hotspot_id": "hs_tree_branches"
-      }
-    },
-    {
-      "question_id": "C7_L2_02",
-      "level": "Level 2 (Medium)",
-      "question_type": "Tree Diagram / Flowchart Analysis",
-      "question": "Construct the sample space for tossing two fair coins simultaneously using a tree diagram, and calculate the probability of getting at most one head.",
-      "options": [],
-      "correct_answer": "Sample Space S = {HH, HT, TH, TT}, P(at most 1 head) = 3/4",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "1. Coin 1 branches to H or T; Coin 2 branches to H or T. Sample space S = {HH, HT, TH, TT}, n(S) = 4.\n2. Event 'at most 1 head' includes outcomes with 0 or 1 head: E = {HT, TH, TT}, n(E) = 3.\n3. Probability P(E) = n(E) / n(S) = 3 / 4.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 7",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch7_probability_tree.png",
-        "target_hotspot_id": "hs_tree_branches"
-      }
-    },
-    {
-      "question_id": "C7_L3_01",
-      "level": "Level 3 (Hard)",
-      "question_type": "Critical Thinking & Probability Analysis",
-      "question": "Two unbiased six-sided dice are rolled simultaneously. Calculate the probability that: (a) the sum of the numbers appearing on top is 8, and (b) the sum is a prime number.",
-      "options": [],
-      "correct_answer": "(a) 5/36, (b) 5/12",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "Total sample space size n(S) = 6 * 6 = 36 outcomes.\n(a) Outcomes with sum = 8: {(2,6), (3,5), (4,4), (5,3), (6,2)}, count n(E1) = 5. P(Sum = 8) = 5 / 36.\n(b) Prime sums are 2, 3, 5, 7, 11:\n   - Sum 2: (1,1) [1]\n   - Sum 3: (1,2), (2,1) [2]\n   - Sum 5: (1,4), (2,3), (3,2), (4,1) [4]\n   - Sum 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) [6]\n   - Sum 11: (5,6), (6,5) [2]\n   Total prime outcomes n(E2) = 1 + 2 + 4 + 6 + 2 = 15. P(Prime sum) = 15 / 36 = 5 / 12.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 7",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch7_probability_tree.png",
-        "target_hotspot_id": "hs_tree_branches"
-      }
-    },
-    {
-      "question_id": "C7_L3_02",
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question": "A dartboard consists of a square wood panel of side 20 cm containing a circular target circle of radius 7 cm. Assuming a thrown dart lands randomly on the panel, calculate the geometric probability that the dart hits inside the circular target circle.",
-      "options": [],
-      "correct_answer": "0.385 (or 77/200)",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "1. Total area of square board n(S) = side^2 = 20 * 20 = 400 sq cm.\n2. Target area of circle n(E) = pi * r^2 = (22/7) * 7^2 = 22 * 7 = 154 sq cm.\n3. Geometric Probability P(Hit target) = Target Area / Total Area = 154 / 400 = 77 / 200 = 0.385.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 7",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch7_probability_tree.png",
-        "target_hotspot_id": "hs_tree_branches"
-      }
-    }
-  ]
-}
+[
+  {
+    "question": "A card is drawn from a well-shuffled deck of 52 cards. Find probability of drawing a face card.",
+    "options": [
+      "Face cards = 12. P(Face card) = 12 / 52 = 3 / 13.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Face cards = 12. P(Face card) = 12 / 52 = 3 / 13."
+  },
+  {
+    "question": "Which of the following CANNOT be a probability value?",
+    "options": [
+      "Correct concept application",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "B"
+  },
+  {
+    "question": "Two coins are tossed simultaneously. Find probability of getting at most one head.",
+    "options": [
+      "S = {HH, HT, TH, TT}, n(S) = 4. At most 1 head = {HT, TH, TT}, n(E) = 3. P = 3/4.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "S = {HH, HT, TH, TT}, n(S) = 4. At most 1 head = {HT, TH, TT}, n(E) = 3. P = 3/4."
+  },
+  {
+    "question": "A dart is thrown at a square board of side 20 cm containing a circular target ring of radius 7 cm. Find geometric probability of hit.",
+    "options": [
+      "Total Area = 400 sq cm. Target Area = (22/7)*7^2 = 154 sq cm. P(Hit) = 154/400 = 77/200 = 0.385.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Total Area = 400 sq cm. Target Area = (22/7)*7^2 = 154 sq cm. P(Hit) = 154/400 = 77/200 = 0.385."
+  },
+  {
+    "question": "Two dice are rolled together. Find probability that: (a) Sum is 8. (b) Sum is a prime number. (c) Both dice show doublets.",
+    "options": [
+      "Total outcomes n(S) = 36.\n(a) Sum = 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5 outcomes => P = 5/36.\n(b) Sum prime (2,3,5,7",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Total outcomes n(S) = 36.\n(a) Sum = 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5 outcomes => P = 5/36.\n(b) Sum prime (2,3,5,7,11): count = 15 outcomes => P = 15/36 = 5/12.\n(c) Doublets {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} => 6 outcomes => P = 6/36 = 1/6."
+  }
+]

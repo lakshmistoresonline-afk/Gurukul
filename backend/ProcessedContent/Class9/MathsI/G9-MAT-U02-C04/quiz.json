@@ -1,158 +1,57 @@
-{
-  "chapter_number": 4,
-  "chapter_title": "Exploring Algebraic Identities",
-  "questions": [
-    {
-      "question_id": "C4_L1_01",
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question": "Which of the following equals the expansion of (a - b)^2?",
-      "options": [
-        "A) a^2 - b^2",
-        "B) a^2 - 2ab + b^2",
-        "C) a^2 + 2ab - b^2",
-        "D) a^2 - ab + b^2"
-      ],
-      "correct_answer": "B) a^2 - 2ab + b^2",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "(a - b)^2 = (a - b)(a - b) = a^2 - ab - ab + b^2 = a^2 - 2ab + b^2.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 4",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch4_geometric_identities.png",
-        "target_hotspot_id": "hs_a2"
-      }
-    },
-    {
-      "question_id": "C4_L1_02",
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blank",
-      "question": "If three real numbers satisfy a + b + c = 0, then the value of a^3 + b^3 + c^3 is equal to ________.",
-      "options": [],
-      "correct_answer": "3abc",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "From the identity a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca), if a+b+c = 0, the entire right-hand side becomes 0, so a^3 + b^3 + c^3 = 3abc.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 4",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch4_geometric_identities.png",
-        "target_hotspot_id": "hs_a2"
-      }
-    },
-    {
-      "question_id": "C4_L1_03",
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question": "True or False: The factorised form of 8x^3 + 27 is (2x + 3)(4x^2 - 6x + 9).",
-      "options": [],
-      "correct_answer": "True",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "True. Using the sum of cubes identity a^3 + b^3 = (a + b)(a^2 - ab + b^2) with a = 2x and b = 3: (2x)^3 + 3^3 = (2x + 3)((2x)^2 - (2x)(3) + 3^2) = (2x + 3)(4x^2 - 6x + 9).",
-        "key_formula_used": "Standard Theorem / Formula for Ch 4",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch4_geometric_identities.png",
-        "target_hotspot_id": "hs_a2"
-      }
-    },
-    {
-      "question_id": "C4_L2_01",
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question": "Evaluate 105 x 95 without direct multiplication by applying an algebraic identity.",
-      "options": [],
-      "correct_answer": "9975",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "Express as difference of squares:\n105 x 95 = (100 + 5)(100 - 5) = 100^2 - 5^2 = 10,000 - 25 = 9975.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 4",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch4_geometric_identities.png",
-        "target_hotspot_id": "hs_a2"
-      }
-    },
-    {
-      "question_id": "C4_L2_02",
-      "level": "Level 2 (Medium)",
-      "question_type": "Structural Analysis",
-      "question": "Factorise the quadratic polynomial 6x^2 + 17x + 5 by splitting the middle term.",
-      "options": [],
-      "correct_answer": "(3x + 1)(2x + 5)",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "1. Product a*c = 6 * 5 = 30; Sum b = 17.\n2. Two numbers multiplying to 30 and adding to 17 are 15 and 2.\n3. 6x^2 + 15x + 2x + 5 = 3x(2x + 5) + 1(2x + 5) = (3x + 1)(2x + 5).",
-        "key_formula_used": "Standard Theorem / Formula for Ch 4",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch4_geometric_identities.png",
-        "target_hotspot_id": "hs_a2"
-      }
-    },
-    {
-      "question_id": "C4_L3_01",
-      "level": "Level 3 (Hard)",
-      "question_type": "Critical Thinking & Proof",
-      "question": "Given x + 1/x = 4, find the exact numerical values of (a) x^2 + 1/x^2 and (b) x^3 + 1/x^3.",
-      "options": [],
-      "correct_answer": "(a) 14, (b) 52",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "(a) Square both sides: (x + 1/x)^2 = 4^2 => x^2 + 2(x)(1/x) + 1/x^2 = 16 => x^2 + 2 + 1/x^2 = 16 => x^2 + 1/x^2 = 14.\n(b) Cube both sides: (x + 1/x)^3 = 4^3 => x^3 + 1/x^3 + 3(x + 1/x) = 64 => x^3 + 1/x^3 + 3(4) = 64 => x^3 + 1/x^3 + 12 = 64 => x^3 + 1/x^3 = 52.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 4",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch4_geometric_identities.png",
-        "target_hotspot_id": "hs_a2"
-      }
-    },
-    {
-      "question_id": "C4_L3_02",
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question": "A container manufacturer designs a cube of edge length 'a' cm and extends every side by 'b' cm to form a larger cube of edge (a+b) cm. Use volume decomposition to state the four distinct geometric volumes that comprise (a+b)^3.",
-      "options": [],
-      "correct_answer": "1 cube of a^3, 1 cube of b^3, 3 rectangular prisms of a^2 b, and 3 rectangular prisms of ab^2",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "By expanding the identity (a+b)^3 = a^3 + b^3 + 3a^2 b + 3ab^2, the total volume decomposes geometrically into:\n- 1 cube of side a (volume a^3)\n- 1 cube of side b (volume b^3)\n- 3 square-base prisms of base side a and height b (volume a^2 b each)\n- 3 square-base prisms of base side b and height a (volume ab^2 each).",
-        "key_formula_used": "Standard Theorem / Formula for Ch 4",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch4_geometric_identities.png",
-        "target_hotspot_id": "hs_a2"
-      }
-    }
-  ]
-}
+[
+  {
+    "question": "Factorise: 6x^2 + 17x + 5.",
+    "options": [
+      "Splitting middle term: 6x^2 + 15x + 2x + 5 = 3x(2x + 5) + 1(2x + 5) = (3x + 1)(2x + 5).",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Splitting middle term: 6x^2 + 15x + 2x + 5 = 3x(2x + 5) + 1(2x + 5) = (3x + 1)(2x + 5)."
+  },
+  {
+    "question": "If a + b + c = 0, what is the value of a^3 + b^3 + c^3?",
+    "options": [
+      "Correct concept application",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "C"
+  },
+  {
+    "question": "If x + 1/x = 5, find x^2 + 1/x^2.",
+    "options": [
+      "(x + 1/x)^2 = 25 => x^2 + 2 + 1/x^2 = 25 => x^2 + 1/x^2 = 23.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(x + 1/x)^2 = 25 => x^2 + 2 + 1/x^2 = 25 => x^2 + 1/x^2 = 23."
+  },
+  {
+    "question": "Evaluate 998^3 using cubic identities.",
+    "options": [
+      "(1000 - 2)^3 = 1000^3 - 3(1000)^2(2) + 3(1000)(2)^2 - 2^3 = 1,000,000,000 - 6,000,000 + 12,000 - 8 = 994,011,992.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(1000 - 2)^3 = 1000^3 - 3(1000)^2(2) + 3(1000)(2)^2 - 2^3 = 1,000,000,000 - 6,000,000 + 12,000 - 8 = 994,011,992."
+  },
+  {
+    "question": "Factorise completely: x^3 - 6x^2 + 11x - 6.",
+    "options": [
+      "1. Test x = 1: p(1) = 1 - 6 + 11 - 6 = 0. So (x - 1) is a factor.\n2. Divide p(x) by (x - 1): x^3 - 6x^2 + 11x - 6 = (x -",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "1. Test x = 1: p(1) = 1 - 6 + 11 - 6 = 0. So (x - 1) is a factor.\n2. Divide p(x) by (x - 1): x^3 - 6x^2 + 11x - 6 = (x - 1)(x^2 - 5x + 6).\n3. Factorise x^2 - 5x + 6 = (x - 2)(x - 3).\n4. Complete factorisation: (x - 1)(x - 2)(x - 3)."
+  }
+]

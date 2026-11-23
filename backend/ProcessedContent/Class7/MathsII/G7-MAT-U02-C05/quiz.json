@@ -1,162 +1,79 @@
-{
-  "chapter_number": 5,
-  "chapter_title": "Connecting the Dots...",
-  "image_asset": {
-    "asset_id": "img_ch5",
-    "chapter_number": 5,
-    "title": "Statistical Dot Plot Distribution",
-    "url": "/assets/images/ch5_dotplot_distribution.png",
-    "caption": "Dot plot of student heights showing cluster at mode 115 cm and range spread.",
-    "hotspots": [
-      {
-        "x_percent": 45,
-        "y_percent": 20,
-        "w_percent": 15,
-        "h_percent": 60,
-        "label": "Cluster / Mode",
-        "popover_text": "Peak at 115 cm represents mode (5 students)."
-      },
-      {
-        "x_percent": 5,
-        "y_percent": 60,
-        "w_percent": 15,
-        "h_percent": 30,
-        "label": "Minimum Boundary",
-        "popover_text": "Minimum height value = 101 cm."
-      }
-    ]
+[
+  {
+    "question": "Daily water usage in liters: 5.6, 8, 3.09, 12.9, 6.5, 12.1, 11.3, 20.5, 7.4. (a) Can mean or median lie between 25 and 30? (b) Can mean/median be smaller than min or greater than max?",
+    "options": [
+      "(a) No. Mean and median must lie within the range of the data [3.09, 20.5]. 25-30 is completely outside the data range.\n",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(a) No. Mean and median must lie within the range of the data [3.09, 20.5]. 25-30 is completely outside the data range.\n(b) No. Neither mean nor median can ever be strictly smaller than the minimum data value or greater than the maximum data value."
   },
-  "questions": [
-    {
-      "question_id": 1,
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question_text": "What is the mean of the first five prime numbers?",
-      "options": [
-        "A) 5.0",
-        "B) 5.6",
-        "C) 6.2",
-        "D) 7.0"
-      ],
-      "correct_answer": "B) 5.6",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "The first five prime numbers are 2, 3, 5, 7, 11. Sum = 2 + 3 + 5 + 7 + 11 = 28. Arithmetic Mean = 28 / 5 = 5.6.",
-        "step3_final_answer": "B) 5.6"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch5",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 2,
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blanks",
-      "question_text": "To find the median of a dataset with an even number N of values, sort the data and take the average of values at positions _____ and _____.",
-      "options": [],
-      "correct_answer": "N/2; (N/2) + 1",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "For an even number of observations N, there are two central values located at index N/2 and (N/2)+1. The median is defined as the arithmetic mean of these two middle terms.",
-        "step3_final_answer": "N/2; (N/2) + 1"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch5",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 3,
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question_text": "True or False: The median of a dataset is always one of the original numbers present in the raw data.",
-      "options": [],
-      "correct_answer": "False",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "False. When N is even, the median is the average of two middle numbers, which may be a decimal or value not present in the original dataset (e.g., median of {2, 4} is 3).",
-        "step3_final_answer": "False"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch5",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 4,
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question_text": "The mean mark of 6 students in a test is 18. If one student who scored 8 marks is excluded, calculate the new mean of the remaining 5 students.",
-      "options": [],
-      "correct_answer": "20",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Original total marks = 18 × 6 = 108. Total marks after excluding 8 = 108 - 8 = 100. New mean = 100 / 5 = 20.",
-        "step3_final_answer": "20"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch5",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 5,
-      "level": "Level 2 (Medium)",
-      "question_type": "Diagram / Graph Analysis",
-      "question_text": "Explain the visual features of a Dot Plot and explain why a cropped scale (starting above 0) is used on vertical axes of clustered bar graphs.",
-      "options": [],
-      "correct_answer": "Dot plot displays data frequency via stacked dots; cropped scale zooms in to show small differences.",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "A dot plot stacks dots above a number line, revealing clusters, gaps, range, and outliers visually. A cropped vertical scale starts above zero to zoom in on small differences among large values that would otherwise look nearly identical on a 0-baseline axis.",
-        "step3_final_answer": "Dot plot displays data frequency via stacked dots; cropped scale zooms in to show small differences."
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch5",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 6,
-      "level": "Level 3 (Hard)",
-      "question_type": "Give Reasons / Critical Thinking",
-      "question_text": "Differentiate between how an extreme outlier value affects the Arithmetic Mean versus the Median of a dataset.",
-      "options": [],
-      "correct_answer": "Outliers significantly distort/pull the mean, while median remains virtually unchanged.",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Because the arithmetic mean includes every value in its summation ((∑ x)/N), a single extreme outlier heavily inflates or deflates the sum and mean. In contrast, the median depends only on positional ordering; extreme values at either tail do not alter the middle position value.",
-        "step3_final_answer": "Outliers significantly distort/pull the mean, while median remains virtually unchanged."
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch5",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 7,
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question_text": "A clothing store surveyed pocket counts on garments: Boys' clothes: {2, 3, 4, 4, 5, 5, 5, 6, 7}; Girls' clothes: {0, 1, 2, 2, 2, 3, 4}. (a) Calculate median pocket count for boys and girls. (b) Compare data variability between the two groups.",
-      "options": [],
-      "correct_answer": "(a) Boys median = 5, Girls median = 2; (b) Boys range = 5, Girls range = 4 (Boys data shifted higher)",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "(a) Boys (N=9, odd): 5th value = 5 pockets. Girls (N=7, odd): 4th value = 2 pockets. (b) Boys range = 7 - 2 = 5; Girls range = 4 - 0 = 4. Boys' clothing centers around significantly higher pocket counts with slightly higher spread.",
-        "step3_final_answer": "(a) Boys median = 5, Girls median = 2; (b) Boys range = 5, Girls range = 4 (Boys data shifted higher)"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch5",
-        "target_region": "main"
-      }
-    }
-  ]
-}
+  {
+    "question": "17 students heights (cm): 106, 110, 123, 125, 117, 120, 112, 115, 110, 120, 115, 102, 115, 115, 109, 115, 101. Divide into 2 equal groups above and below a height.",
+    "options": [
+      "Sort heights: 101, 102, 106, 109, 110, 110, 112, 115, 115, 115, 115, 115, 117, 120, 120, 123, 125.\nTotal N = 17. Median ",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Sort heights: 101, 102, 106, 109, 110, 110, 112, 115, 115, 115, 115, 115, 117, 120, 120, 123, 125.\nTotal N = 17. Median = 9th term = 115 cm.\nGroup 1: 8 students with height < 115 cm.\nGroup 2: 8 students with height > 115 cm (or ≥ 115 cm)."
+  },
+  {
+    "question": "Based on extract 'Find the mean and median in Poovizhi's data without the outlier value 118. What change do you notice?': How does removing an outlier affect mean versus median?",
+    "options": [
+      "Removing an outlier shifts the mean significantly toward the remaining cluster, while the median changes very little or ",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Removing an outlier shifts the mean significantly toward the remaining cluster, while the median changes very little or stays nearly constant."
+  },
+  {
+    "question": "The median of a dataset is always one of the numbers given in the raw data.",
+    "options": [
+      "False. Reason: If dataset has an even number of observations, median is the mean of two middle numbers, which might not ",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "False. Reason: If dataset has an even number of observations, median is the mean of two middle numbers, which might not be an original data value."
+  },
+  {
+    "question": "Find the mean of the first five prime numbers.",
+    "options": [
+      "First 5 prime numbers: 2, 3, 5, 7, 11. Sum = 2 + 3 + 5 + 7 + 11 = 28. Mean = 28 / 5 = 5.6.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "First 5 prime numbers: 2, 3, 5, 7, 11. Sum = 2 + 3 + 5 + 7 + 11 = 28. Mean = 28 / 5 = 5.6."
+  },
+  {
+    "question": "Analytical Application: Find the mean of the first five prime numbers.",
+    "options": [
+      "First 5 prime numbers: 2, 3, 5, 7, 11. Sum = 2 + 3 + 5 + 7 + 11 = 28. Mean = 28 / 5 = 5.6.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "First 5 prime numbers: 2, 3, 5, 7, 11. Sum = 2 + 3 + 5 + 7 + 11 = 28. Mean = 28 / 5 = 5.6."
+  },
+  {
+    "question": "The mean mark of 6 students in a test is 18. If one student's mark of 8 is excluded, what is the new mean of the remaining 5 students?",
+    "options": [
+      "Original total marks = Mean × N = 18 × 6 = 108.\nNew total marks after excluding 8 = 108 - 8 = 100.\nNew number of student",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Original total marks = Mean × N = 18 × 6 = 108.\nNew total marks after excluding 8 = 108 - 8 = 100.\nNew number of students = 5.\nNew mean = 100 / 5 = 20."
+  }
+]

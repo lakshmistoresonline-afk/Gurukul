@@ -1,158 +1,57 @@
-{
-  "chapter_number": 8,
-  "chapter_title": "Predicting What Comes Next: Exploring Sequences and Progressions",
-  "questions": [
-    {
-      "question_id": "C8_L1_01",
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question": "What is the common difference 'd' of the Arithmetic Progression (AP): -5, -1, 3, 7, 11...?",
-      "options": [
-        "A) -4",
-        "B) 4",
-        "C) 3",
-        "D) -5"
-      ],
-      "correct_answer": "B) 4",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "Common difference d = t_2 - t_1 = -1 - (-5) = -1 + 5 = 4.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 8",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch8_sequences_progressions.png",
-        "target_hotspot_id": "hs_triangular_dots"
-      }
-    },
-    {
-      "question_id": "C8_L1_02",
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blank",
-      "question": "The formula for the nth term t_n of an Arithmetic Progression with first term 'a' and common difference 'd' is given by ________.",
-      "options": [],
-      "correct_answer": "a + (n - 1)d",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "By definition, each successive term in an AP adds d to the preceding term, giving the explicit position formula t_n = a + (n - 1)d.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 8",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch8_sequences_progressions.png",
-        "target_hotspot_id": "hs_triangular_dots"
-      }
-    },
-    {
-      "question_id": "C8_L1_03",
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question": "True or False: The sequence 3, 6, 12, 24, 48... is an Arithmetic Progression with common difference d = 3.",
-      "options": [],
-      "correct_answer": "False",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "False. The difference between consecutive terms is not constant (6-3=3, 12-6=6, 24-12=12). Instead, the ratio between consecutive terms is constant (6/3 = 12/6 = 2), making it a Geometric Progression (GP) with common ratio r = 2.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 8",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch8_sequences_progressions.png",
-        "target_hotspot_id": "hs_triangular_dots"
-      }
-    },
-    {
-      "question_id": "C8_L2_01",
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question": "Which term of the AP 3, 8, 13, 18... is equal to 78?",
-      "options": [],
-      "correct_answer": "16th term",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "Here first term a = 3, common difference d = 8 - 3 = 5, and t_n = 78.\nUsing t_n = a + (n - 1)d:\n78 = 3 + (n - 1) * 5\n75 = (n - 1) * 5 => n - 1 = 15 => n = 16.\nThus, the 16th term is 78.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 8",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch8_sequences_progressions.png",
-        "target_hotspot_id": "hs_triangular_dots"
-      }
-    },
-    {
-      "question_id": "C8_L2_02",
-      "level": "Level 2 (Medium)",
-      "question_type": "Pattern Analysis",
-      "question": "The n-th triangular number is given by T_n = n(n+1)/2. (a) Calculate T_4 and T_5. (b) Verify that T_4 + T_5 forms a perfect square number.",
-      "options": [],
-      "correct_answer": "(a) T_4 = 10, T_5 = 15; (b) T_4 + T_5 = 25 = 5^2",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "(a) T_4 = 4(5)/2 = 10; T_5 = 5(6)/2 = 15.\n(b) T_4 + T_5 = 10 + 15 = 25, which is equal to 5^2 (a perfect square).",
-        "key_formula_used": "Standard Theorem / Formula for Ch 8",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch8_sequences_progressions.png",
-        "target_hotspot_id": "hs_triangular_dots"
-      }
-    },
-    {
-      "question_id": "C8_L3_01",
-      "level": "Level 3 (Hard)",
-      "question_type": "Critical Thinking & System Solving",
-      "question": "The 3rd term of an AP is 7 and the 7th term is 19. Determine: (a) the first term 'a', (b) the common difference 'd', and (c) the sum of the first 15 terms S_15.",
-      "options": [],
-      "correct_answer": "(a) a = 1, (b) d = 3, (c) S_15 = 330",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "1. t_3 = a + 2d = 7 (Eq 1)\n2. t_7 = a + 6d = 19 (Eq 2)\n3. Subtract Eq 1 from Eq 2: 4d = 12 => d = 3.\n4. Substitute d = 3 into Eq 1: a + 2(3) = 7 => a + 6 = 7 => a = 1.\n5. Sum S_15 = (n/2) * [2a + (n-1)d] = (15/2) * [2(1) + 14(3)] = (15/2) * [2 + 42] = (15/2) * 44 = 15 * 22 = 330.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 8",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch8_sequences_progressions.png",
-        "target_hotspot_id": "hs_triangular_dots"
-      }
-    },
-    {
-      "question_id": "C8_L3_02",
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question": "A financial savings scheme involves depositing Rs. 1000 in the first month and increasing the deposit by Rs. 200 in each subsequent month. (i) How much is deposited in the 12th month? (ii) What is the total accumulated deposit after 1 year (12 months)?",
-      "options": [],
-      "correct_answer": "(i) Rs. 3200, (ii) Rs. 25,200",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "This forms an AP with a = 1000, d = 200, and n = 12.\n(i) 12th month deposit t_12 = a + 11d = 1000 + 11(200) = 1000 + 2200 = Rs. 3200.\n(ii) Total accumulated deposit S_12 = (n/2) * [a + l] = (12/2) * [1000 + 3200] = 6 * 4200 = Rs. 25,200.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 8",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch8_sequences_progressions.png",
-        "target_hotspot_id": "hs_triangular_dots"
-      }
-    }
-  ]
-}
+[
+  {
+    "question": "Which term of the AP 3, 8, 13, 18... is 78?",
+    "options": [
+      "a = 3, d = 5. 78 = 3 + (n-1)*5 => 75 = 5*(n-1) => n-1 = 15 => n = 16th term.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "a = 3, d = 5. 78 = 3 + (n-1)*5 => 75 = 5*(n-1) => n-1 = 15 => n = 16th term."
+  },
+  {
+    "question": "What is the common difference of the AP: -5, -1, 3, 7...",
+    "options": [
+      "Correct concept application",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "B"
+  },
+  {
+    "question": "Find the sum of first 20 natural numbers.",
+    "options": [
+      "S_20 = 20 * 21 / 2 = 10 * 21 = 210.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "S_20 = 20 * 21 / 2 = 10 * 21 = 210."
+  },
+  {
+    "question": "In a bacterial culture, population doubles every hour starting from 100. Find population after 8 hours.",
+    "options": [
+      "GP with a = 100, r = 2. t_9 = 100 * 2^8 = 100 * 256 = 25,600 bacteria.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "GP with a = 100, r = 2. t_9 = 100 * 2^8 = 100 * 256 = 25,600 bacteria."
+  },
+  {
+    "question": "The 3rd term of an AP is 7 and the 7th term is 19. Find 'a', 'd', and 15th term.",
+    "options": [
+      "1. a + 2d = 7 (Eq 1)\n2. a + 6d = 19 (Eq 2)\n3. Subtract: 4d = 12 => d = 3.\n4. Substitute: a + 6 = 7 => a = 1.\n5. 15th ter",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "1. a + 2d = 7 (Eq 1)\n2. a + 6d = 19 (Eq 2)\n3. Subtract: 4d = 12 => d = 3.\n4. Substitute: a + 6 = 7 => a = 1.\n5. 15th term t_15 = 1 + 14(3) = 43."
+  }
+]

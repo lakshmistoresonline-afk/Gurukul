@@ -1,178 +1,79 @@
-{
-  "chapter_number": 1,
-  "chapter_title": "Geometric Twins",
-  "image_asset": {
-    "asset_id": "img_ch1",
-    "chapter_number": 1,
-    "title": "Triangle Congruence Criteria Diagram",
-    "url": "/assets/images/ch1_triangle_congruence.png",
-    "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
-    "hotspots": [
-      {
-        "x_percent": 10,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SSS Criterion",
-        "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
-      },
-      {
-        "x_percent": 55,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SAS Criterion",
-        "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
-      },
-      {
-        "x_percent": 10,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "ASA Criterion",
-        "popover_text": "Angle-Side-Angle: Two angles and included side align."
-      },
-      {
-        "x_percent": 55,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "RHS Criterion",
-        "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
-      }
-    ]
+[
+  {
+    "question": "Suppose ΔHEN is congruent to ΔBIG. List all the other correct ways of expressing this congruence.",
+    "options": [
+      "The corresponding vertices are H↔B, E↔I, N↔G. The 6 valid permutations maintaining correspondence are: ΔHEN ≅ ΔBIG, ΔHNE",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "The corresponding vertices are H↔B, E↔I, N↔G. The 6 valid permutations maintaining correspondence are: ΔHEN ≅ ΔBIG, ΔHNE ≅ ΔBGI, ΔEHN ≅ ΔIBG, ΔENH ≅ ΔIGB, ΔNHE ≅ ΔGBI, ΔNEH ≅ ΔGIB."
   },
-  "questions": [
-    {
-      "question_id": 1,
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question_text": "Which of the following is NOT a sufficient condition for guaranteeing triangle congruence?",
-      "options": [
-        "A) SSS (Side-Side-Side)",
-        "B) SAS (Side-Angle-Side)",
-        "C) AAA (Angle-Angle-Angle)",
-        "D) RHS (Right-Hypotenuse-Side)"
-      ],
-      "correct_answer": "C) AAA (Angle-Angle-Angle)",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "AAA guarantees that two triangles have the exact same shape (similarity), but it does not guarantee that they have the same size. For example, an equilateral triangle with side length 2 cm and another with side length 10 cm both have angles of 60°, but they are not congruent.",
-        "step3_final_answer": "C) AAA (Angle-Angle-Angle)"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 2,
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blanks",
-      "question_text": "If ΔHEN ≅ ΔBIG, then vertex H corresponds to vertex _____, and side EN corresponds to side _____.",
-      "options": [],
-      "correct_answer": "vertex B; side IG",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In congruence notation ΔHEN ≅ ΔBIG, the order of letters specifies exact vertex correspondence: H↔B, E↔I, N↔G. Therefore, side EN corresponds to side IG.",
-        "step3_final_answer": "vertex B; side IG"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 3,
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question_text": "True or False: Any two equilateral triangles are always congruent to each other.",
-      "options": [],
-      "correct_answer": "False",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "False. While all equilateral triangles have equal angles measuring 60° (satisfying AAA), their side lengths can differ. Congruence requires both identical shape and identical size.",
-        "step3_final_answer": "False"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 4,
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question_text": "In an isosceles triangle ΔABC, side AB = AC and vertex angle ∠A = 40°. Calculate the measures of base angles ∠B and ∠C.",
-      "options": [],
-      "correct_answer": "∠B = 70° and ∠C = 70°",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In ΔABC, since AB = AC, the angles opposite to them are equal, so ∠B = ∠C. The sum of interior angles in a triangle is 180°. Therefore, ∠A + ∠B + ∠C = 180° ⇒ 40° + 2(∠B) = 180° ⇒ 2(∠B) = 140° ⇒ ∠B = 70° and ∠C = 70°.",
-        "step3_final_answer": "∠B = 70° and ∠C = 70°"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 5,
-      "level": "Level 2 (Medium)",
-      "question_type": "Structural Analysis",
-      "question_text": "In quadrilateral ABCD, diagonal AC bisects ∠BAD and AB = AD. Prove that ΔABC ≅ ΔADC using a suitable congruence criterion.",
-      "options": [],
-      "correct_answer": "ΔABC ≅ ΔADC by SAS Criterion",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In ΔABC and ΔADC: 1) AB = AD (Given). 2) ∠BAC = ∠DAC (Since AC bisects ∠BAD). 3) AC = AC (Common side). By the SAS (Side-Angle-Side) criterion, two sides and the included angle of ΔABC equal two sides and the included angle of ΔADC, so ΔABC ≅ ΔADC.",
-        "step3_final_answer": "ΔABC ≅ ΔADC by SAS Criterion"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 6,
-      "level": "Level 3 (Hard)",
-      "question_type": "Give Reasons / Critical Thinking",
-      "question_text": "Explain why the SSA (Side-Side-Angle) condition is generally invalid for proving triangle congruence, and identify the special case where SSA does guarantee congruence.",
-      "options": [],
-      "correct_answer": "SSA allows two non-congruent triangles with same 2 sides and non-included angle; RHS is the special right-angled case.",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In general, given two sides and a non-included angle, a compass arc can intersect the third side at two distinct points, creating two non-congruent triangles (one acute and one obtuse). The special exception occurs in right-angled triangles where the non-included angle is 90°; here, by Pythagoras Theorem, the third side is fixed uniquely, establishing the RHS criterion.",
-        "step3_final_answer": "SSA allows two non-congruent triangles with same 2 sides and non-included angle; RHS is the special right-angled case."
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 7,
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question_text": "An engineer designs a bridge truss containing two triangular support frames ΔPQS and ΔRQS on opposite sides of a central vertical beam QS. Given that PQ = RQ = 15 m, ∠PQS = ∠RQS = 35°, and PS = 12 m. (a) Prove that ΔPQS ≅ ΔRQS. (b) Determine the exact length of frame segment RS.",
-      "options": [],
-      "correct_answer": "(a) ΔPQS ≅ ΔRQS by SAS; (b) RS = 12 m",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "(a) In ΔPQS and ΔRQS: PQ = RQ = 15 m (Given), ∠PQS = ∠RQS = 35° (Given), and QS = QS (Common side). By SAS criterion, ΔPQS ≅ ΔRQS. (b) Since corresponding parts of congruent triangles (CPCT) are equal, RS = PS = 12 m.",
-        "step3_final_answer": "(a) ΔPQS ≅ ΔRQS by SAS; (b) RS = 12 m"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    }
-  ]
-}
+  {
+    "question": "In a figure with AB = AD and CB = CD, identify congruent triangles and check if AC bisects ∠BAD and ∠BCD.",
+    "options": [
+      "In ΔABC and ΔADC: AB = AD (Given), CB = CD (Given), AC = AC (Common side). By SSS criterion, ΔABC ≅ ΔADC. Since correspo",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "In ΔABC and ΔADC: AB = AD (Given), CB = CD (Given), AC = AC (Common side). By SSS criterion, ΔABC ≅ ΔADC. Since corresponding angles are equal (CPCT), ∠BAC = ∠DAC and ∠BCA = ∠DCA. Therefore, AC bisects both ∠BAD and ∠BCD."
+  },
+  {
+    "question": "Based on extract 'When two triangles have the same sidelengths, we say that the SSS condition is satisfied. The SSS condition guarantees congruence.': What does SSS stand for and what does it ensure?",
+    "options": [
+      "SSS stands for Side-Side-Side condition. It ensures that two triangles with identical side lengths are completely congru",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "SSS stands for Side-Side-Side condition. It ensures that two triangles with identical side lengths are completely congruent."
+  },
+  {
+    "question": "Which of the following is NOT a sufficient condition for triangle congruence? (a) SSS (b) SAS (c) AAA (d) RHS",
+    "options": [
+      "(c) AAA. Reason: AAA ensures equal shape but not equal size.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(c) AAA. Reason: AAA ensures equal shape but not equal size."
+  },
+  {
+    "question": "Given ΔABC where AB = AC and ∠A = 40°. Find ∠B and ∠C.",
+    "options": [
+      "Since AB = AC, the angles opposite to them are equal: ∠B = ∠C. Sum of angles in ΔABC = 180° ⇒ 40° + ∠B + ∠C = 180° ⇒ 2∠B",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Since AB = AC, the angles opposite to them are equal: ∠B = ∠C. Sum of angles in ΔABC = 180° ⇒ 40° + ∠B + ∠C = 180° ⇒ 2∠B = 140° ⇒ ∠B = 70° and ∠C = 70°."
+  },
+  {
+    "question": "Analytical Application: Given ΔABC where AB = AC and ∠A = 40°. Find ∠B and ∠C.",
+    "options": [
+      "Since AB = AC, the angles opposite to them are equal: ∠B = ∠C. Sum of angles in ΔABC = 180° ⇒ 40° + ∠B + ∠C = 180° ⇒ 2∠B",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Since AB = AC, the angles opposite to them are equal: ∠B = ∠C. Sum of angles in ΔABC = 180° ⇒ 40° + ∠B + ∠C = 180° ⇒ 2∠B = 140° ⇒ ∠B = 70° and ∠C = 70°."
+  },
+  {
+    "question": "In right-angled ΔABC (∠B = 90°) and ΔPQR (∠Q = 90°), AC = 10 cm, BC = 6 cm, PR = 10 cm, QR = 6 cm. Prove ΔABC ≅ ΔPQR and find AB if PQ = 8 cm.",
+    "options": [
+      "In right ΔABC and ΔPQR: ∠B = ∠Q = 90°, Hypotenuse AC = PR = 10 cm, Side BC = QR = 6 cm. By RHS criterion, ΔABC ≅ ΔPQR. B",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "In right ΔABC and ΔPQR: ∠B = ∠Q = 90°, Hypotenuse AC = PR = 10 cm, Side BC = QR = 6 cm. By RHS criterion, ΔABC ≅ ΔPQR. By CPCT, corresponding side AB = PQ = 8 cm."
+  }
+]

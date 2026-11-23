@@ -1,122 +1,90 @@
-{
-  "chapter_number": 1,
-  "chapter_title": "Large Numbers Around Us",
-  "quiz_config": {
-    "timer_seconds": 600,
-    "total_questions": 4,
-    "passing_score_percent": 75
+[
+  {
+    "question": "What is the core theme of Large Numbers Around Us in Class7 MathsI?",
+    "options": [
+      "Explores the sense of scale and place value magnitude across lakhs, crores, millions, and billions. Anchors numerical concepts in real-world",
+      "To memorize text without understanding core principles",
+      "To skip fundamental textbook exercises",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Understanding Large Numbers Around Us develops foundational analytical skills and subject mastery."
   },
-  "questions": [
-    {
-      "question_id": 1,
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question": "How many Lakhs are equal to 1 Million in the International System of Numeration?",
-      "options": [
-        "A) 1 Lakh",
-        "B) 10 Lakhs",
-        "C) 100 Lakhs",
-        "D) 1000 Lakhs"
-      ],
-      "correct_answer": "B) 10 Lakhs",
-      "hint_modal": "Recall core principles from Chapter 1: 1 Million = 1,000,000. In the Indian System, 10 Lakhs = 10 *...",
-      "solution_key": {
-        "part1_given": "Given problem context from Chapter 1",
-        "part2_method": "Apply exact mathematical formula or logical deduction step",
-        "part3_conclusion": "1 Million = 1,000,000. In the Indian System, 10 Lakhs = 10 * 100,000 = 1,000,000. Thus, 1 Million equals 10 Lakhs."
-      }
-    },
-    {
-      "question_id": 2,
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blank",
-      "question": "In power-of-ten exponential notation, 1 Crore is represented as ____.",
-      "options": [],
-      "correct_answer": "10^7",
-      "hint_modal": "Recall core principles from Chapter 1: 1 Crore = 1,00,00,000, which has 7 zeros following 1, so it ...",
-      "solution_key": {
-        "part1_given": "Given problem context from Chapter 1",
-        "part2_method": "Apply exact mathematical formula or logical deduction step",
-        "part3_conclusion": "1 Crore = 1,00,00,000, which has 7 zeros following 1, so it is written as 10^7."
-      }
-    },
-    {
-      "question_id": 3,
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer / Calculation",
-      "question": "Using the factor decomposition shortcut method, calculate 824 * 25 step by step.",
-      "options": [],
-      "correct_answer": "20,600",
-      "hint_modal": "Recall core principles from Chapter 1: Since 25 = 100 / 4, we quarter the number 824 and scale by 1...",
-      "solution_key": {
-        "part1_given": "Given problem context from Chapter 1",
-        "part2_method": "Apply exact mathematical formula or logical deduction step",
-        "part3_conclusion": "Since 25 = 100 / 4, we quarter the number 824 and scale by 100: Step 1: 824 / 4 = 206. Step 2: 206 * 100 = 20,600."
-      }
-    },
-    {
-      "question_id": 4,
-      "level": "Level 3 (Hard)",
-      "question_type": "Critical Thinking & Reasoning",
-      "question": "If natural numbers 1, 2, 3, ... are written sequentially (123456789101112...), determine the exact digit present at position 100.",
-      "options": [],
-      "correct_answer": "5",
-      "hint_modal": "Recall core principles from Chapter 1: Single-digit numbers 1-9 occupy 9 positions. Remaining posit...",
-      "solution_key": {
-        "part1_given": "Given problem context from Chapter 1",
-        "part2_method": "Apply exact mathematical formula or logical deduction step",
-        "part3_conclusion": "Single-digit numbers 1-9 occupy 9 positions. Remaining positions needed = 100 - 9 = 91 positions. Two-digit numbers occupy 2 positions each: 91 / 2 = 45 complete numbers with a remainder of 1 position. The 45th two-digit number after 9 is 9 + 45 = 54. The next two-digit number is 55. The 1st digit of 55 is '5', which sits at the 100th digit position."
-      }
-    }
-  ],
-  "image_asset": {
-    "asset_id": "ch1_place_value_shortcuts",
-    "chapter_number": 1,
-    "chapter_title": "Large Numbers Around Us",
-    "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
-    "file_name": "ch1_place_value_shortcuts.png",
-    "local_url": "/assets/images/ch1_place_value_shortcuts.png",
-    "aspect_ratio": "16:9",
-    "width_px": 1600,
-    "height_px": 900,
-    "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
-    "hotspots": [
-      {
-        "hotspot_id": "hs_1_1",
-        "title": "Indian Place Value System",
-        "x_percent": 3.125,
-        "y_percent": 53.33,
-        "w_percent": 45.0,
-        "h_percent": 32.22,
-        "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
-      },
-      {
-        "hotspot_id": "hs_1_2",
-        "title": "International Place Value System",
-        "x_percent": 51.875,
-        "y_percent": 53.33,
-        "w_percent": 45.0,
-        "h_percent": 32.22,
-        "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
-      },
-      {
-        "hotspot_id": "hs_1_3",
-        "title": "Factor Shortcuts (x5 and x25)",
-        "x_percent": 3.125,
-        "y_percent": 11.11,
-        "w_percent": 45.0,
-        "h_percent": 37.78,
-        "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
-      },
-      {
-        "hotspot_id": "hs_1_4",
-        "title": "Sequential Digit Position Analytics",
-        "x_percent": 51.875,
-        "y_percent": 11.11,
-        "w_percent": 45.0,
-        "h_percent": 37.78,
-        "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
-      }
-    ]
+  {
+    "question": "Which principle best describes Concept 1 in Large Numbers Around Us?",
+    "options": [
+      "Intuitive Benchmarking of Magnitude & Biodiversity Scale",
+      "Contradicts fundamental scientific and mathematical laws",
+      "Irrelevant to chapter learning objectives",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Mastering Concept 1 strengthens conceptual understanding in Large Numbers Around Us."
+  },
+  {
+    "question": "Which principle best describes Concept 2 in Large Numbers Around Us?",
+    "options": [
+      "Population Shift Analysis & Difference Calculations",
+      "Contradicts fundamental scientific and mathematical laws",
+      "Irrelevant to chapter learning objectives",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Mastering Concept 2 strengthens conceptual understanding in Large Numbers Around Us."
+  },
+  {
+    "question": "Which principle best describes Concept 3 in Large Numbers Around Us?",
+    "options": [
+      "Number Decomposition via Restricted Calculator Operations",
+      "Contradicts fundamental scientific and mathematical laws",
+      "Irrelevant to chapter learning objectives",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Mastering Concept 3 strengthens conceptual understanding in Large Numbers Around Us."
+  },
+  {
+    "question": "Which principle best describes Concept 4 in Large Numbers Around Us?",
+    "options": [
+      "Least Button-Click Optimization & Place Value Connection",
+      "Contradicts fundamental scientific and mathematical laws",
+      "Irrelevant to chapter learning objectives",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Mastering Concept 4 strengthens conceptual understanding in Large Numbers Around Us."
+  },
+  {
+    "question": "What is the definition of 'Land of Tens' in Large Numbers Around Us?",
+    "options": [
+      "A conceptual learning framework where place value structure is explored using special calculators with restricted operational buttons (+10, ",
+      "An unrelated general vocabulary word",
+      "An outdated historical phrase",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "'Land of Tens' is defined as: A conceptual learning framework where place value structure is explored using special calculators with restricted operational buttons (+10, +100, +1000, etc.)."
+  },
+  {
+    "question": "What is the definition of 'Systematic Sippy' in Large Numbers Around Us?",
+    "options": [
+      "A minimalist calculator puzzle model designed to find the exact minimum number of button presses required to generate a given number.",
+      "An unrelated general vocabulary word",
+      "An outdated historical phrase",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "'Systematic Sippy' is defined as: A minimalist calculator puzzle model designed to find the exact minimum number of button presses required to generate a given number."
+  },
+  {
+    "question": "What is the definition of 'Thoughtful Thousands' in Large Numbers Around Us?",
+    "options": [
+      "A restricted calculator model possessing only a +1000 button, used to teach place value decomposition into multiples of one thousand.",
+      "An unrelated general vocabulary word",
+      "An outdated historical phrase",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "'Thoughtful Thousands' is defined as: A restricted calculator model possessing only a +1000 button, used to teach place value decomposition into multiples of one thousand."
   }
-}
+]

@@ -1,158 +1,57 @@
-{
-  "chapter_number": 6,
-  "chapter_title": "Measuring Space: Perimeter and Area",
-  "questions": [
-    {
-      "question_id": "C6_L1_01",
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question": "What is the formula for Heron's area of a triangle with side lengths a, b, c and semi-perimeter s = (a+b+c)/2?",
-      "options": [
-        "A) s(s-a)(s-b)(s-c)",
-        "B) sqrt(s(s-a)(s-b)(s-c))",
-        "C) (1/2) * s * (a+b+c)",
-        "D) sqrt(a^2 + b^2 + c^2)"
-      ],
-      "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "Heron's formula states that Area = sqrt(s(s-a)(s-b)(s-c)), where s is the semi-perimeter.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 6",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch6_sector_segment_track.png",
-        "target_hotspot_id": "hs_sector"
-      }
-    },
-    {
-      "question_id": "C6_L1_02",
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blank",
-      "question": "The area of a circular sector with radius r and central angle theta (in degrees) is given by the expression ________.",
-      "options": [],
-      "correct_answer": "(theta / 360) * pi * r^2",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "A sector is a fractional part of the circle corresponding to the central angle ratio (theta / 360 degrees) multiplied by total circle area (pi * r^2).",
-        "key_formula_used": "Standard Theorem / Formula for Ch 6",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch6_sector_segment_track.png",
-        "target_hotspot_id": "hs_sector"
-      }
-    },
-    {
-      "question_id": "C6_L1_03",
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question": "True or False: If the perimeter of a circle and the area of a circle are numerically equal, the radius of the circle must be 2 units.",
-      "options": [],
-      "correct_answer": "True",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "True. Setting Circumference = Area gives 2 * pi * r = pi * r^2. Dividing both sides by pi * r (for r != 0) yields r = 2 units.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 6",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch6_sector_segment_track.png",
-        "target_hotspot_id": "hs_sector"
-      }
-    },
-    {
-      "question_id": "C6_L2_01",
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question": "Calculate the area of a triangular plot of land with sides measuring 13 m, 14 m, and 15 m using Heron's formula.",
-      "options": [],
-      "correct_answer": "84 sq m",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "1. Semi-perimeter s = (13 + 14 + 15) / 2 = 42 / 2 = 21 m.\n2. s - a = 21 - 13 = 8; s - b = 21 - 14 = 7; s - c = 21 - 15 = 6.\n3. Area = sqrt(21 * 8 * 7 * 6) = sqrt((7*3) * (4*2) * 7 * (3*2)) = sqrt(7^2 * 3^2 * 4^2) = 7 * 3 * 4 = 84 sq m.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 6",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch6_sector_segment_track.png",
-        "target_hotspot_id": "hs_sector"
-      }
-    },
-    {
-      "question_id": "C6_L2_02",
-      "level": "Level 2 (Medium)",
-      "question_type": "Structural Analysis",
-      "question": "A clock minute hand is 14 cm long. Calculate the area swept by the minute hand in 5 minutes (take pi = 22/7).",
-      "options": [],
-      "correct_answer": "51.33 sq cm (or 154/3 sq cm)",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "1. In 60 minutes, minute hand completes 360 degrees. In 5 minutes, angle theta = (360 / 60) * 5 = 30 degrees.\n2. Sector Area = (theta / 360) * pi * r^2 = (30 / 360) * (22/7) * 14^2 = (1/12) * (22/7) * 196 = (1/12) * 22 * 28 = 616 / 12 = 154 / 3 sq cm = 51.33 sq cm.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 6",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch6_sector_segment_track.png",
-        "target_hotspot_id": "hs_sector"
-      }
-    },
-    {
-      "question_id": "C6_L3_01",
-      "level": "Level 3 (Hard)",
-      "question_type": "Critical Thinking & Geometry",
-      "question": "A park is shaped like a trapezium ABCD with parallel sides AB = 25 m and CD = 10 m, and non-parallel sides BC = 14 m and AD = 13 m. Calculate the total area of the park.",
-      "options": [],
-      "correct_answer": "196 sq m",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "1. Draw line CE parallel to AD meeting AB at E. Then AECD is a parallelogram with AE = 10 m, CE = 13 m, and CD = 10 m.\n2. Remaining segment EB = AB - AE = 25 - 10 = 15 m.\n3. Triangle CEB has sides 13 m, 14 m, and 15 m. Its area (by Heron's formula) is 84 sq m.\n4. Height h of triangle CEB: (1/2) * base * h = 84 => (1/2) * 15 * h = 84 => h = 168 / 15 = 11.2 m.\n5. Area of Trapezium = (1/2) * (sum of parallel sides) * height = (1/2) * (25 + 10) * 11.2 = (1/2) * 35 * 11.2 = 196 sq m.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 6",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch6_sector_segment_track.png",
-        "target_hotspot_id": "hs_sector"
-      }
-    },
-    {
-      "question_id": "C6_L3_02",
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question": "A circular running track has an outer radius of R = 21 m and an inner radius of r = 14 m. (i) Calculate the surface area of the running track. (ii) Calculate the total outer boundary fence length.",
-      "options": [],
-      "correct_answer": "(i) 770 sq m, (ii) 132 m",
-      "hint_modal": {
-        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
-        "penalty_points": 2
-      },
-      "solution_key_3part": {
-        "step_by_step_explanation": "(i) Track Area = pi * (R^2 - r^2) = (22/7) * (21^2 - 14^2) = (22/7) * (441 - 196) = (22/7) * 245 = 22 * 35 = 770 sq m.\n(ii) Outer Fence Length = Circumference = 2 * pi * R = 2 * (22/7) * 21 = 2 * 22 * 3 = 132 m.",
-        "key_formula_used": "Standard Theorem / Formula for Ch 6",
-        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
-      },
-      "hotspot_choice": {
-        "referenced_image_url": "/assets/images/ch6_sector_segment_track.png",
-        "target_hotspot_id": "hs_sector"
-      }
-    }
-  ]
-}
+[
+  {
+    "question": "Find the area of a triangular field with sides 13 m, 14 m, and 15 m.",
+    "options": [
+      "s = (13 + 14 + 15)/2 = 21 m. Area = sqrt(21 * 8 * 7 * 6) = sqrt(7056) = 84 sq m.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "s = (13 + 14 + 15)/2 = 21 m. Area = sqrt(21 * 8 * 7 * 6) = sqrt(7056) = 84 sq m."
+  },
+  {
+    "question": "If the perimeter of a circle equals its area numerically, what is radius r?",
+    "options": [
+      "Correct concept application",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "B"
+  },
+  {
+    "question": "Find the area of an equilateral triangle of side 8 cm.",
+    "options": [
+      "Area = (sqrt(3)/4) * 8^2 = 16*sqrt(3) sq cm.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Area = (sqrt(3)/4) * 8^2 = 16*sqrt(3) sq cm."
+  },
+  {
+    "question": "A clock minute hand is 14 cm long. Find area swept in 5 minutes.",
+    "options": [
+      "theta = (360/60)*5 = 30 deg. Area = (30/360) * (22/7) * 14^2 = 154 / 3 = 51.33 sq cm.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "theta = (360/60)*5 = 30 deg. Area = (30/360) * (22/7) * 14^2 = 154 / 3 = 51.33 sq cm."
+  },
+  {
+    "question": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its area.",
+    "options": [
+      "1. Draw parallelogram inside trapezium with sides 10m and 13m. Remaining base = 25 - 10 = 15m.\n2. Triangular portion has",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "1. Draw parallelogram inside trapezium with sides 10m and 13m. Remaining base = 25 - 10 = 15m.\n2. Triangular portion has sides 13m, 14m, 15m. Area = 84 sq m (by Heron's formula).\n3. Height h of triangle: 1/2 * 15 * h = 84 => h = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m."
+  }
+]

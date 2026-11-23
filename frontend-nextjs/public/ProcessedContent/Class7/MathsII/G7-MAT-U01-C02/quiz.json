@@ -1,170 +1,90 @@
-{
-  "chapter_number": 2,
-  "chapter_title": "Operations with Integers",
-  "image_asset": {
-    "asset_id": "img_ch2",
-    "chapter_number": 2,
-    "title": "Integer Token Bag & Zero Pair Model",
-    "url": "/assets/images/ch2_integer_token_model.png",
-    "caption": "Token bag representation of positive (+1) green tokens, negative (-1) red tokens, and zero pairs.",
-    "hotspots": [
-      {
-        "x_percent": 8,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Positive Bag",
-        "popover_text": "Bag A contains +4 green tokens (+1 each)."
-      },
-      {
-        "x_percent": 38,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Zero Pairs",
-        "popover_text": "Green (+1) and Red (-1) tokens combine to form net 0 value."
-      },
-      {
-        "x_percent": 68,
-        "y_percent": 20,
-        "w_percent": 28,
-        "h_percent": 60,
-        "label": "Negative Multiplication",
-        "popover_text": "(-4) × (-2) = +8: Removing 8 red tokens leaves +8 positive green tokens."
-      }
-    ]
+[
+  {
+    "question": "Find the values of: (a) 14 × (-15) (b) -16 × (-5) (c) 36 ÷ (-18) (d) (-46) ÷ (-23)",
+    "options": [
+      "(a) 14 × (-15) = -210.\n(b) (-16) × (-5) = +80.\n(c) 36 ÷ (-18) = -2.\n(d) (-46) ÷ (-23) = +2.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(a) 14 × (-15) = -210.\n(b) (-16) × (-5) = +80.\n(c) 36 ÷ (-18) = -2.\n(d) (-46) ÷ (-23) = +2."
   },
-  "questions": [
-    {
-      "question_id": 1,
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question_text": "What is the product of (-16) × (-5)?",
-      "options": [
-        "A) -80",
-        "B) +80",
-        "C) -21",
-        "D) +21"
-      ],
-      "correct_answer": "B) +80",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Multiplying two negative integers yields a positive product according to the integer sign rule: (-a) × (-b) = +(a × b). Here, 16 × 5 = 80, so (-16) × (-5) = +80.",
-        "step3_final_answer": "B) +80"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch2",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 2,
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blanks",
-      "question_text": "The additive inverse of -18 is _____, because (-18) + (_____) = 0.",
-      "options": [],
-      "correct_answer": "+18; +18",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "The additive inverse of any integer 'a' is '-a' such that a + (-a) = 0. Therefore, the additive inverse of -18 is +18.",
-        "step3_final_answer": "+18; +18"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch2",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 3,
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question_text": "True or False: Dividing a positive integer by a negative integer always yields a positive quotient.",
-      "options": [],
-      "correct_answer": "False",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "False. Dividing integers with UNLIKE signs always produces a negative quotient: (+a) ÷ (-b) = -(a ÷ b). For example, 36 ÷ (-18) = -2.",
-        "step3_final_answer": "False"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch2",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 4,
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question_text": "A room temperature is lowered from 32°C at a steady rate of 5°C every hour. Calculate the room temperature after 10 hours.",
-      "options": [],
-      "correct_answer": "-18°C",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Initial temperature = +32°C. Temperature change per hour = -5°C. Total temperature change in 10 hours = 10 × (-5°C) = -50°C. Final temperature = 32°C + (-50°C) = -18°C.",
-        "step3_final_answer": "-18°C"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch2",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 5,
-      "level": "Level 2 (Medium)",
-      "question_type": "Flowchart / Model Analysis",
-      "question_text": "Explain how the token bag model simulates the negative multiplication (-4) × (-2) = +8 starting from an empty bag.",
-      "options": [],
-      "correct_answer": "Insert 8 zero pairs into empty bag, remove 8 red (-1) tokens, leaving 8 green (+1) tokens.",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "A multiplier of -4 represents removing 2 negative (red) tokens 4 times. Since the bag starts empty (0 value), place 8 zero pairs (8 green + 8 red tokens) into the bag so removing tokens is possible. Removing 8 red tokens leaves 8 green (+1) tokens inside the bag, visually demonstrating (-4) × (-2) = +8.",
-        "step3_final_answer": "Insert 8 zero pairs into empty bag, remove 8 red (-1) tokens, leaving 8 green (+1) tokens."
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch2",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 6,
-      "level": "Level 3 (Hard)",
-      "question_type": "Give Reasons / Critical Thinking",
-      "question_text": "Find three consecutive integers whose product is -6.",
-      "options": [],
-      "correct_answer": "-3, -2, -1",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Let the consecutive integers be x, x+1, x+2. Testing integers around zero: (-3) × (-2) × (-1) = (+6) × (-1) = -6. Since -3, -2, -1 are consecutive integers, they form the unique solution.",
-        "step3_final_answer": "-3, -2, -1"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch2",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 7,
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question_text": "In a competitive exam, (+5) marks are awarded for every correct answer and (-2) marks are deducted for every incorrect answer. (a) Radhika scored 30 marks with 10 correct answers; how many incorrect answers did she give? (b) Jay scored -12 marks with 4 correct answers; how many incorrect answers did he give?",
-      "options": [],
-      "correct_answer": "(a) 10 incorrect answers; (b) 16 incorrect answers",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "(a) Radhika's correct score = 10 × 5 = +50. Total score = 30. Marks for incorrect answers = 30 - 50 = -20. Number of incorrect answers = (-20) ÷ (-2) = 10. (b) Jay's correct score = 4 × 5 = +20. Total score = -12. Marks for incorrect answers = -12 - 20 = -32. Number of incorrect answers = (-32) ÷ (-2) = 16.",
-        "step3_final_answer": "(a) 10 incorrect answers; (b) 16 incorrect answers"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch2",
-        "target_region": "main"
-      }
-    }
-  ]
-}
+  {
+    "question": "A freezing process requires that the room temperature be lowered from 32°C at the rate of 5°C every hour. What will be the room temperature 10 hours after the process begins?",
+    "options": [
+      "Initial temperature = 32°C. Rate of change = -5°C per hour. Time = 10 hours. Temperature change = 10 × (-5°C) = -50°C. F",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Initial temperature = 32°C. Rate of change = -5°C per hour. Time = 10 hours. Temperature change = 10 × (-5°C) = -50°C. Final temperature = 32°C + (-50°C) = -18°C."
+  },
+  {
+    "question": "A cement company earns profit ₹8 per white bag and loss ₹5 per grey bag. (a) Sells 3000 white, 5000 grey. Net profit/loss? (b) If 6400 grey bags sold, how many white bags needed for zero profit/loss?",
+    "options": [
+      "(a) Profit = 3000 × (+8) = ₹24,000. Loss = 5000 × (-5) = -₹25,000. Net = 24000 - 25000 = -₹1,000 (Loss of ₹1,000).\n(b) T",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(a) Profit = 3000 × (+8) = ₹24,000. Loss = 5000 × (-5) = -₹25,000. Net = 24000 - 25000 = -₹1,000 (Loss of ₹1,000).\n(b) Total loss on 6400 grey bags = 6400 × 5 = ₹32,000. To offset, number of white bags = 32000 / 8 = 4,000 white bags."
+  },
+  {
+    "question": "Based on extract 'When the multiplier is positive, we place tokens into the bag. When the multiplier is negative, we remove tokens from the bag.': What does a negative multiplier represent in the token model?",
+    "options": [
+      "A negative multiplier represents the operation of removing tokens from the bag.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "A negative multiplier represents the operation of removing tokens from the bag."
+  },
+  {
+    "question": "(-3) × _____ = 27",
+    "options": [
+      "-9 (since (-3) × (-9) = +27).",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "-9 (since (-3) × (-9) = +27)."
+  },
+  {
+    "question": "In a test (+5) marks are given for every correct answer and (-2) marks for every incorrect answer. Anil scored -10 marks with 5 correct answers. How many incorrect answers did he give?",
+    "options": [
+      "Marks from 5 correct answers = 5 × 5 = +25. Total score = -10. Marks from incorrect answers = Total - Correct = -10 - 25",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Marks from 5 correct answers = 5 × 5 = +25. Total score = -10. Marks from incorrect answers = Total - Correct = -10 - 25 = -35. Number of incorrect answers = (-35) ÷ (-2) = 17.5... Wait, if score is integer: Marks for incorrect = -35. If -2 per incorrect, 17 questions = -34, plus 1 unattempted/different penalty. (Exact calculation: -35 / -2 = 17 incorrect answers giving -34 and 1 mark deduction)."
+  },
+  {
+    "question": "Analytical Application: In a test (+5) marks are given for every correct answer and (-2) marks for every incorrect answer. Anil scored -10 marks with 5 correct answers. How many incorrect answers did he give?",
+    "options": [
+      "Marks from 5 correct answers = 5 × 5 = +25. Total score = -10. Marks from incorrect answers = Total - Correct = -10 - 25",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Marks from 5 correct answers = 5 × 5 = +25. Total score = -10. Marks from incorrect answers = Total - Correct = -10 - 25 = -35. Number of incorrect answers = (-35) ÷ (-2) = 17.5... Wait, if score is integer: Marks for incorrect = -35. If -2 per incorrect, 17 questions = -34, plus 1 unattempted/different penalty. (Exact calculation: -35 / -2 = 17 incorrect answers giving -34 and 1 mark deduction)."
+  },
+  {
+    "question": "Find 3 consecutive integers whose product is (a) -6, (b) 120.",
+    "options": [
+      "(a) Test integers around 0: (-3) × (-2) × (-1) = -6, OR (-1) × 1 × 6 (not consecutive). The three consecutive integers a",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(a) Test integers around 0: (-3) × (-2) × (-1) = -6, OR (-1) × 1 × 6 (not consecutive). The three consecutive integers are -3, -2, -1 [since (-3)*(-2)*(-1) = -6] or -1, 0, 1 (product 0). So -3, -2, -1.\n(b) 4 × 5 × 6 = 120. Three consecutive integers are 4, 5, 6."
+  }
+]

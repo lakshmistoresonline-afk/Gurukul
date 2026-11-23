@@ -1,204 +1,57 @@
-{
-  "chapter_number": 4,
-  "chapter_title": "Motion: Describing Position and Movement",
-  "level_1_easy_foundational": [
-    {
-      "question_id": "CH04-L1-01",
-      "question_type": "MCQ",
-      "question": "What physical quantity does the area under a Velocity-Time graph represent?",
-      "options": [
-        "A) Acceleration",
-        "B) Speed",
-        "C) Displacement",
-        "D) Force"
-      ],
-      "correct_answer": "C) Displacement",
-      "explanation": "The definite integral or geometric area under a velocity-time curve over a time interval equals total displacement.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 4.",
-      "solution_key_3_part": {
-        "key_concept": "The definite integral or geometric area under a velocity-time curve over a time interval equals total displacement",
-        "step_by_step_derivation": "The definite integral or geometric area under a velocity-time curve over a time interval equals total displacement.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch4_motion_graphs.png",
-        "target_region": {
-          "hotspot_id": "HS-04-01",
-          "label": "s-t Graph Slope",
-          "x_percent": 25,
-          "y_percent": 25,
-          "w_percent": 25,
-          "h_percent": 50,
-          "description": "Slope equals instantaneous or average velocity."
-        }
-      }
-    },
-    {
-      "question_id": "CH04-L1-02",
-      "question_type": "Fill-in-the-Blanks",
-      "question": "The rate of change of velocity per unit time is called ______.",
-      "options": [],
-      "correct_answer": "acceleration",
-      "explanation": "Acceleration a = (v - u) / t measures how rapidly velocity magnitude or direction changes.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 4.",
-      "solution_key_3_part": {
-        "key_concept": "Acceleration a = (v - u) / t measures how rapidly velocity magnitude or direction changes",
-        "step_by_step_derivation": "Acceleration a = (v - u) / t measures how rapidly velocity magnitude or direction changes.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch4_motion_graphs.png",
-        "target_region": {
-          "hotspot_id": "HS-04-01",
-          "label": "s-t Graph Slope",
-          "x_percent": 25,
-          "y_percent": 25,
-          "w_percent": 25,
-          "h_percent": 50,
-          "description": "Slope equals instantaneous or average velocity."
-        }
-      }
-    },
-    {
-      "question_id": "CH04-L1-03",
-      "question_type": "True/False with Justification",
-      "question": "True or False: An object moving in a circle at constant speed has zero acceleration.",
-      "options": [],
-      "correct_answer": "False",
-      "explanation": "Circular motion at constant speed undergoes continuous direction change, producing centripetal acceleration directed toward the circle center.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 4.",
-      "solution_key_3_part": {
-        "key_concept": "Circular motion at constant speed undergoes continuous direction change, producing centripetal acceleration directed toward the circle center",
-        "step_by_step_derivation": "Circular motion at constant speed undergoes continuous direction change, producing centripetal acceleration directed toward the circle center.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch4_motion_graphs.png",
-        "target_region": {
-          "hotspot_id": "HS-04-01",
-          "label": "s-t Graph Slope",
-          "x_percent": 25,
-          "y_percent": 25,
-          "w_percent": 25,
-          "h_percent": 50,
-          "description": "Slope equals instantaneous or average velocity."
-        }
-      }
-    }
-  ],
-  "level_2_medium_conceptual": [
-    {
-      "question_id": "CH04-L2-01",
-      "question_type": "Short Answer",
-      "question": "An athlete completes one circular lap of diameter 200 m in 40 s. Calculate the distance covered and displacement after 2 minutes 20 seconds.",
-      "options": [],
-      "correct_answer": "Total time = 140 s. Number of complete laps = 140 / 40 = 3.5. Distance = 3.5 × (π × d) = 3.5 × 3.1416 × 200 = 2200 m. Displacement = diameter across the track = 200 m.",
-      "explanation": "Distance measures total path length (3.5 circumferences), while displacement measures net straight-line distance from starting point to final opposite point.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 4.",
-      "solution_key_3_part": {
-        "key_concept": "Distance measures total path length (3",
-        "step_by_step_derivation": "Distance measures total path length (3.5 circumferences), while displacement measures net straight-line distance from starting point to final opposite point.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch4_motion_graphs.png",
-        "target_region": {
-          "hotspot_id": "HS-04-01",
-          "label": "s-t Graph Slope",
-          "x_percent": 25,
-          "y_percent": 25,
-          "w_percent": 25,
-          "h_percent": 50,
-          "description": "Slope equals instantaneous or average velocity."
-        }
-      }
-    },
-    {
-      "question_id": "CH04-L2-02",
-      "question_type": "Diagram / Flowchart Analysis",
-      "question": "Derive the second equation of motion s = ut + 0.5at² graphically from a velocity-time graph.",
-      "options": [],
-      "correct_answer": "Displacement s = Area of trapezoid under v-t graph = Area of Rectangle (u × t) + Area of Triangle (0.5 × t × [v - u]). Since (v - u) = at, substituting yields s = ut + 0.5at².",
-      "explanation": "Splitting the trapezoid into a uniform motion rectangle and a uniform acceleration triangle yields the position equation.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 4.",
-      "solution_key_3_part": {
-        "key_concept": "Splitting the trapezoid into a uniform motion rectangle and a uniform acceleration triangle yields the position equation",
-        "step_by_step_derivation": "Splitting the trapezoid into a uniform motion rectangle and a uniform acceleration triangle yields the position equation.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch4_motion_graphs.png",
-        "target_region": {
-          "hotspot_id": "HS-04-01",
-          "label": "s-t Graph Slope",
-          "x_percent": 25,
-          "y_percent": 25,
-          "w_percent": 25,
-          "h_percent": 50,
-          "description": "Slope equals instantaneous or average velocity."
-        }
-      }
-    }
-  ],
-  "level_3_hard_advanced": [
-    {
-      "question_id": "CH04-L3-01",
-      "question_type": "Case-Study Scenarios",
-      "question": "A train accelerates uniformly from rest to 72 km/h in 5 minutes. Calculate its acceleration in m/s² and total distance traveled in kilometers.",
-      "options": [],
-      "correct_answer": "u = 0 m/s; v = 72 × (5/18) = 20 m/s; t = 300 s. Acceleration a = (20 - 0) / 300 = 1/15 m/s² ≈ 0.067 m/s². Distance s = ut + 0.5at² = 0 + 0.5 × (1/15) × (300)² = 3000 m = 3.0 km.",
-      "explanation": "Converting units to standard SI (m/s and seconds) yields acceleration of 0.067 m/s² and displacement of 3 km.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 4.",
-      "solution_key_3_part": {
-        "key_concept": "Converting units to standard SI (m/s and seconds) yields acceleration of 0",
-        "step_by_step_derivation": "Converting units to standard SI (m/s and seconds) yields acceleration of 0.067 m/s² and displacement of 3 km.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch4_motion_graphs.png",
-        "target_region": {
-          "hotspot_id": "HS-04-01",
-          "label": "s-t Graph Slope",
-          "x_percent": 25,
-          "y_percent": 25,
-          "w_percent": 25,
-          "h_percent": 50,
-          "description": "Slope equals instantaneous or average velocity."
-        }
-      }
-    },
-    {
-      "question_id": "CH04-L3-02",
-      "question_type": "Give Reasons / Critical Thinking",
-      "question": "Can an object have zero instantaneous velocity while simultaneously experiencing non-zero acceleration? Justify with a physical example.",
-      "options": [],
-      "correct_answer": "Yes. At the peak height of a ball thrown vertically upward, its instantaneous velocity stops briefly at 0 m/s, but it experiences continuous downward gravitational acceleration of 9.8 m/s².",
-      "explanation": "Acceleration depends on net force, which remains non-zero (gravity) even at the instant velocity passes through zero during direction reversal.",
-      "time_limit_seconds": 90,
-      "hint_modal": "Think about core scientific principles from Chapter 4.",
-      "solution_key_3_part": {
-        "key_concept": "Acceleration depends on net force, which remains non-zero (gravity) even at the instant velocity passes through zero during direction reversal",
-        "step_by_step_derivation": "Acceleration depends on net force, which remains non-zero (gravity) even at the instant velocity passes through zero during direction reversal.",
-        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
-      },
-      "hotspot_choice": {
-        "image_url": "/assets/images/ch4_motion_graphs.png",
-        "target_region": {
-          "hotspot_id": "HS-04-01",
-          "label": "s-t Graph Slope",
-          "x_percent": 25,
-          "y_percent": 25,
-          "w_percent": 25,
-          "h_percent": 50,
-          "description": "Slope equals instantaneous or average velocity."
-        }
-      }
-    }
-  ]
-}
+[
+  {
+    "question": "An athlete completes one round of a circular track of diameter 200 m in 40 s. What will be the distance covered and displacement at the end of 2 minutes 20 seconds?",
+    "options": [
+      "Time = 140 s. Number of rounds = 140 / 40 = 3.5. Distance = 3.5 * pi * d = 3.5 * 3.1416 * 200 = 2200 m. Displacement = d",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Time = 140 s. Number of rounds = 140 / 40 = 3.5. Distance = 3.5 * pi * d = 3.5 * 3.1416 * 200 = 2200 m. Displacement = diameter = 200 m (opposite point of track)."
+  },
+  {
+    "question": "What does the slope of a distance-time graph represent?",
+    "options": [
+      "B) Velocity/Speed",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "B) Velocity/Speed"
+  },
+  {
+    "question": "Can an object have zero velocity and non-zero acceleration simultaneously? Give an example.",
+    "options": [
+      "Yes. At the peak height of a vertically thrown ball, its instantaneous velocity is zero, but it experiences non-zero acc",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Yes. At the peak height of a vertically thrown ball, its instantaneous velocity is zero, but it experiences non-zero acceleration due to gravity (9.8 m/s² downward)."
+  },
+  {
+    "question": "Derive graphically the second equation of motion s = ut + 0.5at².",
+    "options": [
+      "Area under v-t graph = Area of Rectangle + Area of Triangle. Area = (u * t) + 0.5 * t * (v - u). Since (v - u) = at, Are",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Area under v-t graph = Area of Rectangle + Area of Triangle. Area = (u * t) + 0.5 * t * (v - u). Since (v - u) = at, Area s = ut + 0.5a t²."
+  },
+  {
+    "question": "A train starting from rest attains a velocity of 72 km/h in 5 minutes. Assuming uniform acceleration, calculate 1) acceleration and 2) distance traveled.",
+    "options": [
+      "u = 0 m/s; v = 72 km/h = 72 * (5/18) = 20 m/s; t = 5 min = 300 s.\n1) Acceleration a = (v - u) / t = (20 - 0) / 300 = 1/1",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "u = 0 m/s; v = 72 km/h = 72 * (5/18) = 20 m/s; t = 5 min = 300 s.\n1) Acceleration a = (v - u) / t = (20 - 0) / 300 = 1/15 m/s² = 0.067 m/s².\n2) Distance s = ut + 0.5 a t² = 0 + 0.5 * (1/15) * (300)² = 0.5 * (1/15) * 90000 = 3000 m = 3 km."
+  }
+]

@@ -329,15 +329,59 @@ export function getFallbackContentForIdentity(identity: CurriculumIdentity): Cha
   } else if (ct === 'quiz') {
     data = [
       {
-        question: `What is the primary objective of studying ${realTitle}?`,
+        question: `What is the primary objective of studying ${realTitle} in Class ${identity.grade} ${subjName}?`,
         options: [
-          `To build conceptual clarity and problem-solving skills in ${subjName}`,
-          "To memorize text without understanding",
-          "To skip fundamental textbook exercises",
+          `To build conceptual clarity, vocabulary, and analytical problem-solving skills`,
+          "To memorize textbook sentences without understanding core principles",
+          "To skip fundamental exercises and practical applications",
           "None of the above"
         ],
         correct_answer: 0,
-        explanation: `NCERT Class ${identity.grade} ${subjName} (${realTitle}) emphasizes conceptual understanding and systematic problem solving.`
+        explanation: `Class ${identity.grade} ${subjName} (${realTitle}) focuses on developing fundamental analytical understanding and practical applications.`
+      },
+      {
+        question: `Which approach is most effective when studying complex concepts in ${realTitle}?`,
+        options: [
+          "Breaking down topics into core definitions, rules, and structured examples",
+          "Rushing through textbook exercises without reading explanations",
+          "Ignoring key terms and vocabulary definitions",
+          "Avoiding step-by-step problem-solving practice"
+        ],
+        correct_answer: 0,
+        explanation: `Systematic problem-solving requires mastering foundational definitions, key rules, and worked examples.`
+      },
+      {
+        question: `What is the role of key vocabulary and definitions in ${realTitle}?`,
+        options: [
+          "They provide precise language to articulate scientific, mathematical, and literary principles accurately",
+          "They are optional and do not affect overall comprehension",
+          "They are only used in spelling bees",
+          "They replace the need for understanding full chapter concepts"
+        ],
+        correct_answer: 0,
+        explanation: `Mastering key terminology empowers students to express concepts clearly and answer exam questions accurately.`
+      },
+      {
+        question: `How does practicing chapter assessment questions strengthen learning in ${subjName}?`,
+        options: [
+          "It reinforces active recall, identifies knowledge gaps, and builds exam confidence",
+          "It guarantees 100% memorization without revision",
+          "It reduces reading comprehension speed",
+          "It replaces the need for textbook reading"
+        ],
+        correct_answer: 0,
+        explanation: `Active recall through practice quizzes significantly improves long-term memory retention and conceptual mastery.`
+      },
+      {
+        question: `What is the best way to revise ${realTitle} before an examination?`,
+        options: [
+          "Review zero-omission notes, key definitions, mindmaps, and step-by-step solutions",
+          "Read only the first paragraph of the chapter",
+          "Skip practice quizzes and worked examples",
+          "Rely entirely on last-minute guessing"
+        ],
+        correct_answer: 0,
+        explanation: `Comprehensive revision combines study notes, visual mindmaps, vocabulary cards, and self-assessment quizzes.`
       }
     ];
   } else if (ct === 'question_papers') {

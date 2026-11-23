@@ -1,154 +1,79 @@
-{
-  "chapter_number": 3,
-  "chapter_title": "Finding Common Ground",
-  "image_asset": {
-    "asset_id": "img_ch3",
-    "chapter_number": 3,
-    "title": "Rectangular Floor Tiling Grid",
-    "url": "/assets/images/ch3_hcf_floor_tiling.png",
-    "caption": "12 ft × 16 ft floor tiled with 4 ft × 4 ft square tiles representing HCF(12, 16) = 4.",
-    "hotspots": [
-      {
-        "x_percent": 0,
-        "y_percent": 0,
-        "w_percent": 100,
-        "h_percent": 100,
-        "label": "4x4 Tile Grid",
-        "popover_text": "12 tiles of size 4ft x 4ft tile a 12ft x 16ft room completely without cutting."
-      }
-    ]
+[
+  {
+    "question": "Find the HCF and LCM of 45 and 36.",
+    "options": [
+      "Prime factorisations: 45 = 3² × 5; 36 = 2² × 3².\nHCF = 3² = 9.\nLCM = 2² × 3² × 5 = 4 × 9 × 5 = 180.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Prime factorisations: 45 = 3² × 5; 36 = 2² × 3².\nHCF = 3² = 9.\nLCM = 2² × 3² × 5 = 4 × 9 × 5 = 180."
   },
-  "questions": [
-    {
-      "question_id": 1,
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question_text": "If two numbers are co-prime, what is their Highest Common Factor (HCF)?",
-      "options": [
-        "A) 0",
-        "B) 1",
-        "C) Their product",
-        "D) Their sum"
-      ],
-      "correct_answer": "B) 1",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Co-prime numbers are defined as numbers that have no common factors other than 1. Therefore, HCF(a, b) = 1 for any co-prime pair.",
-        "step3_final_answer": "B) 1"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch3",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 2,
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blanks",
-      "question_text": "For any two positive integers 'a' and 'b', HCF(a, b) × LCM(a, b) = _____.",
-      "options": [],
-      "correct_answer": "a × b (Product of the two numbers)",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "The fundamental relationship between HCF and LCM states that the product of the HCF and LCM of two numbers is always equal to the product of the numbers themselves.",
-        "step3_final_answer": "a × b (Product of the two numbers)"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch3",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 3,
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question_text": "True or False: The formula HCF(a, b, c) × LCM(a, b, c) = a × b × c holds true for three numbers.",
-      "options": [],
-      "correct_answer": "False",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "False. The product formula HCF × LCM = Product holds strictly for TWO numbers. For three numbers, the relationship involves additional prime factor overlap terms and does not equal a × b × c.",
-        "step3_final_answer": "False"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch3",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 4,
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question_text": "The HCF of two numbers is 12 and their product is 2160. Calculate their Least Common Multiple (LCM).",
-      "options": [],
-      "correct_answer": "180",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Using the product formula: HCF × LCM = Product of numbers ⇒ 12 × LCM = 2160 ⇒ LCM = 2160 / 12 = 180.",
-        "step3_final_answer": "180"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch3",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 5,
-      "level": "Level 2 (Medium)",
-      "question_type": "Structural Analysis",
-      "question_text": "Find the HCF and LCM of 45 and 36 using prime factorisation.",
-      "options": [],
-      "correct_answer": "HCF = 9, LCM = 180",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "Prime factorisations: 45 = 3² × 5¹; 36 = 2² × 3². HCF is the product of common prime factors with lowest exponents: HCF = 3² = 9. LCM is the product of all prime factors with highest exponents: LCM = 2² × 3² × 5¹ = 4 × 9 × 5 = 180.",
-        "step3_final_answer": "HCF = 9, LCM = 180"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch3",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 6,
-      "level": "Level 3 (Hard)",
-      "question_type": "Give Reasons / Critical Thinking",
-      "question_text": "A room floor measures 12 ft by 16 ft. Sameeksha wants to tile the floor with identical square tiles without cutting any tile. Explain why finding the maximum tile side length requires calculating HCF(12, 16), and determine the minimum number of tiles needed.",
-      "options": [],
-      "correct_answer": "Tile side = HCF(12, 16) = 4 ft; Minimum tiles needed = 12 tiles",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "To avoid cutting tiles, the tile side length must be a common divisor of both 12 and 16. To minimize the total number of tiles used, each tile must be as large as possible, which requires finding the Highest Common Factor HCF(12, 16) = 4 ft. Number of tiles along length = 16/4 = 4; along width = 12/4 = 3. Total minimum tiles = 4 × 3 = 12 square tiles.",
-        "step3_final_answer": "Tile side = HCF(12, 16) = 4 ft; Minimum tiles needed = 12 tiles"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch3",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 7,
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question_text": "Three bells toll together at intervals of 9, 12, and 15 minutes respectively. If they all toll together at 8:00 AM, at what time will they next toll together?",
-      "options": [],
-      "correct_answer": "11:00 AM (after 3 hours)",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "The time interval until they toll together next is LCM(9, 12, 15). Prime factorisations: 9 = 3², 12 = 2² × 3, 15 = 3 × 5. LCM = 2² × 3² × 5 = 180 minutes. Converting to hours: 180 / 60 = 3 hours. Adding 3 hours to 8:00 AM yields 11:00 AM.",
-        "step3_final_answer": "11:00 AM (after 3 hours)"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch3",
-        "target_region": "main"
-      }
-    }
-  ]
-}
+  {
+    "question": "Find two numbers whose HCF is 1 and LCM is 66.",
+    "options": [
+      "Since HCF = 1, the two numbers 'a' and 'b' must be co-prime such that a × b = LCM = 66. Possible co-prime pairs factorin",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Since HCF = 1, the two numbers 'a' and 'b' must be co-prime such that a × b = LCM = 66. Possible co-prime pairs factoring 66: (1, 66), (2, 33), (3, 22), (6, 11). Any of these pairs (e.g. 6 and 11) is a valid answer."
+  },
+  {
+    "question": "Based on extract 'Sameeksha is building her new house. The main room is 12 ft by 16 ft. She wants to cover the floor with square tiles of the same size, using as few tiles as possible.': Why does using as few tiles as possible require finding the HCF?",
+    "options": [
+      "Fewer tiles require larger individual tiles. The largest side length that divides both 12 ft and 16 ft evenly is their H",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Fewer tiles require larger individual tiles. The largest side length that divides both 12 ft and 16 ft evenly is their Highest Common Factor (HCF)."
+  },
+  {
+    "question": "If two numbers are co-prime, what is their HCF? (a) 0 (b) 1 (c) Their product (d) Cannot be determined",
+    "options": [
+      "(b) 1. Co-prime numbers by definition have no common prime factors.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "(b) 1. Co-prime numbers by definition have no common prime factors."
+  },
+  {
+    "question": "The HCF of two numbers is 12 and their product is 2160. Find their LCM.",
+    "options": [
+      "Using formula: HCF × LCM = Product of numbers ⇒ 12 × LCM = 2160 ⇒ LCM = 2160 / 12 = 180.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Using formula: HCF × LCM = Product of numbers ⇒ 12 × LCM = 2160 ⇒ LCM = 2160 / 12 = 180."
+  },
+  {
+    "question": "Analytical Application: The HCF of two numbers is 12 and their product is 2160. Find their LCM.",
+    "options": [
+      "Using formula: HCF × LCM = Product of numbers ⇒ 12 × LCM = 2160 ⇒ LCM = 2160 / 12 = 180.",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "Using formula: HCF × LCM = Product of numbers ⇒ 12 × LCM = 2160 ⇒ LCM = 2160 / 12 = 180."
+  },
+  {
+    "question": "Three bells toll together at intervals of 9, 12, and 15 minutes respectively. If they toll together now, after how many hours will they toll together next?",
+    "options": [
+      "To find when they toll together next, calculate LCM(9, 12, 15).\n9 = 3²\n12 = 2² × 3\n15 = 3 × 5\nLCM = 2² × 3² × 5 = 4 × 9 ",
+      "Incorrect option - review chapter definitions",
+      "Incomplete formulation",
+      "None of the above"
+    ],
+    "correct_answer": 0,
+    "explanation": "To find when they toll together next, calculate LCM(9, 12, 15).\n9 = 3²\n12 = 2² × 3\n15 = 3 × 5\nLCM = 2² × 3² × 5 = 4 × 9 × 5 = 180 minutes.\nConvert to hours: 180 / 60 = 3 hours. They will toll together next after 3 hours."
+  }
+]
