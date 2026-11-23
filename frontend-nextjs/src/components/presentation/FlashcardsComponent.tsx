@@ -83,6 +83,12 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
         </div>
       </div>
 
+      {Object.values(masteredCards).filter(Boolean).length === fcList.length && fcList.length > 0 && (
+        <div className="p-4 bg-gradient-to-r from-emerald-500 via-teal-500 to-indigo-600 text-white rounded-2xl shadow-lg text-center font-black text-xs sm:text-sm animate-bounce flex items-center justify-center gap-2">
+          <span>🎉 Outstanding Work! You have mastered 100% of this Flashcard Deck! 🌟</span>
+        </div>
+      )}
+
       {viewMode === 'carousel' ? (
         <div className="space-y-6 max-w-2xl mx-auto py-4">
           <div

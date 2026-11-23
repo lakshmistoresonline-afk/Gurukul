@@ -744,8 +744,8 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         </div>
 
-        {/* Content Tabs Bar */}
-        <div className="relative flex items-center pt-2 border-t border-slate-100">
+        {/* Content Tabs Bar (Sticky Glassmorphism Header Bar) */}
+        <div className="sticky top-0 z-30 backdrop-blur-md bg-white/90 p-2 rounded-2xl border border-slate-200/80 shadow-xs relative flex items-center">
             <button
               onClick={() => scrollStageBar('left')}
               title="Scroll Left"

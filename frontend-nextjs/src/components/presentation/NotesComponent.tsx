@@ -12,6 +12,7 @@ interface NotesProps {
 
 export default function NotesComponent({ data, subject }: NotesProps) {
   const [activeSubTab, setActiveSubTab] = useState<string>('summary');
+  const [readerTheme, setReaderTheme] = useState<'light' | 'sepia' | 'dark'>('light');
 
   if (!data) {
     return <div className="p-8 text-center text-slate-500">No notes available.</div>;
@@ -48,64 +49,88 @@ export default function NotesComponent({ data, subject }: NotesProps) {
   const takeaways = data.importantTakeaways || data.key_takeaways || [];
   const stories = data.stories || data.mindmap_outline?.stories || [];
 
+  const themeCardClasses =
+    readerTheme === 'sepia'
+      ? 'bg-[#FBF0D9] text-[#4A3B32] border-[#E8D7B8] shadow-sm'
+      : readerTheme === 'dark'
+      ? 'bg-[#0F172A] text-[#F1F5F9] border-[#1E293B] shadow-sm'
+      : 'bg-white text-slate-900 border-slate-200 shadow-sm';
+
   return (
-    <div className="space-y-6">
-      {/* Sub-Section Selector Tabs Bar */}
-      <div className="flex flex-wrap gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
-        <button
-          onClick={() => setActiveSubTab('summary')}
-          className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'summary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
-        >
-          📖 Summary & Theme
-        </button>
-        {breakdown.length > 0 && (
+    <div className={`space-y-6 p-4 rounded-3xl transition-all ${themeCardClasses}`}>
+      {/* Sub-Section Selector & Comfort Reader Theme Toolbar */}
+      <div className="flex flex-wrap items-center justify-between gap-3 bg-white/80 p-2.5 rounded-2xl border border-slate-200/80 shadow-sm backdrop-blur-md">
+        <div className="flex flex-wrap gap-2">
           <button
-            onClick={() => setActiveSubTab('breakdown')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'breakdown' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => setActiveSubTab('summary')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${activeSubTab === 'summary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
           >
-            🔬 Core Concepts ({breakdown.length})
+            📖 Summary &amp; Theme
           </button>
-        )}
-        {poeticDevices && (
+          {breakdown.length > 0 && (
+            <button
+              onClick={() => setActiveSubTab('breakdown')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${activeSubTab === 'breakdown' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              🔬 Core Concepts ({breakdown.length})
+            </button>
+          )}
+          {poeticDevices && (
+            <button
+              onClick={() => setActiveSubTab('poetic')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${activeSubTab === 'poetic' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              🎭 Poetic Devices
+            </button>
+          )}
+          {characterAnalysis.length > 0 && (
+            <button
+              onClick={() => setActiveSubTab('characters')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${activeSubTab === 'characters' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              👥 Characters ({characterAnalysis.length})
+            </button>
+          )}
+          {grammarFocus && (
+            <button
+              onClick={() => setActiveSubTab('grammar')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${activeSubTab === 'grammar' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              ✍️ Grammar Focus
+            </button>
+          )}
+          {combinedVocab.length > 0 && (
+            <button
+              onClick={() => setActiveSubTab('vocabulary')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${activeSubTab === 'vocabulary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              📚 Vocabulary ({combinedVocab.length})
+            </button>
+          )}
+        </div>
+
+        {/* Comfort Reader Mode Toggle */}
+        <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-bold shrink-0">
+          <span className="text-[10px] text-slate-500 uppercase font-black px-1.5">Reader:</span>
           <button
-            onClick={() => setActiveSubTab('poetic')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'poetic' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => setReaderTheme('light')}
+            className={`px-2.5 py-1 rounded-lg transition-all cursor-pointer ${readerTheme === 'light' ? 'bg-white text-slate-900 shadow-2xs font-black' : 'text-slate-600 hover:text-slate-900'}`}
           >
-            🎭 Poetic Devices
+            ☀️ Light
           </button>
-        )}
-        {characterAnalysis.length > 0 && (
           <button
-            onClick={() => setActiveSubTab('characters')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'characters' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => setReaderTheme('sepia')}
+            className={`px-2.5 py-1 rounded-lg transition-all cursor-pointer ${readerTheme === 'sepia' ? 'bg-[#FBF0D9] text-[#4A3B32] shadow-2xs font-black border border-[#E8D7B8]' : 'text-slate-600 hover:text-slate-900'}`}
           >
-            👥 Characters ({characterAnalysis.length})
+            📜 Sepia
           </button>
-        )}
-        {grammarFocus && (
           <button
-            onClick={() => setActiveSubTab('grammar')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'grammar' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => setReaderTheme('dark')}
+            className={`px-2.5 py-1 rounded-lg transition-all cursor-pointer ${readerTheme === 'dark' ? 'bg-slate-900 text-teal-300 shadow-2xs font-black border border-slate-700' : 'text-slate-600 hover:text-slate-900'}`}
           >
-            ✍️ Grammar Focus
+            🌙 Dark
           </button>
-        )}
-        {stories.length > 0 && (
-          <button
-            onClick={() => setActiveSubTab('stories')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'stories' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
-          >
-            📚 Stories & Arcs ({stories.length})
-          </button>
-        )}
-        {combinedVocab.length > 0 && (
-          <button
-            onClick={() => setActiveSubTab('glossary')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'glossary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
-          >
-            📚 Glossary ({combinedVocab.length})
-          </button>
-        )}
+        </div>
       </div>
 
       {/* Tab 1: Summary & Theme */}

@@ -14,6 +14,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
   const [reflectionAnswer, setReflectionAnswer] = useState<string | null>(null);
   const [showStudioModal, setShowStudioModal] = useState<boolean>(false);
   const [videoLoadError, setVideoLoadError] = useState<boolean>(false);
+  const [showLightboxModal, setShowLightboxModal] = useState<boolean>(false);
 
   if (!data) {
     return (
@@ -201,9 +202,12 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
               </div>
               <p className="text-xs font-bold text-slate-900">{data.image_asset.title}</p>
 
-              {/* Render Chapter Diagram Image Directly with Robust Fallbacks */}
+              {/* Render Chapter Diagram Image Directly with Lightbox Expand */}
               {(data.image_asset.asset_url || data.image_asset.url || data.image_asset.filename) && (
-                <div className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs">
+                <div
+                  onClick={() => setShowLightboxModal(true)}
+                  className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs group cursor-zoom-in transition-all hover:border-indigo-300"
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={data.image_asset.asset_url || data.image_asset.url || `/assets/images/${data.image_asset.filename}`}
@@ -218,6 +222,9 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                       }
                     }}
                   />
+                  <div className="absolute bottom-3 right-3 px-3 py-1 rounded-xl bg-slate-900/80 text-white text-[11px] font-bold backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all flex items-center gap-1.5 shadow-lg">
+                    🔍 Click to Expand
+                  </div>
                 </div>
               )}
 
@@ -235,6 +242,36 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                   })}
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Full-Screen Diagram Lightbox Modal */}
+          {showLightboxModal && data.image_asset && (
+            <div className="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-200">
+              <div className="relative max-w-5xl w-full max-h-[90vh] bg-slate-900 rounded-3xl border border-slate-700 p-4 sm:p-6 space-y-4 flex flex-col justify-between shadow-2xl">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-white">
+                  <h3 className="text-sm font-black tracking-tight flex items-center gap-2">
+                    <span>🖼️ {data.image_asset?.title || 'Chapter Concept Diagram'}</span>
+                  </h3>
+                  <button
+                    onClick={() => setShowLightboxModal(false)}
+                    className="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 font-black text-xs flex items-center justify-center transition-all cursor-pointer"
+                  >
+                    ✕
+                  </button>
+                </div>
+                <div className="overflow-auto flex-1 flex items-center justify-center p-2">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={data.image_asset.asset_url || data.image_asset.url || `/assets/images/${data.image_asset.filename}`}
+                    alt={data.image_asset.alt_text || 'Expanded Chapter Diagram'}
+                    className="max-h-[75vh] w-auto object-contain rounded-2xl shadow-xl"
+                  />
+                </div>
+                <div className="text-center pt-2 text-xs text-slate-400 font-medium">
+                  Tap <strong>✕</strong> or anywhere outside to exit full-screen diagram view
+                </div>
+              </div>
             </div>
           )}
 
