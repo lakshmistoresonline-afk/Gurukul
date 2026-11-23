@@ -9,10 +9,10 @@ export default function MindmapComponent({ data }: MindmapProps) {
     return <div className="p-8 text-center text-slate-500">No mindmap available.</div>;
   }
 
-  // Unwrap mind_map wrapper if present (Maths schema)
+  // Unwrap mind_map / mindmap wrapper if present
   const mapData = data.mind_map || data.mindmap || data;
 
-  const rootNode = mapData.root_node || mapData.root || mapData.central_node || mapData.chapter_title || data.chapter_title || 'Central Concept';
+  const rootNode = mapData.root_node || mapData.root_topic || mapData.root || mapData.central_node || mapData.chapter_title || data.chapter_title || 'Central Concept';
   const centralTheme = mapData.central_theme || mapData.central_node || mapData.theme || '';
   const subNodes = mapData.sub_nodes || mapData.branches || mapData.nodes || mapData.main_branches || [];
 
@@ -37,8 +37,8 @@ export default function MindmapComponent({ data }: MindmapProps) {
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Concept Branches</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {subNodes.map((node: any, idx: number) => {
-              const children = node.child_nodes || node.children || node.sub_nodes || node.sub_topics || node.sub_branches || [];
-              const branchTitle = node.title || node.name || node.branch_title || node.branch_name || node.node_id || `Branch #${idx + 1}`;
+              const children = node.child_nodes || node.children || node.sub_nodes || node.sub_branches || node.sub_topics || [];
+              const branchTitle = node.title || node.theme || node.name || node.branch_title || node.branch_name || node.node_id || `Branch #${idx + 1}`;
               return (
                 <div key={idx} className="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 hover:border-indigo-300 transition-all">
                   <div className="flex items-center justify-between border-b border-slate-100 pb-3">
@@ -50,62 +50,68 @@ export default function MindmapComponent({ data }: MindmapProps) {
                   {/* Nested Child Nodes / Sub-branches */}
                   {Array.isArray(children) && children.length > 0 && (
                     <div className="space-y-3 pt-2">
-                      {children.map((child: any, cIdx: number) => (
-                        <div key={cIdx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-2">
-                          <div className="text-xs font-bold text-indigo-900">{child.title || child.name || child.topic || child.sub_title || child.sub_topic || ''}</div>
-                          {child.details && <div className="text-xs text-slate-600 leading-relaxed">{child.details}</div>}
+                      {children.map((child: any, cIdx: number) => {
+                        const childTitle = child.title || child.concept || child.name || child.topic || child.sub_title || child.sub_topic || '';
+                        const details = child.details || child.explanation || child.full_explanation || '';
 
-                          {/* Key Points / Key Details (Hindi/Science schema) */}
-                          {Array.isArray(child.key_points) && child.key_points.length > 0 && (
-                            <ul className="list-disc list-inside text-xs text-slate-700 space-y-1 pt-1">
-                              {child.key_points.map((kp: string, kpIdx: number) => (
-                                <li key={kpIdx}>{kp}</li>
-                              ))}
-                            </ul>
-                          )}
+                        return (
+                          <div key={cIdx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-2">
+                            {childTitle && <div className="text-xs font-bold text-indigo-900">{childTitle}</div>}
 
-                          {Array.isArray(child.key_details) && child.key_details.length > 0 && (
-                            <ul className="list-disc list-inside text-xs text-slate-700 space-y-1 pt-1">
-                              {child.key_details.map((kd: string, kdIdx: number) => (
-                                <li key={kdIdx}>{kd}</li>
-                              ))}
-                            </ul>
-                          )}
+                            {/* Render details whether string or array */}
+                            {typeof details === 'string' && details && (
+                              <div className="text-xs text-slate-600 leading-relaxed">{details}</div>
+                            )}
+                            {Array.isArray(details) && details.length > 0 && (
+                              <ul className="list-disc list-inside text-xs text-slate-700 space-y-1">
+                                {details.map((d: string, dIdx: number) => (
+                                  <li key={dIdx}>{d}</li>
+                                ))}
+                              </ul>
+                            )}
 
-                          {/* Key Nodes (Maths schema) */}
-                          {Array.isArray(child.key_nodes) && child.key_nodes.length > 0 && (
-                            <ul className="list-disc list-inside text-xs text-slate-700 space-y-1 pt-1">
-                              {child.key_nodes.map((kn: string, knIdx: number) => (
-                                <li key={knIdx}>{kn}</li>
-                              ))}
-                            </ul>
-                          )}
+                            {/* Key Points / Key Details */}
+                            {Array.isArray(child.key_points) && child.key_points.length > 0 && (
+                              <ul className="list-disc list-inside text-xs text-slate-700 space-y-1 pt-1">
+                                {child.key_points.map((kp: string, kpIdx: number) => (
+                                  <li key={kpIdx}>{kp}</li>
+                                ))}
+                              </ul>
+                            )}
 
-                          {/* Rules / Formulas / Applications */}
-                          {(child.rule_or_formula || child.formula_or_rule || child.misconception_alert || child.real_world_application) && (
-                            <div className="text-[11px] font-medium text-indigo-700 bg-indigo-50/60 p-2.5 rounded-xl border border-indigo-100 space-y-1">
-                              {child.rule_or_formula && <div><strong>Rule:</strong> {child.rule_or_formula}</div>}
-                              {child.formula_or_rule && <div><strong>Formula:</strong> {child.formula_or_rule}</div>}
-                              {child.misconception_alert && <div className="text-rose-700"><strong>⚠️ Note:</strong> {child.misconception_alert}</div>}
-                              {child.real_world_application && <div className="text-emerald-700"><strong>💡 Application:</strong> {child.real_world_application}</div>}
-                            </div>
-                          )}
+                            {Array.isArray(child.key_details) && child.key_details.length > 0 && (
+                              <ul className="list-disc list-inside text-xs text-slate-700 space-y-1 pt-1">
+                                {child.key_details.map((kd: string, kdIdx: number) => (
+                                  <li key={kdIdx}>{kd}</li>
+                                ))}
+                              </ul>
+                            )}
 
-                          {/* Real world examples (Science schema) */}
-                          {Array.isArray(child.real_world_examples) && child.real_world_examples.length > 0 && (
-                            <div className="text-[11px] font-serif italic text-emerald-800 bg-emerald-50/50 p-2.5 rounded-xl border border-emerald-100">
-                              <strong>उदाहरण / Examples:</strong> {child.real_world_examples.join(' | ')}
-                            </div>
-                          )}
+                            {/* Experiments or Examples */}
+                            {Array.isArray(child.experiments_or_examples) && child.experiments_or_examples.length > 0 && (
+                              <div className="text-[11px] font-medium text-emerald-800 bg-emerald-50/60 p-2.5 rounded-xl border border-emerald-100 space-y-1 mt-2">
+                                <strong>💡 Activities &amp; Examples:</strong>
+                                <ul className="list-disc list-inside space-y-0.5 pt-1">
+                                  {child.experiments_or_examples.map((exp: string, eIdx: number) => (
+                                    <li key={eIdx}>{exp}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
 
-                          {/* Examples */}
-                          {Array.isArray(child.examples) && child.examples.length > 0 && (
-                            <div className="text-[11px] font-serif italic text-slate-500 pt-1">
-                              उदाहरण: {child.examples.join(' | ')}
-                            </div>
-                          )}
-                        </div>
-                      ))}
+                            {/* Key Terms */}
+                            {Array.isArray(child.key_terms) && child.key_terms.length > 0 && (
+                              <div className="flex flex-wrap gap-1.5 pt-1">
+                                {child.key_terms.map((kt: string, ktIdx: number) => (
+                                  <span key={ktIdx} className="px-2 py-0.5 rounded-md bg-indigo-50 border border-indigo-100 text-[10px] font-bold text-indigo-800">
+                                    {kt}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
