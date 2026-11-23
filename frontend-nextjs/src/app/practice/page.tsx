@@ -172,7 +172,10 @@ export default function PracticeArenaPage() {
       opt === currentQ.answer ||
       opt === currentQ.correctAnswer ||
       opt === currentQ.correct_answer ||
-      opt === currentQ.correct_option
+      opt === currentQ.correct_option ||
+      (typeof currentQ.correct_answer === 'number' && currentQ.options?.[currentQ.correct_answer] === opt) ||
+      (typeof currentQ.correctAnswer === 'number' && currentQ.options?.[currentQ.correctAnswer] === opt) ||
+      (typeof currentQ.answer === 'number' && currentQ.options?.[currentQ.answer] === opt)
     );
 
     if (isCorrect) {

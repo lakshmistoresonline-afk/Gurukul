@@ -1,57 +1,92 @@
 [
   {
-    "question": "From point Q, length of tangent to circle is 24 cm and distance from center is 25 cm. Find radius.",
+    "quiz_id": "QZ_10_1",
+    "difficulty_level": "Standard",
+    "question_type": "MCQ",
+    "category": "Foundational Recall & Identification",
+    "question": "Which visual defect causes a person to see near objects clearly but struggle with distant objects?",
     "options": [
-      "r = √(25^2 - 24^2) = √(625 - 576) = √49 = 7 cm.",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
+      "Hypermetropia",
+      "Myopia",
+      "Presbyopia",
+      "Cataract"
     ],
-    "correct_answer": 0,
-    "explanation": "r = √(25^2 - 24^2) = √(625 - 576) = √49 = 7 cm."
+    "correct_answer": "Myopia",
+    "explanation": "Myopia (near-sightedness) focuses parallel light rays from distant objects in front of the retina rather than on it."
   },
   {
-    "question": "If TP and TQ are tangents to circle with center O so that ∠POQ = 110°, then ∠PTQ is:",
+    "quiz_id": "QZ_10_2",
+    "difficulty_level": "Standard",
+    "question_type": "MCQ",
+    "category": "Foundational Recall & Identification",
+    "question": "The splitting of white light into its seven constituent colors when passing through a glass prism is called _______.",
     "options": [
-      "Correct concept application",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
+      "Dispersion",
+      "Option B",
+      "Option C",
+      "Option D"
     ],
-    "correct_answer": 0,
-    "explanation": "B"
+    "correct_answer": "Dispersion",
+    "explanation": "Refractive index varies with light wavelength, causing different colors (VIBGYOR) to bend at distinct angles through glass."
   },
   {
-    "question": "Prove that in two concentric circles, chord of larger circle touching smaller circle is bisected at point of contact.",
+    "quiz_id": "QZ_10_3",
+    "difficulty_level": "Standard",
+    "question_type": "MCQ",
+    "category": "Foundational Recall & Identification",
+    "question": "True or False: Planets twinkle at night due to atmospheric refraction of light.",
     "options": [
-      "OP ⊥ AB (radius ⊥ tangent). Perpendicular from center to chord bisects chord => AP = PB.",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
+      "False",
+      "Option B",
+      "Option C",
+      "Option D"
     ],
-    "correct_answer": 0,
-    "explanation": "OP ⊥ AB (radius ⊥ tangent). Perpendicular from center to chord bisects chord => AP = PB."
+    "correct_answer": "False",
+    "explanation": "Planets are close extended sources. Brightness variations from individual points average out to zero, so planets do not twinkle."
   },
   {
-    "question": "Prove that the tangents drawn at the ends of a diameter of a circle are parallel.",
+    "quiz_id": "QZ_10_4",
+    "difficulty_level": "Standard",
+    "question_type": "MCQ",
+    "category": "Conceptual Understanding & Application",
+    "question": "Explain the optical mechanism responsible for advanced sunrise and delayed sunset.",
     "options": [
-      "Radius ⊥ Tangent => ∠1 = 90° and ∠2 = 90°. Since alternate interior angles are equal (∠1 = ∠2 = 90°), the tangent lines ",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
+      "Light rays from the sun below the horizon pass through atmospheric air layers of increasing density, bending downward by atmospheric refraction so the sun appears ~2 minutes earlier.",
+      "Option B",
+      "Option C",
+      "Option D"
     ],
-    "correct_answer": 0,
-    "explanation": "Radius ⊥ Tangent => ∠1 = 90° and ∠2 = 90°. Since alternate interior angles are equal (∠1 = ∠2 = 90°), the tangent lines must be parallel."
+    "correct_answer": "Light rays from the sun below the horizon pass through atmospheric air layers of increasing density, bending downward by atmospheric refraction so the sun appears ~2 minutes earlier.",
+    "explanation": "Apparent sun position stays elevated above true horizon by about 0.5 degrees at both sunrise and sunset."
   },
   {
-    "question": "Prove that the parallelogram circumscribing a circle is a rhombus.",
+    "quiz_id": "QZ_10_5",
+    "difficulty_level": "Standard",
+    "question_type": "MCQ",
+    "category": "Conceptual Understanding & Application",
+    "question": "A myopic person cannot see objects beyond 1.2 m distinctly. What type and power of lens is needed to restore normal vision?",
     "options": [
-      "AB + CD = AD + BC (equal tangent sums). In parallelogram, AB = CD and AD = BC => 2AB = 2AD => AB = AD. Parallelogram wit",
-      "Incorrect option - review chapter definitions",
-      "Incomplete formulation",
-      "None of the above"
+      "Diverging Concave Lens of focal length f = -1.2 m and Power P = -0.83 Dioptres.",
+      "Option B",
+      "Option C",
+      "Option D"
     ],
-    "correct_answer": 0,
-    "explanation": "AB + CD = AD + BC (equal tangent sums). In parallelogram, AB = CD and AD = BC => 2AB = 2AD => AB = AD. Parallelogram with adjacent sides equal is a rhombus."
+    "correct_answer": "Diverging Concave Lens of focal length f = -1.2 m and Power P = -0.83 Dioptres.",
+    "explanation": "To see infinite distances, lens must form virtual image of infinity at myopic far point (v = -1.2 m, u = -infinity). 1/f = 1/(-1.2) - 0 => f = -1.2 m. Power P = 1 / (-1.2) = -0.83 D."
+  },
+  {
+    "quiz_id": "QZ_10_6",
+    "difficulty_level": "Standard",
+    "question_type": "MCQ",
+    "category": "Advanced Analysis & Competency",
+    "question": "Explain Rayleigh scattering and describe why the clear sky appears blue at midday but reddish during sunset, while deep space appears black to astronauts.",
+    "options": [
+      "Rayleigh scattering intensity is inversely proportional to wavelength^4. Midday: Fine atmospheric air molecules scatter shorter blue wavelengths strongly. Sunset: Sunlight travels longer atmospheric distance; blue light scatters away, leaving longer red wavelengths to reach eyes. Space: No atmosphere to scatter light, so sky appears black.",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "correct_answer": "Rayleigh scattering intensity is inversely proportional to wavelength^4. Midday: Fine atmospheric air molecules scatter shorter blue wavelengths strongly. Sunset: Sunlight travels longer atmospheric distance; blue light scatters away, leaving longer red wavelengths to reach eyes. Space: No atmosphere to scatter light, so sky appears black.",
+    "explanation": "Wavelength difference (Red ~700nm vs Blue ~400nm) combined with atmospheric path length determines sky color."
   }
 ]
