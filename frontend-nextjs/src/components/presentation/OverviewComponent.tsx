@@ -135,30 +135,12 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                 </span>
               </div>
 
-              <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner max-h-[420px]">
-                {isNotebookLm || videoLoadError ? (
-                  <div className="w-full h-full p-6 sm:p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in duration-200">
-                    <div className="w-14 h-14 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-2xl shadow-lg border border-teal-400/30">
-                      ✨
-                    </div>
-                    <div className="space-y-1 max-w-md">
-                      <h4 className="text-base sm:text-lg font-black text-white">{data.video_title || chapterTitle || 'NCERT Interactive Video Studio'}</h4>
-                      <p className="text-xs text-teal-200/80 font-medium">Interactive Video &amp; Audio Studio Lesson for Class {data.grade || '5'} {subject || 'NCERT'}</p>
-                    </div>
-                    <a
-                      href={`/studio/${maskedToken}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-teal-400 to-emerald-400 hover:from-teal-300 hover:to-emerald-300 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
-                    >
-                      <span>Launch Studio Video Lesson 🔒 ↗</span>
-                    </a>
-                  </div>
-                ) : isYoutube ? (
+              <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner max-h-[460px]">
+                {unmaskedUrl.startsWith('http') ? (
                   <iframe
-                    src={unmaskedUrl.replace('watch?v=', 'embed/')}
-                    title="NCERT Video Lesson"
-                    className="w-full h-full border-0"
+                    src={unmaskedUrl}
+                    title={data.video_title || chapterTitle || 'NCERT Studio Video Lesson'}
+                    className="w-full h-full border-0 rounded-2xl"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
@@ -169,7 +151,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                     onContextMenu={(e) => e.preventDefault()}
                     onError={() => setVideoLoadError(true)}
                     preload="metadata"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain rounded-2xl"
                     poster="/illustrations/chapter_overview.svg"
                   >
                     <source src={unmaskedUrl} type="video/mp4" />
@@ -197,15 +179,20 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
               </div>
               <p className="text-xs font-bold text-slate-900">{data.image_asset.title}</p>
 
-              {/* Render Chapter Diagram Image if URL/Filename exists */}
+              {/* Render Chapter Diagram Image Directly with Fallbacks */}
               {(data.image_asset.asset_url || data.image_asset.url || data.image_asset.filename) && (
                 <div className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={data.image_asset.asset_url || data.image_asset.url || `/assets/images/${data.image_asset.filename}`}
                     alt={data.image_asset.alt_text || data.image_asset.title || 'Chapter Diagram'}
-                    className="max-h-[360px] w-auto object-contain rounded-xl shadow-xs"
-                    onError={(e) => { (e.target as HTMLElement).style.display = 'none'; }}
+                    className="max-h-[380px] w-auto object-contain rounded-xl shadow-xs"
+                    onError={(e) => {
+                      const img = e.target as HTMLImageElement;
+                      if (data.image_asset.filename && !img.src.includes(data.image_asset.filename)) {
+                        img.src = `/assets/images/${data.image_asset.filename}`;
+                      }
+                    }}
                   />
                 </div>
               )}
