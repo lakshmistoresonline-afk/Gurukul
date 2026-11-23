@@ -112,36 +112,71 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
             </div>
           </div>
 
-          {/* Chapter Video Lesson Banner (Compact Small Icon Row) */}
+          {/* Chapter Video Lesson Player Card (Compact Entry with Full Player Preservation & Security) */}
           {maskedToken && (
-            <div className="p-4 sm:p-5 bg-gradient-to-r from-slate-900 via-indigo-950 to-teal-950 rounded-2xl border border-teal-500/30 text-white shadow-md flex flex-wrap items-center justify-between gap-4 select-none" onContextMenu={(e) => e.preventDefault()}>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-xl shrink-0 border border-teal-400/30">
-                  🎥
-                </div>
-                <div className="space-y-0.5">
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-black uppercase font-mono tracking-wider text-teal-300 bg-teal-900/60 px-2 py-0.5 rounded border border-teal-500/30">
-                      NCERT Video Lesson
-                    </span>
+            <div className="p-4 sm:p-6 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 select-none" onContextMenu={(e) => e.preventDefault()}>
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center text-lg shrink-0 border border-teal-200">
+                    🎥
                   </div>
-                  <h4 className="text-sm sm:text-base font-black text-white leading-snug">
-                    {data.video_title || chapterTitle || 'Interactive Video Lesson'}
-                  </h4>
+                  <div>
+                    <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase flex items-center gap-2">
+                      <span>🔒 NCERT {isNotebookLm || videoLoadError ? 'Protected NotebookLM Studio Lesson' : 'Protected Video Lesson'}</span>
+                    </h3>
+                    <h4 className="text-sm font-black text-slate-900 leading-snug">
+                      {data.video_title || chapterTitle || 'Interactive Video Lesson'}
+                    </h4>
+                  </div>
                 </div>
+
+                <span className="text-[10px] font-mono text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full font-bold border border-teal-200 shrink-0">
+                  {isNotebookLm || videoLoadError ? '✨ Encrypted Studio Stream' : 'Protected HD Lesson'}
+                </span>
               </div>
 
-              <button
-                onClick={() => {
-                  const target = (unmaskedUrl && unmaskedUrl.startsWith('http')) ? unmaskedUrl : 'https://notebooklm.link.google/iVfGXm6LhVI6';
-                  if (typeof window !== 'undefined') {
-                    window.open(target, '_blank', 'noopener,noreferrer');
-                  }
-                }}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-400 to-emerald-400 hover:from-teal-300 hover:to-emerald-300 text-slate-950 font-black text-xs shadow-lg transition-all flex items-center gap-1.5 cursor-pointer shrink-0 border border-white/20"
-              >
-                <span>Watch Video Lesson 🔒 ↗</span>
-              </button>
+              <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner max-h-[420px]">
+                {isNotebookLm || videoLoadError ? (
+                  <div className="w-full h-full p-6 sm:p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in duration-200">
+                    <div className="w-14 h-14 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-2xl shadow-lg border border-teal-400/30">
+                      ✨
+                    </div>
+                    <div className="space-y-1 max-w-md">
+                      <h4 className="text-base sm:text-lg font-black text-white">{data.video_title || chapterTitle || 'NCERT Interactive Video Studio'}</h4>
+                      <p className="text-xs text-teal-200/80 font-medium">Interactive Video &amp; Audio Studio Lesson for Class {data.grade || '5'} {subject || 'NCERT'}</p>
+                    </div>
+                    <a
+                      href={`/studio/${maskedToken}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-teal-400 to-emerald-400 hover:from-teal-300 hover:to-emerald-300 text-slate-950 font-black text-xs shadow-xl transition-all flex items-center gap-2 cursor-pointer border border-white/20"
+                    >
+                      <span>Launch Studio Video Lesson 🔒 ↗</span>
+                    </a>
+                  </div>
+                ) : isYoutube ? (
+                  <iframe
+                    src={unmaskedUrl.replace('watch?v=', 'embed/')}
+                    title="NCERT Video Lesson"
+                    className="w-full h-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : (
+                  <video
+                    controls
+                    controlsList="nodownload"
+                    onContextMenu={(e) => e.preventDefault()}
+                    onError={() => setVideoLoadError(true)}
+                    preload="metadata"
+                    className="w-full h-full object-contain"
+                    poster="/illustrations/chapter_overview.svg"
+                  >
+                    <source src={unmaskedUrl} type="video/mp4" />
+                    Your browser does not support HTML5 video playback.
+                  </video>
+                )}
+              </div>
             </div>
           )}
 
@@ -185,7 +220,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
               <span>🧠 Pause & Reflect Checkpoint</span>
             </div>
             <h4 className="text-sm font-bold text-slate-900">
-              How confident are you in explaining the core theme of &ldquo;{chapterTitle}&rdquo;?
+              How confident are you in explaining the core theme of &ldquo;{chapterTitle || data.chapter_title || 'this chapter'}&rdquo;?
             </h4>
             <div className="flex flex-wrap gap-3 pt-1">
               <button

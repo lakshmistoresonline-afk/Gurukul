@@ -1,0 +1,175 @@
+{
+  "chapter_number": 14,
+  "chapter_title": "Probability",
+  "zero_omission_notes": {
+    "summary": "Covers theoretical probability P(E) = n(E)/n(S), complementary events P(E) + P(Ē) = 1, impossible events (P=0), and certain events (P=1).",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "14.1 Classical Probability Definition",
+        "full_explanation": "For equally likely outcomes: P(E) = Number of favorable outcomes / Total possible outcomes. 0 <= P(E) <= 1.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Formula Box",
+            "title": "Probability Definition",
+            "content": "P(E) = n(E) / n(S)"
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "14.2 Complementary Events",
+        "full_explanation": "Event 'not E' is Ē. P(E) + P(Ē) = 1. Impossible event P=0; Certain event P=1.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Rule Box",
+            "title": "Complement Rule",
+            "content": "P(E) + P(not E) = 1"
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-1401",
+      "aim_or_objective": "Calculate probability of face card from 52-card deck.",
+      "materials_or_prerequisites": [
+        "52 card deck breakdown"
+      ],
+      "procedure_or_steps": [
+        "Total cards n(S) = 52",
+        "Face cards (Jacks, Queens, Kings) = 12",
+        "P(Face card) = 12 / 52 = 3 / 13"
+      ],
+      "observations_or_results": "P(Face card) = 3/13.",
+      "conclusion_or_principle": "Classical ratio of favorable to total outcomes."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 14.1 Two Dice Sample Space",
+        "labels_and_components": [
+          "36 Grid Pairs (1,1) to (6,6)"
+        ],
+        "drawing_or_reading_instructions": "Draw 6x6 grid of ordered pairs.",
+        "structural_or_conceptual_explanation": "Sample space mapping for 2 dice."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "52-Card Deck Breakdown Table",
+        "headers": [
+          "Suit",
+          "Color",
+          "Number Cards",
+          "Ace",
+          "Face Cards",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Spades",
+            "Black",
+            "9",
+            "1",
+            "3",
+            "13"
+          ],
+          [
+            "Hearts",
+            "Red",
+            "9",
+            "1",
+            "3",
+            "13"
+          ],
+          [
+            "Diamonds",
+            "Red",
+            "9",
+            "1",
+            "3",
+            "13"
+          ],
+          [
+            "Clubs",
+            "Black",
+            "9",
+            "1",
+            "3",
+            "13"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Probability Range",
+      "definition_or_meaning": "Probability value is always between 0 and 1 inclusive.",
+      "si_unit_or_notation": "0 <= P(E) <= 1",
+      "example_or_application": "P = 0 (impossible), P = 1 (certain)"
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 14.1 Q1",
+        "question": "Complete: P(E) + P(not E) = ____.",
+        "answer": "1."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which of the following cannot be the probability of an event?",
+        "options": [
+          "A) 2/3",
+          "B) -1.5",
+          "C) 15%",
+          "D) 0.7"
+        ],
+        "answer": "B",
+        "explanation": "Probability can never be negative."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Die thrown once. Find probability of getting a prime number.",
+        "answer": "S = {1, 2, 3, 4, 5, 6}. Primes = {2, 3, 5} => 3 outcomes. P = 3/6 = 1/2."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Box contains 5 red, 8 white, 4 green marbles. One drawn at random. Find P(not green).",
+        "answer": "Total = 17. Green = 4 => P(green) = 4/17. P(not green) = 1 - 4/17 = 13/17."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "Two dice thrown simultaneously. Find probability of getting: (i) sum 8, (ii) sum 13, (iii) sum <= 12.",
+        "answer": "n(S) = 36. (i) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36. (ii) Sum 13: 0/36 = 0. (iii) Sum <= 12: all 36 outcomes => 36/36 = 1."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "Box contains 90 discs numbered 1 to 90. One disc drawn at random.",
+        "qa": [
+          {
+            "question": "Find probability of getting a two-digit number.",
+            "answer": "Discs 10 to 90 = 81 discs. P = 81/90 = 9/10."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Expressing probability as a negative number or value greater than 1.",
+        "correct_fact_or_method": "Probability values MUST lie strictly between 0 and 1 inclusive."
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "chapter_number": 14,
+  "chapter_title": "Maps and Locations",
+  "source_file": "eemm114.pdf",
+  "theme": "Spatial Orientation & Grid Coordinates",
+  "conceptual_foundation": {
+    "introduction": "This chapter develops spatial navigation and cartographic literacy. Students study bird migrations (Siberian Cranes), local neighborhood routes, the 4 cardinal (N, S, E, W) and 4 intermediate directions, compass rose mechanics, Delhi Metro map legend decoding, and Cartesian grid coordinate systems (x, y) with Origin (0,0).",
+    "core_concepts": [
+      {
+        "concept": "Cardinal & Intermediate Direction Framework",
+        "explanation": "Primary cardinal directions: North, South, East, West. Intermediate directions: North-East (NE), South-East (SE), South-West (SW), North-West (NW). Opposite pairs: N-S, E-W, NE-SW, NW-SE.\n\n[Instructional Dialogue Simulation]\nTeacher: 'If you face East and make a 90° right turn, where are you facing?'\nRaman: 'South!'\nTeacher: 'What direction is opposite to North-East?'\nSheela: 'South-West!'",
+        "example": "Opposite Pairs:\n• North <-> South.\n• East <-> West.\n• North-East <-> South-West."
+      },
+      {
+        "concept": "Compass Rose & Solar Orientation",
+        "explanation": "The sun rises in the East and sets in the West. Magnetic compass needles align along the Earth's magnetic North-South axis.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Standing facing the morning rising sun, what directions are your arms pointing?'\nAnish: 'Facing East! Back faces West, left arm points North, right arm points South!'",
+        "example": "Solar Alignment: Facing Sunrise = East -> Right Arm = South, Left Arm = North."
+      },
+      {
+        "concept": "Cartesian Grid Coordinate System (x, y)",
+        "explanation": "Locating positions on a grid using coordinate pairs (x, y), where x represents horizontal column distance and y represents vertical row distance from Origin (0, 0).\n\n[Instructional Dialogue Simulation]\nTeacher: 'From Origin (0,0), move 4 units right and 3 units up. What are your coordinates?'\nSheela: '(4, 3)! 4 is horizontal column x, 3 is vertical row y!'",
+        "example": "Coordinates (4, 3): x = 4 (Right), y = 3 (Up) from (0,0)."
+      },
+      {
+        "concept": "Taxicab Grid Distance Calculation",
+        "explanation": "Distance traveled along grid lines equals total horizontal plus total vertical block steps: Distance = |x2 - x1| + |y2 - y1|.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Travel from (1, 2) to (5, 5) along grid lines. How many blocks?'\nRaman: 'Horizontal = 5 - 1 = 4 blocks. Vertical = 5 - 2 = 3 blocks. Total = 4 + 3 = 7 blocks!'",
+        "example": "Taxicab Distance from (1,2) to (5,5) = (5-1) + (5-2) = 4 + 3 = 7 blocks."
+      },
+      {
+        "concept": "Map Scale & Legend Symbol Decoding",
+        "explanation": "Map legends define symbols, color lines (e.g., Metro routes), and scale ratios (1 cm = N km) to decode real-world geographical relationships.\n\n[Instructional Dialogue Simulation]\nTeacher: 'On a city map with scale 1 cm = 5 km, two parks are 6 cm apart. Ground distance?'\nAnish: '6 x 5 = 30 km!'",
+        "example": "Scale 1 cm = 5 km -> 6 cm map distance = 30 km ground distance."
+      }
+    ]
+  },
+  "key_formulas_and_rules": [
+    "Coordinate Format: (x, y) = (Horizontal Column, Vertical Row)",
+    "Origin Point = (0, 0)",
+    "Taxicab Grid Distance = |x2 - x1| + |y2 - y1|",
+    "Opposite Direction Rule: Turn 180° reverses facing direction",
+    "Ground Distance = Map Distance x Scale Factor"
+  ],
+  "real_world_applications": "City transit route planning (Delhi Metro map), bird migration tracking, architectural floor plan reading, and GPS navigation.",
+  "image_asset": {
+    "chapter_number": 14,
+    "image_id": "ch14_cartesian_grid",
+    "file_name": "ch14_cartesian_grid.png",
+    "local_url": "/assets/images/ch14_cartesian_grid.png",
+    "aspect_ratio": "16:9",
+    "title": "Cartesian Grid Coordinates & Navigation Map",
+    "description": "Cartesian coordinate grid system with origin (0,0), X-axis, Y-axis, and plotted coordinate points (x, y).",
+    "hotspots": [
+      {
+        "label": "Origin Point (0,0)",
+        "x_percent": 20.0,
+        "y_percent": 80.0,
+        "w_percent": 10.0,
+        "h_percent": 10.0
+      },
+      {
+        "label": "Horizontal X-Axis",
+        "x_percent": 50.0,
+        "y_percent": 82.0,
+        "w_percent": 50.0,
+        "h_percent": 5.0
+      },
+      {
+        "label": "Vertical Y-Axis",
+        "x_percent": 18.0,
+        "y_percent": 45.0,
+        "w_percent": 5.0,
+        "h_percent": 50.0
+      },
+      {
+        "label": "Plotted Location Point (4,3)",
+        "x_percent": 60.0,
+        "y_percent": 50.0,
+        "w_percent": 8.0,
+        "h_percent": 8.0
+      }
+    ]
+  }
+}

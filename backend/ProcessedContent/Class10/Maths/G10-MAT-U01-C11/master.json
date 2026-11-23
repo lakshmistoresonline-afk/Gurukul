@@ -1,0 +1,162 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "Electricity",
+  "zero_omission_notes": {
+    "summary": "Defines electric current (I=Q/t), potential difference (V=W/Q), Ohm's law (V=IR), factors affecting resistance (length, area, resistivity rho), series (Rs=sum R) and parallel (1/Rp=sum 1/R) combinations, Joule's heating (H=I^2Rt), electric power (P=VI), and commercial unit kWh.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "11.1 Electric Current & Potential",
+        "full_notes": "Current is rate of flow of electric charge (I = Q/t, unit Ampere A). Potential difference V between two points is work done in moving unit charge (V = W/Q, unit Volt V).",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Instrument Note",
+            "title": "Ammeter vs Voltmeter",
+            "content": "Ammeter measures current and is connected in series (low resistance). Voltmeter measures potential difference and is connected in parallel (high resistance)."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "Activity 11.1: Verification of Ohm's Law",
+      "aim_or_objective": "To plot V-I graph and determine resistance of a nichrome wire.",
+      "materials_or_prerequisites": [
+        "Nichrome wire",
+        "Ammeter",
+        "Voltmeter",
+        "4 dry cells",
+        "Plug key"
+      ],
+      "procedure_or_steps": [
+        "Connect circuit with 1 cell; record V and I.",
+        "Repeat by increasing cell count to 2, 3, and 4 cells.",
+        "Plot V vs I graph."
+      ],
+      "observations_or_results": "V-I graph is a straight line passing through origin; ratio V/I remains constant.",
+      "conclusion_or_principle": "Current I is directly proportional to potential difference V (Ohm's Law)."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 11.6 Resistors in Series vs Parallel",
+        "labels_and_components": [
+          "Series circuit (single pathway)",
+          "Parallel circuit (multiple branches)",
+          "Equivalent Rs = R1+R2+R3",
+          "Equivalent 1/Rp = 1/R1+1/R2+1/R3"
+        ],
+        "drawing_or_reading_instructions": "Draw 3 resistors connected end-to-end for series, and connected across common nodes for parallel.",
+        "structural_or_conceptual_explanation": "In series, current is same across all resistors; in parallel, voltage is same across all branches."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Resistivity of Materials at 20 deg C",
+        "headers": [
+          "Category",
+          "Material",
+          "Resistivity (ohm-m)"
+        ],
+        "rows": [
+          [
+            "Conductor",
+            "Silver",
+            "1.60 x 10^-8"
+          ],
+          [
+            "Conductor",
+            "Copper",
+            "1.62 x 10^-8"
+          ],
+          [
+            "Alloy",
+            "Nichrome",
+            "100 x 10^-6"
+          ],
+          [
+            "Insulator",
+            "Glass",
+            "10^10 to 10^14"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Resistivity (rho)",
+      "definition_or_meaning": "The intrinsic electrical resistance of a conductor of unit length and unit cross-sectional area; SI unit Ohm-meter (ohm-m).",
+      "si_unit_or_notation": "Ohm-meter (ohm-m)",
+      "example_or_application": "Metals have low resistivity (10^-8 ohm-m); insulators have high (10^12 ohm-m)."
+    },
+    {
+      "term_or_concept": "Ohm's Law & Joule's Law",
+      "definition_or_meaning": "V = I x R  ;  H = I^2 x R x t",
+      "si_unit_or_notation": "V = potential difference, I = current, R = resistance, H = heat energy, t = time.",
+      "example_or_application": "Calculates circuit parameters and thermal dissipation in heaters/fuses."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Q1",
+        "question": "A piece of wire of resistance R is cut into 5 equal parts. These parts are then connected in parallel. Ratio R / R' is?",
+        "answer": "Each part has resistance r = R/5. In parallel, 1/R' = 5 x (1 / (R/5)) = 25/R => R' = R/25. Ratio R / R' = 25. Option (d) 25 is correct."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "What is the unit of electric power?",
+        "options": [
+          "Volt",
+          "Joule",
+          "Watt",
+          "Ohm"
+        ],
+        "answer": "Watt",
+        "explanation": "1 Watt = 1 Joule / second = 1 Volt x 1 Ampere."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Why are copper and aluminium wires usually employed for electricity transmission?",
+        "answer": "Copper and aluminium have extremely low electrical resistivities (~10^-8 ohm-m), ensuring minimal heating losses (I^2Rt) during long distance current transmission."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Convert 1 kWh into Joules.",
+        "answer": "1 kWh = 1 kW x 1 h = 1000 W x 3600 s = 3.6 x 10^6 Joules."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "Derive equivalent resistance formula for three resistors R1, R2, R3 connected in parallel and list two advantages of parallel domestic wiring.",
+        "answer": "Derivation: In parallel, total current I = I1 + I2 + I3. By Ohm's law, I = V/Rp, I1=V/R1, I2=V/R2, I3=V/R3. Substituting: V/Rp = V/R1 + V/R2 + V/R3 => 1/Rp = 1/R1 + 1/R2 + 1/R3. Advantages: 1. Each appliance gets full mains voltage (220V). 2. Independent switches; failure of one appliance does not break other circuits."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "An electric heater rated 2kW, 220V is operated 5 hours daily for 30 days.",
+        "qa": [
+          {
+            "question": "Calculate total energy consumption in kWh and bill cost at Rs 6 per unit.",
+            "answer": "Energy E = Power x Time = 2 kW x (5 h x 30) = 300 kWh (units). Cost = 300 x Rs 6 = Rs 1800."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Adding parallel resistances directly like series.",
+        "correct_fact_or_method": "Always compute reciprocals 1/R1 + 1/R2 and invert the final sum to get Rp."
+      }
+    ]
+  }
+}
