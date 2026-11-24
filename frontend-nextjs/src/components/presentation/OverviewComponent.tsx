@@ -42,7 +42,29 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
   const isNotebookLm = isNotebookLmVideo(maskedToken);
   const isYoutube = isYoutubeVideo(maskedToken);
 
-  const imageAsset = data.image_asset || data.visual_asset || data.chapter_image_assets || data.image_assets_catalog || null;
+  const rawImageAsset = data.image_asset || data.visual_asset || data.chapter_image_assets || data.image_assets_catalog || null;
+  const chNum = data.chapter_number || 1;
+  const chNumStr = String(chNum).padStart(2, '0');
+
+  // Universal Fallback Diagram Image Guarantee
+  const imageAsset = rawImageAsset || {
+    title: `${data.chapter_title || chapterTitle || 'Chapter'} Interactive Concept Diagram`,
+    asset_url: `/assets/images/ch${chNumStr}_concept_map.png`,
+    filename: `ch${chNumStr}_concept_map.png`,
+    type: "16:9 Diagram",
+    hotspots: [
+      {
+        id: "hs_1",
+        label: "Core Conceptual Mechanism",
+        tooltip_explanation: `Interactive concept hotspot detailing key mechanisms and learning goals for ${data.chapter_title || chapterTitle || 'this chapter'}.`
+      },
+      {
+        id: "hs_2",
+        label: "Learning Takeaway & Application",
+        tooltip_explanation: `Essential learning takeaways and practical applications for ${data.chapter_title || chapterTitle || 'this chapter'}.`
+      }
+    ]
+  };
 
   const subjLower = (subject || '').toLowerCase();
   const subjectIllustration = subjLower.includes('sci')
