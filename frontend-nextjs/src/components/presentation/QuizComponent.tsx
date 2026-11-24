@@ -121,6 +121,11 @@ export default function QuizComponent({ quiz }: QuizProps) {
             }
           }
 
+          optionsArr = optionsArr.filter(opt => {
+            const s = String(opt).trim();
+            return s && !s.startsWith('Option ') && s.toLowerCase() !== 'option b' && s.toLowerCase() !== 'option c' && s.toLowerCase() !== 'option d';
+          });
+
           let correctAnswer = rawCorrect;
           if (rawCorrect && Array.isArray(q.options)) {
             const matchedOpt = q.options.find((opt: string) => opt.startsWith(`${rawCorrect})`) || opt.startsWith(`${rawCorrect}:`) || opt === rawCorrect);
