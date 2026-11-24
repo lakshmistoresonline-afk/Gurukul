@@ -1,0 +1,74 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "Data Handling and Bar Graphs",
+  "source_file": "eemm111.pdf",
+  "theme": "Perimeter vs Area Models",
+  "conceptual_foundation": {
+    "introduction": "This chapter clarifies the fundamental distinction between perimeter (1D boundary length) and area (2D surface region covered). Set in the creative context of designing a patchwork quilt, students derive formulas for rectangles and squares, use grid paper for square-tiling counts, discover that shapes with equal area can have different perimeters, and establish the square area optimization rule.",
+    "core_concepts": [
+      {
+        "concept": "Perimeter Definition & Boundary Formulas",
+        "explanation": "Perimeter is the total boundary length surrounding a 2D closed region. Measured in linear units (cm, m). Rectangle Perimeter = 2 x (Length + Breadth); Square Perimeter = 4 x Side.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Find perimeter of a rectangular quilt tablecloth 2 m long and 1.5 m wide.'\nRaman: 'Perimeter = 2 x (2 + 1.5) = 2 x 3.5 = 7 metres of lace boundary needed!'",
+        "example": "P = 2 x (2 + 1.5) = 7 m."
+      },
+      {
+        "concept": "Area Definition & Surface Region Formulas",
+        "explanation": "Area is the total surface region enclosed within a 2D boundary. Measured in square units (sq cm, sq m). Rectangle Area = Length x Breadth; Square Area = Side x Side (Side^2).\n\n[Instructional Dialogue Simulation]\nTeacher: 'Find area of a square quilt tile with side 8 cm.'\nSheela: 'Area = Side x Side = 8 x 8 = 64 square centimetres!'",
+        "example": "A = 8 x 8 = 64 sq cm."
+      },
+      {
+        "concept": "Grid Square Tiling & Partial Square Rules",
+        "explanation": "Estimating area on grid paper: Count full unit squares as 1, count 2 half-squares as 1 full square, ignore squares covering less than half, count squares covering more than half as 1.\n\n[Instructional Dialogue Simulation]\nTeacher: 'A leaf covers 8 full squares and 6 half squares on grid paper. What is its estimated area?'\nAnish: '8 + (6 / 2) = 8 + 3 = 11 square units!'",
+        "example": "8 full + 6 half = 8 + 3 = 11 sq units."
+      },
+      {
+        "concept": "Independence of Area and Perimeter",
+        "explanation": "Shapes with identical surface area can have vastly different perimeter boundary lengths, and vice versa.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Compare a 1x12 rectangle and a 3x4 rectangle. Both have area 12 sq m!'\nRaman: '1x12 Perimeter = 2(1+12) = 26 m! 3x4 Perimeter = 2(3+4) = 14 m! Same area, totally different perimeters!'",
+        "example": "Area = 12 sq m -> P(1x12) = 26 m vs P(3x4) = 14 m."
+      },
+      {
+        "concept": "Area Optimization Rule for Fixed Perimeters",
+        "explanation": "For a fixed boundary perimeter, a square shape maximizes the enclosed surface area compared to any non-square rectangle.\n\n[Instructional Dialogue Simulation]\nTeacher: 'You have 20 m of fence wire. Which rectangle gives the largest garden area?'\nSheela: 'Perimeter = 20 m -> L + B = 10 m. Options: 9x1=9 sq m, 8x2=16 sq m, 7x3=21 sq m, 6x4=24 sq m, 5x5=25 sq m (Square)!'\nTeacher: 'The square yields maximum area—25 sq m!'",
+        "example": "Fixed P = 20 m -> Max Area = Square (5x5 = 25 sq m)."
+      }
+    ]
+  },
+  "key_formulas_and_rules": [
+    "Perimeter of Rectangle = 2 x (Length + Breadth)",
+    "Perimeter of Square = 4 x Side",
+    "Area of Rectangle = Length x Breadth",
+    "Area of Square = Side x Side (Side^2)",
+    "Grid Tiling Rule: 2 Half Squares = 1 Full Square Unit",
+    "Square Optimization Rule: Square maximizes area for a fixed perimeter",
+    "Compound L-Shaped Area Decomposition: Total Area = Area(Rectangle A) + Area(Rectangle B). Fixed Perimeter Area Optimization: A square maximizes surface area for any given perimeter."
+  ],
+  "real_world_applications": "Quilt patchwork border stitching, room floor tile estimation, garden fencing boundary planning, and tablecloth lace trimming.",
+  "image_asset": {
+    "chapter_number": 11,
+    "image_id": "ch11_perimeter_area",
+    "file_name": "ch11_perimeter_area.png",
+    "local_url": "/assets/images/ch11_perimeter_area.png",
+    "aspect_ratio": "16:9",
+    "title": "1D Perimeter Boundary vs 2D Enclosed Surface Area",
+    "description": "Comparison of 1D outer boundary perimeter (16 cm) and 2D enclosed grid surface area (15 sq cm).",
+    "hotspots": [
+      {
+        "label": "1D Boundary Perimeter Line",
+        "x_percent": 30.0,
+        "y_percent": 15.0,
+        "w_percent": 40.0,
+        "h_percent": 8.0
+      },
+      {
+        "label": "2D Grid Surface Area Tiles",
+        "x_percent": 50.0,
+        "y_percent": 50.0,
+        "w_percent": 35.0,
+        "h_percent": 30.0
+      }
+    ]
+  },
+  "grade": "5",
+  "subject": "Maths",
+  "chapter_id": "G5-MAT-U04-C11"
+}

@@ -1,0 +1,89 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "How Quantities Combine: Understanding Data",
+  "mind_map": {
+    "root_topic": "How Quantities Combine: Understanding Data",
+    "branches": [
+      {
+        "theme": "Weighted Mean and Data Aggregation",
+        "sub_branches": [
+          {
+            "concept": "Fallacy of Unweighted Averages in Unequal Groups",
+            "details": [
+              "Taking a simple unweighted average of group means ignores group size differences.",
+              "Larger groups exert a greater pull on the true overall population mean.",
+              "Weighted arithmetic mean accounts for subgroup counts or weights w_i."
+            ],
+            "evidence_or_examples": [
+              "Combining Section A (30 students, avg 80%) and Section B (10 students, avg 60%) yields true weighted mean 75%, not 70%."
+            ],
+            "key_terms": [
+              "Simple Average",
+              "Weighted Mean",
+              "Weights (w_i)",
+              "Subgroup Aggregation"
+            ]
+          },
+          {
+            "concept": "Weighted Mean Formula and Physical/Financial Applications",
+            "details": [
+              "Formula: x_bar = sum(w_i * x_i) / sum(w_i).",
+              "Used in weighted test grading, gold alloy purity, solution concentration, and mixture blending.",
+              "Preserves total quantity and mass conservation across combined subsets."
+            ],
+            "evidence_or_examples": [
+              "Academic grade calculation with assignments (30%), midterm (20%), and final exam (50%).",
+              "Mixing brass alloy Batch A (200 kg at 70%), Batch B (120 kg at 50%), and Batch C (240 kg at 45%) to get 55% concentration."
+            ],
+            "key_terms": [
+              "Formula: x_bar = sum(w_i * x_i) / sum(w_i)",
+              "Percentage Concentration",
+              "Mass Conservation"
+            ]
+          },
+          {
+            "concept": "Rate Combinations & Weighted Harmonic Mean",
+            "details": [
+              "Combining speeds v_i over equal distances d_i requires weighted harmonic mean, not arithmetic mean.",
+              "Formula for average speed: v_avg = sum(d_i) / sum(d_i / v_i) = Total Distance / Total Time.",
+              "Simpson's Paradox occurs when aggregated group weights cause overall statistical trends to reverse."
+            ],
+            "evidence_or_examples": [
+              "Traveling 100 km at 40 km/h and returning 100 km at 60 km/h yields average speed 48 km/h, not 50 km/h."
+            ],
+            "key_terms": [
+              "Weighted Harmonic Mean",
+              "Rate/Speed Combinations",
+              "Simpson's Paradox"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "Multi-Category Data Visualizations",
+        "sub_branches": [
+          {
+            "concept": "Cluster-Column, Stacked Bar & 100% Stacked Bar Charts",
+            "details": [
+              "Cluster-column charts place category bars side-by-side per group.",
+              "Stacked bar charts stack category components vertically to preserve absolute group totals.",
+              "100% stacked bar charts scale all group bars to 100% height to isolate relative percentage distributions."
+            ],
+            "evidence_or_examples": [
+              "Comparing household spending (housing, food, education, healthcare) across families with different total incomes."
+            ],
+            "key_terms": [
+              "Cluster-Column Chart",
+              "Stacked Bar Chart",
+              "100% Stacked Bar Chart",
+              "Relative Proportions vs Absolute Totals"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U04-C10"
+}

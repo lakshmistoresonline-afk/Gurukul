@@ -1,0 +1,137 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "The World of Numbers",
+  "image_asset": {
+    "title": "Wheel of Theodorus (Square Root Spiral) depicting exact geometric lengths sqrt(2), sqrt(3), sqrt(4)...",
+    "local_url": "/assets/images/ch3_wheel_of_theodorus.png",
+    "hotspots": [
+      {
+        "id": "hs_sqrt2",
+        "label": "Hypotenuse sqrt(2)",
+        "x_percent": 45.0,
+        "y_percent": 45.0,
+        "w_percent": 10.0,
+        "h_percent": 10.0,
+        "tooltip": "First irrational hypotenuse derived from unit right triangle legs 1 and 1."
+      },
+      {
+        "id": "hs_sqrt3",
+        "label": "Hypotenuse sqrt(3)",
+        "x_percent": 55.0,
+        "y_percent": 35.0,
+        "w_percent": 10.0,
+        "h_percent": 10.0,
+        "tooltip": "Second hypotenuse constructed by erecting unit perpendicular on sqrt(2)."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "section_number_and_title": "3.1 Hierarchy of Number Sets & Continuous Number Line",
+      "content": "Numbers evolved from counting tallies to Natural numbers N, Whole numbers W, Integers Z, Rational numbers Q (p/q, q != 0), and Irrational numbers Q' (non-terminating non-repeating decimals). Together Q and Q' form Real numbers R, filling every point on the continuous real number line. Between any two real numbers lie infinitely many rational and irrational numbers.",
+      "key_takeaways": [
+        "N subset of W subset of Z subset of Q subset of R.",
+        "Real line R = Q union Q'."
+      ]
+    },
+    {
+      "section_number_and_title": "3.2 Decimal Expansions: Terminating, Recurring & Cyclic Numbers",
+      "content": "A rational number p/q has a terminating decimal expansion if and only if prime factors of q are purely of form 2^m * 5^n. Otherwise it forms a non-terminating periodic repeating decimal. Cyclic decimals like 1/7 = 0.142857142857... exhibit rotating digit blocks for multiples 2/7, 3/7, etc.",
+      "key_takeaways": [
+        "Terminating decimals require q = 2^m * 5^n.",
+        "Recurring decimals can be converted to p/q form using algebraic subtraction."
+      ]
+    },
+    {
+      "section_number_and_title": "3.3 Irrationality Proofs, Wheel of Theodorus & Infinite Series",
+      "content": "Proof of sqrt(2) irrationality uses proof by contradiction with prime factor parity. The Wheel of Theodorus (Square Root Spiral) geometrically constructs hypotenuses sqrt(2), sqrt(3), sqrt(4)... using right triangles with unit legs. Mādhava of Saṅgamagrāma derived the infinite series pi/4 = 1 - 1/3 + 1/5 - 1/7 + ...",
+      "key_takeaways": [
+        "sqrt(p) is irrational for any prime p.",
+        "Mādhava series provides rational approximations converging to pi."
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "table_title": "Key Conceptual Comparison - Ch 3",
+      "headers": [
+        "Concept A",
+        "Concept B",
+        "Distinguishing Feature"
+      ],
+      "rows": [
+        [
+          "Type 1",
+          "Type 2",
+          "Core Mathematical Distinction"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "d_ch3_01",
+      "title": "Mastering the Core Insight",
+      "exchanges": [
+        {
+          "speaker": "Aarav (Student)",
+          "avatar_role": "Student Explorer",
+          "speech_text": "How do we systematically approach the key concepts of The World of Numbers?"
+        },
+        {
+          "speaker": "Dr. Sharma (Master Educator)",
+          "avatar_role": "Mathematics Mentor",
+          "speech_text": "By grounding ourselves in the fundamental definitions, visual models, and step-by-step rigorous proofs outlined in the chapter!"
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch3",
+      "experiment_title": "STEM Visual Verification - Ch 3",
+      "apparatus": [
+        "Graph Paper",
+        "Ruler",
+        "Compass",
+        "Scientific Calculator"
+      ],
+      "procedure": [
+        "Construct baseline geometric / coordinate figures according to chapter guidelines.",
+        "Measure side lengths, angles, or coordinate distances accurately.",
+        "Verify corresponding algebraic formulas against physical measurements."
+      ],
+      "observations": "Empirical measurements exactly match theoretical algebraic calculations.",
+      "interactive_controls": {
+        "slider_parameter": "Variable Input x",
+        "min_value": 1,
+        "max_value": 100,
+        "step": 1
+      }
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calc_id": "calc_ch3",
+      "formula_name": "Core Formula Evaluator Ch 3",
+      "expression": "Result = f(Inputs)",
+      "variables": [
+        {
+          "name": "x1",
+          "description": "First Input Variable"
+        },
+        {
+          "name": "x2",
+          "description": "Second Input Variable"
+        }
+      ],
+      "interactive_sample_inputs": {
+        "x1": 3,
+        "x2": 4
+      }
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C03"
+}

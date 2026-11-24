@@ -1,0 +1,218 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Real Numbers",
+  "unit_or_theme": "Number Systems",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "Explores the fundamental properties of real numbers, including prime factorization, HCF and LCM relationships, the Fundamental Theorem of Arithmetic, and formal proofs of irrationality for numbers like √2, √3, and √5.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "1.1 Introduction & The Fundamental Theorem of Arithmetic",
+        "full_explanation": "Every composite number can be expressed (factored) as a product of primes, and this factorization is unique, apart from the order in which the prime factors occur.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Theorem",
+            "box_title": "Fundamental Theorem of Arithmetic",
+            "full_content": "Every composite number can be factorised as a product of primes uniquely up to order."
+          }
+        ]
+      },
+      {
+        "section_number_title": "1.2 Revisiting Irrational Numbers",
+        "full_explanation": "A number is irrational if it cannot be written in the form p/q where p and q are integers and q != 0. Proof by contradiction is used: if p^2 is divisible by a prime p, then p divides a.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Proof Technique",
+            "box_title": "Proof by Contradiction",
+            "full_content": "Assume √2 is rational (p/q in lowest terms), deduce 2 divides p and q, contradicting coprime assumption."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Prime Factorization",
+        "definition": "Breaking down a composite number into a product of prime numbers.",
+        "contextual_example_or_usage": "60 = 2^2 * 3 * 5",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Irrational Number",
+        "definition": "A real number that cannot be expressed as a ratio of two integers.",
+        "contextual_example_or_usage": "√2, √3, π",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "HCF and LCM Relation",
+        "statement_or_expression": "HCF(a, b) * LCM(a, b) = a * b",
+        "variable_definitions": "a, b = positive integers",
+        "model_application_example": "For 6 and 20: HCF(6,20)=2, LCM(6,20)=60; 2*60 = 120 = 6*20"
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Finding HCF and LCM using Prime Factorization",
+      "objective_or_aim": "Compute HCF and LCM of 96 and 404.",
+      "materials_or_prerequisites": [
+        "Prime factor trees"
+      ],
+      "step_by_step_procedure": [
+        "Find 96 = 2^5 * 3",
+        "Find 404 = 2^2 * 101",
+        "HCF = 2^2 = 4",
+        "LCM = (96 * 404) / 4 = 9696"
+      ],
+      "expected_observations_or_working": "Common lowest powers give HCF; greatest powers of all factors give LCM.",
+      "scientific_or_logical_conclusion": "HCF * LCM equals product of the two numbers."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Factor Tree for 32760",
+        "labels_to_learn": [
+          "Composite nodes",
+          "Prime leaves"
+        ],
+        "drawing_or_labeling_instructions": "Branch 32760 into 2 and 16380, continuing down to prime leaves.",
+        "key_structural_details": "Ends in prime factors 2^3 * 3^2 * 5 * 7 * 13."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Comparison of Prime Factor Powers for HCF vs LCM",
+        "headers": [
+          "Concept",
+          "Factor Powers Chosen"
+        ],
+        "rows": [
+          [
+            "HCF",
+            "Product of smallest power of each common prime factor"
+          ],
+          [
+            "LCM",
+            "Product of greatest power of each prime factor involved"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 1.1",
+        "question_number": "Q1",
+        "question_text": "Express 140 as a product of prime factors.",
+        "complete_step_by_step_solution": "140 / 2 = 70; 70 / 2 = 35; 35 / 5 = 7; 7 / 7 = 1. Prime factors: 2^2 * 5 * 7."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "The Fundamental Theorem of Arithmetic states that every composite number can be uniquely factorized into primes...",
+        "questions_and_answers": [
+          {
+            "question": "Is 1 a prime number?",
+            "answer": "No, 1 is neither prime nor composite."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "If HCF(306, 657) = 9, LCM is:",
+        "options": [
+          "22338",
+          "22339",
+          "22330",
+          "22340"
+        ],
+        "correct_answer": "22338",
+        "brief_explanation": "LCM = (306 * 657) / 9 = 22338."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Prove that 3 + 2√5 is irrational.",
+        "model_answer": "Assume 3 + 2√5 = a/b (coprime). Then √5 = (a - 3b)/(2b). Since a,b are integers, (a-3b)/(2b) is rational, contradicting √5 being irrational.",
+        "key_marking_points": [
+          "Assumption step",
+          "Rearranging for √5",
+          "Contradiction statement"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "Check whether 6^n can end with the digit 0 for any natural number n.",
+        "model_answer": "If 6^n ends in 0, prime factorization must contain 2 and 5. But 6^n = (2*3)^n = 2^n * 3^n. By uniqueness of Fundamental Theorem of Arithmetic, 5 is not a prime factor. Thus 6^n never ends in 0."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A seminar has 60 participants in Hindi, 84 in English, and 108 in Mathematics. Find minimum rooms needed if each room has equal participants of same subject.",
+        "questions_and_answers": [
+          {
+            "question": "What is the max participants per room?",
+            "answer": "HCF(60, 84, 108) = 12."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Assuming HCF * LCM = a * b * c for three numbers.",
+      "root_cause": "Misapplying two-number property to three numbers.",
+      "correct_approach": "The formula HCF*LCM = product holds strictly for TWO numbers only."
+    }
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 1: Real Numbers. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 1 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 1",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ],
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C01"
+}

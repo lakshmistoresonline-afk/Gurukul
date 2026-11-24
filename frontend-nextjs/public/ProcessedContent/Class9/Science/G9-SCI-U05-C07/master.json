@@ -1,0 +1,170 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Work, Energy, and Mechanical Systems",
+  "zero_omission_notes": {
+    "summary": "This chapter establishes the quantitative concepts of Work, Energy, and Power. It covers work done by constant forces (W = F·s·cos theta), mechanical energy forms (Kinetic Energy Ek = 0.5mv², Gravitational Potential Energy Ep = mgh), the Work-Energy Theorem, the Law of Conservation of Energy, and Power (P = W/t).",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "7.1 Work Done by a Constant Force",
+        "full_notes": "Work is scalar product of force magnitude and displacement in the force's direction: W = F * s. Work is positive when force and displacement are in the same direction (theta = 0 deg), negative when opposing (theta = 180 deg, e.g., friction), and zero when displacement is perpendicular to force (theta = 90 deg, e.g., porter carrying load horizontally) or displacement is zero.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Unit Definition",
+            "title": "The Joule (J)",
+            "content": "1 Joule is the work done when a force of 1 Newton displaces an object by 1 meter along the line of action of the force (1 J = 1 N·m)."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "7.2 Mechanical Energy, Conservation, and Power",
+        "full_notes": "Energy is the capacity to do work (SI unit: Joule). Kinetic Energy Ek = 0.5 * m * v² is energy possessed due to motion. Gravitational Potential Energy Ep = m * g * h is energy stored due to position/height in a gravitational field. Work-Energy Theorem states W_net = delta(Ek). Law of Conservation of Mechanical Energy states Ek + Ep = constant in conservative system. Power P = W / t (SI unit: Watt, 1 W = 1 J/s; 1 kWh = 3.6 x 10^6 J).",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Commercial Unit",
+            "title": "Kilowatt-hour (kWh)",
+            "content": "1 unit of electrical energy = 1 kWh = 1000 W * 3600 s = 3.6 x 10^6 Joules (3.6 MJ)."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "Activity 7.1",
+      "aim_or_objective": "To calculate power spent climbing a flight of stairs.",
+      "materials_or_prerequisites": [
+        "Measuring tape",
+        "Stopwatch",
+        "Weighing balance"
+      ],
+      "procedure_or_steps": [
+        "Measure student mass m using weighing balance.",
+        "Count total number of steps N in staircase and measure height h_step of one step.",
+        "Calculate total vertical height H = N * h_step.",
+        "Student runs up staircase while stopwatch records time t.",
+        "Calculate Work W = m * g * H and Power P = W / t."
+      ],
+      "observations_or_results": "Climbing higher stairs faster yields higher computed power output in Watts.",
+      "conclusion_or_principle": "Power measures time rate of energy expenditure."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 7.1: Energy Interconversion in a Freely Falling Body",
+        "labels_and_components": [
+          "Point A (Peak Height h, Ep=mgh, Ek=0)",
+          "Point B (Intermediate Height x, Ep=mg(h-x), Ek=mgx)",
+          "Point C (Ground, Ep=0, Ek=mgh)"
+        ],
+        "drawing_or_reading_instructions": "Draw vertical drop path showing mechanical energy sum Ek + Ep = mgh at all intermediate positions.",
+        "structural_or_conceptual_explanation": "Proves conservation of total mechanical energy during gravitational free fall."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Forms of Mechanical Energy",
+        "headers": [
+          "Energy Type",
+          "Origin/Cause",
+          "Mathematical Formula"
+        ],
+        "rows": [
+          [
+            "Kinetic Energy (Ek)",
+            "Motion / Velocity",
+            "Ek = 0.5 * m * v^2"
+          ],
+          [
+            "Gravitational Potential Energy (Ep)",
+            "Height / Position in gravitational field",
+            "Ep = m * g * h"
+          ],
+          [
+            "Elastic Potential Energy",
+            "Deformation / Strained shape",
+            "Ep = 0.5 * k * x^2"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Work-Energy Theorem",
+      "definition_or_meaning": "The net work done by all forces acting on an object equals the net change in its kinetic energy.",
+      "si_unit_or_notation": "W_net = Ek_final - Ek_initial [J]",
+      "example_or_application": "Braking force work stopping a moving car."
+    },
+    {
+      "term_or_concept": "Watt (W)",
+      "definition_or_meaning": "The SI unit of power representing an energy transformation rate of 1 Joule per second.",
+      "si_unit_or_notation": "1 W = 1 J/s",
+      "example_or_application": "A 60 W lightbulb consumes 60 Joules per second."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Q1",
+        "question": "An object of mass 15 kg is moving with uniform velocity 4 m/s. Find its kinetic energy.",
+        "answer": "m = 15 kg, v = 4 m/s. Ek = 0.5 * m * v² = 0.5 * 15 * (4)² = 0.5 * 15 * 16 = 120 Joules."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "When velocity of a body is doubled, its kinetic energy becomes:",
+        "options": [
+          "A) Doubled",
+          "B) Half",
+          "C) Four times",
+          "D) Same"
+        ],
+        "answer": "C) Four times",
+        "explanation": "Kinetic energy Ek is proportional to v². If v -> 2v, Ek -> (2)² = 4 times."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "A coolie carries a 20 kg suitcase on his head and walks 50 m horizontally on a flat platform. Calculate work done against gravity.",
+        "answer": "Work done against gravity W = F * s * cos(theta). The force of gravity is vertical downward (mg), whereas displacement is horizontal. Angle theta = 90 degrees. cos(90 deg) = 0. Thus, W = 0 Joules."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Prove mathematically that total mechanical energy is conserved for a freely falling object of mass m dropped from height h.",
+        "answer": "1) At peak A (height h): v=0 => Ek=0, Ep=mgh. Total E_A = mgh.\n2) At point B (fallen distance x): v² = 0 + 2gx => Ek = 0.5m(2gx) = mgx. Height = h-x => Ep = mg(h-x). Total E_B = mgx + mg(h-x) = mgh.\n3) At ground C (fallen distance h): v² = 2gh => Ek = 0.5m(2gh) = mgh. Ep = 0. Total E_C = mgh.\nThus E_A = E_B = E_C = mgh."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "An electric heater rated 1500 W operates for 10 hours daily. Calculate 1) energy consumed in units (kWh) per day and 2) electricity bill cost for 30 days at Rs. 6 per unit.",
+        "answer": "1) Power P = 1500 W = 1.5 kW. Time t = 10 h/day.\nEnergy per day = P * t = 1.5 kW * 10 h = 15 kWh (15 units).\n2) Total units in 30 days = 15 * 30 = 450 units.\nCost = 450 units * Rs. 6 = Rs. 2700."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "A hydro-electric dam holds millions of liters of water behind a tall wall, releasing it through turbines to generate electricity.",
+        "qa": [
+          {
+            "question": "Describe the sequential energy transformations taking place.",
+            "answer": "Gravitational Potential Energy of elevated water -> Kinetic Energy of falling water -> Mechanical Rotational Energy of hydro-turbines -> Electrical Energy from generator."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Confusing high work with high power.",
+        "correct_fact_or_method": "Work measures total energy transformed regardless of duration; Power measures how rapidly that work is done per second."
+      }
+    ]
+  },
+  "grade": "9",
+  "subject": "Science",
+  "chapter_id": "G9-SCI-U03-C07"
+}

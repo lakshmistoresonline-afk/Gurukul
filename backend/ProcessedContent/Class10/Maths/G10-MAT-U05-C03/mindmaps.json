@@ -1,0 +1,131 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Pair of Linear Equations in Two Variables",
+  "mind_map": {
+    "root_topic": "Pair of Linear Equations in Two Variables",
+    "branches": [
+      {
+        "theme": "Graphical Interpretation & Consistency",
+        "sub_branches": [
+          {
+            "concept": "Coefficient Ratio Conditions",
+            "details": [
+              "Standard form system: a1 x + b1 y + c1 = 0 and a2 x + b2 y + c2 = 0.",
+              "Intersecting lines (Unique solution / Consistent): a1/a2 != b1/b2",
+              "Coincident lines (Infinitely many solutions / Dependent Consistent): a1/a2 = b1/b2 = c1/c2",
+              "Parallel lines (No solution / Inconsistent): a1/a2 = b1/b2 != c1/c2"
+            ],
+            "evidence_or_examples": [
+              "5x - 4y + 8 = 0 and 7x + 6y - 9 = 0 -> 5/7 != -4/6 => Intersecting at unique point.",
+              "3x + 2ky = 2 and 2x + 5y + 1 = 0 parallel => 3/2 = 2k/5 => k = 15/4."
+            ],
+            "key_terms": [
+              "Consistent System",
+              "Inconsistent System",
+              "Coincident Lines",
+              "Parallel Lines"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "Algebraic Methods of Solution",
+        "sub_branches": [
+          {
+            "concept": "Substitution Method",
+            "details": [
+              "Express one variable in terms of the other from one equation.",
+              "Substitute this value into the second equation to obtain a single-variable linear equation."
+            ],
+            "evidence_or_examples": [
+              "x + y = 14 and x - y = 4 => x = 14 - y => (14 - y) - y = 4 => y = 5, x = 9."
+            ],
+            "key_terms": [
+              "Substitution",
+              "Single-variable Reduction"
+            ]
+          },
+          {
+            "concept": "Elimination Method",
+            "details": [
+              "Multiply one or both equations by non-zero constants to equalize coefficients of one variable.",
+              "Add or subtract equations to eliminate that variable."
+            ],
+            "evidence_or_examples": [
+              "9x - 4y = 2000 and 7x - 3y = 2000 => Multiply Eq1 by 3, Eq2 by 4 => 27x - 12y = 6000, 28x - 12y = 8000 => x = 2000, y = 4000."
+            ],
+            "key_terms": [
+              "Coefficient Equalization",
+              "Variable Elimination"
+            ]
+          }
+        ]
+      }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_3_root",
+      "label": "Pair of Linear Equations in Two Variables",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_3_b1",
+          "label": "Graphical Interpretation & Consistency",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Graphical Interpretation & Consistency",
+          "children": [
+            {
+              "id": "node_3_c2",
+              "label": "Coefficient Ratio Conditions",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Coefficient Ratio Conditions",
+              "details": [
+                "Standard form system: a1 x + b1 y + c1 = 0 and a2 x + b2 y + c2 = 0.",
+                "Intersecting lines (Unique solution / Consistent): a1/a2 != b1/b2",
+                "Coincident lines (Infinitely many solutions / Dependent Consistent): a1/a2 = b1/b2 = c1/c2",
+                "Parallel lines (No solution / Inconsistent): a1/a2 = b1/b2 != c1/c2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node_3_b3",
+          "label": "Algebraic Methods of Solution",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Algebraic Methods of Solution",
+          "children": [
+            {
+              "id": "node_3_c4",
+              "label": "Substitution Method",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Substitution Method",
+              "details": [
+                "Express one variable in terms of the other from one equation.",
+                "Substitute this value into the second equation to obtain a single-variable linear equation."
+              ]
+            },
+            {
+              "id": "node_3_c5",
+              "label": "Elimination Method",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Elimination Method",
+              "details": [
+                "Multiply one or both equations by non-zero constants to equalize coefficients of one variable.",
+                "Add or subtract equations to eliminate that variable."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Pair of Linear Equations in Two Variables]\n  Root --> B_2[Graphical Interpretation & Consistency]\n  B_2 --> C_3[Coefficient Ratio Conditions]\n  Root --> B_4[Algebraic Methods of Solution]\n  B_4 --> C_5[Substitution Method]\n  B_5 --> C_6[Elimination Method]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C03"
+}

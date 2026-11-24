@@ -42,6 +42,8 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
   const isNotebookLm = isNotebookLmVideo(maskedToken);
   const isYoutube = isYoutubeVideo(maskedToken);
 
+  const imageAsset = data.image_asset || data.visual_asset || data.chapter_image_assets || data.image_assets_catalog || null;
+
   const subjLower = (subject || '').toLowerCase();
   const subjectIllustration = subjLower.includes('sci')
     ? '/illustrations/science_plant_growth.svg'
@@ -194,31 +196,31 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
             </div>
           )}
 
-          {data.image_asset && (
+          {imageAsset && (
             <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
               <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                 <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">Interactive Concept Diagram &amp; Hotspots</h3>
-                <span className="text-[10px] font-mono text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full font-bold">{data.image_asset.type || '16:9 Diagram'}</span>
+                <span className="text-[10px] font-mono text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full font-bold">{imageAsset.type || '16:9 Diagram'}</span>
               </div>
-              <p className="text-xs font-bold text-slate-900">{data.image_asset.title}</p>
+              <p className="text-xs font-bold text-slate-900">{imageAsset.title || 'Chapter Concept Diagram'}</p>
 
               {/* Render Chapter Diagram Image Directly with Lightbox Expand */}
-              {(data.image_asset.asset_url || data.image_asset.url || data.image_asset.filename) && (
+              {(imageAsset.asset_url || imageAsset.url || imageAsset.filename) && (
                 <div
                   onClick={() => setShowLightboxModal(true)}
                   className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs group cursor-zoom-in transition-all hover:border-indigo-300"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={data.image_asset.asset_url || data.image_asset.url || `/assets/images/${data.image_asset.filename}`}
-                    alt={data.image_asset.alt_text || data.image_asset.title || 'Chapter Diagram'}
+                    src={imageAsset.asset_url || imageAsset.url || `/assets/images/${imageAsset.filename}`}
+                    alt={imageAsset.alt_text || imageAsset.title || 'Chapter Diagram'}
                     className="max-h-[380px] w-auto object-contain rounded-xl shadow-xs"
                     onError={(e) => {
                       const img = e.target as HTMLImageElement;
-                      if (data.image_asset.filename && !img.src.includes(data.image_asset.filename)) {
-                        img.src = `/assets/images/${data.image_asset.filename}`;
+                      if (imageAsset.filename && !img.src.includes(imageAsset.filename)) {
+                        img.src = `/assets/images/${imageAsset.filename}`;
                       } else if (!img.src.includes('02-')) {
-                        img.src = `/assets/images/02-${data.image_asset.filename}`;
+                        img.src = `/assets/images/02-${imageAsset.filename}`;
                       }
                     }}
                   />
@@ -228,9 +230,9 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                 </div>
               )}
 
-              {Array.isArray(data.image_asset.hotspots) && (
+              {Array.isArray(imageAsset.hotspots) && (
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-                  {data.image_asset.hotspots.map((hs: any, idx: number) => {
+                  {imageAsset.hotspots.map((hs: any, idx: number) => {
                     const hsTitle = hs.title || hs.label || hs.name || `Hotspot #${idx + 1}`;
                     const hsDesc = hs.description || hs.tooltip || hs.info || hs.tooltip_explanation || '';
                     return (

@@ -1,0 +1,105 @@
+{
+  "chapter_number": 12,
+  "chapter_title": "Surface Areas and Volumes",
+  "mind_map": {
+    "root_topic": "Surface Areas and Volumes",
+    "branches": [
+      {
+        "theme": "Surface Area of Combined Solids",
+        "sub_branches": [
+          {
+            "concept": "Exposed Area Calculation",
+            "details": [
+              "Total Surface Area of composite solid = Sum of exposed Curved Surface Areas (CSAs) of individual components.",
+              "Internal overlapping contact faces are excluded from TSA."
+            ],
+            "evidence_or_examples": [
+              "Toy made of cone mounted on hemisphere (r=3.5 cm, total height 15.5 cm => cone h=12 cm, l=12.5 cm): TSA = CSA(cone) + CSA(hemisphere) = πrl + 2πr^2 = 214.5 cm^2.",
+              "Two cubes of volume 64 cm^3 (side 4 cm) joined end-to-end: cuboid l=8, b=4, h=4 => TSA = 2(32 + 16 + 32) = 160 cm^2."
+            ],
+            "key_terms": [
+              "Composite Solid",
+              "Exposed Surface Area",
+              "Curved Surface Area (CSA)",
+              "Slant Height"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "Volume of Combined Solids",
+        "sub_branches": [
+          {
+            "concept": "Additive Volume Principle",
+            "details": [
+              "Total volume of composite solid = Sum of individual volumes of component solids.",
+              "No volume subtraction is needed for internal contact faces."
+            ],
+            "evidence_or_examples": [
+              "Solid cone standing on hemisphere radius 1 cm with h = r: Total Vol = (1/3)π(1)^3 + (2/3)π(1)^3 = π cm^3.",
+              "Gulab jamun cylinder with two hemispherical ends (r=1.4 cm, length 5 cm): total syrup volume for 45 pieces = 30% of total volume ≈ 338 cm^3."
+            ],
+            "key_terms": [
+              "Additive Volume",
+              "Cylinder Volume",
+              "Cone Volume",
+              "Sphere/Hemisphere Volume"
+            ]
+          }
+        ]
+      }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_12_root",
+      "label": "Surface Areas and Volumes",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_12_b1",
+          "label": "Surface Area of Combined Solids",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Surface Area of Combined Solids",
+          "children": [
+            {
+              "id": "node_12_c2",
+              "label": "Exposed Area Calculation",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Exposed Area Calculation",
+              "details": [
+                "Total Surface Area of composite solid = Sum of exposed Curved Surface Areas (CSAs) of individual components.",
+                "Internal overlapping contact faces are excluded from TSA."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node_12_b3",
+          "label": "Volume of Combined Solids",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Volume of Combined Solids",
+          "children": [
+            {
+              "id": "node_12_c4",
+              "label": "Additive Volume Principle",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Additive Volume Principle",
+              "details": [
+                "Total volume of composite solid = Sum of individual volumes of component solids.",
+                "No volume subtraction is needed for internal contact faces."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Surface Areas and Volumes]\n  Root --> B_2[Surface Area of Combined Solids]\n  B_2 --> C_3[Exposed Area Calculation]\n  Root --> B_4[Volume of Combined Solids]\n  B_4 --> C_5[Additive Volume Principle]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U04-C12"
+}

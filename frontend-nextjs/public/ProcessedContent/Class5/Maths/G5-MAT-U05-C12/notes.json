@@ -1,0 +1,81 @@
+{
+  "chapter_number": 12,
+  "chapter_title": "Volume and Capacity",
+  "source_file": "eemm112.pdf",
+  "theme": "Sexagesimal Time Systems & Duration",
+  "conceptual_foundation": {
+    "introduction": "This chapter examines precision time measurement, focusing on seconds and minutes in athletic sprints, school routines, and transit schedules. It introduces the base-60 sexagesimal time system (1 min = 60 sec, 1 hr = 60 min = 3,600 sec), 12-hour AM/PM to 24-hour railway clock translations, elapsed duration calculations, and digital stopwatch split-second precision.",
+    "core_concepts": [
+      {
+        "concept": "Base-60 Sexagesimal Time Unit Conversions",
+        "explanation": "Time operates on a base-60 scale: 1 minute = 60 seconds; 1 hour = 60 minutes = 3,600 seconds. Converting minutes to seconds requires multiplying by 60; seconds to minutes requires dividing by 60.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Convert 4 minutes 15 seconds into total seconds.'\nRaman: '(4 x 60) + 15 = 240 + 15 = 255 seconds!'\nTeacher: 'Convert 300 seconds to minutes.'\nSheela: '300 / 60 = 5 minutes!'",
+        "example": "Conversions:\n• 4 min 15 sec = 255 sec.\n• 300 sec = 5 min."
+      },
+      {
+        "concept": "12-Hour AM/PM vs 24-Hour Railway Clock Systems",
+        "explanation": "12-hour clock uses AM (Midnight to Noon) and PM (Noon to Midnight). 24-hour clock runs continuously from 00:00 (Midnight) to 23:59. For PM times, add 12 to the 12-hour digit (e.g., 2:30 PM -> 14:30).\n\n[Instructional Dialogue Simulation]\nTeacher: 'A train leaves at 21:45. What time is that on a standard 12-hour clock?'\nAnish: '21:45 is past 12:00. Subtract 12: 21:45 - 12:00 = 9:45 PM!'",
+        "example": "Clock Conversion:\n• 2:30 PM -> 2:30 + 12:00 = 14:30 hours.\n• 21:45 hours -> 21:45 - 12:00 = 9:45 PM."
+      },
+      {
+        "concept": "Elapsed Duration Arithmetic",
+        "explanation": "Calculating total time passed: Elapsed Time = End Time - Start Time. Operations regroup across hours and minutes using base-60 (1 hr = 60 min).\n\n[Instructional Dialogue Simulation]\nTeacher: 'A movie starts at 3:30 PM and lasts 2 hours 45 minutes. What time does it end?'\nSheela: '3:30 + 2h = 5:30 PM. 5:30 + 45 min = 5:30 + 30 min (6:00 PM) + 15 min = 6:15 PM!'",
+        "example": "3:30 PM + 2h 45m = 6:15 PM."
+      },
+      {
+        "concept": "Digital Stopwatch Split-Second Precision",
+        "explanation": "Digital stopwatches measure split seconds in hundredths of a second (0.01 sec) for precise athletic sprint timing.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Runner A finishes in 12.45 sec, Runner B in 12.38 sec. Who won?'\nRaman: 'Runner B! 12.38 is smaller than 12.45 by 0.07 seconds!'",
+        "example": "12.38 sec < 12.45 sec (Runner B wins by 0.07 sec)."
+      },
+      {
+        "concept": "Time Schedule & Timetable Planning",
+        "explanation": "Analyzing transportation timetables (bus/railway) to calculate transit durations, waiting layovers, and arrival estimations.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Bus departs at 8:15 AM and arrives at 11:00 AM. Travel duration?'\nAnish: '8:15 to 9:00 = 45 min. 9:00 to 11:00 = 2 hours. Total = 2 hours 45 minutes!'",
+        "example": "8:15 AM to 11:00 AM = 2 hours 45 minutes."
+      }
+    ]
+  },
+  "key_formulas_and_rules": [
+    "1 Minute = 60 Seconds",
+    "1 Hour = 60 Minutes = 3,600 Seconds",
+    "PM to 24-Hour Rule: 24H_Hour = 12H_Hour + 12 (for PM after 12:59)",
+    "24-Hour to PM Rule: 12H_Hour = 24H_Hour - 12 (for Hours > 12)",
+    "Elapsed Time = End Time - Start Time",
+    "Base-60 Regrouping Rule: 60 minutes = 1 hour carryover",
+    "Cross-Midnight Duration Method: Total Elapsed Time = (24:00 - Departure Time) + Arrival Time Next Morning."
+  ],
+  "real_world_applications": "Athletic track sprint timing, railway and flight timetable reading, school class period scheduling, and cooking timers.",
+  "image_asset": {
+    "chapter_number": 12,
+    "image_id": "ch12_stopwatch_clocks",
+    "file_name": "ch12_stopwatch_clocks.png",
+    "local_url": "/assets/images/ch12_stopwatch_clocks.png",
+    "aspect_ratio": "16:9",
+    "title": "Base-60 Time System & Athletic Digital Stopwatch",
+    "description": "Digital stopwatch with split seconds and 12-hour AM/PM to 24-hour railway clock translation.",
+    "hotspots": [
+      {
+        "label": "Minutes Display",
+        "x_percent": 35.0,
+        "y_percent": 40.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Seconds Display",
+        "x_percent": 50.0,
+        "y_percent": 40.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Split-Second Precision Display",
+        "x_percent": 65.0,
+        "y_percent": 40.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      }
+    ]
+  },
+  "grade": "5",
+  "subject": "Maths",
+  "chapter_id": "G5-MAT-U04-C12"
+}

@@ -1,0 +1,99 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "A Square and A Cube",
+  "d3_config": {
+    "node_color": "#38bdf8",
+    "expanded_radius": 12,
+    "collapsed_radius": 8
+  },
+  "tree_data": {
+    "id": "mm_node_ch1_root",
+    "name": "A Square and A Cube",
+    "node_color": "#0ea5e9",
+    "icon": "folder_root",
+    "tooltip_popover": {
+      "title": "A Square and A Cube",
+      "content": "Master topic for Chapter 1",
+      "example": "Central node of learning map"
+    },
+    "children": [
+      {
+        "id": "mm_node_ch1_b0",
+        "name": "1.1 Perfect Squares and Square Roots",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "1.1 Perfect Squares and Square Roots",
+          "content": "Theme section under A Square and A Cube",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch1_b0_sb0",
+            "name": "Definition and Geometric Representation of Perfect Squares",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Definition and Geometric Representation of Perfect Squares",
+              "content": "A perfect square is formed by multiplying a natural number by itself: n * n = n^2. The area of a square with side length x units is x^2 square units. Perfect squares always possess an odd count of total factors.",
+              "example": "Queen Ratnamanjuri's Will Puzzle: Lockers remain open if and only if their locker numbers are perfect squares because they have an odd number of factors."
+            },
+            "children": []
+          },
+          {
+            "id": "mm_node_ch1_b0_sb1",
+            "name": "Ending Digits and Odd Sum Patterns of Squares",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Ending Digits and Odd Sum Patterns of Squares",
+              "content": "The unit digits of all perfect squares can only be 0, 1, 4, 5, 6, or 9. Numbers ending in 2, 3, 7, or 8 can never be perfect squares. The sum of the first n consecutive odd natural numbers starting from 1 is equal to n^2.",
+              "example": "1 + 3 + 5 + 7 + 9 = 25 = 5^2"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "mm_node_ch1_b1",
+        "name": "1.2 Cubic Numbers and Cube Roots",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "1.2 Cubic Numbers and Cube Roots",
+          "content": "Theme section under A Square and A Cube",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch1_b1_sb0",
+            "name": "Definition and Volume Scale of Perfect Cubes",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Definition and Volume Scale of Perfect Cubes",
+              "content": "A cubic number or perfect cube is obtained by multiplying a natural number by itself three times: n * n * n = n^3. A 3D cube of side 1 cm forms larger unit-cube assemblies of side 2 cm (8 cubes), side 3 cm (27 cubes), etc.",
+              "example": "Unit Cubes Assembly: 3x3x3 block composed of 27 unit cubes."
+            },
+            "children": []
+          },
+          {
+            "id": "mm_node_ch1_b1_sb1",
+            "name": "Prime Factorisation Method for Square Roots and Cube Roots",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Prime Factorisation Method for Square Roots and Cube Roots",
+              "content": "Square roots require grouping prime factors into pairs of identical primes. Cube roots require grouping prime factors into triplets of identical primes. To convert a non-cube into a perfect cube, multiply or divide by missing factor powers.",
+              "example": "Activity ACT-1.1: Finding cube root of 27000 via prime factorisation -> 27000 = (2*2*2)*(3*3*3)*(5*5*5) -> Cube Root = 2*3*5 = 30."
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "8",
+  "subject": "Maths I",
+  "chapter_id": "G8-MAT-U01-C01"
+}

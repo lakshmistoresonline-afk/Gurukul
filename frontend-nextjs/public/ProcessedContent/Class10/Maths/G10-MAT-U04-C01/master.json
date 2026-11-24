@@ -1,0 +1,152 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Real Numbers",
+  "zero_omission_notes": {
+    "summary": "Chapter 1 covers the Fundamental Theorem of Arithmetic, prime factorization, HCF and LCM calculations and their algebraic relation, and formal proofs of irrationality for square roots of prime numbers using proof by contradiction.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "1.1 Fundamental Theorem of Arithmetic",
+        "full_notes": "Every composite number can be expressed uniquely as a product of primes, up to the order of factors. For any two positive integers a and b, HCF(a,b) * LCM(a,b) = a * b.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Theorem 1.1",
+            "title": "Fundamental Theorem of Arithmetic",
+            "content": "Every composite number can be factorised as a product of primes uniquely."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "1.2 Revisiting Irrational Numbers",
+        "full_notes": "Proof by contradiction: Assume √p is rational (p/q in lowest terms). Show p divides both p and q, contradicting coprime assumption.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Theorem 1.2",
+            "title": "Prime Divisibility",
+            "content": "Let p be a prime number. If p divides a^2, then p divides a, where a is a positive integer."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-101",
+      "aim_or_objective": "Determine HCF and LCM of 96 and 404 via Prime Factorization.",
+      "materials_or_prerequisites": [
+        "Prime factor trees"
+      ],
+      "procedure_or_steps": [
+        "Write 96 = 2^5 * 3",
+        "Write 404 = 2^2 * 101",
+        "HCF = 2^2 = 4",
+        "LCM = (96 * 404) / 4 = 9696"
+      ],
+      "observations_or_results": "HCF is product of lowest common powers; LCM is product of highest powers.",
+      "conclusion_or_principle": "HCF(a,b) * LCM(a,b) = a * b is verified."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 1.1 Prime Factor Tree",
+        "labels_and_components": [
+          "Composite Root",
+          "Prime Branches"
+        ],
+        "drawing_or_reading_instructions": "Decompose number iteratively into prime factors.",
+        "structural_or_conceptual_explanation": "Visual proof of prime factorization uniqueness."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "HCF vs LCM Selection Criteria",
+        "headers": [
+          "Measure",
+          "Factor Power Selection"
+        ],
+        "rows": [
+          [
+            "HCF",
+            "Smallest power of each common prime factor"
+          ],
+          [
+            "LCM",
+            "Greatest power of each prime factor involved"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "HCF and LCM Identity",
+      "definition_or_meaning": "Product of HCF and LCM equals product of two positive integers.",
+      "si_unit_or_notation": "HCF(a,b) * LCM(a,b) = a * b",
+      "example_or_application": "HCF(6,20)=2, LCM(6,20)=60 -> 2*60 = 120 = 6*20"
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 1.1 Q1",
+        "question": "Express 140 as product of prime factors.",
+        "answer": "140 = 2^2 * 5 * 7."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "If HCF(306, 657) = 9, LCM is:",
+        "options": [
+          "A) 22338",
+          "B) 22339",
+          "C) 22330",
+          "D) 22340"
+        ],
+        "answer": "A",
+        "explanation": "LCM = (306 * 657) / 9 = 22338."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Prove that 3 + 2√5 is irrational.",
+        "answer": "Assume 3 + 2√5 = a/b (rational). Then √5 = (a - 3b)/(2b). Left side is irrational while right side is rational, contradiction!"
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Check whether 6^n can end with digit 0 for any natural number n.",
+        "answer": "If 6^n ends in 0, 5 must be in its prime factorization. But 6^n = (2*3)^n = 2^n * 3^n. By uniqueness of FTA, 5 is not a factor. Hence 6^n never ends in 0."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "Prove that √2 is irrational using proof by contradiction.",
+        "answer": "Let √2 = a/b where a,b are coprime integers. 2 = a^2/b^2 => a^2 = 2b^2. Thus 2 divides a^2 => 2 divides a. Let a = 2c. Then 4c^2 = 2b^2 => b^2 = 2c^2 => 2 divides b. Thus 2 divides both a and b, contradicting that a and b are coprime. Hence √2 is irrational."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "A seminar has 60 participants in Hindi, 84 in English, and 108 in Mathematics. Rooms must seat equal participants of same subject.",
+        "qa": [
+          {
+            "question": "Find minimum number of rooms needed.",
+            "answer": "Max per room = HCF(60, 84, 108) = 12. Rooms needed = (60/12) + (84/12) + (108/12) = 5 + 7 + 9 = 21 rooms."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Applying HCF * LCM = a * b * c for three numbers.",
+        "correct_fact_or_method": "The product relation HCF(a,b)*LCM(a,b) = a*b holds ONLY for two numbers."
+      }
+    ]
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C01"
+}

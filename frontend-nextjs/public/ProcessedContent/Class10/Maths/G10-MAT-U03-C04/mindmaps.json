@@ -1,0 +1,130 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Quadratic Equations",
+  "mind_map": {
+    "root_topic": "Quadratic Equations",
+    "branches": [
+      {
+        "theme": "Standard Form and Solution by Factorization",
+        "sub_branches": [
+          {
+            "concept": "Definition and Splitting Middle Term",
+            "details": [
+              "Standard form: ax^2 + bx + c = 0 where a != 0.",
+              "Factorization involves splitting bx into two terms whose coefficients product equals a * c."
+            ],
+            "evidence_or_examples": [
+              "2x^2 - 5x + 3 = 0 => 2x^2 - 2x - 3x + 3 = 0 => (2x - 3)(x - 1) = 0 => x = 3/2 or x = 1."
+            ],
+            "key_terms": [
+              "Standard Form",
+              "Factorization",
+              "Middle-term Splitting"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "Quadratic Formula and Nature of Roots",
+        "sub_branches": [
+          {
+            "concept": "Discriminant Analysis",
+            "details": [
+              "Discriminant D = b^2 - 4ac.",
+              "D > 0: Two distinct real roots: x = (-b ± √D) / (2a).",
+              "D = 0: Two equal real roots: x = -b / (2a).",
+              "D < 0: No real roots."
+            ],
+            "evidence_or_examples": [
+              "2x^2 + kx + 3 = 0 has equal roots when D = k^2 - 24 = 0 => k = ±2√6.",
+              "2x^2 - 3x + 5 = 0 has D = -31 < 0 => No real roots."
+            ],
+            "key_terms": [
+              "Discriminant D",
+              "Quadratic Formula",
+              "Real Roots",
+              "Equal Roots"
+            ]
+          },
+          {
+            "concept": "Word Problems and Applied Modeling",
+            "details": [
+              "Translate physical constraints (speed, distance, time, area) into quadratic equations."
+            ],
+            "evidence_or_examples": [
+              "Motorboat upstream/downstream: 24/(18-x) - 24/(18+x) = 1 => x^2 + 48x - 324 = 0 => stream speed x = 6 km/h."
+            ],
+            "key_terms": [
+              "Upstream/Downstream Speed",
+              "Mathematical Modeling"
+            ]
+          }
+        ]
+      }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_4_root",
+      "label": "Quadratic Equations",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_4_b1",
+          "label": "Standard Form and Solution by Factorization",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Standard Form and Solution by Factorization",
+          "children": [
+            {
+              "id": "node_4_c2",
+              "label": "Definition and Splitting Middle Term",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Definition and Splitting Middle Term",
+              "details": [
+                "Standard form: ax^2 + bx + c = 0 where a != 0.",
+                "Factorization involves splitting bx into two terms whose coefficients product equals a * c."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node_4_b3",
+          "label": "Quadratic Formula and Nature of Roots",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Quadratic Formula and Nature of Roots",
+          "children": [
+            {
+              "id": "node_4_c4",
+              "label": "Discriminant Analysis",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Discriminant Analysis",
+              "details": [
+                "Discriminant D = b^2 - 4ac.",
+                "D > 0: Two distinct real roots: x = (-b ± √D) / (2a).",
+                "D = 0: Two equal real roots: x = -b / (2a).",
+                "D < 0: No real roots."
+              ]
+            },
+            {
+              "id": "node_4_c5",
+              "label": "Word Problems and Applied Modeling",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Word Problems and Applied Modeling",
+              "details": [
+                "Translate physical constraints (speed, distance, time, area) into quadratic equations."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Quadratic Equations]\n  Root --> B_2[Standard Form and Solution by Factorization]\n  B_2 --> C_3[Definition and Splitting Middle Term]\n  Root --> B_4[Quadratic Formula and Nature of Roots]\n  B_4 --> C_5[Discriminant Analysis]\n  B_5 --> C_6[Word Problems and Applied Modeling]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U02-C04"
+}

@@ -1,0 +1,156 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Real Numbers",
+  "mind_map": {
+    "root_topic": "Real Numbers",
+    "branches": [
+      {
+        "theme": "The Fundamental Theorem of Arithmetic",
+        "sub_branches": [
+          {
+            "concept": "Unique Prime Factorisation",
+            "details": [
+              "Every composite number can be expressed uniquely as a product of prime numbers, up to the order of factors.",
+              "Prime factor tree visualization decomposes composite numbers iteratively into prime branches."
+            ],
+            "evidence_or_examples": [
+              "140 = 2^2 * 5 * 7",
+              "96 = 2^5 * 3 and 404 = 2^2 * 101"
+            ],
+            "key_terms": [
+              "Composite Number",
+              "Prime Factor",
+              "Factor Tree",
+              "Uniqueness Theorem"
+            ]
+          },
+          {
+            "concept": "HCF and LCM Relationships",
+            "details": [
+              "HCF(a, b) is the product of the smallest power of each common prime factor involved in the numbers.",
+              "LCM(a, b) is the product of the greatest power of each prime factor involved in the numbers.",
+              "For any two positive integers a and b: HCF(a, b) * LCM(a, b) = a * b."
+            ],
+            "evidence_or_examples": [
+              "For 96 and 404: HCF = 2^2 = 4, LCM = (96 * 404) / 4 = 9696.",
+              "Relation HCF * LCM = a * b holds ONLY for two positive integers, not three."
+            ],
+            "key_terms": [
+              "HCF",
+              "LCM",
+              "Product Formula"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "Revisiting Irrational Numbers & Divisibility Properties",
+        "sub_branches": [
+          {
+            "concept": "Theorem on Prime Divisibility",
+            "details": [
+              "Let p be a prime number. If p divides a^2 (where a is a positive integer), then p divides a."
+            ],
+            "evidence_or_examples": [
+              "If 2 divides a^2, then 2 divides a; used as key lemma in irrationality proofs."
+            ],
+            "key_terms": [
+              "Theorem 1.2",
+              "Divisibility Lemma"
+            ]
+          },
+          {
+            "concept": "Proof of Irrationality by Contradiction",
+            "details": [
+              "Assume the number is rational in lowest terms p/q where p and q are coprime integers (q != 0).",
+              "Derive that the prime factor divides both p and q, contradicting the coprime assumption."
+            ],
+            "evidence_or_examples": [
+              "Proof that √2 is irrational",
+              "Proof that √3, √5, and 3 + 2√5 are irrational"
+            ],
+            "key_terms": [
+              "Proof by Contradiction",
+              "Coprime Integers",
+              "Irrational Number"
+            ]
+          }
+        ]
+      }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_1_root",
+      "label": "Real Numbers",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_1_b1",
+          "label": "The Fundamental Theorem of Arithmetic",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: The Fundamental Theorem of Arithmetic",
+          "children": [
+            {
+              "id": "node_1_c2",
+              "label": "Unique Prime Factorisation",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Unique Prime Factorisation",
+              "details": [
+                "Every composite number can be expressed uniquely as a product of prime numbers, up to the order of factors.",
+                "Prime factor tree visualization decomposes composite numbers iteratively into prime branches."
+              ]
+            },
+            {
+              "id": "node_1_c3",
+              "label": "HCF and LCM Relationships",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: HCF and LCM Relationships",
+              "details": [
+                "HCF(a, b) is the product of the smallest power of each common prime factor involved in the numbers.",
+                "LCM(a, b) is the product of the greatest power of each prime factor involved in the numbers.",
+                "For any two positive integers a and b: HCF(a, b) * LCM(a, b) = a * b."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node_1_b4",
+          "label": "Revisiting Irrational Numbers & Divisibility Properties",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Revisiting Irrational Numbers & Divisibility Properties",
+          "children": [
+            {
+              "id": "node_1_c5",
+              "label": "Theorem on Prime Divisibility",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Theorem on Prime Divisibility",
+              "details": [
+                "Let p be a prime number. If p divides a^2 (where a is a positive integer), then p divides a."
+              ]
+            },
+            {
+              "id": "node_1_c6",
+              "label": "Proof of Irrationality by Contradiction",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Proof of Irrationality by Contradiction",
+              "details": [
+                "Assume the number is rational in lowest terms p/q where p and q are coprime integers (q != 0).",
+                "Derive that the prime factor divides both p and q, contradicting the coprime assumption."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Real Numbers]\n  Root --> B_2[The Fundamental Theorem of Arithmetic]\n  B_2 --> C_3[Unique Prime Factorisation]\n  B_3 --> C_4[HCF and LCM Relationships]\n  Root --> B_5[Revisiting Irrational Numbers & Divisibility Properties]\n  B_5 --> C_6[Theorem on Prime Divisibility]\n  B_6 --> C_7[Proof of Irrationality by Contradiction]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C01"
+}

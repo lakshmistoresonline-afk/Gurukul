@@ -1,0 +1,161 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Quadratic Equations",
+  "zero_omission_notes": {
+    "summary": "Covers second-degree equations ax^2 + bx + c = 0 (a != 0), standard form, solving by factorization and quadratic formula, and analyzing nature of roots via discriminant D = b^2 - 4ac.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "4.1 Standard Form & Factorization",
+        "full_explanation": "Quadratic equation standard form: ax^2 + bx + c = 0. Factorization splits middle term bx into two terms whose product is a*c.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Definition",
+            "title": "Standard Form",
+            "content": "ax^2 + bx + c = 0 where a != 0."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "4.2 Quadratic Formula & Discriminant",
+        "full_explanation": "Roots x = (-b ± √(b^2 - 4ac)) / (2a). Discriminant D = b^2 - 4ac: D > 0 (2 distinct real roots), D = 0 (2 equal real roots), D < 0 (no real roots).",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Formula Box",
+            "title": "Nature of Roots",
+            "content": "D > 0: 2 distinct roots; D = 0: equal roots; D < 0: no real roots."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-401",
+      "aim_or_objective": "Solve 2x^2 - 5x + 3 = 0 using Quadratic Formula.",
+      "materials_or_prerequisites": [
+        "Quadratic formula"
+      ],
+      "procedure_or_steps": [
+        "a = 2, b = -5, c = 3",
+        "D = b^2 - 4ac = 25 - 24 = 1",
+        "x = (5 ± √1) / 4 = (5 ± 1) / 4",
+        "x = 6/4 = 3/2 or x = 4/4 = 1"
+      ],
+      "observations_or_results": "Two distinct real roots: x = 3/2 and x = 1.",
+      "conclusion_or_principle": "D = 1 > 0 confirms two distinct real roots."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 4.1 Discriminant Curves",
+        "labels_and_components": [
+          "D > 0 (Two Crossings)",
+          "D = 0 (Touches Axis)",
+          "D < 0 (No Crossing)"
+        ],
+        "drawing_or_reading_instructions": "Observe vertical position of parabola relative to horizontal axis.",
+        "structural_or_conceptual_explanation": "Graphical proof of discriminant nature of roots."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Discriminant & Nature of Roots Table",
+        "headers": [
+          "Discriminant (D)",
+          "Nature of Roots",
+          "Formula for Roots"
+        ],
+        "rows": [
+          [
+            "D > 0",
+            "Two distinct real roots",
+            "(-b ± √D) / (2a)"
+          ],
+          [
+            "D = 0",
+            "Two equal real roots",
+            "-b / (2a)"
+          ],
+          [
+            "D < 0",
+            "No real roots",
+            "N/A in R"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Quadratic Formula",
+      "definition_or_meaning": "Universal algebraic formula to compute roots of ax^2 + bx + c = 0.",
+      "si_unit_or_notation": "x = (-b ± √(b^2 - 4ac)) / (2a)",
+      "example_or_application": "For x^2 - 4x + 4 = 0: x = (4 ± 0)/2 = 2"
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 4.3 Q1(i)",
+        "question": "Find nature of roots of 2x^2 - 3x + 5 = 0.",
+        "answer": "D = (-3)^2 - 4(2)(5) = 9 - 40 = -31 < 0. No real roots."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Value of k for which 2x^2 + kx + 3 = 0 has equal roots:",
+        "options": [
+          "A) ±2√6",
+          "B) ±√6",
+          "C) ±3√2",
+          "D) ±6"
+        ],
+        "answer": "A",
+        "explanation": "D = k^2 - 4(2)(3) = 0 => k^2 = 24 => k = ±2√6."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Find roots of 2x^2 - 5x + 3 = 0 by factorization.",
+        "answer": "2x^2 - 2x - 3x + 3 = 0 => 2x(x-1) - 3(x-1) = 0 => (2x-3)(x-1) = 0 => x = 3/2 or x = 1."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "Find two consecutive odd positive integers whose sum of squares is 290.",
+        "answer": "Let integers be x and x+2. x^2 + (x+2)^2 = 290 => 2x^2 + 4x + 4 = 290 => 2x^2 + 4x - 286 = 0 => x^2 + 2x - 143 = 0 => (x+13)(x-11) = 0. Since positive, x = 11. Integers are 11 and 13."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "A motorboat speed is 18 km/h in still water. Takes 1 hr more to go 24 km upstream than downstream. Find speed of stream.",
+        "answer": "Let stream speed = x km/h. Upstream = 18-x, Downstream = 18+x. 24/(18-x) - 24/(18+x) = 1 => 24(18+x - 18+x)/(324 - x^2) = 1 => 48x = 324 - x^2 => x^2 + 48x - 324 = 0 => (x+54)(x-6) = 0. Speed cannot be negative => x = 6 km/h."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "A rectangular garden of perimeter 80 m and area 400 m^2 is designed.",
+        "qa": [
+          {
+            "question": "Is it possible to design such a park? If so find dimensions.",
+            "answer": "2(x+y)=80 => y=40-x. x(40-x)=400 => x^2 - 40x + 400 = 0 => (x-20)^2 = 0 => x=20, y=20. Yes, square of side 20 m."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Forgetting to place denominator (2a) under both -b and the root term in quadratic formula.",
+        "correct_fact_or_method": "The entire expression (-b ± √D) is divided by 2a."
+      }
+    ]
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U02-C04"
+}

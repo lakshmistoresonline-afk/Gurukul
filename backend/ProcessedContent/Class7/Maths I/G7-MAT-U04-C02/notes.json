@@ -1,0 +1,179 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Operations with Integers",
+  "detailed_sections": [
+    {
+      "section": "2.1 Understanding Arithmetic Expressions and Terms",
+      "full_notes": "An arithmetic expression is a combination of numbers and operational signs (+, -, *, /). Expressions are separated into terms by addition and subtraction signs. For example, in 4 + (100 / 2), the terms are 4 and (100 / 2). Evaluating terms first simplifies reading and solving complex expressions.",
+      "margin_notes": [
+        {
+          "type": "Did You Know?",
+          "title": "Terms and Brackets",
+          "content": "Brackets group quantities together so they can be treated as a single term inside a larger expression."
+        }
+      ]
+    },
+    {
+      "section": "2.2 Algebraic Properties of Addition and Multiplication",
+      "full_notes": "1. Commutative Property of Addition: a + b = b + a. Changing order does not change the sum.\n2. Associative Property of Addition: (a + b) + c = a + (b + c). Grouping does not alter the sum.\n3. Distributive Property of Multiplication over Addition: a * (b + c) = a * b + a * c.",
+      "margin_notes": [
+        {
+          "type": "Try These",
+          "title": "Distributive Property",
+          "content": "Verify 8 * (5 + 6) = 8*5 + 8*6 = 40 + 48 = 88."
+        }
+      ]
+    },
+    {
+      "section": "2.3 Subtracting Terms and Additive Inverse",
+      "full_notes": "Subtracting a number is equivalent to adding its additive inverse: a - b = a + (-b). When removing brackets preceded by a minus sign, the sign of every term inside the bracket reverses: -(a + b) = -a - b and -(a - b) = -a + b.",
+      "margin_notes": [
+        {
+          "type": "Model Connection",
+          "title": "Token Model",
+          "content": "Using positive and negative integer tokens, subtracting a positive token is equivalent to adding a negative token."
+        }
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "title": "Properties Summary Table",
+      "headers": [
+        "Property",
+        "Mathematical Rule",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Commutative (Addition)",
+          "a + b = b + a",
+          "7 + 3 = 3 + 7 = 10"
+        ],
+        [
+          "Associative (Addition)",
+          "(a + b) + c = a + (b + c)",
+          "(2 + 3) + 4 = 2 + (3 + 4) = 9"
+        ],
+        [
+          "Distributive",
+          "a(b + c) = ab + ac",
+          "4(10 + 2) = 40 + 8 = 48"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "speaker": "Elsa",
+      "role": "Princess",
+      "speech_text": "If I double my 100 gold coins and Anna spends half of hers, what is the expression?"
+    },
+    {
+      "speaker": "Anna",
+      "role": "Princess",
+      "speech_text": "It is (100 * 2) + (100 / 2) = 200 + 50 = 250 gold coins!"
+    },
+    {
+      "speaker": "Teacher",
+      "role": "Mentor",
+      "speech_text": "Notice how brackets group operations into clear compound terms."
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch2",
+      "title": "Zero-Pair Token Simulator",
+      "concept": "Additive inverse subtraction modeling",
+      "interactive_controls": [
+        "Blue (+1) Tokens",
+        "Red (-1) Tokens"
+      ],
+      "procedure_steps": [
+        "Add 18 Blue tokens",
+        "Add 10 Red tokens",
+        "Pair blue and red to form zero pairs"
+      ],
+      "expected_outcome": "10 zero pairs clear, leaving 8 Blue tokens (+8)."
+    }
+  ],
+  "formula_rule_engines": [
+    {
+      "engine_id": "eng_ch2",
+      "rule_name": "Bracket Negation & Expansion Engine",
+      "formula": "-(a - b) = -a + b; -(a + b) = -a - b",
+      "input_variables": [
+        "a",
+        "b"
+      ],
+      "computed_expression": "Inverts every operational sign inside brackets",
+      "example_demonstration": "Input -(20 - 5) => -20 + 5 = -15"
+    },
+    {
+      "engine_id": "eng_ch2_nested",
+      "rule_name": "Nested Bracket Expansion Engine",
+      "formula": "a - [b - (c - d)] = a - b + c - d",
+      "input_variables": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "computed_expression": "Expand nested parentheses inside-out, flipping signs on minus-preceded brackets",
+      "example_demonstration": "50 - [20 - (10 - 4)] = 50 - [20 - 6] = 50 - 14 = 36"
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch2_expressions_token_model",
+    "chapter_number": 2,
+    "chapter_title": "Arithmetic Expressions",
+    "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+    "file_name": "ch2_expressions_token_model.png",
+    "local_url": "/assets/images/ch2_expressions_token_model.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_2_1",
+        "title": "Term Partitioning & Order",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+      },
+      {
+        "hotspot_id": "hs_2_2",
+        "title": "Algebraic Laws of Arithmetic",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+      },
+      {
+        "hotspot_id": "hs_2_3",
+        "title": "Zero-Pair Token Model",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+      },
+      {
+        "hotspot_id": "hs_2_4",
+        "title": "Bracket Negation Rules",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C02"
+}

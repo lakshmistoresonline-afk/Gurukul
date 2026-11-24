@@ -1,0 +1,364 @@
+{
+  "chapter_number": 12,
+  "chapter_title": "Quadrilaterals",
+  "papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Chapter 12 Practice Paper (Midpoint Theorem & Centroid)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The line segment joining midpoints of two sides of a triangle is parallel to 3rd side and:",
+              "options": [
+                "A) Equal to 3rd side",
+                "B) Half its length",
+                "C) Twice its length",
+                "D) One third its length"
+              ],
+              "correct_answer": "B) Half its length",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "The centroid G of a triangle divides each median in a ratio of:",
+              "options": [
+                "A) 1:1",
+                "B) 2:1",
+                "C) 3:1",
+                "D) 3:2"
+              ],
+              "correct_answer": "B) 2:1",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "State the Midpoint Theorem and its converse for triangles.",
+              "marking_scheme_answer": "Theorem: Segment joining midpoints of two triangle sides is parallel to 3rd side and half its length. Converse: Line drawn through midpoint of one side parallel to another side bisects the third side.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "In triangle ABC, median AR = 9 cm. Calculate lengths AG and GR where G is the centroid.",
+              "marking_scheme_answer": "AG : GR = 2 : 1. AG = (2/3) * 9 = 6 cm. GR = (1/3) * 9 = 3 cm.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "State and prove the Midpoint Theorem for triangle ABC with D, E as midpoints of AB, AC.",
+              "marking_scheme_answer": "Statement: DE || BC and DE = 1/2 BC. Proof: Extend DE to F such that DE = EF. Join CF. In triangles ADE and CFE: AE = EC (given), angle AED = CEF (vertically opposite), DE = EF (construction) => ADE congruent to CFE (SAS). Thus AD = CF and angle ADE = CFE => AD || CF. Since AD = DB, DB = CF and DB || CF. DBCF is a parallelogram => DF || BC and DF = BC. Since DE = 1/2 DF, DE || BC and DE = 1/2 BC.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Varignon's Theorem. Midpoints P, Q, R, S of adjacent sides of arbitrary quadrilateral ABCD are connected. (a) Prove PQRS is a parallelogram. (b) If ABCD has equal diagonals (AC = BD), what shape is PQRS?",
+              "marking_scheme_answer": "(a) Draw diagonal AC. In triangle ABC, PQ || AC and PQ = 1/2 AC (Midpoint Theorem). In triangle ADC, SR || AC and SR = 1/2 AC. Thus PQ || SR and PQ = SR. Opposite sides equal and parallel => PQRS is a parallelogram. (b) If AC = BD, PQ = 1/2 AC = 1/2 BD = PS. A parallelogram with equal adjacent sides is a RHOMBUS.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Chapter 12 Practice Paper (Parallelogram Theorems)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Diagonals of a rhombus intersect each other at:",
+              "options": [
+                "A) 45 degrees",
+                "B) 60 degrees",
+                "C) 90 degrees",
+                "D) 120 degrees"
+              ],
+              "correct_answer": "C) 90 degrees",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "A parallelogram with equal diagonals is a:",
+              "options": [
+                "A) Rhombus",
+                "B) Rectangle",
+                "C) Trapezium",
+                "D) Kite"
+              ],
+              "correct_answer": "B) Rectangle",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "In parallelogram ABCD, DP = BQ on diagonal BD. Show triangle ADP is congruent to triangle CBQ.",
+              "marking_scheme_answer": "In triangles ADP and CBQ: AD = BC (opposite sides of parallelogram), DP = BQ (given), angle ADP = CBQ (alternate interior angles since AD || BC) => triangle ADP congruent to CBQ by SAS.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Prove that diagonals of a rectangle are equal.",
+              "marking_scheme_answer": "In rectangle ABCD, consider triangles ABC and BAD: AB = AB (common), BC = AD (opposite sides), angle ABC = BAD = 90 deg => triangle ABC congruent to BAD (SAS). Thus AC = BD.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Prove that a quadrilateral is a parallelogram if and only if its diagonals bisect each other.",
+              "marking_scheme_answer": "Part 1: If ABCD is parallelogram, triangles AOB and COD are congruent (SAS), so AO = OC, BO = OD. Part 2: If AO = OC, BO = OD, triangles AOB and COD congruent (SAS) => AB = CD and angle OAB = OCD => AB || CD. Opposite sides equal and parallel => ABCD is a parallelogram.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Universal Plane Tessellation. (a) Explain why ANY arbitrary quadrilateral (convex or non-convex) can tile a 2D plane without gaps. (b) How many tiles meet at each grid vertex?",
+              "marking_scheme_answer": "(a) Sum of interior angles of any 4-gon is 360 degrees. Rotating four identical quadrilateral tiles around side midpoints allows their four distinct interior angles (A, B, C, D) to meet at a single shared vertex. Since A + B + C + D = 360 deg, they fill the full circular vertex angle perfectly without gaps. (b) Exactly 4 tiles meet at each vertex.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Chapter 12 Practice Paper (Varignon Mapping & Invariants)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Midpoints of sides of a RHOMBUS connected in order form a:",
+              "options": [
+                "A) Rhombus",
+                "B) Rectangle",
+                "C) Square",
+                "D) Trapezium"
+              ],
+              "correct_answer": "B) Rectangle",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Midpoints of sides of a RECTANGLE connected in order form a:",
+              "options": [
+                "A) Rectangle",
+                "B) Rhombus",
+                "C) Parallelogram",
+                "D) Square"
+              ],
+              "correct_answer": "B) Rhombus",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Explain why joining midpoints of a rhombus forms a rectangle.",
+              "marking_scheme_answer": "Diagonals AC and BD of a rhombus are perpendicular (AC perpendicular BD). Varignon sides PQ and QR are parallel to AC and BD respectively. Therefore, adjacent sides PQ and QR meet at 90 degrees, forming a RECTANGLE.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Explain why joining midpoints of a rectangle forms a rhombus.",
+              "marking_scheme_answer": "Diagonals AC and BD of a rectangle are equal (AC = BD). Varignon sides PQ = SR = 1/2 AC and PS = QR = 1/2 BD. Since AC = BD, all four sides PQ = QR = RS = SP are equal, forming a RHOMBUS.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "State Ptolemy's Theorem for cyclic quadrilaterals. Calculate diagonal product AC * BD for cyclic quadrilateral ABCD with AB = 3 cm, BC = 4 cm, CD = 5 cm, AD = 6 cm.",
+              "marking_scheme_answer": "Ptolemy's Theorem: In a cyclic quadrilateral, AC * BD = AB * CD + AD * BC. Substituting values: AC * BD = (3 * 5) + (6 * 4) = 15 + 24 = 39 cm^2.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Architectural Truss Design. A triangular roof truss ABC has DE joining midpoints AB and AC. P, Q are midpoints of BD and CE. If BC = 24 m: (a) Find length DE. (b) Find length PQ.",
+              "marking_scheme_answer": "(a) DE = 1/2 BC = 12 m (Midpoint Theorem). (b) Trapezium BCED has P, Q as midpoints of non-parallel sides BD, CE. Length PQ = 1/2 (DE + BC) = 1/2 (12 + 24) = 18 m.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Chapter 12 Practice Paper (Special Quadrilaterals & Proofs)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Diagonals of a square are:",
+              "options": [
+                "A) Equal and bisect at 90 deg",
+                "B) Unequal and bisect at 90 deg",
+                "C) Equal but do not bisect",
+                "D) Parallel"
+              ],
+              "correct_answer": "A) Equal and bisect at 90 deg",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In triangle ABC, D and E are midpoints of AB and AC. Area of triangle ADE is what fraction of area ABC?",
+              "options": [
+                "A) 1/2",
+                "B) 1/3",
+                "C) 1/4",
+                "D) 1/8"
+              ],
+              "correct_answer": "C) 1/4",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Prove why area of triangle ADE is 1/4th of area of triangle ABC when D, E are side midpoints.",
+              "marking_scheme_answer": "Triangle ADE is similar to ABC with side ratio 1:2. Area ratio of similar triangles equals side ratio squared = (1/2)^2 = 1/4. Thus Area(ADE) = 1/4 Area(ABC).",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "In quadrilateral ABCD, angles are in ratio 3:5:9:13. Find all four angles.",
+              "marking_scheme_answer": "3x + 5x + 9x + 13x = 360 deg => 30x = 360 => x = 12. Angles: 36 deg, 60 deg, 108 deg, 156 deg.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Show that the bisectors of interior angles of a parallelogram form a rectangle.",
+              "marking_scheme_answer": "Let ABCD be a parallelogram. Adjacent interior angles sum to 180 deg (A + B = 180). Bisectors of A and B form a triangle with acute angle sum = 1/2 A + 1/2 B = 90 deg. Third angle of intersection = 180 - 90 = 90 deg. Similarly all four intersection angles of bisectors are 90 deg, forming a RECTANGLE.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Pantograph Drafting Tool. A mechanical pantograph uses hinged rods forming parallelogram ABCD with extended arm sides. (a) State the geometric principle keeping output marker aligned with input tracer. (b) If side ratio is 1:3, calculate magnification factor.",
+              "marking_scheme_answer": "(a) Pantograph relies on parallelogram linkage angle preservation and similarity of triangles formed by fixed pivot, tracer, and drawing pen. (b) Magnification factor equals scale ratio of extended arm to tracer arm = 3:1 = 3x magnification.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Chapter 12 Practice Paper (Exhaustive Unit Test)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Area of Varignon parallelogram PQRS is what fraction of area of outer quadrilateral ABCD?",
+              "options": [
+                "A) 1/4",
+                "B) 1/3",
+                "C) 1/2",
+                "D) 2/3"
+              ],
+              "correct_answer": "C) 1/2",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "A quadrilateral with perpendicular bisecting diagonals of unequal length is a:",
+              "options": [
+                "A) Square",
+                "B) Rhombus",
+                "C) Rectangle",
+                "D) Parallelogram"
+              ],
+              "correct_answer": "B) Rhombus",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Prove that area of Varignon parallelogram PQRS is half the area of outer quadrilateral ABCD.",
+              "marking_scheme_answer": "Area(APQ) = 1/4 Area(ABD), Area(CQR) = 1/4 Area(CBD). Sum of corner triangles = 1/4 Area(ABCD) + 1/4 Area(ABCD) = 1/2 Area(ABCD). Subtracting corner triangles from ABCD leaves Area(PQRS) = 1/2 Area(ABCD).",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "In right triangle ABC angled at B, M is midpoint of AC. Prove BM = 1/2 AC.",
+              "marking_scheme_answer": "Complete rectangle ABCD. Diagonals AC and BD of rectangle are equal and bisect at M. BM = 1/2 BD = 1/2 AC.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Prove that line segments joining midpoints of opposite sides of any quadrilateral bisect each other.",
+              "marking_scheme_answer": "Let midpoints of ABCD be P, Q, R, S. By Varignon's Theorem, PQRS is a parallelogram. Line segments joining opposite midpoints PR and QS are diagonals of parallelogram PQRS. Since diagonals of a parallelogram bisect each other, PR and QS bisect each other.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Structural Centroid of Triangular Plate. A uniform triangular sheet ABC has medians AD, BE, CF intersecting at G. (a) Show G is center of mass. (b) If coordinates are A(0,0), B(6,0), C(3,9), find centroid coordinates G(x, y).",
+              "marking_scheme_answer": "(a) Medians divide triangle into 6 sub-triangles of equal area, balancing mass evenly around G. (b) Centroid formula: G = ((x1+x2+x3)/3, (y1+y2+y3)/3) = ((0+6+3)/3, (0+0+9)/3) = (9/3, 9/3) = (3, 3).",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U04-C12"
+}

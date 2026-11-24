@@ -1,0 +1,233 @@
+{
+  "chapter_number": 13,
+  "chapter_title": "Statistics",
+  "unit_or_theme": "Statistics & Probability",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "Covers measures of central tendency for grouped data: Mean (Direct, Assumed Mean, Step-Deviation methods), Mode, and Median, along with the empirical relationship between them.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "13.1 Mean of Grouped Data",
+        "full_explanation": "Direct Method: x̄ = Σ(fi * xi) / Σfi. Assumed Mean: x̄ = a + [Σ(fi * di) / Σfi] where di = xi - a. Step-Deviation: x̄ = a + [Σ(fi * ui) / Σfi] * h where ui = (xi - a)/h.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Formula",
+            "box_title": "Step-Deviation Mean",
+            "full_content": "x̄ = a + h * (Σfi ui / Σfi)"
+          }
+        ]
+      },
+      {
+        "section_number_title": "13.2 Mode and Median of Grouped Data",
+        "full_explanation": "Mode = l + [(f1 - f0) / (2f1 - f0 - f2)] * h. Median = l + [(n/2 - cf) / f] * h.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Empirical Rule",
+            "box_title": "3 Median Rule",
+            "full_content": "3 Median = Mode + 2 Mean"
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Class Mark (xi)",
+        "definition": "Midpoint of a class interval: (Upper Limit + Lower Limit) / 2.",
+        "contextual_example_or_usage": "For 10-20, xi = 15",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Modal Class",
+        "definition": "The class interval with the highest frequency.",
+        "contextual_example_or_usage": "Class with max fi",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Median Class",
+        "definition": "The class interval whose cumulative frequency is just greater than or equal to n/2.",
+        "contextual_example_or_usage": "Class containing n/2th observation",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Empirical Relationship of Central Tendencies",
+        "statement_or_expression": "3 * Median = Mode + 2 * Mean",
+        "variable_definitions": "Measures of central tendency for a distribution",
+        "model_application_example": "If Mean=20, Median=22: Mode = 3(22) - 2(20) = 66 - 40 = 26."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Calculating Mode of Grouped Data",
+      "objective_or_aim": "Find mode for class intervals 1-3 (f=7), 3-5 (f=8), 5-7 (f=2).",
+      "materials_or_prerequisites": [
+        "Mode formula"
+      ],
+      "step_by_step_procedure": [
+        "Max frequency is 8 => Modal class is 3-5.",
+        "l = 3, f1 = 8, f0 = 7, f2 = 2, h = 2.",
+        "Mode = 3 + [(8 - 7)/(2(8) - 7 - 2)] * 2 = 3 + [1 / 7] * 2 = 3 + 0.286 = 3.286."
+      ],
+      "expected_observations_or_working": "Modal class identification dictates all formula values.",
+      "scientific_or_logical_conclusion": "Mode is 3.286."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Frequency Distribution Histogram & Mode",
+        "labels_to_learn": [
+          "Class Intervals",
+          "Frequencies",
+          "Modal Peak"
+        ],
+        "drawing_or_labeling_instructions": "Draw vertical bar graph representing grouped frequencies.",
+        "key_structural_details": "Tallest bar represents modal class."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Grouped Statistics Calculation Table Layout",
+        "headers": [
+          "Class Interval",
+          "Frequency (fi)",
+          "Class Mark (xi)",
+          "fi * xi",
+          "Cumulative Frequency (cf)"
+        ],
+        "rows": [
+          [
+            "0-10",
+            "5",
+            "5",
+            "25",
+            "5"
+          ],
+          [
+            "10-20",
+            "8",
+            "15",
+            "120",
+            "13"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 13.1",
+        "question_number": "Q1",
+        "question_text": "Find mean of plants per house: 0-2 (1), 2-4 (2), 4-6 (1), 6-8 (5), 8-10 (6), 10-12 (2), 12-14 (3).",
+        "complete_step_by_step_solution": "Σfi = 20. Σfi xi = 1(1) + 2(3) + 1(5) + 5(7) + 6(9) + 2(11) + 3(13) = 1 + 6 + 5 + 35 + 54 + 22 + 39 = 162. Mean = 162 / 20 = 8.1 plants."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "The mean is the average of data, median is middle value, and mode is most frequent value...",
+        "questions_and_answers": [
+          {
+            "question": "State the relationship between mean, median, and mode.",
+            "answer": "3 Median = Mode + 2 Mean."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "If Mode = 12 and Mean = 15, then Median is:",
+        "options": [
+          "14",
+          "13",
+          "15",
+          "16"
+        ],
+        "correct_answer": "14",
+        "brief_explanation": "3 Median = Mode + 2 Mean = 12 + 2(15) = 42 => Median = 14."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Find class mark of class interval 15-35 and class length.",
+        "model_answer": "Class mark xi = (15 + 35)/2 = 50/2 = 25. Class length h = 35 - 15 = 20.",
+        "key_marking_points": [
+          "Formula application",
+          "Class mark value",
+          "Class length value"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "The median of following data is 525. Find values of x and y if total frequency is 100. (Intervals 0-100 to 900-1000).",
+        "model_answer": "Median class is 500-600. l=500, h=100, f=20, cf=36+x. Median = 500 + [(50 - (36+x))/20]*100 => 525 = 500 + (14-x)*5 => 25 = 70 - 5x => 5x = 45 => x = 9. Since sum of frequencies is 100 => x + y = 24 => y = 15."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A survey regarding heights (in cm) of 51 girls of Class X was conducted. Heights: <140 (4), <145 (11), <150 (29), <155 (40), <160 (46), <165 (51).",
+        "questions_and_answers": [
+          {
+            "question": "Find median height.",
+            "answer": "Convert to continuous intervals. n=51 => n/2 = 25.5. Median class 145-150. Median = 145 + [(25.5 - 11)/18]*5 = 145 + (14.5/18)*5 = 149.03 cm."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Using cumulative frequency cf of the modal/median class instead of the PRECEDING class in the median formula.",
+      "root_cause": "Misinterpreting cf term in median formula.",
+      "correct_approach": "The 'cf' in median formula ALWAYS refers to cumulative frequency of the class PRECEDING the median class."
+    }
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 13: Statistics. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 13 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 13",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ],
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U05-C13"
+}

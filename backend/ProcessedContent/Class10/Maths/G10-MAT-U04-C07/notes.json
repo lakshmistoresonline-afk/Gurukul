@@ -1,0 +1,225 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Coordinate Geometry",
+  "unit_or_theme": "Coordinate Geometry",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "Covers distance formula between two points in Cartesian plane, section formula for internal division of a line segment, and finding the midpoint of a line segment.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "7.1 Distance Formula",
+        "full_explanation": "Distance between P(x1, y1) and Q(x2, y2) is given by d = √[(x2 - x1)^2 + (y2 - y1)^2], derived using Pythagoras Theorem.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Formula",
+            "box_title": "Distance from Origin",
+            "full_content": "Distance of point P(x, y) from origin (0,0) is √(x^2 + y^2)."
+          }
+        ]
+      },
+      {
+        "section_number_title": "7.2 Section Formula",
+        "full_explanation": "Coordinates of point P(x, y) dividing line joining A(x1, y1) and B(x2, y2) internally in ratio m1:m2 are [(m1*x2 + m2*x1)/(m1+m2), (m1*y2 + m2*y1)/(m1+m2)].",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Special Case",
+            "box_title": "Midpoint Formula",
+            "full_content": "Midpoint coordinates are [(x1 + x2)/2, (y1 + y2)/2]."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Cartesian Plane",
+        "definition": "A two-dimensional plane formed by perpendicular x-axis and y-axis.",
+        "contextual_example_or_usage": "Point P(3, 4)",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Section Formula",
+        "definition": "A formula giving coordinates of a point dividing a line segment in a given ratio.",
+        "contextual_example_or_usage": "Internal division ratio m:n",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Distance Formula",
+        "statement_or_expression": "d = √[(x2 - x1)^2 + (y2 - y1)^2]",
+        "variable_definitions": "(x1, y1) and (x2, y2) are point coordinates",
+        "model_application_example": "Distance between (1, 2) and (4, 6) = √[(3)^2 + (4)^2] = √25 = 5 units."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Finding Ratio k:1 in Section Formula",
+      "objective_or_aim": "Find ratio in which y-axis divides segment joining (5, -6) and (-1, -4).",
+      "materials_or_prerequisites": [
+        "Section formula"
+      ],
+      "step_by_step_procedure": [
+        "Let ratio be k:1.",
+        "x-coordinate on y-axis is 0.",
+        "0 = [k(-1) + 1(5)] / (k + 1)",
+        "-k + 5 = 0 => k = 5.",
+        "Ratio is 5:1."
+      ],
+      "expected_observations_or_working": "Setting x-coordinate to 0 yields k directly.",
+      "scientific_or_logical_conclusion": "Point divides segment internally in 5:1 ratio."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Section Formula Line Division",
+        "labels_to_learn": [
+          "Point A(x1,y1)",
+          "Point B(x2,y2)",
+          "Dividing Point P(x,y)",
+          "Ratios m1 and m2"
+        ],
+        "drawing_or_labeling_instructions": "Draw line segment AB with internal point P dividing it.",
+        "key_structural_details": "Visualizing ratio distances along segment."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Coordinate Geometry Formulas",
+        "headers": [
+          "Concept",
+          "Formula"
+        ],
+        "rows": [
+          [
+            "Distance",
+            "√[(x2-x1)^2 + (y2-y1)^2]"
+          ],
+          [
+            "Section (m1:m2)",
+            "[(m1x2+m2x1)/(m1+m2), (m1y2+m2y1)/(m1+m2)]"
+          ],
+          [
+            "Midpoint",
+            "[(x1+x2)/2, (y1+y2)/2]"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 7.1",
+        "question_number": "Q1(i)",
+        "question_text": "Find distance between (2, 3) and (4, 1).",
+        "complete_step_by_step_solution": "d = √[(4-2)^2 + (1-3)^2] = √[4 + 4] = √8 = 2√2 units."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "To find the distance of a point P(x,y) from origin O(0,0), we apply Pythagoras theorem in right triangle...",
+        "questions_and_answers": [
+          {
+            "question": "What is distance of (3, -4) from origin?",
+            "answer": "√(3^2 + (-4)^2) = √(9+16) = √25 = 5 units."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Distance of point P(-6, 8) from origin is:",
+        "options": [
+          "8",
+          "2√7",
+          "10",
+          "6"
+        ],
+        "correct_answer": "10",
+        "brief_explanation": "d = √[(-6)^2 + 8^2] = √[36 + 64] = √100 = 10."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Find point on x-axis equidistant from (2, -5) and (-2, 9).",
+        "model_answer": "Let point be P(x, 0). PA^2 = PB^2 => (x-2)^2 + (0+5)^2 = (x+2)^2 + (0-9)^2 => x^2-4x+4+25 = x^2+4x+4+81 => -8x = 56 => x = -7. Point is (-7, 0).",
+        "key_marking_points": [
+          "Point assumption (x,0)",
+          "Equating distance squared",
+          "Solving for x"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "Find coordinates of points of trisection of segment joining (4, -1) and (-2, -3).",
+        "model_answer": "Trisection points P and Q divide in ratios 1:2 and 2:1. P = [(1(-2)+2(4))/3, (1(-3)+2(-1))/3] = [6/3, -5/3] = (2, -5/3). Q = [(2(-2)+1(4))/3, (2(-3)+1(-1))/3] = [0/3, -7/3] = (0, -7/3)."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "Students standing in sports ground at A(3,6), B(6,9), C(9,6), D(6,3).",
+        "questions_and_answers": [
+          {
+            "question": "Is quadrilateral ABCD a square?",
+            "answer": "Calculate AB=BC=CD=DA=√18=3√2 and diagonals AC=BD=6. All sides equal and diagonals equal => ABCD is a square."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Forgetting that a point on x-axis has y-coordinate 0 (assuming (0, x) instead of (x, 0)).",
+      "root_cause": "Flipping coordinate axes definitions.",
+      "correct_approach": "Points on x-axis are (x, 0); points on y-axis are (0, y)."
+    }
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 7: Coordinate Geometry. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 7 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 7",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ],
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U03-C07"
+}

@@ -1,0 +1,128 @@
+{
+  "chapter_number": 12,
+  "chapter_title": "Volume and Capacity",
+  "mind_map": {
+    "root_node": "Racing Seconds (Sexagesimal Time Units, Clock Translations & Elapsed Duration)",
+    "main_branches": [
+      {
+        "branch_title": "1. Sexagesimal Base-60 Time System & Precision",
+        "sub_branches": [
+          {
+            "sub_title": "Base-60 Scale Factor & Unit Conversions",
+            "key_nodes": [
+              "Base-60 Scale Factor: 1 Minute = 60 Seconds; 1 Hour = 60 Minutes = 3,600 Seconds",
+              "Minutes to Seconds: Multiply minutes by 60 (e.g., 4 min x 60 = 240 sec)",
+              "Seconds to Minutes: Divide seconds by 60 (e.g., 180 sec / 60 = 3 min)",
+              "Mixed Unit Conversion: Expressing 2 min 15 sec = (2 x 60) + 15 = 135 seconds"
+            ],
+            "misconception_alert": "Using base-10 (100) conversions for time instead of base-60 (e.g., thinking 1 min = 100 sec).",
+            "formula_or_rule": "Base-60 Time Rule: Multiply by 60 to move down unit hierarchy; divide by 60 to move up.",
+            "real_world_application": "Timing 100m sprint races, cooking timers, and athletic sports training."
+          },
+          {
+            "sub_title": "Digital Stopwatch Precision & Fractional Benchmarks",
+            "key_nodes": [
+              "Digital Stopwatch Precision: Tracking hundredths of a second in sprint finish lines",
+              "Fractional Minute Benchmarks: 1/2 min = 30 sec; 1/4 min = 15 sec; 3/4 min = 45 sec",
+              "Comparing Race Split Times: Lower stopwatch reading indicates faster performance"
+            ],
+            "misconception_alert": "Thinking a larger stopwatch decimal value represents a faster runner.",
+            "formula_or_rule": "Race Winner Rule: Smallest elapsed time = Fastest runner.",
+            "real_world_application": "Olympic athletic track timing, swimming competitions, and motor racing split times."
+          }
+        ]
+      },
+      {
+        "branch_title": "2. 12-Hour AM/PM vs 24-Hour Railway Clock Translation",
+        "sub_branches": [
+          {
+            "sub_title": "12-Hour AM/PM Mechanics",
+            "key_nodes": [
+              "12-Hour Clock Structure: 12-hour cycle repeated twice daily (AM and PM)",
+              "AM (Ante Meridiem): Midnight (12:00 AM) to Noon (11:59 AM)",
+              "PM (Post Meridiem): Noon (12:00 PM) to Midnight (11:59 PM)",
+              "Ambiguity Risk: Missing AM/PM designation causes 12-hour scheduling errors"
+            ],
+            "misconception_alert": "Labeling 12:00 Noon as 12:00 AM or 12:00 Midnight as 12:00 PM.",
+            "formula_or_rule": "Meridiem Rule: 12:00 Noon = 12:00 PM; 12:00 Midnight = 12:00 AM.",
+            "real_world_application": "Setting alarm clocks and scheduling daily school appointments."
+          },
+          {
+            "sub_title": "24-Hour Railway Clock Translation",
+            "key_nodes": [
+              "24-Hour Railway Clock: 4-digit notation eliminating AM/PM confusion (00:00 = Midnight, 12:00 = Noon, 14:30 = 2:30 PM)",
+              "12-Hour PM to 24-Hour Conversion: Add 12 to hour digit (e.g., 7:45 PM + 12 = 19:45 hours)",
+              "24-Hour to 12-Hour Conversion: Subtract 12 from hours >= 13:00 (e.g., 21:15 - 12 = 9:15 PM)",
+              "Midnight & Noon Notation: 00:00 hours = Midnight; 12:00 hours = Noon"
+            ],
+            "misconception_alert": "Adding 12 to morning AM times when converting to 24-hour railway clock format.",
+            "formula_or_rule": "PM Conversion: 24-Hour Time = 12-Hour PM Hour + 12:00.",
+            "real_world_application": "Reading train timetables, flight departure boards, and television broadcast guides."
+          }
+        ]
+      },
+      {
+        "branch_title": "3. Elapsed Duration & Daily Time Management",
+        "sub_branches": [
+          {
+            "sub_title": "Elapsed Duration Calculations",
+            "key_nodes": [
+              "Elapsed Duration Formula: Duration = End Time - Start Time",
+              "Cross-Hour Regrouping: When subtracting minutes, borrow 1 hour as 60 minutes (not 100 minutes)",
+              "Adding Time Durations: Sum minutes; if total >= 60, convert 60 min to 1 hour"
+            ],
+            "misconception_alert": "Borrowing 100 minutes during time subtraction instead of 60 minutes.",
+            "formula_or_rule": "Duration Identity: Duration = End_time - Start_time (regrouping 1 hr = 60 min).",
+            "real_world_application": "Calculating movie length, exam durations, and school daily timetables."
+          },
+          {
+            "sub_title": "Calendar Math & Leap Years",
+            "key_nodes": [
+              "Standard Calendar Year: 365 days; 52 weeks + 1 day",
+              "Leap Year Cycle: Every 4 years, February has 29 days (366 total days)",
+              "Leap Year Rule: Year divisible by 4 is a leap year (except century years not divisible by 400)"
+            ],
+            "misconception_alert": "Assuming February always has 28 days every year.",
+            "formula_or_rule": "Leap Year Rule: Year % 4 == 0 -> 366 Days (February 29).",
+            "real_world_application": "Planning long-term project deadlines and calendar scheduling."
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "chapter_number": 12,
+    "image_id": "ch12_stopwatch_clocks",
+    "file_name": "ch12_stopwatch_clocks.png",
+    "local_url": "/assets/images/ch12_stopwatch_clocks.png",
+    "aspect_ratio": "16:9",
+    "title": "Base-60 Time System & Athletic Digital Stopwatch",
+    "description": "Digital stopwatch with split seconds and 12-hour AM/PM to 24-hour railway clock translation.",
+    "hotspots": [
+      {
+        "label": "Minutes Display",
+        "x_percent": 35.0,
+        "y_percent": 40.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Seconds Display",
+        "x_percent": 50.0,
+        "y_percent": 40.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Split-Second Precision Display",
+        "x_percent": 65.0,
+        "y_percent": 40.0,
+        "w_percent": 12.0,
+        "h_percent": 15.0
+      }
+    ]
+  },
+  "grade": "5",
+  "subject": "Maths",
+  "chapter_id": "G5-MAT-U04-C12"
+}

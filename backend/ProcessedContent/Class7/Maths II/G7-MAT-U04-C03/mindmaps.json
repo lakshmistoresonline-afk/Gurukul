@@ -1,0 +1,97 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Finding Common Ground (Fractions & Decimals)",
+  "image_asset": {
+    "asset_id": "img_ch3",
+    "chapter_number": 3,
+    "title": "Rectangular Floor Tiling Grid",
+    "url": "/assets/images/ch3_hcf_floor_tiling.png",
+    "caption": "12 ft × 16 ft floor tiled with 4 ft × 4 ft square tiles representing HCF(12, 16) = 4.",
+    "hotspots": [
+      {
+        "x_percent": 0,
+        "y_percent": 0,
+        "w_percent": 100,
+        "h_percent": 100,
+        "label": "4x4 Tile Grid",
+        "popover_text": "12 tiles of size 4ft x 4ft tile a 12ft x 16ft room completely without cutting."
+      }
+    ]
+  },
+  "mind_map": {
+    "root_topic": "Finding Common Ground (HCF & LCM)",
+    "branches": [
+      {
+        "theme": "3.1 Highest Common Factor (HCF / GCD)",
+        "sub_branches": [
+          {
+            "concept": "HCF Concept & Real-World Optimization",
+            "details": [
+              "HCF is the largest positive integer that divides two or more given numbers without leaving a remainder.",
+              "Used when partitioning or dividing quantities into the maximum possible equal sized units without waste."
+            ],
+            "evidence_or_examples": [
+              "Maximum square tile size for a 12 ft × 16 ft floor: HCF(12, 16) = 4 ft (requires 12 tiles of 4x4)",
+              "Relief packing of 225 kg rice and 750 kg wheat into maximum equal bags: HCF(225, 750) = 75 kg (13 bags total)"
+            ],
+            "key_terms": [
+              "HCF",
+              "GCD",
+              "Common Factor",
+              "Tiling Optimization"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "3.2 Least Common Multiple (LCM) & Co-primes",
+        "sub_branches": [
+          {
+            "concept": "LCM Concept & Periodic Cycle Alignment",
+            "details": [
+              "LCM is the smallest non-zero common multiple of two or more given numbers.",
+              "Used when calculating repeating cycles, simultaneous events, or common meeting lengths.",
+              "Co-prime Numbers: Two numbers with HCF = 1."
+            ],
+            "evidence_or_examples": [
+              "Shortest common toran cloth strip length for 6 cm and 8 cm strips: LCM(6, 8) = 24 cm",
+              "3 bells tolling at 9, 12, 15 min intervals meeting after LCM(9,12,15) = 180 min (3 hours)",
+              "Co-prime numbers 5 and 7 have HCF = 1"
+            ],
+            "key_terms": [
+              "LCM",
+              "Common Multiple",
+              "Co-prime",
+              "Periodic Interval"
+            ]
+          }
+        ]
+      },
+      {
+        "theme": "3.3 Prime Factorisation & Fundamental Formula",
+        "sub_branches": [
+          {
+            "concept": "Prime Factorisation Method & HCF-LCM Product Formula",
+            "details": [
+              "Express numbers as products of prime factors with exponents.",
+              "HCF = Product of common prime factors with lowest powers.",
+              "LCM = Product of all prime factors with highest powers.",
+              "Two-Number Formula: HCF(a, b) × LCM(a, b) = a × b."
+            ],
+            "evidence_or_examples": [
+              "45 = 3² × 5, 36 = 2² × 3² ⇒ HCF = 3² = 9, LCM = 2² × 3² × 5 = 180. Check: 9 × 180 = 1620 = 45 × 36."
+            ],
+            "key_terms": [
+              "Prime Factorisation",
+              "Exponent",
+              "Product Formula"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths II",
+  "chapter_id": "G7-MAT-U01-C03"
+}

@@ -1,0 +1,364 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Propositions and their Converses",
+  "papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Chapter 9 Practice Paper (Logic & Implications)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which of the following declarative sentences qualifies as a mathematical proposition?",
+              "options": [
+                "A) How many sides does a rhombus have?",
+                "B) Every square is a rectangle.",
+                "C) Please draw a right-angled triangle.",
+                "D) x + 7 = 10"
+              ],
+              "correct_answer": "B) Every square is a rectangle.",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the converse of the implication 'If a number is divisible by 6, then it is divisible by 3'?",
+              "options": [
+                "A) If a number is not divisible by 6, it is not divisible by 3.",
+                "B) If a number is divisible by 3, then it is divisible by 6.",
+                "C) If a number is divisible by 6, it is divisible by 2.",
+                "D) A number is divisible by 6 if and only if it is divisible by 3."
+              ],
+              "correct_answer": "B) If a number is divisible by 3, then it is divisible by 6.",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Write the converse of: 'If a triangle is isosceles, then the angles opposite to the equal sides are equal.' State whether the converse is true.",
+              "marking_scheme_answer": "Converse: 'If two angles of a triangle are equal, then the sides opposite to them are equal.' Truth value: True. (Converse of Isosceles Triangle Theorem).",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Define a counterexample and provide a geometric counterexample to refute: 'If all four angles of a quadrilateral are 90 degrees, then it is a square.'",
+              "marking_scheme_answer": "A counterexample is a specific case that disproves a universal claim. Counterexample: A rectangle with side lengths 4 cm and 6 cm has four 90-degree angles but is not a square because adjacent sides are unequal.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Explain the difference between a converse and a contrapositive statement for 'If P then Q'. Prove why a proposition and its contrapositive are logically equivalent, while a proposition and its converse are logically independent.",
+              "marking_scheme_answer": "1. Converse swaps hypothesis and conclusion (If Q then P). Contrapositive negates and swaps both (If not Q then not P). 2. Equivalence: P -> Q and ~Q -> ~P share identical truth tables in all truth interpretations. 3. Independence: Truth of P -> Q does not guarantee truth of Q -> P (e.g. multiples of 6 vs 3).",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Baudhāyana-Pythagoras Equivalence. A mason uses a 12-knot rope loop with knot spaces in ratio 3:4:5 to lay out a wall foundation corner. (a) State the Baudhāyana-Pythagoras Theorem and its converse. (b) Explain which of the two mathematical statements justifies the mason's method.",
+              "marking_scheme_answer": "(a) Theorem: In a right triangle with hypotenuse c, a^2 + b^2 = c^2. Converse: If triangle sides satisfy a^2 + b^2 = c^2, the angle opposite side c is 90 degrees. (b) The mason uses the CONVERSE theorem because they know side lengths 3, 4, 5 satisfy 3^2 + 4^2 = 5^2, allowing them to conclude the corner angle is exactly 90 degrees.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Chapter 9 Practice Paper (Disproofs & Counterexamples)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "How many counterexamples are required to disprove a universal mathematical assertion 'For all x, P(x)'?",
+              "options": [
+                "A) Zero",
+                "B) Exactly one",
+                "C) At least three",
+                "D) Infinitely many"
+              ],
+              "correct_answer": "B) Exactly one",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which mathematician disproved Fermat's conjecture that F_n = 2^(2^n) + 1 is always prime?",
+              "options": [
+                "A) Euclid",
+                "B) Baudhāyana",
+                "C) Leonhard Euler",
+                "D) Carl Friedrich Gauss"
+              ],
+              "correct_answer": "C) Leonhard Euler",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Refute the following claim by constructing a clear counterexample: 'If two triangles have equal perimeters, then they must be congruent.'",
+              "marking_scheme_answer": "Counterexample: Triangle A with sides (3 cm, 4 cm, 5 cm) has perimeter 12 cm. Triangle B with sides (4 cm, 4 cm, 4 cm) has perimeter 12 cm. Both have perimeter 12 cm, but Triangle A is right-angled while Triangle B is equilateral; hence they are not congruent.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Formulate the converse of: 'If two lines are parallel, then their alternate interior angles are equal.' Is the converse true?",
+              "marking_scheme_answer": "Converse: 'If alternate interior angles formed by a transversal cutting two lines are equal, then the two lines are parallel.' Truth value: True (Converse of Alternate Interior Angles Theorem).",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Euler showed that F_5 = 2^(2^5) + 1 = 4,294,967,297 is composite (641 x 6,700,417). Explain how Euler discovered this counterexample and what it demonstrates about inductive reasoning in mathematics.",
+              "marking_scheme_answer": "Fermat tested n=0,1,2,3,4 (yielding 3, 5, 17, 257, 65537 - all prime) and inductively claimed all F_n are prime. Euler checked n=5, found 641 divides F_5, providing a counterexample. This proves inductive pattern checking across limited samples cannot substitute for formal mathematical proof.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Diagonals Experiment. Students pin two equal-length thin sticks together at their midpoints and connect their endpoints to form a quadrilateral. (a) What quadrilateral is always formed? (b) What additional condition turns it into a square?",
+              "marking_scheme_answer": "(a) A rectangle is always formed because equal diagonals bisecting each other guarantee a rectangle. (b) To form a square, the sticks must be pinned so they intersect at a 90-degree right angle (perpendicular bisecting diagonals).",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Chapter 9 Practice Paper (Truth Trees & Bi-conditionals)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "When both a proposition 'If P then Q' and its converse 'If Q then P' are true, we write:",
+              "options": [
+                "A) P implies Q",
+                "B) P if and only if Q (P <==> Q)",
+                "C) P or Q",
+                "D) P is not Q"
+              ],
+              "correct_answer": "B) P if and only if Q (P <==> Q)",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which pair of statements represents a proposition and a true converse?",
+              "options": [
+                "A) Multiples of 4 -> Multiples of 2",
+                "B) Rhombus -> Equal diagonals",
+                "C) Perfect square -> Odd number of distinct factors",
+                "D) Equilateral triangle -> Right angle"
+              ],
+              "correct_answer": "C) Perfect square -> Odd number of distinct factors",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Frame the converse of: 'If a number is prime and greater than 2, then it is odd.' Determine whether the converse is true.",
+              "marking_scheme_answer": "Converse: 'If an odd number is greater than 2, then it is prime.' Truth value: False. Counterexample: 9, 15, or 21 are odd numbers greater than 2, but none are prime.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Explain why 'If a polygon is a regular hexagon, then its interior angles sum to 720 degrees' has a false converse.",
+              "marking_scheme_answer": "Converse: 'If the interior angles of a polygon sum to 720 degrees, then it is a regular hexagon.' This is false because any irregular 6-gon also has an interior angle sum of 720 degrees without having equal sides or angles.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Construct a truth evaluation table for the following implications: (1) 'n is even -> n^2 is even', (2) 'n^2 is even -> n is even'. Deduce whether 'n is even' and 'n^2 is even' are logically equivalent.",
+              "marking_scheme_answer": "1. If n = 2k, n^2 = 4k^2 = 2(2k^2) (Even) -> True. 2. If n^2 is even, n cannot be odd (since odd^2 = 2(2k^2+2k)+1 = odd) -> True. Since both implication and converse hold, 'n is even' <==> 'n^2 is even' (Logically Equivalent).",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Steiner-Lehmus Theorem. (a) State the theorem regarding angle bisectors of a triangle. (b) Explain why proving equal angle bisectors implies an isosceles triangle was historically considered challenging compared to its converse.",
+              "marking_scheme_answer": "(a) Steiner-Lehmus Theorem: If two angle bisectors of a triangle are equal in length, then the triangle is isosceles. (b) The original theorem ('Isosceles -> Equal bisectors') is easily proved by SAS triangle congruence. Its converse ('Equal bisectors -> Isosceles') requires non-trivial indirect proof or trigonometric inequalities because direct congruence steps cannot be applied backwards.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Chapter 9 Practice Paper (Necessary vs Sufficient Conditions)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In the conditional statement 'If P then Q', P is described as a _____ condition for Q.",
+              "options": [
+                "A) Necessary",
+                "B) Sufficient",
+                "C) Bi-conditional",
+                "D) Equivalent"
+              ],
+              "correct_answer": "B) Sufficient",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In the statement 'If P then Q', Q is described as a _____ condition for P.",
+              "options": [
+                "A) Necessary",
+                "B) Sufficient",
+                "C) Arbitrary",
+                "D) Negative"
+              ],
+              "correct_answer": "A) Necessary",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Distinguish between 'necessary condition' and 'sufficient condition' using the example of a square and a rectangle.",
+              "marking_scheme_answer": "Being a rectangle (all angles 90 deg) is a NECESSARY condition for a shape to be a square. Having equal adjacent sides in addition to 90 deg angles is a SUFFICIENT condition for a rectangle to be a square.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Frame the converse of: 'If a quadrilateral is a parallelogram, its opposite sides are equal.' Is it true?",
+              "marking_scheme_answer": "Converse: 'If opposite sides of a quadrilateral are equal, then it is a parallelogram.' Truth value: True (Standard Parallelogram Converse Theorem).",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Prove that 'If two triangles are congruent, then their areas are equal' has a false converse. State a sufficient condition to make equal area triangles congruent.",
+              "marking_scheme_answer": "Converse: 'If two triangles have equal areas, they are congruent.' False. Counterexample: Triangle A (base 4, height 3, area 6) and Triangle B (base 6, height 2, area 6) have equal areas but different side lengths. Sufficient condition: Equal areas AND two corresponding equal sides (or equal base and corresponding height with equal included angle).",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Circle Geometry. (a) State the theorem connecting chords and distance from center. (b) Frame its converse and verify its validity.",
+              "marking_scheme_answer": "(a) Theorem: Equal chords of a circle are equidistant from the center. (b) Converse: Chords equidistant from the center of a circle are equal in length. Truth value: True. Proof uses RHS congruence on triangles formed by perpendiculars from center to chord midpoints.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Chapter 9 Practice Paper (Exhaustive Unit Test)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which of the following is the contrapositive of 'If x = 2, then x^2 = 4'?",
+              "options": [
+                "A) If x^2 = 4, then x = 2",
+                "B) If x != 2, then x^2 != 4",
+                "C) If x^2 != 4, then x != 2",
+                "D) If x = -2, then x^2 = 4"
+              ],
+              "correct_answer": "C) If x^2 != 4, then x != 2",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "A statement 'For all natural numbers n, n^2 + n + 41 is prime' is disproved by testing n = :",
+              "options": [
+                "A) 1",
+                "B) 10",
+                "C) 40",
+                "D) 41"
+              ],
+              "correct_answer": "D) 41",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Verify why n = 41 acts as a counterexample for n^2 + n + 41 being prime.",
+              "marking_scheme_answer": "For n = 41: 41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 x 43 = 1763, which is divisible by 41 and 43, hence composite.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Give a real-life non-mathematical implication and its converse to illustrate logical independence.",
+              "marking_scheme_answer": "Implication: 'If it is raining, then the ground is wet' (True). Converse: 'If the ground is wet, then it is raining' (False - ground could be wet from a sprinkler or water hose).",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Prove by contrapositive: 'If 3n + 2 is an odd integer, then n is an odd integer.'",
+              "marking_scheme_answer": "Contrapositive: 'If n is even, then 3n + 2 is even.' Proof: Let n = 2k (even). Then 3n + 2 = 3(2k) + 2 = 6k + 2 = 2(3k + 1), which is an even integer. Since contrapositive is true, the original statement is true.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Logical Analysis of Geometry Axioms. Evaluate: 'If two lines intersect, vertically opposite angles are equal.' (a) Write the converse. (b) Provide a counterexample showing why the converse fails when line pairs are not straight continuous lines.",
+              "marking_scheme_answer": "(a) Converse: 'If two angles are equal and share a vertex, they are formed by two intersecting lines.' (b) Counterexample: Two 45-degree angles sharing a vertex inside a polygon or adjacent angles formed by three rays (not two continuous straight lines) can be equal without forming vertically opposite line pairs.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U03-C09"
+}

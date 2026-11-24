@@ -1,0 +1,118 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Operations with Integers",
+  "gamified_drills": {
+    "combo_multipliers": [
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "drills_list": [
+      "Simplify 39 - 2*6 + 11",
+      "Expand -(20 - 5)",
+      "Model 18 - 10 with tokens",
+      "Calculate (100*2) + (100/2)"
+    ]
+  },
+  "scrambled_tile_sets": [
+    {
+      "tiles": [
+        "-a",
+        "-",
+        "-(a - b)",
+        "=",
+        "+b"
+      ],
+      "correct_sequence": [
+        "-(a - b)",
+        "=",
+        "-a",
+        "+",
+        "b"
+      ],
+      "hint": "Negating minus inside bracket turns it into positive"
+    }
+  ],
+  "sorting_matrices": [
+    {
+      "bins": [
+        "Additive Inverse",
+        "Distributive Property"
+      ],
+      "items": [
+        "a - b = a + (-b)",
+        "a*(b+c) = ab + ac",
+        "-(a-b) = -a+b",
+        "5*(100+2) = 510"
+      ],
+      "correct_mapping": {
+        "a - b = a + (-b)": "Additive Inverse",
+        "-(a-b) = -a+b": "Additive Inverse",
+        "a*(b+c) = ab + ac": "Distributive Property",
+        "5*(100+2) = 510": "Distributive Property"
+      }
+    }
+  ],
+  "editing_checkers": [
+    {
+      "buggy_expression": "-(20 - 5) = -20 - 5 = -25",
+      "error_type": "Bracket Negation Sign Error",
+      "corrected_expression": "-(20 - 5) = -20 + 5 = -15",
+      "explanation": "Negating a minus inside brackets turns it into a plus: -(a - b) = -a + b."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch2_expressions_token_model",
+    "chapter_number": 2,
+    "chapter_title": "Arithmetic Expressions",
+    "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+    "file_name": "ch2_expressions_token_model.png",
+    "local_url": "/assets/images/ch2_expressions_token_model.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_2_1",
+        "title": "Term Partitioning & Order",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+      },
+      {
+        "hotspot_id": "hs_2_2",
+        "title": "Algebraic Laws of Arithmetic",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+      },
+      {
+        "hotspot_id": "hs_2_3",
+        "title": "Zero-Pair Token Model",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+      },
+      {
+        "hotspot_id": "hs_2_4",
+        "title": "Bracket Negation Rules",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C02"
+}

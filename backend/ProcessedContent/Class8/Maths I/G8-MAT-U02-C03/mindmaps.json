@@ -1,0 +1,87 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "A Story of Numbers",
+  "d3_config": {
+    "node_color": "#38bdf8",
+    "expanded_radius": 12,
+    "collapsed_radius": 8
+  },
+  "tree_data": {
+    "id": "mm_node_ch3_root",
+    "name": "A Story of Numbers",
+    "node_color": "#0ea5e9",
+    "icon": "folder_root",
+    "tooltip_popover": {
+      "title": "A Story of Numbers",
+      "content": "Master topic for Chapter 3",
+      "example": "Central node of learning map"
+    },
+    "children": [
+      {
+        "id": "mm_node_ch3_b0",
+        "name": "3.1 Counting and Landmark Numbers",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "3.1 Counting and Landmark Numbers",
+          "content": "Theme section under A Story of Numbers",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch3_b0_sb0",
+            "name": "Evolution of Counting and Landmark Symbols",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Evolution of Counting and Landmark Symbols",
+              "content": "Primitive counting relied on one-to-one matching with fingers, pebbles, and body parts. Civilizations developed landmark numbers to group large quantities without drawing repetitive tallies.",
+              "example": "Roman Numeral System: Landmark symbols I (1), V (5), X (10), L (50), C (100), D (500), M (1000)."
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "mm_node_ch3_b1",
+        "name": "3.2 Base-n and Place Value Systems",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "3.2 Base-n and Place Value Systems",
+          "content": "Theme section under A Story of Numbers",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch3_b1_sb0",
+            "name": "Comparison of Ancient Base Systems",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Comparison of Ancient Base Systems",
+              "content": "Base-n systems select powers of n (n^0, n^1, n^2...) as uniform landmark values. Mesopotamian System: Base 60 (sexagesimal system), preserved today in 60-second minutes and 360-degree circles. Mayan System: Base 20 (vigesimal system). Hindu-Arabic System: Base 10 (decimal system) using positional place value.",
+              "example": "Base-5 Construction Activity ACT-3.1: Grouping 5 ones into a 5-counter, 5 five-counters into a 25-counter. 23 in Base 10 = (43)_5."
+            },
+            "children": []
+          },
+          {
+            "id": "mm_node_ch3_b1_sb1",
+            "name": "The Hindu Decimal Place Value Revolution and Zero",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "The Hindu Decimal Place Value Revolution and Zero",
+              "content": "The Hindu system introduced positional place value where a digit's position determines its magnitude. The symbol '0' served a dual purpose: a placeholder for empty positions and a standalone number. Eliminated the need for infinite new landmark symbols and streamlined arithmetic algorithms.",
+              "example": "Efficiency comparison: In 375, '3' represents 3*10^2, whereas Roman numerals required cumbersome additive/subtractive notation (CCCLXXV)."
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "8",
+  "subject": "Maths I",
+  "chapter_id": "G8-MAT-U01-C03"
+}
