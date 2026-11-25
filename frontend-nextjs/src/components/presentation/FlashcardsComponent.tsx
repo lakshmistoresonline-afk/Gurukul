@@ -26,6 +26,9 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
   }
 
   const toggleFlip = (idx: number) => {
+    if (typeof window !== 'undefined' && 'navigator' in window && 'vibrate' in navigator) {
+      try { navigator.vibrate(12); } catch (e) {}
+    }
     setFlippedCards(prev => ({ ...prev, [idx]: !prev[idx] }));
   };
 

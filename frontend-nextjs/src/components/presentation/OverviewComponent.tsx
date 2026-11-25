@@ -15,6 +15,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
   const [showStudioModal, setShowStudioModal] = useState<boolean>(false);
   const [videoLoadError, setVideoLoadError] = useState<boolean>(false);
   const [showLightboxModal, setShowLightboxModal] = useState<boolean>(false);
+  const [activeHotspotHover, setActiveHotspotHover] = useState<number | null>(null);
 
   if (!data) {
     return (
@@ -226,11 +227,11 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
               </div>
               <p className="text-xs font-bold text-slate-900">{imageAsset.title || 'Chapter Concept Diagram'}</p>
 
-              {/* Render Chapter Diagram Image Directly with Lightbox Expand */}
+              {/* Render Chapter Diagram Image Directly with Interactive Pinpoints & Lightbox */}
               {(imageAsset.asset_url || imageAsset.url || imageAsset.filename) && (
                 <div
                   onClick={() => setShowLightboxModal(true)}
-                  className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs group cursor-zoom-in transition-all hover:border-indigo-300"
+                  className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs group cursor-zoom-in transition-all hover:border-indigo-300 select-none"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -246,6 +247,44 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                       }
                     }}
                   />
+
+                  {/* Pulsing Interactive Hotspot Radar Pins */}
+                  {Array.isArray(imageAsset.hotspots) && imageAsset.hotspots.map((hs: any, idx: number) => {
+                    const defaultX = hs.x_percent || (20 + (idx * 30) % 70);
+                    const defaultY = hs.y_percent || (30 + (idx * 25) % 50);
+                    const hsTitle = hs.title || hs.label || hs.name || `Hotspot #${idx + 1}`;
+                    const hsDesc = hs.description || hs.tooltip || hs.info || hs.tooltip_explanation || '';
+
+                    return (
+                      <div
+                        key={idx}
+                        style={{ left: `${defaultX}%`, top: `${defaultY}%` }}
+                        className="absolute -translate-x-1/2 -translate-y-1/2 z-20 group/pin"
+                        onMouseEnter={() => setActiveHotspotHover(idx)}
+                        onMouseLeave={() => setActiveHotspotHover(null)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setActiveHotspotHover(activeHotspotHover === idx ? null : idx);
+                        }}
+                      >
+                        <div className="relative flex items-center justify-center">
+                          <span className="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-teal-400/60 opacity-75" />
+                          <span className="relative inline-flex rounded-full h-6 w-6 bg-teal-600 border-2 border-white shadow-lg text-white font-black text-[10px] items-center justify-center cursor-pointer hover:scale-125 transition-all">
+                            {idx + 1}
+                          </span>
+
+                          {/* Floating Tooltip Popover */}
+                          {activeHotspotHover === idx && (
+                            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-64 p-3 bg-slate-900/95 text-white rounded-2xl border border-slate-700 shadow-2xl backdrop-blur-md z-30 animate-in zoom-in-95 duration-150 space-y-1">
+                              <div className="text-xs font-black text-teal-300">{hsTitle}</div>
+                              {hsDesc && <p className="text-[11px] text-slate-300 leading-relaxed font-normal">{hsDesc}</p>}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+
                   <div className="absolute bottom-3 right-3 px-3 py-1 rounded-xl bg-slate-900/80 text-white text-[11px] font-bold backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all flex items-center gap-1.5 shadow-lg">
                     🔍 Click to Expand
                   </div>
