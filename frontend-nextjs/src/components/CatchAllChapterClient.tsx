@@ -110,6 +110,19 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [isSplitView, setIsSplitView] = useState<boolean>(false);
   const [isZenFocusMode, setIsZenFocusMode] = useState<boolean>(false);
   const [showToolsDrawer, setShowToolsDrawer] = useState<boolean>(false);
+  const [showCommandPalette, setShowCommandPalette] = useState<boolean>(false);
+
+  // Global Cmd+K / Ctrl+K Command Palette Keyboard Shortcut Listener
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setShowCommandPalette(prev => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
   const [splitSideContentType, setSplitSideContentType] = useState<string>('mindmaps');
   const [splitSideData, setSplitSideData] = useState<any>(null);
   const [loadingSplitSide, setLoadingSplitSide] = useState<boolean>(false);
@@ -616,6 +629,15 @@ export default function CatchAllChapterClient({ segments }: Props) {
               Next <ArrowRight className="w-3.5 h-3.5" />
             </button>
 
+            {/* Global Cmd+K / Ctrl+K Command HUD Button */}
+            <button
+              onClick={() => setShowCommandPalette(true)}
+              className="px-3 py-1.5 rounded-xl text-xs font-black bg-teal-50 text-teal-800 border border-teal-200 hover:bg-teal-100 transition-all flex items-center gap-1.5 cursor-pointer shadow-2xs"
+              title="Open Spotlight Command Palette (Cmd+K)"
+            >
+              <span>⌘K HUD</span>
+            </button>
+
             {/* Collapsible Tools & Comfort Drawer Toggle */}
             <button
               onClick={() => setShowToolsDrawer(!showToolsDrawer)}
@@ -1040,6 +1062,61 @@ export default function CatchAllChapterClient({ segments }: Props) {
                   unoptimized
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Global Glassmorphic Command Palette Modal (Cmd+K / Ctrl+K) */}
+      {showCommandPalette && (
+        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-start justify-center pt-20 p-4 animate-in fade-in duration-150 select-none">
+          <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl max-w-xl w-full p-5 space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div className="flex items-center gap-2 text-xs font-black text-slate-900">
+                <Sparkles className="w-4 h-4 text-teal-600" />
+                <span>Spotlight Command HUD (Class {grade} {subject})</span>
+              </div>
+              <button
+                onClick={() => setShowCommandPalette(false)}
+                className="w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs flex items-center justify-center transition-all cursor-pointer"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="relative">
+              <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search chapters, concepts, or jump to modules..."
+                autoFocus
+                className="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              />
+            </div>
+
+            <div className="space-y-1.5 pt-1 max-h-64 overflow-y-auto">
+              <div className="text-[10px] font-black uppercase tracking-wider text-slate-400 px-2">Quick Module Workspaces</div>
+              {Object.entries(CONTENT_TYPE_LABELS).map(([tabKey, label]) => (
+                <button
+                  key={tabKey}
+                  onClick={() => {
+                    setActiveTab(tabKey);
+                    setShowCommandPalette(false);
+                  }}
+                  className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs font-bold flex items-center justify-between transition-all cursor-pointer ${
+                    activeTab === tabKey ? 'bg-teal-50 text-teal-900 border border-teal-200 font-extrabold shadow-2xs' : 'hover:bg-slate-100 text-slate-700'
+                  }`}
+                >
+                  <span>{label}</span>
+                  <span className="text-[10px] font-mono text-slate-400 uppercase font-black">Jump →</span>
+                </button>
+              ))}
+            </div>
+
+            <div className="text-center pt-2 text-[10px] text-slate-400 font-medium border-t border-slate-100">
+              Press <strong>ESC</strong> or <strong>⌘K</strong> to close Spotlight HUD
             </div>
           </div>
         </div>
