@@ -1,62 +1,153 @@
-[
-  {
-    "quiz_id": "QZ_01_1",
-    "difficulty_level": "Standard",
-    "question_type": "Multiple Choice Question",
-    "category": "NCERT Chapter Quiz",
-    "question": "What is the true geometric shape of the Earth?",
-    "options": [
-      "Perfect Sphere",
-      "Oblate Spheroid",
-      "Flat Circle",
-      "Prolate Ellipsoid"
-    ],
-    "correct_answer": "Oblate Spheroid",
-    "explanation": "The Earth bulges slightly at the equator and is flattened at the poles due to its rotational centrifugal force, making it an oblate spheroid."
-  },
-  {
-    "quiz_id": "QZ_01_2",
-    "difficulty_level": "Standard",
-    "question_type": "Fill-in-the-Blank",
-    "category": "NCERT Chapter Quiz",
-    "question": "The artificial water passage opened in 1869 connecting the Mediterranean Sea to the Red Sea is the ______.",
-    "options": [
-      "Suez Canal",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "Suez Canal",
-    "explanation": "Opened in 1869, the Suez Canal created a direct maritime link between Europe and Asia, reducing India-Europe travel distance by over 7,000 km."
-  },
-  {
-    "quiz_id": "QZ_01_3",
-    "difficulty_level": "Standard",
-    "question_type": "Short Answer / Conceptual Analysis",
-    "category": "NCERT Chapter Quiz",
-    "question": "Explain why the Mercator map projection distorts the relative size of Greenland compared to India.",
-    "options": [
-      "Mercator projection preserves conformal directional angles for navigation but exaggerates area as latitude increases toward the poles. Because Greenland is near the Arctic pole and India is near the Equator, Greenland experiences high polar stretching.",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "Mercator projection preserves conformal directional angles for navigation but exaggerates area as latitude increases toward the poles. Because Greenland is near the Arctic pole and India is near the Equator, Greenland experiences high polar stretching.",
-    "explanation": "Cartographic map projections cannot preserve both shape and area simultaneously on a flat 2D surface. Mercator prioritizes navigation angles over true surface area."
-  },
-  {
-    "quiz_id": "QZ_01_4",
-    "difficulty_level": "Standard",
-    "question_type": "Case-Study / Environmental Reasoning",
-    "category": "NCERT Chapter Quiz",
-    "question": "Analyze how the Eurasian Steppes function as vital underground carbon sinks and why grassland conservation is essential for climate mitigation.",
-    "options": [
-      "The Eurasian Steppes span over 8,000 km. Grasslands store massive amounts of carbon below ground in extensive root systems and organic soil matter. Unlike forests where carbon is stored in above-ground timber vulnerable to wildfires, steppe root systems keep carbon trapped underground permanently.",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "The Eurasian Steppes span over 8,000 km. Grasslands store massive amounts of carbon below ground in extensive root systems and organic soil matter. Unlike forests where carbon is stored in above-ground timber vulnerable to wildfires, steppe root systems keep carbon trapped underground permanently.",
-    "explanation": "Protecting native grassland vegetation preserves organic soil carbon reservoirs, preventing the release of atmospheric greenhouse gases."
+{
+  "chapter_number": 1,
+  "chapter_title": "Exploring the Investigative World of Science",
+  "quiz_engine": {
+    "timer_seconds": 900,
+    "questions": [
+      {
+        "question_id": "q_ch1_01",
+        "question_type": "MCQ",
+        "question": "Which of the following is a testable scientific question?",
+        "options": [
+          "A) Which flower is the prettiest?",
+          "B) How does soil moisture affect seed germination rate?",
+          "C) Why is science fun?",
+          "D) What is the best color for a notebook?"
+        ],
+        "correct_answer": "B",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Correct Answer: B. Explanation derived directly from Class 8 Science Chapter 1 (Exploring the Investigative World of Science)."
+        }
+      },
+      {
+        "question_id": "q_ch1_02",
+        "question_type": "Short Answer",
+        "question": "[Textbook Exercise] Why is it essential to keep all conditions except one constant in a scientific experiment?",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correct_answer": "Keeping conditions constant (fair testing) ensures that any observed change in results is caused solely by the variable being tested, preventing misleading conclusions.",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Textbook Solution & Concept: Keeping conditions constant (fair testing) ensures that any observed change in results is caused solely by the variable being tested, preventing misleading conclusions."
+        }
+      },
+      {
+        "question_id": "q_ch1_03",
+        "question_type": "Conceptual Understanding",
+        "question": "Distinguish between an observation and an inference.",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correct_answer": "An observation is direct factual information gathered using the senses or measuring tools (e.g., liquid turns blue). An inference is a logical explanation derived from observations (e.g., the solution became acidic).",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Core Scientific Concept: An observation is direct factual information gathered using the senses or measuring tools (e.g., liquid turns blue). An inference is a logical explanation derived from observations (e.g., the solution became acidic)."
+        }
+      },
+      {
+        "question_id": "q_ch1_04",
+        "question_type": "Critical Thinking / Misconception Analysis",
+        "question": "Address and correct the following misconception: 'Thinking that an experiment has 'failed' if the results do not support the original hypothesis.'",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correct_answer": "Scientific Fact: Disproving a hypothesis is a successful scientific outcome that provides crucial evidence to refine hypotheses and advance understanding.",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Misconception Analysis & Fact Correction: Disproving a hypothesis is a successful scientific outcome that provides crucial evidence to refine hypotheses and advance understanding."
+        }
+      },
+      {
+        "question_id": "q_ch1_05",
+        "question_type": "Give Reasons / Scientific Reasoning",
+        "question": "Analyze why scientific knowledge is termed 'dynamic rather than static'.",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correct_answer": "Scientific knowledge evolves continuously as new evidence, refined instruments, and innovative hypotheses challenge existing models. When new empirical data contradicts an old theory, the scientific community modifies or replaces the theory.",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Analytical Scientific Reasoning: Scientific knowledge evolves continuously as new evidence, refined instruments, and innovative hypotheses challenge existing models. When new empirical data contradicts an old theory, the scientific community modifies or replaces the theory."
+        }
+      },
+      {
+        "question_id": "q_ch1_06",
+        "question_type": "Synthesis & Structural Analysis",
+        "question": "Describe the complete step-by-step process of scientific investigation using a real-world example.",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correct_answer": "1. Observation: Noticing an interesting phenomenon (e.g., plants growing towards a window). 2. Question: Asking a specific question (What causes the plant to bend?). 3. Hypothesis: Formulating a testable guess (Plant stems grow toward sunlight). 4. Experimentation: Placing one plant in sunlight and another in a dark box with a small side hole, controlling soil and water. 5. Analysis: Recording directional stem growth over time. 6. Conclusion: Confirming phototropism based on empirical evidence.",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Detailed Step-by-Step Explanation: 1. Observation: Noticing an interesting phenomenon (e.g., plants growing towards a window). 2. Question: Asking a specific question (What causes the plant to bend?). 3. Hypothesis: Formulating a testable guess (Plant stems grow toward sunlight). 4. Experimentation: Placing one plant in sunlight and another in a dark box with a small side hole, controlling soil and water. 5. Analysis: Recording directional stem growth over time. 6. Conclusion: Confirming phototropism based on empirical evidence."
+        }
+      },
+      {
+        "question_id": "q_ch1_07",
+        "question_type": "Case-Study Scenario",
+        "question": "Scenario: A student wants to find out whether warm water dissolves sugar faster than cold water. She takes equal volumes of water in two beakers, adds 10g of sugar to each, stirs one beaker rapidly and leaves the other unstirred.",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correct_answer": "See scenario details.",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Case Study Competency Analysis: See scenario details."
+        }
+      },
+      {
+        "question_id": "q_ch1_08",
+        "question_type": "hotspot_choice",
+        "question": "Identify the hotspot region in the diagram that corresponds to Component B mechanics for Chapter 1 (Exploring the Investigative World of Science).",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correct_answer": "Option A",
+        "hint_modal": "Hint for Chapter 1: Focus on fundamental definitions and experimental observations.",
+        "three_part_solution": {
+          "step_1_concept": "Identify the primary concept in Chapter 1.",
+          "step_2_analysis": "Examine the experimental data and given facts.",
+          "step_3_conclusion": "Explanation grounded in NCERT textbook evidence."
+        }
+      }
+    ]
   }
-]
+}

@@ -1,6 +1,6 @@
 {
   "chapter_number": 7,
-  "chapter_title": "Maths Chapter 7",
+  "chapter_title": "Fractions",
   "core_summary": "This chapter explores fractions as equal parts of a whole unit or set. Students build conceptual understanding through equal sharing (rotis, paper strips), fraction walls, unit fractions (1/n), numerators, and denominators. The chapter proves that as denominator n increases, unit fraction size 1/n decreases (1/8 < 1/3). Students classify fractions into proper (a < b), improper (a >= b), and mixed numbers (A b/c), master equivalence, position fractions on a number line, and apply Brahmagupta's ancient general addition and subtraction rules (a/b +/- c/d = (ad +/- bc)/bd). Real-world applications include recipe scaling, lap running comparisons, and land division.",
   "key_concepts": [
     "Fractions as Equal Shares: A fraction a/b represents 'a' equal parts out of a whole divided into 'b' equal parts (b != 0).",
@@ -79,21 +79,36 @@
     "Fraction walls provide visual intuition for fraction equivalence and addition."
   ],
   "image_asset": {
-    "title": "Maths Chapter 7 Concept Diagram",
-    "asset_url": "/assets/images/ch7_fraction_wall.png",
+    "title": "Fraction Wall Unit Fraction Comparison",
     "url": "/assets/images/ch7_fraction_wall.png",
-    "filename": "ch7_fraction_wall.png",
-    "type": "16:9 Diagram",
+    "alt_text": "Stacked color-coded fraction wall showing unit fractions",
     "hotspots": [
       {
-        "id": "hs_7_1",
-        "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot for Maths Chapter 7."
+        "id": "hs7_whole",
+        "label": "Whole Unit (1)",
+        "description": "The complete single whole reference bar.",
+        "x_percent": 5.0,
+        "y_percent": 10.0,
+        "w_percent": 90.0,
+        "h_percent": 10.0
       },
       {
-        "id": "hs_7_2",
-        "label": "Key Takeaway",
-        "tooltip_explanation": "Essential learning takeaway for Maths Chapter 7."
+        "id": "hs7_halves",
+        "label": "Halves (1/2)",
+        "description": "Whole divided into 2 equal parts. Each part = 1/2.",
+        "x_percent": 5.0,
+        "y_percent": 22.0,
+        "w_percent": 44.0,
+        "h_percent": 10.0
+      },
+      {
+        "id": "hs7_quarters",
+        "label": "Quarters (1/4)",
+        "description": "Two 1/4 parts equal one 1/2 part. Equivalent fractions: 2/4 = 1/2.",
+        "x_percent": 5.0,
+        "y_percent": 46.0,
+        "w_percent": 22.0,
+        "h_percent": 10.0
       }
     ]
   },
@@ -103,13 +118,5 @@
     "scene_3": "Hands-on problem solving and pattern verification.",
     "scene_4": "Synthesis of key takeaways and real-world applications."
   },
-  "grade": "6",
-  "subject": "Maths",
-  "chapter_id": "G6-MAT-U05-C07",
-  "video_url": "https://notebooklm.link.google/SIR5FMZFgvKl",
-  "video_type": "mp4",
-  "unit": "U05",
-  "local_video_path": "/videos/Class6/Maths/07-Playing with Constructions.mp4",
-  "video_title": "Demystifying Fractions",
-  "title": "Maths Chapter 7 - Chapter Overview"
+  "video_url": "https://notebooklm.link.google/SIR5FMZFgvKl"
 }

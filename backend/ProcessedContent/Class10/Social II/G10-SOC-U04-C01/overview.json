@@ -1,55 +1,76 @@
 {
   "chapter_number": 1,
-  "chapter_title": "Social II Chapter 1",
-  "diagram_asset": "ch1_development.png",
-  "aspect_ratio": "16:9",
-  "resolution": "1920x1080",
-  "local_url": "ch1_development.png",
-  "hotspots": [
+  "chapter_title": "Development",
+  "executive_summary": "Development encompasses material aspirations (higher income, employment) as well as non-material goals like freedom, security, equal treatment, and respect. Relying solely on per capita income ignores income distribution and essential human indicators like literacy, life expectancy, and infant mortality.",
+  "storyboard": [
     {
-      "id": "h1_1",
-      "label": "1. Developmental Aspirations",
-      "x_percent": 5.0,
-      "y_percent": 22.0,
-      "w_percent": 40.0,
-      "h_percent": 32.0,
-      "popover_title": "Material vs Non-Material & Conflicting Goals",
-      "tooltip": "Income vs Freedom/Dignity; Dam construction vs Tribal Displacement"
+      "frame_id": 1,
+      "title": "Different People, Different Goals",
+      "description": "Visualizing how an industrialist's goal of building a hydro dam conflicts directly with a tribal community's goal of preserving their ancestral land.",
+      "key_takeaway": "Developmental goals can be distinct and mutually conflicting."
     },
     {
-      "id": "h1_2",
-      "label": "2. Development Metrics (World Bank vs UNDP)",
-      "x_percent": 55.0,
-      "y_percent": 22.0,
-      "w_percent": 40.0,
-      "h_percent": 32.0,
-      "popover_title": "PCI vs HDI Criteria",
-      "tooltip": "World Bank PCI ($49,300 vs $2,500) vs UNDP HDI (Health, Education, GNI)"
+      "frame_id": 2,
+      "title": "Income vs. Human Indicators",
+      "description": "Comparing Haryana's higher income with Kerala's superior health (IMR 7) and education (94% literacy) metrics.",
+      "key_takeaway": "Money cannot buy essential public healthcare and social security."
     },
     {
-      "id": "h1_3",
-      "label": "3. Public Facilities & Human Capital",
-      "x_percent": 5.0,
-      "y_percent": 62.0,
-      "w_percent": 40.0,
-      "h_percent": 32.0,
-      "popover_title": "Kerala vs Haryana Comparative State Metrics",
-      "tooltip": "Kerala IMR (7) & Literacy (94%) vs Haryana IMR (30) & Literacy (80%); BMI Formula"
-    },
-    {
-      "id": "h1_4",
-      "label": "4. Ecological Sustainability",
-      "x_percent": 55.0,
-      "y_percent": 62.0,
-      "w_percent": 40.0,
-      "h_percent": 32.0,
-      "popover_title": "Renewable vs Exhaustible Resources",
-      "tooltip": "Groundwater depletion in Punjab/UP vs Crude oil global reserve limits"
+      "frame_id": 3,
+      "title": "Ecological Balance & Sustainability",
+      "description": "Illustrating groundwater table collapse in agricultural states and global crude oil depletion.",
+      "key_takeaway": "Present development must maintain inter-generational equity."
     }
   ],
-  "grade": "10",
-  "subject": "Social II",
-  "chapter_id": "G10-SOC-U04-C01",
+  "video_embeds": [
+    {
+      "video_id": "vid_ch1_01",
+      "title": "Understanding Human Development Index & PCI",
+      "duration": "04:45",
+      "video_url": "media/video_ch1_hdi.mp4",
+      "transcript_summary": "Explains the difference between World Bank Per Capita Income criteria and UNDP HDI composite metrics."
+    }
+  ],
+  "hotspot_overlays": {
+    "image_url": "ch1_development.png",
+    "aspect_ratio": "16:9",
+    "hotspots": [
+      {
+        "id": "h1_1",
+        "x_percent": 5.0,
+        "y_percent": 22.0,
+        "w_percent": 40.0,
+        "h_percent": 32.0,
+        "popover_title": "Development Aspirations",
+        "popover_content": "Material vs Non-Material goals. Example: Dam construction creating power for industrialists while displacing indigenous riverine tribes."
+      },
+      {
+        "id": "h1_2",
+        "x_percent": 55.0,
+        "y_percent": 22.0,
+        "w_percent": 40.0,
+        "h_percent": 32.0,
+        "popover_title": "World Bank vs UNDP Metrics",
+        "popover_content": "Per Capita Income = Total Income / Population. World Bank threshold: Rich > $49,300 vs Low <= $2,500. UNDP HDI incorporates health and education."
+      }
+    ]
+  },
+  "key_terms": [
+    "Per Capita Income",
+    "Human Development Index",
+    "Infant Mortality Rate",
+    "Literacy Rate",
+    "Net Attendance Ratio",
+    "Body Mass Index",
+    "Sustainable Development"
+  ],
+  "key_takeaways": [
+    "Development requires income plus non-material dignity, safety, and freedom.",
+    "Average income hides wealth inequality.",
+    "Public facilities are essential for human capital development.",
+    "Resources must be managed sustainably to protect future generations."
+  ],
+  "video_url": "https://notebooklm.link.google/v10soc01",
   "image_asset": {
     "title": "Social II Chapter 1 Concept Diagram",
     "asset_url": "/assets/images/ch1_development.png",
@@ -68,16 +89,5 @@
         "tooltip_explanation": "Essential learning takeaway for Social II Chapter 1."
       }
     ]
-  },
-  "unit": "U04",
-  "video_url": "https://notebooklm.link.google/v10soc01",
-  "video_title": "Development Interactive Video Studio",
-  "core_summary": "Comprehensive NCERT Grade 10 Social II curriculum study module for 'Social II Chapter 1'. This chapter explores fundamental subject principles, structured analytical reasoning, core conceptual frameworks, and practical application skills aligned with NCF-SE 2023 and NEP 2020 guidelines.",
-  "centralTheme": "Mastering core principles, analytical skills, and practical problem-solving in 'Social II Chapter 1'.",
-  "key_takeaways": [
-    "Understanding the primary concepts and structural foundations of Social II Chapter 1.",
-    "Developing analytical problem-solving and critical thinking skills in Class 10 Social II.",
-    "Applying theoretical knowledge to real-world scenarios and NCERT exam assessments."
-  ],
-  "title": "Social II Chapter 1 - Chapter Overview"
+  }
 }

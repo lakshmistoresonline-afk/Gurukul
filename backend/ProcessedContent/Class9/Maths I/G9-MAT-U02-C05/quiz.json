@@ -1,107 +1,158 @@
-[
-  {
-    "quiz_id": "QZ_05_1",
-    "difficulty_level": "Standard",
-    "question_type": "MCQ",
-    "category": "NCERT Chapter Quiz",
-    "question": "What is the angle subtended by a diameter in a semicircle?",
-    "options": [
-      "A) 45 degrees",
-      "B) 60 degrees",
-      "C) 90 degrees",
-      "D) 180 degrees"
-    ],
-    "correct_answer": "C) 90 degrees",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_05_2",
-    "difficulty_level": "Standard",
-    "question_type": "Fill-in-the-Blank",
-    "category": "NCERT Chapter Quiz",
-    "question": "In a cyclic quadrilateral, the sum of any pair of opposite angles is equal to ________ degrees.",
-    "options": [
-      "180",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "180",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_05_3",
-    "difficulty_level": "Standard",
-    "question_type": "True/False with Justification",
-    "category": "NCERT Chapter Quiz",
-    "question": "True or False: The perpendicular dropped from the centre of a circle to any chord bisects that chord.",
-    "options": [
-      "True",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "True",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_05_4",
-    "difficulty_level": "Standard",
-    "question_type": "Short Answer",
-    "category": "NCERT Chapter Quiz",
-    "question": "A chord of length 16 cm is drawn in a circle of radius 10 cm. Calculate the perpendicular distance of the chord from the centre.",
-    "options": [
-      "6 cm",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "6 cm",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_05_5",
-    "difficulty_level": "Standard",
-    "question_type": "Diagram Analysis",
-    "category": "NCERT Chapter Quiz",
-    "question": "In a circle with centre O, arc AB subtends a central angle angle AOB = 130 degrees. Point C lies on the major arc AB. Calculate the measure of inscribed angle angle ACB.",
-    "options": [
-      "65 degrees",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "65 degrees",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_05_6",
-    "difficulty_level": "Standard",
-    "question_type": "Critical Thinking & Proof",
-    "category": "NCERT Chapter Quiz",
-    "question": "Prove that if the sum of a pair of opposite angles of a quadrilateral is 180 degrees, then the quadrilateral is cyclic (i.e., all four vertices lie on a circle).",
-    "options": [
-      "Proof complete by contradiction using circumcircle uniqueness",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "Proof complete by contradiction using circumcircle uniqueness",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_05_7",
-    "difficulty_level": "Standard",
-    "question_type": "Case-Study Scenario",
-    "category": "NCERT Chapter Quiz",
-    "question": "An optical camera setup uses three tracking sensors at points P, Q, R on a circular lens ring around a central focus sensor O. If angle PQR is measured as 48 degrees, what is the central angle angle POR?",
-    "options": [
-      "96 degrees",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "96 degrees",
-    "explanation": "Refer to chapter notes for complete explanation."
-  }
-]
+{
+  "chapter_number": 5,
+  "chapter_title": "I’m Up and Down, and Round and Round",
+  "questions": [
+    {
+      "question_id": "C5_L1_01",
+      "level": "Level 1 (Easy)",
+      "question_type": "MCQ",
+      "question": "What is the angle subtended by a diameter in a semicircle?",
+      "options": [
+        "A) 45 degrees",
+        "B) 60 degrees",
+        "C) 90 degrees",
+        "D) 180 degrees"
+      ],
+      "correct_answer": "C) 90 degrees",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "By the Inscribed Angle Theorem, the central angle of a semicircle is 180 degrees, so any angle subtended by the diameter at the circumference is half of 180 degrees, which is 90 degrees.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 5",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch5_circle_theorems.png",
+        "target_hotspot_id": "hs_central_angle"
+      }
+    },
+    {
+      "question_id": "C5_L1_02",
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "In a cyclic quadrilateral, the sum of any pair of opposite angles is equal to ________ degrees.",
+      "options": [],
+      "correct_answer": "180",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "It is a foundational theorem that opposite angles of a cyclic quadrilateral are supplementary (sum = 180 degrees).",
+        "key_formula_used": "Standard Theorem / Formula for Ch 5",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch5_circle_theorems.png",
+        "target_hotspot_id": "hs_central_angle"
+      }
+    },
+    {
+      "question_id": "C5_L1_03",
+      "level": "Level 1 (Easy)",
+      "question_type": "True/False with Justification",
+      "question": "True or False: The perpendicular dropped from the centre of a circle to any chord bisects that chord.",
+      "options": [],
+      "correct_answer": "True",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "True. In a circle with centre O and chord AB, dropping perpendicular OM to AB creates two congruent right triangles OMA and OMB (by RHS congruence), proving AM = MB.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 5",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch5_circle_theorems.png",
+        "target_hotspot_id": "hs_central_angle"
+      }
+    },
+    {
+      "question_id": "C5_L2_01",
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer",
+      "question": "A chord of length 16 cm is drawn in a circle of radius 10 cm. Calculate the perpendicular distance of the chord from the centre.",
+      "options": [],
+      "correct_answer": "6 cm",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "1. Perpendicular from centre bisects chord: half chord length = 16 / 2 = 8 cm.\n2. In right triangle formed by radius (r = 10), half chord (8), and distance d:\n   d^2 + 8^2 = 10^2 => d^2 + 64 = 100 => d^2 = 36 => d = 6 cm.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 5",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch5_circle_theorems.png",
+        "target_hotspot_id": "hs_central_angle"
+      }
+    },
+    {
+      "question_id": "C5_L2_02",
+      "level": "Level 2 (Medium)",
+      "question_type": "Diagram Analysis",
+      "question": "In a circle with centre O, arc AB subtends a central angle angle AOB = 130 degrees. Point C lies on the major arc AB. Calculate the measure of inscribed angle angle ACB.",
+      "options": [],
+      "correct_answer": "65 degrees",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "By the Inscribed Angle Theorem, the angle subtended by an arc at the centre is double the angle subtended at any point on the remaining circumference. Thus, angle ACB = (1/2) * angle AOB = (1/2) * 130 degrees = 65 degrees.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 5",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch5_circle_theorems.png",
+        "target_hotspot_id": "hs_central_angle"
+      }
+    },
+    {
+      "question_id": "C5_L3_01",
+      "level": "Level 3 (Hard)",
+      "question_type": "Critical Thinking & Proof",
+      "question": "Prove that if the sum of a pair of opposite angles of a quadrilateral is 180 degrees, then the quadrilateral is cyclic (i.e., all four vertices lie on a circle).",
+      "options": [],
+      "correct_answer": "Proof complete by contradiction using circumcircle uniqueness",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "1. Let ABCD be a quadrilateral with angle B + angle D = 180 degrees.\n2. Draw a circle passing through A, B, C (3 non-collinear points always define a unique circumcircle).\n3. Suppose D does not lie on this circle. Let the circle intersect line AD (or extension) at D'.\n4. ABCD' is a cyclic quadrilateral, so angle B + angle AD'C = 180 degrees.\n5. Given angle B + angle ADC = 180 degrees, this implies angle AD'C = angle ADC.\n6. In triangle CDD', an exterior angle cannot equal an interior opposite angle unless D and D' coincide.\n7. Therefore, vertex D must lie on the circle, making ABCD cyclic.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 5",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch5_circle_theorems.png",
+        "target_hotspot_id": "hs_central_angle"
+      }
+    },
+    {
+      "question_id": "C5_L3_02",
+      "level": "Level 3 (Hard)",
+      "question_type": "Case-Study Scenario",
+      "question": "An optical camera setup uses three tracking sensors at points P, Q, R on a circular lens ring around a central focus sensor O. If angle PQR is measured as 48 degrees, what is the central angle angle POR?",
+      "options": [],
+      "correct_answer": "96 degrees",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "Angle PQR is an inscribed angle subtending arc PR. By the Inscribed Angle Theorem, central angle angle POR = 2 * angle PQR = 2 * 48 degrees = 96 degrees.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 5",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch5_circle_theorems.png",
+        "target_hotspot_id": "hs_central_angle"
+      }
+    }
+  ]
+}

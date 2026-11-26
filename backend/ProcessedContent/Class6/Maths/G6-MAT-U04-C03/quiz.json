@@ -1,142 +1,106 @@
-[
-  {
-    "question_id": 1,
-    "level": "Easy (Level 1)",
-    "question_type": "MCQ",
-    "question_text": "Which of the following is a palindromic number?",
-    "options": [
-      "A. 1234",
-      "B. 8448",
-      "C. 8484",
-      "D. 9100"
-    ],
-    "correct_answer": "B. 8448",
-    "step_by_step_solution": "A palindromic number reads identically forward and backward. 8448 reversed is 8448."
-  },
-  {
-    "question_id": 2,
-    "level": "Easy (Level 1)",
-    "question_type": "Fill in the Blanks",
-    "question_text": "How many times does the digit '7' appear in all integers from 1 to 100?",
-    "options": [
-      "20",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "20",
-    "step_by_step_solution": "Occurrences in units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 (10 times). Occurrences in tens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 (10 times). Total occurrences = 10 + 10 = 20."
-  },
-  {
-    "question_id": 3,
-    "level": "Medium (Level 2)",
-    "question_type": "Operational",
-    "question_text": "Trace the Collatz sequence starting from n = 7 until it reaches 1.",
-    "options": [
-      "7 -> 22 -> 11 -> 34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1 (16 steps)",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "7 -> 22 -> 11 -> 34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1 (16 steps)",
-    "step_by_step_solution": "Rule: if n is even, n/2; if n is odd, 3n+1.\n7(odd)->22; 22(even)->11; 11(odd)->34; 34(even)->17; 17(odd)->52; 52(even)->26; 26(even)->13; 13(odd)->40; 40(even)->20; 20(even)->10; 10(even)->5; 5(odd)->16; 16->8->4->2->1."
-  },
-  {
-    "question_id": 4,
-    "level": "Medium (Level 2)",
-    "question_type": "Word Problem",
-    "question_text": "Apply the Reverse-and-Add algorithm to starting number 48 to find the resulting palindromic number.",
-    "options": [
-      "363",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "363",
-    "step_by_step_solution": "Step 1: Original = 48. Reverse = 84. Sum = 48 + 84 = 132 (not a palindrome).\nStep 2: Reverse 132 = 231. Sum = 132 + 231 = 363 (Palindrome!)."
-  },
-  {
-    "question_id": 5,
-    "level": "Hard (Level 3)",
-    "question_type": "Case-Study",
-    "question_text": "In the game of 21, two players add 1, 2, or 3 per turn to reach 21. What is the winning strategy for Player 1?",
-    "options": [
-      "Claim control numbers 1, 5, 9, 13, 17, and 21",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "Claim control numbers 1, 5, 9, 13, 17, and 21",
-    "step_by_step_solution": "Working backward from 21 in steps of 4 (since 1+3=4): Control points are 21, 17, 13, 9, 5, 1. Player 1 starts by saying 1, then whenever Player 2 adds x, Player 1 adds (4 - x) to reach the next control number."
-  },
-  {
-    "question_id": 6,
-    "level": "Easy (Level 1)",
-    "question_type": "MCQ",
-    "question_text": "How many 3-digit numbers exist in total (from 100 to 999)?",
-    "options": [
-      "A. 899",
-      "B. 900",
-      "C. 999",
-      "D. 1000"
-    ],
-    "correct_answer": "B. 900",
-    "step_by_step_solution": "Count of N-digit numbers is given by 9 x 10^(N-1). For N = 3: 9 x 10^2 = 900."
-  },
-  {
-    "question_id": 7,
-    "level": "Easy (Level 1)",
-    "question_type": "Fill in the Blanks",
-    "question_text": "In numbering all pages of a 200-page book, the total number of digits printed is ____.",
-    "options": [
-      "492",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "492",
-    "step_by_step_solution": "Single-digit pages (1-9) = 9 pages x 1 = 9 digits. Two-digit pages (10-99) = 90 pages x 2 = 180 digits. Three-digit pages (100-200) = 101 pages x 3 = 303 digits. Total = 9 + 180 + 303 = 492 digits."
-  },
-  {
-    "question_id": 8,
-    "level": "Medium (Level 2)",
-    "question_type": "Short Practice Drill",
-    "question_text": "Match starting integers to their Reverse-and-Add palindrome results: (1) 27, (2) 48, (3) 57.",
-    "options": [
-      "(1) 99, (2) 363, (3) 363",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "(1) 99, (2) 363, (3) 363",
-    "step_by_step_solution": "(1) 27 + 72 = 99 (1 step). (2) 48 + 84 = 132; 132 + 231 = 363 (2 steps). (3) 57 + 75 = 132; 132 + 231 = 363 (2 steps)."
-  },
-  {
-    "question_id": 9,
-    "level": "HOTS (Level 3)",
-    "question_type": "Word Problem",
-    "question_text": "Kaprekar's 2-Digit Routine: Starting with 37, arrange digits descending (73) and ascending (37) and subtract: 73 - 37 = 36. Show that repeating this process leads to a digital difference loop involving 9.",
-    "options": [
-      "36 -> 27 -> 45 -> 09 -> 81 -> 63 -> 27... (Loops through multiples of 9)",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "36 -> 27 -> 45 -> 09 -> 81 -> 63 -> 27... (Loops through multiples of 9)",
-    "step_by_step_solution": "Step 1: 73 - 37 = 36. Step 2: 63 - 36 = 27. Step 3: 72 - 27 = 45. Step 4: 54 - 45 = 09. Step 5: 90 - 09 = 81. Step 6: 81 - 18 = 63. Step 7: 63 - 36 = 27 (Loop repeats!)."
-  },
-  {
-    "question_id": 10,
-    "level": "HOTS (Level 3)",
-    "question_type": "Case-Study",
-    "question_text": "Nim Game of 15 Matches: A pile has 15 matchsticks. Two players take 1, 2, or 3 sticks per turn. The player taking the last stick wins. (a) How many sticks should Player 1 take on turn 1 to force a win? (b) What is Player 1's counter-strategy for subsequent turns?",
-    "options": [
-      "(a) Player 1 takes 3 sticks first, (b) Counter Player 2's y sticks with (4 - y) sticks",
-      "By multiplying the given values by the scale factor",
-      "By calculating the perimeter using standard formulas",
-      "By finding the prime factorization of the given numbers"
-    ],
-    "correct_answer": "(a) Player 1 takes 3 sticks first, (b) Counter Player 2's y sticks with (4 - y) sticks",
-    "step_by_step_solution": "(a) Control points are multiples of 4 (since 1+3=4). 15 mod 4 = 3. Player 1 takes 3 sticks, leaving 12 sticks. (b) Whenever Player 2 takes y sticks, Player 1 takes (4 - y) sticks to maintain multiples of 4 (12 -> 8 -> 4 -> 0)."
-  }
-]
+{
+  "chapter_number": 3,
+  "chapter_title": "Number Play",
+  "quizzes": [
+    {
+      "question_id": 1,
+      "level": "Easy (Level 1)",
+      "question_type": "MCQ",
+      "question_text": "Which of the following is a palindromic number?",
+      "options": [
+        "A. 1234",
+        "B. 8448",
+        "C. 8484",
+        "D. 9100"
+      ],
+      "correct_answer": "B. 8448",
+      "step_by_step_solution": "A palindromic number reads identically forward and backward. 8448 reversed is 8448."
+    },
+    {
+      "question_id": 2,
+      "level": "Easy (Level 1)",
+      "question_type": "Fill in the Blanks",
+      "question_text": "How many times does the digit '7' appear in all integers from 1 to 100?",
+      "options": [],
+      "correct_answer": "20",
+      "step_by_step_solution": "Occurrences in units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 (10 times). Occurrences in tens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 (10 times). Total occurrences = 10 + 10 = 20."
+    },
+    {
+      "question_id": 3,
+      "level": "Medium (Level 2)",
+      "question_type": "Operational",
+      "question_text": "Trace the Collatz sequence starting from n = 7 until it reaches 1.",
+      "options": [],
+      "correct_answer": "7 -> 22 -> 11 -> 34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1 (16 steps)",
+      "step_by_step_solution": "Rule: if n is even, n/2; if n is odd, 3n+1.\n7(odd)->22; 22(even)->11; 11(odd)->34; 34(even)->17; 17(odd)->52; 52(even)->26; 26(even)->13; 13(odd)->40; 40(even)->20; 20(even)->10; 10(even)->5; 5(odd)->16; 16->8->4->2->1."
+    },
+    {
+      "question_id": 4,
+      "level": "Medium (Level 2)",
+      "question_type": "Word Problem",
+      "question_text": "Apply the Reverse-and-Add algorithm to starting number 48 to find the resulting palindromic number.",
+      "options": [],
+      "correct_answer": "363",
+      "step_by_step_solution": "Step 1: Original = 48. Reverse = 84. Sum = 48 + 84 = 132 (not a palindrome).\nStep 2: Reverse 132 = 231. Sum = 132 + 231 = 363 (Palindrome!)."
+    },
+    {
+      "question_id": 5,
+      "level": "Hard (Level 3)",
+      "question_type": "Case-Study",
+      "question_text": "In the game of 21, two players add 1, 2, or 3 per turn to reach 21. What is the winning strategy for Player 1?",
+      "options": [],
+      "correct_answer": "Claim control numbers 1, 5, 9, 13, 17, and 21",
+      "step_by_step_solution": "Working backward from 21 in steps of 4 (since 1+3=4): Control points are 21, 17, 13, 9, 5, 1. Player 1 starts by saying 1, then whenever Player 2 adds x, Player 1 adds (4 - x) to reach the next control number."
+    },
+    {
+      "question_id": 6,
+      "level": "Easy (Level 1)",
+      "question_type": "MCQ",
+      "question_text": "How many 3-digit numbers exist in total (from 100 to 999)?",
+      "options": [
+        "A. 899",
+        "B. 900",
+        "C. 999",
+        "D. 1000"
+      ],
+      "correct_answer": "B. 900",
+      "step_by_step_solution": "Count of N-digit numbers is given by 9 x 10^(N-1). For N = 3: 9 x 10^2 = 900."
+    },
+    {
+      "question_id": 7,
+      "level": "Easy (Level 1)",
+      "question_type": "Fill in the Blanks",
+      "question_text": "In numbering all pages of a 200-page book, the total number of digits printed is ____.",
+      "options": [],
+      "correct_answer": "492",
+      "step_by_step_solution": "Single-digit pages (1-9) = 9 pages x 1 = 9 digits. Two-digit pages (10-99) = 90 pages x 2 = 180 digits. Three-digit pages (100-200) = 101 pages x 3 = 303 digits. Total = 9 + 180 + 303 = 492 digits."
+    },
+    {
+      "question_id": 8,
+      "level": "Medium (Level 2)",
+      "question_type": "Short Practice Drill",
+      "question_text": "Match starting integers to their Reverse-and-Add palindrome results: (1) 27, (2) 48, (3) 57.",
+      "options": [],
+      "correct_answer": "(1) 99, (2) 363, (3) 363",
+      "step_by_step_solution": "(1) 27 + 72 = 99 (1 step). (2) 48 + 84 = 132; 132 + 231 = 363 (2 steps). (3) 57 + 75 = 132; 132 + 231 = 363 (2 steps)."
+    },
+    {
+      "question_id": 9,
+      "level": "HOTS (Level 3)",
+      "question_type": "Word Problem",
+      "question_text": "Kaprekar's 2-Digit Routine: Starting with 37, arrange digits descending (73) and ascending (37) and subtract: 73 - 37 = 36. Show that repeating this process leads to a digital difference loop involving 9.",
+      "options": [],
+      "correct_answer": "36 -> 27 -> 45 -> 09 -> 81 -> 63 -> 27... (Loops through multiples of 9)",
+      "step_by_step_solution": "Step 1: 73 - 37 = 36. Step 2: 63 - 36 = 27. Step 3: 72 - 27 = 45. Step 4: 54 - 45 = 09. Step 5: 90 - 09 = 81. Step 6: 81 - 18 = 63. Step 7: 63 - 36 = 27 (Loop repeats!)."
+    },
+    {
+      "question_id": 10,
+      "level": "HOTS (Level 3)",
+      "question_type": "Case-Study",
+      "question_text": "Nim Game of 15 Matches: A pile has 15 matchsticks. Two players take 1, 2, or 3 sticks per turn. The player taking the last stick wins. (a) How many sticks should Player 1 take on turn 1 to force a win? (b) What is Player 1's counter-strategy for subsequent turns?",
+      "options": [],
+      "correct_answer": "(a) Player 1 takes 3 sticks first, (b) Counter Player 2's y sticks with (4 - y) sticks",
+      "step_by_step_solution": "(a) Control points are multiples of 4 (since 1+3=4). 15 mod 4 = 3. Player 1 takes 3 sticks, leaving 12 sticks. (b) Whenever Player 2 takes y sticks, Player 1 takes (4 - y) sticks to maintain multiples of 4 (12 -> 8 -> 4 -> 0)."
+    }
+  ]
+}

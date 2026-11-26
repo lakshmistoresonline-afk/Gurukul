@@ -1,107 +1,204 @@
-[
-  {
-    "quiz_id": "QZ_07_1",
-    "difficulty_level": "Standard",
-    "question_type": "MCQ",
-    "category": "NCERT Chapter Quiz",
-    "question": "Which of the following numerical values CANNOT represent the probability of an event?",
-    "options": [
-      "A) 0.0",
-      "B) 2/3",
-      "C) -1.5",
-      "D) 15%"
-    ],
-    "correct_answer": "C) -1.5",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_07_2",
-    "difficulty_level": "Standard",
-    "question_type": "Fill-in-the-Blank",
-    "category": "NCERT Chapter Quiz",
-    "question": "If the probability of an event E occurring is P(E) = 0.35, then the probability of its complementary event 'not E' is ________.",
-    "options": [
-      "0.65",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "0.65",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_07_3",
-    "difficulty_level": "Standard",
-    "question_type": "True/False with Justification",
-    "category": "NCERT Chapter Quiz",
-    "question": "True or False: According to the Law of Large Numbers, experimental probability approaches theoretical probability as the number of trials increases.",
-    "options": [
-      "True",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "True",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_07_4",
-    "difficulty_level": "Standard",
-    "question_type": "Short Answer",
-    "category": "NCERT Chapter Quiz",
-    "question": "A single card is drawn at random from a well-shuffled standard deck of 52 playing cards. Find the probability of drawing (a) a face card (King, Queen, or Jack) and (b) a red Ace.",
-    "options": [
-      "(a) 3/13, (b) 1/26",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "(a) 3/13, (b) 1/26",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_07_5",
-    "difficulty_level": "Standard",
-    "question_type": "Tree Diagram / Flowchart Analysis",
-    "category": "NCERT Chapter Quiz",
-    "question": "Construct the sample space for tossing two fair coins simultaneously using a tree diagram, and calculate the probability of getting at most one head.",
-    "options": [
-      "Sample Space S = {HH, HT, TH, TT}, P(at most 1 head) = 3/4",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "Sample Space S = {HH, HT, TH, TT}, P(at most 1 head) = 3/4",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_07_6",
-    "difficulty_level": "Standard",
-    "question_type": "Critical Thinking & Probability Analysis",
-    "category": "NCERT Chapter Quiz",
-    "question": "Two unbiased six-sided dice are rolled simultaneously. Calculate the probability that: (a) the sum of the numbers appearing on top is 8, and (b) the sum is a prime number.",
-    "options": [
-      "(a) 5/36, (b) 5/12",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "(a) 5/36, (b) 5/12",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_07_7",
-    "difficulty_level": "Standard",
-    "question_type": "Case-Study Scenario",
-    "category": "NCERT Chapter Quiz",
-    "question": "A dartboard consists of a square wood panel of side 20 cm containing a circular target circle of radius 7 cm. Assuming a thrown dart lands randomly on the panel, calculate the geometric probability that the dart hits inside the circular target circle.",
-    "options": [
-      "0.385 (or 77/200)",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "0.385 (or 77/200)",
-    "explanation": "Refer to chapter notes for complete explanation."
-  }
-]
+{
+  "chapter_number": 7,
+  "chapter_title": "Work, Energy, and Mechanical Systems",
+  "level_1_easy_foundational": [
+    {
+      "question_id": "CH07-L1-01",
+      "question_type": "MCQ",
+      "question": "When the velocity of a moving body is doubled, its kinetic energy becomes:",
+      "options": [
+        "A) Doubled",
+        "B) Four times",
+        "C) Halved",
+        "D) Eight times"
+      ],
+      "correct_answer": "B) Four times",
+      "explanation": "Kinetic energy Ek = 0.5·m·v². Doubling velocity (2v)² quadruples kinetic energy.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 7.",
+      "solution_key_3_part": {
+        "key_concept": "Kinetic energy Ek = 0",
+        "step_by_step_derivation": "Kinetic energy Ek = 0.5·m·v². Doubling velocity (2v)² quadruples kinetic energy.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch7_work_energy.png",
+        "target_region": {
+          "hotspot_id": "HS-07-01",
+          "label": "Kinetic Energy",
+          "x_percent": 75,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Ek = ½mv² energy of motion."
+        }
+      }
+    },
+    {
+      "question_id": "CH07-L1-02",
+      "question_type": "Fill-in-the-Blanks",
+      "question": "Commercial electrical energy consumption is measured in units of ______, where 1 unit = 3.6 × 10⁶ Joules.",
+      "options": [],
+      "correct_answer": "kilowatt-hour",
+      "explanation": "1 kWh = 1 kW × 1 hour = 1000 W × 3600 s = 3.6 × 10⁶ Joules.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 7.",
+      "solution_key_3_part": {
+        "key_concept": "1 kWh = 1 kW × 1 hour = 1000 W × 3600 s = 3",
+        "step_by_step_derivation": "1 kWh = 1 kW × 1 hour = 1000 W × 3600 s = 3.6 × 10⁶ Joules.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch7_work_energy.png",
+        "target_region": {
+          "hotspot_id": "HS-07-01",
+          "label": "Kinetic Energy",
+          "x_percent": 75,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Ek = ½mv² energy of motion."
+        }
+      }
+    },
+    {
+      "question_id": "CH07-L1-03",
+      "question_type": "True/False with Justification",
+      "question": "True or False: A coolie carrying a heavy suitcase on his head does positive work against gravity while walking horizontally.",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "Gravitational force acts vertically downward, while displacement is horizontal (theta = 90°). Work W = F·s·cos(90°) = 0.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 7.",
+      "solution_key_3_part": {
+        "key_concept": "Gravitational force acts vertically downward, while displacement is horizontal (theta = 90°)",
+        "step_by_step_derivation": "Gravitational force acts vertically downward, while displacement is horizontal (theta = 90°). Work W = F·s·cos(90°) = 0.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch7_work_energy.png",
+        "target_region": {
+          "hotspot_id": "HS-07-01",
+          "label": "Kinetic Energy",
+          "x_percent": 75,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Ek = ½mv² energy of motion."
+        }
+      }
+    }
+  ],
+  "level_2_medium_conceptual": [
+    {
+      "question_id": "CH07-L2-01",
+      "question_type": "Short Answer",
+      "question": "An electric heater rated at 1500 W operates for 10 hours daily. Calculate the electrical energy consumed in kWh per day and the bill for 30 days at Rs. 6 per unit.",
+      "options": [],
+      "correct_answer": "Daily energy = 1.5 kW × 10 h = 15 kWh (units). Total units in 30 days = 15 × 30 = 450 units. Total bill = 450 × Rs. 6 = Rs. 2700.",
+      "explanation": "Multiplying power in kW by hours gives kWh units, which are multiplied by the rate to calculate cost.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 7.",
+      "solution_key_3_part": {
+        "key_concept": "Multiplying power in kW by hours gives kWh units, which are multiplied by the rate to calculate cost",
+        "step_by_step_derivation": "Multiplying power in kW by hours gives kWh units, which are multiplied by the rate to calculate cost.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch7_work_energy.png",
+        "target_region": {
+          "hotspot_id": "HS-07-01",
+          "label": "Kinetic Energy",
+          "x_percent": 75,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Ek = ½mv² energy of motion."
+        }
+      }
+    },
+    {
+      "question_id": "CH07-L2-02",
+      "question_type": "Structural Analysis",
+      "question": "State the Work-Energy Theorem and explain how kinetic energy changes when work is done on an object.",
+      "options": [],
+      "correct_answer": "The Work-Energy Theorem states that net work done by all forces on an object equals the change in its kinetic energy (W_net = Ek_final - Ek_initial). Positive work increases kinetic energy; negative work (like friction) decreases it.",
+      "explanation": "Work transfers mechanical energy into or out of a body, altering its kinetic energy state.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 7.",
+      "solution_key_3_part": {
+        "key_concept": "Work transfers mechanical energy into or out of a body, altering its kinetic energy state",
+        "step_by_step_derivation": "Work transfers mechanical energy into or out of a body, altering its kinetic energy state.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch7_work_energy.png",
+        "target_region": {
+          "hotspot_id": "HS-07-01",
+          "label": "Kinetic Energy",
+          "x_percent": 75,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Ek = ½mv² energy of motion."
+        }
+      }
+    }
+  ],
+  "level_3_hard_advanced": [
+    {
+      "question_id": "CH07-L3-01",
+      "question_type": "Case-Study Scenarios",
+      "question": "Prove mathematically that total mechanical energy (Ek + Ep) remains conserved at all points during the free fall of a mass m dropped from height h.",
+      "options": [],
+      "correct_answer": "1) Peak A (height h): v=0 => Ek=0, Ep=mgh. Total E_A = mgh.\n2) Midpoint B (fallen x): v²=2gx => Ek=mgx, Ep=mg(h-x). Total E_B = mgx + mg(h-x) = mgh.\n3) Ground C (fallen h): v²=2gh => Ek=mgh, Ep=0. Total E_C = mgh.\nTotal mechanical energy stays constant at mgh throughout free fall.",
+      "explanation": "Gravitational potential energy converts continuously into kinetic energy while preserving total mechanical energy.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 7.",
+      "solution_key_3_part": {
+        "key_concept": "Gravitational potential energy converts continuously into kinetic energy while preserving total mechanical energy",
+        "step_by_step_derivation": "Gravitational potential energy converts continuously into kinetic energy while preserving total mechanical energy.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch7_work_energy.png",
+        "target_region": {
+          "hotspot_id": "HS-07-01",
+          "label": "Kinetic Energy",
+          "x_percent": 75,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Ek = ½mv² energy of motion."
+        }
+      }
+    },
+    {
+      "question_id": "CH07-L3-02",
+      "question_type": "Give Reasons / Critical Thinking",
+      "question": "Trace the sequential energy transformations that occur when falling water in a hydroelectric dam turns turbines to produce residential electricity.",
+      "options": [],
+      "correct_answer": "Gravitational Potential Energy of reservoir water -> Kinetic Energy of descending water -> Rotational Mechanical Energy of hydro-turbines -> Electrical Energy from electromagnetic generators -> Light/Heat Energy in homes.",
+      "explanation": "Energy transforms through continuous mechanical and electromagnetic phases while satisfying energy conservation.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 7.",
+      "solution_key_3_part": {
+        "key_concept": "Energy transforms through continuous mechanical and electromagnetic phases while satisfying energy conservation",
+        "step_by_step_derivation": "Energy transforms through continuous mechanical and electromagnetic phases while satisfying energy conservation.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch7_work_energy.png",
+        "target_region": {
+          "hotspot_id": "HS-07-01",
+          "label": "Kinetic Energy",
+          "x_percent": 75,
+          "y_percent": 50,
+          "w_percent": 25,
+          "h_percent": 30,
+          "description": "Ek = ½mv² energy of motion."
+        }
+      }
+    }
+  ]
+}

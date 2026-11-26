@@ -158,6 +158,35 @@ MASTER_EXHAUSTIVE_TITLES = {
     ("8", "ENG", 9): "The Great Stone Face – I",
     ("8", "ENG", 10): "The Great Stone Face – II",
 
+    # Class 8 Maths I & II
+    ("8", "MAT", 1): "Rational Numbers",
+    ("8", "MAT", 2): "Linear Equations in One Variable",
+    ("8", "MAT", 3): "Understanding Quadrilaterals",
+    ("8", "MAT", 4): "Data Handling",
+    ("8", "MAT", 5): "Square and Square Roots",
+    ("8", "MAT", 6): "Cube and Cube Roots",
+    ("8", "MAT", 7): "Comparing Quantities",
+    ("8", "MAT", 8): "Algebraic Expressions and Identities",
+    ("8", "MAT", 9): "Mensuration",
+    ("8", "MAT", 10): "Exponents and Powers",
+    ("8", "MAT", 11): "Direct and Inverse Proportions",
+    ("8", "MAT", 12): "Factorisation",
+    ("8", "MAT", 13): "Introduction to Graphs",
+
+    # Class 8 Social Science I & II
+    ("8", "SOC", 1): "How, When and Where",
+    ("8", "SOC", 2): "From Trade to Territory: The Company Establishes Power",
+    ("8", "SOC", 3): "Ruling the Countryside",
+    ("8", "SOC", 4): "Tribals, Dikus and the Vision of a Golden Age",
+    ("8", "SOC", 5): "When People Rebel: 1857 and After",
+    ("8", "SOC", 6): "Civilising the Native, Educating the Nation",
+    ("8", "SOC", 7): "Women, Caste and Reform",
+    ("8", "SOC", 8): "The Making of the National Movement: 1870s–1947",
+    ("8", "SOC", 9): "Resources and Development",
+    ("8", "SOC", 10): "Land, Soil, Water, Natural Vegetation and Wildlife Resources",
+    ("8", "SOC", 11): "Agriculture and Industries",
+    ("8", "SOC", 12): "Human Resources & Law and Social Justice",
+
     # Class 9 English
     ("9", "ENG", 1): "The Fun They Had & The Road Not Taken",
     ("9", "ENG", 2): "The Sound of Music & Wind",

@@ -20,9 +20,10 @@
   ],
   "executive_summary": "This chapter builds conceptual clarity for integer arithmetic (multiplication and division) using physical token models and number line representations. Positive integers are modeled as green tokens (+1) and negative integers as red tokens (-1), where one positive and one negative form a 'zero pair'. Multiplication by a positive multiplier means placing tokens into an empty bag; multiplication by a negative multiplier means removing tokens from the bag. Rules for signs in multiplication and division are systematically derived: (+)*(+) = +, (+)*(-) = -, (-)*(+) = -, and (-)*(-) = +. The chapter also reinforces the distributive property a*(b + c) = a*b + a*c and integer division concepts.",
   "key_takeaways": [
-    "Understanding the primary concepts and structural foundations of Operations with Integers.",
-    "Developing analytical problem-solving and critical thinking skills in Class 7 Maths II.",
-    "Applying theoretical knowledge to real-world scenarios and NCERT exam assessments."
+    "Zero Pair: Combination of (+1) and (-1) tokens whose net value is 0.",
+    "Additive Inverse: The number that yields 0 when added to a given integer 'a', denoted '-a'.",
+    "Integer Multiplication Rule 1: (+a) × (+b) = +(a × b) and (-a) × (-b) = +(a × b)",
+    "Integer Multiplication Rule 2: (+a) × (-b) = -(a × b) and (-a) × (+b) = -(a × b)"
   ],
   "key_terms": [
     "Zero Pair",
@@ -32,32 +33,38 @@
     "Integer Division Rule"
   ],
   "image_asset": {
-    "title": "Operations with Integers Concept Diagram",
-    "asset_url": "/assets/images/ch2_integer_token_model.png",
+    "asset_id": "img_ch2",
+    "chapter_number": 2,
+    "title": "Integer Token Bag & Zero Pair Model",
     "url": "/assets/images/ch2_integer_token_model.png",
-    "filename": "ch2_integer_token_model.png",
-    "type": "16:9 Diagram",
+    "caption": "Token bag representation of positive (+1) green tokens, negative (-1) red tokens, and zero pairs.",
     "hotspots": [
       {
-        "id": "hs_2_1",
-        "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot for Operations with Integers."
+        "x_percent": 8,
+        "y_percent": 20,
+        "w_percent": 28,
+        "h_percent": 60,
+        "label": "Positive Bag",
+        "popover_text": "Bag A contains +4 green tokens (+1 each)."
       },
       {
-        "id": "hs_2_2",
-        "label": "Key Takeaway",
-        "tooltip_explanation": "Essential learning takeaway for Operations with Integers."
+        "x_percent": 38,
+        "y_percent": 20,
+        "w_percent": 28,
+        "h_percent": 60,
+        "label": "Zero Pairs",
+        "popover_text": "Green (+1) and Red (-1) tokens combine to form net 0 value."
+      },
+      {
+        "x_percent": 68,
+        "y_percent": 20,
+        "w_percent": 28,
+        "h_percent": 60,
+        "label": "Negative Multiplication",
+        "popover_text": "(-4) × (-2) = +8: Removing 8 red tokens leaves +8 positive green tokens."
       }
     ]
   },
-  "grade": "7",
-  "subject": "Maths II",
-  "chapter_id": "G7-MAT-U01-C02",
   "video_url": "https://notebooklm.link.google/fCEJGUaIhOE7",
-  "local_video_path": "/videos/Class7/Maths II/02-Number Play Hidden Math.mp4",
-  "video_type": "mp4",
-  "video_title": "Demystifying Integers",
-  "title": "Operations with Integers - Chapter Overview",
-  "core_summary": "Comprehensive NCERT Grade 7 Maths II curriculum study module for 'Operations with Integers'. This chapter explores fundamental subject principles, structured analytical reasoning, core conceptual frameworks, and practical application skills aligned with NCF-SE 2023 and NEP 2020 guidelines.",
-  "centralTheme": "Mastering core principles, analytical skills, and practical problem-solving in 'Operations with Integers'."
+  "title": "Operations with Integers - Chapter Overview"
 }

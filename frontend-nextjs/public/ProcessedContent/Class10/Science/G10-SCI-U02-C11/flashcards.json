@@ -1,32 +1,36 @@
-[
-  {
-    "card_id": 1,
-    "level": "Basic Recall",
-    "front_question": "Define electric current, electric potential difference, resistance, and state their SI units.",
-    "back_answer": "Electric Current (I = Q/t): Rate of flow of electric charge. SI unit: Ampere (A). Potential Difference (V = W/Q): Work done moving unit positive charge between two points. SI unit: Volt (V). Resistance (R = V/I): Property of conductor opposing charge flow. SI unit: Ohm (ohm)."
-  },
-  {
-    "card_id": 2,
-    "level": "Basic Recall",
-    "front_question": "State Ohm's Law, Joule's Law of Heating, and Electric Power formulas.",
-    "back_answer": "Ohm's Law: V = I x R (at constant temperature). Joule's Law of Heating: H = I^2 x R x t. Electric Power: P = V x I = I^2 x R = V^2 / R [SI unit: Watt (W)]. Commercial energy unit: 1 kWh = 3.6 x 10^6 Joules."
-  },
-  {
-    "card_id": 3,
-    "level": "Conceptual Understanding",
-    "front_question": "What is electrical resistivity (rho)? State factors affecting resistance of a conductor.",
-    "back_answer": "Resistivity (rho) is an intrinsic material property representing resistance of a conductor of unit length and unit cross-sectional area [SI unit: Ohm-meter (ohm-m)]. Factors affecting conductor resistance R: 1. Directly proportional to length (L). 2. Inversely proportional to cross-sectional area (A). 3. Nature of material. 4. Temperature."
-  },
-  {
-    "card_id": 4,
-    "level": "Experimental / Observational Insights",
-    "front_question": "Derive equivalent resistance formulas for series (Rs) and parallel (Rp) resistor combinations.",
-    "back_answer": "Series: Current I is constant; V = V1 + V2 + V3 => I.Rs = I.R1 + I.R2 + I.R3 => Rs = R1 + R2 + R3. Parallel: Voltage V is constant; I = I1 + I2 + I3 => V/Rp = V/R1 + V/R2 + V/R3 => 1/Rp = 1/R1 + 1/R2 + 1/R3."
-  },
-  {
-    "card_id": 5,
-    "level": "Scientific Reasoning & Application",
-    "front_question": "Why are domestic circuits connected in parallel rather than series, and how does a fuse protect appliances?",
-    "back_answer": "Parallel Domestic Circuit Advantages: 1. Each appliance receives full mains voltage (220 V). 2. Independent switches for each appliance; failure of one appliance does not disrupt others. 3. Reduces total circuit resistance. Fuse Protection: Fuse wire has low melting point; excessive current causes Joule heating (I^2Rt) which melts fuse wire, opening the circuit to prevent electrical fires and appliance damage."
-  }
-]
+{
+  "chapter_number": 11,
+  "chapter_title": "Electricity",
+  "flashcards": [
+    {
+      "card_id": 1,
+      "level": "Basic Recall",
+      "front_question": "Define electric current, electric potential difference, resistance, and state their SI units.",
+      "back_answer": "Electric Current (I = Q/t): Rate of flow of electric charge. SI unit: Ampere (A). Potential Difference (V = W/Q): Work done moving unit positive charge between two points. SI unit: Volt (V). Resistance (R = V/I): Property of conductor opposing charge flow. SI unit: Ohm (ohm)."
+    },
+    {
+      "card_id": 2,
+      "level": "Basic Recall",
+      "front_question": "State Ohm's Law, Joule's Law of Heating, and Electric Power formulas.",
+      "back_answer": "Ohm's Law: V = I x R (at constant temperature). Joule's Law of Heating: H = I^2 x R x t. Electric Power: P = V x I = I^2 x R = V^2 / R [SI unit: Watt (W)]. Commercial energy unit: 1 kWh = 3.6 x 10^6 Joules."
+    },
+    {
+      "card_id": 3,
+      "level": "Conceptual Understanding",
+      "front_question": "What is electrical resistivity (rho)? State factors affecting resistance of a conductor.",
+      "back_answer": "Resistivity (rho) is an intrinsic material property representing resistance of a conductor of unit length and unit cross-sectional area [SI unit: Ohm-meter (ohm-m)]. Factors affecting conductor resistance R: 1. Directly proportional to length (L). 2. Inversely proportional to cross-sectional area (A). 3. Nature of material. 4. Temperature."
+    },
+    {
+      "card_id": 4,
+      "level": "Experimental / Observational Insights",
+      "front_question": "Derive equivalent resistance formulas for series (Rs) and parallel (Rp) resistor combinations.",
+      "back_answer": "Series: Current I is constant; V = V1 + V2 + V3 => I.Rs = I.R1 + I.R2 + I.R3 => Rs = R1 + R2 + R3. Parallel: Voltage V is constant; I = I1 + I2 + I3 => V/Rp = V/R1 + V/R2 + V/R3 => 1/Rp = 1/R1 + 1/R2 + 1/R3."
+    },
+    {
+      "card_id": 5,
+      "level": "Scientific Reasoning & Application",
+      "front_question": "Why are domestic circuits connected in parallel rather than series, and how does a fuse protect appliances?",
+      "back_answer": "Parallel Domestic Circuit Advantages: 1. Each appliance receives full mains voltage (220 V). 2. Independent switches for each appliance; failure of one appliance does not disrupt others. 3. Reduces total circuit resistance. Fuse Protection: Fuse wire has low melting point; excessive current causes Joule heating (I^2Rt) which melts fuse wire, opening the circuit to prevent electrical fires and appliance damage."
+    }
+  ]
+}

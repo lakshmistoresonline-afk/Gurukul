@@ -1,58 +1,112 @@
-[
-  {
-    "card_id": 1,
-    "level": "Basic Recall",
-    "front_question": "How is a triangle formed from intersecting lines, and how are triangles classified by side lengths?",
-    "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
-    "back_answer": "Three lines intersecting pairwise at three distinct points form a triangle. Classification: 1. Equilateral (all sides equal). 2. Isosceles (two sides equal). 3. Scalene (all sides unequal).",
-    "graphic_description": "Vector visual illustrating How is a triangle formed from intersecti...",
-    "mnemonic": "Remember key formula / rule in Ch 7",
-    "sm2_grading_buttons": {
-      "easy": "Review in 4 days (Grading: 5)",
-      "medium": "Review in 1 day (Grading: 3)",
-      "hard": "Review in 10 minutes (Grading: 1)"
+{
+  "chapter_number": 7,
+  "chapter_title": "Finding the Unknown (Simple Equations)",
+  "flashcards": [
+    {
+      "card_id": 1,
+      "level": "Basic Recall",
+      "front_question": "How is a triangle formed from intersecting lines, and how are triangles classified by side lengths?",
+      "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
+      "back_answer": "Three lines intersecting pairwise at three distinct points form a triangle. Classification: 1. Equilateral (all sides equal). 2. Isosceles (two sides equal). 3. Scalene (all sides unequal).",
+      "graphic_description": "Vector visual illustrating How is a triangle formed from intersecti...",
+      "mnemonic": "Remember key formula / rule in Ch 7",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
+    },
+    {
+      "card_id": 2,
+      "level": "Conceptual Understanding",
+      "front_question": "State the Triangle Inequality Theorem and its practical testing shortcut.",
+      "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
+      "back_answer": "Triangle Inequality Theorem: A triangle exists if and only if the sum of any two side lengths is strictly greater than the third side (a + b > c, b + c > a, c + a > b). Shortcut test: The sum of the two smallest sides must be strictly greater than the longest side.",
+      "graphic_description": "Vector visual illustrating State the Triangle Inequality Theorem an...",
+      "mnemonic": "Remember key formula / rule in Ch 7",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
+    },
+    {
+      "card_id": 3,
+      "level": "Experimental / Observational Insights",
+      "front_question": "What happens during ruler and compass triangle construction if side lengths fail the triangle inequality (e.g. 3, 3, 7)?",
+      "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
+      "back_answer": "When drawing compass arcs of radii 3 cm from endpoints of base 7 cm, the arcs fail to intersect because 3 + 3 = 6 < 7, visually proving no triangle can be formed.",
+      "graphic_description": "Vector visual illustrating What happens during ruler and compass tr...",
+      "mnemonic": "Remember key formula / rule in Ch 7",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
+    },
+    {
+      "card_id": 4,
+      "level": "Scientific Reasoning & Application",
+      "front_question": "Why is an equilateral triangle always constructible for any positive side length s > 0?",
+      "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
+      "back_answer": "For an equilateral triangle, all three sides equal s. The triangle inequality requires s + s > s => 2s > s. Since s > 0, 2s > s is universally true for all positive numbers s.",
+      "graphic_description": "Vector visual illustrating Why is an equilateral triangle always co...",
+      "mnemonic": "Remember key formula / rule in Ch 7",
+      "sm2_grading_buttons": {
+        "easy": "Review in 4 days (Grading: 5)",
+        "medium": "Review in 1 day (Grading: 3)",
+        "hard": "Review in 10 minutes (Grading: 1)"
+      }
     }
-  },
-  {
-    "card_id": 2,
-    "level": "Conceptual Understanding",
-    "front_question": "State the Triangle Inequality Theorem and its practical testing shortcut.",
-    "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
-    "back_answer": "Triangle Inequality Theorem: A triangle exists if and only if the sum of any two side lengths is strictly greater than the third side (a + b > c, b + c > a, c + a > b). Shortcut test: The sum of the two smallest sides must be strictly greater than the longest side.",
-    "graphic_description": "Vector visual illustrating State the Triangle Inequality Theorem an...",
-    "mnemonic": "Remember key formula / rule in Ch 7",
-    "sm2_grading_buttons": {
-      "easy": "Review in 4 days (Grading: 5)",
-      "medium": "Review in 1 day (Grading: 3)",
-      "hard": "Review in 10 minutes (Grading: 1)"
-    }
-  },
-  {
-    "card_id": 3,
-    "level": "Experimental / Observational Insights",
-    "front_question": "What happens during ruler and compass triangle construction if side lengths fail the triangle inequality (e.g. 3, 3, 7)?",
-    "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
-    "back_answer": "When drawing compass arcs of radii 3 cm from endpoints of base 7 cm, the arcs fail to intersect because 3 + 3 = 6 < 7, visually proving no triangle can be formed.",
-    "graphic_description": "Vector visual illustrating What happens during ruler and compass tr...",
-    "mnemonic": "Remember key formula / rule in Ch 7",
-    "sm2_grading_buttons": {
-      "easy": "Review in 4 days (Grading: 5)",
-      "medium": "Review in 1 day (Grading: 3)",
-      "hard": "Review in 10 minutes (Grading: 1)"
-    }
-  },
-  {
-    "card_id": 4,
-    "level": "Scientific Reasoning & Application",
-    "front_question": "Why is an equilateral triangle always constructible for any positive side length s > 0?",
-    "phonetic_guide": "[Phonetic Guide: Chapter 7 Key Mathematical Concept]",
-    "back_answer": "For an equilateral triangle, all three sides equal s. The triangle inequality requires s + s > s => 2s > s. Since s > 0, 2s > s is universally true for all positive numbers s.",
-    "graphic_description": "Vector visual illustrating Why is an equilateral triangle always co...",
-    "mnemonic": "Remember key formula / rule in Ch 7",
-    "sm2_grading_buttons": {
-      "easy": "Review in 4 days (Grading: 5)",
-      "medium": "Review in 1 day (Grading: 3)",
-      "hard": "Review in 10 minutes (Grading: 1)"
-    }
+  ],
+  "image_asset": {
+    "asset_id": "ch7_triangle_inequality_detour",
+    "chapter_number": 7,
+    "chapter_title": "A Tale of Three Intersecting Lines",
+    "title": "Direct Path vs Detour & Triangle Inequality Diagram",
+    "file_name": "ch7_triangle_inequality_detour.png",
+    "local_url": "/assets/images/ch7_triangle_inequality_detour.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Direct path vs detour geometry, triangle inequality theorem, side classification, and compass arc feasibility.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_7_1",
+        "title": "Direct Path vs Detour",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Direct straight path c is strictly shorter than detour path a + b (c < a + b => a + b > c)."
+      },
+      {
+        "hotspot_id": "hs_7_2",
+        "title": "Triangle Inequality Theorem",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Sum of any 2 sides > 3rd side (a+b>c, b+c>a, c+a>b). Test: Smallest two sum > longest side."
+      },
+      {
+        "hotspot_id": "hs_7_3",
+        "title": "Side-Based Classification",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Equilateral (a=b=c, always valid for s>0), Isosceles (a=b!=c), Scalene (a!=b!=c)."
+      },
+      {
+        "hotspot_id": "hs_7_4",
+        "title": "Compass Arc Construction",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Compass arcs of radii a and b intersect to locate 3rd vertex iff a + b > c. Arcs fail if a + b <= c."
+      }
+    ]
   }
-]
+}

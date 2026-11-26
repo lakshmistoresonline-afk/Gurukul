@@ -1,6 +1,6 @@
 {
   "chapter_number": 10,
-  "chapter_title": "Maths Chapter 10",
+  "chapter_title": "The Other Side of Zero",
   "core_summary": "This chapter extends the number line into negative territory to construct the set of Integers (Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}). Students explore intuitive models including elevator floor navigation (ground floor = 0, upper floors = positive, basement levels = negative), temperature drops below freezing, elevation/depth relative to sea level, bank account balances and overdrafts, BCE/CE historical timelines, and green (+1) / red (-1) token cancellation models. The chapter establishes horizontal number line positioning (a < b iff a is left of b), additive inverses (a + (-a) = 0), Brahmagupta's ancient laws of zero and integer arithmetic (a - (-b) = a + b), and integer operations.",
   "key_concepts": [
     "Concept of Negative Numbers: Negative numbers represent quantities below zero, describing debts, basement levels, below-freezing temperatures, and backwards displacement.",
@@ -79,21 +79,36 @@
     "Historical BCE ages are calculated as Birth Year - Death Year (e.g., 356 BCE - 323 BCE = 33 years)."
   ],
   "image_asset": {
-    "title": "Maths Chapter 10 Concept Diagram",
-    "asset_url": "/assets/images/ch10_number_line.png",
+    "title": "Integer Number Line & Elevator Level Model",
     "url": "/assets/images/ch10_number_line.png",
-    "filename": "ch10_number_line.png",
-    "type": "16:9 Diagram",
+    "alt_text": "Horizontal number line with ground level 0, positive floors and negative basements",
     "hotspots": [
       {
-        "id": "hs_10_1",
-        "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot for Maths Chapter 10."
+        "id": "hs10_zero",
+        "label": "Ground Level (0)",
+        "description": "Reference starting origin. Neither positive nor negative.",
+        "x_percent": 46.0,
+        "y_percent": 40.0,
+        "w_percent": 8.0,
+        "h_percent": 20.0
       },
       {
-        "id": "hs_10_2",
-        "label": "Key Takeaway",
-        "tooltip_explanation": "Essential learning takeaway for Maths Chapter 10."
+        "id": "hs10_positive",
+        "label": "Positive Integers (+1 to +10)",
+        "description": "Upper floors above ground. Values increase as you move right.",
+        "x_percent": 56.0,
+        "y_percent": 40.0,
+        "w_percent": 40.0,
+        "h_percent": 20.0
+      },
+      {
+        "id": "hs10_negative",
+        "label": "Negative Integers (-1 to -10)",
+        "description": "Basement levels below ground. Values decrease as you move left.",
+        "x_percent": 4.0,
+        "y_percent": 40.0,
+        "w_percent": 40.0,
+        "h_percent": 20.0
       }
     ]
   },
@@ -103,13 +118,5 @@
     "scene_3": "Hands-on problem solving and pattern verification.",
     "scene_4": "Synthesis of key takeaways and real-world applications."
   },
-  "grade": "6",
-  "subject": "Maths",
-  "chapter_id": "G6-MAT-U04-C10",
-  "video_url": "https://notebooklm.link.google/SIR5FMZFgvKl",
-  "local_video_path": "/videos/Class6/Maths/10-Building Blocks of Geometry.mp4",
-  "video_type": "mp4",
-  "video_title": "The Other Side of Zero",
-  "unit": "U04",
-  "title": "Maths Chapter 10 - Chapter Overview"
+  "video_url": "https://notebooklm.link.google/SIR5FMZFgvKl"
 }

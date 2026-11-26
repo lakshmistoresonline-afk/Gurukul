@@ -1,34 +1,209 @@
 {
-  "grade": "5",
-  "subject": "Science",
-  "chapter_id": "G5-SCI-U01-C03",
+  "chapter_no": 3,
   "chapter_title": "The Mystery of Food",
-  "root_node": "The Mystery of Food",
-  "central_theme": "Core Knowledge Architecture of The Mystery of Food",
-  "sub_nodes": [
+  "central_node": "Microbiology of Food Spoilage, Preservation Biochemistry, Digestion Mechanics, and Nutrition",
+  "main_branches": [
     {
-      "title": "Fundamental Principles",
-      "child_nodes": [
-        "Definition & Core Scope of The Mystery of Food",
-        "Primary Conceptual Variables",
-        "Theoretical Framework"
+      "branch_title": "Microbiology of Food Spoilage & Fungal Decay",
+      "sub_branches": [
+        {
+          "sub_topic": "Microscopic Spoilage Agents & Fungal Mold",
+          "key_details": [
+            "Spoilage Agents: Microscopic fungi (molds, yeasts) and pathogenic bacteria rot uncooked and cooked food.",
+            "Fungal Hyphae & Mycelium: Mold appears as fuzzy greyish-white or green cottony threads growing over moist food surfaces.",
+            "Microbial Spore Propagation: Invisible microscopic fungal spores float in atmospheric air and land on exposed food.",
+            "Chemical Degradation: Microbes secrete digestive enzymes into food, breaking down nutrients and producing foul-smelling toxins."
+          ],
+          "real_world_examples": [
+            "Cottony grey mold growing on forgotten moist bread or uttapam in a tiffin",
+            "Foul odor from spoiled lentils (dal)"
+          ]
+        },
+        {
+          "sub_topic": "Environmental Factors Triggering Microbial Growth",
+          "key_details": [
+            "Moisture Requirement: Microbes require liquid water or high relative humidity to metabolize and reproduce.",
+            "Thermal Optima: Microbial enzyme activity peaks in warm ambient temperatures ($25^\\circ\\text{C} - 40^\\circ\\text{C}$).",
+            "Oxygen Access: Atmospheric oxygen fuels aerobic bacterial and fungal respiration.",
+            "Stagnant Storing: Storing moist food in dark, warm, unventilated containers accelerates spoilage rate dramatically."
+          ],
+          "real_world_examples": [
+            "Moist warm bread spoiling in 2 days vs dry khakhra lasting months",
+            "Refrigerated food staying fresh longer due to low cold temperature"
+          ]
+        }
       ]
     },
     {
-      "title": "Analytical Applications",
-      "child_nodes": [
-        "Problem-Solving Methods",
-        "Diagnostic Case Studies",
-        "NCERT Worked Examples"
+      "branch_title": "Beneficial Microbes & Lactic Fermentation",
+      "sub_branches": [
+        {
+          "sub_topic": "Lactobacillus Curd Fermentation Mechanics",
+          "key_details": [
+            "Beneficial Microbe: *Lactobacillus* bacteria convert milk lactose sugar into lactic acid through fermentation.",
+            "Starter Curd (Inoculum): Adding a small spoonful of starter curd introduces millions of live *Lactobacillus* cells into warm milk.",
+            "Temperature Sensitivity: Warm milk ($37^\\circ\\text{C}-40^\\circ\\text{C}$) accelerates bacterial multiplication; boiling milk kills bacteria, ice-cold milk halts growth.",
+            "Protein Coagulation: Lactic acid lowers milk pH, causing soluble casein proteins to coagulated into solid curd gel overnight."
+          ],
+          "real_world_examples": [
+            "Setting fresh curd at home overnight using warm milk and starter inoculum",
+            "Lactic acid souring of milk"
+          ]
+        },
+        {
+          "sub_topic": "Traditional Fermented Indian Foods & Gut Health",
+          "key_details": [
+            "Batter Fermentation: Wild yeasts and lactic bacteria ferment rice-black gram batter overnight, producing carbon dioxide bubbles.",
+            "Leavening Effect: Trapped $\\text{CO}_2$ gas bubbles cause batter to rise, producing fluffy, soft idlis and dhoklas.",
+            "Gut Microbiome Benefits: Fermented foods introduce beneficial probiotic bacteria that aid human intestinal digestion.",
+            "Nutritional Enhancement: Fermentation increases bio-available B-complex vitamins and breaks down complex proteins."
+          ],
+          "real_world_examples": [
+            "Fermented rice and dal batter rising for crispy dosas and soft idlis",
+            "Probiotic benefits of fresh buttermilk (*chaas*)"
+          ]
+        }
       ]
     },
     {
-      "title": "Exam Synthesis",
-      "child_nodes": [
-        "Key Terminology",
-        "Formulas & Definitions",
-        "Revision Summary"
+      "branch_title": "Food Preservation Biochemistry & Methods",
+      "sub_branches": [
+        {
+          "sub_topic": "Moisture Removal & Dehydration Science",
+          "key_details": [
+            "Water Activity Reduction: Removing liquid moisture deprives microbes of water essential for cellular survival.",
+            "Sun Drying (Solar Dehydration): Evaporating water content under direct solar radiation (e.g., papads, sun-dried mangoes).",
+            "Thermal Baking: Cooking and crisping flour into dry crackers (e.g., transforming perishable roti into shelf-stable khakhra).",
+            "Commercial Freeze Drying: Vacuum removal of frozen water content from packed foods."
+          ],
+          "real_world_examples": [
+            "Sun-drying raw mango slices, papads, and red chillies on terrace mats",
+            "Dry khakhra staying edible for weeks"
+          ]
+        },
+        {
+          "sub_topic": "Osmotic Salting, Sugar & Oil Oxygen Barriers",
+          "key_details": [
+            "Osmotic Dehydration: High salt or sugar concentration creates a hypertonic external solution surrounding microbial cells.",
+            "Plasmolysis: Water is drawn out of bacterial/fungal cells by osmosis, causing microbial cells to shrink and die.",
+            "Oil Barrier Mechanics: Pouring a continuous oil layer over mango pickles seals out atmospheric oxygen.",
+            "Aerobic Inhibition: Oxygen exclusion stops aerobic spoilage molds from germinating on the pickle surface."
+          ],
+          "real_world_examples": [
+            "Mango and lemon pickles preserved in salt, spices, and oil jars",
+            "Concentrated sugar syrup preserving murabba and jams"
+          ]
+        },
+        {
+          "sub_topic": "Thermal Sterilization vs Sub-Zero Cryo-Dormancy",
+          "key_details": [
+            "Boiling / Thermal Pasteurized Treatment: Heating liquid milk to $70^\\circ\\text{C}-100^\\circ\\text{C}$ denatures microbial proteins and destroys active pathogens.",
+            "Freezing Cryo-Dormancy: Sub-zero refrigeration ($0^\\circ\\text{C}$ to $-18^\\circ\\text{C}$) does not kill microbes; it merely renders them metabolically dormant.",
+            "Thawing Reactivation: Once frozen food thaws back to warm room temperature, dormant microbes reactivate and resume multiplication.",
+            "Hermetic Canning: Boiling packed food in airtight sealed metal cans prevents re-contamination."
+          ],
+          "real_world_examples": [
+            "Boiling raw milk twice daily to prevent souring",
+            "Storing vegetables in refrigerators to retard spoilage"
+          ]
+        }
+      ]
+    },
+    {
+      "branch_title": "Mastication, Digestive Mechanics & Enzymatic Surface Area",
+      "sub_branches": [
+        {
+          "sub_topic": "Mechanical Mastication & Surface Area Expansion",
+          "key_details": [
+            "Mechanical Chewing: Incisors, canines, molars cut and grind large food chunks into fine, soft particles.",
+            "Surface Area Increase: Breaking 1 large food cube into 1,000 tiny particles increases total exposed surface area by 10-fold.",
+            "Salivary Enzyme Reaction: Salivary amylase mixes thoroughly with high-surface-area starch particles, converting starch into maltose sugar.",
+            "Gastrointestinal Transit: Soft chewed food bolus slides smoothly down the esophagus into the stomach without choking."
+          ],
+          "real_world_examples": [
+            "Chewing roti 20 times making it taste sweeter due to salivary starch conversion",
+            "Grinding solid food into fine paste before swallowing"
+          ]
+        },
+        {
+          "sub_topic": "Stomach Acid, Peristalsis & Intestinal Absorption",
+          "key_details": [
+            "Stomach Hydrochloric Acid: Acidic stomach juice (pH ~2) kills ingested pathogens and activates protein-digesting pepsin enzymes.",
+            "Peristaltic Churning: Muscular stomach walls contract rhythmically, churning food into a liquid mixture called chyme.",
+            "Small Intestine Enzymatic Digestion: Bile and pancreatic juices break down fats, proteins, and carbohydrates into basic nutrients.",
+            "Villi Blood Absorption: Microscopic finger-like villi absorb glucose, amino acids, and fatty acids into the bloodstream."
+          ],
+          "real_world_examples": [
+            "Stomach churning movements during digestion",
+            "Nutrient delivery to blood vessels feeding body tissues"
+          ]
+        },
+        {
+          "sub_topic": "Oral Hygiene & Tooth Decay Prevention",
+          "key_details": [
+            "Plaque Bacterial Biofilms: Plaque bacteria feed on sugary food debris trapped between teeth.",
+            "Acid Corrosion: Bacteria metabolize sugars into acid that dissolves enamel calcium minerals, forming cavities.",
+            "Mechanical Cleaning: Brushing teeth twice daily removes food particles and disrupts bacterial plaque films.",
+            "Tongue Cleaning & Rinsing: Swishing water post-meals removes residual food sugars and maintains oral pH."
+          ],
+          "real_world_examples": [
+            "Brushing teeth morning and night with fluoride toothpaste",
+            "Rinsing mouth with clean water after eating sweets"
+          ]
+        }
+      ]
+    },
+    {
+      "branch_title": "Nutrition, Balanced Thali & Food Safety",
+      "sub_branches": [
+        {
+          "sub_topic": "Nutrient Classes & Balanced Diet Composition",
+          "key_details": [
+            "Carbohydrates & Fats: Energy-giving foods (rice, wheat, millets, butter, oils) powering daily physical activities.",
+            "Proteins: Body-building nutrients (pulses, lentils, milk, eggs, paneer) supporting tissue growth and repair.",
+            "Vitamins & Minerals: Protective nutrients (fresh fruits, leafy green vegetables) boosting immunity and organ health.",
+            "Balanced Indian Thali: Traditional plate containing roti/rice, dal, green leafy sabzi, curd, and fresh salad."
+          ],
+          "real_world_examples": [
+            "Balanced Thali plate containing roti, dal, spinach curry, curd, and salad",
+            "School Mid-Day Meal balanced nutrition guidelines"
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "image_asset": {
+    "filename": "ch03_human_digestion.png",
+    "title": "Human Digestive Tract & Mastication Mechanics",
+    "url": "/assets/images/ch03_human_digestion.png",
+    "hotspots": [
+      {
+        "id": "hs1",
+        "label": "Mouth & Salivary Amylase",
+        "x_percent": 48.0,
+        "y_percent": 12.0,
+        "w_percent": 15.0,
+        "h_percent": 10.0,
+        "tooltip_explanation": "Chewing breaks down food while salivary amylase converts complex starch into simple glucose."
+      },
+      {
+        "id": "hs2",
+        "label": "Stomach & Intestinal Absorption",
+        "x_percent": 52.0,
+        "y_percent": 45.0,
+        "w_percent": 18.0,
+        "h_percent": 15.0,
+        "tooltip_explanation": "Gastric juices break down proteins, and villi in the small intestine absorb nutrients into blood."
+      }
+    ]
+  },
+  "video_overview": {
+    "title": "The Mystery of Food",
+    "artifact_type": "Video Overview",
+    "status": "Ready",
+    "studio_location": "Studio Panel (Right Sidebar)",
+    "video_url": "",
+    "video_embed_link": "",
+    "topics_covered": "Food spoilage, beneficial microbes (curd), preservation methods, digestion"
+  }
 }

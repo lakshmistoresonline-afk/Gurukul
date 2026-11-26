@@ -1,6 +1,6 @@
 {
   "chapter_number": 5,
-  "chapter_title": "Maths Chapter 5",
+  "chapter_title": "Prime Time",
   "core_summary": "This chapter provides a comprehensive foundation in number theory: factors, multiples, prime numbers, composite numbers, co-prime pairs, the Sieve of Eratosthenes, divisibility rules (2, 3, 4, 5, 8, 9, 10), unique prime factorisation, Highest Common Factor (HCF), and Lowest Common Multiple (LCM). Students learn that factors divide a number completely without remainder, bounded by 1 <= f <= n. The number 1 is identified as unique (neither prime nor composite). Students use Eratosthenes' grid sieve to isolate primes up to 100, master divisibility shortcuts, perform prime factorisation trees and repeated division, and apply the fundamental relationship HCF(a, b) x LCM(a, b) = a x b to solve real-world problems like traffic light synchronization and treasure hunt races.",
   "key_concepts": [
     "Factors and Multiples: A factor divides an integer completely with zero remainder. A multiple is the product of an integer and any counting number. Properties: 1 is a factor of every number; every number is a factor and multiple of itself; factors are finite and bounded (1 <= f <= n).",
@@ -79,21 +79,36 @@
     "The Sieve of Eratosthenes systematically isolates prime numbers up to any limit N."
   ],
   "image_asset": {
-    "title": "Maths Chapter 5 Concept Diagram",
-    "asset_url": "/assets/images/ch5_sieve_eratosthenes.png",
+    "title": "Sieve of Eratosthenes Prime Number Grid",
     "url": "/assets/images/ch5_sieve_eratosthenes.png",
-    "filename": "ch5_sieve_eratosthenes.png",
-    "type": "16:9 Diagram",
+    "alt_text": "Number grid from 1 to 100 with highlighted prime numbers",
     "hotspots": [
       {
-        "id": "hs_5_1",
-        "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot for Maths Chapter 5."
+        "id": "hs5_number1",
+        "label": "Special Case: Number 1",
+        "description": "1 has only 1 factor. It is neither prime nor composite.",
+        "x_percent": 5.0,
+        "y_percent": 10.0,
+        "w_percent": 8.0,
+        "h_percent": 8.0
       },
       {
-        "id": "hs_5_2",
-        "label": "Key Takeaway",
-        "tooltip_explanation": "Essential learning takeaway for Maths Chapter 5."
+        "id": "hs5_first_prime",
+        "label": "Smallest Prime: Number 2",
+        "description": "2 is the only even prime number. All higher multiples of 2 are composite.",
+        "x_percent": 15.0,
+        "y_percent": 10.0,
+        "w_percent": 8.0,
+        "h_percent": 8.0
+      },
+      {
+        "id": "hs5_primes_count",
+        "label": "Primes 1 to 100",
+        "description": "There are exactly 25 prime numbers between 1 and 100.",
+        "x_percent": 30.0,
+        "y_percent": 40.0,
+        "w_percent": 40.0,
+        "h_percent": 30.0
       }
     ]
   },
@@ -103,13 +118,5 @@
     "scene_3": "Hands-on problem solving and pattern verification.",
     "scene_4": "Synthesis of key takeaways and real-world applications."
   },
-  "grade": "6",
-  "subject": "Maths",
-  "chapter_id": "G6-MAT-U01-C05",
-  "video_url": "https://notebooklm.link.google/kts0nhVYyuJG",
-  "video_type": "mp4",
-  "unit": "U01",
-  "local_video_path": "/videos/Class6/Maths/05-The Other Side of Zero.mp4",
-  "video_title": "Prime Time: Number Play",
-  "title": "Maths Chapter 5 - Chapter Overview"
+  "video_url": "https://notebooklm.link.google/kts0nhVYyuJG"
 }

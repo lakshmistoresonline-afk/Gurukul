@@ -70,8 +70,5 @@
       "correct_answer": "Consecutive Fibonacci numbers (F_{k+1}, F_k) produce the worst-case performance. For (89, 55): 89 mod 55 = 34; 55 mod 34 = 21; 34 mod 21 = 13; 21 mod 13 = 8; 13 mod 8 = 5; 8 mod 5 = 3; 5 mod 3 = 2; 3 mod 2 = 1; 2 mod 1 = 0. Every quotient is 1, requiring maximum steps relative to digit length.",
       "explanation": "Consecutive Fibonacci numbers minimize remainder reduction per step because quotients are always 1, forcing maximum step count."
     }
-  ],
-  "grade": "9",
-  "subject": "Maths II",
-  "chapter_id": "G9-MAT-U04-C11"
+  ]
 }

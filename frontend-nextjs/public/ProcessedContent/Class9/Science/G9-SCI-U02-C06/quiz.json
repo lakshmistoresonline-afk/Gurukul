@@ -1,107 +1,204 @@
-[
-  {
-    "quiz_id": "QZ_06_1",
-    "difficulty_level": "Standard",
-    "question_type": "MCQ",
-    "category": "NCERT Chapter Quiz",
-    "question": "What is the formula for Heron's area of a triangle with side lengths a, b, c and semi-perimeter s = (a+b+c)/2?",
-    "options": [
-      "A) s(s-a)(s-b)(s-c)",
-      "B) sqrt(s(s-a)(s-b)(s-c))",
-      "C) (1/2) * s * (a+b+c)",
-      "D) sqrt(a^2 + b^2 + c^2)"
-    ],
-    "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_06_2",
-    "difficulty_level": "Standard",
-    "question_type": "Fill-in-the-Blank",
-    "category": "NCERT Chapter Quiz",
-    "question": "The area of a circular sector with radius r and central angle theta (in degrees) is given by the expression ________.",
-    "options": [
-      "(theta / 360) * pi * r^2",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "(theta / 360) * pi * r^2",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_06_3",
-    "difficulty_level": "Standard",
-    "question_type": "True/False with Justification",
-    "category": "NCERT Chapter Quiz",
-    "question": "True or False: If the perimeter of a circle and the area of a circle are numerically equal, the radius of the circle must be 2 units.",
-    "options": [
-      "True",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "True",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_06_4",
-    "difficulty_level": "Standard",
-    "question_type": "Short Answer",
-    "category": "NCERT Chapter Quiz",
-    "question": "Calculate the area of a triangular plot of land with sides measuring 13 m, 14 m, and 15 m using Heron's formula.",
-    "options": [
-      "84 sq m",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "84 sq m",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_06_5",
-    "difficulty_level": "Standard",
-    "question_type": "Structural Analysis",
-    "category": "NCERT Chapter Quiz",
-    "question": "A clock minute hand is 14 cm long. Calculate the area swept by the minute hand in 5 minutes (take pi = 22/7).",
-    "options": [
-      "51.33 sq cm (or 154/3 sq cm)",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "51.33 sq cm (or 154/3 sq cm)",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_06_6",
-    "difficulty_level": "Standard",
-    "question_type": "Critical Thinking & Geometry",
-    "category": "NCERT Chapter Quiz",
-    "question": "A park is shaped like a trapezium ABCD with parallel sides AB = 25 m and CD = 10 m, and non-parallel sides BC = 14 m and AD = 13 m. Calculate the total area of the park.",
-    "options": [
-      "196 sq m",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "196 sq m",
-    "explanation": "Refer to chapter notes for complete explanation."
-  },
-  {
-    "quiz_id": "QZ_06_7",
-    "difficulty_level": "Standard",
-    "question_type": "Case-Study Scenario",
-    "category": "NCERT Chapter Quiz",
-    "question": "A circular running track has an outer radius of R = 21 m and an inner radius of r = 14 m. (i) Calculate the surface area of the running track. (ii) Calculate the total outer boundary fence length.",
-    "options": [
-      "(i) 770 sq m, (ii) 132 m",
-      "Through chemical reactions involving synthetic catalysts",
-      "By measuring temperature variations using a thermometer",
-      "Due to atmospheric pressure differences in the troposphere"
-    ],
-    "correct_answer": "(i) 770 sq m, (ii) 132 m",
-    "explanation": "Refer to chapter notes for complete explanation."
-  }
-]
+{
+  "chapter_number": 6,
+  "chapter_title": "Forces and Laws of Motion",
+  "level_1_easy_foundational": [
+    {
+      "question_id": "CH06-L1-01",
+      "question_type": "MCQ",
+      "question": "Which physical property serves as a direct quantitative measure of an object's inertia?",
+      "options": [
+        "A) Velocity",
+        "B) Volume",
+        "C) Mass",
+        "D) Density"
+      ],
+      "correct_answer": "C) Mass",
+      "explanation": "Inertia is directly proportional to mass; heavier objects resist changes to their motion state more strongly.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 6.",
+      "solution_key_3_part": {
+        "key_concept": "Inertia is directly proportional to mass; heavier objects resist changes to their motion state more strongly",
+        "step_by_step_derivation": "Inertia is directly proportional to mass; heavier objects resist changes to their motion state more strongly.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch6_forces_motion.png",
+        "target_region": {
+          "hotspot_id": "HS-06-01",
+          "label": "Law of Inertia",
+          "x_percent": 18,
+          "y_percent": 50,
+          "w_percent": 20,
+          "h_percent": 30,
+          "description": "Resistance to state change proportional to mass."
+        }
+      }
+    },
+    {
+      "question_id": "CH06-L1-02",
+      "question_type": "Fill-in-the-Blanks",
+      "question": "Newton's Second Law states that force equals the rate of change of linear ______.",
+      "options": [],
+      "correct_answer": "momentum",
+      "explanation": "F = dp/dt = d(mv)/dt = ma; net force equals time rate of change of linear momentum.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 6.",
+      "solution_key_3_part": {
+        "key_concept": "F = dp/dt = d(mv)/dt = ma; net force equals time rate of change of linear momentum",
+        "step_by_step_derivation": "F = dp/dt = d(mv)/dt = ma; net force equals time rate of change of linear momentum.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch6_forces_motion.png",
+        "target_region": {
+          "hotspot_id": "HS-06-01",
+          "label": "Law of Inertia",
+          "x_percent": 18,
+          "y_percent": 50,
+          "w_percent": 20,
+          "h_percent": 30,
+          "description": "Resistance to state change proportional to mass."
+        }
+      }
+    },
+    {
+      "question_id": "CH06-L1-03",
+      "question_type": "True/False with Justification",
+      "question": "True or False: Action and reaction forces cancel each other to produce zero net force because they are equal and opposite.",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "Action and reaction forces act simultaneously on TWO DIFFERENT bodies; cancellation occurs only when forces act on the same single body.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 6.",
+      "solution_key_3_part": {
+        "key_concept": "Action and reaction forces act simultaneously on TWO DIFFERENT bodies; cancellation occurs only when forces act on the same single body",
+        "step_by_step_derivation": "Action and reaction forces act simultaneously on TWO DIFFERENT bodies; cancellation occurs only when forces act on the same single body.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch6_forces_motion.png",
+        "target_region": {
+          "hotspot_id": "HS-06-01",
+          "label": "Law of Inertia",
+          "x_percent": 18,
+          "y_percent": 50,
+          "w_percent": 20,
+          "h_percent": 30,
+          "description": "Resistance to state change proportional to mass."
+        }
+      }
+    }
+  ],
+  "level_2_medium_conceptual": [
+    {
+      "question_id": "CH06-L2-01",
+      "question_type": "Short Answer",
+      "question": "Why does a cricket fielder pull their hands backward while catching a fast-moving cricket ball?",
+      "options": [],
+      "correct_answer": "Pulling hands backward increases the time interval t over which momentum changes to zero. By Newton's Second Law (F = delta(p)/t), increasing t reduces the impact force F exerted on the fielder's hands.",
+      "explanation": "Extending impact duration reduces the average impulsive force transferred to the hands.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 6.",
+      "solution_key_3_part": {
+        "key_concept": "Extending impact duration reduces the average impulsive force transferred to the hands",
+        "step_by_step_derivation": "Extending impact duration reduces the average impulsive force transferred to the hands.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch6_forces_motion.png",
+        "target_region": {
+          "hotspot_id": "HS-06-01",
+          "label": "Law of Inertia",
+          "x_percent": 18,
+          "y_percent": 50,
+          "w_percent": 20,
+          "h_percent": 30,
+          "description": "Resistance to state change proportional to mass."
+        }
+      }
+    },
+    {
+      "question_id": "CH06-L2-02",
+      "question_type": "Diagram / Flowchart Analysis",
+      "question": "A 5 kg mass experiences a constant force for 2 s, increasing its velocity from 3 m/s to 7 m/s. Calculate the force magnitude. If applied for 5 s, find the final velocity.",
+      "options": [],
+      "correct_answer": "1) Force F = m(v - u)/t = 5 × (7 - 3) / 2 = 10 N.\n2) If t = 5 s: final velocity v = u + (F/m)t = 3 + (10/5) × 5 = 3 + 10 = 13 m/s.",
+      "explanation": "Applying F = ma determines force magnitude (10 N) and subsequent velocity evolution.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 6.",
+      "solution_key_3_part": {
+        "key_concept": "Applying F = ma determines force magnitude (10 N) and subsequent velocity evolution",
+        "step_by_step_derivation": "Applying F = ma determines force magnitude (10 N) and subsequent velocity evolution.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch6_forces_motion.png",
+        "target_region": {
+          "hotspot_id": "HS-06-01",
+          "label": "Law of Inertia",
+          "x_percent": 18,
+          "y_percent": 50,
+          "w_percent": 20,
+          "h_percent": 30,
+          "description": "Resistance to state change proportional to mass."
+        }
+      }
+    }
+  ],
+  "level_3_hard_advanced": [
+    {
+      "question_id": "CH06-L3-01",
+      "question_type": "Case-Study Scenarios",
+      "question": "A coin placed on a stiff card over a glass tumbler drops into the glass when the card is flicked horizontally. Explain the physical law demonstrated by the coin and card.",
+      "options": [],
+      "correct_answer": "This demonstrates Newton's First Law of Motion (Inertia of Rest). The flick applies a horizontal force to the card, accelerating it away. The coin experiences no direct horizontal force and remains at rest due to inertia until gravity pulls it vertically into the tumbler.",
+      "explanation": "Inertia maintains the coin's rest state until gravity acts once support is removed.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 6.",
+      "solution_key_3_part": {
+        "key_concept": "Inertia maintains the coin's rest state until gravity acts once support is removed",
+        "step_by_step_derivation": "Inertia maintains the coin's rest state until gravity acts once support is removed.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch6_forces_motion.png",
+        "target_region": {
+          "hotspot_id": "HS-06-01",
+          "label": "Law of Inertia",
+          "x_percent": 18,
+          "y_percent": 50,
+          "w_percent": 20,
+          "h_percent": 30,
+          "description": "Resistance to state change proportional to mass."
+        }
+      }
+    },
+    {
+      "question_id": "CH06-L3-02",
+      "question_type": "Give Reasons / Critical Thinking",
+      "question": "Derive F = ma from Newton's Second Law of Motion mathematically, stating all initial assumptions.",
+      "options": [],
+      "correct_answer": "Initial momentum p1 = mu; final momentum p2 = mv. Momentum change delta(p) = m(v - u). Rate of momentum change = m(v - u)/t = ma. By Second Law, F ∝ ma => F = k·m·a. In SI units, 1 N accelerates 1 kg at 1 m/s², setting k = 1, yielding F = ma.",
+      "explanation": "Force is defined as the time rate of change of momentum for a constant mass system.",
+      "time_limit_seconds": 90,
+      "hint_modal": "Think about core scientific principles from Chapter 6.",
+      "solution_key_3_part": {
+        "key_concept": "Force is defined as the time rate of change of momentum for a constant mass system",
+        "step_by_step_derivation": "Force is defined as the time rate of change of momentum for a constant mass system.",
+        "common_pitfalls": "Avoid confusing scalar and vector quantities or misinterpreting units."
+      },
+      "hotspot_choice": {
+        "image_url": "/assets/images/ch6_forces_motion.png",
+        "target_region": {
+          "hotspot_id": "HS-06-01",
+          "label": "Law of Inertia",
+          "x_percent": 18,
+          "y_percent": 50,
+          "w_percent": 20,
+          "h_percent": 30,
+          "description": "Resistance to state change proportional to mass."
+        }
+      }
+    }
+  ]
+}

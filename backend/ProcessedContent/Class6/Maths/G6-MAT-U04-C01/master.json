@@ -1,10 +1,441 @@
 {
-  "grade": "6",
-  "subject": "Maths",
-  "chapter_id": "G6-MAT-U04-C01",
-  "chapter_title": "Maths Chapter 1",
-  "master_guide": "Master Reference Guide for Class 6 Maths: Maths Chapter 1.",
-  "lab_experiments": [
-    "Experiment 1: Practical verification of Maths Chapter 1 principles."
+  "subject": "Class 6 Mathematics",
+  "curriculum": "Ganita Prakash (NCERT Grade 6 / NEP 2020 Framework)",
+  "document_type": "Master Student Progress Tracking & Educational Portfolio Evaluation Pack",
+  "self_assessment_rubrics": {
+    "core_competencies": [
+      {
+        "competency_domain": "Listening & Observing (Visual & Auditory Pattern Recognition)",
+        "description": "Ability to actively observe geometric arrangements, numerical sequences, visual symmetries, and spatial constructions presented during instruction.",
+        "performance_levels": [
+          {
+            "level": "Novice (Level 1)",
+            "criteria": "Identifies simple visual patterns or shapes only when explicitly pointed out; requires step-by-step guidance to track sequential changes."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "criteria": "Notices obvious numerical rules (e.g., adding 2 to get odd numbers) and simple 2D shapes, but struggles to explain underlying visual symmetry or sequence logic."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "criteria": "Independently observes and accurately identifies patterns (e.g., L-shaped gnomons, rotational symmetry orders, bar graph scale anomalies), explaining relationships clearly."
+          },
+          {
+            "level": "Master (Level 4)",
+            "criteria": "Demonstrates keen mathematical observation across complex scenarios; discovers hidden mathematical structures (e.g., Collatz decay, Virahānka recurrence, 3D dot arrays) and predicts extended behaviors."
+          }
+        ]
+      },
+      {
+        "competency_domain": "Presenting & Speaking (Mathematical Communication & Justification)",
+        "description": "Ability to articulate mathematical thinking, explain solution algorithms, present data visual interpretations, and justify mathematical claims using precise vocabulary.",
+        "performance_levels": [
+          {
+            "level": "Novice (Level 1)",
+            "criteria": "Communicates final answers without mathematical reasoning or steps; uses non-standard terms instead of formal vocabulary (e.g., 'corner' instead of 'vertex')."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "criteria": "Explains simple 1-step calculations using basic vocabulary, but struggles to explain multi-step proofs, geometric constructions, or Brahmagupta's integer laws."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "criteria": "Presents structured mathematical solutions using correct terminology (e.g., 'additive inverse', 'co-prime', 'rotational symmetry order'); justifies steps clearly to peers."
+          },
+          {
+            "level": "Master (Level 4)",
+            "criteria": "Articulates elegant, logically rigorous mathematical proofs and alternative methods; leads group discussions and defends solutions against edge cases."
+          }
+        ]
+      },
+      {
+        "competency_domain": "Reading & Comprehending (Textual & Graphical Data Interpretation)",
+        "description": "Ability to extract parameters from real-world word problems, interpret pictographs and bar graphs, decode mathematical notation, and comprehend geometric diagrams.",
+        "performance_levels": [
+          {
+            "level": "Novice (Level 1)",
+            "criteria": "Extracts basic numbers from simple word problems but misinterprets scales on graphs or multi-part word problem conditions."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "criteria": "Reads bar graphs with 1-to-1 scales and basic word problems accurately; requires help decoding complex keys (e.g., 1 icon = 20 units) or fractional number line locations."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "criteria": "Accurately interprets complex pictographs, scaled bar graphs, fraction wall diagrams, and multi-part case study scenarios; extracts all required parameters."
+          },
+          {
+            "level": "Master (Level 4)",
+            "criteria": "Critically analyzes complex data representations, identifies distorted axes or misleading scales, synthesizes information across multiple charts, and decodes abstract algebraic identities."
+          }
+        ]
+      },
+      {
+        "competency_domain": "Writing & Problem-Solving (Algorithmic Execution & Mathematical Rigor)",
+        "description": "Ability to execute multi-step computational algorithms, construct precise geometric diagrams, solve HOTS word problems, and write complete mathematical solutions with units.",
+        "performance_levels": [
+          {
+            "level": "Novice (Level 1)",
+            "criteria": "Executes basic single-digit arithmetic with occasional errors; omits units, construction steps, or proper line segment labels."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "criteria": "Solves standard 2-step computational problems correctly; makes minor calculation errors in fraction addition or negative integer operations."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "criteria": "Executes multi-step algorithms (e.g., Sieve of Eratosthenes, Reverse-and-Add, HCF/LCM prime trees) fluently; presents step-by-step working with exact units."
+          },
+          {
+            "level": "Master (Level 4)",
+            "criteria": "Flawlessly executes complex problem-solving strategies (e.g., Gnomon partitioning, Nim game control strategies, composite area decomposition); verifies solutions independently."
+          }
+        ]
+      }
+    ]
+  },
+  "student_portfolio_logs": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Patterns in Mathematics",
+      "project_title": "Decomposing Squares into L-Shaped Gnomons and Virahānka Sequences",
+      "summary_writeup": "Constructed physical 10x10 square dot arrays using colored counters to visually prove that the sum of the first n consecutive odd numbers equals n^2. Traced the growth of the Virahānka (Fibonacci) numbers in nature and built 2D models showing how adjacent triangular numbers T_n and T_{n-1} combine to form square numbers.",
+      "self_rating": "5 / 5 (Mastery)",
+      "reflective_takeaways": [
+        "I realized that odd numbers are not just isolated values; they represent concentric L-shaped gnomon layers that build square arrays.",
+        "Combining T_3 (6) and T_4 (10) physically showed me why 6 + 10 = 16 = 4^2.",
+        "The Virahānka sequence rule (V_n = V_{n-1} + V_{n-2}) appears in plant leaf arrangements and rhythmic prosody."
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Lines and Angles",
+      "project_title": "Clock Angles, Ashoka Chakra Spokes, and Paper-Folding Geometry",
+      "summary_writeup": "Investigated angular rotation using clock hands and the 24 spokes of the Ashoka Chakra. Constructed 90-degree perpendicular bisectors and 45-degree angle bisectors using paper-folding techniques, and verified angle classifications (acute, right, obtuse, straight, reflex) with a protractor.",
+      "self_rating": "4 / 5 (Proficient)",
+      "reflective_takeaways": [
+        "Angles measure the amount of rotation between two rays, regardless of how long the rays are drawn.",
+        "Each hour division on a clock equals 30 degrees (360 / 12), making it easy to calculate hand angles at any time.",
+        "Paper folding creates exact 90-degree right angles because folding a line onto itself divides 180 degrees into two equal halves."
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Number Play",
+      "project_title": "Palindromes, Collatz Trajectories, and the Game of 21 Strategy",
+      "summary_writeup": "Explored recreational number theory by running the 4-step Reverse-and-Add algorithm on 2-digit numbers to generate palindromes. Mapped Collatz sequence trajectories to observe decay to 1, and developed a winning control strategy for the Game of 21 using multiples of 4.",
+      "self_rating": "5 / 5 (Mastery)",
+      "reflective_takeaways": [
+        "The Reverse-and-Add algorithm turns almost any number into a palindrome (e.g., 48 + 84 = 132 -> 132 + 231 = 363).",
+        "Collatz sequences show fascinating behavior: even numbers halve rapidly, while odd numbers jump (3n + 1), but all tested numbers fall to 1.",
+        "In the Game of 21, controlling target numbers (1, 5, 9, 13, 17, 21) guarantees a win for Player 1."
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Data Handling and Presentation",
+      "project_title": "Classroom Transport Survey & Bar Graph Distortion Analysis",
+      "summary_writeup": "Collected primary traffic survey data for 90 students using 5-stroke tally marks (||||/). Constructed pictographs and scaled bar graphs (1 cm = 10 students) following formal visual presentation rules (uniform bar width, equal gaps, compulsory 0-baseline).",
+      "self_rating": "4 / 5 (Proficient)",
+      "reflective_takeaways": [
+        "Grouping tallies in bundles of 5 (||||/) makes counting large datasets quick and error-free.",
+        "A bar graph scale must always start at 0; truncating the vertical axis visually distorts category ratios and misleads readers.",
+        "Pictographs require choosing a smart key scale (e.g., 1 icon = 8 vehicles) so fractional items can be easily represented."
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Prime Time",
+      "project_title": "Sieve of Eratosthenes, Prime Factor Trees, and HCF-LCM Applications",
+      "summary_writeup": "Constructed the Sieve of Eratosthenes grid from 1 to 100 to isolate prime numbers. Formulated prime factorisation trees, tested divisibility rules for 2, 3, 4, 5, 8, 9, 10, and applied HCF and LCM formulas to solve real-world traffic light synchronization problems.",
+      "self_rating": "5 / 5 (Mastery)",
+      "reflective_takeaways": [
+        "Prime numbers are the unbreakable fundamental building blocks of all composite numbers.",
+        "The product of HCF and LCM of any two numbers always equals the product of the two numbers themselves (HCF x LCM = a x b).",
+        "Traffic lights or alarm clocks operating on different time cycles synchronize at intervals equal to their LCM."
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Perimeter and Area",
+      "project_title": "Boundary Fencing, Surface Tiling, and Area Conservation Models",
+      "summary_writeup": "Calculated continuous perimeter distances for regular polygons and composite L-shaped figures. Derived surface area formulas for rectangles and squares, demonstrated that cutting and rearranging shapes conserves total area while altering perimeter, and solved floor tiling problems.",
+      "self_rating": "4 / 5 (Proficient)",
+      "reflective_takeaways": [
+        "Perimeter measures 1D boundary length in meters/centimeters, while Area measures 2D enclosed surface region in square units.",
+        "Cutting a shape into pieces and rearranging them keeps total area strictly constant.",
+        "Among all rectangular shapes with a fixed area, a square always encloses the region with the minimum perimeter."
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Fractions",
+      "project_title": "Fraction Wall Constructions and Brahmagupta's General Operations",
+      "summary_writeup": "Built a visual fraction wall to compare unit fractions (1/n) and demonstrate that larger denominators produce smaller individual shares. Mastered proper, improper, and mixed fraction conversions, and applied Brahmagupta's 7th-century general addition and subtraction formulas.",
+      "self_rating": "5 / 5 (Mastery)",
+      "reflective_takeaways": [
+        "In unit fractions (1/n), as the denominator n grows larger, the actual slice size gets smaller (1/8 < 1/3).",
+        "Brahmagupta's formula (a/b + c/d = (ad + bc) / bd) unifies fraction addition by automatically creating a common fractional unit.",
+        "Mixed fractions (A b/c) represent a whole number plus a fractional part, equal to (Ac + b) / c."
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "chapter_title": "Playing with Constructions",
+      "project_title": "Precision Compass Drawing, Concentric Circles, and Hexagon Inscription",
+      "summary_writeup": "Mastered precision geometric drawing using ruler, compass, and set-squares. Constructed concentric circles with radii 3 cm and 5 cm, transferred line segment lengths without tick errors, constructed 90-degree perpendicular corners, and inscribed regular hexagons inside circles.",
+      "self_rating": "4 / 5 (Proficient)",
+      "reflective_takeaways": [
+        "A compass locks an exact physical radius distance (r), ensuring every point on the circle boundary is equidistant from the center O.",
+        "Set-squares provide exact 90-degree perpendicular lines for constructing true rectangular and square corners.",
+        "Stepping the compass radius around a circle circumference six times creates a perfect inscribed regular hexagon."
+      ]
+    },
+    {
+      "chapter_number": 9,
+      "chapter_title": "Symmetry",
+      "project_title": "Reflection Lines, Rotational Orders, and Ashoka Chakra Symmetry",
+      "summary_writeup": "Investigated line (reflectional) symmetry and rotational symmetry across regular polygons and everyday objects. Calculated smallest rotational angles (360 / n), analyzed Ashoka Chakra 24-spoke geometry, and proved why non-square rectangle diagonals are not reflection lines.",
+      "self_rating": "5 / 5 (Mastery)",
+      "reflective_takeaways": [
+        "A regular polygon with n sides possesses exactly n lines of reflection symmetry and rotational symmetry of order n.",
+        "Smallest angle of rotational symmetry equals 360 degrees divided by the order of symmetry n.",
+        "Folding a rectangle along its diagonal causes vertices to overhang rather than align, proving diagonals are not reflection lines."
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "The Other Side of Zero",
+      "project_title": "Elevator Lift Models, Token Zero-Pairs, and Brahmagupta's Zero Laws",
+      "summary_writeup": "Extended the natural number ray into a full integer number line Z (... -3, -2, -1, 0, +1, +2, +3 ...). Used building elevator models (basements -5 to -1) and green (+1) / red (-1) token zero-pair cancellations to model integer addition, subtraction, and additive inverses.",
+      "self_rating": "5 / 5 (Mastery)",
+      "reflective_takeaways": [
+        "Negative integers represent positions below zero (e.g., basement floors, depths below sea level, temperatures below freezing).",
+        "Subtracting a negative number is algebraically equivalent to adding its positive opposite: a - (-b) = a + b.",
+        "Brahmagupta's Zero Laws prove that adding an integer to its additive inverse equals zero: a + (-a) = 0."
+      ]
+    }
+  ],
+  "achievement_badges": [
+    {
+      "badge_id": "BADGE-01",
+      "badge_title": "Master Pattern Detective",
+      "domain": "Patterns & Algebraic Thinking",
+      "criteria": "Successfully discover, visually model, and mathematically explain 5 or more complex numerical and geometric sequences.",
+      "milestones": [
+        "Prove odd number sums equal n^2 using L-shaped gnomon arrays.",
+        "Demonstrate that adjacent triangular numbers T_n + T_{n-1} form square numbers.",
+        "Calculate Virahānka (Fibonacci) numbers up to V_10 and identify real-world occurrences.",
+        "Evaluate symmetrical up-and-down counting sums using the peak^2 rule."
+      ]
+    },
+    {
+      "badge_id": "BADGE-02",
+      "badge_title": "Precision Geometry & Angle Master",
+      "domain": "Spatial Reasoning & Geometric Constructions",
+      "criteria": "Demonstrate high precision in measuring, classifying, and constructing lines, angles, circles, and regular polygons.",
+      "milestones": [
+        "Classify angles accurately across acute, right, obtuse, straight, and reflex categories.",
+        "Construct 90-degree perpendiculars and 45-degree bisectors using paper-folding and set-squares.",
+        "Draw precision concentric circles and inscribe regular hexagons using compass radius steps.",
+        "Calculate clock hand rotation angles and central spoke divisions."
+      ]
+    },
+    {
+      "badge_id": "BADGE-03",
+      "badge_title": "Recreational Number Theorist",
+      "domain": "Number Systems & Algorithms",
+      "criteria": "Fluently execute complex iterative number algorithms and develop control strategies for mathematical games.",
+      "milestones": [
+        "Generate palindromes using the 4-step Reverse-and-Add algorithm.",
+        "Trace Collatz conjecture trajectories from odd/even starting values to 1.",
+        "Formulate a winning strategy for the Game of 21 using target control numbers (4k + 1).",
+        "Execute Kaprekar's routine for 2-digit numbers."
+      ]
+    },
+    {
+      "badge_id": "BADGE-04",
+      "badge_title": "Data Detective & Visual Analyst",
+      "domain": "Statistics & Data Representation",
+      "criteria": "Organize raw observations into structured tables and create mathematically accurate, non-misleading visual graphs.",
+      "milestones": [
+        "Record primary data using 5-stroke tally mark bundles (||||/).",
+        "Construct scaled pictographs using accurate fractional icon key values.",
+        "Draw bar graphs adhering to uniform width, equal gaps, and compulsory 0-baselines.",
+        "Identify and correct distorted scale representation errors in published graphs."
+      ]
+    },
+    {
+      "badge_id": "BADGE-05",
+      "badge_title": "Prime Factor & Divisibility Expert",
+      "domain": "Factors, Multiples & Number Properties",
+      "criteria": "Master the structural factorization of composite numbers and solve multi-cycle real-world synchronization problems.",
+      "milestones": [
+        "Isolate prime numbers 1-100 using the Sieve of Eratosthenes.",
+        "Apply divisibility rules for 2, 3, 4, 5, 8, 9, 10 rapidly.",
+        "Construct prime factor trees and calculate HCF and LCM.",
+        "Solve simultaneous event cycle problems (e.g., traffic light sync) using LCM."
+      ]
+    },
+    {
+      "badge_id": "BADGE-06",
+      "badge_title": "Spatial Measurement Architect",
+      "domain": "Perimeter, Area & Spatial Conservation",
+      "criteria": "Accurately calculate 1D boundary distances and 2D enclosed surface regions while understanding conservation principles.",
+      "milestones": [
+        "Calculate perimeters for regular polygons and composite L-shaped figures.",
+        "Derive surface area for rectangles and squares in square meters/centimeters.",
+        "Prove area conservation when cutting and rearranging flat geometric shapes.",
+        "Demonstrate that squares minimize perimeter among rectangles of fixed area."
+      ]
+    },
+    {
+      "badge_id": "BADGE-07",
+      "badge_title": "Fraction & Arithmetic Scholar",
+      "domain": "Rational Numbers & Historical Operations",
+      "criteria": "Understand fractional shares as fundamental units and execute Brahmagupta's ancient general arithmetic operations.",
+      "milestones": [
+        "Order unit fractions (1/n) based on denominator magnitude inversion.",
+        "Convert between proper, improper, and mixed fraction representations.",
+        "Apply Brahmagupta's general formulas: a/b + c/d = (ad + bc) / bd.",
+        "Place fractions accurately on a continuous number line."
+      ]
+    },
+    {
+      "badge_id": "BADGE-08",
+      "badge_title": "Symmetry & Design Specialist",
+      "domain": "Transformational Geometry & Symmetry",
+      "criteria": "Identify and analyze reflectional line symmetry and rotational symmetry across geometric figures and natural art.",
+      "milestones": [
+        "Determine all lines of reflection symmetry for regular polygons.",
+        "Calculate smallest rotational angles (360 / n) and rotational orders.",
+        "Prove why non-square rectangle diagonals fail reflection fold tests.",
+        "Analyze 24-spoke Ashoka Chakra and snowflake 6-fold symmetry."
+      ]
+    },
+    {
+      "badge_id": "BADGE-09",
+      "badge_title": "Integer & Zero-Pair Navigator",
+      "domain": "Signed Numbers & Algebraic Foundations",
+      "criteria": "Navigate the complete integer number line Z, execute signed integer operations, and apply Brahmagupta's laws of zero.",
+      "milestones": [
+        "Locate positive and negative integers on a two-directional number line.",
+        "Model integer addition/subtraction using elevator lift movements and depth scenarios.",
+        "Execute token zero-pair (+1 green, -1 red) cancellation operations.",
+        "Apply algebraic double-negative rules: a - (-b) = a + b and a + (-a) = 0."
+      ]
+    }
+  ],
+  "master_learning_outcomes_checklist": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Patterns in Mathematics",
+      "competencies": [
+        "Identify term-to-term rules for counting, odd, even, square, cubic, and power sequences.",
+        "Prove that the sum of the first n odd numbers equals n^2 using L-shaped gnomons.",
+        "Relate adjacent triangular numbers to square numbers: T_n + T_{n-1} = n^2.",
+        "Generate terms of the Virahānka (Fibonacci) sequence using V_n = V_{n-1} + V_{n-2}.",
+        "Evaluate symmetrical up-and-down counting sums using the central peak^2 rule."
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Lines and Angles",
+      "competencies": [
+        "Define points, line segments, lines, and rays with correct geometric notation.",
+        "Classify angles as acute, right, obtuse, straight, or reflex based on degree bounds.",
+        "Convert fractional rotation turns into degree measures (Fraction x 360).",
+        "Construct 90-degree perpendiculars and angle bisectors using paper-folding.",
+        "Calculate clock hand rotation angles (30 deg/hour) and central spoke divisions."
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Number Play",
+      "competencies": [
+        "Calculate occurrences of specific digits across single, 2-digit, and 3-digit ranges.",
+        "Identify palindromic numbers and execute the 4-step Reverse-and-Add algorithm.",
+        "Trace Collatz sequence trajectories from even (n/2) and odd (3n+1) starting values.",
+        "Apply target control number strategies (4k + 1) to win mathematical turn games.",
+        "Execute Kaprekar's routine for 2-digit numbers."
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Data Handling and Presentation",
+      "competencies": [
+        "Organize unorganized raw data into frequency tables using 5-stroke tally bundles (||||/).",
+        "Construct pictographs with defined icon keys and interpret fractional representations.",
+        "Draw bar graphs following uniform bar width, equal gap spacing, and 0-baseline rules.",
+        "Detect visual scale distortion caused by truncated vertical axes.",
+        "Extract category ratios and percentage distributions from graphical data."
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Prime Time",
+      "competencies": [
+        "Distinguish prime numbers (exactly 2 factors) from composite numbers (> 2 factors).",
+        "Isolate prime numbers from 1 to 100 using the Sieve of Eratosthenes.",
+        "Apply divisibility tests for 2, 3, 4, 5, 8, 9, and 10 efficiently.",
+        "Construct prime factor trees to express composite numbers as prime products.",
+        "Compute HCF and LCM and verify the relationship HCF(a,b) x LCM(a,b) = a x b."
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Perimeter and Area",
+      "competencies": [
+        "Compute perimeters for rectangles, squares, regular polygons, and composite shapes.",
+        "Calculate surface areas for rectangles (l x w) and squares (s^2) in square units.",
+        "Demonstrate that cutting and rearranging shapes conserves total area.",
+        "Prove that a square encloses maximum area for a given perimeter (or minimum perimeter for a given area).",
+        "Convert units between square meters and square centimeters (1 m^2 = 10,000 cm^2)."
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Fractions",
+      "competencies": [
+        "Define unit fractions (1/n) and apply the rule that larger denominators yield smaller shares.",
+        "Convert between proper, improper, and mixed fraction representations.",
+        "Locate proper and improper fractions accurately on a continuous number line.",
+        "Generate equivalent fractions by scaling numerators and denominators equally.",
+        "Apply Brahmagupta's general addition/subtraction formulas: a/b +/- c/d = (ad +/- bc) / bd."
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "chapter_title": "Playing with Constructions",
+      "competencies": [
+        "Construct circles of specified radii using a center point O and compass opening.",
+        "Draw concentric circles sharing a center point O with different radius lengths.",
+        "Transfer exact line segment lengths using a compass to eliminate ruler parallax errors.",
+        "Construct 90-degree perpendicular corners using set-squares and rulers.",
+        "Inscribe regular hexagons inside circles using compass radius arc steps."
+      ]
+    },
+    {
+      "chapter_number": 9,
+      "chapter_title": "Symmetry",
+      "competencies": [
+        "Identify all lines of reflection symmetry for regular polygons and 2D shapes.",
+        "Prove why non-square rectangle diagonals are not lines of reflection symmetry.",
+        "Determine the order of rotational symmetry n for symmetrical 2D figures.",
+        "Calculate the smallest angle of rotational symmetry using 360 / n.",
+        "Analyze reflectional and rotational symmetry in natural patterns, Ashoka Chakra, and snowflakes."
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "The Other Side of Zero",
+      "competencies": [
+        "Represent positive and negative integers on a extended two-directional number line Z.",
+        "Model integer positions using building elevator lifts, sea levels, and temperature scales.",
+        "Define additive inverses (-a) and verify that a + (-a) = 0.",
+        "Execute integer addition and subtraction using token zero-pair (+1 green, -1 red) cancellations.",
+        "Apply double negative algebraic rules: a - (-b) = a + b and 0 - (-A) = A."
+      ]
+    }
   ]
 }

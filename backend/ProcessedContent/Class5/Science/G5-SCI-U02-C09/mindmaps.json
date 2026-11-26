@@ -1,34 +1,127 @@
 {
-  "grade": "5",
-  "subject": "Science",
-  "chapter_id": "G5-SCI-U02-C09",
+  "chapter_no": 9,
   "chapter_title": "Natural Phenomena and Weather",
-  "root_node": "Natural Phenomena and Weather",
-  "central_theme": "Core Knowledge Architecture of Natural Phenomena and Weather",
-  "sub_nodes": [
+  "central_node": "Diurnal Rotations, Sundial Mechanics, Annual Seasonal Dynamics, and Phenological Bio-Indicators",
+  "main_branches": [
     {
-      "title": "Fundamental Principles",
-      "child_nodes": [
-        "Definition & Core Scope of Natural Phenomena and Weather",
-        "Primary Conceptual Variables",
-        "Theoretical Framework"
+      "branch_title": "Diurnal Cycle, Planetary Rotation & Sundials",
+      "sub_branches": [
+        {
+          "sub_topic": "Earth Axial Rotation & Day-Night Alternation",
+          "key_details": [
+            "West-to-East Axial Rotation: Earth spins on its internal axis from west to east once every 24 hours.",
+            "Day-Night Alternation: The illuminated hemisphere facing the Sun experiences daylight; the shadowed opposite hemisphere experiences night.",
+            "Apparent Solar Motion: Earth's counter-clockwise rotation causes the Sun to appear to rise in the east and set in the west.",
+            "Globe Flashlight Model: Shining a flashlight on a spinning globe models daylight moving across longitudes."
+          ],
+          "real_world_examples": [
+            "Flashlight illuminating one side of a rotating globe in a dark room",
+            "Sunrise in eastern India (Arunachal Pradesh) occurring before western India (Gujarat)"
+          ]
+        },
+        {
+          "sub_topic": "Sundial Trigonometry & Shadow Length Shifts",
+          "key_details": [
+            "Solar Elevation Angle: Sun's position low on the horizon at morning/evening projects long, low-angle shadows.",
+            "Solar Noon Minimum: At solar noon, the Sun reaches its highest overhead elevation, casting the shortest shadow of the day.",
+            "Gnomon Shadow Tracking: Measuring a vertical stick's shadow length and angle outdoor tracks time like an ancient sundial.",
+            "Angular Rotation Speed Formula: $360^\\circ / 24\\text{ hours} = 15^\\circ\\text{ Longitude / Hour}$ ($90^\\circ$ rotation in 6 hours)."
+          ],
+          "real_world_examples": [
+            "Tracking a vertical yardstick's shadow length on school grounds from 8 AM to 4 PM",
+            "Historical Jantar Mantar giant stone sundials in Jaipur and Delhi"
+          ]
+        }
       ]
     },
     {
-      "title": "Analytical Applications",
-      "child_nodes": [
-        "Problem-Solving Methods",
-        "Diagnostic Case Studies",
-        "NCERT Worked Examples"
+      "branch_title": "Annual Seasonal Cycles & Planetary Revolution",
+      "sub_branches": [
+        {
+          "sub_topic": "Earth Revolution & Axial Tilt Mechanics",
+          "key_details": [
+            "Elliptical Orbit Revolution: Earth completes one full orbit revolution around the Sun every 365.25 days.",
+            "Axial Tilt ($23.5^\\circ$): Earth's rotational axis remains tilted at $23.5^\\circ$ relative to its orbital plane.",
+            "Seasonal Alternation: Hemisphere tilted toward the Sun receives direct intense sunlight (Summer); hemisphere tilted away receives slanting rays (Winter).",
+            "Equinoxes & Solstices: Equinoxes (March/Sept) feature equal 12-hour day/night; Solstices (June/Dec) mark longest/shortest days."
+          ],
+          "real_world_examples": [
+            "Long summer days in June vs short winter days in December",
+            "Globe revolving around a central light bulb"
+          ]
+        }
       ]
     },
     {
-      "title": "Exam Synthesis",
-      "child_nodes": [
-        "Key Terminology",
-        "Formulas & Definitions",
-        "Revision Summary"
+      "branch_title": "Phenology & Agricultural Bio-Indicators",
+      "sub_branches": [
+        {
+          "sub_topic": "Koel Bird & Phenological Bio-Indicators",
+          "key_details": [
+            "Phenology Definition: The scientific study of periodic biological life-cycle events in response to seasonal climate variations.",
+            "Koel Bird Vocalization Signal: In Odisha, the distinctive mating calls of the Asian Koel (*Eudynamys scolopaceus*) signal coming monsoon rains.",
+            "Agricultural Timing: Farmers rely on the Koel's song as a natural bio-indicator to prepare fields for seasonal seed sowing.",
+            "Synchronized Nature: Plants and animals alter behaviors in precise synchronization with temperature, rainfall, and day length."
+          ],
+          "real_world_examples": [
+            "Koel bird singing in Odisha pre-monsoon heat, signaling farmers to sow seeds",
+            "Deciduous trees shedding leaves in autumn to conserve water"
+          ]
+        }
+      ]
+    },
+    {
+      "branch_title": "Ecosystem Monitoring: Seasons' Journal Framework",
+      "sub_branches": [
+        {
+          "sub_topic": "5-Theme Ecosystem Tracking in Seasons' Journals",
+          "key_details": [
+            "Theme 1: Plant Life Shifts (Leaf shedding, bud sprouting, flowering, fruiting cycles).",
+            "Theme 2: Avian & Animal Shifts (Migratory bird arrivals, insect populations, breeding behaviors).",
+            "Theme 3: Weather & Atmospheric Parameters (Temperature, humidity, wind direction, sunlight intensity).",
+            "Theme 4: Hydrological Status (Water levels in local ponds, drying streams, groundwater depth).",
+            "Theme 5: Human Lifestyle Adjustments (Seasonal cotton/wool clothing, seasonal fruits/vegetables, agricultural harvesting festivals)."
+          ],
+          "real_world_examples": [
+            "Students maintaining monthly Seasons' Journals tracking local schoolyard trees",
+            "Harvesting festivals celebrating seasonal shifts (Baisakhi, Pongal, Bihu)"
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "image_asset": {
+    "filename": "ch09_sundial_shadows.png",
+    "title": "Earth Diurnal Rotation & Sundial Gnomon Shadows",
+    "url": "/assets/images/ch09_sundial_shadows.png",
+    "hotspots": [
+      {
+        "id": "hs1",
+        "label": "15-Degree/Hour Diurnal Earth Rotation",
+        "x_percent": 25.0,
+        "y_percent": 25.0,
+        "w_percent": 20.0,
+        "h_percent": 15.0,
+        "tooltip_explanation": "Earth spins 360 degrees in 24 hours, causing solar position to shift 15 degrees per hour."
+      },
+      {
+        "id": "hs2",
+        "label": "Vertical Gnomon Shadow Length Dial",
+        "x_percent": 65.0,
+        "y_percent": 70.0,
+        "w_percent": 22.0,
+        "h_percent": 15.0,
+        "tooltip_explanation": "Shortest shadow occurs at solar noon when sun is directly overhead at local meridian."
+      }
+    ]
+  },
+  "video_overview": {
+    "title": "Rhythms of Nature",
+    "artifact_type": "Video Overview",
+    "status": "Ready",
+    "studio_location": "Studio Panel (Right Sidebar)",
+    "video_url": "",
+    "video_embed_link": "",
+    "topics_covered": "24-hour diurnal rotation, shadow gnomons, Odisha Koel bird monsoon bio-indicators, Seasons' Journals"
+  }
 }
