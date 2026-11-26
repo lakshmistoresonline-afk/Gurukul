@@ -1,10 +1,1965 @@
 {
-  "grade": "6",
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_1755a6b94b542c25",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_6",
+    "class_level": 6
+  },
   "subject": "Social",
-  "chapter_id": "G6-SOC-U05-C01",
-  "chapter_title": "Social Chapter 1",
-  "foundational_rules": [
-    "Rule 1: Always identify core variables in Social Chapter 1 before applying formulas.",
-    "Rule 2: Verify step-by-step calculations using inverse relationships."
-  ]
+  "artifact": {
+    "artifact_type": "foundational",
+    "source_file_name": "09-Foundational.json",
+    "source_relative_path": "Contents/Class 6/Social/Source Files/09-Foundational.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "0c093149d6de49e0833b1e15b5da5a1261740c561cc8c97b9dcf482482a8e66f",
+    "source_semantic_sha256": "17beb329ca4f2dfc3c4c21e53110085efeb910ac6b41a36db3a448bb5123eb6a",
+    "source_byte_length": 71149,
+    "source_encoding": "utf-8",
+    "source_field_count": 700,
+    "field_inventory": [
+      "$.subject",
+      "$.chapter",
+      "$.chapter.book_title",
+      "$.chapter.board",
+      "$.chapter.total_chapters",
+      "$.chapter.chapters_covered",
+      "$.content",
+      "$.content.terminology",
+      "$.content.terminology[0].term",
+      "$.content.terminology[0].meaning",
+      "$.content.terminology[0].source_context",
+      "$.content.terminology[1].term",
+      "$.content.terminology[1].meaning",
+      "$.content.terminology[1].source_context",
+      "$.content.terminology[2].term",
+      "$.content.terminology[2].meaning",
+      "$.content.terminology[2].source_context",
+      "$.content.terminology[3].term",
+      "$.content.terminology[3].meaning",
+      "$.content.terminology[3].source_context",
+      "$.content.terminology[4].term",
+      "$.content.terminology[4].meaning",
+      "$.content.terminology[4].source_context",
+      "$.content.terminology[5].term",
+      "$.content.terminology[5].meaning",
+      "$.content.terminology[5].source_context",
+      "$.content.terminology[6].term",
+      "$.content.terminology[6].meaning",
+      "$.content.terminology[6].source_context",
+      "$.content.terminology[7].term",
+      "$.content.terminology[7].meaning",
+      "$.content.terminology[7].source_context",
+      "$.content.terminology[8].term",
+      "$.content.terminology[8].meaning",
+      "$.content.terminology[8].source_context",
+      "$.content.terminology[9].term",
+      "$.content.terminology[9].meaning",
+      "$.content.terminology[9].source_context",
+      "$.content.terminology[10].term",
+      "$.content.terminology[10].meaning",
+      "$.content.terminology[10].source_context",
+      "$.content.terminology[11].term",
+      "$.content.terminology[11].meaning",
+      "$.content.terminology[11].source_context",
+      "$.content.terminology[12].term",
+      "$.content.terminology[12].meaning",
+      "$.content.terminology[12].source_context",
+      "$.content.terminology[13].term",
+      "$.content.terminology[13].meaning",
+      "$.content.terminology[13].source_context",
+      "$.content.terminology[14].term",
+      "$.content.terminology[14].meaning",
+      "$.content.terminology[14].source_context",
+      "$.content.terminology[15].term",
+      "$.content.terminology[15].meaning",
+      "$.content.terminology[15].source_context",
+      "$.content.terminology[16].term",
+      "$.content.terminology[16].meaning",
+      "$.content.terminology[16].source_context",
+      "$.content.terminology[17].term",
+      "$.content.terminology[17].meaning",
+      "$.content.terminology[17].source_context",
+      "$.content.terminology[18].term",
+      "$.content.terminology[18].meaning",
+      "$.content.terminology[18].source_context",
+      "$.content.terminology[19].term",
+      "$.content.terminology[19].meaning",
+      "$.content.terminology[19].source_context",
+      "$.content.terminology[20].term",
+      "$.content.terminology[20].meaning",
+      "$.content.terminology[20].source_context",
+      "$.content.terminology[21].term",
+      "$.content.terminology[21].meaning",
+      "$.content.terminology[21].source_context",
+      "$.content.terminology[22].term",
+      "$.content.terminology[22].meaning",
+      "$.content.terminology[22].source_context",
+      "$.content.terminology[23].term",
+      "$.content.terminology[23].meaning",
+      "$.content.terminology[23].source_context",
+      "$.content.terminology[24].term",
+      "$.content.terminology[24].meaning",
+      "$.content.terminology[24].source_context",
+      "$.content.terminology[25].term",
+      "$.content.terminology[25].meaning",
+      "$.content.terminology[25].source_context",
+      "$.content.terminology[26].term",
+      "$.content.terminology[26].meaning",
+      "$.content.terminology[26].source_context",
+      "$.content.terminology[27].term",
+      "$.content.terminology[27].meaning",
+      "$.content.terminology[27].source_context",
+      "$.content.terminology[28].term",
+      "$.content.terminology[28].meaning",
+      "$.content.terminology[28].source_context",
+      "$.content.terminology[29].term",
+      "$.content.terminology[29].meaning",
+      "$.content.terminology[29].source_context",
+      "$.content.terminology[30].term",
+      "$.content.terminology[30].meaning",
+      "$.content.terminology[30].source_context",
+      "$.content.terminology[31].term",
+      "$.content.terminology[31].meaning",
+      "$.content.terminology[31].source_context",
+      "$.content.terminology[32].term",
+      "$.content.terminology[32].meaning",
+      "$.content.terminology[32].source_context",
+      "$.content.terminology[33].term",
+      "$.content.terminology[33].meaning",
+      "$.content.terminology[33].source_context",
+      "$.content.terminology[34].term",
+      "$.content.terminology[34].meaning",
+      "$.content.terminology[34].source_context",
+      "$.content.terminology[35].term",
+      "$.content.terminology[35].meaning",
+      "$.content.terminology[35].source_context",
+      "$.content.terminology[36].term",
+      "$.content.terminology[36].meaning",
+      "$.content.terminology[36].source_context",
+      "$.content.definitions",
+      "$.content.definitions[0].concept_defined",
+      "$.content.definitions[0].definition",
+      "$.content.definitions[0].source_context",
+      "$.content.definitions[1].concept_defined",
+      "$.content.definitions[1].definition",
+      "$.content.definitions[1].source_context",
+      "$.content.definitions[2].concept_defined",
+      "$.content.definitions[2].definition",
+      "$.content.definitions[2].source_context",
+      "$.content.definitions[3].concept_defined",
+      "$.content.definitions[3].definition",
+      "$.content.definitions[3].source_context",
+      "$.content.definitions[4].concept_defined",
+      "$.content.definitions[4].definition",
+      "$.content.definitions[4].source_context",
+      "$.content.definitions[5].concept_defined",
+      "$.content.definitions[5].definition",
+      "$.content.definitions[5].source_context",
+      "$.content.definitions[6].concept_defined",
+      "$.content.definitions[6].definition",
+      "$.content.definitions[6].source_context",
+      "$.content.definitions[7].concept_defined",
+      "$.content.definitions[7].definition",
+      "$.content.definitions[7].source_context",
+      "$.content.definitions[8].concept_defined",
+      "$.content.definitions[8].definition",
+      "$.content.definitions[8].source_context",
+      "$.content.definitions[9].concept_defined",
+      "$.content.definitions[9].definition",
+      "$.content.definitions[9].source_context",
+      "$.content.definitions[10].concept_defined",
+      "$.content.definitions[10].definition",
+      "$.content.definitions[10].source_context",
+      "$.content.definitions[11].concept_defined",
+      "$.content.definitions[11].definition",
+      "$.content.definitions[11].source_context",
+      "$.content.definitions[12].concept_defined",
+      "$.content.definitions[12].definition",
+      "$.content.definitions[12].source_context",
+      "$.content.definitions[13].concept_defined",
+      "$.content.definitions[13].definition",
+      "$.content.definitions[13].source_context",
+      "$.content.definitions[14].concept_defined",
+      "$.content.definitions[14].definition",
+      "$.content.definitions[14].source_context",
+      "$.content.definitions[15].concept_defined",
+      "$.content.definitions[15].definition",
+      "$.content.definitions[15].source_context",
+      "$.content.definitions[16].concept_defined",
+      "$.content.definitions[16].definition",
+      "$.content.definitions[16].source_context",
+      "$.content.definitions[17].concept_defined",
+      "$.content.definitions[17].definition",
+      "$.content.definitions[17].source_context",
+      "$.content.definitions[18].concept_defined",
+      "$.content.definitions[18].definition",
+      "$.content.definitions[18].source_context",
+      "$.content.definitions[19].concept_defined",
+      "$.content.definitions[19].definition",
+      "$.content.definitions[19].source_context",
+      "$.content.definitions[20].concept_defined",
+      "$.content.definitions[20].definition",
+      "$.content.definitions[20].source_context",
+      "$.content.definitions[21].concept_defined",
+      "$.content.definitions[21].definition",
+      "$.content.definitions[21].source_context",
+      "$.content.concepts",
+      "$.content.concepts[0].title",
+      "$.content.concepts[0].explanation",
+      "$.content.concepts[0].source_context",
+      "$.content.concepts[1].title",
+      "$.content.concepts[1].explanation",
+      "$.content.concepts[1].source_context",
+      "$.content.concepts[2].title",
+      "$.content.concepts[2].explanation",
+      "$.content.concepts[2].source_context",
+      "$.content.concepts[3].title",
+      "$.content.concepts[3].explanation",
+      "$.content.concepts[3].source_context",
+      "$.content.concepts[4].title",
+      "$.content.concepts[4].explanation",
+      "$.content.concepts[4].source_context",
+      "$.content.concepts[5].title",
+      "$.content.concepts[5].explanation",
+      "$.content.concepts[5].source_context",
+      "$.content.concepts[6].title",
+      "$.content.concepts[6].explanation",
+      "$.content.concepts[6].source_context",
+      "$.content.concepts[7].title",
+      "$.content.concepts[7].explanation",
+      "$.content.concepts[7].source_context",
+      "$.content.concepts[8].title",
+      "$.content.concepts[8].explanation",
+      "$.content.concepts[8].source_context",
+      "$.content.concepts[9].title",
+      "$.content.concepts[9].explanation",
+      "$.content.concepts[9].source_context",
+      "$.content.concepts[10].title",
+      "$.content.concepts[10].explanation",
+      "$.content.concepts[10].source_context",
+      "$.content.concepts[11].title",
+      "$.content.concepts[11].explanation",
+      "$.content.concepts[11].source_context",
+      "$.content.concepts[12].title",
+      "$.content.concepts[12].explanation",
+      "$.content.concepts[12].source_context",
+      "$.content.concepts[13].title",
+      "$.content.concepts[13].explanation",
+      "$.content.concepts[13].source_context",
+      "$.content.concepts[14].title",
+      "$.content.concepts[14].explanation",
+      "$.content.concepts[14].source_context",
+      "$.content.concepts[15].title",
+      "$.content.concepts[15].explanation",
+      "$.content.concepts[15].source_context",
+      "$.content.concepts[16].title",
+      "$.content.concepts[16].explanation",
+      "$.content.concepts[16].source_context",
+      "$.content.concepts[17].title",
+      "$.content.concepts[17].explanation",
+      "$.content.concepts[17].source_context",
+      "$.content.concepts[18].title",
+      "$.content.concepts[18].explanation",
+      "$.content.concepts[18].source_context",
+      "$.content.concepts[19].title",
+      "$.content.concepts[19].explanation",
+      "$.content.concepts[19].source_context",
+      "$.content.concepts[20].title",
+      "$.content.concepts[20].explanation",
+      "$.content.concepts[20].source_context",
+      "$.content.concepts[21].title",
+      "$.content.concepts[21].explanation",
+      "$.content.concepts[21].source_context",
+      "$.content.concepts[22].title",
+      "$.content.concepts[22].explanation",
+      "$.content.concepts[22].source_context",
+      "$.content.concepts[23].title",
+      "$.content.concepts[23].explanation",
+      "$.content.concepts[23].source_context",
+      "$.content.concepts[24].title",
+      "$.content.concepts[24].explanation",
+      "$.content.concepts[24].source_context",
+      "$.content.concepts[25].title",
+      "$.content.concepts[25].explanation",
+      "$.content.concepts[25].source_context",
+      "$.content.concepts[26].title",
+      "$.content.concepts[26].explanation",
+      "$.content.concepts[26].source_context",
+      "$.content.facts",
+      "$.content.facts[0].statement",
+      "$.content.facts[0].source_context",
+      "$.content.facts[1].statement",
+      "$.content.facts[1].source_context",
+      "$.content.facts[2].statement",
+      "$.content.facts[2].source_context",
+      "$.content.facts[3].statement",
+      "$.content.facts[3].source_context",
+      "$.content.facts[4].statement",
+      "$.content.facts[4].source_context",
+      "$.content.facts[5].statement",
+      "$.content.facts[5].source_context",
+      "$.content.facts[6].statement",
+      "$.content.facts[6].source_context",
+      "$.content.facts[7].statement",
+      "$.content.facts[7].source_context",
+      "$.content.facts[8].statement",
+      "$.content.facts[8].source_context",
+      "$.content.facts[9].statement",
+      "$.content.facts[9].source_context",
+      "$.content.facts[10].statement",
+      "$.content.facts[10].source_context",
+      "$.content.facts[11].statement",
+      "$.content.facts[11].source_context",
+      "$.content.facts[12].statement",
+      "$.content.facts[12].source_context",
+      "$.content.facts[13].statement",
+      "$.content.facts[13].source_context",
+      "$.content.facts[14].statement",
+      "$.content.facts[14].source_context",
+      "$.content.facts[15].statement",
+      "$.content.facts[15].source_context",
+      "$.content.facts[16].statement",
+      "$.content.facts[16].source_context",
+      "$.content.facts[17].statement",
+      "$.content.facts[17].source_context",
+      "$.content.facts[18].statement",
+      "$.content.facts[18].source_context",
+      "$.content.facts[19].statement",
+      "$.content.facts[19].source_context",
+      "$.content.facts[20].statement",
+      "$.content.facts[20].source_context",
+      "$.content.people",
+      "$.content.people[0].name",
+      "$.content.people[0].role_or_contribution",
+      "$.content.people[0].source_context",
+      "$.content.people[1].name",
+      "$.content.people[1].role_or_contribution",
+      "$.content.people[1].source_context",
+      "$.content.people[2].name",
+      "$.content.people[2].role_or_contribution",
+      "$.content.people[2].source_context",
+      "$.content.people[3].name",
+      "$.content.people[3].role_or_contribution",
+      "$.content.people[3].source_context",
+      "$.content.people[4].name",
+      "$.content.people[4].role_or_contribution",
+      "$.content.people[4].source_context",
+      "$.content.people[5].name",
+      "$.content.people[5].role_or_contribution",
+      "$.content.people[5].source_context",
+      "$.content.people[6].name",
+      "$.content.people[6].role_or_contribution",
+      "$.content.people[6].source_context",
+      "$.content.people[7].name",
+      "$.content.people[7].role_or_contribution",
+      "$.content.people[7].source_context",
+      "$.content.people[8].name",
+      "$.content.people[8].role_or_contribution",
+      "$.content.people[8].source_context",
+      "$.content.people[9].name",
+      "$.content.people[9].role_or_contribution",
+      "$.content.people[9].source_context",
+      "$.content.people[10].name",
+      "$.content.people[10].role_or_contribution",
+      "$.content.people[10].source_context",
+      "$.content.people[11].name",
+      "$.content.people[11].role_or_contribution",
+      "$.content.people[11].source_context",
+      "$.content.people[12].name",
+      "$.content.people[12].role_or_contribution",
+      "$.content.people[12].source_context",
+      "$.content.people[13].name",
+      "$.content.people[13].role_or_contribution",
+      "$.content.people[13].source_context",
+      "$.content.people[14].name",
+      "$.content.people[14].role_or_contribution",
+      "$.content.people[14].source_context",
+      "$.content.people[15].name",
+      "$.content.people[15].role_or_contribution",
+      "$.content.people[15].source_context",
+      "$.content.places",
+      "$.content.places[0].name",
+      "$.content.places[0].significance",
+      "$.content.places[0].source_context",
+      "$.content.places[1].name",
+      "$.content.places[1].significance",
+      "$.content.places[1].source_context",
+      "$.content.places[2].name",
+      "$.content.places[2].significance",
+      "$.content.places[2].source_context",
+      "$.content.places[3].name",
+      "$.content.places[3].significance",
+      "$.content.places[3].source_context",
+      "$.content.places[4].name",
+      "$.content.places[4].significance",
+      "$.content.places[4].source_context",
+      "$.content.places[5].name",
+      "$.content.places[5].significance",
+      "$.content.places[5].source_context",
+      "$.content.places[6].name",
+      "$.content.places[6].significance",
+      "$.content.places[6].source_context",
+      "$.content.places[7].name",
+      "$.content.places[7].significance",
+      "$.content.places[7].source_context",
+      "$.content.places[8].name",
+      "$.content.places[8].significance",
+      "$.content.places[8].source_context",
+      "$.content.places[9].name",
+      "$.content.places[9].significance",
+      "$.content.places[9].source_context",
+      "$.content.places[10].name",
+      "$.content.places[10].significance",
+      "$.content.places[10].source_context",
+      "$.content.places[11].name",
+      "$.content.places[11].significance",
+      "$.content.places[11].source_context",
+      "$.content.places[12].name",
+      "$.content.places[12].significance",
+      "$.content.places[12].source_context",
+      "$.content.dates_events",
+      "$.content.dates_events[0].event",
+      "$.content.dates_events[0].timeframe_or_date",
+      "$.content.dates_events[0].historical_significance",
+      "$.content.dates_events[0].source_context",
+      "$.content.dates_events[1].event",
+      "$.content.dates_events[1].timeframe_or_date",
+      "$.content.dates_events[1].historical_significance",
+      "$.content.dates_events[1].source_context",
+      "$.content.dates_events[2].event",
+      "$.content.dates_events[2].timeframe_or_date",
+      "$.content.dates_events[2].historical_significance",
+      "$.content.dates_events[2].source_context",
+      "$.content.dates_events[3].event",
+      "$.content.dates_events[3].timeframe_or_date",
+      "$.content.dates_events[3].historical_significance",
+      "$.content.dates_events[3].source_context",
+      "$.content.dates_events[4].event",
+      "$.content.dates_events[4].timeframe_or_date",
+      "$.content.dates_events[4].historical_significance",
+      "$.content.dates_events[4].source_context",
+      "$.content.dates_events[5].event",
+      "$.content.dates_events[5].timeframe_or_date",
+      "$.content.dates_events[5].historical_significance",
+      "$.content.dates_events[5].source_context",
+      "$.content.dates_events[6].event",
+      "$.content.dates_events[6].timeframe_or_date",
+      "$.content.dates_events[6].historical_significance",
+      "$.content.dates_events[6].source_context",
+      "$.content.dates_events[7].event",
+      "$.content.dates_events[7].timeframe_or_date",
+      "$.content.dates_events[7].historical_significance",
+      "$.content.dates_events[7].source_context",
+      "$.content.institutions",
+      "$.content.institutions[0].name",
+      "$.content.institutions[0].type",
+      "$.content.institutions[0].function",
+      "$.content.institutions[0].source_context",
+      "$.content.institutions[1].name",
+      "$.content.institutions[1].type",
+      "$.content.institutions[1].function",
+      "$.content.institutions[1].source_context",
+      "$.content.institutions[2].name",
+      "$.content.institutions[2].type",
+      "$.content.institutions[2].function",
+      "$.content.institutions[2].source_context",
+      "$.content.institutions[3].name",
+      "$.content.institutions[3].type",
+      "$.content.institutions[3].function",
+      "$.content.institutions[3].source_context",
+      "$.content.institutions[4].name",
+      "$.content.institutions[4].type",
+      "$.content.institutions[4].function",
+      "$.content.institutions[4].source_context",
+      "$.content.institutions[5].name",
+      "$.content.institutions[5].type",
+      "$.content.institutions[5].function",
+      "$.content.institutions[5].source_context",
+      "$.content.institutions[6].name",
+      "$.content.institutions[6].type",
+      "$.content.institutions[6].function",
+      "$.content.institutions[6].source_context",
+      "$.content.institutions[7].name",
+      "$.content.institutions[7].type",
+      "$.content.institutions[7].function",
+      "$.content.institutions[7].source_context",
+      "$.content.institutions[8].name",
+      "$.content.institutions[8].type",
+      "$.content.institutions[8].function",
+      "$.content.institutions[8].source_context",
+      "$.content.institutions[9].name",
+      "$.content.institutions[9].type",
+      "$.content.institutions[9].function",
+      "$.content.institutions[9].source_context",
+      "$.content.institutions[10].name",
+      "$.content.institutions[10].type",
+      "$.content.institutions[10].function",
+      "$.content.institutions[10].source_context",
+      "$.content.institutions[11].name",
+      "$.content.institutions[11].type",
+      "$.content.institutions[11].function",
+      "$.content.institutions[11].source_context",
+      "$.content.laws_systems",
+      "$.content.laws_systems[0].system_or_law",
+      "$.content.laws_systems[0].description",
+      "$.content.laws_systems[0].source_context",
+      "$.content.laws_systems[1].system_or_law",
+      "$.content.laws_systems[1].description",
+      "$.content.laws_systems[1].source_context",
+      "$.content.laws_systems[2].system_or_law",
+      "$.content.laws_systems[2].description",
+      "$.content.laws_systems[2].source_context",
+      "$.content.laws_systems[3].system_or_law",
+      "$.content.laws_systems[3].description",
+      "$.content.laws_systems[3].source_context",
+      "$.content.laws_systems[4].system_or_law",
+      "$.content.laws_systems[4].description",
+      "$.content.laws_systems[4].source_context",
+      "$.content.laws_systems[5].system_or_law",
+      "$.content.laws_systems[5].description",
+      "$.content.laws_systems[5].source_context",
+      "$.content.laws_systems[6].system_or_law",
+      "$.content.laws_systems[6].description",
+      "$.content.laws_systems[6].source_context",
+      "$.content.chronology",
+      "$.content.chronology[0].sequence_title",
+      "$.content.chronology[0].stages",
+      "$.content.chronology[0].source_context",
+      "$.content.chronology[1].sequence_title",
+      "$.content.chronology[1].stages",
+      "$.content.chronology[1].source_context",
+      "$.content.chronology[2].sequence_title",
+      "$.content.chronology[2].stages",
+      "$.content.chronology[2].source_context",
+      "$.content.chronology[3].sequence_title",
+      "$.content.chronology[3].stages",
+      "$.content.chronology[3].source_context",
+      "$.content.chronology[4].sequence_title",
+      "$.content.chronology[4].stages",
+      "$.content.chronology[4].source_context",
+      "$.content.cause_effect",
+      "$.content.cause_effect[0].cause",
+      "$.content.cause_effect[0].effect",
+      "$.content.cause_effect[0].source_context",
+      "$.content.cause_effect[1].cause",
+      "$.content.cause_effect[1].effect",
+      "$.content.cause_effect[1].source_context",
+      "$.content.cause_effect[2].cause",
+      "$.content.cause_effect[2].effect",
+      "$.content.cause_effect[2].source_context",
+      "$.content.cause_effect[3].cause",
+      "$.content.cause_effect[3].effect",
+      "$.content.cause_effect[3].source_context",
+      "$.content.cause_effect[4].cause",
+      "$.content.cause_effect[4].effect",
+      "$.content.cause_effect[4].source_context",
+      "$.content.cause_effect[5].cause",
+      "$.content.cause_effect[5].effect",
+      "$.content.cause_effect[5].source_context",
+      "$.content.cause_effect[6].cause",
+      "$.content.cause_effect[6].effect",
+      "$.content.cause_effect[6].source_context",
+      "$.content.cause_effect[7].cause",
+      "$.content.cause_effect[7].effect",
+      "$.content.cause_effect[7].source_context",
+      "$.content.cause_effect[8].cause",
+      "$.content.cause_effect[8].effect",
+      "$.content.cause_effect[8].source_context",
+      "$.content.cause_effect[9].cause",
+      "$.content.cause_effect[9].effect",
+      "$.content.cause_effect[9].source_context",
+      "$.content.classifications",
+      "$.content.classifications[0].category",
+      "$.content.classifications[0].items",
+      "$.content.classifications[0].source_context",
+      "$.content.classifications[1].category",
+      "$.content.classifications[1].items",
+      "$.content.classifications[1].source_context",
+      "$.content.classifications[2].category",
+      "$.content.classifications[2].items",
+      "$.content.classifications[2].source_context",
+      "$.content.classifications[3].category",
+      "$.content.classifications[3].items",
+      "$.content.classifications[3].source_context",
+      "$.content.classifications[4].category",
+      "$.content.classifications[4].items",
+      "$.content.classifications[4].source_context",
+      "$.content.classifications[5].category",
+      "$.content.classifications[5].items",
+      "$.content.classifications[5].source_context",
+      "$.content.classifications[6].category",
+      "$.content.classifications[6].items",
+      "$.content.classifications[6].source_context",
+      "$.content.classifications[7].category",
+      "$.content.classifications[7].items",
+      "$.content.classifications[7].source_context",
+      "$.content.geographical_features",
+      "$.content.geographical_features[0].feature",
+      "$.content.geographical_features[0].type",
+      "$.content.geographical_features[0].description",
+      "$.content.geographical_features[0].source_context",
+      "$.content.geographical_features[1].feature",
+      "$.content.geographical_features[1].type",
+      "$.content.geographical_features[1].description",
+      "$.content.geographical_features[1].source_context",
+      "$.content.geographical_features[2].feature",
+      "$.content.geographical_features[2].type",
+      "$.content.geographical_features[2].description",
+      "$.content.geographical_features[2].source_context",
+      "$.content.geographical_features[3].feature",
+      "$.content.geographical_features[3].type",
+      "$.content.geographical_features[3].description",
+      "$.content.geographical_features[3].source_context",
+      "$.content.geographical_features[4].feature",
+      "$.content.geographical_features[4].type",
+      "$.content.geographical_features[4].description",
+      "$.content.geographical_features[4].source_context",
+      "$.content.geographical_features[5].feature",
+      "$.content.geographical_features[5].type",
+      "$.content.geographical_features[5].description",
+      "$.content.geographical_features[5].source_context",
+      "$.content.geographical_features[6].feature",
+      "$.content.geographical_features[6].type",
+      "$.content.geographical_features[6].description",
+      "$.content.geographical_features[6].source_context",
+      "$.content.geographical_features[7].feature",
+      "$.content.geographical_features[7].type",
+      "$.content.geographical_features[7].description",
+      "$.content.geographical_features[7].source_context",
+      "$.content.historical_concepts",
+      "$.content.historical_concepts[0].concept",
+      "$.content.historical_concepts[0].description",
+      "$.content.historical_concepts[0].source_context",
+      "$.content.historical_concepts[1].concept",
+      "$.content.historical_concepts[1].description",
+      "$.content.historical_concepts[1].source_context",
+      "$.content.historical_concepts[2].concept",
+      "$.content.historical_concepts[2].description",
+      "$.content.historical_concepts[2].source_context",
+      "$.content.historical_concepts[3].concept",
+      "$.content.historical_concepts[3].description",
+      "$.content.historical_concepts[3].source_context",
+      "$.content.historical_concepts[4].concept",
+      "$.content.historical_concepts[4].description",
+      "$.content.historical_concepts[4].source_context",
+      "$.content.historical_concepts[5].concept",
+      "$.content.historical_concepts[5].description",
+      "$.content.historical_concepts[5].source_context",
+      "$.content.historical_concepts[6].concept",
+      "$.content.historical_concepts[6].description",
+      "$.content.historical_concepts[6].source_context",
+      "$.content.civic_concepts",
+      "$.content.civic_concepts[0].concept",
+      "$.content.civic_concepts[0].description",
+      "$.content.civic_concepts[0].source_context",
+      "$.content.civic_concepts[1].concept",
+      "$.content.civic_concepts[1].description",
+      "$.content.civic_concepts[1].source_context",
+      "$.content.civic_concepts[2].concept",
+      "$.content.civic_concepts[2].description",
+      "$.content.civic_concepts[2].source_context",
+      "$.content.civic_concepts[3].concept",
+      "$.content.civic_concepts[3].description",
+      "$.content.civic_concepts[3].source_context",
+      "$.content.civic_concepts[4].concept",
+      "$.content.civic_concepts[4].description",
+      "$.content.civic_concepts[4].source_context",
+      "$.content.civic_concepts[5].concept",
+      "$.content.civic_concepts[5].description",
+      "$.content.civic_concepts[5].source_context",
+      "$.content.civic_concepts[6].concept",
+      "$.content.civic_concepts[6].description",
+      "$.content.civic_concepts[6].source_context",
+      "$.content.civic_concepts[7].concept",
+      "$.content.civic_concepts[7].description",
+      "$.content.civic_concepts[7].source_context",
+      "$.content.economic_concepts",
+      "$.content.economic_concepts[0].concept",
+      "$.content.economic_concepts[0].description",
+      "$.content.economic_concepts[0].source_context",
+      "$.content.economic_concepts[1].concept",
+      "$.content.economic_concepts[1].description",
+      "$.content.economic_concepts[1].source_context",
+      "$.content.economic_concepts[2].concept",
+      "$.content.economic_concepts[2].description",
+      "$.content.economic_concepts[2].source_context",
+      "$.content.economic_concepts[3].concept",
+      "$.content.economic_concepts[3].description",
+      "$.content.economic_concepts[3].source_context",
+      "$.content.economic_concepts[4].concept",
+      "$.content.economic_concepts[4].description",
+      "$.content.economic_concepts[4].source_context",
+      "$.content.economic_concepts[5].concept",
+      "$.content.economic_concepts[5].description",
+      "$.content.economic_concepts[5].source_context",
+      "$.content.economic_concepts[6].concept",
+      "$.content.economic_concepts[6].description",
+      "$.content.economic_concepts[6].source_context",
+      "$.statistics",
+      "$.statistics.total_terminology",
+      "$.statistics.total_definitions",
+      "$.statistics.total_concepts",
+      "$.statistics.total_facts",
+      "$.statistics.total_people",
+      "$.statistics.total_places",
+      "$.statistics.total_dates_events",
+      "$.statistics.total_institutions",
+      "$.statistics.total_laws_systems",
+      "$.statistics.total_chronology",
+      "$.statistics.total_cause_effect",
+      "$.statistics.total_classifications",
+      "$.statistics.total_geographical_features",
+      "$.statistics.total_historical_concepts",
+      "$.statistics.total_civic_concepts",
+      "$.statistics.total_economic_concepts",
+      "$.statistics.grand_total_entries",
+      "$.validation",
+      "$.validation.status",
+      "$.validation.duplicates_removed",
+      "$.validation.ncert_alignment_verified"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [],
+    "chapter_candidate_count": 0,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "SOCIAL_SCIENCE",
+    "chapter": {
+      "book_title": "Exploring Society: India and Beyond (Class 6 Social Science)",
+      "board": "NCERT / CBSE Framework",
+      "total_chapters": 14,
+      "chapters_covered": [
+        "Chapter 1: Locating Places on the Earth (fees101.pdf)",
+        "Chapter 2: Oceans and Continents (fees102.pdf)",
+        "Chapter 3: Landforms and Life (fees103.pdf)",
+        "Chapter 4: Timeline and Sources of History (fees104.pdf)",
+        "Chapter 5: India, That Is Bharat (fees105.pdf)",
+        "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)",
+        "Chapter 7: India's Cultural Roots (fees107.pdf)",
+        "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)",
+        "Chapter 9: Family and Community (fees109.pdf)",
+        "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)",
+        "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)",
+        "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)",
+        "Chapter 13: The Value of Work (fees113.pdf)",
+        "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+      ]
+    },
+    "content": {
+      "terminology": [
+        {
+          "term": "Atlas",
+          "meaning": "A bound collection of maps providing detailed geographical representations of various regions.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Cardinal Directions",
+          "meaning": "The four main directions used for spatial orientation: North (N), South (S), East (E), and West (W).",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Intermediate Directions",
+          "meaning": "Directions located midway between cardinal points: North-East (NE), South-East (SE), South-West (SW), and North-West (NW).",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Map Scale",
+          "meaning": "The ratio converting real-world ground distance into proportional map paper dimensions.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Parallels of Latitude",
+          "meaning": "Horizontal imaginary circles parallel to the Equator, measuring angular distance North or South.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Meridians of Longitude",
+          "meaning": "Vertical imaginary half-circles running from pole to pole, measuring angular distance East or West from the Prime Meridian.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Eurasia",
+          "meaning": "The continuous geological landmass combining Europe and Asia without a surrounding ocean barrier.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "term": "Island",
+          "meaning": "A body of land entirely surrounded by water on all sides, such as Greenland or Sri Lanka.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "term": "Tsunami",
+          "meaning": "A series of immense ocean waves generated by underwater earthquakes, volcanic eruptions, or landslides.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "term": "Alluvial Plain",
+          "meaning": "A flat, fertile landform created by nutrient-rich silt and sediment deposited by flowing rivers over millennia.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "term": "Tiṇai",
+          "meaning": "An ancient Tamil Sangam literary classification mapping ecological landscapes to human emotions and livelihoods.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "term": "Radiocarbon Dating",
+          "meaning": "A scientific method estimating the age of organic remains by measuring Carbon-14 radioactive decay.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "term": "Stratigraphy",
+          "meaning": "The geological and archaeological study of soil and rock layers to determine relative chronological sequences.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "term": "Epigraphy",
+          "meaning": "The scientific study and decipherment of ancient inscriptions carved on stone, metal, or clay surfaces.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "term": "Sapta Sindhava",
+          "meaning": "The Vedic geographical term meaning 'land of seven rivers' referring to the northwestern Indian subcontinent.",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "term": "Jambudvīpa",
+          "meaning": "An ancient Indian textual name for the southern continent, named after the native Jambu (jamun) tree.",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "term": "Citadel",
+          "meaning": "The elevated, fortified upper section of a Harappan city housing public buildings and administrative structures.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "term": "Ahiṃsā",
+          "meaning": "The philosophical principle of absolute non-violence toward all living beings, central to Jainism and Buddhism.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "term": "Unity in Diversity",
+          "meaning": "A phrase coined by Jawaharlal Nehru describing India's ability to maintain national cohesion amidst cultural plurality.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        },
+        {
+          "term": "Halma",
+          "meaning": "A traditional collective self-help practice among the Bhil tribe of Madhya Pradesh to assist community members in need.",
+          "source_context": "Chapter 9: Family and Community (fees109.pdf)"
+        },
+        {
+          "term": "Separation of Powers",
+          "meaning": "The constitutional division of authority among the Legislature, Executive, and Judiciary to prevent power abuse.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "term": "Gram Sabha",
+          "meaning": "The foundational body of direct rural democracy consisting of all registered adult voters in a village.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "term": "Ward Councillor",
+          "meaning": "An elected political representative chosen by urban voters to advocate for ward-level civic needs in municipal assemblies.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "term": "Value Addition",
+          "meaning": "The process of increasing the monetary and functional worth of raw materials through human skill, labor, and technology.",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "term": "Cooperative",
+          "meaning": "A voluntary enterprise democratically owned and managed by producers to process and sell goods without middlemen.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "term": "Equator",
+          "meaning": "The primary baseline parallel of latitude designated as 0° that bisects Earth into Northern and Southern Hemispheres.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Prime Meridian",
+          "meaning": "The internationally agreed baseline meridian of 0° longitude passing through Greenwich, England.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "term": "Hydrosphere",
+          "meaning": "The combined physical body of water in all states (liquid, solid ice, vapor) covering ~71% of Earth's surface.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "term": "Alluvial Silt",
+          "meaning": "Fine, mineral-rich soil particles transported down mountain valleys and deposited by overflowing river systems onto fertile plains.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "term": "Regur Soil",
+          "meaning": "Fertile black cotton soil derived from weathered basaltic lava flows, prevalent on the Deccan Plateau.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "term": "Numismatics",
+          "meaning": "The specialized study and analysis of ancient coins, seals, and monetary weights to reconstruct economic history.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "term": "Steatite Seals",
+          "meaning": "Carved soft-stone seals featuring animal motifs and undeciphered Harappan script used for stamping trade goods.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "term": "Mokṣha",
+          "meaning": "The concept of spiritual liberation from the cycle of rebirth and suffering in Indian philosophical traditions.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "term": "Swabhava",
+          "meaning": "Sri Aurobindo's philosophical term for the inherent, unique inner nature or character of a person or region.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        },
+        {
+          "term": "Swadharma",
+          "meaning": "The ethical life duty and creative action that flows naturally from an individual's or community's Swabhava.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        },
+        {
+          "term": "Rule of Law",
+          "meaning": "The constitutional principle that laws apply equally to all citizens and leaders, prohibiting arbitrary exercise of power.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "term": "Universal Adult Suffrage",
+          "meaning": "The democratic constitutional right granting every adult citizen (18+) equal voting power in elections.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        }
+      ],
+      "definitions": [
+        {
+          "concept_defined": "Governance",
+          "definition": "The organized process of establishing rules, taking collective decisions, and managing public life within a society.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "concept_defined": "Government",
+          "definition": "The formal system or institution authorized to formulate, enforce, and interpret laws for a state or nation.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "concept_defined": "Laws",
+          "definition": "Formal, legally binding rules created by legislative bodies that govern society and maintain public order.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "concept_defined": "Democracy",
+          "definition": "A political system where sovereign power rests with the citizens, exercised directly or through elected representatives.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "concept_defined": "Economic Activity",
+          "definition": "Any human effort performed to produce, process, or deliver goods and services in exchange for money or money's worth.",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "concept_defined": "Non-Economic Activity",
+          "definition": "An activity performed out of affection, gratitude, care, or social duty without generating monetary compensation.",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "concept_defined": "Sevā",
+          "definition": "Selfless service carried out for the welfare of others and the community without expecting personal or financial reward.",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "concept_defined": "Primary Sector",
+          "definition": "The economic sector comprising activities that directly extract raw materials and natural resources from the environment.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "concept_defined": "Secondary Sector",
+          "definition": "The economic sector responsible for manufacturing, construction, and processing raw materials into finished goods.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "concept_defined": "Tertiary Sector",
+          "definition": "The service sector providing administrative, transport, commercial, financial, and logistics support to other sectors.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "concept_defined": "Panchayati Raj",
+          "definition": "The three-tier system of local self-government in rural India operating at village, block, and district levels.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "concept_defined": "Municipal Corporation",
+          "definition": "The urban local government body governing large metropolitan cities with high populations and major revenue needs.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "concept_defined": "Physical Map",
+          "definition": "A map designed primarily to depict natural physical landforms and bodies of water such as mountains, plateaus, plains, rivers, and oceans.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "concept_defined": "Thematic Map",
+          "definition": "A specialized map that focuses on representing specific data distributions, such as annual rainfall, road networks, or forest density.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "concept_defined": "Archipelago",
+          "definition": "A geographic cluster, chain, or group of islands scattered across a sea or ocean, such as Lakshadweep or the Andaman & Nicobar Islands.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "concept_defined": "Tsunami",
+          "definition": "A catastrophic series of high-speed ocean shockwaves generated by underwater subduction-zone earthquakes, landslides, or volcanic eruptions.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "concept_defined": "Plateau",
+          "definition": "An elevated flatland rising abruptly above surrounding terrain, typically possessing steep slopes and rich mineral or basaltic soil deposits.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "concept_defined": "Artifact",
+          "definition": "Any physical object manufactured, modified, or used by humans in past societies, recovered through systematic archaeological excavation.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "concept_defined": "Radiocarbon Dating (C-14)",
+          "definition": "A nuclear decay measuring technique calculating the exact age of dead organic materials up to ~50,000 years based on Carbon-14 isotope decay.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "concept_defined": "Civilisation",
+          "definition": "An advanced stage of human social organization characterized by planned cities, governance, specialized labor, writing, and long-distance trade.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "concept_defined": "Upaniṣhads",
+          "definition": "Ancient Sanskrit philosophical texts composed as dialogues investigating the nature of reality (Brahman), the self (Ātman), and moral cause (Karma).",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "concept_defined": "Separation of Powers",
+          "definition": "The constitutional doctrine dividing governmental functions into Legislature, Executive, and Judiciary to prevent concentration of power.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        }
+      ],
+      "concepts": [
+        {
+          "title": "Grid Coordinates and Location Pinpointing",
+          "explanation": "By combining horizontal parallels of latitude and vertical meridians of longitude, every position on Earth can be pinpointed using exact angular coordinates.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "title": "Solar Time and Standard Meridians",
+          "explanation": "Earth rotates 15° longitude per hour (1° every 4 minutes). To prevent temporal confusion, nations establish a central Standard Meridian (e.g. 82.5° E for IST).",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "title": "Oceans as Global Life Support Systems",
+          "explanation": "Oceans cover ~71% of Earth, drive the water cycle via evaporation and rainfall, and produce over 50% of atmospheric oxygen through marine phytoplankton.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "title": "Geological Formation of Landforms",
+          "explanation": "Internal tectonic forces uplift land to form mountains and plateaus, while external weathering and fluvial erosion carve valleys and deposit fertile alluvial plains.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "title": "Deciphering the Past through Primary Sources",
+          "explanation": "Historians and archaeologists reconstruct ancient life by combining physical artifacts (archaeology), organic remains (paleontology), and inscriptions (epigraphy).",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "title": "Civilisational Continuity of India's Identity",
+          "explanation": "The names Sapta Sindhava, Jambudvīpa, Bhārata, and India reflect geographic, cultural, and political evolutions synthesized in Article 1 of the Indian Constitution.",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "title": "Urban Planning Principles of Harappa",
+          "explanation": "Harappan cities demonstrated advanced urban planning: grid-pattern streets, sub-surface covered brick drainage systems, standardized baked bricks, and public baths.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "title": "Ethical Frameworks of Ancient Philosophies",
+          "explanation": "Vedic Upaniṣhads, Buddhism, and Jainism emphasized ethical living, self-inquiry, interconnectedness, and Ahiṃsā (non-violence) as core spiritual values.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "title": "Cultural Synthesis in Diversity",
+          "explanation": "India's regional linguistic, culinary, and attire differences share deep underlying unity through epic narratives (Rāmāyaṇa, Pañchatantra) and agricultural festivals.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        },
+        {
+          "title": "Community Interdependence and Social Care",
+          "explanation": "Families and local communities rely on emotional bonding, shared household labor, generational wisdom, and traditional voluntary practices like Halma.",
+          "source_context": "Chapter 9: Family and Community (fees109.pdf)"
+        },
+        {
+          "title": "Checks and Balances in Governance",
+          "explanation": "The constitutional distribution of authority among Legislature, Executive, and Judiciary prevents any single branch from exercising unchecked power.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "title": "Bottom-Up Rural Decentralization",
+          "explanation": "Panchayati Raj delegates power to local villagers through the Gram Sabha, ensuring direct democratic participation and responsive development.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "title": "Ward-Level Urban Administration",
+          "explanation": "Dividing cities into administrative wards enables elected Ward Councillors and appointed Municipal Commissioners to efficiently manage urban services.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "title": "Transformation of Resources via Skill",
+          "explanation": "Economic value addition occurs when human skill, labor, and machinery transform raw materials (e.g. ₹600 wood) into functional products (e.g. ₹1,000 chair).",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "title": "Interdependence of Economic Sectors",
+          "explanation": "Primary raw material extraction, secondary manufacturing, and tertiary services form a continuous supply chain where no single sector can function alone.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "title": "Rotational Longitude-to-Time Mechanics",
+          "explanation": "Earth turns 360° on its axis in 24 hours, translating to a rotational speed of 15° per hour or 1° of longitude every 4 minutes. Moving East adds time while West subtracts time.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "title": "Phytoplankton Atmospheric Oxygenation",
+          "explanation": "Microscopic marine plants (phytoplankton) floating in photic ocean layers perform photosynthesis, generating over 50% of the Earth's atmospheric oxygen supply.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "title": "Tamil Sangam 5 Tiṇais Eco-Cultural Matrix",
+          "explanation": "The ancient South Indian classification mapping five distinct ecological landscapes (Kuriñci, Mullai, Marutam, Neytal, Pālai) directly to human occupations and culture.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "title": "Non-Zero Calendar Math across BCE/CE",
+          "explanation": "Historical chronologies transition directly from 1 BCE to 1 CE without an intervening Year 0, requiring specific subtraction formulas for calculating time spans.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "title": "Constitutional Synthesis in Article 1",
+          "explanation": "Article 1 of the Indian Constitution ('India, that is Bharat') unifies the ancient indigenous cultural identity (Bharat) with the international legal name (India).",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "title": "Harappan Binary-Decimal Metrology",
+          "explanation": "Harappan stone weights utilized a binary doubling system for lower trade values (1, 2, 4, 8, 16, 32) and a decimal system for higher weights (100, 200, 500).",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "title": "UNESCO Intangible Vedic Heritage",
+          "explanation": "The ancient practice of memorizing and phonetically chanting Vedic texts across millennia was declared a Masterpiece of Intangible Heritage of Humanity by UNESCO.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "title": "Tripartite System of Checks and Balances",
+          "explanation": "Democracy relies on three distinct organs—Legislature, Executive, and Judiciary—that monitor and limit each other's power to prevent constitutional abuse.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "title": "Direct Democracy in the Gram Sabha",
+          "explanation": "Unlike representative national bodies, the Gram Sabha enables every adult village resident to vote directly on local projects, budgets, and beneficiary lists.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "title": "Bifurcated Urban Governance Leadership",
+          "explanation": "Municipalities operate under a dual head structure: the Mayor (elected political representative) and the Municipal Commissioner (appointed IAS civil administrative head).",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "title": "Value Addition Formula in Carpentry",
+          "explanation": "Economic value addition occurs when labor transforms raw inputs into finished goods (e.g., Raw Timber ₹600 + Carpenter Skill/Tools = Chair ₹1,000; Value Added = ₹400).",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "title": "Paper Recycling Environmental Conservation Metrics",
+          "explanation": "Recycling 1 tonne of paper yields verified resource savings: 17 mature trees preserved, 2.5 m³ landfill space saved, and 70% reduction in energy and water usage.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "Water covers approximately 71% of Earth's surface, while land covers about 29%.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "statement": "The Pacific Ocean is the largest ocean, covering more area than all continental landmasses combined.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "statement": "Greenland is the largest island on Earth.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "statement": "Indian Standard Time (82.5° E Meridian) is exactly 5 hours and 30 minutes ahead of Greenwich Mean Time (GMT +5:30).",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "statement": "Ancient Indian astronomers used the Ujjain Meridian (Madhya Rekhā at ~75.8° E) as their central prime meridian.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "statement": "Recycling 1 tonne of paper saves 17 trees, 2.5 cubic metres of landfill space, and reduces energy and water consumption by 70%.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "statement": "The Harappan civilisation flourished during its urban mature phase between 2600 BCE and 1900 BCE.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "statement": "Article 1 of the Indian Constitution states: 'India, that is Bharat, shall be a Union of States.'",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "statement": "Satyameva Jayate ('Truth alone triumphs') is India's national motto, taken from the ancient Mundaka Upaniṣhad.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "statement": "Yato Dharmastato Jayah ('Where there is dharma, there is victory') is the official motto of the Supreme Court of India.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "statement": "Indian Standard Time (IST) is calculated along 82.5° E (82°30' E) longitude passing through Mirzapur, UP, placing IST exactly 5 hours 30 minutes ahead of GMT.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "statement": "Greenland is the world's largest island, located between the Arctic and Atlantic Oceans.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "statement": "The 26 December 2004 Indian Ocean tsunami was caused by a massive 9.1 magnitude underwater megathrust earthquake off northern Sumatra, Indonesia.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "statement": "The Himalayas are young fold mountains formed by tectonic collision, characterized by sharp peaks, steep slopes, and active seismic uplift.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "statement": "The current warm geological epoch is known as the Holocene, which began approximately 11,700 years ago following the end of the Pleistocene Ice Age.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "statement": "7th-century CE Chinese Buddhist monk Xuanzang traveled across India for 17 years, recording detailed accounts of Nalanda University and regional society.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "statement": "Ancient Persian royal inscriptions of King Darius I at Naqsh-e-Rustam refer to the region along the Indus River as 'Hi(n)du'.",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "statement": "The urban mature phase of the Indus-Sarasvatī (Harappan) Civilisation flourished from 2600 BCE to 1900 BCE.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "statement": "Lothal in Gujarat features the world's earliest known burnt-brick tidal dockyard connected to the Gulf of Khambhat for maritime trade.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "statement": "India's national motto 'Satyameva Jayate' ('Truth Alone Triumphs') is inscribed in Devanagari script below the Lion Capital, originating from the Mundaka Upaniṣhad.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "statement": "The AMUL dairy cooperative was founded in 1946 in Anand, Gujarat, under the guidance of Sardar Vallabhbhai Patel, Tribhuvandas Patel, and Dr. Verghese Kurien.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        }
+      ],
+      "people": [
+        {
+          "name": "Swami Vivekananda",
+          "role_or_contribution": "Prominent Indian philosopher who taught that work performed with full devotion and selfless spirit is the highest form of worship.",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "name": "Dr. A.P.J. Abdul Kalam",
+          "role_or_contribution": "Former President of India and scientist who inspired students with positive interpretations of adversity (e.g. F.A.I.L. = First Attempt In Learning).",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "name": "Sardar Vallabhbhai Patel",
+          "role_or_contribution": "Freedom fighter and leader who advised Anand dairy farmers in the 1940s to form a cooperative to eliminate middlemen exploitation.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "name": "Tribhuvandas Patel",
+          "role_or_contribution": "Social leader who co-founded the AMUL dairy cooperative movement in Anand, Gujarat in 1946.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "name": "Dr. Verghese Kurien",
+          "role_or_contribution": "Engineer known as the 'Father of the White Revolution' in India who led the expansion and technological growth of AMUL.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "name": "Xuanzang",
+          "role_or_contribution": "7th-century Chinese Buddhist scholar and traveler who visited India, documenting its geography, learning centers, and culture under the name Yintu.",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "name": "Sri Aurobindo",
+          "role_or_contribution": "Indian nationalist leader and philosopher who explained how individual inner nature (Swabhava) and duty (Swadharma) create social harmony.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        },
+        {
+          "name": "Rabindranath Tagore",
+          "role_or_contribution": "Nobel laureate poet who composed India's national anthem, celebrating the geographic and cultural unity of India's diverse regions.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        },
+        {
+          "name": "Vardhamāna Mahāvīra",
+          "role_or_contribution": "The 24th Tīrthaṅkara of Jainism who revitalized Jain teachings, emphasizing non-violence (Ahiṃsā), truth, and self-restraint.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "name": "Gautama Buddha",
+          "role_or_contribution": "Founder of Buddhism who taught the Four Noble Truths and Eightfold Path to alleviate human suffering.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "name": "Kauṭilya (Chanakya)",
+          "role_or_contribution": "Ancient Indian scholar and statesman whose treatise Arthaśhāstra states: 'The root of prosperity is economic activity'.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "name": "Varāhamihira",
+          "role_or_contribution": "6th-century CE Indian astronomer who conducted astronomical calculations centered on the Ujjain Prime Meridian (Madhya Rekhā).",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "name": "Āryabhaṭa",
+          "role_or_contribution": "Great 5th-century CE astronomer and mathematician who stated that Earth is spherical, suspended in space, and rotates on its axis.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "name": "Satyakāma Jābāla",
+          "role_or_contribution": "Upaniṣhadic truth-seeker accepted as a disciple by Sage Gautama based solely on his unwavering truthfulness regarding his parentage.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "name": "Gārgī Vāchaknavī",
+          "role_or_contribution": "Renowned female philosopher and Rishika who challenged Sage Yājñavalkya in famous cosmological debates at King Janaka's court.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "name": "Jawaharlal Nehru",
+          "role_or_contribution": "India's first Prime Minister who coined the phrase 'Unity in Diversity' in his book 'The Discovery of India'.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        }
+      ],
+      "places": [
+        {
+          "name": "Greenwich",
+          "significance": "Royal Observatory location near London, established in 1884 as the international 0° Prime Meridian for world time zones.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "name": "Ujjain",
+          "significance": "Ancient Indian city through which the historical central prime meridian (Madhya Rekhā) passed for astronomical calculations.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "name": "Mirzapur",
+          "significance": "City in Uttar Pradesh through which India's Standard Meridian (82.5° E) passes.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "name": "Anand",
+          "significance": "City in Gujarat where the historic AMUL dairy cooperative movement originated in 1946.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "name": "Lothal",
+          "significance": "Harappan port city in Gujarat featuring the world's earliest known artificial tidal brick dockyard.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "name": "Mohenjo-daro",
+          "significance": "Major Harappan urban center renowned for its Great Bath and advanced municipal brick drainage.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "name": "Dholavira",
+          "significance": "Harappan city in Rann of Kutch, Gujarat, famous for its sophisticated water reservoirs and three-tier city planning.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "name": "Greenland",
+          "significance": "The world's largest island, located in the North Atlantic / Arctic Ocean.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "name": "Lakshadweep",
+          "significance": "India's coral island union territory located in the Arabian Sea.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "name": "Andaman and Nicobar Islands",
+          "significance": "India's volcanic island union territory situated in the Bay of Bengal.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "name": "Ujjain (Ujjayinī)",
+          "significance": "Ancient Indian city that served as the reference center for the historical Madhya Rekhā prime meridian (~75.8° E).",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "name": "Indo-Gangetic Plains",
+          "significance": "Vast alluvial river plains formed by the Indus and Ganga river systems, supporting dense agrarian civilisations.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "name": "Deccan Plateau",
+          "significance": "Large basaltic lava plateau in peninsular India rich in mineral deposits and black cotton (Regur) soil.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        }
+      ],
+      "dates_events": [
+        {
+          "event": "Harappan Civilisation Urban Phase",
+          "timeframe_or_date": "2600 BCE – 1900 BCE",
+          "historical_significance": "Flourishing mature period of planned cities, metal craftsmanship, dockyards, and international trade in northwestern South Asia.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "event": "International Meridian Conference",
+          "timeframe_or_date": "1884",
+          "historical_significance": "Global adoption of Greenwich, London as the official 0° Prime Meridian for global navigation and standard time zones.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "event": "Establishment of AMUL Cooperative",
+          "timeframe_or_date": "1946",
+          "historical_significance": "Formation of Kaira District Co-operative Milk Producers' Union in Anand, eliminating middlemen and empowering dairy farmers.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "event": "Indian Ocean Tsunami",
+          "timeframe_or_date": "26 December 2004",
+          "historical_significance": "A devastating tsunami triggered by a massive underwater earthquake off Sumatra, Indonesia, affecting coastal India and lead to the creation of NDMA.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "event": "Adoption of the Constitution of India",
+          "timeframe_or_date": "26 November 1949 (Enacted 26 January 1950)",
+          "historical_significance": "Established India as a sovereign democratic republic, defining its official dual name 'India, that is Bharat' in Article 1.",
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "event": "End of Pleistocene Ice Age",
+          "timeframe_or_date": "~11,700 Years Ago (~9700 BCE)",
+          "historical_significance": "Global warming transition ushered in the Holocene epoch, creating climates suitable for agriculture and settled life.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "event": "Harappan Urban Civilisation Phase",
+          "timeframe_or_date": "2600 BCE – 1900 BCE",
+          "historical_significance": "Period of urban planning, metallurgy, brick architecture, and international maritime trade in western South Asia.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "event": "Formation of Kaira District Cooperative (AMUL)",
+          "timeframe_or_date": "1946",
+          "historical_significance": "Milk producers in Anand organized a cooperative to sell milk directly, sparking India's White Revolution.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        }
+      ],
+      "institutions": [
+        {
+          "name": "Parliament of India",
+          "type": "Legislative Institution",
+          "function": "The supreme legislative body at the national level responsible for enacting laws, approving budgets, and monitoring the executive.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "name": "Supreme Court of India",
+          "type": "Judicial Institution",
+          "function": "The apex court of India responsible for interpreting the Constitution, upholding fundamental rights, and ensuring executive and legislative compliance.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "name": "Gram Panchayat",
+          "type": "Local Governance Body",
+          "function": "The executive council at the village level directly elected by the Gram Sabha to handle local administration, sanitation, and roads.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "name": "Panchayat Samiti",
+          "type": "Intermediate Governance Body",
+          "function": "The block-level Panchayati Raj institution coordinating development programs across multiple neighboring Gram Panchayats.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "name": "Zila Parishad",
+          "type": "District Governance Body",
+          "function": "The top-tier Panchayati Raj body managing district-wide development plans, state grants, and inter-block coordination.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "name": "Municipal Corporation",
+          "type": "Urban Local Body",
+          "function": "The local self-government institution governing large metropolitan cities, headed politically by a Mayor and administratively by a Municipal Commissioner.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "name": "Municipal Council (Nagar Palika)",
+          "type": "Urban Local Body",
+          "function": "The urban local self-government body responsible for managing smaller towns and medium-sized cities.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "name": "AMUL Dairy Cooperative",
+          "type": "Economic Cooperative Institution",
+          "function": "A democratic producer cooperative empowering small dairy farmers in Gujarat by collectively processing, pasteurising, and marketing milk.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "name": "Survey of India",
+          "type": "National Mapping Agency",
+          "function": "Establishes official map conventions, topographic surveys, and conventional symbols across India.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "name": "National Disaster Management Authority (NDMA)",
+          "type": "Statutory Disaster Management Body",
+          "function": "Issues national safety guidelines and emergency responses for natural hazards like tsunamis and earthquakes.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "name": "Municipal Corporation (Nagar Nigam)",
+          "type": "Urban Local Body",
+          "function": "Administers civic infrastructure, sanitation, water supply, and waste management in large metropolitan cities.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "name": "AMUL (Anand Milk Union Limited)",
+          "type": "Dairy Farmers Cooperative",
+          "function": "Processes milk from small rural producers and markets dairy products nationwide without middlemen.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        }
+      ],
+      "laws_systems": [
+        {
+          "system_or_law": "Universal Adult Suffrage",
+          "description": "The constitutional right granting every adult citizen aged 18 and above the right to vote in democratic elections without discrimination.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "system_or_law": "Indian Standard Time (IST) System",
+          "description": "The official nationwide timekeeping system fixed on 82.5° E meridian (GMT +5:30) to unify clock time across India's longitudes.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "system_or_law": "Three-Tier Panchayati Raj System",
+          "description": "The decentralized rural local self-governance system consisting of Gram Panchayat (village), Panchayat Samiti (block), and Zila Parishad (district).",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "system_or_law": "Checks and Balances System",
+          "description": "The constitutional framework enabling each organ of government (Legislature, Executive, Judiciary) to monitor and limit the power of the other two.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "system_or_law": "Trade Licensing and Property Tax System",
+          "description": "Municipal revenue systems where urban properties and business operations pay local taxes to fund public amenities and sanitation.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "system_or_law": "Antarctic Treaty System",
+          "description": "1959 international treaty dedicating Antarctica exclusively to peaceful scientific research and banning military/mining activities.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "system_or_law": "Municipal Property Taxation & Licensing System",
+          "description": "Local legal framework empowering urban local bodies to collect property taxes and issue trade licenses to fund civic services.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        }
+      ],
+      "chronology": [
+        {
+          "sequence_title": "Evolution of Names for the Indian Subcontinent",
+          "stages": [
+            "1. Sapta Sindhava (Vedic period): Reference to the land of seven rivers in northwestern India.",
+            "2. Jambudvīpa (Ancient texts): Textual name describing the southern continent shaped like a jamun leaf/fruit.",
+            "3. Bhārata / Bhāratavarṣha (Puranas & Epics): Name associated with the ancient King Bharata and the people living south of the Himalayas.",
+            "4. Hi(n)du / Indoi (Persian & Greek texts): Phonetic evolution derived from the River Sindhu (Indus).",
+            "5. India, that is Bharat (1949 Constitution): Modern constitutional synthesis uniting historical identity with modern republic."
+          ],
+          "source_context": "Chapter 5: India, That Is Bharat (fees105.pdf)"
+        },
+        {
+          "sequence_title": "Textbook Production Supply Chain Sequence",
+          "stages": [
+            "1. Primary Stage: Forestry workers harvest timber trees and extract wood pulp from forests.",
+            "2. Secondary Stage (Paper Mill): Industrial workers process pulp into large paper rolls.",
+            "3. Secondary Stage (Printing Press): Printers bind text and images onto paper to assemble textbooks.",
+            "4. Tertiary Stage (Logistics & Distribution): Transport trucks deliver books to warehouses and retail stores.",
+            "5. Tertiary Stage (Retail): Bookstores sell finished textbooks directly to students."
+          ],
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "sequence_title": "Harappan Urban Civilisation Lifecycle",
+          "stages": [
+            "1. Early Phase: Agricultural settlement expansion and copper metalwork development.",
+            "2. Mature Phase (2600–1900 BCE): Flourishing urbanism with brick architecture, grid streets, and global maritime trade.",
+            "3. Late / De-urbanisation Phase (post-1900 BCE): River course changes and climate shifts lead to rural migration."
+          ],
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "sequence_title": "Textbook Production Supply Chain & Sectoral Journey",
+          "stages": [
+            "Stage A (Primary Sector): Sustainable logging of softwood timber from managed forest plantations.",
+            "Stage B (Secondary Sector - Processing): Chemical pulping and manufacturing of high-grade paper sheets in mills.",
+            "Stage C (Secondary Sector - Printing): High-speed printing, offset binding, and cover laminating in press facilities.",
+            "Stage D (Tertiary Sector - Logistics): Freight transport, warehousing, wholesale distribution, and retail sales to students."
+          ],
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "sequence_title": "Harappan Urban Lifecycle Stages",
+          "stages": [
+            "Phase 1 (Early Agricultural Settlements): Small farming villages along the Indus and Sarasvatī river valleys.",
+            "Phase 2 (Mature Urban Boom ~2600-1900 BCE): Rise of planned grid cities, Great Bath, Lothal dockyard, and maritime trade.",
+            "Phase 3 (Environmental Stress ~1900 BCE): Tectonic shifts, drying of the Sarasvatī River, and changing monsoons.",
+            "Phase 4 (De-urbanisation & Rural Migration): City abandonment and transition back to peaceful rural agricultural communities."
+          ],
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        }
+      ],
+      "cause_effect": [
+        {
+          "cause": "Earth's rotation from West to East at 15° longitude per hour",
+          "effect": "Places located further East experience sunrise earlier, creating local solar time differences of 4 minutes per degree of longitude.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "cause": "Tectonic plate movements and internal Earth forces",
+          "effect": "Crustal uplift forms high mountain ranges (e.g. Himalayas) and elevated plateaus.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "cause": "Lack of refrigeration and perishable nature of raw milk in 1940s Anand",
+          "effect": "Milk farmers were forced to sell to private middlemen at unfair low prices, prompting the creation of the AMUL cooperative.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "cause": "Failure of residents to segregate wet and dry household waste at home",
+          "effect": "Municipal waste collection systems clog, recycling efficiency drops, and foul odors and disease risks increase in urban centers.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "cause": "Erosion and silt deposition carried by major river systems like the Ganga and Indus",
+          "effect": "Formation of vast, highly fertile river plains suitable for dense human habitation and intensive agriculture.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "cause": "Earth's 24-hour rotation through 360° of longitude",
+          "effect": "Every 15° shift in longitude produces a 1-hour local solar time difference (1° = 4 minutes).",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "cause": "Underwater megathrust earthquake displacement of sea floor",
+          "effect": "Triggers high-speed shockwaves that transform into destructive tsunami waves upon reaching shallow coastal waters.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "cause": "Deposition of fine alluvial silt by annual river floods",
+          "effect": "Creates extraordinarily fertile agricultural plains capable of supporting dense human populations.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "cause": "Tectonic shifts and desiccation of the Sarasvatī River around 1900 BCE",
+          "effect": "Forced Harappan populations to abandon urban centers and migrate into rural agrarian settlements.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "cause": "Source waste segregation into wet organic and dry recyclable bins at home",
+          "effect": "Dramatically reduces landfill volume, enables composting, and improves municipal processing efficiency.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        }
+      ],
+      "classifications": [
+        {
+          "category": "The Three Organs of Government",
+          "items": [
+            "1. Legislature: Body of elected representatives that formulates, amends, or repeals laws.",
+            "2. Executive: Administrative branch headed by PM/CM and civil servants that implements laws.",
+            "3. Judiciary: Independent court system that interprets laws and delivers justice."
+          ],
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "category": "The Three Levels of Governance in India",
+          "items": [
+            "1. National / Central Level: Governs the entire country (headquartered in New Delhi).",
+            "2. State Level: Governs individual states (e.g. Karnataka, Rajasthan, Tamil Nadu).",
+            "3. Local Level: Governs local villages (Panchayats) and urban cities (Municipalities)."
+          ],
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "category": "The Three Tiers of Panchayati Raj",
+          "items": [
+            "1. Gram Panchayat (Base Tier): Village-level elected council headed by a Sarpanch.",
+            "2. Panchayat Samiti (Middle Tier): Block-level council coordinating multiple Gram Panchayats.",
+            "3. Zila Parishad (Apex Tier): District-level council overseeing regional development."
+          ],
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "category": "The Three Types of Urban Local Bodies",
+          "items": [
+            "1. Nagar Panchayat: Transitional body governing areas changing from rural to urban.",
+            "2. Municipal Council (Nagar Palika): Local body governing smaller towns and medium cities.",
+            "3. Municipal Corporation (Nagar Nigam): Local body governing large metropolitan cities."
+          ],
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "category": "The Three Economic Sectors",
+          "items": [
+            "1. Primary Sector: Natural resource extraction (farming, fishing, mining, forestry).",
+            "2. Secondary Sector: Manufacturing, utilities, and construction (factories, mills, power plants).",
+            "3. Tertiary Sector: Services, logistics, banking, trade, and retail."
+          ],
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "category": "The Five Tamil Sangam Tiṇais (Ecological Zones)",
+          "items": [
+            "1. Kuriñci: Mountainous zone associated with hunting and gathering.",
+            "2. Mullai: Pastoral forest zone associated with cattle rearing.",
+            "3. Marutam: Wetland river valley zone associated with agriculture.",
+            "4. Neytal: Coastal zone associated with fishing and salt extraction.",
+            "5. Pālai: Arid desert zone associated with dryland survival."
+          ],
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "category": "The Three Primary Types of Maps",
+          "items": [
+            "1. Physical Maps: Show natural features like mountains, plateaus, plains, rivers, and oceans.",
+            "2. Political Maps: Show administrative boundaries of countries, states, districts, and cities.",
+            "3. Thematic Maps: Depict specific data distributions such as rainfall, forest cover, or highways."
+          ],
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "category": "The Three Earth Climatic Heat Zones",
+          "items": [
+            "1. Torrid Zone: Hottest region lying between Tropic of Cancer (23.5°N) and Tropic of Capricorn (23.5°S).",
+            "2. Temperate Zone: Moderate climate region between Tropics and Polar Circles (23.5° to 66.5° N/S).",
+            "3. Frigid Zone: Coldest polar region located beyond Arctic/Antarctic Circles (66.5° to 90° N/S)."
+          ],
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        }
+      ],
+      "geographical_features": [
+        {
+          "feature": "Equator (0° Latitude)",
+          "type": "Primary Latitude Line",
+          "description": "The imaginary baseline circle dividing the Earth into the Northern and Southern Hemispheres.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "feature": "Prime Meridian (0° Longitude)",
+          "type": "Primary Longitude Line",
+          "description": "The vertical reference semi-circle passing through Greenwich, London, dividing Earth into Eastern and Western Hemispheres.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "feature": "Torrid Zone",
+          "type": "Climatic Heat Zone",
+          "description": "The tropical region between Tropic of Cancer (23.5° N) and Tropic of Capricorn (23.5° S) receiving direct sun rays.",
+          "source_context": "Chapter 1: Locating Places on the Earth (fees101.pdf)"
+        },
+        {
+          "feature": "Pacific Ocean",
+          "type": "Oceanic Feature",
+          "description": "The Earth's largest and deepest ocean, covering more than 30% of the globe.",
+          "source_context": "Chapter 2: Oceans and Continents (fees102.pdf)"
+        },
+        {
+          "feature": "Himalayas",
+          "type": "Mountain Range",
+          "description": "The young fold mountain range forming India's northern natural boundary, acting as a climatic and physical barrier.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "feature": "Deccan Plateau",
+          "type": "Plateau Feature",
+          "description": "A vast volcanic basalt plateau in southern peninsular India rich in mineral deposits and black soil.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "feature": "Himalaya Mountain Range",
+          "type": "Young Fold Mountains",
+          "description": "High tectonic mountain range acting as India's northern physical frontier, possessing high peaks and deep valleys.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        },
+        {
+          "feature": "Indo-Gangetic Alluvial Plain",
+          "type": "Depositional River Plain",
+          "description": "Extremely fertile flat landform built by sediment deposition from the Indus and Ganga river systems.",
+          "source_context": "Chapter 3: Landforms and Life (fees103.pdf)"
+        }
+      ],
+      "historical_concepts": [
+        {
+          "concept": "Oral Tradition and Intangible Heritage",
+          "description": "The ancient practice of memorizing and transmitting texts like the Vedas orally across generations with strict phonetic precision.",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "concept": "BCE and CE Dating Systems",
+          "description": "The secular historical chronological framework replacing BC/AD with Before Common Era (BCE) and Common Era (CE).",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "concept": "Harappan Binary-Decimal Metrology",
+          "description": "The standardized system of weights and measures used across Indus-Sarasvatī cities using binary doubling and decimal ratios.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "concept": "Upaniṣhadic Philosophy",
+          "description": "Ancient philosophical dialogues seeking spiritual inquiry into the ultimate reality (Brahman) and individual self (Ātman).",
+          "source_context": "Chapter 7: India's Cultural Roots (fees107.pdf)"
+        },
+        {
+          "concept": "Archaeological Stratigraphy",
+          "description": "Determining relative artifact age based on the depth of soil layers excavated in archaeological mounds.",
+          "source_context": "Chapter 4: Timeline and Sources of History (fees104.pdf)"
+        },
+        {
+          "concept": "Harappan Urban Sanitation Engineering",
+          "description": "Sub-surface covered street drains, soak pits, and private household bathing platforms built in mature Harappan cities.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        },
+        {
+          "concept": "De-urbanisation",
+          "description": "The historical transition where city populations abandon urban centers due to environmental stress and return to rural farming.",
+          "source_context": "Chapter 6: The Beginnings of Indian Civilisation (fees106.pdf)"
+        }
+      ],
+      "civic_concepts": [
+        {
+          "concept": "Grassroots Democracy",
+          "description": "Democratic self-governance operating directly at the local community level, enabling citizens to shape decisions directly.",
+          "source_context": "Chapter 10 & 11: Grassroots Democracy (fees110.pdf, fees111.pdf)"
+        },
+        {
+          "concept": "Nominal vs Actual Executive",
+          "description": "The distinction between a constitutional head of state (President/Governor) and elected political leaders (Prime Minister/Chief Minister).",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "concept": "Swabhava and Swadharma",
+          "description": "The philosophical principle that personal inner nature (Swabhava) guides individual moral duty (Swadharma) for social harmony.",
+          "source_context": "Chapter 8: Unity in Diversity, or 'Many in the One' (fees108.pdf)"
+        },
+        {
+          "concept": "Active Citizenship",
+          "description": "The responsibility of citizens to participate in civic affairs, vote in elections, follow rules, and protect shared public property.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "concept": "Grassroots Direct Democracy",
+          "description": "Democratic participation where citizens directly vote on local decisions in assemblies like the Gram Sabha.",
+          "source_context": "Chapter 11: Grassroots Democracy – Part 2 (Local Government in Rural Areas) (fees111.pdf)"
+        },
+        {
+          "concept": "System of Checks and Balances",
+          "description": "Constitutional mechanism allowing Legislature, Executive, and Judiciary to monitor and limit each other's powers.",
+          "source_context": "Chapter 10: Grassroots Democracy – Part 1 (Governance) (fees110.pdf)"
+        },
+        {
+          "concept": "Bifurcated Municipal Leadership",
+          "description": "Urban governance structure dividing political policy leadership (Mayor) from civil executive execution (Municipal Commissioner).",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        },
+        {
+          "concept": "Source Waste Segregation",
+          "description": "Civil duty of separating household garbage at source into wet organic and dry recyclable bins for municipal management.",
+          "source_context": "Chapter 12: Grassroots Democracy – Part 3 (Local Government in Urban Areas) (fees112.pdf)"
+        }
+      ],
+      "economic_concepts": [
+        {
+          "concept": "Modes of Compensation",
+          "description": "The varied ways work is financially rewarded: Salary (fixed monthly), Wage (daily/task), Fee (professional service), or Payment in Kind (goods/crops).",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "concept": "Unpaid Domestic Labor and Social Care",
+          "description": "Essential household, cooking, and eldercare work performed without financial payment that sustains family and societal well-being.",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "concept": "Cooperative Supply Chains",
+          "description": "Democratic organizations of primary producers that process and market goods directly to eliminate middleman exploitation.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "concept": "Resource Recycling Economics",
+          "description": "The environmental and financial savings achieved by reprocessing waste materials (e.g., paper, water) back into production cycles.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "concept": "Economic Value Addition",
+          "description": "Increasing the economic worth of raw materials by applying human skill, time, labor, and tools (e.g., Timber to Chair).",
+          "source_context": "Chapter 13: The Value of Work (fees113.pdf)"
+        },
+        {
+          "concept": "Tri-Sectoral Economic Interdependence",
+          "description": "The mutual reliance of Primary (extraction), Secondary (manufacturing), and Tertiary (services) sectors in modern supply chains.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        },
+        {
+          "concept": "Producer Cooperatives",
+          "description": "Democratic economic associations owned by primary producers (e.g., AMUL dairy farmers) to eliminate middleman exploitation.",
+          "source_context": "Chapter 14: Economic Activities Around Us (fees114.pdf)"
+        }
+      ]
+    },
+    "statistics": {
+      "total_terminology": 37,
+      "total_definitions": 22,
+      "total_concepts": 27,
+      "total_facts": 21,
+      "total_people": 16,
+      "total_places": 13,
+      "total_dates_events": 8,
+      "total_institutions": 12,
+      "total_laws_systems": 7,
+      "total_chronology": 5,
+      "total_cause_effect": 10,
+      "total_classifications": 8,
+      "total_geographical_features": 8,
+      "total_historical_concepts": 7,
+      "total_civic_concepts": 8,
+      "total_economic_concepts": 7,
+      "grand_total_entries": 216
+    },
+    "validation": {
+      "status": "PASSED",
+      "duplicates_removed": true,
+      "ncert_alignment_verified": true
+    }
+  },
+  "grade": "6",
+  "chapter_id": "G6-SOC-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Social Chapter 1"
 }

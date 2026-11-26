@@ -1,0 +1,1992 @@
+{
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_e7b0d4ed37563aec",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_10",
+    "class_level": 10
+  },
+  "subject": {
+    "subject_id": "sociali",
+    "source_subject_label": "Social I",
+    "component_id": "sociali",
+    "component_label": "Social I"
+  },
+  "artifact": {
+    "artifact_type": "master",
+    "source_file_name": "15-Master.json",
+    "source_relative_path": "Contents/Class 10/Social I/Source Files/15-Master.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "121efd67192883e71a5c300f24ab696e14807609f75a38edc974f1ee382fae69",
+    "source_semantic_sha256": "1c92b6f22ea7a2010ec0ee310bce21d6fc10e03d9da7b59c832840a22346729a",
+    "source_byte_length": 69760,
+    "source_encoding": "utf-8",
+    "source_field_count": 558,
+    "field_inventory": [
+      "$.subject_name",
+      "$.grade_or_target_level",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].zero_omission_notes",
+      "$.chapters[0].zero_omission_notes.summary",
+      "$.chapters[0].zero_omission_notes.detailed_sections",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].full_notes",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[0].visuals_diagrams_and_tabular_data",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[0].master_glossary_units_and_formulas",
+      "$.chapters[0].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[0].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[0].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[0].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[0].master_glossary_units_and_formulas[1].term_or_concept",
+      "$.chapters[0].master_glossary_units_and_formulas[1].definition_or_meaning",
+      "$.chapters[0].master_glossary_units_and_formulas[1].si_unit_or_notation",
+      "$.chapters[0].master_glossary_units_and_formulas[1].example_or_application",
+      "$.chapters[0].master_glossary_units_and_formulas[2].term_or_concept",
+      "$.chapters[0].master_glossary_units_and_formulas[2].definition_or_meaning",
+      "$.chapters[0].master_glossary_units_and_formulas[2].si_unit_or_notation",
+      "$.chapters[0].master_glossary_units_and_formulas[2].example_or_application",
+      "$.chapters[0].master_glossary_units_and_formulas[3].term_or_concept",
+      "$.chapters[0].master_glossary_units_and_formulas[3].definition_or_meaning",
+      "$.chapters[0].master_glossary_units_and_formulas[3].si_unit_or_notation",
+      "$.chapters[0].master_glossary_units_and_formulas[3].example_or_application",
+      "$.chapters[0].master_glossary_units_and_formulas[4].term_or_concept",
+      "$.chapters[0].master_glossary_units_and_formulas[4].definition_or_meaning",
+      "$.chapters[0].master_glossary_units_and_formulas[4].si_unit_or_notation",
+      "$.chapters[0].master_glossary_units_and_formulas[4].example_or_application",
+      "$.chapters[0].exam_question_bank",
+      "$.chapters[0].exam_question_bank.textbook_exercises",
+      "$.chapters[0].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[0].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[0].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[0].exam_question_bank.short_answer_questions",
+      "$.chapters[0].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[0].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[0].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[0].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa[1].question",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa[1].answer",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[1].case_scenario",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[1].qa",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[1].qa[0].question",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[1].qa[0].answer",
+      "$.chapters[0].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[0].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[0].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].zero_omission_notes",
+      "$.chapters[1].zero_omission_notes.summary",
+      "$.chapters[1].zero_omission_notes.detailed_sections",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[1].visuals_diagrams_and_tabular_data",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[1].master_glossary_units_and_formulas",
+      "$.chapters[1].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[1].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[1].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[1].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[1].master_glossary_units_and_formulas[1].term_or_concept",
+      "$.chapters[1].master_glossary_units_and_formulas[1].definition_or_meaning",
+      "$.chapters[1].master_glossary_units_and_formulas[1].si_unit_or_notation",
+      "$.chapters[1].master_glossary_units_and_formulas[1].example_or_application",
+      "$.chapters[1].master_glossary_units_and_formulas[2].term_or_concept",
+      "$.chapters[1].master_glossary_units_and_formulas[2].definition_or_meaning",
+      "$.chapters[1].master_glossary_units_and_formulas[2].si_unit_or_notation",
+      "$.chapters[1].master_glossary_units_and_formulas[2].example_or_application",
+      "$.chapters[1].exam_question_bank",
+      "$.chapters[1].exam_question_bank.textbook_exercises",
+      "$.chapters[1].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[1].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[1].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[1].exam_question_bank.short_answer_questions",
+      "$.chapters[1].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[1].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[1].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[1].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[1].case_scenario",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[1].qa",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[1].qa[0].question",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[1].qa[0].answer",
+      "$.chapters[1].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[1].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[1].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].zero_omission_notes",
+      "$.chapters[2].zero_omission_notes.summary",
+      "$.chapters[2].zero_omission_notes.detailed_sections",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].full_notes",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[2].visuals_diagrams_and_tabular_data",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[2].master_glossary_units_and_formulas",
+      "$.chapters[2].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[2].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[2].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[2].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[2].master_glossary_units_and_formulas[1].term_or_concept",
+      "$.chapters[2].master_glossary_units_and_formulas[1].definition_or_meaning",
+      "$.chapters[2].master_glossary_units_and_formulas[1].si_unit_or_notation",
+      "$.chapters[2].master_glossary_units_and_formulas[1].example_or_application",
+      "$.chapters[2].master_glossary_units_and_formulas[2].term_or_concept",
+      "$.chapters[2].master_glossary_units_and_formulas[2].definition_or_meaning",
+      "$.chapters[2].master_glossary_units_and_formulas[2].si_unit_or_notation",
+      "$.chapters[2].master_glossary_units_and_formulas[2].example_or_application",
+      "$.chapters[2].exam_question_bank",
+      "$.chapters[2].exam_question_bank.textbook_exercises",
+      "$.chapters[2].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[2].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[2].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[2].exam_question_bank.short_answer_questions",
+      "$.chapters[2].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[2].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[2].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[2].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[1].case_scenario",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[1].qa",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[1].qa[0].question",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[1].qa[0].answer",
+      "$.chapters[2].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[2].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[2].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].zero_omission_notes",
+      "$.chapters[3].zero_omission_notes.summary",
+      "$.chapters[3].zero_omission_notes.detailed_sections",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[3].visuals_diagrams_and_tabular_data",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[3].master_glossary_units_and_formulas",
+      "$.chapters[3].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[3].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[3].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[3].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[3].master_glossary_units_and_formulas[1].term_or_concept",
+      "$.chapters[3].master_glossary_units_and_formulas[1].definition_or_meaning",
+      "$.chapters[3].master_glossary_units_and_formulas[1].si_unit_or_notation",
+      "$.chapters[3].master_glossary_units_and_formulas[1].example_or_application",
+      "$.chapters[3].master_glossary_units_and_formulas[2].term_or_concept",
+      "$.chapters[3].master_glossary_units_and_formulas[2].definition_or_meaning",
+      "$.chapters[3].master_glossary_units_and_formulas[2].si_unit_or_notation",
+      "$.chapters[3].master_glossary_units_and_formulas[2].example_or_application",
+      "$.chapters[3].exam_question_bank",
+      "$.chapters[3].exam_question_bank.textbook_exercises",
+      "$.chapters[3].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[3].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[3].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[3].exam_question_bank.short_answer_questions",
+      "$.chapters[3].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[3].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[3].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[3].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[1].case_scenario",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[1].qa",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[1].qa[0].question",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[1].qa[0].answer",
+      "$.chapters[3].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[3].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[3].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].zero_omission_notes",
+      "$.chapters[4].zero_omission_notes.summary",
+      "$.chapters[4].zero_omission_notes.detailed_sections",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].full_notes",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[4].visuals_diagrams_and_tabular_data",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[4].master_glossary_units_and_formulas",
+      "$.chapters[4].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[4].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[4].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[4].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[4].master_glossary_units_and_formulas[1].term_or_concept",
+      "$.chapters[4].master_glossary_units_and_formulas[1].definition_or_meaning",
+      "$.chapters[4].master_glossary_units_and_formulas[1].si_unit_or_notation",
+      "$.chapters[4].master_glossary_units_and_formulas[1].example_or_application",
+      "$.chapters[4].master_glossary_units_and_formulas[2].term_or_concept",
+      "$.chapters[4].master_glossary_units_and_formulas[2].definition_or_meaning",
+      "$.chapters[4].master_glossary_units_and_formulas[2].si_unit_or_notation",
+      "$.chapters[4].master_glossary_units_and_formulas[2].example_or_application",
+      "$.chapters[4].master_glossary_units_and_formulas[3].term_or_concept",
+      "$.chapters[4].master_glossary_units_and_formulas[3].definition_or_meaning",
+      "$.chapters[4].master_glossary_units_and_formulas[3].si_unit_or_notation",
+      "$.chapters[4].master_glossary_units_and_formulas[3].example_or_application",
+      "$.chapters[4].exam_question_bank",
+      "$.chapters[4].exam_question_bank.textbook_exercises",
+      "$.chapters[4].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[4].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[4].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[4].exam_question_bank.short_answer_questions",
+      "$.chapters[4].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[4].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[4].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[4].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[1].case_scenario",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[1].qa",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[1].qa[0].question",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[1].qa[0].answer",
+      "$.chapters[4].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[4].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[4].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].zero_omission_notes",
+      "$.chapters[5].zero_omission_notes.summary",
+      "$.chapters[5].zero_omission_notes.detailed_sections",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].full_notes",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[5].visuals_diagrams_and_tabular_data",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[5].master_glossary_units_and_formulas",
+      "$.chapters[5].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[5].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[5].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[5].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[5].master_glossary_units_and_formulas[1].term_or_concept",
+      "$.chapters[5].master_glossary_units_and_formulas[1].definition_or_meaning",
+      "$.chapters[5].master_glossary_units_and_formulas[1].si_unit_or_notation",
+      "$.chapters[5].master_glossary_units_and_formulas[1].example_or_application",
+      "$.chapters[5].master_glossary_units_and_formulas[2].term_or_concept",
+      "$.chapters[5].master_glossary_units_and_formulas[2].definition_or_meaning",
+      "$.chapters[5].master_glossary_units_and_formulas[2].si_unit_or_notation",
+      "$.chapters[5].master_glossary_units_and_formulas[2].example_or_application",
+      "$.chapters[5].exam_question_bank",
+      "$.chapters[5].exam_question_bank.textbook_exercises",
+      "$.chapters[5].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[5].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[5].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[5].exam_question_bank.short_answer_questions",
+      "$.chapters[5].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[5].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[5].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[5].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[1].case_scenario",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[1].qa",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[1].qa[0].question",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[1].qa[0].answer",
+      "$.chapters[5].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[5].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[5].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].zero_omission_notes",
+      "$.chapters[6].zero_omission_notes.summary",
+      "$.chapters[6].zero_omission_notes.detailed_sections",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].full_notes",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[6].visuals_diagrams_and_tabular_data",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[6].master_glossary_units_and_formulas",
+      "$.chapters[6].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[6].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[6].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[6].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[6].master_glossary_units_and_formulas[1].term_or_concept",
+      "$.chapters[6].master_glossary_units_and_formulas[1].definition_or_meaning",
+      "$.chapters[6].master_glossary_units_and_formulas[1].si_unit_or_notation",
+      "$.chapters[6].master_glossary_units_and_formulas[1].example_or_application",
+      "$.chapters[6].master_glossary_units_and_formulas[2].term_or_concept",
+      "$.chapters[6].master_glossary_units_and_formulas[2].definition_or_meaning",
+      "$.chapters[6].master_glossary_units_and_formulas[2].si_unit_or_notation",
+      "$.chapters[6].master_glossary_units_and_formulas[2].example_or_application",
+      "$.chapters[6].exam_question_bank",
+      "$.chapters[6].exam_question_bank.textbook_exercises",
+      "$.chapters[6].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[6].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[6].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[6].exam_question_bank.short_answer_questions",
+      "$.chapters[6].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[6].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[6].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[6].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[1].case_scenario",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[1].qa",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[1].qa[0].question",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[1].qa[0].answer",
+      "$.chapters[6].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[6].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[6].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Resources and Development",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Rio de Janeiro Earth Summit, 1992 & Agenda 21",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Club of Rome & Brundtland Commission",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Forest and Wildlife Resources",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Sacred Groves & Community Action",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Water Resources",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Hydraulic Structures in Ancient India",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Tamil Nadu Legal Provision",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Agriculture",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Bhoodan - Gramdan (Blood-less Revolution)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Minerals and Energy Resources",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Hazards of Mining (Killer Industry)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Iron Ore Belts in India",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Manufacturing Industries",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "NTPC Proactive EMS 14001 Framework",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Agglomeration Economies",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Lifelines of National Economy",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Digital India & Communication",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Balance of Trade Definition",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 19,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject_name": "Class 10 Social Science: Contemporary India - II (Geography)",
+    "grade_or_target_level": "Class 10 / Secondary Level",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Resources and Development",
+        "zero_omission_notes": {
+          "summary": "Examines the classification, planning, and sustainable utilization of natural resources in India. Resources are technological, economic, and cultural functions of human activity. It details global ecological crises caused by indiscriminate resource use, the 1992 Rio Earth Summit Agenda 21 framework, land use patterns in India, soil degradation, and soil conservation techniques.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "1.1 Development of Resources",
+              "full_notes": "Resources are vital for human survival but indiscriminate usage has led to resource depletion, accumulation in few hands, and global ecological crises like global warming, ozone layer depletion, and land degradation. Sustainable economic development means development without damaging the environment and without compromising future generations' needs.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "International Summit",
+                  "title": "Rio de Janeiro Earth Summit, 1992 & Agenda 21",
+                  "content": "In June 1992, over 100 heads of states met in Rio de Janeiro, Brazil for the first International Earth Summit addressing environmental protection and global socio-economic development. Leaders signed Agenda 21 to achieve global sustainable development by combating environmental damage, poverty, and disease through global cooperation. Every local government is encouraged to draw its own local Agenda 21."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "1.2 Resource Planning & Soil Conservation",
+              "full_notes": "Resource planning in India involves inventory identification, planning structure setup, and alignment with national plans. Land resources in India comprise 43% plains, 30% mountains, and 27% plateaus. Soil erosion occurs via gullies and sheet erosion, which can be mitigated through contour ploughing, terrace farming, strip cropping, and shelter belts.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Historical Fact",
+                  "title": "Club of Rome & Brundtland Commission",
+                  "content": "Club of Rome advocated systematic resource conservation in 1968. Schumacher published 'Small is Beautiful' in 1974 reflecting Gandhian philosophy. The 1987 Brundtland Commission Report introduced 'Sustainable Development' in 'Our Common Future'."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "Local Soil & Resource Conservation Survey",
+            "aim_or_objective": "To observe and record soil erosion types and resource usage in the local environment.",
+            "materials_or_prerequisites": [
+              "Field notebook",
+              "Soil sample containers",
+              "pH paper",
+              "Local map"
+            ],
+            "procedure_or_steps": [
+              "Identify an agricultural or sloping land area in the locality.",
+              "Inspect for visual signs of sheet erosion or gully formation.",
+              "Collect topsoil samples and measure texture and water retention capacity.",
+              "Interview local farmers on ploughing methods (contour vs up-down slope)."
+            ],
+            "observations_or_results": "Contour-ploughed fields display significantly lower soil loss after rainwater runoff compared to slope-ploughed land.",
+            "conclusion_or_principle": "Vegetative cover and contour farming preserve topsoil and prevent bad land formation."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Soil Profile",
+              "labels_and_components": [
+                "Topsoil (upper layer)",
+                "Subsoil (weathered rock, sand, silt, clay)",
+                "Substratum (weathered parent rock)",
+                "Unweathered parent bed rock"
+              ],
+              "drawing_or_reading_instructions": "Draw four horizontal stratas with increasing grain size from top to bottom.",
+              "structural_or_conceptual_explanation": "Topsoil contains living organic matter (humus) vital for plant growth."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "India: Land under Important Relief Features",
+              "headers": [
+                "Relief Feature",
+                "Percentage Area",
+                "Key Economic Functions"
+              ],
+              "rows": [
+                [
+                  "Plains",
+                  "43%",
+                  "Agriculture and Industry"
+                ],
+                [
+                  "Mountains",
+                  "30%",
+                  "Perennial river flow, tourism, ecology"
+                ],
+                [
+                  "Plateaus",
+                  "27%",
+                  "Reserves of minerals, fossil fuels, forests"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Resource",
+            "definition_or_meaning": "Everything available in the environment that can be used to satisfy human needs, provided it is technologically accessible, economically feasible, and culturally acceptable.",
+            "si_unit_or_notation": "Noun",
+            "example_or_application": "Minerals and water turned into usable assets through human technology."
+          },
+          {
+            "term_or_concept": "Sustainable Development",
+            "definition_or_meaning": "Development that takes place without damaging the environment and without compromising the needs of future generations.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Adopting renewable solar energy instead of depleting fossil fuels."
+          },
+          {
+            "term_or_concept": "Net Sown Area",
+            "definition_or_meaning": "Total physical extent of land on which crops are sown and harvested during an agricultural year.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "India's net sown area accounts for roughly 54% of total reporting area including fallow land."
+          },
+          {
+            "term_or_concept": "Bad Land",
+            "definition_or_meaning": "Land cut by running water into deep channels (gullies) making it unfit for cultivation.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Ravines of the Chambal river basin."
+          },
+          {
+            "term_or_concept": "Gross Cropped Area Ratio",
+            "definition_or_meaning": "Gross Cropped Area = Net Sown Area + Area Sown More Than Once in the Agricultural Year",
+            "si_unit_or_notation": "Net Sown Area (NSA), Area cropped multiple times (ACM)",
+            "example_or_application": "If NSA is 100 hectares and 30 hectares are cropped twice, GCA is 130 hectares."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Q1",
+              "question": "What is the main objective of Agenda 21?",
+              "answer": "The main objective of Agenda 21, signed at the 1992 Rio Earth Summit, is to achieve global sustainable development by combating environmental degradation, poverty, and disease through global cooperation, mutual needs, and shared responsibilities, with every local government drawing its own local Agenda 21."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Which one of the following soils is ideal for growing cotton?",
+              "options": [
+                "A. Alluvial Soil",
+                "B. Black Soil",
+                "C. Red Soil",
+                "D. Laterite Soil"
+              ],
+              "answer": "B. Black Soil",
+              "explanation": "Black soil (Regur soil) is clayey, retains moisture well, and is rich in calcium carbonate and magnesium, making it ideal for cotton."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Explain the three steps involved in resource planning in India.",
+              "answer": "1. Identification and inventory of resources through surveying, mapping, and qualitative/quantitative estimation.\n2. Evolving a planning structure endowed with appropriate technology, skill, and institutional setup.\n3. Matching resource development plans with overall national development plans."
+            }
+          ],
+          "analytical_reasoning_questions": [],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Describe five methods of soil conservation suitable for different topographical regions of India.",
+              "answer": "1. Contour Ploughing: Ploughing along contour lines on hill slopes decelerates water runoff.\n2. Terrace Farming: Cutting steps on mountain slopes reduces water velocity and soil loss (common in Western Himalayas).\n3. Strip Cropping: Planting grass strips between cultivated crops breaks wind velocity.\n4. Shelter Belts: Rows of trees planted along field borders stabilize soil and sand dunes in dry areas (e.g. Rajasthan).\n5. Afforestation: Tree planting on degraded lands locks topsoil with roots."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "In western Uttar Pradesh and Punjab, intensive agriculture and over-irrigation have caused waterlogging, leading to increased soil salinity and alkalinity.",
+              "qa": [
+                {
+                  "question": "Identify the primary human activity causing land degradation in this case.",
+                  "answer": "Over-irrigation leading to waterlogging and soil salinization."
+                },
+                {
+                  "question": "Suggest two remedial measures to restore soil health.",
+                  "answer": "Adopting drip/sprinkler irrigation (PMKSY guidelines) and practicing crop rotation with leguminous crops."
+                }
+              ]
+            },
+            {
+              "case_scenario": "The running water cuts through the clayey soils and makes deep channels as gullies. The land becomes unfit for cultivation and is known as bad land. In the Chambal basin such lands are called ravines.",
+              "qa": [
+                {
+                  "question": "What causes the formation of bad land in the Chambal basin?",
+                  "answer": "Running water cutting through clayey soil creating deep gullies, making the land uncultivable."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Confusing 'Stock' and 'Reserves' in resource classification.",
+              "correct_fact_or_method": "Stock lacks present technology to utilize (e.g., extracting hydrogen from water for energy), whereas Reserves have accessible technology but are held for future needs."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Forest and Wildlife Resources",
+        "zero_omission_notes": {
+          "summary": "Details India's biodiversity, threats to flora and fauna, legal conservation frameworks like the Wildlife Protection Act 1972 and Project Tiger 1973, classification of forests (Reserved, Protected, Unclassed), and community-driven initiatives like Joint Forest Management and Sacred Groves.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "2.1 Conservation Frameworks in India",
+              "full_notes": "Implemented in 1972, the Indian Wildlife (Protection) Act banned hunting, protected habitats, and restricted trade. Project Tiger (1973) targeted habitat preservation for tigers whose population fell to 1,827. Forests are classified as Reserved (>50%), Protected (~1/3rd), and Unclassed.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Case Study",
+                  "title": "Sacred Groves & Community Action",
+                  "content": "Sacred Groves are virgin forest patches protected by tribal beliefs (e.g., Mundas worship Mahua and Kadamba; Bishnois protect Blackbuck and Peacocks). Chipko Movement and Beej Bachao Andolan showcase community-led ecological protection."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "Mapping National Parks & Tiger Reserves",
+            "aim_or_objective": "Locate major wildlife conservation zones on an outline map of India.",
+            "materials_or_prerequisites": [
+              "India political map",
+              "Color markers"
+            ],
+            "procedure_or_steps": [
+              "Mark Corbett (Uttarakhand), Sundarbans (West Bengal), Bandhavgarh (MP), Sariska (Rajasthan), Manas (Assam), and Periyar (Kerala).",
+              "Color code Reserved Forests vs Protected Forests by state."
+            ],
+            "observations_or_results": "Central India and Western Ghats show high concentration of permanent reserved forest estates.",
+            "conclusion_or_principle": "Geographical distribution reflects biodiversity hotspots requiring government protection."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Classification of Forest Types",
+              "labels_and_components": [
+                "Reserved Forests",
+                "Protected Forests",
+                "Unclassed Forests"
+              ],
+              "drawing_or_reading_instructions": "Draw pie chart or tree diagram splitting total forest cover into the 3 administrative types.",
+              "structural_or_conceptual_explanation": "Reserved + Protected form Permanent Forest Estates."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Forest Classification by State Dominance",
+              "headers": [
+                "Forest Type",
+                "Share of Total Forest",
+                "Dominant States"
+              ],
+              "rows": [
+                [
+                  "Reserved Forests",
+                  ">50%",
+                  "MP, J&K, AP, Uttarakhand, Kerala, Tamil Nadu, WB, Maharashtra"
+                ],
+                [
+                  "Protected Forests",
+                  "~33%",
+                  "Bihar, Haryana, Punjab, HP, Odisha, Rajasthan"
+                ],
+                [
+                  "Unclassed Forests",
+                  "Remaining",
+                  "North-eastern states, parts of Gujarat"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Reserved Forests",
+            "definition_or_meaning": "Forest lands regarded as most valuable for conservation where human activities are strictly restricted.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Madhya Pradesh has 75% of its forest cover as permanent reserved/protected forests."
+          },
+          {
+            "term_or_concept": "Joint Forest Management (JFM)",
+            "definition_or_meaning": "Programme involving local village communities in restoring and managing degraded forest lands in return for non-timber produce and timber shares.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "First formal resolution passed by Odisha state in 1988."
+          },
+          {
+            "term_or_concept": "Indian Wildlife Protection Act (1972)",
+            "definition_or_meaning": "Legal framework prohibiting hunting, establishing national parks/sanctuaries, and regulating wildlife trade.",
+            "si_unit_or_notation": "Protected species schedules (1 to 4)",
+            "example_or_application": "Enforced to protect Bengal Tigers, Rhinoceros, and Asian Elephants."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Q1",
+              "question": "What is Joint Forest Management?",
+              "answer": "Joint Forest Management (JFM) is an Indian conservation scheme formalised in 1988 (originating in Odisha) that involves local village institutions in managing and restoring degraded forests alongside the state forest department in exchange for non-timber benefits."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "In which state is Sariska Tiger Reserve located?",
+              "options": [
+                "A. Madhya Pradesh",
+                "B. Rajasthan",
+                "C. Uttarakhand",
+                "D. Kerala"
+              ],
+              "answer": "B. Rajasthan",
+              "explanation": "Sariska Tiger Reserve is located in Alwar district, Rajasthan."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Differentiate between Reserved Forests and Protected Forests.",
+              "answer": "Reserved Forests account for more than 50% of forest land and are strictly guarded for timber and conservation with human entry prohibited unless permitted. Protected Forests account for almost 1/3rd of total forest area and are protected against any further depletion."
+            }
+          ],
+          "analytical_reasoning_questions": [],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Explain the role of local communities in the conservation of forest and wildlife in India.",
+              "answer": "1. Chipko Movement: Villagers in Himalayas successfully resisted deforestation.\n2. Sariska Tiger Reserve: Villagers fought against mining citing Wildlife Protection Act.\n3. Bhairodev Dakav 'Sonchuri': 5 villages in Alwar (Rajasthan) declared 1,200 hectares of forest as protected with their own rules against hunting.\n4. Beej Bachao Andolan & Navdanya: Promoted organic crop diversity in Tehri.\n5. Sacred Groves: Traditional nature worship by Mundas, Santhals, and Bishnois protecting native species."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "In Odisha, JFM village committees work with government officials to protect degraded forest land, receiving a share in harvested timber.",
+              "qa": [
+                {
+                  "question": "Why is community inclusion vital for long-term ecological sustainability?",
+                  "answer": "Local populations directly depend on forest resources for livelihood; giving them stewardship and economic benefits ensures effective local vigilance against illegal logging and poaching."
+                }
+              ]
+            },
+            {
+              "case_scenario": "In 1973, the authorities realised that the tiger population had dwindled to 1,827 from an estimated 55,000 at the turn of the century.",
+              "qa": [
+                {
+                  "question": "What major initiative was launched in response to this population decline?",
+                  "answer": "Project Tiger was launched in 1973 to save tigers and preserve biotypes."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Assuming National Parks and Wildlife Sanctuaries are privately owned.",
+              "correct_fact_or_method": "Both are government-owned and managed under administrative forest categories (Reserved/Protected)."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Water Resources",
+        "zero_omission_notes": {
+          "summary": "Explores freshwater availability, causes of water scarcity, multi-purpose river valley projects (Bhakra Nangal, Hirakud, Sardar Sarovar), associated social/environmental drawbacks, and traditional/modern rainwater harvesting techniques (Tankas, Khadins, Johads, Guls/Kuls, Bamboo Drip Irrigation).",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "3.1 Multi-Purpose River Projects & Scarcity",
+              "full_notes": "Water scarcity stems from over-exploitation, population growth, urbanization, and pollution. Multi-purpose dams integrate flood control, irrigation, hydel power, and navigation. However, they trigger sedimentation, soil salinization, habitat destruction, inter-state conflicts (e.g., Krishna-Godavari dispute over Koyna diversion), and displacement of local communities.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Historical Note",
+                  "title": "Hydraulic Structures in Ancient India",
+                  "content": "1st century B.C. Sringaverapura near Allahabad built floodwater harvesting systems for the Ganga. Chandragupta Maurya built dams/lakes. Bhopal Lake built in 11th century; Hauz Khas tank built by Iltutmish in 14th century."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "3.2 Rainwater Harvesting Practices",
+              "full_notes": "Traditional systems include Guls/Kuls in Western Himalayas, Khadins in Jaisalmer, Johads in Rajasthan, rooftop Tankas in Bikaner/Phalodi/Barmer (storing 'palar pani'), and Bamboo Drip Irrigation in Meghalaya (transporting 18-20L to 20-80 drops/min). Gendathur village (Mysuru) has 200 rooftop harvesting households. Tamil Nadu legally mandates rooftop harvesting.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "State Mandate",
+                  "title": "Tamil Nadu Legal Provision",
+                  "content": "Tamil Nadu is the first Indian state to make rooftop rainwater harvesting compulsory for all houses with legal penalties for defaulters."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "Rooftop Rainwater Harvesting Model Setup",
+            "aim_or_objective": "Demonstrate the filtration and underground storage mechanism of rooftop rainwater.",
+            "materials_or_prerequisites": [
+              "Sloping rooftop model",
+              "PVC pipes",
+              "Sand & brick filter box",
+              "Sump tank"
+            ],
+            "procedure_or_steps": [
+              "Direct water flow down the sloping roof pipe into a multi-stage sand/brick filter.",
+              "Route filtered water to a main underground storage tank (tanka).",
+              "Direct overflow from the sump into an abandoned dugwell to recharge groundwater."
+            ],
+            "observations_or_results": "Sand-brick filter traps particulate debris, supplying clear water to the sump.",
+            "conclusion_or_principle": "Simple gravity-based filtration efficiently recharges aquifers and conserves domestic water."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Rooftop Rainwater Harvesting System (Tanka)",
+              "labels_and_components": [
+                "Sloping roof",
+                "PVC pipe",
+                "First flush diverter",
+                "Underground Tanka",
+                "Handpump recharge link"
+              ],
+              "drawing_or_reading_instructions": "Illustrate roof connected by pipe leading to underground tank inside house courtyard.",
+              "structural_or_conceptual_explanation": "First rain spell is discarded to clean roof surface."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Traditional Water Harvesting Systems in India",
+              "headers": [
+                "Region",
+                "System Name",
+                "Primary Mechanism / Purpose"
+              ],
+              "rows": [
+                [
+                  "Western Himalayas",
+                  "Guls / Kuls",
+                  "Diversion channels for hill agriculture"
+                ],
+                [
+                  "Arid Rajasthan (Jaisalmer)",
+                  "Khadins / Johads",
+                  "Rain-fed storage structures moistening agricultural soil"
+                ],
+                [
+                  "Semi-arid Rajasthan",
+                  "Tankas",
+                  "Underground circular tanks storing palar pani"
+                ],
+                [
+                  "Meghalaya",
+                  "Bamboo Drip Irrigation",
+                  "Gravity-fed bamboo pipes delivering 20-80 drops/min"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Dam",
+            "definition_or_meaning": "A barrier across flowing water that obstructs, directs, or retards flow, creating a reservoir or impoundment.",
+            "si_unit_or_notation": "Noun",
+            "example_or_application": "Hirakud dam on the Mahanadi river integrates flood control with irrigation."
+          },
+          {
+            "term_or_concept": "Palar Pani",
+            "definition_or_meaning": "Local Rajasthani term for pure rainwater collected in underground tankas.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Considered the purest form of natural drinking water in arid regions."
+          },
+          {
+            "term_or_concept": "Bamboo Drip Efficiency Ratio",
+            "definition_or_meaning": "Inflow: 18–20 Litres/min -> Discharge: 20–80 drops/min at plant root over hundreds of meters",
+            "si_unit_or_notation": "Inflow rate (L/min), Outlet drip rate (drops/min)",
+            "example_or_application": "Used in Meghalaya to irrigate black pepper crops on steep slopes."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Q2",
+              "question": "Compare the advantages and disadvantages of multi-purpose river projects.",
+              "answer": "Advantages: Irrigation, hydel power generation, flood control, water supply, fish breeding, and inland navigation.\nDisadvantages: Submergence of forests/land, displacement of local communities, river bed siltation, loss of aquatic life habitats, soil salinization, and inter-state disputes."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Which state has made rooftop rainwater harvesting structure compulsory for all houses?",
+              "options": [
+                "A. Rajasthan",
+                "B. Karnataka",
+                "C. Tamil Nadu",
+                "D. Gujarat"
+              ],
+              "answer": "C. Tamil Nadu",
+              "explanation": "Tamil Nadu is the first state in India to mandate rooftop rainwater harvesting legally."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Why is rooftop rainwater harvesting declining in western Rajasthan?",
+              "answer": "The availability of ample surface water from the perennial Indira Gandhi Canal has led to a decline in rooftop tanka usage, though some households maintain them due to preference for the natural taste of palar pani."
+            }
+          ],
+          "analytical_reasoning_questions": [],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Discuss how traditional rainwater harvesting systems adapt to specific ecological conditions in India.",
+              "answer": "1. Hill/Mountain Regions: Guls/Kuls divert glacial/stream water for crop irrigation.\n2. Flood Plains of Bengal: Inundation channels divert flood waters to agricultural fields.\n3. Arid Regions (Rajasthan): Khadins and Johads trap rainwater in agricultural fields to moisten soil.\n4. Semi-Arid Homes: Underground Tankas collect rooftop runoff for pure drinking water (palar pani).\n5. North-East Hills (Meghalaya): Bamboo Drip systems transport spring water across rugged terrain with minimal evaporation."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "The Krishna-Godavari dispute arose due to Maharashtra's diversion of Koyna river water for a hydel power project, reducing downstream flow to Karnataka and Andhra Pradesh.",
+              "qa": [
+                {
+                  "question": "Explain how multi-purpose projects can trigger regional conflicts.",
+                  "answer": "Diversion of water upstream for power or irrigation depletes water volume available for downstream states, harming their agricultural and industrial sectors."
+                }
+              ]
+            },
+            {
+              "case_scenario": "In Gendathur, a remote backward village in Mysuru, Karnataka, villagers have installed rooftop rainwater harvesting systems in nearly 200 households.",
+              "qa": [
+                {
+                  "question": "What distinction did Gendathur village earn?",
+                  "answer": "It earned the rare distinction of being extremely rich in rainwater harvesting."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Believing dams only store water for irrigation.",
+              "correct_fact_or_method": "Modern dams are multi-purpose projects integrating electricity generation, flood control, recreation, municipal water supply, and fish breeding."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Agriculture",
+        "zero_omission_notes": {
+          "summary": "Covers farming types in India (Primitive Subsistence/Slash and Burn, Intensive Subsistence, Commercial, Plantation), cropping seasons (Rabi, Kharif, Zaid), major food/beverage/cash crops, institutional/technological reforms (Green/White Revolution, Bhoodan-Gramdan movement by Vinoba Bhave), and economic challenges.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "4.1 Types of Farming & Cropping Seasons",
+              "full_notes": "Primitive subsistence relies on hoe/dao/digging sticks and slash-and-burn ('Jhumming' in NE states, 'Milpa', 'Podu', 'Pamlou'). Intensive subsistence features high population pressure and biochemical inputs. Commercial farming uses HYV seeds/fertilisers. Plantation grows single crops on large scales (tea, coffee, rubber, sugarcane). Seasons: Rabi (Oct-Dec to Apr-Jun: wheat, barley), Kharif (Monsoon onset to Sep-Oct: paddy, maize), Zaid (Summer: watermelon, cucumber).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Social Movement",
+                  "title": "Bhoodan - Gramdan (Blood-less Revolution)",
+                  "content": "Initiated by Vinoba Bhave at Pochampalli (AP). Shri Ram Chandra Reddy offered 80 acres of land to 80 landless villagers (Bhoodan). Zamindars offering entire villages were termed Gramdan."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "Crop Classification and Seasonal Mapping",
+            "aim_or_objective": "Categorize major Indian crops into Rabi, Kharif, and Zaid seasons.",
+            "materials_or_prerequisites": [
+              "Crop sample chart",
+              "Indian agricultural map"
+            ],
+            "procedure_or_steps": [
+              "Group crops: Paddy, Maize, Cotton, Jute = Kharif; Wheat, Gram, Mustard = Rabi; Watermelon, Cucumber = Zaid.",
+              "Plot main rice-growing coastal belts and wheat-growing north-western plains."
+            ],
+            "observations_or_results": "Wheat distribution aligns with winter precipitation from Western Temperate Cyclones.",
+            "conclusion_or_principle": "Cropping patterns depend on temperature, soil moisture, and rainfall regimes."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Agricultural Cropping Seasons Calendar",
+              "labels_and_components": [
+                "Rabi (Oct-June)",
+                "Kharif (June-Oct)",
+                "Zaid (March-June)"
+              ],
+              "drawing_or_reading_instructions": "Draw circular 12-month wheel marking sowing and harvesting windows.",
+              "structural_or_conceptual_explanation": "Zaid forms a short summer gap between Rabi harvest and Kharif monsoon onset."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Major Crops & Geographical Requirements",
+              "headers": [
+                "Crop",
+                "Temperature",
+                "Rainfall / Climate",
+                "Key Producing States"
+              ],
+              "rows": [
+                [
+                  "Rice",
+                  ">25°C",
+                  ">100 cm (High humidity)",
+                  "WB, UP, Punjab, AP, Odisha, Bihar"
+                ],
+                [
+                  "Wheat",
+                  "10-15°C (growing), 21-26°C (ripening)",
+                  "50-75 cm (Bright sunshine)",
+                  "Punjab, Haryana, UP, MP, Rajasthan"
+                ],
+                [
+                  "Sugarcane",
+                  "21°C - 27°C",
+                  "75-100 cm (Hot & humid)",
+                  "UP, Maharashtra, Karnataka, TN"
+                ],
+                [
+                  "Tea",
+                  "20°C - 30°C",
+                  "150-200 cm (Frequent showers, frost-free)",
+                  "Assam, WB (Darjeeling), TN, Kerala"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Jhumming",
+            "definition_or_meaning": "Slash and burn primitive subsistence agriculture practiced in North-Eastern states of India.",
+            "si_unit_or_notation": "Noun",
+            "example_or_application": "Clearing small forest patches to grow food crops until soil fertility drops."
+          },
+          {
+            "term_or_concept": "Golden Fibre",
+            "definition_or_meaning": "Term referring to Jute crop due to its color and high economic value in making gunny bags, ropes, and mats.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Grown in fertile, well-drained floodplains of West Bengal, Bihar, and Assam."
+          },
+          {
+            "term_or_concept": "Land Reform & Holding Consolidation Policy",
+            "definition_or_meaning": "First Five Year Plan focus: Abolition of Zamindari + Consolidation of fragmented land holdings caused by inheritance laws.",
+            "si_unit_or_notation": "Fragmented plots -> Single operational farm unit",
+            "example_or_application": "Enacted post-independence to make farming mechanization economically viable."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Q3",
+              "question": "Enlist the various institutional reform programmes introduced by the government for farmers.",
+              "answer": "1. Collectivisation and consolidation of land holdings.\n2. Abolition of Zamindari system.\n3. Introduction of Kissan Credit Card (KCC) and Personal Accident Insurance Scheme (PAIS).\n4. Provision of crop insurance against drought, flood, and disease.\n5. Announcement of Minimum Support Price (MSP) and remunerative procurement prices."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Which of the following is a leguminous crop that helps restore soil fertility?",
+              "options": [
+                "A. Pulses",
+                "B. Rice",
+                "C. Millets",
+                "D. Sugarcane"
+              ],
+              "answer": "A. Pulses",
+              "explanation": "Pulses fix atmospheric nitrogen into the soil (except arhar), restoring natural fertility."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "What is plantation agriculture? Mention two key features.",
+              "answer": "Plantation agriculture is a form of commercial farming where a single crop is grown over a vast land area.\nKey features: 1. Requires large capital investments and migrant labor.\n2. Serves as an interface between agriculture and industry, as all produce is used as raw material."
+            }
+          ],
+          "analytical_reasoning_questions": [],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Describe the technical and institutional reforms introduced in Indian agriculture post-independence.",
+              "answer": "1. Institutional Reforms: Land consolidation, collectivisation, abolition of Zamindari, First Five Year Plan land focus.\n2. Technological Reforms: Green Revolution (HYV seeds, chemical fertilizers, pesticides) and White Revolution (Operation Flood).\n3. Financial Security: Kissan Credit Card (KCC), Personal Accident Insurance Scheme (PAIS), crop insurance against natural calamities.\n4. Price Support: Minimum Support Price (MSP) to eliminate exploitation by middlemen.\n5. Media & Weather Updates: Special weather bulletins and agricultural programs broadcast on radio and TV."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Rice is a commercial crop in Punjab and Haryana due to high irrigation and chemical inputs, whereas in Odisha, it remains a subsistence crop.",
+              "qa": [
+                {
+                  "question": "Explain why the degree of commercialization of a crop varies across regions.",
+                  "answer": "It depends on farm holding sizes, availability of capital, irrigation infrastructure, modern technological inputs, and local market demand."
+                }
+              ]
+            },
+            {
+              "case_scenario": "Shri Ram Chandra Reddy stood up and offered 80 acres of land to be distributed among 80 land-less villagers. This act was known as 'Bhoodan'.",
+              "qa": [
+                {
+                  "question": "Who initiated the overall Bhoodan-Gramdan movement?",
+                  "answer": "Vinoba Bhave."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Mislabling Wheat as a Kharif crop.",
+              "correct_fact_or_method": "Wheat requires cool climate during growth and bright sunshine at harvest, making it a Rabi crop (sown Oct-Dec, harvested Apr-June)."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Minerals and Energy Resources",
+        "zero_omission_notes": {
+          "summary": "Examines mineral definition, occurrence in geological formations (veins/lodes, beds/layers, residual masses, placer deposits), Ferrous minerals (Iron Ore, Manganese), Non-Ferrous (Copper, Bauxite), Non-Metallic (Mica), hazards of mining ('killer industry'), and Conventional/Non-Conventional energy resources.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "5.1 Mode of Occurrence & Mineral Classification",
+              "full_notes": "Minerals occur in: 1. Igneous/Metamorphic cracks/veins/lodes (tin, copper, lead, zinc). 2. Sedimentary beds/strata (coal, iron ore, gypsum). 3. Residual crust from surface rock weathering (bauxite). 4. Placer deposits in valley sands (gold, silver, platinum). 5. Ocean waters/floors (salt, magnesium, manganese nodules).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Environmental & Safety Danger",
+                  "title": "Hazards of Mining (Killer Industry)",
+                  "content": "Mining causes coal dust inhalation leading to black lung disease, mine roof collapses, inundation of water, and underground fires. It degrades land via overburden dumping and pollutes water with mineral dust."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "5.2 Energy Resources",
+              "full_notes": "Conventional: Coal (Anthracite > Bituminous > Lignite > Peat), Petroleum (Mumbai High 63%, Gujarat 18%, Assam 16%), Natural Gas, Hydel/Thermal power. Non-Conventional: Solar (photovoltaic), Wind (Nagarcoil to Madurai in TN), Nuclear (Uranium/Thorium in Jharkhand, Rajasthan, Kerala Monazite sands), Biogas (Gobar gas), Tidal, Geothermal (Parvati valley in HP, Puga valley in Ladakh).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Geological Distribution",
+                  "title": "Iron Ore Belts in India",
+                  "content": "1. Odisha-Jharkhand belt (Badampahar mines). 2. Durg-Bastar-Chandrapur belt (Bailadila mines exporting to Japan/South Korea via Vishakhapatnam). 3. Ballari-Chitradurga-Chikkamagaluru-Tumakuru belt (Kudremukh 100% export slurry). 4. Maharashtra-Goa belt (Marmagao port)."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "Testing Solar Energy vs Conventional Heating",
+            "aim_or_objective": "Demonstrate light energy conversion into thermal power using photovoltaic principles.",
+            "materials_or_prerequisites": [
+              "Solar cooker / PV cell unit",
+              "Thermometer",
+              "Water container"
+            ],
+            "procedure_or_steps": [
+              "Place solar cooker reflector facing direct sunlight.",
+              "Record water temperature every 15 minutes for 2 hours.",
+              "Compare heating efficiency against a conventional electric coil."
+            ],
+            "observations_or_results": "Solar unit steadily raises temperature above 80°C without fuel consumption or smoke emission.",
+            "conclusion_or_principle": "Solar energy is an efficient, non-polluting renewable energy substitute."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Classification of Minerals Flowchart",
+              "labels_and_components": [
+                "Metallic (Ferrous, Non-Ferrous, Precious)",
+                "Non-Metallic (Mica, Salt)",
+                "Energy Minerals (Coal, Petroleum, Natural Gas)"
+              ],
+              "drawing_or_reading_instructions": "Draw three main trunk branches splitting into metallic sub-types.",
+              "structural_or_conceptual_explanation": "Ferrous contains iron; Non-ferrous contains copper/bauxite."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Coal Varieties and Carbon Content",
+              "headers": [
+                "Type of Coal",
+                "Carbon / Moisture Quality",
+                "Economic Characteristics"
+              ],
+              "rows": [
+                [
+                  "Anthracite",
+                  "Highest quality hard coal (>80% carbon)",
+                  "Rare, high heating value"
+                ],
+                [
+                  "Bituminous",
+                  "High carbon content, buried deep",
+                  "Most popular metallurgical coal used in blast furnaces"
+                ],
+                [
+                  "Lignite",
+                  "Low grade brown coal, high moisture",
+                  "Soft coal found in Neyveli (Tamil Nadu)"
+                ],
+                [
+                  "Peat",
+                  "Low carbon, high moisture",
+                  "Decaying wood in swamps, low heating capacity"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Mineral",
+            "definition_or_meaning": "A naturally occurring homogenous substance with a definable internal crystal structure.",
+            "si_unit_or_notation": "Noun",
+            "example_or_application": "Found from hard diamonds to soft talc."
+          },
+          {
+            "term_or_concept": "Magnetite",
+            "definition_or_meaning": "Finest iron ore quality with extremely high iron content up to 70% and valuable magnetic qualities.",
+            "si_unit_or_notation": "Noun",
+            "example_or_application": "Used in the electrical industry."
+          },
+          {
+            "term_or_concept": "Placer Deposits",
+            "definition_or_meaning": "Mineral deposits found in sands of valley floors and hill bases that are not corroded by water.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Alluvial deposits containing gold, silver, tin, and platinum."
+          },
+          {
+            "term_or_concept": "Iron Ore Ratio in Steel Making",
+            "definition_or_meaning": "Iron Ore : Coking Coal : Limestone = 4 : 2 : 1 + Manganese (for hardening)",
+            "si_unit_or_notation": "Raw material proportions by weight",
+            "example_or_application": "Used to determine location economy of iron and steel plants."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Q2",
+              "question": "Distinguish between Ferrous and Non-Ferrous minerals.",
+              "answer": "Ferrous minerals contain iron content, account for 3/4th of total metallic mineral production value, and provide a strong base for metallurgical industries (e.g. Iron Ore, Manganese).\nNon-ferrous minerals lack iron, play key roles in electrical and engineering industries, and have limited reserves in India (e.g. Copper, Bauxite, Lead, Zinc, Gold)."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Which leading mine in Odisha is famous for high-grade Hematite iron ore?",
+              "options": [
+                "A. Bailadila",
+                "B. Badampahar",
+                "C. Kudremukh",
+                "D. Koderma"
+              ],
+              "answer": "B. Badampahar",
+              "explanation": "Badampahar mines in Mayurbhanj district, Odisha, yield high-grade hematite ore."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Why is solar energy considered to have a bright future in India?",
+              "answer": "1. India is a tropical nation with abundant year-round sunlight.\n2. Photovoltaic technology converts sunlight directly into electricity.\n3. Reduces rural dependence on firewood and dung cakes, preserving natural forests and agricultural manure."
+            }
+          ],
+          "analytical_reasoning_questions": [],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Describe the non-conventional sources of energy available in India and their distribution.",
+              "answer": "1. Solar Energy: Photovoltaic conversion widely adopted in rural milk-testing and water heating.\n2. Wind Energy: Largest cluster from Nagarcoil to Madurai in Tamil Nadu; also Jaisalmer (Rajasthan).\n3. Nuclear Energy: Uranium/Thorium in Jharkhand, Rajasthan (Aravallis), and Kerala Monazite sands.\n4. Biogas: 'Gobar Gas' plants in rural areas decomposing organic/cattle waste for clean fuel and organic manure.\n5. Tidal Energy: Oceanic tides harnessed in Gulf of Khambhat, Gulf of Kuchchh (Gujarat), and Sunderbans (WB).\n6. Geothermal Energy: Experimental power projects in Parvati Valley (Manikaran, HP) and Puga Valley (Ladakh)."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Coal is bulky and loses weight on use as it converts to ash. Heavy industries are situated directly on or near coalfields.",
+              "qa": [
+                {
+                  "question": "Explain the industrial location principle illustrated here.",
+                  "answer": "Weight-losing raw material industries locate near raw material sources to minimize heavy freight transport costs."
+                }
+              ]
+            },
+            {
+              "case_scenario": "Monazite sands of Kerala are rich in Thorium.",
+              "qa": [
+                {
+                  "question": "Which energy generation process utilizes Thorium?",
+                  "answer": "Nuclear or Atomic Energy generation."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Mislabling Bauxite as a ferrous mineral.",
+              "correct_fact_or_method": "Bauxite is a non-ferrous mineral ore from which Aluminium is extracted."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Manufacturing Industries",
+        "zero_omission_notes": {
+          "summary": "Evaluates manufacturing as the backbone of economic development, industrial location factors (raw material, labor, capital, power, market), classification of industries (Agro-based vs Mineral-based, Key vs Consumer, Public/Private/Joint/Cooperative), major sectors (Textiles, Iron & Steel, Aluminium, Chemicals, Cement, IT & Electronics), industrial environmental degradation, and NTPC sustainable guidelines.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "6.1 Importance & Classification of Manufacturing",
+              "full_notes": "Manufacturing modernizes agriculture, reduces farm income dependence, earns foreign exchange, and eradicates unemployment. Industries are classified by raw material (agro/mineral), main role (basic/consumer), capital investment (small scale vs large scale), ownership (public, private, joint, cooperative), and raw material weight (heavy vs light).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Institutional Standard",
+                  "title": "NTPC Proactive EMS 14001 Framework",
+                  "content": "National Thermal Power Corporation holds ISO 14001 certification for Environment Management System. It preserves environment via ash utilization, green belts, ash pond management, and online ecological database monitoring."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "6.2 Industrial Pollution & Mitigation Measures",
+              "full_notes": "Four pollution types: Air (smoke, particulate matter), Water (chemical/dye effluents), Thermal (draining hot water into rivers damaging marine life), Noise (un-silenced machinery). Mitigation: Fitting electrostatic precipitators/scrubbers, treating hot effluents before discharge, harvesting rainwater, and using generators with silencers.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Industrial Location",
+                  "title": "Agglomeration Economies",
+                  "content": "Many industries tend to come together to make use of the advantages offered by urban centers such as banking, transport, insurance, and labor. These are termed agglomeration economies."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "Industrial Effluent Treatment Simulation",
+            "aim_or_objective": "Demonstrate primary, secondary, and tertiary industrial wastewater treatment steps.",
+            "materials_or_prerequisites": [
+              "Turbid effluent water sample",
+              "Coagulants (alum)",
+              "Filter sand",
+              "Aeration pump"
+            ],
+            "procedure_or_steps": [
+              "Primary Treatment: Mechanical screening, grinding, and sedimentation.",
+              "Secondary Treatment: Biological aeration to decompose organic pollutants.",
+              "Tertiary Treatment: Chemical treatment, recycling treated water for industrial re-use."
+            ],
+            "observations_or_results": "Three-stage treatment converts toxic effluent into clear water safe for discharge.",
+            "conclusion_or_principle": "Recycling water reduces industrial freshwater consumption and prevents thermal/chemical river pollution."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Industrial Location Decision Inputs",
+              "labels_and_components": [
+                "Raw Material",
+                "Labour",
+                "Capital",
+                "Power",
+                "Market",
+                "Transport"
+              ],
+              "drawing_or_reading_instructions": "Draw central factory box surrounded by incoming factor arrows leading to market outlet.",
+              "structural_or_conceptual_explanation": "Government policy and specialized labor also dictate location."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Types of Industrial Environmental Pollution",
+              "headers": [
+                "Pollution Type",
+                "Chief Causes / Sources",
+                "Control / Mitigation Technologies"
+              ],
+              "rows": [
+                [
+                  "Air Pollution",
+                  "SO2, CO, dust particulate emissions from smoke stacks",
+                  "Electrostatic precipitators, fabric filters, scrubbers"
+                ],
+                [
+                  "Water Pollution",
+                  "Organic & inorganic chemical effluents, dyes, heavy metals",
+                  "Primary screening, secondary biological aeration, tertiary chemical recycling"
+                ],
+                [
+                  "Thermal Pollution",
+                  "Hot water discharge from power plants into rivers",
+                  "Cooling ponds and cooling towers before discharge"
+                ],
+                [
+                  "Noise Pollution",
+                  "Un-silenced generators, industrial machinery",
+                  "Generators with silencers, earplugs, sound-absorbing materials"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Basic / Key Industry",
+            "definition_or_meaning": "Industries that supply their products as raw materials to manufacture other finished goods.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Iron and Steel industry supplying machinery to engineering sectors."
+          },
+          {
+            "term_or_concept": "Agglomeration Economies",
+            "definition_or_meaning": "Cost savings and advantages resulting from clustering industries together near urban centers.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Clustering of textile mills around Mumbai and Gujarat ports."
+          },
+          {
+            "term_or_concept": "Industrial Location Viability Rule",
+            "definition_or_meaning": "Ideal Location = Minimum Raw Material Transport Cost + Minimum Production Cost + Minimum Distribution Cost to Market",
+            "si_unit_or_notation": "Cost components of industrial supply chain",
+            "example_or_application": "Cement plants located in Gujarat for market access to Gulf countries."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Q2",
+              "question": "What are basic industries? Give an example.",
+              "answer": "Basic or key industries are those that supply their manufactured products as raw materials to other manufacturing industries to produce finished goods. Example: Iron and Steel Industry, Aluminium Smelting."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Which city is known as the electronic capital of India?",
+              "options": [
+                "A. Mumbai",
+                "B. Bengaluru",
+                "C. Noida",
+                "D. Hyderabad"
+              ],
+              "answer": "B. Bengaluru",
+              "explanation": "Bengaluru is the primary hub of India's IT and electronic industry."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Why has the sugar industry shifted towards southern and western states like Maharashtra?",
+              "answer": "1. Sugarcane produced in southern regions has higher sucrose content.\n2. Cooler climate provides a longer crushing season.\n3. Cooperative sugar mills are more successful in these states."
+            }
+          ],
+          "analytical_reasoning_questions": [],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Explain five measures to minimize environmental degradation caused by manufacturing industries.",
+              "answer": "1. Water Management: Minimizing water use by reusing and recycling in two or more successive stages.\n2. Harvesting Rainwater: Harvesting rainwater to meet industrial water requirements.\n3. Effluent Treatment: Treating hot water and chemical effluents before releasing them into rivers (primary mechanical, secondary biological, tertiary chemical treatment).\n4. Air Pollution Control: Fitting factory smoke stacks with electrostatic precipitators, fabric filters, and scrubbers.\n5. Noise Abatement: Redesigning machinery, fitting generators with silencers, and using sound-absorbing wall materials."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "In recent years, software technology parks have developed across 18 locations in India, generating massive employment and foreign exchange.",
+              "qa": [
+                {
+                  "question": "Analyze the socio-economic contribution of the IT sector in India.",
+                  "answer": "It employs over 30% women, fosters rapid urban service growth, and earns substantial foreign exchange through software exports."
+                }
+              ]
+            },
+            {
+              "case_scenario": "NTPC is a major power providing corporation in India. It has ISO certification for EMS 14001.",
+              "qa": [
+                {
+                  "question": "What does ISO 14001 certification stand for?",
+                  "answer": "Environment Management System (EMS) certification."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Classifying Sugar Industry as a Mineral-based industry.",
+              "correct_fact_or_method": "Sugar Industry is Agro-based because its primary raw material (sugarcane) comes directly from agricultural crops."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Lifelines of National Economy",
+        "zero_omission_notes": {
+          "summary": "Details how modern transport (Roadways, Railways, Pipelines, Waterways, Airways), communication networks (Postal channels, Telecom, Digital India), and international trade/tourism function as economic lifelines connecting supply and demand locales.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "7.1 Modes of Transportation",
+              "full_notes": "Roadways (62.16 lakh km network) precede railways due to lower construction costs and door-to-door flexibility. Road types: Golden Quadrilateral Super Highways (NHAI 6-lane connecting Delhi-Mumbai-Chennai-Kolkata), National Highways (CPWD), State Highways (PWD), District/Rural Roads (PMGSY), Border Roads (BRO). Railways: 17 zones, principal passenger/freight mover since 1853 (Mumbai to Thane 34km). Pipelines: transport crude oil, gas, and slurry (HVJ pipeline). Waterways: 111 National Waterways (NW-1 Ganga, NW-2 Brahmaputra). Major Ports: 12 major (Deendayal/Kandla tidal port, Mumbai, Mormugao, Mangaluru, Kochi, Tuticorin, Chennai, Vishakhapatnam, Paradwip, Kolkata/Haldia). Airways: Pawanhans helicopter services in rugged NE terrain.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Government Programme",
+                  "title": "Digital India & Communication",
+                  "content": "Digital India prepares India for a knowledge-based transformation: IT (Indian Talent) + IT (Information Technology) = IT (India Tomorrow). Indian postal network has 6 quick mail channels (Rajdhani, Metro, Green, Business, Bulk Mail, Periodical)."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "7.2 International Trade & Tourism",
+              "full_notes": "Trade is the exchange of goods across markets. International trade is considered the 'economic barometer' of a country. Balance of trade = Export value - Import value (Favorable if Exports > Imports). Tourism as a trade promotes national integration, supports local handicrafts, and earns foreign exchange through schemes like Swadesh Darshan 2.0 and PRASHAD.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Economic Indicator",
+                  "title": "Balance of Trade Definition",
+                  "content": "The difference between the value of a country's exports and imports. If export value exceeds import value, it is favorable; if import value exceeds export value, it is unfavorable."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "Transport Network Map Plotting",
+            "aim_or_objective": "Plot major sea ports and international airports on an outline map of India.",
+            "materials_or_prerequisites": [
+              "India political map",
+              "Port/Airport symbols key"
+            ],
+            "procedure_or_steps": [
+              "Mark Ports: Kandla (Deendayal), Mumbai, Marmugao, New Mangalore, Kochi, Tuticorin, Chennai, Vishakhapatnam, Paradwip, Haldia.",
+              "Mark Airports: Indira Gandhi (Delhi), Chhatrapati Shivaji (Mumbai), Netaji Subhash Chandra Bose (Kolkata), Meenam Bakkam (Chennai)."
+            ],
+            "observations_or_results": "East coast features deep landlocked ports (Vishakhapatnam); West coast features tidal and natural harbor ports (Kandla, Mumbai).",
+            "conclusion_or_principle": "Coastal geography determines port construction suitability and trade handling capacity."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Means of Transport Hierarchy Tree",
+              "labels_and_components": [
+                "Land (Roadways, Railways, Pipelines)",
+                "Water (Inland, Overseas)",
+                "Air (Domestic, International)"
+              ],
+              "drawing_or_reading_instructions": "Draw three main domain branches expanding into sub-modes.",
+              "structural_or_conceptual_explanation": "Pipelines transport both liquid/gas fuels and solid slurries."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "National Waterways (NW) of India",
+              "headers": [
+                "Waterway Designation",
+                "Stretch Description",
+                "Total Length"
+              ],
+              "rows": [
+                [
+                  "National Waterway No. 1",
+                  "Ganga river between Prayagraj and Haldia",
+                  "1620 km"
+                ],
+                [
+                  "National Waterway No. 2",
+                  "Brahmaputra river between Sadiya and Dhubri",
+                  "891 km"
+                ],
+                [
+                  "National Waterway No. 3",
+                  "West-Coast Canal in Kerala (Kottapuram-Kollam)",
+                  "205 km"
+                ],
+                [
+                  "National Waterway No. 4",
+                  "Specified stretches of Godavari and Krishna rivers",
+                  "1078 km"
+                ],
+                [
+                  "National Waterway No. 5",
+                  "Specified stretches of Brahmani river & East Coast Canal",
+                  "588 km"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Golden Quadrilateral",
+            "definition_or_meaning": "Major 6-lane super highway project linking Delhi, Mumbai, Chennai, and Kolkata to reduce time and distance between megacities.",
+            "si_unit_or_notation": "Proper Noun",
+            "example_or_application": "Implemented and maintained by National Highways Authority of India (NHAI)."
+          },
+          {
+            "term_or_concept": "Economic Barometer",
+            "definition_or_meaning": "Term describing international trade advancement as a direct indicator of a country's financial health and prosperity.",
+            "si_unit_or_notation": "Noun Phrase",
+            "example_or_application": "Growth in foreign trade volume indicates rising economic capacity."
+          },
+          {
+            "term_or_concept": "Balance of Trade Equation",
+            "definition_or_meaning": "Balance of Trade = Total Value of Exported Goods - Total Value of Imported Goods",
+            "si_unit_or_notation": "Exports (X), Imports (M)",
+            "example_or_application": "If X = $500B and M = $450B, Net Trade Balance is +$50B (Favorable)."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Q1",
+              "question": "State any three merits of roadways over railways.",
+              "answer": "1. Roadways have much lower construction and maintenance costs compared to railway lines.\n2. Roads can easily negotiate steep gradients and undulating topography like the Himalayas.\n3. Road transport provides door-to-door service, reducing loading and unloading expenses."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Which two extreme locations are connected by the East-West Corridor?",
+              "options": [
+                "A. Mumbai and Nagpur",
+                "B. Silchar and Porbandar",
+                "C. Mumbai and Kolkata",
+                "D. Nagpur and Siliguri"
+              ],
+              "answer": "B. Silchar and Porbandar",
+              "explanation": "The East-West Corridor connects Silchar in Assam to Porbandar in Gujarat."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Why are transport and communication networks called the lifelines of a nation's economy?",
+              "answer": "1. They bridge physical distances between resource supply locales and demand consumer locales.\n2. Dense transport networks enable efficient movement of raw materials to industries and finished products to markets.\n3. Modern communication accelerates financial transactions and global trade integration."
+            }
+          ],
+          "analytical_reasoning_questions": [],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Explain the significance of Pipeline transport in India and list three major pipeline networks.",
+              "answer": "Significance: Pipelines transport crude oil, petroleum products, natural gas, and solid slurries directly from fields to inland refineries (e.g. Barauni, Mathura, Panipat) with zero trans-shipment losses or transit delays.\nMajor Networks:\n1. Upper Assam oil field to Kanpur (via Guwahati, Barauni, Allahabad).\n2. Salaya in Gujarat to Jalandhar in Punjab (via Viramgam, Mathura, Delhi, Sonipat).\n3. Hazira in Gujarat to Jagdishpur in UP (HVJ pipeline via Vapour in MP)."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Air travel is the most preferred mode of transport in the North-Eastern states of India despite its high cost.",
+              "qa": [
+                {
+                  "question": "Give geographic reasons why air transport is indispensable in North-East India.",
+                  "answer": "The region features dissected mountain relief, dense tropical forests, frequent river flooding, and international frontiers where road and rail construction is difficult or frequently disrupted."
+                }
+              ]
+            },
+            {
+              "case_scenario": "Deendayal Port, is a tidal port. It caters to the convenient handling of exports and imports of the highly productive granary and industrial belt.",
+              "qa": [
+                {
+                  "question": "What is the historical name of Deendayal Port?",
+                  "answer": "Kandla Port in Gujarat."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Confusing 'Favorable Balance of Trade' with 'Unfavorable Balance of Trade'.",
+              "correct_fact_or_method": "Favorable = Export value > Import value (earns surplus foreign exchange); Unfavorable = Import value > Export value (creates trade deficit)."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

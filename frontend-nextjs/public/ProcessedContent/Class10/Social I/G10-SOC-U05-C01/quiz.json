@@ -1,109 +1,1357 @@
 {
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_37aec1760220cac7",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_10",
+    "class_level": 10
+  },
+  "subject": "Social I",
+  "artifact": {
+    "artifact_type": "quiz",
+    "source_file_name": "14-Quiz.json",
+    "source_relative_path": "Contents/Class 10/Social I/Source Files/14-Quiz.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "da6ee135d25ac3ed3a84c4635e64d4eb621abbbf83f08a943ee98ac2698c61c3",
+    "source_semantic_sha256": "aa7fe2e1c7e42d4ccfebd005510446f872e9bb81ed2eb5d412219a85442ffa46",
+    "source_byte_length": 57024,
+    "source_encoding": "utf-8",
+    "source_field_count": 501,
+    "field_inventory": [
+      "$.subject",
+      "$.grade_level",
+      "$.total_chapters",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].level_1_easy",
+      "$.chapters[0].level_1_easy.description",
+      "$.chapters[0].level_1_easy.questions",
+      "$.chapters[0].level_1_easy.questions[0].question_id",
+      "$.chapters[0].level_1_easy.questions[0].question_type",
+      "$.chapters[0].level_1_easy.questions[0].question",
+      "$.chapters[0].level_1_easy.questions[0].options",
+      "$.chapters[0].level_1_easy.questions[0].correct_answer",
+      "$.chapters[0].level_1_easy.questions[0].explanation",
+      "$.chapters[0].level_1_easy.questions[1].question_id",
+      "$.chapters[0].level_1_easy.questions[1].question_type",
+      "$.chapters[0].level_1_easy.questions[1].question",
+      "$.chapters[0].level_1_easy.questions[1].options",
+      "$.chapters[0].level_1_easy.questions[1].correct_answer",
+      "$.chapters[0].level_1_easy.questions[1].explanation",
+      "$.chapters[0].level_1_easy.questions[2].question_id",
+      "$.chapters[0].level_1_easy.questions[2].question_type",
+      "$.chapters[0].level_1_easy.questions[2].question",
+      "$.chapters[0].level_1_easy.questions[2].options",
+      "$.chapters[0].level_1_easy.questions[2].correct_answer",
+      "$.chapters[0].level_1_easy.questions[2].explanation",
+      "$.chapters[0].level_1_easy.questions[3].question_id",
+      "$.chapters[0].level_1_easy.questions[3].question_type",
+      "$.chapters[0].level_1_easy.questions[3].question",
+      "$.chapters[0].level_1_easy.questions[3].options",
+      "$.chapters[0].level_1_easy.questions[3].correct_answer",
+      "$.chapters[0].level_1_easy.questions[3].explanation",
+      "$.chapters[0].level_2_medium",
+      "$.chapters[0].level_2_medium.description",
+      "$.chapters[0].level_2_medium.questions",
+      "$.chapters[0].level_2_medium.questions[0].question_id",
+      "$.chapters[0].level_2_medium.questions[0].question_type",
+      "$.chapters[0].level_2_medium.questions[0].question",
+      "$.chapters[0].level_2_medium.questions[0].options",
+      "$.chapters[0].level_2_medium.questions[0].correct_answer",
+      "$.chapters[0].level_2_medium.questions[0].explanation",
+      "$.chapters[0].level_2_medium.questions[1].question_id",
+      "$.chapters[0].level_2_medium.questions[1].question_type",
+      "$.chapters[0].level_2_medium.questions[1].question",
+      "$.chapters[0].level_2_medium.questions[1].options",
+      "$.chapters[0].level_2_medium.questions[1].correct_answer",
+      "$.chapters[0].level_2_medium.questions[1].explanation",
+      "$.chapters[0].level_2_medium.questions[2].question_id",
+      "$.chapters[0].level_2_medium.questions[2].question_type",
+      "$.chapters[0].level_2_medium.questions[2].question",
+      "$.chapters[0].level_2_medium.questions[2].options",
+      "$.chapters[0].level_2_medium.questions[2].correct_answer",
+      "$.chapters[0].level_2_medium.questions[2].explanation",
+      "$.chapters[0].level_3_hard",
+      "$.chapters[0].level_3_hard.description",
+      "$.chapters[0].level_3_hard.questions",
+      "$.chapters[0].level_3_hard.questions[0].question_id",
+      "$.chapters[0].level_3_hard.questions[0].question_type",
+      "$.chapters[0].level_3_hard.questions[0].question",
+      "$.chapters[0].level_3_hard.questions[0].options",
+      "$.chapters[0].level_3_hard.questions[0].correct_answer",
+      "$.chapters[0].level_3_hard.questions[0].explanation",
+      "$.chapters[0].level_3_hard.questions[1].question_id",
+      "$.chapters[0].level_3_hard.questions[1].question_type",
+      "$.chapters[0].level_3_hard.questions[1].question",
+      "$.chapters[0].level_3_hard.questions[1].options",
+      "$.chapters[0].level_3_hard.questions[1].correct_answer",
+      "$.chapters[0].level_3_hard.questions[1].explanation",
+      "$.chapters[0].level_3_hard.questions[2].question_id",
+      "$.chapters[0].level_3_hard.questions[2].question_type",
+      "$.chapters[0].level_3_hard.questions[2].question",
+      "$.chapters[0].level_3_hard.questions[2].options",
+      "$.chapters[0].level_3_hard.questions[2].correct_answer",
+      "$.chapters[0].level_3_hard.questions[2].explanation",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].level_1_easy",
+      "$.chapters[1].level_1_easy.description",
+      "$.chapters[1].level_1_easy.questions",
+      "$.chapters[1].level_1_easy.questions[0].question_id",
+      "$.chapters[1].level_1_easy.questions[0].question_type",
+      "$.chapters[1].level_1_easy.questions[0].question",
+      "$.chapters[1].level_1_easy.questions[0].options",
+      "$.chapters[1].level_1_easy.questions[0].correct_answer",
+      "$.chapters[1].level_1_easy.questions[0].explanation",
+      "$.chapters[1].level_1_easy.questions[1].question_id",
+      "$.chapters[1].level_1_easy.questions[1].question_type",
+      "$.chapters[1].level_1_easy.questions[1].question",
+      "$.chapters[1].level_1_easy.questions[1].options",
+      "$.chapters[1].level_1_easy.questions[1].correct_answer",
+      "$.chapters[1].level_1_easy.questions[1].explanation",
+      "$.chapters[1].level_1_easy.questions[2].question_id",
+      "$.chapters[1].level_1_easy.questions[2].question_type",
+      "$.chapters[1].level_1_easy.questions[2].question",
+      "$.chapters[1].level_1_easy.questions[2].options",
+      "$.chapters[1].level_1_easy.questions[2].correct_answer",
+      "$.chapters[1].level_1_easy.questions[2].explanation",
+      "$.chapters[1].level_1_easy.questions[3].question_id",
+      "$.chapters[1].level_1_easy.questions[3].question_type",
+      "$.chapters[1].level_1_easy.questions[3].question",
+      "$.chapters[1].level_1_easy.questions[3].options",
+      "$.chapters[1].level_1_easy.questions[3].correct_answer",
+      "$.chapters[1].level_1_easy.questions[3].explanation",
+      "$.chapters[1].level_2_medium",
+      "$.chapters[1].level_2_medium.description",
+      "$.chapters[1].level_2_medium.questions",
+      "$.chapters[1].level_2_medium.questions[0].question_id",
+      "$.chapters[1].level_2_medium.questions[0].question_type",
+      "$.chapters[1].level_2_medium.questions[0].question",
+      "$.chapters[1].level_2_medium.questions[0].options",
+      "$.chapters[1].level_2_medium.questions[0].correct_answer",
+      "$.chapters[1].level_2_medium.questions[0].explanation",
+      "$.chapters[1].level_2_medium.questions[1].question_id",
+      "$.chapters[1].level_2_medium.questions[1].question_type",
+      "$.chapters[1].level_2_medium.questions[1].question",
+      "$.chapters[1].level_2_medium.questions[1].options",
+      "$.chapters[1].level_2_medium.questions[1].correct_answer",
+      "$.chapters[1].level_2_medium.questions[1].explanation",
+      "$.chapters[1].level_2_medium.questions[2].question_id",
+      "$.chapters[1].level_2_medium.questions[2].question_type",
+      "$.chapters[1].level_2_medium.questions[2].question",
+      "$.chapters[1].level_2_medium.questions[2].options",
+      "$.chapters[1].level_2_medium.questions[2].correct_answer",
+      "$.chapters[1].level_2_medium.questions[2].explanation",
+      "$.chapters[1].level_3_hard",
+      "$.chapters[1].level_3_hard.description",
+      "$.chapters[1].level_3_hard.questions",
+      "$.chapters[1].level_3_hard.questions[0].question_id",
+      "$.chapters[1].level_3_hard.questions[0].question_type",
+      "$.chapters[1].level_3_hard.questions[0].question",
+      "$.chapters[1].level_3_hard.questions[0].options",
+      "$.chapters[1].level_3_hard.questions[0].correct_answer",
+      "$.chapters[1].level_3_hard.questions[0].explanation",
+      "$.chapters[1].level_3_hard.questions[1].question_id",
+      "$.chapters[1].level_3_hard.questions[1].question_type",
+      "$.chapters[1].level_3_hard.questions[1].question",
+      "$.chapters[1].level_3_hard.questions[1].options",
+      "$.chapters[1].level_3_hard.questions[1].correct_answer",
+      "$.chapters[1].level_3_hard.questions[1].explanation",
+      "$.chapters[1].level_3_hard.questions[2].question_id",
+      "$.chapters[1].level_3_hard.questions[2].question_type",
+      "$.chapters[1].level_3_hard.questions[2].question",
+      "$.chapters[1].level_3_hard.questions[2].options",
+      "$.chapters[1].level_3_hard.questions[2].correct_answer",
+      "$.chapters[1].level_3_hard.questions[2].explanation",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].level_1_easy",
+      "$.chapters[2].level_1_easy.description",
+      "$.chapters[2].level_1_easy.questions",
+      "$.chapters[2].level_1_easy.questions[0].question_id",
+      "$.chapters[2].level_1_easy.questions[0].question_type",
+      "$.chapters[2].level_1_easy.questions[0].question",
+      "$.chapters[2].level_1_easy.questions[0].options",
+      "$.chapters[2].level_1_easy.questions[0].correct_answer",
+      "$.chapters[2].level_1_easy.questions[0].explanation",
+      "$.chapters[2].level_1_easy.questions[1].question_id",
+      "$.chapters[2].level_1_easy.questions[1].question_type",
+      "$.chapters[2].level_1_easy.questions[1].question",
+      "$.chapters[2].level_1_easy.questions[1].options",
+      "$.chapters[2].level_1_easy.questions[1].correct_answer",
+      "$.chapters[2].level_1_easy.questions[1].explanation",
+      "$.chapters[2].level_1_easy.questions[2].question_id",
+      "$.chapters[2].level_1_easy.questions[2].question_type",
+      "$.chapters[2].level_1_easy.questions[2].question",
+      "$.chapters[2].level_1_easy.questions[2].options",
+      "$.chapters[2].level_1_easy.questions[2].correct_answer",
+      "$.chapters[2].level_1_easy.questions[2].explanation",
+      "$.chapters[2].level_1_easy.questions[3].question_id",
+      "$.chapters[2].level_1_easy.questions[3].question_type",
+      "$.chapters[2].level_1_easy.questions[3].question",
+      "$.chapters[2].level_1_easy.questions[3].options",
+      "$.chapters[2].level_1_easy.questions[3].correct_answer",
+      "$.chapters[2].level_1_easy.questions[3].explanation",
+      "$.chapters[2].level_2_medium",
+      "$.chapters[2].level_2_medium.description",
+      "$.chapters[2].level_2_medium.questions",
+      "$.chapters[2].level_2_medium.questions[0].question_id",
+      "$.chapters[2].level_2_medium.questions[0].question_type",
+      "$.chapters[2].level_2_medium.questions[0].question",
+      "$.chapters[2].level_2_medium.questions[0].options",
+      "$.chapters[2].level_2_medium.questions[0].correct_answer",
+      "$.chapters[2].level_2_medium.questions[0].explanation",
+      "$.chapters[2].level_2_medium.questions[1].question_id",
+      "$.chapters[2].level_2_medium.questions[1].question_type",
+      "$.chapters[2].level_2_medium.questions[1].question",
+      "$.chapters[2].level_2_medium.questions[1].options",
+      "$.chapters[2].level_2_medium.questions[1].correct_answer",
+      "$.chapters[2].level_2_medium.questions[1].explanation",
+      "$.chapters[2].level_2_medium.questions[2].question_id",
+      "$.chapters[2].level_2_medium.questions[2].question_type",
+      "$.chapters[2].level_2_medium.questions[2].question",
+      "$.chapters[2].level_2_medium.questions[2].options",
+      "$.chapters[2].level_2_medium.questions[2].correct_answer",
+      "$.chapters[2].level_2_medium.questions[2].explanation",
+      "$.chapters[2].level_3_hard",
+      "$.chapters[2].level_3_hard.description",
+      "$.chapters[2].level_3_hard.questions",
+      "$.chapters[2].level_3_hard.questions[0].question_id",
+      "$.chapters[2].level_3_hard.questions[0].question_type",
+      "$.chapters[2].level_3_hard.questions[0].question",
+      "$.chapters[2].level_3_hard.questions[0].options",
+      "$.chapters[2].level_3_hard.questions[0].correct_answer",
+      "$.chapters[2].level_3_hard.questions[0].explanation",
+      "$.chapters[2].level_3_hard.questions[1].question_id",
+      "$.chapters[2].level_3_hard.questions[1].question_type",
+      "$.chapters[2].level_3_hard.questions[1].question",
+      "$.chapters[2].level_3_hard.questions[1].options",
+      "$.chapters[2].level_3_hard.questions[1].correct_answer",
+      "$.chapters[2].level_3_hard.questions[1].explanation",
+      "$.chapters[2].level_3_hard.questions[2].question_id",
+      "$.chapters[2].level_3_hard.questions[2].question_type",
+      "$.chapters[2].level_3_hard.questions[2].question",
+      "$.chapters[2].level_3_hard.questions[2].options",
+      "$.chapters[2].level_3_hard.questions[2].correct_answer",
+      "$.chapters[2].level_3_hard.questions[2].explanation",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].level_1_easy",
+      "$.chapters[3].level_1_easy.description",
+      "$.chapters[3].level_1_easy.questions",
+      "$.chapters[3].level_1_easy.questions[0].question_id",
+      "$.chapters[3].level_1_easy.questions[0].question_type",
+      "$.chapters[3].level_1_easy.questions[0].question",
+      "$.chapters[3].level_1_easy.questions[0].options",
+      "$.chapters[3].level_1_easy.questions[0].correct_answer",
+      "$.chapters[3].level_1_easy.questions[0].explanation",
+      "$.chapters[3].level_1_easy.questions[1].question_id",
+      "$.chapters[3].level_1_easy.questions[1].question_type",
+      "$.chapters[3].level_1_easy.questions[1].question",
+      "$.chapters[3].level_1_easy.questions[1].options",
+      "$.chapters[3].level_1_easy.questions[1].correct_answer",
+      "$.chapters[3].level_1_easy.questions[1].explanation",
+      "$.chapters[3].level_1_easy.questions[2].question_id",
+      "$.chapters[3].level_1_easy.questions[2].question_type",
+      "$.chapters[3].level_1_easy.questions[2].question",
+      "$.chapters[3].level_1_easy.questions[2].options",
+      "$.chapters[3].level_1_easy.questions[2].correct_answer",
+      "$.chapters[3].level_1_easy.questions[2].explanation",
+      "$.chapters[3].level_1_easy.questions[3].question_id",
+      "$.chapters[3].level_1_easy.questions[3].question_type",
+      "$.chapters[3].level_1_easy.questions[3].question",
+      "$.chapters[3].level_1_easy.questions[3].options",
+      "$.chapters[3].level_1_easy.questions[3].correct_answer",
+      "$.chapters[3].level_1_easy.questions[3].explanation",
+      "$.chapters[3].level_2_medium",
+      "$.chapters[3].level_2_medium.description",
+      "$.chapters[3].level_2_medium.questions",
+      "$.chapters[3].level_2_medium.questions[0].question_id",
+      "$.chapters[3].level_2_medium.questions[0].question_type",
+      "$.chapters[3].level_2_medium.questions[0].question",
+      "$.chapters[3].level_2_medium.questions[0].options",
+      "$.chapters[3].level_2_medium.questions[0].correct_answer",
+      "$.chapters[3].level_2_medium.questions[0].explanation",
+      "$.chapters[3].level_2_medium.questions[1].question_id",
+      "$.chapters[3].level_2_medium.questions[1].question_type",
+      "$.chapters[3].level_2_medium.questions[1].question",
+      "$.chapters[3].level_2_medium.questions[1].options",
+      "$.chapters[3].level_2_medium.questions[1].correct_answer",
+      "$.chapters[3].level_2_medium.questions[1].explanation",
+      "$.chapters[3].level_2_medium.questions[2].question_id",
+      "$.chapters[3].level_2_medium.questions[2].question_type",
+      "$.chapters[3].level_2_medium.questions[2].question",
+      "$.chapters[3].level_2_medium.questions[2].options",
+      "$.chapters[3].level_2_medium.questions[2].correct_answer",
+      "$.chapters[3].level_2_medium.questions[2].explanation",
+      "$.chapters[3].level_3_hard",
+      "$.chapters[3].level_3_hard.description",
+      "$.chapters[3].level_3_hard.questions",
+      "$.chapters[3].level_3_hard.questions[0].question_id",
+      "$.chapters[3].level_3_hard.questions[0].question_type",
+      "$.chapters[3].level_3_hard.questions[0].question",
+      "$.chapters[3].level_3_hard.questions[0].options",
+      "$.chapters[3].level_3_hard.questions[0].correct_answer",
+      "$.chapters[3].level_3_hard.questions[0].explanation",
+      "$.chapters[3].level_3_hard.questions[1].question_id",
+      "$.chapters[3].level_3_hard.questions[1].question_type",
+      "$.chapters[3].level_3_hard.questions[1].question",
+      "$.chapters[3].level_3_hard.questions[1].options",
+      "$.chapters[3].level_3_hard.questions[1].correct_answer",
+      "$.chapters[3].level_3_hard.questions[1].explanation",
+      "$.chapters[3].level_3_hard.questions[2].question_id",
+      "$.chapters[3].level_3_hard.questions[2].question_type",
+      "$.chapters[3].level_3_hard.questions[2].question",
+      "$.chapters[3].level_3_hard.questions[2].options",
+      "$.chapters[3].level_3_hard.questions[2].correct_answer",
+      "$.chapters[3].level_3_hard.questions[2].explanation",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].level_1_easy",
+      "$.chapters[4].level_1_easy.description",
+      "$.chapters[4].level_1_easy.questions",
+      "$.chapters[4].level_1_easy.questions[0].question_id",
+      "$.chapters[4].level_1_easy.questions[0].question_type",
+      "$.chapters[4].level_1_easy.questions[0].question",
+      "$.chapters[4].level_1_easy.questions[0].options",
+      "$.chapters[4].level_1_easy.questions[0].correct_answer",
+      "$.chapters[4].level_1_easy.questions[0].explanation",
+      "$.chapters[4].level_1_easy.questions[1].question_id",
+      "$.chapters[4].level_1_easy.questions[1].question_type",
+      "$.chapters[4].level_1_easy.questions[1].question",
+      "$.chapters[4].level_1_easy.questions[1].options",
+      "$.chapters[4].level_1_easy.questions[1].correct_answer",
+      "$.chapters[4].level_1_easy.questions[1].explanation",
+      "$.chapters[4].level_1_easy.questions[2].question_id",
+      "$.chapters[4].level_1_easy.questions[2].question_type",
+      "$.chapters[4].level_1_easy.questions[2].question",
+      "$.chapters[4].level_1_easy.questions[2].options",
+      "$.chapters[4].level_1_easy.questions[2].correct_answer",
+      "$.chapters[4].level_1_easy.questions[2].explanation",
+      "$.chapters[4].level_1_easy.questions[3].question_id",
+      "$.chapters[4].level_1_easy.questions[3].question_type",
+      "$.chapters[4].level_1_easy.questions[3].question",
+      "$.chapters[4].level_1_easy.questions[3].options",
+      "$.chapters[4].level_1_easy.questions[3].correct_answer",
+      "$.chapters[4].level_1_easy.questions[3].explanation",
+      "$.chapters[4].level_2_medium",
+      "$.chapters[4].level_2_medium.description",
+      "$.chapters[4].level_2_medium.questions",
+      "$.chapters[4].level_2_medium.questions[0].question_id",
+      "$.chapters[4].level_2_medium.questions[0].question_type",
+      "$.chapters[4].level_2_medium.questions[0].question",
+      "$.chapters[4].level_2_medium.questions[0].options",
+      "$.chapters[4].level_2_medium.questions[0].correct_answer",
+      "$.chapters[4].level_2_medium.questions[0].explanation",
+      "$.chapters[4].level_2_medium.questions[1].question_id",
+      "$.chapters[4].level_2_medium.questions[1].question_type",
+      "$.chapters[4].level_2_medium.questions[1].question",
+      "$.chapters[4].level_2_medium.questions[1].options",
+      "$.chapters[4].level_2_medium.questions[1].correct_answer",
+      "$.chapters[4].level_2_medium.questions[1].explanation",
+      "$.chapters[4].level_2_medium.questions[2].question_id",
+      "$.chapters[4].level_2_medium.questions[2].question_type",
+      "$.chapters[4].level_2_medium.questions[2].question",
+      "$.chapters[4].level_2_medium.questions[2].options",
+      "$.chapters[4].level_2_medium.questions[2].correct_answer",
+      "$.chapters[4].level_2_medium.questions[2].explanation",
+      "$.chapters[4].level_3_hard",
+      "$.chapters[4].level_3_hard.description",
+      "$.chapters[4].level_3_hard.questions",
+      "$.chapters[4].level_3_hard.questions[0].question_id",
+      "$.chapters[4].level_3_hard.questions[0].question_type",
+      "$.chapters[4].level_3_hard.questions[0].question",
+      "$.chapters[4].level_3_hard.questions[0].options",
+      "$.chapters[4].level_3_hard.questions[0].correct_answer",
+      "$.chapters[4].level_3_hard.questions[0].explanation",
+      "$.chapters[4].level_3_hard.questions[1].question_id",
+      "$.chapters[4].level_3_hard.questions[1].question_type",
+      "$.chapters[4].level_3_hard.questions[1].question",
+      "$.chapters[4].level_3_hard.questions[1].options",
+      "$.chapters[4].level_3_hard.questions[1].correct_answer",
+      "$.chapters[4].level_3_hard.questions[1].explanation",
+      "$.chapters[4].level_3_hard.questions[2].question_id",
+      "$.chapters[4].level_3_hard.questions[2].question_type",
+      "$.chapters[4].level_3_hard.questions[2].question",
+      "$.chapters[4].level_3_hard.questions[2].options",
+      "$.chapters[4].level_3_hard.questions[2].correct_answer",
+      "$.chapters[4].level_3_hard.questions[2].explanation",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].level_1_easy",
+      "$.chapters[5].level_1_easy.description",
+      "$.chapters[5].level_1_easy.questions",
+      "$.chapters[5].level_1_easy.questions[0].question_id",
+      "$.chapters[5].level_1_easy.questions[0].question_type",
+      "$.chapters[5].level_1_easy.questions[0].question",
+      "$.chapters[5].level_1_easy.questions[0].options",
+      "$.chapters[5].level_1_easy.questions[0].correct_answer",
+      "$.chapters[5].level_1_easy.questions[0].explanation",
+      "$.chapters[5].level_1_easy.questions[1].question_id",
+      "$.chapters[5].level_1_easy.questions[1].question_type",
+      "$.chapters[5].level_1_easy.questions[1].question",
+      "$.chapters[5].level_1_easy.questions[1].options",
+      "$.chapters[5].level_1_easy.questions[1].correct_answer",
+      "$.chapters[5].level_1_easy.questions[1].explanation",
+      "$.chapters[5].level_1_easy.questions[2].question_id",
+      "$.chapters[5].level_1_easy.questions[2].question_type",
+      "$.chapters[5].level_1_easy.questions[2].question",
+      "$.chapters[5].level_1_easy.questions[2].options",
+      "$.chapters[5].level_1_easy.questions[2].correct_answer",
+      "$.chapters[5].level_1_easy.questions[2].explanation",
+      "$.chapters[5].level_1_easy.questions[3].question_id",
+      "$.chapters[5].level_1_easy.questions[3].question_type",
+      "$.chapters[5].level_1_easy.questions[3].question",
+      "$.chapters[5].level_1_easy.questions[3].options",
+      "$.chapters[5].level_1_easy.questions[3].correct_answer",
+      "$.chapters[5].level_1_easy.questions[3].explanation",
+      "$.chapters[5].level_2_medium",
+      "$.chapters[5].level_2_medium.description",
+      "$.chapters[5].level_2_medium.questions",
+      "$.chapters[5].level_2_medium.questions[0].question_id",
+      "$.chapters[5].level_2_medium.questions[0].question_type",
+      "$.chapters[5].level_2_medium.questions[0].question",
+      "$.chapters[5].level_2_medium.questions[0].options",
+      "$.chapters[5].level_2_medium.questions[0].correct_answer",
+      "$.chapters[5].level_2_medium.questions[0].explanation",
+      "$.chapters[5].level_2_medium.questions[1].question_id",
+      "$.chapters[5].level_2_medium.questions[1].question_type",
+      "$.chapters[5].level_2_medium.questions[1].question",
+      "$.chapters[5].level_2_medium.questions[1].options",
+      "$.chapters[5].level_2_medium.questions[1].correct_answer",
+      "$.chapters[5].level_2_medium.questions[1].explanation",
+      "$.chapters[5].level_2_medium.questions[2].question_id",
+      "$.chapters[5].level_2_medium.questions[2].question_type",
+      "$.chapters[5].level_2_medium.questions[2].question",
+      "$.chapters[5].level_2_medium.questions[2].options",
+      "$.chapters[5].level_2_medium.questions[2].correct_answer",
+      "$.chapters[5].level_2_medium.questions[2].explanation",
+      "$.chapters[5].level_3_hard",
+      "$.chapters[5].level_3_hard.description",
+      "$.chapters[5].level_3_hard.questions",
+      "$.chapters[5].level_3_hard.questions[0].question_id",
+      "$.chapters[5].level_3_hard.questions[0].question_type",
+      "$.chapters[5].level_3_hard.questions[0].question",
+      "$.chapters[5].level_3_hard.questions[0].options",
+      "$.chapters[5].level_3_hard.questions[0].correct_answer",
+      "$.chapters[5].level_3_hard.questions[0].explanation",
+      "$.chapters[5].level_3_hard.questions[1].question_id",
+      "$.chapters[5].level_3_hard.questions[1].question_type",
+      "$.chapters[5].level_3_hard.questions[1].question",
+      "$.chapters[5].level_3_hard.questions[1].options",
+      "$.chapters[5].level_3_hard.questions[1].correct_answer",
+      "$.chapters[5].level_3_hard.questions[1].explanation",
+      "$.chapters[5].level_3_hard.questions[2].question_id",
+      "$.chapters[5].level_3_hard.questions[2].question_type",
+      "$.chapters[5].level_3_hard.questions[2].question",
+      "$.chapters[5].level_3_hard.questions[2].options",
+      "$.chapters[5].level_3_hard.questions[2].correct_answer",
+      "$.chapters[5].level_3_hard.questions[2].explanation",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].level_1_easy",
+      "$.chapters[6].level_1_easy.description",
+      "$.chapters[6].level_1_easy.questions",
+      "$.chapters[6].level_1_easy.questions[0].question_id",
+      "$.chapters[6].level_1_easy.questions[0].question_type",
+      "$.chapters[6].level_1_easy.questions[0].question",
+      "$.chapters[6].level_1_easy.questions[0].options",
+      "$.chapters[6].level_1_easy.questions[0].correct_answer",
+      "$.chapters[6].level_1_easy.questions[0].explanation",
+      "$.chapters[6].level_1_easy.questions[1].question_id",
+      "$.chapters[6].level_1_easy.questions[1].question_type",
+      "$.chapters[6].level_1_easy.questions[1].question",
+      "$.chapters[6].level_1_easy.questions[1].options",
+      "$.chapters[6].level_1_easy.questions[1].correct_answer",
+      "$.chapters[6].level_1_easy.questions[1].explanation",
+      "$.chapters[6].level_1_easy.questions[2].question_id",
+      "$.chapters[6].level_1_easy.questions[2].question_type",
+      "$.chapters[6].level_1_easy.questions[2].question",
+      "$.chapters[6].level_1_easy.questions[2].options",
+      "$.chapters[6].level_1_easy.questions[2].correct_answer",
+      "$.chapters[6].level_1_easy.questions[2].explanation",
+      "$.chapters[6].level_1_easy.questions[3].question_id",
+      "$.chapters[6].level_1_easy.questions[3].question_type",
+      "$.chapters[6].level_1_easy.questions[3].question",
+      "$.chapters[6].level_1_easy.questions[3].options",
+      "$.chapters[6].level_1_easy.questions[3].correct_answer",
+      "$.chapters[6].level_1_easy.questions[3].explanation",
+      "$.chapters[6].level_2_medium",
+      "$.chapters[6].level_2_medium.description",
+      "$.chapters[6].level_2_medium.questions",
+      "$.chapters[6].level_2_medium.questions[0].question_id",
+      "$.chapters[6].level_2_medium.questions[0].question_type",
+      "$.chapters[6].level_2_medium.questions[0].question",
+      "$.chapters[6].level_2_medium.questions[0].options",
+      "$.chapters[6].level_2_medium.questions[0].correct_answer",
+      "$.chapters[6].level_2_medium.questions[0].explanation",
+      "$.chapters[6].level_2_medium.questions[1].question_id",
+      "$.chapters[6].level_2_medium.questions[1].question_type",
+      "$.chapters[6].level_2_medium.questions[1].question",
+      "$.chapters[6].level_2_medium.questions[1].options",
+      "$.chapters[6].level_2_medium.questions[1].correct_answer",
+      "$.chapters[6].level_2_medium.questions[1].explanation",
+      "$.chapters[6].level_2_medium.questions[2].question_id",
+      "$.chapters[6].level_2_medium.questions[2].question_type",
+      "$.chapters[6].level_2_medium.questions[2].question",
+      "$.chapters[6].level_2_medium.questions[2].options",
+      "$.chapters[6].level_2_medium.questions[2].correct_answer",
+      "$.chapters[6].level_2_medium.questions[2].explanation",
+      "$.chapters[6].level_3_hard",
+      "$.chapters[6].level_3_hard.description",
+      "$.chapters[6].level_3_hard.questions",
+      "$.chapters[6].level_3_hard.questions[0].question_id",
+      "$.chapters[6].level_3_hard.questions[0].question_type",
+      "$.chapters[6].level_3_hard.questions[0].question",
+      "$.chapters[6].level_3_hard.questions[0].options",
+      "$.chapters[6].level_3_hard.questions[0].correct_answer",
+      "$.chapters[6].level_3_hard.questions[0].explanation",
+      "$.chapters[6].level_3_hard.questions[1].question_id",
+      "$.chapters[6].level_3_hard.questions[1].question_type",
+      "$.chapters[6].level_3_hard.questions[1].question",
+      "$.chapters[6].level_3_hard.questions[1].options",
+      "$.chapters[6].level_3_hard.questions[1].correct_answer",
+      "$.chapters[6].level_3_hard.questions[1].explanation",
+      "$.chapters[6].level_3_hard.questions[2].question_id",
+      "$.chapters[6].level_3_hard.questions[2].question_type",
+      "$.chapters[6].level_3_hard.questions[2].question",
+      "$.chapters[6].level_3_hard.questions[2].options",
+      "$.chapters[6].level_3_hard.questions[2].correct_answer",
+      "$.chapters[6].level_3_hard.questions[2].explanation"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Resources and Development",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Forest and Wildlife Resources",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Water Resources",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Agriculture",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Minerals and Energy Resources",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Manufacturing Industries",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Lifelines of National Economy",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      }
+    ],
+    "chapter_candidate_count": 7,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Social Science (Geography - Contemporary India II)",
+    "grade_level": "Class 10",
+    "total_chapters": 7,
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Resources and Development",
+        "level_1_easy": {
+          "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
+          "questions": [
+            {
+              "question_id": "CH1-L1-01",
+              "question_type": "MCQ",
+              "question": "Which one of the following types of resource is iron ore?",
+              "options": [
+                "Biotic",
+                "Renewable",
+                "Flow",
+                "Non-renewable"
+              ],
+              "correct_answer": "Non-renewable",
+              "explanation": "Iron ore is a non-renewable mineral resource formed over millions of years of geological processes. Once consumed, it cannot be regenerated on a human timescale."
+            },
+            {
+              "question_id": "CH1-L1-02",
+              "question_type": "MCQ",
+              "question": "Under which of the following types of resource can tidal energy be put?",
+              "options": [
+                "Replenishable / Renewable",
+                "Human-made",
+                "Abiotic",
+                "Non-recyclable"
+              ],
+              "correct_answer": "Replenishable / Renewable",
+              "explanation": "Tidal energy is powered by oceanic tides caused by gravitational pulls of the moon and sun, making it continuously replenishable and renewable."
+            },
+            {
+              "question_id": "CH1-L1-03",
+              "question_type": "Fill-in-the-Blank",
+              "question": "The international summit held in 1992 to achieve global sustainable development was the Earth Summit held at ________.",
+              "options": [],
+              "correct_answer": "Rio de Janeiro, Brazil",
+              "explanation": "The first International Earth Summit was convened in Rio de Janeiro in June 1992, adopting Agenda 21 to combat environmental damage, poverty, and disease."
+            },
+            {
+              "question_id": "CH1-L1-04",
+              "question_type": "True/False",
+              "question": "State True or False: Black soil is locally known as Regur soil and is ideally suited for growing cotton.",
+              "options": [],
+              "correct_answer": "True",
+              "explanation": "True. Black soil (Regur soil) is rich in soil nutrients like calcium carbonate, magnesium, potash, and lime, and has high moisture retention capacity, making it perfect for cotton cultivation."
+            }
+          ]
+        },
+        "level_2_medium": {
+          "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
+          "questions": [
+            {
+              "question_id": "CH1-L2-01",
+              "question_type": "Short Answer",
+              "question": "Distinguish between Net Sown Area and Gross Cropped Area in Indian agricultural land utilization.",
+              "options": [],
+              "correct_answer": "Net Sown Area refers to the total physical area sown with crops and harvested within an agricultural year. Gross Cropped Area includes the Net Sown Area plus any land sown more than once in the same agricultural year.",
+              "explanation": "Net Sown Area represents the physical land footprint cultivated (approx. 45.5% of India's total land area), whereas Gross Cropped Area accounts for cropping intensity where multiple crops are harvested from the same land parcel in different seasons."
+            },
+            {
+              "question_id": "CH1-L2-02",
+              "question_type": "Diagram Analysis",
+              "question": "Describe the four distinct horizons of a typical soil profile from top to bottom.",
+              "options": [],
+              "correct_answer": "1. Topsoil (Upper soil layer, rich in humus and organic matter)\n2. Subsoil (Weathered rocks, sand, silt, and clay)\n3. Substratum (Weathered parent rock material)\n4. Unweathered Parent Bedrock",
+              "explanation": "Soil profile horizons develop over long periods. Topsoil supports plant life with active organic humus, subsoil collects leached minerals, substratum consists of broken rock fragments, and unweathered bedrock forms the solid foundational parent material."
+            },
+            {
+              "question_id": "CH1-L2-03",
+              "question_type": "Structural Analysis",
+              "question": "Analyze how human activities differ in causing land degradation between Punjab/Haryana and Odisha/Jharkhand.",
+              "options": [],
+              "correct_answer": "In Punjab and Haryana, land degradation is primarily caused by over-irrigation leading to waterlogging and soil alkalinity/salinity. In Odisha and Jharkhand, degradation is driven by severe mining activities and deforestation.",
+              "explanation": "Regional land degradation causes vary by economic drivers: agricultural intensification in northwestern India leads to salinization due to heavy tube-well irrigation, whereas mineral extraction in central-eastern India leaves abandoned open-cast mining pits and destroyed forest cover."
+            }
+          ]
+        },
+        "level_3_hard": {
+          "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
+          "questions": [
+            {
+              "question_id": "CH1-L3-01",
+              "question_type": "Give Reasons",
+              "question": "Why are resources considered a function of human activities rather than mere 'free gifts of nature'?",
+              "options": [],
+              "correct_answer": "Materials in the environment only become resources when humans possess the technological know-how, economic capability, and institutional frameworks to transform raw materials into culturally acceptable, usable items.",
+              "explanation": "Nature provides neutral substances. For example, crude oil underground was not a resource until human technological development created refining processes and internal combustion engines. Human knowledge and technology are therefore the indispensable agents that define resources."
+            },
+            {
+              "question_id": "CH1-L3-02",
+              "question_type": "Case Study",
+              "question": "Case Scenario: In the Chambal river basin, running water has cut deep clayey channels creating unusable 'bad land' known as ravines. Farmers in neighboring undulating topographies face severe sheet erosion where topsoil is washed away by sheet flow. Propose a comprehensive soil conservation action plan.",
+              "options": [],
+              "correct_answer": "Action Plan:\n1. Contour Ploughing along hill slopes to decelerate water runoff.\n2. Terrace Farming in mountainous areas to break slope speed.\n3. Strip Cropping: Planting grass strips between field crops to break wind and water velocity.\n4. Planting Shelter Belts of trees to stabilize topsoil and sand dunes.",
+              "explanation": "Gully erosion occurs when running water carves deep channels, creating ravines. Sheet erosion removes topsoil over broad flat slopes. The proposed conservation methods counteract hydraulic water force and wind erosion, restoring soil structure."
+            },
+            {
+              "question_id": "CH1-L3-03",
+              "question_type": "Critical Thinking & Synthesis",
+              "question": "Evaluate the statement: 'India has sufficient resources to satisfy everyone's need, but not anybody's greed.' Connect Mahatma Gandhi's philosophy to modern global sustainable development principles.",
+              "options": [],
+              "correct_answer": "Gandhi identified modern mass production and greedy, exploitative technology as the root cause of resource depletion. He advocated production by the masses rather than mass production. This directly aligns with Sustainable Development and Agenda 21, which advocate equitable resource distribution, ecological balance, and protecting resources for future generations.",
+              "explanation": "Gandhian economics stresses ethical resource consumption. Indiscriminate exploitation leads to global crises like global warming, ozone depletion, and land degradation. Modern frameworks like the 1987 Brundtland Commission Report ('Our Common Future') reinforced this by defining sustainable development as meeting present needs without compromising future generations."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Forest and Wildlife Resources",
+        "level_1_easy": {
+          "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
+          "questions": [
+            {
+              "question_id": "CH2-L1-01",
+              "question_type": "MCQ",
+              "question": "In which year was the Indian Wildlife (Protection) Act implemented to protect habitats and endangered species?",
+              "options": [
+                "1952",
+                "1972",
+                "1980",
+                "1992"
+              ],
+              "correct_answer": "1972",
+              "explanation": "The Indian Wildlife (Protection) Act was enacted in 1972, providing an all-India list of protected species, banning hunting, and restricting trade in wildlife."
+            },
+            {
+              "question_id": "CH2-L1-02",
+              "question_type": "MCQ",
+              "question": "Which category of forests is regarded as the most valuable as far as the conservation of forest and wildlife resources is concerned?",
+              "options": [
+                "Reserved Forests",
+                "Protected Forests",
+                "Unclassed Forests",
+                "Community Forests"
+              ],
+              "correct_answer": "Reserved Forests",
+              "explanation": "Reserved forests constitute more than half of the total forest land in India and are permanently earmarked for conservation with strict government protection."
+            },
+            {
+              "question_id": "CH2-L1-03",
+              "question_type": "Fill-in-the-Blank",
+              "question": "One of the premier wildlife conservation initiatives launched in 1973 to save a flagship mammal species is ________.",
+              "options": [],
+              "correct_answer": "Project Tiger",
+              "explanation": "Project Tiger was launched in 1973 to arrest the dwindling tiger population in India, establishing major reserves like Corbett, Sundarbans, and Sariska."
+            },
+            {
+              "question_id": "CH2-L1-04",
+              "question_type": "True/False",
+              "question": "State True or False: Sacred groves are patches of pristine virgin forest preserved by local tribal communities due to religious and cultural veneration.",
+              "options": [],
+              "correct_answer": "True",
+              "explanation": "True. Sacred groves (e.g., in Chota Nagpur, Meghalaya, Western Ghats) protect rare plant species because local communities treat these patches as sacred realms of deities where tree felling and hunting are strictly prohibited."
+            }
+          ]
+        },
+        "level_2_medium": {
+          "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
+          "questions": [
+            {
+              "question_id": "CH2-L2-01",
+              "question_type": "Short Answer",
+              "question": "Differentiate between Endangered Species and Vulnerable Species as defined by the IUCN, giving one example of each from Indian wildlife.",
+              "options": [],
+              "correct_answer": "Endangered Species are species in danger of extinction whose survival is unlikely if adverse factors continue (e.g., Blackbuck, Indian Wild Ass, Lion-tailed Macaque). Vulnerable Species are species whose population has declined to levels where they are likely to move into the endangered category in the near future (e.g., Blue Sheep, Asiatic Elephant, Gangetic Dolphin).",
+              "explanation": "The IUCN categorizes species based on extinction threat risk. Endangered species require urgent protective intervention, whereas vulnerable species face population stress that could lead to endangerment."
+            },
+            {
+              "question_id": "CH2-L2-02",
+              "question_type": "Flowchart Analysis",
+              "question": "Trace the socio-ecological chain reaction resulting from forest destruction on rural women in tribal regions.",
+              "options": [],
+              "correct_answer": "Deforestation → Depletion of fuelwood, fodder, and water sources → Increased walking distance for women (over 10 km daily) → Severe health issues and physical exhaustion → Neglect of home and child care → Increased socio-economic hardship for poor households.",
+              "explanation": "In rural indigenous societies, women bear the primary responsibility of collecting fuel, fodder, and domestic water. Environmental degradation directly increases their labor burden and impacts family well-being."
+            },
+            {
+              "question_id": "CH2-L2-03",
+              "question_type": "Structural Analysis",
+              "question": "Explain the operational framework and significance of the Joint Forest Management (JFM) program in Odisha.",
+              "options": [],
+              "correct_answer": "JFM involves local village institutions managing and restoring degraded forests alongside state forest departments. In return, community members receive non-timber forest produce and a share in timber harvested through successful protection.",
+              "explanation": "JFM formally passed its first resolution in Odisha in 1988, proving that decentralizing forest management to local communities yields far superior conservation and livelihood outcomes."
+            }
+          ]
+        },
+        "level_3_hard": {
+          "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
+          "questions": [
+            {
+              "question_id": "CH2-L3-01",
+              "question_type": "Give Reasons",
+              "question": "Why are indigenous community-led movements like 'Beej Bachao Andolan' and 'Navdanya' superior to chemical-intensive monoculture forestry and agriculture?",
+              "options": [],
+              "correct_answer": "These movements demonstrate that diversified traditional seed conservation and organic farming can achieve high crop yields without synthetic chemical fertilizers or commercial seed reliance, protecting soil biodiversity and agricultural self-reliance.",
+              "explanation": "Monoculture commercial forestry (e.g., teak monoculture) damaged natural mixed ecosystems. Movements like Beej Bachao Andolan in Tehri restored indigenous crop varieties that are resilient, ecological, and economic."
+            },
+            {
+              "question_id": "CH2-L3-02",
+              "question_type": "Case Study",
+              "question": "Case Scenario: In Sariska Tiger Reserve, Rajasthan, villagers fought against illegal limestone mining inside protected forest boundaries by citing the Wildlife Protection Act and refusing state relocation plans. Analyze how this case redefines the role of local communities in conservation.",
+              "options": [],
+              "correct_answer": "This case proves that local communities are active custodians of biodiversity rather than obstacles to conservation. By utilizing statutory legal provisions (Wildlife Protection Act), villagers independently halted environmental destruction without depending on bureaucratic enforcement.",
+              "explanation": "Historically, state conservation displaced forest dwellers. Sariska villagers demonstrated that indigenous residents possess the legal literacy and ecological commitment to defend sanctuaries against powerful industrial lobbies."
+            },
+            {
+              "question_id": "CH2-L3-03",
+              "question_type": "Critical Thinking & Synthesis",
+              "question": "Critically evaluate the environmental cost of large-scale river valley development projects, referencing the Narmada Sagar Project in Madhya Pradesh.",
+              "options": [],
+              "correct_answer": "Large-scale river valley projects submerge vast tracts of pristine natural forests (over 40,000 hectares in Narmada Sagar), cause severe habitat fragmentation, displace thousands of indigenous people, and destroy endemic flora and fauna.",
+              "explanation": "While multi-purpose dams provide hydroelectricity and irrigation, their ecological footprint involves permanent loss of mature forest biomes and biodiversity that cannot be compensated by artificial afforestation elsewhere."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Water Resources",
+        "level_1_easy": {
+          "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
+          "questions": [
+            {
+              "question_id": "CH3-L1-01",
+              "question_type": "MCQ",
+              "question": "On which river is the Bhakra Nangal multi-purpose project constructed?",
+              "options": [
+                "Sutlej-Beas",
+                "Mahanadi",
+                "Narmada",
+                "Krishna"
+              ],
+              "correct_answer": "Sutlej-Beas",
+              "explanation": "The Bhakra Nangal project is built on the Sutlej-Beas river basin, serving hydel power production and canal irrigation for Punjab, Haryana, and Rajasthan."
+            },
+            {
+              "question_id": "CH3-L1-02",
+              "question_type": "MCQ",
+              "question": "In which of the following states is rooftop rainwater harvesting made legally compulsory for all houses?",
+              "options": [
+                "Tamil Nadu",
+                "Rajasthan",
+                "Karnataka",
+                "Meghalaya"
+              ],
+              "correct_answer": "Tamil Nadu",
+              "explanation": "Tamil Nadu is the first state in India to make rooftop rainwater harvesting structures compulsory for all houses across the state, with legal penalties for non-compliance."
+            },
+            {
+              "question_id": "CH3-L1-03",
+              "question_type": "Fill-in-the-Blank",
+              "question": "Underground storage tanks locally built inside traditional houses in arid Rajasthan to store harvested rainwater are called ________.",
+              "options": [],
+              "correct_answer": "Tankas",
+              "explanation": "Tankas are large underground concrete or masonry storage tanks built inside houses or courtyards in Bikaner, Phalodi, and Barmer to store clean rainwater ('Palar Pani')."
+            },
+            {
+              "question_id": "CH3-L1-04",
+              "question_type": "True/False",
+              "question": "State True or False: Multi-purpose river projects have no negative ecological consequences and only cause positive agricultural growth.",
+              "options": [],
+              "correct_answer": "False",
+              "explanation": "False. Multi-purpose dams fragment river channels, disrupt fish migration, cause excessive reservoir sedimentation, submerge natural vegetation, and trigger displacement of local communities."
+            }
+          ]
+        },
+        "level_2_medium": {
+          "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
+          "questions": [
+            {
+              "question_id": "CH3-L2-01",
+              "question_type": "Short Answer",
+              "question": "Explain the difference between quantitative water scarcity and qualitative water scarcity.",
+              "options": [],
+              "correct_answer": "Quantitative water scarcity occurs when the absolute volume of available water is insufficient to meet human and agricultural demands (e.g., arid regions). Qualitative water scarcity occurs where water is abundant in volume but rendered unusable due to pollution from industrial effluents, agricultural chemicals, and untreated sewage.",
+              "explanation": "Even regions receiving high rainfall can suffer from qualitative water scarcity if urban or industrial pollution degrades water bodies beyond safe consumption standards."
+            },
+            {
+              "question_id": "CH3-L2-02",
+              "question_type": "Diagram Analysis",
+              "question": "Describe the operational mechanism of a traditional Rooftop Rainwater Harvesting System.",
+              "options": [],
+              "correct_answer": "1. Rainwater falling on rooftops is collected via PVC pipes.\n2. Water passes through a filter medium containing sand and bricks.\n3. Filtered water is piped into an underground tanka or sump for immediate domestic use.\n4. Excess water is routed to recharge underground borewells or wells for sub-surface storage.",
+              "explanation": "Rooftop harvesting captures clean precipitation directly before surface runoff contamination occurs, storing pure drinking water and artificially recharging local groundwater aquifers."
+            },
+            {
+              "question_id": "CH3-L2-03",
+              "question_type": "Structural Analysis",
+              "question": "How does the 200-year-old Bamboo Drip Irrigation System in Meghalaya function?",
+              "options": [],
+              "correct_answer": "Bamboo pipes tap stream and spring water from hilltop sources, transporting it across complex hill topographies over hundreds of meters using gravity. The water flow is incrementally reduced to 20-80 drops per minute directly at the plant root base.",
+              "explanation": "This indigenous technology avoids water evaporation and runoff losses, delivering precise drip irrigation to crops like black pepper in steep terrain without any mechanical pumps."
+            }
+          ]
+        },
+        "level_3_hard": {
+          "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
+          "questions": [
+            {
+              "question_id": "CH3-L3-01",
+              "question_type": "Give Reasons",
+              "question": "Why did Jawaharlal Nehru proclaim modern multi-purpose dams as the 'Temples of Modern India', and why have they faced intense public opposition in recent decades?",
+              "options": [],
+              "correct_answer": "Nehru viewed multi-purpose dams as symbols of national integration that combined agricultural development with rapid industrial growth. Recent opposition (e.g., Narmada Bachao Andolan) arises because dams have caused massive involuntary displacement of rural populations, reservoir siltation leading to floods, soil salinization, and interstate water conflicts.",
+              "explanation": "Post-independence vision focused on economic modernization via mega-dams. However, socio-environmental costs—uncompensated displacement, ecological destruction, and equitable water sharing disputes—sparked widespread resistance movements."
+            },
+            {
+              "question_id": "CH3-L3-02",
+              "question_type": "Case Study",
+              "question": "Case Scenario: Gendathur, a remote village in Mysuru, Karnataka, installed rooftop rainwater harvesting systems in nearly 200 households, harvesting over 100,000 liters of water annually per house. Evaluate the replicability of the Gendathur model for drought-prone Indian villages.",
+              "options": [],
+              "correct_answer": "The Gendathur model proves that decentralized, community-managed rainwater harvesting is highly cost-effective, sustainable, and reliable. It eliminates dependency on expensive, centralized piped water infrastructure and guarantees water security in semi-arid zones.",
+              "explanation": "Gendathur earned the distinction of being a rainwater-rich village through simple rooftop installation. Replicating this nationwide reduces pressure on depleting aquifers and municipal supply systems."
+            },
+            {
+              "question_id": "CH3-L3-03",
+              "question_type": "Critical Thinking & Synthesis",
+              "question": "Analyze the causes and socio-economic consequences of interstate water disputes in India, taking the Krishna-Godavari or Kaveri water dispute as an example.",
+              "options": [],
+              "correct_answer": "Interstate disputes arise when upper-riparian states divert river water for intensive agriculture or hydro projects (e.g., Karnataka diverting Krishna/Kaveri water), reducing downstream flow to lower-riparian states (e.g., Tamil Nadu/Andhra Pradesh). This leads to crop failures, agricultural distress, political tensions, and protracted legal battles.",
+              "explanation": "Water resources are state subjects under political pressure. As agricultural demand grows, upstream dams alter natural discharge timing and volume, causing acute downstream irrigation shortages and inter-state friction."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Agriculture",
+        "level_1_easy": {
+          "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
+          "questions": [
+            {
+              "question_id": "CH4-L1-01",
+              "question_type": "MCQ",
+              "question": "Which of the following is a Kharif crop harvested in September-October?",
+              "options": [
+                "Wheat",
+                "Paddy (Rice)",
+                "Mustard",
+                "Gram"
+              ],
+              "correct_answer": "Paddy (Rice)",
+              "explanation": "Paddy is a major Kharif crop sown with the onset of the monsoon in June-July and harvested in September-October."
+            },
+            {
+              "question_id": "CH4-L1-02",
+              "question_type": "MCQ",
+              "question": "Which state is the leading producer of natural rubber in India?",
+              "options": [
+                "Kerala",
+                "Tamil Nadu",
+                "Karnataka",
+                "Assam"
+              ],
+              "correct_answer": "Kerala",
+              "explanation": "Kerala accounts for the vast majority of India's natural rubber production due to its moist, humid equatorial climate and rainfall exceeding 200 cm."
+            },
+            {
+              "question_id": "CH4-L1-03",
+              "question_type": "Fill-in-the-Blank",
+              "question": "Slash and burn agriculture practiced by hill tribes in the North-Eastern states of India is locally known as ________.",
+              "options": [],
+              "correct_answer": "Jhumming",
+              "explanation": "Jhumming is the traditional shifting cultivation method in Assam, Meghalaya, Mizoram, and Nagaland where patches of forest land are cleared, burned, and cultivated until soil fertility depletes."
+            },
+            {
+              "question_id": "CH4-L1-04",
+              "question_type": "True/False",
+              "question": "State True or False: Primitive subsistence farming relies heavily on High Yielding Variety (HYV) seeds and synthetic chemical fertilizers.",
+              "options": [],
+              "correct_answer": "False",
+              "explanation": "False. Primitive subsistence farming is practiced on small land patches using primitive tools (hoe, dao, digging sticks) and relies entirely on natural soil fertility and monsoon rainfall."
+            }
+          ]
+        },
+        "level_2_medium": {
+          "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
+          "questions": [
+            {
+              "question_id": "CH4-L2-01",
+              "question_type": "Short Answer",
+              "question": "Compare the geographical requirements (climate, rainfall, temperature, and soil) for Wheat and Rice cultivation in India.",
+              "options": [],
+              "correct_answer": "Rice requires hot and humid climate, high temperature (above 25°C), and heavy rainfall (above 100 cm) in clayey alluvial soil. Wheat requires cool growing season, bright sunshine at ripening, moderate temperature (10-15°C growing, 21-26°C harvesting), and 50-75 cm rainfall in well-drained loamy soil.",
+              "explanation": "Rice is a Kharif tropical staple requiring high standing water, whereas Wheat is a Rabi temperate crop cultivated primarily in northwestern alluvial plains during winter."
+            },
+            {
+              "question_id": "CH4-L2-02",
+              "question_type": "Flowchart Analysis",
+              "question": "Construct the seasonal cropping pattern calendar of India detailing the three main agricultural seasons.",
+              "options": [],
+              "correct_answer": "1. Kharif Season: Sown June-July (monsoon onset), Harvested Sept-Oct (Paddy, Maize, Jowar, Cotton).\n2. Rabi Season: Sown Oct-Dec (winter onset), Harvested April-June (Wheat, Barley, Gram, Mustard).\n3. Zaid Season: Short summer season between March-June (Watermelon, Muskmelon, Cucumber, Fodder crops).",
+              "explanation": "India's agricultural calendar rotates between monsoon-fed Kharif crops, winter-grown Rabi crops, and short summer Zaid crops."
+            },
+            {
+              "question_id": "CH4-L2-03",
+              "question_type": "Structural Analysis",
+              "question": "Describe the origin and impact of the Bhoodan-Gramdan movement initiated by Vinoba Bhave.",
+              "options": [],
+              "correct_answer": "Initiated by Vinoba Bhave at Pochampally, Andhra Pradesh, Shri Ram Chandra Reddy offered 80 acres of land to landless villagers (Bhoodan). Later, zamindars donated entire villages (Gramdan). It is known as the 'Bloodless Revolution' for voluntary land redistribution.",
+              "explanation": "Bhoodan-Gramdan sought peaceful agrarian reform without state coercion, redistributing land to landless rural agricultural laborers."
+            }
+          ]
+        },
+        "level_3_hard": {
+          "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
+          "questions": [
+            {
+              "question_id": "CH4-L3-01",
+              "question_type": "Give Reasons",
+              "question": "Why has the right of inheritance led to severe fragmentation of land holdings in India, and how does land consolidation (Chakbandi) solve this challenge?",
+              "options": [],
+              "correct_answer": "Inheritance laws mandate dividing land equally among successive generations of heirs, reducing field sizes to economically unviable small units. Land consolidation (Chakbandi) reorganizes scattered tiny plots into consolidated, larger operational farms, enabling modern mechanization and efficient irrigation.",
+              "explanation": "Fragile land parcels hinder tractor usage and perimeter fencing. Chakbandi aggregates fragmented strips, boosting agricultural productivity."
+            },
+            {
+              "question_id": "CH4-L3-02",
+              "question_type": "Case Study",
+              "question": "Case Scenario: Farmers in Punjab and Haryana achieved massive yields of wheat and rice using HYV seeds, chemical fertilizers, and heavy tube-well irrigation during the Green Revolution. Today, they face falling groundwater tables, soil salinization, and soaring input costs. Evaluate the long-term sustainability of the Green Revolution model.",
+              "options": [],
+              "correct_answer": "The initial chemical-intensive Green Revolution boosted national food security but proved ecologically unsustainable. Excessive chemical use killed soil micro-organisms, tube-well over-extraction depleted aquifers, and monoculture made crops vulnerable to pests.",
+              "explanation": "Modern agriculture requires transitioning toward organic farming, crop diversification (high-value fruits/vegetables), and drip irrigation to balance high output with environmental preservation."
+            },
+            {
+              "question_id": "CH4-L3-03",
+              "question_type": "Critical Thinking & Synthesis",
+              "question": "Analyze the institutional and technological reforms introduced by the Government of India to protect farmers against climatic risks and market volatility.",
+              "options": [],
+              "correct_answer": "Reforms include:\n1. Kisan Credit Card (KCC) for easy institutional credit.\n2. Personal Accident Insurance Scheme (PAIS) and PM Fasal Bima Yojana for crop failure coverage.\n3. Minimum Support Price (MSP) announced before sowing seasons to eliminate middleman exploitation.\n4. Weather bulletins and agricultural programs broadcast via TV and radio.",
+              "explanation": "These institutional measures safeguard smallholders from crop losses due to droughts/floods and guarantee floor prices against distress sales."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Minerals and Energy Resources",
+        "level_1_easy": {
+          "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
+          "questions": [
+            {
+              "question_id": "CH5-L1-01",
+              "question_type": "MCQ",
+              "question": "Which state is the largest producer of Manganese ore in India?",
+              "options": [
+                "Odisha",
+                "Madhya Pradesh",
+                "Karnataka",
+                "Maharashtra"
+              ],
+              "correct_answer": "Odisha",
+              "explanation": "Odisha is the leading producer of manganese ore in India, accounting for a major share of total national output used in steel manufacturing."
+            },
+            {
+              "question_id": "CH5-L1-02",
+              "question_type": "MCQ",
+              "question": "Which fine quality iron ore has a very high content of iron up to 70% and possesses excellent magnetic qualities?",
+              "options": [
+                "Magnetite",
+                "Hematite",
+                "Limonite",
+                "Siderite"
+              ],
+              "correct_answer": "Magnetite",
+              "explanation": "Magnetite is the finest iron ore with a high iron content up to 70% and superior magnetic properties valuable in the electrical industry."
+            },
+            {
+              "question_id": "CH5-L1-03",
+              "question_type": "Fill-in-the-Blank",
+              "question": "The coastal Monazite sands of Kerala are world-renowned for containing the radioactive mineral ________.",
+              "options": [],
+              "correct_answer": "Thorium",
+              "explanation": "Monazite sands along the Kerala coast contain rich deposits of Thorium, a key fuel mineral for nuclear power generation."
+            },
+            {
+              "question_id": "CH5-L1-04",
+              "question_type": "True/False",
+              "question": "State True or False: Coal, petroleum, and natural gas are non-conventional energy resources.",
+              "options": [],
+              "correct_answer": "False",
+              "explanation": "False. Coal, petroleum, and natural gas are conventional fossil fuel energy resources. Non-conventional resources include solar, wind, tidal, geothermal, and atomic energy."
+            }
+          ]
+        },
+        "level_2_medium": {
+          "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
+          "questions": [
+            {
+              "question_id": "CH5-L2-01",
+              "question_type": "Short Answer",
+              "question": "Differentiate between Ferrous and Non-Ferrous minerals, giving two examples of each.",
+              "options": [],
+              "correct_answer": "Ferrous minerals contain iron content and form the backbone of metallurgical industries (e.g., Iron Ore, Manganese). Non-Ferrous minerals do not contain iron and are vital for electrical, engineering, and non-ferrous industries (e.g., Bauxite/Aluminum, Copper).",
+              "explanation": "Ferrous minerals account for about three-fourths of India's total metallic mineral production value, whereas non-ferrous minerals provide corrosion resistance and conductivity."
+            },
+            {
+              "question_id": "CH5-L2-02",
+              "question_type": "Flowchart Analysis",
+              "question": "Outline the five primary geological occurrences/forms in which minerals occur in nature.",
+              "options": [],
+              "correct_answer": "1. Veins and Lodes in Igneous/Metamorphic rocks (Tin, Copper, Zinc, Lead).\n2. Beds and Layers in Sedimentary rocks (Coal, Iron Ore, Gypsum).\n3. Residual mass of weathered surface rocks (Bauxite).\n4. Alluvial / Placer Deposits in valley sands (Gold, Silver, Platinum).\n5. Ocean Waters and Ocean Beds (Salt, Magnesium, Bromine).",
+              "explanation": "Minerals form through geological processes like magma cooling, sedimentary deposition, surface weathering, and stream bed accumulation."
+            },
+            {
+              "question_id": "CH5-L2-03",
+              "question_type": "Structural Analysis",
+              "question": "Explain the ecological and human hazards associated with mining activities ('Killer Industry').",
+              "options": [],
+              "correct_answer": "Hazards include:\n1. Health risks: Inhalation of toxic mineral dust leads to pulmonary diseases like silicosis.\n2. Structural collapses: Mine roofs collapsing and inundation by underground water.\n3. Environmental degradation: Dumping mine waste pollutes land and streams, rendering rivers acidic.",
+              "explanation": "Mining operations pose acute safety risks to miners and cause land degradation, water contamination, and air pollution in mining belts."
+            }
+          ]
+        },
+        "level_3_hard": {
+          "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
+          "questions": [
+            {
+              "question_id": "CH5-L3-01",
+              "question_type": "Give Reasons",
+              "question": "Why is the conservation of mineral resources essential for national economic security, despite minerals comprising only 1% of the Earth's crust?",
+              "options": [],
+              "correct_answer": "Mineral resources are finite, non-renewable, and require millions of years to form. Continued extraction leads to depletion and rising costs as deeper mining yields lower-grade ores. Recycling metals and using renewable substitutes are essential for long-term sustainability.",
+              "explanation": "Industrial progress relies heavily on mineral inputs. Rapid consumption without recycling exhausts non-renewable mineral reserves, endangering future industrial capacity."
+            },
+            {
+              "question_id": "CH5-L3-02",
+              "question_type": "Case Study",
+              "question": "Case Scenario: The Kudremukh iron ore mines in Western Ghats, Karnataka, were known as one of the world's largest deposits. Mining slurry was transported through a pipeline to Mangaluru port. However, environmental concerns over Western Ghats biodiversity led to mine closure. Evaluate the trade-off between mineral extraction and ecological protection.",
+              "options": [],
+              "correct_answer": "The Kudremukh case highlights that economic gains from mineral export must not supersede preserving biodiversity hotspots. Slurry pipelines minimized land transport pollution, but open-cast mining destroyed fragile rainforest catchments and polluted downstream rivers, justifying ecological protection.",
+              "explanation": "Sustainable development requires enforcing environmental impact assessments. Mining in ecologically sensitive biomes causes irreversible ecological loss that outweighs short-term export revenue."
+            },
+            {
+              "question_id": "CH5-L3-03",
+              "question_type": "Critical Thinking & Synthesis",
+              "question": "Assess India's potential for non-conventional energy expansion, focusing on Solar Energy in Rajasthan and Wind Energy in Tamil Nadu.",
+              "options": [],
+              "correct_answer": "India possesses vast non-conventional potential. Rajasthan has high solar insolation ideal for large photovoltaic plants (e.g., Thar desert solar parks), reducing dependence on thermal coal. Tamil Nadu (Nagarcoil to Madurai wind cluster) harnesses coastal winds effectively. Expanding renewable infrastructure ensures clean energy security and meets climate goals.",
+              "explanation": "Transitioning from fossil fuels to solar, wind, and biogas reduces carbon emissions, mitigates environmental pollution, and utilizes India's natural tropical and coastal location."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Manufacturing Industries",
+        "level_1_easy": {
+          "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
+          "questions": [
+            {
+              "question_id": "CH6-L1-01",
+              "question_type": "MCQ",
+              "question": "Which of the following industries belongs to the category of Basic or Key Industry?",
+              "options": [
+                "Iron and Steel Industry",
+                "Sugar Industry",
+                "Paper Industry",
+                "Consumer Goods Industry"
+              ],
+              "correct_answer": "Iron and Steel Industry",
+              "explanation": "Basic or Key industries supply their products as raw materials to manufacture other goods (e.g., iron and steel for machinery, construction, and automobiles)."
+            },
+            {
+              "question_id": "CH6-L1-02",
+              "question_type": "MCQ",
+              "question": "Where was the first successful modern textile mill established in India in 1854?",
+              "options": [
+                "Mumbai",
+                "Ahmedabad",
+                "Kolkata",
+                "Kanpur"
+              ],
+              "correct_answer": "Mumbai",
+              "explanation": "The first modern cotton textile mill was established in Mumbai in 1854 due to proximity to raw cotton growing belts, port facilities, and financial capital."
+            },
+            {
+              "question_id": "CH6-L1-03",
+              "question_type": "Fill-in-the-Blank",
+              "question": "The specialized industrial hubs established to provide high-speed data communication facilities to software experts are called ________.",
+              "options": [],
+              "correct_answer": "Software Technology Parks of India (STPI)",
+              "explanation": "STPI hubs (e.g., Bengaluru, Noida, Hyderabad) provide single-window technology infrastructure and high-speed data connectivity for IT software exports."
+            },
+            {
+              "question_id": "CH6-L1-04",
+              "question_type": "True/False",
+              "question": "State True or False: Agglomeration economies occur when industrial units disperse away from cities to reduce land costs.",
+              "options": [],
+              "correct_answer": "False",
+              "explanation": "False. Agglomeration economies occur when many industries cluster together in or near urban centers to take collective advantage of urban infrastructure, banking, transport, and labor markets."
+            }
+          ]
+        },
+        "level_2_medium": {
+          "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
+          "questions": [
+            {
+              "question_id": "CH6-L2-01",
+              "question_type": "Short Answer",
+              "question": "Analyze the geographical factors responsible for the concentration of Jute mills along the Hugli river basin in West Bengal.",
+              "options": [],
+              "correct_answer": "1. Proximity to raw jute producing areas in Bengal.\n2. Abundant inexpensive water for jute processing and retting.\n3. Cheap water transport network along Hugli river.\n4. Abundant cheap labor from West Bengal, Bihar, Odisha.\n5. Port and banking infrastructure of Kolkata.",
+              "explanation": "The Hugli basin provides a natural industrial cluster combining raw material availability, processing water, low-cost freight, and port connectivity."
+            },
+            {
+              "question_id": "CH6-L2-02",
+              "question_type": "Flowchart Analysis",
+              "question": "Outline the three stages of Industrial Effluent Treatment required to control water pollution.",
+              "options": [],
+              "correct_answer": "1. Primary Treatment: Mechanical screening, grinding, flocculation, and sedimentation.\n2. Secondary Treatment: Biological treatment using aerators and activated sludge.\n3. Tertiary Treatment: Chemical and biological recycling of wastewater to achieve zero liquid discharge.",
+              "explanation": "Treating industrial effluents before river discharge prevents heavy metal poisoning, biological oxygen demand (BOD) depletion, and toxic water contamination."
+            },
+            {
+              "question_id": "CH6-L2-03",
+              "question_type": "Structural Analysis",
+              "question": "What major structural challenges face the Indian Sugar Industry, and why is there a shift toward Southern states like Maharashtra?",
+              "options": [],
+              "correct_answer": "Challenges: Seasonal nature of industry, old machinery, and transport delays in crushing sugarcane. Shift to South: Sugarcane grown in Maharashtra has higher sucrose content, cooler coastal climate extends crushing season, and cooperative sugar mills are highly successful.",
+              "explanation": "Maharashtra's sugarcane varieties yield higher recovery rates of sugar and longer crushing cycles compared to traditional northern belts like Uttar Pradesh."
+            }
+          ]
+        },
+        "level_3_hard": {
+          "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
+          "questions": [
+            {
+              "question_id": "CH6-L3-01",
+              "question_type": "Give Reasons",
+              "question": "Why is the Chhota Nagpur Plateau region known as the hub of heavy Iron and Steel industries, yet India is not performing to its full domestic steel potential?",
+              "options": [],
+              "correct_answer": "Hub reasons: Abundance of low-cost iron ore, high-grade coking coal, limestone, and cheap labor. Underperformance reasons: High cost and limited availability of coking coal, lower labor productivity, irregular energy supply, and poor transport infrastructure.",
+              "explanation": "While raw material proximity concentrates steel plants in Chhota Nagpur, systemic infrastructural bottlenecks require importing high-grade coking coal and upgrading tech efficiency."
+            },
+            {
+              "question_id": "CH6-L3-02",
+              "question_type": "Case Study",
+              "question": "Case Scenario: NTPC (National Thermal Power Corporation) implemented an Environment Management System (EMS ISO 14001) across its thermal power stations. Measures included ash utilization, ecological monitoring, and green shelter belts. Evaluate NTPC's model as a benchmark for sustainable industrialization.",
+              "options": [],
+              "correct_answer": "NTPC demonstrates that heavy industries can achieve environmental compliance by adopting proactive waste management. High-efficiency equipment reduces ash output, 100% fly ash utilization in cement minimizes land filling, and afforestation preserves local air quality.",
+              "explanation": "NTPC's ISO 14001 framework proves that corporate environmental responsibility balances power generation demands with ecological preservation."
+            },
+            {
+              "question_id": "CH6-L3-03",
+              "question_type": "Critical Thinking & Synthesis",
+              "question": "Synthesize the impact of Information Technology (IT) and Electronics Industry on employment generation, gender empowerment, and foreign exchange earnings in India.",
+              "options": [],
+              "correct_answer": "The IT industry has transformed India's economy by:\n1. Generating over 4 million direct jobs in software and BPO services.\n2. Empowering women, who constitute nearly 30% of the IT workforce.\n3. Earning billions in foreign exchange exports through global software development.\n4. Spurring tier-2 urban growth across Software Technology Parks.",
+              "explanation": "Knowledge-based service industries act as powerful engines of socioeconomic mobility, earning crucial foreign revenue while fostering gender equity."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Lifelines of National Economy",
+        "level_1_easy": {
+          "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
+          "questions": [
+            {
+              "question_id": "CH7-L1-01",
+              "question_type": "MCQ",
+              "question": "Which of the following ports was developed soon after Independence to ease the volume of trade on the Mumbai port?",
+              "options": [
+                "Kandla (Deendayal Port)",
+                "Kochin",
+                "Marmagao",
+                "Tuticorin"
+              ],
+              "correct_answer": "Kandla (Deendayal Port)",
+              "explanation": "Kandla port in Kutch, Gujarat was the first port developed after Independence to handle trade after Karachi port went to Pakistan and to relieve congestion on Mumbai port."
+            },
+            {
+              "question_id": "CH7-L1-02",
+              "question_type": "MCQ",
+              "question": "What is the extreme length corridor connecting Silchar in Assam to Porbandar in Gujarat called?",
+              "options": [
+                "East-West Corridor",
+                "North-South Corridor",
+                "Golden Quadrilateral",
+                "Expressway"
+              ],
+              "correct_answer": "East-West Corridor",
+              "explanation": "The East-West Corridor is part of the Super Highways project connecting Silchar (Assam) in the east to Porbandar (Gujarat) in the west."
+            },
+            {
+              "question_id": "CH7-L1-03",
+              "question_type": "Fill-in-the-Blank",
+              "question": "The difference between the total financial value of a country's exports and imports is called the ________.",
+              "options": [],
+              "correct_answer": "Balance of Trade",
+              "explanation": "Balance of Trade is favorable when export value exceeds import value, and unfavorable when import value exceeds export value."
+            },
+            {
+              "question_id": "CH7-L1-04",
+              "question_type": "True/False",
+              "question": "State True or False: Pipelines incur high initial construction costs but offer low operational maintenance and eliminate trans-shipment losses.",
+              "options": [],
+              "correct_answer": "True",
+              "explanation": "True. Underground pipelines carrying crude oil, petroleum products, or natural gas have high initial capital costs but ensure smooth, continuous transport with zero transit delays or material leakage."
+            }
+          ]
+        },
+        "level_2_medium": {
+          "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
+          "questions": [
+            {
+              "question_id": "CH7-L2-01",
+              "question_type": "Short Answer",
+              "question": "Compare Roadways and Railways in terms of capital investment, terrain flexibility, and door-to-door service.",
+              "options": [],
+              "correct_answer": "Roadways require lower construction capital, traverse sharp slopes and undulating terrain (e.g., Himalayas), and provide door-to-door service. Railways require higher capital, operate best on flat plains, carry heavy bulk freight over long distances, but cannot provide door-to-door delivery.",
+              "explanation": "Roadways serve as feeder routes to railway stations and ports, offering flexible short-haul transportation."
+            },
+            {
+              "question_id": "CH7-L2-02",
+              "question_type": "Diagram Analysis",
+              "question": "Classify major Indian Seaports on the Western Coast versus the Eastern Coast.",
+              "options": [],
+              "correct_answer": "Western Coast Ports: Kandla (Deendayal), Mumbai, Jawaharlal Nehru (Nhava Sheva), Marmagao, New Mangalore, Kochi.\nEastern Coast Ports: Tuticorin, Chennai, Visakhapatnam, Paradip, Haldia, Kolkata.",
+              "explanation": "Western coast ports handle major trade with Europe/West Asia (Kandla tidal port, Marmagao iron ore export port). Eastern coast ports handle deep-water bulk cargo and South-East Asian trade (Visakhapatnam deepest landlocked port, Paradip iron ore port)."
+            },
+            {
+              "question_id": "CH7-L2-03",
+              "question_type": "Structural Analysis",
+              "question": "Why is international trade considered an 'economic barometer' for a country?",
+              "options": [],
+              "correct_answer": "International trade reflects a nation's economic strength. Earning foreign exchange through high-value exports enhances national capital, generates employment, and imports essential commodities (e.g., crude oil, high-tech machinery) that cannot be produced domestically.",
+              "explanation": "A positive trade balance indicates industrial competitiveness, high GDP growth, and strong integration into global supply chains."
+            }
+          ]
+        },
+        "level_3_hard": {
+          "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
+          "questions": [
+            {
+              "question_id": "CH7-L3-01",
+              "question_type": "Give Reasons",
+              "question": "Why do the Northern Plains possess a dense network of railways, whereas the Himalayan mountainous regions and Rajasthan desert have sparse railway coverage?",
+              "options": [],
+              "correct_answer": "Northern Plains have vast level land, high population density, and rich agricultural resources, making railway construction economical. Himalayan mountains have rugged relief, high peaks, and low population density, while Rajasthan deserts have shifting sand dunes that make track laying difficult and expensive.",
+              "explanation": "Physiographic, economic, and demographic factors dictate railway feasibility. Level terrain and high traffic demand justify rail investments, whereas extreme topographies pose construction hurdles."
+            },
+            {
+              "question_id": "CH7-L3-02",
+              "question_type": "Case Study",
+              "question": "Case Scenario: Tourism in India has grown substantially, contributing millions to foreign exchange earnings and supporting over 15 million direct jobs in handicrafts, hospitality, and heritage. Evaluate tourism as a form of non-traditional international trade.",
+              "options": [],
+              "correct_answer": "Tourism acts as an invisible export trade where foreign visitors consume domestic services (heritage sites, eco-tourism, medical treatments). It generates immediate foreign exchange, supports local artisans without material depletion, and promotes national integration and global cultural exchange.",
+              "explanation": "Foreign tourists visiting India spend foreign currency directly on local transportation, hotels, and handicrafts, functioning as a high-margin service export sector."
+            },
+            {
+              "question_id": "CH7-L3-03",
+              "question_type": "Critical Thinking & Synthesis",
+              "question": "Explain how modern communication networks (Digital India, Mass Media, Satellite Communication) combined with multimodal transportation form the 'lifelines' of modern national economy.",
+              "options": [],
+              "correct_answer": "Efficient transport moves raw materials and goods seamlessly across distant markets, while digital communication networks (Doordarshan, AIR, high-speed internet, satellite data) enable real-time information exchange, financial transactions, governance, and disaster management. Together, they integrate regional economies into a unified national market.",
+              "explanation": "Dense transport networks physicalize trade, while telecommunication networks digitalize commerce and administration, driving economic growth and national unity."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "grade": "10",
+  "chapter_id": "G10-SOC-U01-C01",
   "chapter_number": 1,
-  "chapter_title": "Resources and Development",
-  "level_1_easy": {
-    "description": "Foundational Recall & Identification (MCQs, Fill-in-the-Blanks, True/False with justification)",
-    "questions": [
-      {
-        "question_id": "CH1-L1-01",
-        "question_type": "MCQ",
-        "question": "Which one of the following types of resource is iron ore?",
-        "options": [
-          "Biotic",
-          "Renewable",
-          "Flow",
-          "Non-renewable"
-        ],
-        "correct_answer": "Non-renewable",
-        "explanation": "Iron ore is a non-renewable mineral resource formed over millions of years of geological processes. Once consumed, it cannot be regenerated on a human timescale."
-      },
-      {
-        "question_id": "CH1-L1-02",
-        "question_type": "MCQ",
-        "question": "Under which of the following types of resource can tidal energy be put?",
-        "options": [
-          "Replenishable / Renewable",
-          "Human-made",
-          "Abiotic",
-          "Non-recyclable"
-        ],
-        "correct_answer": "Replenishable / Renewable",
-        "explanation": "Tidal energy is powered by oceanic tides caused by gravitational pulls of the moon and sun, making it continuously replenishable and renewable."
-      },
-      {
-        "question_id": "CH1-L1-03",
-        "question_type": "Fill-in-the-Blank",
-        "question": "The international summit held in 1992 to achieve global sustainable development was the Earth Summit held at ________.",
-        "options": [],
-        "correct_answer": "Rio de Janeiro, Brazil",
-        "explanation": "The first International Earth Summit was convened in Rio de Janeiro in June 1992, adopting Agenda 21 to combat environmental damage, poverty, and disease."
-      },
-      {
-        "question_id": "CH1-L1-04",
-        "question_type": "True/False",
-        "question": "State True or False: Black soil is locally known as Regur soil and is ideally suited for growing cotton.",
-        "options": [],
-        "correct_answer": "True",
-        "explanation": "True. Black soil (Regur soil) is rich in soil nutrients like calcium carbonate, magnesium, potash, and lime, and has high moisture retention capacity, making it perfect for cotton cultivation."
-      }
-    ]
-  },
-  "level_2_medium": {
-    "description": "Conceptual Understanding & Application (Short Answer, Image/Diagram/Flowchart Analysis, Structural Analysis)",
-    "questions": [
-      {
-        "question_id": "CH1-L2-01",
-        "question_type": "Short Answer",
-        "question": "Distinguish between Net Sown Area and Gross Cropped Area in Indian agricultural land utilization.",
-        "options": [],
-        "correct_answer": "Net Sown Area refers to the total physical area sown with crops and harvested within an agricultural year. Gross Cropped Area includes the Net Sown Area plus any land sown more than once in the same agricultural year.",
-        "explanation": "Net Sown Area represents the physical land footprint cultivated (approx. 45.5% of India's total land area), whereas Gross Cropped Area accounts for cropping intensity where multiple crops are harvested from the same land parcel in different seasons."
-      },
-      {
-        "question_id": "CH1-L2-02",
-        "question_type": "Diagram Analysis",
-        "question": "Describe the four distinct horizons of a typical soil profile from top to bottom.",
-        "options": [],
-        "correct_answer": "1. Topsoil (Upper soil layer, rich in humus and organic matter)\n2. Subsoil (Weathered rocks, sand, silt, and clay)\n3. Substratum (Weathered parent rock material)\n4. Unweathered Parent Bedrock",
-        "explanation": "Soil profile horizons develop over long periods. Topsoil supports plant life with active organic humus, subsoil collects leached minerals, substratum consists of broken rock fragments, and unweathered bedrock forms the solid foundational parent material."
-      },
-      {
-        "question_id": "CH1-L2-03",
-        "question_type": "Structural Analysis",
-        "question": "Analyze how human activities differ in causing land degradation between Punjab/Haryana and Odisha/Jharkhand.",
-        "options": [],
-        "correct_answer": "In Punjab and Haryana, land degradation is primarily caused by over-irrigation leading to waterlogging and soil alkalinity/salinity. In Odisha and Jharkhand, degradation is driven by severe mining activities and deforestation.",
-        "explanation": "Regional land degradation causes vary by economic drivers: agricultural intensification in northwestern India leads to salinization due to heavy tube-well irrigation, whereas mineral extraction in central-eastern India leaves abandoned open-cast mining pits and destroyed forest cover."
-      }
-    ]
-  },
-  "level_3_hard": {
-    "description": "Advanced Analysis, Reasoning, & Competency (Give Reasons, Critical Thinking, Case-Study Scenarios, Synthesis)",
-    "questions": [
-      {
-        "question_id": "CH1-L3-01",
-        "question_type": "Give Reasons",
-        "question": "Why are resources considered a function of human activities rather than mere 'free gifts of nature'?",
-        "options": [],
-        "correct_answer": "Materials in the environment only become resources when humans possess the technological know-how, economic capability, and institutional frameworks to transform raw materials into culturally acceptable, usable items.",
-        "explanation": "Nature provides neutral substances. For example, crude oil underground was not a resource until human technological development created refining processes and internal combustion engines. Human knowledge and technology are therefore the indispensable agents that define resources."
-      },
-      {
-        "question_id": "CH1-L3-02",
-        "question_type": "Case Study",
-        "question": "Case Scenario: In the Chambal river basin, running water has cut deep clayey channels creating unusable 'bad land' known as ravines. Farmers in neighboring undulating topographies face severe sheet erosion where topsoil is washed away by sheet flow. Propose a comprehensive soil conservation action plan.",
-        "options": [],
-        "correct_answer": "Action Plan:\n1. Contour Ploughing along hill slopes to decelerate water runoff.\n2. Terrace Farming in mountainous areas to break slope speed.\n3. Strip Cropping: Planting grass strips between field crops to break wind and water velocity.\n4. Planting Shelter Belts of trees to stabilize topsoil and sand dunes.",
-        "explanation": "Gully erosion occurs when running water carves deep channels, creating ravines. Sheet erosion removes topsoil over broad flat slopes. The proposed conservation methods counteract hydraulic water force and wind erosion, restoring soil structure."
-      },
-      {
-        "question_id": "CH1-L3-03",
-        "question_type": "Critical Thinking & Synthesis",
-        "question": "Evaluate the statement: 'India has sufficient resources to satisfy everyone's need, but not anybody's greed.' Connect Mahatma Gandhi's philosophy to modern global sustainable development principles.",
-        "options": [],
-        "correct_answer": "Gandhi identified modern mass production and greedy, exploitative technology as the root cause of resource depletion. He advocated production by the masses rather than mass production. This directly aligns with Sustainable Development and Agenda 21, which advocate equitable resource distribution, ecological balance, and protecting resources for future generations.",
-        "explanation": "Gandhian economics stresses ethical resource consumption. Indiscriminate exploitation leads to global crises like global warming, ozone depletion, and land degradation. Modern frameworks like the 1987 Brundtland Commission Report ('Our Common Future') reinforced this by defining sustainable development as meeting present needs without compromising future generations."
-      }
-    ]
-  }
+  "chapter_title": "Social I Chapter 1"
 }

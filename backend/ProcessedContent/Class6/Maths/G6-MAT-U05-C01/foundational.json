@@ -1,10 +1,1760 @@
 {
-  "grade": "6",
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_6f4ec67f7bc5c47d",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_6",
+    "class_level": 6
+  },
   "subject": "Maths",
-  "chapter_id": "G6-MAT-U05-C01",
-  "chapter_title": "Maths Chapter 1",
-  "foundational_rules": [
-    "Rule 1: Always identify core variables in Maths Chapter 1 before applying formulas.",
-    "Rule 2: Verify step-by-step calculations using inverse relationships."
-  ]
+  "artifact": {
+    "artifact_type": "foundational",
+    "source_file_name": "07-Foundational-v2.json",
+    "source_relative_path": "Contents/Class 6/Maths/Source Files/07-Foundational-v2.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "90fc52b30948306ed52b1afdecb4ce3554414fd4bf2b8462e18f6e0e12a621d5",
+    "source_semantic_sha256": "57c90541e71fd408fb0ce5dfd6c6cd2295cca589602c7beb6e60bcdd02e15220",
+    "source_byte_length": 50281,
+    "source_encoding": "utf-8",
+    "source_field_count": 622,
+    "field_inventory": [
+      "$.subject",
+      "$.chapter",
+      "$.chapter.book_title",
+      "$.chapter.class_level",
+      "$.chapter.chapters_covered",
+      "$.content",
+      "$.content.mathematical_vocabulary",
+      "$.content.mathematical_vocabulary[0].term",
+      "$.content.mathematical_vocabulary[0].context",
+      "$.content.mathematical_vocabulary[0].description",
+      "$.content.mathematical_vocabulary[1].term",
+      "$.content.mathematical_vocabulary[1].context",
+      "$.content.mathematical_vocabulary[1].description",
+      "$.content.mathematical_vocabulary[2].term",
+      "$.content.mathematical_vocabulary[2].context",
+      "$.content.mathematical_vocabulary[2].description",
+      "$.content.mathematical_vocabulary[3].term",
+      "$.content.mathematical_vocabulary[3].context",
+      "$.content.mathematical_vocabulary[3].description",
+      "$.content.mathematical_vocabulary[4].term",
+      "$.content.mathematical_vocabulary[4].context",
+      "$.content.mathematical_vocabulary[4].description",
+      "$.content.mathematical_vocabulary[5].term",
+      "$.content.mathematical_vocabulary[5].context",
+      "$.content.mathematical_vocabulary[5].description",
+      "$.content.mathematical_vocabulary[6].term",
+      "$.content.mathematical_vocabulary[6].context",
+      "$.content.mathematical_vocabulary[6].description",
+      "$.content.mathematical_vocabulary[7].term",
+      "$.content.mathematical_vocabulary[7].context",
+      "$.content.mathematical_vocabulary[7].description",
+      "$.content.mathematical_vocabulary[8].term",
+      "$.content.mathematical_vocabulary[8].context",
+      "$.content.mathematical_vocabulary[8].description",
+      "$.content.mathematical_vocabulary[9].term",
+      "$.content.mathematical_vocabulary[9].context",
+      "$.content.mathematical_vocabulary[9].description",
+      "$.content.mathematical_vocabulary[10].term",
+      "$.content.mathematical_vocabulary[10].context",
+      "$.content.mathematical_vocabulary[10].description",
+      "$.content.mathematical_vocabulary[11].term",
+      "$.content.mathematical_vocabulary[11].context",
+      "$.content.mathematical_vocabulary[11].description",
+      "$.content.mathematical_vocabulary[12].term",
+      "$.content.mathematical_vocabulary[12].context",
+      "$.content.mathematical_vocabulary[12].description",
+      "$.content.mathematical_vocabulary[13].term",
+      "$.content.mathematical_vocabulary[13].context",
+      "$.content.mathematical_vocabulary[13].description",
+      "$.content.mathematical_vocabulary[14].term",
+      "$.content.mathematical_vocabulary[14].context",
+      "$.content.mathematical_vocabulary[14].description",
+      "$.content.mathematical_vocabulary[15].term",
+      "$.content.mathematical_vocabulary[15].context",
+      "$.content.mathematical_vocabulary[15].description",
+      "$.content.mathematical_vocabulary[16].term",
+      "$.content.mathematical_vocabulary[16].context",
+      "$.content.mathematical_vocabulary[16].description",
+      "$.content.mathematical_vocabulary[17].term",
+      "$.content.mathematical_vocabulary[17].context",
+      "$.content.mathematical_vocabulary[17].description",
+      "$.content.mathematical_vocabulary[18].term",
+      "$.content.mathematical_vocabulary[18].context",
+      "$.content.mathematical_vocabulary[18].description",
+      "$.content.mathematical_vocabulary[19].term",
+      "$.content.mathematical_vocabulary[19].context",
+      "$.content.mathematical_vocabulary[19].description",
+      "$.content.mathematical_vocabulary[20].term",
+      "$.content.mathematical_vocabulary[20].context",
+      "$.content.mathematical_vocabulary[20].description",
+      "$.content.definitions",
+      "$.content.definitions[0].term",
+      "$.content.definitions[0].context",
+      "$.content.definitions[0].definition",
+      "$.content.definitions[1].term",
+      "$.content.definitions[1].context",
+      "$.content.definitions[1].definition",
+      "$.content.definitions[2].term",
+      "$.content.definitions[2].context",
+      "$.content.definitions[2].definition",
+      "$.content.definitions[3].term",
+      "$.content.definitions[3].context",
+      "$.content.definitions[3].definition",
+      "$.content.definitions[4].term",
+      "$.content.definitions[4].context",
+      "$.content.definitions[4].definition",
+      "$.content.definitions[5].term",
+      "$.content.definitions[5].context",
+      "$.content.definitions[5].definition",
+      "$.content.definitions[6].term",
+      "$.content.definitions[6].context",
+      "$.content.definitions[6].definition",
+      "$.content.definitions[7].term",
+      "$.content.definitions[7].context",
+      "$.content.definitions[7].definition",
+      "$.content.definitions[8].term",
+      "$.content.definitions[8].context",
+      "$.content.definitions[8].definition",
+      "$.content.definitions[9].term",
+      "$.content.definitions[9].context",
+      "$.content.definitions[9].definition",
+      "$.content.definitions[10].term",
+      "$.content.definitions[10].context",
+      "$.content.definitions[10].definition",
+      "$.content.definitions[11].term",
+      "$.content.definitions[11].context",
+      "$.content.definitions[11].definition",
+      "$.content.definitions[12].term",
+      "$.content.definitions[12].context",
+      "$.content.definitions[12].definition",
+      "$.content.definitions[13].term",
+      "$.content.definitions[13].context",
+      "$.content.definitions[13].definition",
+      "$.content.definitions[14].term",
+      "$.content.definitions[14].context",
+      "$.content.definitions[14].definition",
+      "$.content.definitions[15].term",
+      "$.content.definitions[15].context",
+      "$.content.definitions[15].definition",
+      "$.content.definitions[16].term",
+      "$.content.definitions[16].context",
+      "$.content.definitions[16].definition",
+      "$.content.definitions[17].term",
+      "$.content.definitions[17].context",
+      "$.content.definitions[17].definition",
+      "$.content.definitions[18].term",
+      "$.content.definitions[18].context",
+      "$.content.definitions[18].definition",
+      "$.content.definitions[19].term",
+      "$.content.definitions[19].context",
+      "$.content.definitions[19].definition",
+      "$.content.definitions[20].term",
+      "$.content.definitions[20].context",
+      "$.content.definitions[20].definition",
+      "$.content.definitions[21].term",
+      "$.content.definitions[21].context",
+      "$.content.definitions[21].definition",
+      "$.content.definitions[22].term",
+      "$.content.definitions[22].context",
+      "$.content.definitions[22].definition",
+      "$.content.definitions[23].term",
+      "$.content.definitions[23].context",
+      "$.content.definitions[23].definition",
+      "$.content.definitions[24].term",
+      "$.content.definitions[24].context",
+      "$.content.definitions[24].definition",
+      "$.content.definitions[25].term",
+      "$.content.definitions[25].context",
+      "$.content.definitions[25].definition",
+      "$.content.definitions[26].term",
+      "$.content.definitions[26].context",
+      "$.content.definitions[26].definition",
+      "$.content.definitions[27].term",
+      "$.content.definitions[27].context",
+      "$.content.definitions[27].definition",
+      "$.content.definitions[28].term",
+      "$.content.definitions[28].context",
+      "$.content.definitions[28].definition",
+      "$.content.concepts",
+      "$.content.concepts[0].concept_name",
+      "$.content.concepts[0].context",
+      "$.content.concepts[0].explanation",
+      "$.content.concepts[1].concept_name",
+      "$.content.concepts[1].context",
+      "$.content.concepts[1].explanation",
+      "$.content.concepts[2].concept_name",
+      "$.content.concepts[2].context",
+      "$.content.concepts[2].explanation",
+      "$.content.concepts[3].concept_name",
+      "$.content.concepts[3].context",
+      "$.content.concepts[3].explanation",
+      "$.content.concepts[4].concept_name",
+      "$.content.concepts[4].context",
+      "$.content.concepts[4].explanation",
+      "$.content.concepts[5].concept_name",
+      "$.content.concepts[5].context",
+      "$.content.concepts[5].explanation",
+      "$.content.concepts[6].concept_name",
+      "$.content.concepts[6].context",
+      "$.content.concepts[6].explanation",
+      "$.content.concepts[7].concept_name",
+      "$.content.concepts[7].context",
+      "$.content.concepts[7].explanation",
+      "$.content.concepts[8].concept_name",
+      "$.content.concepts[8].context",
+      "$.content.concepts[8].explanation",
+      "$.content.concepts[9].concept_name",
+      "$.content.concepts[9].context",
+      "$.content.concepts[9].explanation",
+      "$.content.concepts[10].concept_name",
+      "$.content.concepts[10].context",
+      "$.content.concepts[10].explanation",
+      "$.content.concepts[11].concept_name",
+      "$.content.concepts[11].context",
+      "$.content.concepts[11].explanation",
+      "$.content.concepts[12].concept_name",
+      "$.content.concepts[12].context",
+      "$.content.concepts[12].explanation",
+      "$.content.concepts[13].concept_name",
+      "$.content.concepts[13].context",
+      "$.content.concepts[13].explanation",
+      "$.content.concepts[14].concept_name",
+      "$.content.concepts[14].context",
+      "$.content.concepts[14].explanation",
+      "$.content.concepts[15].concept_name",
+      "$.content.concepts[15].context",
+      "$.content.concepts[15].explanation",
+      "$.content.concepts[16].concept_name",
+      "$.content.concepts[16].context",
+      "$.content.concepts[16].explanation",
+      "$.content.concepts[17].concept_name",
+      "$.content.concepts[17].context",
+      "$.content.concepts[17].explanation",
+      "$.content.concepts[18].concept_name",
+      "$.content.concepts[18].context",
+      "$.content.concepts[18].explanation",
+      "$.content.properties",
+      "$.content.properties[0].property_name",
+      "$.content.properties[0].context",
+      "$.content.properties[0].statement",
+      "$.content.properties[1].property_name",
+      "$.content.properties[1].context",
+      "$.content.properties[1].statement",
+      "$.content.properties[2].property_name",
+      "$.content.properties[2].context",
+      "$.content.properties[2].statement",
+      "$.content.properties[3].property_name",
+      "$.content.properties[3].context",
+      "$.content.properties[3].statement",
+      "$.content.properties[4].property_name",
+      "$.content.properties[4].context",
+      "$.content.properties[4].statement",
+      "$.content.properties[5].property_name",
+      "$.content.properties[5].context",
+      "$.content.properties[5].statement",
+      "$.content.properties[6].property_name",
+      "$.content.properties[6].context",
+      "$.content.properties[6].statement",
+      "$.content.properties[7].property_name",
+      "$.content.properties[7].context",
+      "$.content.properties[7].statement",
+      "$.content.properties[8].property_name",
+      "$.content.properties[8].context",
+      "$.content.properties[8].statement",
+      "$.content.properties[9].property_name",
+      "$.content.properties[9].context",
+      "$.content.properties[9].statement",
+      "$.content.properties[10].property_name",
+      "$.content.properties[10].context",
+      "$.content.properties[10].statement",
+      "$.content.properties[11].property_name",
+      "$.content.properties[11].context",
+      "$.content.properties[11].statement",
+      "$.content.properties[12].property_name",
+      "$.content.properties[12].context",
+      "$.content.properties[12].statement",
+      "$.content.properties[13].property_name",
+      "$.content.properties[13].context",
+      "$.content.properties[13].statement",
+      "$.content.properties[14].property_name",
+      "$.content.properties[14].context",
+      "$.content.properties[14].statement",
+      "$.content.rules",
+      "$.content.rules[0].rule_name",
+      "$.content.rules[0].context",
+      "$.content.rules[0].rule_statement",
+      "$.content.rules[1].rule_name",
+      "$.content.rules[1].context",
+      "$.content.rules[1].rule_statement",
+      "$.content.rules[2].rule_name",
+      "$.content.rules[2].context",
+      "$.content.rules[2].rule_statement",
+      "$.content.rules[3].rule_name",
+      "$.content.rules[3].context",
+      "$.content.rules[3].rule_statement",
+      "$.content.rules[4].rule_name",
+      "$.content.rules[4].context",
+      "$.content.rules[4].rule_statement",
+      "$.content.rules[5].rule_name",
+      "$.content.rules[5].context",
+      "$.content.rules[5].rule_statement",
+      "$.content.rules[6].rule_name",
+      "$.content.rules[6].context",
+      "$.content.rules[6].rule_statement",
+      "$.content.rules[7].rule_name",
+      "$.content.rules[7].context",
+      "$.content.rules[7].rule_statement",
+      "$.content.rules[8].rule_name",
+      "$.content.rules[8].context",
+      "$.content.rules[8].rule_statement",
+      "$.content.rules[9].rule_name",
+      "$.content.rules[9].context",
+      "$.content.rules[9].rule_statement",
+      "$.content.rules[10].rule_name",
+      "$.content.rules[10].context",
+      "$.content.rules[10].rule_statement",
+      "$.content.formulas",
+      "$.content.formulas[0].formula_name",
+      "$.content.formulas[0].context",
+      "$.content.formulas[0].formula_expression",
+      "$.content.formulas[0].variables",
+      "$.content.formulas[1].formula_name",
+      "$.content.formulas[1].context",
+      "$.content.formulas[1].formula_expression",
+      "$.content.formulas[1].variables",
+      "$.content.formulas[2].formula_name",
+      "$.content.formulas[2].context",
+      "$.content.formulas[2].formula_expression",
+      "$.content.formulas[2].variables",
+      "$.content.formulas[3].formula_name",
+      "$.content.formulas[3].context",
+      "$.content.formulas[3].formula_expression",
+      "$.content.formulas[3].variables",
+      "$.content.formulas[4].formula_name",
+      "$.content.formulas[4].context",
+      "$.content.formulas[4].formula_expression",
+      "$.content.formulas[4].variables",
+      "$.content.formulas[5].formula_name",
+      "$.content.formulas[5].context",
+      "$.content.formulas[5].formula_expression",
+      "$.content.formulas[5].variables",
+      "$.content.formulas[6].formula_name",
+      "$.content.formulas[6].context",
+      "$.content.formulas[6].formula_expression",
+      "$.content.formulas[6].variables",
+      "$.content.formulas[7].formula_name",
+      "$.content.formulas[7].context",
+      "$.content.formulas[7].formula_expression",
+      "$.content.formulas[7].variables",
+      "$.content.formulas[8].formula_name",
+      "$.content.formulas[8].context",
+      "$.content.formulas[8].formula_expression",
+      "$.content.formulas[8].variables",
+      "$.content.formulas[9].formula_name",
+      "$.content.formulas[9].context",
+      "$.content.formulas[9].formula_expression",
+      "$.content.formulas[9].variables",
+      "$.content.formulas[10].formula_name",
+      "$.content.formulas[10].context",
+      "$.content.formulas[10].formula_expression",
+      "$.content.formulas[10].variables",
+      "$.content.formulas[11].formula_name",
+      "$.content.formulas[11].context",
+      "$.content.formulas[11].formula_expression",
+      "$.content.formulas[11].variables",
+      "$.content.formulas[12].formula_name",
+      "$.content.formulas[12].context",
+      "$.content.formulas[12].formula_expression",
+      "$.content.formulas[12].variables",
+      "$.content.formulas[13].formula_name",
+      "$.content.formulas[13].context",
+      "$.content.formulas[13].formula_expression",
+      "$.content.formulas[13].variables",
+      "$.content.formulas[14].formula_name",
+      "$.content.formulas[14].context",
+      "$.content.formulas[14].formula_expression",
+      "$.content.formulas[14].variables",
+      "$.content.formulas[15].formula_name",
+      "$.content.formulas[15].context",
+      "$.content.formulas[15].formula_expression",
+      "$.content.formulas[15].variables",
+      "$.content.formulas[16].formula_name",
+      "$.content.formulas[16].context",
+      "$.content.formulas[16].formula_expression",
+      "$.content.formulas[16].variables",
+      "$.content.formulas[17].formula_name",
+      "$.content.formulas[17].context",
+      "$.content.formulas[17].formula_expression",
+      "$.content.formulas[17].variables",
+      "$.content.formulas[18].formula_name",
+      "$.content.formulas[18].context",
+      "$.content.formulas[18].formula_expression",
+      "$.content.formulas[18].variables",
+      "$.content.formulas[19].formula_name",
+      "$.content.formulas[19].context",
+      "$.content.formulas[19].formula_expression",
+      "$.content.formulas[19].variables",
+      "$.content.symbols_notation",
+      "$.content.symbols_notation[0].symbol",
+      "$.content.symbols_notation[0].name",
+      "$.content.symbols_notation[0].meaning",
+      "$.content.symbols_notation[1].symbol",
+      "$.content.symbols_notation[1].name",
+      "$.content.symbols_notation[1].meaning",
+      "$.content.symbols_notation[2].symbol",
+      "$.content.symbols_notation[2].name",
+      "$.content.symbols_notation[2].meaning",
+      "$.content.symbols_notation[3].symbol",
+      "$.content.symbols_notation[3].name",
+      "$.content.symbols_notation[3].meaning",
+      "$.content.symbols_notation[4].symbol",
+      "$.content.symbols_notation[4].name",
+      "$.content.symbols_notation[4].meaning",
+      "$.content.symbols_notation[5].symbol",
+      "$.content.symbols_notation[5].name",
+      "$.content.symbols_notation[5].meaning",
+      "$.content.symbols_notation[6].symbol",
+      "$.content.symbols_notation[6].name",
+      "$.content.symbols_notation[6].meaning",
+      "$.content.symbols_notation[7].symbol",
+      "$.content.symbols_notation[7].name",
+      "$.content.symbols_notation[7].meaning",
+      "$.content.symbols_notation[8].symbol",
+      "$.content.symbols_notation[8].name",
+      "$.content.symbols_notation[8].meaning",
+      "$.content.symbols_notation[9].symbol",
+      "$.content.symbols_notation[9].name",
+      "$.content.symbols_notation[9].meaning",
+      "$.content.symbols_notation[10].symbol",
+      "$.content.symbols_notation[10].name",
+      "$.content.symbols_notation[10].meaning",
+      "$.content.symbols_notation[11].symbol",
+      "$.content.symbols_notation[11].name",
+      "$.content.symbols_notation[11].meaning",
+      "$.content.symbols_notation[12].symbol",
+      "$.content.symbols_notation[12].name",
+      "$.content.symbols_notation[12].meaning",
+      "$.content.symbols_notation[13].symbol",
+      "$.content.symbols_notation[13].name",
+      "$.content.symbols_notation[13].meaning",
+      "$.content.procedures",
+      "$.content.procedures[0].procedure_name",
+      "$.content.procedures[0].context",
+      "$.content.procedures[0].steps",
+      "$.content.procedures[1].procedure_name",
+      "$.content.procedures[1].context",
+      "$.content.procedures[1].steps",
+      "$.content.procedures[2].procedure_name",
+      "$.content.procedures[2].context",
+      "$.content.procedures[2].steps",
+      "$.content.procedures[3].procedure_name",
+      "$.content.procedures[3].context",
+      "$.content.procedures[3].steps",
+      "$.content.procedures[4].procedure_name",
+      "$.content.procedures[4].context",
+      "$.content.procedures[4].steps",
+      "$.content.procedures[5].procedure_name",
+      "$.content.procedures[5].context",
+      "$.content.procedures[5].steps",
+      "$.content.procedures[6].procedure_name",
+      "$.content.procedures[6].context",
+      "$.content.procedures[6].steps",
+      "$.content.procedures[7].procedure_name",
+      "$.content.procedures[7].context",
+      "$.content.procedures[7].steps",
+      "$.content.procedures[8].procedure_name",
+      "$.content.procedures[8].context",
+      "$.content.procedures[8].steps",
+      "$.content.procedures[9].procedure_name",
+      "$.content.procedures[9].context",
+      "$.content.procedures[9].steps",
+      "$.content.procedures[10].procedure_name",
+      "$.content.procedures[10].context",
+      "$.content.procedures[10].steps",
+      "$.content.procedures[11].procedure_name",
+      "$.content.procedures[11].context",
+      "$.content.procedures[11].steps",
+      "$.content.procedures[12].procedure_name",
+      "$.content.procedures[12].context",
+      "$.content.procedures[12].steps",
+      "$.content.procedures[13].procedure_name",
+      "$.content.procedures[13].context",
+      "$.content.procedures[13].steps",
+      "$.content.procedures[14].procedure_name",
+      "$.content.procedures[14].context",
+      "$.content.procedures[14].steps",
+      "$.content.procedures[15].procedure_name",
+      "$.content.procedures[15].context",
+      "$.content.procedures[15].steps",
+      "$.content.relationships",
+      "$.content.relationships[0].relationship",
+      "$.content.relationships[0].context",
+      "$.content.relationships[0].statement",
+      "$.content.relationships[1].relationship",
+      "$.content.relationships[1].context",
+      "$.content.relationships[1].statement",
+      "$.content.relationships[2].relationship",
+      "$.content.relationships[2].context",
+      "$.content.relationships[2].statement",
+      "$.content.relationships[3].relationship",
+      "$.content.relationships[3].context",
+      "$.content.relationships[3].statement",
+      "$.content.relationships[4].relationship",
+      "$.content.relationships[4].context",
+      "$.content.relationships[4].statement",
+      "$.content.relationships[5].relationship",
+      "$.content.relationships[5].context",
+      "$.content.relationships[5].statement",
+      "$.content.relationships[6].relationship",
+      "$.content.relationships[6].context",
+      "$.content.relationships[6].statement",
+      "$.content.relationships[7].relationship",
+      "$.content.relationships[7].context",
+      "$.content.relationships[7].statement",
+      "$.content.relationships[8].relationship",
+      "$.content.relationships[8].context",
+      "$.content.relationships[8].statement",
+      "$.content.relationships[9].relationship",
+      "$.content.relationships[9].context",
+      "$.content.relationships[9].statement",
+      "$.content.relationships[10].relationship",
+      "$.content.relationships[10].context",
+      "$.content.relationships[10].statement",
+      "$.content.units_measurements",
+      "$.content.units_measurements[0].unit",
+      "$.content.units_measurements[0].quantity_measured",
+      "$.content.units_measurements[0].conversion_or_definition",
+      "$.content.units_measurements[1].unit",
+      "$.content.units_measurements[1].quantity_measured",
+      "$.content.units_measurements[1].conversion_or_definition",
+      "$.content.units_measurements[2].unit",
+      "$.content.units_measurements[2].quantity_measured",
+      "$.content.units_measurements[2].conversion_or_definition",
+      "$.content.units_measurements[3].unit",
+      "$.content.units_measurements[3].quantity_measured",
+      "$.content.units_measurements[3].conversion_or_definition",
+      "$.content.units_measurements[4].unit",
+      "$.content.units_measurements[4].quantity_measured",
+      "$.content.units_measurements[4].conversion_or_definition",
+      "$.content.units_measurements[5].unit",
+      "$.content.units_measurements[5].quantity_measured",
+      "$.content.units_measurements[5].conversion_or_definition",
+      "$.content.units_measurements[6].unit",
+      "$.content.units_measurements[6].quantity_measured",
+      "$.content.units_measurements[6].conversion_or_definition",
+      "$.content.patterns",
+      "$.content.patterns[0].pattern_name",
+      "$.content.patterns[0].sequence_or_rule",
+      "$.content.patterns[0].context",
+      "$.content.patterns[1].pattern_name",
+      "$.content.patterns[1].sequence_or_rule",
+      "$.content.patterns[1].context",
+      "$.content.patterns[2].pattern_name",
+      "$.content.patterns[2].sequence_or_rule",
+      "$.content.patterns[2].context",
+      "$.content.patterns[3].pattern_name",
+      "$.content.patterns[3].sequence_or_rule",
+      "$.content.patterns[3].context",
+      "$.content.patterns[4].pattern_name",
+      "$.content.patterns[4].sequence_or_rule",
+      "$.content.patterns[4].context",
+      "$.content.patterns[5].pattern_name",
+      "$.content.patterns[5].sequence_or_rule",
+      "$.content.patterns[5].context",
+      "$.content.patterns[6].pattern_name",
+      "$.content.patterns[6].sequence_or_rule",
+      "$.content.patterns[6].context",
+      "$.content.patterns[7].pattern_name",
+      "$.content.patterns[7].sequence_or_rule",
+      "$.content.patterns[7].context",
+      "$.content.patterns[8].pattern_name",
+      "$.content.patterns[8].sequence_or_rule",
+      "$.content.patterns[8].context",
+      "$.content.patterns[9].pattern_name",
+      "$.content.patterns[9].sequence_or_rule",
+      "$.content.patterns[9].context",
+      "$.content.patterns[10].pattern_name",
+      "$.content.patterns[10].sequence_or_rule",
+      "$.content.patterns[10].context",
+      "$.content.problem_solving_strategies",
+      "$.content.problem_solving_strategies[0].strategy_name",
+      "$.content.problem_solving_strategies[0].context",
+      "$.content.problem_solving_strategies[0].application",
+      "$.content.problem_solving_strategies[1].strategy_name",
+      "$.content.problem_solving_strategies[1].context",
+      "$.content.problem_solving_strategies[1].application",
+      "$.content.problem_solving_strategies[2].strategy_name",
+      "$.content.problem_solving_strategies[2].context",
+      "$.content.problem_solving_strategies[2].application",
+      "$.content.problem_solving_strategies[3].strategy_name",
+      "$.content.problem_solving_strategies[3].context",
+      "$.content.problem_solving_strategies[3].application",
+      "$.content.problem_solving_strategies[4].strategy_name",
+      "$.content.problem_solving_strategies[4].context",
+      "$.content.problem_solving_strategies[4].application",
+      "$.content.problem_solving_strategies[5].strategy_name",
+      "$.content.problem_solving_strategies[5].context",
+      "$.content.problem_solving_strategies[5].application",
+      "$.content.problem_solving_strategies[6].strategy_name",
+      "$.content.problem_solving_strategies[6].context",
+      "$.content.problem_solving_strategies[6].application",
+      "$.content.problem_solving_strategies[7].strategy_name",
+      "$.content.problem_solving_strategies[7].context",
+      "$.content.problem_solving_strategies[7].application",
+      "$.content.problem_solving_strategies[8].strategy_name",
+      "$.content.problem_solving_strategies[8].context",
+      "$.content.problem_solving_strategies[8].application",
+      "$.content.problem_solving_strategies[9].strategy_name",
+      "$.content.problem_solving_strategies[9].context",
+      "$.content.problem_solving_strategies[9].application",
+      "$.content.problem_solving_strategies[10].strategy_name",
+      "$.content.problem_solving_strategies[10].context",
+      "$.content.problem_solving_strategies[10].application",
+      "$.content.problem_solving_strategies[11].strategy_name",
+      "$.content.problem_solving_strategies[11].context",
+      "$.content.problem_solving_strategies[11].application",
+      "$.content.problem_solving_strategies[12].strategy_name",
+      "$.content.problem_solving_strategies[12].context",
+      "$.content.problem_solving_strategies[12].application",
+      "$.content.problem_solving_strategies[13].strategy_name",
+      "$.content.problem_solving_strategies[13].context",
+      "$.content.problem_solving_strategies[13].application",
+      "$.statistics",
+      "$.statistics.total_vocabulary",
+      "$.statistics.total_definitions",
+      "$.statistics.total_concepts",
+      "$.statistics.total_properties",
+      "$.statistics.total_rules",
+      "$.statistics.total_formulas",
+      "$.statistics.total_symbols_notation",
+      "$.statistics.total_procedures",
+      "$.statistics.total_relationships",
+      "$.statistics.total_units_measurements",
+      "$.statistics.total_patterns",
+      "$.statistics.total_problem_solving_strategies",
+      "$.statistics.total_items",
+      "$.statistics.total_mathematical_vocabulary",
+      "$.validation",
+      "$.validation.is_valid_json",
+      "$.validation.source_grounding",
+      "$.validation.deduplication_applied",
+      "$.validation.exact_count_match"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [],
+    "chapter_candidate_count": 0,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "MATHEMATICS",
+    "chapter": {
+      "book_title": "Ganita Prakash",
+      "class_level": "Class 6",
+      "chapters_covered": [
+        "Chapter 1: Patterns in Mathematics",
+        "Chapter 2: Lines and Angles",
+        "Chapter 3: Number Play",
+        "Chapter 4: Data Handling and Presentation",
+        "Chapter 5: Prime Time",
+        "Chapter 6: Perimeter and Area",
+        "Chapter 7: Fractions",
+        "Chapter 8: Playing with Constructions",
+        "Chapter 9: Symmetry",
+        "Chapter 10: The Other Side of Zero"
+      ]
+    },
+    "content": {
+      "mathematical_vocabulary": [
+        {
+          "term": "Virahānka Numbers",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "description": "A sequence of numbers where each term after the first two (1 and 2) is the sum of the preceding two terms (1, 2, 3, 5, 8, 13, 21...)."
+        },
+        {
+          "term": "Gnomon",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "description": "An L-shaped geometric layer added to a square dot grid to enlarge it to the next larger square size."
+        },
+        {
+          "term": "Triangular Number",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "description": "A number that can be arranged as an equilateral triangular pattern of dots (1, 3, 6, 10, 15...)."
+        },
+        {
+          "term": "Protractor",
+          "context": "Chapter 2: Lines and Angles",
+          "description": "A semi-circular geometric tool calibrated in degrees (0° to 180°) used to measure and construct angles."
+        },
+        {
+          "term": "Reflex Angle",
+          "context": "Chapter 2: Lines and Angles",
+          "description": "An angle whose measure is strictly greater than 180° and strictly less than 360°."
+        },
+        {
+          "term": "Palindromic Number",
+          "context": "Chapter 3: Number Play",
+          "description": "An integer that reads identically forwards and backwards (e.g., 121, 5775, 8448)."
+        },
+        {
+          "term": "Collatz Sequence",
+          "context": "Chapter 3: Number Play",
+          "description": "A sequence generated by repeatedly applying: if n is even, divide by 2; if n is odd, multiply by 3 and add 1."
+        },
+        {
+          "term": "Frequency",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "description": "The total integer count of how many times a specific observation or value occurs in a dataset."
+        },
+        {
+          "term": "Tally Mark",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "description": "A mark used for counting, grouped in bundles of five with four vertical lines and a diagonal fifth slash (||||/)."
+        },
+        {
+          "term": "Co-prime Numbers",
+          "context": "Chapter 5: Prime Time",
+          "description": "Two positive integers that share no common factors other than 1 (their HCF is 1)."
+        },
+        {
+          "term": "Sieve of Eratosthenes",
+          "context": "Chapter 5: Prime Time",
+          "description": "An ancient systematic method for finding all prime numbers up to a specified limit by crossing out multiples."
+        },
+        {
+          "term": "Perimeter",
+          "context": "Chapter 6: Perimeter and Area",
+          "description": "The total continuous outer boundary length around a closed planar geometric figure."
+        },
+        {
+          "term": "Unit Fraction",
+          "context": "Chapter 7: Fractions",
+          "description": "A fraction with a numerator of 1 (e.g., 1/2, 1/3, 1/5) representing one equal part of a divided whole."
+        },
+        {
+          "term": "Concentric Circles",
+          "context": "Chapter 8: Playing with Constructions",
+          "description": "Circles of different radii that share the exact same central point O."
+        },
+        {
+          "term": "Rotational Symmetry",
+          "context": "Chapter 9: Symmetry",
+          "description": "A property where a shape matches its original appearance when turned by an angle less than 360° around its center."
+        },
+        {
+          "term": "Additive Inverse",
+          "context": "Chapter 10: The Other Side of Zero",
+          "description": "The integer that, when added to a given integer a, yields zero (e.g., additive inverse of +5 is -5)."
+        },
+        {
+          "term": "Zero Pair",
+          "context": "Chapter 10: The Other Side of Zero",
+          "description": "A pair consisting of one positive token (+1) and one negative token (-1) that cancel each other out to equal 0."
+        },
+        {
+          "term": "Ray",
+          "context": "Chapter 2: Lines and Angles",
+          "description": "A straight line portion originating from a fixed initial point (vertex) and extending infinitely in one direction."
+        },
+        {
+          "term": "Line Segment",
+          "context": "Chapter 2: Lines and Angles",
+          "description": "A straight path connecting two distinct endpoints with a fixed, measurable length."
+        },
+        {
+          "term": "Area",
+          "context": "Chapter 6: Perimeter and Area",
+          "description": "The total surface space or region enclosed within the boundary of a two-dimensional shape, measured in square units."
+        },
+        {
+          "term": "Brahmagupta's Addition Rule",
+          "context": "Chapter 7: Fractions",
+          "description": "An ancient algorithm converting fractions to common units: a/b + c/d = (ad + bc) / bd."
+        }
+      ],
+      "definitions": [
+        {
+          "term": "Pattern",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "definition": "A discernible regularity or repeated arrangement in numbers, shapes, or events governed by a specific rule."
+        },
+        {
+          "term": "Square Number",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "definition": "An integer formed by multiplying an integer by itself, representable as a square dot grid."
+        },
+        {
+          "term": "Point",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "A precise location in space represented by a dot, possessing zero dimensions."
+        },
+        {
+          "term": "Line Segment",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "The shortest straight path connecting two distinct endpoints, possessing a definite length."
+        },
+        {
+          "term": "Ray",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "A straight portion of a line that originates at an initial point and extends endlessly in one direction."
+        },
+        {
+          "term": "Line",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "A continuous one-dimensional straight path extending infinitely in both opposite directions."
+        },
+        {
+          "term": "Angle",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "The geometric figure formed by two rays sharing a common initial endpoint called the vertex."
+        },
+        {
+          "term": "Acute Angle",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "An angle whose measure is strictly greater than 0° and strictly less than 90°."
+        },
+        {
+          "term": "Right Angle",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "An angle measuring exactly 90°, corresponding to one-quarter of a full rotation."
+        },
+        {
+          "term": "Obtuse Angle",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "An angle whose measure is strictly greater than 90° and strictly less than 180°."
+        },
+        {
+          "term": "Straight Angle",
+          "context": "Chapter 2: Lines and Angles",
+          "definition": "An angle measuring exactly 180°, corresponding to half a full rotation."
+        },
+        {
+          "term": "Raw Data",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "definition": "An unorganized initial collection of facts, measurements, or observations."
+        },
+        {
+          "term": "Bar Graph",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "definition": "A visual display using parallel rectangular bars of uniform width whose heights represent category frequencies."
+        },
+        {
+          "term": "Prime Number",
+          "context": "Chapter 5: Prime Time",
+          "definition": "A natural number greater than 1 that has exactly two distinct positive factors: 1 and itself."
+        },
+        {
+          "term": "Composite Number",
+          "context": "Chapter 5: Prime Time",
+          "definition": "A natural number greater than 1 that has more than two distinct positive factors."
+        },
+        {
+          "term": "Highest Common Factor (HCF)",
+          "context": "Chapter 5: Prime Time",
+          "definition": "The largest positive integer that divides two or more given integers without leaving a remainder."
+        },
+        {
+          "term": "Lowest Common Multiple (LCM)",
+          "context": "Chapter 5: Prime Time",
+          "definition": "The smallest positive integer that is a multiple of two or more given integers."
+        },
+        {
+          "term": "Area",
+          "context": "Chapter 6: Perimeter and Area",
+          "definition": "The magnitude of two-dimensional surface region enclosed within the boundary of a closed plane figure."
+        },
+        {
+          "term": "Fraction",
+          "context": "Chapter 7: Fractions",
+          "definition": "A numerical quantity representing one or more equal parts of a whole unit, written as a/b (b != 0)."
+        },
+        {
+          "term": "Equivalent Fractions",
+          "context": "Chapter 7: Fractions",
+          "definition": "Fractions that represent identical proportion or value despite having different numerators and denominators."
+        },
+        {
+          "term": "Circle",
+          "context": "Chapter 8: Playing with Constructions",
+          "definition": "The set of all points in a plane located at a fixed distance (radius) from a fixed central point."
+        },
+        {
+          "term": "Line of Symmetry",
+          "context": "Chapter 9: Symmetry",
+          "definition": "An axis dividing a shape into two mirror-image halves that coincide perfectly under folding or reflection."
+        },
+        {
+          "term": "Integers",
+          "context": "Chapter 10: The Other Side of Zero",
+          "definition": "The set of numbers comprising positive natural numbers, zero, and negative natural numbers (... -3, -2, -1, 0, 1, 2, 3 ...)."
+        },
+        {
+          "term": "HCF (Highest Common Factor)",
+          "context": "Chapter 5: Prime Time",
+          "definition": "The largest positive integer that divides two or more integers without leaving a remainder."
+        },
+        {
+          "term": "LCM (Lowest Common Multiple)",
+          "context": "Chapter 5: Prime Time",
+          "definition": "The smallest positive integer that is a common multiple of two or more given integers."
+        },
+        {
+          "term": "Proper Fraction",
+          "context": "Chapter 7: Fractions",
+          "definition": "A fraction whose numerator is strictly less than its denominator (e.g., 3/5)."
+        },
+        {
+          "term": "Improper Fraction",
+          "context": "Chapter 7: Fractions",
+          "definition": "A fraction whose numerator is greater than or equal to its denominator (e.g., 7/4)."
+        },
+        {
+          "term": "Mixed Fraction",
+          "context": "Chapter 7: Fractions",
+          "definition": "A representation consisting of a whole number combined with a proper fraction (e.g., 2 1/3)."
+        },
+        {
+          "term": "Order of Rotational Symmetry",
+          "context": "Chapter 9: Symmetry",
+          "definition": "The number of times a figure aligns perfectly with its initial position during one complete 360° turn."
+        }
+      ],
+      "concepts": [
+        {
+          "concept_name": "Mathematics as the Discovery of Patterns",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "explanation": "Mathematics is both an art and a science focused on identifying regularities in numbers and shapes and proving the underlying logical reasons for their existence."
+        },
+        {
+          "concept_name": "Dimensional Progression in Geometry",
+          "context": "Chapter 2: Lines and Angles",
+          "explanation": "Geometry builds systematically from 0-dimensional points to 1-dimensional line segments/lines/rays, 2-dimensional plane shapes, and 3-dimensional spatial objects."
+        },
+        {
+          "concept_name": "Rotation as the Independent Measure of Angle",
+          "context": "Chapter 2: Lines and Angles",
+          "explanation": "Angle magnitude is solely determined by the amount of rotational divergence between two rays, unaffected by the drawn length of the rays."
+        },
+        {
+          "concept_name": "Recreational Mathematics and Digit Structure",
+          "context": "Chapter 3: Number Play",
+          "explanation": "Numbers exhibit intrinsic structural properties based on place value, digit reversal, and iterative function rules such as the Collatz algorithm."
+        },
+        {
+          "concept_name": "Data Reduction and Visual Interpretation",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "explanation": "Raw observations are organized into structured tables and graphical plots (bar charts, pictographs) to reveal visual trends and enable comparative inferences."
+        },
+        {
+          "concept_name": "Unique Prime Factorisation",
+          "context": "Chapter 5: Prime Time",
+          "explanation": "Prime numbers serve as the fundamental multiplicative building blocks of integers; every composite number can be uniquely factored into primes."
+        },
+        {
+          "concept_name": "Area Conservation under Rearrangement",
+          "context": "Chapter 6: Perimeter and Area",
+          "explanation": "Cutting and reassembling a 2D shape conserves its total surface area, even though its outer perimeter boundary length may change."
+        },
+        {
+          "concept_name": "Fractional Partitioning and Shared Wholes",
+          "context": "Chapter 7: Fractions",
+          "explanation": "Fractions represent equal partition shares of a unit whole; unit fraction size is inversely related to denominator magnitude."
+        },
+        {
+          "concept_name": "Euclidean Compass and Ruler Constructions",
+          "context": "Chapter 8: Playing with Constructions",
+          "explanation": "Precise geometric shapes and circles are constructed using rigid compass radius spans and set-squares rather than unverified freehand sketches."
+        },
+        {
+          "concept_name": "Invariance under Mirror Reflection and Rotation",
+          "context": "Chapter 9: Symmetry",
+          "explanation": "Symmetrical shapes maintain identical visual appearances when subjected to axial folding (reflection) or fractional turns (rotation)."
+        },
+        {
+          "concept_name": "Extension of the Number Line Below Zero",
+          "context": "Chapter 10: The Other Side of Zero",
+          "explanation": "Negative integers extend whole numbers to measure directed quantities such as debt, sub-zero temperatures, depth, and backward steps."
+        },
+        {
+          "concept_name": "Area Conservation Under Shape Rearrangement",
+          "context": "Chapter 6: Perimeter and Area",
+          "explanation": "Cutting a flat shape into pieces and reassembling them into a different configuration conserves the total surface area, though boundary length (perimeter) may change."
+        },
+        {
+          "concept_name": "Perimeter Minimization for Fixed Area",
+          "context": "Chapter 6: Perimeter and Area",
+          "explanation": "Among all rectangular configurations possessing the same fixed surface area, a square minimizes the total boundary perimeter."
+        },
+        {
+          "concept_name": "Unit Fraction Size Inversion",
+          "context": "Chapter 7: Fractions",
+          "explanation": "For unit fractions 1/n, as the denominator n increases, the overall value of the fraction decreases because a whole is divided into more parts."
+        },
+        {
+          "concept_name": "Concentric Radius Equidistance",
+          "context": "Chapter 8: Playing with Constructions",
+          "explanation": "All points lying on the boundary of a circle remain at an exact constant distance (the radius r) from its central pivot point."
+        },
+        {
+          "concept_name": "Symmetrical Up-and-Down Sequence Sum",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "explanation": "A symmetrical sequence rising sequentially from 1 to a peak n and decreasing back to 1 sums to exactly n^2."
+        },
+        {
+          "concept_name": "Token Cancellation Zero Pairs",
+          "context": "Chapter 10: The Other Side of Zero",
+          "explanation": "Pairing one positive (+1) token with one negative (-1) token creates a zero pair that cancels out, leaving the remaining net value."
+        },
+        {
+          "concept_name": "Dual Distinction: Area vs. Perimeter",
+          "context": "Chapter 6: Perimeter and Area",
+          "explanation": "Perimeter measures 1D boundary length (linear cm, m), whereas Area measures 2D enclosed surface region (square cm, square m)."
+        },
+        {
+          "concept_name": "Dual Distinction: Reflectional vs. Rotational Symmetry",
+          "context": "Chapter 9: Symmetry",
+          "explanation": "Reflectional symmetry relies on a line fold producing mirror halves, whereas rotational symmetry relies on turning around a center point."
+        }
+      ],
+      "properties": [
+        {
+          "property_name": "Uniqueness of Line through Two Points",
+          "context": "Chapter 2: Lines and Angles",
+          "statement": "Exactly one unique straight line passes through any two distinct points in a plane."
+        },
+        {
+          "property_name": "Factor Bounds Property",
+          "context": "Chapter 5: Prime Time",
+          "statement": "Every positive factor of a positive integer n is less than or equal to n (1 <= Factor <= n)."
+        },
+        {
+          "property_name": "HCF and LCM Product Property",
+          "context": "Chapter 5: Prime Time",
+          "statement": "For any two positive integers a and b, HCF(a, b) * LCM(a, b) = a * b."
+        },
+        {
+          "property_name": "Area Conservation Property",
+          "context": "Chapter 6: Perimeter and Area",
+          "statement": "Decomposing and rearranging a planar figure preserves its total area."
+        },
+        {
+          "property_name": "Circle Equidistance Property",
+          "context": "Chapter 8: Playing with Constructions",
+          "statement": "Every point lying on the circumference of a circle is at an exact equal distance (radius r) from its central point O."
+        },
+        {
+          "property_name": "Regular Polygon Symmetry Rule",
+          "context": "Chapter 9: Symmetry",
+          "statement": "A regular polygon with n equal sides possesses exactly n lines of reflection symmetry and rotational symmetry of order n."
+        },
+        {
+          "property_name": "Additive Inverse Property",
+          "context": "Chapter 10: The Other Side of Zero",
+          "statement": "For any integer a, a + (-a) = 0."
+        },
+        {
+          "property_name": "Brahmagupta's Laws of Zero",
+          "context": "Chapter 10: The Other Side of Zero",
+          "statement": "1. A - A = 0; 2. A - 0 = A; 3. 0 - A = -A."
+        },
+        {
+          "property_name": "Unit Fraction Size Order Rule",
+          "context": "Chapter 7: Fractions",
+          "statement": "For any positive integers m and n, if m > n, then 1/m < 1/n."
+        },
+        {
+          "property_name": "Consecutive Triangular Number Sum Property",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "statement": "Summing any two consecutive triangular numbers T_n and T_{n-1} yields the square number n^2."
+        },
+        {
+          "property_name": "Unique Prime Factorization Theorem",
+          "context": "Chapter 5: Prime Time",
+          "statement": "Every composite integer can be expressed as a unique product of prime numbers, disregarding the order of factors."
+        },
+        {
+          "property_name": "HCF-LCM Product Equality",
+          "context": "Chapter 5: Prime Time",
+          "statement": "For any two positive integers a and b, HCF(a, b) x LCM(a, b) = a x b."
+        },
+        {
+          "property_name": "Additive Inverse Sum Property",
+          "context": "Chapter 10: The Other Side of Zero",
+          "statement": "The sum of any integer and its additive inverse is equal to zero: a + (-a) = 0."
+        },
+        {
+          "property_name": "Regular Polygon Symmetry Property",
+          "context": "Chapter 9: Symmetry",
+          "statement": "A regular polygon with n equal sides possesses exactly n lines of reflection symmetry and rotational symmetry of order n."
+        },
+        {
+          "property_name": "Non-Square Rectangle Diagonal Non-Symmetry",
+          "context": "Chapter 9: Symmetry",
+          "statement": "The diagonal of a non-square rectangle is NOT a line of symmetry because folding along it causes vertices to overhang rather than align."
+        }
+      ],
+      "rules": [
+        {
+          "rule_name": "Divisibility Rules",
+          "context": "Chapter 5: Prime Time",
+          "rule_statement": "By 2: Last digit is even. By 3: Sum of digits is divisible by 3. By 4: Last two digits form a number divisible by 4. By 5: Ends in 0 or 5. By 8: Last three digits form a number divisible by 8. By 9: Sum of digits is divisible by 9. By 10: Ends in 0."
+        },
+        {
+          "rule_name": "Collatz Transformation Rule",
+          "context": "Chapter 3: Number Play",
+          "rule_statement": "If current term n is even, next term is n / 2; if current term n is odd, next term is 3n + 1."
+        },
+        {
+          "rule_name": "Tally Mark Grouping Rule",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "rule_statement": "Tally marks are grouped in bundles of 5 by drawing four vertical lines ('||||') crossed by a diagonal slash ('||||/')."
+        },
+        {
+          "rule_name": "Bar Graph Construction Rules",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "rule_statement": "1. All bars must have uniform width. 2. Equal gap spacing must separate adjacent bars. 3. The vertical scale must start at 0."
+        },
+        {
+          "rule_name": "Subtracting Negative Integers Rule",
+          "context": "Chapter 10: The Other Side of Zero",
+          "rule_statement": "Subtracting a negative integer is equivalent to adding its positive opposite: a - (-b) = a + b."
+        },
+        {
+          "rule_name": "Mixed Fraction to Improper Conversion Rule",
+          "context": "Chapter 7: Fractions",
+          "rule_statement": "A b/c = (A * c + b) / c."
+        },
+        {
+          "rule_name": "Brahmagupta's Fraction Addition Rule",
+          "context": "Chapter 7: Fractions",
+          "rule_statement": "a/b + c/d = (a*d + b*c) / (b*d)."
+        },
+        {
+          "rule_name": "Divisibility Test Rules (2, 3, 4, 5, 8, 9, 10)",
+          "context": "Chapter 5: Prime Time",
+          "rule_statement": "By 2: Last digit even. By 3: Sum of digits div by 3. By 4: Last 2 digits div by 4. By 5: Ends in 0/5. By 8: Last 3 digits div by 8. By 9: Sum of digits div by 9. By 10: Ends in 0."
+        },
+        {
+          "rule_name": "Bar Graph Construction Standards",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "rule_statement": "All bars must have uniform width, equal spaces between bars, and the vertical scale must start at 0."
+        },
+        {
+          "rule_name": "Smallest Rotational Angle Rule",
+          "context": "Chapter 9: Symmetry",
+          "rule_statement": "Smallest Rotational Angle = 360° / Order of Rotational Symmetry."
+        },
+        {
+          "rule_name": "Reverse-and-Add Palindrome Rule",
+          "context": "Chapter 3: Number Play",
+          "rule_statement": "Reverse digits of n and add to n. Repeat iteratively on the sum until a palindromic number is formed."
+        }
+      ],
+      "formulas": [
+        {
+          "formula_name": "Sum of First n Consecutive Odd Numbers",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "formula_expression": "1 + 3 + 5 + ... + (2n - 1) = n^2",
+          "variables": "n = total count of consecutive odd numbers starting from 1"
+        },
+        {
+          "formula_name": "n-th Triangular Number Formula",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "formula_expression": "T_n = n(n + 1) / 2",
+          "variables": "T_n = n-th triangular number; n = positive integer"
+        },
+        {
+          "formula_name": "Symmetrical Counting Sum Formula",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "formula_expression": "1 + 2 + ... + n + ... + 2 + 1 = n^2",
+          "variables": "n = central peak integer"
+        },
+        {
+          "formula_name": "Fractional Turn to Degrees Formula",
+          "context": "Chapter 2: Lines and Angles",
+          "formula_expression": "Angle (°) = Fraction of Full Rotation * 360°",
+          "variables": "Fraction = proportion of 1 full turn"
+        },
+        {
+          "formula_name": "Spoke Central Angle Formula",
+          "context": "Chapter 2: Lines and Angles",
+          "formula_expression": "Angle between adjacent spokes = 360° / Number of Spokes",
+          "variables": "Number of Spokes = integer count of equal central divisions"
+        },
+        {
+          "formula_name": "N-Digit Integer Count Formula",
+          "context": "Chapter 3: Number Play",
+          "formula_expression": "Count of N-digit numbers = 9 * 10^(N-1)",
+          "variables": "N = positive integer number of digits"
+        },
+        {
+          "formula_name": "Bar Graph Height Formula",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "formula_expression": "Bar Height (cm) = Category Frequency / Value per cm Scale",
+          "variables": "Frequency = integer count; Scale = numerical value represented by 1 cm"
+        },
+        {
+          "formula_name": "Perimeter of Rectangle Formula",
+          "context": "Chapter 6: Perimeter and Area",
+          "formula_expression": "P = 2 * (l + w)",
+          "variables": "l = length (m/cm), w = width (m/cm), P = perimeter (m/cm)"
+        },
+        {
+          "formula_name": "Perimeter of Regular Polygon Formula",
+          "context": "Chapter 6: Perimeter and Area",
+          "formula_expression": "P = n * s",
+          "variables": "n = number of equal sides, s = side length"
+        },
+        {
+          "formula_name": "Area of Rectangle Formula",
+          "context": "Chapter 6: Perimeter and Area",
+          "formula_expression": "A = l * w",
+          "variables": "l = length, w = width, A = area (sq cm / sq m)"
+        },
+        {
+          "formula_name": "Area of Square Formula",
+          "context": "Chapter 6: Perimeter and Area",
+          "formula_expression": "A = s^2",
+          "variables": "s = side length, A = area (sq cm / sq m)"
+        },
+        {
+          "formula_name": "Circle Diameter Formula",
+          "context": "Chapter 8: Playing with Constructions",
+          "formula_expression": "d = 2 * r",
+          "variables": "d = diameter length, r = radius length"
+        },
+        {
+          "formula_name": "Smallest Rotational Symmetry Angle Formula",
+          "context": "Chapter 9: Symmetry",
+          "formula_expression": "Smallest Angle = 360° / Order n",
+          "variables": "Order n = number of matching positions in a full 360° rotation"
+        },
+        {
+          "formula_name": "Sum of First n Odd Numbers",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "formula_expression": "1 + 3 + 5 + ... + (2n - 1) = n^2",
+          "variables": "n = total count of consecutive odd numbers starting from 1"
+        },
+        {
+          "formula_name": "Perimeter of Rectangle",
+          "context": "Chapter 6: Perimeter and Area",
+          "formula_expression": "P = 2 x (l + w)",
+          "variables": "l = length, w = width"
+        },
+        {
+          "formula_name": "Area of Rectangle",
+          "context": "Chapter 6: Perimeter and Area",
+          "formula_expression": "A = l x w",
+          "variables": "l = length, w = width"
+        },
+        {
+          "formula_name": "Area of Square",
+          "context": "Chapter 6: Perimeter and Area",
+          "formula_expression": "A = s^2",
+          "variables": "s = side length"
+        },
+        {
+          "formula_name": "Brahmagupta's Fraction Addition",
+          "context": "Chapter 7: Fractions",
+          "formula_expression": "a/b + c/d = (ad + bc) / (bd)",
+          "variables": "a, c = numerators; b, d = non-zero denominators"
+        },
+        {
+          "formula_name": "Brahmagupta's Fraction Subtraction",
+          "context": "Chapter 7: Fractions",
+          "formula_expression": "a/b - c/d = (ad - bc) / (bd)",
+          "variables": "a, c = numerators; b, d = non-zero denominators"
+        },
+        {
+          "formula_name": "Diameter Radius Relation",
+          "context": "Chapter 8: Playing with Constructions",
+          "formula_expression": "d = 2 x r",
+          "variables": "d = diameter, r = radius"
+        }
+      ],
+      "symbols_notation": [
+        {
+          "symbol": "°",
+          "name": "Degree",
+          "meaning": "Unit of angular measure equal to 1/360 of a full circle rotation."
+        },
+        {
+          "symbol": "∠",
+          "name": "Angle Symbol",
+          "meaning": "Denotes an angle formed by two rays meeting at a vertex (e.g. ∠AOB)."
+        },
+        {
+          "symbol": "AB (with overbar)",
+          "name": "Line Segment Notation",
+          "meaning": "Represents the finite line segment bounded by endpoints A and B."
+        },
+        {
+          "symbol": "AB (with single-arrow overbar)",
+          "name": "Ray Notation",
+          "meaning": "Represents a ray originating at A and passing endlessly through B."
+        },
+        {
+          "symbol": "AB (with double-arrow overbar)",
+          "name": "Line Notation",
+          "meaning": "Represents an infinite straight line extending through points A and B."
+        },
+        {
+          "symbol": "||||/",
+          "name": "Tally Bundle of 5",
+          "meaning": "Visual notation representing five accumulated tally counts."
+        },
+        {
+          "symbol": "sq cm / cm²",
+          "name": "Square Centimeter",
+          "meaning": "Unit of 2D area corresponding to a square of side 1 cm."
+        },
+        {
+          "symbol": "sq m / m²",
+          "name": "Square Meter",
+          "meaning": "Unit of 2D area corresponding to a square of side 1 m."
+        },
+        {
+          "symbol": "+ / -",
+          "name": "Positive / Negative Sign",
+          "meaning": "Denotes direction above/below zero on an expanded integer number line."
+        },
+        {
+          "symbol": "HCF(a, b)",
+          "name": "Highest Common Factor Notation",
+          "meaning": "Represents the greatest common divisor of integers a and b."
+        },
+        {
+          "symbol": "LCM(a, b)",
+          "name": "Lowest Common Multiple Notation",
+          "meaning": "Represents the least common multiple of integers a and b."
+        },
+        {
+          "symbol": "+a, -a",
+          "name": "Positive and Negative Integer Notation",
+          "meaning": "Indicates direction and magnitude above (+) or below (-) zero on the number line."
+        },
+        {
+          "symbol": "T_n",
+          "name": "n-th Triangular Number Notation",
+          "meaning": "Represents the n-th triangular number in sequence."
+        },
+        {
+          "symbol": "V_n",
+          "name": "n-th Virahānka (Fibonacci) Number Notation",
+          "meaning": "Represents the n-th term in the Virahānka sequence."
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_name": "Summing First n Consecutive Odd Numbers",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "steps": [
+            "Step 1: Check that the odd number series starts at 1 and contains no skipped odd integers.",
+            "Step 2: Count the total number of terms, n.",
+            "Step 3: Multiply n by itself to calculate the sum: S = n^2."
+          ]
+        },
+        {
+          "procedure_name": "Measuring an Angle with a Protractor",
+          "context": "Chapter 2: Lines and Angles",
+          "steps": [
+            "Step 1: Place the center baseline point of the protractor directly over the angle vertex.",
+            "Step 2: Align one arm of the angle precisely along the 0° baseline mark.",
+            "Step 3: Read the degree mark where the second arm crosses the circular protractor scale, selecting the scale (inner or outer) that started at 0° on the aligned arm."
+          ]
+        },
+        {
+          "procedure_name": "Reverse-and-Add Palindrome Algorithm",
+          "context": "Chapter 3: Number Play",
+          "steps": [
+            "Step 1: Choose any positive integer.",
+            "Step 2: Reverse its digits to form a second integer.",
+            "Step 3: Add the original integer and reversed integer.",
+            "Step 4: If the sum is palindromic, stop. Otherwise, repeat steps 2 and 3 on the new sum."
+          ]
+        },
+        {
+          "procedure_name": "Constructing a Bar Graph from Frequency Data",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "steps": [
+            "Step 1: Draw two perpendicular axes: horizontal axis (X-axis) for categories, vertical axis (Y-axis) for frequencies.",
+            "Step 2: Choose a uniform scale for the vertical axis starting at 0.",
+            "Step 3: Mark category positions at equal intervals along the horizontal axis.",
+            "Step 4: Draw rectangular bars of uniform width with heights matching calculated frequency scale values."
+          ]
+        },
+        {
+          "procedure_name": "Finding Prime Factorisation by Repeated Division",
+          "context": "Chapter 5: Prime Time",
+          "steps": [
+            "Step 1: Divide the integer by its smallest prime factor.",
+            "Step 2: Divide the resulting quotient by its smallest prime factor.",
+            "Step 3: Repeat division until the quotient becomes 1.",
+            "Step 4: Write the integer as the product of all prime divisors."
+          ]
+        },
+        {
+          "procedure_name": "Finding Area of Composite Rectangular Figures",
+          "context": "Chapter 6: Perimeter and Area",
+          "steps": [
+            "Step 1: Divide the composite figure into non-overlapping simple sub-rectangles.",
+            "Step 2: Determine the length and width of each sub-rectangle.",
+            "Step 3: Calculate the area of each sub-rectangle using A = l * w.",
+            "Step 4: Add all sub-rectangle areas together to find total area."
+          ]
+        },
+        {
+          "procedure_name": "Constructing a Circle of Given Radius r",
+          "context": "Chapter 8: Playing with Constructions",
+          "steps": [
+            "Step 1: Mark center point P on paper.",
+            "Step 2: Set compass needle at 0 on ruler and adjust pencil leg to mark r.",
+            "Step 3: Fix compass needle firmly at P and rotate pencil 360° smoothly."
+          ]
+        },
+        {
+          "procedure_name": "Evaluating Integer Expressions with Token Cancellation",
+          "context": "Chapter 10: The Other Side of Zero",
+          "steps": [
+            "Step 1: Represent positive values with green (+1) tokens and negative values with red (-1) tokens.",
+            "Step 2: Pair one green and one red token to form zero-pairs (cancel out).",
+            "Step 3: Count remaining uncancelled tokens; sign matches their color."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Summing Odd Numbers via Gnomon Partitioning",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "steps": [
+            "Step 1: Verify the odd number series starts at 1 and has no skipped odd integers.",
+            "Step 2: Count the total number of terms, n.",
+            "Step 3: Square the term count (n^2) to obtain the total sum instantly."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Sieve of Eratosthenes Prime Extraction",
+          "context": "Chapter 5: Prime Time",
+          "steps": [
+            "Step 1: Write down all integers from 2 to the target limit N.",
+            "Step 2: Circle 2 as the first prime, then cross out all multiples of 2.",
+            "Step 3: Move to the next uncrossed number (3), circle it as prime, and cross out its multiples.",
+            "Step 4: Repeat for subsequent uncrossed numbers until reaching sqrt(N). All remaining uncrossed numbers are primes."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Reverse-and-Add Palindrome Generation Algorithm",
+          "context": "Chapter 3: Number Play",
+          "steps": [
+            "Step 1: Select a starting positive integer n.",
+            "Step 2: Reverse the digits of n to create R.",
+            "Step 3: Calculate sum S = n + R.",
+            "Step 4: Check if S is palindromic. If yes, stop; if no, set n = S and repeat from Step 2."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Paper Folding Perpendicular Bisector Construction",
+          "context": "Chapter 2: Lines and Angles",
+          "steps": [
+            "Step 1: Draw a straight crease line segment AB on a paper sheet.",
+            "Step 2: Fold the paper so that endpoint A superimposes perfectly onto endpoint B.",
+            "Step 3: Press firmly to create a new transverse crease line.",
+            "Step 4: Unfold. The new crease intersects segment AB at right angles (90°) at its exact midpoint."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Circle Construction using Compass and Ruler",
+          "context": "Chapter 8: Playing with Constructions",
+          "steps": [
+            "Step 1: Mark a center reference point O on paper.",
+            "Step 2: Align compass needle at 0 on ruler and adjust leg opening to target radius r.",
+            "Step 3: Fix compass needle at O without slipping.",
+            "Step 4: Rotate pencil tip smoothly 360° to draw the circle."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Collatz Sequence Trajectory Tracing",
+          "context": "Chapter 3: Number Play",
+          "steps": [
+            "Step 1: Start with positive integer n.",
+            "Step 2: If n is even, divide by 2 (n / 2).",
+            "Step 3: If n is odd, multiply by 3 and add 1 (3n + 1).",
+            "Step 4: Repeat iteratively until sequence reaches 1."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Drawing Bar Graph from Frequency Table",
+          "context": "Chapter 4: Data Handling and Presentation",
+          "steps": [
+            "Step 1: Draw horizontal category axis and vertical frequency axis starting at 0.",
+            "Step 2: Choose an appropriate scale key (e.g., 1 cm = 100 units).",
+            "Step 3: Draw rectangular bars of uniform width for each category.",
+            "Step 4: Separate adjacent bars with equal gaps and label all axes clearly."
+          ]
+        },
+        {
+          "procedure_name": "Procedure: Adding Integers using Token Cancellation",
+          "context": "Chapter 10: The Other Side of Zero",
+          "steps": [
+            "Step 1: Lay out green tokens (+1) for positive integers and red tokens (-1) for negative integers.",
+            "Step 2: Pair up green and red tokens to form zero pairs (+1 - 1 = 0).",
+            "Step 3: Remove all cancelled zero pairs.",
+            "Step 4: Count the remaining uncancelled tokens and record the final signed result."
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relationship": "Adjacent Triangular Numbers and Square Numbers",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "statement": "Summing any two adjacent triangular numbers T_n and T_{n-1} always forms a square number n^2."
+        },
+        {
+          "relationship": "Radius and Diameter",
+          "context": "Chapter 8: Playing with Constructions",
+          "statement": "The diameter of a circle is exactly twice its radius length (d = 2r)."
+        },
+        {
+          "relationship": "HCF, LCM, and Integer Product",
+          "context": "Chapter 5: Prime Time",
+          "statement": "The product of HCF and LCM of two integers equals the direct product of the two integers."
+        },
+        {
+          "relationship": "Regular Polygon Sides, Symmetry Lines, and Rotational Order",
+          "context": "Chapter 9: Symmetry",
+          "statement": "For any regular polygon of n sides, the number of reflection lines of symmetry equals n and the order of rotational symmetry equals n."
+        },
+        {
+          "relationship": "Unit Fraction Denominator and Size",
+          "context": "Chapter 7: Fractions",
+          "statement": "The magnitude of a unit fraction 1/n decreases monotonically as the denominator n increases."
+        },
+        {
+          "relationship": "Subtraction of Negatives and Addition of Positives",
+          "context": "Chapter 10: The Other Side of Zero",
+          "statement": "Subtracting a negative integer produces a result mathematically identical to adding its positive additive inverse."
+        },
+        {
+          "relationship": "Adjacent Triangular Numbers Sum to Square Number",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "statement": "T_n + T_{n-1} = n^2. Adding two adjacent triangular numbers yields a square number."
+        },
+        {
+          "relationship": "Radius and Diameter Direct Relationship",
+          "context": "Chapter 8: Playing with Constructions",
+          "statement": "d = 2r. Diameter is twice the length of the radius."
+        },
+        {
+          "relationship": "Order of Rotational Symmetry and Smallest Rotational Angle",
+          "context": "Chapter 9: Symmetry",
+          "statement": "Angle = 360° / Order. Higher symmetry order results in a smaller required rotation angle."
+        },
+        {
+          "relationship": "HCF and LCM Product Relationship",
+          "context": "Chapter 5: Prime Time",
+          "statement": "HCF(a, b) x LCM(a, b) = a x b for any two positive integers a and b."
+        },
+        {
+          "relationship": "Additive Inverse Relationship",
+          "context": "Chapter 10: The Other Side of Zero",
+          "statement": "a + (-a) = 0. An integer and its additive inverse sum to zero."
+        }
+      ],
+      "units_measurements": [
+        {
+          "unit": "Degree (°)",
+          "quantity_measured": "Plane Angle / Angular Rotation",
+          "conversion_or_definition": "1 full circle rotation = 360°; 1 right angle = 90°."
+        },
+        {
+          "unit": "Centimeter (cm) / Meter (m)",
+          "quantity_measured": "Linear Length / Perimeter",
+          "conversion_or_definition": "1 m = 100 cm; 1 cm = 10 mm."
+        },
+        {
+          "unit": "Square Centimeter (sq cm) / Square Meter (sq m)",
+          "quantity_measured": "Two-Dimensional Surface Area",
+          "conversion_or_definition": "1 sq m = 10,000 sq cm."
+        },
+        {
+          "unit": "Hectare",
+          "quantity_measured": "Large Land Area",
+          "conversion_or_definition": "1 hectare = 10,000 sq m."
+        },
+        {
+          "unit": "Fractional Turn",
+          "quantity_measured": "Rotational Portion",
+          "conversion_or_definition": "1/4 turn = 90°; 1/2 turn = 180°; 1 full turn = 360°."
+        },
+        {
+          "unit": "Hectare (ha)",
+          "quantity_measured": "Land Area",
+          "conversion_or_definition": "1 hectare = 10,000 sq m."
+        },
+        {
+          "unit": "Floor Level Displacement (+ / - Integer)",
+          "quantity_measured": "Vertical Altitude / Depth relative to Ground (0)",
+          "conversion_or_definition": "+n = n floors above ground; -n = n basement floors below ground."
+        }
+      ],
+      "patterns": [
+        {
+          "pattern_name": "Odd Number Sums to Squares",
+          "sequence_or_rule": "1 = 1^2, 1+3 = 2^2 = 4, 1+3+5 = 3^2 = 9, 1+3+5+7 = 4^2 = 16",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Triangular Number Dot Sequence",
+          "sequence_or_rule": "1, 3, 6, 10, 15, 21, 28... (differences increase by 1: +2, +3, +4, +5...)",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Symmetrical Up-and-Down Counting Series",
+          "sequence_or_rule": "1 + 2 + ... + n + ... + 2 + 1 = n^2 (e.g. 1+2+3+4+3+2+1 = 16)",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Virahānka (Fibonacci) Sequence",
+          "sequence_or_rule": "1, 2, 3, 5, 8, 13, 21, 34... (each term is sum of preceding two)",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Powers of 2 Geometric Sequence",
+          "sequence_or_rule": "1, 2, 4, 8, 16, 32, 64, 128... (doubles at each term)",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Powers of 3 Geometric Sequence",
+          "sequence_or_rule": "1, 3, 9, 27, 81, 243... (triples at each term)",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Collatz Loop Terminal Pattern",
+          "sequence_or_rule": "Any positive integer eventually enters the repeating loop: 4 -> 2 -> 1",
+          "context": "Chapter 3: Number Play"
+        },
+        {
+          "pattern_name": "Concentric L-Shaped Gnomon Layer Dot Counts",
+          "sequence_or_rule": "1, 3, 5, 7, 9, 11... (consecutive odd number layers forming an n x n square grid)",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Triangular Numbers Sequence",
+          "sequence_or_rule": "1, 3, 6, 10, 15, 21, 28, ... (T_n = n(n+1)/2)",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Powers of 2 Sequence",
+          "sequence_or_rule": "1, 2, 4, 8, 16, 32, 64, 128, ... (P_n = 2^(n-1))",
+          "context": "Chapter 1: Patterns in Mathematics"
+        },
+        {
+          "pattern_name": "Collatz Sequence Trajectory",
+          "sequence_or_rule": "Even: n/2; Odd: 3n+1 -> Hypothesised to always hit cycle 4 -> 2 -> 1",
+          "context": "Chapter 3: Number Play"
+        }
+      ],
+      "problem_solving_strategies": [
+        {
+          "strategy_name": "Gnomon Visual Partitioning Strategy",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "application": "Decompose square dot grids into L-shaped gnomon layers to prove odd sum algebraic identities visually without algebraic symbols."
+        },
+        {
+          "strategy_name": "Central Peak Squaring Strategy",
+          "context": "Chapter 1: Patterns in Mathematics",
+          "application": "Evaluate long symmetrical up-and-down counting addition series instantly by squaring the central peak integer."
+        },
+        {
+          "strategy_name": "Working Backwards Control Point Strategy",
+          "context": "Chapter 3: Number Play",
+          "application": "In turn-taking subtraction games (like Nim / Game of 21), calculate modulo control targets by working backward from the winning number."
+        },
+        {
+          "strategy_name": "LCM Event Synchronization Strategy",
+          "context": "Chapter 5: Prime Time",
+          "application": "Determine simultaneous recurring cycle times (e.g. traffic signal changes, alarm bells, common game calls) by calculating the LCM of individual cycle periods."
+        },
+        {
+          "strategy_name": "HCF Maximum Equal Division Strategy",
+          "context": "Chapter 5: Prime Time",
+          "application": "Determine maximum tile sizes or ribbon cut lengths without remainders by computing the HCF of given dimensions."
+        },
+        {
+          "strategy_name": "Sub-Rectangle Area Decomposition Strategy",
+          "context": "Chapter 6: Perimeter and Area",
+          "application": "Calculate total surface area of complex 2D L-shaped or stepped figures by partitioning them into simple non-overlapping rectangles."
+        },
+        {
+          "strategy_name": "Common Denominator Conversion Strategy",
+          "context": "Chapter 7: Fractions",
+          "application": "Compare, add, or subtract fractions with unlike denominators by converting them into equivalent fractions sharing a common fractional unit."
+        },
+        {
+          "strategy_name": "Compass Span Locking Transfer Strategy",
+          "context": "Chapter 8: Playing with Constructions",
+          "application": "Transfer line lengths or construct regular inscribed polygons without ruler parallax errors by locking rigid compass needle-pencil distances."
+        },
+        {
+          "strategy_name": "Token Cancellation Zero Pair Strategy",
+          "context": "Chapter 10: The Other Side of Zero",
+          "application": "Evaluate positive and negative integer arithmetic visually by pairing +1 green tokens and -1 red tokens into zero pairs."
+        },
+        {
+          "strategy_name": "Sieve Elimination Strategy",
+          "context": "Chapter 5: Prime Time",
+          "application": "Systematically eliminate composite multiples to discover prime numbers efficiently."
+        },
+        {
+          "strategy_name": "Nim Game Control Number Strategy",
+          "context": "Chapter 3: Number Play",
+          "application": "Work backward from winning score in steps of (max_step + 1) to claim controlling residue numbers."
+        },
+        {
+          "strategy_name": "Fraction Wall Visual Alignment Strategy",
+          "context": "Chapter 7: Fractions",
+          "application": "Use physical fraction strip walls to visually compare unit fraction sizes and identify equivalent fractions."
+        },
+        {
+          "strategy_name": "Token Zero-Pair Cancellation Strategy",
+          "context": "Chapter 10: The Other Side of Zero",
+          "application": "Pair positive and negative tokens to cancel zero pairs and calculate integer sums visually."
+        },
+        {
+          "strategy_name": "Composite Shape Area Decomposition Strategy",
+          "context": "Chapter 6: Perimeter and Area",
+          "application": "Break irregular L-shaped or stepped shapes into non-overlapping rectangles to sum individual areas easily."
+        }
+      ]
+    },
+    "statistics": {
+      "total_vocabulary": 21,
+      "total_definitions": 29,
+      "total_concepts": 19,
+      "total_properties": 15,
+      "total_rules": 11,
+      "total_formulas": 20,
+      "total_symbols_notation": 14,
+      "total_procedures": 16,
+      "total_relationships": 11,
+      "total_units_measurements": 7,
+      "total_patterns": 11,
+      "total_problem_solving_strategies": 14,
+      "total_items": 188,
+      "total_mathematical_vocabulary": 21
+    },
+    "validation": {
+      "is_valid_json": true,
+      "source_grounding": "Grounded strictly in NCERT Class 6 Mathematics (Ganita Prakash) sources",
+      "deduplication_applied": true,
+      "exact_count_match": true
+    }
+  },
+  "grade": "6",
+  "chapter_id": "G6-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths Chapter 1"
 }

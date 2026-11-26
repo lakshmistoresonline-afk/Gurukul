@@ -74,7 +74,13 @@ export default function ScienceMasterComponent({ data }: ScienceMasterProps) {
       {/* Tab 1: Concepts */}
       {activeSubTab === 'concepts' && concepts.length > 0 && (
         <div className="space-y-4 animate-in fade-in duration-200">
-          <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Core Scientific Concepts</h3>
+          <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+            <h3 className="text-xl font-black text-slate-900">Core Scientific Concepts</h3>
+            <div className="w-12 h-12 shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/illustrations/science_plant_growth.svg" alt="Science Plant Growth Illustration" className="w-full h-full object-contain" />
+            </div>
+          </div>
           <div className="space-y-4">
             {concepts.map((c: any, idx: number) => (
               <div key={idx} className="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-3">

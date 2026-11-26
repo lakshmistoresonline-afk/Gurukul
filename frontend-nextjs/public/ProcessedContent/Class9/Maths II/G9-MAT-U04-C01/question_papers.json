@@ -1,20 +1,3412 @@
 {
-  "grade": "9",
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_7d38e223cba60c63",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_9",
+    "class_level": 9
+  },
   "subject": "Maths II",
-  "chapter_id": "G9-MAT-U04-C01",
-  "chapter_title": "Maths II Chapter 1",
-  "exam_sections": [
-    {
-      "section_title": "Section A: Multiple Choice Questions (1 Mark Each)",
-      "questions": [
-        "State the primary definition and core scope of Maths II Chapter 1."
+  "artifact": {
+    "artifact_type": "question_papers",
+    "source_file_name": "03-Question_Papers.json",
+    "source_relative_path": "Contents/Class 9/Maths II/Source Files/03-Question_Papers.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "2a1a3537226082471d0e740e8700941e9ed0a3eb8306f0f62fc66dfd72451fd5",
+    "source_semantic_sha256": "939104d51cac62f45c1c7d29384b3b073675b70529ffcb84a1ad06ea895f281c",
+    "source_byte_length": 112169,
+    "source_encoding": "utf-8",
+    "source_field_count": 1142,
+    "field_inventory": [
+      "$.subject_title",
+      "$.total_chapters",
+      "$.ncert_paper_structure",
+      "$.ncert_paper_structure.sections",
+      "$.ncert_paper_structure.sections[0].section_name",
+      "$.ncert_paper_structure.sections[0].question_type",
+      "$.ncert_paper_structure.sections[0].marks_per_question",
+      "$.ncert_paper_structure.sections[1].section_name",
+      "$.ncert_paper_structure.sections[1].question_type",
+      "$.ncert_paper_structure.sections[1].marks_per_question",
+      "$.ncert_paper_structure.sections[2].section_name",
+      "$.ncert_paper_structure.sections[2].question_type",
+      "$.ncert_paper_structure.sections[2].marks_per_question",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].papers",
+      "$.chapters[0].papers[0].paper_id",
+      "$.chapters[0].papers[0].paper_title",
+      "$.chapters[0].papers[0].total_marks",
+      "$.chapters[0].papers[0].time_allowed_minutes",
+      "$.chapters[0].papers[0].sections",
+      "$.chapters[0].papers[0].sections[0].section_name",
+      "$.chapters[0].papers[0].sections[0].questions",
+      "$.chapters[0].papers[0].sections[0].questions[0].question_number",
+      "$.chapters[0].papers[0].sections[0].questions[0].question_text",
+      "$.chapters[0].papers[0].sections[0].questions[0].options",
+      "$.chapters[0].papers[0].sections[0].questions[0].correct_answer",
+      "$.chapters[0].papers[0].sections[0].questions[0].marks",
+      "$.chapters[0].papers[0].sections[0].questions[1].question_number",
+      "$.chapters[0].papers[0].sections[0].questions[1].question_text",
+      "$.chapters[0].papers[0].sections[0].questions[1].options",
+      "$.chapters[0].papers[0].sections[0].questions[1].correct_answer",
+      "$.chapters[0].papers[0].sections[0].questions[1].marks",
+      "$.chapters[0].papers[0].sections[1].section_name",
+      "$.chapters[0].papers[0].sections[1].questions",
+      "$.chapters[0].papers[0].sections[1].questions[0].question_number",
+      "$.chapters[0].papers[0].sections[1].questions[0].question_text",
+      "$.chapters[0].papers[0].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[0].sections[1].questions[0].marks",
+      "$.chapters[0].papers[0].sections[1].questions[1].question_number",
+      "$.chapters[0].papers[0].sections[1].questions[1].question_text",
+      "$.chapters[0].papers[0].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[0].sections[1].questions[1].marks",
+      "$.chapters[0].papers[0].sections[2].section_name",
+      "$.chapters[0].papers[0].sections[2].questions",
+      "$.chapters[0].papers[0].sections[2].questions[0].question_number",
+      "$.chapters[0].papers[0].sections[2].questions[0].question_text",
+      "$.chapters[0].papers[0].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[0].sections[2].questions[0].marks",
+      "$.chapters[0].papers[0].sections[2].questions[1].question_number",
+      "$.chapters[0].papers[0].sections[2].questions[1].question_text",
+      "$.chapters[0].papers[0].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[0].sections[2].questions[1].marks",
+      "$.chapters[0].papers[1].paper_id",
+      "$.chapters[0].papers[1].paper_title",
+      "$.chapters[0].papers[1].total_marks",
+      "$.chapters[0].papers[1].time_allowed_minutes",
+      "$.chapters[0].papers[1].sections",
+      "$.chapters[0].papers[1].sections[0].section_name",
+      "$.chapters[0].papers[1].sections[0].questions",
+      "$.chapters[0].papers[1].sections[0].questions[0].question_number",
+      "$.chapters[0].papers[1].sections[0].questions[0].question_text",
+      "$.chapters[0].papers[1].sections[0].questions[0].options",
+      "$.chapters[0].papers[1].sections[0].questions[0].correct_answer",
+      "$.chapters[0].papers[1].sections[0].questions[0].marks",
+      "$.chapters[0].papers[1].sections[0].questions[1].question_number",
+      "$.chapters[0].papers[1].sections[0].questions[1].question_text",
+      "$.chapters[0].papers[1].sections[0].questions[1].options",
+      "$.chapters[0].papers[1].sections[0].questions[1].correct_answer",
+      "$.chapters[0].papers[1].sections[0].questions[1].marks",
+      "$.chapters[0].papers[1].sections[1].section_name",
+      "$.chapters[0].papers[1].sections[1].questions",
+      "$.chapters[0].papers[1].sections[1].questions[0].question_number",
+      "$.chapters[0].papers[1].sections[1].questions[0].question_text",
+      "$.chapters[0].papers[1].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[1].sections[1].questions[0].marks",
+      "$.chapters[0].papers[1].sections[1].questions[1].question_number",
+      "$.chapters[0].papers[1].sections[1].questions[1].question_text",
+      "$.chapters[0].papers[1].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[1].sections[1].questions[1].marks",
+      "$.chapters[0].papers[1].sections[2].section_name",
+      "$.chapters[0].papers[1].sections[2].questions",
+      "$.chapters[0].papers[1].sections[2].questions[0].question_number",
+      "$.chapters[0].papers[1].sections[2].questions[0].question_text",
+      "$.chapters[0].papers[1].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[1].sections[2].questions[0].marks",
+      "$.chapters[0].papers[1].sections[2].questions[1].question_number",
+      "$.chapters[0].papers[1].sections[2].questions[1].question_text",
+      "$.chapters[0].papers[1].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[1].sections[2].questions[1].marks",
+      "$.chapters[0].papers[2].paper_id",
+      "$.chapters[0].papers[2].paper_title",
+      "$.chapters[0].papers[2].total_marks",
+      "$.chapters[0].papers[2].time_allowed_minutes",
+      "$.chapters[0].papers[2].sections",
+      "$.chapters[0].papers[2].sections[0].section_name",
+      "$.chapters[0].papers[2].sections[0].questions",
+      "$.chapters[0].papers[2].sections[0].questions[0].question_number",
+      "$.chapters[0].papers[2].sections[0].questions[0].question_text",
+      "$.chapters[0].papers[2].sections[0].questions[0].options",
+      "$.chapters[0].papers[2].sections[0].questions[0].correct_answer",
+      "$.chapters[0].papers[2].sections[0].questions[0].marks",
+      "$.chapters[0].papers[2].sections[0].questions[1].question_number",
+      "$.chapters[0].papers[2].sections[0].questions[1].question_text",
+      "$.chapters[0].papers[2].sections[0].questions[1].options",
+      "$.chapters[0].papers[2].sections[0].questions[1].correct_answer",
+      "$.chapters[0].papers[2].sections[0].questions[1].marks",
+      "$.chapters[0].papers[2].sections[1].section_name",
+      "$.chapters[0].papers[2].sections[1].questions",
+      "$.chapters[0].papers[2].sections[1].questions[0].question_number",
+      "$.chapters[0].papers[2].sections[1].questions[0].question_text",
+      "$.chapters[0].papers[2].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[2].sections[1].questions[0].marks",
+      "$.chapters[0].papers[2].sections[1].questions[1].question_number",
+      "$.chapters[0].papers[2].sections[1].questions[1].question_text",
+      "$.chapters[0].papers[2].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[2].sections[1].questions[1].marks",
+      "$.chapters[0].papers[2].sections[2].section_name",
+      "$.chapters[0].papers[2].sections[2].questions",
+      "$.chapters[0].papers[2].sections[2].questions[0].question_number",
+      "$.chapters[0].papers[2].sections[2].questions[0].question_text",
+      "$.chapters[0].papers[2].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[2].sections[2].questions[0].marks",
+      "$.chapters[0].papers[2].sections[2].questions[1].question_number",
+      "$.chapters[0].papers[2].sections[2].questions[1].question_text",
+      "$.chapters[0].papers[2].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[2].sections[2].questions[1].marks",
+      "$.chapters[0].papers[3].paper_id",
+      "$.chapters[0].papers[3].paper_title",
+      "$.chapters[0].papers[3].total_marks",
+      "$.chapters[0].papers[3].time_allowed_minutes",
+      "$.chapters[0].papers[3].sections",
+      "$.chapters[0].papers[3].sections[0].section_name",
+      "$.chapters[0].papers[3].sections[0].questions",
+      "$.chapters[0].papers[3].sections[0].questions[0].question_number",
+      "$.chapters[0].papers[3].sections[0].questions[0].question_text",
+      "$.chapters[0].papers[3].sections[0].questions[0].options",
+      "$.chapters[0].papers[3].sections[0].questions[0].correct_answer",
+      "$.chapters[0].papers[3].sections[0].questions[0].marks",
+      "$.chapters[0].papers[3].sections[0].questions[1].question_number",
+      "$.chapters[0].papers[3].sections[0].questions[1].question_text",
+      "$.chapters[0].papers[3].sections[0].questions[1].options",
+      "$.chapters[0].papers[3].sections[0].questions[1].correct_answer",
+      "$.chapters[0].papers[3].sections[0].questions[1].marks",
+      "$.chapters[0].papers[3].sections[1].section_name",
+      "$.chapters[0].papers[3].sections[1].questions",
+      "$.chapters[0].papers[3].sections[1].questions[0].question_number",
+      "$.chapters[0].papers[3].sections[1].questions[0].question_text",
+      "$.chapters[0].papers[3].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[3].sections[1].questions[0].marks",
+      "$.chapters[0].papers[3].sections[1].questions[1].question_number",
+      "$.chapters[0].papers[3].sections[1].questions[1].question_text",
+      "$.chapters[0].papers[3].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[3].sections[1].questions[1].marks",
+      "$.chapters[0].papers[3].sections[2].section_name",
+      "$.chapters[0].papers[3].sections[2].questions",
+      "$.chapters[0].papers[3].sections[2].questions[0].question_number",
+      "$.chapters[0].papers[3].sections[2].questions[0].question_text",
+      "$.chapters[0].papers[3].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[3].sections[2].questions[0].marks",
+      "$.chapters[0].papers[3].sections[2].questions[1].question_number",
+      "$.chapters[0].papers[3].sections[2].questions[1].question_text",
+      "$.chapters[0].papers[3].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[3].sections[2].questions[1].marks",
+      "$.chapters[0].papers[4].paper_id",
+      "$.chapters[0].papers[4].paper_title",
+      "$.chapters[0].papers[4].total_marks",
+      "$.chapters[0].papers[4].time_allowed_minutes",
+      "$.chapters[0].papers[4].sections",
+      "$.chapters[0].papers[4].sections[0].section_name",
+      "$.chapters[0].papers[4].sections[0].questions",
+      "$.chapters[0].papers[4].sections[0].questions[0].question_number",
+      "$.chapters[0].papers[4].sections[0].questions[0].question_text",
+      "$.chapters[0].papers[4].sections[0].questions[0].options",
+      "$.chapters[0].papers[4].sections[0].questions[0].correct_answer",
+      "$.chapters[0].papers[4].sections[0].questions[0].marks",
+      "$.chapters[0].papers[4].sections[0].questions[1].question_number",
+      "$.chapters[0].papers[4].sections[0].questions[1].question_text",
+      "$.chapters[0].papers[4].sections[0].questions[1].options",
+      "$.chapters[0].papers[4].sections[0].questions[1].correct_answer",
+      "$.chapters[0].papers[4].sections[0].questions[1].marks",
+      "$.chapters[0].papers[4].sections[1].section_name",
+      "$.chapters[0].papers[4].sections[1].questions",
+      "$.chapters[0].papers[4].sections[1].questions[0].question_number",
+      "$.chapters[0].papers[4].sections[1].questions[0].question_text",
+      "$.chapters[0].papers[4].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[4].sections[1].questions[0].marks",
+      "$.chapters[0].papers[4].sections[1].questions[1].question_number",
+      "$.chapters[0].papers[4].sections[1].questions[1].question_text",
+      "$.chapters[0].papers[4].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[4].sections[1].questions[1].marks",
+      "$.chapters[0].papers[4].sections[2].section_name",
+      "$.chapters[0].papers[4].sections[2].questions",
+      "$.chapters[0].papers[4].sections[2].questions[0].question_number",
+      "$.chapters[0].papers[4].sections[2].questions[0].question_text",
+      "$.chapters[0].papers[4].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[0].papers[4].sections[2].questions[0].marks",
+      "$.chapters[0].papers[4].sections[2].questions[1].question_number",
+      "$.chapters[0].papers[4].sections[2].questions[1].question_text",
+      "$.chapters[0].papers[4].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[0].papers[4].sections[2].questions[1].marks",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].papers",
+      "$.chapters[1].papers[0].paper_id",
+      "$.chapters[1].papers[0].paper_title",
+      "$.chapters[1].papers[0].total_marks",
+      "$.chapters[1].papers[0].time_allowed_minutes",
+      "$.chapters[1].papers[0].sections",
+      "$.chapters[1].papers[0].sections[0].section_name",
+      "$.chapters[1].papers[0].sections[0].questions",
+      "$.chapters[1].papers[0].sections[0].questions[0].question_number",
+      "$.chapters[1].papers[0].sections[0].questions[0].question_text",
+      "$.chapters[1].papers[0].sections[0].questions[0].options",
+      "$.chapters[1].papers[0].sections[0].questions[0].correct_answer",
+      "$.chapters[1].papers[0].sections[0].questions[0].marks",
+      "$.chapters[1].papers[0].sections[0].questions[1].question_number",
+      "$.chapters[1].papers[0].sections[0].questions[1].question_text",
+      "$.chapters[1].papers[0].sections[0].questions[1].options",
+      "$.chapters[1].papers[0].sections[0].questions[1].correct_answer",
+      "$.chapters[1].papers[0].sections[0].questions[1].marks",
+      "$.chapters[1].papers[0].sections[1].section_name",
+      "$.chapters[1].papers[0].sections[1].questions",
+      "$.chapters[1].papers[0].sections[1].questions[0].question_number",
+      "$.chapters[1].papers[0].sections[1].questions[0].question_text",
+      "$.chapters[1].papers[0].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[0].sections[1].questions[0].marks",
+      "$.chapters[1].papers[0].sections[1].questions[1].question_number",
+      "$.chapters[1].papers[0].sections[1].questions[1].question_text",
+      "$.chapters[1].papers[0].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[0].sections[1].questions[1].marks",
+      "$.chapters[1].papers[0].sections[2].section_name",
+      "$.chapters[1].papers[0].sections[2].questions",
+      "$.chapters[1].papers[0].sections[2].questions[0].question_number",
+      "$.chapters[1].papers[0].sections[2].questions[0].question_text",
+      "$.chapters[1].papers[0].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[0].sections[2].questions[0].marks",
+      "$.chapters[1].papers[0].sections[2].questions[1].question_number",
+      "$.chapters[1].papers[0].sections[2].questions[1].question_text",
+      "$.chapters[1].papers[0].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[0].sections[2].questions[1].marks",
+      "$.chapters[1].papers[1].paper_id",
+      "$.chapters[1].papers[1].paper_title",
+      "$.chapters[1].papers[1].total_marks",
+      "$.chapters[1].papers[1].time_allowed_minutes",
+      "$.chapters[1].papers[1].sections",
+      "$.chapters[1].papers[1].sections[0].section_name",
+      "$.chapters[1].papers[1].sections[0].questions",
+      "$.chapters[1].papers[1].sections[0].questions[0].question_number",
+      "$.chapters[1].papers[1].sections[0].questions[0].question_text",
+      "$.chapters[1].papers[1].sections[0].questions[0].options",
+      "$.chapters[1].papers[1].sections[0].questions[0].correct_answer",
+      "$.chapters[1].papers[1].sections[0].questions[0].marks",
+      "$.chapters[1].papers[1].sections[0].questions[1].question_number",
+      "$.chapters[1].papers[1].sections[0].questions[1].question_text",
+      "$.chapters[1].papers[1].sections[0].questions[1].options",
+      "$.chapters[1].papers[1].sections[0].questions[1].correct_answer",
+      "$.chapters[1].papers[1].sections[0].questions[1].marks",
+      "$.chapters[1].papers[1].sections[1].section_name",
+      "$.chapters[1].papers[1].sections[1].questions",
+      "$.chapters[1].papers[1].sections[1].questions[0].question_number",
+      "$.chapters[1].papers[1].sections[1].questions[0].question_text",
+      "$.chapters[1].papers[1].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[1].sections[1].questions[0].marks",
+      "$.chapters[1].papers[1].sections[1].questions[1].question_number",
+      "$.chapters[1].papers[1].sections[1].questions[1].question_text",
+      "$.chapters[1].papers[1].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[1].sections[1].questions[1].marks",
+      "$.chapters[1].papers[1].sections[2].section_name",
+      "$.chapters[1].papers[1].sections[2].questions",
+      "$.chapters[1].papers[1].sections[2].questions[0].question_number",
+      "$.chapters[1].papers[1].sections[2].questions[0].question_text",
+      "$.chapters[1].papers[1].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[1].sections[2].questions[0].marks",
+      "$.chapters[1].papers[1].sections[2].questions[1].question_number",
+      "$.chapters[1].papers[1].sections[2].questions[1].question_text",
+      "$.chapters[1].papers[1].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[1].sections[2].questions[1].marks",
+      "$.chapters[1].papers[2].paper_id",
+      "$.chapters[1].papers[2].paper_title",
+      "$.chapters[1].papers[2].total_marks",
+      "$.chapters[1].papers[2].time_allowed_minutes",
+      "$.chapters[1].papers[2].sections",
+      "$.chapters[1].papers[2].sections[0].section_name",
+      "$.chapters[1].papers[2].sections[0].questions",
+      "$.chapters[1].papers[2].sections[0].questions[0].question_number",
+      "$.chapters[1].papers[2].sections[0].questions[0].question_text",
+      "$.chapters[1].papers[2].sections[0].questions[0].options",
+      "$.chapters[1].papers[2].sections[0].questions[0].correct_answer",
+      "$.chapters[1].papers[2].sections[0].questions[0].marks",
+      "$.chapters[1].papers[2].sections[0].questions[1].question_number",
+      "$.chapters[1].papers[2].sections[0].questions[1].question_text",
+      "$.chapters[1].papers[2].sections[0].questions[1].options",
+      "$.chapters[1].papers[2].sections[0].questions[1].correct_answer",
+      "$.chapters[1].papers[2].sections[0].questions[1].marks",
+      "$.chapters[1].papers[2].sections[1].section_name",
+      "$.chapters[1].papers[2].sections[1].questions",
+      "$.chapters[1].papers[2].sections[1].questions[0].question_number",
+      "$.chapters[1].papers[2].sections[1].questions[0].question_text",
+      "$.chapters[1].papers[2].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[2].sections[1].questions[0].marks",
+      "$.chapters[1].papers[2].sections[1].questions[1].question_number",
+      "$.chapters[1].papers[2].sections[1].questions[1].question_text",
+      "$.chapters[1].papers[2].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[2].sections[1].questions[1].marks",
+      "$.chapters[1].papers[2].sections[2].section_name",
+      "$.chapters[1].papers[2].sections[2].questions",
+      "$.chapters[1].papers[2].sections[2].questions[0].question_number",
+      "$.chapters[1].papers[2].sections[2].questions[0].question_text",
+      "$.chapters[1].papers[2].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[2].sections[2].questions[0].marks",
+      "$.chapters[1].papers[2].sections[2].questions[1].question_number",
+      "$.chapters[1].papers[2].sections[2].questions[1].question_text",
+      "$.chapters[1].papers[2].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[2].sections[2].questions[1].marks",
+      "$.chapters[1].papers[3].paper_id",
+      "$.chapters[1].papers[3].paper_title",
+      "$.chapters[1].papers[3].total_marks",
+      "$.chapters[1].papers[3].time_allowed_minutes",
+      "$.chapters[1].papers[3].sections",
+      "$.chapters[1].papers[3].sections[0].section_name",
+      "$.chapters[1].papers[3].sections[0].questions",
+      "$.chapters[1].papers[3].sections[0].questions[0].question_number",
+      "$.chapters[1].papers[3].sections[0].questions[0].question_text",
+      "$.chapters[1].papers[3].sections[0].questions[0].options",
+      "$.chapters[1].papers[3].sections[0].questions[0].correct_answer",
+      "$.chapters[1].papers[3].sections[0].questions[0].marks",
+      "$.chapters[1].papers[3].sections[0].questions[1].question_number",
+      "$.chapters[1].papers[3].sections[0].questions[1].question_text",
+      "$.chapters[1].papers[3].sections[0].questions[1].options",
+      "$.chapters[1].papers[3].sections[0].questions[1].correct_answer",
+      "$.chapters[1].papers[3].sections[0].questions[1].marks",
+      "$.chapters[1].papers[3].sections[1].section_name",
+      "$.chapters[1].papers[3].sections[1].questions",
+      "$.chapters[1].papers[3].sections[1].questions[0].question_number",
+      "$.chapters[1].papers[3].sections[1].questions[0].question_text",
+      "$.chapters[1].papers[3].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[3].sections[1].questions[0].marks",
+      "$.chapters[1].papers[3].sections[1].questions[1].question_number",
+      "$.chapters[1].papers[3].sections[1].questions[1].question_text",
+      "$.chapters[1].papers[3].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[3].sections[1].questions[1].marks",
+      "$.chapters[1].papers[3].sections[2].section_name",
+      "$.chapters[1].papers[3].sections[2].questions",
+      "$.chapters[1].papers[3].sections[2].questions[0].question_number",
+      "$.chapters[1].papers[3].sections[2].questions[0].question_text",
+      "$.chapters[1].papers[3].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[3].sections[2].questions[0].marks",
+      "$.chapters[1].papers[3].sections[2].questions[1].question_number",
+      "$.chapters[1].papers[3].sections[2].questions[1].question_text",
+      "$.chapters[1].papers[3].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[3].sections[2].questions[1].marks",
+      "$.chapters[1].papers[4].paper_id",
+      "$.chapters[1].papers[4].paper_title",
+      "$.chapters[1].papers[4].total_marks",
+      "$.chapters[1].papers[4].time_allowed_minutes",
+      "$.chapters[1].papers[4].sections",
+      "$.chapters[1].papers[4].sections[0].section_name",
+      "$.chapters[1].papers[4].sections[0].questions",
+      "$.chapters[1].papers[4].sections[0].questions[0].question_number",
+      "$.chapters[1].papers[4].sections[0].questions[0].question_text",
+      "$.chapters[1].papers[4].sections[0].questions[0].options",
+      "$.chapters[1].papers[4].sections[0].questions[0].correct_answer",
+      "$.chapters[1].papers[4].sections[0].questions[0].marks",
+      "$.chapters[1].papers[4].sections[0].questions[1].question_number",
+      "$.chapters[1].papers[4].sections[0].questions[1].question_text",
+      "$.chapters[1].papers[4].sections[0].questions[1].options",
+      "$.chapters[1].papers[4].sections[0].questions[1].correct_answer",
+      "$.chapters[1].papers[4].sections[0].questions[1].marks",
+      "$.chapters[1].papers[4].sections[1].section_name",
+      "$.chapters[1].papers[4].sections[1].questions",
+      "$.chapters[1].papers[4].sections[1].questions[0].question_number",
+      "$.chapters[1].papers[4].sections[1].questions[0].question_text",
+      "$.chapters[1].papers[4].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[4].sections[1].questions[0].marks",
+      "$.chapters[1].papers[4].sections[1].questions[1].question_number",
+      "$.chapters[1].papers[4].sections[1].questions[1].question_text",
+      "$.chapters[1].papers[4].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[4].sections[1].questions[1].marks",
+      "$.chapters[1].papers[4].sections[2].section_name",
+      "$.chapters[1].papers[4].sections[2].questions",
+      "$.chapters[1].papers[4].sections[2].questions[0].question_number",
+      "$.chapters[1].papers[4].sections[2].questions[0].question_text",
+      "$.chapters[1].papers[4].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[1].papers[4].sections[2].questions[0].marks",
+      "$.chapters[1].papers[4].sections[2].questions[1].question_number",
+      "$.chapters[1].papers[4].sections[2].questions[1].question_text",
+      "$.chapters[1].papers[4].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[1].papers[4].sections[2].questions[1].marks",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].papers",
+      "$.chapters[2].papers[0].paper_id",
+      "$.chapters[2].papers[0].paper_title",
+      "$.chapters[2].papers[0].total_marks",
+      "$.chapters[2].papers[0].time_allowed_minutes",
+      "$.chapters[2].papers[0].sections",
+      "$.chapters[2].papers[0].sections[0].section_name",
+      "$.chapters[2].papers[0].sections[0].questions",
+      "$.chapters[2].papers[0].sections[0].questions[0].question_number",
+      "$.chapters[2].papers[0].sections[0].questions[0].question_text",
+      "$.chapters[2].papers[0].sections[0].questions[0].options",
+      "$.chapters[2].papers[0].sections[0].questions[0].correct_answer",
+      "$.chapters[2].papers[0].sections[0].questions[0].marks",
+      "$.chapters[2].papers[0].sections[0].questions[1].question_number",
+      "$.chapters[2].papers[0].sections[0].questions[1].question_text",
+      "$.chapters[2].papers[0].sections[0].questions[1].options",
+      "$.chapters[2].papers[0].sections[0].questions[1].correct_answer",
+      "$.chapters[2].papers[0].sections[0].questions[1].marks",
+      "$.chapters[2].papers[0].sections[1].section_name",
+      "$.chapters[2].papers[0].sections[1].questions",
+      "$.chapters[2].papers[0].sections[1].questions[0].question_number",
+      "$.chapters[2].papers[0].sections[1].questions[0].question_text",
+      "$.chapters[2].papers[0].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[0].sections[1].questions[0].marks",
+      "$.chapters[2].papers[0].sections[1].questions[1].question_number",
+      "$.chapters[2].papers[0].sections[1].questions[1].question_text",
+      "$.chapters[2].papers[0].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[0].sections[1].questions[1].marks",
+      "$.chapters[2].papers[0].sections[2].section_name",
+      "$.chapters[2].papers[0].sections[2].questions",
+      "$.chapters[2].papers[0].sections[2].questions[0].question_number",
+      "$.chapters[2].papers[0].sections[2].questions[0].question_text",
+      "$.chapters[2].papers[0].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[0].sections[2].questions[0].marks",
+      "$.chapters[2].papers[0].sections[2].questions[1].question_number",
+      "$.chapters[2].papers[0].sections[2].questions[1].question_text",
+      "$.chapters[2].papers[0].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[0].sections[2].questions[1].marks",
+      "$.chapters[2].papers[1].paper_id",
+      "$.chapters[2].papers[1].paper_title",
+      "$.chapters[2].papers[1].total_marks",
+      "$.chapters[2].papers[1].time_allowed_minutes",
+      "$.chapters[2].papers[1].sections",
+      "$.chapters[2].papers[1].sections[0].section_name",
+      "$.chapters[2].papers[1].sections[0].questions",
+      "$.chapters[2].papers[1].sections[0].questions[0].question_number",
+      "$.chapters[2].papers[1].sections[0].questions[0].question_text",
+      "$.chapters[2].papers[1].sections[0].questions[0].options",
+      "$.chapters[2].papers[1].sections[0].questions[0].correct_answer",
+      "$.chapters[2].papers[1].sections[0].questions[0].marks",
+      "$.chapters[2].papers[1].sections[0].questions[1].question_number",
+      "$.chapters[2].papers[1].sections[0].questions[1].question_text",
+      "$.chapters[2].papers[1].sections[0].questions[1].options",
+      "$.chapters[2].papers[1].sections[0].questions[1].correct_answer",
+      "$.chapters[2].papers[1].sections[0].questions[1].marks",
+      "$.chapters[2].papers[1].sections[1].section_name",
+      "$.chapters[2].papers[1].sections[1].questions",
+      "$.chapters[2].papers[1].sections[1].questions[0].question_number",
+      "$.chapters[2].papers[1].sections[1].questions[0].question_text",
+      "$.chapters[2].papers[1].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[1].sections[1].questions[0].marks",
+      "$.chapters[2].papers[1].sections[1].questions[1].question_number",
+      "$.chapters[2].papers[1].sections[1].questions[1].question_text",
+      "$.chapters[2].papers[1].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[1].sections[1].questions[1].marks",
+      "$.chapters[2].papers[1].sections[2].section_name",
+      "$.chapters[2].papers[1].sections[2].questions",
+      "$.chapters[2].papers[1].sections[2].questions[0].question_number",
+      "$.chapters[2].papers[1].sections[2].questions[0].question_text",
+      "$.chapters[2].papers[1].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[1].sections[2].questions[0].marks",
+      "$.chapters[2].papers[1].sections[2].questions[1].question_number",
+      "$.chapters[2].papers[1].sections[2].questions[1].question_text",
+      "$.chapters[2].papers[1].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[1].sections[2].questions[1].marks",
+      "$.chapters[2].papers[2].paper_id",
+      "$.chapters[2].papers[2].paper_title",
+      "$.chapters[2].papers[2].total_marks",
+      "$.chapters[2].papers[2].time_allowed_minutes",
+      "$.chapters[2].papers[2].sections",
+      "$.chapters[2].papers[2].sections[0].section_name",
+      "$.chapters[2].papers[2].sections[0].questions",
+      "$.chapters[2].papers[2].sections[0].questions[0].question_number",
+      "$.chapters[2].papers[2].sections[0].questions[0].question_text",
+      "$.chapters[2].papers[2].sections[0].questions[0].options",
+      "$.chapters[2].papers[2].sections[0].questions[0].correct_answer",
+      "$.chapters[2].papers[2].sections[0].questions[0].marks",
+      "$.chapters[2].papers[2].sections[0].questions[1].question_number",
+      "$.chapters[2].papers[2].sections[0].questions[1].question_text",
+      "$.chapters[2].papers[2].sections[0].questions[1].options",
+      "$.chapters[2].papers[2].sections[0].questions[1].correct_answer",
+      "$.chapters[2].papers[2].sections[0].questions[1].marks",
+      "$.chapters[2].papers[2].sections[1].section_name",
+      "$.chapters[2].papers[2].sections[1].questions",
+      "$.chapters[2].papers[2].sections[1].questions[0].question_number",
+      "$.chapters[2].papers[2].sections[1].questions[0].question_text",
+      "$.chapters[2].papers[2].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[2].sections[1].questions[0].marks",
+      "$.chapters[2].papers[2].sections[1].questions[1].question_number",
+      "$.chapters[2].papers[2].sections[1].questions[1].question_text",
+      "$.chapters[2].papers[2].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[2].sections[1].questions[1].marks",
+      "$.chapters[2].papers[2].sections[2].section_name",
+      "$.chapters[2].papers[2].sections[2].questions",
+      "$.chapters[2].papers[2].sections[2].questions[0].question_number",
+      "$.chapters[2].papers[2].sections[2].questions[0].question_text",
+      "$.chapters[2].papers[2].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[2].sections[2].questions[0].marks",
+      "$.chapters[2].papers[2].sections[2].questions[1].question_number",
+      "$.chapters[2].papers[2].sections[2].questions[1].question_text",
+      "$.chapters[2].papers[2].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[2].sections[2].questions[1].marks",
+      "$.chapters[2].papers[3].paper_id",
+      "$.chapters[2].papers[3].paper_title",
+      "$.chapters[2].papers[3].total_marks",
+      "$.chapters[2].papers[3].time_allowed_minutes",
+      "$.chapters[2].papers[3].sections",
+      "$.chapters[2].papers[3].sections[0].section_name",
+      "$.chapters[2].papers[3].sections[0].questions",
+      "$.chapters[2].papers[3].sections[0].questions[0].question_number",
+      "$.chapters[2].papers[3].sections[0].questions[0].question_text",
+      "$.chapters[2].papers[3].sections[0].questions[0].options",
+      "$.chapters[2].papers[3].sections[0].questions[0].correct_answer",
+      "$.chapters[2].papers[3].sections[0].questions[0].marks",
+      "$.chapters[2].papers[3].sections[0].questions[1].question_number",
+      "$.chapters[2].papers[3].sections[0].questions[1].question_text",
+      "$.chapters[2].papers[3].sections[0].questions[1].options",
+      "$.chapters[2].papers[3].sections[0].questions[1].correct_answer",
+      "$.chapters[2].papers[3].sections[0].questions[1].marks",
+      "$.chapters[2].papers[3].sections[1].section_name",
+      "$.chapters[2].papers[3].sections[1].questions",
+      "$.chapters[2].papers[3].sections[1].questions[0].question_number",
+      "$.chapters[2].papers[3].sections[1].questions[0].question_text",
+      "$.chapters[2].papers[3].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[3].sections[1].questions[0].marks",
+      "$.chapters[2].papers[3].sections[1].questions[1].question_number",
+      "$.chapters[2].papers[3].sections[1].questions[1].question_text",
+      "$.chapters[2].papers[3].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[3].sections[1].questions[1].marks",
+      "$.chapters[2].papers[3].sections[2].section_name",
+      "$.chapters[2].papers[3].sections[2].questions",
+      "$.chapters[2].papers[3].sections[2].questions[0].question_number",
+      "$.chapters[2].papers[3].sections[2].questions[0].question_text",
+      "$.chapters[2].papers[3].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[3].sections[2].questions[0].marks",
+      "$.chapters[2].papers[3].sections[2].questions[1].question_number",
+      "$.chapters[2].papers[3].sections[2].questions[1].question_text",
+      "$.chapters[2].papers[3].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[3].sections[2].questions[1].marks",
+      "$.chapters[2].papers[4].paper_id",
+      "$.chapters[2].papers[4].paper_title",
+      "$.chapters[2].papers[4].total_marks",
+      "$.chapters[2].papers[4].time_allowed_minutes",
+      "$.chapters[2].papers[4].sections",
+      "$.chapters[2].papers[4].sections[0].section_name",
+      "$.chapters[2].papers[4].sections[0].questions",
+      "$.chapters[2].papers[4].sections[0].questions[0].question_number",
+      "$.chapters[2].papers[4].sections[0].questions[0].question_text",
+      "$.chapters[2].papers[4].sections[0].questions[0].options",
+      "$.chapters[2].papers[4].sections[0].questions[0].correct_answer",
+      "$.chapters[2].papers[4].sections[0].questions[0].marks",
+      "$.chapters[2].papers[4].sections[0].questions[1].question_number",
+      "$.chapters[2].papers[4].sections[0].questions[1].question_text",
+      "$.chapters[2].papers[4].sections[0].questions[1].options",
+      "$.chapters[2].papers[4].sections[0].questions[1].correct_answer",
+      "$.chapters[2].papers[4].sections[0].questions[1].marks",
+      "$.chapters[2].papers[4].sections[1].section_name",
+      "$.chapters[2].papers[4].sections[1].questions",
+      "$.chapters[2].papers[4].sections[1].questions[0].question_number",
+      "$.chapters[2].papers[4].sections[1].questions[0].question_text",
+      "$.chapters[2].papers[4].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[4].sections[1].questions[0].marks",
+      "$.chapters[2].papers[4].sections[1].questions[1].question_number",
+      "$.chapters[2].papers[4].sections[1].questions[1].question_text",
+      "$.chapters[2].papers[4].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[4].sections[1].questions[1].marks",
+      "$.chapters[2].papers[4].sections[2].section_name",
+      "$.chapters[2].papers[4].sections[2].questions",
+      "$.chapters[2].papers[4].sections[2].questions[0].question_number",
+      "$.chapters[2].papers[4].sections[2].questions[0].question_text",
+      "$.chapters[2].papers[4].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[2].papers[4].sections[2].questions[0].marks",
+      "$.chapters[2].papers[4].sections[2].questions[1].question_number",
+      "$.chapters[2].papers[4].sections[2].questions[1].question_text",
+      "$.chapters[2].papers[4].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[2].papers[4].sections[2].questions[1].marks",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].papers",
+      "$.chapters[3].papers[0].paper_id",
+      "$.chapters[3].papers[0].paper_title",
+      "$.chapters[3].papers[0].total_marks",
+      "$.chapters[3].papers[0].time_allowed_minutes",
+      "$.chapters[3].papers[0].sections",
+      "$.chapters[3].papers[0].sections[0].section_name",
+      "$.chapters[3].papers[0].sections[0].questions",
+      "$.chapters[3].papers[0].sections[0].questions[0].question_number",
+      "$.chapters[3].papers[0].sections[0].questions[0].question_text",
+      "$.chapters[3].papers[0].sections[0].questions[0].options",
+      "$.chapters[3].papers[0].sections[0].questions[0].correct_answer",
+      "$.chapters[3].papers[0].sections[0].questions[0].marks",
+      "$.chapters[3].papers[0].sections[0].questions[1].question_number",
+      "$.chapters[3].papers[0].sections[0].questions[1].question_text",
+      "$.chapters[3].papers[0].sections[0].questions[1].options",
+      "$.chapters[3].papers[0].sections[0].questions[1].correct_answer",
+      "$.chapters[3].papers[0].sections[0].questions[1].marks",
+      "$.chapters[3].papers[0].sections[1].section_name",
+      "$.chapters[3].papers[0].sections[1].questions",
+      "$.chapters[3].papers[0].sections[1].questions[0].question_number",
+      "$.chapters[3].papers[0].sections[1].questions[0].question_text",
+      "$.chapters[3].papers[0].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[0].sections[1].questions[0].marks",
+      "$.chapters[3].papers[0].sections[1].questions[1].question_number",
+      "$.chapters[3].papers[0].sections[1].questions[1].question_text",
+      "$.chapters[3].papers[0].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[0].sections[1].questions[1].marks",
+      "$.chapters[3].papers[0].sections[2].section_name",
+      "$.chapters[3].papers[0].sections[2].questions",
+      "$.chapters[3].papers[0].sections[2].questions[0].question_number",
+      "$.chapters[3].papers[0].sections[2].questions[0].question_text",
+      "$.chapters[3].papers[0].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[0].sections[2].questions[0].marks",
+      "$.chapters[3].papers[0].sections[2].questions[1].question_number",
+      "$.chapters[3].papers[0].sections[2].questions[1].question_text",
+      "$.chapters[3].papers[0].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[0].sections[2].questions[1].marks",
+      "$.chapters[3].papers[1].paper_id",
+      "$.chapters[3].papers[1].paper_title",
+      "$.chapters[3].papers[1].total_marks",
+      "$.chapters[3].papers[1].time_allowed_minutes",
+      "$.chapters[3].papers[1].sections",
+      "$.chapters[3].papers[1].sections[0].section_name",
+      "$.chapters[3].papers[1].sections[0].questions",
+      "$.chapters[3].papers[1].sections[0].questions[0].question_number",
+      "$.chapters[3].papers[1].sections[0].questions[0].question_text",
+      "$.chapters[3].papers[1].sections[0].questions[0].options",
+      "$.chapters[3].papers[1].sections[0].questions[0].correct_answer",
+      "$.chapters[3].papers[1].sections[0].questions[0].marks",
+      "$.chapters[3].papers[1].sections[0].questions[1].question_number",
+      "$.chapters[3].papers[1].sections[0].questions[1].question_text",
+      "$.chapters[3].papers[1].sections[0].questions[1].options",
+      "$.chapters[3].papers[1].sections[0].questions[1].correct_answer",
+      "$.chapters[3].papers[1].sections[0].questions[1].marks",
+      "$.chapters[3].papers[1].sections[1].section_name",
+      "$.chapters[3].papers[1].sections[1].questions",
+      "$.chapters[3].papers[1].sections[1].questions[0].question_number",
+      "$.chapters[3].papers[1].sections[1].questions[0].question_text",
+      "$.chapters[3].papers[1].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[1].sections[1].questions[0].marks",
+      "$.chapters[3].papers[1].sections[1].questions[1].question_number",
+      "$.chapters[3].papers[1].sections[1].questions[1].question_text",
+      "$.chapters[3].papers[1].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[1].sections[1].questions[1].marks",
+      "$.chapters[3].papers[1].sections[2].section_name",
+      "$.chapters[3].papers[1].sections[2].questions",
+      "$.chapters[3].papers[1].sections[2].questions[0].question_number",
+      "$.chapters[3].papers[1].sections[2].questions[0].question_text",
+      "$.chapters[3].papers[1].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[1].sections[2].questions[0].marks",
+      "$.chapters[3].papers[1].sections[2].questions[1].question_number",
+      "$.chapters[3].papers[1].sections[2].questions[1].question_text",
+      "$.chapters[3].papers[1].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[1].sections[2].questions[1].marks",
+      "$.chapters[3].papers[2].paper_id",
+      "$.chapters[3].papers[2].paper_title",
+      "$.chapters[3].papers[2].total_marks",
+      "$.chapters[3].papers[2].time_allowed_minutes",
+      "$.chapters[3].papers[2].sections",
+      "$.chapters[3].papers[2].sections[0].section_name",
+      "$.chapters[3].papers[2].sections[0].questions",
+      "$.chapters[3].papers[2].sections[0].questions[0].question_number",
+      "$.chapters[3].papers[2].sections[0].questions[0].question_text",
+      "$.chapters[3].papers[2].sections[0].questions[0].options",
+      "$.chapters[3].papers[2].sections[0].questions[0].correct_answer",
+      "$.chapters[3].papers[2].sections[0].questions[0].marks",
+      "$.chapters[3].papers[2].sections[0].questions[1].question_number",
+      "$.chapters[3].papers[2].sections[0].questions[1].question_text",
+      "$.chapters[3].papers[2].sections[0].questions[1].options",
+      "$.chapters[3].papers[2].sections[0].questions[1].correct_answer",
+      "$.chapters[3].papers[2].sections[0].questions[1].marks",
+      "$.chapters[3].papers[2].sections[1].section_name",
+      "$.chapters[3].papers[2].sections[1].questions",
+      "$.chapters[3].papers[2].sections[1].questions[0].question_number",
+      "$.chapters[3].papers[2].sections[1].questions[0].question_text",
+      "$.chapters[3].papers[2].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[2].sections[1].questions[0].marks",
+      "$.chapters[3].papers[2].sections[1].questions[1].question_number",
+      "$.chapters[3].papers[2].sections[1].questions[1].question_text",
+      "$.chapters[3].papers[2].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[2].sections[1].questions[1].marks",
+      "$.chapters[3].papers[2].sections[2].section_name",
+      "$.chapters[3].papers[2].sections[2].questions",
+      "$.chapters[3].papers[2].sections[2].questions[0].question_number",
+      "$.chapters[3].papers[2].sections[2].questions[0].question_text",
+      "$.chapters[3].papers[2].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[2].sections[2].questions[0].marks",
+      "$.chapters[3].papers[2].sections[2].questions[1].question_number",
+      "$.chapters[3].papers[2].sections[2].questions[1].question_text",
+      "$.chapters[3].papers[2].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[2].sections[2].questions[1].marks",
+      "$.chapters[3].papers[3].paper_id",
+      "$.chapters[3].papers[3].paper_title",
+      "$.chapters[3].papers[3].total_marks",
+      "$.chapters[3].papers[3].time_allowed_minutes",
+      "$.chapters[3].papers[3].sections",
+      "$.chapters[3].papers[3].sections[0].section_name",
+      "$.chapters[3].papers[3].sections[0].questions",
+      "$.chapters[3].papers[3].sections[0].questions[0].question_number",
+      "$.chapters[3].papers[3].sections[0].questions[0].question_text",
+      "$.chapters[3].papers[3].sections[0].questions[0].options",
+      "$.chapters[3].papers[3].sections[0].questions[0].correct_answer",
+      "$.chapters[3].papers[3].sections[0].questions[0].marks",
+      "$.chapters[3].papers[3].sections[0].questions[1].question_number",
+      "$.chapters[3].papers[3].sections[0].questions[1].question_text",
+      "$.chapters[3].papers[3].sections[0].questions[1].options",
+      "$.chapters[3].papers[3].sections[0].questions[1].correct_answer",
+      "$.chapters[3].papers[3].sections[0].questions[1].marks",
+      "$.chapters[3].papers[3].sections[1].section_name",
+      "$.chapters[3].papers[3].sections[1].questions",
+      "$.chapters[3].papers[3].sections[1].questions[0].question_number",
+      "$.chapters[3].papers[3].sections[1].questions[0].question_text",
+      "$.chapters[3].papers[3].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[3].sections[1].questions[0].marks",
+      "$.chapters[3].papers[3].sections[1].questions[1].question_number",
+      "$.chapters[3].papers[3].sections[1].questions[1].question_text",
+      "$.chapters[3].papers[3].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[3].sections[1].questions[1].marks",
+      "$.chapters[3].papers[3].sections[2].section_name",
+      "$.chapters[3].papers[3].sections[2].questions",
+      "$.chapters[3].papers[3].sections[2].questions[0].question_number",
+      "$.chapters[3].papers[3].sections[2].questions[0].question_text",
+      "$.chapters[3].papers[3].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[3].sections[2].questions[0].marks",
+      "$.chapters[3].papers[3].sections[2].questions[1].question_number",
+      "$.chapters[3].papers[3].sections[2].questions[1].question_text",
+      "$.chapters[3].papers[3].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[3].sections[2].questions[1].marks",
+      "$.chapters[3].papers[4].paper_id",
+      "$.chapters[3].papers[4].paper_title",
+      "$.chapters[3].papers[4].total_marks",
+      "$.chapters[3].papers[4].time_allowed_minutes",
+      "$.chapters[3].papers[4].sections",
+      "$.chapters[3].papers[4].sections[0].section_name",
+      "$.chapters[3].papers[4].sections[0].questions",
+      "$.chapters[3].papers[4].sections[0].questions[0].question_number",
+      "$.chapters[3].papers[4].sections[0].questions[0].question_text",
+      "$.chapters[3].papers[4].sections[0].questions[0].options",
+      "$.chapters[3].papers[4].sections[0].questions[0].correct_answer",
+      "$.chapters[3].papers[4].sections[0].questions[0].marks",
+      "$.chapters[3].papers[4].sections[0].questions[1].question_number",
+      "$.chapters[3].papers[4].sections[0].questions[1].question_text",
+      "$.chapters[3].papers[4].sections[0].questions[1].options",
+      "$.chapters[3].papers[4].sections[0].questions[1].correct_answer",
+      "$.chapters[3].papers[4].sections[0].questions[1].marks",
+      "$.chapters[3].papers[4].sections[1].section_name",
+      "$.chapters[3].papers[4].sections[1].questions",
+      "$.chapters[3].papers[4].sections[1].questions[0].question_number",
+      "$.chapters[3].papers[4].sections[1].questions[0].question_text",
+      "$.chapters[3].papers[4].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[4].sections[1].questions[0].marks",
+      "$.chapters[3].papers[4].sections[1].questions[1].question_number",
+      "$.chapters[3].papers[4].sections[1].questions[1].question_text",
+      "$.chapters[3].papers[4].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[4].sections[1].questions[1].marks",
+      "$.chapters[3].papers[4].sections[2].section_name",
+      "$.chapters[3].papers[4].sections[2].questions",
+      "$.chapters[3].papers[4].sections[2].questions[0].question_number",
+      "$.chapters[3].papers[4].sections[2].questions[0].question_text",
+      "$.chapters[3].papers[4].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[3].papers[4].sections[2].questions[0].marks",
+      "$.chapters[3].papers[4].sections[2].questions[1].question_number",
+      "$.chapters[3].papers[4].sections[2].questions[1].question_text",
+      "$.chapters[3].papers[4].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[3].papers[4].sections[2].questions[1].marks",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].papers",
+      "$.chapters[4].papers[0].paper_id",
+      "$.chapters[4].papers[0].paper_title",
+      "$.chapters[4].papers[0].total_marks",
+      "$.chapters[4].papers[0].time_allowed_minutes",
+      "$.chapters[4].papers[0].sections",
+      "$.chapters[4].papers[0].sections[0].section_name",
+      "$.chapters[4].papers[0].sections[0].questions",
+      "$.chapters[4].papers[0].sections[0].questions[0].question_number",
+      "$.chapters[4].papers[0].sections[0].questions[0].question_text",
+      "$.chapters[4].papers[0].sections[0].questions[0].options",
+      "$.chapters[4].papers[0].sections[0].questions[0].correct_answer",
+      "$.chapters[4].papers[0].sections[0].questions[0].marks",
+      "$.chapters[4].papers[0].sections[0].questions[1].question_number",
+      "$.chapters[4].papers[0].sections[0].questions[1].question_text",
+      "$.chapters[4].papers[0].sections[0].questions[1].options",
+      "$.chapters[4].papers[0].sections[0].questions[1].correct_answer",
+      "$.chapters[4].papers[0].sections[0].questions[1].marks",
+      "$.chapters[4].papers[0].sections[1].section_name",
+      "$.chapters[4].papers[0].sections[1].questions",
+      "$.chapters[4].papers[0].sections[1].questions[0].question_number",
+      "$.chapters[4].papers[0].sections[1].questions[0].question_text",
+      "$.chapters[4].papers[0].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[0].sections[1].questions[0].marks",
+      "$.chapters[4].papers[0].sections[1].questions[1].question_number",
+      "$.chapters[4].papers[0].sections[1].questions[1].question_text",
+      "$.chapters[4].papers[0].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[0].sections[1].questions[1].marks",
+      "$.chapters[4].papers[0].sections[2].section_name",
+      "$.chapters[4].papers[0].sections[2].questions",
+      "$.chapters[4].papers[0].sections[2].questions[0].question_number",
+      "$.chapters[4].papers[0].sections[2].questions[0].question_text",
+      "$.chapters[4].papers[0].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[0].sections[2].questions[0].marks",
+      "$.chapters[4].papers[0].sections[2].questions[1].question_number",
+      "$.chapters[4].papers[0].sections[2].questions[1].question_text",
+      "$.chapters[4].papers[0].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[0].sections[2].questions[1].marks",
+      "$.chapters[4].papers[1].paper_id",
+      "$.chapters[4].papers[1].paper_title",
+      "$.chapters[4].papers[1].total_marks",
+      "$.chapters[4].papers[1].time_allowed_minutes",
+      "$.chapters[4].papers[1].sections",
+      "$.chapters[4].papers[1].sections[0].section_name",
+      "$.chapters[4].papers[1].sections[0].questions",
+      "$.chapters[4].papers[1].sections[0].questions[0].question_number",
+      "$.chapters[4].papers[1].sections[0].questions[0].question_text",
+      "$.chapters[4].papers[1].sections[0].questions[0].options",
+      "$.chapters[4].papers[1].sections[0].questions[0].correct_answer",
+      "$.chapters[4].papers[1].sections[0].questions[0].marks",
+      "$.chapters[4].papers[1].sections[0].questions[1].question_number",
+      "$.chapters[4].papers[1].sections[0].questions[1].question_text",
+      "$.chapters[4].papers[1].sections[0].questions[1].options",
+      "$.chapters[4].papers[1].sections[0].questions[1].correct_answer",
+      "$.chapters[4].papers[1].sections[0].questions[1].marks",
+      "$.chapters[4].papers[1].sections[1].section_name",
+      "$.chapters[4].papers[1].sections[1].questions",
+      "$.chapters[4].papers[1].sections[1].questions[0].question_number",
+      "$.chapters[4].papers[1].sections[1].questions[0].question_text",
+      "$.chapters[4].papers[1].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[1].sections[1].questions[0].marks",
+      "$.chapters[4].papers[1].sections[1].questions[1].question_number",
+      "$.chapters[4].papers[1].sections[1].questions[1].question_text",
+      "$.chapters[4].papers[1].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[1].sections[1].questions[1].marks",
+      "$.chapters[4].papers[1].sections[2].section_name",
+      "$.chapters[4].papers[1].sections[2].questions",
+      "$.chapters[4].papers[1].sections[2].questions[0].question_number",
+      "$.chapters[4].papers[1].sections[2].questions[0].question_text",
+      "$.chapters[4].papers[1].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[1].sections[2].questions[0].marks",
+      "$.chapters[4].papers[1].sections[2].questions[1].question_number",
+      "$.chapters[4].papers[1].sections[2].questions[1].question_text",
+      "$.chapters[4].papers[1].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[1].sections[2].questions[1].marks",
+      "$.chapters[4].papers[2].paper_id",
+      "$.chapters[4].papers[2].paper_title",
+      "$.chapters[4].papers[2].total_marks",
+      "$.chapters[4].papers[2].time_allowed_minutes",
+      "$.chapters[4].papers[2].sections",
+      "$.chapters[4].papers[2].sections[0].section_name",
+      "$.chapters[4].papers[2].sections[0].questions",
+      "$.chapters[4].papers[2].sections[0].questions[0].question_number",
+      "$.chapters[4].papers[2].sections[0].questions[0].question_text",
+      "$.chapters[4].papers[2].sections[0].questions[0].options",
+      "$.chapters[4].papers[2].sections[0].questions[0].correct_answer",
+      "$.chapters[4].papers[2].sections[0].questions[0].marks",
+      "$.chapters[4].papers[2].sections[0].questions[1].question_number",
+      "$.chapters[4].papers[2].sections[0].questions[1].question_text",
+      "$.chapters[4].papers[2].sections[0].questions[1].options",
+      "$.chapters[4].papers[2].sections[0].questions[1].correct_answer",
+      "$.chapters[4].papers[2].sections[0].questions[1].marks",
+      "$.chapters[4].papers[2].sections[1].section_name",
+      "$.chapters[4].papers[2].sections[1].questions",
+      "$.chapters[4].papers[2].sections[1].questions[0].question_number",
+      "$.chapters[4].papers[2].sections[1].questions[0].question_text",
+      "$.chapters[4].papers[2].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[2].sections[1].questions[0].marks",
+      "$.chapters[4].papers[2].sections[1].questions[1].question_number",
+      "$.chapters[4].papers[2].sections[1].questions[1].question_text",
+      "$.chapters[4].papers[2].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[2].sections[1].questions[1].marks",
+      "$.chapters[4].papers[2].sections[2].section_name",
+      "$.chapters[4].papers[2].sections[2].questions",
+      "$.chapters[4].papers[2].sections[2].questions[0].question_number",
+      "$.chapters[4].papers[2].sections[2].questions[0].question_text",
+      "$.chapters[4].papers[2].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[2].sections[2].questions[0].marks",
+      "$.chapters[4].papers[2].sections[2].questions[1].question_number",
+      "$.chapters[4].papers[2].sections[2].questions[1].question_text",
+      "$.chapters[4].papers[2].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[2].sections[2].questions[1].marks",
+      "$.chapters[4].papers[3].paper_id",
+      "$.chapters[4].papers[3].paper_title",
+      "$.chapters[4].papers[3].total_marks",
+      "$.chapters[4].papers[3].time_allowed_minutes",
+      "$.chapters[4].papers[3].sections",
+      "$.chapters[4].papers[3].sections[0].section_name",
+      "$.chapters[4].papers[3].sections[0].questions",
+      "$.chapters[4].papers[3].sections[0].questions[0].question_number",
+      "$.chapters[4].papers[3].sections[0].questions[0].question_text",
+      "$.chapters[4].papers[3].sections[0].questions[0].options",
+      "$.chapters[4].papers[3].sections[0].questions[0].correct_answer",
+      "$.chapters[4].papers[3].sections[0].questions[0].marks",
+      "$.chapters[4].papers[3].sections[0].questions[1].question_number",
+      "$.chapters[4].papers[3].sections[0].questions[1].question_text",
+      "$.chapters[4].papers[3].sections[0].questions[1].options",
+      "$.chapters[4].papers[3].sections[0].questions[1].correct_answer",
+      "$.chapters[4].papers[3].sections[0].questions[1].marks",
+      "$.chapters[4].papers[3].sections[1].section_name",
+      "$.chapters[4].papers[3].sections[1].questions",
+      "$.chapters[4].papers[3].sections[1].questions[0].question_number",
+      "$.chapters[4].papers[3].sections[1].questions[0].question_text",
+      "$.chapters[4].papers[3].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[3].sections[1].questions[0].marks",
+      "$.chapters[4].papers[3].sections[1].questions[1].question_number",
+      "$.chapters[4].papers[3].sections[1].questions[1].question_text",
+      "$.chapters[4].papers[3].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[3].sections[1].questions[1].marks",
+      "$.chapters[4].papers[3].sections[2].section_name",
+      "$.chapters[4].papers[3].sections[2].questions",
+      "$.chapters[4].papers[3].sections[2].questions[0].question_number",
+      "$.chapters[4].papers[3].sections[2].questions[0].question_text",
+      "$.chapters[4].papers[3].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[3].sections[2].questions[0].marks",
+      "$.chapters[4].papers[3].sections[2].questions[1].question_number",
+      "$.chapters[4].papers[3].sections[2].questions[1].question_text",
+      "$.chapters[4].papers[3].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[3].sections[2].questions[1].marks",
+      "$.chapters[4].papers[4].paper_id",
+      "$.chapters[4].papers[4].paper_title",
+      "$.chapters[4].papers[4].total_marks",
+      "$.chapters[4].papers[4].time_allowed_minutes",
+      "$.chapters[4].papers[4].sections",
+      "$.chapters[4].papers[4].sections[0].section_name",
+      "$.chapters[4].papers[4].sections[0].questions",
+      "$.chapters[4].papers[4].sections[0].questions[0].question_number",
+      "$.chapters[4].papers[4].sections[0].questions[0].question_text",
+      "$.chapters[4].papers[4].sections[0].questions[0].options",
+      "$.chapters[4].papers[4].sections[0].questions[0].correct_answer",
+      "$.chapters[4].papers[4].sections[0].questions[0].marks",
+      "$.chapters[4].papers[4].sections[0].questions[1].question_number",
+      "$.chapters[4].papers[4].sections[0].questions[1].question_text",
+      "$.chapters[4].papers[4].sections[0].questions[1].options",
+      "$.chapters[4].papers[4].sections[0].questions[1].correct_answer",
+      "$.chapters[4].papers[4].sections[0].questions[1].marks",
+      "$.chapters[4].papers[4].sections[1].section_name",
+      "$.chapters[4].papers[4].sections[1].questions",
+      "$.chapters[4].papers[4].sections[1].questions[0].question_number",
+      "$.chapters[4].papers[4].sections[1].questions[0].question_text",
+      "$.chapters[4].papers[4].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[4].sections[1].questions[0].marks",
+      "$.chapters[4].papers[4].sections[1].questions[1].question_number",
+      "$.chapters[4].papers[4].sections[1].questions[1].question_text",
+      "$.chapters[4].papers[4].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[4].sections[1].questions[1].marks",
+      "$.chapters[4].papers[4].sections[2].section_name",
+      "$.chapters[4].papers[4].sections[2].questions",
+      "$.chapters[4].papers[4].sections[2].questions[0].question_number",
+      "$.chapters[4].papers[4].sections[2].questions[0].question_text",
+      "$.chapters[4].papers[4].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[4].papers[4].sections[2].questions[0].marks",
+      "$.chapters[4].papers[4].sections[2].questions[1].question_number",
+      "$.chapters[4].papers[4].sections[2].questions[1].question_text",
+      "$.chapters[4].papers[4].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[4].papers[4].sections[2].questions[1].marks",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].papers",
+      "$.chapters[5].papers[0].paper_id",
+      "$.chapters[5].papers[0].paper_title",
+      "$.chapters[5].papers[0].total_marks",
+      "$.chapters[5].papers[0].time_allowed_minutes",
+      "$.chapters[5].papers[0].sections",
+      "$.chapters[5].papers[0].sections[0].section_name",
+      "$.chapters[5].papers[0].sections[0].questions",
+      "$.chapters[5].papers[0].sections[0].questions[0].question_number",
+      "$.chapters[5].papers[0].sections[0].questions[0].question_text",
+      "$.chapters[5].papers[0].sections[0].questions[0].options",
+      "$.chapters[5].papers[0].sections[0].questions[0].correct_answer",
+      "$.chapters[5].papers[0].sections[0].questions[0].marks",
+      "$.chapters[5].papers[0].sections[0].questions[1].question_number",
+      "$.chapters[5].papers[0].sections[0].questions[1].question_text",
+      "$.chapters[5].papers[0].sections[0].questions[1].options",
+      "$.chapters[5].papers[0].sections[0].questions[1].correct_answer",
+      "$.chapters[5].papers[0].sections[0].questions[1].marks",
+      "$.chapters[5].papers[0].sections[1].section_name",
+      "$.chapters[5].papers[0].sections[1].questions",
+      "$.chapters[5].papers[0].sections[1].questions[0].question_number",
+      "$.chapters[5].papers[0].sections[1].questions[0].question_text",
+      "$.chapters[5].papers[0].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[0].sections[1].questions[0].marks",
+      "$.chapters[5].papers[0].sections[1].questions[1].question_number",
+      "$.chapters[5].papers[0].sections[1].questions[1].question_text",
+      "$.chapters[5].papers[0].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[0].sections[1].questions[1].marks",
+      "$.chapters[5].papers[0].sections[2].section_name",
+      "$.chapters[5].papers[0].sections[2].questions",
+      "$.chapters[5].papers[0].sections[2].questions[0].question_number",
+      "$.chapters[5].papers[0].sections[2].questions[0].question_text",
+      "$.chapters[5].papers[0].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[0].sections[2].questions[0].marks",
+      "$.chapters[5].papers[0].sections[2].questions[1].question_number",
+      "$.chapters[5].papers[0].sections[2].questions[1].question_text",
+      "$.chapters[5].papers[0].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[0].sections[2].questions[1].marks",
+      "$.chapters[5].papers[1].paper_id",
+      "$.chapters[5].papers[1].paper_title",
+      "$.chapters[5].papers[1].total_marks",
+      "$.chapters[5].papers[1].time_allowed_minutes",
+      "$.chapters[5].papers[1].sections",
+      "$.chapters[5].papers[1].sections[0].section_name",
+      "$.chapters[5].papers[1].sections[0].questions",
+      "$.chapters[5].papers[1].sections[0].questions[0].question_number",
+      "$.chapters[5].papers[1].sections[0].questions[0].question_text",
+      "$.chapters[5].papers[1].sections[0].questions[0].options",
+      "$.chapters[5].papers[1].sections[0].questions[0].correct_answer",
+      "$.chapters[5].papers[1].sections[0].questions[0].marks",
+      "$.chapters[5].papers[1].sections[0].questions[1].question_number",
+      "$.chapters[5].papers[1].sections[0].questions[1].question_text",
+      "$.chapters[5].papers[1].sections[0].questions[1].options",
+      "$.chapters[5].papers[1].sections[0].questions[1].correct_answer",
+      "$.chapters[5].papers[1].sections[0].questions[1].marks",
+      "$.chapters[5].papers[1].sections[1].section_name",
+      "$.chapters[5].papers[1].sections[1].questions",
+      "$.chapters[5].papers[1].sections[1].questions[0].question_number",
+      "$.chapters[5].papers[1].sections[1].questions[0].question_text",
+      "$.chapters[5].papers[1].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[1].sections[1].questions[0].marks",
+      "$.chapters[5].papers[1].sections[1].questions[1].question_number",
+      "$.chapters[5].papers[1].sections[1].questions[1].question_text",
+      "$.chapters[5].papers[1].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[1].sections[1].questions[1].marks",
+      "$.chapters[5].papers[1].sections[2].section_name",
+      "$.chapters[5].papers[1].sections[2].questions",
+      "$.chapters[5].papers[1].sections[2].questions[0].question_number",
+      "$.chapters[5].papers[1].sections[2].questions[0].question_text",
+      "$.chapters[5].papers[1].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[1].sections[2].questions[0].marks",
+      "$.chapters[5].papers[1].sections[2].questions[1].question_number",
+      "$.chapters[5].papers[1].sections[2].questions[1].question_text",
+      "$.chapters[5].papers[1].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[1].sections[2].questions[1].marks",
+      "$.chapters[5].papers[2].paper_id",
+      "$.chapters[5].papers[2].paper_title",
+      "$.chapters[5].papers[2].total_marks",
+      "$.chapters[5].papers[2].time_allowed_minutes",
+      "$.chapters[5].papers[2].sections",
+      "$.chapters[5].papers[2].sections[0].section_name",
+      "$.chapters[5].papers[2].sections[0].questions",
+      "$.chapters[5].papers[2].sections[0].questions[0].question_number",
+      "$.chapters[5].papers[2].sections[0].questions[0].question_text",
+      "$.chapters[5].papers[2].sections[0].questions[0].options",
+      "$.chapters[5].papers[2].sections[0].questions[0].correct_answer",
+      "$.chapters[5].papers[2].sections[0].questions[0].marks",
+      "$.chapters[5].papers[2].sections[0].questions[1].question_number",
+      "$.chapters[5].papers[2].sections[0].questions[1].question_text",
+      "$.chapters[5].papers[2].sections[0].questions[1].options",
+      "$.chapters[5].papers[2].sections[0].questions[1].correct_answer",
+      "$.chapters[5].papers[2].sections[0].questions[1].marks",
+      "$.chapters[5].papers[2].sections[1].section_name",
+      "$.chapters[5].papers[2].sections[1].questions",
+      "$.chapters[5].papers[2].sections[1].questions[0].question_number",
+      "$.chapters[5].papers[2].sections[1].questions[0].question_text",
+      "$.chapters[5].papers[2].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[2].sections[1].questions[0].marks",
+      "$.chapters[5].papers[2].sections[1].questions[1].question_number",
+      "$.chapters[5].papers[2].sections[1].questions[1].question_text",
+      "$.chapters[5].papers[2].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[2].sections[1].questions[1].marks",
+      "$.chapters[5].papers[2].sections[2].section_name",
+      "$.chapters[5].papers[2].sections[2].questions",
+      "$.chapters[5].papers[2].sections[2].questions[0].question_number",
+      "$.chapters[5].papers[2].sections[2].questions[0].question_text",
+      "$.chapters[5].papers[2].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[2].sections[2].questions[0].marks",
+      "$.chapters[5].papers[2].sections[2].questions[1].question_number",
+      "$.chapters[5].papers[2].sections[2].questions[1].question_text",
+      "$.chapters[5].papers[2].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[2].sections[2].questions[1].marks",
+      "$.chapters[5].papers[3].paper_id",
+      "$.chapters[5].papers[3].paper_title",
+      "$.chapters[5].papers[3].total_marks",
+      "$.chapters[5].papers[3].time_allowed_minutes",
+      "$.chapters[5].papers[3].sections",
+      "$.chapters[5].papers[3].sections[0].section_name",
+      "$.chapters[5].papers[3].sections[0].questions",
+      "$.chapters[5].papers[3].sections[0].questions[0].question_number",
+      "$.chapters[5].papers[3].sections[0].questions[0].question_text",
+      "$.chapters[5].papers[3].sections[0].questions[0].options",
+      "$.chapters[5].papers[3].sections[0].questions[0].correct_answer",
+      "$.chapters[5].papers[3].sections[0].questions[0].marks",
+      "$.chapters[5].papers[3].sections[0].questions[1].question_number",
+      "$.chapters[5].papers[3].sections[0].questions[1].question_text",
+      "$.chapters[5].papers[3].sections[0].questions[1].options",
+      "$.chapters[5].papers[3].sections[0].questions[1].correct_answer",
+      "$.chapters[5].papers[3].sections[0].questions[1].marks",
+      "$.chapters[5].papers[3].sections[1].section_name",
+      "$.chapters[5].papers[3].sections[1].questions",
+      "$.chapters[5].papers[3].sections[1].questions[0].question_number",
+      "$.chapters[5].papers[3].sections[1].questions[0].question_text",
+      "$.chapters[5].papers[3].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[3].sections[1].questions[0].marks",
+      "$.chapters[5].papers[3].sections[1].questions[1].question_number",
+      "$.chapters[5].papers[3].sections[1].questions[1].question_text",
+      "$.chapters[5].papers[3].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[3].sections[1].questions[1].marks",
+      "$.chapters[5].papers[3].sections[2].section_name",
+      "$.chapters[5].papers[3].sections[2].questions",
+      "$.chapters[5].papers[3].sections[2].questions[0].question_number",
+      "$.chapters[5].papers[3].sections[2].questions[0].question_text",
+      "$.chapters[5].papers[3].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[3].sections[2].questions[0].marks",
+      "$.chapters[5].papers[3].sections[2].questions[1].question_number",
+      "$.chapters[5].papers[3].sections[2].questions[1].question_text",
+      "$.chapters[5].papers[3].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[3].sections[2].questions[1].marks",
+      "$.chapters[5].papers[4].paper_id",
+      "$.chapters[5].papers[4].paper_title",
+      "$.chapters[5].papers[4].total_marks",
+      "$.chapters[5].papers[4].time_allowed_minutes",
+      "$.chapters[5].papers[4].sections",
+      "$.chapters[5].papers[4].sections[0].section_name",
+      "$.chapters[5].papers[4].sections[0].questions",
+      "$.chapters[5].papers[4].sections[0].questions[0].question_number",
+      "$.chapters[5].papers[4].sections[0].questions[0].question_text",
+      "$.chapters[5].papers[4].sections[0].questions[0].options",
+      "$.chapters[5].papers[4].sections[0].questions[0].correct_answer",
+      "$.chapters[5].papers[4].sections[0].questions[0].marks",
+      "$.chapters[5].papers[4].sections[0].questions[1].question_number",
+      "$.chapters[5].papers[4].sections[0].questions[1].question_text",
+      "$.chapters[5].papers[4].sections[0].questions[1].options",
+      "$.chapters[5].papers[4].sections[0].questions[1].correct_answer",
+      "$.chapters[5].papers[4].sections[0].questions[1].marks",
+      "$.chapters[5].papers[4].sections[1].section_name",
+      "$.chapters[5].papers[4].sections[1].questions",
+      "$.chapters[5].papers[4].sections[1].questions[0].question_number",
+      "$.chapters[5].papers[4].sections[1].questions[0].question_text",
+      "$.chapters[5].papers[4].sections[1].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[4].sections[1].questions[0].marks",
+      "$.chapters[5].papers[4].sections[1].questions[1].question_number",
+      "$.chapters[5].papers[4].sections[1].questions[1].question_text",
+      "$.chapters[5].papers[4].sections[1].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[4].sections[1].questions[1].marks",
+      "$.chapters[5].papers[4].sections[2].section_name",
+      "$.chapters[5].papers[4].sections[2].questions",
+      "$.chapters[5].papers[4].sections[2].questions[0].question_number",
+      "$.chapters[5].papers[4].sections[2].questions[0].question_text",
+      "$.chapters[5].papers[4].sections[2].questions[0].marking_scheme_answer",
+      "$.chapters[5].papers[4].sections[2].questions[0].marks",
+      "$.chapters[5].papers[4].sections[2].questions[1].question_number",
+      "$.chapters[5].papers[4].sections[2].questions[1].question_text",
+      "$.chapters[5].papers[4].sections[2].questions[1].marking_scheme_answer",
+      "$.chapters[5].papers[4].sections[2].questions[1].marks"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Propositions and their Converses",
+        "source_number_field": "chapter_number",
+        "source_number": 9
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "How Quantities Combine: Understanding Data",
+        "source_number_field": "chapter_number",
+        "source_number": 10
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "The World of Algorithms",
+        "source_number_field": "chapter_number",
+        "source_number": 11
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Quadrilaterals",
+        "source_number_field": "chapter_number",
+        "source_number": 12
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Two Variables, One Line",
+        "source_number_field": "chapter_number",
+        "source_number": 13
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Math of Space: Surface Area and Volume",
+        "source_number_field": "chapter_number",
+        "source_number": 14
+      }
+    ],
+    "chapter_candidate_count": 6,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject_title": "Ganita Manjari - Class 9 Mathematics (Part II)",
+    "total_chapters": 6,
+    "ncert_paper_structure": {
+      "sections": [
+        {
+          "section_name": "Section A (MCQs & Objective)",
+          "question_type": "Multiple Choice Questions",
+          "marks_per_question": 1
+        },
+        {
+          "section_name": "Section B (Short Answer)",
+          "question_type": "Short Answer Questions",
+          "marks_per_question": 3
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Studies)",
+          "question_type": "Long Answer and Competency/Case-Based Questions",
+          "marks_per_question": 5
+        }
       ]
     },
-    {
-      "section_title": "Section B: Short Answer Questions (3 Marks Each)",
-      "questions": [
-        "Explain the main principles governing Maths II Chapter 1 with a worked example."
-      ]
-    }
-  ]
+    "chapters": [
+      {
+        "chapter_number": 9,
+        "chapter_title": "Propositions and their Converses",
+        "papers": [
+          {
+            "paper_id": 1,
+            "paper_title": "Set 1 - Chapter 9 Practice Paper (Logic & Implications)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Which of the following declarative sentences qualifies as a mathematical proposition?",
+                    "options": [
+                      "A) How many sides does a rhombus have?",
+                      "B) Every square is a rectangle.",
+                      "C) Please draw a right-angled triangle.",
+                      "D) x + 7 = 10"
+                    ],
+                    "correct_answer": "B) Every square is a rectangle.",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "What is the converse of the implication 'If a number is divisible by 6, then it is divisible by 3'?",
+                    "options": [
+                      "A) If a number is not divisible by 6, it is not divisible by 3.",
+                      "B) If a number is divisible by 3, then it is divisible by 6.",
+                      "C) If a number is divisible by 6, it is divisible by 2.",
+                      "D) A number is divisible by 6 if and only if it is divisible by 3."
+                    ],
+                    "correct_answer": "B) If a number is divisible by 3, then it is divisible by 6.",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Write the converse of: 'If a triangle is isosceles, then the angles opposite to the equal sides are equal.' State whether the converse is true.",
+                    "marking_scheme_answer": "Converse: 'If two angles of a triangle are equal, then the sides opposite to them are equal.' Truth value: True. (Converse of Isosceles Triangle Theorem).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Define a counterexample and provide a geometric counterexample to refute: 'If all four angles of a quadrilateral are 90 degrees, then it is a square.'",
+                    "marking_scheme_answer": "A counterexample is a specific case that disproves a universal claim. Counterexample: A rectangle with side lengths 4 cm and 6 cm has four 90-degree angles but is not a square because adjacent sides are unequal.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Explain the difference between a converse and a contrapositive statement for 'If P then Q'. Prove why a proposition and its contrapositive are logically equivalent, while a proposition and its converse are logically independent.",
+                    "marking_scheme_answer": "1. Converse swaps hypothesis and conclusion (If Q then P). Contrapositive negates and swaps both (If not Q then not P). 2. Equivalence: P -> Q and ~Q -> ~P share identical truth tables in all truth interpretations. 3. Independence: Truth of P -> Q does not guarantee truth of Q -> P (e.g. multiples of 6 vs 3).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Baudhāyana-Pythagoras Equivalence. A mason uses a 12-knot rope loop with knot spaces in ratio 3:4:5 to lay out a wall foundation corner. (a) State the Baudhāyana-Pythagoras Theorem and its converse. (b) Explain which of the two mathematical statements justifies the mason's method.",
+                    "marking_scheme_answer": "(a) Theorem: In a right triangle with hypotenuse c, a^2 + b^2 = c^2. Converse: If triangle sides satisfy a^2 + b^2 = c^2, the angle opposite side c is 90 degrees. (b) The mason uses the CONVERSE theorem because they know side lengths 3, 4, 5 satisfy 3^2 + 4^2 = 5^2, allowing them to conclude the corner angle is exactly 90 degrees.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 2,
+            "paper_title": "Set 2 - Chapter 9 Practice Paper (Disproofs & Counterexamples)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "How many counterexamples are required to disprove a universal mathematical assertion 'For all x, P(x)'?",
+                    "options": [
+                      "A) Zero",
+                      "B) Exactly one",
+                      "C) At least three",
+                      "D) Infinitely many"
+                    ],
+                    "correct_answer": "B) Exactly one",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Which mathematician disproved Fermat's conjecture that F_n = 2^(2^n) + 1 is always prime?",
+                    "options": [
+                      "A) Euclid",
+                      "B) Baudhāyana",
+                      "C) Leonhard Euler",
+                      "D) Carl Friedrich Gauss"
+                    ],
+                    "correct_answer": "C) Leonhard Euler",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Refute the following claim by constructing a clear counterexample: 'If two triangles have equal perimeters, then they must be congruent.'",
+                    "marking_scheme_answer": "Counterexample: Triangle A with sides (3 cm, 4 cm, 5 cm) has perimeter 12 cm. Triangle B with sides (4 cm, 4 cm, 4 cm) has perimeter 12 cm. Both have perimeter 12 cm, but Triangle A is right-angled while Triangle B is equilateral; hence they are not congruent.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Formulate the converse of: 'If two lines are parallel, then their alternate interior angles are equal.' Is the converse true?",
+                    "marking_scheme_answer": "Converse: 'If alternate interior angles formed by a transversal cutting two lines are equal, then the two lines are parallel.' Truth value: True (Converse of Alternate Interior Angles Theorem).",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Euler showed that F_5 = 2^(2^5) + 1 = 4,294,967,297 is composite (641 x 6,700,417). Explain how Euler discovered this counterexample and what it demonstrates about inductive reasoning in mathematics.",
+                    "marking_scheme_answer": "Fermat tested n=0,1,2,3,4 (yielding 3, 5, 17, 257, 65537 - all prime) and inductively claimed all F_n are prime. Euler checked n=5, found 641 divides F_5, providing a counterexample. This proves inductive pattern checking across limited samples cannot substitute for formal mathematical proof.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Diagonals Experiment. Students pin two equal-length thin sticks together at their midpoints and connect their endpoints to form a quadrilateral. (a) What quadrilateral is always formed? (b) What additional condition turns it into a square?",
+                    "marking_scheme_answer": "(a) A rectangle is always formed because equal diagonals bisecting each other guarantee a rectangle. (b) To form a square, the sticks must be pinned so they intersect at a 90-degree right angle (perpendicular bisecting diagonals).",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 3,
+            "paper_title": "Set 3 - Chapter 9 Practice Paper (Truth Trees & Bi-conditionals)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "When both a proposition 'If P then Q' and its converse 'If Q then P' are true, we write:",
+                    "options": [
+                      "A) P implies Q",
+                      "B) P if and only if Q (P <==> Q)",
+                      "C) P or Q",
+                      "D) P is not Q"
+                    ],
+                    "correct_answer": "B) P if and only if Q (P <==> Q)",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Which pair of statements represents a proposition and a true converse?",
+                    "options": [
+                      "A) Multiples of 4 -> Multiples of 2",
+                      "B) Rhombus -> Equal diagonals",
+                      "C) Perfect square -> Odd number of distinct factors",
+                      "D) Equilateral triangle -> Right angle"
+                    ],
+                    "correct_answer": "C) Perfect square -> Odd number of distinct factors",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Frame the converse of: 'If a number is prime and greater than 2, then it is odd.' Determine whether the converse is true.",
+                    "marking_scheme_answer": "Converse: 'If an odd number is greater than 2, then it is prime.' Truth value: False. Counterexample: 9, 15, or 21 are odd numbers greater than 2, but none are prime.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Explain why 'If a polygon is a regular hexagon, then its interior angles sum to 720 degrees' has a false converse.",
+                    "marking_scheme_answer": "Converse: 'If the interior angles of a polygon sum to 720 degrees, then it is a regular hexagon.' This is false because any irregular 6-gon also has an interior angle sum of 720 degrees without having equal sides or angles.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Construct a truth evaluation table for the following implications: (1) 'n is even -> n^2 is even', (2) 'n^2 is even -> n is even'. Deduce whether 'n is even' and 'n^2 is even' are logically equivalent.",
+                    "marking_scheme_answer": "1. If n = 2k, n^2 = 4k^2 = 2(2k^2) (Even) -> True. 2. If n^2 is even, n cannot be odd (since odd^2 = 2(2k^2+2k)+1 = odd) -> True. Since both implication and converse hold, 'n is even' <==> 'n^2 is even' (Logically Equivalent).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Steiner-Lehmus Theorem. (a) State the theorem regarding angle bisectors of a triangle. (b) Explain why proving equal angle bisectors implies an isosceles triangle was historically considered challenging compared to its converse.",
+                    "marking_scheme_answer": "(a) Steiner-Lehmus Theorem: If two angle bisectors of a triangle are equal in length, then the triangle is isosceles. (b) The original theorem ('Isosceles -> Equal bisectors') is easily proved by SAS triangle congruence. Its converse ('Equal bisectors -> Isosceles') requires non-trivial indirect proof or trigonometric inequalities because direct congruence steps cannot be applied backwards.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 4,
+            "paper_title": "Set 4 - Chapter 9 Practice Paper (Necessary vs Sufficient Conditions)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "In the conditional statement 'If P then Q', P is described as a _____ condition for Q.",
+                    "options": [
+                      "A) Necessary",
+                      "B) Sufficient",
+                      "C) Bi-conditional",
+                      "D) Equivalent"
+                    ],
+                    "correct_answer": "B) Sufficient",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "In the statement 'If P then Q', Q is described as a _____ condition for P.",
+                    "options": [
+                      "A) Necessary",
+                      "B) Sufficient",
+                      "C) Arbitrary",
+                      "D) Negative"
+                    ],
+                    "correct_answer": "A) Necessary",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Distinguish between 'necessary condition' and 'sufficient condition' using the example of a square and a rectangle.",
+                    "marking_scheme_answer": "Being a rectangle (all angles 90 deg) is a NECESSARY condition for a shape to be a square. Having equal adjacent sides in addition to 90 deg angles is a SUFFICIENT condition for a rectangle to be a square.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Frame the converse of: 'If a quadrilateral is a parallelogram, its opposite sides are equal.' Is it true?",
+                    "marking_scheme_answer": "Converse: 'If opposite sides of a quadrilateral are equal, then it is a parallelogram.' Truth value: True (Standard Parallelogram Converse Theorem).",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Prove that 'If two triangles are congruent, then their areas are equal' has a false converse. State a sufficient condition to make equal area triangles congruent.",
+                    "marking_scheme_answer": "Converse: 'If two triangles have equal areas, they are congruent.' False. Counterexample: Triangle A (base 4, height 3, area 6) and Triangle B (base 6, height 2, area 6) have equal areas but different side lengths. Sufficient condition: Equal areas AND two corresponding equal sides (or equal base and corresponding height with equal included angle).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Circle Geometry. (a) State the theorem connecting chords and distance from center. (b) Frame its converse and verify its validity.",
+                    "marking_scheme_answer": "(a) Theorem: Equal chords of a circle are equidistant from the center. (b) Converse: Chords equidistant from the center of a circle are equal in length. Truth value: True. Proof uses RHS congruence on triangles formed by perpendiculars from center to chord midpoints.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 5,
+            "paper_title": "Set 5 - Chapter 9 Practice Paper (Exhaustive Unit Test)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Which of the following is the contrapositive of 'If x = 2, then x^2 = 4'?",
+                    "options": [
+                      "A) If x^2 = 4, then x = 2",
+                      "B) If x != 2, then x^2 != 4",
+                      "C) If x^2 != 4, then x != 2",
+                      "D) If x = -2, then x^2 = 4"
+                    ],
+                    "correct_answer": "C) If x^2 != 4, then x != 2",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "A statement 'For all natural numbers n, n^2 + n + 41 is prime' is disproved by testing n = :",
+                    "options": [
+                      "A) 1",
+                      "B) 10",
+                      "C) 40",
+                      "D) 41"
+                    ],
+                    "correct_answer": "D) 41",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Verify why n = 41 acts as a counterexample for n^2 + n + 41 being prime.",
+                    "marking_scheme_answer": "For n = 41: 41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 x 43 = 1763, which is divisible by 41 and 43, hence composite.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Give a real-life non-mathematical implication and its converse to illustrate logical independence.",
+                    "marking_scheme_answer": "Implication: 'If it is raining, then the ground is wet' (True). Converse: 'If the ground is wet, then it is raining' (False - ground could be wet from a sprinkler or water hose).",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Prove by contrapositive: 'If 3n + 2 is an odd integer, then n is an odd integer.'",
+                    "marking_scheme_answer": "Contrapositive: 'If n is even, then 3n + 2 is even.' Proof: Let n = 2k (even). Then 3n + 2 = 3(2k) + 2 = 6k + 2 = 2(3k + 1), which is an even integer. Since contrapositive is true, the original statement is true.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Logical Analysis of Geometry Axioms. Evaluate: 'If two lines intersect, vertically opposite angles are equal.' (a) Write the converse. (b) Provide a counterexample showing why the converse fails when line pairs are not straight continuous lines.",
+                    "marking_scheme_answer": "(a) Converse: 'If two angles are equal and share a vertex, they are formed by two intersecting lines.' (b) Counterexample: Two 45-degree angles sharing a vertex inside a polygon or adjacent angles formed by three rays (not two continuous straight lines) can be equal without forming vertically opposite line pairs.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "How Quantities Combine: Understanding Data",
+        "papers": [
+          {
+            "paper_id": 1,
+            "paper_title": "Set 1 - Chapter 10 Practice Paper (Weighted Averages)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "What is the weighted arithmetic mean formula for groups x_i with weights w_i?",
+                    "options": [
+                      "A) sum(x_i)/n",
+                      "B) sum(w_i * x_i)/sum(w_i)",
+                      "C) sum(w_i + x_i)/n",
+                      "D) max(x_i) - min(x_i)"
+                    ],
+                    "correct_answer": "B) sum(w_i * x_i)/sum(w_i)",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Group A (30 students, avg 80%) & Group B (10 students, avg 60%). The combined weighted average is:",
+                    "options": [
+                      "A) 70%",
+                      "B) 72.5%",
+                      "C) 75%",
+                      "D) 77.5%"
+                    ],
+                    "correct_answer": "C) 75%",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Why does taking a simple unweighted average of two group means give an incorrect result when group sizes differ?",
+                    "marking_scheme_answer": "A simple average treats all groups as having equal weight. Larger groups contribute more total scores, so their average must carry proportionally higher weight.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "A student scores 80% in assignments (weight 30%), 70% in midterm (weight 20%), and 90% in finals (weight 50%). Calculate the weighted grade.",
+                    "marking_scheme_answer": "Weighted Score = (0.30*80) + (0.20*70) + (0.50*90) = 24 + 14 + 45 = 83%.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Alloy Blending Problem: 200 kg of 70% brass alloy (Batch A) is mixed with 120 kg of 50% brass alloy (Batch B) and y kg of 45% brass alloy (Batch C) to obtain a 55% brass mixture. Find y.",
+                    "marking_scheme_answer": "Mass conservation equation: 0.70(200) + 0.50(120) + 0.45(y) = 0.55(200 + 120 + y) => 140 + 60 + 0.45y = 0.55(320 + y) => 200 + 0.45y = 176 + 0.55y => 0.10y = 24 => y = 240 kg.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Stacked Bar Charts. Family A spends Rs 1940 housing, 1700 food, 1280 edu, 1770 health. Family B spends Rs 1750 housing, 1546 food, 1500 edu, 1210 health. (a) Calculate total expenditure for each family. (b) Convert Family A's expenses to percentages for a 100% stacked bar chart.",
+                    "marking_scheme_answer": "(a) Family A Total = 1940 + 1700 + 1280 + 1770 = Rs 6690. Family B Total = 1750 + 1546 + 1500 + 1210 = Rs 6006. (b) Family A Percentages: Housing = 1940/6690 = 29.0%, Food = 1700/6690 = 25.4%, Education = 1280/6690 = 19.1%, Health = 1770/6690 = 26.5%. Sum = 100%.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 2,
+            "paper_title": "Set 2 - Chapter 10 Practice Paper (Data Visualization & 100% Bar Charts)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "In a 100% stacked bar chart, all bars are drawn to an identical height representing:",
+                    "options": [
+                      "A) 50%",
+                      "B) 100%",
+                      "C) Absolute total value",
+                      "D) Maximum category value"
+                    ],
+                    "correct_answer": "B) 100%",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Which chart type is best for comparing category percentage proportions across groups of different total sizes?",
+                    "options": [
+                      "A) Cluster-column chart",
+                      "B) Line chart",
+                      "C) 100% stacked bar chart",
+                      "D) Histogram"
+                    ],
+                    "correct_answer": "C) 100% stacked bar chart",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Compare cluster-column charts and 100% stacked bar charts regarding their suitability for displaying expenditure data.",
+                    "marking_scheme_answer": "Cluster-column charts display absolute values side-by-side, making raw rupee comparisons easy. 100% stacked bar charts scale total height to 100%, isolating relative budget allocation percentages independent of total family income.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Two sections of Class 9 have 25 and 35 students. Their math mean scores are 72 and 84. Calculate the combined mean.",
+                    "marking_scheme_answer": "Combined Mean = (25*72 + 35*84) / (25 + 35) = (1800 + 2940) / 60 = 4740 / 60 = 79%.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "A motorist drives 100 km at 40 km/h and returns 100 km at 60 km/h. (a) Show why simple average speed (50 km/h) is wrong. (b) Calculate the correct average speed using weighted harmonic mean.",
+                    "marking_scheme_answer": "(a) Simple average fails because more time is spent driving at 40 km/h than at 60 km/h. (b) Time outward = 100/40 = 2.5 h. Time return = 100/60 = 1.667 h. Total time = 4.167 h. Total distance = 200 km. Average Speed = 200 / 4.167 = 48.0 km/h (Harmonic mean formula: 2/(1/40 + 1/60) = 48 km/h).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Simpson's Paradox. Company X has two divisions. Division 1: Men pass rate 80% (100 applicants), Women 85% (20 applicants). Division 2: Men pass rate 30% (20 applicants), Women 35% (100 applicants). (a) Calculate overall pass rates for men and women. (b) Explain why women have higher rates in both divisions but lower overall rate.",
+                    "marking_scheme_answer": "(a) Men passed = 0.80(100) + 0.30(20) = 80 + 6 = 86 out of 120 (71.7%). Women passed = 0.85(20) + 0.35(100) = 17 + 35 = 52 out of 120 (43.3%). (b) Simpson's paradox: Most women applied to Division 2 which had a much lower passing rate overall, heavily weighting their aggregate average downwards.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 3,
+            "paper_title": "Set 3 - Chapter 10 Practice Paper (Mixtures & Group Aggregations)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "If two groups of sizes N1 and N2 have equal mean values M1 = M2 = M, their combined weighted mean is:",
+                    "options": [
+                      "A) M/2",
+                      "B) M",
+                      "C) 2M",
+                      "D) M * (N1 + N2)"
+                    ],
+                    "correct_answer": "B) M",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Gold alloy of 18 karat (75% gold) is mixed with 24 karat (100% gold) in ratio 2:1 by mass. Final purity is:",
+                    "options": [
+                      "A) 80%",
+                      "B) 83.33%",
+                      "C) 87.5%",
+                      "D) 90%"
+                    ],
+                    "correct_answer": "B) 83.33%",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Show calculation for 2:1 mass mixture of 18 karat and 24 karat gold purity.",
+                    "marking_scheme_answer": "Purity = (2*75% + 1*100%) / (2 + 1) = (150 + 100) / 3 = 250 / 3 = 83.33% (or 20 Karat).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Three classes A (20 students, mean 60), B (30 students, mean 70), C (50 students, mean 80) take a test. Calculate combined mean.",
+                    "marking_scheme_answer": "Combined Mean = (20*60 + 30*70 + 50*80) / (20 + 30 + 50) = (1200 + 2100 + 4000) / 100 = 7300 / 100 = 73%.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Milk solution A (4 liters, 20% water) is mixed with solution B (6 liters, 30% water) and solution C (5 liters, pure water). Find the final percentage of water in the 15-liter mixture.",
+                    "marking_scheme_answer": "Water in A = 0.20 * 4 = 0.8 L. Water in B = 0.30 * 6 = 1.8 L. Water in C = 1.00 * 5 = 5.0 L. Total water = 0.8 + 1.8 + 5.0 = 7.6 L. Total volume = 15 L. Water % = (7.6 / 15) * 100 = 50.67%.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Daily Activity Budgeting. A worker logs daily hours: Sleep 8h, Work 8h, Recreation 4h, Chores 4h. (a) Is a 24-hour daily activity stacked bar chart visually identical to a 100% stacked bar chart? Explain. (b) Convert the hours to percentages.",
+                    "marking_scheme_answer": "(a) Yes, because the total sum for every individual is constant at 24 hours (100% of a day). Scaling to 100% preserves exact bar proportions. (b) Sleep = 8/24 = 33.33%, Work = 8/24 = 33.33%, Recreation = 4/24 = 16.67%, Chores = 4/24 = 16.67%. Sum = 100%.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 4,
+            "paper_title": "Set 4 - Chapter 10 Practice Paper (Advanced Data Synthesis)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Combining item quantities with different prices requires calculating a:",
+                    "options": [
+                      "A) Weighted price index",
+                      "B) Median price",
+                      "C) Mode price",
+                      "D) Simple average price"
+                    ],
+                    "correct_answer": "A) Weighted price index",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "In a dataset with 4 categories, if the 100% stacked bar chart segments are 25%, 35%, 15%, the 4th segment is:",
+                    "options": [
+                      "A) 20%",
+                      "B) 25%",
+                      "C) 30%",
+                      "D) 15%"
+                    ],
+                    "correct_answer": "B) 25%",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Calculate the missing 4th segment percentage and verify that total sum equals 100%.",
+                    "marking_scheme_answer": "100% - (25% + 35% + 15%) = 100% - 75% = 25%. Sum = 25 + 35 + 15 + 25 = 100%.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "A shop sells 50 units at Rs 100, 30 units at Rs 150, and 20 units at Rs 200. Calculate average revenue per unit sold.",
+                    "marking_scheme_answer": "Average Revenue = (50*100 + 30*150 + 20*200) / (50 + 30 + 20) = (5000 + 4500 + 4000) / 100 = 13500 / 100 = Rs 135.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "The overall mean score of 100 students is 75. The mean score of male students (count M) is 70, and female students (count F) is 80. Find the number of male and female students.",
+                    "marking_scheme_answer": "M + F = 100. Weighted mean equation: (70M + 80F) / 100 = 75 => 70M + 80F = 7500. Substitute M = 100 - F: 70(100 - F) + 80F = 7500 => 7000 + 10F = 7500 => 10F = 500 => F = 50, M = 50.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Industrial Wage Analysis. Factory A employs 200 workers at mean daily wage Rs 500. Factory B employs 300 workers at mean daily wage Rs 600. (a) Find combined mean wage. (b) If wages increase by 10% in Factory A and 20% in Factory B, find the new combined mean wage.",
+                    "marking_scheme_answer": "(a) Initial Mean = (200*500 + 300*600) / 500 = (100000 + 180000) / 500 = 280000 / 500 = Rs 560. (b) New Wage A = 550, New Wage B = 720. New Combined Mean = (200*550 + 300*720) / 500 = (110000 + 216000) / 500 = 326000 / 500 = Rs 652.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 5,
+            "paper_title": "Set 5 - Chapter 10 Practice Paper (Exhaustive Unit Test)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Which condition causes simple average of group means to equal the weighted average?",
+                    "options": [
+                      "A) Group means are zero",
+                      "B) All group sample sizes/weights are equal",
+                      "C) Group sizes are prime",
+                      "D) Never equal"
+                    ],
+                    "correct_answer": "B) All group sample sizes/weights are equal",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "In a 100% stacked bar chart, if a component slice doubles in rupee value while all other components also double, its slice percentage:",
+                    "options": [
+                      "A) Doubles",
+                      "B) Halves",
+                      "C) Remains unchanged",
+                      "D) Increases by 10%"
+                    ],
+                    "correct_answer": "C) Remains unchanged",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Explain why proportional scaling preserves slice percentages in a 100% stacked bar chart.",
+                    "marking_scheme_answer": "If all component values are multiplied by factor k, both component value and total sum increase by k. The ratio (k * component) / (k * total) cancels k, keeping percentage unchanged.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "A student scores 70 in Test 1 (weight 1), 80 in Test 2 (weight 2), and x in Test 3 (weight 3). If weighted mean is 85, find x.",
+                    "marking_scheme_answer": "(1*70 + 2*80 + 3*x) / (1 + 2 + 3) = 85 => (70 + 160 + 3x) / 6 = 85 => 230 + 3x = 510 => 3x = 280 => x = 93.33.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "A car travels 30 km at 30 km/h, 40 km at 40 km/h, and 50 km at 50 km/h. Calculate total time taken and average speed across the 120 km journey.",
+                    "marking_scheme_answer": "Time t1 = 30/30 = 1 h. t2 = 40/40 = 1 h. t3 = 50/50 = 1 h. Total time = 3 hours. Total distance = 120 km. Average Speed = 120 / 3 = 40 km/h.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Environmental Pollution Aggregation. Region 1 (area 100 sq km) has air pollutant concentration 40 ppm. Region 2 (area 300 sq km) has 80 ppm. Region 3 (area 100 sq km) has 100 ppm. (a) Calculate area-weighted mean pollution concentration. (b) Explain why simple average (73.33 ppm) misleads environmental policymakers.",
+                    "marking_scheme_answer": "(a) Weighted Mean = (100*40 + 300*80 + 100*100) / (100 + 300 + 100) = (4000 + 24000 + 10000) / 500 = 38000 / 500 = 76.0 ppm. (b) Simple average underestimates total exposure because the largest land area (Region 2, 300 sq km) has high pollution (80 ppm) and carries 60% of total geographic weight.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_number": 11,
+        "chapter_title": "The World of Algorithms",
+        "papers": [
+          {
+            "paper_id": 1,
+            "paper_title": "Set 1 - Chapter 11 Practice Paper (Algorithmic Logic & Modulo)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "What is the result of the modulo operation 33 mod 7?",
+                    "options": [
+                      "A) 4",
+                      "B) 5",
+                      "C) 2",
+                      "D) 1"
+                    ],
+                    "correct_answer": "B) 5",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "An algorithm must be finite, ordered, and:",
+                    "options": [
+                      "A) Ambiguous",
+                      "B) Infinite",
+                      "C) Unambiguous",
+                      "D) Random"
+                    ],
+                    "correct_answer": "C) Unambiguous",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Define an algorithm and state the historical origin of the word.",
+                    "marking_scheme_answer": "An algorithm is a finite, ordered, unambiguous step-by-step procedure for solving a problem. The word derives from 9th-century Persian mathematician Muhammad ibn Musa al-Khwarizmi.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Evaluate 145 mod 12 and 250 mod 15.",
+                    "marking_scheme_answer": "145 = 12*12 + 1 => 145 mod 12 = 1. 250 = 16*15 + 10 => 250 mod 15 = 10.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Compare Euclidean subtraction GCD algorithm with Āryabhaṭa's remainder division GCD algorithm. Explain why Āryabhaṭa's method is computationally faster using gcd(99, 2).",
+                    "marking_scheme_answer": "1. Subtraction uses gcd(m, n) = gcd(n, m - n); step complexity O(N). For gcd(99, 2), it takes 49 subtraction steps. 2. Āryabhaṭa uses remainder reduction gcd(m, n) = gcd(n, m mod n); step complexity O(log N). For gcd(99, 2), step 1: 99 mod 2 = 1; step 2: 2 mod 1 = 0 -> GCD = 1 (takes 2 steps).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Safe LCM Computation. (a) State the relationship between m, n, gcd(m, n), and lcm(m, n). (b) Explain why computing lcm(m, n) = (m // gcd(m, n)) * n avoids integer overflow in computer programming.",
+                    "marking_scheme_answer": "(a) m * n = gcd(m, n) * lcm(m, n). (b) Multiplying large integers m * n first can exceed standard 32-bit or 64-bit memory bounds (overflow). Dividing m by gcd(m, n) first reduces the integer size before multiplication, preventing numerical overflow while guaranteeing an exact integer result.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 2,
+            "paper_title": "Set 2 - Chapter 11 Practice Paper (GCD & Euclidean Subtraction)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Euclidean subtraction relies on which mathematical property?",
+                    "options": [
+                      "A) gcd(m, n) = m + n",
+                      "B) gcd(m, n) = gcd(n, m - n)",
+                      "C) gcd(m, n) = m * n",
+                      "D) gcd(m, n) = m / n"
+                    ],
+                    "correct_answer": "B) gcd(m, n) = gcd(n, m - n)",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "If d divides m and n, then d must also divide:",
+                    "options": [
+                      "A) m + n only",
+                      "B) m - n only",
+                      "C) Both m + n and m - n",
+                      "D) Neither"
+                    ],
+                    "correct_answer": "C) Both m + n and m - n",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Prove algebraic property: If d divides m and n, then d divides (m - n).",
+                    "marking_scheme_answer": "Let m = k1*d and n = k2*d for integers k1, k2. Then m - n = k1*d - k2*d = (k1 - k2)*d. Since (k1 - k2) is an integer, d divides (m - n).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Trace Euclidean subtraction for gcd(35, 10).",
+                    "marking_scheme_answer": "35 - 10 = 25 -> gcd(25, 10). 25 - 10 = 15 -> gcd(15, 10). 15 - 10 = 5 -> gcd(10, 5). 10 - 5 = 5 -> gcd(5, 5). Equal => GCD = 5. Total 4 subtraction steps.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Trace Āryabhaṭa's division algorithm for gcd(825, 375). Compare the number of steps with Euclidean subtraction.",
+                    "marking_scheme_answer": "Step 1: 825 mod 375 = 75 (825 = 2*375 + 75). Step 2: 375 mod 75 = 0 (375 = 5*75 + 0). Remainder 0 => GCD = 75. Takes 2 remainder steps vs 8 subtraction steps in Euclidean method.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Tile Floor Laying Algorithm. A mason wants to tile a room of dimensions 540 cm by 192 cm using the largest possible square tiles without cutting any tile. (a) What tile size should be chosen? (b) How many square tiles will be required?",
+                    "marking_scheme_answer": "(a) Tile size = gcd(540, 192). 540 mod 192 = 156 -> 192 mod 156 = 36 -> 156 mod 36 = 12 -> 36 mod 12 = 0. Tile size = 12 cm x 12 cm. (b) Tiles along length = 540 / 12 = 45. Tiles along width = 192 / 12 = 16. Total tiles = 45 x 16 = 720 tiles.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 3,
+            "paper_title": "Set 3 - Chapter 11 Practice Paper (Lamé's Theorem & Fibonacci Inputs)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Which pair of consecutive numbers represents the worst-case input for Euclidean GCD algorithm step count?",
+                    "options": [
+                      "A) Powers of 2",
+                      "B) Prime numbers",
+                      "C) Consecutive Fibonacci numbers",
+                      "D) Multiples of 10"
+                    ],
+                    "correct_answer": "C) Consecutive Fibonacci numbers",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "In remainder division gcd(m, n) = gcd(n, r), the remainder r satisfies:",
+                    "options": [
+                      "A) r >= n",
+                      "B) 0 <= r < n",
+                      "C) r = n",
+                      "D) r > m"
+                    ],
+                    "correct_answer": "B) 0 <= r < n",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Explain Lamé's Theorem regarding the worst-case step complexity of the Euclidean GCD algorithm.",
+                    "marking_scheme_answer": "Lamé's Theorem proves that the number of division steps in Euclidean GCD algorithm is at most 5 times the number of decimal digits of the smaller input. The worst-case occurs when inputs are consecutive Fibonacci numbers because every quotient is 1.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Compute gcd(89, 55) using Āryabhaṭa's division algorithm and count the division steps.",
+                    "marking_scheme_answer": "89 mod 55 = 34 (1) -> 55 mod 34 = 21 (2) -> 34 mod 21 = 13 (3) -> 21 mod 13 = 8 (4) -> 13 mod 8 = 5 (5) -> 8 mod 5 = 3 (6) -> 5 mod 3 = 2 (7) -> 3 mod 2 = 1 (8) -> 2 mod 1 = 0 (9). GCD = 1. Takes 9 steps.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "State Bezout's Identity. Find integers x and y satisfying Bezout's identity for a = 240 and b = 46 such that gcd(240, 46) = 240x + 46y.",
+                    "marking_scheme_answer": "Bezout Identity: For any non-zero integers a, b, gcd(a, b) can be expressed as linear combination xa + yb. Extended Euclid on (240, 46): 240 = 5*46 + 10 => 10 = 240 - 5*46. 46 = 4*10 + 6 => 6 = 46 - 4*10. 10 = 1*6 + 4 => 4 = 10 - 6. 6 = 1*4 + 2 => 2 = 6 - 4. Substituting back yields 2 = (-9)*240 + (47)*46. Thus x = -9, y = 47.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Cryptographic Key Generation. Public-key RSA encryption requires finding modular inverse e * d mod phi = 1. If phi = 120 and e = 7: (a) Verify gcd(120, 7) = 1. (b) Find integer d such that 7d mod 120 = 1.",
+                    "marking_scheme_answer": "(a) 120 mod 7 = 1 => 7 mod 1 = 0 -> gcd(120, 7) = 1. Coprime verified. (b) 120 = 17*7 + 1 => 1 = 120 - 17*7 => -17*7 = 1 mod 120. d = -17 mod 120 = 103. Verification: 7 * 103 = 721 = 6*120 + 1.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 4,
+            "paper_title": "Set 4 - Chapter 11 Practice Paper (Sequential Lists & Data Structures)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "In algorithm execution, intermediate results are typically organized using a sequence called a:",
+                    "options": [
+                      "A) Graph",
+                      "B) List",
+                      "C) Matrix",
+                      "D) Tree"
+                    ],
+                    "correct_answer": "B) List",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "What is the time complexity class of Āryabhaṭa's remainder division algorithm?",
+                    "options": [
+                      "A) O(1)",
+                      "B) O(N)",
+                      "C) O(log N)",
+                      "D) O(N^2)"
+                    ],
+                    "correct_answer": "C) O(log N)",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Describe the role of sequential lists in executing iterative algorithms.",
+                    "marking_scheme_answer": "Sequential lists store step-by-step state variables, intermediate values, and remainders during algorithm execution, allowing the program to reference prior state results.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Write pseudocode steps for finding the maximum number in a list of N numbers.",
+                    "marking_scheme_answer": "1. Set max_val = list[0]. 2. For each element item in list[1..N-1]: if item > max_val, set max_val = item. 3. Return max_val.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Design an algorithm to find all common factors of two positive integers m and n. Trace your algorithm for m = 36 and n = 48.",
+                    "marking_scheme_answer": "1. Compute g = gcd(m, n). 2. Find all factors of g from 1 to g. Trace for (36, 48): g = gcd(36, 48) = 12. Factors of 12: 1, 2, 3, 4, 6, 12. List of common factors = [1, 2, 3, 4, 6, 12].",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Traffic Light Synchronizer. Two traffic signals change color every 45 seconds and 60 seconds respectively. If they change simultaneously at 8:00 AM: (a) When will they next change together? (b) Explain how GCD/LCM algorithms solve this scheduling problem.",
+                    "marking_scheme_answer": "(a) Next simultaneous change occurs at LCM(45, 60). gcd(45, 60) = 15. LCM = (45 * 60) / 15 = 180 seconds = 3 minutes. Next simultaneous change at 8:03 AM. (b) LCM determines the smallest common cycle length where independent periodic events realign.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 5,
+            "paper_title": "Set 5 - Chapter 11 Practice Paper (Exhaustive Unit Test)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "If m mod n = 0, then gcd(m, n) equals:",
+                    "options": [
+                      "A) m",
+                      "B) n",
+                      "C) 0",
+                      "D) 1"
+                    ],
+                    "correct_answer": "B) n",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "In Āryabhaṭa's text Aryabhatiya (499 CE), remainder division algorithm is described for solving:",
+                    "options": [
+                      "A) Linear equations",
+                      "B) Kuttaka (Pulverizer / GCD)",
+                      "C) Quadratic roots",
+                      "D) Circle areas"
+                    ],
+                    "correct_answer": "B) Kuttaka (Pulverizer / GCD)",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Calculate gcd(1071, 462) using remainder division.",
+                    "marking_scheme_answer": "1071 mod 462 = 147 (1071 = 2*462 + 147) -> 462 mod 147 = 21 (462 = 3*147 + 21) -> 147 mod 21 = 0 (147 = 7*21 + 0). GCD = 21.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Using gcd(1071, 462) = 21, find lcm(1071, 462).",
+                    "marking_scheme_answer": "LCM = (1071 * 462) / 21 = 1071 * 22 = 23,562.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Prove by mathematical induction that for any integer k >= 1, gcd(k*m, k*n) = k * gcd(m, n).",
+                    "marking_scheme_answer": "Let d = gcd(m, n). Then m = d*a, n = d*b with gcd(a, b) = 1. Then k*m = (k*d)*a and k*n = (k*d)*b. Since gcd(a, b) = 1, the greatest common divisor of (k*d)*a and (k*d)*b is k*d. Thus gcd(k*m, k*n) = k * gcd(m, n).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: High-Frequency Trading Log Analysis. A system logs server A events every 1024 microseconds and server B events every 1536 microseconds. (a) Compute gcd(1536, 1024). (b) Find the sync interval (LCM) in milliseconds.",
+                    "marking_scheme_answer": "(a) 1536 mod 1024 = 512 -> 1024 mod 512 = 0. GCD = 512 microseconds. (b) LCM = (1536 * 1024) / 512 = 3072 microseconds = 3.072 milliseconds.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_number": 12,
+        "chapter_title": "Quadrilaterals",
+        "papers": [
+          {
+            "paper_id": 1,
+            "paper_title": "Set 1 - Chapter 12 Practice Paper (Midpoint Theorem & Centroid)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "The line segment joining midpoints of two sides of a triangle is parallel to 3rd side and:",
+                    "options": [
+                      "A) Equal to 3rd side",
+                      "B) Half its length",
+                      "C) Twice its length",
+                      "D) One third its length"
+                    ],
+                    "correct_answer": "B) Half its length",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "The centroid G of a triangle divides each median in a ratio of:",
+                    "options": [
+                      "A) 1:1",
+                      "B) 2:1",
+                      "C) 3:1",
+                      "D) 3:2"
+                    ],
+                    "correct_answer": "B) 2:1",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "State the Midpoint Theorem and its converse for triangles.",
+                    "marking_scheme_answer": "Theorem: Segment joining midpoints of two triangle sides is parallel to 3rd side and half its length. Converse: Line drawn through midpoint of one side parallel to another side bisects the third side.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "In triangle ABC, median AR = 9 cm. Calculate lengths AG and GR where G is the centroid.",
+                    "marking_scheme_answer": "AG : GR = 2 : 1. AG = (2/3) * 9 = 6 cm. GR = (1/3) * 9 = 3 cm.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "State and prove the Midpoint Theorem for triangle ABC with D, E as midpoints of AB, AC.",
+                    "marking_scheme_answer": "Statement: DE || BC and DE = 1/2 BC. Proof: Extend DE to F such that DE = EF. Join CF. In triangles ADE and CFE: AE = EC (given), angle AED = CEF (vertically opposite), DE = EF (construction) => ADE congruent to CFE (SAS). Thus AD = CF and angle ADE = CFE => AD || CF. Since AD = DB, DB = CF and DB || CF. DBCF is a parallelogram => DF || BC and DF = BC. Since DE = 1/2 DF, DE || BC and DE = 1/2 BC.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Varignon's Theorem. Midpoints P, Q, R, S of adjacent sides of arbitrary quadrilateral ABCD are connected. (a) Prove PQRS is a parallelogram. (b) If ABCD has equal diagonals (AC = BD), what shape is PQRS?",
+                    "marking_scheme_answer": "(a) Draw diagonal AC. In triangle ABC, PQ || AC and PQ = 1/2 AC (Midpoint Theorem). In triangle ADC, SR || AC and SR = 1/2 AC. Thus PQ || SR and PQ = SR. Opposite sides equal and parallel => PQRS is a parallelogram. (b) If AC = BD, PQ = 1/2 AC = 1/2 BD = PS. A parallelogram with equal adjacent sides is a RHOMBUS.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 2,
+            "paper_title": "Set 2 - Chapter 12 Practice Paper (Parallelogram Theorems)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Diagonals of a rhombus intersect each other at:",
+                    "options": [
+                      "A) 45 degrees",
+                      "B) 60 degrees",
+                      "C) 90 degrees",
+                      "D) 120 degrees"
+                    ],
+                    "correct_answer": "C) 90 degrees",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "A parallelogram with equal diagonals is a:",
+                    "options": [
+                      "A) Rhombus",
+                      "B) Rectangle",
+                      "C) Trapezium",
+                      "D) Kite"
+                    ],
+                    "correct_answer": "B) Rectangle",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "In parallelogram ABCD, DP = BQ on diagonal BD. Show triangle ADP is congruent to triangle CBQ.",
+                    "marking_scheme_answer": "In triangles ADP and CBQ: AD = BC (opposite sides of parallelogram), DP = BQ (given), angle ADP = CBQ (alternate interior angles since AD || BC) => triangle ADP congruent to CBQ by SAS.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Prove that diagonals of a rectangle are equal.",
+                    "marking_scheme_answer": "In rectangle ABCD, consider triangles ABC and BAD: AB = AB (common), BC = AD (opposite sides), angle ABC = BAD = 90 deg => triangle ABC congruent to BAD (SAS). Thus AC = BD.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Prove that a quadrilateral is a parallelogram if and only if its diagonals bisect each other.",
+                    "marking_scheme_answer": "Part 1: If ABCD is parallelogram, triangles AOB and COD are congruent (SAS), so AO = OC, BO = OD. Part 2: If AO = OC, BO = OD, triangles AOB and COD congruent (SAS) => AB = CD and angle OAB = OCD => AB || CD. Opposite sides equal and parallel => ABCD is a parallelogram.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Universal Plane Tessellation. (a) Explain why ANY arbitrary quadrilateral (convex or non-convex) can tile a 2D plane without gaps. (b) How many tiles meet at each grid vertex?",
+                    "marking_scheme_answer": "(a) Sum of interior angles of any 4-gon is 360 degrees. Rotating four identical quadrilateral tiles around side midpoints allows their four distinct interior angles (A, B, C, D) to meet at a single shared vertex. Since A + B + C + D = 360 deg, they fill the full circular vertex angle perfectly without gaps. (b) Exactly 4 tiles meet at each vertex.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 3,
+            "paper_title": "Set 3 - Chapter 12 Practice Paper (Varignon Mapping & Invariants)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Midpoints of sides of a RHOMBUS connected in order form a:",
+                    "options": [
+                      "A) Rhombus",
+                      "B) Rectangle",
+                      "C) Square",
+                      "D) Trapezium"
+                    ],
+                    "correct_answer": "B) Rectangle",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Midpoints of sides of a RECTANGLE connected in order form a:",
+                    "options": [
+                      "A) Rectangle",
+                      "B) Rhombus",
+                      "C) Parallelogram",
+                      "D) Square"
+                    ],
+                    "correct_answer": "B) Rhombus",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Explain why joining midpoints of a rhombus forms a rectangle.",
+                    "marking_scheme_answer": "Diagonals AC and BD of a rhombus are perpendicular (AC perpendicular BD). Varignon sides PQ and QR are parallel to AC and BD respectively. Therefore, adjacent sides PQ and QR meet at 90 degrees, forming a RECTANGLE.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Explain why joining midpoints of a rectangle forms a rhombus.",
+                    "marking_scheme_answer": "Diagonals AC and BD of a rectangle are equal (AC = BD). Varignon sides PQ = SR = 1/2 AC and PS = QR = 1/2 BD. Since AC = BD, all four sides PQ = QR = RS = SP are equal, forming a RHOMBUS.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "State Ptolemy's Theorem for cyclic quadrilaterals. Calculate diagonal product AC * BD for cyclic quadrilateral ABCD with AB = 3 cm, BC = 4 cm, CD = 5 cm, AD = 6 cm.",
+                    "marking_scheme_answer": "Ptolemy's Theorem: In a cyclic quadrilateral, AC * BD = AB * CD + AD * BC. Substituting values: AC * BD = (3 * 5) + (6 * 4) = 15 + 24 = 39 cm^2.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Architectural Truss Design. A triangular roof truss ABC has DE joining midpoints AB and AC. P, Q are midpoints of BD and CE. If BC = 24 m: (a) Find length DE. (b) Find length PQ.",
+                    "marking_scheme_answer": "(a) DE = 1/2 BC = 12 m (Midpoint Theorem). (b) Trapezium BCED has P, Q as midpoints of non-parallel sides BD, CE. Length PQ = 1/2 (DE + BC) = 1/2 (12 + 24) = 18 m.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 4,
+            "paper_title": "Set 4 - Chapter 12 Practice Paper (Special Quadrilaterals & Proofs)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Diagonals of a square are:",
+                    "options": [
+                      "A) Equal and bisect at 90 deg",
+                      "B) Unequal and bisect at 90 deg",
+                      "C) Equal but do not bisect",
+                      "D) Parallel"
+                    ],
+                    "correct_answer": "A) Equal and bisect at 90 deg",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "In triangle ABC, D and E are midpoints of AB and AC. Area of triangle ADE is what fraction of area ABC?",
+                    "options": [
+                      "A) 1/2",
+                      "B) 1/3",
+                      "C) 1/4",
+                      "D) 1/8"
+                    ],
+                    "correct_answer": "C) 1/4",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Prove why area of triangle ADE is 1/4th of area of triangle ABC when D, E are side midpoints.",
+                    "marking_scheme_answer": "Triangle ADE is similar to ABC with side ratio 1:2. Area ratio of similar triangles equals side ratio squared = (1/2)^2 = 1/4. Thus Area(ADE) = 1/4 Area(ABC).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "In quadrilateral ABCD, angles are in ratio 3:5:9:13. Find all four angles.",
+                    "marking_scheme_answer": "3x + 5x + 9x + 13x = 360 deg => 30x = 360 => x = 12. Angles: 36 deg, 60 deg, 108 deg, 156 deg.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Show that the bisectors of interior angles of a parallelogram form a rectangle.",
+                    "marking_scheme_answer": "Let ABCD be a parallelogram. Adjacent interior angles sum to 180 deg (A + B = 180). Bisectors of A and B form a triangle with acute angle sum = 1/2 A + 1/2 B = 90 deg. Third angle of intersection = 180 - 90 = 90 deg. Similarly all four intersection angles of bisectors are 90 deg, forming a RECTANGLE.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Pantograph Drafting Tool. A mechanical pantograph uses hinged rods forming parallelogram ABCD with extended arm sides. (a) State the geometric principle keeping output marker aligned with input tracer. (b) If side ratio is 1:3, calculate magnification factor.",
+                    "marking_scheme_answer": "(a) Pantograph relies on parallelogram linkage angle preservation and similarity of triangles formed by fixed pivot, tracer, and drawing pen. (b) Magnification factor equals scale ratio of extended arm to tracer arm = 3:1 = 3x magnification.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 5,
+            "paper_title": "Set 5 - Chapter 12 Practice Paper (Exhaustive Unit Test)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Area of Varignon parallelogram PQRS is what fraction of area of outer quadrilateral ABCD?",
+                    "options": [
+                      "A) 1/4",
+                      "B) 1/3",
+                      "C) 1/2",
+                      "D) 2/3"
+                    ],
+                    "correct_answer": "C) 1/2",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "A quadrilateral with perpendicular bisecting diagonals of unequal length is a:",
+                    "options": [
+                      "A) Square",
+                      "B) Rhombus",
+                      "C) Rectangle",
+                      "D) Parallelogram"
+                    ],
+                    "correct_answer": "B) Rhombus",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Prove that area of Varignon parallelogram PQRS is half the area of outer quadrilateral ABCD.",
+                    "marking_scheme_answer": "Area(APQ) = 1/4 Area(ABD), Area(CQR) = 1/4 Area(CBD). Sum of corner triangles = 1/4 Area(ABCD) + 1/4 Area(ABCD) = 1/2 Area(ABCD). Subtracting corner triangles from ABCD leaves Area(PQRS) = 1/2 Area(ABCD).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "In right triangle ABC angled at B, M is midpoint of AC. Prove BM = 1/2 AC.",
+                    "marking_scheme_answer": "Complete rectangle ABCD. Diagonals AC and BD of rectangle are equal and bisect at M. BM = 1/2 BD = 1/2 AC.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Prove that line segments joining midpoints of opposite sides of any quadrilateral bisect each other.",
+                    "marking_scheme_answer": "Let midpoints of ABCD be P, Q, R, S. By Varignon's Theorem, PQRS is a parallelogram. Line segments joining opposite midpoints PR and QS are diagonals of parallelogram PQRS. Since diagonals of a parallelogram bisect each other, PR and QS bisect each other.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Structural Centroid of Triangular Plate. A uniform triangular sheet ABC has medians AD, BE, CF intersecting at G. (a) Show G is center of mass. (b) If coordinates are A(0,0), B(6,0), C(3,9), find centroid coordinates G(x, y).",
+                    "marking_scheme_answer": "(a) Medians divide triangle into 6 sub-triangles of equal area, balancing mass evenly around G. (b) Centroid formula: G = ((x1+x2+x3)/3, (y1+y2+y3)/3) = ((0+6+3)/3, (0+0+9)/3) = (9/3, 9/3) = (3, 3).",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_number": 13,
+        "chapter_title": "Two Variables, One Line",
+        "papers": [
+          {
+            "paper_id": 1,
+            "paper_title": "Set 1 - Chapter 13 Practice Paper (Linear Equations & Intercepts)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Where does the line 2x + 3y = 12 intersect the X-axis?",
+                    "options": [
+                      "A) (0, 4)",
+                      "B) (6, 0)",
+                      "C) (0, 6)",
+                      "D) (4, 0)"
+                    ],
+                    "correct_answer": "B) (6, 0)",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "How many ordered pair solution sets (x, y) satisfy the linear equation 3x - 2y = 7?",
+                    "options": [
+                      "A) Exactly one",
+                      "B) Two",
+                      "C) Infinitely many",
+                      "D) Zero"
+                    ],
+                    "correct_answer": "C) Infinitely many",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Find x-intercept and y-intercept for line 4x - 5y = 20.",
+                    "marking_scheme_answer": "X-intercept (y=0): 4x = 20 => x = 5 -> (5, 0). Y-intercept (x=0): -5y = 20 => y = -4 -> (0, -4).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Write 2x = 3y - 5 in standard form ax + by + c = 0 and identify coefficients a, b, c.",
+                    "marking_scheme_answer": "Standard form: 2x - 3y + 5 = 0. Coefficients: a = 2, b = -3, c = 5.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Graph 2x + y = 6 and x - y = 0 on a Cartesian plane. Find the intersection point and verify algebraically.",
+                    "marking_scheme_answer": "Line 1 intercepts: (0, 6), (3, 0). Line 2 points: (0, 0), (2, 2). Intersection graph point: (2, 2). Algebraic verification: Substitute y = x into 2x + x = 6 => 3x = 6 => x = 2, y = 2.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Taxi Fare Model. Fixed charge x plus rate y per km. 10 km trip costs Rs 105; 15 km trip costs Rs 155. (a) Formulate linear system. (b) Find x and y. (c) Calculate cost for 25 km trip.",
+                    "marking_scheme_answer": "(a) System: x + 10y = 105 and x + 15y = 155. (b) Subtracting: 5y = 50 => y = Rs 10/km. Substitute: x + 100 = 105 => x = Rs 5 fixed charge. (c) Fare for 25 km = 5 + 25(10) = Rs 255.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 2,
+            "paper_title": "Set 2 - Chapter 13 Practice Paper (Slope & Line Classification)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Two non-vertical lines are perpendicular if and only if the product of their slopes m1 * m2 equals:",
+                    "options": [
+                      "A) 1",
+                      "B) 0",
+                      "C) -1",
+                      "D) 2"
+                    ],
+                    "correct_answer": "C) -1",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "What is the slope of horizontal line y = 5?",
+                    "options": [
+                      "A) 0",
+                      "B) 5",
+                      "C) Undefined",
+                      "D) -5"
+                    ],
+                    "correct_answer": "A) 0",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Find slope and y-intercept of line 3x + 4y - 12 = 0 by converting to y = mx + d form.",
+                    "marking_scheme_answer": "4y = -3x + 12 => y = (-3/4)x + 3. Slope m = -3/4, Y-intercept d = 3.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Determine k for UNIQUE solution: kx + 2y = 5 and 3x + y = 1.",
+                    "marking_scheme_answer": "a1/a2 != b1/b2 => k/3 != 2/1 => k != 6. Unique solution for all real k except 6.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Classify linear systems (unique, no solution, infinite solutions) using coefficient ratios for: (1) 2x + 3y = 9 & 4x + 6y = 18, (2) x + 2y = 4 & 2x + 4y = 12.",
+                    "marking_scheme_answer": "1. a1/a2 = 2/4 = 1/2, b1/b2 = 3/6 = 1/2, c1/c2 = 9/18 = 1/2. Coincident lines -> INFINITELY MANY solutions. 2. a1/a2 = 1/2, b1/b2 = 2/4 = 1/2, c1/c2 = 4/12 = 1/3. a1/a2 = b1/b2 != c1/c2. Parallel lines -> NO solution (Inconsistent).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Temperature Conversion Line. F = (9/5)C + 32. (a) Find F when C = 30 deg. (b) Find C when F = 95 deg. (c) Find temperature where F and C values are numerically equal.",
+                    "marking_scheme_answer": "(a) F = (9/5)*30 + 32 = 54 + 32 = 86 deg F. (b) 95 = (9/5)C + 32 => 63 = (9/5)C => C = 35 deg C. (c) Set F = C: x = (9/5)x + 32 => -(4/5)x = 32 => x = -40. Numerical equality at -40 deg.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 3,
+            "paper_title": "Set 3 - Chapter 13 Practice Paper (Point-Line Distance & Systems)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Perpendicular distance from origin (0, 0) to line 3x + 4y - 10 = 0 is:",
+                    "options": [
+                      "A) 1 unit",
+                      "B) 2 units",
+                      "C) 5 units",
+                      "D) 10 units"
+                    ],
+                    "correct_answer": "B) 2 units",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Slope of vertical line x = 4 is:",
+                    "options": [
+                      "A) 0",
+                      "B) 4",
+                      "C) Undefined",
+                      "D) -4"
+                    ],
+                    "correct_answer": "C) Undefined",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Calculate perpendicular distance from (0,0) to 3x + 4y - 10 = 0 using distance formula.",
+                    "marking_scheme_answer": "d = |a*x0 + b*y0 + c| / sqrt(a^2 + b^2) = |3(0) + 4(0) - 10| / sqrt(3^2 + 4^2) = |-10| / 5 = 2.0 units.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Find k for infinite solutions: 2x + 3y = 7 and 6x + ky = 21.",
+                    "marking_scheme_answer": "a1/a2 = b1/b2 = c1/c2 => 2/6 = 3/k = 7/21 => 1/3 = 3/k => k = 9.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Solve algebraic elimination system: 2x + 3y = 9 and 3x + 4y = 13.",
+                    "marking_scheme_answer": "Multiply Eq 1 by 3: 6x + 9y = 27. Multiply Eq 2 by 2: 6x + 8y = 26. Subtract: y = 1. Substitute y = 1 into Eq 1: 2x + 3(1) = 9 => 2x = 6 => x = 3. Solution (3, 1).",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Supply and Demand Intersection. Demand: p = -2q + 20. Supply: p = 3q + 5 (where p is price, q is quantity). (a) Find equilibrium quantity q and price p. (b) Explain economic meaning of graph intersection point.",
+                    "marking_scheme_answer": "(a) Set equal: -2q + 20 = 3q + 5 => 5q = 15 => q = 3 units. Price p = 3(3) + 5 = $14. (b) Graph intersection point (3, 14) is market equilibrium where buyers' demand quantity equals sellers' supply quantity.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 4,
+            "paper_title": "Set 4 - Chapter 13 Practice Paper (Applied Linear Formulations)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "If (2, -1) lies on line 2x + ky = 8, then k equals:",
+                    "options": [
+                      "A) 4",
+                      "B) -4",
+                      "C) 2",
+                      "D) -2"
+                    ],
+                    "correct_answer": "B) -4",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Area of triangle formed by line x + y = 6 with coordinate axes is:",
+                    "options": [
+                      "A) 6",
+                      "B) 12",
+                      "C) 18",
+                      "D) 36"
+                    ],
+                    "correct_answer": "C) 18",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Substitute (2, -1) into 2x + ky = 8 to solve for k.",
+                    "marking_scheme_answer": "2(2) + k(-1) = 8 => 4 - k = 8 => -k = 4 => k = -4.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Calculate area of right triangle formed by line x + y = 6 with axes.",
+                    "marking_scheme_answer": "X-intercept (6, 0), Y-intercept (0, 6). Base = 6, Height = 6. Area = 1/2 * base * height = 1/2 * 6 * 6 = 18 sq units.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "A two-digit number is 4 times the sum of its digits. If 18 is added to the number, the digits reverse. Formulate linear system and find the number.",
+                    "marking_scheme_answer": "Let tens digit be x, units digit y. Number = 10x + y. Eq 1: 10x + y = 4(x + y) => 6x - 3y = 0 => 2x - y = 0. Reversed number = 10y + x. Eq 2: 10x + y + 18 = 10y + x => 9x - 9y = -18 => x - y = -2. Subtracting: x = 2. Then y = 4. Number is 24.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Boat Stream Speed System. A boat travels 30 km upstream and 44 km downstream in 10 hours. It travels 40 km upstream and 55 km downstream in 13 hours. (a) Let u = 1/(x-y) and v = 1/(x+y). Formulate linear system. (b) Find boat speed x in still water and stream speed y.",
+                    "marking_scheme_answer": "(a) System: 30u + 44v = 10 and 40u + 55v = 13. (b) Solving yields u = 1/5 and v = 1/11. Thus x - y = 5 (upstream speed) and x + y = 11 (downstream speed). Adding: 2x = 16 => x = 8 km/h (boat speed). y = 3 km/h (stream speed).",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 5,
+            "paper_title": "Set 5 - Chapter 13 Practice Paper (Exhaustive Unit Test)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Equation of line parallel to X-axis passing through (3, -4) is:",
+                    "options": [
+                      "A) x = 3",
+                      "B) y = -4",
+                      "C) x = -4",
+                      "D) y = 3"
+                    ],
+                    "correct_answer": "B) y = -4",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Distance between parallel lines 2x + 3y = 6 and 2x + 3y = 19 is:",
+                    "options": [
+                      "A) 13 / sqrt(13)",
+                      "B) 13 / sqrt(5)",
+                      "C) 13",
+                      "D) 6"
+                    ],
+                    "correct_answer": "A) 13 / sqrt(13)",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Find parallel line distance formula step-by-step for 2x + 3y = 6 and 2x + 3y = 19.",
+                    "marking_scheme_answer": "Distance d = |c2 - c1| / sqrt(a^2 + b^2) = |19 - 6| / sqrt(2^2 + 3^2) = 13 / sqrt(13) = sqrt(13) units.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "If line pass through (1, 2) and (3, 8), calculate slope m and equation in y = mx + d form.",
+                    "marking_scheme_answer": "Slope m = (8 - 2) / (3 - 1) = 6 / 2 = 3. Equation: y - 2 = 3(x - 1) => y = 3x - 1.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Find coordinates of vertices of triangle formed by lines 2x - y = 4, x + y = 2, and Y-axis. Calculate triangle area.",
+                    "marking_scheme_answer": "Line 1 on Y-axis (x=0): (0, -4). Line 2 on Y-axis (x=0): (0, 2). Intersection of Line 1 and 2: Add equations => 3x = 6 => x = 2, y = 0 -> (2, 0). Base along Y-axis = 2 - (-4) = 6 units. Height = x-coordinate of intersection = 2 units. Area = 1/2 * 6 * 2 = 6 sq units.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Production Cost Line. Fixed overhead $500 plus variable cost $15 per unit. (a) Write linear cost equation C(x). (b) If selling price is $25 per unit, write revenue equation R(x). (c) Calculate break-even unit count.",
+                    "marking_scheme_answer": "(a) Cost C(x) = 15x + 500. (b) Revenue R(x) = 25x. (c) Break-even where R(x) = C(x) => 25x = 15x + 500 => 10x = 500 => x = 50 units.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_number": 14,
+        "chapter_title": "Math of Space: Surface Area and Volume",
+        "papers": [
+          {
+            "paper_id": 1,
+            "paper_title": "Set 1 - Chapter 14 Practice Paper (Cone & Sphere Mensuration)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "What is the Total Surface Area (TSA) of a solid hemisphere of radius r?",
+                    "options": [
+                      "A) 2*pi*r^2",
+                      "B) 3*pi*r^2",
+                      "C) 4*pi*r^2",
+                      "D) (2/3)*pi*r^3"
+                    ],
+                    "correct_answer": "B) 3*pi*r^2",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Archimedes proved that cone, sphere, cylinder with base radius r and height h = 2r have volumes in ratio:",
+                    "options": [
+                      "A) 1:2:3",
+                      "B) 1:3:4",
+                      "C) 2:3:4",
+                      "D) 1:1:1"
+                    ],
+                    "correct_answer": "A) 1:2:3",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Find Curved Surface Area (CSA) and volume of cone with base radius r = 7 cm and height h = 24 cm.",
+                    "marking_scheme_answer": "Slant height l = sqrt(7^2 + 24^2) = sqrt(49 + 576) = 25 cm. CSA = pi*r*l = (22/7)*7*25 = 550 cm^2. Volume = (1/3)*pi*r^2*h = (1/3)*(22/7)*49*24 = 1232 cm^3.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Calculate surface area of sphere with radius 21 cm.",
+                    "marking_scheme_answer": "Surface Area = 4*pi*r^2 = 4*(22/7)*21*21 = 4*22*3*21 = 5544 cm^2.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Solid Recasting: A solid metallic sphere of radius 10.5 cm is melted and recast into smaller cones of radius 3.5 cm and height 3 cm. Calculate the number of small cones formed.",
+                    "marking_scheme_answer": "Volume sphere = (4/3)*pi*R^3 = (4/3)*(22/7)*(10.5)^3 = 4851 cm^3. Volume 1 cone = (1/3)*pi*r^2*h = (1/3)*(22/7)*(3.5)^2 * 3 = 38.5 cm^3. Number of cones N = Volume sphere / Volume cone = 4851 / 38.5 = 126 cones.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Cylinder-Cone Combination Tent. A circus tent is cylindrical up to height 3 m and conical above it. Base radius is 14 m, total height is 13.5 m. (a) Calculate slant height of conical top. (b) Find total canvas area required.",
+                    "marking_scheme_answer": "(a) Height of cone h_cone = 13.5 - 3 = 10.5 m. Slant height l = sqrt(14^2 + 10.5^2) = sqrt(196 + 110.25) = sqrt(306.25) = 17.5 m. (b) Canvas Area = CSA cylinder + CSA cone = 2*pi*r*h_cyl + pi*r*l = 2*(22/7)*14*3 + (22/7)*14*17.5 = 264 + 770 = 1034 m^2.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 2,
+            "paper_title": "Set 2 - Chapter 14 Practice Paper (Square-Cube Scaling & Frustums)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "If radius of a sphere is increased by 10%, its volume increases by:",
+                    "options": [
+                      "A) 10%",
+                      "B) 21%",
+                      "C) 33.1%",
+                      "D) 44%"
+                    ],
+                    "correct_answer": "C) 33.1%",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Formula for volume of frustum of a cone with radii R, r and height h is:",
+                    "options": [
+                      "A) 1/3*pi*h*(R^2 + r^2)",
+                      "B) 1/3*pi*h*(R^2 + r^2 + R*r)",
+                      "C) pi*h*(R + r)",
+                      "D) 4/3*pi*h*R*r"
+                    ],
+                    "correct_answer": "B) 1/3*pi*h*(R^2 + r^2 + R*r)",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Explain why increasing linear dimensions by 10% (scale 1.10) increases surface area by 21% and volume by 33.1%.",
+                    "marking_scheme_answer": "By Square-Cube Law: Area scales with k^2 = (1.10)^2 = 1.21 (21% increase). Volume scales with k^3 = (1.10)^3 = 1.331 (33.1% increase).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Calculate volume of frustum of a cone with radii R = 6 cm, r = 3 cm, height h = 4 cm.",
+                    "marking_scheme_answer": "V = (1/3)*pi*h*(R^2 + r^2 + R*r) = (1/3)*(22/7)*4*(36 + 9 + 18) = (1/3)*(22/7)*4*63 = (22/7)*4*21 = 264 cm^3.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "A hemispherical bowl of internal radius 9 cm is full of liquid. The liquid is emptied into cylindrical bottles of diameter 3 cm and height 4 cm. How many bottles are filled?",
+                    "marking_scheme_answer": "Volume hemisphere = (2/3)*pi*R^3 = (2/3)*pi*9^3 = 486*pi cm^3. Bottle radius r = 1.5 cm. Volume 1 bottle = pi*r^2*h = pi*(1.5)^2 * 4 = 9*pi cm^3. Number of bottles = 486*pi / 9*pi = 54 bottles.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Fermi Estimation of Ocean Depth. Earth's total water volume is 1.38 billion km^3 (1.38 * 10^9 km^3). Earth radius R = 6371 km. (a) Compute Earth's surface area. (b) Estimate uniform depth of global water layer in kilometers.",
+                    "marking_scheme_answer": "(a) Surface Area A = 4*pi*R^2 = 4*(22/7)*(6371)^2 = 5.10 * 10^8 km^2. (b) Depth t = Volume / Surface Area = (1.38 * 10^9 km^3) / (5.10 * 10^8 km^2) = 2.705 km ~ 2.71 km (2710 meters).",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 3,
+            "paper_title": "Set 3 - Chapter 14 Practice Paper (Fluid Flow & Pipe Rates)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Volume of water discharged per second through a pipe of radius r with flow velocity v is:",
+                    "options": [
+                      "A) pi*r*v",
+                      "B) pi*r^2*v",
+                      "C) 2*pi*r*v",
+                      "D) pi*r^2/v"
+                    ],
+                    "correct_answer": "B) pi*r^2*v",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "1 cubic meter (1 m^3) is equal to how many liters?",
+                    "options": [
+                      "A) 100 L",
+                      "B) 1000 L",
+                      "C) 10000 L",
+                      "D) 10 L"
+                    ],
+                    "correct_answer": "B) 1000 L",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Water flows at 3 m/s through a pipe of radius 2 cm. Calculate volume discharged in 1 minute in liters.",
+                    "marking_scheme_answer": "Radius r = 0.02 m. Velocity v = 3 m/s. Time t = 60 s. Volume = pi * r^2 * v * t = (22/7) * (0.02)^2 * 3 * 60 = (22/7) * 0.0004 * 180 = 0.2262 m^3 = 226.2 liters.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "A rectangular tank 10 m x 8 m x 6 m is filled with water. Find mass of water in metric tons (1 m^3 water = 1 ton).",
+                    "marking_scheme_answer": "Volume = 10 * 8 * 6 = 480 m^3. Mass = 480 metric tons.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "Water in a canal 6 m wide and 1.5 m deep flows with speed 10 km/h. How much area will it irrigate in 30 minutes if 8 cm of standing water is required?",
+                    "marking_scheme_answer": "Canal cross section = 6 * 1.5 = 9 m^2. Flow speed = 10,000 m/h. Distance in 30 min (0.5 h) = 5,000 m. Volume discharged = 9 * 5000 = 45,000 m^3. Required water height = 0.08 m. Irrigated Area = Volume / Height = 45,000 / 0.08 = 562,500 m^2 = 56.25 hectares.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Tank Filling Time. A cylindrical tank of diameter 10 m and depth 2 m is filled by a pipe of internal diameter 20 cm at flow speed 3 km/h. Find time taken to fill the tank completely.",
+                    "marking_scheme_answer": "Tank volume = pi * R^2 * H = pi * (5)^2 * 2 = 50*pi m^3. Pipe radius r = 0.1 m. Flow velocity v = 3000 m/h. Pipe discharge per hour = pi * r^2 * v = pi * (0.1)^2 * 3000 = 30*pi m^3/h. Time to fill = Tank Volume / Discharge Rate = 50*pi / 30*pi = 5/3 hours = 1 hour 40 minutes.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 4,
+            "paper_title": "Set 4 - Chapter 14 Practice Paper (Packaging Optimization & Nets)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "Among all cuboids of fixed volume V, which shape minimizes total surface area?",
+                    "options": [
+                      "A) Elongated box",
+                      "B) Cube",
+                      "C) Flat plate",
+                      "D) Cylinder"
+                    ],
+                    "correct_answer": "B) Cube",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "An unfolded 2D flat layout of a 3D solid is called its:",
+                    "options": [
+                      "A) Cross section",
+                      "B) Net",
+                      "C) Projection",
+                      "D) Contour"
+                    ],
+                    "correct_answer": "B) Net",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "Prove why a cube of side a = 10 cm has smaller surface area than a cuboid 20 cm x 10 cm x 5 cm sharing same 1000 cm^3 volume.",
+                    "marking_scheme_answer": "Cube SA = 6*(10^2) = 600 cm^2. Cuboid SA = 2(20*10 + 10*5 + 20*5) = 2(200 + 50 + 100) = 700 cm^2. Cube SA (600) < Cuboid SA (700).",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Draw 2D unfolded cross net description for a right circular cone.",
+                    "marking_scheme_answer": "A cone net consists of a sector of a circle (radius l, arc length 2*pi*r) attached to a full circle of radius r.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "A solid wooden toy is in the form of a hemisphere surmounted by a cone. Radii of cone and hemisphere are 3.5 cm. Total height of toy is 15.5 cm. Calculate total volume and surface area of the toy.",
+                    "marking_scheme_answer": "Cone height h = 15.5 - 3.5 = 12 cm. Slant height l = sqrt(3.5^2 + 12^2) = sqrt(12.25 + 144) = 12.5 cm. Total Volume = V_cone + V_hemi = (1/3)*pi*r^2*h + (2/3)*pi*r^3 = (1/3)*pi*(3.5)^2 * (12 + 2*3.5) = (1/3)*(22/7)*12.25 * 19 = 243.83 cm^3. Total Surface Area = CSA_cone + CSA_hemi = pi*r*l + 2*pi*r^2 = (22/7)*3.5*12.5 + 2*(22/7)*12.25 = 137.5 + 77 = 214.5 cm^2.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Dome Painting Budget. A building dome is hemispherical with base circumference 35.2 m. (a) Calculate outer radius r. (b) Calculate painting cost at Rs 10 per 100 cm^2.",
+                    "marking_scheme_answer": "(a) Base circumference 2*pi*r = 35.2 m => r = (35.2 * 7) / 44 = 5.6 m = 560 cm. (b) Outer CSA = 2*pi*r^2 = 2*(22/7)*560*560 = 1,971,200 cm^2. Cost = 1,971,200 * (10 / 100) = Rs 197,120.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "paper_id": 5,
+            "paper_title": "Set 5 - Chapter 14 Practice Paper (Exhaustive Unit Test)",
+            "total_marks": 25,
+            "time_allowed_minutes": 45,
+            "sections": [
+              {
+                "section_name": "Section A (MCQs)",
+                "questions": [
+                  {
+                    "question_number": 1,
+                    "question_text": "A solid metallic sphere of radius R is melted to form a wire of radius r and length L. Preserved quantity is:",
+                    "options": [
+                      "A) Surface area",
+                      "B) Volume",
+                      "C) Radius",
+                      "D) Diameter"
+                    ],
+                    "correct_answer": "B) Volume",
+                    "marks": 1
+                  },
+                  {
+                    "question_number": 2,
+                    "question_text": "Ratio of volumes of sphere and circumscribed cylinder (diameter = height = 2R) is:",
+                    "options": [
+                      "A) 1:2",
+                      "B) 2:3",
+                      "C) 3:4",
+                      "D) 1:3"
+                    ],
+                    "correct_answer": "B) 2:3",
+                    "marks": 1
+                  }
+                ]
+              },
+              {
+                "section_name": "Section B (Short Answer Questions)",
+                "questions": [
+                  {
+                    "question_number": 3,
+                    "question_text": "A sphere of radius 3 cm is melted and drawn into a wire of diameter 0.4 cm. Find length of wire L.",
+                    "marking_scheme_answer": "Volume sphere = (4/3)*pi*(3^3) = 36*pi cm^3. Wire radius r = 0.2 cm. Wire volume = pi*(0.2^2)*L = 0.04*pi*L. Equating: 0.04*pi*L = 36*pi => L = 36 / 0.04 = 900 cm = 9 meters.",
+                    "marks": 3
+                  },
+                  {
+                    "question_number": 4,
+                    "question_text": "Compare volume of sphere V1 and circumscribed cylinder V2.",
+                    "marking_scheme_answer": "V1 = (4/3)*pi*R^3. V2 = pi*R^2*(2R) = 2*pi*R^3. Ratio V1/V2 = (4/3)/2 = 2/3.",
+                    "marks": 3
+                  }
+                ]
+              },
+              {
+                "section_name": "Section C (Long Answer & Case-Based Questions)",
+                "questions": [
+                  {
+                    "question_number": 5,
+                    "question_text": "A open cylindrical bucket 32 cm high with base radius 18 cm is filled with sand. The bucket is emptied on ground and a conical heap of sand is formed of height 24 cm. Find radius and slant height of conical heap.",
+                    "marking_scheme_answer": "Volume bucket = pi*(18^2)*32 = 10368*pi cm^3. Volume heap = (1/3)*pi*(r^2)*24 = 8*pi*r^2. Equating: 8*pi*r^2 = 10368*pi => r^2 = 1296 => r = 36 cm. Slant height l = sqrt(36^2 + 24^2) = sqrt(1296 + 576) = sqrt(1872) = 43.27 cm.",
+                    "marks": 5
+                  },
+                  {
+                    "question_number": 6,
+                    "question_text": "Case Study: Planetary Volume Comparison. Earth radius R_earth ~ 6370 km. Jupiter radius R_jup ~ 69900 km. (a) Compute radius ratio k = R_jup / R_earth. (b) Apply Square-Cube Law to find how many Earths can fit inside Jupiter.",
+                    "marking_scheme_answer": "(a) Radius ratio k = 69900 / 6370 = 10.973 ~ 11. (b) Volume scales with k^3 = (10.973)^3 = 1321. Approximately 1,321 Earths can fit inside Jupiter.",
+                    "marks": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "9",
+  "chapter_id": "G9-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths II Chapter 1"
 }

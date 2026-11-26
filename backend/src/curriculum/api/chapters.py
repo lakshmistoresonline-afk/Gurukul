@@ -242,17 +242,6 @@ async def resolve_authoritative_content(
 
     try:
         content_data = ProcessedContentResolver.resolve_content(identity)
-    except (ChapterNotFoundError, ResolverChapterNotFoundError, RegChapterNotFoundError, CurriculumResolutionError) as cnf:
-        raise HTTPException(
-            status_code=404,
-            detail={
-                "error": {
-                    "code": "CHAPTER_NOT_FOUND",
-                    "message": str(cnf),
-                    "identity": identity.model_dump()
-                }
-            }
-        )
     except (ContentNotFoundError, RegContentNotFoundError) as cnf_type:
         raise HTTPException(
             status_code=404,
@@ -260,6 +249,17 @@ async def resolve_authoritative_content(
                 "error": {
                     "code": "CONTENT_TYPE_NOT_FOUND",
                     "message": str(cnf_type),
+                    "identity": identity.model_dump()
+                }
+            }
+        )
+    except (ChapterNotFoundError, ResolverChapterNotFoundError, RegChapterNotFoundError, CurriculumResolutionError) as cnf:
+        raise HTTPException(
+            status_code=404,
+            detail={
+                "error": {
+                    "code": "CHAPTER_NOT_FOUND",
+                    "message": str(cnf),
                     "identity": identity.model_dump()
                 }
             }

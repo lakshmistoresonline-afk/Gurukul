@@ -1,442 +1,962 @@
 {
-  "subject_title": "Class 7 Social Science (Exploring Society: India and Beyond, Part 2)",
-  "book_title": "Exploring Society: India and Beyond (Social Science Textbook for Grade 7 Part 2)",
-  "total_chapters": 8,
-  "deduplication_applied": true,
-  "dashboard_config": {
-    "theme": "Dark Slate Professional",
-    "sidebar_navigation": [
-      "Overview",
-      "Notes",
-      "Mindmaps",
-      "Flashcards",
-      "Quiz",
-      "Question_Papers",
-      "Foundational",
-      "Master"
-    ],
-    "active_modules": 8,
-    "total_chapters": 8
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_7f297238bb2e1c1b",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
   },
-  "chapters_overview": [
-    {
-      "chapter_number": 1,
-      "chapter_title": "The Story of Indian Farming",
-      "summary": "Agriculture is the foundational pillar of India's culture, economy, and rural employment. This chapter covers the historical journey of farming from ancient Harappan techniques to modern mechanised practices. It analyzes the close relationships between soil profiles, climatic rainfall patterns, water resources, and cropping seasons (Kharif, Rabi, Zaid), alongside the indispensable role of women in agriculture and sustainable farming methods.",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to The Story of Indian Farming in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in The Story of Indian Farming."
-        }
+  "subject": "Social II",
+  "artifact": {
+    "artifact_type": "overview",
+    "source_file_name": "09-Overview.json",
+    "source_relative_path": "Contents/Class 7/Social II/Source Files/09-Overview.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "7b2903be0ad9af8e0f4ae03294fea8f1ac09003fb0d36b3b7bdc4f45d4e713bf",
+    "source_semantic_sha256": "519008b1ca63bf38b9178e21e12ba7539e9aff1d5bb638b1aeab7314bcf1c8ed",
+    "source_byte_length": 17793,
+    "source_encoding": "utf-8",
+    "source_field_count": 277,
+    "field_inventory": [
+      "$.subject_title",
+      "$.book_title",
+      "$.total_chapters",
+      "$.deduplication_applied",
+      "$.dashboard_config",
+      "$.dashboard_config.theme",
+      "$.dashboard_config.sidebar_navigation",
+      "$.dashboard_config.active_modules",
+      "$.dashboard_config.total_chapters",
+      "$.chapters_overview",
+      "$.chapters_overview[0].chapter_number",
+      "$.chapters_overview[0].chapter_title",
+      "$.chapters_overview[0].summary",
+      "$.chapters_overview[0].storyboard",
+      "$.chapters_overview[0].storyboard[0].scene_number",
+      "$.chapters_overview[0].storyboard[0].heading",
+      "$.chapters_overview[0].storyboard[0].narration",
+      "$.chapters_overview[0].storyboard[1].scene_number",
+      "$.chapters_overview[0].storyboard[1].heading",
+      "$.chapters_overview[0].storyboard[1].narration",
+      "$.chapters_overview[0].key_takeaways",
+      "$.chapters_overview[0].image_asset",
+      "$.chapters_overview[0].image_asset.asset_id",
+      "$.chapters_overview[0].image_asset.chapter_number",
+      "$.chapters_overview[0].image_asset.chapter_title",
+      "$.chapters_overview[0].image_asset.file_name",
+      "$.chapters_overview[0].image_asset.url",
+      "$.chapters_overview[0].image_asset.dimensions",
+      "$.chapters_overview[0].image_asset.dimensions.width",
+      "$.chapters_overview[0].image_asset.dimensions.height",
+      "$.chapters_overview[0].image_asset.title",
+      "$.chapters_overview[0].image_asset.hotspots",
+      "$.chapters_overview[0].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[0].image_asset.hotspots[0].title",
+      "$.chapters_overview[0].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[0].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[0].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[0].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[0].image_asset.hotspots[0].info",
+      "$.chapters_overview[0].image_asset.hotspots[1].hotspot_id",
+      "$.chapters_overview[0].image_asset.hotspots[1].title",
+      "$.chapters_overview[0].image_asset.hotspots[1].x_percent",
+      "$.chapters_overview[0].image_asset.hotspots[1].y_percent",
+      "$.chapters_overview[0].image_asset.hotspots[1].w_percent",
+      "$.chapters_overview[0].image_asset.hotspots[1].h_percent",
+      "$.chapters_overview[0].image_asset.hotspots[1].info",
+      "$.chapters_overview[1].chapter_number",
+      "$.chapters_overview[1].chapter_title",
+      "$.chapters_overview[1].summary",
+      "$.chapters_overview[1].storyboard",
+      "$.chapters_overview[1].storyboard[0].scene_number",
+      "$.chapters_overview[1].storyboard[0].heading",
+      "$.chapters_overview[1].storyboard[0].narration",
+      "$.chapters_overview[1].storyboard[1].scene_number",
+      "$.chapters_overview[1].storyboard[1].heading",
+      "$.chapters_overview[1].storyboard[1].narration",
+      "$.chapters_overview[1].key_takeaways",
+      "$.chapters_overview[1].image_asset",
+      "$.chapters_overview[1].image_asset.asset_id",
+      "$.chapters_overview[1].image_asset.chapter_number",
+      "$.chapters_overview[1].image_asset.chapter_title",
+      "$.chapters_overview[1].image_asset.file_name",
+      "$.chapters_overview[1].image_asset.url",
+      "$.chapters_overview[1].image_asset.dimensions",
+      "$.chapters_overview[1].image_asset.dimensions.width",
+      "$.chapters_overview[1].image_asset.dimensions.height",
+      "$.chapters_overview[1].image_asset.title",
+      "$.chapters_overview[1].image_asset.hotspots",
+      "$.chapters_overview[1].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[1].image_asset.hotspots[0].title",
+      "$.chapters_overview[1].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[1].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[1].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[1].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[1].image_asset.hotspots[0].info",
+      "$.chapters_overview[1].image_asset.hotspots[1].hotspot_id",
+      "$.chapters_overview[1].image_asset.hotspots[1].title",
+      "$.chapters_overview[1].image_asset.hotspots[1].x_percent",
+      "$.chapters_overview[1].image_asset.hotspots[1].y_percent",
+      "$.chapters_overview[1].image_asset.hotspots[1].w_percent",
+      "$.chapters_overview[1].image_asset.hotspots[1].h_percent",
+      "$.chapters_overview[1].image_asset.hotspots[1].info",
+      "$.chapters_overview[2].chapter_number",
+      "$.chapters_overview[2].chapter_title",
+      "$.chapters_overview[2].summary",
+      "$.chapters_overview[2].storyboard",
+      "$.chapters_overview[2].storyboard[0].scene_number",
+      "$.chapters_overview[2].storyboard[0].heading",
+      "$.chapters_overview[2].storyboard[0].narration",
+      "$.chapters_overview[2].storyboard[1].scene_number",
+      "$.chapters_overview[2].storyboard[1].heading",
+      "$.chapters_overview[2].storyboard[1].narration",
+      "$.chapters_overview[2].key_takeaways",
+      "$.chapters_overview[2].image_asset",
+      "$.chapters_overview[2].image_asset.asset_id",
+      "$.chapters_overview[2].image_asset.chapter_number",
+      "$.chapters_overview[2].image_asset.chapter_title",
+      "$.chapters_overview[2].image_asset.file_name",
+      "$.chapters_overview[2].image_asset.url",
+      "$.chapters_overview[2].image_asset.dimensions",
+      "$.chapters_overview[2].image_asset.dimensions.width",
+      "$.chapters_overview[2].image_asset.dimensions.height",
+      "$.chapters_overview[2].image_asset.title",
+      "$.chapters_overview[2].image_asset.hotspots",
+      "$.chapters_overview[2].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[2].image_asset.hotspots[0].title",
+      "$.chapters_overview[2].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[2].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[2].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[2].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[2].image_asset.hotspots[0].info",
+      "$.chapters_overview[2].image_asset.hotspots[1].hotspot_id",
+      "$.chapters_overview[2].image_asset.hotspots[1].title",
+      "$.chapters_overview[2].image_asset.hotspots[1].x_percent",
+      "$.chapters_overview[2].image_asset.hotspots[1].y_percent",
+      "$.chapters_overview[2].image_asset.hotspots[1].w_percent",
+      "$.chapters_overview[2].image_asset.hotspots[1].h_percent",
+      "$.chapters_overview[2].image_asset.hotspots[1].info",
+      "$.chapters_overview[3].chapter_number",
+      "$.chapters_overview[3].chapter_title",
+      "$.chapters_overview[3].summary",
+      "$.chapters_overview[3].storyboard",
+      "$.chapters_overview[3].storyboard[0].scene_number",
+      "$.chapters_overview[3].storyboard[0].heading",
+      "$.chapters_overview[3].storyboard[0].narration",
+      "$.chapters_overview[3].storyboard[1].scene_number",
+      "$.chapters_overview[3].storyboard[1].heading",
+      "$.chapters_overview[3].storyboard[1].narration",
+      "$.chapters_overview[3].key_takeaways",
+      "$.chapters_overview[3].image_asset",
+      "$.chapters_overview[3].image_asset.asset_id",
+      "$.chapters_overview[3].image_asset.chapter_number",
+      "$.chapters_overview[3].image_asset.chapter_title",
+      "$.chapters_overview[3].image_asset.file_name",
+      "$.chapters_overview[3].image_asset.url",
+      "$.chapters_overview[3].image_asset.dimensions",
+      "$.chapters_overview[3].image_asset.dimensions.width",
+      "$.chapters_overview[3].image_asset.dimensions.height",
+      "$.chapters_overview[3].image_asset.title",
+      "$.chapters_overview[3].image_asset.hotspots",
+      "$.chapters_overview[3].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[3].image_asset.hotspots[0].title",
+      "$.chapters_overview[3].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[3].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[3].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[3].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[3].image_asset.hotspots[0].info",
+      "$.chapters_overview[3].image_asset.hotspots[1].hotspot_id",
+      "$.chapters_overview[3].image_asset.hotspots[1].title",
+      "$.chapters_overview[3].image_asset.hotspots[1].x_percent",
+      "$.chapters_overview[3].image_asset.hotspots[1].y_percent",
+      "$.chapters_overview[3].image_asset.hotspots[1].w_percent",
+      "$.chapters_overview[3].image_asset.hotspots[1].h_percent",
+      "$.chapters_overview[3].image_asset.hotspots[1].info",
+      "$.chapters_overview[4].chapter_number",
+      "$.chapters_overview[4].chapter_title",
+      "$.chapters_overview[4].summary",
+      "$.chapters_overview[4].storyboard",
+      "$.chapters_overview[4].storyboard[0].scene_number",
+      "$.chapters_overview[4].storyboard[0].heading",
+      "$.chapters_overview[4].storyboard[0].narration",
+      "$.chapters_overview[4].storyboard[1].scene_number",
+      "$.chapters_overview[4].storyboard[1].heading",
+      "$.chapters_overview[4].storyboard[1].narration",
+      "$.chapters_overview[4].key_takeaways",
+      "$.chapters_overview[4].image_asset",
+      "$.chapters_overview[4].image_asset.asset_id",
+      "$.chapters_overview[4].image_asset.chapter_number",
+      "$.chapters_overview[4].image_asset.chapter_title",
+      "$.chapters_overview[4].image_asset.file_name",
+      "$.chapters_overview[4].image_asset.url",
+      "$.chapters_overview[4].image_asset.dimensions",
+      "$.chapters_overview[4].image_asset.dimensions.width",
+      "$.chapters_overview[4].image_asset.dimensions.height",
+      "$.chapters_overview[4].image_asset.title",
+      "$.chapters_overview[4].image_asset.hotspots",
+      "$.chapters_overview[4].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[4].image_asset.hotspots[0].title",
+      "$.chapters_overview[4].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[4].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[4].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[4].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[4].image_asset.hotspots[0].info",
+      "$.chapters_overview[4].image_asset.hotspots[1].hotspot_id",
+      "$.chapters_overview[4].image_asset.hotspots[1].title",
+      "$.chapters_overview[4].image_asset.hotspots[1].x_percent",
+      "$.chapters_overview[4].image_asset.hotspots[1].y_percent",
+      "$.chapters_overview[4].image_asset.hotspots[1].w_percent",
+      "$.chapters_overview[4].image_asset.hotspots[1].h_percent",
+      "$.chapters_overview[4].image_asset.hotspots[1].info",
+      "$.chapters_overview[5].chapter_number",
+      "$.chapters_overview[5].chapter_title",
+      "$.chapters_overview[5].summary",
+      "$.chapters_overview[5].storyboard",
+      "$.chapters_overview[5].storyboard[0].scene_number",
+      "$.chapters_overview[5].storyboard[0].heading",
+      "$.chapters_overview[5].storyboard[0].narration",
+      "$.chapters_overview[5].storyboard[1].scene_number",
+      "$.chapters_overview[5].storyboard[1].heading",
+      "$.chapters_overview[5].storyboard[1].narration",
+      "$.chapters_overview[5].key_takeaways",
+      "$.chapters_overview[5].image_asset",
+      "$.chapters_overview[5].image_asset.asset_id",
+      "$.chapters_overview[5].image_asset.chapter_number",
+      "$.chapters_overview[5].image_asset.chapter_title",
+      "$.chapters_overview[5].image_asset.file_name",
+      "$.chapters_overview[5].image_asset.url",
+      "$.chapters_overview[5].image_asset.dimensions",
+      "$.chapters_overview[5].image_asset.dimensions.width",
+      "$.chapters_overview[5].image_asset.dimensions.height",
+      "$.chapters_overview[5].image_asset.title",
+      "$.chapters_overview[5].image_asset.hotspots",
+      "$.chapters_overview[5].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[5].image_asset.hotspots[0].title",
+      "$.chapters_overview[5].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[5].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[5].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[5].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[5].image_asset.hotspots[0].info",
+      "$.chapters_overview[6].chapter_number",
+      "$.chapters_overview[6].chapter_title",
+      "$.chapters_overview[6].summary",
+      "$.chapters_overview[6].storyboard",
+      "$.chapters_overview[6].storyboard[0].scene_number",
+      "$.chapters_overview[6].storyboard[0].heading",
+      "$.chapters_overview[6].storyboard[0].narration",
+      "$.chapters_overview[6].storyboard[1].scene_number",
+      "$.chapters_overview[6].storyboard[1].heading",
+      "$.chapters_overview[6].storyboard[1].narration",
+      "$.chapters_overview[6].key_takeaways",
+      "$.chapters_overview[6].image_asset",
+      "$.chapters_overview[6].image_asset.asset_id",
+      "$.chapters_overview[6].image_asset.chapter_number",
+      "$.chapters_overview[6].image_asset.chapter_title",
+      "$.chapters_overview[6].image_asset.file_name",
+      "$.chapters_overview[6].image_asset.url",
+      "$.chapters_overview[6].image_asset.dimensions",
+      "$.chapters_overview[6].image_asset.dimensions.width",
+      "$.chapters_overview[6].image_asset.dimensions.height",
+      "$.chapters_overview[6].image_asset.title",
+      "$.chapters_overview[6].image_asset.hotspots",
+      "$.chapters_overview[6].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[6].image_asset.hotspots[0].title",
+      "$.chapters_overview[6].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[6].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[6].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[6].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[6].image_asset.hotspots[0].info",
+      "$.chapters_overview[7].chapter_number",
+      "$.chapters_overview[7].chapter_title",
+      "$.chapters_overview[7].summary",
+      "$.chapters_overview[7].storyboard",
+      "$.chapters_overview[7].storyboard[0].scene_number",
+      "$.chapters_overview[7].storyboard[0].heading",
+      "$.chapters_overview[7].storyboard[0].narration",
+      "$.chapters_overview[7].storyboard[1].scene_number",
+      "$.chapters_overview[7].storyboard[1].heading",
+      "$.chapters_overview[7].storyboard[1].narration",
+      "$.chapters_overview[7].key_takeaways",
+      "$.chapters_overview[7].image_asset",
+      "$.chapters_overview[7].image_asset.asset_id",
+      "$.chapters_overview[7].image_asset.chapter_number",
+      "$.chapters_overview[7].image_asset.chapter_title",
+      "$.chapters_overview[7].image_asset.file_name",
+      "$.chapters_overview[7].image_asset.url",
+      "$.chapters_overview[7].image_asset.dimensions",
+      "$.chapters_overview[7].image_asset.dimensions.width",
+      "$.chapters_overview[7].image_asset.dimensions.height",
+      "$.chapters_overview[7].image_asset.title",
+      "$.chapters_overview[7].image_asset.hotspots",
+      "$.chapters_overview[7].image_asset.hotspots[0].hotspot_id",
+      "$.chapters_overview[7].image_asset.hotspots[0].title",
+      "$.chapters_overview[7].image_asset.hotspots[0].x_percent",
+      "$.chapters_overview[7].image_asset.hotspots[0].y_percent",
+      "$.chapters_overview[7].image_asset.hotspots[0].w_percent",
+      "$.chapters_overview[7].image_asset.hotspots[0].h_percent",
+      "$.chapters_overview[7].image_asset.hotspots[0].info"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters_overview[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Story of Indian Farming",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters_overview[0].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "The Story of Indian Farming",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters_overview[0].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Alluvial Soil Zone",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[0].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Black Soil (Regur) Zone",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "India and Her Neighbours",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters_overview[1].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "India and Her Neighbours",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters_overview[1].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Bangladesh Border",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[1].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Maritime SAGAR Vision",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Empires and Kingdoms: 6th to 10th Centuries",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters_overview[2].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Empires and Kingdoms: 6th to 10th Centuries",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters_overview[2].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Kannauj Tripartite Struggle",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[2].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Kudavolai Ballot System",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Turning Tides: 11th and 12th Centuries",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters_overview[3].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Turning Tides: 11th and 12th Centuries",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters_overview[3].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Rajendra I Chola Naval Campaign",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[3].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Al-Biruni's Kitab al-Hind",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "India, a Home to Many",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters_overview[4].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "India, a Home to Many",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters_overview[4].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Parsi Milk & Sugar Legend",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[4].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Siddi Community & Dhamal",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "The State, the Government, and You",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters_overview[5].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "The State, the Government, and You",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters_overview[5].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Judiciary & Judicial Review",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Infrastructure: Engine of India's Development",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters_overview[6].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Infrastructure: Engine of India's Development",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters_overview[6].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Jingkieng Jri (Living Root Bridges)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_overview[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Banks and the Magic of Finance",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters_overview[7].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Banks and the Magic of Finance",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters_overview[7].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "UPI Digital Payments",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 29,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject_title": "Class 7 Social Science (Exploring Society: India and Beyond, Part 2)",
+    "book_title": "Exploring Society: India and Beyond (Social Science Textbook for Grade 7 Part 2)",
+    "total_chapters": 8,
+    "deduplication_applied": true,
+    "dashboard_config": {
+      "theme": "Dark Slate Professional",
+      "sidebar_navigation": [
+        "Overview",
+        "Notes",
+        "Mindmaps",
+        "Flashcards",
+        "Quiz",
+        "Question_Papers",
+        "Foundational",
+        "Master"
       ],
-      "key_takeaways": [
-        "Master the core principles of The Story of Indian Farming.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch1",
+      "active_modules": 8,
+      "total_chapters": 8
+    },
+    "chapters_overview": [
+      {
         "chapter_number": 1,
         "chapter_title": "The Story of Indian Farming",
-        "file_name": "ch1_farming_soils.png",
-        "url": "/assets/images/ch1_farming_soils.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Soil Profiles & Cropping Seasons in India",
-        "hotspots": [
+        "summary": "Agriculture is the foundational pillar of India's culture, economy, and rural employment. This chapter covers the historical journey of farming from ancient Harappan techniques to modern mechanised practices. It analyzes the close relationships between soil profiles, climatic rainfall patterns, water resources, and cropping seasons (Kharif, Rabi, Zaid), alongside the indispensable role of women in agriculture and sustainable farming methods.",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch1_alluvial",
-            "title": "Alluvial Soil Zone",
-            "x_percent": 5,
-            "y_percent": 50,
-            "w_percent": 42,
-            "h_percent": 35,
-            "info": "Gangetic plains & river deltas; highly fertile for rice and wheat."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to The Story of Indian Farming in Indian history and society."
           },
           {
-            "hotspot_id": "hs_ch1_black",
-            "title": "Black Soil (Regur) Zone",
-            "x_percent": 53,
-            "y_percent": 50,
-            "w_percent": 42,
-            "h_percent": 35,
-            "info": "Volcanic basalt origin in Deccan Trap; high moisture retention ideal for cotton."
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in The Story of Indian Farming."
           }
-        ]
-      }
-    },
-    {
-      "chapter_number": 2,
-      "chapter_title": "India and Her Neighbours",
-      "summary": "This chapter defines 'neighbourhood' through both terrestrial land frontiers and Indian Ocean maritime connections. It details India's borders with seven land neighbours (Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh, Myanmar) and six maritime neighbours (Sri Lanka, Maldives, Indonesia, Myanmar, Thailand, Oman). It highlights shared cultural heritage, economic links, and regional cooperation under SAGAR.",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to India and Her Neighbours in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in India and Her Neighbours."
+        ],
+        "key_takeaways": [
+          "Master the core principles of The Story of Indian Farming.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch1",
+          "chapter_number": 1,
+          "chapter_title": "The Story of Indian Farming",
+          "file_name": "ch1_farming_soils.png",
+          "url": "/assets/images/ch1_farming_soils.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Soil Profiles & Cropping Seasons in India",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch1_alluvial",
+              "title": "Alluvial Soil Zone",
+              "x_percent": 5,
+              "y_percent": 50,
+              "w_percent": 42,
+              "h_percent": 35,
+              "info": "Gangetic plains & river deltas; highly fertile for rice and wheat."
+            },
+            {
+              "hotspot_id": "hs_ch1_black",
+              "title": "Black Soil (Regur) Zone",
+              "x_percent": 53,
+              "y_percent": 50,
+              "w_percent": 42,
+              "h_percent": 35,
+              "info": "Volcanic basalt origin in Deccan Trap; high moisture retention ideal for cotton."
+            }
+          ]
         }
-      ],
-      "key_takeaways": [
-        "Master the core principles of India and Her Neighbours.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch2",
+      },
+      {
         "chapter_number": 2,
         "chapter_title": "India and Her Neighbours",
-        "file_name": "ch2_neighbours_map.png",
-        "url": "/assets/images/ch2_neighbours_map.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Land Frontiers & Maritime Policy (SAGAR)",
-        "hotspots": [
+        "summary": "This chapter defines 'neighbourhood' through both terrestrial land frontiers and Indian Ocean maritime connections. It details India's borders with seven land neighbours (Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh, Myanmar) and six maritime neighbours (Sri Lanka, Maldives, Indonesia, Myanmar, Thailand, Oman). It highlights shared cultural heritage, economic links, and regional cooperation under SAGAR.",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch2_bangladesh",
-            "title": "Bangladesh Border",
-            "x_percent": 8,
-            "y_percent": 54,
-            "w_percent": 24,
-            "h_percent": 12,
-            "info": "Longest land border (~4,096 km)."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to India and Her Neighbours in Indian history and society."
           },
           {
-            "hotspot_id": "hs_ch2_sagar",
-            "title": "Maritime SAGAR Vision",
-            "x_percent": 28,
-            "y_percent": 12,
-            "w_percent": 24,
-            "h_percent": 12,
-            "info": "Security and Growth for All in the Region."
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in India and Her Neighbours."
           }
-        ]
-      }
-    },
-    {
-      "chapter_number": 3,
-      "chapter_title": "Empires and Kingdoms: 6th to 10th Centuries",
-      "summary": "Following the collapse of the Gupta Empire, political power fragmented into regional dynasties across North, Central, and South India. This chapter details Harshavardhana of Kannauj, Pulakeshin II of the Chalukyas, the Pallavas of Kanchipuram, the Rashtrakutas, Palas, Gurjara-Pratiharas, and early Cholas. Key themes include the Tripartite Struggle, land grant economies (Brahmadeya), local village assemblies (Sabha, Ur), and rock-cut/structural temple architecture.",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to Empires and Kingdoms: 6th to 10th Centuries in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in Empires and Kingdoms: 6th to 10th Centuries."
+        ],
+        "key_takeaways": [
+          "Master the core principles of India and Her Neighbours.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch2",
+          "chapter_number": 2,
+          "chapter_title": "India and Her Neighbours",
+          "file_name": "ch2_neighbours_map.png",
+          "url": "/assets/images/ch2_neighbours_map.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Land Frontiers & Maritime Policy (SAGAR)",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch2_bangladesh",
+              "title": "Bangladesh Border",
+              "x_percent": 8,
+              "y_percent": 54,
+              "w_percent": 24,
+              "h_percent": 12,
+              "info": "Longest land border (~4,096 km)."
+            },
+            {
+              "hotspot_id": "hs_ch2_sagar",
+              "title": "Maritime SAGAR Vision",
+              "x_percent": 28,
+              "y_percent": 12,
+              "w_percent": 24,
+              "h_percent": 12,
+              "info": "Security and Growth for All in the Region."
+            }
+          ]
         }
-      ],
-      "key_takeaways": [
-        "Master the core principles of Empires and Kingdoms: 6th to 10th Centuries.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch3",
+      },
+      {
         "chapter_number": 3,
         "chapter_title": "Empires and Kingdoms: 6th to 10th Centuries",
-        "file_name": "ch3_empires_timeline.png",
-        "url": "/assets/images/ch3_empires_timeline.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Tripartite Struggle & Regional Dynasties",
-        "hotspots": [
+        "summary": "Following the collapse of the Gupta Empire, political power fragmented into regional dynasties across North, Central, and South India. This chapter details Harshavardhana of Kannauj, Pulakeshin II of the Chalukyas, the Pallavas of Kanchipuram, the Rashtrakutas, Palas, Gurjara-Pratiharas, and early Cholas. Key themes include the Tripartite Struggle, land grant economies (Brahmadeya), local village assemblies (Sabha, Ur), and rock-cut/structural temple architecture.",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch3_kannauj",
-            "title": "Kannauj Tripartite Struggle",
-            "x_percent": 28,
-            "y_percent": 37,
-            "w_percent": 24,
-            "h_percent": 16,
-            "info": "Conflict among Palas, Gurjara-Pratiharas, and Rashtrakutas."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to Empires and Kingdoms: 6th to 10th Centuries in Indian history and society."
           },
           {
-            "hotspot_id": "hs_ch3_kudavolai",
-            "title": "Kudavolai Ballot System",
-            "x_percent": 48,
-            "y_percent": 7,
-            "w_percent": 24,
-            "h_percent": 16,
-            "info": "Uttaramerur inscriptions on democratic village voting."
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in Empires and Kingdoms: 6th to 10th Centuries."
           }
-        ]
-      }
-    },
-    {
-      "chapter_number": 4,
-      "chapter_title": "Turning Tides: 11th and 12th Centuries",
-      "summary": "This chapter examines the 11th and 12th centuries as a period of profound transition. Turkic campaigns led by Mahmud of Ghazni (plunder raids) and Muhammad Ghuri (territorial conquests ending in the Battles of Tarain) established Islamic political power in Delhi. Simultaneously, Indian culture, science (Bhaskaracharya II's Lilavati), maritime power (Chola naval expedition to Srivijaya), and temple architecture reached monumental heights.",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to Turning Tides: 11th and 12th Centuries in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in Turning Tides: 11th and 12th Centuries."
+        ],
+        "key_takeaways": [
+          "Master the core principles of Empires and Kingdoms: 6th to 10th Centuries.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch3",
+          "chapter_number": 3,
+          "chapter_title": "Empires and Kingdoms: 6th to 10th Centuries",
+          "file_name": "ch3_empires_timeline.png",
+          "url": "/assets/images/ch3_empires_timeline.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Tripartite Struggle & Regional Dynasties",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch3_kannauj",
+              "title": "Kannauj Tripartite Struggle",
+              "x_percent": 28,
+              "y_percent": 37,
+              "w_percent": 24,
+              "h_percent": 16,
+              "info": "Conflict among Palas, Gurjara-Pratiharas, and Rashtrakutas."
+            },
+            {
+              "hotspot_id": "hs_ch3_kudavolai",
+              "title": "Kudavolai Ballot System",
+              "x_percent": 48,
+              "y_percent": 7,
+              "w_percent": 24,
+              "h_percent": 16,
+              "info": "Uttaramerur inscriptions on democratic village voting."
+            }
+          ]
         }
-      ],
-      "key_takeaways": [
-        "Master the core principles of Turning Tides: 11th and 12th Centuries.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch4",
+      },
+      {
         "chapter_number": 4,
         "chapter_title": "Turning Tides: 11th and 12th Centuries",
-        "file_name": "ch4_trade_battles.png",
-        "url": "/assets/images/ch4_trade_battles.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Chola Navy & Ghaznavid Incursions",
-        "hotspots": [
+        "summary": "This chapter examines the 11th and 12th centuries as a period of profound transition. Turkic campaigns led by Mahmud of Ghazni (plunder raids) and Muhammad Ghuri (territorial conquests ending in the Battles of Tarain) established Islamic political power in Delhi. Simultaneously, Indian culture, science (Bhaskaracharya II's Lilavati), maritime power (Chola naval expedition to Srivijaya), and temple architecture reached monumental heights.",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch4_chola",
-            "title": "Rajendra I Chola Naval Campaign",
-            "x_percent": 53,
-            "y_percent": 50,
-            "w_percent": 42,
-            "h_percent": 32,
-            "info": "1025 CE expedition to Srivijaya & Malacca Strait."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to Turning Tides: 11th and 12th Centuries in Indian history and society."
           },
           {
-            "hotspot_id": "hs_ch4_albiruni",
-            "title": "Al-Biruni's Kitab al-Hind",
-            "x_percent": 5,
-            "y_percent": 10,
-            "w_percent": 42,
-            "h_percent": 32,
-            "info": "Comprehensive Arabic Indology treatise on science and astronomy."
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in Turning Tides: 11th and 12th Centuries."
           }
-        ]
-      }
-    },
-    {
-      "chapter_number": 5,
-      "chapter_title": "India, a Home to Many",
-      "summary": "This chapter examines how India served as a global sanctuary for diverse communities fleeing religious and political persecution. Through case studies of Jewish, Syriac Christian, Parsi (Zoroastrian), and Siddi populations, it highlights the civilisational principle of Vasudhaiva Kutumbakam ('The whole world is family') and the bidirectional integration of migrant groups.",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to India, a Home to Many in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in India, a Home to Many."
+        ],
+        "key_takeaways": [
+          "Master the core principles of Turning Tides: 11th and 12th Centuries.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch4",
+          "chapter_number": 4,
+          "chapter_title": "Turning Tides: 11th and 12th Centuries",
+          "file_name": "ch4_trade_battles.png",
+          "url": "/assets/images/ch4_trade_battles.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Chola Navy & Ghaznavid Incursions",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch4_chola",
+              "title": "Rajendra I Chola Naval Campaign",
+              "x_percent": 53,
+              "y_percent": 50,
+              "w_percent": 42,
+              "h_percent": 32,
+              "info": "1025 CE expedition to Srivijaya & Malacca Strait."
+            },
+            {
+              "hotspot_id": "hs_ch4_albiruni",
+              "title": "Al-Biruni's Kitab al-Hind",
+              "x_percent": 5,
+              "y_percent": 10,
+              "w_percent": 42,
+              "h_percent": 32,
+              "info": "Comprehensive Arabic Indology treatise on science and astronomy."
+            }
+          ]
         }
-      ],
-      "key_takeaways": [
-        "Master the core principles of India, a Home to Many.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch5",
+      },
+      {
         "chapter_number": 5,
         "chapter_title": "India, a Home to Many",
-        "file_name": "ch5_pluralism_sanctuary.png",
-        "url": "/assets/images/ch5_pluralism_sanctuary.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Cultural Pluralism & Historical Sanctuary",
-        "hotspots": [
+        "summary": "This chapter examines how India served as a global sanctuary for diverse communities fleeing religious and political persecution. Through case studies of Jewish, Syriac Christian, Parsi (Zoroastrian), and Siddi populations, it highlights the civilisational principle of Vasudhaiva Kutumbakam ('The whole world is family') and the bidirectional integration of migrant groups.",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch5_parsi",
-            "title": "Parsi Milk & Sugar Legend",
-            "x_percent": 10,
-            "y_percent": 50,
-            "w_percent": 37,
-            "h_percent": 32,
-            "info": "Arrival at Sanjan under King Jadi Rana."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to India, a Home to Many in Indian history and society."
           },
           {
-            "hotspot_id": "hs_ch5_siddi",
-            "title": "Siddi Community & Dhamal",
-            "x_percent": 10,
-            "y_percent": 10,
-            "w_percent": 37,
-            "h_percent": 32,
-            "info": "East African heritage & Padma Shri Hirabai Lobi."
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in India, a Home to Many."
           }
-        ]
-      }
-    },
-    {
-      "chapter_number": 6,
-      "chapter_title": "The State, the Government, and You",
-      "summary": "This civics chapter distinguishes between the 'State' (a permanent sovereign political organization) and the 'Government' (its temporary administrative agency). It details the four elements of statehood (Territory, Population, Government, Sovereignty), the mechanics of a Democratic Republic, the three organs of government (Legislature, Executive, Judiciary), separation of powers, and civic rights under the Constitution.",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to The State, the Government, and You in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in The State, the Government, and You."
+        ],
+        "key_takeaways": [
+          "Master the core principles of India, a Home to Many.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch5",
+          "chapter_number": 5,
+          "chapter_title": "India, a Home to Many",
+          "file_name": "ch5_pluralism_sanctuary.png",
+          "url": "/assets/images/ch5_pluralism_sanctuary.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Cultural Pluralism & Historical Sanctuary",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch5_parsi",
+              "title": "Parsi Milk & Sugar Legend",
+              "x_percent": 10,
+              "y_percent": 50,
+              "w_percent": 37,
+              "h_percent": 32,
+              "info": "Arrival at Sanjan under King Jadi Rana."
+            },
+            {
+              "hotspot_id": "hs_ch5_siddi",
+              "title": "Siddi Community & Dhamal",
+              "x_percent": 10,
+              "y_percent": 10,
+              "w_percent": 37,
+              "h_percent": 32,
+              "info": "East African heritage & Padma Shri Hirabai Lobi."
+            }
+          ]
         }
-      ],
-      "key_takeaways": [
-        "Master the core principles of The State, the Government, and You.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch6",
+      },
+      {
         "chapter_number": 6,
         "chapter_title": "The State, the Government, and You",
-        "file_name": "ch6_state_organs.png",
-        "url": "/assets/images/ch6_state_organs.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Organs of Government & Constitutional Supremacy",
-        "hotspots": [
+        "summary": "This civics chapter distinguishes between the 'State' (a permanent sovereign political organization) and the 'Government' (its temporary administrative agency). It details the four elements of statehood (Territory, Population, Government, Sovereignty), the mechanics of a Democratic Republic, the three organs of government (Legislature, Executive, Judiciary), separation of powers, and civic rights under the Constitution.",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch6_judiciary",
-            "title": "Judiciary & Judicial Review",
-            "x_percent": 61,
-            "y_percent": 25,
-            "w_percent": 18,
-            "h_percent": 30,
-            "info": "Interprets laws and protects Fundamental Rights."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to The State, the Government, and You in Indian history and society."
+          },
+          {
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in The State, the Government, and You."
           }
-        ]
-      }
-    },
-    {
-      "chapter_number": 7,
-      "chapter_title": "Infrastructure: Engine of India's Development",
-      "summary": "Infrastructure forms the physical, technological, and economic foundation of society. This chapter categorizes physical infrastructure (transport, energy, water management, digital telecom) and highlights its role in lowering logistics costs, generating employment, bridging rural-urban divides, and promoting sustainable development (solarpunk engineering, living root bridges).",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to Infrastructure: Engine of India's Development in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in Infrastructure: Engine of India's Development."
+        ],
+        "key_takeaways": [
+          "Master the core principles of The State, the Government, and You.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch6",
+          "chapter_number": 6,
+          "chapter_title": "The State, the Government, and You",
+          "file_name": "ch6_state_organs.png",
+          "url": "/assets/images/ch6_state_organs.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Organs of Government & Constitutional Supremacy",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch6_judiciary",
+              "title": "Judiciary & Judicial Review",
+              "x_percent": 61,
+              "y_percent": 25,
+              "w_percent": 18,
+              "h_percent": 30,
+              "info": "Interprets laws and protects Fundamental Rights."
+            }
+          ]
         }
-      ],
-      "key_takeaways": [
-        "Master the core principles of Infrastructure: Engine of India's Development.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch7",
+      },
+      {
         "chapter_number": 7,
         "chapter_title": "Infrastructure: Engine of India's Development",
-        "file_name": "ch7_infrastructure_pillars.png",
-        "url": "/assets/images/ch7_infrastructure_pillars.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Four Infrastructure Pillars & Eco-Engineering",
-        "hotspots": [
+        "summary": "Infrastructure forms the physical, technological, and economic foundation of society. This chapter categorizes physical infrastructure (transport, energy, water management, digital telecom) and highlights its role in lowering logistics costs, generating employment, bridging rural-urban divides, and promoting sustainable development (solarpunk engineering, living root bridges).",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch7_root",
-            "title": "Jingkieng Jri (Living Root Bridges)",
-            "x_percent": 5,
-            "y_percent": 10,
-            "w_percent": 42,
-            "h_percent": 30,
-            "info": "Khasi tribe bio-engineering in Meghalaya."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to Infrastructure: Engine of India's Development in Indian history and society."
+          },
+          {
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in Infrastructure: Engine of India's Development."
           }
-        ]
-      }
-    },
-    {
-      "chapter_number": 8,
-      "chapter_title": "Banks and the Magic of Finance",
-      "summary": "This economics chapter explores financial infrastructure, detailing how commercial banks act as intermediaries connecting household savers with business borrowers. It covers interest spreads, compound interest dynamics (exponential growth), bank account types (Savings, Current, FD, RD), the regulatory authority of the Reserve Bank of India (RBI), passbooks, and modern digital payment platforms like UPI.",
-      "storyboard": [
-        {
-          "scene_number": 1,
-          "heading": "Core Theme & Historical Context",
-          "narration": "Introduction to Banks and the Magic of Finance in Indian history and society."
-        },
-        {
-          "scene_number": 2,
-          "heading": "Key Mechanisms & Key Dynamics",
-          "narration": "Detailed exploration of institutional frameworks and regional case studies in Banks and the Magic of Finance."
+        ],
+        "key_takeaways": [
+          "Master the core principles of Infrastructure: Engine of India's Development.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch7",
+          "chapter_number": 7,
+          "chapter_title": "Infrastructure: Engine of India's Development",
+          "file_name": "ch7_infrastructure_pillars.png",
+          "url": "/assets/images/ch7_infrastructure_pillars.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Four Infrastructure Pillars & Eco-Engineering",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch7_root",
+              "title": "Jingkieng Jri (Living Root Bridges)",
+              "x_percent": 5,
+              "y_percent": 10,
+              "w_percent": 42,
+              "h_percent": 30,
+              "info": "Khasi tribe bio-engineering in Meghalaya."
+            }
+          ]
         }
-      ],
-      "key_takeaways": [
-        "Master the core principles of Banks and the Magic of Finance.",
-        "Understand real-world applications and historical/civic implications."
-      ],
-      "image_asset": {
-        "asset_id": "img_ch8",
+      },
+      {
         "chapter_number": 8,
         "chapter_title": "Banks and the Magic of Finance",
-        "file_name": "ch8_banking_finance.png",
-        "url": "/assets/images/ch8_banking_finance.png",
-        "dimensions": {
-          "width": 1600,
-          "height": 900
-        },
-        "title": "Banking Intermediation, Compounding & UPI",
-        "hotspots": [
+        "summary": "This economics chapter explores financial infrastructure, detailing how commercial banks act as intermediaries connecting household savers with business borrowers. It covers interest spreads, compound interest dynamics (exponential growth), bank account types (Savings, Current, FD, RD), the regulatory authority of the Reserve Bank of India (RBI), passbooks, and modern digital payment platforms like UPI.",
+        "storyboard": [
           {
-            "hotspot_id": "hs_ch8_upi",
-            "title": "UPI Digital Payments",
-            "x_percent": 53,
-            "y_percent": 10,
-            "w_percent": 42,
-            "h_percent": 32,
-            "info": "NPCI real-time mobile QR payments accounting for 46% of global volume."
+            "scene_number": 1,
+            "heading": "Core Theme & Historical Context",
+            "narration": "Introduction to Banks and the Magic of Finance in Indian history and society."
+          },
+          {
+            "scene_number": 2,
+            "heading": "Key Mechanisms & Key Dynamics",
+            "narration": "Detailed exploration of institutional frameworks and regional case studies in Banks and the Magic of Finance."
           }
-        ]
+        ],
+        "key_takeaways": [
+          "Master the core principles of Banks and the Magic of Finance.",
+          "Understand real-world applications and historical/civic implications."
+        ],
+        "image_asset": {
+          "asset_id": "img_ch8",
+          "chapter_number": 8,
+          "chapter_title": "Banks and the Magic of Finance",
+          "file_name": "ch8_banking_finance.png",
+          "url": "/assets/images/ch8_banking_finance.png",
+          "dimensions": {
+            "width": 1600,
+            "height": 900
+          },
+          "title": "Banking Intermediation, Compounding & UPI",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch8_upi",
+              "title": "UPI Digital Payments",
+              "x_percent": 53,
+              "y_percent": 10,
+              "w_percent": 42,
+              "h_percent": 32,
+              "info": "NPCI real-time mobile QR payments accounting for 46% of global volume."
+            }
+          ]
+        }
       }
-    }
-  ],
-  "video_url": "https://notebooklm.link.google/LsMZyhHxqa53",
+    ]
+  },
+  "grade": "7",
+  "chapter_id": "G7-SOC-U05-C01",
+  "chapter_number": 1,
+  "chapter_title": "The Story of Indian Farming",
+  "title": "The Story of Indian Farming - Chapter Overview",
+  "video_url": "https://notebooklm.link.google/v7soc01",
+  "video_title": "The Story of Indian Farming Interactive Video Studio",
   "image_asset": {
     "title": "The Story of Indian Farming Concept Diagram",
-    "asset_url": "/assets/images/ch1_farming_soils.png",
-    "url": "/assets/images/ch1_farming_soils.png",
-    "filename": "ch1_farming_soils.png",
+    "asset_url": "/assets/images/ch01_concept_map.png",
+    "url": "/assets/images/ch01_concept_map.png",
+    "filename": "ch01_concept_map.png",
     "type": "16:9 Diagram",
     "hotspots": [
       {
         "id": "hs_1_1",
         "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot for The Story of Indian Farming."
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of The Story of Indian Farming."
       },
       {
         "id": "hs_1_2",
-        "label": "Key Takeaway",
-        "tooltip_explanation": "Essential learning takeaway for The Story of Indian Farming."
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for The Story of Indian Farming."
       }
     ]
   },
-  "chapter_title": "The Story of Indian Farming",
-  "title": "The Story of Indian Farming - Chapter Overview"
+  "unit": "U05",
+  "unit_number": 5,
+  "unit_title": "Unit 5"
 }

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gurukul Provenance",
+  "type": "object",
+  "required": [
+    "source_file",
+    "source_sha256",
+    "source_field_path",
+    "mapping_status"
+  ],
+  "properties": {
+    "source_file": {
+      "type": "string"
+    },
+    "source_sha256": {
+      "type": "string"
+    },
+    "source_record_id": {
+      "type": "string"
+    },
+    "source_field_path": {
+      "type": "string"
+    },
+    "mapping_status": {
+      "enum": [
+        "mapped",
+        "preserved_source_payload",
+        "unmapped",
+        "not_applicable"
+      ]
+    },
+    "mapping_target": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "migration_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

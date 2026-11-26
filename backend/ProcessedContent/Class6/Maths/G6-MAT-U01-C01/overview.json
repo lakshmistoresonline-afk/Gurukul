@@ -1,122 +1,1955 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Patterns in Mathematics",
-  "core_summary": "This foundational chapter establishes mathematics as the creative search for patterns, structural regularities, and the logical reasons behind why relationships occur, aligning with NEP 2020 pedagogical principles and the vision of Fields Medalist Prof. Manjul Bhargava. It introduces students to natural number sequences—including counting numbers (1, 2, 3, ...), even numbers (2, 4, 6, ...), odd numbers (1, 3, 5, ...), square numbers (1, 4, 9, ...), cube numbers (1, 8, 27, ...), powers of 2 (1, 2, 4, 8, 16, ...) and powers of 3 (1, 3, 9, 27, 81, ...), as well as the historic Virahānka (Fibonacci) numbers (1, 2, 3, 5, 8, 13, 21, ...). Beyond pure arithmetic, the chapter emphasizes visual representation using dot arrays (triangular, square, 3D cubic, and hexagonal arrays) to visually prove algebraic identities. Key identities include: (1) The sum of the first n consecutive odd numbers starting from 1 equals n^2, demonstrated geometrically through concentric L-shaped gnomon partitions; (2) Symmetrical up-and-down counting sums (1 + 2 + ... + n + ... + 2 + 1) equal n^2; and (3) Summing consecutive triangular numbers yields square numbers (T_n + T_{n-1} = n^2). The chapter further explores geometric shape patterns—such as regular polygon line counts, complete graph handshake connections, stacked shape arrays, and Koch snowflake fractal iterations—connecting mathematics to prosody (Pingala's matra counting), Indian classical music rhythms, nature's leaf arrangements, and architectural tilings. Students progress from concrete pattern observation to abstract algebraic formulation, establishing key prerequisite skills for middle school algebra and geometry.",
-  "key_concepts": [
-    "Mathematical Sequences and Term Rules: A sequence is an ordered list of numbers governed by a specific term-to-term or position-to-term rule. For counting numbers T_n = n; for even numbers T_n = 2n; for odd numbers T_n = 2n - 1; for powers of 2 P_n = 2^(n-1); and for powers of 3 P_n = 3^(n-1). Recognizing these functional rules allows students to predict distant terms without exhaustive manual generation.",
-    "Virahānka (Fibonacci) Recurrence Relation: Named after the ancient Indian linguist and mathematician Virahānka (c. 600 CE), this sequence begins with V_1 = 1 and V_2 = 2 (or 1, 1), where every subsequent term is the sum of the preceding two terms: V_n = V_{n-1} + V_{n-2} for n >= 3. It models poetic meters (short and long syllables), spiraling growth in sunflower seeds, and pinecone scale geometries.",
-    "Triangular Numbers and Formula: Triangular numbers (1, 3, 6, 10, 15, 21, ...) represent dots arranged in equilateral triangle arrays. The n-th triangular number T_n equals the sum of the first n natural numbers: T_n = 1 + 2 + 3 + ... + n = n(n + 1) / 2. They model complete graph connections and handshakes among n+1 individuals.",
-    "Square Numbers and L-Shaped Gnomon Decomposition: Square numbers (1, 4, 9, 16, 25, ...) represent n x n square dot grids. Adding an L-shaped boundary layer (gnomon) containing (2n - 1) dots to an (n-1) x (n-1) grid enlarges it to an n x n grid, providing a visual proof that 1 + 3 + 5 + ... + (2n - 1) = n^2.",
-    "Symmetrical Up-and-Down Sum Identity: Any symmetrical counting sequence that ascends from 1 to a central peak integer n and descends back to 1 (1 + 2 + ... + n + ... + 2 + 1) sums directly to n^2. Visually, two staircases of dots fit together around a central column to form a perfect n x n square array.",
-    "Sum of Consecutive Triangular Numbers: Combining any two adjacent triangular numbers T_n and T_{n-1} forms the square number n^2. Graphically, placing an upside-down triangular dot array of size T_{n-1} along the diagonal of a T_n triangular array creates an n x n square.",
-    "Hexagonal Numbers and Concentric Rings: Hexagonal numbers (1, 7, 19, 37, 61, ...) represent nested regular hexagonal dot rings. The number of dots added in the n-th ring is 6(n - 1), demonstrating how radial geometric expansion links to arithmetic progressions.",
-    "3D Cube Numbers and Spatial Arrays: Cube numbers (1, 8, 27, 64, 125, ...) represent three-dimensional n x n x n cubic arrays of spheres or blocks. The growth rate of 3D cubic structures foundationally links volume measurement to algebraic exponentiation.",
-    "Complete Graphs and Handshake Problems: In a complete graph of n vertices where every vertex is connected to every other vertex, the total number of connecting edges (or handshakes among n people) equals the (n-1)-th triangular number T_{n-1} = n(n - 1) / 2.",
-    "Fractal Iterations and Koch Snowflake: Iterative geometric transformations—such as replacing the middle third of each line segment with an equilateral triangle point—generate fractal patterns like the Koch Snowflake, where perimeter increases infinitely while area remains bounded.",
-    "Pattern Discovery as Art and Science: Mathematics integrates aesthetic symmetry with logical rigor. Discovering sequence rules allows mathematicians to formulate conjectures, test general hypotheses, and construct rigorous proofs.",
-    "Cross-Disciplinary Connections in Prosody and Music: Ancient Sanskrit prosodists (Pingala, Virahānka, Hemachandra) analyzed combinations of short (1 beat) and long (2 beats) syllables, discovering that the number of distinct rhythmic structures of duration n beats follows the Virahānka sequence."
-  ],
-  "key_terms": [
-    {
-      "term": "Pattern",
-      "definition": "A discernible regularity, structural repetition, or logical arrangement in numbers, spatial shapes, or events governed by a consistent rule."
-    },
-    {
-      "term": "Sequence",
-      "definition": "An ordered list of numbers generated sequentially according to a defined mathematical rule or function."
-    },
-    {
-      "term": "Virahānka (Fibonacci) Sequence",
-      "definition": "A famous number sequence starting 1, 2, 3, 5, 8, 13, 21... where each term after the first two is the sum of the preceding two terms."
-    },
-    {
-      "term": "Triangular Number",
-      "definition": "A number that can be arranged as an equilateral triangular pattern of dots, calculated as T_n = n(n + 1) / 2."
-    },
-    {
-      "term": "Square Number",
-      "definition": "An integer formed by multiplying an integer by itself (n^2), representable as a square grid array of dots."
-    },
-    {
-      "term": "Cube Number",
-      "definition": "A number formed by multiplying an integer by itself twice (n^3), representable as a 3D cubic array of blocks or dots."
-    },
-    {
-      "term": "Gnomon",
-      "definition": "An L-shaped geometric layer added to a square grid array to enlarge it to the next larger square size."
-    },
-    {
-      "term": "Symmetrical Counting Sum",
-      "definition": "A sequence of numbers increasing from 1 up to a peak integer n and decreasing back to 1, whose total sum equals n^2."
-    },
-    {
-      "term": "Hexagonal Number",
-      "definition": "A number representing dots arranged in concentric regular hexagonal rings, following the sequence 1, 7, 19, 37, 61..."
-    },
-    {
-      "term": "Complete Graph",
-      "definition": "A geometric network of n vertices where every pair of distinct vertices is connected by a unique edge, containing n(n-1)/2 total edges."
-    },
-    {
-      "term": "Fractal",
-      "definition": "A complex geometric shape exhibiting self-similarity across different scales generated through repeating iterative rules."
-    },
-    {
-      "term": "Term-to-Term Rule",
-      "definition": "A mathematical rule that explains how to calculate the next term in a sequence from the current term."
-    }
-  ],
-  "key_takeaways": [
-    "Mathematics is foundationally the systematic study of patterns and the investigation of their underlying logical proofs.",
-    "The sum of the first n consecutive odd numbers starting from 1 is always equal to n^2 (e.g., 1 + 3 + 5 + 7 + 9 = 5^2 = 25).",
-    "Symmetrical up-and-down counting sums peaking at n (1 + 2 + ... + n + ... + 2 + 1) equal n^2.",
-    "Summing two adjacent triangular numbers T_n and T_{n-1} always yields the square number n^2.",
-    "The n-th triangular number formula T_n = n(n + 1) / 2 counts total handshakes among n + 1 people.",
-    "The Virahānka sequence (1, 2, 3, 5, 8, 13...) originates from poetic meter analysis and describes natural spiral growth patterns.",
-    "Geometric dot arrays provide visual intuition and tangible proofs for algebraic expressions.",
-    "Recognizing sequence rules empowers students to solve complex numerical problems mentally without manual counting.",
-    "Cross-disciplinary connections link mathematical sequences to classical Indian music, poetry, art, architecture, and biology.",
-    "Decomposing square arrays into L-shaped gnomons demonstrates how geometric structure reflects arithmetic summation."
-  ],
-  "image_asset": {
-    "title": "Square Dot Arrays & L-Shaped Gnomon Decomposition",
-    "url": "/assets/images/ch1_gnomon_pattern.png",
-    "alt_text": "Visual decomposition of square dot arrays into odd gnomons",
-    "hotspots": [
-      {
-        "id": "hs1_gnomon_layer1",
-        "label": "Central Tile (n=1)",
-        "description": "First odd number term = 1. Forms a 1x1 square.",
-        "x_percent": 10.0,
-        "y_percent": 15.0,
-        "w_percent": 20.0,
-        "h_percent": 20.0
-      },
-      {
-        "id": "hs1_gnomon_layer2",
-        "label": "Second Gnomon Layer (+3)",
-        "description": "Second layer contains 3 dots. Total sum 1+3 = 4 (2x2 square).",
-        "x_percent": 35.0,
-        "y_percent": 15.0,
-        "w_percent": 25.0,
-        "h_percent": 25.0
-      },
-      {
-        "id": "hs1_gnomon_layer3",
-        "label": "Third Gnomon Layer (+5)",
-        "description": "Third layer contains 5 dots. Total sum 1+3+5 = 9 (3x3 square).",
-        "x_percent": 65.0,
-        "y_percent": 15.0,
-        "w_percent": 28.0,
-        "h_percent": 28.0
-      }
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_e2bac611ea519200",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_6",
+    "class_level": 6
+  },
+  "subject": "Maths",
+  "artifact": {
+    "artifact_type": "overview",
+    "source_file_name": "04-Overview-v2.json",
+    "source_relative_path": "Contents/Class 6/Maths/Source Files/04-Overview-v2.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "b2553a10855ff86bb99bd48c86a4facc331f207fb8ee0f359d2132415d5c7eb8",
+    "source_semantic_sha256": "36070d7ed1228e80369d0c235f99d5546d0a9bff1dd703dc2b30deae2d3f5391",
+    "source_byte_length": 82987,
+    "source_encoding": "utf-8",
+    "source_field_count": 578,
+    "field_inventory": [
+      "$.book_title",
+      "$.total_chapters",
+      "$.deduplication_applied",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].core_summary",
+      "$.chapters[0].key_concepts",
+      "$.chapters[0].key_terms",
+      "$.chapters[0].key_terms[0].term",
+      "$.chapters[0].key_terms[0].definition",
+      "$.chapters[0].key_terms[1].term",
+      "$.chapters[0].key_terms[1].definition",
+      "$.chapters[0].key_terms[2].term",
+      "$.chapters[0].key_terms[2].definition",
+      "$.chapters[0].key_terms[3].term",
+      "$.chapters[0].key_terms[3].definition",
+      "$.chapters[0].key_terms[4].term",
+      "$.chapters[0].key_terms[4].definition",
+      "$.chapters[0].key_terms[5].term",
+      "$.chapters[0].key_terms[5].definition",
+      "$.chapters[0].key_terms[6].term",
+      "$.chapters[0].key_terms[6].definition",
+      "$.chapters[0].key_terms[7].term",
+      "$.chapters[0].key_terms[7].definition",
+      "$.chapters[0].key_terms[8].term",
+      "$.chapters[0].key_terms[8].definition",
+      "$.chapters[0].key_terms[9].term",
+      "$.chapters[0].key_terms[9].definition",
+      "$.chapters[0].key_terms[10].term",
+      "$.chapters[0].key_terms[10].definition",
+      "$.chapters[0].key_terms[11].term",
+      "$.chapters[0].key_terms[11].definition",
+      "$.chapters[0].key_takeaways",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.url",
+      "$.chapters[0].image_asset.alt_text",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].id",
+      "$.chapters[0].image_asset.hotspots[0].label",
+      "$.chapters[0].image_asset.hotspots[0].description",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].id",
+      "$.chapters[0].image_asset.hotspots[1].label",
+      "$.chapters[0].image_asset.hotspots[1].description",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].id",
+      "$.chapters[0].image_asset.hotspots[2].label",
+      "$.chapters[0].image_asset.hotspots[2].description",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].storyboard",
+      "$.chapters[0].storyboard.scene_1",
+      "$.chapters[0].storyboard.scene_2",
+      "$.chapters[0].storyboard.scene_3",
+      "$.chapters[0].storyboard.scene_4",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].core_summary",
+      "$.chapters[1].key_concepts",
+      "$.chapters[1].key_terms",
+      "$.chapters[1].key_terms[0].term",
+      "$.chapters[1].key_terms[0].definition",
+      "$.chapters[1].key_terms[1].term",
+      "$.chapters[1].key_terms[1].definition",
+      "$.chapters[1].key_terms[2].term",
+      "$.chapters[1].key_terms[2].definition",
+      "$.chapters[1].key_terms[3].term",
+      "$.chapters[1].key_terms[3].definition",
+      "$.chapters[1].key_terms[4].term",
+      "$.chapters[1].key_terms[4].definition",
+      "$.chapters[1].key_terms[5].term",
+      "$.chapters[1].key_terms[5].definition",
+      "$.chapters[1].key_terms[6].term",
+      "$.chapters[1].key_terms[6].definition",
+      "$.chapters[1].key_terms[7].term",
+      "$.chapters[1].key_terms[7].definition",
+      "$.chapters[1].key_terms[8].term",
+      "$.chapters[1].key_terms[8].definition",
+      "$.chapters[1].key_terms[9].term",
+      "$.chapters[1].key_terms[9].definition",
+      "$.chapters[1].key_terms[10].term",
+      "$.chapters[1].key_terms[10].definition",
+      "$.chapters[1].key_terms[11].term",
+      "$.chapters[1].key_terms[11].definition",
+      "$.chapters[1].key_takeaways",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.url",
+      "$.chapters[1].image_asset.alt_text",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].id",
+      "$.chapters[1].image_asset.hotspots[0].label",
+      "$.chapters[1].image_asset.hotspots[0].description",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].id",
+      "$.chapters[1].image_asset.hotspots[1].label",
+      "$.chapters[1].image_asset.hotspots[1].description",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].id",
+      "$.chapters[1].image_asset.hotspots[2].label",
+      "$.chapters[1].image_asset.hotspots[2].description",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].image_asset.hotspots[3].id",
+      "$.chapters[1].image_asset.hotspots[3].label",
+      "$.chapters[1].image_asset.hotspots[3].description",
+      "$.chapters[1].image_asset.hotspots[3].x_percent",
+      "$.chapters[1].image_asset.hotspots[3].y_percent",
+      "$.chapters[1].image_asset.hotspots[3].w_percent",
+      "$.chapters[1].image_asset.hotspots[3].h_percent",
+      "$.chapters[1].image_asset.hotspots[4].id",
+      "$.chapters[1].image_asset.hotspots[4].label",
+      "$.chapters[1].image_asset.hotspots[4].description",
+      "$.chapters[1].image_asset.hotspots[4].x_percent",
+      "$.chapters[1].image_asset.hotspots[4].y_percent",
+      "$.chapters[1].image_asset.hotspots[4].w_percent",
+      "$.chapters[1].image_asset.hotspots[4].h_percent",
+      "$.chapters[1].storyboard",
+      "$.chapters[1].storyboard.scene_1",
+      "$.chapters[1].storyboard.scene_2",
+      "$.chapters[1].storyboard.scene_3",
+      "$.chapters[1].storyboard.scene_4",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].core_summary",
+      "$.chapters[2].key_concepts",
+      "$.chapters[2].key_terms",
+      "$.chapters[2].key_terms[0].term",
+      "$.chapters[2].key_terms[0].definition",
+      "$.chapters[2].key_terms[1].term",
+      "$.chapters[2].key_terms[1].definition",
+      "$.chapters[2].key_terms[2].term",
+      "$.chapters[2].key_terms[2].definition",
+      "$.chapters[2].key_terms[3].term",
+      "$.chapters[2].key_terms[3].definition",
+      "$.chapters[2].key_terms[4].term",
+      "$.chapters[2].key_terms[4].definition",
+      "$.chapters[2].key_terms[5].term",
+      "$.chapters[2].key_terms[5].definition",
+      "$.chapters[2].key_terms[6].term",
+      "$.chapters[2].key_terms[6].definition",
+      "$.chapters[2].key_terms[7].term",
+      "$.chapters[2].key_terms[7].definition",
+      "$.chapters[2].key_terms[8].term",
+      "$.chapters[2].key_terms[8].definition",
+      "$.chapters[2].key_terms[9].term",
+      "$.chapters[2].key_terms[9].definition",
+      "$.chapters[2].key_terms[10].term",
+      "$.chapters[2].key_terms[10].definition",
+      "$.chapters[2].key_terms[11].term",
+      "$.chapters[2].key_terms[11].definition",
+      "$.chapters[2].key_takeaways",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.url",
+      "$.chapters[2].image_asset.alt_text",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].id",
+      "$.chapters[2].image_asset.hotspots[0].label",
+      "$.chapters[2].image_asset.hotspots[0].description",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].storyboard",
+      "$.chapters[2].storyboard.scene_1",
+      "$.chapters[2].storyboard.scene_2",
+      "$.chapters[2].storyboard.scene_3",
+      "$.chapters[2].storyboard.scene_4",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].core_summary",
+      "$.chapters[3].key_concepts",
+      "$.chapters[3].key_terms",
+      "$.chapters[3].key_terms[0].term",
+      "$.chapters[3].key_terms[0].definition",
+      "$.chapters[3].key_terms[1].term",
+      "$.chapters[3].key_terms[1].definition",
+      "$.chapters[3].key_terms[2].term",
+      "$.chapters[3].key_terms[2].definition",
+      "$.chapters[3].key_terms[3].term",
+      "$.chapters[3].key_terms[3].definition",
+      "$.chapters[3].key_terms[4].term",
+      "$.chapters[3].key_terms[4].definition",
+      "$.chapters[3].key_terms[5].term",
+      "$.chapters[3].key_terms[5].definition",
+      "$.chapters[3].key_terms[6].term",
+      "$.chapters[3].key_terms[6].definition",
+      "$.chapters[3].key_terms[7].term",
+      "$.chapters[3].key_terms[7].definition",
+      "$.chapters[3].key_terms[8].term",
+      "$.chapters[3].key_terms[8].definition",
+      "$.chapters[3].key_terms[9].term",
+      "$.chapters[3].key_terms[9].definition",
+      "$.chapters[3].key_terms[10].term",
+      "$.chapters[3].key_terms[10].definition",
+      "$.chapters[3].key_terms[11].term",
+      "$.chapters[3].key_terms[11].definition",
+      "$.chapters[3].key_takeaways",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.url",
+      "$.chapters[3].image_asset.alt_text",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].id",
+      "$.chapters[3].image_asset.hotspots[0].label",
+      "$.chapters[3].image_asset.hotspots[0].description",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].storyboard",
+      "$.chapters[3].storyboard.scene_1",
+      "$.chapters[3].storyboard.scene_2",
+      "$.chapters[3].storyboard.scene_3",
+      "$.chapters[3].storyboard.scene_4",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].core_summary",
+      "$.chapters[4].key_concepts",
+      "$.chapters[4].key_terms",
+      "$.chapters[4].key_terms[0].term",
+      "$.chapters[4].key_terms[0].definition",
+      "$.chapters[4].key_terms[1].term",
+      "$.chapters[4].key_terms[1].definition",
+      "$.chapters[4].key_terms[2].term",
+      "$.chapters[4].key_terms[2].definition",
+      "$.chapters[4].key_terms[3].term",
+      "$.chapters[4].key_terms[3].definition",
+      "$.chapters[4].key_terms[4].term",
+      "$.chapters[4].key_terms[4].definition",
+      "$.chapters[4].key_terms[5].term",
+      "$.chapters[4].key_terms[5].definition",
+      "$.chapters[4].key_terms[6].term",
+      "$.chapters[4].key_terms[6].definition",
+      "$.chapters[4].key_terms[7].term",
+      "$.chapters[4].key_terms[7].definition",
+      "$.chapters[4].key_terms[8].term",
+      "$.chapters[4].key_terms[8].definition",
+      "$.chapters[4].key_terms[9].term",
+      "$.chapters[4].key_terms[9].definition",
+      "$.chapters[4].key_terms[10].term",
+      "$.chapters[4].key_terms[10].definition",
+      "$.chapters[4].key_terms[11].term",
+      "$.chapters[4].key_terms[11].definition",
+      "$.chapters[4].key_takeaways",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.url",
+      "$.chapters[4].image_asset.alt_text",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].id",
+      "$.chapters[4].image_asset.hotspots[0].label",
+      "$.chapters[4].image_asset.hotspots[0].description",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].id",
+      "$.chapters[4].image_asset.hotspots[1].label",
+      "$.chapters[4].image_asset.hotspots[1].description",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[2].id",
+      "$.chapters[4].image_asset.hotspots[2].label",
+      "$.chapters[4].image_asset.hotspots[2].description",
+      "$.chapters[4].image_asset.hotspots[2].x_percent",
+      "$.chapters[4].image_asset.hotspots[2].y_percent",
+      "$.chapters[4].image_asset.hotspots[2].w_percent",
+      "$.chapters[4].image_asset.hotspots[2].h_percent",
+      "$.chapters[4].storyboard",
+      "$.chapters[4].storyboard.scene_1",
+      "$.chapters[4].storyboard.scene_2",
+      "$.chapters[4].storyboard.scene_3",
+      "$.chapters[4].storyboard.scene_4",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].core_summary",
+      "$.chapters[5].key_concepts",
+      "$.chapters[5].key_terms",
+      "$.chapters[5].key_terms[0].term",
+      "$.chapters[5].key_terms[0].definition",
+      "$.chapters[5].key_terms[1].term",
+      "$.chapters[5].key_terms[1].definition",
+      "$.chapters[5].key_terms[2].term",
+      "$.chapters[5].key_terms[2].definition",
+      "$.chapters[5].key_terms[3].term",
+      "$.chapters[5].key_terms[3].definition",
+      "$.chapters[5].key_terms[4].term",
+      "$.chapters[5].key_terms[4].definition",
+      "$.chapters[5].key_terms[5].term",
+      "$.chapters[5].key_terms[5].definition",
+      "$.chapters[5].key_terms[6].term",
+      "$.chapters[5].key_terms[6].definition",
+      "$.chapters[5].key_terms[7].term",
+      "$.chapters[5].key_terms[7].definition",
+      "$.chapters[5].key_terms[8].term",
+      "$.chapters[5].key_terms[8].definition",
+      "$.chapters[5].key_terms[9].term",
+      "$.chapters[5].key_terms[9].definition",
+      "$.chapters[5].key_terms[10].term",
+      "$.chapters[5].key_terms[10].definition",
+      "$.chapters[5].key_terms[11].term",
+      "$.chapters[5].key_terms[11].definition",
+      "$.chapters[5].key_takeaways",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.url",
+      "$.chapters[5].image_asset.alt_text",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].id",
+      "$.chapters[5].image_asset.hotspots[0].label",
+      "$.chapters[5].image_asset.hotspots[0].description",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[1].id",
+      "$.chapters[5].image_asset.hotspots[1].label",
+      "$.chapters[5].image_asset.hotspots[1].description",
+      "$.chapters[5].image_asset.hotspots[1].x_percent",
+      "$.chapters[5].image_asset.hotspots[1].y_percent",
+      "$.chapters[5].image_asset.hotspots[1].w_percent",
+      "$.chapters[5].image_asset.hotspots[1].h_percent",
+      "$.chapters[5].storyboard",
+      "$.chapters[5].storyboard.scene_1",
+      "$.chapters[5].storyboard.scene_2",
+      "$.chapters[5].storyboard.scene_3",
+      "$.chapters[5].storyboard.scene_4",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].core_summary",
+      "$.chapters[6].key_concepts",
+      "$.chapters[6].key_terms",
+      "$.chapters[6].key_terms[0].term",
+      "$.chapters[6].key_terms[0].definition",
+      "$.chapters[6].key_terms[1].term",
+      "$.chapters[6].key_terms[1].definition",
+      "$.chapters[6].key_terms[2].term",
+      "$.chapters[6].key_terms[2].definition",
+      "$.chapters[6].key_terms[3].term",
+      "$.chapters[6].key_terms[3].definition",
+      "$.chapters[6].key_terms[4].term",
+      "$.chapters[6].key_terms[4].definition",
+      "$.chapters[6].key_terms[5].term",
+      "$.chapters[6].key_terms[5].definition",
+      "$.chapters[6].key_terms[6].term",
+      "$.chapters[6].key_terms[6].definition",
+      "$.chapters[6].key_terms[7].term",
+      "$.chapters[6].key_terms[7].definition",
+      "$.chapters[6].key_terms[8].term",
+      "$.chapters[6].key_terms[8].definition",
+      "$.chapters[6].key_terms[9].term",
+      "$.chapters[6].key_terms[9].definition",
+      "$.chapters[6].key_terms[10].term",
+      "$.chapters[6].key_terms[10].definition",
+      "$.chapters[6].key_terms[11].term",
+      "$.chapters[6].key_terms[11].definition",
+      "$.chapters[6].key_takeaways",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.url",
+      "$.chapters[6].image_asset.alt_text",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].id",
+      "$.chapters[6].image_asset.hotspots[0].label",
+      "$.chapters[6].image_asset.hotspots[0].description",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].id",
+      "$.chapters[6].image_asset.hotspots[1].label",
+      "$.chapters[6].image_asset.hotspots[1].description",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[2].id",
+      "$.chapters[6].image_asset.hotspots[2].label",
+      "$.chapters[6].image_asset.hotspots[2].description",
+      "$.chapters[6].image_asset.hotspots[2].x_percent",
+      "$.chapters[6].image_asset.hotspots[2].y_percent",
+      "$.chapters[6].image_asset.hotspots[2].w_percent",
+      "$.chapters[6].image_asset.hotspots[2].h_percent",
+      "$.chapters[6].storyboard",
+      "$.chapters[6].storyboard.scene_1",
+      "$.chapters[6].storyboard.scene_2",
+      "$.chapters[6].storyboard.scene_3",
+      "$.chapters[6].storyboard.scene_4",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].core_summary",
+      "$.chapters[7].key_concepts",
+      "$.chapters[7].key_terms",
+      "$.chapters[7].key_terms[0].term",
+      "$.chapters[7].key_terms[0].definition",
+      "$.chapters[7].key_terms[1].term",
+      "$.chapters[7].key_terms[1].definition",
+      "$.chapters[7].key_terms[2].term",
+      "$.chapters[7].key_terms[2].definition",
+      "$.chapters[7].key_terms[3].term",
+      "$.chapters[7].key_terms[3].definition",
+      "$.chapters[7].key_terms[4].term",
+      "$.chapters[7].key_terms[4].definition",
+      "$.chapters[7].key_terms[5].term",
+      "$.chapters[7].key_terms[5].definition",
+      "$.chapters[7].key_terms[6].term",
+      "$.chapters[7].key_terms[6].definition",
+      "$.chapters[7].key_terms[7].term",
+      "$.chapters[7].key_terms[7].definition",
+      "$.chapters[7].key_terms[8].term",
+      "$.chapters[7].key_terms[8].definition",
+      "$.chapters[7].key_terms[9].term",
+      "$.chapters[7].key_terms[9].definition",
+      "$.chapters[7].key_terms[10].term",
+      "$.chapters[7].key_terms[10].definition",
+      "$.chapters[7].key_terms[11].term",
+      "$.chapters[7].key_terms[11].definition",
+      "$.chapters[7].key_takeaways",
+      "$.chapters[7].image_asset",
+      "$.chapters[7].image_asset.title",
+      "$.chapters[7].image_asset.url",
+      "$.chapters[7].image_asset.alt_text",
+      "$.chapters[7].image_asset.hotspots",
+      "$.chapters[7].image_asset.hotspots[0].id",
+      "$.chapters[7].image_asset.hotspots[0].label",
+      "$.chapters[7].image_asset.hotspots[0].description",
+      "$.chapters[7].image_asset.hotspots[0].x_percent",
+      "$.chapters[7].image_asset.hotspots[0].y_percent",
+      "$.chapters[7].image_asset.hotspots[0].w_percent",
+      "$.chapters[7].image_asset.hotspots[0].h_percent",
+      "$.chapters[7].storyboard",
+      "$.chapters[7].storyboard.scene_1",
+      "$.chapters[7].storyboard.scene_2",
+      "$.chapters[7].storyboard.scene_3",
+      "$.chapters[7].storyboard.scene_4",
+      "$.chapters[8].chapter_number",
+      "$.chapters[8].chapter_title",
+      "$.chapters[8].core_summary",
+      "$.chapters[8].key_concepts",
+      "$.chapters[8].key_terms",
+      "$.chapters[8].key_terms[0].term",
+      "$.chapters[8].key_terms[0].definition",
+      "$.chapters[8].key_terms[1].term",
+      "$.chapters[8].key_terms[1].definition",
+      "$.chapters[8].key_terms[2].term",
+      "$.chapters[8].key_terms[2].definition",
+      "$.chapters[8].key_terms[3].term",
+      "$.chapters[8].key_terms[3].definition",
+      "$.chapters[8].key_terms[4].term",
+      "$.chapters[8].key_terms[4].definition",
+      "$.chapters[8].key_terms[5].term",
+      "$.chapters[8].key_terms[5].definition",
+      "$.chapters[8].key_terms[6].term",
+      "$.chapters[8].key_terms[6].definition",
+      "$.chapters[8].key_terms[7].term",
+      "$.chapters[8].key_terms[7].definition",
+      "$.chapters[8].key_terms[8].term",
+      "$.chapters[8].key_terms[8].definition",
+      "$.chapters[8].key_terms[9].term",
+      "$.chapters[8].key_terms[9].definition",
+      "$.chapters[8].key_terms[10].term",
+      "$.chapters[8].key_terms[10].definition",
+      "$.chapters[8].key_terms[11].term",
+      "$.chapters[8].key_terms[11].definition",
+      "$.chapters[8].key_takeaways",
+      "$.chapters[8].image_asset",
+      "$.chapters[8].image_asset.title",
+      "$.chapters[8].image_asset.url",
+      "$.chapters[8].image_asset.alt_text",
+      "$.chapters[8].image_asset.hotspots",
+      "$.chapters[8].image_asset.hotspots[0].id",
+      "$.chapters[8].image_asset.hotspots[0].label",
+      "$.chapters[8].image_asset.hotspots[0].description",
+      "$.chapters[8].image_asset.hotspots[0].x_percent",
+      "$.chapters[8].image_asset.hotspots[0].y_percent",
+      "$.chapters[8].image_asset.hotspots[0].w_percent",
+      "$.chapters[8].image_asset.hotspots[0].h_percent",
+      "$.chapters[8].storyboard",
+      "$.chapters[8].storyboard.scene_1",
+      "$.chapters[8].storyboard.scene_2",
+      "$.chapters[8].storyboard.scene_3",
+      "$.chapters[8].storyboard.scene_4",
+      "$.chapters[9].chapter_number",
+      "$.chapters[9].chapter_title",
+      "$.chapters[9].core_summary",
+      "$.chapters[9].key_concepts",
+      "$.chapters[9].key_terms",
+      "$.chapters[9].key_terms[0].term",
+      "$.chapters[9].key_terms[0].definition",
+      "$.chapters[9].key_terms[1].term",
+      "$.chapters[9].key_terms[1].definition",
+      "$.chapters[9].key_terms[2].term",
+      "$.chapters[9].key_terms[2].definition",
+      "$.chapters[9].key_terms[3].term",
+      "$.chapters[9].key_terms[3].definition",
+      "$.chapters[9].key_terms[4].term",
+      "$.chapters[9].key_terms[4].definition",
+      "$.chapters[9].key_terms[5].term",
+      "$.chapters[9].key_terms[5].definition",
+      "$.chapters[9].key_terms[6].term",
+      "$.chapters[9].key_terms[6].definition",
+      "$.chapters[9].key_terms[7].term",
+      "$.chapters[9].key_terms[7].definition",
+      "$.chapters[9].key_terms[8].term",
+      "$.chapters[9].key_terms[8].definition",
+      "$.chapters[9].key_terms[9].term",
+      "$.chapters[9].key_terms[9].definition",
+      "$.chapters[9].key_terms[10].term",
+      "$.chapters[9].key_terms[10].definition",
+      "$.chapters[9].key_terms[11].term",
+      "$.chapters[9].key_terms[11].definition",
+      "$.chapters[9].key_takeaways",
+      "$.chapters[9].image_asset",
+      "$.chapters[9].image_asset.title",
+      "$.chapters[9].image_asset.url",
+      "$.chapters[9].image_asset.alt_text",
+      "$.chapters[9].image_asset.hotspots",
+      "$.chapters[9].image_asset.hotspots[0].id",
+      "$.chapters[9].image_asset.hotspots[0].label",
+      "$.chapters[9].image_asset.hotspots[0].description",
+      "$.chapters[9].image_asset.hotspots[0].x_percent",
+      "$.chapters[9].image_asset.hotspots[0].y_percent",
+      "$.chapters[9].image_asset.hotspots[0].w_percent",
+      "$.chapters[9].image_asset.hotspots[0].h_percent",
+      "$.chapters[9].image_asset.hotspots[1].id",
+      "$.chapters[9].image_asset.hotspots[1].label",
+      "$.chapters[9].image_asset.hotspots[1].description",
+      "$.chapters[9].image_asset.hotspots[1].x_percent",
+      "$.chapters[9].image_asset.hotspots[1].y_percent",
+      "$.chapters[9].image_asset.hotspots[1].w_percent",
+      "$.chapters[9].image_asset.hotspots[1].h_percent",
+      "$.chapters[9].image_asset.hotspots[2].id",
+      "$.chapters[9].image_asset.hotspots[2].label",
+      "$.chapters[9].image_asset.hotspots[2].description",
+      "$.chapters[9].image_asset.hotspots[2].x_percent",
+      "$.chapters[9].image_asset.hotspots[2].y_percent",
+      "$.chapters[9].image_asset.hotspots[2].w_percent",
+      "$.chapters[9].image_asset.hotspots[2].h_percent",
+      "$.chapters[9].storyboard",
+      "$.chapters[9].storyboard.scene_1",
+      "$.chapters[9].storyboard.scene_2",
+      "$.chapters[9].storyboard.scene_3",
+      "$.chapters[9].storyboard.scene_4",
+      "$.dashboard_config",
+      "$.dashboard_config.theme",
+      "$.dashboard_config.version",
+      "$.dashboard_config.modules_enabled",
+      "$.dashboard_config.default_view",
+      "$.dashboard_config.interactive_features",
+      "$.dashboard_config.interactive_features.hotspot_overlays",
+      "$.dashboard_config.interactive_features.zoomable_mindmaps",
+      "$.dashboard_config.interactive_features.3d_flip_flashcards",
+      "$.dashboard_config.interactive_features.self_scoring_quiz",
+      "$.dashboard_config.interactive_features.timed_exams",
+      "$.dashboard_config.interactive_features.gamified_drills",
+      "$.dashboard_config.interactive_features.portfolio_rubric_sliders"
     ]
   },
-  "storyboard": {
-    "scene_1": "Introduction to Patterns in Mathematics through real-world observation.",
-    "scene_2": "Interactive exploration of mathematical patterns and definitions.",
-    "scene_3": "Hands-on problem solving and pattern verification.",
-    "scene_4": "Synthesis of key takeaways and real-world applications."
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Patterns in Mathematics",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "Square Dot Arrays & L-Shaped Gnomon Decomposition",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Lines and Angles",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "Angle Classifications & Degree Rotations",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Number Play",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "Chapter 3 Visual Overview - Number Play",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Data Handling and Presentation",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "Chapter 4 Visual Overview - Data Handling and Presentation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Prime Time",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "Sieve of Eratosthenes Prime Number Grid",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Perimeter and Area",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "Perimeter Boundary vs Enclosed Surface Area",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Fractions",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "Fraction Wall Unit Fraction Comparison",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Playing with Constructions",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].image_asset",
+        "source_title_field": "title",
+        "source_title": "Chapter 8 Visual Overview - Playing with Constructions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[8]",
+        "source_title_field": "chapter_title",
+        "source_title": "Symmetry",
+        "source_number_field": "chapter_number",
+        "source_number": 9
+      },
+      {
+        "source_path": "$.chapters[8].image_asset",
+        "source_title_field": "title",
+        "source_title": "Chapter 9 Visual Overview - Symmetry",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[9]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Other Side of Zero",
+        "source_number_field": "chapter_number",
+        "source_number": 10
+      },
+      {
+        "source_path": "$.chapters[9].image_asset",
+        "source_title_field": "title",
+        "source_title": "Integer Number Line & Elevator Level Model",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 20,
+    "normalization_status": "indexed_not_content_rewritten"
   },
-  "video_url": "https://notebooklm.link.google/R5B29ygvkiPK"
+  "source_data": {
+    "book_title": "Class 6 Mathematics - Ganita Prakash (NCERT Curriculum)",
+    "total_chapters": 10,
+    "deduplication_applied": true,
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Patterns in Mathematics",
+        "core_summary": "This foundational chapter establishes mathematics as the creative search for patterns, structural regularities, and the logical reasons behind why relationships occur, aligning with NEP 2020 pedagogical principles and the vision of Fields Medalist Prof. Manjul Bhargava. It introduces students to natural number sequences—including counting numbers (1, 2, 3, ...), even numbers (2, 4, 6, ...), odd numbers (1, 3, 5, ...), square numbers (1, 4, 9, ...), cube numbers (1, 8, 27, ...), powers of 2 (1, 2, 4, 8, 16, ...) and powers of 3 (1, 3, 9, 27, 81, ...), as well as the historic Virahānka (Fibonacci) numbers (1, 2, 3, 5, 8, 13, 21, ...). Beyond pure arithmetic, the chapter emphasizes visual representation using dot arrays (triangular, square, 3D cubic, and hexagonal arrays) to visually prove algebraic identities. Key identities include: (1) The sum of the first n consecutive odd numbers starting from 1 equals n^2, demonstrated geometrically through concentric L-shaped gnomon partitions; (2) Symmetrical up-and-down counting sums (1 + 2 + ... + n + ... + 2 + 1) equal n^2; and (3) Summing consecutive triangular numbers yields square numbers (T_n + T_{n-1} = n^2). The chapter further explores geometric shape patterns—such as regular polygon line counts, complete graph handshake connections, stacked shape arrays, and Koch snowflake fractal iterations—connecting mathematics to prosody (Pingala's matra counting), Indian classical music rhythms, nature's leaf arrangements, and architectural tilings. Students progress from concrete pattern observation to abstract algebraic formulation, establishing key prerequisite skills for middle school algebra and geometry.",
+        "key_concepts": [
+          "Mathematical Sequences and Term Rules: A sequence is an ordered list of numbers governed by a specific term-to-term or position-to-term rule. For counting numbers T_n = n; for even numbers T_n = 2n; for odd numbers T_n = 2n - 1; for powers of 2 P_n = 2^(n-1); and for powers of 3 P_n = 3^(n-1). Recognizing these functional rules allows students to predict distant terms without exhaustive manual generation.",
+          "Virahānka (Fibonacci) Recurrence Relation: Named after the ancient Indian linguist and mathematician Virahānka (c. 600 CE), this sequence begins with V_1 = 1 and V_2 = 2 (or 1, 1), where every subsequent term is the sum of the preceding two terms: V_n = V_{n-1} + V_{n-2} for n >= 3. It models poetic meters (short and long syllables), spiraling growth in sunflower seeds, and pinecone scale geometries.",
+          "Triangular Numbers and Formula: Triangular numbers (1, 3, 6, 10, 15, 21, ...) represent dots arranged in equilateral triangle arrays. The n-th triangular number T_n equals the sum of the first n natural numbers: T_n = 1 + 2 + 3 + ... + n = n(n + 1) / 2. They model complete graph connections and handshakes among n+1 individuals.",
+          "Square Numbers and L-Shaped Gnomon Decomposition: Square numbers (1, 4, 9, 16, 25, ...) represent n x n square dot grids. Adding an L-shaped boundary layer (gnomon) containing (2n - 1) dots to an (n-1) x (n-1) grid enlarges it to an n x n grid, providing a visual proof that 1 + 3 + 5 + ... + (2n - 1) = n^2.",
+          "Symmetrical Up-and-Down Sum Identity: Any symmetrical counting sequence that ascends from 1 to a central peak integer n and descends back to 1 (1 + 2 + ... + n + ... + 2 + 1) sums directly to n^2. Visually, two staircases of dots fit together around a central column to form a perfect n x n square array.",
+          "Sum of Consecutive Triangular Numbers: Combining any two adjacent triangular numbers T_n and T_{n-1} forms the square number n^2. Graphically, placing an upside-down triangular dot array of size T_{n-1} along the diagonal of a T_n triangular array creates an n x n square.",
+          "Hexagonal Numbers and Concentric Rings: Hexagonal numbers (1, 7, 19, 37, 61, ...) represent nested regular hexagonal dot rings. The number of dots added in the n-th ring is 6(n - 1), demonstrating how radial geometric expansion links to arithmetic progressions.",
+          "3D Cube Numbers and Spatial Arrays: Cube numbers (1, 8, 27, 64, 125, ...) represent three-dimensional n x n x n cubic arrays of spheres or blocks. The growth rate of 3D cubic structures foundationally links volume measurement to algebraic exponentiation.",
+          "Complete Graphs and Handshake Problems: In a complete graph of n vertices where every vertex is connected to every other vertex, the total number of connecting edges (or handshakes among n people) equals the (n-1)-th triangular number T_{n-1} = n(n - 1) / 2.",
+          "Fractal Iterations and Koch Snowflake: Iterative geometric transformations—such as replacing the middle third of each line segment with an equilateral triangle point—generate fractal patterns like the Koch Snowflake, where perimeter increases infinitely while area remains bounded.",
+          "Pattern Discovery as Art and Science: Mathematics integrates aesthetic symmetry with logical rigor. Discovering sequence rules allows mathematicians to formulate conjectures, test general hypotheses, and construct rigorous proofs.",
+          "Cross-Disciplinary Connections in Prosody and Music: Ancient Sanskrit prosodists (Pingala, Virahānka, Hemachandra) analyzed combinations of short (1 beat) and long (2 beats) syllables, discovering that the number of distinct rhythmic structures of duration n beats follows the Virahānka sequence."
+        ],
+        "key_terms": [
+          {
+            "term": "Pattern",
+            "definition": "A discernible regularity, structural repetition, or logical arrangement in numbers, spatial shapes, or events governed by a consistent rule."
+          },
+          {
+            "term": "Sequence",
+            "definition": "An ordered list of numbers generated sequentially according to a defined mathematical rule or function."
+          },
+          {
+            "term": "Virahānka (Fibonacci) Sequence",
+            "definition": "A famous number sequence starting 1, 2, 3, 5, 8, 13, 21... where each term after the first two is the sum of the preceding two terms."
+          },
+          {
+            "term": "Triangular Number",
+            "definition": "A number that can be arranged as an equilateral triangular pattern of dots, calculated as T_n = n(n + 1) / 2."
+          },
+          {
+            "term": "Square Number",
+            "definition": "An integer formed by multiplying an integer by itself (n^2), representable as a square grid array of dots."
+          },
+          {
+            "term": "Cube Number",
+            "definition": "A number formed by multiplying an integer by itself twice (n^3), representable as a 3D cubic array of blocks or dots."
+          },
+          {
+            "term": "Gnomon",
+            "definition": "An L-shaped geometric layer added to a square grid array to enlarge it to the next larger square size."
+          },
+          {
+            "term": "Symmetrical Counting Sum",
+            "definition": "A sequence of numbers increasing from 1 up to a peak integer n and decreasing back to 1, whose total sum equals n^2."
+          },
+          {
+            "term": "Hexagonal Number",
+            "definition": "A number representing dots arranged in concentric regular hexagonal rings, following the sequence 1, 7, 19, 37, 61..."
+          },
+          {
+            "term": "Complete Graph",
+            "definition": "A geometric network of n vertices where every pair of distinct vertices is connected by a unique edge, containing n(n-1)/2 total edges."
+          },
+          {
+            "term": "Fractal",
+            "definition": "A complex geometric shape exhibiting self-similarity across different scales generated through repeating iterative rules."
+          },
+          {
+            "term": "Term-to-Term Rule",
+            "definition": "A mathematical rule that explains how to calculate the next term in a sequence from the current term."
+          }
+        ],
+        "key_takeaways": [
+          "Mathematics is foundationally the systematic study of patterns and the investigation of their underlying logical proofs.",
+          "The sum of the first n consecutive odd numbers starting from 1 is always equal to n^2 (e.g., 1 + 3 + 5 + 7 + 9 = 5^2 = 25).",
+          "Symmetrical up-and-down counting sums peaking at n (1 + 2 + ... + n + ... + 2 + 1) equal n^2.",
+          "Summing two adjacent triangular numbers T_n and T_{n-1} always yields the square number n^2.",
+          "The n-th triangular number formula T_n = n(n + 1) / 2 counts total handshakes among n + 1 people.",
+          "The Virahānka sequence (1, 2, 3, 5, 8, 13...) originates from poetic meter analysis and describes natural spiral growth patterns.",
+          "Geometric dot arrays provide visual intuition and tangible proofs for algebraic expressions.",
+          "Recognizing sequence rules empowers students to solve complex numerical problems mentally without manual counting.",
+          "Cross-disciplinary connections link mathematical sequences to classical Indian music, poetry, art, architecture, and biology.",
+          "Decomposing square arrays into L-shaped gnomons demonstrates how geometric structure reflects arithmetic summation."
+        ],
+        "image_asset": {
+          "title": "Square Dot Arrays & L-Shaped Gnomon Decomposition",
+          "url": "/assets/images/ch1_gnomon_pattern.png",
+          "alt_text": "Visual decomposition of square dot arrays into odd gnomons",
+          "hotspots": [
+            {
+              "id": "hs1_gnomon_layer1",
+              "label": "Central Tile (n=1)",
+              "description": "First odd number term = 1. Forms a 1x1 square.",
+              "x_percent": 10.0,
+              "y_percent": 15.0,
+              "w_percent": 20.0,
+              "h_percent": 20.0
+            },
+            {
+              "id": "hs1_gnomon_layer2",
+              "label": "Second Gnomon Layer (+3)",
+              "description": "Second layer contains 3 dots. Total sum 1+3 = 4 (2x2 square).",
+              "x_percent": 35.0,
+              "y_percent": 15.0,
+              "w_percent": 25.0,
+              "h_percent": 25.0
+            },
+            {
+              "id": "hs1_gnomon_layer3",
+              "label": "Third Gnomon Layer (+5)",
+              "description": "Third layer contains 5 dots. Total sum 1+3+5 = 9 (3x3 square).",
+              "x_percent": 65.0,
+              "y_percent": 15.0,
+              "w_percent": 28.0,
+              "h_percent": 28.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Patterns in Mathematics through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Lines and Angles",
+        "core_summary": "This chapter introduces the fundamental structural primitives of plane geometry—points, line segments, rays, and lines—and develops the concept of an angle as a quantitative measure of rotation turn expressed in degrees (°). Aligned with experiential learning, students construct angles using paper folding, clocks, compass roses, and protractors. The chapter establishes a full turn rotation as 360°, a straight angle (half turn) as 180°, and a right angle (quarter turn) as 90°. Angles are classified strictly by degree measure into acute (0° < θ < 90°), right (θ = 90°), obtuse (90° < θ < 180°), straight (θ = 180°), and reflex (180° < θ < 360°). Students master protractor alignment (matching vertex to center baseline and choosing the correct zero-scaling arm), paper-folding crease bisectors, perpendicular line formation, clock hand separations, Ashoka Chakra spoke angles (360° / 24 = 15°), and compass rose directional navigation. The chapter builds spatial reasoning essential for geometric proof and construction.",
+        "key_concepts": [
+          "Geometric Primitives: A Point represents an exact location in space with zero dimensions. A Line Segment is the shortest straight path connecting two distinct endpoints, possessing a definite length. A Ray originates at an initial endpoint and extends infinitely in one direction. A Line extends infinitely in both opposite directions. Exactly one unique straight line passes through two distinct points.",
+          "Concept of an Angle as Angular Rotation: An angle is formed by two rays (arms) sharing a common endpoint (vertex). The magnitude of an angle measures the amount of rotation needed to sweep one arm onto the other, completely independent of the drawn physical length of the rays.",
+          "Degrees and Fractional Rotation Turns: Rotational turns are quantitatively measured in degrees (°). A complete 360° rotation forms a full turn; a 180° rotation forms a straight angle (1/2 turn); a 90° rotation forms a right angle (1/4 turn). Degree measure = Fraction of turn x 360°.",
+          "Angle Classification Taxonomy: Angles are categorized by measure: Acute Angles (0° < θ < 90°), Right Angles (θ = 90°), Obtuse Angles (90° < θ < 180°), Straight Angles (θ = 180°), and Reflex Angles (180° < θ < 360°).",
+          "Protractor Reading and Scale Selection: A protractor features an inner and outer degree scale from 0° to 180°. Accurate measurement requires aligning the protractor center point directly over the angle vertex, laying the baseline along one arm, and reading the degree mark on the scale that starts at 0° along that baseline arm.",
+          "Paper Folding and Perpendicular Lines: Folding a straight line crease directly onto itself creates an intersecting perpendicular crease meeting at four 90° right angles. Folding one angle arm onto another creates a precise angle bisector crease dividing the angle into two equal halves.",
+          "Clock Hand Angular Separations: A circular clock face is divided into 12 equal hour divisions, each spanning 30° (360° / 12). At H o'clock, the angle between minute and hour hands equals H x 30° (for H <= 6).",
+          "Ashoka Chakra and Spoke Angles: The Ashoka Chakra features 24 equally spaced spokes radiating from the central hub, dividing the 360° circle into 24 central angles measuring exactly 15° each (360° / 24).",
+          "Compass Rose and Navigational Angles: Cardinal directions (North, East, South, West) are separated by 90° right angles. Intercardinal directions (NE, SE, SW, NW) bisect these right angles into 45° acute angles.",
+          "Supplementary and Complementary Angle Relationships: Two angles are complementary if their sum equals 90°, and supplementary if their sum equals 180° (forming a linear pair on a straight line).",
+          "Reflex Angles and Explementary Rotation: Every interior angle θ (< 180°) has a corresponding exterior reflex angle measuring (360° - θ).",
+          "Intersecting Lines and Adjacent Angle Properties: When two straight lines intersect, opposite vertical angles are equal, and adjacent angles on a straight line sum to 180°."
+        ],
+        "key_terms": [
+          {
+            "term": "Point",
+            "definition": "A precise zero-dimensional location in space marked by a dot."
+          },
+          {
+            "term": "Line Segment",
+            "definition": "A straight path connecting two distinct endpoints, possessing a measurable length."
+          },
+          {
+            "term": "Ray",
+            "definition": "A straight line portion starting at a single fixed endpoint and extending endlessly in one direction."
+          },
+          {
+            "term": "Line",
+            "definition": "A continuous one-dimensional straight path extending endlessly in both opposite directions."
+          },
+          {
+            "term": "Angle",
+            "definition": "The geometric figure formed by two rays sharing a common initial vertex, measured by rotation turn."
+          },
+          {
+            "term": "Vertex",
+            "definition": "The common origin endpoint where two rays meet to form an angle."
+          },
+          {
+            "term": "Right Angle",
+            "definition": "An angle measuring exactly 90 degrees, representing a quarter rotation turn."
+          },
+          {
+            "term": "Acute Angle",
+            "definition": "An angle whose degree measure is strictly greater than 0° and strictly less than 90°."
+          },
+          {
+            "term": "Obtuse Angle",
+            "definition": "An angle whose degree measure is strictly greater than 90° and strictly less than 180°."
+          },
+          {
+            "term": "Straight Angle",
+            "definition": "An angle measuring exactly 180 degrees, representing half a complete turn."
+          },
+          {
+            "term": "Reflex Angle",
+            "definition": "An angle measuring strictly greater than 180° and strictly less than 360°."
+          },
+          {
+            "term": "Protractor",
+            "definition": "A semi-circular geometric tool calibrated from 0° to 180° used for measuring and drawing angles."
+          }
+        ],
+        "key_takeaways": [
+          "Angle measure represents rotational turn sweep between arms and is entirely independent of arm length.",
+          "A full turn rotation equals 360°, a straight angle equals 180°, and a right angle equals 90°.",
+          "Angles are classified into acute (<90°), right (90°), obtuse (90°-180°), straight (180°), and reflex (180°-360°).",
+          "When measuring with a protractor, align the vertex to center baseline and follow the scale starting at 0° on the reference arm.",
+          "Folding a straight paper line crease onto itself forms a perpendicular line with four 90° right angles.",
+          "Each hour division on a clock face represents an angular rotation of 30° (360° / 12).",
+          "The 24 spokes of the Ashoka Chakra divide a circle into 24 equal 15° central angles.",
+          "Cardinal compass directions (N, E, S, W) are separated by 90°, while intercardinal directions (NE, SE, SW, NW) are separated by 45°.",
+          "The sum of adjacent angles on a straight line always equals 180°.",
+          "Subtracting an interior angle θ from 360° yields its corresponding reflex angle."
+        ],
+        "image_asset": {
+          "title": "Angle Classifications & Degree Rotations",
+          "url": "/assets/images/ch2_angle_types.png",
+          "alt_text": "Chart showing acute, right, obtuse, straight, and reflex angles",
+          "hotspots": [
+            {
+              "id": "hs2_acute",
+              "label": "Acute Angle (0° < θ < 90°)",
+              "description": "Angle rotation less than a quarter turn (90°).",
+              "x_percent": 5.0,
+              "y_percent": 20.0,
+              "w_percent": 18.0,
+              "h_percent": 30.0
+            },
+            {
+              "id": "hs2_right",
+              "label": "Right Angle (θ = 90°)",
+              "description": "Exact quarter turn rotation. Perpendicular rays.",
+              "x_percent": 25.0,
+              "y_percent": 20.0,
+              "w_percent": 18.0,
+              "h_percent": 30.0
+            },
+            {
+              "id": "hs2_obtuse",
+              "label": "Obtuse Angle (90° < θ < 180°)",
+              "description": "Between quarter turn (90°) and half turn (180°).",
+              "x_percent": 45.0,
+              "y_percent": 20.0,
+              "w_percent": 18.0,
+              "h_percent": 30.0
+            },
+            {
+              "id": "hs2_straight",
+              "label": "Straight Angle (θ = 180°)",
+              "description": "Exact half turn rotation. Forms a straight line.",
+              "x_percent": 65.0,
+              "y_percent": 20.0,
+              "w_percent": 15.0,
+              "h_percent": 30.0
+            },
+            {
+              "id": "hs2_reflex",
+              "label": "Reflex Angle (180° < θ < 360°)",
+              "description": "Greater than half turn but less than full turn.",
+              "x_percent": 82.0,
+              "y_percent": 20.0,
+              "w_percent": 15.0,
+              "h_percent": 30.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Lines and Angles through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Number Play",
+        "core_summary": "This chapter explores recreational number theory, place value structural properties, digit frequency distribution, digit sum patterns, palindromic numbers, reverse-and-add algorithms, game theory strategies, and famous mathematical conjectures. Students analyze digit occurrences across numerical ranges (e.g., proving the digit '7' appears 20 times between 1 and 100), investigate place value expansions, and apply the Reverse-and-Add procedure to convert starting integers into palindromes. The chapter examines high-step generator numbers (such as 89 requiring 24 steps vs. 48 requiring 2 steps), introduces Kaprekar's routine for 2-digit numbers (consistently reaching 9), and analyzes winning strategies for the Nim / Game of 21 by controlling modulo-4 invariant states (1, 5, 9, 13, 17, 21). Finally, students explore Lothar Collatz's 3n + 1 conjecture, tracing iterative trajectories that converge to 1. The chapter transforms arithmetic into an engaging arena of mathematical investigation.",
+        "key_concepts": [
+          "Place Value Structural Expansion: Multi-digit integers are structured by base-10 positional weightings. A 3-digit integer 'abc' equals 100a + 10b + c. Reversing digits yields 'cba' = 100c + 10b + a. The difference (100a + 10b + c) - (100c + 10b + a) = 99(a - c), proving why digit-reversal differences are always divisible by 99.",
+          "Digit Frequency Analysis in Numerical Ranges: Across the range 1 to 100, every non-zero digit appears exactly 20 times (10 times in the units place and 10 times in the tens place, with double-digit occurrences like 77 contributing two counts).",
+          "Palindromic Numbers: A palindromic number reads identically forward and backward (e.g., 121, 5775, 84848). Symmetry in digit arrangements creates structural elegance in number theory.",
+          "Reverse-and-Add Algorithm: Taking any positive integer, reversing its digits, and adding the two numbers produces a sum. Repeating this iterative process eventually yields a palindromic number for almost all starting integers.",
+          "High-Step Generators and Lychrel Numbers: While numbers like 48 yield a palindrome in 2 steps (48 + 84 = 132; 132 + 231 = 363), numbers like 89 require 24 steps. Numbers that never form a palindrome under reverse-and-add are called candidate Lychrel numbers (e.g., 196).",
+          "Kaprekar's Routine for 2-Digit Numbers: Taking a 2-digit number with distinct digits, arranging digits in descending order and ascending order, and subtracting the smaller from the larger yields a result. Repeating this routine consistently converges to 9 (e.g., 73 - 37 = 36; 63 - 36 = 27; 72 - 27 = 45; 54 - 45 = 09; 90 - 09 = 81; 81 - 18 = 63...).",
+          "Game of 21 and Control Strategy: In a 2-player game where players take turns adding 1, 2, or 3 to a running total to reach 21, the first player wins deterministically by claiming control numbers congruent to 1 mod 4 (1, 5, 9, 13, 17, 21).",
+          "Collatz Conjecture (3n + 1 Problem): Proposed by Lothar Collatz (1937), the rule states: if n is even, divide by 2 (n / 2); if n is odd, multiply by 3 and add 1 (3n + 1). The conjecture asserts that every positive integer trajectory eventually reaches the 4-2-1 loop.",
+          "Powers of 2 Trajectories in Collatz Sequence: If a Collatz trajectory hits a power of 2 (2^k), it reaches 1 in exactly k halving steps.",
+          "Digit Sum Invariants and Divisibility: The sum of digits of a number preserves its remainder modulo 9. Subtracting the digit sum from the original integer always yields a multiple of 9.",
+          "Recreational Number Theory and Problem Solving: Mathematical games, puzzles, and numerical patterns cultivate logical rigor, algorithmic thinking, and general problem-solving capabilities.",
+          "Historical Context in Indian Arithmetic: Indian mathematicians historically utilized numerical riddles, magic squares, and digit games to teach arithmetic properties and algorithmic computation."
+        ],
+        "key_terms": [
+          {
+            "term": "Place Value",
+            "definition": "The numerical value of a digit based on its position within a base-10 number (units, tens, hundreds)."
+          },
+          {
+            "term": "Palindromic Number",
+            "definition": "An integer that remains unchanged when its digits are written in reverse order (e.g., 12321)."
+          },
+          {
+            "term": "Reverse-and-Add Algorithm",
+            "definition": "An iterative process of adding a number to its digit-reversed counterpart until a palindrome is formed."
+          },
+          {
+            "term": "Kaprekar's Routine",
+            "definition": "An iterative subtraction process formed by arranging a number's digits in descending and ascending order."
+          },
+          {
+            "term": "Collatz Sequence",
+            "definition": "A sequence generated by the rule: n/2 if n is even, and 3n + 1 if n is odd."
+          },
+          {
+            "term": "Control Numbers",
+            "definition": "Strategic invariant numbers in game theory that guarantee a winning outcome when claimed by a player."
+          },
+          {
+            "term": "Digit Sum",
+            "definition": "The sum obtained by adding all individual digits of an integer together."
+          },
+          {
+            "term": "Invariant",
+            "definition": "A mathematical property or quantity that remains unchanged under a specified set of transformations."
+          },
+          {
+            "term": "Lychrel Number",
+            "definition": "A natural number that does not form a palindromic number when subjected to the reverse-and-add algorithm."
+          },
+          {
+            "term": "Trajectory",
+            "definition": "The ordered sequence of numbers generated when applying an iterative function starting from a given initial value."
+          },
+          {
+            "term": "Modulo Arithmetic",
+            "definition": "A system of arithmetic for integers where numbers 'wrap around' upon reaching a fixed value (the modulus)."
+          },
+          {
+            "term": "Base-10 System",
+            "definition": "The standard positional numeral system using ten digits (0 through 9)."
+          }
+        ],
+        "key_takeaways": [
+          "Place value structures allow multi-digit integers to be expanded algebraically (100a + 10b + c).",
+          "Non-zero digits appear exactly 20 times across the range 1 to 100.",
+          "Palindromic numbers possess forward and backward digit symmetry (e.g., 5775).",
+          "The Reverse-and-Add algorithm converts most integers into palindromes (e.g., 48 -> 132 -> 363).",
+          "Kaprekar's routine for 2-digit numbers repeatedly subtracts ascending from descending digit arrangements, converging to 9.",
+          "In the Game of 21, Player 1 guarantees a win by securing control numbers 1, 5, 9, 13, 17, and 21.",
+          "The Collatz sequence applies n/2 for even numbers and 3n+1 for odd numbers, conjecture stating all trajectories reach 1.",
+          "If a Collatz trajectory reaches a power of 2 (2^k), it terminates at 1 in exactly k steps.",
+          "Subtracting the reverse of a 3-digit number from itself always yields a multiple of 99.",
+          "Recreational number games foster algorithmic thinking, pattern recognition, and logical proof capabilities."
+        ],
+        "image_asset": {
+          "title": "Chapter 3 Visual Overview - Number Play",
+          "url": "/assets/images/ch3_overview.png",
+          "alt_text": "Overview diagram for Number Play",
+          "hotspots": [
+            {
+              "id": "hs_ch3_main",
+              "label": "Core Concept: Number Play",
+              "description": "This chapter explores recreational number theory, place value structural properties, digit frequency distribution, digit sum patterns, palindromic num...",
+              "x_percent": 10.0,
+              "y_percent": 20.0,
+              "w_percent": 80.0,
+              "h_percent": 60.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Number Play through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Data Handling and Presentation",
+        "core_summary": "This chapter teaches the complete statistical lifecycle: data collection, organization, representation, interpretation, and inference. Students progress from unorganized raw data observations to structured tally mark frequency tables, visually engaging pictographs with declared unit scale keys, and mathematically accurate bar graphs with uniform column widths, equal gap spacing, and non-truncated zero baselines. Practical classroom surveys—such as favorite sports, transport modes, flower counts, and traffic statistics—illustrate how data transforms into actionable insight. The chapter emphasizes critical evaluation of graphs, identifying visual distortions caused by improper scaling or truncated axes, establishing foundational statistical literacy.",
+        "key_concepts": [
+          "The Data Lifecycle: Statistics involves collecting raw observations, organizing them into structured frequency tables, representing them visually through charts, analyzing patterns, and drawing valid inferences.",
+          "Raw Data vs. Organized Data: Raw data consists of unsorted initial facts or measurements. Organizing data into categories and tally counts converts chaotic lists into meaningful distributions.",
+          "Tally Mark Grouping and Frequency Counting: Tally marks record individual occurrences as vertical strokes ('|'). Every fifth count is marked by a diagonal slash across four vertical strokes ('||||/'), enabling rapid skip-counting in 5s.",
+          "Frequency Definition: Frequency is the total integer count of how many times a specific observation or category occurs in a dataset.",
+          "Pictograph Construction and Scale Keys: A pictograph represents categorical data using picture symbols. A declared key specifies the exact numerical quantity represented by 1 full symbol (or half symbol), calculating total quantity = symbol count x key scale.",
+          "Bar Graph Structural Rules: A bar graph uses parallel rectangular bars of uniform width whose heights (or lengths) are proportional to category frequencies. Three essential rules: (1) Uniform bar width, (2) Equal spacing gaps between adjacent bars, and (3) Vertical scale starting at 0.",
+          "Scale Selection for Bar Graphs: Choosing an appropriate vertical scale unit (e.g., 1 cm = 5 units, 10 units, or 100 units) ensures bar heights fit cleanly on graph paper while accurately reflecting frequency proportions: Bar Height = Frequency / Scale Unit.",
+          "Axis Labeling and Baseline Integrity: The horizontal axis (X-axis) lists categories, while the vertical axis (Y-axis) displays frequency. The vertical axis must start at 0 to maintain true visual height ratios.",
+          "Identifying Misleading Graphs: Truncating the vertical axis (starting above 0) or using non-uniform bar widths visually distorts bar height ratios, misleading viewers about relative category differences.",
+          "Data Interpretation and Comparative Analysis: Analyzing bar graph heights or pictograph symbol counts allows quick identification of the most popular category (mode), least popular category, total survey size, and category ratios.",
+          "Categorical vs. Numerical Data: Data can represent non-numerical categories (colors, sports, transport modes) or discrete numerical values (marks, shoe sizes, family members).",
+          "Real-World Applications in Decision Making: Statistical presentation powers real-world decision making in urban planning, school resource allocation, business inventory, and public health."
+        ],
+        "key_terms": [
+          {
+            "term": "Data",
+            "definition": "A systematic collection of facts, numbers, measurements, or observations gathered to answer specific questions."
+          },
+          {
+            "term": "Raw Data",
+            "definition": "Unorganized, initial facts or observations collected directly from a survey or experiment."
+          },
+          {
+            "term": "Tally Marks",
+            "definition": "A system of counting using vertical strokes grouped in bundles of five with a diagonal slash ('||||/')."
+          },
+          {
+            "term": "Frequency",
+            "definition": "The total number of times a specific observation or value occurs in a dataset."
+          },
+          {
+            "term": "Frequency Table",
+            "definition": "A tabular summary displaying categories, tally marks, and corresponding total frequency counts."
+          },
+          {
+            "term": "Pictograph",
+            "definition": "A visual data representation using picture symbols with a declared key scale representing fixed quantities."
+          },
+          {
+            "term": "Bar Graph",
+            "definition": "A visual display using parallel rectangular bars of uniform width and proportional heights to display categorical frequency data."
+          },
+          {
+            "term": "Scale",
+            "definition": "The fixed ratio or key defining the numerical quantity represented by 1 cm unit length or 1 picture symbol."
+          },
+          {
+            "term": "Axis",
+            "definition": "One of two perpendicular baseline reference lines on a graph (horizontal X-axis and vertical Y-axis)."
+          },
+          {
+            "term": "Key",
+            "definition": "An explanatory note on a pictograph or map defining the numerical value of each symbol."
+          },
+          {
+            "term": "Interpretation",
+            "definition": "The process of analyzing graphical or tabular data to draw meaningful conclusions, comparisons, and inferences."
+          },
+          {
+            "term": "Mode",
+            "definition": "The category or observation value that occurs with the highest frequency in a dataset."
+          }
+        ],
+        "key_takeaways": [
+          "Tally marks group observations in bundles of 5 ('||||/') for quick skip-counting.",
+          "Frequency represents the total integer count of occurrences in a category.",
+          "Pictographs rely on a declared key scale specifying the quantity represented per picture icon.",
+          "Bar graphs must maintain uniform bar widths, equal spacing gaps, and a vertical scale starting at 0.",
+          "Bar height equals Category Frequency divided by the Scale Unit per cm.",
+          "Truncating the vertical axis distorts visual proportions and creates misleading graphs.",
+          "Bar graphs allow immediate visual comparison of modal (highest) and minimum categories.",
+          "Total survey size equals the sum of all individual category frequencies.",
+          "Data handling transforms raw observations into organized formats for decision making.",
+          "Critical evaluation of charts protects against misleading visual statistics in real-world media."
+        ],
+        "image_asset": {
+          "title": "Chapter 4 Visual Overview - Data Handling and Presentation",
+          "url": "/assets/images/ch4_overview.png",
+          "alt_text": "Overview diagram for Data Handling and Presentation",
+          "hotspots": [
+            {
+              "id": "hs_ch4_main",
+              "label": "Core Concept: Data Handling and Presentation",
+              "description": "This chapter teaches the complete statistical lifecycle: data collection, organization, representation, interpretation, and inference. Students progre...",
+              "x_percent": 10.0,
+              "y_percent": 20.0,
+              "w_percent": 80.0,
+              "h_percent": 60.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Data Handling and Presentation through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Prime Time",
+        "core_summary": "This chapter provides a comprehensive foundation in number theory: factors, multiples, prime numbers, composite numbers, co-prime pairs, the Sieve of Eratosthenes, divisibility rules (2, 3, 4, 5, 8, 9, 10), unique prime factorisation, Highest Common Factor (HCF), and Lowest Common Multiple (LCM). Students learn that factors divide a number completely without remainder, bounded by 1 <= f <= n. The number 1 is identified as unique (neither prime nor composite). Students use Eratosthenes' grid sieve to isolate primes up to 100, master divisibility shortcuts, perform prime factorisation trees and repeated division, and apply the fundamental relationship HCF(a, b) x LCM(a, b) = a x b to solve real-world problems like traffic light synchronization and treasure hunt races.",
+        "key_concepts": [
+          "Factors and Multiples: A factor divides an integer completely with zero remainder. A multiple is the product of an integer and any counting number. Properties: 1 is a factor of every number; every number is a factor and multiple of itself; factors are finite and bounded (1 <= f <= n).",
+          "Prime vs. Composite Numbers: A Prime Number has exactly two distinct positive factors (1 and itself). A Composite Number has more than two factors. The number 1 has only one factor and is uniquely classified as neither prime nor composite. 2 is the smallest prime and the only even prime.",
+          "Sieve of Eratosthenes: A historical systematic algorithm for finding all prime numbers up to a limit N by crossing out multiples of each prime starting from 2, leaving uncrossed prime numbers.",
+          "Co-prime Numbers: Two positive integers a and b are co-prime if they share no common factors other than 1 (HCF(a, b) = 1). Any two consecutive integers are always co-prime.",
+          "Divisibility Rules: Shortcuts to test divisibility without full division: By 2 (last digit even), By 3 (digit sum div by 3), By 4 (last 2 digits div by 4), By 5 (ends in 0 or 5), By 8 (last 3 digits div by 8), By 9 (digit sum div by 9), By 10 (ends in 0).",
+          "Prime Factorisation: Expressing a composite number uniquely as a product of prime numbers (Fundamental Theorem of Arithmetic intuition). Methods include factor trees and repeated division by smallest prime divisors.",
+          "Highest Common Factor (HCF): The largest positive integer that divides two or more integers completely. Found by multiplying the lowest powers of common prime factors.",
+          "Lowest Common Multiple (LCM): The smallest positive integer that is a multiple of two or more integers. Found by multiplying the highest powers of all involved prime factors.",
+          "Fundamental Product Identity: For any two positive integers a and b, HCF(a, b) x LCM(a, b) = a x b.",
+          "Common Multiples and Periodic Events: LCM solves simultaneous periodic event problems (e.g., traffic lights changing together, alarm bells ringing simultaneously, runners meeting at a start line).",
+          "Common Factors and Equal Grouping: HCF solves maximum equal capacity or grouping problems (e.g., dividing items into equal packaging without leftovers).",
+          "Twin Primes and Prime Patterns: Pairs of prime numbers with a difference of 2 (e.g., (3, 5), (5, 7), (11, 13), (17, 19)) exhibit structural spacing in number theory."
+        ],
+        "key_terms": [
+          {
+            "term": "Factor",
+            "definition": "An integer that divides another integer completely leaving a remainder of zero."
+          },
+          {
+            "term": "Multiple",
+            "definition": "The product of a given integer and any non-zero counting number."
+          },
+          {
+            "term": "Prime Number",
+            "definition": "A natural number greater than 1 having exactly two distinct positive factors: 1 and itself."
+          },
+          {
+            "term": "Composite Number",
+            "definition": "A natural number greater than 1 having more than two distinct positive factors."
+          },
+          {
+            "term": "Co-prime Numbers",
+            "definition": "Two integers sharing no common factors other than 1 (HCF = 1)."
+          },
+          {
+            "term": "Prime Factorisation",
+            "definition": "The unique representation of a composite number as a product of prime factors."
+          },
+          {
+            "term": "Highest Common Factor (HCF)",
+            "definition": "The largest positive integer that divides two or more given integers without remainder."
+          },
+          {
+            "term": "Lowest Common Multiple (LCM)",
+            "definition": "The smallest positive integer that is a multiple of two or more given integers."
+          },
+          {
+            "term": "Sieve of Eratosthenes",
+            "definition": "An ancient algorithm for isolating prime numbers by systematically eliminating multiples."
+          },
+          {
+            "term": "Divisibility Test",
+            "definition": "An arithmetic rule used to determine whether one number divides another without performing long division."
+          },
+          {
+            "term": "Twin Primes",
+            "definition": "A pair of prime numbers that differ by exactly 2."
+          },
+          {
+            "term": "Factor Tree",
+            "definition": "A diagrammatic representation breaking a composite number down into its prime factors."
+          }
+        ],
+        "key_takeaways": [
+          "Every factor of a number n is bounded between 1 and n (1 <= f <= n).",
+          "1 is uniquely neither prime nor composite; 2 is the smallest prime and only even prime.",
+          "Two numbers are co-prime if their HCF equals 1 (e.g., any two consecutive integers).",
+          "Divisibility rules by 3 and 9 test digit sums; rules by 4 and 8 test last 2 and 3 digits.",
+          "Prime factorisation expresses any composite number uniquely as a product of primes.",
+          "HCF is computed using the lowest powers of common prime factors; LCM uses the highest powers of all prime factors.",
+          "For any two numbers a and b: HCF(a, b) x LCM(a, b) = a x b.",
+          "HCF solves maximum equal capacity division problems.",
+          "LCM solves simultaneous periodic event timing problems.",
+          "The Sieve of Eratosthenes systematically isolates prime numbers up to any limit N."
+        ],
+        "image_asset": {
+          "title": "Sieve of Eratosthenes Prime Number Grid",
+          "url": "/assets/images/ch5_sieve_eratosthenes.png",
+          "alt_text": "Number grid from 1 to 100 with highlighted prime numbers",
+          "hotspots": [
+            {
+              "id": "hs5_number1",
+              "label": "Special Case: Number 1",
+              "description": "1 has only 1 factor. It is neither prime nor composite.",
+              "x_percent": 5.0,
+              "y_percent": 10.0,
+              "w_percent": 8.0,
+              "h_percent": 8.0
+            },
+            {
+              "id": "hs5_first_prime",
+              "label": "Smallest Prime: Number 2",
+              "description": "2 is the only even prime number. All higher multiples of 2 are composite.",
+              "x_percent": 15.0,
+              "y_percent": 10.0,
+              "w_percent": 8.0,
+              "h_percent": 8.0
+            },
+            {
+              "id": "hs5_primes_count",
+              "label": "Primes 1 to 100",
+              "description": "There are exactly 25 prime numbers between 1 and 100.",
+              "x_percent": 30.0,
+              "y_percent": 40.0,
+              "w_percent": 40.0,
+              "h_percent": 30.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Prime Time through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Perimeter and Area",
+        "core_summary": "This chapter explores two-dimensional spatial measurement: Perimeter (1D boundary distance) and Area (2D enclosed surface region). Students master formulas for rectangles (P = 2(l + w), A = lw), squares (P = 4s, A = s^2), regular polygons (P = ns), and composite shapes. The chapter establishes unit conversions (1 m^2 = 10,000 cm^2; 1 hectare = 10,000 m^2) and explores conservation of area under shape cutting/re-arrangement versus perimeter variation. Students prove that among all rectangles with a fixed area, a square minimizes perimeter, and apply concepts to real-world fencing, tiling, flooring, and landscaping problems.",
+        "key_concepts": [
+          "Perimeter Definition and Formulas: Perimeter is the total continuous boundary distance around a closed 2D plane shape. Formulas: Rectangle P = 2(l + w); Square P = 4s; Regular n-gon P = n x s.",
+          "Area Definition and Formulas: Area measures the magnitude of two-dimensional surface region enclosed within a closed boundary, expressed in square units (sq cm, sq m). Formulas: Rectangle A = l x w; Square A = s^2.",
+          "1D Linear vs. 2D Surface Measurement: Perimeter measures 1D outer boundary length (cm, m), while Area measures 2D enclosed surface space (sq cm, sq m).",
+          "Square Unit Conversions: Converting 2D area units requires squaring 1D conversion factors: 1 m = 100 cm => 1 m^2 = 100 cm x 100 cm = 10,000 cm^2. 1 hectare = 10,000 m^2.",
+          "Area Conservation under Shape Rearrangement: Cutting a 2D shape into sub-pieces and rearranging them conserves total surface area (Total Area = sum of piece areas), whereas the outer perimeter boundary length can change dramatically.",
+          "Perimeter Variation under Fixed Area: Different rectangular shapes can share identical surface areas while having completely different perimeters. Among all rectangles with a fixed area A, a square minimizes perimeter.",
+          "Composite Shape Decomposition: Calculating the area of complex irregular or L-shaped figures involves decomposing the shape into non-overlapping simple rectangles, computing individual areas, and summing them.",
+          "Grid Square Area Estimation: Estimating irregular shape areas on square grid paper: count fully enclosed squares as 1 sq unit, more-than-half squares as 1 sq unit, exactly half squares as 0.5 sq unit, and ignore less-than-half squares.",
+          "Cost Calculations for Fencing vs. Tiling: Fencing or border framing depends on boundary Perimeter (Cost = P x Rate/m). Flooring, tiling, painting, or turfing depends on surface Area (Cost = A x Rate/m^2).",
+          "Number of Tiles Formula: The total number of tiles needed to cover a floor = Floor Area / Tile Area (with matching units).",
+          "Regular Polygon Perimeter Property: For any regular polygon with n equal side lengths s, Perimeter P = n x s.",
+          "Optimization in Architectural Design: Understanding perimeter-area trade-offs helps architects minimize building perimeter (reducing material costs) while maximizing interior floor area."
+        ],
+        "key_terms": [
+          {
+            "term": "Perimeter",
+            "definition": "The total continuous outer boundary distance surrounding a closed two-dimensional shape."
+          },
+          {
+            "term": "Area",
+            "definition": "The magnitude of two-dimensional surface space enclosed within the boundary of a plane figure."
+          },
+          {
+            "term": "Square Unit",
+            "definition": "The standard unit for measuring area, representing the surface enclosed by a square with 1 unit side length."
+          },
+          {
+            "term": "Regular Polygon",
+            "definition": "A closed 2D shape with all side lengths equal and all interior angles equal."
+          },
+          {
+            "term": "Hectare",
+            "definition": "A metric unit of land area equal to a square with 100 m side length (10,000 square meters)."
+          },
+          {
+            "term": "Composite Shape",
+            "definition": "A two-dimensional figure constructed by combining two or more basic geometric shapes."
+          },
+          {
+            "term": "Decomposition",
+            "definition": "The process of dividing a complex geometric figure into simpler non-overlapping shapes."
+          },
+          {
+            "term": "Conservation of Area",
+            "definition": "The mathematical principle stating that cutting and rearranging a shape leaves its total surface area unchanged."
+          },
+          {
+            "term": "Optimization",
+            "definition": "Finding the shape dimensions that maximize area for a given perimeter, or minimize perimeter for a given area."
+          },
+          {
+            "term": "Grid Paper Estimation",
+            "definition": "A technique for approximating irregular shape areas by counting unit grid squares."
+          },
+          {
+            "term": "Dimensions",
+            "definition": "The linear measurements of a shape, such as length, width, or side length."
+          },
+          {
+            "term": "Boundary",
+            "definition": "The enclosing line or curve separating the interior region of a shape from its exterior."
+          }
+        ],
+        "key_takeaways": [
+          "Perimeter measures 1D boundary distance (cm, m); Area measures 2D surface space (sq cm, sq m).",
+          "Rectangle Perimeter P = 2(l + w) and Area A = l x w; Square Perimeter P = 4s and Area A = s^2.",
+          "Perimeter of a regular n-gon = n x s.",
+          "1 sq m = 10,000 sq cm; 1 hectare = 10,000 sq m.",
+          "Cutting and rearranging a shape conserves total surface area, but can alter perimeter.",
+          "Among all rectangles with a fixed area, a square has the minimum perimeter.",
+          "Fencing and framing calculations use Perimeter; flooring, tiling, and painting use Area.",
+          "Number of floor tiles required = Total Floor Area / Single Tile Area.",
+          "Complex L-shaped figures are solved by decomposing into non-overlapping rectangles.",
+          "Grid counting estimates irregular surface areas by counting full and half unit squares."
+        ],
+        "image_asset": {
+          "title": "Perimeter Boundary vs Enclosed Surface Area",
+          "url": "/assets/images/ch6_perimeter_area.png",
+          "alt_text": "Comparison of linear boundary perimeter vs enclosed surface area",
+          "hotspots": [
+            {
+              "id": "hs6_perimeter",
+              "label": "Perimeter (1D Boundary Length)",
+              "description": "Outer boundary distance measured in linear units (cm, m). Formula = 2(l+w).",
+              "x_percent": 10.0,
+              "y_percent": 20.0,
+              "w_percent": 35.0,
+              "h_percent": 60.0
+            },
+            {
+              "id": "hs6_area",
+              "label": "Area (2D Surface Region)",
+              "description": "Enclosed surface region measured in square units (sq cm, sq m). Formula = l x w.",
+              "x_percent": 55.0,
+              "y_percent": 20.0,
+              "w_percent": 35.0,
+              "h_percent": 60.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Perimeter and Area through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Fractions",
+        "core_summary": "This chapter explores fractions as equal parts of a whole unit or set. Students build conceptual understanding through equal sharing (rotis, paper strips), fraction walls, unit fractions (1/n), numerators, and denominators. The chapter proves that as denominator n increases, unit fraction size 1/n decreases (1/8 < 1/3). Students classify fractions into proper (a < b), improper (a >= b), and mixed numbers (A b/c), master equivalence, position fractions on a number line, and apply Brahmagupta's ancient general addition and subtraction rules (a/b +/- c/d = (ad +/- bc)/bd). Real-world applications include recipe scaling, lap running comparisons, and land division.",
+        "key_concepts": [
+          "Fractions as Equal Shares: A fraction a/b represents 'a' equal parts out of a whole divided into 'b' equal parts (b != 0).",
+          "Unit Fractions and Size Relationship: A unit fraction 1/n represents one part of a unit divided into n equal parts. As the denominator n increases, the individual fractional unit 1/n decreases in size: m > n => 1/m < 1/n.",
+          "Fraction Wall and Visual Equivalence: A fraction wall stacks divided unit strips (1/2s, 1/3s, 1/4s, 1/6s, 1/12s), visually demonstrating how different fractions represent equal lengths (e.g., 1/2 = 2/4 = 3/6 = 6/12).",
+          "Equivalent Fractions: Fractions representing equal values. Generated by multiplying or dividing numerator and denominator by the same non-zero integer k: a/b = (a x k) / (b x k).",
+          "Proper, Improper, and Mixed Fractions: Proper Fractions (Numerator < Denominator, value < 1); Improper Fractions (Numerator >= Denominator, value >= 1); Mixed Fractions (Whole integer + Proper fraction, A b/c).",
+          "Mixed to Improper Conversion: A b/c = (A x c + b) / c. Improper to Mixed Conversion: Divide numerator by denominator: Quotient = Whole part, Remainder = Numerator.",
+          "Fractions on the Number Line: Dividing unit intervals between whole numbers into 'b' equal segments allows placing a/b precisely on the number line.",
+          "Brahmagupta's General Fraction Operations (628 CE): Ancient Indian mathematician Brahmagupta formulated general rules for adding and subtracting fractions with unlike denominators by converting to a common fractional unit: a/b + c/d = (ad + bc)/bd and a/b - c/d = (ad - bc)/bd.",
+          "Adding and Subtracting Like Fractions: Fractions sharing identical denominators are added/subtracted directly across numerators: a/c + b/c = (a + b)/c.",
+          "Comparing Fractions with Unlike Denominators: Convert fractions to equivalent fractions with a common denominator (LCM of denominators), then compare numerators.",
+          "Simplifying Fractions to Lowest Terms: Dividing numerator and denominator by their HCF reduces a fraction to simplest form.",
+          "Fractional Applications in Measurement: Fractions quantify real-world quantities like distances, time intervals, ingredient masses, and financial shares."
+        ],
+        "key_terms": [
+          {
+            "term": "Fraction",
+            "definition": "A numerical quantity representing one or more equal parts of a whole or set, written as a/b (b != 0)."
+          },
+          {
+            "term": "Numerator",
+            "definition": "The top number in a fraction 'a' indicating how many equal parts are selected."
+          },
+          {
+            "term": "Denominator",
+            "definition": "The bottom number in a fraction 'b' indicating the total number of equal parts dividing the whole."
+          },
+          {
+            "term": "Unit Fraction",
+            "definition": "A fraction with a numerator of 1 (1/n), representing one equal part of a divided whole."
+          },
+          {
+            "term": "Equivalent Fractions",
+            "definition": "Fractions that represent identical numerical values or proportions despite having different numerators and denominators."
+          },
+          {
+            "term": "Proper Fraction",
+            "definition": "A fraction whose numerator is strictly less than its denominator, representing a value less than 1."
+          },
+          {
+            "term": "Improper Fraction",
+            "definition": "A fraction whose numerator is greater than or equal to its denominator, representing a value greater than or equal to 1."
+          },
+          {
+            "term": "Mixed Fraction",
+            "definition": "A number represented as a combination of a whole non-zero integer and a proper fraction (A b/c)."
+          },
+          {
+            "term": "Fraction Wall",
+            "definition": "A visual diagram stacking aligned equal-length strips divided into fractional units to display equivalences."
+          },
+          {
+            "term": "Simplest Form",
+            "definition": "A fraction whose numerator and denominator are co-prime (share no common factor other than 1)."
+          },
+          {
+            "term": "Common Denominator",
+            "definition": "A shared multiple denominator used to compare, add, or subtract fractions with unlike denominators."
+          },
+          {
+            "term": "Brahmagupta's Rule",
+            "definition": "The historical general formula a/b +/- c/d = (ad +/- bc)/bd for fraction arithmetic."
+          }
+        ],
+        "key_takeaways": [
+          "A fraction a/b represents 'a' equal parts of a whole divided into 'b' parts.",
+          "For unit fractions 1/n, a larger denominator n means a smaller fractional unit size.",
+          "Equivalent fractions are generated by multiplying numerator and denominator by the same non-zero integer.",
+          "Proper fractions < 1; Improper fractions >= 1; Mixed fractions combine a whole number and proper fraction.",
+          "Mixed to improper formula: A b/c = (A x c + b) / c.",
+          "Brahmagupta's addition formula: a/b + c/d = (ad + bc) / bd.",
+          "Brahmagupta's subtraction formula: a/b - c/d = (ad - bc) / bd.",
+          "To compare unlike fractions, convert them to equivalent fractions with a common denominator.",
+          "Dividing numerator and denominator by their HCF simplifies a fraction to lowest terms.",
+          "Fraction walls provide visual intuition for fraction equivalence and addition."
+        ],
+        "image_asset": {
+          "title": "Fraction Wall Unit Fraction Comparison",
+          "url": "/assets/images/ch7_fraction_wall.png",
+          "alt_text": "Stacked color-coded fraction wall showing unit fractions",
+          "hotspots": [
+            {
+              "id": "hs7_whole",
+              "label": "Whole Unit (1)",
+              "description": "The complete single whole reference bar.",
+              "x_percent": 5.0,
+              "y_percent": 10.0,
+              "w_percent": 90.0,
+              "h_percent": 10.0
+            },
+            {
+              "id": "hs7_halves",
+              "label": "Halves (1/2)",
+              "description": "Whole divided into 2 equal parts. Each part = 1/2.",
+              "x_percent": 5.0,
+              "y_percent": 22.0,
+              "w_percent": 44.0,
+              "h_percent": 10.0
+            },
+            {
+              "id": "hs7_quarters",
+              "label": "Quarters (1/4)",
+              "description": "Two 1/4 parts equal one 1/2 part. Equivalent fractions: 2/4 = 1/2.",
+              "x_percent": 5.0,
+              "y_percent": 46.0,
+              "w_percent": 22.0,
+              "h_percent": 10.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Fractions through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Playing with Constructions",
+        "core_summary": "This chapter introduces geometric construction using ruler, compass, and set-squares. Students transition from freehand sketches to technical constructions, exploring circles, radii, diameters, center points, length transfers, perpendiculars, rectangles, and squares. The chapter establishes circle boundary equidistance (every boundary point lies at distance r from center O), d = 2r, concentric circles, and compass length transfer to eliminate ruler tick parallax errors. Set-squares (45°-45°-90° and 30°-60°-90°) construct precise 90° right angles, and compass radius step-transfers construct regular inscribed hexagons.",
+        "key_concepts": [
+          "Geometric Precision and Technical Tools: Moving from freehand drawing to technical construction requires specialized tools: Ruler (measuring linear distances), Compass (drawing circles and locking distance spans), Set-squares (constructing exact 90° right angles).",
+          "Circle Definition and Equidistance Property: A circle is the set of all points in a plane equidistant from a fixed center point O. The constant boundary distance is the Radius r.",
+          "Radius and Diameter Relationship: A line segment passing through the center connecting two boundary points is a Diameter d. Relationship: d = 2r, or r = d / 2.",
+          "Concentric Circles Construction: Concentric circles share the exact same central point O but have different radius lengths (r1 != r2). Constructed by keeping the compass needle fixed at O while adjusting radius openings.",
+          "Transferring Segment Lengths with Compass: Transferring line segment lengths using a compass span is more accurate than ruler measurement because it eliminates visual parallax tick mark reading errors.",
+          "Constructing Perpendicular Lines with Set-Squares: A set-square contains an exact 90° corner. Aligning one set-square leg along a baseline and drawing along the adjacent perpendicular leg constructs precise right angles.",
+          "Constructing Rectangles and Squares: A rectangle is constructed by drawing a baseline segment, erecting perpendicular rays at both endpoints using set-squares, marking width lengths along perpendiculars, and joining top endpoints.",
+          "Inscribing Regular Hexagons via Radius Steps: Maintaining a compass opening at radius r and stepping consecutive arcs around a circle boundary divides the circle into 6 equal segments, constructing a regular inscribed hexagon.",
+          "Arc Intersections and Unique Point Location: Two intersecting circular arcs define precise single geometric points in a plane.",
+          "Symmetry in Geometric Constructions: Maintaining constant compass openings guarantees congruent side lengths and symmetrical geometric structures.",
+          "Perpendicular Bisector Intuition: The locus of points equidistant from two endpoints A and B forms the perpendicular bisector of segment AB.",
+          "Engineering and Architectural Drafting Applications: Technical geometric construction principles underpin architectural blueprints, mechanical engineering drafts, and computer-aided design (CAD) systems."
+        ],
+        "key_terms": [
+          {
+            "term": "Circle",
+            "definition": "A closed plane curve consisting of all points equidistant from a fixed center point."
+          },
+          {
+            "term": "Center",
+            "definition": "The fixed internal reference point from which all points on a circle boundary are equidistant."
+          },
+          {
+            "term": "Radius",
+            "definition": "The fixed distance from the center point of a circle to any point on its boundary."
+          },
+          {
+            "term": "Diameter",
+            "definition": "A straight line segment passing through the center of a circle with both endpoints on the circumference (d = 2r)."
+          },
+          {
+            "term": "Concentric Circles",
+            "definition": "Circles of different radii that share the exact same central reference point."
+          },
+          {
+            "term": "Compass",
+            "definition": "A geometric instrument with a needle leg and pencil leg used for drawing circles and transferring lengths."
+          },
+          {
+            "term": "Set-Square",
+            "definition": "A triangular drawing tool featuring an exact 90° right angle used for constructing perpendicular lines."
+          },
+          {
+            "term": "Perpendicular",
+            "definition": "Two lines or segments intersecting at an exact 90-degree right angle."
+          },
+          {
+            "term": "Arc",
+            "definition": "A continuous portion of the circumference of a circle."
+          },
+          {
+            "term": "Inscribed Polygon",
+            "definition": "A polygon whose vertices all lie on the boundary circumference of a circle."
+          },
+          {
+            "term": "Length Transfer",
+            "definition": "The process of locking a segment length using a compass span to replicate it elsewhere without numerical reading errors."
+          },
+          {
+            "term": "Circumference",
+            "definition": "The enclosed outer boundary curve length of a circle."
+          }
+        ],
+        "key_takeaways": [
+          "A circle consists of all points equidistant from a central reference point O.",
+          "Diameter d equals twice the radius r (d = 2r).",
+          "Concentric circles share the same center point but possess different radius lengths.",
+          "Transferring segment lengths using a compass span eliminates ruler tick parallax errors.",
+          "Set-squares feature an exact 90° right angle corner for constructing perpendicular lines.",
+          "Rectangles and squares are constructed by erecting perpendiculars at baseline endpoints.",
+          "Stepping compass radius r around a circle boundary constructs an inscribed regular hexagon.",
+          "Intersecting arcs locate exact geometric points on a drafting plane.",
+          "Compass needle pressure must remain at the central pivot handle to avoid radius slippage.",
+          "Geometric construction principles form the foundation of engineering blueprints and CAD."
+        ],
+        "image_asset": {
+          "title": "Chapter 8 Visual Overview - Playing with Constructions",
+          "url": "/assets/images/ch8_overview.png",
+          "alt_text": "Overview diagram for Playing with Constructions",
+          "hotspots": [
+            {
+              "id": "hs_ch8_main",
+              "label": "Core Concept: Playing with Constructions",
+              "description": "This chapter introduces geometric construction using ruler, compass, and set-squares. Students transition from freehand sketches to technical construc...",
+              "x_percent": 10.0,
+              "y_percent": 20.0,
+              "w_percent": 80.0,
+              "h_percent": 60.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Playing with Constructions through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 9,
+        "chapter_title": "Symmetry",
+        "core_summary": "This chapter explores geometric symmetry across nature, art, architecture, and mathematics, distinguishing between Reflectional (Line) Symmetry and Rotational Symmetry. Students investigate line symmetry using fold tests and mirror halves, proving that a regular n-gon has exactly n lines of symmetry. Rotational symmetry is analyzed by turning shapes around a fixed center of rotation, identifying rotational order n and smallest rotation angle 360° / n. The chapter evaluates cultural artifacts like the Ashoka Chakra (24 spokes => 15°), snowflakes, windmill blades, traffic signs, and proves why non-square rectangle diagonals are NOT lines of reflection symmetry.",
+        "key_concepts": [
+          "Reflectional (Line) Symmetry: A shape possesses reflectional line symmetry if a line divides it into two mirror-image halves that coincide perfectly under folding.",
+          "Line of Symmetry Definition: An axis dividing a figure into two congruent halves that map onto each other under reflection.",
+          "Regular Polygon Reflection Symmetry Rule: Any regular polygon with n equal sides possesses exactly n distinct lines of reflection symmetry (e.g., equilateral triangle = 3, square = 4, regular pentagon = 5, regular hexagon = 6).",
+          "Non-Square Rectangle Symmetry Paradox: A non-square rectangle has exactly 2 lines of symmetry (midsegments). Its diagonals divide it into congruent triangles, but folding along a diagonal causes corners to overhang rather than align, so diagonals are NOT lines of symmetry.",
+          "Rotational Symmetry Definition: A shape possesses rotational symmetry if it maps onto its original appearance after rotation by an angle strictly less than 360° around a fixed center point.",
+          "Center of Rotation: The fixed point around which a geometric figure turns during rotational movement.",
+          "Order of Rotational Symmetry: The total number of distinct rotational orientations within a 360° full turn where a shape looks identical to its starting position.",
+          "Smallest Angle of Rotational Symmetry Formula: Smallest Angle = 360° / Order of Rotational Symmetry (n).",
+          "Rotational Symmetry in Regular Polygons: A regular n-gon has rotational symmetry of order n, with smallest rotational angle = 360° / n.",
+          "Ashoka Chakra Symmetry: The Ashoka Chakra features 24-fold symmetry, possessing 24 lines of reflection symmetry, order 24 rotational symmetry, and smallest rotation angle = 360° / 24 = 15°.",
+          "Validity Condition for Rotational Angles: A degree angle θ can be the smallest angle of rotational symmetry if and only if 360° is an exact integer multiple of θ (e.g., 17° is IMPOSSIBLE because 360/17 is not an integer).",
+          "Applications in Design, Architecture, and Nature: Symmetry underpins architectural stability, floor tilings, brand logo design, snowflake crystallization, and flower petal geometry."
+        ],
+        "key_terms": [
+          {
+            "term": "Symmetry",
+            "definition": "A structural balance where a geometric figure remains invariant under reflection or rotation."
+          },
+          {
+            "term": "Line of Symmetry",
+            "definition": "A straight folding axis dividing a shape into two mirror-image halves that overlap perfectly."
+          },
+          {
+            "term": "Reflectional Symmetry",
+            "definition": "Symmetry where one half of a figure is a mirror reflection of the other half across an axis."
+          },
+          {
+            "term": "Rotational Symmetry",
+            "definition": "Symmetry where a figure matches its original orientation after turning less than 360° around a central point."
+          },
+          {
+            "term": "Center of Rotation",
+            "definition": "The fixed pivot point around which a shape rotates."
+          },
+          {
+            "term": "Order of Rotational Symmetry",
+            "definition": "The number of matching positions a shape assumes during a complete 360° turn."
+          },
+          {
+            "term": "Mirror Halves",
+            "definition": "Two identical halves of a figure that map onto each other when reflected across a line of symmetry."
+          },
+          {
+            "term": "Regular Polygon",
+            "definition": "A 2D shape with equal sides and angles, possessing n lines of symmetry and rotational order n."
+          },
+          {
+            "term": "Ashoka Chakra",
+            "definition": "A 24-spoked wheel symbol exhibiting 24-fold reflectional and rotational symmetry (15° rotation angle)."
+          },
+          {
+            "term": "Congruent",
+            "definition": "Geometric figures having identical shape and size."
+          },
+          {
+            "term": "Axis of Reflection",
+            "definition": "The straight line acting as a virtual mirror in reflectional symmetry."
+          },
+          {
+            "term": "Invariance",
+            "definition": "The property of remaining unchanged after undergoing a geometric transformation."
+          }
+        ],
+        "key_takeaways": [
+          "Reflectional symmetry divides a shape into two overlapping mirror halves across a line of symmetry.",
+          "A regular n-gon has exactly n lines of reflection symmetry and rotational symmetry of order n.",
+          "Rotational symmetry occurs when a shape matches its start position after turning < 360° around its center.",
+          "Smallest Angle of Rotational Symmetry = 360° / Order (n).",
+          "Non-square rectangle diagonals are NOT lines of symmetry because folding causes corner overhangs.",
+          "The 24 spokes of the Ashoka Chakra provide order 24 rotational symmetry with a 15° smallest rotation angle.",
+          "An angle θ can be a rotational angle if and only if 360° is an exact integer multiple of θ.",
+          "Square (n=4): 4 lines of symmetry, order 4, smallest angle 90°.",
+          "Equilateral triangle (n=3): 3 lines of symmetry, order 3, smallest angle 120°.",
+          "Symmetry connects geometry to artistic tilings, architectural balance, and biological structures."
+        ],
+        "image_asset": {
+          "title": "Chapter 9 Visual Overview - Symmetry",
+          "url": "/assets/images/ch9_overview.png",
+          "alt_text": "Overview diagram for Symmetry",
+          "hotspots": [
+            {
+              "id": "hs_ch9_main",
+              "label": "Core Concept: Symmetry",
+              "description": "This chapter explores geometric symmetry across nature, art, architecture, and mathematics, distinguishing between Reflectional (Line) Symmetry and Ro...",
+              "x_percent": 10.0,
+              "y_percent": 20.0,
+              "w_percent": 80.0,
+              "h_percent": 60.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to Symmetry through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "The Other Side of Zero",
+        "core_summary": "This chapter extends the number line into negative territory to construct the set of Integers (Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}). Students explore intuitive models including elevator floor navigation (ground floor = 0, upper floors = positive, basement levels = negative), temperature drops below freezing, elevation/depth relative to sea level, bank account balances and overdrafts, BCE/CE historical timelines, and green (+1) / red (-1) token cancellation models. The chapter establishes horizontal number line positioning (a < b iff a is left of b), additive inverses (a + (-a) = 0), Brahmagupta's ancient laws of zero and integer arithmetic (a - (-b) = a + b), and integer operations.",
+        "key_concepts": [
+          "Concept of Negative Numbers: Negative numbers represent quantities below zero, describing debts, basement levels, below-freezing temperatures, and backwards displacement.",
+          "The Set of Integers (Z): Integers comprise positive natural numbers, zero, and negative natural numbers: Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}. Zero is neutral (neither positive nor negative).",
+          "Elevator Floor Navigation Model: Ground floor represents 0. Upper floors represent positive integers (+1, +2, ...). Basement levels represent negative integers (-1, -2, ...). Moving up means addition; moving down means subtraction.",
+          "Horizontal Number Line Positioning and Order: On a horizontal number line, numbers increase moving right and decrease moving left. For any two integers a and b, a < b if and only if a lies to the left of b (e.g., -10 < -3 because -10 is left of -3).",
+          "Additive Inverse and Opposite Magnitudes: The additive inverse of an integer 'a' is '-a', located at an equal distance from 0 in the opposite direction. Fundamental property: a + (-a) = 0.",
+          "Token Cancellation Model (Zero Pairs): Positive integers are represented by green (+1) tokens; negative integers by red (-1) tokens. Pairing one green and one red token forms a Zero Pair (+1 + -1 = 0). The net uncancelled tokens give the final result.",
+          "Brahmagupta's Zero Laws (628 CE): Ancient Indian mathematician Brahmagupta defined arithmetic rules for zero: A - A = 0; A - 0 = A; 0 - A = -A.",
+          "Subtracting Negative Integers Algebraic Rule: Subtracting a negative integer is equivalent to adding its positive opposite: a - (-b) = a + b (e.g., 5 - (-3) = 5 + 3 = 8).",
+          "Adding Integers with Opposite Signs: To add two integers with opposite signs, subtract the smaller magnitude from the larger magnitude and assign the sign of the larger magnitude.",
+          "Sea Level Elevation and Depth: Sea level represents 0 altitude. Heights above sea level are positive (+m); depths below sea level are negative (-m).",
+          "Financial Transactions (Credit vs. Debit): Bank deposits and account credits are positive (+); withdrawals, debts, and overdrafts are negative (-).",
+          "Historical BCE/CE Timeline Calculations: BCE years represent negative temporal progression relative to 1 CE. Time elapsed between BCE year Y1 and BCE year Y2 equals Y1 - Y2 (e.g., birth in 356 BCE, death in 323 BCE => age = 356 - 323 = 33 years)."
+        ],
+        "key_terms": [
+          {
+            "term": "Integer",
+            "definition": "Any whole number from the set containing natural numbers, zero, and their negative opposites."
+          },
+          {
+            "term": "Negative Integer",
+            "definition": "An integer strictly less than zero, written with a minus sign (-1, -2, -3...)."
+          },
+          {
+            "term": "Positive Integer",
+            "definition": "An integer strictly greater than zero (+1, +2, +3...)."
+          },
+          {
+            "term": "Additive Inverse",
+            "definition": "The number that, when added to a given integer, yields a sum of zero (a + (-a) = 0)."
+          },
+          {
+            "term": "Number Line",
+            "definition": "A visual straight line where numbers are placed as points at uniform intervals, increasing to the right."
+          },
+          {
+            "term": "Zero Pair",
+            "definition": "A pair consisting of one +1 token and one -1 token that cancel each other out to sum to zero."
+          },
+          {
+            "term": "Magnitude",
+            "definition": "The absolute numerical distance of a number from zero on the number line, ignoring its sign."
+          },
+          {
+            "term": "Brahmagupta's Laws",
+            "definition": "Historical arithmetic rules governing operations involving zero and negative quantities."
+          },
+          {
+            "term": "Overdraft",
+            "definition": "A negative bank balance resulting from withdrawing more money than is available in an account."
+          },
+          {
+            "term": "Elevation",
+            "definition": "Vertical height above sea level (+), or depth below sea level (-)."
+          },
+          {
+            "term": "Timeline",
+            "definition": "A chronological representation of events, where BCE dates behave as negative integer counts."
+          },
+          {
+            "term": "Cancellation",
+            "definition": "The process where equal positive and negative quantities neutralize each other to zero."
+          }
+        ],
+        "key_takeaways": [
+          "Integers Z expand whole numbers below zero: {..., -3, -2, -1, 0, +1, +2, +3, ...}.",
+          "Numbers increase moving right on the number line and decrease moving left (-10 < -3).",
+          "Ground floor represents 0, upper floors represent positive integers, basement levels represent negative integers.",
+          "The additive inverse of 'a' is '-a', satisfying a + (-a) = 0.",
+          "Subtracting a negative integer is equivalent to adding its positive opposite: a - (-b) = a + b.",
+          "Token cancellation pairs green (+1) and red (-1) tokens to form zero pairs.",
+          "Brahmagupta's Zero Laws: A - A = 0, A - 0 = A, 0 - A = -A.",
+          "Heights above sea level are positive (+m); depths below sea level are negative (-m).",
+          "Bank deposits are positive (+); withdrawals and overdraft debts are negative (-).",
+          "Historical BCE ages are calculated as Birth Year - Death Year (e.g., 356 BCE - 323 BCE = 33 years)."
+        ],
+        "image_asset": {
+          "title": "Integer Number Line & Elevator Level Model",
+          "url": "/assets/images/ch10_number_line.png",
+          "alt_text": "Horizontal number line with ground level 0, positive floors and negative basements",
+          "hotspots": [
+            {
+              "id": "hs10_zero",
+              "label": "Ground Level (0)",
+              "description": "Reference starting origin. Neither positive nor negative.",
+              "x_percent": 46.0,
+              "y_percent": 40.0,
+              "w_percent": 8.0,
+              "h_percent": 20.0
+            },
+            {
+              "id": "hs10_positive",
+              "label": "Positive Integers (+1 to +10)",
+              "description": "Upper floors above ground. Values increase as you move right.",
+              "x_percent": 56.0,
+              "y_percent": 40.0,
+              "w_percent": 40.0,
+              "h_percent": 20.0
+            },
+            {
+              "id": "hs10_negative",
+              "label": "Negative Integers (-1 to -10)",
+              "description": "Basement levels below ground. Values decrease as you move left.",
+              "x_percent": 4.0,
+              "y_percent": 40.0,
+              "w_percent": 40.0,
+              "h_percent": 20.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "Introduction to The Other Side of Zero through real-world observation.",
+          "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+          "scene_3": "Hands-on problem solving and pattern verification.",
+          "scene_4": "Synthesis of key takeaways and real-world applications."
+        }
+      }
+    ],
+    "dashboard_config": {
+      "theme": "Class 6 Mathematics - Ganita Prakash Interactive Dashboard",
+      "version": "2.0.0",
+      "modules_enabled": [
+        "Overview",
+        "Notes",
+        "Mindmaps",
+        "Flashcards",
+        "Quiz",
+        "Question_Papers",
+        "Foundational",
+        "Master"
+      ],
+      "default_view": "Overview",
+      "interactive_features": {
+        "hotspot_overlays": true,
+        "zoomable_mindmaps": true,
+        "3d_flip_flashcards": true,
+        "self_scoring_quiz": true,
+        "timed_exams": true,
+        "gamified_drills": true,
+        "portfolio_rubric_sliders": true
+      }
+    }
+  },
+  "grade": "6",
+  "chapter_id": "G6-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths Chapter 1",
+  "title": "Maths Chapter 1 - Chapter Overview",
+  "video_url": "https://notebooklm.link.google/v6mat01",
+  "video_title": "Maths Chapter 1 Interactive Video Studio",
+  "image_asset": {
+    "title": "Maths Chapter 1 Concept Diagram",
+    "asset_url": "/assets/images/23-ch1_matribhumi_map.png",
+    "url": "/assets/images/23-ch1_matribhumi_map.png",
+    "filename": "23-ch1_matribhumi_map.png",
+    "type": "16:9 Diagram",
+    "hotspots": [
+      {
+        "id": "hs_1_1",
+        "label": "Core Mechanism",
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of Maths Chapter 1."
+      },
+      {
+        "id": "hs_1_2",
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for Maths Chapter 1."
+      }
+    ]
+  }
 }

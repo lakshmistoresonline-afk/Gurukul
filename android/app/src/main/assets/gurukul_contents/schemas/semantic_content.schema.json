@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gurukul.example/schemas/semantic-content-2.0.0.schema.json",
+  "title": "Gurukul Semantic Content Model 2.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_id",
+    "source_artifact_ref",
+    "artifact_type",
+    "academic_context",
+    "chapter_items",
+    "question_items",
+    "flashcard_items",
+    "media_items",
+    "activity_items",
+    "content_nodes",
+    "source_payload_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "source_artifact_ref": {
+      "type": "string"
+    },
+    "artifact_type": {
+      "type": "string"
+    },
+    "academic_context": {
+      "type": "object"
+    },
+    "chapter_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "question_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "flashcard_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "media_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "activity_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "content_nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "source_payload_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "source_path",
+        "raw_payload"
+      ],
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "source_path": {
+          "type": "string"
+        },
+        "raw_payload": {
+          "type": "object"
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "node_id",
+        "node_type",
+        "source_path",
+        "raw_payload"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "string"
+        },
+        "parent_node_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "node_type": {
+          "type": "string"
+        },
+        "source_path": {
+          "type": "string"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_payload": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

@@ -147,10 +147,16 @@ export default React.memo(function Class7UniversalNotesComponent({ data }: Class
         )}
       </div>
 
-      {/* Tab 1: Summary & Detailed Sections */}
+      {/* Tab 1: Summary & Detailed Sections (Showcases revision_summary.svg) */}
       {activeSubTab === 'm1' && hasM1 && (
         <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
-          <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Zero-Omission Chapter Notes</h3>
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <h3 className="text-xl font-black text-slate-900">Zero-Omission Chapter Notes</h3>
+            <div className="w-10 h-10 shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/illustrations/revision_summary.svg" alt="Revision Summary Illustration" className="w-full h-full object-contain" />
+            </div>
+          </div>
           {(m1.summary || m1.chapter_executive_summary) && (
             <div className="space-y-1">
               <h4 className="text-xs font-black uppercase tracking-widest text-indigo-600">Executive Summary</h4>

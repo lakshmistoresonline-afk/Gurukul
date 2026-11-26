@@ -2,11 +2,12 @@ import glob
 import json
 import os
 import shutil
+import re
 
 def copy_and_map_chapter_images():
     print("=========================================================================")
-    print("GURUKUL AI — CHAPTER DIAGRAM & IMAGE ASSET DUAL-NAME MAPPING ENGINE")
-    print("Copying all 380 chapter images under both prefixed & clean filenames...")
+    print("GURUKUL AI — DIRECTORY-AWARE CHAPTER DIAGRAM & IMAGE MAPPING ENGINE")
+    print("Mapping 380+ chapter images directly from parent Class/Subject/Images...")
     print("=========================================================================")
 
     # 1. Find all image files in Contents/
@@ -21,111 +22,134 @@ def copy_and_map_chapter_images():
     os.makedirs(public_img_dir, exist_ok=True)
 
     copied_count = 0
-    img_map = {} # filename -> public_url
+    mapped_count = 0
 
     for img_path in content_images:
         fname = os.path.basename(img_path)
+        norm_img_path = img_path.replace('\\', '/')
+        parts = norm_img_path.split('/')
 
-        # Copy under original filename
-        dst_path_orig = os.path.join(public_img_dir, fname)
-        try:
-            shutil.copy2(img_path, dst_path_orig)
+        # Example parts: ['Contents', 'Class 7', 'English', 'Images', '13-ch3_anand_alarm_boats.png']
+        if 'Images' not in parts or parts.index('Images') < 2:
+            continue
+
+        cls_dir = parts[parts.index('Images') - 2] # e.g. Class 7
+        subj_dir = parts[parts.index('Images') - 1] # e.g. English
+
+        grade_num = cls_dir.lower().replace('class', '').strip()
+        cls_folder_name = f"Class{grade_num}"
+
+        # Resolve subject folder name
+        clean_subj_lower = subj_dir.strip().lower()
+        if 'maths ii' in clean_subj_lower or 'maths_ii' in clean_subj_lower or 'mathsii' in clean_subj_lower:
+            pc_subj = 'Maths II'
+        elif 'maths i' in clean_subj_lower or 'maths_i' in clean_subj_lower or 'mathsi' in clean_subj_lower:
+            pc_subj = 'Maths I'
+        elif 'math' in clean_subj_lower:
+            pc_subj = 'Maths'
+        elif 'social iii' in clean_subj_lower or 'social_iii' in clean_subj_lower or 'socialiii' in clean_subj_lower:
+            pc_subj = 'Social III'
+        elif 'social ii' in clean_subj_lower or 'social_ii' in clean_subj_lower or 'socialii' in clean_subj_lower:
+            pc_subj = 'Social II'
+        elif 'social i' in clean_subj_lower or 'social_i' in clean_subj_lower or 'sociali' in clean_subj_lower:
+            pc_subj = 'Social I'
+        elif 'soc' in clean_subj_lower:
+            pc_subj = 'Social'
+        elif 'eng' in clean_subj_lower:
+            pc_subj = 'English'
+        elif 'hin' in clean_subj_lower:
+            pc_subj = 'Hindi'
+        elif 'sci' in clean_subj_lower:
+            pc_subj = 'Science'
+        else:
+            pc_subj = subj_dir.capitalize()
+
+        # Parse chapter number from filename (e.g. 13-ch3_anand_alarm_boats.png -> 3)
+        ch_num_match = re.search(r'ch(?:apter)?_?(\d+)', fname.lower()) or re.search(r'-c(\d+)_', fname.lower()) or re.search(r'^(\d+)-', fname.lower())
+        if not ch_num_match:
+            continue
+
+        ch_num_int = int(ch_num_match.group(1))
+        ch_num_str = str(ch_num_int).zfill(2)
+
+        # Copy image file under multiple public filenames for 100% HTTP resolution
+        pub_url_orig = f"/assets/images/{fname}"
+        dst_orig = os.path.join(public_img_dir, fname)
+        shutil.copy2(img_path, dst_orig)
+        copied_count += 1
+
+        clean_fname = fname
+        if '-' in fname:
+            clean_fname = fname.split('-', 1)[1]
+            dst_clean = os.path.join(public_img_dir, clean_fname)
+            shutil.copy2(img_path, dst_clean)
             copied_count += 1
-            public_url_orig = f"/assets/images/{fname}"
-            img_map[fname.lower()] = public_url_orig
 
-            # Also copy under clean un-prefixed filename (e.g. 02-ch10_firozabad_glass_bangle_craft.png -> ch10_firozabad_glass_bangle_craft.png)
-            if '-' in fname:
-                clean_fname = fname.split('-', 1)[1]
-                dst_path_clean = os.path.join(public_img_dir, clean_fname)
-                shutil.copy2(img_path, dst_path_clean)
-                copied_count += 1
-                public_url_clean = f"/assets/images/{clean_fname}"
-                img_map[clean_fname.lower()] = public_url_clean
+        pub_url_clean = f"/assets/images/{clean_fname}"
 
-        except Exception as e:
-            print(f"Error copying {img_path}: {e}")
+        # Map to ProcessedContent overview and manifest JSON files
+        for base in ['backend/ProcessedContent', 'frontend-nextjs/public/ProcessedContent']:
+            target_dirs = glob.glob(f'{base}/{cls_folder_name}/{pc_subj}/*-C{ch_num_str}')
+            if not target_dirs:
+                target_dirs = glob.glob(f'{base}/{cls_folder_name}/*/*-C{ch_num_str}')
 
-    print(f"✅ Successfully copied {copied_count} total image variants to {public_img_dir}!")
+            for td in target_dirs:
+                ov_path = os.path.join(td, 'overview.json')
+                mf_path = os.path.join(td, 'manifest.json')
 
-    # 2. Map images into ProcessedContent JSONs
-    mapped_count = 0
+                if os.path.exists(ov_path):
+                    try:
+                        with open(ov_path, 'r', encoding='utf-8') as ov_f:
+                            ov_data = json.load(ov_f)
 
-    for base in ['backend/ProcessedContent', 'frontend-nextjs/public/ProcessedContent']:
-        ov_files = glob.glob(f'{base}/**/overview.json', recursive=True)
+                        ch_title = ov_data.get('chapter_title') or f"Chapter {ch_num_int}"
 
-        for ov_path in ov_files:
-            try:
-                ch_id = os.path.basename(os.path.dirname(ov_path)) # e.g. G10-ENG-U01-C01
-                parts = ch_id.split('-')
-                if len(parts) < 4:
-                    continue
-
-                g_num = parts[0].replace('G', '')
-                s_code = parts[1]
-                c_num_str = parts[3].replace('C', '')
-                c_num_int = int(c_num_str)
-
-                with open(ov_path, 'r', encoding='utf-8') as f:
-                    ov_data = json.load(f)
-
-                # Match image by chapter number and subject
-                matched_url = None
-
-                # Check if image_asset filename already exists in img_map
-                if isinstance(ov_data.get('image_asset'), dict):
-                    existing_fn = ov_data['image_asset'].get('filename') or ''
-                    if existing_fn and existing_fn.lower() in img_map:
-                        matched_url = img_map[existing_fn.lower()]
-
-                if not matched_url:
-                    for fname, pub_url in img_map.items():
-                        if f"ch{c_num_int}_" in fname or f"ch{c_num_str}_" in fname or f"c{c_num_str}_" in fname or f"chapter_{c_num_int}_" in fname:
-                            s_lower = s_code.lower()
-                            if s_lower in fname or ('eng' in s_lower and 'eng' in fname) or ('hin' in s_lower and 'hin' in fname) or ('mat' in s_lower and 'mat' in fname) or ('sci' in s_lower and 'sci' in fname) or ('soc' in s_lower and 'soc' in fname):
-                                matched_url = pub_url
-                                break
-
-                if matched_url:
-                    if 'image_asset' not in ov_data or not isinstance(ov_data['image_asset'], dict):
                         ov_data['image_asset'] = {
-                            "title": f"Chapter {c_num_int} Concept Diagram & Hotspots",
-                            "asset_url": matched_url,
-                            "url": matched_url,
+                            "title": f"{ch_title} Concept Diagram",
+                            "asset_url": pub_url_clean,
+                            "url": pub_url_clean,
+                            "filename": clean_fname,
                             "type": "16:9 Diagram",
                             "hotspots": [
                                 {
-                                    "id": "hs_1",
+                                    "id": f"hs_{ch_num_int}_1",
                                     "label": "Core Mechanism",
-                                    "tooltip_explanation": f"Interactive study hotspot detailing key concepts in Chapter {c_num_int}."
+                                    "tooltip_explanation": f"Interactive concept hotspot for {ch_title}."
+                                },
+                                {
+                                    "id": f"hs_{ch_num_int}_2",
+                                    "label": "Key Takeaway",
+                                    "tooltip_explanation": f"Essential learning takeaway for {ch_title}."
                                 }
                             ]
                         }
-                    else:
-                        ov_data['image_asset']['asset_url'] = matched_url
-                        ov_data['image_asset']['url'] = matched_url
 
-                    with open(ov_path, 'w', encoding='utf-8') as f:
-                        json.dump(ov_data, f, indent=2, ensure_ascii=False)
+                        with open(ov_path, 'w', encoding='utf-8') as ov_f:
+                            json.dump(ov_data, ov_f, indent=2, ensure_ascii=False)
+                        mapped_count += 1
 
-                    # Update manifest.json
-                    mf_path = os.path.join(os.path.dirname(ov_path), 'manifest.json')
-                    if os.path.exists(mf_path):
+                    except Exception as e:
+                        print(f"Error updating {ov_path}: {e}")
+
+                if os.path.exists(mf_path):
+                    try:
                         with open(mf_path, 'r', encoding='utf-8') as mf_f:
                             mf_data = json.load(mf_f)
-                        if 'image_asset' not in mf_data or not isinstance(mf_data['image_asset'], dict):
-                            mf_data['image_asset'] = ov_data['image_asset']
-                        else:
-                            mf_data['image_asset']['asset_url'] = matched_url
-                            mf_data['image_asset']['url'] = matched_url
+
+                        mf_data['image_asset'] = {
+                            "title": f"Chapter {ch_num_int} Concept Diagram",
+                            "asset_url": pub_url_clean,
+                            "url": pub_url_clean,
+                            "filename": clean_fname
+                        }
+
                         with open(mf_path, 'w', encoding='utf-8') as mf_f:
                             json.dump(mf_data, mf_f, indent=2, ensure_ascii=False)
 
-                    mapped_count += 1
+                    except Exception as e:
+                        print(f"Error updating {mf_path}: {e}")
 
-            except Exception as e:
-                print(f"Error mapping image for {ov_path}: {e}")
-
+    print(f"✅ Successfully copied {copied_count} image files to {public_img_dir}!")
     print(f"✅ Successfully mapped diagram images across {mapped_count} overview/manifest files!")
 
 if __name__ == '__main__':

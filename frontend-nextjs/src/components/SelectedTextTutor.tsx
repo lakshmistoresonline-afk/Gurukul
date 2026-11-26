@@ -124,7 +124,10 @@ export default function SelectedTextTutor({
         setErrorState('AI Tutor service did not return an explanation.');
       }
     } catch (e: any) {
-      setErrorState(e.message || 'AI Tutor network request timed out.');
+      const isOllamaNotice = (e.message || '').includes('404') || (e.message || '').includes('starting') || (e.message || '').includes('unavailable');
+      setErrorState(isOllamaNotice
+        ? '🤖 Local Ollama AI service is currently starting in the background. Please wait a few seconds while Ollama initializes, or launch "ollama serve" on your machine.'
+        : (e.message || 'AI Tutor network request timed out.'));
     } finally {
       setLoading(false);
     }

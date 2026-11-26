@@ -1,5 +1,4 @@
-package com.gurukul.ai.lms.ui
-
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -73,7 +72,7 @@ fun AnalyticsDashboardScreen(
             Card(
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF312E81).copy(alpha = 0.3f)),
                 shape = RoundedCornerShape(20.dp),
-                border = CardBorder(1.dp, Color(0xFF6366F1).copy(alpha = 0.4f)),
+                border = BorderStroke(1.dp, Color(0xFF6366F1).copy(alpha = 0.4f)),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Row(
@@ -124,7 +123,7 @@ fun AnalyticsDashboardScreen(
             Card(
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF0F172A)),
                 shape = RoundedCornerShape(20.dp),
-                border = CardBorder(1.dp, Color(0xFF1E293B)),
+                border = BorderStroke(1.dp, Color(0xFF1E293B)),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Column(
@@ -170,7 +169,7 @@ fun AnalyticsDashboardScreen(
             Card(
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF0F172A)),
                 shape = RoundedCornerShape(24.dp),
-                border = CardBorder(1.dp, Color(0xFF1E293B)),
+                border = BorderStroke(1.dp, Color(0xFF1E293B)),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Column(

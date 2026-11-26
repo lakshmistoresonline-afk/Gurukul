@@ -1,5 +1,6 @@
 package com.gurukul.ai.lms.ui.components
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -101,7 +102,7 @@ fun FlashcardDeckScreen(
             colors = CardDefaults.cardColors(
                 containerColor = if (rotation <= 90f) Color(0xFF0F172A) else Color(0xFF1E1B4B)
             ),
-            border = CardBorder(1.dp, Color(0xFF6366F1).copy(alpha = 0.4f))
+            border = BorderStroke(1.dp, Color(0xFF6366F1).copy(alpha = 0.4f))
         ) {
             Box(
                 modifier = Modifier

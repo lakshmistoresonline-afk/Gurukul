@@ -1,91 +1,2409 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "How, When and Where",
-  "skill_drills": {
-    "scrambled_tile_sets": [
-      {
-        "id": "tile_1",
-        "target_term": "STEWARDSHIP",
-        "scrambled_letters": [
-          "S",
-          "T",
-          "E",
-          "W",
-          "A",
-          "R",
-          "D",
-          "S",
-          "H",
-          "I",
-          "P"
-        ],
-        "hint": "Responsible protection and management of resources/institutions."
-      }
-    ],
-    "multi_bin_sorting_matrices": [
-      {
-        "matrix_title": "Classification Drill - Chapter 1",
-        "bins": [
-          "Category A",
-          "Category B"
-        ],
-        "items": [
-          {
-            "item_name": "Sample Element 1",
-            "correct_bin": "Category A"
-          },
-          {
-            "item_name": "Sample Element 2",
-            "correct_bin": "Category B"
-          }
-        ]
-      }
-    ],
-    "editing_checkers": [
-      {
-        "passage_text": "In Chapter 1, key decisions are made by institutions.",
-        "embedded_errors": [
-          {
-            "error_word": "institutions",
-            "correct_word": "constitutional bodies",
-            "explanation": "Precision in terminology."
-          }
-        ]
-      }
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_329082d6c46ac28a",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_8",
+    "class_level": 8
+  },
+  "subject": "Social I",
+  "artifact": {
+    "artifact_type": "foundational",
+    "source_file_name": "09-Foundational.json",
+    "source_relative_path": "Contents/Class 8/Social I/Source Files/09-Foundational.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "a696944d698a5e70c6a27a73b30c060a3cdc019759b8d66256e303ba1059c8c4",
+    "source_semantic_sha256": "26c260bcadf2712a62bd100f3ca7909ead63732ef13e810057a4e912e722ebd4",
+    "source_byte_length": 63709,
+    "source_encoding": "utf-8",
+    "source_field_count": 816,
+    "field_inventory": [
+      "$.subject",
+      "$.gamified_config",
+      "$.gamified_config.points_per_drill",
+      "$.gamified_config.streak_multiplier",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].skill_drills",
+      "$.chapters[0].skill_drills.scrambled_tile_sets",
+      "$.chapters[0].skill_drills.scrambled_tile_sets[0].id",
+      "$.chapters[0].skill_drills.scrambled_tile_sets[0].target_term",
+      "$.chapters[0].skill_drills.scrambled_tile_sets[0].scrambled_letters",
+      "$.chapters[0].skill_drills.scrambled_tile_sets[0].hint",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices[0].matrix_title",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices[0].bins",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices[0].items",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices[0].items[0].item_name",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices[0].items[0].correct_bin",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices[0].items[1].item_name",
+      "$.chapters[0].skill_drills.multi_bin_sorting_matrices[0].items[1].correct_bin",
+      "$.chapters[0].skill_drills.editing_checkers",
+      "$.chapters[0].skill_drills.editing_checkers[0].passage_text",
+      "$.chapters[0].skill_drills.editing_checkers[0].embedded_errors",
+      "$.chapters[0].skill_drills.editing_checkers[0].embedded_errors[0].error_word",
+      "$.chapters[0].skill_drills.editing_checkers[0].embedded_errors[0].correct_word",
+      "$.chapters[0].skill_drills.editing_checkers[0].embedded_errors[0].explanation",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.image_url",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.aspect_ratio",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].id",
+      "$.chapters[0].image_asset.hotspots[0].label",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[0].popover_description",
+      "$.chapters[0].image_asset.hotspots[1].id",
+      "$.chapters[0].image_asset.hotspots[1].label",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].popover_description",
+      "$.chapters[0].image_asset.hotspots[2].id",
+      "$.chapters[0].image_asset.hotspots[2].label",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].popover_description",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].skill_drills",
+      "$.chapters[1].skill_drills.scrambled_tile_sets",
+      "$.chapters[1].skill_drills.scrambled_tile_sets[0].id",
+      "$.chapters[1].skill_drills.scrambled_tile_sets[0].target_term",
+      "$.chapters[1].skill_drills.scrambled_tile_sets[0].scrambled_letters",
+      "$.chapters[1].skill_drills.scrambled_tile_sets[0].hint",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices[0].matrix_title",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices[0].bins",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices[0].items",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices[0].items[0].item_name",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices[0].items[0].correct_bin",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices[0].items[1].item_name",
+      "$.chapters[1].skill_drills.multi_bin_sorting_matrices[0].items[1].correct_bin",
+      "$.chapters[1].skill_drills.editing_checkers",
+      "$.chapters[1].skill_drills.editing_checkers[0].passage_text",
+      "$.chapters[1].skill_drills.editing_checkers[0].embedded_errors",
+      "$.chapters[1].skill_drills.editing_checkers[0].embedded_errors[0].error_word",
+      "$.chapters[1].skill_drills.editing_checkers[0].embedded_errors[0].correct_word",
+      "$.chapters[1].skill_drills.editing_checkers[0].embedded_errors[0].explanation",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.image_url",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.aspect_ratio",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].id",
+      "$.chapters[1].image_asset.hotspots[0].label",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[0].popover_description",
+      "$.chapters[1].image_asset.hotspots[1].id",
+      "$.chapters[1].image_asset.hotspots[1].label",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].popover_description",
+      "$.chapters[1].image_asset.hotspots[2].id",
+      "$.chapters[1].image_asset.hotspots[2].label",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].popover_description",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].skill_drills",
+      "$.chapters[2].skill_drills.scrambled_tile_sets",
+      "$.chapters[2].skill_drills.scrambled_tile_sets[0].id",
+      "$.chapters[2].skill_drills.scrambled_tile_sets[0].target_term",
+      "$.chapters[2].skill_drills.scrambled_tile_sets[0].scrambled_letters",
+      "$.chapters[2].skill_drills.scrambled_tile_sets[0].hint",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices[0].matrix_title",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices[0].bins",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices[0].items",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices[0].items[0].item_name",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices[0].items[0].correct_bin",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices[0].items[1].item_name",
+      "$.chapters[2].skill_drills.multi_bin_sorting_matrices[0].items[1].correct_bin",
+      "$.chapters[2].skill_drills.editing_checkers",
+      "$.chapters[2].skill_drills.editing_checkers[0].passage_text",
+      "$.chapters[2].skill_drills.editing_checkers[0].embedded_errors",
+      "$.chapters[2].skill_drills.editing_checkers[0].embedded_errors[0].error_word",
+      "$.chapters[2].skill_drills.editing_checkers[0].embedded_errors[0].correct_word",
+      "$.chapters[2].skill_drills.editing_checkers[0].embedded_errors[0].explanation",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.image_url",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.aspect_ratio",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].id",
+      "$.chapters[2].image_asset.hotspots[0].label",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].image_asset.hotspots[0].popover_description",
+      "$.chapters[2].image_asset.hotspots[1].id",
+      "$.chapters[2].image_asset.hotspots[1].label",
+      "$.chapters[2].image_asset.hotspots[1].x_percent",
+      "$.chapters[2].image_asset.hotspots[1].y_percent",
+      "$.chapters[2].image_asset.hotspots[1].w_percent",
+      "$.chapters[2].image_asset.hotspots[1].h_percent",
+      "$.chapters[2].image_asset.hotspots[1].popover_description",
+      "$.chapters[2].image_asset.hotspots[2].id",
+      "$.chapters[2].image_asset.hotspots[2].label",
+      "$.chapters[2].image_asset.hotspots[2].x_percent",
+      "$.chapters[2].image_asset.hotspots[2].y_percent",
+      "$.chapters[2].image_asset.hotspots[2].w_percent",
+      "$.chapters[2].image_asset.hotspots[2].h_percent",
+      "$.chapters[2].image_asset.hotspots[2].popover_description",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].skill_drills",
+      "$.chapters[3].skill_drills.scrambled_tile_sets",
+      "$.chapters[3].skill_drills.scrambled_tile_sets[0].id",
+      "$.chapters[3].skill_drills.scrambled_tile_sets[0].target_term",
+      "$.chapters[3].skill_drills.scrambled_tile_sets[0].scrambled_letters",
+      "$.chapters[3].skill_drills.scrambled_tile_sets[0].hint",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices[0].matrix_title",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices[0].bins",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices[0].items",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices[0].items[0].item_name",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices[0].items[0].correct_bin",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices[0].items[1].item_name",
+      "$.chapters[3].skill_drills.multi_bin_sorting_matrices[0].items[1].correct_bin",
+      "$.chapters[3].skill_drills.editing_checkers",
+      "$.chapters[3].skill_drills.editing_checkers[0].passage_text",
+      "$.chapters[3].skill_drills.editing_checkers[0].embedded_errors",
+      "$.chapters[3].skill_drills.editing_checkers[0].embedded_errors[0].error_word",
+      "$.chapters[3].skill_drills.editing_checkers[0].embedded_errors[0].correct_word",
+      "$.chapters[3].skill_drills.editing_checkers[0].embedded_errors[0].explanation",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.image_url",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.aspect_ratio",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].id",
+      "$.chapters[3].image_asset.hotspots[0].label",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].image_asset.hotspots[0].popover_description",
+      "$.chapters[3].image_asset.hotspots[1].id",
+      "$.chapters[3].image_asset.hotspots[1].label",
+      "$.chapters[3].image_asset.hotspots[1].x_percent",
+      "$.chapters[3].image_asset.hotspots[1].y_percent",
+      "$.chapters[3].image_asset.hotspots[1].w_percent",
+      "$.chapters[3].image_asset.hotspots[1].h_percent",
+      "$.chapters[3].image_asset.hotspots[1].popover_description",
+      "$.chapters[3].image_asset.hotspots[2].id",
+      "$.chapters[3].image_asset.hotspots[2].label",
+      "$.chapters[3].image_asset.hotspots[2].x_percent",
+      "$.chapters[3].image_asset.hotspots[2].y_percent",
+      "$.chapters[3].image_asset.hotspots[2].w_percent",
+      "$.chapters[3].image_asset.hotspots[2].h_percent",
+      "$.chapters[3].image_asset.hotspots[2].popover_description",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].skill_drills",
+      "$.chapters[4].skill_drills.scrambled_tile_sets",
+      "$.chapters[4].skill_drills.scrambled_tile_sets[0].id",
+      "$.chapters[4].skill_drills.scrambled_tile_sets[0].target_term",
+      "$.chapters[4].skill_drills.scrambled_tile_sets[0].scrambled_letters",
+      "$.chapters[4].skill_drills.scrambled_tile_sets[0].hint",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices[0].matrix_title",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices[0].bins",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices[0].items",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices[0].items[0].item_name",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices[0].items[0].correct_bin",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices[0].items[1].item_name",
+      "$.chapters[4].skill_drills.multi_bin_sorting_matrices[0].items[1].correct_bin",
+      "$.chapters[4].skill_drills.editing_checkers",
+      "$.chapters[4].skill_drills.editing_checkers[0].passage_text",
+      "$.chapters[4].skill_drills.editing_checkers[0].embedded_errors",
+      "$.chapters[4].skill_drills.editing_checkers[0].embedded_errors[0].error_word",
+      "$.chapters[4].skill_drills.editing_checkers[0].embedded_errors[0].correct_word",
+      "$.chapters[4].skill_drills.editing_checkers[0].embedded_errors[0].explanation",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.image_url",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.aspect_ratio",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].id",
+      "$.chapters[4].image_asset.hotspots[0].label",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[0].popover_description",
+      "$.chapters[4].image_asset.hotspots[1].id",
+      "$.chapters[4].image_asset.hotspots[1].label",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].popover_description",
+      "$.chapters[4].image_asset.hotspots[2].id",
+      "$.chapters[4].image_asset.hotspots[2].label",
+      "$.chapters[4].image_asset.hotspots[2].x_percent",
+      "$.chapters[4].image_asset.hotspots[2].y_percent",
+      "$.chapters[4].image_asset.hotspots[2].w_percent",
+      "$.chapters[4].image_asset.hotspots[2].h_percent",
+      "$.chapters[4].image_asset.hotspots[2].popover_description",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].skill_drills",
+      "$.chapters[5].skill_drills.scrambled_tile_sets",
+      "$.chapters[5].skill_drills.scrambled_tile_sets[0].id",
+      "$.chapters[5].skill_drills.scrambled_tile_sets[0].target_term",
+      "$.chapters[5].skill_drills.scrambled_tile_sets[0].scrambled_letters",
+      "$.chapters[5].skill_drills.scrambled_tile_sets[0].hint",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices[0].matrix_title",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices[0].bins",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices[0].items",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices[0].items[0].item_name",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices[0].items[0].correct_bin",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices[0].items[1].item_name",
+      "$.chapters[5].skill_drills.multi_bin_sorting_matrices[0].items[1].correct_bin",
+      "$.chapters[5].skill_drills.editing_checkers",
+      "$.chapters[5].skill_drills.editing_checkers[0].passage_text",
+      "$.chapters[5].skill_drills.editing_checkers[0].embedded_errors",
+      "$.chapters[5].skill_drills.editing_checkers[0].embedded_errors[0].error_word",
+      "$.chapters[5].skill_drills.editing_checkers[0].embedded_errors[0].correct_word",
+      "$.chapters[5].skill_drills.editing_checkers[0].embedded_errors[0].explanation",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.image_url",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.aspect_ratio",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].id",
+      "$.chapters[5].image_asset.hotspots[0].label",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[0].popover_description",
+      "$.chapters[5].image_asset.hotspots[1].id",
+      "$.chapters[5].image_asset.hotspots[1].label",
+      "$.chapters[5].image_asset.hotspots[1].x_percent",
+      "$.chapters[5].image_asset.hotspots[1].y_percent",
+      "$.chapters[5].image_asset.hotspots[1].w_percent",
+      "$.chapters[5].image_asset.hotspots[1].h_percent",
+      "$.chapters[5].image_asset.hotspots[1].popover_description",
+      "$.chapters[5].image_asset.hotspots[2].id",
+      "$.chapters[5].image_asset.hotspots[2].label",
+      "$.chapters[5].image_asset.hotspots[2].x_percent",
+      "$.chapters[5].image_asset.hotspots[2].y_percent",
+      "$.chapters[5].image_asset.hotspots[2].w_percent",
+      "$.chapters[5].image_asset.hotspots[2].h_percent",
+      "$.chapters[5].image_asset.hotspots[2].popover_description",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].skill_drills",
+      "$.chapters[6].skill_drills.scrambled_tile_sets",
+      "$.chapters[6].skill_drills.scrambled_tile_sets[0].id",
+      "$.chapters[6].skill_drills.scrambled_tile_sets[0].target_term",
+      "$.chapters[6].skill_drills.scrambled_tile_sets[0].scrambled_letters",
+      "$.chapters[6].skill_drills.scrambled_tile_sets[0].hint",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices[0].matrix_title",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices[0].bins",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices[0].items",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices[0].items[0].item_name",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices[0].items[0].correct_bin",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices[0].items[1].item_name",
+      "$.chapters[6].skill_drills.multi_bin_sorting_matrices[0].items[1].correct_bin",
+      "$.chapters[6].skill_drills.editing_checkers",
+      "$.chapters[6].skill_drills.editing_checkers[0].passage_text",
+      "$.chapters[6].skill_drills.editing_checkers[0].embedded_errors",
+      "$.chapters[6].skill_drills.editing_checkers[0].embedded_errors[0].error_word",
+      "$.chapters[6].skill_drills.editing_checkers[0].embedded_errors[0].correct_word",
+      "$.chapters[6].skill_drills.editing_checkers[0].embedded_errors[0].explanation",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.image_url",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.aspect_ratio",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].id",
+      "$.chapters[6].image_asset.hotspots[0].label",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[0].popover_description",
+      "$.chapters[6].image_asset.hotspots[1].id",
+      "$.chapters[6].image_asset.hotspots[1].label",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].popover_description",
+      "$.chapters[6].image_asset.hotspots[2].id",
+      "$.chapters[6].image_asset.hotspots[2].label",
+      "$.chapters[6].image_asset.hotspots[2].x_percent",
+      "$.chapters[6].image_asset.hotspots[2].y_percent",
+      "$.chapters[6].image_asset.hotspots[2].w_percent",
+      "$.chapters[6].image_asset.hotspots[2].h_percent",
+      "$.chapters[6].image_asset.hotspots[2].popover_description",
+      "$.foundational_content_bank",
+      "$.foundational_content_bank.terminology",
+      "$.foundational_content_bank.terminology[0].term",
+      "$.foundational_content_bank.terminology[0].meaning",
+      "$.foundational_content_bank.terminology[0].source_context",
+      "$.foundational_content_bank.terminology[1].term",
+      "$.foundational_content_bank.terminology[1].meaning",
+      "$.foundational_content_bank.terminology[1].source_context",
+      "$.foundational_content_bank.terminology[2].term",
+      "$.foundational_content_bank.terminology[2].meaning",
+      "$.foundational_content_bank.terminology[2].source_context",
+      "$.foundational_content_bank.terminology[3].term",
+      "$.foundational_content_bank.terminology[3].meaning",
+      "$.foundational_content_bank.terminology[3].source_context",
+      "$.foundational_content_bank.terminology[4].term",
+      "$.foundational_content_bank.terminology[4].meaning",
+      "$.foundational_content_bank.terminology[4].source_context",
+      "$.foundational_content_bank.terminology[5].term",
+      "$.foundational_content_bank.terminology[5].meaning",
+      "$.foundational_content_bank.terminology[5].source_context",
+      "$.foundational_content_bank.terminology[6].term",
+      "$.foundational_content_bank.terminology[6].meaning",
+      "$.foundational_content_bank.terminology[6].source_context",
+      "$.foundational_content_bank.terminology[7].term",
+      "$.foundational_content_bank.terminology[7].meaning",
+      "$.foundational_content_bank.terminology[7].source_context",
+      "$.foundational_content_bank.terminology[8].term",
+      "$.foundational_content_bank.terminology[8].meaning",
+      "$.foundational_content_bank.terminology[8].source_context",
+      "$.foundational_content_bank.terminology[9].term",
+      "$.foundational_content_bank.terminology[9].meaning",
+      "$.foundational_content_bank.terminology[9].source_context",
+      "$.foundational_content_bank.terminology[10].term",
+      "$.foundational_content_bank.terminology[10].meaning",
+      "$.foundational_content_bank.terminology[10].source_context",
+      "$.foundational_content_bank.terminology[11].term",
+      "$.foundational_content_bank.terminology[11].meaning",
+      "$.foundational_content_bank.terminology[11].source_context",
+      "$.foundational_content_bank.terminology[12].term",
+      "$.foundational_content_bank.terminology[12].meaning",
+      "$.foundational_content_bank.terminology[12].source_context",
+      "$.foundational_content_bank.terminology[13].term",
+      "$.foundational_content_bank.terminology[13].meaning",
+      "$.foundational_content_bank.terminology[13].source_context",
+      "$.foundational_content_bank.terminology[14].term",
+      "$.foundational_content_bank.terminology[14].meaning",
+      "$.foundational_content_bank.terminology[14].source_context",
+      "$.foundational_content_bank.terminology[15].term",
+      "$.foundational_content_bank.terminology[15].meaning",
+      "$.foundational_content_bank.terminology[15].source_context",
+      "$.foundational_content_bank.terminology[16].term",
+      "$.foundational_content_bank.terminology[16].meaning",
+      "$.foundational_content_bank.terminology[16].source_context",
+      "$.foundational_content_bank.terminology[17].term",
+      "$.foundational_content_bank.terminology[17].meaning",
+      "$.foundational_content_bank.terminology[17].source_context",
+      "$.foundational_content_bank.terminology[18].term",
+      "$.foundational_content_bank.terminology[18].meaning",
+      "$.foundational_content_bank.terminology[18].source_context",
+      "$.foundational_content_bank.terminology[19].term",
+      "$.foundational_content_bank.terminology[19].meaning",
+      "$.foundational_content_bank.terminology[19].source_context",
+      "$.foundational_content_bank.definitions",
+      "$.foundational_content_bank.definitions[0].term",
+      "$.foundational_content_bank.definitions[0].definition",
+      "$.foundational_content_bank.definitions[0].source_context",
+      "$.foundational_content_bank.definitions[1].term",
+      "$.foundational_content_bank.definitions[1].definition",
+      "$.foundational_content_bank.definitions[1].source_context",
+      "$.foundational_content_bank.definitions[2].term",
+      "$.foundational_content_bank.definitions[2].definition",
+      "$.foundational_content_bank.definitions[2].source_context",
+      "$.foundational_content_bank.definitions[3].term",
+      "$.foundational_content_bank.definitions[3].definition",
+      "$.foundational_content_bank.definitions[3].source_context",
+      "$.foundational_content_bank.definitions[4].term",
+      "$.foundational_content_bank.definitions[4].definition",
+      "$.foundational_content_bank.definitions[4].source_context",
+      "$.foundational_content_bank.definitions[5].term",
+      "$.foundational_content_bank.definitions[5].definition",
+      "$.foundational_content_bank.definitions[5].source_context",
+      "$.foundational_content_bank.definitions[6].term",
+      "$.foundational_content_bank.definitions[6].definition",
+      "$.foundational_content_bank.definitions[6].source_context",
+      "$.foundational_content_bank.definitions[7].term",
+      "$.foundational_content_bank.definitions[7].definition",
+      "$.foundational_content_bank.definitions[7].source_context",
+      "$.foundational_content_bank.definitions[8].term",
+      "$.foundational_content_bank.definitions[8].definition",
+      "$.foundational_content_bank.definitions[8].source_context",
+      "$.foundational_content_bank.definitions[9].term",
+      "$.foundational_content_bank.definitions[9].definition",
+      "$.foundational_content_bank.definitions[9].source_context",
+      "$.foundational_content_bank.concepts",
+      "$.foundational_content_bank.concepts[0].concept_title",
+      "$.foundational_content_bank.concepts[0].description",
+      "$.foundational_content_bank.concepts[0].source_context",
+      "$.foundational_content_bank.concepts[1].concept_title",
+      "$.foundational_content_bank.concepts[1].description",
+      "$.foundational_content_bank.concepts[1].source_context",
+      "$.foundational_content_bank.concepts[2].concept_title",
+      "$.foundational_content_bank.concepts[2].description",
+      "$.foundational_content_bank.concepts[2].source_context",
+      "$.foundational_content_bank.concepts[3].concept_title",
+      "$.foundational_content_bank.concepts[3].description",
+      "$.foundational_content_bank.concepts[3].source_context",
+      "$.foundational_content_bank.concepts[4].concept_title",
+      "$.foundational_content_bank.concepts[4].description",
+      "$.foundational_content_bank.concepts[4].source_context",
+      "$.foundational_content_bank.concepts[5].concept_title",
+      "$.foundational_content_bank.concepts[5].description",
+      "$.foundational_content_bank.concepts[5].source_context",
+      "$.foundational_content_bank.concepts[6].concept_title",
+      "$.foundational_content_bank.concepts[6].description",
+      "$.foundational_content_bank.concepts[6].source_context",
+      "$.foundational_content_bank.concepts[7].concept_title",
+      "$.foundational_content_bank.concepts[7].description",
+      "$.foundational_content_bank.concepts[7].source_context",
+      "$.foundational_content_bank.concepts[8].concept_title",
+      "$.foundational_content_bank.concepts[8].description",
+      "$.foundational_content_bank.concepts[8].source_context",
+      "$.foundational_content_bank.concepts[9].concept_title",
+      "$.foundational_content_bank.concepts[9].description",
+      "$.foundational_content_bank.concepts[9].source_context",
+      "$.foundational_content_bank.facts",
+      "$.foundational_content_bank.facts[0].fact",
+      "$.foundational_content_bank.facts[0].source_context",
+      "$.foundational_content_bank.facts[1].fact",
+      "$.foundational_content_bank.facts[1].source_context",
+      "$.foundational_content_bank.facts[2].fact",
+      "$.foundational_content_bank.facts[2].source_context",
+      "$.foundational_content_bank.facts[3].fact",
+      "$.foundational_content_bank.facts[3].source_context",
+      "$.foundational_content_bank.facts[4].fact",
+      "$.foundational_content_bank.facts[4].source_context",
+      "$.foundational_content_bank.facts[5].fact",
+      "$.foundational_content_bank.facts[5].source_context",
+      "$.foundational_content_bank.facts[6].fact",
+      "$.foundational_content_bank.facts[6].source_context",
+      "$.foundational_content_bank.facts[7].fact",
+      "$.foundational_content_bank.facts[7].source_context",
+      "$.foundational_content_bank.facts[8].fact",
+      "$.foundational_content_bank.facts[8].source_context",
+      "$.foundational_content_bank.facts[9].fact",
+      "$.foundational_content_bank.facts[9].source_context",
+      "$.foundational_content_bank.people",
+      "$.foundational_content_bank.people[0].name",
+      "$.foundational_content_bank.people[0].role_or_significance",
+      "$.foundational_content_bank.people[0].source_context",
+      "$.foundational_content_bank.people[1].name",
+      "$.foundational_content_bank.people[1].role_or_significance",
+      "$.foundational_content_bank.people[1].source_context",
+      "$.foundational_content_bank.people[2].name",
+      "$.foundational_content_bank.people[2].role_or_significance",
+      "$.foundational_content_bank.people[2].source_context",
+      "$.foundational_content_bank.people[3].name",
+      "$.foundational_content_bank.people[3].role_or_significance",
+      "$.foundational_content_bank.people[3].source_context",
+      "$.foundational_content_bank.people[4].name",
+      "$.foundational_content_bank.people[4].role_or_significance",
+      "$.foundational_content_bank.people[4].source_context",
+      "$.foundational_content_bank.people[5].name",
+      "$.foundational_content_bank.people[5].role_or_significance",
+      "$.foundational_content_bank.people[5].source_context",
+      "$.foundational_content_bank.people[6].name",
+      "$.foundational_content_bank.people[6].role_or_significance",
+      "$.foundational_content_bank.people[6].source_context",
+      "$.foundational_content_bank.people[7].name",
+      "$.foundational_content_bank.people[7].role_or_significance",
+      "$.foundational_content_bank.people[7].source_context",
+      "$.foundational_content_bank.people[8].name",
+      "$.foundational_content_bank.people[8].role_or_significance",
+      "$.foundational_content_bank.people[8].source_context",
+      "$.foundational_content_bank.people[9].name",
+      "$.foundational_content_bank.people[9].role_or_significance",
+      "$.foundational_content_bank.people[9].source_context",
+      "$.foundational_content_bank.people[10].name",
+      "$.foundational_content_bank.people[10].role_or_significance",
+      "$.foundational_content_bank.people[10].source_context",
+      "$.foundational_content_bank.people[11].name",
+      "$.foundational_content_bank.people[11].role_or_significance",
+      "$.foundational_content_bank.people[11].source_context",
+      "$.foundational_content_bank.people[12].name",
+      "$.foundational_content_bank.people[12].role_or_significance",
+      "$.foundational_content_bank.people[12].source_context",
+      "$.foundational_content_bank.people[13].name",
+      "$.foundational_content_bank.people[13].role_or_significance",
+      "$.foundational_content_bank.people[13].source_context",
+      "$.foundational_content_bank.people[14].name",
+      "$.foundational_content_bank.people[14].role_or_significance",
+      "$.foundational_content_bank.people[14].source_context",
+      "$.foundational_content_bank.places",
+      "$.foundational_content_bank.places[0].location_name",
+      "$.foundational_content_bank.places[0].significance",
+      "$.foundational_content_bank.places[0].source_context",
+      "$.foundational_content_bank.places[1].location_name",
+      "$.foundational_content_bank.places[1].significance",
+      "$.foundational_content_bank.places[1].source_context",
+      "$.foundational_content_bank.places[2].location_name",
+      "$.foundational_content_bank.places[2].significance",
+      "$.foundational_content_bank.places[2].source_context",
+      "$.foundational_content_bank.places[3].location_name",
+      "$.foundational_content_bank.places[3].significance",
+      "$.foundational_content_bank.places[3].source_context",
+      "$.foundational_content_bank.places[4].location_name",
+      "$.foundational_content_bank.places[4].significance",
+      "$.foundational_content_bank.places[4].source_context",
+      "$.foundational_content_bank.places[5].location_name",
+      "$.foundational_content_bank.places[5].significance",
+      "$.foundational_content_bank.places[5].source_context",
+      "$.foundational_content_bank.places[6].location_name",
+      "$.foundational_content_bank.places[6].significance",
+      "$.foundational_content_bank.places[6].source_context",
+      "$.foundational_content_bank.places[7].location_name",
+      "$.foundational_content_bank.places[7].significance",
+      "$.foundational_content_bank.places[7].source_context",
+      "$.foundational_content_bank.dates_events",
+      "$.foundational_content_bank.dates_events[0].event",
+      "$.foundational_content_bank.dates_events[0].time_period",
+      "$.foundational_content_bank.dates_events[0].significance",
+      "$.foundational_content_bank.dates_events[0].source_context",
+      "$.foundational_content_bank.dates_events[1].event",
+      "$.foundational_content_bank.dates_events[1].time_period",
+      "$.foundational_content_bank.dates_events[1].significance",
+      "$.foundational_content_bank.dates_events[1].source_context",
+      "$.foundational_content_bank.dates_events[2].event",
+      "$.foundational_content_bank.dates_events[2].time_period",
+      "$.foundational_content_bank.dates_events[2].significance",
+      "$.foundational_content_bank.dates_events[2].source_context",
+      "$.foundational_content_bank.dates_events[3].event",
+      "$.foundational_content_bank.dates_events[3].time_period",
+      "$.foundational_content_bank.dates_events[3].significance",
+      "$.foundational_content_bank.dates_events[3].source_context",
+      "$.foundational_content_bank.dates_events[4].event",
+      "$.foundational_content_bank.dates_events[4].time_period",
+      "$.foundational_content_bank.dates_events[4].significance",
+      "$.foundational_content_bank.dates_events[4].source_context",
+      "$.foundational_content_bank.dates_events[5].event",
+      "$.foundational_content_bank.dates_events[5].time_period",
+      "$.foundational_content_bank.dates_events[5].significance",
+      "$.foundational_content_bank.dates_events[5].source_context",
+      "$.foundational_content_bank.dates_events[6].event",
+      "$.foundational_content_bank.dates_events[6].time_period",
+      "$.foundational_content_bank.dates_events[6].significance",
+      "$.foundational_content_bank.dates_events[6].source_context",
+      "$.foundational_content_bank.dates_events[7].event",
+      "$.foundational_content_bank.dates_events[7].time_period",
+      "$.foundational_content_bank.dates_events[7].significance",
+      "$.foundational_content_bank.dates_events[7].source_context",
+      "$.foundational_content_bank.dates_events[8].event",
+      "$.foundational_content_bank.dates_events[8].time_period",
+      "$.foundational_content_bank.dates_events[8].significance",
+      "$.foundational_content_bank.dates_events[8].source_context",
+      "$.foundational_content_bank.dates_events[9].event",
+      "$.foundational_content_bank.dates_events[9].time_period",
+      "$.foundational_content_bank.dates_events[9].significance",
+      "$.foundational_content_bank.dates_events[9].source_context",
+      "$.foundational_content_bank.dates_events[10].event",
+      "$.foundational_content_bank.dates_events[10].time_period",
+      "$.foundational_content_bank.dates_events[10].significance",
+      "$.foundational_content_bank.dates_events[10].source_context",
+      "$.foundational_content_bank.institutions",
+      "$.foundational_content_bank.institutions[0].institution",
+      "$.foundational_content_bank.institutions[0].description",
+      "$.foundational_content_bank.institutions[0].source_context",
+      "$.foundational_content_bank.institutions[1].institution",
+      "$.foundational_content_bank.institutions[1].description",
+      "$.foundational_content_bank.institutions[1].source_context",
+      "$.foundational_content_bank.institutions[2].institution",
+      "$.foundational_content_bank.institutions[2].description",
+      "$.foundational_content_bank.institutions[2].source_context",
+      "$.foundational_content_bank.institutions[3].institution",
+      "$.foundational_content_bank.institutions[3].description",
+      "$.foundational_content_bank.institutions[3].source_context",
+      "$.foundational_content_bank.institutions[4].institution",
+      "$.foundational_content_bank.institutions[4].description",
+      "$.foundational_content_bank.institutions[4].source_context",
+      "$.foundational_content_bank.institutions[5].institution",
+      "$.foundational_content_bank.institutions[5].description",
+      "$.foundational_content_bank.institutions[5].source_context",
+      "$.foundational_content_bank.institutions[6].institution",
+      "$.foundational_content_bank.institutions[6].description",
+      "$.foundational_content_bank.institutions[6].source_context",
+      "$.foundational_content_bank.laws_systems",
+      "$.foundational_content_bank.laws_systems[0].system_name",
+      "$.foundational_content_bank.laws_systems[0].type",
+      "$.foundational_content_bank.laws_systems[0].features",
+      "$.foundational_content_bank.laws_systems[0].source_context",
+      "$.foundational_content_bank.laws_systems[1].system_name",
+      "$.foundational_content_bank.laws_systems[1].type",
+      "$.foundational_content_bank.laws_systems[1].features",
+      "$.foundational_content_bank.laws_systems[1].source_context",
+      "$.foundational_content_bank.laws_systems[2].system_name",
+      "$.foundational_content_bank.laws_systems[2].type",
+      "$.foundational_content_bank.laws_systems[2].features",
+      "$.foundational_content_bank.laws_systems[2].source_context",
+      "$.foundational_content_bank.laws_systems[3].system_name",
+      "$.foundational_content_bank.laws_systems[3].type",
+      "$.foundational_content_bank.laws_systems[3].features",
+      "$.foundational_content_bank.laws_systems[3].source_context",
+      "$.foundational_content_bank.laws_systems[4].system_name",
+      "$.foundational_content_bank.laws_systems[4].type",
+      "$.foundational_content_bank.laws_systems[4].features",
+      "$.foundational_content_bank.laws_systems[4].source_context",
+      "$.foundational_content_bank.laws_systems[5].system_name",
+      "$.foundational_content_bank.laws_systems[5].type",
+      "$.foundational_content_bank.laws_systems[5].features",
+      "$.foundational_content_bank.laws_systems[5].source_context",
+      "$.foundational_content_bank.laws_systems[6].system_name",
+      "$.foundational_content_bank.laws_systems[6].type",
+      "$.foundational_content_bank.laws_systems[6].features",
+      "$.foundational_content_bank.laws_systems[6].source_context",
+      "$.foundational_content_bank.laws_systems[7].system_name",
+      "$.foundational_content_bank.laws_systems[7].type",
+      "$.foundational_content_bank.laws_systems[7].features",
+      "$.foundational_content_bank.laws_systems[7].source_context",
+      "$.foundational_content_bank.laws_systems[8].system_name",
+      "$.foundational_content_bank.laws_systems[8].type",
+      "$.foundational_content_bank.laws_systems[8].features",
+      "$.foundational_content_bank.laws_systems[8].source_context",
+      "$.foundational_content_bank.chronology",
+      "$.foundational_content_bank.chronology[0].sequence_title",
+      "$.foundational_content_bank.chronology[0].steps",
+      "$.foundational_content_bank.chronology[0].source_context",
+      "$.foundational_content_bank.chronology[1].sequence_title",
+      "$.foundational_content_bank.chronology[1].steps",
+      "$.foundational_content_bank.chronology[1].source_context",
+      "$.foundational_content_bank.chronology[2].sequence_title",
+      "$.foundational_content_bank.chronology[2].steps",
+      "$.foundational_content_bank.chronology[2].source_context",
+      "$.foundational_content_bank.cause_effect",
+      "$.foundational_content_bank.cause_effect[0].cause",
+      "$.foundational_content_bank.cause_effect[0].effect",
+      "$.foundational_content_bank.cause_effect[0].source_context",
+      "$.foundational_content_bank.cause_effect[1].cause",
+      "$.foundational_content_bank.cause_effect[1].effect",
+      "$.foundational_content_bank.cause_effect[1].source_context",
+      "$.foundational_content_bank.cause_effect[2].cause",
+      "$.foundational_content_bank.cause_effect[2].effect",
+      "$.foundational_content_bank.cause_effect[2].source_context",
+      "$.foundational_content_bank.cause_effect[3].cause",
+      "$.foundational_content_bank.cause_effect[3].effect",
+      "$.foundational_content_bank.cause_effect[3].source_context",
+      "$.foundational_content_bank.cause_effect[4].cause",
+      "$.foundational_content_bank.cause_effect[4].effect",
+      "$.foundational_content_bank.cause_effect[4].source_context",
+      "$.foundational_content_bank.cause_effect[5].cause",
+      "$.foundational_content_bank.cause_effect[5].effect",
+      "$.foundational_content_bank.cause_effect[5].source_context",
+      "$.foundational_content_bank.cause_effect[6].cause",
+      "$.foundational_content_bank.cause_effect[6].effect",
+      "$.foundational_content_bank.cause_effect[6].source_context",
+      "$.foundational_content_bank.classifications",
+      "$.foundational_content_bank.classifications[0].category",
+      "$.foundational_content_bank.classifications[0].types",
+      "$.foundational_content_bank.classifications[0].source_context",
+      "$.foundational_content_bank.classifications[1].category",
+      "$.foundational_content_bank.classifications[1].types",
+      "$.foundational_content_bank.classifications[1].source_context",
+      "$.foundational_content_bank.classifications[2].category",
+      "$.foundational_content_bank.classifications[2].types",
+      "$.foundational_content_bank.classifications[2].source_context",
+      "$.foundational_content_bank.classifications[3].category",
+      "$.foundational_content_bank.classifications[3].types",
+      "$.foundational_content_bank.classifications[3].source_context",
+      "$.foundational_content_bank.classifications[4].category",
+      "$.foundational_content_bank.classifications[4].types",
+      "$.foundational_content_bank.classifications[4].source_context",
+      "$.foundational_content_bank.geographical_features",
+      "$.foundational_content_bank.geographical_features[0].feature_name",
+      "$.foundational_content_bank.geographical_features[0].type",
+      "$.foundational_content_bank.geographical_features[0].significance",
+      "$.foundational_content_bank.geographical_features[0].source_context",
+      "$.foundational_content_bank.geographical_features[1].feature_name",
+      "$.foundational_content_bank.geographical_features[1].type",
+      "$.foundational_content_bank.geographical_features[1].significance",
+      "$.foundational_content_bank.geographical_features[1].source_context",
+      "$.foundational_content_bank.geographical_features[2].feature_name",
+      "$.foundational_content_bank.geographical_features[2].type",
+      "$.foundational_content_bank.geographical_features[2].significance",
+      "$.foundational_content_bank.geographical_features[2].source_context",
+      "$.foundational_content_bank.geographical_features[3].feature_name",
+      "$.foundational_content_bank.geographical_features[3].type",
+      "$.foundational_content_bank.geographical_features[3].significance",
+      "$.foundational_content_bank.geographical_features[3].source_context",
+      "$.foundational_content_bank.historical_concepts",
+      "$.foundational_content_bank.historical_concepts[0].concept",
+      "$.foundational_content_bank.historical_concepts[0].definition",
+      "$.foundational_content_bank.historical_concepts[0].source_context",
+      "$.foundational_content_bank.historical_concepts[1].concept",
+      "$.foundational_content_bank.historical_concepts[1].definition",
+      "$.foundational_content_bank.historical_concepts[1].source_context",
+      "$.foundational_content_bank.historical_concepts[2].concept",
+      "$.foundational_content_bank.historical_concepts[2].definition",
+      "$.foundational_content_bank.historical_concepts[2].source_context",
+      "$.foundational_content_bank.historical_concepts[3].concept",
+      "$.foundational_content_bank.historical_concepts[3].definition",
+      "$.foundational_content_bank.historical_concepts[3].source_context",
+      "$.foundational_content_bank.historical_concepts[4].concept",
+      "$.foundational_content_bank.historical_concepts[4].definition",
+      "$.foundational_content_bank.historical_concepts[4].source_context",
+      "$.foundational_content_bank.civic_concepts",
+      "$.foundational_content_bank.civic_concepts[0].concept",
+      "$.foundational_content_bank.civic_concepts[0].definition",
+      "$.foundational_content_bank.civic_concepts[0].source_context",
+      "$.foundational_content_bank.civic_concepts[1].concept",
+      "$.foundational_content_bank.civic_concepts[1].definition",
+      "$.foundational_content_bank.civic_concepts[1].source_context",
+      "$.foundational_content_bank.civic_concepts[2].concept",
+      "$.foundational_content_bank.civic_concepts[2].definition",
+      "$.foundational_content_bank.civic_concepts[2].source_context",
+      "$.foundational_content_bank.civic_concepts[3].concept",
+      "$.foundational_content_bank.civic_concepts[3].definition",
+      "$.foundational_content_bank.civic_concepts[3].source_context",
+      "$.foundational_content_bank.civic_concepts[4].concept",
+      "$.foundational_content_bank.civic_concepts[4].definition",
+      "$.foundational_content_bank.civic_concepts[4].source_context",
+      "$.foundational_content_bank.civic_concepts[5].concept",
+      "$.foundational_content_bank.civic_concepts[5].definition",
+      "$.foundational_content_bank.civic_concepts[5].source_context",
+      "$.foundational_content_bank.economic_concepts",
+      "$.foundational_content_bank.economic_concepts[0].concept",
+      "$.foundational_content_bank.economic_concepts[0].definition",
+      "$.foundational_content_bank.economic_concepts[0].source_context",
+      "$.foundational_content_bank.economic_concepts[1].concept",
+      "$.foundational_content_bank.economic_concepts[1].definition",
+      "$.foundational_content_bank.economic_concepts[1].source_context",
+      "$.foundational_content_bank.economic_concepts[2].concept",
+      "$.foundational_content_bank.economic_concepts[2].definition",
+      "$.foundational_content_bank.economic_concepts[2].source_context",
+      "$.foundational_content_bank.economic_concepts[3].concept",
+      "$.foundational_content_bank.economic_concepts[3].definition",
+      "$.foundational_content_bank.economic_concepts[3].source_context",
+      "$.foundational_content_bank.economic_concepts[4].concept",
+      "$.foundational_content_bank.economic_concepts[4].definition",
+      "$.foundational_content_bank.economic_concepts[4].source_context",
+      "$.foundational_content_bank.economic_concepts[5].concept",
+      "$.foundational_content_bank.economic_concepts[5].definition",
+      "$.foundational_content_bank.economic_concepts[5].source_context",
+      "$.foundational_content_bank.economic_concepts[6].concept",
+      "$.foundational_content_bank.economic_concepts[6].definition",
+      "$.foundational_content_bank.economic_concepts[6].source_context",
+      "$.foundational_content_bank.economic_concepts[7].concept",
+      "$.foundational_content_bank.economic_concepts[7].definition",
+      "$.foundational_content_bank.economic_concepts[7].source_context",
+      "$.foundational_content_bank.economic_concepts[8].concept",
+      "$.foundational_content_bank.economic_concepts[8].definition",
+      "$.foundational_content_bank.economic_concepts[8].source_context",
+      "$.statistics",
+      "$.statistics.total_extracted_items",
+      "$.statistics.breakdown_by_category",
+      "$.statistics.breakdown_by_category.terminology",
+      "$.statistics.breakdown_by_category.definitions",
+      "$.statistics.breakdown_by_category.concepts",
+      "$.statistics.breakdown_by_category.facts",
+      "$.statistics.breakdown_by_category.people",
+      "$.statistics.breakdown_by_category.places",
+      "$.statistics.breakdown_by_category.dates_events",
+      "$.statistics.breakdown_by_category.institutions",
+      "$.statistics.breakdown_by_category.laws_systems",
+      "$.statistics.breakdown_by_category.chronology",
+      "$.statistics.breakdown_by_category.cause_effect",
+      "$.statistics.breakdown_by_category.classifications",
+      "$.statistics.breakdown_by_category.geographical_features",
+      "$.statistics.breakdown_by_category.historical_concepts",
+      "$.statistics.breakdown_by_category.civic_concepts",
+      "$.statistics.breakdown_by_category.economic_concepts",
+      "$.validation",
+      "$.validation.json_valid",
+      "$.validation.source_grounding_verified",
+      "$.validation.exact_statistics_matched",
+      "$.validation.deduplication_performed",
+      "$.validation.zero_placeholders",
+      "$.validation.class_level_appropriate",
+      "$.deduplication_status"
     ]
   },
-  "image_asset": {
-    "image_url": "/assets/images/ch1_resource_classification.png",
-    "title": "Gamified Skill Reference - Chapter 1",
-    "aspect_ratio": "16:9",
-    "hotspots": [
+  "academic_index": {
+    "chapter_candidates": [
       {
-        "id": "hs_1_1",
-        "label": "Resource Origin (Biotic vs Abiotic)",
-        "x_percent": 12.5,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 32.0,
-        "popover_description": "Biotic resources derive from organic matter (forests, flora, fauna); Abiotic resources derive from non-living matter (land, water, minerals)."
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Natural Resources and Their Use",
+        "source_number_field": "chapter_number",
+        "source_number": 1
       },
       {
-        "id": "hs_1_2",
-        "label": "Exhaustibility (Renewable vs Non-Renewable)",
-        "x_percent": 52.5,
-        "y_percent": 18.0,
-        "w_percent": 35.0,
-        "h_percent": 32.0,
-        "popover_description": "Renewable resources (solar, wind, water) regenerate naturally; Non-renewable resources (coal, petroleum) take millions of years to form."
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "Gamified Skill Reference - Chapter 1",
+        "source_number_field": null,
+        "source_number": null
       },
       {
-        "id": "hs_1_3",
-        "label": "Groundwater Stewardship & Salinity",
-        "x_percent": 25.0,
-        "y_percent": 62.0,
-        "w_percent": 50.0,
-        "h_percent": 28.0,
-        "popover_description": "Excessive tube-well pumping causes seawater intrusion into freshwater aquifers, highlighting the need for rainwater harvesting."
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Reshaping India’s Political Map",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "Gamified Skill Reference - Chapter 2",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Rise of the Marathas",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "Gamified Skill Reference - Chapter 3",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Colonial Era in India",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "Gamified Skill Reference - Chapter 4",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Universal Franchise and India’s Electoral System",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "Gamified Skill Reference - Chapter 5",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Parliamentary System: Legislature and Executive",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "Gamified Skill Reference - Chapter 6",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Factors of Production",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "Gamified Skill Reference - Chapter 7",
+        "source_number_field": null,
+        "source_number": null
       }
-    ]
-  }
+    ],
+    "chapter_candidate_count": 14,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Class 8 Social Science (Exploring Society: India and Beyond)",
+    "gamified_config": {
+      "points_per_drill": 100,
+      "streak_multiplier": true
+    },
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Natural Resources and Their Use",
+        "skill_drills": {
+          "scrambled_tile_sets": [
+            {
+              "id": "tile_1",
+              "target_term": "STEWARDSHIP",
+              "scrambled_letters": [
+                "S",
+                "T",
+                "E",
+                "W",
+                "A",
+                "R",
+                "D",
+                "S",
+                "H",
+                "I",
+                "P"
+              ],
+              "hint": "Responsible protection and management of resources/institutions."
+            }
+          ],
+          "multi_bin_sorting_matrices": [
+            {
+              "matrix_title": "Classification Drill - Chapter 1",
+              "bins": [
+                "Category A",
+                "Category B"
+              ],
+              "items": [
+                {
+                  "item_name": "Sample Element 1",
+                  "correct_bin": "Category A"
+                },
+                {
+                  "item_name": "Sample Element 2",
+                  "correct_bin": "Category B"
+                }
+              ]
+            }
+          ],
+          "editing_checkers": [
+            {
+              "passage_text": "In Chapter 1, key decisions are made by institutions.",
+              "embedded_errors": [
+                {
+                  "error_word": "institutions",
+                  "correct_word": "constitutional bodies",
+                  "explanation": "Precision in terminology."
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "image_url": "/assets/images/ch1_resource_classification.png",
+          "title": "Gamified Skill Reference - Chapter 1",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_1_1",
+              "label": "Resource Origin (Biotic vs Abiotic)",
+              "x_percent": 12.5,
+              "y_percent": 18.0,
+              "w_percent": 35.0,
+              "h_percent": 32.0,
+              "popover_description": "Biotic resources derive from organic matter (forests, flora, fauna); Abiotic resources derive from non-living matter (land, water, minerals)."
+            },
+            {
+              "id": "hs_1_2",
+              "label": "Exhaustibility (Renewable vs Non-Renewable)",
+              "x_percent": 52.5,
+              "y_percent": 18.0,
+              "w_percent": 35.0,
+              "h_percent": 32.0,
+              "popover_description": "Renewable resources (solar, wind, water) regenerate naturally; Non-renewable resources (coal, petroleum) take millions of years to form."
+            },
+            {
+              "id": "hs_1_3",
+              "label": "Groundwater Stewardship & Salinity",
+              "x_percent": 25.0,
+              "y_percent": 62.0,
+              "w_percent": 50.0,
+              "h_percent": 28.0,
+              "popover_description": "Excessive tube-well pumping causes seawater intrusion into freshwater aquifers, highlighting the need for rainwater harvesting."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Reshaping India’s Political Map",
+        "skill_drills": {
+          "scrambled_tile_sets": [
+            {
+              "id": "tile_1",
+              "target_term": "ZABT",
+              "scrambled_letters": [
+                "S",
+                "T",
+                "E",
+                "W",
+                "A",
+                "R",
+                "D",
+                "S",
+                "H",
+                "I",
+                "P"
+              ],
+              "hint": "Responsible protection and management of resources/institutions."
+            }
+          ],
+          "multi_bin_sorting_matrices": [
+            {
+              "matrix_title": "Classification Drill - Chapter 2",
+              "bins": [
+                "Category A",
+                "Category B"
+              ],
+              "items": [
+                {
+                  "item_name": "Sample Element 1",
+                  "correct_bin": "Category A"
+                },
+                {
+                  "item_name": "Sample Element 2",
+                  "correct_bin": "Category B"
+                }
+              ]
+            }
+          ],
+          "editing_checkers": [
+            {
+              "passage_text": "In Chapter 2, key decisions are made by institutions.",
+              "embedded_errors": [
+                {
+                  "error_word": "institutions",
+                  "correct_word": "constitutional bodies",
+                  "explanation": "Precision in terminology."
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "image_url": "/assets/images/ch2_trade_revenue_map.png",
+          "title": "Gamified Skill Reference - Chapter 2",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_2_1",
+              "label": "Medieval Port Cities & Shreni Guilds",
+              "x_percent": 10.0,
+              "y_percent": 20.0,
+              "w_percent": 38.0,
+              "h_percent": 35.0,
+              "popover_description": "Ports like Surat, Calicut, and Hooghly functioned as global commercial hubs powered by trade guilds (shrenis) and banking houses."
+            },
+            {
+              "id": "hs_2_2",
+              "label": "Hundi Credit System",
+              "x_percent": 52.0,
+              "y_percent": 20.0,
+              "w_percent": 38.0,
+              "h_percent": 35.0,
+              "popover_description": "Traditional bills of exchange allowing merchants to transfer capital across provinces safely without carrying specie."
+            },
+            {
+              "id": "hs_2_3",
+              "label": "Todar Mal's Zabt Revenue Survey",
+              "x_percent": 20.0,
+              "y_percent": 62.0,
+              "w_percent": 60.0,
+              "h_percent": 28.0,
+              "popover_description": "Scientific land survey measuring bighas, categorizing soil fertility, and collecting 10-year yield averages for 1/3 tax in cash."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "The Rise of the Marathas",
+        "skill_drills": {
+          "scrambled_tile_sets": [
+            {
+              "id": "tile_1",
+              "target_term": "SWARAJYA",
+              "scrambled_letters": [
+                "S",
+                "T",
+                "E",
+                "W",
+                "A",
+                "R",
+                "D",
+                "S",
+                "H",
+                "I",
+                "P"
+              ],
+              "hint": "Responsible protection and management of resources/institutions."
+            }
+          ],
+          "multi_bin_sorting_matrices": [
+            {
+              "matrix_title": "Classification Drill - Chapter 3",
+              "bins": [
+                "Category A",
+                "Category B"
+              ],
+              "items": [
+                {
+                  "item_name": "Sample Element 1",
+                  "correct_bin": "Category A"
+                },
+                {
+                  "item_name": "Sample Element 2",
+                  "correct_bin": "Category B"
+                }
+              ]
+            }
+          ],
+          "editing_checkers": [
+            {
+              "passage_text": "In Chapter 3, key decisions are made by institutions.",
+              "embedded_errors": [
+                {
+                  "error_word": "institutions",
+                  "correct_word": "constitutional bodies",
+                  "explanation": "Precision in terminology."
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "image_url": "/assets/images/ch3_maratha_fort_architecture.png",
+          "title": "Gamified Skill Reference - Chapter 3",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_3_1",
+              "label": "Hill Fort Architecture (Pratapgad)",
+              "x_percent": 12.0,
+              "y_percent": 18.0,
+              "w_percent": 36.0,
+              "h_percent": 36.0,
+              "popover_description": "Integrated into basalt cliffs with double curtain walls, bastions, hidden gates (Maha Darwaja), and rainwater tanks."
+            },
+            {
+              "id": "hs_3_2",
+              "label": "Sea Fort Architecture (Sindhudurg)",
+              "x_percent": 52.0,
+              "y_percent": 18.0,
+              "w_percent": 36.0,
+              "h_percent": 36.0,
+              "popover_description": "Island sea fort guarding West Coast trade routes and serving as naval base under Maratha commanders like Kanhoji Angre."
+            },
+            {
+              "id": "hs_3_3",
+              "label": "Ganimi Kava Guerrilla Tactics & Taxation",
+              "x_percent": 20.0,
+              "y_percent": 62.0,
+              "w_percent": 60.0,
+              "h_percent": 26.0,
+              "popover_description": "Light cavalry surprise attacks combined with Chauth (25%) and Sardeshmukhi (10%) revenue protection levies."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "The Colonial Era in India",
+        "skill_drills": {
+          "scrambled_tile_sets": [
+            {
+              "id": "tile_1",
+              "target_term": "DEINDUSTRIALIZATION",
+              "scrambled_letters": [
+                "S",
+                "T",
+                "E",
+                "W",
+                "A",
+                "R",
+                "D",
+                "S",
+                "H",
+                "I",
+                "P"
+              ],
+              "hint": "Responsible protection and management of resources/institutions."
+            }
+          ],
+          "multi_bin_sorting_matrices": [
+            {
+              "matrix_title": "Classification Drill - Chapter 4",
+              "bins": [
+                "Category A",
+                "Category B"
+              ],
+              "items": [
+                {
+                  "item_name": "Sample Element 1",
+                  "correct_bin": "Category A"
+                },
+                {
+                  "item_name": "Sample Element 2",
+                  "correct_bin": "Category B"
+                }
+              ]
+            }
+          ],
+          "editing_checkers": [
+            {
+              "passage_text": "In Chapter 4, key decisions are made by institutions.",
+              "embedded_errors": [
+                {
+                  "error_word": "institutions",
+                  "correct_word": "constitutional bodies",
+                  "explanation": "Precision in terminology."
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "image_url": "/assets/images/ch4_colonial_annexation_timeline.png",
+          "title": "Gamified Skill Reference - Chapter 4",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_4_1",
+              "label": "Diplomatic Annexations (Subsidiary Alliance & Doctrine of Lapse)",
+              "x_percent": 10.0,
+              "y_percent": 20.0,
+              "w_percent": 38.0,
+              "h_percent": 35.0,
+              "popover_description": "Lord Wellesley's Subsidiary Alliance and Lord Dalhousie's Doctrine of Lapse annexed heirless and vulnerable princely states."
+            },
+            {
+              "id": "hs_4_2",
+              "label": "Deindustrialization & Drain of Wealth",
+              "x_percent": 52.0,
+              "y_percent": 20.0,
+              "w_percent": 38.0,
+              "h_percent": 35.0,
+              "popover_description": "Unfair tariffs ruined Indian handloom weavers while Manchester cloth flooded markets; wealth was remitted to Britain."
+            },
+            {
+              "id": "hs_4_3",
+              "label": "1857 Great Rebellion & 1858 Crown Transfer",
+              "x_percent": 20.0,
+              "y_percent": 62.0,
+              "w_percent": 60.0,
+              "h_percent": 28.0,
+              "popover_description": "Popular uprising of sepoys, peasants, and dispossessed princes leading to the Government of India Act 1858."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Universal Franchise and India’s Electoral System",
+        "skill_drills": {
+          "scrambled_tile_sets": [
+            {
+              "id": "tile_1",
+              "target_term": "FRANCHISE",
+              "scrambled_letters": [
+                "S",
+                "T",
+                "E",
+                "W",
+                "A",
+                "R",
+                "D",
+                "S",
+                "H",
+                "I",
+                "P"
+              ],
+              "hint": "Responsible protection and management of resources/institutions."
+            }
+          ],
+          "multi_bin_sorting_matrices": [
+            {
+              "matrix_title": "Classification Drill - Chapter 5",
+              "bins": [
+                "Category A",
+                "Category B"
+              ],
+              "items": [
+                {
+                  "item_name": "Sample Element 1",
+                  "correct_bin": "Category A"
+                },
+                {
+                  "item_name": "Sample Element 2",
+                  "correct_bin": "Category B"
+                }
+              ]
+            }
+          ],
+          "editing_checkers": [
+            {
+              "passage_text": "In Chapter 5, key decisions are made by institutions.",
+              "embedded_errors": [
+                {
+                  "error_word": "institutions",
+                  "correct_word": "constitutional bodies",
+                  "explanation": "Precision in terminology."
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "image_url": "/assets/images/ch5_election_commission_pyramid.png",
+          "title": "Gamified Skill Reference - Chapter 5",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_5_1",
+              "label": "Election Commission Administrative Hierarchy",
+              "x_percent": 15.0,
+              "y_percent": 18.0,
+              "w_percent": 32.0,
+              "h_percent": 36.0,
+              "popover_description": "4-tier pyramid: Chief Election Commissioner (CEC) -> Chief Electoral Officer (CEO) -> District Election Officer (DEO) -> Returning Officer (RO)."
+            },
+            {
+              "id": "hs_5_2",
+              "label": "EVM & VVPAT Voter Verification",
+              "x_percent": 52.0,
+              "y_percent": 18.0,
+              "w_percent": 35.0,
+              "h_percent": 36.0,
+              "popover_description": "Electronic Voting Machines store votes digitally; VVPAT prints a paper slip for 7 seconds to let voters verify cast votes."
+            },
+            {
+              "id": "hs_5_3",
+              "label": "First-Past-The-Post (FPTP) Plurality Rule",
+              "x_percent": 20.0,
+              "y_percent": 62.0,
+              "w_percent": 60.0,
+              "h_percent": 26.0,
+              "popover_description": "The candidate with the highest number of valid votes in a single-member constituency wins the seat without needing an absolute majority."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "The Parliamentary System: Legislature and Executive",
+        "skill_drills": {
+          "scrambled_tile_sets": [
+            {
+              "id": "tile_1",
+              "target_term": "BICAMERALISM",
+              "scrambled_letters": [
+                "S",
+                "T",
+                "E",
+                "W",
+                "A",
+                "R",
+                "D",
+                "S",
+                "H",
+                "I",
+                "P"
+              ],
+              "hint": "Responsible protection and management of resources/institutions."
+            }
+          ],
+          "multi_bin_sorting_matrices": [
+            {
+              "matrix_title": "Classification Drill - Chapter 6",
+              "bins": [
+                "Category A",
+                "Category B"
+              ],
+              "items": [
+                {
+                  "item_name": "Sample Element 1",
+                  "correct_bin": "Category A"
+                },
+                {
+                  "item_name": "Sample Element 2",
+                  "correct_bin": "Category B"
+                }
+              ]
+            }
+          ],
+          "editing_checkers": [
+            {
+              "passage_text": "In Chapter 6, key decisions are made by institutions.",
+              "embedded_errors": [
+                {
+                  "error_word": "institutions",
+                  "correct_word": "constitutional bodies",
+                  "explanation": "Precision in terminology."
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "image_url": "/assets/images/ch6_parliamentary_lawmaking_flow.png",
+          "title": "Gamified Skill Reference - Chapter 6",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_6_1",
+              "label": "Bicameral Structure (Lok Sabha & Rajya Sabha)",
+              "x_percent": 12.0,
+              "y_percent": 18.0,
+              "w_percent": 35.0,
+              "h_percent": 35.0,
+              "popover_description": "Lok Sabha directly represents citizens (543 seats, 5-yr term); Rajya Sabha represents states indirectly (245 seats, permanent body)."
+            },
+            {
+              "id": "hs_6_2",
+              "label": "Lawmaking Process (Bill to Act)",
+              "x_percent": 52.0,
+              "y_percent": 18.0,
+              "w_percent": 35.0,
+              "h_percent": 35.0,
+              "popover_description": "Bill passes 3 readings in House 1, undergoes committee scrutiny, passes House 2, and receives Presidential Assent to become an Act."
+            },
+            {
+              "id": "hs_6_3",
+              "label": "Executive Oversight (Question Hour & Committees)",
+              "x_percent": 20.0,
+              "y_percent": 62.0,
+              "w_percent": 60.0,
+              "h_percent": 26.0,
+              "popover_description": "MPs question ministers during Question Hour, review budgets in Standing Committees, and can move a No-Confidence Motion."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Factors of Production",
+        "skill_drills": {
+          "scrambled_tile_sets": [
+            {
+              "id": "tile_1",
+              "target_term": "ENTREPRENEURSHIP",
+              "scrambled_letters": [
+                "S",
+                "T",
+                "E",
+                "W",
+                "A",
+                "R",
+                "D",
+                "S",
+                "H",
+                "I",
+                "P"
+              ],
+              "hint": "Responsible protection and management of resources/institutions."
+            }
+          ],
+          "multi_bin_sorting_matrices": [
+            {
+              "matrix_title": "Classification Drill - Chapter 7",
+              "bins": [
+                "Category A",
+                "Category B"
+              ],
+              "items": [
+                {
+                  "item_name": "Sample Element 1",
+                  "correct_bin": "Category A"
+                },
+                {
+                  "item_name": "Sample Element 2",
+                  "correct_bin": "Category B"
+                }
+              ]
+            }
+          ],
+          "editing_checkers": [
+            {
+              "passage_text": "In Chapter 7, key decisions are made by institutions.",
+              "embedded_errors": [
+                {
+                  "error_word": "institutions",
+                  "correct_word": "constitutional bodies",
+                  "explanation": "Precision in terminology."
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "image_url": "/assets/images/ch7_factors_production_wheel.png",
+          "title": "Gamified Skill Reference - Chapter 7",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_7_1",
+              "label": "Primary Inputs: Land & Labour",
+              "x_percent": 12.0,
+              "y_percent": 18.0,
+              "w_percent": 35.0,
+              "h_percent": 35.0,
+              "popover_description": "Land includes all natural resources (soil, water, minerals); Labour includes human physical and mental effort."
+            },
+            {
+              "id": "hs_7_2",
+              "label": "Physical Capital: Fixed vs Working Capital",
+              "x_percent": 52.0,
+              "y_percent": 18.0,
+              "w_percent": 35.0,
+              "h_percent": 35.0,
+              "popover_description": "Fixed capital lasts over years (machinery, factory buildings); Working capital is consumed in a single cycle (raw materials, cash)."
+            },
+            {
+              "id": "hs_7_3",
+              "label": "Entrepreneurship & Human Capital (Kaizen)",
+              "x_percent": 20.0,
+              "y_percent": 62.0,
+              "w_percent": 60.0,
+              "h_percent": 26.0,
+              "popover_description": "Entrepreneurs organize factors and bear risk; Human capital is developed through health, education (SWAYAM), and Kaizen continuous improvement."
+            }
+          ]
+        }
+      }
+    ],
+    "foundational_content_bank": {
+      "terminology": [
+        {
+          "term": "Natural Resource",
+          "meaning": "Materials and energy sources provided by nature (e.g., air, water, soil, minerals, flora, fauna) that have utility and value for human survival and economic activities.",
+          "source_context": "Chapter 1: Natural Resources and Their Use"
+        },
+        {
+          "term": "Biotic & Abiotic Resources",
+          "meaning": "Biotic resources originate from living organisms (forests, livestock, crops); Abiotic resources derive from non-living physical matter (land, minerals, water).",
+          "source_context": "Chapter 1: Natural Resources and Their Use"
+        },
+        {
+          "term": "Renewable & Non-Renewable Resources",
+          "meaning": "Renewable resources replenish through natural cycles at a pace equal to or faster than consumption (solar, wind, water); Non-renewable resources take millions of years to form and are finite (coal, petroleum).",
+          "source_context": "Chapter 1: Natural Resources and Their Use"
+        },
+        {
+          "term": "Hundi",
+          "meaning": "A traditional credit note and bill of exchange used by merchant guilds (shrenis) and bankers (sarafs) in medieval India for safe, long-distance money transfers without carrying physical currency.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "term": "Shreni",
+          "meaning": "An association or guild of merchants, artisans, or craftspeople in medieval India that regulated product quality, set prices, and provided banking services.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "term": "Mansabdar",
+          "meaning": "An official in the Mughal administrative ranking system holding a specific rank (mansab) determining personal status (zat), military cavalry obligations (sawar), and salary assignments (jagir).",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "term": "Hindavi Swarajya",
+          "meaning": "The founding ideal of self-rule, sovereignty, religious tolerance, and cultural independence established by Chhatrapati Shivaji Maharaj in 17th-century India.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "term": "Ganimi Kava",
+          "meaning": "A strategic guerrilla warfare tactic relying on rapid light cavalry movement, deception, mountain terrain knowledge, and surprise attacks.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "term": "Chauth & Sardeshmukhi",
+          "meaning": "Chauth was a 25% land revenue protection tax levied on non-Swarajya territories; Sardeshmukhi was an additional 10% levy claimed by Shivaji as hereditary chief head.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "term": "Drain of Wealth",
+          "meaning": "The systematic transfer of India's national wealth, tax revenues, and material resources to Britain without adequate economic or material return to India.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "term": "Deindustrialization",
+          "meaning": "The destruction of traditional Indian domestic manufacturing and handloom textile industries due to unfair colonial tariffs and the influx of machine-made British cloth.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "term": "Universal Adult Franchise",
+          "meaning": "The constitutional right granted under Article 326 enabling all adult citizens aged 18 and above to vote in democratic elections without discrimination.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "term": "First-Past-The-Post (FPTP)",
+          "meaning": "An electoral system where the candidate who secures the highest number of valid votes (plurality) in a single-member constituency is declared elected.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "term": "EVM & VVPAT",
+          "meaning": "Electronic Voting Machines (EVMs) record votes digitally; Voter Verifiable Paper Audit Trail (VVPAT) prints a paper slip for 7 seconds allowing voters to visually confirm their cast vote.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "term": "Question Hour",
+          "meaning": "The first hour of a parliamentary sitting dedicated to MPs asking direct questions to ministers regarding government policies, expenditures, and administration.",
+          "source_context": "Chapter 6: The Parliamentary System: Legislature and Executive"
+        },
+        {
+          "term": "Money Bill",
+          "meaning": "A bill dealing exclusively with taxation, government borrowing, or expenditure from the Consolidated Fund of India, introduced solely in the Lok Sabha.",
+          "source_context": "Chapter 6: The Parliamentary System: Legislature and Executive"
+        },
+        {
+          "term": "Factors of Production",
+          "meaning": "The four primary economic inputs—Land, Labour, Physical Capital, and Entrepreneurship—required to produce goods and services.",
+          "source_context": "Chapter 7: Factors of Production"
+        },
+        {
+          "term": "Fixed Capital & Working Capital",
+          "meaning": "Fixed capital consists of durable physical assets reused over many years (machines, factory buildings); Working capital consists of single-use inputs consumed during operational cycles (raw materials, fuel, daily cash).",
+          "source_context": "Chapter 7: Factors of Production"
+        },
+        {
+          "term": "Human Capital",
+          "meaning": "The collective knowledge, technical skills, health, and productive capability embodied in a nation's workforce.",
+          "source_context": "Chapter 7: Factors of Production"
+        },
+        {
+          "term": "Kaizen",
+          "meaning": "A Japanese workplace philosophy focused on continuous, step-by-step improvement in safety, workflow discipline, product quality, and worker capability.",
+          "source_context": "Chapter 7: Factors of Production"
+        }
+      ],
+      "definitions": [
+        {
+          "term": "Natural Resource",
+          "definition": "Materials and energy sources provided by nature that possess utility, technological accessibility, economic feasibility, and cultural acceptability for human use.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "term": "Resource Stewardship",
+          "definition": "The ethical and responsible management and protection of the natural environment and resources through sustainable practices and conservation.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "term": "Sustainable Development",
+          "definition": "Development that meets the economic and social needs of the present generation without compromising the ability of future generations to meet their own needs.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "term": "Hundi",
+          "definition": "A negotiable financial credit instrument and bill of exchange historically used in the Indian subcontinent for safe capital transfer and commercial transactions.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "term": "Zabt System",
+          "definition": "A standardized Mughal land revenue assessment method established by Todar Mal based on physical land surveys, crop yield statistics, and 10-year market price averages.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "term": "Ganimi Kava",
+          "definition": "A specialized form of guerrilla warfare utilizing light cavalry, terrain mastery, mobility, and surprise ambushes against enemy forces.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "term": "Drain of Wealth",
+          "definition": "The unilateral flow of financial surplus, goods, and resources from colonial India to Great Britain without adequate economic equivalent returning to India.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "term": "Universal Adult Franchise",
+          "definition": "The constitutional principle guaranteeing every adult citizen the equal right to vote in free elections regardless of background or status.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "term": "Bicameralism",
+          "definition": "A legislative governance structure comprising two separate deliberative assemblies or houses (e.g., Lok Sabha and Rajya Sabha).",
+          "source_context": "Chapter 6"
+        },
+        {
+          "term": "Fixed Capital",
+          "definition": "Long-term physical assets used in production, such as machinery, tools, and infrastructure, that endure across multiple production cycles.",
+          "source_context": "Chapter 7"
+        }
+      ],
+      "concepts": [
+        {
+          "concept_title": "Three Criteria for Nature Becoming a Resource",
+          "description": "An element of nature is transformed into an active resource only when human knowledge and technology enable extraction (Technological Accessibility), the economic yield exceeds costs (Economic Feasibility), and society approves its utilization (Cultural Acceptability).",
+          "source_context": "Chapter 1: Natural Resources and Their Use"
+        },
+        {
+          "concept_title": "The Resource Curse & Human Skill Development",
+          "description": "Regions rich in natural resources often experience economic stagnation if they lack technical capability and sound governance. Investing in human skills and technological capacity overcomes this bottleneck.",
+          "source_context": "Chapter 1: Natural Resources and Their Use"
+        },
+        {
+          "concept_title": "Scientific Land Revenue Measurement under Akbar",
+          "description": "Raja Todar Mal institutionalized the Zabt system by replacing arbitrary tax estimates with accurate physical surveys using tanbal rods, soil classification (Polaj, Parauti, Chachar, Banjar), and 10-year market averages.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "concept_title": "Terrain-Integrated Fort Defense & Maritime Power",
+          "description": "Chhatrapati Shivaji Maharaj integrated geography into defense strategy by repairing/building over 180 hilltop and coastal sea fortresses (Pratapgad, Sindhudurg) and establishing the Maratha Navy.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "concept_title": "Colonial Annexation Mechanisms",
+          "description": "The East India Company subjugated native states using diplomatic treaties like the Subsidiary Alliance (disbanding native armies) and unilateral decrees like the Doctrine of Lapse (annexing heirless states).",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "concept_title": "Equal Political Empowerment at Independence",
+          "description": "In 1950, India granted immediate Universal Adult Franchise to all adult citizens, rejecting literacy and property qualifications that Western nations enforced for decades.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "concept_title": "Plurality Electoral System (FPTP)",
+          "description": "Under First-Past-The-Post, the candidate securing the highest number of valid votes in a constituency wins the seat, ensuring decisive election outcomes without requiring an absolute majority.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "concept_title": "Bicameral Federal Legislative Scrutiny",
+          "description": "Parliament balances direct popular representation (Lok Sabha) with state federal representation (Rajya Sabha), ensuring laws undergo three structured readings and committee reviews before receiving Presidential assent.",
+          "source_context": "Chapter 6: The Parliamentary System: Legislature and Executive"
+        },
+        {
+          "concept_title": "Executive Subordination to the Legislature",
+          "description": "The Prime Minister and Cabinet must continuously maintain the confidence of the elected Lok Sabha and remain directly answerable through Question Hour, Standing Committees, and No-Confidence Motions.",
+          "source_context": "Chapter 6: The Parliamentary System: Legislature and Executive"
+        },
+        {
+          "concept_title": "Primacy of Human Capital in Production",
+          "description": "Human capital is superior to physical capital because machinery and land remain inert without human intelligence, health, skill, and entrepreneurship to organize and innovate.",
+          "source_context": "Chapter 7: Factors of Production"
+        }
+      ],
+      "facts": [
+        {
+          "fact": "India produced over a quarter of global GDP prior to European mercantile colonization.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "fact": "Article 326 of the Constitution of India guarantees voting rights to all citizens aged 18 and above.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "fact": "Raja Todar Mal conducted a 10-year statistical survey of crop yields, prices, and land area between 1570 and 1580 CE.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "fact": "The Government of India Act 1858 abolished East India Company rule and transferred governance directly to the British Crown.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "fact": "VVPAT machines generate a printed paper slip that remains visible behind a glass screen for 7 seconds to allow voter verification.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "fact": "The Ahom Kingdom ruled the Brahmaputra Valley for nearly 600 years and successfully repelled multiple Mughal invasions.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "fact": "The Rajya Sabha must return a Money Bill to the Lok Sabha within 14 days, with or without recommendations.",
+          "source_context": "Chapter 6: The Parliamentary System: Legislature and Executive"
+        },
+        {
+          "fact": "Chhatrapati Shivaji Maharaj repaired over 80 existing forts and constructed more than 100 new ones across hilltops and the coastline.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "fact": "India's first general election in 1951–52 enfranchised approximately 173 million adult voters.",
+          "source_context": "Chapter 5: Universal Franchise and India’s Electoral System"
+        },
+        {
+          "fact": "In 1855, Santhal tribals in the Rajmahal Hills launched an armed uprising against British officials, zamindars, and moneylenders (dikus).",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        }
+      ],
+      "people": [
+        {
+          "name": "Chhatrapati Shivaji Maharaj",
+          "role_or_significance": "Founder of the Maratha Empire (Swarajya), pioneer of Ganimi Kava guerrilla tactics, naval power builder, and creator of the Ashta Pradhan administrative council.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "name": "Raja Todar Mal",
+          "role_or_significance": "Finance Minister (Diwan-i-Ashraf) under Mughal Emperor Akbar who introduced the Zabt scientific land revenue system and survey methodology.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "name": "Emperor Akbar",
+          "role_or_significance": "Mughal Emperor (1556–1605) who expanded imperial territory and consolidated administration through the Mansabdari and Zabt systems.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "name": "Maharani Tarabai",
+          "role_or_significance": "Maratha queen who led the heroic war of independence against Mughal Emperor Aurangzeb following the death of Chhatrapati Rajaram (1700–1707).",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "name": "Rani Ahilyabai Holkar",
+          "role_or_significance": "Ruler of Malwa (1767–1795) renowned for her benevolent administration, judicial fairness, infrastructure development, and nationwide temple restoration.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "name": "Krishnadevaraya",
+          "role_or_significance": "Prominent emperor of the Vijayanagara Empire who expanded trade, fostered literature, and erected magnificent architecture in South India.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "name": "Lachit Borphukan",
+          "role_or_significance": "Ahom military commander who led the naval defeat of Mughal forces at the Battle of Saraighat on the Brahmaputra River.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "name": "Maharana Pratap",
+          "role_or_significance": "Ruler of Mewar who valiantly defended his territory's sovereignty against Mughal expansion.",
+          "source_context": "Chapter 2: Reshaping India’s Political Map"
+        },
+        {
+          "name": "Dadabhai Naoroji",
+          "role_or_significance": "Pioneer Indian nationalist scholar who formulated the 'Drain of Wealth' economic theory exposing colonial exploitation.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "name": "Lord Cornwallis",
+          "role_or_significance": "Governor-General who introduced the Permanent Settlement land revenue system in Bengal and Bihar in 1793.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "name": "Thomas Munro",
+          "role_or_significance": "British administrator who introduced the Ryotwari land revenue system in Madras and Bombay Presidencies.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "name": "Lord Wellesley",
+          "role_or_significance": "Governor-General who formulated the Subsidiary Alliance system to bring princely states under British military control.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "name": "Lord Dalhousie",
+          "role_or_significance": "Governor-General who devised the Doctrine of Lapse policy to annex native states lacking biological male heirs.",
+          "source_context": "Chapter 4: The Colonial Era in India"
+        },
+        {
+          "name": "Sant Tukaram & Samarth Ramdas",
+          "role_or_significance": "Bhakti movement saints whose Marathi devotional teachings united society across castes and provided moral strength for Swarajya.",
+          "source_context": "Chapter 3: The Rise of the Marathas"
+        },
+        {
+          "name": "J.R.D. Tata",
+          "role_or_significance": "Visionary Indian industrialist and entrepreneur who built modern aviation and industrial enterprises creating national social value.",
+          "source_context": "Chapter 7: Factors of Production"
+        }
+      ],
+      "places": [
+        {
+          "location_name": "Thar Desert",
+          "significance": "Region in Rajasthan featuring major solar energy installations (solar parks) harnessing intense solar radiation.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "location_name": "Raigad & Pratapgad",
+          "significance": "Strategic mountain fortresses in the Western Ghats; Raigad served as the capital of Chhatrapati Shivaji Maharaj's Swarajya.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "location_name": "Sindhudurg & Vijaydurg",
+          "significance": "Impregnable coastal sea forts constructed along the Konkan coastline to safeguard Maratha maritime security.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "location_name": "Surat, Calicut, and Hooghly",
+          "significance": "Bustling medieval port cities that operated as hubs for international maritime commerce, foreign factories, and Hundi banking.",
+          "source_context": "Chapter 2 & 4"
+        },
+        {
+          "location_name": "Brahmaputra River Valley",
+          "significance": "Fertile river basin in Assam defended by the Ahom Kingdom against external conquests.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "location_name": "Rajmahal Hills",
+          "significance": "Forested region in Eastern India where the Santhal tribals launched their 1855 uprising against colonial oppression.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "location_name": "Plassey & Buxar",
+          "significance": "Battlefields in Bengal where British victories in 1757 and 1764 established East India Company territorial hegemony.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "location_name": "Manchester",
+          "significance": "British industrial city whose textile mills produced mass machine-made cotton goods that flooded Indian markets.",
+          "source_context": "Chapter 4"
+        }
+      ],
+      "dates_events": [
+        {
+          "event": "10-Year Survey by Raja Todar Mal",
+          "time_period": "1570–1580 CE",
+          "significance": "Empirical data collection on crop yields, prices, and land areas laying the foundation for the Zabt revenue system.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "event": "Lifespan of Chhatrapati Shivaji Maharaj",
+          "time_period": "1630–1680 CE",
+          "significance": "Established Hindavi Swarajya, Maratha navy, Ashta Pradhan council, and Ganimi Kava warfare tactics.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "event": "Maratha War of Independence under Maharani Tarabai",
+          "time_period": "1700–1707 CE",
+          "significance": "Sustained resistance against Mughal Emperor Aurangzeb following the death of Chhatrapati Rajaram.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "event": "Battle of Plassey",
+          "time_period": "1757 CE",
+          "significance": "British victory over Nawab Siraj-ud-Daulah marking the start of East India Company political control in Bengal.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "event": "Battle of Buxar",
+          "time_period": "1764 CE",
+          "significance": "Defeat of combined forces of Mir Qasim, Shuja-ud-Daulah, and Shah Alam II, securing Diwani rights for the Company.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "event": "Reign of Rani Ahilyabai Holkar in Malwa",
+          "time_period": "1767–1795 CE",
+          "significance": "Era of exemplary governance, economic stability, infrastructure building, and spiritual restoration.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "event": "Santhal Tribal Rebellion",
+          "time_period": "1855 CE",
+          "significance": "Major armed tribal uprising against British revenue officers, zamindars, and moneylenders in the Rajmahal Hills.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "event": "Great Rebellion / Uprising of 1857",
+          "time_period": "1857 CE",
+          "significance": "Subcontinent-wide popular rebellion by sepoys, peasants, artisans, and dispossessed rulers against East India Company rule.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "event": "Government of India Act 1858",
+          "time_period": "1858 CE",
+          "significance": "Abolished East India Company governance and transferred rule over India directly to the British Crown.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "event": "Adoption of the Constitution of India",
+          "time_period": "1950 CE",
+          "significance": "Instituted Universal Adult Franchise (Article 326), fundamental rights, and parliamentary democracy.",
+          "source_context": "Chapter 5 & 6"
+        },
+        {
+          "event": "First General Election of Independent India",
+          "time_period": "1951–1952 CE",
+          "significance": "Successfully conducted democratic voting for 173 million citizens across urban and rural regions.",
+          "source_context": "Chapter 5"
+        }
+      ],
+      "institutions": [
+        {
+          "institution": "Ashta Pradhan Council",
+          "description": "Council of Eight Ministers established by Shivaji Maharaj to administer Swarajya across defined portfolios (Peshwa, Amatya, Sachiv, Senapati, etc.).",
+          "source_context": "Chapter 3"
+        },
+        {
+          "institution": "Election Commission of India (ECI)",
+          "description": "Autonomous constitutional authority established under Article 324 responsible for conducting free, fair, and inclusive elections.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "institution": "Lok Sabha (House of the People)",
+          "description": "Directly elected lower house of Parliament representing Indian citizens across 543 constituencies for a 5-year term.",
+          "source_context": "Chapter 6"
+        },
+        {
+          "institution": "Rajya Sabha (Council of States)",
+          "description": "Indirectly elected permanent upper house of Parliament representing federal states and Union Territories.",
+          "source_context": "Chapter 6"
+        },
+        {
+          "institution": "Departmentally Related Parliamentary Standing Committees",
+          "description": "Bipartisan legislative committees that technical-scrutinize ministry budget demands, government bills, and policy implementation.",
+          "source_context": "Chapter 6"
+        },
+        {
+          "institution": "Merchant Guilds (Shrenis) & Banking Houses (Sarafs)",
+          "description": "Autonomous medieval economic organizations that regulated artisan crafts, issued Hundis, and managed commercial credit.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "institution": "East India Company",
+          "description": "British chartered mercantile joint-stock company that transformed into a colonial military sovereign over India until 1858.",
+          "source_context": "Chapter 4"
+        }
+      ],
+      "laws_systems": [
+        {
+          "system_name": "Zabt Revenue System",
+          "type": "Land Revenue System",
+          "features": "Land survey using measuring rods, 10-year statistical average yields/prices (1570-1580), soil categorization, tax fixed at 1/3 in cash.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "system_name": "Mansabdari System",
+          "type": "Administrative Ranking System",
+          "features": "Non-hereditary official rank assigned by Mughal Emperor combining personal status (Zat) and military cavalry obligation (Sawar) paid via Jagir land assignments.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "system_name": "Subsidiary Alliance",
+          "type": "Colonial Annexation Policy",
+          "features": "Native rulers disbanded independent armies, maintained British troops at personal expense, hosted a Resident, and surrendered external foreign policy.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "system_name": "Doctrine of Lapse",
+          "type": "Colonial Annexation Policy",
+          "features": "Prohibited adopted heirs from inheriting princely thrones; states lacking biological male heirs lapsed into British territory.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "system_name": "Permanent Settlement (1793)",
+          "type": "Colonial Land Revenue System",
+          "features": "Introduced in Bengal and Bihar by Cornwallis; created hereditary Zamindars with fixed land revenue demands payable to Company regardless of harvest.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "system_name": "Ryotwari System",
+          "type": "Colonial Land Revenue System",
+          "features": "Introduced in Madras and Bombay by Munro; revenue collected directly from individual cultivators (ryots) based on periodic soil assessment.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "system_name": "Mahalwari System",
+          "type": "Colonial Land Revenue System",
+          "features": "Introduced in North-West Provinces; land revenue estimated collectively for an entire village community (Mahal) via headmen.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "system_name": "First-Past-The-Post (FPTP)",
+          "type": "Electoral System",
+          "features": "Candidate with plurality of valid votes cast in a single-member constituency wins seat.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "system_name": "Model Code of Conduct (MCC)",
+          "type": "Electoral Regulation",
+          "features": "Guidelines issued by ECI setting ethical standards for campaigning, banning hate speech, bribery, and misuse of state machinery.",
+          "source_context": "Chapter 5"
+        }
+      ],
+      "chronology": [
+        {
+          "sequence_title": "Evolution of Medieval Indian Political Territorial Powers",
+          "steps": [
+            "13th Century: Expansion of Delhi Sultanate and decline of regional dynasties.",
+            "14th–16th Century: Rise of Vijayanagara Empire, Bahmani Sultanate, Ahoms, and Rajput state of Mewar.",
+            "16th–17th Century: Consolidation of Mughal Empire under Akbar and administrative reforms (Zabt and Mansabdari).",
+            "17th Century: Rise of Maratha Swarajya under Chhatrapati Shivaji Maharaj."
+          ],
+          "source_context": "Chapter 2 & 3"
+        },
+        {
+          "sequence_title": "Sequence of Colonial Expansion and Power Consolidation in India",
+          "steps": [
+            "1600s: Entry of European mercantile trading companies (Portuguese, Dutch, French, British) establishing factories.",
+            "1757 & 1764: Battles of Plassey and Buxar securing Bengal territorial sovereign power.",
+            "1798–1856: Application of Subsidiary Alliance and Doctrine of Lapse annexing major princely states.",
+            "1855: Santhal Tribal Rebellion against colonial exploitation.",
+            "1857: Great Indian Uprising across North and Central India.",
+            "1858: Government of India Act transferring governance to the British Crown."
+          ],
+          "source_context": "Chapter 4"
+        },
+        {
+          "sequence_title": "Legislative Passage of a Bill to an Act of Parliament",
+          "steps": [
+            "First Reading: Introduction of the Bill in either House.",
+            "Second Reading: General discussion followed by clause-by-clause scrutiny (or referral to Standing Committee).",
+            "Third Reading: Final voting on the Bill in the house of origin.",
+            "Transmission to Second House: Passing through identical 3-reading process.",
+            "Presidential Assent: Signature by the President of India converting the Bill into an Act."
+          ],
+          "source_context": "Chapter 6"
+        }
+      ],
+      "cause_effect": [
+        {
+          "cause": "Excessive tube-well pumping of groundwater in coastal agricultural belts beyond natural recharge rates.",
+          "effect": "Lowers fresh water tables causing saline seawater intrusion into aquifers, making groundwater unusable for drinking or irrigation.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "cause": "Introduction of Todar Mal's Zabt system based on 10-year land survey and statistical market averages.",
+          "effect": "Eliminated arbitrary revenue demands, brought financial stability to Mughal treasury, and protected peasants from sudden price fluctuations.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "cause": "Bhakti movement saints preaching devotion in vernacular Marathi language emphasizing social equality.",
+          "effect": "Created a unified cultural consciousness across caste lines that served as the social backbone for Maratha Swarajya.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "cause": "Colonial tariff discrimination and mass influx of cheap machine-manufactured cotton goods from Manchester.",
+          "effect": "Triggered widespread deindustrialization in India, destroying traditional weaver livelihoods and impoverishing artisan towns.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "cause": "Rigid cash revenue demands under Permanent Settlement and Ryotwari systems during crop failures.",
+          "effect": "Forced peasants into heavy debt cycles with local moneylenders, leading to widespread land alienations and agrarian revolts.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "cause": "Constitutional guarantee of immediate Universal Adult Franchise (Article 326) in 1950.",
+          "effect": "Empowered 173 million citizens with equal political voting rights, dismantling historical social barriers and fostering democratic dignity.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "cause": "Passing a No-Confidence Motion against the government in the Lok Sabha.",
+          "effect": "Obligates the Prime Minister and the entire Council of Ministers to immediately resign from office.",
+          "source_context": "Chapter 6"
+        }
+      ],
+      "classifications": [
+        {
+          "category": "Natural Resources by Exhaustibility",
+          "types": [
+            "Renewable Resources: Replenished by natural processes faster than or equal to consumption (Solar, Wind, Water, Forests).",
+            "Non-Renewable Resources: Geologically finite assets taking millions of years to form (Coal, Petroleum, Natural Gas, Metallic Minerals)."
+          ],
+          "source_context": "Chapter 1"
+        },
+        {
+          "category": "Factors of Production",
+          "types": [
+            "Land: Natural resources and physical space.",
+            "Labour: Physical and mental human effort.",
+            "Physical Capital: Man-made productive assets (Fixed & Working Capital).",
+            "Entrepreneurship: Vision, risk-taking, and business organization."
+          ],
+          "source_context": "Chapter 7"
+        },
+        {
+          "category": "Physical Capital Categories",
+          "types": [
+            "Fixed Capital: Durable long-term assets reused across years (Machinery, Buildings, Tools).",
+            "Working Capital: Operational single-use inputs consumed in production cycles (Raw Materials, Fuel, Cash)."
+          ],
+          "source_context": "Chapter 7"
+        },
+        {
+          "category": "Colonial Land Revenue Models",
+          "types": [
+            "Permanent Settlement: Revenue fixed permanently with hereditary Zamindars (Bengal/Bihar).",
+            "Ryotwari System: Revenue assessed directly with individual Ryots/farmers (Madras/Bombay).",
+            "Mahalwari System: Revenue assessed collectively for entire village units/Mahals (North-West Provinces)."
+          ],
+          "source_context": "Chapter 4"
+        },
+        {
+          "category": "Administrative Pyramid of Election Commission of India",
+          "types": [
+            "Chief Election Commissioner & Election Commissioners (National Policy & Scheduling).",
+            "Chief Electoral Officers (State Level Implementation).",
+            "District Election Officers (District Level Supervision).",
+            "Returning Officers & Electoral Registration Officers (Constituency Level Management).",
+            "Presiding & Polling Officers (Polling Booth Execution)."
+          ],
+          "source_context": "Chapter 5"
+        }
+      ],
+      "geographical_features": [
+        {
+          "feature_name": "Basalt Basins & Basalt Cliffs of Western Ghats (Sahyadri Range)",
+          "type": "Mountain Landform / Geology",
+          "significance": "Provided steep natural cliff edges and rugged terrain enabling Maratha fortification strategy and Ganimi Kava guerrilla tactics.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "feature_name": "Brahmaputra River Valley",
+          "type": "River Basin",
+          "significance": "Fertile flood plain in Assam whose riverine geography supported Ahom defense and naval warfare strategy at Saraighat.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "feature_name": "Coastal Aquifers & Water Table",
+          "type": "Hydrological Feature",
+          "significance": "Underground freshwater reserves susceptible to saline intrusion when overpumped in coastal farming belts.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "feature_name": "Rajmahal Hills",
+          "type": "Hilly Forest Tract",
+          "significance": "Forested plateau region in Jharkhand/Bihar inhabited by Santhal tribals whose forest land rights were threatened by colonial expansion.",
+          "source_context": "Chapter 4"
+        }
+      ],
+      "historical_concepts": [
+        {
+          "concept": "Hindavi Swarajya",
+          "definition": "The ideology of indigenous self-governance, political sovereignty, and social justice established by Chhatrapati Shivaji Maharaj.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "concept": "Ganimi Kava",
+          "definition": "Tactical guerrilla warfare optimized for rugged hill terrain utilizing speed, deception, and light mobility.",
+          "source_context": "Chapter 3"
+        },
+        {
+          "concept": "Mercantile Colonialism",
+          "definition": "An economic era where European joint-stock companies used state-backed trade monopolies, armed fleets, and territorial conquests to extract wealth from colonies.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "concept": "Deindustrialization",
+          "definition": "The destruction of traditional domestic handicraft and manufacturing sectors under colonial trade policies.",
+          "source_context": "Chapter 4"
+        },
+        {
+          "concept": "Dikus",
+          "definition": "A tribal term referring to oppressive outsiders, including colonial revenue collectors, zamindars, and moneylenders.",
+          "source_context": "Chapter 4"
+        }
+      ],
+      "civic_concepts": [
+        {
+          "concept": "Universal Adult Franchise",
+          "definition": "Constitutional democracy principle ensuring every adult citizen aged 18+ has an equal vote under Article 326.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "concept": "Secret Ballot",
+          "definition": "A voting mechanism ensuring a voter's choice remains private and protected from coercion or bribery.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "concept": "Plurality Rule (FPTP)",
+          "definition": "Electoral mechanism where the candidate receiving the highest single tally of valid votes in a constituency wins.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "concept": "Reserved Constituencies",
+          "definition": "Electoral districts reserved exclusively for SC and ST candidates to guarantee equitable democratic representation.",
+          "source_context": "Chapter 5"
+        },
+        {
+          "concept": "Bicameralism",
+          "definition": "System of governance dividing the legislature into two distinct houses (Lok Sabha and Rajya Sabha).",
+          "source_context": "Chapter 6"
+        },
+        {
+          "concept": "Ministerial Executive Accountability",
+          "definition": "Constitutional requirement that the Prime Minister and Cabinet remain answerable to the elected legislature.",
+          "source_context": "Chapter 6"
+        }
+      ],
+      "economic_concepts": [
+        {
+          "concept": "Resource Feasibility Criteria",
+          "definition": "The requirement that natural elements must be technologically accessible, economically viable, and culturally acceptable to function as resources.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "concept": "Resource Curse",
+          "definition": "Economic paradox where countries rich in natural resources experience poor development due to lack of human skill and technology.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "concept": "Ecosystem Services",
+          "definition": "Economic and ecological benefits derived by human society from natural ecosystem functions.",
+          "source_context": "Chapter 1"
+        },
+        {
+          "concept": "Financial Credit Instruments (Hundi)",
+          "definition": "Traditional bills of exchange facilitating capital movement and commercial trade without physical cash transfers.",
+          "source_context": "Chapter 2"
+        },
+        {
+          "concept": "Factors of Production",
+          "definition": "The four foundational economic inputs: Land, Labour, Physical Capital, and Entrepreneurship.",
+          "source_context": "Chapter 7"
+        },
+        {
+          "concept": "Fixed vs Working Capital",
+          "definition": "Division of capital into long-term durable equipment versus short-term operational raw materials and cash.",
+          "source_context": "Chapter 7"
+        },
+        {
+          "concept": "Production Function",
+          "definition": "Mathematical or conceptual relationship showing output yield as a function of factor inputs and technology.",
+          "source_context": "Chapter 7"
+        },
+        {
+          "concept": "Human Capital Development",
+          "definition": "Investment in education, technical skill training, and healthcare to elevate workforce productivity.",
+          "source_context": "Chapter 7"
+        },
+        {
+          "concept": "Kaizen Philosophy",
+          "definition": "Workplace approach promoting continuous, incremental improvements in capability, safety, and product quality.",
+          "source_context": "Chapter 7"
+        }
+      ]
+    },
+    "statistics": {
+      "total_extracted_items": 139,
+      "breakdown_by_category": {
+        "terminology": 20,
+        "definitions": 10,
+        "concepts": 10,
+        "facts": 10,
+        "people": 15,
+        "places": 8,
+        "dates_events": 11,
+        "institutions": 7,
+        "laws_systems": 9,
+        "chronology": 3,
+        "cause_effect": 7,
+        "classifications": 5,
+        "geographical_features": 4,
+        "historical_concepts": 5,
+        "civic_concepts": 6,
+        "economic_concepts": 9
+      }
+    },
+    "validation": {
+      "json_valid": true,
+      "source_grounding_verified": true,
+      "exact_statistics_matched": true,
+      "deduplication_performed": true,
+      "zero_placeholders": true,
+      "class_level_appropriate": "Class 8 NCERT Social Science"
+    },
+    "deduplication_status": "Consolidated and Deduplicated"
+  },
+  "grade": "8",
+  "chapter_id": "G8-SOC-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "How, When and Where"
 }

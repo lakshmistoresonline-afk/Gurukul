@@ -166,6 +166,20 @@ data class ExamQuestionItem(
     @SerializedName("answer") val answer: String
 )
 
+@Immutable
+data class QuizQuestion(
+    val id: String = "",
+    val subject: LmsSubject? = null,
+    val chapterId: String = "",
+    val questionText: String = "",
+    val options: List<String> = emptyList(),
+    val correctAnswerIndex: Int = 0,
+    val explanation: String = "",
+    val taxonomyLevel: TaxonomyLevel = TaxonomyLevel.REMEMBER,
+    val containsLatex: Boolean = false,
+    val formattedLatexTokens: List<String> = emptyList()
+)
+
 // 9. Foundational Model
 data class FoundationalDataset(
     @SerializedName("drills") val drills: List<FoundationalDrill> = emptyList()

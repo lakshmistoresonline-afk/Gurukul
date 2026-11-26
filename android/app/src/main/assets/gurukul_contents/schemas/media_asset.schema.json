@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gurukul Media Asset",
+  "type": "object",
+  "required": [
+    "asset_id",
+    "asset_type",
+    "availability"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "asset_type": {
+      "type": "string"
+    },
+    "media_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "file_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relative_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "uri": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checksum_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "availability": {
+      "enum": [
+        "packaged",
+        "external",
+        "missing",
+        "unknown"
+      ]
+    },
+    "alt_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "caption": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "width": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "height": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "duration_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "source_reference": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

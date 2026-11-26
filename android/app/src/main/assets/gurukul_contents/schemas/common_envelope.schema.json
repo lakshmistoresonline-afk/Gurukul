@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gurukul.example/schemas/common-envelope-2.0.0.schema.json",
+  "title": "Gurukul Academic Common Envelope 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "record_type",
+    "curriculum",
+    "subject",
+    "artifact",
+    "source_integrity",
+    "academic_index",
+    "source_data"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_type": {
+      "const": "source_artifact"
+    },
+    "curriculum": {
+      "type": "object",
+      "properties": {
+        "curriculum_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "board_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "class_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "class_level": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "academic_year": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "curriculum_id",
+        "board_id",
+        "class_id",
+        "class_level"
+      ],
+      "additionalProperties": true
+    },
+    "subject": {
+      "type": "object",
+      "properties": {
+        "subject_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_subject_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "component_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "component_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "subject_id",
+        "source_subject_label",
+        "component_id",
+        "component_label"
+      ],
+      "additionalProperties": true
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "artifact_type",
+        "source_file_name",
+        "source_relative_path",
+        "source_format"
+      ],
+      "properties": {
+        "artifact_type": {
+          "type": "string"
+        },
+        "source_file_name": {
+          "type": "string"
+        },
+        "source_relative_path": {
+          "type": "string"
+        },
+        "source_format": {
+          "const": "json"
+        },
+        "artifact_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "source_integrity": {
+      "type": "object",
+      "required": [
+        "source_file_sha256",
+        "source_semantic_sha256",
+        "source_byte_length",
+        "source_field_count",
+        "field_inventory"
+      ],
+      "properties": {
+        "source_file_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_semantic_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_byte_length": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_encoding": {
+          "type": "string"
+        },
+        "source_field_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "field_inventory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "academic_index": {
+      "type": "object",
+      "required": [
+        "chapter_candidates",
+        "chapter_candidate_count",
+        "normalization_status"
+      ],
+      "properties": {
+        "chapter_candidates": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "chapter_candidate_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "normalization_status": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "source_data": {}
+  }
+}

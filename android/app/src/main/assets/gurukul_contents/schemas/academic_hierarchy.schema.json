@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gurukul Academic Hierarchy",
+  "type": "object",
+  "required": [
+    "curriculum_id",
+    "class_id",
+    "subject_id",
+    "chapters"
+  ],
+  "properties": {
+    "curriculum_id": {
+      "type": "string"
+    },
+    "board_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "class_id": {
+      "type": "string"
+    },
+    "class_level": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "subject_id": {
+      "type": "string"
+    },
+    "source_subject_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "subject_component_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "textbook_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chapters": {
+      "type": "array",
+      "items": {
+        "$ref": "chapter.schema.json"
+      }
+    }
+  },
+  "additionalProperties": true
+}

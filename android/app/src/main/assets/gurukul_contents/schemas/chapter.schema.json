@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gurukul Chapter",
+  "type": "object",
+  "required": [
+    "chapter_id",
+    "title"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "chapter_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "chapter_number": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "$ref": "topic.schema.json"
+      }
+    },
+    "source_references": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,2873 @@
+{
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_14f669249e1bec59",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
+  },
+  "subject": {
+    "subject_id": "mathsi",
+    "source_subject_label": "Maths I",
+    "component_id": "mathsi",
+    "component_label": "Maths I"
+  },
+  "artifact": {
+    "artifact_type": "notes",
+    "source_file_name": "03-Notes.json",
+    "source_relative_path": "Contents/Class 7/Maths I/Source Files/03-Notes.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "077bd26b422e13472d31e4b0eabbe783664c15e4a0bbbf5cb1f31e88d2c47bcb",
+    "source_semantic_sha256": "fe29ec4b717d20c259c4a174040b295ac0dde791fa360367bb2fbf1918f04955",
+    "source_byte_length": 56473,
+    "source_encoding": "utf-8",
+    "source_field_count": 762,
+    "field_inventory": [
+      "$.subject",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].detailed_sections",
+      "$.chapters[0].detailed_sections[0].section",
+      "$.chapters[0].detailed_sections[0].full_notes",
+      "$.chapters[0].detailed_sections[0].margin_notes",
+      "$.chapters[0].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[0].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[0].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[0].detailed_sections[1].section",
+      "$.chapters[0].detailed_sections[1].full_notes",
+      "$.chapters[0].detailed_sections[1].margin_notes",
+      "$.chapters[0].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[0].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[0].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[0].detailed_sections[2].section",
+      "$.chapters[0].detailed_sections[2].full_notes",
+      "$.chapters[0].detailed_sections[2].margin_notes",
+      "$.chapters[0].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[0].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[0].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[0].comparison_tables",
+      "$.chapters[0].comparison_tables[0].title",
+      "$.chapters[0].comparison_tables[0].headers",
+      "$.chapters[0].comparison_tables[0].rows",
+      "$.chapters[0].scripted_dialogues",
+      "$.chapters[0].scripted_dialogues[0].speaker",
+      "$.chapters[0].scripted_dialogues[0].role",
+      "$.chapters[0].scripted_dialogues[0].speech_text",
+      "$.chapters[0].scripted_dialogues[1].speaker",
+      "$.chapters[0].scripted_dialogues[1].role",
+      "$.chapters[0].scripted_dialogues[1].speech_text",
+      "$.chapters[0].scripted_dialogues[2].speaker",
+      "$.chapters[0].scripted_dialogues[2].role",
+      "$.chapters[0].scripted_dialogues[2].speech_text",
+      "$.chapters[0].stem_lab_drawers",
+      "$.chapters[0].stem_lab_drawers[0].drawer_id",
+      "$.chapters[0].stem_lab_drawers[0].title",
+      "$.chapters[0].stem_lab_drawers[0].concept",
+      "$.chapters[0].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[0].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[0].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[0].formula_rule_engines",
+      "$.chapters[0].formula_rule_engines[0].engine_id",
+      "$.chapters[0].formula_rule_engines[0].rule_name",
+      "$.chapters[0].formula_rule_engines[0].formula",
+      "$.chapters[0].formula_rule_engines[0].input_variables",
+      "$.chapters[0].formula_rule_engines[0].computed_expression",
+      "$.chapters[0].formula_rule_engines[0].example_demonstration",
+      "$.chapters[0].formula_rule_engines[1].engine_id",
+      "$.chapters[0].formula_rule_engines[1].rule_name",
+      "$.chapters[0].formula_rule_engines[1].formula",
+      "$.chapters[0].formula_rule_engines[1].input_variables",
+      "$.chapters[0].formula_rule_engines[1].computed_expression",
+      "$.chapters[0].formula_rule_engines[1].example_demonstration",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.asset_id",
+      "$.chapters[0].image_asset.chapter_number",
+      "$.chapters[0].image_asset.chapter_title",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.file_name",
+      "$.chapters[0].image_asset.local_url",
+      "$.chapters[0].image_asset.aspect_ratio",
+      "$.chapters[0].image_asset.width_px",
+      "$.chapters[0].image_asset.height_px",
+      "$.chapters[0].image_asset.description",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[0].title",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[0].popover_content",
+      "$.chapters[0].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[1].title",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].popover_content",
+      "$.chapters[0].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[2].title",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].popover_content",
+      "$.chapters[0].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[3].title",
+      "$.chapters[0].image_asset.hotspots[3].x_percent",
+      "$.chapters[0].image_asset.hotspots[3].y_percent",
+      "$.chapters[0].image_asset.hotspots[3].w_percent",
+      "$.chapters[0].image_asset.hotspots[3].h_percent",
+      "$.chapters[0].image_asset.hotspots[3].popover_content",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].detailed_sections",
+      "$.chapters[1].detailed_sections[0].section",
+      "$.chapters[1].detailed_sections[0].full_notes",
+      "$.chapters[1].detailed_sections[0].margin_notes",
+      "$.chapters[1].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[1].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[1].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[1].detailed_sections[1].section",
+      "$.chapters[1].detailed_sections[1].full_notes",
+      "$.chapters[1].detailed_sections[1].margin_notes",
+      "$.chapters[1].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[1].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[1].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[1].detailed_sections[2].section",
+      "$.chapters[1].detailed_sections[2].full_notes",
+      "$.chapters[1].detailed_sections[2].margin_notes",
+      "$.chapters[1].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[1].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[1].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[1].comparison_tables",
+      "$.chapters[1].comparison_tables[0].title",
+      "$.chapters[1].comparison_tables[0].headers",
+      "$.chapters[1].comparison_tables[0].rows",
+      "$.chapters[1].scripted_dialogues",
+      "$.chapters[1].scripted_dialogues[0].speaker",
+      "$.chapters[1].scripted_dialogues[0].role",
+      "$.chapters[1].scripted_dialogues[0].speech_text",
+      "$.chapters[1].scripted_dialogues[1].speaker",
+      "$.chapters[1].scripted_dialogues[1].role",
+      "$.chapters[1].scripted_dialogues[1].speech_text",
+      "$.chapters[1].scripted_dialogues[2].speaker",
+      "$.chapters[1].scripted_dialogues[2].role",
+      "$.chapters[1].scripted_dialogues[2].speech_text",
+      "$.chapters[1].stem_lab_drawers",
+      "$.chapters[1].stem_lab_drawers[0].drawer_id",
+      "$.chapters[1].stem_lab_drawers[0].title",
+      "$.chapters[1].stem_lab_drawers[0].concept",
+      "$.chapters[1].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[1].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[1].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[1].formula_rule_engines",
+      "$.chapters[1].formula_rule_engines[0].engine_id",
+      "$.chapters[1].formula_rule_engines[0].rule_name",
+      "$.chapters[1].formula_rule_engines[0].formula",
+      "$.chapters[1].formula_rule_engines[0].input_variables",
+      "$.chapters[1].formula_rule_engines[0].computed_expression",
+      "$.chapters[1].formula_rule_engines[0].example_demonstration",
+      "$.chapters[1].formula_rule_engines[1].engine_id",
+      "$.chapters[1].formula_rule_engines[1].rule_name",
+      "$.chapters[1].formula_rule_engines[1].formula",
+      "$.chapters[1].formula_rule_engines[1].input_variables",
+      "$.chapters[1].formula_rule_engines[1].computed_expression",
+      "$.chapters[1].formula_rule_engines[1].example_demonstration",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.asset_id",
+      "$.chapters[1].image_asset.chapter_number",
+      "$.chapters[1].image_asset.chapter_title",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.file_name",
+      "$.chapters[1].image_asset.local_url",
+      "$.chapters[1].image_asset.aspect_ratio",
+      "$.chapters[1].image_asset.width_px",
+      "$.chapters[1].image_asset.height_px",
+      "$.chapters[1].image_asset.description",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[0].title",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[0].popover_content",
+      "$.chapters[1].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[1].title",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].popover_content",
+      "$.chapters[1].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[2].title",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].popover_content",
+      "$.chapters[1].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[3].title",
+      "$.chapters[1].image_asset.hotspots[3].x_percent",
+      "$.chapters[1].image_asset.hotspots[3].y_percent",
+      "$.chapters[1].image_asset.hotspots[3].w_percent",
+      "$.chapters[1].image_asset.hotspots[3].h_percent",
+      "$.chapters[1].image_asset.hotspots[3].popover_content",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].detailed_sections",
+      "$.chapters[2].detailed_sections[0].section",
+      "$.chapters[2].detailed_sections[0].full_notes",
+      "$.chapters[2].detailed_sections[0].margin_notes",
+      "$.chapters[2].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[2].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[2].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[2].detailed_sections[1].section",
+      "$.chapters[2].detailed_sections[1].full_notes",
+      "$.chapters[2].detailed_sections[1].margin_notes",
+      "$.chapters[2].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[2].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[2].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[2].detailed_sections[2].section",
+      "$.chapters[2].detailed_sections[2].full_notes",
+      "$.chapters[2].detailed_sections[2].margin_notes",
+      "$.chapters[2].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[2].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[2].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[2].comparison_tables",
+      "$.chapters[2].comparison_tables[0].title",
+      "$.chapters[2].comparison_tables[0].headers",
+      "$.chapters[2].comparison_tables[0].rows",
+      "$.chapters[2].scripted_dialogues",
+      "$.chapters[2].scripted_dialogues[0].speaker",
+      "$.chapters[2].scripted_dialogues[0].role",
+      "$.chapters[2].scripted_dialogues[0].speech_text",
+      "$.chapters[2].scripted_dialogues[1].speaker",
+      "$.chapters[2].scripted_dialogues[1].role",
+      "$.chapters[2].scripted_dialogues[1].speech_text",
+      "$.chapters[2].scripted_dialogues[2].speaker",
+      "$.chapters[2].scripted_dialogues[2].role",
+      "$.chapters[2].scripted_dialogues[2].speech_text",
+      "$.chapters[2].stem_lab_drawers",
+      "$.chapters[2].stem_lab_drawers[0].drawer_id",
+      "$.chapters[2].stem_lab_drawers[0].title",
+      "$.chapters[2].stem_lab_drawers[0].concept",
+      "$.chapters[2].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[2].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[2].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[2].formula_rule_engines",
+      "$.chapters[2].formula_rule_engines[0].engine_id",
+      "$.chapters[2].formula_rule_engines[0].rule_name",
+      "$.chapters[2].formula_rule_engines[0].formula",
+      "$.chapters[2].formula_rule_engines[0].input_variables",
+      "$.chapters[2].formula_rule_engines[0].computed_expression",
+      "$.chapters[2].formula_rule_engines[0].example_demonstration",
+      "$.chapters[2].formula_rule_engines[1].engine_id",
+      "$.chapters[2].formula_rule_engines[1].rule_name",
+      "$.chapters[2].formula_rule_engines[1].formula",
+      "$.chapters[2].formula_rule_engines[1].input_variables",
+      "$.chapters[2].formula_rule_engines[1].computed_expression",
+      "$.chapters[2].formula_rule_engines[1].example_demonstration",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.asset_id",
+      "$.chapters[2].image_asset.chapter_number",
+      "$.chapters[2].image_asset.chapter_title",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.file_name",
+      "$.chapters[2].image_asset.local_url",
+      "$.chapters[2].image_asset.aspect_ratio",
+      "$.chapters[2].image_asset.width_px",
+      "$.chapters[2].image_asset.height_px",
+      "$.chapters[2].image_asset.description",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[0].title",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].image_asset.hotspots[0].popover_content",
+      "$.chapters[2].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[1].title",
+      "$.chapters[2].image_asset.hotspots[1].x_percent",
+      "$.chapters[2].image_asset.hotspots[1].y_percent",
+      "$.chapters[2].image_asset.hotspots[1].w_percent",
+      "$.chapters[2].image_asset.hotspots[1].h_percent",
+      "$.chapters[2].image_asset.hotspots[1].popover_content",
+      "$.chapters[2].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[2].title",
+      "$.chapters[2].image_asset.hotspots[2].x_percent",
+      "$.chapters[2].image_asset.hotspots[2].y_percent",
+      "$.chapters[2].image_asset.hotspots[2].w_percent",
+      "$.chapters[2].image_asset.hotspots[2].h_percent",
+      "$.chapters[2].image_asset.hotspots[2].popover_content",
+      "$.chapters[2].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[3].title",
+      "$.chapters[2].image_asset.hotspots[3].x_percent",
+      "$.chapters[2].image_asset.hotspots[3].y_percent",
+      "$.chapters[2].image_asset.hotspots[3].w_percent",
+      "$.chapters[2].image_asset.hotspots[3].h_percent",
+      "$.chapters[2].image_asset.hotspots[3].popover_content",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].detailed_sections",
+      "$.chapters[3].detailed_sections[0].section",
+      "$.chapters[3].detailed_sections[0].full_notes",
+      "$.chapters[3].detailed_sections[0].margin_notes",
+      "$.chapters[3].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[3].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[3].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[3].detailed_sections[1].section",
+      "$.chapters[3].detailed_sections[1].full_notes",
+      "$.chapters[3].detailed_sections[1].margin_notes",
+      "$.chapters[3].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[3].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[3].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[3].detailed_sections[2].section",
+      "$.chapters[3].detailed_sections[2].full_notes",
+      "$.chapters[3].detailed_sections[2].margin_notes",
+      "$.chapters[3].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[3].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[3].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[3].comparison_tables",
+      "$.chapters[3].comparison_tables[0].title",
+      "$.chapters[3].comparison_tables[0].headers",
+      "$.chapters[3].comparison_tables[0].rows",
+      "$.chapters[3].scripted_dialogues",
+      "$.chapters[3].scripted_dialogues[0].speaker",
+      "$.chapters[3].scripted_dialogues[0].role",
+      "$.chapters[3].scripted_dialogues[0].speech_text",
+      "$.chapters[3].scripted_dialogues[1].speaker",
+      "$.chapters[3].scripted_dialogues[1].role",
+      "$.chapters[3].scripted_dialogues[1].speech_text",
+      "$.chapters[3].scripted_dialogues[2].speaker",
+      "$.chapters[3].scripted_dialogues[2].role",
+      "$.chapters[3].scripted_dialogues[2].speech_text",
+      "$.chapters[3].stem_lab_drawers",
+      "$.chapters[3].stem_lab_drawers[0].drawer_id",
+      "$.chapters[3].stem_lab_drawers[0].title",
+      "$.chapters[3].stem_lab_drawers[0].concept",
+      "$.chapters[3].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[3].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[3].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[3].formula_rule_engines",
+      "$.chapters[3].formula_rule_engines[0].engine_id",
+      "$.chapters[3].formula_rule_engines[0].rule_name",
+      "$.chapters[3].formula_rule_engines[0].formula",
+      "$.chapters[3].formula_rule_engines[0].input_variables",
+      "$.chapters[3].formula_rule_engines[0].computed_expression",
+      "$.chapters[3].formula_rule_engines[0].example_demonstration",
+      "$.chapters[3].formula_rule_engines[1].engine_id",
+      "$.chapters[3].formula_rule_engines[1].rule_name",
+      "$.chapters[3].formula_rule_engines[1].formula",
+      "$.chapters[3].formula_rule_engines[1].input_variables",
+      "$.chapters[3].formula_rule_engines[1].computed_expression",
+      "$.chapters[3].formula_rule_engines[1].example_demonstration",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.asset_id",
+      "$.chapters[3].image_asset.chapter_number",
+      "$.chapters[3].image_asset.chapter_title",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.file_name",
+      "$.chapters[3].image_asset.local_url",
+      "$.chapters[3].image_asset.aspect_ratio",
+      "$.chapters[3].image_asset.width_px",
+      "$.chapters[3].image_asset.height_px",
+      "$.chapters[3].image_asset.description",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[0].title",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].image_asset.hotspots[0].popover_content",
+      "$.chapters[3].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[1].title",
+      "$.chapters[3].image_asset.hotspots[1].x_percent",
+      "$.chapters[3].image_asset.hotspots[1].y_percent",
+      "$.chapters[3].image_asset.hotspots[1].w_percent",
+      "$.chapters[3].image_asset.hotspots[1].h_percent",
+      "$.chapters[3].image_asset.hotspots[1].popover_content",
+      "$.chapters[3].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[2].title",
+      "$.chapters[3].image_asset.hotspots[2].x_percent",
+      "$.chapters[3].image_asset.hotspots[2].y_percent",
+      "$.chapters[3].image_asset.hotspots[2].w_percent",
+      "$.chapters[3].image_asset.hotspots[2].h_percent",
+      "$.chapters[3].image_asset.hotspots[2].popover_content",
+      "$.chapters[3].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[3].title",
+      "$.chapters[3].image_asset.hotspots[3].x_percent",
+      "$.chapters[3].image_asset.hotspots[3].y_percent",
+      "$.chapters[3].image_asset.hotspots[3].w_percent",
+      "$.chapters[3].image_asset.hotspots[3].h_percent",
+      "$.chapters[3].image_asset.hotspots[3].popover_content",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].detailed_sections",
+      "$.chapters[4].detailed_sections[0].section",
+      "$.chapters[4].detailed_sections[0].full_notes",
+      "$.chapters[4].detailed_sections[0].margin_notes",
+      "$.chapters[4].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[4].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[4].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[4].detailed_sections[1].section",
+      "$.chapters[4].detailed_sections[1].full_notes",
+      "$.chapters[4].detailed_sections[1].margin_notes",
+      "$.chapters[4].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[4].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[4].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[4].detailed_sections[2].section",
+      "$.chapters[4].detailed_sections[2].full_notes",
+      "$.chapters[4].detailed_sections[2].margin_notes",
+      "$.chapters[4].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[4].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[4].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[4].comparison_tables",
+      "$.chapters[4].comparison_tables[0].title",
+      "$.chapters[4].comparison_tables[0].headers",
+      "$.chapters[4].comparison_tables[0].rows",
+      "$.chapters[4].scripted_dialogues",
+      "$.chapters[4].scripted_dialogues[0].speaker",
+      "$.chapters[4].scripted_dialogues[0].role",
+      "$.chapters[4].scripted_dialogues[0].speech_text",
+      "$.chapters[4].scripted_dialogues[1].speaker",
+      "$.chapters[4].scripted_dialogues[1].role",
+      "$.chapters[4].scripted_dialogues[1].speech_text",
+      "$.chapters[4].scripted_dialogues[2].speaker",
+      "$.chapters[4].scripted_dialogues[2].role",
+      "$.chapters[4].scripted_dialogues[2].speech_text",
+      "$.chapters[4].stem_lab_drawers",
+      "$.chapters[4].stem_lab_drawers[0].drawer_id",
+      "$.chapters[4].stem_lab_drawers[0].title",
+      "$.chapters[4].stem_lab_drawers[0].concept",
+      "$.chapters[4].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[4].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[4].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[4].formula_rule_engines",
+      "$.chapters[4].formula_rule_engines[0].engine_id",
+      "$.chapters[4].formula_rule_engines[0].rule_name",
+      "$.chapters[4].formula_rule_engines[0].formula",
+      "$.chapters[4].formula_rule_engines[0].input_variables",
+      "$.chapters[4].formula_rule_engines[0].computed_expression",
+      "$.chapters[4].formula_rule_engines[0].example_demonstration",
+      "$.chapters[4].formula_rule_engines[1].engine_id",
+      "$.chapters[4].formula_rule_engines[1].rule_name",
+      "$.chapters[4].formula_rule_engines[1].formula",
+      "$.chapters[4].formula_rule_engines[1].input_variables",
+      "$.chapters[4].formula_rule_engines[1].computed_expression",
+      "$.chapters[4].formula_rule_engines[1].example_demonstration",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.asset_id",
+      "$.chapters[4].image_asset.chapter_number",
+      "$.chapters[4].image_asset.chapter_title",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.file_name",
+      "$.chapters[4].image_asset.local_url",
+      "$.chapters[4].image_asset.aspect_ratio",
+      "$.chapters[4].image_asset.width_px",
+      "$.chapters[4].image_asset.height_px",
+      "$.chapters[4].image_asset.description",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[0].title",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[0].popover_content",
+      "$.chapters[4].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[1].title",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].popover_content",
+      "$.chapters[4].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[2].title",
+      "$.chapters[4].image_asset.hotspots[2].x_percent",
+      "$.chapters[4].image_asset.hotspots[2].y_percent",
+      "$.chapters[4].image_asset.hotspots[2].w_percent",
+      "$.chapters[4].image_asset.hotspots[2].h_percent",
+      "$.chapters[4].image_asset.hotspots[2].popover_content",
+      "$.chapters[4].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[3].title",
+      "$.chapters[4].image_asset.hotspots[3].x_percent",
+      "$.chapters[4].image_asset.hotspots[3].y_percent",
+      "$.chapters[4].image_asset.hotspots[3].w_percent",
+      "$.chapters[4].image_asset.hotspots[3].h_percent",
+      "$.chapters[4].image_asset.hotspots[3].popover_content",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].detailed_sections",
+      "$.chapters[5].detailed_sections[0].section",
+      "$.chapters[5].detailed_sections[0].full_notes",
+      "$.chapters[5].detailed_sections[0].margin_notes",
+      "$.chapters[5].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[5].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[5].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[5].detailed_sections[1].section",
+      "$.chapters[5].detailed_sections[1].full_notes",
+      "$.chapters[5].detailed_sections[1].margin_notes",
+      "$.chapters[5].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[5].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[5].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[5].detailed_sections[2].section",
+      "$.chapters[5].detailed_sections[2].full_notes",
+      "$.chapters[5].detailed_sections[2].margin_notes",
+      "$.chapters[5].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[5].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[5].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[5].comparison_tables",
+      "$.chapters[5].comparison_tables[0].title",
+      "$.chapters[5].comparison_tables[0].headers",
+      "$.chapters[5].comparison_tables[0].rows",
+      "$.chapters[5].scripted_dialogues",
+      "$.chapters[5].scripted_dialogues[0].speaker",
+      "$.chapters[5].scripted_dialogues[0].role",
+      "$.chapters[5].scripted_dialogues[0].speech_text",
+      "$.chapters[5].scripted_dialogues[1].speaker",
+      "$.chapters[5].scripted_dialogues[1].role",
+      "$.chapters[5].scripted_dialogues[1].speech_text",
+      "$.chapters[5].scripted_dialogues[2].speaker",
+      "$.chapters[5].scripted_dialogues[2].role",
+      "$.chapters[5].scripted_dialogues[2].speech_text",
+      "$.chapters[5].stem_lab_drawers",
+      "$.chapters[5].stem_lab_drawers[0].drawer_id",
+      "$.chapters[5].stem_lab_drawers[0].title",
+      "$.chapters[5].stem_lab_drawers[0].concept",
+      "$.chapters[5].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[5].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[5].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[5].formula_rule_engines",
+      "$.chapters[5].formula_rule_engines[0].engine_id",
+      "$.chapters[5].formula_rule_engines[0].rule_name",
+      "$.chapters[5].formula_rule_engines[0].formula",
+      "$.chapters[5].formula_rule_engines[0].input_variables",
+      "$.chapters[5].formula_rule_engines[0].computed_expression",
+      "$.chapters[5].formula_rule_engines[0].example_demonstration",
+      "$.chapters[5].formula_rule_engines[1].engine_id",
+      "$.chapters[5].formula_rule_engines[1].rule_name",
+      "$.chapters[5].formula_rule_engines[1].formula",
+      "$.chapters[5].formula_rule_engines[1].input_variables",
+      "$.chapters[5].formula_rule_engines[1].computed_expression",
+      "$.chapters[5].formula_rule_engines[1].example_demonstration",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.asset_id",
+      "$.chapters[5].image_asset.chapter_number",
+      "$.chapters[5].image_asset.chapter_title",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.file_name",
+      "$.chapters[5].image_asset.local_url",
+      "$.chapters[5].image_asset.aspect_ratio",
+      "$.chapters[5].image_asset.width_px",
+      "$.chapters[5].image_asset.height_px",
+      "$.chapters[5].image_asset.description",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[0].title",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[0].popover_content",
+      "$.chapters[5].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[1].title",
+      "$.chapters[5].image_asset.hotspots[1].x_percent",
+      "$.chapters[5].image_asset.hotspots[1].y_percent",
+      "$.chapters[5].image_asset.hotspots[1].w_percent",
+      "$.chapters[5].image_asset.hotspots[1].h_percent",
+      "$.chapters[5].image_asset.hotspots[1].popover_content",
+      "$.chapters[5].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[2].title",
+      "$.chapters[5].image_asset.hotspots[2].x_percent",
+      "$.chapters[5].image_asset.hotspots[2].y_percent",
+      "$.chapters[5].image_asset.hotspots[2].w_percent",
+      "$.chapters[5].image_asset.hotspots[2].h_percent",
+      "$.chapters[5].image_asset.hotspots[2].popover_content",
+      "$.chapters[5].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[3].title",
+      "$.chapters[5].image_asset.hotspots[3].x_percent",
+      "$.chapters[5].image_asset.hotspots[3].y_percent",
+      "$.chapters[5].image_asset.hotspots[3].w_percent",
+      "$.chapters[5].image_asset.hotspots[3].h_percent",
+      "$.chapters[5].image_asset.hotspots[3].popover_content",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].detailed_sections",
+      "$.chapters[6].detailed_sections[0].section",
+      "$.chapters[6].detailed_sections[0].full_notes",
+      "$.chapters[6].detailed_sections[0].margin_notes",
+      "$.chapters[6].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[6].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[6].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[6].detailed_sections[1].section",
+      "$.chapters[6].detailed_sections[1].full_notes",
+      "$.chapters[6].detailed_sections[1].margin_notes",
+      "$.chapters[6].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[6].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[6].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[6].detailed_sections[2].section",
+      "$.chapters[6].detailed_sections[2].full_notes",
+      "$.chapters[6].detailed_sections[2].margin_notes",
+      "$.chapters[6].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[6].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[6].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[6].comparison_tables",
+      "$.chapters[6].comparison_tables[0].title",
+      "$.chapters[6].comparison_tables[0].headers",
+      "$.chapters[6].comparison_tables[0].rows",
+      "$.chapters[6].scripted_dialogues",
+      "$.chapters[6].scripted_dialogues[0].speaker",
+      "$.chapters[6].scripted_dialogues[0].role",
+      "$.chapters[6].scripted_dialogues[0].speech_text",
+      "$.chapters[6].scripted_dialogues[1].speaker",
+      "$.chapters[6].scripted_dialogues[1].role",
+      "$.chapters[6].scripted_dialogues[1].speech_text",
+      "$.chapters[6].scripted_dialogues[2].speaker",
+      "$.chapters[6].scripted_dialogues[2].role",
+      "$.chapters[6].scripted_dialogues[2].speech_text",
+      "$.chapters[6].stem_lab_drawers",
+      "$.chapters[6].stem_lab_drawers[0].drawer_id",
+      "$.chapters[6].stem_lab_drawers[0].title",
+      "$.chapters[6].stem_lab_drawers[0].concept",
+      "$.chapters[6].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[6].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[6].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[6].formula_rule_engines",
+      "$.chapters[6].formula_rule_engines[0].engine_id",
+      "$.chapters[6].formula_rule_engines[0].rule_name",
+      "$.chapters[6].formula_rule_engines[0].formula",
+      "$.chapters[6].formula_rule_engines[0].input_variables",
+      "$.chapters[6].formula_rule_engines[0].computed_expression",
+      "$.chapters[6].formula_rule_engines[0].example_demonstration",
+      "$.chapters[6].formula_rule_engines[1].engine_id",
+      "$.chapters[6].formula_rule_engines[1].rule_name",
+      "$.chapters[6].formula_rule_engines[1].formula",
+      "$.chapters[6].formula_rule_engines[1].input_variables",
+      "$.chapters[6].formula_rule_engines[1].computed_expression",
+      "$.chapters[6].formula_rule_engines[1].example_demonstration",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.asset_id",
+      "$.chapters[6].image_asset.chapter_number",
+      "$.chapters[6].image_asset.chapter_title",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.file_name",
+      "$.chapters[6].image_asset.local_url",
+      "$.chapters[6].image_asset.aspect_ratio",
+      "$.chapters[6].image_asset.width_px",
+      "$.chapters[6].image_asset.height_px",
+      "$.chapters[6].image_asset.description",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[0].title",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[0].popover_content",
+      "$.chapters[6].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[1].title",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].popover_content",
+      "$.chapters[6].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[2].title",
+      "$.chapters[6].image_asset.hotspots[2].x_percent",
+      "$.chapters[6].image_asset.hotspots[2].y_percent",
+      "$.chapters[6].image_asset.hotspots[2].w_percent",
+      "$.chapters[6].image_asset.hotspots[2].h_percent",
+      "$.chapters[6].image_asset.hotspots[2].popover_content",
+      "$.chapters[6].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[3].title",
+      "$.chapters[6].image_asset.hotspots[3].x_percent",
+      "$.chapters[6].image_asset.hotspots[3].y_percent",
+      "$.chapters[6].image_asset.hotspots[3].w_percent",
+      "$.chapters[6].image_asset.hotspots[3].h_percent",
+      "$.chapters[6].image_asset.hotspots[3].popover_content",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].detailed_sections",
+      "$.chapters[7].detailed_sections[0].section",
+      "$.chapters[7].detailed_sections[0].full_notes",
+      "$.chapters[7].detailed_sections[0].margin_notes",
+      "$.chapters[7].detailed_sections[0].margin_notes[0].type",
+      "$.chapters[7].detailed_sections[0].margin_notes[0].title",
+      "$.chapters[7].detailed_sections[0].margin_notes[0].content",
+      "$.chapters[7].detailed_sections[1].section",
+      "$.chapters[7].detailed_sections[1].full_notes",
+      "$.chapters[7].detailed_sections[1].margin_notes",
+      "$.chapters[7].detailed_sections[1].margin_notes[0].type",
+      "$.chapters[7].detailed_sections[1].margin_notes[0].title",
+      "$.chapters[7].detailed_sections[1].margin_notes[0].content",
+      "$.chapters[7].detailed_sections[2].section",
+      "$.chapters[7].detailed_sections[2].full_notes",
+      "$.chapters[7].detailed_sections[2].margin_notes",
+      "$.chapters[7].detailed_sections[2].margin_notes[0].type",
+      "$.chapters[7].detailed_sections[2].margin_notes[0].title",
+      "$.chapters[7].detailed_sections[2].margin_notes[0].content",
+      "$.chapters[7].comparison_tables",
+      "$.chapters[7].comparison_tables[0].title",
+      "$.chapters[7].comparison_tables[0].headers",
+      "$.chapters[7].comparison_tables[0].rows",
+      "$.chapters[7].scripted_dialogues",
+      "$.chapters[7].scripted_dialogues[0].speaker",
+      "$.chapters[7].scripted_dialogues[0].role",
+      "$.chapters[7].scripted_dialogues[0].speech_text",
+      "$.chapters[7].scripted_dialogues[1].speaker",
+      "$.chapters[7].scripted_dialogues[1].role",
+      "$.chapters[7].scripted_dialogues[1].speech_text",
+      "$.chapters[7].scripted_dialogues[2].speaker",
+      "$.chapters[7].scripted_dialogues[2].role",
+      "$.chapters[7].scripted_dialogues[2].speech_text",
+      "$.chapters[7].stem_lab_drawers",
+      "$.chapters[7].stem_lab_drawers[0].drawer_id",
+      "$.chapters[7].stem_lab_drawers[0].title",
+      "$.chapters[7].stem_lab_drawers[0].concept",
+      "$.chapters[7].stem_lab_drawers[0].interactive_controls",
+      "$.chapters[7].stem_lab_drawers[0].procedure_steps",
+      "$.chapters[7].stem_lab_drawers[0].expected_outcome",
+      "$.chapters[7].formula_rule_engines",
+      "$.chapters[7].formula_rule_engines[0].engine_id",
+      "$.chapters[7].formula_rule_engines[0].rule_name",
+      "$.chapters[7].formula_rule_engines[0].formula",
+      "$.chapters[7].formula_rule_engines[0].input_variables",
+      "$.chapters[7].formula_rule_engines[0].computed_expression",
+      "$.chapters[7].formula_rule_engines[0].example_demonstration",
+      "$.chapters[7].formula_rule_engines[1].engine_id",
+      "$.chapters[7].formula_rule_engines[1].rule_name",
+      "$.chapters[7].formula_rule_engines[1].formula",
+      "$.chapters[7].formula_rule_engines[1].input_variables",
+      "$.chapters[7].formula_rule_engines[1].computed_expression",
+      "$.chapters[7].formula_rule_engines[1].example_demonstration",
+      "$.chapters[7].image_asset",
+      "$.chapters[7].image_asset.asset_id",
+      "$.chapters[7].image_asset.chapter_number",
+      "$.chapters[7].image_asset.chapter_title",
+      "$.chapters[7].image_asset.title",
+      "$.chapters[7].image_asset.file_name",
+      "$.chapters[7].image_asset.local_url",
+      "$.chapters[7].image_asset.aspect_ratio",
+      "$.chapters[7].image_asset.width_px",
+      "$.chapters[7].image_asset.height_px",
+      "$.chapters[7].image_asset.description",
+      "$.chapters[7].image_asset.hotspots",
+      "$.chapters[7].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[0].title",
+      "$.chapters[7].image_asset.hotspots[0].x_percent",
+      "$.chapters[7].image_asset.hotspots[0].y_percent",
+      "$.chapters[7].image_asset.hotspots[0].w_percent",
+      "$.chapters[7].image_asset.hotspots[0].h_percent",
+      "$.chapters[7].image_asset.hotspots[0].popover_content",
+      "$.chapters[7].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[1].title",
+      "$.chapters[7].image_asset.hotspots[1].x_percent",
+      "$.chapters[7].image_asset.hotspots[1].y_percent",
+      "$.chapters[7].image_asset.hotspots[1].w_percent",
+      "$.chapters[7].image_asset.hotspots[1].h_percent",
+      "$.chapters[7].image_asset.hotspots[1].popover_content",
+      "$.chapters[7].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[2].title",
+      "$.chapters[7].image_asset.hotspots[2].x_percent",
+      "$.chapters[7].image_asset.hotspots[2].y_percent",
+      "$.chapters[7].image_asset.hotspots[2].w_percent",
+      "$.chapters[7].image_asset.hotspots[2].h_percent",
+      "$.chapters[7].image_asset.hotspots[2].popover_content",
+      "$.chapters[7].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[3].title",
+      "$.chapters[7].image_asset.hotspots[3].x_percent",
+      "$.chapters[7].image_asset.hotspots[3].y_percent",
+      "$.chapters[7].image_asset.hotspots[3].w_percent",
+      "$.chapters[7].image_asset.hotspots[3].h_percent",
+      "$.chapters[7].image_asset.hotspots[3].popover_content"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Large Numbers Around Us",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Population Comparisons",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Shortcut Practice",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "1000th Digit Position",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "System Conversion Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "Place Value Special Calculator",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Large Numbers Around Us",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Indian Place Value System",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "International Place Value System",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Factor Shortcuts (x5 and x25)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Sequential Digit Position Analytics",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Arithmetic Expressions",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Terms and Brackets",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Distributive Property",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Token Model",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "Properties Summary Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "Zero-Pair Token Simulator",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Arithmetic Expressions",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Term Partitioning & Order",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Algebraic Laws of Arithmetic",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Zero-Pair Token Model",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Bracket Negation Rules",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "A Peek Beyond the Point",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Decimal Point",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Money in Decimals",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Alignment",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "Decimal Place Value Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "Millimeter Scale Magnifier",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "A Peek Beyond the Point",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Millimeter Subdivisions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Expanded Decimal Grid",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Currency & Unit Conversions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Equivalent Decimals & Alignment",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Expressions using Letter-Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "General Formulas",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Simplification",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Grid Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "Endless 4-Column Grid Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "Matchstick Square Builder",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Expressions using Letter-Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Polygon Perimeters",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Matchstick Square Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Endless 4-Column Grid Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Combining Like Terms",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Parallel and Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Uniqueness of Intersection",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Grid Identification",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Crease Patterns",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "Angle Relationships Summary Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "Interactive Paper Folding Crease Studio",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Parallel and Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Intersecting Lines & Angles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Parallel Lines (l || m)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Perpendicular Lines (l ⊥ m)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Paper Folding Creases",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Number Play",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Taller-in-Front Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Loose Sheet Parity",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "3x3 Magic Square",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "3x3 Standard Magic Square Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "3x3 Magic Square Solver & Center Cell Prover",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Number Play",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Height Line Logic",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Integer Parity Algebra",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "3x3 Magic Square Proof",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Cryptarithms & Elimination",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "A Tale of Three Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Direct vs Roundabout Path",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Quick Existence Check",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Equilateral Always Exists",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "Triangle Existence Testing Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "Ruler & Compass Triangle Feasibility Tester",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "A Tale of Three Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Direct Path vs Detour",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Triangle Inequality Theorem",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Side-Based Classification",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Compass Arc Construction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Working with Fractions",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].detailed_sections[0].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Historical Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].detailed_sections[1].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Division Effect",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].detailed_sections[2].margin_notes[0]",
+        "source_title_field": "title",
+        "source_title": "Telescoping Cancellation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].comparison_tables[0]",
+        "source_title_field": "title",
+        "source_title": "Fraction Division Evaluation Table",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].stem_lab_drawers[0]",
+        "source_title_field": "title",
+        "source_title": "Fraction Area Grid Multiplier",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Working with Fractions",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Brahmagupta's Rule (628 CE)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Reciprocal Division & Scaling",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Real-World Fraction Scaling",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Telescoping Series Cancellation",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 88,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Mathematics (Ganita Prakash - Class 7 NCERT)",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Large Numbers Around Us",
+        "detailed_sections": [
+          {
+            "section": "1.1 Representing Large Numbers",
+            "full_notes": "Large numbers are used to express large quantities such as populations, distances in astronomy, and financial budgets. In the Indian numbering system, values are grouped as Thousands (1,000), Lakhs (1,00,000 = 10^5), and Crores (1,00,00,000 = 10^7). In the International system, grouping is done in thousands, Millions (1,000,000 = 10^6), and Billions (1,000,000,000 = 10^9). Conversion relation: 1 Million = 10 Lakhs, 1 Crore = 10 Millions.",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "Population Comparisons",
+                "content": "To compare populations of cities like Patna and Mumbai, we express them in lakhs/crores and find the scaling factor by division."
+              }
+            ]
+          },
+          {
+            "section": "1.2 Patterns in Products & Multiplication Shortcuts",
+            "full_notes": "Shortcut techniques accelerate multiplication: To multiply a number by 5, divide the number by 2 and multiply by 10 (e.g., 116 * 5 = (116 / 2) * 10 = 58 * 10 = 580). To multiply by 25, divide the number by 4 and multiply by 100 (e.g., 824 * 25 = (824 / 4) * 100 = 206 * 100 = 20,600).",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "Shortcut Practice",
+                "content": "Evaluate 464 * 5 and 312 * 25 using division shortcuts."
+              }
+            ]
+          },
+          {
+            "section": "1.3 Digit Sequences and Positions",
+            "full_notes": "When integers are written sequentially (1, 2, 3, 4, ..., 9, 10, 11, ...), single-digit numbers occupy 9 positions. Two-digit numbers (10-99, 90 numbers) occupy 180 positions. Three-digit numbers (100-999, 900 numbers) occupy 2700 positions. Determining the n-th written digit requires calculating cumulative digit counts.",
+            "margin_notes": [
+              {
+                "type": "Think About It",
+                "title": "1000th Digit Position",
+                "content": "The first 9 digits come from 1-9. Digits 10 to 189 come from 10-99. The remaining digits come from 3-digit numbers starting at 100."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "System Conversion Table",
+            "headers": [
+              "Indian System",
+              "Value in Digits",
+              "International Equivalent"
+            ],
+            "rows": [
+              [
+                "1 Lakh",
+                "1,00,000",
+                "100 Thousand"
+              ],
+              [
+                "10 Lakhs",
+                "10,00,000",
+                "1 Million"
+              ],
+              [
+                "1 Crore",
+                "1,00,00,000",
+                "10 Million"
+              ],
+              [
+                "10 Crores",
+                "10,00,00,000",
+                "100 Million"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Aftab",
+            "role": "Student",
+            "speech_text": "How can Patna's population of 25 Lakhs be compared to Mumbai's 2 Crores?"
+          },
+          {
+            "speaker": "Shabnam",
+            "role": "Peer",
+            "speech_text": "Convert 2 Crores to 200 Lakhs! Then 200 / 25 = 8 times larger."
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "Correct! Standardizing place value units makes magnitude comparison effortless."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch1",
+            "title": "Place Value Special Calculator",
+            "concept": "Decomposing numbers using restricted operational buttons (+10, +100, +10000)",
+            "interactive_controls": [
+              "+10000 Button",
+              "+100 Button"
+            ],
+            "procedure_steps": [
+              "Form 50,300 starting from 0",
+              "Press +10000 five times",
+              "Press +100 three times"
+            ],
+            "expected_outcome": "50,300 formed in minimal 8 button clicks."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch1",
+            "rule_name": "Multiplication Shortcuts Engine",
+            "formula": "N * 5 = (N/2)*10; N * 25 = (N/4)*100",
+            "input_variables": [
+              "N"
+            ],
+            "computed_expression": "Halve or quarter input N and append trailing zeros",
+            "example_demonstration": "Input N=824 => 824/4 = 206 => 20,600"
+          },
+          {
+            "engine_id": "eng_ch1_odd",
+            "rule_name": "Odd Number Multiplication Shortcut Engine",
+            "formula": "N * 5 = ((N-1)/2)*10 + 5; N * 25 = ((N-R)/4)*100 + R*25",
+            "input_variables": [
+              "N",
+              "R (remainder N % 4)"
+            ],
+            "computed_expression": "Halve or quarter even part and add remainder scaled value",
+            "example_demonstration": "117 * 5 = (116/2)*10 + 5 = 585; 313 * 25 = (312/4)*100 + 1*25 = 7825"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch1_place_value_shortcuts",
+          "chapter_number": 1,
+          "chapter_title": "Large Numbers Around Us",
+          "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+          "file_name": "ch1_place_value_shortcuts.png",
+          "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_1_1",
+              "title": "Indian Place Value System",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+            },
+            {
+              "hotspot_id": "hs_1_2",
+              "title": "International Place Value System",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+            },
+            {
+              "hotspot_id": "hs_1_3",
+              "title": "Factor Shortcuts (x5 and x25)",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+            },
+            {
+              "hotspot_id": "hs_1_4",
+              "title": "Sequential Digit Position Analytics",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Arithmetic Expressions",
+        "detailed_sections": [
+          {
+            "section": "2.1 Understanding Arithmetic Expressions and Terms",
+            "full_notes": "An arithmetic expression is a combination of numbers and operational signs (+, -, *, /). Expressions are separated into terms by addition and subtraction signs. For example, in 4 + (100 / 2), the terms are 4 and (100 / 2). Evaluating terms first simplifies reading and solving complex expressions.",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "Terms and Brackets",
+                "content": "Brackets group quantities together so they can be treated as a single term inside a larger expression."
+              }
+            ]
+          },
+          {
+            "section": "2.2 Algebraic Properties of Addition and Multiplication",
+            "full_notes": "1. Commutative Property of Addition: a + b = b + a. Changing order does not change the sum.\n2. Associative Property of Addition: (a + b) + c = a + (b + c). Grouping does not alter the sum.\n3. Distributive Property of Multiplication over Addition: a * (b + c) = a * b + a * c.",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "Distributive Property",
+                "content": "Verify 8 * (5 + 6) = 8*5 + 8*6 = 40 + 48 = 88."
+              }
+            ]
+          },
+          {
+            "section": "2.3 Subtracting Terms and Additive Inverse",
+            "full_notes": "Subtracting a number is equivalent to adding its additive inverse: a - b = a + (-b). When removing brackets preceded by a minus sign, the sign of every term inside the bracket reverses: -(a + b) = -a - b and -(a - b) = -a + b.",
+            "margin_notes": [
+              {
+                "type": "Model Connection",
+                "title": "Token Model",
+                "content": "Using positive and negative integer tokens, subtracting a positive token is equivalent to adding a negative token."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "Properties Summary Table",
+            "headers": [
+              "Property",
+              "Mathematical Rule",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Commutative (Addition)",
+                "a + b = b + a",
+                "7 + 3 = 3 + 7 = 10"
+              ],
+              [
+                "Associative (Addition)",
+                "(a + b) + c = a + (b + c)",
+                "(2 + 3) + 4 = 2 + (3 + 4) = 9"
+              ],
+              [
+                "Distributive",
+                "a(b + c) = ab + ac",
+                "4(10 + 2) = 40 + 8 = 48"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Elsa",
+            "role": "Princess",
+            "speech_text": "If I double my 100 gold coins and Anna spends half of hers, what is the expression?"
+          },
+          {
+            "speaker": "Anna",
+            "role": "Princess",
+            "speech_text": "It is (100 * 2) + (100 / 2) = 200 + 50 = 250 gold coins!"
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "Notice how brackets group operations into clear compound terms."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch2",
+            "title": "Zero-Pair Token Simulator",
+            "concept": "Additive inverse subtraction modeling",
+            "interactive_controls": [
+              "Blue (+1) Tokens",
+              "Red (-1) Tokens"
+            ],
+            "procedure_steps": [
+              "Add 18 Blue tokens",
+              "Add 10 Red tokens",
+              "Pair blue and red to form zero pairs"
+            ],
+            "expected_outcome": "10 zero pairs clear, leaving 8 Blue tokens (+8)."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch2",
+            "rule_name": "Bracket Negation & Expansion Engine",
+            "formula": "-(a - b) = -a + b; -(a + b) = -a - b",
+            "input_variables": [
+              "a",
+              "b"
+            ],
+            "computed_expression": "Inverts every operational sign inside brackets",
+            "example_demonstration": "Input -(20 - 5) => -20 + 5 = -15"
+          },
+          {
+            "engine_id": "eng_ch2_nested",
+            "rule_name": "Nested Bracket Expansion Engine",
+            "formula": "a - [b - (c - d)] = a - b + c - d",
+            "input_variables": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "computed_expression": "Expand nested parentheses inside-out, flipping signs on minus-preceded brackets",
+            "example_demonstration": "50 - [20 - (10 - 4)] = 50 - [20 - 6] = 50 - 14 = 36"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch2_expressions_token_model",
+          "chapter_number": 2,
+          "chapter_title": "Arithmetic Expressions",
+          "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+          "file_name": "ch2_expressions_token_model.png",
+          "local_url": "/assets/images/ch2_expressions_token_model.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_2_1",
+              "title": "Term Partitioning & Order",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+            },
+            {
+              "hotspot_id": "hs_2_2",
+              "title": "Algebraic Laws of Arithmetic",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+            },
+            {
+              "hotspot_id": "hs_2_3",
+              "title": "Zero-Pair Token Model",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+            },
+            {
+              "hotspot_id": "hs_2_4",
+              "title": "Bracket Negation Rules",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "A Peek Beyond the Point",
+        "detailed_sections": [
+          {
+            "section": "3.1 Concept of Tenths and Hundredths",
+            "full_notes": "When 1 unit is divided into 10 equal parts, each part is one-tenth (1/10 or 0.1). When one-tenth is divided into 10 equal parts, each part is one-hundredth (1/100 or 0.01). Place values to the right of the decimal point are Tenths, Hundredths, Thousandths.",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "Decimal Point",
+                "content": "The dot '.' separates whole units on the left from fractional place values on the right."
+              }
+            ]
+          },
+          {
+            "section": "3.2 Decimal Place Value Chart & Conversions",
+            "full_notes": "A number like 3.47 equals 3 ones + 4 tenths + 7 hundredths = 3 + 4/10 + 7/100. Money conversion: 1 Rupee = 100 Paise, so 1 Paise = ₹0.01. Length conversion: 1 cm = 10 mm, so 1 mm = 0.1 cm; 1 m = 1000 mm, 1 km = 1,000,000 mm.",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "Money in Decimals",
+                "content": "50 p = ₹0.50, 99 p = ₹0.99, 250 p = ₹2.50."
+              }
+            ]
+          },
+          {
+            "section": "3.3 Operations on Decimals",
+            "full_notes": "Adding and subtracting decimals requires aligning decimal points vertically so identical place values (ones, tenths, hundredths) are operated together. Equivalent decimals (0.2 = 0.20 = 0.200) allow filling trailing zeros for alignment.",
+            "margin_notes": [
+              {
+                "type": "Key Principle",
+                "title": "Alignment",
+                "content": "Always align the decimal points before adding or subtracting."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "Decimal Place Value Table",
+            "headers": [
+              "Decimal",
+              "Tens (10)",
+              "Ones (1)",
+              "Tenths (1/10)",
+              "Hundredths (1/100)",
+              "Thousandths (1/1000)"
+            ],
+            "rows": [
+              [
+                "0.2",
+                "0",
+                "0",
+                "2",
+                "0",
+                "0"
+              ],
+              [
+                "0.20",
+                "0",
+                "0",
+                "2",
+                "0",
+                "0"
+              ],
+              [
+                "15.27",
+                "1",
+                "5",
+                "2",
+                "7",
+                "0"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Rahul",
+            "role": "Student",
+            "speech_text": "Why is 0.2 larger than 0.09 when 9 is bigger than 2?"
+          },
+          {
+            "speaker": "Priya",
+            "role": "Student",
+            "speech_text": "Because 0.2 is 2 tenths (20 hundredths), while 0.09 is only 9 hundredths!"
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "Exactly. Compare place values from left to right starting at tenths."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch3",
+            "title": "Millimeter Scale Magnifier",
+            "concept": "Visualizing sub-unit tenths and hundredths",
+            "interactive_controls": [
+              "Zoom Slider",
+              "Object Measurement Bar"
+            ],
+            "procedure_steps": [
+              "Align eraser start to 0",
+              "Observe whole centimeters",
+              "Count 4 millimeter ticks"
+            ],
+            "expected_outcome": "Eraser length recorded as 2.4 cm (2 cm 4 mm)."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch3",
+            "rule_name": "Decimal Equivalent & Conversion Engine",
+            "formula": "1 mm = 0.1 cm; 1 Paise = ₹0.01",
+            "input_variables": [
+              "mm",
+              "Paise"
+            ],
+            "computed_expression": "Divide mm by 10; divide Paise by 100",
+            "example_demonstration": "Input 45 Paise => ₹0.45; Input 15 mm => 1.5 cm"
+          },
+          {
+            "engine_id": "eng_ch3_decimal_precision",
+            "rule_name": "Decimal Precision & Terminating Criterion Engine",
+            "formula": "a/b terminates iff prime factors of b are in {2, 5}",
+            "input_variables": [
+              "a",
+              "b"
+            ],
+            "computed_expression": "Base 10 factors 2 and 5 dictate finite decimal places; other primes yield repeating decimals",
+            "example_demonstration": "3/8 = 3/(2^3) = 0.375 (terminates); 1/3 = 0.333... (repeating)"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch3_decimals_measurement_grid",
+          "chapter_number": 3,
+          "chapter_title": "A Peek Beyond the Point",
+          "title": "Decimals Sub-Unit Measurement & Equivalent Grid Diagram",
+          "file_name": "ch3_decimals_measurement_grid.png",
+          "local_url": "/assets/images/ch3_decimals_measurement_grid.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Ruler millimeter subdivisions, expanded decimal place value grid, unit conversions, and column alignment.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_3_1",
+              "title": "Millimeter Subdivisions",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "1 cm = 10 mm => 1 mm = 0.1 cm. Sub-unit subdivisions allow measuring exact fractional lengths."
+            },
+            {
+              "hotspot_id": "hs_3_2",
+              "title": "Expanded Decimal Grid",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Place values right of decimal: Tenths (0.1), Hundredths (0.01), Thousandths (0.001)."
+            },
+            {
+              "hotspot_id": "hs_3_3",
+              "title": "Currency & Unit Conversions",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "1 Rupee = 100 Paise => 1 Paise = ₹0.01 (45 p = ₹0.45). 1 km = 1,000,000 mm."
+            },
+            {
+              "hotspot_id": "hs_3_4",
+              "title": "Equivalent Decimals & Alignment",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Trailing zeros do not alter value: 0.2 = 0.20 = 0.200. Always align decimal points vertically."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Expressions using Letter-Numbers",
+        "detailed_sections": [
+          {
+            "section": "4.1 Concept of Letter-Numbers and Formulas",
+            "full_notes": "A letter-number (variable) represents an unspecified number or quantity that can change. Expressions formed with letter-numbers generalize relations. Examples: Shabnam's age = Aftab's age + 3 (s = a + 3). Perimeter of regular shapes: Equilateral Triangle = 3s, Square = 4s, Regular Pentagon = 5s.",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "General Formulas",
+                "content": "Formulas allow concise, universal description of geometric and arithmetic rules."
+              }
+            ]
+          },
+          {
+            "section": "4.2 Simplifying Expressions and Like Terms",
+            "full_notes": "Terms containing the exact same letter-numbers are like terms (e.g., 5y and 2y; -5g and -20g). Like terms can be combined by adding or subtracting their coefficients: 5y + 5y + x + x = 10y + 2x. Unlike terms cannot be combined.",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "Simplification",
+                "content": "Simplify p + p + p + q = 3p + q."
+              }
+            ]
+          },
+          {
+            "section": "4.3 Pattern Rules and Applications",
+            "full_notes": "Algebraic rules describe growing patterns:\n1. Matchstick squares: 1 square = 4 sticks, 2 squares = 7 sticks, w squares = 3w + 1 sticks.\n2. Folded rope cuts: Cutting a rope folded r times yields r + 1 (or 2^r + 1) pieces.\n3. Endless 4-column grid: Number in row r, column c = 4(r - 1) + c.",
+            "margin_notes": [
+              {
+                "type": "Pattern Rule",
+                "title": "Grid Formula",
+                "content": "In a 4-column grid, row r column c value is given by 4r - 4 + c."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "Endless 4-Column Grid Table",
+            "headers": [
+              "Row (r)",
+              "Col 1 [4r-3]",
+              "Col 2 [4r-2]",
+              "Col 3 [4r-1]",
+              "Col 4 [4r]"
+            ],
+            "rows": [
+              [
+                "Row 1",
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              [
+                "Row 2",
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              [
+                "Row 3",
+                "9",
+                "10",
+                "11",
+                "12"
+              ],
+              [
+                "Row 4",
+                "13",
+                "14",
+                "15",
+                "16"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Binu",
+            "role": "Student",
+            "speech_text": "How many matchsticks are needed for 10 connected squares?"
+          },
+          {
+            "speaker": "Arun",
+            "role": "Student",
+            "speech_text": "Use the formula 3w + 1! For w = 10, it is 3(10) + 1 = 31 matchsticks."
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "Letter-numbers turn spatial patterns into universal algebraic formulas."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch4",
+            "title": "Matchstick Square Builder",
+            "concept": "Deriving linear pattern formula 3w + 1",
+            "interactive_controls": [
+              "Add Square Slider",
+              "Count Matchsticks Toggle"
+            ],
+            "procedure_steps": [
+              "Set w = 1 => 4 sticks",
+              "Set w = 2 => 7 sticks",
+              "Set w = 3 => 10 sticks"
+            ],
+            "expected_outcome": "Verifies 3w + 1 rule holds for all positive integers w."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch4",
+            "rule_name": "Endless Matrix Coordinate Engine",
+            "formula": "N = 4(r - 1) + c = 4r - 4 + c",
+            "input_variables": [
+              "r",
+              "c"
+            ],
+            "computed_expression": "Computes cell number N for given row r and column c",
+            "example_demonstration": "Input r=36, c=3 => N = 4(35) + 3 = 143"
+          },
+          {
+            "engine_id": "eng_ch4_k_column_grid",
+            "rule_name": "General k-Column Matrix Coordinate Engine",
+            "formula": "N = k*(r - 1) + c  =>  r = ((N-1)//k) + 1, c = ((N-1)%k) + 1",
+            "input_variables": [
+              "N",
+              "k"
+            ],
+            "computed_expression": "Quotient and remainder modulo k uniquely locate row r and column c",
+            "example_demonstration": "For k=5, N=43: (43-1)//5 + 1 = Row 9; (43-1)%5 + 1 = Column 3"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch4_variables_matchstick_grid",
+          "chapter_number": 4,
+          "chapter_title": "Expressions using Letter-Numbers",
+          "title": "Variables, Matchstick Patterns & Matrix Coordinates Diagram",
+          "file_name": "ch4_variables_matchstick_grid.png",
+          "local_url": "/assets/images/ch4_variables_matchstick_grid.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Polygon perimeters, matchstick square pattern rule 3w+1, 4-column matrix coordinate formula, and like terms.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_4_1",
+              "title": "Polygon Perimeters",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Equilateral Triangle = 3s, Square = 4s, Regular Pentagon = 5s, Regular Hexagon = 6s."
+            },
+            {
+              "hotspot_id": "hs_4_2",
+              "title": "Matchstick Square Rule",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Building w connected squares requires 3w + 1 matchsticks (1st square takes 4, each added takes 3)."
+            },
+            {
+              "hotspot_id": "hs_4_3",
+              "title": "Endless 4-Column Grid Formula",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Number N in row r, col c: N = 4(r - 1) + c = 4r - 4 + c. 143 lies in Row 36, Column 3."
+            },
+            {
+              "hotspot_id": "hs_4_4",
+              "title": "Combining Like Terms",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Like terms share identical variables: 5y + 2y = 7y. Unlike terms (3x + 4y) cannot be merged."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Parallel and Intersecting Lines",
+        "detailed_sections": [
+          {
+            "section": "5.1 Intersecting Lines and Angle Relationships",
+            "full_notes": "Two distinct lines on a plane intersect at at most one point. When two lines intersect, four angles are formed. Key properties:\n1. Vertically Opposite Angles are equal: angle a = angle c and angle b = angle d.\n2. Linear Pairs: Adjacent angles on a straight line add up to 180 degrees (supplementary): angle a + angle b = 180, angle b + angle c = 180.",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "Uniqueness of Intersection",
+                "content": "Two non-coincident straight lines can never intersect at more than one point."
+              }
+            ]
+          },
+          {
+            "section": "5.2 Parallel and Perpendicular Lines",
+            "full_notes": "Parallel lines lie in the same plane and never intersect, no matter how far extended in either direction. The perpendicular distance between parallel lines is constant throughout. Perpendicular lines intersect at right angles (90 degrees).",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "Grid Identification",
+                "content": "Identify parallel line pairs drawn on dot grid paper."
+              }
+            ]
+          },
+          {
+            "section": "5.3 Paper Folding Explorations",
+            "full_notes": "Folding a square paper in half creates a crease parallel to top/bottom edges. Subsequent parallel folds double the number of parallel line segments created. Folding perpendicular to horizontal creases forms a grid of right angles.",
+            "margin_notes": [
+              {
+                "type": "Activity Note",
+                "title": "Crease Patterns",
+                "content": "Horizontal folds produce parallel creases; vertical folds produce perpendicular creases."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "Angle Relationships Summary Table",
+            "headers": [
+              "Type of Pair",
+              "Angle Names",
+              "Mathematical Relationship"
+            ],
+            "rows": [
+              [
+                "Vertically Opposite",
+                "angle a and angle c",
+                "angle a = angle c"
+              ],
+              [
+                "Vertically Opposite",
+                "angle b and angle d",
+                "angle b = angle d"
+              ],
+              [
+                "Linear Pair",
+                "angle a and angle b",
+                "angle a + angle b = 180°"
+              ],
+              [
+                "Linear Pair",
+                "angle b and angle c",
+                "angle b + angle c = 180°"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Architect",
+            "role": "Professional",
+            "speech_text": "If two support beams intersect at 35 degrees, what are the other three angles?"
+          },
+          {
+            "speaker": "Engineer",
+            "role": "Peer",
+            "speech_text": "Linear pair gives 180 - 35 = 145 degrees. Vertically opposite angles give 35 and 145 degrees!"
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "Geometric deduction guarantees exact angle measures without physical protractors."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch5",
+            "title": "Interactive Paper Folding Crease Studio",
+            "concept": "Generating parallel and perpendicular lines via creases",
+            "interactive_controls": [
+              "Horizontal Fold Button",
+              "Vertical Fold Button"
+            ],
+            "procedure_steps": [
+              "Fold sheet in half horizontally",
+              "Fold horizontally again",
+              "Unfold and fold vertically across horizontal creases"
+            ],
+            "expected_outcome": "Horizontal creases remain parallel; vertical crease forms 90 degree right angles."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch5",
+            "rule_name": "Intersecting Line Angle Solver Engine",
+            "formula": "Linear Pair = 180 - angle; Vertically Opposite = angle",
+            "input_variables": [
+              "angle_a"
+            ],
+            "computed_expression": "Computes remaining 3 angles around intersection",
+            "example_demonstration": "Input angle_a = 35° => angle_b = 145°, angle_c = 35°, angle_d = 145°"
+          },
+          {
+            "engine_id": "eng_ch5_transversal",
+            "rule_name": "Transversal Line Angle Theorem Engine",
+            "formula": "Corresponding Angles Equal; Alternate Interior Angles Equal; Interior Consecutive Angles Sum to 180°",
+            "input_variables": [
+              "angle_1",
+              "is_parallel"
+            ],
+            "computed_expression": "Parallel lines intersected by transversal preserve orientation angle equality",
+            "example_demonstration": "If l || m and transversal cuts at 60°, corresponding angle = 60°, consecutive interior = 120°"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch5_geometry_intersecting_parallel",
+          "chapter_number": 5,
+          "chapter_title": "Parallel and Intersecting Lines",
+          "title": "Intersecting Lines, Parallel Lines & Crease Geometry Diagram",
+          "file_name": "ch5_geometry_intersecting_parallel.png",
+          "local_url": "/assets/images/ch5_geometry_intersecting_parallel.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Vertically opposite angles, linear pairs, parallel line constant distance, perpendicular lines, and crease geometry.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_5_1",
+              "title": "Intersecting Lines & Angles",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Vertically opposite angles are equal (∠a = ∠c). Linear pairs sum to 180° (∠a + ∠b = 180°)."
+            },
+            {
+              "hotspot_id": "hs_5_2",
+              "title": "Parallel Lines (l || m)",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Coplanar lines that never meet. Maintain constant perpendicular distance throughout."
+            },
+            {
+              "hotspot_id": "hs_5_3",
+              "title": "Perpendicular Lines (l ⊥ m)",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Lines that intersect at right angles (90°), forming 4 orthogonal quadrants."
+            },
+            {
+              "hotspot_id": "hs_5_4",
+              "title": "Paper Folding Creases",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Successive horizontal folds yield parallel line creases; orthogonal fold creates perpendicular crease."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Number Play",
+        "detailed_sections": [
+          {
+            "section": "6.1 Height Rule Logic Puzzle",
+            "full_notes": "Children stand in line. Each child calls out the count of children standing in front of them who are taller than them. Analyzing height callout sequences (e.g., 0, 0, 1, 0, 3, 0, 3) allows uniquely deducing or constructing relative height arrangements.",
+            "margin_notes": [
+              {
+                "type": "Rule Definition",
+                "title": "Taller-in-Front Rule",
+                "content": "Count how many standing ahead are strictly taller."
+              }
+            ]
+          },
+          {
+            "section": "6.2 Parity of Numbers and Expressions",
+            "full_notes": "Parity refers to whether an integer is Even or Odd.\nRules:\n1. Even + Even = Even; Odd + Odd = Even; Even + Odd = Odd.\n2. Even * Anything = Even; Odd * Odd = Odd.\nRepresentation: Any even number = 2n; Any odd number = 2n - 1 (or 2n + 1).",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "Loose Sheet Parity",
+                "content": "Sum of page numbers on a loose sheet from a book (pages 2k-1 and 2k) is always ODD."
+              }
+            ]
+          },
+          {
+            "section": "6.3 Magic Squares and Cryptarithms",
+            "full_notes": "Magic Square: An n x n grid filled with distinct integers where every row, column, and diagonal has the same sum. For a 3x3 grid using numbers 1-9, magic sum = 15, and central cell must be 5. Cryptarithm: Alphabetic puzzle where letters represent distinct digits.",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "3x3 Magic Square",
+                "content": "Center must be 5; exactly 8 distinct magic squares exist by rotation/reflection."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "3x3 Standard Magic Square Table",
+            "headers": [
+              "Col 1",
+              "Col 2",
+              "Col 3"
+            ],
+            "rows": [
+              [
+                "8",
+                "1",
+                "6"
+              ],
+              [
+                "3",
+                "5",
+                "7"
+              ],
+              [
+                "4",
+                "9",
+                "2"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Liswini",
+            "role": "Student",
+            "speech_text": "Can 50 loose sheets torn from a book sum to 6000?"
+          },
+          {
+            "speaker": "Kavi",
+            "role": "Student",
+            "speech_text": "Each sheet has front 2k-1 and back 2k, summing to 4k-1 (odd). Summing 50 odd numbers yields an even total!"
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "Parity algebra proves properties of sums without knowing individual numbers."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch6",
+            "title": "3x3 Magic Square Solver & Center Cell Prover",
+            "concept": "Center cell constraint x = 5 proof",
+            "interactive_controls": [
+              "Cell Number Drag-and-Drop",
+              "Magic Sum Checker"
+            ],
+            "procedure_steps": [
+              "Place 5 in center cell",
+              "Arrange remaining digits 1-9 in outer cells",
+              "Verify all rows, cols, diagonals sum to 15"
+            ],
+            "expected_outcome": "All 8 valid symmetric magic square arrangements verified."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch6",
+            "rule_name": "Integer Parity Logic Engine",
+            "formula": "Even = 2n; Odd = 2n - 1; Loose Leaf Sum = 4k - 1",
+            "input_variables": [
+              "k"
+            ],
+            "computed_expression": "Evaluates page sum parity for leaf k",
+            "example_demonstration": "Input leaf k=5 => pages 9 & 10 => 9+10 = 19 (Odd)"
+          },
+          {
+            "engine_id": "eng_ch6_magic_constant",
+            "rule_name": "General n x n Magic Constant Engine",
+            "formula": "S = n * (n^2 + 1) / 2; Center = S / n",
+            "input_variables": [
+              "n"
+            ],
+            "computed_expression": "Total sum of 1..n^2 divided by n rows yields invariant line sum S",
+            "example_demonstration": "For n=3: S = 3*(9+1)/2 = 15, Center = 5; For n=5: S = 5*(25+1)/2 = 65, Center = 13"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch6_number_play_magic_square",
+          "chapter_number": 6,
+          "chapter_title": "Number Play",
+          "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
+          "file_name": "ch6_number_play_magic_square.png",
+          "local_url": "/assets/images/ch6_number_play_magic_square.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_6_1",
+              "title": "Height Line Logic",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
+            },
+            {
+              "hotspot_id": "hs_6_2",
+              "title": "Integer Parity Algebra",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
+            },
+            {
+              "hotspot_id": "hs_6_3",
+              "title": "3x3 Magic Square Proof",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
+            },
+            {
+              "hotspot_id": "hs_6_4",
+              "title": "Cryptarithms & Elimination",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "A Tale of Three Intersecting Lines",
+        "detailed_sections": [
+          {
+            "section": "7.1 Triangle Formation and Intersecting Lines",
+            "full_notes": "When three lines intersect pairwise in a plane at three distinct points, they form a triangle. The three points of intersection are vertices, and the line segments connecting them are sides.",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "Direct vs Roundabout Path",
+                "content": "The direct straight path between two points is always shorter than any roundabout path passing through a third point."
+              }
+            ]
+          },
+          {
+            "section": "7.2 Triangle Inequality Theorem",
+            "full_notes": "Triangle Inequality Theorem: A triangle can exist if and only if the sum of the lengths of ANY two sides is strictly GREATER than the length of the third side.\nMathematical conditions for side lengths a, b, c:\n1. a + b > c\n2. b + c > a\n3. c + a > b\nShortcut test: The sum of the two smaller side lengths must be strictly greater than the largest side length.",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "Quick Existence Check",
+                "content": "Can sides be 3 cm, 3 cm, 7 cm? No, because 3 + 3 = 6 < 7."
+              }
+            ]
+          },
+          {
+            "section": "7.3 Classification of Triangles by Sides",
+            "full_notes": "1. Equilateral Triangle: All three sides equal (a = b = c). An equilateral triangle of any positive side length always exists because a + a = 2a > a.\n2. Isosceles Triangle: Two sides equal.\n3. Scalene Triangle: All three sides unequal.",
+            "margin_notes": [
+              {
+                "type": "Key Fact",
+                "title": "Equilateral Always Exists",
+                "content": "For any side length s > 0, s + s = 2s > s is always true."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "Triangle Existence Testing Table",
+            "headers": [
+              "Side Set (a, b, c)",
+              "Smallest Two Sum (a + b)",
+              "Longest Side (c)",
+              "Comparison",
+              "Triangle Exists?"
+            ],
+            "rows": [
+              [
+                "10, 10, 25",
+                "10 + 10 = 20",
+                "25",
+                "20 < 25",
+                "No"
+              ],
+              [
+                "3, 6, 9",
+                "3 + 6 = 9",
+                "9",
+                "9 = 9",
+                "No"
+              ],
+              [
+                "5, 10, 12",
+                "5 + 10 = 15",
+                "12",
+                "15 > 12",
+                "Yes"
+              ],
+              [
+                "24, 26, 28",
+                "24 + 26 = 50",
+                "28",
+                "50 > 28",
+                "Yes"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Surveyor",
+            "role": "Professional",
+            "speech_text": "Road distances are AB = 12 km, BC = 20 km, AC = 40 km. Can towns A, B, C form a triangle?"
+          },
+          {
+            "speaker": "Cartographer",
+            "role": "Peer",
+            "speech_text": "No! AB + BC = 12 + 20 = 32 km < 40 km. It fails the Triangle Inequality Theorem!"
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "The sum of the two smaller sides must strictly exceed the longest side."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch7",
+            "title": "Ruler & Compass Triangle Feasibility Tester",
+            "concept": "Testing Triangle Inequality Theorem a + b > c",
+            "interactive_controls": [
+              "Radius Slider a",
+              "Radius Slider b",
+              "Base Length Slider c"
+            ],
+            "procedure_steps": [
+              "Set base c = 7",
+              "Set radius a = 3, b = 3",
+              "Attempt drawing intersecting arcs"
+            ],
+            "expected_outcome": "Arcs fail to intersect (3+3=6 < 7), visually proving no triangle can exist."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch7",
+            "rule_name": "Triangle Inequality Validation Engine",
+            "formula": "a + b > c AND b + c > a AND c + a > b",
+            "input_variables": [
+              "a",
+              "b",
+              "c"
+            ],
+            "computed_expression": "Boolean check if sum of smallest two sides > longest side",
+            "example_demonstration": "Input 5, 10, 12 => 5+10=15 > 12 => True (Valid Triangle)"
+          },
+          {
+            "engine_id": "eng_ch7_side_diff",
+            "rule_name": "Triangle Side Difference Inequality Engine",
+            "formula": "|a - b| < c < a + b",
+            "input_variables": [
+              "a",
+              "b",
+              "c"
+            ],
+            "computed_expression": "Third side c must lie strictly between difference and sum of other two sides",
+            "example_demonstration": "For sides 6 cm and 10 cm: |10 - 6| < c < 10 + 6  =>  4 cm < c < 16 cm"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch7_triangle_inequality_detour",
+          "chapter_number": 7,
+          "chapter_title": "A Tale of Three Intersecting Lines",
+          "title": "Direct Path vs Detour & Triangle Inequality Diagram",
+          "file_name": "ch7_triangle_inequality_detour.png",
+          "local_url": "/assets/images/ch7_triangle_inequality_detour.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Direct path vs detour geometry, triangle inequality theorem, side classification, and compass arc feasibility.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_7_1",
+              "title": "Direct Path vs Detour",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Direct straight path c is strictly shorter than detour path a + b (c < a + b => a + b > c)."
+            },
+            {
+              "hotspot_id": "hs_7_2",
+              "title": "Triangle Inequality Theorem",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Sum of any 2 sides > 3rd side (a+b>c, b+c>a, c+a>b). Test: Smallest two sum > longest side."
+            },
+            {
+              "hotspot_id": "hs_7_3",
+              "title": "Side-Based Classification",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Equilateral (a=b=c, always valid for s>0), Isosceles (a=b!=c), Scalene (a!=b!=c)."
+            },
+            {
+              "hotspot_id": "hs_7_4",
+              "title": "Compass Arc Construction",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Compass arcs of radii a and b intersect to locate 3rd vertex iff a + b > c. Arcs fail if a + b <= c."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Working with Fractions",
+        "detailed_sections": [
+          {
+            "section": "8.1 Multiplication of Fractions & Brahmagupta's Rule",
+            "full_notes": "Brahmagupta's Formula for Multiplication of Fractions (628 CE):\n(a / b) * (c / d) = (a * c) / (b * d).\nTo multiply fractions, multiply numerators together and denominators together.",
+            "margin_notes": [
+              {
+                "type": "Did You Know?",
+                "title": "Historical Roots",
+                "content": "Indian mathematician Brahmagupta formally stated rules for fraction operations in 628 CE."
+              }
+            ]
+          },
+          {
+            "section": "8.2 Division of Fractions & Reciprocals",
+            "full_notes": "Dividing by a fraction is multiplying by its reciprocal (multiplicative inverse):\n(a / b) / (c / d) = (a / b) * (d / c) = (a * d) / (b * c).\nQuotient Behavior:\n1. Dividing by a fraction between 0 and 1 results in a quotient GREATER than the dividend (e.g., 8 / (1/4) = 32 > 8).\n2. Dividing by a number > 1 results in a quotient LESS than the dividend.",
+            "margin_notes": [
+              {
+                "type": "Key Rule",
+                "title": "Division Effect",
+                "content": "Dividing by a proper fraction enlarges the value!"
+              }
+            ]
+          },
+          {
+            "section": "8.3 Fractional Patterns and Word Problems",
+            "full_notes": "Telescoping product pattern:\n(1 - 1/2) * (1 - 1/3) * (1 - 1/4) * ... * (1 - 1/n) = (1/2) * (2/3) * (3/4) * ... * ((n-1)/n) = 1/n.",
+            "margin_notes": [
+              {
+                "type": "Try These",
+                "title": "Telescoping Cancellation",
+                "content": "Intermediate numerators and denominators cancel out completely."
+              }
+            ]
+          }
+        ],
+        "comparison_tables": [
+          {
+            "title": "Fraction Division Evaluation Table",
+            "headers": [
+              "Expression",
+              "Inverted Operation",
+              "Simplified Result"
+            ],
+            "rows": [
+              [
+                "3 / (7/9)",
+                "3 * (9/7)",
+                "27/7"
+              ],
+              [
+                "(14/4) / 2",
+                "(14/4) * (1/2)",
+                "7/4"
+              ],
+              [
+                "(2/3) / (2/3)",
+                "(2/3) * (3/2)",
+                "1"
+              ],
+              [
+                "(1/2) / 8",
+                "(1/2) * (1/8)",
+                "1/16"
+              ]
+            ]
+          }
+        ],
+        "scripted_dialogues": [
+          {
+            "speaker": "Maria",
+            "role": "Baker",
+            "speech_text": "If I have 8 meters of lace and use 1/4 meter per bag, how many bags can I decorate?"
+          },
+          {
+            "speaker": "Aaron",
+            "role": "Student",
+            "speech_text": "Divide 8 by 1/4: 8 * 4 = 32 bags! Dividing by a fraction smaller than 1 enlarges the result."
+          },
+          {
+            "speaker": "Teacher",
+            "role": "Mentor",
+            "speech_text": "Brahmagupta's ancient reciprocal multiplication rule elegantly solves sharing problems."
+          }
+        ],
+        "stem_lab_drawers": [
+          {
+            "drawer_id": "lab_ch8",
+            "title": "Fraction Area Grid Multiplier",
+            "concept": "Visualizing Brahmagupta's formula on 1x1 unit square",
+            "interactive_controls": [
+              "Horizontal Division Slider (3/4)",
+              "Vertical Division Slider (2/3)"
+            ],
+            "procedure_steps": [
+              "Shade 3/4 horizontally",
+              "Shade 2/3 vertically",
+              "Count overlapping double-shaded grid cells"
+            ],
+            "expected_outcome": "6 out of 12 cells double-shaded => (3/4)*(2/3) = 6/12 = 1/2."
+          }
+        ],
+        "formula_rule_engines": [
+          {
+            "engine_id": "eng_ch8",
+            "rule_name": "Brahmagupta Fraction & Reciprocal Engine",
+            "formula": "(a/b) * (c/d) = (ac)/(bd); (a/b) / (c/d) = (a/b) * (d/c)",
+            "input_variables": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "computed_expression": "Computes simplified product and quotient fractions",
+            "example_demonstration": "Input (3/4) / (1/2) => (3/4) * (2/1) = 6/4 = 3/2"
+          },
+          {
+            "engine_id": "eng_ch8_telescoping_general",
+            "rule_name": "General Telescoping Series Engine",
+            "formula": "PRODUCT_{k=2}^n (1 - 1/k) = 1/n;  PRODUCT_{k=2}^n (1 + 1/k) = (n + 1)/2",
+            "input_variables": [
+              "n",
+              "series_type"
+            ],
+            "computed_expression": "Adjacent numerator and denominator cancellation collapses product series into boundary ratios",
+            "example_demonstration": "(1 + 1/2)(1 + 1/3)...(1 + 1/10) = (3/2)*(4/3)...*(11/10) = 11/2 = 5.5"
+          }
+        ],
+        "image_asset": {
+          "asset_id": "ch8_fractions_area_telescoping",
+          "chapter_number": 8,
+          "chapter_title": "Working with Fractions",
+          "title": "Brahmagupta Area Model & Telescoping Series Diagram",
+          "file_name": "ch8_fractions_area_telescoping.png",
+          "local_url": "/assets/images/ch8_fractions_area_telescoping.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Brahmagupta's fraction multiplication rule, 1x1 area grid model, reciprocal division, and telescoping series cancellation.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_8_1",
+              "title": "Brahmagupta's Rule (628 CE)",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "(a/b) * (c/d) = (a*c)/(b*d). Multiply numerators together and denominators together. Area model overlap."
+            },
+            {
+              "hotspot_id": "hs_8_2",
+              "title": "Reciprocal Division & Scaling",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "(a/b) / (c/d) = (a/b) * (d/c). Dividing by proper fraction (<1) ENLARGES the quotient value."
+            },
+            {
+              "hotspot_id": "hs_8_3",
+              "title": "Real-World Fraction Scaling",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Lace bags: 8 m / (1/4 m) = 32 bags. Tank fill time: 1 / (7/10) = 10/7 hours = 1 3/7 hrs."
+            },
+            {
+              "hotspot_id": "hs_8_4",
+              "title": "Telescoping Series Cancellation",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "(1 - 1/2)(1 - 1/3)...(1 - 1/n) = (1/2)*(2/3)*...*((n-1)/n) = 1/n via cross-cancellation."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

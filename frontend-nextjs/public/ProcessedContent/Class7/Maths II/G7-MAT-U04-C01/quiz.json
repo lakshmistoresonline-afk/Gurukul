@@ -1,178 +1,2157 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Geometric Twins (Congruence of Triangles)",
-  "image_asset": {
-    "asset_id": "img_ch1",
-    "chapter_number": 1,
-    "title": "Triangle Congruence Criteria Diagram",
-    "url": "/assets/images/ch1_triangle_congruence.png",
-    "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
-    "hotspots": [
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_9237e4f8dd4d1656",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
+  },
+  "subject": "Maths II",
+  "artifact": {
+    "artifact_type": "quiz",
+    "source_file_name": "07-Quiz.json",
+    "source_relative_path": "Contents/Class 7/Maths II/Source Files/07-Quiz.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "95af37d4050ed23619bde4e562fe99a362618c4b02be2d7f9fc9df8f11b3b193",
+    "source_semantic_sha256": "4193ed7087456f6be9e9a6409999306c071f31e5c1d1391097a9bcfdcd70d677",
+    "source_byte_length": 56878,
+    "source_encoding": "utf-8",
+    "source_field_count": 860,
+    "field_inventory": [
+      "$.subject",
+      "$.resource_type",
+      "$.quiz_engine_config",
+      "$.quiz_engine_config.timer_seconds",
+      "$.quiz_engine_config.passing_score_percent",
+      "$.quiz_engine_config.hint_modal_enabled",
+      "$.quiz_engine_config.solution_breakdown",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.asset_id",
+      "$.chapters[0].image_asset.chapter_number",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.url",
+      "$.chapters[0].image_asset.caption",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[0].label",
+      "$.chapters[0].image_asset.hotspots[0].popover_text",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].label",
+      "$.chapters[0].image_asset.hotspots[1].popover_text",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].label",
+      "$.chapters[0].image_asset.hotspots[2].popover_text",
+      "$.chapters[0].image_asset.hotspots[3].x_percent",
+      "$.chapters[0].image_asset.hotspots[3].y_percent",
+      "$.chapters[0].image_asset.hotspots[3].w_percent",
+      "$.chapters[0].image_asset.hotspots[3].h_percent",
+      "$.chapters[0].image_asset.hotspots[3].label",
+      "$.chapters[0].image_asset.hotspots[3].popover_text",
+      "$.chapters[0].questions",
+      "$.chapters[0].questions[0].question_id",
+      "$.chapters[0].questions[0].level",
+      "$.chapters[0].questions[0].question_type",
+      "$.chapters[0].questions[0].question_text",
+      "$.chapters[0].questions[0].options",
+      "$.chapters[0].questions[0].correct_answer",
+      "$.chapters[0].questions[0].hint",
+      "$.chapters[0].questions[0].solution_key",
+      "$.chapters[0].questions[0].solution_key.step1_concept",
+      "$.chapters[0].questions[0].solution_key.step2_calculation",
+      "$.chapters[0].questions[0].solution_key.step3_final_answer",
+      "$.chapters[0].questions[0].hotspot_choice",
+      "$.chapters[0].questions[0].hotspot_choice.asset_ref",
+      "$.chapters[0].questions[0].hotspot_choice.target_region",
+      "$.chapters[0].questions[1].question_id",
+      "$.chapters[0].questions[1].level",
+      "$.chapters[0].questions[1].question_type",
+      "$.chapters[0].questions[1].question_text",
+      "$.chapters[0].questions[1].options",
+      "$.chapters[0].questions[1].correct_answer",
+      "$.chapters[0].questions[1].hint",
+      "$.chapters[0].questions[1].solution_key",
+      "$.chapters[0].questions[1].solution_key.step1_concept",
+      "$.chapters[0].questions[1].solution_key.step2_calculation",
+      "$.chapters[0].questions[1].solution_key.step3_final_answer",
+      "$.chapters[0].questions[1].hotspot_choice",
+      "$.chapters[0].questions[1].hotspot_choice.asset_ref",
+      "$.chapters[0].questions[1].hotspot_choice.target_region",
+      "$.chapters[0].questions[2].question_id",
+      "$.chapters[0].questions[2].level",
+      "$.chapters[0].questions[2].question_type",
+      "$.chapters[0].questions[2].question_text",
+      "$.chapters[0].questions[2].options",
+      "$.chapters[0].questions[2].correct_answer",
+      "$.chapters[0].questions[2].hint",
+      "$.chapters[0].questions[2].solution_key",
+      "$.chapters[0].questions[2].solution_key.step1_concept",
+      "$.chapters[0].questions[2].solution_key.step2_calculation",
+      "$.chapters[0].questions[2].solution_key.step3_final_answer",
+      "$.chapters[0].questions[2].hotspot_choice",
+      "$.chapters[0].questions[2].hotspot_choice.asset_ref",
+      "$.chapters[0].questions[2].hotspot_choice.target_region",
+      "$.chapters[0].questions[3].question_id",
+      "$.chapters[0].questions[3].level",
+      "$.chapters[0].questions[3].question_type",
+      "$.chapters[0].questions[3].question_text",
+      "$.chapters[0].questions[3].options",
+      "$.chapters[0].questions[3].correct_answer",
+      "$.chapters[0].questions[3].hint",
+      "$.chapters[0].questions[3].solution_key",
+      "$.chapters[0].questions[3].solution_key.step1_concept",
+      "$.chapters[0].questions[3].solution_key.step2_calculation",
+      "$.chapters[0].questions[3].solution_key.step3_final_answer",
+      "$.chapters[0].questions[3].hotspot_choice",
+      "$.chapters[0].questions[3].hotspot_choice.asset_ref",
+      "$.chapters[0].questions[3].hotspot_choice.target_region",
+      "$.chapters[0].questions[4].question_id",
+      "$.chapters[0].questions[4].level",
+      "$.chapters[0].questions[4].question_type",
+      "$.chapters[0].questions[4].question_text",
+      "$.chapters[0].questions[4].options",
+      "$.chapters[0].questions[4].correct_answer",
+      "$.chapters[0].questions[4].hint",
+      "$.chapters[0].questions[4].solution_key",
+      "$.chapters[0].questions[4].solution_key.step1_concept",
+      "$.chapters[0].questions[4].solution_key.step2_calculation",
+      "$.chapters[0].questions[4].solution_key.step3_final_answer",
+      "$.chapters[0].questions[4].hotspot_choice",
+      "$.chapters[0].questions[4].hotspot_choice.asset_ref",
+      "$.chapters[0].questions[4].hotspot_choice.target_region",
+      "$.chapters[0].questions[5].question_id",
+      "$.chapters[0].questions[5].level",
+      "$.chapters[0].questions[5].question_type",
+      "$.chapters[0].questions[5].question_text",
+      "$.chapters[0].questions[5].options",
+      "$.chapters[0].questions[5].correct_answer",
+      "$.chapters[0].questions[5].hint",
+      "$.chapters[0].questions[5].solution_key",
+      "$.chapters[0].questions[5].solution_key.step1_concept",
+      "$.chapters[0].questions[5].solution_key.step2_calculation",
+      "$.chapters[0].questions[5].solution_key.step3_final_answer",
+      "$.chapters[0].questions[5].hotspot_choice",
+      "$.chapters[0].questions[5].hotspot_choice.asset_ref",
+      "$.chapters[0].questions[5].hotspot_choice.target_region",
+      "$.chapters[0].questions[6].question_id",
+      "$.chapters[0].questions[6].level",
+      "$.chapters[0].questions[6].question_type",
+      "$.chapters[0].questions[6].question_text",
+      "$.chapters[0].questions[6].options",
+      "$.chapters[0].questions[6].correct_answer",
+      "$.chapters[0].questions[6].hint",
+      "$.chapters[0].questions[6].solution_key",
+      "$.chapters[0].questions[6].solution_key.step1_concept",
+      "$.chapters[0].questions[6].solution_key.step2_calculation",
+      "$.chapters[0].questions[6].solution_key.step3_final_answer",
+      "$.chapters[0].questions[6].hotspot_choice",
+      "$.chapters[0].questions[6].hotspot_choice.asset_ref",
+      "$.chapters[0].questions[6].hotspot_choice.target_region",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.asset_id",
+      "$.chapters[1].image_asset.chapter_number",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.url",
+      "$.chapters[1].image_asset.caption",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[0].label",
+      "$.chapters[1].image_asset.hotspots[0].popover_text",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].label",
+      "$.chapters[1].image_asset.hotspots[1].popover_text",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].label",
+      "$.chapters[1].image_asset.hotspots[2].popover_text",
+      "$.chapters[1].questions",
+      "$.chapters[1].questions[0].question_id",
+      "$.chapters[1].questions[0].level",
+      "$.chapters[1].questions[0].question_type",
+      "$.chapters[1].questions[0].question_text",
+      "$.chapters[1].questions[0].options",
+      "$.chapters[1].questions[0].correct_answer",
+      "$.chapters[1].questions[0].hint",
+      "$.chapters[1].questions[0].solution_key",
+      "$.chapters[1].questions[0].solution_key.step1_concept",
+      "$.chapters[1].questions[0].solution_key.step2_calculation",
+      "$.chapters[1].questions[0].solution_key.step3_final_answer",
+      "$.chapters[1].questions[0].hotspot_choice",
+      "$.chapters[1].questions[0].hotspot_choice.asset_ref",
+      "$.chapters[1].questions[0].hotspot_choice.target_region",
+      "$.chapters[1].questions[1].question_id",
+      "$.chapters[1].questions[1].level",
+      "$.chapters[1].questions[1].question_type",
+      "$.chapters[1].questions[1].question_text",
+      "$.chapters[1].questions[1].options",
+      "$.chapters[1].questions[1].correct_answer",
+      "$.chapters[1].questions[1].hint",
+      "$.chapters[1].questions[1].solution_key",
+      "$.chapters[1].questions[1].solution_key.step1_concept",
+      "$.chapters[1].questions[1].solution_key.step2_calculation",
+      "$.chapters[1].questions[1].solution_key.step3_final_answer",
+      "$.chapters[1].questions[1].hotspot_choice",
+      "$.chapters[1].questions[1].hotspot_choice.asset_ref",
+      "$.chapters[1].questions[1].hotspot_choice.target_region",
+      "$.chapters[1].questions[2].question_id",
+      "$.chapters[1].questions[2].level",
+      "$.chapters[1].questions[2].question_type",
+      "$.chapters[1].questions[2].question_text",
+      "$.chapters[1].questions[2].options",
+      "$.chapters[1].questions[2].correct_answer",
+      "$.chapters[1].questions[2].hint",
+      "$.chapters[1].questions[2].solution_key",
+      "$.chapters[1].questions[2].solution_key.step1_concept",
+      "$.chapters[1].questions[2].solution_key.step2_calculation",
+      "$.chapters[1].questions[2].solution_key.step3_final_answer",
+      "$.chapters[1].questions[2].hotspot_choice",
+      "$.chapters[1].questions[2].hotspot_choice.asset_ref",
+      "$.chapters[1].questions[2].hotspot_choice.target_region",
+      "$.chapters[1].questions[3].question_id",
+      "$.chapters[1].questions[3].level",
+      "$.chapters[1].questions[3].question_type",
+      "$.chapters[1].questions[3].question_text",
+      "$.chapters[1].questions[3].options",
+      "$.chapters[1].questions[3].correct_answer",
+      "$.chapters[1].questions[3].hint",
+      "$.chapters[1].questions[3].solution_key",
+      "$.chapters[1].questions[3].solution_key.step1_concept",
+      "$.chapters[1].questions[3].solution_key.step2_calculation",
+      "$.chapters[1].questions[3].solution_key.step3_final_answer",
+      "$.chapters[1].questions[3].hotspot_choice",
+      "$.chapters[1].questions[3].hotspot_choice.asset_ref",
+      "$.chapters[1].questions[3].hotspot_choice.target_region",
+      "$.chapters[1].questions[4].question_id",
+      "$.chapters[1].questions[4].level",
+      "$.chapters[1].questions[4].question_type",
+      "$.chapters[1].questions[4].question_text",
+      "$.chapters[1].questions[4].options",
+      "$.chapters[1].questions[4].correct_answer",
+      "$.chapters[1].questions[4].hint",
+      "$.chapters[1].questions[4].solution_key",
+      "$.chapters[1].questions[4].solution_key.step1_concept",
+      "$.chapters[1].questions[4].solution_key.step2_calculation",
+      "$.chapters[1].questions[4].solution_key.step3_final_answer",
+      "$.chapters[1].questions[4].hotspot_choice",
+      "$.chapters[1].questions[4].hotspot_choice.asset_ref",
+      "$.chapters[1].questions[4].hotspot_choice.target_region",
+      "$.chapters[1].questions[5].question_id",
+      "$.chapters[1].questions[5].level",
+      "$.chapters[1].questions[5].question_type",
+      "$.chapters[1].questions[5].question_text",
+      "$.chapters[1].questions[5].options",
+      "$.chapters[1].questions[5].correct_answer",
+      "$.chapters[1].questions[5].hint",
+      "$.chapters[1].questions[5].solution_key",
+      "$.chapters[1].questions[5].solution_key.step1_concept",
+      "$.chapters[1].questions[5].solution_key.step2_calculation",
+      "$.chapters[1].questions[5].solution_key.step3_final_answer",
+      "$.chapters[1].questions[5].hotspot_choice",
+      "$.chapters[1].questions[5].hotspot_choice.asset_ref",
+      "$.chapters[1].questions[5].hotspot_choice.target_region",
+      "$.chapters[1].questions[6].question_id",
+      "$.chapters[1].questions[6].level",
+      "$.chapters[1].questions[6].question_type",
+      "$.chapters[1].questions[6].question_text",
+      "$.chapters[1].questions[6].options",
+      "$.chapters[1].questions[6].correct_answer",
+      "$.chapters[1].questions[6].hint",
+      "$.chapters[1].questions[6].solution_key",
+      "$.chapters[1].questions[6].solution_key.step1_concept",
+      "$.chapters[1].questions[6].solution_key.step2_calculation",
+      "$.chapters[1].questions[6].solution_key.step3_final_answer",
+      "$.chapters[1].questions[6].hotspot_choice",
+      "$.chapters[1].questions[6].hotspot_choice.asset_ref",
+      "$.chapters[1].questions[6].hotspot_choice.target_region",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.asset_id",
+      "$.chapters[2].image_asset.chapter_number",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.url",
+      "$.chapters[2].image_asset.caption",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].image_asset.hotspots[0].label",
+      "$.chapters[2].image_asset.hotspots[0].popover_text",
+      "$.chapters[2].questions",
+      "$.chapters[2].questions[0].question_id",
+      "$.chapters[2].questions[0].level",
+      "$.chapters[2].questions[0].question_type",
+      "$.chapters[2].questions[0].question_text",
+      "$.chapters[2].questions[0].options",
+      "$.chapters[2].questions[0].correct_answer",
+      "$.chapters[2].questions[0].hint",
+      "$.chapters[2].questions[0].solution_key",
+      "$.chapters[2].questions[0].solution_key.step1_concept",
+      "$.chapters[2].questions[0].solution_key.step2_calculation",
+      "$.chapters[2].questions[0].solution_key.step3_final_answer",
+      "$.chapters[2].questions[0].hotspot_choice",
+      "$.chapters[2].questions[0].hotspot_choice.asset_ref",
+      "$.chapters[2].questions[0].hotspot_choice.target_region",
+      "$.chapters[2].questions[1].question_id",
+      "$.chapters[2].questions[1].level",
+      "$.chapters[2].questions[1].question_type",
+      "$.chapters[2].questions[1].question_text",
+      "$.chapters[2].questions[1].options",
+      "$.chapters[2].questions[1].correct_answer",
+      "$.chapters[2].questions[1].hint",
+      "$.chapters[2].questions[1].solution_key",
+      "$.chapters[2].questions[1].solution_key.step1_concept",
+      "$.chapters[2].questions[1].solution_key.step2_calculation",
+      "$.chapters[2].questions[1].solution_key.step3_final_answer",
+      "$.chapters[2].questions[1].hotspot_choice",
+      "$.chapters[2].questions[1].hotspot_choice.asset_ref",
+      "$.chapters[2].questions[1].hotspot_choice.target_region",
+      "$.chapters[2].questions[2].question_id",
+      "$.chapters[2].questions[2].level",
+      "$.chapters[2].questions[2].question_type",
+      "$.chapters[2].questions[2].question_text",
+      "$.chapters[2].questions[2].options",
+      "$.chapters[2].questions[2].correct_answer",
+      "$.chapters[2].questions[2].hint",
+      "$.chapters[2].questions[2].solution_key",
+      "$.chapters[2].questions[2].solution_key.step1_concept",
+      "$.chapters[2].questions[2].solution_key.step2_calculation",
+      "$.chapters[2].questions[2].solution_key.step3_final_answer",
+      "$.chapters[2].questions[2].hotspot_choice",
+      "$.chapters[2].questions[2].hotspot_choice.asset_ref",
+      "$.chapters[2].questions[2].hotspot_choice.target_region",
+      "$.chapters[2].questions[3].question_id",
+      "$.chapters[2].questions[3].level",
+      "$.chapters[2].questions[3].question_type",
+      "$.chapters[2].questions[3].question_text",
+      "$.chapters[2].questions[3].options",
+      "$.chapters[2].questions[3].correct_answer",
+      "$.chapters[2].questions[3].hint",
+      "$.chapters[2].questions[3].solution_key",
+      "$.chapters[2].questions[3].solution_key.step1_concept",
+      "$.chapters[2].questions[3].solution_key.step2_calculation",
+      "$.chapters[2].questions[3].solution_key.step3_final_answer",
+      "$.chapters[2].questions[3].hotspot_choice",
+      "$.chapters[2].questions[3].hotspot_choice.asset_ref",
+      "$.chapters[2].questions[3].hotspot_choice.target_region",
+      "$.chapters[2].questions[4].question_id",
+      "$.chapters[2].questions[4].level",
+      "$.chapters[2].questions[4].question_type",
+      "$.chapters[2].questions[4].question_text",
+      "$.chapters[2].questions[4].options",
+      "$.chapters[2].questions[4].correct_answer",
+      "$.chapters[2].questions[4].hint",
+      "$.chapters[2].questions[4].solution_key",
+      "$.chapters[2].questions[4].solution_key.step1_concept",
+      "$.chapters[2].questions[4].solution_key.step2_calculation",
+      "$.chapters[2].questions[4].solution_key.step3_final_answer",
+      "$.chapters[2].questions[4].hotspot_choice",
+      "$.chapters[2].questions[4].hotspot_choice.asset_ref",
+      "$.chapters[2].questions[4].hotspot_choice.target_region",
+      "$.chapters[2].questions[5].question_id",
+      "$.chapters[2].questions[5].level",
+      "$.chapters[2].questions[5].question_type",
+      "$.chapters[2].questions[5].question_text",
+      "$.chapters[2].questions[5].options",
+      "$.chapters[2].questions[5].correct_answer",
+      "$.chapters[2].questions[5].hint",
+      "$.chapters[2].questions[5].solution_key",
+      "$.chapters[2].questions[5].solution_key.step1_concept",
+      "$.chapters[2].questions[5].solution_key.step2_calculation",
+      "$.chapters[2].questions[5].solution_key.step3_final_answer",
+      "$.chapters[2].questions[5].hotspot_choice",
+      "$.chapters[2].questions[5].hotspot_choice.asset_ref",
+      "$.chapters[2].questions[5].hotspot_choice.target_region",
+      "$.chapters[2].questions[6].question_id",
+      "$.chapters[2].questions[6].level",
+      "$.chapters[2].questions[6].question_type",
+      "$.chapters[2].questions[6].question_text",
+      "$.chapters[2].questions[6].options",
+      "$.chapters[2].questions[6].correct_answer",
+      "$.chapters[2].questions[6].hint",
+      "$.chapters[2].questions[6].solution_key",
+      "$.chapters[2].questions[6].solution_key.step1_concept",
+      "$.chapters[2].questions[6].solution_key.step2_calculation",
+      "$.chapters[2].questions[6].solution_key.step3_final_answer",
+      "$.chapters[2].questions[6].hotspot_choice",
+      "$.chapters[2].questions[6].hotspot_choice.asset_ref",
+      "$.chapters[2].questions[6].hotspot_choice.target_region",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.asset_id",
+      "$.chapters[3].image_asset.chapter_number",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.url",
+      "$.chapters[3].image_asset.caption",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].image_asset.hotspots[0].label",
+      "$.chapters[3].image_asset.hotspots[0].popover_text",
+      "$.chapters[3].image_asset.hotspots[1].x_percent",
+      "$.chapters[3].image_asset.hotspots[1].y_percent",
+      "$.chapters[3].image_asset.hotspots[1].w_percent",
+      "$.chapters[3].image_asset.hotspots[1].h_percent",
+      "$.chapters[3].image_asset.hotspots[1].label",
+      "$.chapters[3].image_asset.hotspots[1].popover_text",
+      "$.chapters[3].image_asset.hotspots[2].x_percent",
+      "$.chapters[3].image_asset.hotspots[2].y_percent",
+      "$.chapters[3].image_asset.hotspots[2].w_percent",
+      "$.chapters[3].image_asset.hotspots[2].h_percent",
+      "$.chapters[3].image_asset.hotspots[2].label",
+      "$.chapters[3].image_asset.hotspots[2].popover_text",
+      "$.chapters[3].questions",
+      "$.chapters[3].questions[0].question_id",
+      "$.chapters[3].questions[0].level",
+      "$.chapters[3].questions[0].question_type",
+      "$.chapters[3].questions[0].question_text",
+      "$.chapters[3].questions[0].options",
+      "$.chapters[3].questions[0].correct_answer",
+      "$.chapters[3].questions[0].hint",
+      "$.chapters[3].questions[0].solution_key",
+      "$.chapters[3].questions[0].solution_key.step1_concept",
+      "$.chapters[3].questions[0].solution_key.step2_calculation",
+      "$.chapters[3].questions[0].solution_key.step3_final_answer",
+      "$.chapters[3].questions[0].hotspot_choice",
+      "$.chapters[3].questions[0].hotspot_choice.asset_ref",
+      "$.chapters[3].questions[0].hotspot_choice.target_region",
+      "$.chapters[3].questions[1].question_id",
+      "$.chapters[3].questions[1].level",
+      "$.chapters[3].questions[1].question_type",
+      "$.chapters[3].questions[1].question_text",
+      "$.chapters[3].questions[1].options",
+      "$.chapters[3].questions[1].correct_answer",
+      "$.chapters[3].questions[1].hint",
+      "$.chapters[3].questions[1].solution_key",
+      "$.chapters[3].questions[1].solution_key.step1_concept",
+      "$.chapters[3].questions[1].solution_key.step2_calculation",
+      "$.chapters[3].questions[1].solution_key.step3_final_answer",
+      "$.chapters[3].questions[1].hotspot_choice",
+      "$.chapters[3].questions[1].hotspot_choice.asset_ref",
+      "$.chapters[3].questions[1].hotspot_choice.target_region",
+      "$.chapters[3].questions[2].question_id",
+      "$.chapters[3].questions[2].level",
+      "$.chapters[3].questions[2].question_type",
+      "$.chapters[3].questions[2].question_text",
+      "$.chapters[3].questions[2].options",
+      "$.chapters[3].questions[2].correct_answer",
+      "$.chapters[3].questions[2].hint",
+      "$.chapters[3].questions[2].solution_key",
+      "$.chapters[3].questions[2].solution_key.step1_concept",
+      "$.chapters[3].questions[2].solution_key.step2_calculation",
+      "$.chapters[3].questions[2].solution_key.step3_final_answer",
+      "$.chapters[3].questions[2].hotspot_choice",
+      "$.chapters[3].questions[2].hotspot_choice.asset_ref",
+      "$.chapters[3].questions[2].hotspot_choice.target_region",
+      "$.chapters[3].questions[3].question_id",
+      "$.chapters[3].questions[3].level",
+      "$.chapters[3].questions[3].question_type",
+      "$.chapters[3].questions[3].question_text",
+      "$.chapters[3].questions[3].options",
+      "$.chapters[3].questions[3].correct_answer",
+      "$.chapters[3].questions[3].hint",
+      "$.chapters[3].questions[3].solution_key",
+      "$.chapters[3].questions[3].solution_key.step1_concept",
+      "$.chapters[3].questions[3].solution_key.step2_calculation",
+      "$.chapters[3].questions[3].solution_key.step3_final_answer",
+      "$.chapters[3].questions[3].hotspot_choice",
+      "$.chapters[3].questions[3].hotspot_choice.asset_ref",
+      "$.chapters[3].questions[3].hotspot_choice.target_region",
+      "$.chapters[3].questions[4].question_id",
+      "$.chapters[3].questions[4].level",
+      "$.chapters[3].questions[4].question_type",
+      "$.chapters[3].questions[4].question_text",
+      "$.chapters[3].questions[4].options",
+      "$.chapters[3].questions[4].correct_answer",
+      "$.chapters[3].questions[4].hint",
+      "$.chapters[3].questions[4].solution_key",
+      "$.chapters[3].questions[4].solution_key.step1_concept",
+      "$.chapters[3].questions[4].solution_key.step2_calculation",
+      "$.chapters[3].questions[4].solution_key.step3_final_answer",
+      "$.chapters[3].questions[4].hotspot_choice",
+      "$.chapters[3].questions[4].hotspot_choice.asset_ref",
+      "$.chapters[3].questions[4].hotspot_choice.target_region",
+      "$.chapters[3].questions[5].question_id",
+      "$.chapters[3].questions[5].level",
+      "$.chapters[3].questions[5].question_type",
+      "$.chapters[3].questions[5].question_text",
+      "$.chapters[3].questions[5].options",
+      "$.chapters[3].questions[5].correct_answer",
+      "$.chapters[3].questions[5].hint",
+      "$.chapters[3].questions[5].solution_key",
+      "$.chapters[3].questions[5].solution_key.step1_concept",
+      "$.chapters[3].questions[5].solution_key.step2_calculation",
+      "$.chapters[3].questions[5].solution_key.step3_final_answer",
+      "$.chapters[3].questions[5].hotspot_choice",
+      "$.chapters[3].questions[5].hotspot_choice.asset_ref",
+      "$.chapters[3].questions[5].hotspot_choice.target_region",
+      "$.chapters[3].questions[6].question_id",
+      "$.chapters[3].questions[6].level",
+      "$.chapters[3].questions[6].question_type",
+      "$.chapters[3].questions[6].question_text",
+      "$.chapters[3].questions[6].options",
+      "$.chapters[3].questions[6].correct_answer",
+      "$.chapters[3].questions[6].hint",
+      "$.chapters[3].questions[6].solution_key",
+      "$.chapters[3].questions[6].solution_key.step1_concept",
+      "$.chapters[3].questions[6].solution_key.step2_calculation",
+      "$.chapters[3].questions[6].solution_key.step3_final_answer",
+      "$.chapters[3].questions[6].hotspot_choice",
+      "$.chapters[3].questions[6].hotspot_choice.asset_ref",
+      "$.chapters[3].questions[6].hotspot_choice.target_region",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.asset_id",
+      "$.chapters[4].image_asset.chapter_number",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.url",
+      "$.chapters[4].image_asset.caption",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[0].label",
+      "$.chapters[4].image_asset.hotspots[0].popover_text",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].label",
+      "$.chapters[4].image_asset.hotspots[1].popover_text",
+      "$.chapters[4].questions",
+      "$.chapters[4].questions[0].question_id",
+      "$.chapters[4].questions[0].level",
+      "$.chapters[4].questions[0].question_type",
+      "$.chapters[4].questions[0].question_text",
+      "$.chapters[4].questions[0].options",
+      "$.chapters[4].questions[0].correct_answer",
+      "$.chapters[4].questions[0].hint",
+      "$.chapters[4].questions[0].solution_key",
+      "$.chapters[4].questions[0].solution_key.step1_concept",
+      "$.chapters[4].questions[0].solution_key.step2_calculation",
+      "$.chapters[4].questions[0].solution_key.step3_final_answer",
+      "$.chapters[4].questions[0].hotspot_choice",
+      "$.chapters[4].questions[0].hotspot_choice.asset_ref",
+      "$.chapters[4].questions[0].hotspot_choice.target_region",
+      "$.chapters[4].questions[1].question_id",
+      "$.chapters[4].questions[1].level",
+      "$.chapters[4].questions[1].question_type",
+      "$.chapters[4].questions[1].question_text",
+      "$.chapters[4].questions[1].options",
+      "$.chapters[4].questions[1].correct_answer",
+      "$.chapters[4].questions[1].hint",
+      "$.chapters[4].questions[1].solution_key",
+      "$.chapters[4].questions[1].solution_key.step1_concept",
+      "$.chapters[4].questions[1].solution_key.step2_calculation",
+      "$.chapters[4].questions[1].solution_key.step3_final_answer",
+      "$.chapters[4].questions[1].hotspot_choice",
+      "$.chapters[4].questions[1].hotspot_choice.asset_ref",
+      "$.chapters[4].questions[1].hotspot_choice.target_region",
+      "$.chapters[4].questions[2].question_id",
+      "$.chapters[4].questions[2].level",
+      "$.chapters[4].questions[2].question_type",
+      "$.chapters[4].questions[2].question_text",
+      "$.chapters[4].questions[2].options",
+      "$.chapters[4].questions[2].correct_answer",
+      "$.chapters[4].questions[2].hint",
+      "$.chapters[4].questions[2].solution_key",
+      "$.chapters[4].questions[2].solution_key.step1_concept",
+      "$.chapters[4].questions[2].solution_key.step2_calculation",
+      "$.chapters[4].questions[2].solution_key.step3_final_answer",
+      "$.chapters[4].questions[2].hotspot_choice",
+      "$.chapters[4].questions[2].hotspot_choice.asset_ref",
+      "$.chapters[4].questions[2].hotspot_choice.target_region",
+      "$.chapters[4].questions[3].question_id",
+      "$.chapters[4].questions[3].level",
+      "$.chapters[4].questions[3].question_type",
+      "$.chapters[4].questions[3].question_text",
+      "$.chapters[4].questions[3].options",
+      "$.chapters[4].questions[3].correct_answer",
+      "$.chapters[4].questions[3].hint",
+      "$.chapters[4].questions[3].solution_key",
+      "$.chapters[4].questions[3].solution_key.step1_concept",
+      "$.chapters[4].questions[3].solution_key.step2_calculation",
+      "$.chapters[4].questions[3].solution_key.step3_final_answer",
+      "$.chapters[4].questions[3].hotspot_choice",
+      "$.chapters[4].questions[3].hotspot_choice.asset_ref",
+      "$.chapters[4].questions[3].hotspot_choice.target_region",
+      "$.chapters[4].questions[4].question_id",
+      "$.chapters[4].questions[4].level",
+      "$.chapters[4].questions[4].question_type",
+      "$.chapters[4].questions[4].question_text",
+      "$.chapters[4].questions[4].options",
+      "$.chapters[4].questions[4].correct_answer",
+      "$.chapters[4].questions[4].hint",
+      "$.chapters[4].questions[4].solution_key",
+      "$.chapters[4].questions[4].solution_key.step1_concept",
+      "$.chapters[4].questions[4].solution_key.step2_calculation",
+      "$.chapters[4].questions[4].solution_key.step3_final_answer",
+      "$.chapters[4].questions[4].hotspot_choice",
+      "$.chapters[4].questions[4].hotspot_choice.asset_ref",
+      "$.chapters[4].questions[4].hotspot_choice.target_region",
+      "$.chapters[4].questions[5].question_id",
+      "$.chapters[4].questions[5].level",
+      "$.chapters[4].questions[5].question_type",
+      "$.chapters[4].questions[5].question_text",
+      "$.chapters[4].questions[5].options",
+      "$.chapters[4].questions[5].correct_answer",
+      "$.chapters[4].questions[5].hint",
+      "$.chapters[4].questions[5].solution_key",
+      "$.chapters[4].questions[5].solution_key.step1_concept",
+      "$.chapters[4].questions[5].solution_key.step2_calculation",
+      "$.chapters[4].questions[5].solution_key.step3_final_answer",
+      "$.chapters[4].questions[5].hotspot_choice",
+      "$.chapters[4].questions[5].hotspot_choice.asset_ref",
+      "$.chapters[4].questions[5].hotspot_choice.target_region",
+      "$.chapters[4].questions[6].question_id",
+      "$.chapters[4].questions[6].level",
+      "$.chapters[4].questions[6].question_type",
+      "$.chapters[4].questions[6].question_text",
+      "$.chapters[4].questions[6].options",
+      "$.chapters[4].questions[6].correct_answer",
+      "$.chapters[4].questions[6].hint",
+      "$.chapters[4].questions[6].solution_key",
+      "$.chapters[4].questions[6].solution_key.step1_concept",
+      "$.chapters[4].questions[6].solution_key.step2_calculation",
+      "$.chapters[4].questions[6].solution_key.step3_final_answer",
+      "$.chapters[4].questions[6].hotspot_choice",
+      "$.chapters[4].questions[6].hotspot_choice.asset_ref",
+      "$.chapters[4].questions[6].hotspot_choice.target_region",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.asset_id",
+      "$.chapters[5].image_asset.chapter_number",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.url",
+      "$.chapters[5].image_asset.caption",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[0].label",
+      "$.chapters[5].image_asset.hotspots[0].popover_text",
+      "$.chapters[5].questions",
+      "$.chapters[5].questions[0].question_id",
+      "$.chapters[5].questions[0].level",
+      "$.chapters[5].questions[0].question_type",
+      "$.chapters[5].questions[0].question_text",
+      "$.chapters[5].questions[0].options",
+      "$.chapters[5].questions[0].correct_answer",
+      "$.chapters[5].questions[0].hint",
+      "$.chapters[5].questions[0].solution_key",
+      "$.chapters[5].questions[0].solution_key.step1_concept",
+      "$.chapters[5].questions[0].solution_key.step2_calculation",
+      "$.chapters[5].questions[0].solution_key.step3_final_answer",
+      "$.chapters[5].questions[0].hotspot_choice",
+      "$.chapters[5].questions[0].hotspot_choice.asset_ref",
+      "$.chapters[5].questions[0].hotspot_choice.target_region",
+      "$.chapters[5].questions[1].question_id",
+      "$.chapters[5].questions[1].level",
+      "$.chapters[5].questions[1].question_type",
+      "$.chapters[5].questions[1].question_text",
+      "$.chapters[5].questions[1].options",
+      "$.chapters[5].questions[1].correct_answer",
+      "$.chapters[5].questions[1].hint",
+      "$.chapters[5].questions[1].solution_key",
+      "$.chapters[5].questions[1].solution_key.step1_concept",
+      "$.chapters[5].questions[1].solution_key.step2_calculation",
+      "$.chapters[5].questions[1].solution_key.step3_final_answer",
+      "$.chapters[5].questions[1].hotspot_choice",
+      "$.chapters[5].questions[1].hotspot_choice.asset_ref",
+      "$.chapters[5].questions[1].hotspot_choice.target_region",
+      "$.chapters[5].questions[2].question_id",
+      "$.chapters[5].questions[2].level",
+      "$.chapters[5].questions[2].question_type",
+      "$.chapters[5].questions[2].question_text",
+      "$.chapters[5].questions[2].options",
+      "$.chapters[5].questions[2].correct_answer",
+      "$.chapters[5].questions[2].hint",
+      "$.chapters[5].questions[2].solution_key",
+      "$.chapters[5].questions[2].solution_key.step1_concept",
+      "$.chapters[5].questions[2].solution_key.step2_calculation",
+      "$.chapters[5].questions[2].solution_key.step3_final_answer",
+      "$.chapters[5].questions[2].hotspot_choice",
+      "$.chapters[5].questions[2].hotspot_choice.asset_ref",
+      "$.chapters[5].questions[2].hotspot_choice.target_region",
+      "$.chapters[5].questions[3].question_id",
+      "$.chapters[5].questions[3].level",
+      "$.chapters[5].questions[3].question_type",
+      "$.chapters[5].questions[3].question_text",
+      "$.chapters[5].questions[3].options",
+      "$.chapters[5].questions[3].correct_answer",
+      "$.chapters[5].questions[3].hint",
+      "$.chapters[5].questions[3].solution_key",
+      "$.chapters[5].questions[3].solution_key.step1_concept",
+      "$.chapters[5].questions[3].solution_key.step2_calculation",
+      "$.chapters[5].questions[3].solution_key.step3_final_answer",
+      "$.chapters[5].questions[3].hotspot_choice",
+      "$.chapters[5].questions[3].hotspot_choice.asset_ref",
+      "$.chapters[5].questions[3].hotspot_choice.target_region",
+      "$.chapters[5].questions[4].question_id",
+      "$.chapters[5].questions[4].level",
+      "$.chapters[5].questions[4].question_type",
+      "$.chapters[5].questions[4].question_text",
+      "$.chapters[5].questions[4].options",
+      "$.chapters[5].questions[4].correct_answer",
+      "$.chapters[5].questions[4].hint",
+      "$.chapters[5].questions[4].solution_key",
+      "$.chapters[5].questions[4].solution_key.step1_concept",
+      "$.chapters[5].questions[4].solution_key.step2_calculation",
+      "$.chapters[5].questions[4].solution_key.step3_final_answer",
+      "$.chapters[5].questions[4].hotspot_choice",
+      "$.chapters[5].questions[4].hotspot_choice.asset_ref",
+      "$.chapters[5].questions[4].hotspot_choice.target_region",
+      "$.chapters[5].questions[5].question_id",
+      "$.chapters[5].questions[5].level",
+      "$.chapters[5].questions[5].question_type",
+      "$.chapters[5].questions[5].question_text",
+      "$.chapters[5].questions[5].options",
+      "$.chapters[5].questions[5].correct_answer",
+      "$.chapters[5].questions[5].hint",
+      "$.chapters[5].questions[5].solution_key",
+      "$.chapters[5].questions[5].solution_key.step1_concept",
+      "$.chapters[5].questions[5].solution_key.step2_calculation",
+      "$.chapters[5].questions[5].solution_key.step3_final_answer",
+      "$.chapters[5].questions[5].hotspot_choice",
+      "$.chapters[5].questions[5].hotspot_choice.asset_ref",
+      "$.chapters[5].questions[5].hotspot_choice.target_region",
+      "$.chapters[5].questions[6].question_id",
+      "$.chapters[5].questions[6].level",
+      "$.chapters[5].questions[6].question_type",
+      "$.chapters[5].questions[6].question_text",
+      "$.chapters[5].questions[6].options",
+      "$.chapters[5].questions[6].correct_answer",
+      "$.chapters[5].questions[6].hint",
+      "$.chapters[5].questions[6].solution_key",
+      "$.chapters[5].questions[6].solution_key.step1_concept",
+      "$.chapters[5].questions[6].solution_key.step2_calculation",
+      "$.chapters[5].questions[6].solution_key.step3_final_answer",
+      "$.chapters[5].questions[6].hotspot_choice",
+      "$.chapters[5].questions[6].hotspot_choice.asset_ref",
+      "$.chapters[5].questions[6].hotspot_choice.target_region",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.asset_id",
+      "$.chapters[6].image_asset.chapter_number",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.url",
+      "$.chapters[6].image_asset.caption",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[0].label",
+      "$.chapters[6].image_asset.hotspots[0].popover_text",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].label",
+      "$.chapters[6].image_asset.hotspots[1].popover_text",
+      "$.chapters[6].questions",
+      "$.chapters[6].questions[0].question_id",
+      "$.chapters[6].questions[0].level",
+      "$.chapters[6].questions[0].question_type",
+      "$.chapters[6].questions[0].question_text",
+      "$.chapters[6].questions[0].options",
+      "$.chapters[6].questions[0].correct_answer",
+      "$.chapters[6].questions[0].hint",
+      "$.chapters[6].questions[0].solution_key",
+      "$.chapters[6].questions[0].solution_key.step1_concept",
+      "$.chapters[6].questions[0].solution_key.step2_calculation",
+      "$.chapters[6].questions[0].solution_key.step3_final_answer",
+      "$.chapters[6].questions[0].hotspot_choice",
+      "$.chapters[6].questions[0].hotspot_choice.asset_ref",
+      "$.chapters[6].questions[0].hotspot_choice.target_region",
+      "$.chapters[6].questions[1].question_id",
+      "$.chapters[6].questions[1].level",
+      "$.chapters[6].questions[1].question_type",
+      "$.chapters[6].questions[1].question_text",
+      "$.chapters[6].questions[1].options",
+      "$.chapters[6].questions[1].correct_answer",
+      "$.chapters[6].questions[1].hint",
+      "$.chapters[6].questions[1].solution_key",
+      "$.chapters[6].questions[1].solution_key.step1_concept",
+      "$.chapters[6].questions[1].solution_key.step2_calculation",
+      "$.chapters[6].questions[1].solution_key.step3_final_answer",
+      "$.chapters[6].questions[1].hotspot_choice",
+      "$.chapters[6].questions[1].hotspot_choice.asset_ref",
+      "$.chapters[6].questions[1].hotspot_choice.target_region",
+      "$.chapters[6].questions[2].question_id",
+      "$.chapters[6].questions[2].level",
+      "$.chapters[6].questions[2].question_type",
+      "$.chapters[6].questions[2].question_text",
+      "$.chapters[6].questions[2].options",
+      "$.chapters[6].questions[2].correct_answer",
+      "$.chapters[6].questions[2].hint",
+      "$.chapters[6].questions[2].solution_key",
+      "$.chapters[6].questions[2].solution_key.step1_concept",
+      "$.chapters[6].questions[2].solution_key.step2_calculation",
+      "$.chapters[6].questions[2].solution_key.step3_final_answer",
+      "$.chapters[6].questions[2].hotspot_choice",
+      "$.chapters[6].questions[2].hotspot_choice.asset_ref",
+      "$.chapters[6].questions[2].hotspot_choice.target_region",
+      "$.chapters[6].questions[3].question_id",
+      "$.chapters[6].questions[3].level",
+      "$.chapters[6].questions[3].question_type",
+      "$.chapters[6].questions[3].question_text",
+      "$.chapters[6].questions[3].options",
+      "$.chapters[6].questions[3].correct_answer",
+      "$.chapters[6].questions[3].hint",
+      "$.chapters[6].questions[3].solution_key",
+      "$.chapters[6].questions[3].solution_key.step1_concept",
+      "$.chapters[6].questions[3].solution_key.step2_calculation",
+      "$.chapters[6].questions[3].solution_key.step3_final_answer",
+      "$.chapters[6].questions[3].hotspot_choice",
+      "$.chapters[6].questions[3].hotspot_choice.asset_ref",
+      "$.chapters[6].questions[3].hotspot_choice.target_region",
+      "$.chapters[6].questions[4].question_id",
+      "$.chapters[6].questions[4].level",
+      "$.chapters[6].questions[4].question_type",
+      "$.chapters[6].questions[4].question_text",
+      "$.chapters[6].questions[4].options",
+      "$.chapters[6].questions[4].correct_answer",
+      "$.chapters[6].questions[4].hint",
+      "$.chapters[6].questions[4].solution_key",
+      "$.chapters[6].questions[4].solution_key.step1_concept",
+      "$.chapters[6].questions[4].solution_key.step2_calculation",
+      "$.chapters[6].questions[4].solution_key.step3_final_answer",
+      "$.chapters[6].questions[4].hotspot_choice",
+      "$.chapters[6].questions[4].hotspot_choice.asset_ref",
+      "$.chapters[6].questions[4].hotspot_choice.target_region",
+      "$.chapters[6].questions[5].question_id",
+      "$.chapters[6].questions[5].level",
+      "$.chapters[6].questions[5].question_type",
+      "$.chapters[6].questions[5].question_text",
+      "$.chapters[6].questions[5].options",
+      "$.chapters[6].questions[5].correct_answer",
+      "$.chapters[6].questions[5].hint",
+      "$.chapters[6].questions[5].solution_key",
+      "$.chapters[6].questions[5].solution_key.step1_concept",
+      "$.chapters[6].questions[5].solution_key.step2_calculation",
+      "$.chapters[6].questions[5].solution_key.step3_final_answer",
+      "$.chapters[6].questions[5].hotspot_choice",
+      "$.chapters[6].questions[5].hotspot_choice.asset_ref",
+      "$.chapters[6].questions[5].hotspot_choice.target_region",
+      "$.chapters[6].questions[6].question_id",
+      "$.chapters[6].questions[6].level",
+      "$.chapters[6].questions[6].question_type",
+      "$.chapters[6].questions[6].question_text",
+      "$.chapters[6].questions[6].options",
+      "$.chapters[6].questions[6].correct_answer",
+      "$.chapters[6].questions[6].hint",
+      "$.chapters[6].questions[6].solution_key",
+      "$.chapters[6].questions[6].solution_key.step1_concept",
+      "$.chapters[6].questions[6].solution_key.step2_calculation",
+      "$.chapters[6].questions[6].solution_key.step3_final_answer",
+      "$.chapters[6].questions[6].hotspot_choice",
+      "$.chapters[6].questions[6].hotspot_choice.asset_ref",
+      "$.chapters[6].questions[6].hotspot_choice.target_region"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
       {
-        "x_percent": 10,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SSS Criterion",
-        "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Geometric Twins",
+        "source_number_field": "chapter_number",
+        "source_number": 1
       },
       {
-        "x_percent": 55,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SAS Criterion",
-        "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "Triangle Congruence Criteria Diagram",
+        "source_number_field": "chapter_number",
+        "source_number": 1
       },
       {
-        "x_percent": 10,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "ASA Criterion",
-        "popover_text": "Angle-Side-Angle: Two angles and included side align."
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Operations with Integers",
+        "source_number_field": "chapter_number",
+        "source_number": 2
       },
       {
-        "x_percent": 55,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "RHS Criterion",
-        "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "Integer Token Bag & Zero Pair Model",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Finding Common Ground",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "Rectangular Floor Tiling Grid",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Another Peek Beyond the Point",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "Decimal Place Value Chart",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Connecting the Dots...",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "Statistical Dot Plot Distribution",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Constructions and Tilings",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "Regular Hexagon Construction",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Finding the Unknown",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "Algebraic Balance Scale",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      }
+    ],
+    "chapter_candidate_count": 14,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Mathematics (Ganita Prakash Part II)",
+    "resource_type": "Merged Self-Scoring Quiz Engine",
+    "quiz_engine_config": {
+      "timer_seconds": 900,
+      "passing_score_percent": 70,
+      "hint_modal_enabled": true,
+      "solution_breakdown": "3_part_key"
+    },
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Geometric Twins",
+        "image_asset": {
+          "asset_id": "img_ch1",
+          "chapter_number": 1,
+          "title": "Triangle Congruence Criteria Diagram",
+          "url": "/assets/images/ch1_triangle_congruence.png",
+          "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
+          "hotspots": [
+            {
+              "x_percent": 10,
+              "y_percent": 10,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "SSS Criterion",
+              "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
+            },
+            {
+              "x_percent": 55,
+              "y_percent": 10,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "SAS Criterion",
+              "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
+            },
+            {
+              "x_percent": 10,
+              "y_percent": 55,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "ASA Criterion",
+              "popover_text": "Angle-Side-Angle: Two angles and included side align."
+            },
+            {
+              "x_percent": 55,
+              "y_percent": 55,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "RHS Criterion",
+              "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "question_id": 1,
+            "level": "Level 1 (Easy)",
+            "question_type": "MCQ",
+            "question_text": "Which of the following is NOT a sufficient condition for guaranteeing triangle congruence?",
+            "options": [
+              "A) SSS (Side-Side-Side)",
+              "B) SAS (Side-Angle-Side)",
+              "C) AAA (Angle-Angle-Angle)",
+              "D) RHS (Right-Hypotenuse-Side)"
+            ],
+            "correct_answer": "C) AAA (Angle-Angle-Angle)",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "AAA guarantees that two triangles have the exact same shape (similarity), but it does not guarantee that they have the same size. For example, an equilateral triangle with side length 2 cm and another with side length 10 cm both have angles of 60°, but they are not congruent.",
+              "step3_final_answer": "C) AAA (Angle-Angle-Angle)"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch1",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 2,
+            "level": "Level 1 (Easy)",
+            "question_type": "Fill-in-the-Blanks",
+            "question_text": "If ΔHEN ≅ ΔBIG, then vertex H corresponds to vertex _____, and side EN corresponds to side _____.",
+            "options": [],
+            "correct_answer": "vertex B; side IG",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "In congruence notation ΔHEN ≅ ΔBIG, the order of letters specifies exact vertex correspondence: H↔B, E↔I, N↔G. Therefore, side EN corresponds to side IG.",
+              "step3_final_answer": "vertex B; side IG"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch1",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 3,
+            "level": "Level 1 (Easy)",
+            "question_type": "True/False with Justification",
+            "question_text": "True or False: Any two equilateral triangles are always congruent to each other.",
+            "options": [],
+            "correct_answer": "False",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "False. While all equilateral triangles have equal angles measuring 60° (satisfying AAA), their side lengths can differ. Congruence requires both identical shape and identical size.",
+              "step3_final_answer": "False"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch1",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 4,
+            "level": "Level 2 (Medium)",
+            "question_type": "Short Answer",
+            "question_text": "In an isosceles triangle ΔABC, side AB = AC and vertex angle ∠A = 40°. Calculate the measures of base angles ∠B and ∠C.",
+            "options": [],
+            "correct_answer": "∠B = 70° and ∠C = 70°",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "In ΔABC, since AB = AC, the angles opposite to them are equal, so ∠B = ∠C. The sum of interior angles in a triangle is 180°. Therefore, ∠A + ∠B + ∠C = 180° ⇒ 40° + 2(∠B) = 180° ⇒ 2(∠B) = 140° ⇒ ∠B = 70° and ∠C = 70°.",
+              "step3_final_answer": "∠B = 70° and ∠C = 70°"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch1",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 5,
+            "level": "Level 2 (Medium)",
+            "question_type": "Structural Analysis",
+            "question_text": "In quadrilateral ABCD, diagonal AC bisects ∠BAD and AB = AD. Prove that ΔABC ≅ ΔADC using a suitable congruence criterion.",
+            "options": [],
+            "correct_answer": "ΔABC ≅ ΔADC by SAS Criterion",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "In ΔABC and ΔADC: 1) AB = AD (Given). 2) ∠BAC = ∠DAC (Since AC bisects ∠BAD). 3) AC = AC (Common side). By the SAS (Side-Angle-Side) criterion, two sides and the included angle of ΔABC equal two sides and the included angle of ΔADC, so ΔABC ≅ ΔADC.",
+              "step3_final_answer": "ΔABC ≅ ΔADC by SAS Criterion"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch1",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 6,
+            "level": "Level 3 (Hard)",
+            "question_type": "Give Reasons / Critical Thinking",
+            "question_text": "Explain why the SSA (Side-Side-Angle) condition is generally invalid for proving triangle congruence, and identify the special case where SSA does guarantee congruence.",
+            "options": [],
+            "correct_answer": "SSA allows two non-congruent triangles with same 2 sides and non-included angle; RHS is the special right-angled case.",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "In general, given two sides and a non-included angle, a compass arc can intersect the third side at two distinct points, creating two non-congruent triangles (one acute and one obtuse). The special exception occurs in right-angled triangles where the non-included angle is 90°; here, by Pythagoras Theorem, the third side is fixed uniquely, establishing the RHS criterion.",
+              "step3_final_answer": "SSA allows two non-congruent triangles with same 2 sides and non-included angle; RHS is the special right-angled case."
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch1",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 7,
+            "level": "Level 3 (Hard)",
+            "question_type": "Case-Study Scenario",
+            "question_text": "An engineer designs a bridge truss containing two triangular support frames ΔPQS and ΔRQS on opposite sides of a central vertical beam QS. Given that PQ = RQ = 15 m, ∠PQS = ∠RQS = 35°, and PS = 12 m. (a) Prove that ΔPQS ≅ ΔRQS. (b) Determine the exact length of frame segment RS.",
+            "options": [],
+            "correct_answer": "(a) ΔPQS ≅ ΔRQS by SAS; (b) RS = 12 m",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) In ΔPQS and ΔRQS: PQ = RQ = 15 m (Given), ∠PQS = ∠RQS = 35° (Given), and QS = QS (Common side). By SAS criterion, ΔPQS ≅ ΔRQS. (b) Since corresponding parts of congruent triangles (CPCT) are equal, RS = PS = 12 m.",
+              "step3_final_answer": "(a) ΔPQS ≅ ΔRQS by SAS; (b) RS = 12 m"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch1",
+              "target_region": "main"
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Operations with Integers",
+        "image_asset": {
+          "asset_id": "img_ch2",
+          "chapter_number": 2,
+          "title": "Integer Token Bag & Zero Pair Model",
+          "url": "/assets/images/ch2_integer_token_model.png",
+          "caption": "Token bag representation of positive (+1) green tokens, negative (-1) red tokens, and zero pairs.",
+          "hotspots": [
+            {
+              "x_percent": 8,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Positive Bag",
+              "popover_text": "Bag A contains +4 green tokens (+1 each)."
+            },
+            {
+              "x_percent": 38,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Zero Pairs",
+              "popover_text": "Green (+1) and Red (-1) tokens combine to form net 0 value."
+            },
+            {
+              "x_percent": 68,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Negative Multiplication",
+              "popover_text": "(-4) × (-2) = +8: Removing 8 red tokens leaves +8 positive green tokens."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "question_id": 1,
+            "level": "Level 1 (Easy)",
+            "question_type": "MCQ",
+            "question_text": "What is the product of (-16) × (-5)?",
+            "options": [
+              "A) -80",
+              "B) +80",
+              "C) -21",
+              "D) +21"
+            ],
+            "correct_answer": "B) +80",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Multiplying two negative integers yields a positive product according to the integer sign rule: (-a) × (-b) = +(a × b). Here, 16 × 5 = 80, so (-16) × (-5) = +80.",
+              "step3_final_answer": "B) +80"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch2",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 2,
+            "level": "Level 1 (Easy)",
+            "question_type": "Fill-in-the-Blanks",
+            "question_text": "The additive inverse of -18 is _____, because (-18) + (_____) = 0.",
+            "options": [],
+            "correct_answer": "+18; +18",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "The additive inverse of any integer 'a' is '-a' such that a + (-a) = 0. Therefore, the additive inverse of -18 is +18.",
+              "step3_final_answer": "+18; +18"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch2",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 3,
+            "level": "Level 1 (Easy)",
+            "question_type": "True/False with Justification",
+            "question_text": "True or False: Dividing a positive integer by a negative integer always yields a positive quotient.",
+            "options": [],
+            "correct_answer": "False",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "False. Dividing integers with UNLIKE signs always produces a negative quotient: (+a) ÷ (-b) = -(a ÷ b). For example, 36 ÷ (-18) = -2.",
+              "step3_final_answer": "False"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch2",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 4,
+            "level": "Level 2 (Medium)",
+            "question_type": "Short Answer",
+            "question_text": "A room temperature is lowered from 32°C at a steady rate of 5°C every hour. Calculate the room temperature after 10 hours.",
+            "options": [],
+            "correct_answer": "-18°C",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Initial temperature = +32°C. Temperature change per hour = -5°C. Total temperature change in 10 hours = 10 × (-5°C) = -50°C. Final temperature = 32°C + (-50°C) = -18°C.",
+              "step3_final_answer": "-18°C"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch2",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 5,
+            "level": "Level 2 (Medium)",
+            "question_type": "Flowchart / Model Analysis",
+            "question_text": "Explain how the token bag model simulates the negative multiplication (-4) × (-2) = +8 starting from an empty bag.",
+            "options": [],
+            "correct_answer": "Insert 8 zero pairs into empty bag, remove 8 red (-1) tokens, leaving 8 green (+1) tokens.",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "A multiplier of -4 represents removing 2 negative (red) tokens 4 times. Since the bag starts empty (0 value), place 8 zero pairs (8 green + 8 red tokens) into the bag so removing tokens is possible. Removing 8 red tokens leaves 8 green (+1) tokens inside the bag, visually demonstrating (-4) × (-2) = +8.",
+              "step3_final_answer": "Insert 8 zero pairs into empty bag, remove 8 red (-1) tokens, leaving 8 green (+1) tokens."
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch2",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 6,
+            "level": "Level 3 (Hard)",
+            "question_type": "Give Reasons / Critical Thinking",
+            "question_text": "Find three consecutive integers whose product is -6.",
+            "options": [],
+            "correct_answer": "-3, -2, -1",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Let the consecutive integers be x, x+1, x+2. Testing integers around zero: (-3) × (-2) × (-1) = (+6) × (-1) = -6. Since -3, -2, -1 are consecutive integers, they form the unique solution.",
+              "step3_final_answer": "-3, -2, -1"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch2",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 7,
+            "level": "Level 3 (Hard)",
+            "question_type": "Case-Study Scenario",
+            "question_text": "In a competitive exam, (+5) marks are awarded for every correct answer and (-2) marks are deducted for every incorrect answer. (a) Radhika scored 30 marks with 10 correct answers; how many incorrect answers did she give? (b) Jay scored -12 marks with 4 correct answers; how many incorrect answers did he give?",
+            "options": [],
+            "correct_answer": "(a) 10 incorrect answers; (b) 16 incorrect answers",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) Radhika's correct score = 10 × 5 = +50. Total score = 30. Marks for incorrect answers = 30 - 50 = -20. Number of incorrect answers = (-20) ÷ (-2) = 10. (b) Jay's correct score = 4 × 5 = +20. Total score = -12. Marks for incorrect answers = -12 - 20 = -32. Number of incorrect answers = (-32) ÷ (-2) = 16.",
+              "step3_final_answer": "(a) 10 incorrect answers; (b) 16 incorrect answers"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch2",
+              "target_region": "main"
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Finding Common Ground",
+        "image_asset": {
+          "asset_id": "img_ch3",
+          "chapter_number": 3,
+          "title": "Rectangular Floor Tiling Grid",
+          "url": "/assets/images/ch3_hcf_floor_tiling.png",
+          "caption": "12 ft × 16 ft floor tiled with 4 ft × 4 ft square tiles representing HCF(12, 16) = 4.",
+          "hotspots": [
+            {
+              "x_percent": 0,
+              "y_percent": 0,
+              "w_percent": 100,
+              "h_percent": 100,
+              "label": "4x4 Tile Grid",
+              "popover_text": "12 tiles of size 4ft x 4ft tile a 12ft x 16ft room completely without cutting."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "question_id": 1,
+            "level": "Level 1 (Easy)",
+            "question_type": "MCQ",
+            "question_text": "If two numbers are co-prime, what is their Highest Common Factor (HCF)?",
+            "options": [
+              "A) 0",
+              "B) 1",
+              "C) Their product",
+              "D) Their sum"
+            ],
+            "correct_answer": "B) 1",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Co-prime numbers are defined as numbers that have no common factors other than 1. Therefore, HCF(a, b) = 1 for any co-prime pair.",
+              "step3_final_answer": "B) 1"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch3",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 2,
+            "level": "Level 1 (Easy)",
+            "question_type": "Fill-in-the-Blanks",
+            "question_text": "For any two positive integers 'a' and 'b', HCF(a, b) × LCM(a, b) = _____.",
+            "options": [],
+            "correct_answer": "a × b (Product of the two numbers)",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "The fundamental relationship between HCF and LCM states that the product of the HCF and LCM of two numbers is always equal to the product of the numbers themselves.",
+              "step3_final_answer": "a × b (Product of the two numbers)"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch3",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 3,
+            "level": "Level 1 (Easy)",
+            "question_type": "True/False with Justification",
+            "question_text": "True or False: The formula HCF(a, b, c) × LCM(a, b, c) = a × b × c holds true for three numbers.",
+            "options": [],
+            "correct_answer": "False",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "False. The product formula HCF × LCM = Product holds strictly for TWO numbers. For three numbers, the relationship involves additional prime factor overlap terms and does not equal a × b × c.",
+              "step3_final_answer": "False"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch3",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 4,
+            "level": "Level 2 (Medium)",
+            "question_type": "Short Answer",
+            "question_text": "The HCF of two numbers is 12 and their product is 2160. Calculate their Least Common Multiple (LCM).",
+            "options": [],
+            "correct_answer": "180",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Using the product formula: HCF × LCM = Product of numbers ⇒ 12 × LCM = 2160 ⇒ LCM = 2160 / 12 = 180.",
+              "step3_final_answer": "180"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch3",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 5,
+            "level": "Level 2 (Medium)",
+            "question_type": "Structural Analysis",
+            "question_text": "Find the HCF and LCM of 45 and 36 using prime factorisation.",
+            "options": [],
+            "correct_answer": "HCF = 9, LCM = 180",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Prime factorisations: 45 = 3² × 5¹; 36 = 2² × 3². HCF is the product of common prime factors with lowest exponents: HCF = 3² = 9. LCM is the product of all prime factors with highest exponents: LCM = 2² × 3² × 5¹ = 4 × 9 × 5 = 180.",
+              "step3_final_answer": "HCF = 9, LCM = 180"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch3",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 6,
+            "level": "Level 3 (Hard)",
+            "question_type": "Give Reasons / Critical Thinking",
+            "question_text": "A room floor measures 12 ft by 16 ft. Sameeksha wants to tile the floor with identical square tiles without cutting any tile. Explain why finding the maximum tile side length requires calculating HCF(12, 16), and determine the minimum number of tiles needed.",
+            "options": [],
+            "correct_answer": "Tile side = HCF(12, 16) = 4 ft; Minimum tiles needed = 12 tiles",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "To avoid cutting tiles, the tile side length must be a common divisor of both 12 and 16. To minimize the total number of tiles used, each tile must be as large as possible, which requires finding the Highest Common Factor HCF(12, 16) = 4 ft. Number of tiles along length = 16/4 = 4; along width = 12/4 = 3. Total minimum tiles = 4 × 3 = 12 square tiles.",
+              "step3_final_answer": "Tile side = HCF(12, 16) = 4 ft; Minimum tiles needed = 12 tiles"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch3",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 7,
+            "level": "Level 3 (Hard)",
+            "question_type": "Case-Study Scenario",
+            "question_text": "Three bells toll together at intervals of 9, 12, and 15 minutes respectively. If they all toll together at 8:00 AM, at what time will they next toll together?",
+            "options": [],
+            "correct_answer": "11:00 AM (after 3 hours)",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "The time interval until they toll together next is LCM(9, 12, 15). Prime factorisations: 9 = 3², 12 = 2² × 3, 15 = 3 × 5. LCM = 2² × 3² × 5 = 180 minutes. Converting to hours: 180 / 60 = 3 hours. Adding 3 hours to 8:00 AM yields 11:00 AM.",
+              "step3_final_answer": "11:00 AM (after 3 hours)"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch3",
+              "target_region": "main"
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Another Peek Beyond the Point",
+        "image_asset": {
+          "asset_id": "img_ch4",
+          "chapter_number": 4,
+          "title": "Decimal Place Value Chart",
+          "url": "/assets/images/ch4_decimal_place_value.png",
+          "caption": "Place value representation for 27.53 showing Tens, Ones, Tenths, and Hundredths.",
+          "hotspots": [
+            {
+              "x_percent": 10,
+              "y_percent": 30,
+              "w_percent": 32,
+              "h_percent": 50,
+              "label": "Whole Units",
+              "popover_text": "2 Tens (20) + 7 Ones (7)."
+            },
+            {
+              "x_percent": 45,
+              "y_percent": 30,
+              "w_percent": 12,
+              "h_percent": 50,
+              "label": "Decimal Separator",
+              "popover_text": "Decimal point separates whole numbers from fractional parts."
+            },
+            {
+              "x_percent": 60,
+              "y_percent": 30,
+              "w_percent": 32,
+              "h_percent": 50,
+              "label": "Fractional Parts",
+              "popover_text": "5 Tenths (5/10) + 3 Hundredths (3/100)."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "question_id": 1,
+            "level": "Level 1 (Easy)",
+            "question_type": "MCQ",
+            "question_text": "What is the value of 25 ÷ 0.01?",
+            "options": [
+              "A) 0.25",
+              "B) 2.5",
+              "C) 250",
+              "D) 2500"
+            ],
+            "correct_answer": "D) 2500",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Converting 0.01 to a fraction: 0.01 = 1/100. Thus, 25 ÷ (1/100) = 25 × 100 = 2500.",
+              "step3_final_answer": "D) 2500"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch4",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 2,
+            "level": "Level 1 (Easy)",
+            "question_type": "Fill-in-the-Blanks",
+            "question_text": "To convert 13/4 into decimal form, multiply numerator and denominator by _____ to get _____ / 100 = _____.",
+            "options": [],
+            "correct_answer": "25; 325; 3.25",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Multiplying 4 by 25 yields 100. Thus, (13 × 25) / (4 × 25) = 325 / 100 = 3.25.",
+              "step3_final_answer": "25; 325; 3.25"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch4",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 3,
+            "level": "Level 1 (Easy)",
+            "question_type": "True/False with Justification",
+            "question_text": "True or False: The product of two decimal numbers smaller than 1 is always larger than both factors.",
+            "options": [],
+            "correct_answer": "False",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "False. Multiplying a number by a factor smaller than 1 scales it down. For example, 0.2 × 0.3 = 0.06, which is strictly smaller than both 0.2 and 0.3.",
+              "step3_final_answer": "False"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch4",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 4,
+            "level": "Level 2 (Medium)",
+            "question_type": "Short Answer",
+            "question_text": "Given 156 × 12 = 1872, write the values of: (a) 15.6 × 1.2, and (b) 187.2 ÷ 1.2.",
+            "options": [],
+            "correct_answer": "(a) 18.72; (b) 156",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) 15.6 has 1 decimal place and 1.2 has 1 decimal place. Total decimal places in product = 2, so 15.6 × 1.2 = 18.72. (b) 187.2 ÷ 1.2 = 1872 ÷ 12 = 156.",
+              "step3_final_answer": "(a) 18.72; (b) 156"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch4",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 5,
+            "level": "Level 2 (Medium)",
+            "question_type": "Structural Analysis",
+            "question_text": "Convert the following metric measurements: (a) 35 cm to meters, (b) 68 g to kilograms, (c) 125.5 mL to liters.",
+            "options": [],
+            "correct_answer": "(a) 0.35 m; (b) 0.068 kg; (c) 0.1255 L",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) 1 m = 100 cm ⇒ 35 cm = 35 / 100 = 0.35 m. (b) 1 kg = 1000 g ⇒ 68 g = 68 / 1000 = 0.068 kg. (c) 1 L = 1000 mL ⇒ 125.5 mL = 125.5 / 1000 = 0.1255 L.",
+              "step3_final_answer": "(a) 0.35 m; (b) 0.068 kg; (c) 0.1255 L"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch4",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 6,
+            "level": "Level 3 (Hard)",
+            "question_type": "Give Reasons / Critical Thinking",
+            "question_text": "Each side of a regular polygon is 2.5 cm long, and its perimeter is 12.5 cm. Determine the number of sides and name the polygon.",
+            "options": [],
+            "correct_answer": "5 sides; Regular Pentagon",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Perimeter = Number of sides (n) × Side length ⇒ 12.5 = n × 2.5 ⇒ n = 12.5 / 2.5 = 125 / 25 = 5. A 5-sided regular polygon is a Regular Pentagon.",
+              "step3_final_answer": "5 sides; Regular Pentagon"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch4",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 7,
+            "level": "Level 3 (Hard)",
+            "question_type": "Case-Study Scenario",
+            "question_text": "A tailor requires 1.8 m of cloth to stitch one shirt. He has a cloth roll measuring 37.8 m. (a) How many shirts can he stitch? (b) If each shirt is sold for ₹450.50, calculate total revenue.",
+            "options": [],
+            "correct_answer": "(a) 21 shirts; (b) ₹9,460.50",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) Number of shirts = 37.8 ÷ 1.8 = 378 ÷ 18 = 21 shirts. (b) Total revenue = 21 × ₹450.50 = ₹9,460.50.",
+              "step3_final_answer": "(a) 21 shirts; (b) ₹9,460.50"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch4",
+              "target_region": "main"
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Connecting the Dots...",
+        "image_asset": {
+          "asset_id": "img_ch5",
+          "chapter_number": 5,
+          "title": "Statistical Dot Plot Distribution",
+          "url": "/assets/images/ch5_dotplot_distribution.png",
+          "caption": "Dot plot of student heights showing cluster at mode 115 cm and range spread.",
+          "hotspots": [
+            {
+              "x_percent": 45,
+              "y_percent": 20,
+              "w_percent": 15,
+              "h_percent": 60,
+              "label": "Cluster / Mode",
+              "popover_text": "Peak at 115 cm represents mode (5 students)."
+            },
+            {
+              "x_percent": 5,
+              "y_percent": 60,
+              "w_percent": 15,
+              "h_percent": 30,
+              "label": "Minimum Boundary",
+              "popover_text": "Minimum height value = 101 cm."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "question_id": 1,
+            "level": "Level 1 (Easy)",
+            "question_type": "MCQ",
+            "question_text": "What is the mean of the first five prime numbers?",
+            "options": [
+              "A) 5.0",
+              "B) 5.6",
+              "C) 6.2",
+              "D) 7.0"
+            ],
+            "correct_answer": "B) 5.6",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "The first five prime numbers are 2, 3, 5, 7, 11. Sum = 2 + 3 + 5 + 7 + 11 = 28. Arithmetic Mean = 28 / 5 = 5.6.",
+              "step3_final_answer": "B) 5.6"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch5",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 2,
+            "level": "Level 1 (Easy)",
+            "question_type": "Fill-in-the-Blanks",
+            "question_text": "To find the median of a dataset with an even number N of values, sort the data and take the average of values at positions _____ and _____.",
+            "options": [],
+            "correct_answer": "N/2; (N/2) + 1",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "For an even number of observations N, there are two central values located at index N/2 and (N/2)+1. The median is defined as the arithmetic mean of these two middle terms.",
+              "step3_final_answer": "N/2; (N/2) + 1"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch5",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 3,
+            "level": "Level 1 (Easy)",
+            "question_type": "True/False with Justification",
+            "question_text": "True or False: The median of a dataset is always one of the original numbers present in the raw data.",
+            "options": [],
+            "correct_answer": "False",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "False. When N is even, the median is the average of two middle numbers, which may be a decimal or value not present in the original dataset (e.g., median of {2, 4} is 3).",
+              "step3_final_answer": "False"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch5",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 4,
+            "level": "Level 2 (Medium)",
+            "question_type": "Short Answer",
+            "question_text": "The mean mark of 6 students in a test is 18. If one student who scored 8 marks is excluded, calculate the new mean of the remaining 5 students.",
+            "options": [],
+            "correct_answer": "20",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Original total marks = 18 × 6 = 108. Total marks after excluding 8 = 108 - 8 = 100. New mean = 100 / 5 = 20.",
+              "step3_final_answer": "20"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch5",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 5,
+            "level": "Level 2 (Medium)",
+            "question_type": "Diagram / Graph Analysis",
+            "question_text": "Explain the visual features of a Dot Plot and explain why a cropped scale (starting above 0) is used on vertical axes of clustered bar graphs.",
+            "options": [],
+            "correct_answer": "Dot plot displays data frequency via stacked dots; cropped scale zooms in to show small differences.",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "A dot plot stacks dots above a number line, revealing clusters, gaps, range, and outliers visually. A cropped vertical scale starts above zero to zoom in on small differences among large values that would otherwise look nearly identical on a 0-baseline axis.",
+              "step3_final_answer": "Dot plot displays data frequency via stacked dots; cropped scale zooms in to show small differences."
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch5",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 6,
+            "level": "Level 3 (Hard)",
+            "question_type": "Give Reasons / Critical Thinking",
+            "question_text": "Differentiate between how an extreme outlier value affects the Arithmetic Mean versus the Median of a dataset.",
+            "options": [],
+            "correct_answer": "Outliers significantly distort/pull the mean, while median remains virtually unchanged.",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Because the arithmetic mean includes every value in its summation ((∑ x)/N), a single extreme outlier heavily inflates or deflates the sum and mean. In contrast, the median depends only on positional ordering; extreme values at either tail do not alter the middle position value.",
+              "step3_final_answer": "Outliers significantly distort/pull the mean, while median remains virtually unchanged."
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch5",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 7,
+            "level": "Level 3 (Hard)",
+            "question_type": "Case-Study Scenario",
+            "question_text": "A clothing store surveyed pocket counts on garments: Boys' clothes: {2, 3, 4, 4, 5, 5, 5, 6, 7}; Girls' clothes: {0, 1, 2, 2, 2, 3, 4}. (a) Calculate median pocket count for boys and girls. (b) Compare data variability between the two groups.",
+            "options": [],
+            "correct_answer": "(a) Boys median = 5, Girls median = 2; (b) Boys range = 5, Girls range = 4 (Boys data shifted higher)",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) Boys (N=9, odd): 5th value = 5 pockets. Girls (N=7, odd): 4th value = 2 pockets. (b) Boys range = 7 - 2 = 5; Girls range = 4 - 0 = 4. Boys' clothing centers around significantly higher pocket counts with slightly higher spread.",
+              "step3_final_answer": "(a) Boys median = 5, Girls median = 2; (b) Boys range = 5, Girls range = 4 (Boys data shifted higher)"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch5",
+              "target_region": "main"
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Constructions and Tilings",
+        "image_asset": {
+          "asset_id": "img_ch6",
+          "chapter_number": 6,
+          "title": "Regular Hexagon Construction",
+          "url": "/assets/images/ch6_regular_hexagon_construction.png",
+          "caption": "Construction of regular hexagon using straightedge and compass showing 6 central 60° equilateral triangles.",
+          "hotspots": [
+            {
+              "x_percent": 25,
+              "y_percent": 25,
+              "w_percent": 50,
+              "h_percent": 50,
+              "label": "Central Equilateral Triangles",
+              "popover_text": "6 equilateral triangles meet at center O with 60° angles."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "question_id": 1,
+            "level": "Level 1 (Easy)",
+            "question_type": "MCQ",
+            "question_text": "How many congruent equilateral triangles meet at the central point of a regular hexagon?",
+            "options": [
+              "A) 4",
+              "B) 5",
+              "C) 6",
+              "D) 8"
+            ],
+            "correct_answer": "C) 6",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "A regular hexagon is composed of 6 congruent equilateral triangles meeting at its central point (6 × 60° = 360° total angle around a point).",
+              "step3_final_answer": "C) 6"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch6",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 2,
+            "level": "Level 1 (Easy)",
+            "question_type": "Fill-in-the-Blanks",
+            "question_text": "Tiling (tessellation) is defined as covering a 2D plane with geometric shapes leaving strictly zero _____ and zero _____.",
+            "options": [],
+            "correct_answer": "gaps; overlaps",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "A valid tessellation requires that tiles completely cover the surface without leaving any empty spaces (gaps) or overlapping each other.",
+              "step3_final_answer": "gaps; overlaps"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch6",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 3,
+            "level": "Level 1 (Easy)",
+            "question_type": "True/False with Justification",
+            "question_text": "True or False: When constructing a perpendicular bisector of segment XY, the compass radius used for top and bottom arcs must be strictly greater than half the length of XY.",
+            "options": [],
+            "correct_answer": "True",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "True. If the compass radius is less than or equal to half of XY (r ≤ 0.5 XY), the arcs drawn from X and Y will not intersect each other above or below the segment.",
+              "step3_final_answer": "True"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch6",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 4,
+            "level": "Level 2 (Medium)",
+            "question_type": "Short Answer",
+            "question_text": "Explain how a 30° angle and a 15° angle are systematically constructed using a ruler and compass.",
+            "options": [],
+            "correct_answer": "Construct 60° via equilateral arc, bisect to 30°, bisect again to 15°",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "First, construct a 60° angle using the equilateral triangle arc method. Bisecting the 60° angle yields a 30° angle. Bisecting the 30° angle yields a 15° angle.",
+              "step3_final_answer": "Construct 60° via equilateral arc, bisect to 30°, bisect again to 15°"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch6",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 5,
+            "level": "Level 2 (Medium)",
+            "question_type": "Structural Analysis",
+            "question_text": "Describe the 7 geometric pieces that make up a traditional Chinese Tangram puzzle.",
+            "options": [],
+            "correct_answer": "5 triangles (2 large, 1 medium, 2 small), 1 square, 1 parallelogram",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "A Tangram puzzle dissects a square into 7 flat shapes: 2 large isosceles right triangles, 1 medium isosceles right triangle, 2 small isosceles right triangles, 1 square, and 1 parallelogram.",
+              "step3_final_answer": "5 triangles (2 large, 1 medium, 2 small), 1 square, 1 parallelogram"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch6",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 6,
+            "level": "Level 3 (Hard)",
+            "question_type": "Give Reasons / Critical Thinking",
+            "question_text": "Prove why any point P located on the perpendicular bisector line of segment XY is equidistant from endpoints X and Y (PX = PY).",
+            "options": [],
+            "correct_answer": "ΔPMX ≅ ΔPMY by SAS criterion, so PX = PY by CPCT.",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Let M be the midpoint of XY where perpendicular bisector PM intersects XY. In ΔPMX and ΔPMY: 1) MX = MY (M is midpoint), 2) ∠PMX = ∠PMY = 90° (PM is perpendicular), 3) PM = PM (Common side). By SAS criterion, ΔPMX ≅ ΔPMY. By CPCT, PX = PY.",
+              "step3_final_answer": "ΔPMX ≅ ΔPMY by SAS criterion, so PX = PY by CPCT."
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch6",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 7,
+            "level": "Level 3 (Hard)",
+            "question_type": "Case-Study Scenario",
+            "question_text": "An architect needs to construct a line 'm' parallel to a given line 'l' passing through an external point P using only ruler and compass. (a) State the geometric principle used. (b) Outline the construction steps.",
+            "options": [],
+            "correct_answer": "(a) Equal alternate interior angles; (b) Draw transversal line AP, copy ∠PAL at point P on alternate side.",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) Geometric principle: If a transversal intersects two lines such that alternate interior angles are equal, the lines are parallel. (b) Steps: 1) Pick point A on line 'l' and draw transversal AP. 2) At point A, ∠PAL is formed. 3) At vertex P, copy angle ∠PAL on the opposite side of transversal AP using compass SSS angle copy method to construct ∠APM = ∠PAL. 4) Extend ray PM to form line 'm' parallel to 'l'.",
+              "step3_final_answer": "(a) Equal alternate interior angles; (b) Draw transversal line AP, copy ∠PAL at point P on alternate side."
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch6",
+              "target_region": "main"
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Finding the Unknown",
+        "image_asset": {
+          "asset_id": "img_ch7",
+          "chapter_number": 7,
+          "title": "Algebraic Balance Scale",
+          "url": "/assets/images/ch7_weighing_scale_balance.png",
+          "caption": "Balanced scale illustrating 2e + 2 = 8 kg solved systematically via inverse operations.",
+          "hotspots": [
+            {
+              "x_percent": 5,
+              "y_percent": 20,
+              "w_percent": 30,
+              "h_percent": 60,
+              "label": "LHS Pan",
+              "popover_text": "LHS: 2 unknown egg weights 'e' + 2 kg weight."
+            },
+            {
+              "x_percent": 65,
+              "y_percent": 20,
+              "w_percent": 30,
+              "h_percent": 60,
+              "label": "RHS Pan",
+              "popover_text": "RHS: 8 kg fixed weight."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "question_id": 1,
+            "level": "Level 1 (Easy)",
+            "question_type": "MCQ",
+            "question_text": "If 3x - 5 = 10, what is the value of x?",
+            "options": [
+              "A) 3",
+              "B) 5",
+              "C) 15",
+              "D) 45"
+            ],
+            "correct_answer": "B) 5",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Applying inverse operations: Add 5 to both sides ⇒ 3x = 15. Divide both sides by 3 ⇒ x = 15 / 3 = 5.",
+              "step3_final_answer": "B) 5"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch7",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 2,
+            "level": "Level 1 (Easy)",
+            "question_type": "Fill-in-the-Blanks",
+            "question_text": "In ancient Indian mathematics, algebra was known as _____, where the word 'bīja' means _____, symbolizing the hidden unknown variable.",
+            "options": [],
+            "correct_answer": "Bījagaṇita; seed",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Bījagaṇita is the historical Indian term for algebra. 'Bīja' means seed, representing how solving an equation unearths the hidden solution.",
+              "step3_final_answer": "Bījagaṇita; seed"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch7",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 3,
+            "level": "Level 1 (Easy)",
+            "question_type": "True/False with Justification",
+            "question_text": "True or False: The algebraic expression 3(x + 2) is equivalent to 3x + 2.",
+            "options": [],
+            "correct_answer": "False",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "False. According to the distributive law, the multiplier 3 must be distributed to ALL terms inside parentheses: 3(x + 2) = 3(x) + 3(2) = 3x + 6.",
+              "step3_final_answer": "False"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch7",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 4,
+            "level": "Level 2 (Medium)",
+            "question_type": "Short Answer",
+            "question_text": "Given 4k + 1 = 13, calculate the values of: (a) k, and (b) 8k + 2.",
+            "options": [],
+            "correct_answer": "(a) k = 3; (b) 26",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) 4k + 1 = 13 ⇒ 4k = 12 ⇒ k = 3. (b) 8k + 2 = 2(4k + 1) = 2(13) = 26 (or 8(3) + 2 = 24 + 2 = 26).",
+              "step3_final_answer": "(a) k = 3; (b) 26"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch7",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 5,
+            "level": "Level 2 (Medium)",
+            "question_type": "Structural Analysis",
+            "question_text": "Solve the linear equation 5z + 2 = 3z - 4 systematically step-by-step with justification.",
+            "options": [],
+            "correct_answer": "z = -3",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "1) Subtract 3z from both sides: 5z - 3z + 2 = -4 ⇒ 2z + 2 = -4. 2) Subtract 2 from both sides: 2z = -6. 3) Divide both sides by 2: z = -3. Verification: LHS = 5(-3) + 2 = -13; RHS = 3(-3) - 4 = -13. LHS = RHS.",
+              "step3_final_answer": "z = -3"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch7",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 6,
+            "level": "Level 3 (Hard)",
+            "question_type": "Give Reasons / Critical Thinking",
+            "question_text": "One quarter of a number increased by 9 equals the number itself. Frame an algebraic equation and find the number.",
+            "options": [],
+            "correct_answer": "Equation: (1/4)x + 9 = x; Number = 12",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "Let the unknown number be x. Equation: (1/4)x + 9 = x. Subtract (1/4)x from both sides: 9 = x - (1/4)x = (3/4)x. Multiply both sides by 4/3: x = 9 × (4/3) = 12. The number is 12.",
+              "step3_final_answer": "Equation: (1/4)x + 9 = x; Number = 12"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch7",
+              "target_region": "main"
+            }
+          },
+          {
+            "question_id": 7,
+            "level": "Level 3 (Hard)",
+            "question_type": "Case-Study Scenario",
+            "question_text": "A taxi service charges a fixed base fee of ₹800 plus a rate of ₹20 per kilometer traveled. (a) Write an equation for total cost C for distance 'd'. (b) If a passenger's total bill is ₹2,200, calculate the exact distance traveled.",
+            "options": [],
+            "correct_answer": "(a) 800 + 20d = C; (b) 70 km",
+            "hint": "Refer to core chapter definitions and rules.",
+            "solution_key": {
+              "step1_concept": "Identify the relevant NCERT mathematical rule.",
+              "step2_calculation": "(a) Equation: 800 + 20d = 2200. (b) Subtract 800 from both sides: 20d = 1400. Divide both sides by 20: d = 1400 / 20 = 70 km.",
+              "step3_final_answer": "(a) 800 + 20d = C; (b) 70 km"
+            },
+            "hotspot_choice": {
+              "asset_ref": "img_ch7",
+              "target_region": "main"
+            }
+          }
+        ]
       }
     ]
   },
-  "questions": [
-    {
-      "question_id": 1,
-      "level": "Level 1 (Easy)",
-      "question_type": "MCQ",
-      "question_text": "Which of the following is NOT a sufficient condition for guaranteeing triangle congruence?",
-      "options": [
-        "A) SSS (Side-Side-Side)",
-        "B) SAS (Side-Angle-Side)",
-        "C) AAA (Angle-Angle-Angle)",
-        "D) RHS (Right-Hypotenuse-Side)"
-      ],
-      "correct_answer": "C) AAA (Angle-Angle-Angle)",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "AAA guarantees that two triangles have the exact same shape (similarity), but it does not guarantee that they have the same size. For example, an equilateral triangle with side length 2 cm and another with side length 10 cm both have angles of 60°, but they are not congruent.",
-        "step3_final_answer": "C) AAA (Angle-Angle-Angle)"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 2,
-      "level": "Level 1 (Easy)",
-      "question_type": "Fill-in-the-Blanks",
-      "question_text": "If ΔHEN ≅ ΔBIG, then vertex H corresponds to vertex _____, and side EN corresponds to side _____.",
-      "options": [],
-      "correct_answer": "vertex B; side IG",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In congruence notation ΔHEN ≅ ΔBIG, the order of letters specifies exact vertex correspondence: H↔B, E↔I, N↔G. Therefore, side EN corresponds to side IG.",
-        "step3_final_answer": "vertex B; side IG"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 3,
-      "level": "Level 1 (Easy)",
-      "question_type": "True/False with Justification",
-      "question_text": "True or False: Any two equilateral triangles are always congruent to each other.",
-      "options": [],
-      "correct_answer": "False",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "False. While all equilateral triangles have equal angles measuring 60° (satisfying AAA), their side lengths can differ. Congruence requires both identical shape and identical size.",
-        "step3_final_answer": "False"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 4,
-      "level": "Level 2 (Medium)",
-      "question_type": "Short Answer",
-      "question_text": "In an isosceles triangle ΔABC, side AB = AC and vertex angle ∠A = 40°. Calculate the measures of base angles ∠B and ∠C.",
-      "options": [],
-      "correct_answer": "∠B = 70° and ∠C = 70°",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In ΔABC, since AB = AC, the angles opposite to them are equal, so ∠B = ∠C. The sum of interior angles in a triangle is 180°. Therefore, ∠A + ∠B + ∠C = 180° ⇒ 40° + 2(∠B) = 180° ⇒ 2(∠B) = 140° ⇒ ∠B = 70° and ∠C = 70°.",
-        "step3_final_answer": "∠B = 70° and ∠C = 70°"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 5,
-      "level": "Level 2 (Medium)",
-      "question_type": "Structural Analysis",
-      "question_text": "In quadrilateral ABCD, diagonal AC bisects ∠BAD and AB = AD. Prove that ΔABC ≅ ΔADC using a suitable congruence criterion.",
-      "options": [],
-      "correct_answer": "ΔABC ≅ ΔADC by SAS Criterion",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In ΔABC and ΔADC: 1) AB = AD (Given). 2) ∠BAC = ∠DAC (Since AC bisects ∠BAD). 3) AC = AC (Common side). By the SAS (Side-Angle-Side) criterion, two sides and the included angle of ΔABC equal two sides and the included angle of ΔADC, so ΔABC ≅ ΔADC.",
-        "step3_final_answer": "ΔABC ≅ ΔADC by SAS Criterion"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 6,
-      "level": "Level 3 (Hard)",
-      "question_type": "Give Reasons / Critical Thinking",
-      "question_text": "Explain why the SSA (Side-Side-Angle) condition is generally invalid for proving triangle congruence, and identify the special case where SSA does guarantee congruence.",
-      "options": [],
-      "correct_answer": "SSA allows two non-congruent triangles with same 2 sides and non-included angle; RHS is the special right-angled case.",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "In general, given two sides and a non-included angle, a compass arc can intersect the third side at two distinct points, creating two non-congruent triangles (one acute and one obtuse). The special exception occurs in right-angled triangles where the non-included angle is 90°; here, by Pythagoras Theorem, the third side is fixed uniquely, establishing the RHS criterion.",
-        "step3_final_answer": "SSA allows two non-congruent triangles with same 2 sides and non-included angle; RHS is the special right-angled case."
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    },
-    {
-      "question_id": 7,
-      "level": "Level 3 (Hard)",
-      "question_type": "Case-Study Scenario",
-      "question_text": "An engineer designs a bridge truss containing two triangular support frames ΔPQS and ΔRQS on opposite sides of a central vertical beam QS. Given that PQ = RQ = 15 m, ∠PQS = ∠RQS = 35°, and PS = 12 m. (a) Prove that ΔPQS ≅ ΔRQS. (b) Determine the exact length of frame segment RS.",
-      "options": [],
-      "correct_answer": "(a) ΔPQS ≅ ΔRQS by SAS; (b) RS = 12 m",
-      "hint": "Refer to core chapter definitions and rules.",
-      "solution_key": {
-        "step1_concept": "Identify the relevant NCERT mathematical rule.",
-        "step2_calculation": "(a) In ΔPQS and ΔRQS: PQ = RQ = 15 m (Given), ∠PQS = ∠RQS = 35° (Given), and QS = QS (Common side). By SAS criterion, ΔPQS ≅ ΔRQS. (b) Since corresponding parts of congruent triangles (CPCT) are equal, RS = PS = 12 m.",
-        "step3_final_answer": "(a) ΔPQS ≅ ΔRQS by SAS; (b) RS = 12 m"
-      },
-      "hotspot_choice": {
-        "asset_ref": "img_ch1",
-        "target_region": "main"
-      }
-    }
-  ]
+  "grade": "7",
+  "chapter_id": "G7-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Geometric Twins (Congruence of Triangles)"
 }

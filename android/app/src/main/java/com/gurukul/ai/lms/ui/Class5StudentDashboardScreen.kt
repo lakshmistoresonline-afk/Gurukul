@@ -11,8 +11,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.gurukul.ai.lms.models.*
-import com.gurukul.ai.lms.ui.components.*
+import com.gurukul.ai.lms.ui.components.AdaptiveQuizEngine
+import com.gurukul.ai.lms.ui.components.FlashcardDeckScreen
+import com.gurukul.ai.lms.ui.components.InteractiveMindmapView
+import com.gurukul.ai.lms.ui.components.PedagogyGuidanceView
+import com.gurukul.ai.lms.ui.components.RichNotesReader
 import com.gurukul.ai.lms.viewmodel.Class5LmsViewModel
 import com.gurukul.ai.lms.viewmodel.LmsUiState
 

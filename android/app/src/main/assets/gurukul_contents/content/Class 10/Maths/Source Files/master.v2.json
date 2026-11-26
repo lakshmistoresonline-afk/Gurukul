@@ -1,0 +1,3558 @@
+{
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_9e0d84da15182a7c",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_10",
+    "class_level": 10
+  },
+  "subject": {
+    "subject_id": "maths",
+    "source_subject_label": "Maths",
+    "component_id": "maths",
+    "component_label": "Maths"
+  },
+  "artifact": {
+    "artifact_type": "master",
+    "source_file_name": "03-Master.json",
+    "source_relative_path": "Contents/Class 10/Maths/Source Files/03-Master.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "b16cb73a70439955fcf1d20f03240a259ab537e12750f89f7ca557a773636651",
+    "source_semantic_sha256": "0ce4d5f6871cd56d8e36574be33c9a4a5e47307473515926ee1bae26c83f13ae",
+    "source_byte_length": 88804,
+    "source_encoding": "utf-8",
+    "source_field_count": 990,
+    "field_inventory": [
+      "$.subject_name",
+      "$.grade_or_target_level",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].zero_omission_notes",
+      "$.chapters[0].zero_omission_notes.summary",
+      "$.chapters[0].zero_omission_notes.detailed_sections",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].full_notes",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[0].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[0].visuals_diagrams_and_tabular_data",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[0].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[0].master_glossary_units_and_formulas",
+      "$.chapters[0].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[0].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[0].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[0].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[0].exam_question_bank",
+      "$.chapters[0].exam_question_bank.textbook_exercises",
+      "$.chapters[0].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[0].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[0].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[0].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[0].exam_question_bank.short_answer_questions",
+      "$.chapters[0].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[0].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[0].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[0].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[0].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[0].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[0].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[0].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[0].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[0].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[0].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[0].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].zero_omission_notes",
+      "$.chapters[1].zero_omission_notes.summary",
+      "$.chapters[1].zero_omission_notes.detailed_sections",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].full_notes",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[1].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[1].zero_omission_notes.detailed_sections[1].full_notes",
+      "$.chapters[1].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[1].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[1].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[1].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[1].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[1].visuals_diagrams_and_tabular_data",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[1].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[1].master_glossary_units_and_formulas",
+      "$.chapters[1].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[1].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[1].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[1].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[1].exam_question_bank",
+      "$.chapters[1].exam_question_bank.textbook_exercises",
+      "$.chapters[1].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[1].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[1].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[1].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[1].exam_question_bank.short_answer_questions",
+      "$.chapters[1].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[1].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[1].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[1].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[1].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[1].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[1].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[1].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[1].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[1].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[1].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[1].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].zero_omission_notes",
+      "$.chapters[2].zero_omission_notes.summary",
+      "$.chapters[2].zero_omission_notes.detailed_sections",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].full_content",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[2].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[2].visuals_diagrams_and_tabular_data",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[2].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[2].master_glossary_units_and_formulas",
+      "$.chapters[2].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[2].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[2].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[2].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[2].exam_question_bank",
+      "$.chapters[2].exam_question_bank.textbook_exercises",
+      "$.chapters[2].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[2].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[2].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[2].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[2].exam_question_bank.short_answer_questions",
+      "$.chapters[2].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[2].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[2].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[2].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[2].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[2].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[2].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[2].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[2].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[2].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[2].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[2].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].zero_omission_notes",
+      "$.chapters[3].zero_omission_notes.summary",
+      "$.chapters[3].zero_omission_notes.detailed_sections",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[3].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[3].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[3].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[3].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[3].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[3].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[3].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[3].visuals_diagrams_and_tabular_data",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[3].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[3].master_glossary_units_and_formulas",
+      "$.chapters[3].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[3].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[3].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[3].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[3].exam_question_bank",
+      "$.chapters[3].exam_question_bank.textbook_exercises",
+      "$.chapters[3].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[3].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[3].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[3].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[3].exam_question_bank.short_answer_questions",
+      "$.chapters[3].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[3].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[3].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[3].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[3].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[3].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[3].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[3].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[3].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[3].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[3].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[3].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].zero_omission_notes",
+      "$.chapters[4].zero_omission_notes.summary",
+      "$.chapters[4].zero_omission_notes.detailed_sections",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[4].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[4].visuals_diagrams_and_tabular_data",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[4].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[4].master_glossary_units_and_formulas",
+      "$.chapters[4].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[4].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[4].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[4].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[4].exam_question_bank",
+      "$.chapters[4].exam_question_bank.textbook_exercises",
+      "$.chapters[4].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[4].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[4].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[4].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[4].exam_question_bank.short_answer_questions",
+      "$.chapters[4].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[4].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[4].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[4].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[4].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[4].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[4].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[4].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[4].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[4].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[4].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[4].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].zero_omission_notes",
+      "$.chapters[5].zero_omission_notes.summary",
+      "$.chapters[5].zero_omission_notes.detailed_sections",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[5].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[5].visuals_diagrams_and_tabular_data",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[5].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[5].master_glossary_units_and_formulas",
+      "$.chapters[5].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[5].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[5].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[5].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[5].exam_question_bank",
+      "$.chapters[5].exam_question_bank.textbook_exercises",
+      "$.chapters[5].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[5].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[5].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[5].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[5].exam_question_bank.short_answer_questions",
+      "$.chapters[5].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[5].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[5].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[5].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[5].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[5].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[5].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[5].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[5].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[5].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[5].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[5].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].zero_omission_notes",
+      "$.chapters[6].zero_omission_notes.summary",
+      "$.chapters[6].zero_omission_notes.detailed_sections",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[6].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[6].visuals_diagrams_and_tabular_data",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[6].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[6].master_glossary_units_and_formulas",
+      "$.chapters[6].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[6].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[6].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[6].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[6].exam_question_bank",
+      "$.chapters[6].exam_question_bank.textbook_exercises",
+      "$.chapters[6].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[6].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[6].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[6].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[6].exam_question_bank.short_answer_questions",
+      "$.chapters[6].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[6].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[6].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[6].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[6].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[6].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[6].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[6].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[6].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[6].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[6].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[6].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].zero_omission_notes",
+      "$.chapters[7].zero_omission_notes.summary",
+      "$.chapters[7].zero_omission_notes.detailed_sections",
+      "$.chapters[7].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[7].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[7].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[7].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[7].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[7].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[7].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[7].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[7].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[7].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[7].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[7].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[7].practical_lab_activity_or_methodology_manual",
+      "$.chapters[7].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[7].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[7].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[7].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[7].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[7].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[7].visuals_diagrams_and_tabular_data",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[7].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[7].master_glossary_units_and_formulas",
+      "$.chapters[7].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[7].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[7].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[7].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[7].exam_question_bank",
+      "$.chapters[7].exam_question_bank.textbook_exercises",
+      "$.chapters[7].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[7].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[7].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[7].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[7].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[7].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[7].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[7].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[7].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[7].exam_question_bank.short_answer_questions",
+      "$.chapters[7].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[7].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[7].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[7].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[7].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[7].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[7].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[7].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[7].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[7].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[7].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[7].exam_question_bank.competency_and_case_studies",
+      "$.chapters[7].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[7].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[7].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[7].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[7].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[7].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[7].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[8].chapter_number",
+      "$.chapters[8].chapter_title",
+      "$.chapters[8].zero_omission_notes",
+      "$.chapters[8].zero_omission_notes.summary",
+      "$.chapters[8].zero_omission_notes.detailed_sections",
+      "$.chapters[8].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[8].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[8].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[8].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[8].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[8].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[8].practical_lab_activity_or_methodology_manual",
+      "$.chapters[8].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[8].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[8].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[8].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[8].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[8].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[8].visuals_diagrams_and_tabular_data",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[8].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[8].master_glossary_units_and_formulas",
+      "$.chapters[8].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[8].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[8].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[8].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[8].exam_question_bank",
+      "$.chapters[8].exam_question_bank.textbook_exercises",
+      "$.chapters[8].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[8].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[8].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[8].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[8].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[8].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[8].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[8].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[8].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[8].exam_question_bank.short_answer_questions",
+      "$.chapters[8].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[8].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[8].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[8].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[8].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[8].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[8].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[8].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[8].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[8].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[8].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[8].exam_question_bank.competency_and_case_studies",
+      "$.chapters[8].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[8].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[8].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[8].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[8].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[8].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[8].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[9].chapter_number",
+      "$.chapters[9].chapter_title",
+      "$.chapters[9].zero_omission_notes",
+      "$.chapters[9].zero_omission_notes.summary",
+      "$.chapters[9].zero_omission_notes.detailed_sections",
+      "$.chapters[9].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[9].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[9].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[9].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[9].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[9].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[9].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[9].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[9].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[9].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[9].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[9].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[9].practical_lab_activity_or_methodology_manual",
+      "$.chapters[9].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[9].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[9].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[9].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[9].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[9].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[9].visuals_diagrams_and_tabular_data",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[9].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[9].master_glossary_units_and_formulas",
+      "$.chapters[9].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[9].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[9].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[9].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[9].exam_question_bank",
+      "$.chapters[9].exam_question_bank.textbook_exercises",
+      "$.chapters[9].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[9].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[9].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[9].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[9].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[9].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[9].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[9].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[9].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[9].exam_question_bank.short_answer_questions",
+      "$.chapters[9].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[9].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[9].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[9].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[9].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[9].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[9].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[9].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[9].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[9].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[9].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[9].exam_question_bank.competency_and_case_studies",
+      "$.chapters[9].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[9].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[9].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[9].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[9].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[9].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[9].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[10].chapter_number",
+      "$.chapters[10].chapter_title",
+      "$.chapters[10].zero_omission_notes",
+      "$.chapters[10].zero_omission_notes.summary",
+      "$.chapters[10].zero_omission_notes.detailed_sections",
+      "$.chapters[10].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[10].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[10].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[10].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[10].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[10].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[10].practical_lab_activity_or_methodology_manual",
+      "$.chapters[10].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[10].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[10].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[10].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[10].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[10].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[10].visuals_diagrams_and_tabular_data",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[10].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[10].master_glossary_units_and_formulas",
+      "$.chapters[10].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[10].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[10].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[10].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[10].exam_question_bank",
+      "$.chapters[10].exam_question_bank.textbook_exercises",
+      "$.chapters[10].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[10].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[10].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[10].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[10].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[10].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[10].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[10].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[10].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[10].exam_question_bank.short_answer_questions",
+      "$.chapters[10].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[10].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[10].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[10].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[10].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[10].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[10].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[10].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[10].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[10].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[10].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[10].exam_question_bank.competency_and_case_studies",
+      "$.chapters[10].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[10].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[10].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[10].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[10].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[10].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[10].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[11].chapter_number",
+      "$.chapters[11].chapter_title",
+      "$.chapters[11].zero_omission_notes",
+      "$.chapters[11].zero_omission_notes.summary",
+      "$.chapters[11].zero_omission_notes.detailed_sections",
+      "$.chapters[11].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[11].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[11].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[11].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[11].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[11].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[11].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[11].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[11].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[11].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[11].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[11].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[11].practical_lab_activity_or_methodology_manual",
+      "$.chapters[11].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[11].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[11].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[11].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[11].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[11].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[11].visuals_diagrams_and_tabular_data",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[11].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[11].master_glossary_units_and_formulas",
+      "$.chapters[11].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[11].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[11].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[11].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[11].exam_question_bank",
+      "$.chapters[11].exam_question_bank.textbook_exercises",
+      "$.chapters[11].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[11].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[11].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[11].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[11].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[11].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[11].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[11].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[11].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[11].exam_question_bank.short_answer_questions",
+      "$.chapters[11].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[11].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[11].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[11].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[11].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[11].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[11].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[11].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[11].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[11].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[11].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[11].exam_question_bank.competency_and_case_studies",
+      "$.chapters[11].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[11].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[11].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[11].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[11].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[11].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[11].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[12].chapter_number",
+      "$.chapters[12].chapter_title",
+      "$.chapters[12].zero_omission_notes",
+      "$.chapters[12].zero_omission_notes.summary",
+      "$.chapters[12].zero_omission_notes.detailed_sections",
+      "$.chapters[12].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[12].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[12].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[12].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[12].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[12].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[12].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[12].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[12].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[12].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[12].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[12].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[12].practical_lab_activity_or_methodology_manual",
+      "$.chapters[12].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[12].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[12].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[12].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[12].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[12].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[12].visuals_diagrams_and_tabular_data",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[12].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[12].master_glossary_units_and_formulas",
+      "$.chapters[12].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[12].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[12].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[12].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[12].exam_question_bank",
+      "$.chapters[12].exam_question_bank.textbook_exercises",
+      "$.chapters[12].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[12].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[12].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[12].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[12].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[12].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[12].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[12].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[12].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[12].exam_question_bank.short_answer_questions",
+      "$.chapters[12].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[12].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[12].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[12].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[12].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[12].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[12].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[12].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[12].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[12].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[12].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[12].exam_question_bank.competency_and_case_studies",
+      "$.chapters[12].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[12].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[12].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[12].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[12].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[12].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[12].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.chapters[13].chapter_number",
+      "$.chapters[13].chapter_title",
+      "$.chapters[13].zero_omission_notes",
+      "$.chapters[13].zero_omission_notes.summary",
+      "$.chapters[13].zero_omission_notes.detailed_sections",
+      "$.chapters[13].zero_omission_notes.detailed_sections[0].section_number_and_title",
+      "$.chapters[13].zero_omission_notes.detailed_sections[0].full_explanation",
+      "$.chapters[13].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars",
+      "$.chapters[13].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].type",
+      "$.chapters[13].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].title",
+      "$.chapters[13].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0].content",
+      "$.chapters[13].zero_omission_notes.detailed_sections[1].section_number_and_title",
+      "$.chapters[13].zero_omission_notes.detailed_sections[1].full_explanation",
+      "$.chapters[13].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars",
+      "$.chapters[13].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].type",
+      "$.chapters[13].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].title",
+      "$.chapters[13].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0].content",
+      "$.chapters[13].practical_lab_activity_or_methodology_manual",
+      "$.chapters[13].practical_lab_activity_or_methodology_manual[0].activity_or_method_id",
+      "$.chapters[13].practical_lab_activity_or_methodology_manual[0].aim_or_objective",
+      "$.chapters[13].practical_lab_activity_or_methodology_manual[0].materials_or_prerequisites",
+      "$.chapters[13].practical_lab_activity_or_methodology_manual[0].procedure_or_steps",
+      "$.chapters[13].practical_lab_activity_or_methodology_manual[0].observations_or_results",
+      "$.chapters[13].practical_lab_activity_or_methodology_manual[0].conclusion_or_principle",
+      "$.chapters[13].visuals_diagrams_and_tabular_data",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].figure_id_and_title",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].labels_and_components",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].drawing_or_reading_instructions",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.diagrams_figures_and_maps[0].structural_or_conceptual_explanation",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.data_tables_and_comparisons",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].table_title",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].headers",
+      "$.chapters[13].visuals_diagrams_and_tabular_data.data_tables_and_comparisons[0].rows",
+      "$.chapters[13].master_glossary_units_and_formulas",
+      "$.chapters[13].master_glossary_units_and_formulas[0].term_or_concept",
+      "$.chapters[13].master_glossary_units_and_formulas[0].definition_or_meaning",
+      "$.chapters[13].master_glossary_units_and_formulas[0].si_unit_or_notation",
+      "$.chapters[13].master_glossary_units_and_formulas[0].example_or_application",
+      "$.chapters[13].exam_question_bank",
+      "$.chapters[13].exam_question_bank.textbook_exercises",
+      "$.chapters[13].exam_question_bank.textbook_exercises[0].q_no",
+      "$.chapters[13].exam_question_bank.textbook_exercises[0].question",
+      "$.chapters[13].exam_question_bank.textbook_exercises[0].answer",
+      "$.chapters[13].exam_question_bank.objective_questions_1_mark",
+      "$.chapters[13].exam_question_bank.objective_questions_1_mark[0].type",
+      "$.chapters[13].exam_question_bank.objective_questions_1_mark[0].question",
+      "$.chapters[13].exam_question_bank.objective_questions_1_mark[0].options",
+      "$.chapters[13].exam_question_bank.objective_questions_1_mark[0].answer",
+      "$.chapters[13].exam_question_bank.objective_questions_1_mark[0].explanation",
+      "$.chapters[13].exam_question_bank.short_answer_questions",
+      "$.chapters[13].exam_question_bank.short_answer_questions[0].marks",
+      "$.chapters[13].exam_question_bank.short_answer_questions[0].question",
+      "$.chapters[13].exam_question_bank.short_answer_questions[0].answer",
+      "$.chapters[13].exam_question_bank.analytical_reasoning_questions",
+      "$.chapters[13].exam_question_bank.analytical_reasoning_questions[0].marks",
+      "$.chapters[13].exam_question_bank.analytical_reasoning_questions[0].question",
+      "$.chapters[13].exam_question_bank.analytical_reasoning_questions[0].answer",
+      "$.chapters[13].exam_question_bank.comprehensive_long_answers",
+      "$.chapters[13].exam_question_bank.comprehensive_long_answers[0].marks",
+      "$.chapters[13].exam_question_bank.comprehensive_long_answers[0].question",
+      "$.chapters[13].exam_question_bank.comprehensive_long_answers[0].answer",
+      "$.chapters[13].exam_question_bank.competency_and_case_studies",
+      "$.chapters[13].exam_question_bank.competency_and_case_studies[0].case_scenario",
+      "$.chapters[13].exam_question_bank.competency_and_case_studies[0].qa",
+      "$.chapters[13].exam_question_bank.competency_and_case_studies[0].qa[0].question",
+      "$.chapters[13].exam_question_bank.competency_and_case_studies[0].qa[0].answer",
+      "$.chapters[13].exam_question_bank.common_misconceptions_and_pitfalls",
+      "$.chapters[13].exam_question_bank.common_misconceptions_and_pitfalls[0].common_error_or_misconception",
+      "$.chapters[13].exam_question_bank.common_misconceptions_and_pitfalls[0].correct_fact_or_method",
+      "$.student_portfolio_dashboard",
+      "$.student_portfolio_dashboard.competency_rubric_sliders",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[0].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[0].scale",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[0].current_value",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[1].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[1].scale",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[1].current_value",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[2].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[2].scale",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[2].current_value",
+      "$.student_portfolio_dashboard.project_logs",
+      "$.student_portfolio_dashboard.project_logs[0].log_id",
+      "$.student_portfolio_dashboard.project_logs[0].interactive_log_template",
+      "$.student_portfolio_dashboard.project_logs[0].status",
+      "$.student_portfolio_dashboard.celebratory_badge_unlock_modals",
+      "$.student_portfolio_dashboard.celebratory_badge_unlock_modals[0].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlock_modals[0].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlock_modals[0].unlocked"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Real Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Fundamental Theorem of Arithmetic",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Prime Divisibility",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Polynomials",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Parabola Orientation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Quadratic Relations",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Pair of Linear Equations in Two Variables",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Ratio Conditions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Elimination Choice",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Quadratic Equations",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Standard Form",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Nature of Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Arithmetic Progressions",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "nth Term",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Gauss Method",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Triangles",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "BPT (Thales Theorem)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "AA Similarity Criterion",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Coordinate Geometry",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Distance Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Midpoint Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Introduction to Trigonometry",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "SOH CAH TOA",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Pythagorean Identity",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[8]",
+        "source_title_field": "chapter_title",
+        "source_title": "Some Applications of Trigonometry",
+        "source_number_field": "chapter_number",
+        "source_number": 9
+      },
+      {
+        "source_path": "$.chapters[8].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Alternate Angles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[9]",
+        "source_title_field": "chapter_title",
+        "source_title": "Circles",
+        "source_number_field": "chapter_number",
+        "source_number": 10
+      },
+      {
+        "source_path": "$.chapters[9].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Radius-Tangent Perpendicularity",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[9].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Equal Tangents",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[10]",
+        "source_title_field": "chapter_title",
+        "source_title": "Areas Related to Circles",
+        "source_number_field": "chapter_number",
+        "source_number": 11
+      },
+      {
+        "source_path": "$.chapters[10].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Sector Area",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[11]",
+        "source_title_field": "chapter_title",
+        "source_title": "Surface Areas and Volumes",
+        "source_number_field": "chapter_number",
+        "source_number": 12
+      },
+      {
+        "source_path": "$.chapters[11].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Exposed Surface Only",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[11].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Additive Volume",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[12]",
+        "source_title_field": "chapter_title",
+        "source_title": "Statistics",
+        "source_number_field": "chapter_number",
+        "source_number": 13
+      },
+      {
+        "source_path": "$.chapters[12].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Step-Deviation Mean",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[12].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "3 Median Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[13]",
+        "source_title_field": "chapter_title",
+        "source_title": "Probability",
+        "source_number_field": "chapter_number",
+        "source_number": 14
+      },
+      {
+        "source_path": "$.chapters[13].zero_omission_notes.detailed_sections[0].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Probability Definition",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[13].zero_omission_notes.detailed_sections[1].margin_notes_and_sidebars[0]",
+        "source_title_field": "title",
+        "source_title": "Complement Rule",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 40,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject_name": "Mathematics",
+    "grade_or_target_level": "Class 10 (NCERT / CBSE)",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Real Numbers",
+        "zero_omission_notes": {
+          "summary": "Chapter 1 covers the Fundamental Theorem of Arithmetic, prime factorization, HCF and LCM calculations and their algebraic relation, and formal proofs of irrationality for square roots of prime numbers using proof by contradiction.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "1.1 Fundamental Theorem of Arithmetic",
+              "full_notes": "Every composite number can be expressed uniquely as a product of primes, up to the order of factors. For any two positive integers a and b, HCF(a,b) * LCM(a,b) = a * b.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Theorem 1.1",
+                  "title": "Fundamental Theorem of Arithmetic",
+                  "content": "Every composite number can be factorised as a product of primes uniquely."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "1.2 Revisiting Irrational Numbers",
+              "full_notes": "Proof by contradiction: Assume √p is rational (p/q in lowest terms). Show p divides both p and q, contradicting coprime assumption.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Theorem 1.2",
+                  "title": "Prime Divisibility",
+                  "content": "Let p be a prime number. If p divides a^2, then p divides a, where a is a positive integer."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-101",
+            "aim_or_objective": "Determine HCF and LCM of 96 and 404 via Prime Factorization.",
+            "materials_or_prerequisites": [
+              "Prime factor trees"
+            ],
+            "procedure_or_steps": [
+              "Write 96 = 2^5 * 3",
+              "Write 404 = 2^2 * 101",
+              "HCF = 2^2 = 4",
+              "LCM = (96 * 404) / 4 = 9696"
+            ],
+            "observations_or_results": "HCF is product of lowest common powers; LCM is product of highest powers.",
+            "conclusion_or_principle": "HCF(a,b) * LCM(a,b) = a * b is verified."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 1.1 Prime Factor Tree",
+              "labels_and_components": [
+                "Composite Root",
+                "Prime Branches"
+              ],
+              "drawing_or_reading_instructions": "Decompose number iteratively into prime factors.",
+              "structural_or_conceptual_explanation": "Visual proof of prime factorization uniqueness."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "HCF vs LCM Selection Criteria",
+              "headers": [
+                "Measure",
+                "Factor Power Selection"
+              ],
+              "rows": [
+                [
+                  "HCF",
+                  "Smallest power of each common prime factor"
+                ],
+                [
+                  "LCM",
+                  "Greatest power of each prime factor involved"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "HCF and LCM Identity",
+            "definition_or_meaning": "Product of HCF and LCM equals product of two positive integers.",
+            "si_unit_or_notation": "HCF(a,b) * LCM(a,b) = a * b",
+            "example_or_application": "HCF(6,20)=2, LCM(6,20)=60 -> 2*60 = 120 = 6*20"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 1.1 Q1",
+              "question": "Express 140 as product of prime factors.",
+              "answer": "140 = 2^2 * 5 * 7."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "If HCF(306, 657) = 9, LCM is:",
+              "options": [
+                "A) 22338",
+                "B) 22339",
+                "C) 22330",
+                "D) 22340"
+              ],
+              "answer": "A",
+              "explanation": "LCM = (306 * 657) / 9 = 22338."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Prove that 3 + 2√5 is irrational.",
+              "answer": "Assume 3 + 2√5 = a/b (rational). Then √5 = (a - 3b)/(2b). Left side is irrational while right side is rational, contradiction!"
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Check whether 6^n can end with digit 0 for any natural number n.",
+              "answer": "If 6^n ends in 0, 5 must be in its prime factorization. But 6^n = (2*3)^n = 2^n * 3^n. By uniqueness of FTA, 5 is not a factor. Hence 6^n never ends in 0."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Prove that √2 is irrational using proof by contradiction.",
+              "answer": "Let √2 = a/b where a,b are coprime integers. 2 = a^2/b^2 => a^2 = 2b^2. Thus 2 divides a^2 => 2 divides a. Let a = 2c. Then 4c^2 = 2b^2 => b^2 = 2c^2 => 2 divides b. Thus 2 divides both a and b, contradicting that a and b are coprime. Hence √2 is irrational."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "A seminar has 60 participants in Hindi, 84 in English, and 108 in Mathematics. Rooms must seat equal participants of same subject.",
+              "qa": [
+                {
+                  "question": "Find minimum number of rooms needed.",
+                  "answer": "Max per room = HCF(60, 84, 108) = 12. Rooms needed = (60/12) + (84/12) + (108/12) = 5 + 7 + 9 = 21 rooms."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Applying HCF * LCM = a * b * c for three numbers.",
+              "correct_fact_or_method": "The product relation HCF(a,b)*LCM(a,b) = a*b holds ONLY for two numbers."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Polynomials",
+        "zero_omission_notes": {
+          "summary": "Covers degrees of polynomials, geometric interpretation of zeroes as x-axis intercepts, and algebraic relationships between zeroes and coefficients of quadratic and cubic polynomials.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "2.1 Geometrical Meaning of Zeroes",
+              "full_notes": "Zeroes of p(x) correspond to x-coordinates where y = p(x) cuts x-axis. A polynomial of degree n has at most n real zeroes.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Graph Note",
+                  "title": "Parabola Orientation",
+                  "content": "y = ax^2 + bx + c opens upwards if a > 0, downwards if a < 0."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "2.2 Relationship between Zeroes and Coefficients",
+              "full_notes": "For quadratic ax^2 + bx + c with zeroes α, β: α + β = -b/a and αβ = c/a.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Formula Box",
+                  "title": "Quadratic Relations",
+                  "content": "Sum = -b/a, Product = c/a"
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-201",
+            "aim_or_objective": "Find zeroes of x^2 + 7x + 10 and verify coefficient relations.",
+            "materials_or_prerequisites": [
+              "Factoring by splitting middle term"
+            ],
+            "procedure_or_steps": [
+              "x^2 + 2x + 5x + 10 = 0",
+              "(x+2)(x+5) = 0 => zeroes α = -2, β = -5",
+              "α + β = -7 = -b/a",
+              "αβ = 10 = c/a"
+            ],
+            "observations_or_results": "Zeroes match coefficient formulas perfectly.",
+            "conclusion_or_principle": "Coefficients uniquely determine zero sum and product."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 2.1 Parabola Zeroes",
+              "labels_and_components": [
+                "Vertex",
+                "x-intercepts",
+                "y-intercept"
+              ],
+              "drawing_or_reading_instructions": "Identify number of x-axis intersections.",
+              "structural_or_conceptual_explanation": "Number of x-axis crossings equals number of real roots."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Polynomial Classification",
+              "headers": [
+                "Polynomial Type",
+                "Degree",
+                "General Form",
+                "Max Zeroes"
+              ],
+              "rows": [
+                [
+                  "Linear",
+                  "1",
+                  "ax + b",
+                  "1"
+                ],
+                [
+                  "Quadratic",
+                  "2",
+                  "ax^2 + bx + c",
+                  "2"
+                ],
+                [
+                  "Cubic",
+                  "3",
+                  "ax^3 + bx^2 + cx + d",
+                  "3"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Quadratic Polynomial Formation",
+            "definition_or_meaning": "Constructing quadratic polynomial from zeroes α and β.",
+            "si_unit_or_notation": "p(x) = k[x^2 - (α + β)x + αβ]",
+            "example_or_application": "If α+β=3, αβ=2 -> p(x) = x^2 - 3x + 2"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 2.2 Q1(i)",
+              "question": "Find zeroes of x^2 - 2x - 8 and verify relationship.",
+              "answer": "x^2 - 4x + 2x - 8 = (x-4)(x+2) => zeroes 4 and -2. Sum = 2 = -(-2)/1; Product = -8 = -8/1."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "The number of zeroes of y = p(x) intersecting x-axis at 3 distinct points is:",
+              "options": [
+                "A) 1",
+                "B) 2",
+                "C) 3",
+                "D) 0"
+              ],
+              "answer": "C",
+              "explanation": "Each x-axis intersection represents one real zero."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Find quadratic polynomial with sum -3 and product 2 of zeroes.",
+              "answer": "p(x) = x^2 - (sum)x + product = x^2 - (-3)x + 2 = x^2 + 3x + 2."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "If α and β are zeroes of 2x^2 - 4x + 5, find α^2 + β^2.",
+              "answer": "α + β = 2, αβ = 5/2. α^2 + β^2 = (α+β)^2 - 2αβ = (2)^2 - 2(5/2) = 4 - 5 = -1."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "If zeroes of polynomial x^3 - 3x^2 + x + 1 are a-b, a, a+b, find a and b.",
+              "answer": "Sum of zeroes = a-b + a + a+b = 3a = -(-3)/1 = 3 => a = 1. Product of zeroes = (a-b)(a)(a+b) = a(a^2 - b^2) = 1(1 - b^2) = -1/1 = -1 => 1 - b^2 = -1 => b^2 = 2 => b = ±√2."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "A bridge arch is modeled as p(x) = -x^2 + 2x + 8.",
+              "qa": [
+                {
+                  "question": "Find the zeroes of the arch path.",
+                  "answer": "-x^2 + 2x + 8 = 0 => x^2 - 2x - 8 = 0 => (x-4)(x+2) = 0 => x = 4 and x = -2."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Writing sum of zeroes as b/a instead of -b/a.",
+              "correct_fact_or_method": "Always include the negative sign: α + β = -b/a."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Pair of Linear Equations in Two Variables",
+        "zero_omission_notes": {
+          "summary": "Covers systems of two linear equations in two variables, graphical representation (intersecting, parallel, coincident lines), algebraic solutions (substitution, elimination), and consistency conditions based on coefficient ratios.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "3.1 Pair of Linear Equations & Consistency",
+              "full_explanation": "a1 x + b1 y + c1 = 0 and a2 x + b2 y + c2 = 0. Intersecting (a1/a2 != b1/b2 -> unique solution), Coincident (a1/a2 = b1/b2 = c1/c2 -> infinite solutions), Parallel (a1/a2 = b1/b2 != c1/c2 -> no solution).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Summary Box",
+                  "title": "Ratio Conditions",
+                  "content": "Unique: a1/a2 != b1/b2; Infinite: a1/a2 = b1/b2 = c1/c2; No solution: a1/a2 = b1/b2 != c1/c2"
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "3.2 Algebraic Solution Methods",
+              "full_explanation": "Substitution: isolate one variable and substitute. Elimination: equalize coefficients of one variable by multiplication and add/subtract.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Tip",
+                  "title": "Elimination Choice",
+                  "full_content": "Choose variable with simpler coefficients to minimize arithmetic errors."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-301",
+            "aim_or_objective": "Solve system 9x - 4y = 2000 and 7x - 3y = 2000 via Elimination.",
+            "materials_or_prerequisites": [
+              "Elimination method"
+            ],
+            "procedure_or_steps": [
+              "Multiply Eq 1 by 3: 27x - 12y = 6000",
+              "Multiply Eq 2 by 4: 28x - 12y = 8000",
+              "Subtract: x = 2000",
+              "Substitute x = 2000: 9(2000) - 4y = 2000 => y = 4000"
+            ],
+            "observations_or_results": "x = 2000, y = 4000.",
+            "conclusion_or_principle": "Unique point of intersection (2000, 4000)."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 3.1 Linear System Lines",
+              "labels_and_components": [
+                "Intersecting Lines",
+                "Parallel Lines",
+                "Coincident Lines"
+              ],
+              "drawing_or_reading_instructions": "Plot both linear equations on Cartesian coordinate plane.",
+              "structural_or_conceptual_explanation": "Geometrical proof of consistent vs inconsistent systems."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "System Consistency Matrix",
+              "headers": [
+                "Ratios Comparison",
+                "Graphical Form",
+                "Algebraic Solutions",
+                "System Nature"
+              ],
+              "rows": [
+                [
+                  "a1/a2 != b1/b2",
+                  "Intersecting lines",
+                  "Exactly 1 solution",
+                  "Consistent"
+                ],
+                [
+                  "a1/a2 = b1/b2 = c1/c2",
+                  "Coincident lines",
+                  "Infinitely many",
+                  "Dependent Consistent"
+                ],
+                [
+                  "a1/a2 = b1/b2 != c1/c2",
+                  "Parallel lines",
+                  "No solution",
+                  "Inconsistent"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Consistency Condition",
+            "definition_or_meaning": "Ratio tests to check system solvability.",
+            "si_unit_or_notation": "a1/a2 vs b1/b2 vs c1/c2",
+            "example_or_application": "2x+3y=9 and 4x+6y=18 -> 2/4 = 3/6 = 9/18 -> Infinite"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 3.2 Q2(i)",
+              "question": "Check if 5x - 4y + 8 = 0 and 7x + 6y - 9 = 0 intersect, are parallel, or coincident.",
+              "answer": "a1/a2 = 5/7, b1/b2 = -4/6 = -2/3. Since 5/7 != -2/3, lines intersect at a unique point."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "If 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, k equals:",
+              "options": [
+                "A) 15/4",
+                "B) 9/5",
+                "C) 15/2",
+                "D) 4/15"
+              ],
+              "answer": "A",
+              "explanation": "3/2 = 2k/5 => 4k = 15 => k = 15/4."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Solve x + y = 14 and x - y = 4 by substitution.",
+              "answer": "x = 14 - y. (14-y) - y = 4 => 14 - 2y = 4 => 2y = 10 => y = 5, x = 9."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Sum of digits of a two-digit number is 9. Nine times this number is twice the number obtained by reversing digits. Find the number.",
+              "answer": "Number = 10x + y. x + y = 9. 9(10x + y) = 2(10y + x) => 90x + 9y = 20y + 2x => 88x = 11y => y = 8x. x + 8x = 9 => x = 1, y = 8. Number is 18."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Solve graphically: 2x + y = 6 and 2x - y = 2. Find vertices of triangle formed by these lines and x-axis.",
+              "answer": "2x + y = 6 passes through (0,6), (3,0). 2x - y = 2 passes through (0,-2), (1,0). Intersection point is (2,2). Triangle vertices on x-axis are (1,0), (3,0), and (2,2)."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Test scoring: 3 marks for right answer, 1 deducted for wrong. Score = 40.",
+              "qa": [
+                {
+                  "question": "Form linear equation if x = right and y = wrong answers.",
+                  "answer": "3x - y = 40."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Comparing ratios without arranging constants on the same side of equal sign.",
+              "correct_fact_or_method": "Always rewrite equations as ax + by + c = 0 before extracting c1 and c2."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Quadratic Equations",
+        "zero_omission_notes": {
+          "summary": "Covers second-degree equations ax^2 + bx + c = 0 (a != 0), standard form, solving by factorization and quadratic formula, and analyzing nature of roots via discriminant D = b^2 - 4ac.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "4.1 Standard Form & Factorization",
+              "full_explanation": "Quadratic equation standard form: ax^2 + bx + c = 0. Factorization splits middle term bx into two terms whose product is a*c.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Definition",
+                  "title": "Standard Form",
+                  "content": "ax^2 + bx + c = 0 where a != 0."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "4.2 Quadratic Formula & Discriminant",
+              "full_explanation": "Roots x = (-b ± √(b^2 - 4ac)) / (2a). Discriminant D = b^2 - 4ac: D > 0 (2 distinct real roots), D = 0 (2 equal real roots), D < 0 (no real roots).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Formula Box",
+                  "title": "Nature of Roots",
+                  "content": "D > 0: 2 distinct roots; D = 0: equal roots; D < 0: no real roots."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-401",
+            "aim_or_objective": "Solve 2x^2 - 5x + 3 = 0 using Quadratic Formula.",
+            "materials_or_prerequisites": [
+              "Quadratic formula"
+            ],
+            "procedure_or_steps": [
+              "a = 2, b = -5, c = 3",
+              "D = b^2 - 4ac = 25 - 24 = 1",
+              "x = (5 ± √1) / 4 = (5 ± 1) / 4",
+              "x = 6/4 = 3/2 or x = 4/4 = 1"
+            ],
+            "observations_or_results": "Two distinct real roots: x = 3/2 and x = 1.",
+            "conclusion_or_principle": "D = 1 > 0 confirms two distinct real roots."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 4.1 Discriminant Curves",
+              "labels_and_components": [
+                "D > 0 (Two Crossings)",
+                "D = 0 (Touches Axis)",
+                "D < 0 (No Crossing)"
+              ],
+              "drawing_or_reading_instructions": "Observe vertical position of parabola relative to horizontal axis.",
+              "structural_or_conceptual_explanation": "Graphical proof of discriminant nature of roots."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Discriminant & Nature of Roots Table",
+              "headers": [
+                "Discriminant (D)",
+                "Nature of Roots",
+                "Formula for Roots"
+              ],
+              "rows": [
+                [
+                  "D > 0",
+                  "Two distinct real roots",
+                  "(-b ± √D) / (2a)"
+                ],
+                [
+                  "D = 0",
+                  "Two equal real roots",
+                  "-b / (2a)"
+                ],
+                [
+                  "D < 0",
+                  "No real roots",
+                  "N/A in R"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Quadratic Formula",
+            "definition_or_meaning": "Universal algebraic formula to compute roots of ax^2 + bx + c = 0.",
+            "si_unit_or_notation": "x = (-b ± √(b^2 - 4ac)) / (2a)",
+            "example_or_application": "For x^2 - 4x + 4 = 0: x = (4 ± 0)/2 = 2"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 4.3 Q1(i)",
+              "question": "Find nature of roots of 2x^2 - 3x + 5 = 0.",
+              "answer": "D = (-3)^2 - 4(2)(5) = 9 - 40 = -31 < 0. No real roots."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Value of k for which 2x^2 + kx + 3 = 0 has equal roots:",
+              "options": [
+                "A) ±2√6",
+                "B) ±√6",
+                "C) ±3√2",
+                "D) ±6"
+              ],
+              "answer": "A",
+              "explanation": "D = k^2 - 4(2)(3) = 0 => k^2 = 24 => k = ±2√6."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Find roots of 2x^2 - 5x + 3 = 0 by factorization.",
+              "answer": "2x^2 - 2x - 3x + 3 = 0 => 2x(x-1) - 3(x-1) = 0 => (2x-3)(x-1) = 0 => x = 3/2 or x = 1."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Find two consecutive odd positive integers whose sum of squares is 290.",
+              "answer": "Let integers be x and x+2. x^2 + (x+2)^2 = 290 => 2x^2 + 4x + 4 = 290 => 2x^2 + 4x - 286 = 0 => x^2 + 2x - 143 = 0 => (x+13)(x-11) = 0. Since positive, x = 11. Integers are 11 and 13."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "A motorboat speed is 18 km/h in still water. Takes 1 hr more to go 24 km upstream than downstream. Find speed of stream.",
+              "answer": "Let stream speed = x km/h. Upstream = 18-x, Downstream = 18+x. 24/(18-x) - 24/(18+x) = 1 => 24(18+x - 18+x)/(324 - x^2) = 1 => 48x = 324 - x^2 => x^2 + 48x - 324 = 0 => (x+54)(x-6) = 0. Speed cannot be negative => x = 6 km/h."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "A rectangular garden of perimeter 80 m and area 400 m^2 is designed.",
+              "qa": [
+                {
+                  "question": "Is it possible to design such a park? If so find dimensions.",
+                  "answer": "2(x+y)=80 => y=40-x. x(40-x)=400 => x^2 - 40x + 400 = 0 => (x-20)^2 = 0 => x=20, y=20. Yes, square of side 20 m."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Forgetting to place denominator (2a) under both -b and the root term in quadratic formula.",
+              "correct_fact_or_method": "The entire expression (-b ± √D) is divided by 2a."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Arithmetic Progressions",
+        "zero_omission_notes": {
+          "summary": "Introduces numerical sequences with constant common difference d, deriving general term formula an = a + (n-1)d and sum formula Sn = n/2 [2a + (n-1)d] or Sn = n/2 [a + l].",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "5.1 Definition & General Term of an AP",
+              "full_explanation": "An AP is a sequence a, a+d, a+2d, ... where d is common difference (d = a_(k+1) - a_k). The nth term an = a + (n-1)d.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Formula Box",
+                  "title": "nth Term",
+                  "content": "an = a + (n - 1)d"
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "5.2 Sum of First n Terms of an AP",
+              "full_explanation": "Sn = n/2 [2a + (n-1)d] or Sn = n/2 [a + l] where l is the last term.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Historical Note",
+                  "title": "Gauss Method",
+                  "content": "Sum of first n natural numbers = n(n+1)/2."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-501",
+            "aim_or_objective": "Find sum of first 20 terms of AP: 2, 7, 12...",
+            "materials_or_prerequisites": [
+              "AP sum formula"
+            ],
+            "procedure_or_steps": [
+              "a = 2, d = 5, n = 20",
+              "S20 = 20/2 [2(2) + (20-1)5]",
+              "S20 = 10 [4 + 95] = 10 * 99 = 990"
+            ],
+            "observations_or_results": "Sum of 20 terms is 990.",
+            "conclusion_or_principle": "Sn formula aggregates linear arithmetic sequence quickly."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 5.1 Step Staircase of AP",
+              "labels_and_components": [
+                "First step a",
+                "Step height increment d"
+              ],
+              "drawing_or_reading_instructions": "Draw steps with equal height differences.",
+              "structural_or_conceptual_explanation": "Visualizing constant common difference."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "AP Master Formulas",
+              "headers": [
+                "Target Quantity",
+                "Formula",
+                "Inputs Needed"
+              ],
+              "rows": [
+                [
+                  "nth Term (an)",
+                  "a + (n-1)d",
+                  "a, n, d"
+                ],
+                [
+                  "Sum of n terms (Sn)",
+                  "n/2 [2a + (n-1)d]",
+                  "a, n, d"
+                ],
+                [
+                  "Sum using Last Term",
+                  "n/2 [a + l]",
+                  "a, n, l"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Common Difference (d)",
+            "definition_or_meaning": "Constant difference between consecutive terms.",
+            "si_unit_or_notation": "d = a_(n) - a_(n-1)",
+            "example_or_application": "For 5, 8, 11..., d = 3"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 5.2 Q4",
+              "question": "Which term of AP 3, 8, 13, 18... is 78?",
+              "answer": "a=3, d=5. 3 + (n-1)5 = 78 => 5(n-1) = 75 => n-1 = 15 => n = 16. 16th term."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "11th term of AP -3, -1/2, 2... is:",
+              "options": [
+                "A) 28",
+                "B) 22",
+                "C) -38",
+                "D) -46.5"
+              ],
+              "answer": "B",
+              "explanation": "a = -3, d = 5/2. a11 = -3 + 10(5/2) = 22."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Find sum of first 22 terms of AP 8, 3, -2...",
+              "answer": "a=8, d=-5, n=22. S22 = 11 [16 + 21(-5)] = 11 [16 - 105] = 11(-89) = -979."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "If sum of first 7 terms of AP is 49 and that of 17 terms is 289, find sum of first n terms.",
+              "answer": "S7 = 49 => a+3d = 7. S17 = 289 => a+8d = 17. 5d = 10 => d = 2, a = 1. Sn = n/2 [2 + (n-1)2] = n^2."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "A manufacturer produced 600 TVs in 3rd year and 700 in 7th year. Assuming uniform growth, find total production in first 7 years.",
+              "answer": "a3 = a+2d = 600, a7 = a+6d = 700 => 4d = 100 => d = 25. a = 550. S7 = 7/2 [2(550) + 6(25)] = 7/2 [1100 + 150] = 7/2 [1250] = 4375 TVs."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "A ladder has rungs 25 cm apart. Rungs decrease uniformly in length from 45 cm at bottom to 25 cm at top. Total length of ladder = 2.5 m.",
+              "qa": [
+                {
+                  "question": "Find total length of wood required for rungs.",
+                  "answer": "Number of rungs n = (250 / 25) + 1 = 11. a = 45, l = 25. S11 = 11/2 [45 + 25] = 11/2 [70] = 385 cm."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Confusing an (value of nth term) with n (position index).",
+              "correct_fact_or_method": "n is always a positive integer representing position; an is the term value."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Triangles",
+        "zero_omission_notes": {
+          "summary": "Covers geometric similarity, Basic Proportionality Theorem (Thales Theorem) and its converse, and criteria for triangle similarity (AAA, SSS, SAS).",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "6.1 Basic Proportionality Theorem",
+              "full_explanation": "If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Theorem 6.1",
+                  "title": "BPT (Thales Theorem)",
+                  "content": "In ΔABC, if DE || BC, then AD/DB = AE/EC."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "6.2 Criteria for Similarity",
+              "full_explanation": "AAA, SSS, SAS criteria for ΔABC ~ ΔDEF. Corresponding angles are equal and corresponding sides are in the same ratio.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Rule Box",
+                  "title": "AA Similarity Criterion",
+                  "content": "If two angles of one triangle equal two angles of another, triangles are similar."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-601",
+            "aim_or_objective": "Verify Basic Proportionality Theorem.",
+            "materials_or_prerequisites": [
+              "Ruler, protractor, set squares"
+            ],
+            "procedure_or_steps": [
+              "Draw ΔABC",
+              "Draw DE parallel to BC",
+              "Measure AD, DB, AE, EC",
+              "Compute ratios AD/DB and AE/EC"
+            ],
+            "observations_or_results": "AD/DB = AE/EC.",
+            "conclusion_or_principle": "Parallel line cuts sides proportionally."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 6.1 BPT Construction",
+              "labels_and_components": [
+                "ΔABC",
+                "Parallel line DE",
+                "Divided segments"
+              ],
+              "drawing_or_reading_instructions": "Draw DE parallel to base BC.",
+              "structural_or_conceptual_explanation": "Geometric foundation for triangle similarity."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Triangle Similarity Criteria Summary",
+              "headers": [
+                "Criterion",
+                "Condition Required"
+              ],
+              "rows": [
+                [
+                  "AAA / AA",
+                  "Corresponding angles are equal"
+                ],
+                [
+                  "SSS",
+                  "All 3 corresponding side ratios are equal"
+                ],
+                [
+                  "SAS",
+                  "2 side ratios equal and included angle equal"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Similarity Ratio Property",
+            "definition_or_meaning": "Ratio of corresponding sides of similar triangles.",
+            "si_unit_or_notation": "AB/DE = BC/EF = AC/DF",
+            "example_or_application": "If scale factor is 2, all linear dimensions double."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 6.2 Q1(i)",
+              "question": "In ΔABC, DE || BC. AD = 1.5 cm, DB = 3 cm, AE = 1 cm. Find EC.",
+              "answer": "AD/DB = AE/EC => 1.5 / 3 = 1 / EC => 1/2 = 1/EC => EC = 2 cm."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "In ΔABC, DE || BC such that AD/DB = 3/5. If AC = 5.6 cm, AE is:",
+              "options": [
+                "A) 2.1 cm",
+                "B) 3.1 cm",
+                "C) 2.8 cm",
+                "D) 2.5 cm"
+              ],
+              "answer": "A",
+              "explanation": "AE/AC = AD/AB = 3/8 => AE = (3/8)*5.6 = 2.1 cm."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "State and prove BPT theorem statement.",
+              "answer": "Statement: If a line is drawn parallel to one side of a triangle, it divides the other two sides in the same ratio. Proof uses area ratio of triangles with common heights."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Diagonals of trapezium ABCD with AB || DC intersect at O. Show AO/BO = CO/DO.",
+              "answer": "In ΔAOB and ΔCOD: ∠OAB = ∠OCD, ∠OBA = ∠ODC (alternate interior). ΔAOB ~ ΔCOD (AA) => AO/CO = BO/DO => AO/BO = CO/DO."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "If a line intersects sides AB and AC of ΔABC at D and E respectively and is parallel to BC, prove AD/AB = AE/AC.",
+              "answer": "Since DE || BC, AD/DB = AE/EC by BPT. Taking reciprocals: DB/AD = EC/AE. Adding 1 to both sides: (DB+AD)/AD = (EC+AE)/AE => AB/AD = AC/AE. Inverting back: AD/AB = AE/AC."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Girl height 90 cm walks away from lamp-post (height 3.6 m) at speed 1.2 m/s.",
+              "qa": [
+                {
+                  "question": "Find length of her shadow after 4 seconds.",
+                  "answer": "Distance walked = 1.2 * 4 = 4.8 m. By similar triangles: x / (x + 4.8) = 0.9 / 3.6 = 1/4 => 4x = x + 4.8 => 3x = 4.8 => x = 1.6 m."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Listing vertices out of order when stating triangle similarity.",
+              "correct_fact_or_method": "Always maintain exact corresponding vertex order: ΔABC ~ ΔDEF."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Coordinate Geometry",
+        "zero_omission_notes": {
+          "summary": "Covers distance formula d = √[(x2-x1)^2 + (y2-y1)^2], section formula for internal division [(m1x2+m2x1)/(m1+m2), (m1y2+m2y1)/(m1+m2)], and midpoint formula.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "7.1 Distance Formula",
+              "full_explanation": "Distance between P(x1, y1) and Q(x2, y2) is √[(x2-x1)^2 + (y2-y1)^2]. Distance from origin (0,0) to (x,y) is √(x^2 + y^2).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Formula Box",
+                  "title": "Distance Formula",
+                  "content": "d = √[(x2 - x1)^2 + (y2 - y1)^2]"
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "7.2 Section Formula",
+              "full_explanation": "Point P dividing segment joining A(x1,y1) and B(x2,y2) in ratio m1:m2 has coordinates [(m1x2+m2x1)/(m1+m2), (m1y2+m2y1)/(m1+m2)]. Midpoint is [(x1+x2)/2, (y1+y2)/2].",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Special Case",
+                  "title": "Midpoint Formula",
+                  "content": "Midpoint = [(x1 + x2)/2, (y1 + y2)/2]"
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-701",
+            "aim_or_objective": "Determine division ratio k:1 using section formula.",
+            "materials_or_prerequisites": [
+              "Section formula"
+            ],
+            "procedure_or_steps": [
+              "Let point on y-axis be (0, y)",
+              "Set x-coordinate formula to 0: 0 = (k x2 + x1) / (k + 1)",
+              "Solve for k directly"
+            ],
+            "observations_or_results": "Yields exact internal or external division ratio.",
+            "conclusion_or_principle": "Setting one coordinate to zero isolates ratio k."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 7.1 Line Segment Division",
+              "labels_and_components": [
+                "Endpoints A, B",
+                "Dividing point P",
+                "Ratios m1, m2"
+              ],
+              "drawing_or_reading_instructions": "Draw segment AB in Cartesian plane with dividing point P.",
+              "structural_or_conceptual_explanation": "Geometrical representation of section formula."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Coordinate Geometry Formulas",
+              "headers": [
+                "Concept",
+                "Formula"
+              ],
+              "rows": [
+                [
+                  "Distance",
+                  "√[(x2-x1)^2 + (y2-y1)^2]"
+                ],
+                [
+                  "Section Formula (m1:m2)",
+                  "[(m1x2+m2x1)/(m1+m2), (m1y2+m2y1)/(m1+m2)]"
+                ],
+                [
+                  "Midpoint",
+                  "[(x1+x2)/2, (y1+y2)/2]"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Section Formula Ratio",
+            "definition_or_meaning": "Calculates coordinates dividing line segment in ratio m1:m2.",
+            "si_unit_or_notation": "P(x,y) = [(m1x2+m2x1)/(m1+m2), (m1y2+m2y1)/(m1+m2)]",
+            "example_or_application": "Ratio 1:1 yields midpoint."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 7.1 Q1(i)",
+              "question": "Find distance between (2, 3) and (4, 1).",
+              "answer": "d = √[(4-2)^2 + (1-3)^2] = √[4 + 4] = √8 = 2√2 units."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Distance of point P(-6, 8) from origin is:",
+              "options": [
+                "A) 8",
+                "B) 2√7",
+                "C) 10",
+                "D) 6"
+              ],
+              "answer": "C",
+              "explanation": "d = √[(-6)^2 + 8^2] = √[36 + 64] = √100 = 10."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Find point on x-axis equidistant from (2, -5) and (-2, 9).",
+              "answer": "Let point be (x, 0). (x-2)^2 + 25 = (x+2)^2 + 81 => -4x + 29 = 4x + 85 => -8x = 56 => x = -7. Point is (-7, 0)."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Find ratio in which line segment joining A(1, -5) and B(-4, 5) is divided by x-axis.",
+              "answer": "Point on x-axis is (x, 0). Ratio k:1. y = (5k - 5)/(k+1) = 0 => 5k = 5 => k = 1. Ratio is 1:1."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Find coordinates of points of trisection of line segment joining (4, -1) and (-2, -3).",
+              "answer": "Point P divides in ratio 1:2: P = [(1(-2)+2(4))/3, (1(-3)+2(-1))/3] = (2, -5/3). Point Q divides in ratio 2:1: Q = [(2(-2)+1(4))/3, (2(-3)+1(-1))/3] = (0, -7/3)."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Students placed at A(3,6), B(6,9), C(9,6), D(6,3).",
+              "qa": [
+                {
+                  "question": "Check if ABCD forms a square.",
+                  "answer": "AB = BC = CD = DA = √18 = 3√2. Diagonals AC = BD = 6. All sides equal and diagonals equal => ABCD is a square."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Writing point on x-axis as (0, x) instead of (x, 0).",
+              "correct_fact_or_method": "Points on x-axis always have y-coordinate equal to 0."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Introduction to Trigonometry",
+        "zero_omission_notes": {
+          "summary": "Covers trigonometric ratios (sin, cos, tan, cosec, sec, cot) for acute angles in right triangles, standard angle values (0°, 30°, 45°, 60°, 90°), and core Pythagorean identities.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "8.1 Trigonometric Ratios",
+              "full_explanation": "For acute angle θ: sin θ = Opp/Hyp, cos θ = Adj/Hyp, tan θ = Opp/Adj. Reciprocals: cosec θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Mnemonic",
+                  "title": "SOH CAH TOA",
+                  "content": "Sin=Opp/Hyp, Cos=Adj/Hyp, Tan=Opp/Adj"
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "8.2 Trigonometric Identities",
+              "full_explanation": "1) sin^2 θ + cos^2 θ = 1; 2) 1 + tan^2 θ = sec^2 θ; 3) 1 + cot^2 θ = cosec^2 θ.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Identity Box",
+                  "title": "Pythagorean Identity",
+                  "content": "sin^2 θ + cos^2 θ = 1"
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-801",
+            "aim_or_objective": "Prove (cosec θ - cot θ)^2 = (1 - cos θ) / (1 + cos θ).",
+            "materials_or_prerequisites": [
+              "Trigonometric identity rules"
+            ],
+            "procedure_or_steps": [
+              "LHS = (1/sin θ - cos θ/sin θ)^2 = (1 - cos θ)^2 / sin^2 θ",
+              "Substitute sin^2 θ = 1 - cos^2 θ = (1 - cos θ)(1 + cos θ)",
+              "Cancel common factor (1 - cos θ)",
+              "LHS = (1 - cos θ) / (1 + cos θ) = RHS"
+            ],
+            "observations_or_results": "LHS equals RHS.",
+            "conclusion_or_principle": "Converting to sin and cos proves algebraic trigonometric identity."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 8.1 Right Triangle Ratios",
+              "labels_and_components": [
+                "Hypotenuse",
+                "Opposite Side",
+                "Adjacent Side"
+              ],
+              "drawing_or_reading_instructions": "Identify opposite and adjacent sides relative to angle A.",
+              "structural_or_conceptual_explanation": "Base definition for trigonometric ratios."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Standard Trigonometric Values",
+              "headers": [
+                "Ratio / Angle",
+                "0°",
+                "30°",
+                "45°",
+                "60°",
+                "90°"
+              ],
+              "rows": [
+                [
+                  "sin θ",
+                  "0",
+                  "1/2",
+                  "1/√2",
+                  "√3/2",
+                  "1"
+                ],
+                [
+                  "cos θ",
+                  "1",
+                  "√3/2",
+                  "1/√2",
+                  "1/2",
+                  "0"
+                ],
+                [
+                  "tan θ",
+                  "0",
+                  "1/√3",
+                  "1",
+                  "√3",
+                  "Undefined"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Pythagorean Trigonometric Identities",
+            "definition_or_meaning": "Fundamental equations relating square of trigonometric ratios.",
+            "si_unit_or_notation": "sin^2 θ + cos^2 θ = 1, 1 + tan^2 θ = sec^2 θ, 1 + cot^2 θ = cosec^2 θ",
+            "example_or_application": "If sin θ = 3/5, cos θ = √(1 - 9/25) = 4/5"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 8.1 Q1",
+              "question": "In ΔABC, right-angled at B, AB=24 cm, BC=7 cm. Find sin A, cos A.",
+              "answer": "AC = √(24^2 + 7^2) = √625 = 25. sin A = 7/25, cos A = 24/25."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Value of (sin 30° + cos 30°) - (sin 60° + cos 60°) is:",
+              "options": [
+                "A) 0",
+                "B) 1",
+                "C) 2",
+                "D) -1"
+              ],
+              "answer": "A",
+              "explanation": "(1/2 + √3/2) - (√3/2 + 1/2) = 0."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Evaluate 2 tan^2 45° + cos^2 30° - sin^2 60°.",
+              "answer": "2(1)^2 + (√3/2)^2 - (√3/2)^2 = 2 + 3/4 - 3/4 = 2."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "If sin (A - B) = 1/2 and cos (A + B) = 1/2, find A and B.",
+              "answer": "A - B = 30°, A + B = 60°. Adding: 2A = 90° => A = 45°. B = 15°."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Prove that sin A (1 + tan A) + cos A (1 + cot A) = sec A + cosec A.",
+              "answer": "LHS = sin A + sin^2 A/cos A + cos A + cos^2 A/sin A = (sin A cos A + sin^2 A)/cos A + (sin A cos A + cos^2 A)/sin A = (sin A + cos A)[sin^2 A + cos^2 A]/(sin A cos A) = (sin A + cos A)/(sin A cos A) = 1/cos A + 1/sin A = sec A + cosec A."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "In right triangle setup, tan θ = 4/3.",
+              "qa": [
+                {
+                  "question": "Find sin θ and cos θ.",
+                  "answer": "Opp = 4, Adj = 3 => Hyp = 5. sin θ = 4/5, cos θ = 3/5."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Treating sin(A + B) as sin A + sin B.",
+              "correct_fact_or_method": "Trigonometric functions do NOT distribute algebraically over addition."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 9,
+        "chapter_title": "Some Applications of Trigonometry",
+        "zero_omission_notes": {
+          "summary": "Applies trigonometric ratios to measure real-world heights and distances using line of sight, angle of elevation, and angle of depression.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "9.1 Line of Sight & Angles of Elevation / Depression",
+              "full_explanation": "Line of sight connects observer's eye to target. Angle of elevation is angle above horizontal line; angle of depression is angle below horizontal line.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Key Property",
+                  "title": "Alternate Angles",
+                  "content": "Angle of depression from top equals angle of elevation from ground."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-901",
+            "aim_or_objective": "Determine height of tower using Clinometer.",
+            "materials_or_prerequisites": [
+              "Clinometer, tape measure"
+            ],
+            "procedure_or_steps": [
+              "Measure distance d from tower base",
+              "Read angle of elevation θ",
+              "Calculate h = d * tan θ"
+            ],
+            "observations_or_results": "Height obtained without physical climbing.",
+            "conclusion_or_principle": "Indirect height measurement via trigonometry."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 9.1 Elevation and Depression Schema",
+              "labels_and_components": [
+                "Observer Eye",
+                "Horizontal Baseline",
+                "Angle of Elevation",
+                "Angle of Depression"
+              ],
+              "drawing_or_reading_instructions": "Draw observer looking up at top and down at base relative to horizontal line.",
+              "structural_or_conceptual_explanation": "Standard layout for height and distance problems."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Common Height Calculations",
+              "headers": [
+                "Angle θ",
+                "tan θ Value",
+                "Height Multiplier"
+              ],
+              "rows": [
+                [
+                  "30°",
+                  "1/√3",
+                  "h = d / √3"
+                ],
+                [
+                  "45°",
+                  "1",
+                  "h = d"
+                ],
+                [
+                  "60°",
+                  "√3",
+                  "h = d * √3"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Height-Distance Formula",
+            "definition_or_meaning": "Relates object height h and distance d via tangent ratio.",
+            "si_unit_or_notation": "tan θ = Opposite / Adjacent",
+            "example_or_application": "If d = 10m, θ = 45° -> h = 10m"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 9.1 Q1",
+              "question": "Circus artist climbs 20 m rope tied from top of pole to ground at 30°. Find height of pole.",
+              "answer": "sin 30° = AB / 20 => 1/2 = AB / 20 => AB = 10 m."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "A pole 6 m high casts shadow 2√3 m long. Sun's elevation is:",
+              "options": [
+                "A) 60°",
+                "B) 45°",
+                "C) 30°",
+                "D) 90°"
+              ],
+              "answer": "A",
+              "explanation": "tan θ = 6 / (2√3) = √3 => θ = 60°."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Ladder against wall makes 60° with ground. Foot is 2.5 m from wall. Find ladder length.",
+              "answer": "cos 60° = 2.5 / L => 1/2 = 2.5 / L => L = 5 m."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Angle of elevation of top of tower from two points at distances a and b from base are complementary. Prove height is √(ab).",
+              "answer": "tan θ = h/a and tan(90-θ) = cot θ = h/b. tan θ * cot θ = (h/a)*(h/b) = 1 => h^2/(ab) = 1 => h = √(ab)."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "As observed from top of 75 m lighthouse, angles of depression of two ships are 30° and 45°. Find distance between ships.",
+              "answer": "Ship 1 at 45°: tan 45° = 75/x => x = 75 m. Ship 2 at 30°: tan 30° = 75/y => y = 75√3 m. Distance = y - x = 75(√3 - 1) m ≈ 54.9 m."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Statue 1.6 m tall on top of pedestal. Angles of elevation of top of statue and top of pedestal are 60° and 45°.",
+              "qa": [
+                {
+                  "question": "Find pedestal height.",
+                  "answer": "tan 45° = h/d => d = h. tan 60° = (h+1.6)/h => √3 h = h + 1.6 => h(√3 - 1) = 1.6 => h = 0.8(√3 + 1) m."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Measuring angle of depression from vertical axis instead of horizontal baseline.",
+              "correct_fact_or_method": "Always measure angle of depression downward from the horizontal baseline."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "Circles",
+        "zero_omission_notes": {
+          "summary": "Explores tangents to a circle, proving radius is perpendicular to tangent at point of contact (Theorem 10.1), and lengths of tangents drawn from an external point are equal (Theorem 10.2).",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "10.1 Tangent & Radius Perpendicularity",
+              "full_explanation": "Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Theorem 10.1",
+                  "title": "Radius-Tangent Perpendicularity",
+                  "content": "OP ⊥ XY at point of contact P."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "10.2 Tangents from an External Point",
+              "full_explanation": "Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal (PQ = PR).",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Theorem 10.2",
+                  "title": "Equal Tangents",
+                  "content": "Tangents PQ and PR from external point P are equal."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-1001",
+            "aim_or_objective": "Prove lengths of tangents from external point are equal.",
+            "materials_or_prerequisites": [
+              "RHS Congruence"
+            ],
+            "procedure_or_steps": [
+              "Join OP, OQ, OR",
+              "In ΔOQP and ΔORP: ∠OQP = ∠ORP = 90°",
+              "OP = OP (common hypotenuse)",
+              "OQ = OR (radii)",
+              "ΔOQP ≅ ΔORP (RHS) => PQ = PR (CPCT)"
+            ],
+            "observations_or_results": "Tangents PQ and PR are equal.",
+            "conclusion_or_principle": "Tangents drawn from external point are equal."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 10.1 External Tangents",
+              "labels_and_components": [
+                "Center O",
+                "External point P",
+                "Tangents PQ, PR",
+                "Radii OQ, OR"
+              ],
+              "drawing_or_reading_instructions": "Draw circle with center O and rays PQ, PR touching circle.",
+              "structural_or_conceptual_explanation": "Geometrical layout of circle tangents."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Line-Circle Positions",
+              "headers": [
+                "Line Type",
+                "Points of Contact"
+              ],
+              "rows": [
+                [
+                  "Non-intersecting line",
+                  "0"
+                ],
+                [
+                  "Secant",
+                  "2"
+                ],
+                [
+                  "Tangent",
+                  "1"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Equal Tangent Lengths",
+            "definition_or_meaning": "Tangents from external point to circle are equal.",
+            "si_unit_or_notation": "PQ = PR",
+            "example_or_application": "If PQ = 10 cm, then PR = 10 cm."
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 10.2 Q1",
+              "question": "From point Q, length of tangent to circle is 24 cm and distance from center is 25 cm. Find radius.",
+              "answer": "r = √(25^2 - 24^2) = √(625 - 576) = √49 = 7 cm."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "If TP and TQ are tangents to circle with center O so that ∠POQ = 110°, then ∠PTQ is:",
+              "options": [
+                "A) 60°",
+                "B) 70°",
+                "C) 80°",
+                "D) 90°"
+              ],
+              "answer": "B",
+              "explanation": "Quadrilateral OPTQ has right angles at P and Q => ∠PTQ = 180° - 110° = 70°."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Prove that in two concentric circles, chord of larger circle touching smaller circle is bisected at point of contact.",
+              "answer": "OP ⊥ AB (radius ⊥ tangent). Perpendicular from center to chord bisects chord => AP = PB."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Prove that the tangents drawn at the ends of a diameter of a circle are parallel.",
+              "answer": "Radius ⊥ Tangent => ∠1 = 90° and ∠2 = 90°. Since alternate interior angles are equal (∠1 = ∠2 = 90°), the tangent lines must be parallel."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Prove that the parallelogram circumscribing a circle is a rhombus.",
+              "answer": "AB + CD = AD + BC (equal tangent sums). In parallelogram, AB = CD and AD = BC => 2AB = 2AD => AB = AD. Parallelogram with adjacent sides equal is a rhombus."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Triangle ABC circumscribes circle of radius 4 cm; segments BD and DC are 8 cm and 6 cm.",
+              "qa": [
+                {
+                  "question": "Find sides AB and AC.",
+                  "answer": "Using equal tangents and area equality: AB = 15 cm, AC = 13 cm."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Thinking a secant and tangent are identical.",
+              "correct_fact_or_method": "Secant cuts circle at 2 points; tangent touches circle at exactly 1 point."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 11,
+        "chapter_title": "Areas Related to Circles",
+        "zero_omission_notes": {
+          "summary": "Derives perimeters and areas of circular sub-regions: sector area (θ/360 * πr^2), arc length (θ/360 * 2πr), and segment area (Sector area - Triangle area).",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "11.1 Area of Sector and Segment",
+              "full_explanation": "Sector: bounded by 2 radii and arc. Area = (θ/360) * πr^2. Arc length = (θ/360) * 2πr. Segment: bounded by chord and arc. Area = Sector area - Triangle area.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Formula Box",
+                  "title": "Sector Area",
+                  "content": "Area = (θ / 360) * πr^2"
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-1101",
+            "aim_or_objective": "Find area swept by 14 cm minute hand in 5 minutes.",
+            "materials_or_prerequisites": [
+              "Sector formula"
+            ],
+            "procedure_or_steps": [
+              "Angle in 60 min = 360°",
+              "Angle in 5 min θ = (360/60) * 5 = 30°",
+              "Area = (30/360) * (22/7) * 14^2 = (1/12) * (22/7) * 196 = 154/3 cm^2"
+            ],
+            "observations_or_results": "Area swept = 154/3 cm^2 ≈ 51.33 cm^2.",
+            "conclusion_or_principle": "Clock hand sweeps sector proportional to time angle."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 11.1 Sector and Segment",
+              "labels_and_components": [
+                "Minor Sector",
+                "Major Sector",
+                "Minor Segment",
+                "Chord"
+              ],
+              "drawing_or_reading_instructions": "Draw circle showing radii-bound sector and chord-bound segment.",
+              "structural_or_conceptual_explanation": "Visual distinction between sector and segment."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Circle Sub-region Formulas",
+              "headers": [
+                "Sub-region",
+                "Formula"
+              ],
+              "rows": [
+                [
+                  "Arc Length",
+                  "(θ/360) * 2πr"
+                ],
+                [
+                  "Sector Area",
+                  "(θ/360) * πr^2"
+                ],
+                [
+                  "Segment Area",
+                  "Sector Area - (1/2)r^2 sin θ"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Sector Area Formula",
+            "definition_or_meaning": "Area of region bounded by two radii and central angle θ.",
+            "si_unit_or_notation": "A = (θ / 360) * πr^2",
+            "example_or_application": "θ = 60°, r = 6 cm -> A = 6π cm^2"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 11.1 Q1",
+              "question": "Find area of sector of circle with radius 6 cm if angle is 60°.",
+              "answer": "Area = (60/360) * (22/7) * 36 = 132/7 cm^2."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Area of sector of angle p (in degrees) of circle with radius R is:",
+              "options": [
+                "A) (p/180)*2πR",
+                "B) (p/180)*πR^2",
+                "C) (p/360)*2πR",
+                "D) (p/720)*2πR^2"
+              ],
+              "answer": "D",
+              "explanation": "(p/720)*2πR^2 reduces to (p/360)*πR^2."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Find area of quadrant of circle with circumference 22 cm.",
+              "answer": "2πr = 22 => r = 7/2 cm. Quadrant area = (1/4)*(22/7)*(49/4) = 77/8 cm^2."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Find area of shaded region bounded by square of side 14 cm and 4 congruent corner quadrants.",
+              "answer": "Area of square = 14^2 = 196 cm^2. 4 quadrants area = 1 full circle area = π r^2 = (22/7)*7^2 = 154 cm^2. Shaded area = 196 - 154 = 42 cm^2."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "A chord of radius 15 cm subtends 60° at center. Find areas of minor and major segments (π=3.14, √3=1.73).",
+              "answer": "Sector area = (60/360)*3.14*225 = 117.75 cm^2. Equilateral Δ area = (1.73/4)*225 = 97.3125 cm^2. Minor segment = 117.75 - 97.3125 = 20.4375 cm^2. Major segment = 3.14*225 - 20.4375 = 686.0625 cm^2."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Silver brooch diameter 35 mm made with 5 wire diameters dividing into 10 equal sectors.",
+              "qa": [
+                {
+                  "question": "Find total length of silver wire required.",
+                  "answer": "Circumference + 5*Diameter = (22/7)*35 + 5(35) = 110 + 175 = 285 mm."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Using circumference formula 2πr when computing sector area.",
+              "correct_fact_or_method": "Arc length uses 2πr; Sector area uses πr^2."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 12,
+        "chapter_title": "Surface Areas and Volumes",
+        "zero_omission_notes": {
+          "summary": "Focuses on surface areas and volumes of composite 3D figures combining cylinders, cones, spheres, hemispheres, and cubes.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "12.1 Surface Area of Combination of Solids",
+              "full_explanation": "Total Surface Area of combination = sum of exposed Curved Surface Areas. Exclude internal contacting faces.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Critical Principle",
+                  "title": "Exposed Surface Only",
+                  "content": "Add only exposed CSAs of component solids."
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "12.2 Volume of Combination of Solids",
+              "full_explanation": "Total Volume = sum of individual volumes of constituent solids.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Volume Rule",
+                  "title": "Additive Volume",
+                  "content": "Total Vol = Vol1 + Vol2."
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-1201",
+            "aim_or_objective": "Calculate TSA of toy (cone on hemisphere) radius 3.5 cm, height 15.5 cm.",
+            "materials_or_prerequisites": [
+              "Composite 3D geometry"
+            ],
+            "procedure_or_steps": [
+              "r = 3.5 cm",
+              "Cone height h = 15.5 - 3.5 = 12 cm",
+              "Slant height l = √(3.5^2 + 12^2) = √156.25 = 12.5 cm",
+              "TSA = CSA(cone) + CSA(hemisphere) = πrl + 2πr^2 = 214.5 cm^2"
+            ],
+            "observations_or_results": "TSA = 214.5 cm^2.",
+            "conclusion_or_principle": "Internal circular interface is excluded from TSA."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 12.1 Toy Solid Schema",
+              "labels_and_components": [
+                "Conical Top",
+                "Hemispherical Base",
+                "Shared Radius r",
+                "Slant Height l"
+              ],
+              "drawing_or_reading_instructions": "Draw cone sitting symmetrically on hemisphere.",
+              "structural_or_conceptual_explanation": "Layout of composite 3D solid."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "3D Solid Mensuration Formulas",
+              "headers": [
+                "Solid",
+                "CSA",
+                "TSA",
+                "Volume"
+              ],
+              "rows": [
+                [
+                  "Cylinder",
+                  "2πrh",
+                  "2πr(h+r)",
+                  "πr^2 h"
+                ],
+                [
+                  "Cone",
+                  "πrl",
+                  "πr(l+r)",
+                  "(1/3)πr^2 h"
+                ],
+                [
+                  "Sphere",
+                  "4πr^2",
+                  "4πr^2",
+                  "(4/3)πr^3"
+                ],
+                [
+                  "Hemisphere",
+                  "2πr^2",
+                  "3πr^2",
+                  "(2/3)πr^3"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Cone Slant Height Formula",
+            "definition_or_meaning": "Pythagorean relation between radius, height, and slant height.",
+            "si_unit_or_notation": "l = √(r^2 + h^2)",
+            "example_or_application": "r=3, h=4 -> l=5"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 12.1 Q1",
+              "question": "Two cubes each of volume 64 cm^3 are joined end to end. Find surface area of resulting cuboid.",
+              "answer": "Side = 4 cm. Cuboid: l=8, b=4, h=4. SA = 2(32 + 16 + 32) = 160 cm^2."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Total surface area of solid hemisphere of radius r is:",
+              "options": [
+                "A) 2πr^2",
+                "B) 3πr^2",
+                "C) 4πr^2",
+                "D) (2/3)πr^3"
+              ],
+              "answer": "B",
+              "explanation": "TSA = CSA (2πr^2) + Base Area (πr^2) = 3πr^2."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Solid cone standing on hemisphere radius 1 cm, height equals radius. Find volume in terms of π.",
+              "answer": "Vol = (1/3)π(1)^3 + (2/3)π(1)^3 = π cm^3."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm, surmounted by another cylinder of height 60 cm and radius 8 cm. Find mass if 1 cm^3 iron = 8 g.",
+              "answer": "V1 = π (12^2) (220) = 31680 π cm^3. V2 = π (8^2) (60) = 3840 π cm^3. Total V = 35520 π = 111532.8 cm^3. Mass = 111532.8 * 8 g ≈ 892.26 kg."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Tent cylindrical part height 2.1 m, diameter 4 m, conical top slant height 2.8 m. Find canvas area and cost at ₹500/m^2.",
+              "answer": "r = 2 m. Canvas Area = CSA(cyl) + CSA(cone) = 2πrh + πrl = πr(2h + l) = (22/7)*2*(4.2 + 2.8) = (44/7)*7 = 44 m^2. Cost = 44 * 500 = ₹22,000."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Gulab jamun contains syrup ~30% of its volume. Cylinder with two hemispherical ends, length 5 cm, diameter 2.8 cm.",
+              "qa": [
+                {
+                  "question": "Find volume of syrup in 45 gulab jamuns.",
+                  "answer": "r = 1.4 cm, cyl height = 2.2 cm. Vol of 1 ≈ 25.05 cm^3. Total Vol = 45 * 25.05 = 1127.25 cm^3. Syrup = 30% = 338 cm^3."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Adding total surface areas of individual components when finding composite TSA.",
+              "correct_fact_or_method": "Joined internal faces are hidden and must NOT be included in TSA."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 13,
+        "chapter_title": "Statistics",
+        "zero_omission_notes": {
+          "summary": "Covers measures of central tendency for grouped data: Mean (Direct, Assumed Mean, Step-Deviation methods), Mode, Median, and empirical relation 3 Median = Mode + 2 Mean.",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "13.1 Mean of Grouped Data",
+              "full_explanation": "Direct: x̄ = Σfi xi / Σfi. Assumed Mean: x̄ = a + (Σfi di / Σfi). Step-Deviation: x̄ = a + [Σfi ui / Σfi] * h where ui = (xi - a)/h.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Formula Box",
+                  "title": "Step-Deviation Mean",
+                  "content": "x̄ = a + h * (Σfi ui / Σfi)"
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "13.2 Mode and Median of Grouped Data",
+              "full_explanation": "Mode = l + [(f1 - f0)/(2f1 - f0 - f2)] * h. Median = l + [(n/2 - cf)/f] * h. Empirical formula: 3 Median = Mode + 2 Mean.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Empirical Rule",
+                  "title": "3 Median Rule",
+                  "content": "3 Median = Mode + 2 Mean"
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-1301",
+            "aim_or_objective": "Calculate Mode of grouped frequency distribution.",
+            "materials_or_prerequisites": [
+              "Mode formula"
+            ],
+            "procedure_or_steps": [
+              "Identify modal class with maximum frequency f1",
+              "Extract lower limit l, f0 (preceding), f2 (succeeding), and class width h",
+              "Substitute into Mode = l + [(f1-f0)/(2f1-f0-f2)]*h"
+            ],
+            "observations_or_results": "Yields exact modal value.",
+            "conclusion_or_principle": "Modal value lies strictly inside modal class interval."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 13.1 Grouped Frequency Histogram",
+              "labels_and_components": [
+                "Class Intervals",
+                "Frequencies",
+                "Modal Peak"
+              ],
+              "drawing_or_reading_instructions": "Draw histogram bars proportional to class frequencies.",
+              "structural_or_conceptual_explanation": "Histogram peak identifies modal class."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "Statistics Master Formulas",
+              "headers": [
+                "Measure",
+                "Formula"
+              ],
+              "rows": [
+                [
+                  "Mean (Step-Dev)",
+                  "a + h * (Σfi ui / Σfi)"
+                ],
+                [
+                  "Mode",
+                  "l + [(f1-f0)/(2f1-f0-f2)] * h"
+                ],
+                [
+                  "Median",
+                  "l + [(n/2 - cf)/f] * h"
+                ],
+                [
+                  "Empirical Relation",
+                  "3 Median = Mode + 2 Mean"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Class Mark (xi)",
+            "definition_or_meaning": "Midpoint of class interval.",
+            "si_unit_or_notation": "xi = (Upper Limit + Lower Limit) / 2",
+            "example_or_application": "For 10-20, xi = 15"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 13.1 Q1",
+              "question": "Find mean plants per house: 0-2 (1), 2-4 (2), 4-6 (1), 6-8 (5), 8-10 (6), 10-12 (2), 12-14 (3).",
+              "answer": "Σfi = 20. Σfi xi = 162. Mean = 162 / 20 = 8.1 plants."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "If Mode = 12 and Mean = 15, Median is:",
+              "options": [
+                "A) 14",
+                "B) 13",
+                "C) 15",
+                "D) 16"
+              ],
+              "answer": "A",
+              "explanation": "3 Median = 12 + 2(15) = 42 => Median = 14."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Find class mark of 15-35 and class size.",
+              "answer": "Class mark = (15+35)/2 = 25. Class size = 35 - 15 = 20."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "If mean of 5 observations x, x+2, x+4, x+6, x+8 is 11, find mean of first 3 observations.",
+              "answer": "Sum = 5x + 20 = 55 => 5x = 35 => x = 7. First 3 observations: 7, 9, 11. Mean = (7+9+11)/3 = 9."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "The median of data is 525. Find values of x and y if total frequency is 100.",
+              "answer": "Median class 500-600. l=500, h=100, f=20, cf=36+x. Median = 500 + [(50 - (36+x))/20]*100 => 525 = 500 + (14-x)*5 => 25 = 70 - 5x => x = 9. Sum frequencies = 100 => x + y = 24 => y = 15."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Height survey of 51 girls: <140 (4), <145 (11), <150 (29), <155 (40), <160 (46), <165 (51).",
+              "qa": [
+                {
+                  "question": "Find median height.",
+                  "answer": "Median class 145-150. Median = 145 + [(25.5 - 11)/18]*5 = 145 + 4.03 = 149.03 cm."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Using cf of median class instead of preceding class in median formula.",
+              "correct_fact_or_method": "cf in median formula ALWAYS comes from the class preceding the median class."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 14,
+        "chapter_title": "Probability",
+        "zero_omission_notes": {
+          "summary": "Covers theoretical probability P(E) = n(E)/n(S), complementary events P(E) + P(Ē) = 1, impossible events (P=0), and certain events (P=1).",
+          "detailed_sections": [
+            {
+              "section_number_and_title": "14.1 Classical Probability Definition",
+              "full_explanation": "For equally likely outcomes: P(E) = Number of favorable outcomes / Total possible outcomes. 0 <= P(E) <= 1.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Formula Box",
+                  "title": "Probability Definition",
+                  "content": "P(E) = n(E) / n(S)"
+                }
+              ]
+            },
+            {
+              "section_number_and_title": "14.2 Complementary Events",
+              "full_explanation": "Event 'not E' is Ē. P(E) + P(Ē) = 1. Impossible event P=0; Certain event P=1.",
+              "margin_notes_and_sidebars": [
+                {
+                  "type": "Rule Box",
+                  "title": "Complement Rule",
+                  "content": "P(E) + P(not E) = 1"
+                }
+              ]
+            }
+          ]
+        },
+        "practical_lab_activity_or_methodology_manual": [
+          {
+            "activity_or_method_id": "ACT-1401",
+            "aim_or_objective": "Calculate probability of face card from 52-card deck.",
+            "materials_or_prerequisites": [
+              "52 card deck breakdown"
+            ],
+            "procedure_or_steps": [
+              "Total cards n(S) = 52",
+              "Face cards (Jacks, Queens, Kings) = 12",
+              "P(Face card) = 12 / 52 = 3 / 13"
+            ],
+            "observations_or_results": "P(Face card) = 3/13.",
+            "conclusion_or_principle": "Classical ratio of favorable to total outcomes."
+          }
+        ],
+        "visuals_diagrams_and_tabular_data": {
+          "diagrams_figures_and_maps": [
+            {
+              "figure_id_and_title": "Fig 14.1 Two Dice Sample Space",
+              "labels_and_components": [
+                "36 Grid Pairs (1,1) to (6,6)"
+              ],
+              "drawing_or_reading_instructions": "Draw 6x6 grid of ordered pairs.",
+              "structural_or_conceptual_explanation": "Sample space mapping for 2 dice."
+            }
+          ],
+          "data_tables_and_comparisons": [
+            {
+              "table_title": "52-Card Deck Breakdown Table",
+              "headers": [
+                "Suit",
+                "Color",
+                "Number Cards",
+                "Ace",
+                "Face Cards",
+                "Total"
+              ],
+              "rows": [
+                [
+                  "Spades",
+                  "Black",
+                  "9",
+                  "1",
+                  "3",
+                  "13"
+                ],
+                [
+                  "Hearts",
+                  "Red",
+                  "9",
+                  "1",
+                  "3",
+                  "13"
+                ],
+                [
+                  "Diamonds",
+                  "Red",
+                  "9",
+                  "1",
+                  "3",
+                  "13"
+                ],
+                [
+                  "Clubs",
+                  "Black",
+                  "9",
+                  "1",
+                  "3",
+                  "13"
+                ]
+              ]
+            }
+          ]
+        },
+        "master_glossary_units_and_formulas": [
+          {
+            "term_or_concept": "Probability Range",
+            "definition_or_meaning": "Probability value is always between 0 and 1 inclusive.",
+            "si_unit_or_notation": "0 <= P(E) <= 1",
+            "example_or_application": "P = 0 (impossible), P = 1 (certain)"
+          }
+        ],
+        "exam_question_bank": {
+          "textbook_exercises": [
+            {
+              "q_no": "Ex 14.1 Q1",
+              "question": "Complete: P(E) + P(not E) = ____.",
+              "answer": "1."
+            }
+          ],
+          "objective_questions_1_mark": [
+            {
+              "type": "MCQ",
+              "question": "Which of the following cannot be the probability of an event?",
+              "options": [
+                "A) 2/3",
+                "B) -1.5",
+                "C) 15%",
+                "D) 0.7"
+              ],
+              "answer": "B",
+              "explanation": "Probability can never be negative."
+            }
+          ],
+          "short_answer_questions": [
+            {
+              "marks": 2,
+              "question": "Die thrown once. Find probability of getting a prime number.",
+              "answer": "S = {1, 2, 3, 4, 5, 6}. Primes = {2, 3, 5} => 3 outcomes. P = 3/6 = 1/2."
+            }
+          ],
+          "analytical_reasoning_questions": [
+            {
+              "marks": 3,
+              "question": "Box contains 5 red, 8 white, 4 green marbles. One drawn at random. Find P(not green).",
+              "answer": "Total = 17. Green = 4 => P(green) = 4/17. P(not green) = 1 - 4/17 = 13/17."
+            }
+          ],
+          "comprehensive_long_answers": [
+            {
+              "marks": 5,
+              "question": "Two dice thrown simultaneously. Find probability of getting: (i) sum 8, (ii) sum 13, (iii) sum <= 12.",
+              "answer": "n(S) = 36. (i) Sum 8: {(2,6),(3,5),(4,4),(5,3),(6,2)} => 5/36. (ii) Sum 13: 0/36 = 0. (iii) Sum <= 12: all 36 outcomes => 36/36 = 1."
+            }
+          ],
+          "competency_and_case_studies": [
+            {
+              "case_scenario": "Box contains 90 discs numbered 1 to 90. One disc drawn at random.",
+              "qa": [
+                {
+                  "question": "Find probability of getting a two-digit number.",
+                  "answer": "Discs 10 to 90 = 81 discs. P = 81/90 = 9/10."
+                }
+              ]
+            }
+          ],
+          "common_misconceptions_and_pitfalls": [
+            {
+              "common_error_or_misconception": "Expressing probability as a negative number or value greater than 1.",
+              "correct_fact_or_method": "Probability values MUST lie strictly between 0 and 1 inclusive."
+            }
+          ]
+        }
+      }
+    ],
+    "student_portfolio_dashboard": {
+      "competency_rubric_sliders": [
+        {
+          "domain": "Conceptual Understanding",
+          "scale": 5,
+          "current_value": 4.8
+        },
+        {
+          "domain": "Problem Solving Speed",
+          "scale": 5,
+          "current_value": 4.5
+        },
+        {
+          "domain": "Proof & Reasoning Rigor",
+          "scale": 5,
+          "current_value": 4.7
+        }
+      ],
+      "project_logs": [
+        {
+          "log_id": "log_01",
+          "interactive_log_template": "Analyzed NCERT Class 10 chapters completely.",
+          "status": "Completed"
+        }
+      ],
+      "celebratory_badge_unlock_modals": [
+        {
+          "badge_id": "master_math_badge",
+          "title": "Class 10 Math Grandmaster",
+          "unlocked": true
+        }
+      ]
+    }
+  }
+}

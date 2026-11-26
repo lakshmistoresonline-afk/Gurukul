@@ -1,982 +1,1900 @@
 {
-  "module_title": "Self-Scoring Interactive Quiz Engine",
-  "subject": "Ganita Prakash (NCERT Grade 8 Mathematics - Part II)",
-  "quiz_engine": {
-    "timer_seconds": 300,
-    "show_hints": true,
-    "hotspot_choice_enabled": true
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_fca9781be431c8d3",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_8",
+    "class_level": 8
   },
-  "chapters_quiz": [
-    {
-      "chapter_number": 1,
-      "chapter_title": "Fractions in Disguise",
-      "questions": [
-        {
-          "question_id": 1,
-          "cognitive_level": "Level 1 (Easy) - Recall & Identification",
-          "question_type": "MCQ",
-          "question": "What is 12% of 50?",
-          "options": [
-            "5",
-            "6",
-            "10",
-            "12"
-          ],
-          "correct_answer": "6",
-          "hint_modal": "Think about the core rule from Chapter 1!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "12% of 50 = 50% of 12 = 6."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch1_percentages.png",
-            "correct_hotspot_id": "hs_ch1_1"
-          }
-        },
-        {
-          "question_id": 2,
-          "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
-          "question_type": "Short Answer",
-          "question": "Show algebraically that x% of y is equal to y% of x.",
-          "options": [],
-          "correct_answer": "x% of y = (x/100) * y = (x*y)/100. y% of x = (y/100) * x = (y*x)/100. Since x*y = y*x, both expressions are identical.",
-          "hint_modal": "Think about the core rule from Chapter 1!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Step-by-step mathematical reasoning: x% of y = (x/100) * y = (x*y)/100. y% of x = (y/100) * x = (y*x)/100. Since x*y = y*x, both expressions are identical."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch1_percentages.png",
-            "correct_hotspot_id": "hs_ch1_1"
-          }
-        },
-        {
-          "question_id": 3,
-          "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
-          "question_type": "Exercise Problem",
-          "question": "Q3: Surya made 60 ml of deep orange paint, where red paint made up 3/4 of the mixture. How much red paint was used?",
-          "options": [],
-          "correct_answer": "3/4 as a percentage is (3/4)*100 = 75%. Volume of red paint = 75% of 60 ml = (75/100)*60 = 45 ml.",
-          "hint_modal": "Think about the core rule from Chapter 1!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Textbook solution: 3/4 as a percentage is (3/4)*100 = 75%. Volume of red paint = 75% of 60 ml = (75/100)*60 = 45 ml."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch1_percentages.png",
-            "correct_hotspot_id": "hs_ch1_1"
-          }
-        },
-        {
-          "question_id": 4,
-          "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
-          "question_type": "Analytical Reasoning",
-          "question": "[Context: A shopkeeper sets a price with a 35% profit margin, then offers a 30% discount on the selling price.] Does the shopkeeper make a profit or a loss?",
-          "options": [],
-          "correct_answer": "Let Cost Price (CP) = 100. Selling Price before discount = 135. Price after 30% discount = 135 * (1 - 0.30) = 135 * 0.70 = 94.5. Since final price 94.5 < 100 CP, he incurs a loss of 5.5%.",
-          "hint_modal": "Think about the core rule from Chapter 1!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Logical proof and justification: Let Cost Price (CP) = 100. Selling Price before discount = 135. Price after 30% discount = 135 * (1 - 0.30) = 135 * 0.70 = 94.5. Since final price 94.5 < 100 CP, he incurs a loss of 5.5%."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch1_percentages.png",
-            "correct_hotspot_id": "hs_ch1_1"
-          }
-        },
-        {
-          "question_id": 5,
-          "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
-          "question_type": "Long Answer",
-          "question": "A school excursion consists of 40% Grade 8 students, of which 60% are girls. If total excursion attendance is 200 students, calculate the number of Grade 8 girls, Grade 8 boys, and Grade 9 students.",
-          "options": [],
-          "correct_answer": "Total students = 200. Grade 8 students = 40% of 200 = 80. Grade 9 students = 200 - 80 = 120. Grade 8 girls = 60% of 80 = 48. Grade 8 boys = 80 - 48 = 32.",
-          "hint_modal": "Think about the core rule from Chapter 1!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Multi-step solution: Total students = 200. Grade 8 students = 40% of 200 = 80. Grade 9 students = 200 - 80 = 120. Grade 8 girls = 60% of 80 = 48. Grade 8 boys = 80 - 48 = 32."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch1_percentages.png",
-            "correct_hotspot_id": "hs_ch1_1"
-          }
-        },
-        {
-          "question_id": 6,
-          "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
-          "question_type": "Case Study QA",
-          "question": "[Scenario: Eesha scored 42 out of 50 in English and 70 out of 80 in Science.] In which subject did Eesha perform better relatively?",
-          "options": [],
-          "correct_answer": "English % = (42/50)*100 = 84%. Science % = (70/80)*100 = 87.5%. Eesha performed better in Science (87.5% > 84%).",
-          "hint_modal": "Think about the core rule from Chapter 1!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Case-based analysis: English % = (42/50)*100 = 84%. Science % = (70/80)*100 = 87.5%. Eesha performed better in Science (87.5% > 84%)."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch1_percentages.png",
-            "correct_hotspot_id": "hs_ch1_1"
-          }
-        }
-      ],
-      "image_asset": {
-        "image_id": "img_ch1_percentages",
-        "title": "Percentages as Fractions & Bar Model",
-        "url": "/assets/images/ch1_percentages.png",
-        "aspect_ratio": "16:9",
-        "hotspots": [
-          {
-            "id": "hs_ch1_1",
-            "title": "25% Quadrant",
-            "x_percent": 10,
-            "y_percent": 50,
-            "w_percent": 20,
-            "h_percent": 17,
-            "tooltip": "Represents 1/4 of total value"
-          },
-          {
-            "id": "hs_ch1_2",
-            "title": "50% Half Point",
-            "x_percent": 30,
-            "y_percent": 50,
-            "w_percent": 20,
-            "h_percent": 17,
-            "tooltip": "Represents 1/2 of total value"
-          }
-        ]
+  "subject": "Maths II",
+  "artifact": {
+    "artifact_type": "quiz",
+    "source_file_name": "04-Quiz.json",
+    "source_relative_path": "Contents/Class 8/Maths II/Source Files/04-Quiz.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "60132fd802b93c844180d058e20c2ebede3971293646c041f3c815f30883e97f",
+    "source_semantic_sha256": "727173e68cbb966049fe2d28865a5b471f98f054fb415531afc979574833ac68",
+    "source_byte_length": 51001,
+    "source_encoding": "utf-8",
+    "source_field_count": 721,
+    "field_inventory": [
+      "$.module_title",
+      "$.subject",
+      "$.quiz_engine",
+      "$.quiz_engine.timer_seconds",
+      "$.quiz_engine.show_hints",
+      "$.quiz_engine.hotspot_choice_enabled",
+      "$.chapters_quiz",
+      "$.chapters_quiz[0].chapter_number",
+      "$.chapters_quiz[0].chapter_title",
+      "$.chapters_quiz[0].questions",
+      "$.chapters_quiz[0].questions[0].question_id",
+      "$.chapters_quiz[0].questions[0].cognitive_level",
+      "$.chapters_quiz[0].questions[0].question_type",
+      "$.chapters_quiz[0].questions[0].question",
+      "$.chapters_quiz[0].questions[0].options",
+      "$.chapters_quiz[0].questions[0].correct_answer",
+      "$.chapters_quiz[0].questions[0].hint_modal",
+      "$.chapters_quiz[0].questions[0].solution_key_3part",
+      "$.chapters_quiz[0].questions[0].solution_key_3part.given_data",
+      "$.chapters_quiz[0].questions[0].solution_key_3part.formula_applied",
+      "$.chapters_quiz[0].questions[0].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[0].questions[0].hotspot_choice",
+      "$.chapters_quiz[0].questions[0].hotspot_choice.target_image",
+      "$.chapters_quiz[0].questions[0].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[0].questions[1].question_id",
+      "$.chapters_quiz[0].questions[1].cognitive_level",
+      "$.chapters_quiz[0].questions[1].question_type",
+      "$.chapters_quiz[0].questions[1].question",
+      "$.chapters_quiz[0].questions[1].options",
+      "$.chapters_quiz[0].questions[1].correct_answer",
+      "$.chapters_quiz[0].questions[1].hint_modal",
+      "$.chapters_quiz[0].questions[1].solution_key_3part",
+      "$.chapters_quiz[0].questions[1].solution_key_3part.given_data",
+      "$.chapters_quiz[0].questions[1].solution_key_3part.formula_applied",
+      "$.chapters_quiz[0].questions[1].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[0].questions[1].hotspot_choice",
+      "$.chapters_quiz[0].questions[1].hotspot_choice.target_image",
+      "$.chapters_quiz[0].questions[1].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[0].questions[2].question_id",
+      "$.chapters_quiz[0].questions[2].cognitive_level",
+      "$.chapters_quiz[0].questions[2].question_type",
+      "$.chapters_quiz[0].questions[2].question",
+      "$.chapters_quiz[0].questions[2].options",
+      "$.chapters_quiz[0].questions[2].correct_answer",
+      "$.chapters_quiz[0].questions[2].hint_modal",
+      "$.chapters_quiz[0].questions[2].solution_key_3part",
+      "$.chapters_quiz[0].questions[2].solution_key_3part.given_data",
+      "$.chapters_quiz[0].questions[2].solution_key_3part.formula_applied",
+      "$.chapters_quiz[0].questions[2].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[0].questions[2].hotspot_choice",
+      "$.chapters_quiz[0].questions[2].hotspot_choice.target_image",
+      "$.chapters_quiz[0].questions[2].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[0].questions[3].question_id",
+      "$.chapters_quiz[0].questions[3].cognitive_level",
+      "$.chapters_quiz[0].questions[3].question_type",
+      "$.chapters_quiz[0].questions[3].question",
+      "$.chapters_quiz[0].questions[3].options",
+      "$.chapters_quiz[0].questions[3].correct_answer",
+      "$.chapters_quiz[0].questions[3].hint_modal",
+      "$.chapters_quiz[0].questions[3].solution_key_3part",
+      "$.chapters_quiz[0].questions[3].solution_key_3part.given_data",
+      "$.chapters_quiz[0].questions[3].solution_key_3part.formula_applied",
+      "$.chapters_quiz[0].questions[3].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[0].questions[3].hotspot_choice",
+      "$.chapters_quiz[0].questions[3].hotspot_choice.target_image",
+      "$.chapters_quiz[0].questions[3].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[0].questions[4].question_id",
+      "$.chapters_quiz[0].questions[4].cognitive_level",
+      "$.chapters_quiz[0].questions[4].question_type",
+      "$.chapters_quiz[0].questions[4].question",
+      "$.chapters_quiz[0].questions[4].options",
+      "$.chapters_quiz[0].questions[4].correct_answer",
+      "$.chapters_quiz[0].questions[4].hint_modal",
+      "$.chapters_quiz[0].questions[4].solution_key_3part",
+      "$.chapters_quiz[0].questions[4].solution_key_3part.given_data",
+      "$.chapters_quiz[0].questions[4].solution_key_3part.formula_applied",
+      "$.chapters_quiz[0].questions[4].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[0].questions[4].hotspot_choice",
+      "$.chapters_quiz[0].questions[4].hotspot_choice.target_image",
+      "$.chapters_quiz[0].questions[4].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[0].questions[5].question_id",
+      "$.chapters_quiz[0].questions[5].cognitive_level",
+      "$.chapters_quiz[0].questions[5].question_type",
+      "$.chapters_quiz[0].questions[5].question",
+      "$.chapters_quiz[0].questions[5].options",
+      "$.chapters_quiz[0].questions[5].correct_answer",
+      "$.chapters_quiz[0].questions[5].hint_modal",
+      "$.chapters_quiz[0].questions[5].solution_key_3part",
+      "$.chapters_quiz[0].questions[5].solution_key_3part.given_data",
+      "$.chapters_quiz[0].questions[5].solution_key_3part.formula_applied",
+      "$.chapters_quiz[0].questions[5].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[0].questions[5].hotspot_choice",
+      "$.chapters_quiz[0].questions[5].hotspot_choice.target_image",
+      "$.chapters_quiz[0].questions[5].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[0].image_asset",
+      "$.chapters_quiz[0].image_asset.image_id",
+      "$.chapters_quiz[0].image_asset.title",
+      "$.chapters_quiz[0].image_asset.url",
+      "$.chapters_quiz[0].image_asset.aspect_ratio",
+      "$.chapters_quiz[0].image_asset.hotspots",
+      "$.chapters_quiz[0].image_asset.hotspots[0].id",
+      "$.chapters_quiz[0].image_asset.hotspots[0].title",
+      "$.chapters_quiz[0].image_asset.hotspots[0].x_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[0].y_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[0].w_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[0].h_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[0].tooltip",
+      "$.chapters_quiz[0].image_asset.hotspots[1].id",
+      "$.chapters_quiz[0].image_asset.hotspots[1].title",
+      "$.chapters_quiz[0].image_asset.hotspots[1].x_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[1].y_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[1].w_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[1].h_percent",
+      "$.chapters_quiz[0].image_asset.hotspots[1].tooltip",
+      "$.chapters_quiz[1].chapter_number",
+      "$.chapters_quiz[1].chapter_title",
+      "$.chapters_quiz[1].questions",
+      "$.chapters_quiz[1].questions[0].question_id",
+      "$.chapters_quiz[1].questions[0].cognitive_level",
+      "$.chapters_quiz[1].questions[0].question_type",
+      "$.chapters_quiz[1].questions[0].question",
+      "$.chapters_quiz[1].questions[0].options",
+      "$.chapters_quiz[1].questions[0].correct_answer",
+      "$.chapters_quiz[1].questions[0].hint_modal",
+      "$.chapters_quiz[1].questions[0].solution_key_3part",
+      "$.chapters_quiz[1].questions[0].solution_key_3part.given_data",
+      "$.chapters_quiz[1].questions[0].solution_key_3part.formula_applied",
+      "$.chapters_quiz[1].questions[0].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[1].questions[0].hotspot_choice",
+      "$.chapters_quiz[1].questions[0].hotspot_choice.target_image",
+      "$.chapters_quiz[1].questions[0].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[1].questions[1].question_id",
+      "$.chapters_quiz[1].questions[1].cognitive_level",
+      "$.chapters_quiz[1].questions[1].question_type",
+      "$.chapters_quiz[1].questions[1].question",
+      "$.chapters_quiz[1].questions[1].options",
+      "$.chapters_quiz[1].questions[1].correct_answer",
+      "$.chapters_quiz[1].questions[1].hint_modal",
+      "$.chapters_quiz[1].questions[1].solution_key_3part",
+      "$.chapters_quiz[1].questions[1].solution_key_3part.given_data",
+      "$.chapters_quiz[1].questions[1].solution_key_3part.formula_applied",
+      "$.chapters_quiz[1].questions[1].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[1].questions[1].hotspot_choice",
+      "$.chapters_quiz[1].questions[1].hotspot_choice.target_image",
+      "$.chapters_quiz[1].questions[1].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[1].questions[2].question_id",
+      "$.chapters_quiz[1].questions[2].cognitive_level",
+      "$.chapters_quiz[1].questions[2].question_type",
+      "$.chapters_quiz[1].questions[2].question",
+      "$.chapters_quiz[1].questions[2].options",
+      "$.chapters_quiz[1].questions[2].correct_answer",
+      "$.chapters_quiz[1].questions[2].hint_modal",
+      "$.chapters_quiz[1].questions[2].solution_key_3part",
+      "$.chapters_quiz[1].questions[2].solution_key_3part.given_data",
+      "$.chapters_quiz[1].questions[2].solution_key_3part.formula_applied",
+      "$.chapters_quiz[1].questions[2].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[1].questions[2].hotspot_choice",
+      "$.chapters_quiz[1].questions[2].hotspot_choice.target_image",
+      "$.chapters_quiz[1].questions[2].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[1].questions[3].question_id",
+      "$.chapters_quiz[1].questions[3].cognitive_level",
+      "$.chapters_quiz[1].questions[3].question_type",
+      "$.chapters_quiz[1].questions[3].question",
+      "$.chapters_quiz[1].questions[3].options",
+      "$.chapters_quiz[1].questions[3].correct_answer",
+      "$.chapters_quiz[1].questions[3].hint_modal",
+      "$.chapters_quiz[1].questions[3].solution_key_3part",
+      "$.chapters_quiz[1].questions[3].solution_key_3part.given_data",
+      "$.chapters_quiz[1].questions[3].solution_key_3part.formula_applied",
+      "$.chapters_quiz[1].questions[3].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[1].questions[3].hotspot_choice",
+      "$.chapters_quiz[1].questions[3].hotspot_choice.target_image",
+      "$.chapters_quiz[1].questions[3].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[1].questions[4].question_id",
+      "$.chapters_quiz[1].questions[4].cognitive_level",
+      "$.chapters_quiz[1].questions[4].question_type",
+      "$.chapters_quiz[1].questions[4].question",
+      "$.chapters_quiz[1].questions[4].options",
+      "$.chapters_quiz[1].questions[4].correct_answer",
+      "$.chapters_quiz[1].questions[4].hint_modal",
+      "$.chapters_quiz[1].questions[4].solution_key_3part",
+      "$.chapters_quiz[1].questions[4].solution_key_3part.given_data",
+      "$.chapters_quiz[1].questions[4].solution_key_3part.formula_applied",
+      "$.chapters_quiz[1].questions[4].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[1].questions[4].hotspot_choice",
+      "$.chapters_quiz[1].questions[4].hotspot_choice.target_image",
+      "$.chapters_quiz[1].questions[4].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[1].questions[5].question_id",
+      "$.chapters_quiz[1].questions[5].cognitive_level",
+      "$.chapters_quiz[1].questions[5].question_type",
+      "$.chapters_quiz[1].questions[5].question",
+      "$.chapters_quiz[1].questions[5].options",
+      "$.chapters_quiz[1].questions[5].correct_answer",
+      "$.chapters_quiz[1].questions[5].hint_modal",
+      "$.chapters_quiz[1].questions[5].solution_key_3part",
+      "$.chapters_quiz[1].questions[5].solution_key_3part.given_data",
+      "$.chapters_quiz[1].questions[5].solution_key_3part.formula_applied",
+      "$.chapters_quiz[1].questions[5].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[1].questions[5].hotspot_choice",
+      "$.chapters_quiz[1].questions[5].hotspot_choice.target_image",
+      "$.chapters_quiz[1].questions[5].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[1].image_asset",
+      "$.chapters_quiz[1].image_asset.image_id",
+      "$.chapters_quiz[1].image_asset.title",
+      "$.chapters_quiz[1].image_asset.url",
+      "$.chapters_quiz[1].image_asset.aspect_ratio",
+      "$.chapters_quiz[1].image_asset.hotspots",
+      "$.chapters_quiz[1].image_asset.hotspots[0].id",
+      "$.chapters_quiz[1].image_asset.hotspots[0].title",
+      "$.chapters_quiz[1].image_asset.hotspots[0].x_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[0].y_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[0].w_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[0].h_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[0].tooltip",
+      "$.chapters_quiz[1].image_asset.hotspots[1].id",
+      "$.chapters_quiz[1].image_asset.hotspots[1].title",
+      "$.chapters_quiz[1].image_asset.hotspots[1].x_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[1].y_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[1].w_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[1].h_percent",
+      "$.chapters_quiz[1].image_asset.hotspots[1].tooltip",
+      "$.chapters_quiz[2].chapter_number",
+      "$.chapters_quiz[2].chapter_title",
+      "$.chapters_quiz[2].questions",
+      "$.chapters_quiz[2].questions[0].question_id",
+      "$.chapters_quiz[2].questions[0].cognitive_level",
+      "$.chapters_quiz[2].questions[0].question_type",
+      "$.chapters_quiz[2].questions[0].question",
+      "$.chapters_quiz[2].questions[0].options",
+      "$.chapters_quiz[2].questions[0].correct_answer",
+      "$.chapters_quiz[2].questions[0].hint_modal",
+      "$.chapters_quiz[2].questions[0].solution_key_3part",
+      "$.chapters_quiz[2].questions[0].solution_key_3part.given_data",
+      "$.chapters_quiz[2].questions[0].solution_key_3part.formula_applied",
+      "$.chapters_quiz[2].questions[0].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[2].questions[0].hotspot_choice",
+      "$.chapters_quiz[2].questions[0].hotspot_choice.target_image",
+      "$.chapters_quiz[2].questions[0].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[2].questions[1].question_id",
+      "$.chapters_quiz[2].questions[1].cognitive_level",
+      "$.chapters_quiz[2].questions[1].question_type",
+      "$.chapters_quiz[2].questions[1].question",
+      "$.chapters_quiz[2].questions[1].options",
+      "$.chapters_quiz[2].questions[1].correct_answer",
+      "$.chapters_quiz[2].questions[1].hint_modal",
+      "$.chapters_quiz[2].questions[1].solution_key_3part",
+      "$.chapters_quiz[2].questions[1].solution_key_3part.given_data",
+      "$.chapters_quiz[2].questions[1].solution_key_3part.formula_applied",
+      "$.chapters_quiz[2].questions[1].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[2].questions[1].hotspot_choice",
+      "$.chapters_quiz[2].questions[1].hotspot_choice.target_image",
+      "$.chapters_quiz[2].questions[1].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[2].questions[2].question_id",
+      "$.chapters_quiz[2].questions[2].cognitive_level",
+      "$.chapters_quiz[2].questions[2].question_type",
+      "$.chapters_quiz[2].questions[2].question",
+      "$.chapters_quiz[2].questions[2].options",
+      "$.chapters_quiz[2].questions[2].correct_answer",
+      "$.chapters_quiz[2].questions[2].hint_modal",
+      "$.chapters_quiz[2].questions[2].solution_key_3part",
+      "$.chapters_quiz[2].questions[2].solution_key_3part.given_data",
+      "$.chapters_quiz[2].questions[2].solution_key_3part.formula_applied",
+      "$.chapters_quiz[2].questions[2].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[2].questions[2].hotspot_choice",
+      "$.chapters_quiz[2].questions[2].hotspot_choice.target_image",
+      "$.chapters_quiz[2].questions[2].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[2].questions[3].question_id",
+      "$.chapters_quiz[2].questions[3].cognitive_level",
+      "$.chapters_quiz[2].questions[3].question_type",
+      "$.chapters_quiz[2].questions[3].question",
+      "$.chapters_quiz[2].questions[3].options",
+      "$.chapters_quiz[2].questions[3].correct_answer",
+      "$.chapters_quiz[2].questions[3].hint_modal",
+      "$.chapters_quiz[2].questions[3].solution_key_3part",
+      "$.chapters_quiz[2].questions[3].solution_key_3part.given_data",
+      "$.chapters_quiz[2].questions[3].solution_key_3part.formula_applied",
+      "$.chapters_quiz[2].questions[3].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[2].questions[3].hotspot_choice",
+      "$.chapters_quiz[2].questions[3].hotspot_choice.target_image",
+      "$.chapters_quiz[2].questions[3].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[2].questions[4].question_id",
+      "$.chapters_quiz[2].questions[4].cognitive_level",
+      "$.chapters_quiz[2].questions[4].question_type",
+      "$.chapters_quiz[2].questions[4].question",
+      "$.chapters_quiz[2].questions[4].options",
+      "$.chapters_quiz[2].questions[4].correct_answer",
+      "$.chapters_quiz[2].questions[4].hint_modal",
+      "$.chapters_quiz[2].questions[4].solution_key_3part",
+      "$.chapters_quiz[2].questions[4].solution_key_3part.given_data",
+      "$.chapters_quiz[2].questions[4].solution_key_3part.formula_applied",
+      "$.chapters_quiz[2].questions[4].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[2].questions[4].hotspot_choice",
+      "$.chapters_quiz[2].questions[4].hotspot_choice.target_image",
+      "$.chapters_quiz[2].questions[4].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[2].questions[5].question_id",
+      "$.chapters_quiz[2].questions[5].cognitive_level",
+      "$.chapters_quiz[2].questions[5].question_type",
+      "$.chapters_quiz[2].questions[5].question",
+      "$.chapters_quiz[2].questions[5].options",
+      "$.chapters_quiz[2].questions[5].correct_answer",
+      "$.chapters_quiz[2].questions[5].hint_modal",
+      "$.chapters_quiz[2].questions[5].solution_key_3part",
+      "$.chapters_quiz[2].questions[5].solution_key_3part.given_data",
+      "$.chapters_quiz[2].questions[5].solution_key_3part.formula_applied",
+      "$.chapters_quiz[2].questions[5].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[2].questions[5].hotspot_choice",
+      "$.chapters_quiz[2].questions[5].hotspot_choice.target_image",
+      "$.chapters_quiz[2].questions[5].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[2].image_asset",
+      "$.chapters_quiz[2].image_asset.image_id",
+      "$.chapters_quiz[2].image_asset.title",
+      "$.chapters_quiz[2].image_asset.url",
+      "$.chapters_quiz[2].image_asset.aspect_ratio",
+      "$.chapters_quiz[2].image_asset.hotspots",
+      "$.chapters_quiz[2].image_asset.hotspots[0].id",
+      "$.chapters_quiz[2].image_asset.hotspots[0].title",
+      "$.chapters_quiz[2].image_asset.hotspots[0].x_percent",
+      "$.chapters_quiz[2].image_asset.hotspots[0].y_percent",
+      "$.chapters_quiz[2].image_asset.hotspots[0].w_percent",
+      "$.chapters_quiz[2].image_asset.hotspots[0].h_percent",
+      "$.chapters_quiz[2].image_asset.hotspots[0].tooltip",
+      "$.chapters_quiz[3].chapter_number",
+      "$.chapters_quiz[3].chapter_title",
+      "$.chapters_quiz[3].questions",
+      "$.chapters_quiz[3].questions[0].question_id",
+      "$.chapters_quiz[3].questions[0].cognitive_level",
+      "$.chapters_quiz[3].questions[0].question_type",
+      "$.chapters_quiz[3].questions[0].question",
+      "$.chapters_quiz[3].questions[0].options",
+      "$.chapters_quiz[3].questions[0].correct_answer",
+      "$.chapters_quiz[3].questions[0].hint_modal",
+      "$.chapters_quiz[3].questions[0].solution_key_3part",
+      "$.chapters_quiz[3].questions[0].solution_key_3part.given_data",
+      "$.chapters_quiz[3].questions[0].solution_key_3part.formula_applied",
+      "$.chapters_quiz[3].questions[0].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[3].questions[0].hotspot_choice",
+      "$.chapters_quiz[3].questions[0].hotspot_choice.target_image",
+      "$.chapters_quiz[3].questions[0].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[3].questions[1].question_id",
+      "$.chapters_quiz[3].questions[1].cognitive_level",
+      "$.chapters_quiz[3].questions[1].question_type",
+      "$.chapters_quiz[3].questions[1].question",
+      "$.chapters_quiz[3].questions[1].options",
+      "$.chapters_quiz[3].questions[1].correct_answer",
+      "$.chapters_quiz[3].questions[1].hint_modal",
+      "$.chapters_quiz[3].questions[1].solution_key_3part",
+      "$.chapters_quiz[3].questions[1].solution_key_3part.given_data",
+      "$.chapters_quiz[3].questions[1].solution_key_3part.formula_applied",
+      "$.chapters_quiz[3].questions[1].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[3].questions[1].hotspot_choice",
+      "$.chapters_quiz[3].questions[1].hotspot_choice.target_image",
+      "$.chapters_quiz[3].questions[1].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[3].questions[2].question_id",
+      "$.chapters_quiz[3].questions[2].cognitive_level",
+      "$.chapters_quiz[3].questions[2].question_type",
+      "$.chapters_quiz[3].questions[2].question",
+      "$.chapters_quiz[3].questions[2].options",
+      "$.chapters_quiz[3].questions[2].correct_answer",
+      "$.chapters_quiz[3].questions[2].hint_modal",
+      "$.chapters_quiz[3].questions[2].solution_key_3part",
+      "$.chapters_quiz[3].questions[2].solution_key_3part.given_data",
+      "$.chapters_quiz[3].questions[2].solution_key_3part.formula_applied",
+      "$.chapters_quiz[3].questions[2].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[3].questions[2].hotspot_choice",
+      "$.chapters_quiz[3].questions[2].hotspot_choice.target_image",
+      "$.chapters_quiz[3].questions[2].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[3].questions[3].question_id",
+      "$.chapters_quiz[3].questions[3].cognitive_level",
+      "$.chapters_quiz[3].questions[3].question_type",
+      "$.chapters_quiz[3].questions[3].question",
+      "$.chapters_quiz[3].questions[3].options",
+      "$.chapters_quiz[3].questions[3].correct_answer",
+      "$.chapters_quiz[3].questions[3].hint_modal",
+      "$.chapters_quiz[3].questions[3].solution_key_3part",
+      "$.chapters_quiz[3].questions[3].solution_key_3part.given_data",
+      "$.chapters_quiz[3].questions[3].solution_key_3part.formula_applied",
+      "$.chapters_quiz[3].questions[3].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[3].questions[3].hotspot_choice",
+      "$.chapters_quiz[3].questions[3].hotspot_choice.target_image",
+      "$.chapters_quiz[3].questions[3].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[3].questions[4].question_id",
+      "$.chapters_quiz[3].questions[4].cognitive_level",
+      "$.chapters_quiz[3].questions[4].question_type",
+      "$.chapters_quiz[3].questions[4].question",
+      "$.chapters_quiz[3].questions[4].options",
+      "$.chapters_quiz[3].questions[4].correct_answer",
+      "$.chapters_quiz[3].questions[4].hint_modal",
+      "$.chapters_quiz[3].questions[4].solution_key_3part",
+      "$.chapters_quiz[3].questions[4].solution_key_3part.given_data",
+      "$.chapters_quiz[3].questions[4].solution_key_3part.formula_applied",
+      "$.chapters_quiz[3].questions[4].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[3].questions[4].hotspot_choice",
+      "$.chapters_quiz[3].questions[4].hotspot_choice.target_image",
+      "$.chapters_quiz[3].questions[4].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[3].questions[5].question_id",
+      "$.chapters_quiz[3].questions[5].cognitive_level",
+      "$.chapters_quiz[3].questions[5].question_type",
+      "$.chapters_quiz[3].questions[5].question",
+      "$.chapters_quiz[3].questions[5].options",
+      "$.chapters_quiz[3].questions[5].correct_answer",
+      "$.chapters_quiz[3].questions[5].hint_modal",
+      "$.chapters_quiz[3].questions[5].solution_key_3part",
+      "$.chapters_quiz[3].questions[5].solution_key_3part.given_data",
+      "$.chapters_quiz[3].questions[5].solution_key_3part.formula_applied",
+      "$.chapters_quiz[3].questions[5].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[3].questions[5].hotspot_choice",
+      "$.chapters_quiz[3].questions[5].hotspot_choice.target_image",
+      "$.chapters_quiz[3].questions[5].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[3].image_asset",
+      "$.chapters_quiz[3].image_asset.image_id",
+      "$.chapters_quiz[3].image_asset.title",
+      "$.chapters_quiz[3].image_asset.url",
+      "$.chapters_quiz[3].image_asset.aspect_ratio",
+      "$.chapters_quiz[3].image_asset.hotspots",
+      "$.chapters_quiz[3].image_asset.hotspots[0].id",
+      "$.chapters_quiz[3].image_asset.hotspots[0].title",
+      "$.chapters_quiz[3].image_asset.hotspots[0].x_percent",
+      "$.chapters_quiz[3].image_asset.hotspots[0].y_percent",
+      "$.chapters_quiz[3].image_asset.hotspots[0].w_percent",
+      "$.chapters_quiz[3].image_asset.hotspots[0].h_percent",
+      "$.chapters_quiz[3].image_asset.hotspots[0].tooltip",
+      "$.chapters_quiz[4].chapter_number",
+      "$.chapters_quiz[4].chapter_title",
+      "$.chapters_quiz[4].questions",
+      "$.chapters_quiz[4].questions[0].question_id",
+      "$.chapters_quiz[4].questions[0].cognitive_level",
+      "$.chapters_quiz[4].questions[0].question_type",
+      "$.chapters_quiz[4].questions[0].question",
+      "$.chapters_quiz[4].questions[0].options",
+      "$.chapters_quiz[4].questions[0].correct_answer",
+      "$.chapters_quiz[4].questions[0].hint_modal",
+      "$.chapters_quiz[4].questions[0].solution_key_3part",
+      "$.chapters_quiz[4].questions[0].solution_key_3part.given_data",
+      "$.chapters_quiz[4].questions[0].solution_key_3part.formula_applied",
+      "$.chapters_quiz[4].questions[0].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[4].questions[0].hotspot_choice",
+      "$.chapters_quiz[4].questions[0].hotspot_choice.target_image",
+      "$.chapters_quiz[4].questions[0].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[4].questions[1].question_id",
+      "$.chapters_quiz[4].questions[1].cognitive_level",
+      "$.chapters_quiz[4].questions[1].question_type",
+      "$.chapters_quiz[4].questions[1].question",
+      "$.chapters_quiz[4].questions[1].options",
+      "$.chapters_quiz[4].questions[1].correct_answer",
+      "$.chapters_quiz[4].questions[1].hint_modal",
+      "$.chapters_quiz[4].questions[1].solution_key_3part",
+      "$.chapters_quiz[4].questions[1].solution_key_3part.given_data",
+      "$.chapters_quiz[4].questions[1].solution_key_3part.formula_applied",
+      "$.chapters_quiz[4].questions[1].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[4].questions[1].hotspot_choice",
+      "$.chapters_quiz[4].questions[1].hotspot_choice.target_image",
+      "$.chapters_quiz[4].questions[1].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[4].questions[2].question_id",
+      "$.chapters_quiz[4].questions[2].cognitive_level",
+      "$.chapters_quiz[4].questions[2].question_type",
+      "$.chapters_quiz[4].questions[2].question",
+      "$.chapters_quiz[4].questions[2].options",
+      "$.chapters_quiz[4].questions[2].correct_answer",
+      "$.chapters_quiz[4].questions[2].hint_modal",
+      "$.chapters_quiz[4].questions[2].solution_key_3part",
+      "$.chapters_quiz[4].questions[2].solution_key_3part.given_data",
+      "$.chapters_quiz[4].questions[2].solution_key_3part.formula_applied",
+      "$.chapters_quiz[4].questions[2].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[4].questions[2].hotspot_choice",
+      "$.chapters_quiz[4].questions[2].hotspot_choice.target_image",
+      "$.chapters_quiz[4].questions[2].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[4].questions[3].question_id",
+      "$.chapters_quiz[4].questions[3].cognitive_level",
+      "$.chapters_quiz[4].questions[3].question_type",
+      "$.chapters_quiz[4].questions[3].question",
+      "$.chapters_quiz[4].questions[3].options",
+      "$.chapters_quiz[4].questions[3].correct_answer",
+      "$.chapters_quiz[4].questions[3].hint_modal",
+      "$.chapters_quiz[4].questions[3].solution_key_3part",
+      "$.chapters_quiz[4].questions[3].solution_key_3part.given_data",
+      "$.chapters_quiz[4].questions[3].solution_key_3part.formula_applied",
+      "$.chapters_quiz[4].questions[3].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[4].questions[3].hotspot_choice",
+      "$.chapters_quiz[4].questions[3].hotspot_choice.target_image",
+      "$.chapters_quiz[4].questions[3].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[4].questions[4].question_id",
+      "$.chapters_quiz[4].questions[4].cognitive_level",
+      "$.chapters_quiz[4].questions[4].question_type",
+      "$.chapters_quiz[4].questions[4].question",
+      "$.chapters_quiz[4].questions[4].options",
+      "$.chapters_quiz[4].questions[4].correct_answer",
+      "$.chapters_quiz[4].questions[4].hint_modal",
+      "$.chapters_quiz[4].questions[4].solution_key_3part",
+      "$.chapters_quiz[4].questions[4].solution_key_3part.given_data",
+      "$.chapters_quiz[4].questions[4].solution_key_3part.formula_applied",
+      "$.chapters_quiz[4].questions[4].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[4].questions[4].hotspot_choice",
+      "$.chapters_quiz[4].questions[4].hotspot_choice.target_image",
+      "$.chapters_quiz[4].questions[4].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[4].questions[5].question_id",
+      "$.chapters_quiz[4].questions[5].cognitive_level",
+      "$.chapters_quiz[4].questions[5].question_type",
+      "$.chapters_quiz[4].questions[5].question",
+      "$.chapters_quiz[4].questions[5].options",
+      "$.chapters_quiz[4].questions[5].correct_answer",
+      "$.chapters_quiz[4].questions[5].hint_modal",
+      "$.chapters_quiz[4].questions[5].solution_key_3part",
+      "$.chapters_quiz[4].questions[5].solution_key_3part.given_data",
+      "$.chapters_quiz[4].questions[5].solution_key_3part.formula_applied",
+      "$.chapters_quiz[4].questions[5].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[4].questions[5].hotspot_choice",
+      "$.chapters_quiz[4].questions[5].hotspot_choice.target_image",
+      "$.chapters_quiz[4].questions[5].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[4].image_asset",
+      "$.chapters_quiz[4].image_asset.image_id",
+      "$.chapters_quiz[4].image_asset.title",
+      "$.chapters_quiz[4].image_asset.url",
+      "$.chapters_quiz[4].image_asset.aspect_ratio",
+      "$.chapters_quiz[4].image_asset.hotspots",
+      "$.chapters_quiz[4].image_asset.hotspots[0].id",
+      "$.chapters_quiz[4].image_asset.hotspots[0].title",
+      "$.chapters_quiz[4].image_asset.hotspots[0].x_percent",
+      "$.chapters_quiz[4].image_asset.hotspots[0].y_percent",
+      "$.chapters_quiz[4].image_asset.hotspots[0].w_percent",
+      "$.chapters_quiz[4].image_asset.hotspots[0].h_percent",
+      "$.chapters_quiz[4].image_asset.hotspots[0].tooltip",
+      "$.chapters_quiz[5].chapter_number",
+      "$.chapters_quiz[5].chapter_title",
+      "$.chapters_quiz[5].questions",
+      "$.chapters_quiz[5].questions[0].question_id",
+      "$.chapters_quiz[5].questions[0].cognitive_level",
+      "$.chapters_quiz[5].questions[0].question_type",
+      "$.chapters_quiz[5].questions[0].question",
+      "$.chapters_quiz[5].questions[0].options",
+      "$.chapters_quiz[5].questions[0].correct_answer",
+      "$.chapters_quiz[5].questions[0].hint_modal",
+      "$.chapters_quiz[5].questions[0].solution_key_3part",
+      "$.chapters_quiz[5].questions[0].solution_key_3part.given_data",
+      "$.chapters_quiz[5].questions[0].solution_key_3part.formula_applied",
+      "$.chapters_quiz[5].questions[0].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[5].questions[0].hotspot_choice",
+      "$.chapters_quiz[5].questions[0].hotspot_choice.target_image",
+      "$.chapters_quiz[5].questions[0].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[5].questions[1].question_id",
+      "$.chapters_quiz[5].questions[1].cognitive_level",
+      "$.chapters_quiz[5].questions[1].question_type",
+      "$.chapters_quiz[5].questions[1].question",
+      "$.chapters_quiz[5].questions[1].options",
+      "$.chapters_quiz[5].questions[1].correct_answer",
+      "$.chapters_quiz[5].questions[1].hint_modal",
+      "$.chapters_quiz[5].questions[1].solution_key_3part",
+      "$.chapters_quiz[5].questions[1].solution_key_3part.given_data",
+      "$.chapters_quiz[5].questions[1].solution_key_3part.formula_applied",
+      "$.chapters_quiz[5].questions[1].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[5].questions[1].hotspot_choice",
+      "$.chapters_quiz[5].questions[1].hotspot_choice.target_image",
+      "$.chapters_quiz[5].questions[1].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[5].questions[2].question_id",
+      "$.chapters_quiz[5].questions[2].cognitive_level",
+      "$.chapters_quiz[5].questions[2].question_type",
+      "$.chapters_quiz[5].questions[2].question",
+      "$.chapters_quiz[5].questions[2].options",
+      "$.chapters_quiz[5].questions[2].correct_answer",
+      "$.chapters_quiz[5].questions[2].hint_modal",
+      "$.chapters_quiz[5].questions[2].solution_key_3part",
+      "$.chapters_quiz[5].questions[2].solution_key_3part.given_data",
+      "$.chapters_quiz[5].questions[2].solution_key_3part.formula_applied",
+      "$.chapters_quiz[5].questions[2].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[5].questions[2].hotspot_choice",
+      "$.chapters_quiz[5].questions[2].hotspot_choice.target_image",
+      "$.chapters_quiz[5].questions[2].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[5].questions[3].question_id",
+      "$.chapters_quiz[5].questions[3].cognitive_level",
+      "$.chapters_quiz[5].questions[3].question_type",
+      "$.chapters_quiz[5].questions[3].question",
+      "$.chapters_quiz[5].questions[3].options",
+      "$.chapters_quiz[5].questions[3].correct_answer",
+      "$.chapters_quiz[5].questions[3].hint_modal",
+      "$.chapters_quiz[5].questions[3].solution_key_3part",
+      "$.chapters_quiz[5].questions[3].solution_key_3part.given_data",
+      "$.chapters_quiz[5].questions[3].solution_key_3part.formula_applied",
+      "$.chapters_quiz[5].questions[3].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[5].questions[3].hotspot_choice",
+      "$.chapters_quiz[5].questions[3].hotspot_choice.target_image",
+      "$.chapters_quiz[5].questions[3].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[5].questions[4].question_id",
+      "$.chapters_quiz[5].questions[4].cognitive_level",
+      "$.chapters_quiz[5].questions[4].question_type",
+      "$.chapters_quiz[5].questions[4].question",
+      "$.chapters_quiz[5].questions[4].options",
+      "$.chapters_quiz[5].questions[4].correct_answer",
+      "$.chapters_quiz[5].questions[4].hint_modal",
+      "$.chapters_quiz[5].questions[4].solution_key_3part",
+      "$.chapters_quiz[5].questions[4].solution_key_3part.given_data",
+      "$.chapters_quiz[5].questions[4].solution_key_3part.formula_applied",
+      "$.chapters_quiz[5].questions[4].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[5].questions[4].hotspot_choice",
+      "$.chapters_quiz[5].questions[4].hotspot_choice.target_image",
+      "$.chapters_quiz[5].questions[4].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[5].questions[5].question_id",
+      "$.chapters_quiz[5].questions[5].cognitive_level",
+      "$.chapters_quiz[5].questions[5].question_type",
+      "$.chapters_quiz[5].questions[5].question",
+      "$.chapters_quiz[5].questions[5].options",
+      "$.chapters_quiz[5].questions[5].correct_answer",
+      "$.chapters_quiz[5].questions[5].hint_modal",
+      "$.chapters_quiz[5].questions[5].solution_key_3part",
+      "$.chapters_quiz[5].questions[5].solution_key_3part.given_data",
+      "$.chapters_quiz[5].questions[5].solution_key_3part.formula_applied",
+      "$.chapters_quiz[5].questions[5].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[5].questions[5].hotspot_choice",
+      "$.chapters_quiz[5].questions[5].hotspot_choice.target_image",
+      "$.chapters_quiz[5].questions[5].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[5].image_asset",
+      "$.chapters_quiz[5].image_asset.image_id",
+      "$.chapters_quiz[5].image_asset.title",
+      "$.chapters_quiz[5].image_asset.url",
+      "$.chapters_quiz[5].image_asset.aspect_ratio",
+      "$.chapters_quiz[5].image_asset.hotspots",
+      "$.chapters_quiz[5].image_asset.hotspots[0].id",
+      "$.chapters_quiz[5].image_asset.hotspots[0].title",
+      "$.chapters_quiz[5].image_asset.hotspots[0].x_percent",
+      "$.chapters_quiz[5].image_asset.hotspots[0].y_percent",
+      "$.chapters_quiz[5].image_asset.hotspots[0].w_percent",
+      "$.chapters_quiz[5].image_asset.hotspots[0].h_percent",
+      "$.chapters_quiz[5].image_asset.hotspots[0].tooltip",
+      "$.chapters_quiz[6].chapter_number",
+      "$.chapters_quiz[6].chapter_title",
+      "$.chapters_quiz[6].questions",
+      "$.chapters_quiz[6].questions[0].question_id",
+      "$.chapters_quiz[6].questions[0].cognitive_level",
+      "$.chapters_quiz[6].questions[0].question_type",
+      "$.chapters_quiz[6].questions[0].question",
+      "$.chapters_quiz[6].questions[0].options",
+      "$.chapters_quiz[6].questions[0].correct_answer",
+      "$.chapters_quiz[6].questions[0].hint_modal",
+      "$.chapters_quiz[6].questions[0].solution_key_3part",
+      "$.chapters_quiz[6].questions[0].solution_key_3part.given_data",
+      "$.chapters_quiz[6].questions[0].solution_key_3part.formula_applied",
+      "$.chapters_quiz[6].questions[0].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[6].questions[0].hotspot_choice",
+      "$.chapters_quiz[6].questions[0].hotspot_choice.target_image",
+      "$.chapters_quiz[6].questions[0].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[6].questions[1].question_id",
+      "$.chapters_quiz[6].questions[1].cognitive_level",
+      "$.chapters_quiz[6].questions[1].question_type",
+      "$.chapters_quiz[6].questions[1].question",
+      "$.chapters_quiz[6].questions[1].options",
+      "$.chapters_quiz[6].questions[1].correct_answer",
+      "$.chapters_quiz[6].questions[1].hint_modal",
+      "$.chapters_quiz[6].questions[1].solution_key_3part",
+      "$.chapters_quiz[6].questions[1].solution_key_3part.given_data",
+      "$.chapters_quiz[6].questions[1].solution_key_3part.formula_applied",
+      "$.chapters_quiz[6].questions[1].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[6].questions[1].hotspot_choice",
+      "$.chapters_quiz[6].questions[1].hotspot_choice.target_image",
+      "$.chapters_quiz[6].questions[1].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[6].questions[2].question_id",
+      "$.chapters_quiz[6].questions[2].cognitive_level",
+      "$.chapters_quiz[6].questions[2].question_type",
+      "$.chapters_quiz[6].questions[2].question",
+      "$.chapters_quiz[6].questions[2].options",
+      "$.chapters_quiz[6].questions[2].correct_answer",
+      "$.chapters_quiz[6].questions[2].hint_modal",
+      "$.chapters_quiz[6].questions[2].solution_key_3part",
+      "$.chapters_quiz[6].questions[2].solution_key_3part.given_data",
+      "$.chapters_quiz[6].questions[2].solution_key_3part.formula_applied",
+      "$.chapters_quiz[6].questions[2].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[6].questions[2].hotspot_choice",
+      "$.chapters_quiz[6].questions[2].hotspot_choice.target_image",
+      "$.chapters_quiz[6].questions[2].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[6].questions[3].question_id",
+      "$.chapters_quiz[6].questions[3].cognitive_level",
+      "$.chapters_quiz[6].questions[3].question_type",
+      "$.chapters_quiz[6].questions[3].question",
+      "$.chapters_quiz[6].questions[3].options",
+      "$.chapters_quiz[6].questions[3].correct_answer",
+      "$.chapters_quiz[6].questions[3].hint_modal",
+      "$.chapters_quiz[6].questions[3].solution_key_3part",
+      "$.chapters_quiz[6].questions[3].solution_key_3part.given_data",
+      "$.chapters_quiz[6].questions[3].solution_key_3part.formula_applied",
+      "$.chapters_quiz[6].questions[3].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[6].questions[3].hotspot_choice",
+      "$.chapters_quiz[6].questions[3].hotspot_choice.target_image",
+      "$.chapters_quiz[6].questions[3].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[6].questions[4].question_id",
+      "$.chapters_quiz[6].questions[4].cognitive_level",
+      "$.chapters_quiz[6].questions[4].question_type",
+      "$.chapters_quiz[6].questions[4].question",
+      "$.chapters_quiz[6].questions[4].options",
+      "$.chapters_quiz[6].questions[4].correct_answer",
+      "$.chapters_quiz[6].questions[4].hint_modal",
+      "$.chapters_quiz[6].questions[4].solution_key_3part",
+      "$.chapters_quiz[6].questions[4].solution_key_3part.given_data",
+      "$.chapters_quiz[6].questions[4].solution_key_3part.formula_applied",
+      "$.chapters_quiz[6].questions[4].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[6].questions[4].hotspot_choice",
+      "$.chapters_quiz[6].questions[4].hotspot_choice.target_image",
+      "$.chapters_quiz[6].questions[4].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[6].questions[5].question_id",
+      "$.chapters_quiz[6].questions[5].cognitive_level",
+      "$.chapters_quiz[6].questions[5].question_type",
+      "$.chapters_quiz[6].questions[5].question",
+      "$.chapters_quiz[6].questions[5].options",
+      "$.chapters_quiz[6].questions[5].correct_answer",
+      "$.chapters_quiz[6].questions[5].hint_modal",
+      "$.chapters_quiz[6].questions[5].solution_key_3part",
+      "$.chapters_quiz[6].questions[5].solution_key_3part.given_data",
+      "$.chapters_quiz[6].questions[5].solution_key_3part.formula_applied",
+      "$.chapters_quiz[6].questions[5].solution_key_3part.step_by_step_calc",
+      "$.chapters_quiz[6].questions[5].hotspot_choice",
+      "$.chapters_quiz[6].questions[5].hotspot_choice.target_image",
+      "$.chapters_quiz[6].questions[5].hotspot_choice.correct_hotspot_id",
+      "$.chapters_quiz[6].image_asset",
+      "$.chapters_quiz[6].image_asset.image_id",
+      "$.chapters_quiz[6].image_asset.title",
+      "$.chapters_quiz[6].image_asset.url",
+      "$.chapters_quiz[6].image_asset.aspect_ratio",
+      "$.chapters_quiz[6].image_asset.hotspots",
+      "$.chapters_quiz[6].image_asset.hotspots[0].id",
+      "$.chapters_quiz[6].image_asset.hotspots[0].title",
+      "$.chapters_quiz[6].image_asset.hotspots[0].x_percent",
+      "$.chapters_quiz[6].image_asset.hotspots[0].y_percent",
+      "$.chapters_quiz[6].image_asset.hotspots[0].w_percent",
+      "$.chapters_quiz[6].image_asset.hotspots[0].h_percent",
+      "$.chapters_quiz[6].image_asset.hotspots[0].tooltip"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters_quiz[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Fractions in Disguise",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters_quiz[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "Percentages as Fractions & Bar Model",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[0].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "25% Quadrant",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[0].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "50% Half Point",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Baudhāyana-Pythagoras Theorem",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters_quiz[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "Baudhāyana-Pythagoras Right Triangle",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[1].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Hypotenuse c = 5",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[1].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Right Angle Corner",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Proportional Reasoning-2",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters_quiz[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "Representative Fraction Map Scale & Pie Chart",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[2].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Grade A Sector (108°)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Exploring Some Geometric Themes",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters_quiz[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "Sierpinski Carpet Iteration 3 & Self-Similarity",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[3].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Central Cutout Hole",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Tales by Dots and Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters_quiz[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "Dot Plot Balance Beam & Arithmetic Mean Fulcrum",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[4].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Fulcrum Pivot at 50",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Algebra Play",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters_quiz[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "3-Tier Additive Number Pyramid",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[5].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Top Cell Equation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Area and Perimeter",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters_quiz[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "Trapezium Area & Height Dissection",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters_quiz[6].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Parallel Base b = 60 cm",
+        "source_number_field": null,
+        "source_number": null
       }
+    ],
+    "chapter_candidate_count": 23,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "module_title": "Self-Scoring Interactive Quiz Engine",
+    "subject": "Ganita Prakash (NCERT Grade 8 Mathematics - Part II)",
+    "quiz_engine": {
+      "timer_seconds": 300,
+      "show_hints": true,
+      "hotspot_choice_enabled": true
     },
-    {
-      "chapter_number": 2,
-      "chapter_title": "The Baudhāyana-Pythagoras Theorem",
-      "questions": [
-        {
-          "question_id": 1,
-          "cognitive_level": "Level 1 (Easy) - Recall & Identification",
-          "question_type": "MCQ",
-          "question": "Which of the following forms a Baudhāyana triple?",
-          "options": [
-            "(3, 4, 6)",
-            "(5, 12, 13)",
-            "(7, 8, 9)",
-            "(8, 10, 12)"
-          ],
-          "correct_answer": "(5, 12, 13)",
-          "hint_modal": "Think about the core rule from Chapter 2!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "5^2 + 12^2 = 25 + 144 = 169 = 13^2."
+    "chapters_quiz": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Fractions in Disguise",
+        "questions": [
+          {
+            "question_id": 1,
+            "cognitive_level": "Level 1 (Easy) - Recall & Identification",
+            "question_type": "MCQ",
+            "question": "What is 12% of 50?",
+            "options": [
+              "5",
+              "6",
+              "10",
+              "12"
+            ],
+            "correct_answer": "6",
+            "hint_modal": "Think about the core rule from Chapter 1!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "12% of 50 = 50% of 12 = 6."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch1_percentages.png",
+              "correct_hotspot_id": "hs_ch1_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch2_baudhayana.png",
-            "correct_hotspot_id": "hs_ch2_1"
-          }
-        },
-        {
-          "question_id": 2,
-          "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
-          "question_type": "Short Answer",
-          "question": "If the hypotenuse of an isosceles right triangle is sqrt(72), find the length of its legs.",
-          "options": [],
-          "correct_answer": "c^2 = 2a^2 => (sqrt(72))^2 = 2a^2 => 72 = 2a^2 => a^2 = 36 => a = 6 units.",
-          "hint_modal": "Think about the core rule from Chapter 2!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Step-by-step mathematical reasoning: c^2 = 2a^2 => (sqrt(72))^2 = 2a^2 => 72 = 2a^2 => a^2 = 36 => a = 6 units."
+          {
+            "question_id": 2,
+            "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
+            "question_type": "Short Answer",
+            "question": "Show algebraically that x% of y is equal to y% of x.",
+            "options": [],
+            "correct_answer": "x% of y = (x/100) * y = (x*y)/100. y% of x = (y/100) * x = (y*x)/100. Since x*y = y*x, both expressions are identical.",
+            "hint_modal": "Think about the core rule from Chapter 1!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Step-by-step mathematical reasoning: x% of y = (x/100) * y = (x*y)/100. y% of x = (y/100) * x = (y*x)/100. Since x*y = y*x, both expressions are identical."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch1_percentages.png",
+              "correct_hotspot_id": "hs_ch1_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch2_baudhayana.png",
-            "correct_hotspot_id": "hs_ch2_1"
-          }
-        },
-        {
-          "question_id": 3,
-          "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
-          "question_type": "Exercise Problem",
-          "question": "Q3: Find the side length of a rhombus whose diagonals are of length 24 units and 70 units.",
-          "options": [],
-          "correct_answer": "Diagonals of a rhombus bisect each other at right angles. Half-diagonals are a = 24/2 = 12 and b = 70/2 = 35. Side length s = sqrt(a^2 + b^2) = sqrt(12^2 + 35^2) = sqrt(144 + 1225) = sqrt(1369) = 37 units.",
-          "hint_modal": "Think about the core rule from Chapter 2!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Textbook solution: Diagonals of a rhombus bisect each other at right angles. Half-diagonals are a = 24/2 = 12 and b = 70/2 = 35. Side length s = sqrt(a^2 + b^2) = sqrt(12^2 + 35^2) = sqrt(144 + 1225) = sqrt(1369) = 37 units."
+          {
+            "question_id": 3,
+            "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
+            "question_type": "Exercise Problem",
+            "question": "Q3: Surya made 60 ml of deep orange paint, where red paint made up 3/4 of the mixture. How much red paint was used?",
+            "options": [],
+            "correct_answer": "3/4 as a percentage is (3/4)*100 = 75%. Volume of red paint = 75% of 60 ml = (75/100)*60 = 45 ml.",
+            "hint_modal": "Think about the core rule from Chapter 1!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Textbook solution: 3/4 as a percentage is (3/4)*100 = 75%. Volume of red paint = 75% of 60 ml = (75/100)*60 = 45 ml."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch1_percentages.png",
+              "correct_hotspot_id": "hs_ch1_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch2_baudhayana.png",
-            "correct_hotspot_id": "hs_ch2_1"
-          }
-        },
-        {
-          "question_id": 4,
-          "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
-          "question_type": "Analytical Reasoning",
-          "question": "[Context: From Bhāskarāchārya's Līlāvatī: A lotus flower peeps 1 unit above water. Swayed by wind, it touches water 3 units away from its position.] Calculate the depth of the lake.",
-          "options": [],
-          "correct_answer": "Let lake depth = x. Total stem length = hypotenuse = x + 1. Right triangle legs are x and 3. By Baudhāyana theorem: 3^2 + x^2 = (x + 1)^2 => 9 + x^2 = x^2 + 2x + 1 => 2x = 8 => x = 4 units.",
-          "hint_modal": "Think about the core rule from Chapter 2!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Logical proof and justification: Let lake depth = x. Total stem length = hypotenuse = x + 1. Right triangle legs are x and 3. By Baudhāyana theorem: 3^2 + x^2 = (x + 1)^2 => 9 + x^2 = x^2 + 2x + 1 => 2x = 8 => x = 4 units."
+          {
+            "question_id": 4,
+            "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
+            "question_type": "Analytical Reasoning",
+            "question": "[Context: A shopkeeper sets a price with a 35% profit margin, then offers a 30% discount on the selling price.] Does the shopkeeper make a profit or a loss?",
+            "options": [],
+            "correct_answer": "Let Cost Price (CP) = 100. Selling Price before discount = 135. Price after 30% discount = 135 * (1 - 0.30) = 135 * 0.70 = 94.5. Since final price 94.5 < 100 CP, he incurs a loss of 5.5%.",
+            "hint_modal": "Think about the core rule from Chapter 1!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Logical proof and justification: Let Cost Price (CP) = 100. Selling Price before discount = 135. Price after 30% discount = 135 * (1 - 0.30) = 135 * 0.70 = 94.5. Since final price 94.5 < 100 CP, he incurs a loss of 5.5%."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch1_percentages.png",
+              "correct_hotspot_id": "hs_ch1_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch2_baudhayana.png",
-            "correct_hotspot_id": "hs_ch2_1"
-          }
-        },
-        {
-          "question_id": 5,
-          "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
-          "question_type": "Long Answer",
-          "question": "Construct a square whose area is 5 times the area of a given square of side 1 unit using Baudhāyana's method.",
-          "options": [],
-          "correct_answer": "1. Square of side 1 has area 1. 2. Combine two unit squares to get hypotenuse sqrt(2) (area 2). 3. Create right triangle with legs 1 and sqrt(2); hypotenuse is sqrt(1+2) = sqrt(3) (area 3). 4. Create right triangle with legs 1 and 2 (since 2 = sqrt(4)); hypotenuse is sqrt(1^2 + 2^2) = sqrt(5). Constructing a square on this hypotenuse yields area 5.",
-          "hint_modal": "Think about the core rule from Chapter 2!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Multi-step solution: 1. Square of side 1 has area 1. 2. Combine two unit squares to get hypotenuse sqrt(2) (area 2). 3. Create right triangle with legs 1 and sqrt(2); hypotenuse is sqrt(1+2) = sqrt(3) (area 3). 4. Create right triangle with legs 1 and 2 (since 2 = sqrt(4)); hypotenuse is sqrt(1^2 + 2^2) = sqrt(5). Constructing a square on this hypotenuse yields area 5."
+          {
+            "question_id": 5,
+            "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
+            "question_type": "Long Answer",
+            "question": "A school excursion consists of 40% Grade 8 students, of which 60% are girls. If total excursion attendance is 200 students, calculate the number of Grade 8 girls, Grade 8 boys, and Grade 9 students.",
+            "options": [],
+            "correct_answer": "Total students = 200. Grade 8 students = 40% of 200 = 80. Grade 9 students = 200 - 80 = 120. Grade 8 girls = 60% of 80 = 48. Grade 8 boys = 80 - 48 = 32.",
+            "hint_modal": "Think about the core rule from Chapter 1!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Multi-step solution: Total students = 200. Grade 8 students = 40% of 200 = 80. Grade 9 students = 200 - 80 = 120. Grade 8 girls = 60% of 80 = 48. Grade 8 boys = 80 - 48 = 32."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch1_percentages.png",
+              "correct_hotspot_id": "hs_ch1_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch2_baudhayana.png",
-            "correct_hotspot_id": "hs_ch2_1"
+          {
+            "question_id": 6,
+            "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
+            "question_type": "Case Study QA",
+            "question": "[Scenario: Eesha scored 42 out of 50 in English and 70 out of 80 in Science.] In which subject did Eesha perform better relatively?",
+            "options": [],
+            "correct_answer": "English % = (42/50)*100 = 84%. Science % = (70/80)*100 = 87.5%. Eesha performed better in Science (87.5% > 84%).",
+            "hint_modal": "Think about the core rule from Chapter 1!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Case-based analysis: English % = (42/50)*100 = 84%. Science % = (70/80)*100 = 87.5%. Eesha performed better in Science (87.5% > 84%)."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch1_percentages.png",
+              "correct_hotspot_id": "hs_ch1_1"
+            }
           }
-        },
-        {
-          "question_id": 6,
-          "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
-          "question_type": "Case Study QA",
-          "question": "[Scenario: A 17 m long ladder is leaned against a vertical wall such that its foot is 8 m away from the base of the wall.] How high up the wall does the ladder reach?",
-          "options": [],
-          "correct_answer": "Ladder forms hypotenuse c = 17 m. Foot distance b = 8 m. Height a = sqrt(17^2 - 8^2) = sqrt(289 - 64) = sqrt(225) = 15 m.",
-          "hint_modal": "Think about the core rule from Chapter 2!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Case-based analysis: Ladder forms hypotenuse c = 17 m. Foot distance b = 8 m. Height a = sqrt(17^2 - 8^2) = sqrt(289 - 64) = sqrt(225) = 15 m."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch2_baudhayana.png",
-            "correct_hotspot_id": "hs_ch2_1"
-          }
+        ],
+        "image_asset": {
+          "image_id": "img_ch1_percentages",
+          "title": "Percentages as Fractions & Bar Model",
+          "url": "/assets/images/ch1_percentages.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_ch1_1",
+              "title": "25% Quadrant",
+              "x_percent": 10,
+              "y_percent": 50,
+              "w_percent": 20,
+              "h_percent": 17,
+              "tooltip": "Represents 1/4 of total value"
+            },
+            {
+              "id": "hs_ch1_2",
+              "title": "50% Half Point",
+              "x_percent": 30,
+              "y_percent": 50,
+              "w_percent": 20,
+              "h_percent": 17,
+              "tooltip": "Represents 1/2 of total value"
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "image_id": "img_ch2_baudhayana",
-        "title": "Baudhāyana-Pythagoras Right Triangle",
-        "url": "/assets/images/ch2_baudhayana.png",
-        "aspect_ratio": "16:9",
-        "hotspots": [
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "The Baudhāyana-Pythagoras Theorem",
+        "questions": [
           {
-            "id": "hs_ch2_1",
-            "title": "Hypotenuse c = 5",
-            "x_percent": 35,
-            "y_percent": 35,
-            "w_percent": 20,
-            "h_percent": 20,
-            "tooltip": "c² = a² + b² (3² + 4² = 25)"
+            "question_id": 1,
+            "cognitive_level": "Level 1 (Easy) - Recall & Identification",
+            "question_type": "MCQ",
+            "question": "Which of the following forms a Baudhāyana triple?",
+            "options": [
+              "(3, 4, 6)",
+              "(5, 12, 13)",
+              "(7, 8, 9)",
+              "(8, 10, 12)"
+            ],
+            "correct_answer": "(5, 12, 13)",
+            "hint_modal": "Think about the core rule from Chapter 2!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "5^2 + 12^2 = 25 + 144 = 169 = 13^2."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch2_baudhayana.png",
+              "correct_hotspot_id": "hs_ch2_1"
+            }
           },
           {
-            "id": "hs_ch2_2",
-            "title": "Right Angle Corner",
-            "x_percent": 18,
-            "y_percent": 20,
-            "w_percent": 10,
-            "h_percent": 10,
-            "tooltip": "90-degree angle bisector"
-          }
-        ]
-      }
-    },
-    {
-      "chapter_number": 3,
-      "chapter_title": "Proportional Reasoning-2",
-      "questions": [
-        {
-          "question_id": 1,
-          "cognitive_level": "Level 1 (Easy) - Recall & Identification",
-          "question_type": "MCQ",
-          "question": "Which of the following pairs of variables are in inverse proportion?",
-          "options": [
-            "Distance covered and petrol consumed",
-            "Speed of a car and time taken for a fixed distance",
-            "Side length of a square and its perimeter",
-            "Cost of apples and total weight purchased"
-          ],
-          "correct_answer": "Speed of a car and time taken for a fixed distance",
-          "hint_modal": "Think about the core rule from Chapter 3!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "For a fixed distance, higher speed results in less travel time (speed * time = distance)."
+            "question_id": 2,
+            "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
+            "question_type": "Short Answer",
+            "question": "If the hypotenuse of an isosceles right triangle is sqrt(72), find the length of its legs.",
+            "options": [],
+            "correct_answer": "c^2 = 2a^2 => (sqrt(72))^2 = 2a^2 => 72 = 2a^2 => a^2 = 36 => a = 6 units.",
+            "hint_modal": "Think about the core rule from Chapter 2!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Step-by-step mathematical reasoning: c^2 = 2a^2 => (sqrt(72))^2 = 2a^2 => 72 = 2a^2 => a^2 = 36 => a = 6 units."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch2_baudhayana.png",
+              "correct_hotspot_id": "hs_ch2_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch3_proportional.png",
-            "correct_hotspot_id": "hs_ch3_1"
-          }
-        },
-        {
-          "question_id": 2,
-          "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
-          "question_type": "Short Answer",
-          "question": "Divide $120 among A, B, and C in the multi-term ratio 2 : 3 : 5.",
-          "options": [],
-          "correct_answer": "Total parts = 2 + 3 + 5 = 10 parts. Share A = (2/10)*120 = $24. Share B = (3/10)*120 = $36. Share C = (5/10)*120 = $60.",
-          "hint_modal": "Think about the core rule from Chapter 3!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Step-by-step mathematical reasoning: Total parts = 2 + 3 + 5 = 10 parts. Share A = (2/10)*120 = $24. Share B = (3/10)*120 = $36. Share C = (5/10)*120 = $60."
+          {
+            "question_id": 3,
+            "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
+            "question_type": "Exercise Problem",
+            "question": "Q3: Find the side length of a rhombus whose diagonals are of length 24 units and 70 units.",
+            "options": [],
+            "correct_answer": "Diagonals of a rhombus bisect each other at right angles. Half-diagonals are a = 24/2 = 12 and b = 70/2 = 35. Side length s = sqrt(a^2 + b^2) = sqrt(12^2 + 35^2) = sqrt(144 + 1225) = sqrt(1369) = 37 units.",
+            "hint_modal": "Think about the core rule from Chapter 2!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Textbook solution: Diagonals of a rhombus bisect each other at right angles. Half-diagonals are a = 24/2 = 12 and b = 70/2 = 35. Side length s = sqrt(a^2 + b^2) = sqrt(12^2 + 35^2) = sqrt(144 + 1225) = sqrt(1369) = 37 units."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch2_baudhayana.png",
+              "correct_hotspot_id": "hs_ch2_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch3_proportional.png",
-            "correct_hotspot_id": "hs_ch3_1"
-          }
-        },
-        {
-          "question_id": 3,
-          "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
-          "question_type": "Exercise Problem",
-          "question": "Q2: If 20 workers take 4 days to complete laying a road, how many days will 10 workers take?",
-          "options": [],
-          "correct_answer": "Worker count and days are inversely proportional: x1*y1 = x2*y2 => 20 * 4 = 10 * y2 => 80 = 10*y2 => y2 = 8 days.",
-          "hint_modal": "Think about the core rule from Chapter 3!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Textbook solution: Worker count and days are inversely proportional: x1*y1 = x2*y2 => 20 * 4 = 10 * y2 => 80 = 10*y2 => y2 = 8 days."
+          {
+            "question_id": 4,
+            "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
+            "question_type": "Analytical Reasoning",
+            "question": "[Context: From Bhāskarāchārya's Līlāvatī: A lotus flower peeps 1 unit above water. Swayed by wind, it touches water 3 units away from its position.] Calculate the depth of the lake.",
+            "options": [],
+            "correct_answer": "Let lake depth = x. Total stem length = hypotenuse = x + 1. Right triangle legs are x and 3. By Baudhāyana theorem: 3^2 + x^2 = (x + 1)^2 => 9 + x^2 = x^2 + 2x + 1 => 2x = 8 => x = 4 units.",
+            "hint_modal": "Think about the core rule from Chapter 2!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Logical proof and justification: Let lake depth = x. Total stem length = hypotenuse = x + 1. Right triangle legs are x and 3. By Baudhāyana theorem: 3^2 + x^2 = (x + 1)^2 => 9 + x^2 = x^2 + 2x + 1 => 2x = 8 => x = 4 units."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch2_baudhayana.png",
+              "correct_hotspot_id": "hs_ch2_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch3_proportional.png",
-            "correct_hotspot_id": "hs_ch3_1"
-          }
-        },
-        {
-          "question_id": 4,
-          "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
-          "question_type": "Analytical Reasoning",
-          "question": "[Context: On a map with Representative Fraction RF 1 : 6,000,000, two cities are separated by 3.5 cm on the map.] What is the actual geographical distance between the cities in kilometers?",
-          "options": [],
-          "correct_answer": "Ground distance = 3.5 cm * 6,000,000 = 21,000,000 cm = 210,000 m = 210 km.",
-          "hint_modal": "Think about the core rule from Chapter 3!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Logical proof and justification: Ground distance = 3.5 cm * 6,000,000 = 21,000,000 cm = 210,000 m = 210 km."
+          {
+            "question_id": 5,
+            "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
+            "question_type": "Long Answer",
+            "question": "Construct a square whose area is 5 times the area of a given square of side 1 unit using Baudhāyana's method.",
+            "options": [],
+            "correct_answer": "1. Square of side 1 has area 1. 2. Combine two unit squares to get hypotenuse sqrt(2) (area 2). 3. Create right triangle with legs 1 and sqrt(2); hypotenuse is sqrt(1+2) = sqrt(3) (area 3). 4. Create right triangle with legs 1 and 2 (since 2 = sqrt(4)); hypotenuse is sqrt(1^2 + 2^2) = sqrt(5). Constructing a square on this hypotenuse yields area 5.",
+            "hint_modal": "Think about the core rule from Chapter 2!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Multi-step solution: 1. Square of side 1 has area 1. 2. Combine two unit squares to get hypotenuse sqrt(2) (area 2). 3. Create right triangle with legs 1 and sqrt(2); hypotenuse is sqrt(1+2) = sqrt(3) (area 3). 4. Create right triangle with legs 1 and 2 (since 2 = sqrt(4)); hypotenuse is sqrt(1^2 + 2^2) = sqrt(5). Constructing a square on this hypotenuse yields area 5."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch2_baudhayana.png",
+              "correct_hotspot_id": "hs_ch2_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch3_proportional.png",
-            "correct_hotspot_id": "hs_ch3_1"
+          {
+            "question_id": 6,
+            "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
+            "question_type": "Case Study QA",
+            "question": "[Scenario: A 17 m long ladder is leaned against a vertical wall such that its foot is 8 m away from the base of the wall.] How high up the wall does the ladder reach?",
+            "options": [],
+            "correct_answer": "Ladder forms hypotenuse c = 17 m. Foot distance b = 8 m. Height a = sqrt(17^2 - 8^2) = sqrt(289 - 64) = sqrt(225) = 15 m.",
+            "hint_modal": "Think about the core rule from Chapter 2!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Case-based analysis: Ladder forms hypotenuse c = 17 m. Foot distance b = 8 m. Height a = sqrt(17^2 - 8^2) = sqrt(289 - 64) = sqrt(225) = 15 m."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch2_baudhayana.png",
+              "correct_hotspot_id": "hs_ch2_1"
+            }
           }
-        },
-        {
-          "question_id": 5,
-          "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
-          "question_type": "Long Answer",
-          "question": "A water tank is filled by 6 pipes in 1 hour 20 minutes (80 minutes). How long will it take to fill the tank if only 4 pipes are used?",
-          "options": [],
-          "correct_answer": "Number of pipes (P) and time in minutes (T) are inversely proportional: P1 * T1 = P2 * T2 => 6 * 80 = 4 * T2 => 480 = 4 * T2 => T2 = 120 minutes = 2 hours.",
-          "hint_modal": "Think about the core rule from Chapter 3!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Multi-step solution: Number of pipes (P) and time in minutes (T) are inversely proportional: P1 * T1 = P2 * T2 => 6 * 80 = 4 * T2 => 480 = 4 * T2 => T2 = 120 minutes = 2 hours."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch3_proportional.png",
-            "correct_hotspot_id": "hs_ch3_1"
-          }
-        },
-        {
-          "question_id": 6,
-          "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
-          "question_type": "Case Study QA",
-          "question": "[Scenario: A contractor plans a building project requiring 15 workers for 24 days.] If the client demands completion in 18 days, how many extra workers must be hired?",
-          "options": [],
-          "correct_answer": "Let total required workers = W. 15 * 24 = W * 18 => 360 = 18*W => W = 20 workers. Additional workers needed = 20 - 15 = 5 workers.",
-          "hint_modal": "Think about the core rule from Chapter 3!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Case-based analysis: Let total required workers = W. 15 * 24 = W * 18 => 360 = 18*W => W = 20 workers. Additional workers needed = 20 - 15 = 5 workers."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch3_proportional.png",
-            "correct_hotspot_id": "hs_ch3_1"
-          }
+        ],
+        "image_asset": {
+          "image_id": "img_ch2_baudhayana",
+          "title": "Baudhāyana-Pythagoras Right Triangle",
+          "url": "/assets/images/ch2_baudhayana.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_ch2_1",
+              "title": "Hypotenuse c = 5",
+              "x_percent": 35,
+              "y_percent": 35,
+              "w_percent": 20,
+              "h_percent": 20,
+              "tooltip": "c² = a² + b² (3² + 4² = 25)"
+            },
+            {
+              "id": "hs_ch2_2",
+              "title": "Right Angle Corner",
+              "x_percent": 18,
+              "y_percent": 20,
+              "w_percent": 10,
+              "h_percent": 10,
+              "tooltip": "90-degree angle bisector"
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "image_id": "img_ch3_proportional",
-        "title": "Representative Fraction Map Scale & Pie Chart",
-        "url": "/assets/images/ch3_proportional.png",
-        "aspect_ratio": "16:9",
-        "hotspots": [
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Proportional Reasoning-2",
+        "questions": [
           {
-            "id": "hs_ch3_1",
-            "title": "Grade A Sector (108°)",
-            "x_percent": 45,
-            "y_percent": 40,
-            "w_percent": 20,
-            "h_percent": 20,
-            "tooltip": "Central Angle = (12/40) * 360° = 108°"
-          }
-        ]
-      }
-    },
-    {
-      "chapter_number": 4,
-      "chapter_title": "Exploring Some Geometric Themes",
-      "questions": [
-        {
-          "question_id": 1,
-          "cognitive_level": "Level 1 (Easy) - Recall & Identification",
-          "question_type": "MCQ",
-          "question": "How many remaining small triangles exist at Step 3 of the Sierpinski Triangle sequence?",
-          "options": [
-            "9",
-            "27",
-            "81",
-            "243"
-          ],
-          "correct_answer": "27",
-          "hint_modal": "Think about the core rule from Chapter 4!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Remaining triangles formula = 3^n = 3^3 = 27."
+            "question_id": 1,
+            "cognitive_level": "Level 1 (Easy) - Recall & Identification",
+            "question_type": "MCQ",
+            "question": "Which of the following pairs of variables are in inverse proportion?",
+            "options": [
+              "Distance covered and petrol consumed",
+              "Speed of a car and time taken for a fixed distance",
+              "Side length of a square and its perimeter",
+              "Cost of apples and total weight purchased"
+            ],
+            "correct_answer": "Speed of a car and time taken for a fixed distance",
+            "hint_modal": "Think about the core rule from Chapter 3!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "For a fixed distance, higher speed results in less travel time (speed * time = distance)."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch3_proportional.png",
+              "correct_hotspot_id": "hs_ch3_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch4_fractals.png",
-            "correct_hotspot_id": "hs_ch4_1"
-          }
-        },
-        {
-          "question_id": 2,
-          "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
-          "question_type": "Short Answer",
-          "question": "Calculate the perimeter of the Koch Snowflake at Step 2 starting with an equilateral triangle of side length 1 unit.",
-          "options": [],
-          "correct_answer": "P_n = 3 * (4/3)^n. At Step 2: P_2 = 3 * (4/3)^2 = 3 * (16/9) = 16/3 = 5.33 units.",
-          "hint_modal": "Think about the core rule from Chapter 4!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Step-by-step mathematical reasoning: P_n = 3 * (4/3)^n. At Step 2: P_2 = 3 * (4/3)^2 = 3 * (16/9) = 16/3 = 5.33 units."
+          {
+            "question_id": 2,
+            "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
+            "question_type": "Short Answer",
+            "question": "Divide $120 among A, B, and C in the multi-term ratio 2 : 3 : 5.",
+            "options": [],
+            "correct_answer": "Total parts = 2 + 3 + 5 = 10 parts. Share A = (2/10)*120 = $24. Share B = (3/10)*120 = $36. Share C = (5/10)*120 = $60.",
+            "hint_modal": "Think about the core rule from Chapter 3!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Step-by-step mathematical reasoning: Total parts = 2 + 3 + 5 = 10 parts. Share A = (2/10)*120 = $24. Share B = (3/10)*120 = $36. Share C = (5/10)*120 = $60."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch3_proportional.png",
+              "correct_hotspot_id": "hs_ch3_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch4_fractals.png",
-            "correct_hotspot_id": "hs_ch4_1"
-          }
-        },
-        {
-          "question_id": 3,
-          "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
-          "question_type": "Exercise Problem",
-          "question": "Q3: Find the perimeter of the Koch Snowflake at step n if the initial equilateral triangle has side length 1 unit.",
-          "options": [],
-          "correct_answer": "Initial perimeter P0 = 3 units. At each step, each side segment is replaced by 4 segments of 1/3 the previous length, scaling perimeter by 4/3. Thus, P_n = 3 * (4/3)^n units.",
-          "hint_modal": "Think about the core rule from Chapter 4!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Textbook solution: Initial perimeter P0 = 3 units. At each step, each side segment is replaced by 4 segments of 1/3 the previous length, scaling perimeter by 4/3. Thus, P_n = 3 * (4/3)^n units."
+          {
+            "question_id": 3,
+            "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
+            "question_type": "Exercise Problem",
+            "question": "Q2: If 20 workers take 4 days to complete laying a road, how many days will 10 workers take?",
+            "options": [],
+            "correct_answer": "Worker count and days are inversely proportional: x1*y1 = x2*y2 => 20 * 4 = 10 * y2 => 80 = 10*y2 => y2 = 8 days.",
+            "hint_modal": "Think about the core rule from Chapter 3!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Textbook solution: Worker count and days are inversely proportional: x1*y1 = x2*y2 => 20 * 4 = 10 * y2 => 80 = 10*y2 => y2 = 8 days."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch3_proportional.png",
+              "correct_hotspot_id": "hs_ch3_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch4_fractals.png",
-            "correct_hotspot_id": "hs_ch4_1"
-          }
-        },
-        {
-          "question_id": 4,
-          "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
-          "question_type": "Analytical Reasoning",
-          "question": "[Context: An ant wants to crawl from one corner of a cuboid box to the diagonally opposite top corner along its outer surface.] How can we determine the shortest path for the ant?",
-          "options": [],
-          "correct_answer": "Unfold the cuboid into its 2D planar net layout and draw a straight line segment connecting the starting corner to the target corner across adjacent unfolded faces.",
-          "hint_modal": "Think about the core rule from Chapter 4!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Logical proof and justification: Unfold the cuboid into its 2D planar net layout and draw a straight line segment connecting the starting corner to the target corner across adjacent unfolded faces."
+          {
+            "question_id": 4,
+            "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
+            "question_type": "Analytical Reasoning",
+            "question": "[Context: On a map with Representative Fraction RF 1 : 6,000,000, two cities are separated by 3.5 cm on the map.] What is the actual geographical distance between the cities in kilometers?",
+            "options": [],
+            "correct_answer": "Ground distance = 3.5 cm * 6,000,000 = 21,000,000 cm = 210,000 m = 210 km.",
+            "hint_modal": "Think about the core rule from Chapter 3!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Logical proof and justification: Ground distance = 3.5 cm * 6,000,000 = 21,000,000 cm = 210,000 m = 210 km."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch3_proportional.png",
+              "correct_hotspot_id": "hs_ch3_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch4_fractals.png",
-            "correct_hotspot_id": "hs_ch4_1"
-          }
-        },
-        {
-          "question_id": 5,
-          "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
-          "question_type": "Long Answer",
-          "question": "Derive the recursive formula for total holes H_n in the Sierpinski Carpet at step n.",
-          "options": [],
-          "correct_answer": "At step n, each remaining square R_n produces 1 new hole in step n+1. Existing holes H_n persist. Thus, H_(n+1) = H_n + R_n. Since R_n = 8^n and H_0 = 0: H_1 = 1, H_2 = 1 + 8 = 9, H_3 = 1 + 8 + 64 = 73. In general, H_n = (8^n - 1) / 7.",
-          "hint_modal": "Think about the core rule from Chapter 4!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Multi-step solution: At step n, each remaining square R_n produces 1 new hole in step n+1. Existing holes H_n persist. Thus, H_(n+1) = H_n + R_n. Since R_n = 8^n and H_0 = 0: H_1 = 1, H_2 = 1 + 8 = 9, H_3 = 1 + 8 + 64 = 73. In general, H_n = (8^n - 1) / 7."
+          {
+            "question_id": 5,
+            "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
+            "question_type": "Long Answer",
+            "question": "A water tank is filled by 6 pipes in 1 hour 20 minutes (80 minutes). How long will it take to fill the tank if only 4 pipes are used?",
+            "options": [],
+            "correct_answer": "Number of pipes (P) and time in minutes (T) are inversely proportional: P1 * T1 = P2 * T2 => 6 * 80 = 4 * T2 => 480 = 4 * T2 => T2 = 120 minutes = 2 hours.",
+            "hint_modal": "Think about the core rule from Chapter 3!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Multi-step solution: Number of pipes (P) and time in minutes (T) are inversely proportional: P1 * T1 = P2 * T2 => 6 * 80 = 4 * T2 => 480 = 4 * T2 => T2 = 120 minutes = 2 hours."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch3_proportional.png",
+              "correct_hotspot_id": "hs_ch3_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch4_fractals.png",
-            "correct_hotspot_id": "hs_ch4_1"
+          {
+            "question_id": 6,
+            "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
+            "question_type": "Case Study QA",
+            "question": "[Scenario: A contractor plans a building project requiring 15 workers for 24 days.] If the client demands completion in 18 days, how many extra workers must be hired?",
+            "options": [],
+            "correct_answer": "Let total required workers = W. 15 * 24 = W * 18 => 360 = 18*W => W = 20 workers. Additional workers needed = 20 - 15 = 5 workers.",
+            "hint_modal": "Think about the core rule from Chapter 3!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Case-based analysis: Let total required workers = W. 15 * 24 = W * 18 => 360 = 18*W => W = 20 workers. Additional workers needed = 20 - 15 = 5 workers."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch3_proportional.png",
+              "correct_hotspot_id": "hs_ch3_1"
+            }
           }
-        },
-        {
-          "question_id": 6,
-          "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
-          "question_type": "Case Study QA",
-          "question": "[Scenario: A designer uses a 2D rectangular cardboard grid of dimensions 12 cm by 8 cm to construct a closed rectangular gift box.] How many faces must the unfolded net have, and what shape are they?",
-          "options": [],
-          "correct_answer": "The net must have 6 rectangular faces arranged such that opposite faces match in dimensions.",
-          "hint_modal": "Think about the core rule from Chapter 4!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Case-based analysis: The net must have 6 rectangular faces arranged such that opposite faces match in dimensions."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch4_fractals.png",
-            "correct_hotspot_id": "hs_ch4_1"
-          }
+        ],
+        "image_asset": {
+          "image_id": "img_ch3_proportional",
+          "title": "Representative Fraction Map Scale & Pie Chart",
+          "url": "/assets/images/ch3_proportional.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_ch3_1",
+              "title": "Grade A Sector (108°)",
+              "x_percent": 45,
+              "y_percent": 40,
+              "w_percent": 20,
+              "h_percent": 20,
+              "tooltip": "Central Angle = (12/40) * 360° = 108°"
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "image_id": "img_ch4_fractals",
-        "title": "Sierpinski Carpet Iteration 3 & Self-Similarity",
-        "url": "/assets/images/ch4_fractals.png",
-        "aspect_ratio": "16:9",
-        "hotspots": [
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Exploring Some Geometric Themes",
+        "questions": [
           {
-            "id": "hs_ch4_1",
-            "title": "Central Cutout Hole",
-            "x_percent": 30,
-            "y_percent": 30,
-            "w_percent": 20,
-            "h_percent": 20,
-            "tooltip": "Holes formula: H_n = (8ⁿ - 1) / 7"
-          }
-        ]
-      }
-    },
-    {
-      "chapter_number": 5,
-      "chapter_title": "Tales by Dots and Lines",
-      "questions": [
-        {
-          "question_id": 1,
-          "cognitive_level": "Level 1 (Easy) - Recall & Identification",
-          "question_type": "MCQ",
-          "question": "If every value in a dataset is increased by 5, what happens to the mean?",
-          "options": [
-            "Decreases by 5",
-            "Remains unchanged",
-            "Increases by 5",
-            "Multiplies by 5"
-          ],
-          "correct_answer": "Increases by 5",
-          "hint_modal": "Think about the core rule from Chapter 5!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Adding constant k to all data points shifts the mean by +k."
+            "question_id": 1,
+            "cognitive_level": "Level 1 (Easy) - Recall & Identification",
+            "question_type": "MCQ",
+            "question": "How many remaining small triangles exist at Step 3 of the Sierpinski Triangle sequence?",
+            "options": [
+              "9",
+              "27",
+              "81",
+              "243"
+            ],
+            "correct_answer": "27",
+            "hint_modal": "Think about the core rule from Chapter 4!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Remaining triangles formula = 3^n = 3^3 = 27."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch4_fractals.png",
+              "correct_hotspot_id": "hs_ch4_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch5_dot_plot.png",
-            "correct_hotspot_id": "hs_ch5_1"
-          }
-        },
-        {
-          "question_id": 2,
-          "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
-          "question_type": "Short Answer",
-          "question": "Data dots are placed on a number line at 6, 10, and 20. Find the mean and verify the zero-sum deviation property.",
-          "options": [],
-          "correct_answer": "Mean = (6 + 10 + 20) / 3 = 36 / 3 = 12. Deviations: (6-12) + (10-12) + (20-12) = -6 + (-2) + 8 = 0. Property verified.",
-          "hint_modal": "Think about the core rule from Chapter 5!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Step-by-step mathematical reasoning: Mean = (6 + 10 + 20) / 3 = 36 / 3 = 12. Deviations: (6-12) + (10-12) + (20-12) = -6 + (-2) + 8 = 0. Property verified."
+          {
+            "question_id": 2,
+            "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
+            "question_type": "Short Answer",
+            "question": "Calculate the perimeter of the Koch Snowflake at Step 2 starting with an equilateral triangle of side length 1 unit.",
+            "options": [],
+            "correct_answer": "P_n = 3 * (4/3)^n. At Step 2: P_2 = 3 * (4/3)^2 = 3 * (16/9) = 16/3 = 5.33 units.",
+            "hint_modal": "Think about the core rule from Chapter 4!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Step-by-step mathematical reasoning: P_n = 3 * (4/3)^n. At Step 2: P_2 = 3 * (4/3)^2 = 3 * (16/9) = 16/3 = 5.33 units."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch4_fractals.png",
+              "correct_hotspot_id": "hs_ch4_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch5_dot_plot.png",
-            "correct_hotspot_id": "hs_ch5_1"
-          }
-        },
-        {
-          "question_id": 3,
-          "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
-          "question_type": "Exercise Problem",
-          "question": "Q4: The mean of 5 numbers is 18. If one number is removed, the mean of the remaining 4 numbers becomes 16. What was the removed number?",
-          "options": [],
-          "correct_answer": "Original total sum = 5 * 18 = 90. New total sum after removal = 4 * 16 = 64. Removed number = Original sum - New sum = 90 - 64 = 26.",
-          "hint_modal": "Think about the core rule from Chapter 5!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Textbook solution: Original total sum = 5 * 18 = 90. New total sum after removal = 4 * 16 = 64. Removed number = Original sum - New sum = 90 - 64 = 26."
+          {
+            "question_id": 3,
+            "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
+            "question_type": "Exercise Problem",
+            "question": "Q3: Find the perimeter of the Koch Snowflake at step n if the initial equilateral triangle has side length 1 unit.",
+            "options": [],
+            "correct_answer": "Initial perimeter P0 = 3 units. At each step, each side segment is replaced by 4 segments of 1/3 the previous length, scaling perimeter by 4/3. Thus, P_n = 3 * (4/3)^n units.",
+            "hint_modal": "Think about the core rule from Chapter 4!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Textbook solution: Initial perimeter P0 = 3 units. At each step, each side segment is replaced by 4 segments of 1/3 the previous length, scaling perimeter by 4/3. Thus, P_n = 3 * (4/3)^n units."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch4_fractals.png",
+              "correct_hotspot_id": "hs_ch4_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch5_dot_plot.png",
-            "correct_hotspot_id": "hs_ch5_1"
-          }
-        },
-        {
-          "question_id": 4,
-          "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
-          "question_type": "Analytical Reasoning",
-          "question": "[Context: A student scores 65, 72, 80, and 78 in four exams. She wants her five-exam mean to be 75.] What score must she obtain in her fifth exam?",
-          "options": [],
-          "correct_answer": "Required total sum for 5 exams = 5 * 75 = 375. Current sum = 65 + 72 + 80 + 78 = 295. Required 5th exam score = 375 - 295 = 80.",
-          "hint_modal": "Think about the core rule from Chapter 5!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Logical proof and justification: Required total sum for 5 exams = 5 * 75 = 375. Current sum = 65 + 72 + 80 + 78 = 295. Required 5th exam score = 375 - 295 = 80."
+          {
+            "question_id": 4,
+            "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
+            "question_type": "Analytical Reasoning",
+            "question": "[Context: An ant wants to crawl from one corner of a cuboid box to the diagonally opposite top corner along its outer surface.] How can we determine the shortest path for the ant?",
+            "options": [],
+            "correct_answer": "Unfold the cuboid into its 2D planar net layout and draw a straight line segment connecting the starting corner to the target corner across adjacent unfolded faces.",
+            "hint_modal": "Think about the core rule from Chapter 4!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Logical proof and justification: Unfold the cuboid into its 2D planar net layout and draw a straight line segment connecting the starting corner to the target corner across adjacent unfolded faces."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch4_fractals.png",
+              "correct_hotspot_id": "hs_ch4_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch5_dot_plot.png",
-            "correct_hotspot_id": "hs_ch5_1"
-          }
-        },
-        {
-          "question_id": 5,
-          "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
-          "question_type": "Long Answer",
-          "question": "The mean height of 20 students in Class A is 145 cm, and the mean height of 30 students in Class B is 150 cm. Calculate the combined overall mean height of all 50 students.",
-          "options": [],
-          "correct_answer": "Class A total height = 20 * 145 = 2900 cm. Class B total height = 30 * 150 = 4500 cm. Combined total height = 2900 + 4500 = 7400 cm. Total students = 20 + 30 = 50. Combined mean = 7400 / 50 = 148 cm.",
-          "hint_modal": "Think about the core rule from Chapter 5!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Multi-step solution: Class A total height = 20 * 145 = 2900 cm. Class B total height = 30 * 150 = 4500 cm. Combined total height = 2900 + 4500 = 7400 cm. Total students = 20 + 30 = 50. Combined mean = 7400 / 50 = 148 cm."
+          {
+            "question_id": 5,
+            "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
+            "question_type": "Long Answer",
+            "question": "Derive the recursive formula for total holes H_n in the Sierpinski Carpet at step n.",
+            "options": [],
+            "correct_answer": "At step n, each remaining square R_n produces 1 new hole in step n+1. Existing holes H_n persist. Thus, H_(n+1) = H_n + R_n. Since R_n = 8^n and H_0 = 0: H_1 = 1, H_2 = 1 + 8 = 9, H_3 = 1 + 8 + 64 = 73. In general, H_n = (8^n - 1) / 7.",
+            "hint_modal": "Think about the core rule from Chapter 4!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Multi-step solution: At step n, each remaining square R_n produces 1 new hole in step n+1. Existing holes H_n persist. Thus, H_(n+1) = H_n + R_n. Since R_n = 8^n and H_0 = 0: H_1 = 1, H_2 = 1 + 8 = 9, H_3 = 1 + 8 + 64 = 73. In general, H_n = (8^n - 1) / 7."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch4_fractals.png",
+              "correct_hotspot_id": "hs_ch4_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch5_dot_plot.png",
-            "correct_hotspot_id": "hs_ch5_1"
+          {
+            "question_id": 6,
+            "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
+            "question_type": "Case Study QA",
+            "question": "[Scenario: A designer uses a 2D rectangular cardboard grid of dimensions 12 cm by 8 cm to construct a closed rectangular gift box.] How many faces must the unfolded net have, and what shape are they?",
+            "options": [],
+            "correct_answer": "The net must have 6 rectangular faces arranged such that opposite faces match in dimensions.",
+            "hint_modal": "Think about the core rule from Chapter 4!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Case-based analysis: The net must have 6 rectangular faces arranged such that opposite faces match in dimensions."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch4_fractals.png",
+              "correct_hotspot_id": "hs_ch4_1"
+            }
           }
-        },
-        {
-          "question_id": 6,
-          "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
-          "question_type": "Case Study QA",
-          "question": "[Scenario: A hospital monitors a patient's body temperature every 2 hours from 8 AM to 4 PM: 37°C, 37.5°C, 38.5°C, 38°C, 37°C.] Plot a line graph description and determine the peak temperature period.",
-          "options": [],
-          "correct_answer": "Temperatures rise from 37°C at 8 AM to a peak of 38.5°C at 12 PM before decreasing back to 37°C at 4 PM.",
-          "hint_modal": "Think about the core rule from Chapter 5!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Case-based analysis: Temperatures rise from 37°C at 8 AM to a peak of 38.5°C at 12 PM before decreasing back to 37°C at 4 PM."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch5_dot_plot.png",
-            "correct_hotspot_id": "hs_ch5_1"
-          }
+        ],
+        "image_asset": {
+          "image_id": "img_ch4_fractals",
+          "title": "Sierpinski Carpet Iteration 3 & Self-Similarity",
+          "url": "/assets/images/ch4_fractals.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_ch4_1",
+              "title": "Central Cutout Hole",
+              "x_percent": 30,
+              "y_percent": 30,
+              "w_percent": 20,
+              "h_percent": 20,
+              "tooltip": "Holes formula: H_n = (8ⁿ - 1) / 7"
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "image_id": "img_ch5_dot_plot",
-        "title": "Dot Plot Balance Beam & Arithmetic Mean Fulcrum",
-        "url": "/assets/images/ch5_dot_plot.png",
-        "aspect_ratio": "16:9",
-        "hotspots": [
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Tales by Dots and Lines",
+        "questions": [
           {
-            "id": "hs_ch5_1",
-            "title": "Fulcrum Pivot at 50",
-            "x_percent": 45,
-            "y_percent": 20,
-            "w_percent": 10,
-            "h_percent": 15,
-            "tooltip": "Balance point where sum of deviations equals 0"
-          }
-        ]
-      }
-    },
-    {
-      "chapter_number": 6,
-      "chapter_title": "Algebra Play",
-      "questions": [
-        {
-          "question_id": 1,
-          "cognitive_level": "Level 1 (Easy) - Recall & Identification",
-          "question_type": "MCQ",
-          "question": "What is the simplified algebraic result of: Think of x, double it, add 8, divide by 2, subtract x?",
-          "options": [
-            "x",
-            "2",
-            "4",
-            "8"
-          ],
-          "correct_answer": "4",
-          "hint_modal": "Think about the core rule from Chapter 6!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "[(2x + 8)/2] - x = (x + 4) - x = 4."
+            "question_id": 1,
+            "cognitive_level": "Level 1 (Easy) - Recall & Identification",
+            "question_type": "MCQ",
+            "question": "If every value in a dataset is increased by 5, what happens to the mean?",
+            "options": [
+              "Decreases by 5",
+              "Remains unchanged",
+              "Increases by 5",
+              "Multiplies by 5"
+            ],
+            "correct_answer": "Increases by 5",
+            "hint_modal": "Think about the core rule from Chapter 5!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Adding constant k to all data points shifts the mean by +k."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch5_dot_plot.png",
+              "correct_hotspot_id": "hs_ch5_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch6_algebra.png",
-            "correct_hotspot_id": "hs_ch6_1"
-          }
-        },
-        {
-          "question_id": 2,
-          "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
-          "question_type": "Short Answer",
-          "question": "Prove that the sum of a two-digit number 10x + y and its reverse 10y + x is always divisible by 11.",
-          "options": [],
-          "correct_answer": "Sum = (10x + y) + (10y + x) = 11x + 11y = 11(x + y). Since 11 is a factor, the sum is always a multiple of 11.",
-          "hint_modal": "Think about the core rule from Chapter 6!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Step-by-step mathematical reasoning: Sum = (10x + y) + (10y + x) = 11x + 11y = 11(x + y). Since 11 is a factor, the sum is always a multiple of 11."
+          {
+            "question_id": 2,
+            "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
+            "question_type": "Short Answer",
+            "question": "Data dots are placed on a number line at 6, 10, and 20. Find the mean and verify the zero-sum deviation property.",
+            "options": [],
+            "correct_answer": "Mean = (6 + 10 + 20) / 3 = 36 / 3 = 12. Deviations: (6-12) + (10-12) + (20-12) = -6 + (-2) + 8 = 0. Property verified.",
+            "hint_modal": "Think about the core rule from Chapter 5!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Step-by-step mathematical reasoning: Mean = (6 + 10 + 20) / 3 = 36 / 3 = 12. Deviations: (6-12) + (10-12) + (20-12) = -6 + (-2) + 8 = 0. Property verified."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch5_dot_plot.png",
+              "correct_hotspot_id": "hs_ch5_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch6_algebra.png",
-            "correct_hotspot_id": "hs_ch6_1"
-          }
-        },
-        {
-          "question_id": 3,
-          "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
-          "question_type": "Exercise Problem",
-          "question": "Q3: In a 3-tier number pyramid, the bottom row has cells 4, x, and 7. The top cell is 25. Find x.",
-          "options": [],
-          "correct_answer": "Top cell = a + 2b + c => 4 + 2x + 7 = 25 => 11 + 2x = 25 => 2x = 14 => x = 7.",
-          "hint_modal": "Think about the core rule from Chapter 6!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Textbook solution: Top cell = a + 2b + c => 4 + 2x + 7 = 25 => 11 + 2x = 25 => 2x = 14 => x = 7."
+          {
+            "question_id": 3,
+            "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
+            "question_type": "Exercise Problem",
+            "question": "Q4: The mean of 5 numbers is 18. If one number is removed, the mean of the remaining 4 numbers becomes 16. What was the removed number?",
+            "options": [],
+            "correct_answer": "Original total sum = 5 * 18 = 90. New total sum after removal = 4 * 16 = 64. Removed number = Original sum - New sum = 90 - 64 = 26.",
+            "hint_modal": "Think about the core rule from Chapter 5!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Textbook solution: Original total sum = 5 * 18 = 90. New total sum after removal = 4 * 16 = 64. Removed number = Original sum - New sum = 90 - 64 = 26."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch5_dot_plot.png",
+              "correct_hotspot_id": "hs_ch5_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch6_algebra.png",
-            "correct_hotspot_id": "hs_ch6_1"
-          }
-        },
-        {
-          "question_id": 4,
-          "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
-          "question_type": "Analytical Reasoning",
-          "question": "[Context: Arrange four digits 2, 5, 7, and 9 into two 2-digit numbers to achieve the maximum possible product.] What are the two numbers and their maximum product?",
-          "options": [],
-          "correct_answer": "Place highest digits 9 and 7 in tens places: 9_ and 7_. To minimize difference between numbers, place 2 with 9 and 5 with 7, forming 92 and 75, or 95 and 72. 92 * 75 = 6900; 95 * 72 = 6840. Maximum product is 92 x 75 = 6900.",
-          "hint_modal": "Think about the core rule from Chapter 6!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Logical proof and justification: Place highest digits 9 and 7 in tens places: 9_ and 7_. To minimize difference between numbers, place 2 with 9 and 5 with 7, forming 92 and 75, or 95 and 72. 92 * 75 = 6900; 95 * 72 = 6840. Maximum product is 92 x 75 = 6900."
+          {
+            "question_id": 4,
+            "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
+            "question_type": "Analytical Reasoning",
+            "question": "[Context: A student scores 65, 72, 80, and 78 in four exams. She wants her five-exam mean to be 75.] What score must she obtain in her fifth exam?",
+            "options": [],
+            "correct_answer": "Required total sum for 5 exams = 5 * 75 = 375. Current sum = 65 + 72 + 80 + 78 = 295. Required 5th exam score = 375 - 295 = 80.",
+            "hint_modal": "Think about the core rule from Chapter 5!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Logical proof and justification: Required total sum for 5 exams = 5 * 75 = 375. Current sum = 65 + 72 + 80 + 78 = 295. Required 5th exam score = 375 - 295 = 80."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch5_dot_plot.png",
+              "correct_hotspot_id": "hs_ch5_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch6_algebra.png",
-            "correct_hotspot_id": "hs_ch6_1"
-          }
-        },
-        {
-          "question_id": 5,
-          "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
-          "question_type": "Long Answer",
-          "question": "A 4-tier number pyramid has bottom row cells a, b, c, d. Derive the algebraic formula for the top cell in terms of a, b, c, d.",
-          "options": [],
-          "correct_answer": "Row 1 (bottom): a, b, c, d. Row 2: (a+b), (b+c), (c+d). Row 3: (a+2b+c), (b+2c+d). Row 4 (top): (a+2b+c) + (b+2c+d) = a + 3b + 3c + d. Coefficients follow Pascal's triangle row 3: (1, 3, 3, 1).",
-          "hint_modal": "Think about the core rule from Chapter 6!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Multi-step solution: Row 1 (bottom): a, b, c, d. Row 2: (a+b), (b+c), (c+d). Row 3: (a+2b+c), (b+2c+d). Row 4 (top): (a+2b+c) + (b+2c+d) = a + 3b + 3c + d. Coefficients follow Pascal's triangle row 3: (1, 3, 3, 1)."
+          {
+            "question_id": 5,
+            "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
+            "question_type": "Long Answer",
+            "question": "The mean height of 20 students in Class A is 145 cm, and the mean height of 30 students in Class B is 150 cm. Calculate the combined overall mean height of all 50 students.",
+            "options": [],
+            "correct_answer": "Class A total height = 20 * 145 = 2900 cm. Class B total height = 30 * 150 = 4500 cm. Combined total height = 2900 + 4500 = 7400 cm. Total students = 20 + 30 = 50. Combined mean = 7400 / 50 = 148 cm.",
+            "hint_modal": "Think about the core rule from Chapter 5!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Multi-step solution: Class A total height = 20 * 145 = 2900 cm. Class B total height = 30 * 150 = 4500 cm. Combined total height = 2900 + 4500 = 7400 cm. Total students = 20 + 30 = 50. Combined mean = 7400 / 50 = 148 cm."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch5_dot_plot.png",
+              "correct_hotspot_id": "hs_ch5_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch6_algebra.png",
-            "correct_hotspot_id": "hs_ch6_1"
+          {
+            "question_id": 6,
+            "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
+            "question_type": "Case Study QA",
+            "question": "[Scenario: A hospital monitors a patient's body temperature every 2 hours from 8 AM to 4 PM: 37°C, 37.5°C, 38.5°C, 38°C, 37°C.] Plot a line graph description and determine the peak temperature period.",
+            "options": [],
+            "correct_answer": "Temperatures rise from 37°C at 8 AM to a peak of 38.5°C at 12 PM before decreasing back to 37°C at 4 PM.",
+            "hint_modal": "Think about the core rule from Chapter 5!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Case-based analysis: Temperatures rise from 37°C at 8 AM to a peak of 38.5°C at 12 PM before decreasing back to 37°C at 4 PM."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch5_dot_plot.png",
+              "correct_hotspot_id": "hs_ch5_1"
+            }
           }
-        },
-        {
-          "question_id": 6,
-          "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
-          "question_type": "Case Study QA",
-          "question": "[Scenario: A student claims she can guess any secret number between 1 and 100 by asking 7 yes/no questions about binary halves.] Explain algebraically why 7 questions are sufficient.",
-          "options": [],
-          "correct_answer": "Each yes/no question reduces search space by half. 2^7 = 128 > 100. Thus, 7 binary questions uniquely isolate any integer from 1 to 100.",
-          "hint_modal": "Think about the core rule from Chapter 6!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Case-based analysis: Each yes/no question reduces search space by half. 2^7 = 128 > 100. Thus, 7 binary questions uniquely isolate any integer from 1 to 100."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch6_algebra.png",
-            "correct_hotspot_id": "hs_ch6_1"
-          }
+        ],
+        "image_asset": {
+          "image_id": "img_ch5_dot_plot",
+          "title": "Dot Plot Balance Beam & Arithmetic Mean Fulcrum",
+          "url": "/assets/images/ch5_dot_plot.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_ch5_1",
+              "title": "Fulcrum Pivot at 50",
+              "x_percent": 45,
+              "y_percent": 20,
+              "w_percent": 10,
+              "h_percent": 15,
+              "tooltip": "Balance point where sum of deviations equals 0"
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "image_id": "img_ch6_algebra",
-        "title": "3-Tier Additive Number Pyramid",
-        "url": "/assets/images/ch6_algebra.png",
-        "aspect_ratio": "16:9",
-        "hotspots": [
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Algebra Play",
+        "questions": [
           {
-            "id": "hs_ch6_1",
-            "title": "Top Cell Equation",
-            "x_percent": 40,
-            "y_percent": 55,
-            "w_percent": 20,
-            "h_percent": 15,
-            "tooltip": "Top = a + 2b + c = 4 + 2x + 7 = 25 ⇒ x = 7"
-          }
-        ]
-      }
-    },
-    {
-      "chapter_number": 7,
-      "chapter_title": "Area and Perimeter",
-      "questions": [
-        {
-          "question_id": 1,
-          "cognitive_level": "Level 1 (Easy) - Recall & Identification",
-          "question_type": "MCQ",
-          "question": "What is the area of a right-angled triangle with legs 6 cm and 8 cm?",
-          "options": [
-            "14 cm^2",
-            "24 cm^2",
-            "48 cm^2",
-            "28 cm^2"
-          ],
-          "correct_answer": "24 cm^2",
-          "hint_modal": "Think about the core rule from Chapter 7!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Area = 0.5 * leg1 * leg2 = 0.5 * 6 * 8 = 24 cm^2."
+            "question_id": 1,
+            "cognitive_level": "Level 1 (Easy) - Recall & Identification",
+            "question_type": "MCQ",
+            "question": "What is the simplified algebraic result of: Think of x, double it, add 8, divide by 2, subtract x?",
+            "options": [
+              "x",
+              "2",
+              "4",
+              "8"
+            ],
+            "correct_answer": "4",
+            "hint_modal": "Think about the core rule from Chapter 6!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "[(2x + 8)/2] - x = (x + 4) - x = 4."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch6_algebra.png",
+              "correct_hotspot_id": "hs_ch6_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch7_area.png",
-            "correct_hotspot_id": "hs_ch7_1"
-          }
-        },
-        {
-          "question_id": 2,
-          "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
-          "question_type": "Short Answer",
-          "question": "A square and a rectangle have the same perimeter of 40 cm. If the rectangle's length is 12 cm, compare their areas.",
-          "options": [],
-          "correct_answer": "Square side = 40/4 = 10 cm. Square area = 10^2 = 100 cm^2. Rectangle width = (40 - 2*12)/2 = 8 cm. Rectangle area = 12 * 8 = 96 cm^2. The square encloses a larger area (100 cm^2 > 96 cm^2).",
-          "hint_modal": "Think about the core rule from Chapter 7!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Step-by-step mathematical reasoning: Square side = 40/4 = 10 cm. Square area = 10^2 = 100 cm^2. Rectangle width = (40 - 2*12)/2 = 8 cm. Rectangle area = 12 * 8 = 96 cm^2. The square encloses a larger area (100 cm^2 > 96 cm^2)."
+          {
+            "question_id": 2,
+            "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
+            "question_type": "Short Answer",
+            "question": "Prove that the sum of a two-digit number 10x + y and its reverse 10y + x is always divisible by 11.",
+            "options": [],
+            "correct_answer": "Sum = (10x + y) + (10y + x) = 11x + 11y = 11(x + y). Since 11 is a factor, the sum is always a multiple of 11.",
+            "hint_modal": "Think about the core rule from Chapter 6!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Step-by-step mathematical reasoning: Sum = (10x + y) + (10y + x) = 11x + 11y = 11(x + y). Since 11 is a factor, the sum is always a multiple of 11."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch6_algebra.png",
+              "correct_hotspot_id": "hs_ch6_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch7_area.png",
-            "correct_hotspot_id": "hs_ch7_1"
-          }
-        },
-        {
-          "question_id": 3,
-          "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
-          "question_type": "Exercise Problem",
-          "question": "Q2: Find the area of a trapezium whose parallel sides are 14 cm and 20 cm, and the distance between them is 8 cm.",
-          "options": [],
-          "correct_answer": "Area = 0.5 * (a + b) * h = 0.5 * (14 + 20) * 8 = 0.5 * 34 * 8 = 136 cm^2.",
-          "hint_modal": "Think about the core rule from Chapter 7!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Textbook solution: Area = 0.5 * (a + b) * h = 0.5 * (14 + 20) * 8 = 0.5 * 34 * 8 = 136 cm^2."
+          {
+            "question_id": 3,
+            "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
+            "question_type": "Exercise Problem",
+            "question": "Q3: In a 3-tier number pyramid, the bottom row has cells 4, x, and 7. The top cell is 25. Find x.",
+            "options": [],
+            "correct_answer": "Top cell = a + 2b + c => 4 + 2x + 7 = 25 => 11 + 2x = 25 => 2x = 14 => x = 7.",
+            "hint_modal": "Think about the core rule from Chapter 6!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Textbook solution: Top cell = a + 2b + c => 4 + 2x + 7 = 25 => 11 + 2x = 25 => 2x = 14 => x = 7."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch6_algebra.png",
+              "correct_hotspot_id": "hs_ch6_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch7_area.png",
-            "correct_hotspot_id": "hs_ch7_1"
-          }
-        },
-        {
-          "question_id": 4,
-          "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
-          "question_type": "Analytical Reasoning",
-          "question": "[Context: A field is in the shape of a parallelogram with base 25 m and altitude 12 m. A triangular lawn of base 10 m and height 12 m is cut out inside it.] Find the remaining area of the field.",
-          "options": [],
-          "correct_answer": "Parallelogram area = base * height = 25 * 12 = 300 m^2. Triangle area = 0.5 * 10 * 12 = 60 m^2. Remaining area = 300 - 60 = 240 m^2.",
-          "hint_modal": "Think about the core rule from Chapter 7!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Logical proof and justification: Parallelogram area = base * height = 25 * 12 = 300 m^2. Triangle area = 0.5 * 10 * 12 = 60 m^2. Remaining area = 300 - 60 = 240 m^2."
+          {
+            "question_id": 4,
+            "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
+            "question_type": "Analytical Reasoning",
+            "question": "[Context: Arrange four digits 2, 5, 7, and 9 into two 2-digit numbers to achieve the maximum possible product.] What are the two numbers and their maximum product?",
+            "options": [],
+            "correct_answer": "Place highest digits 9 and 7 in tens places: 9_ and 7_. To minimize difference between numbers, place 2 with 9 and 5 with 7, forming 92 and 75, or 95 and 72. 92 * 75 = 6900; 95 * 72 = 6840. Maximum product is 92 x 75 = 6900.",
+            "hint_modal": "Think about the core rule from Chapter 6!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Logical proof and justification: Place highest digits 9 and 7 in tens places: 9_ and 7_. To minimize difference between numbers, place 2 with 9 and 5 with 7, forming 92 and 75, or 95 and 72. 92 * 75 = 6900; 95 * 72 = 6840. Maximum product is 92 x 75 = 6900."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch6_algebra.png",
+              "correct_hotspot_id": "hs_ch6_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch7_area.png",
-            "correct_hotspot_id": "hs_ch7_1"
-          }
-        },
-        {
-          "question_id": 5,
-          "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
-          "question_type": "Long Answer",
-          "question": "Derive the area formula for a trapezium by dividing it into a rectangle and two right-angled triangles.",
-          "options": [],
-          "correct_answer": "Let parallel sides be a (top) and b (bottom) with height h. Base b can be split into x + a + y where x and y are bases of left and right triangles. Area = Left Triangle + Rectangle + Right Triangle = (0.5*x*h) + (a*h) + (0.5*y*h) = h * [0.5*x + a + 0.5*y] = 0.5*h * [x + 2a + y] = 0.5*h * [(x + a + y) + a] = 0.5*h * [b + a] = 0.5*(a+b)*h.",
-          "hint_modal": "Think about the core rule from Chapter 7!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Multi-step solution: Let parallel sides be a (top) and b (bottom) with height h. Base b can be split into x + a + y where x and y are bases of left and right triangles. Area = Left Triangle + Rectangle + Right Triangle = (0.5*x*h) + (a*h) + (0.5*y*h) = h * [0.5*x + a + 0.5*y] = 0.5*h * [x + 2a + y] = 0.5*h * [(x + a + y) + a] = 0.5*h * [b + a] = 0.5*(a+b)*h."
+          {
+            "question_id": 5,
+            "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
+            "question_type": "Long Answer",
+            "question": "A 4-tier number pyramid has bottom row cells a, b, c, d. Derive the algebraic formula for the top cell in terms of a, b, c, d.",
+            "options": [],
+            "correct_answer": "Row 1 (bottom): a, b, c, d. Row 2: (a+b), (b+c), (c+d). Row 3: (a+2b+c), (b+2c+d). Row 4 (top): (a+2b+c) + (b+2c+d) = a + 3b + 3c + d. Coefficients follow Pascal's triangle row 3: (1, 3, 3, 1).",
+            "hint_modal": "Think about the core rule from Chapter 6!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Multi-step solution: Row 1 (bottom): a, b, c, d. Row 2: (a+b), (b+c), (c+d). Row 3: (a+2b+c), (b+2c+d). Row 4 (top): (a+2b+c) + (b+2c+d) = a + 3b + 3c + d. Coefficients follow Pascal's triangle row 3: (1, 3, 3, 1)."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch6_algebra.png",
+              "correct_hotspot_id": "hs_ch6_1"
+            }
           },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch7_area.png",
-            "correct_hotspot_id": "hs_ch7_1"
+          {
+            "question_id": 6,
+            "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
+            "question_type": "Case Study QA",
+            "question": "[Scenario: A student claims she can guess any secret number between 1 and 100 by asking 7 yes/no questions about binary halves.] Explain algebraically why 7 questions are sufficient.",
+            "options": [],
+            "correct_answer": "Each yes/no question reduces search space by half. 2^7 = 128 > 100. Thus, 7 binary questions uniquely isolate any integer from 1 to 100.",
+            "hint_modal": "Think about the core rule from Chapter 6!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Case-based analysis: Each yes/no question reduces search space by half. 2^7 = 128 > 100. Thus, 7 binary questions uniquely isolate any integer from 1 to 100."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch6_algebra.png",
+              "correct_hotspot_id": "hs_ch6_1"
+            }
           }
-        },
-        {
-          "question_id": 6,
-          "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
-          "question_type": "Case Study QA",
-          "question": "[Scenario: A farmer wants to fence a rectangular plot of land using 100 meters of fencing wire.] What plot dimensions will yield the maximum possible grazing area?",
-          "options": [],
-          "correct_answer": "For a fixed perimeter, area is maximized when the rectangle is a square. Side = 100 / 4 = 25 m. Maximum area = 25 * 25 = 625 m^2.",
-          "hint_modal": "Think about the core rule from Chapter 7!",
-          "solution_key_3part": {
-            "given_data": "Extracted problem values",
-            "formula_applied": "Core mathematical law",
-            "step_by_step_calc": "Case-based analysis: For a fixed perimeter, area is maximized when the rectangle is a square. Side = 100 / 4 = 25 m. Maximum area = 25 * 25 = 625 m^2."
-          },
-          "hotspot_choice": {
-            "target_image": "/assets/images/ch7_area.png",
-            "correct_hotspot_id": "hs_ch7_1"
-          }
+        ],
+        "image_asset": {
+          "image_id": "img_ch6_algebra",
+          "title": "3-Tier Additive Number Pyramid",
+          "url": "/assets/images/ch6_algebra.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_ch6_1",
+              "title": "Top Cell Equation",
+              "x_percent": 40,
+              "y_percent": 55,
+              "w_percent": 20,
+              "h_percent": 15,
+              "tooltip": "Top = a + 2b + c = 4 + 2x + 7 = 25 ⇒ x = 7"
+            }
+          ]
         }
-      ],
-      "image_asset": {
-        "image_id": "img_ch7_area",
-        "title": "Trapezium Area & Height Dissection",
-        "url": "/assets/images/ch7_area.png",
-        "aspect_ratio": "16:9",
-        "hotspots": [
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Area and Perimeter",
+        "questions": [
           {
-            "id": "hs_ch7_1",
-            "title": "Parallel Base b = 60 cm",
-            "x_percent": 20,
-            "y_percent": 15,
-            "w_percent": 60,
-            "h_percent": 10,
-            "tooltip": "Area = ½ * (a + b) * h"
+            "question_id": 1,
+            "cognitive_level": "Level 1 (Easy) - Recall & Identification",
+            "question_type": "MCQ",
+            "question": "What is the area of a right-angled triangle with legs 6 cm and 8 cm?",
+            "options": [
+              "14 cm^2",
+              "24 cm^2",
+              "48 cm^2",
+              "28 cm^2"
+            ],
+            "correct_answer": "24 cm^2",
+            "hint_modal": "Think about the core rule from Chapter 7!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Area = 0.5 * leg1 * leg2 = 0.5 * 6 * 8 = 24 cm^2."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch7_area.png",
+              "correct_hotspot_id": "hs_ch7_1"
+            }
+          },
+          {
+            "question_id": 2,
+            "cognitive_level": "Level 2 (Medium) - Conceptual Understanding",
+            "question_type": "Short Answer",
+            "question": "A square and a rectangle have the same perimeter of 40 cm. If the rectangle's length is 12 cm, compare their areas.",
+            "options": [],
+            "correct_answer": "Square side = 40/4 = 10 cm. Square area = 10^2 = 100 cm^2. Rectangle width = (40 - 2*12)/2 = 8 cm. Rectangle area = 12 * 8 = 96 cm^2. The square encloses a larger area (100 cm^2 > 96 cm^2).",
+            "hint_modal": "Think about the core rule from Chapter 7!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Step-by-step mathematical reasoning: Square side = 40/4 = 10 cm. Square area = 10^2 = 100 cm^2. Rectangle width = (40 - 2*12)/2 = 8 cm. Rectangle area = 12 * 8 = 96 cm^2. The square encloses a larger area (100 cm^2 > 96 cm^2)."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch7_area.png",
+              "correct_hotspot_id": "hs_ch7_1"
+            }
+          },
+          {
+            "question_id": 3,
+            "cognitive_level": "Level 2 (Medium) - Textbook Exercise Solution",
+            "question_type": "Exercise Problem",
+            "question": "Q2: Find the area of a trapezium whose parallel sides are 14 cm and 20 cm, and the distance between them is 8 cm.",
+            "options": [],
+            "correct_answer": "Area = 0.5 * (a + b) * h = 0.5 * (14 + 20) * 8 = 0.5 * 34 * 8 = 136 cm^2.",
+            "hint_modal": "Think about the core rule from Chapter 7!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Textbook solution: Area = 0.5 * (a + b) * h = 0.5 * (14 + 20) * 8 = 0.5 * 34 * 8 = 136 cm^2."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch7_area.png",
+              "correct_hotspot_id": "hs_ch7_1"
+            }
+          },
+          {
+            "question_id": 4,
+            "cognitive_level": "Level 3 (Hard) - Advanced Analysis & Reasoning",
+            "question_type": "Analytical Reasoning",
+            "question": "[Context: A field is in the shape of a parallelogram with base 25 m and altitude 12 m. A triangular lawn of base 10 m and height 12 m is cut out inside it.] Find the remaining area of the field.",
+            "options": [],
+            "correct_answer": "Parallelogram area = base * height = 25 * 12 = 300 m^2. Triangle area = 0.5 * 10 * 12 = 60 m^2. Remaining area = 300 - 60 = 240 m^2.",
+            "hint_modal": "Think about the core rule from Chapter 7!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Logical proof and justification: Parallelogram area = base * height = 25 * 12 = 300 m^2. Triangle area = 0.5 * 10 * 12 = 60 m^2. Remaining area = 300 - 60 = 240 m^2."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch7_area.png",
+              "correct_hotspot_id": "hs_ch7_1"
+            }
+          },
+          {
+            "question_id": 5,
+            "cognitive_level": "Level 3 (Hard) - Comprehensive Application",
+            "question_type": "Long Answer",
+            "question": "Derive the area formula for a trapezium by dividing it into a rectangle and two right-angled triangles.",
+            "options": [],
+            "correct_answer": "Let parallel sides be a (top) and b (bottom) with height h. Base b can be split into x + a + y where x and y are bases of left and right triangles. Area = Left Triangle + Rectangle + Right Triangle = (0.5*x*h) + (a*h) + (0.5*y*h) = h * [0.5*x + a + 0.5*y] = 0.5*h * [x + 2a + y] = 0.5*h * [(x + a + y) + a] = 0.5*h * [b + a] = 0.5*(a+b)*h.",
+            "hint_modal": "Think about the core rule from Chapter 7!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Multi-step solution: Let parallel sides be a (top) and b (bottom) with height h. Base b can be split into x + a + y where x and y are bases of left and right triangles. Area = Left Triangle + Rectangle + Right Triangle = (0.5*x*h) + (a*h) + (0.5*y*h) = h * [0.5*x + a + 0.5*y] = 0.5*h * [x + 2a + y] = 0.5*h * [(x + a + y) + a] = 0.5*h * [b + a] = 0.5*(a+b)*h."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch7_area.png",
+              "correct_hotspot_id": "hs_ch7_1"
+            }
+          },
+          {
+            "question_id": 6,
+            "cognitive_level": "Level 3 (Hard) - Competency & Case Study",
+            "question_type": "Case Study QA",
+            "question": "[Scenario: A farmer wants to fence a rectangular plot of land using 100 meters of fencing wire.] What plot dimensions will yield the maximum possible grazing area?",
+            "options": [],
+            "correct_answer": "For a fixed perimeter, area is maximized when the rectangle is a square. Side = 100 / 4 = 25 m. Maximum area = 25 * 25 = 625 m^2.",
+            "hint_modal": "Think about the core rule from Chapter 7!",
+            "solution_key_3part": {
+              "given_data": "Extracted problem values",
+              "formula_applied": "Core mathematical law",
+              "step_by_step_calc": "Case-based analysis: For a fixed perimeter, area is maximized when the rectangle is a square. Side = 100 / 4 = 25 m. Maximum area = 25 * 25 = 625 m^2."
+            },
+            "hotspot_choice": {
+              "target_image": "/assets/images/ch7_area.png",
+              "correct_hotspot_id": "hs_ch7_1"
+            }
           }
-        ]
+        ],
+        "image_asset": {
+          "image_id": "img_ch7_area",
+          "title": "Trapezium Area & Height Dissection",
+          "url": "/assets/images/ch7_area.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_ch7_1",
+              "title": "Parallel Base b = 60 cm",
+              "x_percent": 20,
+              "y_percent": 15,
+              "w_percent": 60,
+              "h_percent": 10,
+              "tooltip": "Area = ½ * (a + b) * h"
+            }
+          ]
+        }
       }
-    }
-  ],
+    ]
+  },
+  "grade": "8",
+  "chapter_id": "G8-MAT-U01-C01",
+  "chapter_number": 1,
   "chapter_title": "Rational Numbers"
 }

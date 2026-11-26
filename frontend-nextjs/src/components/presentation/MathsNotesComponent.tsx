@@ -83,8 +83,16 @@ export default function MathsNotesComponent({ data }: MathsNotesProps) {
       {/* Tab 1: Conceptual Foundation */}
       {activeSubTab === 'foundation' && (
         <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
-          {theme && <span className="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-full border border-indigo-200">Theme: {theme}</span>}
-          <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Conceptual Foundation</h3>
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              {theme && <span className="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-full border border-indigo-200">Theme: {theme}</span>}
+              <h3 className="text-xl font-black text-slate-900 mt-2">Conceptual Foundation</h3>
+            </div>
+            <div className="w-12 h-12 shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/illustrations/maths_fraction_learning.svg" alt="Maths Concept Illustration" className="w-full h-full object-contain" />
+            </div>
+          </div>
           {intro && <div className="text-slate-700 text-sm leading-relaxed">{renderSafeText(intro)}</div>}
         </div>
       )}

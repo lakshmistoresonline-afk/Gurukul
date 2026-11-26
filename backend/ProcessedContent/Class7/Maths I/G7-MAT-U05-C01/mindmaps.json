@@ -1,156 +1,2419 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Geometric Twins (Congruence of Triangles)",
-  "mermaid_syntax": "graph TD\n  Root[\"Large Numbers Around Us\"]\n  Root --> B1[\"Place Value Systems and Magnitude\"]\n  B1 --> B1_S1[\"Indian System of Numeration\"]\n  B1 --> B1_S2[\"International System of Numeration\"]\n  Root --> B2[\"Mental Computation Shortcuts\"]\n  B2 --> B2_S1[\"Multiplication by 5 via Halving\"]\n  B2 --> B2_S2[\"Multiplication by 25 via Quartering\"]\n  Root --> B3[\"Digit Sequence Analytics\"]\n  B3 --> B3_S1[\"Sequential Natural Number Digit Counts\"]",
-  "d3_react_flow_tree": {
-    "id": "node_root_ch1",
-    "label": "Large Numbers Around Us",
-    "node_color": "#38BDF8",
-    "icon": "book_open",
-    "type": "root",
-    "children": [
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_216901979e972482",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
+  },
+  "subject": "Maths I",
+  "artifact": {
+    "artifact_type": "mindmaps",
+    "source_file_name": "06-Mindmaps.json",
+    "source_relative_path": "Contents/Class 7/Maths I/Source Files/06-Mindmaps.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "ad1e8f94589d485e8fc61fcf0e52c0850b4b6af5c4d1c6ed50b89abaad20d134",
+    "source_semantic_sha256": "4862d89618accd2823b0d97455120ae2f4ddaa96242f2de449b07d45ed44f3d9",
+    "source_byte_length": 45751,
+    "source_encoding": "utf-8",
+    "source_field_count": 799,
+    "field_inventory": [
+      "$.subject",
+      "$.resource_type",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].mermaid_syntax",
+      "$.chapters[0].d3_react_flow_tree",
+      "$.chapters[0].d3_react_flow_tree.id",
+      "$.chapters[0].d3_react_flow_tree.label",
+      "$.chapters[0].d3_react_flow_tree.node_color",
+      "$.chapters[0].d3_react_flow_tree.icon",
+      "$.chapters[0].d3_react_flow_tree.type",
+      "$.chapters[0].d3_react_flow_tree.children",
+      "$.chapters[0].d3_react_flow_tree.children[0].id",
+      "$.chapters[0].d3_react_flow_tree.children[0].label",
+      "$.chapters[0].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[0].icon",
+      "$.chapters[0].d3_react_flow_tree.children[0].type",
+      "$.chapters[0].d3_react_flow_tree.children[0].children",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].id",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].label",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].icon",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].type",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].tooltip_popover",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].tooltip_popover.title",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].tooltip_popover.description",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].tooltip_popover.key_formula",
+      "$.chapters[0].d3_react_flow_tree.children[0].children[1].tooltip_popover.example",
+      "$.chapters[0].d3_react_flow_tree.children[1].id",
+      "$.chapters[0].d3_react_flow_tree.children[1].label",
+      "$.chapters[0].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[1].icon",
+      "$.chapters[0].d3_react_flow_tree.children[1].type",
+      "$.chapters[0].d3_react_flow_tree.children[1].children",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].id",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].label",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].icon",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].type",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].tooltip_popover",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].tooltip_popover.title",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].tooltip_popover.description",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].tooltip_popover.key_formula",
+      "$.chapters[0].d3_react_flow_tree.children[1].children[1].tooltip_popover.example",
+      "$.chapters[0].d3_react_flow_tree.children[2].id",
+      "$.chapters[0].d3_react_flow_tree.children[2].label",
+      "$.chapters[0].d3_react_flow_tree.children[2].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[2].icon",
+      "$.chapters[0].d3_react_flow_tree.children[2].type",
+      "$.chapters[0].d3_react_flow_tree.children[2].children",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].id",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].label",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].node_color",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].icon",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].type",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].tooltip_popover.title",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].tooltip_popover.description",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].tooltip_popover.key_formula",
+      "$.chapters[0].d3_react_flow_tree.children[2].children[0].tooltip_popover.example",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.asset_id",
+      "$.chapters[0].image_asset.chapter_number",
+      "$.chapters[0].image_asset.chapter_title",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.file_name",
+      "$.chapters[0].image_asset.local_url",
+      "$.chapters[0].image_asset.aspect_ratio",
+      "$.chapters[0].image_asset.width_px",
+      "$.chapters[0].image_asset.height_px",
+      "$.chapters[0].image_asset.description",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[0].title",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[0].popover_content",
+      "$.chapters[0].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[1].title",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].popover_content",
+      "$.chapters[0].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[2].title",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].popover_content",
+      "$.chapters[0].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[0].image_asset.hotspots[3].title",
+      "$.chapters[0].image_asset.hotspots[3].x_percent",
+      "$.chapters[0].image_asset.hotspots[3].y_percent",
+      "$.chapters[0].image_asset.hotspots[3].w_percent",
+      "$.chapters[0].image_asset.hotspots[3].h_percent",
+      "$.chapters[0].image_asset.hotspots[3].popover_content",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].mermaid_syntax",
+      "$.chapters[1].d3_react_flow_tree",
+      "$.chapters[1].d3_react_flow_tree.id",
+      "$.chapters[1].d3_react_flow_tree.label",
+      "$.chapters[1].d3_react_flow_tree.node_color",
+      "$.chapters[1].d3_react_flow_tree.icon",
+      "$.chapters[1].d3_react_flow_tree.type",
+      "$.chapters[1].d3_react_flow_tree.children",
+      "$.chapters[1].d3_react_flow_tree.children[0].id",
+      "$.chapters[1].d3_react_flow_tree.children[0].label",
+      "$.chapters[1].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[0].icon",
+      "$.chapters[1].d3_react_flow_tree.children[0].type",
+      "$.chapters[1].d3_react_flow_tree.children[0].children",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].id",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].label",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].icon",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].type",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].tooltip_popover",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].tooltip_popover.title",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].tooltip_popover.description",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].tooltip_popover.key_formula",
+      "$.chapters[1].d3_react_flow_tree.children[0].children[1].tooltip_popover.example",
+      "$.chapters[1].d3_react_flow_tree.children[1].id",
+      "$.chapters[1].d3_react_flow_tree.children[1].label",
+      "$.chapters[1].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[1].icon",
+      "$.chapters[1].d3_react_flow_tree.children[1].type",
+      "$.chapters[1].d3_react_flow_tree.children[1].children",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].id",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].label",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].icon",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].type",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].tooltip_popover",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].tooltip_popover.title",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].tooltip_popover.description",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].tooltip_popover.key_formula",
+      "$.chapters[1].d3_react_flow_tree.children[1].children[1].tooltip_popover.example",
+      "$.chapters[1].d3_react_flow_tree.children[2].id",
+      "$.chapters[1].d3_react_flow_tree.children[2].label",
+      "$.chapters[1].d3_react_flow_tree.children[2].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[2].icon",
+      "$.chapters[1].d3_react_flow_tree.children[2].type",
+      "$.chapters[1].d3_react_flow_tree.children[2].children",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].id",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].label",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].node_color",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].icon",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].type",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].tooltip_popover.title",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].tooltip_popover.description",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].tooltip_popover.key_formula",
+      "$.chapters[1].d3_react_flow_tree.children[2].children[0].tooltip_popover.example",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.asset_id",
+      "$.chapters[1].image_asset.chapter_number",
+      "$.chapters[1].image_asset.chapter_title",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.file_name",
+      "$.chapters[1].image_asset.local_url",
+      "$.chapters[1].image_asset.aspect_ratio",
+      "$.chapters[1].image_asset.width_px",
+      "$.chapters[1].image_asset.height_px",
+      "$.chapters[1].image_asset.description",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[0].title",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[0].popover_content",
+      "$.chapters[1].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[1].title",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].popover_content",
+      "$.chapters[1].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[2].title",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].popover_content",
+      "$.chapters[1].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[1].image_asset.hotspots[3].title",
+      "$.chapters[1].image_asset.hotspots[3].x_percent",
+      "$.chapters[1].image_asset.hotspots[3].y_percent",
+      "$.chapters[1].image_asset.hotspots[3].w_percent",
+      "$.chapters[1].image_asset.hotspots[3].h_percent",
+      "$.chapters[1].image_asset.hotspots[3].popover_content",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].mermaid_syntax",
+      "$.chapters[2].d3_react_flow_tree",
+      "$.chapters[2].d3_react_flow_tree.id",
+      "$.chapters[2].d3_react_flow_tree.label",
+      "$.chapters[2].d3_react_flow_tree.node_color",
+      "$.chapters[2].d3_react_flow_tree.icon",
+      "$.chapters[2].d3_react_flow_tree.type",
+      "$.chapters[2].d3_react_flow_tree.children",
+      "$.chapters[2].d3_react_flow_tree.children[0].id",
+      "$.chapters[2].d3_react_flow_tree.children[0].label",
+      "$.chapters[2].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[2].d3_react_flow_tree.children[0].icon",
+      "$.chapters[2].d3_react_flow_tree.children[0].type",
+      "$.chapters[2].d3_react_flow_tree.children[0].children",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[2].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[2].d3_react_flow_tree.children[1].id",
+      "$.chapters[2].d3_react_flow_tree.children[1].label",
+      "$.chapters[2].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[2].d3_react_flow_tree.children[1].icon",
+      "$.chapters[2].d3_react_flow_tree.children[1].type",
+      "$.chapters[2].d3_react_flow_tree.children[1].children",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[2].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[2].d3_react_flow_tree.children[2].id",
+      "$.chapters[2].d3_react_flow_tree.children[2].label",
+      "$.chapters[2].d3_react_flow_tree.children[2].node_color",
+      "$.chapters[2].d3_react_flow_tree.children[2].icon",
+      "$.chapters[2].d3_react_flow_tree.children[2].type",
+      "$.chapters[2].d3_react_flow_tree.children[2].children",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].id",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].label",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].node_color",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].icon",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].type",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].tooltip_popover.title",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].tooltip_popover.description",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].tooltip_popover.key_formula",
+      "$.chapters[2].d3_react_flow_tree.children[2].children[0].tooltip_popover.example",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.asset_id",
+      "$.chapters[2].image_asset.chapter_number",
+      "$.chapters[2].image_asset.chapter_title",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.file_name",
+      "$.chapters[2].image_asset.local_url",
+      "$.chapters[2].image_asset.aspect_ratio",
+      "$.chapters[2].image_asset.width_px",
+      "$.chapters[2].image_asset.height_px",
+      "$.chapters[2].image_asset.description",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[0].title",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].image_asset.hotspots[0].popover_content",
+      "$.chapters[2].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[1].title",
+      "$.chapters[2].image_asset.hotspots[1].x_percent",
+      "$.chapters[2].image_asset.hotspots[1].y_percent",
+      "$.chapters[2].image_asset.hotspots[1].w_percent",
+      "$.chapters[2].image_asset.hotspots[1].h_percent",
+      "$.chapters[2].image_asset.hotspots[1].popover_content",
+      "$.chapters[2].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[2].title",
+      "$.chapters[2].image_asset.hotspots[2].x_percent",
+      "$.chapters[2].image_asset.hotspots[2].y_percent",
+      "$.chapters[2].image_asset.hotspots[2].w_percent",
+      "$.chapters[2].image_asset.hotspots[2].h_percent",
+      "$.chapters[2].image_asset.hotspots[2].popover_content",
+      "$.chapters[2].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[2].image_asset.hotspots[3].title",
+      "$.chapters[2].image_asset.hotspots[3].x_percent",
+      "$.chapters[2].image_asset.hotspots[3].y_percent",
+      "$.chapters[2].image_asset.hotspots[3].w_percent",
+      "$.chapters[2].image_asset.hotspots[3].h_percent",
+      "$.chapters[2].image_asset.hotspots[3].popover_content",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].mermaid_syntax",
+      "$.chapters[3].d3_react_flow_tree",
+      "$.chapters[3].d3_react_flow_tree.id",
+      "$.chapters[3].d3_react_flow_tree.label",
+      "$.chapters[3].d3_react_flow_tree.node_color",
+      "$.chapters[3].d3_react_flow_tree.icon",
+      "$.chapters[3].d3_react_flow_tree.type",
+      "$.chapters[3].d3_react_flow_tree.children",
+      "$.chapters[3].d3_react_flow_tree.children[0].id",
+      "$.chapters[3].d3_react_flow_tree.children[0].label",
+      "$.chapters[3].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[3].d3_react_flow_tree.children[0].icon",
+      "$.chapters[3].d3_react_flow_tree.children[0].type",
+      "$.chapters[3].d3_react_flow_tree.children[0].children",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[3].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[3].d3_react_flow_tree.children[1].id",
+      "$.chapters[3].d3_react_flow_tree.children[1].label",
+      "$.chapters[3].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[3].d3_react_flow_tree.children[1].icon",
+      "$.chapters[3].d3_react_flow_tree.children[1].type",
+      "$.chapters[3].d3_react_flow_tree.children[1].children",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[3].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[3].d3_react_flow_tree.children[2].id",
+      "$.chapters[3].d3_react_flow_tree.children[2].label",
+      "$.chapters[3].d3_react_flow_tree.children[2].node_color",
+      "$.chapters[3].d3_react_flow_tree.children[2].icon",
+      "$.chapters[3].d3_react_flow_tree.children[2].type",
+      "$.chapters[3].d3_react_flow_tree.children[2].children",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].id",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].label",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].node_color",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].icon",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].type",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].tooltip_popover.title",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].tooltip_popover.description",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].tooltip_popover.key_formula",
+      "$.chapters[3].d3_react_flow_tree.children[2].children[0].tooltip_popover.example",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.asset_id",
+      "$.chapters[3].image_asset.chapter_number",
+      "$.chapters[3].image_asset.chapter_title",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.file_name",
+      "$.chapters[3].image_asset.local_url",
+      "$.chapters[3].image_asset.aspect_ratio",
+      "$.chapters[3].image_asset.width_px",
+      "$.chapters[3].image_asset.height_px",
+      "$.chapters[3].image_asset.description",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[0].title",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].image_asset.hotspots[0].popover_content",
+      "$.chapters[3].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[1].title",
+      "$.chapters[3].image_asset.hotspots[1].x_percent",
+      "$.chapters[3].image_asset.hotspots[1].y_percent",
+      "$.chapters[3].image_asset.hotspots[1].w_percent",
+      "$.chapters[3].image_asset.hotspots[1].h_percent",
+      "$.chapters[3].image_asset.hotspots[1].popover_content",
+      "$.chapters[3].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[2].title",
+      "$.chapters[3].image_asset.hotspots[2].x_percent",
+      "$.chapters[3].image_asset.hotspots[2].y_percent",
+      "$.chapters[3].image_asset.hotspots[2].w_percent",
+      "$.chapters[3].image_asset.hotspots[2].h_percent",
+      "$.chapters[3].image_asset.hotspots[2].popover_content",
+      "$.chapters[3].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[3].image_asset.hotspots[3].title",
+      "$.chapters[3].image_asset.hotspots[3].x_percent",
+      "$.chapters[3].image_asset.hotspots[3].y_percent",
+      "$.chapters[3].image_asset.hotspots[3].w_percent",
+      "$.chapters[3].image_asset.hotspots[3].h_percent",
+      "$.chapters[3].image_asset.hotspots[3].popover_content",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].mermaid_syntax",
+      "$.chapters[4].d3_react_flow_tree",
+      "$.chapters[4].d3_react_flow_tree.id",
+      "$.chapters[4].d3_react_flow_tree.label",
+      "$.chapters[4].d3_react_flow_tree.node_color",
+      "$.chapters[4].d3_react_flow_tree.icon",
+      "$.chapters[4].d3_react_flow_tree.type",
+      "$.chapters[4].d3_react_flow_tree.children",
+      "$.chapters[4].d3_react_flow_tree.children[0].id",
+      "$.chapters[4].d3_react_flow_tree.children[0].label",
+      "$.chapters[4].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[4].d3_react_flow_tree.children[0].icon",
+      "$.chapters[4].d3_react_flow_tree.children[0].type",
+      "$.chapters[4].d3_react_flow_tree.children[0].children",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[4].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[4].d3_react_flow_tree.children[1].id",
+      "$.chapters[4].d3_react_flow_tree.children[1].label",
+      "$.chapters[4].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[4].d3_react_flow_tree.children[1].icon",
+      "$.chapters[4].d3_react_flow_tree.children[1].type",
+      "$.chapters[4].d3_react_flow_tree.children[1].children",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].id",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].label",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].node_color",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].icon",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].type",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].tooltip_popover",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].tooltip_popover.title",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].tooltip_popover.description",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].tooltip_popover.key_formula",
+      "$.chapters[4].d3_react_flow_tree.children[1].children[1].tooltip_popover.example",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.asset_id",
+      "$.chapters[4].image_asset.chapter_number",
+      "$.chapters[4].image_asset.chapter_title",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.file_name",
+      "$.chapters[4].image_asset.local_url",
+      "$.chapters[4].image_asset.aspect_ratio",
+      "$.chapters[4].image_asset.width_px",
+      "$.chapters[4].image_asset.height_px",
+      "$.chapters[4].image_asset.description",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[0].title",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[0].popover_content",
+      "$.chapters[4].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[1].title",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].popover_content",
+      "$.chapters[4].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[2].title",
+      "$.chapters[4].image_asset.hotspots[2].x_percent",
+      "$.chapters[4].image_asset.hotspots[2].y_percent",
+      "$.chapters[4].image_asset.hotspots[2].w_percent",
+      "$.chapters[4].image_asset.hotspots[2].h_percent",
+      "$.chapters[4].image_asset.hotspots[2].popover_content",
+      "$.chapters[4].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[4].image_asset.hotspots[3].title",
+      "$.chapters[4].image_asset.hotspots[3].x_percent",
+      "$.chapters[4].image_asset.hotspots[3].y_percent",
+      "$.chapters[4].image_asset.hotspots[3].w_percent",
+      "$.chapters[4].image_asset.hotspots[3].h_percent",
+      "$.chapters[4].image_asset.hotspots[3].popover_content",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].mermaid_syntax",
+      "$.chapters[5].d3_react_flow_tree",
+      "$.chapters[5].d3_react_flow_tree.id",
+      "$.chapters[5].d3_react_flow_tree.label",
+      "$.chapters[5].d3_react_flow_tree.node_color",
+      "$.chapters[5].d3_react_flow_tree.icon",
+      "$.chapters[5].d3_react_flow_tree.type",
+      "$.chapters[5].d3_react_flow_tree.children",
+      "$.chapters[5].d3_react_flow_tree.children[0].id",
+      "$.chapters[5].d3_react_flow_tree.children[0].label",
+      "$.chapters[5].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[5].d3_react_flow_tree.children[0].icon",
+      "$.chapters[5].d3_react_flow_tree.children[0].type",
+      "$.chapters[5].d3_react_flow_tree.children[0].children",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[5].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[5].d3_react_flow_tree.children[1].id",
+      "$.chapters[5].d3_react_flow_tree.children[1].label",
+      "$.chapters[5].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[5].d3_react_flow_tree.children[1].icon",
+      "$.chapters[5].d3_react_flow_tree.children[1].type",
+      "$.chapters[5].d3_react_flow_tree.children[1].children",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[5].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[5].d3_react_flow_tree.children[2].id",
+      "$.chapters[5].d3_react_flow_tree.children[2].label",
+      "$.chapters[5].d3_react_flow_tree.children[2].node_color",
+      "$.chapters[5].d3_react_flow_tree.children[2].icon",
+      "$.chapters[5].d3_react_flow_tree.children[2].type",
+      "$.chapters[5].d3_react_flow_tree.children[2].children",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].id",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].label",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].node_color",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].icon",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].type",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].tooltip_popover.title",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].tooltip_popover.description",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].tooltip_popover.key_formula",
+      "$.chapters[5].d3_react_flow_tree.children[2].children[0].tooltip_popover.example",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.asset_id",
+      "$.chapters[5].image_asset.chapter_number",
+      "$.chapters[5].image_asset.chapter_title",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.file_name",
+      "$.chapters[5].image_asset.local_url",
+      "$.chapters[5].image_asset.aspect_ratio",
+      "$.chapters[5].image_asset.width_px",
+      "$.chapters[5].image_asset.height_px",
+      "$.chapters[5].image_asset.description",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[0].title",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[0].popover_content",
+      "$.chapters[5].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[1].title",
+      "$.chapters[5].image_asset.hotspots[1].x_percent",
+      "$.chapters[5].image_asset.hotspots[1].y_percent",
+      "$.chapters[5].image_asset.hotspots[1].w_percent",
+      "$.chapters[5].image_asset.hotspots[1].h_percent",
+      "$.chapters[5].image_asset.hotspots[1].popover_content",
+      "$.chapters[5].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[2].title",
+      "$.chapters[5].image_asset.hotspots[2].x_percent",
+      "$.chapters[5].image_asset.hotspots[2].y_percent",
+      "$.chapters[5].image_asset.hotspots[2].w_percent",
+      "$.chapters[5].image_asset.hotspots[2].h_percent",
+      "$.chapters[5].image_asset.hotspots[2].popover_content",
+      "$.chapters[5].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[5].image_asset.hotspots[3].title",
+      "$.chapters[5].image_asset.hotspots[3].x_percent",
+      "$.chapters[5].image_asset.hotspots[3].y_percent",
+      "$.chapters[5].image_asset.hotspots[3].w_percent",
+      "$.chapters[5].image_asset.hotspots[3].h_percent",
+      "$.chapters[5].image_asset.hotspots[3].popover_content",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].mermaid_syntax",
+      "$.chapters[6].d3_react_flow_tree",
+      "$.chapters[6].d3_react_flow_tree.id",
+      "$.chapters[6].d3_react_flow_tree.label",
+      "$.chapters[6].d3_react_flow_tree.node_color",
+      "$.chapters[6].d3_react_flow_tree.icon",
+      "$.chapters[6].d3_react_flow_tree.type",
+      "$.chapters[6].d3_react_flow_tree.children",
+      "$.chapters[6].d3_react_flow_tree.children[0].id",
+      "$.chapters[6].d3_react_flow_tree.children[0].label",
+      "$.chapters[6].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[6].d3_react_flow_tree.children[0].icon",
+      "$.chapters[6].d3_react_flow_tree.children[0].type",
+      "$.chapters[6].d3_react_flow_tree.children[0].children",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[6].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[6].d3_react_flow_tree.children[1].id",
+      "$.chapters[6].d3_react_flow_tree.children[1].label",
+      "$.chapters[6].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[6].d3_react_flow_tree.children[1].icon",
+      "$.chapters[6].d3_react_flow_tree.children[1].type",
+      "$.chapters[6].d3_react_flow_tree.children[1].children",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[6].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.asset_id",
+      "$.chapters[6].image_asset.chapter_number",
+      "$.chapters[6].image_asset.chapter_title",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.file_name",
+      "$.chapters[6].image_asset.local_url",
+      "$.chapters[6].image_asset.aspect_ratio",
+      "$.chapters[6].image_asset.width_px",
+      "$.chapters[6].image_asset.height_px",
+      "$.chapters[6].image_asset.description",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[0].title",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[0].popover_content",
+      "$.chapters[6].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[1].title",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].popover_content",
+      "$.chapters[6].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[2].title",
+      "$.chapters[6].image_asset.hotspots[2].x_percent",
+      "$.chapters[6].image_asset.hotspots[2].y_percent",
+      "$.chapters[6].image_asset.hotspots[2].w_percent",
+      "$.chapters[6].image_asset.hotspots[2].h_percent",
+      "$.chapters[6].image_asset.hotspots[2].popover_content",
+      "$.chapters[6].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[6].image_asset.hotspots[3].title",
+      "$.chapters[6].image_asset.hotspots[3].x_percent",
+      "$.chapters[6].image_asset.hotspots[3].y_percent",
+      "$.chapters[6].image_asset.hotspots[3].w_percent",
+      "$.chapters[6].image_asset.hotspots[3].h_percent",
+      "$.chapters[6].image_asset.hotspots[3].popover_content",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].mermaid_syntax",
+      "$.chapters[7].d3_react_flow_tree",
+      "$.chapters[7].d3_react_flow_tree.id",
+      "$.chapters[7].d3_react_flow_tree.label",
+      "$.chapters[7].d3_react_flow_tree.node_color",
+      "$.chapters[7].d3_react_flow_tree.icon",
+      "$.chapters[7].d3_react_flow_tree.type",
+      "$.chapters[7].d3_react_flow_tree.children",
+      "$.chapters[7].d3_react_flow_tree.children[0].id",
+      "$.chapters[7].d3_react_flow_tree.children[0].label",
+      "$.chapters[7].d3_react_flow_tree.children[0].node_color",
+      "$.chapters[7].d3_react_flow_tree.children[0].icon",
+      "$.chapters[7].d3_react_flow_tree.children[0].type",
+      "$.chapters[7].d3_react_flow_tree.children[0].children",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].id",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].label",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].node_color",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].icon",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].type",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].tooltip_popover.title",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].tooltip_popover.description",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].tooltip_popover.key_formula",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[0].tooltip_popover.example",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].id",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].label",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].node_color",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].icon",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].type",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].tooltip_popover",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].tooltip_popover.title",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].tooltip_popover.description",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].tooltip_popover.key_formula",
+      "$.chapters[7].d3_react_flow_tree.children[0].children[1].tooltip_popover.example",
+      "$.chapters[7].d3_react_flow_tree.children[1].id",
+      "$.chapters[7].d3_react_flow_tree.children[1].label",
+      "$.chapters[7].d3_react_flow_tree.children[1].node_color",
+      "$.chapters[7].d3_react_flow_tree.children[1].icon",
+      "$.chapters[7].d3_react_flow_tree.children[1].type",
+      "$.chapters[7].d3_react_flow_tree.children[1].children",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].id",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].label",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].node_color",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].icon",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].type",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].tooltip_popover.title",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].tooltip_popover.description",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].tooltip_popover.key_formula",
+      "$.chapters[7].d3_react_flow_tree.children[1].children[0].tooltip_popover.example",
+      "$.chapters[7].image_asset",
+      "$.chapters[7].image_asset.asset_id",
+      "$.chapters[7].image_asset.chapter_number",
+      "$.chapters[7].image_asset.chapter_title",
+      "$.chapters[7].image_asset.title",
+      "$.chapters[7].image_asset.file_name",
+      "$.chapters[7].image_asset.local_url",
+      "$.chapters[7].image_asset.aspect_ratio",
+      "$.chapters[7].image_asset.width_px",
+      "$.chapters[7].image_asset.height_px",
+      "$.chapters[7].image_asset.description",
+      "$.chapters[7].image_asset.hotspots",
+      "$.chapters[7].image_asset.hotspots[0].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[0].title",
+      "$.chapters[7].image_asset.hotspots[0].x_percent",
+      "$.chapters[7].image_asset.hotspots[0].y_percent",
+      "$.chapters[7].image_asset.hotspots[0].w_percent",
+      "$.chapters[7].image_asset.hotspots[0].h_percent",
+      "$.chapters[7].image_asset.hotspots[0].popover_content",
+      "$.chapters[7].image_asset.hotspots[1].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[1].title",
+      "$.chapters[7].image_asset.hotspots[1].x_percent",
+      "$.chapters[7].image_asset.hotspots[1].y_percent",
+      "$.chapters[7].image_asset.hotspots[1].w_percent",
+      "$.chapters[7].image_asset.hotspots[1].h_percent",
+      "$.chapters[7].image_asset.hotspots[1].popover_content",
+      "$.chapters[7].image_asset.hotspots[2].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[2].title",
+      "$.chapters[7].image_asset.hotspots[2].x_percent",
+      "$.chapters[7].image_asset.hotspots[2].y_percent",
+      "$.chapters[7].image_asset.hotspots[2].w_percent",
+      "$.chapters[7].image_asset.hotspots[2].h_percent",
+      "$.chapters[7].image_asset.hotspots[2].popover_content",
+      "$.chapters[7].image_asset.hotspots[3].hotspot_id",
+      "$.chapters[7].image_asset.hotspots[3].title",
+      "$.chapters[7].image_asset.hotspots[3].x_percent",
+      "$.chapters[7].image_asset.hotspots[3].y_percent",
+      "$.chapters[7].image_asset.hotspots[3].w_percent",
+      "$.chapters[7].image_asset.hotspots[3].h_percent",
+      "$.chapters[7].image_asset.hotspots[3].popover_content"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
       {
-        "id": "node_b_1_1",
-        "label": "Place Value Systems and Magnitude",
-        "node_color": "#818CF8",
-        "icon": "layer_group",
-        "type": "theme_branch",
-        "children": [
-          {
-            "id": "node_sub_1_1_1",
-            "label": "Indian System of Numeration",
-            "node_color": "#34D399",
-            "icon": "lightbulb",
-            "type": "concept_node",
-            "tooltip_popover": {
-              "title": "Indian System of Numeration",
-              "description": "Uses periods of Thousands, Lakhs (1,00,000 = 10^5), and Crores (1,00,00,000 = 10^7).",
-              "key_formula": "Lakh (10^5)",
-              "example": "Patna's population is 25 Lakhs (25,00,000); Mumbai's population is 2 Crores (2,00,00,000)."
-            }
-          },
-          {
-            "id": "node_sub_1_1_2",
-            "label": "International System of Numeration",
-            "node_color": "#34D399",
-            "icon": "lightbulb",
-            "type": "concept_node",
-            "tooltip_popover": {
-              "title": "International System of Numeration",
-              "description": "Uses periods of Thousands, Millions (1,000,000 = 10^6), and Billions (1,000,000,000 = 10^9).",
-              "key_formula": "Million (10^6)",
-              "example": "1 Million = 10 Lakhs; 1 Crore = 10 Millions; 1 Billion = 100 Crores."
-            }
-          }
-        ]
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Large Numbers Around Us",
+        "source_number_field": "chapter_number",
+        "source_number": 1
       },
       {
-        "id": "node_b_1_2",
-        "label": "Mental Computation Shortcuts",
-        "node_color": "#818CF8",
-        "icon": "layer_group",
-        "type": "theme_branch",
-        "children": [
-          {
-            "id": "node_sub_1_2_1",
-            "label": "Multiplication by 5 via Halving",
-            "node_color": "#34D399",
-            "icon": "lightbulb",
-            "type": "concept_node",
-            "tooltip_popover": {
-              "title": "Multiplication by 5 via Halving",
-              "description": "To multiply an even number N by 5, halve the number and multiply by 10: N * 5 = (N / 2) * 10.",
-              "key_formula": "Halving Shortcut",
-              "example": "116 * 5 = (116 / 2) * 10 = 58 * 10 = 580; 464 * 5 = 232 * 10 = 2320."
-            }
-          },
-          {
-            "id": "node_sub_1_2_2",
-            "label": "Multiplication by 25 via Quartering",
-            "node_color": "#34D399",
-            "icon": "lightbulb",
-            "type": "concept_node",
-            "tooltip_popover": {
-              "title": "Multiplication by 25 via Quartering",
-              "description": "To multiply a multiple of 4 N by 25, divide by 4 and multiply by 100: N * 25 = (N / 4) * 100.",
-              "key_formula": "Quartering Shortcut",
-              "example": "824 * 25 = (824 / 4) * 100 = 206 * 100 = 20,600; 312 * 25 = 78 * 100 = 7800."
-            }
-          }
-        ]
+        "source_path": "$.chapters[0].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Indian System of Numeration",
+        "source_number_field": null,
+        "source_number": null
       },
       {
-        "id": "node_b_1_3",
-        "label": "Digit Sequence Analytics",
-        "node_color": "#818CF8",
-        "icon": "layer_group",
-        "type": "theme_branch",
-        "children": [
-          {
-            "id": "node_sub_1_3_1",
-            "label": "Sequential Natural Number Digit Counts",
-            "node_color": "#34D399",
-            "icon": "lightbulb",
-            "type": "concept_node",
-            "tooltip_popover": {
-              "title": "Sequential Natural Number Digit Counts",
-              "description": "Single-digit numbers (1-9) consume 9 total positions.",
-              "key_formula": "Digit Position Index",
-              "example": "Finding the 100th digit: 100 - 9 = 91 digits from 2-digit numbers. 91 / 2 = 45 with remainder 1. 9 + 45 = 54. Next number is 55, whose first digit is 5."
+        "source_path": "$.chapters[0].d3_react_flow_tree.children[0].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "International System of Numeration",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Multiplication by 5 via Halving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].d3_react_flow_tree.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Multiplication by 25 via Quartering",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Sequential Natural Number Digit Counts",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Large Numbers Around Us",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Indian Place Value System",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "International Place Value System",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Factor Shortcuts (x5 and x25)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Sequential Digit Position Analytics",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Arithmetic Expressions",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Operational Terms and Order",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].d3_react_flow_tree.children[0].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Bracket Grouping Constraints",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Commutative and Associative Laws",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].d3_react_flow_tree.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Distributive Law of Multiplication",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Subtraction as Adding Additive Inverses",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Arithmetic Expressions",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Term Partitioning & Order",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Algebraic Laws of Arithmetic",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Zero-Pair Token Model",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Bracket Negation Rules",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "A Peek Beyond the Point",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Tenths, Hundredths, and Thousandths",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Currency and Length Conversions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Equivalent Decimals and Vertical Alignment",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "A Peek Beyond the Point",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Millimeter Subdivisions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Expanded Decimal Grid",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Currency & Unit Conversions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Equivalent Decimals & Alignment",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Expressions using Letter-Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Letter-Numbers and Perimeter Formulas",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Combining Like Terms",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Matchstick Square and Endless Grid Rules",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Expressions using Letter-Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Polygon Perimeters",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Matchstick Square Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Endless 4-Column Grid Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Combining Like Terms",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Parallel and Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Vertically Opposite Angles and Linear Pairs",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Equidistant Parallelism and Orthogonality",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].d3_react_flow_tree.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Paper Folding Constructions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Parallel and Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Intersecting Lines & Angles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Parallel Lines (l || m)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Perpendicular Lines (l ⊥ m)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Paper Folding Creases",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Number Play",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Taller-in-Front Callout Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Even and Odd Operational Laws",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].d3_react_flow_tree.children[2].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "3x3 Magic Square Constraints",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Number Play",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Height Line Logic",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Integer Parity Algebra",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "3x3 Magic Square Proof",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Cryptarithms & Elimination",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "A Tale of Three Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Triangle Inequality Theorem",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Equilateral, Isosceles, and Scalene Types",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "A Tale of Three Intersecting Lines",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Direct Path vs Detour",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Triangle Inequality Theorem",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Side-Based Classification",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Compass Arc Construction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Working with Fractions",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].d3_react_flow_tree.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Brahmagupta's Multiplication Formula (628 CE)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].d3_react_flow_tree.children[0].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Division via Reciprocals",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].d3_react_flow_tree.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Telescoping Cancellation Pattern",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset",
+        "source_title_field": "chapter_title",
+        "source_title": "Working with Fractions",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[0]",
+        "source_title_field": "title",
+        "source_title": "Brahmagupta's Rule (628 CE)",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[1]",
+        "source_title_field": "title",
+        "source_title": "Reciprocal Division & Scaling",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[2]",
+        "source_title_field": "title",
+        "source_title": "Real-World Fraction Scaling",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7].image_asset.hotspots[3]",
+        "source_title_field": "title",
+        "source_title": "Telescoping Series Cancellation",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 75,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Mathematics (Ganita Prakash - Class 7 NCERT)",
+    "resource_type": "Interactive D3.js & React Flow Mind Maps",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Large Numbers Around Us",
+        "mermaid_syntax": "graph TD\n  Root[\"Large Numbers Around Us\"]\n  Root --> B1[\"Place Value Systems and Magnitude\"]\n  B1 --> B1_S1[\"Indian System of Numeration\"]\n  B1 --> B1_S2[\"International System of Numeration\"]\n  Root --> B2[\"Mental Computation Shortcuts\"]\n  B2 --> B2_S1[\"Multiplication by 5 via Halving\"]\n  B2 --> B2_S2[\"Multiplication by 25 via Quartering\"]\n  Root --> B3[\"Digit Sequence Analytics\"]\n  B3 --> B3_S1[\"Sequential Natural Number Digit Counts\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch1",
+          "label": "Large Numbers Around Us",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_1_1",
+              "label": "Place Value Systems and Magnitude",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_1_1_1",
+                  "label": "Indian System of Numeration",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Indian System of Numeration",
+                    "description": "Uses periods of Thousands, Lakhs (1,00,000 = 10^5), and Crores (1,00,00,000 = 10^7).",
+                    "key_formula": "Lakh (10^5)",
+                    "example": "Patna's population is 25 Lakhs (25,00,000); Mumbai's population is 2 Crores (2,00,00,000)."
+                  }
+                },
+                {
+                  "id": "node_sub_1_1_2",
+                  "label": "International System of Numeration",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "International System of Numeration",
+                    "description": "Uses periods of Thousands, Millions (1,000,000 = 10^6), and Billions (1,000,000,000 = 10^9).",
+                    "key_formula": "Million (10^6)",
+                    "example": "1 Million = 10 Lakhs; 1 Crore = 10 Millions; 1 Billion = 100 Crores."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_1_2",
+              "label": "Mental Computation Shortcuts",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_1_2_1",
+                  "label": "Multiplication by 5 via Halving",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Multiplication by 5 via Halving",
+                    "description": "To multiply an even number N by 5, halve the number and multiply by 10: N * 5 = (N / 2) * 10.",
+                    "key_formula": "Halving Shortcut",
+                    "example": "116 * 5 = (116 / 2) * 10 = 58 * 10 = 580; 464 * 5 = 232 * 10 = 2320."
+                  }
+                },
+                {
+                  "id": "node_sub_1_2_2",
+                  "label": "Multiplication by 25 via Quartering",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Multiplication by 25 via Quartering",
+                    "description": "To multiply a multiple of 4 N by 25, divide by 4 and multiply by 100: N * 25 = (N / 4) * 100.",
+                    "key_formula": "Quartering Shortcut",
+                    "example": "824 * 25 = (824 / 4) * 100 = 206 * 100 = 20,600; 312 * 25 = 78 * 100 = 7800."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_1_3",
+              "label": "Digit Sequence Analytics",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_1_3_1",
+                  "label": "Sequential Natural Number Digit Counts",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Sequential Natural Number Digit Counts",
+                    "description": "Single-digit numbers (1-9) consume 9 total positions.",
+                    "key_formula": "Digit Position Index",
+                    "example": "Finding the 100th digit: 100 - 9 = 91 digits from 2-digit numbers. 91 / 2 = 45 with remainder 1. 9 + 45 = 54. Next number is 55, whose first digit is 5."
+                  }
+                }
+              ]
             }
-          }
-        ]
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch1_place_value_shortcuts",
+          "chapter_number": 1,
+          "chapter_title": "Large Numbers Around Us",
+          "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
+          "file_name": "ch1_place_value_shortcuts.png",
+          "local_url": "/assets/images/ch1_place_value_shortcuts.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_1_1",
+              "title": "Indian Place Value System",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
+            },
+            {
+              "hotspot_id": "hs_1_2",
+              "title": "International Place Value System",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
+            },
+            {
+              "hotspot_id": "hs_1_3",
+              "title": "Factor Shortcuts (x5 and x25)",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
+            },
+            {
+              "hotspot_id": "hs_1_4",
+              "title": "Sequential Digit Position Analytics",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Arithmetic Expressions",
+        "mermaid_syntax": "graph TD\n  Root[\"Arithmetic Expressions\"]\n  Root --> B1[\"Structure and Evaluation Priority\"]\n  B1 --> B1_S1[\"Operational Terms and Order\"]\n  B1 --> B1_S2[\"Bracket Grouping Constraints\"]\n  Root --> B2[\"Algebraic Laws of Arithmetic\"]\n  B2 --> B2_S1[\"Commutative and Associative Laws\"]\n  B2 --> B2_S2[\"Distributive Law of Multiplication\"]\n  Root --> B3[\"Additive Inverse and Negation\"]\n  B3 --> B3_S1[\"Subtraction as Adding Additive Inverses\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch2",
+          "label": "Arithmetic Expressions",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_2_1",
+              "label": "Structure and Evaluation Priority",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_2_1_1",
+                  "label": "Operational Terms and Order",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Operational Terms and Order",
+                    "description": "An expression combines numbers and operational signs (+, -, *, /).",
+                    "key_formula": "Arithmetic Expression",
+                    "example": "In 39 - 2 * 6 + 11, evaluate term 2 * 6 = 12 first, giving 39 - 12 + 11 = 38."
+                  }
+                },
+                {
+                  "id": "node_sub_2_1_2",
+                  "label": "Bracket Grouping Constraints",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Bracket Grouping Constraints",
+                    "description": "Brackets group sub-expressions into single compound terms to explicitly mandate evaluation priority.",
+                    "key_formula": "Brackets / Parentheses",
+                    "example": "Queen Alia's coin gift: (100 * 2) + (100 / 2) = 200 + 50 = 250 gold coins."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_2_2",
+              "label": "Algebraic Laws of Arithmetic",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_2_2_1",
+                  "label": "Commutative and Associative Laws",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Commutative and Associative Laws",
+                    "description": "Commutative Addition: a + b = b + a.",
+                    "key_formula": "Commutativity",
+                    "example": "18 + (-10) = (-10) + 18 = 8; (12 + 8) + 5 = 12 + (8 + 5) = 25."
+                  }
+                },
+                {
+                  "id": "node_sub_2_2_2",
+                  "label": "Distributive Law of Multiplication",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Distributive Law of Multiplication",
+                    "description": "Multiplication distributes over addition: a * (b + c) = a * b + a * c.",
+                    "key_formula": "Distributive Property",
+                    "example": "Melvin's story reading: 8 * (7 - 2) = 8*7 - 8*2 = 56 - 16 = 40 stories."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_2_3",
+              "label": "Additive Inverse and Negation",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_2_3_1",
+                  "label": "Subtraction as Adding Additive Inverses",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Subtraction as Adding Additive Inverses",
+                    "description": "Subtracting a number is equivalent to adding its negative counterpart: a - b = a + (-b).",
+                    "key_formula": "Additive Inverse",
+                    "example": "18 - 10 = 18 + (-10) = 8; Token model combining 18 blue (+1) and 10 red (-1) tokens leaves 8 blue tokens."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch2_expressions_token_model",
+          "chapter_number": 2,
+          "chapter_title": "Arithmetic Expressions",
+          "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+          "file_name": "ch2_expressions_token_model.png",
+          "local_url": "/assets/images/ch2_expressions_token_model.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_2_1",
+              "title": "Term Partitioning & Order",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+            },
+            {
+              "hotspot_id": "hs_2_2",
+              "title": "Algebraic Laws of Arithmetic",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+            },
+            {
+              "hotspot_id": "hs_2_3",
+              "title": "Zero-Pair Token Model",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+            },
+            {
+              "hotspot_id": "hs_2_4",
+              "title": "Bracket Negation Rules",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "A Peek Beyond the Point",
+        "mermaid_syntax": "graph TD\n  Root[\"A Peek Beyond the Point\"]\n  Root --> B1[\"Sub-Unit Place Value Structure\"]\n  B1 --> B1_S1[\"Tenths, Hundredths, and Thousandths\"]\n  Root --> B2[\"Unit Conversions using Decimals\"]\n  B2 --> B2_S1[\"Currency and Length Conversions\"]\n  Root --> B3[\"Decimal Comparison and Column Arithmetic\"]\n  B3 --> B3_S1[\"Equivalent Decimals and Vertical Alignment\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch3",
+          "label": "A Peek Beyond the Point",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_3_1",
+              "label": "Sub-Unit Place Value Structure",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_3_1_1",
+                  "label": "Tenths, Hundredths, and Thousandths",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Tenths, Hundredths, and Thousandths",
+                    "description": "Tenth = 1/10 = 0.1; Hundredth = 1/100 = 0.01; Thousandth = 1/1000 = 0.001.",
+                    "key_formula": "Decimal Point",
+                    "example": "3.47 = 3 ones + 4 tenths + 7 hundredths = 3 + 4/10 + 7/100."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_3_2",
+              "label": "Unit Conversions using Decimals",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_3_2_1",
+                  "label": "Currency and Length Conversions",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Currency and Length Conversions",
+                    "description": "Currency: 1 Rupee = 100 Paise => 1 Paise = ₹0.01 (e.g., 45 p = ₹0.45).",
+                    "key_formula": "Paise to Rupee Ratio",
+                    "example": "Honeybee body length: Head 2.3 cm + Thorax 5.4 cm + Abdomen 7.5 cm = 15.2 cm total."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_3_3",
+              "label": "Decimal Comparison and Column Arithmetic",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_3_3_1",
+                  "label": "Equivalent Decimals and Vertical Alignment",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Equivalent Decimals and Vertical Alignment",
+                    "description": "Appending trailing zeros to decimal places preserves value (0.2 = 0.20 = 0.200).",
+                    "key_formula": "Equivalent Decimals",
+                    "example": "Comparing 0.2 and 0.09: 0.2 has 2 tenths while 0.09 has 0 tenths, so 0.2 > 0.09."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch3_decimals_measurement_grid",
+          "chapter_number": 3,
+          "chapter_title": "A Peek Beyond the Point",
+          "title": "Decimals Sub-Unit Measurement & Equivalent Grid Diagram",
+          "file_name": "ch3_decimals_measurement_grid.png",
+          "local_url": "/assets/images/ch3_decimals_measurement_grid.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Ruler millimeter subdivisions, expanded decimal place value grid, unit conversions, and column alignment.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_3_1",
+              "title": "Millimeter Subdivisions",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "1 cm = 10 mm => 1 mm = 0.1 cm. Sub-unit subdivisions allow measuring exact fractional lengths."
+            },
+            {
+              "hotspot_id": "hs_3_2",
+              "title": "Expanded Decimal Grid",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Place values right of decimal: Tenths (0.1), Hundredths (0.01), Thousandths (0.001)."
+            },
+            {
+              "hotspot_id": "hs_3_3",
+              "title": "Currency & Unit Conversions",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "1 Rupee = 100 Paise => 1 Paise = ₹0.01 (45 p = ₹0.45). 1 km = 1,000,000 mm."
+            },
+            {
+              "hotspot_id": "hs_3_4",
+              "title": "Equivalent Decimals & Alignment",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Trailing zeros do not alter value: 0.2 = 0.20 = 0.200. Always align decimal points vertically."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Expressions using Letter-Numbers",
+        "mermaid_syntax": "graph TD\n  Root[\"Expressions using Letter-Numbers\"]\n  Root --> B1[\"Algebraic Variables and Geometric Generalizations\"]\n  B1 --> B1_S1[\"Letter-Numbers and Perimeter Formulas\"]\n  Root --> B2[\"Expression Simplification\"]\n  B2 --> B2_S1[\"Combining Like Terms\"]\n  Root --> B3[\"Pattern Rules and Matrix Coordinates\"]\n  B3 --> B3_S1[\"Matchstick Square and Endless Grid Rules\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch4",
+          "label": "Expressions using Letter-Numbers",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_4_1",
+              "label": "Algebraic Variables and Geometric Generalizations",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_4_1_1",
+                  "label": "Letter-Numbers and Perimeter Formulas",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Letter-Numbers and Perimeter Formulas",
+                    "description": "A letter-number (variable) represents an unspecified, changing numerical value.",
+                    "key_formula": "Letter-Number (Variable)",
+                    "example": "Shabnam's age s in terms of Aftab's age a: s = a + 3."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_4_2",
+              "label": "Expression Simplification",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_4_2_1",
+                  "label": "Combining Like Terms",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Combining Like Terms",
+                    "description": "Like terms contain identical variables (e.g., 5y and 2y) and combine via numerical coefficients: 5y + 2y = 7y.",
+                    "key_formula": "Like Terms",
+                    "example": "Simplify: 5y + x + x + 5y - 6 + 2 = 10y + 2x - 4."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_4_3",
+              "label": "Pattern Rules and Matrix Coordinates",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_4_3_1",
+                  "label": "Matchstick Square and Endless Grid Rules",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Matchstick Square and Endless Grid Rules",
+                    "description": "Matchstick squares rule: w connected squares require 3w + 1 matchsticks.",
+                    "key_formula": "Pattern Rule",
+                    "example": "For 10 squares: 3(10) + 1 = 31 matchsticks."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch4_variables_matchstick_grid",
+          "chapter_number": 4,
+          "chapter_title": "Expressions using Letter-Numbers",
+          "title": "Variables, Matchstick Patterns & Matrix Coordinates Diagram",
+          "file_name": "ch4_variables_matchstick_grid.png",
+          "local_url": "/assets/images/ch4_variables_matchstick_grid.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Polygon perimeters, matchstick square pattern rule 3w+1, 4-column matrix coordinate formula, and like terms.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_4_1",
+              "title": "Polygon Perimeters",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Equilateral Triangle = 3s, Square = 4s, Regular Pentagon = 5s, Regular Hexagon = 6s."
+            },
+            {
+              "hotspot_id": "hs_4_2",
+              "title": "Matchstick Square Rule",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Building w connected squares requires 3w + 1 matchsticks (1st square takes 4, each added takes 3)."
+            },
+            {
+              "hotspot_id": "hs_4_3",
+              "title": "Endless 4-Column Grid Formula",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Number N in row r, col c: N = 4(r - 1) + c = 4r - 4 + c. 143 lies in Row 36, Column 3."
+            },
+            {
+              "hotspot_id": "hs_4_4",
+              "title": "Combining Like Terms",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Like terms share identical variables: 5y + 2y = 7y. Unlike terms (3x + 4y) cannot be merged."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Parallel and Intersecting Lines",
+        "mermaid_syntax": "graph TD\n  Root[\"Parallel and Intersecting Lines\"]\n  Root --> B1[\"Intersection Geometry and Angle Relations\"]\n  B1 --> B1_S1[\"Vertically Opposite Angles and Linear Pairs\"]\n  Root --> B2[\"Parallel and Perpendicular Line Properties\"]\n  B2 --> B2_S1[\"Equidistant Parallelism and Orthogonality\"]\n  B2 --> B2_S2[\"Paper Folding Constructions\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch5",
+          "label": "Parallel and Intersecting Lines",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_5_1",
+              "label": "Intersection Geometry and Angle Relations",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_5_1_1",
+                  "label": "Vertically Opposite Angles and Linear Pairs",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Vertically Opposite Angles and Linear Pairs",
+                    "description": "Two straight lines intersect at at most one unique point, forming four angles.",
+                    "key_formula": "Point of Intersection",
+                    "example": "If intersecting angle a = 35°, adjacent angle b = 180° - 35° = 145°, vertically opposite angle c = 35°, angle d = 145°."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_5_2",
+              "label": "Parallel and Perpendicular Line Properties",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_5_2_1",
+                  "label": "Equidistant Parallelism and Orthogonality",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Equidistant Parallelism and Orthogonality",
+                    "description": "Parallel lines lie in the same plane and never meet, maintaining constant perpendicular distance throughout.",
+                    "key_formula": "Parallel Lines (||)",
+                    "example": "Opposite edges of a ruler, railway tracks."
+                  }
+                },
+                {
+                  "id": "node_sub_5_2_2",
+                  "label": "Paper Folding Constructions",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Paper Folding Constructions",
+                    "description": "Successive parallel horizontal paper folds produce parallel line creases.",
+                    "key_formula": "Crease Geometry",
+                    "example": "Folding square paper in half repeatedly creates parallel grid line creases."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch5_geometry_intersecting_parallel",
+          "chapter_number": 5,
+          "chapter_title": "Parallel and Intersecting Lines",
+          "title": "Intersecting Lines, Parallel Lines & Crease Geometry Diagram",
+          "file_name": "ch5_geometry_intersecting_parallel.png",
+          "local_url": "/assets/images/ch5_geometry_intersecting_parallel.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Vertically opposite angles, linear pairs, parallel line constant distance, perpendicular lines, and crease geometry.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_5_1",
+              "title": "Intersecting Lines & Angles",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Vertically opposite angles are equal (∠a = ∠c). Linear pairs sum to 180° (∠a + ∠b = 180°)."
+            },
+            {
+              "hotspot_id": "hs_5_2",
+              "title": "Parallel Lines (l || m)",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Coplanar lines that never meet. Maintain constant perpendicular distance throughout."
+            },
+            {
+              "hotspot_id": "hs_5_3",
+              "title": "Perpendicular Lines (l ⊥ m)",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Lines that intersect at right angles (90°), forming 4 orthogonal quadrants."
+            },
+            {
+              "hotspot_id": "hs_5_4",
+              "title": "Paper Folding Creases",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Successive horizontal folds yield parallel line creases; orthogonal fold creates perpendicular crease."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Number Play",
+        "mermaid_syntax": "graph TD\n  Root[\"Number Play\"]\n  Root --> B1[\"Line Position Logic\"]\n  B1 --> B1_S1[\"Taller-in-Front Callout Rule\"]\n  Root --> B2[\"Integer Parity Algebra\"]\n  B2 --> B2_S1[\"Even and Odd Operational Laws\"]\n  Root --> B3[\"Magic Squares and Cryptarithms\"]\n  B3 --> B3_S1[\"3x3 Magic Square Constraints\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch6",
+          "label": "Number Play",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_6_1",
+              "label": "Line Position Logic",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_6_1_1",
+                  "label": "Taller-in-Front Callout Rule",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Taller-in-Front Callout Rule",
+                    "description": "Children in line report the count of individuals standing ahead who are strictly taller.",
+                    "key_formula": "Callout Number",
+                    "example": "Callout sequence (0, 0, 1, 0, 3, 0, 3) uniquely reconstructs 7 stick figures by height."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_6_2",
+              "label": "Integer Parity Algebra",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_6_2_1",
+                  "label": "Even and Odd Operational Laws",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Even and Odd Operational Laws",
+                    "description": "Even = 2n; Odd = 2n - 1.",
+                    "key_formula": "Parity",
+                    "example": "Sum of 50 odd numbers is always EVEN."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_6_3",
+              "label": "Magic Squares and Cryptarithms",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_6_3_1",
+                  "label": "3x3 Magic Square Constraints",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "3x3 Magic Square Constraints",
+                    "description": "An n x n grid filled with distinct integers where every row, column, and diagonal sums to the same constant.",
+                    "key_formula": "Magic Square",
+                    "example": "Standard magic square row 1: [8, 1, 6], row 2: [3, 5, 7], row 3: [4, 9, 2]."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch6_number_play_magic_square",
+          "chapter_number": 6,
+          "chapter_title": "Number Play",
+          "title": "Height Line Logic, Integer Parity & 3x3 Magic Square Diagram",
+          "file_name": "ch6_number_play_magic_square.png",
+          "local_url": "/assets/images/ch6_number_play_magic_square.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Height callout line logic, integer parity addition laws, loose leaf sum rule, and 3x3 magic square proof.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_6_1",
+              "title": "Height Line Logic",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Callout number = count of taller individuals standing ahead. Tallest person calls out 0."
+            },
+            {
+              "hotspot_id": "hs_6_2",
+              "title": "Integer Parity Algebra",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Even = 2n, Odd = 2n-1. Odd + Odd = Even. Loose leaf page sum = (2k-1)+2k = 4k-1 (Always ODD)."
+            },
+            {
+              "hotspot_id": "hs_6_3",
+              "title": "3x3 Magic Square Proof",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Magic constant S = 15. Center cell x belongs to 4 lines: 45 + 3x = 60 => x = 5. Exactly 8 rotations."
+            },
+            {
+              "hotspot_id": "hs_6_4",
+              "title": "Cryptarithms & Elimination",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Letter substitution puzzles solved using place-value digit constraints and parity elimination."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "A Tale of Three Intersecting Lines",
+        "mermaid_syntax": "graph TD\n  Root[\"A Tale of Three Intersecting Lines\"]\n  Root --> B1[\"Triangle Existence Geometry\"]\n  B1 --> B1_S1[\"Triangle Inequality Theorem\"]\n  Root --> B2[\"Triangle Classification by Side Lengths\"]\n  B2 --> B2_S1[\"Equilateral, Isosceles, and Scalene Types\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch7",
+          "label": "A Tale of Three Intersecting Lines",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_7_1",
+              "label": "Triangle Existence Geometry",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_7_1_1",
+                  "label": "Triangle Inequality Theorem",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Triangle Inequality Theorem",
+                    "description": "Three pairwise intersecting lines form a triangle.",
+                    "key_formula": "Triangle Inequality Theorem",
+                    "example": "Sides 5, 10, 12: 5 + 10 = 15 > 12 (Triangle Exists)."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_7_2",
+              "label": "Triangle Classification by Side Lengths",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_7_2_1",
+                  "label": "Equilateral, Isosceles, and Scalene Types",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Equilateral, Isosceles, and Scalene Types",
+                    "description": "Equilateral: All 3 sides equal (a = b = c). Always constructible for any s > 0 because s + s = 2s > s.",
+                    "key_formula": "Equilateral Triangle",
+                    "example": "Equilateral triangle with sides 50 cm, 50 cm, 50 cm; Scalene triangle with sides 24 cm, 26 cm, 28 cm."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch7_triangle_inequality_detour",
+          "chapter_number": 7,
+          "chapter_title": "A Tale of Three Intersecting Lines",
+          "title": "Direct Path vs Detour & Triangle Inequality Diagram",
+          "file_name": "ch7_triangle_inequality_detour.png",
+          "local_url": "/assets/images/ch7_triangle_inequality_detour.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Direct path vs detour geometry, triangle inequality theorem, side classification, and compass arc feasibility.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_7_1",
+              "title": "Direct Path vs Detour",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Direct straight path c is strictly shorter than detour path a + b (c < a + b => a + b > c)."
+            },
+            {
+              "hotspot_id": "hs_7_2",
+              "title": "Triangle Inequality Theorem",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "Sum of any 2 sides > 3rd side (a+b>c, b+c>a, c+a>b). Test: Smallest two sum > longest side."
+            },
+            {
+              "hotspot_id": "hs_7_3",
+              "title": "Side-Based Classification",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Equilateral (a=b=c, always valid for s>0), Isosceles (a=b!=c), Scalene (a!=b!=c)."
+            },
+            {
+              "hotspot_id": "hs_7_4",
+              "title": "Compass Arc Construction",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Compass arcs of radii a and b intersect to locate 3rd vertex iff a + b > c. Arcs fail if a + b <= c."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Working with Fractions",
+        "mermaid_syntax": "graph TD\n  Root[\"Working with Fractions\"]\n  Root --> B1[\"Fraction Operations and Historical Rules\"]\n  B1 --> B1_S1[\"Brahmagupta's Multiplication Formula (628 CE)\"]\n  B1 --> B1_S2[\"Division via Reciprocals\"]\n  Root --> B2[\"Telescoping Product Series\"]\n  B2 --> B2_S1[\"Telescoping Cancellation Pattern\"]",
+        "d3_react_flow_tree": {
+          "id": "node_root_ch8",
+          "label": "Working with Fractions",
+          "node_color": "#38BDF8",
+          "icon": "book_open",
+          "type": "root",
+          "children": [
+            {
+              "id": "node_b_8_1",
+              "label": "Fraction Operations and Historical Rules",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_8_1_1",
+                  "label": "Brahmagupta's Multiplication Formula (628 CE)",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Brahmagupta's Multiplication Formula (628 CE)",
+                    "description": "To multiply fractions, multiply numerators together and denominators together: (a / b) * (c / d) = (a * c) / (b * d).",
+                    "key_formula": "Brahmagupta's Rule",
+                    "example": "(2/3) * (4/5) = 8/15; Area model with 3/4 x 2/3 overlapping grid = 6/12 = 1/2."
+                  }
+                },
+                {
+                  "id": "node_sub_8_1_2",
+                  "label": "Division via Reciprocals",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Division via Reciprocals",
+                    "description": "Dividing by a fraction is equivalent to multiplying by its reciprocal: (a / b) / (c / d) = (a / b) * (d / c).",
+                    "key_formula": "Reciprocal (Multiplicative Inverse)",
+                    "example": "Maria decorating bags: 8 m / (1/4 m per bag) = 8 * 4 = 32 bags."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "node_b_8_2",
+              "label": "Telescoping Product Series",
+              "node_color": "#818CF8",
+              "icon": "layer_group",
+              "type": "theme_branch",
+              "children": [
+                {
+                  "id": "node_sub_8_2_1",
+                  "label": "Telescoping Cancellation Pattern",
+                  "node_color": "#34D399",
+                  "icon": "lightbulb",
+                  "type": "concept_node",
+                  "tooltip_popover": {
+                    "title": "Telescoping Cancellation Pattern",
+                    "description": "In products of the form (1 - 1/2)(1 - 1/3)(1 - 1/4)...(1 - 1/n), adjacent numerators and denominators cancel out completely.",
+                    "key_formula": "Telescoping Series",
+                    "example": "(1/2) * (2/3) * (3/4) * ... * (9/10) = 1/10."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "image_asset": {
+          "asset_id": "ch8_fractions_area_telescoping",
+          "chapter_number": 8,
+          "chapter_title": "Working with Fractions",
+          "title": "Brahmagupta Area Model & Telescoping Series Diagram",
+          "file_name": "ch8_fractions_area_telescoping.png",
+          "local_url": "/assets/images/ch8_fractions_area_telescoping.png",
+          "aspect_ratio": "16:9",
+          "width_px": 1600,
+          "height_px": 900,
+          "description": "Brahmagupta's fraction multiplication rule, 1x1 area grid model, reciprocal division, and telescoping series cancellation.",
+          "hotspots": [
+            {
+              "hotspot_id": "hs_8_1",
+              "title": "Brahmagupta's Rule (628 CE)",
+              "x_percent": 3.125,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "(a/b) * (c/d) = (a*c)/(b*d). Multiply numerators together and denominators together. Area model overlap."
+            },
+            {
+              "hotspot_id": "hs_8_2",
+              "title": "Reciprocal Division & Scaling",
+              "x_percent": 51.875,
+              "y_percent": 53.33,
+              "w_percent": 45.0,
+              "h_percent": 32.22,
+              "popover_content": "(a/b) / (c/d) = (a/b) * (d/c). Dividing by proper fraction (<1) ENLARGES the quotient value."
+            },
+            {
+              "hotspot_id": "hs_8_3",
+              "title": "Real-World Fraction Scaling",
+              "x_percent": 3.125,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "Lace bags: 8 m / (1/4 m) = 32 bags. Tank fill time: 1 / (7/10) = 10/7 hours = 1 3/7 hrs."
+            },
+            {
+              "hotspot_id": "hs_8_4",
+              "title": "Telescoping Series Cancellation",
+              "x_percent": 51.875,
+              "y_percent": 11.11,
+              "w_percent": 45.0,
+              "h_percent": 37.78,
+              "popover_content": "(1 - 1/2)(1 - 1/3)...(1 - 1/n) = (1/2)*(2/3)*...*((n-1)/n) = 1/n via cross-cancellation."
+            }
+          ]
+        }
       }
     ]
   },
-  "image_asset": {
-    "asset_id": "ch1_place_value_shortcuts",
-    "chapter_number": 1,
-    "chapter_title": "Large Numbers Around Us",
-    "title": "Place Value Systems & Shortcut Factor Scaling Diagram",
-    "file_name": "ch1_place_value_shortcuts.png",
-    "local_url": "/assets/images/ch1_place_value_shortcuts.png",
-    "aspect_ratio": "16:9",
-    "width_px": 1600,
-    "height_px": 900,
-    "description": "Comparative chart of Indian vs International numeration systems with factor shortcuts for multiplying by 5 and 25.",
-    "hotspots": [
-      {
-        "hotspot_id": "hs_1_1",
-        "title": "Indian Place Value System",
-        "x_percent": 3.125,
-        "y_percent": 53.33,
-        "w_percent": 45.0,
-        "h_percent": 32.22,
-        "popover_content": "Lakh = 10^5, Crore = 10^7. Commas placed after 3 digits from right, then every 2 digits."
-      },
-      {
-        "hotspot_id": "hs_1_2",
-        "title": "International Place Value System",
-        "x_percent": 51.875,
-        "y_percent": 53.33,
-        "w_percent": 45.0,
-        "h_percent": 32.22,
-        "popover_content": "Million = 10^6, Billion = 10^9. Commas placed every 3 digits. 1 Crore = 10 Millions."
-      },
-      {
-        "hotspot_id": "hs_1_3",
-        "title": "Factor Shortcuts (x5 and x25)",
-        "x_percent": 3.125,
-        "y_percent": 11.11,
-        "w_percent": 45.0,
-        "h_percent": 37.78,
-        "popover_content": "N * 5 = (N / 2) * 10. N * 25 = (N / 4) * 100. Halve and scale by 10, or quarter and scale by 100."
-      },
-      {
-        "hotspot_id": "hs_1_4",
-        "title": "Sequential Digit Position Analytics",
-        "x_percent": 51.875,
-        "y_percent": 11.11,
-        "w_percent": 45.0,
-        "h_percent": 37.78,
-        "popover_content": "Digits 1-9 take 9 positions; 10-99 take 180 positions. Finding position 100 yields digit 5."
-      }
-    ]
-  }
+  "grade": "7",
+  "chapter_id": "G7-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Geometric Twins (Congruence of Triangles)"
 }

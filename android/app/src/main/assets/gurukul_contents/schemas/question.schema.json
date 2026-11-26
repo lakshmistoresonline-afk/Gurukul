@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gurukul Universal Question",
+  "type": "object",
+  "required": [
+    "question_id",
+    "question_type",
+    "question_text"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "question_type": {
+      "type": "string"
+    },
+    "question_text": {
+      "type": [
+        "object",
+        "string",
+        "array"
+      ]
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "correct_answer": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "number",
+        "boolean",
+        "null"
+      ]
+    },
+    "explanation": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "difficulty": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "marks": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "learning_objective_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "concept_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_reference": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

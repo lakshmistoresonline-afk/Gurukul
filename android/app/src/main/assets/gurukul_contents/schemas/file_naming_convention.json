@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "All generated normalized and semantic content files for Classes 5-10 and every subject",
+  "policy": "Remove source export numbering prefixes from generated filenames. Preserve source directory hierarchy and original_content byte-for-byte.",
+  "artifact_filenames": {
+    "media_directory": "media_directory.v2.json",
+    "video_links": "video_links.v2.json",
+    "overview": "overview.v2.json",
+    "notes": "notes.v2.json",
+    "mindmaps": "mindmaps.v2.json",
+    "flashcards": "flashcards.v2.json",
+    "quiz": "quiz.v2.json",
+    "question_papers": "question_papers.v2.json",
+    "foundational": "foundational.v2.json",
+    "master": "master.v2.json",
+    "media_manifest": "media_manifest.v2.json"
+  },
+  "semantic_filenames": {
+    "media_directory": "media_directory.semantic.json",
+    "video_links": "video_links.semantic.json",
+    "overview": "overview.semantic.json",
+    "notes": "notes.semantic.json",
+    "mindmaps": "mindmaps.semantic.json",
+    "flashcards": "flashcards.semantic.json",
+    "quiz": "quiz.semantic.json",
+    "question_papers": "question_papers.semantic.json",
+    "foundational": "foundational.semantic.json",
+    "master": "master.semantic.json",
+    "media_manifest": "media_manifest.semantic.json"
+  },
+  "directory_policy": "Retain Class and Subject folder names and the Source Files subfolder where present; only generated filenames are standardized.",
+  "original_files_policy": "Never rename, overwrite, or modify original_content files.",
+  "versioning": "The normalized common-envelope representation uses .v2.json; semantic-node representation uses .semantic.json."
+}

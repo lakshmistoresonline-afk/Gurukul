@@ -1,96 +1,1702 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Rational Numbers",
-  "d3_config": {
-    "node_color": "#38bdf8",
-    "expanded_radius": 12,
-    "collapsed_radius": 8
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_9a06dcbc6450f05f",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_8",
+    "class_level": 8
   },
-  "tree_data": {
-    "id": "mm_node_ch1_root",
-    "name": "A Square and A Cube",
-    "node_color": "#0ea5e9",
-    "icon": "folder_root",
-    "tooltip_popover": {
-      "title": "A Square and A Cube",
-      "content": "Master topic for Chapter 1",
-      "example": "Central node of learning map"
-    },
-    "children": [
+  "subject": "Maths I",
+  "artifact": {
+    "artifact_type": "mindmaps",
+    "source_file_name": "06-Mindmaps.json",
+    "source_relative_path": "Contents/Class 8/Maths I/Source Files/06-Mindmaps.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "61f8793c272d254139ada9a72703ddfa9ac78f95936d795dfd063d7b4a938cad",
+    "source_semantic_sha256": "7a784d687de877547f5e26fe0ec4b9e82add62b1b4df2d4c949082e5ee2c37e6",
+    "source_byte_length": 27310,
+    "source_encoding": "utf-8",
+    "source_field_count": 432,
+    "field_inventory": [
+      "$.subject",
+      "$.grade_level",
+      "$.curriculum_standard",
+      "$.resource_type",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].d3_config",
+      "$.chapters[0].d3_config.node_color",
+      "$.chapters[0].d3_config.expanded_radius",
+      "$.chapters[0].d3_config.collapsed_radius",
+      "$.chapters[0].tree_data",
+      "$.chapters[0].tree_data.id",
+      "$.chapters[0].tree_data.name",
+      "$.chapters[0].tree_data.node_color",
+      "$.chapters[0].tree_data.icon",
+      "$.chapters[0].tree_data.tooltip_popover",
+      "$.chapters[0].tree_data.tooltip_popover.title",
+      "$.chapters[0].tree_data.tooltip_popover.content",
+      "$.chapters[0].tree_data.tooltip_popover.example",
+      "$.chapters[0].tree_data.children",
+      "$.chapters[0].tree_data.children[0].id",
+      "$.chapters[0].tree_data.children[0].name",
+      "$.chapters[0].tree_data.children[0].node_color",
+      "$.chapters[0].tree_data.children[0].icon",
+      "$.chapters[0].tree_data.children[0].tooltip_popover",
+      "$.chapters[0].tree_data.children[0].tooltip_popover.title",
+      "$.chapters[0].tree_data.children[0].tooltip_popover.content",
+      "$.chapters[0].tree_data.children[0].tooltip_popover.example",
+      "$.chapters[0].tree_data.children[0].children",
+      "$.chapters[0].tree_data.children[0].children[0].id",
+      "$.chapters[0].tree_data.children[0].children[0].name",
+      "$.chapters[0].tree_data.children[0].children[0].node_color",
+      "$.chapters[0].tree_data.children[0].children[0].icon",
+      "$.chapters[0].tree_data.children[0].children[0].tooltip_popover",
+      "$.chapters[0].tree_data.children[0].children[0].tooltip_popover.title",
+      "$.chapters[0].tree_data.children[0].children[0].tooltip_popover.content",
+      "$.chapters[0].tree_data.children[0].children[0].tooltip_popover.example",
+      "$.chapters[0].tree_data.children[0].children[0].children",
+      "$.chapters[0].tree_data.children[0].children[1].id",
+      "$.chapters[0].tree_data.children[0].children[1].name",
+      "$.chapters[0].tree_data.children[0].children[1].node_color",
+      "$.chapters[0].tree_data.children[0].children[1].icon",
+      "$.chapters[0].tree_data.children[0].children[1].tooltip_popover",
+      "$.chapters[0].tree_data.children[0].children[1].tooltip_popover.title",
+      "$.chapters[0].tree_data.children[0].children[1].tooltip_popover.content",
+      "$.chapters[0].tree_data.children[0].children[1].tooltip_popover.example",
+      "$.chapters[0].tree_data.children[0].children[1].children",
+      "$.chapters[0].tree_data.children[1].id",
+      "$.chapters[0].tree_data.children[1].name",
+      "$.chapters[0].tree_data.children[1].node_color",
+      "$.chapters[0].tree_data.children[1].icon",
+      "$.chapters[0].tree_data.children[1].tooltip_popover",
+      "$.chapters[0].tree_data.children[1].tooltip_popover.title",
+      "$.chapters[0].tree_data.children[1].tooltip_popover.content",
+      "$.chapters[0].tree_data.children[1].tooltip_popover.example",
+      "$.chapters[0].tree_data.children[1].children",
+      "$.chapters[0].tree_data.children[1].children[0].id",
+      "$.chapters[0].tree_data.children[1].children[0].name",
+      "$.chapters[0].tree_data.children[1].children[0].node_color",
+      "$.chapters[0].tree_data.children[1].children[0].icon",
+      "$.chapters[0].tree_data.children[1].children[0].tooltip_popover",
+      "$.chapters[0].tree_data.children[1].children[0].tooltip_popover.title",
+      "$.chapters[0].tree_data.children[1].children[0].tooltip_popover.content",
+      "$.chapters[0].tree_data.children[1].children[0].tooltip_popover.example",
+      "$.chapters[0].tree_data.children[1].children[0].children",
+      "$.chapters[0].tree_data.children[1].children[1].id",
+      "$.chapters[0].tree_data.children[1].children[1].name",
+      "$.chapters[0].tree_data.children[1].children[1].node_color",
+      "$.chapters[0].tree_data.children[1].children[1].icon",
+      "$.chapters[0].tree_data.children[1].children[1].tooltip_popover",
+      "$.chapters[0].tree_data.children[1].children[1].tooltip_popover.title",
+      "$.chapters[0].tree_data.children[1].children[1].tooltip_popover.content",
+      "$.chapters[0].tree_data.children[1].children[1].tooltip_popover.example",
+      "$.chapters[0].tree_data.children[1].children[1].children",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].d3_config",
+      "$.chapters[1].d3_config.node_color",
+      "$.chapters[1].d3_config.expanded_radius",
+      "$.chapters[1].d3_config.collapsed_radius",
+      "$.chapters[1].tree_data",
+      "$.chapters[1].tree_data.id",
+      "$.chapters[1].tree_data.name",
+      "$.chapters[1].tree_data.node_color",
+      "$.chapters[1].tree_data.icon",
+      "$.chapters[1].tree_data.tooltip_popover",
+      "$.chapters[1].tree_data.tooltip_popover.title",
+      "$.chapters[1].tree_data.tooltip_popover.content",
+      "$.chapters[1].tree_data.tooltip_popover.example",
+      "$.chapters[1].tree_data.children",
+      "$.chapters[1].tree_data.children[0].id",
+      "$.chapters[1].tree_data.children[0].name",
+      "$.chapters[1].tree_data.children[0].node_color",
+      "$.chapters[1].tree_data.children[0].icon",
+      "$.chapters[1].tree_data.children[0].tooltip_popover",
+      "$.chapters[1].tree_data.children[0].tooltip_popover.title",
+      "$.chapters[1].tree_data.children[0].tooltip_popover.content",
+      "$.chapters[1].tree_data.children[0].tooltip_popover.example",
+      "$.chapters[1].tree_data.children[0].children",
+      "$.chapters[1].tree_data.children[0].children[0].id",
+      "$.chapters[1].tree_data.children[0].children[0].name",
+      "$.chapters[1].tree_data.children[0].children[0].node_color",
+      "$.chapters[1].tree_data.children[0].children[0].icon",
+      "$.chapters[1].tree_data.children[0].children[0].tooltip_popover",
+      "$.chapters[1].tree_data.children[0].children[0].tooltip_popover.title",
+      "$.chapters[1].tree_data.children[0].children[0].tooltip_popover.content",
+      "$.chapters[1].tree_data.children[0].children[0].tooltip_popover.example",
+      "$.chapters[1].tree_data.children[0].children[0].children",
+      "$.chapters[1].tree_data.children[1].id",
+      "$.chapters[1].tree_data.children[1].name",
+      "$.chapters[1].tree_data.children[1].node_color",
+      "$.chapters[1].tree_data.children[1].icon",
+      "$.chapters[1].tree_data.children[1].tooltip_popover",
+      "$.chapters[1].tree_data.children[1].tooltip_popover.title",
+      "$.chapters[1].tree_data.children[1].tooltip_popover.content",
+      "$.chapters[1].tree_data.children[1].tooltip_popover.example",
+      "$.chapters[1].tree_data.children[1].children",
+      "$.chapters[1].tree_data.children[1].children[0].id",
+      "$.chapters[1].tree_data.children[1].children[0].name",
+      "$.chapters[1].tree_data.children[1].children[0].node_color",
+      "$.chapters[1].tree_data.children[1].children[0].icon",
+      "$.chapters[1].tree_data.children[1].children[0].tooltip_popover",
+      "$.chapters[1].tree_data.children[1].children[0].tooltip_popover.title",
+      "$.chapters[1].tree_data.children[1].children[0].tooltip_popover.content",
+      "$.chapters[1].tree_data.children[1].children[0].tooltip_popover.example",
+      "$.chapters[1].tree_data.children[1].children[0].children",
+      "$.chapters[1].tree_data.children[1].children[1].id",
+      "$.chapters[1].tree_data.children[1].children[1].name",
+      "$.chapters[1].tree_data.children[1].children[1].node_color",
+      "$.chapters[1].tree_data.children[1].children[1].icon",
+      "$.chapters[1].tree_data.children[1].children[1].tooltip_popover",
+      "$.chapters[1].tree_data.children[1].children[1].tooltip_popover.title",
+      "$.chapters[1].tree_data.children[1].children[1].tooltip_popover.content",
+      "$.chapters[1].tree_data.children[1].children[1].tooltip_popover.example",
+      "$.chapters[1].tree_data.children[1].children[1].children",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].d3_config",
+      "$.chapters[2].d3_config.node_color",
+      "$.chapters[2].d3_config.expanded_radius",
+      "$.chapters[2].d3_config.collapsed_radius",
+      "$.chapters[2].tree_data",
+      "$.chapters[2].tree_data.id",
+      "$.chapters[2].tree_data.name",
+      "$.chapters[2].tree_data.node_color",
+      "$.chapters[2].tree_data.icon",
+      "$.chapters[2].tree_data.tooltip_popover",
+      "$.chapters[2].tree_data.tooltip_popover.title",
+      "$.chapters[2].tree_data.tooltip_popover.content",
+      "$.chapters[2].tree_data.tooltip_popover.example",
+      "$.chapters[2].tree_data.children",
+      "$.chapters[2].tree_data.children[0].id",
+      "$.chapters[2].tree_data.children[0].name",
+      "$.chapters[2].tree_data.children[0].node_color",
+      "$.chapters[2].tree_data.children[0].icon",
+      "$.chapters[2].tree_data.children[0].tooltip_popover",
+      "$.chapters[2].tree_data.children[0].tooltip_popover.title",
+      "$.chapters[2].tree_data.children[0].tooltip_popover.content",
+      "$.chapters[2].tree_data.children[0].tooltip_popover.example",
+      "$.chapters[2].tree_data.children[0].children",
+      "$.chapters[2].tree_data.children[0].children[0].id",
+      "$.chapters[2].tree_data.children[0].children[0].name",
+      "$.chapters[2].tree_data.children[0].children[0].node_color",
+      "$.chapters[2].tree_data.children[0].children[0].icon",
+      "$.chapters[2].tree_data.children[0].children[0].tooltip_popover",
+      "$.chapters[2].tree_data.children[0].children[0].tooltip_popover.title",
+      "$.chapters[2].tree_data.children[0].children[0].tooltip_popover.content",
+      "$.chapters[2].tree_data.children[0].children[0].tooltip_popover.example",
+      "$.chapters[2].tree_data.children[0].children[0].children",
+      "$.chapters[2].tree_data.children[1].id",
+      "$.chapters[2].tree_data.children[1].name",
+      "$.chapters[2].tree_data.children[1].node_color",
+      "$.chapters[2].tree_data.children[1].icon",
+      "$.chapters[2].tree_data.children[1].tooltip_popover",
+      "$.chapters[2].tree_data.children[1].tooltip_popover.title",
+      "$.chapters[2].tree_data.children[1].tooltip_popover.content",
+      "$.chapters[2].tree_data.children[1].tooltip_popover.example",
+      "$.chapters[2].tree_data.children[1].children",
+      "$.chapters[2].tree_data.children[1].children[0].id",
+      "$.chapters[2].tree_data.children[1].children[0].name",
+      "$.chapters[2].tree_data.children[1].children[0].node_color",
+      "$.chapters[2].tree_data.children[1].children[0].icon",
+      "$.chapters[2].tree_data.children[1].children[0].tooltip_popover",
+      "$.chapters[2].tree_data.children[1].children[0].tooltip_popover.title",
+      "$.chapters[2].tree_data.children[1].children[0].tooltip_popover.content",
+      "$.chapters[2].tree_data.children[1].children[0].tooltip_popover.example",
+      "$.chapters[2].tree_data.children[1].children[0].children",
+      "$.chapters[2].tree_data.children[1].children[1].id",
+      "$.chapters[2].tree_data.children[1].children[1].name",
+      "$.chapters[2].tree_data.children[1].children[1].node_color",
+      "$.chapters[2].tree_data.children[1].children[1].icon",
+      "$.chapters[2].tree_data.children[1].children[1].tooltip_popover",
+      "$.chapters[2].tree_data.children[1].children[1].tooltip_popover.title",
+      "$.chapters[2].tree_data.children[1].children[1].tooltip_popover.content",
+      "$.chapters[2].tree_data.children[1].children[1].tooltip_popover.example",
+      "$.chapters[2].tree_data.children[1].children[1].children",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].d3_config",
+      "$.chapters[3].d3_config.node_color",
+      "$.chapters[3].d3_config.expanded_radius",
+      "$.chapters[3].d3_config.collapsed_radius",
+      "$.chapters[3].tree_data",
+      "$.chapters[3].tree_data.id",
+      "$.chapters[3].tree_data.name",
+      "$.chapters[3].tree_data.node_color",
+      "$.chapters[3].tree_data.icon",
+      "$.chapters[3].tree_data.tooltip_popover",
+      "$.chapters[3].tree_data.tooltip_popover.title",
+      "$.chapters[3].tree_data.tooltip_popover.content",
+      "$.chapters[3].tree_data.tooltip_popover.example",
+      "$.chapters[3].tree_data.children",
+      "$.chapters[3].tree_data.children[0].id",
+      "$.chapters[3].tree_data.children[0].name",
+      "$.chapters[3].tree_data.children[0].node_color",
+      "$.chapters[3].tree_data.children[0].icon",
+      "$.chapters[3].tree_data.children[0].tooltip_popover",
+      "$.chapters[3].tree_data.children[0].tooltip_popover.title",
+      "$.chapters[3].tree_data.children[0].tooltip_popover.content",
+      "$.chapters[3].tree_data.children[0].tooltip_popover.example",
+      "$.chapters[3].tree_data.children[0].children",
+      "$.chapters[3].tree_data.children[0].children[0].id",
+      "$.chapters[3].tree_data.children[0].children[0].name",
+      "$.chapters[3].tree_data.children[0].children[0].node_color",
+      "$.chapters[3].tree_data.children[0].children[0].icon",
+      "$.chapters[3].tree_data.children[0].children[0].tooltip_popover",
+      "$.chapters[3].tree_data.children[0].children[0].tooltip_popover.title",
+      "$.chapters[3].tree_data.children[0].children[0].tooltip_popover.content",
+      "$.chapters[3].tree_data.children[0].children[0].tooltip_popover.example",
+      "$.chapters[3].tree_data.children[0].children[0].children",
+      "$.chapters[3].tree_data.children[0].children[1].id",
+      "$.chapters[3].tree_data.children[0].children[1].name",
+      "$.chapters[3].tree_data.children[0].children[1].node_color",
+      "$.chapters[3].tree_data.children[0].children[1].icon",
+      "$.chapters[3].tree_data.children[0].children[1].tooltip_popover",
+      "$.chapters[3].tree_data.children[0].children[1].tooltip_popover.title",
+      "$.chapters[3].tree_data.children[0].children[1].tooltip_popover.content",
+      "$.chapters[3].tree_data.children[0].children[1].tooltip_popover.example",
+      "$.chapters[3].tree_data.children[0].children[1].children",
+      "$.chapters[3].tree_data.children[1].id",
+      "$.chapters[3].tree_data.children[1].name",
+      "$.chapters[3].tree_data.children[1].node_color",
+      "$.chapters[3].tree_data.children[1].icon",
+      "$.chapters[3].tree_data.children[1].tooltip_popover",
+      "$.chapters[3].tree_data.children[1].tooltip_popover.title",
+      "$.chapters[3].tree_data.children[1].tooltip_popover.content",
+      "$.chapters[3].tree_data.children[1].tooltip_popover.example",
+      "$.chapters[3].tree_data.children[1].children",
+      "$.chapters[3].tree_data.children[1].children[0].id",
+      "$.chapters[3].tree_data.children[1].children[0].name",
+      "$.chapters[3].tree_data.children[1].children[0].node_color",
+      "$.chapters[3].tree_data.children[1].children[0].icon",
+      "$.chapters[3].tree_data.children[1].children[0].tooltip_popover",
+      "$.chapters[3].tree_data.children[1].children[0].tooltip_popover.title",
+      "$.chapters[3].tree_data.children[1].children[0].tooltip_popover.content",
+      "$.chapters[3].tree_data.children[1].children[0].tooltip_popover.example",
+      "$.chapters[3].tree_data.children[1].children[0].children",
+      "$.chapters[3].tree_data.children[1].children[1].id",
+      "$.chapters[3].tree_data.children[1].children[1].name",
+      "$.chapters[3].tree_data.children[1].children[1].node_color",
+      "$.chapters[3].tree_data.children[1].children[1].icon",
+      "$.chapters[3].tree_data.children[1].children[1].tooltip_popover",
+      "$.chapters[3].tree_data.children[1].children[1].tooltip_popover.title",
+      "$.chapters[3].tree_data.children[1].children[1].tooltip_popover.content",
+      "$.chapters[3].tree_data.children[1].children[1].tooltip_popover.example",
+      "$.chapters[3].tree_data.children[1].children[1].children",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].d3_config",
+      "$.chapters[4].d3_config.node_color",
+      "$.chapters[4].d3_config.expanded_radius",
+      "$.chapters[4].d3_config.collapsed_radius",
+      "$.chapters[4].tree_data",
+      "$.chapters[4].tree_data.id",
+      "$.chapters[4].tree_data.name",
+      "$.chapters[4].tree_data.node_color",
+      "$.chapters[4].tree_data.icon",
+      "$.chapters[4].tree_data.tooltip_popover",
+      "$.chapters[4].tree_data.tooltip_popover.title",
+      "$.chapters[4].tree_data.tooltip_popover.content",
+      "$.chapters[4].tree_data.tooltip_popover.example",
+      "$.chapters[4].tree_data.children",
+      "$.chapters[4].tree_data.children[0].id",
+      "$.chapters[4].tree_data.children[0].name",
+      "$.chapters[4].tree_data.children[0].node_color",
+      "$.chapters[4].tree_data.children[0].icon",
+      "$.chapters[4].tree_data.children[0].tooltip_popover",
+      "$.chapters[4].tree_data.children[0].tooltip_popover.title",
+      "$.chapters[4].tree_data.children[0].tooltip_popover.content",
+      "$.chapters[4].tree_data.children[0].tooltip_popover.example",
+      "$.chapters[4].tree_data.children[0].children",
+      "$.chapters[4].tree_data.children[0].children[0].id",
+      "$.chapters[4].tree_data.children[0].children[0].name",
+      "$.chapters[4].tree_data.children[0].children[0].node_color",
+      "$.chapters[4].tree_data.children[0].children[0].icon",
+      "$.chapters[4].tree_data.children[0].children[0].tooltip_popover",
+      "$.chapters[4].tree_data.children[0].children[0].tooltip_popover.title",
+      "$.chapters[4].tree_data.children[0].children[0].tooltip_popover.content",
+      "$.chapters[4].tree_data.children[0].children[0].tooltip_popover.example",
+      "$.chapters[4].tree_data.children[0].children[0].children",
+      "$.chapters[4].tree_data.children[1].id",
+      "$.chapters[4].tree_data.children[1].name",
+      "$.chapters[4].tree_data.children[1].node_color",
+      "$.chapters[4].tree_data.children[1].icon",
+      "$.chapters[4].tree_data.children[1].tooltip_popover",
+      "$.chapters[4].tree_data.children[1].tooltip_popover.title",
+      "$.chapters[4].tree_data.children[1].tooltip_popover.content",
+      "$.chapters[4].tree_data.children[1].tooltip_popover.example",
+      "$.chapters[4].tree_data.children[1].children",
+      "$.chapters[4].tree_data.children[1].children[0].id",
+      "$.chapters[4].tree_data.children[1].children[0].name",
+      "$.chapters[4].tree_data.children[1].children[0].node_color",
+      "$.chapters[4].tree_data.children[1].children[0].icon",
+      "$.chapters[4].tree_data.children[1].children[0].tooltip_popover",
+      "$.chapters[4].tree_data.children[1].children[0].tooltip_popover.title",
+      "$.chapters[4].tree_data.children[1].children[0].tooltip_popover.content",
+      "$.chapters[4].tree_data.children[1].children[0].tooltip_popover.example",
+      "$.chapters[4].tree_data.children[1].children[0].children",
+      "$.chapters[4].tree_data.children[1].children[1].id",
+      "$.chapters[4].tree_data.children[1].children[1].name",
+      "$.chapters[4].tree_data.children[1].children[1].node_color",
+      "$.chapters[4].tree_data.children[1].children[1].icon",
+      "$.chapters[4].tree_data.children[1].children[1].tooltip_popover",
+      "$.chapters[4].tree_data.children[1].children[1].tooltip_popover.title",
+      "$.chapters[4].tree_data.children[1].children[1].tooltip_popover.content",
+      "$.chapters[4].tree_data.children[1].children[1].tooltip_popover.example",
+      "$.chapters[4].tree_data.children[1].children[1].children",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].d3_config",
+      "$.chapters[5].d3_config.node_color",
+      "$.chapters[5].d3_config.expanded_radius",
+      "$.chapters[5].d3_config.collapsed_radius",
+      "$.chapters[5].tree_data",
+      "$.chapters[5].tree_data.id",
+      "$.chapters[5].tree_data.name",
+      "$.chapters[5].tree_data.node_color",
+      "$.chapters[5].tree_data.icon",
+      "$.chapters[5].tree_data.tooltip_popover",
+      "$.chapters[5].tree_data.tooltip_popover.title",
+      "$.chapters[5].tree_data.tooltip_popover.content",
+      "$.chapters[5].tree_data.tooltip_popover.example",
+      "$.chapters[5].tree_data.children",
+      "$.chapters[5].tree_data.children[0].id",
+      "$.chapters[5].tree_data.children[0].name",
+      "$.chapters[5].tree_data.children[0].node_color",
+      "$.chapters[5].tree_data.children[0].icon",
+      "$.chapters[5].tree_data.children[0].tooltip_popover",
+      "$.chapters[5].tree_data.children[0].tooltip_popover.title",
+      "$.chapters[5].tree_data.children[0].tooltip_popover.content",
+      "$.chapters[5].tree_data.children[0].tooltip_popover.example",
+      "$.chapters[5].tree_data.children[0].children",
+      "$.chapters[5].tree_data.children[0].children[0].id",
+      "$.chapters[5].tree_data.children[0].children[0].name",
+      "$.chapters[5].tree_data.children[0].children[0].node_color",
+      "$.chapters[5].tree_data.children[0].children[0].icon",
+      "$.chapters[5].tree_data.children[0].children[0].tooltip_popover",
+      "$.chapters[5].tree_data.children[0].children[0].tooltip_popover.title",
+      "$.chapters[5].tree_data.children[0].children[0].tooltip_popover.content",
+      "$.chapters[5].tree_data.children[0].children[0].tooltip_popover.example",
+      "$.chapters[5].tree_data.children[0].children[0].children",
+      "$.chapters[5].tree_data.children[1].id",
+      "$.chapters[5].tree_data.children[1].name",
+      "$.chapters[5].tree_data.children[1].node_color",
+      "$.chapters[5].tree_data.children[1].icon",
+      "$.chapters[5].tree_data.children[1].tooltip_popover",
+      "$.chapters[5].tree_data.children[1].tooltip_popover.title",
+      "$.chapters[5].tree_data.children[1].tooltip_popover.content",
+      "$.chapters[5].tree_data.children[1].tooltip_popover.example",
+      "$.chapters[5].tree_data.children[1].children",
+      "$.chapters[5].tree_data.children[1].children[0].id",
+      "$.chapters[5].tree_data.children[1].children[0].name",
+      "$.chapters[5].tree_data.children[1].children[0].node_color",
+      "$.chapters[5].tree_data.children[1].children[0].icon",
+      "$.chapters[5].tree_data.children[1].children[0].tooltip_popover",
+      "$.chapters[5].tree_data.children[1].children[0].tooltip_popover.title",
+      "$.chapters[5].tree_data.children[1].children[0].tooltip_popover.content",
+      "$.chapters[5].tree_data.children[1].children[0].tooltip_popover.example",
+      "$.chapters[5].tree_data.children[1].children[0].children",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].d3_config",
+      "$.chapters[6].d3_config.node_color",
+      "$.chapters[6].d3_config.expanded_radius",
+      "$.chapters[6].d3_config.collapsed_radius",
+      "$.chapters[6].tree_data",
+      "$.chapters[6].tree_data.id",
+      "$.chapters[6].tree_data.name",
+      "$.chapters[6].tree_data.node_color",
+      "$.chapters[6].tree_data.icon",
+      "$.chapters[6].tree_data.tooltip_popover",
+      "$.chapters[6].tree_data.tooltip_popover.title",
+      "$.chapters[6].tree_data.tooltip_popover.content",
+      "$.chapters[6].tree_data.tooltip_popover.example",
+      "$.chapters[6].tree_data.children",
+      "$.chapters[6].tree_data.children[0].id",
+      "$.chapters[6].tree_data.children[0].name",
+      "$.chapters[6].tree_data.children[0].node_color",
+      "$.chapters[6].tree_data.children[0].icon",
+      "$.chapters[6].tree_data.children[0].tooltip_popover",
+      "$.chapters[6].tree_data.children[0].tooltip_popover.title",
+      "$.chapters[6].tree_data.children[0].tooltip_popover.content",
+      "$.chapters[6].tree_data.children[0].tooltip_popover.example",
+      "$.chapters[6].tree_data.children[0].children",
+      "$.chapters[6].tree_data.children[0].children[0].id",
+      "$.chapters[6].tree_data.children[0].children[0].name",
+      "$.chapters[6].tree_data.children[0].children[0].node_color",
+      "$.chapters[6].tree_data.children[0].children[0].icon",
+      "$.chapters[6].tree_data.children[0].children[0].tooltip_popover",
+      "$.chapters[6].tree_data.children[0].children[0].tooltip_popover.title",
+      "$.chapters[6].tree_data.children[0].children[0].tooltip_popover.content",
+      "$.chapters[6].tree_data.children[0].children[0].tooltip_popover.example",
+      "$.chapters[6].tree_data.children[0].children[0].children",
+      "$.chapters[6].tree_data.children[1].id",
+      "$.chapters[6].tree_data.children[1].name",
+      "$.chapters[6].tree_data.children[1].node_color",
+      "$.chapters[6].tree_data.children[1].icon",
+      "$.chapters[6].tree_data.children[1].tooltip_popover",
+      "$.chapters[6].tree_data.children[1].tooltip_popover.title",
+      "$.chapters[6].tree_data.children[1].tooltip_popover.content",
+      "$.chapters[6].tree_data.children[1].tooltip_popover.example",
+      "$.chapters[6].tree_data.children[1].children",
+      "$.chapters[6].tree_data.children[1].children[0].id",
+      "$.chapters[6].tree_data.children[1].children[0].name",
+      "$.chapters[6].tree_data.children[1].children[0].node_color",
+      "$.chapters[6].tree_data.children[1].children[0].icon",
+      "$.chapters[6].tree_data.children[1].children[0].tooltip_popover",
+      "$.chapters[6].tree_data.children[1].children[0].tooltip_popover.title",
+      "$.chapters[6].tree_data.children[1].children[0].tooltip_popover.content",
+      "$.chapters[6].tree_data.children[1].children[0].tooltip_popover.example",
+      "$.chapters[6].tree_data.children[1].children[0].children"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
       {
-        "id": "mm_node_ch1_b0",
-        "name": "1.1 Perfect Squares and Square Roots",
-        "node_color": "#38bdf8",
-        "icon": "branch_theme",
-        "tooltip_popover": {
-          "title": "1.1 Perfect Squares and Square Roots",
-          "content": "Theme section under A Square and A Cube",
-          "example": "Main section overview"
-        },
-        "children": [
-          {
-            "id": "mm_node_ch1_b0_sb0",
-            "name": "Definition and Geometric Representation of Perfect Squares",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
-            "tooltip_popover": {
-              "title": "Definition and Geometric Representation of Perfect Squares",
-              "content": "A perfect square is formed by multiplying a natural number by itself: n * n = n^2. The area of a square with side length x units is x^2 square units. Perfect squares always possess an odd count of total factors.",
-              "example": "Queen Ratnamanjuri's Will Puzzle: Lockers remain open if and only if their locker numbers are perfect squares because they have an odd number of factors."
-            },
-            "children": []
-          },
-          {
-            "id": "mm_node_ch1_b0_sb1",
-            "name": "Ending Digits and Odd Sum Patterns of Squares",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
-            "tooltip_popover": {
-              "title": "Ending Digits and Odd Sum Patterns of Squares",
-              "content": "The unit digits of all perfect squares can only be 0, 1, 4, 5, 6, or 9. Numbers ending in 2, 3, 7, or 8 can never be perfect squares. The sum of the first n consecutive odd natural numbers starting from 1 is equal to n^2.",
-              "example": "1 + 3 + 5 + 7 + 9 = 25 = 5^2"
-            },
-            "children": []
-          }
-        ]
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "A Square and A Cube",
+        "source_number_field": "chapter_number",
+        "source_number": 1
       },
       {
-        "id": "mm_node_ch1_b1",
-        "name": "1.2 Cubic Numbers and Cube Roots",
-        "node_color": "#38bdf8",
-        "icon": "branch_theme",
-        "tooltip_popover": {
-          "title": "1.2 Cubic Numbers and Cube Roots",
-          "content": "Theme section under A Square and A Cube",
-          "example": "Main section overview"
+        "source_path": "$.chapters[0].tree_data",
+        "source_title_field": "name",
+        "source_title": "A Square and A Cube",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "A Square and A Cube",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[0]",
+        "source_title_field": "name",
+        "source_title": "1.1 Perfect Squares and Square Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "1.1 Perfect Squares and Square Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[0].children[0]",
+        "source_title_field": "name",
+        "source_title": "Definition and Geometric Representation of Perfect Squares",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Definition and Geometric Representation of Perfect Squares",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[0].children[1]",
+        "source_title_field": "name",
+        "source_title": "Ending Digits and Odd Sum Patterns of Squares",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[0].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Ending Digits and Odd Sum Patterns of Squares",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[1]",
+        "source_title_field": "name",
+        "source_title": "1.2 Cubic Numbers and Cube Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "1.2 Cubic Numbers and Cube Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[1].children[0]",
+        "source_title_field": "name",
+        "source_title": "Definition and Volume Scale of Perfect Cubes",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Definition and Volume Scale of Perfect Cubes",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[1].children[1]",
+        "source_title_field": "name",
+        "source_title": "Prime Factorisation Method for Square Roots and Cube Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].tree_data.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Prime Factorisation Method for Square Roots and Cube Roots",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Power Play",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].tree_data",
+        "source_title_field": "name",
+        "source_title": "Power Play",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Power Play",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[0]",
+        "source_title_field": "name",
+        "source_title": "2.1 Multiplicative Growth and Exponents",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "2.1 Multiplicative Growth and Exponents",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[0].children[0]",
+        "source_title_field": "name",
+        "source_title": "Repeated Doubling and Exponential Notation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Repeated Doubling and Exponential Notation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[1]",
+        "source_title_field": "name",
+        "source_title": "2.2 Laws of Exponents and Negative Powers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "2.2 Laws of Exponents and Negative Powers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[1].children[0]",
+        "source_title_field": "name",
+        "source_title": "Fundamental Laws of Exponents",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Fundamental Laws of Exponents",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[1].children[1]",
+        "source_title_field": "name",
+        "source_title": "Scientific Notation and Practical Applications",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].tree_data.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Scientific Notation and Practical Applications",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "A Story of Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].tree_data",
+        "source_title_field": "name",
+        "source_title": "A Story of Numbers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "A Story of Numbers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[0]",
+        "source_title_field": "name",
+        "source_title": "3.1 Counting and Landmark Numbers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "3.1 Counting and Landmark Numbers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[0].children[0]",
+        "source_title_field": "name",
+        "source_title": "Evolution of Counting and Landmark Symbols",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Evolution of Counting and Landmark Symbols",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[1]",
+        "source_title_field": "name",
+        "source_title": "3.2 Base-n and Place Value Systems",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "3.2 Base-n and Place Value Systems",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[1].children[0]",
+        "source_title_field": "name",
+        "source_title": "Comparison of Ancient Base Systems",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Comparison of Ancient Base Systems",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[1].children[1]",
+        "source_title_field": "name",
+        "source_title": "The Hindu Decimal Place Value Revolution and Zero",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].tree_data.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "The Hindu Decimal Place Value Revolution and Zero",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Quadrilaterals",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].tree_data",
+        "source_title_field": "name",
+        "source_title": "Quadrilaterals",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Quadrilaterals",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[0]",
+        "source_title_field": "name",
+        "source_title": "4.1 Angle Sum Property and Rectangles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "4.1 Angle Sum Property and Rectangles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[0].children[0]",
+        "source_title_field": "name",
+        "source_title": "Interior Angle Sum of Quadrilaterals",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Interior Angle Sum of Quadrilaterals",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[0].children[1]",
+        "source_title_field": "name",
+        "source_title": "Properties of Rectangles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[0].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Properties of Rectangles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[1]",
+        "source_title_field": "name",
+        "source_title": "4.2 Parallelograms, Rhombuses, and Squares",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "4.2 Parallelograms, Rhombuses, and Squares",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[1].children[0]",
+        "source_title_field": "name",
+        "source_title": "Parallelograms and Triangle Congruence Proofs",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Parallelograms and Triangle Congruence Proofs",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[1].children[1]",
+        "source_title_field": "name",
+        "source_title": "Rhombuses, Squares, and Kites",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].tree_data.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Rhombuses, Squares, and Kites",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Number Play",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].tree_data",
+        "source_title_field": "name",
+        "source_title": "Number Play",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Number Play",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[0]",
+        "source_title_field": "name",
+        "source_title": "5.1 Parity and Sums of Numbers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "5.1 Parity and Sums of Numbers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[0].children[0]",
+        "source_title_field": "name",
+        "source_title": "Parity Algebra and Operations",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Parity Algebra and Operations",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[1]",
+        "source_title_field": "name",
+        "source_title": "5.2 Generalised Form and Divisibility Proofs",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "5.2 Generalised Form and Divisibility Proofs",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[1].children[0]",
+        "source_title_field": "name",
+        "source_title": "Expanded Place Value Algebraic Notation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Expanded Place Value Algebraic Notation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[1].children[1]",
+        "source_title_field": "name",
+        "source_title": "Proofs for Standard Divisibility Rules",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].tree_data.children[1].children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Proofs for Standard Divisibility Rules",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "We Distribute, Yet Things Multiply",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].tree_data",
+        "source_title_field": "name",
+        "source_title": "We Distribute, Yet Things Multiply",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "We Distribute, Yet Things Multiply",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[0]",
+        "source_title_field": "name",
+        "source_title": "6.1 Distributive Property and Expansion",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "6.1 Distributive Property and Expansion",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[0].children[0]",
+        "source_title_field": "name",
+        "source_title": "Algebraic Expansion via Distributive Law",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Algebraic Expansion via Distributive Law",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[1]",
+        "source_title_field": "name",
+        "source_title": "6.2 Standard Algebraic Identities",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "6.2 Standard Algebraic Identities",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[1].children[0]",
+        "source_title_field": "name",
+        "source_title": "Core Algebraic Identities",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].tree_data.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Core Algebraic Identities",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Proportional Reasoning-1",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].tree_data",
+        "source_title_field": "name",
+        "source_title": "Proportional Reasoning-1",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Proportional Reasoning-1",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[0]",
+        "source_title_field": "name",
+        "source_title": "7.1 Ratios and Scaling Factors",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "7.1 Ratios and Scaling Factors",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[0].children[0]",
+        "source_title_field": "name",
+        "source_title": "Concept of Ratio and Equivalent Multipliers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[0].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Concept of Ratio and Equivalent Multipliers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[1]",
+        "source_title_field": "name",
+        "source_title": "7.2 Solving Proportions and Unit Rates",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[1].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "7.2 Solving Proportions and Unit Rates",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[1].children[0]",
+        "source_title_field": "name",
+        "source_title": "Proportion Laws and Unit Rate Applications",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].tree_data.children[1].children[0].tooltip_popover",
+        "source_title_field": "title",
+        "source_title": "Proportion Laws and Unit Rate Applications",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 91,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Class 8 Mathematics (Ganita Prakash)",
+    "grade_level": "Grade 8",
+    "curriculum_standard": "NCERT / CBSE",
+    "resource_type": "Interactive D3.js Zoomable Mindmap Hierarchy",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "A Square and A Cube",
+        "d3_config": {
+          "node_color": "#38bdf8",
+          "expanded_radius": 12,
+          "collapsed_radius": 8
         },
-        "children": [
-          {
-            "id": "mm_node_ch1_b1_sb0",
-            "name": "Definition and Volume Scale of Perfect Cubes",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
-            "tooltip_popover": {
-              "title": "Definition and Volume Scale of Perfect Cubes",
-              "content": "A cubic number or perfect cube is obtained by multiplying a natural number by itself three times: n * n * n = n^3. A 3D cube of side 1 cm forms larger unit-cube assemblies of side 2 cm (8 cubes), side 3 cm (27 cubes), etc.",
-              "example": "Unit Cubes Assembly: 3x3x3 block composed of 27 unit cubes."
-            },
-            "children": []
+        "tree_data": {
+          "id": "mm_node_ch1_root",
+          "name": "A Square and A Cube",
+          "node_color": "#0ea5e9",
+          "icon": "folder_root",
+          "tooltip_popover": {
+            "title": "A Square and A Cube",
+            "content": "Master topic for Chapter 1",
+            "example": "Central node of learning map"
           },
-          {
-            "id": "mm_node_ch1_b1_sb1",
-            "name": "Prime Factorisation Method for Square Roots and Cube Roots",
-            "node_color": "#818cf8",
-            "icon": "sub_concept",
-            "tooltip_popover": {
-              "title": "Prime Factorisation Method for Square Roots and Cube Roots",
-              "content": "Square roots require grouping prime factors into pairs of identical primes. Cube roots require grouping prime factors into triplets of identical primes. To convert a non-cube into a perfect cube, multiply or divide by missing factor powers.",
-              "example": "Activity ACT-1.1: Finding cube root of 27000 via prime factorisation -> 27000 = (2*2*2)*(3*3*3)*(5*5*5) -> Cube Root = 2*3*5 = 30."
+          "children": [
+            {
+              "id": "mm_node_ch1_b0",
+              "name": "1.1 Perfect Squares and Square Roots",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "1.1 Perfect Squares and Square Roots",
+                "content": "Theme section under A Square and A Cube",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch1_b0_sb0",
+                  "name": "Definition and Geometric Representation of Perfect Squares",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Definition and Geometric Representation of Perfect Squares",
+                    "content": "A perfect square is formed by multiplying a natural number by itself: n * n = n^2. The area of a square with side length x units is x^2 square units. Perfect squares always possess an odd count of total factors.",
+                    "example": "Queen Ratnamanjuri's Will Puzzle: Lockers remain open if and only if their locker numbers are perfect squares because they have an odd number of factors."
+                  },
+                  "children": []
+                },
+                {
+                  "id": "mm_node_ch1_b0_sb1",
+                  "name": "Ending Digits and Odd Sum Patterns of Squares",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Ending Digits and Odd Sum Patterns of Squares",
+                    "content": "The unit digits of all perfect squares can only be 0, 1, 4, 5, 6, or 9. Numbers ending in 2, 3, 7, or 8 can never be perfect squares. The sum of the first n consecutive odd natural numbers starting from 1 is equal to n^2.",
+                    "example": "1 + 3 + 5 + 7 + 9 = 25 = 5^2"
+                  },
+                  "children": []
+                }
+              ]
             },
-            "children": []
-          }
-        ]
+            {
+              "id": "mm_node_ch1_b1",
+              "name": "1.2 Cubic Numbers and Cube Roots",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "1.2 Cubic Numbers and Cube Roots",
+                "content": "Theme section under A Square and A Cube",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch1_b1_sb0",
+                  "name": "Definition and Volume Scale of Perfect Cubes",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Definition and Volume Scale of Perfect Cubes",
+                    "content": "A cubic number or perfect cube is obtained by multiplying a natural number by itself three times: n * n * n = n^3. A 3D cube of side 1 cm forms larger unit-cube assemblies of side 2 cm (8 cubes), side 3 cm (27 cubes), etc.",
+                    "example": "Unit Cubes Assembly: 3x3x3 block composed of 27 unit cubes."
+                  },
+                  "children": []
+                },
+                {
+                  "id": "mm_node_ch1_b1_sb1",
+                  "name": "Prime Factorisation Method for Square Roots and Cube Roots",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Prime Factorisation Method for Square Roots and Cube Roots",
+                    "content": "Square roots require grouping prime factors into pairs of identical primes. Cube roots require grouping prime factors into triplets of identical primes. To convert a non-cube into a perfect cube, multiply or divide by missing factor powers.",
+                    "example": "Activity ACT-1.1: Finding cube root of 27000 via prime factorisation -> 27000 = (2*2*2)*(3*3*3)*(5*5*5) -> Cube Root = 2*3*5 = 30."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Power Play",
+        "d3_config": {
+          "node_color": "#38bdf8",
+          "expanded_radius": 12,
+          "collapsed_radius": 8
+        },
+        "tree_data": {
+          "id": "mm_node_ch2_root",
+          "name": "Power Play",
+          "node_color": "#0ea5e9",
+          "icon": "folder_root",
+          "tooltip_popover": {
+            "title": "Power Play",
+            "content": "Master topic for Chapter 2",
+            "example": "Central node of learning map"
+          },
+          "children": [
+            {
+              "id": "mm_node_ch2_b0",
+              "name": "2.1 Multiplicative Growth and Exponents",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "2.1 Multiplicative Growth and Exponents",
+                "content": "Theme section under Power Play",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch2_b0_sb0",
+                  "name": "Repeated Doubling and Exponential Notation",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Repeated Doubling and Exponential Notation",
+                    "content": "Multiplicative growth multiplies quantities repeatedly by a constant factor. In exponential expression a^n, 'a' represents the base and 'n' represents the exponent/power.",
+                    "example": "Magical Pond Lotus Problem: Lotuses double daily and cover pond on Day 30 -> Pond was half covered on Day 29."
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "mm_node_ch2_b1",
+              "name": "2.2 Laws of Exponents and Negative Powers",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "2.2 Laws of Exponents and Negative Powers",
+                "content": "Theme section under Power Play",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch2_b1_sb0",
+                  "name": "Fundamental Laws of Exponents",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Fundamental Laws of Exponents",
+                    "content": "Product Law: x^a * x^b = x^(a + b) Quotient Law: x^a / x^b = x^(a - b) Power of a Power Law: (x^a)^b = x^(a * b) Zero Exponent Law: x^0 = 1 for any non-zero x (derived from x^a / x^a = x^(a-a) = 1). Negative Exponent Law: x^(-n) = 1 / (x^n)",
+                    "example": "Simplification: (5^7 / 5^4) * 5^-2 = 5^3 * 5^-2 = 5^(3-2) = 5."
+                  },
+                  "children": []
+                },
+                {
+                  "id": "mm_node_ch2_b1_sb1",
+                  "name": "Scientific Notation and Practical Applications",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Scientific Notation and Practical Applications",
+                    "content": "Powers of 10 enable compact representation of vast and tiny quantities. Scientific notation represents numbers as m * 10^n where 1 <= m < 10.",
+                    "example": "Bacteria growth doubling every 20 mins: 100 bacteria after 2 hours (6 doubling periods) = 100 * 2^6 = 6400."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "A Story of Numbers",
+        "d3_config": {
+          "node_color": "#38bdf8",
+          "expanded_radius": 12,
+          "collapsed_radius": 8
+        },
+        "tree_data": {
+          "id": "mm_node_ch3_root",
+          "name": "A Story of Numbers",
+          "node_color": "#0ea5e9",
+          "icon": "folder_root",
+          "tooltip_popover": {
+            "title": "A Story of Numbers",
+            "content": "Master topic for Chapter 3",
+            "example": "Central node of learning map"
+          },
+          "children": [
+            {
+              "id": "mm_node_ch3_b0",
+              "name": "3.1 Counting and Landmark Numbers",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "3.1 Counting and Landmark Numbers",
+                "content": "Theme section under A Story of Numbers",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch3_b0_sb0",
+                  "name": "Evolution of Counting and Landmark Symbols",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Evolution of Counting and Landmark Symbols",
+                    "content": "Primitive counting relied on one-to-one matching with fingers, pebbles, and body parts. Civilizations developed landmark numbers to group large quantities without drawing repetitive tallies.",
+                    "example": "Roman Numeral System: Landmark symbols I (1), V (5), X (10), L (50), C (100), D (500), M (1000)."
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "mm_node_ch3_b1",
+              "name": "3.2 Base-n and Place Value Systems",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "3.2 Base-n and Place Value Systems",
+                "content": "Theme section under A Story of Numbers",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch3_b1_sb0",
+                  "name": "Comparison of Ancient Base Systems",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Comparison of Ancient Base Systems",
+                    "content": "Base-n systems select powers of n (n^0, n^1, n^2...) as uniform landmark values. Mesopotamian System: Base 60 (sexagesimal system), preserved today in 60-second minutes and 360-degree circles. Mayan System: Base 20 (vigesimal system). Hindu-Arabic System: Base 10 (decimal system) using positional place value.",
+                    "example": "Base-5 Construction Activity ACT-3.1: Grouping 5 ones into a 5-counter, 5 five-counters into a 25-counter. 23 in Base 10 = (43)_5."
+                  },
+                  "children": []
+                },
+                {
+                  "id": "mm_node_ch3_b1_sb1",
+                  "name": "The Hindu Decimal Place Value Revolution and Zero",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "The Hindu Decimal Place Value Revolution and Zero",
+                    "content": "The Hindu system introduced positional place value where a digit's position determines its magnitude. The symbol '0' served a dual purpose: a placeholder for empty positions and a standalone number. Eliminated the need for infinite new landmark symbols and streamlined arithmetic algorithms.",
+                    "example": "Efficiency comparison: In 375, '3' represents 3*10^2, whereas Roman numerals required cumbersome additive/subtractive notation (CCCLXXV)."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Quadrilaterals",
+        "d3_config": {
+          "node_color": "#38bdf8",
+          "expanded_radius": 12,
+          "collapsed_radius": 8
+        },
+        "tree_data": {
+          "id": "mm_node_ch4_root",
+          "name": "Quadrilaterals",
+          "node_color": "#0ea5e9",
+          "icon": "folder_root",
+          "tooltip_popover": {
+            "title": "Quadrilaterals",
+            "content": "Master topic for Chapter 4",
+            "example": "Central node of learning map"
+          },
+          "children": [
+            {
+              "id": "mm_node_ch4_b0",
+              "name": "4.1 Angle Sum Property and Rectangles",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "4.1 Angle Sum Property and Rectangles",
+                "content": "Theme section under Quadrilaterals",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch4_b0_sb0",
+                  "name": "Interior Angle Sum of Quadrilaterals",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Interior Angle Sum of Quadrilaterals",
+                    "content": "Any closed 4-sided polygon (quadrilateral) divides into 2 interior triangles. Interior angle sum = 2 * 180 = 360 degrees: Angle A + Angle B + Angle C + Angle D = 360°.",
+                    "example": "If three interior angles of a quadrilateral are 90°, 80°, and 100°, the fourth angle equals 360° - 270° = 90°."
+                  },
+                  "children": []
+                },
+                {
+                  "id": "mm_node_ch4_b0_sb1",
+                  "name": "Properties of Rectangles",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Properties of Rectangles",
+                    "content": "A rectangle is a quadrilateral with four equal 90° interior angles and opposite sides equal. Diagonals of a rectangle are equal in length and bisect each other.",
+                    "example": "Wooden Strip Rectangle Frame: Joining two equal wooden strips at their midpoints forms the diagonals of a rectangle regardless of intersection angle."
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "mm_node_ch4_b1",
+              "name": "4.2 Parallelograms, Rhombuses, and Squares",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "4.2 Parallelograms, Rhombuses, and Squares",
+                "content": "Theme section under Quadrilaterals",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch4_b1_sb0",
+                  "name": "Parallelograms and Triangle Congruence Proofs",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Parallelograms and Triangle Congruence Proofs",
+                    "content": "A parallelogram is a quadrilateral with both pairs of opposite sides parallel. Opposite sides are equal and opposite angles are equal. Adjacent angles are supplementary (add up to 180°).",
+                    "example": "Congruence Proof: Diagonal AC splits parallelogram ABCD into triangles ABC and CDA. ASA congruence proves opposite sides AB = CD and BC = DA."
+                  },
+                  "children": []
+                },
+                {
+                  "id": "mm_node_ch4_b1_sb1",
+                  "name": "Rhombuses, Squares, and Kites",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Rhombuses, Squares, and Kites",
+                    "content": "Rhombus: Parallelogram with 4 equal sides; diagonals bisect each other at right angles (90°). Square: Combines all properties of a rectangle and a rhombus (4 equal sides, four 90° angles, equal perpendicular bisecting diagonals). Kite: Quadrilateral with two distinct pairs of equal adjacent sides and perpendicular diagonals.",
+                    "example": "Construction Activity ACT-4.1: Constructing a square with 6 cm diagonal using perpendicular bisectors."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Number Play",
+        "d3_config": {
+          "node_color": "#38bdf8",
+          "expanded_radius": 12,
+          "collapsed_radius": 8
+        },
+        "tree_data": {
+          "id": "mm_node_ch5_root",
+          "name": "Number Play",
+          "node_color": "#0ea5e9",
+          "icon": "folder_root",
+          "tooltip_popover": {
+            "title": "Number Play",
+            "content": "Master topic for Chapter 5",
+            "example": "Central node of learning map"
+          },
+          "children": [
+            {
+              "id": "mm_node_ch5_b0",
+              "name": "5.1 Parity and Sums of Numbers",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "5.1 Parity and Sums of Numbers",
+                "content": "Theme section under Number Play",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch5_b0_sb0",
+                  "name": "Parity Algebra and Operations",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Parity Algebra and Operations",
+                    "content": "Parity defines whether an integer is even (2k) or odd (2k + 1). Addition Rules: Even + Even = Even, Odd + Odd = Even, Even + Odd = Odd. Multiplication Rules: Even * Even = Even, Odd * Odd = Odd, Even * Odd = Even.",
+                    "example": "Proof of sum of two odds: (2m + 1) + (2n + 1) = 2(m + n + 1), which is even."
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "mm_node_ch5_b1",
+              "name": "5.2 Generalised Form and Divisibility Proofs",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "5.2 Generalised Form and Divisibility Proofs",
+                "content": "Theme section under Number Play",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch5_b1_sb0",
+                  "name": "Expanded Place Value Algebraic Notation",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Expanded Place Value Algebraic Notation",
+                    "content": "A 2-digit number 'ab' is expressed as 10a + b. A 3-digit number 'abc' is expressed as 100a + 10b + c. Reversing digits: (10a + b) - (10b + a) = 9(a - b), proving differences are always multiples of 9. 3-digit reversal difference: (100a + 10b + c) - (100c + 10b + a) = 99(a - c), always divisible by 99.",
+                    "example": "Reversing Digits Puzzle ACT-5.1: Proving algebraic divisibility by 9."
+                  },
+                  "children": []
+                },
+                {
+                  "id": "mm_node_ch5_b1_sb1",
+                  "name": "Proofs for Standard Divisibility Rules",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Proofs for Standard Divisibility Rules",
+                    "content": "Divisibility by 2: 10a + b = 2(5a) + b -> depends solely on unit digit b being even. Divisibility by 4: 100a + (10b + c) = 4(25a) + (10b + c) -> depends on last two digits (10b + c). Divisibility by 3/9: 100a + 10b + c = 99a + 9b + (a + b + c) -> depends on digit sum (a + b + c). Divisibility by 11: Alternating sum difference of odd-place and even-place digits is 0 or multiple of 11.",
+                    "example": "214365 digit sum = 21 (not divisible by 9, so number is not divisible by 9)."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "We Distribute, Yet Things Multiply",
+        "d3_config": {
+          "node_color": "#38bdf8",
+          "expanded_radius": 12,
+          "collapsed_radius": 8
+        },
+        "tree_data": {
+          "id": "mm_node_ch6_root",
+          "name": "We Distribute, Yet Things Multiply",
+          "node_color": "#0ea5e9",
+          "icon": "folder_root",
+          "tooltip_popover": {
+            "title": "We Distribute, Yet Things Multiply",
+            "content": "Master topic for Chapter 6",
+            "example": "Central node of learning map"
+          },
+          "children": [
+            {
+              "id": "mm_node_ch6_b0",
+              "name": "6.1 Distributive Property and Expansion",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "6.1 Distributive Property and Expansion",
+                "content": "Theme section under We Distribute, Yet Things Multiply",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch6_b0_sb0",
+                  "name": "Algebraic Expansion via Distributive Law",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Algebraic Expansion via Distributive Law",
+                    "content": "Single term distribution: a(b + c) = ab + ac. Binomial distribution: (a + b)(c + d) = a(c + d) + b(c + d) = ac + ad + bc + bd. Like terms contain identical variables raised to identical powers and can be combined.",
+                    "example": "Geometric Area Model: A rectangle with sides (a+b) and (c+d) partitions into 4 sub-rectangles with areas ac, ad, bc, and bd."
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "mm_node_ch6_b1",
+              "name": "6.2 Standard Algebraic Identities",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "6.2 Standard Algebraic Identities",
+                "content": "Theme section under We Distribute, Yet Things Multiply",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch6_b1_sb0",
+                  "name": "Core Algebraic Identities",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Core Algebraic Identities",
+                    "content": "Identity 1 (Square of Sum): (a + b)^2 = a^2 + 2ab + b^2 Identity 2 (Square of Difference): (a - b)^2 = a^2 - 2ab + b^2 Identity 3 (Difference of Squares): (a + b)(a - b) = a^2 - b^2 Trinomial Square: (a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca.",
+                    "example": "Paper Cutout Activity ACT-6.1: Visual verification of (a+b)^2 by assembling a^2, b^2, and two ab rectangles."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Proportional Reasoning-1",
+        "d3_config": {
+          "node_color": "#38bdf8",
+          "expanded_radius": 12,
+          "collapsed_radius": 8
+        },
+        "tree_data": {
+          "id": "mm_node_ch7_root",
+          "name": "Proportional Reasoning-1",
+          "node_color": "#0ea5e9",
+          "icon": "folder_root",
+          "tooltip_popover": {
+            "title": "Proportional Reasoning-1",
+            "content": "Master topic for Chapter 7",
+            "example": "Central node of learning map"
+          },
+          "children": [
+            {
+              "id": "mm_node_ch7_b0",
+              "name": "7.1 Ratios and Scaling Factors",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "7.1 Ratios and Scaling Factors",
+                "content": "Theme section under Proportional Reasoning-1",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch7_b0_sb0",
+                  "name": "Concept of Ratio and Equivalent Multipliers",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Concept of Ratio and Equivalent Multipliers",
+                    "content": "A ratio compares two quantities of the same unit through division: a:b = a/b. Simplifying ratios requires dividing both antecedent and consequent by their Highest Common Factor (HCF). Proportional scaling requires multiplying or dividing all terms by a constant factor k.",
+                    "example": "Lemonade Recipe Scaling: Doubling lemon juice and water preserves taste because ratio 1:5 stays constant."
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "mm_node_ch7_b1",
+              "name": "7.2 Solving Proportions and Unit Rates",
+              "node_color": "#38bdf8",
+              "icon": "branch_theme",
+              "tooltip_popover": {
+                "title": "7.2 Solving Proportions and Unit Rates",
+                "content": "Theme section under Proportional Reasoning-1",
+                "example": "Main section overview"
+              },
+              "children": [
+                {
+                  "id": "mm_node_ch7_b1_sb0",
+                  "name": "Proportion Laws and Unit Rate Applications",
+                  "node_color": "#818cf8",
+                  "icon": "sub_concept",
+                  "tooltip_popover": {
+                    "title": "Proportion Laws and Unit Rate Applications",
+                    "content": "A proportion equates two ratios: a/b = c/d. Cross Product Property: Product of extremes equals product of means (a * d = b * c). Unit Rate Method: Calculates the value for 1 unit first before scaling to the required quantity.",
+                    "example": "Checking proportion: 4, 8, 12, 24 -> 4*24 = 96 and 8*12 = 96 -> forms a valid proportion."
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
-  }
+  },
+  "grade": "8",
+  "chapter_id": "G8-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Rational Numbers"
 }

@@ -1,58 +1,1204 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Real Numbers",
-  "storyboard_summary": "",
-  "key_terms": [
-    "Fundamental Theorem of Arithmetic states that every composite number can be uniquely factorised into a product of prime numbers, regardless of order.",
-    "Relationship between HCF and LCM for two positive integers: HCF(a, b) * LCM(a, b) = a * b.",
-    "Divisibility property: If a prime number p divides a^2 for a positive integer a, then p also divides a.",
-    "Proof by contradiction technique used to formally prove the irrationality of numbers such as square root of 2, square root of 3, and square root of 5."
-  ],
-  "takeaways": [],
-  "video_embed": {
-    "title": "Video Overview - Chapter 1: Real Numbers",
-    "url": "media/ch1_overview.mp4",
-    "duration_minutes": 15
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_5aebe6e2d464f8a2",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_10",
+    "class_level": 10
   },
-  "visual_asset": "ch1_real_numbers.png",
-  "hotspot_overlays": [
-    {
-      "id": "hs_1_1",
-      "x_percent": 5.0,
-      "y_percent": 15.0,
-      "w_percent": 42.0,
-      "h_percent": 62.0,
-      "label": "Key Principles & Theorems",
-      "popover_tooltip": "Core theoretical foundation for Chapter 1: Real Numbers."
+  "subject": "Maths",
+  "artifact": {
+    "artifact_type": "overview",
+    "source_file_name": "06-Overview.json",
+    "source_relative_path": "Contents/Class 10/Maths/Source Files/06-Overview.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "2a04d4ff3c8b15bc6e145bcafb86b247bc742a9f7abb97c146ebda3f2ef007bc",
+    "source_semantic_sha256": "dd9623e869d2221ebd06cecc512638eafec8b493e3cba387f6e48a8b5a82187d",
+    "source_byte_length": 24613,
+    "source_encoding": "utf-8",
+    "source_field_count": 359,
+    "field_inventory": [
+      "$.book_title",
+      "$.total_chapters",
+      "$.dashboard_ui_config",
+      "$.dashboard_ui_config.theme_color",
+      "$.dashboard_ui_config.accent_color",
+      "$.dashboard_ui_config.navigation_mode",
+      "$.dashboard_ui_config.default_module",
+      "$.dashboard_ui_config.layout_features",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].storyboard_summary",
+      "$.chapters[0].key_terms",
+      "$.chapters[0].takeaways",
+      "$.chapters[0].video_embed",
+      "$.chapters[0].video_embed.title",
+      "$.chapters[0].video_embed.url",
+      "$.chapters[0].video_embed.duration_minutes",
+      "$.chapters[0].visual_asset",
+      "$.chapters[0].hotspot_overlays",
+      "$.chapters[0].hotspot_overlays[0].id",
+      "$.chapters[0].hotspot_overlays[0].x_percent",
+      "$.chapters[0].hotspot_overlays[0].y_percent",
+      "$.chapters[0].hotspot_overlays[0].w_percent",
+      "$.chapters[0].hotspot_overlays[0].h_percent",
+      "$.chapters[0].hotspot_overlays[0].label",
+      "$.chapters[0].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[0].hotspot_overlays[1].id",
+      "$.chapters[0].hotspot_overlays[1].x_percent",
+      "$.chapters[0].hotspot_overlays[1].y_percent",
+      "$.chapters[0].hotspot_overlays[1].w_percent",
+      "$.chapters[0].hotspot_overlays[1].h_percent",
+      "$.chapters[0].hotspot_overlays[1].label",
+      "$.chapters[0].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].storyboard_summary",
+      "$.chapters[1].key_terms",
+      "$.chapters[1].takeaways",
+      "$.chapters[1].video_embed",
+      "$.chapters[1].video_embed.title",
+      "$.chapters[1].video_embed.url",
+      "$.chapters[1].video_embed.duration_minutes",
+      "$.chapters[1].visual_asset",
+      "$.chapters[1].hotspot_overlays",
+      "$.chapters[1].hotspot_overlays[0].id",
+      "$.chapters[1].hotspot_overlays[0].x_percent",
+      "$.chapters[1].hotspot_overlays[0].y_percent",
+      "$.chapters[1].hotspot_overlays[0].w_percent",
+      "$.chapters[1].hotspot_overlays[0].h_percent",
+      "$.chapters[1].hotspot_overlays[0].label",
+      "$.chapters[1].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[1].hotspot_overlays[1].id",
+      "$.chapters[1].hotspot_overlays[1].x_percent",
+      "$.chapters[1].hotspot_overlays[1].y_percent",
+      "$.chapters[1].hotspot_overlays[1].w_percent",
+      "$.chapters[1].hotspot_overlays[1].h_percent",
+      "$.chapters[1].hotspot_overlays[1].label",
+      "$.chapters[1].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].storyboard_summary",
+      "$.chapters[2].key_terms",
+      "$.chapters[2].takeaways",
+      "$.chapters[2].video_embed",
+      "$.chapters[2].video_embed.title",
+      "$.chapters[2].video_embed.url",
+      "$.chapters[2].video_embed.duration_minutes",
+      "$.chapters[2].visual_asset",
+      "$.chapters[2].hotspot_overlays",
+      "$.chapters[2].hotspot_overlays[0].id",
+      "$.chapters[2].hotspot_overlays[0].x_percent",
+      "$.chapters[2].hotspot_overlays[0].y_percent",
+      "$.chapters[2].hotspot_overlays[0].w_percent",
+      "$.chapters[2].hotspot_overlays[0].h_percent",
+      "$.chapters[2].hotspot_overlays[0].label",
+      "$.chapters[2].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[2].hotspot_overlays[1].id",
+      "$.chapters[2].hotspot_overlays[1].x_percent",
+      "$.chapters[2].hotspot_overlays[1].y_percent",
+      "$.chapters[2].hotspot_overlays[1].w_percent",
+      "$.chapters[2].hotspot_overlays[1].h_percent",
+      "$.chapters[2].hotspot_overlays[1].label",
+      "$.chapters[2].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].storyboard_summary",
+      "$.chapters[3].key_terms",
+      "$.chapters[3].takeaways",
+      "$.chapters[3].video_embed",
+      "$.chapters[3].video_embed.title",
+      "$.chapters[3].video_embed.url",
+      "$.chapters[3].video_embed.duration_minutes",
+      "$.chapters[3].visual_asset",
+      "$.chapters[3].hotspot_overlays",
+      "$.chapters[3].hotspot_overlays[0].id",
+      "$.chapters[3].hotspot_overlays[0].x_percent",
+      "$.chapters[3].hotspot_overlays[0].y_percent",
+      "$.chapters[3].hotspot_overlays[0].w_percent",
+      "$.chapters[3].hotspot_overlays[0].h_percent",
+      "$.chapters[3].hotspot_overlays[0].label",
+      "$.chapters[3].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[3].hotspot_overlays[1].id",
+      "$.chapters[3].hotspot_overlays[1].x_percent",
+      "$.chapters[3].hotspot_overlays[1].y_percent",
+      "$.chapters[3].hotspot_overlays[1].w_percent",
+      "$.chapters[3].hotspot_overlays[1].h_percent",
+      "$.chapters[3].hotspot_overlays[1].label",
+      "$.chapters[3].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].storyboard_summary",
+      "$.chapters[4].key_terms",
+      "$.chapters[4].takeaways",
+      "$.chapters[4].video_embed",
+      "$.chapters[4].video_embed.title",
+      "$.chapters[4].video_embed.url",
+      "$.chapters[4].video_embed.duration_minutes",
+      "$.chapters[4].visual_asset",
+      "$.chapters[4].hotspot_overlays",
+      "$.chapters[4].hotspot_overlays[0].id",
+      "$.chapters[4].hotspot_overlays[0].x_percent",
+      "$.chapters[4].hotspot_overlays[0].y_percent",
+      "$.chapters[4].hotspot_overlays[0].w_percent",
+      "$.chapters[4].hotspot_overlays[0].h_percent",
+      "$.chapters[4].hotspot_overlays[0].label",
+      "$.chapters[4].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[4].hotspot_overlays[1].id",
+      "$.chapters[4].hotspot_overlays[1].x_percent",
+      "$.chapters[4].hotspot_overlays[1].y_percent",
+      "$.chapters[4].hotspot_overlays[1].w_percent",
+      "$.chapters[4].hotspot_overlays[1].h_percent",
+      "$.chapters[4].hotspot_overlays[1].label",
+      "$.chapters[4].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].storyboard_summary",
+      "$.chapters[5].key_terms",
+      "$.chapters[5].takeaways",
+      "$.chapters[5].video_embed",
+      "$.chapters[5].video_embed.title",
+      "$.chapters[5].video_embed.url",
+      "$.chapters[5].video_embed.duration_minutes",
+      "$.chapters[5].visual_asset",
+      "$.chapters[5].hotspot_overlays",
+      "$.chapters[5].hotspot_overlays[0].id",
+      "$.chapters[5].hotspot_overlays[0].x_percent",
+      "$.chapters[5].hotspot_overlays[0].y_percent",
+      "$.chapters[5].hotspot_overlays[0].w_percent",
+      "$.chapters[5].hotspot_overlays[0].h_percent",
+      "$.chapters[5].hotspot_overlays[0].label",
+      "$.chapters[5].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[5].hotspot_overlays[1].id",
+      "$.chapters[5].hotspot_overlays[1].x_percent",
+      "$.chapters[5].hotspot_overlays[1].y_percent",
+      "$.chapters[5].hotspot_overlays[1].w_percent",
+      "$.chapters[5].hotspot_overlays[1].h_percent",
+      "$.chapters[5].hotspot_overlays[1].label",
+      "$.chapters[5].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].storyboard_summary",
+      "$.chapters[6].key_terms",
+      "$.chapters[6].takeaways",
+      "$.chapters[6].video_embed",
+      "$.chapters[6].video_embed.title",
+      "$.chapters[6].video_embed.url",
+      "$.chapters[6].video_embed.duration_minutes",
+      "$.chapters[6].visual_asset",
+      "$.chapters[6].hotspot_overlays",
+      "$.chapters[6].hotspot_overlays[0].id",
+      "$.chapters[6].hotspot_overlays[0].x_percent",
+      "$.chapters[6].hotspot_overlays[0].y_percent",
+      "$.chapters[6].hotspot_overlays[0].w_percent",
+      "$.chapters[6].hotspot_overlays[0].h_percent",
+      "$.chapters[6].hotspot_overlays[0].label",
+      "$.chapters[6].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[6].hotspot_overlays[1].id",
+      "$.chapters[6].hotspot_overlays[1].x_percent",
+      "$.chapters[6].hotspot_overlays[1].y_percent",
+      "$.chapters[6].hotspot_overlays[1].w_percent",
+      "$.chapters[6].hotspot_overlays[1].h_percent",
+      "$.chapters[6].hotspot_overlays[1].label",
+      "$.chapters[6].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].storyboard_summary",
+      "$.chapters[7].key_terms",
+      "$.chapters[7].takeaways",
+      "$.chapters[7].video_embed",
+      "$.chapters[7].video_embed.title",
+      "$.chapters[7].video_embed.url",
+      "$.chapters[7].video_embed.duration_minutes",
+      "$.chapters[7].visual_asset",
+      "$.chapters[7].hotspot_overlays",
+      "$.chapters[7].hotspot_overlays[0].id",
+      "$.chapters[7].hotspot_overlays[0].x_percent",
+      "$.chapters[7].hotspot_overlays[0].y_percent",
+      "$.chapters[7].hotspot_overlays[0].w_percent",
+      "$.chapters[7].hotspot_overlays[0].h_percent",
+      "$.chapters[7].hotspot_overlays[0].label",
+      "$.chapters[7].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[7].hotspot_overlays[1].id",
+      "$.chapters[7].hotspot_overlays[1].x_percent",
+      "$.chapters[7].hotspot_overlays[1].y_percent",
+      "$.chapters[7].hotspot_overlays[1].w_percent",
+      "$.chapters[7].hotspot_overlays[1].h_percent",
+      "$.chapters[7].hotspot_overlays[1].label",
+      "$.chapters[7].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[8].chapter_number",
+      "$.chapters[8].chapter_title",
+      "$.chapters[8].storyboard_summary",
+      "$.chapters[8].key_terms",
+      "$.chapters[8].takeaways",
+      "$.chapters[8].video_embed",
+      "$.chapters[8].video_embed.title",
+      "$.chapters[8].video_embed.url",
+      "$.chapters[8].video_embed.duration_minutes",
+      "$.chapters[8].visual_asset",
+      "$.chapters[8].hotspot_overlays",
+      "$.chapters[8].hotspot_overlays[0].id",
+      "$.chapters[8].hotspot_overlays[0].x_percent",
+      "$.chapters[8].hotspot_overlays[0].y_percent",
+      "$.chapters[8].hotspot_overlays[0].w_percent",
+      "$.chapters[8].hotspot_overlays[0].h_percent",
+      "$.chapters[8].hotspot_overlays[0].label",
+      "$.chapters[8].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[8].hotspot_overlays[1].id",
+      "$.chapters[8].hotspot_overlays[1].x_percent",
+      "$.chapters[8].hotspot_overlays[1].y_percent",
+      "$.chapters[8].hotspot_overlays[1].w_percent",
+      "$.chapters[8].hotspot_overlays[1].h_percent",
+      "$.chapters[8].hotspot_overlays[1].label",
+      "$.chapters[8].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[9].chapter_number",
+      "$.chapters[9].chapter_title",
+      "$.chapters[9].storyboard_summary",
+      "$.chapters[9].key_terms",
+      "$.chapters[9].takeaways",
+      "$.chapters[9].video_embed",
+      "$.chapters[9].video_embed.title",
+      "$.chapters[9].video_embed.url",
+      "$.chapters[9].video_embed.duration_minutes",
+      "$.chapters[9].visual_asset",
+      "$.chapters[9].hotspot_overlays",
+      "$.chapters[9].hotspot_overlays[0].id",
+      "$.chapters[9].hotspot_overlays[0].x_percent",
+      "$.chapters[9].hotspot_overlays[0].y_percent",
+      "$.chapters[9].hotspot_overlays[0].w_percent",
+      "$.chapters[9].hotspot_overlays[0].h_percent",
+      "$.chapters[9].hotspot_overlays[0].label",
+      "$.chapters[9].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[9].hotspot_overlays[1].id",
+      "$.chapters[9].hotspot_overlays[1].x_percent",
+      "$.chapters[9].hotspot_overlays[1].y_percent",
+      "$.chapters[9].hotspot_overlays[1].w_percent",
+      "$.chapters[9].hotspot_overlays[1].h_percent",
+      "$.chapters[9].hotspot_overlays[1].label",
+      "$.chapters[9].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[10].chapter_number",
+      "$.chapters[10].chapter_title",
+      "$.chapters[10].storyboard_summary",
+      "$.chapters[10].key_terms",
+      "$.chapters[10].takeaways",
+      "$.chapters[10].video_embed",
+      "$.chapters[10].video_embed.title",
+      "$.chapters[10].video_embed.url",
+      "$.chapters[10].video_embed.duration_minutes",
+      "$.chapters[10].visual_asset",
+      "$.chapters[10].hotspot_overlays",
+      "$.chapters[10].hotspot_overlays[0].id",
+      "$.chapters[10].hotspot_overlays[0].x_percent",
+      "$.chapters[10].hotspot_overlays[0].y_percent",
+      "$.chapters[10].hotspot_overlays[0].w_percent",
+      "$.chapters[10].hotspot_overlays[0].h_percent",
+      "$.chapters[10].hotspot_overlays[0].label",
+      "$.chapters[10].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[10].hotspot_overlays[1].id",
+      "$.chapters[10].hotspot_overlays[1].x_percent",
+      "$.chapters[10].hotspot_overlays[1].y_percent",
+      "$.chapters[10].hotspot_overlays[1].w_percent",
+      "$.chapters[10].hotspot_overlays[1].h_percent",
+      "$.chapters[10].hotspot_overlays[1].label",
+      "$.chapters[10].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[11].chapter_number",
+      "$.chapters[11].chapter_title",
+      "$.chapters[11].storyboard_summary",
+      "$.chapters[11].key_terms",
+      "$.chapters[11].takeaways",
+      "$.chapters[11].video_embed",
+      "$.chapters[11].video_embed.title",
+      "$.chapters[11].video_embed.url",
+      "$.chapters[11].video_embed.duration_minutes",
+      "$.chapters[11].visual_asset",
+      "$.chapters[11].hotspot_overlays",
+      "$.chapters[11].hotspot_overlays[0].id",
+      "$.chapters[11].hotspot_overlays[0].x_percent",
+      "$.chapters[11].hotspot_overlays[0].y_percent",
+      "$.chapters[11].hotspot_overlays[0].w_percent",
+      "$.chapters[11].hotspot_overlays[0].h_percent",
+      "$.chapters[11].hotspot_overlays[0].label",
+      "$.chapters[11].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[11].hotspot_overlays[1].id",
+      "$.chapters[11].hotspot_overlays[1].x_percent",
+      "$.chapters[11].hotspot_overlays[1].y_percent",
+      "$.chapters[11].hotspot_overlays[1].w_percent",
+      "$.chapters[11].hotspot_overlays[1].h_percent",
+      "$.chapters[11].hotspot_overlays[1].label",
+      "$.chapters[11].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[12].chapter_number",
+      "$.chapters[12].chapter_title",
+      "$.chapters[12].storyboard_summary",
+      "$.chapters[12].key_terms",
+      "$.chapters[12].takeaways",
+      "$.chapters[12].video_embed",
+      "$.chapters[12].video_embed.title",
+      "$.chapters[12].video_embed.url",
+      "$.chapters[12].video_embed.duration_minutes",
+      "$.chapters[12].visual_asset",
+      "$.chapters[12].hotspot_overlays",
+      "$.chapters[12].hotspot_overlays[0].id",
+      "$.chapters[12].hotspot_overlays[0].x_percent",
+      "$.chapters[12].hotspot_overlays[0].y_percent",
+      "$.chapters[12].hotspot_overlays[0].w_percent",
+      "$.chapters[12].hotspot_overlays[0].h_percent",
+      "$.chapters[12].hotspot_overlays[0].label",
+      "$.chapters[12].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[12].hotspot_overlays[1].id",
+      "$.chapters[12].hotspot_overlays[1].x_percent",
+      "$.chapters[12].hotspot_overlays[1].y_percent",
+      "$.chapters[12].hotspot_overlays[1].w_percent",
+      "$.chapters[12].hotspot_overlays[1].h_percent",
+      "$.chapters[12].hotspot_overlays[1].label",
+      "$.chapters[12].hotspot_overlays[1].popover_tooltip",
+      "$.chapters[13].chapter_number",
+      "$.chapters[13].chapter_title",
+      "$.chapters[13].storyboard_summary",
+      "$.chapters[13].key_terms",
+      "$.chapters[13].takeaways",
+      "$.chapters[13].video_embed",
+      "$.chapters[13].video_embed.title",
+      "$.chapters[13].video_embed.url",
+      "$.chapters[13].video_embed.duration_minutes",
+      "$.chapters[13].visual_asset",
+      "$.chapters[13].hotspot_overlays",
+      "$.chapters[13].hotspot_overlays[0].id",
+      "$.chapters[13].hotspot_overlays[0].x_percent",
+      "$.chapters[13].hotspot_overlays[0].y_percent",
+      "$.chapters[13].hotspot_overlays[0].w_percent",
+      "$.chapters[13].hotspot_overlays[0].h_percent",
+      "$.chapters[13].hotspot_overlays[0].label",
+      "$.chapters[13].hotspot_overlays[0].popover_tooltip",
+      "$.chapters[13].hotspot_overlays[1].id",
+      "$.chapters[13].hotspot_overlays[1].x_percent",
+      "$.chapters[13].hotspot_overlays[1].y_percent",
+      "$.chapters[13].hotspot_overlays[1].w_percent",
+      "$.chapters[13].hotspot_overlays[1].h_percent",
+      "$.chapters[13].hotspot_overlays[1].label",
+      "$.chapters[13].hotspot_overlays[1].popover_tooltip"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Real Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 1: Real Numbers",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Polynomials",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 2: Polynomials",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Pair of Linear Equations in Two Variables",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 3: Pair of Linear Equations in Two Variables",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Quadratic Equations",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 4: Quadratic Equations",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Arithmetic Progressions",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 5: Arithmetic Progressions",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Triangles",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 6: Triangles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Coordinate Geometry",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 7: Coordinate Geometry",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Introduction to Trigonometry",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 8: Introduction to Trigonometry",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[8]",
+        "source_title_field": "chapter_title",
+        "source_title": "Some Applications of Trigonometry",
+        "source_number_field": "chapter_number",
+        "source_number": 9
+      },
+      {
+        "source_path": "$.chapters[8].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 9: Some Applications of Trigonometry",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[9]",
+        "source_title_field": "chapter_title",
+        "source_title": "Circles",
+        "source_number_field": "chapter_number",
+        "source_number": 10
+      },
+      {
+        "source_path": "$.chapters[9].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 10: Circles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[10]",
+        "source_title_field": "chapter_title",
+        "source_title": "Areas Related to Circles",
+        "source_number_field": "chapter_number",
+        "source_number": 11
+      },
+      {
+        "source_path": "$.chapters[10].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 11: Areas Related to Circles",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[11]",
+        "source_title_field": "chapter_title",
+        "source_title": "Surface Areas and Volumes",
+        "source_number_field": "chapter_number",
+        "source_number": 12
+      },
+      {
+        "source_path": "$.chapters[11].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 12: Surface Areas and Volumes",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[12]",
+        "source_title_field": "chapter_title",
+        "source_title": "Statistics",
+        "source_number_field": "chapter_number",
+        "source_number": 13
+      },
+      {
+        "source_path": "$.chapters[12].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 13: Statistics",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[13]",
+        "source_title_field": "chapter_title",
+        "source_title": "Probability",
+        "source_number_field": "chapter_number",
+        "source_number": 14
+      },
+      {
+        "source_path": "$.chapters[13].video_embed",
+        "source_title_field": "title",
+        "source_title": "Video Overview - Chapter 14: Probability",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 28,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "book_title": "Class 10 Mathematics",
+    "total_chapters": 14,
+    "dashboard_ui_config": {
+      "theme_color": "#0f172a",
+      "accent_color": "#38bdf8",
+      "navigation_mode": "interactive_sidebar",
+      "default_module": "Overview",
+      "layout_features": [
+        "grid_view",
+        "split_viewport",
+        "popover_tooltips",
+        "hotspot_overlay"
+      ]
     },
-    {
-      "id": "hs_1_2",
-      "x_percent": 53.0,
-      "y_percent": 15.0,
-      "w_percent": 42.0,
-      "h_percent": 62.0,
-      "label": "Formulas & Applications",
-      "popover_tooltip": "Mathematical formulas and practical applications for Chapter 1: Real Numbers."
-    }
-  ],
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Real Numbers",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Fundamental Theorem of Arithmetic states that every composite number can be uniquely factorised into a product of prime numbers, regardless of order.",
+          "Relationship between HCF and LCM for two positive integers: HCF(a, b) * LCM(a, b) = a * b.",
+          "Divisibility property: If a prime number p divides a^2 for a positive integer a, then p also divides a.",
+          "Proof by contradiction technique used to formally prove the irrationality of numbers such as square root of 2, square root of 3, and square root of 5."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 1: Real Numbers",
+          "url": "media/ch1_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch1_real_numbers.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_1_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 1: Real Numbers."
+          },
+          {
+            "id": "hs_1_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 1: Real Numbers."
+          }
+        ]
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Polynomials",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Geometrical meaning of zeroes: The zeroes of a polynomial p(x) are the exact x-coordinates of the points where the graph of y = p(x) intersects the x-axis.",
+          "Maximum number of zeroes: A polynomial of degree n can intersect the x-axis at most n times, thus possessing at most n zeroes.",
+          "Parabolic graph of quadratic polynomials: Graphs of y = ax^2 + bx + c form parabolas opening upwards if a > 0 or downwards if a < 0.",
+          "Relationship between zeroes and coefficients of quadratic polynomials: For ax^2 + bx + c with zeroes alpha and beta, alpha + beta = -b/a and alpha * beta = c/a.",
+          "Relationship between zeroes and coefficients of cubic polynomials: For ax^3 + bx^2 + cx + d with zeroes alpha, beta, gamma, sum of zeroes = -b/a, sum of pairwise products = c/a, and product of zeroes = -d/a."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 2: Polynomials",
+          "url": "media/ch2_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch2_polynomials.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_2_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 2: Polynomials."
+          },
+          {
+            "id": "hs_2_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 2: Polynomials."
+          }
+        ]
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Pair of Linear Equations in Two Variables",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Graphical representation: Linear equations represent straight lines; systems are solved by finding intersection points.",
+          "Consistency conditions via coefficient ratios a1/a2, b1/b2, c1/c2:",
+          "1. Intersecting lines (a1/a2 != b1/b2): Unique solution, system is consistent.",
+          "2. Coincident lines (a1/a2 = b1/b2 = c1/c2): Infinitely many solutions, system is dependent and consistent.",
+          "3. Parallel lines (a1/a2 = b1/b2 != c1/c2): No solution, system is inconsistent.",
+          "Substitution method: Expressing one variable in terms of the other and substituting into the remaining equation.",
+          "Elimination method: Multiplying equations by non-zero constants to equalize coefficients of one variable and eliminate it through addition or subtraction."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 3: Pair of Linear Equations in Two Variables",
+          "url": "media/ch3_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch3_linear_equations.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_3_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 3: Pair of Linear Equations in Two Variables."
+          },
+          {
+            "id": "hs_3_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 3: Pair of Linear Equations in Two Variables."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Quadratic Equations",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Standard form of quadratic equation: ax^2 + bx + c = 0, where a, b, c are real numbers and a is non-zero.",
+          "Roots of quadratic equations are identical to the zeroes of the corresponding quadratic polynomials.",
+          "Factorisation method: Splitting the linear middle term into two terms to obtain linear factors.",
+          "Quadratic Formula: x = (-b +- sqrt(b^2 - 4ac)) / (2a), derived by completing the square.",
+          "Nature of roots determined by Discriminant (D = b^2 - 4ac):",
+          "1. D > 0: Two distinct real roots.",
+          "2. D = 0: Two equal (coincident) real roots (-b / (2a)).",
+          "3. D < 0: No real roots."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 4: Quadratic Equations",
+          "url": "media/ch4_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch4_quadratic_equations.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_4_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 4: Quadratic Equations."
+          },
+          {
+            "id": "hs_4_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 4: Quadratic Equations."
+          }
+        ]
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Arithmetic Progressions",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Definition of Arithmetic Progression (AP): Sequence in which each term is obtained by adding a fixed number d to the preceding term except the first term.",
+          "Common difference d can be positive, negative, or zero.",
+          "General form of an AP: a, a + d, a + 2d, a + 3d, ...",
+          "Formula for nth (general) term: an = a + (n - 1)d.",
+          "Sum of first n terms: Sn = (n / 2) * [2a + (n - 1)d] or Sn = (n / 2) * (a + l), where l is the last term.",
+          "Relation between term and sum: an = Sn - S_{n-1}.",
+          "Arithmetic mean: If a, b, c are in AP, then b = (a + c) / 2."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 5: Arithmetic Progressions",
+          "url": "media/ch5_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch5_arithmetic_progressions.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_5_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 5: Arithmetic Progressions."
+          },
+          {
+            "id": "hs_5_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 5: Arithmetic Progressions."
+          }
+        ]
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Triangles",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Similar figures: Figures possessing the same shape but not necessarily the same size. All congruent figures are similar, but similar figures are not necessarily congruent.",
+          "Basic Proportionality Theorem (BPT / Thales' Theorem): If a line is drawn parallel to one side of a triangle intersecting the other two sides in distinct points, it divides the two sides in the same ratio.",
+          "Converse of BPT: If a line divides any two sides of a triangle in the same ratio, the line must be parallel to the third side.",
+          "Similarity criteria for triangles:",
+          "1. AAA (or AA) Similarity Criterion: If corresponding angles of two triangles are equal, corresponding sides are proportional, making triangles similar.",
+          "2. SSS Similarity Criterion: If corresponding sides of two triangles are in the same ratio, corresponding angles are equal, making triangles similar.",
+          "3. SAS Similarity Criterion: If one angle of a triangle equals one angle of another and the including sides are proportional, the triangles are similar."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 6: Triangles",
+          "url": "media/ch6_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch6_triangles.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_6_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 6: Triangles."
+          },
+          {
+            "id": "hs_6_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 6: Triangles."
+          }
+        ]
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Coordinate Geometry",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Distance Formula: Distance between P(x1, y1) and Q(x2, y2) is sqrt((x2 - x1)^2 + (y2 - y1)^2).",
+          "Distance of point P(x, y) from origin O(0,0) is sqrt(x^2 + y^2).",
+          "Section Formula (Internal division): Coordinates of P(x, y) dividing segment AB joining A(x1, y1) and B(x2, y2) in ratio m1:m2 are ((m1*x2 + m2*x1)/(m1+m2), (m1*y2 + m2*y1)/(m1+m2)).",
+          "Midpoint Formula: Special case of section formula with ratio 1:1, yielding ((x1 + x2)/2, (y1 + y2)/2).",
+          "Collinearity test: Points A, B, C are collinear if distance AB + BC = AC."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 7: Coordinate Geometry",
+          "url": "media/ch7_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch7_coordinate_geometry.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_7_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 7: Coordinate Geometry."
+          },
+          {
+            "id": "hs_7_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 7: Coordinate Geometry."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Introduction to Trigonometry",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Definitions of trigonometric ratios in right-angled triangle ABC (right-angled at B):",
+          "1. sin A = opposite / hypotenuse",
+          "2. cos A = adjacent / hypotenuse",
+          "3. tan A = opposite / adjacent = sin A / cos A",
+          "4. cosec A = 1 / sin A, sec A = 1 / cos A, cot A = 1 / tan A = cos A / sin A",
+          "Values for specific angles: 0, 30, 45, 60, and 90 degrees.",
+          "Trigonometric Identities:",
+          "1. sin^2 A + cos^2 A = 1 (0 <= A <= 90 deg)",
+          "2. 1 + tan^2 A = sec^2 A (0 <= A < 90 deg)",
+          "3. 1 + cot^2 A = cosec^2 A (0 < A <= 90 deg)"
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 8: Introduction to Trigonometry",
+          "url": "media/ch8_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch8_trigonometry.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_8_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 8: Introduction to Trigonometry."
+          },
+          {
+            "id": "hs_8_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 8: Introduction to Trigonometry."
+          }
+        ]
+      },
+      {
+        "chapter_number": 9,
+        "chapter_title": "Some Applications of Trigonometry",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Line of Sight: Straight line drawn from observer's eye to the point in the object being viewed.",
+          "Angle of Elevation: Angle between line of sight and horizontal level when looking upward at an object above horizontal level.",
+          "Angle of Depression: Angle between line of sight and horizontal level when looking downward at an object below horizontal level.",
+          "Problem-solving strategy: Modeling real-life objects (towers, poles, trees, buildings) as right-angled triangles and using tan, sin, or cos ratios to find heights or distances."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 9: Some Applications of Trigonometry",
+          "url": "media/ch9_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch9_applications_trigonometry.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_9_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 9: Some Applications of Trigonometry."
+          },
+          {
+            "id": "hs_9_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 9: Some Applications of Trigonometry."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "Circles",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Line and circle relationships: Non-intersecting line, secant (2 intersection points), tangent (1 contact point).",
+          "Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "Number of tangents from a point:",
+          "1. Inside circle: 0 tangents.",
+          "2. On circle: Exactly 1 tangent.",
+          "3. Outside circle: Exactly 2 tangents of equal length.",
+          "Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal (PQ = PR).",
+          "The line connecting the center of a circle to an external point bisects the angle between the two tangents."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 10: Circles",
+          "url": "media/ch10_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch10_circles.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_10_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 10: Circles."
+          },
+          {
+            "id": "hs_10_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 10: Circles."
+          }
+        ]
+      },
+      {
+        "chapter_number": 11,
+        "chapter_title": "Areas Related to Circles",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Sector of a Circle: Region bounded by two radii and the intercepted arc (minor vs major sector).",
+          "Segment of a Circle: Region bounded by a chord and the subtended arc (minor vs major segment).",
+          "Area of sector of angle theta: Area = (theta / 360) * pi * r^2.",
+          "Length of an arc of sector of angle theta: Length = (theta / 360) * 2 * pi * r.",
+          "Area of minor segment = Area of minor sector - Area of corresponding triangle.",
+          "Area of major sector = pi * r^2 - Area of minor sector.",
+          "Area of major segment = pi * r^2 - Area of minor segment."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 11: Areas Related to Circles",
+          "url": "media/ch11_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch11_areas_circles.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_11_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 11: Areas Related to Circles."
+          },
+          {
+            "id": "hs_11_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 11: Areas Related to Circles."
+          }
+        ]
+      },
+      {
+        "chapter_number": 12,
+        "chapter_title": "Surface Areas and Volumes",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Total Surface Area of combination of solids: Sum of visible surface areas of individual components (excluding joined internal faces).",
+          "Volume of combination of solids: Sum of volumes of constituent individual solids.",
+          "Key solid surface area and volume formulas:",
+          "1. Cube: TSA = 6a^2, Vol = a^3.",
+          "2. Cylinder: CSA = 2*pi*r*h, TSA = 2*pi*r*(h + r), Vol = pi*r^2*h.",
+          "3. Cone: CSA = pi*r*l, slant height l = sqrt(r^2 + h^2), Vol = (1/3)*pi*r^2*h.",
+          "4. Hemisphere: CSA = 2*pi*r^2, TSA = 3*pi*r^2, Vol = (2/3)*pi*r^3.",
+          "5. Sphere: SA = 4*pi*r^2, Vol = (4/3)*pi*r^3."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 12: Surface Areas and Volumes",
+          "url": "media/ch12_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch12_surface_areas_volumes.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_12_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 12: Surface Areas and Volumes."
+          },
+          {
+            "id": "hs_12_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 12: Surface Areas and Volumes."
+          }
+        ]
+      },
+      {
+        "chapter_number": 13,
+        "chapter_title": "Statistics",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Mean of grouped data:",
+          "1. Direct Method: mean = sum(fi * xi) / sum(fi).",
+          "2. Assumed Mean Method: mean = a + sum(fi * di) / sum(fi), where di = xi - a.",
+          "3. Step-Deviation Method: mean = a + h * (sum(fi * ui) / sum(fi)), where ui = (xi - a) / h.",
+          "Mode of grouped data: Mode = l + ((f1 - f0) / (2*f1 - f0 - f2)) * h, where f1 is frequency of modal class.",
+          "Median of grouped data: Median = l + (((n / 2) - cf) / f) * h, using cumulative frequencies.",
+          "Empirical relationship between measures of central tendency: 3 * Median = Mode + 2 * Mean."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 13: Statistics",
+          "url": "media/ch13_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch13_statistics.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_13_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 13: Statistics."
+          },
+          {
+            "id": "hs_13_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 13: Statistics."
+          }
+        ]
+      },
+      {
+        "chapter_number": 14,
+        "chapter_title": "Probability",
+        "storyboard_summary": "",
+        "key_terms": [
+          "Theoretical (Classical) Probability: P(E) = (Number of outcomes favourable to E) / (Number of all possible outcomes), assuming equally likely outcomes.",
+          "Equally likely outcomes: Outcomes having identical chance of occurrence.",
+          "Elementary Event: Event having only one outcome. Sum of probabilities of all elementary events in an experiment equals 1.",
+          "Complementary Events: Event 'not E' (E-bar) has probability P(E-bar) = 1 - P(E).",
+          "Probability range: 0 <= P(E) <= 1.",
+          "Impossible event has P = 0; Sure (certain) event has P = 1."
+        ],
+        "takeaways": [],
+        "video_embed": {
+          "title": "Video Overview - Chapter 14: Probability",
+          "url": "media/ch14_overview.mp4",
+          "duration_minutes": 15
+        },
+        "visual_asset": "ch14_probability.png",
+        "hotspot_overlays": [
+          {
+            "id": "hs_14_1",
+            "x_percent": 5.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Key Principles & Theorems",
+            "popover_tooltip": "Core theoretical foundation for Chapter 14: Probability."
+          },
+          {
+            "id": "hs_14_2",
+            "x_percent": 53.0,
+            "y_percent": 15.0,
+            "w_percent": 42.0,
+            "h_percent": 62.0,
+            "label": "Formulas & Applications",
+            "popover_tooltip": "Mathematical formulas and practical applications for Chapter 14: Probability."
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "10",
+  "chapter_id": "G10-MAT-U04-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths Chapter 1",
+  "title": "Maths Chapter 1 - Chapter Overview",
   "video_url": "https://notebooklm.link.google/v10mat01",
+  "video_title": "Maths Chapter 1 Interactive Video Studio",
   "image_asset": {
     "title": "Maths Chapter 1 Concept Diagram",
-    "asset_url": "/assets/images/ch1_real_numbers.png",
-    "url": "/assets/images/ch1_real_numbers.png",
-    "filename": "ch1_real_numbers.png",
+    "asset_url": "/assets/images/23-ch1_matribhumi_map.png",
+    "url": "/assets/images/23-ch1_matribhumi_map.png",
+    "filename": "23-ch1_matribhumi_map.png",
     "type": "16:9 Diagram",
     "hotspots": [
       {
         "id": "hs_1_1",
         "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot for Maths Chapter 1."
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of Maths Chapter 1."
       },
       {
         "id": "hs_1_2",
-        "label": "Key Takeaway",
-        "tooltip_explanation": "Essential learning takeaway for Maths Chapter 1."
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for Maths Chapter 1."
       }
     ]
-  }
+  },
+  "unit": "U04",
+  "unit_number": 4,
+  "unit_title": "Unit 4"
 }

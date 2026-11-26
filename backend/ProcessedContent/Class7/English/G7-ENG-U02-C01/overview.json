@@ -1,94 +1,706 @@
 {
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_9faf25012fc24bce",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
+  },
+  "subject": "English",
+  "artifact": {
+    "artifact_type": "overview",
+    "source_file_name": "10-Overview.json",
+    "source_relative_path": "Contents/Class 7/English/Source Files/10-Overview.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "0ec8d00fa35ced6b8f5dc3666a3acee9c7cb153461c49b205f64bbafb41bac50",
+    "source_semantic_sha256": "85baf6e28837e82d782d3595c6d3f022b85306bad8541c9a13e806d6e7491253",
+    "source_byte_length": 23428,
+    "source_encoding": "utf-8",
+    "source_field_count": 190,
+    "field_inventory": [
+      "$.book_title",
+      "$.total_chapters",
+      "$.deduplication_applied",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].core_summary",
+      "$.chapters[0].key_concepts",
+      "$.chapters[0].key_terms",
+      "$.chapters[0].key_terms[0].term",
+      "$.chapters[0].key_terms[0].definition",
+      "$.chapters[0].key_terms[1].term",
+      "$.chapters[0].key_terms[1].definition",
+      "$.chapters[0].key_terms[2].term",
+      "$.chapters[0].key_terms[2].definition",
+      "$.chapters[0].key_terms[3].term",
+      "$.chapters[0].key_terms[3].definition",
+      "$.chapters[0].key_terms[4].term",
+      "$.chapters[0].key_terms[4].definition",
+      "$.chapters[0].key_terms[5].term",
+      "$.chapters[0].key_terms[5].definition",
+      "$.chapters[0].key_terms[6].term",
+      "$.chapters[0].key_terms[6].definition",
+      "$.chapters[0].key_terms[7].term",
+      "$.chapters[0].key_terms[7].definition",
+      "$.chapters[0].key_takeaways",
+      "$.chapters[0].storyboard",
+      "$.chapters[0].storyboard.panel_1",
+      "$.chapters[0].storyboard.panel_2",
+      "$.chapters[0].storyboard.panel_3",
+      "$.chapters[0].storyboard.panel_4",
+      "$.chapters[0].visual_asset",
+      "$.chapters[0].visual_asset.filename",
+      "$.chapters[0].visual_asset.aspect_ratio",
+      "$.chapters[0].visual_asset.hotspot_overlay",
+      "$.chapters[0].video_embed",
+      "$.chapters[0].video_embed.video_id",
+      "$.chapters[0].video_embed.title",
+      "$.chapters[0].video_embed.focus",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].key_concepts",
+      "$.chapters[1].core_summary",
+      "$.chapters[1].key_terms",
+      "$.chapters[1].key_terms[0].term",
+      "$.chapters[1].key_terms[0].definition",
+      "$.chapters[1].key_terms[1].term",
+      "$.chapters[1].key_terms[1].definition",
+      "$.chapters[1].key_terms[2].term",
+      "$.chapters[1].key_terms[2].definition",
+      "$.chapters[1].key_terms[3].term",
+      "$.chapters[1].key_terms[3].definition",
+      "$.chapters[1].key_terms[4].term",
+      "$.chapters[1].key_terms[4].definition",
+      "$.chapters[1].key_terms[5].term",
+      "$.chapters[1].key_terms[5].definition",
+      "$.chapters[1].key_terms[6].term",
+      "$.chapters[1].key_terms[6].definition",
+      "$.chapters[1].key_terms[7].term",
+      "$.chapters[1].key_terms[7].definition",
+      "$.chapters[1].key_takeaways",
+      "$.chapters[1].storyboard",
+      "$.chapters[1].storyboard.panel_1",
+      "$.chapters[1].storyboard.panel_2",
+      "$.chapters[1].storyboard.panel_3",
+      "$.chapters[1].storyboard.panel_4",
+      "$.chapters[1].visual_asset",
+      "$.chapters[1].visual_asset.filename",
+      "$.chapters[1].visual_asset.aspect_ratio",
+      "$.chapters[1].visual_asset.hotspot_overlay",
+      "$.chapters[1].video_embed",
+      "$.chapters[1].video_embed.video_id",
+      "$.chapters[1].video_embed.title",
+      "$.chapters[1].video_embed.focus",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].core_summary",
+      "$.chapters[2].key_concepts",
+      "$.chapters[2].key_terms",
+      "$.chapters[2].key_terms[0].term",
+      "$.chapters[2].key_terms[0].definition",
+      "$.chapters[2].key_terms[1].term",
+      "$.chapters[2].key_terms[1].definition",
+      "$.chapters[2].key_terms[2].term",
+      "$.chapters[2].key_terms[2].definition",
+      "$.chapters[2].key_terms[3].term",
+      "$.chapters[2].key_terms[3].definition",
+      "$.chapters[2].key_terms[4].term",
+      "$.chapters[2].key_terms[4].definition",
+      "$.chapters[2].key_terms[5].term",
+      "$.chapters[2].key_terms[5].definition",
+      "$.chapters[2].key_terms[6].term",
+      "$.chapters[2].key_terms[6].definition",
+      "$.chapters[2].key_terms[7].term",
+      "$.chapters[2].key_terms[7].definition",
+      "$.chapters[2].key_takeaways",
+      "$.chapters[2].storyboard",
+      "$.chapters[2].storyboard.panel_1",
+      "$.chapters[2].storyboard.panel_2",
+      "$.chapters[2].storyboard.panel_3",
+      "$.chapters[2].storyboard.panel_4",
+      "$.chapters[2].visual_asset",
+      "$.chapters[2].visual_asset.filename",
+      "$.chapters[2].visual_asset.aspect_ratio",
+      "$.chapters[2].visual_asset.hotspot_overlay",
+      "$.chapters[2].video_embed",
+      "$.chapters[2].video_embed.video_id",
+      "$.chapters[2].video_embed.title",
+      "$.chapters[2].video_embed.focus",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].core_summary",
+      "$.chapters[3].key_concepts",
+      "$.chapters[3].key_terms",
+      "$.chapters[3].key_terms[0].term",
+      "$.chapters[3].key_terms[0].definition",
+      "$.chapters[3].key_terms[1].term",
+      "$.chapters[3].key_terms[1].definition",
+      "$.chapters[3].key_terms[2].term",
+      "$.chapters[3].key_terms[2].definition",
+      "$.chapters[3].key_terms[3].term",
+      "$.chapters[3].key_terms[3].definition",
+      "$.chapters[3].key_terms[4].term",
+      "$.chapters[3].key_terms[4].definition",
+      "$.chapters[3].key_terms[5].term",
+      "$.chapters[3].key_terms[5].definition",
+      "$.chapters[3].key_terms[6].term",
+      "$.chapters[3].key_terms[6].definition",
+      "$.chapters[3].key_terms[7].term",
+      "$.chapters[3].key_terms[7].definition",
+      "$.chapters[3].key_takeaways",
+      "$.chapters[3].storyboard",
+      "$.chapters[3].storyboard.panel_1",
+      "$.chapters[3].storyboard.panel_2",
+      "$.chapters[3].storyboard.panel_3",
+      "$.chapters[3].storyboard.panel_4",
+      "$.chapters[3].visual_asset",
+      "$.chapters[3].visual_asset.filename",
+      "$.chapters[3].visual_asset.aspect_ratio",
+      "$.chapters[3].visual_asset.hotspot_overlay",
+      "$.chapters[3].video_embed",
+      "$.chapters[3].video_embed.video_id",
+      "$.chapters[3].video_embed.title",
+      "$.chapters[3].video_embed.focus",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].core_summary",
+      "$.chapters[4].key_concepts",
+      "$.chapters[4].key_terms",
+      "$.chapters[4].key_terms[0].term",
+      "$.chapters[4].key_terms[0].definition",
+      "$.chapters[4].key_terms[1].term",
+      "$.chapters[4].key_terms[1].definition",
+      "$.chapters[4].key_terms[2].term",
+      "$.chapters[4].key_terms[2].definition",
+      "$.chapters[4].key_terms[3].term",
+      "$.chapters[4].key_terms[3].definition",
+      "$.chapters[4].key_terms[4].term",
+      "$.chapters[4].key_terms[4].definition",
+      "$.chapters[4].key_terms[5].term",
+      "$.chapters[4].key_terms[5].definition",
+      "$.chapters[4].key_terms[6].term",
+      "$.chapters[4].key_terms[6].definition",
+      "$.chapters[4].key_terms[7].term",
+      "$.chapters[4].key_terms[7].definition",
+      "$.chapters[4].key_takeaways",
+      "$.chapters[4].storyboard",
+      "$.chapters[4].storyboard.panel_1",
+      "$.chapters[4].storyboard.panel_2",
+      "$.chapters[4].storyboard.panel_3",
+      "$.chapters[4].storyboard.panel_4",
+      "$.chapters[4].visual_asset",
+      "$.chapters[4].visual_asset.filename",
+      "$.chapters[4].visual_asset.aspect_ratio",
+      "$.chapters[4].visual_asset.hotspot_overlay",
+      "$.chapters[4].video_embed",
+      "$.chapters[4].video_embed.video_id",
+      "$.chapters[4].video_embed.title",
+      "$.chapters[4].video_embed.focus",
+      "$.subject",
+      "$.curriculum_standard",
+      "$.resource_type",
+      "$.dashboard_ui_config",
+      "$.dashboard_ui_config.theme",
+      "$.dashboard_ui_config.primary_color",
+      "$.dashboard_ui_config.accent_color",
+      "$.dashboard_ui_config.font_family",
+      "$.dashboard_ui_config.layout_mode",
+      "$.dashboard_ui_config.enable_hotspot_popovers",
+      "$.dashboard_ui_config.enable_video_modal"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Unit 1: Learning Together (The Day the River Spoke & Try Again)",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].video_embed",
+        "source_title_field": "title",
+        "source_title": "The Vision of Poorvi",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Unit 2: Wit and Humour (Animals, Birds, and Dr. Dolittle & A Funny Man)",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].video_embed",
+        "source_title_field": "title",
+        "source_title": "Conquering the Unknown",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Unit 3: Dreams and Discoveries (My Brother's Great Invention & Paper Boats)",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].video_embed",
+        "source_title_field": "title",
+        "source_title": "Dreams & Discoveries",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Unit 4: Travel and Adventure (The Tunnel & Travel)",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].video_embed",
+        "source_title_field": "title",
+        "source_title": "Whispers of Nature",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Unit 5: Bravehearts (A Homage to Our Brave Soldiers & My Dear Soldiers)",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].video_embed",
+        "source_title_field": "title",
+        "source_title": "Honoring Bravehearts",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 10,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "book_title": "Poorvi - Grade 7 English Textbook (NCERT / NEP 2020 / NCF-SE 2023)",
+    "total_chapters": 5,
+    "deduplication_applied": true,
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Unit 1: Learning Together (The Day the River Spoke & Try Again)",
+        "core_summary": "Unit 1 establishes the foundational theme of 'Learning Together' under the NCF-SE 2023 framework. In Kamala Nair's prose narrative 'The Day the River Spoke', ten-year-old Jahnavi overcomes social expectations and self-doubt about being 'too old' for primary school. Guided by a personified, encouraging River, Jahnavi gathers the courage to slip into a classroom with her baby brother Appu on her shoulder to study sums, writing, and natural history. Complementing this, Eliza Cook's narrative poem 'Try Again' presents the historical account of King Bruce of Scotland, who recovers from deep despair after observing a spider's relentless ten-attempt climb to complete its web, illustrating that persistence transforms repeated failure into ultimate triumph.",
+        "key_concepts": [
+          "Pañchakośhas & Middle Stage Bridge: Integration of holistic physical, emotional, and intellectual learning planes as outlined in NCF-SE 2023.",
+          "Gender-Equitable Educational Rights: Dismantling traditional rural expectations that confine young girls to domestic sibling care instead of formal schooling.",
+          "Dialogic Nature Pedagogy: Using personified natural elements (the River) as empathetic sounding boards to encourage critical inquiry and self-actualization.",
+          "Curiosity-Driven Learning: Moving beyond rote memorization by focusing on natural 'whys' (spiders' yellow camouflage, tadpole metamorphosis, bamboo resonance).",
+          "Iterative Resilience: Understanding that setbacks in personal goals or battles are temporary phases overcome by steadfast determination.",
+          "Inclusivity & Right to Education",
+          "Vijñānamaya Kosha (Intellectual Nature Curiosity)",
+          "Personification & Mentorship",
+          "Extended Metaphor of Perseverance"
+        ],
+        "key_terms": [
+          {
+            "term": "Kamala Nair",
+            "definition": "Author of 'The Day the River Spoke', known for sensitive portrayals of rural Indian childhood and nature interaction."
+          },
+          {
+            "term": "Metamorphosis",
+            "definition": "The biological transformation of organisms during development, specifically referenced in Jahnavi's observation of field tadpoles becoming frogs."
+          },
+          {
+            "term": "King Bruce of Scotland",
+            "definition": "Historical 14th-century Scottish monarch whose military defeat and subsequent spider observation inspired the universal lesson of perseverance."
+          },
+          {
+            "term": "Camouflage",
+            "definition": "An animal's natural adaptation to blend into its environment, observed by Jahnavi in yellow spiders inhabiting yellow blossoms."
+          },
+          {
+            "term": "Ashoka's Edicts",
+            "definition": "Historical moral inscriptions and lessons taught by the schoolmaster when Jahnavi first enters the classroom."
+          },
+          {
+            "term": "Ettan",
+            "definition": "Malayalam respectful term for elder brother"
+          },
+          {
+            "term": "Catamaran",
+            "definition": "Multi-hulled wooden fishing boat"
+          },
+          {
+            "term": "Pañchakośhas",
+            "definition": "NCF-2023 five layers of human experience"
+          }
+        ],
+        "key_takeaways": [
+          "Self-doubt regarding age or gender should never bar a student from pursuing formal education and literacy.",
+          "Observing natural adaptations in plants and animals stimulates scientific thinking and emotional strength.",
+          "Success is guaranteed not by immediate victory, but by the willingness to rise and try again after every fall.",
+          "Education is a universal right unconstrained by age or gender.",
+          "Initial failure is diagnostic feedback; persistent effort yields success."
+        ],
+        "storyboard": {
+          "panel_1": "Jahnavi crying at riverbank watching fishermen catamarans",
+          "panel_2": "Personified River speaking wisdom on gender equality",
+          "panel_3": "Jahnavi entering earthen classroom with baby Appu on her shoulder",
+          "panel_4": "King Bruce watching the spider reach its cave web on the 10th attempt"
+        },
+        "visual_asset": {
+          "filename": "ch1_river_school.png",
+          "aspect_ratio": "16:9",
+          "hotspot_overlay": "h1_1, h1_2, h1_3"
+        },
+        "video_embed": {
+          "video_id": "vid_1",
+          "title": "The Vision of Poorvi",
+          "focus": "Why Jahnavi overcame her fear and joined the classroom"
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Unit 2: Wit and Humour (Animals, Birds, and Dr. Dolittle & A Funny Man)",
+        "key_concepts": [
+          "Present Perfect Tense Application: Expressing completed actions with ongoing relevance in veterinary achievements (e.g., 'Doctor Dolittle has learned bird language').",
+          "Phrasal Verb Mechanics: Idiomatic verb-preposition combinations used in narrative storytelling (e.g., 'tripped off', 'rigged up', 'turned out').",
+          "Veterinary Phonetics & Linguistics: Systematic study of non-verbal animal body signals (nostril twitches, ear positions) and vocal bird sounds.",
+          "Situational & Physical Inversion in Humor: Creating lighthearted amusement by turning conventional dress, titles, and behavior upside down.",
+          "Patient-Centered Veterinary Care: Treating domestic and working animals with individual medical dignity rather than generic treatments.",
+          "Patient-Centered Veterinary Care",
+          "Animal Linguistics & Non-Verbal Signetics",
+          "Compound Word Classification (Closed, Open, Hyphenated)",
+          "Humor through Physical Inversion & Courtly Dialogue"
+        ],
+        "core_summary": "Unit 2 uses humor, wit, and linguistic playfulness to foster animal empathy and grammatical precision. In Hugh Lofting's 'Animals, Birds, and Dr. Dolittle', a human doctor transitions from treating complaining human patients to practicing veterinary medicine after Polynesia the parrot teaches him bird language and subtle animal body signs. Dr. Dolittle records animal vocabulary in a butcher's notebook and builds a renowned international practice where every animal receives direct, empathetic care. Natalie Joan's poem 'A Funny Man' adds visual nonsense humor through a character who wears hats on his feet, speaks in grand royal titles, and hops home on his head.",
+        "key_terms": [
+          {
+            "term": "Present Perfect Tense",
+            "definition": "A verb form (has/have + past participle) indicating an action completed at an unspecified time prior to the present."
+          },
+          {
+            "term": "Phrasal Verbs",
+            "definition": "Idiomatic phrases combining a verb with a preposition or adverb to produce a unique context-specific meaning."
+          },
+          {
+            "term": "Hugh Lofting",
+            "definition": "British author and illustrator who created the famous Doctor Dolittle character during World War I."
+          },
+          {
+            "term": "Onomatopoeia",
+            "definition": "The formation of words that imitate the natural acoustic sounds associated with objects or animals."
+          },
+          {
+            "term": "Natalie Joan",
+            "definition": "Children's poet known for lighthearted nonsense verse and whimsical character sketches."
+          },
+          {
+            "term": "Puddleby-on-the-Marsh",
+            "definition": "Fictional English town where Dr. Dolittle resides"
+          },
+          {
+            "term": "Polynesia",
+            "definition": "Dr. Dolittle's wise parrot mentor"
+          },
+          {
+            "term": "Signetics",
+            "definition": "Non-verbal communication via tail wags and ear twitches"
+          }
+        ],
+        "key_takeaways": [
+          "Effective communication requires active listening, humility, and keen observation of non-verbal signals.",
+          "Empathy toward animals involves understanding their specific needs rather than imposing human assumptions.",
+          "Humor and playful nonsense provide healthy creative outlets that spark curiosity and joy in language.",
+          "Active listening and empathy form the foundation of healing.",
+          "Humor arises from contrasting ridiculous actions with formal manners."
+        ],
+        "storyboard": {
+          "panel_1": "Dr. Dolittle conversing with Cat's-food-Man in Puddleby kitchen",
+          "panel_2": "Polynesia the parrot dusting cracker crumbs while teaching bird phonetics",
+          "panel_3": "Dr. Dolittle recording animal signetics in his butcher notebook",
+          "panel_4": "The Funny Man hopping home on his head while eating a currant bun"
+        },
+        "visual_asset": {
+          "filename": "ch2_dolittle_clinic.png",
+          "aspect_ratio": "16:9",
+          "hotspot_overlay": "h2_1, h2_2, h2_3"
+        },
+        "video_embed": {
+          "video_id": "vid_2",
+          "title": "Conquering the Unknown",
+          "focus": "Empathy and inter-species communication"
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Unit 3: Dreams and Discoveries (My Brother's Great Invention & Paper Boats)",
+        "core_summary": "Unit 3 contrasts practical mechanical experimentation with poetic artistic imagination under the theme 'Dreams and Discoveries'. Anita Rau Badami's prose narrative 'My Brother's Great Invention' follows fourteen-year-old Anita and her thirteen-year-old inventor brother Anand. Anand's home experiments—including a pulley-operated water bag burglar alarm that accidentally drenching his father—initially cause family uproar, but his makeshift traps later confuse Boppa, a neighborhood thief, safeguarding the home. Rabindranath Tagore's classic poem 'Paper Boats' captures childhood longing for connection as a young child floats paper boats laden with morning shiuli blossoms and his name down a running stream, dreaming of night fairies sailing them under midnight stars.",
+        "key_concepts": [
+          "Rube Goldberg Mechanical Design: Designing multi-step chain-reaction contraptions using everyday household items (pulleys, strings, water bags).",
+          "Epistolary & Conversational Storytelling: Using first-person sibling narration to highlight family dynamics and comic misunderstandings.",
+          "Symbolic Botanical Imagery: Utilizing dawn-harvested shiuli (parijat) blossoms to convey purity, hope, and natural beauty.",
+          "Universal Human Connectivity: Sending personal names and location markers on paper boats to establish emotional bonds with distant, unknown lands.",
+          "Trial-and-Error Engineering Mindset: Embracing failed initial prototypes as necessary diagnostic steps toward functional technological solutions.",
+          "Tinkering Mindset & Mechanical Resilience",
+          "Validation through Trial-and-Error",
+          "Sensory Imagery & Botanical Symbolism (Shiuli Flowers)",
+          "Nocturnal Fantasy & Fairies of Sleep"
+        ],
+        "key_terms": [
+          {
+            "term": "Rube Goldberg Device",
+            "definition": "A deliberately complex mechanism designed to perform a simple task through a series of indirect chain reactions."
+          },
+          {
+            "term": "Anita Rau Badami",
+            "definition": "Indo-Canadian novelist who captures subtle family humor and childhood relationships."
+          },
+          {
+            "term": "Shiuli (Parijat) Flowers",
+            "definition": "Fragrant white night-blooming jasmine flowers gathered at dawn, symbolizing innocence and fresh beginnings."
+          },
+          {
+            "term": "Crestfallen",
+            "definition": "An adjective describing a state of feeling dispirited, humiliated, or deeply disappointed after a sudden setback."
+          },
+          {
+            "term": "Boppa",
+            "definition": "The colony compound sweeper who exploited household schedules to commit thefts until thwarted by Anand's inventions."
+          },
+          {
+            "term": "Shiuli",
+            "definition": "White parijat blossoms blooming at dawn"
+          },
+          {
+            "term": "Lading",
+            "definition": "Cargo carried aboard a vessel"
+          },
+          {
+            "term": "Tripwire",
+            "definition": "String mechanism triggering a mechanical reaction"
+          }
+        ],
+        "key_takeaways": [
+          "Creative tinkering and scientific curiosity require patience, resilience, and parental guidance.",
+          "Artistic expressions like poetry and paper boat crafting fulfill deep emotional desires for global human connection.",
+          "Unconventional thinking often solves real-world problems when standard methods fail.",
+          "Trial-and-error experimentation leads to real-world security innovations.",
+          "Childhood play connects hearts across distance through imagination."
+        ],
+        "storyboard": {
+          "panel_1": "Anand constructing his front-door water-bag alarm pulley",
+          "panel_2": "Papa standing drenched on the threshold after a long workday",
+          "panel_3": "Burglar Boppa tripping the door mechanism at night and fleeing",
+          "panel_4": "Child floating paper boats with shiuli blossoms under white cloud sails"
+        },
+        "visual_asset": {
+          "filename": "ch3_anand_alarm_boats.png",
+          "aspect_ratio": "16:9",
+          "hotspot_overlay": "h3_1, h3_2, h3_3"
+        },
+        "video_embed": {
+          "video_id": "vid_4",
+          "title": "Dreams & Discoveries",
+          "focus": "Anand's invention and Tagore's paper boats"
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Unit 4: Travel and Adventure (The Tunnel & Travel)",
+        "core_summary": "Unit 4 explores wilderness adventure, industrial technology, and human guardianship in Ruskin Bond's 'The Tunnel' and Edna St. Vincent Millay's poem 'Travel'. Young Suraj cycles to a remote railway cutting in the jungle to watch a roaring steam locomotive emerge from a horseshoe tunnel like a green, black, and gold dragon. There he meets Sunder Singh, the dedicated watchman who inspects the tracks before every train pass and maintains a peaceful co-existence with a wild leopard. Sunder Singh bravely clears the leopard from the tracks prior to the night mail's arrival. Later, as Suraj travels on the night train, he looks out at the dark forest and sees Sunder Singh's glowing oil lamp—a solitary firefly protecting both human passengers and forest wildlife.",
+        "key_concepts": [
+          "Industrial-Ecological Equilibrium: Harmonious coexistence between modern transportation infrastructure (steam trains) and wild animal habitats.",
+          "Sensory Auditory & Visual Suspense: Building narrative tension through distant track vibrations, engine whistles, and dark tunnel acoustics.",
+          "Firefly Stewardship Metaphor: Symbolizing selfless, uncelebrated civic duty through a solitary watchman carrying a small oil lamp in a vast night forest.",
+          "Dragon Industrial Allegory: Equating powerful mechanical steam locomotives to mythical fire-breathing beasts.",
+          "Romantic Wanderlust: The universal psychological longing to travel to unknown destinations awakened by distant train whistles.",
+          "Railway Cutting Geography & Engineering",
+          "Dragon Metaphor for Steam Locomotives",
+          "Stewardship & Human-Wildlife Coexistence",
+          "Habitual Past Grammar (`would`) & Firefly Metaphor"
+        ],
+        "key_terms": [
+          {
+            "term": "Railway Cutting",
+            "definition": "An excavated trench through rock or hill terrain created to maintain level track alignment for train passage."
+          },
+          {
+            "term": "Ruskin Bond",
+            "definition": "Iconic Indian author whose works vividly portray the ecology, people, and wildlife of the Himalayan foothills."
+          },
+          {
+            "term": "Edna St. Vincent Millay",
+            "definition": "Pulitzer Prize-winning American poet known for lyrical poetry exploring wanderlust and human emotion."
+          },
+          {
+            "term": "Shisham",
+            "definition": "North Indian rosewood tree (Dalbergia sissoo) commonly forming dense forest canopy along railway lines."
+          },
+          {
+            "term": "Habitual Past 'Would'",
+            "definition": "A grammatical construction indicating repeated, routine actions or habits performed over an extended period in the past."
+          },
+          {
+            "term": "Cutting",
+            "definition": "Excavated passage through a hill for railway tracks"
+          },
+          {
+            "term": "Sunder Singh",
+            "definition": "Dedicated railway tunnel watchman"
+          },
+          {
+            "term": "Wanderlust",
+            "definition": "Inescapable urge to travel and explore new places"
+          }
+        ],
+        "key_takeaways": [
+          "Responsible technological development respects wildlife boundaries and preserves natural habitats.",
+          "Unsung workers carrying out quiet, routine duties form the backbone of public safety.",
+          "Exploring nature cultivates courage, environmental awareness, and meaningful cross-generational friendships.",
+          "Industrial progress can coexist with wildlife through responsible stewardship.",
+          "Humble individual duty serves as a guiding light in vast darkness."
+        ],
+        "storyboard": {
+          "panel_1": "Suraj standing at the forest railway cutting embankment",
+          "panel_2": "Steam engine emerging from horseshoe masonry arch like a dragon",
+          "panel_3": "Sunder Singh clearing the jungle leopard before night mail arrives",
+          "panel_4": "Suraj looking back from train window at Sunder Singh's firefly lamp"
+        },
+        "visual_asset": {
+          "filename": "ch4_tunnel_watchman.png",
+          "aspect_ratio": "16:9",
+          "hotspot_overlay": "h4_1, h4_2, h4_3"
+        },
+        "video_embed": {
+          "video_id": "vid_5",
+          "title": "Whispers of Nature",
+          "focus": "Environmental curiosity and Sunder Singh's firefly lamp"
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Unit 5: Bravehearts (A Homage to Our Brave Soldiers & My Dear Soldiers)",
+        "core_summary": "Unit 5 instills patriotism, civic duty, and national gratitude through a multi-text exploration of Indian military heroism. In 'A Homage to Our Brave Soldiers', Soumya writes to her friend Ananda about her visit to the National War Memorial in New Delhi, describing its central Obelisk, eternal flame (Amar Jawan Jyoti), and concentric rings (Tyag Chakra, Veerta Chakra) bearing the names of fallen heroes like Major Somnath Sharma, Captain M.N. Mulla, Lance Naik Albert Ekka, and Major Padmapani Acharya. Inspired, Ananda pledges to engage her peers through digital apps, collages, and prospective military service. Dr. A.P.J. Abdul Kalam's poem 'My Dear Soldiers' salutes tri-service defense personnel guarding glaciers, deserts, seas, and skies, comparing their selfless discipline to that of yogis.",
+        "key_concepts": [
+          "Concentric Architectural Symbolism: The spatial geometry of the National War Memorial representing protection (Rakshak), sacrifice (Tyag), and bravery (Veerta).",
+          "Epistolary Civic Exchange: Utilizing personal correspondence between young friends to process historical sacrifice into active citizenship.",
+          "Tri-Service Defense Operations: Understanding military vigilance across diverse harsh geographical terrains (mountain glaciers, scorching deserts, deep seas, air defense).",
+          "Ascetic Military Discipline: Comparing soldiers' selfless border defense to the spiritual detachment and endurance of traditional yogis.",
+          "Posthumous Commemoration: Honoring war heroes through official citations, gallantry medals (PVC, MVC), and interactive digital databases.",
+          "Architectural Symbolism of National War Memorial",
+          "Gallantry Honors (Param Vir Chakra & Maha Vir Chakra)",
+          "Epistolary Dialogue & Active Civic Responsibility",
+          "Yogi Simile for Tri-Service Border Vigilance"
+        ],
+        "key_terms": [
+          {
+            "term": "Tyag Chakra",
+            "definition": "The Circular Ring of Sacrifice in the National War Memorial constructed with granite bricks inscribed with names of fallen soldiers."
+          },
+          {
+            "term": "Amar Jawan Jyoti",
+            "definition": "The perpetual flame symbolizing the eternal, undying spirit and bravery of India's fallen military personnel."
+          },
+          {
+            "term": "Dr. A.P.J. Abdul Kalam",
+            "definition": "11th President of India, visionary scientist, and poet who authored 'My Dear Soldiers'."
+          },
+          {
+            "term": "Param Vir Chakra (PVC)",
+            "definition": "India's highest military decoration awarded for highest degree of valor or self-sacrifice in the presence of the enemy."
+          },
+          {
+            "term": "INS Khukri",
+            "definition": "Indian Navy frigate sunk during the 1971 Indo-Pak war, where Captain M.N. Mulla gave up his lifejacket to save junior sailors."
+          },
+          {
+            "term": "Obelisk",
+            "definition": "15-meter central stone pillar tapering at top"
+          },
+          {
+            "term": "Amar Jawan Jyoti",
+            "definition": "Eternal flame of the immortal soldier"
+          },
+          {
+            "term": "Tyag Chakra",
+            "definition": "Circle of Sacrifice with granite walls bearing names"
+          }
+        ],
+        "key_takeaways": [
+          "National freedom and peace are maintained through the continuous sacrifice and vigilance of armed forces personnel.",
+          "War memorials serve as living educational sanctuaries that inspire gratitude, moral integrity, and active citizenship.",
+          "Citizens can honor soldiers by studying military history, expressing gratitude, and upholding national unity.",
+          "Commemorating military sacrifice turns pride into active civic duty.",
+          "Soldiers defend national freedom through ascetic discipline and vigilance."
+        ],
+        "storyboard": {
+          "panel_1": "Soumya's class visiting National War Memorial in New Delhi",
+          "panel_2": "Four concentric circles: Amar, Veerta, Tyag, and Rakshak Chakras",
+          "panel_3": "Capt. Mulla surrendering his lifejacket during INS Khukri sinking",
+          "panel_4": "Dr. Kalam praying for border soldiers living like yogis"
+        },
+        "visual_asset": {
+          "filename": "ch5_war_memorial.png",
+          "aspect_ratio": "16:9",
+          "hotspot_overlay": "h5_1, h5_2, h5_3"
+        },
+        "video_embed": {
+          "video_id": "vid_3",
+          "title": "Honoring Bravehearts",
+          "focus": "National War Memorial and Gallantry Heroes"
+        }
+      }
+    ],
+    "subject": "Class 7 English (Poorvi Textbook)",
+    "curriculum_standard": "NCERT / NCF-2023 / NEP-2020",
+    "resource_type": "Interactive Dashboard Overview",
+    "dashboard_ui_config": {
+      "theme": "dark_modern",
+      "primary_color": "#38BDF8",
+      "accent_color": "#10B981",
+      "font_family": "Inter, sans-serif",
+      "layout_mode": "grid_storyboard",
+      "enable_hotspot_popovers": true,
+      "enable_video_modal": true
+    }
+  },
+  "grade": "7",
+  "chapter_id": "G7-ENG-U02-C01",
   "chapter_number": 1,
   "chapter_title": "The Jamun Tree",
-  "core_summary": "Unit 1 establishes the foundational theme of 'Learning Together' under the NCF-SE 2023 framework. In Kamala Nair's prose narrative 'The Day the River Spoke', ten-year-old Jahnavi overcomes social expectations and self-doubt about being 'too old' for primary school. Guided by a personified, encouraging River, Jahnavi gathers the courage to slip into a classroom with her baby brother Appu on her shoulder to study sums, writing, and natural history. Complementing this, Eliza Cook's narrative poem 'Try Again' presents the historical account of King Bruce of Scotland, who recovers from deep despair after observing a spider's relentless ten-attempt climb to complete its web, illustrating that persistence transforms repeated failure into ultimate triumph.",
-  "key_concepts": [
-    "Pañchakośhas & Middle Stage Bridge: Integration of holistic physical, emotional, and intellectual learning planes as outlined in NCF-SE 2023.",
-    "Gender-Equitable Educational Rights: Dismantling traditional rural expectations that confine young girls to domestic sibling care instead of formal schooling.",
-    "Dialogic Nature Pedagogy: Using personified natural elements (the River) as empathetic sounding boards to encourage critical inquiry and self-actualization.",
-    "Curiosity-Driven Learning: Moving beyond rote memorization by focusing on natural 'whys' (spiders' yellow camouflage, tadpole metamorphosis, bamboo resonance).",
-    "Iterative Resilience: Understanding that setbacks in personal goals or battles are temporary phases overcome by steadfast determination.",
-    "Inclusivity & Right to Education",
-    "Vijñānamaya Kosha (Intellectual Nature Curiosity)",
-    "Personification & Mentorship",
-    "Extended Metaphor of Perseverance"
-  ],
-  "key_terms": [
-    {
-      "term": "Kamala Nair",
-      "definition": "Author of 'The Day the River Spoke', known for sensitive portrayals of rural Indian childhood and nature interaction."
-    },
-    {
-      "term": "Metamorphosis",
-      "definition": "The biological transformation of organisms during development, specifically referenced in Jahnavi's observation of field tadpoles becoming frogs."
-    },
-    {
-      "term": "King Bruce of Scotland",
-      "definition": "Historical 14th-century Scottish monarch whose military defeat and subsequent spider observation inspired the universal lesson of perseverance."
-    },
-    {
-      "term": "Camouflage",
-      "definition": "An animal's natural adaptation to blend into its environment, observed by Jahnavi in yellow spiders inhabiting yellow blossoms."
-    },
-    {
-      "term": "Ashoka's Edicts",
-      "definition": "Historical moral inscriptions and lessons taught by the schoolmaster when Jahnavi first enters the classroom."
-    },
-    {
-      "term": "Ettan",
-      "definition": "Malayalam respectful term for elder brother"
-    },
-    {
-      "term": "Catamaran",
-      "definition": "Multi-hulled wooden fishing boat"
-    },
-    {
-      "term": "Pañchakośhas",
-      "definition": "NCF-2023 five layers of human experience"
-    }
-  ],
-  "key_takeaways": [
-    "Self-doubt regarding age or gender should never bar a student from pursuing formal education and literacy.",
-    "Observing natural adaptations in plants and animals stimulates scientific thinking and emotional strength.",
-    "Success is guaranteed not by immediate victory, but by the willingness to rise and try again after every fall.",
-    "Education is a universal right unconstrained by age or gender.",
-    "Initial failure is diagnostic feedback; persistent effort yields success."
-  ],
-  "storyboard": {
-    "panel_1": "Jahnavi crying at riverbank watching fishermen catamarans",
-    "panel_2": "Personified River speaking wisdom on gender equality",
-    "panel_3": "Jahnavi entering earthen classroom with baby Appu on her shoulder",
-    "panel_4": "King Bruce watching the spider reach its cave web on the 10th attempt"
-  },
-  "visual_asset": {
-    "filename": "ch1_river_school.png",
-    "aspect_ratio": "16:9",
-    "hotspot_overlay": "h1_1, h1_2, h1_3"
-  },
-  "video_embed": {
-    "video_id": "vid_1",
-    "title": "The Vision of Poorvi",
-    "focus": "Why Jahnavi overcame her fear and joined the classroom"
-  },
-  "video_url": "https://notebooklm.link.google/6yHy9emTFMXt",
+  "title": "The Jamun Tree - Chapter Overview",
+  "video_url": "https://notebooklm.link.google/v7eng01",
+  "video_title": "The Jamun Tree Interactive Video Studio",
   "image_asset": {
     "title": "The Jamun Tree Concept Diagram",
-    "asset_url": "/assets/images/ch1_river_school.png",
-    "url": "/assets/images/ch1_river_school.png",
-    "filename": "ch1_river_school.png",
+    "asset_url": "/assets/images/ch01_concept_map.png",
+    "url": "/assets/images/ch01_concept_map.png",
+    "filename": "ch01_concept_map.png",
     "type": "16:9 Diagram",
     "hotspots": [
       {
         "id": "hs_1_1",
         "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot for The Jamun Tree."
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of The Jamun Tree."
       },
       {
         "id": "hs_1_2",
-        "label": "Key Takeaway",
-        "tooltip_explanation": "Essential learning takeaway for The Jamun Tree."
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for The Jamun Tree."
       }
     ]
   },
-  "title": "The Jamun Tree - Chapter Overview"
+  "unit": "U02",
+  "unit_number": 2,
+  "unit_title": "Unit 2"
 }

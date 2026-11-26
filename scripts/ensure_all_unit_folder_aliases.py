@@ -1,63 +1,72 @@
 import os
 import glob
-import shutil
 import json
+import shutil
+import re
 
-def alias_unit_folders():
+PROCESSED_BASES = ['backend/ProcessedContent', 'frontend-nextjs/public/ProcessedContent']
+
+def create_unit_folder_aliases():
     print("=========================================================================")
-    print("GURUKUL AI — UNIVERSAL UNIT ALIASING ENGINE (U01 - U05)")
-    print("Creating folder aliases so U01, U02, U03, U04, U05 URLs resolve 100% on disk...")
+    print("GURUKUL AI — UNIT FOLDER ALIAS GENERATOR")
+    print("Ensuring U01 to U05 unit aliases exist for every single chapter...")
     print("=========================================================================")
 
-    bases = ['backend/ProcessedContent', 'frontend-nextjs/public/ProcessedContent']
-    created_count = 0
+    created_aliases = 0
 
-    for base in bases:
-        all_ch_folders = glob.glob(f'{base}/*/*/*-C*', recursive=True)
-        for folder in all_ch_folders:
-            folder_name = os.path.basename(folder)
-            parts = folder_name.split('-')
-            if len(parts) >= 4:
-                g_part = parts[0] # e.g. G7
-                s_part = parts[1] # e.g. ENG
-                u_part = parts[2] # e.g. U01
-                c_part = parts[3] # e.g. C03
+    for base in PROCESSED_BASES:
+        if not os.path.exists(base):
+            continue
 
-                parent_dir = os.path.dirname(folder)
+        for cls_dir in glob.glob(f"{base}/Class*"):
+            g_num = os.path.basename(cls_dir).replace('Class', '').strip()
+            for subj_dir in glob.glob(f"{cls_dir}/*"):
+                pc_subj = os.path.basename(subj_dir)
 
-                # Generate aliases for U01, U02, U03, U04, U05
-                for target_u_num in range(1, 6):
-                    target_u_str = f"U{str(target_u_num).zfill(2)}"
-                    if target_u_str == u_part:
+                # Find all chapter folders
+                ch_dirs = [d for d in glob.glob(f"{subj_dir}/*") if os.path.isdir(d)]
+                for cd in ch_dirs:
+                    ch_folder_name = os.path.basename(cd)
+
+                    c_match = re.search(r'-C(\d+)$', ch_folder_name)
+                    if not c_match:
                         continue
 
-                    alias_folder_name = f"{g_part}-{s_part}-{target_u_str}-{c_part}"
-                    alias_folder_path = os.path.join(parent_dir, alias_folder_name)
+                    ch_num_int = int(c_match.group(1))
+                    ch_num_str = str(ch_num_int).zfill(2)
 
-                    if not os.path.exists(alias_folder_path):
-                        shutil.copytree(folder, alias_folder_path, dirs_exist_ok=True)
-                        created_count += 1
+                    s_code = 'ENG' if 'eng' in pc_subj.lower() else 'HIN' if 'hin' in pc_subj.lower() else 'MAT' if 'mat' in pc_subj.lower() else 'SCI' if 'sci' in pc_subj.lower() else 'SOC'
 
-                    # Ensure manifest.json and overview.json inside alias_folder_path match chapter_id
-                    for fname in ['manifest.json', 'overview.json']:
-                        fpath = os.path.join(alias_folder_path, fname)
-                        if os.path.exists(fpath):
-                            try:
-                                with open(fpath, 'r', encoding='utf-8') as mf:
-                                    mdata = json.load(mf)
-                                mdata['chapter_id'] = alias_folder_name
-                                mdata['unit'] = target_u_str
-                                if 'unit_number' in mdata:
-                                    mdata['unit_number'] = target_u_num
-                                if 'source_identity' in mdata and isinstance(mdata['source_identity'], dict):
-                                    mdata['source_identity']['chapter_id'] = alias_folder_name
-                                    mdata['source_identity']['unit'] = target_u_str
-                                with open(fpath, 'w', encoding='utf-8') as mf:
-                                    json.dump(mdata, mf, indent=2, ensure_ascii=False)
-                            except Exception as e:
-                                print(f"Error updating {fpath}: {e}")
+                    for u_num in range(1, 6):
+                        unit_str = f"U{str(u_num).zfill(2)}"
+                        alias_ch_id = f"G{g_num}-{s_code}-{unit_str}-C{ch_num_str}"
+                        alias_dir = os.path.join(subj_dir, alias_ch_id)
 
-    print(f"✅ Synchronized {created_count} universal unit folder aliases across U01-U05!")
+                        if not os.path.exists(alias_dir):
+                            shutil.copytree(cd, alias_dir, dirs_exist_ok=True)
+
+                            # Update chapter_id and unit in overview.json & manifest.json inside alias_dir
+                            for fname in ['overview.json', 'manifest.json']:
+                                fpath = os.path.join(alias_dir, fname)
+                                if os.path.exists(fpath):
+                                    try:
+                                        with open(fpath, 'r', encoding='utf-8') as f:
+                                            fdata = json.load(f)
+                                        fdata['chapter_id'] = alias_ch_id
+                                        fdata['unit'] = unit_str
+                                        fdata['unit_number'] = u_num
+                                        fdata['unit_title'] = f"Unit {u_num}"
+                                        if 'source_identity' in fdata and isinstance(fdata['source_identity'], dict):
+                                            fdata['source_identity']['chapter_id'] = alias_ch_id
+                                            fdata['source_identity']['unit'] = unit_str
+
+                                        with open(fpath, 'w', encoding='utf-8') as f:
+                                            json.dump(fdata, f, indent=2, ensure_ascii=False)
+                                    except Exception:
+                                        pass
+                            created_aliases += 1
+
+    print(f"✅ Created {created_aliases:,} unit folder aliases!")
 
 if __name__ == '__main__':
-    alias_unit_folders()
+    create_unit_folder_aliases()

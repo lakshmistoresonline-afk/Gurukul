@@ -1,5 +1,6 @@
 package com.gurukul.ai.lms.ui.components
 
+import androidx.compose.foundation.BorderStroke
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -120,7 +121,7 @@ fun RichNotesReader(
             Card(
                 colors = CardDefaults.cardColors(containerColor = cardBgColor),
                 shape = RoundedCornerShape(24.dp),
-                border = CardBorder(1.dp, if (isHighContrast) Color.Yellow else Color(0xFF1E293B)),
+                border = BorderStroke(1.dp, if (isHighContrast) Color.Yellow else Color(0xFF1E293B)),
                 modifier = Modifier
                     .fillMaxWidth()
                     .semantics {
@@ -157,7 +158,7 @@ fun RichNotesReader(
                 Card(
                     colors = CardDefaults.cardColors(containerColor = cardBgColor),
                     shape = RoundedCornerShape(20.dp),
-                    border = CardBorder(1.dp, if (isHighContrast) Color.Yellow else Color(0xFF1E293B)),
+                    border = BorderStroke(1.dp, if (isHighContrast) Color.Yellow else Color(0xFF1E293B)),
                     modifier = Modifier
                         .fillMaxWidth()
                         .semantics {
@@ -194,7 +195,7 @@ fun RichNotesReader(
                 Card(
                     colors = CardDefaults.cardColors(containerColor = Color(0xFF312E81).copy(alpha = 0.3f)),
                     shape = RoundedCornerShape(20.dp),
-                    border = CardBorder(1.dp, Color(0xFF6366F1).copy(alpha = 0.3f)),
+                    border = BorderStroke(1.dp, Color(0xFF6366F1).copy(alpha = 0.3f)),
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Column(
@@ -240,7 +241,7 @@ fun RichNotesReader(
                 Card(
                     colors = CardDefaults.cardColors(containerColor = cardBgColor),
                     shape = RoundedCornerShape(16.dp),
-                    border = CardBorder(1.dp, Color(0xFF1E293B)),
+                    border = BorderStroke(1.dp, Color(0xFF1E293B)),
                     modifier = Modifier
                         .fillMaxWidth()
                         .semantics {

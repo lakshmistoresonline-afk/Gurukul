@@ -1,79 +1,1005 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Geometric Twins (Congruence of Triangles)",
-  "storyboard": [
-    {
-      "panel_id": 1,
-      "title": "Core Problem & Real-World Context",
-      "description": "Exploring fundamental principles of Geometric Twins through practical scenarios."
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_52ff8b57e25f9503",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
+  },
+  "subject": "Maths II",
+  "artifact": {
+    "artifact_type": "overview",
+    "source_file_name": "03-Overview.json",
+    "source_relative_path": "Contents/Class 7/Maths II/Source Files/03-Overview.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "403bbd3216beabd11d970d64b2e49453c1f6cbb449a4ec7a52a00a3103792835",
+    "source_semantic_sha256": "cc10c7b7f6a0c38ea6ddb1d9a54ed1e1dea34a3e18b943f8fdd6d91d7763b967",
+    "source_byte_length": 20455,
+    "source_encoding": "utf-8",
+    "source_field_count": 256,
+    "field_inventory": [
+      "$.subject",
+      "$.dashboard_config",
+      "$.dashboard_config.theme",
+      "$.dashboard_config.version",
+      "$.dashboard_config.interactive_features",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].storyboard",
+      "$.chapters[0].storyboard[0].panel_id",
+      "$.chapters[0].storyboard[0].title",
+      "$.chapters[0].storyboard[0].description",
+      "$.chapters[0].storyboard[1].panel_id",
+      "$.chapters[0].storyboard[1].title",
+      "$.chapters[0].storyboard[1].description",
+      "$.chapters[0].storyboard[2].panel_id",
+      "$.chapters[0].storyboard[2].title",
+      "$.chapters[0].storyboard[2].description",
+      "$.chapters[0].executive_summary",
+      "$.chapters[0].key_takeaways",
+      "$.chapters[0].key_terms",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.asset_id",
+      "$.chapters[0].image_asset.chapter_number",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.url",
+      "$.chapters[0].image_asset.caption",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[0].label",
+      "$.chapters[0].image_asset.hotspots[0].popover_text",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].label",
+      "$.chapters[0].image_asset.hotspots[1].popover_text",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].label",
+      "$.chapters[0].image_asset.hotspots[2].popover_text",
+      "$.chapters[0].image_asset.hotspots[3].x_percent",
+      "$.chapters[0].image_asset.hotspots[3].y_percent",
+      "$.chapters[0].image_asset.hotspots[3].w_percent",
+      "$.chapters[0].image_asset.hotspots[3].h_percent",
+      "$.chapters[0].image_asset.hotspots[3].label",
+      "$.chapters[0].image_asset.hotspots[3].popover_text",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].storyboard",
+      "$.chapters[1].storyboard[0].panel_id",
+      "$.chapters[1].storyboard[0].title",
+      "$.chapters[1].storyboard[0].description",
+      "$.chapters[1].storyboard[1].panel_id",
+      "$.chapters[1].storyboard[1].title",
+      "$.chapters[1].storyboard[1].description",
+      "$.chapters[1].storyboard[2].panel_id",
+      "$.chapters[1].storyboard[2].title",
+      "$.chapters[1].storyboard[2].description",
+      "$.chapters[1].executive_summary",
+      "$.chapters[1].key_takeaways",
+      "$.chapters[1].key_terms",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.asset_id",
+      "$.chapters[1].image_asset.chapter_number",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.url",
+      "$.chapters[1].image_asset.caption",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[0].label",
+      "$.chapters[1].image_asset.hotspots[0].popover_text",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].label",
+      "$.chapters[1].image_asset.hotspots[1].popover_text",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].label",
+      "$.chapters[1].image_asset.hotspots[2].popover_text",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].storyboard",
+      "$.chapters[2].storyboard[0].panel_id",
+      "$.chapters[2].storyboard[0].title",
+      "$.chapters[2].storyboard[0].description",
+      "$.chapters[2].storyboard[1].panel_id",
+      "$.chapters[2].storyboard[1].title",
+      "$.chapters[2].storyboard[1].description",
+      "$.chapters[2].storyboard[2].panel_id",
+      "$.chapters[2].storyboard[2].title",
+      "$.chapters[2].storyboard[2].description",
+      "$.chapters[2].executive_summary",
+      "$.chapters[2].key_takeaways",
+      "$.chapters[2].key_terms",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.asset_id",
+      "$.chapters[2].image_asset.chapter_number",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.url",
+      "$.chapters[2].image_asset.caption",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].image_asset.hotspots[0].label",
+      "$.chapters[2].image_asset.hotspots[0].popover_text",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].storyboard",
+      "$.chapters[3].storyboard[0].panel_id",
+      "$.chapters[3].storyboard[0].title",
+      "$.chapters[3].storyboard[0].description",
+      "$.chapters[3].storyboard[1].panel_id",
+      "$.chapters[3].storyboard[1].title",
+      "$.chapters[3].storyboard[1].description",
+      "$.chapters[3].storyboard[2].panel_id",
+      "$.chapters[3].storyboard[2].title",
+      "$.chapters[3].storyboard[2].description",
+      "$.chapters[3].executive_summary",
+      "$.chapters[3].key_takeaways",
+      "$.chapters[3].key_terms",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.asset_id",
+      "$.chapters[3].image_asset.chapter_number",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.url",
+      "$.chapters[3].image_asset.caption",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].image_asset.hotspots[0].label",
+      "$.chapters[3].image_asset.hotspots[0].popover_text",
+      "$.chapters[3].image_asset.hotspots[1].x_percent",
+      "$.chapters[3].image_asset.hotspots[1].y_percent",
+      "$.chapters[3].image_asset.hotspots[1].w_percent",
+      "$.chapters[3].image_asset.hotspots[1].h_percent",
+      "$.chapters[3].image_asset.hotspots[1].label",
+      "$.chapters[3].image_asset.hotspots[1].popover_text",
+      "$.chapters[3].image_asset.hotspots[2].x_percent",
+      "$.chapters[3].image_asset.hotspots[2].y_percent",
+      "$.chapters[3].image_asset.hotspots[2].w_percent",
+      "$.chapters[3].image_asset.hotspots[2].h_percent",
+      "$.chapters[3].image_asset.hotspots[2].label",
+      "$.chapters[3].image_asset.hotspots[2].popover_text",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].storyboard",
+      "$.chapters[4].storyboard[0].panel_id",
+      "$.chapters[4].storyboard[0].title",
+      "$.chapters[4].storyboard[0].description",
+      "$.chapters[4].storyboard[1].panel_id",
+      "$.chapters[4].storyboard[1].title",
+      "$.chapters[4].storyboard[1].description",
+      "$.chapters[4].storyboard[2].panel_id",
+      "$.chapters[4].storyboard[2].title",
+      "$.chapters[4].storyboard[2].description",
+      "$.chapters[4].executive_summary",
+      "$.chapters[4].key_takeaways",
+      "$.chapters[4].key_terms",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.asset_id",
+      "$.chapters[4].image_asset.chapter_number",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.url",
+      "$.chapters[4].image_asset.caption",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[0].label",
+      "$.chapters[4].image_asset.hotspots[0].popover_text",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].label",
+      "$.chapters[4].image_asset.hotspots[1].popover_text",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].storyboard",
+      "$.chapters[5].storyboard[0].panel_id",
+      "$.chapters[5].storyboard[0].title",
+      "$.chapters[5].storyboard[0].description",
+      "$.chapters[5].storyboard[1].panel_id",
+      "$.chapters[5].storyboard[1].title",
+      "$.chapters[5].storyboard[1].description",
+      "$.chapters[5].storyboard[2].panel_id",
+      "$.chapters[5].storyboard[2].title",
+      "$.chapters[5].storyboard[2].description",
+      "$.chapters[5].executive_summary",
+      "$.chapters[5].key_takeaways",
+      "$.chapters[5].key_terms",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.asset_id",
+      "$.chapters[5].image_asset.chapter_number",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.url",
+      "$.chapters[5].image_asset.caption",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[0].label",
+      "$.chapters[5].image_asset.hotspots[0].popover_text",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].storyboard",
+      "$.chapters[6].storyboard[0].panel_id",
+      "$.chapters[6].storyboard[0].title",
+      "$.chapters[6].storyboard[0].description",
+      "$.chapters[6].storyboard[1].panel_id",
+      "$.chapters[6].storyboard[1].title",
+      "$.chapters[6].storyboard[1].description",
+      "$.chapters[6].storyboard[2].panel_id",
+      "$.chapters[6].storyboard[2].title",
+      "$.chapters[6].storyboard[2].description",
+      "$.chapters[6].executive_summary",
+      "$.chapters[6].key_takeaways",
+      "$.chapters[6].key_terms",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.asset_id",
+      "$.chapters[6].image_asset.chapter_number",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.url",
+      "$.chapters[6].image_asset.caption",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[0].label",
+      "$.chapters[6].image_asset.hotspots[0].popover_text",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].label",
+      "$.chapters[6].image_asset.hotspots[1].popover_text"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Geometric Twins",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].storyboard[0]",
+        "source_title_field": "title",
+        "source_title": "Core Problem & Real-World Context",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].storyboard[1]",
+        "source_title_field": "title",
+        "source_title": "Mathematical Modeling & Abstraction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].storyboard[2]",
+        "source_title_field": "title",
+        "source_title": "Systematic Problem Solving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "Triangle Congruence Criteria Diagram",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Operations with Integers",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].storyboard[0]",
+        "source_title_field": "title",
+        "source_title": "Core Problem & Real-World Context",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].storyboard[1]",
+        "source_title_field": "title",
+        "source_title": "Mathematical Modeling & Abstraction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].storyboard[2]",
+        "source_title_field": "title",
+        "source_title": "Systematic Problem Solving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "Integer Token Bag & Zero Pair Model",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Finding Common Ground",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].storyboard[0]",
+        "source_title_field": "title",
+        "source_title": "Core Problem & Real-World Context",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].storyboard[1]",
+        "source_title_field": "title",
+        "source_title": "Mathematical Modeling & Abstraction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].storyboard[2]",
+        "source_title_field": "title",
+        "source_title": "Systematic Problem Solving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "Rectangular Floor Tiling Grid",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Another Peek Beyond the Point",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].storyboard[0]",
+        "source_title_field": "title",
+        "source_title": "Core Problem & Real-World Context",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].storyboard[1]",
+        "source_title_field": "title",
+        "source_title": "Mathematical Modeling & Abstraction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].storyboard[2]",
+        "source_title_field": "title",
+        "source_title": "Systematic Problem Solving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "Decimal Place Value Chart",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Connecting the Dots...",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].storyboard[0]",
+        "source_title_field": "title",
+        "source_title": "Core Problem & Real-World Context",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].storyboard[1]",
+        "source_title_field": "title",
+        "source_title": "Mathematical Modeling & Abstraction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].storyboard[2]",
+        "source_title_field": "title",
+        "source_title": "Systematic Problem Solving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "Statistical Dot Plot Distribution",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Constructions and Tilings",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].storyboard[0]",
+        "source_title_field": "title",
+        "source_title": "Core Problem & Real-World Context",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].storyboard[1]",
+        "source_title_field": "title",
+        "source_title": "Mathematical Modeling & Abstraction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].storyboard[2]",
+        "source_title_field": "title",
+        "source_title": "Systematic Problem Solving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "Regular Hexagon Construction",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Finding the Unknown",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].storyboard[0]",
+        "source_title_field": "title",
+        "source_title": "Core Problem & Real-World Context",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].storyboard[1]",
+        "source_title_field": "title",
+        "source_title": "Mathematical Modeling & Abstraction",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].storyboard[2]",
+        "source_title_field": "title",
+        "source_title": "Systematic Problem Solving",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "Algebraic Balance Scale",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      }
+    ],
+    "chapter_candidate_count": 35,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Mathematics (Ganita Prakash Part II)",
+    "dashboard_config": {
+      "theme": "NCERT Interactive Mathematics Studio",
+      "version": "2.0.0",
+      "interactive_features": [
+        "hotspot_overlays",
+        "storyboard_navigation",
+        "concept_search"
+      ]
     },
-    {
-      "panel_id": 2,
-      "title": "Mathematical Modeling & Abstraction",
-      "description": "Formulating visual and algebraic models to represent key quantitative rules."
-    },
-    {
-      "panel_id": 3,
-      "title": "Systematic Problem Solving",
-      "description": "Applying exact algorithms and criteria to achieve verified solutions."
-    }
-  ],
-  "executive_summary": "This chapter introduces the concept of geometric congruence in plane figures, focusing specifically on triangles. Figures are defined as congruent if they have identical shape and size, meaning one can be superimposed onto another through translation, rotation, or reflection to fit exactly. The chapter systematically builds criteria for triangle congruence: SSS (Side-Side-Side), SAS (Side-Angle-Side), ASA (Angle-Side-Angle) / AAS (Angle-Angle-Side), and RHS (Right-Hypotenuse-Side) for right-angled triangles. It emphasizes vertex correspondence (order of vertices in congruence notation like ΔABC ≅ ΔXYZ) and explores properties such as equal angles opposite to equal sides in isosceles triangles and 60° angles in equilateral triangles.",
-  "key_takeaways": [
-    "Congruence (≅): Relation between two figures having the exact same shape and exact same size.",
-    "SSS Criterion: If three sides of one triangle equal three sides of another, Δ1 ≅ Δ2.",
-    "SAS Criterion: If two sides and the included angle equal two sides and the included angle, Δ1 ≅ Δ2.",
-    "ASA / AAS Criterion: If two angles and one side equal two angles and the corresponding side, Δ1 ≅ Δ2."
-  ],
-  "key_terms": [
-    "Congruence (≅)",
-    "SSS Criterion",
-    "SAS Criterion",
-    "ASA / AAS Criterion",
-    "RHS Criterion",
-    "Isosceles Triangle Angle Rule"
-  ],
-  "image_asset": {
-    "asset_id": "img_ch1",
-    "chapter_number": 1,
-    "title": "Triangle Congruence Criteria Diagram",
-    "url": "/assets/images/ch1_triangle_congruence.png",
-    "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
-    "hotspots": [
+    "chapters": [
       {
-        "x_percent": 10,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SSS Criterion",
-        "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
+        "chapter_number": 1,
+        "chapter_title": "Geometric Twins",
+        "storyboard": [
+          {
+            "panel_id": 1,
+            "title": "Core Problem & Real-World Context",
+            "description": "Exploring fundamental principles of Geometric Twins through practical scenarios."
+          },
+          {
+            "panel_id": 2,
+            "title": "Mathematical Modeling & Abstraction",
+            "description": "Formulating visual and algebraic models to represent key quantitative rules."
+          },
+          {
+            "panel_id": 3,
+            "title": "Systematic Problem Solving",
+            "description": "Applying exact algorithms and criteria to achieve verified solutions."
+          }
+        ],
+        "executive_summary": "This chapter introduces the concept of geometric congruence in plane figures, focusing specifically on triangles. Figures are defined as congruent if they have identical shape and size, meaning one can be superimposed onto another through translation, rotation, or reflection to fit exactly. The chapter systematically builds criteria for triangle congruence: SSS (Side-Side-Side), SAS (Side-Angle-Side), ASA (Angle-Side-Angle) / AAS (Angle-Angle-Side), and RHS (Right-Hypotenuse-Side) for right-angled triangles. It emphasizes vertex correspondence (order of vertices in congruence notation like ΔABC ≅ ΔXYZ) and explores properties such as equal angles opposite to equal sides in isosceles triangles and 60° angles in equilateral triangles.",
+        "key_takeaways": [
+          "Congruence (≅): Relation between two figures having the exact same shape and exact same size.",
+          "SSS Criterion: If three sides of one triangle equal three sides of another, Δ1 ≅ Δ2.",
+          "SAS Criterion: If two sides and the included angle equal two sides and the included angle, Δ1 ≅ Δ2.",
+          "ASA / AAS Criterion: If two angles and one side equal two angles and the corresponding side, Δ1 ≅ Δ2."
+        ],
+        "key_terms": [
+          "Congruence (≅)",
+          "SSS Criterion",
+          "SAS Criterion",
+          "ASA / AAS Criterion",
+          "RHS Criterion",
+          "Isosceles Triangle Angle Rule"
+        ],
+        "image_asset": {
+          "asset_id": "img_ch1",
+          "chapter_number": 1,
+          "title": "Triangle Congruence Criteria Diagram",
+          "url": "/assets/images/ch1_triangle_congruence.png",
+          "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
+          "hotspots": [
+            {
+              "x_percent": 10,
+              "y_percent": 10,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "SSS Criterion",
+              "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
+            },
+            {
+              "x_percent": 55,
+              "y_percent": 10,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "SAS Criterion",
+              "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
+            },
+            {
+              "x_percent": 10,
+              "y_percent": 55,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "ASA Criterion",
+              "popover_text": "Angle-Side-Angle: Two angles and included side align."
+            },
+            {
+              "x_percent": 55,
+              "y_percent": 55,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "RHS Criterion",
+              "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
+            }
+          ]
+        }
       },
       {
-        "x_percent": 55,
-        "y_percent": 10,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "SAS Criterion",
-        "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
+        "chapter_number": 2,
+        "chapter_title": "Operations with Integers",
+        "storyboard": [
+          {
+            "panel_id": 1,
+            "title": "Core Problem & Real-World Context",
+            "description": "Exploring fundamental principles of Operations with Integers through practical scenarios."
+          },
+          {
+            "panel_id": 2,
+            "title": "Mathematical Modeling & Abstraction",
+            "description": "Formulating visual and algebraic models to represent key quantitative rules."
+          },
+          {
+            "panel_id": 3,
+            "title": "Systematic Problem Solving",
+            "description": "Applying exact algorithms and criteria to achieve verified solutions."
+          }
+        ],
+        "executive_summary": "This chapter builds conceptual clarity for integer arithmetic (multiplication and division) using physical token models and number line representations. Positive integers are modeled as green tokens (+1) and negative integers as red tokens (-1), where one positive and one negative form a 'zero pair'. Multiplication by a positive multiplier means placing tokens into an empty bag; multiplication by a negative multiplier means removing tokens from the bag. Rules for signs in multiplication and division are systematically derived: (+)*(+) = +, (+)*(-) = -, (-)*(+) = -, and (-)*(-) = +. The chapter also reinforces the distributive property a*(b + c) = a*b + a*c and integer division concepts.",
+        "key_takeaways": [
+          "Zero Pair: Combination of (+1) and (-1) tokens whose net value is 0.",
+          "Additive Inverse: The number that yields 0 when added to a given integer 'a', denoted '-a'.",
+          "Integer Multiplication Rule 1: (+a) × (+b) = +(a × b) and (-a) × (-b) = +(a × b)",
+          "Integer Multiplication Rule 2: (+a) × (-b) = -(a × b) and (-a) × (+b) = -(a × b)"
+        ],
+        "key_terms": [
+          "Zero Pair",
+          "Additive Inverse",
+          "Integer Multiplication Rule 1",
+          "Integer Multiplication Rule 2",
+          "Integer Division Rule"
+        ],
+        "image_asset": {
+          "asset_id": "img_ch2",
+          "chapter_number": 2,
+          "title": "Integer Token Bag & Zero Pair Model",
+          "url": "/assets/images/ch2_integer_token_model.png",
+          "caption": "Token bag representation of positive (+1) green tokens, negative (-1) red tokens, and zero pairs.",
+          "hotspots": [
+            {
+              "x_percent": 8,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Positive Bag",
+              "popover_text": "Bag A contains +4 green tokens (+1 each)."
+            },
+            {
+              "x_percent": 38,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Zero Pairs",
+              "popover_text": "Green (+1) and Red (-1) tokens combine to form net 0 value."
+            },
+            {
+              "x_percent": 68,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Negative Multiplication",
+              "popover_text": "(-4) × (-2) = +8: Removing 8 red tokens leaves +8 positive green tokens."
+            }
+          ]
+        }
       },
       {
-        "x_percent": 10,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "ASA Criterion",
-        "popover_text": "Angle-Side-Angle: Two angles and included side align."
+        "chapter_number": 3,
+        "chapter_title": "Finding Common Ground",
+        "storyboard": [
+          {
+            "panel_id": 1,
+            "title": "Core Problem & Real-World Context",
+            "description": "Exploring fundamental principles of Finding Common Ground through practical scenarios."
+          },
+          {
+            "panel_id": 2,
+            "title": "Mathematical Modeling & Abstraction",
+            "description": "Formulating visual and algebraic models to represent key quantitative rules."
+          },
+          {
+            "panel_id": 3,
+            "title": "Systematic Problem Solving",
+            "description": "Applying exact algorithms and criteria to achieve verified solutions."
+          }
+        ],
+        "executive_summary": "This chapter explores Factors, Multiples, Highest Common Factor (HCF / GCD), and Least Common Multiple (LCM) through practical real-world problems such as finding maximum square tile dimensions to fit a room without cutting, or finding the shortest common length for cloth torans. It establishes prime factorisation as a structured method to find HCF (by taking the product of common prime factors with the smallest powers) and LCM (by taking the product of all prime factors with their highest powers). The relationship between HCF, LCM, and number products is also investigated.",
+        "key_takeaways": [
+          "Factor: A number that divides another number completely leaving remainder 0.",
+          "Multiple: The product of a given number and any integer.",
+          "Co-prime Numbers: Two numbers whose HCF is 1.",
+          "HCF-LCM Relation Formula: HCF(a, b) × LCM(a, b) = a × b"
+        ],
+        "key_terms": [
+          "Factor",
+          "Multiple",
+          "Co-prime Numbers",
+          "HCF-LCM Relation Formula"
+        ],
+        "image_asset": {
+          "asset_id": "img_ch3",
+          "chapter_number": 3,
+          "title": "Rectangular Floor Tiling Grid",
+          "url": "/assets/images/ch3_hcf_floor_tiling.png",
+          "caption": "12 ft × 16 ft floor tiled with 4 ft × 4 ft square tiles representing HCF(12, 16) = 4.",
+          "hotspots": [
+            {
+              "x_percent": 0,
+              "y_percent": 0,
+              "w_percent": 100,
+              "h_percent": 100,
+              "label": "4x4 Tile Grid",
+              "popover_text": "12 tiles of size 4ft x 4ft tile a 12ft x 16ft room completely without cutting."
+            }
+          ]
+        }
       },
       {
-        "x_percent": 55,
-        "y_percent": 55,
-        "w_percent": 40,
-        "h_percent": 40,
-        "label": "RHS Criterion",
-        "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
+        "chapter_number": 4,
+        "chapter_title": "Another Peek Beyond the Point",
+        "storyboard": [
+          {
+            "panel_id": 1,
+            "title": "Core Problem & Real-World Context",
+            "description": "Exploring fundamental principles of Another Peek Beyond the Point through practical scenarios."
+          },
+          {
+            "panel_id": 2,
+            "title": "Mathematical Modeling & Abstraction",
+            "description": "Formulating visual and algebraic models to represent key quantitative rules."
+          },
+          {
+            "panel_id": 3,
+            "title": "Systematic Problem Solving",
+            "description": "Applying exact algorithms and criteria to achieve verified solutions."
+          }
+        ],
+        "executive_summary": "This chapter extends place-value concepts to decimal arithmetic (multiplication and division). Decimals represent decimal fractions with denominators 10, 100, 1000. The chapter teaches decimal multiplication by multiplying numbers as integers and placing the decimal point according to the sum of decimal places in the factors. For division, it presents methods including converting fractions to equivalent fractions with power-of-10 denominators, and shifting decimal points in both dividend and divisor. Practical unit conversions (cm to m, g to kg, ml to l) are thoroughly addressed.",
+        "key_takeaways": [
+          "Decimal Fraction: A fraction whose denominator is a power of 10 (10, 100, 1000...).",
+          "Metric Conversion: Length: 1 km = 1000 m; 1 m = 100 cm; 1 cm = 10 mm",
+          "Metric Conversion: Mass & Volume: 1 kg = 1000 g; 1 g = 1000 mg; 1 L = 1000 mL"
+        ],
+        "key_terms": [
+          "Decimal Fraction",
+          "Metric Conversion: Length",
+          "Metric Conversion: Mass & Volume"
+        ],
+        "image_asset": {
+          "asset_id": "img_ch4",
+          "chapter_number": 4,
+          "title": "Decimal Place Value Chart",
+          "url": "/assets/images/ch4_decimal_place_value.png",
+          "caption": "Place value representation for 27.53 showing Tens, Ones, Tenths, and Hundredths.",
+          "hotspots": [
+            {
+              "x_percent": 10,
+              "y_percent": 30,
+              "w_percent": 32,
+              "h_percent": 50,
+              "label": "Whole Units",
+              "popover_text": "2 Tens (20) + 7 Ones (7)."
+            },
+            {
+              "x_percent": 45,
+              "y_percent": 30,
+              "w_percent": 12,
+              "h_percent": 50,
+              "label": "Decimal Separator",
+              "popover_text": "Decimal point separates whole numbers from fractional parts."
+            },
+            {
+              "x_percent": 60,
+              "y_percent": 30,
+              "w_percent": 32,
+              "h_percent": 50,
+              "label": "Fractional Parts",
+              "popover_text": "5 Tenths (5/10) + 3 Hundredths (3/100)."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Connecting the Dots...",
+        "storyboard": [
+          {
+            "panel_id": 1,
+            "title": "Core Problem & Real-World Context",
+            "description": "Exploring fundamental principles of Connecting the Dots... through practical scenarios."
+          },
+          {
+            "panel_id": 2,
+            "title": "Mathematical Modeling & Abstraction",
+            "description": "Formulating visual and algebraic models to represent key quantitative rules."
+          },
+          {
+            "panel_id": 3,
+            "title": "Systematic Problem Solving",
+            "description": "Applying exact algorithms and criteria to achieve verified solutions."
+          }
+        ],
+        "executive_summary": "This chapter introduces statistical thinking, data collection, central tendency measures (arithmetic mean and median), and graphical data representations (dot plots and clustered/double column graphs). The arithmetic mean is conceptualized as a 'fair-share' equalized value, while the median is the middle value of ordered data. The chapter explores how extreme values (outliers) affect the mean significantly while leaving the median relatively stable. It also covers interpreting variability, clusters, gaps, and double-bar graphs for comparative analysis across groups.",
+        "key_takeaways": [
+          "Arithmetic Mean Formula: Mean = (∑ x_i) / N",
+          "Median Rule: Middle term of sorted dataset.",
+          "Dot Plot: Statistical chart displaying dots stacked above a number line for discrete data.",
+          "Clustered Bar Graph: Bar graph displaying multiple bars per category for side-by-side comparison."
+        ],
+        "key_terms": [
+          "Arithmetic Mean Formula",
+          "Median Rule",
+          "Dot Plot",
+          "Clustered Bar Graph"
+        ],
+        "image_asset": {
+          "asset_id": "img_ch5",
+          "chapter_number": 5,
+          "title": "Statistical Dot Plot Distribution",
+          "url": "/assets/images/ch5_dotplot_distribution.png",
+          "caption": "Dot plot of student heights showing cluster at mode 115 cm and range spread.",
+          "hotspots": [
+            {
+              "x_percent": 45,
+              "y_percent": 20,
+              "w_percent": 15,
+              "h_percent": 60,
+              "label": "Cluster / Mode",
+              "popover_text": "Peak at 115 cm represents mode (5 students)."
+            },
+            {
+              "x_percent": 5,
+              "y_percent": 60,
+              "w_percent": 15,
+              "h_percent": 30,
+              "label": "Minimum Boundary",
+              "popover_text": "Minimum height value = 101 cm."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Constructions and Tilings",
+        "storyboard": [
+          {
+            "panel_id": 1,
+            "title": "Core Problem & Real-World Context",
+            "description": "Exploring fundamental principles of Constructions and Tilings through practical scenarios."
+          },
+          {
+            "panel_id": 2,
+            "title": "Mathematical Modeling & Abstraction",
+            "description": "Formulating visual and algebraic models to represent key quantitative rules."
+          },
+          {
+            "panel_id": 3,
+            "title": "Systematic Problem Solving",
+            "description": "Applying exact algorithms and criteria to achieve verified solutions."
+          }
+        ],
+        "executive_summary": "This chapter teaches classical practical geometry using strictly an unmarked ruler and compass. Key constructions include: perpendicular bisector of a line segment, 90° angle at a point on a line, angle bisector, copying an angle (SSS application), parallel lines via equal corresponding angles, 60°/120° angles via equilateral triangle construction, 30°/15° angles via angle bisection, pointed arches, and regular hexagons (decomposed into 6 equilateral triangles around 360° center point). The second part explores Tiling (tessellations) and Tangram 7-piece puzzles.",
+        "key_takeaways": [
+          "Bisection: Dividing a geometric quantity (segment, angle) into two identical equal parts.",
+          "Regular Hexagon Interior Angle: Each interior angle = 120°; composed of 6 equilateral triangles.",
+          "Tangram: 7-piece dissection puzzle originating in China consisting of 5 triangles, 1 square, 1 parallelogram."
+        ],
+        "key_terms": [
+          "Bisection",
+          "Regular Hexagon Interior Angle",
+          "Tangram"
+        ],
+        "image_asset": {
+          "asset_id": "img_ch6",
+          "chapter_number": 6,
+          "title": "Regular Hexagon Construction",
+          "url": "/assets/images/ch6_regular_hexagon_construction.png",
+          "caption": "Construction of regular hexagon using straightedge and compass showing 6 central 60° equilateral triangles.",
+          "hotspots": [
+            {
+              "x_percent": 25,
+              "y_percent": 25,
+              "w_percent": 50,
+              "h_percent": 50,
+              "label": "Central Equilateral Triangles",
+              "popover_text": "6 equilateral triangles meet at center O with 60° angles."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Finding the Unknown",
+        "storyboard": [
+          {
+            "panel_id": 1,
+            "title": "Core Problem & Real-World Context",
+            "description": "Exploring fundamental principles of Finding the Unknown through practical scenarios."
+          },
+          {
+            "panel_id": 2,
+            "title": "Mathematical Modeling & Abstraction",
+            "description": "Formulating visual and algebraic models to represent key quantitative rules."
+          },
+          {
+            "panel_id": 3,
+            "title": "Systematic Problem Solving",
+            "description": "Applying exact algorithms and criteria to achieve verified solutions."
+          }
+        ],
+        "executive_summary": "This chapter introduces elementary algebra, equations, and systematic methods for finding unknown quantities. It begins with visual balance metaphors like weighing scales and hanging mobiles, where equality (LHS = RHS) is maintained if equal weights are added, removed, multiplied, or divided on both sides. It moves from trial-and-error to systematic inverse operations (addition ↔ subtraction, multiplication ↔ division). Word problems, function machines, error analysis ('Mind the Mistake, Mend the Mistake'), and a historical note on Bījagaṇita (ancient Indian algebra) are integrated.",
+        "key_takeaways": [
+          "Equation: A mathematical statement asserting that two expressions are equal (LHS = RHS).",
+          "Variable (Letter-Number): A symbol/letter representing an unknown numerical value.",
+          "Inverse Operations Rule: +a ↔ -a; ×a ↔ ÷a",
+          "Bījagaṇita: Historical Indian name for algebra ('seed mathematics')."
+        ],
+        "key_terms": [
+          "Equation",
+          "Variable (Letter-Number)",
+          "Inverse Operations Rule",
+          "Bījagaṇita"
+        ],
+        "image_asset": {
+          "asset_id": "img_ch7",
+          "chapter_number": 7,
+          "title": "Algebraic Balance Scale",
+          "url": "/assets/images/ch7_weighing_scale_balance.png",
+          "caption": "Balanced scale illustrating 2e + 2 = 8 kg solved systematically via inverse operations.",
+          "hotspots": [
+            {
+              "x_percent": 5,
+              "y_percent": 20,
+              "w_percent": 30,
+              "h_percent": 60,
+              "label": "LHS Pan",
+              "popover_text": "LHS: 2 unknown egg weights 'e' + 2 kg weight."
+            },
+            {
+              "x_percent": 65,
+              "y_percent": 20,
+              "w_percent": 30,
+              "h_percent": 60,
+              "label": "RHS Pan",
+              "popover_text": "RHS: 8 kg fixed weight."
+            }
+          ]
+        }
       }
     ]
   },
-  "video_url": "https://notebooklm.link.google/uS60QFyR4Nwn",
-  "title": "Geometric Twins (Congruence of Triangles) - Chapter Overview"
+  "grade": "7",
+  "chapter_id": "G7-MAT-U03-C01",
+  "chapter_number": 1,
+  "chapter_title": "Geometric Twins (Congruence of Triangles)",
+  "title": "Geometric Twins (Congruence of Triangles) - Chapter Overview",
+  "video_url": "https://notebooklm.link.google/v7mat01",
+  "video_title": "Geometric Twins (Congruence of Triangles) Interactive Video Studio",
+  "image_asset": {
+    "title": "Geometric Twins (Congruence of Triangles) Concept Diagram",
+    "asset_url": "/assets/images/ch01_concept_map.png",
+    "url": "/assets/images/ch01_concept_map.png",
+    "filename": "ch01_concept_map.png",
+    "type": "16:9 Diagram",
+    "hotspots": [
+      {
+        "id": "hs_1_1",
+        "label": "Core Mechanism",
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of Geometric Twins (Congruence of Triangles)."
+      },
+      {
+        "id": "hs_1_2",
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for Geometric Twins (Congruence of Triangles)."
+      }
+    ]
+  },
+  "unit": "U03",
+  "unit_number": 3,
+  "unit_title": "Unit 3"
 }

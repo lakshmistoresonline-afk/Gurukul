@@ -1,5 +1,6 @@
 package com.gurukul.ai.lms.ui.components
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -59,7 +60,7 @@ fun PedagogyGuidanceView(
             Card(
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF0F172A)),
                 shape = RoundedCornerShape(20.dp),
-                border = CardBorder(1.dp, Color(0xFF1E293B)),
+                border = BorderStroke(1.dp, Color(0xFF1E293B)),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Column(

@@ -1,5 +1,6 @@
 package com.gurukul.ai.lms.ui.components
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -54,7 +55,7 @@ fun AdaptiveQuizEngine(
             Card(
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF0F172A)),
                 shape = RoundedCornerShape(24.dp),
-                border = CardBorder(1.dp, Color(0xFF1E293B)),
+                border = BorderStroke(1.dp, Color(0xFF1E293B)),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Column(
@@ -105,7 +106,7 @@ fun AdaptiveQuizEngine(
             Card(
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF0F172A)),
                 shape = RoundedCornerShape(20.dp),
-                border = CardBorder(1.dp, Color(0xFF1E293B)),
+                border = BorderStroke(1.dp, Color(0xFF1E293B)),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Column(
@@ -152,7 +153,7 @@ fun AdaptiveQuizEngine(
                             Card(
                                 colors = CardDefaults.cardColors(containerColor = containerColor),
                                 shape = RoundedCornerShape(12.dp),
-                                border = CardBorder(1.dp, borderColor),
+                                border = BorderStroke(1.dp, borderColor),
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .clickable {

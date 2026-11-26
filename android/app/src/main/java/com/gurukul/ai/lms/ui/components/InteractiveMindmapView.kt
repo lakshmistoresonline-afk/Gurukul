@@ -1,6 +1,8 @@
 package com.gurukul.ai.lms.ui.components
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTransformGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -31,7 +33,7 @@ fun InteractiveMindmapView(
     modifier: Modifier = Modifier
 ) {
     var panOffset by remember { mutableStateOf(Offset.Zero) }
-    var scaleFactor by remember { floatStateOf(1f) }
+    var scaleFactor by remember { mutableFloatStateOf(1f) }
 
     Column(
         modifier = modifier
@@ -78,7 +80,7 @@ fun InteractiveMindmapView(
         Card(
             colors = CardDefaults.cardColors(containerColor = Color(0xFF0F172A)),
             shape = RoundedCornerShape(24.dp),
-            border = CardBorder(1.dp, Color(0xFF1E293B)),
+            border = BorderStroke(1.dp, Color(0xFF1E293B)),
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f)
@@ -138,7 +140,7 @@ fun InteractiveMindmapView(
                                 containerColor = if (isRoot) Color(0xFF1E1B4B) else Color(0xFF020617)
                             ),
                             shape = RoundedCornerShape(16.dp),
-                            border = CardBorder(
+                            border = BorderStroke(
                                 1.dp,
                                 if (isRoot) Color(0xFF6366F1) else Color(0xFF1E293B)
                             ),

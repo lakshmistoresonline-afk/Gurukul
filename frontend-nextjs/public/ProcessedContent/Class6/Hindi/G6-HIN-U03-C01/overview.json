@@ -1,107 +1,2374 @@
 {
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_a8530bcec749c228",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_6",
+    "class_level": 6
+  },
+  "subject": "Hindi",
+  "artifact": {
+    "artifact_type": "overview",
+    "source_file_name": "03-Overview.json",
+    "source_relative_path": "Contents/Class 6/Hindi/Source Files/03-Overview.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "af880b6d9916a89f1b34eff60feca7626a5377c00a73c601dbe8aec865129426",
+    "source_semantic_sha256": "0755dab16ede34b954b1e27a9c5be5925f2cf210f189435fd4e03beab47a7a7b",
+    "source_byte_length": 144333,
+    "source_encoding": "utf-8",
+    "source_field_count": 738,
+    "field_inventory": [
+      "$.module_id",
+      "$.book_title",
+      "$.total_chapters",
+      "$.dashboard_config",
+      "$.dashboard_config.ui_mode",
+      "$.dashboard_config.theme_color",
+      "$.dashboard_config.enable_hotspot_overlays",
+      "$.dashboard_config.enable_storyboard_carousel",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].core_summary",
+      "$.chapters[0].key_concepts",
+      "$.chapters[0].key_terms",
+      "$.chapters[0].key_terms[0].term",
+      "$.chapters[0].key_terms[0].definition",
+      "$.chapters[0].key_terms[1].term",
+      "$.chapters[0].key_terms[1].definition",
+      "$.chapters[0].key_terms[2].term",
+      "$.chapters[0].key_terms[2].definition",
+      "$.chapters[0].key_terms[3].term",
+      "$.chapters[0].key_terms[3].definition",
+      "$.chapters[0].key_terms[4].term",
+      "$.chapters[0].key_terms[4].definition",
+      "$.chapters[0].key_terms[5].term",
+      "$.chapters[0].key_terms[5].definition",
+      "$.chapters[0].key_terms[6].term",
+      "$.chapters[0].key_terms[6].definition",
+      "$.chapters[0].key_terms[7].term",
+      "$.chapters[0].key_terms[7].definition",
+      "$.chapters[0].key_terms[8].term",
+      "$.chapters[0].key_terms[8].definition",
+      "$.chapters[0].key_terms[9].term",
+      "$.chapters[0].key_terms[9].definition",
+      "$.chapters[0].key_takeaways",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.image_id",
+      "$.chapters[0].image_asset.filename",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.description",
+      "$.chapters[0].image_asset.url",
+      "$.chapters[0].image_asset.aspect_ratio",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].id",
+      "$.chapters[0].image_asset.hotspots[0].label",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].id",
+      "$.chapters[0].image_asset.hotspots[1].label",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].id",
+      "$.chapters[0].image_asset.hotspots[2].label",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].storyboard",
+      "$.chapters[0].storyboard.scene_1",
+      "$.chapters[0].storyboard.scene_2",
+      "$.chapters[0].storyboard.scene_3",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].core_summary",
+      "$.chapters[1].key_concepts",
+      "$.chapters[1].key_terms",
+      "$.chapters[1].key_terms[0].term",
+      "$.chapters[1].key_terms[0].definition",
+      "$.chapters[1].key_terms[1].term",
+      "$.chapters[1].key_terms[1].definition",
+      "$.chapters[1].key_terms[2].term",
+      "$.chapters[1].key_terms[2].definition",
+      "$.chapters[1].key_terms[3].term",
+      "$.chapters[1].key_terms[3].definition",
+      "$.chapters[1].key_terms[4].term",
+      "$.chapters[1].key_terms[4].definition",
+      "$.chapters[1].key_terms[5].term",
+      "$.chapters[1].key_terms[5].definition",
+      "$.chapters[1].key_terms[6].term",
+      "$.chapters[1].key_terms[6].definition",
+      "$.chapters[1].key_terms[7].term",
+      "$.chapters[1].key_terms[7].definition",
+      "$.chapters[1].key_terms[8].term",
+      "$.chapters[1].key_terms[8].definition",
+      "$.chapters[1].key_terms[9].term",
+      "$.chapters[1].key_terms[9].definition",
+      "$.chapters[1].key_takeaways",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.image_id",
+      "$.chapters[1].image_asset.filename",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.description",
+      "$.chapters[1].image_asset.url",
+      "$.chapters[1].image_asset.aspect_ratio",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].id",
+      "$.chapters[1].image_asset.hotspots[0].label",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].id",
+      "$.chapters[1].image_asset.hotspots[1].label",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].id",
+      "$.chapters[1].image_asset.hotspots[2].label",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].storyboard",
+      "$.chapters[1].storyboard.scene_1",
+      "$.chapters[1].storyboard.scene_2",
+      "$.chapters[1].storyboard.scene_3",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].core_summary",
+      "$.chapters[2].key_concepts",
+      "$.chapters[2].key_terms",
+      "$.chapters[2].key_terms[0].term",
+      "$.chapters[2].key_terms[0].definition",
+      "$.chapters[2].key_terms[1].term",
+      "$.chapters[2].key_terms[1].definition",
+      "$.chapters[2].key_terms[2].term",
+      "$.chapters[2].key_terms[2].definition",
+      "$.chapters[2].key_terms[3].term",
+      "$.chapters[2].key_terms[3].definition",
+      "$.chapters[2].key_terms[4].term",
+      "$.chapters[2].key_terms[4].definition",
+      "$.chapters[2].key_terms[5].term",
+      "$.chapters[2].key_terms[5].definition",
+      "$.chapters[2].key_terms[6].term",
+      "$.chapters[2].key_terms[6].definition",
+      "$.chapters[2].key_terms[7].term",
+      "$.chapters[2].key_terms[7].definition",
+      "$.chapters[2].key_terms[8].term",
+      "$.chapters[2].key_terms[8].definition",
+      "$.chapters[2].key_terms[9].term",
+      "$.chapters[2].key_terms[9].definition",
+      "$.chapters[2].key_takeaways",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.image_id",
+      "$.chapters[2].image_asset.filename",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.description",
+      "$.chapters[2].image_asset.url",
+      "$.chapters[2].image_asset.aspect_ratio",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].id",
+      "$.chapters[2].image_asset.hotspots[0].label",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].image_asset.hotspots[1].id",
+      "$.chapters[2].image_asset.hotspots[1].label",
+      "$.chapters[2].image_asset.hotspots[1].x_percent",
+      "$.chapters[2].image_asset.hotspots[1].y_percent",
+      "$.chapters[2].image_asset.hotspots[1].w_percent",
+      "$.chapters[2].image_asset.hotspots[1].h_percent",
+      "$.chapters[2].image_asset.hotspots[2].id",
+      "$.chapters[2].image_asset.hotspots[2].label",
+      "$.chapters[2].image_asset.hotspots[2].x_percent",
+      "$.chapters[2].image_asset.hotspots[2].y_percent",
+      "$.chapters[2].image_asset.hotspots[2].w_percent",
+      "$.chapters[2].image_asset.hotspots[2].h_percent",
+      "$.chapters[2].storyboard",
+      "$.chapters[2].storyboard.scene_1",
+      "$.chapters[2].storyboard.scene_2",
+      "$.chapters[2].storyboard.scene_3",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].core_summary",
+      "$.chapters[3].key_concepts",
+      "$.chapters[3].key_terms",
+      "$.chapters[3].key_terms[0].term",
+      "$.chapters[3].key_terms[0].definition",
+      "$.chapters[3].key_terms[1].term",
+      "$.chapters[3].key_terms[1].definition",
+      "$.chapters[3].key_terms[2].term",
+      "$.chapters[3].key_terms[2].definition",
+      "$.chapters[3].key_terms[3].term",
+      "$.chapters[3].key_terms[3].definition",
+      "$.chapters[3].key_terms[4].term",
+      "$.chapters[3].key_terms[4].definition",
+      "$.chapters[3].key_terms[5].term",
+      "$.chapters[3].key_terms[5].definition",
+      "$.chapters[3].key_terms[6].term",
+      "$.chapters[3].key_terms[6].definition",
+      "$.chapters[3].key_terms[7].term",
+      "$.chapters[3].key_terms[7].definition",
+      "$.chapters[3].key_terms[8].term",
+      "$.chapters[3].key_terms[8].definition",
+      "$.chapters[3].key_terms[9].term",
+      "$.chapters[3].key_terms[9].definition",
+      "$.chapters[3].key_takeaways",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.image_id",
+      "$.chapters[3].image_asset.filename",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.description",
+      "$.chapters[3].image_asset.url",
+      "$.chapters[3].image_asset.aspect_ratio",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].id",
+      "$.chapters[3].image_asset.hotspots[0].label",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].image_asset.hotspots[1].id",
+      "$.chapters[3].image_asset.hotspots[1].label",
+      "$.chapters[3].image_asset.hotspots[1].x_percent",
+      "$.chapters[3].image_asset.hotspots[1].y_percent",
+      "$.chapters[3].image_asset.hotspots[1].w_percent",
+      "$.chapters[3].image_asset.hotspots[1].h_percent",
+      "$.chapters[3].image_asset.hotspots[2].id",
+      "$.chapters[3].image_asset.hotspots[2].label",
+      "$.chapters[3].image_asset.hotspots[2].x_percent",
+      "$.chapters[3].image_asset.hotspots[2].y_percent",
+      "$.chapters[3].image_asset.hotspots[2].w_percent",
+      "$.chapters[3].image_asset.hotspots[2].h_percent",
+      "$.chapters[3].storyboard",
+      "$.chapters[3].storyboard.scene_1",
+      "$.chapters[3].storyboard.scene_2",
+      "$.chapters[3].storyboard.scene_3",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].core_summary",
+      "$.chapters[4].key_concepts",
+      "$.chapters[4].key_terms",
+      "$.chapters[4].key_terms[0].term",
+      "$.chapters[4].key_terms[0].definition",
+      "$.chapters[4].key_terms[1].term",
+      "$.chapters[4].key_terms[1].definition",
+      "$.chapters[4].key_terms[2].term",
+      "$.chapters[4].key_terms[2].definition",
+      "$.chapters[4].key_terms[3].term",
+      "$.chapters[4].key_terms[3].definition",
+      "$.chapters[4].key_terms[4].term",
+      "$.chapters[4].key_terms[4].definition",
+      "$.chapters[4].key_terms[5].term",
+      "$.chapters[4].key_terms[5].definition",
+      "$.chapters[4].key_terms[6].term",
+      "$.chapters[4].key_terms[6].definition",
+      "$.chapters[4].key_terms[7].term",
+      "$.chapters[4].key_terms[7].definition",
+      "$.chapters[4].key_terms[8].term",
+      "$.chapters[4].key_terms[8].definition",
+      "$.chapters[4].key_terms[9].term",
+      "$.chapters[4].key_terms[9].definition",
+      "$.chapters[4].key_takeaways",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.image_id",
+      "$.chapters[4].image_asset.filename",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.description",
+      "$.chapters[4].image_asset.url",
+      "$.chapters[4].image_asset.aspect_ratio",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].id",
+      "$.chapters[4].image_asset.hotspots[0].label",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].id",
+      "$.chapters[4].image_asset.hotspots[1].label",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[2].id",
+      "$.chapters[4].image_asset.hotspots[2].label",
+      "$.chapters[4].image_asset.hotspots[2].x_percent",
+      "$.chapters[4].image_asset.hotspots[2].y_percent",
+      "$.chapters[4].image_asset.hotspots[2].w_percent",
+      "$.chapters[4].image_asset.hotspots[2].h_percent",
+      "$.chapters[4].storyboard",
+      "$.chapters[4].storyboard.scene_1",
+      "$.chapters[4].storyboard.scene_2",
+      "$.chapters[4].storyboard.scene_3",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].core_summary",
+      "$.chapters[5].key_concepts",
+      "$.chapters[5].key_terms",
+      "$.chapters[5].key_terms[0].term",
+      "$.chapters[5].key_terms[0].definition",
+      "$.chapters[5].key_terms[1].term",
+      "$.chapters[5].key_terms[1].definition",
+      "$.chapters[5].key_terms[2].term",
+      "$.chapters[5].key_terms[2].definition",
+      "$.chapters[5].key_terms[3].term",
+      "$.chapters[5].key_terms[3].definition",
+      "$.chapters[5].key_terms[4].term",
+      "$.chapters[5].key_terms[4].definition",
+      "$.chapters[5].key_terms[5].term",
+      "$.chapters[5].key_terms[5].definition",
+      "$.chapters[5].key_terms[6].term",
+      "$.chapters[5].key_terms[6].definition",
+      "$.chapters[5].key_terms[7].term",
+      "$.chapters[5].key_terms[7].definition",
+      "$.chapters[5].key_terms[8].term",
+      "$.chapters[5].key_terms[8].definition",
+      "$.chapters[5].key_terms[9].term",
+      "$.chapters[5].key_terms[9].definition",
+      "$.chapters[5].key_takeaways",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.image_id",
+      "$.chapters[5].image_asset.filename",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.description",
+      "$.chapters[5].image_asset.url",
+      "$.chapters[5].image_asset.aspect_ratio",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].id",
+      "$.chapters[5].image_asset.hotspots[0].label",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[1].id",
+      "$.chapters[5].image_asset.hotspots[1].label",
+      "$.chapters[5].image_asset.hotspots[1].x_percent",
+      "$.chapters[5].image_asset.hotspots[1].y_percent",
+      "$.chapters[5].image_asset.hotspots[1].w_percent",
+      "$.chapters[5].image_asset.hotspots[1].h_percent",
+      "$.chapters[5].image_asset.hotspots[2].id",
+      "$.chapters[5].image_asset.hotspots[2].label",
+      "$.chapters[5].image_asset.hotspots[2].x_percent",
+      "$.chapters[5].image_asset.hotspots[2].y_percent",
+      "$.chapters[5].image_asset.hotspots[2].w_percent",
+      "$.chapters[5].image_asset.hotspots[2].h_percent",
+      "$.chapters[5].storyboard",
+      "$.chapters[5].storyboard.scene_1",
+      "$.chapters[5].storyboard.scene_2",
+      "$.chapters[5].storyboard.scene_3",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].core_summary",
+      "$.chapters[6].key_concepts",
+      "$.chapters[6].key_terms",
+      "$.chapters[6].key_terms[0].term",
+      "$.chapters[6].key_terms[0].definition",
+      "$.chapters[6].key_terms[1].term",
+      "$.chapters[6].key_terms[1].definition",
+      "$.chapters[6].key_terms[2].term",
+      "$.chapters[6].key_terms[2].definition",
+      "$.chapters[6].key_terms[3].term",
+      "$.chapters[6].key_terms[3].definition",
+      "$.chapters[6].key_terms[4].term",
+      "$.chapters[6].key_terms[4].definition",
+      "$.chapters[6].key_terms[5].term",
+      "$.chapters[6].key_terms[5].definition",
+      "$.chapters[6].key_terms[6].term",
+      "$.chapters[6].key_terms[6].definition",
+      "$.chapters[6].key_terms[7].term",
+      "$.chapters[6].key_terms[7].definition",
+      "$.chapters[6].key_terms[8].term",
+      "$.chapters[6].key_terms[8].definition",
+      "$.chapters[6].key_terms[9].term",
+      "$.chapters[6].key_terms[9].definition",
+      "$.chapters[6].key_takeaways",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.image_id",
+      "$.chapters[6].image_asset.filename",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.description",
+      "$.chapters[6].image_asset.url",
+      "$.chapters[6].image_asset.aspect_ratio",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].id",
+      "$.chapters[6].image_asset.hotspots[0].label",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].id",
+      "$.chapters[6].image_asset.hotspots[1].label",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[2].id",
+      "$.chapters[6].image_asset.hotspots[2].label",
+      "$.chapters[6].image_asset.hotspots[2].x_percent",
+      "$.chapters[6].image_asset.hotspots[2].y_percent",
+      "$.chapters[6].image_asset.hotspots[2].w_percent",
+      "$.chapters[6].image_asset.hotspots[2].h_percent",
+      "$.chapters[6].storyboard",
+      "$.chapters[6].storyboard.scene_1",
+      "$.chapters[6].storyboard.scene_2",
+      "$.chapters[6].storyboard.scene_3",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].core_summary",
+      "$.chapters[7].key_concepts",
+      "$.chapters[7].key_terms",
+      "$.chapters[7].key_terms[0].term",
+      "$.chapters[7].key_terms[0].definition",
+      "$.chapters[7].key_terms[1].term",
+      "$.chapters[7].key_terms[1].definition",
+      "$.chapters[7].key_terms[2].term",
+      "$.chapters[7].key_terms[2].definition",
+      "$.chapters[7].key_terms[3].term",
+      "$.chapters[7].key_terms[3].definition",
+      "$.chapters[7].key_terms[4].term",
+      "$.chapters[7].key_terms[4].definition",
+      "$.chapters[7].key_terms[5].term",
+      "$.chapters[7].key_terms[5].definition",
+      "$.chapters[7].key_terms[6].term",
+      "$.chapters[7].key_terms[6].definition",
+      "$.chapters[7].key_terms[7].term",
+      "$.chapters[7].key_terms[7].definition",
+      "$.chapters[7].key_terms[8].term",
+      "$.chapters[7].key_terms[8].definition",
+      "$.chapters[7].key_terms[9].term",
+      "$.chapters[7].key_terms[9].definition",
+      "$.chapters[7].key_takeaways",
+      "$.chapters[7].image_asset",
+      "$.chapters[7].image_asset.image_id",
+      "$.chapters[7].image_asset.filename",
+      "$.chapters[7].image_asset.title",
+      "$.chapters[7].image_asset.description",
+      "$.chapters[7].image_asset.url",
+      "$.chapters[7].image_asset.aspect_ratio",
+      "$.chapters[7].image_asset.hotspots",
+      "$.chapters[7].image_asset.hotspots[0].id",
+      "$.chapters[7].image_asset.hotspots[0].label",
+      "$.chapters[7].image_asset.hotspots[0].x_percent",
+      "$.chapters[7].image_asset.hotspots[0].y_percent",
+      "$.chapters[7].image_asset.hotspots[0].w_percent",
+      "$.chapters[7].image_asset.hotspots[0].h_percent",
+      "$.chapters[7].image_asset.hotspots[1].id",
+      "$.chapters[7].image_asset.hotspots[1].label",
+      "$.chapters[7].image_asset.hotspots[1].x_percent",
+      "$.chapters[7].image_asset.hotspots[1].y_percent",
+      "$.chapters[7].image_asset.hotspots[1].w_percent",
+      "$.chapters[7].image_asset.hotspots[1].h_percent",
+      "$.chapters[7].image_asset.hotspots[2].id",
+      "$.chapters[7].image_asset.hotspots[2].label",
+      "$.chapters[7].image_asset.hotspots[2].x_percent",
+      "$.chapters[7].image_asset.hotspots[2].y_percent",
+      "$.chapters[7].image_asset.hotspots[2].w_percent",
+      "$.chapters[7].image_asset.hotspots[2].h_percent",
+      "$.chapters[7].storyboard",
+      "$.chapters[7].storyboard.scene_1",
+      "$.chapters[7].storyboard.scene_2",
+      "$.chapters[7].storyboard.scene_3",
+      "$.chapters[8].chapter_number",
+      "$.chapters[8].chapter_title",
+      "$.chapters[8].core_summary",
+      "$.chapters[8].key_concepts",
+      "$.chapters[8].key_terms",
+      "$.chapters[8].key_terms[0].term",
+      "$.chapters[8].key_terms[0].definition",
+      "$.chapters[8].key_terms[1].term",
+      "$.chapters[8].key_terms[1].definition",
+      "$.chapters[8].key_terms[2].term",
+      "$.chapters[8].key_terms[2].definition",
+      "$.chapters[8].key_terms[3].term",
+      "$.chapters[8].key_terms[3].definition",
+      "$.chapters[8].key_terms[4].term",
+      "$.chapters[8].key_terms[4].definition",
+      "$.chapters[8].key_terms[5].term",
+      "$.chapters[8].key_terms[5].definition",
+      "$.chapters[8].key_terms[6].term",
+      "$.chapters[8].key_terms[6].definition",
+      "$.chapters[8].key_terms[7].term",
+      "$.chapters[8].key_terms[7].definition",
+      "$.chapters[8].key_terms[8].term",
+      "$.chapters[8].key_terms[8].definition",
+      "$.chapters[8].key_terms[9].term",
+      "$.chapters[8].key_terms[9].definition",
+      "$.chapters[8].key_takeaways",
+      "$.chapters[8].image_asset",
+      "$.chapters[8].image_asset.image_id",
+      "$.chapters[8].image_asset.filename",
+      "$.chapters[8].image_asset.title",
+      "$.chapters[8].image_asset.description",
+      "$.chapters[8].image_asset.url",
+      "$.chapters[8].image_asset.aspect_ratio",
+      "$.chapters[8].image_asset.hotspots",
+      "$.chapters[8].image_asset.hotspots[0].id",
+      "$.chapters[8].image_asset.hotspots[0].label",
+      "$.chapters[8].image_asset.hotspots[0].x_percent",
+      "$.chapters[8].image_asset.hotspots[0].y_percent",
+      "$.chapters[8].image_asset.hotspots[0].w_percent",
+      "$.chapters[8].image_asset.hotspots[0].h_percent",
+      "$.chapters[8].image_asset.hotspots[1].id",
+      "$.chapters[8].image_asset.hotspots[1].label",
+      "$.chapters[8].image_asset.hotspots[1].x_percent",
+      "$.chapters[8].image_asset.hotspots[1].y_percent",
+      "$.chapters[8].image_asset.hotspots[1].w_percent",
+      "$.chapters[8].image_asset.hotspots[1].h_percent",
+      "$.chapters[8].image_asset.hotspots[2].id",
+      "$.chapters[8].image_asset.hotspots[2].label",
+      "$.chapters[8].image_asset.hotspots[2].x_percent",
+      "$.chapters[8].image_asset.hotspots[2].y_percent",
+      "$.chapters[8].image_asset.hotspots[2].w_percent",
+      "$.chapters[8].image_asset.hotspots[2].h_percent",
+      "$.chapters[8].storyboard",
+      "$.chapters[8].storyboard.scene_1",
+      "$.chapters[8].storyboard.scene_2",
+      "$.chapters[8].storyboard.scene_3",
+      "$.chapters[9].chapter_number",
+      "$.chapters[9].chapter_title",
+      "$.chapters[9].core_summary",
+      "$.chapters[9].key_concepts",
+      "$.chapters[9].key_terms",
+      "$.chapters[9].key_terms[0].term",
+      "$.chapters[9].key_terms[0].definition",
+      "$.chapters[9].key_terms[1].term",
+      "$.chapters[9].key_terms[1].definition",
+      "$.chapters[9].key_terms[2].term",
+      "$.chapters[9].key_terms[2].definition",
+      "$.chapters[9].key_terms[3].term",
+      "$.chapters[9].key_terms[3].definition",
+      "$.chapters[9].key_terms[4].term",
+      "$.chapters[9].key_terms[4].definition",
+      "$.chapters[9].key_terms[5].term",
+      "$.chapters[9].key_terms[5].definition",
+      "$.chapters[9].key_terms[6].term",
+      "$.chapters[9].key_terms[6].definition",
+      "$.chapters[9].key_terms[7].term",
+      "$.chapters[9].key_terms[7].definition",
+      "$.chapters[9].key_terms[8].term",
+      "$.chapters[9].key_terms[8].definition",
+      "$.chapters[9].key_terms[9].term",
+      "$.chapters[9].key_terms[9].definition",
+      "$.chapters[9].key_takeaways",
+      "$.chapters[9].image_asset",
+      "$.chapters[9].image_asset.image_id",
+      "$.chapters[9].image_asset.filename",
+      "$.chapters[9].image_asset.title",
+      "$.chapters[9].image_asset.description",
+      "$.chapters[9].image_asset.url",
+      "$.chapters[9].image_asset.aspect_ratio",
+      "$.chapters[9].image_asset.hotspots",
+      "$.chapters[9].image_asset.hotspots[0].id",
+      "$.chapters[9].image_asset.hotspots[0].label",
+      "$.chapters[9].image_asset.hotspots[0].x_percent",
+      "$.chapters[9].image_asset.hotspots[0].y_percent",
+      "$.chapters[9].image_asset.hotspots[0].w_percent",
+      "$.chapters[9].image_asset.hotspots[0].h_percent",
+      "$.chapters[9].image_asset.hotspots[1].id",
+      "$.chapters[9].image_asset.hotspots[1].label",
+      "$.chapters[9].image_asset.hotspots[1].x_percent",
+      "$.chapters[9].image_asset.hotspots[1].y_percent",
+      "$.chapters[9].image_asset.hotspots[1].w_percent",
+      "$.chapters[9].image_asset.hotspots[1].h_percent",
+      "$.chapters[9].image_asset.hotspots[2].id",
+      "$.chapters[9].image_asset.hotspots[2].label",
+      "$.chapters[9].image_asset.hotspots[2].x_percent",
+      "$.chapters[9].image_asset.hotspots[2].y_percent",
+      "$.chapters[9].image_asset.hotspots[2].w_percent",
+      "$.chapters[9].image_asset.hotspots[2].h_percent",
+      "$.chapters[9].storyboard",
+      "$.chapters[9].storyboard.scene_1",
+      "$.chapters[9].storyboard.scene_2",
+      "$.chapters[9].storyboard.scene_3",
+      "$.chapters[10].chapter_number",
+      "$.chapters[10].chapter_title",
+      "$.chapters[10].core_summary",
+      "$.chapters[10].key_concepts",
+      "$.chapters[10].key_terms",
+      "$.chapters[10].key_terms[0].term",
+      "$.chapters[10].key_terms[0].definition",
+      "$.chapters[10].key_terms[1].term",
+      "$.chapters[10].key_terms[1].definition",
+      "$.chapters[10].key_terms[2].term",
+      "$.chapters[10].key_terms[2].definition",
+      "$.chapters[10].key_terms[3].term",
+      "$.chapters[10].key_terms[3].definition",
+      "$.chapters[10].key_terms[4].term",
+      "$.chapters[10].key_terms[4].definition",
+      "$.chapters[10].key_terms[5].term",
+      "$.chapters[10].key_terms[5].definition",
+      "$.chapters[10].key_terms[6].term",
+      "$.chapters[10].key_terms[6].definition",
+      "$.chapters[10].key_terms[7].term",
+      "$.chapters[10].key_terms[7].definition",
+      "$.chapters[10].key_terms[8].term",
+      "$.chapters[10].key_terms[8].definition",
+      "$.chapters[10].key_terms[9].term",
+      "$.chapters[10].key_terms[9].definition",
+      "$.chapters[10].key_takeaways",
+      "$.chapters[10].image_asset",
+      "$.chapters[10].image_asset.image_id",
+      "$.chapters[10].image_asset.filename",
+      "$.chapters[10].image_asset.title",
+      "$.chapters[10].image_asset.description",
+      "$.chapters[10].image_asset.url",
+      "$.chapters[10].image_asset.aspect_ratio",
+      "$.chapters[10].image_asset.hotspots",
+      "$.chapters[10].image_asset.hotspots[0].id",
+      "$.chapters[10].image_asset.hotspots[0].label",
+      "$.chapters[10].image_asset.hotspots[0].x_percent",
+      "$.chapters[10].image_asset.hotspots[0].y_percent",
+      "$.chapters[10].image_asset.hotspots[0].w_percent",
+      "$.chapters[10].image_asset.hotspots[0].h_percent",
+      "$.chapters[10].image_asset.hotspots[1].id",
+      "$.chapters[10].image_asset.hotspots[1].label",
+      "$.chapters[10].image_asset.hotspots[1].x_percent",
+      "$.chapters[10].image_asset.hotspots[1].y_percent",
+      "$.chapters[10].image_asset.hotspots[1].w_percent",
+      "$.chapters[10].image_asset.hotspots[1].h_percent",
+      "$.chapters[10].image_asset.hotspots[2].id",
+      "$.chapters[10].image_asset.hotspots[2].label",
+      "$.chapters[10].image_asset.hotspots[2].x_percent",
+      "$.chapters[10].image_asset.hotspots[2].y_percent",
+      "$.chapters[10].image_asset.hotspots[2].w_percent",
+      "$.chapters[10].image_asset.hotspots[2].h_percent",
+      "$.chapters[10].storyboard",
+      "$.chapters[10].storyboard.scene_1",
+      "$.chapters[10].storyboard.scene_2",
+      "$.chapters[10].storyboard.scene_3",
+      "$.chapters[11].chapter_number",
+      "$.chapters[11].chapter_title",
+      "$.chapters[11].core_summary",
+      "$.chapters[11].key_concepts",
+      "$.chapters[11].key_terms",
+      "$.chapters[11].key_terms[0].term",
+      "$.chapters[11].key_terms[0].definition",
+      "$.chapters[11].key_terms[1].term",
+      "$.chapters[11].key_terms[1].definition",
+      "$.chapters[11].key_terms[2].term",
+      "$.chapters[11].key_terms[2].definition",
+      "$.chapters[11].key_terms[3].term",
+      "$.chapters[11].key_terms[3].definition",
+      "$.chapters[11].key_terms[4].term",
+      "$.chapters[11].key_terms[4].definition",
+      "$.chapters[11].key_terms[5].term",
+      "$.chapters[11].key_terms[5].definition",
+      "$.chapters[11].key_terms[6].term",
+      "$.chapters[11].key_terms[6].definition",
+      "$.chapters[11].key_terms[7].term",
+      "$.chapters[11].key_terms[7].definition",
+      "$.chapters[11].key_terms[8].term",
+      "$.chapters[11].key_terms[8].definition",
+      "$.chapters[11].key_terms[9].term",
+      "$.chapters[11].key_terms[9].definition",
+      "$.chapters[11].key_takeaways",
+      "$.chapters[11].image_asset",
+      "$.chapters[11].image_asset.image_id",
+      "$.chapters[11].image_asset.filename",
+      "$.chapters[11].image_asset.title",
+      "$.chapters[11].image_asset.description",
+      "$.chapters[11].image_asset.url",
+      "$.chapters[11].image_asset.aspect_ratio",
+      "$.chapters[11].image_asset.hotspots",
+      "$.chapters[11].image_asset.hotspots[0].id",
+      "$.chapters[11].image_asset.hotspots[0].label",
+      "$.chapters[11].image_asset.hotspots[0].x_percent",
+      "$.chapters[11].image_asset.hotspots[0].y_percent",
+      "$.chapters[11].image_asset.hotspots[0].w_percent",
+      "$.chapters[11].image_asset.hotspots[0].h_percent",
+      "$.chapters[11].image_asset.hotspots[1].id",
+      "$.chapters[11].image_asset.hotspots[1].label",
+      "$.chapters[11].image_asset.hotspots[1].x_percent",
+      "$.chapters[11].image_asset.hotspots[1].y_percent",
+      "$.chapters[11].image_asset.hotspots[1].w_percent",
+      "$.chapters[11].image_asset.hotspots[1].h_percent",
+      "$.chapters[11].image_asset.hotspots[2].id",
+      "$.chapters[11].image_asset.hotspots[2].label",
+      "$.chapters[11].image_asset.hotspots[2].x_percent",
+      "$.chapters[11].image_asset.hotspots[2].y_percent",
+      "$.chapters[11].image_asset.hotspots[2].w_percent",
+      "$.chapters[11].image_asset.hotspots[2].h_percent",
+      "$.chapters[11].storyboard",
+      "$.chapters[11].storyboard.scene_1",
+      "$.chapters[11].storyboard.scene_2",
+      "$.chapters[11].storyboard.scene_3",
+      "$.chapters[12].chapter_number",
+      "$.chapters[12].chapter_title",
+      "$.chapters[12].core_summary",
+      "$.chapters[12].key_concepts",
+      "$.chapters[12].key_terms",
+      "$.chapters[12].key_terms[0].term",
+      "$.chapters[12].key_terms[0].definition",
+      "$.chapters[12].key_terms[1].term",
+      "$.chapters[12].key_terms[1].definition",
+      "$.chapters[12].key_terms[2].term",
+      "$.chapters[12].key_terms[2].definition",
+      "$.chapters[12].key_terms[3].term",
+      "$.chapters[12].key_terms[3].definition",
+      "$.chapters[12].key_terms[4].term",
+      "$.chapters[12].key_terms[4].definition",
+      "$.chapters[12].key_terms[5].term",
+      "$.chapters[12].key_terms[5].definition",
+      "$.chapters[12].key_terms[6].term",
+      "$.chapters[12].key_terms[6].definition",
+      "$.chapters[12].key_terms[7].term",
+      "$.chapters[12].key_terms[7].definition",
+      "$.chapters[12].key_terms[8].term",
+      "$.chapters[12].key_terms[8].definition",
+      "$.chapters[12].key_terms[9].term",
+      "$.chapters[12].key_terms[9].definition",
+      "$.chapters[12].key_takeaways",
+      "$.chapters[12].image_asset",
+      "$.chapters[12].image_asset.image_id",
+      "$.chapters[12].image_asset.filename",
+      "$.chapters[12].image_asset.title",
+      "$.chapters[12].image_asset.description",
+      "$.chapters[12].image_asset.url",
+      "$.chapters[12].image_asset.aspect_ratio",
+      "$.chapters[12].image_asset.hotspots",
+      "$.chapters[12].image_asset.hotspots[0].id",
+      "$.chapters[12].image_asset.hotspots[0].label",
+      "$.chapters[12].image_asset.hotspots[0].x_percent",
+      "$.chapters[12].image_asset.hotspots[0].y_percent",
+      "$.chapters[12].image_asset.hotspots[0].w_percent",
+      "$.chapters[12].image_asset.hotspots[0].h_percent",
+      "$.chapters[12].image_asset.hotspots[1].id",
+      "$.chapters[12].image_asset.hotspots[1].label",
+      "$.chapters[12].image_asset.hotspots[1].x_percent",
+      "$.chapters[12].image_asset.hotspots[1].y_percent",
+      "$.chapters[12].image_asset.hotspots[1].w_percent",
+      "$.chapters[12].image_asset.hotspots[1].h_percent",
+      "$.chapters[12].image_asset.hotspots[2].id",
+      "$.chapters[12].image_asset.hotspots[2].label",
+      "$.chapters[12].image_asset.hotspots[2].x_percent",
+      "$.chapters[12].image_asset.hotspots[2].y_percent",
+      "$.chapters[12].image_asset.hotspots[2].w_percent",
+      "$.chapters[12].image_asset.hotspots[2].h_percent",
+      "$.chapters[12].storyboard",
+      "$.chapters[12].storyboard.scene_1",
+      "$.chapters[12].storyboard.scene_2",
+      "$.chapters[12].storyboard.scene_3",
+      "$.deduplication_applied"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "मातृभूमि",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "मातृभूमि - प्राकृतिक व सांस्कृतिक मानचित्र",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "गोल",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "गोल - मेजर ध्यानचंद खेल यात्रा",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "पहली बूँद",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "पहली बूँद - जल चक्र व प्रकृति का नवजीवन",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "हार की जीत",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "हार की जीत - सुल्तान, बाबा भारती व डाकू खड्गसिंह",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "रहीम के दोहे",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "रहीम के दोहे - नैतिक व व्यावहारिक जीवन मूल्य",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "मेरी माँ",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "मेरी माँ - स्वाध्याय, संस्कार व स्वाधीनता चेतना",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "जलाते चलो",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "जलाते चलो - अंधकार से प्रकाश की ओर",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "समरिया और बिहू नृत्य",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].image_asset",
+        "source_title_field": "title",
+        "source_title": "समरिया और बिहू नृत्य - असम की सांस्कृतिक धरोहर",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[8]",
+        "source_title_field": "chapter_title",
+        "source_title": "मैया मैं नहिं माखन खायो",
+        "source_number_field": "chapter_number",
+        "source_number": 9
+      },
+      {
+        "source_path": "$.chapters[8].image_asset",
+        "source_title_field": "title",
+        "source_title": "मैया मैं नहिं माखन खायो - बाल-कृष्ण की लीला",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[9]",
+        "source_title_field": "chapter_title",
+        "source_title": "परीक्षा",
+        "source_number_field": "chapter_number",
+        "source_number": 10
+      },
+      {
+        "source_path": "$.chapters[9].image_asset",
+        "source_title_field": "title",
+        "source_title": "परीक्षा - सच्चे नेतृत्व व चरित्र की पहचान",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[10]",
+        "source_title_field": "chapter_title",
+        "source_title": "चेतक की वीरता",
+        "source_number_field": "chapter_number",
+        "source_number": 11
+      },
+      {
+        "source_path": "$.chapters[10].image_asset",
+        "source_title_field": "title",
+        "source_title": "चेतक की वीरता - महाराणा प्रताप व चेतक का शौर्य",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[11]",
+        "source_title_field": "chapter_title",
+        "source_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
+        "source_number_field": "chapter_number",
+        "source_number": 12
+      },
+      {
+        "source_path": "$.chapters[11].image_asset",
+        "source_title_field": "title",
+        "source_title": "हिंद महासागर में छोटा-सा हिंदुस्तान - मॉरीशस",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[12]",
+        "source_title_field": "chapter_title",
+        "source_title": "पेड़ की बात",
+        "source_number_field": "chapter_number",
+        "source_number": 13
+      },
+      {
+        "source_path": "$.chapters[12].image_asset",
+        "source_title_field": "title",
+        "source_title": "पेड़ की बात - पौधों में सजीवता व विकास चक्र",
+        "source_number_field": null,
+        "source_number": null
+      }
+    ],
+    "chapter_candidate_count": 26,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "module_id": "Overview",
+    "book_title": "कक्षा 6 हिंदी - मल्हार (NCERT)",
+    "total_chapters": 13,
+    "dashboard_config": {
+      "ui_mode": "Interactive Dashboard Grid",
+      "theme_color": "#2b6cb0",
+      "enable_hotspot_overlays": true,
+      "enable_storyboard_carousel": true
+    },
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "मातृभूमि",
+        "core_summary": "सोहनलाल द्विवेदी द्वारा रचित देशभक्तिपूर्ण कविता 'मातृभूमि' कक्षा 6 की हिंदी पाठ्यपुस्तक 'मल्हार' का प्रथम पाठ है। यह कविता भारतवर्ष के अतुलनीय प्राकृतिक सौंदर्य, भौगोलिक विविधता, सांस्कृतिक निरंतरता तथा समृद्ध दार्शनिक विरासत का ओजस्वी यशोगान प्रस्तुत करती है। कवि भारत की भौगोलिक सीमाओं का मानवीकरण करते हुए उत्तर में प्रहरी के रूप में गगनचुंबी हिमालय, दक्षिण में भारत माता के चरण पखारते विशाल हिंद महासागर (सिंधु), मलय पर्वत से बहती सुगंधित शीतल हवा (मलय समीर) और कलकल बहती पावन नदियों (गंगा, यमुना, सरस्वती का त्रिवेणी संगम) का मनमोहक चित्रण करते हैं। केवल प्राकृतिक सुंदरता ही नहीं, अपितु यह कविता भारत को धर्मभूमि, कर्मभूमि, युद्धभूमि (कुरुक्षेत्र) और बुद्धभूमि के रूप में स्थापित करती है। यहाँ श्री राम, श्री कृष्ण और गौतम बुद्ध जैसी युगपुरुष विभूतियों ने अवतरित होकर सत्य, न्याय, अहिंसा और धर्म का सार्वभौमिक संदेश दिया। प्रस्तुत पाठ का मुख्य शैक्षणिक एवं सामाजिक उद्देश्य विद्यार्थियों के भीतर राष्ट्र-प्रेम, सांस्कृतिक स्वाभिमान, पर्यावरण चेतना तथा नैतिक मूल्यों का बीजारोपण करना है।",
+        "key_concepts": [
+          "भू-सांस्कृतिक राष्ट्रवाद एवं मानवीकरण: भारत की भौगोलिक आकृतियों (हिमालय, समुद्र, नदियाँ, अमराई) को सजीव मानकर मातृभूमि की वंदना करना।",
+          "प्राकृतिक समृद्धि एवं विविधता: उत्तर के विशाल पर्वत से लेकर दक्षिण के हिंद महासागर और त्रिवेणी संगम तक भारत की भौगोलिक अखंडता का निरूपण।",
+          "युद्ध-भूमि और बुद्ध-भूमि का नैतिक संतुलन: धर्म व न्याय की रक्षा हेतु कुरुक्षेत्र में श्रीमद्भगवद्गीता का कर्म-योग तथा विश्व शांति के लिए बुद्ध का अहिंसा-मार्ग - इन दोनों विरोधी जीवन-मूल्यों का अद्भुत सामंजस्य।",
+          "सांस्कृतिक निरंतरता एवं ऐतिहासिक चेतना: पौराणिक काल (राम, कृष्ण) से लेकर बौद्ध काल तक भारत की अविरल विचार-धारा का प्रसार।",
+          "अलंकारिक भाषा शैली: मानवीकरण अलंकार (हिमालय आकाश चूमता है), अनुप्रास अलंकार और पुनरुक्त शब्दों (पग-पग, जग-जग, घर-घर) के माध्यम से काव्य-सौंदर्य की सृष्टि।",
+          "राष्ट्र-रक्षा व निस्वार्थ समर्पण: जन्मभूमि को मातृभूमि मानकर उसके गौरव की रक्षा हेतु अपने सर्वस्व न्योछावर करने का संकल्प।",
+          "पर्यावरण एवं सांस्कृतिक भूगोल का अंतरसंबंध: नदियों और पर्वतों को केवल भौतिक संसाधन न मानकर पवित्र सांस्कृतिक धरोहर के रूप में पूजना।",
+          "वैश्विक शांति में भारत का योगदान: भारत द्वारा पूरे विश्व को अज्ञान के अंधकार से निकालकर बुद्ध के शांति व करुणा के मार्ग पर अग्रसर करना।"
+        ],
+        "key_terms": [
+          {
+            "term": "मातृभूमि",
+            "definition": "वह भूमि जहाँ मनुष्य जन्म लेता है और जिसका अन्न-जल ग्रहण कर बड़ा होता है; स्वदेश या जन्मभूमि।"
+          },
+          {
+            "term": "सिंधु",
+            "definition": "विशाल समुद्र या सागर (विशेष रूप से हिंद महासागर जो भारत के दक्षिण में स्थित है)।"
+          },
+          {
+            "term": "मलय पवन",
+            "definition": "मलय पर्वत (चंदन के वनों वाले पर्वत) की ओर से बहने वाली सुवासित, शीतल एवं मंद हवा।"
+          },
+          {
+            "term": "त्रिवेणी",
+            "definition": "तीन पवित्र नदियों (गंगा, यमुना और अदृश्य सरस्वती) का संगम स्थल (प्रयागराज)।"
+          },
+          {
+            "term": "अमराई",
+            "definition": "आम के छायादार एवं फलदार वृक्षों का बगीचा या सघन बाग।"
+          },
+          {
+            "term": "पुनीत",
+            "definition": "अत्यंत पावन, पवित्र, निर्मल एवं निष्कलंक।"
+          },
+          {
+            "term": "रणक्षेत्र",
+            "definition": "युद्ध-भूमि; वह स्थान जहाँ न्याय और धर्म की रक्षा हेतु युद्ध लड़ा जाता है (जैसे कुरुक्षेत्र)।"
+          },
+          {
+            "term": "बुद्ध-भूमि",
+            "definition": "गौतम बुद्ध की कर्मभूमि, जहाँ से अहिंसा, करुणा और शांति का विश्व संदेश प्रसारित हुआ।"
+          },
+          {
+            "term": "छटा",
+            "definition": "प्राकृतिक सौंदर्य, शोभा या अलौकिक दृश्य की कांति।"
+          },
+          {
+            "term": "पखारन",
+            "definition": "जल से पैर धोना या स्वच्छ करना (प्रक्षालन)।"
+          }
+        ],
+        "key_takeaways": [
+          "राष्ट्रभक्ति एवं स्वाभिमान: प्रत्येक नागरिक का कर्तव्य है कि वह अपनी मातृभूमि के गौरव और संप्रभुता की रक्षा करे।",
+          "पर्यावरण संरक्षण का संकल्प: हिमालय, पवित्र नदियों और वनों को प्रदूषणमुक्त रखकर प्राकृतिक संतुलन बनाए रखना।",
+          "ऐतिहासिक पुरुषों के आदर्शों का अनुकरण: राम की मर्यादा, कृष्ण के कर्म-योग और बुद्ध की अहिंसा को दैनिक जीवन में उतारना।",
+          "एकता में अनेकता की भावना: भौगोलिक विविधता के बावजूद संपूर्ण भारत को एक अखंड मातृभूमि के रूप में स्वीकारना।",
+          "साहित्यिक रसास्वादन: देशभक्तिपूर्ण कविताओं के सस्वर वाचन और अलंकारिक सौंदर्य को समझने की क्षमता का विकास।",
+          "शांति और शक्ति का संतुलन: भारत की शक्ति का उपयोग न्याय की रक्षा और विश्व शांति के लिए ही किया जाता है।",
+          "सांस्कृतिक विरासत पर गर्व: अपनी समृद्ध भाषाई और साहित्यिक धरोहर को सँजोना तथा अगली पीढ़ी तक पहुँचाना।",
+          "निस्वार्थ सेवा भाव: अपने ज्ञान, कौशल और कर्म द्वारा मातृभूमि के अभ्युदय में योगदान देना।"
+        ],
+        "image_asset": {
+          "image_id": "ch1_matribhumi_map",
+          "filename": "ch1_matribhumi_map.png",
+          "title": "मातृभूमि - प्राकृतिक व सांस्कृतिक मानचित्र",
+          "description": "उत्तर में हिमालय से लेकर दक्षिण में सिंधु महासागर तक की प्राकृतिक व्यवस्था",
+          "url": "/assets/images/ch1_matribhumi_map.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "गोल",
+        "core_summary": "मेजर ध्यानचंद का आत्मकथात्मक संस्मरण 'गोल' एक साधारण भारतीय सैनिक से विश्वप्रसिद्ध 'हॉकी के जादूगर' बनने की प्रेरणादायक जीवन-यात्रा को उजागर करता है। ध्यानचंद जी अपनी इस रचना में स्पष्ट करते हैं कि खेल या जीवन में असाधारण सफलता का कोई चमत्कारी गुरुमंत्र नहीं होता; यह केवल अदम्य लगन, कठोर साधना और अनुशासित अभ्यास का प्रतिफल है। पाठ में पंजाब रेजीमेंट और सैंपर्स टीम के बीच हुए एक ऐतिहासिक मैच का सजीव वर्णन है, जहाँ एक विरोधी खिलाड़ी ने अपनी हॉकी स्टिक से ध्यानचंद जी के सिर पर वार कर उन्हें घायल कर दिया था। क्रोधित होने या हिंसा का सहारा लेने के बजाय, ध्यानचंद जी ने मैदान से बाहर जाकर सिर पर पट्टी बँधवाई और मैदान में लौटते ही लगातार दो गोल दागकर अपनी टीम को विजय दिलाई। मैच के बाद उन्होंने विरोधी खिलाड़ी की पीठ थपथपाकर सीख दी कि 'खेल के मैदान में गुस्सा नहीं, खेल-भावना होनी चाहिए।' यह संस्मरण खिलाड़ियों में सहनशीलता, टीम-भावना, देश-प्रेम और निष्पक्ष खेल-संस्कृति का विकास करता है।",
+        "key_concepts": [
+          "साधना एवं सतत अभ्यास का सिद्धांत: किसी भी विधा में महारत हासिल करने के लिए निरंतर और अनुशासित अभ्यास अनिवार्य है।",
+          "उच्च खेल-भावना (Sportsmanship): व्यक्तिगत प्रतिशोध या हिंसा का उत्तर खेल के मैदान में अपने श्रेष्ठ प्रदर्शन से देना।",
+          "संयम और भावनात्मक नियंत्रण: अत्यधिक तनाव व उकसावे की स्थिति में भी शांति और मानसिक संतुलन बनाए रखना।",
+          "सामूहिक टीम-भावना (Team Spirit): व्यक्तिगत उपलब्धि के स्थान पर पूरी टीम की विजय को प्राथमिकता देना।",
+          "साधारण पृष्ठभूमि से महानता का सफर: एक नौसिखिया सैनिक का अपनी निष्ठा और लगन से अंतरराष्ट्रीय पहचान बनाना।",
+          "खेल शब्दावली का प्रयोग: 'गोल', 'स्टिक', 'डी', 'फ्री-हिट', 'सेंटर-फॉरवर्ड' जैसे पारिभाषिक शब्दों की समझ।",
+          "संस्मरण विधा की विशेषताएँ: आत्मकथात्मक शैली में प्रथम पुरुष ('मैं') में घटित सत्य घटनाओं का रोचक वर्णन।",
+          "राष्ट्रीय गौरव और प्रेरणा: अपने खेल प्रदर्शन द्वारा देश का नाम वैश्विक पटल पर रोशन करना।"
+        ],
+        "key_terms": [
+          {
+            "term": "साधना",
+            "definition": "किसी लक्ष्य या कला को प्राप्त करने के लिए किया जाने वाला कठोर, अनुशासित और निरंतर अभ्यास।"
+          },
+          {
+            "term": "खेल-भावना",
+            "definition": "मैदान पर नियमों का पालन, प्रतिद्वंद्वी का सम्मान और बिना द्वेष के खेलने की निष्पक्ष वृत्ति।"
+          },
+          {
+            "term": "प्रतिशोध",
+            "definition": "किसी के द्वारा पहुँचाई गई क्षति या अपमान का बदला लेने की हिंसक भावना।"
+          },
+          {
+            "term": "संयम",
+            "definition": "अपनी भावनाओं, क्रोध और इच्छाओं पर मन का नियंत्रण व धैर्य।"
+          },
+          {
+            "term": "सेंटर फॉरवर्ड",
+            "definition": "हॉकी में मैदान के बीच में आगे रहकर गोल करने का मुख्य दायित्व सँभालने वाला खिलाड़ी।"
+          },
+          {
+            "term": "गुरुमंत्र",
+            "definition": "सफलता या सिद्धि प्राप्त करने का कोई गुप्त या अचूक उपाय।"
+          },
+          {
+            "term": "लगन",
+            "definition": "किसी कार्य के प्रति मन की गहरी रुचि, धुन या तल्लीनता।"
+          },
+          {
+            "term": "प्रतिद्वंद्वी",
+            "definition": "खेल या प्रतियोगिता में सामने वाली टीम या विरोधी खिलाड़ी।"
+          },
+          {
+            "term": "सराहना",
+            "definition": "किसी के अच्छे कार्य या कौशल की खुले दिल से प्रशंसा करना।"
+          },
+          {
+            "term": "असतबल/संस्मरण",
+            "definition": "अतीत में घटी स्मरणीय घटनाओं का प्रामाणिक एवं रोचक लिखित विवरण।"
+          }
+        ],
+        "key_takeaways": [
+          "कठोर परिश्रम ही सफलता की कुंजी है: शॉर्टकट या भाग्य के भरोसे रहने के बजाय साधना पर विश्वास करना।",
+          "क्रोध पर विजय पाना: उकसावे की स्थिति में आपा न खोकर अपने कार्य (कर्म) पर ध्यान केंद्रित करना।",
+          "खेल-भावना का सम्मान: हार-जीत से ऊपर उठकर विरोधी खिलाड़ी और खेल के नियमों का आदर करना।",
+          "टीम-वर्क का महत्व: अकेले चमकने की इच्छा के स्थान पर सामूहिक प्रयास से लक्ष्य हासिल करना।",
+          "सहानुभूति और क्षमाशीलता: अपनी गलती मानने वाले या विरोधी को बड़े दिल से माफ़ करना।",
+          "स्वास्थ्य और खेल का जुड़ाव: शारीरिक सौष्ठव और मानसिक एकाग्रता हेतु खेलों में सक्रिय सहभागिता।",
+          "राष्ट्रीय मूल्यों का पोषण: अपने क्षेत्र में ईमानदारी से कार्य कर राष्ट्र का मस्तक ऊँचा करना।",
+          "चरित्र-निर्माण: कठिनाइयों में भी निष्ठा और नैतिक सिद्धांतों पर अडिग रहना।"
+        ],
+        "image_asset": {
+          "image_id": "ch2_goal_dhyanchand",
+          "filename": "ch2_goal_dhyanchand.png",
+          "title": "गोल - मेजर ध्यानचंद खेल यात्रा",
+          "description": "साधारण सैनिक से हॉकी के जादूगर बनने के तीन स्तंभ: लगन, साधना व खेल भावना",
+          "url": "/assets/images/ch2_goal_dhyanchand.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "पहली बूँद",
+        "core_summary": "गोपालकृष्ण कौल द्वारा रचित भावपूर्ण कविता 'पहली बूँद' ग्रीष्म ऋतु की भीषण तपन के पश्चात मानसून की प्रथम वर्षा के प्राकृतिक आगमन का जीवंत और चित्रात्मक वर्णन करती है। कवि वर्षा की पहली बूँद को सुखाकुल और प्यासी पृथ्वी के लिए 'अमृत' के समान नवजीवनदायी मानते हैं। भीषण गर्मी से तपती वसुंधरा के सूखे होठों पर जब जल की पहली बूँद पड़ती है, तो मिट्टी के गर्भ में सोया हुआ निष्क्रिय बीज अंकुरित होकर बाहर निकलता है और नवजीवन की अँगड़ाई लेता है। मैदानों में हरी दूब धरती की रोमावली के समान आनंदित होकर मुस्कुरा उठती है। कवि नीले आकाश को नीली आँखों की संज्ञा देते हैं और उसमें उमड़ते-घुमड़ते काले बादलों (जलधर) को आँखों की पुतलियाँ मानते हैं, जो करुणाद्र होकर धरती की पुरानी प्यास बुझाने के लिए जल बरसाते हैं। यह कविता प्रकृत्यानंद, मानवीकरण अलंकार और पर्यावरण संरक्षण का सुंदर संदेश देती है।",
+        "key_concepts": [
+          "प्रकृति का नवजागरण एवं रूपांतरण: ग्रीष्म की तपन के बाद वर्षा जल से धरती में नवजीवन, हरियाली और चेतना का संचार।",
+          "उत्कृष्ट उपमा व मानवीकरण अलंकार: वर्षा की बूँद की तुलना अमृत से, अंबर की तुलना नीले नयनों से और बादलों की तुलना पुतलियों से करना।",
+          "जीव-जगत और मिट्टी का संबंध: मिट्टी में छिपे बीज का अंकुरित होना तथा सस्य-श्यामला धरा का निर्माण।",
+          "पर्यावरण चक्र का चक्रीय बोध: जल-चक्र, मौसम परिवर्तन और पृथ्वी की उर्वरता का सुंदर काव्यात्मक निरूपण।",
+          "अनेकार्थी व काव्यात्मक शब्दावली: 'जलधर' (बादल/समुद्र), 'अंबर' (आकाश/वस्त्र), 'पावस' (वर्षा ऋतु) की भाषिक समझ।",
+          "संवेदना और करुणा का प्रतीक: बादलों का धरती के दुख से द्रवित होकर पानी बरसाना - परोपकार का संदेश।",
+          "चित्रात्मक भाषा शैली: शब्दों के माध्यम से वर्षा के दृश्य, गंध (सोंधी मिट्टी) और ध्वनि का सजीव बिंब खड़ा करना।",
+          "जल का जीवनदायी महत्व: जल ही जीवन का मूल आधार है - संरक्षण का अंतर्निहित संदेश।"
+        ],
+        "key_terms": [
+          {
+            "term": "पावस",
+            "definition": "वर्षा ऋतु; बरसात का प्राकृतिक मौसम।"
+          },
+          {
+            "term": "वसुंधरा",
+            "definition": "धरा, पृथ्वी, भू या धरती जो सभी जीवों को धारण करती है।"
+          },
+          {
+            "term": "जलधर",
+            "definition": "जल को धारण करने वाला अर्थात मेघ या बादल।"
+          },
+          {
+            "term": "अंबर",
+            "definition": "आकाश, गगन, नभ; वस्त्र।"
+          },
+          {
+            "term": "अधर",
+            "definition": "मनुष्य के होंठ या ओष्ठ।"
+          },
+          {
+            "term": "रोमावली",
+            "definition": "शरीर पर उगे रोओं की पंक्तियाँ (यहाँ हरी दूब के रूप में रूपक)।"
+          },
+          {
+            "term": "सस्य-श्यामला",
+            "definition": "हरी-भरी फसलों और वनस्पतियों से सुशोभित धरती।"
+          },
+          {
+            "term": "चिर-प्यासा",
+            "definition": "दीर्घ काल से प्यासा या जल हेतु व्याकुल।"
+          },
+          {
+            "term": "अंकुर",
+            "definition": "बीज में से फूटने वाला नया नन्हा पौधा।"
+          },
+          {
+            "term": "सोंधी",
+            "definition": "गीली मिट्टी से आने वाली मनभावन सुगंध।"
+          }
+        ],
+        "key_takeaways": [
+          "पर्यावरण और जल का महत्व: प्रकृति का संतुलन बनाए रखने के लिए जल संसाधनों की रक्षा करना।",
+          "धैर्य का मीठा फल: कठिन समय (गर्मी) के बाद सुखद परिवर्तन (वर्षा) का अवश्य आगमन होना।",
+          "प्रकृति का संवेदनशीलता से अवलोकन: वातावरण में होने वाले ऋतु परिवर्तनों का सूक्ष्म सौंदर्य-बोध।",
+          "परोपकार की भावना: बादलों की भाँति बिना किसी स्वार्थ के दूसरों के ताप को शांत करना।",
+          "नव-सृजन की क्षमता: विपरीत परिस्थितियों के बाद भी नई उम्मीद (अंकुर) का जन्म होना।",
+          "काव्य-सौंदर्य की समझ: कविता में प्रयुक्त बिंबों, अलंकारों और तुकबंदी का आनंद लेना।",
+          "प्रकृति-प्रेम: पेड़-पौधों, पक्षियों और हरी-भरी धरती से आत्मीय लगाव विकसित करना।",
+          "जीवन में सहिष्णुता: दुखों को सहकर भी जीवन में पुनः मुस्कान बिखेरने का संकल्प।"
+        ],
+        "image_asset": {
+          "image_id": "ch3_pahli_boond",
+          "filename": "ch3_pahli_boond.png",
+          "title": "पहली बूँद - जल चक्र व प्रकृति का नवजीवन",
+          "description": "ग्रीष्म की तपन से पावस की पहली बूँद, बीजांकुरण और दूब के उल्लास की प्रक्रिया",
+          "url": "/assets/images/ch3_pahli_boond.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "हार की जीत",
+        "core_summary": "सुदर्शन द्वारा रचित यह प्रसिद्ध कहानी 'हार की जीत' मानवीय संवेदनाओं, निस्वार्थ समाज-चिंता और आपराधिक मन के नैतिक हृदय-परिवर्तन की कालजयी गाथा है। साधु संत बाबा भारती अपने अति सुंदर और तीव्रगामी घोड़े 'सुल्तान' से उसी प्रकार पुत्रवत प्रेम करते थे, जैसे एक माँ अपने बेटे से करती है। इलाके का कुख्यात डाकू खड्गसिंह सुल्तान की ख्याति सुनकर असतबल में आता है और उसे छीनने की कसम खाता है। एक दिन संध्या समय खड्गसिंह रास्ते में एक लाचार, अपाहिज और बीमार व्यक्ति का वेश बनाकर कराहने का नाटक करता है। बाबा भारती दयाद्र होकर उसे अपने घोड़े पर बैठा लेते हैं, परंतु खड्गसिंह तुरंत घोड़े की बाग सँभालकर भाग निकलता है। इस छल पर बाबा भारती दुखी तो होते हैं, परंतु वे डाकू से केवल एक ही प्रार्थना करते हैं कि 'इस घटना का ज़िक्र किसी से न करना, अन्यथा लोग गरीबों और अपाहिजों पर विश्वास करना छोड़ देंगे।' बाबा भारती के इस निष्कपट और समाज-हितैषी कथन ने डाकू खड्गसिंह की आत्मा को अंदर तक झकझोर दिया। पश्चाताप की अग्नि में जलकर उसने अंधेरी रात में चुपके से सुल्तान को वापस बाबा भारती के असतबल में बाँध दिया। इस प्रकार, बाबा भारती भौतिक रूप से हारकर भी अपने विचारों से जीत गए और डाकू की छल-कपट की जीत हार में बदल गई।",
+        "key_concepts": [
+          "नैतिक विजय बनाम भौतिक पराजय: छल से जीती गई बाज़ी वास्तव में हार है, और उच्च आदर्शों के लिए गँवाई वस्तु में भी नैतिक जीत है।",
+          "मानवीय विश्वास की रक्षा: व्यक्तिगत हानि की तुलना में समाज के असहाय लोगों पर बने जन-विश्वास को बचाना अधिक महान है।",
+          "हृदय-परिवर्तन का सिद्धांत: कठोर दंड या हिंसा के स्थान पर करुणा, प्रेम और उच्च आचरण से अपराधी का मन बदलना।",
+          "संवेदनात्मक पात्र-चित्रण: बाबा भारती का निस्वार्थ वात्सल्य और खड्गसिंह के भीतर छिपी मानवीय संवेदना।",
+          "मुहावरेदार भाषा शैली: 'हृदय पर साँप लोटना', 'बाग ढीली करना', 'आँखों में चमक आना' जैसे मुहावरों का सटीक प्रयोग।",
+          "कहानी का नाटकीय घटनाक्रम: कौतूहल, छल, आत्म-ग्लानि और अंत में आत्म-समीक्षा द्वारा चरम सीमा (Climax) तक पहुँचना।",
+          "सच्चा साधुत्व: केवल गेरुआ वस्त्र पहनना नहीं, बल्कि संपूर्ण मानव जाति के कल्याण की चिंता करना ही सच्चा संन्यास है।",
+          "शीर्षक की सार्थकता: 'हार की जीत' शीर्षक कहानी के मूल नैतिक अंतद्वंद्व और संदेश को पूर्णतः व्यक्त करता है।"
+        ],
+        "key_terms": [
+          {
+            "term": "असतबल",
+            "definition": "घोड़ों को रखने या बाँधने का स्थान; घुड़साल।"
+          },
+          {
+            "term": "कुख्यात",
+            "definition": "बुरे कामों या अपराधों के लिए समाज में बदनाम।"
+          },
+          {
+            "term": "दयाद्र",
+            "definition": "दया या करुणा से पिघला हुआ या भरा हुआ मन।"
+          },
+          {
+            "term": "बाग",
+            "definition": "घोड़े को नियंत्रित करने की चमड़े की डोरी या लगाम।"
+          },
+          {
+            "term": "अधीर",
+            "definition": "धैर्यहीन, व्याकुल, बेचैन या उतावला।"
+          },
+          {
+            "term": "नेकी",
+            "definition": "भलाई, परोपकार, सत्कर्म या अच्छा व्यवहार।"
+          },
+          {
+            "term": "पश्चाताप",
+            "definition": "अपनी किसी पुरानी गलती या पाप पर होने वाला गहरा पछतावा व आत्म-ग्लानि।"
+          },
+          {
+            "term": "बांका",
+            "definition": "सुंदर, सुडौल, रोबीला और आकर्षक (घोड़ा या व्यक्ति)।"
+          },
+          {
+            "term": "अपाहिज",
+            "definition": "शारीरिक रूप से अक्षम या दिव्यांग व्यक्ति।"
+          },
+          {
+            "term": "साधुत्व",
+            "definition": "सज्जनता, पवित्रता और निस्वार्थ समाज-सेवा का गुण।"
+          }
+        ],
+        "key_takeaways": [
+          "समाज में विश्वास बनाए रखना: ऐसे आचरण से बचना जो दुखी और असहाय लोगों पर से समाज का भरोसा उठाए।",
+          "करुणा की शक्ति: कठोरता का उत्तर क्षमा और प्रेम से देकर दूसरों का हृदय-परिवर्तन करना।",
+          "उच्च विचार ही वास्तविक संपत्ति हैं: भौतिक वस्तुओं (घोड़ा, धन) से अधिक अपने नैतिक सिद्धांतों को महत्व देना।",
+          "गलती का अहसास और सुधार: अपराध या भूल होने पर सच्चा पश्चाताप कर वस्तु या सम्मान वापस लौटाना।",
+          "स्वार्थ से ऊपर उठना: केवल अपने सुख की न सोचकर संपूर्ण समाज के दीर्घकालिक हित के बारे में सोचना।",
+          "सहानुभूति का भाव: किसी के वेश या परिस्थिति को देखकर दया भाव रखना (यद्यपि सावधानी भी आवश्यक है)।",
+          "साहित्य की प्रेरणा: प्रेमचंद और सुदर्शन की कहानियों से जीवन-मूल्य और चरित्र-बल सीखना।",
+          "आंतरिक शांति: छल-कपट से प्राप्त खुशी क्षणिक होती है; निस्वार्थ कर्म से ही स्थायी संतोष मिलता है।"
+        ],
+        "image_asset": {
+          "image_id": "ch4_haar_ki_jeet",
+          "filename": "ch4_haar_ki_jeet.png",
+          "title": "हार की जीत - सुल्तान, बाबा भारती व डाकू खड्गसिंह",
+          "description": "छल द्वारा घोड़ा छीनने से लेकर मानव-विश्वास की रक्षा और डाकू के हृदय-परिवर्तन का चक्र",
+          "url": "/assets/images/ch4_haar_ki_jeet.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "रहीम के दोहे",
+        "core_summary": "भक्ति काल के महान नीति-कवि अब्दुल रहीम खानखाना (रहीम) द्वारा रचित दोहे व्यावहारिक जीवन-दर्शन, सामाजिक नैतिकता, मधुर व्यवहार और परोपकार की अमर शिक्षाएँ प्रदान करते हैं। दो पंक्तियों के इन छंदों (दोहों) में रहीम जी ने दैनिक जीवन और प्रकृति के सुलभ उदाहरणों से गहरे मानवीय सत्यों को उजागर किया है। पहले दोहे में वे प्रेम-संबंधों की संवेदनशीलता की तुलना धागे से करते हुए कहते हैं कि इसे झटके से नहीं तोड़ना चाहिए, क्योंकि टूटने पर यह जुड़ता नहीं और यदि जुड़ता भी है तो उसमें अविश्वास रूपी गाँठ पड़ जाती है। दूसरे दोहे में वृक्ष (तरुवर) और तालाब (सरवर) का उदाहरण देकर बताया गया है कि जैसे वे अपने फल और जल स्वयं न पीकर दूसरों को अर्पित करते हैं, वैसे ही सज्जन पुरुष अपनी संपत्ति का संचय केवल परोपकार के लिए करते हैं। तीसरे दोहे में 'सुई' और 'तलवार' के दृष्टांत से संदेश दिया गया है कि समाज में छोटी से छोटी वस्तु या व्यक्ति की अपनी विशेष उपयोगिता होती है; अतः बड़ों को देखकर छोटों का अनादर नहीं करना चाहिए। अंतिम दोहे में चंचल और अनियंत्रित जीभ (जिह्वा) द्वारा अनुचित बोलकर मुँह में छिप जाने और उसका दंड सिर को जूतियाँ खाकर भुगतने के हास्य-व्यंग्य से वाणी-संयम का अमूल्य संदेश दिया गया है।",
+        "key_concepts": [
+          "प्रेम-संबंधों की संवेदनशीलता: विश्वास और आत्मीयता को सँजोकर रखना; अविश्वास की गाँठ से बचना।",
+          "परोपकार का महान सिद्धांत: प्रकृति (वृक्ष, सरोवर) की भाँति निस्वार्थ भाव से समाज-सेवा में धन व साधनों का उपयोग करना।",
+          "समदृष्टि एवं सबका सम्मान: समाज में पद, आकार या धन में छोटे व्यक्तियों की विशिष्ट उपयोगिता को स्वीकारना (सुई-तलवार का दृष्टांत)।",
+          "वाणी संयम व विवेक: बिना सोचे-समझे बोलने के दुष्परिणामों से बचना; मधुर एवं नियंत्रित वाणी का प्रयोग।",
+          "दृष्टांत एवं अन्योक्ति अलंकार: प्रकृति और दैनिक जीवन के परिचित बिंबों द्वारा गूढ़ नैतिक सिद्धांतों को सहजता से समझाना।",
+          "दोहा छंद की संरचना: प्रथम व तृतीय चरण में 13-13 मात्राएँ, द्वितीय व चतुर्थ चरण में 11-11 मात्राएँ (मात्रात्मक छंद)।",
+          "ब्रजभाषा व तद्भव शब्दावली: 'तरुवर', 'सरवर', 'सुजान', 'छटकाय', 'तरवारि' जैसे साहित्यिक ब्रज शब्दों का प्रयोग।",
+          "व्यावहारिक जीवन-मूल्य: आदर्शवादी सिद्धांतों को व्यावहारिक आचरण में उतारने की प्रेरणा।"
+        ],
+        "key_terms": [
+          {
+            "term": "तरुवर",
+            "definition": "श्रेष्ठ और छायादार वृक्ष या पेड़।"
+          },
+          {
+            "term": "सरवर",
+            "definition": "सरोवर, तालाब या प्राकृतिक जल-संपादित जलाश्य।"
+          },
+          {
+            "term": "सुजान",
+            "definition": "सज्जन, ज्ञानी, विवेकशील एवं गुणी पुरुष।"
+          },
+          {
+            "term": "छटकाय",
+            "definition": "झटके से या बिना सोचे-समझे अचानक तोड़ना।"
+          },
+          {
+            "term": "परि जाय",
+            "definition": "पड़ जाती है या उत्पन्न हो जाती है (गाँठ)।"
+          },
+          {
+            "term": "तरवारि",
+            "definition": "तलवार; अस्त्र या धारदार शस्त्र।"
+          },
+          {
+            "term": "जिह्वा",
+            "definition": "जीभ, रसना या वाणी का अंग।"
+          },
+          {
+            "term": "बावरी",
+            "definition": "पागल, अविवेकी, चंचल या बिना सोचे-समझे कार्य करने वाली।"
+          },
+          {
+            "term": "कपाल",
+            "definition": "सिर, मस्तक या माथा।"
+          },
+          {
+            "term": "परकाज",
+            "definition": "दूसरों का कार्य, भलाई या परोपकार।"
+          }
+        ],
+        "key_takeaways": [
+          "संबंधों की रक्षा: आपसी रिश्तों में कड़वाहट और अविश्वास से बचना; धागे की भाँति प्रेम सँजोना।",
+          "परोपकारी बनना: अपनी क्षमताओं, ज्ञान और धन से जरूरतमंदों की निस्वार्थ सहायता करना।",
+          "छोटों का आदर: किसी भी व्यक्ति को उसके पद या आकार से छोटा मानकर उपेक्षा न करना।",
+          "सोच-समझकर बोलना: अपनी वाणी पर नियंत्रण रखना ताकि बाद में अपमान या पछतावा न सहना पड़े।",
+          "प्रकृति से सीखना: वृक्षों और नदियों के त्याग से जीवन में उदारता का गुण अपनाना।",
+          "नैतिक विवेक का विकास: व्यावहारिक परिस्थितियों में सही और गलत का अंतर पहचानना।",
+          "साहित्यिक आनंद: नीतिपरक दोहों का लयबद्ध गायन करना और अर्थ ग्रहण करना।",
+          "अहंकार का त्याग: अपनी समृद्धियों पर गर्व न करके नम्रता और सौहार्द से रहना।"
+        ],
+        "image_asset": {
+          "image_id": "ch5_rahim_dohas",
+          "filename": "ch5_rahim_dohas.png",
+          "title": "रहीम के दोहे - नैतिक व व्यावहारिक जीवन मूल्य",
+          "description": "परोपकार (तरुवर-सरवर), सुई-तलवार दृष्टांत, वाणी संयम और प्रेम का धागा",
+          "url": "/assets/images/ch5_rahim_dohas.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "मेरी माँ",
+        "core_summary": "अमर क्रांतिकारी और ओजस्वी कवि रामप्रसाद 'बिस्मिल' की आत्मकथा का यह अंश 'मेरी माँ' मातृ-भक्ति, नारी-शिक्षा, त्याग और देशभक्ति का अद्वितीय उदाहरण प्रस्तुत करता है। बिस्मिल जी स्वीकार करते हैं कि उनके जीवन, चरित्र और क्रांतिकारी विचारों के निर्माण में उनकी माता जी का सबसे बड़ा और अमूल्य योगदान रहा है। विवाह के समय उनकी माँ मात्र ग्यारह वर्ष की अनपढ़ बालिका के रूप में उनके शाहजहाँपुर स्थित गृह में आई थीं। परंतु अपनी अदम्य इच्छाशक्ति, गृहकार्य निपटाने के बाद मिले खाली समय के उपयोग और स्वाध्याय से उन्होंने स्वयं को साक्षर बनाया तथा घर की अन्य बालिकाओं को भी शिक्षित किया। उन्होंने बिस्मिल जी में बचपन से ही सत्य, धर्म, निर्भीकता, स्वाभिमान और स्वाधीनता संग्राम में कूदने के संस्कार रोपे। बिस्मिल जी भावुक होकर कहते हैं कि यदि उन्हें ऐसी माँ न मिलती तो वे भी साधारण सांसारिक मोहमाया में उलझकर अपना जीवन व्यर्थ गँवा देते। फाँसी के फंदे पर झूलने से ठीक पहले भी बिस्मिल जी अपनी माँ के चरणों का ध्यान करते हैं और ईश्वर से प्रार्थना करते हैं कि उन्हें अगले जन्म में भी यही माँ मिले ताकि वे उनके अगाध ऋण को चुकाने का प्रयास कर सकें।",
+        "key_concepts": [
+          "मातृ-ऋण एवं अनन्य भक्ति: संतान के चरित्र-निर्माण और जीवन-दिशा निर्धारण में माँ की सर्वोपरि भूमिका।",
+          "नारी-शिक्षा एवं स्वावलंबन: विपरीत परिस्थितियों में भी स्वाध्याय द्वारा साक्षर बनना और समाज में शिक्षा फैलाना।",
+          "क्रांतिकारी चेतना का बीजारोपण: पारिवारिक संस्कारों द्वारा बालक में देश-प्रेम, सत्य और निर्भीकता के मूल्यों का पोषण।",
+          "आत्मकथात्मक गद्य शैली: प्रथम पुरुष में निष्कपट, भावुक और प्रामाणिक संस्मरण की अभिव्यक्ति।",
+          "समास व शब्द-रचना की समझ: 'अक्षर-बोध' (तत्पुरुष), 'पढ़ना-लिखना' (द्वंद्व), 'संसार-चक्र' (कर्मधारय) का प्रयोग।",
+          "उपसर्ग-प्रत्यय संयोजन: 'स्व' (उपसर्ग) + 'अधीन' + 'ता' (प्रत्यय) = स्वाधीनता।",
+          "निस्वार्थ त्याग और प्रेरणा: व्यक्तिगत मोह से ऊपर उठकर पुत्र को देश-रक्षा हेतु सहर्ष समर्पित करना।",
+          "आदर्श जीवन-मूल्य: फाँसी के निकट पहुँचकर भी विचलित न होना और नैतिक पथ पर अडिग रहना।"
+        ],
+        "key_terms": [
+          {
+            "term": "अक्षर-बोध",
+            "definition": "अक्षरों की पहचान होना; पढ़ना-लिखना सीखने की प्रारंभिक साक्षरता।"
+          },
+          {
+            "term": "स्वाधीनता",
+            "definition": "अपने अधीन होना; स्वतंत्रता, आजादी या राष्ट्र की संप्रभुता।"
+          },
+          {
+            "term": "संसार-चक्र",
+            "definition": "सांसारिक मोह-माया, गृहस्थी के उलझाव और जन्म-मरण का जाल।"
+          },
+          {
+            "term": "सद्विचार",
+            "definition": "उत्तम, पवित्र, नैतिक और कल्याणकारी विचार।"
+          },
+          {
+            "term": "ताड़ना",
+            "definition": "डाँटना-फटकारना या सुधार हेतु चेतावनी देना।"
+          },
+          {
+            "term": "उर",
+            "definition": "हृदय, छाती या मन का आंतरिक भाग।"
+          },
+          {
+            "term": "न्योछावर",
+            "definition": "अपने सर्वस्व, जीवन या सुख का न्योछावर/समर्पण करना।"
+          },
+          {
+            "term": "स्वाध्याय",
+            "definition": "स्वयं पढ़कर ज्ञान अर्जन करने की अनुशासित आदत।"
+          },
+          {
+            "term": "ऋण",
+            "definition": "कर्ज या उपकार जो चुकाया जाना शेष हो।"
+          },
+          {
+            "term": "सद्गुरु",
+            "definition": "सच्चा मार्ग दिखाने वाला श्रेष्ठ गुरु (यहाँ माँ को गुरु माना गया है)।"
+          }
+        ],
+        "key_takeaways": [
+          "माता-पिता के प्रति कृतज्ञता: अपने जीवन की सफलताओं का श्रेय माता-पिता के त्याग और संस्कारों को देना।",
+          "शिक्षा की कोई उम्र नहीं होती: निरंतर स्वाध्याय से किसी भी उम्र में ज्ञान प्राप्त किया जा सकता है।",
+          "देश-प्रेम को सर्वोपरि रखना: व्यक्तिगत सुख-सुविधाओं की तुलना में राष्ट्र-सेवा को प्राथमिकता देना।",
+          "साहस और सत्य पर अडिग रहना: कठिन से कठिन विपत्ति (फाँसी) में भी मानसिक संतुलन और सिद्धांतों को न खोना।",
+          "नारी सशक्तिकरण: बालिकाओं और महिलाओं की शिक्षा व उनके स्वावलंबन हेतु प्रयास करना।",
+          "आत्म-विश्लेषण: अपने आचरण को सदैव नैतिक कसौटी पर परखना।",
+          "साहित्यिक अभिव्यक्ति: आत्मकथा के माध्यम से भावुक और ओजस्वी गद्य लिखने की कला सीखना।",
+          "ऋण चुकाने का संकल्प: माता-पिता की वृद्धावस्था में सेवा कर उनके उपकारों का आदर करना।"
+        ],
+        "image_asset": {
+          "image_id": "ch6_meri_maa",
+          "filename": "ch6_meri_maa.png",
+          "title": "मेरी माँ - स्वाध्याय, संस्कार व स्वाधीनता चेतना",
+          "description": "अनपढ़ माँ से साक्षर बनने का सफर और रामप्रसाद बिस्मिल के क्रांतिकारी निर्माण का मार्ग",
+          "url": "/assets/images/ch6_meri_maa.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "जलाते चलो",
+        "core_summary": "द्वारिका प्रसाद माहेश्वरी द्वारा रचित यह प्रेरणादायक कविता 'जलाते चलो' समाज में व्याप्त अज्ञान, दुख, निराशा और बुराई रूपी अंधकार को मिटाने के लिए निरंतर प्रेम, सत्कर्म और ज्ञान के दीपक जलाने का आह्वान करती है। कवि का अमर दृष्टिकोण है कि चाहे अंधकार (तिमिर) कितना ही घना और युगीन क्यों न हो, मनुष्य को निराश होकर हाथ पर हाथ रखकर नहीं बैठना चाहिए। इतिहास साक्षी है कि जब मानव ने पहली बार स्नेह (तेल/प्रेम) से भरा पहला दीपक जलाया था, तभी से अंधकार को हराने की अमर यात्रा प्रारंभ हुई थी। कवि विश्वास दिलाते हैं कि यदि पूरी पृथ्वी पर सत्य और भलाई का एक भी दीप जलता रहेगा, तो निराशा की काली रात (निशा) को अंततः सुखद सवेरे में बदलना ही पड़ेगा। यह कविता मानव-मात्र को अनवरत प्रयास, सामाजिक सद्भाव, अमर आशावादिता और निस्वार्थ कर्म पथ पर बढ़ने की प्रेरणा देती है।",
+        "key_concepts": [
+          "प्रतीकात्मकता (Symbolism): 'तिमिर/निशा' = अज्ञान, संकट, निराशा; 'दीपक/सवेरा' = ज्ञान, आशा, सत्कर्म; 'स्नेह' = प्रेम/तेल।",
+          "अमर आशावाद (Indomitable Optimism): कठिनतम परिस्थितियों में भी उम्मीद की एक किरण से पूरे अंधकार को परास्त करना।",
+          "प्रयास की निरंतरता: एक अकेला व्यक्ति या दीप भी संपूर्ण समाज को दिशा दिखाने में सक्षम है।",
+          "ऐतिहासिक संकल्प: सभ्यता की शुरुआत से ही मानव द्वारा अज्ञान से लड़ने की अटूट परंपरा।",
+          "उपमा व प्रतीक अलंकार: 'स्वर्ण-सी' चमक, रूपकात्मक दीपक का प्रयोग।",
+          "सत्कर्म का अमर प्रभाव: अच्छा कर्म कभी व्यर्थ नहीं जाता, वह आने वाली पीढ़ियों का मार्ग प्रशस्त करता है।",
+          "पर्यायवाची व विलोम ज्ञान: तिमिर (अंधकार) - प्रकाश; निशा (रात) - सवेरा; धरा (पृथ्वी) - गगन।",
+          "सामाजिक उत्तरदायित्व: अपनी क्षमताओं से दूसरों के जीवन में खुशियों का उजाला फैलाना।"
+        ],
+        "key_terms": [
+          {
+            "term": "तिमिर",
+            "definition": "घना अंधकार, तम या अज्ञान का अंधेरा।"
+          },
+          {
+            "term": "स्नेह",
+            "definition": "प्रेम, आत्मीयता; दिए में जलने वाला तेल।"
+          },
+          {
+            "term": "निशा",
+            "definition": "रात्रि, रात या संकट का समय।"
+          },
+          {
+            "term": "धरा",
+            "definition": "धरती, पृथ्वी या वसुंधरा।"
+          },
+          {
+            "term": "चुनौती",
+            "definition": "किसी कठिन परिस्थिति या विरोधी को दी गई ललकार।"
+          },
+          {
+            "term": "सवेरा",
+            "definition": "प्रभात, प्रातःकाल या सुख और ज्ञान का आगमन।"
+          },
+          {
+            "term": "अक्षय",
+            "definition": "जिसका कभी क्षय या नाश न हो; सदा बना रहने वाला।"
+          },
+          {
+            "term": "ज्योति",
+            "definition": "दीपक की लौ, प्रकाश या ज्ञान की किरण।"
+          },
+          {
+            "term": "युगीन",
+            "definition": "युगों से चला आ रहा पुराना या दीर्घकालिक।"
+          },
+          {
+            "term": "आह्वान",
+            "definition": "पुकारना, बुलावा देना या किसी शुभ कार्य हेतु प्रेरित करना।"
+          }
+        ],
+        "key_takeaways": [
+          "कभी हिम्मत न हारना: परिस्थितियों के विपरीत होने पर भी आशा का दीप जलाए रखना।",
+          "छोटा प्रयास भी मूल्यवान है: बुराई से लड़ने के लिए आपका छोटा सा सत्कर्म भी महत्वपूर्ण है।",
+          "प्रेम और ज्ञान का प्रसार: समाज से नफ़रत और अज्ञान दूर करने के लिए विद्या व सद्भाव बाँटना।",
+          "इतिहास से प्रेरणा: हमारे पूर्वजों ने विषम परिस्थितियों पर विजय पाकर ही वर्तमान का निर्माण किया है।",
+          "सामूहिक भलाई: केवल अपने स्वार्थ की न सोचकर पूरे समाज के कल्याण हेतु कार्य करना।",
+          "काव्य रसास्वादन: प्रेरणादायक और ओजस्वी कविताओं के वाचन से मन में उत्साह जगाना।",
+          "परोपकार की अमरता: भौतिक शरीर नष्ट हो जाता है, परंतु आपके जलाए ज्ञान के दिए अमर रहते हैं।",
+          "सकारात्मक दृष्टिकोण: नकारात्मकता पर ध्यान देने के बजाय समाधान खोजने में ऊर्जा लगाना।"
+        ],
+        "image_asset": {
+          "image_id": "ch7_jalate_chalo",
+          "filename": "ch7_jalate_chalo.png",
+          "title": "जलाते चलो - अंधकार से प्रकाश की ओर",
+          "description": "प्रथम दीप का संकल्प, तिमिर को चुनौती और अक्षय प्रकाश परंपरा",
+          "url": "/assets/images/ch7_jalate_chalo.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "समरिया और बिहू नृत्य",
+        "core_summary": "जया मेहता द्वारा लिखित और शिवेंद्र कुमार सिंह द्वारा अनूदित यह सांस्कृतिक निबंध 'समरिया और बिहू नृत्य' पूर्वोत्तर भारत के अत्यंत सुंदर राज्य असम की समृद्ध प्राकृतिक सुषमा, लोक-संस्कृति, पारंपरिक त्योहारों और शास्त्रीय नृत्य परंपराओं का सजीव परिचय देता है। पाठ की कथा लंदन की एक बालिका 'एंजेला' और उसकी असमिया सहेली 'अन्नू' के इर्द-गिर्द घूमती है, जहाँ एंजेला अपनी माँ के साथ असम की संस्कृति पर वृत्तचित्र (Documentary) बनाने भारत आती है। निबंध में असम के प्रसिद्ध काज़ीरंगा राष्ट्रीय उद्यान (एक सींग वाले गेंडे की भूमि), ब्रह्मपुत्र नदी और चाय बागानों का मनमोहक वर्णन है। विशेष रूप से, असम के कृषि-चक्र से जुड़े तीन बिहू त्योहारों का सुंदर निरूपण है: 1. बोहाग बिहू (अप्रैल/वसंत) - बोआई का उत्सव, 2. काती बिहू (अक्टूबर) - फसल सुरक्षा हेतु तुलसी-पूजन, 3. माघ बिहू (जनवरी) - फसल कटाई पर सामूहिक भोज और मेजी जलाना। इसके अतिरिक्त, बिहू नृत्य में बजने वाले पारंपरिक वाद्य यंत्रों (पेपा, ढोल, गगोना) तथा 15वीं सदी में महापुरुष श्रीमंत शंकरदेव द्वारा स्थापित वैष्णव सत्रों से विकसित शास्त्रीय 'सत्रिया नृत्य' की आध्यात्मिक महत्ता को उजागर किया गया है। यह पाठ विद्यार्थियों को भारत की भाषाई व सांस्कृतिक विविधता का आदर करने और लोक-कलाओं को सँजोने की सीख देता है।",
+        "key_concepts": [
+          "पूर्वोत्तर भारत का सांस्कृतिक भूगोल: असम की प्राकृतिक सुंदरता, ब्रह्मपुत्र, चाय बागान व काज़ीरंगा अभयारण्य।",
+          "कृषि और त्योहारों का अटूट संबंध: बोहाग, काती और माघ बिहू का फसलों की बोआई, सुरक्षा व कटाई से जुड़ाव।",
+          "लोक-नृत्य व पारंपरिक वाद्य यंत्र: बिहू नृत्य की वेशभूषा (मेखला-चादर) तथा पेपा (सींग का बाजा), गगोना (बाँस का बाजा) और ढोल।",
+          "शास्त्रीय सत्रिया नृत्य की परंपरा: श्रीमंत शंकरदेव द्वारा 15वीं शताब्दी में सत्रों (मठों) से शुरू की गई भक्तिपूर्ण नृत्य शैली।",
+          "सभ्यताओं का आदान-प्रदान (Global Exchange): लंदन की बालिका एंजेला के माध्यम से भारतीय लोक-संस्कृति की वैश्विक ख्याति।",
+          "संज्ञा के विभिन्न भेद: व्यक्तिवाचक (असम, काज़ीरंगा), जातिवाचक (त्योहार, नर्तक), भाववाचक (सुंदरता, मिठास)।",
+          "वृत्तचित्र व जनसंचार माध्यम: ऑडियो-विजुअल माध्यमों द्वारा सांस्कृतिक धरोहरों का संरक्षण।",
+          "विविधता में एकता: भारत के विभिन्न क्षेत्रों की अनोखी परंपराओं का सम्मान और राष्ट्रीय एकात्मता।"
+        ],
+        "key_terms": [
+          {
+            "term": "पूर्वांचल",
+            "definition": "भारत का पूर्वोत्तर क्षेत्र (Seven Sisters)।"
+          },
+          {
+            "term": "धरोहर",
+            "definition": "अमूल्य प्राचीन विरासत या सांस्कृतिक संपदा।"
+          },
+          {
+            "term": "पेपा",
+            "definition": "भैंस के सींग से बना असम का पारंपरिक सुषिर (हवा से बजने वाला) वाद्य यंत्र।"
+          },
+          {
+            "term": "गगोना",
+            "definition": "बाँस के बारीक टुकड़े से बना छोटा पारंपरिक वाद्य।"
+          },
+          {
+            "term": "सत्र",
+            "definition": "असम में श्रीमंत शंकरदेव द्वारा स्थापित वैष्णव मठ या धार्मिक-सांस्कृतिक केंद्र।"
+          },
+          {
+            "term": "मेजी",
+            "definition": "माघ बिहू पर बाँस और पुआल से बनाई गई मीनार जिसे पूजा के बाद जलाया जाता है।"
+          },
+          {
+            "term": "मेखला-चादर",
+            "definition": "असमिया महिलाओं द्वारा पहनी जाने वाली पारंपरिक रेशमी वेशभूषा।"
+          },
+          {
+            "term": "लज़ीज़",
+            "definition": "अत्यंत स्वादिष्ट, मज़ेदार या ज़ायदेमंद (पीठा, तिल-लड्डू)।"
+          },
+          {
+            "term": "वृत्तचित्र",
+            "definition": "वास्तविक घटनाओं या संस्कृति पर आधारित लघु फिल्म (Documentary)।"
+          },
+          {
+            "term": "सत्रिया",
+            "definition": "असम का अमर शास्त्रीय नृत्य जो आठ मान्यता प्राप्त भारतीय शास्त्रीय नृत्यों में से एक है।"
+          }
+        ],
+        "key_takeaways": [
+          "सांस्कृतिक विविधता का सम्मान: भारत के सभी राज्यों की अनूठी परंपराओं और लोक-कलाओं को गर्व से स्वीकारना।",
+          "कृषि और पर्यावरण के प्रति कृतज्ञता: हमारे भोजन और खुशियों के आधार बने किसानों व प्रकृति का आदर।",
+          "लोक-कलाओं का संरक्षण: पारंपरिक नृत्यों, वाद्य यंत्रों और गीतों को लुप्त होने से बचाना।",
+          "पर्यटन और ज्ञान-वर्धन: देश-विदेश भ्रमण से नए विचारों, भाषाओं और संस्कृतियों को सीखना।",
+          "शास्त्रीय परंपराओं का अध्ययन: सत्रिया और बिहू जैसे कला रूपों के ऐतिहासिक महत्व को समझना।",
+          "सामूहिक उत्सव की भावना: त्योहारों को मिलकर मनाने से आपसी भाईचारा और सौहार्द बढ़ना।",
+          "वन्यजीव संरक्षण: काज़ीरंगा जैसे उद्यानों और एक सींग वाले गेंडे जैसे दुर्लभ जीवों की रक्षा करना।",
+          "रचनात्मक माध्यमों का प्रयोग: फोटोग्राफी और वीडियो द्वारा अपनी धरोहर को दुनिया के सामने लाना।"
+        ],
+        "image_asset": {
+          "image_id": "ch8_bihu_dance",
+          "filename": "ch8_bihu_dance.png",
+          "title": "समरिया और बिहू नृत्य - असम की सांस्कृतिक धरोहर",
+          "description": "तीन बिहू (बोहाग, काती, माघ), पारंपरिक वाद्य पेपा-गगोना और सत्रिया शास्त्रीय नृत्य",
+          "url": "/assets/images/ch8_bihu_dance.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 9,
+        "chapter_title": "मैया मैं नहिं माखन खायो",
+        "core_summary": "हिंदी साहित्य में वात्सल्य रस के सम्राट महाकवि सूरदास द्वारा रचित यह अमर पद 'मैया मैं नहिं माखन खायो' बालक श्री कृष्ण की निष्कपट बाल-लीला, चतुर तर्कों, बाल-हठ और माँ यशोदा के अगाध वात्सल्य प्रेम का अनुपम उदाहरण है। माखन चोरी के आरोप में जब माँ यशोदा बालक कृष्ण को पकड़ती हैं, तो कृष्ण बड़े ही निर्दोष भाव से अपनी बेगुनाही सिद्ध करने के लिए अत्यंत चतुर और भोले-भाले तर्क प्रस्तुत करते हैं। वे कहते हैं: 'मैया! मैंने माखन नहीं खाया। मैं तो भोर होते ही गायों को चराने मधुबन चला गया था और शाम को घर लौटा हूँ। मेरी छोटी-छोटी भुजाएँ हैं, मैं इतने ऊँचे छींके तक कैसे पहुँच सकता हूँ? ग्वाल-बालों ने मुझसे दुश्मनी के कारण जबरदस्ती मेरे मुँह पर माखन लगा दिया है।' जब उन्हें लगता है कि माँ को विश्वास नहीं हो रहा, तो वे अपनी लाठी और कंबल यशोदा को वापस सौंपते हुए रूठने का नाटक करते हैं कि 'तू पराई माँ की भाँति दूसरों की बातों में आ गई है।' बालक कृष्ण के इस निष्कलंक बाल-हठ, भोलेपन और अद्भुत तर्कों को देखकर माँ यशोदा का मन अगाध प्रेम से भर जाता है। वे मुस्कुरा उठती हैं, कृष्ण को गले से लगा लेती हैं और माखन चोरी का सारा संदेह छूमंतर हो जाता है।",
+        "key_concepts": [
+          "वात्सल्य रस का चरमोत्कर्ष: माँ और बच्चे के बीच का अनन्य, निष्कपट और अलौकिक प्रेम।",
+          "बाल-मनोविज्ञान का सजीव चित्रण: गलती छिपाने के लिए बालकों द्वारा गढ़े जाने वाले चतुर और भोले-भाले तर्क।",
+          "सूरदास का काव्य-कौशल: ब्रजभाषा की मिठास, लयात्मकता और संगीतात्मकता का अद्भुत संगम।",
+          "तुककांत काव्यात्मक संरचना: ब्रज शब्दों के तुकांत रूप ('खायो', 'आयो', 'भटकयो', 'लपटायो')।",
+          "अनुप्रास अलंकार की छटा: 'बालक बहियन', 'बरबस मुख' में वर्णों की आवृत्ति से सौंदर्य सृष्टि।",
+          "मध्यकालीन ग्रामीण संस्कृति: गोपालन, माखन, छींका, लकुटी (लाठी) और कमरिया (कंबल) के सांस्कृतिक बिंब।",
+          "बाल-हठ और माँ का समर्पण: बालक के रूठने पर माँ का सर्वस्व भूलकर उसे हृदय से लगा लेना।",
+          "भक्ति काल की अमर धरोहर: ईश्वर को बालक रूप में पूजकर आत्मीयता स्थापित करने की परंपरा।"
+        ],
+        "key_terms": [
+          {
+            "term": "भोर",
+            "definition": "प्रातःकाल, सुबह या तड़के का समय।"
+          },
+          {
+            "term": "छीको",
+            "definition": "छींका; छत या खुंटी से लटकाई गई जालीदार टोकरी जिसमें दूध-दही सुरक्षित रखा जाता है।"
+          },
+          {
+            "term": "पतियायो",
+            "definition": "विश्वास किया, मान लिया या भरोसा जताया।"
+          },
+          {
+            "term": "पठायो",
+            "definition": "भेजा या रवाना किया (जंगल की ओर)।"
+          },
+          {
+            "term": "लकुटि",
+            "definition": "छोटी लाठी या छड़ी जो गाय चराते समय ली जाती है।"
+          },
+          {
+            "term": "कमरिया",
+            "definition": "छोटा कंबल या लोई।"
+          },
+          {
+            "term": "बहियन",
+            "definition": "बाँहें, भुजायें या हाथ।"
+          },
+          {
+            "term": "बिहँसि",
+            "definition": "मुस्कुराकर या आनंदित होकर।"
+          },
+          {
+            "term": "उर",
+            "definition": "हृदय, छाती या गले से लगाना।"
+          },
+          {
+            "term": "बरबस",
+            "definition": "हठपूर्वक, जबरदस्ती या बलपूर्वक।"
+          }
+        ],
+        "key_takeaways": [
+          "मातृ-प्रेम की दिव्यता: माता का हृदय संतान की छोटी-मोटी भूलों को क्षमा कर वात्सल्य बिखेरता है।",
+          "बाल-सुलभ सरलता: बच्चों की निष्कपट और निर्दोष चेष्टाओं का आनंद लेना।",
+          "साहित्यिक रसास्वादन: सूरदास के पदों के लयात्मक गायन से ब्रजभाषा के सौंदर्य को समझना।",
+          "सहानुभूतिपूर्ण व्यवहार: क्रोध के स्थान पर बच्चों को प्यार से समझाना और सही दिशा देना।",
+          "पारंपरिक जीवन-मूल्यों का ज्ञान: प्राचीन भारतीय ग्रामीण जीवन और गोपालन संस्कृति से परिचित होना।",
+          "संवाद कला: अपनी बात को तर्कपूर्ण और प्रभावकारी ढंग से प्रस्तुत करना (बाल-कृष्ण की भाँति)।",
+          "सहानुभूति और क्षमा: गलतियों पर कठोर दंड देने के बजाय आत्मीयता से मन जीतना।",
+          "काव्य में अलौकिकता: साधारण बाल-लीला के माध्यम से ईश्वर और भक्त के मधुर संबंध की अनुभूति।"
+        ],
+        "image_asset": {
+          "image_id": "ch9_krishna_makhan",
+          "filename": "ch9_krishna_makhan.png",
+          "title": "मैया मैं नहिं माखन खायो - बाल-कृष्ण की लीला",
+          "description": "बाल-कृष्ण के चतुर तर्क, माखन चोरी आरोप निवारण और यशोदा माता का वात्सल्य",
+          "url": "/assets/images/ch9_krishna_makhan.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "परीक्षा",
+        "core_summary": "उपन्यास सम्राट मुंशी प्रेमचंद द्वारा रचित यह प्रसिद्ध आदर्शवादी कहानी 'परीक्षा' वास्तविक मानवीय योग्यता, आंतरिक चरित्र और निस्वार्थ सेवाभाव की महत्ता को उजागर करती है। देवगढ़ रियासत के वृद्ध दीवान सरदार सुजानसिंह अपनी वृद्धावस्था के कारण सेवामुक्त होना चाहते थे। महाराज के आग्रह पर नए दीवान को चुनने का संपूर्ण दायित्व सुजानसिंह पर ही छोड़ दिया गया। सुजानसिंह ने किताबी ज्ञान या डिग्रियों के आधार पर चयन करने के बजाय एक अनूठी गुप्त परीक्षा की योजना बनाई। समाचार पत्रों में विज्ञापन दिया गया कि देवगढ़ के नए दीवान का चयन एक महीने के आचार-विचार और व्यवहार के आधार पर होगा। देश भर से सुंदर पोशाकें पहने सैकड़ों डिग्रीधारी उम्मीदवार देवगढ़ पहुँचे और एक महीने तक धर्म, शिष्टाचार व नियम-पालन का नाटक करने लगे। परीक्षा के अंतिम दिन शाम को हॉकी मैच के बाद, नाले के दलदल में एक गरीब किसान की अनाज से भरी गाड़ी फँस गई। मैच से लौट रहे बड़े-बड़े डिग्रीधारी उम्मीदवारों ने किसान को देखा पर किसी ने मदद नहीं की। परंतु हॉकी में चोट खाया हुआ एक निर्धन उम्मीदवार पंडित जानकीनाथ, अपनी चोट की परवाह किए बिना कीचड़ में उतरा और पूरे बल से गाड़ी को नाले से बाहर निकाला। किसान के रूप में स्वयं दीवान सुजानसिंह थे। अगले दिन दरबार में सुजानसिंह ने पंडित जानकीनाथ को नया दीवान घोषित करते हुए कहा: 'जिस हृदय में दया, साहस, आत्मबल और गरीबों की निष्काम सेवा का जज़्बा है, वही इस रियासत का सच्चा रक्षक बन सकता है।'",
+        "key_concepts": [
+          "आंतरिक चरित्र बनाम बाह्य दिखावा: किताबी डिग्रियों और शिष्टाचार के नाटक से अधिक हृदय की करुणा और आत्मबल श्रेष्ठ है।",
+          "सच्चा नेतृत्व गुण (Leadership Traits): संकट के समय निस्वार्थ भाव से आगे बढ़कर दूसरों की सहायता करना।",
+          "परख की गुप्त कसौटी: परिस्थितिजन्य और व्यावहारिक धरातल पर मनुष्य के वास्तविक स्वभाव की जाँच करना।",
+          "प्रेमचंद की यथार्थवादी शैली: समाज के उच्च वर्ग के ढोंग और आम जनमानस के बीच नैतिक अंतर्विरोधों का उद्घाटन।",
+          "विशेषण-विशेष्य संयोजन: 'बूढ़ा दीवान', 'पारखी दृष्टि', 'निष्काम सेवा', 'सभ्य उम्मीदवार'।",
+          "तत्पुरुष समास व मुहावरे: 'धर्म-निष्ठ' (धर्म में निष्ठा), 'आपसे बाहर होना', 'नीचा दिखाना', 'आँखों में चमक आना'।",
+          "कहानी का नाटकीय मोड़ (Plot Twist): किसान का सुजानसिंह निकलना और जानकीनाथ का चयन होना।",
+          "सामाजिक न्याय: पद और धन से ऊपर उठकर निष्ठावान और करुणाशील व्यक्ति को सर्वोच्च स्थान देना।"
+        ],
+        "key_terms": [
+          {
+            "term": "दीवान",
+            "definition": "रियासत का प्रधानमंत्री या मुख्य प्रशासनिक अधिकारी।"
+          },
+          {
+            "term": "गुणग्राही",
+            "definition": "दूसरों के गुणों की सही पहचान और आदर करने वाला पारखी व्यक्ति।"
+          },
+          {
+            "term": "उम्मीदवार",
+            "definition": "किसी पद, नौकरी या परीक्षा हेतु आवेदन करने वाला प्रत्याशी।"
+          },
+          {
+            "term": "सहानुभूति",
+            "definition": "दूसरों के दुख-दर्द को अपना समझकर उनके प्रति दया भाव रखना।"
+          },
+          {
+            "term": "दलदल",
+            "definition": "कीचड़ से भरा हुआ वह स्थान जहाँ गाड़ियाँ या पैर धँस जाते हैं।"
+          },
+          {
+            "term": "आत्मबल",
+            "definition": "आत्मा की आंतरिक शक्ति, नैतिक साहस और दृढ़ विश्वास।"
+          },
+          {
+            "term": "निस्वार्थ",
+            "definition": "बिना किसी अपने लाभ या स्वार्थ के दूसरों का हित करना।"
+          },
+          {
+            "term": "विपत्ति",
+            "definition": "अचानक आया हुआ भारी संकट, मुसीबत या कठिनाई।"
+          },
+          {
+            "term": "शिष्टाचार",
+            "definition": "सभ्य समाज में किया जाने वाला सुसंस्कृत और नियमबद्ध व्यवहार।"
+          },
+          {
+            "term": "पारखी",
+            "definition": "सच्चे और झूठे गुणों की सही पहचान करने वाला विशेषज्ञ।"
+          }
+        ],
+        "key_takeaways": [
+          "दिखावे से दूर रहना: केवल बाहरी वेशभूषा या बातों से नहीं, अपने सत्कर्मों से पहचान बनाना।",
+          "जरूरतमंदों की सहायता: जब भी कोई संकट में दिखे (जैसे किसान), बिना स्वार्थ के मदद हेतु आगे बढ़ना।",
+          "सच्ची योग्यता का आदर: डिग्रियों से अधिक व्यक्ति के चरित्र, करुणा और साहस को महत्व देना।",
+          "विषम परिस्थितियों में धैर्य: चोट या कठिनाई होने पर भी अपने नैतिक कर्तव्य से न पीछे हटना।",
+          "निष्काम कर्म: बिना किसी पुरस्कार की आशा किए दूसरों की सेवा करना।",
+          "कथा साहित्य का अनुशीलन: प्रेमचंद की कहानियों से सामाजिक मूल्यों और जीवन-दर्शन को ग्रहण करना।",
+          "नेतृत्व क्षमता का विकास: एक सच्चा नेता वही है जो दूसरों के दुखों को दूर करने का साहस रखता है।",
+          "चरित्र-बल ही सर्वोपरि है: धन और पद आते-जाते रहते हैं, परंतु अच्छा चरित्र अमर रहता है।"
+        ],
+        "image_asset": {
+          "image_id": "ch10_pariksha",
+          "filename": "ch10_pariksha.png",
+          "title": "परीक्षा - सच्चे नेतृत्व व चरित्र की पहचान",
+          "description": "देवगढ़ के दीवान पद की खोज, कीचड़ में फँसी किसान की गाड़ी और जानकीनाथ का निष्काम सेवाभाव",
+          "url": "/assets/images/ch10_pariksha.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 11,
+        "chapter_title": "चेतक की वीरता",
+        "core_summary": "वीर रस के शिरोमणि कवि श्यामनारायण पांडेय द्वारा रचित यह प्रसिद्ध महाकाव्यात्मक कविता 'चेतक की वीरता' (उनकी अमर कृति 'हल्दीघाटी' का अंश) मेवाड़ के महान योद्धा महाराणा प्रताप के निष्ठावान घोड़े 'चेतक' की अद्वितीय शूरवीरता, युद्ध-कौशल, अकल्पनीय गति और अनन्य स्वामिभक्ति का ओजस्वी वर्णन करती है। हल्दीघाटी के ऐतिहासिक रणक्षेत्र में चेतक दुश्मन की विशाल सेना पर काल बनकर टूट पड़ता है। वह ऐसी ऊँची छलाँगें (चौकड़ी) लगाता था कि मानो हवा से मुकाबला कर रहा हो। कवि कहते हैं कि महाराणा प्रताप के मन में मोड़ लेने का विचार आते ही या आँख की पुतली फिरने से पहले चेतक स्वामी का संकेत समझकर मुड़ जाता था। वह उफनती नदी (बढ़ते नद) के समान आगे बढ़ता, छलावा बनकर दुश्मनों को भ्रमित करता और बिजली से भरे कड़कते बादलों की भाँति शत्रु सेना पर कहर ढाता था। भालों, ढालों, करवालों (तलवारों) और गोलियों की बौछार के बीच भी चेतक बिना डरे अपना मस्तक ऊँचा उठाकर दौड़ता रहा। यह कविता विद्यार्थियों में देश-भक्ति, वीर रस का आनंद, स्वामिभक्ति तथा पशुपक्षियों के प्रति आत्मीयता का संचार करती है।",
+        "key_concepts": [
+          "वीर रस एवं ओज गुण: ओजस्वी भाषा, कड़क ध्वनियों और वीर रस के माध्यम से रणक्षेत्र का जीवंत वातावरण।",
+          "अतिशयोक्ति अलंकार की छटा: 'राणा की पुतली फिरी नहीं, तब तक चेतक मुड़ जाता था' - अकल्पनीय गति की अभिव्यक्ति।",
+          "उत्कृष्ट उपमा व रूपक: 'बढ़ते नद-सा', 'वज्र-मय बादल-सा', 'हवा से पाला पड़ना' (मुहावरा)।",
+          "पशु-मानव का अनूठा संबंध: स्वामी और पशु के बीच भाषाविहीन, आत्मिक व संकेतात्मक तालमेल।",
+          "ऐतिहासिक राष्ट्र-गौरव: हल्दीघाटी के युद्ध में महाराणा प्रताप और चेतक के बलिदान का यशोगान।",
+          "युद्ध संबंधी तत्सम शब्दावली: 'अरि' (शत्रु), 'करवाल' (तलवार), 'निषंग' (तरकश), 'हय-टाप' (खुरों की ध्वनि)।",
+          "निर्भीकता और रण-कौशल: भयंकर अस्त्र-शस्त्रों के बीच भी बिना विचलित हुए लक्ष्य की ओर बढ़ना।",
+          "स्वामिभक्ति की अमर मिसाल: अपने प्राणों की बाज़ी लगाकर भी अपने स्वामी की रक्षा करना।"
+        ],
+        "key_terms": [
+          {
+            "term": "अरि",
+            "definition": "शत्रु, दुश्मन या विरोधी सेना।"
+          },
+          {
+            "term": "करवाल",
+            "definition": "तलवार, खड्ग या धारदार अस्त्र।"
+          },
+          {
+            "term": "निषंग",
+            "definition": "तरकश; पीठ पर बाँधा जाने वाला बाण रखने का पात्र।"
+          },
+          {
+            "term": "चौकड़ी",
+            "definition": "घोड़े द्वारा चारों पैरों को समेटकर लगाई जाने वाली ऊँची छलाँग या कूद।"
+          },
+          {
+            "term": "हय-टाप",
+            "definition": "घोड़े के टापों (खुरों) से निकलने वाली कड़क ध्वनि।"
+          },
+          {
+            "term": "बाग",
+            "definition": "घोड़े को नियंत्रित करने की लगाम या चमड़े की डोरी।"
+          },
+          {
+            "term": "निराला",
+            "definition": "अद्भुत, अनूठा, अनोखा या सबसे अलग।"
+          },
+          {
+            "term": "छलावा",
+            "definition": "धोखा देने वाली छाया या जो पलक झपकते ही गायब हो जाए।"
+          },
+          {
+            "term": "नद",
+            "definition": "उफनती हुई बड़ी नदी या जल-प्रवाह।"
+          },
+          {
+            "term": "स्वामिभक्ति",
+            "definition": "अपने स्वामी, राजा या मालिक के प्रति पूर्ण निष्ठा व वफ़ादारी।"
+          }
+        ],
+        "key_takeaways": [
+          "अदम्य साहस और निर्भीकता: कठिनाइयों और विरोधियों के सामने बिना डरे मस्तक ऊँचा रखना।",
+          "कर्तव्य-निष्ठा एवं वफ़ादारी: अपने संगठन, देश या स्वामी के प्रति जीवन भर वफ़ादार रहना।",
+          "पशुओं के प्रति संवेदनशीलता: चेतक की भांति मूक पशु भी प्रेम और कर्तव्य समझ सकते हैं।",
+          "वीर रस का रसास्वादन: ओजस्वी कविताओं के वाचन से मन में देशभक्ति और स्फूर्ति जगाना।",
+          "इतिहास का आदर: भारत की आज़ादी और स्वाभिमान हेतु लड़ने वाले शूरवीरों को नमन करना।",
+          "संकेत समझने की क्षमता: बिना बोले भी अपने बड़ों या गुरुओं की इच्छा और दिशा को समझना।",
+          "दृढ़ संकल्प: जिस कार्य को हाथ में लें, उसे असाधारण गति और निपुणता से पूरा करना।",
+          "अमर कीर्ति: शरीर नश्वर है, परंतु साहस और स्वामिभक्ति से अर्जित कीर्ति सदा अमर रहती है।"
+        ],
+        "image_asset": {
+          "image_id": "ch11_chetek",
+          "filename": "ch11_chetek.png",
+          "title": "चेतक की वीरता - महाराणा प्रताप व चेतक का शौर्य",
+          "description": "हल्दीघाटी का युद्ध, चेतक की अकल्पनीय गति, अतिशयोक्ति अलंकार व स्वामिभक्ति",
+          "url": "/assets/images/ch11_chetek.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 12,
+        "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
+        "core_summary": "राष्ट्रकवि रामधारी सिंह 'दिनकर' द्वारा रचित यह प्रसिद्ध यात्रा वृत्तांत 'हिंद महासागर में छोटा-सा हिंदुस्तान' सुदूर विदेश में बसे द्वीप 'मॉरीशस' की अनुपम प्राकृतिक सुंदरता और वहाँ के भारतीय प्रवासियों द्वारा सुरक्षित रखी गई जीवंत सांस्कृतिक धरोहर का प्रामाणिक विवरण प्रस्तुत करता है। दिनकर जी भारत से मॉरीशस की यात्रा के दौरान सबसे पहले केन्या की राजधानी नैरोबी के प्रसिद्ध नेशनल पार्क में रुकते हैं। वहाँ वे खुले जंगल में आज़ाद घूमते शेरों, जिराफ़ों और वन्यजीवों को बंद गाड़ियों में बैठकर देखने का रोमांचक अनुभव साझा करते हैं। इसके पश्चात वे मॉरीशस पहुँचते हैं, जिसे वे 'हिंद महासागर का मोती' और 'छोटा हिंदुस्तान' की संज्ञा देते हैं। मॉरीशस का कोई भी स्थान समुद्र तट से 15 मील से अधिक दूर नहीं है। अंग्रेज काल में भारत से 'गिरमिटिया मजदूर' के रूप में ले जाए गए भारतीयों ने भीषण यातनाएँ सहकर भी अपनी भाषा (भोजपुरी व हिंदी), धर्मग्रंथ (तुलसीकृत रामचरितमानस) और त्योहारों को अमर बनाए रखा। मॉरीशस का 'परी तालाब' (ग्रैंड बेसिन) बिल्कुल हरिद्वार और काशी की गंगाजी के समान पवित्र माना जाता है, जहाँ महाशिवरात्रि पर हज़ारों लोग कांवड़ लेकर जल चढ़ाते हैं। यह पाठ विद्यार्थियों में सांस्कृतिक चेतना, प्रवासन के इतिहास और भारतीय परंपराओं की वैश्विक व्यापकता का बोध कराता है।",
+        "key_concepts": [
+          "सांस्कृतिक संरक्षण (Cultural Preservation): हज़ारों मील दूर विदेश में भी अपनी भाषा, संस्कारों व धर्मग्रंथों को जीवित रखना।",
+          "यात्रा वृत्तांत विधा की विशेषताएँ: यात्रा के अनुभवों, प्राकृतिक दृश्यों और जन-जीवन का सजीव, प्रामाणिक व आत्मीय वर्णन।",
+          "गिरमिटिया इतिहास का बोध: औपनिवेशिक काल में भारतीय मजदूरों के त्याग और संघर्ष की ऐतिहासिक पृष्ठभूमि।",
+          "अलंकृत गद्य शैली: 'हिंद महासागर का मोती', 'छोटा हिंदुस्तान', 'चिरायु संस्कृति' जैसे अलंकृत प्रयोग।",
+          "अभयारण्य व वन्यजीव अनुभव: नैरोबी नेशनल पार्क का अनूठा प्राकृतिक वातावरण जहाँ जानवर खुले हैं और मनुष्य बंद।",
+          "तत्सम, तद्भव व आगत शब्द: 'प्राणवती', 'तल्लीनता', 'संस्कृति' (तत्सम); 'कार', 'बस', 'होटल', 'नेशनल पार्क' (अंग्रेजी आगत)।",
+          "व्यक्तिवाचक व स्थानवाचक संज्ञाएँ: मॉरीशस, नैरोबी, ग्रैंड बेसिन, हिंद महासागर, केन्या।",
+          "भारतीय संस्कृति की चिरायुता: समय और दूरी की बाधाओं को पार कर अमर रहने वाली भारतीय सांस्कृतिक चेतना।"
+        ],
+        "key_terms": [
+          {
+            "term": "प्राणवती",
+            "definition": "सजीव, प्राणों से भरपूर, जीवंत और चेतनामयी।"
+          },
+          {
+            "term": "चिरायु",
+            "definition": "दीर्घायु; जिसकी आयु बहुत लंबी हो या जो अमर रहे।"
+          },
+          {
+            "term": "तटबंध",
+            "definition": "समुद्र, नदी या जलाशय का बाँधा गया प्राकृतिक या कृत्रिम किनारा।"
+          },
+          {
+            "term": "अभयारण्य",
+            "definition": "वन्यजीवों के निर्भय रहने हेतु आरक्षित राष्ट्रीय पार्क या जंगल।"
+          },
+          {
+            "term": "तल्लीनता",
+            "definition": "किसी कार्य, भक्ति या ध्यान में पूरी तरह मग्न या लीन हो जाना।"
+          },
+          {
+            "term": "मुलाकात",
+            "definition": "भेंट होना, दर्शन होना या प्रत्यक्ष मिलना।"
+          },
+          {
+            "term": "गिरमिटिया",
+            "definition": "अंग्रेज शासन काल में अनुबंध (Agreement) के तहत विदेशों में मजदूरी हेतु ले जाए गए भारतीय।"
+          },
+          {
+            "term": "परी तालाब",
+            "definition": "मॉरीशस का 'ग्रैंड बेसिन' जलाशय जिसे भारतीय प्रवासी गंगाजी के समान पवित्र मानते हैं।"
+          },
+          {
+            "term": "सराहना",
+            "definition": "किसी के महान प्रयासों या सुंदरता की मुक्त कंठ से प्रशंसा करना।"
+          },
+          {
+            "term": "प्रवासन",
+            "definition": "अपने मूल देश को छोड़कर स्थायी या अस्थायी रूप से विदेश में बसना।"
+          }
+        ],
+        "key_takeaways": [
+          "संस्कृति पर स्वाभिमान: दुनिया के किसी भी कोने में रहने पर भी अपनी मातृभाषा और सांस्कृतिक जड़ों से जुड़े रहना।",
+          "पूर्वजों के संघर्ष का आदर: गिरमिटिया मजदूरों के अनथक परिश्रम और त्याग से सीख लेना।",
+          "पर्यावरण व वन्यजीवों का सम्मान: नैरोबी नेशनल पार्क की भांति प्राकृतिक जंगलों और आज़ाद जीवों की रक्षा।",
+          "यात्रा से ज्ञान-वर्धन: देश-विदेश के भ्रमण से नई संस्कृतियों, भूगोल और इतिहास को प्रत्यक्ष सीखना।",
+          "भाषाई विविधता का आदर: हिंदी, भोजपुरी और स्थानीय बोलियों की मधुरता को सँजोना।",
+          "सहिष्णुता और वैश्विक दृष्टि: 'वसुधैव कुटुंबकम' की भावना से विश्व में भारतीय संस्कृति की अमूल्य छाप छोड़ना।",
+          "साहित्यिक गद्य का आनंद: दिनकर जी की ओजस्वी और सौंदर्यपूर्ण यात्रा शैली से गद्य लेखन सीखना।",
+          "एकता की शक्ति: प्रवासियों द्वारा एकजुट होकर अपने उत्सव (शिवरात्रि) मनाने की प्रेरणा।"
+        ],
+        "image_asset": {
+          "image_id": "ch12_mauritius",
+          "filename": "ch12_mauritius.png",
+          "title": "हिंद महासागर में छोटा-सा हिंदुस्तान - मॉरीशस",
+          "description": "गिरमिटिया इतिहास, परी तालाब शिवरात्रि पर्व और नैरोबी नेशनल पार्क का वन्यजीव अनुभव",
+          "url": "/assets/images/ch12_mauritius.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      },
+      {
+        "chapter_number": 13,
+        "chapter_title": "पेड़ की बात",
+        "core_summary": "महान भारतीय वैज्ञानिक सर जगदीशचंद्र बोस द्वारा रचित (और शंकर सेन द्वारा अनूदित) यह वैज्ञानिक निबंध 'पेड़ की बात' वनस्पति जगत की वैज्ञानिक खोजों और मानवीय संवेदनाओं का अनूठा सामंजस्य प्रस्तुत करता है। डॉ. बोस ने आधुनिक विश्व के सामने पहली बार यह क्रांतिकारी वैज्ञानिक सत्य सिद्ध किया था कि पेड़-पौधों में भी मनुष्यों और पशु-पक्षियों के समान जीवन, भोजन, वृद्धि, चेतना और गहरा वात्सल्य होता है। पाठ में बहुत ही सरल और सरस भाषा में समझाया गया है कि यद्यपि पेड़-पौधों के दाँत नहीं होते, फिर भी वे अपनी जड़ों (मूल) द्वारा मिट्टी से घुला हुआ जल और आवश्यक खनिज पदार्थ चूसते हैं। वे अपनी हरी पत्तियों द्वारा हवा से कार्बन डाइऑक्साइड ('अंगारक वायु') ग्रहण करते हैं और सूर्य के प्रकाश की उपस्थिति में अपना भोजन स्वयं बनाते हैं। इसके अतिरिक्त, निबंध का सबसे भावुक और अलौकिक पक्ष यह है कि पौधे अपनी भावी संतान (बीजों) की रक्षा हेतु अपने जीवन भर का संचित रस और भोजन समर्पित कर देते हैं। सुंदर फूल वास्तव में बीजों की सुरक्षा हेतु बनाए गए रेशमी घर हैं। अपनी संतान (बीज) को पोषित कर पौधे स्वयं नष्ट हो जाते हैं ताकि नए पौधे जन्म ले सकें। यह पाठ विद्यार्थियों में वैज्ञानिक दृष्टिकोण, प्रकृति-प्रेम, वनस्पति संरक्षण और माता-पिता के त्याग का बोध कराता है।",
+        "key_concepts": [
+          "पौधों में सजीवता का वैज्ञानिक सिद्धांत: जगदीशचंद्र बोस द्वारा पौधों में जीवन, चेतना और संवेदनाओं की खोज।",
+          "प्रकाश-संश्लेषण और पोषण (Photosynthesis): जड़ों द्वारा जल-शोषण तथा पत्तियों द्वारा सूर्य-प्रकाश व 'अंगारक वायु' (CO₂) से भोजन निर्माण।",
+          "बीज: पौधों की भावी संतति: बीजों के अंकुरण, सुरक्षा और पौधों द्वारा अपने वंश को आगे बढ़ाने की वैज्ञानिक प्रक्रिया।",
+          "फूलों का वास्तविक जैविक उद्देश्य: केवल सौंदर्य हेतु नहीं, अपितु बीजों की सुरक्षा और कीटों को आकर्षित करने का प्राकृतिक साधन।",
+          "वात्सल्य और सर्वस्व समर्पण: पौधों द्वारा अपनी आने वाली पीढ़ी (बीजों) हेतु अपना संपूर्ण रस समर्पित कर देना।",
+          "वैज्ञानिक पारिभाषिक शब्दावली: 'अंगारक वायु' (Carbon Dioxide), 'उपादान' (सामग्री/घटक), 'अंकुरण', 'अवशोषण'।",
+          "दृष्टांत व मानवीकरण: माँ के स्नेह की तुलना 'स्पर्शमणि' (पारस) से करना जो साधारण तत्व को अनमोल बना देती है।",
+          "पर्यावरण एवं वृक्षारोपण संदेश: पेड़-पौधों को बेजान न मानकर सजीव मित्र के रूप में उनकी रक्षा करना।"
+        ],
+        "key_terms": [
+          {
+            "term": "अंगारक वायु",
+            "definition": "कार्बन डाइऑक्साइड गैस (CO2) जिसे पौधे सांस में लेकर भोजन बनाते हैं।"
+          },
+          {
+            "term": "उपादान",
+            "definition": "किसी वस्तु के निर्माण हेतु आवश्यक सामग्री, घटक या तत्व।"
+          },
+          {
+            "term": "अंकुर",
+            "definition": "बीज के फटने पर बाहर निकलने वाला नया, कोमल नन्हा पौधा।"
+          },
+          {
+            "term": "स्पर्शमणि",
+            "definition": "पारस पत्थर; पौराणिक काल्पनिक मणि जिसके स्पर्श से लोहा भी सोना बन जाता है।"
+          },
+          {
+            "term": "संतति",
+            "definition": "संतान, औलाद या आने वाली नई पीढ़ी।"
+          },
+          {
+            "term": "व्यग्र",
+            "definition": "अत्यंत आतुर, व्याकुल, उत्सुक या बेचैन।"
+          },
+          {
+            "term": "न्योछावर",
+            "definition": "दूसरों की भलाई हेतु अपना सर्वस्व समर्पित या अर्पण कर देना।"
+          },
+          {
+            "term": "प्रकाश-संश्लेषण",
+            "definition": "सूर्य के प्रकाश, जल और अंगारक वायु द्वारा पौधों द्वारा भोजन बनाने की प्रक्रिया।"
+          },
+          {
+            "term": "प्रकृति-नियम",
+            "definition": "सृष्टि के वे अटूट नियम जिनका पालन सभी जीव-जंतु और पेड़-पौधे करते हैं।"
+          },
+          {
+            "term": "मूल",
+            "definition": "पेड़-पौधों की जड़ जो मिट्टी से जल और पोषक तत्व चूसती है।"
+          }
+        ],
+        "key_takeaways": [
+          "वैज्ञानिक सोच का विकास: अंधविश्वासों से दूर रहकर प्रयोग और तर्क के आधार पर सत्य को स्वीकारना।",
+          "वृक्षारोपण एवं संरक्षण: पेड़-पौधों को सजीव मानकर उनकी कटाई रोकना और नए पौधे लगाना।",
+          "प्रकृति के प्रति कृतज्ञता: पेड़ हमें ऑक्सीजन, फल और छाया देते हैं - उनके प्रति सहहानुभूति रखना।",
+          "माता-पिता के त्याग का आदर: बीजों के लिए पौधों के त्याग से इंसानी माता-पिता के निस्वार्थ समर्पण को समझना।",
+          "जिज्ञासा और खोज की वृत्ति: डॉ. बोस की भांति अपने आसपास की दुनिया को सूक्ष्मता से देखने का प्रयास करना।",
+          "भाषा और विज्ञान का समन्वय: विज्ञान के कठिन विषयों को सरस हिंदी भाषा में अभिव्यक्त करने की कला सीखना।",
+          "जल और मिट्टी का संरक्षण: पौधों के जीवन हेतु स्वच्छ जल और उपजाऊ मिट्टी को बचाना।",
+          "जीवन की निरंतरता: नई पीढ़ी को योग्य बनाने के लिए पुरानी पीढ़ी के ज्ञान और परिश्रम का महत्व।"
+        ],
+        "image_asset": {
+          "image_id": "ch13_ped_ki_baat",
+          "filename": "ch13_ped_ki_baat.png",
+          "title": "पेड़ की बात - पौधों में सजीवता व विकास चक्र",
+          "description": "सर जे.सी. बोस की खोज, बिना दाँत के अवशोषण (CO2/जल), प्रकाश-संश्लेषण और बीजों का संवर्धन",
+          "url": "/assets/images/ch13_ped_ki_baat.png",
+          "aspect_ratio": "16:9",
+          "hotspots": [
+            {
+              "id": "hs_concept",
+              "label": "मुख्य अवधारणा (Core Concept)",
+              "x_percent": 12.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_grammar",
+              "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
+              "x_percent": 39.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            },
+            {
+              "id": "hs_takeaways",
+              "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
+              "x_percent": 66.0,
+              "y_percent": 25.0,
+              "w_percent": 22.0,
+              "h_percent": 35.0
+            }
+          ]
+        },
+        "storyboard": {
+          "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
+          "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
+          "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
+        }
+      }
+    ],
+    "deduplication_applied": true
+  },
+  "grade": "6",
+  "chapter_id": "G6-HIN-U03-C01",
   "chapter_number": 1,
-  "chapter_title": "मातृभूमि",
-  "core_summary": "सोहनलाल द्विवेदी द्वारा रचित देशभक्तिपूर्ण कविता 'मातृभूमि' कक्षा 6 की हिंदी पाठ्यपुस्तक 'मल्हार' का प्रथम पाठ है। यह कविता भारतवर्ष के अतुलनीय प्राकृतिक सौंदर्य, भौगोलिक विविधता, सांस्कृतिक निरंतरता तथा समृद्ध दार्शनिक विरासत का ओजस्वी यशोगान प्रस्तुत करती है। कवि भारत की भौगोलिक सीमाओं का मानवीकरण करते हुए उत्तर में प्रहरी के रूप में गगनचुंबी हिमालय, दक्षिण में भारत माता के चरण पखारते विशाल हिंद महासागर (सिंधु), मलय पर्वत से बहती सुगंधित शीतल हवा (मलय समीर) और कलकल बहती पावन नदियों (गंगा, यमुना, सरस्वती का त्रिवेणी संगम) का मनमोहक चित्रण करते हैं। केवल प्राकृतिक सुंदरता ही नहीं, अपितु यह कविता भारत को धर्मभूमि, कर्मभूमि, युद्धभूमि (कुरुक्षेत्र) और बुद्धभूमि के रूप में स्थापित करती है। यहाँ श्री राम, श्री कृष्ण और गौतम बुद्ध जैसी युगपुरुष विभूतियों ने अवतरित होकर सत्य, न्याय, अहिंसा और धर्म का सार्वभौमिक संदेश दिया। प्रस्तुत पाठ का मुख्य शैक्षणिक एवं सामाजिक उद्देश्य विद्यार्थियों के भीतर राष्ट्र-प्रेम, सांस्कृतिक स्वाभिमान, पर्यावरण चेतना तथा नैतिक मूल्यों का बीजारोपण करना है।",
-  "key_concepts": [
-    "भू-सांस्कृतिक राष्ट्रवाद एवं मानवीकरण: भारत की भौगोलिक आकृतियों (हिमालय, समुद्र, नदियाँ, अमराई) को सजीव मानकर मातृभूमि की वंदना करना।",
-    "प्राकृतिक समृद्धि एवं विविधता: उत्तर के विशाल पर्वत से लेकर दक्षिण के हिंद महासागर और त्रिवेणी संगम तक भारत की भौगोलिक अखंडता का निरूपण।",
-    "युद्ध-भूमि और बुद्ध-भूमि का नैतिक संतुलन: धर्म व न्याय की रक्षा हेतु कुरुक्षेत्र में श्रीमद्भगवद्गीता का कर्म-योग तथा विश्व शांति के लिए बुद्ध का अहिंसा-मार्ग - इन दोनों विरोधी जीवन-मूल्यों का अद्भुत सामंजस्य।",
-    "सांस्कृतिक निरंतरता एवं ऐतिहासिक चेतना: पौराणिक काल (राम, कृष्ण) से लेकर बौद्ध काल तक भारत की अविरल विचार-धारा का प्रसार।",
-    "अलंकारिक भाषा शैली: मानवीकरण अलंकार (हिमालय आकाश चूमता है), अनुप्रास अलंकार और पुनरुक्त शब्दों (पग-पग, जग-जग, घर-घर) के माध्यम से काव्य-सौंदर्य की सृष्टि।",
-    "राष्ट्र-रक्षा व निस्वार्थ समर्पण: जन्मभूमि को मातृभूमि मानकर उसके गौरव की रक्षा हेतु अपने सर्वस्व न्योछावर करने का संकल्प।",
-    "पर्यावरण एवं सांस्कृतिक भूगोल का अंतरसंबंध: नदियों और पर्वतों को केवल भौतिक संसाधन न मानकर पवित्र सांस्कृतिक धरोहर के रूप में पूजना।",
-    "वैश्विक शांति में भारत का योगदान: भारत द्वारा पूरे विश्व को अज्ञान के अंधकार से निकालकर बुद्ध के शांति व करुणा के मार्ग पर अग्रसर करना।"
-  ],
-  "key_terms": [
-    {
-      "term": "मातृभूमि",
-      "definition": "वह भूमि जहाँ मनुष्य जन्म लेता है और जिसका अन्न-जल ग्रहण कर बड़ा होता है; स्वदेश या जन्मभूमि।"
-    },
-    {
-      "term": "सिंधु",
-      "definition": "विशाल समुद्र या सागर (विशेष रूप से हिंद महासागर जो भारत के दक्षिण में स्थित है)।"
-    },
-    {
-      "term": "मलय पवन",
-      "definition": "मलय पर्वत (चंदन के वनों वाले पर्वत) की ओर से बहने वाली सुवासित, शीतल एवं मंद हवा।"
-    },
-    {
-      "term": "त्रिवेणी",
-      "definition": "तीन पवित्र नदियों (गंगा, यमुना और अदृश्य सरस्वती) का संगम स्थल (प्रयागराज)।"
-    },
-    {
-      "term": "अमराई",
-      "definition": "आम के छायादार एवं फलदार वृक्षों का बगीचा या सघन बाग।"
-    },
-    {
-      "term": "पुनीत",
-      "definition": "अत्यंत पावन, पवित्र, निर्मल एवं निष्कलंक।"
-    },
-    {
-      "term": "रणक्षेत्र",
-      "definition": "युद्ध-भूमि; वह स्थान जहाँ न्याय और धर्म की रक्षा हेतु युद्ध लड़ा जाता है (जैसे कुरुक्षेत्र)।"
-    },
-    {
-      "term": "बुद्ध-भूमि",
-      "definition": "गौतम बुद्ध की कर्मभूमि, जहाँ से अहिंसा, करुणा और शांति का विश्व संदेश प्रसारित हुआ।"
-    },
-    {
-      "term": "छटा",
-      "definition": "प्राकृतिक सौंदर्य, शोभा या अलौकिक दृश्य की कांति।"
-    },
-    {
-      "term": "पखारन",
-      "definition": "जल से पैर धोना या स्वच्छ करना (प्रक्षालन)।"
-    }
-  ],
-  "key_takeaways": [
-    "राष्ट्रभक्ति एवं स्वाभिमान: प्रत्येक नागरिक का कर्तव्य है कि वह अपनी मातृभूमि के गौरव और संप्रभुता की रक्षा करे।",
-    "पर्यावरण संरक्षण का संकल्प: हिमालय, पवित्र नदियों और वनों को प्रदूषणमुक्त रखकर प्राकृतिक संतुलन बनाए रखना।",
-    "ऐतिहासिक पुरुषों के आदर्शों का अनुकरण: राम की मर्यादा, कृष्ण के कर्म-योग और बुद्ध की अहिंसा को दैनिक जीवन में उतारना।",
-    "एकता में अनेकता की भावना: भौगोलिक विविधता के बावजूद संपूर्ण भारत को एक अखंड मातृभूमि के रूप में स्वीकारना।",
-    "साहित्यिक रसास्वादन: देशभक्तिपूर्ण कविताओं के सस्वर वाचन और अलंकारिक सौंदर्य को समझने की क्षमता का विकास।",
-    "शांति और शक्ति का संतुलन: भारत की शक्ति का उपयोग न्याय की रक्षा और विश्व शांति के लिए ही किया जाता है।",
-    "सांस्कृतिक विरासत पर गर्व: अपनी समृद्ध भाषाई और साहित्यिक धरोहर को सँजोना तथा अगली पीढ़ी तक पहुँचाना।",
-    "निस्वार्थ सेवा भाव: अपने ज्ञान, कौशल और कर्म द्वारा मातृभूमि के अभ्युदय में योगदान देना।"
-  ],
+  "chapter_title": "Hindi Chapter 1",
+  "title": "Hindi Chapter 1 - Chapter Overview",
+  "video_url": "https://notebooklm.link.google/v6hin01",
+  "video_title": "Hindi Chapter 1 Interactive Video Studio",
   "image_asset": {
-    "image_id": "ch1_matribhumi_map",
-    "filename": "ch1_matribhumi_map.png",
-    "title": "मातृभूमि - प्राकृतिक व सांस्कृतिक मानचित्र",
-    "description": "उत्तर में हिमालय से लेकर दक्षिण में सिंधु महासागर तक की प्राकृतिक व्यवस्था",
-    "url": "/assets/images/ch1_matribhumi_map.png",
-    "aspect_ratio": "16:9",
+    "title": "Hindi Chapter 1 Concept Diagram",
+    "asset_url": "/assets/images/ch01_concept_map.png",
+    "url": "/assets/images/ch01_concept_map.png",
+    "filename": "ch01_concept_map.png",
+    "type": "16:9 Diagram",
     "hotspots": [
       {
-        "id": "hs_concept",
-        "label": "मुख्य अवधारणा (Core Concept)",
-        "x_percent": 12.0,
-        "y_percent": 25.0,
-        "w_percent": 22.0,
-        "h_percent": 35.0
+        "id": "hs_1_1",
+        "label": "Core Mechanism",
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of Hindi Chapter 1."
       },
       {
-        "id": "hs_grammar",
-        "label": "शब्दावली व व्याकरण (Vocabulary & Grammar)",
-        "x_percent": 39.0,
-        "y_percent": 25.0,
-        "w_percent": 22.0,
-        "h_percent": 35.0
-      },
-      {
-        "id": "hs_takeaways",
-        "label": "जीवन मूल्य व निष्कर्ष (Takeaways & Values)",
-        "x_percent": 66.0,
-        "y_percent": 25.0,
-        "w_percent": 22.0,
-        "h_percent": 35.0
+        "id": "hs_1_2",
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for Hindi Chapter 1."
       }
     ]
   },
-  "storyboard": {
-    "scene_1": "पाठ्य-स्थल परिचय व लेखक का दृष्टिकोण",
-    "scene_2": "कथा-प्रवाह / काव्यांश मूल भाव",
-    "scene_3": "व्यावहारिक जीवन संदेश व सांस्कृतिक प्रभाव"
-  },
-  "video_url": "https://notebooklm.link.google/qhRhGkge9gus"
+  "unit": "U03",
+  "unit_number": 3,
+  "unit_title": "Unit 3"
 }

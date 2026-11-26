@@ -1,10 +1,1008 @@
 {
-  "grade": "9",
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_8b69dcfad3d23114",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_9",
+    "class_level": 9
+  },
   "subject": "Maths II",
-  "chapter_id": "G9-MAT-U04-C01",
-  "chapter_title": "Maths II Chapter 1",
-  "foundational_rules": [
-    "Rule 1: Always identify core variables in Maths II Chapter 1 before applying formulas.",
-    "Rule 2: Verify step-by-step calculations using inverse relationships."
-  ]
+  "artifact": {
+    "artifact_type": "foundational",
+    "source_file_name": "04-Foundational.json",
+    "source_relative_path": "Contents/Class 9/Maths II/Source Files/04-Foundational.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "394a9998c63bd5bc91b7293eebcb5f363d9cee88ff8a1c17fda54370df95e4c0",
+    "source_semantic_sha256": "4a0753568a71ad63f73786899fd929e0ba796761c14d54a6753640f6a45db2c4",
+    "source_byte_length": 23425,
+    "source_encoding": "utf-8",
+    "source_field_count": 321,
+    "field_inventory": [
+      "$.subject",
+      "$.chapter",
+      "$.chapter.book_title",
+      "$.chapter.curriculum_standard",
+      "$.chapter.chapters_covered",
+      "$.chapter.chapters_covered[0].chapter_number",
+      "$.chapter.chapters_covered[0].chapter_title",
+      "$.chapter.chapters_covered[0].source_pdf",
+      "$.chapter.chapters_covered[1].chapter_number",
+      "$.chapter.chapters_covered[1].chapter_title",
+      "$.chapter.chapters_covered[1].source_pdf",
+      "$.chapter.chapters_covered[2].chapter_number",
+      "$.chapter.chapters_covered[2].chapter_title",
+      "$.chapter.chapters_covered[2].source_pdf",
+      "$.chapter.chapters_covered[3].chapter_number",
+      "$.chapter.chapters_covered[3].chapter_title",
+      "$.chapter.chapters_covered[3].source_pdf",
+      "$.chapter.chapters_covered[4].chapter_number",
+      "$.chapter.chapters_covered[4].chapter_title",
+      "$.chapter.chapters_covered[4].source_pdf",
+      "$.chapter.chapters_covered[5].chapter_number",
+      "$.chapter.chapters_covered[5].chapter_title",
+      "$.chapter.chapters_covered[5].source_pdf",
+      "$.content",
+      "$.content.mathematical_vocabulary",
+      "$.content.mathematical_vocabulary[0].term",
+      "$.content.mathematical_vocabulary[0].context",
+      "$.content.mathematical_vocabulary[0].definition",
+      "$.content.mathematical_vocabulary[1].term",
+      "$.content.mathematical_vocabulary[1].context",
+      "$.content.mathematical_vocabulary[1].definition",
+      "$.content.mathematical_vocabulary[2].term",
+      "$.content.mathematical_vocabulary[2].context",
+      "$.content.mathematical_vocabulary[2].definition",
+      "$.content.mathematical_vocabulary[3].term",
+      "$.content.mathematical_vocabulary[3].context",
+      "$.content.mathematical_vocabulary[3].definition",
+      "$.content.mathematical_vocabulary[4].term",
+      "$.content.mathematical_vocabulary[4].context",
+      "$.content.mathematical_vocabulary[4].definition",
+      "$.content.mathematical_vocabulary[5].term",
+      "$.content.mathematical_vocabulary[5].context",
+      "$.content.mathematical_vocabulary[5].definition",
+      "$.content.mathematical_vocabulary[6].term",
+      "$.content.mathematical_vocabulary[6].context",
+      "$.content.mathematical_vocabulary[6].definition",
+      "$.content.mathematical_vocabulary[7].term",
+      "$.content.mathematical_vocabulary[7].context",
+      "$.content.mathematical_vocabulary[7].definition",
+      "$.content.mathematical_vocabulary[8].term",
+      "$.content.mathematical_vocabulary[8].context",
+      "$.content.mathematical_vocabulary[8].definition",
+      "$.content.mathematical_vocabulary[9].term",
+      "$.content.mathematical_vocabulary[9].context",
+      "$.content.mathematical_vocabulary[9].definition",
+      "$.content.mathematical_vocabulary[10].term",
+      "$.content.mathematical_vocabulary[10].context",
+      "$.content.mathematical_vocabulary[10].definition",
+      "$.content.mathematical_vocabulary[11].term",
+      "$.content.mathematical_vocabulary[11].context",
+      "$.content.mathematical_vocabulary[11].definition",
+      "$.content.mathematical_vocabulary[12].term",
+      "$.content.mathematical_vocabulary[12].context",
+      "$.content.mathematical_vocabulary[12].definition",
+      "$.content.mathematical_vocabulary[13].term",
+      "$.content.mathematical_vocabulary[13].context",
+      "$.content.mathematical_vocabulary[13].definition",
+      "$.content.mathematical_vocabulary[14].term",
+      "$.content.mathematical_vocabulary[14].context",
+      "$.content.mathematical_vocabulary[14].definition",
+      "$.content.definitions",
+      "$.content.definitions[0].name",
+      "$.content.definitions[0].statement",
+      "$.content.definitions[1].name",
+      "$.content.definitions[1].statement",
+      "$.content.definitions[2].name",
+      "$.content.definitions[2].statement",
+      "$.content.definitions[3].name",
+      "$.content.definitions[3].statement",
+      "$.content.definitions[4].name",
+      "$.content.definitions[4].statement",
+      "$.content.definitions[5].name",
+      "$.content.definitions[5].statement",
+      "$.content.definitions[6].name",
+      "$.content.definitions[6].statement",
+      "$.content.definitions[7].name",
+      "$.content.definitions[7].statement",
+      "$.content.definitions[8].name",
+      "$.content.definitions[8].statement",
+      "$.content.definitions[9].name",
+      "$.content.definitions[9].statement",
+      "$.content.definitions[10].name",
+      "$.content.definitions[10].statement",
+      "$.content.definitions[11].name",
+      "$.content.definitions[11].statement",
+      "$.content.concepts",
+      "$.content.concepts[0].title",
+      "$.content.concepts[0].description",
+      "$.content.concepts[1].title",
+      "$.content.concepts[1].description",
+      "$.content.concepts[2].title",
+      "$.content.concepts[2].description",
+      "$.content.concepts[3].title",
+      "$.content.concepts[3].description",
+      "$.content.concepts[4].title",
+      "$.content.concepts[4].description",
+      "$.content.concepts[5].title",
+      "$.content.concepts[5].description",
+      "$.content.concepts[6].title",
+      "$.content.concepts[6].description",
+      "$.content.concepts[7].title",
+      "$.content.concepts[7].description",
+      "$.content.concepts[8].title",
+      "$.content.concepts[8].description",
+      "$.content.concepts[9].title",
+      "$.content.concepts[9].description",
+      "$.content.properties",
+      "$.content.properties[0].property_name",
+      "$.content.properties[0].statement",
+      "$.content.properties[1].property_name",
+      "$.content.properties[1].statement",
+      "$.content.properties[2].property_name",
+      "$.content.properties[2].statement",
+      "$.content.properties[3].property_name",
+      "$.content.properties[3].statement",
+      "$.content.properties[4].property_name",
+      "$.content.properties[4].statement",
+      "$.content.properties[5].property_name",
+      "$.content.properties[5].statement",
+      "$.content.properties[6].property_name",
+      "$.content.properties[6].statement",
+      "$.content.properties[7].property_name",
+      "$.content.properties[7].statement",
+      "$.content.properties[8].property_name",
+      "$.content.properties[8].statement",
+      "$.content.properties[9].property_name",
+      "$.content.properties[9].statement",
+      "$.content.rules",
+      "$.content.rules[0].rule_name",
+      "$.content.rules[0].rule_statement",
+      "$.content.rules[1].rule_name",
+      "$.content.rules[1].rule_statement",
+      "$.content.rules[2].rule_name",
+      "$.content.rules[2].rule_statement",
+      "$.content.rules[3].rule_name",
+      "$.content.rules[3].rule_statement",
+      "$.content.rules[4].rule_name",
+      "$.content.rules[4].rule_statement",
+      "$.content.rules[5].rule_name",
+      "$.content.rules[5].rule_statement",
+      "$.content.formulas",
+      "$.content.formulas[0].formula_name",
+      "$.content.formulas[0].expression",
+      "$.content.formulas[1].formula_name",
+      "$.content.formulas[1].expression",
+      "$.content.formulas[2].formula_name",
+      "$.content.formulas[2].expression",
+      "$.content.formulas[3].formula_name",
+      "$.content.formulas[3].expression",
+      "$.content.formulas[4].formula_name",
+      "$.content.formulas[4].expression",
+      "$.content.formulas[5].formula_name",
+      "$.content.formulas[5].expression",
+      "$.content.formulas[6].formula_name",
+      "$.content.formulas[6].expression",
+      "$.content.formulas[7].formula_name",
+      "$.content.formulas[7].expression",
+      "$.content.formulas[8].formula_name",
+      "$.content.formulas[8].expression",
+      "$.content.formulas[9].formula_name",
+      "$.content.formulas[9].expression",
+      "$.content.formulas[10].formula_name",
+      "$.content.formulas[10].expression",
+      "$.content.symbols_notation",
+      "$.content.symbols_notation[0].symbol",
+      "$.content.symbols_notation[0].meaning",
+      "$.content.symbols_notation[1].symbol",
+      "$.content.symbols_notation[1].meaning",
+      "$.content.symbols_notation[2].symbol",
+      "$.content.symbols_notation[2].meaning",
+      "$.content.symbols_notation[3].symbol",
+      "$.content.symbols_notation[3].meaning",
+      "$.content.symbols_notation[4].symbol",
+      "$.content.symbols_notation[4].meaning",
+      "$.content.symbols_notation[5].symbol",
+      "$.content.symbols_notation[5].meaning",
+      "$.content.symbols_notation[6].symbol",
+      "$.content.symbols_notation[6].meaning",
+      "$.content.symbols_notation[7].symbol",
+      "$.content.symbols_notation[7].meaning",
+      "$.content.symbols_notation[8].symbol",
+      "$.content.symbols_notation[8].meaning",
+      "$.content.symbols_notation[9].symbol",
+      "$.content.symbols_notation[9].meaning",
+      "$.content.symbols_notation[10].symbol",
+      "$.content.symbols_notation[10].meaning",
+      "$.content.symbols_notation[11].symbol",
+      "$.content.symbols_notation[11].meaning",
+      "$.content.symbols_notation[12].symbol",
+      "$.content.symbols_notation[12].meaning",
+      "$.content.symbols_notation[13].symbol",
+      "$.content.symbols_notation[13].meaning",
+      "$.content.symbols_notation[14].symbol",
+      "$.content.symbols_notation[14].meaning",
+      "$.content.procedures",
+      "$.content.procedures[0].procedure_name",
+      "$.content.procedures[0].steps",
+      "$.content.procedures[1].procedure_name",
+      "$.content.procedures[1].steps",
+      "$.content.procedures[2].procedure_name",
+      "$.content.procedures[2].steps",
+      "$.content.procedures[3].procedure_name",
+      "$.content.procedures[3].steps",
+      "$.content.procedures[4].procedure_name",
+      "$.content.procedures[4].steps",
+      "$.content.relationships",
+      "$.content.relationships[0].concept_A",
+      "$.content.relationships[0].concept_B",
+      "$.content.relationships[0].relationship_type",
+      "$.content.relationships[0].description",
+      "$.content.relationships[1].concept_A",
+      "$.content.relationships[1].concept_B",
+      "$.content.relationships[1].relationship_type",
+      "$.content.relationships[1].description",
+      "$.content.relationships[2].concept_A",
+      "$.content.relationships[2].concept_B",
+      "$.content.relationships[2].relationship_type",
+      "$.content.relationships[2].description",
+      "$.content.relationships[3].concept_A",
+      "$.content.relationships[3].concept_B",
+      "$.content.relationships[3].relationship_type",
+      "$.content.relationships[3].description",
+      "$.content.relationships[4].concept_A",
+      "$.content.relationships[4].concept_B",
+      "$.content.relationships[4].relationship_type",
+      "$.content.relationships[4].description",
+      "$.content.relationships[5].concept_A",
+      "$.content.relationships[5].concept_B",
+      "$.content.relationships[5].relationship_type",
+      "$.content.relationships[5].description",
+      "$.content.units_measurements",
+      "$.content.units_measurements[0].unit_name",
+      "$.content.units_measurements[0].symbol",
+      "$.content.units_measurements[0].measurement_type",
+      "$.content.units_measurements[1].unit_name",
+      "$.content.units_measurements[1].symbol",
+      "$.content.units_measurements[1].measurement_type",
+      "$.content.units_measurements[2].unit_name",
+      "$.content.units_measurements[2].symbol",
+      "$.content.units_measurements[2].measurement_type",
+      "$.content.units_measurements[3].unit_name",
+      "$.content.units_measurements[3].symbol",
+      "$.content.units_measurements[3].measurement_type",
+      "$.content.units_measurements[4].unit_name",
+      "$.content.units_measurements[4].symbol",
+      "$.content.units_measurements[4].measurement_type",
+      "$.content.units_measurements[5].unit_name",
+      "$.content.units_measurements[5].symbol",
+      "$.content.units_measurements[5].measurement_type",
+      "$.content.units_measurements[6].unit_name",
+      "$.content.units_measurements[6].symbol",
+      "$.content.units_measurements[6].measurement_type",
+      "$.content.units_measurements[7].unit_name",
+      "$.content.units_measurements[7].symbol",
+      "$.content.units_measurements[7].measurement_type",
+      "$.content.units_measurements[8].unit_name",
+      "$.content.units_measurements[8].symbol",
+      "$.content.units_measurements[8].measurement_type",
+      "$.content.units_measurements[9].unit_name",
+      "$.content.units_measurements[9].symbol",
+      "$.content.units_measurements[9].measurement_type",
+      "$.content.patterns",
+      "$.content.patterns[0].pattern_title",
+      "$.content.patterns[0].description",
+      "$.content.patterns[1].pattern_title",
+      "$.content.patterns[1].description",
+      "$.content.patterns[2].pattern_title",
+      "$.content.patterns[2].description",
+      "$.content.patterns[3].pattern_title",
+      "$.content.patterns[3].description",
+      "$.content.patterns[4].pattern_title",
+      "$.content.patterns[4].description",
+      "$.content.patterns[5].pattern_title",
+      "$.content.patterns[5].description",
+      "$.content.patterns[6].pattern_title",
+      "$.content.patterns[6].description",
+      "$.content.problem_solving_strategies",
+      "$.content.problem_solving_strategies[0].strategy_name",
+      "$.content.problem_solving_strategies[0].description",
+      "$.content.problem_solving_strategies[1].strategy_name",
+      "$.content.problem_solving_strategies[1].description",
+      "$.content.problem_solving_strategies[2].strategy_name",
+      "$.content.problem_solving_strategies[2].description",
+      "$.content.problem_solving_strategies[3].strategy_name",
+      "$.content.problem_solving_strategies[3].description",
+      "$.content.problem_solving_strategies[4].strategy_name",
+      "$.content.problem_solving_strategies[4].description",
+      "$.content.problem_solving_strategies[5].strategy_name",
+      "$.content.problem_solving_strategies[5].description",
+      "$.content.problem_solving_strategies[6].strategy_name",
+      "$.content.problem_solving_strategies[6].description",
+      "$.statistics",
+      "$.statistics.total_categories",
+      "$.statistics.total_items",
+      "$.statistics.counts_by_category",
+      "$.statistics.counts_by_category.mathematical_vocabulary",
+      "$.statistics.counts_by_category.definitions",
+      "$.statistics.counts_by_category.concepts",
+      "$.statistics.counts_by_category.properties",
+      "$.statistics.counts_by_category.rules",
+      "$.statistics.counts_by_category.formulas",
+      "$.statistics.counts_by_category.symbols_notation",
+      "$.statistics.counts_by_category.procedures",
+      "$.statistics.counts_by_category.relationships",
+      "$.statistics.counts_by_category.units_measurements",
+      "$.statistics.counts_by_category.patterns",
+      "$.statistics.counts_by_category.problem_solving_strategies",
+      "$.validation",
+      "$.validation.is_valid_json",
+      "$.validation.duplicate_free",
+      "$.validation.source_grounded"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapter.chapters_covered[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Propositions and their Converses",
+        "source_number_field": "chapter_number",
+        "source_number": 9
+      },
+      {
+        "source_path": "$.chapter.chapters_covered[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "How Quantities Combine: Understanding Data",
+        "source_number_field": "chapter_number",
+        "source_number": 10
+      },
+      {
+        "source_path": "$.chapter.chapters_covered[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "The World of Algorithms",
+        "source_number_field": "chapter_number",
+        "source_number": 11
+      },
+      {
+        "source_path": "$.chapter.chapters_covered[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Quadrilaterals",
+        "source_number_field": "chapter_number",
+        "source_number": 12
+      },
+      {
+        "source_path": "$.chapter.chapters_covered[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Two Variables, One Line",
+        "source_number_field": "chapter_number",
+        "source_number": 13
+      },
+      {
+        "source_path": "$.chapter.chapters_covered[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Math of Space: Surface Area and Volume",
+        "source_number_field": "chapter_number",
+        "source_number": 14
+      }
+    ],
+    "chapter_candidate_count": 6,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "MATHEMATICS",
+    "chapter": {
+      "book_title": "Ganita Manjari - Class 9 Mathematics (Part II)",
+      "curriculum_standard": "NCERT / CBSE Class 9",
+      "chapters_covered": [
+        {
+          "chapter_number": 9,
+          "chapter_title": "Propositions and their Converses",
+          "source_pdf": "iemh201.pdf"
+        },
+        {
+          "chapter_number": 10,
+          "chapter_title": "How Quantities Combine: Understanding Data",
+          "source_pdf": "iemh202.pdf"
+        },
+        {
+          "chapter_number": 11,
+          "chapter_title": "The World of Algorithms",
+          "source_pdf": "iemh203.pdf"
+        },
+        {
+          "chapter_number": 12,
+          "chapter_title": "Quadrilaterals",
+          "source_pdf": "iemh204.pdf"
+        },
+        {
+          "chapter_number": 13,
+          "chapter_title": "Two Variables, One Line",
+          "source_pdf": "iemh205.pdf"
+        },
+        {
+          "chapter_number": 14,
+          "chapter_title": "Math of Space: Surface Area and Volume",
+          "source_pdf": "iemh206.pdf"
+        }
+      ]
+    },
+    "content": {
+      "mathematical_vocabulary": [
+        {
+          "term": "Proposition",
+          "context": "Chapter 9",
+          "definition": "A declarative statement that is unambiguously either true or false."
+        },
+        {
+          "term": "Converse",
+          "context": "Chapter 9",
+          "definition": "A conditional statement formed by interchanging the hypothesis and conclusion of an implication."
+        },
+        {
+          "term": "Contrapositive",
+          "context": "Chapter 9",
+          "definition": "A conditional statement formed by negating and swapping the hypothesis and conclusion (~Q -> ~P)."
+        },
+        {
+          "term": "Counterexample",
+          "context": "Chapter 9",
+          "definition": "A specific instance that refutes a universal mathematical statement."
+        },
+        {
+          "term": "Weighted Mean",
+          "context": "Chapter 10",
+          "definition": "An average computed by weighting individual group values by their respective sample sizes or relative importance."
+        },
+        {
+          "term": "100% Stacked Bar Chart",
+          "context": "Chapter 10",
+          "definition": "A multi-category bar chart where all bars are scaled to 100% to compare relative percentage distributions."
+        },
+        {
+          "term": "Algorithm",
+          "context": "Chapter 11",
+          "definition": "A finite, ordered, unambiguous step-by-step procedure for solving a problem."
+        },
+        {
+          "term": "Modulo Operator",
+          "context": "Chapter 11",
+          "definition": "An arithmetic operation (m mod n) that yields the integer remainder when m is divided by n."
+        },
+        {
+          "term": "Greatest Common Divisor (GCD)",
+          "context": "Chapter 11",
+          "definition": "The largest positive integer that divides two or more given integers without a remainder."
+        },
+        {
+          "term": "Midpoint Theorem",
+          "context": "Chapter 12",
+          "definition": "The segment joining midpoints of two triangle sides is parallel to the third side and half its length."
+        },
+        {
+          "term": "Centroid",
+          "context": "Chapter 12",
+          "definition": "The intersection point of three medians of a triangle, dividing each median in a 2:1 ratio."
+        },
+        {
+          "term": "Varignon Parallelogram",
+          "context": "Chapter 12",
+          "definition": "The parallelogram formed by connecting the adjacent side midpoints of any quadrilateral."
+        },
+        {
+          "term": "Linear Equation in Two Variables",
+          "context": "Chapter 13",
+          "definition": "An algebraic equation of form ax + by + c = 0 representing a straight line on the Cartesian plane."
+        },
+        {
+          "term": "Slope (m)",
+          "context": "Chapter 13",
+          "definition": "The measure of line steepness defined as vertical change divided by horizontal change (rise over run)."
+        },
+        {
+          "term": "Slant Height (l)",
+          "context": "Chapter 14",
+          "definition": "The distance from the apex of a right circular cone to any point on its circular base boundary."
+        }
+      ],
+      "definitions": [
+        {
+          "name": "Proposition",
+          "statement": "A declarative sentence that holds a definitive truth value of either True or False, but not both."
+        },
+        {
+          "name": "Converse Statement",
+          "statement": "For conditional proposition 'If P then Q', the converse is 'If Q then P'."
+        },
+        {
+          "name": "Contrapositive Statement",
+          "statement": "For conditional proposition 'If P then Q', the contrapositive is 'If not Q then not P'."
+        },
+        {
+          "name": "Counterexample",
+          "statement": "An explicit mathematical case that satisfies premise P but violates conclusion Q, proving 'If P then Q' false."
+        },
+        {
+          "name": "Weighted Arithmetic Mean",
+          "statement": "x_bar = sum(w_i * x_i) / sum(w_i), where w_i represent sample weights and x_i represent values."
+        },
+        {
+          "name": "Algorithm",
+          "statement": "A deterministic sequence of finite, unambiguous computational instructions."
+        },
+        {
+          "name": "Modulo Operator (m mod n)",
+          "statement": "The unique integer remainder r such that m = q * n + r with 0 <= r < n."
+        },
+        {
+          "name": "Parallelogram",
+          "statement": "A planar four-sided polygon (quadrilateral) with both pairs of opposite sides parallel."
+        },
+        {
+          "name": "Centroid G",
+          "statement": "The concurrent point of intersection of a triangle's three medians, dividing medians in ratio 2:1."
+        },
+        {
+          "name": "Slope m",
+          "statement": "m = (y2 - y1) / (x2 - x1), measuring the directional steepness of a straight line."
+        },
+        {
+          "name": "Curved Surface Area (CSA)",
+          "statement": "The outer surface area of a 3D solid excluding its flat top and bottom bases."
+        },
+        {
+          "name": "Total Surface Area (TSA)",
+          "statement": "The complete surface area of a 3D solid including all curved and flat boundary faces."
+        }
+      ],
+      "concepts": [
+        {
+          "title": "Logical Independence of Converses",
+          "description": "A proposition P -> Q and its converse Q -> P are logically distinct. The truth of one does not imply the truth of the other."
+        },
+        {
+          "title": "Logical Equivalence of Contrapositives",
+          "description": "A conditional statement P -> Q and its contrapositive ~Q -> ~P always share identical truth values in all interpretations."
+        },
+        {
+          "title": "Disproof by Single Counterexample",
+          "description": "While confirming examples cannot prove a universal assertion, a single valid counterexample conclusively disproves it."
+        },
+        {
+          "title": "Fallacy of Unweighted Group Averages",
+          "description": "Averaging group percentages directly without multiplying by sample counts produces errors when group sizes differ."
+        },
+        {
+          "title": "Algorithmic Efficiency Jump",
+          "description": "Replacing Euclidean subtraction loops with Āryabhaṭa remainder division improves GCD complexity from linear O(N) to logarithmic O(log N)."
+        },
+        {
+          "title": "Varignon Midpoint Invariance",
+          "description": "Connecting midpoints of adjacent sides of ANY quadrilateral (convex, non-convex, or irregular) always forms a parallelogram."
+        },
+        {
+          "title": "Universal 2D Plane Tessellation",
+          "description": "Because interior angles of any quadrilateral sum to 360 degrees, four identical quadrilateral tiles rotated around midpoints tile a plane seamlessly."
+        },
+        {
+          "title": "Linear Equation Solution Sets",
+          "description": "A linear equation ax + by + c = 0 has infinitely many ordered pair solutions (x, y) forming a continuous straight line graph."
+        },
+        {
+          "title": "Archimedean Volume Ratio (1:2:3)",
+          "description": "A cone, sphere, and cylinder sharing base radius r and height h = 2r have volumes in the exact integer ratio 1 : 2 : 3."
+        },
+        {
+          "title": "Square-Cube Scaling Law",
+          "description": "Scaling linear dimensions of a solid by factor k scales surface area by k^2 and volume/mass by k^3."
+        }
+      ],
+      "properties": [
+        {
+          "property_name": "Truth Independence of Converse",
+          "statement": "Truth of P -> Q does not guarantee truth of Q -> P."
+        },
+        {
+          "property_name": "Bi-conditional Equivalence",
+          "statement": "Equivalence P <-> Q holds if and only if both P -> Q and Q -> P are true."
+        },
+        {
+          "property_name": "Mass Conservation in Mixtures",
+          "statement": "Total mass and component mass are strictly conserved when combining distinct alloy batches or solutions."
+        },
+        {
+          "property_name": "Modulo Remainder Bounds",
+          "statement": "For any positive integers m and n, 0 <= (m mod n) < n."
+        },
+        {
+          "property_name": "Common Divisor Difference Property",
+          "statement": "If d divides m and n, then d divides (m - n) and (m mod n)."
+        },
+        {
+          "property_name": "GCD-LCM Product Identity",
+          "statement": "For any positive integers m and n, m * n = gcd(m, n) * lcm(m, n)."
+        },
+        {
+          "property_name": "Parallelogram Diagonal Bisection",
+          "statement": "The diagonals of a quadrilateral bisect each other if and only if the quadrilateral is a parallelogram."
+        },
+        {
+          "property_name": "Special Quadrilateral Diagonals",
+          "statement": "Rectangle diagonals are equal; Rhombus diagonals are perpendicular at 90 degrees; Square diagonals are both equal and perpendicular."
+        },
+        {
+          "property_name": "Parallel & Perpendicular Line Slopes",
+          "statement": "Parallel lines have equal slopes (m1 = m2); Perpendicular lines have negative reciprocal slopes (m1 * m2 = -1)."
+        },
+        {
+          "property_name": "Solid Recasting Volume Preservation",
+          "statement": "Melting and recasting a solid figure into different shapes preserves total internal volume."
+        }
+      ],
+      "rules": [
+        {
+          "rule_name": "Baudhāyana-Pythagoras Converse Rule",
+          "rule_statement": "If a triangle has side lengths satisfying a^2 + b^2 = c^2, then the angle opposite side c is a right angle (90 deg)."
+        },
+        {
+          "rule_name": "Weighted Average Rule",
+          "rule_statement": "Always multiply subgroup means by subgroup counts before dividing by the sum of subgroup counts."
+        },
+        {
+          "rule_name": "Āryabhaṭa Remainder Reduction Rule",
+          "rule_statement": "gcd(m, n) = gcd(n, m mod n) for positive integers m >= n."
+        },
+        {
+          "rule_name": "Midpoint Rule for Triangles",
+          "rule_statement": "In triangle ABC with midpoints D on AB and E on AC: DE || BC and DE = 0.5 * BC."
+        },
+        {
+          "rule_name": "Coefficient Ratio Classification Rule",
+          "rule_statement": "For system a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0: 1. Unique solution if a1/a2 != b1/b2; 2. Parallel/No solution if a1/a2 = b1/b2 != c1/c2; 3. Coincident/Infinite solutions if a1/a2 = b1/b2 = c1/c2."
+        },
+        {
+          "rule_name": "Perpendicular Distance Rule",
+          "rule_statement": "Distance from point (x0, y0) to line ax + by + c = 0 is d = |a*x0 + b*y0 + c| / sqrt(a^2 + b^2)."
+        }
+      ],
+      "formulas": [
+        {
+          "formula_name": "Weighted Mean Formula",
+          "expression": "x_bar = (w1*x1 + w2*x2 + ... + wn*xn) / (w1 + w2 + ... + wn)"
+        },
+        {
+          "formula_name": "Modulo Remainder Relation",
+          "expression": "m = q * n + r  where r = m mod n and 0 <= r < n"
+        },
+        {
+          "formula_name": "Safe LCM Formula",
+          "expression": "lcm(m, n) = (m // gcd(m, n)) * n"
+        },
+        {
+          "formula_name": "Slope Formula",
+          "expression": "m = (y2 - y1) / (x2 - x1)"
+        },
+        {
+          "formula_name": "Slope-Intercept Form",
+          "expression": "y = m*x + d"
+        },
+        {
+          "formula_name": "Cuboid Surface Area & Volume",
+          "expression": "TSA = 2(lw + wh + lh),  Volume = l * w * h"
+        },
+        {
+          "formula_name": "Right Circular Cylinder",
+          "expression": "CSA = 2*pi*r*h,  TSA = 2*pi*r*(r + h),  Volume = pi*r^2*h"
+        },
+        {
+          "formula_name": "Right Circular Cone",
+          "expression": "Slant Height l = sqrt(r^2 + h^2),  CSA = pi*r*l,  TSA = pi*r*(r + l),  Volume = (1/3)*pi*r^2*h"
+        },
+        {
+          "formula_name": "Solid Sphere",
+          "expression": "Surface Area = 4*pi*r^2,  Volume = (4/3)*pi*r^3"
+        },
+        {
+          "formula_name": "Solid Hemisphere",
+          "expression": "CSA = 2*pi*r^2,  TSA = 3*pi*r^2,  Volume = (2/3)*pi*r^3"
+        },
+        {
+          "formula_name": "Frustum of Right Circular Cone",
+          "expression": "Volume = (1/3)*pi*h*(R^2 + r^2 + R*r)"
+        }
+      ],
+      "symbols_notation": [
+        {
+          "symbol": "P -> Q",
+          "meaning": "Conditional Implication (If P then Q)"
+        },
+        {
+          "symbol": "Q -> P",
+          "meaning": "Converse Statement (If Q then P)"
+        },
+        {
+          "symbol": "~Q -> ~P",
+          "meaning": "Contrapositive Statement (If not Q then not P)"
+        },
+        {
+          "symbol": "P <-> Q",
+          "meaning": "Bi-conditional Equivalence (P if and only if Q)"
+        },
+        {
+          "symbol": "x_bar",
+          "meaning": "Sample Mean or Weighted Mean"
+        },
+        {
+          "symbol": "w_i",
+          "meaning": "Weight Factor or Subgroup Count for item i"
+        },
+        {
+          "symbol": "m mod n",
+          "meaning": "Modulo Operator (remainder of m divided by n)"
+        },
+        {
+          "symbol": "gcd(m, n)",
+          "meaning": "Greatest Common Divisor of m and n"
+        },
+        {
+          "symbol": "lcm(m, n)",
+          "meaning": "Least Common Multiple of m and n"
+        },
+        {
+          "symbol": "O(N), O(log N)",
+          "meaning": "Big-O Algorithmic Time Complexity"
+        },
+        {
+          "symbol": "G",
+          "meaning": "Centroid point of a triangle"
+        },
+        {
+          "symbol": "m",
+          "meaning": "Slope gradient of a straight line"
+        },
+        {
+          "symbol": "(x, y)",
+          "meaning": "Ordered pair coordinates on Cartesian plane"
+        },
+        {
+          "symbol": "pi",
+          "meaning": "Archimedes Circle Constant (~22/7 or 3.14159)"
+        },
+        {
+          "symbol": "l",
+          "meaning": "Slant height of a cone"
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_name": "Counterexample Isolation Procedure",
+          "steps": [
+            "Identify universal statement 'For all x, P(x) implies Q(x)'.",
+            "Search for a specific candidate x0 that satisfies hypothesis P(x0).",
+            "Verify whether conclusion Q(x0) fails.",
+            "If Q(x0) is false, cite x0 as a valid counterexample disproving the universal statement."
+          ]
+        },
+        {
+          "procedure_name": "Weighted Mean Calculation Procedure",
+          "steps": [
+            "Identify individual subgroup averages x1, x2, ..., xn.",
+            "Identify respective subgroup counts or weight factors w1, w2, ..., wn.",
+            "Multiply each subgroup average by its weight to find product terms w_i * x_i.",
+            "Sum all product terms to find total combined sum.",
+            "Sum all weight factors to find total weight sum(w_i).",
+            "Divide total product sum by total weight sum to obtain weighted mean x_bar."
+          ]
+        },
+        {
+          "procedure_name": "Āryabhaṭa Remainder GCD Algorithm",
+          "steps": [
+            "Assign m = max(a, b) and n = min(a, b).",
+            "Compute integer remainder r = m mod n.",
+            "If r == 0, output n as the Greatest Common Divisor and terminate.",
+            "If r > 0, set m = n and n = r, then repeat step 2."
+          ]
+        },
+        {
+          "procedure_name": "Graphical Solution of Linear Systems",
+          "steps": [
+            "Express equations in general form a1*x + b1*y + c1 = 0 and a2*x + b2*y + c2 = 0.",
+            "Calculate x-intercept (set y=0) and y-intercept (set x=0) for both lines.",
+            "Plot intercept coordinates on Cartesian grid and draw continuous straight lines.",
+            "Identify coordinate intersection point (x, y) as the unique solution."
+          ]
+        },
+        {
+          "procedure_name": "Solid Recasting Calculation Procedure",
+          "steps": [
+            "Calculate volume of initial solid V_initial using appropriate mensuration formula.",
+            "Calculate volume of single recast solid V_single.",
+            "Equate V_initial = N * V_single assuming no material loss.",
+            "Solve for unknown count N = V_initial / V_single."
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "concept_A": "Conditional Implication (P -> Q)",
+          "concept_B": "Converse (Q -> P)",
+          "relationship_type": "Logical Independence",
+          "description": "Truth of implication P -> Q does not guarantee truth of converse Q -> P."
+        },
+        {
+          "concept_A": "Conditional Implication (P -> Q)",
+          "concept_B": "Contrapositive (~Q -> ~P)",
+          "relationship_type": "Logical Equivalence",
+          "description": "Statement P -> Q and contrapositive ~Q -> ~P always share identical truth values."
+        },
+        {
+          "concept_A": "Euclidean Subtraction GCD",
+          "concept_B": "Āryabhaṭa Remainder GCD",
+          "relationship_type": "Algorithmic Efficiency",
+          "description": "Euclidean subtraction is linear O(N), while Āryabhaṭa remainder division is logarithmic O(log N)."
+        },
+        {
+          "concept_A": "Outer Quadrilateral Diagonals",
+          "concept_B": "Varignon Parallelogram Shape",
+          "relationship_type": "Geometric Mapping",
+          "description": "Equal outer diagonals yield a Varignon Rhombus; Perpendicular outer diagonals yield a Varignon Rectangle."
+        },
+        {
+          "concept_A": "Coefficient Ratios (a1/a2, b1/b2, c1/c2)",
+          "concept_B": "Line System Consistency",
+          "relationship_type": "Algebraic-Geometric Duality",
+          "description": "Ratio inequality a1/a2 != b1/b2 corresponds to intersecting lines with 1 unique solution."
+        },
+        {
+          "concept_A": "Cone, Sphere, Cylinder Volumes",
+          "concept_B": "Archimedean Integer Ratio",
+          "relationship_type": "Spatial Proportion",
+          "description": "For height h = 2r, volumes obey V_cone : V_sphere : V_cylinder = 1 : 2 : 3."
+        }
+      ],
+      "units_measurements": [
+        {
+          "unit_name": "Rupee (INR)",
+          "symbol": "Rs / ₹",
+          "measurement_type": "Currency / Financial Expenditure"
+        },
+        {
+          "unit_name": "Degree",
+          "symbol": "deg or °",
+          "measurement_type": "Plane Angle (360° total vertex angle sum)"
+        },
+        {
+          "unit_name": "Centimeter",
+          "symbol": "cm",
+          "measurement_type": "Linear Length / Distance"
+        },
+        {
+          "unit_name": "Meter",
+          "symbol": "m",
+          "measurement_type": "Linear Length / Height"
+        },
+        {
+          "unit_name": "Kilometer",
+          "symbol": "km",
+          "measurement_type": "Geographic / Planetary Distance"
+        },
+        {
+          "unit_name": "Square Centimeter",
+          "symbol": "cm^2",
+          "measurement_type": "Surface Area"
+        },
+        {
+          "unit_name": "Square Meter",
+          "symbol": "m^2",
+          "measurement_type": "Surface Area / Land Area"
+        },
+        {
+          "unit_name": "Cubic Centimeter",
+          "symbol": "cm^3",
+          "measurement_type": "Volume / Capacity"
+        },
+        {
+          "unit_name": "Liter",
+          "symbol": "L",
+          "measurement_type": "Fluid Volume (1 L = 1000 cm^3)"
+        },
+        {
+          "unit_name": "Meters per second",
+          "symbol": "m/s",
+          "measurement_type": "Fluid Discharge Velocity / Speed"
+        }
+      ],
+      "patterns": [
+        {
+          "pattern_title": "Converse Truth Variation Pattern",
+          "description": "Implications have independent converse truth values unless bi-conditional equivalence holds."
+        },
+        {
+          "pattern_title": "100% Stacked Bar Normalization Pattern",
+          "description": "Internal component percentages in every bar sum strictly to 100% across all groups."
+        },
+        {
+          "pattern_title": "Remainder Reduction Convergence Pattern",
+          "description": "Division remainders decrease monotonically until reaching zero in finite steps."
+        },
+        {
+          "pattern_title": "Fibonacci Worst-Case Pattern",
+          "description": "Consecutive Fibonacci numbers yield quotients of 1 at every step, creating maximum GCD search steps."
+        },
+        {
+          "pattern_title": "Varignon Midpoint Area Pattern",
+          "description": "Area of Varignon midpoint parallelogram is always exactly half the area of the outer quadrilateral."
+        },
+        {
+          "pattern_title": "Linear Intercept Symmetry Pattern",
+          "description": "Straight line ax + by = c cuts X-axis at (c/a, 0) and Y-axis at (0, c/b)."
+        },
+        {
+          "pattern_title": "Dimensional Geometric Scaling Pattern",
+          "description": "Linear length scales by k, surface area scales by k^2, and volume scales by k^3."
+        }
+      ],
+      "problem_solving_strategies": [
+        {
+          "strategy_name": "Counterexample Search Strategy",
+          "description": "To disprove a general statement, focus search on boundary or edge cases that satisfy hypothesis P but violate conclusion Q."
+        },
+        {
+          "strategy_name": "Subgroup Weighting Strategy",
+          "description": "Convert group percentages to total count products before combining averages across unequal sample sizes."
+        },
+        {
+          "strategy_name": "Remainder Reduction Strategy",
+          "description": "Replace iterative subtraction loops with modulo division steps to minimize algorithmic execution time."
+        },
+        {
+          "strategy_name": "Auxiliary Diagonal Triangulation Strategy",
+          "description": "Draw diagonals across quadrilaterals to create auxiliary triangles for applying the Midpoint Theorem."
+        },
+        {
+          "strategy_name": "Intercept Graphing Strategy",
+          "description": "Evaluate x-intercept (y=0) and y-intercept (x=0) to quickly plot linear equations on Cartesian coordinates."
+        },
+        {
+          "strategy_name": "Volume Conservation Strategy",
+          "description": "Equate total initial solid volume to total recast volume to solve for missing dimensions or item counts."
+        },
+        {
+          "strategy_name": "Fermi Layer Estimation Strategy",
+          "description": "Estimate large-scale physical volumes by modeling them as uniform layers (Thickness = Total Volume / Surface Area)."
+        }
+      ]
+    },
+    "statistics": {
+      "total_categories": 12,
+      "total_items": 114,
+      "counts_by_category": {
+        "mathematical_vocabulary": 15,
+        "definitions": 12,
+        "concepts": 10,
+        "properties": 10,
+        "rules": 6,
+        "formulas": 11,
+        "symbols_notation": 15,
+        "procedures": 5,
+        "relationships": 6,
+        "units_measurements": 10,
+        "patterns": 7,
+        "problem_solving_strategies": 7
+      }
+    },
+    "validation": {
+      "is_valid_json": true,
+      "duplicate_free": true,
+      "source_grounded": true
+    }
+  },
+  "grade": "9",
+  "chapter_id": "G9-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths II Chapter 1"
 }

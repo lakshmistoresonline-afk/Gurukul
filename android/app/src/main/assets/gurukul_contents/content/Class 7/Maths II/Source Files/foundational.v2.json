@@ -1,0 +1,899 @@
+{
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_1649b69f5723058f",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
+  },
+  "subject": {
+    "subject_id": "mathsii",
+    "source_subject_label": "Maths II",
+    "component_id": "mathsii",
+    "component_label": "Maths II"
+  },
+  "artifact": {
+    "artifact_type": "foundational",
+    "source_file_name": "09-Foundational.json",
+    "source_relative_path": "Contents/Class 7/Maths II/Source Files/09-Foundational.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "44ac1298cc8df13da5c7632257f20ac8c8f026478b7182a7a1f8f558e23c3d4d",
+    "source_semantic_sha256": "061d12243bc33ec44e96fcd653dfa87a28031d0d0f607c5263e55e5102e32004",
+    "source_byte_length": 17905,
+    "source_encoding": "utf-8",
+    "source_field_count": 283,
+    "field_inventory": [
+      "$.subject",
+      "$.gamification_config",
+      "$.gamification_config.drag_and_drop_enabled",
+      "$.gamification_config.editing_checker_enabled",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].scrambled_tile_sets",
+      "$.chapters[0].scrambled_tile_sets.activity_title",
+      "$.chapters[0].scrambled_tile_sets.scrambled_tile_sets",
+      "$.chapters[0].scrambled_tile_sets.correct_order_explanation",
+      "$.chapters[0].multi_bin_sorting_matrices",
+      "$.chapters[0].multi_bin_sorting_matrices.activity_title",
+      "$.chapters[0].multi_bin_sorting_matrices.bins",
+      "$.chapters[0].multi_bin_sorting_matrices.draggable_items",
+      "$.chapters[0].multi_bin_sorting_matrices.draggable_items[0].item",
+      "$.chapters[0].multi_bin_sorting_matrices.draggable_items[0].target_bin",
+      "$.chapters[0].multi_bin_sorting_matrices.draggable_items[1].item",
+      "$.chapters[0].multi_bin_sorting_matrices.draggable_items[1].target_bin",
+      "$.chapters[0].common_pitfalls_editing_checkers",
+      "$.chapters[0].common_pitfalls_editing_checkers[0].common_error_or_misconception",
+      "$.chapters[0].common_pitfalls_editing_checkers[0].correct_fact_or_method",
+      "$.chapters[0].common_pitfalls_editing_checkers[1].common_error_or_misconception",
+      "$.chapters[0].common_pitfalls_editing_checkers[1].correct_fact_or_method",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.asset_id",
+      "$.chapters[0].image_asset.chapter_number",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].image_asset.url",
+      "$.chapters[0].image_asset.caption",
+      "$.chapters[0].image_asset.hotspots",
+      "$.chapters[0].image_asset.hotspots[0].x_percent",
+      "$.chapters[0].image_asset.hotspots[0].y_percent",
+      "$.chapters[0].image_asset.hotspots[0].w_percent",
+      "$.chapters[0].image_asset.hotspots[0].h_percent",
+      "$.chapters[0].image_asset.hotspots[0].label",
+      "$.chapters[0].image_asset.hotspots[0].popover_text",
+      "$.chapters[0].image_asset.hotspots[1].x_percent",
+      "$.chapters[0].image_asset.hotspots[1].y_percent",
+      "$.chapters[0].image_asset.hotspots[1].w_percent",
+      "$.chapters[0].image_asset.hotspots[1].h_percent",
+      "$.chapters[0].image_asset.hotspots[1].label",
+      "$.chapters[0].image_asset.hotspots[1].popover_text",
+      "$.chapters[0].image_asset.hotspots[2].x_percent",
+      "$.chapters[0].image_asset.hotspots[2].y_percent",
+      "$.chapters[0].image_asset.hotspots[2].w_percent",
+      "$.chapters[0].image_asset.hotspots[2].h_percent",
+      "$.chapters[0].image_asset.hotspots[2].label",
+      "$.chapters[0].image_asset.hotspots[2].popover_text",
+      "$.chapters[0].image_asset.hotspots[3].x_percent",
+      "$.chapters[0].image_asset.hotspots[3].y_percent",
+      "$.chapters[0].image_asset.hotspots[3].w_percent",
+      "$.chapters[0].image_asset.hotspots[3].h_percent",
+      "$.chapters[0].image_asset.hotspots[3].label",
+      "$.chapters[0].image_asset.hotspots[3].popover_text",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].scrambled_tile_sets",
+      "$.chapters[1].scrambled_tile_sets.activity_title",
+      "$.chapters[1].scrambled_tile_sets.scrambled_tile_sets",
+      "$.chapters[1].scrambled_tile_sets.correct_order_explanation",
+      "$.chapters[1].multi_bin_sorting_matrices",
+      "$.chapters[1].multi_bin_sorting_matrices.activity_title",
+      "$.chapters[1].multi_bin_sorting_matrices.bins",
+      "$.chapters[1].multi_bin_sorting_matrices.draggable_items",
+      "$.chapters[1].multi_bin_sorting_matrices.draggable_items[0].item",
+      "$.chapters[1].multi_bin_sorting_matrices.draggable_items[0].target_bin",
+      "$.chapters[1].multi_bin_sorting_matrices.draggable_items[1].item",
+      "$.chapters[1].multi_bin_sorting_matrices.draggable_items[1].target_bin",
+      "$.chapters[1].common_pitfalls_editing_checkers",
+      "$.chapters[1].common_pitfalls_editing_checkers[0].common_error_or_misconception",
+      "$.chapters[1].common_pitfalls_editing_checkers[0].correct_fact_or_method",
+      "$.chapters[1].common_pitfalls_editing_checkers[1].common_error_or_misconception",
+      "$.chapters[1].common_pitfalls_editing_checkers[1].correct_fact_or_method",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.asset_id",
+      "$.chapters[1].image_asset.chapter_number",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].image_asset.url",
+      "$.chapters[1].image_asset.caption",
+      "$.chapters[1].image_asset.hotspots",
+      "$.chapters[1].image_asset.hotspots[0].x_percent",
+      "$.chapters[1].image_asset.hotspots[0].y_percent",
+      "$.chapters[1].image_asset.hotspots[0].w_percent",
+      "$.chapters[1].image_asset.hotspots[0].h_percent",
+      "$.chapters[1].image_asset.hotspots[0].label",
+      "$.chapters[1].image_asset.hotspots[0].popover_text",
+      "$.chapters[1].image_asset.hotspots[1].x_percent",
+      "$.chapters[1].image_asset.hotspots[1].y_percent",
+      "$.chapters[1].image_asset.hotspots[1].w_percent",
+      "$.chapters[1].image_asset.hotspots[1].h_percent",
+      "$.chapters[1].image_asset.hotspots[1].label",
+      "$.chapters[1].image_asset.hotspots[1].popover_text",
+      "$.chapters[1].image_asset.hotspots[2].x_percent",
+      "$.chapters[1].image_asset.hotspots[2].y_percent",
+      "$.chapters[1].image_asset.hotspots[2].w_percent",
+      "$.chapters[1].image_asset.hotspots[2].h_percent",
+      "$.chapters[1].image_asset.hotspots[2].label",
+      "$.chapters[1].image_asset.hotspots[2].popover_text",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].scrambled_tile_sets",
+      "$.chapters[2].scrambled_tile_sets.activity_title",
+      "$.chapters[2].scrambled_tile_sets.scrambled_tile_sets",
+      "$.chapters[2].scrambled_tile_sets.correct_order_explanation",
+      "$.chapters[2].multi_bin_sorting_matrices",
+      "$.chapters[2].multi_bin_sorting_matrices.activity_title",
+      "$.chapters[2].multi_bin_sorting_matrices.bins",
+      "$.chapters[2].multi_bin_sorting_matrices.draggable_items",
+      "$.chapters[2].multi_bin_sorting_matrices.draggable_items[0].item",
+      "$.chapters[2].multi_bin_sorting_matrices.draggable_items[0].target_bin",
+      "$.chapters[2].multi_bin_sorting_matrices.draggable_items[1].item",
+      "$.chapters[2].multi_bin_sorting_matrices.draggable_items[1].target_bin",
+      "$.chapters[2].common_pitfalls_editing_checkers",
+      "$.chapters[2].common_pitfalls_editing_checkers[0].common_error_or_misconception",
+      "$.chapters[2].common_pitfalls_editing_checkers[0].correct_fact_or_method",
+      "$.chapters[2].common_pitfalls_editing_checkers[1].common_error_or_misconception",
+      "$.chapters[2].common_pitfalls_editing_checkers[1].correct_fact_or_method",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.asset_id",
+      "$.chapters[2].image_asset.chapter_number",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].image_asset.url",
+      "$.chapters[2].image_asset.caption",
+      "$.chapters[2].image_asset.hotspots",
+      "$.chapters[2].image_asset.hotspots[0].x_percent",
+      "$.chapters[2].image_asset.hotspots[0].y_percent",
+      "$.chapters[2].image_asset.hotspots[0].w_percent",
+      "$.chapters[2].image_asset.hotspots[0].h_percent",
+      "$.chapters[2].image_asset.hotspots[0].label",
+      "$.chapters[2].image_asset.hotspots[0].popover_text",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].scrambled_tile_sets",
+      "$.chapters[3].scrambled_tile_sets.activity_title",
+      "$.chapters[3].scrambled_tile_sets.scrambled_tile_sets",
+      "$.chapters[3].scrambled_tile_sets.correct_order_explanation",
+      "$.chapters[3].multi_bin_sorting_matrices",
+      "$.chapters[3].multi_bin_sorting_matrices.activity_title",
+      "$.chapters[3].multi_bin_sorting_matrices.bins",
+      "$.chapters[3].multi_bin_sorting_matrices.draggable_items",
+      "$.chapters[3].multi_bin_sorting_matrices.draggable_items[0].item",
+      "$.chapters[3].multi_bin_sorting_matrices.draggable_items[0].target_bin",
+      "$.chapters[3].multi_bin_sorting_matrices.draggable_items[1].item",
+      "$.chapters[3].multi_bin_sorting_matrices.draggable_items[1].target_bin",
+      "$.chapters[3].common_pitfalls_editing_checkers",
+      "$.chapters[3].common_pitfalls_editing_checkers[0].common_error_or_misconception",
+      "$.chapters[3].common_pitfalls_editing_checkers[0].correct_fact_or_method",
+      "$.chapters[3].common_pitfalls_editing_checkers[1].common_error_or_misconception",
+      "$.chapters[3].common_pitfalls_editing_checkers[1].correct_fact_or_method",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.asset_id",
+      "$.chapters[3].image_asset.chapter_number",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].image_asset.url",
+      "$.chapters[3].image_asset.caption",
+      "$.chapters[3].image_asset.hotspots",
+      "$.chapters[3].image_asset.hotspots[0].x_percent",
+      "$.chapters[3].image_asset.hotspots[0].y_percent",
+      "$.chapters[3].image_asset.hotspots[0].w_percent",
+      "$.chapters[3].image_asset.hotspots[0].h_percent",
+      "$.chapters[3].image_asset.hotspots[0].label",
+      "$.chapters[3].image_asset.hotspots[0].popover_text",
+      "$.chapters[3].image_asset.hotspots[1].x_percent",
+      "$.chapters[3].image_asset.hotspots[1].y_percent",
+      "$.chapters[3].image_asset.hotspots[1].w_percent",
+      "$.chapters[3].image_asset.hotspots[1].h_percent",
+      "$.chapters[3].image_asset.hotspots[1].label",
+      "$.chapters[3].image_asset.hotspots[1].popover_text",
+      "$.chapters[3].image_asset.hotspots[2].x_percent",
+      "$.chapters[3].image_asset.hotspots[2].y_percent",
+      "$.chapters[3].image_asset.hotspots[2].w_percent",
+      "$.chapters[3].image_asset.hotspots[2].h_percent",
+      "$.chapters[3].image_asset.hotspots[2].label",
+      "$.chapters[3].image_asset.hotspots[2].popover_text",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].scrambled_tile_sets",
+      "$.chapters[4].scrambled_tile_sets.activity_title",
+      "$.chapters[4].scrambled_tile_sets.scrambled_tile_sets",
+      "$.chapters[4].scrambled_tile_sets.correct_order_explanation",
+      "$.chapters[4].multi_bin_sorting_matrices",
+      "$.chapters[4].multi_bin_sorting_matrices.activity_title",
+      "$.chapters[4].multi_bin_sorting_matrices.bins",
+      "$.chapters[4].multi_bin_sorting_matrices.draggable_items",
+      "$.chapters[4].multi_bin_sorting_matrices.draggable_items[0].item",
+      "$.chapters[4].multi_bin_sorting_matrices.draggable_items[0].target_bin",
+      "$.chapters[4].multi_bin_sorting_matrices.draggable_items[1].item",
+      "$.chapters[4].multi_bin_sorting_matrices.draggable_items[1].target_bin",
+      "$.chapters[4].common_pitfalls_editing_checkers",
+      "$.chapters[4].common_pitfalls_editing_checkers[0].common_error_or_misconception",
+      "$.chapters[4].common_pitfalls_editing_checkers[0].correct_fact_or_method",
+      "$.chapters[4].common_pitfalls_editing_checkers[1].common_error_or_misconception",
+      "$.chapters[4].common_pitfalls_editing_checkers[1].correct_fact_or_method",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.asset_id",
+      "$.chapters[4].image_asset.chapter_number",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].image_asset.url",
+      "$.chapters[4].image_asset.caption",
+      "$.chapters[4].image_asset.hotspots",
+      "$.chapters[4].image_asset.hotspots[0].x_percent",
+      "$.chapters[4].image_asset.hotspots[0].y_percent",
+      "$.chapters[4].image_asset.hotspots[0].w_percent",
+      "$.chapters[4].image_asset.hotspots[0].h_percent",
+      "$.chapters[4].image_asset.hotspots[0].label",
+      "$.chapters[4].image_asset.hotspots[0].popover_text",
+      "$.chapters[4].image_asset.hotspots[1].x_percent",
+      "$.chapters[4].image_asset.hotspots[1].y_percent",
+      "$.chapters[4].image_asset.hotspots[1].w_percent",
+      "$.chapters[4].image_asset.hotspots[1].h_percent",
+      "$.chapters[4].image_asset.hotspots[1].label",
+      "$.chapters[4].image_asset.hotspots[1].popover_text",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].scrambled_tile_sets",
+      "$.chapters[5].scrambled_tile_sets.activity_title",
+      "$.chapters[5].scrambled_tile_sets.scrambled_tile_sets",
+      "$.chapters[5].scrambled_tile_sets.correct_order_explanation",
+      "$.chapters[5].multi_bin_sorting_matrices",
+      "$.chapters[5].multi_bin_sorting_matrices.activity_title",
+      "$.chapters[5].multi_bin_sorting_matrices.bins",
+      "$.chapters[5].multi_bin_sorting_matrices.draggable_items",
+      "$.chapters[5].multi_bin_sorting_matrices.draggable_items[0].item",
+      "$.chapters[5].multi_bin_sorting_matrices.draggable_items[0].target_bin",
+      "$.chapters[5].multi_bin_sorting_matrices.draggable_items[1].item",
+      "$.chapters[5].multi_bin_sorting_matrices.draggable_items[1].target_bin",
+      "$.chapters[5].common_pitfalls_editing_checkers",
+      "$.chapters[5].common_pitfalls_editing_checkers[0].common_error_or_misconception",
+      "$.chapters[5].common_pitfalls_editing_checkers[0].correct_fact_or_method",
+      "$.chapters[5].common_pitfalls_editing_checkers[1].common_error_or_misconception",
+      "$.chapters[5].common_pitfalls_editing_checkers[1].correct_fact_or_method",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.asset_id",
+      "$.chapters[5].image_asset.chapter_number",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].image_asset.url",
+      "$.chapters[5].image_asset.caption",
+      "$.chapters[5].image_asset.hotspots",
+      "$.chapters[5].image_asset.hotspots[0].x_percent",
+      "$.chapters[5].image_asset.hotspots[0].y_percent",
+      "$.chapters[5].image_asset.hotspots[0].w_percent",
+      "$.chapters[5].image_asset.hotspots[0].h_percent",
+      "$.chapters[5].image_asset.hotspots[0].label",
+      "$.chapters[5].image_asset.hotspots[0].popover_text",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].scrambled_tile_sets",
+      "$.chapters[6].scrambled_tile_sets.activity_title",
+      "$.chapters[6].scrambled_tile_sets.scrambled_tile_sets",
+      "$.chapters[6].scrambled_tile_sets.correct_order_explanation",
+      "$.chapters[6].multi_bin_sorting_matrices",
+      "$.chapters[6].multi_bin_sorting_matrices.activity_title",
+      "$.chapters[6].multi_bin_sorting_matrices.bins",
+      "$.chapters[6].multi_bin_sorting_matrices.draggable_items",
+      "$.chapters[6].multi_bin_sorting_matrices.draggable_items[0].item",
+      "$.chapters[6].multi_bin_sorting_matrices.draggable_items[0].target_bin",
+      "$.chapters[6].multi_bin_sorting_matrices.draggable_items[1].item",
+      "$.chapters[6].multi_bin_sorting_matrices.draggable_items[1].target_bin",
+      "$.chapters[6].common_pitfalls_editing_checkers",
+      "$.chapters[6].common_pitfalls_editing_checkers[0].common_error_or_misconception",
+      "$.chapters[6].common_pitfalls_editing_checkers[0].correct_fact_or_method",
+      "$.chapters[6].common_pitfalls_editing_checkers[1].common_error_or_misconception",
+      "$.chapters[6].common_pitfalls_editing_checkers[1].correct_fact_or_method",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.asset_id",
+      "$.chapters[6].image_asset.chapter_number",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].image_asset.url",
+      "$.chapters[6].image_asset.caption",
+      "$.chapters[6].image_asset.hotspots",
+      "$.chapters[6].image_asset.hotspots[0].x_percent",
+      "$.chapters[6].image_asset.hotspots[0].y_percent",
+      "$.chapters[6].image_asset.hotspots[0].w_percent",
+      "$.chapters[6].image_asset.hotspots[0].h_percent",
+      "$.chapters[6].image_asset.hotspots[0].label",
+      "$.chapters[6].image_asset.hotspots[0].popover_text",
+      "$.chapters[6].image_asset.hotspots[1].x_percent",
+      "$.chapters[6].image_asset.hotspots[1].y_percent",
+      "$.chapters[6].image_asset.hotspots[1].w_percent",
+      "$.chapters[6].image_asset.hotspots[1].h_percent",
+      "$.chapters[6].image_asset.hotspots[1].label",
+      "$.chapters[6].image_asset.hotspots[1].popover_text"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Geometric Twins",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "Triangle Congruence Criteria Diagram",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Operations with Integers",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "Integer Token Bag & Zero Pair Model",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Finding Common Ground",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "Rectangular Floor Tiling Grid",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Another Peek Beyond the Point",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "Decimal Place Value Chart",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Connecting the Dots...",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "Statistical Dot Plot Distribution",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Constructions and Tilings",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "Regular Hexagon Construction",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Finding the Unknown",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "Algebraic Balance Scale",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      }
+    ],
+    "chapter_candidate_count": 14,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Mathematics (Ganita Prakash Part II)",
+    "gamification_config": {
+      "drag_and_drop_enabled": true,
+      "editing_checker_enabled": true
+    },
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Geometric Twins",
+        "scrambled_tile_sets": {
+          "activity_title": "Unscramble Geometric Twins Procedure Steps",
+          "scrambled_tile_sets": [
+            "Step 3: Solve equation",
+            "Step 1: Identify given quantities",
+            "Step 2: Frame algebraic model"
+          ],
+          "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+        },
+        "multi_bin_sorting_matrices": {
+          "activity_title": "Concept Classification Matrix",
+          "bins": [
+            "Valid Rules",
+            "Common Misconceptions"
+          ],
+          "draggable_items": [
+            {
+              "item": "Correct Mathematical Property",
+              "target_bin": "Valid Rules"
+            },
+            {
+              "item": "Common Calculation Pitfall",
+              "target_bin": "Common Misconceptions"
+            }
+          ]
+        },
+        "common_pitfalls_editing_checkers": [
+          {
+            "common_error_or_misconception": "Assuming SSA (Side-Side-Angle) guarantees congruence in non-right triangles.",
+            "correct_fact_or_method": "Remember that the angle must be strictly INCLUDED between the two sides for SAS. SSA only guarantees congruence in right triangles (RHS)."
+          },
+          {
+            "common_error_or_misconception": "Writing congruence statements without respecting vertex order (e.g. writing ΔABC ≅ ΔZYX when A matches X).",
+            "correct_fact_or_method": "Always align corresponding vertices in the exact order: if A↔X, B↔Y, C↔Z, write ΔABC ≅ ΔXYZ."
+          }
+        ],
+        "image_asset": {
+          "asset_id": "img_ch1",
+          "chapter_number": 1,
+          "title": "Triangle Congruence Criteria Diagram",
+          "url": "/assets/images/ch1_triangle_congruence.png",
+          "caption": "Visual breakdown of SSS, SAS, ASA, and RHS triangle congruence conditions.",
+          "hotspots": [
+            {
+              "x_percent": 10,
+              "y_percent": 10,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "SSS Criterion",
+              "popover_text": "Side-Side-Side: Equal 3 side lengths guarantee congruence."
+            },
+            {
+              "x_percent": 55,
+              "y_percent": 10,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "SAS Criterion",
+              "popover_text": "Side-Angle-Side: Angle MUST be strictly included between equal sides."
+            },
+            {
+              "x_percent": 10,
+              "y_percent": 55,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "ASA Criterion",
+              "popover_text": "Angle-Side-Angle: Two angles and included side align."
+            },
+            {
+              "x_percent": 55,
+              "y_percent": 55,
+              "w_percent": 40,
+              "h_percent": 40,
+              "label": "RHS Criterion",
+              "popover_text": "Right-Hypotenuse-Side: Right angle + Hypotenuse + 1 leg equal."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Operations with Integers",
+        "scrambled_tile_sets": {
+          "activity_title": "Unscramble Operations with Integers Procedure Steps",
+          "scrambled_tile_sets": [
+            "Step 3: Solve equation",
+            "Step 1: Identify given quantities",
+            "Step 2: Frame algebraic model"
+          ],
+          "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+        },
+        "multi_bin_sorting_matrices": {
+          "activity_title": "Concept Classification Matrix",
+          "bins": [
+            "Valid Rules",
+            "Common Misconceptions"
+          ],
+          "draggable_items": [
+            {
+              "item": "Correct Mathematical Property",
+              "target_bin": "Valid Rules"
+            },
+            {
+              "item": "Common Calculation Pitfall",
+              "target_bin": "Common Misconceptions"
+            }
+          ]
+        },
+        "common_pitfalls_editing_checkers": [
+          {
+            "common_error_or_misconception": "Adding negative numbers and turning the result positive (e.g., thinking -7 - 18 = +25).",
+            "correct_fact_or_method": "Distinguish between addition/subtraction and multiplication. Adding two negatives yields a negative: (-7) + (-18) = -25."
+          },
+          {
+            "common_error_or_misconception": "Confusing division by negative numbers with subtraction.",
+            "correct_fact_or_method": "Treat division as finding the factor: (-36) ÷ (-9) = +4 because (+4) × (-9) = -36."
+          }
+        ],
+        "image_asset": {
+          "asset_id": "img_ch2",
+          "chapter_number": 2,
+          "title": "Integer Token Bag & Zero Pair Model",
+          "url": "/assets/images/ch2_integer_token_model.png",
+          "caption": "Token bag representation of positive (+1) green tokens, negative (-1) red tokens, and zero pairs.",
+          "hotspots": [
+            {
+              "x_percent": 8,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Positive Bag",
+              "popover_text": "Bag A contains +4 green tokens (+1 each)."
+            },
+            {
+              "x_percent": 38,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Zero Pairs",
+              "popover_text": "Green (+1) and Red (-1) tokens combine to form net 0 value."
+            },
+            {
+              "x_percent": 68,
+              "y_percent": 20,
+              "w_percent": 28,
+              "h_percent": 60,
+              "label": "Negative Multiplication",
+              "popover_text": "(-4) × (-2) = +8: Removing 8 red tokens leaves +8 positive green tokens."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Finding Common Ground",
+        "scrambled_tile_sets": {
+          "activity_title": "Unscramble Finding Common Ground Procedure Steps",
+          "scrambled_tile_sets": [
+            "Step 3: Solve equation",
+            "Step 1: Identify given quantities",
+            "Step 2: Frame algebraic model"
+          ],
+          "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+        },
+        "multi_bin_sorting_matrices": {
+          "activity_title": "Concept Classification Matrix",
+          "bins": [
+            "Valid Rules",
+            "Common Misconceptions"
+          ],
+          "draggable_items": [
+            {
+              "item": "Correct Mathematical Property",
+              "target_bin": "Valid Rules"
+            },
+            {
+              "item": "Common Calculation Pitfall",
+              "target_bin": "Common Misconceptions"
+            }
+          ]
+        },
+        "common_pitfalls_editing_checkers": [
+          {
+            "common_error_or_misconception": "Applying the formula HCF × LCM = a × b to three numbers.",
+            "correct_fact_or_method": "Remember that HCF(a,b,c) × LCM(a,b,c) does NOT equal a × b × c in general. The simple product formula holds strictly for two numbers."
+          },
+          {
+            "common_error_or_misconception": "Confusing when to calculate HCF vs LCM in word problems.",
+            "correct_fact_or_method": "Calculate HCF when splitting/dividing quantities into maximum equal parts; calculate LCM when finding minimum repeating cycles or common occurrences."
+          }
+        ],
+        "image_asset": {
+          "asset_id": "img_ch3",
+          "chapter_number": 3,
+          "title": "Rectangular Floor Tiling Grid",
+          "url": "/assets/images/ch3_hcf_floor_tiling.png",
+          "caption": "12 ft × 16 ft floor tiled with 4 ft × 4 ft square tiles representing HCF(12, 16) = 4.",
+          "hotspots": [
+            {
+              "x_percent": 0,
+              "y_percent": 0,
+              "w_percent": 100,
+              "h_percent": 100,
+              "label": "4x4 Tile Grid",
+              "popover_text": "12 tiles of size 4ft x 4ft tile a 12ft x 16ft room completely without cutting."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Another Peek Beyond the Point",
+        "scrambled_tile_sets": {
+          "activity_title": "Unscramble Another Peek Beyond the Point Procedure Steps",
+          "scrambled_tile_sets": [
+            "Step 3: Solve equation",
+            "Step 1: Identify given quantities",
+            "Step 2: Frame algebraic model"
+          ],
+          "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+        },
+        "multi_bin_sorting_matrices": {
+          "activity_title": "Concept Classification Matrix",
+          "bins": [
+            "Valid Rules",
+            "Common Misconceptions"
+          ],
+          "draggable_items": [
+            {
+              "item": "Correct Mathematical Property",
+              "target_bin": "Valid Rules"
+            },
+            {
+              "item": "Common Calculation Pitfall",
+              "target_bin": "Common Misconceptions"
+            }
+          ]
+        },
+        "common_pitfalls_editing_checkers": [
+          {
+            "common_error_or_misconception": "Misplacing the decimal point during multiplication (e.g. 0.2 × 0.3 = 0.6 instead of 0.06).",
+            "correct_fact_or_method": "Count total decimal places: 0.2 (1 place) + 0.3 (1 place) = 2 places. Thus 0.06."
+          },
+          {
+            "common_error_or_misconception": "Forgetting to shift the decimal point in dividend when shifting in divisor during division.",
+            "correct_fact_or_method": "Always multiply BOTH dividend and divisor by the same power of 10 to clear the divisor's decimal."
+          }
+        ],
+        "image_asset": {
+          "asset_id": "img_ch4",
+          "chapter_number": 4,
+          "title": "Decimal Place Value Chart",
+          "url": "/assets/images/ch4_decimal_place_value.png",
+          "caption": "Place value representation for 27.53 showing Tens, Ones, Tenths, and Hundredths.",
+          "hotspots": [
+            {
+              "x_percent": 10,
+              "y_percent": 30,
+              "w_percent": 32,
+              "h_percent": 50,
+              "label": "Whole Units",
+              "popover_text": "2 Tens (20) + 7 Ones (7)."
+            },
+            {
+              "x_percent": 45,
+              "y_percent": 30,
+              "w_percent": 12,
+              "h_percent": 50,
+              "label": "Decimal Separator",
+              "popover_text": "Decimal point separates whole numbers from fractional parts."
+            },
+            {
+              "x_percent": 60,
+              "y_percent": 30,
+              "w_percent": 32,
+              "h_percent": 50,
+              "label": "Fractional Parts",
+              "popover_text": "5 Tenths (5/10) + 3 Hundredths (3/100)."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Connecting the Dots...",
+        "scrambled_tile_sets": {
+          "activity_title": "Unscramble Connecting the Dots... Procedure Steps",
+          "scrambled_tile_sets": [
+            "Step 3: Solve equation",
+            "Step 1: Identify given quantities",
+            "Step 2: Frame algebraic model"
+          ],
+          "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+        },
+        "multi_bin_sorting_matrices": {
+          "activity_title": "Concept Classification Matrix",
+          "bins": [
+            "Valid Rules",
+            "Common Misconceptions"
+          ],
+          "draggable_items": [
+            {
+              "item": "Correct Mathematical Property",
+              "target_bin": "Valid Rules"
+            },
+            {
+              "item": "Common Calculation Pitfall",
+              "target_bin": "Common Misconceptions"
+            }
+          ]
+        },
+        "common_pitfalls_editing_checkers": [
+          {
+            "common_error_or_misconception": "Calculating the median without first sorting the data in ascending or descending order.",
+            "correct_fact_or_method": "Always sort the raw data array sequentially BEFORE picking the middle element."
+          },
+          {
+            "common_error_or_misconception": "Misinterpreting the scale of cropped vertical axes on bar graphs.",
+            "correct_fact_or_method": "Always check the baseline start value of the vertical axis before comparing relative bar heights."
+          }
+        ],
+        "image_asset": {
+          "asset_id": "img_ch5",
+          "chapter_number": 5,
+          "title": "Statistical Dot Plot Distribution",
+          "url": "/assets/images/ch5_dotplot_distribution.png",
+          "caption": "Dot plot of student heights showing cluster at mode 115 cm and range spread.",
+          "hotspots": [
+            {
+              "x_percent": 45,
+              "y_percent": 20,
+              "w_percent": 15,
+              "h_percent": 60,
+              "label": "Cluster / Mode",
+              "popover_text": "Peak at 115 cm represents mode (5 students)."
+            },
+            {
+              "x_percent": 5,
+              "y_percent": 60,
+              "w_percent": 15,
+              "h_percent": 30,
+              "label": "Minimum Boundary",
+              "popover_text": "Minimum height value = 101 cm."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Constructions and Tilings",
+        "scrambled_tile_sets": {
+          "activity_title": "Unscramble Constructions and Tilings Procedure Steps",
+          "scrambled_tile_sets": [
+            "Step 3: Solve equation",
+            "Step 1: Identify given quantities",
+            "Step 2: Frame algebraic model"
+          ],
+          "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+        },
+        "multi_bin_sorting_matrices": {
+          "activity_title": "Concept Classification Matrix",
+          "bins": [
+            "Valid Rules",
+            "Common Misconceptions"
+          ],
+          "draggable_items": [
+            {
+              "item": "Correct Mathematical Property",
+              "target_bin": "Valid Rules"
+            },
+            {
+              "item": "Common Calculation Pitfall",
+              "target_bin": "Common Misconceptions"
+            }
+          ]
+        },
+        "common_pitfalls_editing_checkers": [
+          {
+            "common_error_or_misconception": "Changing the compass radius between drawing the first and second intersecting arcs when constructing 60° angle.",
+            "correct_fact_or_method": "The compass radius MUST remain strictly unchanged between step 1 (base arc) and step 2 (intersecting arc) to form an equilateral triangle."
+          },
+          {
+            "common_error_or_misconception": "Setting compass radius less than half the length of line segment when attempting perpendicular bisector.",
+            "correct_fact_or_method": "Always set compass radius strictly GREATER than half the line segment length (> 0.5 XY), otherwise the arcs will not intersect."
+          }
+        ],
+        "image_asset": {
+          "asset_id": "img_ch6",
+          "chapter_number": 6,
+          "title": "Regular Hexagon Construction",
+          "url": "/assets/images/ch6_regular_hexagon_construction.png",
+          "caption": "Construction of regular hexagon using straightedge and compass showing 6 central 60° equilateral triangles.",
+          "hotspots": [
+            {
+              "x_percent": 25,
+              "y_percent": 25,
+              "w_percent": 50,
+              "h_percent": 50,
+              "label": "Central Equilateral Triangles",
+              "popover_text": "6 equilateral triangles meet at center O with 60° angles."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Finding the Unknown",
+        "scrambled_tile_sets": {
+          "activity_title": "Unscramble Finding the Unknown Procedure Steps",
+          "scrambled_tile_sets": [
+            "Step 3: Solve equation",
+            "Step 1: Identify given quantities",
+            "Step 2: Frame algebraic model"
+          ],
+          "correct_order_explanation": "Order: Step 1 -> Step 2 -> Step 3"
+        },
+        "multi_bin_sorting_matrices": {
+          "activity_title": "Concept Classification Matrix",
+          "bins": [
+            "Valid Rules",
+            "Common Misconceptions"
+          ],
+          "draggable_items": [
+            {
+              "item": "Correct Mathematical Property",
+              "target_bin": "Valid Rules"
+            },
+            {
+              "item": "Common Calculation Pitfall",
+              "target_bin": "Common Misconceptions"
+            }
+          ]
+        },
+        "common_pitfalls_editing_checkers": [
+          {
+            "common_error_or_misconception": "Changing the sign of a term when moving it without proper operation balancing (e.g. thinking 2x = 8 means x = 8 - 2).",
+            "correct_fact_or_method": "2x represents multiplication, so its inverse is division: x = 8 / 2 = 4."
+          },
+          {
+            "common_error_or_misconception": "Distributing a factor to only the first term inside parentheses (e.g. 3(x + 2) = 3x + 2).",
+            "correct_fact_or_method": "Multiply the factor across ALL terms inside parentheses: 3(x + 2) = 3x + 6."
+          }
+        ],
+        "image_asset": {
+          "asset_id": "img_ch7",
+          "chapter_number": 7,
+          "title": "Algebraic Balance Scale",
+          "url": "/assets/images/ch7_weighing_scale_balance.png",
+          "caption": "Balanced scale illustrating 2e + 2 = 8 kg solved systematically via inverse operations.",
+          "hotspots": [
+            {
+              "x_percent": 5,
+              "y_percent": 20,
+              "w_percent": 30,
+              "h_percent": 60,
+              "label": "LHS Pan",
+              "popover_text": "LHS: 2 unknown egg weights 'e' + 2 kg weight."
+            },
+            {
+              "x_percent": 65,
+              "y_percent": 20,
+              "w_percent": 30,
+              "h_percent": 60,
+              "label": "RHS Pan",
+              "popover_text": "RHS: 8 kg fixed weight."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,10 +1,1606 @@
 {
-  "grade": "10",
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_c61bc5f14399d521",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_10",
+    "class_level": 10
+  },
   "subject": "Maths",
-  "chapter_id": "G10-MAT-U04-C01",
-  "chapter_title": "Maths Chapter 1",
-  "foundational_rules": [
-    "Rule 1: Always identify core variables in Maths Chapter 1 before applying formulas.",
-    "Rule 2: Verify step-by-step calculations using inverse relationships."
-  ]
+  "artifact": {
+    "artifact_type": "foundational",
+    "source_file_name": "02-Foundational.json",
+    "source_relative_path": "Contents/Class 10/Maths/Source Files/02-Foundational.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "85b63b52716c9bbcb43a615da04ab2aab4fd5edd3300150847b603e02d545e50",
+    "source_semantic_sha256": "dd66dc9a685ad1650e9ce20550daa20b09f2d78df899bdae77ddc6498aac60d5",
+    "source_byte_length": 37836,
+    "source_encoding": "utf-8",
+    "source_field_count": 552,
+    "field_inventory": [
+      "$.subject",
+      "$.chapter",
+      "$.chapter.total_chapters",
+      "$.chapter.chapters_covered",
+      "$.content",
+      "$.content.mathematical_vocabulary",
+      "$.content.mathematical_vocabulary[0].term",
+      "$.content.mathematical_vocabulary[0].chapter",
+      "$.content.mathematical_vocabulary[0].context",
+      "$.content.mathematical_vocabulary[1].term",
+      "$.content.mathematical_vocabulary[1].chapter",
+      "$.content.mathematical_vocabulary[1].context",
+      "$.content.mathematical_vocabulary[2].term",
+      "$.content.mathematical_vocabulary[2].chapter",
+      "$.content.mathematical_vocabulary[2].context",
+      "$.content.mathematical_vocabulary[3].term",
+      "$.content.mathematical_vocabulary[3].chapter",
+      "$.content.mathematical_vocabulary[3].context",
+      "$.content.mathematical_vocabulary[4].term",
+      "$.content.mathematical_vocabulary[4].chapter",
+      "$.content.mathematical_vocabulary[4].context",
+      "$.content.mathematical_vocabulary[5].term",
+      "$.content.mathematical_vocabulary[5].chapter",
+      "$.content.mathematical_vocabulary[5].context",
+      "$.content.mathematical_vocabulary[6].term",
+      "$.content.mathematical_vocabulary[6].chapter",
+      "$.content.mathematical_vocabulary[6].context",
+      "$.content.mathematical_vocabulary[7].term",
+      "$.content.mathematical_vocabulary[7].chapter",
+      "$.content.mathematical_vocabulary[7].context",
+      "$.content.mathematical_vocabulary[8].term",
+      "$.content.mathematical_vocabulary[8].chapter",
+      "$.content.mathematical_vocabulary[8].context",
+      "$.content.mathematical_vocabulary[9].term",
+      "$.content.mathematical_vocabulary[9].chapter",
+      "$.content.mathematical_vocabulary[9].context",
+      "$.content.mathematical_vocabulary[10].term",
+      "$.content.mathematical_vocabulary[10].chapter",
+      "$.content.mathematical_vocabulary[10].context",
+      "$.content.mathematical_vocabulary[11].term",
+      "$.content.mathematical_vocabulary[11].chapter",
+      "$.content.mathematical_vocabulary[11].context",
+      "$.content.mathematical_vocabulary[12].term",
+      "$.content.mathematical_vocabulary[12].chapter",
+      "$.content.mathematical_vocabulary[12].context",
+      "$.content.mathematical_vocabulary[13].term",
+      "$.content.mathematical_vocabulary[13].chapter",
+      "$.content.mathematical_vocabulary[13].context",
+      "$.content.mathematical_vocabulary[14].term",
+      "$.content.mathematical_vocabulary[14].chapter",
+      "$.content.mathematical_vocabulary[14].context",
+      "$.content.mathematical_vocabulary[15].term",
+      "$.content.mathematical_vocabulary[15].chapter",
+      "$.content.mathematical_vocabulary[15].context",
+      "$.content.mathematical_vocabulary[16].term",
+      "$.content.mathematical_vocabulary[16].chapter",
+      "$.content.mathematical_vocabulary[16].context",
+      "$.content.mathematical_vocabulary[17].term",
+      "$.content.mathematical_vocabulary[17].chapter",
+      "$.content.mathematical_vocabulary[17].context",
+      "$.content.mathematical_vocabulary[18].term",
+      "$.content.mathematical_vocabulary[18].chapter",
+      "$.content.mathematical_vocabulary[18].context",
+      "$.content.mathematical_vocabulary[19].term",
+      "$.content.mathematical_vocabulary[19].chapter",
+      "$.content.mathematical_vocabulary[19].context",
+      "$.content.mathematical_vocabulary[20].term",
+      "$.content.mathematical_vocabulary[20].chapter",
+      "$.content.mathematical_vocabulary[20].context",
+      "$.content.mathematical_vocabulary[21].term",
+      "$.content.mathematical_vocabulary[21].chapter",
+      "$.content.mathematical_vocabulary[21].context",
+      "$.content.mathematical_vocabulary[22].term",
+      "$.content.mathematical_vocabulary[22].chapter",
+      "$.content.mathematical_vocabulary[22].context",
+      "$.content.mathematical_vocabulary[23].term",
+      "$.content.mathematical_vocabulary[23].chapter",
+      "$.content.mathematical_vocabulary[23].context",
+      "$.content.mathematical_vocabulary[24].term",
+      "$.content.mathematical_vocabulary[24].chapter",
+      "$.content.mathematical_vocabulary[24].context",
+      "$.content.mathematical_vocabulary[25].term",
+      "$.content.mathematical_vocabulary[25].chapter",
+      "$.content.mathematical_vocabulary[25].context",
+      "$.content.mathematical_vocabulary[26].term",
+      "$.content.mathematical_vocabulary[26].chapter",
+      "$.content.mathematical_vocabulary[26].context",
+      "$.content.mathematical_vocabulary[27].term",
+      "$.content.mathematical_vocabulary[27].chapter",
+      "$.content.mathematical_vocabulary[27].context",
+      "$.content.mathematical_vocabulary[28].term",
+      "$.content.mathematical_vocabulary[28].chapter",
+      "$.content.mathematical_vocabulary[28].context",
+      "$.content.mathematical_vocabulary[29].term",
+      "$.content.mathematical_vocabulary[29].chapter",
+      "$.content.mathematical_vocabulary[29].context",
+      "$.content.mathematical_vocabulary[30].term",
+      "$.content.mathematical_vocabulary[30].chapter",
+      "$.content.mathematical_vocabulary[30].context",
+      "$.content.mathematical_vocabulary[31].term",
+      "$.content.mathematical_vocabulary[31].chapter",
+      "$.content.mathematical_vocabulary[31].context",
+      "$.content.mathematical_vocabulary[32].term",
+      "$.content.mathematical_vocabulary[32].chapter",
+      "$.content.mathematical_vocabulary[32].context",
+      "$.content.mathematical_vocabulary[33].term",
+      "$.content.mathematical_vocabulary[33].chapter",
+      "$.content.mathematical_vocabulary[33].context",
+      "$.content.mathematical_vocabulary[34].term",
+      "$.content.mathematical_vocabulary[34].chapter",
+      "$.content.mathematical_vocabulary[34].context",
+      "$.content.mathematical_vocabulary[35].term",
+      "$.content.mathematical_vocabulary[35].chapter",
+      "$.content.mathematical_vocabulary[35].context",
+      "$.content.mathematical_vocabulary[36].term",
+      "$.content.mathematical_vocabulary[36].chapter",
+      "$.content.mathematical_vocabulary[36].context",
+      "$.content.mathematical_vocabulary[37].term",
+      "$.content.mathematical_vocabulary[37].chapter",
+      "$.content.mathematical_vocabulary[37].context",
+      "$.content.mathematical_vocabulary[38].term",
+      "$.content.mathematical_vocabulary[38].chapter",
+      "$.content.mathematical_vocabulary[38].context",
+      "$.content.definitions",
+      "$.content.definitions[0].term",
+      "$.content.definitions[0].chapter",
+      "$.content.definitions[0].definition",
+      "$.content.definitions[1].term",
+      "$.content.definitions[1].chapter",
+      "$.content.definitions[1].definition",
+      "$.content.definitions[2].term",
+      "$.content.definitions[2].chapter",
+      "$.content.definitions[2].definition",
+      "$.content.definitions[3].term",
+      "$.content.definitions[3].chapter",
+      "$.content.definitions[3].definition",
+      "$.content.definitions[4].term",
+      "$.content.definitions[4].chapter",
+      "$.content.definitions[4].definition",
+      "$.content.definitions[5].term",
+      "$.content.definitions[5].chapter",
+      "$.content.definitions[5].definition",
+      "$.content.definitions[6].term",
+      "$.content.definitions[6].chapter",
+      "$.content.definitions[6].definition",
+      "$.content.definitions[7].term",
+      "$.content.definitions[7].chapter",
+      "$.content.definitions[7].definition",
+      "$.content.definitions[8].term",
+      "$.content.definitions[8].chapter",
+      "$.content.definitions[8].definition",
+      "$.content.definitions[9].term",
+      "$.content.definitions[9].chapter",
+      "$.content.definitions[9].definition",
+      "$.content.definitions[10].term",
+      "$.content.definitions[10].chapter",
+      "$.content.definitions[10].definition",
+      "$.content.definitions[11].term",
+      "$.content.definitions[11].chapter",
+      "$.content.definitions[11].definition",
+      "$.content.definitions[12].term",
+      "$.content.definitions[12].chapter",
+      "$.content.definitions[12].definition",
+      "$.content.definitions[13].term",
+      "$.content.definitions[13].chapter",
+      "$.content.definitions[13].definition",
+      "$.content.definitions[14].term",
+      "$.content.definitions[14].chapter",
+      "$.content.definitions[14].definition",
+      "$.content.definitions[15].term",
+      "$.content.definitions[15].chapter",
+      "$.content.definitions[15].definition",
+      "$.content.definitions[16].term",
+      "$.content.definitions[16].chapter",
+      "$.content.definitions[16].definition",
+      "$.content.definitions[17].term",
+      "$.content.definitions[17].chapter",
+      "$.content.definitions[17].definition",
+      "$.content.definitions[18].term",
+      "$.content.definitions[18].chapter",
+      "$.content.definitions[18].definition",
+      "$.content.definitions[19].term",
+      "$.content.definitions[19].chapter",
+      "$.content.definitions[19].definition",
+      "$.content.definitions[20].term",
+      "$.content.definitions[20].chapter",
+      "$.content.definitions[20].definition",
+      "$.content.concepts",
+      "$.content.concepts[0].concept_title",
+      "$.content.concepts[0].chapter",
+      "$.content.concepts[0].description",
+      "$.content.concepts[1].concept_title",
+      "$.content.concepts[1].chapter",
+      "$.content.concepts[1].description",
+      "$.content.concepts[2].concept_title",
+      "$.content.concepts[2].chapter",
+      "$.content.concepts[2].description",
+      "$.content.concepts[3].concept_title",
+      "$.content.concepts[3].chapter",
+      "$.content.concepts[3].description",
+      "$.content.concepts[4].concept_title",
+      "$.content.concepts[4].chapter",
+      "$.content.concepts[4].description",
+      "$.content.concepts[5].concept_title",
+      "$.content.concepts[5].chapter",
+      "$.content.concepts[5].description",
+      "$.content.concepts[6].concept_title",
+      "$.content.concepts[6].chapter",
+      "$.content.concepts[6].description",
+      "$.content.concepts[7].concept_title",
+      "$.content.concepts[7].chapter",
+      "$.content.concepts[7].description",
+      "$.content.concepts[8].concept_title",
+      "$.content.concepts[8].chapter",
+      "$.content.concepts[8].description",
+      "$.content.concepts[9].concept_title",
+      "$.content.concepts[9].chapter",
+      "$.content.concepts[9].description",
+      "$.content.concepts[10].concept_title",
+      "$.content.concepts[10].chapter",
+      "$.content.concepts[10].description",
+      "$.content.concepts[11].concept_title",
+      "$.content.concepts[11].chapter",
+      "$.content.concepts[11].description",
+      "$.content.concepts[12].concept_title",
+      "$.content.concepts[12].chapter",
+      "$.content.concepts[12].description",
+      "$.content.concepts[13].concept_title",
+      "$.content.concepts[13].chapter",
+      "$.content.concepts[13].description",
+      "$.content.concepts[14].concept_title",
+      "$.content.concepts[14].chapter",
+      "$.content.concepts[14].description",
+      "$.content.concepts[15].concept_title",
+      "$.content.concepts[15].chapter",
+      "$.content.concepts[15].description",
+      "$.content.concepts[16].concept_title",
+      "$.content.concepts[16].chapter",
+      "$.content.concepts[16].description",
+      "$.content.properties",
+      "$.content.properties[0].property_name",
+      "$.content.properties[0].chapter",
+      "$.content.properties[0].statement",
+      "$.content.properties[1].property_name",
+      "$.content.properties[1].chapter",
+      "$.content.properties[1].statement",
+      "$.content.properties[2].property_name",
+      "$.content.properties[2].chapter",
+      "$.content.properties[2].statement",
+      "$.content.properties[3].property_name",
+      "$.content.properties[3].chapter",
+      "$.content.properties[3].statement",
+      "$.content.properties[4].property_name",
+      "$.content.properties[4].chapter",
+      "$.content.properties[4].statement",
+      "$.content.properties[5].property_name",
+      "$.content.properties[5].chapter",
+      "$.content.properties[5].statement",
+      "$.content.properties[6].property_name",
+      "$.content.properties[6].chapter",
+      "$.content.properties[6].statement",
+      "$.content.properties[7].property_name",
+      "$.content.properties[7].chapter",
+      "$.content.properties[7].statement",
+      "$.content.properties[8].property_name",
+      "$.content.properties[8].chapter",
+      "$.content.properties[8].statement",
+      "$.content.properties[9].property_name",
+      "$.content.properties[9].chapter",
+      "$.content.properties[9].statement",
+      "$.content.rules",
+      "$.content.rules[0].rule_name",
+      "$.content.rules[0].chapter",
+      "$.content.rules[0].rule_statement",
+      "$.content.rules[1].rule_name",
+      "$.content.rules[1].chapter",
+      "$.content.rules[1].rule_statement",
+      "$.content.rules[2].rule_name",
+      "$.content.rules[2].chapter",
+      "$.content.rules[2].rule_statement",
+      "$.content.rules[3].rule_name",
+      "$.content.rules[3].chapter",
+      "$.content.rules[3].rule_statement",
+      "$.content.rules[4].rule_name",
+      "$.content.rules[4].chapter",
+      "$.content.rules[4].rule_statement",
+      "$.content.formulas",
+      "$.content.formulas[0].name",
+      "$.content.formulas[0].chapter",
+      "$.content.formulas[0].formula",
+      "$.content.formulas[1].name",
+      "$.content.formulas[1].chapter",
+      "$.content.formulas[1].formula",
+      "$.content.formulas[2].name",
+      "$.content.formulas[2].chapter",
+      "$.content.formulas[2].formula",
+      "$.content.formulas[3].name",
+      "$.content.formulas[3].chapter",
+      "$.content.formulas[3].formula",
+      "$.content.formulas[4].name",
+      "$.content.formulas[4].chapter",
+      "$.content.formulas[4].formula",
+      "$.content.formulas[5].name",
+      "$.content.formulas[5].chapter",
+      "$.content.formulas[5].formula",
+      "$.content.formulas[6].name",
+      "$.content.formulas[6].chapter",
+      "$.content.formulas[6].formula",
+      "$.content.formulas[7].name",
+      "$.content.formulas[7].chapter",
+      "$.content.formulas[7].formula",
+      "$.content.formulas[8].name",
+      "$.content.formulas[8].chapter",
+      "$.content.formulas[8].formula",
+      "$.content.formulas[9].name",
+      "$.content.formulas[9].chapter",
+      "$.content.formulas[9].formula",
+      "$.content.formulas[10].name",
+      "$.content.formulas[10].chapter",
+      "$.content.formulas[10].formula",
+      "$.content.formulas[11].name",
+      "$.content.formulas[11].chapter",
+      "$.content.formulas[11].formula",
+      "$.content.formulas[12].name",
+      "$.content.formulas[12].chapter",
+      "$.content.formulas[12].formula",
+      "$.content.formulas[13].name",
+      "$.content.formulas[13].chapter",
+      "$.content.formulas[13].formula",
+      "$.content.formulas[14].name",
+      "$.content.formulas[14].chapter",
+      "$.content.formulas[14].formula",
+      "$.content.formulas[15].name",
+      "$.content.formulas[15].chapter",
+      "$.content.formulas[15].formula",
+      "$.content.formulas[16].name",
+      "$.content.formulas[16].chapter",
+      "$.content.formulas[16].formula",
+      "$.content.formulas[17].name",
+      "$.content.formulas[17].chapter",
+      "$.content.formulas[17].formula",
+      "$.content.formulas[18].name",
+      "$.content.formulas[18].chapter",
+      "$.content.formulas[18].formula",
+      "$.content.formulas[19].name",
+      "$.content.formulas[19].chapter",
+      "$.content.formulas[19].formula",
+      "$.content.formulas[20].name",
+      "$.content.formulas[20].chapter",
+      "$.content.formulas[20].formula",
+      "$.content.formulas[21].name",
+      "$.content.formulas[21].chapter",
+      "$.content.formulas[21].formula",
+      "$.content.formulas[22].name",
+      "$.content.formulas[22].chapter",
+      "$.content.formulas[22].formula",
+      "$.content.formulas[23].name",
+      "$.content.formulas[23].chapter",
+      "$.content.formulas[23].formula",
+      "$.content.formulas[24].name",
+      "$.content.formulas[24].chapter",
+      "$.content.formulas[24].formula",
+      "$.content.formulas[25].name",
+      "$.content.formulas[25].chapter",
+      "$.content.formulas[25].formula",
+      "$.content.formulas[26].name",
+      "$.content.formulas[26].chapter",
+      "$.content.formulas[26].formula",
+      "$.content.formulas[27].name",
+      "$.content.formulas[27].chapter",
+      "$.content.formulas[27].formula",
+      "$.content.formulas[28].name",
+      "$.content.formulas[28].chapter",
+      "$.content.formulas[28].formula",
+      "$.content.formulas[29].name",
+      "$.content.formulas[29].chapter",
+      "$.content.formulas[29].formula",
+      "$.content.formulas[30].name",
+      "$.content.formulas[30].chapter",
+      "$.content.formulas[30].formula",
+      "$.content.formulas[31].name",
+      "$.content.formulas[31].chapter",
+      "$.content.formulas[31].formula",
+      "$.content.formulas[32].name",
+      "$.content.formulas[32].chapter",
+      "$.content.formulas[32].formula",
+      "$.content.formulas[33].name",
+      "$.content.formulas[33].chapter",
+      "$.content.formulas[33].formula",
+      "$.content.formulas[34].name",
+      "$.content.formulas[34].chapter",
+      "$.content.formulas[34].formula",
+      "$.content.formulas[35].name",
+      "$.content.formulas[35].chapter",
+      "$.content.formulas[35].formula",
+      "$.content.formulas[36].name",
+      "$.content.formulas[36].chapter",
+      "$.content.formulas[36].formula",
+      "$.content.formulas[37].name",
+      "$.content.formulas[37].chapter",
+      "$.content.formulas[37].formula",
+      "$.content.formulas[38].name",
+      "$.content.formulas[38].chapter",
+      "$.content.formulas[38].formula",
+      "$.content.formulas[39].name",
+      "$.content.formulas[39].chapter",
+      "$.content.formulas[39].formula",
+      "$.content.formulas[40].name",
+      "$.content.formulas[40].chapter",
+      "$.content.formulas[40].formula",
+      "$.content.symbols_notation",
+      "$.content.symbols_notation[0].symbol",
+      "$.content.symbols_notation[0].representation",
+      "$.content.symbols_notation[1].symbol",
+      "$.content.symbols_notation[1].representation",
+      "$.content.symbols_notation[2].symbol",
+      "$.content.symbols_notation[2].representation",
+      "$.content.symbols_notation[3].symbol",
+      "$.content.symbols_notation[3].representation",
+      "$.content.symbols_notation[4].symbol",
+      "$.content.symbols_notation[4].representation",
+      "$.content.symbols_notation[5].symbol",
+      "$.content.symbols_notation[5].representation",
+      "$.content.symbols_notation[6].symbol",
+      "$.content.symbols_notation[6].representation",
+      "$.content.symbols_notation[7].symbol",
+      "$.content.symbols_notation[7].representation",
+      "$.content.symbols_notation[8].symbol",
+      "$.content.symbols_notation[8].representation",
+      "$.content.symbols_notation[9].symbol",
+      "$.content.symbols_notation[9].representation",
+      "$.content.symbols_notation[10].symbol",
+      "$.content.symbols_notation[10].representation",
+      "$.content.symbols_notation[11].symbol",
+      "$.content.symbols_notation[11].representation",
+      "$.content.symbols_notation[12].symbol",
+      "$.content.symbols_notation[12].representation",
+      "$.content.symbols_notation[13].symbol",
+      "$.content.symbols_notation[13].representation",
+      "$.content.symbols_notation[14].symbol",
+      "$.content.symbols_notation[14].representation",
+      "$.content.symbols_notation[15].symbol",
+      "$.content.symbols_notation[15].representation",
+      "$.content.symbols_notation[16].symbol",
+      "$.content.symbols_notation[16].representation",
+      "$.content.symbols_notation[17].symbol",
+      "$.content.symbols_notation[17].representation",
+      "$.content.procedures",
+      "$.content.procedures[0].procedure_name",
+      "$.content.procedures[0].chapter",
+      "$.content.procedures[0].steps",
+      "$.content.procedures[1].procedure_name",
+      "$.content.procedures[1].chapter",
+      "$.content.procedures[1].steps",
+      "$.content.procedures[2].procedure_name",
+      "$.content.procedures[2].chapter",
+      "$.content.procedures[2].steps",
+      "$.content.procedures[3].procedure_name",
+      "$.content.procedures[3].chapter",
+      "$.content.procedures[3].steps",
+      "$.content.procedures[4].procedure_name",
+      "$.content.procedures[4].chapter",
+      "$.content.procedures[4].steps",
+      "$.content.procedures[5].procedure_name",
+      "$.content.procedures[5].chapter",
+      "$.content.procedures[5].steps",
+      "$.content.relationships",
+      "$.content.relationships[0].relationship_name",
+      "$.content.relationships[0].chapter",
+      "$.content.relationships[0].description",
+      "$.content.relationships[1].relationship_name",
+      "$.content.relationships[1].chapter",
+      "$.content.relationships[1].description",
+      "$.content.relationships[2].relationship_name",
+      "$.content.relationships[2].chapter",
+      "$.content.relationships[2].description",
+      "$.content.relationships[3].relationship_name",
+      "$.content.relationships[3].chapter",
+      "$.content.relationships[3].description",
+      "$.content.relationships[4].relationship_name",
+      "$.content.relationships[4].chapter",
+      "$.content.relationships[4].description",
+      "$.content.units_measurements",
+      "$.content.units_measurements[0].quantity",
+      "$.content.units_measurements[0].unit",
+      "$.content.units_measurements[0].symbol",
+      "$.content.units_measurements[1].quantity",
+      "$.content.units_measurements[1].units",
+      "$.content.units_measurements[2].quantity",
+      "$.content.units_measurements[2].units",
+      "$.content.units_measurements[3].quantity",
+      "$.content.units_measurements[3].units",
+      "$.content.units_measurements[4].quantity",
+      "$.content.units_measurements[4].units",
+      "$.content.units_measurements[5].quantity",
+      "$.content.units_measurements[5].units",
+      "$.content.patterns",
+      "$.content.patterns[0].pattern_name",
+      "$.content.patterns[0].chapter",
+      "$.content.patterns[0].pattern_description",
+      "$.content.patterns[1].pattern_name",
+      "$.content.patterns[1].chapter",
+      "$.content.patterns[1].pattern_description",
+      "$.content.patterns[2].pattern_name",
+      "$.content.patterns[2].chapter",
+      "$.content.patterns[2].pattern_description",
+      "$.content.problem_solving_strategies",
+      "$.content.problem_solving_strategies[0].strategy_name",
+      "$.content.problem_solving_strategies[0].chapter",
+      "$.content.problem_solving_strategies[0].application",
+      "$.content.problem_solving_strategies[1].strategy_name",
+      "$.content.problem_solving_strategies[1].chapter",
+      "$.content.problem_solving_strategies[1].application",
+      "$.content.problem_solving_strategies[2].strategy_name",
+      "$.content.problem_solving_strategies[2].chapter",
+      "$.content.problem_solving_strategies[2].application",
+      "$.content.problem_solving_strategies[3].strategy_name",
+      "$.content.problem_solving_strategies[3].chapter",
+      "$.content.problem_solving_strategies[3].application",
+      "$.content.problem_solving_strategies[4].strategy_name",
+      "$.content.problem_solving_strategies[4].chapter",
+      "$.content.problem_solving_strategies[4].application",
+      "$.statistics",
+      "$.statistics.total_items",
+      "$.statistics.vocabulary_count",
+      "$.statistics.definitions_count",
+      "$.statistics.concepts_count",
+      "$.statistics.properties_count",
+      "$.statistics.rules_count",
+      "$.statistics.formulas_count",
+      "$.statistics.symbols_notation_count",
+      "$.statistics.procedures_count",
+      "$.statistics.relationships_count",
+      "$.statistics.units_measurements_count",
+      "$.statistics.patterns_count",
+      "$.statistics.problem_solving_strategies_count",
+      "$.validation",
+      "$.validation.is_valid",
+      "$.validation.source",
+      "$.validation.duplicate_check_passed",
+      "$.validation.accuracy_verified",
+      "$.gamified_playground",
+      "$.gamified_playground.combo_multipliers",
+      "$.gamified_playground.scrambled_tile_sets",
+      "$.gamified_playground.scrambled_tile_sets[0].id",
+      "$.gamified_playground.scrambled_tile_sets[0].scrambled",
+      "$.gamified_playground.scrambled_tile_sets[0].correct_order",
+      "$.gamified_playground.sorting_matrices",
+      "$.gamified_playground.sorting_matrices[0].category",
+      "$.gamified_playground.sorting_matrices[0].items",
+      "$.gamified_playground.realtime_editing_checker",
+      "$.gamified_playground.realtime_editing_checker.auto_validate"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [],
+    "chapter_candidate_count": 0,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "MATHEMATICS",
+    "chapter": {
+      "total_chapters": 14,
+      "chapters_covered": [
+        "Real Numbers",
+        "Polynomials",
+        "Pair of Linear Equations in Two Variables",
+        "Quadratic Equations",
+        "Arithmetic Progressions",
+        "Triangles",
+        "Coordinate Geometry",
+        "Introduction to Trigonometry",
+        "Some Applications of Trigonometry",
+        "Circles",
+        "Areas Related to Circles",
+        "Surface Areas and Volumes",
+        "Statistics",
+        "Probability"
+      ]
+    },
+    "content": {
+      "mathematical_vocabulary": [
+        {
+          "term": "Prime Factorization",
+          "chapter": "Real Numbers",
+          "context": "Expressing a composite number as a product of prime numbers."
+        },
+        {
+          "term": "Composite Number",
+          "chapter": "Real Numbers",
+          "context": "A positive integer that has at least one divisor other than 1 and itself."
+        },
+        {
+          "term": "HCF (Highest Common Factor)",
+          "chapter": "Real Numbers",
+          "context": "The largest positive integer that divides each of the integers without a remainder."
+        },
+        {
+          "term": "LCM (Lowest Common Multiple)",
+          "chapter": "Real Numbers",
+          "context": "The smallest positive integer that is divisible by each of the given numbers."
+        },
+        {
+          "term": "Coprime Integers",
+          "chapter": "Real Numbers",
+          "context": "Two integers having no common positive divisor other than 1."
+        },
+        {
+          "term": "Irrational Number",
+          "chapter": "Real Numbers",
+          "context": "A real number that cannot be expressed as a ratio of two integers p/q."
+        },
+        {
+          "term": "Zero of a Polynomial",
+          "chapter": "Polynomials",
+          "context": "A value of x for which the polynomial p(x) evaluates to zero."
+        },
+        {
+          "term": "Degree of a Polynomial",
+          "chapter": "Polynomials",
+          "context": "The highest exponent of the variable in a polynomial expression."
+        },
+        {
+          "term": "Parabola",
+          "chapter": "Polynomials",
+          "context": "The U-shaped graph representing a quadratic function y = ax^2 + bx + c."
+        },
+        {
+          "term": "Consistent System",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "context": "A system of linear equations that has at least one solution."
+        },
+        {
+          "term": "Inconsistent System",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "context": "A system of linear equations that has no solution (parallel lines)."
+        },
+        {
+          "term": "Substitution Method",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "context": "Solving a system by expressing one variable in terms of another."
+        },
+        {
+          "term": "Elimination Method",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "context": "Solving a system by eliminating one variable through addition/subtraction."
+        },
+        {
+          "term": "Quadratic Equation",
+          "chapter": "Quadratic Equations",
+          "context": "A second-degree polynomial equation of the form ax^2 + bx + c = 0 (a ≠ 0)."
+        },
+        {
+          "term": "Discriminant (D)",
+          "chapter": "Quadratic Equations",
+          "context": "The value b^2 - 4ac used to determine the nature of roots."
+        },
+        {
+          "term": "Quadratic Formula",
+          "chapter": "Quadratic Equations",
+          "context": "Formula x = (-b ± √(b^2 - 4ac)) / (2a) to find real roots."
+        },
+        {
+          "term": "Arithmetic Progression (AP)",
+          "chapter": "Arithmetic Progressions",
+          "context": "A sequence where each term is obtained by adding a constant difference d to preceding term."
+        },
+        {
+          "term": "Common Difference (d)",
+          "chapter": "Arithmetic Progressions",
+          "context": "The constant difference between consecutive terms in an AP."
+        },
+        {
+          "term": "Basic Proportionality Theorem (BPT)",
+          "chapter": "Triangles",
+          "context": "Theorem stating that a line parallel to one side of a triangle divides the other sides proportionally."
+        },
+        {
+          "term": "Similar Triangles",
+          "chapter": "Triangles",
+          "context": "Triangles having equal corresponding angles and proportional corresponding sides."
+        },
+        {
+          "term": "Distance Formula",
+          "chapter": "Coordinate Geometry",
+          "context": "Formula d = √[(x2 - x1)^2 + (y2 - y1)^2] to find distance between two points."
+        },
+        {
+          "term": "Section Formula",
+          "chapter": "Coordinate Geometry",
+          "context": "Formula calculating coordinates dividing a line segment in a given ratio m1:m2."
+        },
+        {
+          "term": "Trigonometric Ratios",
+          "chapter": "Introduction to Trigonometry",
+          "context": "Ratios of sides of a right-angled triangle (sine, cosine, tangent, cosecant, secant, cotangent)."
+        },
+        {
+          "term": "Pythagorean Identities",
+          "chapter": "Introduction to Trigonometry",
+          "context": "Fundamental identities relating squares of trigonometric functions (e.g. sin^2 θ + cos^2 θ = 1)."
+        },
+        {
+          "term": "Line of Sight",
+          "chapter": "Some Applications of Trigonometry",
+          "context": "Straight line drawn from observer's eye to the target object being viewed."
+        },
+        {
+          "term": "Angle of Elevation",
+          "chapter": "Some Applications of Trigonometry",
+          "context": "Angle between line of sight and horizontal baseline when viewing an object above horizontal level."
+        },
+        {
+          "term": "Angle of Depression",
+          "chapter": "Some Applications of Trigonometry",
+          "context": "Angle between line of sight and horizontal baseline when viewing an object below horizontal level."
+        },
+        {
+          "term": "Tangent to a Circle",
+          "chapter": "Circles",
+          "context": "A line in the plane of a circle that intersects the circle at exactly one point (point of contact)."
+        },
+        {
+          "term": "Point of Contact",
+          "chapter": "Circles",
+          "context": "The single point where a tangent touches a circle."
+        },
+        {
+          "term": "Sector of a Circle",
+          "chapter": "Areas Related to Circles",
+          "context": "Region enclosed by two radii and the intercepted arc of a circle."
+        },
+        {
+          "term": "Segment of a Circle",
+          "chapter": "Areas Related to Circles",
+          "context": "Region bounded by a chord and its corresponding arc."
+        },
+        {
+          "term": "Curved Surface Area (CSA)",
+          "chapter": "Surface Areas and Volumes",
+          "context": "Surface area of the curved faces of a 3D solid excluding end bases."
+        },
+        {
+          "term": "Total Surface Area (TSA)",
+          "chapter": "Surface Areas and Volumes",
+          "context": "Total surface area including curved boundaries and exposed bases."
+        },
+        {
+          "term": "Class Mark (xi)",
+          "chapter": "Statistics",
+          "context": "Midpoint of a class interval: (Upper limit + Lower limit) / 2."
+        },
+        {
+          "term": "Modal Class",
+          "chapter": "Statistics",
+          "context": "Class interval possessing the highest frequency in grouped data."
+        },
+        {
+          "term": "Median Class",
+          "chapter": "Statistics",
+          "context": "Class interval where cumulative frequency first reaches or exceeds n/2."
+        },
+        {
+          "term": "Cumulative Frequency (cf)",
+          "chapter": "Statistics",
+          "context": "Running total of frequencies up to a specific class interval limit."
+        },
+        {
+          "term": "Sample Space n(S)",
+          "chapter": "Probability",
+          "context": "The set of all possible outcomes of a random experiment."
+        },
+        {
+          "term": "Complementary Event",
+          "chapter": "Probability",
+          "context": "The event 'not E', denoted Ē, representing non-occurrence of event E."
+        }
+      ],
+      "definitions": [
+        {
+          "term": "Fundamental Theorem of Arithmetic",
+          "chapter": "Real Numbers",
+          "definition": "Every composite number can be expressed (factorised) as a product of primes uniquely, apart from the order in which the prime factors occur."
+        },
+        {
+          "term": "Irrational Number",
+          "chapter": "Real Numbers",
+          "definition": "A number 's' is called irrational if it cannot be written in the form p/q, where p and q are integers and q ≠ 0."
+        },
+        {
+          "term": "Zero of a Polynomial",
+          "chapter": "Polynomials",
+          "definition": "A real number k is said to be a zero of a polynomial p(x) if p(k) = 0."
+        },
+        {
+          "term": "Linear Equation in Two Variables",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "definition": "An equation that can be put in the form ax + by + c = 0, where a, b and c are real numbers, and a and b are not both zero."
+        },
+        {
+          "term": "Quadratic Equation in Standard Form",
+          "chapter": "Quadratic Equations",
+          "definition": "A second-degree equation of the form ax^2 + bx + c = 0, where a, b, c are real numbers and a ≠ 0."
+        },
+        {
+          "term": "Arithmetic Progression (AP)",
+          "chapter": "Arithmetic Progressions",
+          "definition": "An arithmetic progression is a list of numbers in which each term is obtained by adding a fixed number to the preceding term except the first term."
+        },
+        {
+          "term": "Similar Polygons",
+          "chapter": "Triangles",
+          "definition": "Two polygons of the same number of sides are similar if (i) their corresponding angles are equal and (ii) their corresponding sides are in the same ratio."
+        },
+        {
+          "term": "Basic Proportionality Theorem",
+          "chapter": "Triangles",
+          "definition": "If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio."
+        },
+        {
+          "term": "Distance Formula",
+          "chapter": "Coordinate Geometry",
+          "definition": "The distance between any two points P(x1, y1) and Q(x2, y2) in the Cartesian plane is given by √[(x2 - x1)^2 + (y2 - y1)^2]."
+        },
+        {
+          "term": "Section Formula",
+          "chapter": "Coordinate Geometry",
+          "definition": "The coordinates of the point P(x, y) which divides the line segment joining A(x1, y1) and B(x2, y2) internally in the ratio m1:m2 are [(m1 x2 + m2 x1)/(m1+m2), (m1 y2 + m2 y1)/(m1+m2)]."
+        },
+        {
+          "term": "Trigonometric Ratios of Acute Angle",
+          "chapter": "Introduction to Trigonometry",
+          "definition": "Ratios of the sides of a right-angled triangle with respect to its acute angles: sine = Opp/Hyp, cosine = Adj/Hyp, tangent = Opp/Adj."
+        },
+        {
+          "term": "Line of Sight",
+          "chapter": "Some Applications of Trigonometry",
+          "definition": "The line drawn from the eye of an observer to the point in the object viewed by the observer."
+        },
+        {
+          "term": "Angle of Elevation",
+          "chapter": "Some Applications of Trigonometry",
+          "definition": "The angle formed by the line of sight with the horizontal line when the point being viewed is above the horizontal level."
+        },
+        {
+          "term": "Angle of Depression",
+          "chapter": "Some Applications of Trigonometry",
+          "definition": "The angle formed by the line of sight with the horizontal line when the point being viewed is below the horizontal level."
+        },
+        {
+          "term": "Tangent to a Circle",
+          "chapter": "Circles",
+          "definition": "A straight line that intersects (touches) a circle at exactly one point."
+        },
+        {
+          "term": "Sector of a Circle",
+          "chapter": "Areas Related to Circles",
+          "definition": "The region enclosed by two radii and the intercepted arc of a circle."
+        },
+        {
+          "term": "Segment of a Circle",
+          "chapter": "Areas Related to Circles",
+          "definition": "The region bounded by a chord and the corresponding arc of a circle."
+        },
+        {
+          "term": "Mean of Grouped Data",
+          "chapter": "Statistics",
+          "definition": "The arithmetic average of values calculated as the sum of products of class marks and frequencies divided by total frequency."
+        },
+        {
+          "term": "Mode of Grouped Data",
+          "chapter": "Statistics",
+          "definition": "The value among the observations which occurs most frequently in a dataset."
+        },
+        {
+          "term": "Median of Grouped Data",
+          "chapter": "Statistics",
+          "definition": "The measure of central tendency that gives the value of the middlemost observation in the data."
+        },
+        {
+          "term": "Theoretical (Classical) Probability",
+          "chapter": "Probability",
+          "definition": "P(E) = (Number of outcomes favorable to E) / (Number of all possible outcomes of the experiment), assuming all outcomes are equally likely."
+        }
+      ],
+      "concepts": [
+        {
+          "concept_title": "Uniqueness of Prime Factorisation",
+          "chapter": "Real Numbers",
+          "description": "Every composite integer has a canonical representation as prime factors that is unique up to order."
+        },
+        {
+          "concept_title": "Geometrical Meaning of Polynomial Zeroes",
+          "chapter": "Polynomials",
+          "description": "The real zeroes of p(x) correspond strictly to x-axis intersection points of graph y = p(x)."
+        },
+        {
+          "concept_title": "Parabola Orientation in Quadratic Polynomials",
+          "chapter": "Polynomials",
+          "description": "y = ax^2 + bx + c forms an upward parabola if a > 0 and downward parabola if a < 0."
+        },
+        {
+          "concept_title": "Graphical Classification of Linear Systems",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "description": "Systems represent intersecting lines (1 solution), coincident lines (infinite solutions), or parallel lines (0 solutions)."
+        },
+        {
+          "concept_title": "Discriminant & Nature of Quadratic Roots",
+          "chapter": "Quadratic Equations",
+          "description": "Sign of discriminant D = b^2 - 4ac governs whether roots are distinct real (D > 0), equal real (D = 0), or non-real (D < 0)."
+        },
+        {
+          "concept_title": "Arithmetic Sequence Step Consistency",
+          "chapter": "Arithmetic Progressions",
+          "description": "Constant common difference d enforces linear growth across terms: an = a + (n-1)d."
+        },
+        {
+          "concept_title": "Triangle Similarity Criteria",
+          "chapter": "Triangles",
+          "description": "Triangles are similar under AAA (AA), SSS, or SAS rules when corresponding angles equal and sides are proportional."
+        },
+        {
+          "concept_title": "Cartesian Distance and Midpoint Geometry",
+          "chapter": "Coordinate Geometry",
+          "description": "Algebraic representation of points allows exact distance calculation and internal line segment division."
+        },
+        {
+          "concept_title": "Right Triangle Trigonometric Scaling",
+          "chapter": "Introduction to Trigonometry",
+          "description": "Ratios of right triangle sides depend solely on the acute angle measure θ, independent of triangle size."
+        },
+        {
+          "concept_title": "Indirect Distance and Height Measurement",
+          "chapter": "Some Applications of Trigonometry",
+          "description": "Using angle of elevation/depression and horizontal distance to compute unreachable heights via tangent ratios."
+        },
+        {
+          "concept_title": "Radius-Tangent Perpendicularity",
+          "chapter": "Circles",
+          "description": "The radius drawn to the point of contact of a tangent is always perpendicular to the tangent line."
+        },
+        {
+          "concept_title": "Equality of External Tangents",
+          "chapter": "Circles",
+          "description": "Tangents drawn from an external point to a circle are equal in length (PQ = PR)."
+        },
+        {
+          "concept_title": "Circular Sector and Segment Fractional Partition",
+          "chapter": "Areas Related to Circles",
+          "description": "Arc lengths and sector areas are computed as proportional fractions (θ/360°) of full circle perimeter and area."
+        },
+        {
+          "concept_title": "Exposed Surface Area Rule for Composite Solids",
+          "chapter": "Surface Areas and Volumes",
+          "description": "Total surface area of combined 3D solids includes only exposed outer faces, excluding internal contact boundaries."
+        },
+        {
+          "concept_title": "Additive Volume Principle for Combined Solids",
+          "chapter": "Surface Areas and Volumes",
+          "description": "Total volume of a combined solid equals the direct sum of individual component volumes."
+        },
+        {
+          "concept_title": "Grouped Central Tendency Estimation",
+          "chapter": "Statistics",
+          "description": "Mean, median, and mode estimate central values for continuous frequency distributions."
+        },
+        {
+          "concept_title": "Classical Equally Likely Probability",
+          "chapter": "Probability",
+          "description": "Probability measures chance of event outcome relative to complete finite sample space."
+        }
+      ],
+      "properties": [
+        {
+          "property_name": "HCF and LCM Two-Number Identity",
+          "chapter": "Real Numbers",
+          "statement": "For any two positive integers a and b, HCF(a, b) × LCM(a, b) = a × b."
+        },
+        {
+          "property_name": "Prime Divisibility of Square Property",
+          "chapter": "Real Numbers",
+          "statement": "If p is a prime number and p divides a^2 (a > 0), then p divides a."
+        },
+        {
+          "property_name": "Maximum Real Zeroes Bound",
+          "chapter": "Polynomials",
+          "statement": "A polynomial p(x) of degree n has at most n real zeroes."
+        },
+        {
+          "property_name": "Equal Tangents Property",
+          "chapter": "Circles",
+          "statement": "The lengths of tangents drawn from an external point to a circle are equal."
+        },
+        {
+          "property_name": "Radius-Tangent Perpendicularity Property",
+          "chapter": "Circles",
+          "statement": "The tangent at any point of a circle is perpendicular to the radius through the point of contact."
+        },
+        {
+          "property_name": "Probability Range Property",
+          "chapter": "Probability",
+          "statement": "For any event E, 0 ≤ P(E) ≤ 1."
+        },
+        {
+          "property_name": "Complementary Probability Sum Property",
+          "chapter": "Probability",
+          "statement": "P(E) + P(not E) = 1 for any event E."
+        },
+        {
+          "property_name": "Certain Event Probability Property",
+          "chapter": "Probability",
+          "statement": "The probability of an event that is certain to occur is 1."
+        },
+        {
+          "property_name": "Impossible Event Probability Property",
+          "chapter": "Probability",
+          "statement": "The probability of an impossible event is 0."
+        },
+        {
+          "property_name": "Empirical Central Tendency Property",
+          "chapter": "Statistics",
+          "statement": "3 × Median = Mode + 2 × Mean."
+        }
+      ],
+      "rules": [
+        {
+          "rule_name": "Linear System Ratio Consistency Rules",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "rule_statement": "For system a1 x + b1 y + c1 = 0 and a2 x + b2 y + c2 = 0:\n1) a1/a2 ≠ b1/b2 => Intersecting lines, 1 solution (Consistent).\n2) a1/a2 = b1/b2 = c1/c2 => Coincident lines, infinitely many solutions (Consistent/Dependent).\n3) a1/a2 = b1/b2 ≠ c1/c2 => Parallel lines, 0 solutions (Inconsistent)."
+        },
+        {
+          "rule_name": "Discriminant Roots Classification Rules",
+          "chapter": "Quadratic Equations",
+          "rule_statement": "For quadratic equation ax^2 + bx + c = 0 with D = b^2 - 4ac:\n1) D > 0 => 2 distinct real roots.\n2) D = 0 => 2 equal real roots.\n3) D < 0 => No real roots."
+        },
+        {
+          "rule_name": "Triangle Similarity Criteria Rules",
+          "chapter": "Triangles",
+          "rule_statement": "Two triangles are similar under:\n1) AAA / AA Criterion: Corresponding angles are equal.\n2) SSS Criterion: Corresponding side ratios are equal.\n3) SAS Criterion: One angle equal and including side ratios equal."
+        },
+        {
+          "rule_name": "Composite Solid Surface Area Rule",
+          "chapter": "Surface Areas and Volumes",
+          "rule_statement": "When calculating Total Surface Area of combined solids, sum ONLY exposed exterior surfaces; exclude hidden contact interfaces."
+        },
+        {
+          "rule_name": "Composite Solid Volume Rule",
+          "chapter": "Surface Areas and Volumes",
+          "rule_statement": "Total volume of composite solid equals direct sum of volumes of constituent solids."
+        }
+      ],
+      "formulas": [
+        {
+          "name": "HCF and LCM Relation",
+          "chapter": "Real Numbers",
+          "formula": "HCF(a, b) × LCM(a, b) = a × b"
+        },
+        {
+          "name": "Quadratic Zero Sum",
+          "chapter": "Polynomials",
+          "formula": "α + β = -b/a"
+        },
+        {
+          "name": "Quadratic Zero Product",
+          "chapter": "Polynomials",
+          "formula": "αβ = c/a"
+        },
+        {
+          "name": "Quadratic Polynomial Formation",
+          "chapter": "Polynomials",
+          "formula": "p(x) = k[x^2 - (α + β)x + αβ]"
+        },
+        {
+          "name": "Cubic Zero Sum",
+          "chapter": "Polynomials",
+          "formula": "α + β + γ = -b/a"
+        },
+        {
+          "name": "Cubic Pair Product Sum",
+          "chapter": "Polynomials",
+          "formula": "αβ + βγ + γα = c/a"
+        },
+        {
+          "name": "Cubic Zero Product",
+          "chapter": "Polynomials",
+          "formula": "αβγ = -d/a"
+        },
+        {
+          "name": "Quadratic Formula",
+          "chapter": "Quadratic Equations",
+          "formula": "x = (-b ± √(b^2 - 4ac)) / (2a)"
+        },
+        {
+          "name": "Discriminant",
+          "chapter": "Quadratic Equations",
+          "formula": "D = b^2 - 4ac"
+        },
+        {
+          "name": "AP nth Term",
+          "chapter": "Arithmetic Progressions",
+          "formula": "an = a + (n - 1)d"
+        },
+        {
+          "name": "AP Sum Formula (Standard)",
+          "chapter": "Arithmetic Progressions",
+          "formula": "Sn = (n/2)[2a + (n - 1)d]"
+        },
+        {
+          "name": "AP Sum Formula (Last Term)",
+          "chapter": "Arithmetic Progressions",
+          "formula": "Sn = (n/2)[a + l]"
+        },
+        {
+          "name": "Sum of First n Positive Integers",
+          "chapter": "Arithmetic Progressions",
+          "formula": "Sn = n(n + 1) / 2"
+        },
+        {
+          "name": "Distance Formula",
+          "chapter": "Coordinate Geometry",
+          "formula": "d = √[(x2 - x1)^2 + (y2 - y1)^2]"
+        },
+        {
+          "name": "Section Formula",
+          "chapter": "Coordinate Geometry",
+          "formula": "P(x, y) = [(m1 x2 + m2 x1)/(m1 + m2), (m1 y2 + m2 y1)/(m1 + m2)]"
+        },
+        {
+          "name": "Midpoint Formula",
+          "chapter": "Coordinate Geometry",
+          "formula": "Midpoint = [(x1 + x2)/2, (y1 + y2)/2]"
+        },
+        {
+          "name": "Trigonometric Identity 1",
+          "chapter": "Introduction to Trigonometry",
+          "formula": "sin^2 θ + cos^2 θ = 1"
+        },
+        {
+          "name": "Trigonometric Identity 2",
+          "chapter": "Introduction to Trigonometry",
+          "formula": "1 + tan^2 θ = sec^2 θ"
+        },
+        {
+          "name": "Trigonometric Identity 3",
+          "chapter": "Introduction to Trigonometry",
+          "formula": "1 + cot^2 θ = cosec^2 θ"
+        },
+        {
+          "name": "Arc Length Formula",
+          "chapter": "Areas Related to Circles",
+          "formula": "L = (θ / 360°) × 2πr"
+        },
+        {
+          "name": "Sector Area Formula",
+          "chapter": "Areas Related to Circles",
+          "formula": "A = (θ / 360°) × πr^2"
+        },
+        {
+          "name": "Minor Segment Area",
+          "chapter": "Areas Related to Circles",
+          "formula": "A_segment = (θ / 360°) × πr^2 - (1/2) r^2 sin θ"
+        },
+        {
+          "name": "Cylinder CSA",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "CSA = 2πrh"
+        },
+        {
+          "name": "Cylinder TSA",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "TSA = 2πr(h + r)"
+        },
+        {
+          "name": "Cylinder Volume",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "V = πr^2 h"
+        },
+        {
+          "name": "Cone CSA",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "CSA = πrl"
+        },
+        {
+          "name": "Cone TSA",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "TSA = πr(l + r)"
+        },
+        {
+          "name": "Cone Volume",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "V = (1/3)πr^2 h"
+        },
+        {
+          "name": "Cone Slant Height",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "l = √(r^2 + h^2)"
+        },
+        {
+          "name": "Sphere Surface Area",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "SA = 4πr^2"
+        },
+        {
+          "name": "Sphere Volume",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "V = (4/3)πr^3"
+        },
+        {
+          "name": "Hemisphere CSA",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "CSA = 2πr^2"
+        },
+        {
+          "name": "Hemisphere TSA",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "TSA = 3πr^2"
+        },
+        {
+          "name": "Hemisphere Volume",
+          "chapter": "Surface Areas and Volumes",
+          "formula": "V = (2/3)πr^3"
+        },
+        {
+          "name": "Mean (Direct Method)",
+          "chapter": "Statistics",
+          "formula": "x̄ = Σfi xi / Σfi"
+        },
+        {
+          "name": "Mean (Assumed Mean Method)",
+          "chapter": "Statistics",
+          "formula": "x̄ = a + (Σfi di / Σfi)"
+        },
+        {
+          "name": "Mean (Step-Deviation Method)",
+          "chapter": "Statistics",
+          "formula": "x̄ = a + h × (Σfi ui / Σfi)"
+        },
+        {
+          "name": "Mode Formula",
+          "chapter": "Statistics",
+          "formula": "Mode = l + [(f1 - f0) / (2f1 - f0 - f2)] × h"
+        },
+        {
+          "name": "Median Formula",
+          "chapter": "Statistics",
+          "formula": "Median = l + [(n/2 - cf) / f] × h"
+        },
+        {
+          "name": "Empirical Central Tendency Formula",
+          "chapter": "Statistics",
+          "formula": "3 × Median = Mode + 2 × Mean"
+        },
+        {
+          "name": "Classical Probability Formula",
+          "chapter": "Probability",
+          "formula": "P(E) = n(E) / n(S)"
+        }
+      ],
+      "symbols_notation": [
+        {
+          "symbol": "HCF",
+          "representation": "Highest Common Factor"
+        },
+        {
+          "symbol": "LCM",
+          "representation": "Lowest Common Multiple"
+        },
+        {
+          "symbol": "√",
+          "representation": "Square root principal operator"
+        },
+        {
+          "symbol": "α, β, γ",
+          "representation": "Greek letters representing polynomial zeroes"
+        },
+        {
+          "symbol": "d",
+          "representation": "Common difference in Arithmetic Progression"
+        },
+        {
+          "symbol": "an",
+          "representation": "nth term of an Arithmetic Progression"
+        },
+        {
+          "symbol": "Sn",
+          "representation": "Sum of first n terms of an Arithmetic Progression"
+        },
+        {
+          "symbol": "~",
+          "representation": "Tilde symbol indicating geometric similarity"
+        },
+        {
+          "symbol": "≅",
+          "representation": "Congruence symbol for identical geometric figures"
+        },
+        {
+          "symbol": "||",
+          "representation": "Parallel lines notation"
+        },
+        {
+          "symbol": "⊥",
+          "representation": "Perpendicular lines notation"
+        },
+        {
+          "symbol": "θ",
+          "representation": "Theta symbol representing angle measure"
+        },
+        {
+          "symbol": "π",
+          "representation": "Pi constant (approx. 22/7 or 3.14159)"
+        },
+        {
+          "symbol": "Δ",
+          "representation": "Delta symbol representing a triangle"
+        },
+        {
+          "symbol": "Σ",
+          "representation": "Sigma summation operator"
+        },
+        {
+          "symbol": "x̄",
+          "representation": "x-bar representing mathematical mean"
+        },
+        {
+          "symbol": "P(E)",
+          "representation": "Probability of occurrence of event E"
+        },
+        {
+          "symbol": "P(Ē)",
+          "representation": "Probability of non-occurrence of event E"
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_name": "Prime Factorization Method for HCF and LCM",
+          "chapter": "Real Numbers",
+          "steps": [
+            "1. Write prime factorizations of given positive integers.",
+            "2. HCF = Product of smallest powers of each common prime factor.",
+            "3. LCM = Product of greatest powers of all prime factors involved."
+          ]
+        },
+        {
+          "procedure_name": "Proof by Contradiction for Irrationality",
+          "chapter": "Real Numbers",
+          "steps": [
+            "1. Assume √p is rational, i.e., √p = a/b where a and b are coprime integers (b ≠ 0).",
+            "2. Square both sides: p = a^2/b^2 => a^2 = p b^2.",
+            "3. Deduce prime p divides a^2 => p divides a. Set a = p c.",
+            "4. Substitute: p^2 c^2 = p b^2 => b^2 = p c^2 => p divides b.",
+            "5. Conclude p divides both a and b, contradicting coprime assumption. Hence √p is irrational."
+          ]
+        },
+        {
+          "procedure_name": "Solving Systems of Linear Equations by Elimination",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "steps": [
+            "1. Multiply one or both equations by non-zero numbers to equalize coefficients of one variable.",
+            "2. Add or subtract equations to eliminate that variable.",
+            "3. Solve resulting single-variable equation.",
+            "4. Substitute value back into original equation to find second variable."
+          ]
+        },
+        {
+          "procedure_name": "Solving Systems of Linear Equations by Substitution",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "steps": [
+            "1. Express one variable in terms of the other from one equation.",
+            "2. Substitute this expression into the second equation.",
+            "3. Solve the resulting single-variable equation.",
+            "4. Substitute value back to find the first variable."
+          ]
+        },
+        {
+          "procedure_name": "Solving Quadratic Equations via Quadratic Formula",
+          "chapter": "Quadratic Equations",
+          "steps": [
+            "1. Arrange equation into standard form ax^2 + bx + c = 0.",
+            "2. Extract coefficients a, b, and c.",
+            "3. Compute discriminant D = b^2 - 4ac.",
+            "4. If D ≥ 0, compute roots x = (-b ± √D) / (2a)."
+          ]
+        },
+        {
+          "procedure_name": "Computing Grouped Median",
+          "chapter": "Statistics",
+          "steps": [
+            "1. Construct cumulative frequency distribution column.",
+            "2. Compute n/2 (half of total frequency).",
+            "3. Identify median class whose cumulative frequency is just greater than or equal to n/2.",
+            "4. Apply Median = l + [(n/2 - cf) / f] × h."
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relationship_name": "HCF-LCM Inverseness",
+          "chapter": "Real Numbers",
+          "description": "For fixed product a × b, HCF and LCM are inversely proportional: larger HCF implies smaller LCM."
+        },
+        {
+          "relationship_name": "Coefficient and Zero Roots Symmetry",
+          "chapter": "Polynomials",
+          "description": "Polynomial coefficients symmetrical sum and product combinations directly determine polynomial zeroes."
+        },
+        {
+          "relationship_name": "Alternate Angles Elevation-Depression Identity",
+          "chapter": "Some Applications of Trigonometry",
+          "description": "Angle of elevation from observer to target equals angle of depression from target to observer due to horizontal parallel lines."
+        },
+        {
+          "relationship_name": "Empirical Relation of Central Tendency",
+          "chapter": "Statistics",
+          "description": "Linear empirical formula connecting median, mode, and mean: 3 Median - 2 Mean = Mode."
+        },
+        {
+          "relationship_name": "Complementary Probability Balance",
+          "chapter": "Probability",
+          "description": "Occurrence P(E) and non-occurrence P(Ē) sum to certainty (1)."
+        }
+      ],
+      "units_measurements": [
+        {
+          "quantity": "Plane Angle",
+          "unit": "Degree (°)",
+          "symbol": "°"
+        },
+        {
+          "quantity": "Linear Length",
+          "units": [
+            "millimeter (mm)",
+            "centimeter (cm)",
+            "meter (m)",
+            "kilometer (km)"
+          ]
+        },
+        {
+          "quantity": "Surface Area",
+          "units": [
+            "square centimeter (cm²)",
+            "square meter (m²)"
+          ]
+        },
+        {
+          "quantity": "Volume",
+          "units": [
+            "cubic centimeter (cm³)",
+            "cubic meter (m³)",
+            "liter (L)"
+          ]
+        },
+        {
+          "quantity": "Mass / Weight",
+          "units": [
+            "gram (g)",
+            "kilogram (kg)"
+          ]
+        },
+        {
+          "quantity": "Speed / Velocity",
+          "units": [
+            "meters per second (m/s)",
+            "kilometers per hour (km/h)"
+          ]
+        }
+      ],
+      "patterns": [
+        {
+          "pattern_name": "Arithmetic Sequence Constant Progression",
+          "chapter": "Arithmetic Progressions",
+          "pattern_description": "Terms grow linearly by constant increment d: a, a+d, a+2d, a+3d..."
+        },
+        {
+          "pattern_name": "Standard Trigonometric Values Progression",
+          "chapter": "Introduction to Trigonometry",
+          "pattern_description": "sin θ values across 0°, 30°, 45°, 60°, 90° follow pattern √(0/4), √(1/4), √(2/4), √(3/4), √(4/4)."
+        },
+        {
+          "pattern_name": "Two Dice Outcome Grid Pattern",
+          "chapter": "Probability",
+          "pattern_description": "Sample space forms symmetric 6x6 grid of 36 ordered pairs (i, j) for i, j ∈ {1..6}."
+        }
+      ],
+      "problem_solving_strategies": [
+        {
+          "strategy_name": "Proof by Contradiction Method",
+          "chapter": "Real Numbers",
+          "application": "Assume opposite of hypothesis, derive logical impossibility, concluding original assertion is true."
+        },
+        {
+          "strategy_name": "Auxiliary Geometric Construction",
+          "chapter": "Triangles / Circles",
+          "application": "Draw parallel lines, altitudes, or radii to tangent contact points to create solvable similar/right triangles."
+        },
+        {
+          "strategy_name": "Composite Figure Decomposition Strategy",
+          "chapter": "Areas Related to Circles / Surface Areas and Volumes",
+          "application": "Break complex combined shapes into standard geometric solids (cones, cylinders, hemispheres, sectors) and analyze separately."
+        },
+        {
+          "strategy_name": "k:1 Parameterization for Section Ratios",
+          "chapter": "Coordinate Geometry",
+          "application": "Express unknown ratio m1:m2 as k:1 to solve single linear equation for k."
+        },
+        {
+          "strategy_name": "Bound and Domain Verification",
+          "chapter": "Probability / Real Numbers / Mensuration",
+          "application": "Verify physical relevance of roots (positive dimensions, non-negative speeds, probability in [0,1])."
+        }
+      ]
+    },
+    "statistics": {
+      "total_items": 176,
+      "vocabulary_count": 39,
+      "definitions_count": 21,
+      "concepts_count": 17,
+      "properties_count": 10,
+      "rules_count": 5,
+      "formulas_count": 41,
+      "symbols_notation_count": 18,
+      "procedures_count": 6,
+      "relationships_count": 5,
+      "units_measurements_count": 6,
+      "patterns_count": 3,
+      "problem_solving_strategies_count": 5
+    },
+    "validation": {
+      "is_valid": true,
+      "source": "NCERT Class 10 Mathematics (jemh101 - jemh114)",
+      "duplicate_check_passed": true,
+      "accuracy_verified": true
+    },
+    "gamified_playground": {
+      "combo_multipliers": [
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "scrambled_tile_sets": [
+        {
+          "id": "tile_1",
+          "scrambled": [
+            "HCF",
+            "LCM",
+            "*",
+            "=",
+            "a",
+            "*",
+            "b"
+          ],
+          "correct_order": [
+            "HCF",
+            "*",
+            "LCM",
+            "=",
+            "a",
+            "*",
+            "b"
+          ]
+        }
+      ],
+      "sorting_matrices": [
+        {
+          "category": "Formulas",
+          "items": [
+            "HCF * LCM = a * b",
+            "an = a + (n-1)d",
+            "sin^2 θ + cos^2 θ = 1"
+          ]
+        }
+      ],
+      "realtime_editing_checker": {
+        "auto_validate": true
+      }
+    }
+  },
+  "grade": "10",
+  "chapter_id": "G10-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths Chapter 1"
 }

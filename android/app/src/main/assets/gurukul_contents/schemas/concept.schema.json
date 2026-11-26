@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gurukul Concept",
+  "type": "object",
+  "required": [
+    "concept_id",
+    "title"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "concept_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "definition": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "explanation": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "prerequisite_concept_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "learning_outcome_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

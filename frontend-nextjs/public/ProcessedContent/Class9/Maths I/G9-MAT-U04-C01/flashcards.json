@@ -1,122 +1,1578 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Orienting Yourself: The Use of Coordinates",
-  "image_asset": {
-    "local_url": "/assets/images/ch1_cartesian_coordinates.png",
-    "title": "2D Cartesian Coordinate Plane showing axes, origin O(0,0), four quadrants, and plotted points P(3,4) & Q(-3,-4)."
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_00973c1649b30824",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_9",
+    "class_level": 9
   },
-  "flashcards": [
-    {
-      "card_id": 1,
-      "level": "Basic Recall",
-      "front_question": "What are the coordinates of the origin in a two-dimensional Cartesian plane?",
-      "phonetic_guide": "[Phonetic Guide: What are the coordinates ...]",
-      "back_answer": "The origin is the intersection point O of the x-axis and y-axis, denoted by the ordered pair (0, 0).",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Basic Recall in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
+  "subject": "Maths I",
+  "artifact": {
+    "artifact_type": "flashcards",
+    "source_file_name": "06-Flashcards.json",
+    "source_relative_path": "Contents/Class 9/Maths I/Source Files/06-Flashcards.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "05f75ba79d77654fec278d2b609bfb4ffb3570ec30644863ae34cf03337b4435",
+    "source_semantic_sha256": "7725d82fe2af57075b801c83c1b57677e297252dfa37c80561ba18128b1a2dd6",
+    "source_byte_length": 39803,
+    "source_encoding": "utf-8",
+    "source_field_count": 618,
+    "field_inventory": [
+      "$.subject",
+      "$.resource_type",
+      "$.deck_features",
+      "$.deck_features.sm2_algorithm_enabled",
+      "$.deck_features.phonetic_audio_support",
+      "$.deck_features.flip_animation",
+      "$.deck_features.grading_buttons",
+      "$.deck_features.grading_buttons[0].label",
+      "$.deck_features.grading_buttons[0].grade",
+      "$.deck_features.grading_buttons[0].interval_modifier",
+      "$.deck_features.grading_buttons[0].button_color",
+      "$.deck_features.grading_buttons[1].label",
+      "$.deck_features.grading_buttons[1].grade",
+      "$.deck_features.grading_buttons[1].interval_modifier",
+      "$.deck_features.grading_buttons[1].button_color",
+      "$.deck_features.grading_buttons[2].label",
+      "$.deck_features.grading_buttons[2].grade",
+      "$.deck_features.grading_buttons[2].interval_modifier",
+      "$.deck_features.grading_buttons[2].button_color",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].image_asset",
+      "$.chapters[0].image_asset.local_url",
+      "$.chapters[0].image_asset.title",
+      "$.chapters[0].flashcards",
+      "$.chapters[0].flashcards[0].card_id",
+      "$.chapters[0].flashcards[0].level",
+      "$.chapters[0].flashcards[0].front_question",
+      "$.chapters[0].flashcards[0].phonetic_guide",
+      "$.chapters[0].flashcards[0].back_answer",
+      "$.chapters[0].flashcards[0].mnemonic_key",
+      "$.chapters[0].flashcards[0].graphic_description",
+      "$.chapters[0].flashcards[0].sm2_metadata",
+      "$.chapters[0].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[0].flashcards[1].card_id",
+      "$.chapters[0].flashcards[1].level",
+      "$.chapters[0].flashcards[1].front_question",
+      "$.chapters[0].flashcards[1].phonetic_guide",
+      "$.chapters[0].flashcards[1].back_answer",
+      "$.chapters[0].flashcards[1].mnemonic_key",
+      "$.chapters[0].flashcards[1].graphic_description",
+      "$.chapters[0].flashcards[1].sm2_metadata",
+      "$.chapters[0].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[0].flashcards[2].card_id",
+      "$.chapters[0].flashcards[2].level",
+      "$.chapters[0].flashcards[2].front_question",
+      "$.chapters[0].flashcards[2].phonetic_guide",
+      "$.chapters[0].flashcards[2].back_answer",
+      "$.chapters[0].flashcards[2].mnemonic_key",
+      "$.chapters[0].flashcards[2].graphic_description",
+      "$.chapters[0].flashcards[2].sm2_metadata",
+      "$.chapters[0].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[0].flashcards[3].card_id",
+      "$.chapters[0].flashcards[3].level",
+      "$.chapters[0].flashcards[3].front_question",
+      "$.chapters[0].flashcards[3].phonetic_guide",
+      "$.chapters[0].flashcards[3].back_answer",
+      "$.chapters[0].flashcards[3].mnemonic_key",
+      "$.chapters[0].flashcards[3].graphic_description",
+      "$.chapters[0].flashcards[3].sm2_metadata",
+      "$.chapters[0].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[0].flashcards[4].card_id",
+      "$.chapters[0].flashcards[4].level",
+      "$.chapters[0].flashcards[4].front_question",
+      "$.chapters[0].flashcards[4].phonetic_guide",
+      "$.chapters[0].flashcards[4].back_answer",
+      "$.chapters[0].flashcards[4].mnemonic_key",
+      "$.chapters[0].flashcards[4].graphic_description",
+      "$.chapters[0].flashcards[4].sm2_metadata",
+      "$.chapters[0].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[0].flashcards[5].card_id",
+      "$.chapters[0].flashcards[5].level",
+      "$.chapters[0].flashcards[5].front_question",
+      "$.chapters[0].flashcards[5].phonetic_guide",
+      "$.chapters[0].flashcards[5].back_answer",
+      "$.chapters[0].flashcards[5].mnemonic_key",
+      "$.chapters[0].flashcards[5].graphic_description",
+      "$.chapters[0].flashcards[5].sm2_metadata",
+      "$.chapters[0].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[5].sm2_metadata.ease_factor",
+      "$.chapters[0].flashcards[6].card_id",
+      "$.chapters[0].flashcards[6].level",
+      "$.chapters[0].flashcards[6].front_question",
+      "$.chapters[0].flashcards[6].phonetic_guide",
+      "$.chapters[0].flashcards[6].back_answer",
+      "$.chapters[0].flashcards[6].mnemonic_key",
+      "$.chapters[0].flashcards[6].graphic_description",
+      "$.chapters[0].flashcards[6].sm2_metadata",
+      "$.chapters[0].flashcards[6].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[6].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[6].sm2_metadata.ease_factor",
+      "$.chapters[0].flashcards[7].card_id",
+      "$.chapters[0].flashcards[7].level",
+      "$.chapters[0].flashcards[7].front_question",
+      "$.chapters[0].flashcards[7].phonetic_guide",
+      "$.chapters[0].flashcards[7].back_answer",
+      "$.chapters[0].flashcards[7].mnemonic_key",
+      "$.chapters[0].flashcards[7].graphic_description",
+      "$.chapters[0].flashcards[7].sm2_metadata",
+      "$.chapters[0].flashcards[7].sm2_metadata.repetitions",
+      "$.chapters[0].flashcards[7].sm2_metadata.interval_days",
+      "$.chapters[0].flashcards[7].sm2_metadata.ease_factor",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].image_asset",
+      "$.chapters[1].image_asset.local_url",
+      "$.chapters[1].image_asset.title",
+      "$.chapters[1].flashcards",
+      "$.chapters[1].flashcards[0].card_id",
+      "$.chapters[1].flashcards[0].level",
+      "$.chapters[1].flashcards[0].front_question",
+      "$.chapters[1].flashcards[0].phonetic_guide",
+      "$.chapters[1].flashcards[0].back_answer",
+      "$.chapters[1].flashcards[0].mnemonic_key",
+      "$.chapters[1].flashcards[0].graphic_description",
+      "$.chapters[1].flashcards[0].sm2_metadata",
+      "$.chapters[1].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[1].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[1].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[1].flashcards[1].card_id",
+      "$.chapters[1].flashcards[1].level",
+      "$.chapters[1].flashcards[1].front_question",
+      "$.chapters[1].flashcards[1].phonetic_guide",
+      "$.chapters[1].flashcards[1].back_answer",
+      "$.chapters[1].flashcards[1].mnemonic_key",
+      "$.chapters[1].flashcards[1].graphic_description",
+      "$.chapters[1].flashcards[1].sm2_metadata",
+      "$.chapters[1].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[1].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[1].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[1].flashcards[2].card_id",
+      "$.chapters[1].flashcards[2].level",
+      "$.chapters[1].flashcards[2].front_question",
+      "$.chapters[1].flashcards[2].phonetic_guide",
+      "$.chapters[1].flashcards[2].back_answer",
+      "$.chapters[1].flashcards[2].mnemonic_key",
+      "$.chapters[1].flashcards[2].graphic_description",
+      "$.chapters[1].flashcards[2].sm2_metadata",
+      "$.chapters[1].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[1].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[1].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[1].flashcards[3].card_id",
+      "$.chapters[1].flashcards[3].level",
+      "$.chapters[1].flashcards[3].front_question",
+      "$.chapters[1].flashcards[3].phonetic_guide",
+      "$.chapters[1].flashcards[3].back_answer",
+      "$.chapters[1].flashcards[3].mnemonic_key",
+      "$.chapters[1].flashcards[3].graphic_description",
+      "$.chapters[1].flashcards[3].sm2_metadata",
+      "$.chapters[1].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[1].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[1].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[1].flashcards[4].card_id",
+      "$.chapters[1].flashcards[4].level",
+      "$.chapters[1].flashcards[4].front_question",
+      "$.chapters[1].flashcards[4].phonetic_guide",
+      "$.chapters[1].flashcards[4].back_answer",
+      "$.chapters[1].flashcards[4].mnemonic_key",
+      "$.chapters[1].flashcards[4].graphic_description",
+      "$.chapters[1].flashcards[4].sm2_metadata",
+      "$.chapters[1].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[1].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[1].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[1].flashcards[5].card_id",
+      "$.chapters[1].flashcards[5].level",
+      "$.chapters[1].flashcards[5].front_question",
+      "$.chapters[1].flashcards[5].phonetic_guide",
+      "$.chapters[1].flashcards[5].back_answer",
+      "$.chapters[1].flashcards[5].mnemonic_key",
+      "$.chapters[1].flashcards[5].graphic_description",
+      "$.chapters[1].flashcards[5].sm2_metadata",
+      "$.chapters[1].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[1].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[1].flashcards[5].sm2_metadata.ease_factor",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].image_asset",
+      "$.chapters[2].image_asset.local_url",
+      "$.chapters[2].image_asset.title",
+      "$.chapters[2].flashcards",
+      "$.chapters[2].flashcards[0].card_id",
+      "$.chapters[2].flashcards[0].level",
+      "$.chapters[2].flashcards[0].front_question",
+      "$.chapters[2].flashcards[0].phonetic_guide",
+      "$.chapters[2].flashcards[0].back_answer",
+      "$.chapters[2].flashcards[0].mnemonic_key",
+      "$.chapters[2].flashcards[0].graphic_description",
+      "$.chapters[2].flashcards[0].sm2_metadata",
+      "$.chapters[2].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[2].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[2].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[2].flashcards[1].card_id",
+      "$.chapters[2].flashcards[1].level",
+      "$.chapters[2].flashcards[1].front_question",
+      "$.chapters[2].flashcards[1].phonetic_guide",
+      "$.chapters[2].flashcards[1].back_answer",
+      "$.chapters[2].flashcards[1].mnemonic_key",
+      "$.chapters[2].flashcards[1].graphic_description",
+      "$.chapters[2].flashcards[1].sm2_metadata",
+      "$.chapters[2].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[2].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[2].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[2].flashcards[2].card_id",
+      "$.chapters[2].flashcards[2].level",
+      "$.chapters[2].flashcards[2].front_question",
+      "$.chapters[2].flashcards[2].phonetic_guide",
+      "$.chapters[2].flashcards[2].back_answer",
+      "$.chapters[2].flashcards[2].mnemonic_key",
+      "$.chapters[2].flashcards[2].graphic_description",
+      "$.chapters[2].flashcards[2].sm2_metadata",
+      "$.chapters[2].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[2].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[2].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[2].flashcards[3].card_id",
+      "$.chapters[2].flashcards[3].level",
+      "$.chapters[2].flashcards[3].front_question",
+      "$.chapters[2].flashcards[3].phonetic_guide",
+      "$.chapters[2].flashcards[3].back_answer",
+      "$.chapters[2].flashcards[3].mnemonic_key",
+      "$.chapters[2].flashcards[3].graphic_description",
+      "$.chapters[2].flashcards[3].sm2_metadata",
+      "$.chapters[2].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[2].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[2].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[2].flashcards[4].card_id",
+      "$.chapters[2].flashcards[4].level",
+      "$.chapters[2].flashcards[4].front_question",
+      "$.chapters[2].flashcards[4].phonetic_guide",
+      "$.chapters[2].flashcards[4].back_answer",
+      "$.chapters[2].flashcards[4].mnemonic_key",
+      "$.chapters[2].flashcards[4].graphic_description",
+      "$.chapters[2].flashcards[4].sm2_metadata",
+      "$.chapters[2].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[2].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[2].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[2].flashcards[5].card_id",
+      "$.chapters[2].flashcards[5].level",
+      "$.chapters[2].flashcards[5].front_question",
+      "$.chapters[2].flashcards[5].phonetic_guide",
+      "$.chapters[2].flashcards[5].back_answer",
+      "$.chapters[2].flashcards[5].mnemonic_key",
+      "$.chapters[2].flashcards[5].graphic_description",
+      "$.chapters[2].flashcards[5].sm2_metadata",
+      "$.chapters[2].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[2].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[2].flashcards[5].sm2_metadata.ease_factor",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].image_asset",
+      "$.chapters[3].image_asset.local_url",
+      "$.chapters[3].image_asset.title",
+      "$.chapters[3].flashcards",
+      "$.chapters[3].flashcards[0].card_id",
+      "$.chapters[3].flashcards[0].level",
+      "$.chapters[3].flashcards[0].front_question",
+      "$.chapters[3].flashcards[0].phonetic_guide",
+      "$.chapters[3].flashcards[0].back_answer",
+      "$.chapters[3].flashcards[0].mnemonic_key",
+      "$.chapters[3].flashcards[0].graphic_description",
+      "$.chapters[3].flashcards[0].sm2_metadata",
+      "$.chapters[3].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[3].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[3].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[3].flashcards[1].card_id",
+      "$.chapters[3].flashcards[1].level",
+      "$.chapters[3].flashcards[1].front_question",
+      "$.chapters[3].flashcards[1].phonetic_guide",
+      "$.chapters[3].flashcards[1].back_answer",
+      "$.chapters[3].flashcards[1].mnemonic_key",
+      "$.chapters[3].flashcards[1].graphic_description",
+      "$.chapters[3].flashcards[1].sm2_metadata",
+      "$.chapters[3].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[3].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[3].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[3].flashcards[2].card_id",
+      "$.chapters[3].flashcards[2].level",
+      "$.chapters[3].flashcards[2].front_question",
+      "$.chapters[3].flashcards[2].phonetic_guide",
+      "$.chapters[3].flashcards[2].back_answer",
+      "$.chapters[3].flashcards[2].mnemonic_key",
+      "$.chapters[3].flashcards[2].graphic_description",
+      "$.chapters[3].flashcards[2].sm2_metadata",
+      "$.chapters[3].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[3].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[3].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[3].flashcards[3].card_id",
+      "$.chapters[3].flashcards[3].level",
+      "$.chapters[3].flashcards[3].front_question",
+      "$.chapters[3].flashcards[3].phonetic_guide",
+      "$.chapters[3].flashcards[3].back_answer",
+      "$.chapters[3].flashcards[3].mnemonic_key",
+      "$.chapters[3].flashcards[3].graphic_description",
+      "$.chapters[3].flashcards[3].sm2_metadata",
+      "$.chapters[3].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[3].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[3].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[3].flashcards[4].card_id",
+      "$.chapters[3].flashcards[4].level",
+      "$.chapters[3].flashcards[4].front_question",
+      "$.chapters[3].flashcards[4].phonetic_guide",
+      "$.chapters[3].flashcards[4].back_answer",
+      "$.chapters[3].flashcards[4].mnemonic_key",
+      "$.chapters[3].flashcards[4].graphic_description",
+      "$.chapters[3].flashcards[4].sm2_metadata",
+      "$.chapters[3].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[3].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[3].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[3].flashcards[5].card_id",
+      "$.chapters[3].flashcards[5].level",
+      "$.chapters[3].flashcards[5].front_question",
+      "$.chapters[3].flashcards[5].phonetic_guide",
+      "$.chapters[3].flashcards[5].back_answer",
+      "$.chapters[3].flashcards[5].mnemonic_key",
+      "$.chapters[3].flashcards[5].graphic_description",
+      "$.chapters[3].flashcards[5].sm2_metadata",
+      "$.chapters[3].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[3].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[3].flashcards[5].sm2_metadata.ease_factor",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].image_asset",
+      "$.chapters[4].image_asset.local_url",
+      "$.chapters[4].image_asset.title",
+      "$.chapters[4].flashcards",
+      "$.chapters[4].flashcards[0].card_id",
+      "$.chapters[4].flashcards[0].level",
+      "$.chapters[4].flashcards[0].front_question",
+      "$.chapters[4].flashcards[0].phonetic_guide",
+      "$.chapters[4].flashcards[0].back_answer",
+      "$.chapters[4].flashcards[0].mnemonic_key",
+      "$.chapters[4].flashcards[0].graphic_description",
+      "$.chapters[4].flashcards[0].sm2_metadata",
+      "$.chapters[4].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[4].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[4].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[4].flashcards[1].card_id",
+      "$.chapters[4].flashcards[1].level",
+      "$.chapters[4].flashcards[1].front_question",
+      "$.chapters[4].flashcards[1].phonetic_guide",
+      "$.chapters[4].flashcards[1].back_answer",
+      "$.chapters[4].flashcards[1].mnemonic_key",
+      "$.chapters[4].flashcards[1].graphic_description",
+      "$.chapters[4].flashcards[1].sm2_metadata",
+      "$.chapters[4].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[4].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[4].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[4].flashcards[2].card_id",
+      "$.chapters[4].flashcards[2].level",
+      "$.chapters[4].flashcards[2].front_question",
+      "$.chapters[4].flashcards[2].phonetic_guide",
+      "$.chapters[4].flashcards[2].back_answer",
+      "$.chapters[4].flashcards[2].mnemonic_key",
+      "$.chapters[4].flashcards[2].graphic_description",
+      "$.chapters[4].flashcards[2].sm2_metadata",
+      "$.chapters[4].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[4].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[4].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[4].flashcards[3].card_id",
+      "$.chapters[4].flashcards[3].level",
+      "$.chapters[4].flashcards[3].front_question",
+      "$.chapters[4].flashcards[3].phonetic_guide",
+      "$.chapters[4].flashcards[3].back_answer",
+      "$.chapters[4].flashcards[3].mnemonic_key",
+      "$.chapters[4].flashcards[3].graphic_description",
+      "$.chapters[4].flashcards[3].sm2_metadata",
+      "$.chapters[4].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[4].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[4].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[4].flashcards[4].card_id",
+      "$.chapters[4].flashcards[4].level",
+      "$.chapters[4].flashcards[4].front_question",
+      "$.chapters[4].flashcards[4].phonetic_guide",
+      "$.chapters[4].flashcards[4].back_answer",
+      "$.chapters[4].flashcards[4].mnemonic_key",
+      "$.chapters[4].flashcards[4].graphic_description",
+      "$.chapters[4].flashcards[4].sm2_metadata",
+      "$.chapters[4].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[4].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[4].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[4].flashcards[5].card_id",
+      "$.chapters[4].flashcards[5].level",
+      "$.chapters[4].flashcards[5].front_question",
+      "$.chapters[4].flashcards[5].phonetic_guide",
+      "$.chapters[4].flashcards[5].back_answer",
+      "$.chapters[4].flashcards[5].mnemonic_key",
+      "$.chapters[4].flashcards[5].graphic_description",
+      "$.chapters[4].flashcards[5].sm2_metadata",
+      "$.chapters[4].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[4].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[4].flashcards[5].sm2_metadata.ease_factor",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].image_asset",
+      "$.chapters[5].image_asset.local_url",
+      "$.chapters[5].image_asset.title",
+      "$.chapters[5].flashcards",
+      "$.chapters[5].flashcards[0].card_id",
+      "$.chapters[5].flashcards[0].level",
+      "$.chapters[5].flashcards[0].front_question",
+      "$.chapters[5].flashcards[0].phonetic_guide",
+      "$.chapters[5].flashcards[0].back_answer",
+      "$.chapters[5].flashcards[0].mnemonic_key",
+      "$.chapters[5].flashcards[0].graphic_description",
+      "$.chapters[5].flashcards[0].sm2_metadata",
+      "$.chapters[5].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[5].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[5].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[5].flashcards[1].card_id",
+      "$.chapters[5].flashcards[1].level",
+      "$.chapters[5].flashcards[1].front_question",
+      "$.chapters[5].flashcards[1].phonetic_guide",
+      "$.chapters[5].flashcards[1].back_answer",
+      "$.chapters[5].flashcards[1].mnemonic_key",
+      "$.chapters[5].flashcards[1].graphic_description",
+      "$.chapters[5].flashcards[1].sm2_metadata",
+      "$.chapters[5].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[5].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[5].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[5].flashcards[2].card_id",
+      "$.chapters[5].flashcards[2].level",
+      "$.chapters[5].flashcards[2].front_question",
+      "$.chapters[5].flashcards[2].phonetic_guide",
+      "$.chapters[5].flashcards[2].back_answer",
+      "$.chapters[5].flashcards[2].mnemonic_key",
+      "$.chapters[5].flashcards[2].graphic_description",
+      "$.chapters[5].flashcards[2].sm2_metadata",
+      "$.chapters[5].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[5].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[5].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[5].flashcards[3].card_id",
+      "$.chapters[5].flashcards[3].level",
+      "$.chapters[5].flashcards[3].front_question",
+      "$.chapters[5].flashcards[3].phonetic_guide",
+      "$.chapters[5].flashcards[3].back_answer",
+      "$.chapters[5].flashcards[3].mnemonic_key",
+      "$.chapters[5].flashcards[3].graphic_description",
+      "$.chapters[5].flashcards[3].sm2_metadata",
+      "$.chapters[5].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[5].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[5].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[5].flashcards[4].card_id",
+      "$.chapters[5].flashcards[4].level",
+      "$.chapters[5].flashcards[4].front_question",
+      "$.chapters[5].flashcards[4].phonetic_guide",
+      "$.chapters[5].flashcards[4].back_answer",
+      "$.chapters[5].flashcards[4].mnemonic_key",
+      "$.chapters[5].flashcards[4].graphic_description",
+      "$.chapters[5].flashcards[4].sm2_metadata",
+      "$.chapters[5].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[5].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[5].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[5].flashcards[5].card_id",
+      "$.chapters[5].flashcards[5].level",
+      "$.chapters[5].flashcards[5].front_question",
+      "$.chapters[5].flashcards[5].phonetic_guide",
+      "$.chapters[5].flashcards[5].back_answer",
+      "$.chapters[5].flashcards[5].mnemonic_key",
+      "$.chapters[5].flashcards[5].graphic_description",
+      "$.chapters[5].flashcards[5].sm2_metadata",
+      "$.chapters[5].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[5].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[5].flashcards[5].sm2_metadata.ease_factor",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].image_asset",
+      "$.chapters[6].image_asset.local_url",
+      "$.chapters[6].image_asset.title",
+      "$.chapters[6].flashcards",
+      "$.chapters[6].flashcards[0].card_id",
+      "$.chapters[6].flashcards[0].level",
+      "$.chapters[6].flashcards[0].front_question",
+      "$.chapters[6].flashcards[0].phonetic_guide",
+      "$.chapters[6].flashcards[0].back_answer",
+      "$.chapters[6].flashcards[0].mnemonic_key",
+      "$.chapters[6].flashcards[0].graphic_description",
+      "$.chapters[6].flashcards[0].sm2_metadata",
+      "$.chapters[6].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[6].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[6].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[6].flashcards[1].card_id",
+      "$.chapters[6].flashcards[1].level",
+      "$.chapters[6].flashcards[1].front_question",
+      "$.chapters[6].flashcards[1].phonetic_guide",
+      "$.chapters[6].flashcards[1].back_answer",
+      "$.chapters[6].flashcards[1].mnemonic_key",
+      "$.chapters[6].flashcards[1].graphic_description",
+      "$.chapters[6].flashcards[1].sm2_metadata",
+      "$.chapters[6].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[6].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[6].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[6].flashcards[2].card_id",
+      "$.chapters[6].flashcards[2].level",
+      "$.chapters[6].flashcards[2].front_question",
+      "$.chapters[6].flashcards[2].phonetic_guide",
+      "$.chapters[6].flashcards[2].back_answer",
+      "$.chapters[6].flashcards[2].mnemonic_key",
+      "$.chapters[6].flashcards[2].graphic_description",
+      "$.chapters[6].flashcards[2].sm2_metadata",
+      "$.chapters[6].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[6].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[6].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[6].flashcards[3].card_id",
+      "$.chapters[6].flashcards[3].level",
+      "$.chapters[6].flashcards[3].front_question",
+      "$.chapters[6].flashcards[3].phonetic_guide",
+      "$.chapters[6].flashcards[3].back_answer",
+      "$.chapters[6].flashcards[3].mnemonic_key",
+      "$.chapters[6].flashcards[3].graphic_description",
+      "$.chapters[6].flashcards[3].sm2_metadata",
+      "$.chapters[6].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[6].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[6].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[6].flashcards[4].card_id",
+      "$.chapters[6].flashcards[4].level",
+      "$.chapters[6].flashcards[4].front_question",
+      "$.chapters[6].flashcards[4].phonetic_guide",
+      "$.chapters[6].flashcards[4].back_answer",
+      "$.chapters[6].flashcards[4].mnemonic_key",
+      "$.chapters[6].flashcards[4].graphic_description",
+      "$.chapters[6].flashcards[4].sm2_metadata",
+      "$.chapters[6].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[6].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[6].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[6].flashcards[5].card_id",
+      "$.chapters[6].flashcards[5].level",
+      "$.chapters[6].flashcards[5].front_question",
+      "$.chapters[6].flashcards[5].phonetic_guide",
+      "$.chapters[6].flashcards[5].back_answer",
+      "$.chapters[6].flashcards[5].mnemonic_key",
+      "$.chapters[6].flashcards[5].graphic_description",
+      "$.chapters[6].flashcards[5].sm2_metadata",
+      "$.chapters[6].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[6].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[6].flashcards[5].sm2_metadata.ease_factor",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].image_asset",
+      "$.chapters[7].image_asset.local_url",
+      "$.chapters[7].image_asset.title",
+      "$.chapters[7].flashcards",
+      "$.chapters[7].flashcards[0].card_id",
+      "$.chapters[7].flashcards[0].level",
+      "$.chapters[7].flashcards[0].front_question",
+      "$.chapters[7].flashcards[0].phonetic_guide",
+      "$.chapters[7].flashcards[0].back_answer",
+      "$.chapters[7].flashcards[0].mnemonic_key",
+      "$.chapters[7].flashcards[0].graphic_description",
+      "$.chapters[7].flashcards[0].sm2_metadata",
+      "$.chapters[7].flashcards[0].sm2_metadata.repetitions",
+      "$.chapters[7].flashcards[0].sm2_metadata.interval_days",
+      "$.chapters[7].flashcards[0].sm2_metadata.ease_factor",
+      "$.chapters[7].flashcards[1].card_id",
+      "$.chapters[7].flashcards[1].level",
+      "$.chapters[7].flashcards[1].front_question",
+      "$.chapters[7].flashcards[1].phonetic_guide",
+      "$.chapters[7].flashcards[1].back_answer",
+      "$.chapters[7].flashcards[1].mnemonic_key",
+      "$.chapters[7].flashcards[1].graphic_description",
+      "$.chapters[7].flashcards[1].sm2_metadata",
+      "$.chapters[7].flashcards[1].sm2_metadata.repetitions",
+      "$.chapters[7].flashcards[1].sm2_metadata.interval_days",
+      "$.chapters[7].flashcards[1].sm2_metadata.ease_factor",
+      "$.chapters[7].flashcards[2].card_id",
+      "$.chapters[7].flashcards[2].level",
+      "$.chapters[7].flashcards[2].front_question",
+      "$.chapters[7].flashcards[2].phonetic_guide",
+      "$.chapters[7].flashcards[2].back_answer",
+      "$.chapters[7].flashcards[2].mnemonic_key",
+      "$.chapters[7].flashcards[2].graphic_description",
+      "$.chapters[7].flashcards[2].sm2_metadata",
+      "$.chapters[7].flashcards[2].sm2_metadata.repetitions",
+      "$.chapters[7].flashcards[2].sm2_metadata.interval_days",
+      "$.chapters[7].flashcards[2].sm2_metadata.ease_factor",
+      "$.chapters[7].flashcards[3].card_id",
+      "$.chapters[7].flashcards[3].level",
+      "$.chapters[7].flashcards[3].front_question",
+      "$.chapters[7].flashcards[3].phonetic_guide",
+      "$.chapters[7].flashcards[3].back_answer",
+      "$.chapters[7].flashcards[3].mnemonic_key",
+      "$.chapters[7].flashcards[3].graphic_description",
+      "$.chapters[7].flashcards[3].sm2_metadata",
+      "$.chapters[7].flashcards[3].sm2_metadata.repetitions",
+      "$.chapters[7].flashcards[3].sm2_metadata.interval_days",
+      "$.chapters[7].flashcards[3].sm2_metadata.ease_factor",
+      "$.chapters[7].flashcards[4].card_id",
+      "$.chapters[7].flashcards[4].level",
+      "$.chapters[7].flashcards[4].front_question",
+      "$.chapters[7].flashcards[4].phonetic_guide",
+      "$.chapters[7].flashcards[4].back_answer",
+      "$.chapters[7].flashcards[4].mnemonic_key",
+      "$.chapters[7].flashcards[4].graphic_description",
+      "$.chapters[7].flashcards[4].sm2_metadata",
+      "$.chapters[7].flashcards[4].sm2_metadata.repetitions",
+      "$.chapters[7].flashcards[4].sm2_metadata.interval_days",
+      "$.chapters[7].flashcards[4].sm2_metadata.ease_factor",
+      "$.chapters[7].flashcards[5].card_id",
+      "$.chapters[7].flashcards[5].level",
+      "$.chapters[7].flashcards[5].front_question",
+      "$.chapters[7].flashcards[5].phonetic_guide",
+      "$.chapters[7].flashcards[5].back_answer",
+      "$.chapters[7].flashcards[5].mnemonic_key",
+      "$.chapters[7].flashcards[5].graphic_description",
+      "$.chapters[7].flashcards[5].sm2_metadata",
+      "$.chapters[7].flashcards[5].sm2_metadata.repetitions",
+      "$.chapters[7].flashcards[5].sm2_metadata.interval_days",
+      "$.chapters[7].flashcards[5].sm2_metadata.ease_factor"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
+      {
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Orienting Yourself: The Use of Coordinates",
+        "source_number_field": "chapter_number",
+        "source_number": 1
+      },
+      {
+        "source_path": "$.chapters[0].image_asset",
+        "source_title_field": "title",
+        "source_title": "2D Cartesian Coordinate Plane showing axes, origin O(0,0), four quadrants, and plotted points P(3,4) & Q(-3,-4).",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Introduction to Linear Polynomials",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].image_asset",
+        "source_title_field": "title",
+        "source_title": "Straight line graph of linear polynomial y = ax + b showing slope right triangle and y-intercept.",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "The World of Numbers",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].image_asset",
+        "source_title_field": "title",
+        "source_title": "Wheel of Theodorus (Square Root Spiral) depicting exact geometric lengths sqrt(2), sqrt(3), sqrt(4)...",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Exploring Algebraic Identities",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].image_asset",
+        "source_title_field": "title",
+        "source_title": "Area decomposition proof of identity (a+b)^2 = a^2 + 2ab + b^2 using partitioned square regions.",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "I’m Up and Down, and Round and Round",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].image_asset",
+        "source_title_field": "title",
+        "source_title": "Circle diagram demonstrating Inscribed Angle Theorem and Cyclic Quadrilateral supplementary angles.",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Measuring Space: Perimeter and Area",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].image_asset",
+        "source_title_field": "title",
+        "source_title": "Mensuration overview displaying circular sector, segment, and concentric stadium running track.",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Mathematics of Maybe: Introduction to Probability",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].image_asset",
+        "source_title_field": "title",
+        "source_title": "Tree diagram for 2-coin tosses and geometric probability target board.",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].image_asset",
+        "source_title_field": "title",
+        "source_title": "Dot arrays for triangular numbers T_n and step plot for Arithmetic Progression.",
+        "source_number_field": null,
+        "source_number": null
       }
+    ],
+    "chapter_candidate_count": 16,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "subject": "Class 9 Mathematics (Ganita Manjari - Part I)",
+    "resource_type": "3D Interactive Flashcards Deck",
+    "deck_features": {
+      "sm2_algorithm_enabled": true,
+      "phonetic_audio_support": true,
+      "flip_animation": "3d_perspective_y_axis",
+      "grading_buttons": [
+        {
+          "label": "Hard",
+          "grade": 1,
+          "interval_modifier": 1.0,
+          "button_color": "#ef4444"
+        },
+        {
+          "label": "Medium",
+          "grade": 3,
+          "interval_modifier": 2.5,
+          "button_color": "#f59e0b"
+        },
+        {
+          "label": "Easy",
+          "grade": 5,
+          "interval_modifier": 4.0,
+          "button_color": "#10b981"
+        }
+      ]
     },
-    {
-      "card_id": 2,
-      "level": "Basic Recall",
-      "front_question": "What is the technical term for the x-coordinate of a point on the coordinate plane?",
-      "phonetic_guide": "[Phonetic Guide: What is the technical ter...]",
-      "back_answer": "The x-coordinate is called the abscissa, representing the signed perpendicular distance of the point from the y-axis.",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Basic Recall in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Orienting Yourself: The Use of Coordinates",
+        "image_asset": {
+          "local_url": "/assets/images/ch1_cartesian_coordinates.png",
+          "title": "2D Cartesian Coordinate Plane showing axes, origin O(0,0), four quadrants, and plotted points P(3,4) & Q(-3,-4)."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "What are the coordinates of the origin in a two-dimensional Cartesian plane?",
+            "phonetic_guide": "[Phonetic Guide: What are the coordinates ...]",
+            "back_answer": "The origin is the intersection point O of the x-axis and y-axis, denoted by the ordered pair (0, 0).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "What is the technical term for the x-coordinate of a point on the coordinate plane?",
+            "phonetic_guide": "[Phonetic Guide: What is the technical ter...]",
+            "back_answer": "The x-coordinate is called the abscissa, representing the signed perpendicular distance of the point from the y-axis.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Basic Recall",
+            "front_question": "What is the technical term for the y-coordinate of a point on the coordinate plane?",
+            "phonetic_guide": "[Phonetic Guide: What is the technical ter...]",
+            "back_answer": "The y-coordinate is called the ordinate, representing the signed perpendicular distance of the point from the x-axis.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Conceptual Understanding",
+            "front_question": "How do sign conventions differ across the four quadrants of a Cartesian plane?",
+            "phonetic_guide": "[Phonetic Guide: How do sign conventions d...]",
+            "back_answer": "Quadrant I: (+, +); Quadrant II: (-, +); Quadrant III: (-, -); Quadrant IV: (+, -).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Conceptual Understanding",
+            "front_question": "What general coordinate form represents any point lying directly on (a) the x-axis and (b) the y-axis?",
+            "phonetic_guide": "[Phonetic Guide: What general coordinate f...]",
+            "back_answer": "(a) Any point on the x-axis has ordinate y = 0, expressed as (x, 0). (b) Any point on the y-axis has abscissa x = 0, expressed as (0, y).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Experimental/Observational Insights",
+            "front_question": "How did ancient town planning in Harappa and Mohenjo-daro reflect early coordinate principles?",
+            "phonetic_guide": "[Phonetic Guide: How did ancient town plan...]",
+            "back_answer": "Urban structures were laid out on orthogonal grid systems with streets intersecting at right angles, providing a physical reference frame for location layout.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 7,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "State the Baudhāyana-Pythagoras distance formula between two points (x1, y1) and (x2, y2).",
+            "phonetic_guide": "[Phonetic Guide: State the Baudhāyana-Pyth...]",
+            "back_answer": "The Euclidean distance d is given by d = sqrt((x2 - x1)^2 + (y2 - y1)^2), derived from the hypotenuse of the right triangle formed by horizontal |x2 - x1| and vertical |y2 - y1| lengths.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 8,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "What are the coordinate reflection rules for a point (x, y) reflected across (a) the x-axis and (b) the y-axis?",
+            "phonetic_guide": "[Phonetic Guide: What are the coordinate r...]",
+            "back_answer": "(a) Reflection across the x-axis negates the y-coordinate: (x, -y). (b) Reflection across the y-axis negates the x-coordinate: (-x, y).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 1",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Introduction to Linear Polynomials",
+        "image_asset": {
+          "local_url": "/assets/images/ch2_linear_graph.png",
+          "title": "Straight line graph of linear polynomial y = ax + b showing slope right triangle and y-intercept."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "What defines a linear polynomial in one variable?",
+            "phonetic_guide": "[Phonetic Guide: What defines a linear pol...]",
+            "back_answer": "A univariate polynomial p(x) = ax + b of degree 1, where a != 0 and a, b are real numbers.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 2",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "What geometric figure is formed by the graph of a linear polynomial y = ax + b?",
+            "phonetic_guide": "[Phonetic Guide: What geometric figure is ...]",
+            "back_answer": "The graph of any linear polynomial equation y = ax + b is a straight line on the Cartesian plane.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 2",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Conceptual Understanding",
+            "front_question": "In the equation y = ax + b, what do the parameters 'a' and 'b' represent geometrically?",
+            "phonetic_guide": "[Phonetic Guide: In the equation y = ax + ...]",
+            "back_answer": "'a' represents the slope (rate of change / steepness, rise/run), and 'b' represents the y-intercept at point (0, b).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 2",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Conceptual Understanding",
+            "front_question": "How can you identify parallel lines from their algebraic equations in slope-intercept form?",
+            "phonetic_guide": "[Phonetic Guide: How can you identify para...]",
+            "back_answer": "Parallel lines have identical slopes 'a' but different y-intercepts 'b' (e.g., y = 3x + 2 and y = 3x - 5).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 2",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Experimental/Observational Insights",
+            "front_question": "How does a constant first difference in an input-output data table signal a linear relationship?",
+            "phonetic_guide": "[Phonetic Guide: How does a constant first...]",
+            "back_answer": "If consecutive y-values change by a constant amount delta_y for equal step increments delta_x, the relationship is linear with slope a = delta_y / delta_x.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 2",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "How do linear growth and linear decay differ in terms of slope sign and real-world behavior?",
+            "phonetic_guide": "[Phonetic Guide: How do linear growth and ...]",
+            "back_answer": "Linear growth has a positive slope (a > 0, slanting upward, e.g., savings), whereas linear decay has a negative slope (a < 0, slanting downward, e.g., water draining from a tank).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 2",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "The World of Numbers",
+        "image_asset": {
+          "local_url": "/assets/images/ch3_wheel_of_theodorus.png",
+          "title": "Wheel of Theodorus (Square Root Spiral) depicting exact geometric lengths sqrt(2), sqrt(3), sqrt(4)..."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "What is the formal definition of a rational number p/q?",
+            "phonetic_guide": "[Phonetic Guide: What is the formal defini...]",
+            "back_answer": "A number that can be expressed in the form p/q where p and q are integers and q != 0.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 3",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "What is an irrational number, and what signature characterizes its decimal expansion?",
+            "phonetic_guide": "[Phonetic Guide: What is an irrational num...]",
+            "back_answer": "An irrational number cannot be expressed as a ratio of integers; its decimal expansion is non-terminating and non-repeating (e.g., sqrt(2), pi).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 3",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Conceptual Understanding",
+            "front_question": "What condition on denominator prime factorisation guarantees a terminating decimal expansion for rational p/q?",
+            "phonetic_guide": "[Phonetic Guide: What condition on denomin...]",
+            "back_answer": "The fraction p/q (in simplest form) terminates if and only if the prime factors of q consist solely of 2s and 5s (q = 2^m * 5^n).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 3",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Experimental/Observational Insights",
+            "front_question": "What is the Wheel of Theodorus (Square Root Spiral)?",
+            "phonetic_guide": "[Phonetic Guide: What is the Wheel of Theo...]",
+            "back_answer": "A geometric spiral constructed by joining consecutive right-angled triangles with unit leg 1, yielding hypotenuses of exact lengths sqrt(2), sqrt(3), sqrt(4), sqrt(5)...",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 3",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "Outline the proof by contradiction that sqrt(2) is irrational.",
+            "phonetic_guide": "[Phonetic Guide: Outline the proof by cont...]",
+            "back_answer": "Assume sqrt(2) = p/q with gcd(p,q)=1. Then 2q^2 = p^2, so p is even (p=2k). Substituting yields q^2 = 2k^2, so q is also even. Both being even contradicts gcd(p,q)=1.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 3",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "Why do partial rational sums of Mādhava's infinite series for pi never equal pi exactly?",
+            "phonetic_guide": "[Phonetic Guide: Why do partial rational s...]",
+            "back_answer": "Mādhava's infinite series sum (1 - 1/3 + 1/5 - 1/7 ...) yields rational partial sums for any finite number of terms, whereas pi is transcendental and irrational.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 3",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Exploring Algebraic Identities",
+        "image_asset": {
+          "local_url": "/assets/images/ch4_geometric_identities.png",
+          "title": "Area decomposition proof of identity (a+b)^2 = a^2 + 2ab + b^2 using partitioned square regions."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "What is the algebraic difference between an equation and an identity?",
+            "phonetic_guide": "[Phonetic Guide: What is the algebraic dif...]",
+            "back_answer": "An equation holds true only for specific values of its variable, whereas an identity is an equality valid for all possible values of its variables.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 4",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "State the standard algebraic identities for (a+b)^2, (a-b)^2, and a^2 - b^2.",
+            "phonetic_guide": "[Phonetic Guide: State the standard algebr...]",
+            "back_answer": "(a+b)^2 = a^2 + 2ab + b^2; (a-b)^2 = a^2 - 2ab + b^2; a^2 - b^2 = (a-b)(a+b).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 4",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Conceptual Understanding",
+            "front_question": "What is the conditional identity for a^3 + b^3 + c^3 when a + b + c = 0?",
+            "phonetic_guide": "[Phonetic Guide: What is the conditional i...]",
+            "back_answer": "If a + b + c = 0, then a^3 + b^3 + c^3 = 3abc.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 4",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Experimental/Observational Insights",
+            "front_question": "How is the expansion (a+b)^2 proved geometrically using area decomposition?",
+            "phonetic_guide": "[Phonetic Guide: How is the expansion (a+b...]",
+            "back_answer": "A square of side (a+b) is partitioned into four sub-regions: a square of area a^2, a square of area b^2, and two rectangles of area ab each, totaling a^2 + 2ab + b^2.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 4",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "How did Śhrīdharāchārya apply the identity a^2 = (a+b)(a-b) + b^2 for mental squaring?",
+            "phonetic_guide": "[Phonetic Guide: How did Śhrīdharāchārya a...]",
+            "back_answer": "By choosing 'b' to round (a+b) or (a-b) to a multiple of 10. For instance, 97^2 = (97+3)(97-3) + 3^2 = (100)(94) + 9 = 9409.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 4",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "How is the Factor Theorem used to factorise high-degree polynomials?",
+            "phonetic_guide": "[Phonetic Guide: How is the Factor Theorem...]",
+            "back_answer": "By finding a zero 'r' such that p(r) = 0, establishing (x - r) as a factor, and dividing p(x) by (x - r) to reduce polynomial degree.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 4",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "I’m Up and Down, and Round and Round",
+        "image_asset": {
+          "local_url": "/assets/images/ch5_circle_theorems.png",
+          "title": "Circle diagram demonstrating Inscribed Angle Theorem and Cyclic Quadrilateral supplementary angles."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "What is the geometric locus definition of a circle?",
+            "phonetic_guide": "[Phonetic Guide: What is the geometric loc...]",
+            "back_answer": "The set of all points in a plane situated at a fixed distance (radius) from a fixed central point (centre).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 5",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "What is a cyclic quadrilateral?",
+            "phonetic_guide": "[Phonetic Guide: What is a cyclic quadrila...]",
+            "back_answer": "A quadrilateral whose four vertices all lie on the circumference of a single circle.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 5",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Conceptual Understanding",
+            "front_question": "State the Inscribed Angle Theorem regarding central vs circumference angle subtensions.",
+            "phonetic_guide": "[Phonetic Guide: State the Inscribed Angle...]",
+            "back_answer": "The angle subtended by an arc at the centre of a circle is double the angle subtended by it at any point on the remaining circumference (angle AOB = 2 * angle ACB).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 5",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Conceptual Understanding",
+            "front_question": "What is the measure of an angle subtended by a diameter in a semicircle?",
+            "phonetic_guide": "[Phonetic Guide: What is the measure of an...]",
+            "back_answer": "An angle subtended in a semicircle is always a right angle (90 degrees).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 5",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Experimental/Observational Insights",
+            "front_question": "How can you geometrically locate the centre of an unmarked circular ring or arc?",
+            "phonetic_guide": "[Phonetic Guide: How can you geometrically...]",
+            "back_answer": "Draw two non-parallel chords, construct their perpendicular bisectors using a compass, and mark their intersection point as centre O.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 5",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "State the necessary and sufficient condition for a quadrilateral to be cyclic.",
+            "phonetic_guide": "[Phonetic Guide: State the necessary and s...]",
+            "back_answer": "A quadrilateral is cyclic if and only if the sum of either pair of its opposite angles is 180 degrees (supplementary).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 5",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Measuring Space: Perimeter and Area",
+        "image_asset": {
+          "local_url": "/assets/images/ch6_sector_segment_track.png",
+          "title": "Mensuration overview displaying circular sector, segment, and concentric stadium running track."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "State Heron's formula for the area of a triangle with sides a, b, c.",
+            "phonetic_guide": "[Phonetic Guide: State Heron's formula for...]",
+            "back_answer": "Area = sqrt(s(s-a)(s-b)(s-c)), where semi-perimeter s = (a + b + c) / 2.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 6",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "What are the formulas for the area of a circular sector and arc length with central angle theta?",
+            "phonetic_guide": "[Phonetic Guide: What are the formulas for...]",
+            "back_answer": "Sector Area = (theta / 360) * pi * r^2; Arc Length L = (theta / 360) * 2 * pi * r.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 6",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Conceptual Understanding",
+            "front_question": "How is a minor segment's area derived from sector and triangle areas?",
+            "phonetic_guide": "[Phonetic Guide: How is a minor segment's ...]",
+            "back_answer": "Minor Segment Area = Area of Sector OAB - Area of Triangle OAB.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 6",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Experimental/Observational Insights",
+            "front_question": "How can circle area pi * r^2 be physically demonstrated by cutting sectors?",
+            "phonetic_guide": "[Phonetic Guide: How can circle area pi * ...]",
+            "back_answer": "Cutting a circle into 16 or more equal sectors and interlocking them forms an approximate rectangle of length pi * r and width r, area = (pi * r) * r = pi * r^2.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 6",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "State Brahmagupta's formula for the area of a cyclic quadrilateral.",
+            "phonetic_guide": "[Phonetic Guide: State Brahmagupta's formu...]",
+            "back_answer": "Area = sqrt((s-a)(s-b)(s-c)(s-d)), where a,b,c,d are side lengths and semi-perimeter s = (a+b+c+d)/2.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 6",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "If the perimeter of a circle equals its numerical area, what is its radius?",
+            "phonetic_guide": "[Phonetic Guide: If the perimeter of a cir...]",
+            "back_answer": "2 * pi * r = pi * r^2 => r = 2 units.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 6",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
+        "image_asset": {
+          "local_url": "/assets/images/ch7_probability_tree.png",
+          "title": "Tree diagram for 2-coin tosses and geometric probability target board."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "What is the theoretical probability formula for an event E in a fair trial?",
+            "phonetic_guide": "[Phonetic Guide: What is the theoretical p...]",
+            "back_answer": "P(E) = n(E) / n(S), where n(E) is the number of outcomes favorable to event E, and n(S) is the total sample space size.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 7",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "What are the numerical probability bounds for impossible and sure events?",
+            "phonetic_guide": "[Phonetic Guide: What are the numerical pr...]",
+            "back_answer": "P(Impossible Event) = 0; P(Sure Event) = 1; for any event E: 0 <= P(E) <= 1.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 7",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Conceptual Understanding",
+            "front_question": "What relationship connects the probability of an event E and its complementary event 'not E'?",
+            "phonetic_guide": "[Phonetic Guide: What relationship connect...]",
+            "back_answer": "P(E) + P(not E) = 1, so P(not E) = 1 - P(E).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 7",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Experimental/Observational Insights",
+            "front_question": "What is the Law of Large Numbers in probability?",
+            "phonetic_guide": "[Phonetic Guide: What is the Law of Large ...]",
+            "back_answer": "As the number of experimental trial repetitions increases towards infinity, empirical relative frequency converges directly to theoretical probability.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 7",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "How is geometric probability calculated for a random landing point?",
+            "phonetic_guide": "[Phonetic Guide: How is geometric probabil...]",
+            "back_answer": "Geometric Probability = (Favorable Target Area / Total Enclosing Region Area).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 7",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "When rolling two unbiased dice, what is the total sample space size, and how many outcomes yield a sum of 8?",
+            "phonetic_guide": "[Phonetic Guide: When rolling two unbiased...]",
+            "back_answer": "Total sample space n(S) = 6 x 6 = 36. Outcomes with sum 8 are {(2,6), (3,5), (4,4), (5,3), (6,2)}, totaling 5 outcomes (P = 5/36).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 7",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+        "image_asset": {
+          "local_url": "/assets/images/ch8_sequences_progressions.png",
+          "title": "Dot arrays for triangular numbers T_n and step plot for Arithmetic Progression."
+        },
+        "flashcards": [
+          {
+            "card_id": 1,
+            "level": "Basic Recall",
+            "front_question": "What is the formula for the nth term t_n of an Arithmetic Progression (AP)?",
+            "phonetic_guide": "[Phonetic Guide: What is the formula for t...]",
+            "back_answer": "t_n = a + (n - 1)d, where 'a' is the first term and 'd' is the common difference.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 8",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 2,
+            "level": "Basic Recall",
+            "front_question": "What is the formula for the nth term t_n of a Geometric Progression (GP)?",
+            "phonetic_guide": "[Phonetic Guide: What is the formula for t...]",
+            "back_answer": "t_n = a * r^(n - 1), where 'a' is the first term and 'r' is the common ratio.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Basic Recall in Chapter 8",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 3,
+            "level": "Conceptual Understanding",
+            "front_question": "How do explicit and recursive rules differ in defining sequence terms?",
+            "phonetic_guide": "[Phonetic Guide: How do explicit and recur...]",
+            "back_answer": "An explicit rule calculates term t_n directly from position n (e.g., t_n = 2n + 1). A recursive rule computes t_n from preceding terms (e.g., t_n = t_(n-1) + 2).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Conceptual Understanding in Chapter 8",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 4,
+            "level": "Experimental/Observational Insights",
+            "front_question": "What is the Virahānka-Fibonacci sequence rule and its history?",
+            "phonetic_guide": "[Phonetic Guide: What is the Virahānka-Fib...]",
+            "back_answer": "Discovered by Indian prosodist Virahānka (c. 600 CE) when counting poetic syllable combinations: V_1=1, V_2=1, V_n = V_(n-1) + V_(n-2).",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 8",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 5,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "What are the two formulas for the sum of the first n terms S_n of an AP?",
+            "phonetic_guide": "[Phonetic Guide: What are the two formulas...]",
+            "back_answer": "S_n = (n/2) * [2a + (n-1)d] and S_n = (n/2) * [a + l], where l is the last term t_n.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 8",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          },
+          {
+            "card_id": 6,
+            "level": "Scientific Reasoning/Application",
+            "front_question": "What property relates two consecutive triangular numbers T_n and T_(n-1)?",
+            "phonetic_guide": "[Phonetic Guide: What property relates two...]",
+            "back_answer": "The sum of any two consecutive triangular numbers equals a perfect square number: T_n + T_(n-1) = n^2.",
+            "mnemonic_key": "Visualize key terms and geometric representation.",
+            "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 8",
+            "sm2_metadata": {
+              "repetitions": 0,
+              "interval_days": 1,
+              "ease_factor": 2.5
+            }
+          }
+        ]
       }
-    },
-    {
-      "card_id": 3,
-      "level": "Basic Recall",
-      "front_question": "What is the technical term for the y-coordinate of a point on the coordinate plane?",
-      "phonetic_guide": "[Phonetic Guide: What is the technical ter...]",
-      "back_answer": "The y-coordinate is called the ordinate, representing the signed perpendicular distance of the point from the x-axis.",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Basic Recall in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
-      }
-    },
-    {
-      "card_id": 4,
-      "level": "Conceptual Understanding",
-      "front_question": "How do sign conventions differ across the four quadrants of a Cartesian plane?",
-      "phonetic_guide": "[Phonetic Guide: How do sign conventions d...]",
-      "back_answer": "Quadrant I: (+, +); Quadrant II: (-, +); Quadrant III: (-, -); Quadrant IV: (+, -).",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Conceptual Understanding in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
-      }
-    },
-    {
-      "card_id": 5,
-      "level": "Conceptual Understanding",
-      "front_question": "What general coordinate form represents any point lying directly on (a) the x-axis and (b) the y-axis?",
-      "phonetic_guide": "[Phonetic Guide: What general coordinate f...]",
-      "back_answer": "(a) Any point on the x-axis has ordinate y = 0, expressed as (x, 0). (b) Any point on the y-axis has abscissa x = 0, expressed as (0, y).",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Conceptual Understanding in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
-      }
-    },
-    {
-      "card_id": 6,
-      "level": "Experimental/Observational Insights",
-      "front_question": "How did ancient town planning in Harappa and Mohenjo-daro reflect early coordinate principles?",
-      "phonetic_guide": "[Phonetic Guide: How did ancient town plan...]",
-      "back_answer": "Urban structures were laid out on orthogonal grid systems with streets intersecting at right angles, providing a physical reference frame for location layout.",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Experimental/Observational Insights in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
-      }
-    },
-    {
-      "card_id": 7,
-      "level": "Scientific Reasoning/Application",
-      "front_question": "State the Baudhāyana-Pythagoras distance formula between two points (x1, y1) and (x2, y2).",
-      "phonetic_guide": "[Phonetic Guide: State the Baudhāyana-Pyth...]",
-      "back_answer": "The Euclidean distance d is given by d = sqrt((x2 - x1)^2 + (y2 - y1)^2), derived from the hypotenuse of the right triangle formed by horizontal |x2 - x1| and vertical |y2 - y1| lengths.",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
-      }
-    },
-    {
-      "card_id": 8,
-      "level": "Scientific Reasoning/Application",
-      "front_question": "What are the coordinate reflection rules for a point (x, y) reflected across (a) the x-axis and (b) the y-axis?",
-      "phonetic_guide": "[Phonetic Guide: What are the coordinate r...]",
-      "back_answer": "(a) Reflection across the x-axis negates the y-coordinate: (x, -y). (b) Reflection across the y-axis negates the x-coordinate: (-x, y).",
-      "mnemonic_key": "Visualize key terms and geometric representation.",
-      "graphic_description": "Visual icon for Scientific Reasoning/Application in Chapter 1",
-      "sm2_metadata": {
-        "repetitions": 0,
-        "interval_days": 1,
-        "ease_factor": 2.5
-      }
-    }
-  ]
+    ]
+  },
+  "grade": "9",
+  "chapter_id": "G9-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths I Chapter 1"
 }

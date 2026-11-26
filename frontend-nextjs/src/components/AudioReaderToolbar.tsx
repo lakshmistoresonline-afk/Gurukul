@@ -19,6 +19,7 @@ export default function AudioReaderToolbar({
 }: AudioToolbarProps) {
   const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
   const [rate, setRate] = useState<number>(1.0);
+  const [pitch, setPitch] = useState<number>(1.0);
   const [ambient, setAmbient] = useState<'off' | 'rain' | 'forest'>('off');
   const [fontSize, setFontSize] = useState<'normal' | 'large' | 'xlarge'>('normal');
   const [themeMode, setThemeMode] = useState<'dark' | 'sepia' | 'contrast'>('dark');
@@ -106,6 +107,7 @@ export default function AudioReaderToolbar({
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(textToRead);
       utterance.rate = rate;
+      utterance.pitch = pitch;
       utterance.onend = () => setIsSpeaking(false);
       utterance.onerror = () => setIsSpeaking(false);
       window.speechSynthesis.speak(utterance);
@@ -155,13 +157,41 @@ export default function AudioReaderToolbar({
         {/* Speed Controls */}
         <div className="flex items-center gap-1 bg-white px-2.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 shadow-xs">
           <span>Speed:</span>
-          {[0.75, 1.0, 1.25].map((r) => (
+          {[0.75, 1.0, 1.25, 1.5, 2.0].map((r) => (
             <button
               key={r}
               onClick={() => changeRate(r)}
               className={`px-2 py-0.5 rounded-lg text-[11px] font-extrabold transition-all ${rate === r ? 'bg-indigo-600 text-white shadow-xs' : 'hover:bg-slate-100 text-slate-600'}`}
             >
               {r}x
+            </button>
+          ))}
+        </div>
+
+        {/* Voice Pitch Controls */}
+        <div className="flex items-center gap-1 bg-white px-2.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 shadow-xs">
+          <span>Pitch:</span>
+          {[
+            { label: 'Low', val: 0.8 },
+            { label: 'Natural', val: 1.0 },
+            { label: 'Energetic', val: 1.2 }
+          ].map((p) => (
+            <button
+              key={p.label}
+              onClick={() => {
+                setPitch(p.val);
+                if (isSpeaking && 'speechSynthesis' in window) {
+                  window.speechSynthesis.cancel();
+                  const utterance = new SpeechSynthesisUtterance(textToRead);
+                  utterance.rate = rate;
+                  utterance.pitch = p.val;
+                  utterance.onend = () => setIsSpeaking(false);
+                  window.speechSynthesis.speak(utterance);
+                }
+              }}
+              className={`px-2 py-0.5 rounded-lg text-[11px] font-extrabold transition-all cursor-pointer ${pitch === p.val ? 'bg-teal-600 text-white shadow-xs' : 'hover:bg-slate-100 text-slate-600'}`}
+            >
+              {p.label}
             </button>
           ))}
         </div>

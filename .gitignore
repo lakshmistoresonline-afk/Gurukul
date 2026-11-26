@@ -7,9 +7,11 @@
 .env.*
 !.env.example
 
-# Raw and Processed Content
+# Raw Content
 Contents/
-ProcessedContent/
+
+# Track backend/ProcessedContent for Cloud Deployment & GitHub Actions
+!backend/ProcessedContent/
 
 # Credentials / private keys
 credentials.json

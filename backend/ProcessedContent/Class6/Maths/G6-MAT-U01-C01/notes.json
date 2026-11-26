@@ -1,161 +1,1766 @@
 {
-  "chapter_number": 1,
-  "chapter_title": "Patterns in Mathematics",
-  "section_1_complete_textbook_notes": {
-    "chapter_overview": "This chapter establishes mathematics as the fundamental science and creative art of discovering, formalizing, and proving patterns in numbers and spatial figures. Aligned with NCERT's Ganita Prakash framework authored under the guidance of Fields Medalist Prof. Manjul Bhargava, the chapter transitions students from intuitive observation to rigorous mathematical deduction. It encompasses natural number sequences (counting numbers, even/odd series, square numbers, triangular numbers, cubic numbers, powers of 2 and 3, and the Virahānka/Fibonacci sequence). Through visual representations like dot grids, equilateral triangular arrays, concentric L-shaped gnomon partitions, 3D cubic blocks, and repeating geometric polygons, the chapter proves deep algebraic identities visually. Key theorems proved include why the sum of consecutive odd numbers starting from 1 equals a square number (1 + 3 + 5 + ... + (2n-1) = n^2), how symmetrical up-and-down counting sums yield square values (1 + 2 + ... + n + ... + 2 + 1 = n^2), and how summing adjacent triangular numbers forms square grids (T_n + T_{n-1} = n^2). Furthermore, classroom dialogue simulations and historical context (such as Acharya Virahānka's prosody analysis of short and long poetic syllables) connect abstract mathematical logic with real-world language, architecture, and nature.",
-    "detailed_sections": [
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_73e610caf72ebdbb",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_6",
+    "class_level": 6
+  },
+  "subject": "Maths",
+  "artifact": {
+    "artifact_type": "notes",
+    "source_file_name": "03-Notes-v2.json",
+    "source_relative_path": "Contents/Class 6/Maths/Source Files/03-Notes-v2.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "591d47b366fba918e2bcabc0ba0e57d897787a02a66fb919ef64c1e18fd63db0",
+    "source_semantic_sha256": "126cab4a5bc6fa0733ba0e160b32b612ecd18c5d61b1c582f7fe928ab60283ae",
+    "source_byte_length": 57372,
+    "source_encoding": "utf-8",
+    "source_field_count": 520,
+    "field_inventory": [
+      "$.subject",
+      "$.document_type",
+      "$.chapters",
+      "$.chapters[0].chapter_number",
+      "$.chapters[0].chapter_title",
+      "$.chapters[0].section_1_complete_textbook_notes",
+      "$.chapters[0].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].term",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].formal_definition",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].section_number_title",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].full_textbook_explanation",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions[0].term",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions[0].formal_definition",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions[0].example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].name",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].variable_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].direct_example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].section_number_title",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].full_textbook_explanation",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].mathematical_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].mathematical_definitions[0].term",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].mathematical_definitions[0].formal_definition",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].mathematical_definitions[0].example",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].formulas_and_properties",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].formulas_and_properties[0].name",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].formulas_and_properties[0].variable_definitions",
+      "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].formulas_and_properties[0].direct_example",
+      "$.chapters[0].section_1_complete_textbook_notes.prosody_and_fractal_mastery",
+      "$.chapters[0].section_1_complete_textbook_notes.prosody_and_fractal_mastery.concept",
+      "$.chapters[0].section_1_complete_textbook_notes.prosody_and_fractal_mastery.explanation",
+      "$.chapters[0].section_2_step_by_step_algorithms",
+      "$.chapters[0].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[0].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[0].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[0].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[0].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[0].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[0].section_2_step_by_step_algorithms[1].method_name",
+      "$.chapters[0].section_2_step_by_step_algorithms[1].step_by_step_instructions",
+      "$.chapters[0].section_2_step_by_step_algorithms[1].model_textbook_example",
+      "$.chapters[0].section_2_step_by_step_algorithms[1].model_textbook_example.problem",
+      "$.chapters[0].section_2_step_by_step_algorithms[1].model_textbook_example.working_steps",
+      "$.chapters[0].section_2_step_by_step_algorithms[1].model_textbook_example.final_answer",
+      "$.chapters[0].section_3_in_text_boxes_and_try_these",
+      "$.chapters[0].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[0].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[0].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[0].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[1].exercise_number",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[1].question_number",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[1].question_text",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[1].solution_steps",
+      "$.chapters[0].section_4_complete_textbook_exercise_solutions[1].final_answer_with_units",
+      "$.chapters[1].chapter_number",
+      "$.chapters[1].chapter_title",
+      "$.chapters[1].section_1_complete_textbook_notes",
+      "$.chapters[1].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].term",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].formal_definition",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].example",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].section_number_title",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].full_textbook_explanation",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions[0].term",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions[0].formal_definition",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].mathematical_definitions[0].example",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].name",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].variable_definitions",
+      "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0].direct_example",
+      "$.chapters[1].section_1_complete_textbook_notes.angle_relations_mastery",
+      "$.chapters[1].section_1_complete_textbook_notes.angle_relations_mastery.concept",
+      "$.chapters[1].section_1_complete_textbook_notes.angle_relations_mastery.explanation",
+      "$.chapters[1].section_2_step_by_step_algorithms",
+      "$.chapters[1].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[1].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[1].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[1].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[1].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[1].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[1].section_3_in_text_boxes_and_try_these",
+      "$.chapters[1].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[1].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[1].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[1].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[1].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[1].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[1].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[1].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[1].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[1].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[2].chapter_number",
+      "$.chapters[2].chapter_title",
+      "$.chapters[2].section_1_complete_textbook_notes",
+      "$.chapters[2].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[2].section_1_complete_textbook_notes.digital_root_mastery",
+      "$.chapters[2].section_1_complete_textbook_notes.digital_root_mastery.concept",
+      "$.chapters[2].section_1_complete_textbook_notes.digital_root_mastery.explanation",
+      "$.chapters[2].section_2_step_by_step_algorithms",
+      "$.chapters[2].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[2].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[2].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[2].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[2].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[2].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[2].section_3_in_text_boxes_and_try_these",
+      "$.chapters[2].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[2].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[2].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[2].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[2].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[2].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[2].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[2].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[2].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[2].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[3].chapter_number",
+      "$.chapters[3].chapter_title",
+      "$.chapters[3].section_1_complete_textbook_notes",
+      "$.chapters[3].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].term",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].formal_definition",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].example",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[3].section_1_complete_textbook_notes.axis_truncation_mastery",
+      "$.chapters[3].section_1_complete_textbook_notes.axis_truncation_mastery.concept",
+      "$.chapters[3].section_1_complete_textbook_notes.axis_truncation_mastery.explanation",
+      "$.chapters[3].section_2_step_by_step_algorithms",
+      "$.chapters[3].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[3].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[3].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[3].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[3].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[3].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[3].section_3_in_text_boxes_and_try_these",
+      "$.chapters[3].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[3].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[3].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[3].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[3].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[3].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[3].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[3].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[3].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[3].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[4].chapter_number",
+      "$.chapters[4].chapter_title",
+      "$.chapters[4].section_1_complete_textbook_notes",
+      "$.chapters[4].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].term",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].formal_definition",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].example",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[4].section_1_complete_textbook_notes.fundamental_theorem_mastery",
+      "$.chapters[4].section_1_complete_textbook_notes.fundamental_theorem_mastery.concept",
+      "$.chapters[4].section_1_complete_textbook_notes.fundamental_theorem_mastery.explanation",
+      "$.chapters[4].section_2_step_by_step_algorithms",
+      "$.chapters[4].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[4].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[4].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[4].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[4].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[4].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[4].section_3_in_text_boxes_and_try_these",
+      "$.chapters[4].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[4].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[4].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[4].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[4].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[4].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[4].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[4].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[4].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[4].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[5].chapter_number",
+      "$.chapters[5].chapter_title",
+      "$.chapters[5].section_1_complete_textbook_notes",
+      "$.chapters[5].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[5].section_1_complete_textbook_notes.grid_area_mastery",
+      "$.chapters[5].section_1_complete_textbook_notes.grid_area_mastery.concept",
+      "$.chapters[5].section_1_complete_textbook_notes.grid_area_mastery.explanation",
+      "$.chapters[5].section_2_step_by_step_algorithms",
+      "$.chapters[5].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[5].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[5].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[5].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[5].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[5].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[5].section_3_in_text_boxes_and_try_these",
+      "$.chapters[5].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[5].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[5].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[5].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[5].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[5].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[5].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[5].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[5].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[5].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[6].chapter_number",
+      "$.chapters[6].chapter_title",
+      "$.chapters[6].section_1_complete_textbook_notes",
+      "$.chapters[6].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[6].section_1_complete_textbook_notes.fraction_scalar_mastery",
+      "$.chapters[6].section_1_complete_textbook_notes.fraction_scalar_mastery.concept",
+      "$.chapters[6].section_1_complete_textbook_notes.fraction_scalar_mastery.explanation",
+      "$.chapters[6].section_2_step_by_step_algorithms",
+      "$.chapters[6].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[6].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[6].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[6].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[6].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[6].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[6].section_3_in_text_boxes_and_try_these",
+      "$.chapters[6].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[6].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[6].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[6].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[6].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[6].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[6].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[6].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[6].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[6].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[7].chapter_number",
+      "$.chapters[7].chapter_title",
+      "$.chapters[7].section_1_complete_textbook_notes",
+      "$.chapters[7].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[7].section_1_complete_textbook_notes.bisector_construction_mastery",
+      "$.chapters[7].section_1_complete_textbook_notes.bisector_construction_mastery.concept",
+      "$.chapters[7].section_1_complete_textbook_notes.bisector_construction_mastery.explanation",
+      "$.chapters[7].section_2_step_by_step_algorithms",
+      "$.chapters[7].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[7].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[7].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[7].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[7].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[7].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[7].section_3_in_text_boxes_and_try_these",
+      "$.chapters[7].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[7].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[7].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[7].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[7].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[7].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[7].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[7].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[7].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[7].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[8].chapter_number",
+      "$.chapters[8].chapter_title",
+      "$.chapters[8].section_1_complete_textbook_notes",
+      "$.chapters[8].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].section_number_title",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].full_textbook_explanation",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].term",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].formal_definition",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].mathematical_definitions[0].example",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].name",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].variable_definitions",
+      "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0].direct_example",
+      "$.chapters[8].section_1_complete_textbook_notes.asymmetric_rotation_mastery",
+      "$.chapters[8].section_1_complete_textbook_notes.asymmetric_rotation_mastery.concept",
+      "$.chapters[8].section_1_complete_textbook_notes.asymmetric_rotation_mastery.explanation",
+      "$.chapters[8].section_2_step_by_step_algorithms",
+      "$.chapters[8].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[8].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[8].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[8].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[8].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[8].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[8].section_3_in_text_boxes_and_try_these",
+      "$.chapters[8].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[8].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[8].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[8].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[8].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[8].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[8].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[8].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[8].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[8].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units",
+      "$.chapters[9].chapter_number",
+      "$.chapters[9].chapter_title",
+      "$.chapters[9].section_1_complete_textbook_notes",
+      "$.chapters[9].section_1_complete_textbook_notes.chapter_overview",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].section_number_title",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].full_textbook_explanation",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].term",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].formal_definition",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[0].example",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].term",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].formal_definition",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].mathematical_definitions[1].example",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].name",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].statement_or_expression",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].variable_definitions",
+      "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0].direct_example",
+      "$.chapters[9].section_1_complete_textbook_notes.absolute_value_mastery",
+      "$.chapters[9].section_1_complete_textbook_notes.absolute_value_mastery.concept",
+      "$.chapters[9].section_1_complete_textbook_notes.absolute_value_mastery.explanation",
+      "$.chapters[9].section_2_step_by_step_algorithms",
+      "$.chapters[9].section_2_step_by_step_algorithms[0].method_name",
+      "$.chapters[9].section_2_step_by_step_algorithms[0].step_by_step_instructions",
+      "$.chapters[9].section_2_step_by_step_algorithms[0].model_textbook_example",
+      "$.chapters[9].section_2_step_by_step_algorithms[0].model_textbook_example.problem",
+      "$.chapters[9].section_2_step_by_step_algorithms[0].model_textbook_example.working_steps",
+      "$.chapters[9].section_2_step_by_step_algorithms[0].model_textbook_example.final_answer",
+      "$.chapters[9].section_3_in_text_boxes_and_try_these",
+      "$.chapters[9].section_3_in_text_boxes_and_try_these[0].box_type",
+      "$.chapters[9].section_3_in_text_boxes_and_try_these[0].location_or_title",
+      "$.chapters[9].section_3_in_text_boxes_and_try_these[0].question_text",
+      "$.chapters[9].section_3_in_text_boxes_and_try_these[0].complete_solution",
+      "$.chapters[9].section_4_complete_textbook_exercise_solutions",
+      "$.chapters[9].section_4_complete_textbook_exercise_solutions[0].exercise_number",
+      "$.chapters[9].section_4_complete_textbook_exercise_solutions[0].question_number",
+      "$.chapters[9].section_4_complete_textbook_exercise_solutions[0].question_text",
+      "$.chapters[9].section_4_complete_textbook_exercise_solutions[0].solution_steps",
+      "$.chapters[9].section_4_complete_textbook_exercise_solutions[0].final_answer_with_units"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [
       {
-        "section_number_title": "1.1 Patterns All Around Us & Mathematics as Art and Science",
-        "full_textbook_explanation": "Mathematics is the systematic study of patterns and the underlying structural reasons explaining why they occur. Patterns manifest everywhere in daily life: financial interest cycles, calendar dates, floor tilings, musical rhythms, and biological structures. Recognizing patterns empowers students to generalize rules and predict future terms.\n\n[Classroom Instructional Dialogue Simulation: The Magic of Odd Numbers]\nTeacher (Ms. Ananya): 'Class, look at these dot square grids on the board. A 1x1 grid has 1 dot. If I add an L-shaped layer of 3 red dots around it, what shape do we get?'\nRohan: 'A larger 2x2 square grid with 4 dots!'\nTeacher: 'Correct! Now, if I add another L-shaped layer of 5 green dots around the 2x2 square, what happens?'\nPriya: 'It becomes a 3x3 square with 9 dots! Wow, 1 + 3 + 5 = 9, which is 3 squared!'\nTeacher: 'Precisely. Each added L-shaped layer—called a gnomon—adds the next consecutive odd number of dots, building the next larger square grid!'\n\nLine-by-Line Analytical Breakdown:\n1. Observation: Every square grid of size n x n can be decomposed into n concentric L-shaped layers.\n2. Layer 1 contains 1 dot; Layer 2 contains 3 dots; Layer 3 contains 5 dots; ... Layer n contains (2n - 1) dots.\n3. Total dots = Area of square = n x n = n^2. Thus, 1 + 3 + 5 + ... + (2n - 1) = n^2.",
-        "mathematical_definitions": [
-          {
-            "term": "Pattern",
-            "formal_definition": "A discernible regularity, sequence, or spatial arrangement governed by an explicit mathematical rule.",
-            "example": "The sequence 2, 4, 6, 8, 10... where every term increases by adding 2 to the previous term."
-          },
-          {
-            "term": "Gnomon",
-            "formal_definition": "An L-shaped geometric border added to a square grid to enlarge it to the next higher integer square grid.",
-            "example": "Adding an L-shape of 7 dots to a 3x3 square grid (9 dots) yields a 4x4 square grid (16 dots)."
-          }
-        ],
-        "formulas_and_properties": [
-          {
-            "name": "Sequence Term Rule",
-            "statement_or_expression": "T_n = f(n)",
-            "variable_definitions": "T_n = value of the n-th term; n = positive integer position index (1, 2, 3...)",
-            "direct_example": "For even numbers, T_n = 2n; the 6th even number is T_6 = 2(6) = 12."
-          }
-        ]
+        "source_path": "$.chapters[0]",
+        "source_title_field": "chapter_title",
+        "source_title": "Patterns in Mathematics",
+        "source_number_field": "chapter_number",
+        "source_number": 1
       },
       {
-        "section_number_title": "1.2 Number Sequences and Rules",
-        "full_textbook_explanation": "A number sequence is an ordered list of numbers generated according to a specific term-to-term or position-to-term rule. Key sequences explored in this section include:\n1. Counting Numbers: 1, 2, 3, 4, 5... (Rule: Add 1 to previous term; T_n = n)\n2. Even Numbers: 2, 4, 6, 8, 10... (Rule: Add 2 to previous term; T_n = 2n)\n3. Odd Numbers: 1, 3, 5, 7, 9... (Rule: Add 2 to previous term; T_n = 2n - 1)\n4. Powers of 2: 1, 2, 4, 8, 16, 32... (Rule: Multiply previous term by 2; P_n = 2^(n-1))\n5. Powers of 3: 1, 3, 9, 27, 81... (Rule: Multiply previous term by 3; P_n = 3^(n-1))\n6. Virahānka (Fibonacci) Sequence: 1, 2, 3, 5, 8, 13, 21, 34... (Rule: V_1=1, V_2=2, V_n = V_{n-1} + V_{n-2} for n >= 3).\n\nHistorical Context Callout:\nAcharya Virahānka (c. 600–800 CE) discovered this sequence while analyzing poetic meter in Sanskrit prosody, counting the total ways to form beats using short syllables (1 beat) and long syllables (2 beats).",
-        "mathematical_definitions": [
-          {
-            "term": "Virahānka Sequence",
-            "formal_definition": "A recurrence sequence where the first two terms are 1 and 2, and every subsequent term is the sum of the immediately preceding two terms.",
-            "example": "1, 2, 3, 5, 8, 13, 21, 34, 55..."
-          }
-        ],
-        "formulas_and_properties": [
-          {
-            "name": "Virahānka Recurrence Identity",
-            "statement_or_expression": "V_n = V_{n-1} + V_{n-2} (with V_1 = 1, V_2 = 2)",
-            "variable_definitions": "V_n = n-th Virahānka number",
-            "direct_example": "V_7 = V_6 + V_5 = 13 + 8 = 21."
-          }
-        ]
+        "source_path": "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Sequence Term Rule",
+        "source_number_field": null,
+        "source_number": null
       },
       {
-        "section_number_title": "1.3 Visualising Number Sequences (Dot Arrays and Shapes)",
-        "full_textbook_explanation": "Numbers acquire tangible meaning when represented as geometric dot arrays:\n- Triangular Numbers (1, 3, 6, 10, 15...): Dots arranged in equilateral triangles. T_n represents the sum of the first n natural numbers: T_n = 1 + 2 + ... + n = n(n+1)/2.\n- Square Numbers (1, 4, 9, 16, 25...): Dots arranged in n x n square grids. S_n = n^2.\n- Cube Numbers (1, 8, 27, 64...): 3D cubic block arrangements of size n x n x n. C_n = n^3.\n- Hexagonal Numbers (1, 7, 19, 37...): Concentric regular hexagonal dot rings where the n-th layer adds 6(n-1) dots.",
-        "mathematical_definitions": [
-          {
-            "term": "Triangular Number",
-            "formal_definition": "A number representable as an equilateral triangular dot pattern, equal to the sum of consecutive integers from 1 to n.",
-            "example": "T_4 = 1 + 2 + 3 + 4 = 10."
-          }
-        ],
-        "formulas_and_properties": [
-          {
-            "name": "n-th Triangular Number Formula",
-            "statement_or_expression": "T_n = n(n + 1) / 2",
-            "variable_definitions": "T_n = n-th triangular number; n = positive integer",
-            "direct_example": "T_5 = 5(6)/2 = 15."
-          }
-        ]
+        "source_path": "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Virahānka Recurrence Identity",
+        "source_number_field": null,
+        "source_number": null
       },
       {
-        "section_number_title": "1.4 Relations among Number Sequences & Algebraic Visual Proofs",
-        "full_textbook_explanation": "Connecting different numerical sequences reveals fundamental algebraic identities:\n1. Sum of Odd Numbers Identity: 1 + 3 + 5 + ... + (2n-1) = n^2.\n2. Symmetrical Up-and-Down Counting Sum: 1 + 2 + ... + n + ... + 2 + 1 = n^2. (Proof: Split into two triangular numbers T_n + T_{n-1} = n^2).\n3. Sum of Consecutive Triangular Numbers: T_n + T_{n-1} = n^2. Two adjacent triangular dot arrays fit together along their hypotenuse to form an n x n square grid.",
-        "mathematical_definitions": [
-          {
-            "term": "Symmetrical Counting Sum",
-            "formal_definition": "A sequence that increments by 1 up to a central peak value n and decrements symmetrically back to 1, summing to n^2.",
-            "example": "1 + 2 + 3 + 4 + 3 + 2 + 1 = 4^2 = 16."
-          }
-        ],
-        "formulas_and_properties": [
-          {
-            "name": "Consecutive Triangular Sum Property",
-            "statement_or_expression": "T_n + T_{n-1} = n^2",
-            "variable_definitions": "T_n, T_{n-1} = adjacent triangular numbers",
-            "direct_example": "T_4 (10) + T_3 (6) = 16 = 4^2."
-          }
-        ]
+        "source_path": "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "n-th Triangular Number Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[0].section_1_complete_textbook_notes.detailed_sections[3].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Consecutive Triangular Sum Property",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1]",
+        "source_title_field": "chapter_title",
+        "source_title": "Lines and Angles",
+        "source_number_field": "chapter_number",
+        "source_number": 2
+      },
+      {
+        "source_path": "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Uniqueness of Line through Two Points",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Fractional Turn to Degree Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[1].section_1_complete_textbook_notes.detailed_sections[2].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Angle Classification Bounds",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2]",
+        "source_title_field": "chapter_title",
+        "source_title": "Number Play",
+        "source_number_field": "chapter_number",
+        "source_number": 3
+      },
+      {
+        "source_path": "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "N-Digit Number Count Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[2].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Collatz Transformation Function",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3]",
+        "source_title_field": "chapter_title",
+        "source_title": "Data Handling and Presentation",
+        "source_number_field": "chapter_number",
+        "source_number": 4
+      },
+      {
+        "source_path": "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Tally Bundle Value",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[3].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Bar Height Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4]",
+        "source_title_field": "chapter_title",
+        "source_title": "Prime Time",
+        "source_number_field": "chapter_number",
+        "source_number": 5
+      },
+      {
+        "source_path": "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "HCF and LCM Relation Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[4].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Divisibility Rule for 3 and 9",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5]",
+        "source_title_field": "chapter_title",
+        "source_title": "Perimeter and Area",
+        "source_number_field": "chapter_number",
+        "source_number": 6
+      },
+      {
+        "source_path": "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Perimeter of Rectangle",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[5].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Area of Rectangle",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6]",
+        "source_title_field": "chapter_title",
+        "source_title": "Fractions",
+        "source_number_field": "chapter_number",
+        "source_number": 7
+      },
+      {
+        "source_path": "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Unit Fraction Ordering Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[6].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Brahmagupta's Addition Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[7]",
+        "source_title_field": "chapter_title",
+        "source_title": "Playing with Constructions",
+        "source_number_field": "chapter_number",
+        "source_number": 8
+      },
+      {
+        "source_path": "$.chapters[7].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Diameter Radius Relation",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[8]",
+        "source_title_field": "chapter_title",
+        "source_title": "Symmetry",
+        "source_number_field": "chapter_number",
+        "source_number": 9
+      },
+      {
+        "source_path": "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Regular Polygon Symmetry Rule",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[8].section_1_complete_textbook_notes.detailed_sections[1].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Smallest Rotational Angle Formula",
+        "source_number_field": null,
+        "source_number": null
+      },
+      {
+        "source_path": "$.chapters[9]",
+        "source_title_field": "chapter_title",
+        "source_title": "The Other Side of Zero",
+        "source_number_field": "chapter_number",
+        "source_number": 10
+      },
+      {
+        "source_path": "$.chapters[9].section_1_complete_textbook_notes.detailed_sections[0].formulas_and_properties[0]",
+        "source_title_field": "name",
+        "source_title": "Brahmagupta's Subtraction Rule",
+        "source_number_field": null,
+        "source_number": null
       }
     ],
-    "prosody_and_fractal_mastery": {
-      "concept": "Virahanka Poetic Prosody & Koch Snowflake Limits",
-      "explanation": "Acharya Virahanka introduced Fibonacci numbers in 600 CE to count combinations of short (1 beat) and long (2 beats) Sanskrit syllables. For a meter of length n, the number of combinations is V_n. In Koch Snowflake fractals, perimeter grows infinitely P_n = P_0 * (4/3)^n while area converges to (8/5)*A_0."
-    }
+    "chapter_candidate_count": 31,
+    "normalization_status": "indexed_not_content_rewritten"
   },
-  "section_2_step_by_step_algorithms": [
-    {
-      "method_name": "Summing First n Consecutive Odd Numbers",
-      "step_by_step_instructions": [
-        "Step 1: Ensure the odd number sequence starts at 1 and contains no skipped consecutive odd integers.",
-        "Step 2: Count the total number of terms, n. (If given the last term L, calculate n = (L + 1) / 2).",
-        "Step 3: Square the count of terms: Sum = n^2."
-      ],
-      "model_textbook_example": {
-        "problem": "Find the sum of 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 without column addition.",
-        "working_steps": [
-          "Step 1: Verify sequence starts at 1 and is consecutive odd numbers.",
-          "Step 2: Count terms: 10 terms (or n = (19 + 1)/2 = 10).",
-          "Step 3: Apply formula Sum = n^2 = 10^2 = 100."
+  "source_data": {
+    "subject": "Class 6 Mathematics",
+    "document_type": "Full Chapter Notes & Solved Exercises (Enriched & Unabridged)",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "Patterns in Mathematics",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter establishes mathematics as the fundamental science and creative art of discovering, formalizing, and proving patterns in numbers and spatial figures. Aligned with NCERT's Ganita Prakash framework authored under the guidance of Fields Medalist Prof. Manjul Bhargava, the chapter transitions students from intuitive observation to rigorous mathematical deduction. It encompasses natural number sequences (counting numbers, even/odd series, square numbers, triangular numbers, cubic numbers, powers of 2 and 3, and the Virahānka/Fibonacci sequence). Through visual representations like dot grids, equilateral triangular arrays, concentric L-shaped gnomon partitions, 3D cubic blocks, and repeating geometric polygons, the chapter proves deep algebraic identities visually. Key theorems proved include why the sum of consecutive odd numbers starting from 1 equals a square number (1 + 3 + 5 + ... + (2n-1) = n^2), how symmetrical up-and-down counting sums yield square values (1 + 2 + ... + n + ... + 2 + 1 = n^2), and how summing adjacent triangular numbers forms square grids (T_n + T_{n-1} = n^2). Furthermore, classroom dialogue simulations and historical context (such as Acharya Virahānka's prosody analysis of short and long poetic syllables) connect abstract mathematical logic with real-world language, architecture, and nature.",
+          "detailed_sections": [
+            {
+              "section_number_title": "1.1 Patterns All Around Us & Mathematics as Art and Science",
+              "full_textbook_explanation": "Mathematics is the systematic study of patterns and the underlying structural reasons explaining why they occur. Patterns manifest everywhere in daily life: financial interest cycles, calendar dates, floor tilings, musical rhythms, and biological structures. Recognizing patterns empowers students to generalize rules and predict future terms.\n\n[Classroom Instructional Dialogue Simulation: The Magic of Odd Numbers]\nTeacher (Ms. Ananya): 'Class, look at these dot square grids on the board. A 1x1 grid has 1 dot. If I add an L-shaped layer of 3 red dots around it, what shape do we get?'\nRohan: 'A larger 2x2 square grid with 4 dots!'\nTeacher: 'Correct! Now, if I add another L-shaped layer of 5 green dots around the 2x2 square, what happens?'\nPriya: 'It becomes a 3x3 square with 9 dots! Wow, 1 + 3 + 5 = 9, which is 3 squared!'\nTeacher: 'Precisely. Each added L-shaped layer—called a gnomon—adds the next consecutive odd number of dots, building the next larger square grid!'\n\nLine-by-Line Analytical Breakdown:\n1. Observation: Every square grid of size n x n can be decomposed into n concentric L-shaped layers.\n2. Layer 1 contains 1 dot; Layer 2 contains 3 dots; Layer 3 contains 5 dots; ... Layer n contains (2n - 1) dots.\n3. Total dots = Area of square = n x n = n^2. Thus, 1 + 3 + 5 + ... + (2n - 1) = n^2.",
+              "mathematical_definitions": [
+                {
+                  "term": "Pattern",
+                  "formal_definition": "A discernible regularity, sequence, or spatial arrangement governed by an explicit mathematical rule.",
+                  "example": "The sequence 2, 4, 6, 8, 10... where every term increases by adding 2 to the previous term."
+                },
+                {
+                  "term": "Gnomon",
+                  "formal_definition": "An L-shaped geometric border added to a square grid to enlarge it to the next higher integer square grid.",
+                  "example": "Adding an L-shape of 7 dots to a 3x3 square grid (9 dots) yields a 4x4 square grid (16 dots)."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Sequence Term Rule",
+                  "statement_or_expression": "T_n = f(n)",
+                  "variable_definitions": "T_n = value of the n-th term; n = positive integer position index (1, 2, 3...)",
+                  "direct_example": "For even numbers, T_n = 2n; the 6th even number is T_6 = 2(6) = 12."
+                }
+              ]
+            },
+            {
+              "section_number_title": "1.2 Number Sequences and Rules",
+              "full_textbook_explanation": "A number sequence is an ordered list of numbers generated according to a specific term-to-term or position-to-term rule. Key sequences explored in this section include:\n1. Counting Numbers: 1, 2, 3, 4, 5... (Rule: Add 1 to previous term; T_n = n)\n2. Even Numbers: 2, 4, 6, 8, 10... (Rule: Add 2 to previous term; T_n = 2n)\n3. Odd Numbers: 1, 3, 5, 7, 9... (Rule: Add 2 to previous term; T_n = 2n - 1)\n4. Powers of 2: 1, 2, 4, 8, 16, 32... (Rule: Multiply previous term by 2; P_n = 2^(n-1))\n5. Powers of 3: 1, 3, 9, 27, 81... (Rule: Multiply previous term by 3; P_n = 3^(n-1))\n6. Virahānka (Fibonacci) Sequence: 1, 2, 3, 5, 8, 13, 21, 34... (Rule: V_1=1, V_2=2, V_n = V_{n-1} + V_{n-2} for n >= 3).\n\nHistorical Context Callout:\nAcharya Virahānka (c. 600–800 CE) discovered this sequence while analyzing poetic meter in Sanskrit prosody, counting the total ways to form beats using short syllables (1 beat) and long syllables (2 beats).",
+              "mathematical_definitions": [
+                {
+                  "term": "Virahānka Sequence",
+                  "formal_definition": "A recurrence sequence where the first two terms are 1 and 2, and every subsequent term is the sum of the immediately preceding two terms.",
+                  "example": "1, 2, 3, 5, 8, 13, 21, 34, 55..."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Virahānka Recurrence Identity",
+                  "statement_or_expression": "V_n = V_{n-1} + V_{n-2} (with V_1 = 1, V_2 = 2)",
+                  "variable_definitions": "V_n = n-th Virahānka number",
+                  "direct_example": "V_7 = V_6 + V_5 = 13 + 8 = 21."
+                }
+              ]
+            },
+            {
+              "section_number_title": "1.3 Visualising Number Sequences (Dot Arrays and Shapes)",
+              "full_textbook_explanation": "Numbers acquire tangible meaning when represented as geometric dot arrays:\n- Triangular Numbers (1, 3, 6, 10, 15...): Dots arranged in equilateral triangles. T_n represents the sum of the first n natural numbers: T_n = 1 + 2 + ... + n = n(n+1)/2.\n- Square Numbers (1, 4, 9, 16, 25...): Dots arranged in n x n square grids. S_n = n^2.\n- Cube Numbers (1, 8, 27, 64...): 3D cubic block arrangements of size n x n x n. C_n = n^3.\n- Hexagonal Numbers (1, 7, 19, 37...): Concentric regular hexagonal dot rings where the n-th layer adds 6(n-1) dots.",
+              "mathematical_definitions": [
+                {
+                  "term": "Triangular Number",
+                  "formal_definition": "A number representable as an equilateral triangular dot pattern, equal to the sum of consecutive integers from 1 to n.",
+                  "example": "T_4 = 1 + 2 + 3 + 4 = 10."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "n-th Triangular Number Formula",
+                  "statement_or_expression": "T_n = n(n + 1) / 2",
+                  "variable_definitions": "T_n = n-th triangular number; n = positive integer",
+                  "direct_example": "T_5 = 5(6)/2 = 15."
+                }
+              ]
+            },
+            {
+              "section_number_title": "1.4 Relations among Number Sequences & Algebraic Visual Proofs",
+              "full_textbook_explanation": "Connecting different numerical sequences reveals fundamental algebraic identities:\n1. Sum of Odd Numbers Identity: 1 + 3 + 5 + ... + (2n-1) = n^2.\n2. Symmetrical Up-and-Down Counting Sum: 1 + 2 + ... + n + ... + 2 + 1 = n^2. (Proof: Split into two triangular numbers T_n + T_{n-1} = n^2).\n3. Sum of Consecutive Triangular Numbers: T_n + T_{n-1} = n^2. Two adjacent triangular dot arrays fit together along their hypotenuse to form an n x n square grid.",
+              "mathematical_definitions": [
+                {
+                  "term": "Symmetrical Counting Sum",
+                  "formal_definition": "A sequence that increments by 1 up to a central peak value n and decrements symmetrically back to 1, summing to n^2.",
+                  "example": "1 + 2 + 3 + 4 + 3 + 2 + 1 = 4^2 = 16."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Consecutive Triangular Sum Property",
+                  "statement_or_expression": "T_n + T_{n-1} = n^2",
+                  "variable_definitions": "T_n, T_{n-1} = adjacent triangular numbers",
+                  "direct_example": "T_4 (10) + T_3 (6) = 16 = 4^2."
+                }
+              ]
+            }
+          ],
+          "prosody_and_fractal_mastery": {
+            "concept": "Virahanka Poetic Prosody & Koch Snowflake Limits",
+            "explanation": "Acharya Virahanka introduced Fibonacci numbers in 600 CE to count combinations of short (1 beat) and long (2 beats) Sanskrit syllables. For a meter of length n, the number of combinations is V_n. In Koch Snowflake fractals, perimeter grows infinitely P_n = P_0 * (4/3)^n while area converges to (8/5)*A_0."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Summing First n Consecutive Odd Numbers",
+            "step_by_step_instructions": [
+              "Step 1: Ensure the odd number sequence starts at 1 and contains no skipped consecutive odd integers.",
+              "Step 2: Count the total number of terms, n. (If given the last term L, calculate n = (L + 1) / 2).",
+              "Step 3: Square the count of terms: Sum = n^2."
+            ],
+            "model_textbook_example": {
+              "problem": "Find the sum of 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 without column addition.",
+              "working_steps": [
+                "Step 1: Verify sequence starts at 1 and is consecutive odd numbers.",
+                "Step 2: Count terms: 10 terms (or n = (19 + 1)/2 = 10).",
+                "Step 3: Apply formula Sum = n^2 = 10^2 = 100."
+              ],
+              "final_answer": "100"
+            }
+          },
+          {
+            "method_name": "Evaluating Symmetrical Up-and-Down Sums",
+            "step_by_step_instructions": [
+              "Step 1: Check that the series rises sequentially from 1 up to a peak number n, then decreases symmetrically back to 1.",
+              "Step 2: Identify the central peak number n.",
+              "Step 3: Compute total sum = n^2."
+            ],
+            "model_textbook_example": {
+              "problem": "Calculate 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1.",
+              "working_steps": [
+                "Step 1: Sequence increases 1..8 and decreases 8..1.",
+                "Step 2: Central peak number n = 8.",
+                "Step 3: Sum = 8^2 = 64."
+              ],
+              "final_answer": "64"
+            }
+          }
         ],
-        "final_answer": "100"
-      }
-    },
-    {
-      "method_name": "Evaluating Symmetrical Up-and-Down Sums",
-      "step_by_step_instructions": [
-        "Step 1: Check that the series rises sequentially from 1 up to a peak number n, then decreases symmetrically back to 1.",
-        "Step 2: Identify the central peak number n.",
-        "Step 3: Compute total sum = n^2."
-      ],
-      "model_textbook_example": {
-        "problem": "Calculate 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1.",
-        "working_steps": [
-          "Step 1: Sequence increases 1..8 and decreases 8..1.",
-          "Step 2: Central peak number n = 8.",
-          "Step 3: Sum = 8^2 = 64."
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Think, Discuss and Write / Role-Play Scenario",
+            "location_or_title": "Page 7, Section 1.4",
+            "question_text": "Scenario: Student Kabir asks why two consecutive triangular numbers T_3 (6) and T_4 (10) add up to a square number 16. Provide a full geometric and algebraic explanation.",
+            "complete_solution": "Geometric Explanation: T_3 is a triangle of 6 dots (rows 1, 2, 3). T_4 is a triangle of 10 dots (rows 1, 2, 3, 4). Inverting T_3 and slotting it into T_4 forms a 4x4 square grid of 16 dots.\nAlgebraic Explanation: T_n = n(n+1)/2 and T_{n-1} = (n-1)n/2. Summing them: n(n+1)/2 + n(n-1)/2 = [n^2 + n + n^2 - n]/2 = 2n^2/2 = n^2. For n=4, T_4 + T_3 = 4^2 = 16."
+          }
         ],
-        "final_answer": "64"
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 1.4",
+            "question_number": "Q3",
+            "question_text": "What is the sum of the first 100 odd numbers?",
+            "solution_steps": [
+              "Step 1: Total terms n = 100.",
+              "Step 2: Apply sum formula S = n^2.",
+              "Step 3: S = 100^2 = 10,000."
+            ],
+            "final_answer_with_units": "10000"
+          },
+          {
+            "exercise_number": "Ex 1.4",
+            "question_number": "Q5",
+            "question_text": "Find the 10th Virahānka number if V_1 = 1, V_2 = 2.",
+            "solution_steps": [
+              "Step 1: Write terms sequentially using V_n = V_{n-1} + V_{n-2}:",
+              "V_1=1, V_2=2, V_3=3, V_4=5, V_5=8, V_6=13, V_7=21, V_8=34, V_9=55, V_10=89."
+            ],
+            "final_answer_with_units": "89"
+          }
+        ]
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "Lines and Angles",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter introduces fundamental spatial geometry, progressing from zero-dimensional points to one-dimensional line segments, rays, and lines, and two-dimensional angle turns measured quantitatively in degrees (°). It establishes rotation as the core physical concept defining angle size (1 full turn = 360°, 1/2 turn = 180°, 1/4 turn = 90°). Angles are rigorously classified into acute, right, obtuse, straight, and reflex angles. Practical compass rose bearings, clock hand movements, paper-folding bisectors, and protractor measuring techniques are detailed alongside geometric proofs.",
+          "detailed_sections": [
+            {
+              "section_number_title": "2.1 Points, Line Segments, Rays, and Lines",
+              "full_textbook_explanation": "Geometry begins with fundamental primitive entities:\n- Point: A precise location in space with zero dimensions (no length, width, or depth), denoted by a capital letter (e.g., Point A).\n- Line Segment: The shortest straight path connecting two distinct endpoints A and B, denoted segment AB. It has a definite measurable length.\n- Ray: A straight line portion that originates at a fixed initial vertex endpoint and extends endlessly in one direction, denoted ray AB.\n- Line: A continuous 1D straight path extending infinitely in two opposite directions, denoted line AB or line l.\n\n[Instructional Simulation: Geometry in Navigation]\nNavigator: 'To map a ship's position, we mark a Point. A light beam from a lighthouse represents a Ray starting at the lighthouse and continuing across the ocean indefinitely!'",
+              "mathematical_definitions": [
+                {
+                  "term": "Line Segment",
+                  "formal_definition": "The straight portion of a line bounded by two distinct endpoints, possessing a measurable length.",
+                  "example": "Segment AB measuring 6.5 cm."
+                },
+                {
+                  "term": "Ray",
+                  "formal_definition": "A straight path beginning at a fixed initial point and extending endlessly in one direction.",
+                  "example": "Sunbeams originating at the Sun."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Uniqueness of Line through Two Points",
+                  "statement_or_expression": "Exactly one unique straight line passes through any two distinct points A and B.",
+                  "variable_definitions": "A, B = distinct points in a plane",
+                  "direct_example": "Points P and Q define exactly line PQ."
+                }
+              ]
+            },
+            {
+              "section_number_title": "2.2 Angles, Rotation Turns, and Degree Measurement",
+              "full_textbook_explanation": "An angle is formed when two rays meet at a common initial vertex point. Angle size measures the amount of angular rotation required to turn one arm onto the other arm, independent of arm length.\n- Full Rotation Turn = 360 degrees (360°).\n- Half Rotation Turn = 180 degrees (180°) = Straight Angle.\n- Quarter Rotation Turn = 90 degrees (90°) = Right Angle.\n- Formula: Angle (°) = Fraction of Full Turn x 360°.",
+              "mathematical_definitions": [
+                {
+                  "term": "Angle",
+                  "formal_definition": "The geometric figure formed by two rays (arms) sharing a common endpoint (vertex).",
+                  "example": "Angle AOB with vertex O and arms OA and OB."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Fractional Turn to Degree Formula",
+                  "statement_or_expression": "Degree Angle = Fraction of Full Rotation x 360°",
+                  "variable_definitions": "Fraction = turn proportion",
+                  "direct_example": "5/12 of a turn = (5/12) x 360° = 150°."
+                }
+              ]
+            },
+            {
+              "section_number_title": "2.3 Classifying Angles & Protractor Reading",
+              "full_textbook_explanation": "Angles are classified by degree bounds:\n1. Acute Angle: 0° < theta < 90°\n2. Right Angle: theta = 90°\n3. Obtuse Angle: 90° < theta < 180°\n4. Straight Angle: theta = 180°\n5. Reflex Angle: 180° < theta < 360°\n\nProtractor Operational Rule: Align protractor baseline center with the angle vertex and one arm with 0°. Read the degree mark where the second arm crosses the scale starting at 0°.",
+              "mathematical_definitions": [
+                {
+                  "term": "Obtuse Angle",
+                  "formal_definition": "An angle whose degree measure is strictly greater than 90° and strictly less than 180°.",
+                  "example": "120°."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Angle Classification Bounds",
+                  "statement_or_expression": "0° < Acute < 90° = Right < Obtuse < 180° = Straight < Reflex < 360°",
+                  "variable_definitions": "Degree angle theta",
+                  "direct_example": "215° is a Reflex Angle because 180° < 215° < 360°."
+                }
+              ]
+            }
+          ],
+          "angle_relations_mastery": {
+            "concept": "Complementary, Supplementary & Vertically Opposite Angles",
+            "explanation": "Complementary angles sum to 90 degrees. Supplementary angles sum to 180 degrees. Vertically opposite angles formed by two intersecting lines are equal."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Measuring Angles with a Protractor",
+            "step_by_step_instructions": [
+              "Step 1: Place the protractor center point directly over the angle vertex O.",
+              "Step 2: Align one arm OA precisely along the protractor 0° baseline.",
+              "Step 3: Follow the scale starting at 0° on arm OA and read the degree mark where arm OB intersects the protractor rim."
+            ],
+            "model_textbook_example": {
+              "problem": "Determine the angle measure when arm OA lies on 0° inner scale and arm OB crosses at 135°.",
+              "working_steps": [
+                "Center aligned at vertex O.",
+                "Arm OA aligned at 0° inner scale.",
+                "Arm OB intersects 135° mark."
+              ],
+              "final_answer": "135° (Obtuse Angle)"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Try These / Clock Hand Scenarios",
+            "location_or_title": "Page 22, Section 2.3",
+            "question_text": "What is the angle measure between the hour and minute hands of a clock at 5 o'clock?",
+            "complete_solution": "A clock face has 12 equal hour divisions covering 360°. Angle per hour division = 360° / 12 = 30°. At 5 o'clock, the hands are separated by 5 hour divisions. Angle = 5 x 30° = 150° (Obtuse Angle)."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 2.8",
+            "question_number": "Q4",
+            "question_text": "How many right angles are formed when a straight line crease on paper is folded directly onto itself?",
+            "solution_steps": [
+              "Step 1: Folding a line crease onto itself creates a perpendicular crease.",
+              "Step 2: Perpendicular lines intersect at a 90° right angle, forming 4 right angles around the intersection."
+            ],
+            "final_answer_with_units": "4 right angles"
+          }
+        ]
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Number Play",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter explores recreational number theory, structural place value patterns, digit frequency distributions, palindromic numbers, the Reverse-and-Add algorithm, game theory strategies (Game of 21), and the famous Collatz Conjecture. Students learn how structural digit manipulations reveal deep mathematical invariants.",
+          "detailed_sections": [
+            {
+              "section_number_title": "3.1 Place Value Structure and Digit Frequency",
+              "full_textbook_explanation": "Numbers represent quantitative structures governed by positional place value. Digit frequency counting tracks how often a specific digit occurs across numerical ranges. For instance, in counting from 1 to 100, the digit '7' appears 10 times in the units place (7, 17, 27... 97) and 10 times in the tens place (70, 71, 72... 79), making 20 occurrences total (with '77' contributing two 7s).",
+              "mathematical_definitions": [
+                {
+                  "term": "Place Value",
+                  "formal_definition": "The value of a digit based on its specific position in a multi-digit number (e.g. units, tens, hundreds).",
+                  "example": "In 842, place value of 8 is 800."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "N-Digit Number Count Formula",
+                  "statement_or_expression": "Count of N-digit numbers = 9 x 10^(N-1)",
+                  "variable_definitions": "N = number of digits",
+                  "direct_example": "For 3-digit numbers (100-999): 9 x 10^2 = 900 numbers."
+                }
+              ]
+            },
+            {
+              "section_number_title": "3.2 Palindromes, Reverse-and-Add, and Collatz Conjecture",
+              "full_textbook_explanation": "A Palindromic Number reads identically forwards and backwards (e.g., 121, 5775). The Reverse-and-Add procedure transforms most integers into palindromes within a few iterations.\n\nThe Collatz Conjecture (3n + 1 problem) applies two simple rules to any positive integer n:\n- If n is even -> n / 2\n- If n is odd -> 3n + 1\nUnproved Hypothesis: Every positive integer eventually reaches the repeating cycle 4 -> 2 -> 1.",
+              "mathematical_definitions": [
+                {
+                  "term": "Palindromic Number",
+                  "formal_definition": "An integer that remains unchanged when its digits are written in reverse order.",
+                  "example": "12321."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Collatz Transformation Function",
+                  "statement_or_expression": "f(n) = n/2 (if n is even); f(n) = 3n + 1 (if n is odd)",
+                  "variable_definitions": "n = positive integer",
+                  "direct_example": "For odd n = 5: f(5) = 3(5) + 1 = 16."
+                }
+              ]
+            }
+          ],
+          "digital_root_mastery": {
+            "concept": "Digital Root Invariant & 2-Digit Palindromic Sums",
+            "explanation": "Any number N is congruent to its digit sum modulo 9. Adding a 2-digit number 10a+b to its reverse 10b+a yields 11(a+b), which is always a multiple of 11."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Reverse-and-Add Palindrome Algorithm",
+            "step_by_step_instructions": [
+              "Step 1: Start with any positive integer.",
+              "Step 2: Reverse its digits to form a new integer.",
+              "Step 3: Add the original integer and the reversed integer.",
+              "Step 4: If the sum is palindromic, stop. Otherwise, repeat steps 2 and 3 on the new sum."
+            ],
+            "model_textbook_example": {
+              "problem": "Apply Reverse-and-Add to starting integer 48.",
+              "working_steps": [
+                "Step 1: Original = 48, Reverse = 84.",
+                "Step 2: Sum = 48 + 84 = 132 (Not a palindrome).",
+                "Step 3: Reverse 132 = 231.",
+                "Step 4: Sum = 132 + 231 = 363 (Palindrome!)."
+              ],
+              "final_answer": "363"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Digit Detectives / Puzzle Box",
+            "location_or_title": "Page 58",
+            "question_text": "How many times does the digit '7' appear in all integers from 1 to 100?",
+            "complete_solution": "Units place: 7, 17, 27, 37, 47, 57, 67, 77, 87, 97 (10 times).\nTens place: 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 (10 times).\nTotal occurrences = 10 + 10 = 20 times (note that 77 contributes 2)."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 3.12",
+            "question_number": "Q9",
+            "question_text": "Trace Collatz sequence for starting integer 10.",
+            "solution_steps": [
+              "10 (even) -> 10 / 2 = 5.",
+              "5 (odd) -> 3(5) + 1 = 16.",
+              "16 (even) -> 16 / 2 = 8.",
+              "8 (even) -> 8 / 2 = 4.",
+              "4 (even) -> 4 / 2 = 2.",
+              "2 (even) -> 2 / 2 = 1."
+            ],
+            "final_answer_with_units": "10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1 (6 steps)"
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Data Handling and Presentation",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter teaches statistics: data collection, organization using tally mark frequency tables, visual representation using pictographs and bar graphs, and critical data interpretation. Students learn rules for uniform bar widths, equal gap spacing, zero baseline alignment, and choosing appropriate unit scale keys.",
+          "detailed_sections": [
+            {
+              "section_number_title": "4.1 Raw Data, Tally Marks, and Frequency",
+              "full_textbook_explanation": "Raw data consists of initial unorganized observations. Tally mark tables organize data efficiently. Tallies are marked as vertical strokes '|' and grouped in bundles of 5 with a diagonal slash ('||||/'). Frequency is the total integer observation count for a category.",
+              "mathematical_definitions": [
+                {
+                  "term": "Raw Data",
+                  "formal_definition": "An unorganized collection of initial quantitative or categorical observations.",
+                  "example": "List of test marks: 7, 8, 5, 8, 9, 7."
+                },
+                {
+                  "term": "Frequency",
+                  "formal_definition": "The total number of times a specific data value occurs in a data set.",
+                  "example": "If 12 students choose Cricket, Cricket's frequency is 12."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Tally Bundle Value",
+                  "statement_or_expression": "||||/ = 5 units",
+                  "variable_definitions": "Standard tally count group",
+                  "direct_example": "Two full bundles + 3 tallies = 5 + 5 + 3 = 13."
+                }
+              ]
+            },
+            {
+              "section_number_title": "4.2 Pictographs and Bar Graphs",
+              "full_textbook_explanation": "A Pictograph uses picture symbols with a declared key scale (e.g., 1 icon = 10 items). A Bar Graph uses rectangular bars of uniform width whose heights are proportional to category frequencies. Key Rules: 1. Uniform bar width. 2. Equal gap spacing between bars. 3. Vertical scale must start at 0.",
+              "mathematical_definitions": [
+                {
+                  "term": "Bar Graph",
+                  "formal_definition": "A visual representation using parallel rectangular bars of uniform width whose lengths represent frequencies.",
+                  "example": "Vertical bar chart showing monthly rainfall."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Bar Height Formula",
+                  "statement_or_expression": "Bar Height (cm) = Category Frequency / Scale Value per cm",
+                  "variable_definitions": "Frequency = category count; Scale Value = quantity per cm",
+                  "direct_example": "Frequency = 3200, Scale = 400/cm -> Height = 3200/400 = 8 cm."
+                }
+              ]
+            }
+          ],
+          "axis_truncation_mastery": {
+            "concept": "Axis Truncation & Comparative Double Bar Graphs",
+            "explanation": "Truncating the vertical axis (non-zero baseline) distorts bar height ratios visually. Double bar graphs allow direct comparison between two related data sets across categories."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Constructing a Mathematically Accurate Bar Graph",
+            "step_by_step_instructions": [
+              "Step 1: Draw perpendicular axes: horizontal X-axis for categories, vertical Y-axis for frequencies.",
+              "Step 2: Start vertical scale at 0 and choose a uniform scale unit (e.g. 1 cm = Rs 200).",
+              "Step 3: Mark category positions on the X-axis with equal gap spacing.",
+              "Step 4: Draw rectangular bars of uniform width matching calculated heights."
+            ],
+            "model_textbook_example": {
+              "problem": "Calculate bar height for Food expense Rs 3600 on a scale of 1 cm = Rs 400.",
+              "working_steps": [
+                "Frequency = Rs 3600.",
+                "Scale = Rs 400 per cm.",
+                "Height = 3600 / 400 = 9 cm."
+              ],
+              "final_answer": "9 cm"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Figure it Out",
+            "location_or_title": "Page 77",
+            "question_text": "If 1 bicycle icon represents 5 bicycles, how many icons represent 35 bicycles?",
+            "complete_solution": "Number of icons = Total bicycles / Scale key = 35 / 5 = 7 icons."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 4.1",
+            "question_number": "Q2",
+            "question_text": "Favorite sports survey: Hockey = 8, Cricket = 6, Football = 5. Which sport is most popular?",
+            "solution_steps": [
+              "Compare frequencies: 8 > 6 > 5.",
+              "Highest frequency 8 corresponds to Hockey."
+            ],
+            "final_answer_with_units": "Hockey"
+          }
+        ]
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Prime Time",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter introduces number theory: factors, multiples, prime numbers, composite numbers, co-prime pairs, the Sieve of Eratosthenes, divisibility rules (for 2, 3, 4, 5, 8, 9, 10), unique prime factorisation, Highest Common Factor (HCF), and Lowest Common Multiple (LCM), including the key property HCF(a, b) x LCM(a, b) = a x b.",
+          "detailed_sections": [
+            {
+              "section_number_title": "5.1 Factors, Multiples, and Prime/Composite Definitions",
+              "full_textbook_explanation": "A Factor divides a number completely with zero remainder. A Multiple is obtained by multiplying a number by counting numbers. Prime Numbers have exactly 2 factors (1 and itself). Composite Numbers have more than 2 factors. 1 has only 1 factor and is neither prime nor composite. Co-prime Numbers share no common factors other than 1 (HCF = 1).",
+              "mathematical_definitions": [
+                {
+                  "term": "Prime Number",
+                  "formal_definition": "A natural number greater than 1 that has exactly two distinct positive factors: 1 and itself.",
+                  "example": "2, 3, 5, 7, 11, 13..."
+                },
+                {
+                  "term": "Co-prime Numbers",
+                  "formal_definition": "Two positive integers sharing no common factor other than 1.",
+                  "example": "8 and 9 are co-prime."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "HCF and LCM Relation Formula",
+                  "statement_or_expression": "HCF(a, b) x LCM(a, b) = a x b",
+                  "variable_definitions": "a, b = positive integers",
+                  "direct_example": "For a=12, b=18: HCF=6, LCM=36 -> 6 x 36 = 216 = 12 x 18."
+                }
+              ]
+            },
+            {
+              "section_number_title": "5.2 Divisibility Rules and Prime Factorisation",
+              "full_textbook_explanation": "Divisibility tests allow rapid factor checking:\n- By 2: Last digit even (0, 2, 4, 6, 8)\n- By 3: Sum of digits divisible by 3\n- By 4: Last 2 digits form a number divisible by 4\n- By 5: Last digit 0 or 5\n- By 8: Last 3 digits form a number divisible by 8\n- By 9: Sum of digits divisible by 9\n- By 10: Last digit 0.",
+              "mathematical_definitions": [
+                {
+                  "term": "Prime Factorisation",
+                  "formal_definition": "Expressing a composite number uniquely as the product of prime numbers.",
+                  "example": "12 = 2^2 x 3."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Divisibility Rule for 3 and 9",
+                  "statement_or_expression": "Sum of Digits = k x 3 (for div by 3); Sum of Digits = k x 9 (for div by 9)",
+                  "variable_definitions": "k = non-zero integer",
+                  "direct_example": "For 573: Sum = 5+7+3 = 15 (divisible by 3)."
+                }
+              ]
+            }
+          ],
+          "fundamental_theorem_mastery": {
+            "concept": "Fundamental Theorem of Arithmetic & 3-Number HCF/LCM",
+            "explanation": "Every composite integer > 1 can be uniquely factorized into primes. The product relation HCF(a,b)*LCM(a,b) = a*b holds strictly for two numbers and does not generalize directly to three numbers."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Prime Factorisation by Successive Division",
+            "step_by_step_instructions": [
+              "Step 1: Divide the integer by its smallest prime factor.",
+              "Step 2: Divide the resulting quotient by its smallest prime factor.",
+              "Step 3: Repeat division until quotient becomes 1.",
+              "Step 4: Express integer as product of all prime divisors."
+            ],
+            "model_textbook_example": {
+              "problem": "Find prime factorisation of 198.",
+              "working_steps": [
+                "198 / 2 = 99",
+                "99 / 3 = 33",
+                "33 / 3 = 11",
+                "11 / 11 = 1"
+              ],
+              "final_answer": "198 = 2 x 3^2 x 11"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Idli-Vada Game Box",
+            "location_or_title": "Page 108",
+            "question_text": "In the Idli-Vada game (Idli on multiples of 3, Vada on multiples of 5), at what number is 'Idli-Vada' called for the 10th time?",
+            "complete_solution": "'Idli-Vada' is called on common multiples of 3 and 5, which are multiples of LCM(3, 5) = 15. The 10th occurrence = 10 x 15 = 150."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 5.1",
+            "question_number": "Q1",
+            "question_text": "Find the largest 4-digit palindromic number divisible by 4.",
+            "solution_steps": [
+              "A 4-digit palindrome has form ABBA.",
+              "Divisibility by 4 requires last two digits BA to be divisible by 4.",
+              "For largest, try A = 8 (even last digit). 8BB8.",
+              "Try B = 8: 88 / 4 = 22 (Yes!). Number = 8888."
+            ],
+            "final_answer_with_units": "8888"
+          }
+        ]
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Perimeter and Area",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter covers two-dimensional spatial measurement: Perimeter (1D boundary distance) and Area (2D enclosed surface region) for rectangles, squares, regular polygons, and composite shapes. It explores area conservation under cutting/re-arrangement and perimeter variations under fixed area constraints.",
+          "detailed_sections": [
+            {
+              "section_number_title": "6.1 Perimeter of Polygons",
+              "full_textbook_explanation": "Perimeter is the total continuous boundary distance around a closed plane shape.\nFormulas:\n- Rectangle Perimeter: P = 2(l + w)\n- Square Perimeter: P = 4s\n- Regular n-gon Perimeter: P = n x s.",
+              "mathematical_definitions": [
+                {
+                  "term": "Perimeter",
+                  "formal_definition": "The total continuous distance around the outer boundary of a closed 2D plane figure.",
+                  "example": "Triangle perimeter with sides 3cm, 4cm, 5cm is 12 cm."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Perimeter of Rectangle",
+                  "statement_or_expression": "P = 2 x (l + w)",
+                  "variable_definitions": "l = length, w = width, P = perimeter (linear units)",
+                  "direct_example": "For l = 8 m, w = 5 m: P = 2(8 + 5) = 26 m."
+                }
+              ]
+            },
+            {
+              "section_number_title": "6.2 Area and Conservation Principle",
+              "full_textbook_explanation": "Area measures the two-dimensional surface enclosed within a closed boundary, expressed in square units (sq cm, sq m). Formulas: Rectangle Area = l x w; Square Area = s^2. Area Conservation Principle: Cutting and rearranging a shape keeps total area unchanged, but alters boundary perimeter.",
+              "mathematical_definitions": [
+                {
+                  "term": "Area",
+                  "formal_definition": "The magnitude of two-dimensional surface region enclosed within a closed plane figure.",
+                  "example": "Area of a 6m x 4m room is 24 sq m."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Area of Rectangle",
+                  "statement_or_expression": "A = l x w",
+                  "variable_definitions": "l = length, w = width, A = area (square units)",
+                  "direct_example": "A = 10 cm x 6 cm = 60 sq cm."
+                }
+              ]
+            }
+          ],
+          "grid_area_mastery": {
+            "concept": "Grid Approximation for Irregular Shapes & Perimeter Extremes",
+            "explanation": "Area of irregular closed curves is estimated on standard grid paper by counting full squares as 1, >= 1/2 squares as 1, and < 1/2 squares as 0. For a fixed area, a square minimizes perimeter."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Finding Area of Composite Rectangular Shapes",
+            "step_by_step_instructions": [
+              "Step 1: Divide the composite figure into non-overlapping sub-rectangles.",
+              "Step 2: Determine length and width of each sub-rectangle.",
+              "Step 3: Calculate area of each sub-rectangle using A = l x w.",
+              "Step 4: Sum all sub-rectangle areas to find total composite area."
+            ],
+            "model_textbook_example": {
+              "problem": "Find width of a rectangle with length 25 m and area 300 sq m.",
+              "working_steps": [
+                "Area = length x width.",
+                "300 = 25 x width.",
+                "width = 300 / 25 = 12 m."
+              ],
+              "final_answer": "12 meters"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Figure it Out",
+            "location_or_title": "Page 130",
+            "question_text": "If perimeter of a rectangle is 14 cm and breadth is 2 cm, find its length.",
+            "complete_solution": "P = 2(l + b) => 14 = 2(l + 2) => l + 2 = 7 => l = 5 cm."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 6.1",
+            "question_number": "Q4",
+            "question_text": "Find cost of tiling a plot 500 m long and 200 m wide at Rs 8 per 100 sq m.",
+            "solution_steps": [
+              "Area = 500 m x 200 m = 100,000 sq m.",
+              "Rate = Rs 8 per 100 sq m.",
+              "Cost = (100,000 / 100) x 8 = 1000 x 8 = Rs 8000."
+            ],
+            "final_answer_with_units": "Rs 8000"
+          }
+        ]
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Fractions",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter covers equal sharing, fractional units 1/n, numerators and denominators, fraction wall visualization, equivalent fractions, proper/improper/mixed fractions, number line placement, and Brahmagupta's ancient general rules (628 CE) for fraction addition and subtraction.",
+          "detailed_sections": [
+            {
+              "section_number_title": "7.1 Concept of Fractions and Fractional Units",
+              "full_textbook_explanation": "A fraction represents equal parts of a whole unit. Unit fraction 1/n represents one part when 1 whole is divided into n equal parts. As denominator n increases, unit fraction size 1/n decreases (1/8 < 1/3).",
+              "mathematical_definitions": [
+                {
+                  "term": "Unit Fraction",
+                  "formal_definition": "A fraction with a numerator of 1, representing one equal part of a whole.",
+                  "example": "1/5."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Unit Fraction Ordering Rule",
+                  "statement_or_expression": "If m > n, then 1/m < 1/n",
+                  "variable_definitions": "m, n = positive denominators",
+                  "direct_example": "1/10 < 1/4 because 10 > 4."
+                }
+              ]
+            },
+            {
+              "section_number_title": "7.2 Equivalent Fractions & Brahmagupta's Rules",
+              "full_textbook_explanation": "Equivalent fractions represent equal quantitative proportions. Brahmagupta (628 CE) formulated general addition and subtraction rules by converting to common fractional units:\nAddition: a/b + c/d = (a.d + b.c) / (b.d)\nSubtraction: a/b - c/d = (a.d - b.c) / (b.d).",
+              "mathematical_definitions": [
+                {
+                  "term": "Equivalent Fractions",
+                  "formal_definition": "Fractions that represent identical values or proportions.",
+                  "example": "1/2 = 2/4 = 3/6."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Brahmagupta's Addition Rule",
+                  "statement_or_expression": "a/b + c/d = (a.d + b.c) / (b.d)",
+                  "variable_definitions": "a, b, c, d = integers, b, d != 0",
+                  "direct_example": "2/5 + 1/3 = (2x3 + 5x1) / 15 = 11/15."
+                }
+              ]
+            }
+          ],
+          "fraction_scalar_mastery": {
+            "concept": "Fractional Scalar Operations & Remainder Tracking",
+            "explanation": "Multiplying a fraction by a whole number scales the numerator: k * (a/b) = (k*a)/b. Multi-stage word problems track remaining fractional balances sequentially."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Converting Mixed Fractions to Improper Fractions",
+            "step_by_step_instructions": [
+              "Step 1: Multiply whole integer part by denominator.",
+              "Step 2: Add numerator to product.",
+              "Step 3: Write sum over original denominator: (Whole x Denom + Num) / Denom."
+            ],
+            "model_textbook_example": {
+              "problem": "Convert 3 1/4 to an improper fraction.",
+              "working_steps": [
+                "3 x 4 = 12.",
+                "12 + 1 = 13.",
+                "Result = 13/4."
+              ],
+              "final_answer": "13/4"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Figure it Out",
+            "location_or_title": "Page 158",
+            "question_text": "3 rotis are shared equally among 4 children. How much does each child receive?",
+            "complete_solution": "Each child receives 3 ÷ 4 = 3/4 roti."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 7.8",
+            "question_number": "Q1",
+            "question_text": "Solve 2/7 + 5/7 + 6/7.",
+            "solution_steps": [
+              "Denominators identical (7).",
+              "Add numerators: (2 + 5 + 6) / 7 = 13/7 = 1 6/7."
+            ],
+            "final_answer_with_units": "13/7"
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Playing with Constructions",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter introduces precise geometric drawing using ruler, compass, and set-squares. It covers drawing circles of specified radii, locating center points, transferring segment distances accurately, and constructing perpendicular lines and rectangles.",
+          "detailed_sections": [
+            {
+              "section_number_title": "8.1 Circles, Centers, and Radii",
+              "full_textbook_explanation": "A circle is a closed plane curve formed by all points equidistant from a fixed center point O. Radius r is the fixed distance from center to boundary. Diameter d = 2r.",
+              "mathematical_definitions": [
+                {
+                  "term": "Circle",
+                  "formal_definition": "The set of all points in a plane equidistant (radius r) from a fixed center point O.",
+                  "example": "Circle drawn with 4 cm compass opening."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Diameter Radius Relation",
+                  "statement_or_expression": "d = 2 x r",
+                  "variable_definitions": "d = diameter, r = radius",
+                  "direct_example": "For r = 4.5 cm: d = 2(4.5) = 9.0 cm."
+                }
+              ]
+            }
+          ],
+          "bisector_construction_mastery": {
+            "concept": "Ruler & Compass Bisector Constructions",
+            "explanation": "Perpendicular bisector of segment AB is constructed by drawing arcs of equal radius > AB/2 from endpoints A and B. Angle bisectors divide angle theta into two theta/2 angles using intersecting arcs."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Constructing a Circle of Given Radius r",
+            "step_by_step_instructions": [
+              "Step 1: Mark center point P on paper.",
+              "Step 2: Set compass span to radius r against a ruler.",
+              "Step 3: Fix compass needle firmly at P and rotate pencil 360°."
+            ],
+            "model_textbook_example": {
+              "problem": "Construct a circle of radius 4 cm centered at P.",
+              "working_steps": [
+                "Set compass opening to 4 cm.",
+                "Pivot needle at P and rotate pencil tip."
+              ],
+              "final_answer": "Circle of radius 4 cm constructed"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Figure it Out",
+            "location_or_title": "Page 175",
+            "question_text": "What shape is formed by all points located exactly 4 cm away from point P?",
+            "complete_solution": "A circle of radius 4 cm centered at P."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 8.1",
+            "question_number": "Q1",
+            "question_text": "Draw a rectangle with sides 6 cm and 4 cm using ruler and set-square.",
+            "solution_steps": [
+              "Draw segment AB = 6 cm.",
+              "Use set-square to construct 90° perpendiculars at A and B.",
+              "Mark 4 cm along both perpendiculars to locate D and C.",
+              "Join C and D."
+            ],
+            "final_answer_with_units": "Rectangle ABCD constructed"
+          }
+        ]
+      },
+      {
+        "chapter_number": 9,
+        "chapter_title": "Symmetry",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter investigates line (reflectional) symmetry and rotational symmetry. It details lines of symmetry, mirror halves, center of rotation, order of rotational symmetry n, smallest angle of symmetry (360°/n), and symmetry properties of regular polygons.",
+          "detailed_sections": [
+            {
+              "section_number_title": "9.1 Line Symmetry and Reflection",
+              "full_textbook_explanation": "A shape has line symmetry if a line divides it into two mirror halves that coincide under folding. A regular n-gon has exactly n lines of reflection symmetry.",
+              "mathematical_definitions": [
+                {
+                  "term": "Line of Symmetry",
+                  "formal_definition": "An axis dividing a figure into two mirror-image halves that coincide upon reflection.",
+                  "example": "A square has 4 lines of symmetry."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Regular Polygon Symmetry Rule",
+                  "statement_or_expression": "Number of Lines of Symmetry = n",
+                  "variable_definitions": "n = number of equal sides of regular polygon",
+                  "direct_example": "Equilateral triangle (n=3) has 3 lines of symmetry."
+                }
+              ]
+            },
+            {
+              "section_number_title": "9.2 Rotational Symmetry",
+              "full_textbook_explanation": "A figure possesses rotational symmetry if it matches its original appearance after rotation by an angle < 360° around its center. Order n = number of matching positions in 360°. Smallest Angle = 360° / n.",
+              "mathematical_definitions": [
+                {
+                  "term": "Rotational Symmetry",
+                  "formal_definition": "Property where a shape maps onto itself when turned around a center point by an angle less than 360°.",
+                  "example": "A 4-blade windmill matching every 90° turn."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Smallest Rotational Angle Formula",
+                  "statement_or_expression": "Smallest Angle = 360° / Order n",
+                  "variable_definitions": "Order n = matching positions in 360°",
+                  "direct_example": "Square (Order 4): Angle = 360° / 4 = 90°."
+                }
+              ]
+            }
+          ],
+          "asymmetric_rotation_mastery": {
+            "concept": "Rotational Symmetry without Reflection & Point Groups",
+            "explanation": "Shapes like 3-blade windmills or swastikas have rotational order n > 1 but zero lines of reflection. Regular n-gons possess dihedral symmetry group D_n with n reflection lines and order n rotation."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Determining Rotational Order and Smallest Angle",
+            "step_by_step_instructions": [
+              "Step 1: Fix center point of rotation.",
+              "Step 2: Rotate shape 360° and count matching orientations (Order n).",
+              "Step 3: Calculate Smallest Angle = 360° / n."
+            ],
+            "model_textbook_example": {
+              "problem": "Find smallest rotational angle for Ashoka Chakra (24 spokes).",
+              "working_steps": [
+                "Order n = 24.",
+                "Smallest Angle = 360° / 24 = 15°."
+              ],
+              "final_answer": "15°"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Figure it Out",
+            "location_or_title": "Page 195",
+            "question_text": "Can a shape have rotational symmetry with smallest angle 17°?",
+            "complete_solution": "No, because 360° / 17° = 21.176..., which is not an integer."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 9.2",
+            "question_number": "Q3",
+            "question_text": "How many lines of symmetry does a square have?",
+            "solution_steps": [
+              "Midsegment fold lines = 2.",
+              "Diagonal fold lines = 2.",
+              "Total = 4 lines of symmetry."
+            ],
+            "final_answer_with_units": "4 lines of symmetry"
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "The Other Side of Zero",
+        "section_1_complete_textbook_notes": {
+          "chapter_overview": "This chapter introduces negative numbers and integers (... -3, -2, -1, 0, +1, +2, +3 ...), number line extensions, basement lift floor models, token cancellation models (+1 green, -1 red zero pairs), additive inverses, and Brahmagupta's ancient laws of integer arithmetic.",
+          "detailed_sections": [
+            {
+              "section_number_title": "10.1 Concept of Negative Integers and Number Line",
+              "full_textbook_explanation": "Integers extend natural numbers below zero to represent debt, sub-zero temperatures, and basement floors. Values decrease moving left on the number line (-10 < -2 < 0 < 5). Additive Inverse of a is -a, satisfying a + (-a) = 0. Brahmagupta's Rule: Subtracting a negative integer is equivalent to adding its positive opposite: a - (-b) = a + b.",
+              "mathematical_definitions": [
+                {
+                  "term": "Integers",
+                  "formal_definition": "The set of whole numbers and their negative opposites (... -3, -2, -1, 0, 1, 2, 3 ...).",
+                  "example": "-5, 0, +8."
+                },
+                {
+                  "term": "Additive Inverse",
+                  "formal_definition": "The number that when added to a given integer yields zero.",
+                  "example": "Additive inverse of +5 is -5."
+                }
+              ],
+              "formulas_and_properties": [
+                {
+                  "name": "Brahmagupta's Subtraction Rule",
+                  "statement_or_expression": "a - (-b) = a + b",
+                  "variable_definitions": "a, b = integers",
+                  "direct_example": "8 - (-5) = 8 + 5 = 13."
+                }
+              ]
+            }
+          ],
+          "absolute_value_mastery": {
+            "concept": "Absolute Value Magnitude & Directed Number Line Distance",
+            "explanation": "The absolute value |a| represents distance from 0 on the number line. The distance between two integers a and b is given by |a - b|."
+          }
+        },
+        "section_2_step_by_step_algorithms": [
+          {
+            "method_name": "Evaluating Integer Expressions via Token Cancellation",
+            "step_by_step_instructions": [
+              "Step 1: Represent positive integers with green (+1) tokens and negatives with red (-1) tokens.",
+              "Step 2: Pair green and red tokens to form zero pairs (+1 + -1 = 0) and remove them.",
+              "Step 3: Count remaining uncancelled tokens; sign matches their token color."
+            ],
+            "model_textbook_example": {
+              "problem": "Evaluate (-8) - (-13).",
+              "working_steps": [
+                "(-8) - (-13) = -8 + 13.",
+                "8 red tokens pair with 8 green tokens (cancel out).",
+                "5 green tokens remain."
+              ],
+              "final_answer": "+5"
+            }
+          }
+        ],
+        "section_3_in_text_boxes_and_try_these": [
+          {
+            "box_type": "Figure it Out",
+            "location_or_title": "Page 265",
+            "question_text": "Write all integers strictly between -4 and 4 in increasing order.",
+            "complete_solution": "-3, -2, -1, 0, 1, 2, 3."
+          }
+        ],
+        "section_4_complete_textbook_exercise_solutions": [
+          {
+            "exercise_number": "Ex 10.4",
+            "question_number": "Q4",
+            "question_text": "Solve: (a) 8 + (-13), (b) (-8) - (-13).",
+            "solution_steps": [
+              "(a) 8 + (-13) = -5.",
+              "(b) (-8) - (-13) = -8 + 13 = +5."
+            ],
+            "final_answer_with_units": "(a) -5, (b) +5"
+          }
+        ]
       }
-    }
-  ],
-  "section_3_in_text_boxes_and_try_these": [
-    {
-      "box_type": "Think, Discuss and Write / Role-Play Scenario",
-      "location_or_title": "Page 7, Section 1.4",
-      "question_text": "Scenario: Student Kabir asks why two consecutive triangular numbers T_3 (6) and T_4 (10) add up to a square number 16. Provide a full geometric and algebraic explanation.",
-      "complete_solution": "Geometric Explanation: T_3 is a triangle of 6 dots (rows 1, 2, 3). T_4 is a triangle of 10 dots (rows 1, 2, 3, 4). Inverting T_3 and slotting it into T_4 forms a 4x4 square grid of 16 dots.\nAlgebraic Explanation: T_n = n(n+1)/2 and T_{n-1} = (n-1)n/2. Summing them: n(n+1)/2 + n(n-1)/2 = [n^2 + n + n^2 - n]/2 = 2n^2/2 = n^2. For n=4, T_4 + T_3 = 4^2 = 16."
-    }
-  ],
-  "section_4_complete_textbook_exercise_solutions": [
-    {
-      "exercise_number": "Ex 1.4",
-      "question_number": "Q3",
-      "question_text": "What is the sum of the first 100 odd numbers?",
-      "solution_steps": [
-        "Step 1: Total terms n = 100.",
-        "Step 2: Apply sum formula S = n^2.",
-        "Step 3: S = 100^2 = 10,000."
-      ],
-      "final_answer_with_units": "10000"
-    },
-    {
-      "exercise_number": "Ex 1.4",
-      "question_number": "Q5",
-      "question_text": "Find the 10th Virahānka number if V_1 = 1, V_2 = 2.",
-      "solution_steps": [
-        "Step 1: Write terms sequentially using V_n = V_{n-1} + V_{n-2}:",
-        "V_1=1, V_2=2, V_3=3, V_4=5, V_5=8, V_6=13, V_7=21, V_8=34, V_9=55, V_10=89."
-      ],
-      "final_answer_with_units": "89"
-    }
-  ]
+    ]
+  },
+  "grade": "6",
+  "chapter_id": "G6-MAT-U01-C01",
+  "chapter_number": 1,
+  "chapter_title": "Maths Chapter 1"
 }

@@ -1,218 +1,391 @@
 {
-  "student_portfolio_dashboard": {
-    "student_name": "Grade 7 Mathematics Scholar",
-    "overall_competency_score": 4.85,
-    "competency_rubric_sliders": [
-      {
-        "chapter_number": 1,
-        "domain": "Large Numbers & Factor Scaling",
-        "rating_1_to_5": 4.9,
-        "descriptor": "Mastered Indian/International systems and shortcuts."
-      },
-      {
-        "chapter_number": 2,
-        "domain": "Arithmetic Expressions & Algebra Laws",
-        "rating_1_to_5": 4.8,
-        "descriptor": "Flawless term partitioning and zero-pair token proofs."
-      },
-      {
-        "chapter_number": 3,
-        "domain": "Decimals & Sub-Unit Measurement",
-        "rating_1_to_5": 4.9,
-        "descriptor": "Precise ruler measurement and column point alignment."
-      },
-      {
-        "chapter_number": 4,
-        "domain": "Variables & Pattern Rules",
-        "rating_1_to_5": 4.7,
-        "descriptor": "Derived 3w+1 matchstick rule and endless grid coordinates."
-      },
-      {
-        "chapter_number": 5,
-        "domain": "Lines & Angle Theorems",
-        "rating_1_to_5": 4.9,
-        "descriptor": "Proved vertically opposite angles and linear pairs."
-      },
-      {
-        "chapter_number": 6,
-        "domain": "Number Play & Parity Algebra",
-        "rating_1_to_5": 4.8,
-        "descriptor": "Proved 3x3 magic square center cell 5 and loose leaf odd sums."
-      },
-      {
-        "chapter_number": 7,
-        "domain": "Triangle Inequality & Detour Geometry",
-        "rating_1_to_5": 4.9,
-        "descriptor": "Rigorous application of a+b > c theorem."
-      },
-      {
-        "chapter_number": 8,
-        "domain": "Fraction Multiplication & Telescoping",
-        "rating_1_to_5": 4.9,
-        "descriptor": "Mastered Brahmagupta formula and telescoping series 1/n."
+  "schema_version": "2.0.0",
+  "record_id": "gurukul_1e46c89087bb50b2",
+  "record_type": "source_artifact",
+  "curriculum": {
+    "curriculum_id": null,
+    "board_id": null,
+    "class_id": "class_7",
+    "class_level": 7
+  },
+  "subject": "Maths I",
+  "artifact": {
+    "artifact_type": "master",
+    "source_file_name": "10-Master.json",
+    "source_relative_path": "Contents/Class 7/Maths I/Source Files/10-Master.json",
+    "source_format": "json"
+  },
+  "source_integrity": {
+    "source_file_sha256": "d767fc44cf9774f1a8738e9b85b44f87e37ca42a99879a9375a67568391f1af4",
+    "source_semantic_sha256": "2d4bdec0d33fe6d7f30a2ec85691f23dff43fae17106e3c24c4f63cb1f03f82d",
+    "source_byte_length": 7994,
+    "source_encoding": "utf-8",
+    "source_field_count": 138,
+    "field_inventory": [
+      "$.student_portfolio_dashboard",
+      "$.student_portfolio_dashboard.student_name",
+      "$.student_portfolio_dashboard.overall_competency_score",
+      "$.student_portfolio_dashboard.competency_rubric_sliders",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[0].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[0].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[0].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[0].descriptor",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[1].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[1].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[1].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[1].descriptor",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[2].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[2].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[2].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[2].descriptor",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[3].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[3].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[3].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[3].descriptor",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[4].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[4].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[4].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[4].descriptor",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[5].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[5].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[5].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[5].descriptor",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[6].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[6].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[6].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[6].descriptor",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[7].chapter_number",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[7].domain",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[7].rating_1_to_5",
+      "$.student_portfolio_dashboard.competency_rubric_sliders[7].descriptor",
+      "$.student_portfolio_dashboard.project_logs",
+      "$.student_portfolio_dashboard.project_logs[0].project_id",
+      "$.student_portfolio_dashboard.project_logs[0].chapter",
+      "$.student_portfolio_dashboard.project_logs[0].title",
+      "$.student_portfolio_dashboard.project_logs[0].objective",
+      "$.student_portfolio_dashboard.project_logs[0].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[0].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[0].teacher_feedback",
+      "$.student_portfolio_dashboard.project_logs[1].project_id",
+      "$.student_portfolio_dashboard.project_logs[1].chapter",
+      "$.student_portfolio_dashboard.project_logs[1].title",
+      "$.student_portfolio_dashboard.project_logs[1].objective",
+      "$.student_portfolio_dashboard.project_logs[1].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[1].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[1].teacher_feedback",
+      "$.student_portfolio_dashboard.project_logs[2].project_id",
+      "$.student_portfolio_dashboard.project_logs[2].chapter",
+      "$.student_portfolio_dashboard.project_logs[2].title",
+      "$.student_portfolio_dashboard.project_logs[2].objective",
+      "$.student_portfolio_dashboard.project_logs[2].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[2].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[2].teacher_feedback",
+      "$.student_portfolio_dashboard.project_logs[3].project_id",
+      "$.student_portfolio_dashboard.project_logs[3].chapter",
+      "$.student_portfolio_dashboard.project_logs[3].title",
+      "$.student_portfolio_dashboard.project_logs[3].objective",
+      "$.student_portfolio_dashboard.project_logs[3].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[3].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[3].teacher_feedback",
+      "$.student_portfolio_dashboard.project_logs[4].project_id",
+      "$.student_portfolio_dashboard.project_logs[4].chapter",
+      "$.student_portfolio_dashboard.project_logs[4].title",
+      "$.student_portfolio_dashboard.project_logs[4].objective",
+      "$.student_portfolio_dashboard.project_logs[4].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[4].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[4].teacher_feedback",
+      "$.student_portfolio_dashboard.project_logs[5].project_id",
+      "$.student_portfolio_dashboard.project_logs[5].chapter",
+      "$.student_portfolio_dashboard.project_logs[5].title",
+      "$.student_portfolio_dashboard.project_logs[5].objective",
+      "$.student_portfolio_dashboard.project_logs[5].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[5].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[5].teacher_feedback",
+      "$.student_portfolio_dashboard.project_logs[6].project_id",
+      "$.student_portfolio_dashboard.project_logs[6].chapter",
+      "$.student_portfolio_dashboard.project_logs[6].title",
+      "$.student_portfolio_dashboard.project_logs[6].objective",
+      "$.student_portfolio_dashboard.project_logs[6].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[6].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[6].teacher_feedback",
+      "$.student_portfolio_dashboard.project_logs[7].project_id",
+      "$.student_portfolio_dashboard.project_logs[7].chapter",
+      "$.student_portfolio_dashboard.project_logs[7].title",
+      "$.student_portfolio_dashboard.project_logs[7].objective",
+      "$.student_portfolio_dashboard.project_logs[7].artifacts_built",
+      "$.student_portfolio_dashboard.project_logs[7].self_reflection",
+      "$.student_portfolio_dashboard.project_logs[7].teacher_feedback",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[0].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[0].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[0].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[0].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[0].unlocked_timestamp",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[1].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[1].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[1].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[1].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[1].unlocked_timestamp",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[2].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[2].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[2].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[2].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[2].unlocked_timestamp",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[3].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[3].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[3].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[3].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[3].unlocked_timestamp",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[4].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[4].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[4].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[4].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[4].unlocked_timestamp",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[5].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[5].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[5].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[5].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[5].unlocked_timestamp",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[6].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[6].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[6].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[6].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[6].unlocked_timestamp",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[7].badge_id",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[7].title",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[7].icon",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[7].criteria",
+      "$.student_portfolio_dashboard.celebratory_badge_unlocks[7].unlocked_timestamp",
+      "$.student_portfolio_dashboard.chapter_progress",
+      "$.student_portfolio_dashboard.chapter_progress.completed_chapters",
+      "$.student_portfolio_dashboard.chapter_progress.total_chapters",
+      "$.student_portfolio_dashboard.chapter_progress.overall_completion_percent"
+    ]
+  },
+  "academic_index": {
+    "chapter_candidates": [],
+    "chapter_candidate_count": 0,
+    "normalization_status": "indexed_not_content_rewritten"
+  },
+  "source_data": {
+    "student_portfolio_dashboard": {
+      "student_name": "Grade 7 Mathematics Scholar",
+      "overall_competency_score": 4.85,
+      "competency_rubric_sliders": [
+        {
+          "chapter_number": 1,
+          "domain": "Large Numbers & Factor Scaling",
+          "rating_1_to_5": 4.9,
+          "descriptor": "Mastered Indian/International systems and shortcuts."
+        },
+        {
+          "chapter_number": 2,
+          "domain": "Arithmetic Expressions & Algebra Laws",
+          "rating_1_to_5": 4.8,
+          "descriptor": "Flawless term partitioning and zero-pair token proofs."
+        },
+        {
+          "chapter_number": 3,
+          "domain": "Decimals & Sub-Unit Measurement",
+          "rating_1_to_5": 4.9,
+          "descriptor": "Precise ruler measurement and column point alignment."
+        },
+        {
+          "chapter_number": 4,
+          "domain": "Variables & Pattern Rules",
+          "rating_1_to_5": 4.7,
+          "descriptor": "Derived 3w+1 matchstick rule and endless grid coordinates."
+        },
+        {
+          "chapter_number": 5,
+          "domain": "Lines & Angle Theorems",
+          "rating_1_to_5": 4.9,
+          "descriptor": "Proved vertically opposite angles and linear pairs."
+        },
+        {
+          "chapter_number": 6,
+          "domain": "Number Play & Parity Algebra",
+          "rating_1_to_5": 4.8,
+          "descriptor": "Proved 3x3 magic square center cell 5 and loose leaf odd sums."
+        },
+        {
+          "chapter_number": 7,
+          "domain": "Triangle Inequality & Detour Geometry",
+          "rating_1_to_5": 4.9,
+          "descriptor": "Rigorous application of a+b > c theorem."
+        },
+        {
+          "chapter_number": 8,
+          "domain": "Fraction Multiplication & Telescoping",
+          "rating_1_to_5": 4.9,
+          "descriptor": "Mastered Brahmagupta formula and telescoping series 1/n."
+        }
+      ],
+      "project_logs": [
+        {
+          "project_id": "proj_ch1",
+          "chapter": 1,
+          "title": "Population Scale & Shortcut Calculator",
+          "objective": "Compare Patna and Mumbai populations and build mental shortcut tables for x5 and x25.",
+          "artifacts_built": [
+            "Scale comparison matrix",
+            "Multiplication shortcut flowchart"
+          ],
+          "self_reflection": "Halving and quartering numbers makes multiplying large figures effortless.",
+          "teacher_feedback": "Exceptional mathematical reasoning and place-value clarity."
+        },
+        {
+          "project_id": "proj_ch2",
+          "chapter": 2,
+          "title": "Zero-Pair Token Physical Demonstrator",
+          "objective": "Build physical counter model proving a - b = a + (-b).",
+          "artifacts_built": [
+            "Two-color token kit",
+            "Bracket negation rule sheet"
+          ],
+          "self_reflection": "Zero pairs clearly explain why subtracting negative values turns into addition.",
+          "teacher_feedback": "Outstanding conceptual modeling and peer explanation."
+        },
+        {
+          "project_id": "proj_ch3",
+          "chapter": 3,
+          "title": "Millimeter Precision Measurement Journal",
+          "objective": "Measure classroom objects in cm and mm and convert paise to rupees.",
+          "artifacts_built": [
+            "Precision scale log",
+            "Equivalent decimal grid"
+          ],
+          "self_reflection": "Trailing zeros allow effortless column alignment before subtraction.",
+          "teacher_feedback": "Perfect measurement accuracy and decimal notation."
+        },
+        {
+          "project_id": "proj_ch4",
+          "chapter": 4,
+          "title": "Endless 4-Column Matrix Navigator",
+          "objective": "Formulate matchstick rule 3w+1 and map row/col coordinates for number 143.",
+          "artifacts_built": [
+            "Matchstick square model",
+            "Matrix coordinate calculator"
+          ],
+          "self_reflection": "Letter-numbers express complex spatial patterns in simple algebraic formulas.",
+          "teacher_feedback": "Brilliant pattern generalization and coordinate deduction."
+        },
+        {
+          "project_id": "proj_ch5",
+          "chapter": 5,
+          "title": "Crease Geometry & Angle Prover",
+          "objective": "Fold square paper to prove angle equality and line parallelism.",
+          "artifacts_built": [
+            "Paper folding crease grid",
+            "Intersecting angle proof chart"
+          ],
+          "self_reflection": "Crease intersections provide tangible geometric proof of right angles.",
+          "teacher_feedback": "Rigorous geometric proofs and tactile exploration."
+        },
+        {
+          "project_id": "proj_ch6",
+          "chapter": 6,
+          "title": "3x3 Magic Square Center Cell Proof",
+          "objective": "Prove why center cell x must equal 5 for digits 1-9.",
+          "artifacts_built": [
+            "Algebraic proof sheet",
+            "Interactive 8-rotation puzzle"
+          ],
+          "self_reflection": "Summing 4 intersecting lines forces 45 + 3x = 60, proving x = 5.",
+          "teacher_feedback": "Masterful algebraic proof and logical deduction."
+        },
+        {
+          "project_id": "proj_ch7",
+          "chapter": 7,
+          "title": "Surveyor Triangular Detour Map",
+          "objective": "Test town mapping feasibility using Triangle Inequality Theorem.",
+          "artifacts_built": [
+            "Ruler & compass arc tester",
+            "Feasibility decision tree"
+          ],
+          "self_reflection": "Direct distance is always shorter than detour path via a third vertex.",
+          "teacher_feedback": "Superb spatial intuition and theorem validation."
+        },
+        {
+          "project_id": "proj_ch8",
+          "chapter": 8,
+          "title": "Brahmagupta Area Grid & Series Canceler",
+          "objective": "Visualize fraction multiplication on 1x1 grid and simplify telescoping series.",
+          "artifacts_built": [
+            "Overlapping area grid model",
+            "Telescoping cancellation chart"
+          ],
+          "self_reflection": "Cross-cancellation simplifies complex fraction products to 1/n instantly.",
+          "teacher_feedback": "Inspirational historical awareness and mathematical fluency."
+        }
+      ],
+      "celebratory_badge_unlocks": [
+        {
+          "badge_id": "b1",
+          "title": "Scale Master",
+          "icon": "star",
+          "criteria": "Mastered Indian & International systems",
+          "unlocked_timestamp": "2026-10-24T23:00:00Z"
+        },
+        {
+          "badge_id": "b2",
+          "title": "Algebraic Pioneer",
+          "icon": "shield",
+          "criteria": "Flawless zero-pair token proofs",
+          "unlocked_timestamp": "2026-10-24T23:05:00Z"
+        },
+        {
+          "badge_id": "b3",
+          "title": "Decimal Strategist",
+          "icon": "zap",
+          "criteria": "Exact sub-unit millimeter measurement",
+          "unlocked_timestamp": "2026-10-24T23:10:00Z"
+        },
+        {
+          "badge_id": "b4",
+          "title": "Pattern Architect",
+          "icon": "grid",
+          "criteria": "Derived 3w+1 matchstick formula",
+          "unlocked_timestamp": "2026-10-24T23:15:00Z"
+        },
+        {
+          "badge_id": "b5",
+          "title": "Geometric Navigator",
+          "icon": "compass",
+          "criteria": "Proved vertically opposite angles equal",
+          "unlocked_timestamp": "2026-10-24T23:20:00Z"
+        },
+        {
+          "badge_id": "b6",
+          "title": "Logic Wizard",
+          "icon": "award",
+          "criteria": "Proved 3x3 magic square center cell 5",
+          "unlocked_timestamp": "2026-10-24T23:25:00Z"
+        },
+        {
+          "badge_id": "b7",
+          "title": "Spatial Theorist",
+          "icon": "check_circle",
+          "criteria": "Validated Triangle Inequality Theorem",
+          "unlocked_timestamp": "2026-10-24T23:30:00Z"
+        },
+        {
+          "badge_id": "b8",
+          "title": "Brahmagupta Scholar",
+          "icon": "feather",
+          "criteria": "Simplified telescoping fraction series",
+          "unlocked_timestamp": "2026-10-24T23:35:00Z"
+        }
+      ],
+      "chapter_progress": {
+        "completed_chapters": 8,
+        "total_chapters": 8,
+        "overall_completion_percent": 100
       }
-    ],
-    "project_logs": [
-      {
-        "project_id": "proj_ch1",
-        "chapter": 1,
-        "title": "Population Scale & Shortcut Calculator",
-        "objective": "Compare Patna and Mumbai populations and build mental shortcut tables for x5 and x25.",
-        "artifacts_built": [
-          "Scale comparison matrix",
-          "Multiplication shortcut flowchart"
-        ],
-        "self_reflection": "Halving and quartering numbers makes multiplying large figures effortless.",
-        "teacher_feedback": "Exceptional mathematical reasoning and place-value clarity."
-      },
-      {
-        "project_id": "proj_ch2",
-        "chapter": 2,
-        "title": "Zero-Pair Token Physical Demonstrator",
-        "objective": "Build physical counter model proving a - b = a + (-b).",
-        "artifacts_built": [
-          "Two-color token kit",
-          "Bracket negation rule sheet"
-        ],
-        "self_reflection": "Zero pairs clearly explain why subtracting negative values turns into addition.",
-        "teacher_feedback": "Outstanding conceptual modeling and peer explanation."
-      },
-      {
-        "project_id": "proj_ch3",
-        "chapter": 3,
-        "title": "Millimeter Precision Measurement Journal",
-        "objective": "Measure classroom objects in cm and mm and convert paise to rupees.",
-        "artifacts_built": [
-          "Precision scale log",
-          "Equivalent decimal grid"
-        ],
-        "self_reflection": "Trailing zeros allow effortless column alignment before subtraction.",
-        "teacher_feedback": "Perfect measurement accuracy and decimal notation."
-      },
-      {
-        "project_id": "proj_ch4",
-        "chapter": 4,
-        "title": "Endless 4-Column Matrix Navigator",
-        "objective": "Formulate matchstick rule 3w+1 and map row/col coordinates for number 143.",
-        "artifacts_built": [
-          "Matchstick square model",
-          "Matrix coordinate calculator"
-        ],
-        "self_reflection": "Letter-numbers express complex spatial patterns in simple algebraic formulas.",
-        "teacher_feedback": "Brilliant pattern generalization and coordinate deduction."
-      },
-      {
-        "project_id": "proj_ch5",
-        "chapter": 5,
-        "title": "Crease Geometry & Angle Prover",
-        "objective": "Fold square paper to prove angle equality and line parallelism.",
-        "artifacts_built": [
-          "Paper folding crease grid",
-          "Intersecting angle proof chart"
-        ],
-        "self_reflection": "Crease intersections provide tangible geometric proof of right angles.",
-        "teacher_feedback": "Rigorous geometric proofs and tactile exploration."
-      },
-      {
-        "project_id": "proj_ch6",
-        "chapter": 6,
-        "title": "3x3 Magic Square Center Cell Proof",
-        "objective": "Prove why center cell x must equal 5 for digits 1-9.",
-        "artifacts_built": [
-          "Algebraic proof sheet",
-          "Interactive 8-rotation puzzle"
-        ],
-        "self_reflection": "Summing 4 intersecting lines forces 45 + 3x = 60, proving x = 5.",
-        "teacher_feedback": "Masterful algebraic proof and logical deduction."
-      },
-      {
-        "project_id": "proj_ch7",
-        "chapter": 7,
-        "title": "Surveyor Triangular Detour Map",
-        "objective": "Test town mapping feasibility using Triangle Inequality Theorem.",
-        "artifacts_built": [
-          "Ruler & compass arc tester",
-          "Feasibility decision tree"
-        ],
-        "self_reflection": "Direct distance is always shorter than detour path via a third vertex.",
-        "teacher_feedback": "Superb spatial intuition and theorem validation."
-      },
-      {
-        "project_id": "proj_ch8",
-        "chapter": 8,
-        "title": "Brahmagupta Area Grid & Series Canceler",
-        "objective": "Visualize fraction multiplication on 1x1 grid and simplify telescoping series.",
-        "artifacts_built": [
-          "Overlapping area grid model",
-          "Telescoping cancellation chart"
-        ],
-        "self_reflection": "Cross-cancellation simplifies complex fraction products to 1/n instantly.",
-        "teacher_feedback": "Inspirational historical awareness and mathematical fluency."
-      }
-    ],
-    "celebratory_badge_unlocks": [
-      {
-        "badge_id": "b1",
-        "title": "Scale Master",
-        "icon": "star",
-        "criteria": "Mastered Indian & International systems",
-        "unlocked_timestamp": "2026-10-24T23:00:00Z"
-      },
-      {
-        "badge_id": "b2",
-        "title": "Algebraic Pioneer",
-        "icon": "shield",
-        "criteria": "Flawless zero-pair token proofs",
-        "unlocked_timestamp": "2026-10-24T23:05:00Z"
-      },
-      {
-        "badge_id": "b3",
-        "title": "Decimal Strategist",
-        "icon": "zap",
-        "criteria": "Exact sub-unit millimeter measurement",
-        "unlocked_timestamp": "2026-10-24T23:10:00Z"
-      },
-      {
-        "badge_id": "b4",
-        "title": "Pattern Architect",
-        "icon": "grid",
-        "criteria": "Derived 3w+1 matchstick formula",
-        "unlocked_timestamp": "2026-10-24T23:15:00Z"
-      },
-      {
-        "badge_id": "b5",
-        "title": "Geometric Navigator",
-        "icon": "compass",
-        "criteria": "Proved vertically opposite angles equal",
-        "unlocked_timestamp": "2026-10-24T23:20:00Z"
-      },
-      {
-        "badge_id": "b6",
-        "title": "Logic Wizard",
-        "icon": "award",
-        "criteria": "Proved 3x3 magic square center cell 5",
-        "unlocked_timestamp": "2026-10-24T23:25:00Z"
-      },
-      {
-        "badge_id": "b7",
-        "title": "Spatial Theorist",
-        "icon": "check_circle",
-        "criteria": "Validated Triangle Inequality Theorem",
-        "unlocked_timestamp": "2026-10-24T23:30:00Z"
-      },
-      {
-        "badge_id": "b8",
-        "title": "Brahmagupta Scholar",
-        "icon": "feather",
-        "criteria": "Simplified telescoping fraction series",
-        "unlocked_timestamp": "2026-10-24T23:35:00Z"
-      }
-    ],
-    "chapter_progress": {
-      "completed_chapters": 8,
-      "total_chapters": 8,
-      "overall_completion_percent": 100
     }
   },
+  "grade": "7",
+  "chapter_id": "G7-MAT-U01-C01",
+  "chapter_number": 1,
   "chapter_title": "Geometric Twins (Congruence of Triangles)"
 }

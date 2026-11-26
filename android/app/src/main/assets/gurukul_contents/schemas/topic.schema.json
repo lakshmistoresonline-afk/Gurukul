@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gurukul Topic",
+  "type": "object",
+  "required": [
+    "topic_id",
+    "title"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "topic_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "order": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "concepts": {
+      "type": "array",
+      "items": {
+        "$ref": "concept.schema.json"
+      }
+    },
+    "learning_items": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
