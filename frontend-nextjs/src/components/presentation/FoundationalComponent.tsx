@@ -113,6 +113,17 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {filteredModules.map((mod: any, idx: number) => {
               const item = mod.item || mod;
+              if (typeof item === 'string') {
+                return (
+                  <div key={idx} className="p-5 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-2 hover:border-indigo-300 transition-all">
+                    <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg inline-block">
+                      Foundational Rule #{idx + 1}
+                    </span>
+                    <p className="text-sm font-bold text-slate-900 leading-relaxed">{item}</p>
+                  </div>
+                );
+              }
+
               const cat = mod.category || mod.type || mod.module_type || 'Module';
 
               const title = item.concept || item.term || item.title || item.name || item.word || item.idiom || item.root || item.device || item.type || item.phrase_or_word || item.item || cat;
@@ -125,7 +136,7 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
               const antonyms = item.antonyms || item.antonym || [];
               const wordForms = item.word_forms || item.forms || item.verb_forms || [];
 
-              const catLower = cat.toLowerCase();
+              const catLower = String(cat).toLowerCase();
               let answerText = '';
               let answerLabel = 'Answer / Meaning';
               if (catLower.includes('synonym') && typeof item.synonym === 'string') {
@@ -147,7 +158,7 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
 
               const isAnswerVisible = showAnswers[idx];
               const renderedKeys = new Set(['concept', 'term', 'title', 'name', 'word', 'idiom', 'root', 'device', 'type', 'phrase_or_word', 'item', 'explanation', 'definition', 'description', 'meaning', 'structure_rule', 'rule', 'usage_example', 'rules', 'examples', 'subtopics', 'key_points', 'verb_forms', 'adjective_degrees', 'adjective_forms', 'example', 'contextual_importance', 'source_context', 'synonyms', 'synonym', 'antonyms', 'antonym', 'word_forms', 'forms', 'answer']);
-              const extraEntries = Object.entries(item).filter(([k]) => !renderedKeys.has(k));
+              const extraEntries = typeof item === 'object' && item !== null ? Object.entries(item).filter(([k]) => !renderedKeys.has(k)) : [];
 
               return (
                 <div key={idx} className="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-3 hover:border-indigo-300 transition-all">

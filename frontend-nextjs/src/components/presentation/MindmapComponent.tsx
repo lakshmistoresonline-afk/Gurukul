@@ -51,8 +51,8 @@ export default function MindmapComponent({ data }: MindmapProps) {
                   {Array.isArray(children) && children.length > 0 && (
                     <div className="space-y-3 pt-2">
                       {children.map((child: any, cIdx: number) => {
-                        const childTitle = child.title || child.concept || child.name || child.topic || child.sub_title || child.sub_topic || '';
-                        const details = child.details || child.explanation || child.full_explanation || '';
+                        const childTitle = typeof child === 'string' ? child : (child.title || child.concept || child.name || child.topic || child.sub_title || child.sub_topic || '');
+                        const details = typeof child === 'object' ? (child.details || child.explanation || child.full_explanation || '') : '';
 
                         return (
                           <div key={cIdx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-2">
