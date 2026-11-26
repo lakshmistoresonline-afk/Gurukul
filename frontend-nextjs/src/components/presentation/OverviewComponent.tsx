@@ -16,6 +16,7 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
   const [videoLoadError, setVideoLoadError] = useState<boolean>(false);
   const [showLightboxModal, setShowLightboxModal] = useState<boolean>(false);
   const [activeHotspotHover, setActiveHotspotHover] = useState<number | null>(null);
+  const [imageFailed, setImageFailed] = useState<boolean>(false);
 
   if (!data) {
     return (
@@ -227,26 +228,36 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
               </div>
               <p className="text-xs font-bold text-slate-900">{imageAsset.title || 'Chapter Concept Diagram'}</p>
 
-              {/* Render Chapter Diagram Image Directly with Interactive Pinpoints & Lightbox */}
+              {/* Render Chapter Diagram Image Directly with Vector Canvas Fallback */}
               {(imageAsset.asset_url || imageAsset.url || imageAsset.filename) && (
                 <div
                   onClick={() => setShowLightboxModal(true)}
                   className="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80 flex items-center justify-center p-3 shadow-2xs group cursor-zoom-in transition-all hover:border-indigo-300 select-none"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={imageAsset.asset_url || imageAsset.url || `/assets/images/${imageAsset.filename}`}
-                    alt={imageAsset.alt_text || imageAsset.title || 'Chapter Diagram'}
-                    className="max-h-[380px] w-auto object-contain rounded-xl shadow-xs"
-                    onError={(e) => {
-                      const img = e.target as HTMLImageElement;
-                      if (imageAsset.filename && !img.src.includes(imageAsset.filename)) {
-                        img.src = `/assets/images/${imageAsset.filename}`;
-                      } else if (!img.src.includes('02-')) {
-                        img.src = `/assets/images/02-${imageAsset.filename}`;
-                      }
-                    }}
-                  />
+                  {imageFailed ? (
+                    <div className="w-full aspect-video rounded-xl border border-teal-500/30 bg-gradient-to-br from-slate-900 via-indigo-950 to-teal-950 p-6 flex flex-col items-center justify-center text-center space-y-3 shadow-inner">
+                      <div className="w-12 h-12 rounded-2xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-2xl border border-teal-400/30 animate-pulse">
+                        🗺️
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-black text-white">{imageAsset.title || 'Interactive Concept Schematic'}</h4>
+                        <p className="text-xs text-teal-200/80 font-medium max-w-md leading-relaxed">
+                          NCERT Class {data.grade || '7'} {subject || 'Curriculum'} Knowledge Architecture &amp; Hotspot Map
+                        </p>
+                      </div>
+                      <span className="text-[10px] font-mono font-bold text-teal-300 bg-teal-900/50 px-3 py-1 rounded-full border border-teal-500/30">
+                        Active Interactive Hotspots ({Array.isArray(imageAsset.hotspots) ? imageAsset.hotspots.length : 2})
+                      </span>
+                    </div>
+                  ) : (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      src={imageAsset.asset_url || imageAsset.url || `/assets/images/${imageAsset.filename}`}
+                      alt={imageAsset.alt_text || imageAsset.title || 'Chapter Diagram'}
+                      className="max-h-[380px] w-auto object-contain rounded-xl shadow-xs"
+                      onError={() => setImageFailed(true)}
+                    />
+                  )}
 
                   {/* Pulsing Interactive Hotspot Radar Pins */}
                   {Array.isArray(imageAsset.hotspots) && imageAsset.hotspots.map((hs: any, idx: number) => {
@@ -284,7 +295,6 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
                       </div>
                     );
                   })}
-
                   <div className="absolute bottom-3 right-3 px-3 py-1 rounded-xl bg-slate-900/80 text-white text-[11px] font-bold backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all flex items-center gap-1.5 shadow-lg">
                     🔍 Click to Expand
                   </div>
