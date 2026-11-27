@@ -16,6 +16,7 @@ sealed interface LmsUiState {
     object Loading : LmsUiState
     data class Error(val message: String) : LmsUiState
     data class Success(
+        val selectedGrade: Int = 5,
         val selectedSubject: LmsSubject,
         val activeTab: DashboardTab,
         val chapterNote: ChapterNote,
@@ -42,13 +43,22 @@ class Class5LmsViewModel : ViewModel() {
         selectSubject(LmsSubject.ENGLISH)
     }
 
+    fun selectGrade(grade: Int) {
+        viewModelScope.launch {
+            _uiState.value = LmsUiState.Loading
+            val currentSubj = if (_uiState.value is LmsUiState.Success) (_uiState.value as LmsUiState.Success).selectedSubject else LmsSubject.ENGLISH
+            loadSubjectData(currentSubj, DashboardTab.NOTES, grade)
+        }
+    }
+
     /**
      * Switch Active Subject and Reload Catalog Data.
      */
     fun selectSubject(subject: LmsSubject) {
         viewModelScope.launch {
             _uiState.value = LmsUiState.Loading
-            loadSubjectData(subject, DashboardTab.NOTES)
+            val currentGrade = if (_uiState.value is LmsUiState.Success) (_uiState.value as LmsUiState.Success).selectedGrade else 5
+            loadSubjectData(subject, DashboardTab.NOTES, currentGrade)
         }
     }
 
@@ -98,22 +108,26 @@ class Class5LmsViewModel : ViewModel() {
     /**
      * Ingest and Load Subject Domain Models.
      */
-    private fun loadSubjectData(subject: LmsSubject, activeTab: DashboardTab) {
+    private fun loadSubjectData(subject: LmsSubject, activeTab: DashboardTab, grade: Int = 5) {
         viewModelScope.launch {
             try {
                 val sampleNote = ChapterNote(
-                    id = "G5-${subject.code}-C01",
+                    id = "G$grade-${subject.code}-C01",
                     subject = subject,
                     chapterNumber = 1,
                     chapterName = when (subject) {
-                        LmsSubject.ENGLISH -> "Papa’s Spectacles"
-                        LmsSubject.HINDI -> "किरन"
-                        LmsSubject.MATHS -> "Travelling, Now and Then"
-                        LmsSubject.SCIENCE -> "Water — The Essence of Life"
+                        LmsSubject.ENGLISH -> "Chapter 1 - English Literature & Grammar"
+                        LmsSubject.HINDI -> "पाठ 1 - साहित्य एवं व्याकरण"
+                        LmsSubject.MATHS, LmsSubject.MATHS_I -> "Chapter 1 - Mathematical Concepts & Operations"
+                        LmsSubject.MATHS_II -> "Chapter 1 - Geometry & Measurements"
+                        LmsSubject.SCIENCE -> "Chapter 1 - Scientific Inquiry & Discovery"
+                        LmsSubject.SOCIAL, LmsSubject.SOCIAL_I -> "Chapter 1 - Our Past & Society"
+                        LmsSubject.SOCIAL_II -> "Chapter 1 - Earth & Environment"
+                        LmsSubject.SOCIAL_III -> "Chapter 1 - Civics & Social Governance"
                     },
                     unitTitle = "Unit 1",
                     markdownBody = "Full structured chapter text...",
-                    overviewSummary = "Comprehensive overview summary for ${subject.displayName} Chapter 1.",
+                    overviewSummary = "Comprehensive overview summary for Class $grade ${subject.displayName} Chapter 1.",
                     centralTheme = "Core thematic learning outcomes and ethical values."
                 )
 
@@ -139,13 +153,11 @@ class Class5LmsViewModel : ViewModel() {
                         id = "q1",
                         subject = subject,
                         chapterId = "C01",
-                        questionText = "What is the primary theme of Chapter 1?",
-                        options = listOf("Option A", "Option B", "Option C", "Option D"),
+                        questionText = "What is the primary concept of Class $grade ${subject.displayName} Chapter 1?",
+                        options = listOf("Core Fundamental Concept", "Secondary Concept", "Application Skill", "Review Outcome"),
                         correctAnswerIndex = 0,
                         explanation = "Step-by-step solution explaining Option A.",
-                        taxonomyLevel = TaxonomyLevel.UNDERSTAND,
-                        containsLatex = subject == LmsSubject.MATHS,
-                        formattedLatexTokens = if (subject == LmsSubject.MATHS) listOf("$$\\frac{1}{2} + \\frac{1}{4} = \\frac{3}{4}$$") else emptyList()
+                        taxonomyLevel = TaxonomyLevel.UNDERSTAND
                     )
                 )
 
@@ -153,14 +165,15 @@ class Class5LmsViewModel : ViewModel() {
                     PedagogyGuide(
                         id = "pg1",
                         subject = subject,
-                        unitTitle = "Unit 1 Curriculum Framework",
-                        curriculumCode = "CG1",
-                        learningObjectives = listOf("Develop oral fluency and expression", "Enhance text comprehension"),
-                        teachingTips = listOf("Facilitate interactive group discussions", "Utilize concept mindmaps")
+                        unitTitle = "Class $grade Unit 1 Curriculum Framework",
+                        curriculumCode = "NCF-SE 2023",
+                        learningObjectives = listOf("Develop conceptual clarity and analytical thinking", "Enhance problem solving skills"),
+                        teachingTips = listOf("Facilitate interactive group discussions", "Utilize concept mindmaps and flashcards")
                     )
                 )
 
                 _uiState.value = LmsUiState.Success(
+                    selectedGrade = grade,
                     selectedSubject = subject,
                     activeTab = activeTab,
                     chapterNote = sampleNote,
@@ -170,7 +183,7 @@ class Class5LmsViewModel : ViewModel() {
                     pedagogyGuides = sampleGuides
                 )
             } catch (e: Exception) {
-                _uiState.value = LmsUiState.Error("Failed to load ${subject.displayName} content: ${e.message}")
+                _uiState.value = LmsUiState.Error("Failed to load Class $grade ${subject.displayName} content: ${e.message}")
             }
         }
     }

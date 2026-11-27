@@ -1,6 +1,8 @@
 package com.gurukul.ai.lms.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -102,7 +104,7 @@ fun Class5StudentDashboardScreen(
                                 shape = RoundedCornerShape(12.dp)
                             ) {
                                 Text(
-                                    text = "CLASS 5",
+                                    text = "CLASS ${state.selectedGrade}",
                                     style = MaterialTheme.typography.labelSmall.copy(
                                         color = Color.White,
                                         fontWeight = FontWeight.ExtraBold
@@ -112,9 +114,40 @@ fun Class5StudentDashboardScreen(
                             }
                         }
 
+                        // Scrollable Class Selector Bar (Classes 5 to 10)
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .horizontalScroll(rememberScrollState()),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            listOf(5, 6, 7, 8, 9, 10).forEach { gradeNum ->
+                                val isClassSelected = state.selectedGrade == gradeNum
+                                FilterChip(
+                                    selected = isClassSelected,
+                                    onClick = { viewModel.selectGrade(gradeNum) },
+                                    label = {
+                                        Text(
+                                            text = "Class $gradeNum",
+                                            fontWeight = if (isClassSelected) FontWeight.Bold else FontWeight.Medium
+                                        )
+                                    },
+                                    colors = FilterChipDefaults.filterChipColors(
+                                        selectedContainerColor = Color(0xFF10B981),
+                                        selectedLabelColor = Color.White,
+                                        containerColor = Color(0xFF1E293B),
+                                        labelColor = Color(0xFF94A3B8)
+                                    ),
+                                    shape = RoundedCornerShape(12.dp)
+                                )
+                            }
+                        }
+
                         // Scrollable Top Subject Selector Bar
                         Row(
-                            modifier = Modifier.fillMaxWidth(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .horizontalScroll(rememberScrollState()),
                             horizontalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
                             LmsSubject.entries.forEach { subject ->

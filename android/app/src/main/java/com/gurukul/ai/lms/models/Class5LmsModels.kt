@@ -12,7 +12,31 @@ enum class LmsSubject(val displayName: String, val code: String) {
     ENGLISH("English", "ENG"),
     HINDI("Hindi (हिंदी)", "HIN"),
     MATHS("Mathematics", "MAT"),
-    SCIENCE("Science / EVS", "SCI")
+    MATHS_I("Maths Part I", "MAT1"),
+    MATHS_II("Maths Part II", "MAT2"),
+    SCIENCE("Science / EVS", "SCI"),
+    SOCIAL("Social Science", "SOC"),
+    SOCIAL_I("History & Civics", "SOC1"),
+    SOCIAL_II("Geography & Economics", "SOC2"),
+    SOCIAL_III("Social Science III", "SOC3");
+
+    companion object {
+        fun fromCodeOrName(name: String): LmsSubject {
+            val lower = name.trim().lowercase()
+            return when {
+                lower.contains("hin") -> HINDI
+                lower.contains("maths ii") || lower.contains("maths_ii") || lower.contains("mathsii") -> MATHS_II
+                lower.contains("maths i") || lower.contains("maths_i") || lower.contains("mathsi") -> MATHS_I
+                lower.contains("mat") || lower.contains("math") -> MATHS
+                lower.contains("sci") || lower.contains("evs") -> SCIENCE
+                lower.contains("social iii") || lower.contains("social_iii") -> SOCIAL_III
+                lower.contains("social ii") || lower.contains("social_ii") -> SOCIAL_II
+                lower.contains("social i") || lower.contains("social_i") -> SOCIAL_I
+                lower.contains("soc") || lower.contains("social") -> SOCIAL
+                else -> ENGLISH
+            }
+        }
+    }
 }
 
 /**
