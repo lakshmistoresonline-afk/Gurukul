@@ -95,8 +95,8 @@ def process_all_contents():
                 if (g, s_key, c_num_int) not in image_map:
                     image_map[(g, s_key, c_num_int)] = pub_url
 
-    # 3. Source JSON ingestion
-    all_source_jsons = [f for f in glob.glob('Contents/**/*.json', recursive=True) if 'ProcessedContent' not in f]
+    # 3. Source JSON ingestion (Strictly Canonical .v2.json Envelopes from Contents/content/)
+    all_source_jsons = [f for f in glob.glob('Contents/content/**/*.v2.json', recursive=True)]
     ingested_modules = 0
 
     for s_path in all_source_jsons:
