@@ -10,11 +10,9 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
   const [flippedCards, setFlippedCards] = useState<Record<number, boolean>>({});
   const [masteredCards, setMasteredCards] = useState<Record<number, boolean>>({});
 
-  let fcList = flashcards;
-  if (flashcards && !Array.isArray(flashcards) && typeof flashcards === 'object') {
-    fcList = (flashcards as any).flashcards || (flashcards as any).cards || (flashcards as any).flashcard_database || (flashcards as any).flashcards_dataset || (flashcards as any).flashcard_list || Object.values(flashcards);
-  }
+  const chData = (flashcards as any)?.source_data?.chapters?.[0] || (flashcards as any)?.source_data || (flashcards as any)?.chapters?.[0] || flashcards;
 
+  let fcList = (chData as any)?.flashcards || (chData as any)?.cards || (chData as any)?.items || (chData as any)?.flashcard_database || (flashcards as any)?.flashcards || (flashcards as any)?.cards || flashcards;
   if (fcList && !Array.isArray(fcList) && typeof fcList === 'object') {
     const foundArr = Object.values(fcList).find(v => Array.isArray(v));
     if (foundArr) fcList = foundArr;

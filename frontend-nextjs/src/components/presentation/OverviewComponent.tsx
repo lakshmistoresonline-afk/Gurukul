@@ -32,20 +32,21 @@ export default React.memo(function OverviewComponent({ data, chapterTitle, unitT
     );
   }
 
-  const summary = data.summary || data.overview || data.core_summary || data.description || '';
-  const theme = data.centralTheme || data.theme_and_moral || data.central_theme || (summary ? summary.slice(0, 120) + '...' : chapterTitle) || 'Chapter Core Concept';
-  const objectives = data.learningObjectives || data.pedagogical_objectives || data.key_concepts || [];
-  const takeaways = data.importantTakeaways || data.key_takeaways || [];
-  const terms = data.keyTerminology || data.vocabulary || data.key_terms || [];
+  const chData = data?.source_data?.chapters?.[0] || data?.source_data || data?.chapters?.[0] || data || {};
+  const summary = chData.summary || chData.overview || chData.core_summary || chData.description || chData.storyboard_narrative || data.summary || data.overview || '';
+  const theme = chData.centralTheme || chData.central_theme || chData.theme_and_moral || data.centralTheme || (summary ? summary.slice(0, 120) + '...' : chapterTitle) || 'Chapter Core Concept';
+  const objectives = chData.learningObjectives || chData.pedagogical_objectives || chData.key_concepts || data.learningObjectives || [];
+  const takeaways = chData.importantTakeaways || chData.key_takeaways || data.importantTakeaways || [];
+  const terms = chData.key_terms || chData.keyTerminology || chData.vocabulary || data.keyTerminology || [];
 
-  const rawVideo = data.video_url || data.video_link || data.video || data.video_path || '';
+  const rawVideo = chData.video_url || chData.video_link || chData.video || data.video_url || data.video_link || '';
   const maskedToken = maskVideoUrl(rawVideo);
   const unmaskedUrl = unmaskVideoUrl(maskedToken);
   const isNotebookLm = isNotebookLmVideo(maskedToken);
   const isYoutube = isYoutubeVideo(maskedToken);
 
-  const rawImageAsset = data.image_asset || data.visual_asset || data.chapter_image_assets || data.image_assets_catalog || null;
-  const chNum = data.chapter_number || 1;
+  const rawImageAsset = chData.image_asset || chData.visual_asset || data.image_asset || null;
+  const chNum = chData.chapter_number || data.chapter_number || 1;
   const chNumStr = String(chNum).padStart(2, '0');
 
   // Universal Fallback Diagram Image Guarantee

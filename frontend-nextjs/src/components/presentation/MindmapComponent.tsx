@@ -9,11 +9,12 @@ export default function MindmapComponent({ data }: MindmapProps) {
     return <div className="p-8 text-center text-slate-500">No mindmap available.</div>;
   }
 
-  // Unwrap mind_map / mindmap wrapper if present
-  const mapData = data.mind_map || data.mindmap || data;
+  // Unwrap source_data envelope & mind_map / mindmap wrapper
+  const chData = data?.source_data?.chapters?.[0] || data?.source_data || data?.chapters?.[0] || data || {};
+  const mapData = chData.mind_map || chData.mindmap || chData.mindmaps || data.mind_map || data.mindmap || data;
 
-  const rootNode = mapData.root_node || mapData.root_topic || mapData.root || mapData.central_node || mapData.chapter_title || data.chapter_title || 'Central Concept';
-  const centralTheme = mapData.central_theme || mapData.central_node || mapData.theme || '';
+  const rootNode = mapData.root_node || mapData.root_topic || mapData.root || mapData.central_node || mapData.chapter_title || chData.chapter_title || data.chapter_title || 'Central Concept';
+  const centralTheme = mapData.central_theme || mapData.central_node || mapData.theme || chData.central_theme || '';
   const subNodes = mapData.sub_nodes || mapData.branches || mapData.nodes || mapData.main_branches || [];
 
   return (

@@ -42,10 +42,11 @@ interface MasterProps {
 }
 
 export default function MasterComponent({ data }: MasterProps) {
-  const cheatSheet = data?.quick_revision_cheat_sheet || data?.cheat_sheet || [];
-  const objectiveQ = data?.objective_questions || {};
-  const comprehension = data?.comprehension_exercises || data?.comprehension || [];
-  const literature = data?.literature_questions || {};
+  const chData = data?.source_data?.chapters?.[0] || data?.source_data || data?.chapters?.[0] || data || {};
+  const cheatSheet = chData?.quick_revision_cheat_sheet || chData?.cheat_sheet || data?.quick_revision_cheat_sheet || [];
+  const objectiveQ = chData?.objective_questions || chData?.challenge_questions || data?.objective_questions || {};
+  const comprehension = chData?.comprehension_exercises || chData?.comprehension || data?.comprehension || [];
+  const literature = chData?.literature_questions || chData?.master_content || data?.literature_questions || {};
 
   const hasCheat = Array.isArray(cheatSheet) && cheatSheet.length > 0;
   const hasObj = objectiveQ && Object.keys(objectiveQ).length > 0;

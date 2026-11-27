@@ -18,29 +18,31 @@ export default function NotesComponent({ data, subject }: NotesProps) {
     return <div className="p-8 text-center text-slate-500">No notes available.</div>;
   }
 
-  if (data.m1_zero_omission_notes) {
+  const chData = data?.source_data?.chapters?.[0] || data?.source_data || data?.chapters?.[0] || data || {};
+
+  if (chData.m1_zero_omission_notes || data.m1_zero_omission_notes) {
     return <Class7UniversalNotesComponent data={data} />;
   }
 
-  if (data.core_theme_and_moral || data.detailed_summary_and_explanation || data.exhaustive_vocabulary) {
+  if (chData.core_theme_and_moral || chData.detailed_summary_and_explanation || chData.exhaustive_vocabulary) {
     return <HindiNotesComponent data={data} />;
   }
-  if (data.conceptual_foundation && typeof data.conceptual_foundation === 'object') {
+  if (chData.conceptual_foundation && typeof chData.conceptual_foundation === 'object') {
     return <MathsNotesComponent data={data} />;
   }
 
-  const overviewText = data.overview || data.summary || '';
-  const centralTheme = data.centralTheme || data.core_theme_and_moral || data.theme || '';
-  const breakdown = data.detailedBreakdown || data.paragraphs || [];
-  const poeticDevices = data.poeticDevices || null;
-  const characterAnalysis = data.characterAnalysis || [];
-  const grammarFocus = data.grammarFocus || data.grammar_and_language || null;
+  const overviewText = chData.overview || chData.summary || chData.core_summary || chData.description || data.overview || data.summary || '';
+  const centralTheme = chData.centralTheme || chData.central_theme || chData.core_theme_and_moral || chData.theme || data.centralTheme || '';
+  const breakdown = chData.sections || chData.detailedBreakdown || chData.paragraphs || data.detailedBreakdown || [];
+  const poeticDevices = chData.poeticDevices || chData.poetic_devices || null;
+  const characterAnalysis = chData.characterAnalysis || chData.character_analysis || [];
+  const grammarFocus = chData.grammarFocus || chData.grammar_and_language || null;
 
-  const section1Arch = data.section_1_core_map_and_conceptual_architecture || null;
-  const section2Vocab = data.section_2_essential_vocabulary || [];
-  const section3Pitfalls = data.section_3_misconceptions_and_pitfall_prevention || [];
+  const section1Arch = chData.section_1_core_map_and_conceptual_architecture || null;
+  const section2Vocab = chData.section_2_essential_vocabulary || [];
+  const section3Pitfalls = chData.section_3_misconceptions_and_pitfall_prevention || [];
 
-  const rawVocab = data.keyVocabulary || data.exhaustive_vocabulary || data.glossary || data.vocabulary || [];
+  const rawVocab = chData.key_terms || chData.keyVocabulary || chData.exhaustive_vocabulary || chData.glossary || chData.vocabulary || data.keyVocabulary || [];
   const combinedVocab = [
     ...(Array.isArray(rawVocab) ? rawVocab : Object.values(rawVocab)),
     ...(Array.isArray(section2Vocab) ? section2Vocab : Object.values(section2Vocab))

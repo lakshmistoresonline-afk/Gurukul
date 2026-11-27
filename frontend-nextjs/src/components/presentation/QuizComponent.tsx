@@ -10,20 +10,17 @@ export default function QuizComponent({ quiz }: QuizProps) {
   const [submittedText, setSubmittedText] = useState<Record<number, boolean>>({});
   const [showExplanation, setShowExplanation] = useState<Record<number, boolean>>({});
 
-  let rawList = quiz;
-  if (quiz && !Array.isArray(quiz) && typeof quiz === 'object') {
-    if (Array.isArray((quiz as any).questions)) {
-      rawList = (quiz as any).questions;
-    } else if (Array.isArray((quiz as any).quiz)) {
-      rawList = (quiz as any).quiz;
-    } else if (Array.isArray((quiz as any).quizzes)) {
-      rawList = (quiz as any).quizzes;
+  const chData = (quiz as any)?.source_data?.chapters?.[0] || (quiz as any)?.source_data || (quiz as any)?.chapters?.[0] || quiz;
+  let rawList = (chData as any)?.questions || (chData as any)?.quiz || (chData as any)?.chapter_quizzes || (chData as any)?.quizzes || quiz;
+  if (rawList && !Array.isArray(rawList) && typeof rawList === 'object') {
+    if (Array.isArray((rawList as any).questions)) {
+      rawList = (rawList as any).questions;
+    } else if (Array.isArray((rawList as any).quiz)) {
+      rawList = (rawList as any).quiz;
     } else {
-      const foundArrayProp = Object.values(quiz).find(val => Array.isArray(val));
+      const foundArrayProp = Object.values(rawList).find(val => Array.isArray(val));
       if (foundArrayProp) {
         rawList = foundArrayProp;
-      } else {
-        rawList = Object.values(quiz);
       }
     }
   }
