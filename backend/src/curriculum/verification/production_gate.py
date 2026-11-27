@@ -361,6 +361,7 @@ class ComputationalProductionGate:
             md_content += f"| {g['category_id']} | **{g['status']}** | {g['exit_code']} | {g['duration_seconds']}s | `{g['command']}` | `{g['required_evidence']}` | `{reason_snippet}` |\n"
 
         md_path = ROOT_DIR / "reports" / "final" / "production_readiness_report.md"
+        md_path.parent.mkdir(parents=True, exist_ok=True)
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(md_content)
 
