@@ -19,18 +19,25 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
   }
 
   const chData = data?.source_data?.chapters?.[0] || data?.source_data || data?.chapters?.[0] || data || {};
-  const metadata = chData.textbook_metadata || chData.metadata || data.textbook_metadata || data.metadata || data.chapter || {};
+  const metadata = chData.textbook_metadata || chData.metadata || chData.chapter || data.textbook_metadata || data.metadata || data.chapter || {};
 
-  let rawModules = chData.modules || chData.foundational_modules || chData.drills || chData.activities || data.modules || data.foundational_modules || [];
-  if ((!Array.isArray(rawModules) || rawModules.length === 0) && data.content && typeof data.content === 'object') {
+  const contentObj = chData.content || data.content || {};
+  let rawModules: any[] = chData.modules || chData.foundational_modules || chData.drills || chData.activities || data.modules || data.foundational_modules || [];
+
+  if ((!Array.isArray(rawModules) || rawModules.length === 0) && contentObj && typeof contentObj === 'object') {
     rawModules = [];
-    for (const [catKey, catVal] of Object.entries(data.content)) {
+    for (const [catKey, catVal] of Object.entries(contentObj)) {
       if (Array.isArray(catVal)) {
         catVal.forEach(item => {
           rawModules.push({
             category: catKey,
             item: item
           });
+        });
+      } else if (typeof catVal === 'object' && catVal !== null) {
+        rawModules.push({
+          category: catKey,
+          item: catVal
         });
       }
     }

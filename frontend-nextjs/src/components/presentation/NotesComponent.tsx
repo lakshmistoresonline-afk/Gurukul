@@ -263,8 +263,8 @@ export default function NotesComponent({ data, subject }: NotesProps) {
         </div>
       )}
 
-      {/* Tab 7: Glossary */}
-      {activeSubTab === 'glossary' && combinedVocab.length > 0 && (
+      {/* Tab 7: Vocabulary & Glossary */}
+      {(activeSubTab === 'vocabulary' || activeSubTab === 'glossary') && combinedVocab.length > 0 && (
         <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Essential Vocabulary & Glossary</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
