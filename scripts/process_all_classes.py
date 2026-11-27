@@ -157,7 +157,10 @@ def process_all_contents():
             raw_txt_clean = re.sub(r'"video_link":\s*(https?://[^\s,"]+)', r'"video_link": "\1"', raw_txt_clean)
             s_data = json.loads(raw_txt_clean, strict=False)
 
-            chapters = s_data if isinstance(s_data, list) else (s_data.get('chapters') or s_data.get('chapter_quizzes') or [s_data])
+            if isinstance(s_data, dict) and 'source_data' in s_data and isinstance(s_data['source_data'], (dict, list)):
+                s_data = s_data['source_data']
+
+            chapters = s_data if isinstance(s_data, list) else (s_data.get('chapters') or s_data.get('chapter_notes') or s_data.get('chapters_master_data') or s_data.get('chapter_quizzes') or [s_data])
 
             for ch_idx, ch_obj in enumerate(chapters):
                 if not isinstance(ch_obj, dict): continue
@@ -171,13 +174,15 @@ def process_all_contents():
                 except Exception: ch_num_int = ch_idx + 1
 
                 ch_num_str = str(ch_num_int).zfill(2)
-                real_title = MASTER_EXHAUSTIVE_TITLES.get((grade_num, s_code, ch_num_int)) or ch_obj.get('chapter_title') or f"{pc_subj} Chapter {ch_num_int}"
+                real_title = ch_obj.get('chapter_title') or ch_obj.get('title') or MASTER_EXHAUSTIVE_TITLES.get((grade_num, s_code, ch_num_int)) or f"{pc_subj} Chapter {ch_num_int}"
 
                 unit_str = ch_obj.get('unit') or 'U01'
                 if isinstance(unit_str, int):
                     unit_str = f"U{str(unit_str).zfill(2)}"
+                unit_str = re.sub(r'[:*?"<>|]', '', str(unit_str))
 
                 ch_id = ch_obj.get('chapter_id') or f"G{grade_num}-{s_code}-{unit_str}-C{ch_num_str}"
+                ch_id = re.sub(r'[:*?"<>|]', '', ch_id)
                 ch_id_unit_match = re.search(r'-(U\d+)-', ch_id)
                 if ch_id_unit_match:
                     unit_str = ch_id_unit_match.group(1)
