@@ -1,0 +1,115 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Measuring Space: Perimeter and Area",
+  "image_asset": {
+    "title": "Mensuration overview displaying circular sector, segment, and concentric stadium running track.",
+    "local_url": "/assets/images/ch6_sector_segment_track.png"
+  },
+  "mind_map": {
+    "root_topic": "Measuring Space: Perimeter and Area",
+    "node_color": "#ec4899",
+    "icon": "root",
+    "branches": [
+      {
+        "theme": "6.1 Area Derivations for Polygons & Quadrilaterals",
+        "node_color": "#ec4899",
+        "icon": "folder",
+        "expanded": true,
+        "sub_branches": [
+          {
+            "concept": "Polygon Area Formulas",
+            "node_color": "#ec4899",
+            "icon": "box",
+            "expanded": true,
+            "details": [
+              "Parallelogram Area = base * height; Triangle Area = 1/2 * base * height.",
+              "Trapezium Area = 1/2 * (sum of parallel sides) * perpendicular distance.",
+              "Brahmagupta's Formula for cyclic quadrilateral area = sqrt((s-a)(s-b)(s-c)(s-d))."
+            ],
+            "evidence_or_examples": [
+              "Trapezium park with parallel sides 25m, 10m and non-parallel 14m, 13m has area 196 sq m."
+            ],
+            "key_terms": [
+              "Parallelogram Area",
+              "Trapezium Area",
+              "Brahmagupta's Formula"
+            ],
+            "tooltip_popover": {
+              "header": "Polygon Area Formulas",
+              "body": "Parallelogram Area = base * height; Triangle Area = 1/2 * base * height. Trapezium Area = 1/2 * (sum of parallel sides) * perpendicular distance. Brahmagupta's Formula for cyclic quadrilateral area = sqrt((s-a)(s-b)(s-c)(s-d)).",
+              "key_takeaway": "Trapezium park with parallel sides 25m, 10m and non-parallel 14m, 13m has area 196 sq m."
+            }
+          }
+        ]
+      },
+      {
+        "theme": "6.2 Heron's Formula for Arbitrary Triangles",
+        "node_color": "#ec4899",
+        "icon": "folder",
+        "expanded": true,
+        "sub_branches": [
+          {
+            "concept": "Semi-Perimeter Triangulation",
+            "node_color": "#ec4899",
+            "icon": "box",
+            "expanded": true,
+            "details": [
+              "Heron's Formula: Area = sqrt(s(s-a)(s-b)(s-c)), where s = (a+b+c)/2.",
+              "Equilateral triangle area = (sqrt(3)/4) * a^2."
+            ],
+            "evidence_or_examples": [
+              "Triangle with sides 13m, 14m, 15m: s = 21m, Area = sqrt(21 * 8 * 7 * 6) = 84 sq m."
+            ],
+            "key_terms": [
+              "Heron's Formula",
+              "Semi-perimeter (s)",
+              "Triangulation"
+            ],
+            "tooltip_popover": {
+              "header": "Semi-Perimeter Triangulation",
+              "body": "Heron's Formula: Area = sqrt(s(s-a)(s-b)(s-c)), where s = (a+b+c)/2. Equilateral triangle area = (sqrt(3)/4) * a^2.",
+              "key_takeaway": "Triangle with sides 13m, 14m, 15m: s = 21m, Area = sqrt(21 * 8 * 7 * 6) = 84 sq m."
+            }
+          }
+        ]
+      },
+      {
+        "theme": "6.3 Circular Regions: Sectors, Segments & Track Geometry",
+        "node_color": "#ec4899",
+        "icon": "folder",
+        "expanded": true,
+        "sub_branches": [
+          {
+            "concept": "Curved Boundary Measurements",
+            "node_color": "#ec4899",
+            "icon": "box",
+            "expanded": true,
+            "details": [
+              "Circumference C = 2*pi*r; Circle Area = pi*r^2.",
+              "Arc Length L = (theta/360) * 2*pi*r; Sector Area = (theta/360) * pi*r^2.",
+              "Minor Segment Area = Sector Area - Triangle Area.",
+              "Running track ring area between outer R and inner r = pi*(R^2 - r^2)."
+            ],
+            "evidence_or_examples": [
+              "Clock minute hand of 14 cm sweeping 5 mins (30 deg) covers area 154/3 = 51.33 sq cm."
+            ],
+            "key_terms": [
+              "Sector Area",
+              "Segment Area",
+              "Arc Length",
+              "Running Track Stagger"
+            ],
+            "tooltip_popover": {
+              "header": "Curved Boundary Measurements",
+              "body": "Circumference C = 2*pi*r; Circle Area = pi*r^2. Arc Length L = (theta/360) * 2*pi*r; Sector Area = (theta/360) * pi*r^2. Minor Segment Area = Sector Area - Triangle Area. Running track ring area between outer R and inner r = pi*(R^2 - r^2).",
+              "key_takeaway": "Clock minute hand of 14 cm sweeping 5 mins (30 deg) covers area 154/3 = 51.33 sq cm."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C06"
+}

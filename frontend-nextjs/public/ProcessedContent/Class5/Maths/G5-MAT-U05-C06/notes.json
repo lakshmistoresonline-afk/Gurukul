@@ -1,0 +1,86 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "The Dairy Farm",
+  "source_file": "eemm106.pdf",
+  "theme": "Flexible Multiplication Strategies & Area Models",
+  "conceptual_foundation": {
+    "introduction": "This chapter develops numerical fluency in multiplication using the real-world operational context of a dairy farm cooperative—calculating daily milk yields across herds, bottle packaging, and revenue. It transitions students beyond mechanical rote algorithms toward flexible mental strategies, including place value zero-appending, halving and doubling compensation, the distributive property, and grid partial product area models.",
+    "core_concepts": [
+      {
+        "concept": "Multiplication by 10s, 100s, and 1,000s (Zero-Appending)",
+        "explanation": "Multiplying a number by 10, 100, or 1,000 shifts digits to higher place value positions, equivalent to appending corresponding numbers of zeroes to the right.\n\n[Instructional Dialogue Simulation]\nTeacher: 'What is 45 x 10 and 32 x 100?'\nRaman: '45 x 10 = 450 (append one 0). 32 x 100 = 3,200 (append two 0s)!'\nTeacher: 'What is 50 x 60?'\nSheela: 'Multiply non-zero parts: 5 x 6 = 30. Append two 0s -> 3,000!'",
+        "example": "Calculations:\n• 45 x 10 = 450.\n• 32 x 100 = 3,200.\n• 50 x 60 = 3,000."
+      },
+      {
+        "concept": "Halving and Doubling Compensation Strategy",
+        "explanation": "Simplifying multiplication by halving one factor and doubling the other factor without altering the net product: A x B = (A / 2) x (B x 2).\n\n[Instructional Dialogue Simulation]\nTeacher: 'Calculate 14 x 5 mentally.'\nAnish: 'Half of 14 is 7, double 5 is 10. 7 x 10 = 70! Easy!'\nTeacher: 'Why does that work?'\nRaman: 'Because halving one and doubling the other keeps the total area equal!'",
+        "example": "Calculate 14 x 5:\n• Half 14 -> 7.\n• Double 5 -> 10.\n• 7 x 10 = 70."
+      },
+      {
+        "concept": "Grid Area Model & Partial Products",
+        "explanation": "Decomposing multi-digit factors into tens and ones, placing them along a grid matrix, calculating four partial product area sub-regions, and summing them.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Multiply 23 x 12 using a grid.'\nSheela: 'Decompose: 23 = (20 + 3), 12 = (10 + 2). Grid boxes: (20x10=200), (20x2=40), (3x10=30), (3x2=6). Sum: 200 + 40 + 30 + 6 = 276!'",
+        "example": "Grid Matrix for 23 x 12:\n• [20x10=200 | 20x2=40]\n• [ 3x10=30  |  3x2=6 ]\n• Total = 200 + 40 + 30 + 6 = 276."
+      },
+      {
+        "concept": "Distributive Property of Multiplication",
+        "explanation": "Multiplication distributes over addition: A x (B + C) = (A x B) + (A x C), or over subtraction: A x (B - C) = (A x B) - (A x C).\n\n[Instructional Dialogue Simulation]\nTeacher: 'Calculate 25 x 9 using distributive law.'\nRaman: '25 x (10 - 1) = (25 x 10) - (25 x 1) = 250 - 25 = 225!'",
+        "example": "25 x 9 = 25 x (10 - 1) = 250 - 25 = 225."
+      },
+      {
+        "concept": "Dairy Farm Yield & Revenue Computations",
+        "explanation": "Applying multiplication to multi-tier agricultural systems: (Cows x Daily Yield per Cow x Price per Litre x Days).\n\n[Instructional Dialogue Simulation]\nTeacher: 'A farm has 20 cows yielding 12 litres daily at ₹50/litre. Weekly revenue?'\nAnish: 'Daily yield = 20 x 12 = 240 litres. Daily revenue = 240 x 50 = ₹12,000. Weekly revenue = 12,000 x 7 = ₹84,000!'",
+        "example": "20 cows x 12 L x ₹50 x 7 days = ₹84,000."
+      }
+    ]
+  },
+  "key_formulas_and_rules": [
+    "Zero Appending Rule: N x 10^k = N with k zeroes appended",
+    "Halving & Doubling Rule: A x B = (A / 2) x (B x 2)",
+    "Distributive Law (Addition): A x (B + C) = (A x B) + (A x C)",
+    "Distributive Law (Subtraction): A x (B - C) = (A x B) - (A x C)",
+    "Total Revenue = Quantity Sold x Price per Unit"
+  ],
+  "real_world_applications": "Managing dairy cooperative milk sales, calculating auditorium seating capacities, egg crate packaging logistics, and farm worker wage distributions.",
+  "image_asset": {
+    "chapter_number": 6,
+    "image_id": "ch06_partial_products",
+    "file_name": "ch06_partial_products.png",
+    "local_url": "/assets/images/ch06_partial_products.png",
+    "aspect_ratio": "16:9",
+    "title": "2x2 Partial Product Grid Area Model",
+    "description": "Distributive property 2x2 partial product grid decomposing multi-digit multiplication.",
+    "hotspots": [
+      {
+        "label": "Cell 1: Tens x Tens",
+        "x_percent": 30.0,
+        "y_percent": 35.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
+      },
+      {
+        "label": "Cell 2: Tens x Ones",
+        "x_percent": 60.0,
+        "y_percent": 35.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
+      },
+      {
+        "label": "Cell 3: Ones x Tens",
+        "x_percent": 30.0,
+        "y_percent": 60.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
+      },
+      {
+        "label": "Cell 4: Ones x Ones",
+        "x_percent": 60.0,
+        "y_percent": 60.0,
+        "w_percent": 25.0,
+        "h_percent": 20.0
+      }
+    ]
+  },
+  "grade": "5",
+  "subject": "Maths",
+  "chapter_id": "G5-MAT-U01-C06"
+}

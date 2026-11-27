@@ -1,0 +1,137 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+  "image_asset": {
+    "title": "Dot arrays for triangular numbers T_n and step plot for Arithmetic Progression.",
+    "local_url": "/assets/images/ch8_sequences_progressions.png",
+    "hotspots": [
+      {
+        "id": "hs_triangular_dots",
+        "label": "Triangular Dot Arrays",
+        "x_percent": 30.0,
+        "y_percent": 50.0,
+        "w_percent": 22.0,
+        "h_percent": 22.0,
+        "tooltip": "Pattern T_n = n(n+1)/2 forming square numbers when consecutive arrays combine."
+      },
+      {
+        "id": "hs_ap_steps",
+        "label": "AP Step Plot",
+        "x_percent": 75.0,
+        "y_percent": 50.0,
+        "w_percent": 20.0,
+        "h_percent": 20.0,
+        "tooltip": "Constant step addition d = t_n - t_(n-1) forming a linear growth profile."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "section_number_and_title": "8.1 Pattern Rules, Triangular Numbers & Special Sequences",
+      "content": "Explicit rules compute term t_n directly from position n (e.g. t_n = 2n+1). Recursive rules compute t_n from preceding terms (e.g. t_n = t_(n-1) + d). Triangular numbers T_n = n(n+1)/2 satisfy T_n + T_(n-1) = n^2. Virahānka-Fibonacci sequence: V_1=1, V_2=1, V_n = V_(n-1) + V_(n-2).",
+      "key_takeaways": [
+        "Explicit rule calculates directly; recursive uses prior term.",
+        "T_n + T_(n-1) = n^2."
+      ]
+    },
+    {
+      "section_number_and_title": "8.2 Arithmetic Progressions (AP)",
+      "content": "An AP has constant common difference d = t_n - t_(n-1). Formula for nth term: t_n = a + (n-1)d. Sum of first n terms: S_n = (n/2)*[2a + (n-1)d] or S_n = (n/2)*[a + l].",
+      "key_takeaways": [
+        "t_n = a + (n-1)d.",
+        "S_n = (n/2)*(a + l)."
+      ]
+    },
+    {
+      "section_number_and_title": "8.3 Geometric Progressions (GP) & Fractals",
+      "content": "A GP has constant common ratio r = t_n / t_(n-1). Formula for nth term: t_n = a * r^(n-1). AP models linear additive growth; GP models exponential multiplicative growth. Fractals like Sierpiński triangle exhibit GP self-similarity.",
+      "key_takeaways": [
+        "t_n = a * r^(n-1).",
+        "GP models exponential growth."
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "table_title": "Key Conceptual Comparison - Ch 8",
+      "headers": [
+        "Concept A",
+        "Concept B",
+        "Distinguishing Feature"
+      ],
+      "rows": [
+        [
+          "Type 1",
+          "Type 2",
+          "Core Mathematical Distinction"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "d_ch8_01",
+      "title": "Mastering the Core Insight",
+      "exchanges": [
+        {
+          "speaker": "Aarav (Student)",
+          "avatar_role": "Student Explorer",
+          "speech_text": "How do we systematically approach the key concepts of Predicting What Comes Next: Exploring Sequences and Progressions?"
+        },
+        {
+          "speaker": "Dr. Sharma (Master Educator)",
+          "avatar_role": "Mathematics Mentor",
+          "speech_text": "By grounding ourselves in the fundamental definitions, visual models, and step-by-step rigorous proofs outlined in the chapter!"
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch8",
+      "experiment_title": "STEM Visual Verification - Ch 8",
+      "apparatus": [
+        "Graph Paper",
+        "Ruler",
+        "Compass",
+        "Scientific Calculator"
+      ],
+      "procedure": [
+        "Construct baseline geometric / coordinate figures according to chapter guidelines.",
+        "Measure side lengths, angles, or coordinate distances accurately.",
+        "Verify corresponding algebraic formulas against physical measurements."
+      ],
+      "observations": "Empirical measurements exactly match theoretical algebraic calculations.",
+      "interactive_controls": {
+        "slider_parameter": "Variable Input x",
+        "min_value": 1,
+        "max_value": 100,
+        "step": 1
+      }
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calc_id": "calc_ch8",
+      "formula_name": "Core Formula Evaluator Ch 8",
+      "expression": "Result = f(Inputs)",
+      "variables": [
+        {
+          "name": "x1",
+          "description": "First Input Variable"
+        },
+        {
+          "name": "x2",
+          "description": "Second Input Variable"
+        }
+      ],
+      "interactive_sample_inputs": {
+        "x1": 3,
+        "x2": 4
+      }
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C08"
+}

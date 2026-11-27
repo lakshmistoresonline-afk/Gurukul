@@ -1,0 +1,189 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "The World of Algorithms",
+  "unit_or_theme": "Algorithmic Logic & Computational Efficiency",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "This chapter introduces algorithmic reasoning, modulo arithmetic, and list data structures. It traces Greatest Common Divisor (GCD) algorithms from Euclidean iterative subtraction (O(N)) to Āryabhaṭa's division-by-remainder method (O(log N)).",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "11.1 Concept of an Algorithm and Lists",
+        "full_explanation": "An algorithm is a finite, ordered, unambiguous step-by-step procedure for solving a problem. Sequential lists store intermediate results during execution.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Historical Note",
+            "box_title": "Etymology",
+            "full_content": "The word 'algorithm' derives from 9th-century Persian scholar Muhammad ibn Musa al-Khwarizmi."
+          }
+        ]
+      },
+      {
+        "section_number_title": "11.2 Euclidean Subtraction vs Aryabhata Remainder Method",
+        "full_explanation": "Euclidean subtraction uses gcd(m, n) = gcd(n, m - n). Aryabhata's division algorithm uses remainder reduction gcd(m, n) = gcd(n, m mod n), dramatically reducing execution steps.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Efficiency Note",
+            "box_title": "Step Complexity",
+            "full_content": "gcd(99, 2) takes 49 steps in subtraction, but only 2 steps in remainder division."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Algorithm",
+        "definition": "A finite, ordered, unambiguous sequence of instructions to solve a problem.",
+        "contextual_example_or_usage": "Aryabhata's long division algorithm for finding GCD.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Modulo Operator (m mod n)",
+        "definition": "An operation that returns the integer remainder when m is divided by n.",
+        "contextual_example_or_usage": "17 mod 5 = 2 because 17 = 3 * 5 + 2.",
+        "associated_units_or_parts_of_speech": "Symbol / Operation"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Aryabhata Remainder GCD Rule",
+        "statement_or_expression": "gcd(m, n) = gcd(n, m mod n)",
+        "variable_definitions": "m, n: positive integers with m >= n",
+        "model_application_example": "gcd(35, 10) -> 35 mod 10 = 5 -> gcd(10, 5) -> 10 mod 5 = 0 -> GCD = 5."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Tracing Aryabhata GCD for (375, 825)",
+      "objective_or_aim": "Compute gcd(825, 375) step-by-step using remainder division.",
+      "materials_or_prerequisites": [
+        "Paper and pencil"
+      ],
+      "step_by_step_procedure": [
+        "Set m = 825, n = 375.",
+        "Compute 825 mod 375: 825 = 2 * 375 + 75 -> remainder = 75.",
+        "Set m = 375, n = 75.",
+        "Compute 375 mod 75: 375 = 5 * 75 + 0 -> remainder = 0.",
+        "Since n = 0, output m = 75 as GCD."
+      ],
+      "expected_observations_or_working": "Algorithm terminates in 2 steps.",
+      "scientific_or_logical_conclusion": "Remainder reduction minimizes step count logarithmically."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Fig 11.1: Geometric Tile Model of GCD Subtraction",
+        "labels_to_learn": [
+          "Segment m",
+          "Segment n",
+          "Difference (m - n)",
+          "Tile d"
+        ],
+        "drawing_or_labeling_instructions": "Draw line segment m and n, showing tile d divides both m and difference m - n.",
+        "key_structural_details": "Visualizes why common divisor divides difference."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Step Count Comparison: Subtraction vs Remainder GCD",
+        "headers": [
+          "Method",
+          "Step Rule",
+          "Steps for gcd(99, 2)",
+          "Complexity"
+        ],
+        "rows": [
+          [
+            "Euclidean Subtraction",
+            "gcd(m, n) -> gcd(n, m - n)",
+            "49 steps",
+            "Linear O(N)"
+          ],
+          [
+            "Aryabhata Remainder",
+            "gcd(m, n) -> gcd(n, m mod n)",
+            "2 steps",
+            "Logarithmic O(log N)"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 11.3",
+        "question_number": "Q2",
+        "question_text": "What happens when searching for common divisors starting from min(m, n) backwards to 1?",
+        "complete_step_by_step_solution": "The first number k that divides both m and n cleanly is guaranteed to be the Greatest Common Divisor, allowing immediate algorithm termination."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "Aryabhata's Aryabhatiya (499 CE) introduced long division using Indian place value numerals.",
+        "questions_and_answers": [
+          {
+            "question": "Why was place value notation critical?",
+            "answer": "Place value notation enabled rapid digit-by-digit division and remainder extraction."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "What is 33 mod 7?",
+        "options": [
+          "A) 4",
+          "B) 5",
+          "C) 2",
+          "D) 1"
+        ],
+        "correct_answer": "B",
+        "brief_explanation": "33 = 4 * 7 + 5, so the remainder is 5."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Prove that if d divides m and n, then d divides (m - n).",
+        "model_answer": "Let m = k1*d and n = k2*d. Then m - n = (k1 - k2)*d. Since (k1 - k2) is an integer, d divides (m - n).",
+        "key_marking_points": [
+          "Expressing m and n as multiples of d (1 mark)",
+          "Factoring d out of (m - n) (1 mark)"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "Trace Aryabhata's remainder algorithm step-by-step for gcd(540, 192). Compare step count with subtraction.",
+        "model_answer": "Step 1: 540 mod 192 = 156. Step 2: 192 mod 156 = 36. Step 3: 156 mod 36 = 12. Step 4: 36 mod 12 = 0. GCD = 12. Takes 4 remainder steps vs over 25 subtraction steps."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A program needs to calculate LCM(m, n) without integer overflow.",
+        "questions_and_answers": [
+          {
+            "question": "How can GCD be used to compute LCM safely?",
+            "answer": "Compute g = gcd(m, n), then compute safe LCM as (m // g) * n."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Confusing quotient with remainder when evaluating m mod n.",
+      "root_cause": "Failing to distinguish integer quotient from leftover remainder.",
+      "correct_approach": "Remember m mod n extracts strictly the integer remainder."
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U01-C11"
+}

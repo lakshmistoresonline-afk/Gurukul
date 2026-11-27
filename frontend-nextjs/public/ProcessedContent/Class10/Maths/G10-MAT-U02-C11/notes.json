@@ -1,0 +1,221 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "Areas Related to Circles",
+  "unit_or_theme": "Mensuration",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "Derives formulas for perimeter (circumference) and area of a circle, arc length of a sector (θ/360 * 2πr), area of sector (θ/360 * πr^2), and area of segment (Sector area - Triangle area).",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "11.1 Area of Sector & Segment of a Circle",
+        "full_explanation": "Sector: region enclosed by two radii and arc. Segment: region bounded by chord and arc. Sector Area = (θ/360) * πr^2. Arc Length = (θ/360) * 2πr.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Formula",
+            "box_title": "Sector Area",
+            "full_content": "Area = (θ/360) * πr^2"
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Sector of Circle",
+        "definition": "Region enclosed by two radii and the corresponding arc.",
+        "contextual_example_or_usage": "Slice of pie",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Segment of Circle",
+        "definition": "Region enclosed by a chord and the corresponding arc.",
+        "contextual_example_or_usage": "Minor segment below chord",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Sector and Arc Formulas",
+        "statement_or_expression": "Area of Sector = (θ/360) * πr^2; Arc Length l = (θ/360) * 2πr; Area of Segment = Area of Sector - Area of Δ",
+        "variable_definitions": "r = radius, θ = central angle in degrees",
+        "model_application_example": "For r=6cm, θ=60°: Sector Area = (60/360) * (22/7) * 36 = (1/6) * 36 * π = 6π cm^2."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Calculating Area swept by Minute Hand of Clock",
+      "objective_or_aim": "Find area swept in 5 minutes by hand of length 14 cm.",
+      "materials_or_prerequisites": [
+        "Sector formula"
+      ],
+      "step_by_step_procedure": [
+        "Angle swept in 60 min = 360°.",
+        "Angle in 5 min θ = (360/60) * 5 = 30°.",
+        "Area = (30/360) * (22/7) * 14^2 = (1/12) * (22/7) * 196 = 154/3 cm^2."
+      ],
+      "expected_observations_or_working": "Converting time duration to angle gives sector angle θ.",
+      "scientific_or_logical_conclusion": "Area swept is 51.33 cm^2."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Sector and Segment Regions",
+        "labels_to_learn": [
+          "Minor Sector",
+          "Major Sector",
+          "Minor Segment",
+          "Major Segment",
+          "Central Angle θ"
+        ],
+        "drawing_or_labeling_instructions": "Draw circle showing shaded sector bounded by radii and shaded segment bounded by chord.",
+        "key_structural_details": "Distinguish radii-bound sector vs chord-bound segment."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Circle Sub-region Formulas",
+        "headers": [
+          "Region",
+          "Formula"
+        ],
+        "rows": [
+          [
+            "Circumference",
+            "2πr"
+          ],
+          [
+            "Circle Area",
+            "πr^2"
+          ],
+          [
+            "Arc Length",
+            "(θ/360) * 2πr"
+          ],
+          [
+            "Sector Area",
+            "(θ/360) * πr^2"
+          ],
+          [
+            "Minor Segment Area",
+            "Sector Area - (1/2)r^2 sin θ"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 11.1",
+        "question_number": "Q1",
+        "question_text": "Find area of sector of circle with radius 6 cm if angle is 60°.",
+        "complete_step_by_step_solution": "Area = (60/360) * (22/7) * 6^2 = (1/6) * (22/7) * 36 = 132/7 cm^2."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "An arc is a continuous part of a circle. The area of a sector is proportional to its central angle...",
+        "questions_and_answers": [
+          {
+            "question": "What is sector area when θ = 360°?",
+            "answer": "The full area of the circle, πr^2."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Area of sector of angle p (in degrees) of circle with radius R is:",
+        "options": [
+          "(p/180)*2πR",
+          "(p/180)*πR^2",
+          "(p/360)*2πR",
+          "(p/720)*2πR^2"
+        ],
+        "correct_answer": "(p/720)*2πR^2",
+        "brief_explanation": "(p/720)*2πR^2 simplifies to (p/360)*πR^2."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Find area of quadrant of circle whose circumference is 22 cm.",
+        "model_answer": "2πr = 22 => 2(22/7)r = 22 => r = 7/2 cm. Quadrant area = (1/4) π r^2 = (1/4)*(22/7)*(49/4) = 77/8 cm^2.",
+        "key_marking_points": [
+          "Radius derivation",
+          "Quadrant fraction 1/4",
+          "Final area fraction"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "A chord of circle of radius 15 cm subtends 60° at center. Find areas of minor and major segments. (π=3.14, √3=1.73)",
+        "model_answer": "Sector area = (60/360)*3.14*225 = 117.75 cm^2. Area of equilateral Δ = (√3/4)*15^2 = (1.73/4)*225 = 97.3125 cm^2. Minor segment = 117.75 - 97.3125 = 20.4375 cm^2. Major segment = 3.14*225 - 20.4375 = 706.5 - 20.4375 = 686.0625 cm^2."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A brooch is made with silver wire in form of circle with diameter 35 mm. Wire also used in making 5 diameters dividing into 10 equal sectors.",
+        "questions_and_answers": [
+          {
+            "question": "Find total length of silver wire required.",
+            "answer": "Circumference + 5*Diameter = π(35) + 5(35) = (22/7)*35 + 175 = 110 + 175 = 285 mm."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Using circumference formula 2πr when area πr^2 is required in sector calculation.",
+      "root_cause": "Formula confusion between linear boundary and 2D surface.",
+      "correct_approach": "Arc length uses 2πr; Sector area uses πr^2."
+    }
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 11: Areas Related to Circles. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 11 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 11",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ],
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C11"
+}

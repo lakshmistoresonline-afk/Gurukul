@@ -1,0 +1,127 @@
+{
+  "chapter_number": 13,
+  "chapter_title": "Animal Jumps",
+  "mind_map": {
+    "root_node": "Animal Jumps (Multiples, Factors, LCM & Prime Numbers)",
+    "main_branches": [
+      {
+        "branch_title": "1. Multiples, Common Multiples & LCM",
+        "sub_branches": [
+          {
+            "sub_title": "Multiples & Number Line Jumps",
+            "key_nodes": [
+              "Multiple Definition: Product of a given whole number and any non-zero integer (e.g., Multiples of 3: 3, 6, 9, 12, 15...)",
+              "Infinite Property: Every non-zero number has infinitely many multiples",
+              "Rhythmic Jump Paths: Visualizing multiples as animal leaps along numbered stepping stones"
+            ],
+            "misconception_alert": "Thinking a number has a finite count of multiples (multiples continue endlessly).",
+            "formula_or_rule": "Multiple Sequence: M_n = k x n for k = 1, 2, 3, 4...",
+            "real_world_application": "Predicting leap frog landing spots and rhythmic music beats."
+          },
+          {
+            "sub_title": "Common Multiples & Least Common Multiple (LCM)",
+            "key_nodes": [
+              "Common Multiples: Numbers that are shared multiples of two or more given numbers (e.g., Common multiples of 3 and 5: 15, 30, 45...)",
+              "Least Common Multiple (LCM): First non-zero shared landing spot (e.g., LCM(3, 5) = 15)",
+              "Co-Prime LCM Rule: If A and B share no common factors, LCM(A, B) = A x B"
+            ],
+            "misconception_alert": "Selecting a common multiple that is not the smallest as the LCM.",
+            "formula_or_rule": "LCM Rule: First landing spot where two rhythmic jump sequences coincide.",
+            "real_world_application": "Determining when two bus routes synchronize at a shared stop and traffic light signals."
+          }
+        ]
+      },
+      {
+        "branch_title": "2. Factors, Tile Grids & Prime vs Composite Classification",
+        "sub_branches": [
+          {
+            "sub_title": "Factors & Rectangular Tile Arrays",
+            "key_nodes": [
+              "Factor Definition: Whole number that divides a target number completely with zero remainder",
+              "Rectangular Tile Arrangements: Arranging N tiles into solid rectangles reveals all factor pairs (e.g., 12 tiles -> 1x12, 2x6, 3x4 -> Factors: 1, 2, 3, 4, 6, 12)",
+              "Finite Factor Property: Every non-zero number has a finite count of factors; 1 and the number itself are always factors"
+            ],
+            "misconception_alert": "Confusing multiples with factors (multiples are equal to or larger than number; factors are equal to or smaller).",
+            "formula_or_rule": "Factor Test: A is a factor of B if B % A == 0.",
+            "real_world_application": "Arranging seats in equal rows, floor tile arrays, and cryptographic security."
+          },
+          {
+            "sub_title": "Prime vs Composite Number Taxonomy",
+            "key_nodes": [
+              "Prime Number: Whole number > 1 with EXACTLY 2 distinct factors (1 and itself, e.g., 2, 3, 5, 7, 11, 13, 17, 19, 23, 29)",
+              "Even Prime Exception: 2 is the ONLY even prime number",
+              "Composite Number: Whole number > 1 with MORE than 2 factors (e.g., 4, 6, 8, 9, 10)",
+              "Number 1 Special Status: Neither prime nor composite (has only 1 factor)"
+            ],
+            "misconception_alert": "Thinking all odd numbers are prime (e.g., 9, 15, 21, 25 are odd but composite).",
+            "formula_or_rule": "Prime Condition: Count(Factors) == 2.",
+            "real_world_application": "Cybersecurity encryption key generation and number theory puzzles."
+          }
+        ]
+      },
+      {
+        "branch_title": "3. Mental Divisibility Rules & Multiplier Boxes",
+        "sub_branches": [
+          {
+            "sub_title": "Divisibility Rules for 2, 3, 5, 10",
+            "key_nodes": [
+              "Divisibility by 2: Last digit is even (0, 2, 4, 6, 8)",
+              "Divisibility by 5: Last digit is 0 or 5",
+              "Divisibility by 10: Last digit is 0",
+              "Divisibility by 3: Sum of all digits is divisible by 3 (e.g., 123 -> 1+2+3=6, divisible by 3)"
+            ],
+            "misconception_alert": "Applying last-digit test to 3 instead of using sum of digits.",
+            "formula_or_rule": "Divisibility Rule by 3: If Sum(Digits) % 3 == 0, number is divisible by 3.",
+            "real_world_application": "Sorting items into equal packing crates without manual trial division."
+          },
+          {
+            "sub_title": "Multiplier Boxes & Grid Puzzles",
+            "key_nodes": [
+              "Multiplier Box Structure: Row and column header product matrices",
+              "Solving Missing Multipliers: Finding missing row/column headers using HCF of products",
+              "Digit Sum Magic of 9: Sum of digits of any multiple of 9 is always a multiple of 9"
+            ],
+            "misconception_alert": "Misidentifying common factors when filling multiplier box corners.",
+            "formula_or_rule": "Grid Multiplication Cell: Cell(i, j) = Row_Header(i) x Column_Header(j).",
+            "real_world_application": "Solving Kakuro mathematical logic puzzles and multiplication table practice."
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "chapter_number": 13,
+    "image_id": "ch13_animal_jumps_lcm",
+    "file_name": "ch13_animal_jumps_lcm.png",
+    "local_url": "/assets/images/ch13_animal_jumps_lcm.png",
+    "aspect_ratio": "16:9",
+    "title": "Animal Jump Number Line & Factor Tile Arrays",
+    "description": "Mowgli (2-unit) and Robby (3-unit) jump paths on a number line locating shared LCM spot at 6.",
+    "hotspots": [
+      {
+        "label": "2-Unit Jump Arcs",
+        "x_percent": 20.0,
+        "y_percent": 35.0,
+        "w_percent": 60.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "3-Unit Jump Arcs",
+        "x_percent": 20.0,
+        "y_percent": 55.0,
+        "w_percent": 60.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "First Common LCM Spot (6)",
+        "x_percent": 48.0,
+        "y_percent": 45.0,
+        "w_percent": 8.0,
+        "h_percent": 20.0
+      }
+    ]
+  },
+  "grade": "5",
+  "subject": "Maths",
+  "chapter_id": "G5-MAT-U01-C13"
+}

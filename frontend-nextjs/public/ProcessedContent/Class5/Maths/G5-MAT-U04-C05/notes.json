@@ -1,0 +1,88 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Far and Near",
+  "source_file": "eemm105.pdf",
+  "theme": "Metric Length Units & Conversions",
+  "conceptual_foundation": {
+    "introduction": "This chapter provides a comprehensive exploration of physical dimension measurement across various scales. Students learn to navigate the metric length hierarchy—from micro measurements like coin thickness (millimetres) and pencil lengths (centimetres) to room dimensions (metres) and inter-city travel distances (kilometres). The chapter uses double number lines as visual proportional models for unit conversions, compound length arithmetic, and map scale translations.",
+    "core_concepts": [
+      {
+        "concept": "Metric Length Hierarchy & Unit Conversion Scaling",
+        "explanation": "Units scale by powers of 10: 1 cm = 10 mm; 1 m = 100 cm = 1,000 mm; 1 km = 1,000 m = 100,000 cm. Converting larger units to smaller requires multiplication; converting smaller to larger requires division.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Convert 4.5 metres to centimetres.'\nRaman: '1 m = 100 cm. So 4.5 x 100 = 450 cm!'\nTeacher: 'Convert 3,500 metres to kilometres.'\nSheela: '1 km = 1,000 m. So 3,500 / 1,000 = 3.5 km!'",
+        "example": "Conversions:\n• 7 cm = 7 x 10 = 70 mm.\n• 4.5 m = 4.5 x 100 = 450 cm.\n• 2,500 m = 2,500 / 1,000 = 2.5 km."
+      },
+      {
+        "concept": "Double Number Line Proportional Mapping",
+        "explanation": "A visual tool displaying two parallel number lines with aligned equivalent measurements in different units (e.g., cm on top, mm on bottom), establishing proportional scaling intuition.\n\n[Instructional Dialogue Simulation]\nTeacher: 'On a double number line where 1 cm aligns with 10 mm, what aligns with 3.5 cm?'\nAnish: 'Halfway between 30 mm and 40 mm—35 mm!'\nTeacher: 'Perfect visual alignment!'",
+        "example": "Double Number Line Alignment:\n• Top (cm): 0 --- 1 --- 2 --- 3 --- 3.5 --- 4\n• Bottom (mm): 0 -- 10 -- 20 -- 30 --- 35 --- 40"
+      },
+      {
+        "concept": "Compound Length Arithmetic",
+        "explanation": "Adding and subtracting measurements given in mixed units (e.g., m and cm, or km and m) by converting to a single common unit or operating column-wise with regrouping.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Add 3 m 40 cm and 2 m 80 cm.'\nSheela: 'Centimetres: 40 + 80 = 120 cm = 1 m 20 cm. Metres: 3 + 2 + 1 = 6 m. Total = 6 m 20 cm!'",
+        "example": "Calculate 3 m 40 cm + 2 m 80 cm = 6 m 20 cm."
+      },
+      {
+        "concept": "Map Scale Translation",
+        "explanation": "Cartographic map scale translates small paper distances into large real-world ground distances (e.g., 1 cm on map = 10 km on ground).\n\n[Instructional Dialogue Simulation]\nTeacher: 'Map scale is 1 cm = 15 km. If two towns are 4 cm apart on map, what is the real distance?'\nRaman: 'Real distance = 4 x 15 = 60 km!'",
+        "example": "Map Scale Calculation:\n• Scale: 1 cm = 15 km.\n• Map Distance = 4 cm -> Ground Distance = 4 x 15 = 60 km."
+      },
+      {
+        "concept": "Measurement Object Selection Rules",
+        "explanation": "Choosing the appropriate metric unit based on order of magnitude: mm for micro thickness, cm for hand-held objects, m for rooms/fabric, km for geographical distances.\n\n[Instructional Dialogue Simulation]\nTeacher: 'Which unit would you use to measure coin thickness vs Delhi-Jaipur distance?'\nAnish: 'Coin thickness in mm, Delhi-Jaipur distance in km!'",
+        "example": "Unit Choices:\n• Coin thickness -> mm.\n• Pencil -> cm.\n• Room length -> m.\n• City distance -> km."
+      }
+    ]
+  },
+  "key_formulas_and_rules": [
+    "1 cm = 10 mm",
+    "1 m = 100 cm = 1,000 mm",
+    "1 km = 1,000 m = 100,000 cm",
+    "Conversion Rule (Large to Small): Value x Scaling Factor",
+    "Conversion Rule (Small to Large): Value / Scaling Factor",
+    "Ground Distance = Map Distance x Scale Ratio",
+    "Map Scale Ratio Formula: Actual Ground Distance = Map Distance x Scale Factor (e.g. 1 cm = 5 km => 7.5 cm = 37.5 km)."
+  ],
+  "real_world_applications": "Tailoring fabric cutting, athletic track race marking, architectural blueprint floor plans, road map navigation, and civil engineering distance surveys.",
+  "image_asset": {
+    "chapter_number": 5,
+    "image_id": "ch05_metric_scale",
+    "file_name": "ch05_metric_scale.png",
+    "local_url": "/assets/images/ch05_metric_scale.png",
+    "aspect_ratio": "16:9",
+    "title": "Metric Length Hierarchy & Double Number Line",
+    "description": "Double number line showing proportional metric conversions between mm, cm, m, and km.",
+    "hotspots": [
+      {
+        "label": "Millimetres (mm)",
+        "x_percent": 15.0,
+        "y_percent": 30.0,
+        "w_percent": 15.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Centimetres (cm)",
+        "x_percent": 35.0,
+        "y_percent": 30.0,
+        "w_percent": 15.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Metres (m)",
+        "x_percent": 55.0,
+        "y_percent": 30.0,
+        "w_percent": 15.0,
+        "h_percent": 15.0
+      },
+      {
+        "label": "Kilometres (km)",
+        "x_percent": 75.0,
+        "y_percent": 30.0,
+        "w_percent": 15.0,
+        "h_percent": 15.0
+      }
+    ]
+  },
+  "grade": "5",
+  "subject": "Maths",
+  "chapter_id": "G5-MAT-U01-C05"
+}

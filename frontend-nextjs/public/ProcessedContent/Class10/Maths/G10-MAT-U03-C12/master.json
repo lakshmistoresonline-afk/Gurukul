@@ -1,0 +1,172 @@
+{
+  "chapter_number": 12,
+  "chapter_title": "Surface Areas and Volumes",
+  "zero_omission_notes": {
+    "summary": "Focuses on surface areas and volumes of composite 3D figures combining cylinders, cones, spheres, hemispheres, and cubes.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "12.1 Surface Area of Combination of Solids",
+        "full_explanation": "Total Surface Area of combination = sum of exposed Curved Surface Areas. Exclude internal contacting faces.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Critical Principle",
+            "title": "Exposed Surface Only",
+            "content": "Add only exposed CSAs of component solids."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "12.2 Volume of Combination of Solids",
+        "full_explanation": "Total Volume = sum of individual volumes of constituent solids.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Volume Rule",
+            "title": "Additive Volume",
+            "content": "Total Vol = Vol1 + Vol2."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-1201",
+      "aim_or_objective": "Calculate TSA of toy (cone on hemisphere) radius 3.5 cm, height 15.5 cm.",
+      "materials_or_prerequisites": [
+        "Composite 3D geometry"
+      ],
+      "procedure_or_steps": [
+        "r = 3.5 cm",
+        "Cone height h = 15.5 - 3.5 = 12 cm",
+        "Slant height l = √(3.5^2 + 12^2) = √156.25 = 12.5 cm",
+        "TSA = CSA(cone) + CSA(hemisphere) = πrl + 2πr^2 = 214.5 cm^2"
+      ],
+      "observations_or_results": "TSA = 214.5 cm^2.",
+      "conclusion_or_principle": "Internal circular interface is excluded from TSA."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 12.1 Toy Solid Schema",
+        "labels_and_components": [
+          "Conical Top",
+          "Hemispherical Base",
+          "Shared Radius r",
+          "Slant Height l"
+        ],
+        "drawing_or_reading_instructions": "Draw cone sitting symmetrically on hemisphere.",
+        "structural_or_conceptual_explanation": "Layout of composite 3D solid."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "3D Solid Mensuration Formulas",
+        "headers": [
+          "Solid",
+          "CSA",
+          "TSA",
+          "Volume"
+        ],
+        "rows": [
+          [
+            "Cylinder",
+            "2πrh",
+            "2πr(h+r)",
+            "πr^2 h"
+          ],
+          [
+            "Cone",
+            "πrl",
+            "πr(l+r)",
+            "(1/3)πr^2 h"
+          ],
+          [
+            "Sphere",
+            "4πr^2",
+            "4πr^2",
+            "(4/3)πr^3"
+          ],
+          [
+            "Hemisphere",
+            "2πr^2",
+            "3πr^2",
+            "(2/3)πr^3"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Cone Slant Height Formula",
+      "definition_or_meaning": "Pythagorean relation between radius, height, and slant height.",
+      "si_unit_or_notation": "l = √(r^2 + h^2)",
+      "example_or_application": "r=3, h=4 -> l=5"
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 12.1 Q1",
+        "question": "Two cubes each of volume 64 cm^3 are joined end to end. Find surface area of resulting cuboid.",
+        "answer": "Side = 4 cm. Cuboid: l=8, b=4, h=4. SA = 2(32 + 16 + 32) = 160 cm^2."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Total surface area of solid hemisphere of radius r is:",
+        "options": [
+          "A) 2πr^2",
+          "B) 3πr^2",
+          "C) 4πr^2",
+          "D) (2/3)πr^3"
+        ],
+        "answer": "B",
+        "explanation": "TSA = CSA (2πr^2) + Base Area (πr^2) = 3πr^2."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Solid cone standing on hemisphere radius 1 cm, height equals radius. Find volume in terms of π.",
+        "answer": "Vol = (1/3)π(1)^3 + (2/3)π(1)^3 = π cm^3."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm, surmounted by another cylinder of height 60 cm and radius 8 cm. Find mass if 1 cm^3 iron = 8 g.",
+        "answer": "V1 = π (12^2) (220) = 31680 π cm^3. V2 = π (8^2) (60) = 3840 π cm^3. Total V = 35520 π = 111532.8 cm^3. Mass = 111532.8 * 8 g ≈ 892.26 kg."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "Tent cylindrical part height 2.1 m, diameter 4 m, conical top slant height 2.8 m. Find canvas area and cost at ₹500/m^2.",
+        "answer": "r = 2 m. Canvas Area = CSA(cyl) + CSA(cone) = 2πrh + πrl = πr(2h + l) = (22/7)*2*(4.2 + 2.8) = (44/7)*7 = 44 m^2. Cost = 44 * 500 = ₹22,000."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "Gulab jamun contains syrup ~30% of its volume. Cylinder with two hemispherical ends, length 5 cm, diameter 2.8 cm.",
+        "qa": [
+          {
+            "question": "Find volume of syrup in 45 gulab jamuns.",
+            "answer": "r = 1.4 cm, cyl height = 2.2 cm. Vol of 1 ≈ 25.05 cm^3. Total Vol = 45 * 25.05 = 1127.25 cm^3. Syrup = 30% = 338 cm^3."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Adding total surface areas of individual components when finding composite TSA.",
+        "correct_fact_or_method": "Joined internal faces are hidden and must NOT be included in TSA."
+      }
+    ]
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C12"
+}

@@ -1,0 +1,137 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Exploring Algebraic Identities",
+  "image_asset": {
+    "title": "Area decomposition proof of identity (a+b)^2 = a^2 + 2ab + b^2 using partitioned square regions.",
+    "local_url": "/assets/images/ch4_geometric_identities.png",
+    "hotspots": [
+      {
+        "id": "hs_a2",
+        "label": "Square a^2",
+        "x_percent": 30.0,
+        "y_percent": 30.0,
+        "w_percent": 25.0,
+        "h_percent": 25.0,
+        "tooltip": "Primary square region of side length a."
+      },
+      {
+        "id": "hs_ab",
+        "label": "Rectangles 2ab",
+        "x_percent": 65.0,
+        "y_percent": 30.0,
+        "w_percent": 20.0,
+        "h_percent": 25.0,
+        "tooltip": "Two congruent side rectangles each having area a * b."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "section_number_and_title": "4.1 Binomial & Trinomial Square Identities",
+      "content": "Identities hold true for all variable values. Binomial square (a+b)^2 = a^2 + 2ab + b^2 is proven geometrically by area decomposition of a square into two sub-squares and two rectangles. Difference of squares: a^2 - b^2 = (a-b)(a+b). Trinomial square: (a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca. Śhrīdharāchārya's method a^2 = (a+b)(a-b) + b^2 enables mental squaring.",
+      "key_takeaways": [
+        "(a+b)^2 - (a-b)^2 = 4ab.",
+        "Śhrīdharāchārya method simplifies mental arithmetic."
+      ]
+    },
+    {
+      "section_number_and_title": "4.2 Cubic Expansions & Conditional Identities",
+      "content": "Cube expansion (a+b)^3 = a^3 + b^3 + 3ab(a+b) decomposes geometrically into 2 cubes and 6 rectangular prisms. Sum of cubes: a^3 + b^3 = (a+b)(a^2 - ab + b^2); Difference of cubes: a^3 - b^3 = (a-b)(a^2 + ab + b^2). Conditional Identity: If a + b + c = 0, then a^3 + b^3 + c^3 = 3abc.",
+      "key_takeaways": [
+        "Volume decomposition visually proves cubic expansions.",
+        "Conditional identity 3abc applies whenever a+b+c=0."
+      ]
+    },
+    {
+      "section_number_and_title": "4.3 Factorisation of Polynomials",
+      "content": "Quadratic polynomials ax^2 + bx + c are factorised by splitting middle term b into p + q where p+q = b and p*q = a*c. Factor Theorem states that (x - r) is a factor of p(x) if and only if p(r) = 0.",
+      "key_takeaways": [
+        "p(r) = 0 implies (x - r) is a factor.",
+        "Splitting middle term converts quadratics to grouped factors."
+      ]
+    }
+  ],
+  "comparison_tables": [
+    {
+      "table_title": "Key Conceptual Comparison - Ch 4",
+      "headers": [
+        "Concept A",
+        "Concept B",
+        "Distinguishing Feature"
+      ],
+      "rows": [
+        [
+          "Type 1",
+          "Type 2",
+          "Core Mathematical Distinction"
+        ]
+      ]
+    }
+  ],
+  "scripted_dialogues": [
+    {
+      "dialogue_id": "d_ch4_01",
+      "title": "Mastering the Core Insight",
+      "exchanges": [
+        {
+          "speaker": "Aarav (Student)",
+          "avatar_role": "Student Explorer",
+          "speech_text": "How do we systematically approach the key concepts of Exploring Algebraic Identities?"
+        },
+        {
+          "speaker": "Dr. Sharma (Master Educator)",
+          "avatar_role": "Mathematics Mentor",
+          "speech_text": "By grounding ourselves in the fundamental definitions, visual models, and step-by-step rigorous proofs outlined in the chapter!"
+        }
+      ]
+    }
+  ],
+  "stem_lab_drawers": [
+    {
+      "drawer_id": "lab_ch4",
+      "experiment_title": "STEM Visual Verification - Ch 4",
+      "apparatus": [
+        "Graph Paper",
+        "Ruler",
+        "Compass",
+        "Scientific Calculator"
+      ],
+      "procedure": [
+        "Construct baseline geometric / coordinate figures according to chapter guidelines.",
+        "Measure side lengths, angles, or coordinate distances accurately.",
+        "Verify corresponding algebraic formulas against physical measurements."
+      ],
+      "observations": "Empirical measurements exactly match theoretical algebraic calculations.",
+      "interactive_controls": {
+        "slider_parameter": "Variable Input x",
+        "min_value": 1,
+        "max_value": 100,
+        "step": 1
+      }
+    }
+  ],
+  "formula_calculators": [
+    {
+      "calc_id": "calc_ch4",
+      "formula_name": "Core Formula Evaluator Ch 4",
+      "expression": "Result = f(Inputs)",
+      "variables": [
+        {
+          "name": "x1",
+          "description": "First Input Variable"
+        },
+        {
+          "name": "x2",
+          "description": "Second Input Variable"
+        }
+      ],
+      "interactive_sample_inputs": {
+        "x1": 3,
+        "x2": 4
+      }
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C04"
+}

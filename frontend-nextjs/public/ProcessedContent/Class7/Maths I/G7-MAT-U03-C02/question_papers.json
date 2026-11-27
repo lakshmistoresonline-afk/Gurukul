@@ -1,0 +1,734 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Arithmetic Expressions",
+  "question_papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Arithmetic Expressions (Priority & Laws)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the value of 39 - 2 * 6 + 11?",
+              "options": [
+                "A) 38",
+                "B) 233",
+                "C) 44",
+                "D) 211"
+              ],
+              "correct_answer": "A) 38",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which property is expressed by a * (b + c) = a * b + a * c?",
+              "options": [
+                "A) Commutative",
+                "B) Associative",
+                "C) Distributive",
+                "D) Identity"
+              ],
+              "correct_answer": "C) Distributive",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Subtracting a number 'b' from 'a' is equivalent to adding what?",
+              "options": [
+                "A) b",
+                "B) Additive inverse of b (-b)",
+                "C) Reciprocal of b",
+                "D) 0"
+              ],
+              "correct_answer": "B) Additive inverse of b (-b)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate 40 - 10 + 10 + 10 step by step from left to right.",
+              "marking_scheme_answer": "40 - 10 = 30; 30 + 10 = 40; 40 + 10 = 50. Final result = 50.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Expand and simplify -(15 - 8 + 3) by removing brackets.",
+              "marking_scheme_answer": "Invert signs inside bracket: -15 + 8 - 3 = -7 - 3 = -10.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Queen Alia gives 100 coins to Elsa and 100 to Anna. Elsa doubles her coins; Anna spends half. Write the single arithmetic expression and calculate total remaining coins.",
+              "marking_scheme_answer": "Expression: (100 * 2) + (100 / 2). Value = 200 + 50 = 250 coins.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate the expression 1 - 2 + 3 - 4 + 5 - 6 + 7 - 8 + 9 - 10 using two different grouping strategies and verify both give the same result.",
+              "marking_scheme_answer": "Strategy 1 (Pairing adjacent terms): (1-2) + (3-4) + (5-6) + (7-8) + (9-10) = (-1) + (-1) + (-1) + (-1) + (-1) = -5. Strategy 2 (Separating positive and negative terms): (1 + 3 + 5 + 7 + 9) - (2 + 4 + 6 + 8 + 10) = 25 - 30 = -5. Both strategies yield -5.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "A snail climbs 3 cm during the day and slips down 2 cm at night on a 10 cm vertical pole. Write the expression for net daily climb and determine on which day the snail reaches the top.",
+              "marking_scheme_answer": "Net daily climb = 3 - 2 = 1 cm per day. After 7 days, height reached = 7 * 1 = 7 cm. On day 8 daytime, the snail climbs 3 cm: 7 + 3 = 10 cm, reaching the top of the pole before slipping. Therefore, it reaches the top on Day 8.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch2_expressions_token_model",
+        "chapter_number": 2,
+        "chapter_title": "Arithmetic Expressions",
+        "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+        "file_name": "ch2_expressions_token_model.png",
+        "local_url": "/assets/images/ch2_expressions_token_model.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_2_1",
+            "title": "Term Partitioning & Order",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+          },
+          {
+            "hotspot_id": "hs_2_2",
+            "title": "Algebraic Laws of Arithmetic",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+          },
+          {
+            "hotspot_id": "hs_2_3",
+            "title": "Zero-Pair Token Model",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+          },
+          {
+            "hotspot_id": "hs_2_4",
+            "title": "Bracket Negation Rules",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Arithmetic Expressions (Bracket Removal & Terms)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the result of removing brackets from -(x - y)?",
+              "options": [
+                "A) -x - y",
+                "B) -x + y",
+                "C) x - y",
+                "D) x + y"
+              ],
+              "correct_answer": "B) -x + y",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In the expression 12 + 5 * 3 - 8 / 2, how many terms are separated by addition and subtraction?",
+              "options": [
+                "A) 2",
+                "B) 3",
+                "C) 4",
+                "D) 5"
+              ],
+              "correct_answer": "B) 3",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Evaluate 8 * (20 - 5) using the distributive property.",
+              "options": [
+                "A) 120",
+                "B) 160",
+                "C) 140",
+                "D) 100"
+              ],
+              "correct_answer": "A) 120",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate 12 + 5 * 3 - 8 / 2 by resolving term priorities.",
+              "marking_scheme_answer": "Term 1 = 12, Term 2 = 5*3 = 15, Term 3 = -(8/2) = -4. Expression = 12 + 15 - 4 = 23.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "State the Associative Property of Addition and illustrate with an example.",
+              "marking_scheme_answer": "(a + b) + c = a + (b + c). Example: (5 + 7) + 3 = 12 + 3 = 15; 5 + (7 + 3) = 5 + 10 = 15.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Binu earns ₹20,000 monthly. She spends ₹5,000 on rent, ₹5,000 on food, and ₹2,000 on transport. Write the annual savings expression and calculate total annual savings.",
+              "marking_scheme_answer": "Monthly savings = 20,000 - (5,000 + 5,000 + 2,000) = 20,000 - 12,000 = ₹8,000. Annual savings expression = 12 * (20,000 - 12,000) = 12 * 8,000 = ₹96,000.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Melvin reads 2 pages of a story book every day except Tuesdays and Saturdays. Write two distinct mathematical expressions for total pages read in 8 weeks, show their equivalence, and calculate total pages.",
+              "marking_scheme_answer": "Days read per week = 7 - 2 = 5 days. Expression 1: 8 * (7 - 2). Expression 2: 8 * 7 - 8 * 2 (by Distributive Law). Calculation: 8 * 5 = 40 days read. Total pages = 40 * 2 = 80 pages.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Explain using positive (+1) and negative (-1) token pairs why 15 - (-5) = 20. Draw or describe the cancellation model.",
+              "marking_scheme_answer": "Subtracting -5 is adding its additive inverse +5. Start with 15 positive tokens. Subtracting 5 negative tokens requires adding 5 zero pairs (+1 and -1). Removing 5 negative tokens leaves 15 positive + 5 positive = 20 positive tokens. Hence 15 - (-5) = 15 + 5 = 20.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch2_expressions_token_model",
+        "chapter_number": 2,
+        "chapter_title": "Arithmetic Expressions",
+        "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+        "file_name": "ch2_expressions_token_model.png",
+        "local_url": "/assets/images/ch2_expressions_token_model.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_2_1",
+            "title": "Term Partitioning & Order",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+          },
+          {
+            "hotspot_id": "hs_2_2",
+            "title": "Algebraic Laws of Arithmetic",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+          },
+          {
+            "hotspot_id": "hs_2_3",
+            "title": "Zero-Pair Token Model",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+          },
+          {
+            "hotspot_id": "hs_2_4",
+            "title": "Bracket Negation Rules",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Arithmetic Expressions (Algebraic Laws & Token Models)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which expression is equivalent to 5 * (100 + 4)?",
+              "options": [
+                "A) 5*100 + 4",
+                "B) 5*100 + 5*4",
+                "C) 500 + 4",
+                "D) 100 + 20"
+              ],
+              "correct_answer": "B) 5*100 + 5*4",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the additive inverse of -14?",
+              "options": [
+                "A) -14",
+                "B) 14",
+                "C) 1/14",
+                "D) 0"
+              ],
+              "correct_answer": "B) 14",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Simplify 25 - (10 - 4 + 2).",
+              "options": [
+                "A) 17",
+                "B) 21",
+                "C) 13",
+                "D) 19"
+              ],
+              "correct_answer": "A) 17",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate 18 + (-10) + (-8) + 20 using term rearrangement.",
+              "marking_scheme_answer": "(18 + 20) + [(-10) + (-8)] = 38 + (-18) = 20.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Verify the Commutative Property of Addition for a = -12 and b = 25.",
+              "marking_scheme_answer": "a + b = -12 + 25 = 13. b + a = 25 + (-12) = 13. Since both equal 13, commutativity holds.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "A shopkeeper buys 50 notebooks at ₹30 each and sells 30 notebooks at ₹40 each and 20 at ₹35 each. Write an expression for total profit and evaluate it.",
+              "marking_scheme_answer": "Total cost = 50 * 30 = ₹1500. Total revenue = (30 * 40) + (20 * 35) = 1200 + 700 = ₹1900. Profit expression = (30*40 + 20*35) - 50*30 = 1900 - 1500 = ₹400 profit.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Simplify the nested expression 100 - [20 + {50 - (10 + 5)}] step by step from innermost to outermost brackets.",
+              "marking_scheme_answer": "Step 1 (Innermost parentheses): 10 + 5 = 15. Expression = 100 - [20 + {50 - 15}]. Step 2 (Curly brackets): 50 - 15 = 35. Expression = 100 - [20 + 35]. Step 3 (Square brackets): 20 + 35 = 55. Step 4: 100 - 55 = 45.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "A water reservoir level changes daily: +50 cm, -20 cm, -15 cm, +40 cm, -30 cm over 5 days. Write the overall expression, explain the token sign model, and compute net level change.",
+              "marking_scheme_answer": "Expression = (+50) + (-20) + (-15) + (+40) + (-30). Group positive gains: 50 + 40 = +90 cm. Group negative losses: (-20) + (-15) + (-30) = -65 cm. Net change = 90 + (-65) = +25 cm (increase of 25 cm).",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch2_expressions_token_model",
+        "chapter_number": 2,
+        "chapter_title": "Arithmetic Expressions",
+        "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+        "file_name": "ch2_expressions_token_model.png",
+        "local_url": "/assets/images/ch2_expressions_token_model.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_2_1",
+            "title": "Term Partitioning & Order",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+          },
+          {
+            "hotspot_id": "hs_2_2",
+            "title": "Algebraic Laws of Arithmetic",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+          },
+          {
+            "hotspot_id": "hs_2_3",
+            "title": "Zero-Pair Token Model",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+          },
+          {
+            "hotspot_id": "hs_2_4",
+            "title": "Bracket Negation Rules",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Arithmetic Expressions (Real-World Applications)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the value of 50 - 5 * 4 + 6 / 2?",
+              "options": [
+                "A) 33",
+                "B) 23",
+                "C) 93",
+                "D) 18"
+              ],
+              "correct_answer": "A) 33",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If a - b = a + k, what is k?",
+              "options": [
+                "A) b",
+                "B) -b",
+                "C) 1/b",
+                "D) 0"
+              ],
+              "correct_answer": "B) -b",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Simplify -(a - b + c).",
+              "options": [
+                "A) -a - b - c",
+                "B) -a + b - c",
+                "C) -a + b + c",
+                "D) a - b - c"
+              ],
+              "correct_answer": "B) -a + b - c",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate 100 - 4 * 5 * 2 using operational priority.",
+              "marking_scheme_answer": "4 * 5 * 2 = 40. 100 - 40 = 60.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Express 15 * 98 using the Distributive Property as 15 * (100 - 2) and evaluate.",
+              "marking_scheme_answer": "15 * (100 - 2) = 15*100 - 15*2 = 1500 - 30 = 1470.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "A stock price starts at ₹150, rises by ₹12, drops by ₹25, rises by ₹18, and drops by ₹10. Write the single line expression and calculate final price.",
+              "marking_scheme_answer": "Expression = 150 + 12 - 25 + 18 - 10. Positive additions = 150 + 12 + 18 = 180. Negative subtractions = 25 + 10 = 35. Final price = 180 - 35 = ₹145.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A school orders 12 boxes of blue pens (20 pens per box at ₹10 each) and 12 boxes of red pens (10 pens per box at ₹10 each). Write a factored distributive expression for total cost and compute the amount.",
+              "marking_scheme_answer": "Cost per blue box = 20 * 10 = ₹200. Cost per red box = 10 * 10 = ₹100. Factored expression = 12 * (200 + 100) = 12 * 300 = ₹3,600.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Prove why subtraction is neither commutative nor associative using concrete counterexamples for numbers a = 10, b = 6, c = 2.",
+              "marking_scheme_answer": "Commutativity check: a - b = 10 - 6 = 4; b - a = 6 - 10 = -4. Since 4 != -4, subtraction is NOT commutative. Associativity check: (a - b) - c = (10 - 6) - 2 = 4 - 2 = 2; a - (b - c) = 10 - (6 - 2) = 10 - 4 = 6. Since 2 != 6, subtraction is NOT associative.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch2_expressions_token_model",
+        "chapter_number": 2,
+        "chapter_title": "Arithmetic Expressions",
+        "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+        "file_name": "ch2_expressions_token_model.png",
+        "local_url": "/assets/images/ch2_expressions_token_model.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_2_1",
+            "title": "Term Partitioning & Order",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+          },
+          {
+            "hotspot_id": "hs_2_2",
+            "title": "Algebraic Laws of Arithmetic",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+          },
+          {
+            "hotspot_id": "hs_2_3",
+            "title": "Zero-Pair Token Model",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+          },
+          {
+            "hotspot_id": "hs_2_4",
+            "title": "Bracket Negation Rules",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Arithmetic Expressions (Comprehensive Assessment)",
+      "total_marks": 20,
+      "time_allowed_minutes": 45,
+      "teacher_rubric_overlay": {
+        "section_a_rubric": "1 mark per correct MCQ answer. No negative marking.",
+        "section_b_rubric": "1 mark for correct formula/setup, 1-2 marks for step-by-step evaluation.",
+        "section_c_rubric": "2 marks for logical proof structure, 2-3 marks for final numerical accuracy.",
+        "common_mistake_deductions": "Deduct 0.5 marks for missing units or improper place-value comma placement."
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the value of (12 + 8) * (15 - 5) / 10?",
+              "options": [
+                "A) 20",
+                "B) 200",
+                "C) 10",
+                "D) 40"
+              ],
+              "correct_answer": "A) 20",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In the expression 50 - (20 + 10), what is the correct result after removing parentheses?",
+              "options": [
+                "A) 50 - 20 + 10 = 40",
+                "B) 50 - 20 - 10 = 20",
+                "C) 50 + 20 + 10 = 80",
+                "D) 50 + 20 - 10 = 60"
+              ],
+              "correct_answer": "B) 50 - 20 - 10 = 20",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "question_text": "Additive inverse of (x + y) is:",
+              "options": [
+                "A) x - y",
+                "B) -x - y",
+                "C) y - x",
+                "D) x + y"
+              ],
+              "correct_answer": "B) -x - y",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Evaluate 14 + 6 * (8 - 3) / 5.",
+              "marking_scheme_answer": "Parentheses first: 8 - 3 = 5. Multiplication/Division: 6 * 5 / 5 = 6. Sum = 14 + 6 = 20.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Compute 25 * 104 using distribution.",
+              "marking_scheme_answer": "25 * (100 + 4) = 25*100 + 25*4 = 2500 + 100 = 2600.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "An elevator starts on floor 0, ascends 14 floors, descends 8 floors, ascends 5 floors, and descends 12 floors. Write the integer expression and find its final floor.",
+              "marking_scheme_answer": "Expression = 0 + 14 - 8 + 5 - 12. Gains = 14 + 5 = 19. Losses = 8 + 12 = 20. Final floor = 19 - 20 = -1 (Basement floor 1).",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A sports stadium sells 500 VIP tickets at ₹1,000, 2,000 Standard tickets at ₹500, and 1,000 Student tickets at ₹200. Expenses for organizing are ₹500,000. Write the total net profit expression and compute the net profit.",
+              "marking_scheme_answer": "Revenue expression = (500 * 1000) + (2000 * 500) + (1000 * 200) = 500,000 + 1,000,000 + 200,000 = ₹1,700,000. Expense = ₹500,000. Net profit expression = 1,700,000 - 500,000 = ₹1,200,000 (₹12 Lakhs).",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the value of the alternating sum series S = 100 - 95 + 90 - 85 + 80 - 75 + ... + 10 - 5 using grouping pairs.",
+              "marking_scheme_answer": "Pair adjacent positive and negative terms: (100 - 95) + (90 - 85) + (80 - 75) + ... + (10 - 5). Each pair equals 5. Total terms = 20 numbers (from 5 to 100 in steps of 5) => 10 pairs. Total sum S = 10 * 5 = 50.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "image_asset": {
+        "asset_id": "ch2_expressions_token_model",
+        "chapter_number": 2,
+        "chapter_title": "Arithmetic Expressions",
+        "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+        "file_name": "ch2_expressions_token_model.png",
+        "local_url": "/assets/images/ch2_expressions_token_model.png",
+        "aspect_ratio": "16:9",
+        "width_px": 1600,
+        "height_px": 900,
+        "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+        "hotspots": [
+          {
+            "hotspot_id": "hs_2_1",
+            "title": "Term Partitioning & Order",
+            "x_percent": 3.125,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+          },
+          {
+            "hotspot_id": "hs_2_2",
+            "title": "Algebraic Laws of Arithmetic",
+            "x_percent": 51.875,
+            "y_percent": 53.33,
+            "w_percent": 45.0,
+            "h_percent": 32.22,
+            "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+          },
+          {
+            "hotspot_id": "hs_2_3",
+            "title": "Zero-Pair Token Model",
+            "x_percent": 3.125,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+          },
+          {
+            "hotspot_id": "hs_2_4",
+            "title": "Bracket Negation Rules",
+            "x_percent": 51.875,
+            "y_percent": 11.11,
+            "w_percent": 45.0,
+            "h_percent": 37.78,
+            "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+          }
+        ]
+      }
+    }
+  ],
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C02"
+}

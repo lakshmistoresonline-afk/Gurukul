@@ -1,0 +1,125 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "A Tale of Three Intersecting Lines",
+  "quiz_config": {
+    "timer_seconds": 600,
+    "total_questions": 4,
+    "passing_score_percent": 75
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "level": "Level 1 (Easy)",
+      "question_type": "MCQ",
+      "question": "Which of the following sets of line segment lengths can successfully form a triangle?",
+      "options": [
+        "A) 1 cm, 2 cm, 3 cm",
+        "B) 3 cm, 3 cm, 7 cm",
+        "C) 5 cm, 10 cm, 12 cm",
+        "D) 2 cm, 4 cm, 8 cm"
+      ],
+      "correct_answer": "C) 5 cm, 10 cm, 12 cm",
+      "hint_modal": "Recall core principles from Chapter 7: By the Triangle Inequality Theorem, the sum of the two small...",
+      "solution_key": {
+        "part1_given": "Given problem context from Chapter 7",
+        "part2_method": "Apply exact mathematical formula or logical deduction step",
+        "part3_conclusion": "By the Triangle Inequality Theorem, the sum of the two smaller sides must be strictly greater than the longest side. For C: 5 + 10 = 15 > 12 (Valid). For A: 1 + 2 = 3 (Invalid). For B: 3 + 3 = 6 < 7 (Invalid). For D: 2 + 4 = 6 < 8 (Invalid)."
+      }
+    },
+    {
+      "question_id": 2,
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "A triangle in which all three sides have distinct, unequal lengths is called a ____ triangle.",
+      "options": [],
+      "correct_answer": "scalene",
+      "hint_modal": "Recall core principles from Chapter 7: By classification: Equilateral has 3 equal sides, Isosceles ...",
+      "solution_key": {
+        "part1_given": "Given problem context from Chapter 7",
+        "part2_method": "Apply exact mathematical formula or logical deduction step",
+        "part3_conclusion": "By classification: Equilateral has 3 equal sides, Isosceles has 2 equal sides, and Scalene has 3 unequal sides."
+      }
+    },
+    {
+      "question_id": 3,
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer / Range Finding",
+      "question": "Two sides of a triangle measure 6 cm and 10 cm. What is the allowable range of lengths for the third side 'x'?",
+      "options": [],
+      "correct_answer": "4 cm < x < 16 cm",
+      "hint_modal": "Recall core principles from Chapter 7: Upper limit: x < 6 + 10 => x < 16 cm. Lower limit: x + 6 > 1...",
+      "solution_key": {
+        "part1_given": "Given problem context from Chapter 7",
+        "part2_method": "Apply exact mathematical formula or logical deduction step",
+        "part3_conclusion": "Upper limit: x < 6 + 10 => x < 16 cm. Lower limit: x + 6 > 10 => x > 4 cm. Thus, 4 cm < x < 16 cm."
+      }
+    },
+    {
+      "question_id": 4,
+      "level": "Level 3 (Hard)",
+      "question_type": "Case-Study & Critical Reasoning",
+      "question": "A surveyor maps three town positions A, B, C with road distances AB = 12 km, BC = 20 km, and AC = 40 km. The map claims A, B, C form a triangular path. Is this claim accurate? Explain.",
+      "options": [],
+      "correct_answer": "Inaccurate (32 km < 40 km)",
+      "hint_modal": "Recall core principles from Chapter 7: Sum of two shorter distances AB + BC = 12 + 20 = 32 km. Long...",
+      "solution_key": {
+        "part1_given": "Given problem context from Chapter 7",
+        "part2_method": "Apply exact mathematical formula or logical deduction step",
+        "part3_conclusion": "Sum of two shorter distances AB + BC = 12 + 20 = 32 km. Longest distance AC = 40 km. Since 32 km < 40 km, the sum of two sides is less than the third side, violating the Triangle Inequality Theorem. Towns A, B, C cannot form a triangle."
+      }
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch7_triangle_inequality_detour",
+    "chapter_number": 7,
+    "chapter_title": "A Tale of Three Intersecting Lines",
+    "title": "Direct Path vs Detour & Triangle Inequality Diagram",
+    "file_name": "ch7_triangle_inequality_detour.png",
+    "local_url": "/assets/images/ch7_triangle_inequality_detour.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Direct path vs detour geometry, triangle inequality theorem, side classification, and compass arc feasibility.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_7_1",
+        "title": "Direct Path vs Detour",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Direct straight path c is strictly shorter than detour path a + b (c < a + b => a + b > c)."
+      },
+      {
+        "hotspot_id": "hs_7_2",
+        "title": "Triangle Inequality Theorem",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Sum of any 2 sides > 3rd side (a+b>c, b+c>a, c+a>b). Test: Smallest two sum > longest side."
+      },
+      {
+        "hotspot_id": "hs_7_3",
+        "title": "Side-Based Classification",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Equilateral (a=b=c, always valid for s>0), Isosceles (a=b!=c), Scalene (a!=b!=c)."
+      },
+      {
+        "hotspot_id": "hs_7_4",
+        "title": "Compass Arc Construction",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Compass arcs of radii a and b intersect to locate 3rd vertex iff a + b > c. Arcs fail if a + b <= c."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C07"
+}

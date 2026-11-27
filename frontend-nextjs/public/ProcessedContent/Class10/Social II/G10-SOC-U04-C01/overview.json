@@ -1,652 +1,83 @@
 {
-  "schema_version": "2.0.0",
-  "record_id": "gurukul_b082ee2566ace03d",
-  "record_type": "source_artifact",
-  "curriculum": {
-    "curriculum_id": null,
-    "board_id": null,
-    "class_id": "class_10",
-    "class_level": 10
-  },
-  "subject": "Social II",
-  "artifact": {
-    "artifact_type": "overview",
-    "source_file_name": "01-Overview.json",
-    "source_relative_path": "Contents/Class 10/Social II/Source Files/01-Overview.json",
-    "source_format": "json"
-  },
-  "source_integrity": {
-    "source_file_sha256": "42309949beb6029f287863f70aabf6553305b4aa2d1867f002a6b96eca614110",
-    "source_semantic_sha256": "f4c2d0442a131e9872464906c26500f8e01c9886c04eed62e08de4b298db8050",
-    "source_byte_length": 12751,
-    "source_encoding": "utf-8",
-    "source_field_count": 164,
-    "field_inventory": [
-      "$.subject",
-      "$.grade_level",
-      "$.resource_type",
-      "$.dashboard_ui_config",
-      "$.dashboard_ui_config.theme",
-      "$.dashboard_ui_config.layout",
-      "$.dashboard_ui_config.sidebar_nav",
-      "$.dashboard_ui_config.active_widgets",
-      "$.dashboard_ui_config.refresh_rate_ms",
-      "$.chapters",
-      "$.chapters[0].chapter_number",
-      "$.chapters[0].chapter_title",
-      "$.chapters[0].executive_summary",
-      "$.chapters[0].storyboard",
-      "$.chapters[0].storyboard[0].frame_id",
-      "$.chapters[0].storyboard[0].title",
-      "$.chapters[0].storyboard[0].description",
-      "$.chapters[0].storyboard[0].key_takeaway",
-      "$.chapters[0].storyboard[1].frame_id",
-      "$.chapters[0].storyboard[1].title",
-      "$.chapters[0].storyboard[1].description",
-      "$.chapters[0].storyboard[1].key_takeaway",
-      "$.chapters[0].storyboard[2].frame_id",
-      "$.chapters[0].storyboard[2].title",
-      "$.chapters[0].storyboard[2].description",
-      "$.chapters[0].storyboard[2].key_takeaway",
-      "$.chapters[0].video_embeds",
-      "$.chapters[0].video_embeds[0].video_id",
-      "$.chapters[0].video_embeds[0].title",
-      "$.chapters[0].video_embeds[0].duration",
-      "$.chapters[0].video_embeds[0].video_url",
-      "$.chapters[0].video_embeds[0].transcript_summary",
-      "$.chapters[0].hotspot_overlays",
-      "$.chapters[0].hotspot_overlays.image_url",
-      "$.chapters[0].hotspot_overlays.aspect_ratio",
-      "$.chapters[0].hotspot_overlays.hotspots",
-      "$.chapters[0].hotspot_overlays.hotspots[0].id",
-      "$.chapters[0].hotspot_overlays.hotspots[0].x_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[0].y_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[0].w_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[0].h_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[0].popover_title",
-      "$.chapters[0].hotspot_overlays.hotspots[0].popover_content",
-      "$.chapters[0].hotspot_overlays.hotspots[1].id",
-      "$.chapters[0].hotspot_overlays.hotspots[1].x_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[1].y_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[1].w_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[1].h_percent",
-      "$.chapters[0].hotspot_overlays.hotspots[1].popover_title",
-      "$.chapters[0].hotspot_overlays.hotspots[1].popover_content",
-      "$.chapters[0].key_terms",
-      "$.chapters[0].key_takeaways",
-      "$.chapters[1].chapter_number",
-      "$.chapters[1].chapter_title",
-      "$.chapters[1].executive_summary",
-      "$.chapters[1].storyboard",
-      "$.chapters[1].storyboard[0].frame_id",
-      "$.chapters[1].storyboard[0].title",
-      "$.chapters[1].storyboard[0].description",
-      "$.chapters[1].storyboard[0].key_takeaway",
-      "$.chapters[1].storyboard[1].frame_id",
-      "$.chapters[1].storyboard[1].title",
-      "$.chapters[1].storyboard[1].description",
-      "$.chapters[1].storyboard[1].key_takeaway",
-      "$.chapters[1].video_embeds",
-      "$.chapters[1].video_embeds[0].video_id",
-      "$.chapters[1].video_embeds[0].title",
-      "$.chapters[1].video_embeds[0].duration",
-      "$.chapters[1].video_embeds[0].video_url",
-      "$.chapters[1].video_embeds[0].transcript_summary",
-      "$.chapters[1].hotspot_overlays",
-      "$.chapters[1].hotspot_overlays.image_url",
-      "$.chapters[1].hotspot_overlays.aspect_ratio",
-      "$.chapters[1].hotspot_overlays.hotspots",
-      "$.chapters[1].hotspot_overlays.hotspots[0].id",
-      "$.chapters[1].hotspot_overlays.hotspots[0].x_percent",
-      "$.chapters[1].hotspot_overlays.hotspots[0].y_percent",
-      "$.chapters[1].hotspot_overlays.hotspots[0].w_percent",
-      "$.chapters[1].hotspot_overlays.hotspots[0].h_percent",
-      "$.chapters[1].hotspot_overlays.hotspots[0].popover_title",
-      "$.chapters[1].hotspot_overlays.hotspots[0].popover_content",
-      "$.chapters[1].key_terms",
-      "$.chapters[1].key_takeaways",
-      "$.chapters[2].chapter_number",
-      "$.chapters[2].chapter_title",
-      "$.chapters[2].executive_summary",
-      "$.chapters[2].storyboard",
-      "$.chapters[2].storyboard[0].frame_id",
-      "$.chapters[2].storyboard[0].title",
-      "$.chapters[2].storyboard[0].description",
-      "$.chapters[2].storyboard[0].key_takeaway",
-      "$.chapters[2].video_embeds",
-      "$.chapters[2].video_embeds[0].video_id",
-      "$.chapters[2].video_embeds[0].title",
-      "$.chapters[2].video_embeds[0].duration",
-      "$.chapters[2].video_embeds[0].video_url",
-      "$.chapters[2].video_embeds[0].transcript_summary",
-      "$.chapters[2].hotspot_overlays",
-      "$.chapters[2].hotspot_overlays.image_url",
-      "$.chapters[2].hotspot_overlays.aspect_ratio",
-      "$.chapters[2].hotspot_overlays.hotspots",
-      "$.chapters[2].hotspot_overlays.hotspots[0].id",
-      "$.chapters[2].hotspot_overlays.hotspots[0].x_percent",
-      "$.chapters[2].hotspot_overlays.hotspots[0].y_percent",
-      "$.chapters[2].hotspot_overlays.hotspots[0].w_percent",
-      "$.chapters[2].hotspot_overlays.hotspots[0].h_percent",
-      "$.chapters[2].hotspot_overlays.hotspots[0].popover_title",
-      "$.chapters[2].hotspot_overlays.hotspots[0].popover_content",
-      "$.chapters[2].key_terms",
-      "$.chapters[2].key_takeaways",
-      "$.chapters[3].chapter_number",
-      "$.chapters[3].chapter_title",
-      "$.chapters[3].executive_summary",
-      "$.chapters[3].storyboard",
-      "$.chapters[3].storyboard[0].frame_id",
-      "$.chapters[3].storyboard[0].title",
-      "$.chapters[3].storyboard[0].description",
-      "$.chapters[3].storyboard[0].key_takeaway",
-      "$.chapters[3].video_embeds",
-      "$.chapters[3].video_embeds[0].video_id",
-      "$.chapters[3].video_embeds[0].title",
-      "$.chapters[3].video_embeds[0].duration",
-      "$.chapters[3].video_embeds[0].video_url",
-      "$.chapters[3].video_embeds[0].transcript_summary",
-      "$.chapters[3].hotspot_overlays",
-      "$.chapters[3].hotspot_overlays.image_url",
-      "$.chapters[3].hotspot_overlays.aspect_ratio",
-      "$.chapters[3].hotspot_overlays.hotspots",
-      "$.chapters[3].hotspot_overlays.hotspots[0].id",
-      "$.chapters[3].hotspot_overlays.hotspots[0].x_percent",
-      "$.chapters[3].hotspot_overlays.hotspots[0].y_percent",
-      "$.chapters[3].hotspot_overlays.hotspots[0].w_percent",
-      "$.chapters[3].hotspot_overlays.hotspots[0].h_percent",
-      "$.chapters[3].hotspot_overlays.hotspots[0].popover_title",
-      "$.chapters[3].hotspot_overlays.hotspots[0].popover_content",
-      "$.chapters[3].key_terms",
-      "$.chapters[3].key_takeaways",
-      "$.chapters[4].chapter_number",
-      "$.chapters[4].chapter_title",
-      "$.chapters[4].executive_summary",
-      "$.chapters[4].storyboard",
-      "$.chapters[4].storyboard[0].frame_id",
-      "$.chapters[4].storyboard[0].title",
-      "$.chapters[4].storyboard[0].description",
-      "$.chapters[4].storyboard[0].key_takeaway",
-      "$.chapters[4].video_embeds",
-      "$.chapters[4].video_embeds[0].video_id",
-      "$.chapters[4].video_embeds[0].title",
-      "$.chapters[4].video_embeds[0].duration",
-      "$.chapters[4].video_embeds[0].video_url",
-      "$.chapters[4].video_embeds[0].transcript_summary",
-      "$.chapters[4].hotspot_overlays",
-      "$.chapters[4].hotspot_overlays.image_url",
-      "$.chapters[4].hotspot_overlays.aspect_ratio",
-      "$.chapters[4].hotspot_overlays.hotspots",
-      "$.chapters[4].hotspot_overlays.hotspots[0].id",
-      "$.chapters[4].hotspot_overlays.hotspots[0].x_percent",
-      "$.chapters[4].hotspot_overlays.hotspots[0].y_percent",
-      "$.chapters[4].hotspot_overlays.hotspots[0].w_percent",
-      "$.chapters[4].hotspot_overlays.hotspots[0].h_percent",
-      "$.chapters[4].hotspot_overlays.hotspots[0].popover_title",
-      "$.chapters[4].hotspot_overlays.hotspots[0].popover_content",
-      "$.chapters[4].key_terms",
-      "$.chapters[4].key_takeaways"
-    ]
-  },
-  "academic_index": {
-    "chapter_candidates": [
-      {
-        "source_path": "$.chapters[0]",
-        "source_title_field": "chapter_title",
-        "source_title": "Development",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.chapters[0].storyboard[0]",
-        "source_title_field": "title",
-        "source_title": "Different People, Different Goals",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[0].storyboard[1]",
-        "source_title_field": "title",
-        "source_title": "Income vs. Human Indicators",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[0].storyboard[2]",
-        "source_title_field": "title",
-        "source_title": "Ecological Balance & Sustainability",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[0].video_embeds[0]",
-        "source_title_field": "title",
-        "source_title": "Understanding Human Development Index & PCI",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[1]",
-        "source_title_field": "chapter_title",
-        "source_title": "Sectors of the Indian Economy",
-        "source_number_field": "chapter_number",
-        "source_number": 2
-      },
-      {
-        "source_path": "$.chapters[1].storyboard[0]",
-        "source_title_field": "title",
-        "source_title": "The Three Economic Sectors",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[1].storyboard[1]",
-        "source_title_field": "title",
-        "source_title": "Disguised Unemployment in Farming",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[1].video_embeds[0]",
-        "source_title_field": "title",
-        "source_title": "Organised vs Unorganised Sectors & MGNREGA",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[2]",
-        "source_title_field": "chapter_title",
-        "source_title": "Money and Credit",
-        "source_number_field": "chapter_number",
-        "source_number": 3
-      },
-      {
-        "source_path": "$.chapters[2].storyboard[0]",
-        "source_title_field": "title",
-        "source_title": "Barter vs Modern Currency",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[2].video_embeds[0]",
-        "source_title_field": "title",
-        "source_title": "Formal Banking & Self-Help Groups (SHGs)",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[3]",
-        "source_title_field": "chapter_title",
-        "source_title": "Globalisation and the Indian Economy",
-        "source_number_field": "chapter_number",
-        "source_number": 4
-      },
-      {
-        "source_path": "$.chapters[3].storyboard[0]",
-        "source_title_field": "title",
-        "source_title": "MNC Global Supply Chains",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[3].video_embeds[0]",
-        "source_title_field": "title",
-        "source_title": "1991 Liberalisation & WTO Governance",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[4]",
-        "source_title_field": "chapter_title",
-        "source_title": "Consumer Rights",
-        "source_number_field": "chapter_number",
-        "source_number": 5
-      },
-      {
-        "source_path": "$.chapters[4].storyboard[0]",
-        "source_title_field": "title",
-        "source_title": "Market Exploitation to Statutory Rights",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters[4].video_embeds[0]",
-        "source_title_field": "title",
-        "source_title": "Consumer Rights, RTI & Certification Seals",
-        "source_number_field": null,
-        "source_number": null
-      }
-    ],
-    "chapter_candidate_count": 18,
-    "normalization_status": "indexed_not_content_rewritten"
-  },
-  "source_data": {
-    "subject": "Social Science - Economics",
-    "grade_level": "Class 10 (NCERT)",
-    "resource_type": "Interactive Dashboard Overview",
-    "dashboard_ui_config": {
-      "theme": "Dark Slate Modern",
-      "layout": "Grid Modular Viewport",
-      "sidebar_nav": [
-        "Overview",
-        "Notes",
-        "Mindmaps",
-        "Flashcards",
-        "Quiz",
-        "Question Papers",
-        "Foundational",
-        "Master"
-      ],
-      "active_widgets": [
-        "Chapter Storyboard",
-        "Video Overview Embed",
-        "Interactive Hotspot Overlay",
-        "Key Takeaways Drawer"
-      ],
-      "refresh_rate_ms": 1000
-    },
-    "chapters": [
-      {
-        "chapter_number": 1,
-        "chapter_title": "Development",
-        "executive_summary": "Development encompasses material aspirations (higher income, employment) as well as non-material goals like freedom, security, equal treatment, and respect. Relying solely on per capita income ignores income distribution and essential human indicators like literacy, life expectancy, and infant mortality.",
-        "storyboard": [
-          {
-            "frame_id": 1,
-            "title": "Different People, Different Goals",
-            "description": "Visualizing how an industrialist's goal of building a hydro dam conflicts directly with a tribal community's goal of preserving their ancestral land.",
-            "key_takeaway": "Developmental goals can be distinct and mutually conflicting."
-          },
-          {
-            "frame_id": 2,
-            "title": "Income vs. Human Indicators",
-            "description": "Comparing Haryana's higher income with Kerala's superior health (IMR 7) and education (94% literacy) metrics.",
-            "key_takeaway": "Money cannot buy essential public healthcare and social security."
-          },
-          {
-            "frame_id": 3,
-            "title": "Ecological Balance & Sustainability",
-            "description": "Illustrating groundwater table collapse in agricultural states and global crude oil depletion.",
-            "key_takeaway": "Present development must maintain inter-generational equity."
-          }
-        ],
-        "video_embeds": [
-          {
-            "video_id": "vid_ch1_01",
-            "title": "Understanding Human Development Index & PCI",
-            "duration": "04:45",
-            "video_url": "media/video_ch1_hdi.mp4",
-            "transcript_summary": "Explains the difference between World Bank Per Capita Income criteria and UNDP HDI composite metrics."
-          }
-        ],
-        "hotspot_overlays": {
-          "image_url": "ch1_development.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "h1_1",
-              "x_percent": 5.0,
-              "y_percent": 22.0,
-              "w_percent": 40.0,
-              "h_percent": 32.0,
-              "popover_title": "Development Aspirations",
-              "popover_content": "Material vs Non-Material goals. Example: Dam construction creating power for industrialists while displacing indigenous riverine tribes."
-            },
-            {
-              "id": "h1_2",
-              "x_percent": 55.0,
-              "y_percent": 22.0,
-              "w_percent": 40.0,
-              "h_percent": 32.0,
-              "popover_title": "World Bank vs UNDP Metrics",
-              "popover_content": "Per Capita Income = Total Income / Population. World Bank threshold: Rich > $49,300 vs Low <= $2,500. UNDP HDI incorporates health and education."
-            }
-          ]
-        },
-        "key_terms": [
-          "Per Capita Income",
-          "Human Development Index",
-          "Infant Mortality Rate",
-          "Literacy Rate",
-          "Net Attendance Ratio",
-          "Body Mass Index",
-          "Sustainable Development"
-        ],
-        "key_takeaways": [
-          "Development requires income plus non-material dignity, safety, and freedom.",
-          "Average income hides wealth inequality.",
-          "Public facilities are essential for human capital development.",
-          "Resources must be managed sustainably to protect future generations."
-        ]
-      },
-      {
-        "chapter_number": 2,
-        "chapter_title": "Sectors of the Indian Economy",
-        "executive_summary": "Economic activities are classified into Primary, Secondary, and Tertiary sectors. In India, while Tertiary GDP share grew to over 50%, agricultural labor remained stuck at over 44%, creating disguised unemployment.",
-        "storyboard": [
-          {
-            "frame_id": 1,
-            "title": "The Three Economic Sectors",
-            "description": "Following cotton from farm harvest (Primary) to fabric weaving (Secondary) to retail shop sale (Tertiary).",
-            "key_takeaway": "Sectors are highly interdependent."
-          },
-          {
-            "frame_id": 2,
-            "title": "Disguised Unemployment in Farming",
-            "description": "Depicting Laxmi's family of 5 working a 2-hectare plot where 2 members produce zero marginal yield.",
-            "key_takeaway": "Underemployment hides surplus labor in agriculture."
-          }
-        ],
-        "video_embeds": [
-          {
-            "video_id": "vid_ch2_01",
-            "title": "Organised vs Unorganised Sectors & MGNREGA",
-            "duration": "05:15",
-            "video_url": "media/video_ch2_sectors.mp4",
-            "transcript_summary": "Contrasts Kanta's formal job benefits with Kamal's informal vulnerability, explaining MGNREGA 2005 legal guarantees."
-          }
-        ],
-        "hotspot_overlays": {
-          "image_url": "ch2_sectors.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "h2_1",
-              "x_percent": 5.0,
-              "y_percent": 22.0,
-              "w_percent": 40.0,
-              "h_percent": 32.0,
-              "popover_title": "Three Sectors & Interdependence",
-              "popover_content": "Primary extracts natural goods, Secondary manufactures processed items, Tertiary provides transport, banking, and trade services."
-            }
-          ]
-        },
-        "key_terms": [
-          "Primary Sector",
-          "Secondary Sector",
-          "Tertiary Sector",
-          "Gross Domestic Product",
-          "Disguised Unemployment",
-          "Organised Sector",
-          "Unorganised Sector",
-          "MGNREGA 2005"
-        ],
-        "key_takeaways": [
-          "GDP includes final goods only to avoid double counting.",
-          "Primary sector retains excess labor with low GDP contribution.",
-          "MGNREGA 2005 guarantees 100 days of rural wage employment.",
-          "Public sector provides essential infrastructure driven by social welfare."
-        ]
-      },
-      {
-        "chapter_number": 3,
-        "chapter_title": "Money and Credit",
-        "executive_summary": "Money eliminates barter friction by acting as a universal medium of exchange. Commercial banks intermediate between depositors and borrowers, while credit can yield virtuous growth or vicious debt traps.",
-        "storyboard": [
-          {
-            "frame_id": 1,
-            "title": "Barter vs Modern Currency",
-            "description": "Comparing double coincidence barter struggles with RBI-backed currency and demand deposit cheque transactions.",
-            "key_takeaway": "Money acts as an accepted intermediate payment tool."
-          }
-        ],
-        "video_embeds": [
-          {
-            "video_id": "vid_ch3_01",
-            "title": "Formal Banking & Self-Help Groups (SHGs)",
-            "duration": "04:30",
-            "video_url": "media/video_ch3_credit.mp4",
-            "transcript_summary": "Explains RBI bank supervision and how SHGs grant micro-loans without individual collateral."
-          }
-        ],
-        "hotspot_overlays": {
-          "image_url": "ch3_money_credit.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "h3_1",
-              "x_percent": 5.0,
-              "y_percent": 22.0,
-              "w_percent": 40.0,
-              "h_percent": 32.0,
-              "popover_title": "Medium of Exchange",
-              "popover_content": "Money eliminates double coincidence of wants. RBI authorizes legal tender in India."
-            }
-          ]
-        },
-        "key_terms": [
-          "Medium of Exchange",
-          "Double Coincidence of Wants",
-          "Demand Deposits",
-          "Collateral",
-          "Terms of Credit",
-          "Formal Credit",
-          "Informal Credit",
-          "Self-Help Groups"
-        ],
-        "key_takeaways": [
-          "Banks keep 15% cash reserve and lend 85% as credit.",
-          "Credit can be virtuous (Salim) or lead to debt traps (Swapna).",
-          "Formal credit requires collateral; informal credit charges exorbitant rates.",
-          "SHGs empower poor women by providing collateral-free bank loans."
-        ]
-      },
-      {
-        "chapter_number": 4,
-        "chapter_title": "Globalisation and the Indian Economy",
-        "executive_summary": "Globalisation integrates national economies through MNC supply chains, technology, and 1991 trade liberalisation. It creates uneven outcomes across social strata.",
-        "storyboard": [
-          {
-            "frame_id": 1,
-            "title": "MNC Global Supply Chains",
-            "description": "Showing US R&D, Chinese manufacturing, and Indian call center operations.",
-            "key_takeaway": "MNCs locate operations to minimize production costs."
-          }
-        ],
-        "video_embeds": [
-          {
-            "video_id": "vid_ch4_01",
-            "title": "1991 Liberalisation & WTO Governance",
-            "duration": "05:00",
-            "video_url": "media/video_ch4_globalisation.mp4",
-            "transcript_summary": "Covers tariff removals, containerization, WTO trade negotiations, and SEZ policies."
-          }
-        ],
-        "hotspot_overlays": {
-          "image_url": "ch4_globalisation.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "h4_1",
-              "x_percent": 5.0,
-              "y_percent": 22.0,
-              "w_percent": 40.0,
-              "h_percent": 32.0,
-              "popover_title": "MNC Production Strategies",
-              "popover_content": "MNCs invest foreign direct capital via joint ventures, company buyouts, and local sub-contracting."
-            }
-          ]
-        },
-        "key_terms": [
-          "Multinational Corporation",
-          "Foreign Direct Investment",
-          "Liberalisation",
-          "Trade Barriers",
-          "World Trade Organisation",
-          "Special Economic Zones",
-          "Fair Globalisation"
-        ],
-        "key_takeaways": [
-          "MNCs connect global markets via foreign investment.",
-          "1991 liberalisation removed trade tariffs and quotas.",
-          "Globalisation benefits skilled urban elites while pressuring small manufacturers.",
-          "Fair globalisation requires state support for small units and labor law enforcement."
-        ]
-      },
-      {
-        "chapter_number": 5,
-        "chapter_title": "Consumer Rights",
-        "executive_summary": "Consumer protection safeguards buyers against market exploitation. COPRA 1986/2019 grants 6 statutory rights enforced via a three-tier quasi-judicial commission hierarchy.",
-        "storyboard": [
-          {
-            "frame_id": 1,
-            "title": "Market Exploitation to Statutory Rights",
-            "description": "Tracing 1960s grassroot anti-hoarding protests to COPRA's 3-tier commission network.",
-            "key_takeaway": "Organized consumer awareness enforces market accountability."
-          }
-        ],
-        "video_embeds": [
-          {
-            "video_id": "vid_ch5_01",
-            "title": "Consumer Rights, RTI & Certification Seals",
-            "duration": "04:15",
-            "video_url": "media/video_ch5_rights.mp4",
-            "transcript_summary": "Details 6 consumer rights, RTI Act 2005 disclosures, and ISI/Agmark/Hallmark quality seals."
-          }
-        ],
-        "hotspot_overlays": {
-          "image_url": "ch5_consumer_rights.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "h5_1",
-              "x_percent": 5.0,
-              "y_percent": 22.0,
-              "w_percent": 40.0,
-              "h_percent": 32.0,
-              "popover_title": "COPRA & Three-Tier Hierarchy",
-              "popover_content": "District Commission (<= ₹1 Cr), State Commission (₹1 Cr - ₹10 Cr), National Commission (> ₹10 Cr)."
-            }
-          ]
-        },
-        "key_terms": [
-          "Consumer Protection Act",
-          "Right to Safety",
-          "Right to Information",
-          "Right to Choose",
-          "Right to Seek Redressal",
-          "District Consumer Commission",
-          "Agmark",
-          "ISI Mark"
-        ],
-        "key_takeaways": [
-          "COPRA enacted 6 fundamental statutory consumer rights.",
-          "Three-tier quasi-judicial system resolves consumer disputes.",
-          "Certification seals (ISI, Agmark, Hallmark) verify product quality.",
-          "Cash receipts serve as essential legal evidence in consumer courts."
-        ]
-      }
-    ]
-  },
-  "grade": "10",
-  "chapter_id": "G10-SOC-U04-C01",
   "chapter_number": 1,
-  "chapter_title": "Social II Chapter 1",
-  "title": "Social II Chapter 1 - Chapter Overview",
+  "chapter_title": "Development",
+  "executive_summary": "Development encompasses material aspirations (higher income, employment) as well as non-material goals like freedom, security, equal treatment, and respect. Relying solely on per capita income ignores income distribution and essential human indicators like literacy, life expectancy, and infant mortality.",
+  "storyboard": [
+    {
+      "frame_id": 1,
+      "title": "Different People, Different Goals",
+      "description": "Visualizing how an industrialist's goal of building a hydro dam conflicts directly with a tribal community's goal of preserving their ancestral land.",
+      "key_takeaway": "Developmental goals can be distinct and mutually conflicting."
+    },
+    {
+      "frame_id": 2,
+      "title": "Income vs. Human Indicators",
+      "description": "Comparing Haryana's higher income with Kerala's superior health (IMR 7) and education (94% literacy) metrics.",
+      "key_takeaway": "Money cannot buy essential public healthcare and social security."
+    },
+    {
+      "frame_id": 3,
+      "title": "Ecological Balance & Sustainability",
+      "description": "Illustrating groundwater table collapse in agricultural states and global crude oil depletion.",
+      "key_takeaway": "Present development must maintain inter-generational equity."
+    }
+  ],
+  "video_embeds": [
+    {
+      "video_id": "vid_ch1_01",
+      "title": "Understanding Human Development Index & PCI",
+      "duration": "04:45",
+      "video_url": "media/video_ch1_hdi.mp4",
+      "transcript_summary": "Explains the difference between World Bank Per Capita Income criteria and UNDP HDI composite metrics."
+    }
+  ],
+  "hotspot_overlays": {
+    "image_url": "ch1_development.png",
+    "aspect_ratio": "16:9",
+    "hotspots": [
+      {
+        "id": "h1_1",
+        "x_percent": 5.0,
+        "y_percent": 22.0,
+        "w_percent": 40.0,
+        "h_percent": 32.0,
+        "popover_title": "Development Aspirations",
+        "popover_content": "Material vs Non-Material goals. Example: Dam construction creating power for industrialists while displacing indigenous riverine tribes."
+      },
+      {
+        "id": "h1_2",
+        "x_percent": 55.0,
+        "y_percent": 22.0,
+        "w_percent": 40.0,
+        "h_percent": 32.0,
+        "popover_title": "World Bank vs UNDP Metrics",
+        "popover_content": "Per Capita Income = Total Income / Population. World Bank threshold: Rich > $49,300 vs Low <= $2,500. UNDP HDI incorporates health and education."
+      }
+    ]
+  },
+  "key_terms": [
+    "Per Capita Income",
+    "Human Development Index",
+    "Infant Mortality Rate",
+    "Literacy Rate",
+    "Net Attendance Ratio",
+    "Body Mass Index",
+    "Sustainable Development"
+  ],
+  "key_takeaways": [
+    "Development requires income plus non-material dignity, safety, and freedom.",
+    "Average income hides wealth inequality.",
+    "Public facilities are essential for human capital development.",
+    "Resources must be managed sustainably to protect future generations."
+  ],
+  "grade": "10",
+  "subject": "Social II",
+  "chapter_id": "G10-SOC-U04-C01",
+  "title": "Development - Chapter Overview",
   "video_url": "https://notebooklm.link.google/v10soc01",
-  "video_title": "Social II Chapter 1 Interactive Video Studio",
+  "video_title": "Development Interactive Video Studio",
   "image_asset": {
-    "title": "Social II Chapter 1 Concept Diagram",
+    "title": "Development Concept Diagram",
     "asset_url": "/assets/images/ch01_concept_map.png",
     "url": "/assets/images/ch01_concept_map.png",
     "filename": "ch01_concept_map.png",
@@ -655,12 +86,12 @@
       {
         "id": "hs_1_1",
         "label": "Core Mechanism",
-        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of Social II Chapter 1."
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of Development."
       },
       {
         "id": "hs_1_2",
         "label": "Practical Application",
-        "tooltip_explanation": "Real-world application and exam synthesis for Social II Chapter 1."
+        "tooltip_explanation": "Real-world application and exam synthesis for Development."
       }
     ]
   },

@@ -1,0 +1,568 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Measuring Space: Perimeter and Area",
+  "image_asset": {
+    "local_url": "/assets/images/ch6_sector_segment_track.png",
+    "title": "Mensuration overview displaying circular sector, segment, and concentric stadium running track."
+  },
+  "question_papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Mensuration: Area, Sectors & Track Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 6 Set 1.",
+        "diagram_url": "/assets/images/ch6_sector_segment_track.png",
+        "hotspots": [
+          {
+            "id": "hs_sector",
+            "label": "Circular Sector",
+            "x_percent": 25.0,
+            "y_percent": 40.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Region bounded by two radii and central arc theta."
+          },
+          {
+            "id": "hs_track",
+            "label": "Running Track Ring",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Area between outer radius R and inner radius r: pi*(R^2 - r^2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+              "options": [
+                "A) s(s-a)(s-b)(s-c)",
+                "B) sqrt(s(s-a)(s-b)(s-c))",
+                "C) 1/2 * a * b",
+                "D) a+b+c"
+              ],
+              "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+              "options": [
+                "A) (theta/360)*2*pi*r",
+                "B) (theta/360)*pi*r^2",
+                "C) pi*r^2",
+                "D) 2*pi*r"
+              ],
+              "correct_answer": "B) (theta/360)*pi*r^2",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find area of equilateral triangle with side 4 cm.",
+              "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (4)^2 = 4*sqrt(3) sq cm.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Find area swept by a minute hand of length 7 cm in 5 minutes.",
+              "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(7)^2 = (1/12)*(22/7)*(49*1) = 51.333333333333336 sq cm.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 1.",
+              "marking_scheme_answer": "s = 21*1. Area = sqrt((21*1) * (8*1) * (7*1) * (6*1)) = 84*1 sq m.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+              "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A running track has outer radius R = 21 m and inner radius r = 14 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+              "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(441 - 196) = 770 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(21) = 132 m.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Mensuration: Area, Sectors & Track Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 6 Set 2.",
+        "diagram_url": "/assets/images/ch6_sector_segment_track.png",
+        "hotspots": [
+          {
+            "id": "hs_sector",
+            "label": "Circular Sector",
+            "x_percent": 25.0,
+            "y_percent": 40.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Region bounded by two radii and central arc theta."
+          },
+          {
+            "id": "hs_track",
+            "label": "Running Track Ring",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Area between outer radius R and inner radius r: pi*(R^2 - r^2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+              "options": [
+                "A) s(s-a)(s-b)(s-c)",
+                "B) sqrt(s(s-a)(s-b)(s-c))",
+                "C) 1/2 * a * b",
+                "D) a+b+c"
+              ],
+              "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+              "options": [
+                "A) (theta/360)*2*pi*r",
+                "B) (theta/360)*pi*r^2",
+                "C) pi*r^2",
+                "D) 2*pi*r"
+              ],
+              "correct_answer": "B) (theta/360)*pi*r^2",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find area of equilateral triangle with side 8 cm.",
+              "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (8)^2 = 16*sqrt(3) sq cm.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Find area swept by a minute hand of length 14 cm in 5 minutes.",
+              "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(14)^2 = (1/12)*(22/7)*(49*4) = 205.33333333333334 sq cm.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 2.",
+              "marking_scheme_answer": "s = 21*2. Area = sqrt((21*2) * (8*2) * (7*2) * (6*2)) = 84*4 sq m.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+              "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A running track has outer radius R = 42 m and inner radius r = 28 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+              "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(1764 - 784) = 3080 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(42) = 264 m.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Mensuration: Area, Sectors & Track Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 6 Set 3.",
+        "diagram_url": "/assets/images/ch6_sector_segment_track.png",
+        "hotspots": [
+          {
+            "id": "hs_sector",
+            "label": "Circular Sector",
+            "x_percent": 25.0,
+            "y_percent": 40.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Region bounded by two radii and central arc theta."
+          },
+          {
+            "id": "hs_track",
+            "label": "Running Track Ring",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Area between outer radius R and inner radius r: pi*(R^2 - r^2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+              "options": [
+                "A) s(s-a)(s-b)(s-c)",
+                "B) sqrt(s(s-a)(s-b)(s-c))",
+                "C) 1/2 * a * b",
+                "D) a+b+c"
+              ],
+              "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+              "options": [
+                "A) (theta/360)*2*pi*r",
+                "B) (theta/360)*pi*r^2",
+                "C) pi*r^2",
+                "D) 2*pi*r"
+              ],
+              "correct_answer": "B) (theta/360)*pi*r^2",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find area of equilateral triangle with side 12 cm.",
+              "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (12)^2 = 36*sqrt(3) sq cm.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Find area swept by a minute hand of length 21 cm in 5 minutes.",
+              "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(21)^2 = (1/12)*(22/7)*(49*9) = 462.0 sq cm.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 3.",
+              "marking_scheme_answer": "s = 21*3. Area = sqrt((21*3) * (8*3) * (7*3) * (6*3)) = 84*9 sq m.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+              "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A running track has outer radius R = 63 m and inner radius r = 42 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+              "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(3969 - 1764) = 6930 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(63) = 396 m.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Mensuration: Area, Sectors & Track Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 6 Set 4.",
+        "diagram_url": "/assets/images/ch6_sector_segment_track.png",
+        "hotspots": [
+          {
+            "id": "hs_sector",
+            "label": "Circular Sector",
+            "x_percent": 25.0,
+            "y_percent": 40.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Region bounded by two radii and central arc theta."
+          },
+          {
+            "id": "hs_track",
+            "label": "Running Track Ring",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Area between outer radius R and inner radius r: pi*(R^2 - r^2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+              "options": [
+                "A) s(s-a)(s-b)(s-c)",
+                "B) sqrt(s(s-a)(s-b)(s-c))",
+                "C) 1/2 * a * b",
+                "D) a+b+c"
+              ],
+              "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+              "options": [
+                "A) (theta/360)*2*pi*r",
+                "B) (theta/360)*pi*r^2",
+                "C) pi*r^2",
+                "D) 2*pi*r"
+              ],
+              "correct_answer": "B) (theta/360)*pi*r^2",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find area of equilateral triangle with side 16 cm.",
+              "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (16)^2 = 64*sqrt(3) sq cm.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Find area swept by a minute hand of length 28 cm in 5 minutes.",
+              "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(28)^2 = (1/12)*(22/7)*(49*16) = 821.3333333333334 sq cm.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 4.",
+              "marking_scheme_answer": "s = 21*4. Area = sqrt((21*4) * (8*4) * (7*4) * (6*4)) = 84*16 sq m.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+              "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A running track has outer radius R = 84 m and inner radius r = 56 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+              "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(7056 - 3136) = 12320 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(84) = 528 m.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Mensuration: Area, Sectors & Track Applications",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "case_study_viewport": {
+        "scenario_text": "Practical Application Case Study for Chapter 6 Set 5.",
+        "diagram_url": "/assets/images/ch6_sector_segment_track.png",
+        "hotspots": [
+          {
+            "id": "hs_sector",
+            "label": "Circular Sector",
+            "x_percent": 25.0,
+            "y_percent": 40.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Region bounded by two radii and central arc theta."
+          },
+          {
+            "id": "hs_track",
+            "label": "Running Track Ring",
+            "x_percent": 75.0,
+            "y_percent": 50.0,
+            "w_percent": 20.0,
+            "h_percent": 20.0,
+            "tooltip": "Area between outer radius R and inner radius r: pi*(R^2 - r^2)."
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Heron's formula for area of a triangle with sides a, b, c is:",
+              "options": [
+                "A) s(s-a)(s-b)(s-c)",
+                "B) sqrt(s(s-a)(s-b)(s-c))",
+                "C) 1/2 * a * b",
+                "D) a+b+c"
+              ],
+              "correct_answer": "B) sqrt(s(s-a)(s-b)(s-c))",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Area of a sector with radius r and central angle theta (in degrees) is:",
+              "options": [
+                "A) (theta/360)*2*pi*r",
+                "B) (theta/360)*pi*r^2",
+                "C) pi*r^2",
+                "D) 2*pi*r"
+              ],
+              "correct_answer": "B) (theta/360)*pi*r^2",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer - 2 Marks Each)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Find area of equilateral triangle with side 20 cm.",
+              "marking_scheme_answer": "Area = (sqrt(3)/4) * a^2 = (sqrt(3)/4) * (20)^2 = 100*sqrt(3) sq cm.",
+              "marks": 2
+            },
+            {
+              "question_number": 4,
+              "question_text": "Find area swept by a minute hand of length 35 cm in 5 minutes.",
+              "marking_scheme_answer": "theta = 30°. Area = (30/360)*(22/7)*(35)^2 = (1/12)*(22/7)*(49*25) = 1283.3333333333333 sq cm.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Calculate area of triangle with sides 13 m, 14 m, 15 m scaled by factor 5.",
+              "marking_scheme_answer": "s = 21*5. Area = sqrt((21*5) * (8*5) * (7*5) * (6*5)) = 84*25 sq m.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 6,
+              "question_text": "A park is in shape of trapezium with parallel sides 25 m and 10 m, and non-parallel sides 14 m and 13 m. Find its total area.",
+              "marking_scheme_answer": "1. Split trapezium into parallelogram (10m x 13m) and triangle (sides 13m, 14m, 15m).\n2. Triangle area = 84 sq m.\n3. Triangle height h = (2 * 84) / 15 = 11.2 m.\n4. Trapezium Area = 1/2 * (25 + 10) * 11.2 = 196 sq m.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "section_name": "Section E (Case Study - 4 Marks)",
+          "questions": [
+            {
+              "question_number": 7,
+              "question_text": "A running track has outer radius R = 105 m and inner radius r = 70 m.\n(i) Calculate track surface area. (2 Marks)\n(ii) Calculate outer fence perimeter. (2 Marks)",
+              "marking_scheme_answer": "(i) Area = pi*(R^2 - r^2) = (22/7)*(11025 - 4900) = 19250 sq m.\n(ii) Perimeter = 2*pi*R = 2*(22/7)*(105) = 660 m.",
+              "marks": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C06"
+}

@@ -1,0 +1,161 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "The World of Numbers",
+  "questions": [
+    {
+      "question_id": "C3_L1_01",
+      "level": "Level 1 (Easy)",
+      "question_type": "MCQ",
+      "question": "Which of the following numbers belongs to the set of irrational numbers (Q')?",
+      "options": [
+        "A) 0.35",
+        "B) 22/7",
+        "C) sqrt(5)",
+        "D) sqrt(49)"
+      ],
+      "correct_answer": "C) sqrt(5)",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "5 is a prime number and not a perfect square, making sqrt(5) a non-terminating, non-repeating decimal, which is by definition irrational. 0.35 is a terminating decimal, 22/7 is a ratio of integers p/q, and sqrt(49) = 7.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 3",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "target_hotspot_id": "hs_sqrt2"
+      }
+    },
+    {
+      "question_id": "C3_L1_02",
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "A rational number p/q has a terminating decimal expansion if and only if the prime factorisation of its denominator q contains powers of only ________ and ________.",
+      "options": [],
+      "correct_answer": "2 and 5",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "By number theory, a rational fraction in simplest form terminates if and only if q = 2^m * 5^n for non-negative integers m, n.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 3",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "target_hotspot_id": "hs_sqrt2"
+      }
+    },
+    {
+      "question_id": "C3_L1_03",
+      "level": "Level 1 (Easy)",
+      "question_type": "True/False with Justification",
+      "question": "True or False: The number 22/7 is an irrational number because it represents pi.",
+      "options": [],
+      "correct_answer": "False",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "False. 22/7 is a ratio of two integers p/q (p=22, q=7) and is therefore a rational number (with a repeating decimal 3.142857...). Pi itself is an irrational number, and 22/7 is merely a convenient rational approximation.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 3",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "target_hotspot_id": "hs_sqrt2"
+      }
+    },
+    {
+      "question_id": "C3_L2_01",
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer",
+      "question": "Convert the recurring decimal x = 0.454545... into a rational fraction in simplest p/q form.",
+      "options": [],
+      "correct_answer": "5/11",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "Let x = 0.454545... (1)\nMultiply by 100 (periodicity = 2):\n100x = 45.454545... (2)\nSubtract (1) from (2):\n99x = 45 => x = 45 / 99 = 5 / 11.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 3",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "target_hotspot_id": "hs_sqrt2"
+      }
+    },
+    {
+      "question_id": "C3_L2_02",
+      "level": "Level 2 (Medium)",
+      "question_type": "Structural Analysis",
+      "question": "Describe how to geometrically construct a line segment of exact length sqrt(3) units using right-angled triangles starting from a unit square.",
+      "options": [],
+      "correct_answer": "Square Root Spiral (Wheel of Theodorus) construction",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "1. Draw right triangle O P0 P1 with legs 1 and 1. Hypotenuse O P1 = sqrt(1^2 + 1^2) = sqrt(2).\n2. At P1, draw a perpendicular segment P1 P2 of length 1.\n3. Connect O to P2. The hypotenuse O P2 = sqrt((sqrt(2))^2 + 1^2) = sqrt(2 + 1) = sqrt(3) units.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 3",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "target_hotspot_id": "hs_sqrt2"
+      }
+    },
+    {
+      "question_id": "C3_L3_01",
+      "level": "Level 3 (Hard)",
+      "question_type": "Critical Thinking & Proof",
+      "question": "Prove by contradiction that sqrt(2) is an irrational number.",
+      "options": [],
+      "correct_answer": "Proof complete via prime factor parity contradiction",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "1. Assume sqrt(2) is rational, so sqrt(2) = p/q where p, q are co-prime integers (gcd(p,q)=1) and q != 0.\n2. Squaring both sides gives 2 = p^2 / q^2 => p^2 = 2q^2. Thus p^2 is even, implying p is even (p = 2k).\n3. Substituting p = 2k gives (2k)^2 = 2q^2 => 4k^2 = 2q^2 => q^2 = 2k^2. Thus q^2 is even, implying q is even.\n4. Both p and q are even, which means they share a common factor of 2, contradicting the premise that gcd(p,q) = 1.\n5. Therefore, sqrt(2) must be irrational.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 3",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "target_hotspot_id": "hs_sqrt2"
+      }
+    },
+    {
+      "question_id": "C3_L3_02",
+      "level": "Level 3 (Hard)",
+      "question_type": "Case-Study Scenario",
+      "question": "Mādhava of Saṅgamagrāma derived the infinite series pi/4 = 1 - 1/3 + 1/5 - 1/7 + ... Explain why rational partial sums of this series never equal pi exactly, regardless of how many terms are added.",
+      "options": [],
+      "correct_answer": "Partial sums are rational numbers, whereas pi is irrational",
+      "hint_modal": {
+        "hint_text": "Recall the fundamental definitions and theorem statements from your chapter study notes.",
+        "penalty_points": 2
+      },
+      "solution_key_3part": {
+        "step_by_step_explanation": "Any finite sum of rational fractions yields another rational number p/q. Because pi is an irrational number (its decimal expansion is infinite and non-repeating), no rational number can ever equal pi exactly. The series converges to pi as terms approach infinity, but finite partial sums remain strictly rational approximations.",
+        "key_formula_used": "Standard Theorem / Formula for Ch 3",
+        "common_pitfall_avoided": "Do not swap terms or confuse algebraic signs during evaluation."
+      },
+      "hotspot_choice": {
+        "referenced_image_url": "/assets/images/ch3_wheel_of_theodorus.png",
+        "target_hotspot_id": "hs_sqrt2"
+      }
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C03"
+}

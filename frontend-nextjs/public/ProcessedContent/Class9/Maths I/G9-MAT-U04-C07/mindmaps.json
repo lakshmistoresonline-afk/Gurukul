@@ -1,0 +1,116 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "The Mathematics of Maybe: Introduction to Probability",
+  "image_asset": {
+    "title": "Tree diagram for 2-coin tosses and geometric probability target board.",
+    "local_url": "/assets/images/ch7_probability_tree.png"
+  },
+  "mind_map": {
+    "root_topic": "The Mathematics of Maybe: Introduction to Probability",
+    "node_color": "#14b8a6",
+    "icon": "root",
+    "branches": [
+      {
+        "theme": "7.1 Random Experiments & Probability Axioms",
+        "node_color": "#14b8a6",
+        "icon": "folder",
+        "expanded": true,
+        "sub_branches": [
+          {
+            "concept": "Quantifying Uncertainty",
+            "node_color": "#14b8a6",
+            "icon": "box",
+            "expanded": true,
+            "details": [
+              "Random experiment: outcomes known, individual trial result unpredictable.",
+              "Probability scale ranges strictly from 0 (impossible event) to 1 (certain event): 0 <= P(E) <= 1.",
+              "Complementary events: P(E) + P(not E) = 1 => P(not E) = 1 - P(E)."
+            ],
+            "evidence_or_examples": [
+              "If P(E) = 0.35, then P(not E) = 0.65."
+            ],
+            "key_terms": [
+              "Random Experiment",
+              "Sample Space S",
+              "Probability Bounds",
+              "Complementary Event"
+            ],
+            "tooltip_popover": {
+              "header": "Quantifying Uncertainty",
+              "body": "Random experiment: outcomes known, individual trial result unpredictable. Probability scale ranges strictly from 0 (impossible event) to 1 (certain event): 0 <= P(E) <= 1. Complementary events: P(E) + P(not E) = 1 => P(not E) = 1 - P(E).",
+              "key_takeaway": "If P(E) = 0.35, then P(not E) = 0.65."
+            }
+          }
+        ]
+      },
+      {
+        "theme": "7.2 Experimental vs Theoretical Probability",
+        "node_color": "#14b8a6",
+        "icon": "folder",
+        "expanded": true,
+        "sub_branches": [
+          {
+            "concept": "Law of Large Numbers & Fair Trials",
+            "node_color": "#14b8a6",
+            "icon": "box",
+            "expanded": true,
+            "details": [
+              "Empirical (experimental) probability: P_exp(E) = (favorable trial count) / (total trial count).",
+              "Theoretical probability: P_th(E) = n(E) / n(S) assuming equally likely outcomes.",
+              "Law of Large Numbers: empirical relative frequency converges to theoretical probability as trial count n -> infinity."
+            ],
+            "evidence_or_examples": [
+              "Karl Pearson tossed a coin 24,000 times, getting 12,012 heads (P_exp = 0.5005)."
+            ],
+            "key_terms": [
+              "Empirical Probability",
+              "Theoretical Probability",
+              "Law of Large Numbers",
+              "Equally Likely Outcomes"
+            ],
+            "tooltip_popover": {
+              "header": "Law of Large Numbers & Fair Trials",
+              "body": "Empirical (experimental) probability: P_exp(E) = (favorable trial count) / (total trial count). Theoretical probability: P_th(E) = n(E) / n(S) assuming equally likely outcomes. Law of Large Numbers: empirical relative frequency converges to theoretical probability as trial count n -> infinity.",
+              "key_takeaway": "Karl Pearson tossed a coin 24,000 times, getting 12,012 heads (P_exp = 0.5005)."
+            }
+          }
+        ]
+      },
+      {
+        "theme": "7.3 Compound Events & Geometric Probability",
+        "node_color": "#14b8a6",
+        "icon": "folder",
+        "expanded": true,
+        "sub_branches": [
+          {
+            "concept": "Multi-Stage Sample Spaces & Target Regions",
+            "node_color": "#14b8a6",
+            "icon": "box",
+            "expanded": true,
+            "details": [
+              "Tree diagrams and 2D coordinate matrices organize compound outcome spaces (2 coins: 4 outcomes; 2 dice: 36 outcomes).",
+              "Geometric probability = (Target Region Area) / (Total Enclosing Region Area)."
+            ],
+            "evidence_or_examples": [
+              "Dart hitting radius 7 cm circular ring on 20x20 cm square board: P = 154 / 400 = 0.385."
+            ],
+            "key_terms": [
+              "Tree Diagram",
+              "Sample Space Matrix",
+              "Geometric Probability",
+              "Compound Event"
+            ],
+            "tooltip_popover": {
+              "header": "Multi-Stage Sample Spaces & Target Regions",
+              "body": "Tree diagrams and 2D coordinate matrices organize compound outcome spaces (2 coins: 4 outcomes; 2 dice: 36 outcomes). Geometric probability = (Target Region Area) / (Total Enclosing Region Area).",
+              "key_takeaway": "Dart hitting radius 7 cm circular ring on 20x20 cm square board: P = 154 / 400 = 0.385."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C07"
+}

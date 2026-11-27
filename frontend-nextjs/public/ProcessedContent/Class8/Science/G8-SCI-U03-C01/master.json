@@ -1,1818 +1,856 @@
 {
-  "schema_version": "2.0.0",
-  "record_id": "gurukul_1dfc73eda246fb9f",
-  "record_type": "source_artifact",
-  "curriculum": {
-    "curriculum_id": null,
-    "board_id": null,
-    "class_id": "class_8",
-    "class_level": 8
-  },
   "subject": "Science",
-  "artifact": {
-    "artifact_type": "master",
-    "source_file_name": "10-Master.json",
-    "source_relative_path": "Contents/Class 8/Science/Source Files/10-Master.json",
-    "source_format": "json"
-  },
-  "source_integrity": {
-    "source_file_sha256": "6d363d989da2d96ecfd921f462a9e581c3f61b83e45f109bdab714b8f2596ae8",
-    "source_semantic_sha256": "bcbf215a1dd7e174788438aae0923337c0b0d1e24e61c95c592ab49e10451faf",
-    "source_byte_length": 31884,
-    "source_encoding": "utf-8",
-    "source_field_count": 565,
-    "field_inventory": [
-      "$.subject",
-      "$.total_chapters",
-      "$.student_portfolio",
-      "$.student_portfolio.student_name",
-      "$.student_portfolio.overall_competency_score",
-      "$.student_portfolio.chapters",
-      "$.student_portfolio.chapters[0].chapter_number",
-      "$.student_portfolio.chapters[0].chapter_title",
-      "$.student_portfolio.chapters[0].competency_rubric_sliders",
-      "$.student_portfolio.chapters[0].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[0].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[0].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[0].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[0].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[0].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[0].interactive_log_template",
-      "$.student_portfolio.chapters[0].interactive_log_template.date",
-      "$.student_portfolio.chapters[0].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[0].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[0].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[0].badge_unlock_modal",
-      "$.student_portfolio.chapters[0].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[0].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[0].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[0].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[0].image_asset",
-      "$.student_portfolio.chapters[0].image_asset.asset_id",
-      "$.student_portfolio.chapters[0].image_asset.chapter_number",
-      "$.student_portfolio.chapters[0].image_asset.chapter_title",
-      "$.student_portfolio.chapters[0].image_asset.title",
-      "$.student_portfolio.chapters[0].image_asset.url",
-      "$.student_portfolio.chapters[0].image_asset.format",
-      "$.student_portfolio.chapters[0].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[0].image_asset.tags",
-      "$.student_portfolio.chapters[0].image_asset.hotspots",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[0].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[1].chapter_number",
-      "$.student_portfolio.chapters[1].chapter_title",
-      "$.student_portfolio.chapters[1].competency_rubric_sliders",
-      "$.student_portfolio.chapters[1].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[1].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[1].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[1].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[1].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[1].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[1].interactive_log_template",
-      "$.student_portfolio.chapters[1].interactive_log_template.date",
-      "$.student_portfolio.chapters[1].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[1].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[1].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[1].badge_unlock_modal",
-      "$.student_portfolio.chapters[1].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[1].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[1].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[1].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[1].image_asset",
-      "$.student_portfolio.chapters[1].image_asset.asset_id",
-      "$.student_portfolio.chapters[1].image_asset.chapter_number",
-      "$.student_portfolio.chapters[1].image_asset.chapter_title",
-      "$.student_portfolio.chapters[1].image_asset.title",
-      "$.student_portfolio.chapters[1].image_asset.url",
-      "$.student_portfolio.chapters[1].image_asset.format",
-      "$.student_portfolio.chapters[1].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[1].image_asset.tags",
-      "$.student_portfolio.chapters[1].image_asset.hotspots",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[1].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[2].chapter_number",
-      "$.student_portfolio.chapters[2].chapter_title",
-      "$.student_portfolio.chapters[2].competency_rubric_sliders",
-      "$.student_portfolio.chapters[2].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[2].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[2].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[2].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[2].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[2].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[2].interactive_log_template",
-      "$.student_portfolio.chapters[2].interactive_log_template.date",
-      "$.student_portfolio.chapters[2].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[2].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[2].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[2].badge_unlock_modal",
-      "$.student_portfolio.chapters[2].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[2].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[2].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[2].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[2].image_asset",
-      "$.student_portfolio.chapters[2].image_asset.asset_id",
-      "$.student_portfolio.chapters[2].image_asset.chapter_number",
-      "$.student_portfolio.chapters[2].image_asset.chapter_title",
-      "$.student_portfolio.chapters[2].image_asset.title",
-      "$.student_portfolio.chapters[2].image_asset.url",
-      "$.student_portfolio.chapters[2].image_asset.format",
-      "$.student_portfolio.chapters[2].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[2].image_asset.tags",
-      "$.student_portfolio.chapters[2].image_asset.hotspots",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[2].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[3].chapter_number",
-      "$.student_portfolio.chapters[3].chapter_title",
-      "$.student_portfolio.chapters[3].competency_rubric_sliders",
-      "$.student_portfolio.chapters[3].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[3].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[3].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[3].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[3].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[3].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[3].interactive_log_template",
-      "$.student_portfolio.chapters[3].interactive_log_template.date",
-      "$.student_portfolio.chapters[3].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[3].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[3].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[3].badge_unlock_modal",
-      "$.student_portfolio.chapters[3].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[3].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[3].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[3].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[3].image_asset",
-      "$.student_portfolio.chapters[3].image_asset.asset_id",
-      "$.student_portfolio.chapters[3].image_asset.chapter_number",
-      "$.student_portfolio.chapters[3].image_asset.chapter_title",
-      "$.student_portfolio.chapters[3].image_asset.title",
-      "$.student_portfolio.chapters[3].image_asset.url",
-      "$.student_portfolio.chapters[3].image_asset.format",
-      "$.student_portfolio.chapters[3].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[3].image_asset.tags",
-      "$.student_portfolio.chapters[3].image_asset.hotspots",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[3].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[4].chapter_number",
-      "$.student_portfolio.chapters[4].chapter_title",
-      "$.student_portfolio.chapters[4].competency_rubric_sliders",
-      "$.student_portfolio.chapters[4].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[4].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[4].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[4].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[4].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[4].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[4].interactive_log_template",
-      "$.student_portfolio.chapters[4].interactive_log_template.date",
-      "$.student_portfolio.chapters[4].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[4].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[4].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[4].badge_unlock_modal",
-      "$.student_portfolio.chapters[4].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[4].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[4].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[4].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[4].image_asset",
-      "$.student_portfolio.chapters[4].image_asset.asset_id",
-      "$.student_portfolio.chapters[4].image_asset.chapter_number",
-      "$.student_portfolio.chapters[4].image_asset.chapter_title",
-      "$.student_portfolio.chapters[4].image_asset.title",
-      "$.student_portfolio.chapters[4].image_asset.url",
-      "$.student_portfolio.chapters[4].image_asset.format",
-      "$.student_portfolio.chapters[4].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[4].image_asset.tags",
-      "$.student_portfolio.chapters[4].image_asset.hotspots",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[4].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[5].chapter_number",
-      "$.student_portfolio.chapters[5].chapter_title",
-      "$.student_portfolio.chapters[5].competency_rubric_sliders",
-      "$.student_portfolio.chapters[5].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[5].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[5].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[5].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[5].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[5].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[5].interactive_log_template",
-      "$.student_portfolio.chapters[5].interactive_log_template.date",
-      "$.student_portfolio.chapters[5].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[5].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[5].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[5].badge_unlock_modal",
-      "$.student_portfolio.chapters[5].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[5].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[5].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[5].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[5].image_asset",
-      "$.student_portfolio.chapters[5].image_asset.asset_id",
-      "$.student_portfolio.chapters[5].image_asset.chapter_number",
-      "$.student_portfolio.chapters[5].image_asset.chapter_title",
-      "$.student_portfolio.chapters[5].image_asset.title",
-      "$.student_portfolio.chapters[5].image_asset.url",
-      "$.student_portfolio.chapters[5].image_asset.format",
-      "$.student_portfolio.chapters[5].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[5].image_asset.tags",
-      "$.student_portfolio.chapters[5].image_asset.hotspots",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[5].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[6].chapter_number",
-      "$.student_portfolio.chapters[6].chapter_title",
-      "$.student_portfolio.chapters[6].competency_rubric_sliders",
-      "$.student_portfolio.chapters[6].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[6].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[6].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[6].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[6].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[6].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[6].interactive_log_template",
-      "$.student_portfolio.chapters[6].interactive_log_template.date",
-      "$.student_portfolio.chapters[6].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[6].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[6].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[6].badge_unlock_modal",
-      "$.student_portfolio.chapters[6].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[6].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[6].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[6].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[6].image_asset",
-      "$.student_portfolio.chapters[6].image_asset.asset_id",
-      "$.student_portfolio.chapters[6].image_asset.chapter_number",
-      "$.student_portfolio.chapters[6].image_asset.chapter_title",
-      "$.student_portfolio.chapters[6].image_asset.title",
-      "$.student_portfolio.chapters[6].image_asset.url",
-      "$.student_portfolio.chapters[6].image_asset.format",
-      "$.student_portfolio.chapters[6].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[6].image_asset.tags",
-      "$.student_portfolio.chapters[6].image_asset.hotspots",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[6].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[7].chapter_number",
-      "$.student_portfolio.chapters[7].chapter_title",
-      "$.student_portfolio.chapters[7].competency_rubric_sliders",
-      "$.student_portfolio.chapters[7].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[7].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[7].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[7].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[7].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[7].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[7].interactive_log_template",
-      "$.student_portfolio.chapters[7].interactive_log_template.date",
-      "$.student_portfolio.chapters[7].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[7].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[7].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[7].badge_unlock_modal",
-      "$.student_portfolio.chapters[7].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[7].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[7].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[7].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[7].image_asset",
-      "$.student_portfolio.chapters[7].image_asset.asset_id",
-      "$.student_portfolio.chapters[7].image_asset.chapter_number",
-      "$.student_portfolio.chapters[7].image_asset.chapter_title",
-      "$.student_portfolio.chapters[7].image_asset.title",
-      "$.student_portfolio.chapters[7].image_asset.url",
-      "$.student_portfolio.chapters[7].image_asset.format",
-      "$.student_portfolio.chapters[7].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[7].image_asset.tags",
-      "$.student_portfolio.chapters[7].image_asset.hotspots",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[7].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[8].chapter_number",
-      "$.student_portfolio.chapters[8].chapter_title",
-      "$.student_portfolio.chapters[8].competency_rubric_sliders",
-      "$.student_portfolio.chapters[8].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[8].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[8].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[8].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[8].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[8].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[8].interactive_log_template",
-      "$.student_portfolio.chapters[8].interactive_log_template.date",
-      "$.student_portfolio.chapters[8].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[8].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[8].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[8].badge_unlock_modal",
-      "$.student_portfolio.chapters[8].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[8].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[8].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[8].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[8].image_asset",
-      "$.student_portfolio.chapters[8].image_asset.asset_id",
-      "$.student_portfolio.chapters[8].image_asset.chapter_number",
-      "$.student_portfolio.chapters[8].image_asset.chapter_title",
-      "$.student_portfolio.chapters[8].image_asset.title",
-      "$.student_portfolio.chapters[8].image_asset.url",
-      "$.student_portfolio.chapters[8].image_asset.format",
-      "$.student_portfolio.chapters[8].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[8].image_asset.tags",
-      "$.student_portfolio.chapters[8].image_asset.hotspots",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[8].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[9].chapter_number",
-      "$.student_portfolio.chapters[9].chapter_title",
-      "$.student_portfolio.chapters[9].competency_rubric_sliders",
-      "$.student_portfolio.chapters[9].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[9].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[9].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[9].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[9].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[9].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[9].interactive_log_template",
-      "$.student_portfolio.chapters[9].interactive_log_template.date",
-      "$.student_portfolio.chapters[9].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[9].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[9].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[9].badge_unlock_modal",
-      "$.student_portfolio.chapters[9].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[9].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[9].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[9].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[9].image_asset",
-      "$.student_portfolio.chapters[9].image_asset.asset_id",
-      "$.student_portfolio.chapters[9].image_asset.chapter_number",
-      "$.student_portfolio.chapters[9].image_asset.chapter_title",
-      "$.student_portfolio.chapters[9].image_asset.title",
-      "$.student_portfolio.chapters[9].image_asset.url",
-      "$.student_portfolio.chapters[9].image_asset.format",
-      "$.student_portfolio.chapters[9].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[9].image_asset.tags",
-      "$.student_portfolio.chapters[9].image_asset.hotspots",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[9].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[10].chapter_number",
-      "$.student_portfolio.chapters[10].chapter_title",
-      "$.student_portfolio.chapters[10].competency_rubric_sliders",
-      "$.student_portfolio.chapters[10].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[10].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[10].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[10].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[10].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[10].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[10].interactive_log_template",
-      "$.student_portfolio.chapters[10].interactive_log_template.date",
-      "$.student_portfolio.chapters[10].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[10].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[10].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[10].badge_unlock_modal",
-      "$.student_portfolio.chapters[10].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[10].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[10].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[10].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[10].image_asset",
-      "$.student_portfolio.chapters[10].image_asset.asset_id",
-      "$.student_portfolio.chapters[10].image_asset.chapter_number",
-      "$.student_portfolio.chapters[10].image_asset.chapter_title",
-      "$.student_portfolio.chapters[10].image_asset.title",
-      "$.student_portfolio.chapters[10].image_asset.url",
-      "$.student_portfolio.chapters[10].image_asset.format",
-      "$.student_portfolio.chapters[10].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[10].image_asset.tags",
-      "$.student_portfolio.chapters[10].image_asset.hotspots",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[10].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[11].chapter_number",
-      "$.student_portfolio.chapters[11].chapter_title",
-      "$.student_portfolio.chapters[11].competency_rubric_sliders",
-      "$.student_portfolio.chapters[11].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[11].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[11].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[11].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[11].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[11].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[11].interactive_log_template",
-      "$.student_portfolio.chapters[11].interactive_log_template.date",
-      "$.student_portfolio.chapters[11].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[11].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[11].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[11].badge_unlock_modal",
-      "$.student_portfolio.chapters[11].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[11].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[11].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[11].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[11].image_asset",
-      "$.student_portfolio.chapters[11].image_asset.asset_id",
-      "$.student_portfolio.chapters[11].image_asset.chapter_number",
-      "$.student_portfolio.chapters[11].image_asset.chapter_title",
-      "$.student_portfolio.chapters[11].image_asset.title",
-      "$.student_portfolio.chapters[11].image_asset.url",
-      "$.student_portfolio.chapters[11].image_asset.format",
-      "$.student_portfolio.chapters[11].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[11].image_asset.tags",
-      "$.student_portfolio.chapters[11].image_asset.hotspots",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[11].image_asset.hotspots[1].description",
-      "$.student_portfolio.chapters[12].chapter_number",
-      "$.student_portfolio.chapters[12].chapter_title",
-      "$.student_portfolio.chapters[12].competency_rubric_sliders",
-      "$.student_portfolio.chapters[12].competency_rubric_sliders[0].criterion",
-      "$.student_portfolio.chapters[12].competency_rubric_sliders[0].score_1_to_5",
-      "$.student_portfolio.chapters[12].competency_rubric_sliders[1].criterion",
-      "$.student_portfolio.chapters[12].competency_rubric_sliders[1].score_1_to_5",
-      "$.student_portfolio.chapters[12].competency_rubric_sliders[2].criterion",
-      "$.student_portfolio.chapters[12].competency_rubric_sliders[2].score_1_to_5",
-      "$.student_portfolio.chapters[12].interactive_log_template",
-      "$.student_portfolio.chapters[12].interactive_log_template.date",
-      "$.student_portfolio.chapters[12].interactive_log_template.investigation_title",
-      "$.student_portfolio.chapters[12].interactive_log_template.student_notes",
-      "$.student_portfolio.chapters[12].interactive_log_template.teacher_feedback",
-      "$.student_portfolio.chapters[12].badge_unlock_modal",
-      "$.student_portfolio.chapters[12].badge_unlock_modal.badge_id",
-      "$.student_portfolio.chapters[12].badge_unlock_modal.badge_title",
-      "$.student_portfolio.chapters[12].badge_unlock_modal.icon",
-      "$.student_portfolio.chapters[12].badge_unlock_modal.unlock_message",
-      "$.student_portfolio.chapters[12].image_asset",
-      "$.student_portfolio.chapters[12].image_asset.asset_id",
-      "$.student_portfolio.chapters[12].image_asset.chapter_number",
-      "$.student_portfolio.chapters[12].image_asset.chapter_title",
-      "$.student_portfolio.chapters[12].image_asset.title",
-      "$.student_portfolio.chapters[12].image_asset.url",
-      "$.student_portfolio.chapters[12].image_asset.format",
-      "$.student_portfolio.chapters[12].image_asset.aspect_ratio",
-      "$.student_portfolio.chapters[12].image_asset.tags",
-      "$.student_portfolio.chapters[12].image_asset.hotspots",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[0].hotspot_id",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[0].title",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[0].x_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[0].y_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[0].w_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[0].h_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[0].description",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[1].hotspot_id",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[1].title",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[1].x_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[1].y_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[1].w_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[1].h_percent",
-      "$.student_portfolio.chapters[12].image_asset.hotspots[1].description"
-    ]
-  },
-  "academic_index": {
-    "chapter_candidates": [
+  "total_chapters": 13,
+  "student_portfolio": {
+    "student_name": "Curiosity Scholar",
+    "overall_competency_score": 4.9,
+    "chapters": [
       {
-        "source_path": "$.student_portfolio.chapters[0]",
-        "source_title_field": "chapter_title",
-        "source_title": "Exploring the Investigative World of Science",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[0].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Exploring the Investigative World of Science",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[0].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Inquiry Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[0].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Fair Test Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[1]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Invisible Living World: Beyond Our Naked Eye",
-        "source_number_field": "chapter_number",
-        "source_number": 2
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[1].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "The Invisible Living World: Beyond Our Naked Eye",
-        "source_number_field": "chapter_number",
-        "source_number": 2
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[1].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Microscope Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[1].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Viruses Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[2]",
-        "source_title_field": "chapter_title",
-        "source_title": "Health: The Ultimate Treasure",
-        "source_number_field": "chapter_number",
-        "source_number": 3
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[2].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Health: The Ultimate Treasure",
-        "source_number_field": "chapter_number",
-        "source_number": 3
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[2].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Health Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[2].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Vaccine Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[3]",
-        "source_title_field": "chapter_title",
-        "source_title": "Electricity: Magnetic and Heating Effects",
-        "source_number_field": "chapter_number",
-        "source_number": 4
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[3].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Electricity: Magnetic and Heating Effects",
-        "source_number_field": "chapter_number",
-        "source_number": 4
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[3].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Magnetic Field Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[3].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Nichrome Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[4]",
-        "source_title_field": "chapter_title",
-        "source_title": "Exploring Forces",
-        "source_number_field": "chapter_number",
-        "source_number": 5
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[4].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Exploring Forces",
-        "source_number_field": "chapter_number",
-        "source_number": 5
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[4].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Forces Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[4].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Electrostatic Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[5]",
-        "source_title_field": "chapter_title",
-        "source_title": "Pressure, Winds, Storms, and Cyclones",
-        "source_number_field": "chapter_number",
-        "source_number": 6
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[5].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Pressure, Winds, Storms, and Cyclones",
-        "source_number_field": "chapter_number",
-        "source_number": 6
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[5].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Pressure Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[5].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Cyclones Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[6]",
-        "source_title_field": "chapter_title",
-        "source_title": "Particulate Nature of Matter",
-        "source_number_field": "chapter_number",
-        "source_number": 7
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[6].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Particulate Nature of Matter",
-        "source_number_field": "chapter_number",
-        "source_number": 7
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[6].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Matter Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[6].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: States Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[7]",
-        "source_title_field": "chapter_title",
-        "source_title": "Nature of Matter: Elements, Compounds, and Mixtures",
-        "source_number_field": "chapter_number",
-        "source_number": 8
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[7].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Nature of Matter: Elements, Compounds, and Mixtures",
-        "source_number_field": "chapter_number",
-        "source_number": 8
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[7].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Elements Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[7].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Mixtures Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[8]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Amazing World of Solutes, Solvents, and Solutions",
-        "source_number_field": "chapter_number",
-        "source_number": 9
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[8].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "The Amazing World of Solutes, Solvents, and Solutions",
-        "source_number_field": "chapter_number",
-        "source_number": 9
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[8].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Solute Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[8].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Density Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[9]",
-        "source_title_field": "chapter_title",
-        "source_title": "Light: Mirrors and Lenses",
-        "source_number_field": "chapter_number",
-        "source_number": 10
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[9].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Light: Mirrors and Lenses",
-        "source_number_field": "chapter_number",
-        "source_number": 10
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[9].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Light Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[9].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Mirrors Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[10]",
-        "source_title_field": "chapter_title",
-        "source_title": "Keeping Time with the Skies",
-        "source_number_field": "chapter_number",
-        "source_number": 11
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[10].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Keeping Time with the Skies",
-        "source_number_field": "chapter_number",
-        "source_number": 11
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[10].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Moon Phases Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[10].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Gnomon Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[11]",
-        "source_title_field": "chapter_title",
-        "source_title": "How Nature Works in Harmony",
-        "source_number_field": "chapter_number",
-        "source_number": 12
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[11].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "How Nature Works in Harmony",
-        "source_number_field": "chapter_number",
-        "source_number": 12
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[11].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Ecosystem Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[11].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Abiotic Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[12]",
-        "source_title_field": "chapter_title",
-        "source_title": "Our Home: Earth, a Unique Life Sustaining Planet",
-        "source_number_field": "chapter_number",
-        "source_number": 13
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[12].image_asset",
-        "source_title_field": "chapter_title",
-        "source_title": "Our Home: Earth, a Unique Life Sustaining Planet",
-        "source_number_field": "chapter_number",
-        "source_number": 13
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[12].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Component A: Habitable Zone Setup",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.student_portfolio.chapters[12].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Component B: Earth Mechanics",
-        "source_number_field": null,
-        "source_number": null
-      }
-    ],
-    "chapter_candidate_count": 52,
-    "normalization_status": "indexed_not_content_rewritten"
-  },
-  "source_data": {
-    "subject": "Class 8 Science (Curiosity)",
-    "total_chapters": 13,
-    "student_portfolio": {
-      "student_name": "Curiosity Scholar",
-      "overall_competency_score": 4.9,
-      "chapters": [
-        {
+        "chapter_number": 1,
+        "chapter_title": "Exploring the Investigative World of Science",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
+          },
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
+          },
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
+          }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Exploring the Investigative World of Science",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 1.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+        },
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch1",
+          "badge_title": "Master of Exploring the Investigative World of Science",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 1: Exploring the Investigative World of Science!"
+        },
+        "image_asset": {
+          "asset_id": "ch1_media_01",
           "chapter_number": 1,
           "chapter_title": "Exploring the Investigative World of Science",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Root & Kite Model & Puri Puffing Steam Expansion",
+          "url": "/assets/images/ch1_investigative_science.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Inquiry",
+            "Hypothesis",
+            "Fair Test",
+            "Steam Expansion"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Exploring the Investigative World of Science",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 1.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch1_01",
+              "title": "Component A: Inquiry Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Inquiry and Hypothesis."
+            },
+            {
+              "hotspot_id": "hs_ch1_02",
+              "title": "Component B: Fair Test Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Fair Test and Steam Expansion."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "The Invisible Living World: Beyond Our Naked Eye",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch1",
-            "badge_title": "Master of Exploring the Investigative World of Science",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 1: Exploring the Investigative World of Science!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch1_media_01",
-            "chapter_number": 1,
-            "chapter_title": "Exploring the Investigative World of Science",
-            "title": "Root & Kite Model & Puri Puffing Steam Expansion",
-            "url": "/assets/images/ch1_investigative_science.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Inquiry",
-              "Hypothesis",
-              "Fair Test",
-              "Steam Expansion"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch1_01",
-                "title": "Component A: Inquiry Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Inquiry and Hypothesis."
-              },
-              {
-                "hotspot_id": "hs_ch1_02",
-                "title": "Component B: Fair Test Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Fair Test and Steam Expansion."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for The Invisible Living World: Beyond Our Naked Eye",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 2.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch2",
+          "badge_title": "Master of The Invisible Living World: Beyond Our Naked Eye",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 2: The Invisible Living World: Beyond Our Naked Eye!"
+        },
+        "image_asset": {
+          "asset_id": "ch2_media_01",
           "chapter_number": 2,
           "chapter_title": "The Invisible Living World: Beyond Our Naked Eye",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Microscope Optics & Microorganism Classification",
+          "url": "/assets/images/ch2_microscopic_world.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Microscope",
+            "Bacteria",
+            "Viruses",
+            "Leeuwenhoek"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for The Invisible Living World: Beyond Our Naked Eye",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 2.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch2_01",
+              "title": "Component A: Microscope Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Microscope and Bacteria."
+            },
+            {
+              "hotspot_id": "hs_ch2_02",
+              "title": "Component B: Viruses Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Viruses and Leeuwenhoek."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Health: The Ultimate Treasure",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch2",
-            "badge_title": "Master of The Invisible Living World: Beyond Our Naked Eye",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 2: The Invisible Living World: Beyond Our Naked Eye!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch2_media_01",
-            "chapter_number": 2,
-            "chapter_title": "The Invisible Living World: Beyond Our Naked Eye",
-            "title": "Microscope Optics & Microorganism Classification",
-            "url": "/assets/images/ch2_microscopic_world.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Microscope",
-              "Bacteria",
-              "Viruses",
-              "Leeuwenhoek"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch2_01",
-                "title": "Component A: Microscope Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Microscope and Bacteria."
-              },
-              {
-                "hotspot_id": "hs_ch2_02",
-                "title": "Component B: Viruses Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Viruses and Leeuwenhoek."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Health: The Ultimate Treasure",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 3.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch3",
+          "badge_title": "Master of Health: The Ultimate Treasure",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 3: Health: The Ultimate Treasure!"
+        },
+        "image_asset": {
+          "asset_id": "ch3_media_01",
           "chapter_number": 3,
           "chapter_title": "Health: The Ultimate Treasure",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Pathogen Transmission Routes & Vaccine Immunization",
+          "url": "/assets/images/ch3_health_and_disease.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Health",
+            "Communicable",
+            "Vaccine",
+            "Anopheles"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Health: The Ultimate Treasure",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 3.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch3_01",
+              "title": "Component A: Health Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Health and Communicable."
+            },
+            {
+              "hotspot_id": "hs_ch3_02",
+              "title": "Component B: Vaccine Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Vaccine and Anopheles."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "Electricity: Magnetic and Heating Effects",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch3",
-            "badge_title": "Master of Health: The Ultimate Treasure",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 3: Health: The Ultimate Treasure!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch3_media_01",
-            "chapter_number": 3,
-            "chapter_title": "Health: The Ultimate Treasure",
-            "title": "Pathogen Transmission Routes & Vaccine Immunization",
-            "url": "/assets/images/ch3_health_and_disease.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Health",
-              "Communicable",
-              "Vaccine",
-              "Anopheles"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch3_01",
-                "title": "Component A: Health Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Health and Communicable."
-              },
-              {
-                "hotspot_id": "hs_ch3_02",
-                "title": "Component B: Vaccine Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Vaccine and Anopheles."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Electricity: Magnetic and Heating Effects",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 4.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch4",
+          "badge_title": "Master of Electricity: Magnetic and Heating Effects",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 4: Electricity: Magnetic and Heating Effects!"
+        },
+        "image_asset": {
+          "asset_id": "ch4_media_01",
           "chapter_number": 4,
           "chapter_title": "Electricity: Magnetic and Heating Effects",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Oersted Deflection & Electromagnet Core Circuit",
+          "url": "/assets/images/ch4_electricity_magnetism.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Magnetic Field",
+            "Electromagnet",
+            "Nichrome",
+            "Oersted"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Electricity: Magnetic and Heating Effects",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 4.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch4_01",
+              "title": "Component A: Magnetic Field Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Magnetic Field and Electromagnet."
+            },
+            {
+              "hotspot_id": "hs_ch4_02",
+              "title": "Component B: Nichrome Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Nichrome and Oersted."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "Exploring Forces",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch4",
-            "badge_title": "Master of Electricity: Magnetic and Heating Effects",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 4: Electricity: Magnetic and Heating Effects!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch4_media_01",
-            "chapter_number": 4,
-            "chapter_title": "Electricity: Magnetic and Heating Effects",
-            "title": "Oersted Deflection & Electromagnet Core Circuit",
-            "url": "/assets/images/ch4_electricity_magnetism.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Magnetic Field",
-              "Electromagnet",
-              "Nichrome",
-              "Oersted"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch4_01",
-                "title": "Component A: Magnetic Field Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Magnetic Field and Electromagnet."
-              },
-              {
-                "hotspot_id": "hs_ch4_02",
-                "title": "Component B: Nichrome Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Nichrome and Oersted."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Exploring Forces",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 5.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch5",
+          "badge_title": "Master of Exploring Forces",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 5: Exploring Forces!"
+        },
+        "image_asset": {
+          "asset_id": "ch5_media_01",
           "chapter_number": 5,
           "chapter_title": "Exploring Forces",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Contact/Non-Contact Forces & Electrostatic Induction",
+          "url": "/assets/images/ch5_exploring_forces.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Forces",
+            "Friction",
+            "Electrostatic",
+            "Newtons"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Exploring Forces",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 5.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch5_01",
+              "title": "Component A: Forces Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Forces and Friction."
+            },
+            {
+              "hotspot_id": "hs_ch5_02",
+              "title": "Component B: Electrostatic Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Electrostatic and Newtons."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "Pressure, Winds, Storms, and Cyclones",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch5",
-            "badge_title": "Master of Exploring Forces",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 5: Exploring Forces!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch5_media_01",
-            "chapter_number": 5,
-            "chapter_title": "Exploring Forces",
-            "title": "Contact/Non-Contact Forces & Electrostatic Induction",
-            "url": "/assets/images/ch5_exploring_forces.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Forces",
-              "Friction",
-              "Electrostatic",
-              "Newtons"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch5_01",
-                "title": "Component A: Forces Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Forces and Friction."
-              },
-              {
-                "hotspot_id": "hs_ch5_02",
-                "title": "Component B: Electrostatic Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Electrostatic and Newtons."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Pressure, Winds, Storms, and Cyclones",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 6.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch6",
+          "badge_title": "Master of Pressure, Winds, Storms, and Cyclones",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 6: Pressure, Winds, Storms, and Cyclones!"
+        },
+        "image_asset": {
+          "asset_id": "ch6_media_01",
           "chapter_number": 6,
           "chapter_title": "Pressure, Winds, Storms, and Cyclones",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Hydrostatic Pressure Depth Gradient & Cyclone Pressure Low",
+          "url": "/assets/images/ch6_pressure_and_cyclones.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Pressure",
+            "Depth",
+            "Cyclones",
+            "Atmospheric"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Pressure, Winds, Storms, and Cyclones",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 6.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch6_01",
+              "title": "Component A: Pressure Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Pressure and Depth."
+            },
+            {
+              "hotspot_id": "hs_ch6_02",
+              "title": "Component B: Cyclones Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Cyclones and Atmospheric."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Particulate Nature of Matter",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch6",
-            "badge_title": "Master of Pressure, Winds, Storms, and Cyclones",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 6: Pressure, Winds, Storms, and Cyclones!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch6_media_01",
-            "chapter_number": 6,
-            "chapter_title": "Pressure, Winds, Storms, and Cyclones",
-            "title": "Hydrostatic Pressure Depth Gradient & Cyclone Pressure Low",
-            "url": "/assets/images/ch6_pressure_and_cyclones.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Pressure",
-              "Depth",
-              "Cyclones",
-              "Atmospheric"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch6_01",
-                "title": "Component A: Pressure Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Pressure and Depth."
-              },
-              {
-                "hotspot_id": "hs_ch6_02",
-                "title": "Component B: Cyclones Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Cyclones and Atmospheric."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Particulate Nature of Matter",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 7.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch7",
+          "badge_title": "Master of Particulate Nature of Matter",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 7: Particulate Nature of Matter!"
+        },
+        "image_asset": {
+          "asset_id": "ch7_media_01",
           "chapter_number": 7,
           "chapter_title": "Particulate Nature of Matter",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Interparticle Spacing in Solid, Liquid, and Gas States",
+          "url": "/assets/images/ch7_particulate_matter.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Matter",
+            "Particles",
+            "States",
+            "Kinetic Energy"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Particulate Nature of Matter",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 7.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch7_01",
+              "title": "Component A: Matter Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Matter and Particles."
+            },
+            {
+              "hotspot_id": "hs_ch7_02",
+              "title": "Component B: States Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating States and Kinetic Energy."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "Nature of Matter: Elements, Compounds, and Mixtures",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch7",
-            "badge_title": "Master of Particulate Nature of Matter",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 7: Particulate Nature of Matter!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch7_media_01",
-            "chapter_number": 7,
-            "chapter_title": "Particulate Nature of Matter",
-            "title": "Interparticle Spacing in Solid, Liquid, and Gas States",
-            "url": "/assets/images/ch7_particulate_matter.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Matter",
-              "Particles",
-              "States",
-              "Kinetic Energy"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch7_01",
-                "title": "Component A: Matter Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Matter and Particles."
-              },
-              {
-                "hotspot_id": "hs_ch7_02",
-                "title": "Component B: States Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating States and Kinetic Energy."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Nature of Matter: Elements, Compounds, and Mixtures",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 8.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch8",
+          "badge_title": "Master of Nature of Matter: Elements, Compounds, and Mixtures",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 8: Nature of Matter: Elements, Compounds, and Mixtures!"
+        },
+        "image_asset": {
+          "asset_id": "ch8_media_01",
           "chapter_number": 8,
           "chapter_title": "Nature of Matter: Elements, Compounds, and Mixtures",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Elements, Compounds, and Mixtures Classification Tree",
+          "url": "/assets/images/ch8_nature_of_matter.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Elements",
+            "Compounds",
+            "Mixtures",
+            "Purification"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Nature of Matter: Elements, Compounds, and Mixtures",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 8.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch8_01",
+              "title": "Component A: Elements Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Elements and Compounds."
+            },
+            {
+              "hotspot_id": "hs_ch8_02",
+              "title": "Component B: Mixtures Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Mixtures and Purification."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 9,
+        "chapter_title": "The Amazing World of Solutes, Solvents, and Solutions",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch8",
-            "badge_title": "Master of Nature of Matter: Elements, Compounds, and Mixtures",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 8: Nature of Matter: Elements, Compounds, and Mixtures!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch8_media_01",
-            "chapter_number": 8,
-            "chapter_title": "Nature of Matter: Elements, Compounds, and Mixtures",
-            "title": "Elements, Compounds, and Mixtures Classification Tree",
-            "url": "/assets/images/ch8_nature_of_matter.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Elements",
-              "Compounds",
-              "Mixtures",
-              "Purification"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch8_01",
-                "title": "Component A: Elements Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Elements and Compounds."
-              },
-              {
-                "hotspot_id": "hs_ch8_02",
-                "title": "Component B: Mixtures Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Mixtures and Purification."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for The Amazing World of Solutes, Solvents, and Solutions",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 9.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch9",
+          "badge_title": "Master of The Amazing World of Solutes, Solvents, and Solutions",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 9: The Amazing World of Solutes, Solvents, and Solutions!"
+        },
+        "image_asset": {
+          "asset_id": "ch9_media_01",
           "chapter_number": 9,
           "chapter_title": "The Amazing World of Solutes, Solvents, and Solutions",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Dissolution Dynamics & Buoyancy Flotation Balance",
+          "url": "/assets/images/ch9_solutes_and_density.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Solute",
+            "Solvent",
+            "Density",
+            "Buoyancy"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for The Amazing World of Solutes, Solvents, and Solutions",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 9.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch9_01",
+              "title": "Component A: Solute Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Solute and Solvent."
+            },
+            {
+              "hotspot_id": "hs_ch9_02",
+              "title": "Component B: Density Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Density and Buoyancy."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "Light: Mirrors and Lenses",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch9",
-            "badge_title": "Master of The Amazing World of Solutes, Solvents, and Solutions",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 9: The Amazing World of Solutes, Solvents, and Solutions!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch9_media_01",
-            "chapter_number": 9,
-            "chapter_title": "The Amazing World of Solutes, Solvents, and Solutions",
-            "title": "Dissolution Dynamics & Buoyancy Flotation Balance",
-            "url": "/assets/images/ch9_solutes_and_density.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Solute",
-              "Solvent",
-              "Density",
-              "Buoyancy"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch9_01",
-                "title": "Component A: Solute Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Solute and Solvent."
-              },
-              {
-                "hotspot_id": "hs_ch9_02",
-                "title": "Component B: Density Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Density and Buoyancy."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Light: Mirrors and Lenses",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 10.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch10",
+          "badge_title": "Master of Light: Mirrors and Lenses",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 10: Light: Mirrors and Lenses!"
+        },
+        "image_asset": {
+          "asset_id": "ch10_media_01",
           "chapter_number": 10,
           "chapter_title": "Light: Mirrors and Lenses",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Laws of Reflection & Convex Lens Light Refraction",
+          "url": "/assets/images/ch10_light_mirrors_lenses.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Light",
+            "Reflection",
+            "Mirrors",
+            "Lenses"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Light: Mirrors and Lenses",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 10.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch10_01",
+              "title": "Component A: Light Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Light and Reflection."
+            },
+            {
+              "hotspot_id": "hs_ch10_02",
+              "title": "Component B: Mirrors Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Mirrors and Lenses."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 11,
+        "chapter_title": "Keeping Time with the Skies",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch10",
-            "badge_title": "Master of Light: Mirrors and Lenses",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 10: Light: Mirrors and Lenses!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch10_media_01",
-            "chapter_number": 10,
-            "chapter_title": "Light: Mirrors and Lenses",
-            "title": "Laws of Reflection & Convex Lens Light Refraction",
-            "url": "/assets/images/ch10_light_mirrors_lenses.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Light",
-              "Reflection",
-              "Mirrors",
-              "Lenses"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch10_01",
-                "title": "Component A: Light Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Light and Reflection."
-              },
-              {
-                "hotspot_id": "hs_ch10_02",
-                "title": "Component B: Mirrors Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Mirrors and Lenses."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Keeping Time with the Skies",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 11.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch11",
+          "badge_title": "Master of Keeping Time with the Skies",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 11: Keeping Time with the Skies!"
+        },
+        "image_asset": {
+          "asset_id": "ch11_media_01",
           "chapter_number": 11,
           "chapter_title": "Keeping Time with the Skies",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Moon Phase Orbital Geometry & Gnomon Shadow Path",
+          "url": "/assets/images/ch11_astronomy_skies.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Moon Phases",
+            "Orbit",
+            "Gnomon",
+            "Sundial"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Keeping Time with the Skies",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 11.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch11_01",
+              "title": "Component A: Moon Phases Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Moon Phases and Orbit."
+            },
+            {
+              "hotspot_id": "hs_ch11_02",
+              "title": "Component B: Gnomon Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Gnomon and Sundial."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 12,
+        "chapter_title": "How Nature Works in Harmony",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch11",
-            "badge_title": "Master of Keeping Time with the Skies",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 11: Keeping Time with the Skies!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch11_media_01",
-            "chapter_number": 11,
-            "chapter_title": "Keeping Time with the Skies",
-            "title": "Moon Phase Orbital Geometry & Gnomon Shadow Path",
-            "url": "/assets/images/ch11_astronomy_skies.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Moon Phases",
-              "Orbit",
-              "Gnomon",
-              "Sundial"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch11_01",
-                "title": "Component A: Moon Phases Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Moon Phases and Orbit."
-              },
-              {
-                "hotspot_id": "hs_ch11_02",
-                "title": "Component B: Gnomon Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Gnomon and Sundial."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for How Nature Works in Harmony",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 12.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch12",
+          "badge_title": "Master of How Nature Works in Harmony",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 12: How Nature Works in Harmony!"
+        },
+        "image_asset": {
+          "asset_id": "ch12_media_01",
           "chapter_number": 12,
           "chapter_title": "How Nature Works in Harmony",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Trophic Level Food Web & Abiotic-Biotic Cycling",
+          "url": "/assets/images/ch12_ecosystem_harmony.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Ecosystem",
+            "Biotic",
+            "Abiotic",
+            "Food Web"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for How Nature Works in Harmony",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 12.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch12_01",
+              "title": "Component A: Ecosystem Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Ecosystem and Biotic."
+            },
+            {
+              "hotspot_id": "hs_ch12_02",
+              "title": "Component B: Abiotic Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Abiotic and Food Web."
+            }
+          ]
+        }
+      },
+      {
+        "chapter_number": 13,
+        "chapter_title": "Our Home: Earth, a Unique Life Sustaining Planet",
+        "competency_rubric_sliders": [
+          {
+            "criterion": "Conceptual Mastery",
+            "score_1_to_5": 5
           },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch12",
-            "badge_title": "Master of How Nature Works in Harmony",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 12: How Nature Works in Harmony!"
+          {
+            "criterion": "Experimental Inquiry & Fair Testing",
+            "score_1_to_5": 5
           },
-          "image_asset": {
-            "asset_id": "ch12_media_01",
-            "chapter_number": 12,
-            "chapter_title": "How Nature Works in Harmony",
-            "title": "Trophic Level Food Web & Abiotic-Biotic Cycling",
-            "url": "/assets/images/ch12_ecosystem_harmony.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Ecosystem",
-              "Biotic",
-              "Abiotic",
-              "Food Web"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch12_01",
-                "title": "Component A: Ecosystem Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Ecosystem and Biotic."
-              },
-              {
-                "hotspot_id": "hs_ch12_02",
-                "title": "Component B: Abiotic Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Abiotic and Food Web."
-              }
-            ]
+          {
+            "criterion": "Analytical Problem Solving",
+            "score_1_to_5": 4
           }
+        ],
+        "interactive_log_template": {
+          "date": "2026-10-25",
+          "investigation_title": "Lab Investigation for Our Home: Earth, a Unique Life Sustaining Planet",
+          "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 13.",
+          "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
         },
-        {
+        "badge_unlock_modal": {
+          "badge_id": "badge_ch13",
+          "badge_title": "Master of Our Home: Earth, a Unique Life Sustaining Planet",
+          "icon": "award",
+          "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 13: Our Home: Earth, a Unique Life Sustaining Planet!"
+        },
+        "image_asset": {
+          "asset_id": "ch13_media_01",
           "chapter_number": 13,
           "chapter_title": "Our Home: Earth, a Unique Life Sustaining Planet",
-          "competency_rubric_sliders": [
-            {
-              "criterion": "Conceptual Mastery",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Experimental Inquiry & Fair Testing",
-              "score_1_to_5": 5
-            },
-            {
-              "criterion": "Analytical Problem Solving",
-              "score_1_to_5": 4
-            }
+          "title": "Goldilocks Habitable Zone & Ozone Layer Shield",
+          "url": "/assets/images/ch13_life_sustaining_earth.png",
+          "format": "PNG",
+          "aspect_ratio": "16:9",
+          "tags": [
+            "Habitable Zone",
+            "Ozone Layer",
+            "Earth",
+            "Atmosphere"
           ],
-          "interactive_log_template": {
-            "date": "2026-10-25",
-            "investigation_title": "Lab Investigation for Our Home: Earth, a Unique Life Sustaining Planet",
-            "student_notes": "Completed all experiential modules and self-scoring quizzes for Chapter 13.",
-            "teacher_feedback": "Demonstrates excellent conceptual understanding and scientific reasoning."
-          },
-          "badge_unlock_modal": {
-            "badge_id": "badge_ch13",
-            "badge_title": "Master of Our Home: Earth, a Unique Life Sustaining Planet",
-            "icon": "award",
-            "unlock_message": "Congratulations! You have achieved complete competency mastery in Chapter 13: Our Home: Earth, a Unique Life Sustaining Planet!"
-          },
-          "image_asset": {
-            "asset_id": "ch13_media_01",
-            "chapter_number": 13,
-            "chapter_title": "Our Home: Earth, a Unique Life Sustaining Planet",
-            "title": "Goldilocks Habitable Zone & Ozone Layer Shield",
-            "url": "/assets/images/ch13_life_sustaining_earth.png",
-            "format": "PNG",
-            "aspect_ratio": "16:9",
-            "tags": [
-              "Habitable Zone",
-              "Ozone Layer",
-              "Earth",
-              "Atmosphere"
-            ],
-            "hotspots": [
-              {
-                "hotspot_id": "hs_ch13_01",
-                "title": "Component A: Habitable Zone Setup",
-                "x_percent": 8.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Detailed visual representation of Habitable Zone and Ozone Layer."
-              },
-              {
-                "hotspot_id": "hs_ch13_02",
-                "title": "Component B: Earth Mechanics",
-                "x_percent": 54.0,
-                "y_percent": 15.0,
-                "w_percent": 38.0,
-                "h_percent": 58.0,
-                "description": "Experimental phenomenon illustrating Earth and Atmosphere."
-              }
-            ]
-          }
+          "hotspots": [
+            {
+              "hotspot_id": "hs_ch13_01",
+              "title": "Component A: Habitable Zone Setup",
+              "x_percent": 8.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Detailed visual representation of Habitable Zone and Ozone Layer."
+            },
+            {
+              "hotspot_id": "hs_ch13_02",
+              "title": "Component B: Earth Mechanics",
+              "x_percent": 54.0,
+              "y_percent": 15.0,
+              "w_percent": 38.0,
+              "h_percent": 58.0,
+              "description": "Experimental phenomenon illustrating Earth and Atmosphere."
+            }
+          ]
         }
-      ]
-    }
+      }
+    ]
   },
   "grade": "8",
   "chapter_id": "G8-SCI-U01-C01",

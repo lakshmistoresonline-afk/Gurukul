@@ -1,0 +1,192 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Propositions and their Converses",
+  "unit_or_theme": "Mathematical Logic & Formal Reasoning",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "This chapter introduces formal mathematical logic, focusing on declarative statements (propositions), conditional implications ('If P then Q'), converses ('If Q then P'), contrapositives ('If not Q then not P'), and disproof via counterexamples.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "9.1 Propositions and Converses",
+        "full_explanation": "A proposition is a declarative statement that is definitively either true or false. A conditional proposition 'If P then Q' links premise P with consequence Q. Its converse 'If Q then P' swaps premise and conclusion. A proposition and its converse are logically independent; one being true does not imply the other is true.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Pedagogical Note",
+            "box_title": "Phrasings of Implication",
+            "full_content": "'If P then Q' is equivalent to 'P implies Q', 'Q when P', or 'P is sufficient for Q'."
+          }
+        ]
+      },
+      {
+        "section_number_title": "9.2 Counterexamples and Proofs",
+        "full_explanation": "A counterexample is a specific case that contradicts a universal proposition ('For all x, P(x)'), conclusively disproving it. Disproving a claim requires only one valid counterexample.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Historical Note",
+            "box_title": "Euler Disproves Fermat",
+            "full_content": "Euler disproved Fermat's conjecture that 2^(2^n)+1 is always prime by discovering n=5 yields composite number 4,294,967,297 = 641 x 6,700,417."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Proposition",
+        "definition": "A declarative statement that is unambiguously either true or false.",
+        "contextual_example_or_usage": "'Every square is a rectangle' is a true proposition.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Converse",
+        "definition": "A conditional statement formed by swapping the hypothesis and conclusion of an implication.",
+        "contextual_example_or_usage": "The converse of 'If P then Q' is 'If Q then P'.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Counterexample",
+        "definition": "A specific instance that refutes a universal statement.",
+        "contextual_example_or_usage": "The rectangle (not square) is a counterexample to 'If all angles are 90 deg, it is a square'.",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Baudhāyana-Pythagoras Equivalence Law",
+        "statement_or_expression": "Triangle is right-angled at C <==> a^2 + b^2 = c^2",
+        "variable_definitions": "a, b: leg lengths; c: hypotenuse length",
+        "model_application_example": "Sides 3, 4, 5 satisfy 3^2 + 4^2 = 5^2, so angle opposite side 5 is 90 degrees."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Investigating Diagonal Stick Quadrilaterals",
+      "objective_or_aim": "Determine necessary vs sufficient conditions for equal diagonals forming a rectangle.",
+      "materials_or_prerequisites": [
+        "Two equal thin sticks",
+        "Pivot pin",
+        "Paper and pencil"
+      ],
+      "step_by_step_procedure": [
+        "Join two equal sticks at midpoints with a pin.",
+        "Join endpoints to form quadrilateral Q.",
+        "Test whether changing intersection angle preserves rectangle properties."
+      ],
+      "expected_observations_or_working": "Equal diagonals bisecting each other always form a rectangle regardless of angle.",
+      "scientific_or_logical_conclusion": "Equal diagonals are necessary for a rectangle; bisection is required for sufficiency."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Fig 9.1: Truth Value Flowchart of Implications",
+        "labels_to_learn": [
+          "Premise P",
+          "Consequence Q",
+          "Converse (Q -> P)",
+          "Counterexample Node"
+        ],
+        "drawing_or_labeling_instructions": "Draw conditional arrow from P to Q, show converse arrow Q to P, show counterexample branch.",
+        "key_structural_details": "Visualizes logical independence of converse statement."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Logical Truth Comparison Table",
+        "headers": [
+          "Proposition (P -> Q)",
+          "Converse (Q -> P)",
+          "Truth Relationship"
+        ],
+        "rows": [
+          [
+            "Multiples of 6 are multiples of 3 (True)",
+            "Multiples of 3 are multiples of 6 (False)",
+            "Prop True, Converse False"
+          ],
+          [
+            "Perfect square -> Odd factors (True)",
+            "Odd factors -> Perfect square (True)",
+            "Both True (Equivalence)"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 9.1",
+        "question_number": "Q2",
+        "question_text": "Frame the converse of: 'If a quadrilateral is a square, then all its angles are equal.' Is the converse true?",
+        "complete_step_by_step_solution": "Converse: 'If all angles of a quadrilateral are equal, then it is a square.' Truth value: False. Counterexample: A rectangle with unequal adjacent sides (e.g. 4 cm by 6 cm) has four equal 90-degree angles but is not a square."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "Pierre de Fermat conjectured that 2^(2^n)+1 is prime for all n. Euler disproved this by showing n=5 yields 4,294,967,297 = 641 x 6,700,417.",
+        "questions_and_answers": [
+          {
+            "question": "What logical role did Euler's calculation play?",
+            "answer": "It provided a single counterexample that conclusively refuted Fermat's universal conjecture."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Which statement pair represents a proposition and a true converse?",
+        "options": [
+          "A) Multiples of 6 -> Multiples of 3",
+          "B) Perfect square -> Odd number of factors",
+          "C) Congruent triangles -> Equal area",
+          "D) Rhombus -> Perpendicular diagonals"
+        ],
+        "correct_answer": "B",
+        "brief_explanation": "Being a perfect square and having an odd number of factors mutually imply each other."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Define a counterexample and provide a geometric counterexample for: 'If two triangles have equal perimeters, they are congruent.'",
+        "model_answer": "A counterexample is a specific case disproving a universal claim. Counterexample: Triangle A (3,4,5) and Triangle B (4,4,4) both have perimeter 12 cm, but one is right-angled and the other equilateral, so they are not congruent.",
+        "key_marking_points": [
+          "Correct definition of counterexample (1 mark)",
+          "Valid non-congruent triangles with equal perimeters (1 mark)"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "State the Baudhāyana-Pythagoras theorem and its converse. Prove whether the converse is true and explain its practical application.",
+        "model_answer": "Theorem: Right-angled triangle with hypotenuse c satisfies a^2 + b^2 = c^2. Converse: If a^2 + b^2 = c^2, the angle opposite side c is 90 degrees. The converse is TRUE. Masons use 3-4-5 rope loops to construct perfect 90-degree corners."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A student claims that if a geometry theorem 'If P then Q' is true, its converse 'If Q then P' is automatically true.",
+        "questions_and_answers": [
+          {
+            "question": "Evaluate this claim using parallel lines and interior angles.",
+            "answer": "The student's claim is false in general, though for parallel lines both hold: lines parallel <==> alternate interior angles equal."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Assuming the converse of a true proposition is automatically true.",
+      "root_cause": "Confusing implication (P -> Q) with bi-directional equivalence (P <-> Q).",
+      "correct_approach": "Test the converse independently with potential counterexamples before assuming its truth."
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U01-C09"
+}

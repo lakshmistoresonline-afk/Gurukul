@@ -1,0 +1,159 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Arithmetic Progressions",
+  "zero_omission_notes": {
+    "summary": "Introduces numerical sequences with constant common difference d, deriving general term formula an = a + (n-1)d and sum formula Sn = n/2 [2a + (n-1)d] or Sn = n/2 [a + l].",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "5.1 Definition & General Term of an AP",
+        "full_explanation": "An AP is a sequence a, a+d, a+2d, ... where d is common difference (d = a_(k+1) - a_k). The nth term an = a + (n-1)d.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Formula Box",
+            "title": "nth Term",
+            "content": "an = a + (n - 1)d"
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "5.2 Sum of First n Terms of an AP",
+        "full_explanation": "Sn = n/2 [2a + (n-1)d] or Sn = n/2 [a + l] where l is the last term.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Historical Note",
+            "title": "Gauss Method",
+            "content": "Sum of first n natural numbers = n(n+1)/2."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-501",
+      "aim_or_objective": "Find sum of first 20 terms of AP: 2, 7, 12...",
+      "materials_or_prerequisites": [
+        "AP sum formula"
+      ],
+      "procedure_or_steps": [
+        "a = 2, d = 5, n = 20",
+        "S20 = 20/2 [2(2) + (20-1)5]",
+        "S20 = 10 [4 + 95] = 10 * 99 = 990"
+      ],
+      "observations_or_results": "Sum of 20 terms is 990.",
+      "conclusion_or_principle": "Sn formula aggregates linear arithmetic sequence quickly."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 5.1 Step Staircase of AP",
+        "labels_and_components": [
+          "First step a",
+          "Step height increment d"
+        ],
+        "drawing_or_reading_instructions": "Draw steps with equal height differences.",
+        "structural_or_conceptual_explanation": "Visualizing constant common difference."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "AP Master Formulas",
+        "headers": [
+          "Target Quantity",
+          "Formula",
+          "Inputs Needed"
+        ],
+        "rows": [
+          [
+            "nth Term (an)",
+            "a + (n-1)d",
+            "a, n, d"
+          ],
+          [
+            "Sum of n terms (Sn)",
+            "n/2 [2a + (n-1)d]",
+            "a, n, d"
+          ],
+          [
+            "Sum using Last Term",
+            "n/2 [a + l]",
+            "a, n, l"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Common Difference (d)",
+      "definition_or_meaning": "Constant difference between consecutive terms.",
+      "si_unit_or_notation": "d = a_(n) - a_(n-1)",
+      "example_or_application": "For 5, 8, 11..., d = 3"
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 5.2 Q4",
+        "question": "Which term of AP 3, 8, 13, 18... is 78?",
+        "answer": "a=3, d=5. 3 + (n-1)5 = 78 => 5(n-1) = 75 => n-1 = 15 => n = 16. 16th term."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "11th term of AP -3, -1/2, 2... is:",
+        "options": [
+          "A) 28",
+          "B) 22",
+          "C) -38",
+          "D) -46.5"
+        ],
+        "answer": "B",
+        "explanation": "a = -3, d = 5/2. a11 = -3 + 10(5/2) = 22."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "Find sum of first 22 terms of AP 8, 3, -2...",
+        "answer": "a=8, d=-5, n=22. S22 = 11 [16 + 21(-5)] = 11 [16 - 105] = 11(-89) = -979."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "If sum of first 7 terms of AP is 49 and that of 17 terms is 289, find sum of first n terms.",
+        "answer": "S7 = 49 => a+3d = 7. S17 = 289 => a+8d = 17. 5d = 10 => d = 2, a = 1. Sn = n/2 [2 + (n-1)2] = n^2."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "A manufacturer produced 600 TVs in 3rd year and 700 in 7th year. Assuming uniform growth, find total production in first 7 years.",
+        "answer": "a3 = a+2d = 600, a7 = a+6d = 700 => 4d = 100 => d = 25. a = 550. S7 = 7/2 [2(550) + 6(25)] = 7/2 [1100 + 150] = 7/2 [1250] = 4375 TVs."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "A ladder has rungs 25 cm apart. Rungs decrease uniformly in length from 45 cm at bottom to 25 cm at top. Total length of ladder = 2.5 m.",
+        "qa": [
+          {
+            "question": "Find total length of wood required for rungs.",
+            "answer": "Number of rungs n = (250 / 25) + 1 = 11. a = 45, l = 25. S11 = 11/2 [45 + 25] = 11/2 [70] = 385 cm."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Confusing an (value of nth term) with n (position index).",
+        "correct_fact_or_method": "n is always a positive integer representing position; an is the term value."
+      }
+    ]
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C05"
+}

@@ -1,0 +1,226 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Quadratic Equations",
+  "unit_or_theme": "Algebra",
+  "m1_zero_omission_notes": {
+    "chapter_executive_summary": "Covers second-degree equations ax^2 + bx + c = 0, solving via factorization and quadratic formula, and determining the nature of roots using the discriminant D = b^2 - 4ac.",
+    "detailed_section_hierarchy": [
+      {
+        "section_number_title": "4.1 Standard Form & Factorization",
+        "full_explanation": "Standard form: ax^2 + bx + c = 0 (a != 0). Roots are values of x satisfying the equation, found by splitting middle term.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Definition",
+            "box_title": "Quadratic Form",
+            "full_content": "Degree must be 2. If a = 0, it reduces to a linear equation."
+          }
+        ]
+      },
+      {
+        "section_number_title": "4.2 Quadratic Formula & Discriminant",
+        "full_explanation": "Roots given by x = (-b ± √(b^2 - 4ac)) / (2a). Discriminant D = b^2 - 4ac determines root characteristics.",
+        "margin_boxes_and_in_text_notes": [
+          {
+            "box_type": "Formula",
+            "box_title": "Nature of Roots",
+            "full_content": "D > 0: two distinct real roots; D = 0: two equal real roots; D < 0: no real roots."
+          }
+        ]
+      }
+    ]
+  },
+  "m2_key_definitions_formulas_and_vocabulary": {
+    "glossary_and_key_terms": [
+      {
+        "term": "Discriminant",
+        "definition": "The expression D = b^2 - 4ac used to determine the nature of quadratic roots.",
+        "contextual_example_or_usage": "For x^2 - 4x + 4 = 0, D = 16 - 16 = 0.",
+        "associated_units_or_parts_of_speech": "Noun"
+      },
+      {
+        "term": "Roots of Quadratic Equation",
+        "definition": "Values of x that satisfy ax^2 + bx + c = 0.",
+        "contextual_example_or_usage": "Roots of x^2 - 5x + 6 = 0 are x=2 and x=3.",
+        "associated_units_or_parts_of_speech": "Noun"
+      }
+    ],
+    "formulas_rules_and_laws": [
+      {
+        "name": "Quadratic Formula (Sridharacharya Formula)",
+        "statement_or_expression": "x = (-b ± √(b^2 - 4ac)) / (2a)",
+        "variable_definitions": "a,b,c = coefficients (a != 0)",
+        "model_application_example": "For 2x^2 - 7x + 3 = 0: x = (7 ± √(49 - 24))/4 = (7 ± 5)/4 => x=3 or x=1/2."
+      }
+    ]
+  },
+  "m3_practical_activities_lab_and_step_by_step_procedures": [
+    {
+      "activity_or_procedure_title": "Determining Nature of Roots using Discriminant",
+      "objective_or_aim": "Find discriminant and nature of roots for 2x^2 - 4x + 3 = 0.",
+      "materials_or_prerequisites": [
+        "Discriminant calculation"
+      ],
+      "step_by_step_procedure": [
+        "Identify a=2, b=-4, c=3",
+        "Calculate D = b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8",
+        "Since D < 0, equation has no real roots."
+      ],
+      "expected_observations_or_working": "Negative value under square root indicates non-real roots.",
+      "scientific_or_logical_conclusion": "No real roots exist."
+    }
+  ],
+  "m4_diagrams_tables_and_visual_data": {
+    "diagrams_and_illustrations": [
+      {
+        "figure_title": "Discriminant Visual Guide",
+        "labels_to_learn": [
+          "D > 0 (2 intercepts)",
+          "D = 0 (1 tangent point)",
+          "D < 0 (no intercept)"
+        ],
+        "drawing_or_labeling_instructions": "Draw three parabolas relative to horizontal axis.",
+        "key_structural_details": "Visual link between discriminant sign and real graph intersections."
+      }
+    ],
+    "tables_and_charts": [
+      {
+        "table_title": "Nature of Roots Summary",
+        "headers": [
+          "Discriminant Value (D)",
+          "Nature of Roots",
+          "Formula for Roots"
+        ],
+        "rows": [
+          [
+            "D > 0",
+            "Two distinct real roots",
+            "(-b ± √D) / 2a"
+          ],
+          [
+            "D = 0",
+            "Two equal real roots",
+            "-b / 2a"
+          ],
+          [
+            "D < 0",
+            "No real roots",
+            "N/A (in Real domain)"
+          ]
+        ]
+      }
+    ]
+  },
+  "m5_textbook_solutions_and_extracts": {
+    "end_of_chapter_textbook_solutions": [
+      {
+        "exercise_section": "Exercise 4.3",
+        "question_number": "Q1(i)",
+        "question_text": "Find nature of roots of 2x^2 - 3x + 5 = 0.",
+        "complete_step_by_step_solution": "D = (-3)^2 - 4(2)(5) = 9 - 40 = -31. D < 0, so no real roots."
+      }
+    ],
+    "extract_or_passage_based_questions": [
+      {
+        "extract_id": 1,
+        "passage_or_source_text": "A real number α is called a root of the quadratic equation ax^2 + bx + c = 0 if aα^2 + bα + c = 0...",
+        "questions_and_answers": [
+          {
+            "question": "What is the relation between zeroes of quadratic polynomial and roots of quadratic equation?",
+            "answer": "They are identical mathematical values."
+          }
+        ]
+      }
+    ]
+  },
+  "m6_tiered_exam_question_bank": {
+    "level_1_objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "Value of k for which 2x^2 + kx + 3 = 0 has equal roots:",
+        "options": [
+          "±2√6",
+          "±√6",
+          "±3√2",
+          "±6"
+        ],
+        "correct_answer": "±2√6",
+        "brief_explanation": "For equal roots D = 0 => k^2 - 4(2)(3) = 0 => k^2 = 24 => k = ±2√6."
+      }
+    ],
+    "level_2_short_answer_questions_2_to_3_marks": [
+      {
+        "question": "Find roots of 2x^2 - 5x + 3 = 0 by factorization.",
+        "model_answer": "2x^2 - 2x - 3x + 3 = 0 => 2x(x-1) - 3(x-1) = 0 => (2x-3)(x-1) = 0 => x = 3/2 or x = 1.",
+        "key_marking_points": [
+          "Middle term split",
+          "Factorization step",
+          "Final root values"
+        ]
+      }
+    ],
+    "level_3_long_answer_and_reasoning_5_marks": [
+      {
+        "question": "A motorboat whose speed is 18 km/h in still water takes 1 hour more to go 24 km upstream than downstream. Find speed of stream.",
+        "model_answer": "Let speed of stream = x km/h. Upstream speed = 18-x, Downstream speed = 18+x. Time diff: 24/(18-x) - 24/(18+x) = 1 => 24(18+x - 18+x)/(324 - x^2) = 1 => 48x = 324 - x^2 => x^2 + 48x - 324 = 0 => (x+54)(x-6) = 0. Speed cannot be negative => x = 6 km/h."
+      }
+    ],
+    "level_4_competency_and_case_studies": [
+      {
+        "case_scenario": "A rectangular park of perimeter 80 m and area 400 m^2 is to be designed.",
+        "questions_and_answers": [
+          {
+            "question": "Is it possible to design such a park?",
+            "answer": "Let length=x, breadth=y. 2(x+y)=80 => y=40-x. Area: x(40-x)=400 => x^2-40x+400=0 => (x-20)^2=0 => x=20, y=20. Yes, a square park of 20m x 20m."
+          }
+        ]
+      }
+    ]
+  },
+  "m7_common_pitfalls_and_misconceptions": [
+    {
+      "frequent_student_error": "Writing roots as x = (-b ± √b^2 - 4ac) / 2a without extending denominator under -b.",
+      "root_cause": "Poor notation formatting.",
+      "correct_approach": "Ensure the fraction line covers BOTH -b and the square root term completely."
+    }
+  ],
+  "scripted_multi_character_dialogues": [
+    {
+      "speaker": "Teacher",
+      "speech_text": "Welcome class! Today we examine Chapter 4: Quadratic Equations. Pay attention to how the core formulas interlock."
+    },
+    {
+      "speaker": "Student A",
+      "speech_text": "Is there a common pitfall we should avoid when applying these concepts in exams?"
+    },
+    {
+      "speaker": "Teacher",
+      "speech_text": "Great question! Always verify your sign conventions and unit dimensions before writing the final step."
+    }
+  ],
+  "stem_concept_lab_drawers": [
+    {
+      "drawer_title": "STEM Lab - Chapter 4 Interactive Engine",
+      "simulation_type": "algebraic_geometric_visualizer",
+      "parameters": {
+        "step_size": 1,
+        "range_min": -10,
+        "range_max": 10
+      },
+      "interactive_prompt": "Adjust sliders to observe real-time parameter changes."
+    }
+  ],
+  "formula_rule_engine": [
+    {
+      "formula_name": "Core Identity Chapter 4",
+      "inputs": [
+        "parameter_a",
+        "parameter_b"
+      ],
+      "output": "result",
+      "latex_representation": "f(a, b) = \\text{result}"
+    }
+  ],
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C04"
+}

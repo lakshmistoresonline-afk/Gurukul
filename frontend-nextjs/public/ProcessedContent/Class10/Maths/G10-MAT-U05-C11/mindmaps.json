@@ -1,0 +1,95 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "Areas Related to Circles",
+  "mind_map": {
+    "root_topic": "Areas Related to Circles",
+    "branches": [
+      {
+        "theme": "Sectors and Segments of a Circle",
+        "sub_branches": [
+          {
+            "concept": "Sector Area and Arc Length",
+            "details": [
+              "Sector: Region enclosed by two radii and an arc.",
+              "Arc length of sector angle θ: L = (θ / 360°) * 2πr",
+              "Area of sector angle θ: A = (θ / 360°) * πr^2"
+            ],
+            "evidence_or_examples": [
+              "Area of sector with r = 6 cm, θ = 60°: A = (60/360) * (22/7) * 36 = 132/7 cm^2.",
+              "Area swept by 14 cm minute hand in 5 min (θ = 30°): A = (30/360) * (22/7) * 196 = 154/3 cm^2."
+            ],
+            "key_terms": [
+              "Sector",
+              "Arc Length",
+              "Central Angle θ",
+              "Sector Area Formula"
+            ]
+          },
+          {
+            "concept": "Segment Area Calculation",
+            "details": [
+              "Segment: Region bounded by a chord and an arc.",
+              "Area of minor segment = Area of sector - Area of inner triangle",
+              "Area of inner triangle in sector θ: (1/2) r^2 sin θ"
+            ],
+            "evidence_or_examples": [
+              "Chord subtends 60° with r = 15 cm: sector area = 117.75 cm^2, equilateral triangle area = 97.3125 cm^2 => minor segment = 20.4375 cm^2.",
+              "4 quadrants of radius 7 cm cut from 14 cm square: remaining area = 196 - 154 = 42 cm^2."
+            ],
+            "key_terms": [
+              "Segment",
+              "Minor Segment",
+              "Major Segment",
+              "Triangle Subtraction"
+            ]
+          }
+        ]
+      }
+    ],
+    "d3_react_flow_tree": {
+      "id": "node_11_root",
+      "label": "Areas Related to Circles",
+      "node_color": "#0284c7",
+      "icon": "book-open",
+      "children": [
+        {
+          "id": "node_11_b1",
+          "label": "Sectors and Segments of a Circle",
+          "node_color": "#38bdf8",
+          "icon": "layers",
+          "hover_popover": "Main Theme: Sectors and Segments of a Circle",
+          "children": [
+            {
+              "id": "node_11_c2",
+              "label": "Sector Area and Arc Length",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Sector Area and Arc Length",
+              "details": [
+                "Sector: Region enclosed by two radii and an arc.",
+                "Arc length of sector angle θ: L = (θ / 360°) * 2πr",
+                "Area of sector angle θ: A = (θ / 360°) * πr^2"
+              ]
+            },
+            {
+              "id": "node_11_c3",
+              "label": "Segment Area Calculation",
+              "node_color": "#818cf8",
+              "icon": "cpu",
+              "hover_popover": "Concept: Segment Area Calculation",
+              "details": [
+                "Segment: Region bounded by a chord and an arc.",
+                "Area of minor segment = Area of sector - Area of inner triangle",
+                "Area of inner triangle in sector θ: (1/2) r^2 sin θ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mermaid_syntax": "graph TD\n  Root[Areas Related to Circles]\n  Root --> B_2[Sectors and Segments of a Circle]\n  B_2 --> C_3[Sector Area and Arc Length]\n  B_3 --> C_4[Segment Area Calculation]"
+  },
+  "grade": "10",
+  "subject": "Maths",
+  "chapter_id": "G10-MAT-U01-C11"
+}

@@ -1,1278 +1,660 @@
 {
-  "schema_version": "2.0.0",
-  "record_id": "gurukul_04123e0f9faa5c7a",
-  "record_type": "source_artifact",
-  "curriculum": {
-    "curriculum_id": null,
-    "board_id": null,
-    "class_id": "class_6",
-    "class_level": 6
-  },
   "subject": "English",
-  "artifact": {
-    "artifact_type": "master",
-    "source_file_name": "10-Master.json",
-    "source_relative_path": "Contents/Class 6/English/Source Files/10-Master.json",
-    "source_format": "json"
-  },
-  "source_integrity": {
-    "source_file_sha256": "59a969e55102654d873f214fcd69b69d829e2e440b6b5ea8ec097c2ef852de1d",
-    "source_semantic_sha256": "a9a746ea7f37fbb9490ac1e8fa25512af823954b9fc75f5df0d5ae40ddb77523",
-    "source_byte_length": 37091,
-    "source_encoding": "utf-8",
-    "source_field_count": 389,
-    "field_inventory": [
-      "$.subject",
-      "$.board",
-      "$.total_chapters",
-      "$.total_units",
-      "$.portfolio_evaluation_framework",
-      "$.portfolio_evaluation_framework.title",
-      "$.portfolio_evaluation_framework.description",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.competency_name",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.description",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.evaluation_criteria",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.rubric_levels",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.rubric_levels.level_1_beginner",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.rubric_levels.level_2_developing",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.rubric_levels.level_3_proficient",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.listening_and_observing.rubric_levels.level_4_advanced",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.competency_name",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.description",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.evaluation_criteria",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.rubric_levels",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.rubric_levels.level_1_beginner",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.rubric_levels.level_2_developing",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.rubric_levels.level_3_proficient",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.presenting_and_speaking.rubric_levels.level_4_advanced",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.competency_name",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.description",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.evaluation_criteria",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.rubric_levels",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.rubric_levels.level_1_beginner",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.rubric_levels.level_2_developing",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.rubric_levels.level_3_proficient",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.reading_and_comprehending.rubric_levels.level_4_advanced",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.competency_name",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.description",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.evaluation_criteria",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.rubric_levels",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.rubric_levels.level_1_beginner",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.rubric_levels.level_2_developing",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.rubric_levels.level_3_proficient",
-      "$.portfolio_evaluation_framework.core_competencies_evaluation.writing_and_problem_solving.rubric_levels.level_4_advanced",
-      "$.portfolio_evaluation_framework.student_portfolio_logs",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[0].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[1].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[2].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[3].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[4].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[5].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[6].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[7].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[8].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[9].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[10].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[11].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[12].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].log_id",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].chapter_number",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].chapter_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].unit",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].project_title",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].project_type",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].summary_writeup",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].skills_demonstrated",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].self_rating",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].self_rating.understanding_of_concept",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].self_rating.effort_and_dedication",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].self_rating.creativity_and_presentation",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].reflective_takeaway",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].teacher_feedback_rubric",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].teacher_feedback_rubric.score",
-      "$.portfolio_evaluation_framework.student_portfolio_logs[13].teacher_feedback_rubric.comments",
-      "$.portfolio_evaluation_framework.student_achievement_badges",
-      "$.portfolio_evaluation_framework.student_achievement_badges[0].badge_id",
-      "$.portfolio_evaluation_framework.student_achievement_badges[0].badge_name",
-      "$.portfolio_evaluation_framework.student_achievement_badges[0].category",
-      "$.portfolio_evaluation_framework.student_achievement_badges[0].icon_symbol",
-      "$.portfolio_evaluation_framework.student_achievement_badges[0].description",
-      "$.portfolio_evaluation_framework.student_achievement_badges[0].earning_milestones",
-      "$.portfolio_evaluation_framework.student_achievement_badges[0].target_domain",
-      "$.portfolio_evaluation_framework.student_achievement_badges[1].badge_id",
-      "$.portfolio_evaluation_framework.student_achievement_badges[1].badge_name",
-      "$.portfolio_evaluation_framework.student_achievement_badges[1].category",
-      "$.portfolio_evaluation_framework.student_achievement_badges[1].icon_symbol",
-      "$.portfolio_evaluation_framework.student_achievement_badges[1].description",
-      "$.portfolio_evaluation_framework.student_achievement_badges[1].earning_milestones",
-      "$.portfolio_evaluation_framework.student_achievement_badges[1].target_domain",
-      "$.portfolio_evaluation_framework.student_achievement_badges[2].badge_id",
-      "$.portfolio_evaluation_framework.student_achievement_badges[2].badge_name",
-      "$.portfolio_evaluation_framework.student_achievement_badges[2].category",
-      "$.portfolio_evaluation_framework.student_achievement_badges[2].icon_symbol",
-      "$.portfolio_evaluation_framework.student_achievement_badges[2].description",
-      "$.portfolio_evaluation_framework.student_achievement_badges[2].earning_milestones",
-      "$.portfolio_evaluation_framework.student_achievement_badges[2].target_domain",
-      "$.portfolio_evaluation_framework.student_achievement_badges[3].badge_id",
-      "$.portfolio_evaluation_framework.student_achievement_badges[3].badge_name",
-      "$.portfolio_evaluation_framework.student_achievement_badges[3].category",
-      "$.portfolio_evaluation_framework.student_achievement_badges[3].icon_symbol",
-      "$.portfolio_evaluation_framework.student_achievement_badges[3].description",
-      "$.portfolio_evaluation_framework.student_achievement_badges[3].earning_milestones",
-      "$.portfolio_evaluation_framework.student_achievement_badges[3].target_domain",
-      "$.portfolio_evaluation_framework.student_achievement_badges[4].badge_id",
-      "$.portfolio_evaluation_framework.student_achievement_badges[4].badge_name",
-      "$.portfolio_evaluation_framework.student_achievement_badges[4].category",
-      "$.portfolio_evaluation_framework.student_achievement_badges[4].icon_symbol",
-      "$.portfolio_evaluation_framework.student_achievement_badges[4].description",
-      "$.portfolio_evaluation_framework.student_achievement_badges[4].earning_milestones",
-      "$.portfolio_evaluation_framework.student_achievement_badges[4].target_domain",
-      "$.portfolio_evaluation_framework.student_achievement_badges[5].badge_id",
-      "$.portfolio_evaluation_framework.student_achievement_badges[5].badge_name",
-      "$.portfolio_evaluation_framework.student_achievement_badges[5].category",
-      "$.portfolio_evaluation_framework.student_achievement_badges[5].icon_symbol",
-      "$.portfolio_evaluation_framework.student_achievement_badges[5].description",
-      "$.portfolio_evaluation_framework.student_achievement_badges[5].earning_milestones",
-      "$.portfolio_evaluation_framework.student_achievement_badges[5].target_domain",
-      "$.portfolio_evaluation_framework.student_achievement_badges[6].badge_id",
-      "$.portfolio_evaluation_framework.student_achievement_badges[6].badge_name",
-      "$.portfolio_evaluation_framework.student_achievement_badges[6].category",
-      "$.portfolio_evaluation_framework.student_achievement_badges[6].icon_symbol",
-      "$.portfolio_evaluation_framework.student_achievement_badges[6].description",
-      "$.portfolio_evaluation_framework.student_achievement_badges[6].earning_milestones",
-      "$.portfolio_evaluation_framework.student_achievement_badges[6].target_domain",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[0].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[0].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[0].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[0].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[0].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[1].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[1].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[1].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[1].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[1].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[2].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[2].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[2].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[2].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[2].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[3].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[3].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[3].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[3].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[3].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[4].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[4].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[4].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[4].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[4].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[5].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[5].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[5].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[5].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[5].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[6].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[6].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[6].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[6].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[6].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[7].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[7].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[7].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[7].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[7].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[8].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[8].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[8].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[8].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[8].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[9].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[9].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[9].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[9].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[9].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[10].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[10].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[10].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[10].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[10].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[11].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[11].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[11].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[11].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[11].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[12].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[12].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[12].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[12].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[12].mastery_status",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[13].chapter_number",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[13].chapter_title",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[13].unit",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[13].competencies_acquired",
-      "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[13].mastery_status"
-    ]
-  },
-  "academic_index": {
-    "chapter_candidates": [
+  "board": "CBSE / NCERT Framework (NEP 2020 / NCF 2023)",
+  "total_chapters": 14,
+  "total_units": 5,
+  "portfolio_evaluation_framework": {
+    "title": "Master Student Progress Tracking & Educational Portfolio Evaluation System",
+    "description": "A holistic, competency-based assessment and portfolio tracking framework designed for Class 6 English (Poorvi) in alignment with NEP 2020 and NCF 2023 guidelines.",
+    "core_competencies_evaluation": {
+      "listening_and_observing": {
+        "competency_name": "Listening & Active Observation",
+        "description": "Ability to listen attentively to audio recordings, spoken narratives, poetry recitations, and peer role-plays, extracting core ideas and subtle details.",
+        "evaluation_criteria": [
+          "Identifies key narrative events, character voices, and vocal inflections during listening exercises.",
+          "Comprehends spoken instructions, audio transcripts, and oral story recitals accurately.",
+          "Demonstrates empathetic active listening during group discussions and peer presentations."
+        ],
+        "rubric_levels": {
+          "level_1_beginner": "Requires frequent repetition; struggles to recall main ideas from oral presentations.",
+          "level_2_developing": "Grasps basic facts from listening tasks but misses subtle details or character motives.",
+          "level_3_proficient": "Listens attentively, accurately extracts main themes, and responds thoughtfully to questions.",
+          "level_4_advanced": "Demonstrates exceptional active listening, analyzing vocal tone, subtext, and subtle narrative nuances."
+        }
+      },
+      "presenting_and_speaking": {
+        "competency_name": "Speaking & Oral Presentation",
+        "description": "Ability to express thoughts clearly, perform classroom role-plays, recite poems with proper rhythm and expression, and articulate reasoned opinions.",
+        "evaluation_criteria": [
+          "Delivers clear, fluent oral presentations using age-appropriate vocabulary and expressive tone.",
+          "Enacts multi-character role-plays with enthusiasm, appropriate body language, and voice modulation.",
+          "Participates constructively in class discussions, respecting diverse viewpoints."
+        ],
+        "rubric_levels": {
+          "level_1_beginner": "Hesitant speaker; relies heavily on prompts and struggles with voice modulation.",
+          "level_2_developing": "Communicates basic ideas orally but lacks fluency, rhythm, or expressive modulation.",
+          "level_3_proficient": "Speaks clearly and confidently with good voice modulation, pace, and vocabulary.",
+          "level_4_advanced": "Articulate, captivating speaker who uses sophisticated expression, rhythm, and persuasive delivery."
+        }
+      },
+      "reading_and_comprehending": {
+        "competency_name": "Reading & Textual Comprehension",
+        "description": "Ability to read prose and poetry fluently, extract literal and inferential meanings, identify literary devices, and analyze character arcs.",
+        "evaluation_criteria": [
+          "Reads age-appropriate prose and poetry with correct pronunciation, phrasing, and speed.",
+          "Extracts literal facts, infers unstated motives, and evaluates moral lessons across diverse genres.",
+          "Identifies and interprets literary devices such as similes, personification, and rhyming patterns."
+        ],
+        "rubric_levels": {
+          "level_1_beginner": "Reads slowly word-by-word; struggles with inferential questions and figurative language.",
+          "level_2_developing": "Comprehends literal facts well but requires guidance for deeper analysis or moral evaluation.",
+          "level_3_proficient": "Fluent reader who answers factual and inferential questions accurately and recognizes literary devices.",
+          "level_4_advanced": "Insightful reader who critically analyzes narrative structures, subtle subtexts, and poetic craftsmanship."
+        }
+      },
+      "writing_and_problem_solving": {
+        "competency_name": "Writing & Critical Problem Solving",
+        "description": "Ability to compose structured paragraphs, reflective logs, creative stories, and letters using accurate grammar, rich vocabulary, and logical cohesion.",
+        "evaluation_criteria": [
+          "Writes well-structured, coherent paragraphs, diary entries, letters, and creative stories.",
+          "Applies target grammar rules (tenses, modals, prepositions, quantifiers) accurately in written work.",
+          "Demonstrates creative problem-solving and critical reasoning in response to open-ended prompts."
+        ],
+        "rubric_levels": {
+          "level_1_beginner": "Frequent grammatical errors; struggles to organize thoughts into coherent sentences.",
+          "level_2_developing": "Writes simple structured sentences but lacks paragraph cohesion or varied vocabulary.",
+          "level_3_proficient": "Produces clear, well-organized written assignments with correct grammar and expressive vocabulary.",
+          "level_4_advanced": "Exemplary writer who crafts imaginative, sophisticated, and flawlessly structured compositions."
+        }
+      }
+    },
+    "student_portfolio_logs": [
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[0]",
-        "source_title_field": "chapter_title",
-        "source_title": "A Bottle of Dew",
-        "source_number_field": "chapter_number",
-        "source_number": 1
+        "log_id": "PL-01",
+        "chapter_number": 1,
+        "chapter_title": "A Bottle of Dew",
+        "unit": "Unit 1: Fables and Folk Tales",
+        "project_title": "Banana Plantation Financial Plan & Reflection Journal",
+        "project_type": "Experiential Learning & Financial Literacy Project",
+        "summary_writeup": "In this project, students analyzed Rama Natha's 6-year transformation from a gullible potion seeker to a prosperous banana farmer. Students calculated the projected yield and income from cultivating 500 banana plants over six years, created a budget log showing Madhumati's gold savings, and wrote a personal reflection comparing real effort versus quick-fix illusions.",
+        "skills_demonstrated": [
+          "Applied mathematical calculation to agricultural yield.",
+          "Analyzed narrative character arc and moral reasoning.",
+          "Constructed a structured reflective diary entry."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "I learned that chasing shortcuts and magic potions wastes time and money. Real success requires patience, daily hard work, and good financial planning like Madhumati's.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Outstanding financial analysis and deep moral understanding of the dignity of labor."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[1]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Raven and the Fox",
-        "source_number_field": "chapter_number",
-        "source_number": 2
+        "log_id": "PL-02",
+        "chapter_number": 2,
+        "chapter_title": "The Raven and the Fox",
+        "unit": "Unit 1: Fables and Folk Tales",
+        "project_title": "The Fox's Flattery Dialogue Performance & Warning Poster",
+        "project_type": "Dramatic Role-Play & Visual Design",
+        "summary_writeup": "Students adapted Jean de la Fontaine's poem into a two-person script between Mr. Raven and Reynard the Fox. They performed the dialogue with voice modulation, emphasizing the Fox's cunning flattery and the Raven's vanity. Additionally, students created an illustrated warning poster titled 'How to Spot Insincere Flattery'.",
+        "skills_demonstrated": [
+          "Voice modulation and oral dramatization.",
+          "Identification of poetic devices (similes, adverbs of manner).",
+          "Visual artwork pairing narrative moral with real-life advice."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "3/4 (Proficient)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Performing as the Fox helped me understand how flatterers use sweet words to trick people. I will always think critically before accepting excessive praise.",
+        "teacher_feedback_rubric": {
+          "score": "A",
+          "comments": "Excellent dramatic energy and clear artistic poster warning against vanity."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[2]",
-        "source_title_field": "chapter_title",
-        "source_title": "Rama to the Rescue",
-        "source_number_field": "chapter_number",
-        "source_number": 3
+        "log_id": "PL-03",
+        "chapter_number": 3,
+        "chapter_title": "Rama to the Rescue",
+        "unit": "Unit 1: Fables and Folk Tales",
+        "project_title": "Midnight Intruder Emergency Response Plan & Comic Strip",
+        "project_type": "Comic Illustration & Civic Safety Strategy",
+        "summary_writeup": "Students illustrated a 6-panel comic strip depicting the clever couple overhearing a thief digging through their wall. They scripted speech bubbles showing how tactical conversation lures the intruder into the yard decoy while secretly calling the village Kotwal. Students also authored a 'Home Safety & Civic Cooperation Guide'.",
+        "skills_demonstrated": [
+          "Sequential visual storytelling and dialogue scripting.",
+          "Present progressive tense and interjection usage.",
+          "Critical emergency decision-making."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Staying calm during an emergency is the most important step. Panic makes things worse, but quick thinking and working with police keeps everyone safe.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Imaginative comic artwork with accurate dialogue and practical civic awareness."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[3]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Unlikely Best Friends",
-        "source_number_field": "chapter_number",
-        "source_number": 4
+        "log_id": "PL-04",
+        "chapter_number": 4,
+        "chapter_title": "The Unlikely Best Friends",
+        "unit": "Unit 2: Friendship",
+        "project_title": "Gajaraj and Buntee Interspecies Friendship Storyboard",
+        "project_type": "Narrative Writing & Empathy Analysis",
+        "summary_writeup": "Students created a multi-scene storyboard capturing the friendship between Gajaraj the royal elephant and Buntee the stray dog. They authored diary entries from Gajaraj's perspective during his heartbreak when Buntee was taken, and analyzed how true friendship transcends size and status.",
+        "skills_demonstrated": [
+          "Past continuous tense and prepositional accuracy.",
+          "Empathetic creative writing from an animal perspective.",
+          "Analysis of emotional wellness versus material luxury."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Luxury and royal treatment mean nothing if you are lonely. True happiness comes from having a loving friend to share meals and play with.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Deeply moving diary entries demonstrating mature empathy and excellent language fluency."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[4]",
-        "source_title_field": "chapter_title",
-        "source_title": "A Friend's Prayer",
-        "source_number_field": "chapter_number",
-        "source_number": 5
+        "log_id": "PL-05",
+        "chapter_number": 5,
+        "chapter_title": "A Friend's Prayer",
+        "unit": "Unit 2: Friendship",
+        "project_title": "A Friend's Prayer Reflection Journal & Poetic Recitation",
+        "project_type": "Poetry Recitation & Value Reflection",
+        "summary_writeup": "Students memorized and recited Jill Wolf's poem 'A Friend's Prayer' with phonetic clarity and emotion. They wrote an essay explaining the metaphor 'use my heart to see' and created a personal pledge card committing to non-judgmental friendship.",
+        "skills_demonstrated": [
+          "Poetic rhythm, pronunciation, and expressive recitation.",
+          "Interpretation of phrasal metaphors and modal verbs ('may').",
+          "Self-reflection on personal relationships."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "3/4 (Proficient)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Seeing with my heart means accepting my friends as they are without making harsh judgments from afar. I pledged to support my friends' dreams.",
+        "teacher_feedback_rubric": {
+          "score": "A",
+          "comments": "Beautifully recited poem with heartfelt reflection on unconditional acceptance."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[5]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Chair",
-        "source_number_field": "chapter_number",
-        "source_number": 6
+        "log_id": "PL-06",
+        "chapter_number": 6,
+        "chapter_title": "The Chair",
+        "unit": "Unit 2: Friendship",
+        "project_title": "The Invisible Chair Social Experiment Log & Friendship Survey",
+        "project_type": "Social Science Experiment & Value Analysis",
+        "summary_writeup": "Students documented Mario's invisible chair experiment in a scientific log format. They surveyed class peers on what distinguishes a 'fair-weather acquaintance' from a 'true friend' who catches you when you fall, analyzing the difference between popularity and genuine care.",
+        "skills_demonstrated": [
+          "Data collection and categorization.",
+          "Suffix transformations (-ship, -ful, -ly).",
+          "Critical evaluation of peer relationships."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Having dozens of fair-weather friends who laugh when you drop is useless. Having three loyal friends like Guneet, Asma, and Deepa who hold you up is true wealth.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Exceptional analytical breakdown of social dynamics and excellent suffix practice."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[6]",
-        "source_title_field": "chapter_title",
-        "source_title": "Neem Baba",
-        "source_number_field": "chapter_number",
-        "source_number": 7
+        "log_id": "PL-07",
+        "chapter_number": 7,
+        "chapter_title": "Neem Baba",
+        "unit": "Unit 3: Nurturing Nature",
+        "project_title": "Botanical Research & Environmental Dramatization",
+        "summary_writeup": "Students created an illustrated 'Village Pharmacy Catalog' documenting the medicinal, agricultural, and dental uses of the neem tree (Azadirachta indica). They performed a two-character dialogue between Amber and Neem Baba, explaining air purification and organic pesticides.",
+        "skills_demonstrated": [
+          "Classification of compound words (closed, open, hyphenated).",
+          "Personification in dialogue writing.",
+          "Traditional botanical and environmental research."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Trees like Neem Baba are living pharmacies that clean our air and cure sickness without chemical pollution. We must protect and plant trees.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Meticulously researched botanical catalog paired with a creative, respectful dialogue script."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[7]",
-        "source_title_field": "chapter_title",
-        "source_title": "What a Bird Thought",
-        "source_number_field": "chapter_number",
-        "source_number": 8
+        "log_id": "PL-08",
+        "chapter_number": 8,
+        "chapter_title": "What a Bird Thought",
+        "unit": "Unit 3: Nurturing Nature",
+        "project_title": "Bird's Expanding Worldview Diagram & Poetic Stanza Extension",
+        "project_type": "Poetic Analysis & Visual Illustration",
+        "summary_writeup": "Students drew a four-tier concentric visual diagram illustrating the bird's expanding world: pale-blue eggshell -> straw nest -> leafy tree branch -> vast open sky. They composed an original fifth stanza continuing the bird's philosophical journey into space.",
+        "skills_demonstrated": [
+          "Poetic structure and stanzaic analysis.",
+          "Modals of ability/inability (can, cannot, could).",
+          "Visual representation of cognitive growth."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "3/4 (Proficient)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "As I grow and learn, my view of the world expands. What seems like the whole world today is just a small eggshell compared to the vast universe.",
+        "teacher_feedback_rubric": {
+          "score": "A",
+          "comments": "Inspiring original stanza and clear, imaginative concentric diagram of mental growth."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[8]",
-        "source_title_field": "chapter_title",
-        "source_title": "Change of Heart",
-        "source_number_field": "chapter_number",
-        "source_number": 9
+        "log_id": "PL-09",
+        "chapter_number": 9,
+        "chapter_title": "Change of Heart",
+        "unit": "Unit 4: Sports and Wellness",
+        "project_title": "Sportsmanship Reflection & Fair Play Log",
+        "project_type": "Sports Psychology & Reflective Essay",
+        "summary_writeup": "Students contrasted Prabhat's fear of losing with Surya's joyful play. They maintained a 1-week PE class sportsmanship log tracking their own emotional reactions after winning or losing games, focusing on effort over scoreboards.",
+        "skills_demonstrated": [
+          "Past perfect tense formulation (had + V3).",
+          "Self-regulation and emotional intelligence in sports.",
+          "Comparative essay writing."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Playing sports is about having fun, trying your best, and respecting opponents. Winning is nice, but fear of losing ruins the joy of playing.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Honest, insightful sportsmanship log demonstrating real personal growth and emotional maturity."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[9]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Winner",
-        "source_number_field": "chapter_number",
-        "source_number": 10
+        "log_id": "PL-10",
+        "chapter_number": 10,
+        "chapter_title": "The Winner",
+        "unit": "Unit 4: Sports and Wellness",
+        "project_title": "Concrete Poem Performance & Nature's Victory Artwork",
+        "project_type": "Concrete Poetry & Visual Art",
+        "summary_writeup": "Students analyzed Georgia Heard's 'The Winner', focusing on the vertical single-word line layout that mimics panting breath. They created an original concrete poem in the shape of a running shoe or kite, depicting twilight play ending as Night steps in as victor.",
+        "skills_demonstrated": [
+          "Concrete poetic layout and visual typography.",
+          "Personification of natural elements (Night wins!).",
+          "Rhythmic recitation mimicking physical fatigue."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Nature sets the boundaries for our play. When night falls, nature wins, reminding us to rest and respect the rhythm of day and night.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Brilliant concrete poem layout that perfectly captures the physical sensation of breathlessness."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[10]",
-        "source_title_field": "chapter_title",
-        "source_title": "Yoga–a Way of Life",
-        "source_number_field": "chapter_number",
-        "source_number": 11
+        "log_id": "PL-11",
+        "chapter_number": 11,
+        "chapter_title": "Yoga–a Way of Life",
+        "unit": "Unit 4: Sports and Wellness",
+        "project_title": "Yoga Asana Guide & Mindfulness Daily Log",
+        "project_type": "Health & Physical Education Guide",
+        "summary_writeup": "Students authored a illustrated guide to basic yogic asanas, explaining breath control (pranayama) and Patanjali's philosophy of quieting mental distractions. They maintained a 5-day mindfulness and breathing journal tracking study focus.",
+        "skills_demonstrated": [
+          "Distinguishing practice (noun) vs. practise (verb).",
+          "Expository writing and procedural instructions.",
+          "Mindfulness and physical health self-management."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Yoga is not just stretching; it joins mind, body, and breath. Practising pranayama before studying helped me stay calm and focused during exams.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Excellent procedural guide with accurate grammar usage and genuine mindfulness practice."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[11]",
-        "source_title_field": "chapter_title",
-        "source_title": "Kalakritiyon ka Bharat",
-        "source_number_field": "chapter_number",
-        "source_number": 12
+        "log_id": "PL-12",
+        "chapter_number": 12,
+        "chapter_title": "Kalakritiyon ka Bharat",
+        "unit": "Unit 5: Culture and Tradition",
+        "project_title": "Ek Bharat Shreshtha Bharat Regional Craft Exhibition",
+        "project_type": "Cultural Research & Model Craft Making",
+        "summary_writeup": "In connection with Ek Bharat Shreshtha Bharat, students created mini-replicas of traditional Indian crafts (Aipan rice art, Dhokra metal casting model, Coconut shell bowl, Kondapalli wood toy). They presented a step-by-step procedural talk using sequence connectors.",
+        "skills_demonstrated": [
+          "Sequence connectors (first, then, next, finally).",
+          "Cultural research and eco-friendly craft creation.",
+          "Public presentation and descriptive language."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "India's traditional crafts use natural, biodegradable waste like coconut shells, clay, and seed paste. Our cultural heritage is deeply eco-friendly.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Outstanding craft models and fluent oral presentation demonstrating pride in Indian cultural heritage."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[12]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Kites",
-        "source_number_field": "chapter_number",
-        "source_number": 13
+        "log_id": "PL-13",
+        "chapter_number": 13,
+        "chapter_title": "The Kites",
+        "unit": "Unit 5: Culture and Tradition",
+        "project_title": "Kite Flying Metaphor Essay & Aerodynamic Design Journal",
+        "project_type": "Poetic Analysis & STEM Integration",
+        "summary_writeup": "Students constructed a paper kite using recycled bamboo and paper, testing flight mechanics. They wrote a poetic analysis of Daphne Lister's 'The Kites', focusing on similes ('like coloured birds') and the subjunctive wish 'I wish I were small and light as air'.",
+        "skills_demonstrated": [
+          "Simile identification and subjunctive wish construction.",
+          "Interdisciplinary application of STEM aerodynamics with poetry.",
+          "Creative imaginative essay writing."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "3/4 (Proficient)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Flying a kite lets my imagination soar into the sky. Combining science in making the kite with poetry in describing its flight made learning fun.",
+        "teacher_feedback_rubric": {
+          "score": "A",
+          "comments": "Creative fusion of scientific kite construction with subtle poetic appreciation."
+        }
       },
       {
-        "source_path": "$.portfolio_evaluation_framework.student_portfolio_logs[13]",
-        "source_title_field": "chapter_title",
-        "source_title": "Ila Sachani: Embroidering Dreams with Her Feet",
-        "source_number_field": "chapter_number",
-        "source_number": 14
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[0]",
-        "source_title_field": "chapter_title",
-        "source_title": "A Bottle of Dew",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[1]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Raven and the Fox",
-        "source_number_field": "chapter_number",
-        "source_number": 2
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[2]",
-        "source_title_field": "chapter_title",
-        "source_title": "Rama to the Rescue",
-        "source_number_field": "chapter_number",
-        "source_number": 3
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[3]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Unlikely Best Friends",
-        "source_number_field": "chapter_number",
-        "source_number": 4
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[4]",
-        "source_title_field": "chapter_title",
-        "source_title": "A Friend's Prayer",
-        "source_number_field": "chapter_number",
-        "source_number": 5
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[5]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Chair",
-        "source_number_field": "chapter_number",
-        "source_number": 6
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[6]",
-        "source_title_field": "chapter_title",
-        "source_title": "Neem Baba",
-        "source_number_field": "chapter_number",
-        "source_number": 7
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[7]",
-        "source_title_field": "chapter_title",
-        "source_title": "What a Bird Thought",
-        "source_number_field": "chapter_number",
-        "source_number": 8
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[8]",
-        "source_title_field": "chapter_title",
-        "source_title": "Change of Heart",
-        "source_number_field": "chapter_number",
-        "source_number": 9
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[9]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Winner",
-        "source_number_field": "chapter_number",
-        "source_number": 10
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[10]",
-        "source_title_field": "chapter_title",
-        "source_title": "Yoga–a Way of Life",
-        "source_number_field": "chapter_number",
-        "source_number": 11
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[11]",
-        "source_title_field": "chapter_title",
-        "source_title": "Kalakritiyon ka Bharat",
-        "source_number_field": "chapter_number",
-        "source_number": 12
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[12]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Kites",
-        "source_number_field": "chapter_number",
-        "source_number": 13
-      },
-      {
-        "source_path": "$.portfolio_evaluation_framework.master_learning_outcomes_checklist[13]",
-        "source_title_field": "chapter_title",
-        "source_title": "Ila Sachani: Embroidering Dreams with Her Feet",
-        "source_number_field": "chapter_number",
-        "source_number": 14
+        "log_id": "PL-14",
+        "chapter_number": 14,
+        "chapter_title": "Ila Sachani: Embroidering Dreams with Her Feet",
+        "unit": "Unit 5: Culture and Tradition",
+        "project_title": "Ila Sachani Foot-Embroidery Biography & Resilience Journal",
+        "project_type": "Biographical Essay & Values Reflection",
+        "summary_writeup": "Students researched Ila Sachani's life journey from Gujarat, analyzing how she trained her feet to thread needles and master Kathiawar embroidery. They wrote an inspirational profile and practiced a basic motor task using non-dominant limbs to experience empathy.",
+        "skills_demonstrated": [
+          "Quantifiers with countable vs. uncountable nouns (many/much, a few/a little).",
+          "Biographical essay writing and character profiling.",
+          "Deep reflection on indomitable determination and inclusion."
+        ],
+        "self_rating": {
+          "understanding_of_concept": "4/4 (Advanced)",
+          "effort_and_dedication": "4/4 (Advanced)",
+          "creativity_and_presentation": "4/4 (Advanced)"
+        },
+        "reflective_takeaway": "Ila Sachani proved that physical limitations cannot stop a determined mind. Patience and non-stop practice can turn any barrier into artistic triumph.",
+        "teacher_feedback_rubric": {
+          "score": "A+",
+          "comments": "Profound, deeply empathetic biographical essay with flawless quantifier grammar usage."
+        }
       }
     ],
-    "chapter_candidate_count": 28,
-    "normalization_status": "indexed_not_content_rewritten"
-  },
-  "source_data": {
-    "subject": "NCERT Class 6 English (Poorvi)",
-    "board": "CBSE / NCERT Framework (NEP 2020 / NCF 2023)",
-    "total_chapters": 14,
-    "total_units": 5,
-    "portfolio_evaluation_framework": {
-      "title": "Master Student Progress Tracking & Educational Portfolio Evaluation System",
-      "description": "A holistic, competency-based assessment and portfolio tracking framework designed for Class 6 English (Poorvi) in alignment with NEP 2020 and NCF 2023 guidelines.",
-      "core_competencies_evaluation": {
-        "listening_and_observing": {
-          "competency_name": "Listening & Active Observation",
-          "description": "Ability to listen attentively to audio recordings, spoken narratives, poetry recitations, and peer role-plays, extracting core ideas and subtle details.",
-          "evaluation_criteria": [
-            "Identifies key narrative events, character voices, and vocal inflections during listening exercises.",
-            "Comprehends spoken instructions, audio transcripts, and oral story recitals accurately.",
-            "Demonstrates empathetic active listening during group discussions and peer presentations."
-          ],
-          "rubric_levels": {
-            "level_1_beginner": "Requires frequent repetition; struggles to recall main ideas from oral presentations.",
-            "level_2_developing": "Grasps basic facts from listening tasks but misses subtle details or character motives.",
-            "level_3_proficient": "Listens attentively, accurately extracts main themes, and responds thoughtfully to questions.",
-            "level_4_advanced": "Demonstrates exceptional active listening, analyzing vocal tone, subtext, and subtle narrative nuances."
-          }
-        },
-        "presenting_and_speaking": {
-          "competency_name": "Speaking & Oral Presentation",
-          "description": "Ability to express thoughts clearly, perform classroom role-plays, recite poems with proper rhythm and expression, and articulate reasoned opinions.",
-          "evaluation_criteria": [
-            "Delivers clear, fluent oral presentations using age-appropriate vocabulary and expressive tone.",
-            "Enacts multi-character role-plays with enthusiasm, appropriate body language, and voice modulation.",
-            "Participates constructively in class discussions, respecting diverse viewpoints."
-          ],
-          "rubric_levels": {
-            "level_1_beginner": "Hesitant speaker; relies heavily on prompts and struggles with voice modulation.",
-            "level_2_developing": "Communicates basic ideas orally but lacks fluency, rhythm, or expressive modulation.",
-            "level_3_proficient": "Speaks clearly and confidently with good voice modulation, pace, and vocabulary.",
-            "level_4_advanced": "Articulate, captivating speaker who uses sophisticated expression, rhythm, and persuasive delivery."
-          }
-        },
-        "reading_and_comprehending": {
-          "competency_name": "Reading & Textual Comprehension",
-          "description": "Ability to read prose and poetry fluently, extract literal and inferential meanings, identify literary devices, and analyze character arcs.",
-          "evaluation_criteria": [
-            "Reads age-appropriate prose and poetry with correct pronunciation, phrasing, and speed.",
-            "Extracts literal facts, infers unstated motives, and evaluates moral lessons across diverse genres.",
-            "Identifies and interprets literary devices such as similes, personification, and rhyming patterns."
-          ],
-          "rubric_levels": {
-            "level_1_beginner": "Reads slowly word-by-word; struggles with inferential questions and figurative language.",
-            "level_2_developing": "Comprehends literal facts well but requires guidance for deeper analysis or moral evaluation.",
-            "level_3_proficient": "Fluent reader who answers factual and inferential questions accurately and recognizes literary devices.",
-            "level_4_advanced": "Insightful reader who critically analyzes narrative structures, subtle subtexts, and poetic craftsmanship."
-          }
-        },
-        "writing_and_problem_solving": {
-          "competency_name": "Writing & Critical Problem Solving",
-          "description": "Ability to compose structured paragraphs, reflective logs, creative stories, and letters using accurate grammar, rich vocabulary, and logical cohesion.",
-          "evaluation_criteria": [
-            "Writes well-structured, coherent paragraphs, diary entries, letters, and creative stories.",
-            "Applies target grammar rules (tenses, modals, prepositions, quantifiers) accurately in written work.",
-            "Demonstrates creative problem-solving and critical reasoning in response to open-ended prompts."
-          ],
-          "rubric_levels": {
-            "level_1_beginner": "Frequent grammatical errors; struggles to organize thoughts into coherent sentences.",
-            "level_2_developing": "Writes simple structured sentences but lacks paragraph cohesion or varied vocabulary.",
-            "level_3_proficient": "Produces clear, well-organized written assignments with correct grammar and expressive vocabulary.",
-            "level_4_advanced": "Exemplary writer who crafts imaginative, sophisticated, and flawlessly structured compositions."
-          }
-        }
+    "student_achievement_badges": [
+      {
+        "badge_id": "BADGE-01",
+        "badge_name": "Fable Philosopher",
+        "category": "Ethics & Moral Reasoning",
+        "icon_symbol": "📜📜",
+        "description": "Earned for demonstrating deep understanding of traditional fables, distinguishing hard work from magical shortcuts, and analyzing character choices.",
+        "earning_milestones": [
+          "Scored 85%+ on Unit 1 assessment tests.",
+          "Completed 'A Bottle of Dew' financial reflection and 'Raven' flattery warning poster.",
+          "Demonstrated active listening during oral fable recitals."
+        ],
+        "target_domain": "Literature & Moral Science"
       },
-      "student_portfolio_logs": [
-        {
-          "log_id": "PL-01",
-          "chapter_number": 1,
-          "chapter_title": "A Bottle of Dew",
-          "unit": "Unit 1: Fables and Folk Tales",
-          "project_title": "Banana Plantation Financial Plan & Reflection Journal",
-          "project_type": "Experiential Learning & Financial Literacy Project",
-          "summary_writeup": "In this project, students analyzed Rama Natha's 6-year transformation from a gullible potion seeker to a prosperous banana farmer. Students calculated the projected yield and income from cultivating 500 banana plants over six years, created a budget log showing Madhumati's gold savings, and wrote a personal reflection comparing real effort versus quick-fix illusions.",
-          "skills_demonstrated": [
-            "Applied mathematical calculation to agricultural yield.",
-            "Analyzed narrative character arc and moral reasoning.",
-            "Constructed a structured reflective diary entry."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "I learned that chasing shortcuts and magic potions wastes time and money. Real success requires patience, daily hard work, and good financial planning like Madhumati's.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Outstanding financial analysis and deep moral understanding of the dignity of labor."
-          }
-        },
-        {
-          "log_id": "PL-02",
-          "chapter_number": 2,
-          "chapter_title": "The Raven and the Fox",
-          "unit": "Unit 1: Fables and Folk Tales",
-          "project_title": "The Fox's Flattery Dialogue Performance & Warning Poster",
-          "project_type": "Dramatic Role-Play & Visual Design",
-          "summary_writeup": "Students adapted Jean de la Fontaine's poem into a two-person script between Mr. Raven and Reynard the Fox. They performed the dialogue with voice modulation, emphasizing the Fox's cunning flattery and the Raven's vanity. Additionally, students created an illustrated warning poster titled 'How to Spot Insincere Flattery'.",
-          "skills_demonstrated": [
-            "Voice modulation and oral dramatization.",
-            "Identification of poetic devices (similes, adverbs of manner).",
-            "Visual artwork pairing narrative moral with real-life advice."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "3/4 (Proficient)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Performing as the Fox helped me understand how flatterers use sweet words to trick people. I will always think critically before accepting excessive praise.",
-          "teacher_feedback_rubric": {
-            "score": "A",
-            "comments": "Excellent dramatic energy and clear artistic poster warning against vanity."
-          }
-        },
-        {
-          "log_id": "PL-03",
-          "chapter_number": 3,
-          "chapter_title": "Rama to the Rescue",
-          "unit": "Unit 1: Fables and Folk Tales",
-          "project_title": "Midnight Intruder Emergency Response Plan & Comic Strip",
-          "project_type": "Comic Illustration & Civic Safety Strategy",
-          "summary_writeup": "Students illustrated a 6-panel comic strip depicting the clever couple overhearing a thief digging through their wall. They scripted speech bubbles showing how tactical conversation lures the intruder into the yard decoy while secretly calling the village Kotwal. Students also authored a 'Home Safety & Civic Cooperation Guide'.",
-          "skills_demonstrated": [
-            "Sequential visual storytelling and dialogue scripting.",
-            "Present progressive tense and interjection usage.",
-            "Critical emergency decision-making."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Staying calm during an emergency is the most important step. Panic makes things worse, but quick thinking and working with police keeps everyone safe.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Imaginative comic artwork with accurate dialogue and practical civic awareness."
-          }
-        },
-        {
-          "log_id": "PL-04",
-          "chapter_number": 4,
-          "chapter_title": "The Unlikely Best Friends",
-          "unit": "Unit 2: Friendship",
-          "project_title": "Gajaraj and Buntee Interspecies Friendship Storyboard",
-          "project_type": "Narrative Writing & Empathy Analysis",
-          "summary_writeup": "Students created a multi-scene storyboard capturing the friendship between Gajaraj the royal elephant and Buntee the stray dog. They authored diary entries from Gajaraj's perspective during his heartbreak when Buntee was taken, and analyzed how true friendship transcends size and status.",
-          "skills_demonstrated": [
-            "Past continuous tense and prepositional accuracy.",
-            "Empathetic creative writing from an animal perspective.",
-            "Analysis of emotional wellness versus material luxury."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Luxury and royal treatment mean nothing if you are lonely. True happiness comes from having a loving friend to share meals and play with.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Deeply moving diary entries demonstrating mature empathy and excellent language fluency."
-          }
-        },
-        {
-          "log_id": "PL-05",
-          "chapter_number": 5,
-          "chapter_title": "A Friend's Prayer",
-          "unit": "Unit 2: Friendship",
-          "project_title": "A Friend's Prayer Reflection Journal & Poetic Recitation",
-          "project_type": "Poetry Recitation & Value Reflection",
-          "summary_writeup": "Students memorized and recited Jill Wolf's poem 'A Friend's Prayer' with phonetic clarity and emotion. They wrote an essay explaining the metaphor 'use my heart to see' and created a personal pledge card committing to non-judgmental friendship.",
-          "skills_demonstrated": [
-            "Poetic rhythm, pronunciation, and expressive recitation.",
-            "Interpretation of phrasal metaphors and modal verbs ('may').",
-            "Self-reflection on personal relationships."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "3/4 (Proficient)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Seeing with my heart means accepting my friends as they are without making harsh judgments from afar. I pledged to support my friends' dreams.",
-          "teacher_feedback_rubric": {
-            "score": "A",
-            "comments": "Beautifully recited poem with heartfelt reflection on unconditional acceptance."
-          }
-        },
-        {
-          "log_id": "PL-06",
-          "chapter_number": 6,
-          "chapter_title": "The Chair",
-          "unit": "Unit 2: Friendship",
-          "project_title": "The Invisible Chair Social Experiment Log & Friendship Survey",
-          "project_type": "Social Science Experiment & Value Analysis",
-          "summary_writeup": "Students documented Mario's invisible chair experiment in a scientific log format. They surveyed class peers on what distinguishes a 'fair-weather acquaintance' from a 'true friend' who catches you when you fall, analyzing the difference between popularity and genuine care.",
-          "skills_demonstrated": [
-            "Data collection and categorization.",
-            "Suffix transformations (-ship, -ful, -ly).",
-            "Critical evaluation of peer relationships."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Having dozens of fair-weather friends who laugh when you drop is useless. Having three loyal friends like Guneet, Asma, and Deepa who hold you up is true wealth.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Exceptional analytical breakdown of social dynamics and excellent suffix practice."
-          }
-        },
-        {
-          "log_id": "PL-07",
-          "chapter_number": 7,
-          "chapter_title": "Neem Baba",
-          "unit": "Unit 3: Nurturing Nature",
-          "project_title": "Botanical Research & Environmental Dramatization",
-          "summary_writeup": "Students created an illustrated 'Village Pharmacy Catalog' documenting the medicinal, agricultural, and dental uses of the neem tree (Azadirachta indica). They performed a two-character dialogue between Amber and Neem Baba, explaining air purification and organic pesticides.",
-          "skills_demonstrated": [
-            "Classification of compound words (closed, open, hyphenated).",
-            "Personification in dialogue writing.",
-            "Traditional botanical and environmental research."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Trees like Neem Baba are living pharmacies that clean our air and cure sickness without chemical pollution. We must protect and plant trees.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Meticulously researched botanical catalog paired with a creative, respectful dialogue script."
-          }
-        },
-        {
-          "log_id": "PL-08",
-          "chapter_number": 8,
-          "chapter_title": "What a Bird Thought",
-          "unit": "Unit 3: Nurturing Nature",
-          "project_title": "Bird's Expanding Worldview Diagram & Poetic Stanza Extension",
-          "project_type": "Poetic Analysis & Visual Illustration",
-          "summary_writeup": "Students drew a four-tier concentric visual diagram illustrating the bird's expanding world: pale-blue eggshell -> straw nest -> leafy tree branch -> vast open sky. They composed an original fifth stanza continuing the bird's philosophical journey into space.",
-          "skills_demonstrated": [
-            "Poetic structure and stanzaic analysis.",
-            "Modals of ability/inability (can, cannot, could).",
-            "Visual representation of cognitive growth."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "3/4 (Proficient)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "As I grow and learn, my view of the world expands. What seems like the whole world today is just a small eggshell compared to the vast universe.",
-          "teacher_feedback_rubric": {
-            "score": "A",
-            "comments": "Inspiring original stanza and clear, imaginative concentric diagram of mental growth."
-          }
-        },
-        {
-          "log_id": "PL-09",
-          "chapter_number": 9,
-          "chapter_title": "Change of Heart",
-          "unit": "Unit 4: Sports and Wellness",
-          "project_title": "Sportsmanship Reflection & Fair Play Log",
-          "project_type": "Sports Psychology & Reflective Essay",
-          "summary_writeup": "Students contrasted Prabhat's fear of losing with Surya's joyful play. They maintained a 1-week PE class sportsmanship log tracking their own emotional reactions after winning or losing games, focusing on effort over scoreboards.",
-          "skills_demonstrated": [
-            "Past perfect tense formulation (had + V3).",
-            "Self-regulation and emotional intelligence in sports.",
-            "Comparative essay writing."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Playing sports is about having fun, trying your best, and respecting opponents. Winning is nice, but fear of losing ruins the joy of playing.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Honest, insightful sportsmanship log demonstrating real personal growth and emotional maturity."
-          }
-        },
-        {
-          "log_id": "PL-10",
-          "chapter_number": 10,
-          "chapter_title": "The Winner",
-          "unit": "Unit 4: Sports and Wellness",
-          "project_title": "Concrete Poem Performance & Nature's Victory Artwork",
-          "project_type": "Concrete Poetry & Visual Art",
-          "summary_writeup": "Students analyzed Georgia Heard's 'The Winner', focusing on the vertical single-word line layout that mimics panting breath. They created an original concrete poem in the shape of a running shoe or kite, depicting twilight play ending as Night steps in as victor.",
-          "skills_demonstrated": [
-            "Concrete poetic layout and visual typography.",
-            "Personification of natural elements (Night wins!).",
-            "Rhythmic recitation mimicking physical fatigue."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Nature sets the boundaries for our play. When night falls, nature wins, reminding us to rest and respect the rhythm of day and night.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Brilliant concrete poem layout that perfectly captures the physical sensation of breathlessness."
-          }
-        },
-        {
-          "log_id": "PL-11",
-          "chapter_number": 11,
-          "chapter_title": "Yoga–a Way of Life",
-          "unit": "Unit 4: Sports and Wellness",
-          "project_title": "Yoga Asana Guide & Mindfulness Daily Log",
-          "project_type": "Health & Physical Education Guide",
-          "summary_writeup": "Students authored a illustrated guide to basic yogic asanas, explaining breath control (pranayama) and Patanjali's philosophy of quieting mental distractions. They maintained a 5-day mindfulness and breathing journal tracking study focus.",
-          "skills_demonstrated": [
-            "Distinguishing practice (noun) vs. practise (verb).",
-            "Expository writing and procedural instructions.",
-            "Mindfulness and physical health self-management."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Yoga is not just stretching; it joins mind, body, and breath. Practising pranayama before studying helped me stay calm and focused during exams.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Excellent procedural guide with accurate grammar usage and genuine mindfulness practice."
-          }
-        },
-        {
-          "log_id": "PL-12",
-          "chapter_number": 12,
-          "chapter_title": "Kalakritiyon ka Bharat",
-          "unit": "Unit 5: Culture and Tradition",
-          "project_title": "Ek Bharat Shreshtha Bharat Regional Craft Exhibition",
-          "project_type": "Cultural Research & Model Craft Making",
-          "summary_writeup": "In connection with Ek Bharat Shreshtha Bharat, students created mini-replicas of traditional Indian crafts (Aipan rice art, Dhokra metal casting model, Coconut shell bowl, Kondapalli wood toy). They presented a step-by-step procedural talk using sequence connectors.",
-          "skills_demonstrated": [
-            "Sequence connectors (first, then, next, finally).",
-            "Cultural research and eco-friendly craft creation.",
-            "Public presentation and descriptive language."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "India's traditional crafts use natural, biodegradable waste like coconut shells, clay, and seed paste. Our cultural heritage is deeply eco-friendly.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Outstanding craft models and fluent oral presentation demonstrating pride in Indian cultural heritage."
-          }
-        },
-        {
-          "log_id": "PL-13",
-          "chapter_number": 13,
-          "chapter_title": "The Kites",
-          "unit": "Unit 5: Culture and Tradition",
-          "project_title": "Kite Flying Metaphor Essay & Aerodynamic Design Journal",
-          "project_type": "Poetic Analysis & STEM Integration",
-          "summary_writeup": "Students constructed a paper kite using recycled bamboo and paper, testing flight mechanics. They wrote a poetic analysis of Daphne Lister's 'The Kites', focusing on similes ('like coloured birds') and the subjunctive wish 'I wish I were small and light as air'.",
-          "skills_demonstrated": [
-            "Simile identification and subjunctive wish construction.",
-            "Interdisciplinary application of STEM aerodynamics with poetry.",
-            "Creative imaginative essay writing."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "3/4 (Proficient)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Flying a kite lets my imagination soar into the sky. Combining science in making the kite with poetry in describing its flight made learning fun.",
-          "teacher_feedback_rubric": {
-            "score": "A",
-            "comments": "Creative fusion of scientific kite construction with subtle poetic appreciation."
-          }
-        },
-        {
-          "log_id": "PL-14",
-          "chapter_number": 14,
-          "chapter_title": "Ila Sachani: Embroidering Dreams with Her Feet",
-          "unit": "Unit 5: Culture and Tradition",
-          "project_title": "Ila Sachani Foot-Embroidery Biography & Resilience Journal",
-          "project_type": "Biographical Essay & Values Reflection",
-          "summary_writeup": "Students researched Ila Sachani's life journey from Gujarat, analyzing how she trained her feet to thread needles and master Kathiawar embroidery. They wrote an inspirational profile and practiced a basic motor task using non-dominant limbs to experience empathy.",
-          "skills_demonstrated": [
-            "Quantifiers with countable vs. uncountable nouns (many/much, a few/a little).",
-            "Biographical essay writing and character profiling.",
-            "Deep reflection on indomitable determination and inclusion."
-          ],
-          "self_rating": {
-            "understanding_of_concept": "4/4 (Advanced)",
-            "effort_and_dedication": "4/4 (Advanced)",
-            "creativity_and_presentation": "4/4 (Advanced)"
-          },
-          "reflective_takeaway": "Ila Sachani proved that physical limitations cannot stop a determined mind. Patience and non-stop practice can turn any barrier into artistic triumph.",
-          "teacher_feedback_rubric": {
-            "score": "A+",
-            "comments": "Profound, deeply empathetic biographical essay with flawless quantifier grammar usage."
-          }
-        }
-      ],
-      "student_achievement_badges": [
-        {
-          "badge_id": "BADGE-01",
-          "badge_name": "Fable Philosopher",
-          "category": "Ethics & Moral Reasoning",
-          "icon_symbol": "📜📜",
-          "description": "Earned for demonstrating deep understanding of traditional fables, distinguishing hard work from magical shortcuts, and analyzing character choices.",
-          "earning_milestones": [
-            "Scored 85%+ on Unit 1 assessment tests.",
-            "Completed 'A Bottle of Dew' financial reflection and 'Raven' flattery warning poster.",
-            "Demonstrated active listening during oral fable recitals."
-          ],
-          "target_domain": "Literature & Moral Science"
-        },
-        {
-          "badge_id": "BADGE-02",
-          "badge_name": "Civic Defender",
-          "category": "Social Responsibility & Crisis Management",
-          "icon_symbol": "🛡️🚔",
-          "description": "Earned for demonstrating calm presence of mind in crisis scenarios and promoting cooperation with law enforcement and community safety.",
-          "earning_milestones": [
-            "Created 'Rama to the Rescue' emergency response comic strip.",
-            "Formulated home safety protocols in group activities.",
-            "Mastered present continuous tense and interjection usage in emergency dialogues."
-          ],
-          "target_domain": "Civics & Emotional Regulation"
-        },
-        {
-          "badge_id": "BADGE-03",
-          "badge_name": "Empathetic Companion",
-          "category": "Social-Emotional Learning (SEL)",
-          "icon_symbol": "🐘🐕❤️",
-          "description": "Earned for understanding interspecies companionship, valuing unconditional love over material luxury, and avoiding fair-weather peer judgments.",
-          "earning_milestones": [
-            "Authored Gajaraj & Buntee empathy diary log.",
-            "Recited 'A Friend's Prayer' with genuine expression.",
-            "Completed 'The Invisible Chair' friendship survey and suffix transformation drills."
-          ],
-          "target_domain": "Emotional Intelligence & Ethics"
-        },
-        {
-          "badge_id": "BADGE-04",
-          "badge_name": "Eco-Heritage Guardian",
-          "category": "Environmental Stewardship",
-          "icon_symbol": "🌿🌳💚",
-          "description": "Earned for researching traditional botanical wisdom, understanding air purification, and advocating for tree protection and organic farming.",
-          "earning_milestones": [
-            "Created 'Neem Baba Eco-Pharmacy Catalog'.",
-            "Mastered compound word classifications (closed, open, hyphenated).",
-            "Illustrated the bird's expanding worldview concentric diagram in 'What a Bird Thought'."
-          ],
-          "target_domain": "Environmental Science & Botany"
-        },
-        {
-          "badge_id": "BADGE-05",
-          "badge_name": "Mindful Champion",
-          "category": "Sportsmanship & Holistic Wellness",
-          "icon_symbol": "🏸🧘‍♂️🏆",
-          "description": "Earned for prioritizing sportsmanship over victory, managing game anxiety, and integrating daily yoga and breath control for study focus.",
-          "earning_milestones": [
-            "Maintained 1-week PE sportsmanship reflection log.",
-            "Authored Yoga Asana procedural guide with correct practice/practise usage.",
-            "Composed concrete poem mimicking physical breath rhythms in 'The Winner'."
-          ],
-          "target_domain": "Physical Education & Mental Health"
-        },
-        {
-          "badge_id": "BADGE-06",
-          "badge_name": "Cultural Heritage Ambassador",
-          "category": "Art & Indian Culture",
-          "icon_symbol": "🎨🎨🧵",
-          "description": "Earned for showcasing traditional Indian eco-crafts, connecting with Ek Bharat Shreshtha Bharat, and celebrating regional art forms.",
-          "earning_milestones": [
-            "Built mini-replicas of Aipan, Dhokra, or Kondapalli traditional crafts.",
-            "Delivered oral presentation using sequence connectors.",
-            "Constructed and tested an aerodynamic paper kite with poetic analysis."
-          ],
-          "target_domain": "Culture, Art & Indigenous Crafts"
-        },
-        {
-          "badge_id": "BADGE-07",
-          "badge_name": "Indomitable Grit Master",
-          "category": "Resilience & Inclusion",
-          "icon_symbol": "👣🧵⭐",
-          "description": "Earned for demonstrating deep appreciation of human determination over disability, writing inspirational biographies, and practicing inclusion.",
-          "earning_milestones": [
-            "Authored Ila Sachani biographical profile with flawless quantifier grammar.",
-            "Completed empathy motor skill challenge.",
-            "Scored 90%+ on Unit 5 comprehensive assessment."
-          ],
-          "target_domain": "Life Skills & Inclusive Education"
-        }
-      ],
-      "master_learning_outcomes_checklist": [
-        {
-          "chapter_number": 1,
-          "chapter_title": "A Bottle of Dew",
-          "unit": "Unit 1: Fables and Folk Tales",
-          "competencies_acquired": [
-            "Distinguishes productive physical labor from speculative magical shortcuts.",
-            "Understands agricultural asset management and household financial planning.",
-            "Identifies and correctly uses homophones (dew/due, son/sun, ate/eight).",
-            "Applies simple past tense verb forms (regular and irregular) in story writing."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 2,
-          "chapter_title": "The Raven and the Fox",
-          "unit": "Unit 1: Fables and Folk Tales",
-          "competencies_acquired": [
-            "Recognizes psychological manipulation through insincere flattery.",
-            "Analyzes poetic structure, similes, and adverbs of manner.",
-            "Performs dialogic recitations with voice modulation and emotional expression."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 3,
-          "chapter_title": "Rama to the Rescue",
-          "unit": "Unit 1: Fables and Folk Tales",
-          "competencies_acquired": [
-            "Applies presence of mind and tactical composure in emergency situations.",
-            "Understands civic law enforcement cooperation with village Kotwals.",
-            "Uses present progressive tense (is/are + V-ing), interjections, and contractions accurately."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 4,
-          "chapter_title": "The Unlikely Best Friends",
-          "unit": "Unit 2: Friendship",
-          "competencies_acquired": [
-            "Understands emotional needs, interspecies companionship, and true friendship.",
-            "Uses past continuous tense and prepositions of place accurately.",
-            "Composes empathetic creative writing from animal perspectives."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 5,
-          "chapter_title": "A Friend's Prayer",
-          "unit": "Unit 2: Friendship",
-          "competencies_acquired": [
-            "Understands non-judgmental acceptance and active support in friendship.",
-            "Identifies modal verbs of wish/prayer (May) and phrasal metaphors ('see with heart').",
-            "Recites reflective poetry with proper rhythm, pronunciation, and emotion."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 6,
-          "chapter_title": "The Chair",
-          "unit": "Unit 2: Friendship",
-          "competencies_acquired": [
-            "Distinguishes true supportive friends from fair-weather acquaintances.",
-            "Applies word formation rules using suffixes (-ship, -ful, -ly).",
-            "Analyzes social experiment data and peer relationships critically."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 7,
-          "chapter_title": "Neem Baba",
-          "unit": "Unit 3: Nurturing Nature",
-          "competencies_acquired": [
-            "Understands botanical uses of neem in traditional medicine, dental care, and organic farming.",
-            "Categorizes compound words into closed, open, and hyphenated forms.",
-            "Applies personification in dialogue writing with natural elements."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 8,
-          "chapter_title": "What a Bird Thought",
-          "unit": "Unit 3: Nurturing Nature",
-          "competencies_acquired": [
-            "Understands intellectual growth, expanding worldviews, and humility before nature.",
-            "Uses modals of ability/inability (can, cannot, could) accurately.",
-            "Analyzes visual concentric diagrams and composes original poetic stanzas."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 9,
-          "chapter_title": "Change of Heart",
-          "unit": "Unit 4: Sports and Wellness",
-          "competencies_acquired": [
-            "Appreciates true sportsmanship, joy of participation, and effort over scoreboards.",
-            "Formulates past perfect tense (had + V3) accurately.",
-            "Maintains self-regulatory PE reflection logs for sports psychology."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 10,
-          "chapter_title": "The Winner",
-          "unit": "Unit 4: Sports and Wellness",
-          "competencies_acquired": [
-            "Understands unstructured outdoor play and nature's ultimate boundaries.",
-            "Analyzes concrete poetry layout and visual single-word typography.",
-            "Identifies personification of natural elements (Night wins!)."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 11,
-          "chapter_title": "Yoga–a Way of Life",
-          "unit": "Unit 4: Sports and Wellness",
-          "competencies_acquired": [
-            "Understands Sanskrit root 'yuj', mind-body integration, and Patanjali's Yoga Sutras.",
-            "Distinguishes noun vs. verb forms (Practice vs. Practise, Advice vs. Advise).",
-            "Authors procedural instructional guides and practices daily study mindfulness."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 12,
-          "chapter_title": "Kalakritiyon ka Bharat",
-          "unit": "Unit 5: Culture and Tradition",
-          "competencies_acquired": [
-            "Appreciates regional Indian eco-crafts (Aipan, Dhokra, Coconut shell, Kondapalli).",
-            "Uses sequence connectors (first, then, next, finally) in procedural speech.",
-            "Connects classroom learning with Ek Bharat Shreshtha Bharat cultural heritage."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 13,
-          "chapter_title": "The Kites",
-          "unit": "Unit 5: Culture and Tradition",
-          "competencies_acquired": [
-            "Analyzes poetic similes ('like coloured birds') and subjunctive wish mood ('I wish I were').",
-            "Integrates STEM aerodynamics with paper kite construction.",
-            "Composes imaginative airborne narrative essays."
-          ],
-          "mastery_status": "Mastered (100%)"
-        },
-        {
-          "chapter_number": 14,
-          "chapter_title": "Ila Sachani: Embroidering Dreams with Her Feet",
-          "unit": "Unit 5: Culture and Tradition",
-          "competencies_acquired": [
-            "Understands indomitable determination, inclusion, and triumph over disability.",
-            "Applies quantifiers with countable vs. uncountable nouns (many/much, a few/a little).",
-            "Authors inspirational biographical profiles and respects traditional art."
-          ],
-          "mastery_status": "Mastered (100%)"
-        }
-      ]
-    }
+      {
+        "badge_id": "BADGE-02",
+        "badge_name": "Civic Defender",
+        "category": "Social Responsibility & Crisis Management",
+        "icon_symbol": "🛡️🚔",
+        "description": "Earned for demonstrating calm presence of mind in crisis scenarios and promoting cooperation with law enforcement and community safety.",
+        "earning_milestones": [
+          "Created 'Rama to the Rescue' emergency response comic strip.",
+          "Formulated home safety protocols in group activities.",
+          "Mastered present continuous tense and interjection usage in emergency dialogues."
+        ],
+        "target_domain": "Civics & Emotional Regulation"
+      },
+      {
+        "badge_id": "BADGE-03",
+        "badge_name": "Empathetic Companion",
+        "category": "Social-Emotional Learning (SEL)",
+        "icon_symbol": "🐘🐕❤️",
+        "description": "Earned for understanding interspecies companionship, valuing unconditional love over material luxury, and avoiding fair-weather peer judgments.",
+        "earning_milestones": [
+          "Authored Gajaraj & Buntee empathy diary log.",
+          "Recited 'A Friend's Prayer' with genuine expression.",
+          "Completed 'The Invisible Chair' friendship survey and suffix transformation drills."
+        ],
+        "target_domain": "Emotional Intelligence & Ethics"
+      },
+      {
+        "badge_id": "BADGE-04",
+        "badge_name": "Eco-Heritage Guardian",
+        "category": "Environmental Stewardship",
+        "icon_symbol": "🌿🌳💚",
+        "description": "Earned for researching traditional botanical wisdom, understanding air purification, and advocating for tree protection and organic farming.",
+        "earning_milestones": [
+          "Created 'Neem Baba Eco-Pharmacy Catalog'.",
+          "Mastered compound word classifications (closed, open, hyphenated).",
+          "Illustrated the bird's expanding worldview concentric diagram in 'What a Bird Thought'."
+        ],
+        "target_domain": "Environmental Science & Botany"
+      },
+      {
+        "badge_id": "BADGE-05",
+        "badge_name": "Mindful Champion",
+        "category": "Sportsmanship & Holistic Wellness",
+        "icon_symbol": "🏸🧘‍♂️🏆",
+        "description": "Earned for prioritizing sportsmanship over victory, managing game anxiety, and integrating daily yoga and breath control for study focus.",
+        "earning_milestones": [
+          "Maintained 1-week PE sportsmanship reflection log.",
+          "Authored Yoga Asana procedural guide with correct practice/practise usage.",
+          "Composed concrete poem mimicking physical breath rhythms in 'The Winner'."
+        ],
+        "target_domain": "Physical Education & Mental Health"
+      },
+      {
+        "badge_id": "BADGE-06",
+        "badge_name": "Cultural Heritage Ambassador",
+        "category": "Art & Indian Culture",
+        "icon_symbol": "🎨🎨🧵",
+        "description": "Earned for showcasing traditional Indian eco-crafts, connecting with Ek Bharat Shreshtha Bharat, and celebrating regional art forms.",
+        "earning_milestones": [
+          "Built mini-replicas of Aipan, Dhokra, or Kondapalli traditional crafts.",
+          "Delivered oral presentation using sequence connectors.",
+          "Constructed and tested an aerodynamic paper kite with poetic analysis."
+        ],
+        "target_domain": "Culture, Art & Indigenous Crafts"
+      },
+      {
+        "badge_id": "BADGE-07",
+        "badge_name": "Indomitable Grit Master",
+        "category": "Resilience & Inclusion",
+        "icon_symbol": "👣🧵⭐",
+        "description": "Earned for demonstrating deep appreciation of human determination over disability, writing inspirational biographies, and practicing inclusion.",
+        "earning_milestones": [
+          "Authored Ila Sachani biographical profile with flawless quantifier grammar.",
+          "Completed empathy motor skill challenge.",
+          "Scored 90%+ on Unit 5 comprehensive assessment."
+        ],
+        "target_domain": "Life Skills & Inclusive Education"
+      }
+    ],
+    "master_learning_outcomes_checklist": [
+      {
+        "chapter_number": 1,
+        "chapter_title": "A Bottle of Dew",
+        "unit": "Unit 1: Fables and Folk Tales",
+        "competencies_acquired": [
+          "Distinguishes productive physical labor from speculative magical shortcuts.",
+          "Understands agricultural asset management and household financial planning.",
+          "Identifies and correctly uses homophones (dew/due, son/sun, ate/eight).",
+          "Applies simple past tense verb forms (regular and irregular) in story writing."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 2,
+        "chapter_title": "The Raven and the Fox",
+        "unit": "Unit 1: Fables and Folk Tales",
+        "competencies_acquired": [
+          "Recognizes psychological manipulation through insincere flattery.",
+          "Analyzes poetic structure, similes, and adverbs of manner.",
+          "Performs dialogic recitations with voice modulation and emotional expression."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 3,
+        "chapter_title": "Rama to the Rescue",
+        "unit": "Unit 1: Fables and Folk Tales",
+        "competencies_acquired": [
+          "Applies presence of mind and tactical composure in emergency situations.",
+          "Understands civic law enforcement cooperation with village Kotwals.",
+          "Uses present progressive tense (is/are + V-ing), interjections, and contractions accurately."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 4,
+        "chapter_title": "The Unlikely Best Friends",
+        "unit": "Unit 2: Friendship",
+        "competencies_acquired": [
+          "Understands emotional needs, interspecies companionship, and true friendship.",
+          "Uses past continuous tense and prepositions of place accurately.",
+          "Composes empathetic creative writing from animal perspectives."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 5,
+        "chapter_title": "A Friend's Prayer",
+        "unit": "Unit 2: Friendship",
+        "competencies_acquired": [
+          "Understands non-judgmental acceptance and active support in friendship.",
+          "Identifies modal verbs of wish/prayer (May) and phrasal metaphors ('see with heart').",
+          "Recites reflective poetry with proper rhythm, pronunciation, and emotion."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 6,
+        "chapter_title": "The Chair",
+        "unit": "Unit 2: Friendship",
+        "competencies_acquired": [
+          "Distinguishes true supportive friends from fair-weather acquaintances.",
+          "Applies word formation rules using suffixes (-ship, -ful, -ly).",
+          "Analyzes social experiment data and peer relationships critically."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 7,
+        "chapter_title": "Neem Baba",
+        "unit": "Unit 3: Nurturing Nature",
+        "competencies_acquired": [
+          "Understands botanical uses of neem in traditional medicine, dental care, and organic farming.",
+          "Categorizes compound words into closed, open, and hyphenated forms.",
+          "Applies personification in dialogue writing with natural elements."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 8,
+        "chapter_title": "What a Bird Thought",
+        "unit": "Unit 3: Nurturing Nature",
+        "competencies_acquired": [
+          "Understands intellectual growth, expanding worldviews, and humility before nature.",
+          "Uses modals of ability/inability (can, cannot, could) accurately.",
+          "Analyzes visual concentric diagrams and composes original poetic stanzas."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 9,
+        "chapter_title": "Change of Heart",
+        "unit": "Unit 4: Sports and Wellness",
+        "competencies_acquired": [
+          "Appreciates true sportsmanship, joy of participation, and effort over scoreboards.",
+          "Formulates past perfect tense (had + V3) accurately.",
+          "Maintains self-regulatory PE reflection logs for sports psychology."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 10,
+        "chapter_title": "The Winner",
+        "unit": "Unit 4: Sports and Wellness",
+        "competencies_acquired": [
+          "Understands unstructured outdoor play and nature's ultimate boundaries.",
+          "Analyzes concrete poetry layout and visual single-word typography.",
+          "Identifies personification of natural elements (Night wins!)."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 11,
+        "chapter_title": "Yoga–a Way of Life",
+        "unit": "Unit 4: Sports and Wellness",
+        "competencies_acquired": [
+          "Understands Sanskrit root 'yuj', mind-body integration, and Patanjali's Yoga Sutras.",
+          "Distinguishes noun vs. verb forms (Practice vs. Practise, Advice vs. Advise).",
+          "Authors procedural instructional guides and practices daily study mindfulness."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 12,
+        "chapter_title": "Kalakritiyon ka Bharat",
+        "unit": "Unit 5: Culture and Tradition",
+        "competencies_acquired": [
+          "Appreciates regional Indian eco-crafts (Aipan, Dhokra, Coconut shell, Kondapalli).",
+          "Uses sequence connectors (first, then, next, finally) in procedural speech.",
+          "Connects classroom learning with Ek Bharat Shreshtha Bharat cultural heritage."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 13,
+        "chapter_title": "The Kites",
+        "unit": "Unit 5: Culture and Tradition",
+        "competencies_acquired": [
+          "Analyzes poetic similes ('like coloured birds') and subjunctive wish mood ('I wish I were').",
+          "Integrates STEM aerodynamics with paper kite construction.",
+          "Composes imaginative airborne narrative essays."
+        ],
+        "mastery_status": "Mastered (100%)"
+      },
+      {
+        "chapter_number": 14,
+        "chapter_title": "Ila Sachani: Embroidering Dreams with Her Feet",
+        "unit": "Unit 5: Culture and Tradition",
+        "competencies_acquired": [
+          "Understands indomitable determination, inclusion, and triumph over disability.",
+          "Applies quantifiers with countable vs. uncountable nouns (many/much, a few/a little).",
+          "Authors inspirational biographical profiles and respects traditional art."
+        ],
+        "mastery_status": "Mastered (100%)"
+      }
+    ]
   },
   "grade": "6",
   "chapter_id": "G6-ENG-U01-C01",

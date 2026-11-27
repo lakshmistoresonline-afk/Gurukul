@@ -1,556 +1,221 @@
 {
-  "schema_version": "2.0.0",
-  "record_id": "gurukul_1a7e0b73fe27281b",
-  "record_type": "source_artifact",
-  "curriculum": {
-    "curriculum_id": null,
-    "board_id": null,
-    "class_id": "class_8",
-    "class_level": 8
-  },
+  "module_title": "Overview Module",
   "subject": "Maths II",
-  "artifact": {
-    "artifact_type": "overview",
-    "source_file_name": "06-Overview.json",
-    "source_relative_path": "Contents/Class 8/Maths II/Source Files/06-Overview.json",
-    "source_format": "json"
+  "dashboard_config": {
+    "theme": "interactive_mathematics",
+    "layout": "multi_module_grid",
+    "enable_hotspot_overlays": true,
+    "default_language": "en"
   },
-  "source_integrity": {
-    "source_file_sha256": "33e318fd0ceaa2c8ed683e3ccd79631e85e09b703cc5be43cbdae04fc0b55564",
-    "source_semantic_sha256": "685b710bfe144424d2c0b0ce06dd9730dd7dc53881fadf65eac6ee8e39aa26c1",
-    "source_byte_length": 9031,
-    "source_encoding": "utf-8",
-    "source_field_count": 141,
-    "field_inventory": [
-      "$.module_title",
-      "$.subject",
-      "$.dashboard_config",
-      "$.dashboard_config.theme",
-      "$.dashboard_config.layout",
-      "$.dashboard_config.enable_hotspot_overlays",
-      "$.dashboard_config.default_language",
-      "$.chapters_overview",
-      "$.chapters_overview[0].chapter_number",
-      "$.chapters_overview[0].chapter_title",
-      "$.chapters_overview[0].storyboard_summary",
-      "$.chapters_overview[0].key_takeaways",
-      "$.chapters_overview[0].image_asset",
-      "$.chapters_overview[0].image_asset.image_id",
-      "$.chapters_overview[0].image_asset.title",
-      "$.chapters_overview[0].image_asset.url",
-      "$.chapters_overview[0].image_asset.aspect_ratio",
-      "$.chapters_overview[0].image_asset.hotspots",
-      "$.chapters_overview[0].image_asset.hotspots[0].id",
-      "$.chapters_overview[0].image_asset.hotspots[0].title",
-      "$.chapters_overview[0].image_asset.hotspots[0].x_percent",
-      "$.chapters_overview[0].image_asset.hotspots[0].y_percent",
-      "$.chapters_overview[0].image_asset.hotspots[0].w_percent",
-      "$.chapters_overview[0].image_asset.hotspots[0].h_percent",
-      "$.chapters_overview[0].image_asset.hotspots[0].tooltip",
-      "$.chapters_overview[0].image_asset.hotspots[1].id",
-      "$.chapters_overview[0].image_asset.hotspots[1].title",
-      "$.chapters_overview[0].image_asset.hotspots[1].x_percent",
-      "$.chapters_overview[0].image_asset.hotspots[1].y_percent",
-      "$.chapters_overview[0].image_asset.hotspots[1].w_percent",
-      "$.chapters_overview[0].image_asset.hotspots[1].h_percent",
-      "$.chapters_overview[0].image_asset.hotspots[1].tooltip",
-      "$.chapters_overview[1].chapter_number",
-      "$.chapters_overview[1].chapter_title",
-      "$.chapters_overview[1].storyboard_summary",
-      "$.chapters_overview[1].key_takeaways",
-      "$.chapters_overview[1].image_asset",
-      "$.chapters_overview[1].image_asset.image_id",
-      "$.chapters_overview[1].image_asset.title",
-      "$.chapters_overview[1].image_asset.url",
-      "$.chapters_overview[1].image_asset.aspect_ratio",
-      "$.chapters_overview[1].image_asset.hotspots",
-      "$.chapters_overview[1].image_asset.hotspots[0].id",
-      "$.chapters_overview[1].image_asset.hotspots[0].title",
-      "$.chapters_overview[1].image_asset.hotspots[0].x_percent",
-      "$.chapters_overview[1].image_asset.hotspots[0].y_percent",
-      "$.chapters_overview[1].image_asset.hotspots[0].w_percent",
-      "$.chapters_overview[1].image_asset.hotspots[0].h_percent",
-      "$.chapters_overview[1].image_asset.hotspots[0].tooltip",
-      "$.chapters_overview[1].image_asset.hotspots[1].id",
-      "$.chapters_overview[1].image_asset.hotspots[1].title",
-      "$.chapters_overview[1].image_asset.hotspots[1].x_percent",
-      "$.chapters_overview[1].image_asset.hotspots[1].y_percent",
-      "$.chapters_overview[1].image_asset.hotspots[1].w_percent",
-      "$.chapters_overview[1].image_asset.hotspots[1].h_percent",
-      "$.chapters_overview[1].image_asset.hotspots[1].tooltip",
-      "$.chapters_overview[2].chapter_number",
-      "$.chapters_overview[2].chapter_title",
-      "$.chapters_overview[2].storyboard_summary",
-      "$.chapters_overview[2].key_takeaways",
-      "$.chapters_overview[2].image_asset",
-      "$.chapters_overview[2].image_asset.image_id",
-      "$.chapters_overview[2].image_asset.title",
-      "$.chapters_overview[2].image_asset.url",
-      "$.chapters_overview[2].image_asset.aspect_ratio",
-      "$.chapters_overview[2].image_asset.hotspots",
-      "$.chapters_overview[2].image_asset.hotspots[0].id",
-      "$.chapters_overview[2].image_asset.hotspots[0].title",
-      "$.chapters_overview[2].image_asset.hotspots[0].x_percent",
-      "$.chapters_overview[2].image_asset.hotspots[0].y_percent",
-      "$.chapters_overview[2].image_asset.hotspots[0].w_percent",
-      "$.chapters_overview[2].image_asset.hotspots[0].h_percent",
-      "$.chapters_overview[2].image_asset.hotspots[0].tooltip",
-      "$.chapters_overview[3].chapter_number",
-      "$.chapters_overview[3].chapter_title",
-      "$.chapters_overview[3].storyboard_summary",
-      "$.chapters_overview[3].key_takeaways",
-      "$.chapters_overview[3].image_asset",
-      "$.chapters_overview[3].image_asset.image_id",
-      "$.chapters_overview[3].image_asset.title",
-      "$.chapters_overview[3].image_asset.url",
-      "$.chapters_overview[3].image_asset.aspect_ratio",
-      "$.chapters_overview[3].image_asset.hotspots",
-      "$.chapters_overview[3].image_asset.hotspots[0].id",
-      "$.chapters_overview[3].image_asset.hotspots[0].title",
-      "$.chapters_overview[3].image_asset.hotspots[0].x_percent",
-      "$.chapters_overview[3].image_asset.hotspots[0].y_percent",
-      "$.chapters_overview[3].image_asset.hotspots[0].w_percent",
-      "$.chapters_overview[3].image_asset.hotspots[0].h_percent",
-      "$.chapters_overview[3].image_asset.hotspots[0].tooltip",
-      "$.chapters_overview[4].chapter_number",
-      "$.chapters_overview[4].chapter_title",
-      "$.chapters_overview[4].storyboard_summary",
-      "$.chapters_overview[4].key_takeaways",
-      "$.chapters_overview[4].image_asset",
-      "$.chapters_overview[4].image_asset.image_id",
-      "$.chapters_overview[4].image_asset.title",
-      "$.chapters_overview[4].image_asset.url",
-      "$.chapters_overview[4].image_asset.aspect_ratio",
-      "$.chapters_overview[4].image_asset.hotspots",
-      "$.chapters_overview[4].image_asset.hotspots[0].id",
-      "$.chapters_overview[4].image_asset.hotspots[0].title",
-      "$.chapters_overview[4].image_asset.hotspots[0].x_percent",
-      "$.chapters_overview[4].image_asset.hotspots[0].y_percent",
-      "$.chapters_overview[4].image_asset.hotspots[0].w_percent",
-      "$.chapters_overview[4].image_asset.hotspots[0].h_percent",
-      "$.chapters_overview[4].image_asset.hotspots[0].tooltip",
-      "$.chapters_overview[5].chapter_number",
-      "$.chapters_overview[5].chapter_title",
-      "$.chapters_overview[5].storyboard_summary",
-      "$.chapters_overview[5].key_takeaways",
-      "$.chapters_overview[5].image_asset",
-      "$.chapters_overview[5].image_asset.image_id",
-      "$.chapters_overview[5].image_asset.title",
-      "$.chapters_overview[5].image_asset.url",
-      "$.chapters_overview[5].image_asset.aspect_ratio",
-      "$.chapters_overview[5].image_asset.hotspots",
-      "$.chapters_overview[5].image_asset.hotspots[0].id",
-      "$.chapters_overview[5].image_asset.hotspots[0].title",
-      "$.chapters_overview[5].image_asset.hotspots[0].x_percent",
-      "$.chapters_overview[5].image_asset.hotspots[0].y_percent",
-      "$.chapters_overview[5].image_asset.hotspots[0].w_percent",
-      "$.chapters_overview[5].image_asset.hotspots[0].h_percent",
-      "$.chapters_overview[5].image_asset.hotspots[0].tooltip",
-      "$.chapters_overview[6].chapter_number",
-      "$.chapters_overview[6].chapter_title",
-      "$.chapters_overview[6].storyboard_summary",
-      "$.chapters_overview[6].key_takeaways",
-      "$.chapters_overview[6].image_asset",
-      "$.chapters_overview[6].image_asset.image_id",
-      "$.chapters_overview[6].image_asset.title",
-      "$.chapters_overview[6].image_asset.url",
-      "$.chapters_overview[6].image_asset.aspect_ratio",
-      "$.chapters_overview[6].image_asset.hotspots",
-      "$.chapters_overview[6].image_asset.hotspots[0].id",
-      "$.chapters_overview[6].image_asset.hotspots[0].title",
-      "$.chapters_overview[6].image_asset.hotspots[0].x_percent",
-      "$.chapters_overview[6].image_asset.hotspots[0].y_percent",
-      "$.chapters_overview[6].image_asset.hotspots[0].w_percent",
-      "$.chapters_overview[6].image_asset.hotspots[0].h_percent",
-      "$.chapters_overview[6].image_asset.hotspots[0].tooltip"
-    ]
-  },
-  "academic_index": {
-    "chapter_candidates": [
-      {
-        "source_path": "$.chapters_overview[0]",
-        "source_title_field": "chapter_title",
-        "source_title": "Fractions in Disguise",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.chapters_overview[0].image_asset",
-        "source_title_field": "title",
-        "source_title": "Percentages as Fractions & Bar Model",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[0].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "25% Quadrant",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[0].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "50% Half Point",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[1]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Baudhāyana-Pythagoras Theorem",
-        "source_number_field": "chapter_number",
-        "source_number": 2
-      },
-      {
-        "source_path": "$.chapters_overview[1].image_asset",
-        "source_title_field": "title",
-        "source_title": "Baudhāyana-Pythagoras Right Triangle",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[1].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Hypotenuse c = 5",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[1].image_asset.hotspots[1]",
-        "source_title_field": "title",
-        "source_title": "Right Angle Corner",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[2]",
-        "source_title_field": "chapter_title",
-        "source_title": "Proportional Reasoning-2",
-        "source_number_field": "chapter_number",
-        "source_number": 3
-      },
-      {
-        "source_path": "$.chapters_overview[2].image_asset",
-        "source_title_field": "title",
-        "source_title": "Representative Fraction Map Scale & Pie Chart",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[2].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Grade A Sector (108°)",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[3]",
-        "source_title_field": "chapter_title",
-        "source_title": "Exploring Some Geometric Themes",
-        "source_number_field": "chapter_number",
-        "source_number": 4
-      },
-      {
-        "source_path": "$.chapters_overview[3].image_asset",
-        "source_title_field": "title",
-        "source_title": "Sierpinski Carpet Iteration 3 & Self-Similarity",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[3].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Central Cutout Hole",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[4]",
-        "source_title_field": "chapter_title",
-        "source_title": "Tales by Dots and Lines",
-        "source_number_field": "chapter_number",
-        "source_number": 5
-      },
-      {
-        "source_path": "$.chapters_overview[4].image_asset",
-        "source_title_field": "title",
-        "source_title": "Dot Plot Balance Beam & Arithmetic Mean Fulcrum",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[4].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Fulcrum Pivot at 50",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[5]",
-        "source_title_field": "chapter_title",
-        "source_title": "Algebra Play",
-        "source_number_field": "chapter_number",
-        "source_number": 6
-      },
-      {
-        "source_path": "$.chapters_overview[5].image_asset",
-        "source_title_field": "title",
-        "source_title": "3-Tier Additive Number Pyramid",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[5].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Top Cell Equation",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[6]",
-        "source_title_field": "chapter_title",
-        "source_title": "Area and Perimeter",
-        "source_number_field": "chapter_number",
-        "source_number": 7
-      },
-      {
-        "source_path": "$.chapters_overview[6].image_asset",
-        "source_title_field": "title",
-        "source_title": "Trapezium Area & Height Dissection",
-        "source_number_field": null,
-        "source_number": null
-      },
-      {
-        "source_path": "$.chapters_overview[6].image_asset.hotspots[0]",
-        "source_title_field": "title",
-        "source_title": "Parallel Base b = 60 cm",
-        "source_number_field": null,
-        "source_number": null
+  "chapters_overview": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Fractions in Disguise",
+      "storyboard_summary": "Chapter 1 establishes percentages as fractions disguised with a denominator of 100. It covers inter-conversions between fractions, decimals, ratios, and percentages; mental calculation strategies; estimation techniques; visual bar models; percentages greater than 100%; and practical applications such as profit, loss, and food nutritional label analysis.",
+      "key_takeaways": [
+        "Master core concepts of Fractions in Disguise",
+        "Apply analytical formulas to textbook and practical scenarios",
+        "Understand visual representations and geometric relationships"
+      ],
+      "image_asset": {
+        "image_id": "img_ch1_percentages",
+        "title": "Percentages as Fractions & Bar Model",
+        "url": "/assets/images/ch1_percentages.png",
+        "aspect_ratio": "16:9",
+        "hotspots": [
+          {
+            "id": "hs_ch1_1",
+            "title": "25% Quadrant",
+            "x_percent": 10,
+            "y_percent": 50,
+            "w_percent": 20,
+            "h_percent": 17,
+            "tooltip": "Represents 1/4 of total value"
+          },
+          {
+            "id": "hs_ch1_2",
+            "title": "50% Half Point",
+            "x_percent": 30,
+            "y_percent": 50,
+            "w_percent": 20,
+            "h_percent": 17,
+            "tooltip": "Represents 1/2 of total value"
+          }
+        ]
       }
-    ],
-    "chapter_candidate_count": 23,
-    "normalization_status": "indexed_not_content_rewritten"
-  },
-  "source_data": {
-    "module_title": "Overview Module",
-    "subject": "Ganita Prakash (NCERT Grade 8 Mathematics - Part II)",
-    "dashboard_config": {
-      "theme": "interactive_mathematics",
-      "layout": "multi_module_grid",
-      "enable_hotspot_overlays": true,
-      "default_language": "en"
     },
-    "chapters_overview": [
-      {
-        "chapter_number": 1,
-        "chapter_title": "Fractions in Disguise",
-        "storyboard_summary": "Chapter 1 establishes percentages as fractions disguised with a denominator of 100. It covers inter-conversions between fractions, decimals, ratios, and percentages; mental calculation strategies; estimation techniques; visual bar models; percentages greater than 100%; and practical applications such as profit, loss, and food nutritional label analysis.",
-        "key_takeaways": [
-          "Master core concepts of Fractions in Disguise",
-          "Apply analytical formulas to textbook and practical scenarios",
-          "Understand visual representations and geometric relationships"
-        ],
-        "image_asset": {
-          "image_id": "img_ch1_percentages",
-          "title": "Percentages as Fractions & Bar Model",
-          "url": "/assets/images/ch1_percentages.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "hs_ch1_1",
-              "title": "25% Quadrant",
-              "x_percent": 10,
-              "y_percent": 50,
-              "w_percent": 20,
-              "h_percent": 17,
-              "tooltip": "Represents 1/4 of total value"
-            },
-            {
-              "id": "hs_ch1_2",
-              "title": "50% Half Point",
-              "x_percent": 30,
-              "y_percent": 50,
-              "w_percent": 20,
-              "h_percent": 17,
-              "tooltip": "Represents 1/2 of total value"
-            }
-          ]
-        }
-      },
-      {
-        "chapter_number": 2,
-        "chapter_title": "The Baudhāyana-Pythagoras Theorem",
-        "storyboard_summary": "Chapter 2 explores the fundamental geometric relationship a^2 + b^2 = c^2 in right-angled triangles, tracing its historical formulation in Baudhāyana's Śulba-Sūtras. It investigates square diagonals, the non-terminating decimal sqrt(2), Baudhāyana triples, geometric dissection proofs, and real-world applications.",
-        "key_takeaways": [
-          "Master core concepts of The Baudhāyana-Pythagoras Theorem",
-          "Apply analytical formulas to textbook and practical scenarios",
-          "Understand visual representations and geometric relationships"
-        ],
-        "image_asset": {
-          "image_id": "img_ch2_baudhayana",
-          "title": "Baudhāyana-Pythagoras Right Triangle",
-          "url": "/assets/images/ch2_baudhayana.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "hs_ch2_1",
-              "title": "Hypotenuse c = 5",
-              "x_percent": 35,
-              "y_percent": 35,
-              "w_percent": 20,
-              "h_percent": 20,
-              "tooltip": "c² = a² + b² (3² + 4² = 25)"
-            },
-            {
-              "id": "hs_ch2_2",
-              "title": "Right Angle Corner",
-              "x_percent": 18,
-              "y_percent": 20,
-              "w_percent": 10,
-              "h_percent": 10,
-              "tooltip": "90-degree angle bisector"
-            }
-          ]
-        }
-      },
-      {
-        "chapter_number": 3,
-        "chapter_title": "Proportional Reasoning-2",
-        "storyboard_summary": "Chapter 3 advances proportional reasoning by examining multi-term ratios (a:b:c:d), map scale representations via Representative Fractions (RF), circular pie charts, and inverse proportional relationships where the product x * y remains constant.",
-        "key_takeaways": [
-          "Master core concepts of Proportional Reasoning-2",
-          "Apply analytical formulas to textbook and practical scenarios",
-          "Understand visual representations and geometric relationships"
-        ],
-        "image_asset": {
-          "image_id": "img_ch3_proportional",
-          "title": "Representative Fraction Map Scale & Pie Chart",
-          "url": "/assets/images/ch3_proportional.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "hs_ch3_1",
-              "title": "Grade A Sector (108°)",
-              "x_percent": 45,
-              "y_percent": 40,
-              "w_percent": 20,
-              "h_percent": 20,
-              "tooltip": "Central Angle = (12/40) * 360° = 108°"
-            }
-          ]
-        }
-      },
-      {
-        "chapter_number": 4,
-        "chapter_title": "Exploring Some Geometric Themes",
-        "storyboard_summary": "Chapter 4 investigates fractals—self-similar geometric figures repeating identical structures across scales—such as the Sierpinski Carpet, Sierpinski Triangle, and Koch Snowflake. It also explores 3D solid visual representations, paper nets, shortest surface paths, and isometric perspective illusions.",
-        "key_takeaways": [
-          "Master core concepts of Exploring Some Geometric Themes",
-          "Apply analytical formulas to textbook and practical scenarios",
-          "Understand visual representations and geometric relationships"
-        ],
-        "image_asset": {
-          "image_id": "img_ch4_fractals",
-          "title": "Sierpinski Carpet Iteration 3 & Self-Similarity",
-          "url": "/assets/images/ch4_fractals.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "hs_ch4_1",
-              "title": "Central Cutout Hole",
-              "x_percent": 30,
-              "y_percent": 30,
-              "w_percent": 20,
-              "h_percent": 20,
-              "tooltip": "Holes formula: H_n = (8ⁿ - 1) / 7"
-            }
-          ]
-        }
-      },
-      {
-        "chapter_number": 5,
-        "chapter_title": "Tales by Dots and Lines",
-        "storyboard_summary": "Chapter 5 reimagines the arithmetic mean beyond procedural calculation by introducing a visual dot-plot balance model. It models the mean as a physical fulcrum where total leftward deviation distances equal total rightward deviation distances, and introduces line graphs to track continuous temporal trend data.",
-        "key_takeaways": [
-          "Master core concepts of Tales by Dots and Lines",
-          "Apply analytical formulas to textbook and practical scenarios",
-          "Understand visual representations and geometric relationships"
-        ],
-        "image_asset": {
-          "image_id": "img_ch5_dot_plot",
-          "title": "Dot Plot Balance Beam & Arithmetic Mean Fulcrum",
-          "url": "/assets/images/ch5_dot_plot.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "hs_ch5_1",
-              "title": "Fulcrum Pivot at 50",
-              "x_percent": 45,
-              "y_percent": 20,
-              "w_percent": 10,
-              "h_percent": 15,
-              "tooltip": "Balance point where sum of deviations equals 0"
-            }
-          ]
-        }
-      },
-      {
-        "chapter_number": 6,
-        "chapter_title": "Algebra Play",
-        "storyboard_summary": "Chapter 6 demonstrates how symbolic algebraic notation unlocks the mechanics of number tricks, secret-date guessing games, grid cell puzzles, digit-arrangement product optimizations, and divisibility rules.",
-        "key_takeaways": [
-          "Master core concepts of Algebra Play",
-          "Apply analytical formulas to textbook and practical scenarios",
-          "Understand visual representations and geometric relationships"
-        ],
-        "image_asset": {
-          "image_id": "img_ch6_algebra",
-          "title": "3-Tier Additive Number Pyramid",
-          "url": "/assets/images/ch6_algebra.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "hs_ch6_1",
-              "title": "Top Cell Equation",
-              "x_percent": 40,
-              "y_percent": 55,
-              "w_percent": 20,
-              "h_percent": 15,
-              "tooltip": "Top = a + 2b + c = 4 + 2x + 7 = 25 ⇒ x = 7"
-            }
-          ]
-        }
-      },
-      {
-        "chapter_number": 7,
-        "chapter_title": "Area and Perimeter",
-        "storyboard_summary": "Chapter 7 explores surface area and perimeter for 2D figures (rectangles, squares, triangles, parallelograms, trapeziums). It uses grid unit-square counting, geometric shear transformations, and dissection methods, addressing common misconceptions regarding area versus perimeter.",
-        "key_takeaways": [
-          "Master core concepts of Area and Perimeter",
-          "Apply analytical formulas to textbook and practical scenarios",
-          "Understand visual representations and geometric relationships"
-        ],
-        "image_asset": {
-          "image_id": "img_ch7_area",
-          "title": "Trapezium Area & Height Dissection",
-          "url": "/assets/images/ch7_area.png",
-          "aspect_ratio": "16:9",
-          "hotspots": [
-            {
-              "id": "hs_ch7_1",
-              "title": "Parallel Base b = 60 cm",
-              "x_percent": 20,
-              "y_percent": 15,
-              "w_percent": 60,
-              "h_percent": 10,
-              "tooltip": "Area = ½ * (a + b) * h"
-            }
-          ]
-        }
+    {
+      "chapter_number": 2,
+      "chapter_title": "The Baudhāyana-Pythagoras Theorem",
+      "storyboard_summary": "Chapter 2 explores the fundamental geometric relationship a^2 + b^2 = c^2 in right-angled triangles, tracing its historical formulation in Baudhāyana's Śulba-Sūtras. It investigates square diagonals, the non-terminating decimal sqrt(2), Baudhāyana triples, geometric dissection proofs, and real-world applications.",
+      "key_takeaways": [
+        "Master core concepts of The Baudhāyana-Pythagoras Theorem",
+        "Apply analytical formulas to textbook and practical scenarios",
+        "Understand visual representations and geometric relationships"
+      ],
+      "image_asset": {
+        "image_id": "img_ch2_baudhayana",
+        "title": "Baudhāyana-Pythagoras Right Triangle",
+        "url": "/assets/images/ch2_baudhayana.png",
+        "aspect_ratio": "16:9",
+        "hotspots": [
+          {
+            "id": "hs_ch2_1",
+            "title": "Hypotenuse c = 5",
+            "x_percent": 35,
+            "y_percent": 35,
+            "w_percent": 20,
+            "h_percent": 20,
+            "tooltip": "c² = a² + b² (3² + 4² = 25)"
+          },
+          {
+            "id": "hs_ch2_2",
+            "title": "Right Angle Corner",
+            "x_percent": 18,
+            "y_percent": 20,
+            "w_percent": 10,
+            "h_percent": 10,
+            "tooltip": "90-degree angle bisector"
+          }
+        ]
       }
-    ]
-  },
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Proportional Reasoning-2",
+      "storyboard_summary": "Chapter 3 advances proportional reasoning by examining multi-term ratios (a:b:c:d), map scale representations via Representative Fractions (RF), circular pie charts, and inverse proportional relationships where the product x * y remains constant.",
+      "key_takeaways": [
+        "Master core concepts of Proportional Reasoning-2",
+        "Apply analytical formulas to textbook and practical scenarios",
+        "Understand visual representations and geometric relationships"
+      ],
+      "image_asset": {
+        "image_id": "img_ch3_proportional",
+        "title": "Representative Fraction Map Scale & Pie Chart",
+        "url": "/assets/images/ch3_proportional.png",
+        "aspect_ratio": "16:9",
+        "hotspots": [
+          {
+            "id": "hs_ch3_1",
+            "title": "Grade A Sector (108°)",
+            "x_percent": 45,
+            "y_percent": 40,
+            "w_percent": 20,
+            "h_percent": 20,
+            "tooltip": "Central Angle = (12/40) * 360° = 108°"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Exploring Some Geometric Themes",
+      "storyboard_summary": "Chapter 4 investigates fractals—self-similar geometric figures repeating identical structures across scales—such as the Sierpinski Carpet, Sierpinski Triangle, and Koch Snowflake. It also explores 3D solid visual representations, paper nets, shortest surface paths, and isometric perspective illusions.",
+      "key_takeaways": [
+        "Master core concepts of Exploring Some Geometric Themes",
+        "Apply analytical formulas to textbook and practical scenarios",
+        "Understand visual representations and geometric relationships"
+      ],
+      "image_asset": {
+        "image_id": "img_ch4_fractals",
+        "title": "Sierpinski Carpet Iteration 3 & Self-Similarity",
+        "url": "/assets/images/ch4_fractals.png",
+        "aspect_ratio": "16:9",
+        "hotspots": [
+          {
+            "id": "hs_ch4_1",
+            "title": "Central Cutout Hole",
+            "x_percent": 30,
+            "y_percent": 30,
+            "w_percent": 20,
+            "h_percent": 20,
+            "tooltip": "Holes formula: H_n = (8ⁿ - 1) / 7"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Tales by Dots and Lines",
+      "storyboard_summary": "Chapter 5 reimagines the arithmetic mean beyond procedural calculation by introducing a visual dot-plot balance model. It models the mean as a physical fulcrum where total leftward deviation distances equal total rightward deviation distances, and introduces line graphs to track continuous temporal trend data.",
+      "key_takeaways": [
+        "Master core concepts of Tales by Dots and Lines",
+        "Apply analytical formulas to textbook and practical scenarios",
+        "Understand visual representations and geometric relationships"
+      ],
+      "image_asset": {
+        "image_id": "img_ch5_dot_plot",
+        "title": "Dot Plot Balance Beam & Arithmetic Mean Fulcrum",
+        "url": "/assets/images/ch5_dot_plot.png",
+        "aspect_ratio": "16:9",
+        "hotspots": [
+          {
+            "id": "hs_ch5_1",
+            "title": "Fulcrum Pivot at 50",
+            "x_percent": 45,
+            "y_percent": 20,
+            "w_percent": 10,
+            "h_percent": 15,
+            "tooltip": "Balance point where sum of deviations equals 0"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Algebra Play",
+      "storyboard_summary": "Chapter 6 demonstrates how symbolic algebraic notation unlocks the mechanics of number tricks, secret-date guessing games, grid cell puzzles, digit-arrangement product optimizations, and divisibility rules.",
+      "key_takeaways": [
+        "Master core concepts of Algebra Play",
+        "Apply analytical formulas to textbook and practical scenarios",
+        "Understand visual representations and geometric relationships"
+      ],
+      "image_asset": {
+        "image_id": "img_ch6_algebra",
+        "title": "3-Tier Additive Number Pyramid",
+        "url": "/assets/images/ch6_algebra.png",
+        "aspect_ratio": "16:9",
+        "hotspots": [
+          {
+            "id": "hs_ch6_1",
+            "title": "Top Cell Equation",
+            "x_percent": 40,
+            "y_percent": 55,
+            "w_percent": 20,
+            "h_percent": 15,
+            "tooltip": "Top = a + 2b + c = 4 + 2x + 7 = 25 ⇒ x = 7"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Area and Perimeter",
+      "storyboard_summary": "Chapter 7 explores surface area and perimeter for 2D figures (rectangles, squares, triangles, parallelograms, trapeziums). It uses grid unit-square counting, geometric shear transformations, and dissection methods, addressing common misconceptions regarding area versus perimeter.",
+      "key_takeaways": [
+        "Master core concepts of Area and Perimeter",
+        "Apply analytical formulas to textbook and practical scenarios",
+        "Understand visual representations and geometric relationships"
+      ],
+      "image_asset": {
+        "image_id": "img_ch7_area",
+        "title": "Trapezium Area & Height Dissection",
+        "url": "/assets/images/ch7_area.png",
+        "aspect_ratio": "16:9",
+        "hotspots": [
+          {
+            "id": "hs_ch7_1",
+            "title": "Parallel Base b = 60 cm",
+            "x_percent": 20,
+            "y_percent": 15,
+            "w_percent": 60,
+            "h_percent": 10,
+            "tooltip": "Area = ½ * (a + b) * h"
+          }
+        ]
+      }
+    }
+  ],
   "grade": "8",
   "chapter_id": "G8-MAT-U04-C01",
   "chapter_number": 1,

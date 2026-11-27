@@ -1,0 +1,117 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "A Tale of Three Intersecting Lines",
+  "gamified_drills": {
+    "combo_multipliers": [
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "drills_list": [
+      "Test triangle sides 5, 10, 12",
+      "Test triangle sides 3, 3, 7",
+      "Find third side range for 6 and 10",
+      "Classify equilateral triangle"
+    ]
+  },
+  "scrambled_tile_sets": [
+    {
+      "tiles": [
+        "a + b",
+        ">",
+        "c",
+        "Triangle Inequality"
+      ],
+      "correct_sequence": [
+        "Triangle Inequality",
+        ":",
+        "a + b",
+        ">",
+        "c"
+      ],
+      "hint": "Sum of two smaller sides must strictly exceed the third"
+    }
+  ],
+  "sorting_matrices": [
+    {
+      "bins": [
+        "Valid Triangle",
+        "Invalid Triangle"
+      ],
+      "items": [
+        "Sides 5, 10, 12",
+        "Sides 3, 3, 7",
+        "Sides 24, 26, 28",
+        "Sides 1, 2, 3"
+      ],
+      "correct_mapping": {
+        "Sides 5, 10, 12": "Valid Triangle",
+        "Sides 24, 26, 28": "Valid Triangle",
+        "Sides 3, 3, 7": "Invalid Triangle",
+        "Sides 1, 2, 3": "Invalid Triangle"
+      }
+    }
+  ],
+  "editing_checkers": [
+    {
+      "buggy_expression": "Sides 3, 3, 7 form an isosceles triangle",
+      "error_type": "Triangle Inequality Violation",
+      "corrected_expression": "Sides 3, 3, 7 CANNOT form a triangle because 3 + 3 = 6 < 7",
+      "explanation": "Sum of two smaller sides must strictly exceed the third side."
+    }
+  ],
+  "image_asset": {
+    "asset_id": "ch7_triangle_inequality_detour",
+    "chapter_number": 7,
+    "chapter_title": "A Tale of Three Intersecting Lines",
+    "title": "Direct Path vs Detour & Triangle Inequality Diagram",
+    "file_name": "ch7_triangle_inequality_detour.png",
+    "local_url": "/assets/images/ch7_triangle_inequality_detour.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Direct path vs detour geometry, triangle inequality theorem, side classification, and compass arc feasibility.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_7_1",
+        "title": "Direct Path vs Detour",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Direct straight path c is strictly shorter than detour path a + b (c < a + b => a + b > c)."
+      },
+      {
+        "hotspot_id": "hs_7_2",
+        "title": "Triangle Inequality Theorem",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Sum of any 2 sides > 3rd side (a+b>c, b+c>a, c+a>b). Test: Smallest two sum > longest side."
+      },
+      {
+        "hotspot_id": "hs_7_3",
+        "title": "Side-Based Classification",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Equilateral (a=b=c, always valid for s>0), Isosceles (a=b!=c), Scalene (a!=b!=c)."
+      },
+      {
+        "hotspot_id": "hs_7_4",
+        "title": "Compass Arc Construction",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Compass arcs of radii a and b intersect to locate 3rd vertex iff a + b > c. Arcs fail if a + b <= c."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C07"
+}

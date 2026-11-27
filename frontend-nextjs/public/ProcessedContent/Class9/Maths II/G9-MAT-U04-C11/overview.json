@@ -1,0 +1,84 @@
+{
+  "chapter_number": 11,
+  "chapter_title": "The World of Algorithms",
+  "core_summary": "Explores the nature of algorithms as finite, ordered, unambiguous step-by-step procedures for solving mathematical and computational problems. Traces the evolution of list-based data structures and Greatest Common Divisor (GCD) algorithms from brute-force factor checking to Euclidean iterative subtraction and Āryabhaṭa's division-by-remainder method. Highlights how remainder reduction reduces computational complexity from linear O(N) steps to logarithmic O(log N) steps.",
+  "key_concepts": [
+    "Unambiguous Finite Step Procedures (defining algorithms as structured, deterministic rules)",
+    "Role of Lists and Data Structures (storing, ordering, and accessing intermediate computational values)",
+    "Modulo Arithmetic and Remainder Extraction (m mod n yielding the integer remainder after division)",
+    "Common Divisor Properties (proving that any common divisor of m and n also divides m - n and m mod n)",
+    "Euclidean Subtraction Algorithm (iteratively replacing gcd(m, n) with gcd(n, m - n))",
+    "Āryabhaṭa's Remainder Algorithm (replacing repetitive subtractions with gcd(n, m mod n))",
+    "Computational Complexity and Efficiency (comparing step counts between linear subtraction and logarithmic division)",
+    "Product Identity for GCD and LCM (utilizing m * n = gcd(m, n) * lcm(m, n) for efficient LCM calculation)",
+    "Historical Development of Positional Algorithms (contributions of Āryabhaṭa and Al-Khwārizmī in establishing decimal algorithms)"
+  ],
+  "key_terms": [
+    {
+      "term": "Algorithm",
+      "definition": "A finite, ordered sequence of well-defined rules for solving a specific problem."
+    },
+    {
+      "term": "Modulo Operator (m mod n)",
+      "definition": "An operation returning the integer remainder when m is divided by n."
+    },
+    {
+      "term": "Greatest Common Divisor (GCD)",
+      "definition": "The largest positive integer that divides two or more integers without a remainder."
+    },
+    {
+      "term": "Least Common Multiple (LCM)",
+      "definition": "The smallest positive integer that is a multiple of two or more numbers."
+    },
+    {
+      "term": "Euclidean Subtraction",
+      "definition": "A GCD algorithm that repeatedly subtracts the smaller number from the larger."
+    },
+    {
+      "term": "Āryabhaṭa's Remainder Method",
+      "definition": "A GCD algorithm using division remainders to rapidly reduce problem size."
+    },
+    {
+      "term": "Computational Complexity",
+      "definition": "A measure of the time or number of steps an algorithm requires as input size grows."
+    },
+    {
+      "term": "List Structure",
+      "definition": "An ordered collection of items used by algorithms to track state and intermediate results."
+    }
+  ],
+  "key_takeaways": [
+    "An algorithm must be finite, deterministic, and unambiguous.",
+    "Remainder-based algorithms (Āryabhaṭa's method) perform division in one step instead of dozens of subtractions, drastically improving efficiency.",
+    "The GCD of two numbers divides their difference and their division remainder.",
+    "LCM can be calculated efficiently without prime factorization using the formula LCM(m, n) = (m * n) / GCD(m, n)."
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U04-C11",
+  "title": "The World of Algorithms - Chapter Overview",
+  "video_url": "https://notebooklm.link.google/v9mat11",
+  "video_title": "The World of Algorithms Interactive Video Studio",
+  "image_asset": {
+    "title": "The World of Algorithms Concept Diagram",
+    "asset_url": "/assets/images/ch11_concept_map.png",
+    "url": "/assets/images/ch11_concept_map.png",
+    "filename": "ch11_concept_map.png",
+    "type": "16:9 Diagram",
+    "hotspots": [
+      {
+        "id": "hs_11_1",
+        "label": "Core Mechanism",
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of The World of Algorithms."
+      },
+      {
+        "id": "hs_11_2",
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for The World of Algorithms."
+      }
+    ]
+  },
+  "unit": "U04",
+  "unit_number": 4,
+  "unit_title": "Unit 4"
+}

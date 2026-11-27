@@ -1,0 +1,77 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Propositions and their Converses",
+  "quiz_questions": [
+    {
+      "question_id": 1,
+      "level": "Level 1 (Easy)",
+      "question_type": "Multiple Choice",
+      "question": "Which of the following is a declarative mathematical proposition?",
+      "options": [
+        "A) What is the sum of interior angles of a triangle?",
+        "B) Every rhombus is a parallelogram.",
+        "C) Please construct a line parallel to AB.",
+        "D) x + 5"
+      ],
+      "correct_answer": "B",
+      "explanation": "'Every rhombus is a parallelogram' is a declarative statement with a definitive truth value (True). Questions, requests, and algebraic expressions are not propositions."
+    },
+    {
+      "question_id": 2,
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "The converse of the conditional statement 'If P then Q' is formed by interchanging premise P and conclusion Q to obtain '_______'.",
+      "options": [],
+      "correct_answer": "If Q then P",
+      "explanation": "Forming the converse of a conditional proposition requires swapping the hypothesis (premise P) and conclusion (consequence Q)."
+    },
+    {
+      "question_id": 3,
+      "level": "Level 1 (Easy)",
+      "question_type": "True/False with Justification",
+      "question": "True or False: If a conditional proposition 'If P then Q' is true, its converse 'If Q then P' is automatically true.",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "A proposition and its converse are logically independent. For example, 'If a number is a multiple of 6, then it is a multiple of 3' is True, but its converse 'If a number is a multiple of 3, then it is a multiple of 6' is False (e.g., 9)."
+    },
+    {
+      "question_id": 4,
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer",
+      "question": "Write the converse of the proposition: 'If a quadrilateral is a square, then all four of its interior angles are equal.' Determine whether the converse is true or false and provide a counterexample if false.",
+      "options": [],
+      "correct_answer": "Converse: 'If all four interior angles of a quadrilateral are equal, then it is a square.' Truth value: False. Counterexample: A non-square rectangle (e.g., 4 cm by 6 cm) has four equal 90-degree angles but equal adjacent sides are not required.",
+      "explanation": "Swapping hypothesis and conclusion yields a false converse because equal angles define a rectangle, not necessarily a square."
+    },
+    {
+      "question_id": 5,
+      "level": "Level 2 (Medium)",
+      "question_type": "Diagram Analysis",
+      "question": "Refer to the truth value tree of implications. What logical role does a single counterexample play when evaluating a universal statement 'For all x, P(x)'?",
+      "options": [],
+      "correct_answer": "A single counterexample is sufficient to conclusively disprove a universal statement.",
+      "explanation": "While confirming examples cannot prove a universal claim for all cases, discovering a single counterexample invalidates the universal assertion entirely."
+    },
+    {
+      "question_id": 6,
+      "level": "Level 3 (Hard)",
+      "question_type": "Critical Thinking",
+      "question": "Compare a converse statement with a contrapositive statement for the implication 'If P then Q'. Explain why proving the contrapositive proves the original statement, whereas proving the converse does not.",
+      "options": [],
+      "correct_answer": "The converse is 'If Q then P', which is logically independent of 'If P then Q'. The contrapositive is 'If not Q then not P', which is logically equivalent to 'If P then Q'. Because a proposition and its contrapositive share the exact same truth values in all interpretations, establishing the truth of the contrapositive rigorously proves the original implication.",
+      "explanation": "Logical equivalence guarantees that 'P -> Q' and '~Q -> ~P' always match in truth value, making contrapositive proof logically sound for the original proposition."
+    },
+    {
+      "question_id": 7,
+      "level": "Level 3 (Hard)",
+      "question_type": "Case Study",
+      "question": "Pierre de Fermat conjectured that all numbers of the form F_n = 2^(2^n) + 1 are prime. Leonhard Euler disproved this claim for n = 5. Show Euler's calculation and explain the logical structure of his disproof.",
+      "options": [],
+      "correct_answer": "Euler calculated F_5 = 2^(2^5) + 1 = 2^32 + 1 = 4,294,967,297. He showed that 4,294,967,297 = 641 x 6,700,417. Logically, Fermat made a universal claim ('For all n, F_n is prime'). Euler provided a valid existential counterexample (n = 5 yields a composite number), refuting the universal claim.",
+      "explanation": "Demonstrating that F_5 has factors 641 and 6,700,417 provides a concrete counterexample that refutes Fermat's universal conjecture."
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U01-C09"
+}

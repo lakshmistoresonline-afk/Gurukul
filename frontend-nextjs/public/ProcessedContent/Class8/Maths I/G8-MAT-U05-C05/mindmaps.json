@@ -1,0 +1,87 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Number Play",
+  "d3_config": {
+    "node_color": "#38bdf8",
+    "expanded_radius": 12,
+    "collapsed_radius": 8
+  },
+  "tree_data": {
+    "id": "mm_node_ch5_root",
+    "name": "Number Play",
+    "node_color": "#0ea5e9",
+    "icon": "folder_root",
+    "tooltip_popover": {
+      "title": "Number Play",
+      "content": "Master topic for Chapter 5",
+      "example": "Central node of learning map"
+    },
+    "children": [
+      {
+        "id": "mm_node_ch5_b0",
+        "name": "5.1 Parity and Sums of Numbers",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "5.1 Parity and Sums of Numbers",
+          "content": "Theme section under Number Play",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch5_b0_sb0",
+            "name": "Parity Algebra and Operations",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Parity Algebra and Operations",
+              "content": "Parity defines whether an integer is even (2k) or odd (2k + 1). Addition Rules: Even + Even = Even, Odd + Odd = Even, Even + Odd = Odd. Multiplication Rules: Even * Even = Even, Odd * Odd = Odd, Even * Odd = Even.",
+              "example": "Proof of sum of two odds: (2m + 1) + (2n + 1) = 2(m + n + 1), which is even."
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "mm_node_ch5_b1",
+        "name": "5.2 Generalised Form and Divisibility Proofs",
+        "node_color": "#38bdf8",
+        "icon": "branch_theme",
+        "tooltip_popover": {
+          "title": "5.2 Generalised Form and Divisibility Proofs",
+          "content": "Theme section under Number Play",
+          "example": "Main section overview"
+        },
+        "children": [
+          {
+            "id": "mm_node_ch5_b1_sb0",
+            "name": "Expanded Place Value Algebraic Notation",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Expanded Place Value Algebraic Notation",
+              "content": "A 2-digit number 'ab' is expressed as 10a + b. A 3-digit number 'abc' is expressed as 100a + 10b + c. Reversing digits: (10a + b) - (10b + a) = 9(a - b), proving differences are always multiples of 9. 3-digit reversal difference: (100a + 10b + c) - (100c + 10b + a) = 99(a - c), always divisible by 99.",
+              "example": "Reversing Digits Puzzle ACT-5.1: Proving algebraic divisibility by 9."
+            },
+            "children": []
+          },
+          {
+            "id": "mm_node_ch5_b1_sb1",
+            "name": "Proofs for Standard Divisibility Rules",
+            "node_color": "#818cf8",
+            "icon": "sub_concept",
+            "tooltip_popover": {
+              "title": "Proofs for Standard Divisibility Rules",
+              "content": "Divisibility by 2: 10a + b = 2(5a) + b -> depends solely on unit digit b being even. Divisibility by 4: 100a + (10b + c) = 4(25a) + (10b + c) -> depends on last two digits (10b + c). Divisibility by 3/9: 100a + 10b + c = 99a + 9b + (a + b + c) -> depends on digit sum (a + b + c). Divisibility by 11: Alternating sum difference of odd-place and even-place digits is 0 or multiple of 11.",
+              "example": "214365 digit sum = 21 (not divisible by 9, so number is not divisible by 9)."
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "grade": "8",
+  "subject": "Maths I",
+  "chapter_id": "G8-MAT-U01-C05"
+}

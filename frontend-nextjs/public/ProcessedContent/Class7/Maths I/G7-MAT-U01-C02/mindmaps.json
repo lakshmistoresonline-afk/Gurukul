@@ -1,0 +1,159 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Arithmetic Expressions",
+  "mermaid_syntax": "graph TD\n  Root[\"Arithmetic Expressions\"]\n  Root --> B1[\"Structure and Evaluation Priority\"]\n  B1 --> B1_S1[\"Operational Terms and Order\"]\n  B1 --> B1_S2[\"Bracket Grouping Constraints\"]\n  Root --> B2[\"Algebraic Laws of Arithmetic\"]\n  B2 --> B2_S1[\"Commutative and Associative Laws\"]\n  B2 --> B2_S2[\"Distributive Law of Multiplication\"]\n  Root --> B3[\"Additive Inverse and Negation\"]\n  B3 --> B3_S1[\"Subtraction as Adding Additive Inverses\"]",
+  "d3_react_flow_tree": {
+    "id": "node_root_ch2",
+    "label": "Arithmetic Expressions",
+    "node_color": "#38BDF8",
+    "icon": "book_open",
+    "type": "root",
+    "children": [
+      {
+        "id": "node_b_2_1",
+        "label": "Structure and Evaluation Priority",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_2_1_1",
+            "label": "Operational Terms and Order",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Operational Terms and Order",
+              "description": "An expression combines numbers and operational signs (+, -, *, /).",
+              "key_formula": "Arithmetic Expression",
+              "example": "In 39 - 2 * 6 + 11, evaluate term 2 * 6 = 12 first, giving 39 - 12 + 11 = 38."
+            }
+          },
+          {
+            "id": "node_sub_2_1_2",
+            "label": "Bracket Grouping Constraints",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Bracket Grouping Constraints",
+              "description": "Brackets group sub-expressions into single compound terms to explicitly mandate evaluation priority.",
+              "key_formula": "Brackets / Parentheses",
+              "example": "Queen Alia's coin gift: (100 * 2) + (100 / 2) = 200 + 50 = 250 gold coins."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_2_2",
+        "label": "Algebraic Laws of Arithmetic",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_2_2_1",
+            "label": "Commutative and Associative Laws",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Commutative and Associative Laws",
+              "description": "Commutative Addition: a + b = b + a.",
+              "key_formula": "Commutativity",
+              "example": "18 + (-10) = (-10) + 18 = 8; (12 + 8) + 5 = 12 + (8 + 5) = 25."
+            }
+          },
+          {
+            "id": "node_sub_2_2_2",
+            "label": "Distributive Law of Multiplication",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Distributive Law of Multiplication",
+              "description": "Multiplication distributes over addition: a * (b + c) = a * b + a * c.",
+              "key_formula": "Distributive Property",
+              "example": "Melvin's story reading: 8 * (7 - 2) = 8*7 - 8*2 = 56 - 16 = 40 stories."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_2_3",
+        "label": "Additive Inverse and Negation",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_2_3_1",
+            "label": "Subtraction as Adding Additive Inverses",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Subtraction as Adding Additive Inverses",
+              "description": "Subtracting a number is equivalent to adding its negative counterpart: a - b = a + (-b).",
+              "key_formula": "Additive Inverse",
+              "example": "18 - 10 = 18 + (-10) = 8; Token model combining 18 blue (+1) and 10 red (-1) tokens leaves 8 blue tokens."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "asset_id": "ch2_expressions_token_model",
+    "chapter_number": 2,
+    "chapter_title": "Arithmetic Expressions",
+    "title": "Term Partitioning, Laws & Zero-Pair Token Model Diagram",
+    "file_name": "ch2_expressions_token_model.png",
+    "local_url": "/assets/images/ch2_expressions_token_model.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Visual diagram demonstrating term partitioning, algebraic laws, zero-pair token modeling, and bracket negation.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_2_1",
+        "title": "Term Partitioning & Order",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Addition and subtraction signs partition expressions into individual terms evaluated before summation."
+      },
+      {
+        "hotspot_id": "hs_2_2",
+        "title": "Algebraic Laws of Arithmetic",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Commutative: a+b=b+a. Associative: (a+b)+c=a+(b+c). Distributive: a*(b+c)=ab+ac."
+      },
+      {
+        "hotspot_id": "hs_2_3",
+        "title": "Zero-Pair Token Model",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Subtracting b is adding its additive inverse: a-b = a+(-b). 18 blue (+1) + 10 red (-1) = 8 blue."
+      },
+      {
+        "hotspot_id": "hs_2_4",
+        "title": "Bracket Negation Rules",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Negating a bracket flips internal signs: -(a+b) = -a-b and -(a-b) = -a+b."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C02"
+}

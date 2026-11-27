@@ -1,1228 +1,602 @@
 {
-  "schema_version": "2.0.0",
-  "record_id": "gurukul_764700c653deb5fb",
-  "record_type": "source_artifact",
-  "curriculum": {
-    "curriculum_id": null,
-    "board_id": null,
-    "class_id": "class_6",
-    "class_level": 6
-  },
-  "subject": "Social",
-  "artifact": {
-    "artifact_type": "master",
-    "source_file_name": "10-Master.json",
-    "source_relative_path": "Contents/Class 6/Social/Source Files/10-Master.json",
-    "source_format": "json"
-  },
-  "source_integrity": {
-    "source_file_sha256": "4e924e6c17cbea9ef39bc198790276b5af013fde23a38f327745daddea2641ce",
-    "source_semantic_sha256": "f24e8d0bb36fd7f916c78e176de00a0c5fc2bb64abf92aac1b28a68ffcad2bd0",
-    "source_byte_length": 32845,
-    "source_encoding": "utf-8",
-    "source_field_count": 391,
-    "field_inventory": [
-      "$.subject_metadata",
-      "$.subject_metadata.board",
-      "$.subject_metadata.class_level",
-      "$.subject_metadata.subject_title",
-      "$.subject_metadata.textbook_title",
-      "$.subject_metadata.curriculum_framework",
-      "$.subject_metadata.total_chapters",
-      "$.subject_metadata.academic_domain_coverage",
-      "$.self_evaluation_rubrics",
-      "$.self_evaluation_rubrics.core_competencies",
-      "$.self_evaluation_rubrics.core_competencies[0].competency_id",
-      "$.self_evaluation_rubrics.core_competencies[0].competency_name",
-      "$.self_evaluation_rubrics.core_competencies[0].description",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[0].level",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[0].score_range",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[0].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[1].level",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[1].score_range",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[1].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[2].level",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[2].score_range",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[2].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[3].level",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[3].score_range",
-      "$.self_evaluation_rubrics.core_competencies[0].evaluation_levels[3].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[0].self_rating_scale",
-      "$.self_evaluation_rubrics.core_competencies[1].competency_id",
-      "$.self_evaluation_rubrics.core_competencies[1].competency_name",
-      "$.self_evaluation_rubrics.core_competencies[1].description",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[0].level",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[0].score_range",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[0].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[1].level",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[1].score_range",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[1].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[2].level",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[2].score_range",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[2].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[3].level",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[3].score_range",
-      "$.self_evaluation_rubrics.core_competencies[1].evaluation_levels[3].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[1].self_rating_scale",
-      "$.self_evaluation_rubrics.core_competencies[2].competency_id",
-      "$.self_evaluation_rubrics.core_competencies[2].competency_name",
-      "$.self_evaluation_rubrics.core_competencies[2].description",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[0].level",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[0].score_range",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[0].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[1].level",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[1].score_range",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[1].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[2].level",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[2].score_range",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[2].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[3].level",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[3].score_range",
-      "$.self_evaluation_rubrics.core_competencies[2].evaluation_levels[3].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[2].self_rating_scale",
-      "$.self_evaluation_rubrics.core_competencies[3].competency_id",
-      "$.self_evaluation_rubrics.core_competencies[3].competency_name",
-      "$.self_evaluation_rubrics.core_competencies[3].description",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[0].level",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[0].score_range",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[0].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[1].level",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[1].score_range",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[1].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[2].level",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[2].score_range",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[2].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[3].level",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[3].score_range",
-      "$.self_evaluation_rubrics.core_competencies[3].evaluation_levels[3].descriptor",
-      "$.self_evaluation_rubrics.core_competencies[3].self_rating_scale",
-      "$.portfolio_logs",
-      "$.portfolio_logs[0].entry_id",
-      "$.portfolio_logs[0].chapter_number",
-      "$.portfolio_logs[0].chapter_title",
-      "$.portfolio_logs[0].subject_domain",
-      "$.portfolio_logs[0].project_title",
-      "$.portfolio_logs[0].summary_writeup",
-      "$.portfolio_logs[0].evidence_artifacts",
-      "$.portfolio_logs[0].self_rating",
-      "$.portfolio_logs[0].peer_feedback",
-      "$.portfolio_logs[0].teacher_feedback",
-      "$.portfolio_logs[0].reflective_takeaway",
-      "$.portfolio_logs[1].entry_id",
-      "$.portfolio_logs[1].chapter_number",
-      "$.portfolio_logs[1].chapter_title",
-      "$.portfolio_logs[1].subject_domain",
-      "$.portfolio_logs[1].project_title",
-      "$.portfolio_logs[1].summary_writeup",
-      "$.portfolio_logs[1].evidence_artifacts",
-      "$.portfolio_logs[1].self_rating",
-      "$.portfolio_logs[1].peer_feedback",
-      "$.portfolio_logs[1].teacher_feedback",
-      "$.portfolio_logs[1].reflective_takeaway",
-      "$.portfolio_logs[2].entry_id",
-      "$.portfolio_logs[2].chapter_number",
-      "$.portfolio_logs[2].chapter_title",
-      "$.portfolio_logs[2].subject_domain",
-      "$.portfolio_logs[2].project_title",
-      "$.portfolio_logs[2].summary_writeup",
-      "$.portfolio_logs[2].evidence_artifacts",
-      "$.portfolio_logs[2].self_rating",
-      "$.portfolio_logs[2].peer_feedback",
-      "$.portfolio_logs[2].teacher_feedback",
-      "$.portfolio_logs[2].reflective_takeaway",
-      "$.portfolio_logs[3].entry_id",
-      "$.portfolio_logs[3].chapter_number",
-      "$.portfolio_logs[3].chapter_title",
-      "$.portfolio_logs[3].subject_domain",
-      "$.portfolio_logs[3].project_title",
-      "$.portfolio_logs[3].summary_writeup",
-      "$.portfolio_logs[3].evidence_artifacts",
-      "$.portfolio_logs[3].self_rating",
-      "$.portfolio_logs[3].peer_feedback",
-      "$.portfolio_logs[3].teacher_feedback",
-      "$.portfolio_logs[3].reflective_takeaway",
-      "$.portfolio_logs[4].entry_id",
-      "$.portfolio_logs[4].chapter_number",
-      "$.portfolio_logs[4].chapter_title",
-      "$.portfolio_logs[4].subject_domain",
-      "$.portfolio_logs[4].project_title",
-      "$.portfolio_logs[4].summary_writeup",
-      "$.portfolio_logs[4].evidence_artifacts",
-      "$.portfolio_logs[4].self_rating",
-      "$.portfolio_logs[4].peer_feedback",
-      "$.portfolio_logs[4].teacher_feedback",
-      "$.portfolio_logs[4].reflective_takeaway",
-      "$.portfolio_logs[5].entry_id",
-      "$.portfolio_logs[5].chapter_number",
-      "$.portfolio_logs[5].chapter_title",
-      "$.portfolio_logs[5].subject_domain",
-      "$.portfolio_logs[5].project_title",
-      "$.portfolio_logs[5].summary_writeup",
-      "$.portfolio_logs[5].evidence_artifacts",
-      "$.portfolio_logs[5].self_rating",
-      "$.portfolio_logs[5].peer_feedback",
-      "$.portfolio_logs[5].teacher_feedback",
-      "$.portfolio_logs[5].reflective_takeaway",
-      "$.portfolio_logs[6].entry_id",
-      "$.portfolio_logs[6].chapter_number",
-      "$.portfolio_logs[6].chapter_title",
-      "$.portfolio_logs[6].subject_domain",
-      "$.portfolio_logs[6].project_title",
-      "$.portfolio_logs[6].summary_writeup",
-      "$.portfolio_logs[6].evidence_artifacts",
-      "$.portfolio_logs[6].self_rating",
-      "$.portfolio_logs[6].peer_feedback",
-      "$.portfolio_logs[6].teacher_feedback",
-      "$.portfolio_logs[6].reflective_takeaway",
-      "$.portfolio_logs[7].entry_id",
-      "$.portfolio_logs[7].chapter_number",
-      "$.portfolio_logs[7].chapter_title",
-      "$.portfolio_logs[7].subject_domain",
-      "$.portfolio_logs[7].project_title",
-      "$.portfolio_logs[7].summary_writeup",
-      "$.portfolio_logs[7].evidence_artifacts",
-      "$.portfolio_logs[7].self_rating",
-      "$.portfolio_logs[7].peer_feedback",
-      "$.portfolio_logs[7].teacher_feedback",
-      "$.portfolio_logs[7].reflective_takeaway",
-      "$.portfolio_logs[8].entry_id",
-      "$.portfolio_logs[8].chapter_number",
-      "$.portfolio_logs[8].chapter_title",
-      "$.portfolio_logs[8].subject_domain",
-      "$.portfolio_logs[8].project_title",
-      "$.portfolio_logs[8].summary_writeup",
-      "$.portfolio_logs[8].evidence_artifacts",
-      "$.portfolio_logs[8].self_rating",
-      "$.portfolio_logs[8].peer_feedback",
-      "$.portfolio_logs[8].teacher_feedback",
-      "$.portfolio_logs[8].reflective_takeaway",
-      "$.portfolio_logs[9].entry_id",
-      "$.portfolio_logs[9].chapter_number",
-      "$.portfolio_logs[9].chapter_title",
-      "$.portfolio_logs[9].subject_domain",
-      "$.portfolio_logs[9].project_title",
-      "$.portfolio_logs[9].summary_writeup",
-      "$.portfolio_logs[9].evidence_artifacts",
-      "$.portfolio_logs[9].self_rating",
-      "$.portfolio_logs[9].peer_feedback",
-      "$.portfolio_logs[9].teacher_feedback",
-      "$.portfolio_logs[9].reflective_takeaway",
-      "$.portfolio_logs[10].entry_id",
-      "$.portfolio_logs[10].chapter_number",
-      "$.portfolio_logs[10].chapter_title",
-      "$.portfolio_logs[10].subject_domain",
-      "$.portfolio_logs[10].project_title",
-      "$.portfolio_logs[10].summary_writeup",
-      "$.portfolio_logs[10].evidence_artifacts",
-      "$.portfolio_logs[10].self_rating",
-      "$.portfolio_logs[10].peer_feedback",
-      "$.portfolio_logs[10].teacher_feedback",
-      "$.portfolio_logs[10].reflective_takeaway",
-      "$.portfolio_logs[11].entry_id",
-      "$.portfolio_logs[11].chapter_number",
-      "$.portfolio_logs[11].chapter_title",
-      "$.portfolio_logs[11].subject_domain",
-      "$.portfolio_logs[11].project_title",
-      "$.portfolio_logs[11].summary_writeup",
-      "$.portfolio_logs[11].evidence_artifacts",
-      "$.portfolio_logs[11].self_rating",
-      "$.portfolio_logs[11].peer_feedback",
-      "$.portfolio_logs[11].teacher_feedback",
-      "$.portfolio_logs[11].reflective_takeaway",
-      "$.portfolio_logs[12].entry_id",
-      "$.portfolio_logs[12].chapter_number",
-      "$.portfolio_logs[12].chapter_title",
-      "$.portfolio_logs[12].subject_domain",
-      "$.portfolio_logs[12].project_title",
-      "$.portfolio_logs[12].summary_writeup",
-      "$.portfolio_logs[12].evidence_artifacts",
-      "$.portfolio_logs[12].self_rating",
-      "$.portfolio_logs[12].peer_feedback",
-      "$.portfolio_logs[12].teacher_feedback",
-      "$.portfolio_logs[12].reflective_takeaway",
-      "$.portfolio_logs[13].entry_id",
-      "$.portfolio_logs[13].chapter_number",
-      "$.portfolio_logs[13].chapter_title",
-      "$.portfolio_logs[13].subject_domain",
-      "$.portfolio_logs[13].project_title",
-      "$.portfolio_logs[13].summary_writeup",
-      "$.portfolio_logs[13].evidence_artifacts",
-      "$.portfolio_logs[13].self_rating",
-      "$.portfolio_logs[13].peer_feedback",
-      "$.portfolio_logs[13].teacher_feedback",
-      "$.portfolio_logs[13].reflective_takeaway",
-      "$.achievement_badges",
-      "$.achievement_badges[0].badge_id",
-      "$.achievement_badges[0].badge_name",
-      "$.achievement_badges[0].domain",
-      "$.achievement_badges[0].icon_symbol",
-      "$.achievement_badges[0].criteria_description",
-      "$.achievement_badges[0].required_milestones",
-      "$.achievement_badges[1].badge_id",
-      "$.achievement_badges[1].badge_name",
-      "$.achievement_badges[1].domain",
-      "$.achievement_badges[1].icon_symbol",
-      "$.achievement_badges[1].criteria_description",
-      "$.achievement_badges[1].required_milestones",
-      "$.achievement_badges[2].badge_id",
-      "$.achievement_badges[2].badge_name",
-      "$.achievement_badges[2].domain",
-      "$.achievement_badges[2].icon_symbol",
-      "$.achievement_badges[2].criteria_description",
-      "$.achievement_badges[2].required_milestones",
-      "$.achievement_badges[3].badge_id",
-      "$.achievement_badges[3].badge_name",
-      "$.achievement_badges[3].domain",
-      "$.achievement_badges[3].icon_symbol",
-      "$.achievement_badges[3].criteria_description",
-      "$.achievement_badges[3].required_milestones",
-      "$.achievement_badges[4].badge_id",
-      "$.achievement_badges[4].badge_name",
-      "$.achievement_badges[4].domain",
-      "$.achievement_badges[4].icon_symbol",
-      "$.achievement_badges[4].criteria_description",
-      "$.achievement_badges[4].required_milestones",
-      "$.achievement_badges[5].badge_id",
-      "$.achievement_badges[5].badge_name",
-      "$.achievement_badges[5].domain",
-      "$.achievement_badges[5].icon_symbol",
-      "$.achievement_badges[5].criteria_description",
-      "$.achievement_badges[5].required_milestones",
-      "$.master_learning_outcomes_checklist",
-      "$.master_learning_outcomes_checklist[0].outcome_id",
-      "$.master_learning_outcomes_checklist[0].chapter_number",
-      "$.master_learning_outcomes_checklist[0].chapter_title",
-      "$.master_learning_outcomes_checklist[0].domain",
-      "$.master_learning_outcomes_checklist[0].competency_statement",
-      "$.master_learning_outcomes_checklist[0].mastery_indicator",
-      "$.master_learning_outcomes_checklist[0].ncert_alignment",
-      "$.master_learning_outcomes_checklist[0].status",
-      "$.master_learning_outcomes_checklist[1].outcome_id",
-      "$.master_learning_outcomes_checklist[1].chapter_number",
-      "$.master_learning_outcomes_checklist[1].chapter_title",
-      "$.master_learning_outcomes_checklist[1].domain",
-      "$.master_learning_outcomes_checklist[1].competency_statement",
-      "$.master_learning_outcomes_checklist[1].mastery_indicator",
-      "$.master_learning_outcomes_checklist[1].ncert_alignment",
-      "$.master_learning_outcomes_checklist[1].status",
-      "$.master_learning_outcomes_checklist[2].outcome_id",
-      "$.master_learning_outcomes_checklist[2].chapter_number",
-      "$.master_learning_outcomes_checklist[2].chapter_title",
-      "$.master_learning_outcomes_checklist[2].domain",
-      "$.master_learning_outcomes_checklist[2].competency_statement",
-      "$.master_learning_outcomes_checklist[2].mastery_indicator",
-      "$.master_learning_outcomes_checklist[2].ncert_alignment",
-      "$.master_learning_outcomes_checklist[2].status",
-      "$.master_learning_outcomes_checklist[3].outcome_id",
-      "$.master_learning_outcomes_checklist[3].chapter_number",
-      "$.master_learning_outcomes_checklist[3].chapter_title",
-      "$.master_learning_outcomes_checklist[3].domain",
-      "$.master_learning_outcomes_checklist[3].competency_statement",
-      "$.master_learning_outcomes_checklist[3].mastery_indicator",
-      "$.master_learning_outcomes_checklist[3].ncert_alignment",
-      "$.master_learning_outcomes_checklist[3].status",
-      "$.master_learning_outcomes_checklist[4].outcome_id",
-      "$.master_learning_outcomes_checklist[4].chapter_number",
-      "$.master_learning_outcomes_checklist[4].chapter_title",
-      "$.master_learning_outcomes_checklist[4].domain",
-      "$.master_learning_outcomes_checklist[4].competency_statement",
-      "$.master_learning_outcomes_checklist[4].mastery_indicator",
-      "$.master_learning_outcomes_checklist[4].ncert_alignment",
-      "$.master_learning_outcomes_checklist[4].status",
-      "$.master_learning_outcomes_checklist[5].outcome_id",
-      "$.master_learning_outcomes_checklist[5].chapter_number",
-      "$.master_learning_outcomes_checklist[5].chapter_title",
-      "$.master_learning_outcomes_checklist[5].domain",
-      "$.master_learning_outcomes_checklist[5].competency_statement",
-      "$.master_learning_outcomes_checklist[5].mastery_indicator",
-      "$.master_learning_outcomes_checklist[5].ncert_alignment",
-      "$.master_learning_outcomes_checklist[5].status",
-      "$.master_learning_outcomes_checklist[6].outcome_id",
-      "$.master_learning_outcomes_checklist[6].chapter_number",
-      "$.master_learning_outcomes_checklist[6].chapter_title",
-      "$.master_learning_outcomes_checklist[6].domain",
-      "$.master_learning_outcomes_checklist[6].competency_statement",
-      "$.master_learning_outcomes_checklist[6].mastery_indicator",
-      "$.master_learning_outcomes_checklist[6].ncert_alignment",
-      "$.master_learning_outcomes_checklist[6].status",
-      "$.master_learning_outcomes_checklist[7].outcome_id",
-      "$.master_learning_outcomes_checklist[7].chapter_number",
-      "$.master_learning_outcomes_checklist[7].chapter_title",
-      "$.master_learning_outcomes_checklist[7].domain",
-      "$.master_learning_outcomes_checklist[7].competency_statement",
-      "$.master_learning_outcomes_checklist[7].mastery_indicator",
-      "$.master_learning_outcomes_checklist[7].ncert_alignment",
-      "$.master_learning_outcomes_checklist[7].status",
-      "$.master_learning_outcomes_checklist[8].outcome_id",
-      "$.master_learning_outcomes_checklist[8].chapter_number",
-      "$.master_learning_outcomes_checklist[8].chapter_title",
-      "$.master_learning_outcomes_checklist[8].domain",
-      "$.master_learning_outcomes_checklist[8].competency_statement",
-      "$.master_learning_outcomes_checklist[8].mastery_indicator",
-      "$.master_learning_outcomes_checklist[8].ncert_alignment",
-      "$.master_learning_outcomes_checklist[8].status",
-      "$.master_learning_outcomes_checklist[9].outcome_id",
-      "$.master_learning_outcomes_checklist[9].chapter_number",
-      "$.master_learning_outcomes_checklist[9].chapter_title",
-      "$.master_learning_outcomes_checklist[9].domain",
-      "$.master_learning_outcomes_checklist[9].competency_statement",
-      "$.master_learning_outcomes_checklist[9].mastery_indicator",
-      "$.master_learning_outcomes_checklist[9].ncert_alignment",
-      "$.master_learning_outcomes_checklist[9].status",
-      "$.master_learning_outcomes_checklist[10].outcome_id",
-      "$.master_learning_outcomes_checklist[10].chapter_number",
-      "$.master_learning_outcomes_checklist[10].chapter_title",
-      "$.master_learning_outcomes_checklist[10].domain",
-      "$.master_learning_outcomes_checklist[10].competency_statement",
-      "$.master_learning_outcomes_checklist[10].mastery_indicator",
-      "$.master_learning_outcomes_checklist[10].ncert_alignment",
-      "$.master_learning_outcomes_checklist[10].status",
-      "$.master_learning_outcomes_checklist[11].outcome_id",
-      "$.master_learning_outcomes_checklist[11].chapter_number",
-      "$.master_learning_outcomes_checklist[11].chapter_title",
-      "$.master_learning_outcomes_checklist[11].domain",
-      "$.master_learning_outcomes_checklist[11].competency_statement",
-      "$.master_learning_outcomes_checklist[11].mastery_indicator",
-      "$.master_learning_outcomes_checklist[11].ncert_alignment",
-      "$.master_learning_outcomes_checklist[11].status",
-      "$.master_learning_outcomes_checklist[12].outcome_id",
-      "$.master_learning_outcomes_checklist[12].chapter_number",
-      "$.master_learning_outcomes_checklist[12].chapter_title",
-      "$.master_learning_outcomes_checklist[12].domain",
-      "$.master_learning_outcomes_checklist[12].competency_statement",
-      "$.master_learning_outcomes_checklist[12].mastery_indicator",
-      "$.master_learning_outcomes_checklist[12].ncert_alignment",
-      "$.master_learning_outcomes_checklist[12].status",
-      "$.master_learning_outcomes_checklist[13].outcome_id",
-      "$.master_learning_outcomes_checklist[13].chapter_number",
-      "$.master_learning_outcomes_checklist[13].chapter_title",
-      "$.master_learning_outcomes_checklist[13].domain",
-      "$.master_learning_outcomes_checklist[13].competency_statement",
-      "$.master_learning_outcomes_checklist[13].mastery_indicator",
-      "$.master_learning_outcomes_checklist[13].ncert_alignment",
-      "$.master_learning_outcomes_checklist[13].status",
-      "$.master_learning_outcomes_checklist[14].outcome_id",
-      "$.master_learning_outcomes_checklist[14].chapter_number",
-      "$.master_learning_outcomes_checklist[14].chapter_title",
-      "$.master_learning_outcomes_checklist[14].domain",
-      "$.master_learning_outcomes_checklist[14].competency_statement",
-      "$.master_learning_outcomes_checklist[14].mastery_indicator",
-      "$.master_learning_outcomes_checklist[14].ncert_alignment",
-      "$.master_learning_outcomes_checklist[14].status"
+  "subject_metadata": {
+    "board": "NCERT / CBSE Framework",
+    "class_level": "Class 6",
+    "subject_title": "Social Science",
+    "textbook_title": "Exploring Society: India and Beyond",
+    "curriculum_framework": "NEP 2020 / NCF-SE 2023",
+    "total_chapters": 14,
+    "academic_domain_coverage": [
+      "Geography",
+      "History",
+      "Civics",
+      "Economics"
     ]
   },
-  "academic_index": {
-    "chapter_candidates": [
+  "self_evaluation_rubrics": {
+    "core_competencies": [
       {
-        "source_path": "$.portfolio_logs[0]",
-        "source_title_field": "chapter_title",
-        "source_title": "Locating Places on the Earth",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.portfolio_logs[1]",
-        "source_title_field": "chapter_title",
-        "source_title": "Oceans and Continents",
-        "source_number_field": "chapter_number",
-        "source_number": 2
-      },
-      {
-        "source_path": "$.portfolio_logs[2]",
-        "source_title_field": "chapter_title",
-        "source_title": "Landforms and Life",
-        "source_number_field": "chapter_number",
-        "source_number": 3
-      },
-      {
-        "source_path": "$.portfolio_logs[3]",
-        "source_title_field": "chapter_title",
-        "source_title": "Timeline and Sources of History",
-        "source_number_field": "chapter_number",
-        "source_number": 4
-      },
-      {
-        "source_path": "$.portfolio_logs[4]",
-        "source_title_field": "chapter_title",
-        "source_title": "India, That Is Bharat",
-        "source_number_field": "chapter_number",
-        "source_number": 5
-      },
-      {
-        "source_path": "$.portfolio_logs[5]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Beginnings of Indian Civilisation",
-        "source_number_field": "chapter_number",
-        "source_number": 6
-      },
-      {
-        "source_path": "$.portfolio_logs[6]",
-        "source_title_field": "chapter_title",
-        "source_title": "India's Cultural Roots",
-        "source_number_field": "chapter_number",
-        "source_number": 7
-      },
-      {
-        "source_path": "$.portfolio_logs[7]",
-        "source_title_field": "chapter_title",
-        "source_title": "Unity in Diversity, or 'Many in the One'",
-        "source_number_field": "chapter_number",
-        "source_number": 8
-      },
-      {
-        "source_path": "$.portfolio_logs[8]",
-        "source_title_field": "chapter_title",
-        "source_title": "Family and Community",
-        "source_number_field": "chapter_number",
-        "source_number": 9
-      },
-      {
-        "source_path": "$.portfolio_logs[9]",
-        "source_title_field": "chapter_title",
-        "source_title": "Grassroots Democracy – Part 1 (Governance)",
-        "source_number_field": "chapter_number",
-        "source_number": 10
-      },
-      {
-        "source_path": "$.portfolio_logs[10]",
-        "source_title_field": "chapter_title",
-        "source_title": "Grassroots Democracy – Part 2 (Local Government in Rural Areas)",
-        "source_number_field": "chapter_number",
-        "source_number": 11
-      },
-      {
-        "source_path": "$.portfolio_logs[11]",
-        "source_title_field": "chapter_title",
-        "source_title": "Grassroots Democracy – Part 3 (Local Government in Urban Areas)",
-        "source_number_field": "chapter_number",
-        "source_number": 12
-      },
-      {
-        "source_path": "$.portfolio_logs[12]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Value of Work",
-        "source_number_field": "chapter_number",
-        "source_number": 13
-      },
-      {
-        "source_path": "$.portfolio_logs[13]",
-        "source_title_field": "chapter_title",
-        "source_title": "Economic Activities Around Us",
-        "source_number_field": "chapter_number",
-        "source_number": 14
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[0]",
-        "source_title_field": "chapter_title",
-        "source_title": "Locating Places on the Earth",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[1]",
-        "source_title_field": "chapter_title",
-        "source_title": "Locating Places on the Earth",
-        "source_number_field": "chapter_number",
-        "source_number": 1
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[2]",
-        "source_title_field": "chapter_title",
-        "source_title": "Oceans and Continents",
-        "source_number_field": "chapter_number",
-        "source_number": 2
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[3]",
-        "source_title_field": "chapter_title",
-        "source_title": "Landforms and Life",
-        "source_number_field": "chapter_number",
-        "source_number": 3
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[4]",
-        "source_title_field": "chapter_title",
-        "source_title": "Timeline and Sources of History",
-        "source_number_field": "chapter_number",
-        "source_number": 4
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[5]",
-        "source_title_field": "chapter_title",
-        "source_title": "India, That Is Bharat",
-        "source_number_field": "chapter_number",
-        "source_number": 5
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[6]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Beginnings of Indian Civilisation",
-        "source_number_field": "chapter_number",
-        "source_number": 6
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[7]",
-        "source_title_field": "chapter_title",
-        "source_title": "India's Cultural Roots",
-        "source_number_field": "chapter_number",
-        "source_number": 7
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[8]",
-        "source_title_field": "chapter_title",
-        "source_title": "Unity in Diversity, or 'Many in the One'",
-        "source_number_field": "chapter_number",
-        "source_number": 8
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[9]",
-        "source_title_field": "chapter_title",
-        "source_title": "Family and Community",
-        "source_number_field": "chapter_number",
-        "source_number": 9
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[10]",
-        "source_title_field": "chapter_title",
-        "source_title": "Grassroots Democracy – Part 1 (Governance)",
-        "source_number_field": "chapter_number",
-        "source_number": 10
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[11]",
-        "source_title_field": "chapter_title",
-        "source_title": "Grassroots Democracy – Part 2 (Local Government in Rural Areas)",
-        "source_number_field": "chapter_number",
-        "source_number": 11
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[12]",
-        "source_title_field": "chapter_title",
-        "source_title": "Grassroots Democracy – Part 3 (Local Government in Urban Areas)",
-        "source_number_field": "chapter_number",
-        "source_number": 12
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[13]",
-        "source_title_field": "chapter_title",
-        "source_title": "The Value of Work",
-        "source_number_field": "chapter_number",
-        "source_number": 13
-      },
-      {
-        "source_path": "$.master_learning_outcomes_checklist[14]",
-        "source_title_field": "chapter_title",
-        "source_title": "Economic Activities Around Us",
-        "source_number_field": "chapter_number",
-        "source_number": 14
-      }
-    ],
-    "chapter_candidate_count": 29,
-    "normalization_status": "indexed_not_content_rewritten"
-  },
-  "source_data": {
-    "subject_metadata": {
-      "board": "NCERT / CBSE Framework",
-      "class_level": "Class 6",
-      "subject_title": "Social Science",
-      "textbook_title": "Exploring Society: India and Beyond",
-      "curriculum_framework": "NEP 2020 / NCF-SE 2023",
-      "total_chapters": 14,
-      "academic_domain_coverage": [
-        "Geography",
-        "History",
-        "Civics",
-        "Economics"
-      ]
-    },
-    "self_evaluation_rubrics": {
-      "core_competencies": [
-        {
-          "competency_id": "COMP-01",
-          "competency_name": "Listening & Observing",
-          "description": "Ability to attentively process oral presentations, video overviews, historical narratives, and environmental maps while identifying key geographic and civic features.",
-          "evaluation_levels": [
-            {
-              "level": "Exemplary (Level 4)",
-              "score_range": "85% - 100%",
-              "descriptor": "Actively listens and observes; extracts subtle nuances, historical causes, map coordinates, and civic processes; synthesizes observations independently."
-            },
-            {
-              "level": "Proficient (Level 3)",
-              "score_range": "70% - 84%",
-              "descriptor": "Listens attentively; identifies main geographical features, historical facts, and civic roles accurately with minimal guidance."
-            },
-            {
-              "level": "Developing (Level 2)",
-              "score_range": "50% - 69%",
-              "descriptor": "Understands primary facts when stated clearly; requires assistance to connect observed geographic features or historical timelines."
-            },
-            {
-              "level": "Novice (Level 1)",
-              "score_range": "Below 50%",
-              "descriptor": "Struggles to maintain focus during presentations; misses major concepts or instructions."
-            }
-          ],
-          "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
-        },
-        {
-          "competency_id": "COMP-02",
-          "competency_name": "Presenting & Speaking",
-          "description": "Capability to articulate social science concepts, present map analyses, explain historical cause-and-effect, and engage in democratic classroom discussions.",
-          "evaluation_levels": [
-            {
-              "level": "Exemplary (Level 4)",
-              "score_range": "85% - 100%",
-              "descriptor": "Articulates complex historical, geographical, and civic ideas fluently using precise NCERT terminology; leads group discussions with empathy and confidence."
-            },
-            {
-              "level": "Proficient (Level 3)",
-              "score_range": "70% - 84%",
-              "descriptor": "Presents ideas clearly with appropriate vocabulary; explains core concepts like time calculations or Panchayati Raj effectively."
-            },
-            {
-              "level": "Developing (Level 2)",
-              "score_range": "50% - 69%",
-              "descriptor": "Communicates basic facts but struggles with structured presentation or technical terminology; hesitant during class discussions."
-            },
-            {
-              "level": "Novice (Level 1)",
-              "score_range": "Below 50%",
-              "descriptor": "Displays difficulty expressing thoughts orally; relies heavily on prompting."
-            }
-          ],
-          "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
-        },
-        {
-          "competency_id": "COMP-03",
-          "competency_name": "Reading & Comprehending",
-          "description": "Skill in analyzing textbook source passages, deciphering historical inscriptions, interpreting map legends, and evaluating case-study scenarios.",
-          "evaluation_levels": [
-            {
-              "level": "Exemplary (Level 4)",
-              "score_range": "85% - 100%",
-              "descriptor": "Comprehends complex primary and secondary sources; identifies underlying themes, cross-references evidence across chapters, and critically evaluates sources."
-            },
-            {
-              "level": "Proficient (Level 3)",
-              "score_range": "70% - 84%",
-              "descriptor": "Reads textbook passages independently; extracts definitions, key terms, and main points accurately."
-            },
-            {
-              "level": "Developing (Level 2)",
-              "score_range": "50% - 69%",
-              "descriptor": "Understands straightforward narrative text; struggles with complex case studies, mathematical map scales, or ancient terminology."
-            },
-            {
-              "level": "Novice (Level 1)",
-              "score_range": "Below 50%",
-              "descriptor": "Requires significant reading support to comprehend basic textbook content."
-            }
-          ],
-          "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
-        },
-        {
-          "competency_id": "COMP-04",
-          "competency_name": "Writing & Problem-Solving",
-          "description": "Ability to construct point-wise answers, solve mathematical time/scale calculations, complete case-study HOTS tasks, and write reflective social science essays.",
-          "evaluation_levels": [
-            {
-              "level": "Exemplary (Level 4)",
-              "score_range": "85% - 100%",
-              "descriptor": "Writes logical, highly structured 3-mark and 5-mark responses with precise marking-scheme points; solves mathematical time/scale problems flawlessly."
-            },
-            {
-              "level": "Proficient (Level 3)",
-              "score_range": "70% - 84%",
-              "descriptor": "Writes clear, point-wise answers with correct facts; solves standard mathematical geographic calculations accurately."
-            },
-            {
-              "level": "Developing (Level 2)",
-              "score_range": "50% - 69%",
-              "descriptor": "Answers cover partial information; minor calculation or logical errors in multi-step questions."
-            },
-            {
-              "level": "Novice (Level 1)",
-              "score_range": "Below 50%",
-              "descriptor": "Incomplete answers; significant difficulty with structured writing or mathematical problem-solving."
-            }
-          ],
-          "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
-        }
-      ]
-    },
-    "portfolio_logs": [
-      {
-        "entry_id": "PORT-CH01",
-        "chapter_number": 1,
-        "chapter_title": "Locating Places on the Earth",
-        "subject_domain": "Geography",
-        "project_title": "Interactive Globe & Map Scale Model Project",
-        "summary_writeup": "Constructed a 3D spherical globe model and a flat thematic map of India. Calculated local solar times for Greenwich, Mirzapur (IST), and Tokyo using the 1° = 4 minutes rotation formula. Applied a scale of 1 cm = 200 km to plot major cities.",
-        "evidence_artifacts": [
-          "Hand-drawn Direction Rose",
-          "Mathematical Time Calculation Sheet",
-          "1 cm = 200 km Scale Comparison Grid"
+        "competency_id": "COMP-01",
+        "competency_name": "Listening & Observing",
+        "description": "Ability to attentively process oral presentations, video overviews, historical narratives, and environmental maps while identifying key geographic and civic features.",
+        "evaluation_levels": [
+          {
+            "level": "Exemplary (Level 4)",
+            "score_range": "85% - 100%",
+            "descriptor": "Actively listens and observes; extracts subtle nuances, historical causes, map coordinates, and civic processes; synthesizes observations independently."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "score_range": "70% - 84%",
+            "descriptor": "Listens attentively; identifies main geographical features, historical facts, and civic roles accurately with minimal guidance."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "score_range": "50% - 69%",
+            "descriptor": "Understands primary facts when stated clearly; requires assistance to connect observed geographic features or historical timelines."
+          },
+          {
+            "level": "Novice (Level 1)",
+            "score_range": "Below 50%",
+            "descriptor": "Struggles to maintain focus during presentations; misses major concepts or instructions."
+          }
         ],
-        "self_rating": 5,
-        "peer_feedback": "Excellent accuracy in calculating IST (+5:30) offset and drawing intermediate compass points.",
-        "teacher_feedback": "Demonstrates outstanding mathematical precision in longitudinal solar time conversion.",
-        "reflective_takeaway": "Realized how Earth's rotation creates distinct solar times and why a single standard meridian (82.5° E) is essential for India."
+        "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
       },
       {
-        "entry_id": "PORT-CH02",
-        "chapter_number": 2,
-        "chapter_title": "Oceans and Continents",
-        "subject_domain": "Geography",
-        "project_title": "Ocean Health & Tsunami Safety Infographic",
-        "summary_writeup": "Designed an educational infographic illustrating the 5 oceans and 7 continents. Included a scientific diagram showing phytoplankton oxygen production and an NDMA safety protocol flowchart for tsunami warnings.",
-        "evidence_artifacts": [
-          "7-Continent Model Map",
-          "Phytoplankton Oxygenation Diagram",
-          "NDMA Tsunami Safety Checklist"
+        "competency_id": "COMP-02",
+        "competency_name": "Presenting & Speaking",
+        "description": "Capability to articulate social science concepts, present map analyses, explain historical cause-and-effect, and engage in democratic classroom discussions.",
+        "evaluation_levels": [
+          {
+            "level": "Exemplary (Level 4)",
+            "score_range": "85% - 100%",
+            "descriptor": "Articulates complex historical, geographical, and civic ideas fluently using precise NCERT terminology; leads group discussions with empathy and confidence."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "score_range": "70% - 84%",
+            "descriptor": "Presents ideas clearly with appropriate vocabulary; explains core concepts like time calculations or Panchayati Raj effectively."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "score_range": "50% - 69%",
+            "descriptor": "Communicates basic facts but struggles with structured presentation or technical terminology; hesitant during class discussions."
+          },
+          {
+            "level": "Novice (Level 1)",
+            "score_range": "Below 50%",
+            "descriptor": "Displays difficulty expressing thoughts orally; relies heavily on prompting."
+          }
         ],
-        "self_rating": 5,
-        "peer_feedback": "The diagram showing how marine algae produce over 50% of atmospheric oxygen was very clear.",
-        "teacher_feedback": "Strong environmental awareness and excellent visual presentation of marine ecosystem protection.",
-        "reflective_takeaway": "Understood that protecting oceans from plastic waste is vital for our own survival since oceans produce more than half our oxygen."
+        "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
       },
       {
-        "entry_id": "PORT-CH03",
-        "chapter_number": 3,
-        "chapter_title": "Landforms and Life",
-        "subject_domain": "Geography",
-        "project_title": "Tamil Sangam 5 Tiṇais Eco-Cultural Collage",
-        "summary_writeup": "Created a comparative chart mapping the ancient Tamil Sangam 5 Tiṇais (Kuriñci, Mullai, Marutam, Neytal, Pālai) to modern landforms, highlighting how geography shapes occupations, housing, and cultural life.",
-        "evidence_artifacts": [
-          "5 Tiṇais Landscape Comparison Matrix",
-          "Alluvial Soil vs Black Soil Chart",
-          "Terrace Farming Sketch"
+        "competency_id": "COMP-03",
+        "competency_name": "Reading & Comprehending",
+        "description": "Skill in analyzing textbook source passages, deciphering historical inscriptions, interpreting map legends, and evaluating case-study scenarios.",
+        "evaluation_levels": [
+          {
+            "level": "Exemplary (Level 4)",
+            "score_range": "85% - 100%",
+            "descriptor": "Comprehends complex primary and secondary sources; identifies underlying themes, cross-references evidence across chapters, and critically evaluates sources."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "score_range": "70% - 84%",
+            "descriptor": "Reads textbook passages independently; extracts definitions, key terms, and main points accurately."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "score_range": "50% - 69%",
+            "descriptor": "Understands straightforward narrative text; struggles with complex case studies, mathematical map scales, or ancient terminology."
+          },
+          {
+            "level": "Novice (Level 1)",
+            "score_range": "Below 50%",
+            "descriptor": "Requires significant reading support to comprehend basic textbook content."
+          }
         ],
-        "self_rating": 4,
-        "peer_feedback": "Great comparison between mountain life and river plain farming.",
-        "teacher_feedback": "Insightful integration of ancient Indian eco-literary wisdom with modern geomorphology.",
-        "reflective_takeaway": "Learned how human communities adapt their lifestyle, housing, and clothing to local mountain, plateau, or plain environments."
+        "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
       },
       {
-        "entry_id": "PORT-CH04",
-        "chapter_number": 4,
-        "chapter_title": "Timeline and Sources of History",
-        "subject_domain": "History",
-        "project_title": "BCE/CE Historical Timeline & Archaeology Lab Log",
-        "summary_writeup": "Constructed a master chronological timeline illustrating events across the BCE/CE divide without a Year 0. Documented how archaeologists use stratigraphy and Carbon-14 dating to determine artifact ages.",
-        "evidence_artifacts": [
-          "Mathematical BCE/CE Timeline Chart",
-          "Archaeological Stratigraphy Layer Model",
-          "Primary vs Secondary Source Classifier"
+        "competency_id": "COMP-04",
+        "competency_name": "Writing & Problem-Solving",
+        "description": "Ability to construct point-wise answers, solve mathematical time/scale calculations, complete case-study HOTS tasks, and write reflective social science essays.",
+        "evaluation_levels": [
+          {
+            "level": "Exemplary (Level 4)",
+            "score_range": "85% - 100%",
+            "descriptor": "Writes logical, highly structured 3-mark and 5-mark responses with precise marking-scheme points; solves mathematical time/scale problems flawlessly."
+          },
+          {
+            "level": "Proficient (Level 3)",
+            "score_range": "70% - 84%",
+            "descriptor": "Writes clear, point-wise answers with correct facts; solves standard mathematical geographic calculations accurately."
+          },
+          {
+            "level": "Developing (Level 2)",
+            "score_range": "50% - 69%",
+            "descriptor": "Answers cover partial information; minor calculation or logical errors in multi-step questions."
+          },
+          {
+            "level": "Novice (Level 1)",
+            "score_range": "Below 50%",
+            "descriptor": "Incomplete answers; significant difficulty with structured writing or mathematical problem-solving."
+          }
         ],
-        "self_rating": 5,
-        "peer_feedback": "Clear explanation of why there is no Year 0 when calculating time spans across BCE and CE.",
-        "teacher_feedback": "Flawless mathematical timeline construction and thorough understanding of historical evidence.",
-        "reflective_takeaway": "Discovered that history is an evidence-based science where archaeologists cross-verify physical ruins with written records."
-      },
-      {
-        "entry_id": "PORT-CH05",
-        "chapter_number": 5,
-        "chapter_title": "India, That Is Bharat",
-        "subject_domain": "History",
-        "project_title": "Etymological Journey & Constitutional Map of India",
-        "summary_writeup": "Researched the historical names of the Indian subcontinent (Sapta Sindhava, Jambudvīpa, Bhāratavarṣha, Indoi, India) and prepared a presentation on Article 1 of the Constitution.",
-        "evidence_artifacts": [
-          "Phonetic River Name Evolution Flowchart",
-          "Ancient Map of Jambudvīpa",
-          "Article 1 Constitutional Analysis Sheet"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "Fascinating trace of how 'Sindhu' became 'Hidu', 'Indoi', and finally 'India'.",
-        "teacher_feedback": "Exceptional historical research bridging ancient literature with modern constitutional principles.",
-        "reflective_takeaway": "Appreciated how Article 1 harmoniously connects our ancient civilisational roots ('Bharat') with our global identity ('India')."
-      },
-      {
-        "entry_id": "PORT-CH06",
-        "chapter_number": 6,
-        "chapter_title": "The Beginnings of Indian Civilisation",
-        "subject_domain": "History",
-        "project_title": "Harappan Urban Engineering & Trade Blueprint",
-        "summary_writeup": "Drafted a scale floor plan of a Harappan city featuring Citadel, Lower Town, covered drainage lines, and Lothal dockyard. Analyzed binary-decimal weights and Meluhha trade records.",
-        "evidence_artifacts": [
-          "Harappan Grid Drainage Blueprint",
-          "Lothal Tidal Dockyard Diagram",
-          "Binary-Decimal Weight Scale Conversion Sheet"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "The street drainage and watertight Great Bath model were highly detailed.",
-        "teacher_feedback": "Outstanding architectural analysis of India's earliest urban revolution.",
-        "reflective_takeaway": "Impressed by the extraordinary civic sense, sanitation, and peaceful trade of Harappan society 4,500 years ago."
-      },
-      {
-        "entry_id": "PORT-CH07",
-        "chapter_number": 7,
-        "chapter_title": "India's Cultural Roots",
-        "subject_domain": "History",
-        "project_title": "Ancient Indian Ethical Philosophies Portfolio",
-        "summary_writeup": "Compiled an analytical portfolio covering UNESCO Vedic oral chanting, Upaniṣhadic dialogues (Satyakāma Jābāla, Gārgī), Buddha's Eightfold Path, Mahāvīra's Ahiṃsā, and sacred groves (Kavu).",
-        "evidence_artifacts": [
-          "Four Noble Truths & Eightfold Path Mind Map",
-          "Upaniṣhadic Rishika Scholars Biography Sheet",
-          "Sacred Grove Conservation Report"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "Deeply moving writeup on universal non-violence (Ahiṃsā) and ecological reverence.",
-        "teacher_feedback": "Thoughtful, empathetic analysis of India's foundational spiritual and philosophical heritage.",
-        "reflective_takeaway": "Understood that Ahiṃsā and moral cause-and-effect (Karma) provide timeless guidance for ethical living today."
-      },
-      {
-        "entry_id": "PORT-CH08",
-        "chapter_number": 8,
-        "chapter_title": "Unity in Diversity, or 'Many in the One'",
-        "subject_domain": "Civics",
-        "project_title": "Pan-Indian Harvest Festival & Textile Tapestry",
-        "summary_writeup": "Created a multi-cultural tapestry project mapping simultaneous harvest celebrations (Makara Sankranti, Pongal, Magh Bihu, Lohri) and traditional handloom weaves across Indian states.",
-        "evidence_artifacts": [
-          "Harvest Festival Agrarian Calendar",
-          "Regional Handloom Weave Map",
-          "Nehru 'Unity in Diversity' Quote Analysis"
-        ],
-        "self_rating": 4,
-        "peer_feedback": "Showed beautifully how different states celebrate the exact same solar movement under distinct names.",
-        "teacher_feedback": "Excellent celebration of cultural pluralism and national integration.",
-        "reflective_takeaway": "Realized that Indian unity is an internal synthesis where diversity enriches our collective national identity."
-      },
-      {
-        "entry_id": "PORT-CH09",
-        "chapter_number": 9,
-        "chapter_title": "Family and Community",
-        "subject_domain": "Civics",
-        "project_title": "Bhil 'Halma' Mutual Aid Case Study & Kinship Log",
-        "summary_writeup": "Logged family kinship terms across Indian languages, advocated for egalitarian sharing of domestic work, and documented the Bhil tribe's 'Halma' voluntary community service tradition.",
-        "evidence_artifacts": [
-          "Egalitarian Domestic Work Share Log",
-          "Kinship Terminology Glossary",
-          "Bhil Halma Voluntary Service Case Report"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "The 'Halma' example of villagers coming together to build water contours without money was inspiring.",
-        "teacher_feedback": "Heartwarming reflection on family equity, elder care, and indigenous community solidarity.",
-        "reflective_takeaway": "Learned that community support and unpaid care work create the essential trust that holds society together."
-      },
-      {
-        "entry_id": "PORT-CH10",
-        "chapter_number": 10,
-        "chapter_title": "Grassroots Democracy – Part 1 (Governance)",
-        "subject_domain": "Civics",
-        "project_title": "Three Organs of Government & Rule of Law Blueprint",
-        "summary_writeup": "Constructed an organizational chart illustrating the Legislature, Executive, and Judiciary. Simulated a parliamentary debate on Universal Adult Suffrage and constitutional checks and balances.",
-        "evidence_artifacts": [
-          "3 Organs of Government Flowchart",
-          "Rule of Law vs Arbitrary Power Analysis",
-          "Universal Adult Suffrage Voter Guide"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "Clear explanation of how checks and balances prevent any single organ from abusing power.",
-        "teacher_feedback": "Mastery of foundational democratic concepts and civic responsibility.",
-        "reflective_takeaway": "Understood that rules and democratic institutions exist to protect individual rights and maintain public harmony."
-      },
-      {
-        "entry_id": "PORT-CH11",
-        "chapter_number": 11,
-        "chapter_title": "Grassroots Democracy – Part 2 (Local Government in Rural Areas)",
-        "subject_domain": "Civics",
-        "project_title": "Gram Sabha Direct Democracy & GPDP Mock Assembly",
-        "summary_writeup": "Organized a mock Gram Sabha assembly where students acted as village voters, Ward Panchs, and Sarpanch to democratically debate groundwater conservation and pass a GPDP village plan.",
-        "evidence_artifacts": [
-          "3-Tier Panchayati Raj Pyramid Chart",
-          "Mock Gram Sabha Resolution Sheet",
-          "Bal Sabha Youth Rights Manifesto"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "Direct participation in the mock Gram Sabha showed how direct democracy works in practice.",
-        "teacher_feedback": "Inspirational demonstration of grassroots democracy and youth civic leadership.",
-        "reflective_takeaway": "Experienced how direct democracy enables every citizen to participate in decision-making and hold leaders accountable."
-      },
-      {
-        "entry_id": "PORT-CH12",
-        "chapter_number": 12,
-        "chapter_title": "Grassroots Democracy – Part 3 (Local Government in Urban Areas)",
-        "subject_domain": "Civics",
-        "project_title": "Municipal Ward Audit & Source Waste Segregation Campaign",
-        "summary_writeup": "Conducted a local ward civic audit evaluating street lighting, water supply, and garbage collection. Launched a school-wide door-to-door wet (green bin) and dry (blue bin) waste segregation campaign.",
-        "evidence_artifacts": [
-          "Municipal Corporation Structure Diagram",
-          "Ward Civic Audit Report",
-          "Source Waste Segregation Poster"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "The waste segregation campaign made an immediate practical difference in school waste handling.",
-        "teacher_feedback": "Exemplary active citizenship combining civic theory with practical urban environmental action.",
-        "reflective_takeaway": "Realized that clean, efficient cities depend as much on responsible citizen habits as on municipal administration."
-      },
-      {
-        "entry_id": "PORT-CH13",
-        "chapter_number": 13,
-        "chapter_title": "The Value of Work",
-        "subject_domain": "Economics",
-        "project_title": "Economic Value Addition & Sevā Experience Log",
-        "summary_writeup": "Calculated value addition in manufacturing (raw timber to finished chair), categorized economic compensation modes (salaries, wages, fees, payment in kind), and logged volunteer Sevā hours in a community kitchen.",
-        "evidence_artifacts": [
-          "Value Addition Math Calculation Sheet",
-          "Economic vs Non-Economic Activity Matrix",
-          "Community Sevā Reflection Log"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "The mathematical formula for value addition was clearly demonstrated with real-world examples.",
-        "teacher_feedback": "Deep economic understanding paired with genuine respect for the dignity of all human labor.",
-        "reflective_takeaway": "Learned that all honest work—whether earning income or providing unpaid domestic care—has equal moral dignity."
-      },
-      {
-        "entry_id": "PORT-CH14",
-        "chapter_number": 14,
-        "chapter_title": "Economic Activities Around Us",
-        "subject_domain": "Economics",
-        "project_title": "Tri-Sectoral Value Chain & Paper Recycling Impact Report",
-        "summary_writeup": "Traced the complete supply chain of a textbook from forest logging (Primary) to paper milling (Secondary) to logistics/retail (Tertiary). Calculated environmental savings for paper recycling (1 Tonne = 17 Trees).",
-        "evidence_artifacts": [
-          "Tri-Sectoral Supply Chain Flowchart",
-          "AMUL Cooperative Case Study",
-          "Paper Recycling Environmental Impact Metrics Sheet"
-        ],
-        "self_rating": 5,
-        "peer_feedback": "The AMUL cooperative story showed how small milk farmers eliminated middleman exploitation through teamwork.",
-        "teacher_feedback": "Outstanding synthesis of economic sectors, cooperative movement history, and conservation metrics.",
-        "reflective_takeaway": "Understood how the primary, secondary, and tertiary sectors depend on each other, and why cooperatives empower small producers."
-      }
-    ],
-    "achievement_badges": [
-      {
-        "badge_id": "BADGE-GEO-01",
-        "badge_name": "Master Cartographer & Navigator",
-        "domain": "Geography",
-        "icon_symbol": "🧭",
-        "criteria_description": "Earned by mastering map scales, direction rose orientation, latitudinal heat zones, and longitudinal solar time calculations (+5:30 IST offset).",
-        "required_milestones": [
-          "Score 85%+ in Chapter 1 & Chapter 2 quizzes",
-          "Successfully calculate solar time differences across longitudes",
-          "Complete the Interactive Globe & Map Scale Portfolio Project"
-        ]
-      },
-      {
-        "badge_id": "BADGE-GEO-02",
-        "badge_name": "Planetary Eco-Steward",
-        "domain": "Geography & Environment",
-        "icon_symbol": "🌊",
-        "criteria_description": "Awarded for demonstrating deep understanding of ocean oxygenation, tsunami NDMA safety protocols, and coastal ecosystem stewardship.",
-        "required_milestones": [
-          "Explain phytoplankton oxygen contribution (>50%) accurately",
-          "Design a verified NDMA Tsunami Safety Checklist",
-          "Achieve Level 4 in Environmental Competency"
-        ]
-      },
-      {
-        "badge_id": "BADGE-HIS-01",
-        "badge_name": "Historical Detective & Epigraphist",
-        "domain": "History",
-        "icon_symbol": "📜",
-        "criteria_description": "Earned by mastering BCE/CE non-zero calendar math, archaeological stratigraphy, radiocarbon dating principles, and source cross-verification.",
-        "required_milestones": [
-          "Construct a mathematically accurate BCE/CE timeline",
-          "Identify primary vs secondary historical sources without errors",
-          "Complete the Chapter 4 & 5 Portfolio Logs with Distinction"
-        ]
-      },
-      {
-        "badge_id": "BADGE-HIS-02",
-        "badge_name": "Harappan Urban Engineer",
-        "domain": "History & Archaeology",
-        "icon_symbol": "🏛️",
-        "criteria_description": "Awarded for detailed architectural analysis of Indus-Sarasvatī town planning, covered drainage, Lothal dockyard, and ancient metrology.",
-        "required_milestones": [
-          "Draw a verified Harappan grid city blueprint",
-          "Explain Harappan binary-decimal weight conversions",
-          "Score 90%+ on Chapter 6 civilisational assessment"
-        ]
-      },
-      {
-        "badge_id": "BADGE-CIV-01",
-        "badge_name": "Grassroots Democracy Ambassador",
-        "domain": "Civics & Governance",
-        "icon_symbol": "🗳️",
-        "criteria_description": "Earned by demonstrating active civic leadership in Gram Sabha simulations, understanding the 3 organs of government, and advocating Universal Adult Suffrage.",
-        "required_milestones": [
-          "Lead a mock Gram Sabha assembly or Bal Sabha session",
-          "Explain the system of checks and balances flawlessly",
-          "Conduct an urban ward civic audit or waste segregation drive"
-        ]
-      },
-      {
-        "badge_id": "BADGE-ECO-01",
-        "badge_name": "Economic Analyst & Cooperative Champion",
-        "domain": "Economics",
-        "icon_symbol": "⚙️",
-        "criteria_description": "Awarded for mastering value addition formulas, tracing tri-sectoral supply chains, and analyzing cooperative models like AMUL.",
-        "required_milestones": [
-          "Calculate economic value addition correctly in practice drills",
-          "Map a complete textbook supply chain across 3 sectors",
-          "Present the paper recycling conservation impact metrics (1 Tonne = 17 Trees)"
-        ]
-      }
-    ],
-    "master_learning_outcomes_checklist": [
-      {
-        "outcome_id": "LO-GEO-01",
-        "chapter_number": 1,
-        "chapter_title": "Locating Places on the Earth",
-        "domain": "Geography",
-        "competency_statement": "Applies map scales, cardinal directions, and conventional symbols to navigate and calculate real-world ground distances.",
-        "mastery_indicator": "Calculates ground distance correctly using scale ratios (e.g., 2.5 cm = 500 km -> 7.5 cm = 1,500 km).",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 1.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-GEO-02",
-        "chapter_number": 1,
-        "chapter_title": "Locating Places on the Earth",
-        "domain": "Geography",
-        "competency_statement": "Calculates local solar time differences based on longitude (1° = 4 minutes) and explains why India uses 82.5° E for IST (GMT +5:30).",
-        "mastery_indicator": "Solves longitude-to-time conversion problems accurately for any given degree offset.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 1.2",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-GEO-03",
-        "chapter_number": 2,
-        "chapter_title": "Oceans and Continents",
-        "domain": "Geography",
-        "competency_statement": "Analyzes the distribution of 5 oceans and 7 continents, explaining marine phytoplankton oxygenation and tsunami safety.",
-        "mastery_indicator": "Explains that phytoplankton produce >50% of oxygen and outlines NDMA tsunami response steps.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 2.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-GEO-04",
-        "chapter_number": 3,
-        "chapter_title": "Landforms and Life",
-        "domain": "Geography",
-        "competency_statement": "Differentiates mountains, plateaus, and plains, and relates landforms to human adaptation and the Tamil Sangam 5 Tiṇais.",
-        "mastery_indicator": "Maps the 5 Tiṇais (Kuriñci, Mullai, Marutam, Neytal, Pālai) to corresponding geographic landforms and human occupations.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 3.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-HIS-01",
-        "chapter_number": 4,
-        "chapter_title": "Timeline and Sources of History",
-        "domain": "History",
-        "competency_statement": "Constructs historical timelines using BCE/CE calendar math without a Year 0 and categorizes primary archaeological and literary sources.",
-        "mastery_indicator": "Calculates time spans across BCE and CE correctly and explains archaeological stratigraphy.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 1.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-HIS-02",
-        "chapter_number": 5,
-        "chapter_title": "India, That Is Bharat",
-        "domain": "History",
-        "competency_statement": "Traces the historical evolution of India's names (Sapta Sindhava, Jambudvīpa, Bhārata, Indoi, India) and analyzes Article 1 of the Constitution.",
-        "mastery_indicator": "Explains the phonetic shift from 'Sindhu' to 'India' and articulates the constitutional significance of Article 1.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 2.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-HIS-03",
-        "chapter_number": 6,
-        "chapter_title": "The Beginnings of Indian Civilisation",
-        "domain": "History",
-        "competency_statement": "Examines urban planning, sub-surface drainage, Lothal dockyard engineering, and binary-decimal weights of the Indus-Sarasvatī Civilisation.",
-        "mastery_indicator": "Identifies key Harappan civic features and explains reasons for de-urbanisation around 1900 BCE.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 3.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-HIS-04",
-        "chapter_number": 7,
-        "chapter_title": "India's Cultural Roots",
-        "domain": "History",
-        "competency_statement": "Understands Vedic oral heritage (UNESCO), Upaniṣhadic philosophy, Buddha's Eightfold Path, Mahāvīra's Ahiṃsā, and sacred groves.",
-        "mastery_indicator": "Articulates the core ethical principles of Ahiṃsā, Karma, and environmental reverence in ancient thought.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 4.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-CIV-01",
-        "chapter_number": 8,
-        "chapter_title": "Unity in Diversity, or 'Many in the One'",
-        "domain": "Civics",
-        "competency_statement": "Illustrates how regional diversity in festivals, textiles, and literature synthesizes into underlying national unity.",
-        "mastery_indicator": "Explains Nehru's 'Unity in Diversity' concept and Sri Aurobindo's Swabhava/Swadharma framework.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 1.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-CIV-02",
-        "chapter_number": 9,
-        "chapter_title": "Family and Community",
-        "domain": "Civics",
-        "competency_statement": "Promotes egalitarian household work sharing, elder care, and analyzes community mutual aid traditions like Bhil 'Halma'.",
-        "mastery_indicator": "Cites the Bhil 'Halma' model as an example of non-monetary community voluntary service.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 2.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-CIV-03",
-        "chapter_number": 10,
-        "chapter_title": "Grassroots Democracy – Part 1 (Governance)",
-        "domain": "Civics",
-        "competency_statement": "Differentiates the 3 organs of government (Legislature, Executive, Judiciary), 3 levels of governance, and Universal Adult Suffrage.",
-        "mastery_indicator": "Explains how checks and balances prevent abuse of power and defines equal voting rights at age 18.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 3.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-CIV-04",
-        "chapter_number": 11,
-        "chapter_title": "Grassroots Democracy – Part 2 (Local Government in Rural Areas)",
-        "domain": "Civics",
-        "competency_statement": "Explains the 3-tier Panchayati Raj system, the direct democracy role of Gram Sabha, GPDP budgeting, and female leadership.",
-        "mastery_indicator": "Describes how every village voter participates in the Gram Sabha and reviews local Panchayat plans.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 3.2",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-CIV-05",
-        "chapter_number": 12,
-        "chapter_title": "Grassroots Democracy – Part 3 (Local Government in Urban Areas)",
-        "domain": "Civics",
-        "competency_statement": "Understands Urban Local Body structures (Corporations, Councils), ward representation, Mayor vs Commissioner roles, and waste segregation.",
-        "mastery_indicator": "Explains door-to-door wet/dry source waste segregation and civic duties in urban areas.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 3.3",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-ECO-01",
-        "chapter_number": 13,
-        "chapter_title": "The Value of Work",
-        "domain": "Economics",
-        "competency_statement": "Differentiates economic vs non-economic activities, calculates economic value addition, and recognizes the dignity of all labor.",
-        "mastery_indicator": "Calculates value addition (Selling Price minus Raw Material Cost) and explains unpaid domestic care work.",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Economics Competency 1.1",
-        "status": "Mastered"
-      },
-      {
-        "outcome_id": "LO-ECO-02",
-        "chapter_number": 14,
-        "chapter_title": "Economic Activities Around Us",
-        "domain": "Economics",
-        "competency_statement": "Maps supply chains across Primary, Secondary, and Tertiary sectors, analyzes AMUL cooperatives, and calculates paper recycling metrics.",
-        "mastery_indicator": "Explains tri-sectoral interdependence and calculates conservation metrics (1 Tonne paper = 17 trees saved).",
-        "ncert_alignment": "NCF-SE 2023 Middle Stage Economics Competency 2.1",
-        "status": "Mastered"
+        "self_rating_scale": "1 (Needs Improvement) to 5 (Mastered)"
       }
     ]
   },
+  "portfolio_logs": [
+    {
+      "entry_id": "PORT-CH01",
+      "chapter_number": 1,
+      "chapter_title": "Locating Places on the Earth",
+      "subject_domain": "Geography",
+      "project_title": "Interactive Globe & Map Scale Model Project",
+      "summary_writeup": "Constructed a 3D spherical globe model and a flat thematic map of India. Calculated local solar times for Greenwich, Mirzapur (IST), and Tokyo using the 1° = 4 minutes rotation formula. Applied a scale of 1 cm = 200 km to plot major cities.",
+      "evidence_artifacts": [
+        "Hand-drawn Direction Rose",
+        "Mathematical Time Calculation Sheet",
+        "1 cm = 200 km Scale Comparison Grid"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "Excellent accuracy in calculating IST (+5:30) offset and drawing intermediate compass points.",
+      "teacher_feedback": "Demonstrates outstanding mathematical precision in longitudinal solar time conversion.",
+      "reflective_takeaway": "Realized how Earth's rotation creates distinct solar times and why a single standard meridian (82.5° E) is essential for India."
+    },
+    {
+      "entry_id": "PORT-CH02",
+      "chapter_number": 2,
+      "chapter_title": "Oceans and Continents",
+      "subject_domain": "Geography",
+      "project_title": "Ocean Health & Tsunami Safety Infographic",
+      "summary_writeup": "Designed an educational infographic illustrating the 5 oceans and 7 continents. Included a scientific diagram showing phytoplankton oxygen production and an NDMA safety protocol flowchart for tsunami warnings.",
+      "evidence_artifacts": [
+        "7-Continent Model Map",
+        "Phytoplankton Oxygenation Diagram",
+        "NDMA Tsunami Safety Checklist"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "The diagram showing how marine algae produce over 50% of atmospheric oxygen was very clear.",
+      "teacher_feedback": "Strong environmental awareness and excellent visual presentation of marine ecosystem protection.",
+      "reflective_takeaway": "Understood that protecting oceans from plastic waste is vital for our own survival since oceans produce more than half our oxygen."
+    },
+    {
+      "entry_id": "PORT-CH03",
+      "chapter_number": 3,
+      "chapter_title": "Landforms and Life",
+      "subject_domain": "Geography",
+      "project_title": "Tamil Sangam 5 Tiṇais Eco-Cultural Collage",
+      "summary_writeup": "Created a comparative chart mapping the ancient Tamil Sangam 5 Tiṇais (Kuriñci, Mullai, Marutam, Neytal, Pālai) to modern landforms, highlighting how geography shapes occupations, housing, and cultural life.",
+      "evidence_artifacts": [
+        "5 Tiṇais Landscape Comparison Matrix",
+        "Alluvial Soil vs Black Soil Chart",
+        "Terrace Farming Sketch"
+      ],
+      "self_rating": 4,
+      "peer_feedback": "Great comparison between mountain life and river plain farming.",
+      "teacher_feedback": "Insightful integration of ancient Indian eco-literary wisdom with modern geomorphology.",
+      "reflective_takeaway": "Learned how human communities adapt their lifestyle, housing, and clothing to local mountain, plateau, or plain environments."
+    },
+    {
+      "entry_id": "PORT-CH04",
+      "chapter_number": 4,
+      "chapter_title": "Timeline and Sources of History",
+      "subject_domain": "History",
+      "project_title": "BCE/CE Historical Timeline & Archaeology Lab Log",
+      "summary_writeup": "Constructed a master chronological timeline illustrating events across the BCE/CE divide without a Year 0. Documented how archaeologists use stratigraphy and Carbon-14 dating to determine artifact ages.",
+      "evidence_artifacts": [
+        "Mathematical BCE/CE Timeline Chart",
+        "Archaeological Stratigraphy Layer Model",
+        "Primary vs Secondary Source Classifier"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "Clear explanation of why there is no Year 0 when calculating time spans across BCE and CE.",
+      "teacher_feedback": "Flawless mathematical timeline construction and thorough understanding of historical evidence.",
+      "reflective_takeaway": "Discovered that history is an evidence-based science where archaeologists cross-verify physical ruins with written records."
+    },
+    {
+      "entry_id": "PORT-CH05",
+      "chapter_number": 5,
+      "chapter_title": "India, That Is Bharat",
+      "subject_domain": "History",
+      "project_title": "Etymological Journey & Constitutional Map of India",
+      "summary_writeup": "Researched the historical names of the Indian subcontinent (Sapta Sindhava, Jambudvīpa, Bhāratavarṣha, Indoi, India) and prepared a presentation on Article 1 of the Constitution.",
+      "evidence_artifacts": [
+        "Phonetic River Name Evolution Flowchart",
+        "Ancient Map of Jambudvīpa",
+        "Article 1 Constitutional Analysis Sheet"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "Fascinating trace of how 'Sindhu' became 'Hidu', 'Indoi', and finally 'India'.",
+      "teacher_feedback": "Exceptional historical research bridging ancient literature with modern constitutional principles.",
+      "reflective_takeaway": "Appreciated how Article 1 harmoniously connects our ancient civilisational roots ('Bharat') with our global identity ('India')."
+    },
+    {
+      "entry_id": "PORT-CH06",
+      "chapter_number": 6,
+      "chapter_title": "The Beginnings of Indian Civilisation",
+      "subject_domain": "History",
+      "project_title": "Harappan Urban Engineering & Trade Blueprint",
+      "summary_writeup": "Drafted a scale floor plan of a Harappan city featuring Citadel, Lower Town, covered drainage lines, and Lothal dockyard. Analyzed binary-decimal weights and Meluhha trade records.",
+      "evidence_artifacts": [
+        "Harappan Grid Drainage Blueprint",
+        "Lothal Tidal Dockyard Diagram",
+        "Binary-Decimal Weight Scale Conversion Sheet"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "The street drainage and watertight Great Bath model were highly detailed.",
+      "teacher_feedback": "Outstanding architectural analysis of India's earliest urban revolution.",
+      "reflective_takeaway": "Impressed by the extraordinary civic sense, sanitation, and peaceful trade of Harappan society 4,500 years ago."
+    },
+    {
+      "entry_id": "PORT-CH07",
+      "chapter_number": 7,
+      "chapter_title": "India's Cultural Roots",
+      "subject_domain": "History",
+      "project_title": "Ancient Indian Ethical Philosophies Portfolio",
+      "summary_writeup": "Compiled an analytical portfolio covering UNESCO Vedic oral chanting, Upaniṣhadic dialogues (Satyakāma Jābāla, Gārgī), Buddha's Eightfold Path, Mahāvīra's Ahiṃsā, and sacred groves (Kavu).",
+      "evidence_artifacts": [
+        "Four Noble Truths & Eightfold Path Mind Map",
+        "Upaniṣhadic Rishika Scholars Biography Sheet",
+        "Sacred Grove Conservation Report"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "Deeply moving writeup on universal non-violence (Ahiṃsā) and ecological reverence.",
+      "teacher_feedback": "Thoughtful, empathetic analysis of India's foundational spiritual and philosophical heritage.",
+      "reflective_takeaway": "Understood that Ahiṃsā and moral cause-and-effect (Karma) provide timeless guidance for ethical living today."
+    },
+    {
+      "entry_id": "PORT-CH08",
+      "chapter_number": 8,
+      "chapter_title": "Unity in Diversity, or 'Many in the One'",
+      "subject_domain": "Civics",
+      "project_title": "Pan-Indian Harvest Festival & Textile Tapestry",
+      "summary_writeup": "Created a multi-cultural tapestry project mapping simultaneous harvest celebrations (Makara Sankranti, Pongal, Magh Bihu, Lohri) and traditional handloom weaves across Indian states.",
+      "evidence_artifacts": [
+        "Harvest Festival Agrarian Calendar",
+        "Regional Handloom Weave Map",
+        "Nehru 'Unity in Diversity' Quote Analysis"
+      ],
+      "self_rating": 4,
+      "peer_feedback": "Showed beautifully how different states celebrate the exact same solar movement under distinct names.",
+      "teacher_feedback": "Excellent celebration of cultural pluralism and national integration.",
+      "reflective_takeaway": "Realized that Indian unity is an internal synthesis where diversity enriches our collective national identity."
+    },
+    {
+      "entry_id": "PORT-CH09",
+      "chapter_number": 9,
+      "chapter_title": "Family and Community",
+      "subject_domain": "Civics",
+      "project_title": "Bhil 'Halma' Mutual Aid Case Study & Kinship Log",
+      "summary_writeup": "Logged family kinship terms across Indian languages, advocated for egalitarian sharing of domestic work, and documented the Bhil tribe's 'Halma' voluntary community service tradition.",
+      "evidence_artifacts": [
+        "Egalitarian Domestic Work Share Log",
+        "Kinship Terminology Glossary",
+        "Bhil Halma Voluntary Service Case Report"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "The 'Halma' example of villagers coming together to build water contours without money was inspiring.",
+      "teacher_feedback": "Heartwarming reflection on family equity, elder care, and indigenous community solidarity.",
+      "reflective_takeaway": "Learned that community support and unpaid care work create the essential trust that holds society together."
+    },
+    {
+      "entry_id": "PORT-CH10",
+      "chapter_number": 10,
+      "chapter_title": "Grassroots Democracy – Part 1 (Governance)",
+      "subject_domain": "Civics",
+      "project_title": "Three Organs of Government & Rule of Law Blueprint",
+      "summary_writeup": "Constructed an organizational chart illustrating the Legislature, Executive, and Judiciary. Simulated a parliamentary debate on Universal Adult Suffrage and constitutional checks and balances.",
+      "evidence_artifacts": [
+        "3 Organs of Government Flowchart",
+        "Rule of Law vs Arbitrary Power Analysis",
+        "Universal Adult Suffrage Voter Guide"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "Clear explanation of how checks and balances prevent any single organ from abusing power.",
+      "teacher_feedback": "Mastery of foundational democratic concepts and civic responsibility.",
+      "reflective_takeaway": "Understood that rules and democratic institutions exist to protect individual rights and maintain public harmony."
+    },
+    {
+      "entry_id": "PORT-CH11",
+      "chapter_number": 11,
+      "chapter_title": "Grassroots Democracy – Part 2 (Local Government in Rural Areas)",
+      "subject_domain": "Civics",
+      "project_title": "Gram Sabha Direct Democracy & GPDP Mock Assembly",
+      "summary_writeup": "Organized a mock Gram Sabha assembly where students acted as village voters, Ward Panchs, and Sarpanch to democratically debate groundwater conservation and pass a GPDP village plan.",
+      "evidence_artifacts": [
+        "3-Tier Panchayati Raj Pyramid Chart",
+        "Mock Gram Sabha Resolution Sheet",
+        "Bal Sabha Youth Rights Manifesto"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "Direct participation in the mock Gram Sabha showed how direct democracy works in practice.",
+      "teacher_feedback": "Inspirational demonstration of grassroots democracy and youth civic leadership.",
+      "reflective_takeaway": "Experienced how direct democracy enables every citizen to participate in decision-making and hold leaders accountable."
+    },
+    {
+      "entry_id": "PORT-CH12",
+      "chapter_number": 12,
+      "chapter_title": "Grassroots Democracy – Part 3 (Local Government in Urban Areas)",
+      "subject_domain": "Civics",
+      "project_title": "Municipal Ward Audit & Source Waste Segregation Campaign",
+      "summary_writeup": "Conducted a local ward civic audit evaluating street lighting, water supply, and garbage collection. Launched a school-wide door-to-door wet (green bin) and dry (blue bin) waste segregation campaign.",
+      "evidence_artifacts": [
+        "Municipal Corporation Structure Diagram",
+        "Ward Civic Audit Report",
+        "Source Waste Segregation Poster"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "The waste segregation campaign made an immediate practical difference in school waste handling.",
+      "teacher_feedback": "Exemplary active citizenship combining civic theory with practical urban environmental action.",
+      "reflective_takeaway": "Realized that clean, efficient cities depend as much on responsible citizen habits as on municipal administration."
+    },
+    {
+      "entry_id": "PORT-CH13",
+      "chapter_number": 13,
+      "chapter_title": "The Value of Work",
+      "subject_domain": "Economics",
+      "project_title": "Economic Value Addition & Sevā Experience Log",
+      "summary_writeup": "Calculated value addition in manufacturing (raw timber to finished chair), categorized economic compensation modes (salaries, wages, fees, payment in kind), and logged volunteer Sevā hours in a community kitchen.",
+      "evidence_artifacts": [
+        "Value Addition Math Calculation Sheet",
+        "Economic vs Non-Economic Activity Matrix",
+        "Community Sevā Reflection Log"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "The mathematical formula for value addition was clearly demonstrated with real-world examples.",
+      "teacher_feedback": "Deep economic understanding paired with genuine respect for the dignity of all human labor.",
+      "reflective_takeaway": "Learned that all honest work—whether earning income or providing unpaid domestic care—has equal moral dignity."
+    },
+    {
+      "entry_id": "PORT-CH14",
+      "chapter_number": 14,
+      "chapter_title": "Economic Activities Around Us",
+      "subject_domain": "Economics",
+      "project_title": "Tri-Sectoral Value Chain & Paper Recycling Impact Report",
+      "summary_writeup": "Traced the complete supply chain of a textbook from forest logging (Primary) to paper milling (Secondary) to logistics/retail (Tertiary). Calculated environmental savings for paper recycling (1 Tonne = 17 Trees).",
+      "evidence_artifacts": [
+        "Tri-Sectoral Supply Chain Flowchart",
+        "AMUL Cooperative Case Study",
+        "Paper Recycling Environmental Impact Metrics Sheet"
+      ],
+      "self_rating": 5,
+      "peer_feedback": "The AMUL cooperative story showed how small milk farmers eliminated middleman exploitation through teamwork.",
+      "teacher_feedback": "Outstanding synthesis of economic sectors, cooperative movement history, and conservation metrics.",
+      "reflective_takeaway": "Understood how the primary, secondary, and tertiary sectors depend on each other, and why cooperatives empower small producers."
+    }
+  ],
+  "achievement_badges": [
+    {
+      "badge_id": "BADGE-GEO-01",
+      "badge_name": "Master Cartographer & Navigator",
+      "domain": "Geography",
+      "icon_symbol": "🧭",
+      "criteria_description": "Earned by mastering map scales, direction rose orientation, latitudinal heat zones, and longitudinal solar time calculations (+5:30 IST offset).",
+      "required_milestones": [
+        "Score 85%+ in Chapter 1 & Chapter 2 quizzes",
+        "Successfully calculate solar time differences across longitudes",
+        "Complete the Interactive Globe & Map Scale Portfolio Project"
+      ]
+    },
+    {
+      "badge_id": "BADGE-GEO-02",
+      "badge_name": "Planetary Eco-Steward",
+      "domain": "Geography & Environment",
+      "icon_symbol": "🌊",
+      "criteria_description": "Awarded for demonstrating deep understanding of ocean oxygenation, tsunami NDMA safety protocols, and coastal ecosystem stewardship.",
+      "required_milestones": [
+        "Explain phytoplankton oxygen contribution (>50%) accurately",
+        "Design a verified NDMA Tsunami Safety Checklist",
+        "Achieve Level 4 in Environmental Competency"
+      ]
+    },
+    {
+      "badge_id": "BADGE-HIS-01",
+      "badge_name": "Historical Detective & Epigraphist",
+      "domain": "History",
+      "icon_symbol": "📜",
+      "criteria_description": "Earned by mastering BCE/CE non-zero calendar math, archaeological stratigraphy, radiocarbon dating principles, and source cross-verification.",
+      "required_milestones": [
+        "Construct a mathematically accurate BCE/CE timeline",
+        "Identify primary vs secondary historical sources without errors",
+        "Complete the Chapter 4 & 5 Portfolio Logs with Distinction"
+      ]
+    },
+    {
+      "badge_id": "BADGE-HIS-02",
+      "badge_name": "Harappan Urban Engineer",
+      "domain": "History & Archaeology",
+      "icon_symbol": "🏛️",
+      "criteria_description": "Awarded for detailed architectural analysis of Indus-Sarasvatī town planning, covered drainage, Lothal dockyard, and ancient metrology.",
+      "required_milestones": [
+        "Draw a verified Harappan grid city blueprint",
+        "Explain Harappan binary-decimal weight conversions",
+        "Score 90%+ on Chapter 6 civilisational assessment"
+      ]
+    },
+    {
+      "badge_id": "BADGE-CIV-01",
+      "badge_name": "Grassroots Democracy Ambassador",
+      "domain": "Civics & Governance",
+      "icon_symbol": "🗳️",
+      "criteria_description": "Earned by demonstrating active civic leadership in Gram Sabha simulations, understanding the 3 organs of government, and advocating Universal Adult Suffrage.",
+      "required_milestones": [
+        "Lead a mock Gram Sabha assembly or Bal Sabha session",
+        "Explain the system of checks and balances flawlessly",
+        "Conduct an urban ward civic audit or waste segregation drive"
+      ]
+    },
+    {
+      "badge_id": "BADGE-ECO-01",
+      "badge_name": "Economic Analyst & Cooperative Champion",
+      "domain": "Economics",
+      "icon_symbol": "⚙️",
+      "criteria_description": "Awarded for mastering value addition formulas, tracing tri-sectoral supply chains, and analyzing cooperative models like AMUL.",
+      "required_milestones": [
+        "Calculate economic value addition correctly in practice drills",
+        "Map a complete textbook supply chain across 3 sectors",
+        "Present the paper recycling conservation impact metrics (1 Tonne = 17 Trees)"
+      ]
+    }
+  ],
+  "master_learning_outcomes_checklist": [
+    {
+      "outcome_id": "LO-GEO-01",
+      "chapter_number": 1,
+      "chapter_title": "Locating Places on the Earth",
+      "domain": "Geography",
+      "competency_statement": "Applies map scales, cardinal directions, and conventional symbols to navigate and calculate real-world ground distances.",
+      "mastery_indicator": "Calculates ground distance correctly using scale ratios (e.g., 2.5 cm = 500 km -> 7.5 cm = 1,500 km).",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 1.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-GEO-02",
+      "chapter_number": 1,
+      "chapter_title": "Locating Places on the Earth",
+      "domain": "Geography",
+      "competency_statement": "Calculates local solar time differences based on longitude (1° = 4 minutes) and explains why India uses 82.5° E for IST (GMT +5:30).",
+      "mastery_indicator": "Solves longitude-to-time conversion problems accurately for any given degree offset.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 1.2",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-GEO-03",
+      "chapter_number": 2,
+      "chapter_title": "Oceans and Continents",
+      "domain": "Geography",
+      "competency_statement": "Analyzes the distribution of 5 oceans and 7 continents, explaining marine phytoplankton oxygenation and tsunami safety.",
+      "mastery_indicator": "Explains that phytoplankton produce >50% of oxygen and outlines NDMA tsunami response steps.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 2.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-GEO-04",
+      "chapter_number": 3,
+      "chapter_title": "Landforms and Life",
+      "domain": "Geography",
+      "competency_statement": "Differentiates mountains, plateaus, and plains, and relates landforms to human adaptation and the Tamil Sangam 5 Tiṇais.",
+      "mastery_indicator": "Maps the 5 Tiṇais (Kuriñci, Mullai, Marutam, Neytal, Pālai) to corresponding geographic landforms and human occupations.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Geography Competency 3.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-HIS-01",
+      "chapter_number": 4,
+      "chapter_title": "Timeline and Sources of History",
+      "domain": "History",
+      "competency_statement": "Constructs historical timelines using BCE/CE calendar math without a Year 0 and categorizes primary archaeological and literary sources.",
+      "mastery_indicator": "Calculates time spans across BCE and CE correctly and explains archaeological stratigraphy.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 1.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-HIS-02",
+      "chapter_number": 5,
+      "chapter_title": "India, That Is Bharat",
+      "domain": "History",
+      "competency_statement": "Traces the historical evolution of India's names (Sapta Sindhava, Jambudvīpa, Bhārata, Indoi, India) and analyzes Article 1 of the Constitution.",
+      "mastery_indicator": "Explains the phonetic shift from 'Sindhu' to 'India' and articulates the constitutional significance of Article 1.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 2.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-HIS-03",
+      "chapter_number": 6,
+      "chapter_title": "The Beginnings of Indian Civilisation",
+      "domain": "History",
+      "competency_statement": "Examines urban planning, sub-surface drainage, Lothal dockyard engineering, and binary-decimal weights of the Indus-Sarasvatī Civilisation.",
+      "mastery_indicator": "Identifies key Harappan civic features and explains reasons for de-urbanisation around 1900 BCE.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 3.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-HIS-04",
+      "chapter_number": 7,
+      "chapter_title": "India's Cultural Roots",
+      "domain": "History",
+      "competency_statement": "Understands Vedic oral heritage (UNESCO), Upaniṣhadic philosophy, Buddha's Eightfold Path, Mahāvīra's Ahiṃsā, and sacred groves.",
+      "mastery_indicator": "Articulates the core ethical principles of Ahiṃsā, Karma, and environmental reverence in ancient thought.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage History Competency 4.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-CIV-01",
+      "chapter_number": 8,
+      "chapter_title": "Unity in Diversity, or 'Many in the One'",
+      "domain": "Civics",
+      "competency_statement": "Illustrates how regional diversity in festivals, textiles, and literature synthesizes into underlying national unity.",
+      "mastery_indicator": "Explains Nehru's 'Unity in Diversity' concept and Sri Aurobindo's Swabhava/Swadharma framework.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 1.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-CIV-02",
+      "chapter_number": 9,
+      "chapter_title": "Family and Community",
+      "domain": "Civics",
+      "competency_statement": "Promotes egalitarian household work sharing, elder care, and analyzes community mutual aid traditions like Bhil 'Halma'.",
+      "mastery_indicator": "Cites the Bhil 'Halma' model as an example of non-monetary community voluntary service.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 2.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-CIV-03",
+      "chapter_number": 10,
+      "chapter_title": "Grassroots Democracy – Part 1 (Governance)",
+      "domain": "Civics",
+      "competency_statement": "Differentiates the 3 organs of government (Legislature, Executive, Judiciary), 3 levels of governance, and Universal Adult Suffrage.",
+      "mastery_indicator": "Explains how checks and balances prevent abuse of power and defines equal voting rights at age 18.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 3.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-CIV-04",
+      "chapter_number": 11,
+      "chapter_title": "Grassroots Democracy – Part 2 (Local Government in Rural Areas)",
+      "domain": "Civics",
+      "competency_statement": "Explains the 3-tier Panchayati Raj system, the direct democracy role of Gram Sabha, GPDP budgeting, and female leadership.",
+      "mastery_indicator": "Describes how every village voter participates in the Gram Sabha and reviews local Panchayat plans.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 3.2",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-CIV-05",
+      "chapter_number": 12,
+      "chapter_title": "Grassroots Democracy – Part 3 (Local Government in Urban Areas)",
+      "domain": "Civics",
+      "competency_statement": "Understands Urban Local Body structures (Corporations, Councils), ward representation, Mayor vs Commissioner roles, and waste segregation.",
+      "mastery_indicator": "Explains door-to-door wet/dry source waste segregation and civic duties in urban areas.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Civics Competency 3.3",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-ECO-01",
+      "chapter_number": 13,
+      "chapter_title": "The Value of Work",
+      "domain": "Economics",
+      "competency_statement": "Differentiates economic vs non-economic activities, calculates economic value addition, and recognizes the dignity of all labor.",
+      "mastery_indicator": "Calculates value addition (Selling Price minus Raw Material Cost) and explains unpaid domestic care work.",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Economics Competency 1.1",
+      "status": "Mastered"
+    },
+    {
+      "outcome_id": "LO-ECO-02",
+      "chapter_number": 14,
+      "chapter_title": "Economic Activities Around Us",
+      "domain": "Economics",
+      "competency_statement": "Maps supply chains across Primary, Secondary, and Tertiary sectors, analyzes AMUL cooperatives, and calculates paper recycling metrics.",
+      "mastery_indicator": "Explains tri-sectoral interdependence and calculates conservation metrics (1 Tonne paper = 17 trees saved).",
+      "ncert_alignment": "NCF-SE 2023 Middle Stage Economics Competency 2.1",
+      "status": "Mastered"
+    }
+  ],
   "grade": "6",
+  "subject": "Social",
   "chapter_id": "G6-SOC-U01-C01",
   "chapter_number": 1,
   "chapter_title": "Social Chapter 1"

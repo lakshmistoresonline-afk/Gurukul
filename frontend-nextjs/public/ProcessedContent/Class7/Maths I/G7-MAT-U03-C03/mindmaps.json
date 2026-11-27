@@ -1,0 +1,133 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "A Peek Beyond the Point",
+  "mermaid_syntax": "graph TD\n  Root[\"A Peek Beyond the Point\"]\n  Root --> B1[\"Sub-Unit Place Value Structure\"]\n  B1 --> B1_S1[\"Tenths, Hundredths, and Thousandths\"]\n  Root --> B2[\"Unit Conversions using Decimals\"]\n  B2 --> B2_S1[\"Currency and Length Conversions\"]\n  Root --> B3[\"Decimal Comparison and Column Arithmetic\"]\n  B3 --> B3_S1[\"Equivalent Decimals and Vertical Alignment\"]",
+  "d3_react_flow_tree": {
+    "id": "node_root_ch3",
+    "label": "A Peek Beyond the Point",
+    "node_color": "#38BDF8",
+    "icon": "book_open",
+    "type": "root",
+    "children": [
+      {
+        "id": "node_b_3_1",
+        "label": "Sub-Unit Place Value Structure",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_3_1_1",
+            "label": "Tenths, Hundredths, and Thousandths",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Tenths, Hundredths, and Thousandths",
+              "description": "Tenth = 1/10 = 0.1; Hundredth = 1/100 = 0.01; Thousandth = 1/1000 = 0.001.",
+              "key_formula": "Decimal Point",
+              "example": "3.47 = 3 ones + 4 tenths + 7 hundredths = 3 + 4/10 + 7/100."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_3_2",
+        "label": "Unit Conversions using Decimals",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_3_2_1",
+            "label": "Currency and Length Conversions",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Currency and Length Conversions",
+              "description": "Currency: 1 Rupee = 100 Paise => 1 Paise = ₹0.01 (e.g., 45 p = ₹0.45).",
+              "key_formula": "Paise to Rupee Ratio",
+              "example": "Honeybee body length: Head 2.3 cm + Thorax 5.4 cm + Abdomen 7.5 cm = 15.2 cm total."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_3_3",
+        "label": "Decimal Comparison and Column Arithmetic",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_3_3_1",
+            "label": "Equivalent Decimals and Vertical Alignment",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Equivalent Decimals and Vertical Alignment",
+              "description": "Appending trailing zeros to decimal places preserves value (0.2 = 0.20 = 0.200).",
+              "key_formula": "Equivalent Decimals",
+              "example": "Comparing 0.2 and 0.09: 0.2 has 2 tenths while 0.09 has 0 tenths, so 0.2 > 0.09."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "asset_id": "ch3_decimals_measurement_grid",
+    "chapter_number": 3,
+    "chapter_title": "A Peek Beyond the Point",
+    "title": "Decimals Sub-Unit Measurement & Equivalent Grid Diagram",
+    "file_name": "ch3_decimals_measurement_grid.png",
+    "local_url": "/assets/images/ch3_decimals_measurement_grid.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Ruler millimeter subdivisions, expanded decimal place value grid, unit conversions, and column alignment.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_3_1",
+        "title": "Millimeter Subdivisions",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "1 cm = 10 mm => 1 mm = 0.1 cm. Sub-unit subdivisions allow measuring exact fractional lengths."
+      },
+      {
+        "hotspot_id": "hs_3_2",
+        "title": "Expanded Decimal Grid",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Place values right of decimal: Tenths (0.1), Hundredths (0.01), Thousandths (0.001)."
+      },
+      {
+        "hotspot_id": "hs_3_3",
+        "title": "Currency & Unit Conversions",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "1 Rupee = 100 Paise => 1 Paise = ₹0.01 (45 p = ₹0.45). 1 km = 1,000,000 mm."
+      },
+      {
+        "hotspot_id": "hs_3_4",
+        "title": "Equivalent Decimals & Alignment",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Trailing zeros do not alter value: 0.2 = 0.20 = 0.200. Always align decimal points vertically."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C03"
+}

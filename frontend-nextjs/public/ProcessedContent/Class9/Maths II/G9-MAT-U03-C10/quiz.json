@@ -1,0 +1,77 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "How Quantities Combine: Understanding Data",
+  "quiz_questions": [
+    {
+      "question_id": 1,
+      "level": "Level 1 (Easy)",
+      "question_type": "Multiple Choice",
+      "question": "What is the weighted arithmetic mean formula for n groups with values x_i and counts/weights w_i?",
+      "options": [
+        "A) x_bar = sum(x_i) / n",
+        "B) x_bar = sum(w_i * x_i) / sum(w_i)",
+        "C) x_bar = sum(w_i + x_i) / n",
+        "D) x_bar = sqrt(sum(w_i * x_i))"
+      ],
+      "correct_answer": "B",
+      "explanation": "The weighted arithmetic mean multiplies each subgroup average x_i by its weight w_i, sums the products, and divides by total weight sum(w_i)."
+    },
+    {
+      "question_id": 2,
+      "level": "Level 1 (Easy)",
+      "question_type": "Fill-in-the-Blank",
+      "question": "In a 100% stacked bar chart, the total height of every individual stacked bar is normalized to _____ percent.",
+      "options": [],
+      "correct_answer": "100",
+      "explanation": "All bars in a 100% stacked bar chart are scaled to 100% so that sub-segments represent category percentage proportions."
+    },
+    {
+      "question_id": 3,
+      "level": "Level 1 (Easy)",
+      "question_type": "True/False with Justification",
+      "question": "True or False: If Class A has 30 students with average score 80% and Class B has 10 students with average score 60%, the combined average score is 70%.",
+      "options": [],
+      "correct_answer": "False",
+      "explanation": "Taking an unweighted average (80 + 60)/2 = 70% is incorrect because class sizes differ. The correct weighted average is (30*80 + 10*60)/(30 + 10) = 3000/40 = 75%."
+    },
+    {
+      "question_id": 4,
+      "level": "Level 2 (Medium)",
+      "question_type": "Short Answer",
+      "question": "An alloy mixture consists of 200 kg of 70% brass (Batch A), 120 kg of 50% brass (Batch B), and y kg of 45% brass (Batch C). Find y if the final combined mixture has a brass concentration of 55%.",
+      "options": [],
+      "correct_answer": "y = 240 kg. Equation: 0.70(200) + 0.50(120) + 0.45(y) = 0.55(200 + 120 + y) => 140 + 60 + 0.45y = 176 + 0.55y => 0.10y = 24 => y = 240 kg.",
+      "explanation": "Mass of brass is conserved: sum(weight * concentration) = total mass * final concentration."
+    },
+    {
+      "question_id": 5,
+      "level": "Level 2 (Medium)",
+      "question_type": "Diagram Analysis",
+      "question": "A researcher wants to compare household budget allocations (food, housing, healthcare) across families with vastly different total incomes. Should they use a cluster-column chart, a standard stacked bar chart, or a 100% stacked bar chart? Explain.",
+      "options": [],
+      "correct_answer": "A 100% stacked bar chart. Income differences cause total expenditure heights to vary dramatically in standard stacked bar charts, obscuring spending ratios. A 100% stacked bar chart normalizes all totals to 100%, isolating relative budget percentages.",
+      "explanation": "100% stacked bar charts eliminate scale distortion from total income differences, allowing direct visual comparison of relative category allocations."
+    },
+    {
+      "question_id": 6,
+      "level": "Level 3 (Hard)",
+      "question_type": "Give Reasons",
+      "question": "A motorist drives 100 km at 40 km/h and returns 100 km along the same route at 60 km/h. Explain why the average speed for the round trip is NOT 50 km/h, and calculate the exact weighted harmonic mean speed.",
+      "options": [],
+      "correct_answer": "Average speed is Total Distance divided by Total Time. Time outward = 100/40 = 2.5 hours. Time return = 100/60 = 1.667 hours. Total time = 4.167 hours. Total distance = 200 km. Average speed = 200 / 4.167 = 48.0 km/h. Simple average fails because more time is spent driving at 40 km/h than at 60 km/h.",
+      "explanation": "Because time t = d/v varies inversely with speed, combining speeds over equal distances requires the weighted harmonic mean: v_avg = 2 / (1/v1 + 1/v2) = 2 / (1/40 + 1/60) = 48 km/h."
+    },
+    {
+      "question_id": 7,
+      "level": "Level 3 (Hard)",
+      "question_type": "Case Study",
+      "question": "A university department evaluates grading schemes. Scheme 1: Homework 20%, Midterm 30%, Final 50%. Scheme 2: Homework 40%, Midterm 40%, Final 20%. Student A scores (90, 70, 85) in (HW, Mid, Final). Calculate Student A's weighted final mark under both schemes.",
+      "options": [],
+      "correct_answer": "Scheme 1: (0.20*90) + (0.30*70) + (0.50*85) = 18 + 21 + 42.5 = 81.5%. Scheme 2: (0.40*90) + (0.40*70) + (0.20*85) = 36 + 28 + 17 = 81.0%. Student A earns 81.5% under Scheme 1 and 81.0% under Scheme 2.",
+      "explanation": "Weighted mean calculation multiplies scores by their respective decimal weights."
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U01-C10"
+}

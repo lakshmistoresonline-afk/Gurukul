@@ -1,0 +1,189 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "I’m Up and Down, and Round and Round",
+  "zero_omission_notes": {
+    "summary": "This chapter provides a rigorous axiomatic study of circular geometry. Topics include locus definition of circle, radius, chord, diameter, arc, sector, segment, circumcircle construction around 3 non-collinear points (circumcentre), equal chord theorems, perpendicular bisector of chord passing through centre, inscribed angle theorem, angle subtended by arc at centre vs circumference, angle in a semicircle, concyclicity, and cyclic quadrilaterals.",
+    "detailed_sections": [
+      {
+        "section_number_and_title": "5.1 Circle Fundamentals & Chords",
+        "full_notes": "A circle is the set of all points in a plane equidistant from a fixed centre point O. The perpendicular from centre O to a chord bisects the chord. Equal chords are equidistant from the centre.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Theorem",
+            "title": "Uniqueness of Circumcircle",
+            "content": "There is one and only one circle passing through three given non-collinear points."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "5.2 Arc Subtended Angles & Inscribed Angle Theorem",
+        "full_notes": "The angle subtended by an arc at the centre is double the angle subtended by it at any point on the remaining part of the circle: angle AOB = 2 * angle ACB.",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Corollaries",
+            "title": "Angles in Segments",
+            "content": "1. Angles in the same segment of a circle are equal. 2. Angle subtended in a semicircle is a right angle (90 degrees)."
+          }
+        ]
+      },
+      {
+        "section_number_and_title": "5.3 Cyclic Quadrilaterals & Concyclicity",
+        "full_notes": "A quadrilateral is cyclic if all four vertices lie on a circle. The sum of either pair of opposite angles of a cyclic quadrilateral is 180 degrees (supplementary).",
+        "margin_notes_and_sidebars": [
+          {
+            "type": "Converse Theorem",
+            "title": "Concyclicity Condition",
+            "content": "If the sum of a pair of opposite angles of a quadrilateral is 180 degrees, the quadrilateral is cyclic."
+          }
+        ]
+      }
+    ]
+  },
+  "practical_lab_activity_or_methodology_manual": [
+    {
+      "activity_or_method_id": "ACT-5.1",
+      "aim_or_objective": "Finding Centre of a Given Circle / Circular Arc",
+      "materials_or_prerequisites": [
+        "Paper",
+        "Circular coin/bangle",
+        "Compass",
+        "Straightedge"
+      ],
+      "procedure_or_steps": [
+        "Trace boundary of coin on paper to get circle.",
+        "Draw two non-parallel chords AB and CD on the circle.",
+        "Construct perpendicular bisector of chord AB using compass.",
+        "Construct perpendicular bisector of chord CD.",
+        "Mark point of intersection of perpendicular bisectors as centre O."
+      ],
+      "observations_or_results": "Perpendicular bisectors of any two chords meet at a single point.",
+      "conclusion_or_principle": "The perpendicular bisector of every chord passes through the centre."
+    }
+  ],
+  "visuals_diagrams_and_tabular_data": {
+    "diagrams_figures_and_maps": [
+      {
+        "figure_id_and_title": "Fig 5.1: Inscribed Angle Theorem Representation",
+        "labels_and_components": [
+          "Centre O",
+          "Arc AB",
+          "Central Angle AOB",
+          "Inscribed Angle ACB",
+          "Circumference"
+        ],
+        "drawing_or_reading_instructions": "Draw circle with centre O. Mark arc AB at bottom. Connect A and B to O and to C on top circumference.",
+        "structural_or_conceptual_explanation": "angle AOB = 2 * angle ACB."
+      }
+    ],
+    "data_tables_and_comparisons": [
+      {
+        "table_title": "Circle Theorems and Geometric Implications",
+        "headers": [
+          "Theorem Statement",
+          "Geometric Condition",
+          "Resulting Equality"
+        ],
+        "rows": [
+          [
+            "Perpendicular from Centre to Chord",
+            "OM perpendicular to AB",
+            "AM = MB"
+          ],
+          [
+            "Equal Chords Distance",
+            "Chord AB = Chord CD",
+            "Distance OM = Distance ON"
+          ],
+          [
+            "Angle in Semicircle",
+            "AB is Diameter",
+            "angle ACB = 90 degrees"
+          ],
+          [
+            "Cyclic Quadrilateral Angles",
+            "ABCD concyclic",
+            "angle A + angle C = 180 degrees"
+          ]
+        ]
+      }
+    ]
+  },
+  "master_glossary_units_and_formulas": [
+    {
+      "term_or_concept": "Circumcentre",
+      "definition_or_meaning": "Point of intersection of perpendicular bisectors of sides of a triangle, serving as center of circumcircle.",
+      "si_unit_or_notation": "Point O",
+      "example_or_application": "Constructing circumcircle of triangle ABC."
+    },
+    {
+      "term_or_concept": "Cyclic Quadrilateral",
+      "definition_or_meaning": "A quadrilateral whose four vertices lie on the circumference of a single circle.",
+      "si_unit_or_notation": "ABCD concyclic",
+      "example_or_application": "In cyclic ABCD, angle A + angle C = 180 degrees."
+    }
+  ],
+  "exam_question_bank": {
+    "textbook_exercises": [
+      {
+        "q_no": "Ex 5.3 Q2",
+        "question": "In a cyclic quadrilateral ABCD, if angle A = 75 degrees and angle B = 100 degrees, find angles C and D.",
+        "answer": "angle A + angle C = 180 => angle C = 105 degrees. angle B + angle D = 180 => angle D = 80 degrees."
+      }
+    ],
+    "objective_questions_1_mark": [
+      {
+        "type": "MCQ",
+        "question": "What is the measure of an angle subtended in a semicircle?",
+        "options": [
+          "A) 45 degrees",
+          "B) 60 degrees",
+          "C) 90 degrees",
+          "D) 180 degrees"
+        ],
+        "answer": "C",
+        "explanation": "A semicircle arc subtends 180 degrees at centre, so inscribed angle is 180/2 = 90 degrees."
+      }
+    ],
+    "short_answer_questions": [
+      {
+        "marks": 2,
+        "question": "A chord of length 16 cm is at a distance of 6 cm from centre of circle. Find radius.",
+        "answer": "Half chord = 8 cm. r^2 = 6^2 + 8^2 = 36 + 64 = 100 => r = 10 cm."
+      }
+    ],
+    "analytical_reasoning_questions": [
+      {
+        "marks": 3,
+        "question": "An arc subtends 140 degrees at centre. Calculate angle subtended by it on major arc.",
+        "answer": "Inscribed angle = 1/2 * Central angle = 1/2 * 140 = 70 degrees."
+      }
+    ],
+    "comprehensive_long_answers": [
+      {
+        "marks": 5,
+        "question": "Prove that the sum of opposite angles of a cyclic quadrilateral is 180 degrees.",
+        "answer": "1. Let ABCD be cyclic quadrilateral with centre O.\n2. Join OA and OC.\n3. Reflex angle AOC = 2 * angle ADC (Inscribed Angle Theorem).\n4. Acute angle AOC = 2 * angle ABC.\n5. Reflex angle AOC + Acute angle AOC = 360 degrees.\n6. 2 * angle ADC + 2 * angle ABC = 360 => angle ADC + angle ABC = 180 degrees."
+      }
+    ],
+    "competency_and_case_studies": [
+      {
+        "case_scenario": "Three satellite tracking stations A, B, C are located on a circular radar display boundary around central server O.",
+        "qa": [
+          {
+            "question": "If station angle ABC is measured as 50 degrees, what is angle AOC on server monitor?",
+            "answer": "Central angle AOC = 2 * angle ABC = 2 * 50 = 100 degrees."
+          }
+        ]
+      }
+    ],
+    "common_misconceptions_and_pitfalls": [
+      {
+        "common_error_or_misconception": "Assuming any quadrilateral drawn inside a circle is cyclic.",
+        "correct_fact_or_method": "A quadrilateral is cyclic ONLY if all four vertices lie strictly on the circle boundary."
+      }
+    ]
+  },
+  "grade": "9",
+  "subject": "Maths I",
+  "chapter_id": "G9-MAT-U01-C05"
+}

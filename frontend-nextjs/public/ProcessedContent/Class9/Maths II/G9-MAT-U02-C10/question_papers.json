@@ -1,0 +1,364 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "How Quantities Combine: Understanding Data",
+  "papers": [
+    {
+      "paper_id": 1,
+      "paper_title": "Set 1 - Chapter 10 Practice Paper (Weighted Averages)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "What is the weighted arithmetic mean formula for groups x_i with weights w_i?",
+              "options": [
+                "A) sum(x_i)/n",
+                "B) sum(w_i * x_i)/sum(w_i)",
+                "C) sum(w_i + x_i)/n",
+                "D) max(x_i) - min(x_i)"
+              ],
+              "correct_answer": "B) sum(w_i * x_i)/sum(w_i)",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Group A (30 students, avg 80%) & Group B (10 students, avg 60%). The combined weighted average is:",
+              "options": [
+                "A) 70%",
+                "B) 72.5%",
+                "C) 75%",
+                "D) 77.5%"
+              ],
+              "correct_answer": "C) 75%",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Why does taking a simple unweighted average of two group means give an incorrect result when group sizes differ?",
+              "marking_scheme_answer": "A simple average treats all groups as having equal weight. Larger groups contribute more total scores, so their average must carry proportionally higher weight.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "A student scores 80% in assignments (weight 30%), 70% in midterm (weight 20%), and 90% in finals (weight 50%). Calculate the weighted grade.",
+              "marking_scheme_answer": "Weighted Score = (0.30*80) + (0.20*70) + (0.50*90) = 24 + 14 + 45 = 83%.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Alloy Blending Problem: 200 kg of 70% brass alloy (Batch A) is mixed with 120 kg of 50% brass alloy (Batch B) and y kg of 45% brass alloy (Batch C) to obtain a 55% brass mixture. Find y.",
+              "marking_scheme_answer": "Mass conservation equation: 0.70(200) + 0.50(120) + 0.45(y) = 0.55(200 + 120 + y) => 140 + 60 + 0.45y = 0.55(320 + y) => 200 + 0.45y = 176 + 0.55y => 0.10y = 24 => y = 240 kg.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Stacked Bar Charts. Family A spends Rs 1940 housing, 1700 food, 1280 edu, 1770 health. Family B spends Rs 1750 housing, 1546 food, 1500 edu, 1210 health. (a) Calculate total expenditure for each family. (b) Convert Family A's expenses to percentages for a 100% stacked bar chart.",
+              "marking_scheme_answer": "(a) Family A Total = 1940 + 1700 + 1280 + 1770 = Rs 6690. Family B Total = 1750 + 1546 + 1500 + 1210 = Rs 6006. (b) Family A Percentages: Housing = 1940/6690 = 29.0%, Food = 1700/6690 = 25.4%, Education = 1280/6690 = 19.1%, Health = 1770/6690 = 26.5%. Sum = 100%.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Chapter 10 Practice Paper (Data Visualization & 100% Bar Charts)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "In a 100% stacked bar chart, all bars are drawn to an identical height representing:",
+              "options": [
+                "A) 50%",
+                "B) 100%",
+                "C) Absolute total value",
+                "D) Maximum category value"
+              ],
+              "correct_answer": "B) 100%",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which chart type is best for comparing category percentage proportions across groups of different total sizes?",
+              "options": [
+                "A) Cluster-column chart",
+                "B) Line chart",
+                "C) 100% stacked bar chart",
+                "D) Histogram"
+              ],
+              "correct_answer": "C) 100% stacked bar chart",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Compare cluster-column charts and 100% stacked bar charts regarding their suitability for displaying expenditure data.",
+              "marking_scheme_answer": "Cluster-column charts display absolute values side-by-side, making raw rupee comparisons easy. 100% stacked bar charts scale total height to 100%, isolating relative budget allocation percentages independent of total family income.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Two sections of Class 9 have 25 and 35 students. Their math mean scores are 72 and 84. Calculate the combined mean.",
+              "marking_scheme_answer": "Combined Mean = (25*72 + 35*84) / (25 + 35) = (1800 + 2940) / 60 = 4740 / 60 = 79%.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A motorist drives 100 km at 40 km/h and returns 100 km at 60 km/h. (a) Show why simple average speed (50 km/h) is wrong. (b) Calculate the correct average speed using weighted harmonic mean.",
+              "marking_scheme_answer": "(a) Simple average fails because more time is spent driving at 40 km/h than at 60 km/h. (b) Time outward = 100/40 = 2.5 h. Time return = 100/60 = 1.667 h. Total time = 4.167 h. Total distance = 200 km. Average Speed = 200 / 4.167 = 48.0 km/h (Harmonic mean formula: 2/(1/40 + 1/60) = 48 km/h).",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Simpson's Paradox. Company X has two divisions. Division 1: Men pass rate 80% (100 applicants), Women 85% (20 applicants). Division 2: Men pass rate 30% (20 applicants), Women 35% (100 applicants). (a) Calculate overall pass rates for men and women. (b) Explain why women have higher rates in both divisions but lower overall rate.",
+              "marking_scheme_answer": "(a) Men passed = 0.80(100) + 0.30(20) = 80 + 6 = 86 out of 120 (71.7%). Women passed = 0.85(20) + 0.35(100) = 17 + 35 = 52 out of 120 (43.3%). (b) Simpson's paradox: Most women applied to Division 2 which had a much lower passing rate overall, heavily weighting their aggregate average downwards.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Chapter 10 Practice Paper (Mixtures & Group Aggregations)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "If two groups of sizes N1 and N2 have equal mean values M1 = M2 = M, their combined weighted mean is:",
+              "options": [
+                "A) M/2",
+                "B) M",
+                "C) 2M",
+                "D) M * (N1 + N2)"
+              ],
+              "correct_answer": "B) M",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Gold alloy of 18 karat (75% gold) is mixed with 24 karat (100% gold) in ratio 2:1 by mass. Final purity is:",
+              "options": [
+                "A) 80%",
+                "B) 83.33%",
+                "C) 87.5%",
+                "D) 90%"
+              ],
+              "correct_answer": "B) 83.33%",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Show calculation for 2:1 mass mixture of 18 karat and 24 karat gold purity.",
+              "marking_scheme_answer": "Purity = (2*75% + 1*100%) / (2 + 1) = (150 + 100) / 3 = 250 / 3 = 83.33% (or 20 Karat).",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "Three classes A (20 students, mean 60), B (30 students, mean 70), C (50 students, mean 80) take a test. Calculate combined mean.",
+              "marking_scheme_answer": "Combined Mean = (20*60 + 30*70 + 50*80) / (20 + 30 + 50) = (1200 + 2100 + 4000) / 100 = 7300 / 100 = 73%.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "Milk solution A (4 liters, 20% water) is mixed with solution B (6 liters, 30% water) and solution C (5 liters, pure water). Find the final percentage of water in the 15-liter mixture.",
+              "marking_scheme_answer": "Water in A = 0.20 * 4 = 0.8 L. Water in B = 0.30 * 6 = 1.8 L. Water in C = 1.00 * 5 = 5.0 L. Total water = 0.8 + 1.8 + 5.0 = 7.6 L. Total volume = 15 L. Water % = (7.6 / 15) * 100 = 50.67%.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Daily Activity Budgeting. A worker logs daily hours: Sleep 8h, Work 8h, Recreation 4h, Chores 4h. (a) Is a 24-hour daily activity stacked bar chart visually identical to a 100% stacked bar chart? Explain. (b) Convert the hours to percentages.",
+              "marking_scheme_answer": "(a) Yes, because the total sum for every individual is constant at 24 hours (100% of a day). Scaling to 100% preserves exact bar proportions. (b) Sleep = 8/24 = 33.33%, Work = 8/24 = 33.33%, Recreation = 4/24 = 16.67%, Chores = 4/24 = 16.67%. Sum = 100%.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Chapter 10 Practice Paper (Advanced Data Synthesis)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Combining item quantities with different prices requires calculating a:",
+              "options": [
+                "A) Weighted price index",
+                "B) Median price",
+                "C) Mode price",
+                "D) Simple average price"
+              ],
+              "correct_answer": "A) Weighted price index",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In a dataset with 4 categories, if the 100% stacked bar chart segments are 25%, 35%, 15%, the 4th segment is:",
+              "options": [
+                "A) 20%",
+                "B) 25%",
+                "C) 30%",
+                "D) 15%"
+              ],
+              "correct_answer": "B) 25%",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Calculate the missing 4th segment percentage and verify that total sum equals 100%.",
+              "marking_scheme_answer": "100% - (25% + 35% + 15%) = 100% - 75% = 25%. Sum = 25 + 35 + 15 + 25 = 100%.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "A shop sells 50 units at Rs 100, 30 units at Rs 150, and 20 units at Rs 200. Calculate average revenue per unit sold.",
+              "marking_scheme_answer": "Average Revenue = (50*100 + 30*150 + 20*200) / (50 + 30 + 20) = (5000 + 4500 + 4000) / 100 = 13500 / 100 = Rs 135.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "The overall mean score of 100 students is 75. The mean score of male students (count M) is 70, and female students (count F) is 80. Find the number of male and female students.",
+              "marking_scheme_answer": "M + F = 100. Weighted mean equation: (70M + 80F) / 100 = 75 => 70M + 80F = 7500. Substitute M = 100 - F: 70(100 - F) + 80F = 7500 => 7000 + 10F = 7500 => 10F = 500 => F = 50, M = 50.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Industrial Wage Analysis. Factory A employs 200 workers at mean daily wage Rs 500. Factory B employs 300 workers at mean daily wage Rs 600. (a) Find combined mean wage. (b) If wages increase by 10% in Factory A and 20% in Factory B, find the new combined mean wage.",
+              "marking_scheme_answer": "(a) Initial Mean = (200*500 + 300*600) / 500 = (100000 + 180000) / 500 = 280000 / 500 = Rs 560. (b) New Wage A = 550, New Wage B = 720. New Combined Mean = (200*550 + 300*720) / 500 = (110000 + 216000) / 500 = 326000 / 500 = Rs 652.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Chapter 10 Practice Paper (Exhaustive Unit Test)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Which condition causes simple average of group means to equal the weighted average?",
+              "options": [
+                "A) Group means are zero",
+                "B) All group sample sizes/weights are equal",
+                "C) Group sizes are prime",
+                "D) Never equal"
+              ],
+              "correct_answer": "B) All group sample sizes/weights are equal",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "In a 100% stacked bar chart, if a component slice doubles in rupee value while all other components also double, its slice percentage:",
+              "options": [
+                "A) Doubles",
+                "B) Halves",
+                "C) Remains unchanged",
+                "D) Increases by 10%"
+              ],
+              "correct_answer": "C) Remains unchanged",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
+            {
+              "question_number": 3,
+              "question_text": "Explain why proportional scaling preserves slice percentages in a 100% stacked bar chart.",
+              "marking_scheme_answer": "If all component values are multiplied by factor k, both component value and total sum increase by k. The ratio (k * component) / (k * total) cancels k, keeping percentage unchanged.",
+              "marks": 3
+            },
+            {
+              "question_number": 4,
+              "question_text": "A student scores 70 in Test 1 (weight 1), 80 in Test 2 (weight 2), and x in Test 3 (weight 3). If weighted mean is 85, find x.",
+              "marking_scheme_answer": "(1*70 + 2*80 + 3*x) / (1 + 2 + 3) = 85 => (70 + 160 + 3x) / 6 = 85 => 230 + 3x = 510 => 3x = 280 => x = 93.33.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case-Based Questions)",
+          "questions": [
+            {
+              "question_number": 5,
+              "question_text": "A car travels 30 km at 30 km/h, 40 km at 40 km/h, and 50 km at 50 km/h. Calculate total time taken and average speed across the 120 km journey.",
+              "marking_scheme_answer": "Time t1 = 30/30 = 1 h. t2 = 40/40 = 1 h. t3 = 50/50 = 1 h. Total time = 3 hours. Total distance = 120 km. Average Speed = 120 / 3 = 40 km/h.",
+              "marks": 5
+            },
+            {
+              "question_number": 6,
+              "question_text": "Case Study: Environmental Pollution Aggregation. Region 1 (area 100 sq km) has air pollutant concentration 40 ppm. Region 2 (area 300 sq km) has 80 ppm. Region 3 (area 100 sq km) has 100 ppm. (a) Calculate area-weighted mean pollution concentration. (b) Explain why simple average (73.33 ppm) misleads environmental policymakers.",
+              "marking_scheme_answer": "(a) Weighted Mean = (100*40 + 300*80 + 100*100) / (100 + 300 + 100) = (4000 + 24000 + 10000) / 500 = 38000 / 500 = 76.0 ppm. (b) Simple average underestimates total exposure because the largest land area (Region 2, 300 sq km) has high pollution (80 ppm) and carries 60% of total geographic weight.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "grade": "9",
+  "subject": "Maths II",
+  "chapter_id": "G9-MAT-U01-C10"
+}

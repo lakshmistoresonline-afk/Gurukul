@@ -1,0 +1,115 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Prime Time",
+  "core_summary": "This chapter provides a comprehensive foundation in number theory: factors, multiples, prime numbers, composite numbers, co-prime pairs, the Sieve of Eratosthenes, divisibility rules (2, 3, 4, 5, 8, 9, 10), unique prime factorisation, Highest Common Factor (HCF), and Lowest Common Multiple (LCM). Students learn that factors divide a number completely without remainder, bounded by 1 <= f <= n. The number 1 is identified as unique (neither prime nor composite). Students use Eratosthenes' grid sieve to isolate primes up to 100, master divisibility shortcuts, perform prime factorisation trees and repeated division, and apply the fundamental relationship HCF(a, b) x LCM(a, b) = a x b to solve real-world problems like traffic light synchronization and treasure hunt races.",
+  "key_concepts": [
+    "Factors and Multiples: A factor divides an integer completely with zero remainder. A multiple is the product of an integer and any counting number. Properties: 1 is a factor of every number; every number is a factor and multiple of itself; factors are finite and bounded (1 <= f <= n).",
+    "Prime vs. Composite Numbers: A Prime Number has exactly two distinct positive factors (1 and itself). A Composite Number has more than two factors. The number 1 has only one factor and is uniquely classified as neither prime nor composite. 2 is the smallest prime and the only even prime.",
+    "Sieve of Eratosthenes: A historical systematic algorithm for finding all prime numbers up to a limit N by crossing out multiples of each prime starting from 2, leaving uncrossed prime numbers.",
+    "Co-prime Numbers: Two positive integers a and b are co-prime if they share no common factors other than 1 (HCF(a, b) = 1). Any two consecutive integers are always co-prime.",
+    "Divisibility Rules: Shortcuts to test divisibility without full division: By 2 (last digit even), By 3 (digit sum div by 3), By 4 (last 2 digits div by 4), By 5 (ends in 0 or 5), By 8 (last 3 digits div by 8), By 9 (digit sum div by 9), By 10 (ends in 0).",
+    "Prime Factorisation: Expressing a composite number uniquely as a product of prime numbers (Fundamental Theorem of Arithmetic intuition). Methods include factor trees and repeated division by smallest prime divisors.",
+    "Highest Common Factor (HCF): The largest positive integer that divides two or more integers completely. Found by multiplying the lowest powers of common prime factors.",
+    "Lowest Common Multiple (LCM): The smallest positive integer that is a multiple of two or more integers. Found by multiplying the highest powers of all involved prime factors.",
+    "Fundamental Product Identity: For any two positive integers a and b, HCF(a, b) x LCM(a, b) = a x b.",
+    "Common Multiples and Periodic Events: LCM solves simultaneous periodic event problems (e.g., traffic lights changing together, alarm bells ringing simultaneously, runners meeting at a start line).",
+    "Common Factors and Equal Grouping: HCF solves maximum equal capacity or grouping problems (e.g., dividing items into equal packaging without leftovers).",
+    "Twin Primes and Prime Patterns: Pairs of prime numbers with a difference of 2 (e.g., (3, 5), (5, 7), (11, 13), (17, 19)) exhibit structural spacing in number theory."
+  ],
+  "key_terms": [
+    {
+      "term": "Factor",
+      "definition": "An integer that divides another integer completely leaving a remainder of zero."
+    },
+    {
+      "term": "Multiple",
+      "definition": "The product of a given integer and any non-zero counting number."
+    },
+    {
+      "term": "Prime Number",
+      "definition": "A natural number greater than 1 having exactly two distinct positive factors: 1 and itself."
+    },
+    {
+      "term": "Composite Number",
+      "definition": "A natural number greater than 1 having more than two distinct positive factors."
+    },
+    {
+      "term": "Co-prime Numbers",
+      "definition": "Two integers sharing no common factors other than 1 (HCF = 1)."
+    },
+    {
+      "term": "Prime Factorisation",
+      "definition": "The unique representation of a composite number as a product of prime factors."
+    },
+    {
+      "term": "Highest Common Factor (HCF)",
+      "definition": "The largest positive integer that divides two or more given integers without remainder."
+    },
+    {
+      "term": "Lowest Common Multiple (LCM)",
+      "definition": "The smallest positive integer that is a multiple of two or more given integers."
+    },
+    {
+      "term": "Sieve of Eratosthenes",
+      "definition": "An ancient algorithm for isolating prime numbers by systematically eliminating multiples."
+    },
+    {
+      "term": "Divisibility Test",
+      "definition": "An arithmetic rule used to determine whether one number divides another without performing long division."
+    },
+    {
+      "term": "Twin Primes",
+      "definition": "A pair of prime numbers that differ by exactly 2."
+    },
+    {
+      "term": "Factor Tree",
+      "definition": "A diagrammatic representation breaking a composite number down into its prime factors."
+    }
+  ],
+  "key_takeaways": [
+    "Every factor of a number n is bounded between 1 and n (1 <= f <= n).",
+    "1 is uniquely neither prime nor composite; 2 is the smallest prime and only even prime.",
+    "Two numbers are co-prime if their HCF equals 1 (e.g., any two consecutive integers).",
+    "Divisibility rules by 3 and 9 test digit sums; rules by 4 and 8 test last 2 and 3 digits.",
+    "Prime factorisation expresses any composite number uniquely as a product of primes.",
+    "HCF is computed using the lowest powers of common prime factors; LCM uses the highest powers of all prime factors.",
+    "For any two numbers a and b: HCF(a, b) x LCM(a, b) = a x b.",
+    "HCF solves maximum equal capacity division problems.",
+    "LCM solves simultaneous periodic event timing problems.",
+    "The Sieve of Eratosthenes systematically isolates prime numbers up to any limit N."
+  ],
+  "image_asset": {
+    "title": "Prime Time Concept Diagram",
+    "asset_url": "/assets/images/05-ch5_virtues_of_friendship_matrix.png",
+    "url": "/assets/images/05-ch5_virtues_of_friendship_matrix.png",
+    "filename": "05-ch5_virtues_of_friendship_matrix.png",
+    "type": "16:9 Diagram",
+    "hotspots": [
+      {
+        "id": "hs_5_1",
+        "label": "Core Mechanism",
+        "tooltip_explanation": "Interactive concept hotspot detailing key mechanisms and conceptual architecture of Prime Time."
+      },
+      {
+        "id": "hs_5_2",
+        "label": "Practical Application",
+        "tooltip_explanation": "Real-world application and exam synthesis for Prime Time."
+      }
+    ]
+  },
+  "storyboard": {
+    "scene_1": "Introduction to Prime Time through real-world observation.",
+    "scene_2": "Interactive exploration of mathematical patterns and definitions.",
+    "scene_3": "Hands-on problem solving and pattern verification.",
+    "scene_4": "Synthesis of key takeaways and real-world applications."
+  },
+  "grade": "6",
+  "subject": "Maths",
+  "chapter_id": "G6-MAT-U05-C05",
+  "title": "Prime Time - Chapter Overview",
+  "video_url": "https://notebooklm.link.google/v6mat05",
+  "video_title": "Prime Time Interactive Video Studio",
+  "unit": "U05",
+  "unit_number": 5,
+  "unit_title": "Unit 5"
+}

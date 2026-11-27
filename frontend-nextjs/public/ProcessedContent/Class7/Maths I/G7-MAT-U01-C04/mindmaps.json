@@ -1,0 +1,133 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Expressions using Letter-Numbers",
+  "mermaid_syntax": "graph TD\n  Root[\"Expressions using Letter-Numbers\"]\n  Root --> B1[\"Algebraic Variables and Geometric Generalizations\"]\n  B1 --> B1_S1[\"Letter-Numbers and Perimeter Formulas\"]\n  Root --> B2[\"Expression Simplification\"]\n  B2 --> B2_S1[\"Combining Like Terms\"]\n  Root --> B3[\"Pattern Rules and Matrix Coordinates\"]\n  B3 --> B3_S1[\"Matchstick Square and Endless Grid Rules\"]",
+  "d3_react_flow_tree": {
+    "id": "node_root_ch4",
+    "label": "Expressions using Letter-Numbers",
+    "node_color": "#38BDF8",
+    "icon": "book_open",
+    "type": "root",
+    "children": [
+      {
+        "id": "node_b_4_1",
+        "label": "Algebraic Variables and Geometric Generalizations",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_4_1_1",
+            "label": "Letter-Numbers and Perimeter Formulas",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Letter-Numbers and Perimeter Formulas",
+              "description": "A letter-number (variable) represents an unspecified, changing numerical value.",
+              "key_formula": "Letter-Number (Variable)",
+              "example": "Shabnam's age s in terms of Aftab's age a: s = a + 3."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_4_2",
+        "label": "Expression Simplification",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_4_2_1",
+            "label": "Combining Like Terms",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Combining Like Terms",
+              "description": "Like terms contain identical variables (e.g., 5y and 2y) and combine via numerical coefficients: 5y + 2y = 7y.",
+              "key_formula": "Like Terms",
+              "example": "Simplify: 5y + x + x + 5y - 6 + 2 = 10y + 2x - 4."
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_b_4_3",
+        "label": "Pattern Rules and Matrix Coordinates",
+        "node_color": "#818CF8",
+        "icon": "layer_group",
+        "type": "theme_branch",
+        "children": [
+          {
+            "id": "node_sub_4_3_1",
+            "label": "Matchstick Square and Endless Grid Rules",
+            "node_color": "#34D399",
+            "icon": "lightbulb",
+            "type": "concept_node",
+            "tooltip_popover": {
+              "title": "Matchstick Square and Endless Grid Rules",
+              "description": "Matchstick squares rule: w connected squares require 3w + 1 matchsticks.",
+              "key_formula": "Pattern Rule",
+              "example": "For 10 squares: 3(10) + 1 = 31 matchsticks."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "image_asset": {
+    "asset_id": "ch4_variables_matchstick_grid",
+    "chapter_number": 4,
+    "chapter_title": "Expressions using Letter-Numbers",
+    "title": "Variables, Matchstick Patterns & Matrix Coordinates Diagram",
+    "file_name": "ch4_variables_matchstick_grid.png",
+    "local_url": "/assets/images/ch4_variables_matchstick_grid.png",
+    "aspect_ratio": "16:9",
+    "width_px": 1600,
+    "height_px": 900,
+    "description": "Polygon perimeters, matchstick square pattern rule 3w+1, 4-column matrix coordinate formula, and like terms.",
+    "hotspots": [
+      {
+        "hotspot_id": "hs_4_1",
+        "title": "Polygon Perimeters",
+        "x_percent": 3.125,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Equilateral Triangle = 3s, Square = 4s, Regular Pentagon = 5s, Regular Hexagon = 6s."
+      },
+      {
+        "hotspot_id": "hs_4_2",
+        "title": "Matchstick Square Rule",
+        "x_percent": 51.875,
+        "y_percent": 53.33,
+        "w_percent": 45.0,
+        "h_percent": 32.22,
+        "popover_content": "Building w connected squares requires 3w + 1 matchsticks (1st square takes 4, each added takes 3)."
+      },
+      {
+        "hotspot_id": "hs_4_3",
+        "title": "Endless 4-Column Grid Formula",
+        "x_percent": 3.125,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Number N in row r, col c: N = 4(r - 1) + c = 4r - 4 + c. 143 lies in Row 36, Column 3."
+      },
+      {
+        "hotspot_id": "hs_4_4",
+        "title": "Combining Like Terms",
+        "x_percent": 51.875,
+        "y_percent": 11.11,
+        "w_percent": 45.0,
+        "h_percent": 37.78,
+        "popover_content": "Like terms share identical variables: 5y + 2y = 7y. Unlike terms (3x + 4y) cannot be merged."
+      }
+    ]
+  },
+  "grade": "7",
+  "subject": "Maths I",
+  "chapter_id": "G7-MAT-U01-C04"
+}

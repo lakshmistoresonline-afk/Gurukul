@@ -1,0 +1,110 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Finding Common Ground",
+  "image_asset": {
+    "asset_id": "img_ch3",
+    "chapter_number": 3,
+    "title": "Rectangular Floor Tiling Grid",
+    "url": "/assets/images/ch3_hcf_floor_tiling.png",
+    "caption": "12 ft × 16 ft floor tiled with 4 ft × 4 ft square tiles representing HCF(12, 16) = 4.",
+    "hotspots": [
+      {
+        "x_percent": 0,
+        "y_percent": 0,
+        "w_percent": 100,
+        "h_percent": 100,
+        "label": "4x4 Tile Grid",
+        "popover_text": "12 tiles of size 4ft x 4ft tile a 12ft x 16ft room completely without cutting."
+      }
+    ]
+  },
+  "cards": [
+    {
+      "card_id": 1,
+      "level": "Basic Recall",
+      "phonetic_guide": "[Phonetic Guide: Define Highest Commo...]",
+      "front_question": "Define Highest Common Factor (HCF) and Least Common Multiple (LCM).",
+      "back_answer": "HCF (or GCD) is the largest positive integer that divides two or more given integers without leaving a remainder. LCM is the smallest non-zero positive integer that is a multiple of two or more given integers.",
+      "graphic_description": "Visual diagram representing key concept for card 1",
+      "mnemonic": "Key Rule Memory Anchor",
+      "sm2_ratings": {
+        "easy": "Repeat in 4 days",
+        "medium": "Repeat in 2 days",
+        "hard": "Repeat today"
+      }
+    },
+    {
+      "card_id": 2,
+      "level": "Conceptual Understanding",
+      "phonetic_guide": "[Phonetic Guide: Why is finding the H...]",
+      "front_question": "Why is finding the HCF required when determining the largest square tile size to cover a 12 ft × 16 ft room floor without cutting?",
+      "back_answer": "To cover the floor completely without cutting tiles, the tile side length must divide both length (16 ft) and width (12 ft) evenly. To minimize the number of tiles, the tile side must be the largest common divisor, which is HCF(12, 16) = 4 ft.",
+      "graphic_description": "Visual diagram representing key concept for card 2",
+      "mnemonic": "Key Rule Memory Anchor",
+      "sm2_ratings": {
+        "easy": "Repeat in 4 days",
+        "medium": "Repeat in 2 days",
+        "hard": "Repeat today"
+      }
+    },
+    {
+      "card_id": 3,
+      "level": "Experimental / Observational Insights",
+      "phonetic_guide": "[Phonetic Guide: How do you calculate...]",
+      "front_question": "How do you calculate HCF and LCM from the prime factorisations of two numbers?",
+      "back_answer": "HCF is found by taking the product of the COMMON prime factors with their LOWEST exponents. LCM is found by taking the product of ALL prime factors involved with their HIGHEST exponents.",
+      "graphic_description": "Visual diagram representing key concept for card 3",
+      "mnemonic": "Key Rule Memory Anchor",
+      "sm2_ratings": {
+        "easy": "Repeat in 4 days",
+        "medium": "Repeat in 2 days",
+        "hard": "Repeat today"
+      }
+    },
+    {
+      "card_id": 4,
+      "level": "Basic Recall",
+      "phonetic_guide": "[Phonetic Guide: What are co-prime nu...]",
+      "front_question": "What are co-prime numbers, and what is their HCF?",
+      "back_answer": "Co-prime numbers are two numbers that have no common prime factors; their Highest Common Factor (HCF) is strictly equal to 1.",
+      "graphic_description": "Visual diagram representing key concept for card 4",
+      "mnemonic": "Key Rule Memory Anchor",
+      "sm2_ratings": {
+        "easy": "Repeat in 4 days",
+        "medium": "Repeat in 2 days",
+        "hard": "Repeat today"
+      }
+    },
+    {
+      "card_id": 5,
+      "level": "Scientific Reasoning & Application",
+      "phonetic_guide": "[Phonetic Guide: State the mathematic...]",
+      "front_question": "State the mathematical relationship between HCF, LCM, and the product of two numbers 'a' and 'b'.",
+      "back_answer": "For any two positive integers 'a' and 'b': HCF(a, b) × LCM(a, b) = a × b. (Note: This formula applies strictly to two numbers, not three).",
+      "graphic_description": "Visual diagram representing key concept for card 5",
+      "mnemonic": "Key Rule Memory Anchor",
+      "sm2_ratings": {
+        "easy": "Repeat in 4 days",
+        "medium": "Repeat in 2 days",
+        "hard": "Repeat today"
+      }
+    },
+    {
+      "card_id": 6,
+      "level": "Scientific Reasoning & Application",
+      "phonetic_guide": "[Phonetic Guide: Three alarm clocks r...]",
+      "front_question": "Three alarm clocks ring at intervals of 9, 12, and 15 minutes. If they ring together now, after how many hours will they ring together next?",
+      "back_answer": "The common time interval is LCM(9, 12, 15). Prime factorisations: 9=3², 12=2²×3, 15=3×5. LCM = 2² × 3² × 5 = 180 minutes. Converting to hours: 180 / 60 = 3 hours.",
+      "graphic_description": "Visual diagram representing key concept for card 6",
+      "mnemonic": "Key Rule Memory Anchor",
+      "sm2_ratings": {
+        "easy": "Repeat in 4 days",
+        "medium": "Repeat in 2 days",
+        "hard": "Repeat today"
+      }
+    }
+  ],
+  "grade": "7",
+  "subject": "Maths II",
+  "chapter_id": "G7-MAT-U01-C03"
+}
