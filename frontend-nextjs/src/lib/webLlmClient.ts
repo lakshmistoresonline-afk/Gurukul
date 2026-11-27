@@ -83,11 +83,14 @@ export async function sendHybridTutorChat(payload: TutorChatPayload & { engineMo
     };
   }
 
-  // 3. Authoritative FastAPI AI Client Call (http://127.0.0.1:8001/api/v1/tutor/chat)
+  // 3. Authoritative FastAPI AI Client Call (with Cloud Host Fallback)
   try {
-    const apiEndpoint = typeof window !== 'undefined' ? (process.env.NEXT_PUBLIC_FASTAPI_TUTOR_URL || 'http://127.0.0.1:8001/api/v1/tutor/chat') : '/api/tutor/chat';
+    const isCloudHost = typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
+    const defaultUrl = isCloudHost ? '/api/tutor/chat' : 'http://127.0.0.1:8001/api/v1/tutor/chat';
+    const apiEndpoint = process.env.NEXT_PUBLIC_FASTAPI_TUTOR_URL || defaultUrl;
+
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3000);
+    const timeoutId = setTimeout(() => controller.abort(), 2000);
     const res = await fetch(apiEndpoint, {
       method: 'POST',
       headers: {
@@ -106,7 +109,7 @@ export async function sendHybridTutorChat(payload: TutorChatPayload & { engineMo
       }
     }
   } catch (proxyErr: any) {
-    console.warn('[TutorClient] Proxy request failed, using smart academic fallback:', proxyErr);
+    // Graceful silent fallback to smart academic tutor engine on cloud hosts
   }
 
   return {

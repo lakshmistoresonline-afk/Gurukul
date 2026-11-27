@@ -52,26 +52,52 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'd
 let cachedHierarchyInMemory: any[] | null = null;
 
 export function resolveProcessedContentStaticUrl(identity: CurriculumIdentity): string {
+  const urls = getProcessedContentCandidateUrls(identity);
+  return urls[0] || '';
+}
+
+export function getProcessedContentCandidateUrls(identity: CurriculumIdentity): string[] {
   const g = String(identity.grade || '5').trim();
   const subj = String(identity.subject || '').toLowerCase().trim();
   const book = String(identity.book || '').toLowerCase().trim();
   const chId = String(identity.chapter_id || '').trim();
   const ct = String(identity.content_type || 'overview').toLowerCase().trim();
 
-  let subjFolder = 'English';
+  const candidates: string[] = [];
+
   if (subj.includes('hin')) {
-    subjFolder = 'Hindi';
+    candidates.push(`/ProcessedContent/Class${g}/Hindi/${chId}/${ct}.json`);
   } else if (subj.includes('mat') || subj.includes('math')) {
-    subjFolder = (book.includes('ii') || book.includes('part2') || book.includes('part_2')) ? 'MathsII' : 'MathsI';
-  } else if (subj.includes('sci')) {
-    subjFolder = 'Science';
+    if (book.includes('ii') || book.includes('part2') || book.includes('part_2')) {
+      candidates.push(`/ProcessedContent/Class${g}/Maths II/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/MathsII/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/Maths/${chId}/${ct}.json`);
+    } else {
+      candidates.push(`/ProcessedContent/Class${g}/Maths I/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/MathsI/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/Maths/${chId}/${ct}.json`);
+    }
+  } else if (subj.includes('sci') || subj.includes('evs')) {
+    candidates.push(`/ProcessedContent/Class${g}/Science/${chId}/${ct}.json`);
   } else if (subj.includes('soc') || subj.includes('social')) {
-    if (book.includes('ii') || book.includes('part2') || book.includes('civics')) subjFolder = 'SocialII';
-    else if (book.includes('iii') || book.includes('part3') || book.includes('history')) subjFolder = 'SocialIII';
-    else subjFolder = 'SocialI';
+    if (book.includes('ii') || book.includes('part2') || book.includes('civics')) {
+      candidates.push(`/ProcessedContent/Class${g}/Social II/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/SocialII/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/Social/${chId}/${ct}.json`);
+    } else if (book.includes('iii') || book.includes('part3') || book.includes('history')) {
+      candidates.push(`/ProcessedContent/Class${g}/Social III/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/SocialIII/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/Social/${chId}/${ct}.json`);
+    } else {
+      candidates.push(`/ProcessedContent/Class${g}/Social I/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/SocialI/${chId}/${ct}.json`);
+      candidates.push(`/ProcessedContent/Class${g}/Social/${chId}/${ct}.json`);
+    }
+  } else {
+    candidates.push(`/ProcessedContent/Class${g}/English/${chId}/${ct}.json`);
   }
 
-  return `/ProcessedContent/Class${g}/${subjFolder}/${chId}/${ct}.json`;
+  return candidates;
 }
 
 const contentCacheMap = new Map<string, ChapterContentResponse>();
@@ -137,25 +163,27 @@ export class CurriculumApiClient {
 
     const isCloudHost = typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
 
-    // 1. On Cloud Hosts (Vercel), try Static ProcessedContent Asset FIRST for 0ms load speed
-    if (isCloudHost && typeof window !== 'undefined') {
-      try {
-        const staticUrl = resolveProcessedContentStaticUrl(identity);
-        const staticRes = await fetch(staticUrl);
-        if (staticRes.ok) {
-          const staticData = await staticRes.json();
-          if (staticData) {
-            const response: ChapterContentResponse = {
-              identity,
-              contentType: identity.content_type || 'overview',
-              status: 'PASS',
-              data: staticData
-            };
-            contentCacheMap.set(cacheKey, response);
-            return response;
+    // 1. Try Static ProcessedContent Asset Candidates FIRST for 0ms load speed
+    if (typeof window !== 'undefined') {
+      const candidates = getProcessedContentCandidateUrls(identity);
+      for (const staticUrl of candidates) {
+        try {
+          const staticRes = await fetch(staticUrl);
+          if (staticRes.ok) {
+            const staticData = await staticRes.json();
+            if (staticData) {
+              const response: ChapterContentResponse = {
+                identity,
+                contentType: identity.content_type || 'overview',
+                status: 'PASS',
+                data: staticData
+              };
+              contentCacheMap.set(cacheKey, response);
+              return response;
+            }
           }
-        }
-      } catch {}
+        } catch {}
+      }
     }
 
     // 2. Try Authoritative Backend API (Local / Custom Configured API)
